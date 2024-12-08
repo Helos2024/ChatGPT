@@ -1,0 +1,808 @@
+Demand Planning - Maintenance Downstream / Upstream MRO 
+mié, 18 de sep de 2024
+
+0:08 - Nabil Ghalib (ADNOC Group D&CS) I'll try to give you just a brief about your project, okay?
+
+0:11 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, yeah, we'll do, we'll do. Once we start, we will give you about the project, about the tool as well.
+
+0:41 - Mazhar Hussain (ADNOC Group D&CS) I want to come with document everyone.
+
+0:44 - Khalid Sarfaraz (ADNOC Group D&CS) As-Salaamu Alaikum.
+
+2:23 - Murugan Kaliaperumal (ADNOC - PE&ICV) Hi, everyone.
+
+2:54 - Khalid Sarfaraz (ADNOC Group D&CS) Hello. Hi.
+
+2:55 - Unidentified Speaker you.
+
+4:30 - Sebastian Alba Thank you.
+
+4:33 - Hector Palacios Thank you.
+
+4:54 - Unidentified Speaker Hello.
+
+4:56 - Naamani, Mohamad Hello. I believe we can start in a minute.
+
+5:30 - Khalid Sarfaraz (ADNOC Group D&CS) moment you have from your end all consultants available. Can we start?
+
+5:40 - Fakhouri, Mohamad Yes, once Yeah, let me start sharing my screen.
+
+5:54 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, sure. So Salam alaikum and good afternoon all. So this is one of our first sessions regarding disengagement. We will let you know what is the project about, what is this tool we are trying to get, and then the team will take you through some critical information which is required as part of this engagement.
+
+6:24 - Fakhouri, Mohamad Thank you, Khalid.
+
+6:38 - Fakhouri, Mohamad We have Gunjun.
+
+6:39 - Jain, Gunjan (UAE) Yes, hi. Hi, good afternoon, everyone. Mohamed, if you want to go to the next slide. So as Khaled mentioned, we've got four things really on the agenda.
+
+6:57 - Hector Palacios I see that.
+
+7:06 - Naamani, Mohamad Unjin, can you hear us?
+
+7:22 - Jain, Gunjan (UAE) Sorry about that.
+
+8:13 - Jain, Gunjan (UAE) Moment, do you want to pick it up the money?
+
+8:15 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, so can you?
+
+8:25 - Naamani, Mohamad So I think more for holy you'll cover this and then we'll get to the IP. So hi everyone. Just per the agenda, we'll just remind everyone, I know you're aware of the project, but just quickly setting the stage. Why are we all gathering? What's the objective of the project? Then we have a couple of slides on how IBP, in a way, what you should expect from IBP. It's only a quick overview because we'll have detailed sessions later on when we do the design of the solution together. This is only for you to have this in the background before we understand how you do things today. So also you have an idea about the capability of the tool, but at a high level. Mo Fakhoury, over to you with this before Hector walks us through the IBP overview.
+
+9:13 - Fakhouri, Mohamad Thank you, Mohamed. So why are we here? Or what are we trying to achieve? So we are implementing the SAP IBP tool. The reason behind that is that AdNoc wants to avoid or minimize overstocking. Now, it's a whole journey to implement the tool SAP IBP. And you'll notice in the next slide that there are multiple streams within that project.
+
+10:21 - Fakhouri, Mohamad You'll notice that, so this project is going through, it's a month journey. And in this project, we have multiple streams. We have the process data where we're going to first understand your current state. And then after that, recommend best practices and do your target state. And data, what we're going to do is we're going to look at your data, we're going to see any gaps, and then recommend also how to mitigate those gaps from a data perspective. All along, you'll have also the technology part, which is the implementation of the SAP IBP.
+
+12:06 - Fakhouri, Mohamad Any questions?
+
+12:14 - Naamani, Mohamad I think we can proceed to IPP overview more. I mean, the overall objective of the project, I think many of the attendees are aware of, and we'll answer also some specific questions as we proceed, just also to leverage or benefit from the time.
+
+12:30 - Fakhouri, Mohamad Yeah.
+
+13:36 - Bilal Dabash (ADNOC Gas - IOE) Um, sorry. Sorry for the previous slide. I have a question here about the interviews with the process champions. So who's involving in this process champions and just elaborate on that one?
+
+13:50 - Fakhouri, Mohamad Yes. So basically, it is those interviews right now that we're conducting. I see that we have and which is great. Have a very big group. Um, but at the end of each interview, what to do is, we want to nominate a process champion in order for us to...
+
+14:11 - Bilal Dabash (ADNOC Gas - IOE) Yeah, yeah, it's okay, but from, I mean that, from which streams they are, which, and already they are not nominated, or like this, like this.
+
+14:27 - Fakhouri, Mohamad Yeah, currently, Khaled correct me here if I'm wrong, we don't have a process champion. So what we want to do as a next step is to nominate a process champion, for example, for demand planning, whether it's going to be upstream or downstream. Now, if we can't separate them, and it's understandable, we can nominate a process champion for upstream and a process champion for downstream for maintenance, for example.
+
+15:28 - Bilal Dabash (ADNOC Gas - IOE) Yes Yes. Thank you.
+
+15:30 - Sheraz Kazi (ADNOC Refining - RRE) Mama. I also have a question. The previous slide you showed a timeline for the project. Yes So is this? Can you go back just for us? Yeah. So this one is it? All the GCs are going to be following the same timeline, or is it going to be phase wise?
+
+15:49 - Naamani, Mohamad So let me off is to have two waves but yes all GCs now definitely there's always a specific order but the idea was to leverage that the fact that there's also a shared service unit today to have go live for all GCs but in two waves one for demand inventory which is the row on on top or in the lower part the first one then for supply planning. Now as we're now finalizing the project plan, if there's a specific sequence, this is something we can discuss, but the original plan, as we prepared it here, is all of them, so we can also benefit from the bigger group while taking into consideration any differences per group company. So this is the logic at this point. We're definitely detailing the plan. We'll have, as we go into discussions of the design, we can see if there's a specific order while respecting the agreed deadline with Adnoct from our side as KPMG. But if there's a specific order, this is something we can take into consideration as we do the training and the actual call.
+
+17:05 - Sheraz Kazi (ADNOC Refining - RRE) And this project is starting this September 24.
+
+17:09 - Naamani, Mohamad Yeah, we did the kickoff, exactly. We did the kickoff on September 2nd and we're preparing now. So yes, as we speak, we're actually, we started the first few workshops.
+
+17:23 - 1Zainab Ahmed (ADNOC Logistics & Services) Excuse me, sir, we have been pulled to this meeting just now. Can you brief us from ADNOC? You send the invitation to our IT team, so they just include us now from inventory. So will you brief us, Zainab Ahmed, team lead inventory control. So will you just brief us, what is this project is about.
+
+17:48 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, let me take up this topic. Zainab, hi, this is Murugan.
+
+17:52 - Maria Terence (ADNOC Group D&CS) Yes, sir.
+
+17:53 - 1Zainab Ahmed (ADNOC Logistics & Services) Nice to hear your voice, sir.
+
+17:55 - Unidentified Speaker Hi.
+
+17:57 - Murugan Kaliaperumal (ADNOC - PE&ICV) Part of Center of Scale and Improvement in Automation, we have planned to implement a software tool called IBP, which shall be supporting in planning inventory levels and enhancing the existing MRP planned order function. So, the software is finalized and implementation scope is awarded to KPMG.
+
+19:26 - Zainab Ahmed (ADNOC Logistics & Services) Very interesting. Now I have the picture. Okay, we may proceed. We may proceed. We may proceed. Thank you.
+
+19:39 - Seba Bakr (ADNOC Refining - HQ) Murugan, is this relevant to the digitalization ideas we discussed earlier?
+
+19:48 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes, yes, yes, exactly.
+
+19:51 - Seba Bakr (ADNOC Refining - HQ) Okay, now the invites that will be sent out and the nominations that will be included, are you only approaching business or are you also approaching a digital team? Because from our end, we got it through business. Invite. So how is the approach here for the project?
+
+20:10 - Murugan Kaliaperumal (ADNOC - PE&ICV) IT. Khalid will answer this, but can we have this discussion separate? Khalid, can you?
+
+20:14 - Fakhouri, Mohamad Yeah, yeah, yeah, So, now what we'll do is we'll give you an overview of SAP IBP for MRO.
+
+20:43 - Hector Palacios Thank you, Mo. Can I share quickly a screen? I think that is going to be better because I have some animations there. Sorry.
+
+20:50 - Fakhouri, Mohamad Sure, yeah.
+
+20:51 - Hector Palacios Okay, thank you very much, Mo.
+
+20:56 - Hector Palacios Okay, thank you. First of all, nice to meet you, everyone. Hector Palacios here. One of the IBP consultants, I will be one of the IBP leads, and I will be working directly on the implementation of this tool. So I want to give you a little context of what we are going to do, what is IBP in the first place. So let's start by the name. Stands for Integrated Business Planning. It's an SAP Cloud system that will support you on your supply chain planning. By providing you some advanced algorithms to solve the most challenging problems that you have on demand planning, inventory planning, supply planning. It also helps integration capabilities. That means that we can integrate to source systems because there is a lot of inputs that we need to consider into this planning. This is a big problem that we need to solve. But we can build this bridge of information between your source systems systems, in this case, mostly S4 and other systems that you can have, and bring it into IPV so we can start doing our planning. Also, a very important aspect is that we have a collaborative environment. That means that you can interact with the system by having two environments. One is going to be the Excel to which you can connect using an add-in. You can review the data, you can adjust your plans, and then, of course, you can visualize in nice dashboards as well. The other environment is the web part where you can also do your planning if you like so, and there is where you are going to see the proper dashboards. The main objective of implementing such a tool like IVP for MRO planning is to try to reduce the working capital that is related to At the same time, trying to increase your uptime of your assets and your operations, and of course, the reliability of this operation. We are going to achieve this by having the right parts and also the labor workforce in the right place and in the right time. Just for you may be interested to know that this is a modular tool, that we have different modules for solving different problems. In this case, you already have the three modules that are going to allow you to plan inventory, supply, and demand. If you're having any questions, just please interrupt me. I don't think that I can see if you have your hand raised, so just please interrupt me or let me know. At a high-level architecture, this is how it's going to be. At the right, we have IVP in blue, and here we have the source system that can be used for but it's not limited to S4HANA. As I was saying, we need a lot of information that is going to come from the system. Most of that data is going to be master data, so we need to know what are going to be our planning dimensions, our parts, and all the related hierarchies, our asset equipments that we need to maintain, the maintenance activities, the project activities, and whatever is requiring parts for for solving this problem. Mostly, we are going to connect to system like SAP PM. This is the best practice in system that has your projects information. We are going to get information about the maintenance plans that you're having, the plan for its activities, and we are going to complement with a correct maintenance forecast to try to answer the question of how much parts should I have in the future, to meet the demand that is coming for projects, for preventive maintenance plan, and for corrective activities. This is what the demand planning module is going to do. Then we also have the inventory optimization side, which main objective is to answer the question of how much safety stock should I have across my supply chain network for each part in each location in order to reduce the stock out, to be able to carry out my maintenance activities. It also will provide you the reorder point that will tell you with how much anticipation you will need to order the replenishment so we have it on time. All this information, demand and supply, are going to be targets for our supply algorithm. In the supply planning part, we need to come up with a distribution plan and a procurement plan that is going to be able to Uh-huh. Sorry, was there a question?
+
+25:47 - Khalid Sarfaraz (ADNOC Group D&CS) I think it's a random interruption.
+
+25:50 - Fakhouri, Mohamad Zain has a question.
+
+25:52 - 1Zain Zahoor (ADNOC Gas - IOE) Yeah, I have a question. So this is Zain from Arnok Gas. So for example, this source from S4 HANA where you are getting the information for the demand planning, you are saying that the task is where the what we understand where the material or component is assigned so if anyone who are not using this component assignment in the task itself means in the maintenance plans so what is the way forward for this one number one and number two can you elaborate this one what is this workforce for the demand planning means what does it mean and what is the linkage of the question. Are there any other questions or sources with the demand planning?
+
+26:35 - Hector Palacios I see that these answers are going to be on the next slide. So if you allow me, let me go with the next slide. If we still have the questions we can go for the right. Perfect Thank you very much.
+
+26:48 - Bilal Dabash (ADNOC Gas - IOE) Sorry, uh, Victor. I have another question that, uh, here, for example, that you are connecting with the for the of the ordering materials and spare parts, correct? This is always you have to connect with the EEM or for example, the first time in order to build your business rules and after that you will depends on those rules, for example.
+
+27:22 - Hector Palacios For sharing the information, we can transform the information in the middle if we need so, to get the information as we need it.
+
+28:01 - 1Zain Zahoor (ADNOC Gas - IOE) Good.
+
+28:03 - Hector Palacios Let me proceed because I think that the next slide is the most important one. We are going in a deeper layer. Then it continues to be high layer for sure, but it will give you some more explanation about the different processes, what we are expecting to flow from one side to the other. So on Jello, you will have the main inputs that we are going to have on the on this planning process. It's not limited to this. We are going to require some other inputs as well, but these are the key ones. In demand planning, the first part that we need to understand is that we need to try to understand what are our demand sources. Part of the sources is something that we don't know. It's corrective maintenance that is just happening and we need to react to that. Another part is what we already know, is what we are planning, is our preventive activities, preventive maintenance activities, and our projects, our drilling projects that will generate some power requirements, right? So, for the part that we already know, this is something that we are expecting as an input on IDP. So, we want to get from you the maintenance plan and the networks activities that are related to your projects because then we can translate this in IDP into a part requirement and also a labor requirement. So we will know how much parts we need because of this and how many resources we are going to need because of this as well. We are not going to make the plan here for sure. This is something that for us is an input, but you will gain some visibility because you can use this information in some nice dashboard, some reports that you can use for discussing to understand how much of your parts requirement are coming from projects, how much is coming from preventive, how much is coming from corrective part, and then you can take the proper decisions. This is about the maintenance plan, the network activities, that is what we want to get from you in the system. Now, for the corrective part is where we are going to offer more capabilities here what we want to have is a spare parts consumption history.
+
+31:47 - Hassan El Rezk (ADNOC Offshore - OPUZ) One question, please. Yes, please. From the project, what type of material you get from the project?
+
+31:56 - Hector Palacios What kind of material? Yes. Service parts, MROs.
+
+32:00 - Hassan El Rezk (ADNOC Offshore - OPUZ) So the project is still under development and you're asking for the MRO? Uh-huh. Spare parts of the equipment, okay.
+
+32:08 - Hector Palacios Yeah, it's only MRO. So a bit of material.
+
+32:11 - Hassan El Rezk (ADNOC Offshore - OPUZ) you are requesting the bill of material of the new equipment, you can say.
+
+32:16 - Hector Palacios We will need that information for sure. It's part of the master data requirements because we know the amount of activities that you're having. So, for example, this week you have two activities related to repairing this machine, and we should know what are the materials for that activity so we can explore that into a part requirement.
+
+32:36 - Hassan El Rezk (ADNOC Offshore - OPUZ) This is still new equipment, which equipment you are talking about. This is a new equipment under construction. Okay, so what you will do what you will do for this. So you need the bill of material of the of the new equipment. This is what you need.
+
+32:51 - Hector Palacios Yes, exactly.
+
+32:53 - Hassan El Rezk (ADNOC Offshore - OPUZ) What you will do is bill of material. Just to understand because this is just a bit of material. You have a bump, so you have the bearing, you have the ceiling, you have this parts. So what you do is this one.
+
+33:08 - Hector Palacios So you have the plans, right? So you have the activities. You know how many activities you need to do.
+
+33:15 - Hassan El Rezk (ADNOC Offshore - OPUZ) You don't have a plan for this. This is a new asset. You don't have a plan for it yet.
+
+33:22 - Raghavendra Mithal (ADNOC Refining - HQ) No, no, you're talking of a commissioned equipment, I think. But they are talking of a project which is going to be scheduled.
+
+33:31 - Murugan Kaliaperumal (ADNOC - PE&ICV) Wait, wait, wait.
+
+33:33 - Unidentified Speaker Today's discussion.
+
+33:37 - Khalifa Al Yafei (ADNOC - GP) Just one question, one thing to mention here, okay? Here, they are talking about corrective maintenance and preventive maintenance. Okay, where is the equipment already installed? This is one part. There is a second part, where is the project, where we need to identify the equipment and link it to the spare part, or link the spare part to the equipment. Okay, so this activity, what he's showing here for you, Mr. Hassan, okay, two different activities. One of the installed already items, Okay and the maintenance you have suppose that you have planned for different maintenance and turn around the maintenance or major overall. Okay this is what we are learning for the first part where it's installed already and project phase where you we are identifying new items.
+
+34:24 - Maria Terence (ADNOC Group D&CS) Is that clear?
+
+34:24 - Hassan El Rezk (ADNOC Offshore - OPUZ) Yes it's clear yeah but the point is this new okay it's clear but I don't know what you will do because you don't have this you don't have concern You don't have even a stock level for it is still still under control.
+
+34:42 - Maria Terence (ADNOC Group D&CS) If I may, we will take information that they are OK and they will do our analysis.
+
+34:48 - Khalifa Al Yafei (ADNOC - GP) Then at the end we will come with a proposal how we will link all this together.
+
+34:54 - Mazhar Hussain (ADNOC Group D&CS) Just to clear us and to just clear you one point that in any case we are not using our project system in SAP to prepare for because we do not prepare the network activities. Yes, demand that cannot generate from there because most of the group companies 99.90% they are not using this route. Actually what you're saying, Hassan, that will come SPIR through SPIR while it is maintained and uploaded. It will route through the maintenance. I mean, you know the work order processes and that area because they are including. If you see in the last the master data so that will be So that will be available here also.
+
+35:35 - Hassan El Rezk (ADNOC Offshore - OPUZ) So this will be managed normally normally and whatever we recommend this talk everything the final final will be will be fit to the new system. Would like to impact the practice in any way. Yeah, we're just giving him this for this one and we'll get recommendation. This is the point where we see our system. We have to.
+
+36:00 - Mazhar Hussain (ADNOC Group D&CS) Yeah, but it is a process that they are explaining. It's very useful. Yeah, I have few questions, but I will keep it. I mean in the last through Morgan because many things that we are not doing any good practices like at this point. I mean, the only thing is that I'll be going to improve our business process or not so, but I will point out, you know, different points that where I see you know there are some likeness or some, you know, processes we are not. Doing it actually. Please go ahead and then we will see later.
+
+36:31 - Naamani, Mohamad Yeah, everyone. Sorry, Hector, before we proceed, everyone, just a clarification because we wanted to add this overview to this workshop. As my colleagues mentioned, this workshop is to understand what you do today from a process perspective. We only added a few slides on what ABP looks like so that you know what it does just for you to get an idea. However, we'll have detailed session on how this is done. So Hassan and the team, all the questions, what's applicable, what data we're capturing, so on and so forth. If you bear with us, we have dedicated sessions later on the how. Now we're only giving you a preview of what IBP can do, how it will read the demand, quote unquote, from different areas. Analyze this based on the algorithm and what inventory levels you have so that it can just plans for the supply. So if you can allow us, because we also have the rest of the workshop will be more about what you do today from a process. So we're happy to take those questions, but we might need to park them until we have the design sessions, which will address every point that you mentioned, how to maintain what you're doing while also leveraging the tool. Not trying to limit the questions, but also some of the answers would have to be next just to be just to the purpose of this workshop. Back to you Hector so we can show.
+
+37:57 - 1Zain Zahoor (ADNOC Gas - IOE) I want to add I have a small clarification a small clarification for the demand planning so if you can just little bit give the overview while demand planning explanation that how to deal with the turnaround long-term material planning through this demand planning.
+
+38:17 - Murugan Kaliaperumal (ADNOC - PE&ICV) Let me explain sir there are a lot of topics as I said in the earlier Today we are talking about they are trying to understand how we are doing it on the maintenance part of point of view, right? One question was related to project as Mazhar said this meaning word project doesn't mean EPC project. We have another session to understand how we are handling like topics during EPC project. As the team was explaining how we will respond will come back in a later session. Now in first few sessions, 2-3 sessions will understand as is what is happening. Right, they'll explain, they'll try to understand what is happening now. Currently, Mazhar gave some few hints. Yeah, some of the activities are not done. We will take up from there item by item. Corrective maintenance. What is happening? Preventive maintenance. What is happening? And project here is PS related. They're talking about his maintenance team PS module or not. This is what they're trying to understand from here. Go ahead Sir, go ahead team.
+
+39:24 - Hector Palacios Thank you team for the clarifications. For sure this is going to be a challenging problem because that's why we are having 16 months for doing this, right? It's not something that we are going to solve in some few sessions. The first step for us is to understand what you're doing so we understand the challenges that we are going to find for our project implementation. Otherwise, it's going to happen like this, that we are going to say something that is the best practice and for sure you will have some limitations and you will raise a hand. Let us just continue with this context to how the information is flowing, what we are expecting to need, and then let's jump to the assist part to understand what you're doing to start focusing. Because for the next part, we need to start designing this and we will be able to focus by understanding what are your current problems and limitations. So let me continue with the inventory part. As I was saying, the whole idea of inventory part is trying to generate a safety stock to reduce the stock out probability. It's also trying to give you reorder points and a side of this is also we propose you what is the maximum inventory level that I should have in any point. So this will be feed from information that is coming from demand as well. In this case, what we need to use is an average weekly demand rate. This is what the formula that is using distribution probabilities. This is a statistical problem. It's going to use as a main input, aside of other inputs like service levels, some priorities that maybe we want, the supply chain network modeling that we need to consider the lead times, the load sizes, and many information. And aside of that, of course, you need to consider also what's coming from preemptive plan in the network activities, how much power requirements we are going to have from them, so we can state a correct reorder point, for example. This is going to be the objective of inventory planning. This is the main information that we are going to get from demand planning. After this is that we can start building our procurement plan and distribution plan.
+
+44:44 - Naamani, Mohamad Yeah, I think we need to switch to the, as is with the workshop, for demand for tomorrow. So again everyone, thanks for the patience. This is only an overview of what I BP. So think of it as like the movie trailer coming soon. You'll get to know all the details in the next sessions, but now the team would like to understand a bit more about what you do today. The Aziz of demand planning for tomorrow. More for hurry.
+
+45:13 - Fakhouri, Mohamad Yeah, thanks Pamela.
+
+46:47 - 1Khalid Al Ameen (ADNOC Gas - IOE) Yes, Salam Alaikum.
+
+46:48 - Fakhouri, Mohamad Walaikum Salam.
+
+46:50 - 1Khalid Al Ameen (ADNOC Gas - IOE) Yeah, I have just one question here. What is the adding value with the current practice and all of course, for example, if we are following now the current practice with the demand keeping the minimum requirement, maximum requirement for each item. So what is the additional things that this one can add? And how can I, how I can optimize our cost? This is my question.
+
+47:24 - Fakhouri, Mohamad Are you looking at it on a project level? Like why are we doing, why are we asking for your current practice?
+
+47:33 - Khalid Al Ameen (ADNOC Gas - IOE) Yeah, for the current practice. I say what is the as is, what is the to be different in cost optimization.
+
+47:43 - Fakhouri, Mohamad So very, very good question.
+
+47:51 - Nabil Ghalib (ADNOC Group D&CS) No need to answer now all these questions. Let's put it in teams and then Khaled will understand all of them to save time, Mohamed and Khaled. Please, if you agree.
+
+48:00 - Unidentified Speaker OK.
+
+48:02 - Fakhouri, Mohamad Thank you, Nabil.
+
+48:49 - Fakhouri, Mohamad So we have a high-level process architecture and for today what we want to focus on is the preventative maintenance demand as well as the corrective maintenance demand plan. We'll also ask you some questions on reporting, which will include the consolidation as well of demand.
+
+49:16 - Fakhouri, Mohamad So now what we're going to do is we have a set of questions to understand your process. What we'll do is I'm gonna ask you to If someone can give us an overview of the roles and responsibilities Regarding demand planning we can start with upstream because I know we have multiple streams here today so we can start with upstream and To give us an overview of demand planning and who's responsible and example, how is the collaboration between the maintenance planners and inventory, how is this happening today?
+
+50:11 - Jain, Gunjan (UAE) Maybe group company by group company? One minute, please.
+
+50:17 - Nabil Ghalib (ADNOC Group D&CS) Let us follow the agenda. Khaled Sabra, are you there? Yes, I'm there. Yeah, please introduce Maria, let him go through the approved business process for work order planning and how materials is reserved, shows quick demo and system, and then we can open the discussion further and support from the company's plans. Okay, go ahead.
+
+50:39 - Khalid Sarfaraz (ADNOC Group D&CS) Maria is there in the meeting?
+
+50:41 - Unidentified Speaker Hi, Kalil.
+
+50:41 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah. Hi, hi, Maria. Just introduce yourself and then we can start our discussion and you can showcase the process and system.
+
+50:51 - Maria Terence (ADNOC Group D&CS) Hi everyone, I'm I'm part of I'm part of EM team. I'm handling EM announcements.
+
+51:15 - Maria Terence (ADNOC Group D&CS) So I will be giving a demo.
+
+51:33 - Unidentified Speaker OK.
+
+51:37 - Fakhouri, Mohamad Thank you.
+
+51:39 - Nabil Ghalib (ADNOC Group D&CS) Maria, share your screen, please.
+
+51:47 - Maria Terence (ADNOC Group D&CS) Hey, is my screen visible or I need to expand it?
+
+51:51 - Rohith Ellareddy ADNOC Offshore- OED) Yes, it is.
+
+51:52 - Fakhouri, Mohamad Yes, it is, yeah.
+
+51:55 - Unidentified Speaker OK.
+
+51:56 - Maria Terence (ADNOC Group D&CS) Yes, please make it full screen.
+
+52:01 - Maria Terence (ADNOC Group D&CS) Full screen, OK. Is it OK now?
+
+52:07 - 1Khalid Al Ameen (ADNOC Gas - IOE) Yes, yeah.
+
+52:08 - Maria Terence (ADNOC Group D&CS) Yes, so with respect to Adnog 1 ERP process, we are having the orders created through couple of places like through the notification processing where we initially create a notification and then it will be converted to the order. And there are other cases. Our next case is we have the order directly created and the notification created at the back end that will happen. The third case is we have the preventive where it's like a planned maintenance. So where we we have a scheduled batch jobs will be executed and this will be creating the work orders directly. We don't create your notifications here. We are creating the work orders for the preventive and predictive maintenance. These are three ways we have the work order processing and whenever like whatever when a notification is released and an order will be generated. So the maintenance planner responsibility will review the order for their what is the work like, For example, let's take a corrective maintenance. The planner responsibility will review based on what is the work and who are the involved, how much labor is involved, what kind of Materials is required, so they will be including in the order and this will be passing to the we have a material to check also, but it's it will check like it will allow you to pass through the order and release the order. So once the once the order is released, reservation gets created and the reservation will be sent for approval. So here we have certain two ways of material handling like we will be having a bomb through a structure. We can select the materials or you can be manually inputting based on your material search. You will be able to handle the add the materials in the order. This is on the normal process. When it comes to preventive maintenance, scenarios. Some companies they use a task list where like it might be an equipment based task list or the function location based task list where we will be doing our component assignment in the task list.
+
+54:18 - Maria Terence (ADNOC Group D&CS) Component assignment in the task list and based on that you will be receiving the when the order is scheduled or created, so you will be receiving the materials automatically into the order and then it goes for the These are the two steps. You have any clarification, anything to add up from the group companies if you want to add up or you need. But then I can go to the system and show you how we are doing it.
+
+54:44 - Fakhouri, Mohamad I do have a have a question regarding the task list.
+
+55:21 - Naamani, Mohamad It's for the cycle.
+
+55:23 - Murugan Kaliaperumal (ADNOC - PE&ICV) They're not going wait a minute they're not going to I saw your comments I cannot reply they are not going to do any task list requirement for the business if there is a task list maintenance task list and if there is a below material associated they will try to understand how we can use this data in the planning part materials planning part okay but then how do we define I'm just how do we define that for this set
+
+55:52 - Fakhouri, Mohamad of equipment on a monthly basis, it needs to be refurbished. That's it.
+
+56:02 - Hassan El Rezk (ADNOC Offshore - OPUZ) From the maintenance plan, no, no. The task list is linked to maintenance items. It creates a maintenance plan. Maintenance plan has a time. I know my colleague question. So from this time, you know, when you would say from the maintenance plan, which have dates you will know when to order this material. Okay, so from the maintenance. Yeah, from the maintenance plan. So a task list is nothing, it cannot help you. It helps you when it is attached to a maintenance item and become a maintenance plan.
+
+56:34 - Murugan Kaliaperumal (ADNOC - PE&ICV) Okay, understood. If these are available, they are trying to understand?
+
+56:37 - Hassan El Rezk (ADNOC Offshore - OPUZ) Yeah, of course, if everything is available, of course.
+
+56:41 - Naamani, Mohamad Correct, correct.
+
+56:42 - Hassan El Rezk (ADNOC Offshore - OPUZ) Yes, the quality of the data is the most important success factor here.
+
+56:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) Right, yeah.
+
+56:48 - Hassan El Rezk (ADNOC Offshore - OPUZ) I can summarize.
+
+57:04 - Nabil Ghalib (ADNOC Group D&CS) Maria, also explain that some work orders are created much in advance due to the work complexity and revision is assigned. Just explain also this process.
+
+57:14 - Maria Terence (ADNOC Group D&CS) That's on the turnaround process.
+
+57:21 - Sharma, Santosh So so before moving a moment, I have a small query. Hi, this is Santosh from KPMG. So this planning process, whether it happens by AGC or it is done at centrally from the headquarter, whatever notification comes in and the demand planner sets centrally or at the AGCs and do further processing.
+
+57:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) Specific and it might be even plant specific under AGC.
+
+57:49 - Unidentified Speaker Okay.
+
+57:52 - Sharma, Santosh It is decentralized basically, yes.
+
+57:54 - Unidentified Speaker Understood.
+
+57:55 - Sharma, Santosh Okay, you can proceed.
+
+57:59 - Fakhouri, Mohamad Please, Maria.
+
+58:03 - Maria Terence (ADNOC Group D&CS) There's one more I think that's on the turnaround planning. So we will have a long term like when there is a shared owner plans to become uh it's planned so there will be materials they'll be creating a different order type for that and then the materials will be planned in advance and we'll have a revisions created so that how many orders or all all the orders are tracked based on that revision so in that orders we'll be having the materials components are assigned okay that will have a long-term plan also like because we have maintenance plans have a package scheduled for yearly five years six years It's like it's like once in six years it will be done and you will be creating the order a year advance. So that also it's possible in the planning.
+
+58:47 - Fakhouri, Mohamad OK.
+
+58:50 - Mazhar Hussain (ADNOC Group D&CS) But Mama, that is important to mention here that in companies where we have long you know cycle we are not generating orders in advance. Mostly we are generating one year before, so we need you need to also evaluate that. Enough for your evaluation or if you want to have different requirement then you need to raise your point when it comes.
+
+59:13 - Hassan El Rezk (ADNOC Offshore - OPUZ) Excellent Mazhar, this is my point gentlemen. We are not using the work order to plan the material because work order issued late. We are using the maintenance plan to plan the material. We call it planning material, you call it demand, no problem. So you have a maintenance plan, so you know after one year you will have overall of this It's not work order not yet issued. So using the order here is the blending of the work order which is already issued, which you assume you have the material already, especially for the blend work. You should have the material before even your work order is due. So, but for the corrective, this is why you have a stock. Corrective, you have a stock. So when you have a corrective, if it is long term, it can defer, you will blend it also. But for the blend maintenance, we use a blend. So we have five plan whether it is overall or inspection. From this one we plan the material. Check the material stock and like this. This is the point.
+
+1:00:12 - Murugan Kaliaperumal (ADNOC - PE&ICV) The query came from Mazhar or Maria is about the downstream practice. Both are applicable. Both are there for downstream. Normally for turnaround as he was specifically saying once in 3 years, once in 4 years the complete unit or the train is stopped and they do a maintenance for this purpose. Normally raise work order months before or even 24 months before depending upon the plan or lead time of the product. So, both cases are applicable. So, there is a session I think it was discussed to discuss about the turnaround which comes I think this team was calling it as project plan. So, turnaround is being planned to discuss how we are handling it. It will be discussed part of either today's session or there is another session on Project related topics to be discussed.
+
+1:01:04 - Patel, Rahul So Murugan, this is Rahul from KPMG. So to clarify my understanding, so maintenance plans are for regular maintenance and for the turnaround we don't have plan, but the work orders which are entered in advance advance drive the requirement. Is that correct?
+
+1:01:20 - Murugan Kaliaperumal (ADNOC - PE&ICV) Correct in downstream, yes.
+
+1:01:23 - Patel, Rahul OK.
+
+1:01:27 - Maria Terence (ADNOC Group D&CS) OK.
+
+1:01:36 - Fakhouri, Mohamad Yes, please, yeah.
+
+1:01:51 - Maria Terence (ADNOC Group D&CS) So I'm just choosing your material. So for this equipment you can see there's a bill of materials This is how some of these structures will be having. So we have the bill of material attached to this material to this equipment. So I'm just using this equipment to create a notification. And then we'll go for the planning.
+
+1:02:22 - Maria Terence (ADNOC Group D&CS) So normally when the user creates technician or someone who creates it. He will be creating the notification and a supervisor. There will be a review will happen and the supervisor will approve the notification. There are certain cases we have here scenarios and then once everything is done they will be releasing the notification and saving it. Now the planner he will be converting this notification once it is identified to have some maintenance and some labor. Labor is required for this particular chain. So they will be converting this order notification into an order. OK.
+
+1:03:01 - Maria Terence (ADNOC Group D&CS) And we have the operations we use the manpower, so you are saying like how many manpower required. So what is the duration of work? How many person numbers required? So they will be doing the labor planning here. And then once you have the components tab here, you can list out what is the structure here. So from that structure, if I click here, I'll know what are the components added here under the BOM Bill of Materials. So I can choose this component. Because we have certain conditions here like there are components which is stock. We will be talking about the stock here, so the components that we have a specific type where it will be going for the stock items. 12 series are going for the stock items and we have certain conditions in the order like you have to enter the storage location as mandatory. So details like L is for stock item and this is the unit and then how many quantities required and then we will be choosing the storage location here.
+
+1:03:58 - Unidentified Speaker OK.
+
+1:04:02 - Maria Terence (ADNOC Group D&CS) See there is no stock here, but still it will allow you to move the order forward. And then once everything is done, they will be releasing the order.
+
+1:04:16 - Maria Terence (ADNOC Group D&CS) and saving it.
+
+1:04:22 - Fakhouri, Mohamad From the creation of the work order, when you're listing the materials, the maintenance planner or technician can know immediately that whether this material is in stock or not?
+
+1:04:41 - Maria Terence (ADNOC Group D&CS) Yes, so normally they'll be able to know when they're there's an announcement here. So this will show you how many how much is hunter system stock is available from which store it is available. It will be shown here.
+
+1:04:56 - Fakhouri, Mohamad So they don't need to, for example, ask the inventory planner or inventory.
+
+1:05:01 - Maria Terence (ADNOC Group D&CS) Yes, yes, OK, OK, you know when there is there will be like when we have workflows triggered. Once we have this record is getting released so there's a workflow to the approvers for the reservation approval. Once it is approved, then they will do the issue once the stock is available. So all these things will happen.
+
+1:05:25 - Maria Terence (ADNOC Group D&CS) So if I see to the here, you will see the reservation here and the reservation would have triggered a workflow to the approver. I'm not sure there's some problem here, but there will be an approver will be allowed to have have a workflow trigger.
+
+1:05:43 - Nabil Ghalib (ADNOC Group D&CS) Maria show the reservation field and the dates priority also.
+
+1:05:47 - Maria Terence (ADNOC Group D&CS) This is the recommended.
+
+1:05:55 - Fakhouri, Mohamad Who inputs that? Is it the system?
+
+1:06:00 - Maria Terence (ADNOC Group D&CS) Yeah, it is normally comes from the system. For example, based on the operations you will have the if you see like Based on my priority, when I'm creating an order, my basic start dates have a priority, like a medium, it will take 90 days from today, they can plan the order. So like that, it will go for the dates calculated. Based on this date only, you will get the components assigned. That will be the recommended. They can change the date, it can be done by the planner itself. If they want to push this recommended further, they can push it.
+
+1:06:38 - Fakhouri, Mohamad Sorry, please go ahead.
+
+1:06:43 - Maria Terence (ADNOC Group D&CS) It's OK, yeah.
+
+1:06:47 - Fakhouri, Mohamad I have a question here.
+
+1:07:35 - Hassan El Rezk (ADNOC Offshore - OPUZ) I am not sure like what you talk about you talk about the material criticality yes it is depending on the one second release the you have the criticality of the equipment and then you have the criticality of the spare bottles so those is different exercise this period of the activity itself, which is based on the activity type and the equipment criticality. So the system decides or suggests the due date for the work order. Based on equipment criticality and activity type, yeah.
+
+1:08:15 - Mazhar Hussain (ADNOC Group D&CS) Also, Mohamed, you will receive only the demand from the plant maintenance Other parameters are already maintained in the material master like the grid entity, the material type, material group and and so on. We need lots of flags are there, so all those flags are independent. What we are doing here is we are just putting a demand. I need this material. Based on my priority, it is suggesting a date. And based on my number of days here, I'm putting in the operation it will calculate and then based on the scheduling date. It will. Put the required date into the reservation and that's all. This is all it is doing and it will create a reservation. Reservation will. Will be picked up by the MRP and then you know the process.
+
+1:09:08 - Fakhouri, Mohamad Yeah, yes, yeah, yeah.
+
+1:09:12 - Khalid Sarfaraz (ADNOC Group D&CS) One question here. One question here. Does the equipment criticality has any impact on this? There are some master data maintained equipment level also right?
+
+1:09:21 - Maria Terence (ADNOC Group D&CS) On the function location that is see the equipment criticality and the effort effect right? This determines the priority from the day and then the dates are planned, but it can be overwritten by the person who's going to release or doing the planning during that notification when they want to push it. If they want to move it early, they can make the priority change because it flows from your equipment master. There's a this is on the But this is all based on your work order. Yes, the work related priority.
+
+1:09:56 - Mazhar Hussain (ADNOC Group D&CS) Basically, it is influenced only the dates. In the world, I guess for your for your requirement, yes.
+
+1:10:03 - Khalid Sarfaraz (ADNOC Group D&CS) One other question, the requirement. Let's say the requirement date. If it has passed, let's say and the workers not started. Does anybody updates the requirement date? Any process being followed? Followed there currently?
+
+1:10:23 - Hassan El Rezk (ADNOC Offshore - OPUZ) This will be overdue after this date. You have a failure, you have to maintain the equipment. So this will be an overdue and you have to deal with the overdue because it was the criticality of the work itself. Maybe you need to raise a downgrade situation or deferment, it is another process. This is when you cannot pay with the due date. The basic date was equal to baseline date is fixed.
+
+1:10:52 - Mazhar Hussain (ADNOC Group D&CS) Let me answer this. Let me answer this question. By the way, I did not introduce myself. My name is Mazars and I'm working in IT. I am a project manager for several projects and I'm SAP certified consultant also as well. I just wanted to give you the idea that OK, what is my background now? Suddenly the question that you ask is that if I'm changing my For example, if I change my dates here in the work order, is it going to affect the material reservation dates? Once it is created and if I'm not touching the demand that, for example, if I'm not changing any quantity or something. And then it is not going to change the reservation, so the demand date will stay is the same same.
+
+1:11:36 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, OK, now my question is actually the business wise. If that date has been passed and stop so you still want to keep that day the requirement date as it is or you want to update it in the the sir from inventory perspective the expectation was that the the
+
+1:11:59 - Murugan Kaliaperumal (ADNOC - PE&ICV) concern team should go and update the reservation the requested date because if it is kept open we see a lot of the challenges from buy material and probably it is postponed. They don't know how long it will take to consume. They cannot also use it for other reservations. So it is always good to go back and correct the requirement date in the reservation. Or in the work order, whatever.
+
+1:12:25 - Naamani, Mohamad Yes, sir.
+
+1:12:27 - Fakhouri, Mohamad Murugan, you mentioned which team is required to update?
+
+1:12:33 - Murugan Kaliaperumal (ADNOC - PE&ICV) Originator of the work order or the originator of the reservation.
+
+1:12:37 - Fakhouri, Mohamad OK. OK. The creator of the work order, the creator.
+
+1:12:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) Else this will lead to excess stock not consumed by anybody. I lay there for the observation is it's lying there over a period of months.
+
+1:13:00 - Mazhar Hussain (ADNOC Group D&CS) The only thing is that if the demand is still, I mean, not denoted. Nothing happens in the reservation at this point. But if we delete the demand, it will change. But your point is noted down. If we have this functionality available in the PM side, that if we are changing the scheduling date in the future and there is a substantial change, then is it changing the reservation or not? Reservation demand date? Or if it is not, then we will see that how we can do this.
+
+1:13:32 - 2Rohith Ellareddy ADNOC Offshore- OED) it's okay see if I understand okay so we will take the reservations from that we will come to know the consumption pattern history or the demands okay and we will take the criticality and other things of the materials okay like I mean criticality and we also know which is which is value of the material also will take in consideration. Considering these parameters, IVP will propose us a new safety or minimum stock maximum stock as a report output.
+
+1:14:32 - Fakhouri, Mohamad Uh, sorry it was Rohith. Yes, correct.
+
+1:14:38 - Rohith Ellareddy ADNOC Offshore- OED) This is what IBP will do, yes.
+
+1:15:09 - Fakhouri, Mohamad are going to achieve correct that will be the output of the IBP tool yeah that will be the output yes the input will be coming from your maintenance plan and I consumption. Yeah, then the output of SAP IPP will be the recommended.
+
+1:15:28 - Rohith Ellareddy ADNOC Offshore- OED) Yeah, so far that I put a few more input consideration in the chat, so we also need to consider replenish lead time. I'm also concerned.
+
+1:15:39 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, I replied you Sir. Yes, all these parameters will be considered. Yes. These are while calculating the different levels. Multiple logics will be used.
+
+1:15:50 - Rohith Ellareddy ADNOC Offshore- OED) these are the basic inputs what will be considered yes correct so so if if eventually after this if you can show us the different formulas or the method methods you will have that will be they will come back yeah
+
+1:16:04 - Murugan Kaliaperumal (ADNOC - PE&ICV) after the workshops after all these workshops the design session what all parameters will be there will be a matrix basically which will show based on the matrix what They will also provide us a guideline on this subject.
+
+1:16:20 - Rohith Ellareddy ADNOC Offshore- OED) Yeah, this MTBF formula multiple are there, right? Yeah, yeah, yeah, yeah. Thanks, yeah.
+
+1:16:27 - Vijayanand Ramaswamy (ADNOC Offshore - OPUZ) Thanks, yeah, excuse me. How is it different from the current way of calculation? So how IBPS calculation will be different from what is being arrived at currently?
+
+1:16:40 - Murugan Kaliaperumal (ADNOC - PE&ICV) Currently companies are doing it. Manually. We do not have any automated system. Has a default provision, which has a static set of formula, three formulas. Safety stock has a formula, ROP has a formula and order quantity has a formula. So, this is just static formula with not multiple combinations of formula reason. We are dealing with MRO products where spare parts are consumed like probably once in three years or once in four years. They are not regularly consumed. Our fast movers are like once in a year or twice in a year, our meaning of fast moving. So, this standard formulas in SAP will tend to keep every item on stock. So, inventory will increase. So, through this tool we are trying to bring in multiple combinations of formulas and logic and implement it. This will like avoid manually deciding the formulas and manually entering the inputs. Of course, the output of IBP will be manually reviewed and endorsed item by item, but it gives you multiple options to decide quicker using all the data available in ERP. Be it maintenance plan data, planning data or conception data or few other discussions we are we will be having in the workshops.
+
+1:18:20 - Rohith Ellareddy ADNOC Offshore- OED) If I add also currently we don't consider for this answer we don't consider fast moving slow moving item low value of the item we don't consider so maybe this tool can Okay, so currently you don't consider let's say the
+
+1:18:43 - Fakhouri, Mohamad demand frequency.
+
+1:18:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, no, manually all these things are considered manually. Different companies are different practice. We also have a set of formulas address in the guideline. So since there was no automation.
+
+1:19:01 - Fakhouri, Mohamad Got it, understood.
+
+1:19:15 - Sheraz Kazi (ADNOC Refining - RRE) Newman has raised his hand for a long time. If someone can.
+
+1:19:18 - Fakhouri, Mohamad Sorry, I didn't see this.
+
+1:19:22 - Snowvin Jayapal ADNOC Offshore- OED) Thank you. Thank you for noticing that and thank you Mohamed for allowing me to speak. First question is it a to and fro communication from SAP S4 HANA to IBP and then IBP to back to SAP like for example the best cases I can show this example only you see this there is a status called as material shortage MSPT Maria if you can just click on that icon I please that status icon Yeah, can you see this? Yeah, it's it. It shows that it is material shortage. If you can read the from top 5th one. So it shows that it is this work order has got a material shortage. This status. Assigns even if there is one material short, I mean to say there is a list as per bill of material. Let us say there are 1010.
+
+1:20:21 - Snowvin Jayapal ADNOC Offshore- OED) or spare, which is used for this particular PM or a turnaround, whatever we call. So even if there is a shortage of one material, one quantity, this status is set.
+
+1:21:13 - Maria Terence (ADNOC Group D&CS) It should go when when the quantity is available, it should post nothing.
+
+1:21:22 - Mazhar Hussain (ADNOC Group D&CS) It will not go until you run this availability check again.
+
+1:21:25 - Maria Terence (ADNOC Group D&CS) Yeah, it happens on the same side. Actually availability check happens at the same of the order.
+
+1:21:32 - Snowvin Jayapal ADNOC Offshore- OED) Yeah, but if it is ordered earlier, yeah, that's that's what that's what I'm asking. Nobody will go there and automatically save. See, like for example, if I take a report, let us say for a one month I have a set of work order, so I'll just run a report. Material short, I will not execute either. I will defer it or DGS or whatever. So because it shows I will not go inside and then you know keep on saving it again. So will our IBP system help in this regard?
+
+1:22:01 - Mazhar Hussain (ADNOC Group D&CS) Good point is now in very good point.
+
+1:22:03 - Zain Zahoor (ADNOC Gas - IOE) Thank you and in addition to that, for example, if we plan something after the demand planning and there is some proposal for the procurement that what is the actual planned delivery date? So will it be updated in the work order against the component or not?
+
+1:22:24 - Naamani, Mohamad So, Snowvin and Zain, if I may, thanks. I mean, these are very valid questions. If you can help us by writing them on the chat so we can use them when we discuss the future or the design, we'll make sure these are tackled. So they are valid in terms of your current challenges as part of the AS-IS. But also, we do not want this session to cover how or when we say yes, it will be covered, how it will be covered with IBP. But these are valid questions. So help us out, please, to record them so we can capture. Yet, we'll continue to understand the other areas that my colleagues are trying to see how the current state today works. Please.
+
+1:23:05 - Murugan Kaliaperumal (ADNOC - PE&ICV) Let me add my word here, sir. With respect to lead time, Currently the one ERP has been configured already to update the lead time based on every purchase order completed. So you will, anybody who wants to refer for any purpose, the active lead time, you will find it against the item master. In the item master, there is a field called delivery time. So this will give the external lead time.
+
+1:23:37 - Unidentified Speaker time.
+
+1:23:39 - Murugan Kaliaperumal (ADNOC - PE&ICV) So, this is automated and items will be updated regularly. Point 1. Point 2, the scope of this particular implementation will not impact or update any maintenance related data.
+
+1:24:06 - Rohith Ellareddy ADNOC Offshore- OED) Yes, thanks.
+
+1:24:09 - Snowvin Jayapal ADNOC Offshore- OED) Okay.
+
+1:24:10 - Nabil Ghalib (ADNOC Group D&CS) Maria, continue please. Yeah, I mentioned that you can add items after the work order is approved that it will be also approved through the reservation and also about return about the item sent for repair. Yeah, go ahead.
+
+1:24:27 - Maria Terence (ADNOC Group D&CS) Okay, so additional year like after the release of the order right before plan I can have the materials after the release of the order. Also, I can add the material here. So if I if I am having any existing order so I can pick it and then I can attach the additional of the materials additional materials also.
+
+1:24:59 - Maria Terence (ADNOC Group D&CS) And we have certain conditions in the order. Let me go here. There's no component search, OK?
+
+1:25:11 - Maria Terence (ADNOC Group D&CS) Maybe let me add a component.
+
+1:25:20 - Maria Terence (ADNOC Group D&CS) So this will allow, for example, now I'm having 10 quantities. I'm asking for 10 quantities here. And then I'll save the order.
+
+1:26:04 - Murugan Kaliaperumal (ADNOC - PE&ICV) And this is the work order or is in the reservation, sir?
+
+1:26:07 - Maria Terence (ADNOC Group D&CS) In the work order, in the work order I can do. There is a validation.
+
+1:26:11 - Fakhouri, Mohamad So, this is the maintenance planner who can do that? Yes.
+
+1:26:14 - Unidentified Speaker Yeah.
+
+1:26:15 - Maria Terence (ADNOC Group D&CS) Okay.
+
+1:26:17 - Murugan Kaliaperumal (ADNOC - PE&ICV) Because in 10 components. Process. The material is already purchased, partially consumed. For what reason is this quantity amended in the work order, sir? Is it for lack of budget? Cost? Why is this amended?
+
+1:26:37 - Maria Terence (ADNOC Group D&CS) That can be... There could be a...
+
+1:26:39 - Nabil Ghalib (ADNOC Group D&CS) More again, there could be... This was discussed with the companies and agreed to process. If there's any changes required, we'd have to discuss also with the companies.
+
+1:26:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) The challenge here is... The challenge is the purchase reason is not now found. For example, this is item purchase on demand. There was 10 piece in the work order. The inventory team has purchased 10 5 only consumed and no reason why. Once it is cancelled or corrected, for the rest 5 piece if it is high value, they will not know electronically they cannot track who was this and why it was purchased for.
+
+1:27:43 - Murugan Kaliaperumal (ADNOC - PE&ICV) it this has a option to say that there is excess order in the P O you can reduce 5 pieces or there is excess order in the P R you can reduce. So, thus probability is there in I B P and that is one of our requirement. But after receiving if this is changed during conception, I B P will not do anything because for the for I B P cycle of purchasing is completed. Inventory will have a swelling issue. We'll discuss this later on, sir.
+
+1:28:13 - Unidentified Speaker Correct.
+
+1:28:13 - Rohith Ellareddy ADNOC Offshore- OED) Yeah, but in those cases, nothing can be done once it is received, right?
+
+1:28:17 - Murugan Kaliaperumal (ADNOC - PE&ICV) You know, at least the origin is known, right? We'll discuss this later, sir. I'll come back to... This is not good practice, yes.
+
+1:28:24 - Hassan El Rezk (ADNOC Offshore - OPUZ) Let's show what we have and then whatever the amendment, we will do amendment.
+
+1:28:35 - Nabil Ghalib (ADNOC Group D&CS) better. Also mention about the return. Yeah, mention the return, please, Maria, also. And the revision that in case you change the shutdown date. Go ahead.
+
+1:28:45 - Zain Zahoor (ADNOC Gas - IOE) But Murugan, just, just, sorry, sorry to cut you. Murugan, this demand planning will be on the historical data, right? Not on the real-time data, right or wrong?
+
+1:28:55 - Murugan Kaliaperumal (ADNOC - PE&ICV) It will be on the real-time data as well, because one of the agenda is to give levels. Second agenda is to the currently in SAP there is a provision to called MRP planned order generation which creates PR and call of order automatically. So, the IBP requirement is also to do this function because in SAP, SAP could not create transfer orders if the material is available in other plant automatically. It only creates PR to buy. So, IBP There is a provision to create a transfer order either if it is within the company premises in different land or it can also trigger a transfer order for other companies. Also. It proposes transfer order option, so we might we might not use MRP land order concept after we are implementing IBP. So both deliverables are there. Please go ahead. Who is this?
+
+1:29:54 - Fakhouri, Mohamad Yeah, this is, uh, But this can be done through MRP, through a stock transfer, whether it's internal or external.
+
+1:30:04 - Murugan Kaliaperumal (ADNOC - PE&ICV) We'll discuss this. This is one of the expectations.
+
+1:30:08 - Rohith Ellareddy ADNOC Offshore- OED) Yes.
+
+1:30:08 - Khalid Sarfaraz (ADNOC Group D&CS) Currently, the MRP can only have the visibility across one plant only. If you are running the MRP, it is just running for a particular plant. However, IBP has the visibility across the different plants and different companies as well. This is why we have these two.
+
+1:30:26 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, both are right. We'll explain. Our configuration was completely different. So we have a gap there.
+
+1:30:34 - Unidentified Speaker OK. OK.
+
+1:30:35 - Fakhouri, Mohamad So we don't want to deviate the conversation. Let's continue with the man planning.
+
+1:30:45 - Unidentified Speaker OK.
+
+1:30:46 - Fakhouri, Mohamad Sorry, Maria and Nabi.
+
+1:30:47 - Maria Terence (ADNOC Group D&CS) There's one more case also. For example, if five materials are There is a one more policy you cannot amend some material which is already issued. But in case if I want to return it so there is a negative quantity. I will always use it in the order to return it. Yeah, I'll use this negative quantity and then I will return to the it will see still this will go to the store for the approval and then it will go OK.
+
+1:31:36 - Sheraz Kazi (ADNOC Refining - RRE) Maria, the workflow will not take it to the inventory.
+
+1:31:40 - Maria Terence (ADNOC Group D&CS) Workflow will take the same approval email email that is for the information to the inventory controller. There is an email will go there, but the workflow will go to the Yes, it goes to the approver, the leader of the particular order. Like I think yeah, there's no personal number. That's why it didn't trigger the work. Yes, yes. So it goes to the manager of this particular person who's entered here.
+
+1:32:04 - Seba Bakr (ADNOC Refining - HQ) But we have requested for the returns to add a workflow step for inventory.
+
+1:32:10 - Murugan Kaliaperumal (ADNOC - PE&ICV) So this will come up. It doesn't come up, it's OK.
+
+1:32:18 - Murugan Kaliaperumal (ADNOC - PE&ICV) Basically the message what he is conveying is that, what Maria is trying to convey is that, in the work order there is a possibility of adding a negative quantity to return back the material to the wearers which they took for consumption purpose. This is the basic information. Yes, actually while calculating the demand, these quantities will be updated and the final quantity will be considered for demand planning.
+
+1:32:44 - Unidentified Speaker Yeah.
+
+1:32:47 - Nabil Ghalib (ADNOC Group D&CS) Go ahead, Maria.
+
+1:32:48 - Unidentified Speaker Yeah.
+
+1:32:49 - Maria Terence (ADNOC Group D&CS) Uh, please.
+
+1:32:50 - Mohamed Banderi (ADNOC Onshore - I&OED) If you go to the header, please.
+
+1:32:52 - 1Sebastian Alba Yeah. Yes.
+
+1:32:53 - Mohamed Banderi (ADNOC Onshore - I&OED) Just to highlight something here important. This material can be linked to a plant or a specific location or even equipment within the location. So this also will be part of the historical analysis. I don't know what level you you will carry out the historical data analysis. Is it an equipment level or component level or plant level?
+
+1:33:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) Component level, sir.
+
+1:33:21 - Mohamed Banderi (ADNOC Onshore - I&OED) Component, OK.
+
+1:33:22 - Murugan Kaliaperumal (ADNOC - PE&ICV) Material number level.
+
+1:33:24 - Mohamed Banderi (ADNOC Onshore - I&OED) No, I mean the material number linked with the equipment or location or a plant.
+
+1:33:30 - Murugan Kaliaperumal (ADNOC - PE&ICV) All options, because as a spare part, we look for equipment. Maybe a general item would have linked to a location. Location, no, we are not using it.
+
+1:33:42 - Mohamed Banderi (ADNOC Onshore - I&OED) By the way the spare should be linked to equipment but as we know all the data accuracy is not at that level so you might have it at a high level which is a plant or area level which will be the challenge to calculate the demand.
+
+1:34:01 - Murugan Kaliaperumal (ADNOC - PE&ICV) No for calculating the demand it will not like If there is a link to the bill of material, it will be good to know the installed quantity and identify the total requirement. If that is not there, then we might go only by the demand plan, the maintenance planning information. What quantity is added over there?
+
+1:34:39 - Sheraz Kazi (ADNOC Refining - RRE) Mr Murugan, I have a question. How far in future the demand planning will forecast the material requirements? For example, PM recorders we do not have more than three months. So if the recorders are not generated, will the system still be able to make a forecast for the next year of materials? Planning coming, PM's coming?
+
+1:35:02 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, in that case, it will go only by conception pattern.
+
+1:35:08 - Hassan El Rezk (ADNOC Offshore - OPUZ) This is what we are trying to understand today. This team is trying to understand in maintenance. We have asked Morgan to use the maintenance plan not the work order.
+
+1:35:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) Both, both, both.
+
+1:35:20 - Hassan El Rezk (ADNOC Offshore - OPUZ) Yeah, yeah, yeah. You don't need to wait until the work order is issued. You need to see five years or one year, whatever, not less than one year. So better to see from the plan by itself.
+
+1:35:31 - Mohamed Banderi (ADNOC Onshore - I&OED) But the material should be available in the task list itself. Exactly. If it's not available there, it will not be also shown in the plan.
+
+1:35:38 - Mazhar Hussain (ADNOC Group D&CS) Exactly. Yes, true.
+
+1:35:40 - Fakhouri, Mohamad So maybe, Maria, after you're done with this, you can show us the process of the maintenance plan.
+
+1:35:50 - Unidentified Speaker It's included.
+
+1:35:51 - Fakhouri, Mohamad It's included. We'll show it also.
+
+1:35:53 - Unidentified Speaker Thank you.
+
+1:35:57 - Maria Terence (ADNOC Group D&CS) So anything else to be covered?
+
+1:36:01 - Khalid Sarfaraz (ADNOC Group D&CS) One question, when did this plant, when do you create it and how early? Is it created for next year, two years?
+
+1:36:08 - Nabil Ghalib (ADNOC Group D&CS) Yeah, Maria will explain. Just give him time. Let him finish the work order. Last thing about deferral and revision. If we change the shutdown and then you can, if there's nothing else left on the work order, we can show the plan. Go ahead, Maria.
+
+1:36:22 - Mazhar Hussain (ADNOC Group D&CS) And Nabil, Maria, you forgot also to mention that if the material is already consumed, you cannot delete from the company, standard allows.
+
+1:36:31 - Nabil Ghalib (ADNOC Group D&CS) He mentioned that, yes.
+
+1:36:32 - Maria Terence (ADNOC Group D&CS) This cannot, even if it is available, it cannot be done. Yes.
+
+1:36:40 - Mazhar Hussain (ADNOC Group D&CS) So it was missed, Nabil.
+
+1:36:42 - Nabil Ghalib (ADNOC Group D&CS) And of course, we have insurance and repairable item. I think inventory team can discuss that later. They know the process. Go ahead, Sheraz.
+
+1:36:49 - Sheraz Kazi (ADNOC Refining - RRE) Yes, sir. Making reservations through MRS also. So that should be informed.
+
+1:36:56 - Nabil Ghalib (ADNOC Group D&CS) That should be for non-maintenance requirement only.
+
+1:37:00 - Unidentified Speaker Okay.
+
+1:37:00 - Nabil Ghalib (ADNOC Group D&CS) Anyway, we'll discuss it also. That's a good point.
+
+1:37:03 - Ahmed Ragab (ADNOC Offshore - ) Another bus for forecasting is to use the history of the work orders, the actual or the closed work orders, especially we are now working with SEB, maybe from 2021 April. So maybe there's some history of actual consumption of spare parts either in BM work order or in CM work order that can be used for forecasting the demand as well in parallel with what is what we are speaking in the maintenance planning and maintenance items I would.
+
+1:37:40 - Nabil Ghalib (ADNOC Group D&CS) Murugan you can explain later the reservation of production material you know chemicals catalysts that is done by non-maintenance people. Okay, that's not covered here. Okay, continue.
+
+1:37:52 - Murugan Kaliaperumal (ADNOC - PE&ICV) In between, there is a question of the manual reservation, metal requisition, right? For sure, this will be considered in the demand planning. However, I had a doubt. We need to limit these metal requisition or manual reservation to a specific period of approval. There are a lot of metal requisition open for more than a few months, or some are there for years. These are basically intended to take metal from warehouse.
+
+1:38:23 - Nabil Ghalib (ADNOC Group D&CS) But again, this is what we are doing now. Everything that we are doing in ADNOC must ensure data 100% accuracy, from master data to transactional data. If we don't have excellent master data and complete transactional data, everything we So it will not be you know success.
+
+1:38:47 - Murugan Kaliaperumal (ADNOC - PE&ICV) For demand planning can be for this particular case if there is a manual reservation which is dated 30 days before that quantity should not be considered that they will consume it. What it will do? What this system will do? If there is a demand through a reservation, it will consider that say 4 pieces required 8 piece is there in the warehouse. The demand is the output will say that it will not create any PR assuming that 4 piece will be consumed from the warehouse. Similarly, 4, 5 users are asking for the same item and the materials are not consumed, the PR will not be generated or may be excess PR quantity will be generated. So, for manual reservation alone probably we can have another discussion In this particular demand planning area where we are using it for PR generation purpose or planned order generation purpose, we need to consider only manual reservation created within 30 are active. As they can keep it active, take petrol from Varos. When the quantity is reduced, then automatically this planning system will consider.
+
+1:40:07 - Nabil Ghalib (ADNOC Group D&CS) How much time do we have Khalid still?
+
+1:40:15 - Fakhouri, Mohamad Less than 30 minutes.
+
+1:40:16 - Maria Terence (ADNOC Group D&CS) Okay go ahead Maria please.
+
+1:40:33 - Maria Terence (ADNOC Group D&CS) I'm adding a revision, so I'm pushing this order to a particular. For example, I'm going to push to a nearby shutdown. So I'm just this shutdown is like it is having an order period of 20 to 25. Get this particular setup if I'm trying to add so my dates will get updated here.
+
+1:41:18 - Fakhouri, Mohamad I think the recommend date is Okay, so the requirement is that we want, even after the work order has been created, if there's a change, we want also the NIBP to reflect the changes.
+
+1:41:48 - Unidentified Speaker Okay.
+
+1:41:54 - Maria Terence (ADNOC Group D&CS) Anything else, Maria, on the work order?
+
+1:42:00 - Nabil Ghalib (ADNOC Group D&CS) Yeah, yeah, no, he has a question before we go to plan.
+
+1:42:04 - Rohith Ellareddy ADNOC Offshore- OED) No, no, I just wanted to add one point for Morgan. See Murugan when when you say about the MR created for not using the work order that is not manual. Again, that's also should we consider in inventory automating automating this inventory planning process manual in the sense when we are suggesting like maintenance team is suggesting an reorder or a safety stock or OEMs are suggesting a reorder or a safety stock that points we need to consider when you are doing this automated inventory planning correct so those those also should be that is manual actually for me manual means me as a maintenance team intervening and proposing yeah are you addressing well during MDGs creation or SPR creation yeah I am suggesting right I as a and technical expert in the maintenance team. I am suggesting an level. Yeah, I am suggesting a level that is manual for me.
+
+1:43:06 - Murugan Kaliaperumal (ADNOC - PE&ICV) So that is very clear. Here what I'm addressing as manual reservation is SAP terminology. Our middle requisition what we say.
+
+1:43:14 - Maria Terence (ADNOC Group D&CS) Yeah, yeah, that should have by default should consider anyway that should be.
+
+1:43:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, only challenge we have separately. I put it down in the chat. The only challenge we face is manual reservations are open for a longer time, right? We will address it. I kept it as an open point. Manual reservation will be considered by default, but with some limitation. That limitation we'll discuss and agree upon before the end of all these workshops.
+
+1:43:42 - Unidentified Speaker Yeah.
+
+1:43:47 - Maria Terence (ADNOC Group D&CS) Okay, now let me go to the main maintenance planning. So I will show the task list and the maintenance plan how it is grouped so that it can have a reference.
+
+1:44:02 - Maria Terence (ADNOC Group D&CS) See this is a maintenance plan. This maintenance plan is scheduled with the two different packages, right ship frequencies, packages, nothing else. It's a frequency like every six months I will have an order and every two years I will have an order. That's how I've planned my work for this maintenance plan like this. You will have a different case scenarios and plans where it can have a single frequency or it can have multiple frequencies. So so each each plan in this plan we have certain setup like when you need to create an order when you need to plan it so they have set a 60 days. This is an example. 60 days means like if it is planned today if I want the be planned today, then I will create the order 60 days in advance. Like this it can have a different different dates or percentages. It can be done OK in the plan. This is just a planning to ensure that when the order like how early I need to create an order so I can do my material planning and other labor planning requirements to be planned. Whether the nearby any shadow is coming so I need to because all these things will be ensuring with the color is on here, so you will be planning in advance. So this is one thing and for each maintenance plan. We will have a task list assigned, so the task list is nothing but it carries the operations and and then it carries the whether the components can be added. So how much labor is required so that it will carry and this example I've taken like on an equipment is having a task list with two different packages. So let me open the task list. I will show you how the task list is.
+
+1:45:54 - Maria Terence (ADNOC Group D&CS) So these are some of the operations. These are just an operations OK for the each task. This is for the preventive maintenance plan and preventive for the you can see it's a critical HSCS equipment. That's why we have this mat operations are set up. All this mat symbolizes these equipments OK, and then so you'll have so it can in this operation I have 130 items. Line items I have. So. So for example, if you see the description at this differences like you see the six month it comes six month and then it goes to two year. So what I do in the task list? I will assign packages to these main operations like when I need to call this particular order. Like this operation. So for example, six monthly if I go to this package here, I'm assigning which operation falls in a which period. Whether it falls on a six monthly or it can be in a two yearly. So when the plan is, I'll show the schedule of this plan, how it schedules. So and then we I'll create a manual schedule to explain you how it will happen. So here you will have the different packages and this will be So from here. This package task list is assigned to a maintenance item. OK. So this task list assigned to a maintenance item. This maintenance item is tagged to a maintenance plan, so maintenance item and plan is one to end. I can have one maintenance item linked or I can have 10 maintenance items linked to that maintenance plan. I can have a different task list. I like packages also, but different items so different equipments. Everything will be different. It can be different can be seen, so there's no conditions for that.
+
+1:47:52 - Fakhouri, Mohamad Yeah, I do have a question. Yeah, and maybe you can cover this. What happens if? So we have the list of activities, right?
+
+1:48:09 - Maria Terence (ADNOC Group D&CS) They can do it in the work order after the work order is generated. They can do it. If you want to see, for example, it's kind of an ad hoc activity, right? It can be. It is required for this particular order only. Then I can update this operation in the work order.
+
+1:48:26 - Sheraz Kazi (ADNOC Refining - RRE) OK.
+
+1:48:28 - Fakhouri, Mohamad In the work order, but not in the maintenance maintenance.
+
+1:48:31 - Maria Terence (ADNOC Group D&CS) That's what I'm saying. But in case if I am saying I need to have this task to be generated for the next time for frequently for the next six months, then I will add in the task list. Yeah, so that because it because it will pick it will not update the order which is already created, but when there is a new order gets created, the new changes will automatically apply to that.
+
+1:49:01 - Unidentified Speaker Okay.
+
+1:49:03 - Maria Terence (ADNOC Group D&CS) Any other questions you have?
+
+1:49:07 - Fakhouri, Mohamad So same thing. The requirement is also ability for the system to update the demand based on the updated maintenance plan. And another requirement is if there's an ad hoc change on the work order, we need to see if also SAP IPP can. Take that.
+
+1:49:32 - Maria Terence (ADNOC Group D&CS) It's kind of like I will generate an order. I'll show you. So maybe this task list is holding some. I think I forgot to show your neck like you know components here. Let me show the components OK here for an example for the six monthly frequency. I don't have any components assigned OK, but when it comes to too early if I go to the components, You see I have attached a component here material. Yeah, so the way this planning is whenever this order is going to be called, you need to have this. The material is required, right? That is how it is planned here.
+
+1:50:18 - Rohith Ellareddy ADNOC Offshore- OED) OK.
+
+1:50:18 - Nabil Ghalib (ADNOC Group D&CS) I'm sure the schedule also dates Maria.
+
+1:50:23 - Maria Terence (ADNOC Group D&CS) Next time. So. Now now we have a plan. Schedule will happen. There will be if I see this schedule call item. See last it start the plan started in 2020. That's a first order got created. So you'll have a start started and then followed by it as multiple six monthly. They have restarted this to have a complete. They wanted to have a six monthly And later they were introduced. They might have introduced a too early plan in the task list. There are different scenarios. I can include the packages also in between when I do some analysis and I thought like I need to add this along to this equipment based on the manufacturer conditions I can add it here. So now if you see here. So this is how the schedule this dates are calculated at the initial of the schedule where when I'm doing a play maintenance plan scheduling the dates will be calculated. Because this is like if you see it is six monthly apart.
+
+1:51:26 - Maria Terence (ADNOC Group D&CS) Every six monthly you will see a difference here, like every six months you'll have 3430. 10 all are based on the six monthly. Because two year when it comes to two, there are two year. Also we have a two different cycles here. So for example when it is a hierarchy based strategy. This is a strategy for me. For example, this is called an OK, for example, hierarchy in the sense I have six monthly and two yearly package. So if I use this particular hierarchy strategy like I will not get the six monthly on this day too early.
+
+1:53:07 - Fakhouri, Mohamad So for the plan.
+
+1:53:25 - Fakhouri, Mohamad Does this happen quite often at AdNoc?
+
+1:53:30 - Maria Terence (ADNOC Group D&CS) These are normally we schedule the orders like you're saying like changing the frequencies or you're talking about changing the frequency and changing these dates. Yeah, it also happens actually. Maybe from the business anyone like Avinash you can give a reason like when it gets changed.
+
+1:53:51 - Snowvin Jayapal ADNOC Offshore- OED) Yes, yes, it happens frequently based on the recommendation by inspection team or by reliability team. If they find that this equipment is performing good enough, so why to spend the much more cost? So they just vary the frequency based on the performance of that equipment. They do the performance analysis. They study it. Yeah, and based on that, they recommend okay now you can change it uh based based on the failure rate all these things so that's that's a different science so based on that they they change this yeah understood okay yeah
+
+1:54:35 - 1Rohith Ellareddy ADNOC Offshore- OED) so now the one basic question uh so for this uh mro or this uh inventory automated inventory planning through ibp Are we going to consider the work order on the bomb related materials? Are we going to consider all materials or is it something that we need to identify which material we need to plan?
+
+1:54:59 - Rohith Ellareddy ADNOC Offshore- OED) So is it like all these materials we are going to keep it or we need to identify the materials which should be part of this IBP plan? Planning. First we need to identify that.
+
+1:55:13 - Murugan Kaliaperumal (ADNOC - PE&ICV) All items in the system and which has been flagged for appropriate material type MRP type will be considered. 90% of the item will be considered for me. Only items flagged as ND might not be going into this process because it is not only suggesting MRP levels or inventory levels, it is also doing the MRP planned order activity. Right, which means it is doing the punishment activity also. So all items will be considered. Except those decided to be not to be planned. Items with levels will be considered.
+
+1:55:54 - Rohith Ellareddy ADNOC Offshore- OED) OK. Then by default all MRP.
+
+1:56:01 - Maria Terence (ADNOC Group D&CS) Now let me create a plan order from this plan. So that you can see how the materials are captured now. I'll do a scheduling here. I'm just using a manual creation to reduce the time.
+
+1:56:19 - Maria Terence (ADNOC Group D&CS) So I'm just trying to create for manual call today. And for that 19 and then I'm just pushing for two yearly package so I can do a manual call here. So when I say manual call, the order is created. And based on the settings, there is a setting in the plan where it can determine whether the order is can be created at a realist status. So that workflow approval will be triggered on the save of the order or it can be created in the recreated status because it's not approved. So there is no workflow trigger or no commitment on the reservation is done. And during that creation, they will review it, and then they will submit for the approval again.
+
+1:57:05 - 1Fakhouri, Mohamad I have a question regarding roles. So currently at AdNoc, who's creating the plan, and who's reviewing it? Who's approving it?
+
+1:57:22 - Maria Terence (ADNOC Group D&CS) It's a master data. It's from the master data people. The plans will be, because the plans are created we have some programs like a cockpit program where they can do a mass upload or individual transactions they can utilize to create it. It is lying with the master data owners.
+
+1:57:42 - Khalid Sarfaraz (ADNOC Group D&CS) Is it with the maintenance planners?
+
+1:57:45 - Nabil Ghalib (ADNOC Group D&CS) No, each company can answer. I mean, Bandir is there, Rajiv, Sheraz, anyone can answer please, Avinash.
+
+1:57:53 - Sheraz Kazi (ADNOC Refining - RRE) Who is creating the master data? Yeah, we have master data roles in each company and only those people selected people are authorized to create these maintenance plans. And the maintenance plans are created based on approval from reliability or inspection.
+
+1:58:09 - Fakhouri, Mohamad But then once once they get created, it goes through an approval or. That's it.
+
+1:58:16 - Sheraz Kazi (ADNOC Refining - RRE) So once the creation of the maintenance plan is approved, then it is created in the as a maintenance plan system. Once it is created, it will follow that is there. If there's any change of frequency required, then again it has an approval, then once the approval is received, then the frequencies can be changed.
+
+1:58:35 - Fakhouri, Mohamad Okay, so the approval, let's say, happens outside of SAP?
+
+1:58:40 - Sheraz Kazi (ADNOC Refining - RRE) Yes. In some companies, MOC change is required, but in some companies, it is right now manual, but working on to make it...
+
+1:58:48 - Nabil Ghalib (ADNOC Group D&CS) Mohamed, we have a process approved in SAP that if they want to change any master data or create any master data they should use MOC process however it's not followed for all because especially from the for the master data from we are doing it from the SPIR like the material master we explain it in the project this could be explained further later.
+
+1:59:11 - Fakhouri, Mohamad Okay okay yeah thank you.
+
+1:59:14 - Maria Terence (ADNOC Group D&CS) Go ahead Maria.
+
+2:00:47 - Maria Terence (ADNOC Group D&CS) So here, if I go to this, if I want to know, because here they have not updated the storage location, maybe that's why it is showing here, because in the task list, this is one of the information. In the task list, you don't have the storage location. So the user will come to the order. If I go to iw32, so system will ask when I go to this component amp, so will ask me to enter the storage location. I need to update the store location. If I go to the store location you can see the this is the unrestricted stock from this store. I have the eight entries of eight quantities, so if I choose the store up to 8 will like remaining quantities are missing.
+
+2:01:30 - Maria Terence (ADNOC Group D&CS) That's an additional information we require.
+
+2:01:33 - Sheraz Kazi (ADNOC Refining - RRE) Smart, yeah, we heard there is a look store for all at NOC. Right, so is it going to be a problem or a helpful? For IBP.
+
+2:01:47 - Maria Terence (ADNOC Group D&CS) Morgan, I think Morgan will be able to answer.
+
+2:01:52 - Murugan Kaliaperumal (ADNOC - PE&ICV) It's for IBP. If we consolidate Veros or if we work or decent list, it will not make a big difference. Unless until we use one code across companies, and then have levels across companies, like one level across company, then this will make a difference. Currently, even if you have a separate centralized store, you'll have levels per plant per company.
+
+2:02:21 - Naamani, Mohamad I think that's a very important point. Thanks, Murugan, because consolidating physically where the items are will not help until, yes, everyone is using. So everyone basically across group companies they're using the same code or it's a common, let's say, naming convention. However, the good thing is as you do this progressively, one of our streams on the project you've seen is the data stream where we'll highlight certain recommendations. But as you do this over the next few months and even after we go live, IBP will automatically pick this up and benefit from that fine-tuning and refinement. Of the data. It's not related to that we will configure it now and it will take the snapshot and will not benefit from improvements. That's important because it's continuously integrated with the ERP. So as good as the data, and Nabil mentioned the accuracy of the data, as you work and consolidate, fine-tune, improve on that, it will be immediately picked up by IVP.
+
+2:03:26 - Naamani, Mohamad back to you.
+
+2:03:30 - Fakhouri, Mohamad I know we are at a time. Um, so Maria, thank you so much for the walkthrough. Um, if I may ask Maria if you can send us the deck that you've prepared so we can take a look at the process. And if we have any clarification, questions we can.
+
+2:03:58 - Naamani, Mohamad And I think more also as a suggestion or next step for the audience as more mentioned if we have some questions. We'll share that with you so you can help us please with those questions. If we need to have a smaller discussion, I mean a shorter one with depending on the questions which group company or specific stakeholders are able to help. We can have those individual discussions just to also be dynamic. We don't need to have always the same bigger audience and official meetings. We'll play this in an agile way to get all the answers. Thanks everyone for the support.
+
+2:04:38 - Fakhouri, Mohamad So just final comments before we close off. As next steps, as an exercise, so we'll need to assign a process champion for demand planning.
+
+2:05:26 - Nabil Ghalib (ADNOC Group D&CS) Snowden you have something Snowden.
+
+2:05:29 - 1Snowvin Jayapal ADNOC Offshore- OED) Yes, sir.
+
+2:06:30 - Fakhouri, Mohamad maintenance engineer to plan accordingly like that just just a vague question I know this is so yeah so yeah apologies I didn't see your hand up so I'll answer in a brief and then I might ask how to jump into a bit more details. So SAP IBP does have this functionality and it especially will be used for new spare parts where you don't know the demand, let's say classification, but what you can do is you can assign, like you said, a material that has very similar attributes from a demand perspective, right? And then based on that, do your forecasting. All right, yeah.
+
+2:07:17 - Murugan Kaliaperumal (ADNOC - PE&ICV) scenario what we are considering we'll have another discussion for projects maybe I think it's scheduled this week so there for all the materials which is coming through SP here this scenario used it will try to identify a similar item within our database and then propose the So it is the facility is there. We will be using it.
+
+2:07:49 - Sumit Neeraj Kochhar (ADNOC Offshore - ITAEST) Even Murugan Sir, we're doing it here now also like identical items we are marking up.
+
+2:07:55 - Naamani, Mohamad Yeah, Sebastian or actor you wanted to add something before we close.
+
+2:07:59 - 1Sebastian Alba I think on this point just just to confirm so that this SAP IVP system won't be available or won't be. Doesn't have the capacity to identify which are the spare parts that can be replaced.
+
+2:09:00 - Naamani, Mohamad Yeah so I think in design workshops we also discuss what is expected so that that IBP would know that these two items or this item can be a substitute for another, etc. Again, it's linked also to the data of this relationship, so we'll discuss it at length next. But the concept is valid because we need also to benefit from any similar, which you as business owners would know. You're the expert, you say these are two items from different manufacturer, different serial number, but in reality, if we're we can use one instead of the other.
+
+2:09:36 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, no, that alternative is not expected part of the scope. Interchangeability or a proposing alternative is not part of the scope expectation. What we are expecting in EPC project SPR is, if there is item say as impeller available in the SPR list or in the project proposed list, newly coded item.
+
+2:10:22 - Naamani, Mohamad Fair enough. Yeah. Let's discuss this in details in the next session. These are the ones So we're basically we're aligned on how, what are the rules to do this?
+
+2:10:32 - Bilal Dabash (ADNOC Gas - IOE) Murugan, I have one question if you allow me, that is the IPP solution will help for the also for the 3D materials, since 3D materials, maybe it will be applicable later on the front, in the different That is a
+
+2:10:58 - Murugan Kaliaperumal (ADNOC - PE&ICV) manufacturing process sir. It has nothing to do with that. That is one of the manufacturing process. This output of this particular project is to provide, propose inventory levels which is minimum maximum safety and do the replenishment process, creating a PR or creating a stock transfer order or creating a call up order. So, that is all is the deliverables of this project. Part of automation. There is another scope in this is that after this automation is done, all items in one ERP, they will evaluate all the items and propose a new level. So this is also part of this one time, one time job before we go live.
+
+2:11:44 - Bilal Dabash (ADNOC Gas - IOE) Including the digital warehouse or let's say name it digital.
+
+2:11:51 - Rohith Ellareddy ADNOC Offshore- OED) will be as a report right sir Murugan this proposal will be as a report which we can generate.
+
+2:11:57 - Murugan Kaliaperumal (ADNOC - PE&ICV) It will be the data data directly it will propose on the data if the concerned team the focal points of individual companies approve then there will be a live data made as live data. Okay. That levels will be used for future replenishment after go live.
+
+2:12:12 - Rohith Ellareddy ADNOC Offshore- OED) Okay on live data so you will not be giving a report like the see a It would also be proposing as a report right based on the demand forecast. Again, I'm repurposing a minimum value or maximum value. It should be like a report whenever I want to generate. So is it part of the scope?
+
+2:12:32 - Murugan Kaliaperumal (ADNOC - PE&ICV) You mean tracking of old and new data?
+
+2:12:35 - Rohith Ellareddy ADNOC Offshore- OED) Yeah, see this replenish. Data replenishment value or whatever is the proposal that is going to come as part of this IBP demand and forecast. Analysis this has to be like a report right for me like a report that should be the outcome of the project right as um either like a kpi report or like a normal report if it is coming based on that we can you can you can directly change the master data that's fine but it should be available as a report also right okay the master data changes, it is going to change only the inventory levels, three levels one
+
+2:13:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) time, right?
+
+2:13:19 - Unidentified Speaker Correct.
+
+2:13:20 - Murugan Kaliaperumal (ADNOC - PE&ICV) Thereafter, once we go live, periodically and regular basis, it is going to propose changes. There is a demand changing, it will propose a level change.
+
+2:13:29 - Rohith Ellareddy ADNOC Offshore- OED) It will propose means, it will show me as report, correct? It will show me as report output.
+
+2:13:33 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, of course, it comes in excel format, okay. They might show a demo in different sessions. It will only propose in excel format. The data comes down. The user then decides whether accepting that proposal or going by the original data. Once the user who is running that report accepts on the proposed parameter, the data is saved. So, there is a manual intervention on every item level proposed. The system is not generated or will not be made in such a way it is updating overnight, no.
+
+2:14:07 - Fakhouri, Mohamad Yes.
+
+2:14:08 - Nabil Ghalib (ADNOC Group D&CS) Thank you. Khalid, are you there?
+
+2:14:12 - Rajiv Kumar Gupta (ADNOC - PE&ICV) Mama, I have one question for this forecast accuracy part. So do you have such functionality that how this IVP system you know generated the forecast? How accurate it is? Right, this is one of the KPI, right?
+
+2:14:33 - Fakhouri, Mohamad Yes, it will be.
+
+2:14:55 - Naamani, Mohamad Please add it also as discussed on the chat, because we captured all those questions, so we use them as input for the next sessions of design.
+
+2:15:04 - Rajiv Kumar Gupta (ADNOC - PE&ICV) Yeah, because the system will generate the forecast and on top of that he will manually adjust the forecast, right? So how the system...
+
+2:15:11 - Naamani, Mohamad Definitely valid question. The point is we don't want to give quick answers or short ones because we owe you also those design discussions, how things will work, etc. That's why we'd like to capture it. And now that we understood how we function today, we'll couple this with the question so that as we discuss the design, we'll take that into consideration. So please, Rajiv, help us. And write it on chat and we'll take it from there.
+
+2:15:35 - Rajiv Kumar Gupta (ADNOC - PE&ICV) And the second question is, during this IBP, we will change the inventory parameter as well. So for inventory parameter, we have MDG process. Will IBP has capability to raise a CR and assign to the respective cataloging team or how it will?
+
+2:15:54 - Naamani, Mohamad Yeah, let's add it because we're already some people.
+
+2:16:01 - Murugan Kaliaperumal (ADNOC - PE&ICV) a point, but then it will not do that will it it is like a time consuming process. It will item by item as I said the whoever is trying to run analysis using this tool, it is going to generate a report excel sheet. If he corrects it, it is going and saving. He needs to align and consult stakeholders, if he wants to change the level and then save it or else there is a tracking system who did the changes. That's how it will go about. It is not viable to create a MDG and then pass it on. It takes its own free time to do this.
+
+2:16:45 - Rajiv Kumar Gupta (ADNOC - PE&ICV) Yeah, we will add this as a point in the chat. Thank you.
+
+2:16:49 - Khalid Sarfaraz (ADNOC Group D&CS) Thank you, Rajiv. Thank you everyone. I believe if you have further questions.
+
+2:16:58 - Sheraz Kazi (ADNOC Refining - RRE) one can tell me. So is there any aspect of AI in this whole IBP program?
+
+2:17:03 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, there is.
+
+2:17:13 - Murugan Kaliaperumal (ADNOC - PE&ICV) This is yeah. This is one of the simplest example I will say is that first time while item is created, where does this item gets the data from So it looks for a similar specification and finds a related parameter available or used for that item or if there is no parameter it goes by the consumption pattern of that particular item and proposes you from this item we propose so and so parameter. So, there is a facility yes and we will be using it for sure for all newly created items where we do not have past data.
+
+2:17:53 - Murugan Kaliaperumal (ADNOC - PE&ICV) That was the one advantage over somebody asked a question, there is SAP already doing this calculation, why do we go for a other tool? This was one reason why we went for other tool, that SAP cannot find a similar item and propose a level, means the default SAP tool.
+
+2:18:16 - Sheraz Kazi (ADNOC Refining - RRE) Yes, yes, I had asked this question that, you know, even at maximal times, yeah, there was automatic lead time calculation, there was automatic, you know, economic order quantity calculations, but they were disabled in maximal times also probably in step
+
+2:18:32 - Murugan Kaliaperumal (ADNOC - PE&ICV) also. They go by only conception data, available conception data in the system. Okay, the past history, so this program will look at the future forecast Forecast future plus a similar item it can find out and say propose that. Based on this item, we it will propose the levels. So accepting and not accepting is based on the guy who is reviewing the title.
+
+2:18:58 - Sheraz Kazi (ADNOC Refining - RRE) Just as a point that do you think this would increase the balloon the inventory levels by implementing this program or it will reduce?
+
+2:19:07 - Murugan Kaliaperumal (ADNOC - PE&ICV) We don't manually interfere. It will increase inventory. Yes, HI, Human Intervention, is mandate whenever a level change is proposed or even a PR quantity is proposed, a manual intervention to approve is mandatory.
+
+2:19:25 - Fakhouri, Mohamad Okay, thank you, sir.
+
+2:19:42 - Nabil Ghalib (ADNOC Group D&CS) I would like to thank you all, you really did an excellent job, excellent interactive and thank you also for the maintenance team to join us all from the site and provide their expertise and thank you Maria for the excellent presentation. Khaled, just for the chat and the questions, please try to gather all these questions and let's address them all.
+
+2:20:03 - Khalid Sarfaraz (ADNOC Group D&CS) Yes, that's a very key information for the project. And thank you, Nabil, and thank you, Maria, and your team, everyone, and whoever attended the meeting, whoever provided their feedback. We really appreciate it. So this is in the favor of the AdNoc to, you know, all together, work together in collaboration to help in this project, you know, for the inventory optimization and the planning. So thank you very much. It's really appreciated. It's not only optimization, Khaled.
+
+2:20:32 - Nabil Ghalib (ADNOC Group D&CS) We need to ensure the plant are running 100%, no shutdown at all.
+
+2:20:36 - SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT) Yes, yes, yes, you

@@ -1,0 +1,882 @@
+Supply Planning - Purchasing & Refurbishment  
+mar, 24 de sep de 2024
+
+0:03 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Hi Najeeb, we'll start in a couple of minutes. Permits.
+
+3:31 - Murugan Kaliaperumal (ADNOC - PE&ICV) I give you that.
+
+4:36 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Hi, everyone. Hi, everyone. So we're going to start at 10.05. We'll just give it a few more minutes. For everyone to join.
+
+4:50 - Unidentified Speaker Thank you.
+
+4:51 - Nishant Keloth (Borouge) you Morning, everybody.
+
+6:29 - Rahul Patel (ADNOC Group D&CS) Good morning.
+
+8:48 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Hi, good morning everyone. Thanks for joining. Are we audible?
+
+8:54 - Unidentified Speaker Just. Yes. Yeah, OK, perfect. Yes.
+
+9:01 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, yeah, thank you. Thank you. Thank you for confirming. So today's session is about. Supply supply planning and refurbishment. And we should have some focal points for purchasing in this session, I believe. So we'll start the session now. So I believe all the participants are already aware of the project by now because they have been attending the sessions earlier. So if there are any new participants, we can give them a higher level overview. Otherwise, we'll directly go into the discussion. So if there are any participants Participants can raise their hands or let us know in the chat.
+
+9:52 - Conference Room (MM- SKEC2 - L08) - Speaker 2 If it's fine, then we can continue with our discussion.
+
+9:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Everyone is familiar, right?
+
+10:10 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Hi, everyone. Good morning. To Khalid's point today, what we'll be talking about or what we want to understand is how do you conduct a supply plan? How do you do it? We talked about inventory replenishment today. What are the factors for stock transfer? How do you raise a purchase acquisition? Also repairs so how do you manage repairs and how it is identified that this material instead of for example instead of buying a new material we just need to repair that material.
+
+11:00 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So maybe if someone can And, uh. I can start with what? It's the same onshore offshore. The more.
+
+11:14 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Capital was.
+
+11:17 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Welcome champion.
+
+11:20 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Uh sorry. Um if someone can explain to us so after you found the happening, what happens after? So you've added the parameters for the specific material, what happens to that? And who's responsible? What team is it?
+
+11:44 - Conference Room (MM- SKEC2 - L08) - Speaker 4 The buyer or it's also still part of the inventory.
+
+12:01 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Murugan, are you on the call?
+
+12:05 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, can you repeat the clarification?
+
+12:10 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Sorry, say that again?
+
+12:11 - Murugan Kaliaperumal (ADNOC - PE&ICV) Can you repeat the point?
+
+12:15 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Do you want me to repeat the question? So yeah, it was more of OK, so once we've added the parameters for the specific material, the inventory planner has done this based on the demand.
+
+12:33 - Conference Room (MM- SKEC2 - L08) - Speaker 1 What happens next? Who takes care of the supply planning? And what happens in the supply planning?
+
+12:44 - Murugan Kaliaperumal (ADNOC - PE&ICV) What is your definition on supply planning?
+
+12:46 - Unidentified Speaker activities. So how do you? Yeah. Yeah. So for example.
+
+12:57 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Say that again.
+
+12:57 - Murugan Kaliaperumal (ADNOC - PE&ICV) Your first box says publish supply plan.
+
+13:02 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Right? Yes. So for this specific material, let's say you have, let's go into details. Like for example, for this supplier, how do you take into the lead time for this specific material? Who does this exercise of gathering the lead time for the supplier, gathering the requirements? I'd say the supplier cannot, can provide in multiple, has, let's say, a requirement of fulfillment. They cannot order, they cannot supply you one quantity. It has to be in batches.
+
+13:39 - Murugan Kaliaperumal (ADNOC - PE&ICV) Who does all this Okay, well creating a material a new material through MDG There is another mandate for the user or for the creating authority materials engineer to obtain a budgetary quote But two reason one is to ensure that the material is still available from the market from the same manufacturer Second thing is to know the price and the lead time. Mm-hmm So which means they're trying to conquer, even before coding the material, that this material is available. Because probably our equipment was commissioned four years back, or the instrument was installed a few years back. Maybe that is upgraded now. No more of that model is available. Or the supplier is providing it, but we need to know how long it takes to buy lead time. Or we even need to know the price of that item for current price. For all these reasons, budgetary quotation has been obtained from the relevant purchaser if it is manufacturer specific item, right? So the data is obtained from that. If in case the budgetary quotes gets delayed, the price or the lead time is being assumed from a similar item from the same manufacturer, So this is our lead time and the price is calculated. For general item, we don't go by manufacturer. General item, I would say piping material, gaskets, or bearing. Though there is manufacturer for bearing, we don't go by manufacturer. We go by the similar item available in the database, find out what is the lead time.
+
+15:27 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So this is our lead time. And the purchasing it for record, right? For the materials, you have a purchasing it for record, right?
+
+15:36 - Murugan Kaliaperumal (ADNOC - PE&ICV) We have a purchasing for record in that we maintain only price if I'm right. We don't expect any other data from that. But however, they need to go and check what was every material record is saving a lead time for us. There is a field SAP default field delivery time. This field is updated automatically when the procurement cycle is completed. To PO cycle when it is completed. Sorry, PO to delivery cycle when it is completed. The lead time is automatically calculated and saved. This is happening on daily basis. So our reference, if we don't have a budget record, we will go to this data, find out a similar item or a similar manufactured product, and then find the lead time from there.
+
+16:28 - Conference Room (MM- SKEC2 - L08) - Speaker 1 But Murugan, let's say for the same material, right, you have three suppliers. Yeah, where is the lead time required?
+
+16:39 - Conference Room (MM- SKEC2 - L08) - Speaker 3 During the IQ stage, when the suppliers they caught, and they put like in the remarkers, two or three weeks delivery, each supplier And it is recorded.
+
+16:52 - Murugan Kaliaperumal (ADNOC - PE&ICV) Wait, wait, wait, this is before she's saying no more. The question is before while item is created, how do we? Where do we get this information for planning? Not during tendering stage. So yes, for a similar item, this is called what I address as general item, which is not manufactured specifically. We can buy from multiple manufacturer. We go find out a similar item in the database. Let's see what is the latest lead time for the datum. We consider the same lead time.
+
+17:25 - Conference Room (MM- SKEC2 - L08) - Speaker 4 I think as mentioned by Murugan here about the categorization of the line items. We have considerable items with alternative or accepted manufacture which is already manufactured locally here in UAE so that we can expect the lead time between one to two weeks depending on the data. And the other one by already manufactured, the UAE by manufacturer which is already mentioned in our description as an OEM or manufacturer. Let's say that GA item so that we need to plan at least six months before in order to meet the end-user requirement. Already we have agreement with the end-user that any items required especially from the OEM, the reservation should be already in place in the system six months or at least 12 months before in advance in order For your input for
+
+18:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) If the given item created first time through MDG or through AAN, if it's not having a lead time, you need to identify from a similar item and populate a lead time.
+
+18:34 - Conference Room (MM- SKEC2 - L08) - Speaker 2 System need to predict the lead time in another way, right? System needs to predict.
+
+18:40 - Conference Room (MM- SKEC2 - L08) - Speaker 1 But it is up to the end user. The end user will specify that, OK, yes, this is a new material, but it is similar to material X that we have.
+
+18:54 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, they may not. They may not. No. They may not. It was metals engineer's responsibility. Of course, they get the budgetary quote. It will be there. Probably they may not, in all cases, say that this is similar to X item.
+
+19:11 - Conference Room (MM- SKEC2 - L08) - Speaker 1 OK. The requirement here is that you want the system to do that automatically?
+
+19:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) If you find a null lead time, because lead time is one of the parameters to calculate other outputs. A critical parameter for planning. So if you don't have a lead time, we need to get it from the Similar item.
+
+19:39 - Rahul Patel (ADNOC Group D&CS) Is there anywhere defined in system? What is a similar item? Like how do we understand what is a similar item?
+
+19:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) We need to arrive at the parameter during the workshop session.
+
+19:49 - Rahul Patel (ADNOC Group D&CS) So right now we don't have anything which links to models which are similar.
+
+19:54 - Murugan Kaliaperumal (ADNOC - PE&ICV) Uh, if I should repeat, I was said that there is a functionality a based which can identify similar item. Our way and then produce that's that's one of the advantage that's the only advantage we found from IBP from other tools which are giving inventory parameters. Okay, got it.
+
+20:35 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Another thing, I just wanted to have a check if this is happening for all AGCs. I just had a, just before the this, I had a chat with Ahmed, and he mentioned, so there is two types of, we're doing twice the sourcing process, right? During when the SBIR, when we received the data in SBIR, the inventory planning, as we will go and add, we'll go to market to just add a price, and then on the material, and then the buyers will go when the PR is being created, there's another round of sourcing that's being done by the purchasing department. Is this happening for all agencies?
+
+21:36 - Murugan Kaliaperumal (ADNOC - PE&ICV) I'm not clear. Are you saying that? Let me explain. Once we create the code, if you raise a PR for the first time, purchasing is going for sourcing activity directly. They go for tender. They don't go for intermediate request for information in this case, with respect to product.
+
+21:55 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, Ahmed, you correct me if I'm wrong, but in order for you to... No, no, no.
+
+22:02 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) What, Mohamed, you want to get a clarification on this point is when cataloging team, they are receiving a CR, from end user to catalog item they need to get a estimate price and availability this is what was explaining five
+
+22:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) minutes back beginning yes either the user is giving a budget record or the metals engineer will go and obtain the budget record where in he is looking for whether the metal is available till now right and the buying description is complete third is there a lead time produce from the market and fourth is the price current price so this is what they expect from a budget record in ERP terminology today they are calling it as RFI it's not
+
+22:47 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) done by purchasing team it is done before the metal is completed completely created in the metal record so after this after this it will come to inventory they will check the perimeters then inventory team they will is a PR to will go to purchasing. Purchasing same as what Murugan he explained now that they will go and get the request for RFQ.
+
+23:17 - Murugan Kaliaperumal (ADNOC - PE&ICV) They go for RFQ, they go for directly for sourcing purpose. For products purchasing does not go for RFI unless until user is requesting for RARLY.
+
+23:38 - Conference Room (MM- SKEC2 - L08) - Speaker 1 let's say let's assume that uh what happens if there's a descriptive in the uh you call right now the budget record and the the pr just goes back for approval what will be the difference in this case so when the buyers they've done uh they also went to market right and they done a source here And there was a discrepancy between what during the budget record phase and the PR.
+
+24:14 - Murugan Kaliaperumal (ADNOC - PE&ICV) Discrepancy in price or lead time? Yes, price. It's okay. That is a negotiation issue. It doesn't impact us. The price used for calculating the previous parameters stays the same. Okay. And lead time? I hope the parameters are not the same. About the price?
+
+24:34 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) No, I think what Mohamed he want to discuss here, sorry about that, what Mohamed he want to discuss here in case if this item not being procured for last five years let's say, there is a difference in the price between what is available in the system and what the new price that purchasing they get it from market.
+
+24:56 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, that's what I'm asking, answering, that doesn't, that's negotiation part that doesn't impact the levels. A change in price, that's why I'm continuing to ask another question. The unit price of the item doesn't influence the inventory levels, which means safety stock, minimum stock, maximum stock. Please correct me. If unit price is part of the parameter, so it will not have a big impact on our levels. We might find That is about the ordering cost.
+
+25:34 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, yeah, yeah. Inventory levels.
+
+25:42 - Murugan Kaliaperumal (ADNOC - PE&ICV) However, if the lead time varies next time when we are calculating the levels automatically will change. Assume that this purchase order went out with a higher lead time or lesser lead time. Both are possible. So next time when the item is automatically the levels will be changed. We do not review levels during technical evaluation period or when the RFQ is in market, we don't review the levels once again. It doesn't make any requirement for us.
+
+26:14 - Murugan Kaliaperumal (ADNOC - PE&ICV) Unless until you find it is mandated to do With some value case we can do it.
+
+26:29 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Right this year. This process is clear now. Uh? Yeah, I wanna jump it to a Refurbishment, because I know this topic is quite.
+
+26:47 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Before you do that, I'll share my screen. I want to show something to you. Let me know you are aware of this. If you are aware, then it's okay. I have already shared the document. So, this is a typical process flow for MRP, you know, related materials. For MRO materials, which are reserved through the work order. So, after the and when the MRP runs, it generates the planned order. So these planned orders are generated from and then these planned orders are converted and consolidated into PRs. So there is some kind of criteria is taken into consideration like similar materials belonging to a similar agreement, materials belonging to same manufacturer, similar commodities, You know, those kind of It's mentioned here.
+
+27:47 - Conference Room (MM- SKEC2 - L08) - Speaker 1 If there's, let's say a requirement, let's say the supplier. Does it also take into consideration the fulfillment of the supplier? Let's say they have constraint that they cannot supply you, let's say a specific. You have to supply a specific quantity, so it has to be That is coming from the agreement.
+
+28:13 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Different kinds of agreements are there.
+
+28:15 - Conference Room (MM- SKEC2 - L08) - Speaker 1 This is where you consolidate the PRs based on this agreement.
+
+28:21 - Conference Room (MM- SKEC2 - L08) - Speaker 2 In the agreement, it will be mentioned, let's say the supplier would provide 1000 quantities. When the PR is generated, it takes that into consideration that how much quantity have been used.
+
+28:34 - Conference Room (MM- SKEC2 - L08) - Speaker 4 This step will be automated.
+
+28:38 - Unidentified Speaker consolidation.
+
+28:38 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Steps depend on the data cleansing here. The data this we need to focus here about the manufacturer NBN report. We need to ensure that it's correct in order to have proper consolidation. Because why here as mentioned by Khalid that the first priority here by LTBAs. If the LTBAs exist it will be automatically it will scroll off items. It's another first stage. The second priority by manufacturer burden part. If we have one manufacturer Manufacture to be considered it all together and one and one PR that will it will be Benefit for us instead to have multiple PRs so that we can consolidate them based on the manufacture So that will float it to the market who will get a better price than we have multiple and also we need to avoid also the low value PRs Sometimes you have one maker instead of that and it will release PR by $5 So that by this consolidation will help us to consolidate all this environment If no manufacture that happens, it will be consolidated by product group or material type of product group because it's UBG, unified product group. It will be consolidated to similar UBG all together. It's an automated process.
+
+29:53 - Conference Room (MM- SKEC2 - L08) - Speaker 4 And of course, it will be...
+
+29:54 - Conference Room (MM- SKEC2 - L08) - Speaker 2 The inventory controllers are here. Also, check one thing. They are also reviewing the PRs and updating the necessary uh necessary corrections of quantities you know the question Aisha asked how do I make sure these quantities are correct or not I'll just but if there's an tpa yeah yes
+
+30:18 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Everything is automatic there's no there's no review I think it's still there is a there's a review yes yes of course because for example the system here a flash until the For example, if the maximum is 10. But when we come for review, we see like there is open PR quantity with purchasing open pure quantity. For example, let's say there's 5. So I cannot consider 10 because I have already 5 under procurement action, so I have to know. Don't do mathematics. Detect this from this. Sometimes we have reservation also, so I have to consider also the reservation so that they don't duplicate the argument.
+
+30:58 - Conference Room (MM- SKEC2 - L08) - Speaker 4 I think once the MRBR is run, systematically, it will already consider, it will create a blood order, only it will calculate the remaining quantity. They will subtract the quantities under B0, they will subtract all the available stock, it will be under remaining, let's say 5, will create a call of order by 5 pieces, in order to avoid overstocking here.
+
+31:24 - Murugan Kaliaperumal (ADNOC - PE&ICV) Excellent, sir. Yes, exactly this is what we're expecting in IBP.
+
+31:29 - Unidentified Speaker Yes.
+
+31:30 - Conference Room (MM- SKEC2 - L08) - Speaker 4 And also, hey, Murugan, anyone?
+
+31:31 - Conference Room (MM- SKEC2 - L08) - Speaker 3 The calculation.
+
+31:33 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, yeah.
+
+31:33 - Conference Room (MM- SKEC2 - L08) - Speaker 3 The understock minus the reservation plus PO quantity plus PR quantity with purchasing.
+
+31:40 - Conference Room (MM- SKEC2 - L08) - Speaker 4 And this is, I think, an important topic. We need to hear from the agencies here.
+
+31:43 - Unidentified Speaker Anyone, please? Nishan, Nishan wanted to say something.
+
+31:45 - Conference Room (MM- SKEC2 - L08) - Speaker 4 We need to hear also from them, Yannick. Anyone from Adacrofining, Adana Coffshore? Anyone from Adana Coffshore? Please go ahead.
+
+31:54 - 1Nishant Keloth (Borouge) Had done additional.
+
+31:57 - Murugan Kaliaperumal (ADNOC - PE&ICV) Nobody from another gas is there today. Anybody is there?
+
+32:00 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Hello. Yeah, so in Burj we had an additional customizations on top of what we got as part of one ERP for the PR clubbing, right?
+
+32:09 - 1Nishant Keloth (Borouge) So what we can do is we can we can also share the specs with you guys if you would like to, you know, take that as a reference and Ashma. Do you want to add on the additional criteria? We added project and all right finally.
+
+32:35 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, if you get what is the the customization with the Solidation Hello.
+
+32:47 - 1Nishant Keloth (Borouge) Much mud. Yeah, yeah, so see we will share you that specs. So on top of adnox consolidation based on you know material group MP and manufacture and other factors. We also added project stocks and this is a program which runs behind the MRP once the planned order is converted and then this generates all the PR's accordingly which further goes to the inventory controller.
+
+33:18 - Murugan Kaliaperumal (ADNOC - PE&ICV) What is the project stock? You mean purchase order with assignment queue?
+
+33:24 - 1Nishant Keloth (Borouge) Yes, so we had added some additional logic on that. I will. I will give you the details of the specs. I'm just trying to recollect.
+
+33:33 - Murugan Kaliaperumal (ADNOC - PE&ICV) Discuss this probably after this meeting. Yeah, OK, OK.
+
+33:41 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Anyone from the Gaz? Balaji or anyone?
+
+33:46 - Murugan Kaliaperumal (ADNOC - PE&ICV) Balaji has joined, yes, yeah.
+
+33:51 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Okay, refining Vivek or Noor Rahul, anyone from refining?
+
+33:57 - Balaji Gopalsamy (ADNOC Gas - PD) We can hear you, your voice. Vivek or Balaji?
+
+34:07 - Murugan Kaliaperumal (ADNOC - PE&ICV) The requirement is. Any challenges you face?
+
+34:13 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) Teams teams teams.
+
+34:18 - Balaji Gopalsamy (ADNOC Gas - PD) Sorry, but I'm having a difficulty hearing it. Hello sorry.
+
+34:23 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Yes, but while while clubbing the PR, it has a taking the older reservation quantities. Also, this is one of the challenge.
+
+34:36 - Murugan Kaliaperumal (ADNOC - PE&ICV) old reservation quantity and it's giving us an extra order quantity.
+
+34:42 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Yes, it is considering all the reservation even Reservation is not closed.
+
+34:48 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes, reservation is not closed. This is a challenge we need to write down.
+
+34:55 - Vivekananthan Kathiresan (ADNOC Refining - HQ) We need to address it to EAM team also, Murugan.
+
+34:59 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes, we addressed it already. Yeah, it's a good thing. Here's one challenger EM from EM work orders are not closed for years together. And assume that 100 piece was asked for item they used piece that 20 pieces blocked in inventory plan. They they completed their work order, right? They did not. The work order is not having a closing facility currently. Which means that 20 piece is blocked against the work order every time that 20 piece has been considered. And the new reservation is not allowing you to use the 20 piece. It's always saying by new extra by extra by extra. This is one continuous issue. I think few ITF few agencies made a request to close, cancel the old reservations, be it work order or manual reservation. Beyond some specific period, I that is not still implemented.
+
+35:56 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, OK, this is an answer. In LNG in LNG when before one ERP what we developed one program and it was to review the old reservation, send them a reminder email and after that it to automatically close it.
+
+36:14 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, this is not. One of them has made a request. I saw the idea because we approved it, but it is still not implemented. If not implemented, I even spoke to the Bill Gallip two weeks back. If this is not implemented, we need to make something, a different logic in IBP to cater or exclude those old reservation quantities.
+
+36:38 - Unidentified Speaker Yes, all the open work orders with requirement date has passed. So requirement date has passed or requirement date?
+
+36:49 - Murugan Kaliaperumal (ADNOC - PE&ICV) Correct, departmental case has passed. Partially middle has been used. We can we can set the logic for it, but we need to consider.
+
+36:59 - Rahul Patel (ADNOC Group D&CS) Yeah, so this is Rahul here from KPMG. Normally if the requirement date is passed, which means the action is complete. Or do you have any work orders which are still ongoing even if the requirement date is passed? Considering that you have a long lead time planning like six months, eight months you plan a friend in advance, which means that whatever work orders which are in past it, have been fulfilled in one way or the other, right?
+
+37:24 - Murugan Kaliaperumal (ADNOC - PE&ICV) Correct, correct, yes. The problem in SAP was we never had a status to close the work orders. If you close, in other places we noticed, if you close the work order, the reservations gets canceled automatically.
+
+37:40 - Unidentified Speaker Yeah.
+
+37:40 - Murugan Kaliaperumal (ADNOC - PE&ICV) So the reservation cancellation, this is the concern. I think there will be one. Continuously. No, no, it's not happening. This is not happening, so the city is not having this facility. Somebody should go and cancel the work or reservations manually. This is the current unless you business close it, it will not cancel. Correct, very correct.
+
+38:07 - Conference Room (MM- SKEC2 - L08) - Speaker 3 So we we need to sometimes they close work order and there is active PR.
+
+38:13 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Activity also. And suddenly we observe and discover that and there's a concern that now we have overstocking.
+
+38:24 - Raghavendra Mithal (ADNOC Refining - HQ) That is a perennial problem I think every GC is facing. They keep on closing that or cancelling and we build up stock.
+
+38:31 - Murugan Kaliaperumal (ADNOC - PE&ICV) But there was a requirement during the BPD session to have a...
+
+38:35 - Hector Palacios This is not related to the session. This is a concern.
+
+38:44 - Murugan Kaliaperumal (ADNOC - PE&ICV) This is not related to this session because automatically IVP will identify and say this PO quantity, this PR quantity is excess once a reservation is cancelled. That facility is there, but for us internally I've addressed this earlier in some of the discussion. During the BPD section of 1ERP we were requesting a notification to notify the inventory controller if a reservation is cancelled, if a work order is cancelled. Even if you don't I think it is there. I think I even if it is not there, so let me tell you IBP has a facility. It says what is the access order now? If I if my MRP is running now, if the reservation is cancelled last week, it's going to say that this is excess PR quantity. This is the excess PO quantity, so you can go and refer and take what action you can take.
+
+39:38 - Hajaratkhan Khan (Borouge) But Murugan, not there should be some lock that like if you want to change the TR system is giving error message that there is RFQ or PU exist, you cannot delete. So same should be there, they should not be removed from the work order because what we found, this is the reason for non-moving and excess stop.
+
+40:02 - Murugan Kaliaperumal (ADNOC - PE&ICV) Correct, we tried this but this is something different EM module, we will handle it separately but then IBP has a very good provision that during the next MRP run, it will tell you what is the quantity which is not related to, which does not have a reservation.
+
+40:19 - Unidentified Speaker Exactly.
+
+40:19 - Hajaratkhan Khan (Borouge) Once EAM team deleted, there is no solution.
+
+40:24 - Vignesh Perumal (ADNOC Group D&CS) You cannot delete.
+
+40:25 - Hajaratkhan Khan (Borouge) Yeah, they don't want. You cannot delete. Then the material will come and it will land up in your warehouse for 10 years or 20 years.
+
+40:32 - Murugan Kaliaperumal (ADNOC - PE&ICV) It's a waste of money. Clear, but that is a separate topic, I mean. Let's not handle this here. I had many time discussed with EAM. We can like make a little list of point and talk to EAM team, call Mr. Nabil and have a discussion with him.
+
+40:49 - Raghavendra Mithal (ADNOC Refining - HQ) This is a separate topic. Yeah, so Murugan just to highlight, very recently we asked for enhancement because whenever they are changing the work order, we enhance that mail to send a detailed information of what line is changed, how much quantity was changed. So that enhancement has gone in.
+
+41:08 - Sheikh Saleem (ADNOC Logistics & Services) OK.
+
+41:11 - Murugan Kaliaperumal (ADNOC - PE&ICV) So that means notifications coming up with the proper information.
+
+41:14 - Raghavendra Mithal (ADNOC Refining - HQ) Yes, yes, yes.
+
+41:15 - Murugan Kaliaperumal (ADNOC - PE&ICV) So those agencies who are not getting notification, please check it out. Maybe notification is off for some condition. But still if you feel that let us have a separate discussion with the EMT to have other warnings. Yeah, go ahead.
+
+41:33 - Hajaratkhan Khan (Borouge) There should be some SLA should be with them because this is the reason for the excess inventory and the non-moving inventory. So there should be some SLA. When they are saying that the service level and zero stock, so same time you have to raise the question of this non-moving and excess stock.
+
+41:51 - Murugan Kaliaperumal (ADNOC - PE&ICV) Very correct. Very correct, sir. And it is to be, we can separately have a meeting with Nabil.
+
+41:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 If I can just summarize the requirement. You want a report or a notification that highlights that let us say you have overstocked.
+
+42:11 - Unidentified Speaker Let us not go to the solution now.
+
+42:12 - Murugan Kaliaperumal (ADNOC - PE&ICV) Let us discuss that in the design session. Let us list down the pain points.
+
+42:29 - Conference Room (MM- SKEC2 - L08) - Speaker 2 not go to the notification.
+
+42:30 - Conference Room (MM- SKEC2 - L08) - Speaker 1 What the main point is for the inventory team is the open reservations which are open and the PR has been created for them and even so in many Yeah, and then they are created.
+
+43:00 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So there are two cases. One is old open pay reservation, which is cancellation after the bill and other is cancellation after the PR or during the procuring process. Yes.
+
+43:12 - Conference Room (MM- SKEC2 - L08) - Speaker 3 One thing I want to add repetition of fine item the PRs. For the replenishment. For example, we are replenishment for normal replenishment. I created PR. Yeah, then after like two weeks. I will receive. I will receive another work order for the same line item So I will go and create another period same line item with different PR So for me, I mean, I think this is like no repetition of I like to have very like many people will do technical evaluation, you know She said the PR for the same way for the same items.
+
+43:51 - Murugan Kaliaperumal (ADNOC - PE&ICV) I This is coming down part of once we implemented this MRP, this issue was resolved to maximum extent, at least per discipline wise. So the same thing will be in IBP also. Is going to give you an enhanced version of MRP planned out now. So you might not have multiple PR issues occurring, at least in a given period. In the next planned order, but in single planned order you will not have same item in different fields. Vivek is asking something.
+
+44:31 - 1Vivekananthan Kathiresan (ADNOC Refining - HQ) Murugan, I noticed in this workflow, this call of order is not done by the buyer, it is done by the inventory engineer.
+
+44:41 - Murugan Kaliaperumal (ADNOC - PE&ICV) In the where, where did you see this?
+
+44:42 - 1Vivekananthan Kathiresan (ADNOC Refining - HQ) This is a flowchart which someone is sharing, Murugan.
+
+44:47 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, yeah, yeah, it's an old one, probably it needs be updated.
+
+44:51 - Vivekananthan Kathiresan (ADNOC Refining - HQ) So, call of order is under RFX. Wherever item required RFX, it will go to PD.
+
+45:00 - Conference Room (MM- SKEC2 - L08) - Speaker 2 I think inventory, actually inventory release orders are not even end user, but inventory controllers themselves.
+
+45:06 - Vivekananthan Kathiresan (ADNOC Refining - HQ) For stock basis, yes, inventory controller. For stock items.
+
+45:18 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) call of older.
+
+45:22 - Conference Room (MM- SKEC2 - L08) - Speaker 1 If you have the same delivery date or close delivery date, it doesn't.
+
+45:28 - Conference Room (MM- SKEC2 - L08) - Speaker 3 So we're scheduling the replacement, for example, once a month.
+
+45:32 - Unidentified Speaker Yes.
+
+45:33 - Conference Room (MM- SKEC2 - L08) - Speaker 3 So when it comes, it will be a club.
+
+45:35 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes.
+
+45:35 - Conference Room (MM- SKEC2 - L08) - Speaker 3 It will be a club by quantities, everything, based on manufacturer or product.
+
+45:39 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, right, right.
+
+45:40 - Conference Room (MM- SKEC2 - L08) - Speaker 3 But I'm saying after that, many reservations after that. And we have many So on this PR, it will be.
+
+45:49 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So within a close, let's say, within a month or within a close time limit, you are receiving some PRs in a different, right? So let's say MRP runs today.
+
+46:01 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Emergency come.
+
+46:02 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Let's say MRP runs today. The PR is generated, consolidated, OK? Then MRP runs after one week. Then again, it's for the same material. It's just creating another PR.
+
+46:12 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Conservation for it. Yeah.
+
+46:15 - Conference Room (MM- SKEC2 - L08) - Speaker 2 It depends on the cycle of the MRP and how do we want to consolidate.
+
+46:20 - Hector Palacios So this is like,
+
+46:22 - Raghavendra Mithal (ADNOC Refining - HQ) No, no, actually, if the PR is there and you're not touch the PR and if the MRP runs again, it will delete that PR and consolidate the PR. It is not the way you're saying.
+
+46:34 - Conference Room (MM- SKEC2 - L08) - Speaker 2 But no, but it's approved if it's the PR is up.
+
+46:36 - Unidentified Speaker Yeah, if it is approved. Yes, you're right. Yeah, you're right.
+
+46:40 - Conference Room (MM- SKEC2 - L08) - Speaker 4 That's what I kind of meant and yeah. Yeah, yeah, yeah, yeah.
+
+46:49 - 1Nishant Keloth (Borouge) So in our case I assume that the PR for AdNoc will go to AdNoc instance and Buruj would be pushed to Buruj instance right now. On top of this aggregation logic that we have, we have an additional logic for decentralized and centralized because eventually the PR post-approval will move back to AdNoc for sourcing, right?
+
+47:16 - 1Nishant Keloth (Borouge) As part of optimal project.
+
+47:18 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Tomorrow there will be no decentralized, it will be 100% team here.
+
+47:26 - Vivekananthan Kathiresan (ADNOC Refining - HQ) For refining also there are some decentralized purchase group is there, there is a decentralized team is there in purchasing and contracts. So there are decentral group is already there. Yes, Sir.
+
+47:41 - Murugan Kaliaperumal (ADNOC - PE&ICV) And there you wanted to say something while you were talking. Anyway, after your clear or call of order, IBP has no action to be done as per current plan, right? We are using this only up till releasing inventory requirement. So what is happening in sourcing is completely different topic.
+
+48:03 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Yes Murugan few manual PR situations is also there one first is emergency requirement second is second is SPI or internal ordering and third one is no cure no pay pay PRs so so this type of manual PR also is
+
+48:26 - Murugan Kaliaperumal (ADNOC - PE&ICV) if you create it is okay during next MRP run, those quantity will be automatically considered as outstanding PR or PO.
+
+48:35 - Vivekananthan Kathiresan (ADNOC Refining - HQ) It's okay for whatever it is. This SPIR, there is a separate purchasing section is there. So, is manner PR clear?
+
+48:44 - Murugan Kaliaperumal (ADNOC - PE&ICV) Very great, one topic at a time. Is your manner PR question clear? You can still create manner PR after IBP while using IBP on need, emergency requirement, or whatever specific reason, okay? You can create manual PR. Your PR will go for RFQ process. Will be done. During the next replenishment for that particular material codes, it will recognize that PR automatically as outstanding PR or PO. So, the rest of the quantities only will be considered for replenishment purpose, right?
+
+49:19 - Vivekananthan Kathiresan (ADNOC Refining - HQ) So, that is not an issue. Demand aggregation program. It includes out of say for one example for flows or pumps. There are 5060 items under one PR in one MRP run out of 50. There are 10 items is comes under SPR internal ordering, so those items we need to segregate and we have to create a separate PR. No Morgan.
+
+49:43 - Murugan Kaliaperumal (ADNOC - PE&ICV) Wait, wait, wait, SPR. You come to second question. What is your concern in SPR? No SPR. There is a level made by MRP and it is trying to release a MRP order. Is that your concern?
+
+49:59 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Once a level is made while procuring this item, this purchasing item, this PR should go to the project material purchasing team. So for that purpose, we need to create a separate PR because when we are clubbing all together as a regular replenishment, all this work order turnaround, All these quantities under one.
+
+50:21 - Murugan Kaliaperumal (ADNOC - PE&ICV) We had already discussed this in the project project team. Probably you are not there. The SP in the project discussion at last week we had. It has been clearly identified that two different purchases will happen through SPR. One is purchase orders to direct supplier. So in AIM tool there is a differentiation already made which item goes for the EPC contractor and which item goes for sourcing.
+
+50:47 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Okay, that's good. When it comes to the PR MRP program, it does not identify which one you are talking about current situation.
+
+51:00 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes, that's what I'm saying. It has been already discussed part of IBP requirement. So the flag available in AAN will differentiate which PO goes for the EPC contractor and which will go for PR. Part of MRP. So, this concern is already addressed. During the design section, we can re-evaluate this. Topic is already addressed. What is the third topic you are telling, sir? If you want to note down, Khalid, you can note down this in project SPR demand requirement or demand consolidation. We will have two workflows. One is for ordering from the EPC contractor second from a and tool you can differentiate this and second thing is to raise a PR to sourcing purpose so two different workflow was discussed and it shall be considered in the design session.
+
+51:58 - Vivekananthan Kathiresan (ADNOC Refining - HQ) What is the problem sir? Up to differentiation is fine then the same logic should be applied in PR consolidation also logic also That's what I'm saying.
+
+52:08 - Murugan Kaliaperumal (ADNOC - PE&ICV) Those that are really really two different workflows. So during the design session we will ensure that these two different workflows are working as what we want. If it is technically something so one challenge. Not a taken care it has been addressed, so during this design session they need to. We need to ensure it is taken care. You had one more concern, Vivek.
+
+52:36 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Yes, Murugan this turn around turn around quantities of the reserved items. Also, we need to segregate. There are separate purchasing team is available. So the Yes, consolidation consolidation. OK. And
+
+53:00 - Murugan Kaliaperumal (ADNOC - PE&ICV) materials you are ordering in the country? There is a flag in the PR. Yes, yes, yes.
+
+53:11 - Rahul Patel (ADNOC Group D&CS) Can you elaborate?
+
+53:12 - Murugan Kaliaperumal (ADNOC - PE&ICV) Keep an open point. We discussed one of the projects. Few project types we discussed. One of the project type is for finance. It is project for AGCC. It is actually maintenance requirement. We might have work orders for turnaround, right for will will work over. Right, so this is what they're calling this turn around. You will have work order for input for IBP's work order. For demand aggregation while creating PR, they want to add a logic. Keep it as open point return in during the design session will address this. Demand consolidation. Constraint turnaround slash. Overhauling slash.
+
+53:57 - Rahul Patel (ADNOC Group D&CS) So based upon the usage where the maintenance pair is going to get used, they want demand consolidation.
+
+54:06 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, based on how the purchasing, tendering or sourcing is happening, they wanted to consider. Earlier we considered product group and manufacturer. There is a separate team now identified for turnaround. We'll come back to you on the subject. We need actually purchasing team as well on this. Discussion probably during the dissent stage we'll decide this but keep it as an open point for the subject. Wait Nishant one minute, Vivek that is addressed right? Yeah these three are the topic right? Because team 1 was most of valid point because refinery was extensively using this MRP for three years. Few more companies were using so anybody had any challenges we would appreciate to discuss during this time because IBP is a replacement for MRP planned order we are planning for. OK. Nishant Sir, sorry, go ahead.
+
+55:12 - 1Nishant Keloth (Borouge) Yeah, so if if we are going to generate a planned order out of IBP as a final output, then the PR clubbing we don't have to do anything, right? Because anyhow that plant order will be pushed in into S4 and the same program can continue to continue to run, isn't it?
+
+55:28 - Murugan Kaliaperumal (ADNOC - PE&ICV) We were discussing to have PR generated from STO, sorry from IBP because MRT plant order across plant is not considering STR, STO.
+
+55:46 - Conference Room (MM- SKEC2 - L08) - Speaker 2 See the main purpose we are generating the plan order in S4 was to consolidate the PR because we cannot correct correct yes yes yeah so yeah so this will see in the design sessions whether we will need to generate
+
+56:00 - 1Nishant Keloth (Borouge) a plan order or probably PR right the main purpose is to consolidate yeah I got it so my my point is in case the segregation is going to happen in IPP then the segregation logic for will have an addition for the optimal part. Because based on decentralized or centralized.
+
+56:21 - Murugan Kaliaperumal (ADNOC - PE&ICV) For all agencies, very correct. For all agencies, decentralized, centralized. Very good, yes.
+
+56:27 - 1Nishant Keloth (Borouge) So because we have some additional.
+
+56:29 - Conference Room (MM- SKEC2 - L08) - Speaker 2 You need to understand this one, decentralized and decentralized, because right now the purchasing, we have a purchasing shared services. So all these centralized materials are procured by them, while decentralized materials are procured by them.
+
+56:43 - Murugan Kaliaperumal (ADNOC - PE&ICV) Demand based on purchase organization. Demand based on purchasing group, I would say. Purchase organization slash purchase group. Yeah, it's also what Vivek was addressing.
+
+56:55 - 1Nishant Keloth (Borouge) Yes, because central is actually picking up a separate purchase organization and and different groups altogether. Yes, sorry, why am I raising this issue is because we already have a lot of lot of issues going on.
+
+57:08 - Murugan Kaliaperumal (ADNOC - PE&ICV) Your subject was your.
+
+57:12 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So what is the centralized team responsible and the decentralized team responsible?
+
+57:20 - Murugan Kaliaperumal (ADNOC - PE&ICV) Centralized team is responsible for almost all the common items purchased across all AGCs and even spare parts or general material used for maintenance purpose. Some of the AGCs would like to have some products uniquely for their business, not to be performed or considered under central sourcing. So for example, Buruj are buying some raw material.
+
+57:49 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Adnok Food also.
+
+57:52 - Murugan Kaliaperumal (ADNOC - PE&ICV) Adnok Food, you mean non-distribution?
+
+57:56 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Adnok Food, they have their decentralized material. I believe you know.
+
+58:00 - Murugan Kaliaperumal (ADNOC - PE&ICV) Most of them, many companies have, for purchasing alone, the sourcing team alone was decentralized for specific metal group like Buruj had raw material they're buying, some packing material they're buying, refinery had some unique chemical they're buying. So some AGCs during optimal or while procurement was consolidated under center of scale for some specific product categories AGCs are continuing sourcing action. So we have generated. You would like to generate it based on those categories. We are having those categories so we can decide the logic later on. Well, the decision, but this point is to be considered that one of the year consolidation shall consider also the purchase organization slash purchase groups purchasing group.
+
+58:53 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So you're different differentiating it by purchase organization B groups.
+
+59:07 - Murugan Kaliaperumal (ADNOC - PE&ICV) like well we are running well consolidating PR we consolidate by metal MRP controller also right we have many logic we add MRP controller similarly we will add another logic to that another condition to the logic.
+
+59:31 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) In our case, can you show the slides again, please?
+
+59:38 - Murugan Kaliaperumal (ADNOC - PE&ICV) That slide, that flowchart, we need to correct. Carol is selling that flowchart. I will correct it. That's not in line with procedure. This flowchart I will correct.
+
+59:47 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) But in our case, the BRs for the existing LTBA, it is not approved BR. It has to be approved by the inventory engineer.
+
+59:57 - Murugan Kaliaperumal (ADNOC - PE&ICV) That's correct. This is not in line with procedure.
+
+1:00:08 - Unidentified Speaker I don't know. Maybe it has been updated.
+
+1:00:10 - Murugan Kaliaperumal (ADNOC - PE&ICV) Not the corrected one, not the corrected one. Send me this. I'll send you the corrected one.
+
+1:00:17 - Conference Room (MM- SKEC2 - L08) - Speaker 1 SOPRs are not automatically approved.
+
+1:00:20 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Inventory controllers are approved.
+
+1:00:24 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, no, no. In some cases PRs are approved automatically, like in call of order case procedurally PRs are not to be reviewed. We will correct and give this and let us discuss during the session.
+
+1:00:37 - Unidentified Speaker Okay.
+
+1:00:40 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So all the, Murugan, one question is, so all the LTPA PRs are auto approved?
+
+1:00:47 - Murugan Kaliaperumal (ADNOC - PE&ICV) That was the design in between some exception happened. We'll discuss later on that exception should be removed Okay, it's double work. Why will I approve a PR and then I approve a call of order again the same delegation of authority In the existing situation the PR approval is by the This one inventory engineer, but the call off is by The logic was designed like this, but then it is changed. I'll tell you where it has got changed. The PR generated goes for review. What will the inventory controller PR of LTP? Is now segregated with respect to one LTP. The inventory controller can add quantity or delete quantity, reduce quantity. Or you can even delete a line and make a STO from somewhere else, right? So he's correcting the PR only to do the replenishment activity. He's not approving it, right? Because by value you cannot approve any document. We'll get into trouble if you approve a PR. So while he's saving. The PR is auto approved so that the call of order is released with the exactly The call of order goes for delegation of authority. Your PR is used only to correct the replenishment data, not meant for approval. Related PR. So in that case, as per delegation of authority, only call of order document is approved. But there was something that happened in part of eMarketplace.
+
+1:02:34 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) But if it is approved, it will not come to me. It will automatically becomes a call of order. So I have to review it first.
+
+1:02:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) That is what I'm addressing. So PR is not approved by inventory engineer. He is reviewing the PR for replenishment purpose, correcting the quantity, deleting the line. Maybe he wants to create STO. So he's just doing replenishment. Instead of doing it in a hard copy paper, he could have Then in the PR is correcting. So those things and just saving the PR is not rooting it for approval. If you say you're rooting it for approval, we're getting into governance issue. We don't have any PR approval authority with the with the staffs as per DOA document, right? So you're just correcting the replenishment data in the PR saving it. The PR was supposed to be auto corrected, of order and then the call of order goes for delegation of authority. As per the procedure, the call of order goes for delegation of authority. There is a LTP available. So this was the design. There is a small change with respect to E marketplace, which is done college till now. We do not resolve it. That is kept open. We'll resolve it. We will not have such PR approval in our process in future unless until our procedure is corrected. That will discuss separately. Marketplace topic we need to discuss separately. All PR generated. Through IBP. Will be approved under. Yes, please go ahead.
+
+1:04:16 - Conference Room (MM- SKEC2 - L08) - Speaker 3 It's a bad interchangeability. If I have two different items, for example, not much was item came under two different pay up in the IPV. Does it have the feature to tell me This item has same part number of this item.
+
+1:04:34 - Murugan Kaliaperumal (ADNOC - PE&ICV) This was not expected part of this tool. They're having another cleaning up activity domain done parallelly. The medicine engineering team. They will provide unified code across all items. Both MDG and AN has the facility to identify and tell what are the duplicate items. So we need to use those tools your middle record. Is not intended to do the job. Even if it is doing, we're not sure. One of the team, the consultant said it's not possible, but we are not intending to do that. If you have two different code currently until unification is done, the only option is delete one line, put that quantity in the other code and try to buy that. That's the current manual activity, madam.
+
+1:05:25 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, SALEM, Sheikh SALEM, you want to say something? If it's different material.
+
+1:05:29 - 1Sheikh Saleem (ADNOC Logistics & Services) Mr. Khalid, I just wanted to ask, because we belong to Adnok Logistics, there are PR generated MRPs then for the vessel also. This in for vessel, I don't think it's feasible for the, because the vessel engineers cannot review it. It is the technical team in the base who reviews the PR. So is it applicable for shipping vessels?
+
+1:05:53 - Murugan Kaliaperumal (ADNOC - PE&ICV) Wait, wait, wait. Sorry, but currently are you using shake? Are you using a mark? Are they using a market on?
+
+1:06:00 - 1Sheikh Saleem (ADNOC Logistics & Services) Mark is run, but I don't think they are using it.
+
+1:06:04 - Murugan Kaliaperumal (ADNOC - PE&ICV) They're doing they're creating manual PR right manual PR. Yeah, we would suggest them to use a MRP or. They don't. They cannot use STO because within one vessel you cannot transfer to other vessels. So yeah, they can still go and use MRP better. Great manual PR this is waste of time after having SAP if they still feel there is that MRP is a challenge for them they can use IBP we would not suggest anybody to use manual great manual PR unless until it is mandatory case to case.
+
+1:06:39 - Sheikh Saleem (ADNOC Logistics & Services) Yeah what I say is that we solve all the hurdles what we are facing when the MRP is run like reservations are still valid and all if it is removed then I do not think it is a big issue we can directly convert it into PO if but we have to clear all the old hurdles which we are facing in the current MRP.
+
+1:07:07 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Let me add a shipping team if we can highlight something on So while you're adding the shipping team, if someone can give us an overview for the replenishment of chemicals.
+
+1:07:36 - Unidentified Speaker It's an important point.
+
+1:07:39 - Conference Room (MM- SKEC2 - L08) - Speaker 4 a chemical operation or production materials. Anyone from the agencies can explain the process here, the management?
+
+1:07:51 - Murugan Kaliaperumal (ADNOC - PE&ICV) I don't know, I guess.
+
+1:07:55 - Sheikh Saleem (ADNOC Logistics & Services) Murugan has joined. Ahmed just, we are in a meeting right now, just wanted to, from a shipping process, Do MRP run and what action has been taken for MRP run PR? Is there any MRP run or you are doing any manual PR activity?
+
+1:08:17 - Ahmed GabAllah (ADNOC Logistics & Services) No, we are doing no MBR manual activity. Why? Because if I run MRP, it will be creating a lot of break even equipment and for one equipment.
+
+1:08:34 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Because this is very good.
+
+1:08:38 - Ahmed GabAllah (ADNOC Logistics & Services) Sorry.
+
+1:08:39 - Conference Room (MM- SKEC2 - L08) - Speaker 1 We cannot hear you. I think, uh, there's something with, uh, now it's okay.
+
+1:08:48 - Unidentified Speaker Now it's okay.
+
+1:08:49 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, it's better.
+
+1:08:50 - Ahmed GabAllah (ADNOC Logistics & Services) Yeah.
+
+1:08:51 - Unidentified Speaker Yeah.
+
+1:08:52 - Ahmed GabAllah (ADNOC Logistics & Services) Now, when, for example, I have a turbocharger for the diesel generator and I have around 500 material. If I make a, this automatically would be run every day for two items three items and it will be create two or three BR because it is in material wise not in the otherwise not build the equipment. That's why the procurement department will receive a lot of BR in the same time. That's why we are making due to the ship's need.
+
+1:09:41 - Sheikh Saleem (ADNOC Logistics & Services) Actually we are some most of our items for ADNOC LNS are decentralized we are not part of the centralized purchasing group so all our activities are done in it through our purchasing department.
+
+1:09:59 - Conference Room (MM- SKEC2 - L08) - Speaker 2 But do you still have centralized items?
+
+1:10:02 - Sheikh Saleem (ADNOC Logistics & Services) Centralized items do we have like non-stock items and something which is related to HSE and all like that but most of the items are done internally by our purchasing department because we have got an exception for shipping vessels because
+
+1:10:22 - Conference Room (MM- SKEC2 - L08) - Speaker 2 they They are into logistics and they have vessels.
+
+1:10:31 - Sheikh Saleem (ADNOC Logistics & Services) Vessels are sailing all over the world.
+
+1:10:37 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So, you guys are not creating work order, reserving materials, you are doing all those process, you are following for each vessel, right?
+
+1:10:46 - Sheikh Saleem (ADNOC Logistics & Services) No, we are doing, we are not, most of the is based on reservations. Reservation created by the end user and work order is there for the asset integrity where they are doing any maintenance activity or they are doing activity related to forklifts and all operation they do a work order based activity. But for vessel wise lot of the it is through reservations.
+
+1:11:20 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Also, we need to hear from Adnan Ghaz. Anyone from Adnan Ghaz, Balaji?
+
+1:11:24 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes, sir. One minute. Yes, sir. Sheikh, for LNS, any items managed by inventory for planning or replenishment purpose, you shall use IBP. You may avoid doing manual planning or manual PR call for creation unless and until it mandates for a specific item to item basis. The IBP tool is supplied for all inventory related activities across AGC, either centralized or decentralized. Vessel, it is still your call because inventory management I think you are not involved in planning or replenishing vessel related item. So the IT can make a decision. Can use whichever comfortable for them we don't have anything to comment on that okay so inventory related areas whatever concerns you have we can understand and like rectify during this IBP basically we are trying to collect every AGC's concern when they are using MRP and we'll try to rectify part of this IBP solution All have been notified whatever we had a discussion it is already been captured.
+
+1:12:42 - Sheikh Saleem (ADNOC Logistics & Services) Inventory managed it is very quite clear I have an apprehension related to shipping so it was clear that shipping plant is not part of the MRP areas you know.
+
+1:12:54 - Murugan Kaliaperumal (ADNOC - PE&ICV) They can use it in a better way but if they have decided to handle manual PRs it is their IT might color. It's actually basically your guy should talk to them and see if they have any concerns how it is to be handled. They want to use IBP. Is one of the best planning tool for mental management. Many other planning they do, but it is good to use that right? Maybe if we want we can have a separate session with them.
+
+1:13:21 - Vignesh Perumal (ADNOC Group D&CS) Give them a demo and they will have to come up with a use case more than from their side. See the tool can do you know planning. But you know, the vessel inventory and planning is a little bit different from how we do the others. Let them come up with a use case. We will see whether this tool can suit their requirement.
+
+1:13:41 - Unidentified Speaker Right. OK.
+
+1:13:47 - Ahmed GabAllah (ADNOC Logistics & Services) Yes, Alia, anything else on my side?
+
+1:13:51 - Unidentified Speaker No, you can leave, Mohamad.
+
+1:13:53 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes, sir, started something. Yes, sir, you were saying something.
+
+1:13:58 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Yes, Murugan. We need to hear also from any other companies because we know that managing of chemicals and operation materials, especially the chemical, is a sensitive point here. We need at least to hear from them their challenges and what are the expectations from my BP team here. Okay, okay.
+
+1:14:17 - Murugan Kaliaperumal (ADNOC - PE&ICV) Balaji, can you explain your chemical planning process then, probably from refining Vivek or anybody?
+
+1:14:25 - Balaji Gopalsamy (ADNOC Gas - PD) Sorry, actually I wasn't testing your detesting. Yeah, see for us we don't maintain any specific item for decentralized and we used to have all these items to go through the centralized, but based on the MRPR torrent PR conversion, it goes based on the value. Even if the PG is belongs to cell services, if the PR value is less than is being decentralized here automatically. Have any control on that. And especially this UAT run almost 50% it is decentralized because of value PR value. So is there any any way possibilities to remove the restrictions and push everything to the serve services and wherever the workbench aggregation is not possible only to decentralize those fears? Is there any way to implement that? Because if the centralized CSO organization. It's a it has a workbench. It's a consolidation of RFQs further. No, it's it's quite OK, but for decentralized here in locally. It's the aggregation. No, it's it's very hard. So that also if we are sending 1500 peers within a month, then it will be very hard for them to handle further. And this is one issue and another issue is. As I later. Currently the consolidation is not pushing any POS to turnaround teams. So based on the turnaround ID, so we need to see the possibilities to push the items which belongs to turnaround to the separate team, POS team.
+
+1:16:08 - Vignesh Perumal (ADNOC Group D&CS) That has always been an issue with the traditional MRP, right Balaji? I think all companies, whenever there are requirements for projects and when MRP runs it, it combines it with the other requirements and nobody can track whether this specific quantities for project or for this is one of the key another issues that we have for tracking.
+
+1:16:38 - Achmad Sonhaji (Borouge) Thickness, we have here in bullets, so we have separated the tunnel and normal. So we use WPS.
+
+1:16:47 - Vignesh Perumal (ADNOC Group D&CS) Yeah you are using WBS but in here in the ERP not everybody is using the PS module for projects. They use even the work orders for the shutdowns you know. So when they do that now what it does is it all creates the reservation. It doesn't create a project you know requirement. It all creates a reservation and when planning is done for that material, it will combine all the quantities into one bucket. So if you use PS module, that will be the best way to have your projects differentiated from your regular maintenance work orders. But they are not using like that in the one ERP now. So maybe it's a procedure that needs to be.
+
+1:17:41 - Achmad Sonhaji (Borouge) Yeah, maybe they can look at that option.
+
+1:17:43 - Vignesh Perumal (ADNOC Group D&CS) Yes, yes. You are right.
+
+1:17:45 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Actually, in one of the sessions, EM has this request. Mazhar was requesting that if we can use the project systems.
+
+1:17:54 - Vignesh Perumal (ADNOC Group D&CS) See, I'll tell you, nothing is preventing them from using the project systems even now. See, nothing was preventing the users from using the project system since Go live, but they have not adopted such a practice. It is not that IPP needs to come and resolve this issue if they had used the project system then this segregation could have been done but probably this will should be taken up as a change management also call it to streamline this as part of this initiative.
+
+1:18:29 - Murugan Kaliaperumal (ADNOC - PE&ICV) For chemicals it is good they use this process order production order process order right there is something called process production order.
+
+1:18:38 - Vignesh Perumal (ADNOC Group D&CS) It is possible that is the PP integration. Now we have, you know, see work orders are EAM integration objects, project systems are for projects, then process order and production orders are coming from the PP module. See, wherever the things are coming from, it will end up creating a reservation. See, work order or process order or PS module, at the end it creates a reservation now when you actually under a network element if you create a material there is a separate planning possible on it and it will not combine that with you know the the operational one so the project team can clearly track you know our requirements their schedules their purchases now because they are using work order for everything chemical I'm saying this because chemical lands up
+
+1:19:37 - Murugan Kaliaperumal (ADNOC - PE&ICV) Will block only on CAPEX, right? Yes. Chemicals are going to operation expenses. So that's why in one of the discussion earlier we said this, even Nabil was talking in that. So we said we never used other than Baruj, I think nobody used this process protection or PPA.
+
+1:19:56 - Vignesh Perumal (ADNOC Group D&CS) You have this requirement, Murugan. We will try to find a solution for this, okay?
+
+1:20:01 - Murugan Kaliaperumal (ADNOC - PE&ICV) Very good. We will get a solution for this. Should we raise from inventory or should the operation team raise this? Because they need to use this module, right?
+
+1:20:14 - Vignesh Perumal (ADNOC Group D&CS) I will have it as a requirement. Now what we will do as part of this project, we will do brainstorming and we will agree on the way forward.
+
+1:20:21 - Murugan Kaliaperumal (ADNOC - PE&ICV) Put it as part of the requirement, that's fine.
+
+1:20:24 - Unidentified Speaker OK.
+
+1:20:26 - Murugan Kaliaperumal (ADNOC - PE&ICV) So this is required for all companies, especially downstream because you know using the process order.
+
+1:20:33 - Raghavendra Mithal (ADNOC Refining - HQ) The problem is in refining, for example, the planning is done outside in the PIMS system, you know, for the hydrocarbon production. And the process order is created. In the process order BOM, you do not have chemicals.
+
+1:20:49 - Murugan Kaliaperumal (ADNOC - PE&ICV) You have only the hydrocarbons and maybe the steam, those things. Yeah. So, probably they are using PPA, only they need to enhance it for the material requirement, chemical requirement.
+
+1:20:58 - Raghavendra Mithal (ADNOC Refining - HQ) There is a lot of change, but yeah.
+
+1:20:59 - Vignesh Perumal (ADNOC Group D&CS) Of course, yes, yes, yes.
+
+1:21:02 - Murugan Kaliaperumal (ADNOC - PE&ICV) This was discussed earlier, maybe we never had this practice in most of the agencies during the IPP session, so we did not. At least now we can try again to get the data in track in the ERP.
+
+1:21:19 - Achmad Sonhaji (Borouge) Murugan and Gurush, we have a team for the production planning team, so they are handling the MRP for the production.
+
+1:21:30 - Murugan Kaliaperumal (ADNOC - PE&ICV) production planning. All your chemicals they're giving order from the PP model right? Yes PP model. So your MRP is consigned to you those orders also while creating, generating PRs?
+
+1:21:52 - Achmad Sonhaji (Borouge) Actually for us it's not, we are not handling that one. That one is handling by production team planning.
+
+1:22:00 - Murugan Kaliaperumal (ADNOC - PE&ICV) But we are raising PR, Inventory is raising PR for or call for many of the chemicals, right?
+
+1:22:07 - Achmad Sonhaji (Borouge) Yeah, but for us it is not related with the production, only for the common one and MRO.
+
+1:22:15 - Hajaratkhan Khan (Borouge) Common chemicals, Murugan, we are raising the PR for against the reservation, particularly plastic soda, such chemicals. Material and finished goods packaging all driven through the production planning. Initial PR is created by them. We will review and we will end off.
+
+1:22:40 - Murugan Kaliaperumal (ADNOC - PE&ICV) Joko is looking at it, right? Chemicals, what you are handling. Yeah. Nishant, one minute. How is your demand coming to you through Excel sheets?
+
+1:22:53 - Hajaratkhan Khan (Borouge) Through production planning. So.
+
+1:22:59 - Murugan Kaliaperumal (ADNOC - PE&ICV) He has done from their side, right? Yeah, no, for those chemicals what you're saying, which you raise PR. How do you get your entire demand through reservations? So they make.
+
+1:23:14 - Rahul Patel (ADNOC Group D&CS) So basically Murugan, this is a whole from keeping. So generally if you make it part of your production, right? So the moment you create a production or process order, those components are not treated as indirect to be ordered separately, but those are treated as direct as part of the Bill of Materials. We need to mention it as part of Bill of Materials. The moment you raise a production order, the dependent requirements come from production order or process order to these components, which drive reservation, which subsequently drive the procurement process if they are purchased.
+
+1:23:41 - Murugan Kaliaperumal (ADNOC - PE&ICV) Wait, sir, wait. Khan, those chemicals what you buy, you make PR, how do you get input through either reserve against cost center or work order. So, they do not.
+
+1:23:57 - Hajaratkhan Khan (Borouge) These are not the reserve through production order.
+
+1:24:00 - Murugan Kaliaperumal (ADNOC - PE&ICV) They do not. So, do you handle chemicals only for turnaround purpose?
+
+1:24:04 - Hajaratkhan Khan (Borouge) No, normal also Murugan, this caustic soda and sulphuric acid these are regularly required.
+
+1:24:10 - Murugan Kaliaperumal (ADNOC - PE&ICV) So, for that there is work order, maintenance work order or manual reservation. Manual reservation.
+
+1:24:19 - Murugan Kaliaperumal (ADNOC - PE&ICV) Okay, so wherever production order is there, your production planning team is doing the MRPR planned order and they are creating the PR, right?
+
+1:24:28 - Hajaratkhan Khan (Borouge) Yes, yes, initial PR is created by them, then it will come to us, we will review the stock cover, warehouse capacity and all these expiry and other issues and based on that we will endorse the PR.
+
+1:24:44 - 1Nishant Keloth (Borouge) tools for optimization.
+
+1:24:46 - Murugan Kaliaperumal (ADNOC - PE&ICV) Any other organization using PPA? Is distribution using PPA? Any idea? They're actually, they're also doing manufacturing and they're also doing sellable goods trading. Anybody from Mohamad Gaffa.
+
+1:25:20 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Refinery, the regular recovery chemicals is already levels are set during the based on the post consumption and as well as the it is done. Frequent review has been done by our operations team. Various units we have various three refineries and general utility plant. All these are regularly reviewed by our operations teams. If there is any change in business production, business plan, production plan and they will inform us and any additional requirements is being managed through work or no manual reservations.
+
+1:26:03 - Raghavendra Mithal (ADNOC Refining - HQ) But Vivek, see our manual reservations are only for withdrawal purpose. The planning is done outside, right?
+
+1:26:09 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Yes, yes, this is done by them and through various units or one we have several units. So individual operations team is reviewing their dosing rates and all those things and they will give us the requirement and they will inform through email or as well as some additives will come through memo. And accordingly we will arrange the agreement and delivery dates with the suppliers.
+
+1:26:41 - Raghavendra Mithal (ADNOC Refining - HQ) Yeah, so that's why the demand is not coming from reservation here. So the demand every estimated outside, not not everything.
+
+1:26:48 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Yes, there are various scenarios there in. Refinery one is the regular used chemicals, some additional demands and additives and absorptions are different categories. So everything has a different scenarios and Finally the demand comes from operations to inventory engineer for the processing of the procurement or issuing call for us.
+
+1:27:16 - Unidentified Speaker Yeah.
+
+1:27:34 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Um, yeah.
+
+1:27:40 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Sorry, I'm just, uh, going my notes.
+
+1:27:50 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Murugan, would you be able to, if you can give us an overview for the rotable materials?
+
+1:28:07 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, repairs. How do you manage the repairs and how do you specify that this material is not, uh, we won't, uh, go through. Yeah, we won't purchase it from a supplier, but we'll, uh, let's say repair it. How's it reflected in the, in the system?
+
+1:28:32 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Here's the material is marked as a repair, but I don't know what the But how do you do the repairable process? So let's say if the MRP generates PR.
+
+1:28:46 - Conference Room (MM- SKEC2 - L08) - Speaker 1 How do you know that it has to be repaired?
+
+1:28:49 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Maintenance agreement.
+
+1:28:53 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So they'll create a service order for it. It's not with us.
+
+1:28:58 - Raghavendra Mithal (ADNOC Refining - HQ) Even like for replenishment. Repairable, we do not follow any refurbishment process at all. It is carried outside the system and they are monitoring outside the system. So MRP wouldn't know that also. Yeah, so actually. Yeah, I wouldn't know, but actually there was a request from you know the inventory saying that if it is a repairable item, it should not run MRP.
+
+1:29:22 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Yeah, it's repairable. Why you should replenish?
+
+1:29:27 - Conference Room (MM- SKEC2 - L08) - Speaker 2 You can update the MRP parameters.
+
+1:29:31 - Vivekananthan Kathiresan (ADNOC Refining - HQ) No, no, no, no. You rightly said we raised this request since go live, but it didn't happen for refurbishment is managed by the site users end users through the service agreement and service orders. So only it requires when the item goes beyond the economical repair. They will inform us for the procurement. So it's a it's a it's a again.
+
+1:30:04 - Murugan Kaliaperumal (ADNOC - PE&ICV) call it question was very correct. They should not have a Z1 with levels. It should be PD purchase on demand. Yeah, there is a failure. Failure of means the failure is not rectifiable. It goes beyond repairable. Somebody should raise a question. Purchase and keep. Or user says that is beyond repairable. Please buy one piece and keep. So in the PD item by this item, you have levels for repairable even for mechanical seal I know that mechanical seals have levels better to flag them as PD keep a maximum quantity minimum maximum quantity and buy when you
+
+1:30:41 - Vivekananthan Kathiresan (ADNOC Refining - HQ) want if ever you have levels then in this condition yeah Murugan your idea is correct but again PD when we define the Marbi type PD it requires a reservation then we cannot buy based on end user will not raise any reservation only they will inform us for the procurement.
+
+1:31:00 - Murugan Kaliaperumal (ADNOC - PE&ICV) Instead of informing, it's only a practice change sir, instead of informing saying that this is beyond repairable, let me make, okay he doesn't want to use his budget, okay.
+
+1:31:09 - Vivekananthan Kathiresan (ADNOC Refining - HQ) They follow our procedure and we have to change our procedure, then we can inform them. What is our procedure saying? Anything goes beyond repair, they will inform only the information to the inventory for the procurement.
+
+1:31:26 - Vivekananthan Kathiresan (ADNOC Refining - HQ) There is no definition of maintaining the inventory parameters and all those things, but hi good morning.
+
+1:31:34 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, yeah, clear so. See. But it is good.
+
+1:31:47 - Vivekananthan Kathiresan (ADNOC Refining - HQ) But it is very simple. We can exclude this variable materials from MRP, then it is good.
+
+1:31:53 - Murugan Kaliaperumal (ADNOC - PE&ICV) Let us see every company's condition and then consider. But it is good to keep it as a point to discuss. We will analyze and finalize what has to be done. Items flagged as repairable. Yes.
+
+1:32:07 - Hajaratkhan Khan (Borouge) Yeah, because in Buruj also, Murugan, for repairable items, we are not considering the PD also because there are a lot of checks need to be done because maybe this repairable material was sent for the repair and didn't came. Somebody wrongly reserved this material. So, we are taking some manual forms filled by the section head and signed by the manager and based on that only, we are ordering this repairable material. So, only PD will not work because we found in BASTA when it was PD, it was run and some planner confirmed it's required. Then when it went to the engineer, engineer said no, not required. It is under repair with the manufacturer. So to avoid such situation, we are keeping this.
+
+1:32:57 - Murugan Kaliaperumal (ADNOC - PE&ICV) Rather than excluding, we need to think something separately. OK. We will discuss. There is something called Block Store and all. Let us take this point to discuss during the discussion.
+
+1:33:10 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes. If I may just summarize the process. So NSAP. You do have the item flagged as repairable. However, the decision whether to repair this item is all outside of the system.
+
+1:33:28 - Conference Room (MM- SKEC2 - L08) - Speaker 2 The process also.
+
+1:33:32 - Conference Room (MM- SKEC2 - L08) - Speaker 1 The process too. And then if, let's say, you want to repair it, then you raise a manual purchase requisition.
+
+1:33:41 - Unidentified Speaker If you want to purchase it.
+
+1:33:42 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, no, we'll discuss the solution later. We'll discuss the solution later on. We are not still concluding whether it should be blocked or not. Keep this point open because if you have a level. Even if you have a level and if you don't replenish and just block it from automation with no proper logic, we will be again in question. I was having level should not be done outside the system without saying that it can be what you called done manually. Somebody forgets what will happen. So that's not right way of doing it. Let's find out the solution, how to handle it.
+
+1:34:20 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah.
+
+1:34:22 - Murugan Kaliaperumal (ADNOC - PE&ICV) The refurbishment, there is no specific process.
+
+1:34:26 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, sir. Yeah. This would be a similar process for an item rotable materials as well.
+
+1:34:42 - Murugan Kaliaperumal (ADNOC - PE&ICV) Same, same, it's the same, same logic. We are using the term repairable, it is rotable only. We have not implemented the serialization for rotable, that's why it is concerned. So we need to rethink about using serialization. So we know that there is an item in the asset record and in material record, issued and it is then repaired, system captures that, probably we can push that So now we know that there is item at the repair place. If they don't want, if they find it is beyond repairable, then we know that the asset is written off. Asset or the assembly is written off. Then we go for an automated PR. The PR, MRP will run automatically. So we need to discuss this separately in another session.
+
+1:35:31 - Murugan Kaliaperumal (ADNOC - PE&ICV) If required, we need to initiate this civilisation again, but EAM is required for the discussion. This was again a carryover of Vignesh and Khalid from IPP. We were insisting EAM to have civilisation for repairable material, which they could not do at that time, but it is high time, let us do it now.
+
+1:36:02 - Conference Room (MM- SKEC2 - L08) - Speaker 1 All right, Jeff, so we'll... Another discussion for repair items.
+
+1:36:19 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) If we move on to the next topic for this talk, How do you handle chemicals and not really is also buying chemicals Yeah, yes, yes, we are Buying chemicals, but all it is handled by office even they have their own plant and they are Handling their material their chasing and all Creating the BRs and all this process. Is it stock for them or non-stock for them? Non-stock, stock, stock, stock.
+
+1:37:00 - Murugan Kaliaperumal (ADNOC - PE&ICV) So that should be part of the discussion. Can we have a discussion again with them?
+
+1:37:12 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Yes, sure, sure. If you want, I can arrange a meeting with them. Yes, sure, sure. And actually, we had a discussion with the third party regarding inventory reduction and all this. And the story comes in this situation. And they came and they explained to them how they are handling the chemical. So they are usually doing their own process for handling the chemical. Then at the same, I will invite them to explain everything for the people.
+
+1:37:47 - Unidentified Speaker No problem.
+
+1:37:49 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Just one, one thing. You mentioned chemicals or OFS. What is OFS?
+
+1:37:57 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) It's Oil Field Service. We have like a joint venture, something like joint venture between us and another, a third party, OK, company. And they were handling a specific part of, It was not an existing activity in this one. It is related to drilling, but it was not handled by ADNOC. So we adopted this activity to ADNOC drilling activities. And we made a joint venture with this company to handle this part. And we called this department as OFS, Oil Field Service. This is a brief of the story.
+
+1:38:42 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Okay.
+
+1:38:44 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) And nearly they are using chemical, and all the chemical are used by them. Chemical and even drilling material, both.
+
+1:38:55 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes. Who else has...
+
+1:39:10 - Murugan Kaliaperumal (ADNOC - PE&ICV) I think that's it. If anybody has any other concerns, we can still call us and inform us. Anybody from Unlock Distribution? Arun? No, I'm just not sure.
+
+1:39:40 - Conference Room (MM- SKEC2 - L08) - Speaker 3 I think.
+
+1:39:40 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, I'm sure.
+
+1:39:44 - Conference Room (MM- SKEC2 - L08) - Speaker 4 I'm sure, I'm sure.
+
+1:39:49 - Murugan Kaliaperumal (ADNOC - PE&ICV) the the Mohammed has enough for he a bus he's from another distribution right is that in the meeting I saw him he's in the meeting one month from another distribution Mohammed any anybody else from another distribution when you're from addiction I see his name is Mohamad Abbas. He's maybe busy somewhere. Somebody else.
+
+1:40:26 - Murugan Kaliaperumal (ADNOC - PE&ICV) OK.
+
+1:40:31 - Murugan Kaliaperumal (ADNOC - PE&ICV) I just want to know, Yasir, what we need to know from one of the specialists, do they have any inputs manually other than ERP generated reservation.
+
+1:40:47 - Murugan Kaliaperumal (ADNOC - PE&ICV) That's all we need to know. Okay, do they buy, this is a race PR, anything manually? Like what we talk about chemical and drilling without like demand coming through manual sources. Do they have anything from anonymous? I mean, this is what we need to know. Probably if I can add Muhammad, come on.
+
+1:41:10 - Murugan Kaliaperumal (ADNOC - PE&ICV) Any other topics you can continue discussion, I'll try to add Mr.
+
+1:41:16 - Unidentified Speaker Mohamed.
+
+1:41:32 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Other topics, stock transfer. How is this being? And which, is this part of the MRP, that, or this is just a reservation, then you do a stock transfer order?
+
+1:41:49 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Basically, we have two type of the transfer system, generally within the same company, or between the articles of the company. So, for example, during the MRP replenishment, receiving light Then I go check the stock availability. For example, there is a stock available in one of the plants, for example, 10 pieces. And within the same company, the other store, for example, the stock is zero, minimum the level, so you can transfer it to manage, instead of raising PR further. So we can manage the levels of the stock by transferring from one plant to another plant.
+
+1:42:32 - Conference Room (MM- SKEC2 - L08) - Speaker 1 okay and this is within the same yeah and it's within the same agency okay and it's within the same let's say company agency yeah okay also we get like we have a facility and like see his talk within the
+
+1:42:46 - Conference Room (MM- SKEC2 - L08) - Speaker 3 other company group also we do get transfer from them okay but from them anybody may sway their car cars they have to agree so we can we are taking this design agreement But this will be manual, it won't be. In the system.
+
+1:43:03 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, but it's not through MRP, right?
+
+1:43:07 - Conference Room (MM- SKEC2 - L08) - Speaker 3 No, there is like a different transaction, STO.
+
+1:43:11 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, you do it in a longer process as a stock transfer order, right? So you create an actual purchase order.
+
+1:43:19 - Unidentified Speaker Yeah.
+
+1:43:20 - Conference Room (MM- SKEC2 - L08) - Speaker 3 For. Yeah, so one type of PO, it's considered as a PO, but type stock transfer.
+
+1:43:25 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, yeah. But if it's within the same company, no need, of course, no need for a purchaser. Oh, you do?
+
+1:43:33 - Conference Room (MM- SKEC2 - L08) - Speaker 3 A purchaser?
+
+1:43:34 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah. Within the same?
+
+1:43:35 - Unidentified Speaker Yeah. Okay. For internal SEO.
+
+1:43:38 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Internal SEO. And it's still, MRP does not, it doesn't work. It doesn't create a banking workflow.
+
+1:43:49 - Conference Room (MM- SKEC2 - L08) - Speaker 3 No.
+
+1:43:49 - Conference Room (MM- SKEC2 - L08) - Speaker 1 I see. So this is all banking. Yeah.
+
+1:43:55 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Item making the PR or during the MRP replenishment. I told you like I check stock availability Open PR open PO reservation. So during this review like like I came on this has this plant has an excess stock or like I can manage with the Transferring so I do this and then you do by creating another transaction. Okay, that's for STR STR. Okay Thank you.
+
+1:44:46 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Even also we do STR for the reservation. For example, if one of the plans they want some item which is zero and so this item exists with the other plans. So once they raise their reservation like we, I do STR for them.
+
+1:45:07 - Murugan Kaliaperumal (ADNOC - PE&ICV) In the replenishment process, when the required quantity is consolidated, per item and the outstanding orders are verified and the final requirement is identified. The first thing the system should do is check if this item is available across company and is there an excess quantity in that store. So if that excess quantity is there, it shall not propose for a PR. Will propose for a STR.
+
+1:45:47 - Murugan Kaliaperumal (ADNOC - PE&ICV) This is what our procedure is also addressing. So if a requirement quantity is finalized. Normally MRP planned order is doing it very good. So on that quantity, the next decision instead of raising PR, it should look for STR. Possibilities across plant within the same company. There is an excess quantity within the same company in any other plant. It should produce a STR.
+
+1:46:23 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, you mentioned this is within the same company, but if it's not the same company.
+
+1:46:30 - Murugan Kaliaperumal (ADNOC - PE&ICV) Excellent. So what is your team proposal team, anybody here?
+
+1:46:38 - Conference Room (MM- SKEC2 - L08) - Speaker 3 But Marco we are doing this at ZINT.
+
+1:46:42 - Unidentified Speaker Pardon?
+
+1:46:45 - Conference Room (MM- SKEC2 - L08) - Speaker 3 For the STO between the and the group company, we are doing ZINT.
+
+1:46:52 - Murugan Kaliaperumal (ADNOC - PE&ICV) You mean? Interstitial transfer, right? Interstitial transfer. Yeah, yeah, yeah. No, his question is clear. He's asking do you want to consider and say that yes, five pieces available other company and create another SDR between intercompanies to enter company yes it is good to have but I want this to be confirmed by central team as well where are they nobody ability if I sure you're from subtle team right yeah but finally Murugan was okay like for example this idea In this case, let us keep this point open 1st is within the company STR, 2nd should be across company STR, excess quantity in other company or surplus quantity, items flagged as surplus, logic will decide later on. Yes, it should consider as option 2, if there is quantity excess in other company. Then it goes for, 3rd it goes for LTP related PR, 4th goes for marketing. So probably we need to align with all the central team that this is what it will happen during the next finalization session. Why I don't see many people got tired at the end of the session.
+
+1:48:44 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Also like when we consider consumption, some item might be available with a group company, for three years, like in the store. So we like even this one of the parameters we consider. If there is no institutional construction, we will keep it, give it to us.
+
+1:49:01 - Rido Mardian (ADNOC Sour Gas - Procurement) Very correct. I think the challenge for the STO is since the common item is not well established for all the group company for all item, that's why the system is not very effectively. We cannot do a STO because the planning is not using the common I think the one of the challenge.
+
+1:49:22 - Murugan Kaliaperumal (ADNOC - PE&ICV) No, no, that's correct. They're working on it. Another team is working on it. So if there is item extended to two companies and there is access to it, it is good to produce a STR and then manual decisions later. After the STR is produced, they can go and have a discussion. See if can be released. If not, cancel the STR and add the item to the other PR. That's a different topic, logically it's right try to make STR at the first instant and then we'll decide how to handle it but Rido the common items will come soon numbers have been some third party is working on unifying the metals master data yeah Rido sour gas How do you handle? How are you getting inputs?
+
+1:50:20 - Rido Mardian (ADNOC Sour Gas - Procurement) Chemicals for us, it came from operation with the work order. They raise the work order through specific function locations. It's not come through the bomb, but they have some specific function location where they create all the work order for the operation chemical. Maintenance of product, yes. Against the work order. Then it will go for replenishment. We are setting up all the parameters. It's normal process for the chemicals. Okay, good.
+
+1:50:47 - Murugan Kaliaperumal (ADNOC - PE&ICV) So fine. So no, there is no manual input outside ERP. No, no, no.
+
+1:50:51 - Rido Mardian (ADNOC Sour Gas - Procurement) We have everything through the system. Even they have their own dashboard for the production chemical, which is if it is below, they have automatically from the system into the dashboard. They came to us directly. It's below. So they just send email to us to remind to action. Okay, good.
+
+1:51:19 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So we have about 11 more minutes. Rahul, do you have any other questions?
+
+1:51:31 - Rido Mardian (ADNOC Sour Gas - Procurement) I have one question. If IBP have some interconnection later on with the No, no.
+
+1:51:39 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, we will keep the design, but no, in actuality it won't integrate to Ariba.
+
+1:51:48 - Unidentified Speaker OK.
+
+1:51:50 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So Ariba is basically for supplier collaboration, right? So we are not.
+
+1:51:55 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Tendering process.
+
+1:51:56 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Tendering process and all, yeah.
+
+1:52:06 - Nishant Keloth (Borouge) Out of curiosity, does it have any integrated planned integration with the business network? Business Network, which comprises supply chain collaboration. Asset intelligence network and Ariba network. Something like that.
+
+1:52:23 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Uh, we can actor is there in quantia. It goes awash in.
+
+1:52:30 - Nishant Keloth (Borouge) I was just quick. Yes, I was wondering.
+
+1:52:32 - Vivekananthan Kathiresan (ADNOC Refining - HQ) No, no, no.
+
+1:52:32 - Hector Palacios It's part of the SAP suite. For sure, there is some native integration with Ariba. I've seen some cases, but usually you are sending the quantity requests, and sometimes they are giving you back how much they can do. So yeah, there is exchange of information using Ariba as well. It's a possibility.
+
+1:52:58 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) I'm inviting Mr. Hersi from OFS to explain how they are handling the chemical in our team. He's joining, Mr.
+
+1:53:08 - Unidentified Speaker Murugan.
+
+1:53:10 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) Hello. Good morning, everyone.
+
+1:53:12 - Unidentified Speaker Hello.
+
+1:53:15 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) This is Mr. Hersi. Please proceed, Mr.
+
+1:53:17 - Unidentified Speaker Hersi.
+
+1:53:20 - Murugan Kaliaperumal (ADNOC - PE&ICV) Hello, Mr. Hersi.
+
+1:53:22 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) Yeah, sorry. Apologies, team. Yeah, sorry. I joined the call late. If you can just please give me a brief about what exactly do you need to know about our facility? If you could just give me a brief of what the requirements are, so I may answer them.
+
+1:53:41 - Murugan Kaliaperumal (ADNOC - PE&ICV) We are working on a project to implement a planning tool for inventory management.
+
+1:53:54 - Murugan Kaliaperumal (ADNOC - PE&ICV) The deliverable of the software is to have inventory levels for all planned inventory items and to have planned order generated similar to something what is happening in SAP now. So we were said that at Nandog Drilling, there is another team other than inventory team who is doing the similar activities. And especially you're involved in recurring chemicals for ad-hoc distribution.
+
+1:54:31 - Murugan Kaliaperumal (ADNOC - PE&ICV) Can you explain your process?
+
+1:54:33 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) Yes, yeah, I understand Mr. Murugan. So yes, yeah, we have, okay, in ad-hoc drilling you have the plants 4101 and is 4102 handled by the inventory team and you've got plant 4103 which is the PPQM plant During the Go Live, about four years ago, there was a module that was rolled out to AdNoc Drilling called the PPQM, the Production Planning and Quality Management program. And essentially, Plant 4103 was created just for the PPQM activities. We do have chemicals and packaging that are required here, but it's for the majority of our clients. It's not just AdNoc distribution, it's primarily upstream and downstream, including for companies like Adnok Onshore, Adnok Offshore, as well as refining Adnok Gas. So we've got a bunch of raw, we have raw materials, a bit of material is created and a recipe for each of our products that we manufacture and supply to the clients. We essentially create our process orders and system to goods issue the raw materials and GR the final product. And the final product is then PGI'd or sold to the the client.
+
+1:55:45 - Murugan Kaliaperumal (ADNOC - PE&ICV) So you create process orders for your chemicals, that is the planning document through which, do you use MRP planned order to generate your PRs?
+
+1:56:00 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) No, no, we directly create our process orders in the system. We don't create the planned independent requirements. The process orders are created daily.
+
+1:56:08 - Murugan Kaliaperumal (ADNOC - PE&ICV) Okay, and how do you What is the process of raising purchaser equation of call of order for purchasing the material?
+
+1:56:20 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) The raw materials from suppliers you mean? Mr. Murugan, you mean the raw materials?
+
+1:56:29 - Murugan Kaliaperumal (ADNOC - PE&ICV) Okay, probably if it's raw materials, then fine.
+
+1:56:32 - Rahul Patel (ADNOC Group D&CS) A question here. Are we talking about the materials which are used in production? Since it is PPM, are we talking about the materials which are getting consumed in MRO or any non-production activity. Our discussion is focused more on the materials which are related to maintenance or non-production consumables.
+
+1:56:54 - Murugan Kaliaperumal (ADNOC - PE&ICV) Wait, wait, wait. Are you handling chemicals only for raw material purpose? Correct, yes. Is it completely so? How is your purchasing process happening? Who raises PR for you?
+
+1:57:09 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) we essentially what we do is we create a plan for, we understand that we communicate with our client and essentially receive a forecast plan over the next, you know, five months, six months, we receive the demand from the client's inventory team. Once we receive the confirmed plan from the inventory team at the client's end, so this is ad hoc onshore or ad hoc offshore inventory engineer or inventory controller or inventory analyst, they would share their plans with us and once we receive the the details for what is the quantities or the volumes that are required. From the BOM, that's radiant system, we calculate our required raw materials that's needed to manufacture each of these products. We then create our work orders in the system and then request our PD team to essentially create a PR and a PO to our supplier.
+
+1:58:00 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) Purely raw materials, yes. There's no other activities. It's purely just raw materials, the BPM is purely for raw materials to manufacture a final product and supply that to some clients, to clients that are within Addon group.
+
+1:58:15 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yes, so anyway, this, okay, good. So as Rahul was saying, this might not be part of our scope, our scope is to like plan materials related to MRO and drilling. Of course, this is related drilling, you're producing, your finished goods is going for drilling, but then For you, it is raw material. So we may not consider this part of this project implementation.
+
+1:58:40 - Unidentified Speaker OK.
+
+1:58:41 - Murugan Kaliaperumal (ADNOC - PE&ICV) All right.
+
+1:58:42 - Unidentified Speaker Yeah.
+
+1:58:43 - Murugan Kaliaperumal (ADNOC - PE&ICV) Khalid and Vinesh, if they need to use it for raw material planning, that's a different topic. They can use it at a later stage or maybe early. But in this scope, we are not considering that.
+
+1:58:55 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Right. Right. I think once the production foundation is Yeah, it can be extended to extend it to others. Yeah.
+
+1:59:03 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah. Thank you. One of the good inputs here.
+
+1:59:07 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) Thank you. Thank you.
+
+1:59:12 - Hersi Mohamud Abdulkadir (ADNOC Drilling - DCFD) Thank you very much. I'll drop out of the call. Just please. You can contact me if you need any other clarifications. I'll just drop out. Thank you. Thank you. All right.
+
+1:59:26 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Four minutes on the three. So as next steps, so first, thank you so much for the input. Pages of notes, that's good. As next steps, what we'll do is gather those requirements. Same exercise for AdNoc, we need to assign the process champion for supply planning. We do have an open discussion, two open discussions, the repair with the EAM team, and as well, we want to see an open item regarding the, if we want to show what do we do with excessive quantity in other companies. Um. Yeah. This is the last the final. I would say official workshop, but we're gonna have, uh, kind of you. You scheduled work for tomorrow, but we might have throughout this week. Some had hot, uh, meetings with focal points. Um team. Any any questions?
+
+2:00:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Thank you. All right. Thank you so much for your contribution and input. We will see you if I don't book a meeting with you. We'll see you at the design workshop.
+
+2:01:13 - Unidentified Speaker Thank you, everyone.
+
+2:01:14 - Rahul Patel (ADNOC Group D&CS) Thank you. Have a nice day. Bye.
+
+2:01:20 - Unidentified Speaker you.
+
+2:01:58 - Vignesh Perumal (ADNOC Group D&CS) Hmm.
+
+2:01:59 - Unidentified Speaker you

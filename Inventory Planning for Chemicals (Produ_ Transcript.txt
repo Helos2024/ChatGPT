@@ -1,0 +1,586 @@
+Inventory Planning for Chemicals (Production/Operations) 
+vie, 27 de sep de 2024
+
+0:03 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Good morning. Good morning.
+
+0:08 - Unidentified Speaker you Bye.
+
+2:55 - Mohamad Fakhouri (ADNOC Group D&CS) should we start or we give it one more minute? Do we have everyone?
+
+3:01 - Khalid Sarfaraz (ADNOC Group D&CS) Do you think anybody else should join?
+
+3:06 - Yaser Salem Bin Zubaa (ADNOC - GP) Five minutes or two minutes. We need also to ensure that all representatives are here. Okay, we need to ensure.
+
+3:12 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Okay, 11.
+
+3:13 - Khalid Sarfaraz (ADNOC Group D&CS) So as a standard, 11.05. You can pull them.
+
+3:21 - Yaser Salem Bin Zubaa (ADNOC - GP) Aysha, can you please add them to the meeting?
+
+3:29 - Yaser Salem Bin Zubaa (ADNOC - GP) think.
+
+3:30 - Unidentified Speaker Bye.
+
+3:30 - Yaser Salem Bin Zubaa (ADNOC - GP) you Assalamu alaikum, sabaha al-khayr. Walaikum assalam, sabaha al-khayr.
+
+4:45 - Unidentified Speaker Hayyakallah. Anyone...
+
+4:47 - Yaser Salem Bin Zubaa (ADNOC - GP) Marhaba, salam, hayyakallah, marhaba. Anyone from UNEK distribution here?
+
+4:57 - Rido Mardian (ADNOC Sour Gas - Procurement) No one?
+
+4:59 - Yaser Salem Bin Zubaa (ADNOC - GP) Aysha, UNEK distribution, Adam, Mohammed, Mahmoud Jamal. I'm there from distribution. Yes, you are here, okay.
+
+5:13 - Yaser Salem Bin Zubaa (ADNOC - GP) I rejected because Friday is they're saying they're off anyways.
+
+5:33 - Khalid Sarfaraz (ADNOC Group D&CS) So I don't know from HQ anyone is there.
+
+5:59 - Khalid Sarfaraz (ADNOC Group D&CS) Yes, it should be start. Meanwhile you add people.
+
+6:01 - Mohamad Fakhouri (ADNOC Group D&CS) Yes, yes, yes, I just want to be.
+
+6:24 - Mohamad Naamani (ADNOC Group D&CS) Yeah, is there anything you want to set as a context plus given that we have an hour or even less? Do we need to go into the interview of the solution or talk about the project objective and talk process just so that we're wary of the time?
+
+6:43 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, yeah, so I believe we should go for the overview and then we can project overview and then you Yeah, so it's needed.
+
+6:52 - Mohamad Naamani (ADNOC Group D&CS) I mean, if we have time at the end, we can cover quickly IPP, but let's focus more on solution and process. Sorry, overview and process. Go ahead, Mo. Thanks.
+
+7:03 - Mohamad Fakhouri (ADNOC Group D&CS) Okay, so to Khaled and Mohammed's point, today what we want to understand is how you're doing things today in regards to chemicals for operations. We're going to give you a project overview why we're asking, so why we want to understand your current process, what ADNOC is implementing, and mainly what we want to spend most of the time is understanding your current process from demand or production planning, inventory and supply for chemicals, and also how the data is flowing, whether it's you know, you're bringing the, you're doing the plans in SAP, where are, or it's in an Excel sheet, which want to understand where the data is flowing. So as a project overview, what we're trying to achieve is basically implementing SAP IBP. So this will help streamline stocking the and consolidate inventory levels. It is a 16-month project, and in this project, we have multiple streams. We have the process part, we have the data part, we have, of course, the technology and change management. So we're going to take care of the trainings and as well training manuals So IBP has three modules, right we have the demand planning we have the where so basically we're taking the input from either your Consumption or plans And then there's the inventory planning. So it's the optimization of Do the reorder point creature? Safety stock, and then the supply planning.
+
+9:17 - Mohamad Fakhouri (ADNOC Group D&CS) So this is in a nutshell the project overview of what we're trying to achieve over the next couple of months. What I'm going to do is, Yaser, I know you sent an email. Thank you for sending this email. We can start with a representative to explain to us how the planning is done for chemicals and their respective AGC.
+
+9:52 - Yaser Salem Bin Zubaa (ADNOC - GP) Yes, this is the most important thing. Yes, to make the pictures clear and the importance of this subject for the chemicals, especially operation chemicals, we would like to hear from each representative. I think let's start with Adel. They told me that they are ready. Mohammed Najib, are you here? Mohammed Najib.
+
+10:10 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Assalamu alaikum everyone. Go ahead please.
+
+10:14 - Arunkumar Viswanathan (ADNOC Refining - HQ) Yes.
+
+10:18 - Mohamad Fakhouri (ADNOC Group D&CS) I'm sorry, Mohammed Najib, you are from which AGC?
+
+10:21 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yeah, I'm from ADNOC offshore. Offshore, okay.
+
+10:26 - Unidentified Speaker Yes.
+
+10:28 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Recently I've taken over the chemicals and I've just give you a brief about how we are handling chemicals. We have two types of chemical majorly that's mud chemical that's handled by drilling team and the production chemicals which is handled by MRO team.
+
+10:47 - Mohamad Fakhouri (ADNOC Group D&CS) Today we want to talk about the production.
+
+11:07 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) I'll just present my screen.
+
+11:21 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) I believe you can see my screen.
+
+11:24 - Yaser Salem Bin Zubaa (ADNOC - GP) Yes, yeah.
+
+11:42 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) This is the overall picture of our chemicals availability in our offshore sites. We have multiple sites you can see in each and every cylinder which represent the stock level of vital chemicals in our store in our sites and we have converted the all the chemicals into number of operational days and this is the overall picture you can see some of the buffer stock in bottom line bottom and the other one and the whatever the warehouse stock availability in the light blue color. This overall picture so I will not talk about much about how important the chemicals are I believe it is already covered. Yeah, yeah.
+
+12:40 - Rahul Patel (ADNOC Group D&CS) The labels on the top represent the chemical type?
+
+12:44 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) No, this is, we have, okay, I'll just go through. We have multiple sites like Umushafe, Loverzakum, Nasarumullulu, like that. And yeah, this one. So, overall chemicals, we are not specifying any particular chemical, but overall operational we are talking about.
+
+13:01 - Rahul Patel (ADNOC Group D&CS) So all the chemicals of that site will have this.
+
+13:06 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, so here we can. Yes, absolutely. So we have a 10 days of buffer stock available in the site. Their promise and other 135 days of another stock which is available in the warehouse. So overall, yes we can, we can. I have a question.
+
+13:28 - Aysha Abdulla Al Ali (ADNOC - GP) and down buffer stock in day, store stock in day, you mean in day this is your consumption per day?
+
+13:35 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) No no no of 10 operation or of 10 stock we have at the site and 35 days of stock we have in the warehouse.
+
+13:47 - Unidentified Speaker Okay.
+
+13:48 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) So because since it is a Agnoc offshore, offshore we do we have a very very limited space available. So we don't stock much in the site premise.
+
+14:02 - Tariq Umar Muhammad Qureshi (ADNOC Onshore - PD) I have a question. In Upper Zerchum, why buffer 20 stock is kept?
+
+14:10 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Because of the space availability, because there are multiple various factors are there, which is we are ready to stock a lot of stock at the site, but we have a very, very limited space, as I mentioned earlier.
+
+14:24 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) So this is actually a management overview. I will just show you how individual chemicals are monitored. When we are talking about the chemical plan, we used to send a template to end user and we used to collect all the vital chemical requirements from the end user. So, the format is like this only item number and description and it's a unit of measurement which is in the system and quarterly basis consumption for the next three years. Moreover we will be taking what is the minimum storage available in the site and the maximum storage they can go. Okay we cannot talk a lot yes yes please.
+
+15:20 - Mohamad Fakhouri (ADNOC Group D&CS) So you said the template to the engineer on site, and they'll tell you what are the chemicals needed. So they basically do the demand planning, let's say, production planning. And then, if I may, is this added in SAP somewhere, or this is all going to be added?
+
+15:50 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) this is all going to be handled in excel in excel only currently we are we we are managing everything in excel only so this is what we are expecting from IBP that you know all this information can be fed
+
+16:05 - Mohamad Fakhouri (ADNOC Group D&CS) into fed into the system and the same thing can be managed properly through ibp and are the chemicals um just a bit from data perspective um are the chemicals chemicals or materials created in SAP or no?
+
+16:28 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Do you have an SAP number for those chemicals? Yes, we do have. Yes, for all the chemicals. Yes, we do have SAP number and for each and every chemical there can be a different type of packing. So individual packing will be having a different SAP number.
+
+16:43 - Unidentified Speaker Okay.
+
+16:45 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) And when we receive the plan We usually we convert this one into a basic unit that is that will be our baseline of calculation. Example if the some of the chemicals are supplied in road tankers, bulk tankers, some of them in drums, some of them in IBC. So, there are multiple packings are there. So, whatever that is then we use the conversion factor then we take it we convert this requirement into base units like a kilogram or liters.
+
+17:20 - Rahul Patel (ADNOC Group D&CS) OK.
+
+17:22 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Then then we we calculate the product requirements. Then we convert the existing stock into the same and we calculate how many days we can sustain based on that.
+
+17:38 - Rahul Patel (ADNOC Group D&CS) So this requirement does not consider any of the existing stock.
+
+17:41 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) They just tell you that this is what I need and the stock to make sure then yes we manage this absolutely yes okay so you you see if there's existing stock yes that's true so what we do yes I will calculate the demand so basically what they will provide in multiple uh multiple packing requirement I can sold it all into a requirement as a one like example bio side a example if it is a bio side a I may be having two three uh id will be there so So everything I convert the base unit then what is my available stock including supplier stock. Yes I convert it into this one into number of operational days. So example like you know I have for this one I have 59 days of ground stock available. So my operation yes I can sustain until this one and again I have another purchase order which is already placed which can which will again sustain my operation for another 170 days.
+
+18:45 - Rahul Patel (ADNOC Group D&CS) So when you say supplier stock, it is purchase order, not the stock at supplier level, correct? Yes, open purchase, outstanding open purchase orders. Yes. You consider actual inventories, outstanding purchase orders and the demand which is given by the team to come up with a plan for next quarter or next month, whatever horizon you're planning for.
+
+19:09 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, so how I am getting this many days I can sustain based on the operational requirement which I converted into base units.
+
+19:17 - Khalid Sarfaraz (ADNOC Group D&CS) You are checking the stocks in the system that how much stock is available in SAP?
+
+19:27 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, SAP only. I may show you one excel how I I am monitoring this one.
+
+19:47 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So before that whenever we get the plant one more thing so we will ensure that the all the these chemicals are in LTP and we are depend more depend on the code of orders.
+
+19:59 - Rahul Patel (ADNOC Group D&CS) Okay. We have LTPA for all the chemicals.
+
+20:02 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) We don't get the plan here. Once we get the plan, we'll establish based on the plan LTPA. Then we'll make a release based on the stock level monitoring. Then so in the close we have the new newly introduced, isn't it? The supply stock. Yes, yes, yes, because we have limited stock and chemical, the expiry nature and the preparation. So we put a close in that. The supplier to maintain some minimum level in their premise. So this will communicate to us and we'll put it in this dashboard actually.
+
+20:39 - Santosh Kumar Sharma (ADNOC Group D&CS) Hi Abdul, Santosh, one small query before moving ahead. When you told like the demand consolidation, what's the time frame which you're looking at for the LTPs? Is it one year time horizon or the multi-year time horizon which you're looking at for LTPA?
+
+20:59 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Normally we go for a 2 plus 1 year LTPA.
+
+21:05 - Santosh Kumar Sharma (ADNOC Group D&CS) And then based on that the work order release which the previous Excel which you have showed it's quarterly or half yearly.
+
+21:13 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, we we make sure that at least of 6 months to 6 months release are issued. At least because you know because we various factors as I mentioned earlier because we have many restrictions as well because of the offshore business nature. Lead times would be also pretty high. Yeah, lead time also that is one of them.
+
+21:37 - Khalid Sarfaraz (ADNOC Group D&CS) So there will be internal lead time and external lead time, right? So means one supplier is supplying to your main store and from main store to the rig there is a lead time, right?
+
+21:52 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, that's true.
+
+21:54 - Mohamad Fakhouri (ADNOC Group D&CS) Where is this minted?
+
+21:55 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) And again, it's in Muzaffar. We have a warehouse and we have two islands majorly. One is Das Island and the other one is Zirku Island. Then we have another storage. It's a tank store actually in Muzaffar. We have a very limited space again. So we keep a minimum stock only in these warehouses.
+
+22:16 - Mohamad Fakhouri (ADNOC Group D&CS) But how is this, if we look at the the chain so you issue a PO to the supplier and then the supplier delivers it to which storage location or which warehouse?
+
+22:42 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yeah they will be delivering first of all when we are issuing the purchase order immediately we give our consumption plan to the we are sharing the consumption plan with the supplier so they will make sure that the raw materials are available and enough resources are available to supply on time and most of our supplier they know very well that we have a very limited space so they will also schedule their production according to our schedule even like we could just say it's a just-in-time basis most of our operations are working.
+
+23:15 - Mohamad Fakhouri (ADNOC Group D&CS) But do they supply directly Or do they deliver it directly to the warehouse?
+
+23:24 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, to the warehouse only. From there, yes, our warehouse is handled by ADNOC LNS and they ship it to our offshore sites. And again, the operation is based on whether it's independent. So most of the time, we can say that only 70% percent of the throughout the year only we will be getting as operational days remaining yes it will be due to non-weather I mean weather issues yes we won't be able to operate our fleets.
+
+23:57 - Mohamad Fakhouri (ADNOC Group D&CS) Okay so you do then an SEO from the warehouse to the site.
+
+24:01 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes and again once we issue from our Muzaffar warehouse yes it is out from our system and tracking is even difficult we have we have a transit stock will be available then again it once it reaches site yes we will be having a side stock so which which will not be visible in the system.
+
+24:26 - Rahul Patel (ADNOC Group D&CS) So your goods issuing when it leaves the warehouse?
+
+24:30 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes absolutely.
+
+24:31 - Rahul Patel (ADNOC Group D&CS) And then the stock is outside SAP in SAP you already consumed and issued the stock but then physically monitoring happens.
+
+24:39 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, absolutely yes.
+
+24:42 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So how does it know? Yeah, once it is shoot from SAP, then so we have our logistics provider Adnok LNS. Adnok LNS using a system called ILMS. So the logistic part will monitor under the ILMS actually. So maybe you can Khalid, you can have some integration with ILMS as well to know the exact up to the because the two reaching to the site also this another challenge and so they're counting in days and hours and as Najeeb mentioned so there is a buffer stock at site this is input we need from site people the second thing the this logistic how many in the sea then the transit area this quantity once you show out it will up to the ILMS up to deliver at site it will be monitored under the ILMS once it's delivered then then it will be suffer buffer stock only so site can tell us what is the site buffer. And the another quantity lying in most of us as a once we've done the issue out it it will be lying there for the transit bot actually. So it is there is another quantity available most of this can be captured in the LMS. Then we have in stock which is available in SAP. Then we have like supply stock can be monitored through ASN whatever we can establish a relation to bring the quantity to into the IVP the ASN stock whatever then these are the elements as a supply side we can say
+
+26:19 - Mohamad Fakhouri (ADNOC Group D&CS) just if I if we can go back to the lead time the internal lead time where where is this maintained internally time see there is a MR then the material solution will be there it will initiate by our Varos
+
+26:36 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) team whenever the site instruct to dispatch the material they immediately prepare this basket or the chemicals then they will start shipping so there are these teams are maybe I think you've done with ILMS study before isn't it?
+
+26:59 - Mohamad Fakhouri (ADNOC Group D&CS) Do you have a table where it shows the lead time from warehouse to...
+
+27:07 - Khalid Sarfaraz (ADNOC Group D&CS) See, there is in the material master, there is a field for lead time. So, is that updated?
+
+27:16 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) See, I think, Karith, the internal lead time, for example, so this lead time up to the delivery to the store, it will be from supplier PO to the delivery to site.
+
+27:27 - Mohamad Fakhouri (ADNOC Group D&CS) the store so for chemical this is not sufficient actually right yeah so we just just want to understand like where is this information being stored because at one point the tool needs this information yeah what we can do maybe
+
+27:45 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) we can arrange one more session on the ELMS in detail so let's go through now today Najeeb presentation so this part we will another session for ILMS.
+
+27:59 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Okay, so this is my data table. All the datas are classified based on the nature of item or the common names which is like corrosion emitter, scale emitter, demulsifier or something like that we have given internally some course to identify because each and every category will be having multiple item which may be some of the items are approved in specific fields only and some other sites may be using a different chemicals with similar composition. Then again it is seasonal so in some of the demulsifier example. During winter time yes some of them specific demultifier are using and again and after once the winter finishes we will be switching over to another chemical. So these are the variables we have so accordingly we have to manage. So we cannot talk a lot because since it is having a very short expiry date. So, the supply should be planned in a precise way. So, once we once you have classified this one then yes we are capturing all the like historical consumptions then again plan yes we will be we will be considering the plan based on the input from the end user as I have mentioned earlier from the template and we will compare with the last year last year consumption and if We always consider if the new plan is if it is less than the last year we consider the higher one to for the mitigation as a mitigation. Then again we will be having then what we have is this is the summary of this is a summary of the each and every chemical. So I am based on the baseline what we have prepared earlier in operational days yes we this one into the operational sufficiency of individual chemical in months. Take example for this one. Yes, I can see that based on the current stock available. Yes, my operation will sustain for maybe like one month and one and a half month approximately. One month and few days. And again, I have... Yes.
+
+30:35 - Mohamad Fakhouri (ADNOC Group D&CS) Just a quick question. Sorry to cut you. If you can go back to the tab.
+
+30:43 - Mohamad Fakhouri (ADNOC Group D&CS) So, the revised plan, is this basically adjusted? So, someone goes in and adjusts? Yes, of course.
+
+30:52 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) This is driven with a formula. Of course, I used to collect the plan and I converted into bringing those information into these tables. So, these are all dynamic actually.
+
+31:05 - Mohamad Fakhouri (ADNOC Group D&CS) Okay. Who does the adjustment?
+
+31:08 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) as end user on quarterly basis if there is any major changes in the production of course they they used to advise us the changes then the same time yes we used to adjust in the plan but all all of this we are doing in this master sheet only master excel file only but basically I want to say that this is a dynamic field yes yeah okay so here is the one yes so when we look at the scenario here we can see that yes my operation is sustained for next 12 months so I do not have any issues and I do not need to bother about the and again we continuously monitor the what you call planned versus actual here is the one yes. So some of the chemicals are yes they have consumed much more than the planned one yes so we give this feedback to the end user and they come up with the revised plan.
+
+32:07 - Mohamad Fakhouri (ADNOC Group D&CS) How often do you do this?
+
+32:09 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) On a quarterly basis. Because we have a weekly meeting and we have a monthly meeting. Weekly meeting is to monitor any shortages in the very few days, like within two weeks is how we will monitor the weather conditions and the buffer stock availability.
+
+32:41 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) So what we do is in this report. So this report we are updating on weekly basis. Yes, we take transactions all the histo what? Me 51 transaction. Yes here. We are taking two two zero one two twenty one Two sixty one all the three is transaction then outstanding a mass in the system system, then current balances which is available and we classify according to the three different sites. One is Das Island, Muzaffar and Upper Zakum site. Yes.
+
+33:11 - Unidentified Speaker Availability.
+
+33:11 - Mohamad Fakhouri (ADNOC Group D&CS) Do you separate them by, do you classify, not separate, but do you separate it by criticality? Do you classify chemicals by criticality?
+
+33:28 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes as I have show you earlier the graphs yes these are all the vital chemicals we have in generally we have nearly 200 catalogue IDs material numbers for all the chemicals from that yes we have identified nearly 60 to 70 catalogue IDs which is classified as vital and these vital chemicals are reviewed on a weekly basis.
+
+33:56 - Mohamad Fakhouri (ADNOC Group D&CS) Yes the vital ones but I'm assuming.
+
+33:58 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes that's true. The other one we normally yeah we are sharing the report with the end user and they review this one and if they feel that some action need to be done yes they used to discuss in the monthly meeting.
+
+34:11 - Mohamad Fakhouri (ADNOC Group D&CS) Okay.
+
+34:15 - Mohamad Fakhouri (ADNOC Group D&CS) So you share all the chemicals whether it's vital or non-vital? Yes that's true. And then it's up to the end user to decide whether they want to discuss this on during the monthly meeting.
+
+34:29 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, maybe some of the specific chemical they may ask to review example these two corrosion emitter. Yes, if this is the two chemicals we need to discuss then we go here and we just input there. Yes, we see the status of this one.
+
+34:50 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) So here we can see this is a corrosion emitter yes we have a what you call problem ongoing with this one we have a device the production what you call the supply we have switched the chemical from one to another one.
+
+35:08 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) So the operational days are very limited and our the whatever we have issued recently which is not reflecting here yes we have supplied a lot of chemical here and this is one of the major what you call what you call critical chemical we are reviewing currently.
+
+35:33 - Yaser Salem Bin Zubaa (ADNOC - GP) Here Mohammad Najeeb are the available Zmin, Man and Bax maintained for all these chemical items or we need to keep it as on demand?
+
+35:41 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) On demand only because of the limited space availability. Yes currently we we have a very very limited stock which will last for only 5 to 10 days of operation. Let's say supplier here is the supplier which they are ready to supply a lot of what all the quantity they are ready to supply but we don't have a space to keep it. So this is just like just in just in time and just in time delivery based That means you order it based on end-user reservation?
+
+36:14 - Yaser Salem Bin Zubaa (ADNOC - GP) Yes, that's correct. And how many percentage of these items are under LTPAs from work agreement etc.?
+
+36:23 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Right now, 70% of the vital chemicals are under agreement. This one also, including this chemical also, this is under agreement. Only.
+
+36:39 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Thank you, Mohammed. This is my question.
+
+36:49 - Yaser Salem Bin Zubaa (ADNOC - GP) So Mohammed, do you need to add anything or we need to hear from another company team here?
+
+36:57 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Okay, go ahead Mohammed. So here one more thing, yes. We are calculating again the monthly supply rate and sorry weekly supply rate and the and the weekly consumption rate. So here we are capturing this one based on the what each and every TO yes definitely there will be different lead time so accordingly we what you call we display this this information here. So as earlier requested yes we are are showing only there are five vertical pages which we are reviewing on a weekly basis. These are the vital chemicals some here biocide oil then corrosion emitters.
+
+37:53 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Then again this information we are sharing with SVP on a weekly weekly basis and we used to we used to work work based on their their any recommendations.
+
+38:09 - Rahul Patel (ADNOC Group D&CS) The procurement cycle it is like is it weekly monthly like the analysis you're doing on weekly basis, but then. The procurement cycle is it when do you communicate to your vendors monthly?
+
+38:25 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Because we we have we are giving the with the supplier with sharing the plan well in advance when we are issuing the when you're issuing the purchase order.
+
+38:34 - Rahul Patel (ADNOC Group D&CS) Yeah but then what frequency you check that okay I had last month I had issued a plan for next six months but then based upon the changes the consumption has increased or my days of days stock on ground has reduced so I need to pull any of my procurement proposal I need more quantities from supplier so what what is frequency of that transaction.
+
+38:57 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) It's at least a weekly weekly once once to twice yes we are communicating because we generally have a testing requirement testing is there for each and every chemical batch so we used to communicate very regularly to monitor this because every every batch need to be sent it to adnoc lab so they will be they will be continuously contacting us for each and every testing and again if there is any forecast changes or something.
+
+39:28 - Rahul Patel (ADNOC Group D&CS) Yeah so testing I understood because you will be receiving continuously so the testing will continue as you as and when you receive badge but from overall supply planning you communicate weekly with the vendor for forecast changes.
+
+39:42 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes that's true.
+
+39:44 - Unidentified Speaker Okay.
+
+39:58 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) One more thing. Yes, I think I forget to add here. I think in the ground stock, whatever we have issued in the last one week, because which will be out from the system. Once we issue from the warehouse, yes, I'm adding it as a ground stock. Which why because we know that this will be in the transit which is not reached to the end user so we consider is it as a ground stock.
+
+40:25 - Rahul Patel (ADNOC Group D&CS) Okay so as one more question when you receive the demand do you do any analysis of the demand that based upon historical consumption whether demand looks okay or not okay?
+
+40:40 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, we do that, yes. And we we have conducted a series of workshop with end user and yes, we are about to receive the revised plan for the next year next year based on the current this year data and the last year data.
+
+41:00 - Mohamad Fakhouri (ADNOC Group D&CS) OK. I just wanna. Come in the Jeep. Thank you so much.
+
+41:11 - Mohamad Fakhouri (ADNOC Group D&CS) showing us the process offshore. Okay. Any other questions from any other audience?
+
+41:21 - Rahul Patel (ADNOC Group D&CS) Najeeb, I have a question. Last one.
+
+41:23 - Aysha Abdulla Al Ali (ADNOC - GP) Yes, please. Yes, please. When you receive the demand forecast from the user, like it's for how long period? Is it for one year demand, six months?
+
+41:31 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Three years. Three years. We always request three years, but or we always advise and we always advise and use it but the current the for the next year plan should be very firm based on the approved budget. Okay and this demand input is received at what frequency like every month you receive for next three years or every quarter you receive like every year like you know a quarter quarter four beginning we are asking because the firm firm budget is approved so based on that we are asking them the the forecast and in between yes if there is any requirement from the management to increase the production or the decrease the production accordingly yes they used to advise us on weekly meeting or monthly meeting yes they used to advise us.
+
+42:19 - Rahul Patel (ADNOC Group D&CS) So you get one time plan for the year once in a year for three years and then you review it every month.
+
+42:26 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes that's true and as I mentioned earlier yes the plan is a dynamic and if there is any changes in the in the plan from the end user. Yes, we used to incorporate those.
+
+42:39 - Hector Palacios OK. I have a question here related to the that information that you are showing here. The minimum storage maximum storage is that information that is available on SAP or is information that you have only on your Excels?
+
+42:55 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) It's only on Excel, but we we have promised end user that you know we will add this information in the SAP and we should keep this as a buffer stock which should be available in the SAP itself for each and every site.
+
+43:13 - Hector Palacios Another question, you were mentioning that you have different SKUs depending on the format. That's the packing. Do you have different packings depending on the supplier?
+
+43:31 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) yes that's one of the one yes some of the supplier yes they used to recommend a recommend but if if we demand if they used to convert the packing according to our requirement example some of them yes they will supply only in IBC but we will we will enforce them to supply in drums example because we have a because you know our material handling is very complicated since it's offshore So according to our requirement, yes, we used to advise them to change it to the packing. Maybe there is a little premium we have to pay for that, but we go with our requirement itself.
+
+44:13 - Hector Palacios All right. And for the same chemical, can you have more than one supplier?
+
+44:18 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, we do have.
+
+44:19 - Hector Palacios And how do you decide how many suppliers?
+
+44:27 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, we for the vital chemicals. We always make sure that we have a backup plan. We have alternative supplies. When we are when we are creating the LTPA, yes, we mentioned that yes, we should go with the 7030 format.
+
+44:44 - Unidentified Speaker OK.
+
+44:49 - 1Ali Mohammed Ahmed (ADNOC Onshore - PD) I just. Yes, I have just two or three questions for Nadeem, if you go back to the first slide.
+
+45:02 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes, here it is the total chemical store. So, but if you have how you will make difference the availability because you have some of the chemical are slow moving some of them are very fast moving.
+
+45:19 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, but we do we can be if this what are showing here is a vital chemical and we have put together everything in together then we have displayed here. Again we can bifurcate this one into individual chemicals.
+
+45:37 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Okay and offshore for production chemical whose contract that means inventory? Yes inventory is the one. Okay and for forecast. You communicate with the user to get from them the forecast, no? Yes, that's true. Just checking because if it is the same in onshore.
+
+46:02 - Mohamad Fakhouri (ADNOC Group D&CS) Yes. Ali Mohammed, would you? You're in onshore, right?
+
+46:11 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yeah, I'm from onshore.
+
+46:13 - Yaser Salem Bin Zubaa (ADNOC - GP) Welcome to onshore and first we need to finalize Mohammed Najeeb here if I have no question then we will hear from the insurer and then to RFI.
+
+46:22 - Mohammed Ashic (ADNOC Onshore - PD) Okay so one question yes one question to Najeeb this demand comes in months or days?
+
+46:31 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) No basically they are providing in as per the UOM only of the system example if it's in a bulk like or IBC or bulk supply or in terms they convert then we convert them into base units.
+
+46:47 - Mohammed Ashic (ADNOC Onshore - PD) Yeah, but you get demand. From the user based on cost, I mean one quarter demand or monthly or quarterly demand. So it's a total quarterly value and then you break down into days. How do you? How do you convert that? How do you? How do you make sure that you know it covers for this much days based on consumption?
+
+47:10 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yeah, based on consumption, yes.
+
+47:16 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) One example you can see that 2014 they want so and so in terms of chemical then we convert it into liters then again we divide into 365 days so we know that for one day how much chemical is required.
+
+47:30 - Mohammed Ashic (ADNOC Onshore - PD) Okay so not historical just for the next one year.
+
+47:38 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) No historical yes we consider when the plan is less than the historical consumption yes we take the higher one that is historical one we consider for safety side.
+
+47:50 - Mohammed Ashic (ADNOC Onshore - PD) But then it made different okay this is production chemical but otherwise how do you know that you know maybe this maybe some months may be higher consumption some months may be lower based on maybe so how do you how you still you know manage to get monthly.
+
+48:14 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) That's why we do have a weekly meeting for vital chemicals and generally monthly analysis of all the chemicals. From that yes we get any input any changes in the any changes from the end user and if there is any changes yes we communicate with the supplier accordingly again we will make sure that we have a continuous supply agreement with open purchase order which is already placed with the supplier. So we advise them to increase or decrease accordingly.
+
+48:48 - Mohammed Ashic (ADNOC Onshore - PD) So this breakdown into days you don't face any issues of sudden increase or reduction in stock?
+
+48:57 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes sometimes yes you can see maybe like 15 days stock all of a sudden yes they will they will take it to the site.
+
+49:06 - Mohammed Ashic (ADNOC Onshore - PD) so why can't demand be more more breakdown so that it is more accurate now since you're just for I mean calculating based on the requirement so it may it may have issues right so if the demand cannot be more
+
+49:20 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) breakdown into monthly at least it will be more better monthly because you know why we because we have a multiple unit of measurement and supply and demand so to normalize this one or to have a common common ground yes we have converted into days so that you know management will be having a very clear vision about the operational sustainability.
+
+49:50 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay it's fine. One more thing actually this report whatever we see it's going to the senior management so to visibility to the senior management then to ensure the business continuity perspective. So if you show in liters and kgs, some things, they're so different. And also months. So this is the one last, I think, two years we are presenting. And almost, this is the matured reports in all aspects. It's reaching up to CEO sometime.
+
+50:25 - Yaser Salem Bin Zubaa (ADNOC - GP) I think another question to Mohamad or we need to hear from Adnan Khonshur? Our consultant here, KPMG, or... You are fine with Adnan Khonshur?
+
+50:40 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, I think we can move forward with the...
+
+50:42 - Yaser Salem Bin Zubaa (ADNOC - GP) Yes, forward. Thank you, Mohamed Najib. Appreciate your inputs. Thank you, brother. You're welcome. Thank you, Mohammed. Anyone from Adnan Khonshur? Ali Mohamed or Ashik or anyone?
+
+50:53 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes. Adnan Khonshur, yes, please. Go ahead, Ali. As-salamu alaykum. Actually, I just yesterday I came to know about this meeting. So there was an invite the end user, but unfortunately they was engaged in other business. But I will explain in general the our process is almost similar to the offshore, but with slight. Simplified.
+
+51:25 - Ali Mohammed Ahmed (ADNOC Onshore - PD) As a background, the production chemical process, from the demand till the apply, it starts in Honshur in the operation they use two systems, which is called Corrido and PIES. Corrido is for the chemical dosage rate and corrosion monitoring and bias also something related to that. Maybe that later on the inducer can explain it more. So we take the demand from the operation. We have around six field or site. We take from them five year plan. And then this forecast is updated in yearly space. Yeah, we take it. Just let me show you an example of the Excel sheet for. The forecast we use the structure we use in onshore.
+
+52:35 - Mohamad Fakhouri (ADNOC Group D&CS) So so I'm Hamad. I know the plan is.
+
+52:41 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Manual say similar to offshore. Yes, exactly. It is manual in Excel sheet. We send it uh, every year to the supplier. And then it is so for the first year they give us in monthly base and for the other years it is in year as total. So this we take from them five years plan updated yearly. And then this yearly forecast is updated quarterly. Every quarterly we sit with them. If there is a change in the forecast and everything, then they have to send us a revised approved forecast. If there is no change in their consumption, then we'll continue the same. Then we go to the tendering process which pass through of selecting the chemical through extensive lab test and third party lab test field trial. End up by establishing long term price agreement. In all our price agreements, we have the VMI two-month buffer stock to be maintained as a finished product with the supplier, and three months of raw material, because for production chemicals, most of the items are blended locally. So once LTBA is awarded, before we issue them the call of order. We usually give the call order for every four to six months according to the consumption plan and then we give them our, we share with them our forecast of one year to the supplier to maintain two month buffer stock always and to maintain three month of raw material. Based on that every quarter, sometime, if possible, monthly, we do an audit to the supplier. We go to their yard and check. They send us, of course, the stock report in monthly base, and then we do an audit to that to verify the quantity available. As Najeeb mentioned...
+
+55:07 - Mohamad Fakhouri (ADNOC Group D&CS) The buffer stock, where do you keep them?
+
+55:09 - Ali Mohammed Ahmed (ADNOC Onshore - PD) In your warehouse? No, no, no, supplier's warehouse. We keep in our warehouse in BAP-13 one month. Okay. And two months with the supplier, plus three months of raw material.
+
+55:29 - Mohamad Fakhouri (ADNOC Group D&CS) And where is that, the raw material? In Musafa.
+
+55:35 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Okay, so ADNOC? No, no, with the supplier. Raw material. So in case we have increase in demand, so within short period he can blend the chemical and deliver it to us. And buffer stock need to be tested and approved by ACL, the finished product. Because as you mentioned that every batch we take before we take it to BAPT it should be approved by ACL.
+
+56:12 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Now, this is about the forecast. Later on, once we have the LTB and everything, this is for daily work. We monitor the inventory in this Excel sheet. We have the monthly forecast because we took in already from some of the items are used with different fields, so we take the total monthly requirement. And then the current balance, we have a formula to calculate for us till when we have coverage. Current balance, where is this? Current balance in our store.
+
+56:55 - Mohamad Fakhouri (ADNOC Group D&CS) But is it reflected in SAP?
+
+57:00 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes. Current policies reflected in ICP. In addition to that, we take weekly report from BAP-13. Physical, physical stock report from BAP-13 because what happened, sometime they receive the material.
+
+57:13 - Mohamad Fakhouri (ADNOC Group D&CS) It might not be updated, yes.
+
+57:14 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes, it will not be updated. They process the DRN and this may take a few days. So we take from them weekly, every Monday, we take from them the physical stock status. And based on that, we update Excel sheet. We add to it the LTBA, the LTBA total quantity, balance from the LTBA, and then the BO issued quantity, how much are remaining. Based on that, we will decide when the next call of order to be issued to them. In addition to that, we add the quantity in LIMS if we have any quantity under testing, or if we have under any quantity already tested and we request for loading because sometimes loading or logistic from Mustafa delivering to Bob delay for a few days based on the truck availability. So we keep how many quantity we have for each chemical under loading.
+
+58:27 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Then every year, at the end of the year, we generate the consumption from sub, this report, consumption report. Your consumption report, it have also its own limitation in sub, because sometimes the field, because it's taken by the, I think by the GL, of the field, sometimes the field names are not clear or are not mentioned. The report, even if you ask for one year, still it will give you since 2020, then you have to filter it and remove whatever is not necessary from it. Once, from this we take every, we run the report manually and then We calculated in per chemical, per field. And in end of the year or the beginning of the next year, we have a meeting with the technical center and all the entity, the corporate compliant and the end user to tell them that this was your consumption and this was your forecast. And if there is a more or less by 20% what was the justification from their side to have that increased forecast.
+
+1:00:00 - Mohamad Fakhouri (ADNOC Group D&CS) How often do you do this, conduct this meeting?
+
+1:00:04 - Unidentified Speaker Yearly.
+
+1:00:05 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Okay, once a year. Yes, once a year. Even though quarterly we ask them to update, but sometime maybe they don't update when the consumption is increased or decreased and that we sometime if there is an excess increase immediately we ask them why this is an increase if there is sometime there is no movement again we go back to them and ask them and this all communication is done by email or through send them a report of excel sheet and it is out of SAP.
+
+1:00:39 - Mohamad Fakhouri (ADNOC Group D&CS) So you have an official once a year meeting but sometimes there could be there are at You do get back to the business user.
+
+1:00:52 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes. This practice we used to do it before, but in did not 2024 have this meeting because of a lot of change in the field, a lot of change of the focal point, change in our department. A few people left extra load for whoever is handling the work. So that's why we were not able to do it in 2024. But still we are monitoring with them. This is the last report we share with them all. We share it with the technical centre and still we are waiting for their feedback.
+
+1:01:33 - Ali Mohammed Ahmed (ADNOC Onshore - PD) That is in short from my side. If you have any questions You can.
+
+1:01:42 - Mohamad Fakhouri (ADNOC Group D&CS) I think we are at time.
+
+1:01:49 - Mohamad Fakhouri (ADNOC Group D&CS) So we still have sour gas, right?
+
+1:01:54 - Yaser Salem Bin Zubaa (ADNOC - GP) And it's also refining and then a gas, sour gas. Can we go ahead, move forward with refining now? I think refining. Or do you need to have another meeting? That's I think OK, I don't got anyone from other confining. We need to. I think refining here with a core anyone or Noura.
+
+1:02:26 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Is there a good morning as an yes, good morning, please go ahead and good morning to all the team. As I said, from RNOC refining point of view, just to give you the chemicals handling of production chemicals. Basically, all the chemicals and absorbs and additives or MRP parameters set in SAP. So, any new items added through MDG, our end user will have an initial consumption plan and that will be set as an initial level. And frequent monitoring will be there thereafter once item started consumption. So our monitoring of all chemicals based on SAP set levels and past consumption history from material status report and the reorder point we are reviewing on bi-weekly basis based on the MRP program and any change in abnormal consumption either increase or decrease, we will go back to the end user and find out the reason is there only for it's a time being or it is a permanent or we need to find out and accordingly we reset the level if and the information is aligned with the operations teams. So according to the Revisiting the levels will be with the operations team regular basis. Also, any sudden demand arises from operational requirements, they will directly contact our MRP engineer for the change in demand for the upcoming years. When you come to the purchasing or point of view, the 90% of our vital chemicals are in, they have agreements and the balance 10% of items we are pushing through the agreements on regular basis. So the period of our LTPAs is minimum one year and it can go up to The reason for one year is due to some chemical manufacturers or suppliers are not agreeing the price due to raw material volatility in the market. Only few such chemicals are available and otherwise normally it goes for two years or three years.
+
+1:05:26 - Yaser Salem Bin Zubaa (ADNOC - GP) any templates from your side and do you have any templates can share it with us.
+
+1:05:32 - Vivekananthan Kathiresan (ADNOC Refining - HQ) No no sorry we don't have any template we go by the reports only the MRP area report as well as the metal status report which we used to download from the system and we do our analysis and calculations and only those anomalies we back to our operations team.
+
+1:05:56 - Mohamad Fakhouri (ADNOC Group D&CS) So everything is, so the demand is, the plans are in SAP, Vivek? Yes, yes, yes.
+
+1:06:07 - Vivekananthan Kathiresan (ADNOC Refining - HQ) There is no plan in SAP, right Vivek? There is no plan. Parameters is set. Parameters, yes. Reorder point, max level, all are set and based on that The level setting itself has a plan with the operations team.
+
+1:06:29 - Vivekananthan Kathiresan (ADNOC Refining - HQ) All the anomalies we usually review with our operations team and the unit, especially the unit operators, unit operations, senior engineer or section head. We'll go back to the user and we will do our recalculation if it is really required.
+
+1:07:02 - Vivekananthan Kathiresan (ADNOC Refining - HQ) While going for the LTPA part, we always consult with our operations team, what is the next five years business plan and according to that we will go for the new LTP quantities.
+
+1:07:23 - Mohamad Fakhouri (ADNOC Group D&CS) But where is this located, five years, the five years plan? Where is this? Is this added in the system or?
+
+1:07:34 - Vivekananthan Kathiresan (ADNOC Refining - HQ) I think our business team, they have this five years plan operation. They will have the years plan.
+
+1:07:46 - Vivekananthan Kathiresan (ADNOC Refining - HQ) Okay, so I don't think it will have the item level information in that business plan, high level business plan, but still they consider as a basis for them to arrive the quantities for the requirement of the production chemicals or additives. Activities, observance, all those things.
+
+1:08:11 - Arunkumar Viswanathan (ADNOC Refining - HQ) Just adding to that point, basically our business plan, what we receive from operations, we will utilize this as a base for our LP establishment of quantitative.
+
+1:08:35 - Yaser Salem Bin Zubaa (ADNOC - GP) Mohammed Farooq, another question from your side.
+
+1:08:49 - Mohamad Fakhouri (ADNOC Group D&CS) Sorry, I'm putting some notes while I'm talking. From my end, no questions right now. This is Isaac refining. Yes, we were good.
+
+1:09:12 - Yaser Salem Bin Zubaa (ADNOC - GP) We need to, uh, anyone from, uh, sour gas.
+
+1:09:18 - Unidentified Speaker Yes.
+
+1:09:18 - Yaser Salem Bin Zubaa (ADNOC - GP) Yes, sir. Yes.
+
+1:09:20 - Unidentified Speaker Yeah.
+
+1:09:22 - Rido Mardian (ADNOC Sour Gas - Procurement) If I can share, uh, just, uh, I think basically for our noxious gas, the process for ordering chemical, not much different from the other MROs. We are a very simple plan. We have only one plan when, when we're also, if you can see my screen, Yeah, basically the process for the chemical procurement or ordering is always on the system. We don't have any manual reporting or any manual planning. Whatever we have, everything we are putting on the system, even if there are any reservations or requirements by operation teams, like one-year planning or shutdown planning, we always request them to generate the scope in the system directly or so. So it is always initially starting from the requirement which is on the system regarding the operations or drilling requirement for the chemical. Then, yeah, it is like from the safety stock, the end point or maximum. All the chemical operations is already set up, especially for the regular and high-consumer critical. All the parameters are set up in our system. So it is, we run it through MRP run the system run it for any any requirement that required to be to be purchased or to be actions. It will come to run order then. Then we review it whether we have to LDPA or we have to run it from the spot order from PR. Most of the item which is very, very fast moving and regular consume 80% is covered already under LDP. For another gas we just issue order if it is already have LTPA based on the requirement of the MRP planning run to replenish or to have additional requirement, it will be covered during the MRP run. So whatever the requirement from the plan order, we convert it to call of order, then the normal process will be continued. And if it is not having any LTPA, we just raise a support order. Normally this item only ad hoc basis like it's not very regular item like chemical which is required during the major shutdown or any item which is doing the startup only that this chemical required most of them is not going to have any LDPA because it's going to be two years or three years of consumption only. So we are issuing spot order for this one based on then the spot order will goes the normal process and then go to spot PO.
+
+1:12:01 - Unidentified Speaker Yeah.
+
+1:12:02 - Mohamad Fakhouri (ADNOC Group D&CS) Okay. Just if we can go back to just...
+
+1:12:06 - Rido Mardian (ADNOC Sour Gas - Procurement) Yeah, this is a sample of our, like our dashboard that our operation always have, this one. Yeah, we are reporting to our operation and to the management for this. This is the most, I mean, production chemical are using by our operation team. It's monitored. They are looking at the safety stock level and the durability point. Whatever the item already below them, it will It is they will come back to us. This was already below the safety stock order. Then they will update for our action. What is your example that we already have a PO or we have one place in the PR. Then we're giving back feedback to them. So for them they need always this dashboard to be green and then all the time. So it is our obligation to to fulfill this on the board, especially for this item, which is. The most critical. And regular consumer item.
+
+1:13:01 - Mohamad Fakhouri (ADNOC Group D&CS) Okay, those are the vital ones.
+
+1:13:03 - Rido Mardian (ADNOC Sour Gas - Procurement) Yes. So basically...
+
+1:13:08 - Mohamad Fakhouri (ADNOC Group D&CS) Just a quick question. In slide one, the requirement system ASG operations link, this is the tool?
+
+1:13:19 - Rido Mardian (ADNOC Sour Gas - Procurement) No, no, no. This is only, I give only the workflow overview. Everything we have is already on the system and the ASG SAP system. Our operations have a requirement for regular consumption. There is a reservation. Even drilling, we don't have any drilling. Our drilling is different from Anaconsor or Anacopsor. We don't have regular drilling. We have campaigns based only. This year we have a drilling campaign. So they have already planned. They are already planning for how many wells they are going to drill. And they already have approved budget already based on that one. They put reservation in the system. So we raise any requirement for the drilling based on the system requirement. Then we generate whether we have LTPO or we have to raise the spot PRR. So everything for us, even for operation or drilling, We put it on the systems.
+
+1:14:26 - Rahul Patel (ADNOC Group D&CS) So when you say you put it in system, how do you put it in system? Is it independent requirement you put or is the dependent requirement generated from some other? What do you mean dependent independent? So when you say this requirement is in system, do you put the forecast in system as an independent requirement or it is generated out of some other requirement from production?
+
+1:14:49 - Rido Mardian (ADNOC Sour Gas - Procurement) from production or drilling.
+
+1:14:54 - Rahul Patel (ADNOC Group D&CS) So when you say actual requirement from production, how do you maintain that in system? Because in SAP, if you have to run MRP, either you need to have independent requirement as an input.
+
+1:15:05 - Rido Mardian (ADNOC Sour Gas - Procurement) They are raising a work order or reservation system. It's a PM job for reservations, yes.
+
+1:15:11 - Rahul Patel (ADNOC Group D&CS) So they are managing work order or reservation, and then based upon that work order reservation, the requirement is generated. Yes. And this requirement is for how long period? Like is it immediate basis consumption only? Do you get a forecast for planning for like long term planning?
+
+1:15:31 - Rido Mardian (ADNOC Sour Gas - Procurement) Long term planning only during the major shutdown they put on the system for like five years, three years. No, we don't have any item level. Same like refinery. No, we don't have all this kind of forecasting for five years. But in case of like our production capacities increase due to the expansions like we have some expansions ongoing which is with an operation will have a mention given to us that it will have impact in the corruption of chemical because of the increase of production they will have impact on the chemical so they forecast this one they forecast but in our side because we already have some buffer stock like safety stock already maintained we keep it on the stock or in the tank so those also we're not going to have direct impact to their production because we already have so like the forecast that okay the 20 percent will be increased based on the production increase the consumption the chemical is going to be increased they will inform us earlier like because also this is not going to be I mean regular once the stable operations down then we know already how much consumptions then we set up we update again the parameter the safety stock and the order the point then we we establish again, then we put on the system.
+
+1:16:47 - Rahul Patel (ADNOC Group D&CS) So the execution is based upon the reorder point planning only. So yes, the main planning happens. So you use reorder point planning for your MRP so that whenever the inventory goes below the reorder point, it is always fulfilled. And then if it is a LTP, then it goes fulfilled through LTP or spot orders. Another question, how do you define LTP? Do you do any planning outside for like annual planning so that you can talk to vendors for LTP like what is the total volume for the year and for next 2-3 years for LTPA planning?
+
+1:17:20 - Rido Mardian (ADNOC Sour Gas - Procurement) Yeah, for initial LTPA planning we always based on the consumption based on the on the yearly based consumptions. So like example you want to establish for one chemical productions LTPA for DGA and we have a forecast like one almost in average year we are having like 2000 ton per year. So we're going to establish like three years planning LTPA. So our operation also, we consult with operations within the three or four, five years. Do we have any expansion or any major shutdown upcoming or any requirement which is separate from the regular consumptions? Then we communicate to them. Then if they have, then we add up on that margin to the LTPA from the regular consumption. Then we establish based on that calculations. Oh, thank you.
+
+1:18:12 - Rahul Patel (ADNOC Group D&CS) Which means that you look historical. You look historical consumption to come up with the long term planning for LTP. And then if there is any any additional maintenance or additional expansion plans, then those are added on top of the historical consumption for operations and then the LTP quantity is finalized.
+
+1:18:31 - Rido Mardian (ADNOC Sour Gas - Procurement) Yes.
+
+1:18:33 - Rahul Patel (ADNOC Group D&CS) But this would be an yearly or annual like it would be an annual activity, right? Every year you will be looking at.
+
+1:18:39 - Rido Mardian (ADNOC Sour Gas - Procurement) Yeah, yeah, yeah, yeah. For the the parameter is that we review at least six months basis. Six month basis. If there's any any consumptions that increase or some of the chemical is already replaced by another chemical or another type, then we are corresponding to them also in regular like six month or so.
+
+1:19:00 - Rahul Patel (ADNOC Group D&CS) So safety stock reorder point min max parameters are reviewed every six months.
+
+1:19:05 - Rido Mardian (ADNOC Sour Gas - Procurement) Yes. In the moment, every six months for us, especially for the fast-moving item. OK.
+
+1:19:23 - Yaser Salem Bin Zubaa (ADNOC - GP) OK. Another question for Sourgaz, Mohammed.
+
+1:19:29 - Unidentified Speaker OK. First.
+
+1:19:35 - Mohamad Fakhouri (ADNOC Group D&CS) Not from my end.
+
+1:19:36 - Rido Mardian (ADNOC Sour Gas - Procurement) Thank you. We have also LTPA which is under consignment for us. So it's good for us to to get that the value because we know that chemical having value. Yeah, so it is good for us to keep it under consignment and the consignment is reflect on the system also.
+
+1:19:57 - Rido Mardian (ADNOC Sour Gas - Procurement) And for those LTPA items, mostly for us is very short lead time because already We ask them also to cover at least our two months consumptions in their premises. So whenever the replenishment comes, they have less than one month. Delivery only.
+
+1:20:23 - Mohamad Fakhouri (ADNOC Group D&CS) OK.
+
+1:20:32 - Mohamad Fakhouri (ADNOC Group D&CS) OK.
+
+1:20:33 - Rahul Patel (ADNOC Group D&CS) The question, sorry, are you doing any stock transfer?
+
+1:20:39 - Rido Mardian (ADNOC Sour Gas - Procurement) Between or yeah for chemical is not very regular. Just in case like we have It's ad-hoc, very rare. There's some issue with the delivery, with the supplier only, then we ask for stock transfer chemicals, but it's very rare.
+
+1:21:11 - Mohamad Fakhouri (ADNOC Group D&CS) Now, do you have any other questions?
+
+1:21:17 - Yaser Salem Bin Zubaa (ADNOC - GP) No, I think I'm good. Thank you.
+
+1:21:21 - Yaser Salem Bin Zubaa (ADNOC - GP) Okay, now let's move with Adna Ghaz. Anyone from Adna Ghaz here? Ibrahim or Balaji?
+
+1:21:30 - Aboobacker M. (ADNOC Gas - PD) Hi, Assalamu Alaikum. Yes, how are you? I'm good, Alhamdulillah. How are you, brother? Fine, Bas. Go ahead.
+
+1:21:38 - Aboobacker M. (ADNOC Gas - PD) we have two types on demand and based on the MRP on demand based on the user reservation. We will go for replenishment and we have LTP agreements also there for the fast moving and high consumption items. So everything based on the user reservation for Adnac. I guess.
+
+1:22:08 - Aboobacker M. (ADNOC Gas - PD) We have user operations. They have their own plan. So they will make the reservation.
+
+1:22:16 - Unidentified Speaker Yeah.
+
+1:22:17 - Mohamad Fakhouri (ADNOC Group D&CS) The reservations are in the system. Yeah, but automatically or?
+
+1:22:26 - Aboobacker M. (ADNOC Gas - PD) No, but for not like even though we We have a MRP parameters available, but for the regular for the chemical catalyst. No, we are in regular basis. No, we will review and we will make the spot order or release on this call of order.
+
+1:22:53 - Rahul Patel (ADNOC Group D&CS) This reservations are for how? Or like is it like immediate consumption only or do you have this reservation period for future periods as well?
+
+1:23:05 - Aboobacker M. (ADNOC Gas - PD) Yeah future period only based on the delivery period so user will make So they will maybe will go for order.
+
+1:23:26 - Rahul Patel (ADNOC Group D&CS) Do you also use reorder point planning with MRP?
+
+1:23:29 - Aboobacker M. (ADNOC Gas - PD) Yes, some of the items we have a MRP setup already available. So that when there is any consumption will it will be not triggered through a marking. And if it is any urgent also we need to do know especially for chemical and catalyst and unlike other normal items so we'll do the regular review and replenishment.
+
+1:24:06 - Mohamad Fakhouri (ADNOC Group D&CS) Okay I just want to just understand How is the demand being done? Is there a plan? Yes, it's operations.
+
+1:24:22 - Aboobacker M. (ADNOC Gas - PD) They have their plan. Based on the plan, they will raise the reservation. Through email communication, when there is any urgent requirement, they will send the email. In the email request. Not in the SAP. Not in the SAP. They have their plan operations. They are maintaining their. In the SAP we can see the reservations.
+
+1:25:01 - Santosh Kumar Sharma (ADNOC Group D&CS) So hi, this is Santosh from KPNG. How this plan and the reservations are getting linked by you guys because I what I understood operations teams are having some plan which will help you in the long-term planning and whatever reservations which they are doing that is the consumption the immediate requirement.
+
+1:25:24 - Aboobacker M. (ADNOC Gas - PD) See that we have two types one PD I mean on-demand items on-demand chemicals so another we have the stock setups available for on-demand So based on their plan, they will raise the reservation and also they will communicate with us. So we will will raise this part order or LTP.
+
+1:25:47 - Santosh Kumar Sharma (ADNOC Group D&CS) So on demand will have fulfillment through via LTP or on spot on spot on spot purchases.
+
+1:25:57 - Aboobacker M. (ADNOC Gas - PD) So you MRP type PD for on demand.
+
+1:26:00 - Rahul Patel (ADNOC Group D&CS) Yes, PD yes. OK.
+
+1:26:05 - Aboobacker M. (ADNOC Gas - PD) Items will not have any stock setups. Only with other MRP type is it or no will have a stock setups.
+
+1:26:12 - Unidentified Speaker Yeah.
+
+1:26:13 - Rahul Patel (ADNOC Group D&CS) As and when you need any requirement, only that requirement will be fulfilled. So whenever they need anything, they'll just raise the reservation and only that much quantity based upon the reservation quantity will be procured. Yes, correct. OK. And then the other regular items fast moving items will have z1 mrp type which is reorder point planning yeah that will yeah so automatically will go no against mrp run yeah and so and then the consumption happens to reservation so so users can keep on consuming this term of reservation the stock will go below if the stock goes below the reorder point it will trigger procurement uh based upon the most replenishment parameters defined in system how frequently review the use to review this parameters?
+
+1:27:01 - Aboobacker M. (ADNOC Gas - PD) Will review was based on the user request to sometimes a yearly review will be taken place, not to change the stack setup.
+
+1:27:10 - Mohamad Fakhouri (ADNOC Group D&CS) OK.
+
+1:27:19 - Santosh Kumar Sharma (ADNOC Group D&CS) And even for the MRP items are these PRS getting automated triggered or? There is some manual interventions happening before that before the creation of PR by you guys.
+
+1:27:33 - Aboobacker M. (ADNOC Gas - PD) No, for MRP wherever we have the MRP stock setups available, solve through MRP run only. If in case if there is any abnormal consumption, if there is any margin requirement, then I will go for the manual. Manual PR.
+
+1:27:56 - Rahul Patel (ADNOC Group D&CS) Understood what is the frequency of this MRP job? Is it running daily, weekly, monthly, monthly, so monthly you run the MRP job which looks at all the
+
+1:28:08 - Aboobacker M. (ADNOC Gas - PD) Consumption throughout the month, inventories and triggers the month and yes, yes, yes.
+
+1:28:15 - Unidentified Speaker OK.
+
+1:28:18 - Arunkumar Viswanathan (ADNOC Refining - HQ) Satoshi in short now. Like Arnok Gas, Arnok Refining, Sour Gas, we all operate in the same place. The 2-1-H-1 category, Auto Replacement through Auto PR and Auto PR we used to, if there is an agreement, we used to convert to an Apollo product. If it is a PD item based on the work order reservation, we will raise either a spot PR or an agreement.
+
+1:28:48 - Rahul Patel (ADNOC Group D&CS) So there is no essentially demand in place. Probably you might use demand only for your LTPA planning.
+
+1:28:58 - Arunkumar Viswanathan (ADNOC Refining - HQ) The demand is for us, it is like a business plan. Based on the business plan, the agreement will be established in order to replenish the stocks on a timely basis.
+
+1:29:08 - Aboobacker M. (ADNOC Gas - PD) Yeah, so the demand is only driving the long-term planning for the high consumption items. So those items will review and will go for LTP agreement.
+
+1:29:21 - Rahul Patel (ADNOC Group D&CS) Yeah, so basically the demand is driving LTP agreement so that you can have a better negotiation with the vendors. But then on day to day basis, the consumption happens based upon the lead time reorder point planning. Through a mouse.
+
+1:29:36 - Aboobacker M. (ADNOC Gas - PD) Yes, yeah.
+
+1:29:42 - Arunkumar Viswanathan (ADNOC Refining - HQ) So basically what I mean from this Any new system is going to be coming with other than SAP?
+
+1:29:51 - Rahul Patel (ADNOC Group D&CS) So probably this is something we'll have to discuss through the 2B discussions is what is the opportunity because essentially what we're looking at are two types of different business processes in place. One is demand based and second is MRP reorder point based. So that's something we'll have to review that what improvements Can IBP, so we are talking about IBP as a solution for collating demand and coming up with proposals for procurement. So we will have to, we'll get back to you on what solution can help in which scenario or whether there is an opportunity to have a common solution across all the chemicals.
+
+1:30:43 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I don't know. You're aware of this project, isn't it, IBP?
+
+1:30:47 - Unidentified Speaker No.
+
+1:30:48 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) You're talking about this project? OK. No, I'm not aware of this project. Yeah, yeah. Apart from SAP, you are going to get another tool called IBP. It's also a SAP tool only. So this is called Integrated Business Plan. So now, I brought it to KPMG and GoECM implement in within network system so now the this session as is process after as this process as Rahul mentioned so they will conduct it to be then we'll see what is the approach we can you try out to utilize this tool effectively for different commodities so we understand that so most of the group company they are managing chemical differently than other MRO That's the reason this session conducted today.
+
+1:31:35 - Unidentified Speaker OK.
+
+1:31:43 - Ibrahim Binmadhi (ADNOC Gas - PD) I think you need some other guys or we can.
+
+1:31:48 - Mohamad Fakhouri (ADNOC Group D&CS) No, I know we are way past time, so thank you so much everyone. Thank you for your insights. Next steps is. So we're gathering this information and to Rahul's point, we will be conducting also design sessions after this phase. I'd like to show you what can be done in SAP IBP.
+
+1:32:24 - Mohamad Fakhouri (ADNOC Group D&CS) So thank you so much, everyone. Great day. Thank you very much.
+
+1:32:30 - Ibrahim Binmadhi (ADNOC Gas - PD) Mohammed, can you share this slide because we attend at the end of the test. Can you share the slides, please?
+
+1:32:39 - Mohamad Fakhouri (ADNOC Group D&CS) Yes, yeah, yeah.
+
+1:32:40 - Rahul Patel (ADNOC Group D&CS) Thank you very much. Just one more thing, if we can, can we get the templates, the Excel templates which were discussed in the first half from a demand planning perspective, then that would be helpful for us to look at current processes in detail.
+
+1:32:59 - Rahul Patel (ADNOC Group D&CS) Abdul, will you be able to help us get to templates? Offshore and onshore templates, what you reviewed initially for demand planning.
+
+1:33:10 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, that's what's how it is also showed.
+
+1:33:15 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Sure, we'll share that one.
+
+1:33:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) All the team members can share their template to the and today. Accordingly, we'll collect and we'll give to them.
+
+1:33:30 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah. Thank you so much. Thank you everyone. Thank you all. Thank you very much. Thanks everyone. Thank you. Thank you.
+
+1:33:55 - Unidentified Speaker you

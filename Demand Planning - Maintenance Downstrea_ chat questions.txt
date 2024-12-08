@@ -1,0 +1,115 @@
+Sheraz Kazi (ADNOC Refining - RRE) (No comprobado)
+What special IBP offers which cannot be already covered through SAP reporting ?
+
+That's something we need to discuss later about IT best practices for reporting. For sure on IBP you can have some "working dashboards" that will help you to optimize your plannings but are not final results, nor the official information unless we define so
+
+ 
+Rohith Ellareddy ADNOC Offshore- OED)
+for Inventory planning Replenish lead time to be considered while doing demand planning, Criticality of the material to be considered,  Consumption frequency to be considered, spend value to be considered
+
+this has to be considered 
+
+ 
+Gents,  the project relays on master data and transaction data for maintenance as well, for instance do we have task list material identified , if so is it reviewed and validated. also for corrective workorders  many work  currently wrong allocated for WO types (PM03)  so, its very important to GATE  the data source quality and accuracy before implementation
+ 
+ 
+Rohith Ellareddy ADNOC Offshore- OED)
+for Inventory planning Replenish lead time to be considered while doing demand planning, Criticality of the material to be considered,  Consumption frequency to be considered, spend value to be considered
+
+Lead time, Material Criticality, Consumption pattern will surely be part of the solution logics.
+
+ 
+ 
+Rohith Ellareddy ADNOC Offshore- OED) (No comprobado)
+for Inventory planning Replenish lead time to be considered while doing demand planning, Criticality of the material to be considered,  Consumption frequency to be considered, spend value to be considered
+
+These are going to be inputs we certainly use to address the criticality of spare parts - Location combinations, and assign a proper target service levels, and provide a more conservative safety stock level that should cover for most of the cases in which demand is higher than expected 
+
+ 
+yes pls
+ 
+Tamer Saad Mohamed (Al Yasat - FD&E) (No comprobado)
+Gents,  the project relays on master data and transaction data for maintenance as well, for instance do we have task list material identified , if so is it reviewed and validated. also for corrective workorders  many work  currently wrong allocated for WO types (PM03)  so, its very important to GAT…
+
+this is the focus of the data track in the implementation, to spot all these data issues
+
+ 
+Will the IBP MRO program able to forcast material for PM WO's not yet generated ? Will it be able to forecast Demand Planning for next year and order materials before PM WO's are generated ?
+ 
+Sheraz Kazi (ADNOC Refining - RRE)
+Will the IBP MRO program able to forcast material for PM WO's not yet generated ? Will it be able to forecast Demand Planning for next year and order materials before PM WO's are generated ?
+
+based on the history of consumption it should be able to forecast report, yes i belive
+
+ 
+Rohith Ellareddy ADNOC Offshore- OED)
+based on the history of consumption it should be able to forecast report, yes i belive
+
+believe or sure ?
+
+ 
+it will be flexible for any new requirements  or opportunities that  it will be interduce by the champions or it is a locked plan or limited system pack ? 
+ 
+Maitha Harahish Al Mansouri (ADNOC Gas - TE) (No comprobado)
+it will be flexible for any new requirements  or opportunities that  it will be interduce by the champions or it is a locked plan or limited system pack ?
+
+We can provide something to have future visibility of PM requirements. For sure forecast are as good as the inputs, and in the longer horizon there are many unforeseen things that can happen that will make it less accurate than for short term planning. But usually that's good enough to have a general idea on how it will be.
+
+ 
+Sheraz Kazi (ADNOC Refining - RRE)
+believe or sure ?
+
+project team to say if for sure
+ 
+Rohith Ellareddy ADNOC Offshore- OED)
+project team to say if for sure🙂
+
+Project team - please clarify / answer.
+
+ 
+Sheraz Kazi (ADNOC Refining - RRE) (No comprobado)
+Project team - please clarify / answer.
+
+Can be done. How effective will be will depende on data inputs quality
+
+ 
+IBP WILL CONSIDER MATERIAL RESERVATIONS WITHOUT WORK ORDER ALSO?
+ 
+Vivekananthan Kathiresan (ADNOC Refining - HQ)
+IBP WILL CONSIDER MATERIAL RESERVATIONS WITHOUT WORK ORDER ALSO
+
+Project team - kindly confirm.
+
+ 
+For KPMG - Manual reservation to be considered in demand planing (with limitations agreed upon)
+ 
+Vivekananthan Kathiresan (ADNOC Refining - HQ) (No comprobado)
+IBP WILL CONSIDER MATERIAL RESERVATIONS WITHOUT WORK ORDER ALSO?
+
+we should consider it to understand how much the stock is really available 
+
+ 
+Can we use past 2-3 years of closed work orders (PM & CM) spare  parts consumption  for demand analysis  to verify and validate the forecasting developed from the current maintenance plans schedule?
+ 
+Ahmed Ragab (ADNOC Offshore - ) (No comprobado)
+Can we use past 2-3 years of closed work orders spare  parts consumption  for demand analysis  to verify and validate the forecasting developed from the current maintenance plans schedule?
+
+yes, we can generate analytic charts to compare the past with the future proposal for both maintenance types
+
+ 
+thank you all need to drop for another meeting
+ 
+SAP standard already has forecast function, what is different with IBP?
+ 
+Achmad Sonhaji (Borouge) (No comprobado)
+SAP standard already has forecast function, what is different with IBP?
+
+more advance algorithms, demand pattern recognition to select the best one
+
+ 
+Thank you
+ 
+Thank you everyone.
+ 
+Thank you all very much very interesting meeting on the inventory levels.
+ 

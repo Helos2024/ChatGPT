@@ -1,0 +1,712 @@
+To-Be Workshop- Demand - MRO Maintenance planning - Session 1 
+jue, 10 de oct de 2024
+
+2:27 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Have a good night, everybody.
+
+4:49 - Unidentified Speaker Thank you very much. Thank you.
+
+4:53 - Zainab Abdulla Al Harthi (ADNOC Offshore - ERSED) you Good morning. Salam Aleikum.
+
+6:28 - Unidentified Speaker Thanks.
+
+7:22 - Zainab Abdulla Al Harthi (ADNOC Offshore - ERSED) Some of our people, they are struggling with the card access.
+
+7:31 - Achmad Sonhaji (Borouge) Okay.
+
+7:33 - Zainab Abdulla Al Harthi (ADNOC Offshore - ERSED) They might take time but they are also starting to attend virtually.
+
+7:39 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Okay, no problem.
+
+7:41 - Conference Room (MM- SKEC2 - L08) - Speaker 8 We'll start in one and two minutes. We're just checking some key people are there.
+
+7:46 - 1Ahmed GabAllah (ADNOC Logistics & Services) Inshallah.
+
+8:10 - Muhammad Farooq Ahmad (ADNOC Drilling - MD) You're in this meeting.
+
+9:36 - Conference Room (MM- SKEC2 - L08) - Speaker 5 Black induction film.
+
+9:42 - Conference Room (MM- SKEC2 - L08) - Speaker 7 You're leaving. No, we are not there needed.
+
+10:04 - Conference Room (MM- SKEC2 - L08) - Speaker 2 users will be the sightings.
+
+10:08 - Conference Room (MM- SKEC2 - L08) - Speaker 7 I can come on it.
+
+10:11 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Actually here.
+
+10:11 - Conference Room (MM- SKEC2 - L08) - Speaker 9 There's something.
+
+10:14 - Conference Room (MM- SKEC2 - L08) - Speaker 6 It works.
+
+10:18 - Unidentified Speaker A lot, for example.
+
+10:19 - Conference Room (MM- SKEC2 - L08) - Speaker 4 There are two passwords.
+
+10:31 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Finish it. It's not one.
+
+10:34 - Conference Room (MM- SKEC2 - L08) - Speaker 8 Good morning, everyone.
+
+10:36 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Welcome to, uh, second day of workshop during design for design. Um, today what we'll be discussing will go. We're going to go over the demand planning for MRO maintenance. Um, and today's agenda will be discussing is we're going to give a brief introduction of what we are doing in this phase. We're going to go also give you a walkthrough of the processes for demand planning. We're also going to spend some time talking about demand input, so master data, as well as how the system classifies demand and what we need also from you. Um, after that, we're going to go over the paper processing. So how the, um before we run the forecasting what the system, uh, will, uh, Find when when they gather the, uh, the inputs as well as the forecasting and then the introduction of new spare parts. How this will be done in SAP IBP and how the logic will be also done. Lastly, the collaboration, because at the end of the day, this is a planning tool, so there needs to be some collaboration between teams, from the maintenance planner, maintenance managers, as well as the inventory planner.
+
+12:21 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Okay, move on.
+
+12:22 - Conference Room (MM- SKEC2 - L08) - Speaker 3 All right. Objective of this session, what we're trying to achieve in these sessions today and the following weeks is we're going to give you a walkthrough of the process from start to finish of what we're discussing, and we're going to demonstrate to you the best practice and how SAP IBP can also answer your requirements. Now, some requirements might not be answered, so we're going to assess them, right? We're going to see whether this is a fit or a gap. And then also, lastly, we're going to identify what needs to be changed, right? We're implementing a new tool, so we're going to introduce new processes.
+
+13:22 - Conference Room (MM- SKEC2 - L08) - Speaker 3 All right. So where are we now? So we're now holding those design workshops. We're presenting you the leading practices. We're also gathered gaps. We've gathered some. We've gathered requirements from the as this as this assessments. But now we're showing you We're going into the tool for each of these modules. It's going to be an interactive session. We're going to show you the leading practice, but this is not the final design, I would say, session. We're going to tailor it after we conduct these workshops. We're going to tailor the design. Those sessions and your requirements.
+
+14:12 - Conference Room (MM- SKEC2 - L08) - Speaker 3 So what are we covering?
+
+14:14 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Just to be clarified, this is the actual design workshop because last session we were informed that these questions will be answered in the next design workshop. So these are the actual design workshops, right?
+
+14:26 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Yes. Yeah. These are the design workshops. This is the first iteration of design workshops. We're showing you the leading practice. And it's going to be a collaborative session. We're going to go over each of these steps that we talked about. It's going to be, and then if there are some new requirements, we're going to show you the leading practice. If it doesn't work for AdNoc, we'll need to tailor it based on these requirements.
+
+14:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, and this session we request to be interactive. It means if you have any question on any slide, please question at that point of time so that we can discuss between the teams on what the requirement is, what the question is, and answer there itself so that we want to make sure these sessions are as interactive as possible.
+
+15:14 - Sheraz Kazi (ADNOC Refining - RRE) Surez, does that answer your question?
+
+15:16 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, yes, good. Thank you. Please continue.
+
+15:19 - Unidentified Speaker Perfect.
+
+15:21 - Conference Room (MM- SKEC2 - L08) - Speaker 3 All right, so what are we doing today? So today we're going to go over the corrective maintenance demand plan, as well as the preventative maintenance demand plan. And lastly, we're also showing you the new spare parts introduction, so how we can forecast new spare parts where we don't have any consumption, but you need to do the planning for it.
+
+15:55 - Conference Room (MM- SKEC2 - L08) - Speaker 5 Hi, everyone. Bastian here. So as Mohamed was just presenting, this is going to be a more detailed session in comparison to what we did in the demo on Tuesday. So what we're going to cover is the demo part, right? So just Remembering what we said in the PLC session, the objective, the main objective, the only main objective of the demand planning process is to generate a forecast for the next three to five years depending on the part on a monthly level. Also, this forecast will be done for all the materials in different locations, but it can be also created for resources when needed. Future part consumption and future resource consumption. We could also add maybe a third thing, which is the valorization. It's how much it's going to cost the plant at this level, but it's something that, of course, needs to be assessed. Okay. So again, remembering this slide about what are we discussing today is the demand planning process, which like on a very high level starts with the historical consumption for corrective maintenance in terms of power and in terms of consumption, sorry, in terms of power, in terms of Then we run the different statistical models to get a forecast that can be adjusted based on requirements. Whereas for preventive, we will going to integrate the preventive activities plan. We're going to see what is the consumption link to to this plant, and with that, maybe we will be able to maybe tweak it a little bit, do some adjustment. We will see how that works.
+
+18:25 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Okay? So, how do you interpret this 20 meters demand plan? What does it actually mean?
+
+18:34 - Conference Room (MM- SKEC2 - L08) - Speaker 5 Preventive?
+
+18:35 - Unidentified Speaker Yeah.
+
+18:36 - Conference Room (MM- SKEC2 - L08) - Speaker 5 So, as an initial step, we want to integrate your your plan, what you have in this for HANA?
+
+18:42 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, because normally in the offshore, I don't know about the onshore, but in the offshore, we don't reserve the material in the preemptive maintenance plan. So how you'll get, you don't have the data.
+
+18:53 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Yeah, so we will talk about this. We can show you what the leading practices and we know that ADNOC is not adding the activities or the battery components and the maintenance plan. Where it's more complex than the leading practice. It's typically the leading practice you need to add the activities and you need to add the components of those activities linked to that maintenance plan. This is not happening at AdNoc. Now, there are different solutions. We'll talk about them when we get to the preventive maintenance.
+
+19:30 - Conference Room (MM- SKEC2 - L08) - Speaker 5 A question from my side. I understand for the plant plan, you don't have materials linked to this. What about the work orders? The work order will be generated on the basis of the maintenance plan. And you have work orders for how long?
+
+19:39 - Unidentified Speaker I didn't get it.
+
+19:40 - Conference Room (MM- SKEC2 - L08) - Speaker 1 How long is it?
+
+19:40 - Conference Room (MM- SKEC2 - L08) - Speaker 2 It depends upon the work order duration. It depends upon the work order duration.
+
+20:01 - Conference Room (MM- SKEC2 - L08) - Speaker 6 It depends upon the work planned over expected it is expected calculating the material link to that and how long it is simply according to the time when it's fixed.
+
+20:11 - Conference Room (MM- SKEC2 - L08) - Speaker 2 As for the frequency there is a call origin is there different call origin some of us will be called 30 days before some are six months before because if it is five years overall call origin will be different if it is monthly the call origin will be different weekly it will be having the different call origin.
+
+20:28 - Conference Room (MM- SKEC2 - L08) - Speaker 5 I didn't catch it.
+
+20:30 - Conference Room (MM- SKEC2 - L08) - Speaker 2 There are different frequencies out there. So as per the frequency, the call horizon has been defined. For example, it is six years or five years of major overhaul. It will be generated in the system one year before or six months before. If it is weekly PMs, then it will be generated every three days in advance so that you will get in the system. If it is monthly PM, then it will be maybe by 15 days and all. So there are different call horizons set as per the frequency of the main system.
+
+20:59 - Conference Room (MM- SKEC2 - L08) - Speaker 9 Is the frequency service respected? So if you are having a maintenance every six months, you are always doing it that way?
+
+21:05 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Normally, except the integrative work orders, all are having the fixed frequencies. Integrative work orders are driven by the inspections. As far as the inspection condition, the frequency might change. But it will not be drastically changed. Instead of five years, it can become four years. Instead of five years, it can be seven years. Increase or decrease depends upon the inspection condition.
+
+21:27 - Conference Room (MM- SKEC2 - L08) - Speaker 9 something that is on the master data on CP, something that we can know that relate to this work order is related this frequency in particular? Yeah. Okay. So maybe study some information that we can use to extrapolate that behavior in the future if we need it.
+
+21:45 - Conference Room (MM- SKEC2 - L08) - Speaker 2 With that one, you can able to know when it is due. But what is our problem? In order to have the maintenance plan, this one, PM plan demand, you wanted to have what are material consumed against them, which is supposed to be the task list, which is not the normal practice in the offshore. Maybe it is practice in the onshore, I'm not aware of
+
+22:04 - Conference Room (MM- SKEC2 - L08) - Speaker 1 In general, we have received this feedback while we were working on data extraction as well for setup and IPP that you don't have any component anywhere. All the agencies are not following this practice. Probably there are few maintenance plan only where there is a task list assigned and then the task list has the material allocated to it, but in most of the cases it is not there. What we have understood as of now, So as we proceed through this presentation, we have a specific section for data. And probably that will be the first section we would like to address so that we make sure that we understand this is an important thing, how we get this data. And it is important for us to get this data so that we can forecast because for sure you'd like to understand how the forecast is there for three to five years or more period so that you can do the long-term agreement planning as well as one of the things we've discussed before. So it's important we understand in the gap and let's work together on how we can find a potential solution or potential risk and mitigate it as we proceed in this discussion.
+
+23:20 - Conference Room (MM- SKEC2 - L08) - Speaker 1 referenced by the level, okay. Only the major overall or major shutdown, those items will be part of the demand forecast, okay, which will be okay based on the demand.
+
+23:40 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Got it. So let's discuss that as we have a specific sections only to talk about data and how, what data IBP requires and how we can get that data, whether the data is in the same way as the ISPP expects in today's practice, and then if there are gaps around it, we will work around those gaps and see how we can mitigate those risks to make sure we are able to get the data we need.
+
+24:03 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So the reason we invited Santani is for the reliability.
+
+24:06 - Unidentified Speaker Yeah. So any changes?
+
+24:09 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Sorry, I just came because we got some issues with the entry. Yeah. It doesn't work and If I don't want to intervene, let's continue.
+
+24:20 - Conference Room (MM- SKEC2 - L08) - Speaker 3 All right, so let's go over the demand planning process for corrective. So first initial step is the system is going to gather your historical corrective maintenance usage regarding parts. This is going to to be on a weekly basis. Inventory planner will then review the demand pattern classification. What happens is that the system will categorize those usage based on if it's intermittent. The planner will then, on a quarterly basis, will look at that, review them. The second step is that the system will then segment those demand based on predefined criterias. Now, we looked at your inventory policies. You have multiple material classifications. We're going to go over also your classifications and what we think is best for demand planning, because you have classifications for critical You have classifications for the frequency you have classifications for the price as well So what this system will do is that will classify them based on what we want What are the pre-configured criteria? I then will add those This is going to be on a quarterly basis because it's not gonna change frequently Once this is done the inventory now planner will review and talked about the pre-processing steps. This is basically just stating that the system has found some outliers, let's say a spike in the consumption. Well, the maintenance planner will review that. Either the system, and we'll talk about that, either the system can correct it, or it can be just analyzed by the maintenance planner and will say they will manually change it. The system can propose a change, but this is a decision that we need to make, whether it's going to be system-driven or it needs to be an intervention.
+
+26:49 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Once this is done, this maintenance will have to run. It is a manual task, and the system will have to run the statistical forecast. And this is going to be on a monthly basis. I will skip the new spare parts introduction, because we have a section for the new spare parts introduction. So once we run the statistical forecast, this maintenance planner would analyze it. If there needs to be some adjustments, they will make these adjustments in the system.
+
+27:31 - Conference Room (MM- SKEC2 - L08) - Speaker 3 On Tuesday, we talked about there needs to be a log that if we manually change this forecast, we need to have a log. We can have this log, we can activate it and see the history who has changed this forecast. Once this is done, we agreed upon the forecast. The system will then consolidate the corrective maintenance plan as well as the preventative maintenance plan. There needs to be then a meeting of an agreement between the demand. This is your demand for the month. Are we all aligned? Typically, we have the maintenance planners, we have the maintenance managers, as well as the inventory. This meeting.
+
+28:26 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Regarding the rules, that's something right now since the rules are this is something as per the best practice SAP recommends but then actually working based upon how you are distributed your work in between the different teams.
+
+28:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 We can have a discussion whether it makes sense for AdNoc to follow the same rules or considering that you will be having a centralized inventive team which will oversee the entire planning of the MROs. How this needs to be changed can be discussed and that feedback would be required from your side so that we can adjust this process to make it specific to the rules you have in AdNoc. The planner may not be the right person to do that. I understand this is something very standard from an SAP's perspective, but this may not be applicable as is to AdNoc. So one of the things we need to also get a feedback from you is that how we are going to design this centralized team. And then based upon that design, how you want us to distribute these roles so that it makes more sense from AdNoc perspective for efficient operations of the activities we are mentioning here.
+
+29:51 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Yeah, maybe we can spend some time right now. Yeah. Because goals are very important, right, to define who's doing what. To Raoul's point, we know that you are in the process of implementing a centralized inventory. Is the inventory plan responsible, will be responsible for an AGC? How is this centralization being done?
+
+30:19 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Will there be one planner for each AGC, or then how the distribution happens of the work between the planner and the relationship with AGCs? Is there any formalization happened, or do you want to have that discussion here, or we can have the discussion separately as well between a limited group of people so that that distribution can be part of the processes for design. We can have separate discussion on this. Okay. That's completely fine.
+
+30:57 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Yeah, that's okay. We'll have a separate discussion about that because the centralization here, as you mentioned, we'll have something different now. The inventory will be centralized similar to what will happen now. We have material cataloging. They are centralized. And they are receiving a lot of demands or requests from the end user. Separate companies, they are sending them through one, it's a pipeline. They are receiving one pipeline, the section holder or whatever, the team leader, they receive all the requests and distribute among the team here, now centralized. And they can, each one, they can handle some of them. We need the practice here to be similar to that one. Because you know, as he mentioned that, the reservation or the plan, it should be come from maintenance to the end-user on that side. He knows better than us about his requirement. Which is this. Okay, that's good. Well, I think let us continue.
+
+31:51 - Conference Room (MM- SKEC2 - L08) - Speaker 8 This is one question regarding the inventory share service. So once the requirement comes from the end-user, do you have a focal point for the inventory in the group company?
+
+32:00 - Conference Room (MM- SKEC2 - L08) - Speaker 4 We need a focal point, yes, of course, definitely.
+
+32:03 - Conference Room (MM- SKEC2 - L08) - Speaker 8 Focal point in the end-user side or in the inventory control?
+
+32:07 - Conference Room (MM- SKEC2 - L08) - Speaker 4 This will need to be decided. Already raised by the management to have a focal point from the end-user side. From the end-user side? Yes, end-user side. Already under discussion this one.
+
+32:17 - Conference Room (MM- SKEC2 - L08) - Speaker 8 But anyways, after end-user, it will come directly to the inventory? Yes.
+
+32:23 - Conference Room (MM- SKEC2 - L08) - Speaker 4 And there will be no inventory department in the company? No, I think no inventory department.
+
+32:36 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Of course. Abdulla here. Abdulla? Abdulla, are you here?
+
+32:41 - Unidentified Speaker Yeah. Yeah, I am here.
+
+32:43 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Throw some light here.
+
+32:45 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, OK. Now see, normally from the focal point, so we used to get this information on an annual basis as like a plan. So there are two parts. Is for the purchasing plan like fire plan we are obtaining this within the fire plan and every year it is reoccurring process actually.
+
+33:22 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah you are audible so regarding the forecasting what you are saying site can give you the forecasting for the regular materials for example the chemicals and the consumables they cannot give you the forecasting for the sea Kind of material because they don't know which pump will be failed tomorrow or which compressor will be failed or which turbine will be failed So you will not get those kind of forecasting Yeah, that's what I see whatever yeah, what are the
+
+33:47 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) forecasting part it's for this yeah actually The critical items for example vital and essential so we put like the marking The min max level then it will go for example So, any HADOC requirement, like any planned material, it has to come through the planning part of it. However, sometimes it's not happening through the plan, either through MR is coming. So, we need some improvement process here to obtain the planning part from site. So, this will benefit for us, for example, to gather this planning information.
+
+34:29 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Abdulla, we should be very clear what this requirement from the site because, you know, in most of the knockoff shows, the lean organization is going on. So they will have only one planner who will be dedicated for the front end maintenance activities. So we should be clear what you are expecting from him. Otherwise, the system will not work.
+
+34:48 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Can I just ask a question? When you say the planner, does this planner sit in maintenance or anything?
+
+34:56 - Conference Room (MM- SKEC2 - L08) - Speaker 2 as planned. Because normally the practice, what is the practice? When the work order will be raised, we will talk about the CM work orders. The maintenance supervisor, he reserves the material. But instead of reserving the CM work order, he reserves the general work order to forecast. Because at present we are having the MRP issues and all, min, max level and all. If all these issues will be fixed, then no need to reserve the general work order. You can run the demand and accordingly you will get what is the requirement.
+
+35:23 - Conference Room (MM- SKEC2 - L08) - Speaker 1 What do you mean by general work order?
+
+35:25 - Conference Room (MM- SKEC2 - L08) - Speaker 2 It's not the CM work order, it's the general work order.
+
+35:29 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So it's a maintenance work order only? It's a maintenance work order.
+
+35:34 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So you will not have the history, this material, where it is used. For example, your compressor units are material, you are not reserving the material in the compressor work order. Because if you wait for the failure of the equipment and you reserve it, the material will come after two years. I cannot keep this equipment out of the So, I have to forecast myself to bring now this critical materials and keep it with us.
+
+35:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So, you are not depending on maintenance plans to forecast, you are manually forecasting through creating a manual work order upfront two years probably in advance considering that there is something and then that manual work order generates the reservation which is then converted to purchase requisition for procurement of the money.
+
+36:12 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Yeah, you are right. If you allow me, I think there is a point here we can solve this issue by the how frequency we can review the plan. There is a five years plan and there is every two years and here I can see there is a beginning stage that the plan will be reviewed by every quarter. So we can solve your issue if you if you provide to me a quarter list updated plan. Yes, what you are saying is difficult for the maintenance sometimes. But if we are looking for this practice, we need to have the forecast. We need this forecast to be provided by the end user. So by this way, we will ensure that there will not be build up, your spare will be available. So let's work to ensure that the forecast will be provided by end-user and it will be reviewed by inventory.
+
+37:19 - Conference Room (MM- SKEC2 - L08) - Speaker 5 Can you explain the process that they just described one more time so we can have the whole consultation page?
+
+37:25 - Unidentified Speaker Yeah.
+
+37:27 - Conference Room (MM- SKEC2 - L08) - Speaker 1 What they're talking about is, since the maintenance plan does not have the material allocation, which means you cannot forecast based upon the maintenance plan. Today, what people are doing, they're using their experience and knowledge. And they understand which machine will fail when based upon the experience, and they manually create a work order. The work order type is not preventive maintenance, the work order type is general maintenance. They create work order based upon their experience that considering that I have done the maintenance today, which means based upon my experience, this part may fail again in one year. They understand what is the lead time, which means they will somewhere between one year to six months period and they'll create a work order that manual work order will trigger a reservation. If there is inventory available, the inventory will fulfill reservation. If the inventory is not available, that reservation will trigger procurement, which means that when they anticipate, if I've done the inspection maintenance today and I expect the next maintenance to be in one year, which means that I'm initiating this process manually to make sure that before one year I have the inventory of the component available so that if it fails, or if I have to do the plan maintenance again, then I have the inventory available in stock. So that is the entire process is manual and it does not. While there's a maintenance plan, they do not rely on maintenance plan to do the upfront planning and forecasting and that the process becomes manual. Also, the work order type is general, which means that history which is getting created is not under the preventive maintenance category.
+
+39:06 - Conference Room (MM- SKEC2 - L08) - Speaker 1 which means that when we discuss about the data, we'll have to understand that what all order types of history we need to consider for us to have a clear understanding of what is your correct history. Because if we don't use general maintenance as an input for our history, the first steps is that for a corrective maintenance, we need to gather history, and that will come automatically from system. When we are setting up the system, if we don't set this up correctly, based upon what you are doing today, then it will lead to incorrect forecasts and may have much bigger issues in the future. So we don't want to end up there. So that's what I understand based upon this discussion.
+
+39:43 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Our understanding is correct. So that's why with the first point, when you say the history of CM work order, it cannot be taken from the work orders or it cannot be taken from the SAP system. Maybe in our practice, in our NAICS practice, you should go to the inventory, guys, based on the consumption. Material or spare part consumed the last three year, four year or what is the quantity you can make the consumption history, take it from there or manually fed whatever it is over a period till we make sure every the minimum maximum quantity is always maintained and the procurement is flowing in the right order. When you reach that level, then we can discontinue this or we can keep this on a manual correction to that where the information will be fed accordingly. So if you done in the first step, otherwise the whole system will be. Yes.
+
+40:25 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So if you see the first box when we need to interface. The interface is flexible enough if we understand where the data lies, we can pull that specific data. That's the first thing. So when we set up that interface, we'll have to make sure that we have this clear discussion about where exactly the data lies so that we can set up the interface correctly. That's the first thing. Now, based upon the interface, if you look at the step number four, which is kind of a pre-processing, where you further have an ability to look at whether this whatever data we are testing, whether it is representing your outcome correctly. So initial few cycles, we'll have to make sure that we review this very thoroughly so that all the corrections and outliers can be corrected one time in IVP so that next time the cycle runs, the corrections are already in place so that the forecast is in a better way. Again, when we run the statistical forecast, there is another step to make sure that the forecast outcome is in line with our historical consumption.
+
+41:26 - Conference Room (MM- SKEC2 - L08) - Speaker 7 One point to highlight, most of the items which is procured for CM and PMO turnaround is on-demand items. So the inventory type of this item is on-demand. There is no safety level. I mean, there's no min-max. There is no reorder point. All zero, zero, zero. So we procure based on work order quantity, how much they I'll create procurement action based on this quantity. So even if you check, maybe you can check the history of consumption.
+
+41:57 - Conference Room (MM- SKEC2 - L08) - Speaker 1 But we can check the history of consumption.
+
+41:59 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Because the system doesn't have levels.
+
+42:02 - Conference Room (MM- SKEC2 - L08) - Speaker 6 There are two broad categories. One is like you say, highlighting, when it's a planned work order, turnaround, shutdown, and this kind of activity. Yes, there is a formal request, identification of material, whether receiving or not. Every team works together, and there's a work order generated, and material list also generated, what is required. Now, again, whether it's all materials supplied are not different, but they will have to shut down, cannot wait for a long time. So they manage here and there. And the current part, they're managing it. Second part is routine, like PM, PM. That's what he is violating. We are not capturing the right part, but now we are insisting to capture, make sure every work order is linked with MR and like that. But whether material is made available on time or not, job cannot wait and production cannot wait. Currently it is a mix up is going up and that's why you're saying the first list has to be manually generated from the inventory consumption list reviewed by respective sites whether they are covered or requirement is covered or this then then it can be uploaded as a first is to start up with yeah so some equipment will be much used in one side and other side may be not using other so yeah the list you populate for a
+
+43:09 - Conference Room (MM- SKEC2 - L08) - Speaker 1 particular site has to be reviewed by the respective maintenance team then you update that will be fine yeah so so for corrective maintenance we will be looking at consumption history only because we need to understand when the metal was exactly used and not when it was planned. Because the point of usage is when the metal got used on a specific equipment or machine. And then from that point of perspective, we need to forecast that when it should be used again based upon the usage history. So for sure, we will be looking at the consumption data to understand when the exact consumption has happened for the specific material, irrespective of whether we have MRP type, min-max defined or not. Based upon the consumption history, when we say that the third box of review segmentation, based upon the history, IBP will propose what should be the segmentation now, considering how it is getting consumed from So the corrective maintenance path, which depends upon the historical consumption, does not need an input on what is the min-max level or what are the planning parameters. Now, that can become an input if you have already set up in your S4 on a system but then we can also use IBP to define those based upon the historical consumption we have so that we can optimize it in a way which is more efficient for right now.
+
+44:28 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Does that make sense? This is something yeah we agreed on the other day we have to go to the system we cannot continue to do that that's for clear.
+
+44:36 - Conference Room (MM- SKEC2 - L08) - Speaker 5 And in parallel then regarding the the creation of this general order right you mentioned two factors I just want to confirm you mentioned that this order it is created based on lead time of the material yeah and like likelihood
+
+44:55 - Conference Room (MM- SKEC2 - L08) - Speaker 2 of failing like when you think it's going to fail see normally the people they are maintaining the this in critical spheres to run their machines those lists we are having as soon as they consume they will order the new one because some material it might take six months, some material are taking three years also. So we cannot wait for each individual material. As soon as we finish, we want the other spare to be with us because it's a critical space.
+
+45:18 - Conference Room (MM- SKEC2 - L08) - Speaker 5 On average, what is the period, the horizon period that you create these orders? If you look like the average, I don't know if there's an average material, but in general, for how long you have these general orders, general maintenance orders?
+
+45:35 - Conference Room (MM- SKEC2 - L08) - Speaker 6 looking at. I don't understand your point.
+
+45:37 - Conference Room (MM- SKEC2 - L08) - Speaker 8 How advance in time? See, it depends upon material.
+
+45:41 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Some material will come in 3 months, something will come in 6 months.
+
+45:45 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Is it based on the lead time? Not only the lead time.
+
+45:48 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Lead time is one aspect.
+
+45:49 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Maybe I have redundancy in the equipment itself. Maybe I have no redundancy. When there is no redundancy, we give more There are many things, so one of the aspects.
+
+46:06 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Just for example, the maintenance planner will not have visibility. He will be focusing on his maintenance work, right? So that he will not have visibility of whether it is an imported or locally available or what are the market conditions.
+
+46:17 - Conference Room (MM- SKEC2 - L08) - Speaker 4 They want the material.
+
+46:18 - Conference Room (MM- SKEC2 - L08) - Speaker 1 They will simply say that my stuff is finished. I need this.
+
+46:21 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Now you decide how you want to do it.
+
+46:25 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So from a maintenance planner's perspective, the moment a critical component is consumed, immediately next I need to fulfill this. This is critical. And if any point of time, if the stock is not available and the machine fails again, then it will create problem for the shop.
+
+46:42 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Let me throw a little bit, I don't know, out of context or something. One aspect is, like I said, making the list from the consumption. That has to be done, first one. Another aspect is, I don't know other, of course, at least Adnai Corporation, now they have the bill of material linking. Earlier it was the percentage is very low. Now I think substantially they are So they're improving. I think when another quarter, or maybe, I don't know, the one or two, maximum two Q or something, they will reach a good number. More than 80%, 90% will reach the bill of material. So whichever PM and CM are, forget about CM, you can go with the percentage. But the PM, you know exactly how much PMs are going to come. So then we know the bill of material associated with this PM, then we can be a populate. We can have a comparison of judgment between this and your historical data and make a judgment.
+
+47:30 - Unidentified Speaker That will be more accurate.
+
+47:33 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Close to it.
+
+47:33 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, so that's also part of it. We have a maintenance plan. We have equipment or function location assigned to maintenance plan. And if we have a bill of material function location or equipment, then for sure that is one input for us to look at that based upon the frequency of the maintenance plan and the bill of material of the equipment or function location, we can use those components to forecast.
+
+47:55 - Conference Room (MM- SKEC2 - L08) - Speaker 6 But then in that, we cannot forecast the CEM, but CEM must take from the history. It will always be history.
+
+48:00 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So that's why we if you're looking at this is CM. This is only corrective maintenance. So corrective maintenance will always look at history. When we go to the PM part we will have a discussion where we understand you have equipment bombs and you have maintenance plans. So from that relation we can pull up materials which are required and forecast those based upon the cycle defined in the plans. So that we can make that we can create this demand for the period you have in the plan. The plan may be for five years, 10 whatever duration you decide this defined in the maintenance plan. We can refer to that information to create that requirement that demand in the system.
+
+48:43 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Yeah, there is one thing for 10 rounds. Let's say I'm talking about finally we're like more organized like we plan two years ahead. Yeah, so we receive the work order two years ahead. So that before they start their activities, this material has to be available. And every turnaround is different than the other. Yes. Because different units. So it's difficult to forecast. And every turnaround for the same unit is different. Yes. It's not like each four years is not the same. Yeah. Not the same material, not the same quantity, not the same activity. Yeah. So it might be a challenge. It's not So probably we'll have to come up with a strategy.
+
+49:26 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So you have different types of funds. So we have talked about CM, which looks at history, talked about PM, which looks at maintenance. Now, for turnaround or shutdown maintenance, generally, the best practice is to use project system, because it's a project in itself to execute. And then every project will have a different requirement in terms of labor, in terms of what Now, what we understand is Agnog is not using SAP PS, which means they are using the maintenance of work order as a project element. And for every turnaround maintenance or shutdown maintenance, you are defining a work order. And then that work order has all the required information on resources and the materials to be used for the turnaround. Now, since it's a turnaround maintenance with high lead time, you have this work order upfront in system, two years in advance, so that the better planning can happen for all those metrics, which means that when we are segmenting the demand between PM, CM, and then the turnaround, then we'll have to segment this work order types, and the specific work order types pushes demand to the specific maintenance activity, and then we pull it all together to give a common demand. That's what should be the strategy. Commend using the project system. So that's the best practice.
+
+50:53 - Vignesh Perumal (ADNOC Group D&CS) Hello, can you hear me? Yeah, yeah, see call it the what we we had this discussion last week with the maintenance team. Currently they are having an issue. They don't use plan. First of all, they don't use plant systems OK for for the turnaround or shutdowns. They don't use it, but we have noticed in SAP HANA with the new release, even when they are using a work order, they are able to use in the components tab, they have one field called a special stock indicator. So when they use that special stock as two, basically it means a project stock. It works as if you know how ES will generate a requirement. You don't need to really because they don't want to lose all the functionalities of the maintenance module. So they can create still a work order. This is not formalized yet, but probably this may be we are discussing with the business. They can use this in the components wherever they are having a turnaround or shutdown related work orders. They will have to use two as the special stock indicator so that all the materials when the reservation gets created will be reserved under the WBS as a product. And even when MRP will run, this will end up creating a planned order or a requisition with the account assignment queue. That is a, you know, it's a special stock indicator. This is I'm just telling you this just for informatory purpose. Will not implement PS, but in the work order there is a provision to do this.
+
+52:30 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So probably and then I think we have a comment in the chat that they are using TS for their turnaround.
+
+52:40 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So actually in our case also we are using but it's very very few work orders this is PM05 I believe so we are using it but not all because there are some reasons for that for example the integrity work orders when the integrity they raise the work orders it is coming to the planner or the planning engineers he will decide whether this job will go to the turnaround or it will be done by the frontline maintenance this categorization he is the person So if it has to go to turnaround, he has to just ask for the same work order. Otherwise, he has to cancel, and then he has to ask Integrity to raise the other work order. And then they will say that why we had to do the duplicate of the job. So that is one of the reasons.
+
+53:19 - Conference Room (MM- SKEC2 - L08) - Speaker 3 So we can take that as a filter.
+
+53:21 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So special stock, so one is an order type. And then from an order type, you get the components. And the components have special stock indicator, which allows them to be reserved for that specific order which means that you can issue that matter only that for that order. No one else can consume that much. Yeah.
+
+53:40 - Conference Room (MM- SKEC2 - L08) - Speaker 5 I don't know if we talk about this now or later, but we have addressed mainly the component requirements. We haven't talked about resources. Do you plan resources? What is the approach that you take?
+
+53:55 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So normally they are the shutdown When they are doing the assessment of those jobs accordingly, they will decide that how many resources they required for the offshore. Normally they are in the maintenance parties and along with that one additional manpower will come. But what additional manpower has to do with your demand?
+
+54:14 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So essentially the IBP has two planning components. We can do the planning of material and we can also do the planning of resources. So we also want to understand. In all as the sessions we've never heard about any planning of resources. Want to consider resources as one of the requirements in terms of planning or we focus only on the materials?
+
+54:35 - Conference Room (MM- SKEC2 - L08) - Speaker 2 I think that you can plan for the resources because it depends on the scope of the work.
+
+54:39 - Conference Room (MM- SKEC2 - L08) - Speaker 7 I think it's a question the users. This is another big channel.
+
+54:43 - Conference Room (MM- SKEC2 - L08) - Speaker 4 We should focus on the materials. But we just want to make sure that.
+
+54:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 It's the requirement that resources will not be used for planning and will focus the planning as material planning.
+
+55:05 - Conference Room (MM- SKEC2 - L08) - Speaker 8 That has the capability to plan the resources. So this is why you.
+
+55:08 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes.
+
+55:09 - Unidentified Speaker OK.
+
+55:10 - Conference Room (MM- SKEC2 - L08) - Speaker 6 But what about the CL?
+
+55:14 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Resources will be planned only for the turnaround.
+
+55:18 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Because you are having regular manpower there.
+
+55:21 - Conference Room (MM- SKEC2 - L08) - Speaker 6 But let them plan it. You verify your plan. What's the issue? System facilitates your part of the planning, you verify it.
+
+55:26 - Conference Room (MM- SKEC2 - L08) - Speaker 7 But some companies, they have their own departments.
+
+55:30 - Conference Room (MM- SKEC2 - L08) - Speaker 2 What is the basis of their plan? Their plan will be the basis of the history. But every time, our shutdown durations and manpower are changed because of this.
+
+55:38 - Conference Room (MM- SKEC2 - L08) - Speaker 6 No, I don't think shutdown they are taking from the history.
+
+55:41 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Are you? Then how they will plan for the resources without knowing the scope?
+
+55:44 - Conference Room (MM- SKEC2 - L08) - Speaker 1 No, no. We are not referring to history.
+
+55:46 - Conference Room (MM- SKEC2 - L08) - Speaker 2 We are referring to history only for CN. Okay. What about resources you are saying for the shutdown?
+
+55:51 - Conference Room (MM- SKEC2 - L08) - Speaker 1 It again goes back to using the project system model where in the project system you can forecast the material and the resources required for execution of that project along with the budgeting aspect of it.
+
+56:07 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So in that case if I am putting the resources then what you guys are doing it?
+
+56:12 - Conference Room (MM- SKEC2 - L08) - Speaker 1 I am giving to you my resources.
+
+56:20 - Conference Room (MM- SKEC2 - L08) - Speaker 9 You have something that you already know, right? So you have maintenance plan and maintenance activities and you know how much or how many resources you are going to use. Yeah, same for general. What about the corrective part?
+
+56:31 - Conference Room (MM- SKEC2 - L08) - Speaker 2 I'm having my own existing manpower. I'm doing with that one as for the criticality.
+
+56:37 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Discussion is here with shut down. You are saying we are going to estimate or giving the resource level. We are trying to understand how that manpower resource is calculated by the system.
+
+56:48 - Conference Room (MM- SKEC2 - L08) - Speaker 5 I understand that shutdown is a little bit more complex. Let's start with the basic, with CM, for example. I'm having my own dedicated manpower there.
+
+56:55 - Conference Room (MM- SKEC2 - L08) - Speaker 2 I'm not bringing the manpower as for each job activities.
+
+56:58 - Conference Room (MM- SKEC2 - L08) - Speaker 6 So each region we have our own plan.
+
+56:59 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, so that manpower is a fixed manpower which becomes your current capacity. Yeah. Right? That's the resource we have. Now, if we consider all the different maintenance requirements, including the, what we call the turnaround maintenance, and you know what is you required, then essentially what IBP will allow you to do from a supply planning perspective to understand what are the constraints in terms of availability of resources. So if you have 10 people, fixed resources available, and then that 10 people are available say for next one year. And then if you consider all the different plannings what you have in that 10, one year horizon, then, and if that, if all those plans have resources assigned then you can look at that I have 10 resources, whether this 10 resources will be, how much this 10 resources will be able to cover to the total requirement, what additional resources I will need to add at an entirety level to make sure that if I add those resources, then my total resource requirement, along with the total material requirements completed, and I will be able to execute all the activities which I'm planning, including the turnaround.
+
+58:07 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Normally turnaround, you're handling the duration, fixed duration and all. Accordingly, they had to arrange the resources, whatever is required. Instead of one bar, they had to bring two maintenance barges. And in the offshore, you have to understand we are having the limited beds. It's not like onshore that you can bring thousands of people, bring the container, and do the shutdowns. There is limited bed space out there, existing manpower. We can have some additional manpower, 20, 30 people, than the existing code. And then for other resource requirement, they had to bring the maintenance barges.
+
+58:37 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Let's throw one more, just to reverse. Anybody from core team here? You're from court team?
+
+58:43 - Unidentified Speaker Digital team.
+
+58:45 - Conference Room (MM- SKEC2 - L08) - Speaker 10 OK.
+
+58:45 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Because existing, there is no at least Adnaga offshore. The contract manpower is not accounted in the SAP. But we have contract manpower. OK. Now, even that, whatever he says will be the direct hire only will be appearing in the SAP. How the SAP is going to justify what the manpower occurred, even I have the plan. We cannot justify. Very common. Unless you have a plan to touch with my contracting hours bringing it to the system.
+
+59:10 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Essentially like usually in refining also it is you know external manpower which is mostly used by it for turnarounds through you know service contracts to the vendors.
+
+59:21 - Vignesh Perumal (ADNOC Group D&CS) If you are going to use external manpower which is you may have already agreed contracts right so in the work order you will put an activity and you can actually choose the service contract when you're creating the work order so that this will create a PR and then a call of order. Yes, it is working, yes.
+
+59:50 - Conference Room (MM- SKEC2 - L08) - Speaker 6 No, Vignesh, I don't know where in which you are from, Adana Core or from this. Contract manpower is not fully automated in the system. Your point is right. Yes, the facility is supposed, but it's not implemented.
+
+1:00:03 - Vignesh Perumal (ADNOC Group D&CS) Contract manpower means we are having a service line.
+
+1:00:09 - Vignesh Perumal (ADNOC Group D&CS) service line costing Vignesh I know it can be you know transferred to the work order but the manpower estimate no I don't think so. Manpower means see the you are talking about the resources because see none of the contracts are actually created like that if you see all the contracts. Many are lump sum contracts. So see the thing is if the contracts are not created like that then there is not much anyway We will not go into that discussion now.
+
+1:00:36 - Seba Bakr (ADNOC Refining - HQ) We've seen at a certain point that we have this option, but we noticed that it's not something that we can utilize properly, even if you break the lines and so on. It needs to be very drilled down to be able to use it eventually.
+
+1:00:48 - Unidentified Speaker Yeah.
+
+1:00:48 - Vignesh Perumal (ADNOC Group D&CS) See, if you want, feature is there. If the business wants to use it, I don't want to go into that discussion now. Feature is there if they want to use it. Then the data needs to be provided in such a way that it can be used or consumed by the EM module.
+
+1:01:02 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Exactly, yeah.
+
+1:01:05 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Today, as we mentioned, contractor manpower is not linked to the HR system. Since it's not linked to the HR or mini-HR, whatever they call it, it's not coming to the resource part. In this case, how you are going to do the resource calculation? Talk to your back team and do it back or talk to the core team and tell us what's the plan. Maybe they can put a model also work in place if it does well and good.
+
+1:01:35 - Conference Room (MM- SKEC2 - L08) - Speaker 8 There are prerequisites and I think we should not waste much time.
+
+1:01:42 - Conference Room (MM- SKEC2 - L08) - Speaker 1 We are not ready at this point of time to utilize the feature of resource management from IBP. So let us agree.
+
+1:01:53 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Ultimately you guys are talking to the core team, correct?
+
+1:01:59 - Conference Room (MM- SKEC2 - L08) - Speaker 6 managing the SAP entity or whatever the SAP issues anything yeah we are the we are promoting myself Ignatius this is what happening with many features but we are not using half of them what do you want from these guys please make this this my prerequisite this is done for a full functionality then you take up where we are our reality then we may go over face by face and at least core team is our this function to be made available for future enhancement and We have a full picture. This is that it is required is this can be done and today we cannot do it because of the lack of this. This this.
+
+1:02:34 - Vignesh Perumal (ADNOC Group D&CS) That's the only quantification what we are liking. Can I just tell you one thing? Let's spark this resource, you know, planning for a totally different session. Let's not, you know, waste our time on this. We will discuss on this later on in a separate session. Thank you.
+
+1:02:54 - Conference Room (MM- SKEC2 - L08) - Speaker 5 Yes, let's continue.
+
+1:02:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Let's focus on closing on tomorrow.
+
+1:02:58 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Yeah, just before we close.
+
+1:03:00 - Conference Room (MM- SKEC2 - L08) - Speaker 8 So, one minute, sir. We want to hear from other group of companies. So we heard from offshore, from refining. Edna Gas or any other AGC, they want to say their input. Edna Gas.
+
+1:03:14 - Conference Room (MM- SKEC2 - L08) - Speaker 4 No, I don't see anyone.
+
+1:03:21 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Sawagas?
+
+1:03:25 - Avinash Rampaul (ADNOC Sour Gas – Projects & Technical Services) Okay, it's Sawagas here. Yeah, that would be nice. Okay, I think the discussion went in all different directions, but at least from our side, I think the example of Shorewoods, they are creating recorders and I think PM03 recorders for spare parts. In Sawagas, we are creating PM01 or PM04 and assigning the spare parts accordingly. With respect to the plant maintenance, some of our maintenance plans or tasks have materials already included. So, once it will quota is generated, the material reservation is created as well. So, this is the input from SAWGAS side.
+
+1:04:00 - Conference Room (MM- SKEC2 - L08) - Speaker 8 I guess I'm not a guess anybody from Edna Gas.
+
+1:04:08 - Conference Room (MM- SKEC2 - L08) - Speaker 8 I saw Sheikh SALEM, he raised his hand is it is still there. I think he had a few questions.
+
+1:04:19 - Conference Room (MM- SKEC2 - L08) - Speaker 4 who's on hold?
+
+1:04:20 - Unidentified Speaker Okay.
+
+1:04:21 - Conference Room (MM- SKEC2 - L08) - Speaker 2 I have a question about the demand forecast.
+
+1:04:26 - Conference Room (MM- SKEC2 - L08) - Speaker 7 For example, I have demand forecast, then I procure the item, then material received, it's an inventory warehouse. Is there any connection between the forecast and inventory optimization? For example, if next cycle came, for example, another activity came for same the same unit or same activity. So your second forecast does like read or has any connection between the available inventory or, you know, many, many of the activities are shut down. They don't issue the material. They don't, like, utilize it. So we end up with high inventory. So is there any connection between the forecast and the inventory optimization or it's like history repeated once again?
+
+1:05:16 - Conference Room (MM- SKEC2 - L08) - Speaker 5 I think, yeah, I can address that. So I'm going to answer this question from the leading practice, okay, from the best practice. So the inventory optimization addresses only the corrective maintenance, because that's the part, that's the component that has created uncertainty, right? The preventive, the PM is not subject at least in theory, to any uncertain because it's for sure you will perform this activity. Whereas a corrective maintenance is not for sure if the equipment fails or something happens. So again, inventory optimization is to address the corrective. Now, what happens, like coming to your question, what happens if you plan something, okay, I'm gonna buy stock, I'm gonna, yeah, to, address this corrective forecast and it doesn't happen. The equipment doesn't fail or the activity is not performed. Well, for the next cycle, you will have another forecast, but you already have stock, so you won't buy it. You won't buy anymore. But of course, there is a cost here. There is a cost involved in keeping this stock in the storage location. For that, the best is to have an accurate forecast, and that's what the system can help us at creating an accurate forecast. But in terms of, I don't know if that answered your question, I read some of the requirements and it was more like when someone requests stock and they buy it, they purchase it, and then it's not used.
+
+1:07:05 - Conference Room (MM- SKEC2 - L08) - Speaker 1 There are also, another aspect to this is you are proposing practice to have a collaboration meeting at a demand level. Now, when the demand is forecasted through different algorithms and you have a visibility of what is my final demand, this monthly collaborative meeting should address all these such questions that what was my forecast based upon my forecast, where am I moving, whether I'm going below my forecast or whether I'm consuming more than my forecast. Why am I consuming more? Why the forecast was not correct? Or why am I not consuming and I'm planning the inventory. So all those discussions are generally part of this demand planning meeting, where all the required stakeholders are part of those discussions. And then this gets discussed over and over again, which creates a sensitization in the company that I should be forecasting what is required. Once people know that this is getting tracked over and over again, I'm putting a forecast and I'm creating a log of what is happening between versus forecast natural. And if I highlight this over and over again, it creates a culture in the organization and helps us address the issue which are not systematic in nature, but more cultural in nature or more human dependent.
+
+1:08:28 - Vignesh Perumal (ADNOC Group D&CS) I have I have one question here. See from from all this discussion that is happening, they are saying that probably in some cases, I think Sorgas is saying that in the maintenance plan, they are actually having the components and they are including it. But most of them, they are relying on their experience to create these type of work orders directly, which is not included in this maintenance plan. So what does it mean for AdNoc? So all these will be considered like a corrective and we will relying on our historical consumption to start forecasting. It's not forecasting. Basically, are we going to rely on completely our consumption data to come up with the replenishment proposal? Is this what we will end up doing finally? Because see, what they are trying to say is they are not utilizing fully the functionality of maintenance plan. Probably they do not have have all the task list with the components scheduled in the main term. If it was assumed that there was an equipment and there is a maintenance plan for that and a maintenance is planned, it may be twice in a year, right? Assume that there is a schedule for the work orders to be created. This, if you have all this in the maintenance plan, you are clear on this date. There is this going to be this maintenance and you have this information which you will use for your forecast based model. You don't have that, they are creating work orders based on their experience or corrective. So does that mean we will go and start relying on the consumption-based inventory consumption to start replenishing? That is what happens even now, right?
+
+1:10:20 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So probably to answer this, we should not be doing consumption-based planning for preventive maintenance. The reason is two. One of the requirement you have is to be able to have a long-term forecast in place so that you can optimize your procurement to long-term agreements. If we don't have a plan to correct the data what we have in system, we will not be able to optimize the outcome of planning from IVP and we will not be able to adopt the best practice. So we will have to come up with a strategy. And we understand this is something which cannot happen over a day or over a month. It would be an effort required from AdNoc perspective to make sure the correct data is available at the correct location as per the best practice so that we can utilize the tool to the maximum potential. So we may need a separate discussion to formalize a strategy on how AdNoc can come up with a plan to correct the maintenance plan. At the same time, what alternatives we can use an IVP site to have the similar outcome from IVP, it may not be as perfect as you are assigning a correct model to the maintenance plan. But one of the alternative, as we discussed, can be that you have a maintenance form and we can start forecasting based upon maintenance form for an equipment of the company. Or a function location for preventive maintenance to get to a similar outcome but then for sure there can be a risk of plan versus actual where you have a maintenance bomb you have 10 components assigned to maintenance bomb but in actual when the work order comes user based upon his experience may add 11 component or remove one of the component of maintenance plan bomb and then that becomes the fact so we are planning based upon the data we have in the system. This is what situation we have, Vignesh, at this point of time where we'll need to define a strategy on long-term maintenance, how this can be done, and then that strategy has to be adopted across all AGCs so that we have a consistent process across all AGCs when it comes to preventive maintenance or long-term planning.
+
+1:12:43 - Vignesh Perumal (ADNOC Group D&CS) Thank you. I request only one thing, Khalid. See, it is good that they are giving the best practices, but somewhere, you know, in outcome of this design meetings, get this documented, you know, that this is the best practices. And in order for, you know, the optimal planning, probably the prerequisite would be to have these preventive maintenance plans, which are available. But yes, if we don't have, we are not going to stop the process, but we will put the risks involved also just document this, okay, Khalid, as part of
+
+1:13:19 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Yes. This is all will be documented. We have a dedicated slide regarding the gaps. This is the purpose of those discussions.
+
+1:13:34 - Conference Room (MM- SKEC2 - L08) - Speaker 10 So at the end of those design workshops, we'll send you the deck and documenting I just wanted to ask Vada and Prathviraj and Achmad, do we have anything from Burut side that we have to mention on the preventive maintenance
+
+1:14:00 - Unidentified Speaker part?
+
+1:14:03 - Achmad Sonhaji (Borouge) Yeah, Nissan preventive, predictive or turnaround maintenance is applicable in OK, and and Vada is leading that team, right?
+
+1:14:19 - Conference Room (MM- SKEC2 - L08) - Speaker 10 You're on mute if you're speaking.
+
+1:14:21 - Conference Room (MM- SKEC2 - L08) - Speaker 6 Yes, yes. No, no, no, no.
+
+1:14:35 - 1Ameer Ali Muhammed Kizhakkanikath (ADNOC Offshore - MATCATT) Can we hear from Vada, please?
+
+1:14:39 - Waddah Al Tamimi (Borouge) Yes, we are from maintenance side. Yeah, we are from maintenance side. We're handling spare parts and related to preventive maintenance and corrective. But I believe this is purely, if you're talking about the preventive and the corrective, how it's made, and how it's created, then it is with planning team.
+
+1:15:06 - Waddah Al Tamimi (Borouge) So is there any, what is your, what detail do you require for this?
+
+1:15:13 - Nishant Keloth (Borouge) No, I was just wondering, like, from ad hoc perspective, is it something that we do differently or we do the same way?
+
+1:15:24 - 1Ahmed GabAllah (ADNOC Logistics & Services) No, the same way.
+
+1:15:25 - Waddah Al Tamimi (Borouge) Related to material you mean?
+
+1:15:27 - Nishant Keloth (Borouge) Reservation on this front from maintenance planning perspective so that preventive maintenance whatever we do. So is it the same as per what Adnog does or we have any other different processes in that?
+
+1:15:40 - Vignesh Perumal (ADNOC Group D&CS) I think I think Nishant what you're trying to ask your team is whether Baruj also you know starts creating work orders based on user experience or they have you have maintenance plans with task list and components and you have a maintenance schedule which automatically generates work orders. All these things. This is what you're asking your business. Yes, that's what I'm asking there. Yeah, OK.
+
+1:16:08 - Achmad Sonhaji (Borouge) It's the same thing. Maybe maybe if you know if that can help with this, so yeah, maybe I think we have possibly so so right there and maintenance.
+
+1:16:16 - Waddah Al Tamimi (Borouge) Yeah, we have a task list as well, yes. So it is basically based on user experience, and then task lists are generated as well.
+
+1:16:26 - Conference Room (MM- SKEC2 - L08) - Speaker 3 What are the components in those task lists?
+
+1:16:30 - Waddah Al Tamimi (Borouge) Yeah, there is components for sure.
+
+1:16:33 - Unidentified Speaker Okay.
+
+1:16:35 - Pratch Tontirittiphol (Borouge) May I? Yes, Praj. Okay. So in the preventive maintenance, when they create the Most of the item is not linked to the bomb. So it means when the work order is released, the planner will make reservation. Very less that the automatic make reservation in the work order. But for the turnaround, they use the work breakdown structure, the list, and then they make reservation manually. Okay for collective better than the same with other of co they are when they have some work order they make reservation directly through the work order.
+
+1:17:25 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Which agency are you?
+
+1:17:27 - Conference Room (MM- SKEC2 - L08) - Speaker 8 I must also raise hand and Sheikh SALEM also raised hand earlier. Sheikh SALEM is waiting for quite a long time.
+
+1:17:42 - Sheikh Saleem (ADNOC Logistics & Services) Just wanted to ask related because we as Adnok Logistics are not part of centralized procurement team or shipping vessels are mostly decentralized. How about this IVP planning will help Adnok Logistics?
+
+1:18:01 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Can you elaborate more because do you have any maintenance activity in Adnok Logistics which needs planning?
+
+1:18:08 - 1Ahmed GabAllah (ADNOC Logistics & Services) Assalamu Alaikum. Can I add whatever, Sheikh SALEM, because we are in the same company. As-salamu alaykum, everybody. I'll tell you what we have in LNS. It is different, a little bit, because in the shipping, we have each store, as SALEM say, we don't have a centralized store. Each vessel has its own store. And our plant maintenance, as my colleague in other companies say, we have a preventive maintenance on both the vessels. And preventive maintenance, it is a work order generated automatically through the maintenance plan and there is a task list and there is a scheduling everything. Because this it is required by the third party inspection because we are all white and subject to other third party to inspect us. And it was compulsory for all major companies to have a preventive plan maintenance. But due to the limitation of our store on board, and we don't have a storekeeper and we cannot get any demand in the same time we are in the middle of the sea. We have our store, what we are taking some spare, which it is essential to doing the preventive maintenance according to what is the requirement in the task list. And this one, we are not maintaining component in that. Work order or in the task we are making the consumption during the work order confirmation. And this also why we do it through the work order confirmation. We are not making reservation. We are not making component in the work order because all of our users on board of Azure, they are contractors through the manning agency, which is you don't have a workflow know in our system. In the same time, the man who has stored keyboard for his equipment and his spare buttons responsible, we can call it responsible for some equipment. And because we have four person on board the vessel, each person has responsible for some equipment to cover all equipment on board the vessel, is responsible for the maintenance, responsible for maintaining the spare, tidies everything. Now, if I make this long process for It will take time from him because they don't have time because they are running in operations and they are also running in shift at the same time. If he create a reservation. There's reservation with go to the Marine personal manager who is not related to any technical. He's a VB. Whoever they have a contract with the mining agency. And if he put the superintendent who is for the operating the vessel, it will be a huge amount going reservation to the superintendent and approve and this one. At the same time, he cannot put himself because he's not an organization in charge. And even he can make this component in the work order, it will be similar to reservation. He has to put the person responsible For this one, we have a difficulties to processing some learning or something like that because we are in different environment.
+
+1:21:38 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So let me rephrase what I've understood so that you can correct me if I'm wrong. So you have maintenance plans, the maintenance plans are used for creating the work order. You have the task list in the maintenance plan, and you have component assigned to the task list of the maintenance plan. Is this correct?
+
+1:22:02 - Ahmed GabAllah (ADNOC Logistics & Services) No, no, no. There is no component. I'm telling you why. So you just have task list without component. Exactly. Exactly. I'm telling you why. If I maintain the component, if I take component in the task list blindly, the user will go, suppose, for the coupling. I check the bolts and I put the bolts is available. He will go instead of checking, he will replace it because misunderstanding. He will replace it after 2-3 days. If something happened to the similar bomb, he will not have the bolts and he will ask urgent. We cannot supply him in the middle of the sea. That's why we are controlling by that one thing.
+
+1:22:47 - Ahmed GabAllah (ADNOC Logistics & Services) It is before anybody has been consumed in spare part. He has to go to the chief engineer on board with his most experienced person on board the vessel. He can see the part it is can be used until we reaching or repairable or this one. And if he's in doubt, he's in consultation with the technical department in the company.
+
+1:23:12 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So first process is clear. You don't have any material plan in the maintenance plan. And the reason for this is that you have limited space and availability for spares. And you would like to consume the spare only when it is absolutely required. So even if you are planning something, but after inspection, if you feel that this does not need to be replaced, you will not replace. But if you make it part of the maintenance plan, then it might get replaced and lead to a reduced inventory available at your location.
+
+1:23:46 - Ahmed GabAllah (ADNOC Logistics & Services) Exactly, exactly. It is absolutely understand now what I'm trying to say. We try to. We try to reduce the consumption as possible as we can, because we have four bump. We have two bump running and one stand by. If one if one bump running and failed, the other bump has to be stand by. It will be going operation and this ones he tried to repair it on Okay, unless if it is a major one, we have to arrange some workshop or something like that. There is another arrangement. That's why we are almost prefer the preventive maintenance to not lead to the major breakdown for the equipment to, uh, required assistant assured assistant because assure assistant. It is could not be available in any board because sometimes we go to the war board. We go to the Very difficult. Same like in Adnok in the West. Nobody can go in. That's nobody can go. Has to be sister card and this one. It is similar. We have the petroleum boat in our side in the other countries. Could be we could not also supply the food we have to get it from Singapore or Fujairah. Whatever this logistic it is easy for the visit because we have when we are entering the petroleum boat it is there is so because it is the it is highly risky area. That's why we have so many restrictions.
+
+1:25:17 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So let's come to the second part. When you have the work order, you also do not assign any component to work order. You only assign activities to the work order for the maintenance checking. And if if there is a need for replacement, then you consume the material only if it is getting replaced or else your work. So there is no upfront planning. And the consumption is only done when it is absolutely required. And that is what is issued to the work order, which means in a way you are.
+
+1:25:45 - Ahmed GabAllah (ADNOC Logistics & Services) During the confirmation of the because we are squeezed. We are squeezed a good issue reservation and after that good received we are straightforward. Consume it during the confirmation in the Order exactly.
+
+1:26:00 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So when you are confirming the maintenance order, which are physically used and only consuming directly at the time of per quarter confirmation, which means. On high level, the process is very similar to corrective maintenance, even if it is a planned maintenance. The preventive part is only for planning the activity and not planning the material.
+
+1:26:24 - Unidentified Speaker Yeah, yeah, yeah, yeah.
+
+1:26:30 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So now the second follow up question around it is, preventive maintenance and corrective maintenance physically are similar process from a material planning perspective then how do you forecast and plan material whether it is a different process for corrective and preventive or use same reorder point or how do you forecast the material to make sure it is available on your ship or on your location so that your operations are not getting impacted.
+
+1:26:59 - Ahmed GabAllah (ADNOC Logistics & Services) Okay now you see now we have our maintenance plan. It is we have make a scheduling to be a beard for six months. Okay, now the chief engineer. The chief engineer every month he can see the preventive maintenance for the next six months. What is the requirement? And he checked his inventory because these people they are they have, as I told you, four person each person in his equipment. He will see what is the major overall and what is the major kit he has and he informed the chief engineer by that one he can planning and he can raise a requisition and consulting the technical supervisor for that one because we have a site of six months.
+
+1:27:49 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So essentially what you are doing is you are looking at the maintenance plan manually and then looking at your inventory and manually coming up with a requisition for which is to be ordered based upon the experience and the maintenance plan.
+
+1:28:02 - Unidentified Speaker Exactly.
+
+1:28:06 - Conference Room (MM- SKEC2 - L08) - Speaker 1 And this process is applicable only to LNS is what we understand, correct?
+
+1:28:12 - Ahmed GabAllah (ADNOC Logistics & Services) Yeah.
+
+1:28:13 - Sheikh Saleem (ADNOC Logistics & Services) In addition to what Gavela is saying, most of the requirements for all vessels are through reservations. But if you are taken care through work orders and Yeah, so so that's what we understand.
+
+1:28:29 - Conference Room (MM- SKEC2 - L08) - Speaker 1 The manual reservation is created by reviewing the maintenance plan and available inventory so that the replenishment to the vessel can be triggered to manual reservation.
+
+1:28:39 - Ahmed GabAllah (ADNOC Logistics & Services) Can I add something here? Because now you see we have two types of the ship. We have two types of the ship. Ship stationary in UAE. Which it is. We call it OMS or Marine ship for the rakes and this one. This one it is available in anyway. The other shipping offshore going with the ship management. Offshore going this going or ocean going. It is not stationary anyway. Only stationary way who serving Zerko, Das Island or the ways or something like that. Both handling and this one. What Sheikh Salim, he mean that one. This one it is manual reservation done either by the master or by captain, this marine superintendent, through the central store, which SALEM is controlling that one. From us, only from the shipping, because we have two divisions, for the shipping only we are doing through the requesting BBE only, because to be as ad hoc standard. And this we supply to them at Fujairah or we are dispatched to any board if they are not coming because some ships not coming UEE for one year or two years. What we do, we request for the safety item, we take it from the store from ship Sarib, through the reservation work order, done maintenance work order, we make it reservation for the PPE, And after that, dispatch it with the nearest port. They are there. At least we maintain the safety PPE at his ad hoc standard. This is the only item which we are dealing with Sheikh SALEM on that one. But the other things with the international with the international supply.
+
+1:30:37 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So so not all the materials are procured through Adnox Adnox standard process and some of the materials based upon where the ship is in the ocean can be locally from the international market.
+
+1:30:49 - Ahmed GabAllah (ADNOC Logistics & Services) No, no, no, no. You see, I'm creating. I'm a chief engineer. I'm a chief engineer. Accurating the BR. Once I creating the BR in the system, it work ad hoc process. It will be go for tendering, go for the quotation. But when when this one our our illness team, our illness team, because they are not in the shape of it, our illness team know where is the shape and sometimes he's getting one vendor in Holland and one vendor in Singapore. He directly will contact the Vizel or directly the responsible superintendent to tell him you need it in Far East or in Europe because I cannot take it in Europe and the Vizel it is in Korea. For example, our logistic team and buyers team, this procurement team, they can handle where expecting the Vizel it will be and they have getting with the scheduling where the visit it will be. If it is consumable store and coming to Fujairah, we will of course UAE, but if it is not come to Fujairah, we prefer Singapore or Rotterdam, which is the cheapest and accordingly where the vessel has been sailing in this area or China or whatever.
+
+1:32:05 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So I think we got this just off the process. The illness process is completely different, take a note of the process, and it essentially looks like a corrective maintenance process being used with completely manual forecasting for the preventive maintenance as well. So probably, Hector, we'll take this note, and we can get back to what would be the solution proposal. It would be more looking towards the current diagram we have for preventive. Now the fulfillment process of once you have the requirement, how do you supply it is something we can discuss further in the supply session. But from a demand side, we have clarity of how the LMSs work. But we just want to make sure that in the interest of time, we have another how much minutes? 30 minutes for this session, right? We do have a second session later during the day. But then on high level, we are showing the corrective process, right? So we just want to make sure to understand from each and every agency that this corrective maintenance process we are proposing which has to be common across. The gist of the process is that you will have the data, historical consumption data coming from S4 HANA, getting into IPP where you will review it. System will basically classify it, segment it for you. You will have to review it. We are proposing quarterly reviewing. Then once the reviewing happening, we can also look at the exceptions and then update the segmentation. We have a slide because we are still at the process slide. We have backup slide for each of this discussion, so we will not proceed toward it, but that's why in the interest of time I want to proceed in the next section. But to proceed, I just need a high level confirmation from each of you that this process, a common process has to be adopted across all the agencies, and this is the process we are proposing.
+
+1:34:13 - Ahmed GabAllah (ADNOC Logistics & Services) If you don't mind, I have another meeting. If anything required from LNS, bring me anytimes, or whatever I can explain to you, or I clarify, because I have to join another meeting, if you don't mind.
+
+1:34:26 - Sheraz Kazi (ADNOC Refining - RRE) Can I dismiss? Thank you.
+
+1:34:27 - Unidentified Speaker Thank you.
+
+1:34:28 - Vignesh Perumal (ADNOC Group D&CS) I have one question here. In the summary that you are giving us, You said that the data from SAP HANA will go to the IBP and you will segment it and you will have a quarterly review. Now, you are talking when you're saying review, this is by the inventory planner. They will take the consumption data probably every quarter. When you say they review, is this review done to adjust the stock parameters like safety stock, or maximum stock or is it is it done to adjust these parameters on a quarterly basis? The outcome of this review?
+
+1:35:07 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, so we have a backup slide to exactly understand what happens in that specific box and where it impacts in the overall maintenance planning process. But I just wanted to make sure on high level we have an understanding of the process we are proposing and I just want to confirmation from all the agencies that how this makes sense, or is there a gap to adopt this process as it is? Details of each and every activity, we have a backup slide. So essentially, to summarize further, we have forecast. That forecast outcome is reviewed again. And then we have to consolidate this forecast first at AGC level, and then from AGC to AdNoc level, so that we have one demand available across AdNoc, which then can be approved. So we will have to discuss who approves, who reviews from a rules perspective. But the process essentially calls for these steps so that the end outcome of demand planning process is to have a single consolidated demand at ad hoc level, which can be reviewed at different locations, at plant level, at AGC level, and then at ad hoc level as in consolidated demand. There can be a consolidated demand view available and then someone has to approve. The approval can be for each agency separately. And then finally, someone at centralized level looking at all agencies together and then proposing that, yes, we agree this is the final demand. Let's get this demand into next steps of inventory planning and supply planning. Does that make sense? Does anyone have any other concern with respect to this overall process to adopt?
+
+1:36:48 - Conference Room (MM- SKEC2 - L08) - Speaker 2 this demand this one this demand is based on the uh for this one consumption past consumption yes so are you going to share those data also past consumption yes the idp will have the details of the past consumption in idp for you to review okay so it is having uh where this cost is booked for example it's against the cost center against the work order against the wbs because why I'm saying this will help maybe the same material is used by the shutdown team its consumption will be high but it will be against the wbs yeah so we can segregate from that If it is a work order, we will come to know that this work order belongs to the maintenance, whether it is the PM work order, CM work order, or it is by the shutdown date. So this will differentiate. Yes. So this data, when we are getting from the system, this parameter should be available.
+
+1:37:28 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Will be available. Mandatory parameters.
+
+1:37:30 - Unidentified Speaker Yeah.
+
+1:37:31 - Conference Room (MM- SKEC2 - L08) - Speaker 1 It should be a mandatory parameter. Yes. And you told us the consumption.
+
+1:37:34 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Is it for the demand consumption, or is it for replenishment consumption? Because we are doing two things.
+
+1:37:43 - Conference Room (MM- SKEC2 - L08) - Speaker 1 The consumption, right now, process is corrective maintenance only for consumption is for corrective one.
+
+1:37:49 - Unidentified Speaker OK.
+
+1:37:50 - Conference Room (MM- SKEC2 - L08) - Speaker 7 So whenever there is a work order, you will like provide me the consumption for this type of order, not for management.
+
+1:37:59 - Conference Room (MM- SKEC2 - L08) - Speaker 4 So we will segment the consumption. We'll have 11 companies and we'll have 11 demand, right? Now, SAP IBP, how can tokens get all the support? This will be checked first.
+
+1:38:12 - Conference Room (MM- SKEC2 - L08) - Speaker 1 set up the hierarchy which says that what is the at the top most you have AdNoc then you probably you have next level AGCs under AGCs you have the plants and under plants you have the locations so I understand we are doing the planning at location as well so all this can get consolidated you can have a consolidated view of what is the total demand at AdNoc level then you break it down and you can see what is the demand at AGC level you break it down and you can see what is the demand at plant level you can further break it down and what is the demand at and so whenever this consolidation and the planning meeting is happening it is expected that you are whoever is leading that meeting and then the stakeholders of that meeting are looking at all these details reviewing what has happened before what is happening now and take decision make adjustment and then finalize the demand that yes this looks like the correct demand which can now go to further planning process.
+
+1:39:08 - Conference Room (MM- SKEC2 - L08) - Speaker 7 The consortium will be for ad-hoc level, all ad-hoc group companies.
+
+1:39:13 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So that's something depends upon how you define your organization at central level. So that's where we need to have a conversation, understanding how we're trying to set up this organization and how this decision making can drive effectively. For sure, if we do it at ad-hoc level, all the data of all the group companies, it will be difficult review by one person, which means that we need to at least have the approval at group company level. And someone just reviews it at ad hoc level and confirm that based upon the experiment, it looks like OK, not OK.
+
+1:39:45 - Conference Room (MM- SKEC2 - L08) - Speaker 5 I think maybe it will be, yeah, if I want to jump to this one because it will answer your questions. Of course, the data is stored at a very low level. Look, for example, for consumption, for corrective, it's at location and material. But then using different attributes, you can look at the data at a more aggregated level, for example, the entire ad hoc. And for example, instead of just one material, you can look at category. So in that regard, you have multiple ways to look at the information, and it's not definition. Of course, you have to have a very disaggregated level where you store data, but then you're able to look at a more aggregated level. And, of course, you're going to see a larger number because it includes maybe all the AGCs, right?
+
+1:40:50 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Can you go to your previous slide, please? The previous slide, what you're showing. Yeah, this one, because here I cannot see where the cost is booked, whether it is against the cost center, against a WBS, against a GL account, because that is the important parameter for us to decide who is utilizing this material.
+
+1:41:09 - Conference Room (MM- SKEC2 - L08) - Speaker 5 Yeah, so this is just like an initial step using some of the standard attributes that comes with the configuration, but it's part of the project is define which attributes you need and where we can find the source, that source
+
+1:41:25 - Conference Room (MM- SKEC2 - L08) - Speaker 2 in It's for HANA.
+
+1:41:29 - Conference Room (MM- SKEC2 - L08) - Speaker 5 It is just to represent that we need, of course, the most basic level, which is, for example, asset ID, location ID, material ID. But on the top of that, we need to add the attributes that you need to basically do the planning, right? But don't take it just as an example of the attribute that you can integrate, but of course, will be way more. In this case, we have just four attributes per master data, but we can have as many as we want.
+
+1:42:00 - Conference Room (MM- SKEC2 - L08) - Speaker 3 So the requirement is to add the account assignment and the GL?
+
+1:42:06 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Actually, it is the cost. You can say the account assignment.
+
+1:42:09 - Unidentified Speaker Yeah.
+
+1:42:09 - Conference Room (MM- SKEC2 - L08) - Speaker 2 It's cost center. Yeah. Yeah, it's GL account here, you can say.
+
+1:42:15 - Conference Room (MM- SKEC2 - L08) - Speaker 4 And GL.
+
+1:42:16 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Because where this cost is, who has consumed this one? Of course, yes.
+
+1:42:20 - Conference Room (MM- SKEC2 - L08) - Speaker 8 It could be many, many parties who have consumed it.
+
+1:42:23 - Conference Room (MM- SKEC2 - L08) - Speaker 2 because what is happening if suppose you are sharing the file to us on the basis of past consumption maybe it is done by the shutdown team so it may not be required so when I would evaluate the forecasting for next like six months or one year those items I'll remove from there otherwise your forecasting will be wrong.
+
+1:42:38 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So that is something we can make it part of the construction phase where when we are putting up the things together when we are setting up the interface and when you are extracting the data what data is relevant to start with like you already know that you don't want to have uh there is a spike in consumption because we had a turnaround maintenance there but we know that there is a separate order type for turnaround maintenance that that is not uh existing here yeah so you you say that the same order type may have the turnaround data as well so the exception what you see you would not like to consider for a correct uh correct maintenance so you would rationalize that peak one time in three year because it was a turnaround maintenance and then rationalize the demand so that the forecast is more accurate agreed that's it can be it can be identified by the person by
+
+1:43:29 - Conference Room (MM- SKEC2 - L08) - Speaker 2 looking like so we can discuss and agree upon when you go to the work orders there are maintenance work centers are there maybe they are booking the material against most of the material 99 percent is booked against the wbs so the wbs we're able to know some material if it is not WBS it's a high value item that with the work orders we can track it or with the cost center we can track it.
+
+1:43:48 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So something like WBS if we know upfront then we can filter the forecast to not consider WBS to start with. That we can discuss and agree on. Yeah so that's something a detailing of how the interface and how the data will look like but then it's an important input for us.
+
+1:44:02 - Conference Room (MM- SKEC2 - L08) - Speaker 5 At which level we define the cost level?
+
+1:44:05 - Conference Room (MM- SKEC2 - L08) - Speaker 2 I didn't got it. Work order level. It is available in the work order all these things. Okay. Either the work order or sometimes is we are booking the material directly against the WBS.
+
+1:44:14 - Conference Room (MM- SKEC2 - L08) - Speaker 1 They can reserve. So whenever there is a consumption happening, we can understand the consumption. There is an account assignment category in SAP which decides where the consumption happens. Either it is a call center or WBS, or if there is an internal order, there can be different ways. So with this element, we can differentiate whether the consumption has happened. If it is a WBS-based consumption, which means it has been used for turnaround.
+
+1:44:36 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, we can do the analysis more, whether it is turnaround. Same case it is turnaround then you can exclude that one from the normal demand calculation.
+
+1:44:44 - Conference Room (MM- SKEC2 - L08) - Speaker 1 As part of the integration we need to make sure that the consumption this account assignment category is part of our EHA extract so that they can differentiate based upon account assignment category whether to include that in the forecast or not.
+
+1:44:58 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Actually you will see many material repeated in PM, CM and turnarounds. So the way like for refinery how we segregate the turnaround by GL account we run the repos on the GL account for this specific unit. Yeah, so this is the way we can segregate PMCM.
+
+1:45:15 - Conference Room (MM- SKEC2 - L08) - Speaker 1 That probably GL account is also one of the fields we can make sure it's available so that we can, if there are certain GLs which you would like us to ignore by default as part of the extract, then we can also configure as part of the extract that don't extract data for or extract data for only certain GLs only which are relevant for selective maintenance so that you don't have to do that activity manually. System by extracts only those deals, consumes and stays up only those deals which are relevant for the corrective maintenance.
+
+1:45:43 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Now the demand planning, if the end-user changes mind and cancels that demand, then what will happen? Can you say that again? After the commitment for the demand planning by the end-user, the end-user changes mind and he would like to cancel that one. How can SAP IBP predict?
+
+1:46:00 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So you would like to answer? No, go ahead. So so so there is this. Can we go back to the process?
+
+1:46:06 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Actually it happened a lot like a lot to see the plan after his commitment.
+
+1:46:10 - Conference Room (MM- SKEC2 - L08) - Speaker 4 So that we are blessed then user cancer that demand on the reservation.
+
+1:46:15 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So right now what we're talking about is corrective maintenance only and corrective maintenance only based upon the historical consumption. So we are not looking at. I think he's talking about the tunnel, right?
+
+1:46:32 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So there is this step that when you run the So after you have this conference in meetings, all these discussions should be part of the meeting as we discussed where previous cancellations should be discussed and all those things. Experience what you have on cancellation, making people accountable for what they're asking for. That is part of the demand meeting where you make people accountable. People accountable for the demand they are giving. This may not happen immediately, but eventually this could become the practice as part of those consolidation meetings where whenever you're signing up demand, you are making people accountable and this demand will now get into inventory planning and this demand will get into supply planning. Now, what happens in IBP is the demand gets gets frozen which means no one can go and change now so if you have given your input that input is locked so there is a period available for you to change the demand but once it is approved in system so there is approval step in system where you are reviewing and approving the moment you approve the demand is frozen and a snapshot is taken so that you can review with respect to that snapshot what has now actually happened so you have snapshot for every demand meeting you are doing and the demand is frozen so that it can be taken if the demand demand is the primary input for inventory and supply planning the demand itself keeps on moving you will never move to the next step of planning and you can never optimize inventory nor optimize your supply plans so it is no that's the just the purpose of that
+
+1:48:15 - Conference Room (MM- SKEC2 - L08) - Speaker 5 final meeting is to first review the historical consumption how much you consume over the last few months, and then with that information, question before it does.
+
+1:48:25 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So what we want to do with IBP is give you information which can allow you to question people, so that rather than spending time collecting data and coming up with the reports, you spend time making people accountable for the actions they are doing, and make sure that they are committing to the demand which you want to do, so that it moves to the next phase.
+
+1:48:45 - Conference Room (MM- SKEC2 - L08) - Speaker 2 And as an end user, on behalf I want to talk here. Yeah, see why we are. The people are asking the demand and then they are canceling the reservation. The main reason is that the maximum RP level as I said they are on demand on the site, especially for the offshore onshore. They are having the land area and all, but offshore we are having the limited space. We don't have the warehouse so I cannot bring all the material, keep it there and as it is minimum maximum level is zero. The other point is zero. I want some stock to bring and keep it here. So without reservation they are not procuring it and bringing the material. So I will do the reservation. Once the material comes here, I will cancel the reservation because I want it to be in the warehouse. I am not in the space. So either they have to review the MRP level and whichever the fast-moving item, especially the fast-moving item and critical item, they should review all the MRP level, min-max level. They have to correct it to avoid this kind of unnecessary demand.
+
+1:49:37 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So this is an important input for us to consider that the behavior of people is I just want to make sure multiple people are somewhere, not at my location.
+
+1:49:47 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Tell them the whole scenario also.
+
+1:49:49 - Conference Room (MM- SKEC2 - L08) - Speaker 4 We need the IBP system to give them the skills.
+
+1:49:55 - Conference Room (MM- SKEC2 - L08) - Speaker 3 It's more of a planning rather than just canceling. They just want to make sure that two rows, but they want to make sure that- Between actually, they cancel and they close a lot.
+
+1:50:05 - Conference Room (MM- SKEC2 - L08) - Speaker 7 How this IBP will tackle this?
+
+1:50:08 - Conference Room (MM- SKEC2 - L08) - Speaker 4 This is the business challenges, really. Yeah.
+
+1:50:13 - Conference Room (MM- SKEC2 - L08) - Speaker 7 I did like my my job as an inventory controller, then in between they cancelled all the plan. So how to tackle this? This is my question. I will end up with high inventory value.
+
+1:50:27 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, so the benefit probably I would like ask the best not have said to further add to it, but then. We cannot change people. Behavior by tool. A tool is as good as the input you provide, right? We have to understand that fact that we are trying to put up a tool. Tool will only work based upon the input you give the tool so that it can give you profitable outputs. That's the primary fact of the tool. Now, if the input itself is changing based upon user behavior, that's the problem in almost most of the industries where people put it by demand but don't commit Yes. So that is where the best practice is to have these discussions and sign off and make people accountable. And if the behavior is repeated, prove it with the data. The tool will allow you to get this information. The workflow.
+
+1:51:25 - Unidentified Speaker Yeah.
+
+1:51:26 - Conference Room (MM- SKEC2 - L08) - Speaker 4 At least if the user would like to consider something at one.
+
+1:51:29 - Unidentified Speaker Yeah.
+
+1:51:29 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So we are giving time for people to look at the demand and allow them to reconcile so that they know that by a certain time, the demand would be frozen. And if it is frozen, it will go to next step. Inventory will come. And then you will have means to prove that, OK, this was the demand. Based upon this demand, the inventory is here. If the demand is changing, so next month when you do the activity, you see the demand is dropped. Now in this meeting, you can question why the demand is dropped. Now I am having this inventory. You are responsible for this inventory because the demand was essentially created based So you have this snapshots for you to review and compare and question people so that this collaboration will bring in the change what you want in terms of behavior of the people which write data to back up what you said.
+
+1:52:25 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Oh well, during the design register you will discuss more about the change.
+
+1:52:29 - 1Ameer Ali Muhammed Kizhakkanikath (ADNOC Offshore - MATCATT) Yeah, I just want to add to this Whatever you are saying, yes, if you have a clear cut input will have a clear cut output and we can have this kind of alignment out of the system. However. Using this tool, what kind of control mechanism or alerting mechanism can be implemented for the inventory team to stop further processing of the PO or PR? Do we have any mechanism in SAP? This is what we are.
+
+1:53:04 - Conference Room (MM- SKEC2 - L08) - Speaker 1 looking for yes so for sure there is mechanism but can we have those discussions when we have inventory and supply session so that in the interest of time we want to make sure we proceed with the demand discussion and proceed with this you would like to add briefly about it so that we give them the confidence that there is something but then detailed discussion we can have it invent in supply station I have something to say regarding that
+
+1:53:28 - Conference Room (MM- SKEC2 - L08) - Speaker 5 the point you were making it is possible to to create an alert for changing. Let's say in one month you have 100 per demand, then next month it gets zero to 10 or zero. So you will see a change alert saying something happened here. You have this huge demand spike and then you don't have it anymore. What happened? So it give you like a quick clue of how to, that will help you to question these numbers. And it's not something that you need to be looking. What happened here, because we understand you have plenty of parts, so it's not possible to go in one by one to check in each one of the changes.
+
+1:54:11 - Conference Room (MM- SKEC2 - L08) - Speaker 4 We can link the purchase requisition with his requirement. Was the item delivered and not consumed by him to be deducted immediately from his account?
+
+1:54:20 - Conference Room (MM- SKEC2 - L08) - Speaker 7 The PR sanction has been done against this, really, because we really want to know.
+
+1:54:27 - 1Prathviraj Anchan (Borouge) Yeah, I will not take much time because it's the same point on which we have been deliberating for the last 20 minutes or so, but it is a very significant point for Buruj as well because of the excess stock. So, demand which is cancelled. I was thinking through the solution. So, since we are speaking about historic data, can IBP collect the historic data of cancelled reservations or cancelled demands based on the data which is available now for the last three years or so, and give us statistics which we will present to the end user saying that this is the percentage of cancellations and maybe material category wise or material wise based on which the planning could be much better. This is one solution I think we can think of going forward based on the historic data. If IBP helps us with such kind of solutions, this will be very helpful because you are saying about a very desirable scenario where we talk to them, we discuss with them, but they have been living with this kind of hereditary mindsets for the last 20 years or so. So things will not change immediately unless we present them with data which tells them how things have been gone in the past and based on that what corrective actions they can take. Yeah, that's it. Thank you.
+
+1:56:16 - Conference Room (MM- SKEC2 - L08) - Speaker 7 One thing, what about the forecast which like they have postponed. For example, I have this forecast for next three months. Between they came, they told me, you know, we postponed this forecast for two years ahead. So in this case, how IBB will tackle this? Because it happens a lot.
+
+1:56:39 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Like to answer how forecast changes can be addressed?
+
+1:56:42 - Conference Room (MM- SKEC2 - L08) - Speaker 5 They change the forecast from one month to another, right?
+
+1:56:46 - Conference Room (MM- SKEC2 - L08) - Speaker 7 For example, as a plan beginning of next year. Then between they told me, we will do it after three, five years. We'll put this with turnaround activities after three years. How IBB will tackle this? How I will be notified if I started to do my procurement action?
+
+1:57:08 - Conference Room (MM- SKEC2 - L08) - Speaker 9 So the point is that you have a cycle planning, right? In the next month, you're going to do another one. In the next month, another one.
+
+1:57:16 - Conference Room (MM- SKEC2 - L08) - Speaker 7 They said, no, we don't want to do it.
+
+1:57:19 - Conference Room (MM- SKEC2 - L08) - Speaker 9 But you can have the results of each cycle. So you can compare between them what you said the last month, what you're saying right now, and you will see that there is a mismatch, a big mismatch in this case, because you are in one place in one month, maybe you are removing the whole demand, and then in the next year, you are adding a whole demand. So this is going to be a big alert that you are going to receive. So the system, what we can do This is more related to the process. This is a process that we need to establish, accountability, change management. The tool that can do is give you alerts, give you visibility on the issues. Here, we receive an input, can give you maybe some reports, like top 10 changes, things like that, just to give you visibility of what is happening and you can address this on a people perspective. Because at the end, it depends on the input. We cannot change that. The tool is very reliable on what users are giving to the tool.
+
+1:58:20 - Conference Room (MM- SKEC2 - L08) - Speaker 5 I don't know if that makes sense. Yeah, yeah. Makes sense. And complementing that, you also need to have a frozen period. I don't know if you have it. If you have a preventive plan, I'm not going to give you a number of months because I don't know.
+
+1:58:36 - Conference Room (MM- SKEC2 - L08) - Speaker 1 But for certain periods, it's frozen it's not you cannot change it anymore do you have that practice because if it is within your procurement lead time so if you have a material which is a lead time of say eight weeks which means that before eight weeks you need to order and now after two weeks within six weeks that demand becomes frozen which means you cannot change it because it is already in process for procurement even if you make it zero it will come into your because that's the lead time you've already committed with the vendor. Unless your vendor agrees to move the demand by three weeks, if the demand is changed, that's a separate thing. But generally there is a frozen period for planning everywhere as an industry best practice based upon the lead times you have with your vendors. And if that demand freeze is incorporated, even if they want to cancel, they should not be able to cancel it because the demand is taken. And that's the, again, we're going into same, it's a change management issue. Is an behavior which you would like to change, we can help you with data, we can help you with information, we can help you with so that you focus your time not on coordinating data but focus your time on making those discussions more productive and make people more accountable about it. That's the benefit IBP can give you for that you have ready-made data available to question with facts and not just and make people accountable. That's the only way you can change behavior of people because we cannot stop someone from canceling a demand. Because we. If someone wants to cancel, he will cancel.
+
+2:00:13 - Conference Room (MM- SKEC2 - L08) - Speaker 2 It's it's the demand is coming from the reservation of the worker, right? Not the manual manual communication.
+
+2:00:20 - Conference Room (MM- SKEC2 - L08) - Speaker 1 There is no manual. It's automatically comes from system.
+
+2:00:23 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So now. Like you're saying, sometimes the demands are cancelled or postponed. There may be some other reasons. For example, wellhead tower maintenance campaign. They are having some other wellhead tower which is important or maybe drilling rig is going here which was unplanned because many times the drilling rigs are unplanned. Many times it is happening nowadays and especially in the month of November, December and January. These three months we are struggling with the weather in the offshore. Sometimes the barges are planned for 30 days wellhead tower maintenance campaign but they are staying there after completion of of the maintenance also because of the weather. In December month, last year, I remember we are having six or seven only the days where the supply boats comes and they deliver the food to us. So we are not getting the food also at that time. So many things are going to impact.
+
+2:01:14 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So those things will be delayed. If it is a genuine reason for delay, then neither you or us can do anything about it. But what tool can do?
+
+2:01:27 - Conference Room (MM- SKEC2 - L08) - Speaker 1 it recognizes change and automatically takes care of future planning what you are doing. If it sees that the demand has changed but there is a proposal in system for procurement, it will adjust the future proposals in a way that you do not end up with, that inventory does not stagnate. If the demand is completely canceled, probably you will end up with inventory because you have a procurement proposal. But then if there is a long-term agreement for a material and the inventory demand shifts, the tool will automatically in the future periods will try to adjust and bring down the inventory to the level you desire. So that the impact is softened over the period and does not accumulate for the long period of time, which leads to inventory accumulation and wastages.
+
+2:02:19 - Conference Room (MM- SKEC2 - L08) - Speaker 2 And sometimes this inventory accumulation, the reason is logistics. Don't have that much of vessels which can deliver all the materials because we had passed one year we are struggling the material is there we reserved and we are falling with the procurement warehouse every day this one is super is calling to deliver a material the material is available but it is not delivered to the site for six six months so then in that case who is accountable so all these things there are many factors are there which are impacting each other but like procurement will see their issues and and user will see from his that's an where the best thing we can do is bring in the visibility, have those discussions, make people accountable, and then as
+
+2:02:58 - Conference Room (MM- SKEC2 - L08) - Speaker 1 a team work towards how this can be improved over and over. It cannot be improved in one meeting, but the tool will bring in this cultural change as well eventually through this process so that everyone is recognizing the issues of others and making sure that That brings in the improvement you would like to bring in over the period of time. For sure, it cannot happen on the day of go live when the tool is implemented.
+
+2:03:26 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So is it possible through the system we can check when the material has been arrived in the warehouse, for example, if it is not there, or if it is existing in the warehouse, when the end user has reserved it, and when it has reached to the site? Because this will help in your forecasting demand. Maybe the material is available, but it is delivered after six months. So then we should know where is the gaps are available. It is in the Yeah, because when they are making the forecasting, forecasting is on the basis of the demand. It has been removed from the warehouse, but maybe it is reached after three months to the site. So then how?
+
+2:04:01 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, so I think we've.
+
+2:04:03 - Conference Room (MM- SKEC2 - L08) - Speaker 7 Yeah, we should see when the item received to the warehouse and when it's issued.
+
+2:04:08 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Delivered to the site because maybe it should be showing here, but it is delivered after three months. Sometimes it is after six months also.
+
+2:04:16 - Conference Room (MM- SKEC2 - L08) - Speaker 7 This is one of the factors actually we see.
+
+2:04:19 - Conference Room (MM- SKEC2 - L08) - Speaker 5 If the data is in the order, we should be able to do it. But do you have that data in S1HANA?
+
+2:04:30 - Unidentified Speaker Movement types.
+
+2:04:32 - Conference Room (MM- SKEC2 - L08) - Speaker 5 We need to have a look at the mapping details, but in theory the data is there.
+
+2:04:42 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah Khalid this is what we discussed last time to integrate with ILMS so what Vali is mentioning the supply board this tracking we have the logistic system ILMS so this will be provided more detailed on the logistic part of it. Abdulla are you able can we know it through movement types and also the you know the SAP is out yeah SAP out actually so the movement type it will be like 201 or 261 according to the document mostly it's 261 against work order then it will issue out from the system SAP is out now so then it will enter to another system we called the ILMS so this ILMS will track the movement until the delivery to the the final destination. Will you start using now the like valid towers under the elements or still?
+
+2:05:48 - Conference Room (MM- SKEC2 - L08) - Speaker 2 I'm not sure I have to confirm from the site.
+
+2:05:50 - Unidentified Speaker OK.
+
+2:05:52 - Conference Room (MM- SKEC2 - L08) - Speaker 8 This one I don't know it. This is more of a tracking.
+
+2:05:55 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, because this case you are forecasting your material requirement on the basis of the consumption pattern, but maybe it is not consumed. And in between it will be here for longer time. Other person will make a reservation again. Because because we are working as a site, people are working in a back to back. If I had reserved some material, I had to show here issued, but I didn't find he will think that somebody has consumed this one and this worker is waiting for the material. He will resolve the material so they will happen.
+
+2:06:26 - Conference Room (MM- SKEC2 - L08) - Speaker 4 This is shut down, shut down.
+
+2:06:28 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yes, so they will raise a PR because there will be stock is 0 so they will raise a PR. Warehouse and this site with the shipping team.
+
+2:06:42 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Check is this are we good to extend? We want to close this because we have another session later. Yeah, so so basically let's conclude on the process before we close this session so that the next session we can go through the details of the process. So can we have confirmation on this corrective maintenance process? What we've reviewed on high level, what are the activities, till the point of having a consensus meeting and confirming the demand.
+
+2:07:14 - Conference Room (MM- SKEC2 - L08) - Speaker 4 What's your question? No, no, for the demand planning and the team.
+
+2:07:30 - Unidentified Speaker Let's see.
+
+2:07:36 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Silence is confirmation by the way.
+
+2:07:39 - Conference Room (MM- SKEC2 - L08) - Speaker 8 Confirmation is just for this diagram. Later on they will send a document.
+
+2:07:45 - Conference Room (MM- SKEC2 - L08) - Speaker 1 We are not taking sign off. We just want to understand what we are proposing is meeting your requirement. We don't see a major gap. We've discussed some of the requirements which we try to address in the future sessions. But then on a high level, we just want to get a feedback that this is something which this is a best practice. And we don't see challenge adopting to this best practice. While there are some feedbacks what we have received about, but then if there is a gap with respect to overall process, then we would like to understand now so that we can tailor it further and then move to the next session.
+
+2:08:22 - Conference Room (MM- SKEC2 - L08) - Speaker 4 So far, everything is OK. We need to hear from Abdulla or Jagga. Do you have any concern or anything about the demand aggregation process? Abdulla or Jagga, from Exelis team?
+
+2:08:38 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Jagga, you say?
+
+2:08:40 - Vignesh Perumal (ADNOC Group D&CS) No, it's okay.
+
+2:08:43 - Conference Room (MM- SKEC2 - L08) - Speaker 4 Dose?
+
+2:08:46 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yeah, no comment. Let's conclude this session.
+
+2:08:52 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Thank you very much for your time and interactive discussion. Thank you. We'll come back again.
+
+2:08:55 - Conference Room (MM- SKEC2 - L08) - Speaker 3 Yeah, we'll come back at 1. At have 1 a continuation of this session.
+
+2:09:01 - Conference Room (MM- SKEC2 - L08) - Speaker 8 Thank you. Thank you everyone.
+
+2:09:03 - Prathviraj Anchan (Borouge) Thank you.
