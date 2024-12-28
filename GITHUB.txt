@@ -1,140 +1,6 @@
 Teams Meeting 
 mar, 1 de oct de 2024
 
-0:01 - Hajaratkhan Khan (Borouge) there for sure because like like what I said they will have the five years business plan also and this three months out ahead plan also so better they can only provide the update on this one and this planning
+0:01 - Hajaratkhan Khan (Borouge) 
+there for sure because like like what I said they will have the five years business plan also and this three months out ahead plan also so better they can only provide the update on this one and this planning
 
-0:22 - Rahul Patel (ADNOC Group D&CS) team does the forecast for chemicals mros maintenance of items everything together or there is a separate planning team demand team for chemicals versus maintenance spares.
-
-0:32 - Hajaratkhan Khan (Borouge) Yeah, yeah, yeah, yeah. Rahul, there are multiple demand team like what Nishant said for maintenance, there is maintenance planning is there for the production chemical which we are discussing now for this there are operational focal points are there and for raw material and niche good packaging there is a production planning engineers are there for doing this.
-
-0:53 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, come let me ask a different question. All these inputs for Buruj is coming through ERP orders, either maintenance order, production order, right? You don't have anything manually input?
-
-1:08 - Hajaratkhan Khan (Borouge) No, no. Some are, yeah, some are cost center, reservation against cost center also there. That is also in the system only, right? Yeah, yeah, in the system. Outside system nothing is there.
-
-1:24 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, so for Bruges alone, unlike other companies, all their acquisition, all their demand plan is via work orders or reservations in ERP. We may not. We may not have to meet all the their planning team. Because the source of income input is only SAP work orders or reservations. This is basically what they want. Where do they input demand comes from and for what period do you get normally? How long you get it? Do you get it for a year or for two years?
-
-2:05 - Khalid Sarfaraz (ADNOC Group D&CS) One more thing, are you using a special MRP types and maintaining the stock levels if the stock is below it and then MRP will automatically generate the PRs?
-
-2:17 - Hajaratkhan Khan (Borouge) This is, we are using the standard Z1 is not standard so it's probably copy from v1. So it's reorder point planning.
-
-2:32 - Rahul Patel (ADNOC Group D&CS) So to summarize you have two kinds of MRP what you are using one is reorder point planning for regular stock items so whenever the stock goes below the reorder point it automatically triggers the replenishment based upon the MOQs and the quantities what you want to procure and then there will be MRP type PD for requirements so those are not procured upfront but as and when you have the requirement in terms of reservation you procure initiate the procurement and this will have its own lead time considering that you have received requirements based upon the lead time agreed with the vendor you will have the fulfillment of those ad hoc materials yes some of the PD material are in agreement
-
-3:11 - Hajaratkhan Khan (Borouge) also which are having the frequent but we are not storing in the warehouse due to their size or So when you say agreement, what do you mean by that? It's a long term price agreement.
-
-3:25 - Rahul Patel (ADNOC Group D&CS) So you also have long term price agreement for non stock item as well as well as stock items and then. So you you are just releasing the quantity when you have the reservation from the operations team.
-
-3:38 - Hajaratkhan Khan (Borouge) Yes, we are issuing the release order.
-
-3:41 - Mohamad Fakhouri (ADNOC Group D&CS) Release order, yeah. And when you say you're not Are you guys stocking them also in ADNOX inventory, so is it vendor managed?
-
-3:52 - Hajaratkhan Khan (Borouge) No Mohamad, like sulphuric acid or some other big chemicals which are coming through tanker and directly going to the plant tank, so I'm talking about such chemicals.
-
-4:03 - Mohamad Fakhouri (ADNOC Group D&CS) Okay.
-
-4:15 - Rahul Patel (ADNOC Group D&CS) If you're speaking, you're on mute.
-
-4:28 - Aysha Abdulla Al Ali (ADNOC - GP) Someone is a muting.
-
-4:33 - Rahul Patel (ADNOC Group D&CS) Yes, someone is a muting.
-
-4:36 - Mohamad Fakhouri (ADNOC Group D&CS) No, no, no.
-
-4:40 - Yaser Salem Bin Zubaa (ADNOC - GP) Okay, Aysha, go ahead.
-
-4:45 - Rahul Patel (ADNOC Group D&CS) She's getting muted. I write my question. Yeah, I write the question. Probably a network issue or Let me check with the emotion.
-
-5:15 - Mohamad Fakhouri (ADNOC Group D&CS) Is MRP being done only for ... Like external requisitions or you also have ... You have MRP for STOs?
-
-5:27 - Hajaratkhan Khan (Borouge) We don't have any STO moment.
-
-5:33 - Aysha Abdulla Al Ali (ADNOC - GP) Hello? Yeah, sure, yes. Yeah, no, it's okay. My question for Hajaratkhan, how, like, do you maintain safety stock for all chemicals or only for vitals and essential? And where do you, like, keep it? Is it with the user or Bruges Warehouse? I mean with the vendor or brooch warehouse?
-
-5:56 - Hajaratkhan Khan (Borouge) Yeah because the reorder point will take care about the safety stock Aysha for the vital and critical material and those are stored in the our warehouse only.
-
-6:20 - Rahul Patel (ADNOC Group D&CS) So we can say that there is no vendor-managed inventory for Uruch for chemicals?
-
-6:28 - Hajaratkhan Khan (Borouge) Yeah, for chemicals it's not there but for raw material we have.
-
-6:36 - Rahul Patel (ADNOC Group D&CS) Yeah but from our project perspective since raw materials are out of scope so we can safely assume that from a Buruj perspective the vendor management inventory from an MRO or chemical perspective is not applicable.
-
-6:48 - Hajaratkhan Khan (Borouge) But just in time is there. Yeah.
-
-6:53 - Rahul Patel (ADNOC Group D&CS) So when you say just in time can you elaborate more?
-
-6:57 - Hajaratkhan Khan (Borouge) Rahul like what I I said is a caustic soda and sulfuric acid. Whenever required, we have some standing orders. Whenever required, they are calling for the tankers.
-
-7:16 - Rahul Patel (ADNOC Group D&CS) But then that informant, we don't capture that stock from a vendor perspective anywhere, right? So it's, vendor might be keeping it from an agreement perspective and whenever you, so that's an lead time kind of agreement where whenever you need he has to fulfill immediately in terms of time curves uh but then that's completely outside the system and that's an agreement with vendor that he has to fulfill it uh as and when needed right so the lead time is pretty low in as per the system's calculation can you scroll to the right yeah
-
-7:49 - Nishant Keloth (Borouge) it must be Lisa, do you have a question? No, I think it's just...
-
-8:06 - Aysha Abdulla Al Ali (ADNOC - GP) I have a question, Hajaratkhan. Yes, ma'am. For the periodic review for the criticality or the movement of the item, how frequently do you do it? Is it like you have some period of time or whenever there is a reservation, or replenishment auto PR come for you then you do the view for the criticality of one is yeah here two answers are there Aysha one
-
-8:34 - Hajaratkhan Khan (Borouge) we are doing annually at the beginning of the year and next we are doing whenever requirement is coming and we because we have some template where we are putting all this usage for this year next three years and like that so on that basis we are seeing if consumption trend is increased or decreased so based on that also we are coordinating with the end user to update the parameters.
-
-9:06 - Mohamad Fakhouri (ADNOC Group D&CS) So if I can summarize this so for vital whenever you get the requirement you review the parameters on an annual, once a year, also you update, review the parameters?
-
-9:25 - Hajaratkhan Khan (Borouge) Yeah, yeah, review, review Mohamad, because if any update is required, we are doing that after consulting with the user.
-
-9:35 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, okay. And those are for vital, right?
-
-9:41 - Hajaratkhan Khan (Borouge) Generally, it is annual review we are doing for all the atoms, Mohamad. Okay for all whatever in our data list that's uh nine million so we have to we apply them as and change them to the demand yes and for vital ones it's only when uh whenever the there's a requirement every
-
-10:08 - Mohamad Fakhouri (ADNOC Group D&CS) time you every time you get a requirement you also review the parameters Yes.
-
-10:17 - Rahul Patel (ADNOC Group D&CS) Just a question around that. So when you say you review consumption trend, so this consumption trend trend review, is it monthly activity? Or like how frequently frequently you review the consumption trend based upon what is the plan versus what is the actual?
-
-10:33 - Hajaratkhan Khan (Borouge) Yeah, because there are multiple category Rahul. For example, business continuity items we are doing on weekly basis. Business continuity vital and CCS we are doing on weekly basis then other whatever essential and desirable are there they are on bi-weekly or monthly basis like that so when you say weekly basis we you weekly review at what was
-
-10:57 - Rahul Patel (ADNOC Group D&CS) the plan what is consumed and what was supposed to get consumed and whether it is deviating from the plan uh is that correct yes what do you do on weekly basis yeah particularly that which are coming for the replenishment.
-
-11:22 - Rahul Patel (ADNOC Group D&CS) Okay. So can you elaborate what do you mean by the items which are coming for replenishment? Since MRP is looking at the stocks, looking at the requirements in terms of reservations.
-
-11:35 - Hajaratkhan Khan (Borouge) For example, Rahul, one item is there rp6 and max10 now there is a reservation we have the stock of 10 kg or 10 liter and then reservation came for 7 liter so that means system will generate the pr next day yeah so then it will come for the replenishment so that time you'll see either this consumption is going it's upward trend or downward trend and what action So every time a purchase requisition is created by MRP, you will
-
-12:13 - Rahul Patel (ADNOC Group D&CS) review the consumption, whether this purchase requisition quantity is in line with the consumption before you release it to the vendor. Yeah, for purchasing. So whenever there is a MRP proposal created for procurement, you review the proposal for procurement and while you are reviewing the proposal for procurement, you also review what has the consumption, what has been consumed, what has been planned so that it can be in alignment with overall plan what you have.
-
-12:40 - Hajaratkhan Khan (Borouge) To catch any abnormality on time because we have some cases where wrongly many reservation made and if you will process that without challenging the user then you will land up in the unused inventory or dead inventory.
-
-13:00 - Rahul Patel (ADNOC Group D&CS) Got it. And this you do weekly for all the critical items which are is vital business entity yeah yeah so and other items is what you say bi-weekly so whenever there is an order bi-weekly you just process it so essentially you are you're releasing the purchase requisitions every week and then whenever there is a release you kind of review for those materials yes So summarizing Rahul, it's more like a perpetual replenishment review. Yeah, phrase it like that. Yeah, so every time there is a so every week you look at the proposal generated by MRP based upon the reservations. So whenever the proposals are reviewed, you look at the requirements and everything in entirety and then based upon the confirmation you release it, release the purchase requisition for procurement.
-
-13:57 - Prathviraj Anchan (Borouge) Yes, every requirement is triggered based on some changes which are happening in the plant equipment impacts and many other factors leading to that. So, it is scrutinized so that you know that every requirement or purchase question that you are processing is due to valid requirements and duly reviewed and confirmed.
-
-14:23 - Rahul Patel (ADNOC Group D&CS) Yeah, got it.
-
-14:31 - Aysha Abdulla Al Ali (ADNOC - GP) Hajer one more last question.
-
-14:36 - Aysha Abdulla Al Ali (ADNOC - GP) For example, during crisis or emergencies, is there any like internal procedure you have to follow it or like how you handle chemical inventory during the crisis situation or some abnormal thing happened? For example, do you increase level to decrease you like how you manage the chemicals?
-
-14:59 - Hajaratkhan Khan (Borouge) If it's a one-time, no need to increase level. I say it will follow through the root cause analysis process. And if any change is required, it will be discussed with all the stakeholders. Either this can be tackled through the long-term price agreement or any change is required in the MRP parameter. All these things will be considered there.
-
-15:29 - Rahul Patel (ADNOC Group D&CS) I do not have any further questions. Mohamad, do you have any further questions? Or Hector, do you have any further questions?
-
-15:36 - Mohamad Fakhouri (ADNOC Group D&CS) No, on my end, it's clear.
-
-15:41 - Yaser Salem Bin Zubaa (ADNOC - GP) I have one final question for the bridge team here, for all bridge team here. What challenges do you face here, especially for the chemicals? And in which stage? Is it in blending stage, inventory stage, or supply stage? And what is your expectation to solve these challenges? You know that now we have now a new system will be implemented for IPB system, so that we need to hear from you your concerns, your challenges, especially for the chemicals or MRO.
-
-16:10 - Hajaratkhan Khan (Borouge) Yeah, main challenge, Yaser, we are facing is the planning side, particularly the maintenance planning. The reservations are not confirmed reservations we are receiving in even if we added one layer of approval for the reservation then also we are observing that many reservations are coming to us which are not required when we are challenging or cross-checking with the area engineer many reservations are getting gets cancelled so if initially it gets cancelled it's okay but what what is happening during PR stage or PO stage it's getting cancelled and it will land up into the excess inventory and second thing is that PR to PO lead time is not fixed and also some delay is from the supplier side also happening so these are the issues we are facing so with IBP particularly we we are thinking that there will be some lock will be there so this maintenance planning or production planning once it's approved by their as per their they should not be able to change their reservation unless and until it is approved by all stakeholders.
-
-17:33 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, this is a it's a challenge that that Buruj it's not only Buruj that is facing, but also other.
-
-17:42 - Prathviraj Anchan (Borouge) Yes.
-
-17:42 - Rajiv Kumar Gupta (ADNOC - PE&ICV) Not only for chemical, it's for common for you know common issues. All community actually so maybe we have to yeah stop in the reservation that the problem is the reservation which they are cancelling after approval so we have to stop we have to think in some other way right to stop
-
-18:06 - Aysha Abdulla Al Ali (ADNOC - GP) users for cancelling the reservation yeah I think if there was like a track from the initiation of the work order until the procurement action because in between once they cancel I think it would be a good idea if there is like some message or pop-up message will show me that this work order has been cancelled. There's no connection. This is the problem.
-
-18:30 - Hajaratkhan Khan (Borouge) This is the issue.
-
-18:32 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, when we are talking about this cancellation, there is a notification. We'll discuss that later. But Khan, you're trying to convey that they cancelled the which means there is a document which is getting cancelled in the system, correct? Or they do not cancel the requirement in the system?
-
-18:54 - Hajaratkhan Khan (Borouge) No, they are cancelling the requirement in the system or changing the quantity from something to 0 or 10 to 5 something like that.
-
-19:07 - Murugan Kaliaperumal (ADNOC - PE&ICV) This will be surely captured in ERP, sorry IBP, so that is not an issue.
-
-19:14 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, that's fine. Yeah. Okay, go ahead. Team, I know we are at time and we have another workshop, but yeah, this is not a challenge only for Bourouge, but it's for, I would say, all AGCs. Okay, so thank you so much for walking us through. I think there's still a bit, the demand planning, we just need to understand that. But Murugan, you mentioned this is all happening in SAP, so this is good. Okay, so next step is that next week we'll walk you through the design phase. So it's the, to be state, we'll show you how the SAP best practices are for each of the modules and I think that's it.
-
-20:10 - Hajaratkhan Khan (Borouge) Thank you. Thank you.
-
-20:17 - Rahul Patel (ADNOC Group D&CS) Thank you, everybody. Thank you. Thank you, everyone. Thank you. Thank you.
-
-20:30 - Unidentified Speaker you
