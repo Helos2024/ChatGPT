@@ -1,0 +1,353 @@
+UNKNOWN_SPEAKER:
+Hello Hadi. I think that part of the team is still on the drilling data conversation.
+
+Rocio Minguillon:
+Let's give them a few minutes if they can't join.
+
+Roumanos, Hadi:
+Yes, it's fine, we can we can continue in the morning instead, because I think everybody knows what the priorities are. We've been sharing enough emails, there's no need for calls. I'm hoping that if there's anything in addition to what we already are tracking, then people would raise their voices. But let's give it a minute, and then maybe we can brief the team here. The team on the latest.
+
+Rocio Minguillon:
+Yes, sure, thank you.
+
+Roumanos, Hadi:
+Let me just answer Cezar and Felipe because they're both getting very anxious about this whole invoicing process. Just give me one second. Thank you. You Hello? Hey, just one sec. I'm replying to the invoicing. Thank you.
+
+Roumanos, Hadi:
+Okay, so this should be sorted We don't have everyone. So let's keep it. Let's keep it short that I would for me. I'm just Saying that would because your eyes and ears are everywhere We're sorted for milestone 2 which Which is due end of December. So this is good news. Now. The only thing is We need to get through the system on service now so that we're able to to have it officially approved. But we don't need to wait for that to issue our invoice.
+
+ I'll need to check with Khaled if he's available tomorrow for a conversation to start. Because as you know, the invoicing process needs a few prerequisites. The milestone approval document, etc. So this is something that Tara and I will take care of with Khaled. But at least it's good news. And I'm assuming there's no more surprises on milestone 2, right?
+
+Patel, Rahul:
+Everything that we need, yeah everything we have we need we have and I also send an email to the design board review team right so which means that all the brdpd are documented are approved and rahul can I interrupt
+
+Roumanos, Hadi:
+if you have the compiled approvals if you can give me that will be helpful for me or if it's easier just send tara to the right folder um whatever is easier for you rahul I think you have other things
+
+Patel, Rahul:
+to worry about just uh Let me share you one folder, Tara. It's on my local drive, but it has all the approved BPDs and BRDs. So give it a shot, Tara.
+
+Roumanos, Hadi:
+Give it a shot. If there's something that you can't find, then we can bother Rahul. But let's us first do the work. Next is the plan. I'll try and brief the team as to where this is coming from, because I know it's more work than nobody wants, but we have to do it. So essentially the PMO team of Adnok, Muhyiddin and company, are reporting to management on January 9th the progress of the IBP engagement.
+
+ Now the general idea is not to showcase to management the fact that we are in the red everywhere. Now that's the truth, we're not going to hide it. They don't want to show it and the way they don't show it is by re-baselining the plan and doing the CR to compensate for all those delays. So effectively what we'll do is we'll push all of the dates that we have in our current plan that previously have seen delays and there's a lot of examples, right?
+
+ There's the BRDBPD, there's the training approach, everything, right? So every single date that we did not meet for whatever reason we will push to the actual date where we completed that activity. And for all future dates, we will push those to a realistic date that we believe is the new realistic date, considering the days of delay that we've suffered that have impacted Golang. So we know that we have CIDS that has had an impact.
+
+ We know that the firewall has had an impact, et cetera, et cetera. So we'll revise the second. So anything from today onwards, we'll revise the dates to as realistic date as possible, even though we might need to re-baseline again two months from now. I'm not denying that, but the point is we'll have a clean plan that anything before today will showcase the real dates, not the previously planned dates, so no delays, and anything after today will show the future dates that we think we're able to meet.
+
+ All of this will mean that the end date of the project will have to be pushed, obviously because these are all prerequisites, like we can move dates without a shift in the end date and go lives. And that's where we need to work with Sebastian and GoSCM to, okay, for the future dates, what are we looking at for both wave one and wave two? And what is the overall impact on final go live? And what more important, that's the planning part.
+
+ And the second effort that Mohamed will be doing is assessing the impact on financials coming from this CR. But that's why we need the effort so that when they go on January 9th to management, they'll say, hey, everything's on track. But what that would mean is everything's on track on the new plan, which is the new plan because we have that CR in hand. So that's why we're doing it. The question of whether or not we will keep this to this plan as to go lives or if we merge the two goal lives is still something on their mind, but it's not a priority.
+
+ So it's something that we just need to go with an answer on the next STIRCO, and that's probably to Sebastian, to say we've decided the last STIRCO that we're going to proceed with our original two goal life plan, and that's what we're doing, and we've re-baselined to that effect. However, if we're going to entertain the idea of a single goal life, that's what it means. But again, that's not an urgent matter that needs attention today.
+
+ What needs attention today is our original to-go live plan. These are the new dates, and this is the rebase plan. Is this clear to everyone, or does anyone have questions?
+
+Patel, Rahul:
+I have a question, Hadi. Yeah. So this revised plan, we also considered the impact of our approvals to be considered from Ardnoxite.
+
+Roumanos, Hadi:
+Very good. Very good question. Very good question. So excellent question. So in our original plan, we had estimated a certain time frame for certain approvals like the IDDPD. Now we know better, right? We'll try not to make the same mistake again. So this revised plan not only will take into account delays to Raoul's point, but it will also need for us to consider, okay, for SIT we had assumed a delay of, not a delay, a period of X days for approval of SIT or for test cases or for UAT.
+
+ Now that we know that ad hoc or dinosaurs that need a month to approve anything, that our new rebaseline plan needs to be safe in a way, as to the extent possible, right? We can't just add two months for the sake of it, right? So we need to add the delays that we've suffered so far, but also our estimate as to, okay, we need to add a week here, a week there, just because we know that those approvals will take longer.
+
+ This might get challenged by Firas and company and say, we can expedite from our side. While this may be a possibility, so we'll extend only by the amount we've been delayed, but then what will happen is we'll face another delay when we get to approvals, and then we'll come up with another CR, which is a likely scenario, right? All we're trying to do is anticipate that problem. If they don't agree, then we'll stick to our plan, and we'll face another CR two months down the road.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, Kurt?
+
+Campbell, Kyle (UAE):
+Yes, Nadia, I'm just wanting to ask when is this Gbot as well as what is the approach for this? Is it simply updating it on the service now system or are we going to have a consolidated sheet to do this on? Also a good question.
+
+Roumanos, Hadi:
+We'll go through the same process that we went through when we came up with the original plan. So we sit together and I'm hoping that Raoul and Sebastian will help us drive this. We sit together, we say these are the revised dates. We had an Excel plan that Tara had maintained. We'll take a look at this and because that was the one that was reflected on service so we'll take a look at it, we'll create a version 2 of that Excel plan with the revised dates for everything across all the streams and that's probably a conversation that starts with the technical team because these are the main milestones and then we'll piggyback as change management on top of that but it will be a common conversation across all of us over the course of this week.
+
+ As I've said this is due as an report to management on the 9th so by the 9th and that's Monday right so by the end of this week we need to have consensus as to what this new plan is and we need to have consensus with Firas as to what this new plan is so that by Monday or Friday evening Tara and I can upload it on service now and talk to Mahdi and say now you can report because it's all clear so that's the time frame and that's the process that I have two questions, Hadi.
+
+
+
+Rocio Minguillon:
+So it's okay for you to have a meeting on Thursday to review this all together? I mean, we are going to work in this today and tomorrow. So maybe on Thursday... You tell us.
+
+Roumanos, Hadi:
+Whenever you want us to review, we'll make ourselves available. So it's up to you. If you want earlier, we do earlier. If you want later, we do later.
+
+UNKNOWN_SPEAKER:
+But Thursday is fine.
+
+Rocio Minguillon:
+Okay, yes, on Thursday. On Thursday will be the best Hadi. Let's try and do Thursday early so that we do two things.
+
+Roumanos, Hadi:
+We include Mohammed in the conversation. Maybe we can include Change Management in the conversation on Thursday as well. So that we have the rest of Thursday and if needed some time on Friday to make changes. My only concern is When do we review with Firas? We can aim to have a review with Firas on Friday morning. That's not unheard of, right? They do work on Friday morning. Worst case scenario, which I'm trying not to get to, is we use some of Monday.
+
+ The only issue I have with that is that they do their reporting on Monday, so I don't know how much time we have on Monday before they report on this.
+
+Rocio Minguillon:
+Okay, yes, let's plan to do it on Friday's morning.
+
+Roumanos, Hadi:
+Sorry, let me revisit that last statement because the 9th is next Thursday, not Monday. I had messed up my dates. So, Thursday is fine. Worst case, we review with Firas on Monday and then we use the next few days next week to finalize. Sorry, Rocio, my bad. I'm being too aggressive.
+
+Rocio Minguillon:
+No, it's okay.
+
+Roumanos, Hadi:
+For some reason, my brain is always thinking Monday is the 9th, which is not the case. So, yes, and then we can use a few days after that for finalization.
+
+Rocio Minguillon:
+OK, then my next question very related to this is I know that today we are like making some progress on the configuration of the DSA and tomorrow we are having a session with Paola to talk about the authenticator to CIDS. But I am wondering if you have Rahul If you can brief me on when do you think that they are going to finish the approval of the SDD because this is the thing that is accumulating delay related to the
+
+Patel, Rahul:
+integration work stream. Question, Rocio, we have concluded that SDD now is not delaying configuration of interface. Interface, they've already provided to proceed with interface, which means we will have interface available. Now, SDD becomes a working document, which means that we'll continue working on SDD to finalize some of the points, unless there is a point which is completely out of whack, which means we have not considered at all, and this something comes as a request from AdNoc to be updated in SDD.
+
+ That's something we can discuss, but I don't see anything other than what we already discussed is not part of SDD or it's or it would impact any of our configuration. And you can correct me if I'm wrong anywhere, but I don't feel right now SDD is bottleneck for anything.
+
+Rocio Minguillon:
+OK. So are we going to be able to finish the configuration without the approval? I know that they are progressing, but I'm not sure if they are going to be.
+
+Patel, Rahul:
+Configuration of the interface, correct? Yeah. Yes. Kunal, correct me if I'm wrong. We'll be able to finish the configuration with what we have.
+
+Sheth, Kunal:
+No, no, Rahul. So, I'm just already online with the team, Raghav from SAP ECS team. So, Buruj, Ananda has already left. Kaiser has also left. So, currently, we are only working with the SAP ECS team. Agreed.
+
+Patel, Rahul:
+But then, we are not waiting. It's not dependent on SDD, correct? This is something which will continue.
+
+Sheth, Kunal:
+Yeah, yeah, yeah. It is. Is a living document. It will live till the go live.
+
+Patel, Rahul:
+But we are working on, so that's what, Rocio, we are working on like GoCM team, KPMG team, SAP, and everyone is working together to work on the interface. As we keep on working, there are some things which need to be resolved to make sure we are able to define the interface, but it's not dependent on HTD. We've received necessary approvals to proceed with it, and now it's not in – and HTD now becomes a living document.
+
+ Is this good enough for you?
+
+Rocio Minguillon:
+Yes, definitely. So I will check also with Sagaran and Ray, which are the blockers for finishing the interface configuration. But yes, I'm clear. I just want to know if we are accumulating delay with this or not. But I will check with them. Don't worry. As of now, my understanding is we are not accumulating any delay.
+
+Patel, Rahul:
+And whatever work right now happening is part of the configuration, which was anticipated happen as we start working on interface. Sagar and Rinaldo are part of all the conversations so probably you may also want to talk to them to get clarity on where we are and what are further points remaining but anyways Kunal everyday shares the update to the team on what is the status of the day so I hope Kunal will be sharing the update for today's work as well right?
+
+
+
+Sheth, Kunal:
+Yeah yeah so we also need to raise an OSS message as IBP T9 is not visible in CIDS so we will request Kaiser to OSS on behalf of us because we don't have a S user ID.
+
+Patel, Rahul:
+So Kunal just one thing to the point of Rocio if you if you feel at any point of time that now we are again dependent on AdNoc for any of the activities related to interface now that we have the activity related to firewall is complete but now this if the new activity which is related to raising an OSS node and SAP doing something which is not in our control and if it creates delay. Please make sure we are documenting this additional delay so that Hadi and Rocio can get updated with this additional delay it gets accumulating.
+
+ And let's make sure we are highlighting this on everyday basis so that we don't further it does not impact the timeline further.
+
+Roumanos, Hadi:
+Okay Kunal.
+
+Patel, Rahul:
+By the way, Kunal, what is the update on the interface? We kind of started the conversation. So probably if you can summarize the team on the update there, that would be great. Yeah.
+
+Sheth, Kunal:
+So again, we have started the same part. So the integration between DSA as well as CIDS part. So one by one, we have uploaded a certificate connection was also established now we are updating IBP certificate on DSA server so that currently we are doing in parallel with this meeting so once that is done so tomorrow we are having a plan to have a connection between CIDS and S4 HANA 1 ERP as well as BURU system so that is our tomorrow's plan as well as Rinaldo will send an email to Kaiser to raise an OSS message with high priority so that SAP will immediately load the IBP tenant on CIDS server to establish the connection.
+
+
+
+Patel, Rahul:
+These are the only two activities pending or do we expect any further work to be done after these two activities? No, these are the activities which we need to complete. And if we are done with these two activities, the interface work will get completed?
+
+Sheth, Kunal:
+Yeah, then we can say the connection has been established between IBP and S4 HANA and then we can trigger the master data and transactional data.
+
+UNKNOWN_SPEAKER:
+Perfect. OK.
+
+Patel, Rahul:
+So do keep us posted, everyone, on the status of these activities so that everyone is aware of it. And then if there are any delays which are further getting accumulated because of AdNoc or SAP, then let's make sure Hadi and Rocio are updated about it. Yeah, sure.
+
+Sheth, Kunal:
+I'll keep you posted, everyone.
+
+Roumanos, Hadi:
+Thank you. Thank you. These are the items on my list. Anyone has anything else?
+
+Madhavan, Tara:
+I just wanted to check whether the leave and travel tracker is updated. I can see some people have updated, just wanted to know whether everybody has updated and there's nothing left to update there.
+
+UNKNOWN_SPEAKER:
+Yeah, from our side. Sorry.
+
+Patel, Rahul:
+No, no problem, Rahul.
+
+Rocio Minguillon:
+Yeah, from our side we already updated January. I am checking in February with Bastian and Hector to see that the travel plan but but yeah, we already updated January.
+
+Patel, Rahul:
+OK, regarding travel plan Hector, and Bastien. Do we have Hector or Bastien on the call?
+
+Rocio Minguillon:
+No. They are not here, but I work with them in that.
+
+Patel, Rahul:
+Yeah. Rocio, I need confirmation that we've received email from Bastien yesterday that he's planning to be in UAE from 28th to 30th of this month. So I just wanted to get confirmation that based upon the changes in the overall project plan, as you mentioned at the start of the meeting, if it impacts any of the travel plan, so that I can make sure that my travel plan is aligned with GoSIM's travel plan.
+
+ I want to make sure that when the team is there, I'm also there. So can you help me with this confirmation so that I can make the travel plan accordingly?
+
+Rocio Minguillon:
+Okay, yes, sure. For January, it's already confirmed that they are going to travel that date, and it's taken into consideration the new baseline. But for February, let me confirm you these days, by tomorrow or Thursday.
+
+Patel, Rahul:
+You are confirming that irrespective of the new baseline date changes, the January plan is confirmed and I can go ahead and use information to plan my January. February onwards probably will change, will come up with a new date based upon the new project plan, correct?
+
+UNKNOWN_SPEAKER:
+Exactly, exactly. Yes.
+
+Patel, Rahul:
+So how do you use this information to plan my travel?
+
+Roumanos, Hadi:
+This is fine. Anyone else anything? I've got a question.
+
+Campbell, Kyle (UAE):
+Yes, I just wanted to bring up the award documents. We got an award document, the award submission for that Amazon award, the digital Amazon award that was spoken about in the last week's project data community. So we've reviewed the document that was prepared by ASMA and we've made some changes to it and added some commentary in there. We've also aligned it with the feedback or answers that we got from Hector regarding the tools, AI, machine learning capabilities.
+
+ So we've got that document ready, but we need that document to be reviewed by the various teams just to ensure the accuracy of the statements. So would we be able to send that out to you guys tomorrow for you guys to check it? It's a two-page document. Because we need to send it to Asma once it's been reviewed.
+
+UNKNOWN_SPEAKER:
+I think it's a question to Rocio.
+
+Roumanos, Hadi:
+Can you repeat, Kyle?
+
+Rocio Minguillon:
+Sorry. The question.
+
+Campbell, Kyle (UAE):
+So Asma wants to nominate the SAP Hub for a digital award coming from Amazon. And as part of that, they need to submit an entry for this award. So we need to develop a video and stuff based on the script. And they have put together an initial script which talks about the project as well as the benefits of the project. We agreed that we would take a look at that and see if we can add any value or add any commentary to that script.
+
+ So what we've done is we've reviewed that document, We've made some changes to the documents, and we've also added in additional commentary that aligns with the answers that Hector had provided with regards to AI and machine learning. So we've updated the document as far as we can, but we need the GoCM slash the technical team to review that document to make sure that what we are saying in that document is accurate.
+
+ And we need to submit this to us as soon as possible. So the document is ready. And I guess I'm just asking if we could send it out to you guys tomorrow for your review.
+
+Rocio Minguillon:
+It's a two-page document. Ah, OK. OK, sorry, Calvert. I didn't understand the relationship between the document and the award. I didn't get the point. I hear you like a little bit robotic. And I didn't understand the relation between the document and the award.
+
+Campbell, Kyle (UAE):
+So I'll repeat it. So there is... There's an award category for digital solutions, and AdMob wants to make their submission to this award category, and their submission is all about the SAP RBP project. And in that submission, you need to speak about the project as a whole, as well as what all the benefits are. So they've prepared a document which we've looked at, and we've put in some additional commentary and it also talks about the AR features, et cetera.
+
+ So we put it together and we just want the teams to review it to ensure that what is in that document is accurate because this is going to be put forward to management. So what we are saying in there about the project needs to be correct. So I think it's to go to CM as well as the technical team I think we would need a review from both ends.
+
+Rocio Minguillon:
+OK, yeah, now I got the idea. Maybe you can send me by email the document and I will see how can we help. Also, I don't know that if Rahul already reviewed it.
+
+UNKNOWN_SPEAKER:
+Yeah. How do you, what do you suggest for this?
+
+Campbell, Kyle (UAE):
+I mean, we'll send it to GoSiem, but do you think you guys as I need to review it as well. I'll take your API.
+
+Roumanos, Hadi:
+Not sure, to be honest, because there's already so many things that we're trying to keep track of If you were to get our views on this, when and on what specifically?
+
+Patel, Rahul:
+Even as a whole, because it talks as a project, it has a project overview of what the benefits are.
+
+Campbell, Kyle (UAE):
+We find with the content that again we need final like sign-offs, sign-off inverted commas by PMO or OCM to make sure that what's in there is accurate.
+
+Roumanos, Hadi:
+Okay, so a couple of things, right? We have been asked by AdNoc to prepare, not to prepare, to support them in a document that outlines the benefits realized by this project in monetary value, not theoretical, so it's more quantitative, not qualitative. So whatever we end up doing needs to be consistent across both your document and that other thing that they've asked us to do or to support in doing, because the business from their side is leading this.
+
+ That according to Firas GoSCM have done in the past so this should be our starting point according to him and I don't know what he's talking about so maybe later at some point we can sit down with Sebastian and maybe César to see what was done previously in terms of benefits realization or value realization of IBP and we can build that document up to the point where they need it to be. All I'm saying is whatever you're putting together needs to be something consistent with that.
+
+ So that's the type of review that we'll have to do.
+
+Sebastian Alba:
+Yeah on top of it we haven't done we haven't done any value realization for Adno. The only economic proposal or KPMG that they are using is from a proposal or work done with KPMG on the process of blockchain before this whole We haven't done value realization without notepad.
+
+Roumanos, Hadi:
+I don't know, he was referring to something that GoSCN did, so I don't know what he was referring to. He said that should be our starting point, so I don't know, to be honest. I was going to ask you at some point during the day, but it dragged. Okay, fine. But in any event, the two exercises need to be consistent.
+
+UNKNOWN_SPEAKER:
+That's all I'm saying.
+
+Campbell, Kyle (UAE):
+Hey, honey, what do you say? Document you because this one needs to be done like within a week at the latest because they need to submit this, they need to make a submission I think on the 13th of January and they still need to make a video based on this letter so it needs to be done ASAP.
+
+Roumanos, Hadi:
+So according to Mahdi, who's not our reference but according to him they need it yesterday which we're not even listening to because it came out of nowhere and he told us like a week ago. So that's something that's new for them, not for us. It's not part of any of our deliverables. We're just helping them put it together. And that was why Firas said, okay, let's use whatever SEM has as leverage material to support the business in creating this document.
+
+ So before we, and given that Sebastian is saying that we don't have anything much there, so let's review together with YCM what you have, and maybe you become our basis for that value realization or value for IBP. Because I don't know what we have today, right? I know that this is something that we need to do for AdNoc, not your deliverable, but it's this other value realization document. It's something that we need to help them with, which I don't know where to get the content from today.
+
+
+
+Madhavan, Tara:
+Will SAP have something? Will have something?
+
+Roumanos, Hadi:
+It's a good thought, but we just need, instead of talking about it randomly right now, we should have a proper session with GoSCM to say that's the ask. That's how we support AdNoc in doing it, because the business on their side is responsible for that document, not us. And this is how the document that Kyle is putting together can help sort of feed that story.
+
+Madhavan, Tara:
+That's what I'm saying. OK, because Mohideen also said in the document we provide, we should include some benchmark study for similar entities like AdNoc? Yes, correct.
+
+Roumanos, Hadi:
+And that's mostly what they're counting on us for. So that's where your point is valid regarding SAP. But again, I don't want to scare off everyone here. I just want to have a dedicated conversation for that. It's just not as urgent as everything else that we're doing.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Roumanos, Hadi:
+So to answer Kyle, in terms of feedback for your document, I think a combined session with us and potentially Bastian from GoSCM would make sense. And it's on you to tell us how urgent and when you need that by, because again, we need to help each other here.
+
+Campbell, Kyle (UAE):
+I'm happy to do that, but I don't know if you actually want to have a session for it, because it's So I can see page doctrines.
+
+Roumanos, Hadi:
+So why don't you send it across, and then to specific people, right? And don't send it to everyone. Say, Raoul, I need your feedback on those two slides, Bastien, Sebastian, myself, Hamad. And then have a date for us to get back to you with.
+
+Rocio Minguillon:
+And then we'll take it from there.
+
+UNKNOWN_SPEAKER:
+OK, fine. Yeah?
+
+Roumanos, Hadi:
+OK, thank you.
+
+UNKNOWN_SPEAKER:
+type.
+
+Sebastian Alba:
+Anything else guys? Nothing from my side. One point, last point before we close.
+
+Patel, Rahul:
+Kunal, the supply documents we need to send an email to Adno saying that when we can reply. Do we have a date there when we'll be able to close the comments?
+
+Sheth, Kunal:
+Close, actually that I have already requested to process as well as technology stream to specifically take those comments and put the update part. So on our channel GoSCM and KPMG channel we already updated to them. So Bhashen and team are working on it.
+
+Patel, Rahul:
+So GoSCM team, is it safe that we can take this, we can commit to AdNoc saying that by this Friday we'll reply back, we'll complete, we'll update or we'll reply back to all the comments? And then by next week we can send the documents for approval. I'm talking about Wave 2 documents.
+
+Rocio Minguillon:
+I will say yes, Rahul, but let me confirm with Bastian and Hector. But yeah, also Vivek is also working on that.
+
+Patel, Rahul:
+If you can help me with the date, then I can send this email so that way it closes the window for AdNoc to keep on replying on the comments and then we can commit a date on which we can get back to them. For us to close the web-to-documentation.
+
+UNKNOWN_SPEAKER:
+Okay, thank you.
+
+Rocio Minguillon:
+Okay, that's it from my side.
+
+UNKNOWN_SPEAKER:
+Thank you. Yeah. All right, then.
+
+Sheth, Kunal:
+Thank you, everyone. Thanks, guys.
+
+UNKNOWN_SPEAKER:
+Thank you, team. Thank you, everyone. Thank you.
+
