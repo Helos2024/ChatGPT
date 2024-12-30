@@ -1,0 +1,428 @@
+Patel, Rahul:
+Bye, everyone.
+
+Patel, Rahul:
+Hello, good afternoon everyone.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+Are waiting for anyone else? Or we can start the call.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Patel, Rahul:
+Are you waiting for anyone else to join the call? Or can you start the conversation? Hector, Bastián, Rocio, we good? Yeah, we can start. OK, so I just thought to have this call so that we are all aligned on what are the next steps on the workflow. So as per our previous discussion, AdNoc expects the workflow for approval of different approvals what we are planning into different demand, supply, inventory processes and I think we've demonstrated them the capability of process management tool.
+
+ This discussion I just want align with the team on how we will plan for the next, like we want to plan for a workshop with AdNoc to define details of different ways we can define workflows or how we want to define workflows in AdNoc, what are the cuts, at what level you would like to have. So I just thought let's have this conversation related to workflow separately so that if there are any questions, concerns, and how we plan the next steps can be discussed within the team before we take this up with that knock.
+
+ Also, I would like to understand from a Go-CM team perspective, from a build perspective, at what point of the build activity we define our workflows normally in the project so that it can get appropriately tested during the testing or so that we get confirmation on the workflow process as well. Is it clear? Is it clear?
+
+Hector Palacios:
+I think that so far we haven't been considering this for the unit testing that we are going to have on next month. So the trial of the two we are thinking of more basic functionalities. This is over that, on the top, you know. So at least we are not planning to address this on those weeks.
+
+UNKNOWN_SPEAKER:
+Bastián, you are online, right? Yes.
+
+Hector Palacios:
+Okay.
+
+Hector Palacios:
+We don't need to clarify the activities for sure. We need to have the mapping of all the activities responsible and all of that. I think that probably we can start with a proposal and then they can start filling names. We will need that for every AGC DIS.
+
+UNKNOWN_SPEAKER:
+And what else?
+
+Rocio Minguillon:
+I know for sure, Hector, it is needed for the UIT? Am I right? Yeah, yeah.
+
+Hector Palacios:
+Everything is needed for the UIT. So, right now we're planning unit testing next month, right?
+
+Patel, Rahul:
+So, after unit testing we'll have SIT. So, during SIT you expect the workflows to be configured?
+
+UNKNOWN_SPEAKER:
+I'm not sure.
+
+Hector Palacios:
+For me sounds more like an iteration. And the workflows so far what we said is that we can do it internally with the process management but the limitation is that they can just approve basically they cannot reject and then the other option is to integrate to SAP tool that is for approvals but it's not what they are using today and it seems like a very unlikely Tools for approvals, what do you mean by that?
+
+ External tool for approval. So they were asking about, because they have their own tool, right? Mm-hmm. Well, it's very unlikely that we can iterate to that one. For what I have checked so far, it doesn't seem like a possibility. And the only possibility of integrating that to an external approval tool Of course. That is called SPVPA, if I'm not wrong.
+
+Patel, Rahul:
+So that's it, basically.
+
+Hector Palacios:
+We don't have the definition if they want to integrate to that, or I don't know what is the current state. How do you take up this workflow requirement?
+
+Patel, Rahul:
+Do you have any templates, any? No, it's not a workflow tool.
+
+Hector Palacios:
+It is not a work tool, so this is not a common requirement. This is very ad hoc, this is very from this project, not past experience at all. Process management is something that is very simple on the tool, but it's not an ad hoc tool.
+
+Patel, Rahul:
+Okay, so normally process management does this, but then you are saying that there is no approval in process management, is what you are saying?
+
+Hector Palacios:
+No, no, it's just like, the approval is what it said, it's like just a task, and they can click, I finish the review, then I approve. But there is no, like, rejections. You just don't approve until this is ready, you know? So it's more like, do you accept this forecast plan? Do you accept this, I don't know, safety stock policies in general? But it's not a one-by-one approval tool at all. So it's not that you can approve this PR and it's not, no, and so on.
+
+
+
+Patel, Rahul:
+That is not the way that system works. So then, so when do you think would be the right time for us to get into the workflow or workshop with, I don't know, this would be better if we do the initial SIT next week and then next month, and then once they have seen the screens and everything, we talk to them about the workflow approvals. Now that they've seen the screen, how IBP functions, then it would make more sense to have this discussion.
+
+ But then at the same time, you also need to understand from a project plan perspective, what is the last point where we need this input, without which we'll not be able to configure anything in the system, right? Are two things. Ability for ADNOC to understand and confirm, okay, what's, how things are working. Second, ability from a project team perspective to take the inputs from ADNOC and configure based upon the requirement, right?
+
+ These are two different things which we want to achieve. So, considering the project timeline we have, so As per the current plan, the build phase is already, we are like, a month into build, right? We started the build on 4th December, so it's already four week in the build as per the current project plan, and we have another three weeks of build, right? Now, the project itself is delayed by a month, so we'll look at a revised plan, but then at what point during the build you need input for workflows?
+
+
+
+UNKNOWN_SPEAKER:
+I'm not really sure, not really sure.
+
+Hector Palacios:
+With a lot of functionalities the expectation that we can cover all that we are saying including workflows and everything for UAT is crazy to be honest.
+
+Patel, Rahul:
+So I'm not completely sure. So Because if we don't know what we want or how we can do it, then how we'll be able to put up a plan around it and then start working towards closing things. So we'll have to start somewhere.
+
+Hector Palacios:
+And the problem is that this is not part of the MVP idea. So what we have tried to communicate many times is that we need to have an MVP because it's the only way to address such complexity, and this is not part of the MVP. It's like a stage two. So if we plan to have, that's the main point, that we are trying to have an MVP, but then in UAT they are expecting to have everything. I'm not saying that we are not able to configure.
+
+ I'm pretty sure that we can do it. I'm pretty sure that they are not going to be able to handle that.
+
+UNKNOWN_SPEAKER:
+There is too much.
+
+Hector Palacios:
+This is just based on my experience. I think that this is a lot to digest for them, for too many companies at the same time. It's going to be a mess. It's not going to work. That's why I'm trying to push the MVP idea, but it's not.
+
+UNKNOWN_SPEAKER:
+I don't think that I'm being successful on that. Okay. So, but MVP, I think, we'll have in the last two weeks of January.
+
+Patel, Rahul:
+So, it's still a month away, like, concluding the MVP. So, we need to start working on this workflow because this is one of the requirements they have mentioned in SOW. They've been very vocal across the workshops that they want to have approval mechanism. So we recognize that requirement demonstrated in the process management. So if we are not able to show this in MVP, and then if your experience tells that, if we show them directly into UAT, it would be like too big of a change for them, or it will be too
+
+Hector Palacios:
+overwhelming, then that's a risk, right? Yeah. First of all, is the functionality. We don't have the approval functionality. We have a process approval, but not an item approval, let's say.
+
+Patel, Rahul:
+Yeah, that's one thing we have communicated to them clearly, that this is not a transactional system, which means you cannot expect every transaction to get approved, but the plan to get approved. That's the only thing we can do. Correct? We are this expectation we will for sure we are setting in all the discussions and that's what we demonstrated we will continue showing that only that we are not approving independent transactions but we are approving the plan based upon the plan once the plan is available in s4hana then the s4hana can be used for approving independent transactions if they continue to do that do that But yeah, but even will we be able to able to show the So.
+
+ The point I'm trying to make is that. Now that we are completing, we have completed, we were designed, I think we will come up with a revised plan, but we'll not have a lot of time to. Work on the workflows unless we start working on Now we are at a fix where MVP probably is two or three weeks from now. And if we want to start working on workflows without NOC, then probably we need to start working with something at least.
+
+ And probably I think whatever discussions we are having with change management of the roles and responsibilities, probably that can be a starting point for workflows as well to make sure that if we have rules and responsibilities defined. And those rules and responsibilities can also get integrated into the workflow. So that for respective rule and process, we define a workflow. So do you have any template for process management?
+
+ How do we define the process? Now that we have this four or five business processes across drilling chemicals. So how do we configure the process management tool for these processes? Do we request in any form of template or how do you normally do it for other clients?
+
+Hector Palacios:
+We can provide a template. They can give the details. It's not that complicated. Responsible. Probably some additional fields but not really complicated.
+
+Patel, Rahul:
+So probably once we like conclude upon the roles and responsibilities what we will be having today later with Nikita and the change management team, then we can use those inputs as input for the template for roles. Will that work?
+
+Hector Palacios:
+Not sure because this is something level and we want to do with Nikita is much higher level.
+
+Patel, Rahul:
+Yeah we will do it much higher level with Nikita but then we use the same information and then add a column of AGC maybe and then AdNoc can help us at AGC level who will do what in terms of roles and responsibilities because eventually what we are doing is have a higher level but all of us would like to know at exact detail level how many rules per AGCs are there for each and every job role we are defining.
+
+ And then there are multiple things associated with this job role. We need to define the security authorization for those users. Then the workflows needs to be set up with respect to those users. And then training and testing should happen with respect to users. So everywhere, this one point probably gets integrated, considering that if we know first high-level role, then from high-level role, we get to AGC-level role.
+
+ And from AGC-level role, we we end up, we get to the end users. And then once we have all this information we integrate back to IBP.
+
+UNKNOWN_SPEAKER:
+Correct?
+
+Patel, Rahul:
+So for a workflow it will be at what level? It will be at AGC level, right Hector?
+
+Hector Palacios:
+I guess so. If they have different process for sure.
+
+UNKNOWN_SPEAKER:
+Yeah, because... So... They might have different process.
+
+Gusev, Nikita (UAE):
+Like for demand planning chemicals for onshore and offshore. In onshore there's a technical center, for offshore there's no technical center. So we only have users in AGC sites. Just one of the examples.
+
+Patel, Rahul:
+Mm-hmm. Is it going to be kept or changed? That's a different question.
+
+Gusev, Nikita (UAE):
+But if it's kept, the process will be different.
+
+Patel, Rahul:
+I don't think we've had a, at least on the processes we are defining, If there is any differentiation between agencies, the process is what will define our comments. Probably we will try to push the same process across. And if there are not sufficient people, probably the same people will end up doing those jobs, right?
+
+Gusev, Nikita (UAE):
+Raul, but we are talking about workflow now. The process will be the same, but the workflow might be a bit different in the case I've just mentioned.
+
+Patel, Rahul:
+The way I am seeing, and correct me if I'm wrong here, process steps what we have defined will get converted into workflow as well, right, in a way, because the only difference would be that every agency will have a different person, but the process steps remain same. Let's take an example of demand. Now, we have a process of demand approval or confirmation and demand review and demand approval. So someone would review, someone would approve.
+
+ There can be different people in different agencies, but from a workflow perspective, if someone is reviewing it and he confirms that his task is completed of reviewing, a task will get triggered for approver. If approver confirms that he approves the demand, it moves the demand to the next step of inventory planning. But irrespective of agency, the process and the steps for approval will remain the same, right?
+
+ That's what my understanding is.
+
+UNKNOWN_SPEAKER:
+Yeah, probably you're right.
+
+Patel, Rahul:
+So in a way, whatever we define in the process step and the people, so there are two things what we are working right now. One is the roles, what we are defining, the details of the roles and responsibilities. And the second, the process steps. So I guess the roles and the process steps together can help us define the workflows. Is this correct understanding, Hector? Do you think this would be an input for us to define the workflows?
+
+
+
+Hector Palacios:
+No, I think that the workflows is going to be separate. Whatever level of detail we are defining here is going to be high layer.
+
+Hector Palacios:
+I don't think that is going to be necessary to complete whatever template that we have. It's going to be separate, but Diana, I think that we need to understand better if they, because if they are expecting basically approvals from the tool, then we need to say, no, this is not the tool, because if we start configuring something like a workflow on a VPN, they don't care at all, then we are going to lose time.
+
+ On this. So I think that the first understanding is to having a definition. We have represented this to them. And if they are interested in going with the process management functionality, that's great. But I'm very concerned that they have a misunderstanding. That wouldn't be a crazy idea, right, that they get this in front. So first, I would like to understand if they are clear that this is not a transactional-level flow tool.
+
+ It's not going to work like that and this is only high level plans everyone. If they agree with that, great.
+
+Patel, Rahul:
+So how do you want us to get this clarification from them?
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Hector Palacios:
+Do you have an additional meeting to discuss this but with a reduced score and I wouldn't put all the AECs and all of that. Let's have a high conversation with Murugan, valid alternative, I don't know, the main guys.
+
+Gusev, Nikita (UAE):
+Hector, may I ask you a question?
+
+Hector Palacios:
+Yeah, go ahead.
+
+Patel, Rahul:
+Sorry, Robert.
+
+Gusev, Nikita (UAE):
+Hector, my question is you say they should be aware that it's not transactional level approval, but high level approval. But what do you mean? Because, for example, if the plan is submitted, then I guess once it's reviewed and approved, then it's going to be locked, right? Any further transactions to work with the demand plan, right? Is it correct?
+
+UNKNOWN_SPEAKER:
+Yes, correct. It's basically officialized.
+
+Hector Palacios:
+Whatever they do on demand or whatever they did on inventory side is that we are basically saying there is a reviewer in this process. The guy is going to enter to ABP, check combination by combination, at the detail level that they need, and then it's going to go to the tool and say, okay, I finished my task. That's it. Then when the task is finished, then we can proceed with the whole next process.
+
+ So in the case of inventory, send that inventory policies for supply planning and so on. So it's like a milestone, basically. It's not, it's saying, okay, we finished inventory planning, then now you can proceed with supply planning. The whole idea but it's not going to go one by one saying okay do you approve this one this one no this one yes this one no no it's not like that that is approval that this is based workflow so they are two different different things for me and when I workflow is covered so we have the workflow the the different activities they're responsible who is stopping the process that's right so if they want to implement workflow and the tool, we have process management for that.
+
+ Now if they want to have approval, we don't have a tool for that.
+
+Patel, Rahul:
+So Hector, we already had one workflow discussion with AdNoc where we demonstrated process management tool and they agreed to this and we clearly mentioned about this is not a transactional tool or this is a you're approving a plan, you're not approving a transaction. So it's discussed, documented and agreed. So how do you think Why do you need to have another session again, considering that we already had this session?
+
+ We demonstrated process management tool. They looked at the detail and confirmed that this is what they would like to proceed with.
+
+Hector Palacios:
+I wasn't really clear of that requirement, Rahul. When we had this meeting, I wasn't synced on item level at Google, so I didn't mention anything related to that. So I'm not sure if they are clear. Maybe you mentioned and you were more clear in that moment, but I wasn't. So I'm sure that I didn't say anything about the high-level approval or lower-level approval. I didn't on my side. If we reinforce the point later on later sessions or in that same session, I'm not aware.
+
+
+
+Patel, Rahul:
+So I did mention from my side, because this is what we also discussed, right? This was something which I clearly mentioned in that workflow. I've had a conversation with the Khalid separately shared this feedback with him, saying that this is not a transactional approval system. This is a workflow. This is a planning system. This is not a transactional system, which means you cannot expect transactions to get approved in a planning system.
+
+ So my understanding is we discussed this in the workshop. I've discussed this with Khalid, and we are all aligned there. So that's why I wanted to check with you. We still need another session.
+
+Hector Palacios:
+No, if that's the case, and you are certain that that is the case, then let's proceed with the workflows. The only thing that I would need now is how many reviewers we have. So if there's just one reviewer by team, that's right. If we need to put many, we need to check. But again, I've seen that sometimes they confuse on this, because maybe when they are thinking on many viewers are thinking on transactional level approval, you know, like different tiers for the same depending on the, I don't know, the value of the transaction, I don't know.
+
+
+
+Patel, Rahul:
+Yeah, so let's align, but the only point I'm trying to make is because since they have not seen the system while we have clearly said that this is an international system, this is not an international system. We have demonstrated in the process management tools, functionalities, but the the only better way for us to then communicate with them at this point of time is to demonstrate an IDP. So a question would be that, have we considered configuring process management as part of our build activity when we put up the project plan or timeline?
+
+ If not, then what is the impact of this into our entire project plan? And at what point we will be able to configure and demonstrate them the way we are doing in MVP so that we can clearly close on this point rather than assuming things. If we are able to give them MVP on, say, drilling or any of the process, but at least one of the process, if we are able to show them a simple approval of one step approval, like at least only for demand reviewer and demand approval, not for the entire thing, but at least for demand reviewer and demand approval, one sub-process, then it give them an understanding of how the approval would look like, So I'm not saying as part of MVP we configure the entire process with approvals, but at least a step of the process can be configured with approval process management so that we only show that specific step.
+
+
+
+Hector Palacios:
+Is this something we can do?
+
+Patel, Rahul:
+Or am I to hear on what we what what can be done like is it did that make sense to you guys whether it's investing can you say that again please that it can make sense to configure part of
+
+Hector Palacios:
+the approval part the process management for the for the mvp demonstration I think I will try to focus more on the core functionalities instead of the process management? Yeah, I think that we need to align on this because at the end we are going to, we need to align what is a strategy for NBP and UAT for sure.
+
+Patel, Rahul:
+Agreed, the only worry is that I'm not sure how much of an effort it is to get input from AdNoc, configure it in an IVP. And if we are not adding this to our same MVP, and then it comes later as things, I don't want us to end up in a situation where now it is too much an effort, and we are getting delayed by this one activity. So that's the only concern. And I'm OK if we don't make it part of an MVP.
+
+ But if you guys are confident, then we'll be able to, like, if even if I had not provides all the details. This is something which we can configure pretty fast in IVP and can be done immediately.
+
+Hector Palacios:
+It is something quick to configure, that's for sure. It's just a focus of what we want to check on the session because I think that maybe approval is going to add too much to what are really need to understand. Okay so let's do the following because I'm still concerned about the UAT strategy and MVP because my idea would be I wish that we could do an MVP run with everything and then in a second part let's do the all this, I don't know, fine-tuning and additional stuff on the top functionalities, you know.
+
+ So let me align internally with Basti, how we see it, and then let us discuss together with you if that makes sense. Yeah, I'm perfectly fine if you're able to split this into two.
+
+Patel, Rahul:
+The only thing is we need to make sure we are, like, both step one and step two are part of our project to learn timelines, what we are planning, so that it gives us time to first focus on the theoretical functionalities, and then second, focus on all these additional functionalities, still be able to make sure.
+
+Hector Palacios:
+They are for sure what I envision.
+
+bastian.osorio@go-scm.com:
+Rahul, just one comment from my part. The MVP part wasn't even part of the planning. We are adding this so we can show to the users as soon as possible the tool. But the initial plan was to show them the tool during the UATs, so of course, So considering that for me, there's no need to add every single feature of the system in the MVP. Because again, it's an initial testing so they can get hands on the system.
+
+
+
+Patel, Rahul:
+I disagree with you, Bastián, because in the process plan, if you remember, we had three sprints and we discussed during the planning session that these three sprints, we will expect end user to be part of this. So what I am understanding MVP is kind of a version of the sprints only, considering the delay we are having in the plan. So from start, we always said that during the build, we will have end users part of the discussion so that they can see the tools themselves and be part of the solution, why it is getting built, and not wait till UIT.
+
+ So with the same understanding, process management or the workflow requirement also needs to be demonstrated up front so that during UAT you don't have surprises with this process and we say that this is not something we need. If there is any understanding clearance, it has to happen early in the project phase so that later when the UAT happens, we just test and get approval. Discuss about the requirement.
+
+
+
+bastian.osorio@go-scm.com:
+The thing is that if we take that option, the risk that I see is that they won't get what we're showing them. They will just follow the steps that were given to them and they will say, okay, whatever. I will approve the same that we did basically for the BPD. I don't get all the details. This is overwhelming. This has too much information, but okay, I will get it. Okay, in a future step, I will get it.
+
+ Yeah, that's my fear.
+
+Rocio Minguillon:
+Yeah, usually, Rahul, this is the last part that we try with the users, because it's just a compliment. It's not the core of the functionality. So usually, we demonstrate and we try with them and we test with them all the functionalities. And at the At the very last moment, we do the process management step. I'm perfectly fine.
+
+Patel, Rahul:
+See, you guys have more experience in terms of implementing IPPs, so I'm perfectly fine. The only points I just want to highlight here, and we can agree and align on this, is that AdNoc has been very vocal about the requirements of workflow. I'm not sure of how other clients look at the workflow that are pulled, but AdNoc has been very clear about it. And that's something we also recognize that there is a special requirement from AdNoc, which normally other clients do not do.
+
+ That's one point. Second, we should be able to avoid surprises later in the project, knowing that AdNoc is having this special requirement of workflow. If we know something which is important and it may create problems later, show it sooner the better for us so that if there are any adjustment to be done we are all aligned or else at the later end when we show at the last when we show this as the last thing and if they do not they do not agree to this then probably we end up having the risk related to not getting approval for UAT for this one function.
+
+ So that's the only concern and you already mentioned it's not a big configuration activity from a build perspective which means that If we are able to demonstrate them something quickly, sooner in the project, then we mitigate this risk of this one workflow. And Hector, I liked your idea that phase one, we focus on the core functionality, while in phase two, probably we show them quickly something like this with their data.
+
+
+
+Hector Palacios:
+Yeah, that's the point. I think the big point, roughly, is not that it's difficult to understand or anything. Complexity and underwhelming, that is the word. I think if we plan to show them all of these at once, all the ECs or whatever, it's too much. I think that the current approach doesn't make sense, based on my experience. Yeah, yeah.
+
+Patel, Rahul:
+So let's go ahead with this plan, that the first set of MVP, probably what we'll discuss, will focus on the core functionality, so that they get the message, we get the confirmation and the core things which we want to demonstrate. And probably this thing can follow up in the second MVP discussion where we are able to give them a demonstration on the workflow process. The only thing is I don't want to wait till UAT and then have a surprise on this process later.
+
+ No, I know, I know, I know.
+
+Hector Palacios:
+I would like to have this on UAT in first place.
+
+Patel, Rahul:
+Yeah, that's the only point I just want to make. Sure. And in the meantime, what we can do is, if there are some things which we need input from AdNoc in terms of how we define the process workloads, then we can start those conversations with AdNoc so that while you guys are defining MVP and building system, if you need some clarity on workloads, let us know in what form and what input you need this clarity so that we can work with AdNoc to get those clarities.
+
+ That's the intention of having this conversation early so that we may choose to have this activity built and tested later. But at least we can start having conversation with AdNoc, understand their requirement much better so that we know upfront during the demonstration what they're expecting.
+
+Sheth, Kunal:
+Just to add to your point, I would like to raise a concern here. See, even though when I was referring to the BPD document for supply planning so I can understand that still they don't have a clarity on the workflow so whenever they are referring to the process functionality of this BPD document they are referring the purchase equation so let's say inventory controller is doing the review part so approver part will be done by manager so still they are having the same mindset that whatever they are doing in S4 HANA will get the same functionality in IBP so if we are talking about the plan part and if we are not showcase that requirement to them See, I can understand that workflow is not a mainstream topic for IBP.
+
+ It's a very minimal part. Just approve it and send it to S4HANA for creation of a PR. But again, from the manager point of view, it is very critical for them. And if still they are having the same expectation, Rahul has already aligned multiple times with Khalid and Vignesh. But I can see the comment from Hajrat Khan from Buruj. He's referring the PR part. So internally, they are not aligned. And maybe this will be a showstopper for us in future.
+
+ So for that, we need to align. Even though MVP, we are not focusing on this key part, but we need to define a proper way how to mitigate this risk of this workflow approval.
+
+Patel, Rahul:
+So that's where this is the main reason.
+
+Hector Palacios:
+If you think about it, because now I'm raising, I'm telling you the DCUAT with all all these many functionalities and all the involvements of the AGCs, this is not going to end. By the way, we are going to continue the UAT. I assure you that we were expecting to have the approvals of the design in maybe one week. We are on December. We are going for the next year, and we're still going. We don't finish.
+
+ So if we apply that same behavior for the UATs or whatever base we have with them, This is going to happen. I'm 100% sure.
+
+bastian.osorio@go-scm.com:
+But this is why we have, I mean, this is why we have a hypercare of I don't know how many months.
+
+Hector Palacios:
+Because we understand the risk. Yes, this is something that we need to communicate. We cannot have like a complete UAT and they cannot expect that everything is going to be like a Swiss clock for the Ego Life. This is not going to be the scenario. We communicate it or we don't communicate it. I agree with you.
+
+bastian.osorio@go-scm.com:
+I absolutely agree with you and you know we are on the same page. But this is never the case for the Go Live. For the Go Live we never have, because not even users have 100% understanding of their own requirements for the Go Live. That's why we put the hypercare for, I don't know how many months, because we understand that there will be more requirements, there will be things that are not closed. So we have this hypercare to address these unfinished issues, let's call it that way.
+
+
+
+Hector Palacios:
+So in that sense, I feel we have some insurance here in terms of the plan. That is what I think that we should be using when we talk about these high-level functionalities. I mean, we can discuss with them. They can tell us, no, we want to see the approval workflows from day one. That's right. We can restructure and maybe move some functionalities we're syncing a score to later stages, we can sync on that.
+
+ But they need to understand that UAT is not going to be the same for every single life. It's not going to be everything. So we have six months of hypercare. We need to be smart about it. Can we put the workflows on the hypercare? Can we put the dashboard, the alerts, these kind of functionalities that come later? After having the core. If that's the case, that would be ideal, would be ideal. Because we, six months of hypercare, if you ask me, that's crazy.
+
+ We have like one, two the most. We have six this time. So we need to use wisely that time. So they understand that we go with that MVP for the whole life. And after the whole life, we start adding and adding complexity. But that is how I envision that this can work. If we try to place everything for UAT for all life, this is not going to work. It's going to happen exactly what I'm proposing, but without communicating from before, you know?
+
+
+
+UNKNOWN_SPEAKER:
+I understand what you're saying.
+
+Patel, Rahul:
+But then right now, only we said that this would be part of UAT. And now we are saying, no, this is probably part of HyperCAD. I think we need to have this clear understanding communicated with AdNoc is, what do you think can be part of which phase of the project? Like, what can be part of UAT? What can be part of GoLive? What can be part of HyperCare? If we don't set up this expectation now, probably we'll end up having this difference of understanding between AdNoc and us.
+
+ And probably it will impact our project timeline, so.
+
+Hector Palacios:
+Completely right. What I want to raise.
+
+bastian.osorio@go-scm.com:
+But on the top of it, just one thing. The thing is that, and I think that has been the main misunderstanding or miscommunication between the project team and AdNoc, is that we're still speaking on very abstract terms because they haven't seen the tool. So I think the opportunity to get alignment is to first focus on the MVP in the UN testing, get the key users, and then from then start building this common understanding.
+
+ And that's why we need to, well, first of all, we plan to be in place on site those two weeks, and same for unit testing, and same thing for the Wave 2. So we can start having these discussions about what is most important, what is not as relevant as the MVP, but with the data and with the system in place, OK? For me, the main difference between the unit testing and the UAT is not too much about the functionalities.
+
+ It's more about the data, the integration.
+
+Patel, Rahul:
+So if I could speak. So, Bastián, what I would recommend is that anyways, we are initiating this conversation where we need to revisit the project timeline. With two aspects. One is the delay and what is the impact of the delay. And then second is the time required for approvals, right? Now, what I would recommend Hector and Bastián is to provide this input to Rocio and Sebastian, so that when Sebastian, Rocio, me, and say Hadi, we work on the project timeline, we clearly have this identified as one of the activity in the project plan, saying that get alignment on, say, scope of UAT versus Goli versus hypercare.
+
+ And then if you recommend that this has to happen after we have this, what we call MVP discussion with them, so that they have understanding of what tools, what kind of functionality we are having in the tool, and then have this conversation. So let's have this identified as one of the tasks in the overall project plan so that everyone is aligned, everyone is clear that at this point of time, we will have this discussion.
+
+ And this is the agenda of this discussion to get this clarification and confirmation or sign off from ADNOF on the project scope for UAT and for post-COVID. Does that make sense? Something we can do?
+
+UNKNOWN_SPEAKER:
+Yes, I think that we can, Rahul, yeah. Definitely.
+
+Patel, Rahul:
+Yeah, so let's make sure that when we are now putting a plan together, we have a clear understanding of all the activities and things what you mentioned, Bastián, can be part of the project plan when we are revising the entire project and make sure that this confirmation is received from AdNoc on what we think can be delivered as part of Go Live versus HyperCare.
+
+Rocio Minguillon:
+Yes.
+
+Patel, Rahul:
+Do you know, Rahul, when are Hadi and the rest of the team planning to have this conversation? I think Hadi has already sent a note to you and Sebastian about this today morning, hoping to have more discussion today in the Harden. And then by end of this, This week we need to close on the plan is what I understand because the plan has to be baselined into AdNoc before 9th of Jan is what I understand from that email.
+
+ So if you can have a look at that email and then have an internal discussion how you want to align the project plan and consider and suggest what activities can be part of which phase. Now here the only thing is we may recommend certain activities and certain, like, before go live and during hypercare. But then AdNoc may say that no, like, something like workflow, I feel AdNoc would say that they need it on the day one because they cannot proceed with approval.
+
+ They cannot proceed with plan if the plan is not at all approved. And they feel the approval should be happening through workflow. I'm just putting up something which I, based upon the discussion I'm having, which means that they may say that This is one of the critical requirements for us. And for sure, we need to validate with AdNoc, but this is what I'm understanding. So if we put something like workflow post-Go-Live, then this may come up as additional work before Go-Live.
+
+ So just be ready or just have this understanding when you define the project plan activities from your side so that such kind of flexibility should be part of the plan where we should be able to deliver something if they say that they need it before Go-Live or during the Go-Live. Initial goal and not part of the hypercare. OK, that's OK.
+
+Rocio Minguillon:
+Yeah, in my case, yes, I don't know if you have any other comment, but in my case it's understood and we will review it to see when are we planning to test that.
+
+Hector Palacios:
+That's the discussion we will push with to have in the case scenario you have it as early as possible the workflows because I agree that probably they will push for that.
+
+Patel, Rahul:
+Yeah and if you think it does not take a lot of time in configuring and if we can maybe at the end of the MVP probably one of the last sessions we can have with workflow so that we finish the almost entire MVP with giving them understanding without workflow but maybe last one or two sessions we can say that okay this is with workflow this is how it will look like if this is something you guys can manage and it will help us uh probably uh get over this risk sooner and then in probably in the same discussion we can conclude upon that if this makes sense this is something we can whether we can show it in uat versus uh latest stage of the project okay all right okay so I think we have six minutes left before we uh plan for the next meeting and next meeting is of 19.
+
+ So let's take this break for five, six minutes and let's connect back. So Hector and Bastián and everyone, just to summarize, you guys will try if you can make it maybe one or two sub-scenarios or sub-process at the end of MVP if we can demonstrate. That will be helpful. In the meantime, if there are any requirement, if you need, if there is any document or if there any template with which we can start working with AdNoc to get more clarification.
+
+ We can start those conversations and will not wait for actual testing. That's one thing. And then the input from the next meeting, the rules and responsibilities will help us and the process will help us take this discussion further with AdNoc in terms of how rules and responsibilities and workflows can help us define the workflows. And we start working towards closing at least the definition from right now on what level.
+
+ And then if we have this input, probably then it can be useful for us to make it part of MVP in one of the sessions.
+
+Hector Palacios:
+OK. OK. And also to align which functionality we are going to implement in each part of the project. Also, we need to discuss that. So we can have a meeting.
+
+Patel, Rahul:
+Yeah, we agree. We are now re-looking at the project timeline with respect to delays is what we are anticipating. I would request you to make this part of that conversation so that we have that identified as part of the process project plan, saying that we need to get the clarity on scope of go-live versus post-go-live.
+
+UNKNOWN_SPEAKER:
+Okay. Okay?
+
+Patel, Rahul:
+Okay, then see you guys in five minutes. Bye.
+
+UNKNOWN_SPEAKER:
+See you.
+
+Sheth, Kunal:
+Thank you.
+
