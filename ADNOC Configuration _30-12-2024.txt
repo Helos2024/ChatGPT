@@ -1,0 +1,610 @@
+Pablo Lopez:
+Hi, Pablo. How are you doing?
+
+UNKNOWN_SPEAKER:
+I'm fine.
+
+Pablo Lopez:
+How are you? All good to you. Thank you.
+
+UNKNOWN_SPEAKER:
+Hey guys. Hi. Hi team, good morning.
+
+Bastian Osorio:
+It's all good.
+
+UNKNOWN_SPEAKER:
+Hi, everyone. Pretty early for you, Saul, isn't it?
+
+Bastian Osorio:
+What time is it in Chile? And 5 p.m.
+
+UNKNOWN_SPEAKER:
+Wow.
+
+Bastian Osorio:
+Well, thank you for the for the effort. I will. So it's the last week of the year. Yeah.
+
+UNKNOWN_SPEAKER:
+So.
+
+Bastian Osorio:
+Yeah, we're we're almost there. I don't know for what, because for it is not going to make that much of a Okay, let me share my screen.
+
+UNKNOWN_SPEAKER:
+Yeah, so just, I will do a brief introduction.
+
+Bastian Osorio:
+So Pelayo is aware of what are we doing here. So basically we have this weekly meeting in which we basically review all the progress and basically the different issues we're facing regarding the configuration. Okay, so we have mainly two, I will say, well, we have two, in this part we call them a business unit, which is MRO and chemicals and drilling. And on each business unit we have to try which are differentiated by the waves, right?
+
+ Wave one, wave two. In the wave one, we are configuring demand and inventory, and in wave two, we're configuring basically supply, okay? So we have, what we have done is basically split the supply the two waves into three springs. And of course, each spring has its own set of key figures, of metadata, of let's call it topics that need to be addressed. Okay, so this meeting is to monitor, is to try that has been the progress over the last couple of weeks on the different fronts.
+
+ But I would like to start by checking a little bit of the dates for the MVP script creation. So as you know, we have planned travel on-site meetings on the week of the 21st. Of January till the 30th of January, so for 10 days. So that gives me, sorry, Hector and I will be on site basically showcasing the solution for MRO and chemicals and drilling for the Wave 1, okay? So considering that, by Friday 17th of January, we should be ready with the user cases and with the data they have provided.
+
+ So I think this should be the focus for the next basically two weeks, right? Because based on the timeline, yeah, we should be working on the MVP script creation, the usage cases. And yeah, that's it. So I've checked that and I really like what you Saul, this one here, the test creation. So I think it will be a good idea for you, Arun, if you can take this one as an example for also for the creation of the test of the script for drilling.
+
+
+
+Arun Singh:
+I have a question, sorry. So basically for drilling, right? We have this data sets, right? And we need to showcase to the drilling users about, you know, the data and how it will play an important role in the drilling demand process. So that will be covered as part of a sprint testing, like showcasing the data in the system and everything. And before that, I should work on this test So that meeting will be held like once you guys are on site?
+
+
+
+UNKNOWN_SPEAKER:
+No.
+
+Bastian Osorio:
+So these are two things, two separate things. So one thing is the meeting with Dignish that hopefully we will have this week. After that, we will have a session with the leaders. I don't know with who, but I guess Abdul Lateef and some more people. Just to make sure we address. I'm pretty sure you have managed this well. So I'm pretty sure they will give the thumbs up. Oh yeah, this is looking good.
+
+ And based on that, I mean, you can start right away creating this kind of script, right? Basically, the step-by-step of the entire demand and inventory, well, demand process for free.
+
+Arun Singh:
+There is no inventory. So, parallelly in the meeting that we have, right, our scheduling for the future perspective, I should be working parallelly on this one also, right? So, for the next two weeks, we are targeting to complete the test script for the v1, right?
+
+Bastian Osorio:
+Yeah, which is basically the same thing, but it's more structured, right? This is more step-by-step instead of, yeah, it's basically organized, it's structured. What you have already created. It's no more than that. And of course users need to be able, and that's why we're going to be there, we'll be doing these different activities.
+
+Arun Singh:
+So what test scripts should be part of Sprint 1? Did we define somewhere?
+
+Arun Singh:
+So you mentioned there are three sprints, right?
+
+UNKNOWN_SPEAKER:
+One, two, three. Yeah.
+
+Arun Singh:
+So in this, initially, what should be the topic that will be covered as part of sprint one, sprint two, sprint three for drilling?
+
+Bastian Osorio:
+Did we have specified somewhere? So it's a good question. And the answer is that Well, the sprints really are not super well-defined.
+
+UNKNOWN_SPEAKER:
+It's more broad.
+
+Bastian Osorio:
+But the important part is the MVP. So of course, there's plenty of requirements. But we need to differentiate the ones that are critical and are part of the MVP than the ones that are maybe more, I don't know, they're not so relevant. And we can leave it out for now, at least. Maybe if you show the critical route of the system. For example, of course, the bomb explosion for the drilling material is something that has to be there, of course, because without that, it's not possible to create any forecast.
+
+ But then you have other requirements that, of course, we can review later that are not and are not critical, so they're not part of the MVP, and we don't want to show that because it's going to, the use of these MVPs to, it showcase, I mean, it tries to achieve two objectives. The first one is to, of course, show the tool, but the second one is that user can get hands-on on the solution so that they can test it with their data and they can make sense of everything we have been discussing over the course of the last, I don't know, two months, two, three months.
+
+ Understood, yeah. So considering that, we don't want to, like, overwhelm them showing, like, a lot of different steps that is going to be hard to follow. We want to show, yeah, the critical steps. And on top of that, they're going to ask for new requirements or requirements that are already there but haven't been addressed on the configuration or with the data or whatever. And those requirements will be addressed based on criticality, on importance during the UITs.
+
+ But for me, the main difference between the UIT and the unit testing will be the data integration. That's going to be the main point of difference. For UAT, we need to integrate data, and that's why Sagar is working heavily on, well, first of all, the firewall, then secondly, in configuring all the different massive data and transactional data flows, so we can be ready to, again, show basically kind of the same thing where we will be doing for the MVP, but for for the UAT with the entire data set.
+
+ And yeah, I think, in thinking about data, we have to be very smart and to show, again, show different, I mean, different cases for the same example with different data. Like, I don't know, for this, let's think about, let's think about chemicals and MR, in MRO where the data, I think, where we can make a more clear difference between some materials and some other materials in terms of, for example, forecast.
+
+ So materials that have higher consumption will have a more reliable forecast. And that is one example. And other will have like very little information in which we can create a very basic forecast. Although both will follow the same steps, the result will be very different one from each other.
+
+Bastian Osorio:
+So regarding the key figures, I think that this is probably one of the most critical part. I've been seeing, Saul, that you're pretty advanced with the configuration. Is there any issue that you're facing, any missing definition, anything? Almost done with MRO, with demand in inventory?
+
+Saul Portillo:
+No, for now it's okay. We built the new config, the new configure demand during leap time when we discussed with you and Hector. It's okay in the configure. And this week the idea is try to focus in the results and build the KPIs, alerts, job templates, dashboard, that part to see better the result and analyze. We are focused in MROs per part result and the for demand inventory and chemicals. This is the...
+
+
+
+UNKNOWN_SPEAKER:
+Cool.
+
+Bastian Osorio:
+So, what I will do is to schedule for next week and the week after a couple of meetings for MRO and chemicals and for drilling just to go through the script and see different uses The idea, of course, is that although I'm going to be, Hector and I will be on site, is that you also can be in the sessions and probably maybe show some aspect of the solution and answer some questions if required, right?
+
+ This week, I will be working to define the users. Probably what we're going to do is, because we have so many AGCs, is to divide them Let's assume we're going to have one demand planner per AGC. So in that case, and then on the top of that, we have the process champion and the demand manager. So I guess we're going to have around 20 people. So it's not possible to conduct all this test script for 20 people all together.
+
+ So because we're going to be two weeks there, probably we will separate them into two groups, at least two groups, maybe. Yeah. Something like that. I haven't decided yet, but because we haven't defined yet the users, but it's something we need to do this week for sure.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+And same for drilling, same for drilling. I don't know what's the progress of the configuration on on drilling, I don't know if you can brief us on that.
+
+Arun Singh:
+Yeah, so from Dima's perspective, I've completed most of the requirements, okay, configuring in the system. So I'm currently working on the analytics part, okay. So configuration, I think, yeah, even I've started creating copy operators, you know, segmentation to update some of the parameters. But yeah, this file is not updated. Maybe by this week, I will update all the configuration in this file.
+
+
+
+Bastian Osorio:
+Can we update it here? For example, master data to be used.
+
+Arun Singh:
+Is it ready? I think it's ready, right? Yeah, it's ready. So let me review. I'll review and update today, OK?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+And so here regarding, for example, well, like based snapshot spending.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Saul Portillo:
+For example, in a snapshot, I don't know what type of snapshot we need, for example, a snapshot for consensus demand. Yeah, that's pretty much it.
+
+Bastian Osorio:
+And for the reorder point.
+
+UNKNOWN_SPEAKER:
+Reorder point, OK.
+
+Hector Palacios:
+Yes, our idea is... The policies, the resource, basically.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arun Singh:
+So by the way, the snapshots will be created for, like, three snapshots will be created, like 12 or 6.
+
+Hector Palacios:
+Are you asking for the horizon Arun or for how many in the past? How many snapshots will be created?
+
+Bastian Osorio:
+Like the standardizing.
+
+Bastian Osorio:
+Have you tried to use the... I think, for example, process management is something that I don't think is going to be part of the MVP.
+
+Hector Palacios:
+Yeah, we can skip that one. For the snapshots, we need to think on which functionality we are going to use. Because there are two ways capturing the snapshots. So we are lying.
+
+Bastian Osorio:
+I would like to use the snap based on a monthly level, but I'm willing to hurt different options. But what I think is a benefit is that you can know when this snapshot was taken. With the other one, I think it's more complicated. Or it's not as straightforward as is with this one. So you know, okay, this one was taken two months ago, three months ago, so on and so forth. For the other ones, they're more like a cascade, right?
+
+ Once you copy one gets into the other one and It's just more like different key figures to show the months, right?
+
+Hector Palacios:
+The luck. So you have this one, two, three, four, five, you know, and in the luck base, instead of having that, you have a attribute. The number.
+
+Bastian Osorio:
+Yeah, that's why I like more this one because at the end it's the same key figure, but you have an attribute to differentiate them. But yeah, I mean, if someone thinks can argue, can have a different argument, I'm willing to talk and see which option is better. I like more these ones, but no.
+
+UNKNOWN_SPEAKER:
+Question.
+
+Arun Singh:
+So based on the data volume size, I suggest to you just a regular key figures okay and with the copy operator logic we can populate the you know we can take the same behavior and the reason is because some of the language or like some of the source key figure right will have the um conversion okay so if one product has multiple um conversion in that case the date the data volume size will be increased okay and the job will be you know impacted because if project, I've seen this behavior.
+
+
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+So it's up to you guys. Okay. I'm just suggesting that you say around the leg based cost, the unit of measure, the source key figure as the unit of measure, but you can, you can do it without the unit of measure, but you, you just check. Okay. I'm just, because I have used one of these, uh, not the lab bed, but the standard snapshot, uh, operator. Okay. So, uh, It has an issue because the source key figure, if it is using UM conversion, then with the standard snapshot operators, it will create, if one product has 10 alternate VMs, so the 10 reports will be created automatically.
+
+ So that will cause an issue. So I just use regular key figure to mimic the snapshot behavior. But yeah, it's up to you guys.
+
+Bastian Osorio:
+Just let me know. I think the LUT-based snapshot can I mean, I have faced that issue that you were mentioning before, but it is possible to use the lag-based snapshot without a unit of measure and then just add it as a calculation. And you have to add it just one time because, yeah. At the end, the difference is the lack. Regarding business role, I think we should we should be create the most standard one, demand planner, inventory planner, well, the ones that comes with the standard configuration.
+
+ And based on that, then we will need to create, but not now, the difference permission filters. So I think for now, I think we will have to part this one, the permission filters. But the permission roles, sorry, business roles is something that we need. But I wouldn't put the focus on permission filters, process management, or users, user groups. For now. And regarding alerts also. Bastián, for example, I see the number three, the risk level and service level profile.
+
+
+
+Saul Portillo:
+We are spending about is really in this moment is in progress because we are trying to, we are in progress because we are run the solution and try to build a master that will complete the risk score based on
+
+UNKNOWN_SPEAKER:
+the segmentation.
+
+Saul Portillo:
+and we are advancing that part in the risk level and service level profile.
+
+Bastian Osorio:
+I will put a meeting. Well, we have a meeting to discuss this further, but I think also there's some input required from users so we can determine the service level and then the, sorry, the risk level and with that the service level. So I think maybe you can just create a configuration to address the different cases, but it's not, it's not needed at this point to you, I mean, to have the entire information because I understand that we're, we're, we require some, some further definition from users.
+
+ For example, the definition between risk level and service level is something that hasn't been defined. We can put whatever, you can put whatever you think is, is, is the best for now. But of course, making sure that With users, we will be able to change it, to adjust it based on their definition.
+
+UNKNOWN_SPEAKER:
+Yeah, it's okay. It's okay.
+
+Saul Portillo:
+And the same for database, is to start with a base and later adjust with the user's information. Yeah, I think we share a template.
+
+Bastian Osorio:
+I don't know if you have it.
+
+UNKNOWN_SPEAKER:
+The templates.
+
+Saul Portillo:
+I think no. We use the table for the BPD document. But I don't have that.
+
+Bastian Osorio:
+Yeah, this one. I will share it with you.
+
+UNKNOWN_SPEAKER:
+Okay. Perfect. Thank you. Yeah, also.
+
+Bastian Osorio:
+So, I would like you to start, if you can start inviting Pelayo to configuration meetings. So, I understand he's not going to be able to, of course, follow everything you said, but I don't know, if he can start understanding step by step what you guys are doing, that will be great. Okay. No. Um, you have the computer.
+
+Saul Portillo:
+Yeah, I already got it like a week ago.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Saul Portillo:
+And you are, you start the, the gutters. Yeah.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Pelayo Fernandez:
+I'm ready. Okay. Second module or the third one. So yeah, making progress a little bit.
+
+UNKNOWN_SPEAKER:
+Okay. Perfect.
+
+Bastian Osorio:
+So I will put this one in there. I will put it in the share folder. I think it's better because if you can, if you want to make any change, you can do it and And we're going to be all on the same page.
+
+UNKNOWN_SPEAKER:
+Unique test. Okay.
+
+Bastian Osorio:
+We still have 30 minutes.
+
+Hector Palacios:
+So, I was checking the snapshot and I remember why we don't use the lag-based busting. Why? So we can discuss later maybe, but the point is that usually, at least in a normal SNOP cycle, you want to compare the last cycle of the, let's think for example, the length to a month, for example, and compare it with what you did the last cycle. So if you use the normal Snapchat used just one key figure for doing that, to check what I did the last cycle for the next 12 months.
+
+ So comparing basically the current year status, last cycle versus current cycle. If you do that with the lag base, you need like 12 key figures to bring that picture. Because it's how it's organized, you know? So that's it. It's much more complicated user-wise, to work with the lag-based than the other one. If you want to use the lag-based for other reasons like system-based calculation, it's much better the lag-based.
+
+ But for the users, it's not user-friendly. So it's exactly what you're doing. So if you put the snap to the calculation, would be like a diagonal right?
+
+Bastian Osorio:
+Yeah if this is a hundred.
+
+Hector Palacios:
+So the point is that for each month you will be mixing the results of many lakhs if you put it at high level.
+
+Bastian Osorio:
+This one if you take it now now, not even zero. Current period, if you're here, you have 100, then 100, then 100. Then the next period, let's say you call 110.
+
+UNKNOWN_SPEAKER:
+Perfect.
+
+Hector Palacios:
+If you change the forecast now, yes.
+
+Bastian Osorio:
+150, 150, 150. Exactly.
+
+Hector Palacios:
+So if you don't want to bring, if you want to bring it at the multi-level only without the lags, then you are going to zoom all the lags.
+
+UNKNOWN_SPEAKER:
+Yes. Yeah.
+
+Bastian Osorio:
+I mean, the benefit, the benefit is that if you want to see what happened, for example, throughout time for this one you can say okay a month ago I said 150 but two months ago I said a hundred that's the benefit of it but yes you're right if you want to like put into just one key figure one line what I said I don't know two months ago it's not That's the normal case scenario.
+
+Hector Palacios:
+That's what usually they want to see.
+
+Bastian Osorio:
+And then the question, I agree with you, then the question will be how to clearly identify when you took the snapshot, okay? If you have, whatever, 100, 150, let's say. I'm not saying this is the because of course in this case you won't have it, but you have 150. We need to find a way to clearly state that this was taken two months ago, whatever.
+
+Hector Palacios:
+Yeah, I mean, the Kefir has it. It's like Kefir N-2 or something like that.
+
+Bastian Osorio:
+Yeah, but that is just, the thing is that if you use on the same month you take it many times you will complete all the different so it's not it's not yes the the picture of the normal snapshot is
+
+Hector Palacios:
+uh let's say it's a compounding of many lags in the future for sure it's a different approach it's like cycle based instead of lag based yeah so yeah in that case we need to be super careful with with when taking the snapshots otherwise that that that's the thing if you miss it yeah it's like you lose it yeah no yeah no no it's completely right it's all the way but it's kind of the same with whatever snapshot you also need always need to be careful when you take it so it needs to be like a very important event the closure of a cycle and you you take it yeah Now, to skip the Arun, Saul, to skip the unit of measure point, we need to create another hierarchy field without the unit of measure, and we take the snapshot of that one.
+
+
+
+Bastian Osorio:
+I think you can do it. No, no, you can do it. You don't need to create another one. You can take it without the unit of measure.
+
+UNKNOWN_SPEAKER:
+Are you sure?
+
+Bastian Osorio:
+I have done that, yeah, I have done that. Because the consensus demand is stored. Without unit of measure, just to give you an example. So you have to make sure to change the unit of measure and then add it as a calculation.
+
+Hector Palacios:
+Let's check if that's the way. I have one question because I've been avoiding working with these snapshots since a long time because there were many limitations on the horizon that we could calculate. It was like nine months, I think, or less. And usually that is not what the customers are expecting. They expect more in the past, more in the future. And there were many limitations. So I don't know if that's the current state or if we can calculate for a broader horizon now.
+
+
+
+Hector Palacios:
+You know guys, if that is the case, be with soul room.
+
+Vivekanand Gajula:
+I don't think so. You know there is any restriction on the horizon. Uh, there is there is a restriction on how many snapshots you can take. But not the horizon, you know, as such. Now, for example, if we use lack based snapshots and if my if I'm not mistaken, you know, I think maximum 12 snapshots you can take. So only 12 lags you know you can have. I'm talking about the lag based attribute, OK? No, I know for the lag based it's OK.
+
+
+
+Hector Palacios:
+I used for the other one that is the usual case, the normal.
+
+Vivekanand Gajula:
+The other one I think in that also when you define a snapshot, you know, I mean the standard definition of snapshot I mean. So in that also the moment you define I think 12 key figures it creates, you know. A long time back it was only nine but now I think it is 12 but when it comes to like how how many periods it can you know take a snapshot then I don't think so there is any restriction on that that's good that's good because in the past was very bad and I is 12 key figures you know uh it automatically creates you know the moment to define a snapshot.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+Then it's fine. Let's try to use that application and trailer snapshots. I've seen that they are fine.
+
+UNKNOWN_SPEAKER:
+More than that, it's difficult to use. Yeah. OK.
+
+Vivekanand Gajula:
+If they require more than one, then I think Then in that case ZKeyFigures will have to create and we have to use copy operators, you know, rather than snapshot operators.
+
+Hector Palacios:
+It's very unlikely and I think we will push that, not doing that way, but to take like 12 pictures of what your forecasting is.
+
+Bastian Osorio:
+It means that you need to take, no, it's super complicated because you need to create 12 key figures and 12 copy operators and you need to be very careful.
+
+Hector Palacios:
+I mean I did it, I did it, I did it. The only point is that in like finish with Prax, maybe you have the use case, you see the forecast for the current year and all the lags, you know, all the cycles basically. But for this, that is very slow moving, most of the snapshots are going to be very similar.
+
+Bastian Osorio:
+Indeed for a slow moving, probably all the snapshots are going to be the same But I don't believe, I don't think it's, I mean, we have two ways to approach it with like base and with the regular snapshots. If I think we should try to stick to those one, if we need something else, I don't know, it has to be super clear the requirements that just jumping into that very complex and unfriendly solution of creating 12 years to all copy operators so on.
+
+
+
+Hector Palacios:
+And I think that probably in some cases we are going to use snapshots but it's going to be the last value, the last result is not going to be the last month, it's going to be maybe the last quarter or the last year, the minus one. So the frequency that we are taking this will depend on the frequency we are reviewing that particular case. For chemicals probably month to month, but for a regular MRO is going to depend on the movement.
+
+ If this is moving like once a year or every three year, probably you will have a yearly Snapchat. And then minus one will represent the last year, minus two, the last two years and so on, because it doesn't make sense to calculate a monthly Snapchat to something that is not moving at all.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+Okay, so we have it then. That is going to be like the closure of the process management things. So whenever they approve something, these snapshots are going to be taken automatically. Pasi, you want to discuss something else here?
+
+Bastian Osorio:
+No, I think maybe we can stay with Arun and review some of the results.
+
+Hector Palacios:
+If he has something. I want to check, maybe you already discussed, but if we already translate the VRD into additional requirements, because that is one point that we have pending on the teams.
+
+UNKNOWN_SPEAKER:
+Okay. Which one?
+
+Hector Palacios:
+Because we have the VRDs, right? So the idea was to check if there were additional requirements, like not the array conceded ones. You need to go to, well, you have it there. If you go to configuration meeting, translate BRD supply into additional configuration tasks. So, basically identifying new key fears or whatever we need to create because of the supply and for the drilling I think this is a point but we have a session for this discuss this.
+
+
+
+Bastian Osorio:
+I don't want to go into this now. Otherwise, we're going to extend for three more hours.
+
+UNKNOWN_SPEAKER:
+For the preventive.
+
+Bastian Osorio:
+Yeah, we need to have an additional session.
+
+UNKNOWN_SPEAKER:
+No, we do have it. Okay.
+
+Bastian Osorio:
+Yeah, I want to just talk briefly about the BD. The other day, Rahul started asking about this, and I said, there's no way. I mean, you guys, he thought we will come up with a proposal for solutions. And I said, no, that's not the way it works. That is, you come up, no, you, when I say you, I mean the business, come up with a definition, and then we can see if we can configure that definition in the system, okay?
+
+
+
+Hector Palacios:
+No, the point is that I remember last year I was raising that in an open point meetings, like, guys, you need to provide us the VED logic, LGPA, logic.
+
+Bastian Osorio:
+So we compare it on AVP. And Jagannath said, you come up with a proposal.
+
+Hector Palacios:
+Yeah. And Arun starts, sorry, Rahul starts like, guys, OSCM team, can we propose something, you know, in front of them. Yeah. So you need to say, OK, we will check internally because.
+
+Bastian Osorio:
+Yeah, but yeah, but absolutely not. Like, it's not up to us to say and not even given like a best practice. There is no such a best such a I mean we can give like a book definition of BD no more than that but it is up to them say what is vital essential and desirable it's not up to us
+
+Hector Palacios:
+they already have it they already have it so I they have the inventory procedures they have that logic but that is not something that we can configure I think so we need to be very I am for the LGPA last year I found something the other Where? They shared something with this guy, with Fajuri, and when he shared the notes on the VPD, it was something very simple, but when I checked the document, it was something much more complicated, with a flow and all of that.
+
+ Let me check.
+
+Hector Palacios:
+So for the LTPA, they simply share something. Procurement manual, materials management, procedures, you see. Planning and initiating the LTPA. So they have this information is what they share with us, but then there is a lot. So you see that there are like many rules. So we can ask LGBT to translate that. This into some actionable rules, actionable rules, maybe. Let's see, but let's see how we can manage this.
+
+
+
+Bastian Osorio:
+But at least initially, I would, I wouldn't put it in the, if we're not super sure, I wouldn't put it on the, on the MVP.
+
+Hector Palacios:
+You see me fast moving, high EMI. It is like if it is fast moving, then.
+
+Bastian Osorio:
+And yeah, I think with the rules, with the manage, manage. Manage maintenance rules for mass data maintenance is possible to get the this yeah this rule but yeah but we need the definition if the definition is there then but this is for ltpa or vd ltpa ltpa is to is
+
+Hector Palacios:
+when you need to buy you need to create an agreement with a supplier because you have a material that is critical or I don't know So in other cases, you don't want to go through the tendering process to find a supplier from scratch and you want to have one specific regular supplier for this material, in this case, you go with LGPA. It's basically, I don't know how to say it in English, but it's a licitación, because remember that this is a public...
+
+ Yeah, tendering. Tendering, well, that.
+
+Bastian Osorio:
+Yes, what I wanted to say is that still this is part of supply so there's no need to address this now.
+
+UNKNOWN_SPEAKER:
+Good point. Okay, that's it for now.
+
+Bastian Osorio:
+Let's leave it here. I will schedule a meeting to review the use cases for drilling.
+
+Hector Palacios:
+Let's put a date on the translated BRD requirements into this because if there is one requirement that we need to include or we need to keep into consideration for the meetings that we need to do right now, then we should know it.
+
+Bastian Osorio:
+Let me share my screen because I shared some data at the beginning. In the timeline here, we're going to be doing the Wave 1 unit testing on the 20th. The MVP script creation needs to be ready on the 17th, but of course, It shouldn't be ready, like just ready that day. Because we need to check before everything is working fine, right? We want to have the use cases end-to-end ready. We're not going to improvise during the meeting.
+
+ So, of course, this the deadline, but we need to, we will have, as I said, sessions next week and the week after to review this. Okay. So, we are now, yeah, this is, yeah, we have two weeks. So, this should be the focus of the next two weeks to try and you have made quite a progress. So on that, in the demand part, we need to do it as well for inventory. And I put some additional, I start working, I was working on this.
+
+ Yeah, here I put inventory script. I start creating something very basic, but you can start from there. And same for trigging, same for triggering. And we can review them first, what is the script, and then review the examples, right?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+And safe for drilling. I think, of course, because of the data, because of all this back and forth, we are a little bit delayed. But yeah, it's not because of Arun. It's because of the data and all that stuff. So I don't know if you feel like adding more details here, Hector, in the timeline.
+
+Hector Palacios:
+No, no, I just put for the next week to, in the next session of configuration next week, let's check this via the requirements. If there is an additional, let us know. But by then, let's have it clear. We are missing anything. I'm missing the task that I had for Arun. Maybe you already completed Arun?
+
+UNKNOWN_SPEAKER:
+Which one?
+
+Hector Palacios:
+The VRD requirements into additional configuration? Yeah, yeah, yeah. You completed?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Arun Singh:
+There is one point which is still pending. That is kitting. Okay. I think that is still an open point for that. We need to see. So maybe Rahul will be checking with the business and probably elaborate and just to understand the kitting process is different than the regular bomb process.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+I will put a task again, Arun, so the next week we'll review it. But if you already have it, then you don't need to worry about it.
+
+Arun Singh:
+No, no, no. Don't put it. We already have it. It's still documented, right? In the BPD for drilling supply. It is from supply standpoint, but for demand, I think we are mostly covered up. There are some additional attributes, but yeah, I think that will be part of, you know, once we start doing the sprint testing and all those, I think we will get more inputs from the planner. So let's see. So guys, did you receive a new invite regarding the drilling knowledge for something like, uh, this Friday.
+
+ Oh shit, man. I am not there. So, uh, I'll be on leave right from this Friday till I think next Thursday. So if possible, then probably we can have it on this Thursday.
+
+Bastian Osorio:
+Yeah, we're not the one scheduling the meeting.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+So maybe we can ask him to keep him busy.
+
+UNKNOWN_SPEAKER:
+Because I don't need to remain responsible.
+
+Hector Palacios:
+So we don't know if they can move it until we stay out on your out.
+
+Arun Singh:
+So I'm out from this Friday till next week Thursday.
+
+Hector Palacios:
+OK. Thursday. So almost a week.
+
+Arun Singh:
+Uh, just let me see. From this Friday. Oh, sorry. Um, not, uh, eight, nine, six, five, six, seven. Oh, this will be some of it. Just give me a second. Okay.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Singh:
+Yeah. From the three to the nine. Yes.
+
+UNKNOWN_SPEAKER:
+Yes. Okay.
+
+Hector Palacios:
+So one option is to postpone that to the 10 or, uh, move it to the two Thursday, maybe.
+
+UNKNOWN_SPEAKER:
+Yes, yes, yes. Okay. Guys, a question.
+
+Saul Portillo:
+How was the meeting last Friday for drilling with the PMG? We are talking about that one.
+
+Hector Palacios:
+Yeah, we didn't have it.
+
+UNKNOWN_SPEAKER:
+We didn't have it.
+
+Hector Palacios:
+No, last minute, they skipped the meeting because we are basically subject to the schedule of Kenan that is like very important, busy guy, you know, so whatever he says. Okay.
+
+Vivekanand Gajula:
+Hey, Bastian and Hector, I have one question. Know on the unit testing you know that is planned you know for coming month so uh so presently I think uh whatever testing is planned right for that we are using the data that we got from vignesh yes so so this data is more from demand and inventory standpoint or even you know from supply standpoint also we have everything We have some things.
+
+Bastian Osorio:
+But of course, because Saul has been requesting the data, and his focus is on demand and inventory, I think once you have some configuration done, you can start requesting data to Bignish. But let's be on the same page first. Let's agree on what do you need, and then we can share it.
+
+Hector Palacios:
+Check with Saul, because Saul already has There is no overlap between inventory and supply, right? So on the location source, the lead times, all that information probably already has it.
+
+Saul Portillo:
+Yes, and Vivek, you can see the data shared in our Agnoc in the part configuration. Let me show. Give me one minute. Let me share my screen. I'm sorry.
+
+UNKNOWN_SPEAKER:
+Here, you can see my screen?
+
+Saul Portillo:
+Yes, yes. Yes, in Agnoc, Documents, General, realized configuration and here, and that is not manual upload. And you can see all the different information. For example, chemical, this is the last one, the version three. And for example, for MRO, this is the last one, the V2 and this one. And this is for example for turnaround. You can see for chemicals and MRO. And if you just see the information, for example.
+
+ You can see open POs, stock on hand, reservations, for example.
+
+UNKNOWN_SPEAKER:
+OK, perfect.
+
+Vivekanand Gajula:
+I will go through this.
+
+Bastian Osorio:
+Yeah, he shared pretty much all the information. I don't know if we're missing. You can check, Vivek, if there's something missing, and then we can check with Vignesh. But it seems like we don't have any information there.
+
+Vivekanand Gajula:
+Yeah, I will go through it. I think what might be missing in that file is, for example, max stock level. OK, I'm not sure. Whether we have that information or not because we need this you know for ROP based planning right yeah and probably VMI stock you know for chemicals so I will go through the files and whatever is missing I will just highlight that and I will share we can review that and based on that we can reach out to you know Vignesh yes in in that case Vivek they they sent for example, maximum stock level, minimum stock level in the
+
+Saul Portillo:
+part of a master data product, because it's a leap time, for example, you can see in those different set of data documents.
+
+Vivekanand Gajula:
+Okay, so let me take a look at this structure.
+
+UNKNOWN_SPEAKER:
+Okay. Okay, so we need to jump to the next one. Thank you, guys.
+
+Bastian Osorio:
+Thank you, Timmy.
+
+Hector Palacios:
+Thank you, Tim.
+
+Vivekanand Gajula:
+Thank you.
+
+UNKNOWN_SPEAKER:
+Bye-bye.
+
