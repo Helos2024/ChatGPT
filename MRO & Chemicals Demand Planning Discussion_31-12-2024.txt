@@ -1,0 +1,601 @@
+UNKNOWN_SPEAKER:
+Hi Hello.
+
+Bastian Osorio:
+Hi, everyone.
+
+UNKNOWN_SPEAKER:
+Hi.
+
+Bastian Osorio:
+Give me two minutes.
+
+UNKNOWN_SPEAKER:
+Okay, sure.
+
+Pelayo Fernandez:
+Any plans for today, for New Year's Eve?
+
+Saul Portillo:
+My case, dinner with the family. Only. And receive the happy new year in the house.
+
+Fiamma Giorgi:
+In our house.
+
+UNKNOWN_SPEAKER:
+Just family. Same. And you, Pelayo?
+
+Saul Portillo:
+Do you go to the solaration? No, no, no.
+
+Pelayo Fernandez:
+I don't know any to eat the grapes and all of that.
+
+UNKNOWN_SPEAKER:
+No, just dinner with family. Okay. Yeah.
+
+Bastian Osorio:
+So let me see if I can call Hector. Hector.
+
+Bastian Osorio:
+But just in the meantime, the purpose of this meeting is to quickly, I don't know if quickly, but basically define a solution for preventive and The main point, I mean, we have two issues. The first one is that we don't, it seems that we don't have enough data to create the preventive maintenance plan. So we need to find a workaround to create a forecast for the preventive maintenance. That's one thing.
+
+ Okay, and assuming that we're able, which is not for sure, assuming that we're able to create such a forecast for preventive maintenance, should be this one used for inventory calculation as well? So those are the two questions that we need to answer. Saul, I don't know, I know here, and you, and Fiamma, and maybe Pablo as well, are the ones that have been looking at the data in more detail. So I don't know if you can maybe give us some insights about what you have seen.
+
+ And here, let's brainstorm a little bit because all ideas are welcome. At least to give it a thought because we need to be creative here and to find the best approach.
+
+Saul Portillo:
+Yes, in our case we are working principally in correctives for MRO and chemicals. For both in corrective and not for preventive in this moment. And we have We have something to discuss but we can discuss in another meeting. For preventive only in the data we have a few examples because they don't give a lot of information in preventive. Okay. We have a lot of information for corrective. A lot of information for preventive, but for preventive, we see, I don't know, last, I don't know, about three weeks ago, I think with you, Bastian, we see the pattern is like intermittent and non-normal pattern, because you see For example, historical consumption, a lot of historical consumption of one material in the past three years ago.
+
+ But you see, for example, in the second year decreased the consumption and later in the And you can see a normal pattern. A pattern, for example, you can define, okay, you see, for example, it consumes six months and the same consume or the same pattern with a month. It's difficult to define in the preventive part, okay?
+
+Bastian Osorio:
+Can we look at the data?
+
+Saul Portillo:
+Can we look at the data?
+
+Bastian Osorio:
+Yes, let me see.
+
+UNKNOWN_SPEAKER:
+Hi, Hector.
+
+Hector Palacios:
+Hector. Hello, Bastian. Hello, Hector. Is this a discussion for the preventive part that we were discussing the other day? Two things. No, two things.
+
+Bastian Osorio:
+The first one is how we're going to determine, calculate, estimate whatever you're going to call it, the preventive maintenance forecast plan, again whatever you're going to call it, and then if this one should be an input for the inventory
+
+Hector Palacios:
+calculation. Let's take a step back. Should we? The preventive, I'm not really sure right now.
+
+Bastian Osorio:
+What we said is that we're going to we're going to test it. We're going to use it as input and then look at the results. And then based on that, we're going to make the final decision, whatever. That's fine. But the first point is to determine or try to build the preventive maintenance plan. So that's why I wanted to check the data first. I don't know if so you can share your screen. For chemicals or MRO, it doesn't matter.
+
+ But let's try to look at some data and see if we can draw some conclusions.
+
+Saul Portillo:
+Yes, let me see. Go ahead, Hector. So what I've seen is that for MRO, 99% of the cases, we don't need it.
+
+Hector Palacios:
+So we don't need to create a forecast at all because we are going to base our supply replenishment based on the reorder point so in that case we don't need to have a preventive forecast not a corrective forecast it's
+
+Bastian Osorio:
+only reorder point plus whatever work order we have for preventive but a work order not a forecast and this is because yeah I remember the explanation that we gave ourselves is that these are very rare consumption because are very expensive part that they don't supposed to change a lot and they don't supposed to change in a preventive maintenance. That's a key point, right? So, okay, taken and that will solve, I don't know, 95, 98% of the cases in MRO.
+
+
+
+UNKNOWN_SPEAKER:
+What about chemicals?
+
+Hector Palacios:
+No, chemicals is a forecast but not preventive.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Bastian Osorio:
+It's only corrective. But I remember the data that Bignesh provided, and I saw some preventive orders. No, no, no.
+
+Hector Palacios:
+There is, but the reality is that they are not considering preventive correctly. They are just based on consumption. And the understanding is also it's very frequent, so I think that is going to be a normal forecast in this case. Seems like everyone is aligned on that.
+
+Bastian Osorio:
+So we're going to create a forecast.
+
+Hector Palacios:
+Yeah, remember that in the VPD, we already mentioned the forecast not preventing nor corrective and they sign off that.
+
+Bastian Osorio:
+OK. Just forecast addressing everything.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So that's a very normal case for anything. And with that, And we cannot calculate the inventory policy.
+
+UNKNOWN_SPEAKER:
+Yeah. Yes.
+
+Bastian Osorio:
+I mean, when needed because in some cases they have their own policy. Okay. So we have like 99% of the cases with a clear strategy. So the third point will be this, this part like filters in which I think there must be at least a few of these cases with, again, filters, I don't know, pump seals, that kind of stuff.
+
+Hector Palacios:
+What do you mean by filters? The attributes?
+
+Bastian Osorio:
+No, no, no. Filters like, I don't know, pump filters, the disparate parts. I'm speaking about...
+
+UNKNOWN_SPEAKER:
+MRO.
+
+Bastian Osorio:
+Yeah, MRO that are that have or should have maintenance plan. Because I guess they have, and we saw one case, do you remember those 4,400 consumption for 400?
+
+Hector Palacios:
+That's your part, yeah. But it was like corrective, but it seems like they took the opportunity to do everything at once. So that's another point. It seems that the data is also not reliable. So that's another point for not doing a forecaster.
+
+Bastian Osorio:
+Saul, can you share your screen to look at the data?
+
+Saul Portillo:
+Yes, give me a second because we are prepared for corrective and not for preventive. This is a This is the actual consumption. They give off only this information, okay? The complete preventive activities or MRO, okay? Only one, only this one, and the plant preventive maintenance, only this data, okay? And if you see here in the system, This is the actual consumption for preventive maintenance only for these nine roads and different years.
+
+ Let me see. Sorry. Let me see. We have information. I think we don't have, right?
+
+Bastian Osorio:
+We only have compass? No. Combination? Where is COM? Where is what? You have a column with a header called COM, the first one. Ah, combination, yes, combination.
+
+Saul Portillo:
+Combination of what? Equipment Location Maintenance.
+
+UNKNOWN_SPEAKER:
+Yes. With the RTID. RTID.
+
+Saul Portillo:
+equipment, location, and warm, exactly, and warm. This combination is internal for us for work the data, but they give us the equipment, the location, the dates. This case.
+
+Bastian Osorio:
+And we have we don't see any pattern, for example, for the same equipment.
+
+Saul Portillo:
+Did you guys find any pattern? No. No, I have a doubt. Because. My point of concern is that are we going to underestimate the consumption?
+
+Bastian Osorio:
+Because if they have historical consumption for preventive maintenance, it means that they will have future consumptions. And we are not using those consumptions to estimate the forecast. So are we going to underestimate the consumption? Because basically, again, you have past consumption, previous consumption, historical consumption for preventive maintenance. We are not doing anything with them.
+
+
+
+Saul Portillo:
+The reality they give us, if you say, you see, it's different information. This is a complete preventive maintenance. This is a one and later they give us other information. We don't work with that because we are working only the corrective for qubicos and MRO, no? And if you see, for example, in this part, they give us Is here's um.
+
+UNKNOWN_SPEAKER:
+Let me take a look.
+
+Saul Portillo:
+Foreign Foreign This has really been modified. Bye.
+
+Saul Portillo:
+That's cool. Quantity. This is for here. The first column is equipment or is it?
+
+Bastian Osorio:
+Part ID. Can you put the equipment?
+
+Saul Portillo:
+Yes.
+
+Bastian Osorio:
+Put it first.
+
+Bastian Osorio:
+So, yeah, this is useful. Can you go to the top a little bit? So this is completed activities, right? Yes. We don't pick any part because all the consumptions are 2024.
+
+UNKNOWN_SPEAKER:
+And if you have like something previous year. Sorry? Sorry.
+
+Saul Portillo:
+You see all the consume. Last year, 2021, 2022. So there is no pattern at all.
+
+Bastian Osorio:
+No pattern, exactly.
+
+Hector Palacios:
+And if you see in most of the cases, it's less than 30, right? Sorry, can you repeat? In the past, how many events, how many consumptions do you have in average?
+
+Bastian Osorio:
+One. You can count them. There's a way to count them. No, no, no. There's a way to do it in the pivot table. Yeah, configuration.
+
+UNKNOWN_SPEAKER:
+No, it's recuento.
+
+Saul Portillo:
+Ah, counter.
+
+UNKNOWN_SPEAKER:
+Yeah, count. There you have two. Two for five maximum.
+
+Bastian Osorio:
+Can you look at the five? Just to check if there's like a frequency. If you open it, yeah, filter by that one and see if they're in the months. And open it by months or by quarters. That's it. January, how about February, July? Every six months?
+
+Saul Portillo:
+Six, six, six, and you don't have in 2024.
+
+UNKNOWN_SPEAKER:
+But in February you had two consumptions, isn't it?
+
+Bastian Osorio:
+Yes. The same week. Now we don't have any reliable information here or any there is no information that follows a certain pattern here are just individual consumptions.
+
+Hector Palacios:
+What we need to do is try to get all the information from the system and to check if there is some case in which we can do a forecast and maybe there is a pattern. Because if that's the case and maybe we can discuss if it is worth it to work with all the integration of plan, the preventive maintenance and all this logic that we are thinking to do, but I think that without the data we cannot say, I mean, I wouldn't risk to do the integration until we have clarity on what is the case, because maybe we start working on something that is not adding value, you know.
+
+
+
+Bastian Osorio:
+Yeah, but can we put an activity, Hector? Because here, Saul and Fiamma and Pablo and Pelayo, we need to start speaking with Sagar. He already has access to the system, to the sandbox system. So, yeah, he can give you of going through Bignish, Sagar can give you information. So you can start exploring with him the extractor tables. So Hector, I don't know if you maybe can, we can schedule a call with Sagar.
+
+ But the thing is the Sagar, yeah, for not this week, not at all, but next week. So the guys can start like communicating with Sagar and see how is the integration looking? Or no, what do you think about it?
+
+UNKNOWN_SPEAKER:
+Totally agree.
+
+Hector Palacios:
+I just want to check with them in a technical session first if we need to consider any filter aside of the very general filters we already have. So in that case we can ask Sagar to start working on that right away. Because what are we missing here? Is the add-on is ready?
+
+UNKNOWN_SPEAKER:
+It's ready.
+
+Bastian Osorio:
+Yeah, the add-on is ready. We're ready. Look at the tables. Yeah, yeah. But the integration, no, right?
+
+UNKNOWN_SPEAKER:
+No. The communication?
+
+Bastian Osorio:
+No. But it's almost there. It should be ready this week, I believe. Friday.
+
+Hector Palacios:
+If that's the case, then we need to ask the person to try to integrate them as data and to integrate this transactional data, the actuals. But then let's wait. Until we don't have that, it's not much we can do, right? Yeah.
+
+Bastian Osorio:
+So now let's jump to... Sorry? I will put a task.
+
+UNKNOWN_SPEAKER:
+Cool.
+
+Bastian Osorio:
+So the second part of the meeting is you wanted to address something regarding the corrective Yes, yes.
+
+Saul Portillo:
+We prepared, let me show, this is an internal document, sorry for the Spanish, Vivek. We need to see with you, Astian and Hector, these three, four, Definitions okay, because this is the Step-by-step okay to run for example MRO corrective and MRO for for chemical, okay? These are The different Steps okay, and for corrective for example we we have the segmentation the FMSM okay, because They give off a segmentation for these two XYZ and FMSN, but the IDS-IVP give off these two type of segmentation, okay?
+
+ And this is the definition, the fast, medium, slow, and non-mover, and we have a doubt how to resolve this part and we need a different definition, for example, for chemical, a different definition for MRO, because for chemical we have more consumed, more frequency consumed by corrective, and I don't know, for example, chemicals, the fast movers, like one material you consume in, I don't know, four consume in one year, or because we have more frequency in this type of material.
+
+ And for corrective, it's different. For example, this only one consume by year. It's fast, for example, a fast material. The I mean if you look at the consumption are they so different Yes, yes a chemical you have more more frequency Frequently consuming chemical by and for corrective you have More intermittent, so what you're saying if I'm not mistaken
+
+Bastian Osorio:
+If you have chemicals, pretty much every material will be fast, most of them.
+
+Saul Portillo:
+Exactly. I don't know if it's a good, I don't know how to say it, a good definition to have one for chemical and one for corrective and different, this definition, okay? The other part for the definition is how to get automatically in the master data. This one material is faster.
+
+Bastian Osorio:
+You can do it with the profiles, with the ABCXYZ profiles. With the segmentation profiles, I think there is a way to change the x, y, z to make it based on a different rule.
+
+Saul Portillo:
+You don't have to use Pareto if you don't want. You can set your own rule. For x, y, z, it's okay. You have this application and...
+
+Bastian Osorio:
+But for ABC as well, for ABC you can define whatever you want. Thing you should be able to define this?
+
+Hector Palacios:
+I know how to do it for the segmentation is one thing, but we need to have a one key field that is going to be an indicator. And we configure our key field with this logic. So, for example, we say that for the, remove the logic, so please put on the FMSCN.
+
+Saul Portillo:
+Sorry, this logic, because we try to understand, for example, It has three different materials with historical consumption. Imagine that one year is for four months, and another year is another four months. You have a counter, and it's, for example, a material IA. You have a consuming month one and month four for the first year, for example. In the case B, you have to consume In the KC you have four consumed, but in the last year.
+
+ If you do it a counter for the whole horizon you can see, for example, two consumed for material A, four for B, and four for C. If you have an average you have, I don't know, one consumed per year, two consumed per year, and two consumed per year. It's for all horizons but it's not – for example, these two cases are not the same because you have two consumed per year but in this case you have only consumed in the last year.
+
+ And I don't know if it's okay to do it in this form to get an average or have a counter separate for a year, but it's the same approach and later get an average. Yeah, yeah. We need to figure out more.
+
+Hector Palacios:
+But the only point I want to make is that we don't need to do this right now. I mean that the first iteration we can bring the FMCM from El Sorjano if we need it.
+
+Bastian Osorio:
+Then we can think about these rules and all of that, but this is very feasible. I can imagine plenty of ways to do it. I think the one that works best for you is fine.
+
+Hector Palacios:
+But it's how Saul is thinking right now.
+
+Saul Portillo:
+It's like this. It's on the right track. We try to think of different options. This is the one for different key figures and half a logic. We try, for example, understand with forecast automation, use the average demand, for example. No, it's with the ABC. It's that simple.
+
+Hector Palacios:
+So you create one key figure with the logic necessary. To be F, M, or S, N. So depending on the case, you put, for example, for a F, you put a one, for a M, you put a two, depending on the logic that you're configuring, right? So if you want to look at the consumption of the different years in the past, it's when you assign one, two, three, and four, and then with ABC segmentation, you can put a flag for the ones that has the value one, put F, for the ones that has the value two, put M.
+
+ And so on. So the segmentation is going to do the translation. You need to have a key figure that tells you numerically what is FMNCN and then the segmentation is only a translator into metadata. But the logic is still the key figure. You know, the segmentation is not doing that much.
+
+Saul Portillo:
+Let me see if I understand. You build, for example, the keyfigure for the counter and later you use with this keyfigure the ABC segmentation.
+
+Hector Palacios:
+Yes, the FMCN is going to have four results, one, two, three and four. And in the segmentation you assign one H number to a segment. Okay. That is very easy to do. So the difficult part is just to create the logic of the keyfigure, but it's a logic so we are able to do at the end.
+
+Saul Portillo:
+But that is not a big thing.
+
+Hector Palacios:
+At the end, what I'm saying is that if we are asking Zaggart to generate the information, we will have it.
+
+Saul Portillo:
+Yes, because they give us in the data this segmentation and in this moment we use that segmentation they give us in the data. But I understand they need to calculate this segmentation for IVP. I understand that. You were discussing specifically how to do this, all right.
+
+Hector Palacios:
+You need to create a FMCN kefir then. Just create one FMCN kefir and that's it. So in the same, you can ask GBD to share with this and the logic of the kefirs on IVP, but he can do it for you, probably. You just put the inputs and tell it to create a logic based on this.
+
+UNKNOWN_SPEAKER:
+So he gave me one, two, three, and four. He will do it. Okay. He? It.
+
+Hector Palacios:
+How do you call this?
+
+UNKNOWN_SPEAKER:
+Hector?
+
+UNKNOWN_SPEAKER:
+Come again?
+
+Bastian Osorio:
+How do you call your chat GBT?
+
+UNKNOWN_SPEAKER:
+You call him Hector? No.
+
+Hector Palacios:
+Why? I don't know.
+
+UNKNOWN_SPEAKER:
+No, I have an assistant.
+
+Hector Palacios:
+Super Hector? Yeah. No, he's a Hector assistant. I have one. But he helps me with some tasks.
+
+Bastian Osorio:
+But she has a female voice or male voice?
+
+Hector Palacios:
+No, no, no, no. That's another thing. I don't know what Bas is talking about.
+
+Saul Portillo:
+What else? The other part is the RISC score. We have a master data rule. We build a master data rule with the different signatures. The question is, when we don't have a segmentation, okay, because it's empty, the information for the client, what risk score we define, okay? For example, number risk six, risk one, risk five, for our example, we define the number six in our demo or in the system. But I know that is the definition.
+
+ We don't have, for example, a VAD or we don't have for HML for the integration or for the client, that data. How to define you put in that combination.
+
+Hector Palacios:
+So, which cases, for example, doesn't have segmentation? For example, if you see the data, let me show. So you say that there are many cases on the mass data they don't have a segmentation yet?
+
+UNKNOWN_SPEAKER:
+Exactly. Okay.
+
+Hector Palacios:
+Then I think that eventually we will need to calculate the segmentation, right? So in the case that we don't have any segmentation is because they don't have any data. If they don't have any data, We can classify...
+
+Saul Portillo:
+Here, in chemicals. For example, in chemicals, it's empty. What's the signification? It's a lot of combinations. 8,000. Let's check with Zagar if that's the case.
+
+Hector Palacios:
+I don't know if that's the case or it's...
+
+Bastian Osorio:
+But one thing...
+
+UNKNOWN_SPEAKER:
+Oh, yeah, that's the case.
+
+Bastian Osorio:
+I remember they were calculating the this segmentation, the be at location level at plant level.
+
+UNKNOWN_SPEAKER:
+They had.
+
+Saul Portillo:
+The same for.
+
+Hector Palacios:
+Can you check the storage type? For the ones that don't have a segmentation? Yeah. So everything is stored type yes?
+
+Saul Portillo:
+Yes. Everything. This is for chemical. For example, we have 60 Well, we will need to check.
+
+Hector Palacios:
+I mean, the only thing that we can do is ABC, let's see.
+
+Saul Portillo:
+8000 combination without segmentation.
+
+UNKNOWN_SPEAKER:
+Can you show FMCN?
+
+Hector Palacios:
+Sir, what are you missing to calculate the BD, the risk score?
+
+Bastian Osorio:
+No, no, what we do in this case is that we don't have segmentation.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Saul Portillo:
+Oh, so you, yeah. It's empty. It's empty. They don't give you the segmentation and how to define if And do you have consumptions? Let me see. For example. Yes, I think we have checked some cases and there was consumption.
+
+Bastian Osorio:
+I don't remember. If there is consumption, then you can calculate FSMN.
+
+Hector Palacios:
+price then price is another thing if there is consumption is because they procure that they should have a price so usually this problem is with the new materials that's the only those are the only ones that maybe we want to have a different way of working and to consider that if this is a new then maybe this is a score but in order cases, it's a segmentation, it's whatever we calculate.
+
+Saul Portillo:
+If there is no data, then it's a C, then it's a N, an FCN, you know. For example, in these materials, we have a historical consumption, but this is insufficient because we run the minimum 30 points, this part, for the distribution type, for the final distribution type. What is this Saul?
+
+Hector Palacios:
+Is it chemicals?
+
+UNKNOWN_SPEAKER:
+Chemicals, yeah, it's chemicals.
+
+Saul Portillo:
+And if you see, for example, in month... But it seems like you're able to...
+
+Hector Palacios:
+Go back, go back please. The year is saying a lot. I mean, some of them is just you're not using it anymore.
+
+UNKNOWN_SPEAKER:
+Right? So it's okay.
+
+Hector Palacios:
+So we keep no stock. I guess that there needs to be another rule saying that whatever it doesn't have a consumption in that year is obsolete. We are not using it anymore. Then it's out of the equation.
+
+Bastian Osorio:
+We have resource score zero, no stock. What do you mean? You don't have consumptions since when?
+
+Hector Palacios:
+This is chemical, so I'm expecting like continuous behavior.
+
+Bastian Osorio:
+But I think we should define a more solid rule. If the material is not consumed anymore, then they should mark as inactive. Yeah, yeah.
+
+Hector Palacios:
+So that is just one option of the filters, but probably there are many that they don't put as inactive, but they are candidates. Say okay if this wasn't consuming last last 10 months last 12 months and then it's inactive by default in the system we are not going to propose anything indeed it shouldn't be an issue in the forecast base shouldn't be an issue because if you don't didn't have a forecast in the consumption in the last year the forecast should be also zero right the only point that we need to try to avoid is to have a safety stock for
+
+UNKNOWN_SPEAKER:
+that. So that is one case, the ones that are now inactive.
+
+Hector Palacios:
+How we achieve that, how we flag the inactive is up to discussion, right? But it's inactive. So we shouldn't have a safety stock error for that. Many of the others that I see that is for 24 so they are new so these are the cases without segmentation or is just a this is the case without segmentation without fsm and a filter in this data all the other cases are new so then the question is how define what is ABC.
+
+ For the ABC it's always an issue because they are not that maybe they are not important. It's just they don't have enough historical data to compare. It's an unfair comparison basically. So I think that for ABC at least we should have like a special category for whatever is new as well, or treat them separately. Because the ABC segmentation probably is going to say it's a C, but it's consuming a lot, you know?
+
+
+
+Saul Portillo:
+It's just that you don't have enough historical information to compare it with the other ones that do have historical information. In our case, we take the definition to give a number six with a score. You have no, in this case, for run the solution. But I don't know if it's okay or we need to define, I have to say, a filter to the data inactive or active or definition for our new materials?
+
+Hector Palacios:
+Yeah, well, these are new materials, so we can assume that the history is going to be like the references. So maybe you can calculate the proper ABC segmentation, but that is one definition that we need to do with data. So there are two cases, new material and inactive, and how we are going to deal with them. For inactive, the question is how we identify it. How we deal with them is that we don't have a stock for sure.
+
+ No forecast, no stock, but we need to define. And this is a problem on all the projects that we have with continuous demand, right? Is that which ones are not, you don't need to plan anymore.
+
+Hector Palacios:
+So that's one thing. Maybe we have like a tab for research score definition and start getting these points.
+
+Saul Portillo:
+Okay.
+
+Hector Palacios:
+Let's put it because we need to consolidate this decision somewhere.
+
+UNKNOWN_SPEAKER:
+It's me one second.
+
+Hector Palacios:
+Let's open one. Let me see if we have this. Had. So pre-definition.
+
+Hector Palacios:
+So. Segmentation on IBP.
+
+UNKNOWN_SPEAKER:
+It's not letting me go. I got to another line.
+
+Hector Palacios:
+Maybe here, yeah, this is going to work. I don't know why this is not working. Boring there, all right. So that is one, the other point is the new materials. A, B, C will be fair for sure, so we need to check how we are going to treat those ones, how to Inactive. So we. So. So here we have three points that we need to solve. Do you have any anything else in mind, Saul?
+
+Saul Portillo:
+Or Bastian?
+
+Bastian Osorio:
+We need to, maybe there's a filter we need to speak with them regarding the integration, because if they're inactive, I think we shouldn't even integrate them.
+
+UNKNOWN_SPEAKER:
+Yep.
+
+Saul Portillo:
+It seems okay for three points.
+
+Hector Palacios:
+No, usually we for reporting purposes usually you put inactive as well or otherwise you have half of the information in the past is not matching with the future so you cannot make proper comparison. So usually we integrate everything but we need to make sure not to forecast inactive not to create PRs or inventory policies.
+
+Hector Palacios:
+So, the other thing that we need to do, at least to start having some rules in mind, because here we have some rules. Inactives don't have a stock, you know. The other question is how we define what is inactive, it's another question, but we can discuss with them. For new materials, we need to think, because maybe it's a new material, maybe the segmentation is not going to define it, the FMCN maybe Maybe what we can do here is base the segmentation on the reference history because you will create a reference history.
+
+ Right? So maybe based on that, we calculate the segmentation and we can say, okay, this is going to be, should be a V because it's similar to these other materials, or should be an M because it's similar to this another one, or it should be an F, you know? And calculate that based on the reference information as well.
+
+Bastian Osorio:
+But at the end of the day, the relevant thing is the risk score. And what is for sure is that we should give them the possibility to maintain the risk score as they like, Of course, there is a process, but if they want to override it, they can do it.
+
+Hector Palacios:
+Ah, you said to maintain manually the resist score.
+
+UNKNOWN_SPEAKER:
+To overwrite.
+
+Bastian Osorio:
+Overwrite.
+
+Hector Palacios:
+Overwrite, yeah, yeah. To overwrite at the delay. Also can be an option.
+
+Bastian Osorio:
+Because it's more straightforward. Instead of you maintaining DFS and N or something, BD, whatever. Yeah, you...
+
+Hector Palacios:
+We can present the many options. This is our recommendation and they can tell us no, no, I don't want it, I don't like it, and we can propose more options. But for all of this discussion we need to prepare some slides and to discuss with them in the same unit testing sessions. Okay, what else? So I'm pretty sure that on the inventory policies there is a lot of information about what we should and not.
+
+ So, what we should do, Saul, Fee, is to get that information into H-IGBT and to try to get in which part is mentioned that we are storing or not. I think that for the PED segmentation, for whatever is vital, we store. Whatever is not vital, automatically, you are not storing. That means that you don't calculate inventory policies, you know? But need to validate that. So if there is one rule for BED but let's check if there is another rules for the between the vitals maybe for the C's for the I don't know for the H maybe they are already saying there that we shouldn't stock information.
+
+ So the question is how we can determine which ones are stocking or not based on the segmentations that they are providing on the inventory procedures.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Okay, in four minutes we need to jump into the daily, so.
+
+Hector Palacios:
+Yeah, we'll translate these rules into tasks and so on. Probably I will order this part that we have here.
+
+Saul Portillo:
+We haven't touched this in many weeks. I don't know guys, if we can continue this meeting in Thursday, I don't know, 30 minutes. We can show some results, we can show, for example, For example, we have the example when we use the MTBF and the leap time and triplicate the inventory policy with the standard configuration, standard key figure. We have a doubt and question for SAP and we do it an example.
+
+ Did the calculation and get the different result. The idea is to show and discuss if it's okay or how you can see it. So what we do need to do is to try to consolidate all these questions.
+
+Hector Palacios:
+The idea is that the GDD is for that. So it doesn't matter to me if we use that or if we use an Excel, but the main point is to consolidate everything. So we know, okay, this one's with SAP, this one's with Bastian and Hector, this one's we need to check with SAR and so on, like dependent definitions or which ones we need to push with AdNoc, but we need to consolidate it in just one place. So we know what are all the open points that we need to discuss on these sessions.
+
+ Probably many of them are going to be on unit testing, many of them are going to be the SAP and so on, you know. But let's try to consolidate all these questions in one place. Okay. So we can meet again on Sourced, I don't know. Let me check. Looks awful. Looks awful? Full. What?
+
+UNKNOWN_SPEAKER:
+It's full. Yeah, it's full.
+
+Hector Palacios:
+On Source they have like 9 to 10. I don't think I have time for all this.
+
+Bastian Osorio:
+it's I will just move this one.
+
+Bastian Osorio:
+Yeah. OK. OK. Let's jump into the daily. I think I have it loaded. Yeah.
+
+UNKNOWN_SPEAKER:
+Now I need it. Thank you.
+
+Bastian Osorio:
+Do you see it? Yeah. Now I can see it. Cool. All right. Yes.
+
+Hector Palacios:
+See you, team. Bye-bye. Thank you. See you. Bye.
+
+Saul Portillo:
+Bye!
+
