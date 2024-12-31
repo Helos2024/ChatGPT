@@ -1,0 +1,1176 @@
+Mohammed Sadique (ADNOC - PE&ICV):
+Good morning everyone.
+
+UNKNOWN_SPEAKER:
+Good afternoon. Good afternoon.
+
+Kunal Sheth (ADNOC Group D&CS):
+Good afternoon. Sorry.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+It's morning on my side. It's OK. Kunal? Yeah. It's again like for the drilling points, right?
+
+UNKNOWN_SPEAKER:
+Yeah, drilling points.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Correct. Yeah, the idea here is to...
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I think most people are on leave. Still on leave.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+See, all of them shows out of office. So Sadiq, do you know when when all team member would be available so that we have a most probably you know from like after the holidays like next Wednesday.
+
+UNKNOWN_SPEAKER:
+Sorry Wednesday.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Wednesday is holiday so Thursday. I'm expecting because you know these people are finishing their annual leaves and all right, right?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Mohammed question and good afternoon. Would it be possible to do a quick demo today so you can give some feedback. Demo of what?
+
+Mohammed Sadique (ADNOC - PE&ICV):
+For drilling.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The idea is to showcase some of the examples with your data and see if we are on the right track and confirm certain definitions. That's why you know we need the drilling representatives who are not attended yet.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Let's let's see.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, Abdul Latif is out of the office, right?
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Yeah, Abdul Latif and Mohammed Asif But I don't know how to focus.
+
+Patel, Rahul:
+Yeah. So Mohammed and Jaganath, is it OK if we show it to you? I know we'll have to take their feedback as well. But then if we can utilize this time to show it to you, maybe you can have some preliminary feedback based upon the discussion. Eventually, we'll show it to them as well. Yeah, that is fine, not a problem.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Should we wait for somebody else or we can start?
+
+Patel, Rahul:
+From our side, no.
+
+UNKNOWN_SPEAKER:
+Let's start then Bachchan and Hector.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Okay, I will share my screen. So, how this is going to work, we're going to go, we're going to check the data in ADP, and then we're going to go back, like, do the reverse engineering to your data, okay? So, can you see my screen? So this is like an Excel add-in screen. We have shown this a couple of times before, but I'm connecting to AdNoc system, right? And with a user and some credentials, I can log in into the cloud.
+
+ So although this looks like an Excel file, this actually, this data is retrieved directly from Knox Cloud, right? So what we have here is the well plan at a very high level. This means well field, the well type, and the completion codes, okay? So it means that for the wells that are within this classification, meaning well field and well type, we have, well, 13, for example, for 2024, we have 13 wells using this completion code to be.
+
+ Whereas, for example, for 2026, in the well field US, in the well type WI, we have five wells using the completion code to B, and three wells using the completion code to B and S. Then if we jump into the next tab, we can look at pretty much the same information, but on a more disaggregated level. So we have now the well A and the well ID and the material, which is basically a more detailed level of the material that will be loaded in S4HANA.
+
+ So I will adapt this view and you will take a look that it's pretty easy to so I can add some more information. So the well type, I'm going to add the well type. Also, the field. It will feel. And even I can add the response. I'll have the rig here. OK. And I can also all day. Completion code.
+
+UNKNOWN_SPEAKER:
+Hello, hi, good afternoon, Bhajan. Yes.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Oh, so I think we don't have the focal points here, maybe the drilling planning guys or inventory guys, only me and Sadiq is there. We have no idea about this There is no use of this demo merchant, honestly. We need to have those guys, then only they can comment on, if they have any comments, they can share it with you. For us, we are just like audience only.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+We will not be able to comment anything on this. In that case, we should reschedule the meeting for next year.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, next year.
+
+Patel, Rahul:
+Yeah, there's no point, Bhasin, continuing this. We thought, Jaganath, that we'll share it to you, whatever we have. If you have any preliminary feedback for us, that probably we can use that. Maybe next meeting, probably next year, will be on Thursday, right? We already have a meeting similar to this on Thursday. We can see if people are available for that meeting on Thursday. And demonstrate this on Thursday.
+
+ But if you feel there is no value in showing this, then we'll take that.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, no, no, there is no value added in this.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+In that case, we can close the call. I would like if you can stay here, Rahul, so we can still look at this.
+
+Patel, Rahul:
+Yeah, we can continue probably internally and then Jaganath and others, probably you guys can join Mohammed, you can join. Yeah, OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Thank you. Have a happy new year.
+
+Patel, Rahul:
+Yeah, same to you. Thank you. Wish you have a happy new year.
+
+Kunal Sheth (ADNOC Group D&CS):
+All of you. Yeah. Thank you, Jagga. Thank you, Shanti. See you next year. Rahul, just for your information, Abdul Latif will be available only on Friday, not on Thursday, based on his out of office message.
+
+Patel, Rahul:
+OK, so let's align maybe later today or how we can plan this. This week seems to be a slow week, considering it's the year-end and the vacations. So yeah, it was known that we will have something slow. So hopefully, next week, we'll be able to recover on the things what we are planning.
+
+UNKNOWN_SPEAKER:
+Let's go ahead, Bastián.
+
+Patel, Rahul:
+So Bastián, quick feedback. Can we keep field as field only? I don't think they call it well field. They call it field only, right? Yeah. Well, change well field. Well type, field ID, OK. Can we go to well plan? On an annual basis. Yeah, this looks OK. And here we can add, of course, the well number. But if you show a well number, then it will show for every well a unique.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, just one. One quantity for every value number yeah yeah okay and as we discussed we would be connected yesterday if I add the material ID which is going to be the material lineage for HANA. You can see here the material is the field, well type and completion code.
+
+Patel, Rahul:
+So material ID this is you want to call it material ID because it will confuse people because this is probably the unique well identifier right this the combination of lj wi2 with this is a well identifier correct in a way this one is the well right and this is more like the activity that will it could be like the bone cold yeah yeah that's the logic internally but do you want to call it mortal ID or I think metal ID would be a little bit confusing because whenever we see a material we mean actual material.
+
+
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And in this case, this is not an actual material, correct? Yeah. I mean, in this program, it will be a material. But I understand conceptually, it's not a material.
+
+Hector Palacios (ADNOC Group D&CS):
+It's an activity. Yeah.
+
+Patel, Rahul:
+You said that we can put a bomb here or something like that. Or we can say, call it a bomb header. Again, it's a material. So there are two things what we are differentiating. When we say bomb header, there is a material code for BOM header. And this is not BOM header material code. These are the characteristics of the header, the combination, the unique key which identifies the unique material header.
+
+ So in this case, you can call it a well key, something which identifies it's a unique key. And it's not actually a material or BOM header.
+
+Patel, Rahul:
+Does it make sense? Because you're seeing that the material is 102, for example, the code.
+
+Hector Palacios (ADNOC Group D&CS):
+And this is just a description, basically, that is the unique key, the concatenation behind. But it's not the material. Yes.
+
+Patel, Rahul:
+So this concatenation is LZ is the field well type. So what we are seeing as discussed with Vignesh, these are the attributes or characteristics of the Bill of Materials. Based upon this characteristics or attribute, a unique material would be identified, a header material. And from that unique BOM header material, you will get the components of the drill. So in this case, we cannot call this as material ID or even BOM header.
+
+ These are the unique planning key, you can call it. We can come up with a better word. I don't have a better word. And what can be the better word here. But then if the material, material ID is obviously should not be the word used here, because then if you call it material ID, then it would be confusing.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can we reword as a bomb characteristic or something? Yeah, we can call it bomb. Can find a better name. That is not a problem. The important thing is that it represents a concatenation of
+
+Patel, Rahul:
+I don't think we even need this in WellPlan.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, we do need it because this is going to is going to be the basically the material in this Rohana that will drive.
+
+Patel, Rahul:
+This is not the material. These are the characteristics of material.
+
+UNKNOWN_SPEAKER:
+Yeah, well, that represents that material.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It does not. So it's the characteristics of metal.
+
+Patel, Rahul:
+And those characteristics are already here, like LG field is already here. Weld type is already here.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Rahul, what will be the material that will drive the bomb, that will have attached the bomb?
+
+Patel, Rahul:
+That would be a different metal core. So in yesterday's example from Vignesh, 102 was the material code. 102 was the material code. Yeah, it's fine.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But 112, it doesn't tell anything. It's just a code. Yes. This one tells you the characteristic of that material. Agreed. But then the characteristics are already there in the table.
+
+Patel, Rahul:
+We are just concentrating and showing it together. Does it add value? That's the point I was making.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, in that case, we can show it like this. Yeah, yeah.
+
+UNKNOWN_SPEAKER:
+So this makes more sense.
+
+Patel, Rahul:
+Now, what Vignesh was saying is this, whatever characteristics we are showing here in the well plan, the same should be available on a material level on the material master data app we had. In the master data app, there we should have shown For a material, so if 102 is the BOM header, then for 102, you should be able to show that the field is LZ, well type is WI, and the completion code is 2B in the material master.
+
+
+
+UNKNOWN_SPEAKER:
+The master data for material.
+
+Patel, Rahul:
+That's what we discussed yesterday, right? So here, this looks OK, I think, as per me.
+
+UNKNOWN_SPEAKER:
+We don't need a material here. Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+OK, now we can go to the monthly. And I will get rid of this based on your input.
+
+UNKNOWN_SPEAKER:
+And what else will type?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Well, as we have here, we have discussed this in the past. We have the well plan. I will show you what is the template to load this. And we have the simulator. We can put a one just to show, just to see what could happen if you change the plan. I need to change something here too.
+
+Patel, Rahul:
+Here, completion code. Okay, so now we have the explosion.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Because for 2B, we have, for example, in 2025, wells, we're using 280 pieces, units of this material. Whereas with this one, 2B and S, we are planning to drill just one in 2025, and this drives 14 of this code, 150 of this code.
+
+Patel, Rahul:
+Right now, the assumption is the bill of material has only two materials. That's why we are showing two only, correct?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+For this one, two.
+
+UNKNOWN_SPEAKER:
+And for this one, one.
+
+Patel, Rahul:
+So what is the none part then?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The none is that it's just a plan. It's the plan. Because the plan is.
+
+UNKNOWN_SPEAKER:
+Number of wells? Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+For example, in this case, if the plan itself, the number of well, it doesn't have a material attached. The material is the next part, is the material demand.
+
+Patel, Rahul:
+Maybe we need to rearrange this format based on feedback from AdNoc. Probably they might want to look at material level and not at well level. So if I am looking for demand for 1841, then the total 1841 is 182 plus 150. I have this one here. Yeah. Yeah. I think this will make more sense. Yeah. But let AdNoc review and confirm that. OK, this is what.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But I mean, you can have both still if you want to look up. But I want to know which completion code is using these materials. Yeah, you can have a look at that. 2B is consuming 14, 2B and S, and 2B is using 182, which it makes 196. If we go here, we have 196. Yeah, yeah.
+
+Patel, Rahul:
+It depends on how you want to see it. Okay, I think this looks good enough. This is the template.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+for the well-planned. So we have the date. I mean, I will show it to you, the template they share. So it makes more sense. So this is the template they share, right? And here, let me make it bigger. We have the well, and we have the characteristic of the well, which is the field. What else? The well type, and the completion code. So it's pretty much the same. It's pretty much the same. The only difference is that, well, we can change it.
+
+ But in product ID, which is the material, I put that concatenation, but we should put the code that Bignesh will create. Let's say this instead of being the concatenation would be 102, okay?
+
+Patel, Rahul:
+This 102 would be updated by CIDS, right? This is not something we'll receive from the external.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+What I'm showing here is the whale plan that should be uploaded. So we have the whale here, We have the location that has to source that well. And we have pretty much the completion code with the other characteristics that will define the bomb. And then we have the date.
+
+Patel, Rahul:
+And the one just to indicate that that well will be drilled in that specific date, that the materials are So what about the other fields like we need both started and finished it of the well, even if we may not use it, but users would like to look at both started and finished it when they are planning the well. So we should consider both started and finished it as part of it. Also, the other key figures for the well should also be here.
+
+ Here we are assuming that LZWI2B, this is a material, so you expect user to directly identify the material when it is uploaded manually?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I mean, yes, because there is no way you have a well and that well can use multiple completion codes. So we need to somehow the user needs to somehow give us the input of which completion code this trail will use.
+
+Patel, Rahul:
+OK, but then if we create at separate see we agreed that we'll have three or four attributes of wheel and for every of those three four attributes a unique combination create a separate material so we should ask user to update those attributes are not the material and material should be identified automatically by everything that is possible you should have columns for all of those attributes in the in the field in this x in the template you should have the well as well type as one of the column, you should have the field as one of the column, you should have completion code as one of the column.
+
+ So that for all of this attributes, then IVP can determine based upon the input user has provided, automatically identify the unique material code.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yes, I think that is possible, although here is pretty much the same. The product ID is field, well type and completion code.
+
+Patel, Rahul:
+Yeah, but you are expecting user to come up with this data. Now, what will happen is, if we are creating a manual upload, a user will create those separate columns, right? We are not asking user to concatenate an upload, but to give this data in the template, in separate columns, and use this information to identify materials in the back end Okay, we can find a way to do that.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But the idea is clear. You need these characteristics to, we can separate it as you mentioned in, but this is, but at the end, this is the information. Agreed. The idea is the same.
+
+Patel, Rahul:
+It's just that how we show this in the sheet, we should have separate columns for every characteristics. And we are assuming right now, this three characteristics, this is I think we should get this confirmation from Adna, that how many characteristics will create this unique combination, so that all those characteristics will show up in this file.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah. Then, yeah, that's the first thing. Then let's go to the master data name theme. Well, you already gave the input of these materials. So let me update. So here we have the materials that we were discussing, right? You're saying this should be a code and this code should all those characteristics that we have here. No, we don't have it here, sorry. But we should add this characteristic of, this should be just a code, and this code has the characteristic at field, well, well, and well type, and completion code.
+
+ Yeah, so you will have every characteristic identified as a column, separate column in the sheet. Yeah, and we have completion code, but I understand that we also need, as you said, a field and well type.
+
+Patel, Rahul:
+Yeah, right now we We are assuming three, but I'm again saying, based on how many characters is identified, all those characters will show up here in this tab.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+In ADP, still in the category is bump header. But for them, this is just, it could be even in the back end. For them, it's not relevant. I'm just showing this to you so you can understand the logic of the system, but you're right. This will be just a code that will have this characteristic that we're mentioning, For now, we need the confirmation is field will type in completion code. For now, we only have completion code here.
+
+ We need the other two, and maybe more in the future.
+
+Patel, Rahul:
+One more thing what I would request is that let's take one example with all the materials. Now, based upon the Excel sheet which is shared by, say, Abdul Latif, we are now showing only one or two materials. Let's take the entire Bill of Materials. And we can create the icon. We can sit together to create a bill of metal in S4 HANA as well. But then let's take two examples. Based upon the Excel sheet, if there are 15 metals, let's create all those 15 materials.
+
+ I can also help you identify the generic metal code for all those 15 metals, because we know the table where the data is stored, which means we can create a generic metal bomb in S4 HANA. Vignesh also mentioned the same, right? The MM consultant should be able to create the bomb. So we can sit together. Create the bomb but what I need input from you is that for uh at least uh maybe two three combinations of these three characteristics uh what are the materials identified in the excel sheet if you can give me those
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+materials I'm gonna go into into that right now but let me uh finish with you because that is the most uh um tricky part okay but this is the field well again in the back end is a customer because it's a customer who's requesting the material, right? For us, our customer is a well, right? But again, for the... So you're creating customer ID? Yeah, but... And well ID is customer ID? Yeah, but for the users, they don't need to look at customer ID.
+
+ They will look just at well ID, which is the sequence. So don't worry about this one. It's just in the back end.
+
+Patel, Rahul:
+What about the requirement of temporary well name and final well name? Like well ID, initially they start with temporary well ID.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+If we have more attributes at this level, we can add as many attributes as we like,
+
+Arun Tejnarayan (ADNOC Group D&CS):
+For now, we only have these ones. In that case, Raul, basically the sequence ID will not change. Only the well name, right? Over the course of the the planning, right? It will change. So the sequence ID will remain intact. So that is why we are bringing the well-planned at the lowest granular level.
+
+Patel, Rahul:
+That is the unique case. So how sequence ID and customer ID are different in our design?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Are the same. It's the same. It's just to give you a different name. Yeah, it's just a different name, but we don't have that information in the Excel file.
+
+Patel, Rahul:
+So we are just- Okay, so essentially customer sequence ID in their exact code.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Correct.
+
+Patel, Rahul:
+It's the same.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Because that's the unique field which we can identify every record. Yes. Exactly. They will work against only the well ID. They will work against the well ID but for IBP the lowest key is the sequence ID for the well.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Got it. Noted.
+
+UNKNOWN_SPEAKER:
+Noted. Question.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+For me it will be easier and I think it's the best practice this, to be honest, to have somewhere stored the well site, the sequence with all its attributes, meaning, again, the field, the well type, and more characteristic, the rig, and more characteristic, if necessary, as the well name, so on and so forth. So currently, they have this stored in Excel sheets. We should push to store this somewhere else.
+
+
+
+Patel, Rahul:
+But this is part of the plan, right? And these are stored in the DBS system. These are not stored in Excel sheet.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+We should then find a way to pull it from there. Yeah, that's what.
+
+Patel, Rahul:
+So if you look at our plan, we have two things. We have the interface and we have the manual file. Expect or anticipate the interface when we set up with DBS system the drilling planning system where they have their power chart in that we will we will have all the information extracted from system so that way we are looking at but in case of some other plants which which they are not using like for sour gas they are not using they are not on DBS completely till the time they implement DBS for tar gas whatever data DBS is providing to IBP through interface.
+
+ The same can be uploaded in IBP.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+That's why they have requested manual upload. Yes, but the concept is clear. We need a source for these wells and with the characteristics.
+
+Patel, Rahul:
+Yes, and the concept is clear and the source is also clear. It's obvious. OK. That's what we've identified in our BPDs as well.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Now let's jump into the tricky part, which is the BOM, right? So first we have the BOM header, which in this case will have the location, in this case 1408, which is the location that will be sourcing the materials. Then the material, which again we already covered this, is going to be a code with And then we have the source ID, which is the unique identifier of the of the of the bone. It could be same as material.
+
+ But in this case I I may I make the concatenation of the location and the material with of the character or source ID again.
+
+Patel, Rahul:
+Can you say that's what is the source ID?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The source ID is the unique, so I will explain it for from the perspective of IVP, but then so you can understand. So basically, this is a material and a material can have multiple ways to be produced. So the source ID is the unique identifier of that way of producing the material. But in this case, there is just one way to sort of produce this material.
+
+Patel, Rahul:
+So I'm just doing a Oh, so this is production virgin in S4 anatoms.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, yeah. But for us, again, what we're saying is that we're just naming the bomb. We're just giving the name for the bomb. And the name is nothing but the combination of the plant and this material, which is the bomb, right? The material representing the bomb. A nomenclature that IBP needs to name the BOM. And now we can jump into the important part, which is the BOM itself, right? So as you can No, we have, sorry.
+
+ So I'm missing some materials here. I think this one is the other one.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+OK, there you go. So for this one, for the 2B, we have only one material. For all the 2Bs, we only have one material, right? Whereas for the 2B and S, we have two materials. OK? OK.
+
+Patel, Rahul:
+So essentially, the source ID is the unique field which connects the BOM header and the BOM components.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, exactly.
+
+Patel, Rahul:
+And now let's jump.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The component coefficient is the quantity. Yeah, it's a quantity required to produce. To produce is not produced, but let's say to perform. The the activity represented by the completion code. OK. But if we go to the the this the information I put just two materials and I will tell you why. Let's go to 2b first. So if you look here, so first I put 14. If you look in the quantity, in the component coefficient, it's 14 for this material.
+
+ In all cases. Why is that? I think it is the most repeated material, the most repeated quantity when here. So I assume, which I'm not sure if it's a fair assumption, this is the generic code. And for this generic code, you have two different branded codes. So I just like merge them into one generic code. And I put 14 because it was the most repeated number. But again, as we discussed, I couldn't find a way to identify one unique number.
+
+ If I concatenate anything here, I won't get one number. If I concatenate everything what we have here, I won't get one number. Because if I add the category still for the same category, So let's put a filter, right?
+
+Patel, Rahul:
+You have put filter for 2B, now put filter for... No, no, well-typed. So we have three attributes, right? Use the attributes we have. Is this one. And what about the field?
+
+UNKNOWN_SPEAKER:
+Yes, same.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Let's go 2D. Okay, we have two fields.
+
+Patel, Rahul:
+So let's take one field, LJM.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, LJM set here. It varies, 14, 10. You have three values. We can have two or 10 or 14. I can see the category in some cases is.
+
+Patel, Rahul:
+Let's go category by category. I think this is not the starting block.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+It's the final focus that they are coming up. So that is why.
+
+Patel, Rahul:
+there is no one bomb for that particular combination okay okay for the category let's see for this category the quantities are same let's check another category but these are different right just for this one maybe for this specific material
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+that's why I took this one because it was the most well behaved let's say that but if you move here yeah yeah in some look at here Here we have different material, difference, here also difference.
+
+Patel, Rahul:
+In some cases you have, in some cases you don't have. Another example for a category here you have the three so let's highlight this to Abdul Latif let's assume only one see let's create data the way we want right which means that we identify all the materials and we right now since it's a demo will assume only one quantity and will say that will highlight that while we have used this your data does not have this.
+
+ I put 14 because it was a more repeated amount but not because but the only thing is you have considered you have considered only one or two materials what I would request is to identify all the materials for a specific combination not only two materials and there can be 15 20 let's let's have one Yeah, but that, yeah, I could do that.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And I thought about it. But the thing is that I don't want to create the material for the branded code. I want to create it for the generic code.
+
+Patel, Rahul:
+And that is- So that's what I will do is you give me the material code for a complete bomb in Excel, not create in IBP. I will see if I can get you the generic codes from S4, because we know the table, right? They've given us a custom table where they have maintained the mapping between generic and the branded materials.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Which means- Can you work on that? Can you check out now? Because for this one, for example, I have the amount, but I'm not sure if this is the generic code, if this- Yeah, we can do that.
+
+Patel, Rahul:
+Kunal, will you be able to log into S4 on Sandbox now? Buruj still is not accessible. No, not Buruj, but one Yeah, 1 ERP is accessible. Yeah, can you log in 1 ERP? And we know the table, right?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The custom table for MUTL code mapping?
+
+Patel, Rahul:
+I put the number. Arun, can you share the table name? You have that with you?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+The custom table for MUTL code mapping? No, let me see.
+
+Kunal Sheth (ADNOC Group D&CS):
+in the transcript right now now there are two tables one is for the generic and one is for the alternative I have the table name alternative okay then yeah just can you share your screen can you share your screen and see if this model is available yeah just one second We share it.
+
+Kunal Sheth (ADNOC Group D&CS):
+We have two tables, ALT material and GEN material. Which table you would like to use?
+
+UNKNOWN_SPEAKER:
+Sorry?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+We have two tables, GEN material and ALT material.
+
+Patel, Rahul:
+That is alternative. Let's take one by one both table.
+
+UNKNOWN_SPEAKER:
+Let's start with ALT material.
+
+Patel, Rahul:
+And here we need to put up the material code given by Bastián in one of the Yeah, yeah.
+
+UNKNOWN_SPEAKER:
+No values found. What are the other fields here?
+
+Patel, Rahul:
+Let me scroll down. We have alternative models also. Yeah, put in an alternative model. Yeah, that one.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, yeah, yeah.
+
+UNKNOWN_SPEAKER:
+Remove the, yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+No values found.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Let's try another one.
+
+Kunal Sheth (ADNOC Group D&CS):
+OK. Let me go to the next table. Generic one. No value solved. And we also have a
+
+Patel, Rahul:
+This is generic material.
+
+UNKNOWN_SPEAKER:
+So it seems.
+
+Patel, Rahul:
+Can you try the second one I sent? Yeah, so can you give him all the materials? Probably, if we are not able to find all the materials, at least one of the few materials would be available in this table. Because this is the table we expect data in.
+
+UNKNOWN_SPEAKER:
+And if the data is not there, we can highlight this issue as well, right?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I think there is no entry in this generic table. Can you just learn alternate material We have 50,000 records. Not many entries.
+
+Patel, Rahul:
+We can download the entire table.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let me execute.
+
+Kunal Sheth (ADNOC Group D&CS):
+yeah now let us try to find it out you could not find What are you looking for?
+
+UNKNOWN_SPEAKER:
+It seems there is no entry exist.
+
+Kunal Sheth (ADNOC Group D&CS):
+Can I share this table on teams? Can you look for the second code?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+You were looking for that one, right? Yeah, already this one in our is the one that this should be for me. Generic code, but I will send you what I believe is the subcode. For that generic code. This one.
+
+UNKNOWN_SPEAKER:
+Sorry, no, I didn't. This one. We could not find what you are looking for.
+
+Kunal Sheth (ADNOC Group D&CS):
+So it seems there is no entry exist in this table. Shall I go to the generic table?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let us also download the generic dump.
+
+UNKNOWN_SPEAKER:
+Number of entries, 9,000 only.
+
+Kunal Sheth (ADNOC Group D&CS):
+Won't take much time.
+
+UNKNOWN_SPEAKER:
+In this table also, we don't have an entry.
+
+Kunal Sheth (ADNOC Group D&CS):
+So Rahul, this is a tricky part, actually.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Based on our resolution, we thought- Rahul, I think Rahul is not his input message.
+
+Kunal Sheth (ADNOC Group D&CS):
+okay okay let me check whether this mutton master exists or not that does exist so this is the old material version and material is having a drilling material type connectors so this is the number which should be coming from
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+the dws I think but then then the The material that you're showing, shown to me, you're showing this is branded.
+
+Kunal Sheth (ADNOC Group D&CS):
+See, actually, the problem is that all the material does not exist in the generic table.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Or that, yeah, but for the code that I send, the 699 for me, my understanding is a branded code. Correct, correct.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, it is a branded code. On the ZDRL, the link material.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But it doesn't have the generic material, right? Correct, correct. That is super weird for me. Yeah, so I don't see any mapping actually. I will imagine the other case, the other way around, having a branded code that doesn't have, sorry, a generic code that doesn't have a branded material, right?
+
+UNKNOWN_SPEAKER:
+Mm-hmm.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But the other way around, it sounds weird. And what about the old material number? If you go to the old material number?
+
+Kunal Sheth (ADNOC Group D&CS):
+2, 5, 4, 7, 6, 8. Can we find this material in the Excel sheet that they have shared?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+25, 47, 68.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah. No, I don't see it. Mm-hmm.
+
+Kunal Sheth (ADNOC Group D&CS):
+So that is a problem, actually. I don't see a proper mapping here.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So this is a genetic material in Kenya for the code. Which one? The one that you just copy.
+
+UNKNOWN_SPEAKER:
+The old material code. This one.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let me go to this.
+
+UNKNOWN_SPEAKER:
+Does not exist. OK, so I don't know.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+This is not possible. Let me try this material.
+
+Kunal Sheth (ADNOC Group D&CS):
+Incomplete puzzle. Yeah, yeah, yeah. This is also drilling material. Pipe conductor. See here, there is a field across the reference material. This one. 472.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I don't have that code. No, I don't have it.
+
+UNKNOWN_SPEAKER:
+OK. Let me see. Yeah, this is also exist.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+This data is a mess for me.
+
+Kunal Sheth (ADNOC Group D&CS):
+I think let us do one thing. If you see have a stock on this.
+
+Kunal Sheth (ADNOC Group D&CS):
+so um chef field we have a reservation we have on order stock and let us see do we have any material movement we don't have any material movement so these are the purchase order which they have created.
+
+Kunal Sheth (ADNOC Group D&CS):
+row number 10 this one so see this is a branded material only because they are placing an order on the branded right not on the generic so here we can see they have an order this is the supplier Hathiam trading company So there is a gap, you are saying, right? 1159 material, we directly have the branded material, but we don't have a linkage with the generic material, which is coming from the DWS system.
+
+
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, we need to wait for a whole.
+
+UNKNOWN_SPEAKER:
+OK, OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But not even in the Excel sheet without the generic codes. Yeah, yeah. So that's the main point to build the
+
+Kunal Sheth (ADNOC Group D&CS):
+But Vasiya, the material which you provided on chat, that is a generic, so branded material.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Which one of the three?
+
+Kunal Sheth (ADNOC Group D&CS):
+The first one, this one. OK, so that's why we can see here we have an order available. And 1841? This one should be January.
+
+UNKNOWN_SPEAKER:
+OK, let me try this one. We have plenty of stock available for this material.
+
+Kunal Sheth (ADNOC Group D&CS):
+Is it generic?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I mean, is there a way to determine if this material is generic or?
+
+Kunal Sheth (ADNOC Group D&CS):
+Actually, they have given these two tables, gen material. If it is coming here, then it's a generic. If it is coming here, it's a branded material. But I don't see any entry in this table for this code.
+
+UNKNOWN_SPEAKER:
+Can you make an option?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Can you share this file?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, sure.
+
+UNKNOWN_SPEAKER:
+it.
+
+UNKNOWN_SPEAKER:
+There is no purchase order exist.
+
+Kunal Sheth (ADNOC Group D&CS):
+What about the material? Material is there. You can see. For generic also, we have a purchase order exist in the system sorry for the generic material which you just shared for that also we have a purchase order in the system it's the stock transport order between NASA field and the This is also STO 641. It means this is a supplying plant 1 4 0 1 1 4 0 1 is procuring from 1 4 0 2 1 4 0 2 we can go to the Nasar field then.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+105. So it's an initial upload, actually. 105. Rahul, we were just exploring. We are unable to find any entry in the two custom table. But for all the models, we are checking for only one or two models, right?
+
+Patel, Rahul:
+So Arun or Bastián, if you can help us with list out all the models quickly and give this Excel, we can do the quick lookup and see how many materials are there in the table. And based upon the material, we can see for which wheel type we have more data in the Excel sheet. Is it something possible? Like from the Excel sheet, just create a list of all the materials which are there. And based upon the list of materials, we'll simply check for which material.
+
+
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Do you want me to send all the codes in the Excel?
+
+Patel, Rahul:
+Yeah. So all the codes, what we can have, the SAP codes, if you can help with the list of all the SAP codes, we can quickly check out of, say, we can also give this update to the team, saying that we checked for all the models. Out of 1,000 models, we could find only 50. I'm just coming up with number, but then at least this will tell them that you don't have sufficient data in the SAP systems. And we can highlight this risk as well to the team, saying that we are dependent on this data as a solution.
+
+ And if you don't have data here, then the solution will not work.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And for us, you need to give us some sample data with entire mapping, like for a couple of wells.
+
+Patel, Rahul:
+Let's do one thing if Bastián says all the list of metals, right? For all the metals, check how many metals are there in that table. And let's work other way around. Depending on the metals for which we are able to identify generic metal, let's identify which well type these materials are part of And then for that well type, we'll define the sample example in IBP as well as in SAP BOM.
+
+UNKNOWN_SPEAKER:
+And one, I'm sending the file.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+You're missing one. You I have a question, but let me send the code first.
+
+UNKNOWN_SPEAKER:
+Here are the codes.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So, Rahul, do you have an idea for the additional completion codes? My first approach would be to create a new material. I mean we have two ways to do it or we create a new material for the additional completion codes or we create a new version of the code for the same material. BigNet is an example for that. And how is that?
+
+Hector Palacios (ADNOC Group D&CS):
+Did Arun share with you?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, but I want to hear the explanation. They're basically creating a different code for that.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, so it's just a different code.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+It would be a different code.
+
+Patel, Rahul:
+And so one of the attributes of the well would be, the way we have completion code, we will have additional completion code. But the only concern with the additional completion code is that there can be more than one completion, additional completion codes, because the completion code is only one. But if we have additional completion codes, there can be more than one additional completion code. I'm not sure how the multiple completion code combination will trigger a different material code.
+
+ But what Vignesh was showing is that we have the option to define multiple fields in characteristics as well. So we can create characteristics for additional completion code and we can define multiple fields in that and those multiple fields then should show up in S4 HANA but also we need to have those multiple additional completion codes we need to get it from the link plan.
+
+Hector Palacios (ADNOC Group D&CS):
+Can I share quickly whatever Vignesh was presenting? So basically this, you see that you is putting this like last name that is basically the same main or additional because it doesn't seem like there is one specific field that you can use to explain why you have to an additional completion code. So it's basically creating this, you know, so The main material, of course, is going to be different. So this is what we need to use.
+
+ But then the additional description fields is what you are saying, Rahul, that they can be different. They can put whatever they want.
+
+UNKNOWN_SPEAKER:
+Yes?
+
+Patel, Rahul:
+So what you are looking at is bomb category, whether the bomb is main bomb or additional bomb. But then also, we need to also define the codes. Like if it is an additional bomb, then there can be multiple variations for the additional bomb. And those bombs would be different based upon different additional completion code selected. So for every additional completion code selected, there will be a different material code.
+
+ But the logic would remain the same.
+
+UNKNOWN_SPEAKER:
+Question.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The additional bomb, the one on the right, will have the standard materials plus the additional, or will it have only the additional?
+
+Patel, Rahul:
+It will have only the additional.
+
+Hector Palacios (ADNOC Group D&CS):
+So that's a complication.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I mean, in IVP, Hector, it means that you need to load two materials, basically. The standard and the additional.
+
+Hector Palacios (ADNOC Group D&CS):
+I'm processing. I understand the idea. I'm just thinking how this can be done. So the question is like for particular value plan, right?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+They have this completion code, but they have option also to choose the additional completion code. So this particular one has both this option enabled, right? Completion code plus the additional completion code, that in that case, the IVP should have the components of those two relevant subarm category. For example, main and additional. And in addition, could be different option 1, 2, 3, 4. And each option will have different bomb items.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Can I share my screen? I'm thinking just before you share it. But I'm processing. At the end, do you have the screen there?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I have it.
+
+UNKNOWN_SPEAKER:
+I also have it.
+
+Hector Palacios (ADNOC Group D&CS):
+What I'm thinking is, at the end, you need to assign your well plan or your chart. How you call it, Rahul, the chart bar? At the end, whatever number is defined in the activity needs to be assigned to one of these materials, 1 to 2, 1 to 3, 1 to 4, right? So at the end, they need to put a number on 1 to 4. Or we can do it by iteration. But it's not that by selecting 1 to 3 alone, you are going to get the other one as well.
+
+
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+That's what I'm saying. You can use both.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+You need to use both if you want to include it. Yeah. But when you're defining the well-plumbed, example in the manual case they will not be defining the material for in the file they will have the characteristics okay so based on the characteristic in the integration logic we need to pick the right material so correct so basically the thing is that based on this different characteristic right vignesh will be creating an individual material id which is the unique key for ibp purpose okay which will be used in the integration logic to build up the BOM or the equipment master.
+
+ So now the thing is that the only concerning part is that, I don't know about you guys, but the pretext or the texture that they use right in the file has to match exactly the same than the characteristic that we define as for otherwise this logic will fail.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, it's exactly two arrows because the numbers are there. It is a water injector. Correct. Saccum, upper saccum, lower saccum. I think we should try to make it, how do you call it, a nomenclature. Exactly.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+A code nomenclature. Yeah, exactly, a nomenclature. An ID you're seeing. If there is no nomenclature standardization, then the material code has to be there.
+
+Hector Palacios (ADNOC Group D&CS):
+If you see a description of the material, you have the ID there?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yes, yes, exactly. But if you check their file, their textual will vary. It will not be standardized.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I think we should use that on the top USYI to be main. I don't think we'll have an option other than using something standardized, right?
+
+Patel, Rahul:
+That's what we're saying.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+For us, that should be the identifier.
+
+Patel, Rahul:
+And the identifier comes from DWS system, which is a system, which means there will be validation and standardization. Free field where user can put it, anything.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can we use the USWI2P main in additional? No, additional, there are separate codes.
+
+Patel, Rahul:
+We don't have access to that system.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+No, I understand, but I think this should be the nomenclature that should be integrated to ADP. Are not subjected to too much error. We should standardize, like on the top. Then will give you the right attributes by itself. But users, when we load, we cannot be loading operas, ACUM, Watering...
+
+Hector Palacios (ADNOC Group D&CS):
+No, no, we need to load the IDs, but I think that probably on their system because it's a system. They should have IDs. That is what Rahul is saying.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I mean, we were saying we should work. Of course, we can add all these attributes, but we should work with these codes on the top.
+
+Hector Palacios (ADNOC Group D&CS):
+With IDs, yes. Yeah, the iteration should be based on IDs. We cannot just depend on a string.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yeah, integration will be based on the value set.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+You're right. OK, but in there, let's assume, let me go here. No, it's not here. It's here. OK, let's assume this whale should use. So following the example here, for me, I mean, the ideal case will be, let's say.
+
+Hector Palacios (ADNOC Group D&CS):
+Let's see, you said question when we are integrating the well. This additional code that Bigness just created, it doesn't exist in their system, right?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The 102, that is only SAP.
+
+UNKNOWN_SPEAKER:
+What 102?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The 122123, the material code. Yeah, I know. They had to create it.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, then when we integrate from EW system?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I don't know what exists. I don't know.
+
+Hector Palacios (ADNOC Group D&CS):
+Because if we are going to integrate this, and we will have the bone defined to that material, then we should have ideal scenario, the world plan related to that material. Because otherwise, it will be also confusing. It's like two concatenations, you know? But the concatenation is too much. This logic that we are putting, like the main, the additional. So it's also a thing that's given.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I'm not sure, because if that will be the case, that they have this in WBS exactly then we wouldn't need a definition. They already have it.
+
+Hector Palacios (ADNOC Group D&CS):
+We need to have the same utilization with them because whatever we integrate from their system and from S4HANA, ideally we will be talking about the same IDs, right? If we are not talking about the same ID, then there is the same issue that we are discussing right now before that there is a risk of something going wrong that they are missing the range, you know.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But what I want to confirm with Rahul, if he's agreed with this idea, so we have these to be main. OK. And then if we if the users want to also add the completion code, it will be the same, but So here you have two lines to address the main and the additional. But the thing is something that Rahul was addressing, that sometimes you don't have just one additional. You can have additional one or additional two.
+
+ Not multiple additionals.
+
+Hector Palacios (ADNOC Group D&CS):
+It means that the additional material that you need changes. Yeah, it's OK. But either way, someone needs to put in somewhere that you, for this case, you are going to use an additional or this additional. So at the end, it's the same for us, I think. Yeah. So we just need to understand how they are indicating that today, if they are going to. And then this is before the explosion. Then after the explosion, they can still do so much When they're thinking of the adjustment on the gear, we were thinking on the same use case, the same scenario.
+
+
+
+Arun Tejnarayan (ADNOC Group D&CS):
+But that's my point.
+
+Hector Palacios (ADNOC Group D&CS):
+We have two ways of bringing additional materials, right? One is specifying an additional bone. One is just directly on the system, put the material they need, if this is too exceptional, you know?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So there are two cases. One is materials which are not part of any bond, okay?
+
+Hector Palacios (ADNOC Group D&CS):
+So those are independent, yeah. Okay, that is the additional one, all right.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+In this case, additional and the completion bond will have the individual bond. So I think that, well, If you can scroll down a bit here. I think in the last slide, right, Rahul, what Dinesh has scrolled down a bit. So yes, it's the same. He has shared an individual line item. Go to the bottom, and there is one screenshot which will cover this one. So here, right, basically what he's trying to say that for this particular well type water injector, for this field, for this completion course, I have these four different materials, which are nothing but four combinations based on the well, field, bomb category, main or additional in completion.
+
+ So, this will give an overview of all the possible combinations of the bomb for that particular bomb group.
+
+Patel, Rahul:
+So this is a group bomb what he was showing. So probably one group would be say based on completion code say whatever we have we create one bomb group right. But within the bomb group based on the different combinations you can have multiple bombs 10-15 different bombs. But then I don't know if IBP we will have ability to We are not extracting bomb group.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+It's just just an overview of how many individual bombs are there for that particular user, right?
+
+Patel, Rahul:
+And it is an S4HANA from an IPP perspective. It will not add any value to us in IPP. We need to look at individual bomb based upon the characteristics and combination. On S4 side, they can define group bomb for better understanding, making sure they are able to manage Yes, yes, you're right.
+
+Hector Palacios (ADNOC Group D&CS):
+But for us they are different codes basically, so we don't worry about it.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yeah, yeah, yeah. For us it will be a different code, different material.
+
+UNKNOWN_SPEAKER:
+Transparent, okay.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So there our life would be easy, but the challenging part would be how user will maintain the Excel, right, or how they will download the Excel and these combinations It has to be accurate or matching with respect to the classification values. Else, the mapping will be failed. The logic will fail.
+
+UNKNOWN_SPEAKER:
+There are standard SAP BOM creation templates available.
+
+Patel, Rahul:
+Once we define the BOM and once we are able to demonstrate, we'll give those templates to the ad hoc team. So the template allows you to define header and the components separately.
+
+UNKNOWN_SPEAKER:
+So all this information would be available on those standard templates. I will just share the
+
+Patel, Rahul:
+materials which was available in the alternate material table there is no entry exist in the generic table yeah I think they've stopped you from one of the conversation where they said that the alternate table is the correct table to look for right and if you identified how many metals we could find out of the list shared by it is it is basically Let me just count the unique entry.
+
+UNKNOWN_SPEAKER:
+11 entries are there around 11.
+
+Kunal Sheth (ADNOC Group D&CS):
+Out of how many 112. OK.
+
+Patel, Rahul:
+And roughly 10% we have the data maintain so we can can we then use this 11? Can you indicate which ones are?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can you send me the file back with highlighting the ones that you have? I have just shared the table.
+
+Kunal Sheth (ADNOC Group D&CS):
+Can you share your screen and show it to me, please? Let me share my screen. But could you send me the file, please? Yeah. These are the entries.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But from the file, which one are, because which I gave you two columns. Yeah. See, this is your file ID and SAP number ID.
+
+Kunal Sheth (ADNOC Group D&CS):
+So what I've done.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Those are branded codes. That's the thing. Those are not generic codes.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+What we're trying to do is to create the one with generic codes. And you highlight the branded. So the thing is that if you have that, it's fine. But the thing is that we should be maybe you should be able to using those codes that you find that you found during the generic but if you see the generic code also see here it's only six digit number
+
+Patel, Rahul:
+right and in the generic table that is not a six digit so that's not that 3188 it's not a generic code that's a old metal what we call generic code and branded code are both SAP code 13 digit These are the terminology used by DWS. Column A is not a generic code. Column A is the old metal code. So it's a different code than generic code. Column B has the generic code as well as branded code. And all of them, generic and branded code are the SAP metal codes only.
+
+ But you have a different generic code and you have a different branded code.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+How can I know if that code is generic?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+can you update a generic code based on your findings?
+
+Patel, Rahul:
+Yeah, Kunal the way we should show is that for a branded code which all generic codes we could find. Can you just update that particular file? So that way one to one is a relationship between generic and branded code that should be able to we should be able to identify based upon the table.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It could be the case that That is the generic code.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+And if that is the case, you just repeat the code.
+
+UNKNOWN_SPEAKER:
+Not in this table. In the other table, alternating. So you want this alternating number.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+No, no, no. The first material column.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is I have already given on chat. Yeah, yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So these are the generic columns. No, but they're two together.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So this is the number which you shared. And these are the corresponding alternative number.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Oh, OK. Can you send me the channel then?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So this is the next step. Yeah, yeah.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+But the good thing is here. That is the generic. Yeah. So the first column is generic, what I could understand.
+
+Kunal Sheth (ADNOC Group D&CS):
+let me see if I let me see something sorry you were saying something yeah I'm saying that in this table there is a field called category so currently they are using a as an input but there are other options are also available like substitute and equivalent we need to pick only a because in one of the session can you write please can you download that as an excel Excel sheet. Yeah, yeah, let me do that.
+
+ This is a alternate.
+
+UNKNOWN_SPEAKER:
+Let me share this too.
+
+Kunal Sheth (ADNOC Group D&CS):
+I think this we are able to find it out. Rahul, you are right. So this is the old number which Bhasin was referring.
+
+Patel, Rahul:
+Yeah, that's an old code.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I cannot download this code.
+
+Kunal Sheth (ADNOC Group D&CS):
+You need to use the AdBlock VDA only, then you'll be able to access this file. Otherwise, let me do one thing. Send it over email, right?
+
+Patel, Rahul:
+Send it over email to go to the same email address.
+
+Kunal Sheth (ADNOC Group D&CS):
+I think there was a restriction. Maybe. Let me select label as a need to know. Now, Vashan, just type it.
+
+UNKNOWN_SPEAKER:
+No, it doesn't let me.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Let me take a screenshot, a print.
+
+UNKNOWN_SPEAKER:
+Show me the file. Okay. Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Let me increase it.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So, here that is our correct understanding.
+
+Kunal Sheth (ADNOC Group D&CS):
+So, old number is Z D D 1 double 2 8 4 3. That is cat id is nothing but the old number which you referring to. See here you can see we have three for this number. This is two. These are also in two entries.
+
+UNKNOWN_SPEAKER:
+Yeah, now I have it. Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Let me follow me.
+
+UNKNOWN_SPEAKER:
+Let me unshare.
+
+UNKNOWN_SPEAKER:
+Can I share my screen? So let's look at one. Sorry.
+
+UNKNOWN_SPEAKER:
+Here, for example, H1. No.
+
+UNKNOWN_SPEAKER:
+This one is the number that I gave, right?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And this one is that the one that you're driving.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+what else this one so Bhaskar row number 7 that is the generic code right not the branded code not here in the OCTG file row 7 where we can see the same code So these are the branded, and in the other file, we have an alternative material code.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So then what does it signify? I guess for me, this is the branded, and this is the generic, isn't it?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So the generic is column A, and branded is column B. But the Bashir was saying, in the OCTG file that is the branded one.
+
+UNKNOWN_SPEAKER:
+Which one?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+In OCTG this is the branded one which is nothing but the alternate material.
+
+Kunal Sheth (ADNOC Group D&CS):
+No, no, Arun, our understanding is not correct because see in the OCTG file row 7 all the SAP codes are, Bhaskaran is saying it's a branded code, right? So in the table I have given input as a material not as an alternative material.
+
+UNKNOWN_SPEAKER:
+Oh.
+
+Kunal Sheth (ADNOC Group D&CS):
+Because in the alternative material don't see any entries exist.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So in alternate multi attributes, you don't see the value for this 10 minutes.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+This one. Here, for example, this one is 94. So this is the generic code. But then if I look this one here, it doesn't have any, it's here, but it doesn't have any consumption. But to be at least maybe for the other it has but for the completion code to be doesn't have any consumption.
+
+UNKNOWN_SPEAKER:
+Then this is.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+This one for example.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Hey, that's only one consumption. It's tricky, because most of them don't have.
+
+UNKNOWN_SPEAKER:
+We should speak with their data expert. Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But I think maybe you have filtered out something, right?
+
+Kunal Sheth (ADNOC Group D&CS):
+We need to remove the filter.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I'm confused. Which filter?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Which filter Kunal?
+
+Kunal Sheth (ADNOC Group D&CS):
+For the row I and j that is category and cat id and the new or is which we filter out.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, but still because they have pretty much the same assumption patterns.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+What was your question Nareen?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I'm confused. Because one generic code in the previous table, right? Yeah, so one generic code, so there is one too many mapping. Yeah, it doesn't make sense.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+You're right. It doesn't make sense to me. For example, here, this, look, we have three cases, then two cases, and this one is branded. It's not possible that one branded is linked to three generic It should be the other way around.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yes, exactly. It does not make sense to me.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, we need to speak with our data expert so they can explain this to us.
+
+Patel, Rahul:
+Guys, I need to jump into the next meeting, but we can speak more later. Let's have one more working session maybe Thursday, not tomorrow. And what I would say is that we now bastion the list of materials shared are all the materials in the excel sheet or only the select few no all the materials so we have around 110 materials only in the excel sheet is what you're saying yeah okay so okay with this data then we what I would recommend is that we should we should clearly send an email to abdul latif replying to his email that we have analyzed the data and these are our findings 1, 2, 3, 4, 5, 6.
+
+ We need clarity on these are the points, 1, 2, 3, 4, 5, 6. Let's agree and align on what clarity we need so that we can send this email across, document it over email so that everyone is aware that this is what support we need. Because if we talk to them in meetings and then later we ask data, they are not replying. So similar to what Vignesh said yesterday, let's document everything and send it over email so that we can put pressure them to give us the data we need.
+
+
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, I will do the following. I will write that email today and I will send it to you, Rahul, if you, and to you Kunal as well, and of course I will, and to Arun. Yeah, let's have that email for us internally. Let's review it. Yeah, and then you can, yeah, and then you send it.
+
+Patel, Rahul:
+Yeah, agreed. Thank you. Okay, thank you guys.
+
+UNKNOWN_SPEAKER:
+Thank you.
+
