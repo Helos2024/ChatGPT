@@ -1,0 +1,405 @@
+UNKNOWN_SPEAKER:
+I think every year. Hey, guys.
+
+Fiamma Giorgi:
+Happy New Year.
+
+UNKNOWN_SPEAKER:
+Happy New Year.
+
+Hector Palacios:
+Hello Dean, how are you?
+
+UNKNOWN_SPEAKER:
+Hey, Hector. Hello, Hector. Happy New Year, everyone.
+
+Hector Palacios:
+Rocio is not going to join because she's taking this last day off. Bastian and Seba, they are discussing something related to the plan. I was there as well, but I jumped to this meeting.
+
+Saul Portillo:
+All right. Okay. Okay.
+
+Hector Palacios:
+Happy New Year, Hector. Happy New Year, man. So let's see. Let me check if we have any important point on the meetings here. Sagar is not in the chat. This meeting. All right. OK, so let's discuss what is in progress. Saul, on the MRO chemicals demo, we have something to discuss, something to review.
+
+Saul Portillo:
+Yes, I think for the meeting for tomorrow, we can review more detail for this demo.
+
+Hector Palacios:
+Do we already have a meeting for this? Yes, tomorrow. Tomorrow.
+
+Saul Portillo:
+Demo review. Let me check this. Chemical demand planning discussion is tomorrow, Friday at 1.30. Spain, Spain. Yeah. Ah, there we go.
+
+Hector Palacios:
+So there is some interagent meeting. All right. That is with the huddle. And then we have one hour meeting for them. Exactly.
+
+UNKNOWN_SPEAKER:
+Okay. Perfect.
+
+Hector Palacios:
+Let's check today, tomorrow that for really, we were discussing today with, uh, I don't, I think that they are some things that they still need to configure and we need to check. Um, Between us, Basti and me, how we are going to proceed with that, because everyone is going to be on vacation until the next week. Then the MVP plan is something that we are working on. It's more internal management. Comment, something that basically Vivek and me, we are working on the last days indeed.
+
+ So basically, we are waiting for the feedback, but whatever comment is there, we already answered. On integration side, is Sagar here? Sagar, no, still not here. Do you have any news about this, Ray, or what is the status of this and when we are going to be able to connect for integration?
+
+Reinaldo Gutierrez:
+So we raise a note to SAP to enable the connection with IVP development, but we yet not have any answer from them. So I don't know if what it's going to take. Okay. Is that a, is a, is a normal scenario that we just need to, to raise a note, the note and it's another, it's another problem because, um, what happened here is that SAP forgot to connect the other IVP.
+
+Hector Palacios:
+Okay, so the big problem here is because we have many tenants, right? So maybe they give you just one and they forget.
+
+Reinaldo Gutierrez:
+Do you know if this takes time or is something quick? It should be fast because it's a simple configuration from SAP.
+
+Hector Palacios:
+Okay, perfect. The other point that we wanted to check is what we are missing for starting to change the storage location. You remember that we were checking some proposals from your side. Now the point is, why is the stopper to start working on this?
+
+Reinaldo Gutierrez:
+No, there is no stopper for that. I will start doing the implementation of the bodies for location first to see how it behaves. Because the problem here is that we don't have one ERP to two plants. It's one ERP to too many. So that's one problem. But I was talking with Sagar and he told me that we can use a plant and store a location. So we are going to use that combination but that's going to create a lot of data It's going to duplicate a lot of data because we are going to have the same information for all the store allocation related to
+
+Hector Palacios:
+the plant. OK. OK. That is our main priority right now, right? So if we don't have any stopper, we should focus 100% on that.
+
+Reinaldo Gutierrez:
+Yeah, yeah. I will start that today.
+
+Hector Palacios:
+save us about that also. Great, great. I will tell Basi that we put like a follow-up meeting maybe on on any of these days on the next week to check out.
+
+Reinaldo Gutierrez:
+I will start a meeting every week to let you know how we are on the integration side. Another topic, from the next week we are going to have help from the ABAD Corp from Mexico. So Isabel and Alejandra I think will join to this project for three months. So they want to help us with the ABAD side. Yeah, that is what I was discussing with Seba.
+
+Hector Palacios:
+The only thing that we need to validate she speak English.
+
+Reinaldo Gutierrez:
+It's not a problem because I will share with her all the definitions that we need to do so I think that's not going to be any problem. Okay, good to know.
+
+Hector Palacios:
+You see it indicates that we need to have sessions with Sarah as well and that would be an issue.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+Yeah, for sure. Okay, so we have drilling for structure. Yeah, that's the other thing that we need to do is as soon as we have the integration ready, we don't need to change right away the storage location and all of that. We would like to have a first integration of the information because based on that we are going to take some decisions. Yeah, I know.
+
+UNKNOWN_SPEAKER:
+I know.
+
+Hector Palacios:
+So the first is, of course, integrating the mass data, the material, location, the asset, and all of that, as they are. And then try to integrate the consumption history. That is really important for us, because based on that, we are going to decide if we go with one model for supply, or just two models, or just one. And it's not something that we can decide until we have the data. For this definition, I think that is good enough.
+
+ If we have the information by plan, we can work on that way. And if we realize that the information is not fine to do a forecast, for example, we are going to decide that. So this is spending on having the integration, I guess. It's not that you need to do anything. It's just as soon as we have the communication ready between IDD and CIDS, then it's just to launch these standards.
+
+Reinaldo Gutierrez:
+The problem here is that connection that is missing, but when we have that connection, okay, we can start doing the workflow.
+
+UNKNOWN_SPEAKER:
+Okay, perfect. Good.
+
+Hector Palacios:
+I don't know who has joined. Do you want to raise any point here? We were discussing with Ray about the importance to work right away in the storage location. Saying that they are starting even today with Saga. That's cool.
+
+Bastian Osorio:
+That was my main concern.
+
+Hector Palacios:
+Yeah, I know. So we already discussed at that point. Whatever related to configuration and our own chemicals, we have a session for tomorrow. Related to drilling, I think that we already have a session today to see what is going to be the MVP. We need to start configuring the well you already started configuring the demo so that the point is how we are going to progress this week uh when that one is is out but that that's something that we can discuss internally uh between us and I don't know what else guys do you have any other topic any question guys that you want to raise Yeah, one thing just for Fiamma and Saul, regarding the script you've been preparing, that it
+
+Bastian Osorio:
+is important to clearly state the relationship between the script and the VRD. So I know that in the VRD, you basically listed all the points, like, I don't know, one, two, requirement one, requirement two, requirement three. So, in the script, you can put an additional column saying which point of the VRD are you including, are you addressing, sorry. Okay. I don't know if you get what I'm trying to say.
+
+ Of course, some of the points won't be addressed during the MVP. Therefore, they won't be in the MVP. That's not a problem. OK. But I think we can review it in full detail later in the meeting we have tomorrow.
+
+UNKNOWN_SPEAKER:
+OK. I understand.
+
+Hector Palacios:
+I saw that we had a task related to testing, script preparation or something like that, but I don't see it. Do you remember? Because I probably, maybe... I think that there was a task.
+
+Fiamma Giorgi:
+And chemicals, weight one preparation, isn't that?
+
+Hector Palacios:
+Ah, script validation. Ah, that is not clear enough. Script validation, okay. All right. So, OK, so you are already working on this one, but in drilling, have we started working on this script, Arun? Yeah, I started just now.
+
+UNKNOWN_SPEAKER:
+OK, perfect.
+
+Hector Palacios:
+Before you go, please send it so we can start validating, and during the next week, we can complement if we find All right, last point that I want to raise is that I'm creating an Excel in the same configuration plan that we have. I want to have all the open points here. Basically, all the same question, whatever we need to solve in the following sessions, and so on. Third track, so you see that we have a drilling of And we have MRO and chemicals, and so on.
+
+ And you have it by module. So it's just an idea to go to a deeper level of detail, because here we can discuss some points, a high layer. We need to clean a little bit this part. The idea is that all the points are more detailed, or that we need to track here. We are going to do it here on the Excel. That is going to be much easier. And it's on the same file that you everyone has right now. The only point is that I needed to save it on this format with a macro so if you see the document please open that one because that is the one that we will start using because it's going to help us to filter more quickly and so on.
+
+ This is something that I was using for a prior project and was working very well so we didn't lose track of any point. That's it. So that's why I was asking you internally what are the points that you want to what the specific questions and so on so we can keep track so we know if something this this is something that we need to go to a design session with me and Bastián uh if this is something that we need to get from Adnox if this is a technical sessions this is something that we need to put push to the integration team and so on basically that um Ray you wanted to ask something or to comment something or was that a mistake yeah yeah I I have um a similar document for the integration part.
+
+
+
+Reinaldo Gutierrez:
+I don't know if you can add that one. I will share that with you guys, or maybe we can use this one regarding to integration here.
+
+Hector Palacios:
+Yeah, share with me to shake it. That is something that is worth it to have on one place.
+
+Reinaldo Gutierrez:
+Okay, maybe we can create another spreadsheet here. And put that information for integration part.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+Usually, either way, we have an integration document where we have the whole mapping. So maybe we can place it there. Let me see if I see any problem in having it here. Or otherwise, we keep it separate. But I can reply the same logic there. It's not going to be an issue.
+
+Reinaldo Gutierrez:
+Thank you, Hector.
+
+Hector Palacios:
+So that's it, guys. If you are working with this document, please to the new one that is with a macro. Let me know if you were working with that today and I will make sure that it's completely aligned. But this is something that I just started like one or two hours ago, so I guess that is not big different and we can just change the other domain, right?
+
+UNKNOWN_SPEAKER:
+One more topic.
+
+Bastian Osorio:
+Today in the meeting with Murugan, he requested a template to calculate the EOQ. So I will be working on that. He said he mentioned it weeks ago, which is not true. What does he mean about the template? He means that some of the data, they don't have it. So we should provide a way to estimate the data.
+
+Hector Palacios:
+There is no way. You don't have the data.
+
+UNKNOWN_SPEAKER:
+Are you lost? Why? What is he asking?
+
+Hector Palacios:
+What can we do if we don't have the data for the EOQ?
+
+UNKNOWN_SPEAKER:
+You cannot calculate the EOQ.
+
+Bastian Osorio:
+Yeah. He mentioned something. So I will investigate and then reply.
+
+Hector Palacios:
+Let's just stay five minutes, Basti. Maybe everyone can reply, unless you have any other point, guys. And we're going to stay with Basti for five more minutes.
+
+Arun Singh:
+So Basti, did you receive any response on that question, on the drilling questions?
+
+Bastian Osorio:
+I think we haven't sent, because I sent the answer I mean, I talked with Rahul this morning, and he said he's fine with the question, but he hasn't sent it to Bignesh, to Abdul Latif. What is the question, guys? The drilling questions. Drilling questions.
+
+Arun Singh:
+Or SAP questions, you mean, Maroun?
+
+UNKNOWN_SPEAKER:
+Drilling questions.
+
+Hector Palacios:
+Can you share with me so I keep track on that file?
+
+Bastian Osorio:
+I sent it to you. That's right. Yeah. It's not a file.
+
+Hector Palacios:
+It's an email. It's an email.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+I will look for it.
+
+UNKNOWN_SPEAKER:
+Okay. Any other point guys? No. Okay. Perfect. Thank you guys.
+
+Hector Palacios:
+I will stay with Vassie here. Thank you guys.
+
+UNKNOWN_SPEAKER:
+I have to go to my room.
+
+Hector Palacios:
+Ok. What email?
+
+UNKNOWN_SPEAKER:
+What email? What? About the drilling question.
+
+Bastian Osorio:
+I know there were some details, but about drilling?
+
+UNKNOWN_SPEAKER:
+No, about the date.
+
+Hector Palacios:
+Ah, about the date. Ay, ay, ay, ay. No, entonces no aplica.
+
+UNKNOWN_SPEAKER:
+Son preguntas que nosotros estamos haciendo a ellos.
+
+Hector Palacios:
+Vale, está bien. Es que eso es básicamente lo que quiero dejar ahí, por no decir nada. No creo que sea un quididis y la cuestión es un open points, porque la idea es que tengamos un flujo de cómo se llama, de que tenemos una pregunta hasta que lo transformamos en, no sé, foreign foreign And now, about the EOKU one, what is it...
+
+Bastian Osorio:
+What is it waiting for, Murugan?
+
+Hector Palacios:
+Maintain the data in a template that we are going to deliver. Maintain the data in a template?
+
+UNKNOWN_SPEAKER:
+Like this.
+
+Bastian Osorio:
+From what I understood, you were eating.
+
+Hector Palacios:
+I don't know, Cache, We don't have time to have lunch. Did you have the meeting this morning? Did they accept my vote? What? Did you have the meeting this morning?
+
+Bastian Osorio:
+Let me see if they accepted my vote. Yes, yes, I was there. I also have mine.
+
+Hector Palacios:
+Okay, because that's how you share, but no. There we are. Yes, but it hasn't finished yet. I don't know where it is. It's kind of slow. It's going to finish at some point, but it's taking too long. It's not ready yet. But well, there's not much we can do.
+
+Bastian Osorio:
+We still have to start telling these guys that no. He said that there were ways to derive those values with rules.
+
+Hector Palacios:
+Yeah, yeah, but that's already... They're screwing a lot, we can't give them those things.
+
+Bastian Osorio:
+Well, they sent us the chucha, very good. But they fucked us in the middle. They fucked you? No, consultants, like, useless consultants. Really? No, no. But I told them that they had to give us the date until we could, and he said, if we have to work, But if you have the data, you have it.
+
+Hector Palacios:
+If you don't, you don't. I mean, I'm going to be responsible for your data. If you don't have it, you screwed up. But what do you think, that we are financial consultants, that we are going to give you formulas to activate it?
+
+Bastian Osorio:
+Like an approximation, something like that, you know? Like some rules for approximations. So, for example, holding cost, 20% of the purchasing cost.
+
+Hector Palacios:
+foreign foreign we estimate it like hell, which is not our thing, but hey, I looked for something out there and the holding cost is clear that yes, but the issue is that you always see the estimations based on another cost and to know if the other cost maintains it well or not, but I think it would be like that.
+
+Bastian Osorio:
+That's what we want, to go behind, that is, to get to, for example, a Rally in the pure cost of purchase and with that you can already determine for the other player, as an approximation.
+
+Hector Palacios:
+Yes, but I will not wait, something so complex as a template, a table or whatever. We give them the basic formulas that we find and this is what we know, but we can't say if we sign this as experts, if we are IEP consultants. We are not consultants on financial issues or anything.
+
+UNKNOWN_SPEAKER:
+Yes, also.
+
+Hector Palacios:
+And in fact, that thing, I use the battery of KPMG because they help us a little. We have a consultant from, what is it called, of pure project manager.
+
+Bastian Osorio:
+No, no, we can't.
+
+Hector Palacios:
+Let's do the same, Juan.
+
+Bastian Osorio:
+What I'm going to do is, I'm going to send a corneta to this group, and I'm going to write Yes, yes, all the time.
+
+Hector Palacios:
+In theory, I was thinking, why don't we start putting Kunala as an integration? Yes, I see. I think it's a good idea. Yes, but to a certain extent, because you know that this It gets...
+
+Bastian Osorio:
+It gets... It gets very intense. You can start asking us, like, hey, but this guy, why didn't you integrate him? And why didn't you integrate him too? I don't know, you have to handle it carefully.
+
+Hector Palacios:
+But at the same time, if you're the owner of the matter, I don't want us to have a boss on top of us, I want us to have support.
+
+UNKNOWN_SPEAKER:
+That's what...
+
+Bastian Osorio:
+Yes, that's also a support, but not that you start sending us, you know? Not that you start asking questions.
+
+Hector Palacios:
+No, but you know, sometimes we send it to the studio later, if nothing happens.
+
+Bastian Osorio:
+No, I agree.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Hector Palacios:
+The dashboard communication thing, I'm going to clean this up a bit, because it doesn't seem to stay. Is the Document Application ready? No, it's not ready.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Hector Palacios:
+And how the hell are we doing the integration and making the connections and everything?
+
+Bastian Osorio:
+I mean, everything is ready, even the datastore but they still don't give us the approval to connect.
+
+Hector Palacios:
+At this point, we have to understand how the procedure changes things in the add-on. I have the TPA logic at the end, what are they going to do?
+
+Bastian Osorio:
+The TPC, the screw, I told you it wasn't possible.
+
+Hector Palacios:
+Ok, and the TIE-in, do we leave it open here or do we close it? No, leave it here, it's still open. That's logical, you can leave it open there, just in case. Well, it's just that Kuchbo already has it in his archive. So, let's see.
+
+UNKNOWN_SPEAKER:
+Let's see if I can do it. I think it was there to cut me off at least.
+
+Hector Palacios:
+Today they paid you, right? Oh, no, no, foreign foreign This has to be scaled with KPMG. What do we do with the turnaround? We also have to have sessions for that.
+
+Bastian Osorio:
+We are accumulating tasks and we are closing at the same time.
+
+Hector Palacios:
+With placeholders. This is the... I feel like this is duplicated. Turn around, planning a harassment call with an off-tip. Borro uno, no? Sí, borro uno. De las sesiones de configuración, VRD, eso lo vamos a tener colocado inside a build for Richmond. Y ya me quedó un poco más claro esa cuestión. ¿Y cómo lo vamos a hacer, William? Simplemente quieren un indicador que ellos indiquen cuándo se tienen que generar las PR.
+
+ Entonces, primero tenemos que identificar cuáles son los que for refurbishment. And then a kind of indicator to tell them when we consider it a supply planning, basically. Something like that. Because they're going to tell us when this can't take it anymore, you know? When this is beyond repairable, they told them. And then they have to propose a PR. So that's what we have to understand a little better, the sessions, but that's about it.
+
+ Define how to build supply chain network. 3. I'm going to try to organize these questions and all these tasks so that we leave meetings and the configuration has to be more sessions. We can't have a weekly session at 9 a.m. On Monday. We have to do it by drilling and by supply and with a two-day phase-out each. It's not necessary for both of us to connect to each thing, but to check with the guys how they are doing and what are the open points, because you have to do a bit of management if you don't have
+
+Bastian Osorio:
+a very complete perspective. In fact, tomorrow's session, I don't want to check the configuration, I want to check the MVP, the same thing we were doing the other day with Arun. So that we are clear on what requirements are going to be covered and from that I adjust the script, but we can't go into so much detail, you know?
+
+Hector Palacios:
+Yes, yes, it's hard for them to get it, man. So, like, they get it, but they're very on their side, you know? Like, very, I don't know, to what I know how to do, like, they don't follow the guidelines that we can put for them. So, nothing, to try to connect and do more, I mean, more than to make sure that they go on the right path, you know? Before they advance, advance, and then, no, fuck, they should have done this shit, you know?
+
+ And push those who use this file too, so that they don't get the good ones. I'm going to get into that a lot, because in the previous project I got into the task management a lot, because we didn't have PM, but here too, because in the end, even if this rust is up to a
+
+Bastian Osorio:
+certain level that can support us, I think it would be good to differentiate between making two configuration files because it's a lot of shit with that file. Could it be one of Dreaming too?
+
+Hector Palacios:
+Yes.
+
+Bastian Osorio:
+It's just that I feel that that file is more of Saul with Fiamma than with Arun. It's better to duplicate it and eliminate everything from the meeting.
+
+Hector Palacios:
+Let me make one double, that is, one with everything and then I simply duplicate it and eliminate part. But so that it follows the format of all those consolidated things. Tomorrow at what time? At what time do we meet? Let's see, we still have a meeting in Culiapo, so they tell us drilling knowledge transfer, To the Culeada session, man.
+
+Bastian Osorio:
+Ah, so that Arun can connect, man. Yeah, man, I don't know today. Arun is out tomorrow?
+
+UNKNOWN_SPEAKER:
+Yes. Ah, fuck, man.
+
+Hector Palacios:
+To that Culeada meeting, and... I'll be there at 10, man. Yes, they will arrive in a few days and then you have to get there, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+Well, if we connect for that session with them... I'm going to orient myself on the way to the office, right? Yes, now if you tell me, it will be good. Well, no, but I'm going to orient myself on the way to the office, right? Well, I...
+
+UNKNOWN_SPEAKER:
+That's it.
+
+Hector Palacios:
+Ok, we're in touch.
+
+UNKNOWN_SPEAKER:
+Bye. Ok, bye. You
+
