@@ -1,0 +1,193 @@
+UNKNOWN_SPEAKER:
+Good morning everyone.
+
+Tara Madhavan (ADNOC Group D&CS):
+Happy New Year. I will pull Rahul into the Rahul will join shortly. Let's wait.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+Hello, good morning, everyone.
+
+UNKNOWN_SPEAKER:
+Good morning, Rahul. Happy New Year.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Thank you, Vishal.
+
+Kunal Sheth (ADNOC Group D&CS):
+everyone happy new 2025.
+
+UNKNOWN_SPEAKER:
+Thank you, Rajiv.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Same to you.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Let me check if we have. Cool, let's see.
+
+Tara Madhavan (ADNOC Group D&CS):
+Who is needed? Rahul, Bastian or Hector?
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Yeah, we'll need Bastian and Hector in this one. Let's wait for a minute or two and we'll try to connect with them and see if they are Rahul Bastian is here.
+
+Tara Madhavan (ADNOC Group D&CS):
+Good morning, Dustin. Good morning. OK, so Bastian, we can start this call, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Do you need anyone from GoSIM or we can continue? Give me a second.
+
+Bastian Osorio:
+Give me one minute.
+
+Bastian Osorio:
+Can you hear me well?
+
+UNKNOWN_SPEAKER:
+We can hear. OK, we can start. Yeah.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+OK, good morning once again, everyone, and wish you all happy new year 2025. Today's call is on EOQ calculation. Now, during our workshops and all the discussions we've had, we understand that for the max parameter calculation, we'll need EOQ to be calculated. So that, based upon the reorder point and the EOQ calculation, as highlighted in the BP document as well, we'll be able to define the max inventory parameters.
+
+ Now, EOQ calculation, as per the standard industry definition, there are two parameters of the EOQ calculation, which are generally finance-related cost parameters, which is the purchasing cost and the holding cost. So the purchasing cost is nothing but the fixed cost which is incurred by an organization to initiate any procurement and then the holding cost is the inventory holding cost for an organization.
+
+ So as we get into this conversation the intention of this today's conversation is to identify how this inventory holding cost and purchasing cost are calculated today in ADNOC and is there a way for us to get this cost updated in IBP so that IBP can then use this information to calculate calculate the EOQ and eventually the maximum inventory parameter in IBP. So with this, let's start with the conversation.
+
+ The question essentially is, how is this inventory holding cost and then the purchasing cost calculated today in ADNOC? And is this cost, if it is calculated, where this cost is available us to get this incorporated in IBP. Anyone from AdNoc can help us understand if they're aware of This cost is calculated today.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I doubt that we have this information. In SAP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+We don't have this type of cost calculated anywhere in the system, you know. So maybe if this has come out of any benchmarking or any other reporting, maybe it can be considered like some constant value, then that is a decision to be taken because we don't have, you know, this to be done or otherwise what needs to be done is okay another idea again I'm just talking telling an idea it's not there in the system but maybe if we are going for the project in 2025 then business will need to take the transactions for 2024 and you know get the order cost per order okay This is this is again.
+
+ This is only for like what they are saying is only for NB type of purchase orders, not any contracts. I think I think so. I'm not very sure, so they need to calculate some cost. Maybe that is that yes itself has a formula behind it, you know.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+So how to calculate the test cost? Cost administrative cost team. I think I've answered this long time back. We have discussed on this subject. This subject is a new topic for holding cost we have discussed on a percentage hope you will find this in a procedure also in ordering cost we said we need to calculate using a template and you are supposed to provide a template which means if I am not there in a meeting everything will be new for everybody consultants I don't know if you are taking MOM or not you are supposed to give us a ordering cost template so that we will give you the data on that who is trying to do this on an annual basis both administrative cost is to be calculated holding cost of course we can go by a percentage of unit price right or if you still have a template we can give update this data once in a year this is all the companies are doing this is not there in SAP more than we would like to understand how to just give you
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+a figure you need so I understand but this is this is standard industry formula this is not something specific to product or anything correct so and our understanding is today we are able to set max parameter which means inventory team is calculating this eoq outside somewhere in the system may not be necessary for sure we would just like to know what is that logic today then when it was decentralized So we don't bother what they were using as
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+individual agency. Now we need to have a centralized ordering cost and centralized warehousing cost. Warehousing cost, there is a percentage over unit price, 25%. We can fix up the percentage. This also was discussed for holding cost, which is inventory carrying cost. For ordering cost, it's not order cost. The terminology is confusing here. Ordering cost is different. Order cost is different. Purchasing cost, they call ordering cost.
+
+ So ordering cost, you need to give us a template. We'll provide you data. This template is to be updated every year.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+And every year, the ordering cost is to be calculated with the tool. So we expect here one request, Murugan, is that I understand different AGCs are following different templates, but fortunately, we need to have one. So is this something which we can get from AdNoc?
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+you want us only to provide and if that's the case everything was manual before we want you to give a template over which this template shall be used on a manual basis to recalculate it in future so our request is if Adnok can provide us this template considering this is a standard industry template which is BQ you are giving me a formula you're asking me to give a template then why do we call for a consultant I can
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+understand here that since this is happening today and we're trying to automate which is happening today.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+If it's happening manually, nobody is having a template. Let me tell you.
+
+UNKNOWN_SPEAKER:
+They were they were automated.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+Maximum if you would like to understand how it is happening manually, even one agency which can be referred is good enough so that we can use that information to share the template with you, which is being used today.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+You give a template. I said this almost two months back. End of the decision session. Asking you again, I'm not saying that's what you're doing.
+
+UNKNOWN_SPEAKER:
+I already said this.
+
+Bastian Osorio:
+Question, do we have a template? Yeah, we can provide it. We sent an email with all the information, not including the template, but we basically provided the formula with this detail. But we didn't get a reply for that email but no problem we can we can provide the template uh for for them with the materials at this with uh there's gonna be a lot of information that's why we expected a more broad rule then then complete the template individually for each one of the of the materials for each one of the different storage location that will be more or yeah.
+
+ That will be a lot of information to be maintained annually.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+The Boston that it was, yes, yes, there are more than 20 parameters which is normally used. We can even reduce the number of parameters, but make that as a standard template. Central team will probably correct this data once This is what is the plan. We don't want to maintain this standard permanently, so. Mostly companies do this once in a year. So that template, whatever you're doing will maintain it and update it annually.
+
+ Probably you have a space where the annual data is saved.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+So We'll have to create a separate planning sheet for EOQ and then the data which is required for calculation in EOQ as mentioned by Murugan. We provide all the fields in IBP and someone would update the data so that the calculation happens for the year. So that which means that we don't source data from any source system like S4 HANA, but the data is directly input as a manual input in IBP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+you first share the template. Maybe some fields can come from the ERP directly, maybe some fields, maybe some sort of constant value. Once we look at the template, then we will say, because if the number of records somebody will not go and manually feed this, you just propose the template first, like what Murugan is asking. Now, if you want the purchase order against the materials per year, anyway you are going to pull this via the CIDS system.
+
+ So whatever parameters you are going to propose as part of a template, make that. We will see whether it can be provided some, maybe out of the 20 parameters, maybe few of the parameters may be possible from system automatically. Few could be constants. Few something that business may agree. So provide the template, we will have a look at it, and then we'll conclude roughly.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Noted, Vignesh.
+
+UNKNOWN_SPEAKER:
+Okay, so then I think this becomes a quick call.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+We don't need to spend a lot of time around on the call. So, Bastian, let's take this input. We'll work on a template and we'll provide this template to the team, and the team can confirm how we can source the data for all the fields which are required to calculate inventory cost and the standard procurement overhead cost, which is required for the calculation of EOQ.
+
+Bastian Osorio:
+Yes, but a question, what do you mean with the 20 parameters? In this case, only two parameters are required. No, no, just I gave an example.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I just gave an example. Murugan was telling, right, there are some generally for ordering cost, for this one, It could be 20 or it could be 2 also, I don't know. What I meant to say is, assume that you want to calculate the ordering cost. Assume that you want to calculate the ordering cost. You will have a template which says, I want parameter X, parameter Y, parameter A, parameter B. Out of that, X and Y, I can automatically give you from the system.
+
+ Parameter A may be some constant, parameter C may be some sort of computed value. We will arrive or we will conclude after you. After we see the template from this is what I was trying to say, Bastian.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+OK, so the bastion just for information. Uh, uh, Vignesh, he really will have this data in his IP. Mostly all administrative cost starting from Uh, FTE salary, uh, uh, any of the for for make. Releasing a purchase order from PR to releasing a purchase order. Whatever administrative cost included, like rental of office space, manpower cost used, purchasing team cost used, requesters cost, all these costs together, including IT related support, software used, they make an annual total cost of the value and split means divided across the number of purchase orders.
+
+ This is cost per order. Come down to item level, cost per item, purchasing cost per item, right? So the template data, we might not get it in SAP. The planning team should feed this information from HR and different sources. We do, the planning team make a budget for every year, right? So they need to feed this data and calculate this value once in a year.
+
+UNKNOWN_SPEAKER:
+OK. That's new. Have any questions?
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+No, I was thinking that this template can be maintained directly.
+
+Bastian Osorio:
+Of course, we're going to provide a template, but in the future they can maintain the template directly in IVP. If the information won't be available in in Israel, it is better, so you're right.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+Better to have a template they say they input this data every year and it is saved somewhere for permanent purpose.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Yeah, and and that will also create a trend and track how the costs are changing every year for those parameters which are influencing the administrative cost.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+OK, so I think then you have any other question or let's let's conclude on the next slide. For this calculation for the call. Anyone, or Murugan, anyone have any other question?
+
+Bastian Osorio:
+I'm going to, we're going to provide the template, but of course we're not going to include every single combination. Let's start with a simple data set in terms of massive data, and once it is completed we can proceed to a larger set of materials.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+Sebastian, let's align on this, but then the ask is that we provide a template in IBP. The template should include the parameters which are required for the calculation of inventory holding cost, as well as the procurement overhead cost. What are different parameters which are required to calculate these details in IBP? Thus becomes input for user to maintain on an annual basis. So we create a template in IPP, defining all those parameters.
+
+ And once these parameters are maintained by users responsible for this, then the EOQ calculation can happen in IPP. And as a next step, for project team to come up with this template and share with the team, AdNoc team, so that AdNoc team can evaluate and confirm this template and assign participants responsible for maintaining this data on an
+
+UNKNOWN_SPEAKER:
+annual basis in IBP? Yes. OK. Anyone have any other point?
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+Or if we are all aligned, then let's conclude this discussion. Nothing else, thank you. Thank you everyone for your time today and have a great 2025 for everyone.
+
+UNKNOWN_SPEAKER:
+Thank you. Yeah, bye.
+
+Kunal Sheth (ADNOC Group D&CS):
+Thank you.
+
+UNKNOWN_SPEAKER:
+you Hmm. You
+
