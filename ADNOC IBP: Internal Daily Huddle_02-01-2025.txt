@@ -1,0 +1,261 @@
+UNKNOWN_SPEAKER:
+Let's give the others a few minutes to join.
+
+Roumanos, Hadi:
+I think this is going to be a straight Hi, everyone.
+
+UNKNOWN_SPEAKER:
+Good evening. Hello.
+
+Roumanos, Hadi:
+But I don't think Mohammed is going to be joining us. I don't know who from QSCM will be. But let's give a few minutes and then we'll start. Oh, this is Sebastian.
+
+UNKNOWN_SPEAKER:
+That's good.
+
+Roumanos, Hadi:
+Sebastian is joining. Yeah, that's good.
+
+UNKNOWN_SPEAKER:
+Hey, Sebastian. Hello. Hello, hello. Happy new year, team.
+
+Roumanos, Hadi:
+Yeah, happy new year.
+
+Sebastian Alba:
+Still having a rough time starting.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Roumanos, Hadi:
+So a few things that I wanted to discuss with everyone and then I'll leave it up to whoever needs to add to the table. And that's a question to Raoul and Tara. How are we on packaging Milestone 2? So I'm assuming we have all the approvals for the design documents and we have the stakeholder report from our people team. Is there anything thing that we're missing for that milestone or for us we're done?
+
+ I think we are done, Hadi. OK, the one thing that's left is as we discussed, so we need to prepare the invoice internally and we need to keep Sebastian and the GoSCM team updated. I think that's something that I'm handling on the side because we need a PO from Jessa which hasn't been issued yet. Requirement for issuing the invoice from GoSCM's side but at least it's in the system or at least it should be in the system.
+
+ The next step would be with Khaled to make sure that on ServiceNow we have all the necessary steps so that we're able to upload without a rejection for the invoice. So this is on us but at least from a deliverable perspective we're fine. The second item that I wanted to check up on is the revised or re-baselined plan or however you want to call it. So Sebastian, how are we looking on that?
+
+UNKNOWN_SPEAKER:
+Do you think tomorrow we have something decent to look at? Sebastian?
+
+Roumanos, Hadi:
+All right, so we'll give Sebastian a bit.
+
+Madhavan, Tara:
+Bobby, we also have a meeting scheduled for tomorrow.
+
+Roumanos, Hadi:
+Yes, I'm just checking whether or not it's going to be a good meeting, or if we're looking at a final product, or if we're looking at something that's... Oh, you're back? Nope, still not back. Okay, so that's something that I wanted to check on. If Sebastian's back, then he can give us a view The next item on the list, I know that Edith, you wanted our feedback on the newsletter, was it? Or was it something else?
+
+ No, it was the FAQs. The FAQs, yes. So how are you doing on this? Because I don't know if you've had a reply or not yet.
+
+Newton, Edith (UAE):
+No, not yet. I had written to you and Rahul.
+
+Roumanos, Hadi:
+Okay, so how urgent is this and by when do you need an answer from both of us?
+
+Newton, Edith (UAE):
+At the earliest, because since we were already delayed for the longest time since we were waiting on the AI and machine learning answers. So, I mean, as soon as you approve it, I'll share it with us, Mastin. So, let's aim to share this document tomorrow.
+
+Roumanos, Hadi:
+So, Raoul, maybe we can find the time you and I to go over this document, check if there's anything that we need to address. I think there's something pointed towards you, so if you can spend half an hour just making sure that that's addressed, and then let's aim to send it out just so that we don't keep getting stuff pushed. It shouldn't be too much trouble, so let's just make sure we get it done.
+
+ What else? In terms of... Sebastian, you're back?
+
+Sebastian Alba:
+Sorry, I had a problem with my mic. No, no, it's okay.
+
+Roumanos, Hadi:
+I just wanted to see if... Yeah, so tomorrow. Are we in good shape to have a discussion for the rebase lines plan? Yes that we're Doing the final adjustment, but we have a plan to report tomorrow Okay, just make sure that whatever whatever New plan you come up with you have enough revised assumptions to account for potential delays in approvals from adnox side right So whatever assumptions we had made in the past might not be applicable now.
+
+ So we might need to be a bit more conservative when it comes to these estimates. And we can get Firas's approval, that's fine. But please make sure you give yourself enough time for that stuff so that we don't fall into the same trap and then have too much time spent on approvals for either SITs, UATs, test cases, all of that stuff.
+
+Sebastian Alba:
+We're living a formal activity of approval with a defined so we can define ourselves if that's enough buffer or not.
+
+Roumanos, Hadi:
+Okay, as long as you thought about it, tomorrow we make a call if it's enough or not and then we can justify. Fine, okay. These are... Just one more thing, Hadi.
+
+Patel, Rahul:
+Yeah, go ahead. The design board approval we had requested based upon the... I saw the email, by the way.
+
+Roumanos, Hadi:
+What's wrong with that? Email?
+
+Patel, Rahul:
+So the thing is, the dates we had mentioned in the design board approval, the project milestones, now if you look for build, we were supposed to start build in the week of 4th December, right, after we complete the document approval. Now we are already closing build phase somewhere in a 15 days period of time and we are requesting approval for build. So the dates are not getting aligned with the current date.
+
+ So we've been requested to update it correctly, which means that whatever change in the baseline plan we are doing should now reflect on the design board approval as well, because they won't approve for a project which is already delayed. Okay, what does that mean? That means we won't get access to development environment unless this is approved. So probably, Sebastian, I'll need input from you that we have access to sandbox environment and officially to start the development, we also need access to development environment.
+
+ Now, unless we are able to figure this out and we are able to make the changes in the baseline, give the new dates to the plan, we will not get this access to development environment. How does this impact our build activity? I'm assuming that we can still continue with the sandbox environment. And once we baseline the plan, we can get development access. But I will need this confirmation from you if this creates an impact on your side for building.
+
+
+
+Sebastian Alba:
+So far on the ABP part, it doesn't. The bottleneck so far currently is actually the current main point of delay is integration. And for that, we do need access development environment of this beforehand because we need to start working on the changes on the structures and so it does get we do get an impact at least we have the opportunity or
+
+Patel, Rahul:
+have the authorization to start configuring the structures beforehand but that's going to be a question there hoping that we are working on interface I think probably one or two things are pending we are working with sap but if we get the interface established but we still have access to only sandbox and not development will it impact our activity or we can simply copy our whatever work we are doing from sandbox to development and probably with minimal impact we
+
+Sebastian Alba:
+can continue I just wanted to understand we can mitigate it a little bit but we need to push for that access as soon as possible and so we can mitigate it for a week maybe but not that longer.
+
+Roumanos, Hadi:
+What does it take Raul to get this approval?
+
+Patel, Rahul:
+The new dates now.
+
+Sebastian Alba:
+That should be review in between this and the following week.
+
+Patel, Rahul:
+The new baseline project plan because the current dates what we had submitted are from original plan and We are already late on some of those activities, so we've been questioned that how this date does not make sense what you've mentioned in the project plan by the design board. So can we do something?
+
+Roumanos, Hadi:
+Can we just make sure that we're all in that call tomorrow, Sebastian, to make sure that whatever design board wants us to plan for, we account for in the new plan so that we don't get another hiccup with the
+
+UNKNOWN_SPEAKER:
+design board? Yeah.
+
+Roumanos, Hadi:
+Okay, okay.
+
+Patel, Rahul:
+OK, this was it from plan perspective. Kunal, you have update on interface?
+
+UNKNOWN_SPEAKER:
+Yeah, Rahul.
+
+Sheth, Kunal:
+So we have a follow-up with the Kaiser. So Kaiser is currently out. So we'll get in touch with one in two hours. So we are still awaiting his feedback to start the service user activity. That is one part. And second, we have expedited to Paola today to resolve that issue, because CIDS configuration with IBP is still missing because of the missing server. So two parts are still pending to establish a complete connection between IBP and S4HANA.
+
+
+
+Patel, Rahul:
+And both are pending with, one is pending with AdNoc with Kaiser and other one is pending with SAP for the support issue we've raised.
+
+Sheth, Kunal:
+Right, right. Yeah, yeah.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Patel, Rahul:
+So Hadi, for your information, this will further add to the delays what we are working upon in the project plan. Just for information.
+
+Roumanos, Hadi:
+We need to estimate what number of days we're getting delayed, because again, we need to account for those in that re-baseline. We're getting one chance to revise that plan. Right now, the assumptions that we have are the ones that are present in the status update, right? So anything else that we need to add to that, we need to amend them to that revised plan so that when we have the conversation with Firas, we tell them these are the 17 days, the 11 days, the whatever, eight nine days plus whatever days we have incurred now and these are the delays that we've accounted for so that he has a full picture right we have traceability on a lot of things but if there's something new then
+
+Patel, Rahul:
+we need to log it that's all I'm saying yeah so right now since the ticket is the sap we have sent an escalation email as well to paula considering it is sap it's hard to tell how much time so we'll have to assume something and proceed and that assumption should be aligned with that knock and then if there is further delay over the assumption, probably we'll have to park it to be aligned in future if we get a
+
+Roumanos, Hadi:
+possibility again. Which is fine, we need to free, okay, so the idea is to freeze that re-baseline plan sometime before the 9th, so maybe 7 or 8 Jan, and then if we keep re-incurring delays then we start logging those for any
+
+Patel, Rahul:
+upcoming CR after that. Yeah, noted. One last thing Kunal, any update on the planning approvals document comments we do we have all the feedback like do we have replied all the comments yeah so for the BRD it is almost completed so only two comments were
+
+Sheth, Kunal:
+there from Adnox side so that we have responded now from the BPD point of view we don't receive any feedback on drilling as well as time for demand so two documents we can state away go ahead for approval because so far we did not receive any feedback. Now for the MRO and chemicals, MRO is almost complete. Now we are awaiting feedback from Moh and Sheroes to update from process side. So that is one part.
+
+ And a couple of comments still we need to be responded on chemicals. So that I have already updated on Common Channel, KPMG, and GoSCM. So once we are done, then we are good to go to proceed for the approval.
+
+Patel, Rahul:
+Hadi, a risk here for drilling. Specifically, there are no comments and the users who are supposed to comment are on leave till tomorrow, which means we are at a risk of not getting comment because users are not there. So we'll have to, like, I don't know, we may have to extend a bit to get them a chance to look at a document because I don't want to get to an approval stage where no one has looked into a document even once because of holidays.
+
+ That's the risk on the supply side Additionally, Hadi, one of the input which was received was e-commerce integration. I don't know what is this e-marketplace integration, but this was something which was received as an input from the AdNoc leadership in one of the steering committee meeting where they have requested us to look into this. So we've never discussed this in any of our calls, and we said that we'll have a look at it.
+
+ But now that it has received as a comment, we need to maybe talk to someone to understand what is this. So I'm just letting you know that this is something which is coming up new. We've not discussed, and maybe we'll have to park it as an open item for document approval. But Question for you.
+
+Roumanos, Hadi:
+First of all, this does not impact any of the documents that we've closed for the milestone, correct? Yes, this does not impact.
+
+Patel, Rahul:
+This is only impacting the supply planning documents that we have shared with Aetna.
+
+Roumanos, Hadi:
+Okay, which is mainly Wave 2 stuff that we need to handle before, let's say, the third week of January. Now, I think what we need to do is figure out who do we need to talk to. The first call that we need to make is with Khaled. This is something that's come up multiple times. Now we need to address it. Who are the best stakeholders to talk to? And then we take it from there. Ideally, we have a first meeting sometime early next week, when everybody's back from leave, hopefully.
+
+ And then thank you for bringing it up. I think we would have easily dropped this. But let's have first a conversation with Khaled. Maybe you can have it at an 9.30 on Monday. At least we bring it up. We say, who do you know? And then we start setting up those meetings. OK. Yeah. I still don't know what it means. And I still don't know how much more effort we need to account for. That's something that we need to keep an eye on.
+
+ If it's more than what we've bargained for, we need to pay attention. That's all I'm saying. Yeah.
+
+Patel, Rahul:
+Probably once we have the discussion around it, then only we'll get to know how big Yes, if it's too big, then we need to start bringing it up. If it's something that's easy to incorporate, then fine.
+
+Roumanos, Hadi:
+Yep. OK. Can I ask, I guess, you, Rahul, to answer Kamil? Just tell her we're revising the plan, blah, blah, blah. We'll get back to you, or something along those lines.
+
+Patel, Rahul:
+I was wondering if I should talk someone, maybe Khaled, to answer them. I don't know whether, how we want to proceed with this. Do you want, because if the moment we reply to Kamil saying that we have to change the plan, then we have to change the plan and then things will stop till we change the plan. So I just wanted, I'm not sure.
+
+Roumanos, Hadi:
+Okay, so a few things. I agree, maybe Khaled's the first stop as well. If he wants to answer her even better, I just don't want it to drag with her not being answered, that's what.
+
+Patel, Rahul:
+By the way, it's him. No, that makes no sense. There's two L's and one E. Are you sure?
+
+UNKNOWN_SPEAKER:
+Yeah, I've spoken to him.
+
+Roumanos, Hadi:
+That is so wrong, because that's not the way they write their names. Okay, never mind. I'm not going to judge. Whatever.
+
+Patel, Rahul:
+Yeah, I think I want to wait till Monday, talk to Khaled, see how we can align. If we can figure this out, get an exception, don't wait for plan, get me, get us an approval. If we reply and say that we have a changing plan, for sure they'll expect us to close on the changing plan before they can even approve.
+
+Roumanos, Hadi:
+I'm with you. OK, fine, Khaled, let's go with that. One last thing before we move on to another topic. Tara, can you chase Jessa please on two things? Not only the invoice but the PO for GoSCM, for their invoice. I don't think I've seen any replies from her. Okay, I'll do that. Unless. No, I don't. I don't see anything. Yeah, and then. What's that? We haven't got an answer from the view. Yeah, I haven't.
+
+ I haven't seen any emails, so just make sure you stay on top of just so I don't she might, I don't know, she might disappear.
+
+Madhavan, Tara:
+Also on the travel plan for GoSCM, if hotel bookings have to be done, I think we need to check, otherwise it might become difficult to find.
+
+Roumanos, Hadi:
+Have this conversation, have this conversation with Ms. Jost.
+
+Sebastian Alba:
+We don't have, we don't have additional travel also in January. The other ones will change a little bit depending on the project plan that we'll close tomorrow. And we already have an adjust travel plan. I agree Sebastian.
+
+Roumanos, Hadi:
+For the ones in January, do you have your bookings? They were already asked.
+
+Sebastian Alba:
+I'm not sure if they were confirmed, that's something you can review, but we already asked for the bookings for January.
+
+Roumanos, Hadi:
+Ok, Tara, do a quick check with Rosio and I'll leave you and her to deal with this. If there's anything else that comes up because of our new plan, then we'll update Rosso. She's going to be part of the conversation anyway, so that's OK.
+
+Campbell, Kyle (UAE):
+Sorry, Kyle, we've made you wait enough. That's OK. I just wanted to ask if any of the teams have had a chance to look at that SAP RBP award submission documents. I sent out the email on Tuesday because we need you guys to just verify the accuracy of the statements within that document?
+
+UNKNOWN_SPEAKER:
+I have not, I don't know if the rest have.
+
+Campbell, Kyle (UAE):
+Okay, I know that everyone's busy but this is quite urgent because they need to make a video based on this document and they need to submit the video by the 15th of January. So, I mean, we need to get it to them quite soon, if possible. Okay, we'll try to prioritise it.
+
+Sebastian Alba:
+For us today, the first priority is to close the new project plan, but we'll try to is right after.
+
+Campbell, Kyle (UAE):
+OK.
+
+UNKNOWN_SPEAKER:
+Thanks, Sebastian. OK. Thank you. All right. Anything else?
+
+Roumanos, Hadi:
+Anyone?
+
+UNKNOWN_SPEAKER:
+All right. Thanks, guys. Thank you. Bye-bye. Thank you. Bye.
+
+Patel, Rahul:
+Thank you, everyone.
+
+Sheth, Kunal:
+Thank you.
+
