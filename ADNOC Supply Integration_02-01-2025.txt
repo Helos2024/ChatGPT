@@ -1,0 +1,210 @@
+UNKNOWN_SPEAKER:
+How are you doing?
+
+Bastian Osorio:
+Doing well.
+
+Vivekanand Gajula:
+Happy New Year. Happy New Year.
+
+Bastian Osorio:
+Yeah, yeah. What about you?
+
+UNKNOWN_SPEAKER:
+Yeah, doing well.
+
+Bastian Osorio:
+Happy New Year.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Sagar Vora:
+Can you give me a minute?
+
+Bastian Osorio:
+I'm gonna go for a cup of coffee but I had that Nespresso machine so it takes like a minute less than that.
+
+Sagar Vora:
+Yeah, I'm busy.
+
+UNKNOWN_SPEAKER:
+Okay. Okay.
+
+Bastian Osorio:
+Let's see if we can turn off the I don't know. There's a number. You.
+
+UNKNOWN_SPEAKER:
+Yeah, I'm back.
+
+Bastian Osorio:
+Can you guys hear me?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+So Sarah, can you share the Excel file of the integrations? Well, let me see if I can. I think I have it open. Oh, no, not the file. I'm almost there. Files, realize, integration, chemicals.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+So this one is for MRO and chemicals. So let me open it. I will share my screen. So maybe before we start reviewing the file, you can give us some update regarding the state of the integration saga.
+
+Sagar Vora:
+update for what? For this the state of the integration firewall and all that yeah yeah so I just received the ID means now two pending items like REST everything is completed so one is like S4 one year means data store creation for S4 HANA one year fee okay S4 HANA BORU was completed. As for HANA 1.0 ERP, we are waiting for the service user ID password. So I just received the ID from...
+
+Bastian Osorio:
+This one is a ticket. This one is a ticket you guys created for SAP, right?
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Sagar Vora:
+This ticket is for, like, we are not able to see the IBP instance in the CIDS. So this is regarding that. So that is a separate issue. So for that, we don't have any update. So just now Kunal sent a reminder email to Paula to help us with that. So that is one pending activity. And second is like creation of S-400 data store in CIDS. So for that, I received the ID. So I'm just checking with Kunal if he has the password.
+
+ If he has, then I will proceed with the S-400 data store creation and try to import some table. If everything looks fine, then I will close that. Then only pending item would be the ticket. With SAP so once SAP reply then we will be able to close that point also okay but we have done like for S4 HANA and the IBP we are we have done the configuration with username password okay but I think AdNoc wants to create based on certificates so for that even they will require basically some certificate okay public certificate, client certificate but the team don't know the AdNoc don't know how to get that and even we haven't done any such configuration in the past neither Reynaldo knows that so we will check and we will later update them but at least we will start the connections ready like we will start the development at least based on the username
+
+UNKNOWN_SPEAKER:
+and password.
+
+Bastian Osorio:
+It's fine I think what we need to expedite to start moving faster is regarding the now that we're approaching the all the approvals we need to start integrating basically we need to move forward faster in the adjustment of the storage location. I think it was someone receiving forward to me that Reynaldo had some proposals or ideas. I'm not sure what are we waiting or what else needed from our part, so you start working on that adjustment.
+
+
+
+Sagar Vora:
+I will check with Reynaldo. Will update.
+
+Bastian Osorio:
+But regarding your, I mean, have you been able to work on that?
+
+Sagar Vora:
+On the storage location, like extractor from location to storage location? Yes. No, no, nothing like I mean, we were focusing on completing this item the integration items okay the connectivity issues and all so I didn't had any word with Rinaldo on seem like I need to check with him So I'm
+
+Bastian Osorio:
+not sure, it's too early to meet with Reinaldo, but could you please, Agar, meet today with Reinaldo and see what is his proposal and what do you think is the best one? I mean, what will be the best approach? And when you start work like Divide and Conquer, as someone said, in the sense that you can still keep working on the connection and all that whereas right now they're going to start working on the on the adjustment but we need to again we need to more faster with this one because we will need the location for the UIT for the UITs of demand and the demand UITs as you can see here will start on 24th of March So it means that we need to have all the integrations ready for data validation the 10th of March.
+
+ So we are running out of time. So we need to move faster. OK. So please consider, try to meet with Renato today and ask regarding this. If you need any input from our end, ask for it as soon as possible. And so you guys can start working again, he can start divide and like working on the adjustment and you can keep working on the connections, okay?
+
+Sagar Vora:
+Okay.
+
+Bastian Osorio:
+But we need to We cannot wait till we have all the access to start working on the flows. Otherwise, we won't have enough time. And regarding the above, it's the same. We are, I think, Rocio and Sebastian are working to get the resources as soon as possible. But yeah, from our part, we need to start adjusting basically on what we know now that we still, I mean, we have enough information to start creating things.
+
+ Of course, then we will need additional filters and additional attributes, but I think the main structure comes with the model itself, and that is not yet finished. So, yeah. And I don't feel, of course, because we haven't built flows, there's nothing to be updated here. We already did the work of check each one of this data and see if it needs some adjustment because of this storage location thing.
+
+ And we also check the different extractors and we will confirm that the data is there. In some cases, need some filters and so on and so forth but I think we have pretty much we have all the ingredients we need to start building of course we won't be able to integrate it because we don't have the connections but from now on for now I think there's not too much to add.
+
+Sagar Vora:
+I don't know Vivek if you have any So when are we planning to connect with Whitney for the filters? At least we can have that item also available. Or if we are not planning to connect, then at least we can send him over email so that he can just reply with the list of filters required.
+
+Bastian Osorio:
+I would like to first have the connections ready so we can show them the information and then just the integration with the information we have. And then on the top of that, have this meeting with Bignesh. I don't want to meet with Bignesh having, without, I mean, having built something, something meaningful, because they're gonna say, oh, but you already ate this information and you haven't used it so far.
+
+ So I prefer to hold it until we have something and then, yeah yeah but we don't filter if we load data into ibupath and there will be huge volume right so but we have we have some filters that's the
+
+Vivekanand Gajula:
+thing we do have some filters correct okay right now they'll have them vivek you wanted to say something uh yeah Bastián I I have one question uh last time you know when we had this internal, you know, integration call in that, you know, we were checking, you know, add no state, right, by running the extractors. So in that everything, you know, was at the plant level, right? So, so the question that I'm having is, for example, if that plant has maybe, let's say, two or three storage locations, then how do we cascade down, you know, that data to the S-lock level?
+
+ Do we have any logic that we have already thought of Can you give me a minute? Sorry.
+
+UNKNOWN_SPEAKER:
+OK. You Sorry, Vivek.
+
+Vivekanand Gajula:
+You were saying?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+So what I was saying is, last time when we ran the extraction, I mean, last time when we ran the extractors, right? So we got the data from the tables. So the question that I have is, all that data was at the plant level. Now, if the plant has, let's say, more than one storage location, then what is the logic to cascade down that data to the SLOC level?
+
+Bastian Osorio:
+What is the purpose of work at storage location, do you mean?
+
+Vivekanand Gajula:
+No, no. We need data at the MRP area level because that is what we are going to consider you know during the storage location yeah yeah from that standpoint you know I am having this question I don't get the question no
+
+Sagar Vora:
+so vivek the plan is like currently x vector is having a standard x vector right so the data is at plant level but our plan is like we will uh modify the x vector and uh uh make a changes
+
+Vivekanand Gajula:
+like if we have to search the tables and make the development okay like you know that that is okay I mean I mean what my question is so let's say at at the plant you know you have a reservation of 10 okay now now this reservation of 10 you are not going to put at the plant level right you you are going to bring this at at a slot level right so at which a slot you are going
+
+UNKNOWN_SPEAKER:
+to put this?
+
+Sagar Vora:
+So in S4 there should be means for transactional data at least it should be somewhere some means some table it should be at SLOG or else it would be difficult to because we don't know how to disaggregate right equally
+
+Vivekanand Gajula:
+or how to plan that yeah that is my main you know question so if it is if there is only one SLOG then then it's you know a different story altogether but if there are multiple s-locks then then we need uh that data over those s-locks now so so what is the logic you know or what is the rationale behind that I don't get the exact of course so most of the information is it can be found at
+
+Bastian Osorio:
+that level and storage location so I I don't Maybe I'm missing something, but I don't get the question Vivek, sorry. Can you provide an example? So maybe. Yeah, so see the example is like this.
+
+Vivekanand Gajula:
+OK, so when you run the standard extractor now you get the reservation, you know of 10 quantity and this reservation. Let's say it is at 1201 plant. I don't know what is that plant, but let's say you know 1000. Have that reservation but 1000 you know has 3 SLOCs you know SLOC 1 2 and 3 ok now now this reservation you know they must have I don't know in reservation you know what all information we have because I haven't opened any reservation and checked it so I'm assuming you know there must be a SLOC in reservation as well right yeah I'm I'm just going with that assumption.
+
+ If we have that S-Log in the reservation, then we can copy that reservation to that S-Log. It's not copy. It's basically integrating at a lower level.
+
+Bastian Osorio:
+Copy.
+
+Vivekanand Gajula:
+When I say copy, I mean you bring that data to that specific S-Log in IBP, correct? Yeah. Yes. What do you see as an output of the extractor is more of an aggregated data because that extractor's output doesn't have any slog as such. And I think this we have already seen in the last integration call. So I think that's where I was kind of having this question. Before we integrate the data to IBP, we need to query some standard tables so that we translate that data to the S-Log level and then bring it to IVP, correct?
+
+
+
+Bastian Osorio:
+Absolutely, yeah. And that's what Greynaldo is doing. He has a proposal. Sagar will meet with him, hopefully today, to align to see if there is something missing. If it's all right, we need to start building it.
+
+Vivekanand Gajula:
+Yeah, because CPUs, then, you know, and STOs, they will have a slot, you know, but I don't know about the reservation, you know, because I never saw any reservation.
+
+Bastian Osorio:
+I think they pretty much work like stock, as you said, consumptions and reservation as well can be found at storage location. But yeah, we need to confirm.
+
+UNKNOWN_SPEAKER:
+I will.
+
+Vivekanand Gajula:
+And in that case, as then in that case I am also also thinking that will extractor will extractor help us you know or maybe extractor output we take and then we we add one more step you know to make it more detailed and then bring it to IVP so we'll have to see sorry can you say that again no what I'm saying the information that extractor is giving you know know so so that information we cannot directly feed to IVP no so so instead of using extractors output if we directly query the standard you know tables and bring it to IVP then that would be that would be more faster I guess you know I'm not really sure
+
+Bastian Osorio:
+but I think let me share my screen so this is the sub expert of 30 bt so there has It is possible to find reservation as source location.
+
+UNKNOWN_SPEAKER:
+Mb25. Elgort. Elgort, yeah.
+
+Vivekanand Gajula:
+I think when we open a document or maybe when we check. The table not then probably I should get them. Yeah, in our ESP table, I think we'll get it.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+Okay, so please, Sagar, let us know how it goes with Reynaldo.
+
+UNKNOWN_SPEAKER:
+Yeah, sure.
+
+Bastian Osorio:
+I will update you guys as soon as I get some information. And again, if you need any input, if you need any confirmation from RN to start working on that, please let us know so we can decide as soon as possible and start moving.
+
+Sagar Vora:
+Okay, sure.
+
+UNKNOWN_SPEAKER:
+Thank you. Thank you. Thank you.
+
+Sagar Vora:
+Bye-bye.
+
+Sagar Vora:
+Bye!
+
