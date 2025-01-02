@@ -1,0 +1,631 @@
+UNKNOWN_SPEAKER:
+I don't know.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Yeah, hi Kyle. Hello. Hello. Happy New Year to everyone.
+
+UNKNOWN_SPEAKER:
+have been here. Nikita is off sick today, so I'm happy to lead the call.
+
+Campbell, Kyle (UAE):
+I think we should, do you think we should maybe wait for the KSCM team to join?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Let's wait for that.
+
+UNKNOWN_SPEAKER:
+OK. Sure.
+
+UNKNOWN_SPEAKER:
+Hi, everyone. Hi, Hadi. Hi, Hadi.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Hello, Hadi.
+
+UNKNOWN_SPEAKER:
+I'm assuming we're waiting for GoSCM? Yeah. Yes.
+
+Roumanos, Hadi:
+Do we know if they're joining?
+
+Roumanos, Hadi:
+Because I can see a lot of people that are offline. Do you know if they've accepted this invite?
+
+Campbell, Kyle (UAE):
+Rocio, do you know if they've accepted?
+
+UNKNOWN_SPEAKER:
+Can you check, please?
+
+Roumanos, Hadi:
+They haven't accepted. Given that they haven't accepted, do you mind following up? Otherwise, we're wasting everybody's time. Bastián has joined me. OK, hopefully Bastián will. Hey, Bastián. Hello. Bastián, do you know if anyone else from your team is joining? Sorry, can you say that again? Do you know if anyone else from your team is joining that we need? Can we have the session? Should we not have it now?
+
+ Should we have it at a later date? Time where everybody can join. I'll just think maybe it will do it.
+
+Bastian Osorio:
+I will call him but we can start.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+I think we'll need Hector Palacios because in the last call he was there with us. So if we have to conclude we'll need both you and Hector in this.
+
+Bastian Osorio:
+Let me call him.
+
+UNKNOWN_SPEAKER:
+you.
+
+Bastian Osorio:
+Is Hector in the invite? Yeah, I think he is.
+
+Campbell, Kyle (UAE):
+Yes, he is.
+
+UNKNOWN_SPEAKER:
+Thanks.
+
+Bastian Osorio:
+He'll join them.
+
+Campbell, Kyle (UAE):
+you Hi, Hector.
+
+UNKNOWN_SPEAKER:
+Hello, guys.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Hello, Hector. Happy New Year.
+
+UNKNOWN_SPEAKER:
+Happy New Year, everyone.
+
+Campbell, Kyle (UAE):
+Happy New Year. Were you waiting for me, or we restarted? No, we were waiting for you. We're going to start now. So Nikita is actually on leave. Not on leave, he's sick today. So he's off sick. Taking the meeting so I'll share my screen. Please let me know once you can see it. Because I think last time we went through all the demand roles and I think the session today was to go through the inventory roles.
+
+
+
+UNKNOWN_SPEAKER:
+Inventory and supply whatever we can finish.
+
+Campbell, Kyle (UAE):
+So I just wanted to confirm again I'll be happy with the mapping of these roles, so inventory controller is only on demand classification and material, as well as inventory and then all the supply process variants.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, that makes sense.
+
+Campbell, Kyle (UAE):
+Okay, then I think just in terms of what they do, so this is a day in the life etc, so what they're making responsibilities are?
+
+Hector Palacios:
+Check the inventory levels, for one.
+
+Campbell, Kyle (UAE):
+Sorry, Hector, can you say that again?
+
+UNKNOWN_SPEAKER:
+Validate the inventory levels.
+
+Hector Palacios:
+And the PRs. PRs and STR creation.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Also, the lead times and all the parameters would be maintained by the inventory planner, controller, vector.
+
+UNKNOWN_SPEAKER:
+Constraints, supply planning.
+
+Hector Palacios:
+Validation or creation.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Supply planning constraints, who would be responsible for? It would be inventory controller only, correct?
+
+Hector Palacios:
+Yes. No, these guys will be responsible for checking that all the inputs are okay.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+When you say input here, maybe Kyle, you can mention this as planning constraints.
+
+UNKNOWN_SPEAKER:
+Supply planning constraints.
+
+Campbell, Kyle (UAE):
+Supply planning constraints.
+
+UNKNOWN_SPEAKER:
+Yeah. Anything else?
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So if you look for the role profiles, So you have only one inventory controller. So definition of system role. So here you're mentioning only for demand classification segmentation. But then this is only from demand, right? So there are other activities from inventory and supply, what Hector has mentioned, as part of day in lives. So how do you want to mention? Do you make it part of the role, or do you make it part of the day in life?
+
+
+
+Campbell, Kyle (UAE):
+I think I should make it part of the role, because then we But sorry, it's one inventory controller that manages all of that from the demand perspective as well as for inventory and supply? Or is it different inventory controllers? So you will have multiple inventory controllers for sure.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So there is like, based upon the material groups, every inventory controller would be responsible for a set of material based on the material groups.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+And for his material groups, he will be looking at all these things that we are mentioning.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Campbell, Kyle (UAE):
+So I think I'll add it here for the inventory.
+
+UNKNOWN_SPEAKER:
+Sorry.
+
+Campbell, Kyle (UAE):
+So for the inventory one, they're responsible for all of these, right? That are in the whole column.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So for inventory, it's only validated inventory levels.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+And then for supply, the rest of the PR and STR is part of supply.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Hector, here, what about the the role you were mentioning who would question the demand so it's a demand planner right not inventory controller they're all that question demand yeah that should be the one plan right adnok can decide and have make inventory controller as demand planner that can happen for adnok but then we recommend it as a separate role correct yeah it's a different different role okay pr strs and then even the constraints is part of supply planning check responsible checking all the inputs are okay supply planning constraints yeah that's part of supply planning.
+
+
+
+UNKNOWN_SPEAKER:
+Okay, then the frequency of these activities?
+
+Campbell, Kyle (UAE):
+Inventory thing, I think frequency is, inventory frequency is quarterly.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+It can be more as well, six months as well, but then for supply planning it can be week bi-weekly or monthly depending upon the category of what to do. So there's quarterly or six months that's for inventory you said? Yeah inventory parameters it's even for the segmentation it would be same quarterly or six months later.
+
+UNKNOWN_SPEAKER:
+And for demand? Yeah, demand.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Yeah, again, demand is quarterly or six months. Hector here will also have the role for him. He also has to check the alerts, right?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+In each demand inventory and It has to make sure the alerts are reviewed.
+
+Hector Palacios:
+Yes, I think that is related to checking the inventory levels in PRs.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Also in the demand, there might be alerts. So in general, we can say check alerts, right? Yeah. For all three, demand, inventory, and supply.
+
+UNKNOWN_SPEAKER:
+Sorry, guys.
+
+Daboul, Bisher (UAE):
+Wouldn't the inventory controller also be responsible for the demand classification and segmentation?
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah. Yeah, so probably you may have mentioned it incorrectly here.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+When it says demand, it's not valid at inventory level. It's demand classification and segmentation. Demand classification and material segmentation.
+
+UNKNOWN_SPEAKER:
+OK, we're happy with this.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So inventory planner is same as inventory controller, but he is responsible for only what we call turnaround materials, turnaround materials, yeah.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+And for turnaround, I think frequency can be monthly.
+
+Campbell, Kyle (UAE):
+Should we just do inventory manager while we add it?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Campbell, Kyle (UAE):
+So inventory manager, here we are responsible for approval of inventory per hour.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Approve inventory parameters, approve supply plan. In inventory, he'll approve inventory parameters and in supply planning, he'll approve PRs and STRs. So yeah, inventory upload. So there are two stream sets, inventory planning and supply planning. Under inventory planning, he'll approve the inventory parameters. And under supply planning, he'll approve the PRs and STRs. Or we can say approve supply plan.
+
+ We cannot say PRs and STRs because it leads to confusion that he may approve independent PRs. We don't think he'll be able to approve independent PRs. It's approve supply plan. Correct, Hector? He cannot approve independent PRs, right?
+
+Hector Palacios:
+Can you repeat that one, Rahul?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So when we say approve, we do not say that approve parameters, right? He'll approve PR, STR. We'll say approve inventory plan, approve supply plan. Is this correct?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+inventory levels basically but then when you say inventory level he'll not approve independent material by material inventory level right so he'll approve the entire inventory plan correct that's a complicated one indeed so I just want to make sure we are putting it correctly so that it sets correct expectation because if if we mention approve inventory level or inventory parameter then the message may be that he may be approving it for independent materials, and we don't want to give
+
+UNKNOWN_SPEAKER:
+that message, correct?
+
+Hector Palacios:
+Yes, but I think that for the PRs, for the STRs, for the inventory levels and all that requires an approval, we will need to think on a way to do that on IBD. Not uh maybe it's not what they are expecting that what they are used to work with you know the the approval workflow and all of that but certainly we need to find a way to approve this uh uh at that granularity by item you know because it doesn't make sense for example to say I will upload the safety stock as a plan you need to go item by item to understand if that makes sense or not but then
+
+Conference Room (Patel, Rahul) - Speaker 1:
+if approval if if we are saying that in our approval discussion also, if you remember, we said that IBP cannot approve independent transactions, right? So at one side, if we say IBP cannot approve independent transactions, then IBP were approving the entire plan, even if it is at material level. So if the parameters are for independent metal, but then if the entire plan is to be approved, that's the case, correct?
+
+
+
+Hector Palacios:
+Yeah, I mean, there are two things. To approve at the lower level and you will have alerts and you will check one by one and you will say okay this yes, this no. We need to think how to do that but then under the umbrella of the process as a whole you have an activity that is close or validate the plan or validate and you validate as a whole. So the important part of that second step of validating as a whole is that you can now go with the next step of the planning, you know?
+
+ So you can say, okay, they are re-validating inventory layers, now we can use it on supply planning, something like that. It's to close the whole activity. So that's the difference, but I think that either way, we need to check how to approve at a lower level.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Okay, so then, Can you just help us put the details here in terms of whether he'll be approving the parameters or whether he'll be approving the plan?
+
+Hector Palacios:
+approving the parameters. Because it just simply doesn't make sense to approve the...
+
+Daboul, Bisher (UAE):
+Sorry, just to add to that, because we do have inputs from the process team on this. They said for MRO and chemicals, the as is to approve parameters and the to be is to approve the inventory plan in IPP.
+
+UNKNOWN_SPEAKER:
+So is that not correct? It's approved parameters. Okay. Approved parameters? Approved parameters.
+
+Hector Palacios:
+Approve inventory levels. I would be specific. Approve inventory levels and then approve the supply plan.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Approve inventory levels, approve supply plan.
+
+Hector Palacios:
+Inventory levels will be specific as they are then the supply probably is going to be a little different because they are expecting the PRs are re-consolidating and so on. We will need to communicate that that is going to happen on S-400.
+
+Campbell, Kyle (UAE):
+Can you say that again, Hector? What will be happening on S-400?
+
+Hector Palacios:
+Approved supply plan on IVP and approved PRs and STRs S4 HANA.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So, while you can mention it here, the approval on S4 HANA is their existing process, which will continue. So, we just want to make sure that from an IBP perspective, they are approving supply plan, and approve PR and STR on S4 HANA is the existing process, not IBP one. This is the existing process. You can take out the existing process from after IVP. And probably you can make it part of the role profile as well, inventory manager.
+
+
+
+Campbell, Kyle (UAE):
+The frequency of this.
+
+UNKNOWN_SPEAKER:
+You can copy it from
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Then went to control, yeah? So there's no demand for inventory manager, so we can take out the demand.
+
+Campbell, Kyle (UAE):
+Could we just? Just go through this mapping just to confirm. So the inventory planner is only under the supply process variance, only MRO chemicals and time.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Partling as well right, inventory planner would be there.
+
+UNKNOWN_SPEAKER:
+Partling as well.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Yeah and then the inventory manager would be also part of all this.
+
+Campbell, Kyle (UAE):
+And obviously, inventory and then no demand, right?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Oh, sorry. When you are talking about planner, yeah. Planner is not responsible for drilling. You're correct there. I got confused with controller. Yeah. Controller is for all. Planner is not for all. OK. And not even for time. Planner will not be responsible for time.
+
+Campbell, Kyle (UAE):
+Yeah. Isha? We have in that CIA document for inventory planner is in terms of the process variance. You can just check while I continue.
+
+Daboul, Bisher (UAE):
+Yeah, I'm just going to check.
+
+Campbell, Kyle (UAE):
+And in terms of the number of for invention controller?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+I think it would be same number of, depends on number of model assigned.
+
+UNKNOWN_SPEAKER:
+That would be the same for all of them, right?
+
+Campbell, Kyle (UAE):
+Yeah, in a way, you're correct.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Probably manager, I don't know how they will define manager probably there can be four planners and there can be only one manager you cannot have like one-to-one between planner and controller and a manager right so probably manager will have will review work of four five controllers ten controllers I don't know how many how how the hierarchy would be set up but the near.
+
+Campbell, Kyle (UAE):
+Okay, and then he's in which we Do you have any idea of how many there would be?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Since there are based upon the metal groups, there are as many metal groups. I don't know how the split will happen. This depends upon the centralized org, centralized function they're defining. I don't know how many planners or controls they intend to add to the org. We don't have that information.
+
+Campbell, Kyle (UAE):
+And then the number of inventory managers would depend on the number of inventory controllers.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+We know we have four managers. We're talking But I don't know if those are going to be the same.
+
+UNKNOWN_SPEAKER:
+And the number of inventory planners?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+That also we don't know, like how many planners are part of the shared services.
+
+Campbell, Kyle (UAE):
+So just just for my understanding, is this something that we would need to discuss with business to determine this role or?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Yeah, for sure we'll have to talk to business on headcount, like how those people are defined or how their org is defined in AdNoc, because in the entire discussion, we were focusing on process and not on the people.
+
+Campbell, Kyle (UAE):
+And it's my understanding, correct, that the inventory control and planners would be at the AGCs, but an inventory manager, would this also be AGC specific?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+No, no. So inventory control controller and planner would be at in the shared services. I don't know whether there will be one for each agency or multi. How they're going to? Executes of inventory controllers and planners are part of shared service team and then inventory managers. We know right from the shared services we have. Yes Sir, we have Khalifa we have. Mohammed Abadullah. We we know all this managers, right?
+
+ So I'm I'm assuming that this this managers would be the inventory managers. By the way, just one thing from an MRO perspective, we've received Khalid has shared the list of focal points for MRO processing. So if you remember from an MRO perspective, we've identified a change where end users or group of end users may be part of our chain. So we need to take that change to them. So Khalid has shared a list of focal points for each AGC from us.
+
+ For an MRO demand. So just for information, I can send that list to you guys.
+
+Campbell, Kyle (UAE):
+Yeah, please do. Key changes associated with the role as compared with the as is? I think this is something process team has shared with you, right?
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So they're working on the key changes. They had shared, they have created this PPD, right, similar to MRO. What are the key changes with respect to ALGIS? It's there with you, correct? Yeah, yeah, we have that document.
+
+Campbell, Kyle (UAE):
+We can go through that document.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Yeah, probably you can use that as a starting point. And if you need any clarification, probably in the next meeting, we can go through it, finish it off completely.
+
+Campbell, Kyle (UAE):
+OK. I'm just thinking, because there are some discrepancies between that document that they put together and what we are discussing here.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Yeah, for sure, there is this one difference between what we discussed here. On the demand side, at least, if you can scroll up on the demand side, so we've added a role, right, which is not part of, so if you see proposal option, new role, we've added. To the left, likely to be new role, like something like column row 12. So this is something which got discussed during this meeting. So probably the process team, since they're not here, and their discussion is based upon, the document which they have shared is based upon the existing process.
+
+
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So probably as part of this change management, as we take up this kind conversation for change with AdNoc. And if we are aligned to this new role to, as per the suggestion from GoCM team, to manage the impact, then if we are aligned, then probably we need to go back and change the process and maybe change the CI a little bit. So that's something we'll have to pick up with business first, get their confirmation, and then make changes based upon how to like a commodity exchange.
+
+
+
+Campbell, Kyle (UAE):
+Okay, so then I think we done with these roles. Could I just get a confirmation that these roles that we have here are the final list of roles and they are none that are missing? So we have a demand request to manager, we have a demand request a demand planner, a drilling manager, drilling planner, inventory controller, inventory planner, inventory manager, chemical operations manager, chemical demand manager, chemical requester, and then time planner and time
+
+UNKNOWN_SPEAKER:
+manager.
+
+Campbell, Kyle (UAE):
+So this is what we know based upon our conversation.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+The only thing is, based upon the BPD document, the new roles which we have added in this SID are not part of this, that's what we've discussed also. Yeah, other than that, I think we've discussed everything.
+
+Campbell, Kyle (UAE):
+Yeah, because the last thing I wanted to double check, because I don't think we actually went over this, but it's this actual mapping for these roles. So if you don't mind, if we could just go role by role and just confirm that this mapping with the X is correct. So demand request to managers, just MRO turnaround and preventive maintenance and corrective maintenance and nothing else.
+
+UNKNOWN_SPEAKER:
+Is that correct?
+
+Conference Room (Patel, Rahul) - Speaker 2:
+New materials as well, MRO, everything MRO, right?
+
+Campbell, Kyle (UAE):
+On the demand side, right? So it's just there. Okay, can I move on to the next one? Uh or demand requester would it be the same as the manager yeah it makes sense to keep it same as manager and then demand planner we have will turn around and corrective maintenance and preventive maintenance but new material yeah
+
+Conference Room (Patel, Rahul) - Speaker 2:
+that's Correct.
+
+Campbell, Kyle (UAE):
+And then drilling manager is only drilling under demand, and drilling planner is also only drilling under demand.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So drilling manager and tying manager, I think those are the same, but we need to check. Do you have a separate tying manager, and do you have separate tying?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So this is something we can check with business.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Based upon my understanding, I don't think we'll have. We have a separate drilling and tying planner, but we don't have. Know if we have separate drilling and planning manager drilling and time manager you can take note of it probably you can verify and then update the shift accordingly based on the chemical BPD feedback review feedback so they also would
+
+Sheth, Kunal:
+like to introduce team lead role I don't see in our excel especially for the inventory part Which one? Mahmood Sadiq as well as Hajrat Khan both have added this new role and also asking us what is the name of their role? Team lead role.
+
+Hector Palacios:
+Team lead. And that is separate from the inventory manager.
+
+Sheth, Kunal:
+So first review part would be done by team lead and then it to the inventory manager for approval.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+It is in the supply planning BPD for chemicals.
+
+Sheth, Kunal:
+So 2% has added the same comment, one by Mohammad Sadiq and Hajrat Khan from Buruj.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+This is Buruj specific or for all?
+
+Sheth, Kunal:
+No, no, Hajrat Khan is from Buruj and there is a Sadiq is also there. He is from Adnok, Mohammad Sadiq.
+
+Sheth, Kunal:
+So if required, we also need to add a team lead role.
+
+Campbell, Kyle (UAE):
+Okay, so you're saying this is part of Inventory Routes, Kunal? Yeah, it is a part of the review part.
+
+Sheth, Kunal:
+It is coming in the supply planning PD. You can write in chemicals especially.
+
+UNKNOWN_SPEAKER:
+But is this something we would have to raise with business to ask them or is this?
+
+Campbell, Kyle (UAE):
+I mean, this is confirmed that this is happening.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+I think it's better we check with business because up till now we've not discussed about And what Kunal is mentioning is the comments in the VPD document of supply planning, which are not yet approved, which means we have shared with them and we have to work on the feedback, which means this discussion has to happen. Happen to understand what's the role.
+
+UNKNOWN_SPEAKER:
+Kunal, so you said, what are they responsible for?
+
+Campbell, Kyle (UAE):
+Are they responsible for doing the review before the inventory manager? Correct.
+
+Sheth, Kunal:
+So Sadiq has written Review part will be done by team lead, and then it goes to the manager for approval.
+
+Campbell, Kyle (UAE):
+And this would be under chemicals under supplier, right? Yeah, supplier.
+
+UNKNOWN_SPEAKER:
+And would they do the reverse?
+
+Campbell, Kyle (UAE):
+inventory levels as well as the review of the supply plan?
+
+Sheth, Kunal:
+Yeah, they will review it, both inventory level as well as inventory plan, supply plan as well. Can keep the same frequency here.
+
+Campbell, Kyle (UAE):
+This would be the same. I mean, the number will probably have to be determined, right, if they go ahead with this.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Campbell, Kyle (UAE):
+And it would sit within shared services as well. Okay. Yes, did someone want to say something?
+
+Campbell, Kyle (UAE):
+Okay, so we've done the mapping for this. We've done the mapping for inventory. Or just to confirm for the chemical operations manager, they are just marked as chemicals under demand planning. It's the same for the demand planner role.
+
+UNKNOWN_SPEAKER:
+Looks correct. Demand requester.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+It would be chemicals only.
+
+Campbell, Kyle (UAE):
+Time planner and time manager are only in time in demand planning process variance.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Campbell, Kyle (UAE):
+And then process champion would be chemicals on both. Because as I understand, they do the end-to-end process, right?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So chemicals on demand, chemicals on supply. And chemicals on inventory as well. Same goes for MRO. So drilling, there is no chemical process. So yeah, drilling, there is no inventory process.
+
+UNKNOWN_SPEAKER:
+OK. OK, then I think we're done for today.
+
+Campbell, Kyle (UAE):
+I think us as a change management team will go through this, refine it, and also get all those points at which we need to speak to AdNoc about. So we might need a meeting with you guys. I'm not sure when, but let us first work on this, and then will discuss it. Is there anything else anyone wants to raise or speak about?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Yeah Kyle, one more point is now that we need help in identifying the key stakeholders for our decision makers for the testing what we'll be doing here onward. So since we are in build phase now we'll be building up the solution. So in the week of 20th January and the following week, two weeks, we are planning to have have a session with AdNoc, where we will demonstrate the solution. And we need to identify the key stakeholders who can look at the solution and take decisions.
+
+ So probably, while this activity, we are trying to identify the overall users. But as a subset of this activity, probably somewhere next week, if we are able to identify these key users, We don't want to have one person for each agency. We'll end up having like 10, 15, 20 people. Probably we are looking for a single digit number group of people who can help us take decision, look at those business processes in IBP and help us decide upon is something we're looking for.
+
+
+
+Hector Palacios:
+I think that point Tim is critical. If we want to be successful on this configuration stage and whatever, or the project overall. It's really, really important that we don't fall in the same situation that we have on the design where we have too many people, too many weak voices, not a single one strong voice saying that this is going to be like this, you know. So we need to avoid that because otherwise we are not going to progress as expected.
+
+ So we need to reduce the quorum. We need to have accountability, ownership, We need to have these people on our side. We cannot have 10 responsible because if you have 10 responsible, nobody is responsible. We need to have the team lead. As Kunal was saying, they were requesting that for inventory planning. Well, that team lead is the one that is going to help us going through this configuration. He's going to decide, he's going to consolidate requirements or opinion from the other ones, but we need to have a single voice, otherwise this is not going to work.
+
+ We need to think very well how to propose that. It's not something that we can accept a no from AdNoc and say, no, you need to do it from the other guys, with all these stakeholders, because we know that it's not going to work. So please think how we are going to communicate. If you need our help, let us know. If we need to have a discussion to how to present this to AdNoc, let's do it. But for us, the configuration team is one of the most important things right now.
+
+
+
+Campbell, Kyle (UAE):
+Okay, so would this person, this team lead, would they come from the different AGCs? Yeah, for me, necessarily. Yeah, for me, the ideal scenario is someone that knows.
+
+Hector Palacios:
+And for me, that is one of the representative, one of the key users, one of the guys, one of the demand planners or one of the inventory for the AGCs can take, or maybe two, not more than three, I would say, are going to be the responsible for checking the configuration and taking decisions and all that. But it needs to be a person that understands how these things are done. It cannot be, for example, someone that is too high level to understand what is happening behind it.
+
+ Needs to be a people that is hands-on, that can work on the system later, and so on. So if that is going to be Yaganat or Murugan, they are most welcome, if they are good enough to understand. But so far, I've seen that they were the elites, but they were pushing all the decisions to the AGC, so that is not going to work for us as well.
+
+Campbell, Kyle (UAE):
+OK, OK, point taken. And just to confirm, you said the week of 20 January is when this will be happening?
+
+Hector Palacios:
+Yeah, there is when we are having these sessions in, yes, in the next three weeks, I guess. We are planning to travel and to have sessions on site. So ideally, we'd have this reduced quorum. Because what is happening today is that it seems that nobody can answer by what we need or take decision is everything that needs to go to all the views and well that is not going to work. We can imagine that we ask like from the beginning that we have been asking about what are the attributes or hierarchies you want to see and nobody's able to answer to us.
+
+
+
+Bastian Osorio:
+Another critical point is that this meeting will be well on site but we need that users be on site as well. This will be working sessions, they should come with their laptops, they should have the users created and so on so forth. So yeah, it's to do hands-on sessions with them. They take ownership on the solution.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So probably Kyle, next week we need to work together to finalize this list so that by the end of next week we can send the invites for the week of 20th Jan.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So, so that's why we can continue working on identifying like larger group of people and users and everyone who are getting impacted and then define the change management strategy. This is the initial subset is what. We would like to start working with so. Haditha probably will need to also talk to Khalid and get his, like, we'll need to get his support as well to have this list as minimal as possible for us to be able to conduct those sessions in the week of 20th Jan.
+
+
+
+Roumanos, Hadi:
+I'm hoping that we'll be able to talk to him soon. Maybe tomorrow morning if he ends up joining our daily weekend it I don't think so he'll be available this week because he says out of offices till next week okay okay fine then Monday morning yeah I think Monday he'll
+
+Campbell, Kyle (UAE):
+join so just for this list do you feel like this is some lists of people that we can get from asthma from business or how do you how do you are scaring us first?
+
+Conference Room (Patel, Rahul) - Speaker 2:
+I would see that if we can talk to Asma from business perspective, because IT will not take decision, excellence will not take decision, business will take decision. So if we can connect to Asma, help her understand that why we need lesser people, people who can take decisions. And probably one of the suggestions can also be that if there is a larger AGC, And if the larger AGC has more mature process, and then we can, like, if the people from larger AGC can participate, because generally it happens in a big organization, like if someone, like, we know AdNoc Gas is a big AGC, right?
+
+ Which means if AdNoc Gas agrees to something, the smaller AGCs tend to follow, unless the process is completely different, right? So that will also probably, we can reach to and see if we can have this list. It's essentially not having one person each agency, and then the decision takes more time. We have 12 agencies, we end up having 12 people, but probably have a shorter list of people who can decide upon and give us the decisions.
+
+
+
+Campbell, Kyle (UAE):
+OK, so just so I can understand exactly the requirements of these people, you would be giving, what, a demo of the solution? Or what will you be doing in those meetings exactly? And what will they be required to make decisions on?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Hector, Basin, can you hear? Yeah, can you hear me?
+
+Bastian Osorio:
+Yes. The idea will be to do for the Wave 1 because we are in Wave 1 and Wave 1 addresses demand and inventory planning. The idea will be to do an end-to-end review of the entire system. Of course, considering the most critical requirements mentioned in the VRD document. So the idea users, we don't have integration yet, so we won't be integrated to S4HANA. This data will be integrated, it will be loaded manually into IVP.
+
+ So the idea users select a group of materials and they basically do the entire planning process for these materials, addressing the key requirements. Of course, we're going to be guiding them, helping them to go through YPP, through the different planning views in Fiori as well, running the different planning operators, all that. But they're doing the job, so they can understand more the logic of the system.
+
+ And of course, along with that, they will understand what's going to be their role in the system and then also more requirements will come up, that's for sure. After that, of course, we will have the UAT phase in which we're going to do basically the same but with integrated data. So the volume of data will be way larger. And then, of course, we expect during the UAT address more requirements, more than the MVP, probably we're going address some of the requirements that were not covered in this unit testing, but also maybe, depending on the complexity and the time that we have, a requirement that will have been raised during the unit testing.
+
+ I don't know if that makes the purpose of this phase Yeah, that's clear.
+
+Campbell, Kyle (UAE):
+So it's for them to go through the system themselves so they have a better understanding of the end-to-end process and how it works, as well as for them to ask any questions and get clarity on it. But will they have to approve anything in the session itself?
+
+Hector Palacios:
+Sorry, can you say that again? Exactly, that if we need to approve anything on the session, if they need to take decision, yes, for sure. Just like a first iteration, if they tell us, no, you need to do it to do it this way, well, that is our decision, basically. We cannot wait to go through all the AGCs to decide if we want it this way or not, you know?
+
+UNKNOWN_SPEAKER:
+I see.
+
+Hector Palacios:
+Okay. Okay. So yeah, they need to feel the power. That's the point.
+
+Bastian Osorio:
+They need to feel that they can do this. And yeah, I mean, for me, the most important thing is to stop speaking, designing on abstract, like on the air. Start speaking uh on the system with the data so users get to understand the logic and from from that point of view they can make more requirements because we've been speaking like on on very abstract on very abstract terms I don't know if that is that the right translation but I guess you you get what I'm trying to say we're speaking about a system that no one has seen in full detail.
+
+ So we need to stop doing that. We need to start speaking with the system itself.
+
+UNKNOWN_SPEAKER:
+Yeah okay noted.
+
+Campbell, Kyle (UAE):
+We'll be at SKEC2 next week, Monday anyway, so we can speak to Asma about this and get the process going at least to identify them. Okay then I think that's it.
+
+UNKNOWN_SPEAKER:
+Thank you very much everyone.
+
