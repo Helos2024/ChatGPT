@@ -1,0 +1,553 @@
+Bastian Osorio:
+Eru.
+
+Bastian Osorio:
+How are you?
+
+UNKNOWN_SPEAKER:
+Good morning.
+
+Arun Singh:
+Yeah, I'm doing good.
+
+Bastian Osorio:
+How are you? Doing well.
+
+Arun Singh:
+Happy New Year. You too, man.
+
+UNKNOWN_SPEAKER:
+Happy New Year.
+
+Bastian Osorio:
+So, this meeting is to... So, first of all, do you have a chance to look at the questions I sent to Rahul?
+
+Arun Singh:
+Yes, yes. I saw. Do you have any more questions? No, no, no. Correct question, right question, yeah. I didn't have any extra one.
+
+Bastian Osorio:
+So the purpose of the, I will share my screen, the purpose of this meeting is to start defining the MVP for Dream, okay? Okay. Let me realize configuration.
+
+UNKNOWN_SPEAKER:
+So let me share my screen.
+
+Bastian Osorio:
+So we're going to divide this in, well, I don't know how many steps, but I can think of at least two for now. So the first step is to decide which one of these points will be addressed in the MVP, which will be for the unit testing, OK? Then the second step will be to translate these points into a script, a unique testing script. And then, of course, we're going to define which, I mean, during the script, we should also add more points that are more part of IVP, of the process of IVP that need to be tested.
+
+ Not part of the VRD. Let me give you an example. I don't know if we need to execute a copy operator or any kind of operator. Of course, this is not going to be part of the VRD, but of course it has to be part of the script, right? Correct. Yeah, and then we need to also define which points will be part of the, will be addressing the BPD of supply and then in the BPD of, sorry, and then in the unit testing for demand, unit testing of supply, and finally the hypercurve.
+
+ I understand and probably you also have the same experience that once users get hands-on they start having more additional requirements. So from the unit testing we'll start creating a backlog basically and we're going to start doing sprints so we can prioritize the methodology. So for now I want to review each one of these points. I will copy this one and put it in a new Excel file and let's discuss each one of them and if they should be part of the MVP or if not.
+
+
+
+UNKNOWN_SPEAKER:
+Okay. Thank you.
+
+Arun Singh:
+you I think at the bottom we have demand BRD, right? Sorry? I think at the end we have drilling demand track. It seems. Yeah. Okay. Okay. So let's start with these ones and then, okay. For me.
+
+Bastian Osorio:
+Yes or no, just simple set. The forecast to be carried out based on a business plan and DW Yeah, absolutely. Yes, but we can put a comment here, right? All right. I think that word is no.
+
+Bastian Osorio:
+Yeah, we have common MVP comments. But let's say. And of course, well, plan. Will plan plan will be loaded. Manually. And bombs.
+
+UNKNOWN_SPEAKER:
+This is for the unit testing.
+
+Bastian Osorio:
+And then for UITs. On. She must be degraded.
+
+UNKNOWN_SPEAKER:
+Is that OK? OK.
+
+Bastian Osorio:
+Then the software shall integrate stock information from BMI. This is this is supply.
+
+UNKNOWN_SPEAKER:
+Yes. Reservations, I think this is also supply.
+
+Bastian Osorio:
+Correct.
+
+UNKNOWN_SPEAKER:
+This is part of, yes. Same thing. There is a question for me.
+
+Bastian Osorio:
+Again, the question is where we want to draw the line. Do we want to create the demand for the BMI vendors in in the demand unit testing mvp whatever or we're gonna we want to pull it on the on the supply side this is this is supply side point number
+
+Arun Singh:
+20 is relevant for supply 29 29 you're saying so this one sorry yeah yeah this one is sorry yeah yeah this one but at the end is a definition that we will have to we will have to make in
+
+Bastian Osorio:
+which sense I mean so this is for tendering this is for not for tendering versus will be my vendor yeah sorry oh you're right no but what I was saying is this one for you where does the the demand finish at the general court go So, everything related to vendor is for you to supply. Correct. Okay. Yeah, fine. Then, not all the materials can be allocated to a BOM. Only the important will be part of the BOM to provide manual input or additional materials.
+
+ Yeah, this is MVP part for me. We need to decide how we're going to do it. I think you already provided a good workaround so yeah. Five categories of each will have alternative based on ad hoc, stock or BMI and vendor who's supplying.
+
+Arun Singh:
+Based on this master data ability to define the overall material requirement for a given wealth I think this is this is more relevant from demand only but all the categories right of drilling scope will be included as one bomb okay like casing cementing all those different categories right will be part of one more so it's more relevant to bomb definition okay in s4 side hi hector hello guys hey are you okay man yeah yeah what happened to you
+
+Hector Palacios:
+I don't know and I was well on new year I was drinking of course so I got home then the next day I just woke up And then in the afternoon, I went to the gym. And after the gym, I fall asleep, like, probably like 15 hours. 15 hours? Yeah, more or less, because it was like 7 p.m., you know? And I was fall asleep, like, very deeply. And I just woke up like one hour ago, I think.
+
+Bastian Osorio:
+Good. You scared me, man, because I was speaking to you.
+
+Hector Palacios:
+You were playing. Yeah.
+
+Bastian Osorio:
+We had a meeting this morning. This morning, we we moved to London. He complained again, but nothing, nothing, nothing serious.
+
+Hector Palacios:
+It was just asking for the economic order.
+
+Bastian Osorio:
+The country is that the Wisconsin.
+
+UNKNOWN_SPEAKER:
+No, it wasn't.
+
+Bastian Osorio:
+But they're against the decision. That today, the morning. Yeah, I was in that session. Yeah, but maybe she canceled afterwards. No, she canceled the other one. But never mind, we can discuss that later.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So we were checking which of the VRD requirements will be part of the MVP and which one will be part until the UATs. OK.
+
+UNKNOWN_SPEAKER:
+Yeah, it was following.
+
+Hector Palacios:
+Yeah.
+
+Bastian Osorio:
+And drilling demand, five categories of bombs. Will have alternatives based on ad-hoc stock or VMI stock and vendor who's supplying based on your metadata ability to define the overall material requirement for a given weld type. I think this is kind of I think the way to approach this I think this is like a very broad statement for the requirement but as it was defined in design we will have two bombs right or sort of two bombs two level bumps, one from the well completion code, whatever, to the generic codes, and then from the generic codes to the BMI codes, right?
+
+ So I think this point combines these two different things into just one. So I will put yes, it is possible. Part of the VPD but not I will put a comment on the sign as per VPD bombs will be divided into let's say call it well forms and but not generic.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+For demand calculation, additional completion requirements and job type to be considered.
+
+UNKNOWN_SPEAKER:
+These inputs are available. This one, yes.
+
+Bastian Osorio:
+And finally, snare planning for simulation for DBS. Yeah, this one is good. And we have it. We already have it. Okay, so let me go back. Sorry, I'm here. So pretty much everything in the VRD of demand can be addressed. But of course, yeah, the UAT will be more on the unit testing will be more in the data side. Right? On loading the well plan, loading the bombs, try to manipulate them, change the quantities, change it so it will be more...
+
+ I think the focus will be, yeah, start understanding the logic of IVP.
+
+Hector Palacios:
+These BRD requirements are the ones that we have translated into actions?
+
+Bastian Osorio:
+No, yeah, I mean, to be of course a part of the configuration, but what we're saying here is I discussed this in the morning with Rahul. We need to clearly state which requirements will be part of the MVP, which one will be addressed during the UATs, and which one will be part for the hypercare. Okay, and of course when understand that we will, like during these different phases, we will, we will receive new requirements.
+
+ That's fine. But from the unique testing, we will start working in the like as agile methodology, right? Collective show showcasing the difference on the design we are we're preparing, collecting more requirements, and then the looping, right?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+So here is to just to define which requirement should be addressing the MVP for unique testing. And we have pretty much all the the green requirements from the VRD will be addressed from the demand track. Supply is a different topic. Now we can review supply. Yeah, this one is yes. Requirements for drilling materials based on demand plan, stock, and BMI levels.
+
+Hector Palacios:
+Can you make the comment?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+The fitting gap column is too wide. I don't know why.
+
+UNKNOWN_SPEAKER:
+It shouldn't, right?
+
+Bastian Osorio:
+But here, again, for the MVP, BMI stock will be integrated manually. The main difference between, I mean, During the unit testing of supply, we'll still be integrating manually. For the UITs, we will be integrating. The system must support uploading and re-activating files in addition to, yeah, yes.
+
+Arun Singh:
+my stuff right I'm still like not 100% confidence because based on the discussion the storage location is not required okay but in case if they require storage location then do we need to reward this via my stock at the vendor location or what I mean because that is one point you know that we need to tackle during the course of our testing. Because right now I'm thinking that VMware stock and all the other stocks information will be at AdNoc plant code.
+
+ And supply will be just generating the purchasing plan for the vendor. So the consumption of stock will happen at AdNoc plant code. But I don't know, do we need to, you know, load the VMI stock at the supplier port because that is one thing then a planner will you know need to change the plan for right while loading the stock information
+
+UNKNOWN_SPEAKER:
+in manual operator okay.
+
+Hector Palacios:
+We need to. You asked if we need to to load the VMI stock in the plan? Yeah. Yeah, for sure. In the same plan, what I'm thinking, I'm not 100% sure, but I think that basically we need to convert that stock into a generic code and then to deploy it.
+
+Arun Singh:
+See, currently in the S4, right? They have this VMI stock but that is loaded at company for level and they have the material code as well like the branded material code okay supplier branded material code and the company code I think this is the relationship and then they have a stock information in some readable I don't recollect that is for the VMI stock that is from the vendor facilities vendor facilities against the company code.
+
+ So there are two company code, right? And ASR, right? So for JV, there will be a specific supplier who will be maintaining VMI stocks. For ASR, there will be a specific supplier who will be maintaining specific VMI stocks. So now, the thing is that in one of the discussions, Vignesh mentioned that The stock can be loaded at the plan code level, because currently it is at much higher aggregate level, at the company code level.
+
+ So, I don't know, do we need to see, the best way would be just load all the stock at the plan code level. For supplier it will be very easy job, for optimizer it will be very easy job, first to consume the stock and then move on to the next purpose of the plan. If we load the VMI stock at the vendor location, OK, so for manual upload, the planner has to know the supplier location, OK, for the supplier while loading the VMI stock.
+
+ So there are two things. If we load VMI stock, all the stock at the plant port, that will be the easiest job, and even for the planner to upload.
+
+Hector Palacios:
+But there is a lead thing.
+
+Arun Singh:
+There is a lead time, correct. So the lead time is between the vendor and the plant. Because that is what we have in our BPD. There are other lead times, but that is in execution system, so I'm not sure how...
+
+Hector Palacios:
+No, and there are also, they have the requirement that they have different lead times to the plant and then to the well, so we need to define that lead time. That the stock needs to be on the vendor location.
+
+Arun Singh:
+So if the stock needs to be on the vendor location, then the toughest job for the planner would be to load the VMI stock manually at the vendor location. Yeah, for sure. They need to know.
+
+Hector Palacios:
+They should be pretty lazy if they don't want to do that. I mean, if the stock is in the vendor, that they want to do that?
+
+Arun Singh:
+Because currently in the MEP sheet, right, they have collective stocks. They don't have individual stocks. They have the deliveries, which are, you know, in transit. And then there is a collective of stock on hand available. Okay. And that is at plant level. That is at plant level. So let's see. Yeah, there is a leap time, for sure.
+
+Hector Palacios:
+There is a leap time. Is there a way on SplitPlanet to consider a leap time, like internal leap time? So if we put a bomb, for example, should we put the leap time on the bomb? The action leap time, basically. That can be a workaround if they are lazy. But I don't know if there is, well, If there is a lot size or anything like that, maybe that's a solution. Production lot size, you know. But basically using the BOM, the production source header and the production source item to do anything that we would do normally as a location source.
+
+
+
+Arun Singh:
+So for. But for the random motors, there won't be any PSH PSI. There will be only location source. OK. So. Because PSH. Headers and item will be relevant for the generic code. So from generic code, we have quotas also, right? So from generic code, the requirement will be split based on the quotas for each and individual branded material code. Now, for the branded material, there will be a location source, right?
+
+
+
+Hector Palacios:
+But you've seen the vendor material converted into the generic in some place?
+
+Arun Singh:
+Vendor mutter converted into generic? Or is this directly? No, so they are, see, ideally they should be raising purchasing plan for the vendor mutter report. But for STR, for internal stock transfer movement, they will be using generic code. That is what we see one of the example arcs when Kunal was sharing For generic code, there was an STO. But for other alternative material, branded code, there was PR.
+
+ So which is the correct understanding? OK. So it's fine.
+
+Hector Palacios:
+And what I was saying is that let's use the branch insert here to account for the lead time, to account for load size, if there is. And they can load the stock. Directly on the plants. But it cannot be used directly. The VMI stock that we load directly on the plant needs to be converted into the generic stock. And that conversion process is where we are going to put the lead time and where we are going to put the load size.
+
+ You see? Now the vendor is not necessary. They don't need to load the stock at the vendor facilities.
+
+Arun Singh:
+But this branded material code will be also extended to your end of plant, right? So if there is a stock, right? It's an example used to be. OK, OK, I understand. I understand now. So the generic code has to write VMI stock plus end of time stock, right? Yes. Oh, OK. Yeah, yeah. I got your point. That's fine.
+
+UNKNOWN_SPEAKER:
+Got it.
+
+Arun Singh:
+Yeah, yeah.
+
+UNKNOWN_SPEAKER:
+I got it.
+
+Hector Palacios:
+I got it.
+
+UNKNOWN_SPEAKER:
+I think Bastián is still partying.
+
+Arun Singh:
+No, no he didn't party.
+
+Hector Palacios:
+He didn't party because he was with the mother-in-law. Oh, okay. So I think that is It's like he was with his wife and with his mother-in-law. So I guess that he was like restraining. He couldn't go to the party because you know you are not going to leave your mother-in-law alone in the house.
+
+UNKNOWN_SPEAKER:
+So it's weird.
+
+Arun Singh:
+What about you? Few drinks and then I was watching uh like from evening till uh night midnight I say I was completing uh this series on netflix that is squid games they have released season two right so I was watching yeah the whole episode in just single load what do you say do you series?
+
+Hector Palacios:
+How it's called? Squid Games. Is an Indian show or is it an international show?
+
+Arun Singh:
+It's an international show, right? You must watch. If you have not seen season one, right? I think they have.
+
+Hector Palacios:
+Because sometimes they have different names depending on the
+
+Arun Singh:
+Yeah, yeah, yeah. Squid Games. I think in Spanish.
+
+Hector Palacios:
+Ah, yeah, yeah, yeah. I saw the just the like three days ago I finished the second season oh oh nice so yeah so I finished yeah I'm ready most yeah it's a good series but did they did you finish yes yes I finished uh they they left a huge cliffhanger you know like the yeah it cannot end like that and I told my wife that that was the final chapter the episode and she didn't believe that. We don't know when in this year but I don't know when it can be very well on December again.
+
+
+
+Arun Singh:
+There will be a special season 3. Yeah yeah it's the final season.
+
+Hector Palacios:
+I read somewhere that the creator of the series is like very very tired of this. It's like he doesn't anymore about the squid games.
+
+Arun Singh:
+Yeah, it's so much popular now, right? Yeah, too much popularity for sure.
+
+Hector Palacios:
+And then what are you going to do on this ace? Are you going somewhere? Or it's just because you're your baby?
+
+Arun Singh:
+I'm just spending some time with my family, that's all.
+
+Hector Palacios:
+Okay, that's fine. Is it normal for you guys to take vacations on these days, like after New Year? For us it's very common, I guess, here in Europe, but it depends on the break, you know? Yeah, yeah. The last break they were like pushing me, let's take vacations on Christmas and New Year because nobody's working there. I was expecting something very different on that project. And it was the same, you know, so it was like the perfect time to take vacations.
+
+ And we didn't take it because these guys were on, I don't know, the Arabic, you know, they have other culture, they don't celebrate Christmas and New Year, I was thinking. And my surprise is that many of them were celebrating and taking vacations. They didn't tell us.
+
+Arun Singh:
+Otherwise, you guys would have taken the vacation, right?
+
+Hector Palacios:
+No, but I had a lot of vacations this year, especially on mid-year August. I was like between projects. So indeed, I was sometime like one whole month I was without breaks because I finished my last one and This one was starting on September, right? So I took some vacations. I took the opportunity to do that as well. Let me write to Basti to see what happened.
+
+Arun Singh:
+I'm just scrolling in.
+
+Hector Palacios:
+All right, but I don't know because Bastian was checking one cheat.
+
+UNKNOWN_SPEAKER:
+I would continue. OK. But I don't have the cheat.
+
+Hector Palacios:
+Is something that you share with them or he started to work on that?
+
+Arun Singh:
+No, he has copied and created locally. So he has created this local file and he was trying to add all this information.
+
+UNKNOWN_SPEAKER:
+It's not done.
+
+Arun Singh:
+Are we hiring some senior people? No. Are we hiring some senior people in this project or no?
+
+UNKNOWN_SPEAKER:
+Um, a senior?
+
+Hector Palacios:
+Yes. More senior people.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Hector Palacios:
+No, no, probably not. It's going to be us, I guess.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+You're thinking someone that can help you doing this stuff? Yes, in some of the tasks. I think that at the end, it will be the juniors. We need to assign. With the juniors, it's like this. You need to assign a very specific task. You don't need to teach them or anything, but you think okay this is something that they can work in parallel basically while they work on all of the other scenes that are connected and that is the kind of stuff like user roles you know like process management I don't know that's one thing yeah so they focus entirely on that scene and they can get it done and they can ask me they can ask bastian they can ask somewhere else I'll go and see him but you can take some tasks from your site.
+
+ If you assign something that is connected to what you are doing and that can become a blocker, I guess that is not a good idea because at the end you will end up doing it yourself.
+
+UNKNOWN_SPEAKER:
+Yeah, exactly.
+
+Hector Palacios:
+No, but I guess that what we need to do in this break is try to have the list of the activities of what the configuration activities of what we need to um and basically out of that list of configuration activities start assigning so you know that probably most of the tasks are going to take it yourself but then uh probably we can share with bastian some activities you know and basically that let's say I think that we we will need to support in a way just looking for the best place to have the configuration activities or things that we need to follow up.
+
+ Let's see.
+
+Arun Singh:
+Well, we have the configuration document, right? I think he's managing some differentiate. Bastián was maintaining those information differentiate, not in this file.
+
+Hector Palacios:
+If you scroll OK, let's go to the right. But here's.
+
+Arun Singh:
+But in the same document, you say in different sheets in not in the same document, he has created a different document. Document something. But I think it's not here. It's not. The shared world, yeah.
+
+UNKNOWN_SPEAKER:
+Yeah, I think it's the same one. Yeah, you see, we are entering. Yeah, we scroll to the right.
+
+Hector Palacios:
+I think he has created this two column, right?
+
+Arun Singh:
+MVP. So it's not here. He was managing in. Maybe I'll connect with him, you know, later on and then maybe I can include as you as well.
+
+UNKNOWN_SPEAKER:
+Yeah. Okay.
+
+Hector Palacios:
+But yeah, I am missing some things here. Here are the key fields. You have some configuration activities. Yeah, can we do something very quick, man, like the configuration activities that we need to do? Things like, let's start building this on things that we need to build more than the key fears itself, like the activities that are related to creation of those key fears, you know, because one activity is creating for example, the
+
+Arun Singh:
+explosion, but that is going to require many years, you know. So, I've already done that. Yeah, I've already completed the configuration for at least drilling demand, whatever I could, you know, possibly from the BRD. So, I have created a few more from the integration standpoint. Okay. So, I just to update this file. I think it's already there in the system. So if you log in to IVP, right, you can just type in the key figure section hash, you will see a lot of key figures.
+
+ Also, I created a copy operators, segmentation, profile, and I think a few more activities. If I remember, I remember correctly yeah like the forecast consumption profile almost so but I have not updated these files there in the system I created in the system I loved it even the explosion yeah explosion is done so currently uh we can see the logging is working here I tested uh with the data and it's working it's fine Can you show me that configuration?
+
+
+
+UNKNOWN_SPEAKER:
+That is something that I want to see man.
+
+Arun Singh:
+You can check this key if you You can take this easy. Don't you have.
+
+Arun Singh:
+You can use this template that is called 100 drilling demand plans. It's a there is a folder I created as a demand drilling planning something okay under that you will have yeah this template drilling demand plan something you can say what is the logic man are you doing a an activity
+
+Hector Palacios:
+transformation yes And at the end, what is a real-time calculation or are you using a copy operator for the final key field?
+
+Arun Singh:
+So basically, I'm calculating with the attribute transformations. I'm bringing from component to product level. So then we have a review forecast. I am just running a copy operator from the calculation. Into review, the planner can review and adjust in the same key figures. If there is a deviation, higher or lower, like I'm defining, let's say, for example, 50% is more changes that planner has done based on the original value, then there will be an alert highlighted and the approver, the inventory manager will only view or only concentrate on those highlighted cell values.
+
+ Value.
+
+Hector Palacios:
+So basically, if now I change the drilling schedule, that is how they call drilling well schedule. So if I change the number there and I move a date, then I don't see real time the effect of that.
+
+UNKNOWN_SPEAKER:
+Real time what?
+
+Arun Singh:
+If you update the well plan, then you will see the real time calculation. But if you adjust the focus, right?
+
+Hector Palacios:
+So see the final one okay but the point with the real-time calculation is that you don't see the explosion with the correct attributes because the only attribute that you are translating is the component into the sku or the brag id right so you do that translation but other related hierarchies the attributes like brag family category or whatever is is going to stay with the old, with the old, how to say, with the old SKU.
+
+
+
+Arun Singh:
+No, if the new SKU is there, right, then the values will be available, right? No, no, no.
+
+Hector Palacios:
+That's why I'm telling you if you can show me that, because the problem when you do that calculation, OK, we can test one, yeah.
+
+Bastian Osorio:
+Sorry, guys, my internet is not working well. I don't know what's happening. All right, no problem. OK, but let's check the MVP for supply. Third point is the system must accommodate scenarios where generic materials lack vendor-specific material codes, as these determined during the tendering process when procurement proposals are created. Should enable demand and supply for generic materials while supporting actual procurement based on branded materials.
+
+
+
+Bastian Osorio:
+um this will require a workaround yeah yeah so for the generic code there will be a purchase regulation right for the dummy vendors yeah then we call it yes but the comment is we'll I hope they're not.
+
+Arun Singh:
+They're not imagining like this proposal will be integrated or like we will be running out one jobs, right?
+
+UNKNOWN_SPEAKER:
+I will put this.
+
+Arun Singh:
+So. Your creation is small, right? It's not what I'm thinking.
+
+Bastian Osorio:
+We need to do, we will do that in the, we need to test it in the UIT.
+
+Hector Palacios:
+Why is the planning area you're working on the 601? I think that you guys We will need to merge. Are they? Yeah, because all of them are working on the C01, and Adonis is working on the AdNoc. And Vivek as well. So yeah, we need to separate. We will need to merge him. So AdNoc. It.
+
+Hector Palacios:
+Quick component. Asian girls.
+
+Bastian Osorio:
+But what does it mean, this one?
+
+Arun Singh:
+This one basically branded motors will be part of supply line. What? Yeah. This is the one based on different original value. But this is the one Okay, I think they are asking from this. Yeah, I think. But the point number seven, it is I think more relevant to what if a chain.
+
+UNKNOWN_SPEAKER:
+This is just right.
+
+Arun Singh:
+I think it won't be part of the media.
+
+UNKNOWN_SPEAKER:
+I wouldn't be so sure with the approval.
+
+Hector Palacios:
+they are going to push and bust it.
+
+Bastian Osorio:
+We already covered this one.
+
+Arun Singh:
+I think in demand also we have similar requirement.
+
+Bastian Osorio:
+What does it mean this one?
+
+Arun Singh:
+If this is still open world, the key thing. In VPD supply, right? We have mentioned this point as open world. Last time that we discussed with our, right now we don't have a kitting bound. We are just having bound as completion code bound and generic code bound, right? Okay. Hello? Yes, I was reading the 14th.
+
+Bastian Osorio:
+The system must account for varying lead time from vendor VMIs to unknown location, distinguishing between latent to rare consumption at drill rigs and storage at plant warehouses.
+
+UNKNOWN_SPEAKER:
+This is, yes. Yes. And this is the same, yeah.
+
+Bastian Osorio:
+Well-planned can be exploded into material requirements and aggregated at a yearly level to provide visibility at an aggregated level and over a long horizon. This helps streamline decision-making related to vendors requiring vendor BMI. Additionally, provided with the correct inputs and logic, IBP should be able to propose scenarios with long-term procurement LTVA yeah no this is not part this is same as tendering one only yes of course when exist is warmly welcomed.
+
+
+
+Arun Singh:
+There's all those reports and alerts.
+
+Bastian Osorio:
+I won't put reservation at this point. I wouldn't put reservation.
+
+Arun Singh:
+So consumption won't be happening, right? Reservation will be manual upload, right?
+
+Bastian Osorio:
+Yeah, one or the other, but what is not consumption or if we consider it's manually loaded.
+
+Arun Singh:
+Okay.
+
+UNKNOWN_SPEAKER:
+So what will be the total focus? Okay.
+
+Bastian Osorio:
+So I will save this file.
+
+UNKNOWN_SPEAKER:
+MBP.
+
+Bastian Osorio:
+Okay, we'll just save it. And with this space, Arun, you can start creating the script, okay?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+So in the BPD, right, we have this test condition managed section, right? So are we not supposed to create a test script based on that or should we follow like creating the script based on this one?
+
+Bastian Osorio:
+Both. Both. I mean, of course, you have the test condition, but in that testing conditions, you should make sure to address each one of these points. Okay and along with that the points that are part of the of the like standard solution I don't know if there's too much about the standard in this one but you get what I'm trying to for example yes check master data when when we say check master data which we should add first of all well low low bombs low well plan low customer all that and that will any of the points of the BRD.
+
+
+
+Arun Singh:
+Got it, got it. Understood. Okay, I'll start working on this then.
+
+Bastian Osorio:
+Okay, we have another call now. No, no, we do have the supply integration, so let's move into that.
+
+Arun Singh:
+Okay, yes, bye-bye.
+
+Bastian Osorio:
+No, you don't have it.
+
+Arun Singh:
+No, it's with Vivek and Saga.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+Okay.
+
+UNKNOWN_SPEAKER:
+Bye. Thank you.
+
