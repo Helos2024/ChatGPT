@@ -1,0 +1,540 @@
+UNKNOWN_SPEAKER:
+Hello. Hello.
+
+Sebastian Alba:
+So, you know, Hector and are together on the both of them are.
+
+Roumanos, Hadi:
+I don't think Mohammed's going to join us. If he does, great. But I think he's either traveling or he has a lunch. I'm not sure. So Sebastian, we can get started whenever you want. Tara, in the meantime, can you please open the original plan that we had on Excel? Just so that it's easy for us to compare dates if we need to.
+
+UNKNOWN_SPEAKER:
+Perfect. I'll show my screen.
+
+Roumanos, Hadi:
+Sebastian, do you mind please starting with the delays that you're taking into account before we actually look at the plan? So I just want to see What are the drivers behind the plan? And then we get to the plan. Like, I know that there's 12 days, 11 days, et cetera.
+
+Sebastian Alba:
+So I want to see. OK, we have them. The overall delay so far, it's almost five weeks. It's a delay from the initial date where we needed the server. That was the week of November 8. Yeah. We actually got the server installed that it was during last week.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sebastian Alba:
+So we have from the, actually I'm counting from the 18th of November, on that we have delays on the delivery of the CIGSA.
+
+Roumanos, Hadi:
+Can you do me a favor, when you can, not urgent, bring the number of days unrecoverable delay that we had in the status update to this document so that it's easy to refer back to them, right? There's the CIDS related delay, which I think was 11 days. There's the firewall slash STD delay, which I think it got up to maybe 17 days. I don't know. I don't remember the number. And there's the BRD BPD 8 to 9 days, which may have increased just so that we can account for the number of unrecoverable delays.
+
+ You're saying the reasons here which is fine.
+
+Sebastian Alba:
+Yeah, I love the dates, the actual dates.
+
+Roumanos, Hadi:
+Yeah, I want to mention when we talk to Firas what are the number of days that we've been delayed and then we delayed the entire project for less than that or more than that or I don't know, right?
+
+Sebastian Alba:
+Yeah, so Hadi and this is in this exercise what we actually that we haven't done before is to represent their release plan logic to the project plan. Okay, very good. So now all the October is actually aligned to these dates that we reviewed. The release dates. Very good. So the design board will be happy, basically. Okay, fine. So now with this, we don't have... So we had some space of recovering, considering it's not a space of recovery in the current plan, the official one, we have a much longer time of cut over that is getting, and we are recovering somehow, sometime in duty.
+
+ So if you see what we did is to maintain the actual length of the activity, with this we'll have mainly SIT done in beginning of March.
+
+UNKNOWN_SPEAKER:
+Sorry, this is May, sorry.
+
+Sebastian Alba:
+No, it's okay. So beginning of May, the duration of activity will be the same. This does get delayed by five weeks. Then we have the approval. We added two weeks for approval of SIT. Okay, good. Then we have the UIT end-to-end training, so end-to-end testing, still for weeks. And we have until the week of, this is March, sorry, it's March, May. And we have till the date of, it was May 29 to be approved in order to enter in the release calendar.
+
+ And all of this is wave one, yes? All of this is wave one. So we have almost four weeks of approval time on top of the end-to-end testing. So, from my point of view, the wave one is still quite consistent, and the times are good enough in order to reduce the impact to only two weeks. So, nowadays, with this calendar, we would be releasing June 23rd. So it's barely an impact because we have some time to be saved in the Cutover and what is mainly driving the days for the go-live are the release calendars.
+
+ So I have a question.
+
+Roumanos, Hadi:
+What's the purple go-live and what's the red go-live? What's the difference between them?
+
+Sebastian Alba:
+That's a technical go-live. So after we actually transport we need to we need some time to prepare the environment so the purple date shows this one there is a productive import yeah and where does the actual go live uh the actual go live matters with the release calendar that you have so you're saying 23rd of june the technical go live it's it's related to the release calendar that we have in the well in the red one not the red one the red
+
+Roumanos, Hadi:
+one is it would be the functional goal after we have a couple of weeks to set up the environment so between 19th of May you have almost four weeks of delay until 23rd of June maybe a bit more yeah
+
+Sebastian Alba:
+how many weeks is that it's sorry this is one We had it. It was main. It was May 191234585. 5 weeks.
+
+UNKNOWN_SPEAKER:
+I have a question.
+
+Madhavan, Tara:
+So you're saying while we are waiting for you 80 approval will do technical cut over, right? So you you have three weeks of that parallel to UAT approval. You will be able to do all like 70% 75% of the work without while getting UAT approval.
+
+Sebastian Alba:
+It's it's mainly a preparation, so we'll leave all the transport packages ready. Make sure that we have all the activities aligned. If we need to load data manually, all that prepared to be loaded. Environment. That's that's the main will will focus on enabling the connection with the product environment. That's the kind of activities that we would have on that. Time frame.
+
+Madhavan, Tara:
+OK, so you're saying there will be nothing during those three weeks period time where we will be stuck because we don't have you 80 approval, right? You will be able to do the work.
+
+Sebastian Alba:
+It we will. Preparing the transport and on those three weeks we'll definitely have meetings with the user to review some open points that they can define in order to get the approval.
+
+Madhavan, Tara:
+Have you considered any delay for instance availability, broad instance availability or any approval that will go for that?
+
+Sebastian Alba:
+For the instance availability I'm considering in this approval time. So we have two weeks in between the SIT and UIT and then... We are saying broad instance will be available there? Yeah, we need to make sure that in this approval time we get the next instance ready.
+
+Roumanos, Hadi:
+So Raul, I'll let you ask your question. I have a few questions after that.
+
+UNKNOWN_SPEAKER:
+Go ahead, Raul. Yeah, two questions.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+The original plan we had in the construct phase, we had three sprints. My assumption was that sprints allows us to go back through the solution over and over again. Here we are not showing sprint. Is it like we are not showing sprint or we'll not have sprints?
+
+Sebastian Alba:
+We're not showing sprints on the configuration mainly to have a more simplified plan, Raul.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+But then we will still the sprints, right?
+
+Sebastian Alba:
+The way we installed it, so that we have integration. The configuration will have sprints, and we will have unit testing in the middle of the configuration in order to start validating part of the solution. OK, second.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Yeah, that hasn't changed. OK, noted. Second, have we considered the design board approval time as part of the SIT and UAT approval, or it should be considered separately? When you say UAT approval, we are asking end user approval. But after the UAT approval, we also need to go to design board, take their approval so that.
+
+Sebastian Alba:
+The design board actually happens before the UAT. This was one of the points that we have doubts with what we will need to actually have this activity ready. I could represent it as an activity, the last design board. But it is before the UAT approval. So somewhere here, I would need the design board approval.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Probably this can be one of the points to be verified with Khalid as well to make sure that we are making sure the necessary design board approvals, if there are in between the phases, like between SIT and UAT, are considered and the time for approval is appropriately considered in the plan, or if we don't have design board approval, we'll not be able to move the transports.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sebastian Alba:
+I will add that activity. I will add that activity. It's an explicit activity because we definitely cannot just in that it will be ready, considering how they work.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Yeah, yeah. Because considering how the things are moving from design board, I feel we should allocate some time. But we can talk to Khalid and get an understanding from him at what different points we need to go back to design board and how much time we should consider. Because their meeting happens once in a week, which means if we miss that meeting, probably we move to the next week.
+
+Sebastian Alba:
+OK. But as you see, the design board approval is way before the UAT approval, at least in the release calendar, almost a month earlier. Because right now, we are going through design board approval for starting the work.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Then we will have design board approval after SIT. I just want to make sure that we are also making sure that if there any design board approval after UAT, which allows us to move transport from UAT to regression and then eventually to production.
+
+Madhavan, Tara:
+Rahul, logically speaking, design board approval should happen before regression testing begins, right?
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Yeah, so basically, the way I've understood is first approval will now come next week, hopefully, for us to start the build. Now, if the second approval comes after we have completed the build, and SIT is done so that we can start the UAT. They will verify our work, and they'll allow us to start with UAT. Once the UAT is completed, again, we need to go back to design board and seek their approval so that we can start the regression testing.
+
+ Because this is where, based upon the UAT and regression testing approval, the transport can move to go live, which means the final approval will be between the two.
+
+Madhavan, Tara:
+So in my mind, without a solid finalized solution, regression testing is pointless.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Correct, so which means that regression testing can only start after we have UAT approval. So I just want to make sure that we have this clear understanding and then we allocate appropriate time in between these milestones to make sure the time for approval is accounted for.
+
+Roumanos, Hadi:
+I have a question here. I'm still stuck with the five weeks. So how much more time are we allocating for approvals in this plan versus our original plan? So here I know, at least I can see five weeks of approvals. Maybe, yeah, give or take. How much more is that compared to our original plan? That's question number one. And on top of that, how many days of delay from the actual delays that we've suffered?
+
+ Are we adding to that to reach the five weeks? So here's what I'm trying to say. If the original plan had, let's say, two weeks of approval. Now you have five, that's three weeks additional time for wave one. And then what that means is that you're adding two more weeks on top of that from the delays that you've suffered. To reach your new go-live date. So I'm trying to understand where is your additional time coming from between approvals and delays coming from before.
+
+
+
+Sebastian Alba:
+So what we have done in a really simple way is to use the time we knew we will reduce from the go-live to add approval weeks. So originally, to the considering regression testing and go-live, we had one. It was almost six weeks. No, more. Almost eight weeks. So now if you see, what we have is eight weeks considering. The actual go-live considering regression is four weeks. So the four weeks that we have, four weeks out of the eight weeks that we had for put over, we're using four of those weeks in order to enable approval times.
+
+
+
+Roumanos, Hadi:
+And the rest of the impact is delays. Are you able to say now? OK, OK, so I just want to break down the five weeks into added review time. Versus time that is coming from delays. Can we do that breakdown or no?
+
+Sebastian Alba:
+Yeah, yeah, I can do that breakdown and I could also, Harry, what I could do is to express also the put over time that we've had and the speed that we need in order to use part of that time for approvals. Okay, okay. So they know where the time is coming. I know that's very important, right?
+
+Roumanos, Hadi:
+When we talk to them, we tell them, hey, we had two weeks of approvals, now we have three, for instance. And on top of that, we have four weeks of delays that have spilled over Wave 1.
+
+Sebastian Alba:
+Something along those lines. Yeah, we need to trace what's the impact on their responsibility on the project fund delay.
+
+Roumanos, Hadi:
+Okay, fine. So that's the important bit for me.
+
+Sebastian Alba:
+Okay. Yeah, that's something I could do.
+
+Roumanos, Hadi:
+I will add that part in the plan. Other than that, you're comfortable with...
+
+UNKNOWN_SPEAKER:
+One second. Hello? Adi, you were saying something? I think he got a personal call.
+
+Madhavan, Tara:
+OK, while we're waiting for him Sebastian, Remember when we were finalizing this plan initially with Khalid, he had said that going from SIT to UAT there will be a lag rate because we'll need cut over plan also approved and then UAT will happen in another instance. So basically we will be mimicking prod in the UAT region because of which there will be a lengthy approval process.
+
+Sebastian Alba:
+Yep, that's how all those am I considering that two weeks of approval?
+
+UNKNOWN_SPEAKER:
+OK. I could add them.
+
+Sebastian Alba:
+I could be explicit. Sorry about that. I'm back. That is UIT approval. Put over to the next member.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Roumanos, Hadi:
+So this covers wave one with the source of the extension. Five weeks, I think, is reasonable.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Roumanos, Hadi:
+considering everything that we faced.
+
+Sebastian Alba:
+In Wave 2, in Wave 2 is where we have a small issue considering the dates. OK. Because if I apply the same logic of delays and approval time, my main issue is that considering their release calendar that changes for the second half of the year, normally the deadlines were in the beginning of the month and they're on the at the end for the for the October what I have is that I have only one week for the approval of the second UIT and if I don't take that opportunity the total impact will be almost nine weeks that's this is a problem that the main issue that I see in the show me again so if you don't if you don't have that additional impact no it's okay give me a second yeah I hate the web app of the powerpoint so right now if you don't have an issue and if you have approvals on time when do you go live we would go live the actual date would be we would be joining the this go live date so we wouldn't have really an impact.
+
+ Sorry, this is this one. I was 14, so we'll have like two weeks of impact. Sorry, I was looking at the wrong date. So this is the deadline for the UAT approved. If I am able to approve the UAT before June 26th, I would go live in July 10th. In July when? July 10th. So and then we have two weeks of preparation. So July 10th you would be delayed. Okay, so hang on.
+
+Roumanos, Hadi:
+So if everything's okay, you go live on July 10th, which gives you a delay of maybe two weeks.
+
+Sebastian Alba:
+It's four weeks considering the preparation of the environment.
+
+UNKNOWN_SPEAKER:
+Hmm.
+
+Sebastian Alba:
+Or the broken environment because we do have a few weeks or a few activities that we need to execute in productive environment to enable the use of the tool.
+
+Roumanos, Hadi:
+So when, okay, so hang on, hang on. When is the actual go live compared to the original date that we had?
+
+Sebastian Alba:
+So the original date was, uh, it was end of first week of July. So we have the actual date, let me... I'll tell you right away.
+
+Roumanos, Hadi:
+So the original one was end of June, if I'm not mistaken, no?
+
+Sebastian Alba:
+End of June, yep.
+
+Madhavan, Tara:
+Yeah, 30th of June.
+
+Sebastian Alba:
+30th of June, so now where are we? If everything goes fine. If everything goes fine, we'll be in July 21st, but this considers just one week for UAP approval that I don't think is reasonable. Which is not going to be enough. It's not going to be enough. The main issue is that if I don't have approval on that time, I would have to wait until the end of July in order to get to the next window.
+
+Roumanos, Hadi:
+Is there any way you can start this UAT process earlier?
+
+Sebastian Alba:
+That's something we would need to review. To give it more time, basically. Yeah, at least if we have two weeks, that's something that we might be able to push, but one week will definitely not be enough. No, no, no. One week is not realistic, right? You're not going to get approval for UAT. Everybody knows that it's not Yeah, everybody knows that.
+
+Roumanos, Hadi:
+So I'm thinking in order to avoid jumping into this purple UAT approval that takes you forever, what if you do UAT approval starting 16th of June and then you spend two weeks for it and then you can be back
+
+UNKNOWN_SPEAKER:
+on track?
+
+Sebastian Alba:
+We will need to start the UIT one week earlier, at least.
+
+Roumanos, Hadi:
+So you're finishing SIT in 19th of May, right? End of the week of the 12th?
+
+Sebastian Alba:
+Yeah, actually the SIT are closing in the end of April.
+
+Roumanos, Hadi:
+Oh, you're giving it two weeks of approval, okay. Two weeks of approval. Okay, okay, okay. And that's realistic. Let's keep it at two weeks of approval. So you're giving it two weeks of SIT execution. And then UAT end-to-end testing. Can you shorten the end-to-end testing for UAT or no? Because you're giving yourself five weeks of end-to-end.
+
+Sebastian Alba:
+It would be feasible, but it does add some risk. Another point that we wanted to discuss I think it could be feasible and but if we go with that dynamic or with that approach I think we need to have them or prepare them to start thinking of an MVP for the releases so start positioning some of this strategy because what we are thinking is that we can either have a fixed date or a fixed scope. If we have a fixed scope for the first go live, any delay will impact.
+
+ If we want to maintain the dates, we need to start reviewing. No, no, I agree. I agree.
+
+Roumanos, Hadi:
+The reason we're having this conversation is because we want to enforce those dates. Yeah. Right. So we want to tell them there's no way we can move UAT approval beyond X date. If it does, then you're delayed by five weeks. It's as simple as that. And we start that message from now. But I just want to try and have a realistic plan to avoid this August nightmare, right? And to do that, you can't have one week of UAT approval.
+
+
+
+Sebastian Alba:
+Having to go live in August is terrible. It's bad for everyone. So I'm not sure what you think, Hector and Bastián. If we manage to define and really present a story that is an MVP, we could actually reduce one week of UAT, considering that if we don't manage to cover everything, we'll go like with a partial part of the...
+
+Roumanos, Hadi:
+Okay, let me suggest something, because right now this plan takes into account August, etc. So, have this as an appendix slide. But in place of this, for the discussion with Firas, have a plan that is realistic, Yes, that is realistic to go live in the, where is it, in the window of July. But for that to be realistic, you need two weeks of UAT approval, that's for sure. And you need certain dates that they need to abide by.
+
+ So if we miss any of those dates, and we'll tell them, right, if we miss any of those dates, then it gets pushed until August.
+
+Sebastian Alba:
+Yep. At least I feel more comfortable with that approach. So we have, at some point we did talk about this, but have a clear definition of how much time they can take for the approvals.
+
+Roumanos, Hadi:
+Yeah, exactly. Right. So I want to give them that message right now. I want to tell them in order to be able to go live in July, there's two weeks of SIT here, not later, not before. There's two weeks of UAT approval here, not later, not before. If you miss any of those, We're done, we're cooked. But I can't show them this particular slide because it already spills into August, so I want to keep it as an appendix, as sort of a, here's what happens if we miss it.
+
+
+
+Sebastian Alba:
+This actually is the tragic scenario where we need to push almost nine weeks to go live considering their release calendar.
+
+Roumanos, Hadi:
+We'll show it as a consequence, but I can't show it as a plan, right? As a plan we need to show one that's clear, that shows July, and then with the approval dates being set in stone.
+
+Sebastian Alba:
+Yeah, but with that plan also, Hadi, I think we need to present the MVP strategy as a way to avoid this cycle of having each delay with their really complex dynamic of approval impact the overall plan. Yeah, yeah. A gain for everyone.
+
+UNKNOWN_SPEAKER:
+That's fine.
+
+Roumanos, Hadi:
+That's fine by me. I mean, we need to we need to sort of protect ourselves anyway, right? I just want to make sure that we give them enough responsibility to tell them this is the new plan. It ends with the minimal sort of impact on the goal, which is a couple of weeks from what I'm seeing the wave to one. However, in order to be able to meet that, these are the prerequisites.
+
+Sebastian Alba:
+Yeah. Yeah, and it's always better received when we charge change requests for additional support, functionalities, and for delay. So having a fixed release date with an MVP, and we can build, if we need more consulting time to close the overall solution, we can add it as other.
+
+UNKNOWN_SPEAKER:
+Which is fine.
+
+Sebastian Alba:
+Which is fine. With other strategy, yeah.
+
+Roumanos, Hadi:
+But I agree with you. Have fixed dates and fixed scope there's nothing that can change yeah okay when can we um there's two things I want us to do I want us to discuss this with muhammad on monday but with the with the plan that doesn't show august keep this as an appendix the plan that we're trying to be aggressive with that that shows july Let's try and do it midday Monday so that afternoon Monday we can sit with Khalid and tell him this is what we can think of and that's dependent on so many things.
+
+ And then let's aim for Tuesday to sit with Firas.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Go ahead, Read. Quick question to Sebastian. Other than the buffer we have for approvals, does this plan have any other buffer for us for our internal activity?
+
+Sebastian Alba:
+Not much, not much actually.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So which means that if there are any delays other than approvals, we'll be neck to neck.
+
+Sebastian Alba:
+Currently the plan, yeah, if we get delays, we will need to cut time from the approval time or manage to maybe execute the SIT or UAT in less time. That's why Raul, I think it's so relevant to post the MBPS strategy, because that will give us some way of having a buffer if we have delays, reducing a little bit part of the solution to have a continuous improvement or leave it as a continuous improvement after the go live.
+
+
+
+Conference Room (Patel, Rahul) - Speaker 1:
+OK, so Hadi, this is something probably we also need to talk, because this is something Hector and Bastián also recommended in the change management meeting, where based upon the BRD we have, the requirements we have, we face the solutioning in something what we can provide during the UAT, something which we can provide during the build. And then some requirements will go beyond Go-Live with what team is recommending and get approval from AdNoc so that it reduces the risk of not being able to deliver every part of solution during this first Go-Live.
+
+
+
+Roumanos, Hadi:
+To be honest, with this plan, if anything, If something goes wrong, we'll get delayed again.
+
+Sebastian Alba:
+The buffers that we have, we're actually using them for AdMob to approve documents. All the buffers that we had on the plan. That's the main change. We are applying the current delays and using any buffer that we had for approvals.
+
+Roumanos, Hadi:
+I think we should mention this as well So you have impact on the plan, you have reasons for delay, and you have considerations or assumptions, right? So buffer being used is something that we need to mention.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Which means every activity will be on critical path going onwards. Yeah, that's exactly what it means.
+
+UNKNOWN_SPEAKER:
+I mean, this is fine, right?
+
+Roumanos, Hadi:
+I expected a bit worse, but it's only a matter of meeting the dates with AdNoc, that's the only thing. Yeah.
+
+Sebastian Alba:
+And I think it's critical for the success, what I already said, to start positioning an MVP strategy If they are not willing to do so, and they want everything from the first time, I think it's going to be hard to adopt, and it will definitely keep pushing the dates farther. No, I agree. I agree. I agree. And that's something that the users, at least the end-users, want. I said it nicely, so we'll definitely need Asma, Firas to help us position them.
+
+ Okay, let me ask you something.
+
+Roumanos, Hadi:
+Why wouldn't they accepted? What's the issue for them?
+
+Sebastian Alba:
+At least from what we have seen or our perspective is that the user want everything ready now and they don't think that partial releases will have a value.
+
+Roumanos, Hadi:
+Yeah, but we already agreed on partial releases, no?
+
+Sebastian Alba:
+not functionalities inside the models.
+
+Roumanos, Hadi:
+So tell me more how that's different from our original plan, this MAP strategy that you have.
+
+Sebastian Alba:
+So you could have a demand planning with financial, with a financial view or without it. So what they are expecting is the demand planning as an example with all the functionality that we have seen and they approve on the BRD. Would maybe have part of those functionality as a second release or a continuous improvement in ATP, maybe the valorization won't be on the initial go live, maybe the dashboards, it will depend.
+
+
+
+Roumanos, Hadi:
+Hang on, in easy terms, how is that different from our current plan?
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So let me add here Hadi, so the way I have understood is that assuming that our BRD, suppose we have signed a BRD, we have agreed upon a BRD, it has 100 requirements. The MVP may cover only, say, 70 of those 100 requirements, which means that while we've agreed upon 100 requirement items, the initial go-live will be with the critical ones, which is, I'm just putting up numbers, 70 of the 100. And the 30 of them may go live.
+
+ 30 of the requirements will be fulfilled during the support, six-month support after go-live on a layman's term.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Now, what are those 70? Probably this is something Sebastian and team can help us identify in the MVP based upon the critical.
+
+Roumanos, Hadi:
+I don't know.
+
+Sebastian Alba:
+I don't know if that's a decision that we can make, though. No, not us. That's why in order to take that decision is an idea that the leadership of AdNod needs to buy in.
+
+Roumanos, Hadi:
+If they don't accept, which obviously they might not, it will only make this plan harder, but we shouldn't expect them to accept, right? I think we need to present it as a way to fulfill security to make sure that we succeed. To succeed in date.
+
+Sebastian Alba:
+I'm not sure what's more relevant for them. Let me ask you again.
+
+Roumanos, Hadi:
+What's the risk if they don't accept this whole MVP? The risk is to have an extended testing phase, right?
+
+UNKNOWN_SPEAKER:
+an extended...
+
+Roumanos, Hadi:
+Everything is built.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+We'll have to build everything, test everything, get approval.
+
+Sebastian Alba:
+Yeah, but that's our plan anyway, right? So we never... I wouldn't present it as an up-front strategy. I would present it as a way to reduce the impact of possible future in case we have some. Okay, so it's like a security or safety net. Yeah, I would push. Okay, this is step one. We know that now we don't have any space for delay. So if we have an additional delay, we'll have two options. One is to once again move the date.
+
+ The other one is to go for an MVP, reduce part of the scope and try to maintain the date with a partial release that will enable you to start using the tool, getting the benefits and will use the hypercurrency.
+
+Roumanos, Hadi:
+It's a valid recommendation, but I think we need to do a better job at selling it. Go back to your slide for the MVP. No, that's not really good.
+
+UNKNOWN_SPEAKER:
+No, no, no.
+
+Sebastian Alba:
+But my point is we need a slide, right?
+
+Roumanos, Hadi:
+We need a slide that says either you go with the normal scope plan These are the risks. These are the benefits. And you go with the MVP approach. These are the risks and these are the benefits. And it needs to be very clear to Firas. I know that we can voice over, but I want him to make an educated decision, right? Because if you tell them from the get go, we follow an MVP plan and then you're going to get part of the scope.
+
+ Somebody might twitch, right? If you tell them we are proceeding with this plan with the full scope, However, these are all the risks that we've identified, including one of the biggest ones, which is if we miss any of the dates, we get pushed by five weeks because we need to go until the end of August or whatever. In order to mitigate this, one suggestion is we follow this MVP path, which has a slightly reduced scope so that we have some margin to maneuver.
+
+ It's up to you guys, but we know for a fact that we can barely meet the dates based on months that we had, which means that we're very likely to miss one of those dates. If we do, we're done. We're cooked until the end of August. So it's up to you. You tell us what you want. But if you followed something that is the big bang, as you wrote, then there's a high risk that we might get pushed until August.
+
+
+
+Sebastian Alba:
+Let us know what you prefer. Yeah, that's something I could present, you know, better than just showing the MVP compared both of the strategies to support.
+
+Roumanos, Hadi:
+tell them hey you have two options now this is the plan yeah we're willing to go with the plan because I don't want us to tell them we prefer mvp or not right I want to tell them this is the new plan this is how aggressive it is now let us tell you how we can approach it there's two ways that's it yeah there is this additional point which team hector and Bastián were also mentioning is that by
+
+Conference Room (Patel, Rahul) - Speaker 2:
+going through mvp path, it also reduces the change management impact on a user's perspective, so that they'll get some more time to, like, if you deploy everything...
+
+Roumanos, Hadi:
+Yeah, I agree, there's less education to be done.
+
+Sebastian Alba:
+Yes, I think in the comparison of the two strategies, we need to add all those. That's what I was trying to say by those slides, right?
+
+Roumanos, Hadi:
+So, that slide, Sebastian, we need to be very clear what's the pros and cons of each one. The only con I see for the for the MVP or or not a con but the impact is that you have duplicate effort happening later because you have to go through launching again you have to go through training again you have to go through multiple things so there's no avoiding an additional cost or effort right you're gonna go through it yeah currently currently as we have the the hyper care where we have all the technical consultant it could
+
+Sebastian Alba:
+be used that consulting then could be used in order to really apply the MVP strategy without much additional cost. One more thing we may need to check is the design.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Will design board approve this strategy? Because design board will approve the BRD, and the BRD will get into the next phase. So if we are going through MVP strategy, which means the scope of the BRD would be split, Do we have to go to design board every time we make small changes?
+
+Sebastian Alba:
+It's a very good question. I don't know the answer, but it's a very good question.
+
+UNKNOWN_SPEAKER:
+I think we will.
+
+Sebastian Alba:
+The only point is that we'll end up in the minor release plan dates.
+
+Roumanos, Hadi:
+Listen, let's not speculate too much. Let's create that slide. Let's sit with Firas and let's see what they have to say. But for me, at least we have a new plan that we can abide by whatever they say.
+
+Madhavan, Tara:
+So what I didn't understand is, are we going for a CR? Yeah, most definitely. Once the end date of the project changes, you have to have a CR.
+
+Roumanos, Hadi:
+Now the exercise is between Cezar and Mohamed to figure out what the money value of that CR is. But for us, there is a CR because you can't anyway change the end date of the project without a CR.
+
+Sebastian Alba:
+That's a given. At least internally, they will not be happy if I say that I'm adding a month or so of consulting without a CR. So we most definitely need to tackle that. I need the money to do it.
+
+Roumanos, Hadi:
+So, no, no, I get it. And we're the same thing. And even Firas agrees to this. So there is a CR to answer your question.
+
+Madhavan, Tara:
+Okay, another question I have is, sorry. Another question I have is, I have a task in my Excel which says, you know, a combined release for Wave 1 and Wave 2. It's a different topic.
+
+Roumanos, Hadi:
+Park it, park it, park it, park it. It's something that we need to explore for the Styrko, which I mentioned half an hour ago in our huddle. So I don't want to cover it now because it's less of a priority.
+
+Sebastian Alba:
+Go ahead, Hector. We're going to close anyway. Once we have closed this impact plan, we can review how it will behave if we combine the two releases. OK, OK, OK.
+
+Roumanos, Hadi:
+Go ahead, Joel.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Sebastian, so the current plan, what you have proposed, considers MVP?
+
+Sebastian Alba:
+No, no, this considers the Bitcoin approach. My main point is that, as we have seen, I think that what impacts them the most is the change of dates. So they're really pushing to have this as soon as possible. Yes. But if they are not flexible in some way...
+
+Roumanos, Hadi:
+So basically if you do MVP, your plan will not change, it will just be easier to accomplish.
+
+UNKNOWN_SPEAKER:
+Yeah. I will make a little bit buffer, I think, for MVP.
+
+Sebastian Alba:
+If we manage to define that they are open to an MVP strategy, if we get delay, we can maintain the date. But with the Big Bang, if we get delays, we'll... I agree, I agree. That's the main message for them.
+
+Roumanos, Hadi:
+Can you please book us a call with Mohamed Naamani at a time that's good for you on Monday? As early as you can so that we leave room for a review with Khaled.
+
+Sebastian Alba:
+So whenever you want. Monday we have the meeting. We have a meeting for budget. For budget early in the morning.
+
+Roumanos, Hadi:
+The budget can move, so tell me the earliest you can do, and then we can move things. It would be right after the budget. Okay, fine. Do you mind booking a slot with Mohamed and Raoul and myself? Tara, obviously. And then, if we can, we'll meet with Khaled after that.
+
+UNKNOWN_SPEAKER:
+Perfect.
+
+Roumanos, Hadi:
+And then we agree with Mohamed, how do we want to position this whole MVP story with Firas? Because I think it makes sense.
+
+Sebastian Alba:
+I just think we need to be smart about how we sell it. That's all. Yeah, definitely. It's all about how you send the message. All right. So just to be aligned, I'll change the plan considering the go live in July for go live 2 with the risk of having moved to August. And I'll add the dates of the days of delay that we have on the weekly presentations. Yeah, just so that we can basically tell them where that extension is coming from And generate the big ban versus MVP strategy in the presentation from Monday.
+
+ Something simple, don't kill me. Yeah, no, no. The idea is to be able to tell them, OK, OK. Yes, it's to send a message. I know that the first meeting would be with Khaled before anything to see if it's something that will fly or make sense or not.
+
+Roumanos, Hadi:
+Exactly, exactly. Yep, perfect. Thank you very much, Sebastian. I appreciate it. Thank you.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Have a nice weekend. You too. Bye. Have a nice weekend, guys.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Roumanos, Hadi:
+Thank you.
+
