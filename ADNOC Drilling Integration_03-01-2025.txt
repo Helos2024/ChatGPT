@@ -1,0 +1,347 @@
+Bastian Osorio:
+You're on mute. Yeah, now I can hear you well.
+
+UNKNOWN_SPEAKER:
+How are you? I'm doing good. How are you?
+
+Bastian Osorio:
+Doing well. Give me.
+
+UNKNOWN_SPEAKER:
+Yes. Yes.
+
+Bastian Osorio:
+No, I'm ready.
+
+Sagar Vora:
+So I think Arun is on leave, right? Sorry? I think Arun is on leave, right?
+
+Bastian Osorio:
+Yeah, he's on leave. So there is not too much.
+
+Bastian Osorio:
+Let me check something.
+
+Bastian Osorio:
+Yeah, so let me open the drilling file. So while I open the file, I understand, well, you sent me a message saying that Reynaldo is working already on the extractor for changing the thing of the, for changing the location. Yesterday I had a word with Reynaldo.
+
+Sagar Vora:
+So he was saying he will start to see the simplest one is the location master data, right? For that he will try to map storage location to location so I suggested him like if he can map just a storage location to the location ID and the corresponding plant to the custom attributes okay but I think he was going to proceed with plant underscore storage location something like that so that all the unique entries are available in the location extractor give me a second someone Rahul is sending me a message Yeah.
+
+
+
+Bastian Osorio:
+But how is it going to be the logic to change it? It will change directly? Extractor or he is gonna do something afterwards like after the extractor like put some logic in CIDS after the extractor it's do no no he will modify the extractor so basically a body so oh that's good yeah so he
+
+Sagar Vora:
+will first try with that if it works fine then then what and then rest of the we will try to explore like one after the other. But the first is the location, right?
+
+Bastian Osorio:
+So if we have, means if he faces any issue there, then at least we will get some idea. And does it, do you think he has like estimated time when this is going to be ready to be tested?
+
+Sagar Vora:
+No, I think, means I just checked with him so we just had a high level discussion like what is the plan and how he is planning to do so he said like it will be a plant underscore storage location to avoid the duplicates of the storage location and uh yeah like once the location looks fine then he will proceed but I'm not sure how much time it will take so I will again recheck with him today because then we will then like I was focusing on the other areas like um the configuration in the ibp and now like in an hour we I have a call with the Moorish team for loading data into the extractor in the S4 HANA.
+
+
+
+Bastian Osorio:
+Because in sandbox you are working with the one ERP they call it that way right?
+
+UNKNOWN_SPEAKER:
+Correct. One ERP?
+
+Bastian Osorio:
+Yes, so one ERP we already have this So it will be good if you can somewhere basically document all these activities you're doing, because I know you're working a lot in different things, setting the connections, now setting the extractor for Bruges, but we need some visibility of what, what is the work that you're doing?
+
+Sagar Vora:
+Sure. I can create a Excel or something.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+Basically that will tell about the installation and configuration stuff. So that I can update the status also, like how much activity is completed and how much is pending. So yeah.
+
+Bastian Osorio:
+So now what we can do is here, uh, You are the owner of this file, okay?
+
+UNKNOWN_SPEAKER:
+This is for drilling. I will get rid of... Let me check something. Sorry.
+
+Bastian Osorio:
+OK, so this one doesn't, will not We're going to leave it there for now. But let's go through each one of these tabs and let's see which one works, which one doesn't work. And yeah. So material, of course, it works, but we need to define, I don't know from where we're going to take the data, but we need to define the drilling materials.
+
+UNKNOWN_SPEAKER:
+Got it.
+
+Bastian Osorio:
+OK, so this one is fine. Location, same thing. Which locations are? And remember that this is, well, we put it here, right? In the summary for which ones we're going to use the standard structure.
+
+UNKNOWN_SPEAKER:
+Got it. Hold on. Yeah?
+
+Bastian Osorio:
+in so material at least for the in materials we have two things well this material will be generic code I'm gonna duplicate this one uh I'll do a copy. And here we're going to have the branded code. And of course, the logic will have to be completely different, but that's another story for now. Then we have location, which is the standard extractor. There's nothing too much. Need to define the filters, then location material.
+
+ So here we're going to have two things, right? So I'm going to just put it here, or just here. Location material. Log material for generic codes, and log material for branded codes. So this one, sorry, this one is extractor. And as you can see, this one is standard extractor. And this one, standard extractor. Then what we are missing here is, for example, the well. Okay, so I'm going to, the well is a customer.
+
+ But it's not going to be standard, that is for sure.
+
+Bastian Osorio:
+This is very likely it's going to be loaded manually and then through a logic in CADS, we're going to create the source customer. I'm going to put an additional tab here.
+
+UNKNOWN_SPEAKER:
+Observation.
+
+Bastian Osorio:
+I'm not going to put it here. I'm going to put it for now in the main page.
+
+UNKNOWN_SPEAKER:
+Yeah, summary.
+
+Bastian Osorio:
+Yeah. I think it's not even here. Customer source.
+
+UNKNOWN_SPEAKER:
+You see it?
+
+Sagar Vora:
+No, I don't see that. Customer value is there.
+
+Bastian Osorio:
+Source customer, I'm not sure why it is there. It should be, it's for supply, that is for sure.
+
+UNKNOWN_SPEAKER:
+And it's customer source.
+
+Sagar Vora:
+So basically, it will be customer summer product and location combination?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+OK. So it will connect plants with whales.
+
+Bastian Osorio:
+will be created through ideas logic.
+
+Sagar Vora:
+I think where I think from historical well plan we can Now we might able to create that.
+
+Bastian Osorio:
+Mm-hmm. You.
+
+Bastian Osorio:
+Okay, this one, I want to also highlight here that this. So, this will be maintained somewhere. Maybe it can be maintained directly in AVP, but the thing is that there is no data source for this one, for the well ID.
+
+Bastian Osorio:
+It will be maintained directly in IVP or in. How it will maintain directly in IVP?
+
+Sagar Vora:
+Because this details will keep on changing, right?
+
+Bastian Osorio:
+And we with a template that that will be.
+
+Sagar Vora:
+If it's one time, then we can maintain, but if it's gonna change, regularly then I think they can place the flat file and CIDS will extract the data from that. We need to check that these detail or Okay.
+
+Bastian Osorio:
+Then what else we have? We will require a customer product also, right?
+
+UNKNOWN_SPEAKER:
+Customer product?
+
+Bastian Osorio:
+No, customer product is not needed.
+
+Sagar Vora:
+But then how this well historical, well data, the transactional data will be maintained? You can maintain it without the master data.
+
+Bastian Osorio:
+You don't need the customer product to load historical data.
+
+Sagar Vora:
+No, if the planning level is at product, customer, location level then.
+
+Bastian Osorio:
+Yeah, but that doesn't mean you need the master data. I mean, you need the customer and you need the product, but you don't need the customer product for the transactional Not necessarily. Source location, production source item, companies will be in the equipment basket. Yeah, here we need a few things to discuss with Arun how we're going to do it.
+
+Sagar Vora:
+Yeah. Let me put it here and here.
+
+Bastian Osorio:
+We're going to call it production source header. And this is supply. Sorry. This is the demand and supply. So we're going to call it demand.
+
+Sagar Vora:
+And then also equipment basket okay will be production so setup you are saying production source item because he was saying like it will be custom master data not but we had a discussion this week okay earlier this week in
+
+Bastian Osorio:
+this We'll have to change material. Oh, I'm sorry. So generic codes in the completion code. So we need the confirmation. I will put you the email.
+
+UNKNOWN_SPEAKER:
+There's one.
+
+Bastian Osorio:
+So the thing, what they require is they want to see for sure directly in AVP. Boom. And currently with the current configuration, we are not seeing a boom. So that's what we need. OK, so they will maintain or how they will do that.
+
+Sagar Vora:
+No, they do so.
+
+Bastian Osorio:
+Yeah, good question and the logic will be like this.
+
+UNKNOWN_SPEAKER:
+Um?
+
+Bastian Osorio:
+First, of course, in a surhana. We're gonna have the branded codes, sorry, the generic codes. Then we also gonna, we'll have, of course, not directly, but somehow derive the branded codes, okay? And then we're gonna have another materials that will be created based on ablative definition, but we're gonna create BOM materials. For now, the definition we have is that these BOM materials are like this, field with well type and completion code, or the same but instead of completion code, additional completion code.
+
+ So this material, then we'll have a BOM. Then we'll have the BOM for this material. And in this BOM, what we're going to have is this is S4 materials. And then we have here S4 bombs. For this one, what we're going to have is, of course, the generic codes for these two. So with these ones, generic codes, it's going to be easier for you because these can be integrated directly with the extractor. You see?
+
+ So here, this will be production source ID and production source header. Here, you have completion code and additional completion code. So this one instead will be concatenation with completion code. And this concatenation with additional completion code. These two will be standard extractors. It should be.
+
+Sagar Vora:
+We need to confirm, of course.
+
+Bastian Osorio:
+We are missing the supply. No, BMI codes. Call it branded codes. So these three ones can be integrated with the extractor. We just need the filters, because they're just going to be materials. And then on the top of that, these two also will be or sorry uh components all right generic in the completion code one no sorry and this one components will be generic codes. And these two also should be with the standard extractor.
+
+
+
+Sagar Vora:
+okay do you do you follow what I'm trying to say not completely but currently is it available or they will maintain in future they will maintain it actually someone shared with me I think it was I don't let me
+
+Bastian Osorio:
+show it to you you go. Can you see my screen? Yeah. So look, this is a material, one, two, three, and this material is actually like a concatenation for completion code. So you have US, which is the field, WUI, which is the well type, 2B, which is completion code, and then the main. Main means that it doesn't have additional completion code. And this material has attached a BOM, okay? So we can integrate this material with these characteristics.
+
+ And then we can integrate the BOM. But because this is just a material, it can be integrated with the standard extractor.
+
+Sagar Vora:
+The only thing we need is the filter to get them. OK. But then the classification will not come, except that I think I have to derive from the main table then.
+
+UNKNOWN_SPEAKER:
+Terrain?
+
+Sagar Vora:
+The classification, the characteristics which you are showing below, that might not come via extractor.
+
+UNKNOWN_SPEAKER:
+Here on the top, classification?
+
+Sagar Vora:
+No, no, the below one, below four line items are there, right?
+
+Bastian Osorio:
+This one, these characteristics? Correct, yeah. No, but this can be added to this extractor.
+
+Sagar Vora:
+Okay, by modifying the extractor.
+
+Bastian Osorio:
+Yeah, yeah, but it's not like uh, I don't know.
+
+Sagar Vora:
+We don't need a buck for that. It is is more straightforward And then the bomb the bomb attached to this one will be also integrated with extractor Okay Okay, this one 22 123 124 is a generic material or So which material?
+
+Bastian Osorio:
+The 1, 2, 3? No, it's not. That's what I'm saying. It's this material.
+
+Sagar Vora:
+OK. How can I explain it to you? Look, we have a customer, right?
+
+Bastian Osorio:
+Usually, how does it work? You have a customer. And this customer, it has some demand. Let's say we have customer, we have then location, and then product, okay? Got it. And then we have demand, or configure demand, let's say. So let's say we have the customer one, two, three, no, sorry, cost for the location 1,000, and the product is, I don't know, Whatever. In this case, let's say this customer is demanding whatever, pump.
+
+ Pump one, okay?
+
+UNKNOWN_SPEAKER:
+And it's demanding the period.
+
+Bastian Osorio:
+One is demanding 100 units. What we're going to have in this case, the customer will be a well, okay? The location will be at no location, whatever.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Bastian Osorio:
+And the product will be this completion code, which represent an activity.
+
+UNKNOWN_SPEAKER:
+Okay. Okay.
+
+Bastian Osorio:
+This one represents an activity, but still will be a product, the product that you were seeing over there. And let's say 123 or to be.
+
+UNKNOWN_SPEAKER:
+Sorry.
+
+Sagar Vora:
+It will be 123. 123.
+
+Bastian Osorio:
+But what you will have Here, the description. If you want to put it as description, it depends. This will be the description. WI. But the material is the 1, 2, 3.
+
+Sagar Vora:
+So OK, 1, 2, 3.
+
+Bastian Osorio:
+But this product represents this, right? This one, what we have here. And then demand will be 1 in this period, which means you need one unit. One has to be exploded, because this product cannot be, yeah, it has to be exploded. As I said, it's a bomb material. And this material will be, once we explode it in the location, it will demand, let's say, three different materials. And these materials, part of the bomb, will be a completion code.
+
+
+
+Sagar Vora:
+Sorry, this material will be Yeah, I think it would be to be like in the D column where you wrote 123 then if you are saying it will be field well type completion code then it should be a to be right to be is a completion Yeah, we have it here to be.
+
+Bastian Osorio:
+But it is not just the completion code is more than that is not. It's a feel is because just the completion code doesn't completely. It doesn't defines completely the
+
+Sagar Vora:
+The bomb. OK, it's a combination which depends on and you can see it.
+
+Bastian Osorio:
+I don't have it open, but let me let me look for it. Mm.
+
+Bastian Osorio:
+In this one is it.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So if you see here we have to be in to be but for one we have 10 10 units required and for the next one 14 which means that just the completion code is not enough to define one. So that's the detail we need. We will have a concatenation, and with that concatenation, we will be able to define a unique BOM. That bomb will have the completion code, that's for sure.
+
+Sagar Vora:
+But the completion code along with some other attributes.
+
+Bastian Osorio:
+But the question we sent I put you in the e-mail are to define all these details. Okay. We're already past on the time. We're going to meet later. With Vivek, I believe, to talk about the supply integration, or I'm not sure. Let me check what meeting do we have in the afternoon. Tomorrow, I think. Yeah. Yeah.
+
+Sagar Vora:
+So I think Saul will be there, right?
+
+UNKNOWN_SPEAKER:
+Yeah. OK.
+
+Sagar Vora:
+Sure, thank you.
+
+Bastian Osorio:
+Thank you, but I let you know about the time. It's at what time I think.
+
+Sagar Vora:
+OK, let me just read for me what time is for you 7. No, it's at 7.30, but I have a Check that I have a flash. No.
+
+UNKNOWN_SPEAKER:
+Cool. Thank you.
+
+Bastian Osorio:
+Thank you, bye.
+
+Sagar Vora:
+Yeah.
+
+Sagar Vora:
+Bye!
+
