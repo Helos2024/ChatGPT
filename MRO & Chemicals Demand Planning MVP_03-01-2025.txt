@@ -1,0 +1,944 @@
+Saul Portillo:
+Hi guys. Hi Vivek, how are you? All good. Hey Saul, tell me one thing, where did you load the data? The one that you received from Vaidyanesh? In Adnok planning area? No, in Sita 01 Adnok. Oh, you loaded over there? So you're going to. Let me let me show. Let me show me show in this. This is. Yeah, let me show. This is. Give me one minute. This this is the planning area. When we upload the data, the idea this.
+
+ Configure all the key figures and later copy the plane area to Z01 ad-hoc. And in this one, try to run the solution with the copy ad-hoc data. This is the idea. In this one, configure and later copy this plane area to this one. And in this one, upload the data and run the demo. OK.
+
+Bastian Osorio:
+Sí, esa es la primera cosa que necesitamos alinear. Gracias, Saúl, por abordar eso. Esa es la primera cosa que necesitamos abordar. ¿En qué área de planeación vamos a trabajar? La idea inicial, como mencionó Saúl, era trabajar en... Toda la configuración se hace en el área de planeación ADNOC y una vez hecho, se copia a la Z01 ADNOC. ¿De acuerdo? En Set01 AdNoc es donde vamos a ejecutar toda la prueba de unidad, UAT, etc.
+
+ ¿Por qué eso? Porque si estás trabajando en la configuración, estás trabajando en el AdNoc y no estás, básicamente, interrumpiendo toda la prueba que está teniendo lugar en el Set01 AdNoc. ¿Eso está claro?
+
+Vivekanand Gajula:
+But is that temporary or like going forward we will be using AdNoc only, right?
+
+Bastian Osorio:
+No, no, we will have these two planning areas permanently. There's only one that we're going to transport to production, which is set 01 AdNoc. But any new configuration is done in AdNoc, is tested there, that is working. If, for example, you created a new configure, it doesn't work, you can do it in AdNoc. Once it is ready, it is tested. That is working fine, you move it to set 01 at NOC. And in this, so the first one at NOC, as it is, it is just for configuration testing.
+
+ And the set 01 at NOC is for data testing, or doing unit testing, so on and so forth. And then of course, we're going to transport that one, set 01 at NOC. And in production, well, we have the production system.
+
+Saul Portillo:
+OK, OK, got it. Exactly. I don't know if you have time after this meeting. We saw a duplicate key figure and I need to align with you, Fiamma, to how to consolidate the demand because I see, for example, key figures that you built for supply. We have the same configuring in demand and the idea is only take one and modify and align. I know if you have time later we can show you the data we are uploading in the system and I don't know.
+
+ If you have any doubts, I think it's better to have a meeting later and continue to work on that.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Bastian Osorio:
+So, for now, Vivek, we are going to work on... You have something to address, Héctor, with Vivek, I believe. Yes, that's what we need. And then we can... Ok. Tal vez podamos discutirlo primero para que podamos dejar... No, vamos a discutirlo con Vivex. Pero no quiero tomar tiempos con Vivex porque vamos a discutir la demanda de MVP, así que no hay necesidad de que Vivex esté aquí. Tal vez podamos hablar con Vivex en nuestro reunión.
+
+
+
+UNKNOWN_SPEAKER:
+Exactamente.
+
+Bastian Osorio:
+Vivek, te llamo.
+
+UNKNOWN_SPEAKER:
+Perdón?
+
+Bastian Osorio:
+Te llamo, tenemos una reunión separada, porque esta vez Bastian va a hablar más sobre la parte de la venta de dinero, así que no te pierdas el tiempo y podemos conectarnos a otro.
+
+Vivekanand Gajula:
+Sí, claro, entonces me voy a despedir. Gracias, chicos.
+
+Fiamma Giorgi:
+Gracias, Vivek.
+
+UNKNOWN_SPEAKER:
+¿En todas las oficinas, muchachos? Están mortales.
+
+Saul Portillo:
+Están muy buenas.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Bastian Osorio:
+Mucho mejores que en las otras.
+
+UNKNOWN_SPEAKER:
+Sí. Sí, sí.
+
+Bastian Osorio:
+Están muy fancy.
+
+UNKNOWN_SPEAKER:
+Están muy bien.
+
+Bastian Osorio:
+Están muy bien. A ver, aquí está con Pelayo.
+
+Saul Portillo:
+Saludos, Pelayo. Sí.
+
+Bastian Osorio:
+Así que, Saúl, te esperamos pronto. Pablo igual. Y Fiamma también. Esperamos que pronto nos podamos reunir todos acá. Va a estar bueno, va a estar bueno. Excelente. Esperemos, esperamos. Perfecto. ¿Cuál es el punto? No vamos a revisar tanto configuración, vamos a revisar otro tema. Voy a compartir un poco mi pantalla. Entonces, tenemos las unit testing que comienzan, bueno, van a comenzar oficialmente el 20 de enero y se van a extender hasta el 30 de enero, que es día jueves.
+
+ Entonces, vamos a tener dos semanas en sitio de unit testing. Y, bueno, después tenemos que tener una... Bueno, la aprobación de las SIT. Para que estén todos claros, las SIT son pruebas de integración. O sea, que la data se puede integrar correctamente. Y, con eso, nos van a permitir saltar al ambiente UAT. Para que, bueno, seguramente Fiamma y Saúl ya manejan esto, pero para que Pelayo y Pablo tengan claro, el ERP tiene distintos ambientes.
+
+ Normalmente, digamos, clientes normales tienen dos ambientes o tres ambientes. El primer ambiente que se llama sandbox, en el cual tienen data súper vieja. Después tienen un ambiente de pruebas, en el cual tienen data un poco más actualizada. Y finalmente tienen ambiente productivo, donde hacen su trabajo digamos, el trabajo cotidiano, día a día. En este caso, y normalmente nosotros nos conectamos directamente para hacer todas las pruebas directamente a Productivo, porque IBP no tiene ningún impacto en su día a día, entonces nosotros nos conectamos directamente a Productivo y la data la hacemos con data de Productivo, digamos, súper actualizada, o sea, actualizada al día, y con eso hacemos todos los testings.
+
+ AdNoc, siendo AdNoc, nosotros tenemos conectándonos a Sandbox, que es el ambiente, digamos, el tercer ambiente, como el mundo 3. Tiene data como de un año de antigüedad. Bueno, hay que hacer unas pruebas, bueno, las SAT, que es básicamente comprobar que están dando, que no hay ningún impacto en las configuraciones que estamos haciendo en el Sandbox para que nos permitan saltar al siguiente ambiente, que no es
+
+Saul Portillo:
+productivo, es UIT.
+
+Bastian Osorio:
+Y una vez que las UAT están aprobadas y un montón de otras cosas más, se salta finalmente al productivo. Entonces. ¿Qué es lo que tenemos? Las UAT primero las vamos a hacer, o sea, lo primero que tenemos acá que aparece como configuration data preparation en unit testing, lo vamos a hacer sin data integrada, lo vamos a hacer mediante carga de archivos planos. Ok, una vez que tengamos eso y tengamos la aprobación también de las acá en morado, vamos a pasar a las UAT.
+
+ Y las UAT tienen que ser con data integrada, sí o sí.
+
+UNKNOWN_SPEAKER:
+¿Ya?
+
+Bastian Osorio:
+Finalmente, con el UAT teniendo, bueno, tenemos acá como tres o cuatro semanas de margen para que nos aprueben las UAT. Con eso tenemos que hacer un regression testing. El regression testing es básicamente de comprobar que al correr los jobs no se rompe nada en el UAT, en el ambiente UAT. Y con eso nos permite saltar el go live, que sería el 9 de junio.
+
+UNKNOWN_SPEAKER:
+¿Ya?
+
+Bastian Osorio:
+Entonces, ¿qué es lo que tenemos que hacer? Falta, en realidad, el 9 de junio, para la cantidad de requerimientos que ellos tienen, es poco tiempo. Entonces, ¿qué vamos a hacer? Vamos a tomar esta estrategia. Vamos primero acá, en las pruebas, en las unit testing. Vamos a abordar primero el primer objetivo. Digamos, tenemos dos objetivos para este unit testing. El primer objetivo es que los usuarios se empoderen de la herramienta, que es algo que no hemos logrado conseguir.
+
+ Ellos como que solicitan muchas cosas, pero todavía no entienden la lógica de funcionamiento de IDP, y es natural que sea así, porque ellos no han interactuado con esta herramienta. Entonces, durante estas primeras, digamos, tenemos seis semanas, la idea es que ellos usen la herramienta mucho y abordar los requerimientos clave. Y acá tenemos que ser súper minimalistas, pero también inteligentes en saber qué es lo más importante de la herramienta.
+
+ O sea, si yo tengo que sacarle IBP todo lo que no es fundamental, ¿con qué me quedo? Yo ya tengo una idea de lo que es, pero lo vamos a conversar. Y una vez con eso, Teniendo claro que funciona bien, vamos a saltar a la UAT para hacer exactamente lo mismo, pero con una selección de datos mucho más amplia. Y he integrado una selección, como reitero, de datos mucho más amplia, que van a venir directamente desde S4HANA.
+
+ Además de eso, y acá nos vamos a encontrar seguramente con algunos issues, ¿cierto? O ellos van a tener nuevos requerimientos, que van a tener alta prioridad Entonces eso también lo vamos a tener que abordar durante la UAT. Entonces la UAT lo que vamos a probar idealmente sería un, digamos un MVP más algunos puntos críticos o algunos puntos que ellos, digamos, subrayen como de alta prioridad. Y finalmente, ya después del go live, tenemos seis meses de HyperKit.
+
+ Y ese HyperKit, bueno, va a ser primero asegurado de que la herramienta funcione correctamente, de ir empujando a los usuarios para que la ocupen IBP activamente. Y, en tercer lugar, ir abordando nuevos requerimientos. Y, digamos, ir trabajando con la lógica de... Con la metodología ágil. O sea, que se lleve cada un mes a recolectar nuevos requerimientos, priorizarlos y empezar a configurarlos y hacer el deployment de ellos.
+
+
+
+Saul Portillo:
+Pero porque ahí es donde vamos a tener data completa y van a empezar a salir escenarios que no vamos a poder ver con la data seleccionada manual ni tampoco con la que no es real que está en las UAT. Entonces lo que tú dices, van a ser requerimientos nuevos, vamos trabajando sobre ellos como si fuera un equipo de Customer Success haciendo renovaciones del sistema.
+
+Bastian Osorio:
+Exactamente. Entonces, Ahora, ¿qué nos queda definir en esta reunión? ¿Qué es el MVP? Yo, digamos que a alto nivel tengo... Y, bueno, después, obviamente, tenemos que revisar el MVP contra el VRD, que son los requerimientos. Pero, a alto nivel, yo creo que eso es lo fundamental para mí. Primero, en demanda, conseguir el forecast. Si ya tenemos forecast para todos los productos, lo vayamos a ocupar o no lo vayamos a ocupar para supply y otro tema.
+
+ Pero esas dos, primero, esas dos cosas. Bueno, forecast y en segundo lugar el inventario, las políticas de inventario. Quiere decir reorder point. Y esas dos cosas durante las UAT, integrarlas de vuelta a S4HANA. Para mí ese es todo el MVP. Ahora, ¿cómo lo vamos a hacer? Obviamente hay un montón de pasos que tenemos que llevar a cabo para conseguir esas dos cosas. Pero por ejemplo el proceso, yo lo dejaría fuera.
+
+ Entonces, lo que quiero hacer ahora... Perdón Vasi, te interrumpo.
+
+Saul Portillo:
+Cuando hablas del proceso, ¿es el nivel de detalle de las ejecuciones o de los jobs o de las cosas que tenés que ejecutar? O sea, eso es más o menos a lo que te refieres. Al process management. Ah, ya, ya. Al process management. Ok, perfecto.
+
+UNKNOWN_SPEAKER:
+Estoy de acuerdo contigo. Hágalo, por favor.
+
+Bastian Osorio:
+Pero bueno, esto... Solo una idea porque hoy sabemos que va a depender mucho de lo que ellos quieran. Pero el mensaje siempre tiene que ser que todo va a ser abordado pero en su debido tiempo. Que no queremos tampoco que los usuarios estén overwhelmed. ¿Cómo se dice esa palabra? A mí tanto que para inglés ya se me empezó a olvidar cómo se dicen las palabras en español. ¿Saturado? Sí, saturado. ¿También?
+
+ Si tiramos toda la carne en la pared del día uno no van a entender nada.
+
+Saul Portillo:
+No, y también creo que Basti es importante de nombrarles que el Process Management es un proceso que va, pero que de inicio es importante que ellos entiendan el paso a paso, casi que ejecutado de forma manual, de cómo se está llegando el resultado. Por ahí es más fácil vendérselo también, porque el Process Management después de ejecutar un job, pero no sabe lo que está haciendo por detrás. Lo que nosotros necesitamos es que ellos entiendan qué hace cada paso y dónde lo ejecutó y qué ¿A qué aplicación me meto?
+
+
+
+Bastian Osorio:
+Eso. Yo creo que por ahí va el tema. Tú das en el clavo y eso se relaciona con el punto que había mencionado anteriormente del que los usuarios interactúen con la herramienta. O sea, que entiendan de qué se trata esto y que lo sepan ocupar. Entonces, lo que vamos a hacer ahora es ir a los archivos...
+
+Saul Portillo:
+Sí, ahí te queríamos, Basti, justamente estuvimos trabajando en el MVP, ok? Tenemos unas dudas y unas sugerencias, ok? A ver qué opinan al respecto, en cuanto al trabajo del documento. Están justamente en Unit Testing. No, el del MVP, Basti, está en Unit Testing. Separado químicas y MRO.
+
+UNKNOWN_SPEAKER:
+Si, el que estuvimos trabajando es el MRO. El MRO, si quieres abre ese.
+
+Bastian Osorio:
+lo que quiero agregar es los puntos del VRD.
+
+Fiamma Giorgi:
+Ahí a la derecha están, o sea, lo que hicimos fue agregar una columna que dice VRD y tiene el número que se refiere en cuanto a ese paso, digamos. Todavía no está completa. VRD Reference, sí. Todavía no está completa porque hay algunos pasos como, por ejemplo, ejecutar segmentación que por ahí no están directamente relacionados con un punto del VRD pero que son necesarios. Entonces, bueno, esos faltan completar pero el resto están ahí, todos los puntos del VRD.
+
+
+
+Bastian Osorio:
+Está súper bien, está muy buen trabajo. Igual quiero poner acá el VRD para no tener que, digamos, saltar a otro archivo para... O sea, si alguien ve VRD Referendum 2, ya, pero ¿cuál es el 2? No tenés que tocar a otro archivo.
+
+Saul Portillo:
+Eso lo tienes ahí en el de configuration plan.
+
+UNKNOWN_SPEAKER:
+Sí. Está allí. No, es el de arriba.
+
+Saul Portillo:
+El de arriba, el que dice Héctor Pérez. Yo lo abrí por equivocación al otro y después me di cuenta que era... Ayudaste también, acabo de compartir en el chat, que era una de las cosas que la sugerencia que íbamos a comentarte, un archivo que que como que están mucho más a detalle cada paso a paso y ver si, la duda era si, que les parecía necesario llevarlo cada uno de estos puntos a ese nivel de detalle para el script.
+
+ Eso fue algo que hicimos en Diana y vemos bastante bueno que pudiéramos también tener, digamos, a ese nivel de detalle. O sea, esto es como que el general y después ir a uno mucho más detallado, ¿no?
+
+Fiamma Giorgi:
+De todas formas ahí, Ese VRD no tiene todos los puntos. Son solamente los puntos que creíamos que no, que teníamos que revisar de que lo estemos considerando en la configuración. O sea, no están todos, todos, todos.
+
+Bastian Osorio:
+JUAN MANUEL LUCERO. Simplemente para que Pelayo y Pablo estén, digamos, en la misma página, el VRD se llama Business Requirement Algo Design. Document. Pero son los requerimientos, pero como a muy alto nivel. Entonces esto es supply, ¿cierto? Sí, supply. Inventory y esto es demanda.
+
+Saul Portillo:
+Ahí como te dice Fiamma, Basti, lo que pusimos fueron aquellos que no estaban ya implícitos en el proceso regular de demanda y de inventario. Porque hay puntos en el VRD que...
+
+Bastian Osorio:
+Quisiera ponernos todos. Quisiera ponernos todos. Porque nos van a preguntar ya, ¿pero qué puntos están abordando el VRD? Y tenemos que ser capaces de...
+
+Saul Portillo:
+¿dónde puedo encontrar el VRD? El VRD está en el...
+
+Fiamma Giorgi:
+Yo tomé una versión en la carpeta de KPMG que decía Send to Agno. Yo ese es el que estaba viendo.
+
+Fiamma Giorgi:
+Y ahí donde dice send en la primer carpeta. Ese es el que yo estaba. Total y en...
+
+Bastian Osorio:
+Pero este... Ah, ya. En Maru.
+
+Bastian Osorio:
+Entonces, lo que nos faltaría sería Inventory. Está más abajo, creo. Inventory. MRO & Chemicals. Puedo poner otro circuito, pero... Tremendos.
+
+Bastian Osorio:
+Entonces, vamos revisando cada uno de ellos y vamos viendo si es MVP. Ya, forecast, future demand based on historical consumption, maintenance plan, and criticality analysis. Ya, vamos con el que es yes, pero, o sea, criticality analysis no me acuerdo a qué se refería.
+
+Fiamma Giorgi:
+parte de inventory.
+
+Saul Portillo:
+Lo de criticality.
+
+Bastian Osorio:
+Sí, el VD. No, es business criticality, que sí o no, y eso aumenta el service level. Yeah, integrate IVP with S4 HANA, no. Esto no, para el unit testing no vamos a No vamos a estar integrado, entonces no, bueno, acá podemos poner MVP comment. No, directamente acá no. No. MVP. Unit. Testing will have. Will be based on. The analysis approach is to differentiate planned maintenance materials and projects per part from the analysis formula.
+
+ Planned maintenance materials and projects per part. Bueno esto va a estar difícil pero si tiene que estar en el mvb que es el tema de cómo y que la discusión la gran discusión que en realidad el propósito inicial de esta reunión de poder hacer la diferenciación y cómo la vamos a hacer después Library for nomenclature and spare part failure data. Forecast in advance. Provide overridge. Ya, esto es como muy genérico.
+
+ Eso. Ya, esto es forecast básicamente.
+
+UNKNOWN_SPEAKER:
+El sistema debería utilizar la intervención mínima avanzada, ya lo mismo.
+
+Bastian Osorio:
+Lo mismo, sí, Fortress. Esos son los puntos que veíamos que era como el proceso ¿Normal? Acá, ¿cuál es el tema? Dice, the system should consider different demand types in forecasting calculation. For example, historical consumption for corrective maintenance and maintenance plan en Schedule for Preventive. Entonces nosotros, basados en la información que nos ha dado Bignish, ¿qué tenemos?
+
+UNKNOWN_SPEAKER:
+La data.
+
+Saul Portillo:
+Tenemos correctives, correctives de químicos y la parte de realmente tenemos que realizar con él la data de Preventive, porque no son hacia un nivel de material y además no tiene mucho sentido eso para lo que vimos los patrones para
+
+UNKNOWN_SPEAKER:
+generar forecast.
+
+Bastian Osorio:
+¿Pero hacia el futuro te dio planes?
+
+Saul Portillo:
+Sí, dio planes a nivel de material, no a nivel de actividad.
+
+Saul Portillo:
+pero casi nada, el segmento de datos es muy limitado.
+
+Bastian Osorio:
+Eso es lo que vimos en la reunión antes. Sé que no hay mucha información pero es lo que hay es lo mismo cuántas veces se puede reiterar un punto es la colaboración De hecho debe estar bueno para definir cuantos niveles de colaboración necesitan. Esto si es más crítico, new parts.
+
+Saul Portillo:
+Eso lo dejaría con los datos, con los siguientes.
+
+Bastian Osorio:
+Lo que pasa es que si decimos que no podemos agregar nuevos materiales, puede que nos manden... A mí no me gustaría dejarlo en el MVP, pero puede que nos digan y eso, qué onda. O sea que nos obliguen, nos ya esto no, lo de comunicación no, porque para partir no va a haber, la comunicación no va a ser a través de este process management sino que simplemente mirando directamente la herramienta. Estos son Reservation.
+
+ Así que por ahora en esta parte al menos no.
+
+UNKNOWN_SPEAKER:
+La trece sí. La trece sí.
+
+Saul Portillo:
+La trece viene siendo lo mismo. Con los productos que no tienen historia. Está como repitiendo el punto de arriba. Ese no, porque es el que me prestas más.
+
+Bastian Osorio:
+Y PC no, PC no.
+
+Bastian Osorio:
+Esto simplemente activa los particle figures.
+
+UNKNOWN_SPEAKER:
+Ability to integrate work orders as data input.
+
+Bastian Osorio:
+If materials are not included.
+
+Saul Portillo:
+incluido en el Plan de Mantenimiento para la Prevención de Mantenimiento.
+
+Bastian Osorio:
+Y a este lado vamos a... Abonad yes.
+
+Bastian Osorio:
+Yes, you know, I'm going to consider resource planning. Forecast to optimal consumption. Difference in terms of quantities and values by summarizing categories. Yeah, this is super easy. Now, I would add some additional points. As you mentioned, parte del proceso y que tiene que estar. Entonces, 22. Voy a ver cómo lo organizo, pero vamos 1, 2, 3, 4. Y le voy a poner un título. Pero lo primero es el tema de la segmentación.
+
+ O determine cierto para para fmsn y para xyz y hml xyz te refiere al coeficiente de variación correcto y hml es precio high, medium, low y es básicamente, si se integra el precio, una regla, estás sobre esto, toma H.
+
+Saul Portillo:
+Pero eso Basti, no tenemos nada relacionado a precios, ni kifigur, ni data, al día de hoy.
+
+Bastian Osorio:
+Pero la tiene que entregar Vicknesmo.
+
+Saul Portillo:
+Ya, ahora tenemos que pedirsela, en más de precio.
+
+UNKNOWN_SPEAKER:
+También el tema de snapshots.
+
+Saul Portillo:
+Determinar el tipo de introducción a su inventario. Patrones de venta, pero eso tiene que ver con el forecast. Terminar el patrón. Pero eso sí está... Sí, exacto. Está como parte del forecast. O sea, sí, la parte de los patrones ¿Podría haber KPIs?
+
+Bastian Osorio:
+o accuracy? Algunos bien mínimos, o sea, yo creo que va a ser más que nada.
+
+Saul Portillo:
+Te iba a preguntar, porque aquí vamos a medir siendo esto tan, digamos… No, pero bien a alto nivel. Alto nivel, hacerlo a nivel de request. O a qué te refieres con alto nivel. Hacerlo a nivel anual, por ejemplo. Porque si te sacas un accuracy a nivel semanal, no te va a dar nada. Si te sacas uno a nivel mensual, simplemente juntos, sobre todo en la parte de MRO. Y lo que sí puedes poner aquí, Basti, es la parte de alerts.
+
+
+
+UNKNOWN_SPEAKER:
+¿Lo perdimos?
+
+Saul Portillo:
+Sí, creo que lo perdimos. No, estoy acá.
+
+Bastian Osorio:
+Ah, ya. Un momento. Sí. ¿Qué me decías del Accuracy? Del Accuracy, cuando hablas de alto nivel, te refieres a qué nivel.
+
+Saul Portillo:
+O sea, calcula el nivel request. A nivel request.
+
+Bastian Osorio:
+A nivel request.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Saul Portillo:
+Y también pudiéramos pensar, porque a nivel de request, pero siendo a nivel semana, evidentemente eso no va a dar nada. A nivel mensual, posiblemente la certidumbre no sea tan buena, pero de repente tener uno a nivel anual.
+
+Bastian Osorio:
+Sí, pero por eso a nivel request, porque por ahora no sabemos el nivel y tampoco vale la pena discutirlo ahora. Así que a nivel request, comparar. Y podemos hacer el ex post forecast, cuánto hubiese dado, si es que hubiésemos hecho el forecast, etcétera.
+
+UNKNOWN_SPEAKER:
+Perfecto. ¿Y alertas?
+
+Bastian Osorio:
+¿Qué vamos a poner en alertas?
+
+Saul Portillo:
+Alertas podemos poner, por ejemplo, por lo menos algo de KPI pueden ser variaciones. Sí, eso mismo estaba pensando.
+
+Fiamma Giorgi:
+En la parte de inventario menciona algo de alertas.
+
+Bastian Osorio:
+Por ejemplo, voy a poner acá un ejemplo. Tema en variación over 100%. Lo que va a pasar es que van a haber muchos productos que un año no tuvieron consumo y al otro año tuvieron consumo y eso obviamente va a disparar la aparición de la demanda en más de un 100% y nos pueden aparecer cientos de productos que claro por todos lados entonces también yo creo que habría que hacerlo como a nivel request y revisar una vista pero por ejemplo a nivel de categoría de productos y a nivel anual Ok.
+
+ O sea, ahí de nuevo había que trabajar con la data para llegar a un resultado que añada algún valor, porque como tú dices, Abuelo, si te disparan 500 alertas, no hay alerta, nadie va a revisar nada.
+
+UNKNOWN_SPEAKER:
+Claro, claro.
+
+Saul Portillo:
+De acuerdo.
+
+Bastian Osorio:
+Pero para eso tenemos que tener buena data, Abuelo.
+
+Saul Portillo:
+Sí, y hoy en día cuando hablas de categorías, Tampoco hay tantos atributos en los cuales poder trabajar estas categorías. Pero ahí lo vemos, con lo que tenemos yo creo que podemos trabajar algo. Lo importante es mostrarle y a partir de ahí tomar nuevas definiciones.
+
+Bastian Osorio:
+y bueno voy a poner algo que va a ser como el punto a mi cero que es forecast for the next five years a nivel digamos a nivel anual eso es lo que es y ese es el MVP máximo o sea que podamos ver el forecast pero vamos a encontrar cuál es atributo todavía no damos con él pero vamos a encontrar de hecho me acuerdo que bueno por ahí está en creo que en mativa el type que está
+
+Saul Portillo:
+como por tree dónde estaba eso en el archivo de integración lo voy a traer para acá simplemente para que lo tenga mira y de hecho En los datos.
+
+Bastian Osorio:
+acá, esto es mrptype yo tengo una duda ahí, ¿a qué se refiere con mrptype? Que tanto lo mencionan normalmente, lo podemos ver, te voy a dar una definición de chatgbd pero una buena, un buen chatgbd, espérate De hecho, eso lo tenemos cargado en categoría.
+
+Saul Portillo:
+Catalyst, Chemical, Loops, Operation, Operating, Supplies and Spare Parts.
+
+Bastian Osorio:
+Entonces a este nivel, pero anual. Bueno, pero en realidad yo creo que es que no sé si es lo mejor porque yo creo que para MRO tendría que ser Spare Parts. Porque catalizan, catalizan, catalizan.
+
+Saul Portillo:
+Disculpa, también tenemos algo que ellos nos compartieron que está cargado como material family y demuestra que si abrasive, acelerador, activator, no sé qué, adapter, ese es un nivel mucho más agregado que también pudiéramos ver si de repente por allí también tenemos otro.
+
+Bastian Osorio:
+Yo voy a poner Add Product Family.
+
+Saul Portillo:
+Material Family.
+
+Bastian Osorio:
+Material Family. Sorry. Ya, MRP Type. MRP es Material Requirement Planning. Entonces, Material Requirement Planning Type. Es en general, en S4HANA, bueno, en cualquier IRP está la tabla más C. Que digamos llevada a IBP es Location Product. Y cuando una planta o una ubicación recibe demanda de un producto, cómo se satisface esa demanda, está determinado por el RMAP type. Entonces puede ser, por ejemplo, producción.
+
+ O sea, si se recibe demanda de ese producto, ¿cómo se satisface esa demanda? Con producción. O puede ser con, por ejemplo, externo. O sea, tienes que ir a comprarlo. O puede ser con también externo, pero en lugar de ir a comprarlo, ir a buscarlo a otra planta. Pero está bueno revisarlo. Revisémoslo en el chat.
+
+Bastian Osorio:
+es como se repone el material, entonces MRP O sea, pd es mrp. V, v, pb. La demanda se dispara mediante, en este tienes que cargarle un forecast, en este tienes que simplemente si cae cierto valor es por reorder point. ND no hay planning, no hace nada. B1, automatic, pero calcula dinámicamente el reorder point. BB, usa un forecast. B1, bueno pero ahí está.
+
+Saul Portillo:
+Básicamente cómo se planifica el material.
+
+UNKNOWN_SPEAKER:
+Entonces, sí, eso.
+
+Bastian Osorio:
+Ya, pero acá está el M-Tart.
+
+Saul Portillo:
+Este es el campo, dice M-Tart. ¿Y acá qué dice?
+
+Bastian Osorio:
+y dis mm bueno acá tienen no sé si esto será lo mismo debe ser otra cosa yo creo no sé si mrptype porque no suena mrptype esto para mí mstart a ver ¿Cuál es el tipo de material? Material type, ahí te creo. Sí, este es el MRP type. MRP type es material type. Te equivoco. Todo a la pinta.
+
+UNKNOWN_SPEAKER:
+Simple. Catalyst.
+
+Bastian Osorio:
+De hecho, nosotros lo hemos cargado en categorías. Si, ¿no? ¿Está bien?
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Fiamma Giorgi:
+Me parecía que el proceso lo habíamos cargado, ¿no? Si, si, si.
+
+Bastian Osorio:
+Está cargado.
+
+UNKNOWN_SPEAKER:
+¿En categoría?
+
+Bastian Osorio:
+En categoría. Si. Se lo voy a cambiar, ¿no? En material type. Ya. Pero bueno. El material type. Pero este es demasiado alto nivel porque en realidad MRO debería ver acá y solamente en Sparkpad.
+
+Saul Portillo:
+De hecho, químicos es catálisis, catálisis y chemical analytics, y el otro es operation supplies, spare parts y creo que hay otro más, hay tres. Es de los datos que nos compartieron, en total son cinco, es muy alto nivel. ¿Cuáles serían MRO? Tenemos spare parts, tenemos loops, bueno loops es lubricante, eso es químico, separating supplies también eso es químico, es spare parts.
+
+Fiamma Giorgi:
+¿Pero nosotros tenemos cargado…? ¿HSE?
+
+Saul Portillo:
+No sé qué HSE materials.
+
+Bastian Osorio:
+ya pero pero filo si ustedes lo tienen más claro y ahí ustedes saben cuáles son los Y dijimos que el punto cero era... Está perfecto, nos da idea de cómo podemos trabajarlo y vemos de qué manera HSE es Healthy Security Environment Así que tampoco son Spare Parts Acá tengo lo que nos pasaron químicos y catálisis, eso para el químico y después tenemos
+
+Fiamma Giorgi:
+loops, operating supplies and spare parts para esa planta que nos pasaron. Tenemos cinco categorías. Lo de H es eso que estaba ahí, no tenemos.
+
+Bastian Osorio:
+puros spare parts, ¿cierto?
+
+UNKNOWN_SPEAKER:
+para MRO.
+
+Saul Portillo:
+MRO tiene tres clasificaciones, spare parts, spare parts loops y operating supplies.
+
+UNKNOWN_SPEAKER:
+¿Y cómo saben eso?
+
+Bastian Osorio:
+¿Se lo dijo Vignesh?
+
+Fiamma Giorgi:
+Está en la data.
+
+Bastian Osorio:
+Pero, ¿cómo sabes que operating supplies no es químico?
+
+Saul Portillo:
+porque nos los compartió en el maestro de MRO.
+
+Bastian Osorio:
+Bueno, con estos puntos yo creo que ya ustedes lo tienen avanzado. Después lo voy a revisar, pero con estos puntos sería suficiente para hacer el script del MVP.
+
+UNKNOWN_SPEAKER:
+de demanda, sí.
+
+Bastian Osorio:
+Lo tienen ya avanzado, ¿cierto?
+
+Saul Portillo:
+Sí, ahí vas a ir a preguntar lo que te decía, mira, en el chat te compartí un archivo que hicimos en Diana. No sé si quieres que, o queremos tener uno que esté como a nivel general y después uno que esté a nivel detalle de cuáles, de todos los master data, atributo por atributo y de cada paso inclusive con el nombre del job que ejecuta, como que muy muy detallado, ¿no?
+
+Bastian Osorio:
+No, no es necesario tener a nivel tan detallado. Para las UAT obviamente vamos a tener que ir ahí a hacer a nivel más de detalle, pero al menos a este nivel hagamos un script teniendo claro todos los pasos que vamos a hacer, como tú dices, de validación de la data maestra, validación de la data transaccional, después correr y ahí en la validación de la data maestra tenemos que agregar los atributos que vamos a validar.
+
+ Sabemos que no tenemos tantos atributos por ahora y que tenemos pendiente de definir finalmente cuáles van a ser. Pero empezar por ahí. O sea, esto se ve bien. A mí se me demanda, por ejemplo, yo lo veo bien. Perfecto. Pero obviamente tenemos que tener, y lo que estaban haciendo que está súper bueno de de ir agregando puntos, o sea, de ir relacionando los puntos del script con los puntos del VRD. Y si hay puntos adicionales que se me escaparon, obviamente, pero ustedes dicen que son, digamos, quick wins, en el sentido de que son cosas que se pueden ver bien y que no van a representar un problema de la validación.
+
+ Añádalas nomás, dénse esa libertad. Lo que no sigue, obviamente, es el caso contrario, de poner cosas, por ejemplo, no sé, no se me ocurre nada ahora, pero agregar cosas que saben que nos podrían jugar en contra para la aprobación de las pruebas.
+
+Saul Portillo:
+De hecho, Ibasti, te comento, estamos trabajando, por ejemplo, el tema segmentación FMSN, decimos como una especie de key figures calculados y ya lo hacemos de forma automática. Lo que nos queda es ahora terminar de ver esa lógica, afinarla un poquito mejor, pero lo estamos haciendo para que ya el sistema lo haga de una manera automatizada y lo estamos comparando contra lo que ellos nos entregaron.
+
+ Para que eso sea un tema de revisar junto con ellos, para revisar cómo ellos van a, cómo tienen definido esos sistemas y cómo después lo pueden calcular, ¿no?
+
+Bastian Osorio:
+A ver cuál. Claro, sí, para para químicos, para químicos, me acuerdo que lo habíamos visto que supongamos que para químicos todo, todo les da F, FAS, ¿cachai? Obviamente es una segmentación en la cual todos los productos caen en una misma en una misma clasificación, está incorrecto. No lo cambien ahora, sino que durante las pruebas podemos hacer el cambio. O sea, recibimos el input de ello, ¿no? En realidad es necesaria otra segmentación.
+
+ Ya, ¿cuál? ¿Cómo se determina? Y en base a eso vamos ajustando. Pero la idea es que durante las pruebas lleguemos a esa conclusión, no que, digamos, nosotros nos la demos.
+
+UNKNOWN_SPEAKER:
+Perfecto. OK.
+
+Fiamma Giorgi:
+Basti, hay una pregunta en tema de archivo. Porque estábamos viendo como que hay varios archivos de Supply, Drillion también lo separaron en dos, nosotros lo estábamos separando también en dos, ¿cómo lo abordamos? ¿Cómo crees que podríamos hacerlo?
+
+Bastian Osorio:
+Porque está como todo medio disperso. Sí, vamos a verlo bien. A ver... Yo siento que el archivo de configuración está muy caótico. Al archivo de configuración, a este le sacaría estos puntos, los del BRD... Todo el vrdi se lo sacaría pero no quisiera igual perder por si a alguien le resulta útil preferiría duplicar el archivo y si os hay que realmente ordenar esto porque tenemos este status pero también tenemos este plan y después está otro plan después están los open points que acá los tiene los tiene Héctor después están los y después te dan los que...
+
+ O sea, realmente este archivo sí que está caótico. Ya, pero ahí lo vamos a ordenar, este archivo. Y hay dos configuration plan. Sí, tiene que haber dos configuration plan, uno para drilling y otro para... Para MRO en chemicals.
+
+Saul Portillo:
+Creo que todos están juntos. Los vamos a separar.
+
+Bastian Osorio:
+Los vamos a separar.
+
+Saul Portillo:
+Y en unit testing, mira, lo que te dice los archivos están allí porque están separados el supply por química, el collecting and preventive, drilling...
+
+Bastian Osorio:
+Pero entonces deberían haber, deberían haber, o sea, seis, ¿cierto? Tres, tres para, o sea, uno para demanda, ¿no? Pues deberían haber cuatro, no, seis, ten razón, uno para demanda, uno para inventario y uno para supply, para químicos, y eso uno para químicos y tres para MRO. Y después si quieres tres más para... Bueno, Turnaround, no, no sé.
+
+Saul Portillo:
+Pero, ¿qué dices? ¿Que lo hacemos? ¿Hacemos un archivo por módulos?
+
+Bastian Osorio:
+Es un archivo de demanda. Espérate, ahora que leo Turnaround nos faltó eso en el MVP. Disculpen el desorden, pero si no lo pongo ahora se me va a olvidar. Tranquilo. Entonces el punto... Ya, segmentación. Forecast, vamos a ponerlo acá a 3. Ahí, ¿te ha pasado algo de turnaround? ¿Lo puedes mostrar? Tenemos que trabajarlo, a ver, mira.
+
+Saul Portillo:
+Aquí en la mano. Voy a mostrar. Nos pasó esto, nos pasó... ...Matthews. Estos que están aquí. ¿Qué tipo de categorías tiene? Todas estas categorías, pero no sé si tenemos que valiar si está repitiendo alguno o no.
+
+Bastian Osorio:
+¿Es un forecast?
+
+Saul Portillo:
+esos son los materiales los materiales nos entregó fue una historia consumption history a nivel de material y ubicación no hay ya tenemos otra vez este tema de los momentos que algo tenemos que terminar de hablar con ellos pero esto
+
+Bastian Osorio:
+no se ve nada casi como explícitamente turnaround porque no por cost quiere decir eso por orden? Ellos lo compartieron por aquí.
+
+Saul Portillo:
+Déjame ver que lo tengo en el otro archivo. Lo buscamos y lo El tema del Movement Type, tuvimos esa duda.
+
+Fiamma Giorgi:
+No, era en químicos.
+
+Saul Portillo:
+Es esto, pero de hecho nosotros estuvimos trabajando y le preguntamos a Raúl porque hay cosas que son, los R son como devoluciones y esto es los consumos y no todos son son reparaciones, son otra serie de cosas y de hecho nos dio que no consideramos prácticamente las devoluciones hasta que aclaramos con Mainnet Generaciones.
+
+Bastian Osorio:
+¿A este punto no somos capaces de diferenciar por Turnaround?
+
+UNKNOWN_SPEAKER:
+No.
+
+Bastian Osorio:
+¿Entonces cómo sabemos que es Turnaround?
+
+Saul Portillo:
+Porque el archivo está separado.
+
+Fiamma Giorgi:
+Porque no nos pasaron con ese nombre.
+
+Saul Portillo:
+nombre, le mandamos un archivo en blanco y que nos compartiera la data.
+
+UNKNOWN_SPEAKER:
+Y en las Reservations.
+
+Saul Portillo:
+No, no, aquí mismo. No, no, porque el que te estaba mostrando era de químicos.
+
+Bastian Osorio:
+En la reservación está. Y qué fechas, pero en 2022. Es que yo no soy capaz de acá de 2029, el 22, el 29. Bueno, del 2025 para adelante debe ser. A ver, pon 2025. Bueno, si están todas esas reservaciones para el Turnaround, supongo que ahí está el Turnaround.
+
+Saul Portillo:
+Sí, lo que podemos es trabajarlo y ver qué nos da.
+
+Bastian Osorio:
+Sería bueno poder conseguir atribuir adicionales, así como orden, a ver si muchos están a nivel de orden como para poder agregar.
+
+Saul Portillo:
+No, este es justamente los puntos que tenemos abiertos porque yo le pedía a Raúl que lo revisara con ellos y al final como que revisó y me dijo, mira, considera los dos en uno, porque una de las dudas que teníamos, esto nos pasaba en químicos, que las devoluciones, por ejemplo, tú tenías un consumo en abril y tenías una devolución en entonces tu histórico en julio te daba negativo, porque es una devolución.
+
+ Y justamente la duda era cómo netean eso, cómo al final, porque estás considerando un consumo que después hiciste como una especie de devolución, o no sé realmente qué es lo que estás haciendo allí con eso.
+
+Bastian Osorio:
+Déjame proyectar un poco, Saúl, y simplemente para preguntarle al chat GVT, al ZapExpert, cómo pudiésemos agregar la data Agotay. I want to aggregate preservations, which fields can I Vamos a ver qué me dicen. Hay caleta, hay cosas que se pueden ocupar. Ya, bueno. Movement. Podría ser. Storage, cost center también sería un buen. Una buena agregación. Order Number también porque el número de orden te va a agregar un montón de atributos.
+
+ Entonces puedes acá de inmediato y te voy a pasar esta tabla, pedirle las reservaciones por alguno de estos atributos y así empezar a agregar y poder ver consumo a nivel agregado porque en realidad tienes el producto Y si quieres ver más arriba que eso, porque en el fondo queremos tener un forecast a nivel de turnaround a nivel de años. Entonces, es como que lo miro a nivel de ubicación, a nivel de material y nada más.
+
+
+
+Saul Portillo:
+Entonces necesitamos algo más, ¿cachai? Entiendo, sí.
+
+Bastian Osorio:
+Voy a poner la tabla en el chat.
+
+UNKNOWN_SPEAKER:
+Basta de dudas, tenemos que saltar a la Daily.
+
+Saul Portillo:
+Te quería mostrar algo muy rápido que nos ayudaría también a alinearnos con lo que les dijimos a Vivek. Algo muy sencillo con el tema de la consola.
+
+Bastian Osorio:
+Acá sí tengo interés con lo que pedís porque por ejemplo hay, no sé, David Trading Eso no lo pasaron, el debit and credit indicator. El primero que dije no está bueno para nada fue el que pasaron. Ya, pero ahí vamos viendo.
+
+Saul Portillo:
+Ya, ¿qué me ibas a decir? Muy rapidito, para poder ir a la ley. El tema de las consolidaciones de la demanda, ¿ok? Tenemos, te muestro rapidito. Lo tengo aquí esquematizado. Lo estábamos revisando con un muchacho acá y acá. Nosotros tenemos, si hablo de demanda, tenemos corrective de spare parts, preventive y lo pongo en verde y en amarillo porque los amarillos son los preventivos, turnaround in preventive y corrective de ¿Ok?
+
+ Entendemos que para todo esto hacemos forecast, llegamos a una demanda y la consolidación debería ser corrective con corrective, o sea, chemicals con spare parts y consolidas los dos de preventive, ¿no? Spare parts and turnaround. Llevando a esto, un consenso de demand de preventive más turnaround. Y un Consensus Demand de Chemical Mass Spare Parts.
+
+Bastian Osorio:
+¿Correcto? Un Independent Demand.
+
+Saul Portillo:
+Exacto, que está aquí al lado. Un Independent Demand, que este es el almacenado, y un Consensus Demand, que este es el almacenado. ¿Qué estoy haciendo aquí?
+
+UNKNOWN_SPEAKER:
+¿no?
+
+Saul Portillo:
+Entendemos que viene siendo así, ¿no? Pero nosotros al final nunca terminamos, porque vimos en uno de los puntos, si mal no recuerdo si creo que fue del del BPD, que se habla de unificar la demanda de corrective spare parts con la demanda de preventive spare
+
+UNKNOWN_SPEAKER:
+parts. No, pero...
+
+Fiamma Giorgi:
+Habla de una consolidate demand, dice, en una parte del PIB.
+
+Bastian Osorio:
+No, no se preocupen de Tampoco se toma muy en serio el biblio. Yo quizá lo escribí yo y a lo que me refiero es que al final las dos demandas tienen que cubrirse en el caso de que existamos. Porque por ejemplo para spare parts entendemos que en la mayoría de los casos no va a haber preventive. En la mayoría de los casos no va a haber ninguno de los dos.
+
+Saul Portillo:
+Ok, pero entonces viene siendo así como lo tenemos la estructura, no? Tiene los dos de correctives, los dos de preventives y si vamos al caso, se unifica los dos de preventives y los dos de correctives.
+
+Bastian Osorio:
+Pero para químicos y para químicos, ustedes planean separarlos?
+
+Hector Palacios:
+No, no, no.
+
+Bastian Osorio:
+Para químicos todo junto. Para químicos todo junto y va a ir a nivel de WIC, PROT, LOC, ¿Cost? Si, pues si teníamos el Equipment.
+
+Saul Portillo:
+Tenemos el Equipment en Químicos, ¿cierto? Si, aquí está. Mirá, en Químicos está a nivel de... No, el que tenemos el equipo es en Spare Parts. En Químicos está a nivel WIP Prologue, nada más.
+
+Bastian Osorio:
+Ah, entonces, independiente y más, ¿no?
+
+UNKNOWN_SPEAKER:
+Claro, entonces, estos dos...
+
+Bastian Osorio:
+¿Cómo?
+
+UNKNOWN_SPEAKER:
+Estos dos...
+
+Hector Palacios:
+No, no, no, no. Tiene que ir a nivel de cliente también porque está el Cost Center, acuérdate.
+
+Bastian Osorio:
+Pero no tenemos la información ¿Tienes el cosenter?
+
+UNKNOWN_SPEAKER:
+No.
+
+Hector Palacios:
+El cosenter va por Functional Location, que equipo.
+
+Saul Portillo:
+¿Y tiene el Functional Location? No lo pasaron.
+
+Hector Palacios:
+La tienes que pedir.
+
+Bastian Osorio:
+Ahora que me acordé.
+
+Hector Palacios:
+Me acordé de esa cuestión. Fue un punto necesario en la reunión porque al final los planificadores se reparten por cosenter. De momento para estrenar la demo, Saul, no me preocupo tanto. Para mostrarle algo. Pero sí, entre medio, hay que pedir esto.
+
+Bastian Osorio:
+Para mostrarle que igual podemos llegar a ese nivel.
+
+Hector Palacios:
+¿Qué demo si el Unit Testing del 20 no es una demo?
+
+Bastian Osorio:
+¿No deberíamos tener eso ya para esa fecha?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Bastian Osorio:
+Mejor déjale un whatsapp. La próxima semana pídeselo a Bignesh. Que te dé el Equipment o Functional Location con el Cost Center. Esto debe ser a nivel Quick, Broad, Low, Cost. Y el cliente es o Equipo o Functional Location con su Cost Center. Perfecto.
+
+Saul Portillo:
+Y el tema de Preventives, el Preventive Purpose está a nivel de Weak Threat Lock Cost y el Turnaround está a nivel de Weak Threat Lock.
+
+Bastian Osorio:
+Turnaround está bien porque son puras Reservations, como vimos, así que tiene que ser Weak Threat Lock.
+
+UNKNOWN_SPEAKER:
+Turnaround son puras Reservations.
+
+Saul Portillo:
+Ya, pero nos generamos Forecast en Turnaround.
+
+Bastian Osorio:
+No, no hay forecast.
+
+UNKNOWN_SPEAKER:
+Acá está tu forecast.
+
+Bastian Osorio:
+Claro, está todo el futuro.
+
+Saul Portillo:
+Y en esto lo que hacemos es cargarlo como en el configur de forecast de demanda, ¿no? O lo vamos a cargar ya en supply para la parte de material reservation.
+
+Bastian Osorio:
+No, digamos si ellos quieren hacer alguna, igual dejemos la opción de que hagan algún ajuste, pero tiene que haber un, digamos, No, no, lo tenemos, pero la duda era si lo cargábamos allí.
+
+Saul Portillo:
+Perfecto. Y esto, entonces, los dos de turnaround, el de turnaround más el preventive, se suma en el consensus demand. Y esto está a nivel de, realmente, está a nivel de WIP prologue, que se carga, no a nivel de WIP prologue cost. Y el corrective, chemical mass per parts, que es la suma, y esto sería el dependent demand y esto sería el consensus demand. Ya, perfecto. Eso es lo que queríamos revisar con ustedes y aclarar, y ahí nos vamos a alinear con Vivex porque, por ejemplo, aquí teníamos duplicado este XFiber y tenemos dos distintos y nos está pasando algunas cosas que tenemos que terminar de unificar, porque él ha estado trabajando en la otra planearia y nosotros ya habíamos dejado en ese periódico.
+
+ La cuestión es revisarlo con él y alinearnos.
+
+UNKNOWN_SPEAKER:
+Pero perfecto.
+
+Saul Portillo:
+Eso sería. Esa era la duda principal con este tema de la conciliación. No, la deli fue. Si al final somos nosotros.
+
+Hector Palacios:
+Y aquí no hay tanto que hablar, así que le dije por el grupo que no la tuviéramos.
+
+Bastian Osorio:
+Estaba ahí Reinaldo.
+
+Hector Palacios:
+Dejo escribirle. Cuando me junté y yo no estaba. Cuando me uní y yo no estaba.
+
+Bastian Osorio:
+¿Te sumás?
+
+UNKNOWN_SPEAKER:
+Ah, ya.
+
+Hector Palacios:
+Me sumé recién.
+
+UNKNOWN_SPEAKER:
+No estaba.
+
+Bastian Osorio:
+Lo que tenemos que, ya entonces, ya que estamos acá en la Daily, lo que tenemos que ordenarnos es con los archivos. Ahí tienes razón, Saúl, me llamó la atención. No tenemos a Saúl conmigo, pero tenemos la cagada con los archivos. ¿Con los archivos?
+
+Saul Portillo:
+No, pero ¿por qué vos no vas contigo por eso?
+
+Hector Palacios:
+Está bien, está bien. No, porque... Continúa Jai, Saúl. No tenés que enojarte, por favor.
+
+Bastian Osorio:
+Mira el Configuration File. Mira, tenemos Control Sheet. Esto la creaste tú. Ya, ya, ya. Eso es lo que estoy trabajando yo ahora.
+
+Hector Palacios:
+Es para mejorar las cosas, no es para echar la verdad.
+
+Bastian Osorio:
+Sí, sí, sí, sí. Después Timeline. Después tenemos Status. Después Configuration Plan. Otro Configuration Plan. Sí, yo lo voy a mejorar. VRD, VRD Inventory, VRD Supply, VRD Drilling, Key Figures, Master Data, Copy Operator, Forecast Models, Snapshots, Templates, Views, Forecasts, ah ya...
+
+Hector Palacios:
+Podemos separarlo pero hagamos lo siguiente, mira déjame compartir pantalla para que empecemos a consolidar en este de acá. Este es el que le mostré ayer rápidamente en la Daily, la gracia es que Aquí vamos a mantener todos los puntos abiertos, tanto sean preguntas como actividades, pero que sean más específicas, porque no vamos a llenar el planner de toda la actividad específica, sino que vamos a ir a hacer seguimiento quizá a alto nivel.
+
+ Entonces va a haber una tarjeta, por ejemplo, de no sé, prueba unitaria, pero aquí va a estar el nivel de detalle de todo lo que tenemos que hacer en las pruebas unitarias, en el Excel, porque es mucho más fácil llevarlo así. Y acá lo que puse son simplemente filtros, que es opcional si ustedes lo quieren usar o no. A mí me hace más fácil. Pero si no pueden navegar simplemente buscando acá el negocio, el proceso, quién es el responsable, etcétera.
+
+ Pero aquí, Saúl, si tú haces clic ahí, se te va a filtrar automáticamente lo que estás trabajando tú. Esa es la agracia. Y si quieres resetear los filtros, ahí está el reset. Y si quieres ver en qué reuniones tenemos que trabajar cada cosa, bueno, acá. Entonces, lo importante acá está uno del status, lo rojo, o sea, este rojo de acá es lo que está pendiente. El color de la celda es la prioridad, ¿vale?
+
+ Todas estas cosas tenemos que ir resolviendo las sesiones. ¿En cuál sesión? Bueno, aquí tenemos una columna que te va diciendo en qué sesión. En una sesión con AdNoc, en una de integración interna, en una de diseño, ahí conmigo con Basti o con alguno de los dos, en alguna sesión técnica de AdNoc, de esas de integración, etc. Entonces, más que nada para saber, esta es nuestra duda, ¿dónde la vamos a resolver?
+
+ ¿Con SAP? ¿Con AdNoc? Ahí tenemos que ordenarlo. Entonces, cuando lleguemos a esas reuniones, por ejemplo, llegamos a la reunión de Zap y es cosa simple de hacer clic ahí y sabemos todas las cosas que tenemos que discutir con Zap. Vamos a la reunión de KPMG, lo mismo, solamente que no hay nada de KPMG, pero vamos a una de AdDoc y también van a estar todas las cosas que sabemos que tenemos que discutir con AdDoc, ¿vale?
+
+ Esa es la idea que quiero lograr. Y los filtros, bueno, es solamente para ayudar, digamos, trabajando esto. Entonces esto, lo que tenemos que hacer, es por eso que le estaba preguntando ayer a ustedes cuáles son los puntos abiertos, cuáles son las preguntas que tienen hoy en día. Esas son las cosas que tenemos que transformar. Del VRD, si es que hay alguna cosa de aquí, porque todo esto lo revisaron ya, ¿no?
+
+ Y acá entiendo que incluso pusieron un comentario y todo. Tenemos que clasificar esto, a ver si hay preguntas adicionales o si es que simplemente lo asociamos al backlog de configuración. Una vez que cerramos un punto abierto y lo dejamos como listo para ejecutar y lo movemos al backlog de configuración y ahí lo vamos priorizando y sabemos qué cosas tenemos que configurar. Pero es más que nada para mantener un orden en las cosas que vamos haciendo.
+
+ Entonces, este documento de OpenPoints tiene que comer el tema del VRD. Lo tenemos que consolidar en algún lado. Entonces estas tres van a desaparecer o cuatro que veo por acá. Y las demás estas son de, esto es más de como decir documentar, si es configuración y documentación básicamente, entonces todo esto si quizás podemos llevar la otra hoja y tener en una hoja los puntos abiertos y en otra hoja lo podemos tener toda la parte de documentación, la gracia es que de esta hoja va a ser como un dispatcher porque puntos que tenemos dudas los vamos a resolver y una vez que se resuelvan, bueno, lo pateamos al archivo de configuración y ahí lo empezamos a hacer el track.
+
+ Lo resolvemos, lo pateamos al archivo de SAGAR de integración, entonces SAGAR se lo lleva y lo empieza a trabajar, pero este es como el punto inicial, donde una vez que tengamos la respuesta, sabemos hacia dónde enviarlo, en el flujo de trabajo. Entonces, esa es la idea. Todo lo que está por aquí, Control-Shift, esto la verdad que lo voy a... Es por un tema de macro, esto al final va a estar oculto, así que no se preocupen por esto.
+
+ Esto de Status Plan, voy a revisar en qué lo transformamos, pero se parece mucho a lo que deberíamos tener en el planner, en realidad, como alto nivel. Y esto de configuration plan también lo voy a revisar a ver, porque creo que esto lo podemos simplificar. Así que eso, ¿empiezan a trabajar en esta hoja? Creo que tú ya lo hiciste, Saul.
+
+Saul Portillo:
+De hecho está bueno porque justamente la línea que tenemos de keyfigures, ahí fue donde justamente nos dimos cuenta que estábamos duplicando cosas. Empezamos a mapear justamente este tema de consolidación de la demanda. Está súper bueno porque aquí nos podemos alinear y evitar duplicidad o que tenga correcto alineamiento del proceso. Y aparte, bueno, acordarnos todas las cosas que vamos revisando en distintas sesiones.
+
+
+
+Hector Palacios:
+Sí, y este archivo hace la base de nuestra discusión. O sea, cuando lleguemos a la reunión de configuración, bueno, agarramos acá y vemos qué está asociado a la de configuración interna y, bueno, nos ponemos a revisar esos puntos. Eso básicamente, vamos asignando prioridades, lo que sea, pero eso es lo que al menos quiero lograr con este archivo. Yo me voy a poner a trabajar en esto y ahora el tema de las carpetas, yo también creo que están un poco desordenadas, así que ahí quizás podemos apoyarnos de Pelayo o de Pablo, que nos empiecen a ayudar a ordenar un poco, porque ahí tenemos un desorden gigante y si hay que separar cosas que son de supply y cosas que son de man inventario, hasta ahora Ahora lo que vi, se veía re feo, así que también tenemos que
+
+Bastian Osorio:
+ordenar eso.
+
+Hector Palacios:
+¿A qué cosas te refieres específicamente? A la carpeta, por ejemplo, si al primer nivel llegamos a Realize. Y bueno, ya viste que hay archivos por fuera acá. Entramos a Realize, entramos a la de configuración y está todo mezclado, lo de supply no existe.
+
+Saul Portillo:
+Pero esos examples... Y tenemos el uso.
+
+Hector Palacios:
+Sí, esto está bueno, pero hay que duplicarlo para supply. Entonces el realize una carpeta de mando inventario, otra de supply, otra de drilling, ¿cachai? Tenemos que tener todo junto en algún lugar, pero... Pero nada, o sea, los archivos que le aplican a todos...
+
+Bastian Osorio:
+Pero definamos ahora que tenemos 10 minutos qué archivos vamos a necesitar, porque estamos llenando de archivos y yo no sé qué. Por ejemplo, example, configuration, plan IVP, hacer eso de Acero Guatemala, ¿cierto? Sí. Ya.
+
+Saul Portillo:
+Ese ya podríamos borrarlo, porque me imagino que a partir de ahí fue que agarramos y empezamos a trabajar el otro archivo.
+
+Bastian Osorio:
+Ya, y ese también está, Supply, Vivec, bueno, a mí me parece que el trabajo que hicieron ahí tomando como base Acero Guatemala está súper bueno, así que sería bueno que Vivec lo ocupe, pero está en español pero bueno lo ponía en traducción.
+
+Hector Palacios:
+Pero ese configuration plan que es?
+
+Bastian Osorio:
+el archivo que estaba mostrando recién yo?
+
+Hector Palacios:
+no es el script, el script está en unitesting.
+
+Fiamma Giorgi:
+No, no, pero es un ejemplo de script?
+
+Bastian Osorio:
+o qué es?
+
+Saul Portillo:
+No, yo creo que es un ejemplo de configuración. Hay un ejemplo en ese archivo que ya tenemos. Están todos los analytics, stories, snapshots, todo lo que vayas configurando, tributos, lo mismo que tenemos ya nosotros.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Hector Palacios:
+Pero más feo, bastante más feo.
+
+UNKNOWN_SPEAKER:
+Dale, lo eliminamos entonces.
+
+Hector Palacios:
+Naming conventions, esto si dejemoslo afuera porque importa.
+
+UNKNOWN_SPEAKER:
+¿Esto de acá? Me parece que es un VPD viejo.
+
+Saul Portillo:
+Una versión de VPD me parece.
+
+Hector Palacios:
+Ya no, entonces mira tranqui, esto dejémoslo, yo con Pablo lo revisamos, con Pelayo, ellos nos pueden ayudar a revisar y ver qué hay adentro y ahí decidimos si es que lo usamos o no, pero no creo que deberíamos dedicarle más tiempo a eso.
+
+Saul Portillo:
+Nosotros estamos poniendo ahí en la data una carpeta para todo lo que es los datos que nos están mandando con distintas versiones, que es la que está de primero, para que sepan.
+
+Hector Palacios:
+Lo único es que cuando reordenemos esta carpeta porque va a haber una de demanda de inventario, otra de supply, otra de drilling, es que se van a perder un poco los links que tenían, entonces para que lo sepan. No es que borramos los archivos, sino que los cambiamos, los ordenamos, básicamente. Dale, y este archivo también, Saúl, te va a servir para que le empieces a asignar tarea a Fiamma o a Pablo o a Pelayo, si vas aplicando, porque aquí hay muchas que están asociadas a ti, y las ponemos, como estás de líder del track, te ponemos a ti directamente, pero si ya ves que alguno te puede ayudar en algo, investigar algo, algo así, empieza a pasar la pelota.
+
+
+
+Saul Portillo:
+Sí, sí. De hecho, actualmente lo que estamos haciendo, para el conocimiento de ustedes Basti y Héctor, nos estamos reuniendo constantemente, Fiamma, Pablo y yo. Por ahora Pelayo está tratando de avanzar en el tema de su GoTowers, para que tenga un poquito más de contexto general y le empezamos también ya, lo vamos a empezar a sumar, yo creo que ya creo que la semana que viene, ya deberíamos empezar a sumarlo a las sesiones de trabajo que estamos teniendo y ahí nos alineamos y después trabajamos por separado.
+
+ Esa es la idea. Y tomamos definiciones, definimos cómo lo vamos a trabajar y le explicamos a los chicos para que tengan el contexto completo.
+
+UNKNOWN_SPEAKER:
+Es lo que estamos haciendo.
+
+Saul Portillo:
+Pero estamos reuniendo todos los días, todos los días por lo menos unas tres horas, tres, cuatro horas reunidos.
+
+Hector Palacios:
+Sí, que efectivamente en la daily nosotros no podemos llegar a este nivel, aparte de robo tampoco en un nos va a ayudar a llegar a esos niveles de llevar el seguimiento de cada tarea, configuración, eso siempre va a ser de nuestro equipo de configuración y nosotros a ellos les vamos a mostrar los headers solamente.
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Hector Palacios:
+Igual a KPMG, etcétera. Así que nada, usemos ese archivo y reunámonos si es necesario más seguido, con menos tiempo para revisar si es que vamos teniendo dudas o cómo ir desbloqueando cada cosa y ya. Quizá esa reunión Basti la tenemos que separar un un poco más la reunión que tenemos el lunes a las nueve, pero separarla por track.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Eso voy a hacerlo ahora. Discutámoslo ahora y luego lo vemos. Chicos, pregunta.
+
+Saul Portillo:
+Basti, la reunión que tenías de integración que la movieron y tú la cancelaron, no la vamos a tener hoy, ¿verdad? No, es que no tiene sentido.
+
+Bastian Osorio:
+Vamos a tener una reunión ahora en cinco minutos para ver el tema del storage location, el cambio, y para alinearnos un poco más respecto del track de integración que está un poco desordenado, pero no tiene sentido empezar a seguir hablando de los flujos si es que no tenemos acceso, si no podemos integrar básicamente.
+
+Saul Portillo:
+O sea, vamos a seguir hablando de lo mismo.
+
+UNKNOWN_SPEAKER:
+Ya, ya, perfecto.
+
+Saul Portillo:
+Ok. Hay cualquier cosa, si quieren que me suma a alguna sesión junto con ustedes, me avisan, chicos.
+
+UNKNOWN_SPEAKER:
+Integración, cualquier cosa. Dale.
+
+Saul Portillo:
+con Saga.
+
+Hector Palacios:
+Vale, perfecto. Eso de mi lado. El archivo que les mostré, háganse dueño. Empiecen a subir cosas simplemente y ahí lo van llenando y le vamos haciendo signos luego.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Hector Palacios:
+Perfecto. Vale.
+
+UNKNOWN_SPEAKER:
+Dale, hablamos.
+
+Hector Palacios:
+Que estén bien. Gracias, chicos.
+
+UNKNOWN_SPEAKER:
+Chau.
+
+Bastian Osorio:
+Buen fin de semana.
+
+UNKNOWN_SPEAKER:
+I think that.
+
+Bastian Osorio:
+I haven't seen this one, but I'm not sure about the currency.
+
+Fiamma Giorgi:
+¡Gracias!
+
