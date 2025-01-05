@@ -1,0 +1,966 @@
+Teams Meeting 
+jue, 21 de nov de 2024
+
+0:01 - Conference Room (Conference Room 1 - L48) - Speaker 1 I hope you are aligned on this discussion plan, what we are trying to do, right? Yes. Yeah. Okay. Yes. So, I don't know, should we start from the board? Or let me share my screen and we can put it on Excel sheet and we can put, we can kind of structure something in a slide or something. No, it was more for working. These are some things that are not completely grounded anywhere. So we can use this as a kind of a drawing board and put things together based on what we've understood so that we don't spend a lot of time around but still put a structure which we all can agree to. One thing I just want to before we start and I don't think so. So I know onshore and offshore. I'm just curious that we have this trading point. Then on top of that, upshot and But they are still not operational, right?
+
+1:04 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, they are doing some dribbling, so we can get them one more session and solve it.
+
+1:17 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes, yes.
+
+1:18 - Conference Room (Conference Room 1 - L48) - Speaker 3 Can you unscreen my screen?
+
+1:22 - Conference Room (Conference Room 1 - L48) - Speaker 1 They have some plans.
+
+1:27 - Conference Room (Conference Room 1 - L48) - Speaker 3 But still, in case they are forming any computer system, so then provision should be there. So in case in future.
+
+1:55 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, probably only one point probably different between drilling and time, how time So, whatever we discussed probably at the end we can like summarize on whatever we discussed for delay. What components are seen strongly or what components are different from delay or which are specific to time, which we need to consider because most of our discussion was focused on delay. And then we in one of the sessions said that delay and time are exactly similar. It's just that at what stage of the process we do from a time bus to which is the end stage of the weathering where we put in time material. So, it's just The planning process remains same, but then the stage at which the models are required are different and a different team does the planning for that. Correct? That understanding is still there? Yeah, same time. It is completely different. We do not require any configuration.
+
+3:10 - Conference Room (Conference Room 1 - L48) - Speaker 2 They do not have any system. They do not have BOM.
+
+3:15 - Conference Room (Conference Room 1 - L48) - Speaker 1 So far it is not handled by team.
+
+3:18 - Conference Room (Conference Room 1 - L48) - Speaker 2 Not handled by team. No, no, no, it will vary. So, for time, it is like chemicals, maybe.
+
+3:26 - Conference Room (Conference Room 1 - L48) - Speaker 3 I think it is chemicals in the maintenance plant, for example. No, no, no.
+
+3:32 - Conference Room (Conference Room 1 - L48) - Speaker 2 Unless we say like, Like chemicals, it is not knowing the requirement. And then I think that is obvious.
+
+3:40 - Conference Room (Conference Room 1 - L48) - Speaker 3 It is very simple.
+
+3:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 It is not much complicated like, So, you do not want to link with the past attempt?
+
+3:49 - Conference Room (Conference Room 1 - L48) - Speaker 3 Because they don't have that kind of window bar in order to.
+
+3:55 - Conference Room (Conference Room 1 - L48) - Speaker 2 No, the problem if you set up everything, this is not available.
+
+4:00 - Conference Room (Conference Room 1 - L48) - Speaker 1 We don't know when.
+
+4:02 - Conference Room (Conference Room 1 - L48) - Speaker 3 No, if they can, in case they change their way of doing, you can use the read link.
+
+4:09 - Conference Room (Conference Room 1 - L48) - Speaker 2 No, better the simplified option. Anyhow, the read link option is there. Otherwise, what we can do? We provide a simple option.
+
+4:20 - Conference Room (Conference Room 1 - L48) - Speaker 3 Let's think of it how they do it. They don't have any setup.
+
+4:26 - Conference Room (Conference Room 1 - L48) - Speaker 1 So in case there's some time we can follow up and that way that's what we can do. Let's follow up. Then we'll have details.
+
+4:37 - Unidentified Speaker So right now we'll focus on drilling only for.
+
+4:41 - Conference Room (Conference Room 1 - L48) - Speaker 1 The file and file opens from our previous discussion. So, for us, from a planning perspective, bar charts is the starting point, right? So, when we say, let me share my screen. So, what we understood is that bar chart is where you have the well-planned. This is what we discussed, right? This is the first input for our plan and this is coming from DVC system.
+
+5:13 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, I just wanted to put some content here.
+
+5:27 - Conference Room (Conference Room 1 - L48) - Speaker 1 Just a minute.
+
+5:37 - Unidentified Speaker Yeah. Let me save this.
+
+5:55 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, basically let's start with one console. So, you have this DWS system. Let's put this system here. We call it DWS. So, DWS system provides us the welcome. So, what we get from here is the well plan. This well plan we will integrate with S4M which means sorry to IVP. So IVP will get this well plan as input. This will get added to the IVP. So here the fields what we will have is on high level is the field then the well type and well-numbered and the completion code. So, is this understanding correct? This is the only system we will be talking to in terms of getting the well-planned as the first piece of information.
+
+7:01 - Conference Room (Conference Room 1 - L48) - Speaker 2 In case if database is not available, there is a provision for upload Excel also.
+
+7:08 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes, yes. So, essentially idea is that you will create a template. And the template will have the required fields if you like, Right now we are just talking about high level, but we are putting a path that you will have data in one of the system. Now it's DWS for well-planned. If the data is available, then DWS. And what we are saying is the same for onshore and offshore, right? Which means we can integrate with DWS system and put data directly into RTP, which means the well-planned is always in sync with DWS. Can we say that? This is something you are looking forward for. We understand there are other systems as well. Now, what all other systems are there and do we need to care about any other system other than DWS from an IBP perspective?
+
+7:59 - Unidentified Speaker Well-planned.
+
+8:00 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, if we are able to get all the information from DWS for well-planned, then we will have five-year well-planned. Now when we say well-planned, there are two challenges when it comes to well-planned. At what level do you do the well-planned? So, from a primary differentiation perspective, field well-type and the completion code is the key link which defines what is the well-type.
+
+8:28 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, for example, if you look at well-planned, we have well-idx. Yeah, so this is the well-planned, right? It's not showing this itself. I confirmed with the IT team. So they have internal ID.
+
+8:41 - Unidentified Speaker Internal ID?
+
+8:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, well ID. Okay.
+
+8:44 - Conference Room (Conference Room 1 - L48) - Speaker 2 The problem here, so we can see the well number here changes. Okay. So first it will come like planning number. Yeah. Then gradually they'll put like sometime the location number. Okay. Then it will put like the spooder number.
+
+8:58 - Conference Room (Conference Room 1 - L48) - Speaker 1 Okay, so well ID is the key field. That's the key field.
+
+9:02 - Conference Room (Conference Room 1 - L48) - Speaker 2 That's what I understand from the data. Of your IT team, so this key field remains same.
+
+9:08 - Conference Room (Conference Room 1 - L48) - Speaker 1 Same, for one line, once you create a well number, like once you create a plan for 5 years, it will get allocated to well ID, that is the key field which identifies the well, the well number may change, but the well ID will not change. And the well number, so initially you do not have any well number, but then you have temporary well number, then you have final well number.
+
+9:32 - Conference Room (Conference Room 1 - L48) - Speaker 2 they put the location. This location also what is happening, so if they change the slot, the location also will get changed.
+
+9:41 - Conference Room (Conference Room 1 - L48) - Speaker 1 So depending on where the well is getting drilled, if the slot changes, the location changes, the well ID changes.
+
+9:50 - Conference Room (Conference Room 1 - L48) - Speaker 2 Exactly. The key ID will not change.
+
+9:52 - Conference Room (Conference Room 1 - L48) - Speaker 1 So well ID is the key field for us from an IDP perspective that creates a unique record in the original system. So now that, so basically with this, so the key field becomes the well ID and the well ID is there an alphanumeric number, a random number generated by system or is it something, so for IPB the way we were thinking of the well ID is basically a combination of field, well type and the code. So if we say, if I take field, if I take well type, and if I take computation code, and if I concatenate everything, we'll get a unique key which identifies the unique well, because if the field changes, the well type changes, or the computation code changes, then that's not a unique well, right? So is this definition still correct that the So this is what we are talking about, right? There are two more fields which are important for you from a planning perspective what we understand is the rate and so well ID what you say is this and there is well number right. So well number this is this is something will get allocated during the course of planning. Yeah right well number oh yeah this well number this is well location name also well location So, this is the field, this is the well type in that field and what is the completion code and then well number is basically allocated during the planning process. This is what you are saying is can change, right? This has to be done in this and field also? So, this is clear. But well type will be done fixed right? Well type also may be get changed.
+
+12:25 - Conference Room (Conference Room 1 - L48) - Speaker 2 But if well type changes then completion code changes and the form changes.
+
+12:29 - Conference Room (Conference Room 1 - L48) - Speaker 1 So we start with something but with the realization that if you do not have this well type here you have a different well type, large changes. So it is a dynamic for month over month when we expect. So this well ID becomes the key field and then based upon this we will keep on changing the forecast. And it is every type of path changes probably you may have the ordered model certain well type but now the well type has changed which means whatever planning you have done is redundant. It will lead to excess inventory. So this information while changing the well type information should be available so that you can take this decision that okay I am changing the well type.
+
+13:08 - Conference Room (Conference Room 1 - L48) - Speaker 2 That's the reason they ask for the draft. So if they put like the simulation plan.
+
+13:13 - Conference Room (Conference Room 1 - L48) - Speaker 1 So before we actually say that I want to change the well type. Simulate what happens if I change the weld type, what changes in the planning, then this information is important for you to to make sure the decision for weld type changes can be done. So seeing on the phone, I'll be clear on this initial section that we will talk only with DW system and then this DW system will essentially you will have a unique weld ID. This is something which will be provided for DW system but then we will get all this information We looked at this feed, but these are the primary fields that we are looking for. And if we have this information, we can generate a well-planned IPP with this either interface or by upload.
+
+13:58 - Hector Palacios (ADNOC Group D&CS) Correct? All right. Yes. Here's a question. Field, you mentioned that this is the location for us.
+
+14:04 - Unidentified Speaker Is that correct?
+
+14:05 - Conference Room (Conference Room 1 - L48) - Speaker 1 This is the location, yeah. And completion is? Completion code, this is the completion code.
+
+14:10 - Conference Room (Conference Room 1 - L48) - Speaker 2 Field, we can map to the primary as well.
+
+14:14 - Unidentified Speaker OK.
+
+14:14 - Conference Room (Conference Room 1 - L48) - Speaker 1 That's something you would also like to understand. But right now, let's say from a planning perspective, this is where from how we are.
+
+14:23 - Arun Tejnarayan (ADNOC Group D&CS) Sorry, yes, yes. So when we are talking about, you know, that during the course of planning process, this well number, let's say for some instance would be different and at some other instance it would be different. So how will you guys say, you know, track those changes like,
+
+14:42 - Unidentified Speaker How do you do that?
+
+14:44 - Conference Room (Conference Room 1 - L48) - Speaker 2 Actually, if we track the validity, that's fine. So even if the value number gets changed, for us, the value number is not that much.
+
+14:54 - Conference Room (Conference Room 1 - L48) - Speaker 1 So it's an optional field? It's not a key field?
+
+14:58 - Unidentified Speaker Yeah.
+
+14:59 - Conference Room (Conference Room 1 - L48) - Speaker 2 See, for the tooling users, this is the key field. They want to know what is the value name. And so, from a material perspective, It's not the key.
+
+15:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, the format is just a well-typed scheme.
+
+15:14 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, whatever the completion basket is linked, well-type and completion. Yeah.
+
+15:19 - Conference Room (Conference Room 1 - L48) - Speaker 1 Does that answer your question, Arun? Is it clear? The activity is clear, isn't it?
+
+15:24 - Conference Room (Conference Room 1 - L48) - Speaker 2 So now, we have been, so like the, in this case now. Yeah, so this is the field.
+
+15:31 - Conference Room (Conference Room 1 - L48) - Speaker 1 This is the field.
+
+15:33 - Conference Room (Conference Room 1 - L48) - Speaker 2 Then first they will build, if they offer, they build the well-typed platform. Then they have space where they can handle everything and then they can do it. So there are two slots, maybe 6 slots, 8 slots inside the building. So they are saying that the field is fixed now. So the field is like in the map you can see. It is a geographical area. And now the slots are also fixed. Now what will happen, now they plan for the one point producer and which is acceptable slot they will assign. So once the slot assigned, they will get the geographical location for that.
+
+16:19 - Conference Room (Conference Room 1 - L48) - Speaker 1 Specific coordinates.
+
+16:20 - Conference Room (Conference Room 1 - L48) - Speaker 2 Then initially the planning number may be the B, 10, G something like that.
+
+16:26 - Conference Room (Conference Room 1 - L48) - Speaker 1 It will get changed to the slots, geographical number.
+
+16:29 - Conference Room (Conference Room 1 - L48) - Speaker 2 Because it is intriguing to understand all the because basically the now so because it's a printed document the people are using the printed documents So, this PDF will need to print what is the assigned variable. So, that's the reason they put the geographical number in the beginning. Then they'll assign what type of variable it is. It's a well-produced one. Yes. So, then again it will be a dual producer, single producer. So, this is the one. Once the well-produced one is not changed, but the dual and single get changed.
+
+17:29 - Conference Room (Conference Room 1 - L48) - Speaker 1 additional attribute to well type? It is a well type.
+
+17:34 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, well type it will differentiate whether it is a single value or well produced or not. So, let us say well type to?
+
+17:47 - Unidentified Speaker No, well type itself.
+
+17:49 - Conference Room (Conference Room 1 - L48) - Speaker 1 We can go to one example. This is the example. Let me remove the filter.
+
+17:59 - Unidentified Speaker Yeah, it doesn't work.
+
+18:01 - Conference Room (Conference Room 1 - L48) - Speaker 1 Which example you want to take?
+
+18:05 - Conference Room (Conference Room 1 - L48) - Speaker 2 Okay, let's see, EI, WI. Yeah, what is it? What we discussed, right?
+
+18:14 - Conference Room (Conference Room 1 - L48) - Speaker 1 I placed WI, let's take the example of WI.
+
+18:20 - Conference Room (Conference Room 1 - L48) - Speaker 2 And is there a law of that?
+
+18:25 - Conference Room (Conference Room 1 - L48) - Speaker 1 Let's take the field. So, we will discuss this table in Z.
+
+18:32 - Conference Room (Conference Room 1 - L48) - Speaker 2 And this is the tower number, this also fixed. So, now, okay this might change maybe, we do not know. Now, the well number, the ZK134 sir, like the permanent number. So ZK is one permanent number.
+
+18:49 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, 134 is permanent number, why?
+
+18:52 - Conference Room (Conference Room 1 - L48) - Speaker 2 Because already done that, yeah. Complete record. So, you can see there is some code that you put the slash then you get some code. So, these are the coordinate, assigned coordinate. So, let me take this one example.
+
+19:10 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, this is the logistical coordinate of longitude and latitude.
+
+19:14 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, it is assigned and so it is a pending start date is November. So, maybe once we take next month, this will get changed again.
+
+19:25 - Conference Room (Conference Room 1 - L48) - Speaker 1 and this will, they will get the actual well number one. Yeah. It's not in the, that's what he said. It's in the backend, but not in the report which is coming.
+
+19:41 - Unidentified Speaker So, okay.
+
+19:42 - Conference Room (Conference Room 1 - L48) - Speaker 2 That's the key actually. If it's not there, then we have to build some more.
+
+19:50 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, that's the one we started the unique record because other information like well type is also yes and it can change. But that one field will never change.
+
+20:03 - Hector Palacios (ADNOC Group D&CS) I still have the question of what is going to be the plant, the location, the storage location, whatever. Do we have that information there? Because for me it doesn't feel like that is the plant at all.
+
+20:21 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, how do we allocate a S4 HANA field to this? Is it from an S4 HANA perspective? If we say what is the equivalent of it? So, from a plant perspective, I understand you have two company group homes, right? Onshore and offshore. These are the two companies what we consider now. Now, within onshore and offshore, how the definition of plant changes between and how it is associated with the field?
+
+20:48 - Conference Room (Conference Room 1 - L48) - Speaker 3 No, maybe in the same field you will have a gas and for us it is already SRGB, right? In the same field you may have SR as well as JRGB.
+
+21:11 - Conference Room (Conference Room 1 - L48) - Speaker 2 May be more fluid?
+
+21:14 - Conference Room (Conference Room 1 - L48) - Speaker 3 And maybe even from the same oil producer if gas is coming it might go right. Let us take this, I will just put up a simple picture here.
+
+21:26 - Conference Room (Conference Room 1 - L48) - Speaker 1 Now, this is your field, one of the fields and let us say there are 6 wells.
+
+21:33 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, we have to assign the plant. So, that is the key to differentiate.
+
+21:39 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, this is also right, this is the field. So, LZ is one of the fields that we discussed, right? Now, for this field, your plan is to have nine wills, right?
+
+21:55 - Unidentified Speaker Now, so this is relevant.
+
+21:57 - Conference Room (Conference Room 1 - L48) - Speaker 2 Let me call. Okay, do one more thing. Go to parts and tools again.
+
+22:04 - Unidentified Speaker Okay.
+
+22:04 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yeah, some things are which...
+
+22:06 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, go to company. Go to company.
+
+22:10 - Unidentified Speaker Company, I mean. Yeah, company.
+
+22:12 - Conference Room (Conference Room 1 - L48) - Speaker 2 Let me clear the printer.
+
+22:21 - Unidentified Speaker Can you come here? Sure.
+
+22:29 - Conference Room (Conference Room 1 - L48) - Speaker 2 How many joint venture partners That is, we will have around 8 feet.
+
+22:44 - Vignesh Perumal (ADNOC Group D&CS) Offshore I know, offshore I know, I'm talking about onshore. This is the reason, see this is the reason, see I will tell you how the plants are created in the SAP system. Because onshore has one JV partner, they just created one plant called as a JV. But offshore is different. They have multiple, I think some concessions. For one concession, they will have three JV partners. Another, they will have another four. So each for each every combination, they are creating a plant. This is what I know of Abdul Latif. This is how this is done. See in the SAP system, is created more from an accounting perspective. It is not created with the intention of mapping the drilling activities into the organization. That's not how it is done. So in offshore, let me show you one thing. I think this is actually shared with me by Abdul Latif only. Maybe if you see this, you will understand what is happening. Let me, where did I put this? You keep discussing, I'll take that screenshot.
+
+24:29 - Conference Room (Conference Room 1 - L48) - Speaker 2 to one of the field. The field here. Can you put it the right number? HD. HD.
+
+24:44 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, HD. HD. Okay. So let me take 11.
+
+24:52 - Conference Room (Conference Room 1 - L48) - Speaker 2 Select us.
+
+24:54 - Unidentified Speaker Okay.
+
+24:57 - Conference Room (Conference Room 1 - L48) - Speaker 2 Now this is a guesswork, so score, so somewhere we can see ASR, Adnox Soul. Yes, this is the one. Adnox Soul. If Adnox Soul is ASR.
+
+25:19 - Unidentified Speaker Soul is?
+
+25:21 - Conference Room (Conference Room 1 - L48) - Speaker 1 Adnox Soul Rest. Soul Rest. This is we are talking about onshore. Onshore and offshore we have planned ASR plans and JV plans.
+
+25:36 - Unidentified Speaker So first is ASR and second is JV.
+
+25:41 - Vignesh Perumal (ADNOC Group D&CS) Can I share my screen one minute? You explain with this one Abdullathi. Are you able to see my screen? See, if you see this on the top, these are the fields, lower zircum, upper zircum, umshapes. These are the fields. These are the concessions. Now, what is happening probably as per this screenshot, if you see, there will be five plants which is created. That is because that is because yeah, this is my this.
+
+26:26 - Conference Room (Conference Room 1 - L48) - Speaker 2 If you go to the more shift. In the machine we have necessary machine. So the plan could be given to machine is on 401 and necessary is 1402.
+
+26:39 - Unidentified Speaker So why?
+
+26:40 - Conference Room (Conference Room 1 - L48) - Speaker 2 Because this concession combination maybe in future get changed. We don't know that's the reason we already split the plan code based on the field. So there are two field actually in that concession.
+
+26:54 - Unidentified Speaker OK.
+
+26:55 - Vignesh Perumal (ADNOC Group D&CS) Yes, this third one. Yes, yeah. As of now, but for both the plans, the JB partners are the same currently.
+
+27:03 - Unidentified Speaker Yeah, yeah.
+
+27:04 - Conference Room (Conference Room 1 - L48) - Speaker 2 So now we are not bringing partners into this picture actually now. Not so it will. Yeah, now why? Because from field it will go to the partners. And profits and also same way you map here. If you come other side. So the profit center. Yeah, this is the financially also the map that they are sent to profit center on for Nasser and another for ownership.
+
+27:31 - Vignesh Perumal (ADNOC Group D&CS) Yeah, see. Now that they have a same partner. This is for another and whom shape is this one that there is change there.
+
+27:40 - Unidentified Speaker Yeah, 1401.
+
+27:41 - Conference Room (Conference Room 1 - L48) - Speaker 1 So for every partner, You need a plan for profit center.
+
+27:49 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, so they want to monitor the profit center and all the financial transactions. So duplicates are in the red one, which is the offshore.
+
+28:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 is that in identity we need to define a location and for that location we need to plan everything. So the lowest level of planning is located. Now the standard definition of location is a perfect. But then we also define location as something is like if in the case of MRP area, where MRP is a stored location, we can also define a location. But then location, once you define a location, that's the lowest level. Now for us to plan for them, Does the well become location? Or field becomes location? Or plant becomes location? We need to identify a lowest level for which we are doing planning. If you define plant as the location, then all the wells in that plant can be an independent row. So for the plant and well combination, we can say these are all the plants. But the lowest location, if we are not able to identify, then we cannot see. How would you see the data in IP? We need to structure it in a way that normally, let's take maintenance as an example. Maintenance you have plant and for that plant you have all the materials associated with the plant. So we know plant in particular combination how many required are there and then we do planning and we do the supply. Now if we have to do it for drilling, what is the location where we are doing the plan? Is it a plant? Is it a field? Is it a well? It is a well.
+
+29:33 - Unidentified Speaker So every well becomes a location. So, let us take an example because ultimately your execution happens from S-400.
+
+29:44 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, you have a company in S-400. So, let us take Onshore as company, Onshore. Under Onshore, probably you have two plants. I am just taking an example. This is ASR right now when you are procuring material the inventory lies let us take the end in it we want to plan inventory this inventory should be somewhere stored in SAP so inventory lies in plants so you have S log 1 S log let us take an example of two storage locations in both S log 1 S log 2 So, ultimately when you raise the PR, inventory gets stored somewhere here. So, this is the end result of our supply plan. Even when you raise the PR and purchase, you need to do on a plan. On a plan. Now, if I have to use, this is my SAP based structure. Yeah, this is for supply. This is for supply. But then when we are doing planning for drilling, ultimately we will get inventory as per our which means the demand has to be somewhere tied up to these plants.
+
+31:07 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, now the demand for suppose now the particular project. Yeah, so you want to plant the particular well, then you want to make it as a plan as a location or suppose we make it as a location.
+
+31:26 - Conference Room (Conference Room 1 - L48) - Speaker 1 So now this location in IVP.
+
+31:29 - Conference Room (Conference Room 1 - L48) - Speaker 2 This is clear, this is the option I am talking about.
+
+31:33 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, now if I am, so if now let us take an example of field, now demand is at field level, you have well 1, well 2, well 3, right. So, this is field 1, F1. Now, we are below the demand, for this well you are having material 1, material 2, material 3. This is the planning from a material requirement. Perspective for this, well when I need this 3 materials under this field, this is what is required from an execution perspective. Now, when I get this material, the material will go into this one and then from here it will get issued here. So, that is the logical flow of material. Now, so when I do the planning, am I doing planning from, so when it comes to IVP, so I have demand For JV M1, let us take an example, for say JV well 1, M1 is the material plant. So that this is the demand quantity say 10. Now when I supply, I receive stock of 10 material. So when I get a stock, I will get stock of 10. So I have plan for 10, I have stock for 10 and then I will issue 10 to the well. Make this loop complete, I need a location. Now, if I define well as location, but well is not defined as path in SAP.
+
+33:00 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, that's what I was saying.
+
+33:02 - Conference Room (Conference Room 1 - L48) - Speaker 1 You want to put it both sides? Yeah.
+
+33:05 - Conference Room (Conference Room 1 - L48) - Speaker 2 So if I don't define path in S4, then well will keep the inventory. OK. Now, see, for example, whenever we do the SAP brainstorming, the data session, the MRPA, we define MRPA. Then we all decide yes let's move for MRT area. Then implement it. Once we started MRT area, the publicity came. So we cannot do the implementation properly, report properly and so on. So we don't want to end up in the same situation. Now for example, the demand plan, if anything linked to the locator, so if we can do the planning to the well properly and if you want to change the level, if no input, then we can put the prime level
+
+33:50 - Unidentified Speaker as the location.
+
+33:51 - Conference Room (Conference Room 1 - L48) - Speaker 2 For us, this is the best one. If you look at the other side, so if you say the homoshape and it is a prime, then under homoshape, the full complex wells are there. Floating wells are there, well towers are there, so many things, activities are going on.
+
+34:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 Demand is to calculate it, but how will you convert a demand into actual basic plant? That is where we need a plant. Now, if you're not doing this in Excel sheet, you're not having this concept. You put everything in a plant and then issue from that plant. But when we have the integrated ICP environment, we need to define where the plant would be, where you're planning for a plant, you're buying for a plant, and then the plant is getting supplied now. However, if the definition of location is not fixed here, and it is fixed, if it is different from S4L, then we need to, like, tie these things together.
+
+34:53 - Conference Room (Conference Room 1 - L48) - Speaker 2 Now, see, this location should be available in all phases. Like, demand plan is required and supply plan is required. Yeah, it is consistent.
+
+35:01 - Conference Room (Conference Room 1 - L48) - Speaker 1 Then only the plan is appropriate. So then if I define this plan, so then what happens? Is from a demand perspective if I see demand in demand you have a location as JD which is the plant then if location is plant then probably this material which is required for this plant for this wheel it needs to be defined.
+
+35:35 - Conference Room (Conference Room 1 - L48) - Speaker 1 For them to understand, I will put this what we have discussed in the excel sheet so that they can also collaborate. So, there are only two plots for 1 by 1? There are only two. So, on store now let us take one by one. So, Hector and team, can you see my screen?
+
+36:14 - Unidentified Speaker Yeah, let me share my screen.
+
+36:20 - Conference Room (Conference Room 1 - L48) - Speaker 2 Can we go to Excel? Suppose we can map it.
+
+36:32 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes, so that is what I am trying to say. So, let us put exact numbers here. So, you have, so can we put the company code, what is the on-shore company code you are accepting?
+
+36:59 - Vignesh Perumal (ADNOC Group D&CS) Wait, wait, wait. Rahul, let me just show this to you. See, this is onshore, OK? Because I want to put this because I already have the data. Now, if you want to look at it in Excel, I will put this in the Excel sheet for you. Now, the company code is 1200, OK? Yeah. This is for onshore.
+
+37:28 - Unidentified Speaker Yeah.
+
+37:30 - Vignesh Perumal (ADNOC Group D&CS) And this is, you know, I'll put company code and the plant, they will have, you see here, they will have so many plants. Yeah, these are all these are from maintenance plants. I will come to that. So they have basically this. These are the plants actually over here.
+
+37:55 - Conference Room (Conference Room 1 - L48) - Speaker 1 Can you zoom a bit?
+
+37:58 - Unidentified Speaker Sorry. Okay.
+
+37:59 - Vignesh Perumal (ADNOC Group D&CS) These are the plans. Now, here, but for our procurement perspective, PRC stream, generally we use only these two to book the cost. Okay. So, what we do is, now, if I go one step, you know, further, let me do one more thing.
+
+38:27 - Unidentified Speaker If I go to.
+
+38:32 - Conference Room (Conference Room 1 - L48) - Speaker 1 1201 and 1202.
+
+38:36 - Vignesh Perumal (ADNOC Group D&CS) You see over here what happens in the adnok onshore under this 1201 they have. You know so many storage locations which are created. These are all for 1201. You see 1202. They have storage locations that they have so many storage locations. In other words, they are sort of physical location sometimes are modeled as. Story locations or you see a sub Sahil. We have created the organization structure for onshore. Why we have done that? Because they have only one JV partner. So that is why we have one ASR.
+
+39:34 - Conference Room (Conference Room 1 - L48) - Speaker 1 So the storage locations are the fields or the wells?
+
+39:37 - Vignesh Perumal (ADNOC Group D&CS) It could be a combination of multiple things, which is what I am trying to show you over here.
+
+39:43 - Unidentified Speaker Yeah, yeah, this is what they do.
+
+39:46 - Conference Room (Conference Room 1 - L48) - Speaker 1 The reservation is for storage location, right? So if a certain well needs a material, you create a reservation for a Yeah, but in for drilling, we don't segregate by feed.
+
+39:57 - Conference Room (Conference Room 1 - L48) - Speaker 3 It's common for every location, one storage location. So, how do you know that well number one, material number one is required now?
+
+40:06 - Conference Room (Conference Room 1 - L48) - Speaker 1 I need to issue that material to the well number one.
+
+40:11 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, now we don't go by the aggregate or the well requirement, right? We don't go by the well number and keep things segregated.
+
+40:21 - Conference Room (Conference Room 1 - L48) - Speaker 1 So when you create a material determination for goods issue, you define like you create a goods issue against WBS is what they you are directly issuing to them. There is one product, one product to someone. So, selection. So, selection is there. So, it is a question.
+
+40:54 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, you take the mp20 with you. So, it is a question.
+
+40:56 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, you take the mp20 with you. So, it is a question. So, you take the mp20 with you. So, you take the mp20 with you.
+
+41:01 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, you take the mp20 with you.
+
+41:02 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, you take the mp20 with you.
+
+41:13 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, you take the mp20 with you.
+
+41:14 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, you take the mp20 with you For JV, we have one store location for all the wells. All the wells?
+
+41:24 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes, we have selected the main store location for drilling. So we have somewhere in between these wells, somewhere there is a main store location for drilling JV.
+
+41:35 - Conference Room (Conference Room 1 - L48) - Speaker 3 So let's take JV example, you have one store location for JV.
+
+41:39 - Conference Room (Conference Room 1 - L48) - Speaker 1 So you have company called Onshore, under that you have Plant JV, and under that you have one main storage location for DIVI where you receive all the metal from VMI's.
+
+41:53 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yeah. Okay. Differentiate also by location because now one storage location may be in our field. Would be different.
+
+42:02 - Unidentified Speaker Yeah.
+
+42:02 - Conference Room (Conference Room 1 - L48) - Speaker 3 So let's talk about from a metal reservation perspective.
+
+42:06 - Conference Room (Conference Room 1 - L48) - Speaker 1 So you have a storage location, only one storage location for metal reservations.
+
+42:12 - Conference Room (Conference Room 1 - L48) - Speaker 3 For VMI we have several storage locations. Maybe it is in our warehouse, we have different storage locations.
+
+42:20 - Conference Room (Conference Room 1 - L48) - Speaker 1 Okay, so you have one, based on whether the inventory is ad-hoc inventory or VMI inventory, so let's call ad-hoc and let's call VMI. So, GV example, storage location 1, storage location 2, ad-hoc. So, in respect of whichever well gets issued to, you issue from this location. So, you do planning of the material and the material comes to this location. So, it comes here or here, either of it. So, probably you will not have anything coming in and out because you are trying to convey whatever is there.
+
+42:58 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, everything probably would come through VMI, new materials, correct?
+
+43:01 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, but you might have some... Like 95% materials I understand are coming here, 5% are here which means for sake of example, all the materials are... To do the planning here, so I will associate all the wells of JV plant and from the JV plant I will do the material planning, I will do the supply planning and the material will be received in the VMI location and from the VMI location it will get issued to a well through a WBS, unique WBS is assigned to this. Is this the correct process? Yes, that's the on-firm process. Let's talk one by one so that we can take care of that scenario. So, for costing purpose they are putting into WBSN. You are doing the project planning, the cost planning of the well on WBSN, right? So, you allocate budget to WBSN for every well. So, based upon the well structure, design, you do the activity and you say that this is the budget for this well. Now, against this budget, when you procure, do you procure based upon the interest? Or you do only in group among them? So, from a procurement perspective, you can buy irrespective of WBS, which means you're planning for all the bills. So that's why you don't use WBS in the procurement. And you put stock of all the materials in this location. And then when you issue, you also want to make sure that, OK, what was the budget for the WBS? And when I'm issuing, whether I'm consuming more than my plan, consuming less than my plan, based upon a financial budget. Is this a correct understanding? OK. So let's align this with the team on phone so from an identity perspective it comes into adnog inventory. When you receive the material it comes into adnog inventory. So, let me take an example of JV.
+
+44:55 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, we can also issue in either the cross class For the same well. Suppose w1 is for jv, w2 is for asr. From jv itself we can take for asr. So now the jv or asr is dependent on who is drilling the well, right?
+
+45:18 - Conference Room (Conference Room 1 - L48) - Speaker 1 Is Ashok himself drilling the well or someone else is drilling? Jv is drilling the well. What is the definition of jv or asr? Jv is joint venture, right?
+
+45:31 - Conference Room (Conference Room 1 - L48) - Speaker 3 non-profit organization that is building activity for both JV and ASM.
+
+45:36 - Conference Room (Conference Room 1 - L48) - Speaker 1 You are doing for both AdNod and JV. So when you say what is the difference between when it is JV, they are responsible for like one company, one plant is responsible for entire activity or one can have both JV and ASM. Like when it really happens, someone is doing the link. Is either completely without now or with JV. It cannot do. So this either a JV or ASR is responsible for drilling a well. But from a planning perspective, you don't bother. So when you are planning the material, you are planning for material for well. But at the time of planning, do you know whether it is done by JV or done by ASR? Yeah, we have seen in the demand. In the demand. So when you are doing the demand planning, know that this well 1 will be done by JV which means all the material planning for well 1 should happen from JV which means material will be received in JV and material will be issued from JV. Well 2 can be an ASR. You know when the well plan is created that this is ASR which means all the procurement proposals should happen in ASR and the material issue can happen from ASR to well 2.
+
+46:52 - Conference Room (Conference Room 1 - L48) - Speaker 3 Is this correct understanding? And if in case it is not there we can do cost.
+
+46:57 - Conference Room (Conference Room 1 - L48) - Speaker 1 That we will keep it separately, cross plant transfer we will keep it separately.
+
+47:02 - Vignesh Perumal (ADNOC Group D&CS) That is an exception.
+
+47:04 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, from planning perspective, we will plan to have the muttal in JV only, we will plan to eat the muttal in JV. Now, actual scenario for some reason the truck broke down and now you do not have muttal and you have emergency and you pull muttal from some other JV. That is an exception. For the planning would be, the happy path would be this only, right? Yeah, that's the problem. But I have one question. But at the time of planning, let's say you are planning for ASR, okay? And you have extra stock available in JV. So that's an exception, right? That's an exception, no. But at the time of planning, will you transfer the money?
+
+47:53 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, the inventory optimization happens at here.
+
+47:56 - Conference Room (Conference Room 1 - L48) - Speaker 1 In IVP, it will be at the end of the H2O.
+
+48:00 - Conference Room (Conference Room 1 - L48) - Speaker 2 Between onshore and offshore or for only one company?
+
+48:04 - Conference Room (Conference Room 1 - L48) - Speaker 1 Onshore you should be optimizing inventory, offshore you should be optimizing inventory. But onshore and offshore should not be optimizing inventory. They are clear, but they are bound to be.
+
+48:17 - Conference Room (Conference Room 1 - L48) - Speaker 2 But let us see.
+
+48:18 - Conference Room (Conference Room 1 - L48) - Speaker 1 If it is common inventory. If it's not available, let's say, then you go to Google. So just to summarize, what we are discussing is, and we are discussing our current process, so probably we need to ask questions with respect to how we will mark this in RDP. So we have one company called S4hana. I don't know if you are able to see on the board, but then I will just explain you. And if you have questions, we can see. So we have a company board like Onshore. In Onshore, we have two plants. One is a JV plant, and second is a ad hoc plant. This is called ASR. And then within these plants, we have two separate store locations, one for ad hoc inventory and second for VMI inventory. So from a planning perspective, these six objects are relevant for IGP. What they do today is that a field can have multiple wells and each well is assigned to respective plants. Either it can be a JV plant or it can be a KSR plant which is a Randolph plant. And for that plant, the material planning happens, the procurement happens and the inventory creation happens in that respective plant. Once the inventory is available, they create manual material reservation. Goods issue material from that store location to respect to well. That's the happy part. There can be a scenario where from one plant to another plant stop transfer can happen and then goods issue can happen. But the happy part is this. This is where you will have optimized planning happening day in day out. Now the question from for Adnan for Hector and Bastian is. How would we define find this well in S4 HANA in IVP because from an inventory movement this is clear. But from a planning perspective, what location would you prefer? Would you still prefer plant at the location in IVP? Out of question, Hector or Bastian, I hope.
+
+50:33 - Hector Palacios (ADNOC Group D&CS) Hector, Hector, Bastian is not here. Okay, Bastian, Hector, I hope. That you have the storage location so that so the well is not going to be in a storage location that is going to be connected to that. It will be connected to a plant.
+
+50:54 - Arun Tejnarayan (ADNOC Group D&CS) The well is going to be connected to a plant. So like are we planning at the plant level? Like do we consume the stock, collective stock at the plant level? Or we will consume stock at the individual storage locations.
+
+51:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 So the planning happens at the plant level. Within the plant, the stock can be an ad hoc stock and VMI stock, but essentially total stock in the plant is something which is associated with the well. So now, so is this clear from that the planning happens for a plant and a well combination?
+
+51:35 - Unidentified Speaker Understood.
+
+51:35 - Arun Tejnarayan (ADNOC Group D&CS) So, the stock movement will be happening between the storage location and the actual consumption side will be happening at the execution side, right? Not for the planning purpose, right?
+
+51:48 - Conference Room (Conference Room 1 - L48) - Speaker 1 Not for the planning purpose, for the consumption side. And then independent wells for consumption is identified for the separate WBS. Every well has separate WBS. So, that's how we differentiate what is consumed for different wells. Indicator, WPS is a value indicator for actual condoms. So you don't have a free storage location for every well. But then a single storage location can issue to all the wells. But then the differentiation of when the goods issue happens is at WPS-element location level. Understood, Arun and Hector? And make sure we are on the same page. Considering that you are on the phone, probably you are not able to see the screen. So we get it. But then this is how the...
+
+52:43 - Arun Tejnarayan (ADNOC Group D&CS) So now let's use this information. I have a question. Sorry, Rahul. I have a question. Yes, go ahead. So basically, value information we are getting from, let's say, DW system from non-SAP. And then this plant and material information we are getting from S4HANA, for example. Yes. But what is the linkage or the relationship between the transportation, you know, from JV to this well?
+
+53:08 - Conference Room (Conference Room 1 - L48) - Speaker 1 Like, do we have some kind of information or? So, is this available? Is this somewhere available? Can we find the well somewhere in S4?
+
+53:21 - Unidentified Speaker No.
+
+53:21 - Conference Room (Conference Room 1 - L48) - Speaker 1 It's not there in S4? It's there, but we don't know. Define it right?
+
+53:29 - Conference Room (Conference Room 1 - L48) - Speaker 2 Define it and again and WBS also the possibility the one well got two WBS. The planning phase on WBS then on split phase done with WBS.
+
+53:42 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, so what do you see in the work order you define some well now.
+
+53:48 - Conference Room (Conference Room 1 - L48) - Speaker 2 That is the but it is not fully functional.
+
+53:52 - Conference Room (Conference Room 1 - L48) - Speaker 1 Even in the purchase orders we have But it is not fully functional.
+
+53:58 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, because you are going to fix to the output, then it will be more. So, here we are getting all the data from the database.
+
+54:09 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, the well number is not defined in S4, it is only defined in the database. So, Arun, I tell the details of well, the well number 1, 2, 3, these are complete data. The external system. The only information available from a wealth perspective is WA but that's only from a consumption perspective, not from a planning perspective.
+
+54:36 - Vignesh Perumal (ADNOC Group D&CS) But Abdullatif, you should be able to know or say Abdullatif or Ashik, you should be able to know from your future business plan, these number of wealth I am going to probably you know drill for my JV and this number of wells I am going to drill for ASR there should be a there should be a for sure assume that you are going to drill 100 wells then you should know right this may be out of this 100 wells may be 60 are going to be for JV partner.
+
+55:12 - Conference Room (Conference Room 1 - L48) - Speaker 2 It is there in the sheet but not in the assumptions.
+
+55:16 - Unidentified Speaker It is not there in the system yes.
+
+55:19 - Vignesh Perumal (ADNOC Group D&CS) this information not available in SAP. It will not be. This is for sure it will not be available in the SAP system. Yes, yes, it will not be available in the SAP system.
+
+55:31 - Conference Room (Conference Room 1 - L48) - Speaker 1 Is there anything available? We are actually, we are confirming that only WPS is the link in SAP S4 HANA at this point of time. Eventually, after you hand over, you may create a functional location for maintenance. That's what I was saying. Once the first stage of planning you do have a token based element that time when you are initiating the plan. No, no, no, no you know that whether it is JV or ASAP, correct? Yes. So, which means from a planning, from an SAP perspective, you know that this is the plant and this is the well in DWS system. In the DWS system, do you have this plant defined? In a different way. But there is some mapping saying that let's say DWS is Y in SAP. Yes, sir. That's what we did.
+
+56:41 - Conference Room (Conference Room 1 - L48) - Speaker 2 See, one more question for you. For this, all the planning phase, so we have to connect into the material as well. So, once the material and development material, once the material is built, the requirement is built only, we want to talk to, we want to come back and test it.
+
+56:58 - Conference Room (Conference Room 1 - L48) - Speaker 1 Agreed, but then from when we do the planning in IIT, we cannot ignore what is there necessary.
+
+57:04 - Conference Room (Conference Room 1 - L48) - Speaker 2 No, what we want to see, whenever once the material is arrived, once the requirement, this is the requirement material list comes. Then only we want to build the plant and the material number and storage location over there. Then we carry on to SA.
+
+57:18 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, so that you are saying is the supply planning, but IVP is an integral part of it.
+
+57:23 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, the demand is something supply cannot decide.
+
+57:26 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, that is where we are trying to put it together so that we know that okay, you are planning for this plant and you are education for this plant, but the well is something which is outside of SA.
+
+57:37 - Conference Room (Conference Room 1 - L48) - Speaker 2 Before that, we have to depend fully on the data piece.
+
+57:40 - Conference Room (Conference Room 1 - L48) - Speaker 1 So that is one thing, but we cannot ignore because for IPP the primary system is S4 HANA as a sole system. For sure we will integrate with the external system to get additional information, but the primary system still remains S4 HANA for us. So we should be able to identify from planning perspective you are doing planning for this plant or that plant for this well. Yeah, we can call it only plant now. Yes, only plant. One more thing, now that we have the structure, the vendor is sitting somewhere outside, right? Vendor. Let's assume there are more than one vendor. I'll just keep one vendor. You can have more than one vendor. So once we do the planning, once we reach the purchase order on these plants, the first step is vendor to put inventory in VMI. So I'll call it VMI. Location 1. Is this correct? This is something which is in the vendor's physical location. No, so this is the storage location which came from the vendor. But even before the inventory comes here, the inventory is here, right? So the first thing, is this correct? This is not part of your physical area which AdNoc controls. This is a physical area control, then he says that I have m1 stock of 10, m2 stock of 20. I'm just putting a subnum. So this is the false information. Just because we ask for m1 stock 10, stock 20, it will make sure that this is available here.
+
+59:23 - Conference Room (Conference Room 1 - L48) - Speaker 3 And from here, it moves to either this or this.
+
+59:27 - Conference Room (Conference Room 1 - L48) - Speaker 1 Correct? Yes. So the first lead time is to make multiple available here. Time 1 is to be available at VMI. That is the first lead time, which is the moment I read the functions are done, when done with the, so I will, we have started them, right? But one thing, once you raise the partition of them, you are raising it against the front PO to VMI. I understand. So, means you need to choose Yeah, so that's established that when I raise a POPR, it is from a carrier ASR, right? So, but then the stock directly does not come to the plant, it first somewhere stops in between the vendor VMI location, which is so from PU to VMI three time only, right? The question is, does this always happen that you create a release order and then the VMI in the real world.
+
+1:00:30 - Conference Room (Conference Room 1 - L48) - Speaker 2 But sometimes it's like we just let them. And so the sixth month should be the Vendor Real World or AdNord kind of real world.
+
+1:00:44 - Conference Room (Conference Room 1 - L48) - Speaker 1 So this may be that, so Lead Time 2 can be, let me clarify this. So this is the actual lead time material creation like he will use all his manufacturing processes to make sure that the material in your specification available and it stays for six months here right. He needs to get this six months before the date of the consignment. Yes sir. So that's the additional lead time for him for planning. So if he needs 10 months to say manufacture the material which means the lead time for us is 16 months because six months is the stock to be here and 10 months is the manufacturing time of the vendor. Which means this is manufacturing lead time of vendor. And then lead time 2 is basically holding time in VMI. It can be 6 months, 8 months, whatever you say. And then lead time 3 is basically... From a planning perspective, it's a lead time because in terms of six months, if you need a material in say, Jan 2028, right? Then you need to consider both this lead time to make sure you're rating PO. So lead time one is eight months, 10 months. Yeah, lead time 2 is 6 months, so total lead time is 16 months, which means if I need in January, 16 is far before, which is like June 2026 is when you should raise the peer. No, no, I do not think so. You have to hold it for 6 months. So that becomes a lead time of early. It is rolling, but for a certain peer it is a lead time. Once it is there in the next peer, it is further 16 months. So, it keeps on adding 16 months to whatever lead time. Now, that is the lead time to get the material in here. Now, from here, so from here to here, there is a one-shot transaction. Because we know there is no moment there. So, we will do some VMI.
+
+1:03:09 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yes, that is 2 weeks.
+
+1:03:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, the lead time 3 is. Which you can say internal lead time. Is VMI to well. Sometime there will be some way to do that.
+
+1:03:21 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, but that is only now we said 2 weeks or 3 weeks.
+
+1:03:26 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, in between it may go somewhere, but it is still a well.
+
+1:03:31 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, ultimately when you say, when you make a particular reservation, in 2 weeks the particular reservation is available in the well. So, essentially when you create a You create demand when you need material here, right? The date of the demand is I need material on 1st January 2028 is the date when I will need material physically on the site for that. Then I will add first buffer of lead time 3 of 2 weeks. Then I will add second buffer of lead time 2 of say 6 months. And then I'll add a third lead time 1, lead time 1 of, say, 10 months. So the total planning lead time becomes 16 months, 2 weeks.
+
+1:04:26 - Conference Room (Conference Room 1 - L48) - Speaker 2 Just an example.
+
+1:04:28 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, that becomes a total proctor running time. So PR to PO, so now PR to PO is basically this entire because in system the PO will receive button only when the button is issued from VMI to your storage location and it immediately gets issued, converted to OODS issue. So there is one thing here. Because if you have an agreement then this is fine. But if you don't have an agreement, which means... 10 weeks of tendering time gets added. So we will counter that because if it is tendering then it's not VMI. It will directly come to add-on. Because it's a different process. Because if you have a VMI, which means you have an add-on, which means it will not work. So this may also mean as an output of a tenant who created a VMI. That can be a separate process. But then that's a strategic decision that now that you're applying so much that you need to add to the VMI, but then the moment. So from a planning perspective, is it either VMI or an add-on? Where it is this, if later you change the status to say that now this is going through VMI, which means the lead time changes.
+
+1:05:47 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yeah, so we have one more agency, one to two months, because after you place the order, the suppliers have a contractual delivery from the VMI, most of the materials are like made or. Yeah, engineering order. So, we have after we place the order there is a quality inspection orders to be done. Quality team based on this order, based on the production schedule that they received from supplier, they raise another task order for quality inspection.
+
+1:06:31 - Conference Room (Conference Room 1 - L48) - Speaker 1 But then whatever that is, should be part of this lead time one. What we are saying is lead time one is to get cocaine material in VMI. Now, whatever you do in between is either manufacturing lead time or quality check lead time is part of this lead time one. Theoretically, is this correct assumption?
+
+1:06:52 - Conference Room (Conference Room 1 - L48) - Speaker 3 But when we say the lead time to supplier lead time, because supplier lead time starts from VMI, not before. Once the PO issued, then how long it will take to bring the material to VMS?
+
+1:07:11 - Conference Room (Conference Room 1 - L48) - Speaker 2 In the PO, you will have the delivery date.
+
+1:07:17 - Conference Room (Conference Room 1 - L48) - Speaker 3 That is only the supplier, that is only from the PM update. That means the pre-manufacturing date. Again, we are not sure we may have delay or we may have to delay.
+
+1:07:33 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, then you have to consider p of good day and p of bad day, right? Day is also used as a lead time. So probably, let's agree to the idea of lead time. How do you calculate this thing? Probably, it can be taken in this way, which fee from SAP to be taken to get this correct lead time. But then, on a theoretical level, it's not the lead times which we do from an understanding, understanding perspective, correct?
+
+1:07:58 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, so that's something.
+
+1:07:59 - Conference Room (Conference Room 1 - L48) - Speaker 1 So first let's understand functionally and then technically from where to extract data, we can have separate techniques. This is a continuous part of build. We don't need to worry from where we did it. Unless we have, if we agree that this data has gone up, which we can extract from, then from where to extract can be a follow-up discussion. Now just to make sure we use wealth as planning, material as planning, at a plant level. From this plant, based on whatever planning demand, whatever we do, we ultimately raise a PR. That PR gets converted to PO for material to be available in BMI. And once the material is received in either BMI or ad hoc storage location, the PO gets closed. Because the PO will be open till it Even if it is VMI, the PO will be open, right? Because VMI is not our inventory, which means the PO will get closed once the inventory is received and immediately gets issued probably within a day or two, it will get issued to the actual well location so that the material physically moves from VMI to the well location. This is the entire planning cycle. We have discussed about all the lead times in between. Lead time to get the metal in VMI, lead time for metal staging in VMI, and lead time for moving the metal from VMI to silicon well. Correct? Correct. Any feedback you have in terms of any other thing which we don't need to transfer in returns, right? So returns is a separate question. Let's say returns is something which will bring the inventory back so that the supply bank should transfer that inventory into future planning so that we don't create duplicate requirements to the vendor side. So that's that's it. But then from a planning cycle perspective, this is what you want us to consider in IDP.
+
+1:09:59 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yes. And we're talking about only onshore. Yeah, we can make it for both. It's fine.
+
+1:10:06 - Conference Room (Conference Room 1 - L48) - Speaker 3 The supplier has to be in a certain space both. We have stock here now. We have a program onshore, and then the VMI stock. So, VMI stock, the two, one is that directly, and what is in VMI is shown in our SLOC.
+
+1:10:29 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, that's the result of our program, what you're talking about, which brings in the interfacing. No, there's two stocks.
+
+1:10:39 - Conference Room (Conference Room 1 - L48) - Speaker 3 One directly, then we make VMI, GR is VMI, it is reflected in our VMI stored location. That is for one category of writer, that is what we are doing. For any other category, it is the other way. Once we make the issuance, we made a GR and it's reflected here.
+
+1:10:58 - Conference Room (Conference Room 1 - L48) - Speaker 1 Okay, so first you make GR and then you issue and then...
+
+1:11:02 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yeah, except for Vendor, any other category is the normal VMI.
+
+1:11:05 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, from what you are saying, probably you can take note of this So, if the material is of well-head, all the components of well-head will show up in S4 HANA as real-time inventory even if it is at P1. So, basically anyway we are going to combine this inventory for planning but then we assume the inventory will be available in the VMI storage location of plant.
+
+1:11:44 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, the PO gets closed immediately?
+
+1:11:47 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes, it is closed. If all are received, yes. So, the physical VMI storage location, but in S4 HANA, it is closed in your location as well and you close the PO.
+
+1:12:03 - Unidentified Speaker Okay.
+
+1:12:04 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, ownership in a block?
+
+1:12:06 - Conference Room (Conference Room 1 - L48) - Speaker 1 So what does it say?
+
+1:12:08 - Conference Room (Conference Room 1 - L48) - Speaker 3 It's physically in the VMI storage location.
+
+1:12:10 - Conference Room (Conference Room 1 - L48) - Speaker 1 So when you add all the books, it gets updated first. But how do you try to do that?
+
+1:12:15 - Conference Room (Conference Room 1 - L48) - Speaker 3 So we have a reconciliation, and we have physicals.
+
+1:12:18 - Conference Room (Conference Room 1 - L48) - Speaker 1 Oh, physically, because physical is that. Just looking at the system, you cannot know whether it's in the VMI location or it's in the book. No, it's in the VMC. So we have a separate folder for VMI, right? Oh, OK. So that way, you know that even if it has, yeah. And not only for well-done, you would will find a stock in the VMI stock location, for all of the material you will not find it, only the movement will be there. So, you will have a momentary stock which is creating an immediate issue.
+
+1:12:49 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, there will not be consistent stock in this VMI stock location only for well-laid. One more complexity is there, another one we have DC, one more category DC, downward compression. So, after successful completion only, you do the GAP.
+
+1:13:05 - Conference Room (Conference Room 1 - L48) - Speaker 1 Which means we use the material from BMI, you drill head, drilling location, you use the material, if material is useful, you successfully use the material installed, verified, then you trigger the GAP. Now, in that case, in that case, just give me a minute, so which means how How do you move physical handle?
+
+1:13:31 - Conference Room (Conference Room 1 - L48) - Speaker 2 There is no physical transaction. Will be there. Because they want to do their own platform. So based on MRH, they will make the postage not empty. Then the goods issue will not get posted if there is no inventory? No. They will not do the system wise, no. Only the paper, they will make.
+
+1:13:51 - Conference Room (Conference Room 1 - L48) - Speaker 3 After the successful delivery, they will get it successfully installed. From an IT perspective, they are not impacted, right?
+
+1:13:58 - Conference Room (Conference Room 1 - L48) - Speaker 1 It will not impact, because ultimately what we are planning is making sure that when you need the material physically, it is available in time here. And now once you choose to use it physically, verify and put a GR later, which is fine. But for me, why do we have to make sure the right material is available at the right time? If we are able to ensure that, at the point of consumption, either the first issue and consumer issue, it's a transnational there will be a few days here and there, a few weeks here and there from a stock correctness perspective. But from a grand scale of things it does not change, right?
+
+1:14:38 - Conference Room (Conference Room 1 - L48) - Speaker 2 The main thing is, let's see, what is the only one challenge here, whenever the material move from PMI stock, it will get updated by the supplier or it will move.
+
+1:14:50 - Conference Room (Conference Room 1 - L48) - Speaker 1 For example, I have 10 piece, so it will move to… So for 2-3 weeks, there will be no inventory anymore. Because it would be out of PMI, but it will not be in...
+
+1:15:05 - Conference Room (Conference Room 1 - L48) - Speaker 2 At the same time, the demand is still open.
+
+1:15:09 - Conference Room (Conference Room 1 - L48) - Speaker 1 So you should not press any order. So we will have a scenario. This is for what purpose? DCE. Where you have a scenario where physical goods issue. No GRN, which means this is inter-handed on the system granted, but in the VMI, in the supplier stock, it will get it to non-trading. So, physical goods issue, no GRN, VMI issues, system, is it consumed? So basically, if we have a reconciliation import between the two systems, so if we have two, all we need to do is As you can see that what is my... So the ideal spread is what you have demand, right, which is 100. So you will have VMI equal to 100. If VMI is not 100, then you should have ADDNOCK equal to 100. If ADDNOCK is not equal to 100, then you have goods issue equal to 100. If none of these are there, which means the event is in parallel. And then I can close demand only when this MR is issued. Then only the demand gets closed. In this case, VMI is issued. Ad hoc is not there, but this is also not there, which means it's somewhere in between. Within we can say in transit inventory. So essentially demand will not get close unless, so what you are saying is, we should not create additional requirement in such case. Even if the stock is not at VMI location, additional inventory should not get created.
+
+1:17:36 - Conference Room (Conference Room 1 - L48) - Speaker 2 Maybe we need to get some information from the suppliers.
+
+1:17:41 - Conference Room (Conference Room 1 - L48) - Speaker 3 We can ask somebody. After 12 months, this holding is there? It moves to the VMI.
+
+1:17:49 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, essentially from a demand perspective, either it is VMI stock or ad-hoc stock. So, if you move the inventory into else, essentially, since we are looking at total inventory, it will not be a duplicate demand. The location of inventory is changed. From a planning perspective, it does not change the fact that you have inventory.
+
+1:18:12 - Conference Room (Conference Room 1 - L48) - Speaker 3 right so just a question is that you know we have to be careful that you know in the table that information being transferred by VMI to SAP and we have those data in memory in our VMI so we should
+
+1:18:27 - Conference Room (Conference Room 1 - L48) - Speaker 1 not have a duplication yeah that's what from the moment we have this picture because if if it is transferred after 12 months which means the VMI inventory will reduce when does it VMI will still show because after 12 months
+
+1:18:45 - Conference Room (Conference Room 1 - L48) - Speaker 3 to 18 months it is within the VMI location. It's physical. But Vendor will still show it in their system. That's why we might have Vendor.
+
+1:19:00 - Conference Room (Conference Room 1 - L48) - Speaker 1 So essentially stock, goods receipts are happening in ad hoc location to show that inventory Because financially, the ownership of inventory is transferred from VMI to AdMob. Which means, on a purchase order level, you have received that material now. It's no more open material. Which means, on a purchase order level, if you receive material, in SAP, the inventory is updated.
+
+1:19:26 - Conference Room (Conference Room 1 - L48) - Speaker 3 So what does it try to say that you will have it here at the VMI's location?
+
+1:19:33 - Unidentified Speaker Inventory.
+
+1:19:33 - Conference Room (Conference Room 1 - L48) - Speaker 1 And then the inventory is supposed to be for his dog, but it's not his own answer. It's Adnan's own answer. You can sometimes ignore it. You cannot tell him. You can talk to him. That's OK. OK. Team on phone, any question on this? Just one question on this.
+
+1:19:54 - Conference Room (Conference Room 1 - L48) - Speaker 2 In terms of data, there is a new way to share data. But I don't seem to understand, because you want to pay this amount.
+
+1:20:04 - Conference Room (Conference Room 1 - L48) - Speaker 1 I have a question Ram. So, basically there are two questions.
+
+1:20:12 - Arun Tejnarayan (ADNOC Group D&CS) First, not sure how the relationship between the planned code and the well plan will be established. Second would be, you know, the transportation lane between the sub and the plan code. Where is that information available? So we have this contract, right?
+
+1:20:39 - Conference Room (Conference Room 1 - L48) - Speaker 1 We have my contracts.
+
+1:20:41 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, you might want to see the first question. We will build the relationship table.
+
+1:20:49 - Unidentified Speaker That's weekend.
+
+1:20:50 - Conference Room (Conference Room 1 - L48) - Speaker 2 Second one, the transportation. The transportation perspective. See now currently I think now in SAP we are not So, when you say transportation, I think the term of transportation is like relationship, who is supplying, who is receiving, that is the transportation.
+
+1:21:08 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, in S4, you have this contract, VMI contract. So, for every material there will be a VMI contract. That is from the PO.
+
+1:21:19 - Conference Room (Conference Room 1 - L48) - Speaker 2 Is the contract, right?
+
+1:21:20 - Conference Room (Conference Room 1 - L48) - Speaker 1 Because it is an agreement with the vendor, right?
+
+1:21:24 - Conference Room (Conference Room 1 - L48) - Speaker 2 No, for IDP, the PO is the information.
+
+1:21:27 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, from a PO perspective, we know that for this particular which vendor is to be used. We will come to that point again, Arun considering we also need to talk about the open materials from a model perspective. But then can we summarize this point, close this point, we have how much time for today's meeting? 15 minutes. There is one more point we need to discuss in detail. So, from an onshore and offshore perspective, this will not be different, right? From an onshore and offshore perspective, we are agreeing that this is the approach we would like to continue. So, you will not plant for everything in the environment. And then we can establish that. We can establish that, right? So, now we still have the plant level. So, for you to establish that, that information should be out of the DCP system as well. DWS. Sorry, DWS system as well. It is there. Which means that when we extract the DWS information, we will know well and the plant as well. Answer your question, the DWS system will have this relationship established where what is the SME plant code for a wealth. So when we extract data, when we connect to the DWS system, we will have this mapping between the SME plant code and the plant code in DWS system.
+
+1:23:17 - Arun Tejnarayan (ADNOC Group D&CS) In case when we are doing the inter-stock transfer movement, right? So where is that relationship? Is it available in S4 or like do we need to read from the transactional data and establish that?
+
+1:23:30 - Conference Room (Conference Room 1 - L48) - Speaker 1 I think there are these two plans in case of...
+
+1:23:34 - Unidentified Speaker It could be DC or something, I don't know.
+
+1:23:37 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah. So is a stock transfer, this is an order. So we have historical stock transport orders, which we can establish a relation to that, Here only two plants, so there is only one relationship. But then for the other company there are more plants. But same process.
+
+1:23:58 - Unidentified Speaker Same process.
+
+1:23:59 - Conference Room (Conference Room 1 - L48) - Speaker 1 So which means we can use the historical purchase order information. So, okay. Arun, does that answer from a historical purchase order we can get the relationship? Okay. We are issuing from the VMI to the end of location physically, but also are we showing the system where it is issued? Yes, because there is N1.
+
+1:24:25 - Conference Room (Conference Room 1 - L48) - Speaker 2 Once the N1 is paid by end-users, they will pay under the VMI. Okay.
+
+1:24:30 - Conference Room (Conference Room 1 - L48) - Speaker 1 Stock will not be in our system.
+
+1:24:33 - Unidentified Speaker Right.
+
+1:24:33 - Conference Room (Conference Room 1 - L48) - Speaker 1 We know about the power planning qualities. So, we have not yet received, but it is transferred already. Yeah. So, what we do? So this much stock they have already VMI. So they do the issue and at the same time they do the receipt in the PO also. In the PO they will do the receipt and then issue against this. Then they will inform the VMI to get this much PO issued, send this much items to the particular location they are talking about. Physical strong versus the system strong. So I think this end-to-end process is clear. I won't like to move to the next point unless anyone has any other question on this end-to-end process. T14 clear? If you see the technical fitment. That's something we can have a follow-up with. Now one of the very important point which we've understood, there are two points which I can undo it in my mind, but not yet. So now the next part is there are two points which are open. Probably we may need one follow-up session similar to this again. But let me start the conversation for the next time we are prepared on the next one. So. Let's say. We have very tight. I feel right and we are seeing completion code.
+
+1:26:51 - Unidentified Speaker But
+
+1:26:52 - Conference Room (Conference Room 1 - L48) - Speaker 1 Based upon the last conversation with Daniel, there is some additional print. So we understand that five categories of Is this five correct categories or you have additional categories? We were told that like wellhead is one of the categories. So what are those five categories of containers? So wellhead. Okay, so wellhead. OCDG. Wellhead. Can you give us a full form?
+
+1:27:25 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yes, I can give you a full form. So, probably we can take this from a separate full bound, correct.
+
+1:27:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 dc, dc, Now, this completion code, will it give me multiples for all this category? Let's say, let's have been completion for forecast for whatever we say is a unique identification between well-typed fields, which we create a unique key. Now, we call it completion code or forecast code. But then how, from this well-typed and field information, I will get to know what is required for all these five categories? How do I come to this one? Because we were told that completion code is that code or forecasting code. Let's take an example. Either or. But then, will it, one, one of this will lead to all this, or there are different codes for each of them, and somehow it will lead to completion code. This is still a gray area for us, is that from well-typed field and completion code, because from completion code, I think we are only able to map DCE models. That's what we got an input from one of the associates. But in the meeting we got to look at, additional completion codes. So how this, from where I will get this information of additional completion code? What are the buttons required for additional completion code? And these additional completion code buttons are part of this, or they are on top of these five categories?
+
+1:29:36 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yeah, and then it's between the DC and the work code. Between this.
+
+1:29:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 So additional completion is within these categories. This is, but then the completion code say gives you 90% material and then 10% materials are optional based on additional completion code.
+
+1:29:54 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yeah, technically I don't know about the completion code and because we are not involved in those planning areas. So there is, we know there is a completion code, there is a bit of material. But how they are handling it, I am not sure, but we have material code. Within the AWS or AWDP, they have the system that is a generic material code. So when they do the forecasting, they have a generic material code which is linked with SAP.
+
+1:30:32 - Conference Room (Conference Room 1 - L48) - Speaker 1 Generic code that has a specific architecture. Agreed. So essentially, while we are designing that well-leveled Now for us to convert the well level plant to material plant, this is what you call material basket. So if we need to get a material plant, I need to have the material identified in each of these categories. So that I can allocate all these materials to well. So that I know all the materials. If I only take DC, then probably I will get only 20% of the materials required for well. If I am not able to identify all the buttons, we may be heading in the wrong direction where we are not able to focus all the buttons which are required for them. I just want to make sure that I am having this clear understanding that this completion code will give me all the materials. If it is not giving me all the buttons, how I will get all the materials identified for It's not possible to identify what are the details required. Then how did we build the bit of VGS? Because this is something even when I was talking to VGS, we did not, could not identify that how will we define below particular response. If we are not able to establish this relationship between. So there should be some way, maybe we can. Yeah, so this is what I would like to clarify so that we have absolute clarity I get a well-planned and this is how I convert well-planned into virtual-planned. Completion code is basically above, right?
+
+1:32:13 - Unidentified Speaker Yes.
+
+1:32:13 - Conference Room (Conference Room 1 - L48) - Speaker 1 But then completion code is in DC only. And then we have additional completion code which triggers additional virtual into DC. Which is linked to the completion code. Which means that we are talking about Wellhead and DC only. How do you get OTG implementation and LANL flow related materials? Because if I, this is what I understand, correct me if I'm wrong. If I have to plan a well, then I need to plan all the middle of all the categories, which includes completion codes and addition completion codes. Which means if I have to do this in IBP, I need to figure out a way of linking all this information to well. Update that in S4 HANA so that it can be brought back to IDP and then all this linking can happen and we get a final middle block. And I'm not clear on this linking, how it will happen in S4 HANA, how I will get all this material. This is information I need. Probably we don't have time today, but then in the next meeting, if we can get people who know this, then probably we can have this conversation around this point. We need this as soon as possible, this next meeting. Next week, probably, we'll also talk to the OSM team already. But somewhere next week, we should close this point. Because it's an important element of closing the design for Delhi. Your main concern now is this validation code, how to drive them. Yeah, because, see, I'll get a well-planned from external system.
+
+1:33:45 - Conference Room (Conference Room 1 - L48) - Speaker 4 Rahul, before we continue the session, actually, we need to push it in one way, because we're also inviting Oh, you're the owner, right? Yes, I'm the owner. Can you cancel it with the note saying to reschedule tomorrow? It might be tough. It's a Friday till Monday. Okay. Or move it till Monday at three and then we confirm the time. Okay.
+
+1:34:19 - Conference Room (Conference Room 1 - L48) - Speaker 1 I've done it from my ad hoc account, so which means. Yeah, yeah, we're OK. Which means probably if you have some time, we can talk about a third topic. We'll pass this one for a second session.
+
+1:34:37 - Conference Room (Conference Room 1 - L48) - Speaker 4 You can't do the mistake and give them more time.
+
+1:34:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 Can you believe it?
+
+1:34:44 - Conference Room (Conference Room 1 - L48) - Speaker 4 For one, it was people asking. Let me, let me. I can tell you from one side if it's weird.
+
+1:34:58 - Unidentified Speaker It's not done.
+
+1:35:01 - Conference Room (Conference Room 1 - L48) - Speaker 1 I'm just doing it. You want to go to Monday 25th? Same time. No, I don't believe it. I'm just putting a message in the chat.
+
+1:35:43 - Conference Room (Conference Room 1 - L48) - Speaker 4 But also, if you continue, you want to check with some of the
+
+1:36:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 The next session is moved to Monday. Are you guys OK to continue this conversation on drilling?
+
+1:36:19 - Unidentified Speaker Yes, sir.
+
+1:36:20 - Conference Room (Conference Room 1 - L48) - Speaker 1 Probably take five minutes. What is the next topic? The next topic is the Monday course. Now, what we are talking about is OK, from this person, we will figure out what all buttons are required. So, from this topic like this is the path to get to the multiple codes. But when you will see the reach at the multiple code there is an additional layer complexity. From what I understand, So, let me take only one example. So, you have one thing called generic material. Now, we do not know whether the generic material is a, this is an old material, right? Generic material, which means it is not available for now. Yes, sir. But it is identified as an old material. It is not a material code in itself, right? But it has a built-in. It is mapping, but it itself is not a material code. It is assigned as old material code to S4HANA material code.
+
+1:37:54 - Unidentified Speaker Correct?
+
+1:37:54 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes. It is coded as SAP code. Code. So generic material is an S4HANA field? Yes. S4HANA. So it is available. Now for every generic material, you will have multiple vendor materials. So M1, M2, M3, M4. Whether it is in which vendor is providing and now here you have this is before. Sorry, sorry to interrupt.
+
+1:38:26 - Arun Tejnarayan (ADNOC Group D&CS) So basically in S4 HANA, do we have material type different for generic material and the vendor material code or is it the same?
+
+1:38:37 - Vignesh Perumal (ADNOC Group D&CS) Say there is no different material type and it's the same.
+
+1:38:43 - Conference Room (Conference Room 1 - L48) - Speaker 1 So you have You have this before VMI model codes and for the same physical model you have after VMI model codes. Correct? So you have a physical part. This is a physical part. Let's say a K squared. Now you have a generic model code for it. Before VMI, you are procuring from vendor. So you have M1, M2, M3 as a model code. If you are procuring from, so you have five model codes for this physical part. So when you moved to VMI, you had VMI dependent sensory windows. So you have V1, V2, V3 material code. Now we will have in this theoretical example, 1, 2, 3, 4, 5, 6, 7, 8 material code for same physical materials. In this understanding, we will need this mapping somewhere. How would we identify?
+
+1:39:35 - Vignesh Perumal (ADNOC Group D&CS) Because probably the planning would start from genetic material and then based upon There is a table in the SAP HANA system, maybe I will just, but I don't know whether they are updating this or not. I'll share the screenshot on the screen. There is a table which is mapping the generic material code versus the, I will just put it on the chat, maybe somebody can show it on the screen. The on the screen. Maybe somebody can whoever is sharing. You can see it on the screen.
+
+1:40:16 - Conference Room (Conference Room 1 - L48) - Speaker 3 So how do you identify what is this?
+
+1:40:19 - Conference Room (Conference Room 1 - L48) - Speaker 1 So I need to understand that when we do the planning based on the previous question, we will plan on the development code. Is that understanding correct? So the demand will always be of the important.
+
+1:40:33 - Unidentified Speaker I don't know.
+
+1:40:35 - Conference Room (Conference Room 1 - L48) - Speaker 1 Eventually I will check inventory which is where at which location. Whether I have invented before AdNoc, before VMI, or after VMI. Based upon where the inventory is, I will identify which vendor has the material. And then I'll show, OK, I started with generic model, but now I invented M1. Use this M1 for fulfillment. I started with generic model. The inventory is not in AdNoc's top, but inventory is in VMI's top. And vendor 1 has this. So use this model. Is this understanding it? This is how you want the supply should happen based on where the model is available.
+
+1:41:08 - Conference Room (Conference Room 1 - L48) - Speaker 3 And if the model is not available, by default it will go to VMI. Yeah, because V1 can be either onshore stock or VMI stock.
+
+1:41:17 - Conference Room (Conference Room 1 - L48) - Speaker 1 So this is, I think, before VMI, right? So before VMI, you have a separate model for them. After VMI, so you have V1 as of before vendor-managed inventory situation is. And VM1 is the same material, but after vendor-managed inventory was introduced. Was introduced. Yeah, so we do have this link that one one to many relationships and what is one that we put in what are the multiple possible combinations in in sentence. So from a planning perspective, we just wanted to make sure that this is clear that we have one particular number. This is material for as well. Yeah, I think this is the one, right? Yeah, it's a generic material and it's a material number also in Esperanto. So we have seen it in other reports because generic material is same and then these are the generic material or is on the third column.
+
+1:42:10 - Conference Room (Conference Room 1 - L48) - Speaker 3 Yeah, yeah.
+
+1:42:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 So it's the other way around. You have one button 94 and have three generic material. So which one is correct? It's the other way around. This is the same.
+
+1:42:20 - Conference Room (Conference Room 1 - L48) - Speaker 3 There are two tables. I don't know which table is this.
+
+1:42:24 - Conference Room (Conference Room 1 - L48) - Speaker 1 Generic material table. Generic material table. There's one more.
+
+1:42:26 - Conference Room (Conference Room 1 - L48) - Speaker 3 Can you open the other one? There's one more.
+
+1:42:29 - Vignesh Perumal (ADNOC Group D&CS) which one which what you want alternate material table I will give you that table also just one minute. I just put it on the screen you can check the it is similar what it has is the first table has generic material versus the actual material. Then this has the alternate material versus the material, you know. And they have something called as a category over here. E means equivalent. S means substitute. A means alternate. If you see, there is something called as a category, right? In the...
+
+1:43:28 - Conference Room (Conference Room 1 - L48) - Speaker 3 We are using this one.
+
+1:43:30 - Conference Room (Conference Room 1 - L48) - Speaker 1 Vignesh, can you filter the numbers starting with 1, 3?
+
+1:43:34 - Vignesh Perumal (ADNOC Group D&CS) 1, 3, yeah, fine. Just one moment.
+
+1:43:37 - Conference Room (Conference Room 1 - L48) - Speaker 1 Vignesh, will you be able to share the screen?
+
+1:43:40 - Vignesh Perumal (ADNOC Group D&CS) Yeah, I can. I can. I thought somebody is actually doing that. That's why I don't want to. Can you see my screen now?
+
+1:43:51 - Unidentified Speaker Yeah.
+
+1:43:51 - Vignesh Perumal (ADNOC Group D&CS) There is nothing, but I am in ERX. I'm not in production by the way, but Yeah, I'll go to ER5 which is a copy last week from production.
+
+1:44:04 - Conference Room (Conference Room 1 - L48) - Speaker 1 Even ERX is a copy.
+
+1:44:06 - Vignesh Perumal (ADNOC Group D&CS) But that is a long. Back copy anyway I know that it will it is supposed to be there but anyway let us see in ER5 you see here this is the alternate material and the material table and sometimes you know or here star 1 3 star let me do there will not be too many materials over here we can. That is that is what I also doubted, but totally only 50,000 materials are there and if we go towards the last, it must be 15 series 13 series is there. See over here. Zoom. Just wait one minute. You see display settings.
+
+1:45:08 - Conference Room (Conference Room 1 - L48) - Speaker 1 Now it will come.
+
+1:45:11 - Vignesh Perumal (ADNOC Group D&CS) Here I need to change this. Just one minute.
+
+1:45:19 - Conference Room (Conference Room 1 - L48) - Speaker 1 Now you see it will be big.
+
+1:45:25 - Vignesh Perumal (ADNOC Group D&CS) Can you see it a little bit bigger? Now it's bigger OK or maybe I'll make it for Jagga. I'll make it 150. Now is it clear? Yes.
+
+1:45:45 - Conference Room (Conference Room 1 - L48) - Speaker 1 See they have over here.
+
+1:45:48 - Vignesh Perumal (ADNOC Group D&CS) This is the normal one three material which company code it is used for. Then they also have a category over here. The category they have a means. Is an alternate. This material is an alternate material. F means it's a substitute material. E means it's an equivalent material. I think they are supposed to regularly update this. Hopefully, they are doing it. So, this is what this table is telling.
+
+1:46:22 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, material in here is the generic material. Alternate material are the welder specific material.
+
+1:46:31 - Conference Room (Conference Room 1 - L48) - Speaker 1 So we need to just refer to this table. Where is this table used?
+
+1:46:37 - Conference Room (Conference Room 1 - L48) - Speaker 3 TMM.
+
+1:46:37 - Conference Room (Conference Room 1 - L48) - Speaker 1 Arun or someone, Sagar, can you take the name of this table? Yeah, I made a note of it. You made a note of it, right? So this is something we'll need to see how we can use this in a way.
+
+1:46:52 - Arun Tejnarayan (ADNOC Group D&CS) So we need to use the category A for our alternative material purpose.
+
+1:46:57 - Conference Room (Conference Room 1 - L48) - Speaker 1 So is there any specific category you need to use? A Old material.
+
+1:47:05 - Conference Room (Conference Room 1 - L48) - Speaker 3 There's a field called old material, right?
+
+1:47:09 - Conference Room (Conference Room 1 - L48) - Speaker 2 No, you might have new generated material.
+
+1:47:13 - Conference Room (Conference Room 1 - L48) - Speaker 1 We can analyze this table. We'll ensure everything is mapped. That is OK.
+
+1:47:21 - Vignesh Perumal (ADNOC Group D&CS) That will take time. Ashik, one question. This table this there are three entries for this material or I think this for offshore maybe Abdul Latif can see there are three entries that means these are the generic material and you have three different materials in the alternate material. These are the material this material is for manufacturer A, manufacturer B, manufacturer C. Now if I go to this material can I see who is the manufacturer of this material? Oh, you're assigning an MPN to it. But MPN also if you. No, no, no, wait, wait, it is not like that.
+
+1:48:13 - Conference Room (Conference Room 1 - L48) - Speaker 1 So see what what is happening here. Agreement.
+
+1:48:19 - Unidentified Speaker Basically.
+
+1:48:20 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, so.
+
+1:48:22 - Arun Tejnarayan (ADNOC Group D&CS) So, in this alternative material table, right, we had this company code, but Vignesh you are showing this material at plan code 1409. So, like how many plan codes are extended to that materials?
+
+1:48:49 - Vignesh Perumal (ADNOC Group D&CS) So I just chose some it depends upon you know there which plant they have listed it.
+
+1:48:57 - Unidentified Speaker Okay.
+
+1:48:58 - Arun Tejnarayan (ADNOC Group D&CS) Is this actual planning plan code or? They are planning plan code.
+
+1:49:04 - Conference Room (Conference Room 1 - L48) - Speaker 2 So this all we can update. We will analyze which is the plan code extension and adding the table we can.
+
+1:49:14 - Unidentified Speaker Okay.
+
+1:49:14 - Vignesh Perumal (ADNOC Group D&CS) I will just show you also. There is actually in fact there is a manufacturer part number associated to this, but you want me to show that or not Abdul Latif.
+
+1:49:31 - Conference Room (Conference Room 1 - L48) - Speaker 1 Or it may not be accurate.
+
+1:49:34 - Vignesh Perumal (ADNOC Group D&CS) So what I will do slash OMM 03 and if I go to search by. Internal part number where is that internal? Where is it? It will be somewhere. Do you see manufacturer part number? Maybe I am missing it somewhere.
+
+1:50:06 - Conference Room (Conference Room 1 - L48) - Speaker 1 I remember it is in the last. Go to the bottom may be 5th. From the bottom. Manufacturer part number yes.
+
+1:50:25 - Vignesh Perumal (ADNOC Group D&CS) So, I will put the internal material number over here. It should be the Go to Mara. I can do that. That I know ok see this is the one they are.
+
+1:50:47 - Conference Room (Conference Room 1 - L48) - Speaker 1 This is the generic number this is the generic number put this in the old material number you will get the that is for the old yeah.
+
+1:51:01 - Vignesh Perumal (ADNOC Group D&CS) Let me do one thing I think probably they have not loaded the they have loaded the maybe Yeah maybe for this material is not there but what we can do is we can also check you know in the EKPO if I give this material and maybe if I give 4, 6 star let me see maybe that material is a bad material it looks like maybe I can just that could be the Maybe I will go to this you see alternate material maybe I will take some few materials like that and put it into the EKPO table. You see there is some agreement so this agreement E33k must be some big agreement, I guess. You see here they are having many lines, many lines. This is an agreement with Technip. Technip is one of your important suppliers. Valid supplier. Valid supplier. You see, they have a lot of, they have one two series number, they have, they probably have a lot of items.
+
+1:52:34 - Conference Room (Conference Room 1 - L48) - Speaker 1 number would be the better metal code, right?
+
+1:52:37 - Unidentified Speaker Or this is vendor specific. Yes, this should be vendor specific.
+
+1:52:40 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes, so so. So essentially the logic is we will create the demand on generic metal code based upon the mapping will do. That and for that, uh, uh, jetting metal code we go to that table and identify all the vendors specific metal code. Check whether it is available in the inventors. I will use that model if the available, we will look for the arguments on which module codes are there. And then create particular equation against the argument. Is there a logic to split between the argument?
+
+1:53:11 - Conference Room (Conference Room 1 - L48) - Speaker 3 I think there is quota arrangement, right? Yeah, quota. But that is not defined on the argument.
+
+1:53:17 - Conference Room (Conference Room 1 - L48) - Speaker 1 So probably that is something. Do you have any Q3 quota created in SAP HANA?
+
+1:53:22 - Unidentified Speaker No, no.
+
+1:53:23 - Vignesh Perumal (ADNOC Group D&CS) We did not create any quotas in SAP HANA.
+
+1:53:25 - Conference Room (Conference Room 1 - L48) - Speaker 1 But we can now, as a best practice, we can ask them What do you think? We can create quota. It will not, since you are not running MMP, it will not generate anything, but then this quota can be used as a definition for us to create quota in S4.
+
+1:53:48 - Conference Room (Conference Room 1 - L48) - Speaker 3 I repeat. We cannot create auto-release order because we need to check.
+
+1:53:54 - Vignesh Perumal (ADNOC Group D&CS) Will not release order. And this is the model you need to buy. Now, this will be an IVP object. The moment you agree to it, you can modify it or agree to it. If you agree to it, then it triggers NS4L. If you don't agree to it, it will still enable an IVP object.
+
+1:54:15 - Conference Room (Conference Room 1 - L48) - Speaker 3 It's a proposal in IVP which needs confirmation by the planner and agreed upon so that it's done. Because creating a suggestion here and then modifying it Because we have certain criteria like sets, we have combinations and that also is done manually. If you make a suggestion, the computation will not be correct. It may be ups and up and down. You cannot know. No, how you make that manual decision?
+
+1:54:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 Just keep how it is. Then they can build the logic.
+
+1:54:47 - Conference Room (Conference Room 1 - L48) - Speaker 3 How will you define the logic? Suppose now you are buying a stock. Material for casing you may have the tubing accessories together and similarly for well head you would have one food set you have and also when you make a set you have different percentage it is not defined in the system.
+
+1:55:09 - Conference Room (Conference Room 1 - L48) - Speaker 2 So what is the rest in the quota?
+
+1:55:12 - Conference Room (Conference Room 1 - L48) - Speaker 1 Quota is basically there is a transaction necessary and not which is for a single material if you have multiple sources of vendors, then you can define quota, saying that 50% of this vendor.
+
+1:55:28 - Conference Room (Conference Room 1 - L48) - Speaker 2 Vignesh, you can unshare your screen. So now, see, what we understand from the doing side, they can suggest this allocation based on some logic. For example, in our case, the field, the ownership field, it will be So field is equal to plug, so can we do it at plant level?
+
+1:55:53 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, plant level. So, in some cases.
+
+1:55:56 - Conference Room (Conference Room 1 - L48) - Speaker 2 So this portal better to create a table, loading table.
+
+1:56:01 - Conference Room (Conference Room 1 - L48) - Speaker 1 We will talk about this port, but then just because we are discussing this one point came that in your custom table for VMI Inventory you have created this Inventory and Company Portals. Level, not at plant level. If you look at the custom table. Those codes are linked to the plant, when you go to function directory, you can see how many codes. So, in the previous example, when we looked at, there are two plants, P1, P2, they are giving order to welder. So, here, this Viva inventory, this does not identify P1 has given me order. So, I have inventory of 10. Clients who have given me an order size of 20. It says that company, the company board. It says company board material plus company 100 inventory.
+
+1:56:57 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, but we have to.
+
+1:57:00 - Conference Room (Conference Room 1 - L48) - Speaker 1 So we need to compare with you and see.
+
+1:57:05 - Conference Room (Conference Room 1 - L48) - Speaker 2 Maybe. If you want to make money, you can modify them. Because you are raising PO from a plant.
+
+1:57:17 - Conference Room (Conference Room 1 - L48) - Speaker 1 So he is saying that I have material ready for this plant, this was quantity for this plant, this was quantity.
+
+1:57:33 - Conference Room (Conference Room 1 - L48) - Speaker 3 Because the supply system they don't maintain.
+
+1:57:38 - Conference Room (Conference Room 1 - L48) - Speaker 2 So when you are raising a PO, you are putting a receiving location where Ad-Doc wants to receive.
+
+1:57:45 - Conference Room (Conference Room 1 - L48) - Speaker 1 Ad-Doc has two different plants. And when you are raising a PO, you are clearly saying that I am raising, I need this for this plant, I need this for that plant, right?
+
+1:57:58 - Conference Room (Conference Room 1 - L48) - Speaker 3 The supplier will not segregate in their system of ZTP or that, based on our plan.
+
+1:58:04 - Conference Room (Conference Room 1 - L48) - Speaker 1 Physically, they may not segregate, but then We have to request, why he is not? Which means if he has 50 quantity, then he should account which plant he is having 50 quantity. If you need 100 quantity, 50 each, he has 50 quantity. From where do you know that this is our plant or not plant? When you are doing the demand planning and stock ratio, we don't know.
+
+1:58:35 - Conference Room (Conference Room 1 - L48) - Speaker 3 We have a separate plan and stock. We allocate the plant quantity and do the planning. So you do the planning.
+
+1:58:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 See, from an analyst's perspective, we are saying that we do planning at plant 10, right? Every month, you will allocate well to a plant. And then for that plant, you are on a vendor. Now, for the confirmation, I also need to know that for which plant I am giving my stock, for which plant. Because if you are going to penalize the vendor for stock availability, you don't even know that for. What was the view against it you requested and for which do you have a problem mark? And how would you identify that where the for which plan you?
+
+1:59:13 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, now so this is what happened offshore. It was saying that what is the company going to do. Now then the world monitor comes. So with ownership, who wants this material, how much ownership for this one, that one side. So and because we are only on JV and they are not bothering the desktop. So, now, so the problem...
+
+1:59:33 - Conference Room (Conference Room 1 - L48) - Speaker 1 I will give you the logic.
+
+1:59:35 - Conference Room (Conference Room 1 - L48) - Speaker 2 See, here, and after what happened, we, our financial industry, we have to put in the planning. Why? Because of financial segregation. At any point of time, the JV will ask what is their rotating budget. Yeah. So, this is the reason we want to segregate the plan, right?
+
+1:59:52 - Unidentified Speaker Yes.
+
+1:59:52 - Conference Room (Conference Room 1 - L48) - Speaker 2 However, we put in the PO like this, but the supplier is still not maintaining the plan. Yeah. What they are doing, they just put GRM, even the material. Is against ownership. They do the GRM under the NASA, for example. Then, later on, we have to do the SQA. This is how it is happening. So, it is, yeah, this plant work, we have to maintain.
+
+2:00:14 - Conference Room (Conference Room 1 - L48) - Speaker 1 So that when you issue material, the vendor knows that, okay, this plant material I need to issue. Physically, he will give stock together. But at least we know that if physically we need to stock 50 per plant to 50 per plant to. Now the impact of this material is that we will have to work with Vignesh and create alternate block propellants for every combination.
+
+2:00:55 - Conference Room (Conference Room 1 - L48) - Speaker 3 is that even bill of material will be separate for a cell gene.
+
+2:01:01 - Conference Room (Conference Room 1 - L48) - Speaker 1 So now that we have discussed this, all these combinations of the materials, the next impact of this material is that you will have a bomb which is generic bomb. Because you do the planning based on bomb, you will have generic bomb M1, so let us say g1, g2, g3 are the codes, g1, g2, g3 are the codes in a generic bound. But every g1 has like m1, m2, m3, 10 alternatives. This has 4 alternatives, this has 3 alternatives, which means we have to figure out.
+
+2:01:43 - Vignesh Perumal (ADNOC Group D&CS) We should show them the example that we created in the system. Yeah, probably I will show you the example that we created in the system of the Latif so that you see you know how it looks in the
+
+2:01:59 - Conference Room (Conference Room 1 - L48) - Speaker 1 In the system, you are not part in for 10 minutes. Yeah, but there was another discussion which is important. So we just give it to 5 minutes. I'll just quickly update the default. The point that we can't do.
+
+2:02:14 - Vignesh Perumal (ADNOC Group D&CS) Or I can share later also with you in 5 minutes.
+
+2:02:19 - Conference Room (Conference Room 1 - L48) - Speaker 1 And then we go to the bomb conversation. Now, again, you have well-planned. And the well-planned, we said the key parameter for us to get to Montreal Bomb is completion code. Now, in the last conversation, we got to know that there is something called additional completion code.
+
+2:02:45 - Unidentified Speaker Right?
+
+2:02:46 - Conference Room (Conference Room 1 - L48) - Speaker 1 Now we need to, we did this clarification that will this completion code give me all the 5 mental categories you have.
+
+2:02:55 - Unidentified Speaker Yeah, see.
+
+2:02:56 - Conference Room (Conference Room 1 - L48) - Speaker 1 I just wanted to ensure that how from a well plan I will be able to identify mental for all mental categories considering completion code and additional completion code. Yeah, see.
+
+2:03:08 - Conference Room (Conference Room 1 - L48) - Speaker 2 Now if you want to make it this efficient, this part, particularly the well plan. So, the well-planned, we cannot map and pull it better. So, okay, at least we have some adjustment. So, they can, because we've done a similar system in 2011, and somehow it gets, and it's well-drived at that time. And because of this, the EWDT, execute team said, yes, a new system is coming, that you will use that. And we are probably using, 10 years, nothing came. So, in that one, what happened? So, that is the window I have given at that time. So, that 2 years is running for offshore and now I have the one well. In the particular well, we have different sections. So, OCT will go one area, then DC will come another area, then well will come another area, then the similar way. So, now basically what will happen, this basket will tell us generic basket. But in this generic basket will cover all 5 categories?
+
+2:04:19 - Conference Room (Conference Room 1 - L48) - Speaker 1 No, we have to build it, see.
+
+2:04:22 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, it will be different, different code. So, the code using in the DC.
+
+2:04:29 - Conference Room (Conference Room 1 - L48) - Speaker 1 Completion code is a DC code, right?
+
+2:04:32 - Conference Room (Conference Room 1 - L48) - Speaker 2 See, on this completion code, then it will come another more clarity, more specific like DC code for example. So this DC code you want to know what they are auditing. So basically we need to go back and tell them that you need to put all 5 codes.
+
+2:04:51 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah all 5 codes.
+
+2:04:53 - Conference Room (Conference Room 1 - L48) - Speaker 2 That is definitely required. That is number 1. Number 2, now how to bring this 5 code. Now for example if they say this field, this field equal, you combine them. Get on DC code.
+
+2:05:06 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah.
+
+2:05:07 - Conference Room (Conference Room 1 - L48) - Speaker 2 If there was some time we can build it.
+
+2:05:10 - Conference Room (Conference Room 1 - L48) - Speaker 1 So probably which means this conversion needs to happen with the team so that we understand that how we can get from web line to all the five module codes.
+
+2:05:21 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah this is number one. The main part once you put a generic one so we need to provide some area to modify completely. Maybe they want to put different So, at least they want to add some material number. Yeah, so that is understood.
+
+2:05:37 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, first step is to get a standard form. Okay. That standard list of materials.
+
+2:05:43 - Unidentified Speaker Okay.
+
+2:05:43 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, we say that this is standard list of materials. Now, how would we reach from well-planned to this? This is something we need to discuss. Then, once we have the standard, now as the progression happens, like as we come closer to where we know that these are all additional buttons which are not part of which means you need to add or delete few buttons
+
+2:06:07 - Conference Room (Conference Room 1 - L48) - Speaker 2 in the stack. That's what we are talking about.
+
+2:06:11 - Conference Room (Conference Room 1 - L48) - Speaker 1 So that's something I'll have to align to this one. What is the standard bomb? So essentially what we are talking about is normal engineering to order companies. What happens with you? You have a template bomb. The template bomb is the which is like common across all the Now as you start designing the product, you realize that OK, I need to take out what the thing what you do is you copy the template bomb and you have well specific bomb. So this well specific bomb is applicable to only that well. It's not applicable to any other way, but it is derived from first level template bomb. So the template bomb is what something which we have decided based upon the combination codes and everything. And once you have the template bomb, based upon the template bomb you keep on adding or reducing material. But that is a copy of the template bomb which is well specific bomb. There will be only one bomb specific that well, that is applicable for that balloon.
+
+2:07:15 - Conference Room (Conference Room 1 - L48) - Speaker 2 Based on the design of that well. Yeah, this is what we want to show.
+
+2:07:20 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, so while it is easy to say, but it is complicated to...
+
+2:07:24 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, I am going to work like this 5 works, we can derive and only challenge here because you know I see like the DC especially, there are so many equipments, some equipments are not enough. For example, some wells they need ICD. So, this ICD, now where the ICD is required, there might be available somewhere in the bar chart, it is written ICD. So, maybe it is there we can take it. Otherwise, yeah, they will come the other part.
+
+2:07:55 - Conference Room (Conference Room 1 - L48) - Speaker 1 So, so we need to have this conversation. To figure out how we get from the well plan is figured out. We will put the entire supply planning based upon the architecture we are designed. But for us to come to final demand. There are a lot of things in between, which are still great at this point of time. This is where probably we need another session. Equal amount of time. To get those people in the room with us, so that we can close this decision.
+
+2:08:25 - Conference Room (Conference Room 1 - L48) - Speaker 2 Yeah, first of all, see, before we are sitting, we have to get the vote from Bill of Contributions.
+
+2:08:32 - Conference Room (Conference Room 1 - L48) - Speaker 1 But it is not one Bill of Contributions, right?
+
+2:08:35 - Conference Room (Conference Room 1 - L48) - Speaker 2 You have 5. Yeah, 5. So, right, and full set up, we can say. Then only we can understand.
+
+2:08:42 - Conference Room (Conference Room 1 - L48) - Speaker 1 Otherwise, what will happen? Yes, unless we understand how the 5 Bill of Contributions are created based upon the We cannot map it in the system. And if we cannot understand this, we cannot map it in S4ANAP, we cannot map it in IVP. So it is important for us to understand the process from well-code type, how we get from well-code to the five different below process or five multiple categories. If we cannot define this process, we cannot map it in S4ANAP. If it cannot be mapped in S4ANAP, it cannot come in IVP. And if we cannot... No, standard problem.
+
+2:09:13 - Conference Room (Conference Room 1 - L48) - Speaker 2 Definitely, we can 80% if it's OK. Definitely, this can be done.
+
+2:09:17 - Conference Room (Conference Room 1 - L48) - Speaker 1 But then even the standard bomb, right now the completion code gives only 20% of the middle, not 100% of the middle, even for a standard bomb. So we need to first reach to the 100% of standard bomb, then the next step is to go to the well-leveled bomb. So this is something we need clarity, because if we don't do this, while on paper we agree that we have a bomb, people do it, the process is clear, but the details of the process of how exactly reaching is
+
+2:09:56 - Conference Room (Conference Room 1 - L48) - Speaker 3 not clear.
+
+2:09:57 - Conference Room (Conference Room 1 - L48) - Speaker 1 Who designed the system in SMB? No, this thing for the drilling, the alternate material, you yourself will start from over side.
+
+2:10:10 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, once we define, I think this multiple alternate code definition somewhere you guys need to optimize because like inventory lying on 3 physical model, I did it by 10 different codes.
+
+2:10:32 - Conference Room (Conference Room 1 - L48) - Speaker 1 It will be 3 only.
+
+2:10:35 - Unidentified Speaker Not more than 3.
+
+2:10:39 - Conference Room (Conference Room 1 - L48) - Speaker 1 We also have in your inventory, so you have one generic model code, you have a model code for your inventory, but in your inventory also you have vendor-specific model code and the same code gets replicated in VMI. So in VMI inventory also you have vendor-specific model code and those two codes are not same. So theoretically, one model will have, if you have only one vendor, one model will have generic model code. So we have minimum 3 metal cores for 1 metal. It will be 3 to 5 only maximum. But if you are dependent then, but if the data is there, it creates confusion in the entire system. So probably you will have to clean up the data as well as what are not related to the source. Why you created vendor-specific model port in your system?
+
+2:11:40 - Conference Room (Conference Room 1 - L48) - Speaker 2 What was the reason? See, now for the building, now for step 4, the strategic engineering, we do not have one vendor, any failure like this, and to be planned properly. So even in the initial discussion, through MPM we can differentiate. And the reason, we cannot maintain the stock separately. Because if I go for the vendor fork, I want to use all the steel vendor fork. If I want to use for the baker, I want to use all the steel from the baker.
+
+2:12:15 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes, so bill of materials also would be specific to vendor. So the challenge, the solution we come is that not only you have stock, you will have to come bill of materials so that the complete kit can be confirmed if it is a part of one single vendor ecosystem. Yes sir.
+
+2:12:33 - Conference Room (Conference Room 1 - L48) - Speaker 3 So, also all things are like generic material, so they have their own, even same application, they have their own specification. Yeah. And this is completely different. So, the specification changes the number of holes.
+
+2:12:48 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yeah, exactly. So, what you are saying is, let us take a deep descent, this is the plate, right? So, this is 3 meter by 3 meter. 3.5 meters by 3 meters. Again you have a plate. I am just putting very simplistic example because in ETO this is what happens. It is a plate. But then there are 10 variations of the plate based upon some specification series. So you will end up with 10 parts of the plate.
+
+2:13:20 - Conference Room (Conference Room 1 - L48) - Speaker 3 It is not outside. This is like an external size, right? Maybe the technology comes from the internet.
+
+2:13:27 - Conference Room (Conference Room 1 - L48) - Speaker 1 But the size is same.
+
+2:13:29 - Conference Room (Conference Room 1 - L48) - Speaker 2 The physical appearance is the same until the performance is changing.
+
+2:13:34 - Conference Room (Conference Room 1 - L48) - Speaker 1 That can be one of the parameters. Physically it could be different. So that is the classic challenge of the India industry where every, so there are different ways of solving it. It is an S4 manner discussion. Probably not related to IBQ but there are configurable materials, variant-on-variant, all those parameters are used. Solve this problem. So we know this challenge. When we can have the next session on getting the bill of material?
+
+2:14:04 - Conference Room (Conference Room 1 - L48) - Speaker 2 First of all, we have to get the bill of material and put it in the Excel sheet somewhere. We want to understand the paper first. So this is something you will do? Yeah, we have to do. No, it should be from the end user. We have to coordinate and put it in the system before we come.
+
+2:14:25 - Conference Room (Conference Room 1 - L48) - Speaker 1 Otherwise, it will take So, we just want to set an example, so that we want to set a process, you can then later work on. Let us have the realistic example. Let us take one example, if we can walk through that one example, say let us take a well type and from that well type how would we identify all the, if we can walk through it together.
+
+2:14:49 - Conference Room (Conference Room 1 - L48) - Speaker 2 What we can do one thing, we can take a completed thing for example.
+
+2:14:54 - Conference Room (Conference Room 1 - L48) - Speaker 1 which is fine. Any example where you have all the details available, but then we need to exactly identify for a well type, how we are converting that well type information to all the models required for that well type.
+
+2:15:08 - Conference Room (Conference Room 1 - L48) - Speaker 2 So, should we take a sample of the design for the complete result? Then we can make a decision.
+
+2:15:14 - Conference Room (Conference Room 1 - L48) - Speaker 1 It would be easy because the model is already in place. But we also need to go for the, where we need to do the...
+
+2:15:23 - Conference Room (Conference Room 1 - L48) - Speaker 2 To do that, see, if you make it prime well, you will come with so many combinations. This can be the, because see, the problem, the drilling especially, so no one is seeing where it is going.
+
+2:15:50 - Conference Room (Conference Room 1 - L48) - Speaker 1 So even if the weld type is same, it will change completely based on where it is. One particular weld. One particular what situation that will be there.
+
+2:16:04 - Conference Room (Conference Room 1 - L48) - Speaker 2 Then you will add some materials also.
+
+2:16:08 - Conference Room (Conference Room 1 - L48) - Speaker 1 It is kind of ETA only because it is completely customized to that one specific application. So I think we've talked about this one point, and then how it converts into block metal in SAP. This is the most critical point to open in this conversation. Unless you're able to close this discussion, we'll not be able to close this.
+
+2:16:37 - Conference Room (Conference Room 1 - L48) - Speaker 2 And we want to do this as soon as possible. We need the end users to, you know, No, you can bring the NGSR, the problem NGSR will not get conceptual how to build this one, they are going to put up. So, they can explain what we need, we can do, this is what we have done in 2011. So, we put it everything design and that is ourselves, then we bring them, then they are delivering the record. So, otherwise if you open for them, for what? Are totally different than music. Even if you see the current map, whatever they share, we can see. There's only one competition for it.
+
+2:17:25 - Conference Room (Conference Room 1 - L48) - Speaker 1 Yes. Because the equipment does two things, weather and DC.
+
+2:17:31 - Conference Room (Conference Room 1 - L48) - Speaker 2 Will come totally different.
+
+2:17:33 - Conference Room (Conference Room 1 - L48) - Speaker 1 So we need an artificial intelligence. I am artificially prodding with intelligence.
+
+2:17:39 - Conference Room (Conference Room 1 - L48) - Speaker 2 But then I think this is an important conversation we need to have as soon as possible.
+
+2:18:08 - Conference Room (Conference Room 1 - L48) - Speaker 1 I hope Arun and Hector and everyone, I hope you're following on the conversation we are having in this room. So from our demand of the well drilling, drilling as a process in IBD, there are some agreements we've had on how the entire flow of information from the well to the welder and from back from welder to the well. We have understood that, so we probably have an internal conversation to align with you so that whatever missing part which because of the team on phone cannot be communicated will communicate with you. But from our design perspective, can we agree that this is the philosophy we'll use? We'll dig in on the next steps. But the philosophy is that you will have a plan. We will need that. We will get a well plan from that specific system. That well plan will be converted into Bill of Materials. The Bill of Materials should be created for us. So from a design perspective, we put this high-level velocity to our design document. Because we cannot detail out everything, and we cannot hold the project for designing for this specific task. The understanding of the assumption is we will close this conversation in the future steps. But then we are agreeing to the process that, based on the well-planned, we will have a completion code. And that one completion code, not that completion code can be a combination of different attributes, we will have a key, a unique combination which will allow us to link to all the different five model groups and their beloved model. Those would be created in S4 HANA and we will expand those in IAP. So the philosophy remains the same what we have already demonstrated with you. It's just that how to link all different combinations in this is something we'll figure out. And then the second point is, if we are able to get a standard BOM, then how to get a well-specific BOM is something we'll figure out. But these are the two points we are saying. But we are agreeing to the philosophy of this is how we'll proceed. So then we can design the process around it. The how part, it's a detailing part, which can continue probably for the next few weeks. We'll have two, three more conversations like this to close down the detailing. But then we'll continue in that direction. So are you guys OK with this process? Because we need to document and proceed with the designing of the So we will, whatever you just said, yes. Yesterday, the documents we are working upon, the demand, the inventories. So on the demand side, we will explain this process. We'll not go to details of how we'll reach to the end, but this is the theoretical process of going to the build path. Are you guys okay with this process? Okay, so from a documentation perspective, we'll close the documentation with this high level process. And then the detailing of from an SAP side, what are the fields from external systems and what are the fields and how will we interface? We'll continue. So Hector and team, are you comfortable with this approach?
+
+2:21:07 - Hector Palacios (ADNOC Group D&CS) Yeah, for sure. Let's have, Rahul, let's have later an internal session to understand better, because as you say, many things we lost because you were writing on the board. But yeah, at a high level I am aligned.
+
+2:21:23 - Conference Room (Conference Room 1 - L48) - Speaker 1 Okay, okay. Then let us conclude today's talk. Thank you so much. And we hope to see you again. Thank you.
+
+2:32:00 - Unidentified Speaker Hmm. You

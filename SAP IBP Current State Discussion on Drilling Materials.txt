@@ -1,0 +1,334 @@
+Teams Meeting 
+mié, 25 de sep de 2024
+
+0:02 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) or this part is not impact why because what I'm saying suppose we have 100 piece in stock okay and if there's a pending a material acquisition for 25 out of 25 they already physically issued 5 this is the challenge what the last time I updated the word is inaccuracy coming in the SAP record because physically issued and it become 95 now not 100 Is it clear or I want to elaborate in Excel?
+
+0:37 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, you lost me a bit, but I don't want to deviate this conversation.
+
+0:44 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, it's OK. Let's clarify this 100. We have stock OK. You can see my screen. Yeah. See this is stock.
+
+0:57 - Mohamad Fakhouri (ADNOC Group D&CS) This MR. If you can share your screen. I can't see your screen.
+
+1:04 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This is stock.
+
+1:11 - Rahul Patel (ADNOC Group D&CS) Can you say stock? It's Adnox stock or VMI stock? Both. Both.
+
+1:19 - Mohamad Fakhouri (ADNOC Group D&CS) Maybe if you can highlight the tool so that.
+
+1:22 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So maybe I'll split the VMI then. The non VMI, OK?
+
+1:29 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Not if you can highlight here VMI where it will be in which platform.
+
+1:38 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Is available in on table that will show. So now the first will clarify this point. So VMI also will show that particular part once again. This one VMI now over here 90. Here we have 10. Then MR for 5, 5, MR this is 25 MR here this is 9 plus this is total 100 and POV place for 200 example with so here this 200 now but if you see an SAP right you created the PO for 200 okay for those VMI vendors yeah this is 200 SAP and out of it VMI brought vendor brought this 90 now out of 200 okay out of 200 Can you highlight the years?
+
+2:51 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) This is only for 25, all of them?
+
+2:57 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Which one? This MR? No, first I'll shift it this one. First the PO, then we have stock. We place the PO. They didn't GR in this one, 90. This is stock.
+
+3:14 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This is an idea.
+
+3:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Now, uh, now what? What we have to do now? This is 90 already here. The remaining quantity in the PO remaining. This hour the remaining will be 200 minus. 9090 pending to generate 110 in PO. 90 here in the VMI. And 10 here in stock, so total. Available is 210, 210 available, 25 to issue. So, once we book this material, 100, what is the remaining after the MR? 185, isn't it? This quantity for the future MRs.
+
+4:08 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) scenario here the file we should the material issued physically but not processing system. So what see still we have here if suppose once we process the scenario will become like this. So once we process it becomes zero then it is reducing from maybe stock it will become then it will become still it is 185 isn't it yeah MR is reduced yeah MR reduced stock remain no impact what I'm telling no net impact is not there even though we process not process yeah the planning side the Let's go to again this one. OK.
+
+5:03 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) The software we want to make kitting. Kitting is like another table we'll provide to IVP. This one will give you in Excel now. Then later on, if it's coming from tool, we can integrate. So we'll explain this kitting part in detail. Then perform comprehensive stock review analysis. Is closing stock for each item and categorized by commodity against forecast. This is what we want to do in IBP. Then forecast to actual consumption showing the difference in terms of quantity and value summarized by categorization on quarterly or monthly basis. This is in IBP. Then customer as per the change requirements. This is the final one. So these are the main thing what we captured during our like proof of concept or demo. These are the nodes as is process captured by GoSCM at the time.
+
+6:05 - Rahul Patel (ADNOC Group D&CS) So you want us to consider this requirements as final requirements from the drilling or these are the one of the reference for us when we are discussing. One of the reference.
+
+6:14 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay. Okay. So we want to capitalize this all the study this effort done by the same team.
+
+6:20 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Yeah.
+
+6:21 - Rahul Patel (ADNOC Group D&CS) So you're just sharing the learnings from the past sessions that you want us to consider those as well. When we are doing the process documentation to be and this this requirements become the part of the overall requirements you have.
+
+6:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No other way around. Actually this is done by go SCM and SAP. The same team is working. Yeah, so we don't want to lose this effort as well.
+
+6:48 - Rahul Patel (ADNOC Group D&CS) Yeah, got it. A part of the requirement gathering what we are doing right now, right?
+
+6:52 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly. Yeah, yeah, this is one of the main requirements.
+
+6:58 - Naamani, Mohamad Yeah, for the team, definitely. So that was also an input to the, I know it's part of the input or most of the input for the scope of work and also when we consider the proposal. So that's definitely the case. Now I think Rahul's point is we'll convert this into the official document, the and then we'll fine tune or will double check just to make sure if there is any, let's say. Not 100% match between the study. What we have in the South, the discussions, which is the normal element will will go through this next, OK?
+
+7:32 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yes, Mama, thank you. Absolutely OK now, so there is one more they're done. This is regarding rational analysis. We will go to the, there are many factors then done for the MRO, this all related to MRO. I will not go for MRO planning now. So, we will focus on drilling today.
+
+7:57 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Again MRO, also some use case and even system demo also done. That's why we will, there's a video provided. That's also we will go quickly. This case, the drilling material, shutdown project and based on material, okay. So, these are the area. So we done for the drilling material.
+
+8:27 - Rahul Patel (ADNOC Group D&CS) This is the same list what we have seen in the slide number 18 or 16, right? Exactly. In tabular format.
+
+8:34 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) In the another format and here the western drilling schedule, drilling project, demand supply prime spare parts availability and integration part of it and the use case this all available maybe you can go through with once again with the YCM team who prepared at the time okay so this all almost they presented to us this is and also there is one more session we done after that there is some amendment also they made it as per based on our input and provided on video as well so this is the video let me try to already shared here I'll share it once again maybe also can share share it yeah this is in detail is going same thing but it's also the tool also they demonstrated here you can refer this one and maybe you can arrange on session was done by the by Sebastian I think Yeah.
+
+10:05 - Khalid Sarfaraz (ADNOC Group D&CS) So basically you want to have this session with the drilling where to bring the to convince them you want to have this kind of a demo kind of session with the Exactly, if we can make it because they're little
+
+10:21 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) bit confused. I said later that another project is going on and so which is same or what we are doing here. So at least we have a strong background and we'll explain that they also under the same clarity.
+
+10:44 - Khalid Sarfaraz (ADNOC Group D&CS) So Khalid, we expect a demo again on the similar lines what we have done yes yes yeah similarly kind of a demo with the users with the with the discussion it's not like a earlier demo but demo with the discussion with some of the new drilling users during the 2b sessions right or do you want it no no actually they want have it today evening but I told them that let's first connect with you guys and get your input and then we can plan the session.
+
+11:28 - Rahul Patel (ADNOC Group D&CS) So the session would refer to the old demo or you want us to give the new demo?
+
+11:33 - Khalid Sarfaraz (ADNOC Group D&CS) Old demo also you can session, old demo you can session, it's fine. So it's basically is as part of as is we want to get the requirement for them but we want to you know they have several probably they have several confusion or or clarity so for that purpose the this is
+
+11:53 - Rahul Patel (ADNOC Group D&CS) being requested so you you want us to give a demo to drilling team similar to what has been done before and that's what abdul is explaining that this was done before by yes and the expectation is to have today, tomorrow, delimiting again so that they get a clarity on the IVP solution so that the requirements can be gathered appropriately. Is that correct statement?
+
+12:20 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yes, correct Rahul.
+
+12:30 - Hector Palacios You used to give the expectation we need to review that demo because part of the data that we use like last year is for sure is obsolete. So probably we will need to do some arrangements on the data before doing this so it's not something that you can get from one day to the other probably next week is something that we can promise but not this week.
+
+12:51 - Khalid Sarfaraz (ADNOC Group D&CS) The video is available can you check with Sebastian this video is available probably you can use the video as a reference.
+
+12:57 - Hector Palacios Yeah but if you want to see a system as well this will require some time to prepare the data.
+
+13:07 - Rahul Patel (ADNOC Group D&CS) We should not be looking for a system because it will then derail us from the plan we have from our execution. So probably the best thing can be if we can refer to the same PPT and same demo.
+
+13:22 - Naamani, Mohamad Yes. Yeah, yeah. So this is just a preview. We'll use the demo as a preview now. And Hector, to your point, as we're preparing now the actual instance for AdNoc and No, no, I'm talking about GoSCM system.
+
+13:38 - Hector Palacios I'm talking about GoSCM system. The data we use for that demo is from 2023.
+
+13:42 - Naamani, Mohamad Yeah, no, no. It's clear, but I'm saying, given that we'll use this video as a demo now, as a reference, then if we need to prepare anything, we'll do this as part of what we're doing on the AdNoc system. We don't need to reuse the GoSCM system. That's my point. So let's use this since now we're still in the finalizing the or documenting the requirements and then as we move into the design over the next couple of weeks we'll decide on what would be the best I mean since we're getting the data we'll use also the the relevant ad-hoc instance.
+
+14:20 - Rahul Patel (ADNOC Group D&CS) Mohamad Namani from what I've understood and Khalid correct me if I'm wrong the requirement or the request is to have demo using the old material today or tomorrow and not wait till the to be sessions.
+
+14:34 - Khalid Sarfaraz (ADNOC Group D&CS) Yes, yes, exactly, yes.
+
+14:37 - Naamani, Mohamad Yes, but also team everyone would add no team also. So if it's something just based on the previous one, definitely this is almost like a reference video. But if we need to do the demo per the data we're collecting, we definitely need more time. So let's agree on those sessions. Today we're still in the Aziz in the current situation.
+
+14:59 - Khalid Sarfaraz (ADNOC Group D&CS) This is in order to extract the as-is, we first need to explain a little bit about what's the...
+
+15:08 - Naamani, Mohamad Yeah, if we're using the existing video, that's fine. But for the as-is, we're not done with the preparation of the instance and the sample data.
+
+15:19 - Unidentified Speaker So anything...
+
+15:21 - Naamani, Mohamad Let's schedule it.
+
+15:22 - Khalid Sarfaraz (ADNOC Group D&CS) No, we're not expecting that at this moment.
+
+15:24 - Rahul Patel (ADNOC Group D&CS) Yeah, thank you. Thanks. So the question is, Hector, will you be able to deliver this using old PPT and old video today or tomorrow to give this presentation again?
+
+15:38 - Hector Palacios Are you expecting me to enter to the system or just to show a video?
+
+15:43 - Rahul Patel (ADNOC Group D&CS) Just show a video and just go through the PPT. Not to create new PPT, not to create new video, not to do anything in system, but just walk through the old PPT and old video again with the new audience from drilling material. That's the expectation, correct Khalid?
+
+16:02 - Khalid Sarfaraz (ADNOC Group D&CS) Exactly, yes. So PPT you can take it as a reference if you want to add something from you and that is fine, but this is what the expectation is. Use the same thing and to the new audience.
+
+16:17 - Naamani, Mohamad Yes team, let's discuss this also since Sebastian was involved earlier and we'll confirm before end of We have our internal call during the day will confirm this, but yes, actor will use whatever we have. No preparation. The presentation and the video will use those. It's just like who can count on those which will.
+
+16:38 - Rajiv Kumar Gupta (ADNOC - PE&ICV) Turn it.
+
+16:40 - Naamani, Mohamad Agree, Khalid and team. Yeah, just let us make sure we're ready, OK?
+
+16:48 - Khalid Sarfaraz (ADNOC Group D&CS) And also so OK, this is one discussion related drilling. Since all the focal points is here and I also invited Dhya here. So, yesterday we had a discussion on the chemicals items. Dhya, do you want to highlight or give us some understanding of the chemicals for the MRO items?
+
+17:18 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Actually, I arranged a meeting today, me, Mr. Morgan and someone from DCFD, this one part of this operation, and they will have discussion about this issue. Today I arranged that meeting and agreed with Mr. Morgan after this meeting finish, we will have this separate meeting.
+
+17:44 - Khalid Sarfaraz (ADNOC Group D&CS) Okay. So you want to have a... Okay. Murugan is available today or did he confirm the meeting?
+
+17:53 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) He is not in the meeting I believe but I confirm with him that that session which you are going to handle separately after this meeting.
+
+18:05 - Khalid Sarfaraz (ADNOC Group D&CS) Do you need us in the meeting?
+
+18:08 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) If you want to come to join actually I asked one manager DCFS the manager and one of his colleague will also join. And if you want to join, sure, you can join. No problem. If I will call you in the, if the meeting started, I will call you to join the meeting as well. Okay. No problem at all.
+
+18:31 - Khalid Sarfaraz (ADNOC Group D&CS) All right. Okay. Okay.
+
+18:34 - Mohamad Fakhouri (ADNOC Group D&CS) So, so you'll based on the, based on the meeting that you'll conduct, you'll tell us the requirements for chemicals.
+
+18:43 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) or yes you'll schedule a schedule another meeting to walk us through what was has been discussed well if if also you want to attend because I'm not the one who will go who's going to give the demands or the the things about the chemicals it will be mainly those people who are completely involved in this issue okay and they are the the custodians of this type of material. Okay, so if you want also to join, okay, I will, I will add you in the meeting. Just if it's possible to send me like an email with the names Mr Khaled Shiraz, Mr Mohamed Fakhoury, just because when I start the meeting, I will try to add you in this Yeah, this one this material the chemicals
+
+19:39 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) and using for the drilling in the rigs or Using in the trip, okay If you see maybe we have we can capture no as one of the planning area this chemical in offshore also we have like outside system planning. So maybe in the same meeting or some different meeting, we can just walk through the planning how we are doing in offshore. Especially we have two commodities, one is production chemical we called, which is used in the production, like operation part of it. Another one we call mud chemical, which is used in the drilling, or drilling fluid. So these two commodity we have as a chemical. We are also doing the planning.
+
+20:30 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) I think both, we have some common material used by us and you because we usually take from you and you take from us.
+
+20:40 - Unidentified Speaker Yeah.
+
+20:42 - Yaser Salem Bin Zubaa (ADNOC - GP) I think you need to add anyone from also onshore.
+
+20:45 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, definitely. Onshore also.
+
+20:48 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Exactly.
+
+20:49 - Unidentified Speaker Exactly. Yeah.
+
+20:50 - Yaser Salem Bin Zubaa (ADNOC - GP) Yes. Onshore, offshore and drilling.
+
+20:52 - Khalid Sarfaraz (ADNOC Group D&CS) It will be okay.
+
+20:54 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Chemical planning. Current or better.
+
+21:02 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Okay, because the scale of this meeting will be that big. So I believe someone from your side, I can give you the names of our people, me and the other people, and you can arrange a meeting for all these people. Me and these two people, these two guys and anybody from offshore, onshore. So somebody has to arrange a meeting for this topic separately with these three companies us and offshore and onshore I'd like it to be it would be better like this so I can drop I can we can we can we can do this we can do that yes yes okay so I'll drop that people in the chat box that people's email yes yes these two guys I'll drop them in the in the chat box so you make a meeting invite them invite me and we will attend those meeting. And also from other company, this can be Abdul can recommend.
+
+22:02 - Khalid Sarfaraz (ADNOC Group D&CS) Abdul, which companies if we let's say consider the chemical planning, what are the other companies we should consider onshore, offshore, drilling?
+
+22:12 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Maybe Sour Gas.
+
+22:13 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Sour Gas we have to check that still they started operation or not. So then we have the chemical or all the company we have? All the company? Yeah, production chemical, yeah.
+
+22:28 - Khalid Sarfaraz (ADNOC Group D&CS) Production, but is production we are considering?
+
+22:31 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Khalid, there is two type of chemical we have. We have chemical related to drilling. We have for this type of chemical onshore, offshore sour gas. But for the operation chemical and lab chemical, it's for all group companies. So just we need first point is to clarify the reason of this meeting. If it is related to only drilling chemical will include the three, uh, three companies, which is onshore offshore. Sorry for companies onshore offshore drilling and sour gas. Or this is stage in case of there is a, uh, operation. Chemical will be included in the topic. We need to include the other team members from other group companies.
+
+23:17 - Yaser Salem Bin Zubaa (ADNOC - GP) I totally agree with you Ahmed. This is I think this quick summary. If you need another meeting for the operation chemicals, we need to have another meeting. We need to invite all concerned end users.
+
+23:31 - Khalid Sarfaraz (ADNOC Group D&CS) So the operation chemical planning is different from the model.
+
+23:40 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Chemical chemical planning operation chemical. Maybe you can consider oil, you can consider lubricants and lubes.
+
+23:50 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) The users, they are different.
+
+23:55 - Khalid Sarfaraz (ADNOC Group D&CS) So let's do one thing, let's focus on the drilling chemical planning first.
+
+24:03 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) I dropped a two-person email and of course my email, so you can arrange a meeting and I will convey this message also to Mr. Morgan that we decided in the meeting that we'll be having a separate meeting and the company will be invited to this meeting. I'll send him a message. Is it fine to do it today afternoon? No problem.
+
+24:26 - Khalid Sarfaraz (ADNOC Group D&CS) No problem at all.
+
+24:28 - Rahul Patel (ADNOC Group D&CS) A quick question here. The chemicals used for drilling, are they also part of EMI or it's an add-on component?
+
+24:38 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This one actually we are not keeping stock. This is already VMI or just-in-time we can say.
+
+24:45 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 2 I think based on the new framework agreement we are not going to keep these items in stock for drilling. So let's make clear on the requirement for drilling chemicals. Maybe after we check with end-users then we can have a session for that. Let's go with production chemical right now. Because we need to really check on how it is going to be managed in future.
+
+25:13 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So we can check. So what I actually guess I think there is one framework agreement under establishment. So once they're done, the entire scenario will change. So we will check internally will come back.
+
+25:26 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Currently we are not ordering. We stopped ordering any drilling material, so only it's just depletion of existing stock so we need to see how maybe it will not be fruitful if you arrange a session so let's check internally and then we'll come back for drilling for production we can proceed and also tie-in Khalid we need to also have a session for tie-in material separately yeah okay you can have the plan and all so maybe and I won't session quickly for the time.
+
+26:06 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) If you have a five minute time, so maybe now this is a table.
+
+26:13 - Khalid Sarfaraz (ADNOC Group D&CS) Just one minute, just one minute before we start there. So we need to have one session for the drilling, one session for the chemical planning and one session for the tie-in. Three sessions we need, right?
+
+26:25 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) One more drilling chemical.
+
+26:28 - Khalid Sarfaraz (ADNOC Group D&CS) Drilling chemical. Drilling chemical. Drilling chemical will be after your discussion Ashik and Abdul.
+
+27:00 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Yes, yes.
+
+27:01 - Unidentified Speaker OK.
+
+27:03 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 2 But will this be same for ad-hoc drilling?
+
+27:05 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 I'm not sure if this is for.
+
+27:10 - Mohamad Fakhouri (ADNOC Group D&CS) So you're saying that all drilling materials will be ordered just in time?
+
+27:20 - Unidentified Speaker No, no, all in drilling chemical.
+
+27:22 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, that's correct.
+
+27:28 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 2 But anybody from Adnok Drilling here, is it going to change for Adnok Drilling? And are they using drilling chemical?
+
+27:40 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Yes, yes, yes, we are using drilling chemical, I mentioned in the beginning. And we will join that meeting, which I, Mr. Khalid and Mr. Mohamed, they said maybe we'll have it today afternoon, right?
+
+27:55 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 2 So, but then, This is, you are using it on behalf of the upstream companies or is it that because you are providing rig service, right? So how...
+
+28:06 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) Yes, yes, yes. We're using it in the rig.
+
+28:09 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 2 But is it, are you as a provider to upstream companies, are you using chemical as a service provider?
+
+28:18 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) See, the clear, this is what I told you. Maybe it is there, I don't know because I'm not involved with this, fully involved with this issue. So this is why I'm bringing, we suggested that meeting to bring the people who are handling these materials.
+
+28:33 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 2 No, no, so why don't you check internally within your team how it is done, make sure it is, is it as a service provider to upstream, onshore, offshore, or it's like you using it during your rig operation, because maybe it could be different from offshore onshore how it is going to be for the new framework agreement so just understand internally then we can have maybe me you and Abdul can a discussion and just decide we do we do
+
+29:05 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) we need a session or not we'll have one internal session yeah so then we'll bring all the parties and we'll discuss internally then we'll have separate workshop on OK.
+
+29:20 - Dhya Aldain Abdulaziz Awadh (ADNOC Drilling - PD) So today meeting today meeting is still still there or. Or the meeting with these people or still we will be having a previous meeting and then we will decide in that meeting to either to bring these people or no.
+
+29:35 - Unidentified Speaker Yeah, today we can do the internal maybe.
+
+29:39 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) We can. We can have a meeting after this one. We will finalize with Leah. We'll move forward. With this session today. Now, after this meeting, immediately we will have a call to understand where they are using this chemical and who's the user. Based on the decision, we'll move forward or we'll hold the next meeting, okay?
+
+29:59 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 2 Yeah.
+
+30:00 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Okay, great. So, Khalid, you can move forward here.
+
+30:05 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, okay. There was one question in between ask for the VMI material of the visible NSAP. So, this is the table we interfacing between supplier system and unknown system so here these are the identified vendors exclusive for VMI for the and we categorized into the company code and the supplier so it will come here then this is the table so it will for me to get it on offshore related one so then this table so anyhow so we will make a separate session during session will explain so what is the stock here showing unrestricted it is in the supplier side so and ownership also switch supplier it will their market then same item it's the VMI item this is the same item available in our unrestricted this is under adnox stock so this is the
+
+31:05 - Mohamad Fakhouri (ADNOC Group D&CS) tabletop MB 52 yes so Abdul for the same item material you can have it either an ad-hoc stock or it could be an VMI yeah as explained see we make a PO first then put it in the will 90
+
+31:26 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) not reflect in the ad-hoc stock so ad-hoc stock it will show like this stock VMI so here the mostly maybe I spend last time so we have two type of stock can be accumulated one is we called like after the threshold they will transfer to us which is we explained last time 12 months yes they will back to us then another stock is coming to us whenever we issue to the rig then rig return RR this is another topic So two possibility to come into ad hoc stock. Those items will show here. In ad hoc system and now this is not. We are not fully utilizing this this table. This is not fully stable. What we do, we will ensure we will make it in parallel. We will discuss with all the supplier. Then we will ensure this inputs are correct. However, we will connect to this table. In respect to the supplier VMI type.
+
+32:37 - Rahul Patel (ADNOC Group D&CS) So you want us to consider that the stock of a material can be at two places, one at VMI, other at AdNocStock. AdNocStock comes from standard MB 52 report and the VMI stock comes from this report. You will make sure that this report is working fine.
+
+32:51 - Unidentified Speaker Excellent.
+
+32:56 - Khalid Sarfaraz (ADNOC Group D&CS) So, Dilip, if so here in the OK from where they are inputting the data is it screen yeah we even on like that's called a separate table refresh it there is a connection between this table and the sub vendors so they have yeah it's there is an interface connectivity or for this table so this table is daily so yesterday night the first you can see the time 24 9 21 so this this table is basically whatever is available in the VMI stock right and based on this you can place an order or something right yeah yeah and this adnog GC is the company code 1400 Yes, yes, yes, pure under the plant level yeah but yeah when once you issue the pure you need to have the plant right you cannot do it on the company code level yeah you need to have plant in perhaps maybe storage location as well then you bring it into a particular so
+
+34:39 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) if it is company code level how do you differentiate between like different locations of eml no see uh this whole analysis we're doing uh doing under the company level availability, which order took place, like that. And the requirement, it will convert from the MR, it will convert to the plant level. So, based on that, we have to receive the material against PO. So, whenever you do mapping, you clearly understand. So, mainly from this point, the plant is coming to the picture from the MR, whenever the issuance is happening. If we are not receiving the same plant from the PO. So what we have to do, we have to make STO.
+
+35:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) And what we do, we will make it two things here. One is this connection. Whatever we do, the connection will make Excel sheet as well in parallel to assure the readings are correct.
+
+35:41 - Rahul Patel (ADNOC Group D&CS) So probably this can be discussed in detail when we do the 2B documentation so that we can map together, but for now I think on high level this information is sufficient that we need to consider this VMS talk as well as part of our discussion.
+
+36:02 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) And have anything else to discuss today or is it okay? Ashik, you want to add anything?
+
+36:36 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) You tell me. So, so we are done. Yeah, done. Ashik, so is it okay now? See, Ashik, one more session. We are requesting to demonstrate whatever the same demonstration GoSCM done for us last year. So, it will repeat once again with the drilling team as well. And based on that, they can prepare all the input details so I collected much information detail from offshore so I'll put you in cc similar one you can get it from onshore as well so at least we can move
+
+37:11 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 ahead a little bit on the drilling part of it yeah yes we can do as as you discussed so I will get the details they are not available today so I will try to share those documents and maybe latif
+
+37:27 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) you said you you have those uh details yeah as offshore said I got it all the details so okay yeah please uh whatever information you can start sharing and yeah okay okay then I think khalid will get back to
+
+37:55 - Rahul Patel (ADNOC Group D&CS) you on on the sessions how we can have that. Yeah, you can help us with the remaining sessions for telling us after you conclude internal discussions.
+
+38:07 - Unidentified Speaker Yeah.
+
+38:10 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Just to regarding the forecast. Like we get multiple forecast, maybe quarterly or in quarter. Maybe there are two three focus and it changes drastically between forecasts so we need to also traceability of different forecasts when even historically what was the scenario and also what-if analysis like sometimes maybe the forecast is not approved but they do a scenario of what-if analysis on the stock so accordingly if the plan can be achieved or not so there are such requirements as well apart from the stock review report which we were discussing and also the forecast to forecast consumption I mean forecast to forecast comparison maybe in some cases we get drastic changes so maybe those forecasts cannot be achievable so we want to have a comparison between forecasters and as well as forecast to actual and the forecast and actual consumption we have maybe the we want to check the accuracy of of the forecast so what was the forecasted and what was the actual consumption so there are some such requirements maybe we don't know if this is detailed in those requirements.
+
+39:45 - Khalid Sarfaraz (ADNOC Group D&CS) Hector, correct me if I'm wrong. This is part of the IBP planning tool. It's a standard feature, right? But the what-if scenario is actual versus consumption.
+
+39:57 - Hector Palacios Yes, it's part of the standard and general scenarios to do the what-if.
+
+40:02 - Unidentified Speaker What-if, yeah.
+
+40:04 - Khalid Sarfaraz (ADNOC Group D&CS) But note down the requirements which Ashik has said, make sure we don't miss anything.
+
+40:14 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Basically, what Ashik is explaining, we want to keep all the plan in the system. We should not replace. So, suppose we received in July plan and July plan to August plan, we have to compare. So, July plan has to keep it as is. And also, in addition, suppose the September plan, I have September plan as a draft. We have to prepare a separate plan draft also put it in the system and we can analyze based on the draft scenario so it will have to capitalize a draft.
+
+40:45 - Hector Palacios For sure we can keep versions but the main purpose of IBP is not to be on a storage of many many versions so for example maybe we can keep two months version or three cycles versions but if you want me to keep the whole year versions that is not going to be possible.
+
+41:12 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 What is the limitation in keeping the forecast information because when we do yeah when we do the analysis it is based on the current data I mean so it's generative data as of at the moment when we generate the report the forecast data is what is being stored so that is limited information whenever we have so we can have it say about maybe two years or three years forecast information within the system.
+
+41:47 - Hector Palacios Forecast information yeah maybe we are talking about different things because the forecast that you did on the path the number will be there but if you want me the whole planning version of July for example.
+
+42:00 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Yeah that's okay we can save at that time but when we want to generate the scenario of comparison between that forecast and this forecast yeah so we can always generate with that historical data that is already in system.
+
+42:20 - Rajiv Kumar Gupta (ADNOC - PE&ICV) Yeah Hector we discussed this before actually you know the forecast accuracy we need the actual the old data as well, right? You remember last initial meeting we discussed, like, because if you do not, if you do not keep the whole day forecast, how you will do, you know, do the...
+
+42:39 - Hector Palacios No, no, yeah, that's what I was saying. Because if you want me to keep the version of the forecast of the past, for sure that can be done. It's not an issue. If you want me, for example, you have the forecast that you are doing for, let's say, October, and you want me to keep the version that you did on July, the version that you did on May for October again, the version that you did on January for October, that is another thing.
+
+43:06 - Rajiv Kumar Gupta (ADNOC - PE&ICV) Yeah, at least for the current year.
+
+43:12 - Hector Palacios So let's try to understand later on the session what is going to be the real request and then I can tell you for sure Just keep this point.
+
+43:25 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Yeah, and apart from that the stock information that Abdul just showed in Excel sheet it is. What he showed is a combined data, but when we are going for the real system information we are, we need to do it breakdown by suppliers. The stock PO. Outstanding orders should be based on suppliers because we have different supplier agreements and different percentage of commitment in agreement. Some are 50-50, some are 70-30. So based on that, we have the stock information and also the commitment and the order placement is based on the percentage of agreement within the contract.
+
+44:12 - Hector Palacios Okay, so you have it like what else? Yes, that is standard functionality.
+
+44:17 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Yeah, okay. So it's going to be on based on supplies. All the information that we receive should be based on the supplier.
+
+44:25 - Hector Palacios Yeah, for sure.
+
+44:40 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, uh, almost that time, uh. Any more questions? Um, just so two minutes. Next steps. Uh, I know you will have an internal meeting just to discuss what are the, uh, if we're going to proceed with the meeting this afternoon. Uh, and then invite the key stakeholders.
+
+45:07 - Khalid Sarfaraz (ADNOC Group D&CS) And then the session you're talking about.
+
+45:17 - Mohamad Fakhouri (ADNOC Group D&CS) and Ashik after this call if you don't mind sharing the documents.
+
+45:26 - Khalid Sarfaraz (ADNOC Group D&CS) And for the for the drilling session or demo you will let us know when you.
+
+45:33 - Mohamad Fakhouri (ADNOC Group D&CS) Yes yes yeah we have a call internal call end of day so we'll give you an update on.
+
+45:43 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah I'll appreciate if you can provide before.
+
+45:47 - Conference Room (Mohammed Ashic (ADNOC Onshore - PD)) - Speaker 1 Do we have any session today scheduled? I cannot see it.
+
+45:52 - Khalid Sarfaraz (ADNOC Group D&CS) Today afternoon we don't have any session actually. So now we are having focus sessions. So our current plan is, but if you want we can schedule something today. I was actually thinking to plan for chemical, drilling chemical today. Can we or you think the stakeholders will not be available today?
+
+46:14 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) but today not available because there is a knowledge sharing session okay so energy center so none of the drilling team available anywhere all the team are there so this one we will discuss tomorrow and we will come back the time on the drilling chemical production chemical we can try today if you want yeah production chemical so what we can do Najib is doing for of maybe he can present to us what he's doing and maybe the similar one we can request maybe we can provide time to other group company either they can if available they can present otherwise we can have one more session for that. Najeeb from where? From offshore so yeah so it's available today so maybe I can arrange the chemical production chemical planning.
+
+47:11 - Khalid Sarfaraz (ADNOC Group D&CS) Okay, so let me discuss this with the team and I'll let you know if there is anything I'll send the invite. Or someone from the team will send okay.
+
+47:38 - Unidentified Speaker All right. Thank you.
+
+47:40 - Mohamad Fakhouri (ADNOC Group D&CS) Thank you, everyone.
+
+47:41 - Naamani, Mohamad Thank you. Thank you. Thank you, everyone. Thank you. Thank you.
+
+49:37 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) even point. Yeah. Thank you very much.
+
+49:40 - Unidentified Speaker you

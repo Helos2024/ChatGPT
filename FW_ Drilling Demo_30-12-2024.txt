@@ -1,0 +1,594 @@
+Bastian Osorio:
+And I don't miss both.
+
+UNKNOWN_SPEAKER:
+So I don't work from which city of India.
+
+Rahul Patel (ADNOC Group D&CS):
+I probably I have not spoken to her in before.
+
+UNKNOWN_SPEAKER:
+I'm not sure.
+
+Bastian Osorio:
+I know being is from Mumbai. We make is from Mumbai.
+
+Rahul Patel (ADNOC Group D&CS):
+Probably I should. I should have made the same team in one of the calls just and where they are so that we can socialize. Hey Arun, we were just talking about you. Hey guys, how are you? We were just checking. Arun, by the way, from which city you are from in India? I'm Mumbai. Mumbai?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I'm now in Mumbai. Bye, darling. So where from Mumbai?
+
+Rahul Patel (ADNOC Group D&CS):
+Where from Mumbai?
+
+UNKNOWN_SPEAKER:
+Western suburb.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Western suburb? Exactly which?
+
+UNKNOWN_SPEAKER:
+Gonegaon.
+
+Rahul Patel (ADNOC Group D&CS):
+I'm in right now.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yeah. Okay.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I have a few friends over there. Yeah. Okay. We have Ignatius on the call.
+
+UNKNOWN_SPEAKER:
+Hi. Okay.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So while you were trying to understand where we are located. Let's start. Yeah, let's start.
+
+Rahul Patel (ADNOC Group D&CS):
+Go ahead and
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Let me share my screen.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Just let me know once you can see my screen. Yeah, I can see now.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So, basically, I have taken this small set of data. For this completion code, we have these different wells, rig and other relevant data. So, for this completion code, like last time what we discussed, based on the completion code, well type and field, we will have material code or header material code. So, for that header material code, we will have...
+
+Vignesh Perumal (ADNOC Group D&CS):
+type, well type, completion type, well type, field and casing design, right?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Casing design, I'm not sure if this is the one that denotes the casing design, because if this is the one, then probably we will not have the bomb, you know, like adequate amount of bomb items, okay? Because, for example, 13.5, right? So for this completion code for this well type for this field and probably let's say if this is the case in design 13.5.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Please note it down and you need to get this clarification from Abdul Latif when you connect with him. Because the DWS guy he did say particularly that one So there are two things, Vignesh.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+One is like the focus that they view, right? Is that like, so like the number of quantity of this particular item is required, right? They view it, casing design, completion code, and what will that, but the BOM is defined is that completion code. Okay. But yeah, I've noted on this thing.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Again, BOM is not just completion code, please get it validated and don't assume such sort of things.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So in this file, we don't see the generic code, the generic material code. That like the generic SAP code, this is the branded material code last time they have mentioned.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Are these the branded codes or the generic codes?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Rahul Patel (ADNOC Group D&CS):
+Last time when we had this discussion, they said they are grounded.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+We need generic SMB code.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So that is why you don't ask him because there is no point in doing this demo. If you don't have the information, then you need to ask Abdul Latif.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+We have asked that time only like we need generic material code. But the other user, I don't know They said there is some process, but we we would need a generic model code. So maybe we can get in touch. Yeah. We have to get. I don't understand what is the purpose you are trying to show me anything now.
+
+Vignesh Perumal (ADNOC Group D&CS):
+You know this is not resembling close to what we we want, right? We always said that we will be planning at the generic item level, isn't it?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yes. Then what are we witnessing now? So what I'm trying to, you know, focus here, that based on the data they have given, right, and whatever I have assessed, right, based on the data that was provided. I want to be very clear.
+
+Vignesh Perumal (ADNOC Group D&CS):
+It is not whatever data you have got and whatever data you have assessed. Is this the design that we agreed? Now, if you don't have the data, then you need to ask the data. See, guys, you how you got until you got the data for MRO for chemicals. All these things. If you don't have the right data, if I if I witness this, I'm not here to say OK, do something. Let me see now. This is not the way. If these are not even generic items, then what is the purpose of this call?
+
+ I don't want to just see something you know and say yeah, it's good. No, that will not work. I agree. Sorry, let me say something.
+
+Bastian Osorio:
+We had a meeting with this data, with this very template. And it was someone else said, no, this is the data. This data is enough to build the model. So please don't ask more detail about data because this is enough. You should be able to build everything you need from this data. So we tried to build based on what we have. We asked for more information and it wasn't provided to us.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So then you should clearly point out that if you are not getting the data, you will not be able to set up the system to show it. Because if you are going to use for your planning itself, if you are going to use a specific number, what you are trying to do is you are trying to take inputs from the supply planning and use it for the demand planning, right? This is what you're trying to do now, correct, isn't it?
+
+
+
+Arun Tejnarayan (ADNOC Group D&CS):
+What you said, sorry.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See, your specific materials, specific materials are VMI specific. These are specific materials that should not be, you know, used for demand planning. See, generally what they are doing in their business, they will say that I need 15 feet of tubing. OK, like that it will be. They will not say that I need a 15 feet of tubing from, you know, say technique. This is not how it is done, so I don't know what you're trying to just have you going to show the demand review how it will look.
+
+
+
+Arun Tejnarayan (ADNOC Group D&CS):
+This is what you're trying to do today. So basically what we're trying to do right? This is the example that we are focusing to present the demo. But what you said is correct that the data is not there. Out during our last discussion about the template thing. So they said based on this data, available data, you prepared the demo and also map all this relevant master data. So from that discussion only, we are already pointing out that data are missing.
+
+ It's not there. What I'm trying to do, what data that we have. So for example, these are But they don't have like they don't provided a generic code. So what I'm trying to do now is that whatever the master data is required, right? For drilling demand process. Okay. I'm just updating those relevant master data. Okay. So, so tomorrow I think we have a discussion. I think tomorrow we have a meeting, right?
+
+ With Abdul Latif and other guys. So I'm just trying to emphasize that this is the sample data that we will be using in our demo. But some data are missing, that is correct. We will get those data and populate the correct mass data. I just wanted to present the skeleton, how the master looks like, For example, the equipment basket for the relevant demo data. So these are the relevant uh uh bomb structure okay and basically here right we will need uh the material code that you will be creating right based on those uh different material class right uh completion code and all those other attributes the main challenge would be uh that I wanted to discuss with you about like what what is your your thought on this okay because let's say for this completion code in this well right for example any value the coefficient or the quantity is different so basically we need to because in the AWDP there is only one quantity there is only one stagnant quantity right and in the excel file they are just updating so what logic should we use okay that is one because for you need to ask me questions to business not to me yes no no I'm not asking you question it's just this is all these are my findings okay so we will have all this collective information that we will be pointing out in our tomorrow calls.
+
+ OK, I'm just informing you that these are some of the pointers that I found out right during the mapping of all this data.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yeah, if you have such a sort of observations, put it in an Excel sheet and ask Abdul Latif to respond to you. And not respond to you in the sense, respond to you in the meeting. Ask him to document whatever against ask him to document in the mail saying that for this, because the way he's pushing it, he's just he's not. He's saying that I provided the data and now we have so many observations. Let him if we are not able to get even one sample data properly, how we will go live in three months.
+
+ Anyway, that is that is see, but you can see all generic code over here in this sheet over here. You you model that all those are generic code.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I have just modeled those as a generic code, but it's a matter of time once I get the data, I'll just replace it. But the skeleton of the demand for drilling process will look like this. We will have well, we will have location, we will have all those relevant materials, then we will have equipment basket. Here the completion code or SAP code we will be getting from you, once you create in S4. And then we will have well plant.
+
+ OK, based on this demo, these are the well that will be loaded and then the explosion of the bomb will happen in IBP. On a real time basis, OK?
+
+Vignesh Perumal (ADNOC Group D&CS):
+Wait, wait for you. Then what you are doing is what are the data that you are doing? It is well, well, well or well type. This this. These are master data, isn't it? Location materials. This is the way the well is containing the well number or the or the or the well type. This is the well ID for each and every well ID you are creating a Entry into this table.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yeah, correct, correct.
+
+Vignesh Perumal (ADNOC Group D&CS):
+OK, and well type is one of the attributes. This is what you're putting column F.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Correct, so in IBP right Vignesh in IBP like this. These different master data right will have a key. Required attribute let's say and then others are optional attribute or additional attributes. So key will be a unique like in S4, we will have unique key records or unique key entries. So the same concept is similar in IBP, we will have additional attribute plus we will have key. So this value type is a part of an additional attribute.
+
+ Similarly we have location materials in materials. These are some additional attributes and then we will have the equipment basket.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Just like they have equipment, equipment basket is now being, you know, determined based on what? Because here I can see here your sequence, your adnoc plant, generic code completion code. But how are you? See how bad where are you trying to? Say that. This equipment, see, for a combination of well type, completion code and field. Let's not worry about casing design right now. Based on that only, you need to determine the basket and under the basket, there will be materials.
+
+ Now, I don't see anything like a basket grouping, you know, like a basket or what is, where do we, where do you see?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yeah, understood, understood. So basically right you will be creating this header material code okay completion code okay one zero two for example you will be creating and you will have bomb okay when you are when you are seeing now you I understand
+
+Vignesh Perumal (ADNOC Group D&CS):
+you are taking the number one zero two from the example that I gave you the other day correct correct why don't you why don't you even you know make something proper when when I showed you one zero two there was a description that was having a particular well type well type and field and something else as a combination completion code. Why don't you use that? See not 102 see this is not.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+OK, I understand your point, but we cannot use that because when planner will be maintaining.
+
+Vignesh Perumal (ADNOC Group D&CS):
+You are going to show tomorrow when you are going to show why you are going to show 102. 102 is an internal material number, correct? 102 is an internally generated material number. OK, if you want, then you add 102 and see when you want to see the data 102 mean will mean nothing. OK, in that if you want to add one more column called us bomb title something like that.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Otherwise how anybody? I understand. I understand your confusion. So see what you're saying, right? All this classification, right? Class right uh completion got all those will be part of material master data so when they are using this when they are viewing the data in template right in the ibp template for example like this j okay so they so we will have those predefined attributes already been used in this template so basically we will not be displaying see this is like what we have in s4 okay so in s4 you will have bomb against 102 not against all those class those are reference point based on that you are creating bomb right so basically in CIDS okay in the interface we will have that logic that whatever the completion code well type and the field right so system will pick the relevant material code head of material code and then the whatever the components are It will be put against all the valid this well ID.
+
+ So all those logic will be behind in CIDS.
+
+Vignesh Perumal (ADNOC Group D&CS):
+If you want to show something to a user who you want them to understand, then don't use this 102 for example purposes. This is a suggestion. If you want, take it or leave it.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+That's it fine. OK, go ahead. OK, so but in S4 on also right you are. If you will be showing the bombs right data, you'll be showing against this material code only right?
+
+Vignesh Perumal (ADNOC Group D&CS):
+102 OK, but material code. Why don't you want? Why don't you add one more column called as you put bomb header bomb description?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so we will have all those. Let's do one thing rather than Let's give input to weakness that based upon the Excel sheet. These are the actual bill of materials data and he can create a few for us with right combination and we use the same rather than I am not.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I am not going to do it by the way. If you are expecting something to be presented tomorrow, I will not do Rahul. I can do only on Thursday, OK?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yeah. See now there there is one more thing. Check with Abdul Latif on the missing data. And secondly, what Vignesh is saying, like descriptions and other levels of attributes, that will be used as a part of additional attribute in this material mass data. So if you see over here, we are accounting also header material code, 102. And against that, we will have all those different attributes So this is behind the scene how the bomb is maintained in S4 HANA.
+
+ The same data will be brought in IDB.
+
+Rahul Patel (ADNOC Group D&CS):
+So what I would recommend, Arun, is considering we have to request this data to be created in S4 HANA. Let's plan based upon Vignesh's availability when he can help us create this bomb. But expectation is that we should give this. So whatever Excel sheet what we have defined based upon input from the end user. Let's use this data and create one or two Bill of Materials in SAP and based upon that Bill of Materials we'll say that whatever is the actual metal code.
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+We want to use actual data, actual BOM and actual metal codes in SAP. I have a question for you. You guys have an MM consultant and you have system access. I have shown you how to create Why don't you go and create the bomb in SAP? What prevents you from creating the bomb in the sandbox system? Can you hear me? Yes. We are not the data owners.
+
+Bastian Osorio:
+We don't want to mess up with your data. This is a test bomb.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So please don't give me, you know, there is no bomb in the system. You are having this material numbers. I showed you how to create the bomb. Why don't you ask your MM consultant to create the bomb, which I don't understand.
+
+Bastian Osorio:
+I showed you right how to create the bomb. No, no, this is not a technical problem. This is a definition problem.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Definition what? I told you how to define a bomb, right? See Rahul, can you guys, you know, create the BOM the way you want and you put even your BOM number over here. Why your MM consultant is not able to do this? Is nothing but a material header with 15, 20, 100 components inside.
+
+Bastian Osorio:
+We know that Bignesh and again it's not something that we didn't know. The thing is that we're going to define, we're going to make the definition that's fine but we expect that the business and not you. It's not about you. It's the business taking the ownership of the definition. If we can do it, right away, but if then they say, no, this is not what we wanted.
+
+Vignesh Perumal (ADNOC Group D&CS):
+That is not how it works. That's not how it works. You will make a proposal. Business is going to either agree or they may propose a change, right? It's not that you propose No, we are going to say that based on the well type, the completion code and the field, these are the three attributes which are going to be there in the class ZMM drilling bomb. And based on that characteristics, we are going to have a superbomb for each type.
+
+ And this is what we will tell them. If they want any other attributes like casing design, then they will have to tell us or or maybe even we may have one more attribute called as additional additional bomb because additional bomb in the case of main or type bomb type you know it's main bomb or additional bomb so that that's it so you remember right they were telling that some bombs have main some bombs are have additional components right so if we want to define this is the way we will define it and we will show it to them if they want then let them propose any change.
+
+
+
+Bastian Osorio:
+But as you said, we agree on that. We can do that. But even as you're mentioning, we're not clear on the definition. You mentioned different options. And for us, the right way to do it, avoiding all these iterations, is they having one single definition that will make things way faster for all of us.
+
+Vignesh Perumal (ADNOC Group D&CS):
+if you need my support you will not get it this way see if you are not clear you need to have few proportion options okay you say okay I will have three attributes I can determine the bomb or I will have four attributes determine the bomb if you say that I will not I will not do until because I am not clear then how this will work I don't understand see you you say that to is to push
+
+Hector Palacios (ADNOC Group D&CS):
+the definition. I don't think that we need to start proposing something that we understand no better than you, because the business is the owner. They know how to define the BOM. Or if there is someone that needs to write the BOM, they are the best ones, not the consultants. So we can push for that definition. Now, related to what we are saying about this, we don't need it. We can just put the BOM on an IDP system and work from there.
+
+ But the definition, I think that is something that we need to get from the business.
+
+Vignesh Perumal (ADNOC Group D&CS):
+It's not something that we can start proposing whatever we think. Why? Why? Why cannot you propose? This is my question to you guys. You have been through so many sessions. Why cannot you propose and put the ball on their court and say, you need to now confirm? Yeah. See, you are getting into a solution where you are not going to get to the immediate right If you keep saying that you give, you give, they will keep on telling you the same thing.
+
+ I give you the data, you come back to me. Why a simple, you know what?
+
+Bastian Osorio:
+I believe we have done that and they say no, this is not what we want because they are not agreed on one single definition. It depends who we ask. They say yes or they say no. We need this.
+
+Vignesh Perumal (ADNOC Group D&CS):
+We need that. You need to. You need to see. Bring them and say you write it in a mail. This is our bomb definition. If you are not aligned, please give us the inputs. Copy the project manager, bring them into the steering, meet a steering committee. This is not see if you are going to say again. This is my opinion. If you are going to always say that, let them give, let them give. They will say I give you the I know ability 40 saying by the way he is saying that I given you the file.
+
+ Now it is up to the consultant to come up with a design that suits my requirement. Now what you know see and in and it is not something that you guys don't know you in the EWDP system. The bomb is based on 5 parameters that is your well type field completion code and casing. This is what we saw the other day. You make it clear that based on the demo scene, I also have the demo. By the way, I recorded the entire session.
+
+ Even I can tell tell them that based on the demo shown from the EWDP. Key factors for determining the bomb. Based on the bomb, these are the components, these are the quantities will be there. So this is the way we will tell them. If they are not agreeing, then we will tell Abdul Latif, either you come and correct it with us and correct it, or otherwise you will not, you know, have the right solution.
+
+ This is what we will tell him. Okay. Because, you know, fine, okay.
+
+Bastian Osorio:
+No, we agree, we agree. We cannot take going to take that bed and and then push if they want something else.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See you make you you make such a proposal and if I will make sure that either he tells what is wrong or it will get you know escalated and we will see where this goes. Because we from all the observations are seeing putting together you know whatever we have and what we are what from what we have seen it is basically our completion code field well type and casing design is determining which bomb to be picked under the bomb you know you have all your components addition to that there could be an additional bomb so this this is what it is recorded in the session so this is what we will provide if he is saying that is not aligned then we I will ask him why is it not aligned you know if he is going to say that then I will be there then we will see what he what he says and if it is not their job as business is not to say I am not aligned they are there as co-partners to correct the solution then we'll ask them you guys were telling that it's not a what is not
+
+Arun Tejnarayan (ADNOC Group D&CS):
+aligned I will do that work okay okay appreciate it okay let's go so so yeah so basically this are the green highlighted ones are the master data and this yellow ones are the key figures okay so basically in this one we are just updating or populating the well plan based on this demo data what is that what is that well plan you put some 1 1 so well plan 1 1 basically signifies that this is the active activity plan for this particular date for this well okay and based on this date all the materials will be required like all the components right will be required on that particular start date of the well basically what will be the
+
+Vignesh Perumal (ADNOC Group D&CS):
+other values of the well plan if one means what one means what actually sorry in that one so one so basically one means to say that this is the well okay let's say this is the well which is being
+
+Arun Tejnarayan (ADNOC Group D&CS):
+drilled on this date okay so all the materials right all the components will be required on the start date of What will be the any other possible values are there for that column?
+
+Vignesh Perumal (ADNOC Group D&CS):
+Or is it always one? It is. It will be one, right?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Because at the time only one activity is being planned at those well ID, right? Because they have this drilling bar chart, right? So all the materials will be, but that is what they mentioned that all this material will be required on this start date. OK, can you go back to that?
+
+Vignesh Perumal (ADNOC Group D&CS):
+Can you go back to that? Sorry, can you go back to that? So what you are saying is for that well, you want one piece of material 102, which will again include all those subcomponents. This is what you're trying to say. Yeah. Yeah. So because we're putting it in a well plan, I don't understand what is well plan. And see, this well is a one well. So one well will always be only one, right?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Correct. So basically to trigger the components quantity, we need to update the header material code. So once this header material code is active for this particular one, then we will get all the quantity required for that particular one. So basically it's a kind of indicator. Planner doesn't have to do anything. It will be done through integration. We have this list of transactional data. The dates are the crucial part here, the date.
+
+ Correct, correct.
+
+Vignesh Perumal (ADNOC Group D&CS):
+That is fine, but yes, but then if you are going to show some column and if you're going to put one. I need to know what and you're calling it as a well plan for the one well see for one well based on the completion type of the well, the field of the well and the you know field you are going to have one BOM. You know you are going to pick one bon and under that you are going to have all the quantities I understand start date is fine I have no problem with the start date why even plan is one what that
+
+Arun Tejnarayan (ADNOC Group D&CS):
+is what I'm trying to understand okay so basically uh in a simplistic um say um when we update one as a well plan right then all this basket will be you know uh required on that particular date so player does not have to do any like a system indicator for system to trigger the components that are required.
+
+Vignesh Perumal (ADNOC Group D&CS):
+You mean to say that this is something required by IBP, is it? Yeah.
+
+UNKNOWN_SPEAKER:
+Yes. Okay.
+
+Bastian Osorio:
+It's just to mark the date. You need to put the one in that date to indicate that the activity will be performed that date.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So we have already comments everything. Okay. Also we have like put a node in each and every column in every field. Okay. Just an example. It's there, but yeah. And you can call it as some indicator or you know.
+
+Vignesh Perumal (ADNOC Group D&CS):
+OK, fine, OK. Initial initial assessment.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+OK, yeah, so the right definition of key figure OK can come from business as well. This is just our initial understanding that year this well plan is nothing but this is the starting active point starting point for all the equipment basket that are required. OK.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So maybe tomorrow, yes, we will check with Abdul Latif on the missing data. Can you go once again, tab by tab?
+
+Vignesh Perumal (ADNOC Group D&CS):
+First, can you go to the well? Okay, sure. Well is having your sequences and that is one internal DWC. Yes. You have your whatever well name, company, field is there, well type is there, rig is more okay, well id is there and the category. So this category also is going to play you know a part in the bomb because they said that if it's a plug and abandon the bomb may be different if it is related to okay fine so that also may be one of the indicator.
+
+ So this tab contains all information related to the wells. Okay. And can you go to the location tab, please? Yeah. This location tab contains, uh, uh, yeah, this is the, this is going to be your plants. Okay. But how you are, yeah, maybe they can, they can give you, uh, this one 1 4 0 8. Uh, I have given you in some other example, right.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I have captured only this one. Like if you have just peace, if you can send us screen.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I have given you see the thing is I have given you in all the others. OK, fine, we can give you that is not an OK. No, but this will this will have this will have only P. It will not have any V.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+It's not required. It will be having V as well, but yeah, in supply for Yes, I'm just keeping simple. Yeah. Then we will have materials, all the materials required, generic, branded. Branded is required for supplier, but for demand it will be generic and the completion code.
+
+Vignesh Perumal (ADNOC Group D&CS):
+One minute wait, so in the material you will have your So we will have generic material and the bomb header material. Why is there some yellow in the middle? Because in one of the data the code is missing.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+The branded code is missing, so I've just highlighted over here that the SAP code is missing.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yeah, and no, no. OK, can you go now? But if that is going to be the case. Uh, why? Why do you require the bomb information also over here? Because the that one is the equipment basket, correct? See the right line number 1818 line number 18. So OK, see line number 18. Here you have put the bomb header over here. Do you do you require that also in the sheet or what? Yes, because you are not going to have.
+
+ Any information related to weather size, weight, complete. That's fine, that's fine.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+We will need only the class that you maintain. Completion code and other factors of the attributes relevant to this head of material code. For example, completion code is the main thing. This casing design is relevant to the generic material ID code. It will not be relevant to head of material code. That we understood. But the head of material code is required in order to populate the other master data that is equipment basket.
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+what you do at least at least instead of calling it as a header material call it as a bomb header or a bill of material header don't no no not that one in the in that in that category which
+
+Arun Tejnarayan (ADNOC Group D&CS):
+you are having a bomb material bomb header okay that's all okay perfect so for example here I have just mentioned The other material will not have the completion code. Only the header material code will have the completion code as 2B.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Okay, but then the bomb header you are only having the completion code. That's what I'm trying to understand. What is the purpose of putting this bomb header over here where the information is not complete in the sense 2B. See, if you assume that you have more number of bombs, right? Assume that you have more number of headers how it will be material code 1 or 2 to be material code 1 or 3 to be to be to be it will be so many you know so I understood so
+
+Arun Tejnarayan (ADNOC Group D&CS):
+basically I understood your confusion so basically Vignesh the thing is that these are individual components like like individual master data okay once we pull back pull all the information into this template right so you will see completion code you will see web type you will see casing design so and so forth. But to populate this template, right, we require all this individual data in place. So all the materials are coming under the materials tab.
+
+ Correct. So just like in S4, right, you have MARA table, right? Then you build MRC, right? Similarly, IBP follows the same concept.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yeah. Okay.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So then we will have this equipment basket. And finally, you conversion for now.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Can you go to the equipment basket by the way? See, somehow I'm just missing one thing. I'm still not getting this one picture. Somehow you need to know for a well type completion code and a field combination there must be a bomb header okay where is that information that information will be available in CIDS so basically you have this well type okay
+
+Arun Tejnarayan (ADNOC Group D&CS):
+you will have field this is a technical logic that I'm trying to explain so basically we will have field we will have well type and from the material step we will have the completion code okay so now based on this combination that you maintain that in SOR side, we will check and pick the header material code. That is the actual material code. It's a 102. And then we will update the and then we will check the bound and then we will update this generic code for each individual validator.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah. Why are you doing?
+
+Vignesh Perumal (ADNOC Group D&CS):
+Is it something, you know, specifically for IBP, you need to do that? Why are you?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Yes, we need it. We need it for IBP workers.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I really don't understand.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See there must be a single mapping table which will tell you for this well, this will type for this field for this. Well type and completion code. You need to pick up this bomb, but what you are doing is you are doing a little bit different. You are keeping two factors on one tab. That is the well and then materials tab you are actually going and you know. Telling that to be is linked to a to a bomb header, whereas you know to be itself may be linked to so many bomb headers.
+
+ It is so confusing tomorrow. Even I don't know you may run into a problem also when you get this data from the SAP. Why see in in all the demo sessions that your business has shown you right? Field completion code and well type. I should have a equipment basket header, but here you are not doing this.
+
+Bastian Osorio:
+Just so I can understand correctly, you say in one master data, we state the header and the other one, the bomb.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yeah, correct. Exactly. See, because Because you need to know from from your side. Also, you need to know if the field is say sarb and if the completion code is to be and if the and if the and if the other part well type is oil producer. Assume that you get this combination for a well, you will. You will say for this combination I need to pick up the equipment basket 102. That's all that combination will tell you now.
+
+ You know, probably somewhere in the materials or somewhere you know some some mapping table you need to have that gives you that information. Once you know 102, you will go to your equipment basket and you will get, you know. OK, these are all my components which are required for 102 with the quantities. Now what I'm missing in this in what you're trying to, you know, explain to me is one place where you get all the three.
+
+ What you've done here is you split it into two parts. Parts in the well you have field and you have the completion type OK and the well type even. But there you know I don't see the completion code you can. You go to the well. Now it will be difficult for the IBP to understand this, isn't it? You have you have. You have split the data itself into two tabs. You know, and here I don't know how you are going to.
+
+
+
+Arun Tejnarayan (ADNOC Group D&CS):
+I really don't know how you are going to, Okay I understood so the thing is that in CIDS we will have that logic the mapping logic what I'm displaying is the final output okay so this is the final output
+
+Vignesh Perumal (ADNOC Group D&CS):
+in the master data but when the planners views the data in template right it will have the similar structure like the field just one minute okay yes I have given I have given data or five different files right so the mro mro this chemicals see in all the files the mapping was very clear to me okay and straightforward but this is somehow not clear to me even though you are telling that something will happen in the cids because
+
+Arun Tejnarayan (ADNOC Group D&CS):
+we are defining the bomb right in s1 based on different attributes like the well which is in non-sap system Correct. So that is how we are. So we have individual mass data and then equipment basket is a collection of the data that we have. OK.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Let me ask you like this. OK. OK. With this limited example that you have only we will only talk about this example that you have. OK. Don't go to the demo data. Don't don't go to the demo data. OK. Now you see. Can you tell me. Can you go to the well.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Assume that your bar chart is trying to say that you want one well in the lower zakum. And you want a well in the water injection well. This is what you have to assume that the bar chart is telling you, you want a water injection well in the lower zakum. And actually this now, what will happen, you have so Correct? You have so many possible combinations. So you want one well for lower vacuum and water injection.
+
+ Now, what will happen is, I'll tell you what will happen. Now, when you go to the material, and if you try to find something with 2B, you will find a lot many 2Bs. OK. The 2B may be for upper vacuum, so many places. How will you find the right bomb header? This is what I'm trying to ask.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+understood so basically uh in the material class right we will have this definition predefined right if it is material is for lz belt type and let's say 2b so that is one unique combination and you are creating one material
+
+Vignesh Perumal (ADNOC Group D&CS):
+right it is not about my question is from your side leave alone the sap sap yes I will pass the attributes to you but still you are not getting my question from this information low based on the field and the well type for lower. My question is very straightforward. Just answer the for the field and the well type. OK, assume that you are. You want to you. You want to first row over this well. OK, you are saying that based on the lower the comb and the well type.
+
+ OK, you want you and plus completion code to be you want. Now the question here is if you do that now in you have two of the parameters in the third tab in the material you will find it to be, but you will find many many two bees. OK, again, this is where I am. I'm trying to tell you which which bomb you will try to go and which bomb header. How do you know to select 102? You will not work. It will.
+
+ This will not work. I'm telling you so you need to have a mapping. See it may work if you have another problem. In the well itself. If you have a completion code, I will not be asking you this many questions, but you will. You will run into a problem if you structure the data.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+This is what I think, but no, no, it will.
+
+Bastian Osorio:
+It will not given any error weakness. Yeah, but but it's business. I understand your error and there is a way to manage this error. No, I mean this confusion. I think it will be easier to understand if in the equipment basket we have what you're saying. Or that But I take it, point taken. We will show the information in a more comprehensive way.
+
+Vignesh Perumal (ADNOC Group D&CS):
+But just so you know, all the components are here.
+
+Bastian Osorio:
+It's just the way we're showing them is the confusion. I understand that.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See, it's not that way you are showing is a confusion for me. I want you to based on these three are based on. Can you do one thing urgent? Can you type material 102? No, no, go and go into the material tab only. OK, you copy that line item 18 and put, you know, copy the line item 18 and create four more rows like that. Do that, do that, do that, do that. OK, you put now for 19 you put 103 material code 103.
+
+ OK. And 104. Just put like this. Now, I will tell you my question. Okay. 105106. Now, my question is like this. The weld tab is telling you for the field, you know, SARB and for the weld type oil producer, that is what it is telling you. Now, this 102, 103, 104, 105, this could have so many different components. How are you going to pick up the right material header over here? You don't have that information over here.
+
+ How are you going to, you know?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So what you're saying, right? So basically the materials, so the metals that we're creating right is based on three attributes, right? One is your well type, one is your field, and one is your classification or completion code. So based on these three combinations, it will serve as a This is exactly what I'm coming to the three combination is not uniquely defined in any one place.
+
+Vignesh Perumal (ADNOC Group D&CS):
+You have the combination, I agree. Let me let me tell Arun in both well and material table.
+
+Rahul Patel (ADNOC Group D&CS):
+We need to have both the three combinate all the three combination clearly visible so that it's clear that if model is 102 along with completion code, the well type and the All the three attributes of the material should show in this table as well as invertible so that it is not clear matching the template beautiful again.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I'm not telling this to make the template beautiful if you don't have the attributes. I don't know by I don't know you are doing a magic by determining the right bomb. I think so. Anyway, OK, just you wrote write it down as a note. Maybe you have some magic working for you fine, OK? OK, then. You okay, just note it down. Maybe you have something in the CADS. I'm not very sure what what will happen.
+
+ Bomb determination bomb. How to determine how you will determine that? Okay, maybe something is going down. Okay, fine. Okay. Can you go to the next step?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Then the next step is same as equipment basket. This is okay.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I am this is I am okay. A very simple master data for the equipment basket. What are the components and what is the quantity? Okay.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Then we have this UM master data, which is nothing but the alternate UM. This is fine. This is fine. This is also not a problem. Yeah, and this is we saw, right? The well-planned. This is also fine. Yeah, this is updated by IBP. Planner does not have to do anything. It just, yeah, will be done by IBP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See, I think that just only one combination. Maybe I'm not comprehending it that way, but I think that in order to determine the bomb. You just need the The three attributes other than that. OK, maybe we can show to business and we can maybe get their input on it.
+
+Bastian Osorio:
+Yeah, big nation will be easier to understand for you if in the well header and so in the bomb header we call it we do that you you mentioned the well well type completion code and and I remember which
+
+Vignesh Perumal (ADNOC Group D&CS):
+uh what is the other attribute field field completion code and well type yeah the bomb is defined at that level yeah it should be that is that exactly that is how the bomb should be defined uh now did you put this on the IBP system, did you put this excel sheet into the IBP?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+No, no, not yet, because we don't have generic code, right? Okay, it will be done quickly. But once we have this information, right, then we will be able to map correctly.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Okay, can you can you see, let me let me ask you like this again, because I because I am not understanding this. I'm going to ask this one more time.
+
+UNKNOWN_SPEAKER:
+Can you go to the well?
+
+Vignesh Perumal (ADNOC Group D&CS):
+See, assume that you want one well for lower zircon water injection. Now, you assume that you want to drill the first well. Row number two, you want to drill a well. Now, that well is a part of completion code 2B. Now, can you go to the materials? There are a lot of 2Bs over here. Which BOM header will you pick up?
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So in this right, at S4 side, whatever the weld type and this field is applicable, right? So that header code will be picked up and it will be updated in Equipment Basket, basically.
+
+Bastian Osorio:
+So it will take... But Bignesh, what you want is to us. I'll assign to that well the completion code, but with the category, sorry, with the well type, right? Yeah, correct. And the field. So you just want the relationship between the completion code and the well ID and then say, okay, and now you go to that combination of field, well type and completion code and look at the BOM.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yes, exactly. For that combination, you have the bomb header. For the bomb header, you have in the equipment basket all the components. This is what is simple.
+
+Bastian Osorio:
+And if then, if, for example, instead of someone, for give you an example, no, we are not going to use that completion code. Instead of to be, we are going to use the 2C. You just change for that well, for 2C, and you see a different bomb. Yes, different bomb. Yes, yes, yes. Yeah, it's clear. It's clear. The thing is that No, we can do that, but there is just one withdrawal. There's one disadvantage that the BOM then define a generic code.
+
+ And that is not good enough. I mean, we're not, this is very generic at that level. We need to take then one additional step to define which code we're going to use at the end of the day. Generic code is not giving us the final demand. We still need the BMI code, but at least until that point is clear.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See, so what I am trying to say is, let me put it like this. Say for example, in Lower Zakoum, in order to drill a water injection well, maybe they they only need as part of completion code to be maybe they need to reach maybe uh 120 meters but if it is an upper zircon maybe they need to reach 500 meters down so then the the components of the bomb may vary based on you know the field well type and the completion code now that's clear that is clear and and you have
+
+Bastian Osorio:
+them the generic codes. Generic code.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Now what will happen is, now from SAP side, so what we do, first we can now, first baby step, we can know, okay, for this well, I need this bomb, okay? Under the bomb, if you go into your equipment basket, you are going to have all your generic materials over here. Your equipment basket will have the generic materials. Now, this is your demand. Now what I'm also going to give to you another table is for the generic material.
+
+ What is the Actual material OK supplier specific material that will come in the custom table which I which I've shown you correct before. In in. So in Z table right in the Z table. So yes, so from the Z table you will be getting for each generic material. What is the corresponding?
+
+Bastian Osorio:
+uh substitute or whatever the real materials the supplier supplier material you will get it from the table uh bastion it's clear it's clear yeah I think we and we have all the components we will we're just gonna display them in the way you're you're explaining which is more like a most standard way but it's clear the requirement I think in in this way everything will be easier Yeah, tomorrow tomorrow why I'm also tomorrow.
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+Why I'm keeping invest in this insisting on this so much time is tomorrow they may come up and say I want to add you know even the casing design as one of the parameter for us simply it will be very easy. So if I add a casing design also as a parameter I will have the mapping table. The entire map link to a bomb header. To components from components.
+
+Bastian Osorio:
+Will make no difference because you will change it on the other side.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yes, yes, yes. This is what my idea. We'll propose this and if if I'm wrong, we will try to refine it also.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+Clear. Vignesh, one small doubt. OK, like you have a visibility of the generic model in S4. So in S4 side, they are not mentioning anything completion code against the generating metal, right? This is, I think they are not, it's not right, but
+
+Vignesh Perumal (ADNOC Group D&CS):
+This is where, see, again, no, no, this is, that is not how or what the completion code means, actually. This is, see, again, this completion code is not linked to a material, okay? Completion code means, say, for example, it's a logical grouping given to a set of welds that will be probably probably drilled with the same technology, same well characteristics, okay. This all they are calling it as a completion code.
+
+ So it's a sort of, can you, you want to say a grouping of identical wells, which employs the same drilling technology or those sort of things. Maybe the pressure is the same. They expect these sort of things. So this they are calling as a completion code. Completion code itself is not always linked to a material that way it get links to completion code is linked to a materialist through the bomb. OK, it's one of the attributes of the bomb.
+
+
+
+UNKNOWN_SPEAKER:
+OK. Yep, understood. Perfect. OK.
+
+Arun Tejnarayan (ADNOC Group D&CS):
+So probably, yes, maybe we can just simplify this view value of view. OK, and we can also discuss about the missing data. Plus, we need to mostly check on this logic to define the BOM, because the numbers and for some of the products, like some of the products are relevant to specific wells. So is there any bifurcation or like the well plan can start with the initial bill of materials and then a planner will just review and change the forecast?
+
+ I think that is what they told. We are going with this proposal that we have found this. This is the proposal. And if they have anything to say, OK, apart from the missing data point, so maybe we can take a look on that part.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yeah. OK, sounds good. OK, OK, OK.
+
+Bastian Osorio:
+Thank you very much. This is very, this is very useful. Keep on asking because we really appreciate it for real. I'm not, I'm not being polite here.
+
+UNKNOWN_SPEAKER:
+Thank you.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Hmm.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Oh. You
+

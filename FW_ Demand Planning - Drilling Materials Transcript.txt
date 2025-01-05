@@ -1,0 +1,502 @@
+FW: Demand Planning - Drilling Materials 
+jue, 19 de sep de 2024
+
+0:16 - Khalid Sarfaraz (ADNOC Group D&CS) Assalamu alaikum, Ahmed.
+
+0:18 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Wa alaikum salam, brother.
+
+0:20 - Sheth, Kunal How are you?
+
+0:21 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) I'm fine. Alhamdulillah. How are you? Sorry, yesterday I was busy.
+
+0:25 - Khalid Sarfaraz (ADNOC Group D&CS) I know you're very busy, man. No problem. No, not like you. No, no, sorry. You are making us busy, you know.
+
+0:34 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) No, haramullah. No, yesterday meeting was really fruitful. It's nice. I think the user now, they will be happy because a lot of scopes it's clear for them. I think the next meetings will be splitted by teams. This is what I understand and will be more deep dive into the point.
+
+0:59 - Ahmed Elkasrawi (ADNOC Onshore) Yes.
+
+0:59 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) But our target here, just we want to sit with our managers even to explain to them what the expectation that eventually they would get it from IBP. So it will be more clear. I know that the BRD, it's a valuable scope of work.
+
+1:19 - Khalid Sarfaraz (ADNOC Group D&CS) Sure, we can connect, because there are many people here. So we can connect sometime later. Yeah, and we can agree. Also, I'm scheduling a weekly status meeting kind of thing. Very good, very good.
+
+1:40 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Already, I discussed with Rajiv in this. But however, that's good. So today it's for drilling material.
+
+1:47 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, right. No, it's for planning. Great.
+
+1:51 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Akio, he's he's engaged in this stage or not.
+
+1:56 - Khalid Sarfaraz (ADNOC Group D&CS) I don't I. Yeah, yeah.
+
+1:59 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Akio he's here. It's showing that he's.
+
+2:04 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) No problem, it's fine.
+
+2:05 - Unidentified Speaker Thank you.
+
+2:40 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) you Okay.
+
+3:55 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So we have a meeting for drilling?
+
+3:59 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, we have a meeting now.
+
+4:02 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay. Actually I forward to the drill team I think the second one afternoon. So this one afternoon. Afternoon for EPC, industry for projects. Okay, one second. I forwarded.
+
+4:21 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, OK.
+
+4:27 - Yaser Salem Bin Zubaa (ADNOC - GP) So I'll just try to invite all concerned team here for drilling.
+
+4:32 - Unidentified Speaker Inshallah.
+
+4:33 - Yaser Salem Bin Zubaa (ADNOC - GP) Yes.
+
+4:40 - Khalid Sarfaraz (ADNOC Group D&CS) Hi everyone. I'm Ahmed.
+
+4:45 - Unidentified Speaker No.
+
+4:53 - Khalid Sarfaraz (ADNOC Group D&CS) Once you join, let me know, then we can start the session.
+
+5:01 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Offshore mammoth joint.
+
+5:12 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, I'm sure. Yes, sir.
+
+5:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I think Ahmed Kasra is there.
+
+5:25 - Mohammed Ashic (ADNOC Onshore - PD) Looks seems to be busy. Let me check.
+
+6:39 - Khalid Sarfaraz (ADNOC Group D&CS) Build if 1105 we will start. Sorry. 1105. So just will wait two more minutes where people to join and then then will start. Power.
+
+8:03 - Khalid Sarfaraz (ADNOC Group D&CS) As-salamu alaykum and good morning. Thank you all for joining this workshop. So a few of you may be aware, but for people who are new joinees, so this workshop is for the inventory planning and optimization project. And we are going to take you through the project overview and the tool overview. What we are planning to do, and what is the purpose of the workshop. So the purpose of the current workshop is to extract the as-is information. Any questions you have related to design, please park it for later discussion. And if you have any questions, feel free to write them in the chat, and we'll get back to you. Thank you. Mohamed, you can start.
+
+9:04 - Fakhouri, Mohamad Thank you Khalid. So I saw a lot of familiar names. For those who don't know me, my name is Mohamed Fakhoury. I'm part of the project team for the implementation of SAP IBP, focusing on process. To Khalid's point, yeah, today what we want to do, let me go to the next slide.
+
+9:31 - Fakhouri, Mohamad What we want to do is provide you with a project overview, what we're trying to achieve, also give you an overview of SAP IBP, and mainly focusing on, I want to say, three and four. The purpose of those workshops, or we want to call them interviews, is that we want to understand your current process right now for drilling, as well as how the data is flowing for demand planning.
+
+10:08 - Fakhouri, Mohamad So what is the objective of this project? To Khalid's point, what we're trying to do is we're implementing SAP IPP. Because we want to streamline stocking decisions, consolidate inventory levels. So with that, we will be able to do this with the implementation of SAP IPP. We'll go in more details later on of what SAP IPP is at a high level as well and what it can provide. So Um, this project, it is a 16 month project. Um, you'll notice that there are multiple streams in order to achieve this, uh, this goal. So we have the process. So in, in this current phase, we are at the, as is assessment where we're understanding your current process right now. And then the next phase will become the design phase, which is, we're targeting best practices, we're targeting your future state processes. There will be also the data stream. The data stream is, we will review your data, understand your data, and then see what gaps you have.
+
+11:37 - Fakhouri, Mohamad And as well, the technology part, which is the implementation of SAP IBP. Now, of course, there's which is the change management, which comes with training, the change strategy, as well as communication, change communication.
+
+12:02 - Fakhouri, Mohamad So I'll pass it to Hector to give you an overview of what SAP IBP is before we move on to the demand planning for drilling.
+
+12:15 - Hector Palacios Thank you. Can I share the screen for these two slides?
+
+12:20 - Unidentified Speaker Yes, yeah.
+
+12:20 - Fakhouri, Mohamad So I'll stop sharing.
+
+12:22 - Hector Palacios Okay, thank you very much. Perfect. Thank you very much and nice to meet you everyone. I'm Hector Palacios. I'm going to be one of the consultants lead for the implementation of the technology track. So I will be implementing specifically the IDP tool. The idea of the this intervention that I'm doing right now is just to give you a little context on what we are going to do with this tool for AdBlock. If you are having any questions, please write it on the chat. For us, it's very important to add those questions. Then later, while Mo continues with the interviews, I will be answering those questions in the chat. It's important to us to understand what are your current questions so that later when we have the specific sessions of the tool, we can address these questions that you're raising right now. So let's start by the simple idea of IUP. Stands for Integrated Business Planning. It's a cloud system from SAP that will help you to plan your supply chain network. So it's going to do that by providing you advanced algorithms that are going to help you to solve the most challenging problems on the man inventory and supply side. It will provide you integration capabilities, that means that we will need inputs for doing this modeling on the tool and solving these problems. For that, we will need to get information from source systems. We will discuss a little bit later about that. Also, we provide you a collaboration environment. That means that it will give you an interface in which you as user can interact with the data in the system. You can review the plans, you can add just the plans and then later you can visualize it in some nice dashboards. For that, you will have a couple of environments. The first one is where you work the most, is the Excel part. We have an extension of the Excel and Add-in in which you can connect and you can start using the Excel, but with all the information of the Cloud that is going to be ADP. Later, if you want to visualize your results, you also will have the opportunity to use some nice dashboards on the tool. How much of the dashboards we are going to use in the tool and outside is something that we still need to determine. But either way, you will have the capability of doing it on IoT. The purpose of implementing such a tool for AdNoc is to decrease the working capital related to the MROs. At the same time, hopefully, we can increase the asset availability and your operational reliability. And we can achieve that by having the right spare parts and also the labor, that's very important, in the right place and the right time, okay? And just for you to know as well, this is a modular tool. We have different modules for demand planning, supply planning, inventory planning. And for this project, we are targeting the three of them that are the recommended by SAP to start the MRO process on a bit. Let's continue with the next one. So this is our first slide.
+
+15:33 - Khalid Sarfaraz (ADNOC Group D&CS) One thing, I just wanted to interrupt you here. So since this is a drilling session, so here we are, although your slide says MRO, but here it is specifically for drilling materials. Exactly. Yeah, yeah.
+
+15:47 - Hector Palacios So please specify this for the audience. Thank you. So here we have on a slide. With the two systems, with the system IVP, where we are going to conduct this demand planning process, inventory optimization, and supply planning. For doing this, we will need a lot of information that is coming from your source systems. First of all is the master data. So we need to understand what are your parts, the drilling materials that you are going to use, what are going to be your projects in this case, and in the case of maintenance, we need to know what are the asset equipments that we need to maintain, the activities, and so on. So we will need a bunch of information that is coming from your source systems. Here we have by best practice, of course, the SAP project system. That is the module of SAP for handling these project activities. If you are not using it, that means that we will need to identify what is your source system right now, and also build the integration that will take a little longer because it's not native, let's say. We will need to build the bridge between your system and our system so we can use that information. Now, what are the questions that are going to solve these modules? Demand planning is going to tell us how many parts and drilling materials we will need in the future. Not only for project activities, for the drilling materials, but also for all the MROs that we are using in our planning for maintenance. I see that there is a question.
+
+17:28 - 1Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Hector, actually, if you can demonstrate the drilling part previously presented. So because the old audience is not related to drilling only. So it's a different scenario and different business, actually. If you can just present the drilling part, then it will be great.
+
+17:48 - Hector Palacios The drilling part. Let's see if the next slide answers the question. This is a very high level part, so we will show you what we are planning to do with your data, right? So let me continue with that.
+
+18:01 - 1Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Not required, because this team is not familiar with these systems, actually. Maintenance, PMs, project system, no.
+
+18:11 - Hector Palacios I understand, but this is only for us. It's just a source of information.
+
+18:17 - 1Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) two stream is there actor if you aware one is MRO another one drilling yeah so if you can switch to the drilling part of it it was there in the previous slide I don't know it's available or you can check with Cesar or someone to get these slides. Abdul what are you talking about the demo which was done during the yeah even a demo and also we put the separate stream Khalid yeah in our our program, whatever the sessions, workshops. Yeah, we put a delay.
+
+18:52 - Khalid Sarfaraz (ADNOC Group D&CS) It's a title. Even the title is not a model.
+
+18:55 - Unidentified Speaker Yeah.
+
+18:59 - Hector Palacios But the function is going to be mostly the same for us. Let me explain that.
+
+19:03 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, I'm very different. I'm very different.
+
+19:10 - Hector Palacios Let's continue with the next one.
+
+19:12 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Continue from this, actually.
+
+19:14 - Hector Palacios Yeah. Yes.
+
+19:17 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) different okay you can how are you good people you had me in this meeting yes sir we invite you okay yeah go ahead if you don't know so go ahead with from the demand planning so maybe next time we
+
+19:39 - Hector Palacios can demonstrate to the drilling part yeah yeah they of course this part of the specific sessions, we are going to have it later. This is just to give you an idea of what we will need for the project. That is going to be part of the assist session because you will understand what information we are needing for making the system work. The information that we are going to need for creating our inventory planning and supply planning is coming from different sources. One of the sources is going to be your drilling materials. So the idea is that for demand planning, we understand all the sources of demand, including the projects. And we will make sure that we know how many parts and labor we will need for the future related to these activities. On the inventor optimization part, the idea is to know how much safety stock should I have on each location for each drilling material in order to face uncertainty. Also, we will have the reorder point in case that the things are not going as planned. We can also trigger the orders whenever we are going below a threshold, so we can trigger these replenishment orders with anticipation, that is the reorder point. Finally, IDP will provide you with a supply plan that is at least- And then the supply plan will try to give you a distribution plan and procurement plan that is able to meet that demand for materials that we are going to have, and the target stock that we are getting from the inventory optimization. If the planning is not feasible, it will trigger some alerts that will tell you that we are over the capacity be related to resources or related to materials. That is the rough cut capacity plan. So in our process, we have all the sources of demand that are coming from maintenance plan. There is a corrective plan that we are going to generate a forecast for that and so on. The preventive maintenance plan from which we are going to get our demand for parts and labor, and exactly we are going to need for projects. In projects, it's not that we are going to do the project plan here on the system. For us, this is mainly an input. We need to understand what are your project activities and what are the materials related to those activities and what is labor related to those activities because then later, with this information, we can use it for our inventory optimization and for our supply planning. You will see that in the stages. This is information that is flowing to calculate the reorder point, the safety stock, and all that information. Also, it's information that we will use to calculate the supply plan for the drilling materials, and also the resource planning related to that information. Once we have all these plans, the idea is that we can also convert to value simply by multiplying by the different costs that we have related to the cost of the related to the cost of the resources, and we have the maintenance cost that can be visualized by the finance team, by the design director, and they can do the sign-off to continue with this plan. Later, all this information that we are getting for distribution plans related to the materials for the procurement plans that we are going to need for them is something that we can integrate to us for HANA as a planning independent requirement and this can further convert it there to purchase requisitions, to the stock transfer requisition, to do the more operational planning. So this is set very high level just to give you a little context. If you have any question, please just write it in the chat. If you are missing something as you were raising Abdul, please also write it on this chat and we can consider for the more specific session. But again, this is only a context interaction so you can understand what we are needing from you, right? That's it from my side, Mo, if you want to continue.
+
+24:06 - Fakhouri, Mohamad Thank you, Hector. All right.
+
+24:26 - Fakhouri, Mohamad So for today's session, what we're focusing on is the demand planning for drilling materials. So why is this?
+
+24:39 - Fakhouri, Mohamad Why is this important? What is the bad planning for drilling? It is mainly for forecasting and managing your requirements for materials. And how does the system do that? To Hector's point, it takes your project activities and then lays and SAP IBP lays your demand. Now, why is this important for the demand planning? Well, one is to minimize downtime, right? If we have the necessary resources and also the parts, we will be able to minimize downtime. Another factor is cost optimization, right? If we have an effective demand plan, then we will avoid overstocking parts and materials. And the last one is we're going to enhance planning accuracy, right, because the system will take the data from your project activities.
+
+25:48 - Fakhouri, Mohamad So for today, what we want to focus on is how you conduct a demand planning and for drilling materials. And as well as we're also going to talk about reporting. So how do you review and consolidate the math, as well as any reporting or KPIs that you currently have. What we do have, we have follow-on sessions per module. And then each module will have an as-is assessment to understand better your current process.
+
+26:30 - Fakhouri, Mohamad Are there any questions?
+
+26:38 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, it's clear. So basically, you're looking for the two areas, isn't it? One is the project demand plan, which is from the user side. And second thing, what are the inventory planning optimizations for the drilling it will be the under the inventory planning isn't it? Exactly yes Abdul yeah that is next week yes yeah so basically so here we have two major companies one is Ordnok Onshore and Ordnok Offshore okay handling the drilling activities so we have team members are available here and so as far our understanding so your system is capable of to connect any existing system to pull the data and do analysis. And also, if manually doing, we can feed into Excel, and from Excel, you'll build the demand plan, isn't it? So in this case, so maybe, Mahmoud, if you can just elaborate offshore activity as is case. So yes.
+
+27:52 - Fakhouri, Mohamad Abdul, that was exactly what I was going to, going with the statement. We do have a set of questions to understand exactly your current process. We can start with just an overview of how you're conducting it, who's responsible for the team. Abdul, if you mentioned you have onshore and offshore. And so maybe we can talk about the roles and responsibilities in regards to that.
+
+28:26 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, they're both streamlined, as explained, Hector. So basically, we have drilling plan. This is the high-level plan. And we call it drilling plan or drilling bar chart. This is the initial plan, buy well, buy well. Then it will drill down to the equipment basket. For the individual wells. So, this equipment basket and the combination of the drilling plan, it will convert to allocation plan. So, maybe... So, we can start from, I think, Bogdan or Mahmoud, can you just elaborate?
+
+28:59 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Yeah, you want... Good morning everybody. You are looking for the... What you are doing right now, correct? That's what you... What you are looking for, correct?
+
+29:10 - Unidentified Speaker Okay.
+
+29:15 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Right now, we depend on the first source is the voucher, which will give us the plan for the coming wells. And that will be converted to material, equipment basket. Because each well will require certain type of material and equipment. ... We can get it from the information received from the bar chart. Once we, once we evaluate the bar chart, we ... Convert it to ... Material allocation plan, which is, will reflect the, each well, how many ... Equipment or what the type, what type of equipment and how many, will be ... Allocated to, to this well. And, based on that, we will evaluate for that because as per the KPI we should have one year of worth of equipment in our stock however we have more than that for certain equipment then we will we will see the existing stock will cover us till how many how many months bear commodity we we split it to OCTG DCE which is the completion equipment well equipment, liner hangar and cementing accessories and so on and so on. Then we will evaluate the actual stock on ground and in this case we have two types of stock. We have ad-hoc offshore stock which is we'll get it directly from the SAP and we have the VMI stock based on the based on the type of the VMI contract framework and that's we will get it from the supplier
+
+31:11 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) and this is the first source the second one which is that's the common end I mean the second one which is the project sometimes we receive a requirement one of requirement like new new project it's not yet reflected in the bar chart however it's coming and we need to prepare ourselves for it and that usually communicated to us by a memo from our end user, which is the engineering and drilling and engineering team. And based on that, we will start to secure the requirement even before it's on the bar chart.
+
+31:49 - Fakhouri, Mohamad That's as simple as what we are doing. Mahmoud, I do have a question regarding that. So you said the initial requirement will come from a Gantt chart, right?
+
+32:02 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Drilling bar chart.
+
+32:04 - Fakhouri, Mohamad Drilling bar chart. Do you, is this, is this a tool or do you put it, or you put that chart in a tool?
+
+32:19 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) No, the chart is actually, it's like an Excel sheet. I'll show it with you, one of the bar chart we have.
+
+32:26 - Patel, Rahul Yeah, if you can show us here. That would be great, Mahmoud.
+
+32:31 - Bogdan Andres (ADNOC Offshore - DMET) With Mahmoud, I think they're looking for the, it is a system. So it's a result, it's an export from a system. So that plan is processed in a system.
+
+32:46 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Yeah, but they are looking for the format. Yeah, they are looking for the format. Yeah, I think they want, because you know at the end of the day, they want a source of information to get this data from it.
+
+33:03 - Fakhouri, Mohamad So maybe I can...
+
+33:08 - Bogdan Andres (ADNOC Offshore - DMET) It's either a system or the Excel file that we're going to show it now.
+
+33:14 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) So let me share with you the Excel.
+
+33:17 - Fakhouri, Mohamad Yeah, if I may, I can just rephrase the question. What we're trying understand is that this is mainly from a data perspective, where the data is coming so that we can incorporate it, add this to IPP. So where the requirements are coming from, so that we know which tool is being used currently today, so that we have this integration.
+
+33:48 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Can you see my screen?
+
+33:52 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Yes. Yeah. OK. See, that's like what we then said. The system will generate the final report in Excel format. I don't know if we can get it, if we can connect you direct to our system or not. But however, this one, we can share it with you. I mean, in the future, yeah? And at the end of the day, you see, Yeah, I have a question. Um, initially in the system, what do you put? Like, how does the process start? Um, that that required different team to answer this question. But usually the information will come from the FD and they will. They will put the there based on the field development. They will put the the will require drilling sequence requirement and they will share it with the our drilling operation team. Based on that, they will start putting it on the bar chart. This is the bar chart. I don't know, can you see it? Yes, I can see it on the screen. This is the month and this is the well, well name and the tower. And they will put it in sequence. There is different bar charts, one for the FD which will show each tower, which we don't have access to it, but that's the final one we have access to it. And then you in the front different format also as well as a sort of that or something like that see what's the same will number and power will require target start date in date this information we converted to requirements okay based on completion type and for sure the where is the field and what's the type table for new work over. We have some rules based on that. Based on that, we convert it to a requirement.
+
+35:46 - Fakhouri, Mohamad OK. So maybe just before we continue with this process, if you can tell us who are the key involved in this process. We're just trying to understand which team or what role is responsible for what action.
+
+36:18 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Okay, in regards to the planning, I don't think that will impact you unless you want to connect your tool to their tool. Because at the end of the day you are looking for a for a requirement, correct?
+
+36:32 - Fakhouri, Mohamad Exactly, yeah, we're looking for the requirements, yes.
+
+36:35 - Patel, Rahul So when you say tool, what is that tool?
+
+36:37 - Unidentified Speaker Our system?
+
+36:41 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Correct? We call it DWS?
+
+36:44 - Unidentified Speaker DWS.
+
+36:47 - Mariam Ali Al Saedi (ADNOC Offshore - DP) I think, Mahmoud, this tool or their tools can be linked directly to the DWS system.
+
+36:52 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) I think you are the best.
+
+36:53 - Mariam Ali Al Saedi (ADNOC Offshore - DP) So we can retrieve the The data itself.
+
+36:59 - Patel, Rahul So the DWS system has all the planning information and then it converts into the chart you've shared. Exactly.
+
+37:08 - Unidentified Speaker OK.
+
+37:10 - Fakhouri, Mohamad OK.
+
+37:14 - Fakhouri, Mohamad I'm just uh. Sorry my wood is there. Sorry to cut you off, but yeah, please continue.
+
+37:27 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) No, no, nothing.
+
+37:27 - Fakhouri, Mohamad I'm just, that's the high level. Okay, just another question. So this is the, let's say, initial plan. What happens, how do you manage, let's say, changes?
+
+37:46 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) This is a good question because, you know, every month we there is a changes and depend on the how how is it is it is it they gonna change the design the complete design or just or they will yeah there is a minor change and major changes usually from month to month there will be a minor but sometimes you receive a major changes which will will impact our plan and that the reason you will find us you will find in our stock you have some equipment which is still moving or we are exceeding the timeline which we have to keep in our stock. It's not a straightforward answer, but to keep following the changes we receive from the FD is not easy. And I think also the system will suffer from that because, you know, there is a lead time involved in each of our equipment. And that lead time you cannot play with, you know what I mean? You can expedite it a bit, but you cannot remove it from the equation. So if the changes is complete, like I'll give an example, if they are running now a completion with 4.5 inch tubing, and suddenly they want to change from 4.5 to 5.5, and that's not available in stock, you cannot just change it after a month, you know what I mean? Yes. Yeah, go ahead. Go ahead, Santosh.
+
+39:17 - Sharma, Santosh Hi, Santosh from KPMG team. So in this plan which you are flashing over here, the DBC plan, does it entail information regarding the equipments or the spare parts which are going to be consumed on a month-on-month basis?
+
+39:32 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Or this will be acting as an input for subsequent As I mentioned at the beginning, if you look at each well has a certain information, okay? And from this information, we convert it because we know we convert it to a requirement. Like we know that this is the, let me go to the well type. If it's a new well, we have to start from different, we have to allocate different well equipment and OCTG. And then we look for the for the type of the completion okay and also we look for that for the for the field itself because each field has that will be written here in the completion because each completion has
+
+40:18 - Patel, Rahul its own basket and the completion baskets it has all the required equipment list plus the quantity okay so list of equipment and the quantity you already have this available based upon the activities what you are saying depending upon type
+
+40:39 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) of well type of activity you want to do you have a readymade list of equipments and uh yes available there's two important points here the drilling phase and the completion phase and the drilling phase will has its own equipment and the completion phase also it has its own which is the completion basket which is which will reflect each completion type and the existing equipment for this, sorry, the required equipment for this bus. So there is another table, which I'm not showing it here, will reflect like SWI2, single motor injector, type two, that you can see it, here is it, like this one. See, this is the SWI2, okay? That's the completion requirement. Then there is another table showing what type what's the how many how many joints required, how many accessories, combination accessories required, what's the type of the backer, no that's in different place.
+
+41:45 - Sharma, Santosh And one minor thing, the stages which you are mentioning these are pre-planned well wise or is it vary across the wells? I can see some timeline 2024-2025 and some stages. Is it specific to any well or it's a consolidated plan?
+
+42:09 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) I cannot understand your question.
+
+42:11 - Sharma, Santosh So there are multiple wells. So as you mentioned there are multiple stages like in the beginning drilling will start and SJ something and then at the end when we are closing that activity there is some special different sort of activities needs to be done. So you have broken down the activities which we which you were showing on the previous page. Suffix 123 till 1213 depending upon the different stages. The completion stages column are. Yeah, this one is SOP1, SOP2, SOP3.
+
+42:55 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) stages. This is the completion time. Each well of this, you see, I'll show you. You see this well, Umlulu 112. You need to complete it with SOB 4, okay? You will see this well, Umlulu 0066. You need to complete it with single water ejector 2. It's not a stage. It's not SOB 1, then SOB 2. No, no. Each well, you need to start the spudding, and from and the end to complete the well, depending on the type of this well, if it's work over well or new drilling well, but most of our wells to start and complete in one stage. In some certain cases we split the well, I mean our end user will split the well in two or three phases depending on what's required. Sometimes just you want to, if there is no the tower is not fully completed they will they will get in the first phase then they will wait for the tower to install the topside then they will go again for the weld then at the end they will go for a simulation you know that's this kind of but that's in a certain case however usually they go from beginning to the end to complete the one way understood understood so
+
+44:12 - Sharma, Santosh far when we do all of these activities depending upon the completion stages are the the which you have shown and depending on that automatic or equipment basket selection will happen and subsequent requirement planning will go ahead. Is this understanding correct?
+
+44:30 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) Yes, I think I can if Bogdan want to share the map after that to show you how like for the OCTG how we can reflect this one as a requirement for like for one of the commodity Yeah, yeah, that
+
+44:47 - Patel, Rahul would be great if you can walk us through one example that how you take it from the from the map and then convert it into an equipment level. Can you see it?
+
+45:04 - Fakhouri, Mohamad Yes, yeah, we can see your screen.
+
+45:06 - Bogdan Andres (ADNOC Offshore - DMET) So basically what Mahmoud was showing you was showing you a well. This is the well number. This is the completion one that we're showing single water injector what type of completion and so on and the period of time we are looking at one commodity only there are a number of commodities that go in one way however the planning starts with this is the pipes casing and tubing so we have a number of diameters and we have then consumption so this will will consume this item in two pieces at the start date. So we need to have it available in advance because we need safety stock, but this gives us the consumption. And then all the other items that are being consumed for those in each well. Now how do we take, so this information comes from the DBC, Mahmoud showed it, this entire file we call material allocation plan, map. Onshore can have a different way of managing it, but the information is essentially the same. And then we go item by item in planning it and trying to understand what's going on. So let's take one big one, 1338. So in 1338, you see, look at this chart. These are other suppliers. This is details per supplier, but this is the overall one. You will see that per month going ahead, we're looking into 27 but per month we have consumption here which comes from the map comes straight from the map file so we just update the map and these charts are automatic then we have consumption per month the red the red consumption below we add some additional when we have changes they're not implemented in the drilling bar chart but we know they're coming so we add them manually you see the orange here these are manually added And these are the deliveries that we received from the VMI suppliers. When we put all together, this is the chart and the line is the equivalent stock. So the remaining stock at the end of that month. The gray area is our six month safety stock. We're basically looking at six month consumption ahead. And we're saying we need to be targeting the six months all the time. The lead time of this item is somewhere around eight to 10 months. So if I go ahead, in order today I will receive more material in let's say 10 months. In June operationally will be available in July let's say I need a thousand joints to reach the safety stock no actually I need more 1500 this is how much I need to order today to arrive in July and continue my safety stock safely. This is it.
+
+47:47 - Patel, Rahul Okay so a quick question here when you say safety stock inventory or consumption is Is this available in your S4 HANA SAP or this is completely planned on Excel sheet?
+
+48:00 - Bogdan Andres (ADNOC Offshore - DMET) This is the material that comes from the VMI. The VMI, Abdul, correct me if I'm wrong, is not fully integrated into our SAP.
+
+48:09 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly. Mugdan, his question is, so there's a min-max level in SAP. So actually, all the training material is not driven by min-max level. So this is planned. Say, for example, whatever Mugdan is showing, initial plan. We'll put a longer period. It is like most of the material is coming from the like 18 months to 12 to 18 months delivery delay time. So that's the reason what we do first instance we'll book the material with supplier. Then it is fully happening through the Excel sheet calculation in offshore. And so finally we'll arrive at the material quantity then we'll order in the system.
+
+48:53 - Patel, Rahul Calculation is in excel just to make sure I understand the calculations are through this excel ordering happens to SAP inventory is brought in SAP the consumption also happens in SAP you issue the material SAP.
+
+49:10 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I come into that one this is so this is the first long term plan and we have like short term plan which is so like six month look ahead we will put it for the operation where the material on mostly on ground with either with within offshore or with some VMI supplier. Then what the inducer do, they'll create a reservation in the system. This reservation based on reservation, the material flow from the VMI supplier or from the Arnok offshore warehouse to the rig site.
+
+49:43 - Patel, Rahul Okay. Got it.
+
+49:45 - 1Fakhouri, Mohamad Thanks. Abdul, when you mention long-term plan, what's the duration? Five years?
+
+49:57 - Fakhouri, Mohamad Or the whole project?
+
+49:59 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, it will be the three years. But then we are focusing up to three years, isn't it?
+
+50:05 - Bogdan Andres (ADNOC Offshore - DMET) Yeah. So it depends on the commodity. Wellhead is 16 months. So we have to order for 16 months plus. So we look at as well as OCTG depends. Some alloy OCTG are 14 16 months as well. The others are 10 or below. It really depends on the lead time. However, as a rule, we tend to look ahead at a minimum of two years. Because, of course, we have changes. Every other month we have changes, so we need to be able to adapt.
+
+50:37 - Patel, Rahul So these lead times you mentioned, are these available in SAP, updated against the material, is in Excel sheet only?
+
+50:46 - Bogdan Andres (ADNOC Offshore - DMET) No, these are per contract. Each contract has its own lead time per item. Per contract and per item.
+
+50:52 - Patel, Rahul Per contract, per item. OK.
+
+50:57 - Fakhouri, Mohamad So when you issue the, let's say, create a purchase requisition, the lead time of the material is not added in SAP?
+
+51:11 - Bogdan Andres (ADNOC Offshore - DMET) The delivery is added. That's connected to the lead time.
+
+51:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) OK. It will update in SAP lead time. But while ordering, we will not consider that one because the contractual lead time is already available with supply.
+
+51:32 - Bogdan Andres (ADNOC Offshore - DMET) Yes, and when building systems, we have to be aware that flexibility is needed. Yes, the contract says 10 months and it's signed by everybody. But if the market, logistic, I don't know what happens at the global level, those 10 months cannot be achieved, I need to be able to have flexibility. I cannot force the system to consider 10 months only. These things happen. Or emergencies, for example. We sometimes order an item with a lead time of 10, we order it in six, because we reached an agreement with the supplier. So flexibility on both sides, plus and minuses. It cannot be fixed. Yes, we have a contract. With reality. In reality we have to find solutions.
+
+52:17 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This part is clear because if you look at the historical lead time it will not match with the contextual lead time. So maybe the historical there is something happened and this lead time will update in the system. So we don't want to take this lead time while calculating the forecasting part. So there is already a table available with us, but then said per contract per supplier and per item. So this can we we have to provide a flexibility to feed this lead time as well for any calculation purpose. In addition to the SAP lead time.
+
+52:55 - Patel, Rahul We we we maintain this table with material contract and vendor combination lead time.
+
+53:09 - Patel, Rahul and the inventory can be both at vendor end which is called vd and at adnox end and that is how you separate segregated you have two kinds of inventory and this excel sheet basically essentially acts the main planning sheet where you have all the inventories you have all the lead times and you generate requirements which are then executed through SAP.
+
+53:32 - Fakhouri, Mohamad Just going back to the changes. So what changes do you reflect? Is it the major changes that you reflect? Or because Mahmoud, you mentioned that almost on a monthly basis there are, let's say, minor changes.
+
+53:55 - Bogdan Andres (ADNOC Offshore - DMET) So all the changes are reflected. So Mahmoud, go ahead. Changes are reflected as you well I showed the map so the dates of the well if the well the same well changes the dates for example the spud is changed from November to spud in December because the league had any issues we will update it that data comes automatically from the planning chart that Mahmoud showed and being updated in our chart so our chart will show that we have less consumption now and more consumption in December so the chart will automatically and we'll have to take a decision maybe we need to reduce the next order or right we need to take a decision okay okay do you load this chart back to um what is the tool called
+
+54:40 - Fakhouri, Mohamad again d dws no d dws okay okay so initial requirement comes from dws but then every everything else happens at Excel?
+
+54:57 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Or the chart?
+
+54:59 - Bogdan Andres (ADNOC Offshore - DMET) Yes, you will see when, inshallah, testing will start, you will see that the changes are frequent and the system needs to be incredibly flexible to be implemented in reality. Otherwise, we're going to have a rigid plan and everything will follow offline to be able to manage all these changes.
+
+55:21 - Patel, Rahul so when you say changes this changes also lead to your procurement changes because if the plan has changed then which means you either will have excess inventory or you will have you'll have to move your plan to adjust the
+
+55:33 - Bogdan Andres (ADNOC Offshore - DMET) lead times which means your procurement proposals will change based upon the changes in the plan correct as a general comment yes but then yeah if by changes you assume that every time we'll have a and overstock because of this. No, really, because an item has a lead time, right? When I order it, there is a certain amount of time until the material starts production. In that period of time, I notice a change, I contact the VMI supplier and say, don't start manufacturing because I have less consumption forecasted. We had a change. So we basically just delay that original Yeah, in agreement with the supplier. There are different measures to cope with the changes. That's why I'm saying flexibility is.
+
+56:24 - Bogdan Andres (ADNOC Offshore - DMET) Got it, the system must be flexible.
+
+56:30 - Mohammed Ashic (ADNOC Onshore - PD) And Bogdan, how do you maintain the bill of material? The bomb for the completion types that these are the different types of materials that need to be used when you select a specific specific completion code or material. How do you maintain that?
+
+56:47 - Bogdan Andres (ADNOC Offshore - DMET) Yes, we have a set of generic rules per asset and changes, I mean exact requirements can only be confirmed by the end user, meaning the drilling or completion team, the guys that are managing that.
+
+57:03 - Mohammed Ashic (ADNOC Onshore - PD) Bogdan, that's not my question. The question is like how, like the material types, suppose completion codes, where do you completion codes okay this type of well will use this completion code so this completion code will have the specific set of material yeah that's defined
+
+57:20 - Bogdan Andres (ADNOC Offshore - DMET) the completion code is inserted in the system by the end user by the drilling and completion teams now that is yes the completion yes I think I think he is asking for the completion basket correct yes yes basket is a different thing yes yeah the basket is agreed Yeah.
+
+57:42 - Mohammed Ashic (ADNOC Onshore - PD) No, but where is that maintain like, you know, that is Excel sheet. Yeah. So each completion basket is separately maintained in an Excel sheet.
+
+57:54 - Khalid Sarfaraz (ADNOC Group D&CS) Yes.
+
+57:57 - Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET) If you can share one, one of the completion basket from your side. Sorry, to me, maybe she can, she can share one, one of the completion basket.
+
+58:08 - Bogdan Andres (ADNOC Offshore - DMET) next issue. Mohamed, just to clarify in the meantime, I think that this is where a fundamental difference is between onshore and offshore. Onshore has implemented these baskets as far as I know in the DWS, so maybe you can download it in an easier fashion. Offshore is still in progress of implementing that. However, even after implementing implementation, we expect changes. There will be changes due to multiple operational reasons. So, as a conceptual, let's say we can reach an accuracy to the basket, but I'm sure 100% will not be able to maintain.
+
+58:49 - Mohammed Ashic (ADNOC Onshore - PD) So, no, so then like it's a predefined basket, right? Once you have a new change, you make a new basket, right? Not that same. You use, you amend the same basket?
+
+58:59 - Bogdan Andres (ADNOC Offshore - DMET) We'll have an infinite It will never end. Like the string, the length of tubing, for example, can be 10,000 feet, can be Each well can change it differently. The safety valve can change from one type to another and so on. I mean, if you look at all the combinations possible, it would be an infinite number.
+
+59:26 - Patel, Rahul So a general rule needs to be applied and then flexibility needs to be in the system other than purchasing or inventory record what all information is available in SAP with respect to the process we've discussed okay and now for
+
+59:47 - Fakhouri, Mohamad this one all the demand so so far this is the demand phase what we discussed yes availability phase one thing I know this was we is onshore and offshore would have very similar process or there's some slight changes from the demand perspective.
+
+1:00:13 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, it's good. So let's move to the maybe onshore demand planning. Then we can switch to the available. What are the information available?
+
+1:00:20 - Mohammed Ashic (ADNOC Onshore - PD) Yeah, that's fine. Yeah, so maybe from somebody from onshore Can you orienter to explain, Ahmed, or how your demand planning has been done?
+
+1:00:42 - Ahmed Elkasrawi (ADNOC Onshore) Actually, you want me to present?
+
+1:00:46 - Fakhouri, Mohamad Yeah, you can explain. Whatever is easier for you, yeah. Whatever is easier for you to explain the process.
+
+1:00:51 - Ahmed Elkasrawi (ADNOC Onshore) Okay, no problem.
+
+1:01:00 - Khalifa Al Yafei (ADNOC - GP) Salaam alaikum, Ahmed. Salaam alaikum. I just want to tell you one thing, and I remember that you have a system related to the DWS and how to calculate the material in the business plan and the DWS. I think it was working with the If that application, for us, you can share it here with the team here, so they can, let's say, take information from us and see how it works. Okay, no problem, Khalil, Inshallah. You know if you can see my screen?
+
+1:01:47 - Fakhouri, Mohamad Yes, we can see your screen.
+
+1:01:51 - Ahmed Elkasrawi (ADNOC Onshore) So basically this is, uh. What the offer use as the DBC? We call it here DWS drilling and work over schedule. It basically lists all the different fields, different rigs and then the schedule for these rigs with information. We classify rigs based on the well design and then the completion at the end. Of the world. And each one of these have their own, uh, material basket. Like we were talking about ship was mentioning earlier. So we have a predefined set of requirements. Uh, bear will type their completion code. I don't know if you can see, uh, is it? I mean, is it clear or it's a lot of ethics and zoom in a little bit. So you can. You can see here, um, for example, uh, and then this is what the completion was, which is a water injector, and we can explain this later. But it's this. This is basically defines what is the will final objective. And this is what is the objective lost the zone that is targeted by this one. Design. So linking everything together with the field can help us, uh, put a specific material basket for this kind of a design. Of course, the combination is or the different combinations. I think get to like maybe in like the late hundreds 1000 plus, but the number of completion codes are, I think close to 200 something now. But because we link everything this is what defines eventually what is required, uh, for the specific way. Uh, this information is maintained. The material basket that I'm talking about is maintained in a different system. Uh, I'm trying to load it. So we call electronic world delivery process. B. This is where we keep the material baskets for the different, uh, this is where we assign it. And then this is where the system, uh, later on gets the information from I'll explain and then I'll walk you through what we do. So I'm just going to choose one of the completion codes. So this is an old producer. It's in bad. It's 80 materials. It's carbon steel. And these are the quote from with this is a generic item number, so it doesn't specify the supplier, but just specify what is the item and the quantities required. So this is one of the points Bogdan was talking about, that the design could be different from one location to the other, and that's why they need the flexibility. What we do here is try to come up with the best guess that will meet or match the majority of the world that will run this specific application. Because we have completion codes, their field, so we can limit it a little bit in terms of some fields, we know the drill shallows, some fields they go deep. So we can, again, separate their fields. So we can, instead of this 500 joints of tubing, others will need 200, 300, and so on. But this is always an established estimated number, so it doesn't say that this specific will in this, uh, I mean on this district will on the leader list will need exactly 500 joints. It could be 450. It could be 530, so it's somewhere around, but it's a comfortable number for us to base our estimations on.
+
+1:05:47 - Fakhouri, Mohamad And how do you change this? Let's say yes, uh, your estimate was 500 and E W. Sorry, uh, that's 500. But then later on, when do you put the actual quantity?
+
+1:06:06 - Ahmed Elkasrawi (ADNOC Onshore) So we do not put actuals because we do not plan that close because to get the actual, we have to be maybe a month, two months ahead of the well. There is no point of putting the actual at that point in time because orders have already been placed, material is already on the ground. Because this is mostly for planning purposes, right? We're talking about maybe a year ahead, at least the lead time of the material. So we're talking about maybe eight months plus. We're not planning for something that it's coming next month or the month after. So we still use the same numbers. We do not change these numbers. We do not change it based on reality. We look at the consumption after the end of the month, and we try to adjust our best guesses. Maybe this was overestimated or underestimated and so on. But we don't update this bare well. We do not look at material bare well, unless we have a special project that we know that there is a design, a unique design for these wells. But this is a general completion code that we use for all the wells that call for the specific, I mean, like the same completion code.
+
+1:07:10 - Patel, Rahul But I mean- Do you keep any safety stock to adjust these changes? Because you may plan for 500 wells you may need 510 so 10 comes from safety stock which you will know only when you are trying to like execute it.
+
+1:07:27 - Ahmed Elkasrawi (ADNOC Onshore) So basically this is this is embedded in the calculations of this so because again like I said this could cover a lot of wells so the 500 should be enough to cover all of the wells plus a 10 percent. Let's say we call it as a safety factor that needs to go to the RIC side as well, because of damages on the rig side or something, they might need replacements and so on, especially in material that requires more than one unit. Material that has one unit, this is basically set so they know that for D12, they can need one unit each. So this is much easier to plan for, other than like OCTG, fluids. This control line, so this is just feet, so it comes in a reel anyways. So this means this is just one reel of 300 feet, but they just put it this way for their planning purposes. But for us, like crossovers, tubing, all of this, this is all could change based on, like Bogdan mentioned, slight changes in the design. This 500 could be dropped. This number of crossovers could be increased. So we always plan for a bulk period. We don't plan for well by well, or we don't look at well by well specifically, but we look at the requirements on a monthly basis. And everything balances itself. I mean, after a while you will keep more because some of the worlds will will use less. Other will use more and so on. It's just gets balanced at the end. Unless we see something that's major that we are maybe overstocking of specific item, then we need to go back and recheck the designs and compare historically these specific completion codes or the completion codes or the design that use the specific item and where is. The, let's say, the miscalculation or the change, the trend change, let's say, in using this specific item.
+
+1:09:23 - Fakhouri, Mohamad And who's responsible for this? Is this the engineer, planner?
+
+1:09:28 - Ahmed Elkasrawi (ADNOC Onshore) So yes, this tool here, the responsibility falls with us as drilling material team. We maintain these baskets and we are responsible to update them as we see fit. With that being said, I'm just showing you this just to explain to you the logic. However, now with the VMI, and it was mentioned earlier that the VMI stocks are not actually reflected in SAP or anywhere else. It's all manually communicated to us through Excel sheets. We do everything now in Excel because this system was actually linked to another system that is accessed by the inventory team. And other control. That was of the cream. I'm an ashek. Uh, where this information plus this information is translated into monthly requirements or monthly consumption plan. And based on this, the system will also capture any orders that were in place with the delivery times and everything. So you make or we make, uh, an educated decision on when we need to place orders if we need to. How long this material is going to cover us for and so on. But with the VMI, this process, let's say, broken down because the deliveries are in the supplier's yard. It's not registered in the system properly. We can always play with when we need the item to arrive. If we have projects that were canceled, we can delay items, we can cancel items. If we need material earlier, we can advance items. So the process with the VMI needs to be a little bit more flexible than before, than when getting the material directly to our stores. We don't use this AMRB tool anymore, and we depend on the same information or the same base, which is again, the schedule that's here plus the redefined baskets. That's always, again, increasing because whenever there is a complete new design, there's a new basket and so on. With this information together in an Excel sheet, we have to allocate this to different suppliers. We communicate with the suppliers and start planning for when the orders needs to be we have to make sure that the specific design can take responsibility for the specific well. Or in our cases, it could be part of this specific one. Because the city G specifically, but also other contracts, not all suppliers can supply everything. So we have to make sure that this specific design can be supplied by, uh. One of the suppliers or who can supply this item and who has the item in how we place the orders, because we have different stocks with different suppliers of different items. It's a mix, not one place where all the stock goes and we know exactly what's the coverage overall. We know that coverage overall, but each supplier has different stocks, they have different allocations, they provide different material, and we have to take all of this into OK, this is yeah, quick question around it.
+
+1:13:03 - 1Patel, Rahul So when you say you have a monthly plan, does it include? Adnok manage inventory and VMI as well. Together the plan is of total materials.
+
+1:13:13 - Mathew Koskoski (ADNOC Onshore) Yeah, but if you want me to share how it looks.
+
+1:13:17 - Ahmed Elkasrawi (ADNOC Onshore) Just give me one more minute. I just want to mention something quickly so. The question is to. AdNoc team planning for this project, because I know our digital units, at least AdNoc Onshore IT, they were working on upgrade for this DWS. This is an in-house tool that was built, I think 11, 12, 15 ago. They basically upgraded this and they created a new version. That's what Offshore is going to use now. But part of that project was what we called a material like a live material check. So I don't know if the two projects will collide at some points in terms of objectives, because the target for that tool was whenever there is a devised plan or a change in the plan, the system will automatically detect based on stocks, based on material baskets, based on all of this information, detect where our coverage will end and when we need to place orders. Basically another demand planning tool. So I would suggest that I can get you the focal point from Adno Consure digital team, maybe coordinate with them just to make sure two teams are not working on the same objective.
+
+1:14:34 - Unidentified Speaker Okay?
+
+1:14:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay. Yeah. Thank you. Sorry, go ahead.
+
+1:14:39 - Fakhouri, Mohamad Sorry, just to just to confirm.
+
+1:14:49 - Mathew Koskoski (ADNOC Onshore) like the actual data?
+
+1:14:52 - Ahmed Elkasrawi (ADNOC Onshore) Yeah, that's fine.
+
+1:14:53 - Hector Palacios Is there any?
+
+1:14:54 - Mathew Koskoski (ADNOC Onshore) OK. Not unsubscribeable.
+
+1:15:01 - Khalid Sarfaraz (ADNOC Group D&CS) Hemant, I saw in the material list, some of the materials have SAP number and some have not. So this means that not all the materials are available in SAP.
+
+1:15:13 - Mathew Koskoski (ADNOC Onshore) I think to answer that one, actually, every item will have But I think there is probably no SAP code listed when you've got three or four items that are the same, like have the same purpose. Is that correct, Ahmed? Is that what you'd say?
+
+1:15:27 - Ahmed Elkasrawi (ADNOC Onshore) Well, I mean. Also not, but let me explain. The point is the items that you saw there that didn't have any SAP because the SAP is even the item that had SAP. This is a generic code, so basically this generic code is linked to other that we're going to be using. We're going to be using. Uh sad numbers their supplier. So as I mentioned the tubing three and a half inch tubing. This is says three and a half inch tubing premium connection, which has different variations, one from each supplier or multiple from each supplier. So this number is what we use for planning. We know that we need. Let's say per month. 10,000 joints of 10,000 units of the specific item, and then we can split this on the system, this EWDB system works. We don't have to have SAP numbers because this system was developed with pre-SAP migration, but we mostly use what we call an item code. That was the first line on the left. Mathew, let me just share my screen again, sorry, just to make sure people relate to what I'm saying. Let me know if you can see my screen. Yes, yes. Okay, so the point is here what we used to do is use the item code which which is, again, predefined. We know that this CD01, for example, is the compound, whatever. And we know these items, what they mean. This VTV, this is the VMI tubing 86, which is 3.5 inch tubing, for example. The reason these don't have is because this comes from an agreement that has maybe over 1,500 items. And instead of creating sub number for all of them, they just use the codes that they already planned or they already predefined. For them, it's understandable for them to communicate this to the supplier. The supplier understands what this code mean. They can find out what item they need to order or they need to talk about or they need to plan for when they see this code. So it's just a reference.
+
+1:17:21 - Fakhouri, Mohamad Yeah, I have a question from a purchasing part. How do you create the purchase circles like is this?
+
+1:17:30 - Ahmed Elkasrawi (ADNOC Onshore) No, because again, this plan is done offline now in Excel, so the decision eventually is on how many of this we need per month, and then we split on the supplier based on the allocation. Mathew will show you, for example, I'm not going to talk about those three because this is what we look after. We defined, again, that this item under this material basket requires joints. The system or the Excel sheet will look at the requirements per month. So we have maybe, not sure, 30, 40, a 50 month. Based on different requirements, it will deduce how many we need out of this item per month. And then based on our stocks, based on lead times, based on suppliers' capacities, we put the orders or agree with the orders of the suppliers and then put this plan or these deliveries in our sheet.
+
+1:18:23 - Mohammed Ashic (ADNOC Onshore - PD) Mathew will show this part. And just to add on what Ahmed said, since this is like what he said is the completion code or basket of material which is similar to the BOM in MRO. So this quantity that he mentions here is for one type of well, what would be required, okay. So now when we are planning, we are planning for a year or two years. So you may have the similar well say for one year, you may have 200 wells of the similar type. So this quantity into 200 will be the required quantity for that period.
+
+1:19:01 - Fakhouri, Mohamad Yes, yes. But I'm more interested to Khalid's point. Let's say if we take that example of the chemical injection line, you have 12,000 quantities. Do you create the material in SAP?
+
+1:19:32 - Fakhouri, Mohamad That process happens after.
+
+1:19:35 - Ahmed Elkasrawi (ADNOC Onshore) So basically this specific item, for example, or any of these items that don't have SAP codes, they have their SAP codes based on the suppliers. So each supplier will have their own SAP code because we have to identify which supplier supplies what, right? So we have, let's say, currently two suppliers that supply this. So we have two SAP codes that have the same exact description, just the difference is just the supplier. And again, This SAP code does not, we cannot order this because this is not a complete definition. This one says premium. Premium is not a thread, which is what we need. This has to be translated into or changed into a specific number where the suppliers, which what we agreed with the suppliers on. So Tenaris or one of the suppliers have their own number other than from supplier Y, supplier Z. Everybody has their own specific SAP number. Just for planning purposes.
+
+1:20:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I'm at that part also coming from the system, isn't it? Or this manual?
+
+1:20:35 - Unidentified Speaker This.
+
+1:20:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, no, no, no. What if we want to order for canaries or?
+
+1:20:39 - Ahmed Elkasrawi (ADNOC Onshore) This is currently again with the VMI. All the VMI agreements is being done manually. As I mentioned, that project that admin control is working on the upgrade for the database and so on. This was to move this into a more system-based process, but the project is taking too long at the moment. It was supposed to be finished by last year, but then there's some extensions, additions of requirements and so on to the DWS 2.0. So this demand planning or the material planning part was pushed a little bit further, but I can get an update. I don't have an update about it at this time.
+
+1:21:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) One question, sorry. Now here, in terms of as input as this process what we discussed so this information so from onshore and offshore we can obtain to for this project in the excel sheet so whatever so what we have seen with Bogdan presentation and the excel sheet this is similar one available for onshore as well isn't it as input we can say Ahmed.
+
+1:21:44 - Ahmed Elkasrawi (ADNOC Onshore) You mean from the DWS for example?
+
+1:21:47 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah the DWS and the again the map material location plan Similar to that or so that we can translate from equipment basket for example. So we have.
+
+1:22:00 - Ahmed Elkasrawi (ADNOC Onshore) I understand OK, so this this. The map or not the map. Sorry the the plan that we have. We can export this into an Excel sheet that shows all these details and link them with dates and everything. So let me just see if I have ready that can show you quickly what I'm talking about.
+
+1:22:27 - 1Fakhouri, Mohamad So the source will be, could be the DWS because it does contain all the activities and requirements.
+
+1:22:35 - Ahmed Elkasrawi (ADNOC Onshore) Yes, so if you see my screen, so this Excel sheet is an extract from the DWS. This is different information including what we need was a job type, completion code, the other factors because other teams look at different stuff. But basically, with this information, we put this in the Excel sheet that we built, and we translate this into material requirements. How? Basically, by taking all of these, and they are defined as material basket that I was talking about, which is this part here, which we can also download from the system. So we define all of this here, but then we can also extract it. I'm sorry. Can I just stop now? We can extract it into an Excel format that shows the completion code with the components, with the quantities and everything. But instead of downloading this every time, we have been maintaining this in Excel outside the system for a couple of years now. Is that clear? So here I can go and download this list of completion codes.
+
+1:23:44 - Fakhouri, Mohamad One of the reports here. Yes, if I can summarize.
+
+1:23:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So now see what you want to take your opinion now. So we have two input. Either we have to connect with UWDP or we have to feed into the Excel. So from your like suggestion, which is the better one? Feed in Excel or connect to UWDP?
+
+1:24:08 - Ahmed Elkasrawi (ADNOC Onshore) So this is not. I mean my opinion. But I believe we should have the system serve this better than we also just extracting data to Excel and then putting in a different report or a different tool that can give us the information to just build this into the system and everything will be connected because the data will be collected from here. We probably will be able to access the database because again, we have other tools that access this DWS. Itself is linked to the DWS, update information in the AWDB, it reflects into AWS. So both databases are connected. And here also you saw we already connected this as well to SAP, so you could see the SAP numbers. So the link is there. I mean, the link is not a big deal. They can link this together. It's better if we have this in a tool defined. This is I'm not sure. So we can always, if we need to modify something or add something or whatever, instead of keeping it in an Excel sheet. The only thing that we're going to have to do manually until we fix this is the VMI stocks, which is again. I mean, we have built the the API to so access module for the supplier to upload, but they're not really uploading, but we can start enforcing this if it's going to serve the system.
+
+1:25:29 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Let's put it in a system.
+
+1:25:30 - Khalifa Al Yafei (ADNOC - GP) I don't want to be working with extension. Yes, I'm the team here and I agree with you, but I know what I want. From you guys both fuel short of short. Can we assist the both the both system? And let's see an advantage and disadvantage from both system. Then we can. We can take one of them and proceed. Let's see what is more benefit for for both of company and we can amend here and there. And also I think the onshore they have in the system we can take from that system for for let's say it's for. Let's continue what's done and said we are starting from zero. Let's say so let us assist both assistant system. Then we come back with with our recommendations.
+
+1:26:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Guys, OK, thank you.
+
+1:26:24 - 1Patel, Rahul Yeah, this is Rahul. I have a question on VMI stock.
+
+1:26:31 - 1Patel, Rahul When you're planning your planning and procuring, my stock or it is managed by vendor like the planning and procurement. We have to trigger the procurement.
+
+1:26:41 - Patel, Rahul You have to trigger the procurement and vendor procures it on his own based upon the plan you've provided. And manage the inventory or you you buy it and give it to vendor and he manages the inventory for you.
+
+1:26:57 - Ahmed Elkasrawi (ADNOC Onshore) No, no, no, we don't. So it's the vendor is the producer, so the vendor does not. It from somebody else. Usually the vendor is the producer. So we share this plan with the vendor. We discuss with them. We agree based on the stock, the plan, the requirements, their capacities, a lot of factors. We agree on what we call a production commitment, which is a list of items to be ordered and to be delivered by a specific date. And then the supplier triggers this into their manufacturing facilities. And once they have the material arrived, we have reports for them. That shows the inventory level. I mean, I'm sure we get this on a biweekly basis.
+
+1:27:36 - Patel, Rahul And then from vendor it comes to your wells or sites as per the requirement. Whenever you need it actually, then the inventory moves from vendor to your own location.
+
+1:27:46 - Unidentified Speaker Yes.
+
+1:27:47 - Mohammed Ashic (ADNOC Onshore - PD) God, I should want to say something. No, it's it's the same thing. It's what you said.
+
+1:27:55 - 1Sheth, Kunal Kamal. Yeah, so my point is, So as Rahul has just asked regarding the VMI part, so how are we sharing the inventory levels as well as forecasting data of AdNoc with the supplier so that they can manage the inventory at an optimal level?
+
+1:28:11 - Ahmed Elkasrawi (ADNOC Onshore) Mathew, this is where you come in.
+
+1:28:12 - Mohammed Ashic (ADNOC Onshore - PD) Are you still there? Mathew, you can share. Share your screen on that review sheet.
+
+1:28:29 - Mathew Koskoski (ADNOC Onshore) Sorry, I was just talking to a completion engineer here. Sure, OK. What do you want me to show here?
+
+1:28:48 - Mathew Koskoski (ADNOC Onshore) We could use maybe 958s as a good example.
+
+1:28:51 - Ahmed Elkasrawi (ADNOC Onshore) Yeah, just walk them through the process. So if you can show them the well plan. Sure, yeah. Similar to what Dan did, how we get the well and so on.
+
+1:28:59 - Mathew Koskoski (ADNOC Onshore) Yeah, unfortunately I missed most of this meeting, but I had to catch pieces of it. So similar to probably what Ahmed showed here, we have the well plan itself, so the DWS. And this has got sequence numbers of the wells, rig well information, information. These are dates in just in data form. What this has done is it's translated into the well plan. So this is the same information essentially, but what we do is we look at this information and then determine what OCTG requirements there are with it. So is it a heavy casing, light casing, design, you know, workovers? Are there additional requirements that need some lower completions or something like this? And then basically predefined tables of what the different combinations of designs require. So based on location and design types between heavy casing design and the completion code, there's going to be basically a reference of what the casing is going to be. On top of that, it'll add in the completions materials based on completions baskets. So based on whatever the the completion code might be, there's going to be a predefined list of a basket here. Finally, the additional requirements. Anything added on top of the well. Potentially some lower completions or smart completions or fishbone completions. It's kind of like a last piece of the puzzle. That basically defines each well in terms of what the projection of the OCTG requirement is going to be per well.
+
+1:30:32 - Sheth, Kunal That gives us the right so this is the final plan which we have created then we are sharing with the supplier right so that they can replenish on our behalf yes so we do share this this total well plan
+
+1:30:46 - Mathew Koskoski (ADNOC Onshore) but the thing is is that they can't necessarily replenish on their own behalf because they're only one part of a puzzle right so there's four let's say suppliers for OCTG one of them is ourselves our old inventory in BAB 13 and then the three vendors so it's up to us to define you know who is taking what portion of it. It should be quite simple, but a lot of commercial terms and supply chain variations. So if somebody has got quite a longer lead time, maybe we won't lead into their ordering with them because the longer your lead time is, the more variation you're going to have on your accuracy. So we can look at maybe something like this as an example, the nine and five eighths. So right now we've got a small amount of stock with Tenaris. A very large amount of stock with with Valeric, nothing with Marabeni really, and a small amount coming in with Marabeni. So what we have right now is majority of current supply and stock on the ground is from Valeric with ongoing orders to both of these companies that are almost equal, and then nothing from Marabeni. And this, this basically is the sum of our total stock versus the sum of the number of months based on spud date of what's expected on the quantities required on a well-by-well basis. So this is basically summing monthly the total requirement.
+
+1:32:04 - Sheth, Kunal Right, right. So these are the individual bucket-wise stock levels which we need to keep to perform all the drilling activities.
+
+1:32:15 - Mathew Koskoski (ADNOC Onshore) Yes, exactly. So we have kind of a six-month target. This is a contractual target we maintain. The average quantity here is something like joints. So we should always have 30,000 in stock on the ground. You can see right now we're quite a bit below that. We've had some issues with 958s. Our consumption is very high and we don't have participation from all suppliers. You can see that pretty clearly here. So that's kind of a good example of, let's say, external commercial factors that have affected the stability of what we would like to achieve on this item. First is if we look at some items that are going more smoothly, where there's participation from, let's say, all companies. A seven inch, 29 pound is a good example. We've got fairly balanced stock. We've got fairly balanced incomings. Again, a bit of a gap here.
+
+1:33:02 - Unidentified Speaker Yeah.
+
+1:33:03 - Patel, Rahul So if the stock goes below your six month target, then do you bump up the future requirements so that eventually you match up the total stock?
+
+1:33:13 - Mathew Koskoski (ADNOC Onshore) Yeah, exactly. So we kind of use something like this as a base for where we might order. Like if I could place any orders possible, we look at a lead time. Something like this maybe be eight or nine months. And I can see that I need to get up to 15,000. So if I wanted to do it just theoretically, these are all formulas looking up from basically incoming lists from all of the vendors themselves. But something like this would be a quick, easy way to see what I'm looking for. I need joints from Airbenny, spread over this, and we'll be achieving our target of six months inventory, July 2025.
+
+1:33:52 - Mathew Koskoski (ADNOC Onshore) That's kind of what the basis of it is. A lot of the checking and balancing of it as well. This is what we're projecting monthly for our consumption, but we also need to look at the historics. What have we actually consumed in the last six months versus the forward six months? Are we increasing plans or are we decreasing plans? Lately, it's all been increasing, but the number that we've actually consumed in the trailing six months should be plus-minus 10-15% of the future plans, especially If you're planning on scaling up by nothing, everything's going to be equal in steady state, then you should be projecting forwards what you're expecting. It should be comparable to what you've consumed in the last same period.
+
+1:34:35 - Patel, Rahul So essentially this sheet summarizes everything for you. Your consumption, your targets, your stocks at different level, and your plan for the future purchases.
+
+1:34:45 - Mathew Koskoski (ADNOC Onshore) Yes, exactly. On a monthly basis, stocks and incomings are completely updated. On a case-by-case basis, little aspects of it can be updated. Especially if you learn some of these designs historically are consuming slightly less casing or there's slightly more length in certain aspects of some strings, then you can actually put this in and then that change will happen globally across the entire consumption Right, Mathew.
+
+1:35:17 - Sheth, Kunal So Mathew, starting from the drilling bar chart, so the entire planning part we are doing outside SAP, that is DWS as well as EWDP system. And out of that, we are able to determine the item level requirement for next six months. And then we are also doing the allocation to the different vendors based on their capacity. And then we are doing the replenishment planning.
+
+1:35:39 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Correct?
+
+1:35:41 - Mathew Koskoski (ADNOC Onshore) Yes, exactly. Yeah, yeah.
+
+1:35:43 - Sheth, Kunal Right, right. And here, my point is, the consumption part which you just mentioned, is it maintaining outside SAP or that data is available? Let's say six or 10 month history.
+
+1:35:55 - Mathew Koskoski (ADNOC Onshore) Well, this one's actually an interesting point. I take the data directly from the vendors, but we can also pull it from SAP. So if we have some inventory within SAP and it's being moved, then we can see what the movement reports are. But the problem with the way that the vendors interact with SAP, you know, ad hoc financially on the material movements is there's typically quite a large trailing gap between the mobilization date and the date actually is posted with an SAP. And this is due to contractual or financial terms. So if I wanted to know exactly what moved in the last week or last month, I would never rely on SAP, even maybe two, three months, like the stability of what's being invoiced and the movements are not necessarily updated in anything near live fashion.
+
+1:36:39 - Patel, Rahul So SAP is always lagging your sheet is more realistic based on the vendor information what's happening on the ground.
+
+1:36:46 - Mathew Koskoski (ADNOC Onshore) Yes, exactly.
+
+1:36:47 - Unidentified Speaker Alright.
+
+1:36:56 - Fakhouri, Mohamad I know we are at time. So. Team, thank you so much for giving us a walkthrough of your current process.
+
+1:37:10 - Fakhouri, Mohamad So, as next steps, what we'll do is we're going to keep on conducting meeting interviews. So, we have one for this afternoon regarding EPC projects, and then next week will be the inventory planning and supply planning. And then, from a data perspective, once we receive the data, we're going to review them and then see any gaps from technology also point of view. And then the next phase will become the desired phase where you'll see the best practices and you'll see the demo of SAP IBP.
+
+1:37:57 - Fakhouri, Mohamad Are there any questions?
+
+1:38:01 - Patel, Rahul Just one thing before we close. Is it possible to get the document which were discussed in this meeting offline for us for further review?
+
+1:38:09 - Fakhouri, Mohamad Yes, please. Yeah, if we can, Khalid, if you can please send us the documents.
+
+1:38:17 - Khalid Sarfaraz (ADNOC Group D&CS) Okay. Abdul, can you please help us in getting that? Yeah, I'll check. And is there any other teams also we need to consider for the drilling, Abdul?
+
+1:38:31 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, we have Hey langasha sitting in HQ and we have soul guests. So maybe I was who we can either check offline or the same requirement or So and anyhow, so we invited them maybe anyone Nabil or handle be available Like one more team we have for specific to ensure that is
+
+1:38:56 - Mohammed Ashic (ADNOC Onshore - PD) the well-timed team and they they are they handle bit little bit different maybe manual excel sheet so it's better we have a small session with them also to identify their their demand planning okay okay so there's a session under the moral like the planning the chemical and other like outside system forecasting we have to So that is that is because uh, we can't include in mro because the way of planning is It's not mro the chemical and the tie-in So, okay, so we can include them.
+
+1:39:42 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I'll give you the the focal point so we can yeah, we'll include them Yeah, so, uh, Khalid, so we have two more team maybe we can connect separately Yeah, one more thing Khalid, since quite many processes are getting executed
+
+1:40:03 - Patel, Rahul outside SAP, probably it would be a good idea to understand of all these things what is in SAP and what is outside SAP because that helps us map.
+
+1:40:14 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, so probably we need to connect with the digital, okay, we'll understand. So probably we need to connect to the digital focal points in the respective companies as well to understand from the digital perspective.
+
+1:40:30 - Patel, Rahul Yes, what all things right now are in SAP or what are the plans for mapping those things in SAP so that from a data perspective when we talk of getting data in IBP we will have clarity what will come from where.
+
+1:40:50 - Fakhouri, Mohamad Okay, thank you so much everyone This was a very effective meeting and thanks for your input.
+
+1:41:03 - Khalid Sarfaraz (ADNOC Group D&CS) Thank you very much, everyone. Thank you. Thank you.
+
+1:41:10 - Sheth, Kunal Have a good one. Bye.
+
+1:41:25 - Unidentified Speaker you

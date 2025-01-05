@@ -1,0 +1,356 @@
+FW: As-Is Discussion: Demand\Inventory Planning for Drilling Chemicals and Well Tie 
+mar, 1 de oct de 2024
+
+5:18 - Mohamad Fakhouri (ADNOC Group D&CS) Hi, everyone. Bye again.
+
+6:19 - Mohamad Fakhouri (ADNOC Group D&CS) Khalid, do we have everyone, or should we wait one more minute?
+
+6:23 - Khalid Sarfaraz (ADNOC Group D&CS) One more minute. How are you?
+
+6:29 - Khalid Sarfaraz (ADNOC Group D&CS) Sorry, say that again. Hi.
+
+6:41 - Khalid Sarfaraz (ADNOC Group D&CS) Arshik, are you waiting for someone else?
+
+6:46 - Mohammed Ashic (ADNOC Onshore - PD) Actually, I have at least a bullet. Yeah, we're going to start with chemicals or with tie-in first. So we don't have anyone from tie-in. So if you're starting with chemicals, yeah, please go ahead. We'll wait for others to join later on.
+
+7:02 - Khalid Sarfaraz (ADNOC Group D&CS) You can start with chemicals.
+
+7:08 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah. If you don't mind this recording this, uh, this session.
+
+7:13 - Khalid Sarfaraz (ADNOC Group D&CS) Yes, Yes, I will do. Thanks for reminding.
+
+7:17 - Mohamad Fakhouri (ADNOC Group D&CS) Um, okay, so. Um today we have two topics to discuss. Uh and we have one hour. Um so I think everyone now is familiar with what we're trying to achieve the minutes to ask six point can talk about chemicals. And then the second half will talk about, uh, well time.
+
+7:49 - Mohamad Fakhouri (ADNOC Group D&CS) Um. Abdulrahman for Asher. Would you be able to, uh, walk us through the Drilling chemicals for drilling. From from demand to inventory. And, uh, supplies. So, uh, Who's responsible? Uh, Where is the demand come from Is it in an Excel sheet?
+
+8:16 - Mohammed Ashic (ADNOC Onshore - PD) And then how does the inventory communicate with the In Onshore we have been informed that there will be no drilling chemical stocked in future so it will be a different process where it will be directly managed by the drilling end users. So we don't need for this process in Adnok Onshore and if there is any requirement we can follow whatever has been designed for the production chemical.
+
+9:02 - Rahul Patel (ADNOC Group D&CS) So the question here is probably if you can help me how chemicals what you're using and drilling are different from say production chemicals or operations chemicals which are being used at other and then if you say you are not requiring it which means you don't need chemical at all or the chemical would to a different process and not part of IPv4?
+
+9:27 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yeah, excuse me. For Mad Chemical, there is a framework agreement that has been established by Adnog for Adnog Onshore and I think it is the same also for Offshore. It has been made as a service with the service contractor. So the three service companies, Haliburton and Adnok Drilling. They will provide the chemical as part of the complete package service. So we will not have any stock to maintain for drilling chemical except one item, which have an LTVA established by Adnok HQ, which is valid up to 2032. It is only for the common salt, sodium chloride. A part of this one item, all the mud chemical has been part of the service contract.
+
+10:32 - Unidentified Speaker Okay.
+
+10:33 - Vignesh Perumal (ADNOC Group D&CS) But why the contract was created as a service contract? So if somebody asks you the consumption, then how will you, you know?
+
+10:42 - Ali Mohammed Ahmed (ADNOC Onshore - PD) It is now by the drilling fluid team. It is part of the service Before we have service contract for specialized mud service, we have service contract for mud tanker rental and so many other services which is related to the mud fluid. So now they merge all as part complete service to one to three company. Part of that they will make the required fluid. They will provide the chemical, they will mix the chemical, they will inject the chemical and all it is package of service. It's not purchasing materials separately.
+
+11:30 - Vignesh Perumal (ADNOC Group D&CS) So in the system also you don't want to segregate these materials.
+
+11:35 - Ali Mohammed Ahmed (ADNOC Onshore - PD) So as an inventory we will not be able, we will not be maintaining this stoke, so there is no need to keep it or make system for it in our inventory.
+
+11:52 - Vignesh Perumal (ADNOC Group D&CS) So that means yielding related chemicals, nothing is required, is it? Because you said that mud chemicals, everything coming through this route and only for the common salt there is an LTPA.
+
+12:07 - Mohamad Fakhouri (ADNOC Group D&CS) So if I'm hearing this correctly, you don't want to manage this because it's being part of a service agreement?
+
+12:18 - Unidentified Speaker Exactly.
+
+12:19 - Mohamad Fakhouri (ADNOC Group D&CS) There's no need to manage this in IABP and you're not maintaining any stock?
+
+12:24 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes. We have only one item. It can be managed the same like the production chemical.
+
+12:30 - Mohamad Fakhouri (ADNOC Group D&CS) OK.
+
+12:35 - Vignesh Perumal (ADNOC Group D&CS) Khalid, are you documenting these things as key decision points? See, somewhere, please document these things as key decision points. Because these decisions, probably some of them, we may not be able to reverse later on.
+
+12:51 - Mohamad Fakhouri (ADNOC Group D&CS) Yes, definitely. We're consolidating them.
+
+12:56 - Khalid Sarfaraz (ADNOC Group D&CS) Once we conclude as is, to look on this all these documents.
+
+13:08 - Mohamad Fakhouri (ADNOC Group D&CS) Yes.
+
+13:12 - Mohamad Fakhouri (ADNOC Group D&CS) Okay. Okay. So if that's the case, if it's okay with everyone, maybe we can move on, uh, um, to the next topic.
+
+13:25 - Ali Mohammed Ahmed (ADNOC Onshore - PD) What we said is for onshore. You can check with offshore. But what I believe the service contract was established for both, for offshore and onshore.
+
+13:36 - Rahul Patel (ADNOC Group D&CS) Do we have offshore representatives in the call?
+
+13:40 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, offshore and NORA. Are we here? I'm just checking NORA.
+
+13:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Mr.
+
+13:49 - Vignesh Perumal (ADNOC Group D&CS) Raleigh, does that mean you don't store these drilling chemicals at your place, whenever you are going to require some services, you will call those three guys, Slumberger and those three guys, they will come with the required chemical and then they will use it and then they will go back. Is this what will happen? So that means there is no inventory of all the drilling chemicals at all?
+
+14:40 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes, no inventory. We are only finishing the old stock we have, we agreed with the drilling to complete what we have purchased before. We will not raise any LTBA or any purchase order for Mad Chemical now. Till date, that is what we have. Okay, okay.
+
+15:13 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay.
+
+15:16 - Unidentified Speaker Yeah.
+
+15:22 - Mohamad Fakhouri (ADNOC Group D&CS) Abdul, do we, do we have someone from, I'm here anyone from offshore.
+
+15:35 - Ameer Ali Muhammed Kizhakkanikath (ADNOC Offshore - MATCATT) Yeah, yeah, yeah, good morning. Yeah, I will add. One person he's the one looking up to the chemical. We can provide some.
+
+15:47 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Input on this one second.
+
+16:19 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Assalamu alaikum, everyone. Wa alaikum salam.
+
+16:23 - Mohamad Fakhouri (ADNOC Group D&CS) Wa alaikum salam. So Hamad, we were discussing just to give you what we've been discussing. So we were discussing with our team regarding the drilling chemicals. They mentioned that they don't. Chemicals is part of a service. Agreements, they don't have any stock. Therefore, it's not being managed by ADNOC, so therefore it doesn't need to be managed in IBP. We want to understand if offshore has the same process as onshore.
+
+17:07 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) We do have LTPA, We don't have a service contract.
+
+17:11 - Unidentified Speaker Okay.
+
+17:17 - Mohamad Fakhouri (ADNOC Group D&CS) And so you're managing the stock?
+
+17:24 - Unidentified Speaker Yes.
+
+17:25 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, that's true. So I believe Adno Consul is also doing the same. They have LTP and they are issuing releases.
+
+17:38 - Rahul Patel (ADNOC Group D&CS) We just got confirmation from Adnocon that they are moving away with LTP and they have a service agreement which includes inventory as well, which means they will not manage any inventory for chemicals and the managing inventory of chemicals is part of the service agreement.
+
+17:55 - Vignesh Perumal (ADNOC Group D&CS) They have only one LTP currently and that is for common sort, this is what they told So currently they have already a service agreement and the process is already live in Adno Consort.
+
+18:08 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) This is what you mean to say?
+
+18:12 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yeah. Ali Mohammed, can you confirm this? Yeah. Najeeb, there is a framework agreement for MUD service contract. It's already established and implemented.
+
+18:32 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes for mud chemical yes we do have the same thing.
+
+18:37 - Ali Mohammed Ahmed (ADNOC Onshore - PD) So we are not storing we are not purchasing any new chemical whatever stock we have from accumulated from before that once it is finished we will not purchase any chemical except for one item which is the common salt supplied by SamaSalt. Since there is an LTB established by HQ till the end of 2032.
+
+19:02 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, and yes, Ali, we are also part of the same service agreement. And yes, the items covered under that service agreements are mud chemicals.
+
+19:13 - Ali Mohammed Ahmed (ADNOC Onshore - PD) Yes, all mud chemicals. Not the production chemicals.
+
+19:16 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) Yes, mud chemicals. Not the commodity chemicals. Yes, drilling chemicals. So are we discussing here only the drilling chemicals?
+
+19:25 - Mohamad Fakhouri (ADNOC Group D&CS) Yes.
+
+19:26 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) OK. In this case, yes, we have the same thing. It's my understanding issue. I thought that we are continuing with the same as last.
+
+19:36 - Mohamad Fakhouri (ADNOC Group D&CS) No, no, no. Now it's a different topic. It's for drilling chemicals.
+
+19:41 - Ali Mohammed Ahmed (ADNOC Onshore - PD) They are asking about the drilling chemical. Okay, yes. I told them for onshore we have a framework agreement for mud service contract and the drilling chemical will not be managed inventory anymore yes absolutely for adnok offshore also the we are also part of the same service agreement and
+
+20:05 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) we will not be we will not be doing any releases or we will not be managing inventory team will not be managing miss Noora can confirm the same because she's the one she's handling this I'm not sure whether she's
+
+20:27 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) invited or not. We can reconfirm with Noora and Mohamed Fathish. So currently, we want to ensure that all our current LTP are depleted and no more stock receiving through old LTP.
+
+20:48 - Rahul Patel (ADNOC Group D&CS) So can we conclude that drilling chemicals, other than one which is common salt, are all part of this framework service agreement? And we would not need IPP as a planning tool, since inventory is not there in stock. There is no ad hoc inventory in place to do any planning.
+
+21:08 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, actually, not like that. Now, since summer chemical, only few commodity left. So, we will put under the same strategy of production chemical. So, it will be one chemical or the chemical strategy will put it as a one.
+
+21:26 - Rahul Patel (ADNOC Group D&CS) Okay.
+
+21:26 - Muhammed Najeeb Abdulla (ADNOC Offshore - IC) So, yeah, that would be much better. So, anything in case in future, if you have any addition, yes, we will be having an existing strategy available.
+
+21:40 - Rahul Patel (ADNOC Group D&CS) So, are there any other chemicals other than chemicals which are being used by at a drilling company from a drilling perspective?
+
+21:50 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Both are same as a commodity wise the production chemical or the mud chemicals are same but the frequency it's a different end user that's reason we segregated as a drilling chemical and production chemical since only few commodity left in the drilling and majority went to the food service contract So what we do, we don't want to further segregation mud and production chemical. It will be planning chemicals, one category for the IBP.
+
+22:22 - Rahul Patel (ADNOC Group D&CS) And these chemicals, when you say production chemicals, these are not used as raw material for production, but these are used as what we call.
+
+22:33 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) You are the part of the last workshop, isn't it?
+
+22:38 - Mohammed Ashic (ADNOC Onshore - PD) Yes.
+
+22:40 - Rahul Patel (ADNOC Group D&CS) Yes, I was part of the last workshop. I'm just trying to make sure I understand.
+
+22:48 - Unidentified Speaker Hello.
+
+22:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This is not for the raw material, it's for the production purpose. That's why we call it production chemical.
+
+22:54 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah.
+
+22:56 - Rahul Patel (ADNOC Group D&CS) So it's a consumption metal for production. Exactly.
+
+23:04 - Rahul Patel (ADNOC Group D&CS) Okay, then one last thing. Production and operations yeah so one last thing that one material salt how do you want to continue planning that it would be part of the chemicals the way the chemicals are planned or the production chemicals are planned or what
+
+23:22 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) do you categorize planned chemical you can mention there will be some planned chemical and what we understand from the workshop some chemicals there are with parameter yeah So, the plant chemical we are getting an external planning. So, this one you can segregate as a separate category plant chemicals.
+
+23:47 - Rahul Patel (ADNOC Group D&CS) I just want to make sure that from a drilling perspective when we talk about mud chemicals there is only one metal which is currently in inventory. So, that one metal will be part of the plant chemical is what you are saying. So, exactly.
+
+24:01 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) In future also if there is more chemicals are coming, then we will add to the plant chemicals.
+
+24:07 - Unidentified Speaker Okay.
+
+24:15 - Vignesh Perumal (ADNOC Group D&CS) We will create reservation for the plant chemicals which is required, Abdul, whenever you require.
+
+24:21 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Reservation will be there. Manual reservation will be created. Yeah, manual reservation.
+
+24:27 - Vignesh Perumal (ADNOC Group D&CS) Okay. Thank you.
+
+24:37 - Mohamad Fakhouri (ADNOC Group D&CS) All right. So this is, uh, no care for drilling chemicals. So maybe, uh. We can, uh, talk about well time.
+
+24:56 - Mohammed Ashic (ADNOC Onshore - PD) we have Mr. Farid, team leader from WellTie-in as an end user focal point. So he may be able to explain how the demand process goes on. But before that, since he's first time joining this meeting, can you give a small introduction to this session so that he can explain the requirements?
+
+25:16 - Mohamad Fakhouri (ADNOC Group D&CS) Yes, yeah, for sure. So basically what we're trying to achieve or this Uh, this meeting is to understand your current process, how the demand is being done. Uh, how the inventory is also how you how you do inventory planning coming from the demand and then the supply for diet. Um, what we're trying to do is implement, uh, I say P I B P for ammo or is and drilling. This will help with streamline streamlining your stocking decisions and also avoid any overstocking. We're currently in this phase of the assessment understanding your process. The next phase will be the design which we will show you what the target state is or what the best practice And then from there, we'll do a fit gap analysis. And then come up with the final, uh. Solution.
+
+26:29 - Unidentified Speaker Yeah.
+
+26:32 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) Yeah. Good morning, Gola. Sorry I will be available only for five minutes because I have other interview.
+
+26:48 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) based on the DWS scenario we're receiving from drilling department. And this is the forecast based on the standard package we have for all types of wells. In tie-in JV, we are consuming around of our forecast.
+
+27:16 - Rahul Patel (ADNOC Group D&CS) This is the summary.
+
+27:21 - Rahul Patel (ADNOC Group D&CS) So essentially the process is same as the drilling metals which are getting planned through the DWD process.
+
+27:27 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah. OK. And you're using the same. So it's not only just the same process, but also the same tools as well.
+
+27:38 - Unidentified Speaker Yeah.
+
+27:41 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) But how How it is different from other drilling materials? We have different type of materials. We have different valves, we have different flow lines.
+
+28:04 - Mohammed Ashic (ADNOC Onshore - PD) Do you have any bill of material in the forecast or do you have any exam How the demand is planned? Like when you receive the type of well, how? How do you populate the materials required for this type of it?
+
+28:25 - Mohammed Ashic (ADNOC Onshore - PD) Look for it and you get the question.
+
+28:31 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) Yeah, I have the material forecast what we are submitted to material management.
+
+28:45 - Mohamad Fakhouri (ADNOC Group D&CS) And the material forecast. This is. And, uh, the WS like it's just the bombs. Where are they, uh? Um. Located. Is it just in an Excel spreadsheet or no? It's in the system.
+
+29:02 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) It is an exit.
+
+29:10 - Santosh Kumar Sharma (ADNOC Group D&CS) Also, uh, modifying, uh, is it static list of bombs or keep on changing with the different requirements we get on a well-specific designs?
+
+29:26 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) It is due to the change in DWS and actually we make like estimated configuration because what we receive it from DWS we cannot know the typically or the required configuration, but based on the historically. And or. Yeah, and sometimes we added some. Contagious controversy for this forecast. OK.
+
+30:02 - Santosh Kumar Sharma (ADNOC Group D&CS) Is it something like you're covering the next six month forecasted demand or what sort of time frame? Do you cover when you are doing this material planning?
+
+30:12 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) Well, let's see. We make for three years, and we make a revised each quarter.
+
+30:27 - Mohammed Ashic (ADNOC Onshore - PD) Three years, and then each quarter is like some sort of fine-tuning happens.
+
+30:31 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) Yeah, yeah. But since we have valid LTPA, easy to review and update our requirements.
+
+30:46 - Rahul Patel (ADNOC Group D&CS) Also, do you have vendor-managed inventory? Is it similar to other materials where most of the inventory is managed by vendor through EMI stock?
+
+30:55 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) I believe it is not implemented in our department or in our company. It is suggested before what I before 3-4 years but it's still not implemented. So all the inventory is managed by ADNOC?
+
+31:14 - Rahul Patel (ADNOC Group D&CS) And SURE.
+
+31:20 - Rahul Patel (ADNOC Group D&CS) So we don't have VMI implemented for time and then all the inventory?
+
+31:26 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) I am end user but what I know from material management team, Mohamed Ashik, it is not implemented and our time.
+
+31:36 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) It is not implemented.
+
+31:37 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) Yeah, it is not implemented. It is suggested before to be implemented, especially for the line, but it is not implemented.
+
+31:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So basically the time material left to say now the differentiation maybe you can confirm for it. So all the drilling material to drill the well So, till the fruit comes. So, once the fruit come, then the time material come into the picture.
+
+32:11 - Rahul Patel (ADNOC Group D&CS) And then all the time material are part of ad hoc inventory, which does not go through the same process. The forecasting process is similar to drilling, but then the inventory optimization and then the supply process is different than drilling, where the drilling process are more focused on vendor-managed inventory, whereas the tie-in process is more focused on ad-hoc-managed inventory.
+
+32:33 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly. So, there are some drilling material still ad-hoc-focused, ad-hoc-controlled. So, similar to them, you can make it tie-in as well. Tie-in is better to make separately.
+
+32:45 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) Tie-in material in ad-hoc-controlled is different from other ad-hoc-controlled. Group.
+
+32:54 - Vignesh Perumal (ADNOC Group D&CS) Yeah.
+
+32:56 - Rahul Patel (ADNOC Group D&CS) So the material type or the definition of material is completely different. It's not the same material.
+
+33:01 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) Yeah, it's not the same material.
+
+33:13 - Rahul Patel (ADNOC Group D&CS) So the same inventory management team manages the inventory for tying material or do you have a separate inventory management team who takes care of optimising the inventory, making sure there is sufficient stock and then making sure that supply plans
+
+33:27 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) are created.
+
+33:31 - Mohammed Ashic (ADNOC Onshore - PD) We have separate team, separate team for tie-in and they perform the stock review based on the forecast received from the tie-in team. They review, they check the current availability of stock in warehouse and what's in order and according place either if the if the requirement is for a long term price agreement, the demand is calculated for next three years or else if it is. Existing release order or spot orders to be placed according based on the lead time and stock cover necessitated. There is the orders. So it's basically an Excel sheet. The review is done within the OK.
+
+34:20 - Farid Munassar Ahmed AL-Yafeai (ADNOC Onshore - PSD) OK. I want to live.
+
+34:26 - Mohamad Fakhouri (ADNOC Group D&CS) Thank you.
+
+34:28 - Vignesh Perumal (ADNOC Group D&CS) Thank you very much. Thank you. I think this will also be created as reservations or you will not create this as a reservations in the system.
+
+34:37 - Mohammed Ashic (ADNOC Onshore - PD) Or directly reservation. No, no reservation is only when they actually withdraw maybe a month or two months earlier. Reservations are made against each well number we give to the contractor. It's based on the drilling schedule. We issue the reservations to the contractors. And what Vignesh want to know is, do you raise reservation say for for a year or two years in advance so that it is? No, no, no, no. Only when the well is allocated to the specific contractor. That's when we raise the reservation.
+
+35:13 - Vignesh Perumal (ADNOC Group D&CS) In order to start the supply process of this tie-ins, you create direct call of orders by referring your Excel sheet and you make sure that adequate stock is available. Whenever you have a requirement to immediately issue it for drilling, then you will create a reservation and you will issue it, correct?
+
+35:34 - Unidentified Speaker Yes.
+
+35:38 - Rahul Patel (ADNOC Group D&CS) So the forecasting, the inventory planning, All happens on Excel sheet. That forecast and inventory plan gets converted into procurement proposal in SAP and you procure and keep the stock available and then once there is consumption requirement reservation is raised to consume the stock for the specific well.
+
+36:01 - Mohammed Ashic (ADNOC Onshore - PD) Yes, exactly.
+
+36:06 - Rahul Patel (ADNOC Group D&CS) So how do you create so you directly create PR in system based on an Excel sheets.
+
+36:14 - Mohammed Ashic (ADNOC Onshore - PD) If there is existing price agreements, release orders would be done if. If there is a new requirements, it could be either whatever strategy that has been followed. If it's a long term requirement, may price agreements would be established. Should be created for price agreements or else PRs for spot orders.
+
+36:35 - Rahul Patel (ADNOC Group D&CS) So essentially the direct first point of information information in SAP's PR is based upon either spot orders are. Are the long term agreements?
+
+36:46 - Mohammed Ashic (ADNOC Onshore - PD) Yeah, but for release orders it will be directly erased from the reference to price agreement. There will be no PR for that.
+
+36:53 - Rahul Patel (ADNOC Group D&CS) Yeah, got it.
+
+36:57 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Any stock transfer?
+
+36:59 - Rahul Patel (ADNOC Group D&CS) Go ahead Mohammed.
+
+37:03 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, no, I was just just confirming cause I'm also thinking no. Operational part that isn't SAP. Everything happens outside of SAP and an Excel sheet. But then when the procurement part takes care of it, that's that's an SAP.
+
+37:23 - Mohammed Ashic (ADNOC Onshore - PD) Yes, yes, yeah, yeah, understanding is correct, yeah.
+
+37:28 - Rahul Patel (ADNOC Group D&CS) Abdul. The drilling materials which are not part of VMI. They do they also follow the same process where the forecast comes in excel sheet and then directly goes to procurement?
+
+37:43 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly same process.
+
+37:46 - Vignesh Perumal (ADNOC Group D&CS) Ashik and Abdul just curious you know you say that for the next three years you want to drill say so many wells you don't have any system which you use to estimate for this three for drilling say 100 wells this many pipes I require this many nothing is available you start using the excel sheet for for and based on the previous experiences huh yeah we have we do have system now with this and see uh in adma the
+
+38:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) ago 10 there's a system established called dma dealing material location so this system launched and then uh we got uh it stopped uh using it uh because the EMRP, EWDP, implementing for AdMob at the time. Then we've done the merger, then SAP can. So we want to utilize SAP system as networking, if you remember the VJ and all, for AdMob offshore. Then at the time, another EWDP, EMRP launched as a version two. This is still under process, last four years. And so they developed, there are three stages. For this system actually so the first layer already implement it's mainly for the budgetary purpose and the high-level plan is already in place in offshore and onshore all the company the second layer still they're working and the third layer will be the DM EM RP or DM RP so this is it will take time again that's reason now still we have gap everything doing in excel. So that's why we recommend to IBP.
+
+39:34 - Vignesh Perumal (ADNOC Group D&CS) Now see now see the thing is just one minute just one minute now so going forward what IBP will will actually help you in planning this is what I am trying to understand because you because you are saying that you have the requirements in the excel sheet And you are placing the call of orders now against your judgment, which is done on the... Are you looking for this IBP to plan these requirements based like forecast-based planning you are trying to do?
+
+40:10 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, exactly. I'm just not able to understand. Sorry. Yeah, no. See, what we are trying to do with IBP, what we understand at the very beginning with the OSM and so like doing Case study. So the basically we have the very high level drilling plan which we called in Yeah, and the DBC so it will come high level drilling plan then second layer we called Equipment basket is nothing but a ball bit of material for each specific well or well type we have BOM, then it will convert, it will join together with the DBC, so it will populate drilling material allocation. So this, the requirement will come. So this requirement will compare with the stock available in SAP, so stock available in PO, stock available with VMI contractor, so on. Then it will perform like drilling material allocation. So it will allocate, either from stock either from PO either from nearby stock so like this allocation going on then at the end we'll get one bucket which need to order so so on we are doing and same thing we are expecting in the IDP.
+
+41:30 - Khalid Sarfaraz (ADNOC Group D&CS) Okay okay Abhinav this Abhinav this one you are doing in in which system? EWP? No currently In Excel, OK. And one question regarding the forecast, you're saying you're doing the forecast. So who's doing the forecast? Your team is doing the forecasting, or the vendor is doing the forecasting? How this is being done in Excel?
+
+42:00 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, forecasting means mainly, so we have different things to consider. One is, like as I mentioned, the DBC, it is the main plan this this is the entire drive so in offshore it is coming updating from the the shareholder and all on monthly basis after the confirmation in onshore it is quarterly basis so this is the how the forecast drive so for example we will plan for a few wells next month there is a possibility chance for the shifting or cancelling this wells or prepone or postponed so that these are the possibilities other but it will not impact on the inventive part why because the material it is almost standard unless otherwise any special material get changed then if it would be impacted the standard material will not be so 80% of the material will not impact on this forecast changes actually so this all forecast drive by so the very controlled system we called a DBC this is approving by shareholders in both onshore and offshore yes this is available in the system now Okay.
+
+43:15 - Khalid Sarfaraz (ADNOC Group D&CS) I have a question.
+
+43:18 - Unidentified Speaker Okay.
+
+43:19 - Khalid Sarfaraz (ADNOC Group D&CS) Continue Khalid. No, no. My question is inventory is required. However, the delivery time will change, right? The expected delivery time for the materials. Inventory remains the same, but the delivery, but the delivery time, for example, you postpone this well, it was supposed to be done in this quarter but you postpone it to next year so there is a big difference yeah exactly
+
+43:42 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) yeah mainly this uh activity happening almost two to three years window so normally the the next six month will will not will not impact much normally so the two to three years window they are planning now what will happen if there is suppose we planned for this month one well and what happened And all the stakeholders, they will evaluate for that, like material availability, serviceability. If there's any challenge, they'll rise officially to the planning team to shift, so to do action. This is how things are doing. Now, in the VMI contractor, for example, VMI is also part of the planning. Once we get the reverse DBC, maybe they to the VMI contractor, they will revise their plan as well. And in its shortfall, they will highlight to ADNOC or offshore-onshore and for appropriate action.
+
+44:51 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Is it clear?
+
+44:56 - Khalid Sarfaraz (ADNOC Group D&CS) Yeah, thank you.
+
+45:01 - Aysha Abdulla Al Ali (ADNOC - GP) I have a question for the drilling team. Once I receive the forecast, these list of items are already, like, stock available and available in the store, or you are creating a new item sub number, like what we do in the SPARs?
+
+45:18 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) OK. Actually, this is coming as we explained. Any new requirement comes it will come ahead like two years or three years ahead so if this material is a new material then what we do we'll create new material whether it's a new technology or new design this is the reason mainly we are creating or new totally new requirement we will create new material number then we'll go for tendering after tendering so we will create another numbers we called branded number numbers according to the split award. Most of the drilling, we do the split award. So either 60-40 or 80-20, some split award will be there to ensure the continuity of our operation. So then what we'll do, we'll make a two separate branded material number. Then we'll make a LTPA. So then after that, we'll make all of our order for this LTPA. This is how the drilling a material, the creation happens.
+
+46:25 - Mohamad Fakhouri (ADNOC Group D&CS) Abdul, just going back to that, do you connect the initial material number to those split material? Like, is there a correlation? Like, either you can go back and say, okay...
+
+46:44 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, there's a correlation available. However, since we are not using the system like calculation and all, so it's not fully updated. What we'll do, we'll ensure it's updated. There is a table called Khalid Alternative Material Number. So we'll maintain all this correlation in that particular table, actually.
+
+47:07 - Mohamad Fakhouri (ADNOC Group D&CS) And then, so for, let's say, the child material number, associated to the parent.
+
+47:14 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, it will be there within the alternate material number on table on custom table available within a second.
+
+47:23 - Rahul Patel (ADNOC Group D&CS) And in that custom table you can maintain multiple alternate material numbers. Because if I understand you have two vendors, then you'll create two vendor specific material codes for the same material.
+
+47:33 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah. Yeah, we can multiple. The multiple is allowed.
+
+47:43 - Rahul Patel (ADNOC Group D&CS) Any inter-company or inter-factory stock transfer requirement for well-tied metals? Will there be stock available at different locations which needs to be considered in the planning?
+
+47:59 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yes. So all the requirement in IBP So, the possibility of transferring at ad-hoc level, then the company level then plans it.
+
+48:12 - Rahul Patel (ADNOC Group D&CS) For the ad-hoc managing inventory materials only, right? Because VMI anyways are separately managed and is owned by vendors. So, and all the materials...
+
+48:23 - Mohammed Ashic (ADNOC Onshore - PD) But this, Abdul, this transfer should be just a suggestion because we need to take approval because this material may be kept for different users. Suggestion yeah it's a suggestion where okay this this is potential availability of so and so item at this location of plant or storage location but it does not I mean it should not create an auto sto so that we
+
+48:47 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) maybe we need to take an approval from those end users yeah definitely actually so this one I think Any transfer will come through the process, I think, approval. Anyhow, so we'll see during the 2B. OK.
+
+49:25 - Mohamad Fakhouri (ADNOC Group D&CS) Rahul, do you have further questions?
+
+49:30 - Rahul Patel (ADNOC Group D&CS) No, I'm good.
+
+49:31 - Mohamad Fakhouri (ADNOC Group D&CS) Thank you.
+
+49:35 - Mohamad Fakhouri (ADNOC Group D&CS) Yeah, I think, yeah, covered the gist of it. Okay. Team, from my end, I don't have any further questions. So, thanks so much for walking us through the process. Or actually the processes. So next step, I guess, this concludes the Aziz workshops. We're gathering all this information and documenting the decisions. Then next week, we will start the design phase.
+
+50:19 - Mohamad Fakhouri (ADNOC Group D&CS) From the team, Do you have any questions?
+
+50:25 - Mohammed Ashic (ADNOC Onshore - PD) That's OK. Thank you.
+
+50:29 - Mohamad Fakhouri (ADNOC Group D&CS) Well, then, thank you, everyone. All right.
+
+50:31 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Thanks, everyone.
+
+50:32 - Rahul Patel (ADNOC Group D&CS) Thank you. Thank you. Thanks, everyone. Yeah.
