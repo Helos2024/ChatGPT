@@ -1,0 +1,680 @@
+Bastian Osorio:
+Yeah, so I'm not sure if Sebastian will join. So give me a second. Yeah, so I also started, I canceled the meeting with later today, sorry, with Saul later today, because as we don't have access to the connection, I mean, we are not able to integrate data yet, so there's no point to keep discussing about, like, ideas at this point, considering that we won't be able to progress that much if we don't have all the connections set, okay?
+
+ So the purpose of this meeting is to start this discussing about start reviewing. So two things, first about the storage location and then we need a more detailed plan for the building part and testing. Okay, so Reinaldo, I understand, Saga told me that you already have some ideas, share some ideas with him regarding the storage location. So first, this is the first point, I understand that you have a doubt in what should be the level to integrate that you were confused about MRP area or you weren't sure about if it was MRP area or storage location.
+
+ We got the confirmation that the final level is going to be storage location. I also understand that Sebastian highlighted the fact that we need this as soon as possible. So if you can share some of the progress you have in this regard.
+
+Reinaldo Gutierrez:
+Yeah, I started doing that yesterday. Okay, I already implement the body that need to be configured with the code that we are going to use. So what I was thinking is that we can use a plant underscore a storage location. That way we can avoid some duplicate data that may exist using only a storage location okay so can you can you like provide more details of how you're gonna change it like what is the logic yeah sure let me open the powerpoint here because I have it okay let me share this You can see the screen, right?
+
+
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Reinaldo Gutierrez:
+So it's like the same that we are doing here with the MRP area, but the difference here is that we are not going to use the MRP area. We are going to use plan plus storage.
+
+Reinaldo Gutierrez:
+That will be the logNum, that is the field of IBP. So for that, we are going to do some change on the location. That's the first one that's already implemented on Agnet. I'm working on that. Then I need to do this implementation here. I will do the same change for everything. So what is going to happen is there is maybe the possibility to have the same information for a lot of storage locations. That's for the master data.
+
+
+
+Bastian Osorio:
+Can you repeat please?
+
+Reinaldo Gutierrez:
+Yeah, what is going to happen is that we are going to have the same plant by multiple storage locations.
+
+Bastian Osorio:
+But how are you going to multiply?
+
+Reinaldo Gutierrez:
+that in the code. I'm going to see the plant, I'm going to see how many storage locations they have related to that plant, and I'm going to duplicate the data by those storage locations.
+
+UNKNOWN_SPEAKER:
+Does that make sense?
+
+Bastian Osorio:
+Yeah, it does. I mean, if you're able to do it.
+
+Reinaldo Gutierrez:
+Of course, it doesn't make sense. The code, we can do it easily. Okay.
+
+Sagar Vora:
+Uh, Reinaldo, can you explain multiply in the sense like you will join the table, right? So automatically the data should, like if you join the plant to the plant, then automatically all the storage location will be prone. You need to write a code to concatenate both, right? Yeah, that's right. That's right.
+
+Reinaldo Gutierrez:
+That's right. That's the idea. Uh, and it's going to be the same for all the master data that we have here. Okay. Because we need to have all that information on an IPP. That way, when we are going to do the transactional data, the transactional data need to be done by plan and external location. That way we can do the mapping with the master data.
+
+Sagar Vora:
+And Bastian, other approaches like we can directly add the like example if location extract he will modify and he will add a mdlb table from where he will extract the storage location so same thing can be done in cids also where also we can do the join but only thing is like the performance like whatever we are planning to do yeah the performance will be poor if we do that on on cids okay absolutely absolutely The idea is
+
+Reinaldo Gutierrez:
+to do it on the extractor, that way when the extractor is going to be executed, it will transform of the plant into a plant plus storage location, okay? That's the idea.
+
+Bastian Osorio:
+Do you have a clear idea of all the extractors that will be impacted by this change?
+
+Reinaldo Gutierrez:
+Yeah, it will be all those that you can see right there.
+
+Bastian Osorio:
+So location and maintenance, yeah.
+
+Sagar Vora:
+I think some SAP, like SAP functional support might be required, right? To see which tables we have to use.
+
+Bastian Osorio:
+No, no, no.
+
+Reinaldo Gutierrez:
+I know what are the tables for external location and plan, okay? What we need is to have the what are the storage location that we are going to use because I don't know if we are going to use all the storage location for the plant.
+
+Sagar Vora:
+No, no, that is correct. I'm talking about the transactional data. So if the transactional data, if some stock is at plant level, okay, where 1000 quantities, 1000 is maintained. But now if we want to break that 1000 at storage location level, so we cannot uh that means just join the plant and storage location table right there it should be at that point at that point we have to
+
+Reinaldo Gutierrez:
+define that the transactional data will be by plant and storage location without the location we cannot do anything okay so they have to define us one external location if they don't have it or the field for the external location
+
+Sagar Vora:
+if they have it okay but I think step So there we will need help, right? From basically all the CP tables.
+
+Reinaldo Gutierrez:
+Yeah, we can do it by the CP tables, but we can create a custom extractor also. That way we can do it more efficiently. Or we can create a program to do it because we have multiple ways to manage the situation. Because the idea here is to improve the performance because is going to be a lot of data.
+
+Sagar Vora:
+No, no, I agree. We will do the extractor body or tab app program, but I'm saying like, you have the list of tables for the transactional data also, or we have to do a research for that?
+
+Reinaldo Gutierrez:
+We have some of the tables. OK. OK. It's on the MRO mapping. Yeah. Yeah. It's on the MRO mapping. You could see all the tables that we have right now. And if we need, other transactional data that will be defined in the future with the client.
+
+Sagar Vora:
+So we can do one thing. I can connect with you and we can create one more column into this or in Excel where we can put which all tables we will now join. OK. And then we can like question Hector. You guys can just go through like the tables are correct or if we need support from Rahul or anyone they want. They have to validate the tables are correct or not.
+
+Reinaldo Gutierrez:
+Yeah, we can do that if you want.
+
+Bastian Osorio:
+There is one extractor that won't be impacted is the MRO functional location text. Functional location is not a location itself. It's a different thing.
+
+Reinaldo Gutierrez:
+Yeah, but they have the fields location there. Can we check?
+
+Bastian Osorio:
+Can we check please? Sagar, can you run that extractor?
+
+Reinaldo Gutierrez:
+Or you, Reinaldo, I don't know who has the...
+
+UNKNOWN_SPEAKER:
+Sagar, maybe you can do it because for me I have to turn down the other computer.
+
+Reinaldo Gutierrez:
+So...
+
+Sagar Vora:
+you you It's taking some time. Also, Bastian, we are working on creating the list of activities that needs to be done, right? So you were asking me in the morning.
+
+Bastian Osorio:
+Yeah, that is just, we need a better planning. That's for sure. I think we are working too reactively and we need to know, for example, I'm not sure if you guys will need more additional resources. I created and it's something that we've been checking with Sagar. Basically, and I will share it here. Let me make sure. Yeah, here. Base here. For drilling and for MRO and chemicals, we have this file.
+
+ You started this file, Reinaldo. We have been adding more stuff to it. But we need more. We need, for example, well, the completion status is fine. But at deadline, when do you think all these different integrate, all these different tasks will be ready? We need to improve the visibility. I understand right now that you've been working in Clare, so that's why we have been pushing this too much. But as you guys know, we need, I think, of course, because of the delay on the SDD and all the bureaucracy involved with AdNoc, we haven't been able to progress as fast as we liked.
+
+ But we need to have better visibility. We are basically blind in this front.
+
+Reinaldo Gutierrez:
+Yeah, yeah. From the next week, we are going to start having a meeting to see the progress on the technical side, okay? I will prepare an Excel with all those, this point and all the future points. That way we can be like a line of how it's going, the activity by the integration part, okay?
+
+Bastian Osorio:
+I have a meeting with Sagar, I will put you as well next week. So usually we have, so, On Monday, we have yeah. Demanding inventory integration, and this is just for checking the The progress is not to go in is not for going too much into detail, so I'm going to put you here. Yeah, I think that's very early in the morning for me.
+
+Reinaldo Gutierrez:
+I don't know. No, it's 1 PM.
+
+Bastian Osorio:
+It's 1 PM.
+
+Reinaldo Gutierrez:
+It's 9 1 PM. On my 1 p.m.
+
+Bastian Osorio:
+my 1 p.m. But for you is 9.
+
+Reinaldo Gutierrez:
+oh yeah that's great nice okay okay I will add another meeting because I need to join with uh alejandra and isabel that's going to join to the team to to for the adapt site so I will have a meeting with them on the next week.
+
+Bastian Osorio:
+Okay. Yeah. Okay. But these meetings, the meetings, uh, I'm not, I'm not well integration. They're just 30 minutes. It's just to, um, review.
+
+Reinaldo Gutierrez:
+Yeah. Yeah.
+
+Bastian Osorio:
+It's to check just the progress. And if there's anything that is a stop is blocked. And we we have to uh work on on lock that on expedite that okay that's that's good and if we have if we can have three files so one for mr1 chemicals demand one for for drilling in reality we just need one file and I think that file is already but we need I think saga can do that split the file demand mro chemicals and demand sorry and supply mro chemical so we will have three files in total
+
+Reinaldo Gutierrez:
+yeah I have to have like a I have to have a meeting with sagara to explain all explain all the activities there to have but I think we should have mro chemical one and drilling one because there are some
+
+Bastian Osorio:
+demand and supply basically some of the master data might be common right so that yeah yeah then then in that case just organize the file because it's correct we have it here uh integration and we have two files cids no sorry a mapping drilling and mapping mro chemicals that's fine but the files are very messy are not well yeah take a look at them you you will find a better way to structure them. OK, you can share your screen now.
+
+ But sorry, I want to highlight that we need a deadline. And if you guys need more resources, you just have to let me know.
+
+UNKNOWN_SPEAKER:
+Sure.
+
+Bastian Osorio:
+OK, well, yeah, you have the location here.
+
+Reinaldo Gutierrez:
+You're right, Reinaldo, the location is there. That's another location. Location in the, I didn't find the column five. Yeah, the log ID.
+
+Sagar Vora:
+So, yeah. I think like I executed functional location text. These are the, this is the master data you are talking, right, Bastián?
+
+Reinaldo Gutierrez:
+Yeah. Yeah, that's the one. So for all those extractor that I show you, Bastián, we need to do the change, okay? So that's going to create a lot of data there.
+
+Bastian Osorio:
+And when do you think you're going to be able to start the testing?
+
+Reinaldo Gutierrez:
+For the next week, I think on Wednesday, I will start testing the structure.
+
+Bastian Osorio:
+So you will be building Monday, Tuesday and Wednesday, the idea is to show something. Yeah. When are you going to put that? When are you going to schedule the meeting, book the meeting for...
+
+Reinaldo Gutierrez:
+On Wednesday, I have the idea to put it on Wednesday, 10pm. In the morning.
+
+Bastian Osorio:
+Can you schedule the meeting, please? Yeah, sure. But just to just to have it have it there.
+
+UNKNOWN_SPEAKER:
+Yeah, no problem. Could it be at your? Eleven. After the dream integration.
+
+Reinaldo Gutierrez:
+So yeah, I don't have that.
+
+UNKNOWN_SPEAKER:
+Oh yeah, yeah, sure. So there's one more thing that I want to address is that there's plenty.
+
+Bastian Osorio:
+So we start reviewing the extractors as just as we did right now with Sagar. And Sagar doesn't have the clarity regarding I know you have a file with all the filters So I think you guys need to meet and share the information you have in consolidated into this into these two files that we're speaking because Yeah, although I understand we're not able to integrate the data to IVP. We are we are able to start Adding the filters, isn't it or we cannot add in the filters yet?
+
+
+
+Reinaldo Gutierrez:
+Yeah, we can have some filter so second I don't know if you know this file, the mapping and all that we have.
+
+Sagar Vora:
+Yeah, I'm aware of these filters. Okay. Reinaldo already told me, but I think these filters are not enough. That was what I was talking like, because we don't have all the plants related filters.
+
+UNKNOWN_SPEAKER:
+I think that are not.
+
+Bastian Osorio:
+You're right. You're absolutely right. So the idea is to first include the filters we already have. The filters we already have in the configuration. Once we have that and we have the proof with the SED, we're going to integrate and show the data to the users. So next time we have a meeting with them, it's not going to be, okay, guys, we need more filters. It's showing that, look, this is the data we have, we need this and this information.
+
+ Even we can send just an e-mail, probably they won't get what we're trying to say, But the idea is to show that we have made quite a progress before asking for more question, because these guys are feeling very frustrated, feeling that we are not progressing as fast as they would like,
+
+Reinaldo Gutierrez:
+So there has been some stopper there by the firewalls, the LCD. So it's not all our fault.
+
+Bastian Osorio:
+No, no, I absolutely understand. That's right. But still, because they already provide some filters, I don't want to lead the meeting saying we need more filters. They can say, like, what the fuck? We had, I don't know, like four meetings just to discuss filters. Why are we having this conversation all over again?
+
+Reinaldo Gutierrez:
+So we can show we can show with the filter that they give us if they need more where they have to give us a lot of the other.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+And we need to. Be very specific into which filters we need. For example, storage location. I understand that. I guess we will use some filters for storage location or otherwise we can integrate every single storage location. So I'm going to say which filter for storage location. OK, check and again we can even send an email, but the idea is to be super specific in and you remember our first meeting right now.
+
+ Were not good because they were very open. Nobody knew at that point what hell we were doing. So yeah, we need to be in this second loop, more clear, more specific into what we need.
+
+Reinaldo Gutierrez:
+Yeah, so I have an idea. So all the extractor have all the fields there that we can do some filter. So with Sagar, we are going to prepare all this file and what flat file and they can put the filter that we need to use with that example of data for each one. So they can put the filters when the meetings come in the future. I think that's a great idea to simplify the data.
+
+Sagar Vora:
+So we have to create a file with the data?
+
+Reinaldo Gutierrez:
+No, it's going to be like, I don't know, 10 route of data with all the fields that they can do some filters. If you go, can you share your screen? If you go to extractor, go to one extractor, yeah.
+
+UNKNOWN_SPEAKER:
+Peace.
+
+Sagar Vora:
+Thank you for listening.
+
+UNKNOWN_SPEAKER:
+Yeah. OK.
+
+Reinaldo Gutierrez:
+So as you can see here, we have those fields, right? Functional location, functional log ID, log ID, plan log ID. If you go to the right, you will see more fields, right? Correct. So with all these fields, we can do some filtering. So the idea is to give them all these fields, and that can provide the filter that we can use.
+
+Sagar Vora:
+but I think that would be too much because we have more than 10 to 15 extractors right so instead we can create a standard like basically the standard filters would be the plant basically the location ID storage locations MRP type material type I think 4 or 5 so whatever we have we can tell like currently we have these filters apart from this if you guys have any other filters which you think like 4 only to vignesh we can ask him and then I think he can reply back saying like okay you guys already have this much filter then add this also filters yeah yeah because if we send all the expect us uh with column then there will be more than 10 to 12 10 to 15 tabs so no one will go to 10 15 tabs and validate I think okay okay that's a great idea yeah yeah and also like today when we were having when we were doing the extractor for the Burush with the Nishan so he was not aware like which all plants will be there so for Burush also we can ask them because he said like he is just aware of one single plant 3700 and the Adnok plants are not available in the Burush plant we checked that so the list of filters will be different for Burush.
+
+ So for specific to Burush we can ask Nishant and Ananda keeping business in the loop. So I can do that I will send like first thing in the morning on Monday I can send that email.
+
+Reinaldo Gutierrez:
+Yeah but I think we need to request that information to the business team because I know that Ananda that by the initial more technical right so I don't know if they're going to have all the information that we require.
+
+Sagar Vora:
+I think Vignesh is from techno-functional type so I think he might be like he can check with the users whoever uses but I think my understanding is Vignesh will be having that information yeah okay okay Sebastian so yeah so
+
+Bastian Osorio:
+Will add the activities so we can review them in the daily. I will add basically, let me take a note of the activities just to make sure I didn't forget anything. So the first activity is to, you guys are going to meet and share the into one consolidated file. Let's call it consolidate files, consolidate integration files. Consolidate integration files. When do you guys think you can have this ready with the filters and all that into just two files?
+
+ We said two files, right? One for MR1 chemicals and a second one for drilling.
+
+Sagar Vora:
+Just for filters you are saying?
+
+Bastian Osorio:
+So we need to structure, clean, housekeeping, do some housekeeping in the files and then add the filters when we have the filters.
+
+Sagar Vora:
+But I think for filters we have to check the fitness, right?
+
+Reinaldo Gutierrez:
+send like whatever filters we have no no the filter that we already have just put them put them put them okay whatever we have we can put that okay yeah in a clean file and that have to be shared by with bastion and that's Yeah, I'm going to put Wednesday, OK?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+Then second thing is to build the integrations with the filters we have now. For that, I will not. So in the consolidated files, also please add the deadline for each one of the flows. OK.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Reinaldo Gutierrez:
+So that file I am working on on one file, I will share that with you on the end of the day. So I mean, that's fine.
+
+Bastian Osorio:
+You're going to date right now that we already have two files. So you can get all the information on those files structure as you like, But we already have an initial just for you to start working from scratch.
+
+Reinaldo Gutierrez:
+No, no, I have like one that I usually use on all my projects, but yeah, I agree with that information on that file.
+
+Sagar Vora:
+For now, you can share that with me and then we can continue to do that two files. We will not keep extra files for everyone, there will be only two files.
+
+Reinaldo Gutierrez:
+Can you share the file Basti?
+
+Bastian Osorio:
+It's in the in the folder in realize integration. And then you have mapping drilling and mapping in my own chemicals integration.
+
+Reinaldo Gutierrez:
+Okay. I got it. I would be in that. Okay. Okay. So you, you want that for all those points have the deadline, um, for each one of the integration, right?
+
+UNKNOWN_SPEAKER:
+Yeah. Okay.
+
+Reinaldo Gutierrez:
+Okay. Yeah, I think that's something that we can do. But if we...
+
+Bastian Osorio:
+This is mostly, this is mostly for MRO and chemicals, because for drilling, for drilling, well, we check with SAGAR, but in most cases, no, I will say 50, 50, 50% of the cases, we don't have a clear idea of what is going to look, how it's going to look, the integration. But in some cases, we're going to use the extractors, but we need some filters. For example, for drilling materials, we don't have the filter yet, I believe.
+
+ I'm not sure if you have it.
+
+UNKNOWN_SPEAKER:
+I don't remember.
+
+Bastian Osorio:
+No, we don't have it. Okay, so that is one thing. Second thing is related to the storage location. So, where are we going to meet? You said you scheduled a meeting on Wednesday, Reinaldo? So, on Wednesday, we're going to meet with the ABAP thing or just just not just us. I will. I am going to have a meeting with the about thing on Monday. So this meeting is for us to show you guys how it's going with the location.
+
+ OK. OK. So the idea is to we meet on Wednesday to to review the extractor.
+
+Reinaldo Gutierrez:
+That's right. That's the review of the data. How is going then? Is this OK for you guys?
+
+Bastian Osorio:
+Yeah. So I As you already scheduled the meeting, I won't add anything into the task manager.
+
+Sebastian Alba:
+I don't know how. I'm going to add Seba to that meeting to see if he can join. Sorry, I got stuck in a previous meeting. I had a doubt. Ray, you were talking about meeting some ABAPs. We haven't yet defined the ABAP itself. I need to confirm now. We're going to take the lead. For the configuration, I hope we have them defined for next week. I wanted to have defined today, but the critical topic is to have the specification ready.
+
+
+
+Reinaldo Gutierrez:
+I was talking with Isabel and she told me that it was being her and Alejandra.
+
+Sebastian Alba:
+Yeah, but it's not fully confirmed. I need to assign them now. It's what we have. It's almost defined, but I need to have them assigned to the project. We need to get all the configuration accesses, so that's also going to be critical.
+
+Reinaldo Gutierrez:
+Yeah. So when, when they enter to the project, we are not going to need to ask all the access for Baruch. I'm not one ERP and all that. And that could take like a week. So maybe we can do this early. I don't know, maybe on Monday or a thing with a day to day.
+
+Sebastian Alba:
+Yeah, I'll try to get there. Their data, so we can start asking for the access early on. They will need to sign the same thing, get the passport out, the process, onboarding process that I don't have. I'll push that part.
+
+UNKNOWN_SPEAKER:
+Okay, thank you.
+
+Bastian Osorio:
+So, I think we have one more thing. So, we have the plan with the deadlines. We'll have this meeting. What else we have?
+
+Reinaldo Gutierrez:
+So, yeah, for the first point, Bastian, we can put the deadline on the file, but remember that can be... We have a problem with the IVP system because we cannot see the developer system of IBP on CIDS, so we cannot start the integration now. And that's a problem that we have. So if we put the deadline, we are not going to be able to...
+
+Bastian Osorio:
+No, just to build, not to test, to build.
+
+Reinaldo Gutierrez:
+Yeah, but we cannot build anything. Because we cannot extract the staging table for an IBP developer. That's the problem. So it's main why we don't have the connection. Meanwhile, we don't have the connection with CIDS to IBP. We cannot extract the tables.
+
+Bastian Osorio:
+The only thing we can do is to look at the extractor.
+
+Reinaldo Gutierrez:
+Yeah, the one thing that we can do is look at the extractor.
+
+Sebastian Alba:
+I have two questions. One, is this race a risk? It's a risk because we cannot extract the tables. I know it's a risk, but is it communicated to AdNoc or on KPMG?
+
+Reinaldo Gutierrez:
+Yeah, the thing I think they know, right, Sagar? Correct, SAP TKD has also been raised.
+
+Sebastian Alba:
+Now, I think SAP... There's an SAP node, okay. I need to mainly to push the plan also to do this as well. Because we stopped counting days because we had some environment active, but we don't have the connection ready to do this issue.
+
+Bastian Osorio:
+That was the main point.
+
+Sebastian Alba:
+We need to correctly push those risks and present as a stopper.
+
+Bastian Osorio:
+I would like to know what are the crucial steps or what are the stoppers that are stopping us from getting this connection. I understand the STD approval.
+
+Reinaldo Gutierrez:
+No, no, no, it's not that, it's not that, Bastian. What happened here is for the CIDS, the configuration that SAP did was wrong. And we only have seen, we can able to see do IPP, but we cannot see IPP development. And IPP development is the one that we have already have access. I will show you, maybe it's better if I show you the...
+
+Sagar Vora:
+Basically now two activities are pending and here like means even I think this we can try to close by Monday once we have a password but here SAP needs to like... I can show you. You want to show or I can go ahead?
+
+Reinaldo Gutierrez:
+I am going to enter to the CIDS to show you show what is happening here yeah means we cannot create IBP datastore for IBP CCL so I reach on my screen now okay so as you can see here if we get if we want to create a new datastore to connect with IBP? No, with SAP. No, with IBP, because with SAP, we already have that connection here. OK, that is not the problem. OK, the problem now is IBP.
+
+Sagar Vora:
+Yes, I know this problem that is not OK. Yeah, that's what you put.
+
+Bastian Osorio:
+Yeah. Now that's what I said.
+
+Reinaldo Gutierrez:
+That's what we have. But if we have the connection with SAP. So we are waiting for another one ERP connection. OK, then it's for HANA. Yeah, like me, I don't know why this is taking so long, but it should happen. I don't know why this doesn't change here because. So you have to select the business.
+
+UNKNOWN_SPEAKER:
+Yeah. There. Okay.
+
+Reinaldo Gutierrez:
+So in the instance that we have, we don't have a IVP development.
+
+Bastian Osorio:
+So, sir, what you're doing there is to, okay, first set the data store for who's going to connect this IVP, right?
+
+Reinaldo Gutierrez:
+Yeah, no. I will change to a Spanish server to explain myself better, okay? Okay, Basti, what is happening here is that we are going to create connection to IBP, okay? And what happens? Agnox was provided three IBP, one that is development, another that is QAAS and another that is pre-prod, right? What happens? These two that we are seeing here are QAAS and pre-productive. We are not seeing development.
+
+ And development, IBP development, is the one that is currently configured with the single You create the ticket, right? Yeah, that ticket is what You want to say something, Seba?
+
+Sagar Vora:
+No, I will have to jump to another meeting, but I think I have a clear view.
+
+Sebastian Alba:
+We have the specification almost ready. You will read with the VAP team today, early next week. We'll have the status on when How it's going we need to push their accesses and so far we cannot start building do this issue in the connection Yeah, we don't have access to this already. I don't really get stores.
+
+Bastian Osorio:
+All right already has a SIP ticket break and what is the severity of the of the ticket saga? It's medium We cannot know that has to be changed.
+
+Sagar Vora:
+We're having Yeah, we already requested Kaiser, but I think Kaiser was on means even Paula said like you were to change it to her and then only she can support.
+
+Sebastian Alba:
+Kaiser is on leave due to medical reasons. When is he presented? So far they've covered us for Wednesday, Tuesday meeting. We need to present it as a race and keep adding days of delay.
+
+Bastian Osorio:
+Yeah. Who's in, who's, who's Kaiser manager?
+
+Sagar Vora:
+I don't know, but I, there was one Sajid Kumar who is supporting. I think it's Kali, right?
+
+Reinaldo Gutierrez:
+Kali. No, it's not Kali.
+
+Sagar Vora:
+I don't think it's Kali.
+
+Bastian Osorio:
+We need to raise this, Sagar, as soon as possible. As soon as possible. You need to, please, send an email saying, please, escalate ticket.
+
+Sagar Vora:
+I have to jump.
+
+Sebastian Alba:
+Let's align with Rocio to push this really hard and use the meeting on Monday with KPMG I know it's been raised, it was commented on the status meeting. I think we need to give it a bit more effort or emphasize a bit more on the impact than it has been.
+
+Bastian Osorio:
+It was raised on Tuesday's meeting. In this, as Seba is saying, have a good weekend. As Seba is saying, we need to escalate this as soon as possible. And here, our biggest ally is CUNAL. Has a closer relationship with So we need to push him to say... He is aware of the situation. But I don't know how clear he is related to the severity of this issue that is preventing us for...
+
+Reinaldo Gutierrez:
+No, he knows because we have a chat in common with him and Sagar told him about the restriction that we have for create the integration, so he knows. All this information that we have.
+
+Bastian Osorio:
+But then who will be changing the severity for the ticket to high?
+
+Sagar Vora:
+See, we don't have S-user ID access, even Kunal don't have. So we are dependent on Kaiser. And Kaiser is also on leave. So Kunal's plan is to connect with Khalid once, like on Monday, early morning, once because everyone is on vacation currently.
+
+Bastian Osorio:
+OK, but once they're back, you have to drive crazy. He will drive crazy, Halid, whoever.
+
+Sagar Vora:
+Kaiser was on CPU or else we would have tried to close that today only, but he is on.
+
+Bastian Osorio:
+So this is first, second, third and fourth. Priority.
+
+UNKNOWN_SPEAKER:
+Okay. Yeah.
+
+Sagar Vora:
+Second priority, I think that has four passwords. So for that, I already sent a reminder email today. Yeah.
+
+Bastian Osorio:
+That's my first question. Before jumping into more details, let's assume we have this connection ready. Are we ready to start integrating or do we need something else? No, we can do it.
+
+Reinaldo Gutierrez:
+After this point, we can start.
+
+Bastian Osorio:
+And what about the SDD?
+
+Reinaldo Gutierrez:
+The SDD is OK, I think. It's under review, but the firewalls was already raised by Agnes, so we have connection at that point.
+
+Sagar Vora:
+So it's not going to be a stopper there. Just to highlight the question, currently we are going with basic authentication for S4 and IBP. But in both S4 and IBP, the authentication changed to certificate based and SNC so that we have to work parallelly like currently we can start our integration but they will not I think they will keep that as a risk in STD till the time we change that authentication.
+
+
+
+Bastian Osorio:
+But that is that I mean that will prevent us from what?
+
+Reinaldo Gutierrez:
+From going live.
+
+Bastian Osorio:
+But is that an issue who will deal with that?
+
+Reinaldo Gutierrez:
+Well, the first one, the connection with SAP, with S4, is a SAP issue because they have only basic authentication and they have it for about 15 years. So it's not something that's going to change their lives, you know. So I asked Michael for an email regarding this information. That way we can add that to the SDD as a point. Michael is from SAP. He's an expert for IBP SAP.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+Will they have like a meeting with the technical team in APNO?
+
+Reinaldo Gutierrez:
+We have it. We have one yesterday. We have one yesterday, I think. And how did it go? It didn't go very, very well because all the thing was like related by the information that is basic authentication for the connection with SAP. So with that clarification there, I think We have enough to to proceed with that step because it's something that we cannot change Okay, it's something that I understand but I want that they are not knows who's the responsible and
+
+Bastian Osorio:
+and have like the risk Clearly identifying it. How is it gonna be addressed? I don't want to have problems I think no one wants to have problems for the UIT's not for the go live So we want to be ready, I mean, we need to mitigate this issue. Will we have any issue going to the UAT doing that transport without having this? Or is something that SAP will address before the UATs, or we don't know?
+
+Reinaldo Gutierrez:
+Well, SAP, the way that SAP is going to address this situation is going to be by an email or by a meeting, because they are not going to change the vaccine notification. Is Agnod satisfied with that? Well, we need to explain to Agnod that SAP works on the assumption that you have a controlled environment in your private network. So that's why they are using basic authentication.
+
+Bastian Osorio:
+You have a meeting today to address that. So, they can be clear. Adnok team.
+
+UNKNOWN_SPEAKER:
+Technical team.
+
+Sagar Vora:
+So, we had a call with SAP, right? So, there we invited the Adnok team also. But no one joined from their end. So, Rahul and Kunal were there. So, whatever we discussed, we told SAP saying everything is as per the best practice. So, now Michael has to give his endorsement like this is the best practice we are following. Will satisfy them, then we are good. If not, then we will ask the AdNoc team to have a call with Michael again, and Michael will try to explain.
+
+
+
+Bastian Osorio:
+But they haven't. So who's going to communicate this information to AdNoc?
+
+Sagar Vora:
+It's going to be Kunal. Yeah, it's already done. Yeah.
+
+Bastian Osorio:
+Yeah, it's already over email. Or email. So again, this is our second action for Kunal as well. Has to make sure to chase a technical team so they can give us the approval to continue with this configuration. And if they don't give us the approval or they start hesitating, they need to schedule a meeting with SAP.
+
+Reinaldo Gutierrez:
+Yeah, that's the idea.
+
+Sagar Vora:
+Kunal already sent email like what minutes of meetings are today but SAP like the Michael haven't replied on that if he replies back then I think Kunal will go to SAP okay to AdNoc so I think Kunal needs to
+
+Bastian Osorio:
+again send a reminder email to Michael to confirm like on the minutes of meeting so that everything is endorsed so I have two two points to put in the task list it's just it's just to not not because you have to do something about it. It's just to review it. So the first one is the SAP IBP connection with the site CDS or I just will call it a SAP IBP connection ticket.
+
+UNKNOWN_SPEAKER:
+Yeah. And brace severity. Yeah.
+
+Sagar Vora:
+And that was a one point. OK. It means once we even the will not be approved okay like if even the SAP Michael endows it because currently we did our connection with the basic authentication like the username password so SAP is already providing SNC okay for S4 but for that we have to ask Adnobasis team to do that because that's a time-consuming and that will delay our integration so for now we are we will go ahead with the username password but in parallel we will ask basis team to start doing their steps like SNC related steps downloading the certificates and all that and second is for IBP also currently we are going with username and password but there also certificate based authentication is possible but there kaiser don't know how to generate a client certificate so we have like so just to close for now so that we can start with integration we went ahead with id username password but now we have to share steps to kaiser like how to generate a client certificate and then we will like complete the authentication with client base but I understand the current setting we have is not enough to migrate to uat nor go live not product right?
+
+
+
+Bastian Osorio:
+So what is the activity we need to do on our end? I mean, will be chased chase hyzer so he can create a certificate. Yeah. But let's let's put a name a title for this issue.
+
+Reinaldo Gutierrez:
+how we call it? This will be certificate based authentication for IBP, I think. Authentication, yeah, authentication by certificate on IBP. Yeah, for now we are going to do a basic authentication, okay, just to continue with the project, but for the go live, I think we're going to need this point, okay?
+
+Bastian Osorio:
+Yeah, so the first point will be, I understand that you already have a meeting with Zap. They give you all the information, but no one from AdNoc was there. Then Kunal send the email.
+
+Reinaldo Gutierrez:
+Yeah, and put another meeting for the next week with SAP and the AdNoc team. And AdNoc, okay.
+
+Bastian Osorio:
+So we expect that in this meeting, everything, the plan is clear.
+
+Reinaldo Gutierrez:
+Yeah, the SDD was, it will be okay, I think.
+
+Bastian Osorio:
+So I'm just going to create this task and then you will have to inform what is the result of that bidding and that's it. Hopefully, nothing more is required for the part.
+
+Reinaldo Gutierrez:
+So another task that you can put there is the service user for one ERP, okay? Because that's something that is pending yet at that point.
+
+Bastian Osorio:
+Yeah, but that is preventing us for doing what?
+
+Reinaldo Gutierrez:
+The integration with S4. We only have Voodooge.
+
+Bastian Osorio:
+Yeah, for now we only have Voodooge. What are we missing for the 1ERP?
+
+Reinaldo Gutierrez:
+1ERP, we are missing the service user.
+
+Sagar Vora:
+User is that password we are missing, so no one is providing password to us.
+
+Bastian Osorio:
+Yeah, I asked for that. Can you show me the extractor? The extractor is from 1ERP or from Voodooge?
+
+Sagar Vora:
+1ERP.
+
+Reinaldo Gutierrez:
+So you're using the user to connect with... Give me a moment. Sagar, you know what we can do? We can use our own user for now to do the integration. And then in the future, when they give us the communication user, we'll change that. Okay? So for now we can use our own.
+
+UNKNOWN_SPEAKER:
+Okay?
+
+Bastian Osorio:
+Okay. The communication user is created in one ERP?
+
+Reinaldo Gutierrez:
+Yeah, the communication user has to be created by one ERP. Repeating, okay, but for now we can use our own. That user has all the permission? My user has almost all the authorization, okay? Okay, one year. So let's do that, okay? Let's use my user for now. Yeah. Then we can change when they deliver us the the communication user that we need.
+
+Bastian Osorio:
+Question, who's dealing with this issue? I'm following with the infrastructure team.
+
+Sagar Vora:
+Okay, it's not Kaiser? Kaiser is also there, but he's on leave, so I'm not sure. Just by email.
+
+Bastian Osorio:
+And how is it possible that you already have the communication user for Vrooge but not for one ERP.
+
+Reinaldo Gutierrez:
+I asked for this user like on the first of November I think, a long time ago, I don't know, maybe on September, I don't know.
+
+Sagar Vora:
+And I think, yeah, yesterday Rahul already shared me the ID for that, but the password they said like it will be with the basis team, but no one is replying from basis team. So today I already sent a reminder email keeping Seba, Rocio, Hadi, everyone in loop.
+
+Bastian Osorio:
+Yeah. Did he say something about this?
+
+Sagar Vora:
+Yeah, he's also trying to follow up with Kaiser yesterday, but Kaiser said he will be available in two hours and after that he was not available and today he's on leave.
+
+Bastian Osorio:
+So. OK, but at the end, who's responsible? We don't know.
+
+Sagar Vora:
+Someone from the IT team. For us, it is Kaiser.
+
+UNKNOWN_SPEAKER:
+Okay, cool.
+
+Bastian Osorio:
+I think that's it for today. Yeah.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So we will meet next week again for this meeting on I'm not probably on Wednesday or Thursday, but we need to keep like we need to do a follow up because we have plenty of stuff open.
+
+Sagar Vora:
+Yeah.
+
+Bastian Osorio:
+I will schedule a meeting, then maybe I will cancel it if we have updates earlier, but if we don't have any update, then we will make the meeting and see how we progress, okay? Okay, that's it. Thank you, have a good weekend.
+
+Sagar Vora:
+Thank you, thank you, thank you, bye-bye. You
+
