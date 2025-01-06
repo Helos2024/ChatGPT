@@ -1,0 +1,164 @@
+Pablo Palacios:
+embalaje es el famoso verbo.
+
+Richard Quinteros:
+Bueno yo creé este tipo ver, lo creé ver y el tipo de industria también.
+
+Pablo Palacios:
+Pero el ver te suena, dice en algún lado que sea tipo A
+
+Richard Quinteros:
+No recuerdo si A, no recuerdo si A, pero esto lo veo. Ese 12-05-50 es el que estamos usando para embalaje, para embalaje normal.
+
+Pablo Palacios:
+Claro, para embalaje normal, sí, que funciona al otro lado, pero no funciona para la TU, porque dice que tiene que ser del tipo A, y no logro encontrarlo, estuve ahí buleando un poco, pero bueno, nada, después corté y me
+
+Richard Quinteros:
+fui a almorzar. Bueno, ahorita que termine el material, que logre enviarlo, déjame rápidamente, déjame rápidamente, te comparto pantalla, rapidito, Yo lo que hice fue activarlo en ese segmento, no voy a esperar por Nelson, lo activé directamente en el sistema y voy a hacer el envío del material. El material va a ser este, el C500, terminación 18.
+
+UNKNOWN_SPEAKER:
+Ok, MATMAS 518.
+
+Richard Quinteros:
+Se envió el IDOC, déjame ver que aquí se procese. Porque estaba dando error es que ahora sí, ya se procesó, a ver ya debería existir intenta ver, déjame desactivar aquí la lo que moví porque...
+
+Pablo Palacios:
+También modifiqué, bueno el paso lo pongo en tanto, modifiqué el rango de número externo del lote porque no lo estaba creando y porque justamente no coincidía el rango Después ya lo creé manualmente y ya me creo el lote manualmente con el primer testing. Después voy a agarrar otra entrega para ver si ya lo creé automáticamente, el cual es lo que buscamos.
+
+Richard Quinteros:
+Ya, perfecto, perfecto. Ahí, pues ahorita yo estoy trabajando en el tema también de las T1, porque la necesito para probar un proceso completo de WM.
+
+Pablo Palacios:
+Bueno, si es que hay que completar esta transacción, el dato maestro. Eso.
+
+Richard Quinteros:
+Entonces digamos que ahorita para tu poder crear una unidad de transporte, lo primero que se necesita es tener el medio de transporte y el material de embalaje asociado, no?
+
+Pablo Palacios:
+Exactamente, en esa transacción. Linkear, que es una transacción más que nada, para que seamos desamigos también, para que tengan una idea, que ahí se relaciona el medio de transporte con el material de embalaje.
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Pablo Palacios:
+fallando, lo que me estaba fallando recientemente era el material numerado.
+
+Richard Quinteros:
+Posiblemente después haga falta, pues no recuerdo si ya cree los rangos numéricos de TU, haga falta crear rangos numéricos para la asignación de unidades de transporte, creación automática.
+
+Pablo Palacios:
+Probablemente, sí, sí, yo no lo recuerdo haberlo creado tampoco, así que probablemente falte eso.
+
+Richard Quinteros:
+Exactamente, no, lo vas a exigir cuando intentes darle a la palomita crear, posiblemente te diga no existe el rango de números, me entiendes? Tú vas a hacer la asociación ahorita o la hago yo?
+
+UNKNOWN_SPEAKER:
+John, cómo sigues?
+
+Richard Quinteros:
+Hola, buenos días, ya estamos 100% recuperados.
+
+Jonathan Hernandez:
+Tienes voz de ron. Ahora sí, era parte de las festividades pero ya.
+
+Richard Quinteros:
+¿Cómo están? Bien, bien. Trabajando. Ya sabes. Sí, sí. Sí, no.
+
+Jonathan Hernandez:
+De ahí no los quise interrumpir. Vi que estaban ahí revisando algún punto. Entonces, no quise interrumpirlos, pero creo que ya relinearon los siguientes pasos. Entonces, entiendo, Richard, Pablo, están con ese tema. No sé, del lado de Samir, ¿hay algo que se esté revisando?
+
+UNKNOWN_SPEAKER:
+¿Se le va a revisar?
+
+Samir Milan:
+Hola, John. Buenos días. Bueno, yo estuve revisando Algunos de los procesos como movimientos internos, como el... Estuve haciendo pruebas de movimientos internos, moviendo palets completos, moviendo producto. También lo del cambio de... Lo de scrapping, también lo de... Cambio de tipo de stock. Cambio de tipo de stock, también lo estuve revisando. Ya estuve revisando con la RFIS y... Todo ha funcionado hasta el momento.
+
+
+
+Jonathan Hernandez:
+Excelente.
+
+UNKNOWN_SPEAKER:
+Muy bien.
+
+Jonathan Hernandez:
+Me da gusto escuchar esto, Samir.
+
+Richard Quinteros:
+ahora yo te comento en lo que yo estoy trabajando digamos es ya ves que ya yo les hice las pruebas a ellos vale donde ya yo les digamos este les mandé todos sus escenarios contabilizados no de salida y bien le mandé el correo y les dije ahora permítanme ustedes yo generar entregas a partir de estas como base y probar yo mis cosas configurar algunas cosas ¿Me entiendes? Ahora nosotros caemos en esa situación.
+
+ Por ejemplo, de mi lado, yo no sé, todavía Pablo me parece que todavía no ha podido, no sé qué tantos escenarios de entrada le ha mandado. No, pues no, uno solo. Uno solo, yo sé, pues él todavía no ha pasado por esa etapa que pasé yo, de probar la integración por cada uno de los procesos, clases de entrega. Entonces, él necesitará pasar por eso, responderle de repente con la contabilización, que eso, bueno, la la de entrada va a estar un poquito más sencilla porque es descargar en el Google Recycle y ya pues ahí contabiliza.
+
+ Pero obviamente Pablo necesitará, digamos, su momento como yo lo estoy teniendo ahora para poder probar el Entwine DWM, ¿correcto? Ok.
+
+Jonathan Hernandez:
+Entonces, Eginaz, y luego si está mal el equipo me corrijan, era lo que hablamos en las días anteriores. Creo que estamos avanzando desde el lado de todos los entradas, salidas, internos, creo que si hay actividades en este momento de de los tres lados, o hay algo que no, no, no se te puede, no se te puede avanzar.
+
+Richard Quinteros:
+Estamos avanzando, de hecho, para que Samir pudiera avanzar, yo lo que hice fue que le cargué un stock, stock específico, yo me reuní con él y le cargué un stock específico para que no estuviera afectando al de nosotros, nuestras pruebas, ¿vale? Y él ha ido avanzando con eso, ¿OK? Para que él fuera probando que no sé, movimientos internos, de repente que empiece a probar replenishment, que va a ser uno de los más importantes e inventarios, creo que van a ser de los más importantes y clave.
+
+ Los movimientos internos sí son importantes, pero al final pues creo que aquí la clave están los replenishments y los inventarios. Entonces creo que ahí, Samir, nomás tómalo como observación y pues echarle observación a esos procesos. Claro que sí, Richard. También está avanzando. Estamos hablando ahorita de un tema de la TU. Espero ya solucionarlo en menos de dos horas. Esperemos. Yo me puse eso ahorita casualmente.
+
+ No es casualidad. Pablo estaba trabajando y pues yo dije ahora me toca a mí porque ya yo he probado la contabilización sin TU, sin nada. Ahora quiero agregar unidades de transporte, complejizar y ver qué me está faltando.
+
+Jonathan Hernandez:
+del primer punto de los SXK que resolvió, sabíamos que iban a salir, no pasa nada, es parte de, pero en este momento, ¿necesitamos algo del lado de Diana, de Cap, o está de nuestro lado a resolver y avanzar?
+
+Richard Quinteros:
+Tiempo, es lo que necesitamos de momento. Tiempo, tiempo, tiempo, eso es lo que necesitamos realmente. Ahora, que te voy a comentar, el tema, o sea, obviamente sabemos que no es un tema que podemos aislar, pero que hay que estar muy pendiente ¿no? El tema del formulario y del desarrollo CETA para el tema de CROSS ¿no? Aquí en EWM. Hay que especificar, claro, pero ¿cómo nos dividimos? O sea, ¿cómo nos partimos en ese sentido?
+
+ Porque estamos trabajando en pruebas, configuraciones, especificaciones, o sea, cuesta un poco, ¿no? Como que ir avanzando paralelamente con eso.
+
+Jonathan Hernandez:
+Sí, creo que esa parte dentro del plan que armamos no No contamos con que necesitábamos a alguien para ver el tema de la etiqueta y la otra especificación, que sí requiere un tiempo y sería sacrificar tiempo de alguna otra
+
+Richard Quinteros:
+actividad que creo que no debería. Yo creo que ahorita la clave es lograr que los procesos anden al 100 y posteriormente abocarnos a los engagement y a las etiquetas.
+
+Jonathan Hernandez:
+Sí, no estoy de acuerdo con eso. Creo que es el principal objetivo. Creo que la prioridad es esa. Entiendo que vamos avanzadores tú, ¿no, Richard?
+
+Richard Quinteros:
+Esperemos que sí, yo sí, yo siento que sí, pero...
+
+Jonathan Hernandez:
+No para pedirte que lo hagamos esta semana, pero como para ir considerando o buscando el espacio, a lo mejor la próxima semana, pero esta semana creo que el foco sigue siendo esta parte de seguir las pruebas.
+
+Richard Quinteros:
+Testing, usuario. Testing funcional, perdón, claro.
+
+Jonathan Hernandez:
+Sí, sí, no, esta semana no quitemos ese foco, tipo, tema lo abordamos, pero esta semana que siga siendo nuestro nuestro foco.
+
+Richard Quinteros:
+Sí, por ahí veo que Erwin puso una sesión, me parece que fue para mañana, no estoy seguro, déjame ver. Para revisar la definición de... Bueno, aquí, grupo de consolidación. Esa, déjamela porque esa me sirve. Esa me sirve. Ok, veo también una sesión...
+
+Jonathan Hernandez:
+Hay otra que dice seguimientos, que está para martes y jueves. Fue la que habíamos hablado. El conector, que es un seguimiento con el equipo de CAP, debe enviar avances y necesitamos apoyo de algunos de los dos lados.
+
+Richard Quinteros:
+Es para esas dos sesiones. Ya. Está bien, no hay problema. Es muy corta. Debería ser muy corta.
+
+Jonathan Hernandez:
+Digo, la comunicación ha sido buena por WhatsApp. Entonces, nada más una manera de check interno, con ellos también decidimos en algo urgente, ver realidades, pero si no, en quince minutos la vemos y la cerramos.
+
+Richard Quinteros:
+Bueno, bueno, está perfecto, John. Ese es el plan y así vamos. Ahorita, pues, equipo, el reto de esta semana es darle duro con pruebas, toquetear las configuraciones para que vaya adecuándose el proceso bien, formar, formar, ¿no? Lo que nos falte. Este, y pues, ahorita no nos aboquemos a los Zetas ni a los de segundo plano ahorita la prioridad en las pruebas de nosotros si tienen alguna duda de cómo voy a echar porque yo o sea como te digo para tratar de no depender de tanto el que user lo que yo estoy haciendo es por ejemplo yo necesito un pedido a partir del pedido que ya me enviaron yo lo hago vale para no molestarlos y ser más autosuficientes sentido para no molestar pues avanzar más rápido entonces yo estoy haciendo mi entrega vale sin molestarlos a ellos igual el tema pues si ocupan algo, una duda o algo, lo que sea, no duden en buscarme y lo hacemos, va?
+
+
+
+Pablo Palacios:
+Ahí encontré el tipo material de embalaje, si querés ahora... Ahorita lo vemos, nos reunimos.
+
+Jonathan Hernandez:
+Si no hay más, si quieren ya el dinero para que sigan viendo sus puntos y no hacerlos más.
+
+UNKNOWN_SPEAKER:
+Vale, perfecto.
+
+Jonathan Hernandez:
+Gracias a todos.
+
+Richard Quinteros:
+Muchísimas gracias.
+
