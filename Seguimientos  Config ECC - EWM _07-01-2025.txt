@@ -1,0 +1,681 @@
+Richard Quinteros:
+Hola Karim, ¿cómo estás?
+
+UNKNOWN_SPEAKER:
+Hola Ruchar, muy bien.
+
+Kerin Bonilla:
+¿Y tú qué tal?
+
+Richard Quinteros:
+Muy bien, y vos, Adiós.
+
+UNKNOWN_SPEAKER:
+Hola, buenas tardes.
+
+Richard Quinteros:
+¿Cómo estás, Jonathan? Muy bien, muy cerrado.
+
+Kerin Bonilla:
+¿Y tú qué tal, Karim?
+
+Jonathan Hernandez:
+Ya te escuchas mejor. Ya fueron una semana, básicamente, sin poder hablar, pero...
+
+Kerin Bonilla:
+A Richard duró un mes.
+
+Richard Quinteros:
+No a ser que John tiene 15 años.
+
+Kerin Bonilla:
+Tengo 30.
+
+UNKNOWN_SPEAKER:
+Listo. Miren, Flor sí me aceptó.
+
+Kerin Bonilla:
+Esperemos unos momentos y ya se incorpora. Creo que como dice walter déjame ver creo no sólo estamos nosotros y melvin si está los necesitas necesitar un segundo vamos a ver si lo encuentro disponible Esperame un momento. Ah, creo que tal vez lo logramos, esperame. Ya te lo estaré uniendo, dame un segundito. Si saben eso, pues ya nos une Flor.
+
+UNKNOWN_SPEAKER:
+.
+
+Kerin Bonilla:
+¡Adiós!
+
+UNKNOWN_SPEAKER:
+Hola Walter, ¿qué tal?
+
+Kerin Bonilla:
+Perdón, ahí que lo agarramos de quemarropa, pero Richard lo está solicitando.
+
+UNKNOWN_SPEAKER:
+¿Qué tal Walter, cómo estás?
+
+Richard Quinteros:
+Micrófono apagado.
+
+Kerin Bonilla:
+Sí, creo que estaba moviéndose, pero ya nos va a ir contestando.
+
+UNKNOWN_SPEAKER:
+Nos falta Florencia, ¿no? Sí.
+
+Kerin Bonilla:
+Si gusta, dámelo unos minutitos más. Ella sí me lo aceptó. Entonces ella termina algo y se nos une. Y no, ya le escribo.
+
+UNKNOWN_SPEAKER:
+¿No se escucha, Walter? Subtítulos realizados por la comunidad de Amara.org de la comunidad, de la comunidad autónoma.
+
+Walter Segovia:
+No hay pena.
+
+Kerin Bonilla:
+Richard, por ahí lo estaba necesitando. Ya nos escucha.
+
+UNKNOWN_SPEAKER:
+Adelante.
+
+Walter Segovia:
+Mucho gusto. Hola, ¿qué tal?
+
+Richard Quinteros:
+Ahorita que empezamos a tocar los temas, ya platico de qué se trata, ¿vale?
+
+Kerin Bonilla:
+Hola, Flor.
+
+Richard Quinteros:
+Buenas tardes. Hola, Flor.
+
+Gianni, Florencia:
+Perdón, la demora estaba justo en llamada con Melvin, que ahora ya se sube también.
+
+Kerin Bonilla:
+Ok, ok, no hay problema. Bien, chicos, adelante para ir viendo la temática de cómo nos vamos a ir viendo esos seguimientos entre ambos equipos.
+
+Richard Quinteros:
+Bueno, si gustan parto yo. A ver, ya hasta el momento hemos probado el mapeo de clase de entregas de salida sin ningún inconveniente del lado de SSAWM falta todavía que eso no lo hemos alcanzado a probar el tema de las devoluciones vale a ver cómo se comporta la entrega entrante correspondiente al producto devuelto para saber con qué clase de entrega busca de partir el proceso que si es con la misma si busca una nueva del lado de SSAWM hay que hacer una paramedicación asociación lado de WM, pues entonces necesitamos como que generar esa prueba, ¿no?
+
+ Pero todo el tema de los escenarios de venta, por ejemplo, el escenario de venta y el escenario de traslados, me parece que es traspaso entre almacenes, está. ¿No, Florencia? Corríme si me equivoco.
+
+UNKNOWN_SPEAKER:
+Sí, correcto.
+
+Richard Quinteros:
+Y eso justamente me dio a mí el input ya para empezar a probar de forma más, digamos, con menos presión. De forma más tranquila del lado del WM lo que es la configuración y los parametrizaciones de nuestro lado. En este caso, salida. Durante estas pruebas de salida de mercancía, pues he visto varias cosas del lado del WM que ahorita tengo una muy importante que quiero platicar con ustedes. No sé si primero damos paso a escuchar a Florencia a cómo van con el tema de entradas y ya dejamos este tema para siento que de repente pueden dar un poquitico de tela que cortar.
+
+
+
+UNKNOWN_SPEAKER:
+De acuerdo.
+
+Richard Quinteros:
+Entonces, no sé, Florencia, si quieres hacer algún comentario.
+
+Gianni, Florencia:
+Sí, la parte de órdenes de compras, sea traslado o proveedores como tal, estamos aplicando la lógica personalizada en base a lo que hablamos, que no se puede asignar diferentes entregas a una misma, a diferentes confirmaciones para que se generen diferentes entregas dependiendo la orden de compra. Es una sola. O sea, es como que SAP te dice, solo puedes tener una sola confirmación, una sola clase de entrega asignada.
+
+ Entonces, lo que estamos haciendo es cambiando la lógica para modificar la clase de entrega por la misma exit que hicimos la de salida. Así que está la VAP trabajando en incluir nueva lógica. Esperemos entre que hoy o mañana ya tener eso en desarrollo y poder continuar con algunas pruebas de lo que sería ingreso de mercadería y órdenes de compra. El tema del lote ya lo vimos, ya se mandó, llega, así que cuando tengamos ya la lógica personalizada andando para cambiar estas clases de entrega, vamos a poder validar el tema de que debe devolverse con el mismo lote que viaja por lo menos lo que son traslados.
+
+ De la APT sale con un número de lote, con ese mismo número de lote, fecha de vencimiento, tiene que ingresar en el SB22. Ya validamos que la fecha de vencimiento y los lotes les llegan a SC con esa primera prueba que nos ayudó, como se llama, Pablo. Así que ahora, cuando tengamos bien andando la EXI, que nos permita hacer bien los escenarios, terminamos confirmar eso. Todo lo que son las demás configuraciones ya las tenemos, nos falta este punto que les digo, que bueno, nos faltaba lógica ABAP y las integraciones personalizadas que van a ser varios de los flujos que ya probamos con Richard manualmente, también ya se encuentran en ABAP y la próxima por entrar en la brevedad, así que venimos en línea.
+
+
+
+Walter Segovia:
+Sí Flor, en los periodos de compras, cuando se ingresa en la MIGO, hay un desarrollito por ahí que le cambia los primeros dos caracteres al lote.
+
+UNKNOWN_SPEAKER:
+¿Ese se mantiene?
+
+Walter Segovia:
+No, porque no vas a usar más MIGO. No caeríamos en el problema raíz de bloqueo de lotes, que tiene ya ¿A qué te refieres con bloqueo de lote? Quisiera entender un poquito más. Por ejemplo, si en el sb22 se está usando el lote 123 y por allá en otro cd de un cross, por ejemplo, se está usando ese mismo lote, se bloquean entre ambos. Dice el usuario fulanito está ocupando el lote y no te deja hasta que el otro lo libere.
+
+ Y está bien, bien, bien. Aunque tengo. En ese centro.
+
+Richard Quinteros:
+Ya, ya, ya, ya en qué está operando que se desbloquea por ejemplo o sea que por ejemplo en el almacén pt-30 que es el dsb 22 están están ocupados pero pero es que aquí no deberías tener ese caso viste para nada porque te digo eso porque son dos sistemas de centralizar es un sistema descentralizado pues me explico ok entonces hacer un sistema descentralizado tú no estás bloqueando ningún objeto no al final cabo tú estás trabajando aquí en un almacén y ella tiene un almacén que está descentralizado en otro sistema y que solamente comunica las contabilizaciones y ya pues.
+
+ ¿No?
+
+Walter Segovia:
+Por ejemplo, o sea, con el ECC, con el IEM de planta, igual también en el pasado.
+
+Richard Quinteros:
+Aquí lo que puede pasar es que intente contabilizar alguna cuestión a nivel, o sea, cuando por ejemplo, Jani, cuando nosotros en NWM recibimos la entrega de entrantes e intentamos hacer la resección ocurre la contabilización ¿no? Desde que en este almacén PT30 ya recibimos ¿no? Ocurre esa contabilización y esa información se envía a SC, SC recibe y ahí cuando se está procesando lo que puede pasar es que se encuentre con el bloqueo ahí porque pues fulanito de tal en el almacén está tratando el lote ¿no?
+
+ Ahora cuando eso pasa no pasa nada al final del cabo pues el registro queda como una cola ¿no? Por procesar cuando fulanito de tal te hace su trabajo tú puedes reinicializar el estatuto de la cola y pues él pasa sin ningún problema.
+
+Walter Segovia:
+Si ese es el problema. Queda como en, digamos, lo que hay en el módulo de PP que se llama Cogging.
+
+Richard Quinteros:
+Queda ahí, es una cola que queda en ese C, haz de cuenta que es una cola entrante, ¿vale? Que queda como en SysFail, en rojo, ¿vale? Con un error y te dice, oye, luego te si es un error de bloqueo, que no creo que nos ocurra, pero para no descartar, debería quedar ahí el usuario, el lote está siendo tratado por tal fulanito de tal, el error. Entonces está bien, cuando él termine de tratar el lote, usted clic derecho sobre ese registro y ejecutar o reinicializar estatus.
+
+ Y él automáticamente se encarga de procesarlo, porque esa cola trae ya la información.
+
+Walter Segovia:
+tiene, digámoslo así.
+
+Richard Quinteros:
+No debería, no debería, no debería, en ningún sentido. Podemos hacer una prueba puntual, sí, podemos hacerlo. Puedes tomar un lote tú, estás tratando de un almacén IEM, sin ningún problema. Y nosotros aquí, a este lado, cuando tú lo estás tratando, hacemos la contabilización y vemos cómo se comporta, para descartar, ¿no?
+
+Gianni, Florencia:
+Sí, de acuerdo, para eso.
+
+UNKNOWN_SPEAKER:
+¿Me escuchás, Flor?
+
+Melvin Alvarado:
+¿Me escuchás, Flor? Sí. En el tema del IEM intermedio, antes de llegar al móvil, que lo te vas a utilizar.
+
+Gianni, Florencia:
+Uno dummy que vamos a configurar en la ZSD-IM.
+
+UNKNOWN_SPEAKER:
+ZSD-121.
+
+Melvin Alvarado:
+Al intermedio van a llegar los dummies. Sí, vamos a hacerle un dummy.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Melvin Alvarado:
+Y eso ocurre ya cuando la...
+
+Richard Quinteros:
+la salida está contabilizada.
+
+Melvin Alvarado:
+Sí, hay nada más en el tema de lo que tú mencionas, Richard, que va a suceder en SEC. En qué transacciones visualizaríamos? En qué transacciones visualizaríamos? Eso es un tema basic, ¿oíste?
+
+Richard Quinteros:
+Normalmente esto lo controla la gente de basis. Debe estar monitoreando, pues. Ustedes pueden hacerlo si pueden escoger pero normalmente lo hacen los BACY, les digo. Porque no todo el mundo puede estar metiéndole manos a estas colas. ¿Por qué? Porque las colas, normalmente, digamos que es la puerta de comunicación entre ambos sistemas, ¿no? Entonces, cuando algo se queda atascado en la puerta entrante hacia ese C, no es para que cualquier persona llegue, ah, mira, aquí voy a borrar una cola reinicializada, porque puede haber, inclusive, hasta duplicidad de registros, ¿no?
+
+ Por hacer alguna mala práctica o algo mal hecho, ¿no? Entonces, ¿qué pasa? Lo que sí pueden hacer los bases es entrar con la clase de documento. A ver, te comparto mi pantalla, ¿vale? Para ser un poquito más explícito. Este es SC, ¿no? Hay dos transacciones puntuales, SMQ2 y SMQ1. SMQ1 es para colas salientes. Es decir, yo envío a WM cualquier cosa que no pueda salir por X cosa de configuración, X cosa queda aquí.
+
+ Porque no logro salir. Queda aquí. Ahora SMQ2 es lo que me llega. Si llegó y por alguna razón falló el procesamiento, se registra aquí tal cual como vean ustedes esto acá, ¿no? Por X o Y error. Normalmente tienen diferentes nombres las colas. Si se fijan, la entrega suele venir al final. Si se fijan, esta es mi entrega. 701, 29, 741. Dice que tiene dos entradas dos posiciones pendientes para procesar.
+
+ Si yo le hago click, yo me sé la entrega, no hay problema, yo puedo buscar la entrega aquí, le doy a los binoculares, busco la entrega, si la tengo, la pongo ahí y automáticamente me dice si existe una cola para esa entrega. Ahora, yo hago doble click en esta, aquí fíjate que el status puede ser diverso, puede ser Retri, SysField, son varios. SysFail es error, ¿no? Se cayó por algún error y no se pudo procesar.
+
+ Si yo le hago doble clic, él me muestra. Módulo de función, ta, ta, ha terminado con un problema, ¿no? Yo le hago doble clic y yo veo qué está pasando, ¿no? Ningún perfil de partición, ta, ta, ta. Para la clase de entrega, se te la F6. Eso es un error. Y puedo deducir que tal vez es de configuración o algo así, ¿no? Pienso. No sé. Estoy pensando aquí en voz alta. Ahora, esto... Ah, mira, ya se corrigió el error.
+
+ Era configuración X o Y, ahora en dato maestro. Clic derecho, reinicializar status. Ahorita, pues obviamente no va a funcionar de repente, porque no va a funcionar porque no se ha hecho, pero una vez se corrige, tú retomas desde aquí. No tienes que ir a WM, hacer repetido el proceso, no. Retomas desde aquí y lo vuelves a lanzar mensaje aquí. Reinicializar status. Vale. Y automáticamente él arranca de nuevo e intenta procesarse.
+
+ Si se corrigió, avanza todo y no pasa nada. Es. Si me explico. Pero esto normalmente es un tema, es un tema basis. Quieren que sí.
+
+Kerin Bonilla:
+Y yo creo que esto era lo que hablaba también para el posteo alimentario, que hay que estar monitoreando estas colas antes de postear un inventario, porque si lo liberan después te va a afectar lo que ya porque aquí tenés una transacción retenida.
+
+Richard Quinteros:
+O sea, te lo pongo un escenario práctico para que eso que tú comentas suene más convincente en la operación. A ver, hiciste una entrega entrante, almacenaste todo en EWM, todo se almacena sin problema, pero resulta que cuando hiciste la contabilización y vino a ECC, la contabilización de la entrega entrante quedó encolado por ahí. Por algún error, no sé. Con el proveedor, ¿no? Un dato maestro, lo que sea.
+
+ Quedó la cola ahí. Para ese C, ese inventario no existe hasta que esa cola se procese, ¿vale? Entonces, si tú me haces un inventario allá, cuentas eso, ahí eso se viene aquí y se tropieza con esto otro, ¿entiendes? Empieza a generarte problemas o inconsistencia. ¿Pero todo por qué? Porque es como una Digamos, imaginémonos a una cañería, no sé cómo la llaman en su país, donde básicamente la basura se atora y se empieza a acumular, ¿no?
+
+
+
+Kerin Bonilla:
+Y es acá donde nosotros después, Melvin, tenemos que ver una coordinación con quién va a quedar viendo estas funciones. Porque si no procesamos estas colas, vamos a tener diferencias entre los inventarios, entre los sistemas. Porque unas cosas van a estar contabilizadas en EWM y otras no procesadas en ECC.
+
+UNKNOWN_SPEAKER:
+correcto.
+
+Richard Quinteros:
+Ahora, no es solo procesar y ya, por eso les digo lo delicado del asunto, es analizar el error, ver por qué está pasando, y posteriormente, después de haber dado la corrección o el análisis y demás, procesarla. Ahora, mire, yo necesito que esa cola no se procese. Usted clica derecho y puede guardarla, ¿vale? Usted la guarda y ahí le queda un registro a usted ahí para que en cualquier momento pueda consultarla e inclusive restablecerla.
+
+ Para establecerla. Les platiqué la SMQ1 que son las colas de salida, la SMQ2 son las colas de entrada y SMQ3 son las que usted guarda, ¿vale?
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Melvin Alvarado:
+Nada más Walter hay que considerarlo para las Sí, de acuerdo.
+
+Richard Quinteros:
+De tu lado, Florencia, sería todo, ¿no? Sí. Vale. Solamente platicarle, chicos, que del lado también de WM estamos avanzando con... Bueno, ya sabemos que estamos avanzando con los temas de entrada a medida de lo posible. También estamos avanzando con las pruebas internas, ¿ok? Movimientos internos entre ubicación, es que no dependen de algún movimiento SC, a exclusión de los cambios de tipos de stock, por ejemplo.
+
+ Si nosotros tomamos un producto, le cambiamos el lote, pues básicamente es un movimiento que se refleja para SC también, ¿ok? Al igual que si hacemos un cambio de libre utilización a bloqueado, es un movimiento que se refleja en SC también, ¿ok? Tenga la tranquilidad. Avanzando en esas pruebitas, ¿vale?
+
+UNKNOWN_SPEAKER:
+De acuerdo. Ok. Ahora, vamos a lo importante.
+
+Richard Quinteros:
+Bueno, no todo es importante realmente, pero esto siento que va a ser bastante importante para ustedes. Y pues, a partir de esto que les voy a comentar, quizás necesitamos que salte alguna decisión, ¿no? O por parte del negocio, por parte entre el equipo entre ustedes y nosotros, ok? Ahora, yo les voy a, para esto necesito ser un poquito de repente práctico y mostrarles el sistema, ¿vale? Para generar una mayor comprensión porque es un tema que pues suele enredar mucho, ¿no?
+
+ Hablamos de unidades de medida y demás, bueno. Ahora, para este escenario vamos a, un escenario que les voy a mostrar, voy a presentarles una exportación, ¿no? Como bien sabemos, un pedido de exportación se ve así. Esto es un pedido de exportación y se ve así. Por lo general, aquí vemos tres productos muy normales y aquí vemos sus unidades de medida, digamos, son alternativas, ¿no? Porque su unidad de medida base podrá ser paquete o ristra.
+
+
+
+UNKNOWN_SPEAKER:
+¿Estamos de acuerdo?
+
+Walter Segovia:
+Sí, de acuerdo.
+
+UNKNOWN_SPEAKER:
+Dale. Vale.
+
+Richard Quinteros:
+Justo ahora yo tengo para el producto 11.05, que es un producto Este no, en paquetes. Me pide tres cajas. El C03 corresponde a una presentación. Quiero entenderlo así, ¿vale? De caja, ¿no? Entonces, vale, tengo tres cajas aquí, dos cajas aquí y una caja aquí. Yo mando esto a WM y en WM recibo lo siguiente. Aquí está, ¿vale? Aquí yo también logré homologar ya la unidad de medida. Si se fijan, pues ya ven aquí que me llegó tres cajas, dos, ¿Cuál es el problema en el que nos encontramos ahora?
+
+ Si yo este producto lo consulto a nivel dato maestro, este producto, visualizamos, unidad de medida, no presenta, obviamente, unidad de medida pallet. Una pregunta que yo les voy a hacer a ustedes. ¿Cómo operan en WM cuando...
+
+Melvin Alvarado:
+no presenta las medias medidas?
+
+UNKNOWN_SPEAKER:
+Palet.
+
+Richard Quinteros:
+Se escuchó mal, perdón. No, dale, dale, dale. Ah, Palet. Entonces, una pregunta que voy a hacer a ustedes ya, ¿Cómo operan en WM hoy día con productos? Si mi pedido, por ejemplo, yo te pido a ti, sin saben ustedes cuánto es un palet realmente para para distinguir entre una ubicación de cuando lo cuando cuando lo embalaje en la bl 0 2 n cuando creas la la
+
+Melvin Alvarado:
+no si una vez cuando lo embalas de embalaje cuando creas las HU?
+
+Walter Segovia:
+Si, digamos en el pedido como tal, nunca manejamos que lleva 26 pallets, por ejemplo. No, no, 26 cajas, pero ¿cuántos son un pallet? De esas 26 cajas. Ajá, si. Lo que te quiero decir es que en el pedido de exportación, hoy por hoy nunca vemos que solicita 26 pallets de un pedido, sino que evitar 26 por 20, por ejemplo, el equivalente del pallet. Ahora para embalar.
+
+Richard Quinteros:
+Perdóname si me interrumpo, perdón, disculpa. Ya saben cómo soy. A ver, siento que de repente el concepto se entiende, pero no nos estamos comunicando muy bien. A ver, yo en mi pedido de venta digo yo como pues X exportación al pedido de venta sale 10 cajas 10 C03 vale en mi reserva hay en el WM de cuánto es un pallet de ese producto por eso
+
+Walter Segovia:
+te digo en el WM nunca te llega y te dice necesito un pallet te va a decir necesito 10 cajas y por fuera con el otro Legacy que tenemos, con el otro sistema que es donde van los embalajes, ya sabemos que 10 cajas es igual a un palet. Entonces, cuando esos 10 cajas entran al almacén WM, se embalan, se agarran esas 10 cajas y se les dice que estas 10 cajas van a ir en una tarima de madera, en un 110043.
+
+
+
+UNKNOWN_SPEAKER:
+eso.
+
+Richard Quinteros:
+Y así es como se hace la H.U. Con las 10 cajas. Pero no es que estás tomando esa H.U. Y la estás poniendo solamente en la zona de salida. No, estás preparando un embalaje durante el picking.
+
+Walter Segovia:
+Sí, sí, relativamente sí. O sea, en el ingreso al Alma Center. En la 32N, sí, en la entrega entrante ahí se ¿Cuántas tarimas se van a hacer?
+
+UNKNOWN_SPEAKER:
+¿Pero por qué?
+
+Walter Segovia:
+Después de hacer el traspaso en la MB1B, esa te genera una entrega entrante. Entonces esa entrega entrante en la BL32N, ahí la embalas y le decís de las 100 cajas, son 5, el equivalente 5 tarimas. Entonces le decís, el material de embalaje 110043, que es una tarima, seleccionas el material de embalaje, seleccionas los cien y le das embalaje automático, ahí es donde entran las normas de embalaje que dice Melvin, que te dice.
+
+ Enseñale Walter, tú tenés una ahí para que le mostres.
+
+Melvin Alvarado:
+La tendría que buscar. Para que vea ahí, quizás para que nos entendamos y como dice Richard puede ser que se diga más interpretación.
+
+Richard Quinteros:
+Perdonen, perdonen, no me van a creer pero se me fue el internet.
+
+Gianni, Florencia:
+Igual ahí hago una crítica, perdón eh, también por ahí, porque Walter y Melvin están hablando de la orden de compra y Richard estaba mostrando la venta, cuando hacen ventas de exportación a clientes del exportador, a otro cliente que lo venden en casa.
+
+Richard Quinteros:
+Yo me refiero a eso mismo. Yo justo ahora, chicos, estoy hablando de exportación, pero me refiero al proceso general de salida, ¿vale? Pero no solo exportación, porque es un ejemplo. Pero que es el Internet? Entonces estoy conectado con el Internet, el teléfono, porque si no hablaron. Ok, entonces mire, le voy a mostrar aquí una entrega, no la entrega de esa de ese pedido, por ejemplo, que es este este exportación, no orden de salida y exportación.
+
+ La posición me indica que me están pidiendo, pues claramente productor 5, 2 y 14, 3, 2, 1. Vale que les voy a mostrar nada más un ejemplo para no ser tan redundante un ejemplo con una sola posición que es con este producto que me está pidiendo tres cajitas vale si yo voy a verificar mi 11 me escuchan 11005 ahora yo les voy a mostrar aquí en EWM como se ve el inventario para ese producto para exportación.
+
+ Aquí estoy disponible. Yo le digo mira, muéstrame el producto 11 05, pero solamente muéstrame los tipos de almacén reservados y PCK3 que son los de exportación. De ahí yo saco mi inventario de exportación porque se supone que entre y se almacena ahí. Entonces, ¿qué me dice mi inventario? Mi inventario me dice mira, tienes 174 paquetes en reserva, fíjense, reserva, y tienes 58 paquetes en Picking, según esta información que está aquí.
+
+ Pues, ¿cómo nosotros sabemos que este es el Pallet? Es la pregunta. No hay forma de saberlo, porque la unidad de medida alternativa, Pallet, no existe en su sistema. Entonces, si yo me voy aquí al documento o miren algunos pasos técnicos que justo ahora no son muy técnicos, de repente yo selecciono esta posición y le doy crear. Él va a decir Puff, ok, te hago dos líneas de mi estrategia, buscan dos ubicaciones, busca en la Piking para tomar 58 paquetes y se va a la reserva a buscar los 116 paquetes y un picking en altura no es adecuado.
+
+ Él no tiene por qué ir a buscar altura 116 paquetes para abrir un Palek de 174, ¿me entienden? No. A ver, si nosotros tuviéramos aquí distinción de Palek y caja, ¿cuánto equivale un Palek? El sistema no tendría ni siquiera tomar estas 58. Yo te estoy pidiendo prácticamente a nivel posición de documento tres cajas que son el equivalente a 174 paquetes. El equivalente a qué? A este palet que está aquí.
+
+ O sea, tú no tienes por qué ir a Picking si puedes ir a tomar el palet completo.
+
+UNKNOWN_SPEAKER:
+¿Me explico?
+
+Richard Quinteros:
+Pero como no existe existe esa diferenciación de saber cuánto es un palet de este producto, el sistema pasa primero por aquí, se lleva a la caja y el resto lo manda para acá a romper el palet y sacar el
+
+Walter Segovia:
+faltante. ¿Te explico? Mira, pero ahí no es por el dato maestro del material, en la pestaña de WM, en la cantidad de manipulación. ¿Podemos ver el dato maestro del material?
+
+UNKNOWN_SPEAKER:
+Claro que sí.
+
+Melvin Alvarado:
+Esto es EWM, ¿lo quieres ver en SC? Eso te iba a decir. Sí, en el SC. Porque los datos de EWM... No, eso son unidades de medida.
+
+Walter Segovia:
+Alternas, ajá. No, pero el dato maestro del material.
+
+Melvin Alvarado:
+Walter te dice, hay una pestaña dentro del dato maestro del SC, donde le pones la equivalencia a la tarifa. Lo que Walter te está explicando que cuando él cree una norma de embalaje, él agarra un material de empaque y dice este material de empaque le voy a meter 20 cajas. El material de empaque que te menciona es el pallet que vos decís.
+
+Richard Quinteros:
+Sí, aquí también existe.
+
+Melvin Alvarado:
+Walter te está diciendo en el dato maestro material en el CC, que ahí hay un espacio ahí de eso.
+
+Walter Segovia:
+Y en el CC también está el otro que, un campo que se llama cantidad de manipulación, que ese te dice que si pasa de esa cantidad, que vaya a buscar la reserva, y no en el picking, que también ese
+
+Richard Quinteros:
+campo podría ser. Vale, ya sabemos lo que hay en ese seno. Ahora hablemos de lo que hay en EWM, vale? Qué hay en EWM? No eran esos campos, no eran esos datos. Lo que pasa es que muchos de esos datos no son para si son. Hay unos que sí, otros que no. Son usados en EWM, vale? EWM y la pestaña.
+
+Walter Segovia:
+Perdón, gestión de almacenes.
+
+Richard Quinteros:
+Sí, aquí, dato de almacén.
+
+Walter Segovia:
+No, gestión de almacén, no. Donde te dice a qué ubicación va, cuánto es la cantidad máxima en esa ubicación.
+
+Richard Quinteros:
+Pero ahí, ahí es diferente porque, por ejemplo, eso que tú comentas, lo hacemos en la ubicación digamos en la ubicación fija, por ejemplo, le damos cantidades máximas y demás, las que son una rotación fija, son las de pico. Ahora aquí a nivel datos de tipo almacén, dato tipo de almacén, tú le das una visión donde le dices vale estos datos. Imagínate que son para normalmente usados para reaprovisionamiento.
+
+ Me explico. O sea, reaprovisionamiento de ubicación, es decir, yo aquí agrego mi ubicación de Picking, y le digo cuál es mi cantidad mínima de reposición y demás, porque estos son datos de reaprovisionamiento, pero no son usados para la determinación del Picking, que este es el caso, para la creación del Picking, eso no son usados para eso, no se usan ahí. ¿Qué se usa? Para el piquín 1 la norma de empaque o packspec que me parece algo bastante y si me preguntan bastante trabajos talachoso o como le digan ahí en salvador bastante talachoso que tengan que hacer una norma de empaque por cada
+
+Melvin Alvarado:
+producto una locura no no nosotras tenemos automáticas ya tenemos configurada la Esa o sea. Aquí hay que crear a nivel de configuración. Vale, les digo a nivel de configuración. Las. Ya en un solo se crean las normas automáticas y material lo que hace lo que hace la norma, te la respeta. Mira este material es que te la respeta. Mira, son tantas tarifas.
+
+UNKNOWN_SPEAKER:
+Pero la norma.
+
+Melvin Alvarado:
+La norma de embalaje.
+
+Richard Quinteros:
+Ajá, las normas, las normas de embalaje de ustedes están asociada a los volúmenes que controla la unidad de manipulación o a los volúmenes específicos que realmente son del producto. Es decir, ¿a qué me refiero con esto? Cantidades. Es decir, por eso le vuelvo a la pregunta. ¿Ustedes saben hoy en día cuánto tiene un palet de este producto?
+
+UNKNOWN_SPEAKER:
+No saben, ¿no? Supongo.
+
+Walter Segovia:
+Sí, en el dato maestro del material que te he comentado.
+
+Melvin Alvarado:
+Y que en el dato maestro del material de ECC hay una que se llama.
+
+Walter Segovia:
+Te lo puedo mostrar. Sí, sí, sí, dale, dale.
+
+UNKNOWN_SPEAKER:
+Vamos a verlo.
+
+Walter Segovia:
+Es este, mira, que estás viendo ahí, el 11005. Te dice que 32, 32, C03, 32 cajas te forman un pallet industrial, un industrial pallet. Aquí está la cantidad de cajas por tarima, que es la cantidad de manipulación con la que se está manipulando este material. Y así por cada uno está configurado. Entonces, en esta pestaña de cantidad de manipulación, acá se le pone el dato de que, por ejemplo, si pasa de 32 cajas, digamos, si me pide, si hay un pedido que solicita 33 que lo vaya a traer a las ubicaciones de reserva porque si no un solo pedido me va a dejar sin un pallet, por ejemplo.
+
+
+
+Richard Quinteros:
+Si, si. Que nos dice cuántas lleva un pallet, por ejemplo. Pero esto te ayuda a ti en la estrategia, en la determinación, esto te ayuda a ti en la determinación, es decir, esto te ayuda a ti a decir, mira, sabes que yo te estoy pidiendo a ti 10 cajas, ejemplo te estoy pidiendo 10k y mi pale es de 5, no lo tomes de picking, tómalo todo de reserva, dos pales completos, o no sé, ¿te ayuda eso?
+
+Walter Segovia:
+Sí, entonces por eso te preguntaba si no era este ese dato el que te estaba dando ese efecto que sólo te agarraba una de picking y las demás iban para reserva.
+
+Richard Quinteros:
+No, no, no, eso es un dato propio allá pues, no es de EWM, no funciona así aquí. Aquí de repente podríamos manejarlo como la norma en PAC, PAC-SPEC, pero hasta ahí, pero no, eso no, es un dato propio de ese sector.
+
+Walter Segovia:
+Sí, porque hoy por hoy cada material, aquí si te fijas, puse otro, por ejemplo, jalapeño, aquí esta cantidad va variando por cada uno de los materiales.
+
+Richard Quinteros:
+Puedo preguntar la causa del por qué no manejamos unidad en medida alternativa en los productos.
+
+Walter Segovia:
+Bueno como ahorita con el WM que tenemos implementado no lo hemos visto necesario porque lo suplimos con este con este campo.
+
+Richard Quinteros:
+¿Qué impactos o efectos ven en la implementación de esa unidad de media alternativa dentro del Plus Product?
+
+Walter Segovia:
+Bueno, hay solo el tiempo para llenar la plantilla. Eso lo va a hacer una vez.
+
+Richard Quinteros:
+Si eso agrega valor a la operación, adelante le damos si mira yo te comparto pantalla para que vean algo vale no solamente pues para el orden de todas sus tareas y trabajos para ver les voy a mostrar algo si ustedes se fijan aquí en el monitor me muestra no o sea los dos inventarios vale tal cual no así como ustedes lo ven esta es la unidad de medida base él lo representa con la unidad de medida base vale pero si como esto es reserva aquí como esto es reserva aquí debería de tener la unidad de medida alternativa, vale?
+
+ A la derecha te muestra el equivalente, digamos. Y aquí te muestra la alternativa. Justamente está así porque yo lo cargue así. Pero olvídense, esto debería tener aquí o depende de cómo fue cargado, con qué unidad de medida alternativa fue recibida. Por ejemplo, si tú en tu tren entrante recibe palets o recibes cajas, no? O sea, comunidad de medida alternativa. Pues al final tú vas a ver la unidad de medida alternativa aquí, no?
+
+ Esa la vas a ver aquí, dependiendo de la presentación a la que tú veas. Pero eso, ¿en qué te va a ayudar a ti tener también la parte del palet en el dato maestro del producto? El sistema va a saber cuando, oye, mira, esto es un palet, va a redondear y va a decir el palet lo voy a buscar aquí, según mi estrategia de salida, y las otras cajitas que no son de un palet, ¿vale? Pues que no hacen el palet como tal, la voy a buscar aquí.
+
+
+
+Walter Segovia:
+Tienes algo muy, muy bueno, sí. Sí, muy bueno, lo agregamos ahí en la plantilla de datos maestro.
+
+Richard Quinteros:
+Sí, porque hoy día, pues hoy, hoy en día, como te digo, el sistema no sabe, no sabe traducir eso. Si yo tuviera eso, esto aquí, como yo se los mostré, se comportará diferente. Pues aquí ya me fuera dicho. Voy a buscar el palet, nada más me entiende. Todo lo sacó del palet y ya está. No fue a quitarle el stock al piking porque pues si mi inventario completa un pallet, yo voy a tomar el pallet, no le quito el inventario al piking.
+
+
+
+UNKNOWN_SPEAKER:
+¿Sí? ¿Se entiende?
+
+Walter Segovia:
+Se entiende y de acuerdo.
+
+Richard Quinteros:
+Y yo no sé, bueno, yo siento que lo tomaron de la mejor manera, me alegra muchísimo. La verdad, sí, porque es que a veces no sé si eh pues me ha tocado que pues haberse modificado los datos maestros son es un tema delicado ¿no? Pues si igual lo quieren practicar internamente está bien pero si ya ustedes lo tienen controlado inclusive hasta con plantillo y todo pues siento que no es tan complicado ¿no?
+
+
+
+Melvin Alvarado:
+Mira una una pregunta en el caso de van las normas de empaque.
+
+Richard Quinteros:
+Las normas de empaque pueden entrar en diferentes procesos y funcionan adecuadas a algo que se llama condiciones. Te voy a mostrar una así por encima. Lo que pasa es que no les propongo eso porque siento que es peor porque tienen que hacer una norma de empaque por cada producto. Si me explicas. Por cada producto y no es algo automático. Una norma de empaque es algo que se tiene o que crear uno a uno o cargar por medio del archivo que pues en su momento les compartí.
+
+ No es que se va a crear automáticamente, tienen que crearlo. Ahora les voy a mostrar un ejemplo, ¿no?
+
+UNKNOWN_SPEAKER:
+Este, ¿no?
+
+Richard Quinteros:
+Si yo lo de aquí consultar, mi norma de empaque viene así, ¿vale? Una interfaz bastante sencilla. Este semáforo en verde me indica que está activa. Si yo consulto, esta norma de empaque tiene condiciones, ¿no? Que es algo, pues, bastante técnico. Si gustan y quieren conocer para qué sirve cada condición, pueden revisar el manual que les pasé, ¿vale? Y ahí viene explicado para qué funciona cada cosa, ¿ok?
+
+ Pero, por ejemplo, yo le voy a dar a esta, que era la segunda versión, para nosotros, Y aquí donde dice condición, hay varias condiciones. Las normas de empaque pueden ser usadas para creación de órdenes de almacén, para hacer, para paletizar, para una entrega de salida, para una entrega entrante, para crear una tarea, para muchas cosas, ¿vale? Puede ser usada, ¿ok? Y de acuerdo a esa condición que tú le metas aquí, y esta combinación de estos datos que tú le colocas acá, pues el sábado identifica que, por ejemplo, esta especificación de empaque es para este producto, ¿no?
+
+ ¿Sí? Aquí, a un nivel más alto, abajo te presenta el producto, te dice pues una ristra, tú le pones que es una ristra porque esa es la única medida pues digamos base del producto y donde dice material de embalaje aquí es donde viene lo bonito porque aquí pues ya tú le das la cantidad prevista para el material de embalaje correspondiente ¿vale?
+
+UNKNOWN_SPEAKER:
+¿Sí? ¿Se entiende hasta aquí?
+
+Richard Quinteros:
+Aquí si se fijan, cantidad prevista, le puedes poner una cantidad mínima le puedes poner una creación automática de unidad de manipulación si lo deseas, y aquí puedes indicar el material de embalaje en el que tú quieres que tome en
+
+Walter Segovia:
+cuenta para este procedimiento, ¿vale? Sí. Para todo eso nos pasaría plantilla, ¿verdad? O sea, ¿tú lo cargas masiva de todos esos datos?
+
+Richard Quinteros:
+Sí, yo se los pasé. No sé si lo revisaron. En un correo personalizado que tenía todas las plantillas y manuales, inclusive el espacio manuales de uso de cómo deben usar cada transacción y cada cosa, bien detallado. No sé si lo alcanzaron a ver en un correo. Vamos a buscarlo. Yo no lo he visto en realidad. Dios mío. No pasa nada. Pero chicos, chequenlo. Si no lo consiguen, pues lo vuelvo a reenviar.
+
+ Si gustan, este y pues que le sirva porque de aquí en adelante pues será como parte de no sabes es una biblia de lo que les tocará ser en muchas ocasiones más que todo en la carga inicial pero bueno a ver yo lo que quiero chicos que entendamos nos quedemos con el concepto de se entendió mi exposición Sí, lo que te transmití sí se entendió. Entonces, justo ahora quieren platicarlo internamente para ver si vamos a hacer las modificaciones al dato maestro del producto o qué piensan, dígame, quiero escucharlos.
+
+
+
+Melvin Alvarado:
+Mirá, una consulta ahí, Richard, en el tema de, eso te va a servir para llevarlo en el área de de Piquín cuando sea el Piquín consolidado perdóname discúlpame exportación cuando haces Piquín o solo o solo para el tema de
+
+Richard Quinteros:
+exportación te va a servir no no eso es en general para todos eso va a funcionar para todos eso les va a ayudar usted en todo entrada salida interno reaprovisionamientos de ubicaciones el sistema al vendedor que en una tarima
+
+Melvin Alvarado:
+va más de un material.
+
+Richard Quinteros:
+Perdóname Melvin, despídeme o no que se me oculta y voy a tener que escuchar como medio entrecortado.
+
+Melvin Alvarado:
+Cuando a un vendedor le cargo en una tarima va más de un material. O en un pallet, perdón, en un pallet, digamos, no solo llevo un producto, un pallet posiblemente por una caja de jalapeño, una de macho, una de churro.
+
+Richard Quinteros:
+Sí, pero allí.
+
+Melvin Alvarado:
+No, no, no.
+
+Richard Quinteros:
+A ver, cuando eso es así. A ver, por ejemplo, yo, cliente de exportación, te estoy pidiendo. Me escuchan?
+
+UNKNOWN_SPEAKER:
+Si, si, dale, dale.
+
+Richard Quinteros:
+Yo, cliente de exportación, te estoy pidiendo. Voy a compartir mi pantalla nuevamente, va? Para mostrarles el escenario. Yo, cliente de exportación, te estoy pidiendo estos tres productos, que es el escenario, pero estos tres productos no completan un pallet. Estamos de acuerdo y obviamente el picking va a ocurrir. ¿Dónde? En ubicaciones de picking. ¿Estamos de acuerdo? Sí, señor Belén.
+
+UNKNOWN_SPEAKER:
+¿Qué va a pasar ahí?
+
+Richard Quinteros:
+Ahí lo que va a pasar es que el sistema me va a mandar una unidad de manipulación, o sea, sobre un pallet. Yo voy a ir a hacer un recorrido a esas ubicaciones de piquín. Sí, es decir, yo voy a la ubicación de piquín de exportación. Tomó este producto, tres unidades, tres cajas, perdón. Tomó en el mismo palo y colocó dos más y después uno más hasta completar el piquín.
+
+UNKNOWN_SPEAKER:
+No.
+
+Richard Quinteros:
+Ese palet con esos productos se llevan a la zona de preparación o el flejado, lo que le vayan a hacer al palet y posteriormente ahí pues ya está listo. Si me explico. Y eso quién lo controla, que es la segunda reunión que tenemos ahorita. Esa preparación para que quede junto en un mismo palet lo controla esto que está aquí. El grupo de consolidación dónde está? Qué es el tema de los grupos de consolidación?
+
+ Va a hacer que la preparación se junte. Por ejemplo, lo que es de este cliente se prepara para ese cliente.
+
+Melvin Alvarado:
+Otra pregunta y me. Cuando viene de una unidad de medida alterna, que estaban viendo que viene de la caja. Cuando venga de la unidad de medida base, ¿cuál es la diferencia? ¿Cómo se va a comportar?
+
+Richard Quinteros:
+Se piquea con la unidad de medida base. Va a buscar, si tú me pides 12 ristras, toma 12 ristras.
+
+Melvin Alvarado:
+Pero andate al maestro de materiales, andate al maestro de materiales, es que todos esos problemas me preguntaban. Porque ahí tengo que tener cuidado, porque se debe incrementar el dato maestro a las personas que lo gestionan. Si vos ves ahí, ahí no tenés unidad de medidas alternativas. Ah, como no ahí tenés. Ok, pero cuando yo voy a crear, por decirte algo, el palette, ahí no le voy a poner el equivalente de caja de la cuarta columna.
+
+ Le voy a poner siempre la Si, el equivalente a los MMI de base. Te voy a poner un ejemplo. Agarremos la cuarta columna. Suponete que el C03, no, la última. La quinta mejor, que tiene 100 paquetes. La CPQ, esa CPQ. Supongamos que la CPQ es el PALE.
+
+Richard Quinteros:
+100 paquetes se llama esa.
+
+Melvin Alvarado:
+Entonces el PAL va a tener 100 paquetes. No, no, no.
+
+Richard Quinteros:
+Recuerda que cuando tú coloques aquí 1 PAL va a ser equivalente. Él siempre va a tomar el equivalente a la unidad de medida base. Tú tienes que colocarle el equivalente a la unidad de medida base. ¿Cuántos paquetes tiene?
+
+Melvin Alvarado:
+Y ya está.
+
+Melvin Alvarado:
+Ahí, Walter, lo único que hay que considerar cuando cambia el tipo de caja. ¿Cuánto sucede, Walter? La equivalencia en las cajas. Porque ese sería proceso.
+
+Walter Segovia:
+Sí, tendría que incluirse en el formulario de alta, baja y modificación del dato maestro.
+
+UNKNOWN_SPEAKER:
+Es equivalente.
+
+Walter Segovia:
+Por eso sí.
+
+UNKNOWN_SPEAKER:
+Pueden tomarse un espacio.
+
+Richard Quinteros:
+No vamos a discutir al interno.
+
+Melvin Alvarado:
+Sí, correcto. Lo que queremos ver es qué procesos quedan impactados. El impacto, exactamente. Para ver cómo lo comunicamos y lo gestionamos.
+
+Richard Quinteros:
+Por eso me alegró mucho la respuesta de Walter. Pero bueno, no lo van a revisar.
+
+Gianni, Florencia:
+Está bien.
+
+Walter Segovia:
+Entiendo que en este módulo también hay modificación masiva, se puede modificar masivo los materiales o por plantilla. Te lo manda SC, Walter. Claro, estos datos maestros no los toco yo, por eso el dueño es Ah, por eso te preguntaba si no heredaba ese dato que te mostré en el SC y me dijiste que no, que son propios de DWM.
+
+Richard Quinteros:
+No lo usa, por eso no lo hereda.
+
+Kerin Bonilla:
+Y entonces, ¿en qué pantalla del SC van esos datos que tú estás diciendo?
+
+Gianni, Florencia:
+No, creo que ahí hay doble proceso, ¿no, Richard? En SC se carga todos los datos de SC y lo que son los datos maestro propios, EWM es lo que van a actualizar en EWM.
+
+Richard Quinteros:
+Es correcto, que son estos que nos habilita EWM. Mira, da todo almacén, todo esto. Si yo le doy modificar, si yo entro aquí, pero pasa que no me deja, no me deja modificar porque tengo que entrar por la transacción. Por ejemplo, yo entro por la transacción mat 1, que es la transacción de maestro de productos. Aquí le doy modificar y aquí ve. Fíjate que ninguno de estos campos me los habilita porque no son míos, son de ese por ejemplo ninguno de estos mira clasificación, datos de embalaje tampoco, almacén tampoco, datos de almacén me los habilita, porque son nuestros, esto sí lo podemos modificar aquí, como las estrategias, cómo se comporta el producto para la salida, para la entrada, la unidad de medida preferencial de consumo, que entiendo no lo vamos a usar, porque básicamente pueden tener diferentes presentaciones de producto y es totalmente razonable, indicador de inventario, de cíclico, si es A, B o C, son datos propios de WM.
+
+ Al igual que el tema también de datos de tipo almacén, por ejemplo, estos datos son usados para el reaprovisionamiento de las ubicaciones fijas de Picking. Entonces, si tú tienes, por ejemplo, inventario en PCK3, que es la exportación y tienes en reserva de exportación inventario, puedes bajar producto de la reserva hacia la ubicación de Picking de acuerdo a los datos que ingresas aquí, ¿no? ¿Sí? Pero son los datos que nosotros podemos manipular desde DWM.
+
+ Ningún otro dato de estos que están aquí, que tú ves aquí, son modificables. Y el que tú me comentas no viaja hacia acá, no se usa aquí.
+
+Gianni, Florencia:
+Fíjate que ninguna de estas pestañas lo viste. Ahí tienen dos procesos, cuando crean un dato un SKU nuevo, lo crean en SC, migra a EWM y después en el EWM le cargan los datos en el EWM de estas solapas. Ese sería el proceso que tienen que hacer, lo mismo, bueno no clientes, pero materiales por lo menos. Tienen doble actualización de datos maestros, pero el input de los datos más importantes o más completos son de SC y se migran al EWM.
+
+
+
+Walter Segovia:
+Algo que a partir es el equivalente al pallet.
+
+Richard Quinteros:
+Algo que tenemos que entender ahora y es esto que va a empezar a operar con EWM, Extended Warehouse Management, es que muchas cosas, operativamente quizás, o algunas otras otras sí, unas no, van a cambiar para ustedes. Ya digamos que el cheat de ese sistema no resulta tanto de este lado. WM quizás un poco, porque la operativa almacén es igual, puede ser similar, pero muchas cosas van a tener que cambiar para poder operar con EWM.
+
+ ¿Y es por qué? Porque EWM automatiza los procesos de tal forma que ustedes no tengan que intervenir tanto manualmente sabes que eso es lo que se empuja.
+
+UNKNOWN_SPEAKER:
+Sí, de acuerdo.
+
+Richard Quinteros:
+Entonces, pues tenemos que estar apegados un poquito al cambio, como quien dice por ahí. Hay cosas que hay que cambiar.
+
+Walter Segovia:
+Así es. Desde que los contratamos.
+
+Richard Quinteros:
+Pues sí. Entonces, muchas de estas cosas van a ser automatizadas para ustedes. El sistema va a tener lógica personalizada, que va a saber distinguir, ok, busco un PALE allá y busco esta caja aquí. Va a ser más automático. Ustedes lo único que van a tener que irse a la fase, crearla, dar aquí, liberar fase y ahí se crean todas las tareas, todas las actividades automáticamente con la lógica inteligente de saber esto es PALE, esto es caja y todo ordenado.
+
+ Y ya los operarios automáticamente, nada más con ustedes la dirección fue lo único que hicieron los operarios a través de las tareas que van a ver aquí ellos no lo van a ver no pero usted nada más le dice mira ya tenemos trabajo loguense su radiofrecuencia ya ellos van a empezar a trabajar y el sistema automáticamente guiado por colas de trabajo les va a ir asignando automáticamente el trabajo sin que ellos tengan que intervenir nada aquí pues nada
+
+Melvin Alvarado:
+de nada explico era richer y explicándote un poco y tenemos negatividad acá que que plan B tenés ¿Qué plan B tengo?
+
+Richard Quinteros:
+Justo ahora eh pues me encuentro trabajando en tratar de preparar un plan B para ustedes no lo tengo a la mano justamente ahora necesito seguir revisando y haciendo pruebas de este lado ¿Vale? Y son cosas únicas exclusivamente como les digo que se pueden ver probando ¿Vale? Y con los datos que ya ustedes manejan eh pero estoy pensando quizás en normas de este que no deja de ser trabajo para ustedes porque va a ser un buen trabajo tener que cargar una norma de empaque por producto este y sigo operando o sea les digo que estoy buscando alternativa solamente quería ponerlos al tanto de lo que está pasando en lo que me encuentro y que pues como equipo nos ayudemos no en idea oye mira esto me significa menos impacto para mí vamos a hacer esto participamos todos, no?
+
+ Yo sigo trabajando en tratar de buscar alternativas, vale?
+
+UNKNOWN_SPEAKER:
+Ok. No te puedo dar respuesta ahora, porque pues para qué?
+
+Richard Quinteros:
+Estoy probando normas de empaque y de todo, pero justamente ahora se vuelve un poquito complicado si no hacemos un buen control del stock del inventario. O sea, con datos reales. O sea, si eso es un parle, si tú si tú sabes que esto equivale a un parle, por qué no manejas el dato maestro? Por qué? Por qué? Por qué no lo manejamos como unidad de medida? Porque así es, no? O sea, un parle de este producto equivale a 20, 30 cajas o 30 paquetes.
+
+ No sé lo que la unidad de medida corresponda. Entonces, si ya lo saben el dato, pues por qué no lo controlan? Obviamente, porque ustedes se lo están dejando allá las normas a la pestaña de almacenes, pero eso es un dato maestro que debería vivir en el producto.
+
+UNKNOWN_SPEAKER:
+Es mi punto de vista.
+
+Richard Quinteros:
+De acuerdo. Bueno, no sé qué piensen el equipo, todos. Bienvenidos a participar.
+
+Melvin Alvarado:
+nosotros aquí al interno lo revisamos con Walter, nos vamos a sentar con el área de datos maestros para ver digamos los impactos que se tienen y los procesos.
+
+Richard Quinteros:
+Sí, ahí nada más si me podrían ayudar quizás a estos productos que estamos usando para probar, ¿vale? Agregarle quizás la unidad de media alternativa a esos tres productos. Sí, nos pasan los Y una vez que lo agreguen, nada más me informan para yo informarlo a EWM. O sea, pasar los datos de EWM y que EWM se actualice. De acuerdo. Eso son. O sea, esos son los de este pedido. No sé ahí, Jenny, si se me está pasando alguno.
+
+ Ahí pasó, Jenny.
+
+Gianni, Florencia:
+Sí, esos cuatro son los que estamos usando en desarrollo. Vale. Ya te iba a decir quién es Jenny. Pero ahí hay un tema, Walter y Melvin, lo tienen que actualizar en D500. Si no, ahí... Sí, sí, estamos claros.
+
+Melvin Alvarado:
+Ok, listo.
+
+Gianni, Florencia:
+Si no, wey, cosa me lo pasan, yo lo completo y ahí Richard lo envío.
+
+UNKNOWN_SPEAKER:
+Está bien.
+
+Richard Quinteros:
+Vale, pues esa era mi inquietud chicos, qué bueno que lo pude transmitir a ustedes que ya lo tienen en el radar y como les digo yo sigo estudiando alternativas, posibilidades, pero creo que la correcta es esta, pero nada, vamos
+
+UNKNOWN_SPEAKER:
+avanzando, ¿vale?
+
+Richard Quinteros:
+Vale, entonces sin más por el momento y nada más perdón nada más y más por el momento pues esos son los temas de nuestro lado me informan cuando terminen eso porfa para poder pasar a hacer el envío y eso es todo muchas gracias gracias Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org ¡Gracias!
+
