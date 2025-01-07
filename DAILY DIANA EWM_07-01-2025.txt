@@ -1,0 +1,299 @@
+Hector Palacios:
+Hola, ¿qué tal? ¿Qué tal John? ¿Pablo? ¿Cómo están?
+
+UNKNOWN_SPEAKER:
+Lector.
+
+Hector Palacios:
+Muy bien, gracias. ¿Y tú? Bien, bien, también. ¿Qué tal el año nuevo? Creo que no los veo desde hace...
+
+Pablo Palacios:
+antes. Bien. Todo bien.
+
+UNKNOWN_SPEAKER:
+¿Tu familia?
+
+Hector Palacios:
+Sí, eso es lo importante. Sí. ¿Me vas a medir, Queralt? ¿Me vas a medir? Hola, Víctor. Hola, John. Pablo, Richard, todo bien.
+
+UNKNOWN_SPEAKER:
+¿Cómo están?
+
+Hector Palacios:
+Se me pasó la sesión. Yo también, yo también. Estás a tiempo, estás a tiempo, Richard.
+
+UNKNOWN_SPEAKER:
+Un trabajo. Muy bien.
+
+Hector Palacios:
+todo bien por aquí. Me alegro, Rechón. Yo creo que de mi lado al menos, ya que no creo que no tengo puntos importantes a levantar, así que lo que levanten ustedes durante la sesión.
+
+Richard Quinteros:
+Yo sí, yo sí tengo puntos de levantar y hay cosas que me he ido encontrando a medida que voy trabajando con mis pruebas, ¿no? WM, a ver. Les comento algo en lo que estoy, por ejemplo, le voy a mostrar cualquier material de lo con lo que estoy trabajando. Esto es un material, vale? Y esto es su dato maestro. Ayer unidad de medida. Ellos no tienen y es algo que también ayer vi con unas pruebas de Samir.
+
+ Ok, estoy en la parte del replenishment, pero hay algo que pues obviamente me inquieta un poco. Es el tema de que ellos no usan unidad de medida al palet, no? No lo usan. Es decir, su producto, las unidades de medida que ellos manejan dentro de su producto es paquete, bolsa, un que es unidad, C03 caja, esto es caja y esto es kilo, por ejemplo. Pero no vemos una que normalmente solemos ver, que es el palet, ¿no?
+
+ La unidad de medida operativa, pues, dependiendo de dónde se encuentre en el almacén. O sea, su base es el paquete. Este que está aquí, como te puedes fijar que hay una cosa que se llama unidad de medida base, paquete. Ahora, no tenemos esa unidad de medida y obviamente para nosotros es muy difícil saber cuándo es un pallet y cuándo es una caja. Me explico, la caja de repente no me preocupa tanto, pero si el pallet.
+
+ ¿Por qué? Porque nosotros, por ejemplo, en el esquema de reaprovisionamiento, que es lo que maneja De repente, si soy muy técnico, discúlpeme, pero el esquema de reaprovisionamiento, que es lo que está haciendo Samir, que es cuando tú vas a la reserva de allá arriba y bajas un palet y lo coloca en la ubicación de Piking, pues él necesita identificar cuando es un palet, ¿no? O sea, oye, ciertamente la cantidad de esto es un palet, me llevo el palet completo, ¿no?
+
+ Pero no tiene cómo, no tiene cómo. Ciertamente él no tiene cómo identificar cuando ¿Se puede hacer internamente en la ejecución de EWM importante esto, Richard?
+
+Hector Palacios:
+¿O es más que nada interpretación del resultado final? Es importante.
+
+Richard Quinteros:
+¿Y por qué te lo digo? Porque, claro, por ejemplo, su reaprovisionamiento va a buscar... Nosotros podemos... Con el reaprovisionamiento es lo que menos me preocupa, porque nosotros con el reaprovisionamiento quizás podemos hacer una... Hay una parametrización a nivel clase de proceso, perdón lo técnico, que te permite redondear. Es decir, tú me estás pidiendo 3 cajas, pero mi palet es de 5, yo redondeo a 5.
+
+ Si me llevo el palet completo, va, se llama redondeo. Eso se puede hacer, ¿vale? Vas a, quizás, a sobre estoquear un poquito la ubicación con dos cajas más y está bien, pero el esquema es tomar el palet completo, ¿no? Ahora, ¿qué pasa? ¿Dónde impacta mucho en la parte de salida? Por ejemplo, en la parte de exportación, que es esta, ellos piden tres cajas, usan esta unidad de medida para exportación, piden dos cajas.
+
+ Pero, ¿por qué es diferente la unidad de medida? Porque son diferentes presentaciones. Por ejemplo, para el 11005, que es este producto, yo tengo esta presentación, esta caja, C03, que equivale a 58 paquetes. Tengo otra presentación que es ésta, que equivale a 100 paquetes. Dependiendo de la presentación, pues tú lo encuentras aquí. Ellos venden una caja con la unidad de medida C03. Así ellos venden esa caja.
+
+ Venden tres. Vale, cuando me llega de WM, ¿qué pasa? Obviamente mi sistema lo interpreta, para comenzar por ahí, lo interpreta como unidad de medida base. Así me llega lo interpretar como paquete rista y ristra él dice bueno 174 pues esto equivale a tres cajas de esa c03 es la suma es la multiplicación de estos de esta medida es la multiplicación de 58 por 3 y eso es lo que se refleja aquí los 174 paquete vale me llega en unidad media base ahora eso es algo que es lo que menos me preocupa porque yo ahorita esto es una configuración para que aquí también pueda recibirse la unidad de medida alternativa desde SC.
+
+ O sea, la unidad de medida pedido me llega aquí también. Estas son las configuraciones y las voy a probar ahorita.
+
+UNKNOWN_SPEAKER:
+¿Vale?
+
+Richard Quinteros:
+¿Pero qué pasa? Cuando yo voy a crear la tarea para mi picking, ¿vale? Él va a buscar todo a reserva. Obviamente va a buscar todo a reserva porque ahorita no tengo la de Picking con inventario, pero si yo lleno las ubicaciones de Picking, no hay ningún problema. Pero qué pasa si yo a la ubicación de Picking le coloco, por ejemplo, vamos a ponerle 58, que es el equivalente a una caja. En la ubicación de Picking tengo 58 y en la ubicación de Palet tengo 174.
+
+ En la reserva tengo 174, en la ubicación de Picking tengo 58. Es una caja y arriba un Palet. ¿Qué pasa? Cuando yo creo en mi tarea, el sistema va a buscar 58 de picking, que es una caja, y las otras dos cajas va a buscar de romper un palet completo en la reserva arriba. El picking en altura no es correcto, ¿vale? Porque por eso tú debes ejecutar reaprovisionamiento de la ubicación de reserva a la ubicación de picking, para tener tu ubicación de picking alimentaria a la mano, ¿no?
+
+ En las buenas prácticas. Pero no siempre va a ser así, porque puede que un cliente pida un palet completo, El cliente mira, sabe que quiere un Palet de producto. Pero como yo le digo al sistema que distinga entre Picking y Reserva. Cuánto es un Palet realmente de este producto? Nadie sabe porque es un dato que el sistema no controla. Entonces se convierte en un problema si. Ahorita estoy batallando porque estoy probando varias cosas entre especificaciones normas de empaque.
+
+ Estoy probando también clasificación de cantidad para que esto llegue a unidad de medida tal cual como lo hacen en el pedido. Me doy cuenta que a nivel unidad de medida acá, justo acá, ellos no manejan el dato bien aquí porque dice todo es como unidad de medida alternativa, ¿vale? Y no todas son unidades de medida alternativa. Se supone que la primera es base, ¿no?
+
+Hector Palacios:
+¿Tenemos suficiente información? Para decir que este es el caso normal, Richard, o puede que sea un caso normal?
+
+Richard Quinteros:
+No, yo yo supongo que nos vamos a seguir con esto en todas partes, inclusive de cómo acomodan en las entradas. A ti, cómo te llegan? Te llegó ese entrega entrante? Pablo, te llegó con la unidad de medida base?
+
+Pablo Palacios:
+No lo comparé contra ese, pero sí llegó con la unidad de medida.
+
+Richard Quinteros:
+Si, con la base. Hay que ver cómo la están enviando realmente, con qué unidad de medida. Yo lo puedo almacenar con la unidad de medida base, pero al final caemos en esto. Cuánto es un pale, cuánto es una caja, no tenemos ninguna de esas conversiones. Entonces sí se necesita parametrizar para que funcione con eso.
+
+Hector Palacios:
+John, las sesiones que pusiste de seguimiento y configuraciones, ah vale, son más seguimiento con ellos mismos. Entonces, sesiones de seguimiento. Sí, es cierto.
+
+Jonathan Hernandez:
+Es cierto, comenté, tenemos hoy una de esas sesiones por la tarde, entonces creo que podríamos aprovechar para levantar ese tema de una vez.
+
+Richard Quinteros:
+Lo voy a levantar, claro. Y creo, estoy probando todavía, preparándome, ¿no? Para saber, ok, tenemos un problema, ¿no? Pero, ¿cuáles son las posibles soluciones, pues no podemos llegar como. Ajá, y ahora quién podrá salvarnos? No, pues hay que pensar en alternativa y eso es lo que yo me encuentro justamente ahora. Antes de llegar ahí, pues con esta información.
+
+Hector Palacios:
+Pero lo que está diciendo Richard, una alternativa distinta a simplemente pedirles que mantengan el el palet.
+
+Richard Quinteros:
+Esa es una alternativa, pero es de alto impacto porque significa modificar todos los materiales, no porque no lo ven de manera no tienen comunidad de medida operativa, ¿vale?
+
+Hector Palacios:
+Pero es la mejor práctica. ¿Ah? Pero es la mejor práctica.
+
+Richard Quinteros:
+Esa es la mejor práctica, o sea, que nos digan cuánto... Pero aquí en este tipo de industrias, Pablo, lo que me preocupa es que pues un pallet no siempre es de la misma cantidad, ¿no? Tampoco tiene una cantidad equivalente.
+
+Pablo Palacios:
+O sea, pues cambiar. Ellos trabajan con un único tipo de pallet. Un único tipo de palet. Pero las cantidades son variables, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí, sí, sí.
+
+Richard Quinteros:
+Entonces, por ejemplo, yo leí que un palet equivale a 500 paquetes, pero después mañana equivale a 600, después 700, después 800. Porque van reduciendo el gramaje de los productos.
+
+Hector Palacios:
+Exactamente por eso.
+
+Richard Quinteros:
+Por eso tienen tantas unidades de medida operativa raras.
+
+UNKNOWN_SPEAKER:
+Entiendo.
+
+Hector Palacios:
+Y ahí así sí, tiene todo el sentido. O sea, bueno, es lo que es, ¿no? O sea, si tienen que ir reduciendo. Sí, sí, sí. Si lo reducen, me imagino que se traduce en la conversión que tienen aquí mismo, ¿no?
+
+Richard Quinteros:
+Exactamente. Entonces, justamente ahorita estoy haciendo una parametrización principalmente para permitir, aquí dice, aquí hay una configuración que dice utilizar unidad de medida alternativa del ERP como unidad de medida específica de esto, que esto es una configuración que va a nivel posición del documento. Para que interprete esta unidad de medida que me están pasando desde la entrega, desde el pedido, para que le interprete de este lado.
+
+ Llega con esa unidad de medida. Perfecto. Qué sigue? Pues hay que o tengo que, que es algo que estoy haciendo. Tengo que parametrizar estrategias en función de esa unidad de medida, no? Pero para que eso funcione, tengo que tener el estoque almacenado acuerdo a cómo se recibe si tú me mandas la unidad de medida desde ese desde ese cc 03 o sea mi compra es por esa unidad de medida operativa y yo recibo con esa unidad de medida operativa pues yo podré determinar esa unidad de medida si me explico entonces pues es todo eso no y justamente ahorita me estoy encontrando con eso obviamente ya mi proceso si te fijas yo aquí simuló la ola, simular fase.
+
+ Pero aquí todo claro. Aquí se cayó porque estoy haciendo parametrizaciones, no? Pero aquí, por ejemplo, empieza a buscar. Ok, papá. Obviamente no encuentro. Está fallando porque no tiene una ubicación de puesta de exposición, pero es solo de menos. Si encuentra, pero lo quiere sacar todo de reserva. Si me explico, porque él no sabe cuánto es una caja, no sabe cuánto es un palo y que él no sabe nada de eso.
+
+ Entonces esa distinción es la que rompe todo. No sabe qué determinar.
+
+UNKNOWN_SPEAKER:
+Bueno, estoy ahorita buscándole la vuelta.
+
+Richard Quinteros:
+Pero aprovechemos estas sesiones para levantarlo al menos.
+
+Hector Palacios:
+Lo único que me preguntaba en esta sesión de seguimiento, ¿tenemos algún key user que nos ayude en esto? Porque tenemos a Keren, que es PM. Tenemos a Melvin, que es... A Walter, ¿no? Pero, ¿está participando? Porque yo no lo vi en la sesión, al menos no lo vi en los integrantes de la sesión que mandó John, o sea, que me compartió pero levantamos a gente que no está en la operación. Walter es el que debería, si puede incluir en la sesión, pues perfecto.
+
+
+
+Richard Quinteros:
+No hemos tenido esa primera sesión, ¿no? ¿Y a Walter lo han visto últimamente? Solo lo vi y me parece que lo vimos en la sesión del viernes.
+
+UNKNOWN_SPEAKER:
+Ah, vale, vale.
+
+Richard Quinteros:
+Estaba ahí calladito, pues, como en el rincón, pero así está, creo.
+
+Hector Palacios:
+Bueno, ahí me comentan si vemos algún gap entre que los usuarios que nos tienen asignados no son los que toman decisiones, etc. Tenemos que tener a alguien que sea un decision maker, por decirlo de alguna forma.
+
+Richard Quinteros:
+Sí. Bueno, yo ahorita me encuentro en eso y estoy, como te digo, desmenuzando posibilidades, viendo todo un escenario totalmente que me quede cuadrado. Y ya eso es homologarlo en el resto y listo. Hay una pregunta, Richard.
+
+Jonathan Hernandez:
+Todas nuestras posibilidades se reducen a nosotros adaptarnos a lo de EWM, ¿correcto? Porque modificar los materiales, entrada no hay algo estándar para modificar de manera masiva las unidades de conversión. Modificarlos uno por uno, no creo que vayan a querer hacerlo, ¿no?
+
+Richard Quinteros:
+Exactamente, yo tampoco creo que lo vayan a querer hacer.
+
+Hector Palacios:
+¿Hay forma de hacerlo?
+
+Richard Quinteros:
+¿Seguro? No es más por el tema de que por la variabilidad me entiende. No siempre es igual. O sea, aunque yo los que te ponga todo, todo el palet, o sea, te pongo una unidad de media alternativa para todo. Al final, esa unidad de media puede tener variaciones de cantidades, pero no siempre va a ser la misma. Entonces, pues ya se lo levantamos.
+
+Hector Palacios:
+O sea, el esfuerzo puede ser ridículo, pero si es la mejor práctica, hay que mencionarlo al menos. Y es el que nosotros estamos haciendo.
+
+Jonathan Hernandez:
+Justo nos acaba de pasar en Mave y que se debe hacer una actualización masiva de unidades de conversión. Consultamos a un a nuestro MM, me dijo, tenemos hay dos opciones, que es la LSMW, que en eso lo que ya nos recomienda usar, es algo absurdo, que SAP lo quitó y no nos puso un plan B, entonces SAP dice que no lo uses. Y la otra es la MM17, pero esa sirve solo para cuando es carga de primera vez, o sea, para actualizaciones no sirve.
+
+ Recomendación del MMS, si hay que hacer actualización masiva de unidades de conversión, se debería hacer un desarrollo y por lo que me comentó no es un desarrollo sencillo.
+
+Richard Quinteros:
+Ya, vale. Digamos que de momento estoy viendo cómo asimilarlo del lado de WM, ¿vale? Sin generar un mayor impacto, solo de configuración y pues que sea la opción más viable. La opción más viable para el negocio que les permita trabajar. De todas maneras, yo, yo no sé si me puedes buscar una reunión, no sé, con Oscar y Carlos para para tener otras perspectivas. Ya busqué yo a Iker y quiere estar de acuerdo conmigo en el sentido de que, pues, si no manejan pales, cómo quieres tú que te identifique pales en WM?
+
+
+
+Jonathan Hernandez:
+Imposible. Entiendes? Conozco un poquito complicado. Están cerrando el diseño, pero Carlos está ahorita con tiempo, está asignado conmigo Carlos y no tiene actividades, entonces escribirle ahorita a Carlos está viable.
+
+Hector Palacios:
+Igual nos estaría bueno preguntarle directamente al equipo por qué, porque quizás tiene una razón contundente, por qué no, y así nos dejamos de pensar en esa alternativa.
+
+UNKNOWN_SPEAKER:
+la tía, ¿no? ¿A qué equipo? ¿Al de Diana? Sí, sí.
+
+Richard Quinteros:
+Ya, pero independientemente de su respuesta, ellos porque no, ellos no van a saber darte ni siquiera la opinión porque ellos trabajan con SC, ¿no? Un esquema totalmente diferente, totalmente adecuado y personalizado a sus formas de operar y ellos pues hoy en día trabajan bien así. Pero con el WM no se trabaja igual, digamos porque aquí sí es un trabajo más minucioso con tareas, con órdenes de almacén, con colas de trabajo, con cuándo es un pale, con cuándo es una caja, un trabajo más minucioso.
+
+ Ellos no tienen ni la menor idea de cómo opera el WM, ¿no?
+
+Hector Palacios:
+No, claro. Eso es traducir un montón de restricciones y modelos que normalmente hago a mano, que no tengo que explicárselo a nadie porque yo lo tengo todo en mi mente. Pero una vez tengo que llevar esa regla a un sistema, tienen que saber, bueno, esto que hacíamos normalmente, lo sabemos hacer, ahora el sistema no lo va a proponer. Eso es lo más importante, que lo sepan. Entonces, más que nada eso, para alinear con ello, ustedes entienden que si no les entregamos esta información al sistema y la tienen ustedes solamente en su cabeza, el sistema no lo va a hacer.
+
+ Esto es lo que va a pasar, etc. Entonces, ahí ellos pueden barajar y pueden decir, no, esto es mandatorio que tengamos esa tengamos que hacer desarrollo o no, pero ahí lo van a decir, ¿no?
+
+Richard Quinteros:
+Sí, de hecho, yo inclusive puedo preparar un escenario donde tenga, por ejemplo, el equivalente, mira, yo puedo tener un inventario en Picking y puedo tener un inventario en Reserva de un mismo producto, por ejemplo este, como ejemplo, que dice 174 Yo le puedo agregar un paquete más, o sea, una caja más a esto, ¿ok? Para que ya sean cuatro cajas, no tres. Aquí hay tres cajas, en teoría. Yo le puedo agregar una caja más.
+
+ Entonces, una caja la pongo en Picking y las otras tres cajas las dejo en el Palet de arriba, ¿vale? ¿Sí? Entonces, ¿qué va a pasar? El sistema no va a encontrar Un pallet y una caja. Y ahí ellos van a ver el error. Si le podemos generar el escenario y mostrarle y ver lo que el sistema hace, eso es ideal.
+
+Hector Palacios:
+Porque así ellos van a entender. Una vez que lo entiendan, nos van a decir, no pasa nada. O nos van a decir, no, esto es terrible. No es lo que estamos acostumbrados a hacer y el sistema no va a seguir nuestras reglas. Entonces veamos de qué forma lo arreglamos. Y después vamos con el equipo de interno y vemos que ahí tenemos que abordar el problema inicialmente, porque puede que ni siquiera tengamos que abordarlo.
+
+
+
+Richard Quinteros:
+Sí, estoy totalmente de acuerdo, pero cuando vamos a tener esa sesión, porque justamente ahora estoy, como te digo, preparándome de cara a poder explicar eso bien y a ver si tengo alternativas, ¿no?
+
+Hector Palacios:
+¿Cuándo quieres hacerlo? O sea, no nos lo posterguemos, obviamente, pero tú decides cuánto te va a tomar, más o menos, hacer el ejemplo y explicar el problema y si necesita algún... O sea, el ejemplo es lo de menos, ¿no?
+
+Richard Quinteros:
+En una hora, dos horas, lo tengo. O sea, el tema no es ese, el tema es, ok, ya vimos el problema, pero qué alternativa tenemos, ¿no? O sea, ¿se puede manejar de forma estándar en EWM? Es lo que estoy revisando.
+
+Hector Palacios:
+Tampoco veo mal que les presentemos el problema para ver primeramente si es que va a ser un tema o no. Lo que quiero evitar quizás es sobreprepararnos. Si no hay ningún problema, es decir, mira, si es necesario, entonces déjame ver internamente cómo se hace. Porque en últimas podemos decir simplemente, no, esta es la mejor práctica que tenga el pallet. Esto no es algo usual que nosotros vemos. Pero déjame investigarlo.
+
+ Y está bien. No tengo que ir con todas las alternativas para HAB para ir a la sesión. Podría ir a la sesión. Primero variar que eso no es un problema. Y si no es un problema, entonces ya nos olvidamos el tema. Y si es un problema, entonces ahí sí vamos con el equipo interno a variar que efectivamente hay alguna alternativa. Porque puede bien ser un gap. De que no hay solución para esto.
+
+Richard Quinteros:
+También pienso lo mismo. Ahí nada más John, ¿cuándo es esta sesión?
+
+Hector Palacios:
+Hoy a las tres y media.
+
+UNKNOWN_SPEAKER:
+Hoy a las tres y media.
+
+Richard Quinteros:
+Puedo preparar para esa sesión. Si no, igual podemos pedirle un tiempo adicional a ellos.
+
+Hector Palacios:
+Lo ideal es que igual nos den para este tipo de cosas, ¿no?
+
+Richard Quinteros:
+No, pero igual no lo lanzamos mañana, no lo lanzamos, o sea, si no llega, no lo lanzamos hoy, lo lanzamos mañana, en la otra sesión, que creo que es jueves, ¿no? Sí, pero si es necesario, Richard, sino mañana, o sea, si no está listo para...
+
+Hector Palacios:
+Si no mañana, pues también, o sea, claro, se sacó una sesión adicional. Si no alcanza a tener el ejemplo, no estaría mal conversarlo, porque quizás de solamente conversar el tema, adquieren claridad, y si no, bueno, si necesitan más detalle, bueno. Próxima sesión les preparo un ejemplo, Iván.
+
+Richard Quinteros:
+Sí, de hecho ahorita lo voy preparando de una vez.
+
+Jonathan Hernandez:
+Y también, no sé, Samir, Pablo, tengan algo que quieran levantar en la sesión de la tarde con el equipo de Diana y Capgemini.
+
+Pablo Palacios:
+No, yo por el momento no yo. No, de mi lado tampoco. De mi lado estamos iniciando con los escenarios. Yo con los juegos que me mandaron, el escenario que me mandaron, voy iniciando el testing de paso a paso del proceso, el cual ya casi tengo cerrado. Me falta un pasito nada más. Y nada, voy documentándolo internamente para mí mismo. Tengan en cuenta que todo el proceso de entrada, para mí, En EWM es nuevo, yo vengo de EWM, así que quizás lo que podría yo hacer más rápido, yo en mi caso lo estoy haciendo a la velocidad que también voy aprendiendo.
+
+
+
+Hector Palacios:
+Igual Pablo, si ahí es necesario meter un 10% de IKER nuevamente, como lo habíamos hecho en su momento, para que nos vaya resolviendo dudas pocas, pero con una asignación formal. Ahí levantalo. Ok, ok.
+
+UNKNOWN_SPEAKER:
+Sí, tranqui.
+
+Pablo Palacios:
+Lo voy viendo. Yo cuando me trabo en algo, hoy por ejemplo me trabé en una cosita boludez que la había visto anteriormente, pero no, no, viste, en esas trabadas de la cabeza que no sabés. Le agarré, le consulté a Richard y también lo destrabé y seguí avanzando. Nada. Después sí estaría bueno en algún momento ver, mirá, así está el flujo. Y verlo, ya sea con Iker o con Richard, a ver, ¿dónde le parece si puede haber alguna mejora, alguna automatización que hoy en día no esté hecha?
+
+
+
+UNKNOWN_SPEAKER:
+Se realizará.
+
+Pablo Palacios:
+Pero por ahora está todo muy verde porque tenemos solamente un solo escenario de trabajo de las entradas. Y el mismo inclusive, bueno, hoy hice la contabilización. No terminó de cerrar la contabilización porque yo no del lado de SC correctamente iniciado, o sea, era un traslado de mercadería y del lugar donde tenían que hacer la salida de mercadería no la hicieron, tampoco tenían stock evidentemente, así que bueno, nada, las cositas que van fallando y la contabilización en SC falló por eso, pero nada, de a poquito, también el escenario que me mandaron, me lo mandaron sin HBU cuando es un traslado entre dos centros distintos que debería venir con la HU ya informada.
+
+ Eso no vino, así que a mí eso lo tuve que simular o forzar manualmente, digamos. Es el primer escenario y el primer caso del primer escenario trabajado, así que nada, se va a tener que ir aceitando de a poco.
+
+Richard Quinteros:
+Oye John, una consulta. ¿Hasta cuándo están pensadas las pruebas de funcionales. No recuerdo bien la fecha que puso Florencia y que se coordinó con el equipo.
+
+Jonathan Hernandez:
+Es todo enero para pruebas integrales arrancan hasta febrero.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Richard Quinteros:
+Bueno, esperemos, esperemos a mitad a mitad de mes a ver cómo vamos. No es por asustar a nadie ni asustarme a mí, pero obviamente sabíamos que esto es normal, que pase esto cuando uno empieza a cosas en AWM y empezar a darse cuenta de cosas, de detalles.
+
+Hector Palacios:
+Por ejemplo, el lado mío. La data lo cambia todo. No es verdad hasta que hay data. Es correcto.
+
+Richard Quinteros:
+Entonces, bueno, nada, vamos a mitad de mes, revisamos a ver cómo vamos. ¿No? ¿Llegamos? ¿No llegamos? ¿Cómo vamos? ¿Va? Vale.
+
+Jonathan Hernandez:
+Y justo te van a aparecer unas sesiones de los martes y jueves. Se les va a ver avances de pruebas de ambos lados de nosotros, también de Capgemini. Y te van a ir a levantar las manos estamos llegando y porque es válido no como comentas el primer acercamiento con ya con datos sí sí vale bueno chicos ahorita pues me voy a bajar para para ir viendo el
+
+Hector Palacios:
+tema de la prueba preparando el escenario. Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org
+
