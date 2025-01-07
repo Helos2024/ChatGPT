@@ -1,0 +1,934 @@
+Roumanos, Hadi:
+The actor is not taken.
+
+UNKNOWN_SPEAKER:
+You again. We look and I didn't ask the location. Hello. And Bishir, not Bishair. Sorry guys.
+
+Roumanos, Hadi:
+Very tired humor Hi, Sebastian.
+
+UNKNOWN_SPEAKER:
+Hello. Hello.
+
+Roumanos, Hadi:
+Raul's here, Fakhour is here. Hey, guys. Hello. Today we are doing a meeting We're doing cameras today, just because we miss all of you. I think we have enough of a quorum. Briefly, I'll summarize the discussion from the status update. And then what we'll do is we'll cover some of the items that we've covered yesterday in the risks and issues log, just because that needs to remain our main tracker for these calls.
+
+ Two takeaways from the status update. The first one is with regards to the re-baseline of the plan. It's a process that we need to follow. So there was a meeting scheduled tomorrow morning with Harry and probably Kaiser to go over that re-baseline plan. It's early in the morning, Rocio, so you won't be able to join. It's at 10 a.m. But I think we have enough content to be able to walk them through that re-baseline of the plan.
+
+ And this should the review with the design board. Okay, so there's three steps effectively, one with Harry, one with the design board to get their approval, and the third one with Muhyiddin to upload that re-baselined plan on ServiceNow. What Tara and myself are doing right now, or at least Tara for the time being, is updating the actual fleshed out plan following the dates of the milestones that were communicated to us by Rocio and Sebastian.
+
+ So the re-baseline plan that that we discussed with GoSCM is at a fairly high level that talks about the main milestones, SIT, UAT, GoLive, et cetera. However, the actual plan that we need to update in ServiceNow goes to a bit more detail. If you all recall, it's throughout the activities, which we also need to update the dates for. That's something that we'll do internally, and we'll seek your support whenever we need it, especially when it comes to change management and the technical side.
+
+ So expect a call tomorrow from Sarah to say, OK, We've updated most of it. Please validate those dates for the activities, not only for the main milestones. The one call that we might need your help on, Sebastian, is tomorrow with the design board, which is likely going to happen at 1 p.m., if I'm not mistaken, guys. It's 11, 11. Then 11, they won't be able to join. It's too early. So we'll take care of that as well ourselves, which I think we can anyway.
+
+ Yes. And then hopefully we'll get some sort of approval during that call. That way we can proceed to Mahyuddin. So Sebastian, those who ignore us for the time being, I think we'll be fine. So that's one of the topics that we've discussed in the status update. The second is the couple of risks that we need to really be on top of Drilling data and drilling stakeholder availability, let's discuss on this call every day to make sure it doesn't slip.
+
+ And to the SDD that we keep chasing today. Firas also was wondering why is this still a risk? Until we get that approval, which they're pushing from their side, we keep an eye on it every day as well. These should remain on our critical list of things. Now, what we've done is we've updated the Excel risk issue tracker to have a bit more of a simplistic view to it. Anything that we've discussed yesterday, and we don't need to follow up today, let's not do it.
+
+ Let's not cover everything every day. We won't have the time to do it. However, we do have assigned names to it. So if anyone has any update regarding any of those, let's voice it in this call, or any risk that is not mitigated, let's voice it on this call. However, what I'll do is I'll cover the ones that need clarification, which we've pushed from yesterday to today. And I'll go one by one. If anyone needs to interrupt, please go ahead.
+
+ Starting with the end users, which is something that we're discussing, I suppose, in the call after this one at 6.30. This, for me, is critical because without end users, we end up in a bad place. So I just want to make sure that this call is a preparation at 6.30 is a preparation for the discussion with Asma, which I think it is.
+
+UNKNOWN_SPEAKER:
+Yeah, Kyle can confirm. Yes, that's correct.
+
+Roumanos, Hadi:
+All right. So besides the call right now, we have an email to be sent and we have the session with her on Thursday. Is that it?
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+Yeah, but I mean, I don't think I should send an email as discussed with her today that we would say the session tomorrow. So during the call today at 6.30, I need to just check everyone's availability so we can schedule a call with Asma tomorrow at some point.
+
+Roumanos, Hadi:
+So that's on Wednesday. Fine. Okay. Next up, the other item I want to talk about is the reference material for the Murugan story. Raul, is there an email that needs to be sent out, or is there a conversation that needs to be had with Murugan? What's the story there?
+
+Patel, Rahul:
+Are you on mute? No, I'm not on mute. I'm just thinking through. For the reference material, we had shared the PPT. We've not received feedback. So we need to send an email and get a confirmation of what else you need. And before we send that email, probably from a solution perspective, I just need confirmation that we had included this as open items in our BPD. So before we send that email, I just want to be sure that are we aligned internally on the new process, new reference portal process, whether it is finalized before we say that to add now that.
+
+
+
+Roumanos, Hadi:
+Okay. When can we do this check internally tomorrow?
+
+Patel, Rahul:
+We have our meeting every Tuesday and Thursday with CoSM team. I can include it in our Thursday's meeting to be discussed.
+
+Roumanos, Hadi:
+So fine. So this internally Gen 9 and then discuss with Morrigan post internal check. Yeah.
+
+UNKNOWN_SPEAKER:
+Okay, fine.
+
+Roumanos, Hadi:
+Um, the, uh, EPC exclusion confirmation. We have this as out of scope. So do we remove this entire thing or do we keep it?
+
+Patel, Rahul:
+We've we've highlighted this as part of our weekly update and also in as part of our update to the steering committee. So But the only thing is I'm worried that we've not had a final email confirmation from AdNoc where they accept, yeah, this is out of scope. So this is why I put this point here. I don't want to enter later into SIT and UIT and say that you've not configured a complete scenario for us.
+
+ Valid.
+
+Roumanos, Hadi:
+Is it an email that we need to send that says confirm that this is out of scope or are we waiting for an email from them?
+
+Patel, Rahul:
+So we've sent that email, we've discussed with Khalid, have discussed with Vignesh. The last update was both Khalid and Vignesh are aligned. This should be out of scope, but then we need to have this follow-up with them saying that is this do we need do we need another confirmation or can you help us with an email confirming which is out of
+
+Roumanos, Hadi:
+scope. Okay, so I'm going to say follow up on email shared with Khalid Vignesh to confirm out of scope for this. Let's try and close this by end of the week. And the reason I'm saying this is, I agree with you, we should not keep it as an open item. Open points from technical, this is fine, this is an open item. Documentation on steps to configure CIDS server, this is the document that you shared with me, Kunal, is that it?
+
+
+
+UNKNOWN_SPEAKER:
+Yeah. Okay, fine.
+
+Roumanos, Hadi:
+So this, Kunal book a session to explain the steps Are you planning to book a session with them?
+
+Sheth, Kunal:
+Maybe tomorrow.
+
+Patel, Rahul:
+Tomorrow morning we'll check with Khalid and then schedule a call. OK, so here. This can be part of our technical discussion we have tomorrow, right? Wednesday? Yeah, yeah. Because all the stakeholders are already there in the meeting, so we don't need to plan a separate session. We can use our technical session to go through this. Yeah, so tomorrow we can cover this runbook part.
+
+Roumanos, Hadi:
+use technical session. Fine. So this is happening tomorrow. PMODs and review durations. This is on us. I'm going to put this as delayed.
+
+UNKNOWN_SPEAKER:
+Share templates, EOQ calculation.
+
+Roumanos, Hadi:
+This is something that we need to do by Jan 9.
+
+Roumanos, Hadi:
+Oh great. E-market list. E-market list. I'll park it for now given everything that's going on. So no need to worry about this one. Rycef. It's on. Kushboo. Ongoing. Makarova. Makarova, Rocio, Sebastian. What's the latest and what do we need to do next?
+
+UNKNOWN_SPEAKER:
+Next.
+
+Roumanos, Hadi:
+Can we put a target date?
+
+UNKNOWN_SPEAKER:
+We can.
+
+Roumanos, Hadi:
+But then it depends who's doing this. Anyone? Volunteers?
+
+Patel, Rahul:
+I will have to do it, I don't see any other option.
+
+Roumanos, Hadi:
+You can get help, you can lead it, but at least you can get help to do it. And this we need a date as mentioned so that it doesn't keep on dragging. So my suggestion is let's discuss on Monday, next Monday with Khaled what can we do in terms of next steps.
+
+Patel, Rahul:
+Yeah, that's the plan. First we need to align with Khaled before we can take internally, and I can lead the conversation, have the session planned, but we'll need all the team members from GoSiem.
+
+Roumanos, Hadi:
+That's fine. Let's have 17 as the target date, but then initial, starting the week, we'll have the discussion with Khalid. Fine.
+
+Naamani, Mohamad:
+And team, if I may, as Hadi goes through this, since Hadi and Tara built it, keep them honest or validate if there is something critical and it's put as high or medium. Or vice versa please make sure because we all own this list if you believe that something should get more attention and for whatever reason based on info that Hadi and Tara have they didn't give it proper priority definitely up I mean tell us to update it at this point you can all have access to it but we prefer not to have too many people editing but definitely raise the flag if you see something requires more attention.
+
+ So keep an eye on column D and if you feel it's off immediately ask even on now on the call on the items discussed.
+
+Roumanos, Hadi:
+I would argue keep an eye on column D and E. The reason we have E here is to say whether or not this impacts our critical path, right? So while these are sort of priority items, for me this is a bit important because it gives us an indication of whether or not that item, if we mess it up, we impact go live. Okay, so you might have something that's very important, but doesn't impact go live. It's fine.
+
+ Okay, it's important. No big deal. We won't lose sleep over it. But if I'm if I'm checking a critical item like test cases, which have an impact on go live, then yes, I will lose sleep over this if we're delayed. So just keep an eye on both columns. As a summary.
+
+UNKNOWN_SPEAKER:
+Okay, so this is...
+
+Rocio Minguillon:
+Is this document shared in any place or not?
+
+Roumanos, Hadi:
+I don't know, Tara can probably share it if it's not at this point.
+
+UNKNOWN_SPEAKER:
+Okay, thank you. Yeah, no worries.
+
+Rocio Minguillon:
+Yeah, and regarding the task of the mock cutover that you were about to...
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+...to talk, then I don't think that there is something else to do Right now regarding that topic, yesterday we keep it there because we had it to add to the rebase plan. But now the activity is there. So I don't know if Rahul or Para have any doubt, but for me it's closed.
+
+UNKNOWN_SPEAKER:
+OK, fine.
+
+Patel, Rahul:
+Yeah, that's good. We just need to add a task in the plan.
+
+Roumanos, Hadi:
+That's it. OK, so if that's the case, then. Actual activity will happen later, defining the cutoff plan. Yeah, but I just want to make sure that we do add that task. Okay, so once we do, then we'll close it. But I already like...
+
+UNKNOWN_SPEAKER:
+You did? Yeah. Okay, okay, fine.
+
+Roumanos, Hadi:
+So, I'm sorry. All right. Okay.
+
+Madhavan, Tara:
+Instance MCCF is not visible. Hadi, so this plan, I have to update in the service now also, eventually. Which plan? Yes, but two steps, right?
+
+Roumanos, Hadi:
+The first step is to review the Excel plan with Rosio. If we need to add the mock code over in the Excel, then automatically it will get migrated to ServiceNow. Yeah, but first review the Excel with Rosio and if need be to add that mock code over in the Excel, we'll do it, which means eventually it'll end up in ServiceNow.
+
+UNKNOWN_SPEAKER:
+All right. Yeah. Okay.
+
+Roumanos, Hadi:
+OK. Kunal, IBP instance name CCF is not visible. This is part of the previous issue that we discussed? Yeah, this is related to the SAP ticket, which Kaiser has raised.
+
+Sheth, Kunal:
+So Paola is already on it, and issue has been identified. Yeah, I saw the emails. OK, I saw the emails.
+
+Roumanos, Hadi:
+Just make sure that we keep an eye on this every single day, just so that it doesn't drag out. Sure. Now, this is the last item, which thank you for whoever added this. I guess, Tata, you added this. One for data migration. Yes, I added it. Thank you. I think this is something that we need to discuss with Hadi and Kaiser tomorrow, just to understand what the hell is going on in their data migration and how it impacts our Go Live.
+
+ And we need to brief Go SCM because we're having the meeting without them. It's early in the morning. So let's make sure we understand really what's going on in that week of Go Live and how badly it will impact us. If it's just a couple of days, then these are days we can't afford anyway, but at least we'll know. If it's an entire week of downtime, then it's a bigger problem. But anyway, we'll share an email with you tomorrow once we've had that meeting to say, okay, these are the lessons for the data migration.
+
+
+
+Madhavan, Tara:
+Okay, now I'll pause.
+
+Roumanos, Hadi:
+Rahul will be part of that meeting, right? I don't know. I mean, he should be. As we agreed, because that's how we keep him interested. Uh, where is that?
+
+Naamani, Mohamad:
+Yeah, if you're referring, it's on adnox email. Yeah, he's uh, oh, that would, it's on your adnock.
+
+Patel, Rahul:
+It's my, it's on my adnock.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Patel, Rahul:
+I have it.
+
+Roumanos, Hadi:
+Okay. So I'll, uh, pause. Who wants to bring any issues, risks to our attention? Who wants to start screaming because of something? Kyle, go ahead.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+So I have two things. The first one being for Hector, Bastian and Raoul regarding the system demonstration session on the 20th of January. You asked us to speak to Asima and see if she could get Sparky to attend that session. So she referred us and I was quoting today from Khaled, but Khaled was asking for more information about this session. So would it be possible to set up a 15 minutes call tomorrow with all of us to see you guys and briefing a bit more about this session?
+
+ Is that possible?
+
+Naamani, Mohamad:
+Yeah, and team to add to this because I attended the discussion, Khaled came to the room. So definitely the change management team are facilitating or coordinating or also planning activities. But whenever it's something like this, I think the change management team will have limited info on the nature of the session, because Khaled started asking, then who should we bring as attendees? Who are the key users?
+
+ What is the role? So either this part should be covered already with Kyle, and then he would go to Khaled saying, these are the roles, or you would need to, or some one of you, maybe Raoul, if you're the delegate or a bastion, someone who can explain to Khalid what we're covering in the demo, and ideally, who do we need? Is it the same reviewers of the BPD, BRD? Is it different, same? And definitely at one point, Kyle and the team can answer certain points, but this level of details, I couldn't even answer Khalid.
+
+ He started saying, okay, is it the same? I told him the logic we're trying to follow is the same reviewers that we have NBRDB PD will continue with us. But honestly, I didn't know about this session. I told him, let's just assume it's the case and the team tomorrow can confirm this with you and brief you. So that's my request. If we're also the change management team is coordinating or supporting, let's make sure one representative who can answer some questions like these is available so that we save time because now it got jumped till tomorrow.
+
+ I don't know who requested it specifically. Is it Hector, Bastian, Raoul? I think it's facilitated by Hector, but you know better, Tim. Yeah, so today Bastian is working on it.
+
+Patel, Rahul:
+So today we discussed this with Bastian. Tomorrow we'll have a high-level agenda of those workshops, what exactly the points to be covered on the discussion plan in the week of 20th and the following week. We'll have exact clarity. So the same question we reviewed in our today's meeting with the process and technology team and
+
+Naamani, Mohamad:
+But then in this case that I will have the change management team join you in those discussions. In this case, either they will be able to answer Khalid or in that case, let's not ask Khalid or asthma for to facilitate the session before you have that agenda ready. Then it will be full information because it's good that you mentioned.
+
+Patel, Rahul:
+Yeah, so I was not aware management team is going to talk to us. My I thought that we have this agenda being formed today and then tomorrow there will be discussion with asthma. So I was not aware of the chain management team.
+
+UNKNOWN_SPEAKER:
+Yeah, it's it's actually.
+
+Naamani, Mohamad:
+Ask my colleague today. OK, so maybe I'm not sure if it was a disconnect or originally that was a request to Kyle, but it wasn't ready with all the information.
+
+Patel, Rahul:
+Yeah, so we discussed about this request. Discussed about this request where we have these meetings, right? In yesterday's huddle also we discussed about this that if we have to plan the meeting in the week of 20th Jan then by end of this week we need to make sure all the stakeholders are identified, the critical ones,
+
+Naamani, Mohamad:
+the important ones. So I think a trio in this case would be better. So if Asma and Khaled are helping between change management who's driving the process and Raoul and Co who are basically aware of what the session is about this way we close all the loops.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Naamani, Mohamad:
+Kyle had another point. Yeah, let's check. Kyle had another point. Is it on the same point, Raul? It's the same on the on the same point.
+
+Patel, Rahul:
+I was talking to Bastion and we have Bastion also on the call. The plan of week of 20th Jan, Bastion feels comfortable that it has to move by a week. It does not impact the project timeline or the impact, but based upon the today's discussion drilling. He feels that if we have more clarity on drilling, then we can be more prepared to demonstrate drilling as well as the rest of the process. So the entire plan should move.
+
+
+
+Naamani, Mohamad:
+That's very valid. Actually, the other question Khaled asked about is, is it going to be with ADNOX data or not? I told him we're not as progressing as well on drilling for the rest we are, but still the configuration of the agents, everything that is pending now with SAP, might impact this, so also a valid point, which is another reason also to keep Kyle and the change management team in the loop.
+
+ Okay, so you can discuss this offline, brief, align who can talk with Kyle to Khaled and Asma, and then we can schedule it accordingly. Was Jan 20 the original date based on the old plan? Because many of the things now are being pushed. So we do have a buffer.
+
+Rocio Minguillon:
+Yeah, I mean the 20 was taking into consideration the new plan, but it's still not a problem having it like one week after. I mean, because we're still on configuration. Yeah, OK.
+
+Patel, Rahul:
+The only thing is if it moves by week, then probably our my travel plan will also get impacted to make sure I'm also there in that week, so I'll align with Hadi and you separately.
+
+Rocio Minguillon:
+Yeah, I think that's one of the reasons why I mentioned it's dependent on the plan. My point was very related to this. Did we have any feedback about the drilling involvement today in the session? I mean, are they going to provide us the time that we need to do now this quick demo now? And are they going to answer your points regarding the data, Rahul? If they give us any feedback today.
+
+Patel, Rahul:
+Bastian and Raul were on the call, so I'll let them answer.
+
+UNKNOWN_SPEAKER:
+Can you hear me?
+
+Bastian Osorio:
+Yeah, go ahead, Bastian. Yeah, I mean, of course, it was, I will say, a difficult session because I think some of the leads of drilling are not on the same page, but at when they come up with a task, they're responsible for giving or the final definition. So we will have a meeting, I think tomorrow, Thursday, if I'm not wrong, no, Thursday. Thursday, Thursday. With the key users to finalize the definitions.
+
+ So we are hoping we can close the open topics on Thursday. And with that, will close the design and we will be able to start working fully on configuration and data loading with the information they already provided. And that should be enough to also prepare the script and do the unit testing. I'm not sure if we will be able to even having the definition on Friday to finish all the required things because we will have at the end, just one week to prepare, to finish the configuration, load the data, and prepare all the unit testing.
+
+ So my, I don't know, actually here, you think the same, it will be better to be sure to move one week the unit testing, considering that at best, we will have the final definition this week, this Friday probably.
+
+UNKNOWN_SPEAKER:
+at best.
+
+Rocio Minguillon:
+Yeah, if we can make that decision like right now it will be good so we can give round.
+
+Naamani, Mohamad:
+Help me understand the context as we're building the solution. Is this a demo of the solution that we will finish like in sprint one outcome? Yeah, yeah, yeah, yeah. No, this session that we're trying to schedule on Jan 20. Is it a unit testing or it's a demo?
+
+Bastian Osorio:
+Unit testing. It's not a demo, it's the users doing the end-to-end of the main requirements of the solution.
+
+Naamani, Mohamad:
+Ah, okay, because I think also, Kyle, unless I misunderstood the way you mentioned it to Khalid, it was like it's a demo as opposed to a unit test. So this is like a live run of the solution, right?
+
+Bastian Osorio:
+Yeah, but without integrated data and with a small subset of data.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Naamani, Mohamad:
+So yeah, that's why I think we need to have that, uh, those dots connected and answering Khaled. Okay. Um, if we're not ready by then, but if in this case, if we push it by a week, we will have more data.
+
+Bastian Osorio:
+It's not about the data.
+
+UNKNOWN_SPEAKER:
+It's about definitions.
+
+Naamani, Mohamad:
+Ah, which is dependent on, uh, from AdNoc, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Naamani, Mohamad:
+Let me suggest one thing and you decide. Shall we tell Khaled tomorrow when we brief him on the purpose, etc? Let's tell him, look, we might be able to be ready by Jan 20, but we need more help, more support, quicker. Otherwise, we'll push it. So we'll use it also as a pressure point saying, look, guys, we're also trying to show you the system at the earliest, but there are certain things that we're not getting as an input.
+
+ Ultimately, we might push it anyway to one week after Jan 20, but let's start using this as a way to get the answers we need. It's going to be a tough couple of months for us to get everything. As you noticed today, Bastian, you said the right word. It wasn't an easy discussion on data, and it's always like at one point we need to reinvent the whole structure. So that's my suggestion. Let's brief Khalid, tell him if we want to meet Jan 20, we still need the following info.
+
+ So please help us out. And we can always push it a bit if we couldn't get, but we'll keep pushing. I don't know if you agree, but that's my, I think we need also to keep them on, I mean, the same mode, tense mode that we are in.
+
+Rocio Minguillon:
+Yeah, I mean, if you think that there is any chance to to accelerate the process and have all the things that we need to do it on the 20th. I think that's what I'm saying. Rocio you yes, yes, to confirm this.
+
+Naamani, Mohamad:
+Let's brief Khaled on tell him. This is where we are. That's what we have ready today, but that's what we don't have yet. So we need your help. Otherwise it becomes Jan 27 or whatever, which means other things might be delayed. I think at this point we need to, and as I mentioned in one of the calls, maybe every other day we'll have a 30 minute with Asma and Khaled to push them to help us with things that are delayed.
+
+ If we keep waiting till weekly status update or maybe some, I mean, ad hoc call, we might not end up in a good position. We do have a huddle with Khaled at 9.30, but it's early for the team. So either we push this time a bit so that you can join us, go SEM, or we'll do every other day only with Asma and Khaled. We'll have to decide. Let's see how it goes, but we need to go into more intense mode soon.
+
+ Otherwise, you will be delayed with many activities. Like we'll be talking on Hubble, but there is nothing we can do if we do not translate this to a decision or a call. Today we're handling it by adult calls, but let's say tomorrow we couldn't find some time on Asma's calendar or Khaled, then we'll lose a day. Today we barely had Abdul Latif joining the call. So let's be creative here. I think Raoul, you and Hadi can agree on the best way, and you can tell Khaled, look, we need this call.
+
+
+
+Patel, Rahul:
+Yeah, I agree. We need to have this call in the calendar.
+
+Naamani, Mohamad:
+Yeah, so it doesn't become a nagging session.
+
+Roumanos, Hadi:
+I'm mindful that, Kyle, you booked us a session at 6.30 to prepare for Asma's meeting. So what we can do is stay on this call. Whoever we don't need can drop off so that we don't jump in between calls.
+
+Naamani, Mohamad:
+Yeah, but Kyle had another point. And if anyone else had any urgent points on the list before, yes, we let everyone go.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+Kyle? Yes, the other point is the award submission documents. Aspen's following up with me now.
+
+Naamani, Mohamad:
+You're breaking up, Kyle. Can you repeat that? Can you hear me now? Yeah, but it's on and off, so please repeat.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+The last point is the award submission documents. To be provided feedback on. We had a discussion about it yesterday, and we need that to be finalized. I'm not sure what the status of that is.
+
+Naamani, Mohamad:
+OK, this is pending with us or with Khaled, with whom? Is it on our list to start with, Tara and Hadi? I don't think it's on our list.
+
+Roumanos, Hadi:
+So do you want us to add it to our list, Kyle, or is it something that's been closed?
+
+Naamani, Mohamad:
+Is there an action item? No, no, we should, we should add it because this is something that we need to run by Firas and Khaled. Firas knew about it during the Christmas week, but my point is the write-up is referring to previous, to things that happened in the past. So we would need to run this. So let me check the following, Kyle. From a content perspective, Is there anything you want the technical and the functional team to check if anything is over promised?
+
+ Or your only concern is basically it's in the past as if things are done, but the content is in sync with BRD, BPD, so there is nothing to worry about.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+So we've made updates to it and we need the accuracy of the statements to be confirmed. To the huddle every day since last week. So we sent it out last week. And yesterday we had a session on it after the huddle to all agree on what's still needed and to finalize it yesterday.
+
+Naamani, Mohamad:
+And I sent the final...
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+With whom you had the session yesterday, Kyle?
+
+UNKNOWN_SPEAKER:
+Go see him.
+
+Rocio Minguillon:
+Okay. Yeah, I was there. He explained that most of the questions are regarding the AI. I mean, most of the that's not questions because they're that's they base their their answers on the on the on the questions that we already answer and also on the VPD and the BRD. But there are I mean, they want us to check also the accuracy of the things related to the AI. But yesterday, Bastian didn't have the time to to review it.
+
+
+
+Naamani, Mohamad:
+So let me ask the following and more. If you have other stuff, let me know. Isn't this something more? If you read this knowing that you were also involved in BBT BRD development? Is there anything critical or higher priority on your plate? Or you can check this so that we're efficient.
+
+Fakhouri, Mohamad:
+I can, I can check this coming down money, but I you've also I will check it and he mentioned that the comments needed GoSCM's confirmation, because it's more AI-driven capability.
+
+Naamani, Mohamad:
+So this has already been done, and it's still, okay, so we still need, we're talking about the submission of award excellence, right? The procurement excellence awards, right?
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+Yes, but the problem is, Mohammad, they need to put together a video that's based on this document, and the due date is already next week. And Asma has been following up with me all this time on this, and I can't delay it any longer.
+
+Naamani, Mohamad:
+Yeah, but look, even today they didn't mention it in the status update, because honestly, we have priorities for the project. That wasn't planned, and we're happy to support, and I even mentioned this to Asma, in Firas's presence, as long as it doesn't delay other activities. Now, based on this, how much time do you think you still need, Rocio, you and Bastian? Is it finalizing the few points related to AI?
+
+ Because I think there are generally sections when I read it, there are certain things that are general. And that's why I thought between from our side, because we worked on BPD, BRD, maybe more can cover it.
+
+Roumanos, Hadi:
+But Let me check first, Bastian. Is it something that we just need to validate the statements that are being mentioned? Because if it's just validation and making sure that it's an accuracy of statements, it shouldn't take long, right? It should just say, yes, that is it.
+
+Naamani, Mohamad:
+But that's why, I mean, Rocio and Bastian, check this.
+
+Bastian Osorio:
+Yeah, I can take a look today. I can take a look today.
+
+Naamani, Mohamad:
+Before the end of the day, no worries. If you think it will take longer, let us know. Then we'll see. Maybe Mo can own this and only for the things that he's not comfortable will do this. Again, we just need to split so that we're more efficient. Otherwise, we'll tell us, but look, bear with us.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+Everyone is occupied.
+
+Naamani, Mohamad:
+So yes, please do this check, Bastian. And for the rest, in this case, other than what Bastian is checking Rocio, the rest is okay. So we can give a green light to Kyle saying that's fine.
+
+Rocio Minguillon:
+Yes, yes, definitely. Yeah, definitely. Yes, Kyle. I just have one question.
+
+Hector Palacios:
+Because you mentioned a video, I'm really scared about that. Will they request to make something for this?
+
+Naamani, Mohamad:
+No, at this point, no, the video is actually a voiceover, whatever is promised, not like a demo of the solution, etc. I think they're working on it. Correct me if I'm wrong, Kyle. But before doing the video, yeah, before doing the video. As soon as Bastian and Rocio will give us green light, I want to make sure Khaled and Firas are comfortable with whatever they are creating the video about or submitting.
+
+ Because again, it refers to previous, has achieved, has done, etc. And they might say, look, we're okay with this, but this is something that someone might come and say, show me this solution. We liked it. And then we'll be in an awkward position. Not going to be impacted because I didn't submit it as KPMG or go as CM. But Firas and Khaled might tell us, guys, why didn't you keep us in the loop? I mentioned this to Firas and Khaled, but now that we have the document almost ready, we'll send it in an official way, Kyle saying, and we'll talk to Khaled.
+
+ Dear team, this is the summary of the submission. The key point we'd like to highlight is that it referred to the project as if it's done. Please confirm you're okay. And then Asma can be Let them decide together. We have the project team, we'll send it to the two parties, digital and copying business, saying team, this is the latest. As soon as we have green light from Bastion, we'll work on the email together.
+
+
+
+Hector Palacios:
+Okay. Because I'm just very uncomfortable with the tone that these documents are taking related to AI. It is not an AI solution. It's getting AI little by little, but we are just starting. And it seems that the document put a lot of stress on that. It's like we are talking about a full AI solution. It's not the case.
+
+Naamani, Mohamad:
+This is my backlash. No, let's use this lens, Hector and Bastian, because the idea idea is no, this is not an AI solution. This is a solution that's helping in optimizing inventory, etc. It has many things and it leverages AI. This is not like when you start with a full. Full throat, I mean full fledged AI solution. No, this is a inventory solution that leverages AI. So yes, if any of this wording bastion and the factor you're also would like to check, let's make sure it's presented this way.
+
+ It's valid point. This is not an AI solution. This is a solution that has AI. It's completely different game.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+And just to bring comfort to you, Victor and Bastian, when we went through the document, we changed the wording of the document to align with, you know, answers that you provided on the FAQs about machine learning and AI. So we've tried to match it up with, you know, what you're saying, sir.
+
+Naamani, Mohamad:
+Okay, so it's already toned down, Hector, to your point with whatever I think you worked on the FAQs with whatever the tone is in FAQs. But again, this is empowered or leverages AI, but this is not an AI solution. Let's check it anyway. We have this final chance. Okay. So on those two, we have an action. Tara and Hadi, if you took this or you'd like to take note of this. Okay. Anything else before we let...
+
+ Need Kyle on this preparation for asthma, the next call that we're late for from the audience.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+I don't know how much recovery. It's a bastion of research, you can say. Awesome.
+
+Patel, Rahul:
+We'll need a bastion or Hector for a couple of points, which Mofakuri had. Before this huddle, we were reviewing those. So I would appreciate if a bastion and Hector.
+
+Naamani, Mohamad:
+Yeah, I can stay here. Yeah, it's that cold. So anyway, we had Raul more Hector. Bastion. Uh, and you need the Already Kyle, Edith and Bishop are there. OK, but Kyle, I'm not sure if it's me, but your voice is breaking up, so let's hope now it improves. Anyway, the rest of the team or whomever isn't on that second invite, you're happy to stay. You're welcome. You're welcome to stay. You're happy to do so, otherwise you can drop.
+
+ Okay, I might also listen in the background. I'll let you drive, Kyle. Your floor, Kyle.
+
+Patel, Rahul:
+Thank you, everyone.
+
+UNKNOWN_SPEAKER:
+Thank you. Can you hear me properly?
+
+Naamani, Mohamad:
+Yeah, now I'll let whomever is listening, I'll be listening in the background, confirm if they can hear you well. Because your voice is faint and breaking up, so maybe you can raise it to cover for the connection issue.
+
+Patel, Rahul:
+My voice sounds a little bit funny, like not completely able to make out what you're saying.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+Like a digital voice. I'll try to speak closer to the mic. So, based on the feedback this morning, well, thanks for your feedback, we've adjusted the in line with that VVAP. So what we have here is the bond planning, the inventory planning, the supply planning, and then we also have the additional roles at the bottom, which include the process champion roles, as well as that SAP RBT master data administrator.
+
+ We then have, basically here, this legend is indicating if there is a change from the VVP, or if there's no change from the VVP. Indicates if it's a new role. So as an example, it's in need at the bottom over here. We then have, so we have the role, we have the description, we have the day in the life mapping, which is the how and the frequency. So we have these columns to make them smaller. And then we have these sections here.
+
+ So in yellow is basically the, what we need to confirm with asthma and business. So we have the level, so we'll be able to select from the drop-down. Everything is marked with a dash at the moment. When we go through it, we can mark whatever level we need. We then also have the approval, which they will mark with an X, which states the approval password. We have the number of employees within that role, and then we want to have a discussion on the key users as well.
+
+ And then over here, we have the commentary on those roles, what we are checking the controls. Um, and then we have this. So we have this for tomorrow. We have this for chemicals, and then we have this for trillion inside as well. So it's a small on the balance of what you're looking for.
+
+UNKNOWN_SPEAKER:
+Um, you don't need to take any feedback on this.
+
+Fakhouri, Mohamad:
+I just have a few questions regarding, um, Requester and Planner. So, Bastian I understand that last week there was a discussion regarding separating the Demand Requester role into two parts. One is Requester, one is Planner. And the Requester is mainly confirming what they want. Uh at let's say at the plant level and uh the planner is more of a uh more of a strategic role where they will combine consolidate all the demand from an agc perspective is this uh a correct assumption yeah
+
+Bastian Osorio:
+yeah for the requester will in one AGC, whereas the demand planner will be in charge of multiple AGCs.
+
+Fakhouri, Mohamad:
+Okay, so Kyle if I can steal your, steal the screen for two minutes. I just need some, just a bit of clarification in terms of processes, if that's what we're looking for. For and how it will look like in the system.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Fakhouri, Mohamad:
+So basically, uh, yeah. So if we take, let's say MRO, right. And the BPD, what we have is the demand request and the demand manager, right? The demand requester will be responsible for analyzing the exceptions, run the forecast, analyze the forecast, and then do any adjustments. What we're saying is that, the requester, right now, will do that for their specific plant, and then it's gonna go through an approval, let's say, do we want?
+
+ Are we saying we're going to kind of go to their demand requester manager to approve based on their specific plant? And then. The demand planner, which is more of a strategic role. Will then review the consolidated. Uh demand plan so that it goes to inventory planning and supplier planning?
+
+UNKNOWN_SPEAKER:
+Not exactly.
+
+Bastian Osorio:
+The role of the requester, you have to think about the requester as a maintenance engineer, and his role is just only to collaborate in the short-term horizon, his demand. Whereas the demand planning will be in charge of running the models, check the segmentation, and look at the data on different planning levels, look at the demand on a more medium, long-term horizon. For the requester, his tasks are more simple.
+
+ Just get into the system and put a number. He can, of course, take a look at the forecast. That is not a problem. If he feels the forecast provides value, he can take a look at it and do his collaboration based on that, but it's not mandatory.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Fakhouri, Mohamad:
+That's fine. I see that need maybe for chemicals, but for... Let's say we split it into three parts, right? We have corrective, preventative and... Turnaround. For corrective, it's going to be automatic, right? The system will propose a demand based on the historical forecast. We're saying there's no need for the requester to do that because it's going to be more on a long-term horizon, so the demand For preventative, if the maintenance engineer, let's say, if they want to do the, let's say, midterm forecast, they can do it in S4 HANA because they have maintenance plans already.
+
+ Now, if they don't have maintenance plans, the system will propose a demand based on historical consumption. Then again, we're going back to the demand, let's say, planner. Where in turnaround, if they want to do, if they want to look at, let's say, also the demand, it's based on the work order type. So they won't even look at it. So there's not necessarily a demand requester. Or maintenance engineer that will log into IBP.
+
+ They can just go to S4 HANA. They can look at their work order types.
+
+UNKNOWN_SPEAKER:
+They're not necessarily uploading.
+
+Fakhouri, Mohamad:
+Can you keep this point of the demand for MRO in the back end load?
+
+Hector Palacios:
+The point is that we are not really sure if we are going to use it at all. We know that the frequency of the data is so low that talking about a forecast is nonsensical. So the point is we cannot confirm because we don't have the data yet. But as soon as we have the data, we are going to confirm if we are going to need that role or not at all. So if we can keep it as open, because it's depending on that.
+
+ But I don't think that we are going to use it as of now. That is my feeling right now, but I need to confirm with data. So if we can keep it Which role you mentioned? Demand planner, demand requester, all of that related to demand forecast. If we don't do our demand forecast for MRO, then there is no need for that role.
+
+Fakhouri, Mohamad:
+I do see we need to at least have a demand, whether we call it demand requester or demand planner for MRO, but that role will be solely based on reviewing the demand that is coming from IBP.
+
+Hector Palacios:
+The point is that we think that for most of the cases we are going to follow replenishment by reorder point. If it's reorder point, then you don't need a forecast. You just need the reservations in the actual. So that's why I'm saying that we are not sure if we are going to use it. I think that 99% is going to be reorder point-based planning.
+
+Fakhouri, Mohamad:
+Hector, how would you know what the supply planning type is from the demand planning, right? Let's say it's three order point or advanced planning. This is happening and the supply planning. It is not happening at the demand.
+
+Hector Palacios:
+You see, this needs to happen before. Because if we don't know that, that means you haven't before.
+
+Fakhouri, Mohamad:
+But in our process flows, we have like, the system will determine what is the planning whether it's reorder point or it's advanced planning type based on like the classifications yes yeah but that is kind of a segmentation you don't
+
+Hector Palacios:
+need you don't need to wait for supply planning for that you can do it at the beginning of the process so yeah okay let's wait for the data I think that we are wasting time focusing too much on this coin that we are not really sure if we are going to keep it or not So the point here, Hector, is we have the approved BPD.
+
+Patel, Rahul:
+We have communicated this process, and we are engaging chain management team, and we are creating new role, and we are going to AdNoc. Now, if you're going to AdNoc, and if you're not confident about whether the role exists or not, or what are the roles and responsibilities of demand, request, or planner, and this is something dependent, if you feel, is on data, which will be available later. And later if we feel the need to engage people, we'll be late in the project to engage those people.
+
+ So we need to make sure that if we are communicating to AdNoc, we need to give them clarity what is the role, who are the people, so that we can identify people and start the change management. If we don't do this sooner, we will be in a problem later.
+
+Hector Palacios:
+But what you are requesting is a lot. So if we start are onboarding this amount of people, because you know that there are many. And then we say, no, we don't need this role. That is not going to look good as well. So let's move because we are integrating. Just a minute. We are integrating very soon. Right now, it's like as soon as we have the CIBS connection that is going to happen anytime soon, we are going to do a first integration to check the quality of the data.
+
+ And if the data is indicating at all voices that this that the which currently are the engineers.
+
+Bastian Osorio:
+That activity is still there and it will change. Then regarding the forecast, Hector is right in the sense that in most of the cases, we won't use the forecast because it will be based on reorder point. But that doesn't mean that in the long-term planning, we won't have a forecast. What you're saying, Hector, is that we won't use the forecast for supply planning, but that doesn't we don't have a forecast.
+
+ We still we still will have an estimation for consumption for the next three to five years and that of course one tries to fly planning but they can still have a they can still can have a look at how much is going to be the consumption for the next three to five years to have a high level view of what is going to happen.
+
+Hector Palacios:
+Yeah yeah I know but I don't know if that requires the level of involvement of the people of maintenance If you remember the discussion we had with Nabil in their moment, it doesn't sound like they are system users. I agree that we can still have a forecast, but I'm not sure if we need to involve this amount of people for that.
+
+Bastian Osorio:
+That is a demand planner that can look at the forecast every quarter. Or something like that.
+
+Patel, Rahul:
+So Hector, my concern is that we are changing the definition of our process or the design, what we have defined in the PRD and BPD document. While we are changing it, we don't have the complete clarity because it is dependent on the data. And probably I will not feel comfortable talking to anyone from AdNoc if I don't have complete clarity on how the process or the design is going be if and at one point we want this clarity on users because this drives our sessions, the unit testing sessions.
+
+ At the same time we don't have the complete clarity on how it is going to be. So it's kind of chicken nugget situation for me and probably I'll not be able, comfortable to talk to either Asma or anyone from AdNoc if I don't have complete clarity on how the process is going to be.
+
+Hector Palacios:
+I will try to not just inventory because of demand, because there is not a dependency here. We can do pretty well inventory planning without the forecast. So I would try to push that your way. If you check the BPD comments for supply planning, they are very reluctant to the idea of a forecast. They always say, we are going to go from this based on the data. They are aligned with what we are saying right now.
+
+
+
+Patel, Rahul:
+Yeah, but then In the BPD and the process, we only pushed them that, OK, there is a change coming in. We need input from the maintenance people, and we need input from the end users, which are the owner of demand. Now, if we are going to change this thought process based upon data, then probably we'll fall flat on the face, saying that we said that, yeah, we need maintenance people. Now we'll go back and say that, no, no, we are not sure whether we need maintenance people.
+
+ Then eventually we may have something else based upon the data. So I don't feel confident if we are not sure how we are going to have this process. We need to eliminate the dependency.
+
+Hector Palacios:
+I mean, we cannot depend on data to have the decision and to have the decision for the unit testing. At the end, we need to have some user for the unit testing that should be more focused on inventory planning. And we cannot keep everything from going on because we don't have this clarity on the demand side.
+
+Fakhouri, Mohamad:
+But this is where I'm just having a bit of a hard time understanding. Because either way, whether it's reorder point planning or advanced planning, you still need someone to look at that demand.
+
+Patel, Rahul:
+You're still forecasting based upon historical convention, right? And then demand that development rise.
+
+Hector Palacios:
+But it's not the same because I mean, most of the data is like consumption every three years. I will have like one data point, two data points. There is no forecast out of that. There is no forecast. Even if I take a yearly level information, the forecast you can get from that is zero. So it's not a good approach.
+
+UNKNOWN_SPEAKER:
+It's not like that, guys.
+
+Patel, Rahul:
+So what you're saying, there is no forecast process to start with if we identify based on historical consumption, the segmentation that it is pre-order point planning or advanced supply planning?
+
+Hector Palacios:
+Yeah, and based on the data that we have, especially the fast movers, the data is awful. It's awful. I wouldn't create a forecast based on that. So my general idea is that if we bring the whole data, it's going to look even worse. So I'm not, I think that if we need to take a decision right now is to discard that problem.
+
+UNKNOWN_SPEAKER:
+It's to discuss what, sorry?
+
+Fakhouri, Mohamad:
+It is called.
+
+Naamani, Mohamad:
+I think if I may, guys, I'm listening with just a suggestion. Have that discussion with Asma, or since you're preparing for a discussion with Asma, tell her the summary of the data that you've seen and also the point you mentioned, Hector, saying, given how, I mean, low frequency and how limited the data is, it means the system anything, which means there is an intervention required. And based on it, you will agree who would do this because I think most point when he started and I would elaborate it is assuming the system is doing something.
+
+ And either you need to approve it. Someone needs to approve it, or it will go autopilot. Hector is saying no, there is nothing to forecast, so you need to have some involvement from a user.
+
+UNKNOWN_SPEAKER:
+Those two viewpoints.
+
+Naamani, Mohamad:
+Let's give this full picture to Asma so she can help and I mean also because ultimately we need them to be Asma and her team to be more involved and help us with the group companies or the actual end users. So explaining this point and telling her based on this we think we need to proceed as such and let's get her confirmation with who would be the responsible or the Does that make sense as if I heard the whole discussion correctly?
+
+ This way we engage with her or involve her in the decision rather than just telling her these are the rules. And we don't think there would be a forecast because of this. Let her understand the full picture. Again, that's my two cents.
+
+Patel, Rahul:
+Tell me if it makes sense. More what you said makes sense that we should go to us. Money involved her. The only concern here is that Based on all our conversation, we have kind of changed the design rules and responsibilities. And if we have to talk to us and try to explain what individual role has to happen, we don't have that clarity completely to confidently share with us that, OK, these are the rules, and these are the activities which these rules will do.
+
+ Because we don't have sufficient data to conclude on that, which means What Hector is suggesting is to park the complete demand rated discussion on the rules and focus only on inventory related discussions. Till we have this clarity.
+
+Naamani, Mohamad:
+But in that case, Hector, you need to bear in mind this would be a risk because they might say this is not what you told us.
+
+Patel, Rahul:
+Yeah, that's the point, because we've told them based upon the BPD.
+
+Hector Palacios:
+Yeah, yeah. We can say whatever we can say with the data we have in that coin. And I don't think that we were very general, like saying there can be two scenarios. If you have this kind of data, we can go with Forecast. The point is that now that we are seeing the data, it doesn't seem like that. But that is something that we know now that we have the data.
+
+Naamani, Mohamad:
+How the discussion should happen, Raul, to your point, that we will request a discussion. Not only on the roles, saying, as we reviewed the data, we identified a risk or an issue that if we fully rely on the data, given the quality, there is a challenge because there are certain things that will not happen through the system. Our solution is the following. Are you okay? Because even from the ad hoc perspective, they knew that the design, I wouldn't say a living document that will change 200% but there are certain things that will change.
+
+ As long as it's clear to her why and what would be the ripple effect in this case, or the impact, because it would require additional input from the users, I think let's not delay this discussion. If it's going to happen anyway and we need that change, let's then address it now if it's inevitable, Rahul. I'm with you if we're changing they might say what happened, but Hector is saying this is the reality.
+
+ That's the nature of the data. Give us better data or more reading, more history, we can improve. But with what we have right now, with what we've seen in the data, that's the best possible. Is that a correct understanding, Hector, of what you mentioned, that this is not, it's inevitable, it's not something we can change? Change the situation, right? Yeah. So maybe we just need to prepare that story.
+
+ Explain to her this is the reality. That's what we designed or we hoped for. This is what we noticed with the data. Our suggestion is to change the process in this way. However, do you have any other? What could be an alternative if we don't change the process that I will and more? The other option, if I understood Hector properly, is for their data to be improved or for them to have. A different type of data or more.
+
+ More you're breaking up by.
+
+Patel, Rahul:
+I don't think I can hear you.
+
+Naamani, Mohamad:
+What I was saying is what's the other option if we do not want to change the process? Uh, the only way is because the process or the original design was assuming certain type of data.
+
+UNKNOWN_SPEAKER:
+Either with. We are lost here. We need different data or.
+
+Naamani, Mohamad:
+Oh God, I mean I'm in the middle of Abu Dhabi where I can. Where better can the connection be? Can you hear me now?
+
+Patel, Rahul:
+Yes, let's try one more time.
+
+Naamani, Mohamad:
+OK, I'm saying do we have any other options other than changing the process? I know changing the design or this type of change might not be ideal but it's the reality of the data so we just need to give it the full picture and say this is where we are. I don't see any other alternative other than changing their data which is not possible.
+
+Patel, Rahul:
+The concern I'm having is do we go now and tell Adnog that now that we've received an approval on the design process and we go and say that the process itself what you approved is changing right away it may It should not impact a cascading effect on all the approvals or all the things we are trying to do, or even the milestones we are trying to approve.
+
+Naamani, Mohamad:
+What is the benefit of waiting? The situation will not change, right? Whatever do you discover now with the data will continue to be the same case, correct?
+
+Patel, Rahul:
+Yes, the benefit of waiting is that we will be able to proceed with the existing assumptions and then we can, based upon data, go back and tell that now that we have received data, we feel this is the additional change in the process.
+
+Naamani, Mohamad:
+Because if we make it look like a normal, like a normal discovery or evolution, because now you got the data, etc.
+
+Patel, Rahul:
+Yes, because if I'm just worried that if we go to AdNoc right away to Khalid and Aswan say that, by the way, the design you guys have signed is not no more. The design will will implement. We feel it that way. I don't know what it will trigger. It might also trigger saying that, okay, let's keep and hold on the design and until we have finalized it, then we'll not proceed.
+
+Naamani, Mohamad:
+Look, I understand your point. I'm not sure how Hector and the team, CM team see this. As long as delaying it a bit doesn't have any impact on us on how we're basically preparing anything and configuring the solution. Preparing anything else. It's just, in a way, Raoul's point, Hector, and the team, is just to give ourselves a chance for them to accept this change a bit later, rather than immediately shock them.
+
+ It's not going to change the action. It's only giving us a bit of a buffer where we're out of the design approval. Keep in mind, we still have Wave 2 design approval pending. Yeah, yeah. Into the configuration where we'll tell them by the way one of the things we mentioned during the design that also we everything depends on the quality and the nature of the data this is something we discovered and the course the corrective action is the following do you do you think that it's an issue Hector Palacios whomever is on the call sorry I'm on my phone I don't know who's on the call I think we lost both hector and
+
+Rocio Minguillon:
+bastian I think only rocio rocio is on the call we don't have I'm here and I'm also trying to relate this with the document that we talked today, Rahul, with Khushboo also, that we are pointing out these things related to the requirements of data and requirements of process. So maybe this is an opportunity to put this and then to update it.
+
+Patel, Rahul:
+We can update it as part of a partial document so that we can delay the risk of this negatively impacting our milestones, what we are supposed to complete in time yeah just a question so let's say we're trying to
+
+Fakhouri, Mohamad:
+we delay this how would this then impact the change management team because with um the change management team they need to have a finalized right role uh roles and if we're saying that if we're saying that okay we're gonna wait we tell the integration is complete I don't know Kylie you tell us like what how would this how would this impact you yeah that's right so this would also impact the change impact assessments a high level change impact
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+assessment that we busy with because we've currently got all the processes mapped out from the Aziz and the to be as well as the different roles so if this is going to change it also impacts AppDeck as well and we have a session for that plan next week and then it would also impact identifying all of the end users as well so it definitely does have an impact on the activities.
+
+Fakhouri, Mohamad:
+Sorry did you hear me? Sorry Kyle, I missed No, no, I missed out.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+I was saying that it would impact activities, things such as the change impact assessments, the high level one that we've been busy with, we've mapped out the ASIs and the 2B processes, along with the different roles that would impact
+
+Naamani, Mohamad:
+that, because we would have to wait on that. Let's be a bit realistic in this case, guys. This could happen anytime now we're aware of this change but also let's face it as we progress into the configuration there might be additional changes so is this a complete revamp of the document that you're referring to Kyle or this is a change on them related to whatever we have as a new role or a modification on existing road so is it manageable as a change yes it's manageable because again I don't want to because we will have changes and the comes the chicken and the eggs and we freeze everything, we cannot.
+
+ And the BRDs or the BPD, not the BRD, will continue to evolve. If this is an example of what will happen two, three weeks down the road that we're not aware of now, we might as well treat this item that we are aware of the same way and say, okay, let's cross that bridge a bit later. Let's give them, thank you, let's give them a few a week or so to enjoy this approval and see how we've done this. And then we'll bring them the news, linking this to the data as Raoul mentioned, saying now that we discovered, we connected to the data, we thought that we'll get more quality or more different nature of data, but this is what we got, which means we need to do the following.
+
+ Does this sound like a good story?
+
+Fakhouri, Mohamad:
+It is, I just... One last point regarding the changes. Hector, I'm assuming this is only for MRO, right? For chemicals, it's pretty straight forward. We still need, we still need those roles.
+
+Hector Palacios:
+This is more, yeah, this is... It's much more normal than... In this case. Okay, so the grey area is just, we're talking about just MRO.
+
+Fakhouri, Mohamad:
+Yes, MRO. But the rest, yeah, the rest of the categories, we are fine with whatever we have proposed. Yes.
+
+Rocio Minguillon:
+And Hector, the question that they were asking is, does this have any impact, if we don't define this right now, does this have any impact on the configuration? I will assume that no, but if you can confirm.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Fakhouri, Mohamad:
+Yeah, I don't think it impacts the solution, but it's more about change management.
+
+Rocio Minguillon:
+It impacts the change management. Yeah, the process of the change management.
+
+UNKNOWN_SPEAKER:
+Yeah. Yes. Okay.
+
+Hector Palacios:
+So, let's agree to... The reality is that...
+
+UNKNOWN_SPEAKER:
+Sorry, Rahul.
+
+Hector Palacios:
+The reality is that Tim was never on board the rig deal. The only we are meeting that we have was with this guy Nabi but they haven't been involved so far so I think that's kind of the change it's not that we put people on board and now we are saying
+
+Naamani, Mohamad:
+now you're not probably growing you know.
+
+Patel, Rahul:
+So can we then summarize how we want to proceed so that we are all on same page how we want to take this up? Do we agree that while we are aware of this change from a communication perspective with ADNOG, with ASMA, we'll continue with the current definition of what we have in current BPD? Is this what we are agreeing for MRO? So that we can continue working on with ASMA on the change management on the milestone approvals what we have.
+
+ And then as we interface with IVP in coming weeks, we go back and say that, okay, based upon our data now, based upon our analysis of data, we need to change from whatever we have agreed upon to something else so that we delay this communication. And then based upon this analysis of data, whatever change will happen to the change management or to the process, we take that change later. As we have this more clarity.
+
+ Is this something we should be doing?
+
+UNKNOWN_SPEAKER:
+Fisher, you have a question?
+
+Hector Palacios:
+So you're saying that we need to communicate to us right now that we need those roles. I think that that is a huge requirement. So I wouldn't say that if you're going to change it.
+
+Patel, Rahul:
+Sorry, can you say that again, Hector, what you mean?
+
+UNKNOWN_SPEAKER:
+Can you say that again?
+
+Hector Palacios:
+So what I understand is that we are going to say that we are going to continue the same with those roles.
+
+Patel, Rahul:
+Is that correct? With existing roles, correct. Demand planner and demand, demand requested and demand manager. The way we define it.
+
+Hector Palacios:
+Yeah, that is nice. Be a little request, you know, because I don't know how many people, but we are talking about a lot of people that she will think on this role, and she will think, okay, this is the challenge. Between all that I'm seeing here, this is the big challenge. That is what she's going to think. So, I will try to avoid that, because that will become the main conversation.
+
+Patel, Rahul:
+Why I'm saying we should continue, because we've already communicated this, we've already the change to the ad hoc leadership. We've highlighted this as it is. We've highlighted it at all forum that the maintenance team owns the demand. They should be involved and they should be part of the communication. So it's not that we are trying to give this input for the first time and they're not aware of it.
+
+ They are aware of it. We have communicated this, all the discussions we were having. Now, the only point we are saying is that let's continue with the same conversation we've been having. And probably a week or two from now, we will say that, okay, now that we have the visibility of data, we change some of the things, and the impact we initially assessed or the change we initially assessed where we need a lot of people, we'll reduce that impact, saying that we may not need all those people looking at the data, and we are changing the process to involve less people.
+
+ So eventually we'll have less people as you foresee, but then I don't want to shock them right away and delay or negatively impact some of the activities we are already doing. Because one thing, I don't have all the confidence and you also don't have all the clarity, which means if we want to communicate the change from BPD, we'll not be able to confidently communicate that change. That might impact some of the credibility that we've just now signed the document and now we're going back again changing it.
+
+ I don't want to do it. If we are going to make the communication about let's be confident about let's be sure about it so that we don't go back to them again and again for the changes okay I agree let's go with that way you
+
+Fakhouri, Mohamad:
+know now we're just one point about that because in the bpt we have for demand let's say a model we have two roles demand uh requester and demand manager which in the bpt it's we're stressing the demand is responsible for the demand forecast. Now, whether we want to split it, whether by AGC or by material group, this is a discussion maybe for tomorrow. Yes. But are we also going to bring this new requirement where the demand, let's say the demand planner, or no, it's just two roles, the demand request and the demand manager.
+
+
+
+Patel, Rahul:
+Let's continue our story, same as what we have in BPD, so that we can we can continue having the conversation with Asma, get some clarity on people. And it would always be better eventually that we are able to reduce the number of people involved in the entire process. But then we've already communicated with them that we need to connect with maintenance. We already communicated that there is a larger group of people which needs to be involved.
+
+ So let's continue the discussion, same as what we have in the BPD today. The number of roles. So from a change management perspective, whatever roles we have identified today, Let's just hide those demand-requested roles for MRO and chemicals, those two roles. We'll continue with the roles what we have in BPT defined. Overall responsibility does not change. And then we have this communication, conversation with ASMA, try to understand hard viewpoint, understand how they see this role impacting AdNoc, and then identify some key people for our the SIT and the UAT what we have, and then, sorry, not SIT or UAT, the unit testing we are planning to have, and then before the unit testing, which is in like two or three weeks from now, we will have the interface set up, and then probably we can go back to Asma and then have this communication in a much better way, the change from the original BPD.
+
+ Does that make sense to everyone?
+
+Daboul, Bisher (UAE):
+Sorry Raul, I just want to reconfirm just to make sure we all are on the same page. So what you're saying is we hide the demand request planner, the MRO request, the MRO planner, sorry.
+
+Patel, Rahul:
+Yeah, these are the rules we hide. We continue with the demand, maintenance demand requester and chemicals or operations demand requester as the the way we have in BPD today.
+
+Daboul, Bisher (UAE):
+So sorry, so that's what I want to confirm, because as far as I'm aware in the PPD we have a planner, manager, not requester and chemicals.
+
+Patel, Rahul:
+Can you quickly pull up that more, Fakhoury, if you have that with you, right?
+
+Fakhouri, Mohamad:
+Yeah, let's go to this point. Checking, let's see, demand. So we have operations planner and operations manager. So we keep this operations requester or chemicals requester. We can we can hide that.
+
+Patel, Rahul:
+Can you show your share your screen just so that everyone can have a look at it and have this confirmation? Operation planner operation manager. This is chemicals, right? Yes, and then and then. Yeah, Maro, can you go to a model? Can you zoom a bit?
+
+Fakhouri, Mohamad:
+Yes. We have demand requester and demand manager. OK. So these are the rules.
+
+Patel, Rahul:
+We will continue the discussion.
+
+UNKNOWN_SPEAKER:
+Is this clear to you? Yeah. OK.
+
+Patel, Rahul:
+So Kyle, then tomorrow's discussion with Asma, we'll continue with this assumption that the app The processes we have shared with AdNoc as part of our design document for BRD, BPD for Demand and Inventory. We'll use the same processes as reference and the roles we've identified as part of the process. We'll continue with this roles discussion. So the agenda with Asma is to get her feedback and clarity on the people involved for this roles, the cut at AGC level or at plant section level at what level she envisages the people who would be responsible for this activity, get a clarity on a number of people involved, approvers involved, and then get feedback on who would be the key people to be participating in the SIT, in the UT, which we are planning in a few weeks.
+
+ So that we have the starting point? Is this something you're okay with? Yeah, that's not wrong. So I think we've got most of those points in the template that we prepared.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+I just wanted to raise the point that I haven't set up a meeting with Asma yet. I'm going into the office tomorrow, so I wanted to first find out when everybody is available, and I knew we were going to have this meeting So I wasn't sure what time I should be setting up that meeting with her. So would it be possible for everyone to share their availability, or could we agree on a time now, maybe a few slots, and then I can let her know early tomorrow morning?
+
+ That's number one. And then the second part was, who would be leading this discussion? Because to be honest, I don't feel comfortable talking about all of these, especially when it gets to the technical questions the processes.
+
+Patel, Rahul:
+Let's confirm at least the availability for tomorrow.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+And I think the way, I mean Hector as well, I think we would need you on the call as well, so if we could also along with your availability.
+
+Patel, Rahul:
+I think the meeting in the second half is the best time for us. We do have weekly content review with Fadi but then Kunal can have that discussion and then I can focus with you guys on the chain management. I don't expect the content review with Fadi to take that long.
+
+Roumanos, Hadi:
+I see it as maybe a half hour or 45 minute discussion And I agree with Kyle, you're not to be the only person, you know, in those technical discussions, right? So never be on your own. Your role as change management is to be supported by the technical team at all times. So just take into account that the Fadi review could be maybe in half an hour, so that leaves room for you to play.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+OK, so from about half past two onwards, I can pass my pneumonia and see if she's available around then. Is that OK with everyone?
+
+Patel, Rahul:
+Two onwards, but we have a meeting at four. OK, so the meeting with SAP, then I think Kunal, you can leave the meeting with SAP, right? We have a meeting with SAP on security tomorrow. Yeah, yeah, yeah. So Khalid and I will join and then confirm that part. But if Khalid is going to be in that meeting, which means Asma, we will need Khalid as well in this conversation, right, Kyle?
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+Yes, but I thought you were going to go to Asma first, initially.
+
+Patel, Rahul:
+Because we have from 4 to 5, we have a meeting with SAP where Khalid would be there. So if we need Khalid as well, then that leaves between 2 to 4 time for us.
+
+UNKNOWN_SPEAKER:
+Or after 5.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+So let me ask you to person in the morning when I I'll propose these terms, and then I'll see what she says.
+
+Patel, Rahul:
+I'll let you know. And then probably Hector or Rocio, the call is going to be in the second half, so.
+
+UNKNOWN_SPEAKER:
+I can join.
+
+Patel, Rahul:
+If it is the second half call, you guys will be able to connect, right?
+
+Hector Palacios:
+Yeah, yeah, I can move whatever meeting I have, so we can join to that one that is more important.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+OK, and then. Um, is the template okay? Or is there anything else that you guys feel needs to be added into that template?
+
+Hector Palacios:
+No, I didn't get that.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 2:
+The template that we put together, which is going to be discussed the Excel, is everybody comfortable with what is on that Excel? Or do you feel that there's anything else that we need to add in?
+
+UNKNOWN_SPEAKER:
+I think it's okay.
+
+Rocio Minguillon:
+I mean, all the columns the information that we need, the ACG, the role, the key user.
+
+Patel, Rahul:
+I'm also finding the template.
+
+Hector Palacios:
+At least what we discussed is last two sessions, so I guess that is fine.
+
+Patel, Rahul:
+What we discussed, we'll hide the rules, what we don't want to show right now, and then we'll use the same template.
+
+UNKNOWN_SPEAKER:
+Okay, we have a plan.
+
+Patel, Rahul:
+Okay, then we have a plan, then we'll wait for your confirmation. When we'll have this meeting with Asma, and then me, Mo, and Hector would be available for you to support technically.
+
+Conference Room (Campbell, Kyle (UAE)) - Speaker 1:
+Okay. Okay. Thank you, everyone.
+
+Patel, Rahul:
+Anything else or we can conclude this call then? No, that's it from us.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Patel, Rahul:
+Well then, thank you everyone. Have a nice day. Talk to you guys tomorrow.
+
+Hector Palacios:
+Thank you.
+
+Roumanos, Hadi:
+Thank you.
+
