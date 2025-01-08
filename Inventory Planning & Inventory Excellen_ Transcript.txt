@@ -1,0 +1,776 @@
+Inventory Planning & Inventory Excellence - Drilling 
+lun, 23 de sep de 2024
+
+0:37 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Oh.
+
+0:38 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) bing Salaam alaikum. Abdul Salaam alaikum, everyone. Abdul, can you request the drilling users to attend the meeting, please?
+
+1:30 - Unidentified Speaker Today?
+
+1:31 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Yeah, this is for drilling part.
+
+1:39 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) ensure for our own offshore and onshore. Our gas all of them to be here because the same question that has been raised to the, uh, uh, more, uh, items. It will be the same here. Some clarification need to be provided by them.
+
+2:01 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay As for our understanding, actually, I'm not so last session was demand planning.
+
+2:07 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) This session is for inventory control for drilling items in the inventory teams.
+
+2:18 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Like you and who's handling the activity. Yeah, me and Ashley can cover mostly. Anyway, we'll try. That's the reason we didn't forward this to you.
+
+2:27 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) I mean, even I know you will cover, but I want the others to be here even to understand the project and what we are doing.
+
+2:50 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So we'll give it three minutes and then we can start.
+
+3:01 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, yeah, let's wait for a few minutes. Keep his hair and you.
+
+3:38 - Conference Room (MM- SKEC2 - L08) - Speaker 1 We'll start in a minute actually whoever comes in.
+
+4:05 - Conference Room (MM- SKEC2 - L08) - Speaker 2 With 35, we will start.
+
+5:20 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Ahmed Aboula. Abdul, can we start or are we still waiting?
+
+5:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, I think we can start. Ashik is here, Ashik?
+
+5:33 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) Ashik only. Ashik here, we can start.
+
+5:40 - Bogdan Andres (ADNOC Offshore - DMET) Let me invite him again.
+
+5:43 - Unidentified Speaker Hi, Abdul.
+
+5:46 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Abdul, can you hear me?
+
+5:49 - Bogdan Andres (ADNOC Offshore - DMET) Yeah, yeah, I'm there. And with that, just to let you know, we had the fire drill in the building.
+
+5:55 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) We're all moving out.
+
+5:57 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Oh, OK.
+
+5:58 - Bogdan Andres (ADNOC Offshore - DMET) Yeah, another fire drill, a fire alarm. I don't know what's going on. That's fine. Fine. You can leave the meeting.
+
+6:04 - Unidentified Speaker OK.
+
+6:12 - Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ) I'm trying to pull Aysha. Meanwhile, we can start in case if there is any question related to ensure we will address to him through chat box. Ashok, he's with us now. So Abdul, who from Solar Gas, we can also invite him. But we can start, meanwhile.
+
+6:33 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, Solar Gas and Helangash, actually, what we told them, and Accio, we'll make a dedicated session for them. So after this whole session, I already spoke with Khalid. We'll make one dedicated session for these three companies.
+
+6:48 - Conference Room (MM- SKEC2 - L08) - Speaker 1 I believe everyone now is familiar with the overview or we should want to go over it again.
+
+7:05 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Any new journeys today?
+
+7:09 - Conference Room (MM- SKEC2 - L08) - Speaker 2 are aware of the project.
+
+7:10 - Unidentified Speaker I think everyone's aware.
+
+7:20 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Everyone is aware, right? Of the project.
+
+7:27 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Abdul, do we need to go over the overview again, or we can directly jump into a discussion?
+
+7:33 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) We can directly jump.
+
+7:34 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Directly jump, OK. Thank you. Let me start the recording also.
+
+7:40 - Conference Room (MM- SKEC2 - L08) - Speaker 1 All right, so for today's discussion, what we're focusing on or what we want to focus on is now the inventory planning as well as strategic planning. Week. We heard from onshore and offshore how they created schedule in the EWS. And for onshore, the material baskets are listed in EWP. And then there's the demand. The demand is done in Excel sheet. For offshore, slightly process, the baskets are maintained manually, so then everything else is on an Excel sheet. Now, what we want to understand is now how is this handover from, you know, the demand planning to inventory, what happens next? And also, we saw from last week a lot of the materials, some of them have generic SAP number, but they don't necessarily specify or for the same material number, you can have different supply part number. But in the Excel sheet, it only lists the supply part number, not the SAP material.
+
+9:17 - Unidentified Speaker This way they can see. Oh, okay.
+
+9:19 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yep, sure. So maybe Abdul If you can give us this overview from ROSA's responsibilities, what falls into the demand planning team for onshore and offshore, and then if there is an inventory planning team for onshore, offshore, or if everything from the drilling team takes care of the inventory as well.
+
+9:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay, I'll start from the discussion where last time we stopped. We elaborated up to the material allocation plan, the last session. So you'll clearly understand how to arrive on the material allocation plan in both onshore and offshore. So we'll press the sample document, and I will hand over to you. So now, once we've done the material allocation plan, then jointly, the team is determined which material to order. So over the long term, we are talking about the first long term plan. Long-term plan, normally the two to three years, we'll estimate this much quantity required. And so we gather all the information by category by category, like OCTG, then wellhead. We are actually now measure five categories under the VMI. I'll just tell the categories. Download completion equipment, it's called DCE, wellhead. Then a line of hanger LH, then cementing accessories CA. So these are the major category under the VMI. Apart from this one, we have drilling fluids, which is mud chemical, and drill bits, and some other small supplies to the well. So these are the major category. Once we gather the quantity by item by category by category, then What is the next step? So we'll arrive at the ordering quantity over the period for example So the in the beginning of the any VMI conductor, so we'll estimate Like what quantity required I'll go with one example like 1338 casing So this 1338 casing over the period we need around for example 200,000 joints So this 200,000 joints, this is the total estimate for the offshore and onshore Then the sorgas and elongation. It's all consolidated requirement. We'll get it by commodity and the size. For example, 1338, we have two, three types of casing, like weight, material are different. So we'll unify this all. Finally, we'll end up with one material number, which is called tendering material number. It's generic spec. Here, we'll say the premium We will not specify any connection. Then the size of the parameter will be listed over there, like the weight, material grade, and so on. So once we've got all the generic details, then we're ready for tendering. So then what we'll do normally, we'll make a PR, purchase request, or we'll hand over over this requirement to the category team. So maybe I'll explain the first scenario on the VMI tender, how we've done. Once we've done the...
+
+12:56 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Abdul, just if I may, if you can... So I know, yes, last week we talked about the demand classification. Mentioned here that you look at the long-term plan and then from there, based on the categories, you do the planning. Where is this long-term plan? Is it in SAP or it is this Excel sheet that the drilling team have put Yeah, you mean the plan as such?
+
+13:45 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) It would be the panel calculation deriving from the material allocation plan. From the material allocation plan, we can able to determine how many items to be ordered and how many items on the supply and how many items in the stock, isn't it?
+
+14:10 - Conference Room (MM- SKEC2 - L08) - Speaker 1 This is all in Excel, right? It's not in SAP, right?
+
+14:14 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, the planning is not in SAP, no.
+
+14:22 - Vignesh Perumal (ADNOC Group D&CS) Is this in Excel, or do you have any other system where you have the business plans, Abdul?
+
+14:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Up to the detailing on the system, So onshore we have like the up to the basket level. That's what we have seen last time. So the remaining the the last level material allocation plan in Excel. We actually can confirm so the final one in Excel in both companies.
+
+14:54 - Mohammed Ashic (ADNOC Onshore - PD) Now we have we have that forecast within the AWDP. The like last time when they explained. And based on the number of well and the basket of material they will generate the requirement for each item for a three to five years period. So that is generated through the system. But these are like a generic item number. So these generic item will have a corresponding specific item number within SAP where we have the existing stock as well as on order. An agreement with supplier. So this is how we have the mapping.
+
+15:40 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This one in Excel or in the system or the final deliver what we have mentioned generic material number and by supplier breakdown and all generic is defined with no generic is defined within the WDP as well.
+
+15:53 - Mohammed Ashic (ADNOC Onshore - PD) So there is they have linked the generic number For most of the items, there were some, like last time where they're showing, there were a few items which did not have generic item based on the latest tender. Apart from that, most of the items have been mapped. The bill of material is mapped with a generic item number with SAP.
+
+16:16 - Vignesh Perumal (ADNOC Group D&CS) Ashik, when you create a reservation or a purchase requisition in the SAP, is it a generic material number that you create the purchase requisition, or you Within SAP there is only actual demand not the forecast demand.
+
+16:32 - Mohammed Ashic (ADNOC Onshore - PD) So on the alternate item only there is reservation. So when they are going to withdraw for the next three months they will raise the reservation on the actual number.
+
+16:46 - Vignesh Perumal (ADNOC Group D&CS) So you are doing all the planning you know in another system and whenever you want to withdraw the materials you are actually coming and creating the reservations with that alternate material, right?
+
+16:59 - Mohammed Ashic (ADNOC Onshore - PD) Yes, exactly.
+
+17:01 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) But for what number? So now to better to segregate two process separately, long term plan and short term plan. That's what we used to do normally. So whatever you are doing, the MR and all is coming under the next part, which is short term plan. Which is six months window. Almost okay so in the beginning so the initiating tender that's what we are explaining now the first we want to initiate a tender so this tender initiation will go with the generic number this generic number and quantity will derived
+
+17:37 - Mohammed Ashic (ADNOC Onshore - PD) and what are the requirements to just to correct you even if you have the generic demand on generic number we need to identify like the what for like what is the existing stock availability and existing order suppose now if you are planning for five years we should know this generic number how much is already existing so we know what is the required quantity when we are doing for five years or ten years plan so even then for that also we need to know the we don't need to just based on demand we need to see what is existing stock for the tender Tender planning as well.
+
+18:21 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, the same thing we explain that maybe you see what we do. We will complete evaluation. What is available in stock each company? What's available on ground and what's the requirement? This difference normally we will calculate based on the generic plan and what is the requirement. This will be the final demand.
+
+18:42 - Vignesh Perumal (ADNOC Group D&CS) Yeah.
+
+18:53 - Vignesh Perumal (ADNOC Group D&CS) when you are going for a tender will the tender contain the generic material yes or no yes yeah tender will be generic material so you will actually so in very simple ways you have maybe a business plan for the next four or five years what you are going to do is you take into account your requirement plus already available on hand stock you know in the SAP system the delta you know is going to be your need for the next five years and you are saying that you will prepare a tender with those delta which is going to be floated to the market you will you will you know complete the tender and whatever and the next part is you know whenever you require the material you'll create the reservation for the and you will consume. Is this in short the process that you do Abdul? Yeah, in short yes. Yes, OK.
+
+19:51 - Conference Room (MM- SKEC2 - L08) - Speaker 2 And all all the things are outside the system, except when you're creating a PR.
+
+19:56 - Vignesh Perumal (ADNOC Group D&CS) For the tender, you see that the thing is, see from the from this project perspective, Abdul and Ashik, this is this is one we always you know. No, we know that there is a there is a system called as EWDP. What happens there? What do you do over there in that system? So why I'm asking this question? If you're going to have all these in Excel sheets, then the Excel sheet will be an input to IDP. But if you're having some system, is there really any connection required in this project to that system? All this we want to understand. What happens system, EWDP.
+
+20:40 - Vignesh Perumal (ADNOC Group D&CS) You have two systems, EWDP and EMRP, correct? Is probably the planning will happen probably in the IBP system, but EWDP, what happens there?
+
+20:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, I want to understand that.
+
+20:55 - Conference Room (MM- SKEC2 - L08) - Speaker 1 If I may, let me just share my screen I have. So based on last week's discussion, we've kind of separated. Let me just try the phone. And then, Abdul, if you can please correct me here if I'm wrong. But basically, EWP is being used for onshore to determine the here. The materials in those material baskets, right? But then everything else, the material forecasting, this happens outside of EWP. From onshore perspective, the scheduling is in EWS, and then in those, in EWP you contain, you have the basically all the materials and For those material baskets for offshore. Um, I would. And you please correct me if I'm wrong, not necessarily using E W P because, uh, the requirements are slightly different. They cannot Fully integrate with E W. So the baskets are being done outside of the system, and they're doing it in Excel.
+
+22:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) In Offshore, it's implemented only DWS.
+
+22:41 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Is still not under implementation. I think they're going for some upgrade, and so far not implemented. So this is the current situation in Offshore. So from DWS, this is the bar chart, so it's available in the system. Then they're extracting in Excel and after that they're making everything in Excel. This is the current situation in offshore. Yes, yeah, maybe Ashik if you can just confirm all the commodity in the EWDP basket and everything available and the EMRP also maybe I think in the last time Matthew shown the Happening in the excel sheet. Maybe it's available in the MRP live. Maybe so as we said So we want to connect in the three system in this case.
+
+23:26 - Mohammed Ashic (ADNOC Onshore - PD) Otherwise now see MRP will keep aside because that's not been used now after the VMI because we have problem with integrating with supplier VMI quantities And that's why we are not currently using EMRP. So keep that aside only we are using DWS and eat a WTP for the well planning, rig scheduling and basket of material and forecasting.
+
+23:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, EWDP also what I understand last time is not fully up to date for the all the commodity. Still there need some more work over there.
+
+24:02 - Mohammed Ashic (ADNOC Onshore - PD) Is it correct? Yeah, EWDP only during the VMI. I mean they have code all the generic item is linked and and the basket of material also each generic number the issue is that for completion since they were around 5,000 or item they have not created the generic number for completion item but the remaining wellhead OCTG all has got a generic number that's why in that basket they have they had kept blank item code there.
+
+24:39 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Other than that all baskets are available now?
+
+24:46 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So in this case we need the connection in the DWS and DWDP.
+
+24:50 - Unidentified Speaker Yeah.
+
+24:52 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) And also in parallel maybe we can collect the Excel sheet where we can compare in both actually. So we don't want to see any missing part in the system flow. If they're not fully updated Otherwise, we have to depend on the Excel sheet. Isn't it?
+
+25:15 - Mohammed Ashic (ADNOC Onshore - PD) Yeah, if we have some connection issues, and if you want to speed up this project, maybe in the meantime, we can have some uploading function through Excel where we can upload these forecasts. And then do the review.
+
+25:41 - Santosh Kumar Sharma (ADNOC Group D&CS) Hi Santosh from KPMG. During previous week conversation, we heard something from the offshore team. The material basket, they can't make it finite. So they say that keep on it's dynamic in nature. Will the EWP solution which we are talking about takes care of that dynamic update of based on the different risks or the different fields on which we are working? Will that help?
+
+26:21 - Unidentified Speaker Nashik, can you answer?
+
+26:25 - Mohammed Ashic (ADNOC Onshore - PD) that the end-user can confirm because as for onshore is concerned all the baskets are within the EWDP but offshore was saying they have they're keeping it they maintain excel sheet so we don't know if EWDP if implemented in offshore
+
+26:43 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) will solve this issue I'm not sure now see so we cannot wait because the last 10 years the under implemented And so the last four years aggressive. So that's reason offshore we can recommend for the Excel sheet. That's fine. So we can confirm only DWS will connect for offshore. Even the DWS also, they're ready to provide an Excel sheet.
+
+27:11 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So what we can do, we can connect in and compare in the DWS area, which is fully working in offshore and onshore. The second layer, which is EWBP, so offshore not implemented. So, that's a big huge enhancement in the system expecting, I think, still under the tender stage. So, anyhow, we'll take this update. So, for our, during our project, what I understand, it will not come. So, they'll provide an Excel sheet for offshore. Okay, understood.
+
+27:48 - Conference Room (MM- SKEC2 - L08) - Speaker 1 All right. Another point, just for clarification from inventory planning. So we saw in EWB that the materials don't have an SAP material number yet. But yet, we have the order quantity of what we actually need for the specific material, which is in a material basket. What happens next? So let's say, right, we looked at, we look in SAP, we don't have enough stock, or we don't have, we don't have that material in SAP. Then we create the material, and then, We issue a PR.
+
+28:45 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, we'll make a PR for that. For the tendering purpose. So in the once we now we are moving to already we're done with the category. The category we are not issuing a PR because it's coming from HQ and at the time the there is a no integrate system We done the most of the tender is before SAP so it's like we should a tender document after the analysis through category management.
+
+29:25 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Then the consolidated list will provide to the category management then this list and it will tender out. Then we'll receive maybe the invited suppliers, like technical offer in the beginning. After the technical evaluation, we'll invite for the commercial offer. Then commercial offer after evaluation. So we will choose either two or three supplier based on the required, like the strategy. So if it is award to three vendor in the strategy, then we will get three vendors. These three vendors we will award and once we award these three vendors, we'll create independent material number for each vendor.
+
+30:24 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Even though material is the same, right? But it's just from different suppliers, right?
+
+30:38 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I'm going to go.
+
+30:45 - Mohammed Ashic (ADNOC Onshore - PD) No, no, we can't hear.
+
+30:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, OK. Yeah. Sorry, it's going to be so far from me. Now the the tender whenever we make the the final requirement that For category management, we prepared the tender document spite outside system This is the last time happened then this tender document the category management that put in that market and After that technical evaluation and commercial evaluation we place to the three vendors based on the strategy So if it is true and there is such a in strategy, then we allow to the two vendors In OCTG, we have three vendors as per strategy. In wellhead and other commodity, we have two vendors. And once we award, then what we do, we will make a separate material number for individual vendor. Because at the time, each vendor have different technology, different description. So we cannot maintain in the single material number. For example, the tanneries is a major supplier for us. Tanneries have their own connection and their own material properties so then we'll describe everything for tenorizing the one single material number and the same item if it is going to the other it another supplier and the third supplier is barbini then we'll make it individual material number so this would be the branded material number we call so there will be a connection between this the tender number to the the alternative material number this three Who takes care of
+
+32:22 - Conference Room (MM- SKEC2 - L08) - Speaker 1 that? Who's responsible for that? Which team?
+
+32:27 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So it's an invented team and along with the material engineering team. So this all we've done at the time as exercise under the category management.
+
+32:48 - Santosh Kumar Sharma (ADNOC Group D&CS) So, Mr. Abdul, a follow-up question. Is this category management a central team or a decentralized team spread across onshore offshore entities? It's a central team. It's a central team. And all of these tender documents are also, after consolidation, a single document for every entity.
+
+33:09 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This is the same as a single framework agreement. We'll establish a single framework agreement. Then this from the framework agreement, there will be child work orders for the individual group company.
+
+33:28 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) That's in the individual group company like agreements.
+
+33:39 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So then, from that, the particular, the final LTPA or agreement, we are making release orders.
+
+33:49 - Conference Room (MM- SKEC2 - L08) - Speaker 1 You're making a...
+
+33:52 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I didn't hear you.
+
+33:55 - Unidentified Speaker We are issuing the pure release.
+
+33:58 - Conference Room (MM- SKEC2 - L08) - Speaker 1 OK.
+
+34:01 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I'll do one thing. I'll share my screen. One second.
+
+34:16 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) I think if you want, you can elaborate more. So I'll find the document for you.
+
+35:39 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Abdul, do you wanna, are you sharing your, do you wanna share your screen?
+
+35:46 - Mohammed Ashic (ADNOC Onshore - PD) Abdul is I guess is on hold. Any other specific question that you have that I can elaborate?
+
+35:53 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Okay, so let's see if we can summarize.
+
+36:08 - Conference Room (MM- SKEC2 - L08) - Speaker 1 A lot of this is happening, let's say, outside of SAP. What SAP will have is only the stock, let's say.
+
+36:21 - Mohammed Ashic (ADNOC Onshore - PD) Yeah, stock and all the procurement information.
+
+36:26 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, the procurement part will be...
+
+36:30 - Rahul Patel (ADNOC Group D&CS) Essentially, there will be planning parameter maintenance ap from a inventory perspective right like safety stock or your reports everything because everything is essentially happening outside and you are just processing the uh purchasing part of the uh yes planning so it's an execution only no planning yeah planning is outside sap system so so the so is it safe to assume that no metal master parameters are getting updated by the MDG team, master data team for all the drilling materials.
+
+37:04 - Mohammed Ashic (ADNOC Onshore - PD) For the planning parameters, yeah, but other parameters are populated.
+
+37:08 - Rahul Patel (ADNOC Group D&CS) Yeah, from an execution perspective, right from our inventory planning, the point of our subject where we are trying to analyze from a planning perspective inventory. So there is nothing maintained in SAP from a planning perspective, only execution related and all the data basically which is driving the planning is outside SAP.
+
+37:25 - Mohammed Ashic (ADNOC Onshore - PD) Yeah.
+
+37:29 - Conference Room (MM- SKEC2 - L08) - Speaker 2 What about the criticality of the material and these parameters? Slow, fast moving, these are all not maintained.
+
+37:37 - Mohammed Ashic (ADNOC Onshore - PD) Those are those are maintained.
+
+37:39 - Khalid Sarfaraz (ADNOC Group D&CS) Those are maintained, those are maintained.
+
+37:43 - Rahul Patel (ADNOC Group D&CS) But even if those are maintained, whether those are used because it is not essentially doing anything right?
+
+37:50 - Khalid Sarfaraz (ADNOC Group D&CS) It's for reporting purpose only.
+
+37:52 - Mohammed Ashic (ADNOC Onshore - PD) No, it's based on actual consumption those those parameters are based on actual consumption, so it has some relevance.
+
+38:00 - Rahul Patel (ADNOC Group D&CS) But but the question is, even if you maintain and you have this data for drilling materials, but it will not drive any decision or whether you're pulling this data from SAP and then feeding into the planning system, which then utilizes this information for better planning next time.
+
+38:16 - Mohammed Ashic (ADNOC Onshore - PD) No, for planning will not use. We we will need this information for our age, say for for like slow. Fast moving. This will be required for aging analysis yearly for even for any material, be it drilling also. Yeah, so for planning purpose, no, I mean planning is based on its. The forecast demand is outside the system, so we we take the informations within SAP like those inventory and procurement information and then we do planning outside the system.
+
+38:48 - Rahul Patel (ADNOC Group D&CS) So right now, just now as you mentioned that aging is one of the things probably will do the analysis based on the parameters that you mentioned. But then the feedback of aging, whether it goes back to the planning team saying that you're planning something more because it is leading to aging. So you're not forecasting correctly or you're not planning correctly, which leads to more inventory, which leads to aging. And now this aging feedback has to be incorporated back into planning so that we don't end up aging in future again, right?
+
+39:19 - Mohammed Ashic (ADNOC Onshore - PD) That is incorporated but not system wise. Maybe we provide this information as reports to them. So they may consider this information for their planning.
+
+39:30 - Rahul Patel (ADNOC Group D&CS) So might or is happening?
+
+39:33 - Mohammed Ashic (ADNOC Onshore - PD) No, it's happening. So we send these reports, information of movement, non-moving items to the drilling users. They know which basket of material that is not moving or it is for special specific projects, then they would take action against those items when they are doing the planning. But that is manual out of not within the system.
+
+39:57 - Rahul Patel (ADNOC Group D&CS) So so probably there is no way to track whether how efficiently this input is taken into consideration when the actual planning is happening, yeah?
+
+40:09 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So so they would take action You would provide the reports to the demand planning team, and then they would take into consideration whether the site is...
+
+40:23 - Mohammed Ashic (ADNOC Onshore - PD) Yes, yes. But that is manually, not system-wise.
+
+40:30 - Santosh Kumar Sharma (ADNOC Group D&CS) So, also...
+
+40:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, I put it there on the slide. Maybe we can discuss through that.
+
+40:39 - Mohammed Ashic (ADNOC Onshore - PD) And also, like... The moment and all depends on the basket of material, so so number the type of well they have already planned. And the basket of material defined would automatically pop up when the type of well comes in the planning. So I don't know how they can avoid that if because if that if that plan is already planned. It that those material will anyway be ordered. Irrespective, if there is concern not because that is planned in the next year.
+
+41:24 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) If you want I can go through this slide.
+
+41:36 - Khalid Sarfaraz (ADNOC Group D&CS) looks like an old document, right?
+
+41:40 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly, this is what we have done, because at the time, so the current, the category management process, we initiated in 2015 implemented in 2018. And this is established all the agreement for the some category for 5 years, which is going to end soon for OCTG, then other category like valid and all, we established for So this is the current the tender happened through this. So here only the difference mainly the company at the time. At the time, so Adma, Zadko and Adko and Ellacent. This is the old name available at the time.
+
+42:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) It's not syncing, one second.
+
+42:47 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) There's some issue on the...
+
+42:51 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Connect the remote link.
+
+43:08 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Another big question. Abdul, if you're loading in.
+
+43:15 - Unidentified Speaker Yeah.
+
+43:17 - Conference Room (MM- SKEC2 - L08) - Speaker 1 The process. How do you determine whether the material is going to be VMI or it's going to be AdMob validation?
+
+43:29 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, this is we've done analysis. This is what we're going to show here. So this document will explain. We made a study, then based on the study, so we determine which are the commodity to go. For example, we prioritize the most spent category, the OCTG, Based on spend analysis, what we prepare that.
+
+43:49 - Unidentified Speaker OK.
+
+43:51 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) And we are in the process of next renewal or re-tendering of all this multiple category. And soon we'll initiate this process as well. Because it's going to finish the period. Then we'll establish once again.
+
+44:12 - Conference Room (MM- SKEC2 - L08) - Speaker 1 And if it's via my manage. How do you document this in SAP?
+
+44:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) It's already documented as a framework agreement.
+
+44:27 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So we have framework at HQ level. Then we'll make a child under the group company level.
+
+44:34 - Conference Room (MM- SKEC2 - L08) - Speaker 1 But do you have, let's say, virtual storage locations or Like for example for material X. It's setting It's it's vendor managed how how would you know that this material is an SAP that it is VMI Yeah, so actually This is we issued exclusive number for VMI So, this is the number which are material number
+
+45:11 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) you are using only for VMI purpose. Then, secondly, whenever... Are you sharing something? Actually, my PC is stuck. I'm going to restart. So, maybe I'll explain. Ashik, do you have any document to share for the instruction manual and all?
+
+45:37 - Mohammed Ashic (ADNOC Onshore - PD) now see again here offshore and onshore we have different way of differentiating the VMI in onshore we are maintaining separate storage location so VMI items within the VMI stores are identified through separate storage location while in offshore it is they since it is a different item number they maintain it in any any of the storage location and they had to identify through the specific item number. There is no specific storage location for VMI item.
+
+46:11 - Rido Mardian (ADNOC Sour Gas - Procurement) Yes, the same also in Sorgas. My name is Rido from Sorgas. I was following from the beginning also. For Sorgas, we not very have regular drilling campaign. So for the VMI, we are the same like I'm not concerned maintain. We are maintaining the same number, but only under storage locations difference.
+
+46:32 - Mohammed Ashic (ADNOC Onshore - PD) So you maintain separate storage location? Location, right? Yeah, yeah, yeah. So you have supply virtual locations.
+
+46:39 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, OK, so if I were guessing onshore, offshore it is based on the material. Let's say number right now.
+
+46:46 - Mohammed Ashic (ADNOC Onshore - PD) See all have the all have different item for VMI. All three companies, some of them are standardized between the companies. Some are different because they are different spec. So for the VMI Framework Agreement, all the item codes were were newly created for VMI so it's same for all group companies but for onshore and surrogates we maintain separate storage location to again differentiate the VMI item while in offshore we don't have such differentiation it is just that through item number we have to identify.
+
+47:23 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Okay so all of them have the same item number range but on Only, but offshore only has this, only does this, they don't have supplier virtual locations.
+
+47:40 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah.
+
+47:44 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) It is a virtual location only, but we are using the firm storage location as a virtual. So since the material number itself, we are very specific. So here in the offshore, the complexity here, we have like five concessions. Plants within offshore and almost 13 plants using only for drilling material. Total 24 plants we have in the system. Out of 24 plants, 13 applicable for drilling materials.
+
+48:16 - Mohammed Ashic (ADNOC Onshore - PD) So the question is like how do you identify VMI item from normal item. So it is only by item number not by year.
+
+48:28 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, so then one of the complexity what we can see, so if you want to make the virtual storage location, so individual plant we have to duplicate for the virtual storage locations.
+
+48:41 - Rahul Patel (ADNOC Group D&CS) Yeah, because if you don't have virtual storage location for VMI material, how would you differentiate whether the material has come from vendor to physical location at a point of consumption? If you don't have this segregation done, because then you'll never know whether the material is actually customer even if you have a separate virtual material number?
+
+49:01 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Separate material number only. So this only material number we link to the agreement.
+
+49:06 - Rahul Patel (ADNOC Group D&CS) Agreed. So material number will tell whether the material is VMI managed material or not. But then when the actual inventory you have, you will need to know whether it is physically lying at the vendor location or physically lying at the dealing location. So in that case, if you don't have this virtual storage location you will never know where my actual inventory is from a planning perspective or from an execution perspective.
+
+49:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Actually see vendor data will not reflect any for example the beginning of the vendor will bring the material. So this information will stay in the within vendor only so it will not pass to that node. Come to the ad-hoc inventory. So we then a connection through a like on database within SAP but still it's in the maturity we are in the like the enhancement area going on so this information partially passing from the vendor side.
+
+50:10 - Rahul Patel (ADNOC Group D&CS) Yeah because in our last conversation the planning which is happening in Excel outside we have clear information of what inventory is there at a vendor VMI location or vendor location what inventory that drilling location and that's how they were planning what is the total inventory required which means that the information may not be there in SAP that can be one of the gaps but then this information is available for planning team yeah this information will provide by vendor individual vendor what they have in stock and and this is what I what we understood is monthly reconsider every month they have a clear understanding of what what is vendor have already produced and kept in their stock versus what is in transit and what is there at the drilling location.
+
+50:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly, this information will provide monthly basis by individual vendor.
+
+51:04 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah.
+
+51:15 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay, actually, so if you are interested, so we can go through the two process, which is tendering cycle, then the three cycle actually, then reordering cycle, third one, real operations.
+
+51:29 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes, we are.
+
+51:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) First part I will go through the tendering. I restarted this.
+
+52:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) We cannot see your screen, if you're sharing. Yes, now we can.
+
+52:43 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Let's download the document. So here. This is the OCTG analysis at the time we were done. And so this many vendors was there throughout all the company. This is the analysis conducted. And SMC, Teneres, and Olerik, these are the major stake. And the total spent, this is the reason 2.2 billion at the time and the tonnage wise and hours spent per year. Then later on, so there are different categories. I'll go a little bit faster because it has many information.
+
+53:27 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Somewhere here, so it will show the answer for the which are the processes of VMI and in the backup slide.
+
+53:42 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, this is the timeline we followed for the OCTG tendering. This is the strategic planning and the strategic DAC, which is the steering committee. And this area will be presented. Then in 2017, it went to the tender and award.
+
+54:02 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) actually shifted to 18, process, only a lag was there. Then 2019 onwards, we issued the code of orders. So this is the analysis, which one went for the VMI and all. So OCT is one of the areas we focused, and second one fluid, third one wellhead, then download equipment. These are the commodity we done as per the the spend analysis at that time.
+
+54:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Then we've done with specific suppliers. Then the different manufacturer analysis.
+
+54:46 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Then why we presented why we want to switch to the VMI. And this is the cost analysis part of it. Then this is the process actually. So the first be on master agreement then this master agreement will go to that this is same thing we implemented then it will go to supplier this is in the not in Adma levels it's in the ad-hoc level then it will go for the individual agreement within the group company Adma's ADCO is offshore then ADCO is onshore now then HG is the sour gas then we'll make the this is the individual agreement From the individual agreement, it will go to the call of orders. This call of orders will go to the supplier.
+
+55:34 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So at the time, all the categories, once we analyze, there are the different packages we went through. And the individual package, we've done analysis. So this is what we mentioned at the time, like the different on commodity, consolidated joint inventory, And here you can see what is in stock. So at the time what is in stock and what was consumed and what is expected delivery. So this will go for the future purchase. At the end, this is the future purchase. You can see this is the yellow color. We identify which are the future purchase required for individual company and the combined one. So this is the estimation how we prepared and this will go for the tailoring.
+
+56:35 - Conference Room (MM- SKEC2 - L08) - Speaker 2 One question. In the previous slide in the previous slide you said it goes to the suppliers multiple supplier. Does it go to multiple suppliers or you already as part of the framework it goes to one here? Yes.
+
+56:50 - Mohammed Ashic (ADNOC Onshore - PD) Yeah, multiple supplier.
+
+56:51 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So if I can.
+
+57:01 - Conference Room (MM- SKEC2 - L08) - Speaker 1 summarize.
+
+57:05 - Conference Room (MM- SKEC2 - L08) - Speaker 1 You would take the, let's say, from the material basket, you would take, let's say, from the demand Excel sheet, take all those materials, separate them into categories, and then go to market for each of these categories. And then once you award the supplier, then it gets, you would create a material number for each of these suppliers, and then the procurement, once you award the procurement.
+
+57:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah.
+
+57:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So this is the attending lab. Now I'll explain the final layer, this operation manual. You can see my screen?
+
+58:04 - Rahul Patel (ADNOC Group D&CS) Oh.
+
+58:05 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Not yet. Not yet.
+
+58:15 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Yeah, we can see now.
+
+58:18 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So, this is like this individual commodity for offshore, onshore we should separate manuals. So, it's very clearly distinguished like each supplier. So, for example, here it is two supplier and it's Baker Hughes and Technic PFMC. So, they both jointly signed and this activity and then we can share the document. So, we'll just highlight high level. So this is the entire operation. So we will make a release order here in the beginning. This is a pure release. Then it will go for manufacturing. Then after the shipment, customs and all, then it will receive under the VMI storage location. Then equipment received here. Then material reservation will come here. You can see MR. So this is the short-term plan. Then whenever the material reservation comes, this will go as an instruction to the supplier. Then supplier will dispatch the material. They'll prepare. If there is any assembly preparation, we'll go for workshop. Then prepare and go back to again supplier. Supplier responsibility to memorize this material up to our JT actually. So in offshore case, it's up to the rig site. So this is the closed network of the VMI. The detail I have can see here.
+
+59:42 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Okay, so one question here, when you create a release order, how do you know the exact quantity of the material was not reserved yet?
+
+59:48 - Unidentified Speaker Right?
+
+59:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) You're doing the reservation data. Yeah, no, that based on the material allocation plan, last time we have seen. So the material derives. So this is what we want. I like I currently happening in excel sheet.
+
+1:00:09 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So here so then we will get the stock update and all but in the team then we'll make a pure release in SAP then Ariba then it will go to the manufacturing either Technium FMC or Baker then they will do the same process. Then this is the entire process in detail showing.
+
+1:00:30 - Conference Room (MM- SKEC2 - L08) - Speaker 2 This is within their domain in GDP, right?
+
+1:00:33 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, this is all in their domain and where entry is coming to us here. So whenever the material here, the SAP here, Arnok offshore SAP will come in picture. So they'll make a spin in Ariba, then it will trigger to our system. Then we'll make a GRM. Then after the GRM, it will go for the payment. Delivery note for the final. Then they'll make invoice. The remaining, they can put the invoice. And simultaneously, another input coming from the suppliers, the user side. Delivery tool service. This is the MR here. So the material acquisition will come. Then again warehouse. The warehouse, they will do the goods issue. This is the goods issue service. Then it will go to the If anything coming under the valid assembly supplier, then it will go. Otherwise, it will go directly to the JT. This is how the process will go like this. The system support will go in this way.
+
+1:01:49 - Rahul Patel (ADNOC Group D&CS) or is going to be in place it's already in place already okay yeah so we've done uh first category in 2019 started okay so you're doing this category by category you are implementing this change yeah now all implemented now
+
+1:02:06 - Conference Room (MM- SKEC2 - L08) - Speaker 2 all implemented so you're not creating they're not creating work order they're directly creating reservation, right?
+
+1:02:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, they are directly under reservation, yes.
+
+1:02:23 - Rido Mardian (ADNOC Sour Gas - Procurement) I think drilling, drilling mostly are project WBS, so they don't create PM work order.
+
+1:02:31 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, WBS directly under the reservation.
+
+1:02:34 - Rido Mardian (ADNOC Sour Gas - Procurement) Yeah, reservation, they don't create PM job. No, 2 to Yeah, same like in the shore gas also the same, they are not creating work order, they are creating reservation. Reservation with the WBS.
+
+1:02:47 - Rahul Patel (ADNOC Group D&CS) So you are using project system PS here for creating reservations?
+
+1:02:52 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, we are not using. I think in Sorgas maybe you can explain. They are using before. Now you are using the project system now?
+
+1:03:00 - Rido Mardian (ADNOC Sour Gas - Procurement) No, we are using that the reservation with the WBS network. Okay, so you are using.
+
+1:03:08 - Rahul Patel (ADNOC Group D&CS) Okay, so with reference to WBS only you are creating reservation. It's not getting triggered through the PS system, like through network you are not creating reservations.
+
+1:03:21 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Abdul, you mentioned something about MRP. Can you elaborate the process?
+
+1:03:40 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, this is the same thing what is shown on the screen.
+
+1:03:48 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Which process? The entire process or? Yes, please, yeah. Okay, so now we're done with our demand, the what called allocation in the last time. So then it will start from So we'll receive a memo with the detailed order quantity from the drilling kit. The memo and quantity is specified there. We are treating as a demand reservation from the user side and it will sign as per the DOA. Then what we do, we'll convert this in the SAP. This is the first point we are entering to SAP and we'll issue the release order in SAP.
+
+1:04:40 - Rahul Patel (ADNOC Group D&CS) Just a minute before, sorry to disturb you here Abdul, but then in between there is this contract step, right? So you've got a demand and before you release an order, there is this agreement step what we've discussed in 10 minutes before, right? The entire agreement.
+
+1:05:00 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Let's make an agreement. Yeah, three layer actually. Framework agreement in the very beginning after tender we'll make framework agreements already established. Then we'll make an LTPA like long term purchase agreement within the group company called work order. That's also done.
+
+1:05:21 - Rahul Patel (ADNOC Group D&CS) Now we are in operation. But essentially for any drilling project it starts with framework then tender and then operations. So right now, you are explaining the operations piece of it?
+
+1:05:36 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah. First tender, then framework agreement, then work order. Work order, not in the SAP terminology. So your context will be called work order, which is purchase order. Long-term purchase agreement.
+
+1:05:49 - Rahul Patel (ADNOC Group D&CS) Okay. Long-term purchase agreement. Kind of a scheduling agreement in SAP.
+
+1:05:55 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This is in SAP, actually. This is also in SAP. This is all in SAP. In SAP, framework agreement and the long-term purchase agreement in SAP actually. But in the framework agreement, they didn't put a material number in framework agreement actually.
+
+1:06:19 - Rahul Patel (ADNOC Group D&CS) Once this basic setup is done, then you receive demand and then using this three-tier architecture, you convert this demand into actual which is then used for operations.
+
+1:06:32 - Conference Room (MM- SKEC2 - L08) - Speaker 2 The whole purchasing process is in SAP. We don't have any manual intervention there. Even for all the group companies, all purchases are being done through SAP only. And to do it through SAP, for example, if you are ordering a stock material, you need to have a material number created for it. Using direct text you can create or you need to have so that and to create the material number you need to go through MDG process.
+
+1:07:11 - Rahul Patel (ADNOC Group D&CS) So essentially demand gets converted through MDG if there is metal not available you will create materials and essentially create all the master data so that you can execute the purchase process in SAP including vendors and everything yes yes yeah this will happen during uh creation of a contract which is ltpa okay okay so even before demand when the long-term purchasing agreement is happening you have list of all the materials and all the vendors which are going to get executed exactly and so this happens uh in one drilling life cycle So every time a new drilling rig comes this entire process is repeated that all the three tiers is what you're saying?
+
+1:07:57 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, it's a event like tendering event. So for example, we established a tender in 2019 as we are shown from the timeline. So at that time after tender once award we'll make a material number at the time. So for example, we established agreement for 10 years, framework agreement for 10 years. Years from 2015 to 2021. So next 10 we will not see any tender for this category. So we will establish another new tender and after once we spread the framework agreement.
+
+1:08:47 - Rahul Patel (ADNOC Group D&CS) So the overarching framework is a 10 process, which is happening here. Other are five years. OK. So there can be five years or 10 of tender process, which drives the overall planning or execution for that period. We decide which are the vendors which participating what are the materials which are getting executed through this process are identified up front and then those are executed for the period of 10 or 10 years or five years based upon the category.
+
+1:09:23 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly. This is the
+
+1:09:32 - Conference Room (MM- SKEC2 - L08) - Speaker 1 If you can go back, so if you can go back to the MRP process. The operation side.
+
+1:09:42 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) OK.
+
+1:09:45 - Conference Room (MM- SKEC2 - L08) - Speaker 1 And yeah, if you can just walk us through it.
+
+1:09:50 - Unidentified Speaker Yeah.
+
+1:09:52 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Is it visible? It's OK. You want to end us? Yes.
+
+1:09:55 - Unidentified Speaker Yeah.
+
+1:09:59 - Unidentified Speaker OK.
+
+1:10:00 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So now, this is the starting point. Inventory will make release order.
+
+1:10:11 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Pure release actually.
+
+1:10:15 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So we'll use LTPA and from the LTPA we'll make a release order in SAP based on the quantity and requirement demand we received from the drilling.
+
+1:10:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This one clear?
+
+1:10:36 - Unidentified Speaker Yes.
+
+1:10:40 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) We'll make two different releases based on the suppliers. Actually, in October, we segregated some rigs for FMC, some rigs for bakeries. So wherever demand comes, clearly segregation is there. So we'll make two PO each time. So it will go to the supplier. Then supplier will prepare the material, manufacturing. It will take lead time like 8 to 18 months.
+
+1:11:13 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay. Then they'll ship the material.
+
+1:11:19 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) It will arrive at the vendor premise. This is the vendor yard.
+
+1:11:27 - Unidentified Speaker Okay.
+
+1:11:29 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, my question was, yes, you will get the demand from the drilling team, right? And you put this in SAP, what the quantity is, and then MRP will be triggered automatically, created with the PR?
+
+1:11:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, no. This one, a manual process, actually. See, this is the... This is the pure release actually will make based on the demand quantity received from the drilling. This is for maybe next eight months or 10 months based on the data.
+
+1:12:12 - Rahul Patel (ADNOC Group D&CS) Okay, so there is no MRP. We are directly creating a purchase order or PR and PO.
+
+1:12:21 - Rahul Patel (ADNOC Group D&CS) Correct. So you are essentially procuring the quantity given by the drilling team, right? So you don't want any layer of planning so you just simply convert the entire thing into say purchase revocation converted to PO and then send it across release the PO to vendor yeah planning exercise actually we've done before that
+
+1:12:39 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) so all the information they'll share they'll share even like MAP material allocation plan and also in addition we have one more team available from vendor as per this contract they called desk engineer so actually the planning also also the vendor responsibility.
+
+1:12:58 - Unidentified Speaker They're part of our planning.
+
+1:13:01 - Conference Room (MM- SKEC2 - L08) - Speaker 1 But this whole process, there is no MRP. This is all manual. You create manually the requisition and then once it gets approved, it turns into a purchase order. Yeah, and then the process continues.
+
+1:13:15 - Rahul Patel (ADNOC Group D&CS) Exactly, this is for the long term. And just a question here, sorry. So are you using one time purchase order? You said you already have a long term agreement, which means you are just updating the correct quantity in the agreement and agreement is already there. Correct?
+
+1:13:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Agreement already there. We'll make a release. You're just releasing the release order. Yeah, based on the requirement.
+
+1:13:38 - Unidentified Speaker Yeah.
+
+1:13:41 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So this is the lead time is eight months to 18 months. So supplier responsibility to keep the six requirement in their warehouse.
+
+1:13:54 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes.
+
+1:13:56 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) That means 8 plus 6 means 14 ahead we have to place minimum.
+
+1:14:04 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So 14 2 ahead.
+
+1:14:08 - Santosh Kumar Sharma (ADNOC Group D&CS) One small query on this. Is it applicable for every item used in drilling or is it specific to any particular category?
+
+1:14:17 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) All the commodity as I related five major category covered, which is of the spend actually we can say.
+
+1:14:29 - Rido Mardian (ADNOC Sour Gas - Procurement) Only the left is already covered under the LTP at the framework.
+
+1:14:36 - Rahul Patel (ADNOC Group D&CS) So if we consider this as an process, then it covers all the dealing parts is the question. Do you have need filtering parts which are outside this process?
+
+1:14:45 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, all all are covered 99% of the 99% covered.
+
+1:14:50 - Rahul Patel (ADNOC Group D&CS) Considering you have so many parts available, this 1% parts would also be a big number in terms of count, right?
+
+1:14:57 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, I didn't get to see. We have the, we already segmented all the drilling requirement in five major categories.
+
+1:15:05 - Unidentified Speaker Okay.
+
+1:15:06 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This five major category already awarded with VMI and one major commodity So this is a very small spend actually. So if you spend wise, 99% our spend converted to VMI.
+
+1:15:25 - Rahul Patel (ADNOC Group D&CS) Agreed. But from a part count perspective, beta are also part of our project scope, right? If we say from a percentage of the model numbers perspective?
+
+1:15:36 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah. This is only coming under the normal agreement. It's also under the agreement. It's not a VMI agreement.
+
+1:15:44 - Unidentified Speaker Okay.
+
+1:15:44 - Rahul Patel (ADNOC Group D&CS) You're directly procuring it as per and keeping it in your stock. It's not a VMI stock. Exactly. The demand is same. The process same from a demand perspective. The team only gives a demand for how many delibits are required as per the sizes. You just procure it through your own team and keep it in your own SAP stock.
+
+1:16:03 - Unidentified Speaker Exactly.
+
+1:16:04 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) There's only difference.
+
+1:16:07 - Rahul Patel (ADNOC Group D&CS) So there is no VMI in place, but the vendor is there.
+
+1:16:10 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, vendor is there, the contract is there. It's no framework, but it is local agreements.
+
+1:16:20 - Rahul Patel (ADNOC Group D&CS) Yeah, got it.
+
+1:16:23 - Santosh Kumar Sharma (ADNOC Group D&CS) And then we are not maintaining any levels for them, like any stock, safety stock, nothing. It's just like whatever requisition we receive, we order for the same quantity.
+
+1:16:34 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Safety stock is there for six months under the agreement. So the vendor is responsible to maintain six month requirement as a safety stock in their yard. So that's the reason the vendor is part of the planning.
+
+1:16:48 - Santosh Kumar Sharma (ADNOC Group D&CS) For Drillbit or for these five specific commodities?
+
+1:16:52 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, no, this one, the VMI I'm talking about. For Drillbit?
+
+1:17:00 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) the previous methodology.
+
+1:17:05 - Santosh Kumar Sharma (ADNOC Group D&CS) Similar to what we follow in MROs or what?
+
+1:17:10 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, this is not similar to MRO. We have like the MAP run, so from MAP run it will show what quantity we have to order. Material allocation plan, it's a manual one, what we have shown last time. The similar one they will prepare for drill bits then it will show what is the shortage when we have to order it.
+
+1:17:34 - Santosh Kumar Sharma (ADNOC Group D&CS) Okay and then that will take some account of the existing material in our stock in hand, stock in trunk, something like that or?
+
+1:17:44 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yes, all of it. Everything we have to see all the visibility.
+
+1:17:49 - Santosh Kumar Sharma (ADNOC Group D&CS) Okay, understood. Now we can focus on these BMI part.
+
+1:17:56 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Now where we stop now, material arrived at VMI yard, isn't it?
+
+1:18:03 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yes. Up to here we reached, yeah. Now this is one step we completed. Received material, arrived material in Abu Dhabi. Okay, now next process will start. Next process we can say the short-term plan, which is six months window of the drilling operation. So here another team is in picture, which is called drilling tool service. So in offshore this team is managing all the drilling operation activities and this is in the same team of same under the same VP of DMAT last time we attended the sessions. So this is another team the drilling tool service they will make an MR in SAP.
+
+1:18:48 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Okay so this MR will go to the Veros team Then in parallel, it will go to the supplier as well. So the supplier also will get the information. So supplier will notify. This is happening now outside system. However, there is enhancement going on to trigger through the SAP. So then this MR will go to supplier. Supplier will make it ready to dispatch to the site. Then whenever they dispatch to our JT, Then they will notify for the goods issue to the velocity. They'll do the process in the system and they will make this MR2 issue. So based on the delivery note signed here. Then it will go to the jetty, from jetty it will ship to the rig site. Then from rig site they'll install in the rig, sorry in the well. Then any leftover material, it will come back to again as RR another process we call the return request. So this return request material will come to our Verosiad. Then again tool service they will make an reverse MR which is we call the return request in SAP. Then after the inspection by all the parties including our QAQC team and vendor QAQC team. So they'll certify that material in good condition reusable condition then they'll put it back into the VMI yard then it will update in the SAP in our system actually.
+
+1:20:26 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Abdul just a question I know we're jumping to supply planning a bit but so what when the reservation is created you know this for a short short term right for six yeah assuming this this is gonna happen this will be a stock transfer right uh from your virtual uh storage location to uh the rig right how is this happening like when you create a reservation So probably the question is whether it is a stock transfer reservation or it
+
+1:21:18 - Rahul Patel (ADNOC Group D&CS) Is a consumption reservation like you issue the stock when it is moving out of the location or you're transferring the stock. In system when it moves out of the VMI location.
+
+1:21:30 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) One second, I have to turn on colon sorry.
+
+1:21:33 - Unidentified Speaker Yeah.
+
+1:21:37 - Conference Room (MM- SKEC2 - L08) - Speaker 1 At the second part of that, This is automatic. The steel.
+
+1:21:43 - Unidentified Speaker Bye.
+
+1:22:17 - Rahul Patel (ADNOC Group D&CS) Yeah, the question was that when this reservation is created, is it a reservation to transfer the stock? Or is this reservation to consume stock from VMI location?
+
+1:22:28 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Consume.
+
+1:22:30 - Rahul Patel (ADNOC Group D&CS) So in SAP, the stock is issued to the rig?
+
+1:22:36 - Unidentified Speaker Yeah.
+
+1:22:39 - Rahul Patel (ADNOC Group D&CS) Is it a cost center consumption moment?
+
+1:22:41 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) WBS. OK.
+
+1:22:44 - Rahul Patel (ADNOC Group D&CS) issued to the WBS project through this reservation. So if you and the trigger for consumption is once the stock is available at jetty or port.
+
+1:23:00 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No trigger for consumption no once the well arrived for example so we have seen the bar chart isn't it maybe I will show once again once the well scheduled for next month then they'll prepare the tool service or the material this.
+
+1:23:17 - Rahul Patel (ADNOC Group D&CS) Probably I'll restate my question. The trigger for consumption in SAP like you've created a MERTIL reservation. The confirmation of reservation happens when the MERTIL reaches the JT, right?
+
+1:23:31 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Confirmation, yeah, you're right. So they make a delivery note also.
+
+1:23:38 - Rahul Patel (ADNOC Group D&CS) Yeah, and then once it reaches the JT, So basically that's when in the SAP the reservation is confirmed and the stock gets consumed.
+
+1:23:46 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly.
+
+1:23:49 - Unidentified Speaker Got it. OK. Does that answer your question, Mohamed? Yes. Yeah.
+
+1:23:57 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) OK. One more information I missed in between, the GR process. So the GRM payment. For the wellhead, only one category We have a three type of payment actually. The wellhead is happening the GR once the material touches in the VMI yard. So they can do the GR and we have to pay. So whatever the stock, both ad hoc onshore and offshore, lying under the wellhead category, it is ad hoc on to material.
+
+1:24:28 - Rahul Patel (ADNOC Group D&CS) Okay, is it clear? Can you say that again please? Sorry.
+
+1:24:31 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, so whenever material arrived at So, as per this contract, wellhead contract, they can do the GR. Okay, once they arrive, immediately they'll make ASN. Okay, then we'll make a GR, then they can process for the invoice for the payment. Once we convert it to GR, it will become ad hoc owned material, not vendor owned material.
+
+1:24:58 - Rahul Patel (ADNOC Group D&CS) And this is for only specific category is what you're saying?
+
+1:25:00 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, only specific category for wellhead. Second category we have OCTG and liner hanger and cementing accessories. This is happening along with the material issuance.
+
+1:25:18 - Rahul Patel (ADNOC Group D&CS) Okay, so the payment to vendor happens when the material is issued.
+
+1:25:24 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) And we have third category, download completion. This is one successful installation at rig site.
+
+1:25:31 - Rahul Patel (ADNOC Group D&CS) Okay so based upon the category the payments to vendor differ so for some category like well head is the inventory the moment it is received in VMI yard the GR is done you you have to pay them. Exactly. But the stock is not adnok stock right even if you are paying it is still VMI stock.
+
+1:25:51 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Stock but adnok owned so we are we are segregating by ownership Yeah, since you've already paid to the vendor, the ownership comes to you legally. Yeah, exactly, yeah.
+
+1:26:05 - Rahul Patel (ADNOC Group D&CS) And for the other stock, even if it is in VMI location, since you've not paid for the material, the legal ownership is not with you still.
+
+1:26:15 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly, legal owner went around.
+
+1:26:17 - Rahul Patel (ADNOC Group D&CS) Yeah. So in system, Does it differentiate anywhere from stock availability?
+
+1:26:25 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Stock availability only in the system, AdnoCount only will show in the system SAP.
+
+1:26:32 - Rahul Patel (ADNOC Group D&CS) So even if it is VMI stock it is shown as AdnoCount stock. So it shows us your inventory.
+
+1:26:38 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah our inventory and so as Ashik mentioned so in Onshore and ShoreGas it will differentiate by different storage location in AdnoCount will differentiate under the bin location.
+
+1:26:51 - Rahul Patel (ADNOC Group D&CS) But the metal code is VMI material.
+
+1:26:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly, all are VMI material, exclusive material now. And some materials are uniform.
+
+1:27:01 - Conference Room (MM- SKEC2 - L08) - Speaker 1 So that's the two-step GR, right? You're doing the, I forgot the code, but yeah, the 107109, right?
+
+1:27:12 - Unidentified Speaker Yeah, two-step. And 105.
+
+1:27:16 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) 103, yes, okay. 103 for the first step and 105 for the final inspection and payment. Sorry, GRM, final GRM.
+
+1:27:28 - Santosh Kumar Sharma (ADNOC Group D&CS) So, Abdul, for wellhead, once the GRM is done, it will show in the SAP stock. For few items, once it will show into our stock or for few items once installation at the rig has been done then it will show in the SAP history. Is this understanding correct?
+
+1:27:54 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly, even though it is shown for other category immediately they have to issue out.
+
+1:28:01 - Rahul Patel (ADNOC Group D&CS) Issue happens immediately only for wellhead the stock remains till it is delivered. So what happens when is the wellhead stock consumed in this entire process?
+
+1:28:13 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, whenever several had to stop the consumption, it is as per the MR plan. You are talking about replenishment?
+
+1:28:23 - Rahul Patel (ADNOC Group D&CS) No, no. So the three categories are understood at one wellhead, second is at the jetty and second is at third is at the rig. When it is installed so first you get the stock and you transfer the stock second you don't have stock but you only transfer the stock and when it is transferred you goods issue you gr and goods issue happen back to back in step two and step uh second and third case but in the first case there is a difference between when the gr is happening and when the goods issue is happening which means for that the stock lies with ad-hoc. Yeah, so this this goods issue which is happening is it it is happening through material reservation process only is what you are saying even if it is our own stock. Yes, correct. And and for this the goods issue happens when it is Yeah.
+
+1:29:35 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) OK.
+
+1:29:49 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So I can share this document. And I think the detailed step-by-step process is there and detailed write-up is there. And at the end, there should be a KPI matrix. So this is the KPI matrix, it's a vendor. And there is two KPI, one is the forward KPI to the vendor, another one is the reverse KPI also there, with AdNoc. Last one I think. The flowchart is here. The screen is loading. Now we see the flowchart.
+
+1:30:49 - Rahul Patel (ADNOC Group D&CS) just one I'm just trying to clear one understanding probably Khalid you can also help me here so when it is MRO our the primary object is we are trying to optimize inventory so that we have sufficient stock where we don't stop the plants because of insufficient inventory at the same time we make sure that we are optimizing our inventory through the processes of IBP but when it comes to drilling there is no inventory optimization per se because we are just requirements coming through multiple wells, optimizing the entire procurement process, considering now that everything can be on the same place, and then fulfilling those wells in time through EMI. Is that correct when we say from an IBP perspective?
+
+1:31:37 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, I know. Actually, there is some catch. Now, maybe I'll open another document. Here, even though it is a VMI, so we have already seen it's a stock is ad-hoc, isn't it? If there is any like non-consumption happened, it's impact ad-hoc stock value. Then similarly, we have OCTG, we called open-end and close-end. So I'll open the OCTG manual, same like what we second.
+
+1:32:16 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Basically, if a VMI material, if we procure it and we receive it, we receive it in our store, it's no more a VMI material, it becomes an ad hoc inventory. It came through a VMI agreement, it came through, but it becomes a part of the ad hoc invented now.
+
+1:32:46 - Conference Room (MM- SKEC2 - L08) - Speaker 2 And then we need to make sure it's consumed and then it's properly maintained or optimized.
+
+1:32:56 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So the optimization part is required. That's what I'm writing. Now the similar one. This is for the VMI. Okay, so it will mention in the title CTG VMI operation manual. Now here, these are the three suppliers. We have three, Tenerife, Polaric and Maribyne. This is established in 2019. The first VMI, so it's only going to expire now. And now this is the process, same thing written here clearly shown. We explained, but the payment only happening at JT. So I'll just go through one part where I will highlight here. This is the one. Title transfer. Okay, so we have open-end and close-end. The open-end meaning the standard product where supplier can utilize in other area. Suppose if there is a known usage in AdNoc, supplier can sell to others, other country or other customers.
+
+1:34:15 - Rahul Patel (ADNOC Group D&CS) Open market.
+
+1:34:17 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Open market. So because it's not our material, it's not owned by AdNoc, so they have to... It is a catalog item. Pardon me?
+
+1:34:25 - Rahul Patel (ADNOC Group D&CS) It is a catalog item which can be sold to anyone.
+
+1:34:29 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, it's a catalog and as part of the VM agreement, suppose we plan for this month and there's no consumption. So somehow the well changed for next three years, this well is not coming. The material becomes surplus. This surplus material, vendor can sell out after the confirmation from the company. This is what the agreement says. Anyhow, so we can find the detail here. This is called open-end. Another one we called closed-end. Closed-end meaning this is very specific to ADNOC. So they manufactured only for ADNOC. So if non-usability, they cannot sell out. So that's the reason we already identified in the beginning during the tender process. So we already marked which are the material closed-end, which are the material open-end. And closed-end, if there is no consumption after 12 months, So, supplier can transfer the ownership to AdNoc. So, they can invoice it.
+
+1:35:33 - Unidentified Speaker Okay.
+
+1:35:36 - Rahul Patel (ADNOC Group D&CS) Either you request it or after 12 months you transfer the ownership.
+
+1:35:42 - Unidentified Speaker Exactly.
+
+1:35:43 - Rahul Patel (ADNOC Group D&CS) Either it goes consumed through material reservation and if there is no reservation for 12 months then it will automatically get transferred to AdNoc.
+
+1:35:52 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Exactly. How do you do that? After 12 months, you have to do the GRN, right?
+
+1:35:58 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) How do you invoice it? Yeah, we have to do GRN, exactly.
+
+1:36:01 - Conference Room (MM- SKEC2 - L08) - Speaker 2 We have to do GRN and bring it into the ADNOG inventory.
+
+1:36:05 - Unidentified Speaker Inventory.
+
+1:36:07 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Inventory, okay. Yeah. And one more catch. After 18 months, supplier can hand over the material to ADNOG physically.
+
+1:36:23 - Conference Room (MM- SKEC2 - L08) - Speaker 2 So in 12 months, they are only doing the JRN, although physically the material is with VMI store only. However, after 18 months, they should not keep it in their store. They will put it into the ad hoc stores, warehouse.
+
+1:36:45 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly.
+
+1:36:48 - Rahul Patel (ADNOC Group D&CS) So a VMI can be maximum 18 months, can be there stock physically a metal can be.
+
+1:36:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah for OCTG. For ad-hoc materials.
+
+1:36:56 - Conference Room (MM- SKEC2 - L08) - Speaker 2 For this category for ad-hoc closed-ended materials only.
+
+1:37:01 - Rahul Patel (ADNOC Group D&CS) Open-ended can go back to he can buy he can sell it to others.
+
+1:37:06 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) He can sell it to others.
+
+1:37:07 - Rahul Patel (ADNOC Group D&CS) So can you Can you explain the inventory optimization part you're trying to say here?
+
+1:37:21 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, here see whatever coming under the ad hoc. So we want to ensure so there is a utilization plan as per the map and all. So whatever we are checking manually, it has to through IBP. That's reason we want to clear requirements. We want to catch all the like data like what we have seen the bar chart and basket. And we want to convert to the map then we have to cross check with the current stock so on and the order booking what are the pure release we are issuing we are only issuing the pure release the required quantity these are we are expecting from IBP.
+
+1:38:01 - Rahul Patel (ADNOC Group D&CS) So you need a clear end to end visibility from demand to procurement to inventory both vendor and self-managed based upon the well mapping plan.
+
+1:38:20 - Rahul Patel (ADNOC Group D&CS) Okay got it.
+
+1:38:23 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So I will just show the matrix the below here.
+
+1:38:32 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) This Rasichat here so clearly return what to do so it is start from this process all process start from the code of order. Demand planning then arriving at Abu Dhabi here there is no only then deliver RIG site through MR, then invoice, then RIG return, then there is some other process we called, if many material required for some assembly, to go for third party workshops for modification, then again the modification will come back and they manage. Then another one, 12 months process of transfer, then 18 months process transfer. So in offshore, we implemented. So there is one more provision. Supplier can store for after the payment. So we opted the storage payment, actually. Onshore, they're delivering physically.
+
+1:39:32 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) After 18 so this option, supplier will maintain the stock in their yard. I'd not to pay storage cost.
+
+1:39:44 - Rahul Patel (ADNOC Group D&CS) After 18 months, if they continue in their own VMI storage location, then I'd not to have to pay the additional storage cost. Inventor continues in the VMI location.
+
+1:39:53 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly. Why? Because we want to utilize all the other process, same as VMI, like the preparation, so on.
+
+1:40:06 - Rahul Patel (ADNOC Group D&CS) Yeah, if it moves to your storage process of issuing the material changes.
+
+1:40:11 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, I think that's the reason. I'm not going to go to that option. And so we have KPI. Yeah, this is the KPI part of it. And this is the KPI actually. So they have to maintain up to six months. Yeah. So they have to maintain up to six months so then above six months also they should not maintain the score will vary so anything below six months they'll get zero score.
+
+1:40:58 - Rahul Patel (ADNOC Group D&CS) I guess you are sharing okay yeah I am I was not yeah got it sorry so there is a scoring which they have to store minimum six months with them so that they can get maximum score.
+
+1:41:14 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Okay, this is how you do the supplier performance for PMI suppliers.
+
+1:41:26 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, currently there's audit and supplier performance at HQ level. So as part of the category, so they will conduct this analysis and they publish the score and supplier will prepare and we will validate in the document. There is one more reverse KP also there. This is the reverse KP actually.
+
+1:41:48 - Rahul Patel (ADNOC Group D&CS) So you want to make sure that you are ensuring six months stock before the date of consumption, approximate date of consumption at VMI location. That's your KPI?
+
+1:42:02 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) So they want to maintain availability of six months. Initially in AdNoc we used to have 12 to 24 months before we are made. So minimum we are keeping 12 months. So there is now the risk reduced because vendor is managing. They know the full visibility on manufacturing and all. So that's the reason safety stock we reduced to six months. So if anything below six months the risk for had no cooperation.
+
+1:42:29 - Rahul Patel (ADNOC Group D&CS) The six month is from the date of consumption. So how do you calculate the six month?
+
+1:42:34 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) No, date of arrival.
+
+1:42:36 - Rahul Patel (ADNOC Group D&CS) No, no. With respect to what? Like date of arrival?
+
+1:42:41 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Date of arrival to date of consumption. The date of consumption. The MR date? Plan, yeah. Plan. They will issue the plan when they're going to consume. So not actually the plan.
+
+1:42:54 - Rahul Patel (ADNOC Group D&CS) So whatever manual planning we've done at the start of the project for which we've done the procurement, as per the consumption date in the plan, the stock should come six months before and in the VMI location.
+
+1:43:07 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly.
+
+1:43:09 - Rahul Patel (ADNOC Group D&CS) That's the metric you would like to push for or look for.
+
+1:43:13 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Exactly. This plan will update on an offshore monthly basis and on short quarterly basis. So there's a flexibility. Suppose if we plan anywhere and if there is any change, so separate don't want to go for this KPI. So the changed plan, they'll apply for the KPI.
+
+1:43:36 - Rahul Patel (ADNOC Group D&CS) Got it. So whatever is the revised final plan with respect to the KPI has to be celebrated because if anything is changed in the plan, you don't want it still going as per the original plan in the inventory.
+
+1:43:48 - Unidentified Speaker Exactly.
+
+1:44:03 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yeah, it's not. Yeah, if you don't mind sharing, uh, those documents, uh, yeah, I have this one today. Thank you. Yeah, you can send it to Do you have any questions?
+
+1:44:31 - Santosh Kumar Sharma (ADNOC Group D&CS) No, no, we are good.
+
+1:44:37 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah, I am planning to attend physical actually today. Unfortunately, I got a training program. That's the reason I couldn't visit. Today. So next time we'll see.
+
+1:44:49 - Conference Room (MM- SKEC2 - L08) - Speaker 1 No, no worries. We have another one tomorrow. Hopefully, maybe tomorrow.
+
+1:44:55 - Unidentified Speaker Yeah, tomorrow.
+
+1:45:00 - Conference Room (MM- SKEC2 - L08) - Speaker 2 Can you send the documents also from the last week and today?
+
+1:45:04 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Yes.
+
+1:45:04 - Unidentified Speaker Yeah.
+
+1:45:05 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) Yeah. Last week I'll follow up. Yeah. So I didn't say so last week not with me. So I have to collect. So today when I I have it. I will share it.
+
+1:45:14 - Unidentified Speaker Okay.
+
+1:45:15 - Conference Room (MM- SKEC2 - L08) - Speaker 1 All right, team. Thank you so much for the walkthrough. So as next step, what we'll do is we're processing all this information. We have one more workshop tomorrow regarding supply planning. And then next step, would be to gather all this information. What we'll do is that we will also develop a process architecture, review it with you, and also we will gather the business requirement document. So we will develop a PRD.
+
+1:46:08 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Also, an action item for ADNOC is to, similar to what we've discussed before, is to assign a process champion for inventory planning for MRO, sorry, not MRO, drilling. Just because if, let's say, we have one specific questions regarding the inventory planning, we don't need to do a full workshop. Have a session. And then also to review the documents that we create, make sure that we validate them.
+
+1:46:53 - Conference Room (MM- SKEC2 - L08) - Speaker 1 From the team, are there any questions, folks from the call?
+
+1:47:09 - Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC) All right.
+
+1:47:11 - Conference Room (MM- SKEC2 - L08) - Speaker 1 Thank you so much, everyone.
+
+1:47:15 - Rahul Patel (ADNOC Group D&CS) Thank you. Bye.
+
+1:47:17 - Khalid Sarfaraz (ADNOC Group D&CS) Thank you, everyone. Bye.
+
+1:47:20 - Rahul Patel (ADNOC Group D&CS) Thanks, everyone.
+
+1:47:30 - Unidentified Speaker you
