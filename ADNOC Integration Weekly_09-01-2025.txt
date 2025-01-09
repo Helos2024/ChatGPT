@@ -1,0 +1,440 @@
+Bastian Osorio:
+could you could you try to integrate data to them?
+
+Sagar Vora:
+Yeah I tried loading the location in the product just mandatory fields not all the attributes because I'm not sure which all attributes needs to be mapped but yeah like I was able to load some of the data so I can show you So these are the products which I loaded. But I'm not sure how we will identify which are for MRO and all, because there is no, even the MRP types are there, but MRP types are not, means they're not identified.
+
+ These are the material types which are available and these are the lease of means the number of records which was loaded for the product and loaded. Yeah, but it was pretty fast. Did you reload it?
+
+UNKNOWN_SPEAKER:
+Yeah, I already did it.
+
+Bastian Osorio:
+Good then. In the Z01, yeah, Z01 in the version, the integrate version.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+In here also I noted some locations.
+
+Conference Room (Hector Palacios) - Speaker 2:
+I'm thinking that maybe the guys, instead of doing the testing on On 601 they should do it on the ad-hoc plane area, you know It's for functional for Saul and the other guys so now we have a different version Yeah, but why I mean if we go to 601 then we should start working with the integrated data right away So I guess that what I'm saying is that if they want to test Do it on the ad-hoc side, on the planning area ad-hoc, work with the normal mass data.
+
+ When you're ready about testing, then you go with the real one.
+
+Sagar Vora:
+And you test with more data, with real data. I think if we go with that approach, there will be some rework at CIDS side because We have to currently, we just have to change the planning version, means we can use the same interface. But if we go with a different planning area, then we have to change the target tables.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yeah. Then they will need to change one by one the flows.
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Sagar Vora:
+If we have a separate planning area, then there will be more rework compared to planning version, because it No, we don't want you to iterate on our plan area.
+
+Bastian Osorio:
+Indeed, what I'm proposing is that you iterate on this planning area directly to baseline. No, but you will. The thing is that they have data. So you will have plenty of data. It will be hard to work for Saúl because Saúl will integrate some data.
+
+Sagar Vora:
+I think we can have a joint discussion and take a final call. That's why I didn't load everything, just testing. All connections are working fine. We don't have any dependency. Just a second.
+
+Bastian Osorio:
+Then they will have to change just the version, and that's it. Saul has to make sure of user baseline version and that's it?
+
+Conference Room (Hector Palacios) - Speaker 2:
+I don't like to work in a version, there are some limitations that I don't fully remember, but for some algorithms I'm sure that they are. But yeah, it's the only alternative we have so far, but I think that for the future if we asked Vivek to start working, it's better to work on ad-hoc plane area instead of putting, because we have like three stages, you know. It's just making everything more complicated.
+
+ You have to test on ad-hoc, then you need to test on baseline, the second area, and then you need to go the iteration version, you know.
+
+Bastian Osorio:
+Not that, the integration version is just for the integration.
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, but it's a great moment to start testing as well for us.
+
+Bastian Osorio:
+Testing what?
+
+UNKNOWN_SPEAKER:
+Performance, man. Huh? Performance.
+
+Bastian Osorio:
+But they can do it here. Why cannot do it in this planning area? In the integration version?
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, Adel, let's wait.
+
+UNKNOWN_SPEAKER:
+Let's wait.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Let's not worry about it. So I'm just thinking that now what we need is to integrate as soon as possible the consumption history. But we are not going to do that at the storage location level, because at least Ray is not clear how to do that yet. With that NOC team to understand better. Because it doesn't seem that the information is at that level in the first place.
+
+Bastian Osorio:
+Yeah, it's not at that level, yeah.
+
+UNKNOWN_SPEAKER:
+That's a complication.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yeah, and for equipment it's the same?
+
+UNKNOWN_SPEAKER:
+What do you mean equipment?
+
+Bastian Osorio:
+If we have the information by equipment? Question for Sagar, is equipment at storage location or is not possible to link equipment with storage location? No, no, not possible.
+
+Conference Room (Hector Palacios) - Speaker 2:
+And yesterday, when checking with Ray, it's the same. He was just multiplying the lines.
+
+Bastian Osorio:
+No, that's not good. It will be chaotic. But it is what it is.
+
+Conference Room (Hector Palacios) - Speaker 2:
+You don't have equipment by storage location. There are different sinks on the plant. So storage location are part of the plant in which you are storing. Equipment can be on other area. So the storage location starts supplying the equipment, but it's not that you have the equipment inside the storage location.
+
+Bastian Osorio:
+Yeah. Two different things. But before jumping into these details, the purpose of this meeting was first to check the open points regarding the connections. And then to check the plan. So let's stick to the plan.
+
+Sagar Vora:
+Yeah. Yeah. So I think connection, we have lost this and also not. They provide the details? Yeah, yeah. The SAP, right? Yeah, they provided the details. Yeah, yeah. Basically, they added the... System into the CIDS and then I completed the configuration steps in the IBP system and then created a data store.
+
+Bastian Osorio:
+So now we have all the data stores. So, okay.
+
+Sagar Vora:
+This is for sandbox, right? This is sandbox. Yeah, this is sandbox. One IBP system that is CCF. So only like these are all based on the basic authentication. So now there are some changes required, but that will, that should not hold the integration. I need to, like here currently we are using password. So instead of that certificate is required. Similarly for S4 HANA currently we are using the username and password.
+
+
+
+Bastian Osorio:
+And is it possible to use a single sign on?
+
+Sagar Vora:
+Not a single sign on, not a single sign on. Here SNC something is there. Okay. I also don't know. I need to explore this one also. And certificate is the certificate based authentication. So here we need to generate some certificate on the agent. So here I need to help Kaiser. This is also a new thing for me. So I need to explore both, but for now we have completed the activity. With the ID password.
+
+
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+But this table, so this data stored IVP CCF is target, right? Correct.
+
+UNKNOWN_SPEAKER:
+And why they are requesting a certificate for IVP?
+
+Bastian Osorio:
+I don't get it. Why? No, no. So currently we are using the username password.
+
+Sagar Vora:
+Okay. Like it isn't my username.
+
+Bastian Osorio:
+This is the communication user which is provided in IVP.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Sagar Vora:
+But they don't want that. They want that to be based on the certificate.
+
+Bastian Osorio:
+Why do they care about that? I don't know. They are very much.
+
+Sagar Vora:
+I think I would say like yesterday we were having one and a half hour call. So that was on the same item.
+
+Bastian Osorio:
+And then also that was I get I get the they want some more security in from the S4 HANA side. But why did they do one?
+
+Sagar Vora:
+No, no. They want security for these also. So currently I'm logged in. And here I'm also passing my ID password for the CIDS. So they want to make this also single sign-on. So we have to work on that, but not now before the goal, because we cannot. If they apply a single sign-on right now, then we will not be able to create a production Okay, because there the ID passwords are required. So the plan is once our Golang activities are completed, then they will change this CIDS also a single sign on.
+
+ So they are very much serious about this ID passwords and all that.
+
+Bastian Osorio:
+Okay, let's see what are the next steps.
+
+Sagar Vora:
+then yeah so coming to this so we have completed all the activities so now we can start with the development but still these are the pending activities okay example uh this one is snc which I was showing in the certificate base so we have to somehow finish this okay but uh like whenever we have a clear understanding we will share them the documents and we will try to close Yeah. And these are the steps for the CC6 and CC7, which are the other IBP boxes which we have.
+
+ But since we don't have a X, yeah. But currently, we are not adding that targets.
+
+Bastian Osorio:
+Yeah. Yeah.
+
+Sagar Vora:
+But all these additional steps that they put here are required for UIT, for Go Live, what correct yeah it will be required means we don't I don't know it will be required for you to know I think I need to check I'm not sure which one to check when this I believe I believe you guys can start building without finishing all this right I mean yeah we can you need to create we can do that yeah we can do that and uh and even in the extractor that we Data which we have loaded, so for Burush we have loaded only for one plant and there are around 43 plants, 42 plants are there.
+
+ So if now we can start, we can continue with the development, but yeah, like whatever open questions we have.
+
+Bastian Osorio:
+And yeah, but do you have the plan for all the different tasks? Not a complete plan.
+
+Sagar Vora:
+I have created a list of interfaces which will be required, but I don't know. I have an understanding for which are required for MRO and which are required for chemical. That's why I have kept yes and no. All this will be required from Adno and from Urush. So that is one thing.
+
+Bastian Osorio:
+And that is one good question that we need to get an answer for.
+
+Sagar Vora:
+Correct. So I did that as a question here. S4 HANA, S4 HANA 1-year pin, S4 HANA Burush will be sourced for all the views. All the views means chemical, tine and all drilling and everything. So when we have a call or I will check with Rahul also if I get some direct answers then I will try to fill and accordingly I will update this column also.
+
+Bastian Osorio:
+Yeah you can you can first yeah like for every question let's try don't escalate right away to ADNOC. Let's start with Rahul, with Kunal big niche and at the end create an email with all the open points and finally we can reach out for to schedule a meeting.
+
+Sagar Vora:
+So I'm adding that questions and I the plan like I need you your guys support like just to check like whatever I have added is sufficient or some additional interfaces are required so I have added as per the understanding like these all interfaces we have to create in the CIDS okay for example product all the product and MRO parts are almost same because we have to load a product ID only in the MRO part only thing will change are the filters correct filters and the targets target table so that's why I've kept as a separate line item but okay and now once we go inside the interface then we have to like someone from IDP who can take care for example demand okay so the demand they can whoever is the lead right so he can check like which all fields are required for him from the product master means all these fields are required if yes then fine or similarly for MRO parts which all fields will be required so I can connect with them and try to fill all the tables so that when we start our development, we know which all fields we have to map.
+
+ Wherever we don't have a mapping, then we can do our research or check with KPMG like if they can help with the source mapping like that. Any inputs? These all list looks correct. Any doubts, any questions here? We can go through line by line if required on this call or we can plan for us another call, whatever. But this is the plan what I am thinking of Similarly, I have kept for the drilling. We have four master data for product, branded codes, generic concatenation and all that.
+
+ But once and what will be the source system like some might be coming from dws or a flat file some could be coming from s4 so the source needs to be identified here some source locations are means I think we had done this activity like it will be from vmi to adnoc plant generic vendor to vmi like that but for which material because you here we have four types of material so these all will be for generic material or for some other type of material?
+
+
+
+UNKNOWN_SPEAKER:
+Drilling materials.
+
+Bastian Osorio:
+The brand, yeah.
+
+UNKNOWN_SPEAKER:
+Is for the branded bolts.
+
+Bastian Osorio:
+Generic or branded? Vendor to VMI. I'm not, yeah. We need to check that one. Put that we have to check yeah no no we have to check many means I'm yeah the bmi to adopt plant that is for the branded that's for sure yeah so like that we I for a all the individual
+
+Sagar Vora:
+interfaces I have I might have some questions like which all fields are required so I can connect directly with uh whoever is taking care means I can reach out to you guys or Arun or Saul, Vivek.
+
+Bastian Osorio:
+In the drilling part we need plenty of still plenty of definitions. Correct. So you created for the two side tracks let's say MRO chemicals and drilling.
+
+Sagar Vora:
+Correct. And I think drilling data is only available in I think somewhere I had I heard that and I had made a note but I we can just confirm that so that then we can put no no for all the data okay and here I have made a filters which we have issued okay so example these are the company codes or material types or these are the plants data which is currently in asphalt we have applied the filter. Similarly, for the Burush also, because the Burush filters are different.
+
+ So we can keep overall filter here. And then if individual filters are required, we will keep in this individual sheet. And one help or input which I will need is here for the storage location, Rinaldo was working right so he tried to add all the plant storage location then he has added the tables also but yesterday we found like for this whatever means the suppliers were also locations okay so there we have we will require a location underscore storage location or how it would be so basically we have to now do a deep dive and do the testing if it looks fine then we can put this means for now I have put a completed testing pending as a comment but yeah like then we can or else I can keep this all as a in progress okay but for the transactional data we will require like virtual tables means we have to first check like this data is available in the why why this table is for storage location but for location product vendor you don't need to Storage.
+
+
+
+Bastian Osorio:
+You only need the vendor.
+
+UNKNOWN_SPEAKER:
+Sorry, can you repeat?
+
+Sagar Vora:
+Which one? This one.
+
+Bastian Osorio:
+Because it needs to check how can we bring supplier storage location combination. We don't need the storage location for the supplier.
+
+Sagar Vora:
+No, no. So when we were checking this, so I can show you this, the data which in the extractor so there and the supplier was also location might be What is it?
+
+Bastian Osorio:
+I don't get the question, sorry.
+
+Sagar Vora:
+Oh sorry sorry I am saying like these are the location source okay this product ID is supplied from this location to this location into this storage location but this product is available in which storage location we don't know so here also we will require a storage location right?
+
+Bastian Osorio:
+No no no you don't need a storage location in the That's what I was saying.
+
+Sagar Vora:
+OK, but this is a plant. 1400 is a plant.
+
+Bastian Osorio:
+Yeah, yeah, I know, but but it's a what is the supplier here?
+
+Sagar Vora:
+This is the supplier only means is the supplier column in that basically it's a location internal transfer right from one location to another location like that. OK, but if you go back to the sorry to the file file okay you see it said it says location product vendor no no correct but here basically it's a location so there could be some vendors or some suppliers
+
+Bastian Osorio:
+also location yeah it's location source right so basically you need to move from from stores location and storage location, but from plants. Can you repeat? We need to find a way to create the links, the lanes between different storage locations, but for internal locations, not for vendors. Because for vendors, the link has to be from vendor to storage location, then there is a plan.
+
+Sagar Vora:
+No, no, I understood. That's why I'm saying. Yeah, so here we need a storage location.
+
+Bastian Osorio:
+Correct? If we want to model the lanes between location source, between internal location, sorry.
+
+UNKNOWN_SPEAKER:
+Correct, correct.
+
+Sagar Vora:
+Yeah, that's right. So that's why we have made a comment need to check how we can bring a supplier. Supplier is here.
+
+Bastian Osorio:
+That is critical and I need to check that how we can because we need a logic for that it's not that it's not it's not it's not only technical it's our definition and what are we all the different so for example with within a plant are we gonna connect all the different locations sorry the storage locations so I will take a look at that I will I will check Yes, that's correct. So basically that's what we were discussing yesterday with Rinaldo and Hector, we three were there.
+
+
+
+Sagar Vora:
+So we said like we have to means Rinaldo has made some changes but we have to do testing like whatever is there that is correct or some changes are required. So for example, we found some this change is required here. Similarly, we have to recheck all the I don't think any changes are required in location, because now we can see the location data also here. So here we have a plant also. This is a plant and these are store location.
+
+ So like this, I have loaded. Within location extractor, this was not available. These plants are not available. So I loaded these plants from different way. For example. OK. So these are the locations a plant under storage location like this it is available but here we don't have a specific entry for plant so what I did I bought the plant from this column here we have a erp plant okay so I I bought a unique plants entry from this column and description from the standard table okay and that way I these entries.
+
+ So now we have a plant also and plant underscores for the location also because these plants will be required for drilling purpose and the rest will be required for MRO chemicals. Okay.
+
+Sagar Vora:
+So now is there anything on priority? Like we have a list of master data. Let's start it.
+
+Bastian Osorio:
+So for example here, customer well is something that yeah.
+
+Sagar Vora:
+Anything related to drilling is not in it for Rohana you can park it for now yeah so which of which all things are not which all things are not there I'm not sure means I need some input from our
+
+Bastian Osorio:
+own yeah yeah I think this will not be available I think we can we can integrate for now at the locations and the materials the generic generic codes generic code okay so generic codes will be available in the extractor?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+We filter for drilling materials.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+So I think I tested them. I have loaded the products and locations. OK, I will load vendors also. And I can complete this UOM currency exchange, whichever are the small items. OK, UOM conversion. But apart from that, is there any priority or planning which I can focus so that I can take that one and map all the fields?
+
+Sagar Vora:
+question sorry so can you say that again yeah I'm saying like I will I have loaded a location and the product okay I will load vendor also okay customer also customer assets yeah means I think whatever customer not not assets just the customer I'm saying because we have the customer the customer for equipment and for functional location. We don't want these customers. We have this customer that no group treasury service.
+
+
+
+Bastian Osorio:
+No, we don't need this one.
+
+UNKNOWN_SPEAKER:
+No, we don't need this one.
+
+Bastian Osorio:
+The customer, but this is a standard extractor.
+
+Sagar Vora:
+Yes, this is a standard extractor.
+
+Bastian Osorio:
+What I'm saying is for MRO, there has to be some kind of filter in which we can filter only equipment.
+
+UNKNOWN_SPEAKER:
+Okay, MRO equipment.
+
+Bastian Osorio:
+If you check, because customers are customers, but in in this case our customer for the MRO area are not real customers. It's just a mask we use.
+
+Sagar Vora:
+Correct. What we need is actually... I was just checking if we don't need actual customers in IBP system, right? No, we don't need it. Not even for drilling also? No. So I think then for me the source will be here, will be going into a customer ID and that's right yeah and MRO asset yeah okay I need to jump to the next call but I think it's clear okay I know you cannot join yeah yeah tomorrow I need to submit laptop and complete the formalities so fine like I will I will keep on progressing and And in case of any doubts, I will reach out to anyone, like Saul, Bastian, anyone.
+
+ OK. Super. Yeah. Thank you. Bye-bye. OK. See you later.
+
+UNKNOWN_SPEAKER:
+See you, bye-bye.
+
+Bastian Osorio:
+Hector, are you there?
+
+UNKNOWN_SPEAKER:
+Yes, I'm back.
+
+Bastian Osorio:
+Today we have another webinar, Changes in MRO Demand and its Impact on Project Activities. Do you have it? Which one, sorry? Yes, I have it. Do you have a point of reference or something in front of you, Sagar, now? I don't know, no, no, this webinar. Now, the topic that worries me, Carlita, is how you are going to do it with the location source. For example, inside the same plant, how are we going to create links between the different Storage Locations?
+
+
+
+Conference Room (Hector Palacios) - Speaker 1:
+Inside the same plant, between the Storage Locations? I don't think we have to go between Storage Locations.
+
+UNKNOWN_SPEAKER:
+I think the material-storage-location relationship is unique. Well, I hope so. Let's go to the next one.
+
+Conference Room (Hector Palacios) - Speaker 1:
+But the work that Raze did was good and generally where it generated duplicates are the master data where the plant is more of a reference, you know? So the person replaces the reference. For the team, for the team. For the team, they tell you which plant it belongs to, but it's not that you're going to use it in any detail. It's like, in fact, another attribute, not even what I've done in IT, you know?
+
+ It's a reference, so it's the same, you leave it in the plant, right?
+
+Bastian Osorio:
+No, but the LocationSource is the one that complicates me.
+
+Conference Room (Hector Palacios) - Speaker 1:
+The LocationSource has to cross with the Mardi, in the Mardi they have the relationship between Material and StorageLocation, I told Ray, it doesn't have to be a multiplicative here, it's not that you expand all the plants to all the StorageLocation, you have to check and make the cross with the Material and StorageLocation to know which combinations are valid. So the movements are made at the level of the Storage Location?
+
+
+
+UNKNOWN_SPEAKER:
+What? Can you make that track?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yes, yes, yes. What worries me is the story. That's the most complicated thing. Why? Because the story seems to be not at the level of the Storage Location and the network is checking and it doesn't show up. So we have to check it with AdNock. I told Sagar first, in fact I had told him to check it with Qt. To see if they know more or less where the storage location information could be and where we can get it.
+
+ What I tell them is to get first, what is it called, because what we could do is that we have the information of the actions at the material plant level and make a cross with the Mardi and say, ok, this is the storage location for this material. But I don't like the idea because it's a data transformation, you know? Errors can come out of there. So for me, ideally, find a source where the data is already in the storage location and we can use it.
+
+
+
+UNKNOWN_SPEAKER:
+Yes. If not, everything is complicated.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I told him to check internally before going with AdNoc, but maybe outside of this, I would ask you, because Ray can undo that very easy question, it is like he comments something and undoes it. That they grab everything at the level of the plant and that they load the information so that we understand more or less We're going to use the MRO thing, right? Preventive maintenance and all that shit. To see if we're going to do forecast or discard the whole thing.
+
+
+
+Bastian Osorio:
+Yeah, but we have to organize ourselves because... I mean, that's another requirement that I don't have mapped. So we have to organize ourselves to know what's the priority and what's not.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I had put it in the... I had mentioned it again in the Teams saga. We have tasks over there, over here and over there. But I think that is super important because in fact that is going to be the main input for the meeting that we have right now. Because they are asking, hey, what do we do when we decide? Well, let's see the date and if we see that there are some fastmovers that really have relevant information, well, there we can perhaps make a forecast, but let them know from now on that It's like 1%.
+
+ And if we see that even for fast movers, as we have seen, the data is like the cayampa, then we have to remove this issue from the process. We can't start forecasting that. If they start questioning forecasts, no. Forecasts work with good data, that's why it should work for chemists, but for MRI, it's weird. They have like three historical points.
+
+Bastian Osorio:
+But then we should coordinate a working session With Sagan? Yes, and with Saul as well, to review this topic, you know? Let's do it.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Now we tell him that because what we were paused is that we did not have the integration, we have it done today. So now, for me, the first priority is to launch that flow, so that, what is it called, so that we can see this.
+
+Bastian Osorio:
+I'm going to prepare something for next week, and tomorrow I don't think so.
+
+UNKNOWN_SPEAKER:
+is working session. Yeah.
+
+Bastian Osorio:
+No, no, no. It has both flows.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ah, they are at the plant level too?
+
+UNKNOWN_SPEAKER:
+Yes. But, wait, wait, wait.
+
+Conference Room (Hector Palacios) - Speaker 1:
+The key, the location ID is plant or storage location? It has both.
+
+Bastian Osorio:
+It loads both things in different flows. It has two flows. One for plant and one for storage location. Cool.
+
+Conference Room (Hector Palacios) - Speaker 1:
+So there we ask you to execute it and we will review it in that session.
+
+UNKNOWN_SPEAKER:
+We have to do it.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ok, let's go to the other one then.
+
+UNKNOWN_SPEAKER:
+Let's go there.
+
+Sagar Vora:
+you Bye!
+
