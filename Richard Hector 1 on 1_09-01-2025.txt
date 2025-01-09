@@ -1,0 +1,621 @@
+Hector Palacios:
+¿Qué tal, Richard?
+
+UNKNOWN_SPEAKER:
+¿Qué tal, man? ¿Cómo estás? ¿Todo bien?
+
+Richard Quinteros:
+Bien, bien. ¿Cómo va el ritmo del proyecto?
+
+Hector Palacios:
+Se empezó a poner más candente, ¿no?
+
+Richard Quinteros:
+Sí, o sea, es que, como te digo, man, a ver. Yo tenía muchos temores. Antes de que yo iniciara esta etapa de arquitecto, yo tenía muchos temores. Uno de esos era esto, ¿no? Y es totalmente entendible.
+
+Hector Palacios:
+Y uno acepta los retos y además también no solamente depende del arquitecto sino del equipo, ¿sale?
+
+Richard Quinteros:
+Entonces, si tú pones a una persona con conocimientos, que tiene conocimientos, pues yo me considero una persona que los tengo, pero, perdón que me quede esto, pero me pones a dos personas que no lo tienen, se complica la situación porque no tengo un apoyo un respaldo me entiende no es solamente un consultor el que no es solamente debería ser un consultor el que debate sino más de uno explico ya entiendo que entiendo que pablo tiene conocimiento básico pero pues obviamente y yo estoy hablando totalmente sincero los con que tiene, a veces me ha hecho unas preguntas, pero es que eso es de una persona que ya ha probado, ¿me entiendes?
+
+ Que ya ha probado el sistema. Y esos conocimientos ya se los debería saber. O sea, ¿cómo cargar ubicaciones? Se nota que tiene conocimientos de WM, por ejemplo, de aquel lado, pero no tiene conocimientos de WM. O sea, yo tuve que decirle, mira, para cargar ubicaciones, que es algo tan sencillo, tienes que usar este archivo. Yo le expliqué cómo hacerlo, pero porque soy una persona muy dada, yo no caigo en discusiones, si tú me preguntas algo y yo sé la respuesta, yo te ayudo.
+
+ Sin criticar, sin nada. Ahora, tengo mucho temor, sí, porque también estos días estaba hablando con Pablo y yo le digo, a ver, Pablo, si son traslados entre almacenes, ellos te tienen que mandar a Chovilote. ¿Qué? Porque se supone que de un almacén Si son compras, es decir, que tú le compras a un proveedor, el proveedor normalmente no te manda H1 y te manda lote. Eso no es así. El proveedor solamente te manda el producto y ya.
+
+ O sea, tú recibes, creas lote, H1, todo. ¿De acuerdo?
+
+UNKNOWN_SPEAKER:
+De acuerdo.
+
+Richard Quinteros:
+De acuerdo a las etiquetas que te llegan, pues. Eso fue lo que yo le expliqué. Pero que no tengas esos consejos. Claro, me preocupa, ¿no?, de lo que estás haciendo, ¿no?
+
+UNKNOWN_SPEAKER:
+Vale, vale.
+
+Hector Palacios:
+Entonces, ya, ya. Sí, sí, sí. Está el punto uno. Está el desafío uno, que obviamente estás tomando tu rol de arquitecto ahora el primero. Sí. Y que, bueno, en ese caso sería idealmente, hubieras tenido a alguien quizás más de apoyo a hacer brainstorming, cosas así, ¿no? Sí. Veo también que Te tomaste la más difícil, ¿no? Te tomaste la más difícil de salida, después en complejidad viene entrada y después viene interno.
+
+
+
+Richard Quinteros:
+Si yo no lo tomo, ¿quién lo toma? Me está tocando... O sea, me pusieron como arquitecto, está bien, pero me está tocando muy rudo, porque no solamente tengo que hacer la de... O sea, si tú me estás poniendo a prueba como arquitecto, quieres que haga muchas multitasks al mismo tiempo. Ustedes como que yo aprendí a ser arquitecto, yo pienso que abordarme con tantas cosas es consumir, es no saber responder.
+
+ En alguna de ellas me voy a off, ¿me entiende? Sí, sí, sí. No, pero es parte de Richard, mira.
+
+Hector Palacios:
+¿Qué te puedo decir yo? Porque a mí en parte me ha pasado. A mí yo cuando entré a OCCM, yo entré y a los dos meses ya me tenía liderando algo porque el arquitecto la tuvieron que sacar y en ese tiempo era éramos 10 y sí, son momentos, son jodidos. Te juro, el estrés cuando supe que me iban a quitar el arquitecto y yo ser experiencia era un Samir cualquiera y de repente me ponen a liderar un roll out.
+
+ Entonces son, sí, son situaciones que son complejas, pero amigo, cuando subes la montaña, la vista es increíble. Yo creo que el tema es que si efectivamente te va a joder, un poco, yo no te estoy diciendo que hay que dar todo el apoyo, de hecho ahora vamos a pensar en cómo lo vamos a resolver. Pero estas situaciones al final son las que crecen más, a la larga. Son situaciones donde no son ideales, que efectivamente no nos las sabemos todas.
+
+ De hecho, si te las sabes todas, preocúpate, porque ahí no estás en el puesto adecuado, o no estás apuntando al puesto adecuado, es lo que digo yo. Siempre hay un poco de Entonces, eso yo creía que sería normal. Ahora sí, igual pensemos de qué forma empezamos a cerrar el gas, porque veo que efectivamente tenemos un gap en conocimiento. O sea, ¿qué pasa con Pablo? Pablo es un consultor que tiene mucho seniority.
+
+ Es más viejo que tú y yo. No sé qué edad tiene Pablo, pero tiene como tres años de experiencia y efectivamente en EWM es donde está flaco, porque él venía y era senior de, qué sé yo, de EMM y otras soluciones. Pero acá, efectivamente, y él lo comparte, de que no tiene la experiencia adecuada. Entonces, quizás lo que podríamos pensar aquí tú y yo es de a qué perfil podríamos incluir. No digo que nos traigamos un consultor 100%, pero quizás sí podríamos pensar en traernos a un ICER nuevamente a un 20 y quizás un porcentaje mayor.
+
+ Buscar ahí cómo balancear un poco. Así uno soluciona el tema tuyo de que necesita alguien más que te ayude a pensar, a hacer iteraciones de las soluciones, sobre todo ahora que se está poniendo más, aquí estamos viendo las de verdad, ¿no? Con la data.
+
+Richard Quinteros:
+Sí, iba a empezar, iba a empezar. Eso iba a empezar. Y luego, exacto.
+
+Hector Palacios:
+Y luego con Pablo para que lo vaya apoyando también ahí, para que vaya haciendo esas preguntas y que tampoco tenga miedo a preguntar, ¿no? O sea, está bien. O sea, tiene 13 años de experiencia, pero quizás en doble menos. No tiene nada.
+
+Richard Quinteros:
+Entonces... Créeme, créeme que en estos momentos, está bien, el desconocimiento se nota, ¿no? En varios puntos, ¿no? Pero créeme que para hacer un trabajo sea grato, aparte del conocimiento, porque yo puedo explicarle, él me había pedido ayuda y yo lo estaba ahí ayudando, y es ningún tema. Y tú sabes, bajo perfil, porque hasta ahorita tú lo sabes, que yo te lo comento. Pero nadie lo sabía porque yo lo ayudo, ¿me entiendes?
+
+ Mi misión no es criticar a nadie, no es malponer a nadie, ¿vale? Pero lo que hace que sea muy difícil trabajar con algo o alguien es su actitud. Ese comportamiento, o sea, se supone que yo soy el arquitecto, ¿me entiendes? Se supone que, en teoría, entre comienzos, el arquitecto y que tú me digas, oye, ¿eso no te pertenece al día de hoy? Claro que sí me pertenece, porque mi imagen, la imagen de Go está representando al cliente y que el cliente no se sienta cómodo con uno de los consultores que te ha puesto, es mi responsabilidad.
+
+ ¿Entiendes?
+
+Hector Palacios:
+Y estás sintiendo eso también, Richard, que del lado de Diana como que están ahí un poco el tema de Pablo?
+
+Richard Quinteros:
+No lo dicen, porque se nota que cuidan mucho el trato, ¿no? El trato godiano, ¿no? Y tienen mucho cuidado, ¿ves? Bueno, o sea, me imagino que traen historia ustedes con ellos, pero ellos cuidan mucho como ese trato. Pero sí siento cierta, de repente, incomodidad del lado de ellos. No lo dicen, pero no es necesario que lo diga para tú darte cuenta.
+
+UNKNOWN_SPEAKER:
+¿Vale?
+
+Richard Quinteros:
+Porque obviamente ahí tenemos un grupo de WhatsApp y que Pablo diga, mira, yo no estoy de acuerdo con eso, perdóname, pero que Pablo vaya comentado en ese grupo de WhatsApp, donde está el cliente, está Capgemini. Y Pablo le ha dicho, mira, ¿sabes qué? Aquí en Argentina ya es tarde. Lo veo mañana. O sea, eso no es excusa porque Florencia es de Argentina. Pero el consultor que GoSSM ponga en el proyecto tiene que adecuarse al horario del cliente, no el cliente.
+
+ Y, bueno, yo creo que eso es lo más importante, ¿no?
+
+Hector Palacios:
+Y, bueno, yo creo que eso es lo más importante, ¿no? Señorito no desde cuál es la exposición que tenga a temas de reunión y cosas por el estilo pero deja llegarme ese punto porque no lo tenía tan claro hasta ahora y la verdad es que no tenía ni idea tampoco que Pablo estaba trabajando en este horario. También lo entiendo un poco es que el problema Richard es más que nada el tema de si lo comunicamos oportunamente o no.
+
+ Yo no sé si cuando llegó Pablo le dijimos y esto no te corresponde a ti, te corresponde al tema DMD, a mí, a Seba, cualquiera que esté ahí con el tema de recursos, que le hayan dicho, oye, tú entras a trabajar a Diana WM y trabajas desde qué horas le tocaría, como de 12 a 8, no sé, qué sé yo.
+
+Richard Quinteros:
+Yo creo que tú te diste cuenta de la actitud de Pablo cuando me respondió por el chat. Él siente que de repente, yo no sé si lo ve así, pero no puede permitirse que alguien más le dé instrucción en una persona como yo, ¿entiendes? Y yo lo sentí así.
+
+Hector Palacios:
+Es una situación re judía, ¿no?
+
+Richard Quinteros:
+Es re judía porque... Se siente feo, se siente feo. Sí, sí, sí. Y te digo que así me siento, ¿eh? Así me siento y estoy a nada, a nada de que digo, mira, hasta aquí soy arquitecto.
+
+Hector Palacios:
+No, no, no.
+
+Richard Quinteros:
+Pues es que, claro, o sea, yo trato de ayudar, y mi respuesta fue, mira, ¿sabes qué? Yo siento que lo pude abordar bien, porque yo le dije, mira, sabes que yo nada más le voy a responder con esto, y pues ya mañana tú le das la respuesta del feedback completo, ¿no? Para que ellos queden, para tranquilizar al cliente. El cliente es el que tiene la razón, en la mayoría de los casos. O sea, tú tienes que tratar de apoyarlo.
+
+ Y yo, si yo estoy en horario laboral todavía y yo puedo revisarlo, permíteme hacerlo. Y que tú me digas, no, que no me puedes llevar la contraria, no estamos llevando la contraria. O sea, no me estás permitiendo hacer bien el trabajo, ¿me entiendes? Yo no quiero, o sea, perdóname, yo estoy tratando de hacer las cosas bien. O sea, sí sé que el cliente de repente, pero es injustificable. A Florencia se lo dijo en pleno grupo.
+
+ Florencia le dijo que, oye, pero tus horarios no pueden ser, o sea, estamos en plena etapa. Donde estamos haciendo pruebas y demás, tus horarios no pueden ser lo que tú pretendes que sean, tienes que adecuarte.
+
+Hector Palacios:
+¿Florencia de dónde está trabajando? ¿Está trabajando en Argentina también?
+
+UNKNOWN_SPEAKER:
+Argentina, correcto.
+
+Richard Quinteros:
+¿No está trabajando ella desde Colombia, que me habían comentado? No, yo creo que está trabajando en Argentina, yo no sé dónde vive Florencia, pero su acento es argentino.
+
+Hector Palacios:
+Sí, pero parece que está viviendo en Colombia, ahí lo validamos Richard igual, pero si el tema del horario está un poco más crítico efectivamente.
+
+Richard Quinteros:
+Yo me estoy quedando sin consultor a partir de las 3 de la tarde. Me estoy quedando yo sin consultor de apoyo ni nada. Ese hueco queda vacío.
+
+Hector Palacios:
+Déjame validar que efectivamente en la mayoría de los casos sí respetamos el horario del consultor, pero la verdad es que el partido Diana llegó, voy a revisar el contrato, a ver qué les dijimos, porque al final eso es lo que va a mandarnos. Y dice que nos mandamos el cagazo, decirle a Pablo, de que realmente trabajar a su horario también es un tema más de arriba, de una desalineación que tenemos que ver cuál es la mejor forma de comunicar.
+
+ Entonces, de calidad en ese punto tiene sentido.
+
+Richard Quinteros:
+Una pregunta, que te quiero hacer. En los proyectos que hay ahora de WM, en los que se está enfrentando O.S.C.M. Como tal, como empresa. De los proyectos de E.W.M. Normalmente, por ejemplo, en el que estuvo Carlos, no lo tomo como, o sea, lo tomo como ejemplo, quizás, como referencia, pero en ese proyecto en el que estuvo Carlos, ¿estaba Carlos como arquitecto, me imagino?
+
+Hector Palacios:
+¿Él tuvo algún apoyo? Hay que no le diga, o sea, para mí el proyecto de E.W.M. Es rinchar este. Como sabes tú, yo vengo del mundo jefe, entonces no tenía experiencia. Siempre me apoyo más en ti y en Jon en saber qué pasó antes.
+
+Richard Quinteros:
+Sí, sí, lo que pasa es que aquí podemos hacer algo muy diferente. A lo que voy con esto es que, bueno, el equipo no lo hace uno solo.
+
+Hector Palacios:
+A eso voy. No, no, de dos formas. No sientas esa presión, sientes el apoyo mío. O sea, no sientas que tienes que echarte todo porque al final sí que hay que bajarle un cambio a esto porque viene quieren, con toda la presión. Y viene Florencia también con toda la presión, porque todos están trabajando bajo restricciones de plata, ¿no? Y que, efectivamente, al principio ya estuvimos más lentos, porque se movieron lentos, porque estuvieron en esas negociaciones y ahora quieren que lo hagamos todo en tiempo récord, así como me dijiste también que querían ya tener el tema del grupo de clientes, etcétera.
+
+ Entonces, sí, efectivamente hay que gestionar un poco Ese es el trabajo mío, que no va a ser fácil, pero el trabajo mío y voy a apoyarme de él si es necesario, pero para decirle oye, avancemos a tiempo. Ahí tengo que revisar el punto, varias cosas que tengo que revisar. Uno, el horario de parlo. Dos, cómo lo empiezo a apoyar más para que tú sientas que no te guías todo. No sientas que así, no tienes que tomarte todo y no te sobreestreses por eso.
+
+ Si al final para eso estoy yo, para eso está John también. Tenemos que buscar la forma de sacarle esto, sacar tanta presión.
+
+Richard Quinteros:
+A ver, yo me refiero, apoyo en el sentido EWM, no la gestión, porque Jonathan hace muy bien su trabajo, tú haces muy bien tu trabajo, no me refiero a eso.
+
+Hector Palacios:
+Yo me refiero efectivamente a las dos cosas, me refiero al tema de la gestión, si hay cosas que podemos apoyar, porque está el tema de parar un poco a Kery, y John puede hacer su trabajo, va a depender más de mí, ¿no? Y tengo que asegurarme que no se revienten ustedes. Porque una de las cosas que nosotros, cuando llegamos a DM, lo que tenemos que hacer es cuidar tres cosas. Uno, que las finanzas tengan sentido, obviamente.
+
+ O sea, no puedo dar rienda suelta a todo y que el proyecto se haya negativo. Dos, es que tenemos que intentar llegar a los tiempos de proyectos quizás exitosos, ¿sí? Y tres, pero también tengo que cuidar al equipo. No puedo tenerte a ti que te quieras así como ya reventar y decir, no, no quiero Quiero trabajar más. Tampoco puedo tener a Pablo con lo mismo. Ninguno tiene que estar en esta posición.
+
+ Tenemos que buscar que el equipo se sienta bien, porque a la larga, para GoSCM, esto es un pilar tan importante como los dos, porque el asset, cuando tú tienes una fábrica, el asset que es la máquina de producción, ¿no? Pero aquí que en una consultora el asset, lo que hace que esto funcione somos nosotros. Nosotros somos los assets de la empresa. No podemos permitirnos. No podemos permitir que los consultores se quemen y se vayan.
+
+ Tenemos que cuidar que tú y tanto Pablo se sientan bien, a gusto, y que están avanzando bien, y que se sientan apoyados con tal de que esto lo llevemos bien. Y eso va a significar a veces que yo realmente sí voy a tener que parar a Kering. Voy a tener que decirle, oye, Kering, tenemos que alinear esto, que los tiempos de respuesta tienen que ser un poco más pausados. Yo entiendo que están avanzando a mil con el tema de las pruebas de ellos, déjenos hacer nuestras pruebas bien también, porque al final nosotros estamos en eso, ¿no?
+
+ No estamos trabajando para Flor, sino que Flor está trabajando para que nosotros hagamos la prueba bien, ¿no?
+
+UNKNOWN_SPEAKER:
+Debería ser en ese sentido, creo yo.
+
+Hector Palacios:
+O lo ves tu instinto. Entonces, para que no nos pongan tanto esa presión, porque yo entiendo el tiempo de Pablo, del horario que puede ser complicado. Ahora siento que en una situación donde son cosas Pimpón, así como para, te lo saco, te lo devuelvo. Sí, así como que el horario si mejora un poco, pero si es que Flor te manda algo, no sé, ponte a las 5. Ella no puede estar esperando que a las 7, no sé, ya esté, porque ella está matándose y trabajando a las 7 o a las 8 de la tarde, qué sé yo.
+
+ ¿Qué va a pasar? Pablo quizá con su tiempo más lento, porque tiene conocimiento más lento, pero sí tiene que dedicarse a hacer un análisis bien de esto, de probar bien el escenario, y probablemente en su horario, cuando sea las seis de la mañana de Diana, cuando se despierte Flor, cuando se despierte Kerin, ya lo ha devuelto, pero en el tiempo que corresponde, ¿no? Lo mismo para ti, es cosa... A mí me preocupa que te estés tomando tan bien el trabajo de palo, o sea, por X motivos, por el tema de que...
+
+ O una por el horario, por la falta de conocimiento, te vaya a reventar. Y eso es lo que yo quiero evitar. Tenemos, de hecho, tenemos que tener a Pablo para que apoye, ¿no? No al revés. Entonces veamos cuál es la mejor forma de hacer que Pablo pueda hacer su trabajo si es que hay un gap de conocimiento y horario. Déjame resolver el de horario. Déjame resolver el de conocimiento. Matemos dos pájaros en un tiro.
+
+ No solamente resolver el traer a Iker, porque Iker, de hecho, incluso el DM de Pablo. Entonces ahí puede haber una comunicación más fluida de que esté Iker apoyando a Pablo y haciéndose cargo de que Pablo sí esté dando lo que tiene que dar en el proyecto. Yo puedo hablar con Iker. Y también que Iker te apoye a ti para todas estas decisiones que tenemos ahora, por ejemplo. El tema del grupo cliente.
+
+ No tenemos idea, no tenemos noción de caso cliente anteriores, si esto es normal o no. El caso que habíamos hablado de la unidad mediática, de que no tienen pallet también. Son cosas así que interactuar con Iker y le podamos sacar Cuba. Ojalá que tenga disposición.
+
+Richard Quinteros:
+Sí, por eso te digo, pensar en el apoyo de Pablo, está bien, no lo veo mal, pero también pensar en mi apoyo.
+
+Hector Palacios:
+Sí, sobre todo nos va a importar tu apoyo.
+
+Richard Quinteros:
+Por lo que he visto hasta ahora, pudimos haber tenido, inclusive, porque puede existir, la verdad, hasta que yo no le algoritas y que ellos me digan su feedback, puede que existan errores de diseño y pues los errores de diseño son abocados a qué, a que de repente pues yo no, en ese momento pues de repente se me pasó algo o demás y pues bueno, se diseñó así.
+
+Hector Palacios:
+A veces diseñamos cosas sin saber la data, me está pasando ahora mismo en el proyecto, nosotros también es un problema para los de KPMG que no están apoyando, un problema gigante. Oye, pero es que les vamos a cambiar todo lo que Ya, pero es que ahora recién tengo la data, les digo. Entonces, bueno, hay cosas que yo puedo decir bien generales, hasta que no tenga la data yo no voy a desaer, en realidad.
+
+ Y es lo que está pasando acá, es lo que nos pasó a nosotros, es el pan de cada día, que el diseño es el diseño, pero después lo que vale, es una guía, ¿no? Pero después lo que vale es que realmente tengamos las iteraciones con la data, y ahí es cuando sean los perros.
+
+Richard Quinteros:
+Porque me preocupa, y te lo digo, es por el tema de los tiempos. Porque yo siento que, claro, entre las interacciones con los datos nos damos cuenta o nos podemos estar percatando de que está fallando algo de repente en el diseño, de que todo se empieza a juntar. Una bola de nieve y que tienes al final pues retrasos, retrasos, retrasos.
+
+Hector Palacios:
+El pan de cada día, ¿no? El pan de cada día de los proyectos. Pero, por ejemplo, ahí me preocupa es eso, ¿no?
+
+Richard Quinteros:
+Porque, por ejemplo, ah, mira, aquí hay ya recorrimos un tiempo para febrero, para las pruebas integrales. ¿Pero por qué se movieron?
+
+Hector Palacios:
+¿Por qué no teníamos la integración? ¿Por qué se movieron un carajo por eso? ¿No tuvieron que prestar ayuda?
+
+Richard Quinteros:
+Se está moviendo por todo esto que va a ir pasando, que estamos viendo los datos, de que vemos que esto nos jala, de que esto...
+
+UNKNOWN_SPEAKER:
+¿Entiendes?
+
+Richard Quinteros:
+Entonces se puede ir moviendo y me preocupan los hitos y la fecha, me preocupa.
+
+Hector Palacios:
+Sí, no, tranquilo. Eso ya me lo voy a tener que preocupar. Me preocupo yo. Sí, tengo que gestionar con ello y comentarle, oye, sí, sí, es verdad que nos estamos atrasando, pero mira, fue por esto, por este punto A, B y C. Nosotros te ayudamos con A, B y C. Y de hecho, nosotros pusimos plata, por ejemplo, para hacerle a Omar que hiciera eso. Entonces, ya está bien que se pongan así nerviosos, lo que sea, pero nosotros lo hemos ayudado.
+
+ Ahora, que no nos revienten. O sea, no porque ellos no nos hicieron el tema, tiempo, porque nosotros debimos estar estado desde diciembre trabajando con esto, ¿no? Y se demoró más de la cuenta, que lo entiendan. No es solamente el tema de que no se me revienten los consultores, que si nos empezamos a apurar mucho, la calidad se va a ir para abajo y se nos va a pasar algo. Entonces, eso es lo que tenemos que evitar.
+
+ Ahora, Richard, como consejo, tema de Pablo, Hay un problema que no es usual, ¿no? Porque tú ahora estás de arquitecto y estás con un tipo que tiene... ¿Cuántos años más que tú tiene Pablo? Tiene como casi 10 años más que tú y tiene 13 años de experiencia y todo eso. No es fácil lidiar con esa situación, ¿no?
+
+Richard Quinteros:
+Ya la he vivido, ¿vale? Ya la he vivido porque como llega un dinosaurio, de repente siente que no puede verse sobrepasado por alguien más joven, quizás, o alguien con menos experiencia.
+
+Hector Palacios:
+No, y eso no va a pasar, eso no va a pasar, o sea, jamás lo va a ver de distintas formas, porque si no sería bajarse lejos el ego como cinco pedales, y eso es bastante difícil, bueno, o sea, de que alguien se mire para abajo y se mire como a asumir ya, mira, es que este cabrón chico que me tiene, qué edad tenés tú, Richard, 29 años, venga a decir las cosas como son, está complicado. Yo te cuento un caso de alguien muy cercano que tiene el mismo problema.
+
+ Sebastián Alba, ¿lo conoce o no? El colorín, el que es Operational Manager.
+
+Richard Quinteros:
+Sí, yo lo conozco.
+
+Hector Palacios:
+Llegó a GoSSM cuando estábamos en GoSSM recién empezando toda la parte de Chile. Empezaron a contratar a todos estos pendejos como yo. Así, recién salió de la universidad y empezaron a aprender de IEP. Pero éramos como una startup. Entonces, muchas de las cosas que hacíamos las hacía Felipe era el de venta, Felipe era el director. Todo lo hacían. Necesitaba un apoyo, necesitaba traerse un PM luego, porque no teníamos.
+
+ Y entre tanto buscar y buscar, el que más correspondía, al final dijo ya, me voy a arriesgar con uno de estos pendejos que estoy contratando, uno de estos que iban a ser consultor junior, como yo. Y puso a Sebastián, en vez de consultor junior, lo puso de PM. Y le pasó lo mismo. Entonces, qué pasa, que Seba tenía Seba es más chico que yo, tiene como 30 años, tiene como tu dama a mí, ¿no? 31 tendrá ahora.
+
+ Y fue una apuesta, ¿no? Y Seba tuvo que empezar a liar con casos como que llegaba un proyecto y el arquitecto decía, pero esto no me sirve para nada. Y tenían razón, pero era un tema de una inversión de tiempo que al principio hay que dar, ¿no? Y él tuvo que aprender a hacer esto porque ahora, mira, imagínate, está de OM y tiene que liar con DM que están, que son todos más viejos que él. Yo soy más viejo que él, que soy de los más jóvenes.
+
+ Y los demás tienen 45, 43, 40, qué sé yo, como 20 años de experiencia. Una de las DM tenía 12 años de experiencia cuando yo recién entré, imagínate. Entonces ya tiene como, le saca como 14 años de experiencia, sea probablemente, y también él está por encima y tiene que lidiar con eso. Eso no lo va a cambiar, Richard, es como de todo consultor viejo, va a ser así. Va a ser difícil, vamos a tener que aprender a lidar con ello.
+
+ En el tema de, o sea, si hay temas donde Pablo no te está apoyando, levántalo y yo veo cómo lo apoyamos. Pero efectivamente sí hay que tener un poco cuidado con el trato con él, porque eso no te va a funcionar. A SEA no le funciona, por ejemplo. Él tiene que buscar otra forma de comunicarse con todos los que están más abajo y que son más viejos que él para que funcione. Y esa es la carrera de toda persona que le va bien.
+
+ O sea, el hecho de que tú estés joven, de arquitecto, que tienes 29 años y estás de arquitecto, eso te pone en una situación, una, que está progresando muy rápido, pero dos, te va a pasar que a menudo vas a tener gente que esté en tu cargo y que sea mayor. Entonces va a ser así todo el tiempo. Bueno, vamos a tener que buscar la forma a hacer el workaround y de repente ¿qué te pasó con Pablo de la ADN?
+
+ Que quizá Pablo se enojó, te la lanzó y tú vas a tener que quedarte quieto porque vas a tener que ser el mejor hombre.
+
+Richard Quinteros:
+Como lo hice. Yo lo que hice fue, ósea, ánimo, vamos adelante, pero me la tragué. Pero también está feo que en el equipo el ambiente se torne así, no es grato trabajar así, y la idea es que a pesar de esa situación, que obviamente yo me la puedo comer, yo no tengo ningún problema, el ambiente de trabajo se torne de esa forma, no es lo ideal. No, no, no es lo ideal. Que tú trates a una persona que en teoría durante el proyecto está por un eslabón por encima de ti, por así decirlo entre comillas, por no decir muchas cosas, y que frente todo el equipo tú lo trates como un trapito, tampoco siento que es una actitud consultor que pensaría yo Go quiere, porque siento que los consultores que Go maneja son unos consultores que, oye, tú necesitas algo, dale, yo te ayudo, oye, mira, vamos a hacer esto, equipo, fomenta el trabajo en equipo, no fomenta esas actitudes, ¿no?
+
+ Entonces siento que sí, tiene el ego, todo lo que tú quieras, te lo compro y de repente yo me la tragar sin ningún problema, pero que el trabajo se formule de esa forma va a hacer que las cosas anden mal. Y no solamente eso afecta al equipo, afecta al proyecto. De todas formas, de eso lo de Pablo no se justifica.
+
+Hector Palacios:
+Yo te digo que si pasa, va a tener que tú no tienes que brillar fuego con fuego, obviamente, y tienes que estar siempre, tienes que estar con un paso más arriba y ser el mejor hombre. Pero no significa que eso tenga que pasar. De hecho, Eso es lo que yo tengo que evitar. De hecho, por eso apenas salió. Yo no tenía idea que ustedes de repente con Pablo tenían sus controles.
+
+Richard Quinteros:
+No sabía.
+
+Hector Palacios:
+Yo juraba que yo me conectaba una vez a la semana y veía todo bien.
+
+Richard Quinteros:
+Nunca había una discusión ni un desencuentro. Es que es que es que me pasó una vez y te lo comento. Me pasó una vez donde me parece que fue dentro de las etapas de Asís o 2D. Ok. Este, donde pues Pablo en algún momento me dijo, me llamó Richard, podemos hablar en privado. Digo, sin problema, le vamos a revisar, vamos a hablar. Siempre con la mejor actitud. Mejor actitud de, vamos a escucharnos, vamos a intercambiar ideas, vamos a hacer un equipo.
+
+ Actitud, equipo, modo equipo. Y en una de esas, él me lanza una respuesta y me dice, pero tú eres el arquitecto.
+
+UNKNOWN_SPEAKER:
+¿Me entiendes?
+
+Richard Quinteros:
+Como que me la puso así. Y yo no le respondí mal en la sesión que tuvimos el día de hoy. O sea, él me decía, sí, men, está bien, de acuerdo. Me tiene como que lo dominé de forma correcta, pero que esas respuestas así, como que para generar odio, eso no pienso que yo que esté bien. Esa vez se la pasé. Y ahorita me la vuelve a lanzar en el grupo. O sea, yo tratando. Pero es algo que tienes que revisar con tu delivery, no conmigo.
+
+ Inclusive le dije revisarlo con él, no conmigo. Pero él aún así se tomó la potestad de responder. Feo como me respondió, como que ubicándome, ubícate, no te metas conmigo, algo así. Esa actitud la tiene Pablo. Y te digo porque yo me doy cuenta que él no quiere escucharme. O sea, él me pide ayuda, te digo que yo me meto a explicarle, nos conectamos. Yo veo que está cometiendo errores porque no está haciendo las cosas bien en su configuración.
+
+ Yo le explico, mira, tienes que hacerlo así, métete por aquí, déjame ver aquí. Pero él actúa como que si ya son supiera, ¿no? Ah, ok, sí, sí, eso yo ya sabía yo que era así, ¿entiendes? Como que es una actitud totalmente, o sea, yo no sé qué nombre ponerle, tóxica, pues, eso no está bien. Entonces, yo te entiendo tu punto, está bien, y yo sé que no es la primera vez que me pasa, me encontraré con eso muchas veces más, ¿vale?
+
+ Me he encontrado con eso en varios proyectos, donde pues, lo demás por creer que tiene muchos años en Me he encontrado mucho con eso y por eso mi reacción y cómo yo reacciono, yo le dije a él, pues bueno, mira, ¿sabes qué? Está bien, tú de acuerdo, ánimo, vamos a echar para adelante, tratando de actuar como un líder. Pero que tú sigas haciendo, llevándose esta actitud entre las patas. O sea, yo te puedo decir ahorita que yo no puedo intervenir con Pablo en una llamada aparte para entendernos mejor, porque yo sé que no va a pasar.
+
+ Porque Pablo tiene una actitud tóxica, pues apenas encuentre cualquier cosa se va a poner la defensiva contra mí. Entiendes? Yo no puedo tener una conversación, decir mira Pablo, vamos a arreglar las cosas, mira, somos un equipo, vamos a verlo así de la mejor manera. No puedo tener esa conversación con él porque no sé, o sea, como te digo, y que la transmitas al equipo, tampoco lo veo bien.
+
+Hector Palacios:
+Hablamos algo entonces, Richard. Sí, yo estoy totalmente de acuerdo contigo. Y sí, Pablo, bueno, es que como te decía, lo veo complicado y que a veces el fiel de parte tuya va a ser una complicación por toda su experiencia, etcétera, el ego. Empezamos a usar Mediproxy o Ion. Si es que vemos una situación así, levántamela. De hecho, ¿qué propongo? Empecemos a tener sesiones, tú y yo. No te pido que sean sesiones así con mucha frecuencia, sino que algo como lo que hago con mi Cluster.
+
+ Por consultar que tengo acá, yo tengo una sesión de 15, 30 minutos cada dos semanas. Solamente para levantar cosas como alerta, así como incomodidades como esta de acá. Te pido disculpas si no la tuvimos, porque yo pensaba una que... ¿Qué es el caso usual? O sea, son sesiones que uno generalmente tiene con su DM y si hay cosas como tal, así que yo no me siento súper mal en este proyecto o eso. No sé quién es tu DM, pero yo hubiera esperado que ese tipo se me hubiera acercado a mí, me hubiera dicho, oye, mira, Richard está pasando por estas cosas en el proyecto, ¿de qué forma podemos hacerlo mejor?
+
+ Es una forma, pero también sin quitar en ningún comunicación que tenemos que tener los dos. No sé si te parece que empecemos a tener sesiones como 30 minutos a lo más cada dos semanas para ir midiendo la temperatura, básicamente, cosas como esta, que yo no tenía idea de que me vengo a entrar ahora y me siento un poco culpable, pero la verdad es que yo, la sesión que me conectaba con ustedes, yo los veía tranquilos, entonces nunca pensé que tenían roce o que habían problemas.
+
+
+
+Richard Quinteros:
+No, es que yo quisiera que no hubiera roce, yo quisiera. Pero va a ser imposible así, o sea, va a ser imposible con Pablo con esa actitud. Entonces, lo que tenemos que buscar es corregir la actitud de Pablo. Oye, mira, pero, por ejemplo, tienes que tratar de tener una actitud más integral, ¿no? Con todo. O sea, estamos trabajando en equipo, entonces vamos a tratar más de escuchar, ¿vale? Si tú estás de acuerdo con algo, dilo.
+
+ Si no, también dilo. Pero no hay formas de decirlo. Como que se ve que parece que quieres pelear, pues. Porque yo te voy a ser sincero, yo no me voy a poner en ese afán.
+
+Hector Palacios:
+No voy a pelear con nadie. Sí, porque al final tú le respondiste en el grupo por algo que había hecho él, ¿no? Que él estaba tirando para la cola con algo, quizá.
+
+Richard Quinteros:
+No, no, la verdad que no. Estaban discutiendo por el tema de la entrega entrante, o sea, del tema de que, pues, Florencia le estaba pidiendo a Pablo que, oye, mira, tengo este escenario, que si nada más me puedes decir que la entrega está bien, de WM y que pues ya pues... Pero es que depende de cada consultor cómo lo aborda, ¿no? O sea, él de repente no tuvo que haberlo abordado ahí de la forma en que lo hizo, de que, oye, mira, ya es tarde, cerré.
+
+
+
+Hector Palacios:
+¡Pum! ¡Chao! ¿Entiendes? No, no, él... No debería haberlo hecho, debería haberlo levantado a John o a mi hija, eso es lo que debe haber pasado.
+
+Richard Quinteros:
+Entonces, yo... ¿Por qué me preocupo? Porque también, aunque yo también cuido la actitud con el cliente, cuido los roces con clientes, ¿no? La idea no es buscar eso, la idea es empujar a que el cliente hable de ego y diga, estamos bien. ¿Ves? O sea, que diga eso. Yo no sé si en algún momento el cliente va a levantar la mano y decir, oye mira, Pablo no me sirve. Con esas actitudes que tiene, no. A un cliente de repente en ocasiones se le puede decir, no, pero hay formas de decirlo.
+
+ Hay que cuidar esa actitud.
+
+Hector Palacios:
+No puedes decirle...
+
+Richard Quinteros:
+Porque, venga tío, o sea, suena feo, pero puedes decirle, mira, déjame lo reviso y te voy avisando, ¿vale? O sea, es una mejor manera de decirlo. Después lee en una sesión aparte y le dice, es que, bueno, mira, ¿sabes qué? No se puede así porque pasa esto y esto y esto. Listo. Pero no le dices tajantemente, no se puede.
+
+Hector Palacios:
+No. No, mira, hagamos lo siguiente. Sí, yo me imagino que adelantaste por eso también, pero voy a pedirle a Pablo Evitemos esos comentarios, si tienen algo de escalar o de repente se está calentando mucho, como me ha pasado mil veces, porque yo también consultor, igual que tú, que la levante al PM que me la levanta a mí, antes de responder a un grupo. Y tú, para evitar todas estas cosas con Pablo, tampoco no le hablen nunca por el grupo y me dijiste que tampoco internamente te va a servir, así que levántamelo a mí también.
+
+ Úsame de colchón, así evitamos esos roces internos que pueden tener los Yo tengo varios puntos, son varios puntos, pero por suerte ahí tengo a mi amigo el note taker, así que lo voy a resumir en unos puntos. Pero tema importante, o sea, al final es suplir un poco, ver, el horario válido. Una de las cosas que tengo que alinear bien, porque aquí alguien está equivocado, ¿no? Luego, el tema del gap de conocimiento.
+
+ Ahí ver, traer, ojalá un perfil como Iker, ojalá disponible Iker, para que nos apoye ahí tanto a ti como a Pablo también, que es de hecho de su clúster. Si no está Iker, ¿quién sería? Buena oportunidad. ¿Y el 2DM quién es, Richard? RICHARD SÁNCHEZ DE LA CÁMARA
+
+Richard Quinteros:
+2DM RICHARD SÁNCHEZ DE LA CÁMARA 2DM RICHARD SÁNCHEZ DE LA CÁMARA 2DM RICHARD S pero mucho, un tremendo conocimiento que se gasta.
+
+Hector Palacios:
+Oscar sería una muy buena opción, si es que no tenemos a Iker, que Iker ya tiene, ya tiene como se llama, un poco en ese brillo.
+
+Richard Quinteros:
+Y yo entiendo que Oscar, o sea, aunque Oscar tú lo metas aquí y él no tenga conocimiento del proyecto, rápidamente, que dice esto no es por aquí, esto es por aquí. Eso es esto. Rápido, rápido, rápido.
+
+UNKNOWN_SPEAKER:
+Entiendes?
+
+Richard Quinteros:
+O sea, porque tienen el conocimiento y te digo que yo lo he notado.
+
+Hector Palacios:
+En última, lo que podemos hacer, que si es que se nos de la mano trabajando con él también. Porque esto, ¿desde cuándo lo venimos viendo, Héctor? Este tema. Este tema del apoyo de hace cuánto tiempo lo venimos viendo. Porque, por ejemplo, sí, 20 minutos, él entra, pasa, se vuelve ahí, ya no hay nadie, ahora...
+
+UNKNOWN_SPEAKER:
+Oye, pero...
+
+Richard Quinteros:
+O sea, ¿qué es lo que está pasando?
+
+Hector Palacios:
+¿Qué es lo que está pasando?
+
+Richard Quinteros:
+Siento que de repente nos estamos quedando cortos. ¿Con el 20%? Sí, nos estamos quedando cortos porque él entra, se va, ya terminó aquí Samir, pero es que no solamente Samir, de repente pues hagan dudas de Pablo, salgan dudas mías, me explico, como que pues se va y viene, va y viene. Entiendo la asignación de los equipos, pero necesito mantenerlos ocupados, pero esto ya da traemos entre las patas desde que comenzamos, de hecho, al tema del to-be.
+
+
+
+UNKNOWN_SPEAKER:
+Perdón.
+
+Richard Quinteros:
+Ya. Vale.
+
+Hector Palacios:
+Tiene sentido lo que dice. O sea, yo en un momento pensaba que quizás con el, ¿cómo se llama?, con tener un porcentaje y no ayudar está bien. Si no, bueno, lo levantamos ahora mismo y revisamos de qué forma podemos incluir a alguien. Déjame revisar.
+
+Richard Quinteros:
+Es que eso es lo difícil que entiendo Parágonos, completa y bastante ocupado.
+
+Hector Palacios:
+Sí, es lo mismo.
+
+Richard Quinteros:
+Eso ha sido el problemita, la disponibilidad de los consultores. Me dijiste que se llamaba Óscar, ni siquiera lo veo. A ver, ya te lo digo cómo se llama. Se llama Óscar Alarcón. Qué raro, porque tengo el filtro solamente de los consultores de Edo Leme y no aparecen oscar.alarcón.com será que él es externo y lo tienen ustedes o no sé, pero si sé que ahorita estoy trabajando en un proyecto de ustedes
+
+Hector Palacios:
+de nosotros Richard, tú eres de Go!
+
+Richard Quinteros:
+sí, o sea, de nosotros pues, pero me refiero a de Go! Pues, trabajando en un proyecto de Go! No lo veo Te mando un pantallazo.
+
+Hector Palacios:
+Te mando un pantallazo.
+
+Richard Quinteros:
+Mira, te lo mando un pantallazo. Hecho. Ya. Eso existe. De hecho, a veces cuando yo tengo dudas muy técnicas, yo se las pregunto a él. Pero así muy rápido, voy por el chat. No lo vemos por llamada ni nada, porque por lo que entiendo esto ocupa ahorita está en reunión por lo visto.
+
+UNKNOWN_SPEAKER:
+Oscar.
+
+Hector Palacios:
+Ah, pero es otra clase de Oscar con una K. Si, si. Igual.
+
+UNKNOWN_SPEAKER:
+No, igual.
+
+Hector Palacios:
+O sea, si estaba revisando a alguien que se llamara, que empezara con O entre los constructores de EWM y no me apareció nada. ¿Será que no es interno? Puede ser, puede ser. A ver. Sí, sí. Yo creo que va por él. Vale, voy a, voy Hacer lo posible para que ahí te den un poco de apoyo. Obviamente no te puedo prometer un consultor de un día para otro. Quizás si un 20 por ciento pueden buscar ahí, que no puede.
+
+
+
+Richard Quinteros:
+Ahí ando yo te digo, pero amigo, dale los tiempos, amigo. No, no, no, no.
+
+Hector Palacios:
+Te digo, no perdés un día para otro. Te digo que el 20 por ciento ha sido un tema de transición. Así quizás más pronto podemos traer a alguien de momento con un 20 por ciento y después cuando podamos traer a alguien al 100 por ciento. Entonces eso es lo que tenemos que empujar. Eso es lo que iba. Pero sí, sí, entiendo el punto de que quizás necesitamos más manos acá.
+
+Richard Quinteros:
+Es que sería fácil, sería no más fácil, sino más sencillo. Fácil es muy, muy, un término no me gusta, pero sencillo. Imagínate, yo en una sesión con el cliente, viendo tema, de repente un conocimiento, alguien con conocimiento también, que no solamente sea yo, que también pueda dar ideas, aportes, haría la situación más fácil, porque en esos momentos no hay mucha participación de Pablo y menos de Samir, porque obviamente Samir está comenzando.
+
+ Pero no hay... Literal soy yo contra el cliente. Pero no hay un conocimiento técnico también. Oye, Richard, pero... Oye, o tú, Francisco y tal, que también podemos hacerlo de esta manera, ¿me entiendes?
+
+Hector Palacios:
+Y yo... No, ahí la recomendación, Richard, es que igual, ni que fuera el caso, Imagínate, hubiéramos un Richard II. Misma experiencia que tú, pero en otras partes más clave, quizás, qué sé yo. Y se complementan perfectamente los dos. Aún así, yo me lo anoto y les digo, no, no, mira, déjame discutirlo internamente y volvemos. Porque puede que salga con una cosa y se termine desalineando. Porque al final puedo pensar que sí funciona, pero después si lo discuten y le dan una vuelta, no, no era.
+
+
+
+UNKNOWN_SPEAKER:
+Entonces...
+
+Richard Quinteros:
+Pero qué bueno. Así como tú me lo estás comentando. Usted lo lleva y lo discute y demás, pero ya no es una sola cabeza pensando en un proyecto, sino son varias. Entonces, a lo que me refiero es... O sea, porque hoy en día en las reuniones no es que haya mucho apoyo. Yo soy sincero. O sea, el técnico, la herramienta, la funcionalidad, no lo hay. O sea, estoy solo yo contra el cliente. Y me toca pensar ahí cómo lo puedo manejar.
+
+
+
+Hector Palacios:
+Mano. Vale, y está explotando más ahora porque ahora es que se está poniendo más duro y estamos reciendo más precios del lado de ahí también.
+
+Richard Quinteros:
+Correcto, por eso es que tú ves que traemos ese tema entre las patas ya desde anteriormente y por eso es que ahora está explotando.
+
+Hector Palacios:
+Porque por eso. Vale, vale, déjame subirle el carácter con prioridad. Yo mañana me junto con Seba. Voy a pedirle unos cinco minutos para discutir el tema. Lo de preparar el speech, obviamente, a ver qué me ayude a subirle prioridad a esto. De momento, lo cual sí puedo hacer, porque lo de consultor es más lento, ¿no? Sí, no, tranquilo.
+
+Richard Quinteros:
+Si ustedes necesitan incluirme ahí y en la plática, pues yo estaría totalmente agradecido de estar y que nos comuniquemos los tres y demos un aporte. O sea, no tendría ningún problema, ¿vale?
+
+Hector Palacios:
+Vale, no hay problema, pero yo creo que sí nos va a creer rápidamente, si no va a ser el tema. Si el tema de escalarle, o sea, de hacerle saber, mira, necesitamos otro más, me va a decir ya. Y le dar toda la prioridad posible también. Aún así, tú sabes que esta vez se toma un poco más de tiempo el tema de los recursos, sobre todo en logística que estamos reventados. Lo que sí puedo intentar hacer es empezar a frenar un poco aquí.
+
+ Mañana voy a dar el mensaje de que entendemos que está con la tenemos tiempo con Capgemini, lo que sea, pero que nosotros también estamos en nuestras pruebas y que tenemos que tomarlo con el debido tiempo y debido tiempo de respuesta también para que no nos estén matando con eso. Para que ellos entiendan que al final, una es que no queremos reventarnos, porque bien lo pueden pedir también, no?
+
+Richard Quinteros:
+Pueden decir, oye, pero qué hora demos de duro, no? Una pregunta, Héctor. Esto ya es una pregunta más de organización. A ver, supongamos que entrara, ah mira, por X o Y se consigue un recurso con conocimiento, el volumen, ¿vale? Tu apoyo, tu respaldo. Digamos organizar el equipo. A ver, supongamos que organizamos el equipo de la siguiente manera. A ver, tú Pablo, bájate a interno. Pero me preocupa Samir, ¿no?
+
+ Porque Samir lo que queremos es que aprenda Entonces supóngate tú, eso no puede pasar. Pablo, bájate con Interno, el nuevo consultor toma entrada, pero el nuevo consultor realmente no solamente va a estar trabajando de entrada, sino que va a estar trabajando de la mano con Richard.
+
+UNKNOWN_SPEAKER:
+¿Sí me explico?
+
+Richard Quinteros:
+Pero ahora el problema no es ese, el problema es la parrilla, cómo está organizada hoy en día y cómo funciona el equipo. Y que Samir tiene las responsabilidades de Internet. ¿Sí me explico?
+
+Hector Palacios:
+Yo pensaría quitar a Pablo de cómo se llama, de entrada, sino que buscaría apoyo. O sea, que lo vaya suplementando y apoyando en todas las cosas que nos sale, para que no avance a 5 por hora, sino que avance a 10. Entonces, busco como un rol que quizás sea un poco más transversal, que aquí esté como se llama abocado solamente una cosa. Sobre todo porque como ya tenemos esto, el equipo, tampoco quiero echarme a Samir, si yo quiero que Samir aproveche este proyecto y que aprenda.
+
+
+
+Richard Quinteros:
+Por eso, por eso. No, no, no, está bien, está fino, está fino. Por eso te decía, como que tenía esa inquietud, pero básicamente el nivel en el que se encuentra Samir, pues básicamente para un nivel que tendrías que tener para que esté probando, no para que esté configurando. ¿Sí me explico? O sea, como para tener probando en el sistema, mira, una entrada de mercancía, una salida, más que user. ¿Sí me explico?
+
+
+
+Hector Palacios:
+Repite ese punto más, como Key User.
+
+Richard Quinteros:
+Key User, es decir, no, mira, a ver, pedido de compra, mira, Samir, tengo esto listo, pruébalo, pum, se lo lanzo. Prueba, o sea, de repente, sí, es un poco rápido lanzarlo a los tiburones, la configuración de una, pum, toma, configura. Sí, de repente, pero no sé, está configurando, pero no sé la parte procesal, ¿si me explico? De procesos.
+
+Hector Palacios:
+Ahí ya no tengo... Está perdido la parte de users como tal.
+
+Richard Quinteros:
+Claro, o sea, te saltaste una etapa, ¿me entiendes? No puedo hacer los procesos, pero ya estás configurando, madre de Dios, tío. Como que un poquito... Están siendo un poquito crudos, ¿no? Bruscos, ¿no? Con la velocidad. Pero bueno, está bien. O sea, al final, yo no cuestiono la metodología GoSSM para que los consultores aprendan. Mi punto, sino mi punto pues el orden de mi equipo en este proyecto.
+
+ A ver, Pablo, supongo que tú dijiste bien, tiene un seniority en otra caja, no es de WM, vamos a hablar de la caja de WM ahora, pero pues de repente organizándolo un poquito mejor y dándote el apoyo que tú necesitas Richard, técnico, buen conocimiento, ponemos a uno con entrada que se va encargando de entrada y a él lo ponemos con interno, básicamente no es complicado, es sencillo, relativamente, y pues son configuraciones básicas que te pueden ir introduciendo a la parte de configuración de WM.
+
+ Yo me encargo de salir, pero eso obviamente tener un recurso que tome entrada, pero que obviamente no solamente hablamos de entrada, sino la parte del apoyo de Richard, sería de repente un buen plan, porque por ejemplo yo ahí en una reunión no estaría dando solamente mis comentarios, sino tendríamos un segundo cerebro que está pensando en una alternativa. Que sí o no, pues tenemos que llevarnos la linterna para platicarlo, está bien, pero hay apoyo.
+
+
+
+Hector Palacios:
+Exacto. Vale.
+
+Richard Quinteros:
+Pero, y tenemos, o sea, estamos hablando, te estoy hablando de una parrilla de cuatro recursos, hoy necesitamos tres. Pero te estoy hablando de un cuarto.
+
+Hector Palacios:
+Sí, sí, sí.
+
+Richard Quinteros:
+Y una organización del equipo, así, me imagino. Yo no digo que la tarea de configuración de entrada de mercancía del a Pablo, no estoy diciendo eso. Es solamente para cómo estructurar el equipo. Porque si tú metes un consultor con buenos conocimientos, digamos, de un cilindro más elevado que Pablo en este proyecto, no lo vas a desgastar configurando el interno. Y lo mejor, vete a configurar salida, bájame este para acá con el interno y tenemos a Samir aprendiendo a usar los procesos.
+
+
+
+Hector Palacios:
+Veamos cuál es la mejor opción en el caso. Porque en última etapa podría pensar, quizás podríamos tener a alguien para poder liberarte un poco a ti. Y que tú empezarás a trabajar más con Pablo, con Samir. Ahora el tema de con Pablo me dice que es complicado. Hay que darle una vuelta. No, no es una...
+
+Richard Quinteros:
+A ver, la decisión, al final la decisión la toman ustedes, ¿vale?
+
+Hector Palacios:
+No, pero Richard, la estrategia es siempre tener que escuchar la operación.
+
+Richard Quinteros:
+No, yo te estoy diciendo, o sea, yo, mis conocimientos, también se pueden aprovechar en configuración, o sea, sin la necesidad de tenerlo como arquitecto, se pueden aprovechar, no, tal vez como tú, como gustes, la verdad es que, pues, yo te estoy dando ideas, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí, sí.
+
+Richard Quinteros:
+Podemos manejarlo. No tienes por qué cerrarse ahí y por qué ser así.
+
+Hector Palacios:
+No, hemos trabajado y pedimos más opinión, y lo resolvemos juntos como equipo al final, si es lo que tenemos que buscar. Tenemos que trabajar más como equipo, tenemos que apoyar más con recursos, tenemos que frenar a Diana un poquitito, tenemos que hacer varias cosas. Así que déjame empezar a llegar a un punto que la verdad que de repente explotó, simplemente no tenía idea, ni siquiera se formó. Pero nada, al final son síntomas de algo que viene delante, que es lo que comentabas tú, que es el recurso.
+
+ Yo hasta ahora, lo que me llevaba, yo te juro Richard, que pensaba de todo lo que hemos hablado hasta ahora, y si es que no es así, también asumo la culpa, pero siempre pensé que era más como alguien que nos apoyara técnicamente. No pensaba que Pablo estaba tan atrás también en el tema.
+
+Richard Quinteros:
+que tú llegue y me pregunte, ¿cómo hago una ubicación? Eso es algo que yo uso. Porque me mostró literal la pantalla de cómo ejecutar. Estaba ejecutando en Edelweiss la LS01. ¿Cómo la LS01? Esa LS01 son transacciones de la otra caja. Nada que ver en Edelweiss. Eso me preocupó un poco, me inquieta.
+
+Hector Palacios:
+Sí, porque creo que yo me había levantado a estos puntos y en ese momento sí, por eso fuimos metiendo a, ¿cómo se llama? A Iker para que te apoyara a ti y eso. Y bueno, en algún momento me dijeron, saquemos a Iker y yo dije, ¿seguro? Nos quieren mantener 20% y bueno, lo sacamos. Creo que quizás no fue buena idea. Estuvimos en un momento de calma y pensamos que estábamos todo bien. Y dije, De hecho, yo le había pedido algo de tipo, le dije, oye, déjenmelo para febrero, por favor, ¿no?
+
+ Quítenmelo por ahora, porque es en verano. Y dije, pero déjenmelo para febrero, casado. Y parece que no lo hicieron. Así que voy a... Pero es que ese no fue el error.
+
+Richard Quinteros:
+El error fue no haberlo colocado al 100%. Eso fue el error. Es que no tiene, es el tema.
+
+Hector Palacios:
+Lo sé, por eso.
+
+Richard Quinteros:
+Es que el problema realmente no es si es el 20% o no, porque él entra y sale.
+
+Hector Palacios:
+Tampoco lo podíamos colocar a él 100%, Richard, porque si no hubiéramos puesto a él de arquitecto. No te hubiéramos podido colocar a ti de arquitecto si hubieras estado el 100% arquitecto y eso a la larga a ti tampoco te conviene. A ti te conviene estar en estas posiciones y que te piden un poco y sí, alguien más de apoyo, pero no alguien como Iker al 100%. Alguien quizás como tú, un poco más bajo que tú, con mayor porcentaje.
+
+ Veamos de qué forma lo logramos.
+
+Richard Quinteros:
+Pero aquí podemos pasar horas, pero por lo demás quedaré en los de repente, como te digo, si yo soy el arquitecto, está bien, pero no haberme puesto un apoyo, ¿vale?, con conocimientos, está mal.
+
+Hector Palacios:
+Pensábamos en ese momento que Pablo iba a hacer más, o al menos eso es lo que yo me llevaba, porque yo lo levanté desde el principio, que el gran problema de esto es que sigue durante toda la operación del proyecto, y es un problema a nivel de OSM en general, la escasez de recursos de logística. Eso es lo que nos está pasando. No es que no queramos, no es que queramos funcionar subóptimamente, es que efectivamente no están...
+
+ Y ahí voy a preguntar ahí a Diego qué pasa con... Porque esto no es algo que estamos lealtando ahora, ¿no? Allí llevamos todo el tiempo de diana discutiendo esto. Voy a ver qué está pasando. O sea, o están saliendo los proyectos de forma como loco y tipo que entramos, lo mandamos al proyecto y lo dejamos 100%? O qué carajo está pasando? O estamos contratando? No, no tengo idea. Voy a preguntarle a Seba, lo voy a levantar contigo también con alta prioridad y veamos qué sale.
+
+ Ojalá que no se transforme en algo que se extienda mucho.
+
+Richard Quinteros:
+Yo siento que mi comentario es que en Google están contratando y van apurados también. Apurado porque pues la manda está apurada. ¿Sabes tú qué salió?
+
+Hector Palacios:
+Te interesaría irte a Egipto. Salió un proyecto en Egipto de EWM y de TM y de IDT toda la vez.
+
+Richard Quinteros:
+El problema, el problema, mira, a mí me han invitado, de hecho aquí, te digo que me preguntaron para, en mi colocación, me preguntaron por, no sé si files tú, no sé si fue John, no sé quién me comentó, no recuerdo bien quién me comentó, fue George, no sé, pero me dijeron Me estaban inclusive buscando la posibilidad de conectarme en un proyecto con Carlos. Creo que era el de Estados Unidos. O sea, no sé si era el de Carlos.
+
+ Y pues no pudieron porque yo no hablo inglés.
+
+Hector Palacios:
+Entonces ahí me caí con los kilos. ¿Qué significaba eso? ¿Trabajar simplemente en el horario de allá? ¿O significaba moverse? ¿Qué era eso? ¿Cuál fue la restricción, Richard? Pero bueno, hoy en día me encuentro estudiando inglés. Ah, pero el tema del inglés, puta. Man, saca el juego a eso, si hay un té de eso te lo paga Go, ¿no?
+
+Richard Quinteros:
+Sí, pero decidí desistir de las clases de Go y tengo un instructor, es amigo mío, y me entiende. De hecho, mi mis clases están abocándose más a la parte conversacional, sabes, como que desde que entras...
+
+Hector Palacios:
+Pero en Go también, si yo tengo una chica que está estudiando inglés y varios de los proyectos están reforzando el inglés porque efectivamente cuando sale el proyecto es que empezamos a preocuparnos más de la parte conversacional y lo que hacen es juntarse a conversar, juntan un grupo de varios consultores de Go más un profe Pero no es igual ahí, en un grupo grande, que estar ahí con un amigo, en una sesión, person person, exacto.
+
+ O sea, hay confianza.
+
+Richard Quinteros:
+Oye, no va a romper el hielo, ¿me entiendes? Sí, sí, va a romper el hielo, está bien.
+
+Hector Palacios:
+O sea, lo haces bien.
+
+Richard Quinteros:
+O sea, como que es mejor. Me gustó más así. No, pero estás bien encaminado.
+
+Hector Palacios:
+O sea, esto, al final, el tema del inglés te abre un sinfín de oportunidades. Imagínate, yo estoy trabajando con árabe ahora y obviamente no estamos hablando en árabe, estamos hablando en inglés.
+
+Richard Quinteros:
+Exactamente, me lo imaginé.
+
+Hector Palacios:
+Y ahora salió ese proyecto de Laval y también, no saben de dónde carajo, vamos a sacar constructores de WM, pero de la zona. Entonces ya ahí, viste, porque Madrid, España, quizás sí, pero el Cairo sí, las pirámides, está bien, voy una semana, pero no sé si voy a ir para allá.
+
+Richard Quinteros:
+Entonces, bueno. Hay mucha demanda de proyectos, eso es bueno, pero algo que también como vos es a quién colocan esos proyectos. No, no puedes, ah, mira, contacto con la editora, lo pongo aquí.
+
+Hector Palacios:
+Sí, no, efectivamente, eso significa que a veces no trabajamos de la forma más subóptima. Es parte de las empresas cuando crecen, también es un poco así. Hay muchas cosas que podrían ser mejor, efectivamente, pero como van todo acelerado y con un cambio constante, cuesta, cuesta. Es un tema. Y es mucha inversión también, ¿no? O sea, también, porque lo que pasa es que si se adelantan a contratar consultores antes de que salgan los proyectos, también es un tema de inversión.
+
+
+
+UNKNOWN_SPEAKER:
+Entonces, bueno.
+
+Richard Quinteros:
+Una pregunta rápida, Héctor. Por ejemplo, cuando contrataron a Pablo, ¿hubo una entrevista técnica?
+
+Hector Palacios:
+Creo que hicieron como 6, 7 entrevistas, según me decía Pablo. Me dijo Pablo, porque yo estuve hablando con él también, y lo que me decía es que él sí era muy claro con ellos de que él no sabía tanto doble. Eso lo dijo varias veces. Cuando me lo presentaron, a mí me dijeron, no, mira, viene un tipo con tres años de experiencia. No me dijeron que Pablo había dicho eso. Pero es verdad que cuando apenas llegó Pablo y lo saludamos en el proyecto, también lo dijo.
+
+ Así como si se preocupó de decirnos a todos, como oye, yo estoy recién empezando con esto. Yo tengo tres años. Lo mismo que yo.
+
+Richard Quinteros:
+Sí, lo mismo que yo. Y no estamos cuidando tanto la parte de lo que me están diciendo mis consultores, la seguridad. Y lo que estamos buscando es deposicionarlos en los proyectos y ya después, bueno, vamos viendo qué se va armando, ¿no? Pero como que se están olvidando ese factor clave. Si usted dice que no está listo, siento que hay que escucharlo. O sea, es importante escucharlo. Porque obviamente no lo vas a meter en el proyecto y vas a dejarla cagar ahí, ¿me entiendes?
+
+
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+No, lo voy a levantar. Que necesitamos a alguien más que un 20%, que necesitamos incluir un recurso más. No pasa nada. Lo incluimos en la nómina nomás y nos restamos ese punto de profit. No pasa nada. Al final eso lo decido yo. Si necesito mucho de Diego al final, porque al final yo levanto la alerta, pero los que tienen que resolver el asunto y el tiempo a la larga. Entonces, pero tranquilo. Te preocupas de que yo lo voy a levantar al cielo y voy a levantar la alerta ahora Porque tenemos un grupo donde levantamos como estas cosas en el Teams y voy a levantar la necesidad de un consultor más.
+
+ Y mañana sí me pongo a discutirlo con Seba para tener el apoyo de Seba. Porque realmente Seba me responde mucho más rápido que Diego. Diego de repente no me da, simplemente me deja ver bolas. Así que bueno, a Seba sí lo va a escuchar y lo va a levantar y vamos a ver cómo resolvemos esto rápido. Dos síntomas, el tema de parar un poco a Diana para que no se pongan tan locos con esto de los tiempos y apoyar un recurso que se quede ya de aquí a lo que se rama el proyecto.
+
+
+
+Richard Quinteros:
+Claro, sí, perfecto.
+
+Hector Palacios:
+Ahora sí me desconecto un rato más y ya vengo a cuatro horas, cinco horas de reuniones esperar. Pero nada, está bien escuchar y el tema de la reunión que te dije, lo mantenemos, ¿no? O sea, tenemos una sesión cada dos semanas de unos 15, 30 minutos, ¿está bien? Sí, está perfecto, sin ningún problema. Vale, buenísimo, lo hablamos entonces. Dale, Richard, gracias por todo el impulso. Un abrazo.
+
