@@ -1,0 +1,456 @@
+AIPO: Well Tie-In Discussion 
+mar, 26 de nov de 2024
+
+0:01 - Unidentified Speaker little lazy. Okay.
+
+1:09 - Khalid Sarfaraz (ADNOC Group D&CS) you the 2-3 minutes. Fareed is joining and guys. Is Sheikh Fareed will be joining? Any idea? He is in the middle of another meeting.
+
+2:26 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) No problem. I can call him. Okay.
+
+2:30 - Unidentified Speaker All right.
+
+2:31 - Khalid Sarfaraz (ADNOC Group D&CS) Does we need to wait for someone else?
+
+2:39 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) No need, if you want we can start now.
+
+2:45 - Khalid Sarfaraz (ADNOC Group D&CS) Rahul, over to you.
+
+2:48 - Unidentified Speaker Okay, so can we start?
+
+2:51 - Rahul Patel (ADNOC Group D&CS) Yeah, you're going to start. Hello, good morning everyone. Today's discussion is to talk about the tying process and how we can plan the demand for tying process based upon earlier conversation we understand that there is separate team planning the tying requirements and then it is not part of the dealing with VDI process which means the demand is independently managed in excel sheets and then procurements are proposed through S4 HANA. So we just wanted to understand this process in detail how how the demand is being derived today is there a way we can automate the process of demand creation because and how this demand is tied to the well plan because for drilling materials we the way we are planning for drilling material is based upon the well plan well ID and well type we will create a bill of materialness for HANA and this bill of material will help us define the requirement automatically so the intent of this discussion is to understand how requirement for tying material is identified, how it is linked to the well type or well ID and then is there a way for us to like automate the steps which are there while the demand is being determined in excel, how we can automate those steps in IVP and if there is an opportunity can we make it similar to drilling where we have a bill of material for tying as well that's the primary and discussion we would like to have and understand that time demand planning process. So Khalid who would be the person who will help us go through this?
+
+5:00 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) The major difference for the tie-in material which is linked to DWS is that we don't always take the wells completely from the DWS for the tie-in plans because there will be existing wells which we be converting into new designs which category happens frequently so this normally it does not come from the drilling because it's already drilled wells actually so these numbers normally obtained from the what I say the planning team or the project team so and the basket of materials may change well to well basis and we take it from them actually it is not the typical MTO for a new well the MTO might be typical but in this case always the wells are not new and also we support the project wells also when I say project well some of the time materials are common to project materials so they sometimes come and ask me we need the flow lines for 556 wells for next year. So we add the requirement just like that. So like on pad wells materials under project some of the materials they want us to support for the project coming next year.
+
+6:15 - Unidentified Speaker Sorry. Yes.
+
+6:16 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) So I'll just share the screen where like just to show that how Yeah, yeah. Focus sheet has been worked in so.
+
+6:27 - Unidentified Speaker OK.
+
+6:27 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Like if you see that the focus comes from the number of holes here, but there will be like additional someone else. As I said, no, this comes from requirement from the project team. So basically the requirement always does not come from the DWS, so which we have to manually add this requirement into the forecast.
+
+6:48 - Rahul Patel (ADNOC Group D&CS) So if so, because we're we're going to capture the DWS requirement into IBP which means the initial well plan would be available okay and even the initial well plan no I have again I have to go back to
+
+7:00 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) the planning team because some of the wells might be done through the projects not all the wells in the DWS are going to be done through the time call out contract which requires procurement through or no control so if it is an EPC project it will be done through the specific contract okay and even from DWS no like It just says oil producer. It does not say like a high oil producer wells or Which category of wells it covers under so which this classification we again have to go back to the project team So it is not exactly taken from DWS and converting into the focus for drilling It might be the same case actually because what are wells to be drilled you will get the basket of metals same like that mm-hmm, so it will not be applicable exactly the same for Tine wells So can you can you just walk us through your actual sheet once more like so we understand sure. Sorry, look I have a different classification of materials for like oil producer wells like a water injection well 1500 1500 with flow 4 inch flow line 6 inch flow line this so I basically this decide which percentage the well how many percentage for 4 inch has to be considered I have to again go back to project team and get the information actually which is not available in the DWS. Okay so when you say project team, project team has this information anywhere else? No it will not be available, it will all do in the calculation because the current currently 6 inch flowline I'm just giving an example like for BAP 6 inch flowline used to be the most commonly used wells sorry 4 inch flowline used to be the most commonly higher like 70% But it changed in the coming years. It becomes 16 has been started to be used more. So when I went back to them, they said no. No, the process parameters are changing in BAP, so the new zones we have to calculate that with 16 flowline more than the 64 inch flowline. So these parameters are not given from data place.
+
+9:03 - Rahul Patel (ADNOC Group D&CS) That's what I'm saying.
+
+9:05 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) So even we put a template.
+
+9:07 - Unidentified Speaker Sorry, sorry, no.
+
+9:08 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Even if I create a template, with this percentages no but it keeps on changes and as I said the project well materials has to be added to the forecast manually always like one more sheet I will just show you for like I just did for recently for ASR okay this ASR was we did the forecast okay then there was a requirement project team like if you see this one it is a sheet is a requirement came from the project team this specifically want only this materials for seven 17 wells so these type of requirements I have to add it only manually like they specifically said 8 inch ball valve they need 64 numbers or transmitter they need for 17 wells 4 per well like this ball valve they need 85 numbers so these type of requirements keep continuously comes and these type of requirements I have to add it only manually into that sheet so it is not always basket of words it keeps on repeating.
+
+10:07 - Unidentified Speaker Am I making clear? Yeah, yeah, yeah.
+
+10:09 - Rahul Patel (ADNOC Group D&CS) So you're what you're saying is there is a lot of manual intelligence in between. There is no data available in system which can directly correlate between the well plan and the requirements for time. Yes, and there is this additional add-on requirement which keeps on adding, which means that there is no fixed bill of metal or metal basket.
+
+10:32 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) which correlates between the well type and requirement for like some type of wells have the fixed bills but I'm saying that additionally there will be requirements coming keep on popping in also and the as I said the basket of materials is not fixed for one type like literally there will be 1500 rated well 2000 even when you say oil well no you have 1500 with HIPS 1 classification is there without HIPS 1 classification 2500 rated well will 6-5
+
+10:57 - Bastian Osorio MTOs will be there for one particular well. Question from here.
+
+11:02 - Unidentified Speaker Two questions.
+
+11:03 - Bastian Osorio First of all, I didn't check if you identified the wells individually. I just noticed you have the well type. Do you identify the wells individually and then assign them the required materials or it's just per well type?
+
+11:23 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) No, per well type. Individually, it's a tedious task to go and assign. So like if I have 20 wells, I will put a percentage for 2,500 rated with HIPs, like 70%, something like that, based on the past history of consumption.
+
+11:39 - Bastian Osorio But how do you identify the ones that require these materials? At which level, I mean? At the well type? Identify the materials? I have a classification.
+
+11:49 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) No, as I said, I have different material. MTOs are available. For each classification.
+
+11:55 - Rahul Patel (ADNOC Group D&CS) So the question so the question here is that we have well type right which identifies what type of well but we have unique well identifier which identifies every well uniquely right well number and there is a backup number as well. So when you create this material requirement plan for say tine, do you create well type can be one of the input, but essentially you you need a plan for every well, right?
+
+12:28 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Yeah, but as I know, well number is not important for me. Actually, like if I have 30 wells coming for next year for 13 wells, I will classify 70% of one type and the 20% of another type like 10% of another type. So retail information will not be available for me from development for like which classification to be considered. They have this information maybe six or seven months before the drilling only the forecast I have to give it for three years right.
+
+12:58 - Hector Palacios (ADNOC Group D&CS) Then okay a question here where are we storing the stock then because I guess that if you are planning in a aggregated way then we are not procuring it for three years right we are procuring only for one year
+
+13:11 - Rahul Patel (ADNOC Group D&CS) right.
+
+13:11 - Hector Palacios (ADNOC Group D&CS) Yes but when you procure are you keeping a stock somewhere so they whatever well can use it then when it says stock is what a physical material availability yeah yeah it will be in top 13 right it's in ad-hoc
+
+13:27 - Khalid Sarfaraz (ADNOC Group D&CS) inventory the you you keep it in ad-hoc inventory right you don't there is no vmi for that I don't know okay documentary it's basically by material type you don't care how uh so you care about how many wells are there by particular material type, but you don't actually care about particular wells, right? No, we just divide.
+
+13:50 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Because well number I link it only when I withdraw the material from BAP13. Like issue is specific. So probably you when you're issuing you're issuing to that particular WBS element for the Exactly for that particular well number I each will have specific WBS and I link that when I take it take the material from BAP13.
+
+14:12 - Khalid Sarfaraz (ADNOC Group D&CS) but for the planning purpose for the each material type you must have some let's say not bill of material but some idea right this may require this initial initially when you start I said no bill of material is there
+
+14:27 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) for some template bill of material is there for all the type of versus that additionally some requirements come that's what I said coming so you have a yeah yeah okay so the template below How do you know what additional
+
+14:42 - Rahul Patel (ADNOC Group D&CS) matter is required?
+
+14:43 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Is this something the project team tells or you look at that additional requirement from the additional requirement from the project team? I take it from the project team only like it. As I said, no day sometime because we normally procure material for off pad only like some of the on pad materials are common so they ask specifically which material they want for how many number of wells. But that will be only like they give us the list to me.
+
+15:06 - Rahul Patel (ADNOC Group D&CS) They gave me the priority or So do you have metals common with drilling or the metals for tying are completely? No, drilling is not common. Tying is separate. No, drilling and tying is common. From a material number perspective, there is no overlap between materials for drilling and tying, right? Everything is separate. No, no, it is separate. Khalid, we have a separate metal type for tying or is it part of drilling metals only?
+
+15:29 - Khalid Sarfaraz (ADNOC Group D&CS) No, it's a part of the drilling only.
+
+15:31 - Rahul Patel (ADNOC Group D&CS) Drilling material, yeah. Okay, okay, okay. So how do we identify the metals which are required only for tying.
+
+15:39 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) They have separate store for tying you know because even in the tying also we have JV and ASR we have specific store to identify the tying materials.
+
+15:53 - Khalid Sarfaraz (ADNOC Group D&CS) Do they have a classification in the classification?
+
+15:57 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) No.
+
+15:57 - Khalid Sarfaraz (ADNOC Group D&CS) So only thing is by store only there is no other way to encryption or any other attribute in the material master.
+
+16:08 - Rahul Patel (ADNOC Group D&CS) No, no, no.
+
+16:09 - Arun Tejnarayan (ADNOC Group D&CS) So when I say store, is it like a plant code or location code in this one? Or is it like storage location?
+
+16:19 - Hector Palacios (ADNOC Group D&CS) And what is the plant? Because in the in the plan that I saw the forecast we we don't have the plant. So how would you know in which plant you store?
+
+16:32 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) forecast we don't have plan.
+
+16:33 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Yeah, but again the store number and I say it, I'm not sure. No, no, no, Yeah, yeah, we do separate focus. Yes, yeah, so that means as I said, even when we create the SAP code for a particular number, also the plan number is given in that against that SAP number.
+
+17:16 - Arun Tejnarayan (ADNOC Group D&CS) OK. So just just to understand. So basically this time products are not part of the drilling equipment basket, right? There are separate entities and You focus based on the historical consumption, but may I know for in the past like how much horizon do you take into consideration? For the historical consumption horizon, like do you take three years historical consumption?
+
+17:44 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Three years.
+
+17:45 - Arun Tejnarayan (ADNOC Group D&CS) And then you predict for how much in the future two years or three years.
+
+17:52 - Rahul Patel (ADNOC Group D&CS) OK.
+
+17:52 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) And I don't have to do it every time. Like because current years when we see you know the changes if some changes are happening in the material consumption we know it in the current year itself right like like because we are handling the time also so when we issue the well technical package to contractors we know that okay I can see that the forecast consumption of flow line of six inches becoming more than four inch in the coming years then I will go back to process to confirm this information are we going to get more six inch In that pattern. Because development process parameters are not available in the database for more than six months.
+
+18:30 - Rahul Patel (ADNOC Group D&CS) Question here, you said that you have a standard bill of material for most of the well types, right? Yes, so then if the materials are available in the standard bill of material, then why you use forecast and for which materials you use forecasting.
+
+18:48 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) I use the same bill of material I'm saying that additionally, as I said, which percentage of categories, as I said, no oil well will have at least six classification of oil wells. It's not like oil well means only one bill of material. I have six bill of materials are there for oil well. With flowlines, there'll be a different MTO. With 16 flowlines, there's a different MTO. With heaps, we'll have a different MTO. And 2,500 rated will have a different MTO. So which classification to be selected, I have to go back and see based on the historical how many wells have been tied on 2,000 rated or 1,500 rated.
+
+19:21 - Rahul Patel (ADNOC Group D&CS) So based upon historical consumption you identify which which type of metal bomb you need. Yes, select more, yeah. And then, but then the quantities are as per the bomb or you change the quantity that will passed based upon the quantity as per the bomb only.
+
+19:37 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) There are additional requirements I which requires when I add it manually.
+
+19:41 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) And then the length flowline length shake. How you decide it will be standard?
+
+19:46 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) No, no, no, no. 5 to 6 kilometers I consider for BAP like Buhasa and South East the flow lines are smaller so we consider only 2 to 3 kilometers. That as I said we are part of the execution team so we know the number of flow lines which consumed in a year like number of wells how much flow lines is coming to BAP normally comes from 5 to 6 kilometers longer flow lines for South East and Buhasa has been pretty small 2 to 3 only they have been consumed.
+
+20:11 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yeah so depends on the field the quantity. Depends on the field yes quantity will definitely will change. Yeah, I go. You have to make a note of it.
+
+20:20 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) It's not a standard quantity and the current is a new field will have lesser flowline length. And it's true.
+
+20:28 - Unidentified Speaker How many bombs do you have?
+
+20:30 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) How many?
+
+20:31 - Unidentified Speaker Yeah, yes.
+
+20:32 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) I like oil and water only for oil has only six classification and water have four classifications.
+
+20:38 - Bastian Osorio So can we say is it fair to say there is 10 different bombs you can use?
+
+20:45 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Yeah, 10 different bombs I can use for JV wells.
+
+20:49 - Bastian Osorio Yes, I have only one to two balls. Then a more general question. What would you say are the main challenges for performing these tasks?
+
+20:58 - Unidentified Speaker Challenges. Yeah.
+
+20:59 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) As I said, getting the well information is the challenge. We don't know which bomb to be selected during the forecast, but as previous consumption is so we have not faced difficulty in the forecast. We normally consume in JV and 80 to 85% of the forecast material which we forecast. If I'm consuming. No, I'm saying that if I'm forecasting some quantity and I'm consuming 80 to 85% of what I'm forecasting, then I'm not feeling much of a difficulty in the forecast part.
+
+21:37 - Bastian Osorio And how you how do you the right of course is based on your experience and your criteria and I guess also depending on the requirement of the well but how do you identify the right and when do you identify how well in advance you identify the right bomb for each type of well? Is it a year ago or two years ago?
+
+22:01 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) No, six months ago only I will get the correct well MTO. Which type to be catered for a particular well.
+
+22:09 - Bastian Osorio And how long is the lead time to buy these materials? Because six months doesn't sound, I mean considering the average lead time.
+
+22:17 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) We procure the materials what we forecast for when the procurement team initiates the procurement of materials for one year stock based on our forecasted quantity. The quantity is already available for one year stock for me in BAP 13.
+
+22:31 - Bastian Osorio So it can happen that you you have maybe. You have bought the not the exact same required materials. There are some. Inaccuracy, let's say a way. Yeah, but as I said, it's a contract.
+
+22:45 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Yeah, it's part of the process, so I'll be consuming it. So like if I have not consumed this, I'd be consuming next year.
+
+22:54 - Unidentified Speaker Definitely that item.
+
+22:55 - Rahul Patel (ADNOC Group D&CS) So so the question here is the 15% inaccuracy. How does it impact like do you? Material or you come up you have a situation where you do not have the metal because it was not forecasted but that 15 so you say 85 percent time you consume the forecast right which means what I'm saying is
+
+23:11 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) based on the value which is given to us by the procurement team procurement team sends us the value of like this is the value which we have forecasted this is the value which we are consumed so based on it
+
+23:21 - Rahul Patel (ADNOC Group D&CS) I have seen last two years we have consumed more than 80 to 85 percentage of what we forecasted yeah in terms of value you are saying there is not much obsolescence but at a material do you see challenge that at a certain metal is not available because it was not forecasted?
+
+23:35 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Not forecasted the material was not available. It does not look like some items were unplanned and newly added something like that. The existing materials. It has never happened to us that way. The forecast material was not focused and not available. Like an tendering delay from our side or something like that, that type of actions might be. Reflected or the supplier didn't supply on time.
+
+23:56 - Rahul Patel (ADNOC Group D&CS) Yeah, but then from a since there is a ruling requirement for three years, you never see shortage of material. Because we are revising the forecast every quarterly basis, right? The forecast review is quarterly basis quarterly basis.
+
+24:13 - Unidentified Speaker OK.
+
+24:13 - Bastian Osorio And and when will of course we're thinking about how to make. As some of the tasks that that you and your team is doing, but thinking about that, What would you say will be the first task to automate and that will add more value to your work? What will help you to do your work easily? Thinking about how to automate certain tasks.
+
+24:40 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Automate the task in the sense of the well information from development should be available in the drilling. The process parameters if development or drilling provides the well parameters into the data So it will calculate automatically what is the type of well. But we are not able to freeze the DWS six months ahead of our ID for a long time. It's been tied for a development will not be able to give information two years ahead of time. The process parameters of a well.
+
+25:10 - Bastian Osorio This is interesting. So you you say what you need exactly is the well type with the well type and of course the field type.
+
+25:17 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) I'm saying the well parameters will type is already defined. To use what the exact parameters you will need to define the right materials And plus as I said which wells are going to project or which wells are going to time call out contract is not defined from a database. Which we again have to go back to the planning team to get this information. So like all wells in the database, I don't need to be Just stop on the database.
+
+26:39 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) I'm sharing screen, right? Yes, yeah, yeah. If you see the well parameters, I said the flow parameter. The flow parameters design the size of the flow line. Is it with if you see the 2025 which which well which I opened and did a place. In September, like 910 months from now, if it shows it shows empty, there's no well parameters here.
+
+27:01 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) That means they may not be knowing what is the pressure of the well.
+
+27:06 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) They cannot provide this information.
+
+27:08 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yeah, it depends on the pressure of the well. Let's say 1500 or 2500. The complete basket of material will be different depending on the pressure. Even though it is the same oil well, but the pressure is different, so they will have a different set of materials. So that is what he meant by the parameters.
+
+27:28 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Parameter exactly. So 1500 rated wells and 2500, totally the materials are completely different.
+
+27:33 - Unidentified Speaker Right.
+
+27:33 - Rahul Patel (ADNOC Group D&CS) So is there a correlation between well parameter and the metal basket? Like if like suppose we start with that, we don't have this parameters, which means we use the standard bill of material which you have are based upon historical consumption. But then as you get the parameters, you will change the forecast, right? So if this information is available later in the system, whenever this is available is there is there any correlation between the parameters and the bill of materials so that we can like when the information is available we can refer
+
+28:10 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) to this and propose you that bill of matter is this something you think which will be helpful no by the time parameters are released too late no already six to three months before drilling I getting the confirmation is not
+
+28:23 - Rahul Patel (ADNOC Group D&CS) required if I already procured the materials based on these parameters before yeah so we understand that challenge from a process perspective which from an IBP I don't think we'll be able to solve right because that's that's the process you have that's outside IBP but what we can help is if you have this information so considering that we are getting well information from DWS if there are if those additional parameters can be brought into IBP and if that parameters can help you this decide correct block model whenever those are available yeah that's a separate process that those parameters should be available as soon as possible but then whenever they are available in dws there is there a way with which we can do some system-based correlation and propose a build of material saying that now the parameters are available you had forecasted say x but now based upon the parameter the forecast should change to y but that will not
+
+29:22 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) be parameters of all the wells for three years, right? Yeah, so whichever is available. So whenever is available, that means I still get partial information only, right?
+
+29:34 - Vignesh Perumal (ADNOC Group D&CS) I think I think I think in order to solve this issue, it is not only going to happen with a tool like IDP. What Mr. Shaik is saying is he knows you know the parameter for which you know the viewer only six months. Before. So we in the IBP cannot you know give a forecast you know ahead of that right. So maybe this sort of thing we don't know we need to I don't know how IBP can solve this issue Shaik and Jagat.
+
+30:04 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) And plus as I said you know some of the items are always manually added into this one which is not part of the DWS so which is not something that can be linked to DWS all the time. Which I clearly showed, some team will come and say, I need materials for 7 wells, only for 10 items only I need for 17 wells.
+
+30:28 - Bastian Osorio I was thinking what we can do basically as far as I can see. Of course, we can provide the template bombs and provide the information from DWS, right? Of course, when this information is available, you will be able to use it. To select the right bomb and the right materials. The only difference is going to be more automated, but of course, there is nothing we can do to determine sooner the required materials because this is based on, as you showed to us, first on the parameters of the well, and then your expert criteria. Maybe we can assign the materials initially based on certain rules that you can can define, right? But more than that, I don't think. And of course, having the track of everything what's going on, I think there is some space to, of course, have it on the cloud. That's for sure. But in terms of your expert criteria, I think that cannot be replaced.
+
+31:33 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) For me, it will not help me solve the issue for buying automated assets and assembles. As I said, there are two designs Some are with the high H2S will have a separate design. Normal oil producer have a different design. The database will not tell me which is high H2S or non H2S. This information also I will get it only with like very close to drilling only.
+
+31:56 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yes, yes, but yeah, it's like what we can do, you know, based on the last three years consumption. The IBP can propose you what would be the next one year or two years. Just a forecast one. It could not be accurate 100%. 70 or 80 percent and you can review those proposals and wherever the amendment is required you can make it manually.
+
+32:17 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) So that is making my work more right Jagan. I can easily do it in Excel and prepare it easily when I'm going to review it. It is going to be more difficult for me right. Preparing it might take maybe like half an hour only for me to do entire preparation of a forecast. Preparing something then reviewing Yeah, going back the planet will take more time for me.
+
+32:41 - Bastian Osorio Just It assumes that Historical consumptions will repeat in the future. I don't know or will follow certain train.
+
+32:46 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) I'm not sure if that the case Historically from then again still I have to check with them for the future trends Then I would again go back to project in which materials some worlds we can So I think it is increasing the work on innovation starting it and doing it is more easier.
+
+33:03 - Bastian Osorio I don't excel I think what can be useful is first have, of course, that you are able to see all the information for the next three to five years of the wells with the parameters from the DWS. And based on that, you can have all the templates, the BOM templates, within IVP and based on that you can do your work and it's going to be all stored in the cloud. At least this is the value that IVP can add initially. Of course, once we build this or we have made some progress building this, you can take a look, review it and see what should be the next step. But as an I think we have a first approach, which is what you showed to us. Sorry, and just to complement that, based on that also, and your confirmation within IVP, we can start the pool change process, the PR generation.
+
+34:26 - Khalid Sarfaraz (ADNOC Group D&CS) so on and so forth. And it will check the existing stocks itself and it will only purchase where the stocks not available. Also we can check it across different companies whether the stock is available in somewhere else.
+
+34:45 - Hector Palacios (ADNOC Group D&CS) Yeah for sure it can give us visibility if you are liking that today. Here are the questions I saw that the forecast is by year. Is that correct? Or you have it are more granular layer like quarter or maybe month?
+
+35:04 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) No, no, we focus is yearly basis.
+
+35:06 - Hector Palacios (ADNOC Group D&CS) And how you assign this to a PR need, for example, because if you have by year when you're going to place a PR.
+
+35:16 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) That is somebody from inventory management has to distribute monthly.
+
+35:20 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) You know they they break them monthly requirement just divide by 12 months. That's all OK.
+
+35:27 - Hector Palacios (ADNOC Group D&CS) So we take the yearly forecast and so and we break down this forecast to a monthly basis.
+
+35:35 - Unidentified Speaker Is that correct? Yes.
+
+35:37 - Vignesh Perumal (ADNOC Group D&CS) That makes more sense. It's not an accurate planning it is a very.
+
+35:43 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Because anyway, we are our hospital service level agreement. At least 12 month forecast on ground, you know, so.
+
+35:51 - Hector Palacios (ADNOC Group D&CS) Then now it's opening up a door for IVP there because that's the point. Maybe can help you in that breakdown so you can check the numbers at a high level. You cannot just check the high level if you need, but IBP can propose how this is going to break down to the monthly basis because that's the level at which we need it in order to start placing the PRs.
+
+36:18 - Unidentified Speaker Okay, that makes more sense.
+
+36:20 - Hector Palacios (ADNOC Group D&CS) And related to the stock levels, I guess that this is more in the inventory control, but are we keeping any rules here? Like, let's have like three months of stock, six months of stock. Are we having reorder point? Are we having maximum levels of safety stock? Do we have any related to that?
+
+36:46 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) No, no, we don't maintain any levels in the system. So yeah, no, no, there is no levels.
+
+36:52 - Rahul Patel (ADNOC Group D&CS) So essentially we just procure and keep one years of stock in the system like we just want the plan is to keep one year of stock based upon the demand.
+
+37:03 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yeah, that is a principle agreement. One year, maybe some cases we reduce to six months wherever there is a valid price agreement and also depends on the time okay we place the order for one year then we'll put the staggered delivery you know so it keep on coming in so we don't need to always maintain one year so it depends on the category of the item like line by panel we don't keep one year we just reduce them you know because we have I
+
+37:32 - Rahul Patel (ADNOC Group D&CS) think this this is where also IBP can help optimize stock considering that we'll have all the parameter system you have lead time so IBP we can think of we know the how how much can be the stock which can be required you may not need one year everywhere right the this is something IBP can help provide the visibility and reduce the stock considering that if the lead time is low and then the requirement is frequent then essentially we keep the stock Maybe jumping the topic, I understand that what we are doing is Excel-based mostly.
+
+38:10 - Hector Palacios (ADNOC Group D&CS) Maybe we can get some information from the DWU system, but I understand that all that we are doing today is Excel, right? How sure are we about the quality of the data of the lead times we can have or the stock information that we have as well? Just to understand, because if we are going to place this into AVP, we need to extract this from the source system, but as you're working mostly on Excel, maybe you don't care a lot how is the quality of the data of the lead time, for example, in the system. When you use the lead time, Yaga, just to place an order or just to plan, are you using information from SAP?
+
+39:05 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Most of the lead time is available in the agreement, you know, what the supplier agreed, because we have a three to five years agreement, so we know which material is going to be supplied when, based on the supplier lead time proposal, you know. And also, most of these materials are fast-moving materials. It also, this is supposed to keep on updating the latest lead time.
+
+39:35 - Hector Palacios (ADNOC Group D&CS) Okay, so it's...
+
+39:36 - Unidentified Speaker Yeah. Okay, that's good to know.
+
+39:39 - Khalid Sarfaraz (ADNOC Group D&CS) Thus, for these kind of materials, I think there are no, there is no MRP, right? There is no inventory parameters maintain it. No, no, these are all yeah. So the inventory controllers are planning something for it?
+
+39:54 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yes, based on the forecast they will plan. You will see what is available on ground and also what is on order and whether they have agreement or this and that. They will analyze each and every item.
+
+40:10 - Khalid Sarfaraz (ADNOC Group D&CS) And this area they are mostly doing it manually, right? Absolutely. They have some tracking kit. They'll see all status. So they will receive the requirement from Well-trained department and then they will plan it accordingly. And the PRs are raised by inventory controllers?
+
+40:38 - Unidentified Speaker Yes. Stock PRs? Yes. Okay.
+
+40:42 - Rahul Patel (ADNOC Group D&CS) So I think So Jaganath, can we then agree upon how we proceed with this time requirement? So is this something like we can agree that we will upload the demand directly in IBP and then use IBP from inventory planning and supply planning perspective to have a like a centralized view of the entire time demand and not link directly with the drilling process? Is this something which we are looking for?
+
+41:10 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yes, yes, exactly like chemicals, yeah.
+
+41:13 - Rahul Patel (ADNOC Group D&CS) like chemicals. So essentially the chemicals, yes.
+
+41:16 - Bastian Osorio Just to be maybe more precise in the information, I think what we can do is to upload the BOMs and then the user will choose which BOM and then based on that we will create a stock balance with the current available stock, the current open POs and also What is the system proposed to fulfill the demand?
+
+41:42 - Rahul Patel (ADNOC Group D&CS) The way I'm hearing Bastian is, and Tim, you can correct me if wrong, that forecasting will not help a lot considering there are a lot of manual inputs. And even Shaik said that it's easier for him to prepare for forecasting exercise. So essentially, the way I'm hearing it, and I can be wrong, you guys can correct me, that we are looking for just to upload the forecast in IBP so that rest of the processes can be managed. One getting the visibility of all the forecast for all different requirements across five year and then using this tool to manage and have visibility of what is the availability of material across across forecast. So that's what I'm understanding is the requirement, correct Jaganath? To directly upload forecast but not to. Create forecast based on historical.
+
+42:35 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) No, if the system proposing a best better forecast, really it is. We are not going to deny in that because we need to see how that the how extend the IBP is going to help us on this. We need to see the results checked. Don't no need to miss the chance you know. So even the let us. Let us see what is the IBP proposals shake. Maybe have a look at it and review it and then see what is the then we can decide you know.
+
+43:04 - Unidentified Speaker Look as I said no.
+
+43:05 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) If it is increasing my load like as I said to the forecast will come, then I verify as per the requirement. It is more easy than it finished in Excel, then it's can be uploaded into the system, right? Yes, if there is a lot of malign reason, that is what it could be done. It is coming and verifying is take a lot of time to verify the same thing against each item number. If you see for now, as per the new requirement is more than 565 items are there for 10 materials. So what I guess they can.
+
+43:36 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) But the new design is a standard bill of material, right? New design is not the standard.
+
+43:42 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) There's a lot of conversion wells are there. Conversion wells is not will not be even reflected in the database. So how do we link it to the database then? No, no, they don't.
+
+43:52 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) They don't want to link it to DWS. They will set up a lot of material in SAP. Itself. If it is this type of well, so it will require this list of materials and this is the quantity.
+
+44:06 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) So what is the quantity where it come from Conversion wells, where it will come from It will not be there in the database, right?
+
+44:17 - Khalid Sarfaraz (ADNOC Group D&CS) The conversion wells. Quantity means quantity of materials. No, even the type of number, number of wells, number of wells.
+
+44:25 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Well, the number of wells is there linked to DWS only. Then only you can get the quantity, right? If number of wells is not shown in the DWS, the conversion wells it because it's an existing well, right?
+
+44:39 - Unidentified Speaker It might have been drilled for five years back.
+
+44:43 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) How will you get the quantity of the number of wells are not there in the DWS? Will show only the new wells coming. Going to be coming in the next three years. An existing well that has to be digitalized. There are like 100 wells that has to be digitalized in BAP. It will not show in the DWS.
+
+45:05 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) No, no, here we are not talking about linking to DWS. So for example, if you know the number of wells and type of the well, OK in the IBP itself, they will have a bill of material. Let's say if you know, OK, I I plan for 50 in the next year. If you put the 50 then it will give you the basket of materials which is related to oil wells related to and the quantity along with the quantity.
+
+45:33 - Unidentified Speaker OK.
+
+45:34 - Rahul Patel (ADNOC Group D&CS) Then I then I verify it.
+
+45:36 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Then I will add it manually. Whatever required for the positive message is saying this is what you're also doing or shaking. I have to verify it right again. The quantity. My level added what I'm saying that what I within like 1015 minutes. You're saying that you download it from somewhere. Then I have verified the quality. Then I added manually and then send back. It is extra time only, not just for this case of automating automation.
+
+46:01 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) You have to implement it. That's what I'm saying. So you want to put the percentage also here like how you forecast like 40% 50% then derive the quantities.
+
+46:10 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) But every time I had to change the percentages also, right? I have to again verify this forecast, right?
+
+46:15 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) We are. We are. I mean how the IP IP people will help you to reduce your manual work. You know whatever the customization on how you do currently. If you can explain to them they can build the same in the IP itself, you know.
+
+46:30 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) I don't understand how it is going to reduce my work. It's like when I say the manual you're saying it is taking like in 10 to 15 minutes of Yeah, I don't know what you're saying about now. Manual work which is going to be.
+
+46:45 - Khalid Sarfaraz (ADNOC Group D&CS) Let's not conclude that. Yeah, let them design, come up with the design and build and then we can based on that you can make a decision later. But let them propose something. Maybe something you will find it. Yeah, but something is important.
+
+46:59 - Hector Palacios (ADNOC Group D&CS) What we are mentioning here. Usually when we want to automate automate is because we have pain points. I'm not hearing a pain point here and based on what she is saying. Usually a pain point is saying that your eyes is very bad. Doing it manually and the accuracy is very bad. Here I am hearing that 80 percent of what we are saying is being consumed, so I guess that the accuracy is not bad. Then the other pain point is maybe the accuracy is not bad, but I'm not able to forecast all that I have. It's too much. Then I need to automate and some weight. I also not hearing that, so I don't want to force a solution in something that is working fine.
+
+47:39 - Bastian Osorio Just to complement what you're saying, Hector, maybe lack of visibility. Just working for the next year and maybe IVP can help you to have a longer visibility. I think he's working for the next three years.
+
+47:55 - Hector Palacios (ADNOC Group D&CS) Yeah, just giving ideas of possible pain points. It's not just for the sake of automation. The automation comes to a purpose when we have a pain point. If we don't have a pain point, let's not force a solution, because otherwise we will be cannibalizing precious time that we can use for real problems, right? So just to keep that in mind, Tim, we are not trying to force solutions, whatever we see fit. It's just to try to solve the big problems that we are having. And if this is not a big problem, then we shouldn't be trying to forecast in a statistical way this, because it's not only a forecast. It's also a matter of where to get the information, right? So probably the forecast is going to be very simple to do. It's just to press a button run. We are going to get something that the real challenge for us and where we can lost a lot of time is trying to get the data on the system.
+
+48:58 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) In this case. Alright, but I don't agree on this, but now currently you may find some gap. You know, OK, this system is not integrated by the DWS. Not enough data to forecast OK but in the future maybe some something will happen you know they may bring some other system where you will have all the data whatever you required or it may be the DWS may be in the future may be enhanced to get all the information. So let us not close this point now OK doing the forecasting or any proposal from the IBP for tie-in OK we'll keep it open OK. If there's anything best IBP can propose, we should still consider that. Because we want to use one system in the future, because we don't want to use somebody working in the Excel separately, and then uploading, and then someone is working in the IBP directly. We want everything to be happening directly, so that we will not miss the historical forecasts and those kind of stuff.
+
+49:58 - Bastian Osorio That is clear, Dion, and I agree with you. But thinking about that, up to which point want to put in the system. For example, what I believe is a good idea, as Rahul mentioned, is to basically, they can load, of course, IVP can have an initial proposal, and then they can upload the forecast, okay? But in that sense, we won't have, thinking about that, we won't have the relationship between the tie-in materials and the drilling. Just will have a forecast per material without the relationship with the well. Is that something that you think is reasonable, is a good idea, or you absolutely need the well information and the BOM that links this you well and tie in materials.
+
+50:58 - Unidentified Speaker I think Jaganath is on hold.
+
+51:01 - Rahul Patel (ADNOC Group D&CS) Let's let's probably take a minute for him to join back. Yeah, also shake his phone.
+
+51:11 - Hector Palacios (ADNOC Group D&CS) But Khalid, I I think.
+
+51:15 - Rahul Patel (ADNOC Group D&CS) Yeah, it would be to start with the upload as the first step. Considering that there is not a lot of value in putting the forecast and everything.
+
+51:29 - Khalid Sarfaraz (ADNOC Group D&CS) Let's see. See, my thing is we shouldn't be just making a concluding just now and you just need to discuss it and then internally and then you come up with your best proposal and then OK, there is no it's not always that we are going to solve a pain point or a sometimes we can suggest some improvement as well right it's not always the like you're looking forward for to solve the pain but there may be scenarios where you want
+
+52:03 - Rahul Patel (ADNOC Group D&CS) to improve it more you want to optimize it so maybe we can use it to optimize it so yeah I understand your point but considering that we are finalizing our design we have two options like from what we are what is we can agree upon uploading. But if you want us to further look into proposing a solution, I think we'll need more details about the exact steps he's following, from where he's getting all the data, what project team is providing, from where the project team is getting the data. Right now, I don't think we have all this information to even propose from IBP how to automate the entire step. We've heard what he said, we've heard that he's doing manually but if we have to then like propose a solution from IBP we'll have so you are saying that in the demand is so the source of demand is missing right yes because yeah because DW does not have this information project team has this information see if we just forecast based based upon historical consumption it does not help him because anyway he will calculate an excellent and upload that as an input to compare with the historical consumption but if we have to come up with a demand which is better than what you are what he's doing today we need to understand entire thing is doing which means we'll have to spend time understanding all these things and after doing that the benefit what we are trying to see is not in line with what we are discussing right so that's the point we are trying to make that if we put all this effort understanding everything right from the project team to the to the to the dws data to to IBP, and if users are able to do the entire thing in 15, 20 minutes and are getting the forecasting accuracy they need, then the effort required to put everything together and the counter benefit is not something which is providing the value we are looking for.
+
+54:04 - Vignesh Perumal (ADNOC Group D&CS) So what you are trying to say is that the IBP tool generally be used primarily so that the demand module will not be utilized over here and only the inventory module will be used. So Shaik will probably get this forecast and all this information from outside the system and then he can feed it inside the system. This is what you're trying to say Rahul?
+
+54:27 - Rahul Patel (ADNOC Group D&CS) Yeah that's what I'm trying to say that demand would be uploaded as an input to IPP. We will have the visibility of say demand across like you will have visibility of the entire demand and then we can use this demand to have the centralized inventory and supply planning to make sure we optimize inventory based upon
+
+54:51 - Vignesh Perumal (ADNOC Group D&CS) the demand and then create system proposals from IVP for procurement. So what this will automate is, as per your suggestion now, the task that the and his team manually doing by checking the required quantity versus the on-hand and then the beyond. This is the part that you can sort of show it in the system. They use tracking sheets right now to calculate the quantity. This is the part that you can do. But you are trying to say that in order for the forecast model to be defined and to be more accurate, you are saying that you do not have enough input at this point of time. This is what you're trying to say?
+
+55:38 - Rahul Patel (ADNOC Group D&CS) The only input we have is historical consumption. We can use that to forecast, but that will not create a value which we are looking for from an improvement what IBP can do. Now, I think the real improvement comes if all the systems are from start to end, if there is data available, and then we make the decision. The entire process of forecasting is automated, but that something is not available today, which can be done eventually. For the purpose of this project. See, this is not that the only time you will have anything in IBP, right? We'll try to add as much as the solution possible. But once IBP is live, you can further also improve the processes, right? It's not that this is the only process which will be part of IBP. So we can start with uploading the demand, utilize supply and inventory planning modules for time. And then as we have more clarity in the future, like AdNoc can then, incorporate interface those tools later and then enhance IVP to calculate the entire time demand as if more data is available later in the future but okay
+
+56:45 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) But at least what how the the forecast is planned in the excel okay by putting the percentage like 40 percent 60 percent based on the experience you know consumption. The same we wanted to be developed in IBM. Why? Because we are getting the update on quarterly basis. Okay. But you know within this three months of gap there are many changes are happening which is not communicated to the inventory. Okay. Because even the planner also because it is a long process they have to prepare the excel sheet and then they will get the memo prepared and then they will issue to them. So that's why even though if there any major changes or minor changes. It is not properly communicate to the inventory, but if the same thing what is happening, I mean manual planning, whatever the shake is doing, we want this to be developed in IBP itself. So if there is any change changes, even not, we don't have to wait until quarterly basis. It will be immediately known by the inventory controller. So these are the changes are done so he can. He can change the deliveries or he can place more orders on So.
+
+57:56 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) How do the changes come automatically? Changes will come only when I enter manually, right? Yes, yes, you have to enter it so that you know the same thing, no? Because look, we will not be revising the forecast every monthly basis and keeping on changing any major.
+
+58:12 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) No, no, if there's any major changes. Say for example they they prebound additional 1010 wells time. In some of the quarter. So you will know. There are some people so that we the material may be more so. Shake you don't have to worry about this because the design and this development will be done by the contractor. We just tell them how we are doing in the planning. I mean using the Excel sheet. The same thing will be replica in the IBP. What do you do in Excel?
+
+58:45 - Rahul Patel (ADNOC Group D&CS) You do it in IBP, that's all. So so what you're proposing Jaganath is to replace the manual Excel sheet through IBP Excel sheet so that whenever he does the working, the information is available real time in IBP.
+
+59:05 - Unidentified Speaker Correct.
+
+59:05 - Rahul Patel (ADNOC Group D&CS) Bastian, Hector, any thoughts on this requirement of manual Excel sheet?
+
+59:12 - Hector Palacios (ADNOC Group D&CS) The manual Excel, if you need to create a template just to upload information. That's not an issue. It should be simple. The only point I think is more process related is the frequency in which we are putting these adjustments, maybe to the big gaps or big changes, as Jaga is saying. So far I understand you were mentioning that we are updating this quarterly-based. Is that correct, or are you doing ad hoc changes as well in the middle?
+
+59:47 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) No, no, by quarterly basis only we make changes.
+
+59:50 - Rahul Patel (ADNOC Group D&CS) But yeah, this other not saying that while the quarterly changes are done, but if if the system and Excel are same thing, then if there are any like changes in between, those can also get communicated. Not no need to wait till the quarter end because the inventory team will have a front visibility of changes and probably they can take better decisions for planning the inventory.
+
+1:00:15 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) the major changes are communicated in between only. We don't wait for the quarterly. If there's a major change, it's a company requirement, right? I don't wait until the quarterly to use the major changes exactly.
+
+1:00:25 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) See you don't have to communicate. Open a separate channel to communicate to the inventory. If you do the changes in IBP itself, it will be automatically known by the inventory controller. You don't have to communicate with them. This and that has been changed. So we do this and so that one. Inventory controller. You do the weekly review. Changes if there any changes okay even you can take a weekly snapshot of short of the forecast you can compare it okay because the IVP have the intelligence to do those things actually okay if we see that there is
+
+1:00:59 - Murugan Kaliaperumal (ADNOC - PE&ICV) any major changes then you can change the decision also you know management has decided to have all the demand forecast in a specific tool, be it chemical, drilling material or MRO products or even project materials. So they want to have a track in one tool. That's why this tool has been planned to purchase and implement. So we have already had sessions with chemical related, all companies, all 10 companies are procuring chemicals and drilling, of course, four companies are buying drilling we are discussing on the chapter of tie-in material. So it is always good to have limiting it across all processes as per manager expectation. We need to see if there is any challenge, try to find out the challenge and try to resolve the challenge. But we don't have a per se to go back and management for example. We would like to do it manually in future as well.
+
+1:02:05 - Bastian Osorio That is clear. Just to be on the same page, we are thinking about loading the forecast, comparing of course with available stock, but we are not showing in IVP the relationship between the drilling, the well, and the the forecast. It's just a forecast per material, not per well. Are we in the same page or there's any disagreement on this regard?
+
+1:02:40 - Hector Palacios (ADNOC Group D&CS) I think that Murugo was referring only to the availability of the forecast on the system.
+
+1:02:50 - Bastian Osorio So if we are running through so then we are good so per material no no in at this point no no relationship between the well well type in the the tie-in materials there is no connection between the dws but
+
+1:03:12 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) of course yeah the tie-in also will have its own basket of materials based on the The well type I mean whether it's a oil producer or water injector. That should be provided by the inducer. I mean the planner. So which material I mean well type will the BOM.
+
+1:03:42 - Murugan Kaliaperumal (ADNOC - PE&ICV) Maybe I I still thought that the shake proposal. Let's see. I think even in IBP, your input templates will be Excel only. Correct me, team. You don't have a screen to enter your requirements. Your demand inputs are in a specific template agreed with you. And the same template will be used to load any number of times you make the change, you make a plan. So the template will always be in Excel, which means you're still working on Excel platform. And then the data is loaded to IBP and captured in IBP. Correct, team?
+
+1:04:18 - Unidentified Speaker That's correct.
+
+1:04:18 - Murugan Kaliaperumal (ADNOC - PE&ICV) Yeah, so you might not know face a difference within your working culture, however. The demand is all centrally captured in one place and the forecast is very much used. I think Mr. Duggan was explaining to change something on the faster phase. It clearly says either if you reduce your demand or increase your demand, clearly says the available PO for this period we need to take immediate action or the available PO is in excess if we can use it for another plan which another colleagues gives or another company gives so this will be more useful for us to like like plan what is there in the purchase order to come whether we need to increase it or to reduce it or some cases we can even delay if we have provision with the supplier So these kind of purchasing planning activities can be done by the team faster. And within one platform, it gives you data.
+
+1:05:23 - Bastian Osorio It's clear. It's clear, and it's something that can be addressed for sure. Question, because it was mentioned that we are working, Shaik, with 10 bombs. In terms of material, how many materials are you planning currently? 500, 600? 100 like, 8 more than 800 like 800.
+
+1:05:44 - Rahul Patel (ADNOC Group D&CS) Yeah, yeah, yeah, so can we summarize what we are agreeing to for drilling so that everyone is for tying sorry so that everyone is on the same page so I have a doubt sorry now uh so basically uh shake
+
+1:06:23 - Arun Tejnarayan (ADNOC Group D&CS) has shown us you know the excel sheet uh about the forecast um and how this forecast has been translated and transferred to you know uh the inventory team so uh do we have that kind of you know the presentation in the near future or like,
+
+1:06:40 - Unidentified Speaker Is it?
+
+1:06:41 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) We can plan now. Another session to discuss in detail here.
+
+1:06:47 - Arun Tejnarayan (ADNOC Group D&CS) So so then that's so how many business functions are involved in time? Like how many teams are involved? Only one team onshore team and then the planning team. Onshore and planning.
+
+1:07:02 - Unidentified Speaker OK.
+
+1:07:03 - Rahul Patel (ADNOC Group D&CS) okay understood so so to summarize and have a follow-up action let's let's agree on some of the things one thing is that we will use excel templates for capturing the demand in ibp and then this excel template would be used as an input to supply planning and inventory planning so that we can have visibility Now, when it comes to capture and demand in IBP, Jagannath, you are expecting us to give the forecast based upon historical consumption at this point of time. And based upon the forecast, if required, Shaik can utilize that forecast to check with percentages changes with the forecast. You want us to configure the percentage field, which means he can refer to the forecast and adjust percentages so that the demand can be changed based upon the percentage allocation to the forecast.
+
+1:07:59 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yeah, we need to have the forecast OK based on the consumption. But the proposal from IBP and also to generate the quantity for the next three years. How the shake is working on the percentages and all the same future also should be built in the IBP. So instead of reviewing the OK, reviewing the proposal is one thing under the other thing what you can do. You can put the percentage and then see maybe it for to take the quick decision you know. Generate the forecast based on how he is doing now. Putting the percentage and all the same features will be built in the IVP so that he can compare. You know, instead of going into each and every line item, he can compare quickly and then he can release which one is best.
+
+1:08:46 - Mohammed Ashic (ADNOC Onshore - PD) OK. So we have that and so we have that alternate also for some item. Maybe you might have different enders. You may have a little bit same and little bit site variation description, right? So you might have multiple one or two item for the same.
+
+1:09:03 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) Yeah, there are some alternatives also there for some of the items. Yes, so we have to consider similar to that to drilling for this, right? For correct, correct, correct. Will do when do the detailed planning.
+
+1:09:16 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) I mean, yeah, so we need to.
+
+1:09:18 - Rahul Patel (ADNOC Group D&CS) Yeah, we need to note down this as well. We have alternate. Yeah. OK. Then. Bastian, Hector, Arun, do you need a follow-up discussion to detail out the steps of demand or what we've discussed is good enough for now? For now, yes. I guess that for the documentation is okay.
+
+1:09:37 - Hector Palacios (ADNOC Group D&CS) Then of course, later when we start developing phase, probably we will want to have more sessions to show what we have, to understand if we are missing something and so on. But for now, I got to wrong guys missing that for documenting we are again.
+
+1:09:56 - Rahul Patel (ADNOC Group D&CS) Uh, shake will it be possible for you to share the the Excel sheet what you have shared today? So that we we can also have a look at those Excel sheets while we are looking into the solution.
+
+1:10:13 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Yeah, I'll give the one for JV and ASAP which we have been doing right now. Also the bill of materials if you can share a bill of material there in that Excel sheet itself there in the Excel sheet version the forecast sheet itself you can find the bill of materials.
+
+1:10:30 - Rahul Patel (ADNOC Group D&CS) Also if in that mail or note if you can quickly put up a steps on how you assign the bill of material to the based upon what all parameters you use it would be helpful to know I at
+
+1:10:42 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) this point of time we may not use all those parameters but it's if you can have a percentage is there against the item also that in percentage can be taken as the historical percentage to be considered actually in the forecast sheet in the excel itself I have put the percentage against how much person like well number is that for this particular type of well how much percentage has to be considered for this particular bill of metal I have
+
+1:11:05 - Rahul Patel (ADNOC Group D&CS) mentioned that in the forecast itself okay okay so if that should be sufficient as a base plan yeah so if you can share that then we will we'll have a look at that excel sheet and we'll review and if
+
+1:11:16 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) you need anything probably will get back to you then yeah okay and regarding the new requirements as I said no some new requirements have come for time materials like one time program one time program is going to replace the existing ones so there will not be any historical consumption for these things it's totally a new design but I will have the MTO and the type of words to become but I don't have it at this stage but that will be how it will be done of in the future.
+
+1:11:48 - Unidentified Speaker So how? Yes, yes.
+
+1:11:52 - Khalid Sarfaraz (ADNOC Group D&CS) We lost you, Rahul. Rahul, you are on mute.
+
+1:12:02 - Unidentified Speaker I don't know. Nothing happened.
+
+1:12:07 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Rahul is just having a having technical difficulties with his microphone.
+
+1:12:16 - Unidentified Speaker Probably he can use yours, Fakhoury, if he is there. Let's let him.
+
+1:12:24 - Khalid Sarfaraz (ADNOC Group D&CS) We can conclude. Hello, can you hear me?
+
+1:12:29 - Unidentified Speaker Yeah, I can hear you now. Yeah, OK.
+
+1:12:34 - Kunal Sheth (ADNOC Group D&CS) I think there was some issue. There is some issue on my laptop. So yes. If you can share those Excel sheets, we'll have a look at it. And then if it requires follow-up discussion, we can plan for follow-up discussion. But I think at this point of time, we are in alignment with what we've discussed.
+
+1:12:59 - Jaganath Doss Thangadurai (ADNOC - PE&ICV) And we'll use this discussion as a reference to define the process for time.
+
+1:13:05 - Unidentified Speaker OK.
+
+1:13:05 - Khalid Sarfaraz (ADNOC Group D&CS) OK. All right. Thank you.
+
+1:13:07 - Shaik Shaheed Sheriff (ADNOC Onshore - PSD) Thank you. Thank you. Thank you. Thank you, everyone.
+
+1:13:12 - Unidentified Speaker Well, I appreciate it.
