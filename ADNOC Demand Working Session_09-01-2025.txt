@@ -1,0 +1,1273 @@
+Sagar Vora:
+Hi, Sagar. How are you? Good, good.
+
+UNKNOWN_SPEAKER:
+You?
+
+Sagar Vora:
+Good, man. Nice to hear you. So you are working on demand or supply? Sorry, what? You are working with, like, working on demand or supply, like with eBay or Solve?
+
+Pelayo Fernandez:
+No, right now, I'm with the GoTubers, learning a little bit.
+
+UNKNOWN_SPEAKER:
+Okay, okay.
+
+Pelayo Fernandez:
+So nothing specific. I don't know where I'm going to end up in either demand or supply. Not sure.
+
+UNKNOWN_SPEAKER:
+Yeah, both are good.
+
+Sagar Vora:
+Yeah, both look good, that's for sure. It would be easy for you, like demand would be, I think, easy for you start with and yeah and later like and stuff like hey hi Saul, hey Pablo.
+
+UNKNOWN_SPEAKER:
+Hello.
+
+Saul Portillo:
+It's not that cold. I'm reading the news about the flu, right?
+
+Pelayo Fernandez:
+Yes, luckily at home we are all fine. But people are... For example, today I was going to meet some friends, but they cancelled two of them because of the flu. They are all at home sick. People have to take care of themselves. That's right. When are you coming back to Madrid, Saul? On the 4th of February.
+
+Saul Portillo:
+Ah, good. Yes, I have a bit of time left. You have a bit of time left.
+
+Pelayo Fernandez:
+Enjoy it. Take advantage of it, because here...
+
+UNKNOWN_SPEAKER:
+Until you come back.
+
+Saul Portillo:
+I'm laughing because I just lived in Spain. Obviously, when I lived in Chile, I felt that the heat was infernal. I mean, the summer heat. But after I lived in Madrid, I realized that the heat in Chile is very good. And here I see the news and they are complaining about the heat that is being done, which is 35 degrees, but at night it is 25 degrees. And they don't know how blessed they are. Yes, you are lucky.
+
+
+
+Pablo Lopez:
+Here, during the day it's 40°C and at night it's 38°C. Yes, it's the worst.
+
+Saul Portillo:
+I imagine you, Pelayo, in the south. Although you have the same beach, but I understand that in Cádiz it gets hot anyway.
+
+Hector Palacios:
+In Cádiz it's fine, but in summer, Seville, Yeah, it's currently like winter is getting over and summer is starting.
+
+Sagar Vora:
+So almost, I mean, it's 31 degrees. I'm not sure which unit of measures are used. 21 degree right now.
+
+UNKNOWN_SPEAKER:
+31, yeah. Wow. Not so cool. Well, that's like very normal, right?
+
+Hector Palacios:
+No, no, means in in morning it's 31.
+
+Sagar Vora:
+Currently it would be 25, 26, I think. But yeah. It's normal, like not that not that much hot.
+
+Hector Palacios:
+But you don't be you like in the middle because in Chile they are on summer and here on a being we are on winter almost or are we on winter? India, in which is the season are you right now?
+
+Sagar Vora:
+Winter? Winter is almost getting over and summer will start like almost now.
+
+Hector Palacios:
+And you have 31 degrees, that's crazy.
+
+Sagar Vora:
+Yes, so mostly in March or April to go around 40 sometimes like nowadays but that would be a max. And what is the lowest in winter? Around like currently where I'm living in the state where I stay so there it's almost 16.
+
+UNKNOWN_SPEAKER:
+16?
+
+Hector Palacios:
+Yeah. Wow, that is not cool at all.
+
+Sagar Vora:
+Yeah, not that cool, not that hot, like that.
+
+Hector Palacios:
+It's like you don't have winter, man.
+
+Sagar Vora:
+You don't have winter. Correct. So on top of India, like where the Kashmir and all is there, all that shed, so there usually snow is there. So there it goes in minus, minus two, three, like that.
+
+UNKNOWN_SPEAKER:
+Yeah, for sure.
+
+Hector Palacios:
+Here we are having minus in the night. Between zero degrees, one, two, or minus, you know, around there. Oh, that's good. Yeah, that's winter. And then in summer we have around the 40 degrees that you can have as well. It's like, I think it's more extreme in Spain. All right, so everyone is here right now. We have Basti as well. So the idea guys is that we need to take one big decision. On MRO planning, we have this way of working with a forecast supposedly with preventive maintenance and so on, but just based on the data that they share manually with us, we don't see good data to forecast in the first place.
+
+ What is the problem? Is that we already pushed with AdNoc that we were going to have demand planners and demand requesters and we were going to do a lot of things on demand side, And now the perception is that with the data we have, we get not too much. So it seems that the MRO will be like reorder point-based planning. That doesn't need a forecast. It's just based on consumptions. So now that today, finally, we have the integration with CADS, the idea is that if we can download the information as it is, user are reintegrated the material mass data, the location, and the equipment, I guess.
+
+ Either way, I think that at the material location level is fine. The idea is that let's try to integrate the information of the consumption history as we get it from the extractor, as it is, without any change at plant level. So we can analyze with the guys, with the teams, you how this is looking like, So it's just the first structure on Saga. Let's see if we can take a decision based on the information we have.
+
+
+
+UNKNOWN_SPEAKER:
+Make sense?
+
+Sagar Vora:
+Okay, so what is the key figure name for consumption history and what is the planning level?
+
+Hector Palacios:
+Saul, Fiamma, you have the key figure from there?
+
+UNKNOWN_SPEAKER:
+For correcting? Yeah.
+
+Fiamma Giorgi:
+Yeah, it's actually usage of CM is called and he's with product.
+
+UNKNOWN_SPEAKER:
+This is one.
+
+Saul Portillo:
+Let me let me.
+
+Fiamma Giorgi:
+Let me look for.
+
+Hector Palacios:
+So this is the
+
+Saul Portillo:
+This is the in the shop. This is the ID for a key figure. And the plan is labeled.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+Sorry, just one comment for my part. As we understand that there's multiple key figures that they will need more detail to get integrated, mostly because of the storage location, we would like to start by just integrating the key figures at location level, not storage location. Is that possible, Sagar?
+
+Sagar Vora:
+Yeah, currently it's possible. But I have not integrated the location product master data.
+
+Bastian Osorio:
+No, it's not for for now for demo planning is not needed. OK, then so we only need product product. Location and then location and customer customer as as we review a few minutes ago a few or a couple of hours ago. Just equipment.
+
+Sagar Vora:
+Okay, so let me first log into the S4 so we can just see like the correct equipment is there. So let me share my screen.
+
+Sagar Vora:
+So, I have to load in. Customer or asset customer right yeah but this customer is not there this is you know it's not big yeah yeah actual customer I will load up equipment so I just want to see like Okay.
+
+UNKNOWN_SPEAKER:
+Let's see.
+
+Hector Palacios:
+If we get many rejections, maybe it's better to load it at material plant level. So do we have an ORCI figure at that level, just to do the analysis?
+
+UNKNOWN_SPEAKER:
+At level with product cost?
+
+Saul Portillo:
+Yeah. Yeah.
+
+UNKNOWN_SPEAKER:
+Let me see. Yeah, just in case. OK.
+
+Sagar Vora:
+These are the equipment numbers, correct? Basically, we have to load this as a customer ID, right? Yeah. Okay. So I think this has already been exploded to, I think, student location. That's why we have so many.
+
+Hector Palacios:
+Now that the storage location level, we need to remove it here.
+
+Sagar Vora:
+No, I mean, I don't see stored locations, but...
+
+Hector Palacios:
+Then, probably, Dre already did the change, because yesterday we were discussing that wasn't necessary. That's why you have location ID and plan location ID. So, that's fine. This is what we need.
+
+Sagar Vora:
+Okay, so, sorry, can you repeat?
+
+UNKNOWN_SPEAKER:
+No, that is fine.
+
+Hector Palacios:
+I think that Dre probably already corrected the Because yesterday we said that for customer mass data, we don't need the storage location.
+
+Saul Portillo:
+Hector, we have another key figure. For example, the manually input in the historical consumption. We can use that or try to iterate.
+
+UNKNOWN_SPEAKER:
+OK. Let's see.
+
+Saul Portillo:
+It's stored.
+
+Sagar Vora:
+We just need a customer ID, right? That's it. Well, we will not have a customer description like this in here.
+
+Hector Palacios:
+Yeah, no customer ID only. I saw that the flows were like kind of ready in behind.
+
+Sagar Vora:
+and what transactional data that we need? Let me check the Excel that I had there.
+
+UNKNOWN_SPEAKER:
+Where?
+
+Hector Palacios:
+Don't you have like an Excel like with the list of inputted and the structure related? It's something that I created like long time ago. I can't find it, but
+
+UNKNOWN_SPEAKER:
+It's fine.
+
+Hector Palacios:
+I mean, I found it.
+
+UNKNOWN_SPEAKER:
+One second.
+
+Hector Palacios:
+It's called actual usage of component, but I don't see that.
+
+Sagar Vora:
+Resource consumption. Yeah, yeah, you're saying the same.
+
+Hector Palacios:
+Actual usage of component. This is something that they keep in G-team was doing at the beginning. Do you want this one or this one?
+
+UNKNOWN_SPEAKER:
+I didn't check that. No, the actual user should component the first one. Yeah.
+
+Hector Palacios:
+Yeah, there is no.
+
+UNKNOWN_SPEAKER:
+storage location there. Actual usage of resources?
+
+Bastian Osorio:
+No, no, no resources, no.
+
+Sagar Vora:
+not resources then part historical consumption yeah quantity for this right yeah that's the one Yeah.
+
+Hector Palacios:
+How do you remember the filters we have like the order type?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, let me let me see.
+
+Saul Portillo:
+So we have our equipments loaded.
+
+UNKNOWN_SPEAKER:
+It's fine.
+
+Sagar Vora:
+Well, it's much data.
+
+UNKNOWN_SPEAKER:
+That is great.
+
+Hector Palacios:
+Now the moment of truth. When we load the first transaction data, let's see.
+
+UNKNOWN_SPEAKER:
+These are the equipments loaded, OK? So yeah.
+
+Hector Palacios:
+Wait to filter the MRO materials, because otherwise I don't know what we are going to start loading. Do you have the filters from there, the filter for? I remember that you have one sheet with all the main filters.
+
+Sagar Vora:
+Yeah. But I didn't know which filter we have to apply. I think I sent it through the chat.
+
+Hector Palacios:
+Great.
+
+UNKNOWN_SPEAKER:
+The table is up. It's sort of time.
+
+Hector Palacios:
+PM01, correct?
+
+UNKNOWN_SPEAKER:
+PM01, correct? P1, correct.
+
+Sagar Vora:
+First one, which order type we have to apply?
+
+UNKNOWN_SPEAKER:
+PM01?
+
+Hector Palacios:
+PM01, no? Yeah. When you were loading to YUP, Saul, and Digness share with all this, you were loading the PM01 only?
+
+Saul Portillo:
+Yeah. OK.
+
+UNKNOWN_SPEAKER:
+Let me review my changes.
+
+Hector Palacios:
+I'm checking. I didn't see like a clear material type that we can say that is MRO.
+
+UNKNOWN_SPEAKER:
+Yeah, correct.
+
+Sagar Vora:
+There is no clear material type.
+
+Hector Palacios:
+Which is the spare parts for sure that that's one. Chemicals and additives. I'm not sure if operating supplies.
+
+Saul Portillo:
+On a stock material, some of the materials, catalysts. And I thought they sent PM01 and PM02. What is PM02?
+
+UNKNOWN_SPEAKER:
+Breakdown order. Breakdown, yeah.
+
+Saul Portillo:
+Breakdown order.
+
+Hector Palacios:
+Yeah, it's also valid. Yeah, that's right.
+
+Sagar Vora:
+I don't see here the filter for order type.
+
+Hector Palacios:
+And what if we do it the other way around? If we have some examples from Saúl on materials, can we check the material type? Yeah, sure. Can you send at least, Saúl, like port materials so we can push?
+
+Saul Portillo:
+Let me see. I don't know, for example, this one.
+
+UNKNOWN_SPEAKER:
+This is one. That's a lot of information.
+
+Saul Portillo:
+Let's send like 20, 40, something like that.
+
+Hector Palacios:
+Because only the PCR can just put all of them at once. You know, I'm really impressed with the loading times, to be honest, because it seems like most of the time that flow indeed is taking is on the transformation. And as we have the transformation in the source, then it's just like a one-to-one flow.
+
+UNKNOWN_SPEAKER:
+It's very fast. Yeah.
+
+Bastian Osorio:
+It's because CIDS is shit. So we're avoiding the use of CIDS. And now everything is loading pretty fast. It's not that CIDS is shit. The thing is that it's not a tool for making any adjustment. It's a tool just only for taking information X from the point A to B, and that's it.
+
+Saul Portillo:
+I sent a list in the chat, Sagar, for different products with historical consumption, and the location ID is 2101. You can take all the list.
+
+Sagar Vora:
+I'll see if I can copy or not. No, no, that is fine. I'm just thinking, like, Hector, you want me to apply a filter for these products and location?
+
+Hector Palacios:
+For the products, to understand which material type it is.
+
+Sagar Vora:
+OK, to check the material type. OK. Let me check. Hello.
+
+Sagar Vora:
+we don't have this sort of what is the We don't have 2101 plan available. So I think no materials related to that plant are loaded. These are the plans that we're getting from the interest. Yeah, correct.
+
+Hector Palacios:
+This is the kind of thing that we need to start checking with demonstration. So you send the information with this plan. Now in the integration flow, we are not getting it.
+
+Sagar Vora:
+Do we have any filter on that integration flow, Sagan, for the plant? Yeah, I think these are the filters which are applied.
+
+Hector Palacios:
+And 2101 is there?
+
+Sagar Vora:
+No, it's not that.
+
+Hector Palacios:
+We are not sending that.
+
+Saul Portillo:
+For example, for the business data, it's the only plan for the historical consumption. All the materials, the historical consumption is that plan, the 2101. And the plan is a shaft field plan.
+
+Sagar Vora:
+location description. I think we can try to load for. We can put some plant here.
+
+Sagar Vora:
+1, 2, 0, 2, 4, 1, 1, 2, 0, 1.
+
+UNKNOWN_SPEAKER:
+1202, we can try.
+
+Saul Portillo:
+For example, an order and the equipment. You have the information. And now it's useful if I send the order. I got some records for 1201.
+
+Sagar Vora:
+So will this work? Like I can apply a filter of 1201, and we can load these old orders. Will that be OK, Hector?
+
+Saul Portillo:
+But I don't know if you can. Search one order of the data package and you can see in the system because all the order is for the location 2101.
+
+Sagar Vora:
+I didn't understood. Can you please repeat?
+
+Saul Portillo:
+Yes, I can send you the number of Yeah, you can send. OK. For example, this is different orders.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Sagar Vora:
+Show me the order list. Yes.
+
+Saul Portillo:
+For example, you can take the second one. The second one have different product, different product. Consume product that is 5-1, the second one.
+
+Hector Palacios:
+This one?
+
+Saul Portillo:
+This one, for example. Because it's repeat and you can see it's order all the products on the location.
+
+Hector Palacios:
+The material that you send, Saul, which one are they? MRO?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Saul Portillo:
+Yes, all of them are all corrective.
+
+Sagar Vora:
+But so if these orders are related to these materials, then I think these materials are not available in IPP. No, let me that no, no, it's not the same order for the last. Material is different.
+
+Saul Portillo:
+For example, let me show one order.
+
+Sagar Vora:
+And the two orders which you gave, I don't see any data for that. For example, for this one.
+
+Hector Palacios:
+Can we check directly on S4HANA 7? In the table, S4HANA instead of that one?
+
+Sagar Vora:
+Directly in the table, you're saying?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+In the matter, for example?
+
+Sagar Vora:
+OK, document means a material type of this material.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+Of the most that you can place at the same time. Are you working on the BDI?
+
+Sagar Vora:
+Yeah, I'm working on the VDI, but I have this.
+
+Hector Palacios:
+Okay, this is the system, Renaldo system.
+
+Sagar Vora:
+How are you able to take information from your computer to the VDI? So I have this Teams, right? I just messaged Rinaldo and I'm using Rinaldo's system, so.
+
+UNKNOWN_SPEAKER:
+Okay. For example, I sent an example in the chat.
+
+Saul Portillo:
+You can see, for example, the table. It's one order, different part ID, different one equipment, and one location. I don't know if you can see that information in the system.
+
+Sagar Vora:
+So, the number of order and the number of the material they use. These all are C-A-R-S-P products. And are those part of the filter?
+
+UNKNOWN_SPEAKER:
+Let me check.
+
+Sagar Vora:
+No, yes, C-A-R-S-P. These are all are mostly from 2101 and 2402 but we don't have that plant 2101 and 2402 and sorry the plan 2101 is all the all the data for historical consumption yeah but I think when the extractor means the data is loaded in the extractor so I think that plant was not provided so it might be Due to that reason that plant is also not available and that materials are also not available in the extractor.
+
+ But the material, I understand the plant, but the material doesn't make sense because it should be there. No, no. So in extractor when we load data, so I can do that. Like if you want, I can load data, but then again, I have to load for all the extractors.
+
+Bastian Osorio:
+Can you expand?
+
+Sagar Vora:
+I don't get what you're saying. So I'm saying like currently in the extractor, this material and these all plants are not available. OK, so it's. If you see this, but because on the structure you put the plant 80, you put it.
+
+Hector Palacios:
+So this.
+
+Sagar Vora:
+Yeah. So two one zero.
+
+Hector Palacios:
+Let's just add it because business share with this more this information with us with the plant so it should be there.
+
+UNKNOWN_SPEAKER:
+Okay. Action site. Strange.
+
+Sagar Vora:
+And now we have to load the data again.
+
+Sagar Vora:
+When we get some.
+
+Pablo Lopez:
+you that I need to leave because I have my train right now. I have to go to the station for going to Madrid tomorrow.
+
+Pelayo Fernandez:
+So I need to leave. Okay, Pablo. Thank you.
+
+Sagar Vora:
+Thank you, Tim. Bye. See you tomorrow. Should I load only for the products.
+
+Bastian Osorio:
+Let's start with those ones and then we can expand. The selection.
+
+Sagar Vora:
+Bye. You Thank you.
+
+Hector Palacios:
+I'm having lost him. What are we checking right now?
+
+Sagar Vora:
+So I was trying to load. Yeah, I was trying to load data for these materials. OK. So I loaded that materials, but still I don't see the transactional data for that.
+
+Hector Palacios:
+OK.
+
+UNKNOWN_SPEAKER:
+Do we know why it's the material type? Yeah.
+
+Bastian Osorio:
+C-R-S-A.
+
+UNKNOWN_SPEAKER:
+C-R-S-A. Spare parts. Spare parts. Great.
+
+Hector Palacios:
+I was going to look for that. And the ones that are starting with three, the latest ones, the last ones that Saúl share is also spare parts?
+
+Sagar Vora:
+That are orders I think.
+
+Hector Palacios:
+Ah, those are orders. Yeah, makes sense. Those are preventive orders indeed.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+I think because they start with three. 31. So all the materials that you have start by one For MRO?
+
+Saul Portillo:
+Let me check. All the materials. This is getting more interesting, finally.
+
+Hector Palacios:
+Yes, let's just start with number one, two.
+
+Saul Portillo:
+All the materials. One, two.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Saul Portillo:
+Exactly.
+
+UNKNOWN_SPEAKER:
+One, two. Okay, so you have the...
+
+Hector Palacios:
+And the ones that start with three, Saul, those are orders, right?
+
+Saul Portillo:
+Yeah, the orders in the historical consumption for those materials.
+
+Hector Palacios:
+Yes.
+
+Sagar Vora:
+And now we are not able to find it again. I have loaded the data in the extractor for these materials. To CN 2101 and this is available. But for this material I don't any contextual data.
+
+Hector Palacios:
+the materials that you have there you are not able to find transactional data but in the extract not if you go to the standard table yeah in standard table I can see one of the order okay So, we stay
+
+UNKNOWN_SPEAKER:
+your right here. We stay your right. Okay. To see. I'm not sure, but here's the tip.
+
+Sagar Vora:
+This material is empty. I can see the order, but I'm not sure how it is linked to that material. So they said RESP.
+
+Sagar Vora:
+We will need to share with Dinesh on Monday, I guess. Dinesh is there in the list? Can you go back?
+
+Hector Palacios:
+Can you look back there?
+
+Sagar Vora:
+I saw something interesting.
+
+Hector Palacios:
+I don't see that material in this list, the material which… Sorry, but can you go back here? Yes. The reservation, the reservation are by storage location, Bastian.
+
+UNKNOWN_SPEAKER:
+What?
+
+Hector Palacios:
+Reservation are by storage location.
+
+Sagar Vora:
+This is a plant. I'm feeling sort of picking up.
+
+UNKNOWN_SPEAKER:
+Look.
+
+Hector Palacios:
+Maybe this is a workaround for this. I don't know if in reservation we have the actual assessment. If the reservation with the consumption is one to one, maybe, yes, we can use it.
+
+Bastian Osorio:
+But that is not the point now. We can check that later.
+
+UNKNOWN_SPEAKER:
+Yeah, later, later. Sagar, the material is OK.
+
+Saul Portillo:
+The list of the material is not the same for the list of the order you can check. 62, this is the material.
+
+Sagar Vora:
+It's OK. OK, so shall I take the other?
+
+Saul Portillo:
+If you need, for example, see one order and link with the material, you can get the last example. The last example, you can see the tab. This one?
+
+Sagar Vora:
+And this is the order exactly, and this is all the materials.
+
+UNKNOWN_SPEAKER:
+OK, that order has this many materials. Uh-huh. OK.
+
+Sagar Vora:
+If you see the picture, this is the order, the equipment and the materials. For this. To you then. Thank you.
+
+Sagar Vora:
+Plant is same, right? 2101. Yeah, it's the same.
+
+Sagar Vora:
+No, I mean. Transportation in data might be required. No. Thank you. You Thank you.
+
+Sagar Vora:
+Your time is not coming. Bye.
+
+Sagar Vora:
+A time there in this table and it's coming for some location. Okay, we can try for 2101 if anything is coming.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sagar Vora:
+For 2101, it's coming for some.
+
+Sagar Vora:
+and even the order type you It looks different.
+
+Sagar Vora:
+OK, might be the product IDs which you gave. I'm not sure. Leading zeros will affect.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Sagar Vora:
+OK, but I think we have some data now for this PM01 for this 2101. I'm not sure that ID order will be the order ID will be there or not. OK, that order ID is also there and we have some data now.
+
+UNKNOWN_SPEAKER:
+Great.
+
+Sagar Vora:
+So now we have to load data, right? First I have to load the products again. Will you need to remove the zeros at the beginning?
+
+Hector Palacios:
+I saw that the material was with like four zeros at the left. Leading zeros.
+
+UNKNOWN_SPEAKER:
+It's very common.
+
+Sagar Vora:
+you so in this when the customer insert we have order we have a material location Equipment. Did it load? No, no. Since I loaded the new products, are required.
+
+UNKNOWN_SPEAKER:
+Awesome data.
+
+Sagar Vora:
+Yeah, yeah. Okay, just in.
+
+Sagar Vora:
+Would I apply a filter of that order number which we saw this provided?
+
+Hector Palacios:
+This one. Do you want to apply a filter just to check if there is any mistake?
+
+Sagar Vora:
+Yeah, so that's. Means later we can apply means we can load for all but yeah just to check we are getting correct data or not so we have to aggregate What is the key figure? It is a key figure in which product location customer. But here, which key figure we have to use? Actual quantity, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+The first one that I will share Did you replace the filters by order type?
+
+Sagar Vora:
+Currently, I'm applying just one order ID.
+
+UNKNOWN_SPEAKER:
+Yep.
+
+Sagar Vora:
+And here we have dates.
+
+Sagar Vora:
+We have two dates, requirement date, period start date, and period end date. So I will use the requirement date for now. And what should be the horizon, like last how much data? All the data?
+
+Hector Palacios:
+How many years we have in the past? Here I can see 2020. Because SAP here is not very old. It's like four years in the past. What I'm failing to see there is the filter, like the order type PM01, PM02.
+
+Sagar Vora:
+So you can use it on here. It's there, it's there. I have already.
+
+Hector Palacios:
+Yeah, yeah.
+
+UNKNOWN_SPEAKER:
+Oh, great, great, great.
+
+Saul Portillo:
+And Sagan, sorry. This is the – can you show this? This is the historical consumption for the order 249 for all the materials.
+
+UNKNOWN_SPEAKER:
+Only for the order.
+
+Saul Portillo:
+Okay. Because – let me see the date. Because I see this June The date is January 21. 12th January 21, 14th January 21 and 17th January 21.
+
+Sagar Vora:
+Different date. I'm not sure. Here also, the requirement date is of 2020 only. I think June 30, June 2020. But I don't know what happened. But he gave you a seasonal sandbox system, right? So I'm not sure.
+
+UNKNOWN_SPEAKER:
+Sure. OK. My concern is the different dates. Yeah, I understood.
+
+Sagar Vora:
+But I think in system for this order ID, there is only this date data.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+So what should we do, Hector?
+
+Hector Palacios:
+Come again? Sorry, wasn't paying attention.
+
+Sagar Vora:
+So what Saul is saying, like the beginners gave him the data, right? So in that, the date is, I think, some, it's of January, 2024 or 25?
+
+UNKNOWN_SPEAKER:
+January 21. January 21.
+
+Saul Portillo:
+January 20. For example, 12. 15, 16, January 21. And in this data in the system is June 2020. I don't know what my concern is. Only one date in this data and the data for Vignesh is different dates and different year.
+
+Sagar Vora:
+And I don't see any It's also in the table. I can see this latest, but this is also June. Yeah. Yeah. From where updates are. Coming and then the quantity might also be different.
+
+UNKNOWN_SPEAKER:
+You can check that.
+
+Hector Palacios:
+They're not connected. Sorry, I'm back.
+
+UNKNOWN_SPEAKER:
+Sorry. I'm back. Yeah. I know. Yeah.
+
+Sagar Vora:
+So what we, no, no, what we were saying, uh, the data means us all gave us one order ID, right? So for that order ID, uh, the dates in salt means what we can issue is of January, 2021. And the date, which we can see. On in the system is of June 2020.
+
+Hector Palacios:
+We have so few data here that the most we have the best. They are having consumption like every once in a year, every two years, so let's not miss a year here. Let's just integrate everything. Yeah, that's it. For now, it's okay, right?
+
+Sagar Vora:
+If I can load data for this. Yeah, that's fine.
+
+Bastian Osorio:
+I'm not sure if the plan area is set for that horizon.
+
+Hector Palacios:
+I mean, in the planning area, you decide what to show, but the time profile for sure is prepared. So, when you load it, You have even 2014, for example, in the profile.
+
+Saul Portillo:
+So CPI, CIDS, we load it.
+
+Saul Portillo:
+because we need five years for the segmentation.
+
+Sagar Vora:
+I think that will be done because we uploaded the time profile from IBP into the extractor.
+
+UNKNOWN_SPEAKER:
+How many years you have been working with this tool, Sahar?
+
+Hector Palacios:
+Almost more than six years.
+
+Sagar Vora:
+What was the name of this tool in that moment? H-C-I-D-S. Cloud Integration.
+
+Hector Palacios:
+Yeah, it was. CIDS. I'm not sure that is the one because the one that you check right now is at the location level only, not at the equipment level. It's another one. No, no. If you go to the flow, you use one key figure, the second one that I asked you. So, there is a first one, that one is without the manual. Without manual and without the C at the beginning.
+
+Sagar Vora:
+Okay, this does not have equipment version.
+
+Hector Palacios:
+Yeah, this is by location only. Then this one cleansed? No, remove the C at the beginning. Yeah, I don't know how to.
+
+Sagar Vora:
+Yeah, OK.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+You got it. You This is one of my moment of truth. Let's see.
+
+Sagar Vora:
+How many records do you have? Not much, I think. Fifty-five something. Result of customer arrangement. Then why is the moment of truth vector?
+
+UNKNOWN_SPEAKER:
+I was expecting more data.
+
+Hector Palacios:
+But I think that at least, whoa. It finished.
+
+UNKNOWN_SPEAKER:
+Sentinel.
+
+Hector Palacios:
+Something's, ah, but you were with the filter of the order, right?
+
+Sagar Vora:
+Okay, I removed the zeros.
+
+UNKNOWN_SPEAKER:
+Yes, you are. It wasn't zeros? Yeah, leading zeros.
+
+Sagar Vora:
+That's my thought. Let me check then. And we have that product still leading to.
+
+Bastian Osorio:
+This is for how many.
+
+Hector Palacios:
+materials it's for one order I think yeah I have applied a order to but yeah yes I would practice to run it with a simple flow with a simple filter just to see that everything I'm almost I'm almost getting
+
+Sagar Vora:
+17 uh I said no sorry so I missed 200 and I'm getting let me let me check is the same on the yeah yeah sorry but one type of order for how many materials no no I have applied a
+
+Bastian Osorio:
+order id filter order id is one order not one update that order had 17 materials. Yeah, it's fine.
+
+Saul Portillo:
+Yeah, it's the same quantity. Okay, so only the difference is, I think, date. The difference is the date. Your date is January 2020 and our date in January 21.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sagar Vora:
+And it's the equipment.
+
+UNKNOWN_SPEAKER:
+Can you check?
+
+Hector Palacios:
+Why is it in your case?
+
+Saul Portillo:
+Our case one, you know, January, January 2021. In this case, John, during the day, we have three days. 12 January 14. And 17.
+
+Hector Palacios:
+Sir, you remember that we were checking two dates, required date, start date, end date?
+
+Sagar Vora:
+Yes, so here if you see even in the table, okay, this is the reservation table, so here also the dates is the requirement date and I have only...
+
+Bastian Osorio:
+And if you move to the right?
+
+UNKNOWN_SPEAKER:
+Yeah, sure.
+
+Sagar Vora:
+So here if we have a three requirement date, start period, start and period end date.
+
+Hector Palacios:
+They're very close. Well, in some cases you see that they are six months of difference, but the same year. Are you filtering here by that order or this is general?
+
+Sagar Vora:
+No, I have applied that order ID filter.
+
+Hector Palacios:
+We have the order ID filter.
+
+Sagar Vora:
+Yes. But even if I am applying in the same, the main source table so there also we just have a single date and there the date is also 2020.
+
+Hector Palacios:
+And I don't see any other dates. Well it's weird then why we have these dates.
+
+Saul Portillo:
+This is a table for historical consumption or reservation. If you see the date, it's a requirement date, but it's a consumption, I think. Because it's a requirement, but it's not historical.
+
+Sagar Vora:
+But I think in this what we call this extractor okay as per the documentation they are seeing like they are using this three tables ufk afq and the reservation table.
+
+UNKNOWN_SPEAKER:
+So these two are the master data, basically the order table.
+
+Sagar Vora:
+And the third one is a reservation table. So I don't think the quantity will be available in this table. I don't see any January month date here.
+
+Saul Portillo:
+Order ID is correct, right?
+
+Sagar Vora:
+249 we are checking, right?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah. Graph. We can check the date later.
+
+Sagar Vora:
+For me, the important thing now is volume.
+
+Bastian Osorio:
+Volume is matching. Then it's fine. Then we can go to integrate more more data volume, more materials and more history.
+
+Sagar Vora:
+So we can check if we have any meaningful data.
+
+Bastian Osorio:
+Then I can remove this and I can put a material type filter.
+
+UNKNOWN_SPEAKER:
+Let's go with the set RSA.
+
+Sagar Vora:
+No material type here. Talks about, oh, sorry. Sorry, sorry.
+
+Bastian Osorio:
+Order type this and material type. You've already loaded materials, right?
+
+Sagar Vora:
+How many records did you get? My God.
+
+UNKNOWN_SPEAKER:
+Wow.
+
+Saul Portillo:
+And the equipments are more than that.
+
+UNKNOWN_SPEAKER:
+Oh my God.
+
+Bastian Osorio:
+Oh my God.
+
+UNKNOWN_SPEAKER:
+And locations?
+
+Sagar Vora:
+Locations are 43, but storage. Plant plus storage location, so it's 69. But just locations? Just locations is 43. But just plant, no tenders? Oh, it's fine.
+
+Bastian Osorio:
+This one doesn't look that bad.
+
+Saul Portillo:
+Yeah, these are just locations.
+
+UNKNOWN_SPEAKER:
+What is the error?
+
+Sagar Vora:
+Karen Drake-Feller.
+
+Sagar Vora:
+I'm not sure if it will work or not. But can we apply some filter and see? Because here also it is not working that much.
+
+UNKNOWN_SPEAKER:
+So.
+
+Bastian Osorio:
+You're using a location filter. Yeah, can we apply some locations. That one, 2101, is it fine?
+
+Saul Portillo:
+Yeah, it's the location for this purpose.
+
+Hector Palacios:
+I'm sure there are more locations.
+
+Bastian Osorio:
+That is one But let's start with that. One, then we can expand.
+
+Bastian Osorio:
+You can do it.
+
+UNKNOWN_SPEAKER:
+Arrow.
+
+Bastian Osorio:
+Oh, you're checking the other one.
+
+UNKNOWN_SPEAKER:
+you. You Did it work? No, no, it didn't work.
+
+Sagar Vora:
+I'm just checking to see if it's working here. We would stay here also. Aired efforts.
+
+Sagar Vora:
+How many records are there?
+
+UNKNOWN_SPEAKER:
+you.
+
+Bastian Osorio:
+you Thank you.
+
+Sagar Vora:
+There are some detections my slowly So entry doesn't exist for customer ID.
+
+UNKNOWN_SPEAKER:
+So we are missing equipment. Or it's empty.
+
+Hector Palacios:
+Can you check? It seems that the equipment is empty. It's empty now. Yeah. Just give me a minute.
+
+Sagar Vora:
+I will just, I will be right back. So you may have another meeting. I need to leave here.
+
+UNKNOWN_SPEAKER:
+Yeah, I'm back. Yeah, so there was three reasons.
+
+Sagar Vora:
+One is the equipment is not available. How many records do we have now? So we have total. Successful records are 4,170. Not that much.
+
+UNKNOWN_SPEAKER:
+Just because.
+
+Sagar Vora:
+But it's just for one location, right? Correct.
+
+UNKNOWN_SPEAKER:
+Still doesn't sound that much.
+
+Sagar Vora:
+But we have applied a filter of PM01 and PM02.
+
+Saul Portillo:
+And the data for Bignish give us, we have 3,800 records. It's like the same number.
+
+Bastian Osorio:
+It's the same number that Bignish provided?
+
+Saul Portillo:
+No, not the same number, but it's It's really close.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Saul Portillo:
+It's three thousand eight hundred.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+OK, he gave me a different how many how many different materials do we have?
+
+UNKNOWN_SPEAKER:
+Yeah, we have different materials. For example.
+
+Saul Portillo:
+in the master data.
+
+UNKNOWN_SPEAKER:
+Let me see. Here we have 693 materials.
+
+Sagar Vora:
+Can you put that number there?
+
+Bastian Osorio:
+693. Yes.
+
+UNKNOWN_SPEAKER:
+Just write it.
+
+Bastian Osorio:
+And we have how many records? Like 4,000. So on average, how many records do we have per material?
+
+Sagar Vora:
+What do you want? Average? Mm-hmm.
+
+UNKNOWN_SPEAKER:
+Five records per material.
+
+Sagar Vora:
+Oh, that's not good. In our case for the minister data, we have 1548 materials no no so what is what is the issue here I didn't understood so uh so like vignesh gave you the data for this plant only right single plant yeah
+
+Saul Portillo:
+for for And how many records you got? 3,080, let me see. 3,800. And if I remove the zero.
+
+Sagar Vora:
+Maybe the dates considered are different.
+
+Bastian Osorio:
+Still are around the same number. 3, 4,000. Got it.
+
+UNKNOWN_SPEAKER:
+Anyone like...
+
+Sagar Vora:
+Hello, am I audible? Yeah. Okay.
+
+Bastian Osorio:
+Can you skip the filter for location to see if we, or just to run it for more location to see if we can find a location that has more records.
+
+Sagar Vora:
+OK, we want to me to run without location.
+
+Bastian Osorio:
+No, no, with with the filter for all the locations we are considering.
+
+Sagar Vora:
+So which are the other locations you have them right? Yeah, so that all means if I remove then we have all that 43 locations.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+Because in X vector we have only 43 locations, right? So. But I just don't like how much.
+
+UNKNOWN_SPEAKER:
+It will take time.
+
+Bastian Osorio:
+Yeah, let's finish. Let's finish with this one. We can continue tomorrow.
+
+Sagar Vora:
+But I mean, I have executed. I'm not sure it will.
+
+Bastian Osorio:
+or it will be successful we can check that but so now what you exactly want me to do like you want anything from here no just I want to make I want to check if there are some more some
+
+Sagar Vora:
+location that have more data data okay in case if this fails then we can apply some some location filters and then try to run. Should it fail?
+
+Bastian Osorio:
+Can it fail because of volume?
+
+Sagar Vora:
+It can be depends like if the extractor is failing then this will obviously fail. If extractor is successful then this will be also successful.
+
+Bastian Osorio:
+But when you run this one Extractor also runs?
+
+Sagar Vora:
+No, no extractor. Yeah, basically it's extractor only, right?
+
+UNKNOWN_SPEAKER:
+So.
+
+Sagar Vora:
+Even extractor is not running without. Yeah, see.
+
+Bastian Osorio:
+It failed. Yeah, it failed.
+
+UNKNOWN_SPEAKER:
+Why is that?
+
+Bastian Osorio:
+Because of the volume of data.
+
+Sagar Vora:
+might be I am not sure I need to Even so.
+
+UNKNOWN_SPEAKER:
+Wow.
+
+Bastian Osorio:
+I'll mug you in a second.
+
+Bastian Osorio:
+Did you apply other filter?
+
+Sagar Vora:
+No, I just applied value should be greater than zero. And this is also not working.
+
+Bastian Osorio:
+If you have to go, you can go.
+
+Pelayo Fernandez:
+No worries. Okay, then I'll leave if it's okay.
+
+Bastian Osorio:
+Yeah, sure.
+
+UNKNOWN_SPEAKER:
+See you tomorrow. See you tomorrow. Bye. Hi. Can apply some long filter.
+
+Sagar Vora:
+We're nowhere near that flat family of nine.
+
+UNKNOWN_SPEAKER:
+Thanks.
+
+Bastian Osorio:
+Let's go with two and see what happens. You're trying to do that, right?
+
+Saul Portillo:
+Yeah.
+
+Sagar Vora:
+Thank you so much.
+
+Sagar Vora:
+I can, I can check with Renaldo if we can check what could we do if we're lucky. Yeah, it failed again. I can ask Renaldo to check like if we can see something in the extractor, like in ABAP.
+
+UNKNOWN_SPEAKER:
+Okay. What are you running?
+
+Sagar Vora:
+I applied a one single plant again 1400 these also fix yeah then I think yeah we to take some input from going on.
+
+UNKNOWN_SPEAKER:
+Oh, it's printing it. OK.
+
+Bastian Osorio:
+When you have some time, please check with Reinaldo.
+
+Sagar Vora:
+Yeah, I will just check with him. If he can check his needs, like currently, if he can check. And tomorrow, if I get some time, I will also try to spend some time on this.
+
+UNKNOWN_SPEAKER:
+Cool. Thank you.
+
+Sagar Vora:
+Let me know when you are back tomorrow, please, Sagar. Tomorrow, I think I... I'd be post, yeah, post evening, I think I will. It should be.
+
+UNKNOWN_SPEAKER:
+Bye. Thank you.
+
+Sagar Vora:
+Thank you. Bye-bye.
+
+UNKNOWN_SPEAKER:
+Bye!
+
