@@ -1,0 +1,267 @@
+Hector Palacios:
+¿Cómo son los tipos de Capgemini? ¿Son jodidos? ¿Vos? ¿Quién vos? No, no, los tipos, la gente que trabaja con Capgemini. ¿Trabajan solamente con Florencia en particular? Solamente estamos con Florencia.
+
+Pablo Palacios:
+Hay un consultor más, pero no ha participado. Es nuevo, me parece. Es un MM.
+
+Hector Palacios:
+Ya, y la que habla ahí es Florencia y anda a las corridas, ¿no? Son los Florencia. Es la cara de Gil. Ah. Son... Bueno, entonces los que ponen presión ahí me imagino que es Kering. Y... Bueno, Kering, obviamente, porque es Kering. Hola John, ¿qué tal? Hola, buenos días. Buenos días. ¿Pero Florencia en particular ya pone presión?
+
+Pablo Palacios:
+Y últimamente sí. Básicamente manda una entrega y dice, me la pueden responder, me la pueden procesar. Esperando que se las procesemos inmediatamente. Ya, es que puede que haya un desalineamiento de información.
+
+Hector Palacios:
+No sé si es que en las sesiones le estamos comentando que nosotros igual estamos haciendo nuestras pruebas. Y no es cosa primera que tenemos esta data. Queremos hacer nuestro trabajo bien y no nos vamos a andar corriendo porque si no podemos en riesgo la calidad del trabajo.
+
+Jonathan Hernandez:
+Y se lo vamos comentando en sesiones y también por mensaje, Pablo Richard, pues estamos en la parte de, al menos una entrega y no procesarla, no es al momento, no es justo estamos probando nuestras configuraciones y salen errores. Ahí a lo mejor solo mi comentario, Pablo, sería y eso es lo que yo aprendí apenas recién es el silencio, genera un poquito de ansiedad. Entonces, si por ahí nos mandan un mensajito, no decirle, yo te lo voy a hacer, oye, ya lo recibí, lo voy a revisar y en cuanto tenga la respuesta te la regreso, ¿no?
+
+ Porque si no dejamos ahí la respuesta, luego por ahí viene la, a lo mejor un poquito de ansiedad de ellos de que piensan que no lo estamos viendo o lo estamos ignorando un poquito, cosa que no es así, pero nada más clarificar que se les está revisando.
+
+Hector Palacios:
+Puede ser igual, revisémoslo, porque hay un punto que a veces sí que le llega un mensaje abajo, como fuera de horario, también entiendo que no vaya a responder rápidamente. Validemos, o sea, durante el día ahí sí, Pablo, quizás si te manda un mensaje, recibió y lo rehizo. Fuera de horario, se espera en otro día. Alineamos con ello en la sesión semanal. La sesión semanal anterior no me subí, creo que yo creo que me llevo la invitación como se me había pasado.
+
+ Y creo que me llegó la invitación como a un minuto antes, algo así. Y yo estaba en otra.
+
+Jonathan Hernandez:
+No recuerdo. Hubo un cambio de horario, pero igual ayer platicué con Kering y lo que me comentaba es, o sea, en otras etapas del proyecto, cuando fue la exploración y demás, o incluso en otras sesiones, no hay tema con, aunque no suba Pablo, lo toma Richard o demás, ¿no? El comentario de Kering. Y a lo mejor también por eso viene la existencia de que estamos en una etapa de pruebas y a lo mejor un poquito más de movimiento, a lo mejor hay un poquito de flexibilidad con los horarios.
+
+ Obviamente con tiempos razonables, ¿no? O sea, como ayer 5 de la tarde, 8 para Pablo, pues sí, ya es tarde, ¿no? A lo mejor si es a las 6 de la tarde, bueno, tal vez un tiempo que todos hemos trabajado fuera de ese horario, ¿no? Es lo que me pedía Keryn, un poquito de flexibilidad en esa etapa particular.
+
+Hector Palacios:
+Vale, igual alineamos con ella. Alineamos con ella. Flexibilidad, sino que también el tema de tomarnos nuestro tiempo para poder hacerlo bien y siento que si no empiezan a empujar mucho puede que pongamos en riesgo los resultados o lo que logremos a nuestro lado. Al final, tenemos que entender que todo lo que están haciendo es para EWM, entonces todo debería girar en torno a que EWM está bien, no al revés.
+
+
+
+Pablo Palacios:
+Sí y no, porque la configuración que está haciendo Florencia de incluir entregas o todo lo que es delivery, entrega entrante o entrega saliente, que lo está haciendo en SC, eso podría estar, existir, independientemente de si tuvieran EWM o no tienen EWM. Es una funcionalidad extra, obligatoria para EWM, para que pueda funcionar, pero tranquilamente podrían tener la funcionalidad en SC en los escenarios de compras y de ventas ya configurada, Y debería funcionar independientemente de DWM.
+
+ Entonces, ese apuro de Florencia, es decir, te mandé una entrega, decime si ya la podés procesar para avanzar la contabilización. A ver, sí, para avanzar la contabilización necesitan del lado de DWM que la procesemos. Pero que si ya generaste la entrega, ya está. A ver, dejarlo en standby para cerrar el flujo completo con la contabilización y demás. Y esperanos, porque esto si ella lo hubiera tenido configurado inicialmente, como hay algunos que otros escenarios donde las entregas ya existían.
+
+ Creo que en el escenario de entrega de salida. Ya existían de antes de hacer, antes del proyecto. Y ahí no nos vienen a apurar. ¿Por qué? Porque ya estaba recontra testeada de que la entrega se generaba. Ahora, ya creaste entregas. Ya configuraste. ¿Qué necesidad de estar pidiendo o apurándote con cada nueva entrega, cada nueva clase de documento de entrega que vas generando? Si ya sabes cómo se hacen, ya lo hiciste anteriormente.
+
+ Nada, me parece que... A ver, sencillo. Estás haciendo cosas que van de la mano, que no... Nos está corriendo Florencia y no tiene mucho sentido que nos corra. Que los tiempos. A eso les trato de decirles. Porque su laburo, lo que tiene que hacer ella de configurar las entregas, ya la está haciendo y tiene que seguir haciendo de las faltantes que le faltan y nada más. Testing, ya van a llegar los testing.
+
+ Cuando podamos empezar a trabajar la entrega nosotros del WM y cerrar cada puntito que tengamos y llegar a la contabilización correctamente. Pero de ahí de decir, ya te mandé la entrega, apretá la Y devolverme la contabilizada, no. No es tan así. Ojalá fuera tan simple. Hagamos lo siguiente para gestionar a Kirin.
+
+Hector Palacios:
+Quizá John, porque quizás te está colocando Kirin toda la presión a ti, ¿no? Pimponéamela. Pásamela. Dame el chute y a ver si es que yo me junto a una sesión con ella, si es que no es la misma semanal que tengamos mañana, para alinear este punto con ella de que ya está bien, que quizás necesitan que estemos estamos trabajando 100% en esto, ¿de acuerdo? El tema es que sí necesitamos que hacerlo a nuestros tiempos también.
+
+ El tema de Capgemini, yo entiendo, porque hay un tema de contrato que le están cobrando, facturando bien, qué sé yo, y por eso lo quieren mantener al mínimo. Pero nosotros, o sea, cuando ellos hacen su estimación de trabajo, los de Capgemini, etcétera, Me imagino que quizás estaban obviando el tiempo que íbamos a dedicar nosotros. Y acá tenemos dos cosas, o sea, son las pruebas de ellos y también son las pruebas nuestras.
+
+ Entonces, independiente, a veces, quizás, trabajar un poquito más. Si te llegan, no sé, le llegan a las seis, va, lo sigue hasta las seis y media, lo que sea. Igual tenemos que cuidar de que no nos pongan tanta, tanta presión para que nosotros sí nos dediquemos a hacer las pruebas como corresponde. Que es la primera vez que tenemos los datos. Así que déjame ese punto a millón. Si quiere, yo lo intento alinear con ella en estas sesiones que tengamos, ¿vale?
+
+
+
+Jonathan Hernandez:
+Sí, porque ayer tuvo que hacer labor de contención con ella porque ella lo que decía es que el equipo debe estar disponible en el horario de Diana, ¿no? Que es de 8 a 5. Entonces, ahí le comentaba, ¿es así? En principio sí, pero entiende que también los horarios futuros son complicados. Del equipo ha estado. No creo que siempre se les ha tenido el soldado de respuesta como para que piense que no lo estamos haciendo ahora, y menos en una etapa que es de una de las más intensas del proyecto, que son las pruebas.
+
+
+
+Hector Palacios:
+Dale, déjame validar ese punto. Igual tenemos horas de ventaja, o sea, tenemos cinco horas de traslado con Pablo. Hay horas que Pablo obviamente va a estar trabajando en la mañana y Florencia, si manda un mensaje, ponte a a las 6 de la tarde, horario de Ana, ellos van a tener la respuesta probablemente, qué sé yo, Pablo, a las 6 de la mañana, horario de Diana, el siguiente día, ¿no? Cuando tú estés recién empezando, ellos antes de empezar a trabajar ya lo van a tener, ¿no?
+
+ Y si es cosa de gestionar un poco en eso. Si es tanto a favor como en contra. O sea, son horas que quizá durante el resto del día no, pero también en una hora de ganar en la mañana donde Pablo va a estar trabajando, haciendo sus pruebas bien, y dando los resultados durante el día para que iteren y hagan lo necesario, ¿no? O sea, cinco horas de trabajo, de iteración, yo creo que deberían estar bien, no había tanto tema.
+
+
+
+Pablo Palacios:
+Porque además con los escenarios y con las clases de documento, los distintos escenarios que van apareciendo, van apareciendo errores, cosas con las cuales yo voy lidiando. Por ejemplo, la que le devolví hoy a la mañana, diciéndole ya la que es la única que había llegado bien de ayer, ya la contabilicé, ok, ya la contabilicé y se la devolví a ellos, pero yo todavía tengo dentro de EWM, tengo un problema que es que la descarga no la puedo hacer, la descarga del camión, ya contabilicé, ya entré la mercadería al warehouse y del lado de ECC ya es transparente, ahora en EWM, yo tengo un problemita, tengo un error que no me genera, no puedo generar la descarga, eso es un error, yo tengo que seguir trabajando ahí con esa entrega, para ECC es transparente, ya es transparente.
+
+ Pero yo tengo que seguir trabajando ahí, seguir averiguando y ver qué está pasando, dónde está el error. Después, la otra entrega que me dice que es la primera entrega proveniente de compras. La primera compra que hacen. Que me la mandaron ayer, también, en ese horario. Y hoy les respondí, mirá, esta no procesó porque no tiene el lote. No, lo que pasa es que es una compra, me explica, me dice, no, la casuística va a venir sin el lote.
+
+ Ok, tengo que ver por qué NWM sin lo que no me está generando la entrega, porque directamente no entra. Quedó en, para que ustedes tengan una idea, en el IDOC, perdón, en la interfaz, en la RFC. Ni siquiera entró en NWM, quedó el error ahí. Es lo primero que tengo que estar averiguando. Son cosas que te las vas encontrando a medida que van llegando los escenarios de prueba. Entonces, de esa de compra, me hubieran dicho, no, no, pero necesito que me la contralicen ya.
+
+ Se puede porque ni siquiera entró. Tengo un error. Entonces, esos errores hay que ir analizándolos y ver qué está pasando. O ver esa casuística en particular. Esta casuística es porque no viaja con lote. Bueno, ok. Con lote entra perfectamente la entrega. Sin lote no está entrando. ¿Qué está pasando? Hay que analizarlo.
+
+Hector Palacios:
+Hay que buscar a la vuelta para que funcione de las dos formas. Es un punto igual bueno a nuestro favor, Pablo, que no es solamente un piponeo de ida y vuelta, sino que requiere tiempo de análisis en nuestro lado. Entonces significa que incluso aunque trabajáramos en el mismo horario, no podríamos responder. Igual. Entonces, a ver, ese tiempo quizás de las tres horas de la mañana son horas tranquilas donde tú puedes dedicar el tiempo a hacerlo bien, a trabajar tranquilo, que nadie te esté mandando mail y jodiendo.
+
+ Déjame validar Igual puede que tengan un punto de lo que está levantando John. Déjame revisar bien tema de contrato, cosas así. Voy a hablar con quien tenga que hablar para entender bien cuál es la situación. En otros proyectos, si hemos estado intentando respetar el horario consultor de donde se contrata, déjame ver cuál es el caso acá. ¿Vale?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+Si tenemos que lograr, obviamente, un balance entre todo, entre la finanza del proyecto, entre la fecha del proyecto, pero también entre el equipo del proyecto, No podemos estar ahí sobreexplotando, trabajando muchas horas, dependiendo de la etapa. Te creo para algo light, quizás sí, por la naturaleza de esta solución. Ahí ustedes me dicen que tienen que ir a City, estar ahí casi que 24-7, qué sé yo, como sea.
+
+ Pero bueno, ahora sí podemos quizás gestionarlo un poco más. Me lo llevo. Después si quieres tú y yo nos alineamos también, no hay ningún problema, y vemos cómo lo comunicamos con ellos también, para ver cómo gestionamos a Kering, que ahí tiene probablemente la presión. Lo bueno es que ahí yo también puedo hablar fácilmente con Eric, y si Kering está como muy apresurada, también puedo pedirle a Eric un poco de apoyo para que vaya disminuyendo un poco la presión.
+
+
+
+Jonathan Hernandez:
+Sí, creo que ahí fue el momento. Ya hablé con ella, estaba más calmada, pero sí me pidió ese apoyo y le dije, bueno, el apoyo siempre ha estado, nunca los hemos dejado solos o sin responder, no nos vamos a desaparecer de un momento a otro.
+
+Hector Palacios:
+No, no, no, en absoluto, en absoluto. Y sí, solamente quiero que entiendan que nosotros necesitamos nuestro tiempo análisis también, que yo creo que, independientemente de todo, sí sigue siendo lo más importante que lo de WM haga sentido, Entonces, bueno. Vi que Richard no se está uniendo. ¿Están en alguna loma? En llamada.
+
+Jonathan Hernandez:
+Seguramente está con Samir, porque tampoco Samir subió. Algo deben estar revisando ellos. Vale. No pasa nada.
+
+Hector Palacios:
+Yo en un rato también me junto con Richard a revisar juntos. Y creo que estamos alineados. No sé si hay algún punto, John, adicional a este que era lo más, lo más como se llama, prioritario. ¿Hay algún punto?
+
+Jonathan Hernandez:
+De lo que conversábamos en la última sesión, Héctor, niveladas para actualizarte, del caso de las unidades de conversación. De la familia, ¿no? Ajá. Se le presentó al equipo de Diana. Walter básicamente dijo que sí al momento. Le sonó bien. Lo único que se lleva en la tarea es presentárselo al resto del equipo para aceptar la propuesta y creo Pero Richard tiene una propuesta.
+
+Hector Palacios:
+Está trabajando. Sí, justo eso le preguntaron, ¿no?
+
+Jonathan Hernandez:
+Y se lo comentó Melvin, tal cual a Richard. Y te decimos que no, ¿cuál es el plan B, no? Y Richard dijo, bueno, de momento no lo tengo, pero se está trabajando y lo estoy revisando cuál podría ser nuestra alternativa. Entonces, nos llevamos a ambos puntos, ¿no? Del lado de nosotros, revisar cuál es el plan B. Y del lado de Diana, presentar la propuesta al resto del equipo y ver si procede lo que presentó Richard.
+
+
+
+Hector Palacios:
+Va, perfecto. Buenísimo, revisemos. Y aprovechando que estamos, John, ¿hay algún punto que tengamos que levantar para la sesión de mañana? ¿Algún punto importante? Creo que te había pedido que te anotara alguno, pero no recuerdo si eso fue la semana anterior para la sesión de la semana anterior. ¿Me habías pedido el del viaje?
+
+Jonathan Hernandez:
+con Richard la semana pasada, se presentó el viernes y bueno, con lo que platicamos esta semana, también ya lo actualicé con Kering. Bueno, tenemos una fecha planteada, estimada. Dijo Kering que una semana antes lo confirmemos y si no, se puede mover sin problema.
+
+Hector Palacios:
+Vale, vale, entonces el viaje está bien y con flexibilidad.
+
+Jonathan Hernandez:
+Y el otro tema, Héctor, Ah, hola. ¿Qué tal? ¿Qué tal?
+
+UNKNOWN_SPEAKER:
+¿Qué tal la sesión?
+
+Jonathan Hernandez:
+No te preocupes. Sí, sí, sí. Si lo vieron, que están en llamada. Te iba a comentar, Héctor. Igual, para irlo viendo, estamos a tiempo de la facturación. Teníamos un hito, creo, para ahorita, para enero, por el tema del cambio de los planes. Se movió, pero creo que sí podemos ir hablando con Kering, con Eric, que se movió por tema de ellos, ¿no? Entonces, para que no nos pegue en la facturación.
+
+Hector Palacios:
+¿Ese hito en particular cuál era, John?
+
+Jonathan Hernandez:
+Pero si no me acuerdo es el de las pruebas. Creo que sí lo teníamos para enero, no se lo estoy confundiendo, pero creo que... Según yo sí lo teníamos.
+
+Hector Palacios:
+A ver, a ver, es que nos adelantaron uno por las pruebas unitarias.
+
+Jonathan Hernandez:
+Pero las pruebas unitarias se adelantaron un poquito, pero...
+
+UNKNOWN_SPEAKER:
+Pero...
+
+Hector Palacios:
+Déjame ver quién me manda estos mensajes. Siempre me mandan ahí del tema del oído. Creo que es Natalia. Dice deployment base. El deployment.
+
+Jonathan Hernandez:
+Pero eso suena a algo. Una deployment no.
+
+Hector Palacios:
+Claro, revisamos. Déjame revisar ahí. Teníamos en el archivo de proyecto. Reviso y lo vemos. Porque bien, puede que por la por la etapa, quizá eso es algo que realmente va a pasar en febrero. Entonces pedirle adelantarlo ya no aplica tanto. Había mucho más presión para el edito anterior por un tema de todas las empresas que tienen cierres de año. Más que nada por eso. Si no es esa parte. Ah, entonces esto es si es que no.
+
+ Bueno, lo pateamos.
+
+Jonathan Hernandez:
+No creo que sea tan tan terrible. Va. Sí, lo revisamos, igual sí. Si lo tenemos para enero, creo que sí lo podríamos. Es fácil de empujar con Diana porque se mueve por tema de ellos, ¿no?
+
+Hector Palacios:
+Pero sí, lo tenemos para febrero, entonces no vería compromiso. Vale, revisamos entonces. Richard, ¿algún punto a levantar? Aparte, ya me estaba comentando yo en el tema este de la unidad de medida, que teníamos que Básicamente entiendo que está revisando internamente con el equipo a ver cuál puede ser un plan B. ¿Fuera eso algún punto importante?
+
+Richard Quinteros:
+Ahorita saliendo de la sesión de salida, pues básicamente el cliente va a estar levantando la mano. ¿Por qué? Porque tú sabes que el planteamiento desde el inicio del proyecto fue que manejáramos los clientes y todo nuestro desdentario final a través de un dato que se llama EWM, grupo de consolidación. Que en teoría EWM, ese grupo de consolidación lo utiliza para hacer saber cómo deben valar o preparar cada uno de los clientes finales o destinos finales, ¿vale?
+
+ Lo que está pasando es que, básicamente, ellos quieren... Y es por su entendimiento, no carencia de entendimiento de WM, ¿vale? Por eso. Entonces, básicamente, el cliente está hablando de que son muchos registros los que tendría que crear, porque ellos tienen que crear un grupo de consolidación por cada destinatario final o cliente. Es un dato, vamos a llamarlo dato maestro en el WM, ¿vale? Porque ellos tienen muchos registros, por lo visto, por la forma de cómo operan hoy día, ¿no?
+
+ Por ejemplo, Callejas, tiene algo llamado Callejas, tienen muchos clientes, pues, Exportación, parece que también tiene bastantes, ¿no? Entonces, pues, me están diciendo que... A ver, Richard, me están pidiendo un escenario, o sea, que muéstrame... Yo quiero ver un escenario para entenderte mejor, ¿no? ¿Qué hace un grupo de consolidación en EWM. Entonces yo quiero ver un escenario de, por ejemplo, venta al cliente, dame dos entregas de salida con dos clientes diferentes y quiero ver cómo ocurre en EWM, para entender más el tema del grupo de consolidación, ¿sabes?
+
+ Para ellos, pues, su concepto. Entonces, pues, nada, justamente yo le dije a ella, oye, pero es que, claro, en el sentido de que pues yo también estoy trabajando con las configuraciones mías también, ¿entiendes? Probando lo mío internamente. Entonces, que tú me pidas eso, pues básicamente me empuja a mí apurarme para mostrarte algo, ¿no? Entonces yo le dije, mira, ponga una reunión tentativa para el martes para ver si te cuento con el set de datos o ya los datos preparados para mostrártelos.
+
+ Si no es así, tendremos que ampliarlo. Como bien sabes y como ya te comento yo, estamos trabajando con el tema de las unidades de medida, ¿vale? Sí. Y entonces, primero, pero necesitamos tener eso bien cuadrado para poder generar unas estrategias de salida adecuadas, rectas. Entonces, hasta que no tengamos esto de las unidades de medida bien organizado dentro del almacén, pues yo creo que hacer una salida sería algo tonto porque, ¿cuándo es un palo y cuándo es una caja?
+
+ No tienes forma de hacerlo bien. Entonces, justamente, primero necesito trabajar en las unidades de medida, después necesito trabajar en el tema de Pues preparar esto para ellos, ¿no? Una cosa a la vez.
+
+Hector Palacios:
+Y este punto, Richard, ¿es algo que eventualmente íbamos a trabajar igual? Sí, ¿no? Entonces, me imagino que lo estabas pensando trabajar o mostrar un poco más adelante. ¿O es un tema que realmente no era un tema que tú pensabas que fuera tan importante, pero nos estamos dando cuenta que sí ahora?
+
+Richard Quinteros:
+No, no, no. A ver, digamos que un 50-50. ¿Por qué? Porque desde la CIS, ¿vale? Pues ellos también tuvieron que decir, habernos dicho también, o habernos comentado, que tienen un volumen elevado, muy elevado, de clientes de todo tipo.
+
+Hector Palacios:
+Pero tanto sea, pensando, Diana es una empresa de consumo masivo, no creo que es la primera que implementamos en WSSM, ¿no? Me hablan de 30.000 como 30.000 registros bastante alto han visto algo distinto en otro proyecto equipo tuyón que ha trabajado quizá no sé si ha trabajado en algún proyecto más como pmd pwm antes que richard pero vamos a tener una estimación de la cantidad de clientes sí pero no más de tocado algo similar.
+
+
+
+UNKNOWN_SPEAKER:
+¿No?
+
+Hector Palacios:
+¿Y podemos preguntar internamente si es el caso?
+
+Richard Quinteros:
+Es que aquí también lo que pasa Héctor es que no solamente se trata de los 30.000 clientes sino la forma en la que quieren despacharse a los mismos. O sea, acá quieren manejar de diferente casuística cada cosa para cada cliente, ¿me entiendes? Dependiendo de su criterio. Pero él, como te digo, pues según el 2B que nosotros presentamos en el documento de diseño, pues ya nosotros tenemos un avión cada proceso con un estilo de picking específico.
+
+ Ellos, claro, desde un principio pidieron, oye, pero yo quiero tener habilitado, ok, este proceso es manejado bajo un esquema de picking en dos pasos, yo también quiero tener por si acaso, por si se me antoja, para mañana quiero tener
+
+Jonathan Hernandez:
+el directo también habilitado, por si no, yo no lo quiero trabajar en dos pasos, lo trabajo directo. Ahí voy a tomar un punto, Richard, si ya tenemos una definición en el ¿Están pidiendo el cambio? No, no están pidiendo cambio.
+
+Richard Quinteros:
+Ahorita, como te digo, no pensemos de esa forma. Justamente ahorita pensemos, yo le voy a mostrar el escenario o voy a empujar para mostrar el escenario y que ellos me digan a mí si se adecuó o no se adecuó. Ahí eso nos dará el feedback a nosotros de saber si es o no es lo que yo creo.
+
+Hector Palacios:
+Ya. Vale, pero devolviéndome al punto, esto igual era algo que quizás estábamos planeando mostrar, pero un poco más adelante, ahora estábamos con otras cosas. Y entendía yo que se iban a adelantar un poco.
+
+Richard Quinteros:
+Ese es el punto. Sí, es como que no estamos listos todavía para mostrar al cliente, ¿me entiendes?
+
+UNKNOWN_SPEAKER:
+Algo.
+
+Richard Quinteros:
+¿Me explico? Y que ellos me pidan, ah, pero yo quiero verlo, cómo funciona.
+
+Hector Palacios:
+Sí, no, no. Que lo vamos a ver, pero tenemos que solucionar algunas cosas, o sea, un paso a la vez, no podemos estar haciendo multitasking.
+
+Richard Quinteros:
+Exactamente, entonces ella me dijo a mí, Kery me dijo que iba a dejar la sesión para el martes, pero obviamente se podía modificar pues, la dejamos tentativa nada más como para reservar el espacio, pero yo voy a hacer todo el esfuerzo posible para llegar listo, si no llego listo, pues no hay ninguna obligación, ningún compromiso pues cerrado, simplemente se mueve y ya.
+
+Hector Palacios:
+No, no, si lo comentamos y cualquier cosa se empieza a No sé si ya platicaron el tema de la coordinación del equipo Bueno, ya lo platicaron, llegué tarde.
+
+Richard Quinteros:
+Por ejemplo, ahí con Pablo. Sí, pero ahora conversemos tú y yo para entender bien.
+
+Hector Palacios:
+Yo conversé con Pablo, conversé con John y luego ahí después, mañana quizá en la Daily, no sé cuándo, ahí lo terminamos de alinear, ¿vale? Va, va. Va a tener todos los puntos de vista porque yo soy el que está más afuera, entonces quiero entender primero. Sí, está bien. ¿Cómo se llama este punto, Richard, que está levantando la funcionalidad en específico? Grupo de consolidación.
+
+Richard Quinteros:
+Grupo de consolidación para salida de mercancía. Grupo de consolidación.
+
+UNKNOWN_SPEAKER:
+Para salida.
+
+Richard Quinteros:
+Digamos que de todos los procesos, los procesos que más van a tener, va y ven, es salida. Porque, pues, entrada no tiene tantas casuísticas tampoco tiene tanta casuística, la que tiene full casuística es salida, full.
+
+Hector Palacios:
+Ahí es donde tienen todo el valor, ahí es donde se destaca.
+
+Richard Quinteros:
+Sí, ahí es donde mucho, mucho encontronazo. Ya, ya.
+
+Hector Palacios:
+Bueno, parte de espero es lo que tenemos que ver en las pruebas. Ahí revisemos Richard y si es que en algún momento también necesitamos un poco de apoyo, también levantemos. Revisemos si bien. Es decir, que en algún momento no te ves tan confiado en tema de los tiempos y ves que se empieza a acumular y empiezan a hacer muchas cosas y veamos de qué forma podemos apoyar un poco a nuestro lado. Muchas gracias.
+
+ Vale. Estamos, entonces. ¿Algún punto adicional que quieren levantar, equipo? Algo quizá importante para las seis de la mañana, aparte de estos puntos que ya conversamos, obviamente.
+
+Hector Palacios:
+No, no, nada más. ¿Tú, Richard, tampoco? No, ninguno.
+
+UNKNOWN_SPEAKER:
+¿Samy, todo bien?
+
+Richard Quinteros:
+Sí, todo bien, doctor.
+
+UNKNOWN_SPEAKER:
+Sí. Vale, equipo.
+
+Hector Palacios:
+Entonces, eso. Dejémoslo por ahora hasta aquí. Bueno, ahí seguimos hablando. ¿Vale? Dale, un abrazo, equipo. Gracias a todos. Buen día, equipo.
+
