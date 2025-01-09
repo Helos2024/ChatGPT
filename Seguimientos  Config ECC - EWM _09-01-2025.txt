@@ -1,0 +1,290 @@
+UNKNOWN_SPEAKER:
+Hola, Richard.
+
+Kerin Bonilla:
+Hola.
+
+Kerin Bonilla:
+Bien, si quieren, pues iniciamos. Creo que Pablo mandó un par de cosas por ahí, no sé si hoy esto nos va a poder unir. Ya hizo él unas pruebas o qué punto quieren que iniciemos ahora de los temas de las configuraciones.
+
+Richard Quinteros:
+Bueno, les comento, a ver, no sé qué posibilidades hay que yo en estos momentos me gusta trabajar en el tema primero y principalmente que es el tema de las unidades de medida, pero no sé si pues de repente lo busqué por whatsapp, pero no es el método. De repente, pues pueda este Walter, vale, apoyarme en una sesión aparte, o sea, juntarse conmigo quizás el día de mañana un rato. Necesito de su ayuda para ver algunos puntos de unidad.
+
+ Es de medida ahí a nivel de dos lugares, entonces sí quisiera contar con su apoyo.
+
+Kerin Bonilla:
+Hola Melvin, ¿qué tal?
+
+UNKNOWN_SPEAKER:
+Hola, buenas.
+
+Kerin Bonilla:
+Tienes cerca a Walter ahí, de casualidad.
+
+Melvin Alvarado:
+Se acaba de levantar ahí, está en la piso ahorita.
+
+Gianni, Florencia:
+Ah, ya.
+
+Kerin Bonilla:
+Este sí nos has encontrado en la fecha crítica pidiéndonos la información.
+
+Melvin Alvarado:
+¿Quiénes estáis de?
+
+Richard Quinteros:
+No, lo que necesito es que nos sentemos. Por ejemplo, yo estoy haciendo algunas configuraciones de mi vida a nivel de WM. Pues si me gustaría explicársela, pues para que de repente me entendiera un poquito mejor. Pero si necesito a alguien que sea de la operación y que sepa que pasa en piso, no sea de repente sería de mayor ayuda.
+
+Melvin Alvarado:
+No, me agendaron para mañana. Está bueno.
+
+Richard Quinteros:
+Solo que agendarlo creo ver por la tarde porque en la mañana del movimiento acá acá vale entonces o sea justo ahora yo voy a ir trabajando operando digamos con las bases que sería caja quizás palet vale pero pero si quiero empezar como como a cerrar esos puntos ahí de la operativa en el lugar para para hacer ese ese esa correcta configuración. Ahora sí puedo ir trabajando sin ningún problema con las cajas, con los pares, sin ningún problema.
+
+
+
+UNKNOWN_SPEAKER:
+Va.
+
+Kerin Bonilla:
+De acuerdo. Néstor. De las entradas como vamos o no sé si tienen el input de Pablo.
+
+Richard Quinteros:
+Este justamente, pues obviamente se han estado haciendo diferentes pruebas con respecto a entradas de mercancía. Se ha logrado el procesamiento hasta cierto punto de las entregas entrantes. Más sin embargo, pues como como entenderán y son nuestras principales pruebas funcionales salen temas y que tenemos que ir revisando para ir avanzando vale entonces pues justamente ahora el feedback que se tiene es el que pues se acaba de mandar por correo o se mandó ya por correo y mañana pues esperamos seguirlos actualizando con lo que vamos a hacer de este lado vale con respecto a entrada con respecto a salida como les digo yo me encuentro trabajando en comunicación con Florencia.
+
+ Florencia pues me está haciendo el favor de generar varios escenarios, varias casuísticas, de cara a que nos preparemos para poder hacer o preparar un par de escenarios ahí que sean pues, digamos, lo más representativo para ustedes, para que puedan ver quizás cómo se opera el audio del UEM y podamos despejar algunas dudas, ¿no? ¿Qué es lo que queremos lograr? Entonces pues nos encontramos trabajando en eso, pues ya Florencia envió varios VPS, varios clientes perdón, de SSE a EWM, EWM llegaron casi todos en un 90%, solo uno falló, pero bueno, seguimos trabajando con el manejo de esos datos y pues el trabajo de las entregas.
+
+ Ya dos entregas, ya tenemos de este lado dos entregas, Florencia sigue trabajando en la generación de unos que otros casos prácticos de algunas entregas, me los va mandando y yo los voy revisando, ¿vale?
+
+Kerin Bonilla:
+Y digamos que esas entregas Ahora el tema del que te falló no es algo que tengamos que revisar por algún dato que yo lo apunté.
+
+Richard Quinteros:
+Yo lo apunté. Es un error a nivel. Hay dos que entrante. Ok. Y parece ser un tema de alguna función de interlocutor comercial. Esa es una función. Tiene el cliente que pues aquí truera del lado de LOM. Pero justamente ahora yo lo apunto y no creo que sea tan necesario que limitamos tanto tiempo a eso. Por qué? Porque prioridades no? Entonces justamente lo apunto y lo hago a un lado y seguimos avanzando.
+
+ Trabajamos con otro cliente, por ejemplo.
+
+Kerin Bonilla:
+Ok. Comprendo que de igual manera lo que nos expresaba Pablo, eso ya quedó superado por lo de con o sin H.U.
+
+Richard Quinteros:
+Ya quedó parametrizado. Ahí yo solamente veo, vale, yo estuve viendo los correos, ok. Yo solamente veo, por ejemplo, del lado de Pablo, pues para lo dice más de aquí pero dado que la entrega tal ingresa y todo este tema se genera con un lote de rango de números internos también puede informar el lote del proveedor si lo desea estaba el dato de la fecha pues sin embargo responde que el bien obviamente que pues el proveedor este el lote del material tiene que ser el que coloca el proveedor vale ahora ahí pues el único tema es pero donde coloca el proveedor ese lote no se hace sea ese nivel documento no lo creo No, no, no, no vienen el documento, no vienen el documento, o sea, cuando uno reflexiona, va el lote.
+
+ Claro, no, no, o sea, lo que me refiero es, a ver, el proveedor, o sea, obviamente surge la, la orden de compra, existe la entrega de entrante, la entrega de entrante se distribuye a WM, de WM lo que llega es un documento con la cantidad de posiciones para recibir, ¿no? Entendería. Entonces, en el WM ¿qué pasa? En el WM lo que se hace, entiendo, es, pues, va a ser crear el lote que se está recibiendo, o sea, recibir el lote que informó en la etiqueta, debe existir una etiqueta de proveedor, ¿vale?
+
+ Le informa ahí, ¿correcto? Y ahí, pues, se crea la unidad de manipulación, se hace la recepción, se crea el lote, ¿de acuerdo? El lote que informó el proveedor, y eso viaja, o esa contabilización viaja a ECC, ¿sí?
+
+Melvin Alvarado:
+Sí, solo que ahí donde nos tenemos que poner de acuerdo, va. Por ejemplo, por decirte algo, va. La entrega entrante que te genere algún pedido desde el lado de ECC, viendo aquí de este lado.
+
+Richard Quinteros:
+Sí, aquí te va a ir, digamos, vacilote. Correcto, pedido, se realiza el picking de la entrega. Se entrega.
+
+Kerin Bonilla:
+Ojo que ese flujo es traslado, eh.
+
+Richard Quinteros:
+Sí, sí.
+
+Melvin Alvarado:
+pero al final tenemos una entrega, una entrega entrante. Pero en ese caso sí le vamos a informar el lote. Eh, sí. No, no, no, hablemos de las compras, yo no me estoy hablando de los traslados. Olviden el tema. Pero como ahí tenés BLS. Está bien, entonces cuando cuando lo lo reseccioné del lado del EWM acá al Aquí tendría que ingresar celote.
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Richard Quinteros:
+Ahí se tiene que crear en IWM en la recepción. De hecho, aquí para para ese procedimiento normalmente se emplea, se hace o sea, ese procedimiento normalmente ocurre así. Mira, tienes una unidad de transporte comúnmente asociada a una entrega. Vale. Se descarga la unidad de transporte o el camión. Vale. Se descarga, se coloca la mercadería en una zona llamada Goodrich. Hay son ok. Ahí se coloca. Pero en esa misma descarga que tú estás haciendo, tú estás recibiendo producto correcto ahí, en esa escala que tú estás haciendo, tú estás recibiendo el producto como tal, con que lo estás recibiendo con una radio frecuencia, un equipo móvil, o sea, el escáner, vale?
+
+ Mientras tú vas recibiendo, obviamente tú vas creando los datos, no? Obviamente lo único que tienes es el dato del producto. Vale, escaneas el producto. Ahí tú le indicas la unidad sea una etiqueta preempresa o no. Una vez que tú indicas el producto, indica la cantidad que estás recibiendo y posteriormente que tú indicas la cantidad que estás recibiendo, te pide algo llamado lote. Ahí indicas el lote que estás recibiendo, posteriormente una fecha y continuas.
+
+ Pero ahí en ese momento tú le indicas al sistema que estás recibiendo eso y ocurre ahí mismo se le agrega el lote. A la posición del documento a nivel EWM, ¿vale? Ocurre esa creación que tú comentas, ¿vale? Creaste un pallet, o sea, un HW, y creaste una recepción de un producto con un lote. Automáticamente la entrega entrante en EWM se actualiza, tú vas a ver ahí el lote, y cuando ocurre la contabilización, que es el mensaje donde EWM le dice a SC que ya esa mercadería está en el centro de servicio, ¿vale?
+
+ Ahí, en ese mensaje que envía EWM, M. A S. C. Básicamente va informado el lote nuevo.
+
+UNKNOWN_SPEAKER:
+Vale. Para el producto. De acuerdo.
+
+Richard Quinteros:
+Así ocurre. Es una recepción de proveedor. Vale. Se puede automatizar esa recepción. Claro que sí se puede automatizar un poco más usando normas de empaque, que es lo que básicamente ustedes conocen como normas de empaque. Cómo lo puedes automatizar? Tú puedes tener normas de empaque para productos. Siempre y cuando el proveedor respete esas normas de empaque o ese alineamiento. Suponte tú que el proveedor te manda un panel de 500 cajas o 400 cajas, por así decirlo, de ese producto.
+
+ Normalmente tú puedes crear una norma de empaquetado para que cuando automáticamente se crea una entrega entrante en WM para ese proveedor, se cree el HU en automático. Eso puede pasar. Ahora, ¿qué hay que cuidar en ese vale, es muy importante considerar que en ese sentido nosotros ahí pues tenemos que cuidar que es un proceso que no trae lote y que tenemos que hacer una resección. Crea lote, crea todo.
+
+ Esas son cosas que hay que cuidar. En dado caso se quisiera automatizar por normas de empaque, pues básicamente tendríamos que seguir los lineamientos de que necesitamos el lote.
+
+UNKNOWN_SPEAKER:
+Sí, sí.
+
+Melvin Alvarado:
+Sí, ahí creo que hay estaría las normas de empaque.
+
+Richard Quinteros:
+Sí, sí, sí, sí Vale. Y posteriormente tienes una entrada con esa información. Es muy común verlas con H.U. Ahora, pues no venga, no viene con H.U. Pues ahí nada más hay que estar coordinados con Pablo probando los escenarios donde viene el lote y no viene el H.U.
+
+UNKNOWN_SPEAKER:
+Para ver cómo se comporta. Eso. Recuerdo.
+
+Richard Quinteros:
+pues bueno mañana seguimos digamos del lado de entrada dándole caña y con pablo y pues nada le vamos respondiendo y le vamos pasando el feedback de lo que se va avanzando vale salida como les digo nos encontramos en el tema principalmente que tenemos que abordar el tema de las unidades de medida estamos yo ahorita voy a hacer una baja general de inventario voy a bajar todos los inventarios No se preocupen por eso, porque una vez que haga la baja, los voy a volver a subir, pero esta vez los voy a cargar con unidad de medida alternativa correcta.
+
+ Es decir, por ejemplo, voy a cargar el producto 110005 con su unidad de medida alternativa C00, por ejemplo, es un ejemplo, es decir, que es unidad de medida alternativa de uso, ¿no? Para que se empiece a reflejar en el inventario de WM de esa forma. No todo con base, sino con base, unidad de medida base, y con unidad de medida alternativa, ¿vale?
+
+Melvin Alvarado:
+Mira, ahí te quiero entender, Richard, o sea, que el EWM, ¿cuáles materiales voy a ver a nivel de unidad de medida alternativa? A ver. Es que te te comento, hay materiales, hay materiales que tiene que su uso, ¿o te has fijado en la unidad de medida adicional en el dato nuestro, donde agregamos el el palet?
+
+UNKNOWN_SPEAKER:
+Ajá. Ajá.
+
+Melvin Alvarado:
+Ahí más de un tipo de caja, porque normalmente utilizamos caja de cartón y caja plástica. Si, entiendo.
+
+UNKNOWN_SPEAKER:
+La presentación de la caja.
+
+Melvin Alvarado:
+Ese tema no te daría problema. Si yo uso clasificación de cantidad, no.
+
+Richard Quinteros:
+Te explico cómo. Voy a hacer una pequeña presentación para mostrarte cómo funciona una clasificación de cantidad. Mira, si yo me voy al monitor de WM, rápidamente me tomó el tiempo perdóname si a veces puedo ser un poco más técnico deténganme sin pena richa detente y no entiendo esto vale es mejor para mí eso esto es disponible por ejemplo voy a tomar el ejemplo del producto 11 0 0 5 para consultar su inventario su disponibilidad vale pues lo tengo en varios tipos de almacén aquí me dice que está en piking de exportación aquí me dice que está en reserva normal pues reserva 1 y que está en reserva de exportación también vale ahora si ustedes se fijan aquí está la unidad de medida va a ser el producto si se fijan es una cantidad exorbitante pues esta que yo cargue no se preocupen entonces fíjense aquí por ejemplo si yo le hago clic al producto él me dice en la unidad de medida que un palet equivale realmente a 1856 paquete pues nada que ver con esta cantidad Entonces, ¿qué pasa?
+
+ Justo ahora, esto es algo no real. Entonces, lo que yo tengo que hacer es llevar todo esto a cero y cargarlo como es el deber ser. Pero nosotros no lo sabíamos porque simplemente no teníamos este dato informado. O sea, este. ¿Cuánto es que va a salir un palet? Entonces, no sabíamos cómo interpretarlo. ¿Cuánto tendrá un palet? Nos preguntábamos. Pero ahora que ya sabemos, pues yo puedo cargar un palet de 1856.
+
+ Ahora, ¿qué pasa? Por ejemplo, esta es la unidad de medida base que te informa el monitor. El producto siempre se va a ver conforme a su unidad de medida base. Pero tú puede que recibas, obviamente así siempre lo vas a ver independientemente de cómo lo recibas, pero aquí a la derecha también te informa cuál es el equivalente en su unidad de medida alternativa. ¿Qué quiere decir esto? En la entrega entrante, si tú recibiste este C03, esa presentación de caja, tú lo almacenas, siempre lo vas a ver con la unidad de medida base aquí, pero su conversión es así.
+
+ Si me explico, en unidad de medida alternativa C03, porque esa presentación es el equivalente.
+
+UNKNOWN_SPEAKER:
+Si me explico.
+
+Melvin Alvarado:
+Sí, sí, entiendo.
+
+Richard Quinteros:
+Y ese control es más preciso para con ustedes, si me explico. Así debería de ser. Sí, mi temor era No, nunca se pierde. De hecho, siempre, siempre se representa con la base. Vale, ok, pero tiene su conversión ahí representativa de a cuál equivale alternativamente, no? Ahora fíjate que yo todos los inventarios, esto porque lo debe estar recibiendo Pablo. Esto vale una caja. Esto lo recibe. Esto viene por la compra y por la entrega entrante.
+
+ Se recibe de hecho con esa unidad de medida alternativa operativa. De hecho, se recibe así porque tu pedido de compra Y así se tiene que recibir y así se tiene que almacenar. Por eso ven esa única caja.
+
+Melvin Alvarado:
+Sí, ahí nada más es de ponernos de acuerdo con el pedido de compras. Para que el pedido de compras, nosotros lo trabajemos a nivel interno aquí en Diana, no a nivel de unidades, no que a nivel de cajas. Similar a los traslados, los traslados se trabajan con unidades de media alterna.
+
+Richard Quinteros:
+Sí, está bien. No veo ningún problema en eso. Momento porque en este momento creo que los trabaja en unidades los pibes de compra ok bueno esto o sea es que no importa cómo lo trabajen a ver de acuerdo cómo usted lo trabaja en lo reciben vale aguas con
+
+Melvin Alvarado:
+eso vale pero pero propuesta exponía el ejemplo de las de las cajas plásticas porque lo que viene en ellos que cuando hay cambios si no lo van a mandar en en cajas normales, lo van a enviar en cajas plásticas, entonces ellos lo cambian.
+
+Richard Quinteros:
+¿Este CC03 representa una caja del producto o representa una caja, una unidad de manipulación para usted?
+
+Melvin Alvarado:
+Andate al dato maestro, andate al dato maestro para que lo veas, para que me entendas, donde están datos adicionales, de los niños de medida, el que visualizaste hace poco.
+
+Richard Quinteros:
+Ah, esta unidad de medida. Donde tenía las equivalencias. Ah, bueno, entonces son las equivalencias. Ah, ok, tú dices unidad de medida base. Sí, la unidad de medida base adicionales.
+
+Melvin Alvarado:
+Dale ahí, dale. A ver, esta es la cantidad de unidad de medida base. Y este es la cantidad de unidad de medida base. Abrió el macho de la unidad de medida. Ok. No, no, donde estaba, estaba bien. Donde estaba bien, ahí estaba bien.
+
+Richard Quinteros:
+Ok.
+
+Melvin Alvarado:
+¿Dónde estabas? En el dato maestro creo que estabas.
+
+Richard Quinteros:
+Ah, es que no sé si hay delay, no sé qué pantalla están viendo.
+
+UNKNOWN_SPEAKER:
+Dígame cuál.
+
+Melvin Alvarado:
+Ahí, ahí quédate, ahí quédate, ahí quédate. Ahí, ahí. Dale mascot donde está la segunda columna de medida.
+
+UNKNOWN_SPEAKER:
+Mhm. Dale mascot ahí.
+
+Richard Quinteros:
+Busca que más los tipos de cajas que tenés, tenés C0, no sé qué, pero tenés varios tipos de C12, C12, C12 una explicación rápida, una definición de lo que se ve en el monitor de comunidad de medida base y lo que respeta también comunidad de medida alternativa, vale? Esto lo voy a dar de baja porque todo, la mayoría de las va, de todo está cargado como paquete, comunidad de medida alternativa y está mal, porque debo respetar esto.
+
+
+
+UNKNOWN_SPEAKER:
+Pues vale. Si te apuntamos bien. No, quizá.
+
+Richard Quinteros:
+Ok, entonces qué pasa? Hay una configuración de la WM y me atrevo a mostrarla para que vean que se llama clasificación de cantidades, así se llama, es muy técnico, perdona que se lo diga, pero es para que de repente me entienda un poquito
+
+UNKNOWN_SPEAKER:
+mejor.
+
+Richard Quinteros:
+Y la clasificación de cantidad de la siguiente manera, omitan esto, ese no existe, ese lo tengo que borrar ahorita. Existe, por ejemplo, yo ahorita creé la clasificación de cantidad CPIU, cajas de palets u de unidades, me faltan un cuantos más, unas cuantas más y es lo que quiero homologar con la reunión con Walter, ok? Por eso son las unidades de medida, las clasificaciones de cantidad que vamos a usar acá.
+
+ Ahora, eso va internamente conectado a algo que se llama, perdónenme, discúlpenme, aquí, que se llama definir atributos de unidad de medida. Yo al sistema le indico una conversión, es decir, está bien, esta es tu unidad de medida. Aquí van a ir todas las unidades de medida de caja que tú tengas. Y aquí yo le pongo la equivalencia en el WM. En el WM simplemente representa una caja. O sea, si es una presentación diferente, pero para mí es una caja.
+
+ Eso va. Para mí no es más que eso. O sea, independientemente si tienes 10000 cajas, pues yo operativamente lo voy a trabajar como una caja. O sea, no más que eso. Y a qué me ayuda a mí a esto? Esto me ayuda a diferenciar qué tomo y cómo como lo tomo dentro del almacén. Te voy a dar un ejemplo. Si yo aquí agrego la línea de la unidad de medida que ustedes acaban de compartir, que es de la de Pallet, y le pongo el equivalente P, ¿vale?
+
+ Básicamente, yo puedo distinguir en mis estrategias de búsqueda de inventario esos inventarios. Es decir, yo puedo decir, todo lo que es caja, búscalo en las ubicaciones de Picking, en el piso. Y todo lo que es pale, por favor, búscalo en las alturas, en las reservas, ¿ves? Con la P, con la pura P. Y con la pura C, yo puedo distinguir cuándo busco en una y cuándo busco en el otro. Entonces, ¿por qué requiero?
+
+ Si requiero ponerle un poquito más de atención a la parte de las unidades de medida base y alternativas para poder o lograr operar de esta forma, que creo que va a ser clave para su proceso si ahora sí sí me expliqué perdón por lo técnico pero bueno en fin no nos enredemos tanto de repente pues fue un poquito creo que se me fue un poquitico la mano explicando cosas que bueno tiene el caso pero si es bueno que lo vayan viendo más sin embargo lo único que les digo que estoy avanzando es que estoy voy a darle baja todos estos inventarios voy a cargarlo en por el archivo con estas unidades de medida alternativa.
+
+ Siempre se van a ver reflejadas las bases, ¿vale? Pero sí tener esta variabilidad aquí, ¿ok? Va a ser importante. Eso, chicos.
+
+Kerin Bonilla:
+De acuerdo, Flor, ¿de tu lado no hay algo ahorita que congo? ¿Nos relaciona algún pendiente o algún inconveniente? No, no.
+
+Gianni, Florencia:
+De mi lado seguimos el plan. Solo nos estamos con un tema por una lógica para crear la entrega entrante cuando se contabiliza la entrega saliente en los traslados, pero funciona. Ya lo que es configuración ya está al 100%. Estamos revisando ese punto nada más. Ya está el desarrollo de la integración a un 50% y se está finalizando el de la otra integración. Nosotros venimos según el plan, que ya mañana te lo paso actualizado.
+
+
+
+Kerin Bonilla:
+Listo. Bien, entonces yo les mandé por ahí ya igual la convocatoria para, encontremos espacio el miércoles realmente, por lo que vimos ahora en la definición de los clientes, Richard, cualquier cosa igual nos escribe si necesitas apoyo de ese tema de datos.
+
+Richard Quinteros:
+Si yo ahorita justamente voy a digamos con los clientes que se mandaron y se mandaron por parte de Florencia, pues lo que estoy haciendo, digamos, principalmente es concentrarme en temas, en las unidades de medida, como les digo, como dando los inventarios aquí y posteriormente me voy a abocar a tratar de crear los grupos de consolidación para estos clientes. Después que yo cree los grupos de consolidación de prueba para estos clientes, voy a las entregas de salida que me ha compartido y pues empezar a probar.
+
+ Les voy avisando.
+
+UNKNOWN_SPEAKER:
+Ok, listo.
+
+Kerin Bonilla:
+Entonces quedamos para el día de mañana apoyarte con el tema de datos maestro para la unidad de medida alterna y adelante. Bueno, mañana nosotros tenemos seguimientos y vamos viendo todo el progreso y de igual manera, pues estamos en WhatsApp. Les agradezco muchísimo su tiempo.
+
+UNKNOWN_SPEAKER:
+Vale, perfecto.
+
+Richard Quinteros:
+Equipo, Samir, John, ¿algún comentario o algo? Yo estoy aprovechando, no sé si ya les haya pasado, pero Samir y Pablo han tenido intermitencias con la conexión de Zap el día de hoy. No sé si alguien más les ha reportado algo así. Usan la VPN, que es No, es una VPN que se llama CloudFlare o algo así. Es una VPN medio extraña, pero no es la de CDMD.
+
+Gianni, Florencia:
+Ok, no, porque a mí con la nueva que me dieron porque se ejecuta a través del CDMD de la máquina también estoy operando y se me hace micro cortes y se me cae. Esto lo has percibido hoy. A mí me pasa desde que me la dieron, pero me dijo sea que solo a mí me pasa. Así que estimé que debe ser mi que debo tener micro cortes de Internet y se cae.
+
+Richard Quinteros:
+Si es bueno, entonces ahí de repente la afluencia no es la única. También le está pasando aparentemente a San Miriam Pablo, entonces ahí no sé qué.
+
+Kerin Bonilla:
+Llévatelo como apuntado y revisarlo con con osea por. Ok, si gustan cuando Cualquier cosa, pues los estaremos comunicando, les estaremos contactando por si hay algo que quiera revisar, o sea, para revisar la máquina o alguna revisión que tenga que hacer.
+
+Richard Quinteros:
+Sí, no sé si sería bueno y de repente yo que Pablo, que se dé un correo, no de que primero estén ocurriendo estas intermitencias, pues para que le damos seguimiento. Yo lo estoy armando, pero quiero aprovechar el espacio de la llamada para comentarlo primero.
+
+UNKNOWN_SPEAKER:
+Vale, perfecto.
+
+Richard Quinteros:
+Eso. Listo. Pues nada, equipo, ¿algo más?
+
+Kerin Bonilla:
+No, de nuestra parte.
+
+UNKNOWN_SPEAKER:
+Perfecto.
+
+Richard Quinteros:
+Bueno, equipo, sigamos trabajando. Vamos para adelante, ¿vale? Muchas gracias a todos. Gracias a ustedes. Gracias.
+
+Kerin Bonilla:
+Un saludo.
+
