@@ -1,0 +1,1305 @@
+Sagar Vora (ADNOC Group D&CS):
+Hello, good afternoon.
+
+UNKNOWN_SPEAKER:
+Hello everyone. Thank you.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Let's give a minute to Khalid and Vignesh and some of our colleagues. I think they were also on another call.
+
+UNKNOWN_SPEAKER:
+Hello, good afternoon, everyone.
+
+Patel, Rahul:
+I know you had a call, you and Kunal, before with Vignesh and Khalid.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Are they also done? They will join us, right? In our call, we did not have Vignesh and Khalid.
+
+Patel, Rahul:
+It was an internal PMG and our team call. Hopefully they should be joining. Yeah, okay. Vignesh said that he might have conflicts, so he's not sure whether he'll join, but then at least Khalid should be joining.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, we'll wait for Khalid, sure. Hey everyone, good afternoon. Hello. Good afternoon. Hello everyone.
+
+UNKNOWN_SPEAKER:
+Hey, good afternoon. Hey honey.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+I think we can start Khalid, isn't it?
+
+Patel, Rahul:
+Yeah, I think we can start. Abdul, based upon our conversation, you want to start with the data we had?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Or how do you want to start this? Yeah, OK. Today, from offshore side, Mahmoud and Mariam joined to discuss this part of it. And so based on our internal discussion, I'll just share my screen. Then later on, the same thing, whatever done last time you can take up okay so Hector or yourself so basically the equipment basket so this is the template what the we want to capture we'll explain the based on the last meeting so the it will be the field concession and the type of well category completion code this much available information.
+
+ And in addition to that, what we agreed, we want to put additional completion code. This will cater for the download completion equipment. Then we have a separate code for the valid code. So we want to capture this code as well, the valid code, then LHCA code, the case in design. So for example, so now this will be, it will complete and there the categories. Then, it will map in the generic number.
+
+ Then, some other like master record, it will be generic total alternative material number. Then, here generic total quantity what required for the basket. So, here only what we want to hear from you. So, how we can use multiple code for the same category? For example, here the new drilling, the first of all, first of all, the water injector, the short recovery, if it is to be completion code, then it will be corresponding where that code will be there.
+
+ Let's say code will be there, casing design will be there. So based on that, so it will bring individual set of equipment material. Then it will have the generic. So each, so at the end, whenever you make it as a plan, so it will add we want to add up all the basket this will be a different basket code so we can put it in the table format
+
+Patel, Rahul:
+at all so this is the one what we discuss internally maybe you can explain the proposal yeah just a minute off so our Abdul, can you share that file again, just to make sure we understand it correctly. So let me do one thing. Let me share my screen, and I will explain what we're looking for, and then we'll go back to the suite so that it makes sense for everyone. So basically, I've just created one example so that everyone can understand what we're trying to achieve here, and then from that we will go back to your sheet, what Abdul you have prepared.
+
+ So essentially, you have a well. So let's say well ID is 1, 2, 3, 4, 5. I'm just putting one number here, just for the sake of reference, which is a unique number with which a well is defined. And then there are attributes of well, which is like the plant or the concession code, which is lower the queue, the well type, the completion code, and the category. Now, this was this initial information, Adilati, if you have shared.
+
+ So, what we are trying to achieve is, for a well, which is a well ID, what are these attributes which define the bill of material or all the materials required for completion of the entire well, right from the planning till the completion, except time. So, the way we are deciding is that this attributes of the well will help us create a unique BOM reference key. So in this case, it's just a combination of all those parameters, the four attributes we've understood here.
+
+ And based upon this attribute, we are creating a BOM reference. And now the BOM reference keys will be used that for this unique combination, you have a bill of material, which is basically essentially the generic materials what you have, the quantities of those material, and the unit of measurement of this process. So essentially, what will happen is every time you have a well, these attributes of the well would be available from your well plan.
+
+ And based upon the attributes of the well plan, this is a calculated field, by the way. This is something which we will ourselves calculate. And then based upon this calculated field, the bombs would be created in SAP S4 HANA. So this is how, if we have this information of well plan from the well planning system and the bomb from S4 HANA, then in IBP, we can essentially get to all the metals which are required from the first stage of the weld till the completion except time.
+
+ So, does this logic make sense for everyone? Then we'll come to the question is how many such attributes are required to define all the bombs, all the materials of all different categories which are required, which is what, Abdul, you identified in your sheet.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Correct? Exactly.
+
+Hector Palacios (ADNOC Group D&CS):
+So I would only remove the unit of measure. By default, it needs to be the base unit of measure. So we don't need to add it, because it will add more complexity, confusion, and all that. So the BOM and the system should be defined by the base unit of measure, and then the conversion to whatever unit of measure is going to be very simple.
+
+Patel, Rahul:
+If we start putting a unit of measure that is not the base one there, it's going to be very complicated. Let's, from a technical perspective, talk about unit of measurement separately. But from a solution perspective, to get to the materials of the well, based upon the well plan, specifically from AdNoc team, anyone has any question how we are planning to have this defined in IVP?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Rahul, in this case, see as we got the feedback from the technical team so it will be a different code using for the wellhead for example and then download completion then line arrangement so in this case it will be four or five set of codes so the completion code what we have here we are saying to be you will have multiple completion codes for the same yeah now for example maybe you can copy the same thing uh let
+
+Patel, Rahul:
+me copy this here and here in the top it will be yeah one for the octg and another four will head so on so let me let me then let me do this I will keep it here and you have this octg is the one code which is this completion code right to this for octg So let me say, I'll say OCTG code.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, this is called casing design. This is called casing design, yeah.
+
+UNKNOWN_SPEAKER:
+Casing design. Yeah.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I have a question here, Abdul, before we, because it's very important to know that this will be populated from, will be taken from the planning tool, which is a DWS, or it will be taken from us.
+
+Patel, Rahul:
+This will be coming from DWS tool. Directly, OK.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Directly.
+
+Patel, Rahul:
+So the way that we are planning is we'll have two interfaces. One is the manual user upload, and second is direct interface. Now, based upon the time available in the project, whether we'll be able to have interface directly available on the day one, that's something we need to evaluate the effort required to set up the interface. But then if the interface takes more time, then the same fields which are there from the DWS can be uploaded directly into IBP so that we don't give input one by one, but then upload the entire file from DBS
+
+UNKNOWN_SPEAKER:
+to IBP.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+OK, because you know why I'm asking this, Abdul. You know right now, the casing code, the new completion code, the liner hanger wallet code, that's not part of the DWS. So if it will directly get this information from the DWS, it's not going to be going to be available there.
+
+UNKNOWN_SPEAKER:
+Yeah, clear.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Even though in the DWS we don't have data, isn't it? So we want to offer this data available in the DWS. Okay, you mean DBC? Yeah, DBC.
+
+UNKNOWN_SPEAKER:
+Okay, I got it.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Let's do one thing.
+
+Patel, Rahul:
+Let's, Abdul, whatever you're mentioning in terms of different codes available for different categories. Let's identify those codes and then highlight where these codes are available, so that it will be very clear what information is available where, and then it will help us come to a conclusion how we can proceed further.
+
+UNKNOWN_SPEAKER:
+Is this something we can do? Okay.
+
+Patel, Rahul:
+So, let's add one. So, the casing design code is 2B.
+
+UNKNOWN_SPEAKER:
+Is this correct?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, casing design. Okay yeah completion code correct so the remaining codes maybe you can just put a only a column title yeah so casing design code then what's the next additional completion code additional completion code valid code WH code you can put
+
+Patel, Rahul:
+Yeah, I'll keep it well head only so that.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Well, then let's see a liner hanger and cementing accessories.
+
+Patel, Rahul:
+OK, so I'll put it complete liner.
+
+Bastian Osorio:
+Just to be clear, these are all the key attributes that will define a unique bomb.
+
+Patel, Rahul:
+Unique bomb for each category.
+
+Bastian Osorio:
+Is it possible to relate all these fields, all these attributes in the share file, in the file that we were working on? In the file that you just sent that we were, it basically has all the well-planned with the materials required. Is it possible? As in the one which we have received is only for the OTCG, right?
+
+Patel, Rahul:
+Which means the other categories, we don't have the bill of material with us. And probably the next step would be that if we are able to define this, then we'll request for the material each of the categories. Yeah, we need more than the data to complete all these attributes and start building. You are correct. We don't have data for all the attributes. So let's proceed with this, how we can identify independent attributes for independent material category.
+
+ And then we'll come to the bill of material or the material required for each of the attribute.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+So not only that, the issue is also how we will put this in the system. Because the one highlighted in the blue, you can directly download it from the DWS. But however, the one now it's not highlighted, this is not yet available in the DWS. So there will be one more stage. Someone has to do it manually or from different system. Yeah.
+
+Patel, Rahul:
+So let's identify the data, what is required. Let's identify where it is, and then we'll how we can get the data as a next step.
+
+UNKNOWN_SPEAKER:
+Is it OK?
+
+Patel, Rahul:
+So that then we know what all things we need and then we know from where we'll getting what and then once we know whatever data is not available in system, then we'll decide what are the next steps from a solution perspective, how we can get this information. OK, so so. So are these attributes complete casing design code, completion code, wellhead code, liner handle, cementing, accessories code. Do we have any additional code, Abdullatif?
+
+
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I think that's more than enough to identify what's required for each well.
+
+Bastian Osorio:
+Okay, question. So, let's say for one well you require a given BOM as stated here and for another one you require the exact same amount but additional completion code. What is going to be the difference here in the additional completion code attribute? Like for the one that doesn't require additional completion code, that will be, let's say, zero. And for the one that require additional completion code will be, I don't know, a code.
+
+ How are we going to make that distinction?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Let me explain this one. Little bit you know what's what was our plan before we go for this system our plan was to replace all old completion code the one you see it right now which is to be it's it's not logic you know to be it's not it's not representative to anything so our plan was to replace all this completion code and we bought it was a new completion code and that was it was was going to unfortunately it was delayed so we couldn't we do have the completion code It's ready, but it's not populated in the DWS.
+
+ So we kept using the old completion code. So either we will, if this is, we are in a hurry to complete this project. So if we cannot update the old completion code in the system, I mean, in the DWS, we will use the old completion code and we will add, I don't know how to get the new completion code, which is additional completion code. So we will add it from our side. And so far, any completion code from the DWS, you cannot identify the required completion without additional information.
+
+ So you will have additional completion code for sure. Because for each completion, you will have a different.
+
+Hector Palacios (ADNOC Group D&CS):
+When you do the switch to the new completion code, you will remove the idea of the additional completion code?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Because it's not required. So it's required if otherwise we can continue like this if it's simple and if we can use it or if we cannot update the dws because I think there was some I have no idea there is an issue or a system issue or I don't know because it was it was with the it and we try to make like a pilot for malulu and it was not successfully or it was not implemented due to I have no idea
+
+Hector Palacios (ADNOC Group D&CS):
+really what was the issue is a technical issue or something else but what you're saying is very because if we can align the timings, it's better because either way we can build a solution and then later on, on DWS, you change the completion code and we need to be prepared for that, right?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+See, we can provide all completion codes with the baskets ready with us right now. And if we can somehow convince the people who is responsible for DWS to use these codes, why not? Because you know, the issue is in the, in the, in this, in the DWS, there is several, Mohamad, I think you can help me on this one. I don't know who will be responsible for the DWS to update it or to get it, I mean, they accept our codes yet.
+
+
+
+Mariam Ali Al Saedi (ADNOC Offshore - DP):
+Yousef, I think the best way in order to plot all this information is to do it from the backend, from the system itself. You just upload all the data once. And later on, this is for the old or the history completion code or whatever codes we need to do. For the future codes, this will depend on the communication that we will be held with the planning engineers.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Either from planning engineers or from our side. In this case, we can have this table provision itself isn't it what do you mean which table ability now that whatever we are discussing this we want to keep the the mapping table somewhere isn't it so it's not so they what maybe our can confirm so this table structure we can keep populate in IVP till we finalize the permanent mechanism for that I believe so you know you know what the the if we have, because we will have
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+a control on the IPB. So we can put all the codes we need to, and we can force them to choose from it when they plan the way.
+
+Patel, Rahul:
+I don't know how, yeah. So what you're saying is, whatever information is available in DBS, we take it as it is. Additional information required to get the rest of the completion code are entered directly by the planner. And then based upon this information, which is entered at a well-planned level, we can then define, we can identify the bill of material from S4ANA. So that, which means the DBS provides information which is available.
+
+ We don't depend upon DBS to provide all the information. And whatever additional information is required for IBP to define the entire bill of material is provided by the planner manually. Directly into IPP.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+But I think this is the best way or this is the fastest way. Otherwise you have to involve a lot of people and everyone will start saying no, no, I will not use this completion code. I will not use that completion code. I need to review it will.
+
+Patel, Rahul:
+It will like we are almost two years and we couldn't find a solution. Let's do one thing before we reach to a point where how we get the data. I still want to make sure that we are able to define the logic on the data and then come to a point how we define and agreed one of the one of the solution can be is what we are saying is can be one of the solution. I'm not commenting whether it will be, but then if we clearly identify how we are going to do it, then it becomes easier for us to then come to a solution.
+
+ OK, so can we continue? We are identifying so well ID is something which is a unique number which identifies the well. So that's a transactional data. The plant or the concession code, it is required in combination of this attribute, right? So what I'm trying to do is identify which combination determines which bill of material.
+
+Hector Palacios (ADNOC Group D&CS):
+Are we saying that well ID is going to be part of the bomb?
+
+Patel, Rahul:
+So that's what I'm trying to come to, that identification attributes which will define the BOM?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I don't think, Abdul, the well ID has to be part of the BOM.
+
+Patel, Rahul:
+It doesn't have to, otherwise we will have one unique BOM for each well. So what we are seeing here is the well plan. The well plan will have well ID, but it will not define the BOM. So that's why I'm identifying the attributes which will define the bomb separately so so let's say let's call it bomb attribute here so which of these attributes influence the bomb is what I'm trying to highlight here so you will need the the concession code or the field as the attribute to define bomb right correct yes you'll need well type correct yes yes what you're saying plan concession Yes, the field, yeah.
+
+ I think, Rahul, that's the name that we know. Concession code and field are the same thing.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+You cannot say the same, because each concession has more. Sometimes one concession has two or three fields. So I think it's better to put the field name.
+
+UNKNOWN_SPEAKER:
+Field, yeah.
+
+Patel, Rahul:
+No concession, yeah. Concession field. Let me add additional for field then. We have plant.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+The same field, just both field name.
+
+Patel, Rahul:
+OK, just field name. OK, so we have it field.
+
+UNKNOWN_SPEAKER:
+Yeah, field name.
+
+Patel, Rahul:
+OK, this is clear. Then we have well type. So obviously, well type would be critical attribute for defining bomb. Then do we need completion code?
+
+UNKNOWN_SPEAKER:
+Yes. Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Then do we not?
+
+Patel, Rahul:
+But it's critical. Yes, I want this confirmation from adopting the completion code is required, correct? Yeah. OK, category does category influence the bomb.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Patel, Rahul:
+OK, now. So there are some of the attributes which would be common across all the categories, right? All the different metal categories. So are these common attributes for all? So what I'm understanding is that you will have BOM attribute 1. You have multiple BOM attributes. And for each BOM attribute, you will have a different BOM, right? So BOM attribute 1 would be OTCG. Attribute 2 would be casing design.
+
+ Should I call it casing design? No, CTG you can and then in this case after that you can put wellhead. Wellhead and then the BOM attribute 3 is DCE. Okay, 2 is wellhead, DCE Downhole Completion Equipment.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Then last one is Line Arrangers cementing access.
+
+Patel, Rahul:
+LHCA. OK, so these are the four attributes which will allow us to get all the materials for a well, correct?
+
+UNKNOWN_SPEAKER:
+Mahmoud? These are the four.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+All of these will give you the total requirement for the well.
+
+Patel, Rahul:
+Total requirement for the well, correct. To getting the BOM of OTCG these are the only four attributes you'll need casing design as well for OTCG?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+casing design is the OCTG actually yeah OCTG is the casing design and the completion so you can say the OCTG is a casing design the the completion code has part of the OCTG and the casing design has a second
+
+Patel, Rahul:
+part of the OCTG okay so the combination of completion code and casing then will gives us the complete or strategic bound. Yes. Okay. So now when it comes to wellhead, we will need this information, right? The field, the well type and then the added and then the wellhead code.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+You need the completion for the wellhead code, you need the completion, you need the wellhead code and you need the casing design because the wellhead is starting from the beginning to the end. Okay.
+
+Patel, Rahul:
+So then we need the field, we need the well type, we need the completion code and then we'll need If you have all this full code, then you can...
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+You need the category and the casing design. But I'll tell you something. Once you have the wellhead code, you will have all of this under the wellhead code. You know what I mean? And if you see the wellhead code, you will understand what's the well type, what's the field, what's the... So you see that the information is redundant.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Exactly.
+
+UNKNOWN_SPEAKER:
+I really don't understand.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+We can end up today, so let's continue. Then maybe my point is correct, right?
+
+Patel, Rahul:
+So let's identify then whatever is related will take it out so that we get to the entire DC will again need the field well type for DC. Also we need completion code and category.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+No, you don't need a category, but you need the completion And you need the additional completion code.
+
+Patel, Rahul:
+An additional completion code. Yes. And with this information, we'll be able to get a DCE bomb.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Patel, Rahul:
+OK. And then for LCH, I'm assuming that we need all this.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+You need the casing design, and then you need the line of hanger access.
+
+Patel, Rahul:
+And you need the line of hanger code.
+
+Patel, Rahul:
+So essentially, with this combination, so what we are saying, if we do the wellhead planning, the OCTG is included in the wellhead only, correct? If we are able to use this information for wellhead, you will get the OCTG material as well included, because the same information is used. Additional wellhead code is used.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I don't know. But anyway, continue. I don't know.
+
+Bastian Osorio:
+There is one thing that we're trying to do here is to define a bomb that can be used across multiple wells. If we're going to define the bomb for a unique one for each well, then there is no need to create a bomb. We can create as you said, just with the well will be enough to define the bomb. But I don't think you're creating a new bomb each time you create a well.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+That's the thing. Explain something see let just let water codes let's put any numbers and instead of XXX but what 1 2 3 4 5 ABC 1 2 3 no no I'm talking about this go to the row number 4 and say lower vacuum and say lower vacuum but lower vacuum because it's here and then water injector same but it water injector and the completion say to be and there's not recovery we can say 1 1 And for the kissing design, let's say kissing design 2C.
+
+ 2C? Just a number, or 1C. Additional completion code, say AC. AC? Just, yeah. And then also W1. WH1? Yes. And the line of hunger, LC1.
+
+UNKNOWN_SPEAKER:
+LC1.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+So if you put all of these numbers, these numbers if we say at the end of the day in K you bought the substitute of this number of this of this it will be a code this is just just
+
+Patel, Rahul:
+an example yeah all of this the concatenation yeah yeah but the point I'm making is if I if I say that the competition has come up with a unique key with all these numbers right the unique yes yes so
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+any well any well has the same has the same unit or has the same unique code when you get it from the system, it will have the same bill of material, including the liner hanger, well head, DCE and OCTG.
+
+Patel, Rahul:
+You don't need to make all of these bill of materials. So this becomes a unique key for BOM?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Exactly. So BOM unique key? Yes. For all well head, all well equipment required, all well requirements.
+
+Patel, Rahul:
+Yeah. So we will have this unique key identified in the bomb, same. Yes. And let me function F4. So and say for this unique key, if we are having, say, this materials, 10 materials, then the 10 materials will have entire bill of material for the complete well. So we don't need this essential. Exactly.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+You don't need all of this. And that's not required at all.
+
+Patel, Rahul:
+Let me hide this for now. So this is only one.
+
+Hector Palacios (ADNOC Group D&CS):
+The point is that sometimes, for example, let's go back, Raul, please, to the ones that you removed. Let's go back because the point is that then you need to define multiple bombs that are not necessary.
+
+Patel, Rahul:
+OK, so let me add this what you want to refer to here and hide.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Great. So for example, the category. You are saying for the last one is not necessary to specify the category. If you put it as a key, then you then is necessary to specify a category and you will have the same bone for each category.
+
+UNKNOWN_SPEAKER:
+You will repeat it.
+
+Hector Palacios (ADNOC Group D&CS):
+When you say no, it's not necessary, then you automatically you create just one.
+
+Hector Palacios (ADNOC Group D&CS):
+Make sense what I say?
+
+Bastian Osorio:
+We don't want to create the same, I mean, different BOMs for the same list of material. That's what you're trying to say, Hector, right?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, that's why we are trying to define the list, the more simple key, let's say. So we define a very general BOM, otherwise if we start putting the category for all of them. When it's not necessary, we are going to create many different bonds that are the same.
+
+Bastian Osorio:
+I think if we use the template that was provided for us, it will be clear.
+
+Patel, Rahul:
+So the thing is, the template provided was only for OCTG. Now there are this the additional completion wellhead liner hanger materials are not part of the template.
+
+Bastian Osorio:
+I understand that it's just for to explain the idea of using just one BOM for multiples. Let me pull up that template which we have received.
+
+UNKNOWN_SPEAKER:
+The example that Khushboo had it was good.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+The only thing is here it will be multiple like a bomb. So there will be a number of bombs that will be increased a little bit, but it will be more precise, whatever the proposed way.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I think that is for us is will be the same. I think that the impact will be only for big nudge at the end. Because whatever they put on S4HANA last year.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No, that's fine for us. So it will avoid so many combinations to pick with OCTG how to pick, well head how to pick, so no need to bother this thing. So it will be only unique for entire well materials.
+
+Bastian Osorio:
+Yeah, I mean that for each new well ID you will require, you will need to create a new BOM basically.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Not new, it will be see if you look at this for combination so then it will come with the only matter now the validity is missing so automatically it will copy all this information to the as per the DBC
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I want to say something it seems do you know do you see that do you know what's how it looks like the DBC or you have the DBC correct you have the the DWS report correct yes let me show the DBS report yeah I'll show you because you will understand because it's you done to create a unique one for each one.
+
+Patel, Rahul:
+So this is the DBS report, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Patel, Rahul:
+Select lower ZAKU field. OK. Lower ZAKU.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Select lower ZAKU. LC. OK. Yes. OK. And then select, if you go to the will type, select water injector. WI. WI. Yeah, water injector. OK. And then if you go to category, select new so it will be easy new drilling new drilling okay because you know new you see this issue new drilling new horizontal all of this is exactly same but just select new now new drilling that's fine okay okay so if you go to if you go to the completion where is the completion completion smart smart and select to be to be let me highlight the ones we have selected so that
+
+Patel, Rahul:
+it becomes easier Just to explain to you.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Yeah, if you go to the completion. Yeah. Yeah, this one and Selected to be non-standard. Yeah Okay, so like this or I'll tell you something go select to the smart So it will be much better because we are lucky we have only one go to select smart. Yeah So these three wheels it will have the exact same bill of material So if you identify bill of material for this for this combination, lower vacuum, water injector, new drilling, smart with additional remaining part, you will have the exact same bill of material.
+
+ You understand what I'm saying?
+
+Patel, Rahul:
+Yes, so going back to our example here we have, so this is in a way we are replicating what we have in this only, but we are just highlighting all the fields which are relevant. So we have field, we have well type, we have category and we have completion code. So that's what field, category, completion, these are the fields which we had. Right, correct. So now, so what you're seeing is with the combination.
+
+ So let me duplicate this sheet so that we don't lose this data. More copy, create copy. OK, so what you're seeing if I ignore all these things. I'll right now just ignore it, but yeah, hide it now. If you let me hide it, let me hide it here so. Hide this. So based upon so the the unique key what you are saying is this So let me put slot recovery here.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+So Again, this is not the unique key. This one will can identify all I'm saying this all of this world has the same equipment required Yeah, however to identify this equipment. You still need some additional information, which is not part of the DWS this is the problem So as we said, we will put it as a part of AIBB, I think.
+
+Patel, Rahul:
+So that's where we're trying to reach here. So just stay with us with some more patience so that our questions can be identified. So we understood that these four are the primary combination which allows us to get most all the metal from bombs. So let's take this as the reference bomb reference one. That's why I had this four reference. So this bomb reference one, if I take this as a reference, I get all the metals and this metal would be common for all the wells which have this four combination, correct?
+
+ Now, for well-haired DCE and LCH, all these metals are also included in this bomb?
+
+UNKNOWN_SPEAKER:
+No, unfortunately.
+
+Patel, Rahul:
+Okay, yes. So no. So which means we need to have another bomb which only focuses on well-haired metals. So if I combine… Not only wellhead, wellhead DC, everything.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+So if I have to get wellhead, let's go step by step. So BOM reference 2 is focusing on creating a BOM only which has wellhead materials because the rest of the materials we have identified here. Correct? So this is one set of material which are identified from the well plan. Now, additionally, for identifying the wellhead materials, I'll say wellhead, the reference would be this plus wellhead key.
+
+
+
+UNKNOWN_SPEAKER:
+Is this correct assumption? It's correct.
+
+Patel, Rahul:
+So I would say that this is is equal to this and wellhead1. Let's assume the wellhead key is wh1. Let me put this as wellhead1, which means if I add wellhead1 as additional attribute to the only original bomb reference, then you get a bomb reference for wellhead. And with this reference, you will be able to identify the materials only which are for the same well, but only wellhead-related materials.
+
+ So let's assume there are only five materials which are required for wellhead, for the simplicity of example, right? Which means this will give me wellhead materials. Is this correct?
+
+UNKNOWN_SPEAKER:
+Correct. Yeah, correct.
+
+Patel, Rahul:
+Similarly, if we this exercise for DCE, then you get the basic material, the basic combination remains the same, and then I'll add DCE one code. So if I combine DCE code, then you get DCE materials.
+
+UNKNOWN_SPEAKER:
+Correct? Correct.
+
+Patel, Rahul:
+Materials, and now I will create one more for the example.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Rahul pull that w1 down also, w1 and dc1 pull it down do not leave 0s over there. No, no here, pull it down, do not leave 0s.
+
+Patel, Rahul:
+Just let me do this function f4 so that if I pull it down it stays the same. This is again Okay, now we'll come to the final bomb, which is LHCA. And the reference here is Correct. So now we have four different unique combination. So I'd say OTCG.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+But it required here maybe one more small information if it's like heavy casing design or medium casing design, which is we can get it from the casing code.
+
+Patel, Rahul:
+So you're saying let's say I'll so I'll unhide these attributes now. So sorry.
+
+UNKNOWN_SPEAKER:
+So this is something we discuss.
+
+Patel, Rahul:
+So the casing design design. So this. And casing design is what you're saying, right? To see. Correct. Is this correct? We we can.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Yeah, we can see it like this. But we can make it also more simple. If you can go to the, if you can go to the, the DWS again.
+
+UNKNOWN_SPEAKER:
+Yeah. You will find here.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+You know, sometimes they specify if it's a heavy casing design, medium casing design, but there is no special place for it. Sometimes you put it under comments, sometimes you put it under extra requirement. So it's better to keep it there in the casing design.
+
+Patel, Rahul:
+So let's say this is an additional field which we need to figure out how we'll get it. But then casing design is required. If it is entered, we'll use. If it is not entered, then yeah, it's not there. OK. Correct. So let's revise what we've agreed upon.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Casing design means, Mahmoud, if the casing design is light, then you'll get light pipes. If the casing design is heavy, you will get heavy pipes. Is it something like that?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I'll tell you. Usually, if you start with the, if you start with a new well, if it starts with a new well, we know that lower vacuum water injector wells require this design starting by 30, by then 1338, then 958, then 7 inch, then for an hour. However, sometimes in the same field, the part of this feed they cannot drill it in this design so they change it and they add additional string and this adding additional string they call it a heavy casing design or different design like if you go to upper vacuum you will find the quality design C design E so doing that doing that will will give you a different bill of material for the casing.
+
+ You start by 30, 20, 30, 30, you know they add additional casing. So, it's better to keep the casing design.
+
+Patel, Rahul:
+Okay. So, basically, OCTG materials will be able to find out with the basic four fields. So, we'll call these are the basic four fields which are required for defining the well. And based upon the changes in the additional completion code, we get the additional materials.
+
+Vignesh Perumal (ADNOC Group D&CS):
+No, no, you need to consider casing design also, not four.
+
+Patel, Rahul:
+Are you right? Yeah. So, OCTG, we are considering the basic four plus casing design. For wellhead, the basic floor plus wellhead code. For DC, the basic floor plus DC code. And for LHA, the basic floor plus LHA code. Up till now, are we all on the same page? Is this understanding correct?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Yes. That's correct.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Patel, Rahul:
+Now, only one thing which is missing is additional completion code. Where these additional codes are applied, for which material additional completion codes are assigned.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+You see, you put it already here, DC1. But you said AC1, I think you need, it has to be DC1, not AC1.
+
+Patel, Rahul:
+You see the DC material?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Yeah, it has to be the code plus the additional completion code.
+
+Patel, Rahul:
+OK, so under DC, we have the DC code plus, if AC1 is available, if additional code is selected, then the bill of material of dc will have additional materials of ac1 correct or no it has you know the yeah
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+yeah that's that's correct there is there is no uh but there is no I think you put you it shouldn't be either you will change it from no no what was dc what is dc1 so dc1 is the that
+
+Patel, Rahul:
+the okay so there is no dc1 here because we have not defined other dc1 completion code. So it's AC1. Yeah, got it. So it's AC1. If additional completion code is defined, then DC models are selected.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Yes, and it has to be defined.
+
+Patel, Rahul:
+And there can be more than one additional completion code, right? No, no, no, no.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Each well has its own completion code. It's a design and each design has its own code.
+
+Patel, Rahul:
+Agreed, but then when we looked at the in the bar chart, the additional completion code field was an optional feed and has a multiple selection feed, which means that it can be optionally selected. Not all will has additional completion code, and then there were more than one additional completion codes based upon the design of the well. So is this understanding correct about additional completion code?
+
+ Because that's what we looked at when we when we had this review with the
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I'm sure I have no idea. So you will have only one completion code for offshore.
+
+Patel, Rahul:
+Yes, one. Is ACC for offshore? Correct, OK, so which means that with this four different combinations will be able to get the entire bill of metal of of well, correct?
+
+UNKNOWN_SPEAKER:
+Should be, yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, now the complication, Rahul, is do we have this information in the well plan?
+
+Patel, Rahul:
+So that's what we have, only this four category information in well plan. This additional codes which are highlighted, let me highlight this as a different color. We don't have this course in the DBC system. So this is DBC. We also have scenarios with blank completion code, no?
+
+Khushboo Mudit (ADNOC Group D&CS):
+Doesn't have a completion is at the beginning because it's like,
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Exploration was we are not completing it. Which is correct here.
+
+Khushboo Mudit (ADNOC Group D&CS):
+So will that become a separate reference on its own? Or will it sit under any of these attributes?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+No, because it will be as you see now. This combination will give you will will define a complete set of world, correct? So if you don't have a completion, you will not have the DC material.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Patel, Rahul:
+OK, so so Hector, the recommendation from the team or request on the team is that we get this data from the DBC system and user provides its input manually directly in IPP and once this information is available we can identify all the materials for the respective combination.
+
+Hector Palacios (ADNOC Group D&CS):
+So the point is not, Rahul, the point is not creating the bone. It's that the bone you need to cross it with the plant. So in the plants if you don't have the details so we are able to cross it then you cannot do anything. So if you don't have the plan in the plan if you don't have this information then you can cannot relate it to the bomb you know.
+
+Patel, Rahul:
+So that's what the team is requesting is that the plan will be in two pieces. First we'll get a plan from DPC which will have this basic information and then the planner the drilling planner will provide this additional information manually so that you your well plan is complete and once the well plan is complete the bomb can be referred from SAP with this information. So the question is, if we get the basic information from DBC, and if we get this input as manual input from the drilling planner as part of the demand planning activity, so step one is get, so essentially step one is get data from DBC.
+
+
+
+Patel, Rahul:
+Step two is manual input from planner, from planner in IBP. And then step two is, step three is basically get bombed it.
+
+Patel, Rahul:
+So unless step one is completed.
+
+UNKNOWN_SPEAKER:
+Determine bomb. Because data would be already available to determine bomb. Sorry. What did I do?
+
+Patel, Rahul:
+Yeah. So the question, Hector, is if this becomes, if this steps gives us entire input what we require for all the different Bill of Materials, will this be sufficient? Will we be able to proceed in IBP? We need to give it a thought.
+
+Hector Palacios (ADNOC Group D&CS):
+We need to think on this because the step two, like the manual input from the planner, is like to remake, basically. So you will receive the work plan, but you will need to do it because you need to add this information that wasn't in the first place. So that's going to be the complication.
+
+UNKNOWN_SPEAKER:
+Yeah, that's the point.
+
+Hector Palacios (ADNOC Group D&CS):
+At the end, I see that this line is going to be multiplied because if you are delivering the information by, let's say, completion code, well type, or well ID, whatever, but you don't have the information information about casing, additional completion code, work code, line hanger, and so on. So when you start adding this, you will start multiplying this line. It's not going to be just one line. It's going to be like four in this case, if the four apply, or two or three.
+
+
+
+Patel, Rahul:
+So essentially, the attributes are entered in IVP. And the combination of these attributes determine which all bombs are applicable. So SAP will have this. Reference, this combination, and if the planner provides this input, then automatically the bomb determination step will consider that input and allocate the necessary bomb to the well.
+
+Hector Palacios (ADNOC Group D&CS):
+So, yeah, we understand the complication, we understand what we should do. Let us think on the solution. It's not the right way that comes to my mind, like how we can do it, but I'm not saying no.
+
+Patel, Rahul:
+Let us think about it. Noted. So from a drilling team perspective, from an ad hoc team perspective, if we are able to do what we say, step one, step two, step three, and if we are able to define BOM in SAP with this combination, then will you agree the complete demand for a specific well in IPP based upon today's discussion? I just need this confirmation so that we can proceed with this, evaluate this internally, get back to you, get back to the team here.
+
+
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Yeah, we will get the general requirement, yes. Yeah, so I think there will be an additional step to identify it on based on the future or next planning level.
+
+Patel, Rahul:
+Yeah, yeah, so this will give you So one more thing, the bomb will be on generic material, not on branded material or vendor specific material. And this will give you maybe say 90% requirement of well, which is common across all the well, and a 10% something which would be provided by planner manually. He may add or remove some materials, correct?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+No, no, it will give you 100% requirement of the well. However, you cannot just take it and give it to, you cannot execute it unless you know from which supplier you or from which vendor you will get this material. Because like in general material, the item number one, it might be from three vendors or three suppliers.
+
+Patel, Rahul:
+Correct, correct. So from an IBP perspective, we are saying that the process is into two steps. One is demand and second is supply, right? So what we are discussing right now is to get demand. So that we know for a specific well with this combination, these are all the materials required. Now once we know the generic material, what will we have is a mapping. So let's take it to additional mapping.
+
+ So you have generic material. Let's talk about that. And then branded material, which is specific to a vendor. Now, if we take this example from our… this is the sheet. So, let's take this example. Let's take material first. So, this is a generic material. Let's take this as an example. So, for one generic material, let's take an example. There are three branded materials. So, I'll just copy this and say B1, B2 and B3.
+
+ These are the alternates defined in S4. So we have a custom table in SAP where this information will be provided to IBP. So with this information what we will do in IBP is in the supply planning we will provide you information what is the available stock on which material so that the procurement proposal can be created based on the demand. So this step 1, basically this step 1, 2, 3 are demand steps.
+
+ Here we'll get a demand and once we get a demand under supply planning, in supply planning let's put up the steps or supply planning here as well so that it clarifies the entire process. Step one would be generic to say branded mappings. Then step two would be Let's take an inventory, STO information, and then step three would be supply proposal. I'm just keeping very high level.
+
+UNKNOWN_SPEAKER:
+Let's say procurement proposal.
+
+Patel, Rahul:
+Inventory, We'll also call VMI stock. So basically, whatever information is required to come up with a procurement proposal is provided in step 2. And at the end of step 3, you will have procurement proposal provided by IBP, which will be reviewed by the planner and confirm that, OK, this is correct requirement for procurement proposal generated by IBP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So Rahul, what that means, assume that for one well, there are this bomb is determined, you know, OCTG material, wellhead, downhole completion equipments and line of handling. This is this is the bomb. Now, out of that one material, mostly I think OCTG, they have VMI agreements, no? So for the OCTG, you will be looking at, you know, the stock available at the VMI yard, you know, for yes, whether it is an ADNOC or VMI will give where the stock is available.
+
+ And but for the other materials like the like wellhead materials which are not VMI managed, you will do the normal on hand versus if it is not on hand on our stock, then you will try to replenish from external party, right? This is what you'll do. So you will automatically do the VMI versus non VMI based on the material, right?
+
+Patel, Rahul:
+So we need to have that information upfront that whether the material is managed through VMI or not. If this information is available, automatically. If it is a VMI managed material, yes, we'll show you the VMI related information. If it is not a VMI management, management will give you the ad hoc inventory status and then open POPR and then create a proposal. OK. So does this make sense then?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, all this information available in supply side or demand side. The differentiation between VMI and the on-ground? That would be at supply side. Supply side, okay. Because that's where the first step is to identify the branded material, right?
+
+Bastian Osorio:
+Demand is out to the generic material.
+
+Patel, Rahul:
+Demand always will be at generic material level. And in the supply, the first step is to identify the branded material and look at the inventory, whether it is at VMI level, at what OK.
+
+Hector Palacios (ADNOC Group D&CS):
+So I guess at first we have the stock with the generic code, so we can use that. And as soon as we don't have any more, we go with the branded one. Is that correct?
+
+Patel, Rahul:
+Question, will we have stock on generic metal any time in the plan? System, like in planning, do we expect stock on generic material?
+
+UNKNOWN_SPEAKER:
+Generic?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+No, we don't keep any stock under generic material, but it's generic material, it's just a combination of the branded numbers, I mean, or the, yeah, branded stock.
+
+Patel, Rahul:
+So probably we just say that it's a planning material or generic material because there can be multiple branded material and we always, the supply planning always happen on the branded material, the stock will always beyond the branded matter, correct?
+
+Hector Palacios (ADNOC Group D&CS):
+All right, all right, so we go right away for the branded material. We look at the alternatives we have, we use it.
+
+Patel, Rahul:
+If we don't have, then we go for procurement. This process is only for offshore. How this will be different for onshore? Do we have stakeholder us from onshore as well on the call. Abdul for AdNoc team, do we have anyone from onshore on the call?
+
+UNKNOWN_SPEAKER:
+I don't see anyone.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+I think Ashik is also on leave.
+
+Patel, Rahul:
+So our assumption, Khalid, in general, based on all previous discussions, the process should be similar for both onshore and offshore, which means whatever well-planned or the codes what we are identifying or the BOM what we are identifying, the high-level process should be similar. There can be variation in terms of the materials used or the codes used between onshore and offshore. But that is more transactional in nature and not changing the process design itself.
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, and I think if there is a variation also, they should align their processes.
+
+UNKNOWN_SPEAKER:
+Right, Abdul?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Going forward, both should align the processes.
+
+Patel, Rahul:
+Okay, so let's assume that's the case. This is my recommendation. I don't know.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+This is on the decision is on the drilling team but all our previous conversation we had the same assumption and we'll continue with the same assumption because let's do one thing uh uh ashik will be back probably on monday
+
+Patel, Rahul:
+so we'll confirm with him on on that okay uh at the next steps uh there is an action on the project team to evaluate whether what we have discussed is something possible. For us to evaluate, we'll need some help from ADNOC for a well, one or two. Will you be able to provide us the list of materials for OCTG, actual materials, and actual codes? Maybe two or three wells only, so that we can use that information to simulate that data in IBP, so while we are designing the solution.
+
+ Is this something possible? So we need a sample material, sample bombs, so that we can define sample bomb. It may not be complete, but then at least we will know what are the different completion codes, at least two, three different completion codes in each category, so that we know what all different completion codes are there, and if the completion codes are changing, how the bombs are changing, so that when we are simulating or trying to design the solution, we can use this information to check whether we'll be able to define the way we want in IBP.
+
+ So, Abdul, when do you think you'll be able to help us with this sample Bill of Materials for all these four categories, including their completion codes?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, we can arrange that one. Yeah, that's we can arrange it.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+I will discuss with you, Abdul, if we can. How long does it take to?
+
+Patel, Rahul:
+We just need sample. Yeah, so that we can simulate the entire process with the data you provide. So when we come back to you, and if we have something to show to you, it will make more sense to you as well, looking at your data, your material, and your codes.
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+We can do that. However, because I will not use the generic because have generic right now, I can use the branded one.
+
+Patel, Rahul:
+We'll assume those are generic for the purpose of simulation. Eventually you will have generic and branded metals separately.
+
+Bastian Osorio:
+But that is the next issue we need to address, how to determine the relationship between branded and generic. Because currently there is a set table in SAP we tried to establish, derive the relationship from them, from there, but it wasn't possible. It was not possible.
+
+Patel, Rahul:
+So, as you mentioned, that would be an additional step on ADNOC side to help us identify the metal correctly, but at least from a demand side, if we get sample data, we'll be able to close the demand and confirm if we are able to get the final demand. Yeah, that would be the first step. Yeah, and parallelly, if from a sample perspective, you can also help us use sample materials, which can be only for the sample branded metal, not immediately as a step two, then we can also simulate the supply planning steps as well as we proceed.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, the only point guys, let's not because if we want to do unit testing and traveling to just with you we will need to have all this information and with anticipation because we need to build before going there so let's think on that as well let's be conscious about the timings that we have it's not about only a sample ruffle we need to build the whole thing yeah yeah but at least step one is to get at least
+
+Patel, Rahul:
+a sample for us to evaluate a solution while team can continue working on the full definition and we can we can have a conversation later is when we'll be having the complete definition.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, the only thing is that we cannot take too much or too long for a sample.
+
+Patel, Rahul:
+Yeah, that's the key point here team that considering that we are already getting delayed in terms of the project timeline we would appreciate or will request if you can give us this sample data as soon as possible. Hopefully, I don't know if we'll be able to if you can help us give this data probably by end of tomorrow Is this something possible?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+No, no, no, no way because we have a different. We have a lot of tasks to do actually this week. It's very important and very hard. Maybe next week, sometimes next week.
+
+Patel, Rahul:
+So can you help us understand by when you can help us with this data so that we can also plan our work accordingly? Because right now I can start the configuration with the samples that you have here.
+
+Hector Palacios (ADNOC Group D&CS):
+We don't need to have the, like, real data for the configuration. We can use just dummy values. Let's focus on the big picture of the data that we will need for the demoizing, for the unit testing.
+
+Patel, Rahul:
+Please, completion codes, if you can help us with the sample completion codes, how they look, so that we can use some realistic completion code. The way we know it is a well-typed is water injection. Is something more realistic. Completion code 2B is more realistic. But we don't know the completion code codes for rest of the attributes. So is this something which you can help us immediately? The completion code, sample completion codes, and then sometime next week you can give with a larger data on dummy materials.
+
+
+
+UNKNOWN_SPEAKER:
+Is this something we can agree upon?
+
+Mahmoud Abdel Aziz A Abdel Aziz (ADNOC Offshore - DMET):
+Yeah, let me see sample completion code, we can look for it.
+
+Patel, Rahul:
+Yeah, so whatever we are discussing, few well, least the well plan with completion code if you can help us with sample data, maybe five, six different wells with different completion codes, and then we will use the whatever material we have to start with, and then eventually you can help us with at a material level information with sample bombs. Okay? Okay. Anyone have any other question, any other point to be discussed?
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, I have.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+uh relative and uh when we are expecting to complete that if you have that reading yeah actually that document the bpd document maybe we can go through quickly so actually see uh first of all I didn't see the link on it today I come across only So, if your time allows today we can go through quickly.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Okay, if you have any high level thing you can discuss because you know once we go into detail then it's too much time.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, the first of all the supply side, so we didn't thoroughly discuss before. So, maybe I went through quickly. I think. So anyone can share the screen and then.
+
+UNKNOWN_SPEAKER:
+How do you find this?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So let me do one thing and give you one.
+
+Patel, Rahul:
+So let I don't want to go through the documents. Line by line. What we can do is give you a high level overview of supply planning. What we intend to do. Maybe we go through the process end to end so that it makes sense. And then if there are any specific questions we can try to answer those specific questions. Is that something we can do?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+OK. Yeah, just a minute.
+
+Patel, Rahul:
+Let me pull up the end to end process map which we have shared also in the
+
+Patel, Rahul:
+Is my screen visible to everyone?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+So this is the drilling process we've been discussing Based upon all our discussions in the past few discussions, we've mapped this end-to-end dealing process. We've spoken about the process of getting the demand. As we discussed, it starts with the well plan and then the bill of metal, and then the well plan is converted in IBP to calculate the link demand. Now, whatever based upon discussion, what we've discussed, the additional requirement of the completion codes manually into IBP is what we will consider.
+
+ But essentially, at the end of this process, we will get a final drilling demand. Now the drilling demand is an input to supply planning where we have this generic material code mapping to the branded metal code as an input. So in S4 HANA, we expect this data to be available. And then also the stock report will be taken from S4 HANA. If a VMI stock is applicable, VMI stock will be taken. And then when the supply planning happens, also the vendor will have the VMI inventory, right?
+
+ So if the VMI data is maintained in S4 HANA, it will take it from S4 HANA. The request is also to be able to upload directly. So from a vendor, if the stock is not updated in S4 HANA, directly provide that input to IBP. And essentially, we'll have a supply planning. So in supply planning, what we are looking at is what is the demand, what is the stock in hand on different materials, what are the open transactions like PR, POSTO, whatever open information.
+
+ And based upon all this information, IBP proposes a supply plan. Now, supply plan is based upon whether you have LTPA in place. If the LTPA is in place, then we trigger a call of order. And the call of order is created in S4 HANA. If the LTPA is not in then we trigger creating a PR. Then the PR gets created. Gets created to PO and PO is basically sent to the vendor. Right, so here we are considering multiple lead times.
+
+ The lead time basically is the time it takes for creation of PR to PO, which is an internal lead time, which if there is a requirement for tendering, then it also includes lead time for tendering. And then the time required to fulfill the requirement and receive stock in AdNoc. Now here, since it is PR-PO process, which means we are assuming there is no VMI or LTP in place, which means we'll directly receive stock in AdNoc.
+
+ If there is an LTP in place, we'll have a call of order. Basically, call of order, we are assuming all the call of orders are for VMI, which means it will create a requirement to deliver in the VMI location. So there is a lead time. There are two different lead times. One is lead time to approve call of order and the second is lead time between when the order is issued and the stock is received in VMI.
+
+ So generally when we say we generally what we've understood is the requirements to have maybe six months to one year period of stock upfront in the VMI stock so that from the date of We are always covered at least for six months or one year in advance. So that's the lead time we are considering here. And once the stock is available at the point of consumption, when the metal is required physically at the well, essentially metal reservation is created in S4 HANA, and the metal reservation triggers the movement of stock from VMI to S4 and S4 to basically to the physical location of well.
+
+ So this is the high-level process we are talking about in IPP. Just a question on the, can you go a little bit down?
+
+Hector Palacios (ADNOC Group D&CS):
+Is talking lead time. Is that really a lead time, or it's basically a level of stock that we have? So it's just a level of stock.
+
+Patel, Rahul:
+And since the level of stock is covered in terms of period, so that's why we are calling it lead time. Because basically, we are saying that Yeah, it can be confusing.
+
+Hector Palacios (ADNOC Group D&CS):
+I think that it's like coverage more than lead time. Yeah, it's the coverage.
+
+UNKNOWN_SPEAKER:
+Stock coverage.
+
+Patel, Rahul:
+Six months, one year, whatever. Yeah. Basically, whatever the ad hoc policy is in terms of period of coverage is what we are talking about here.
+
+UNKNOWN_SPEAKER:
+All right. This is great.
+
+Hector Palacios (ADNOC Group D&CS):
+I mean, if the team confirms, then we need to start discussing about what we are missing here. For example, those lead times where we are going to get it, the BMI too well, and so on.
+
+Patel, Rahul:
+So the lead time is like two weeks from the VMI to the plant, isn't it? Yeah, from the VMI to the plant. So this is the VMI to well, essentially. It directly goes to the location of the well. And what we understand is something around two weeks from the date of metal reservation, once the metal reservation is created or approved. Team the question is any question on the end-to-end process or the supply planning we are proposing through idp yeah and the pr side actually so I haven't so okay where the pr is coming in picture now here so after this demand is confirmed when we run the supply planning system checks whether there is an ldpa in place and if there is no ldpa in place, then it triggers PR.
+
+
+
+UNKNOWN_SPEAKER:
+OK. So sufficient quantity also not in place. Yeah.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So already sufficient quantity is first input. So it talks. So it will only go to PR or LTP if there is no stock.
+
+Patel, Rahul:
+If the stock is available, it will tell you that, OK, you have stock. You have requirement of 10. You have stock of 20. No need to procure.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+so this is a lead time calculation so this from the peer approval to reaching the plant no yeah lead time actually this is a big topic to discuss yesterday we started so we have to main we have a different
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+lead time for different commodity which is not and within the LTPA not captured anywhere so this one we want to think how to go to capture this lead times and how to consider. So maybe we have to discuss separately for this part. So you captured this requirement, isn't it? Yeah, so so see we have captured multiple lead time based upon all our previous.
+
+Patel, Rahul:
+No, no, no, no VMI and from from approved order till the stock is listed in VMI is additional lead time and once you have stock in VMI there is a lead time to move from the VMI to to the
+
+UNKNOWN_SPEAKER:
+well to adnok.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah exactly so these are the these are the multiple lead time is there so we have to identify all this.
+
+Hector Palacios (ADNOC Group D&CS):
+So which one are the one that we don't know what to get VMI-12. VMI-12 but is that a significant lead time? I don't know.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah VMI-12 also okay now so we can discuss further in recent days at least capture here.
+
+Hector Palacios (ADNOC Group D&CS):
+These are the sessions that we have for all the discussions so.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay now yeah that's true so this one the you mean the data itself, isn't it?
+
+Patel, Rahul:
+We're talking about. So before we move to data question, any question on the process from a supply planning or from a drilling?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, yeah, I have one more. Let's see maybe an actor was raising some query on the return as a result. See now the we have requested in the beginning, so we will need the same system to use.
+
+UNKNOWN_SPEAKER:
+Create the LTP peers.
+
+Patel, Rahul:
+Just part of it. So there is a call of order is called call of order, right?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No, no, this from LTP to create an LTP. So we want to see now. Currently we have LTP for fire for example. Now we are in the final stage of the fire and we want to issue the new tender. For creating an LTP, go to a commission LTP.
+
+Patel, Rahul:
+So this PR I will capture here. So essentially what we are doing is it's an report, First, we have taken that requirement as part of the business requirement account. So we agree that this is a requirement from ADNOC for future LTPAs. They need input on what is the volume, what is the total content, so that the PR for LTPAs has to be created. Correct? That's the one point. So from an IBP perspective, we will be able to provide you a report which helps you identify what should be the volume of LTPA when a new LTPA is to be created.
+
+ Now, that PR for LTPAs. Is in one-time activity, which means we expect the LTP agreements are available in S4 HANA. Does that answer your question, Abdul? Yes, Rahul, yeah. Okay. So, to go back to the supply documents. With this information, will you be able to review the supply documents and ask if there are any additional questions in the form of comments? What we expect is if you can review the document and provide your comments, knowing that this is the process we have considered in the supply planning document, will you be able to help us with the feedback on the document?
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Okay, Jaga, you reviewed it. Actually, I didn't see it before. Sorry for that. I will go through abilities. Yeah, only tie-in. So for me also tie-in only. Can you just scroll, Rahul?
+
+Patel, Rahul:
+To where?
+
+UNKNOWN_SPEAKER:
+Down, down.
+
+Patel, Rahul:
+This is the last part. This is the last part? Okay. Yeah. Sorry, not process, document. This is only process. Yeah. Okay. Talking about document can you just go to the document quickly just a minute Just a minute, I'm logging into ad hoc to show the document. Just a minute. You Yeah. Thank you.
+
+Patel, Rahul:
+Yeah, let me share my screen.
+
+UNKNOWN_SPEAKER:
+OK. So this is the
+
+Patel, Rahul:
+Document let me zoom in a bit.
+
+UNKNOWN_SPEAKER:
+Yeah, any specific question you have Abdul.
+
+Patel, Rahul:
+For the drilling, why we are mentioning the real point and all in the It was standard, we can take it out. Any specific point we would like to look at?
+
+UNKNOWN_SPEAKER:
+I think nobody reviewed this from OK, believe maybe abilities or Asik. I don't see.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, that was the concern.
+
+Patel, Rahul:
+We have no comments at all on the link, so we would request if you can have a look at the document and probably We can plan one more session just to make sure we can reply on the specific comments. It would take us too much time if we go through every line of document in front of the entire team, and we don't want to do that. So we would request if you guys can have a look at the document between today and tomorrow so that we know the feedback upfront and if there are specific points which need to be discussed, we can review and close
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+those points. But if. Can you able to do that by tomorrow? Or if you need more time, you can take. Maybe take the weekday weekend and then maybe by Monday, Tuesday next week.
+
+Patel, Rahul:
+The only point is we've spent Sunday's document more than two weeks back, so we would appreciate if you can expedite and provide us the feedback as soon as possible.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Let's try Monday and of the day because Ashik is also not here Ashik not here and so at least Monday let's start yeah this is the same thing we the supply part we didn't go through you.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Here the supplier selection were we mentioned. Supplier selection? Yeah so now what we discuss today also the so the like the conversion from generic to branded. So which supplier to select or last time.
+
+Patel, Rahul:
+So basically What we discussed also is that the mapping will tell us what all different banded metals are. And then we will show you what is the current status. And then there is something called quota maintenance where you can define quota as what is the preferred supplier for a given material. So if there are more than one supplier, we will give you the visibility of what is current stock on different suppliers.
+
+ The session is maintained.
+
+UNKNOWN_SPEAKER:
+Let me check.
+
+Patel, Rahul:
+Here is, if you see vendor one, vendor two, let me show you. Here it is, this vendor 1, 2, 3 and then percentage between the two. Is this the one production? No, this is Bill of Metal, sorry. Yeah, yeah, so this is also basically telling between vendor codes. If there are metal code 1, 2, 3, then what is the definition between each of them?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+In this case, how it will populate, how it will select for the supply part of it.
+
+Patel, Rahul:
+For example, we have these three vendor stock and so this is the sourcing quota, the proportional metal location from each vendor to mitigate suppliers. This helps multiple sourcing where genetic metal code has multiple branded metals which allocates quota. The S4 HANA be able to provide sourcing information quota which will be used to propagate demand and generic material to multiple branded material.
+
+ So essentially that's what we are saying. If we maintain quota within quota, we need to tell you what is the percentage allocation between the generic different materials for the same generic material and then IBP by default will propose based upon the quota maintained in system.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, this is a default one. So for example, as explained before, so if we assign some. Field to one vendor for example Tenerice under Omo chip and Valeric under upper Zaccum in this case so where we will determine this information this is the quota this is where we will determine this information no quota default isn't it and suppose today we have seen the how the bill of materials and so on and in the lower Zaccum part the OCTG is there and so the lower Zaccum should come from Tenerice for example on generic material number or somewhere so how we can ensure the the quantity is allocating to lower the cum from tenors only so if we put it to default it's a random isn't it so what you are saying is that the field is lower the cum then the vendor is tenors only yeah for example so in this case how we can ensure the vendor one for example vendor one is tenors and that is the our So we can ensure this from vendor
+
+UNKNOWN_SPEAKER:
+1 not from vendor 2. Hector Palacios.
+
+Patel, Rahul:
+Can you help us answer this question from Abdul? Can you repeat again Rahul?
+
+Hector Palacios (ADNOC Group D&CS):
+I wasn't here.
+
+Patel, Rahul:
+Yeah, so the question is that they have a field called Lower Zakoum and then the current understanding is if the field is Lower Zakoum, which will supply material would be, say, a specific vendor.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, so you have a relationship between vendors and between fields. Is that general or is just one particular case?
+
+UNKNOWN_SPEAKER:
+This one in general.
+
+Hector Palacios (ADNOC Group D&CS):
+That's right, because we need to define the supply chain network here. Needs to know that. If we are going to have the demand for that specific well that is in this specific field, we need to know to which vendors we need to go, right? So that is information that we will need to have on IVP. And it's part of the questions that, indeed, we have. So is that relationship defined anywhere? Because we can start, for example, checking the past of the info records, I guess.
+
+ If we can get that information from there.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No, this information we can capture against the Bill of Materials. Against what, sorry? Bill of Materials. Today, the Bill of Materials.
+
+Hector Palacios (ADNOC Group D&CS):
+So in the Bill of Materials, we will have what is the We will know the demand. We can assign it to the well, sorry, the field. But then the combination between field and vendor, we need to specify it somewhere.
+
+UNKNOWN_SPEAKER:
+Exactly. That's the complication, right?
+
+Hector Palacios (ADNOC Group D&CS):
+So the point is that today we don't have that information.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Am I correct? Yeah. The table we have. Can be populated. So this requirement to be captured somewhere.
+
+Patel, Rahul:
+Can you provide this feedback in terms of comments in this application? Yeah, because we just want to make sure all the things what we are working upon are clearly documented so that we can take that input from there and proceed with it.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, we are not going to miss that one, Abdul, if we cannot run supply planning without that.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+choose yeah this is one and similar one Rahul so the flexibility to the quantity part also it will be in the supply isn't it we discussed the main thing before the adjusting the quantity and adding some assigning new material
+
+Patel, Rahul:
+It would be part of demand we've already discussed in demand it's considered in demand okay so when we are finalizing demand we need to make sure that all the adjustment to demand are done. Will propose based on the bill of material and if any additional adjustment to be done is to be done by planner and once the demand gets final then only it goes to supply planning.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay, so the quantity everything will be adjusted in the demand only? Yes. Even the material as well?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Patel, Rahul:
+what is the material and how much is the quantity required for a specific well type combination what we've discussed is something which has to be finalized in demand only.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay, suppose the you want to someone to change the brand. So if chosen vendor one material, so if someone to change it here, so it will be under the supply or demand.
+
+Patel, Rahul:
+It will be in supply planning because in the demand we are not worrying about We are doing only generic planning so whatever is which is related to vendor where we are saying I need material from this vendor or that vendor it is all part of supply planning.
+
+UNKNOWN_SPEAKER:
+Okay, so let's do one thing.
+
+Patel, Rahul:
+Abdul, you have a look at this document in detail, and if you can help us with all your comment by end of Monday, we can also remind Mahmud Ashik as well, saying that we need to come in from offshore as well. So that we can then make sure all the feedback is incorporated and we can take this up.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Exactly. So we'll go through and any clarification required, we'll put it on Monday. Yes, we'll discuss with Ashik and we'll decide. OK. Now, regarding the demand, what we discussed offshore, we want to do it for onshore as well as in retirement and all.
+
+Patel, Rahul:
+Yes, yes, yes. So I'm hoping that there's nothing different, but if there is, if you can talk to Abdul, sorry, to Mohammed Arshid, we have another call on Tuesday. We will continue with what we've discussed as an input for our working, and then on Tuesday, if we can confirm from his side as well, so that it would be much faster on Tuesday, because now we already have a which we wanted to have and we can then get this confirmation I will send this over email as well what we discussed today so that everyone is aligned on what we've discussed okay you can just elaborate what we discussed
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+and the document and also you can prepare something to present to onshore because so we have a lot of discussion internally so maybe we need to spend some more time with onshore there will be confusion why so number first of all onshore currently using a system now so that's reason the switching change management this will be little bit confusion with onshore whereas in offshore we don't have any system currently in excel very easy to switch and all so that's reason the smooth here so maybe so you can just insist the drilling team to attend we will insist the team to attend here yeah please so at least we can conclude in this case okay so because in the last discussion we are in the different presumption yesterday we have internal thorough discussion then we concluded what we discussed today so this how this happened maybe the document if you want to look you can discuss internally, so then it
+
+Patel, Rahul:
+will be smooth whenever we discuss with our team here. Okay. Okay. Anything, anyone have any other point? So, Abdul, if you can give this confirmation on the high-level supply planning process, then based upon that confirmation, we will have, I will, we'll plan a separate discussion only for the lead time discussion. Hector will be okay if we have this conversation once we have confirmation on supply planning document considering a decision related to supply planning?
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, I mean we can discuss from the next session. Today I don't see that we have enough time so let's continue the next one.
+
+Patel, Rahul:
+Yeah, so I think the priority is to make sure the documentation is approved or reviewed and then once the documentation is reviewed by Monday, Tuesday let's discuss about the process from Mohammed Ashiq as well as talk about the lead
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+time parameters. OK, before concluding, one more comment Rahul. In the BOM, we have discussed the unit of measure and so actually we have conversion factor. So we have to be in consideration in OCTJ especially. We have foot in the PO and it is whenever we do the GRN, it will convert to piece or joint. So there's a little bit tricky way configured in SAP. We are using batch management to make it dynamic conversion factor.
+
+ So this all happening in SAP. And so whenever we have seen in the quantity in the PO, it will be in foot. And the conversion factor somewhere available within the system. And so it will be like, what we called, we can say the generic conversion factor. So, whenever the receiving, then this conversion factor will be adjusted as per the quantity in joints. So, this is only just want to add it on the interfacial part.
+
+ Otherwise, so whatever the quantity in stock for allocation or demand perspective, this is all in joints.
+
+Patel, Rahul:
+So, if you want to capture Is it possible for you to document one example for us, take snapshots from SAP, one example, so that we know how it is happening, or on the Tuesdays meeting you can walk through it. Just for one example, what you mean, if you look at the data in system, in PO, and in GR, then it gives us clear understanding of what is happening.
+
+Patel, Rahul:
+If you can send it over email, that would be great. We don't need to wait till Tuesday. If you think you have this information available for one or two materials, then yeah.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+And then we can take Vignesh's help to understand better in SAP if we need his support.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+If you want, I can show now.
+
+Patel, Rahul:
+Yeah, if it is available, yeah, let's use this.
+
+UNKNOWN_SPEAKER:
+13 minutes to look at it.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+And we will be later. Yeah, you can answer that.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So, let's go ahead and get started. So, that is what we will do.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+One second, I got the example.
+
+UNKNOWN_SPEAKER:
+And then you would. What?
+
+UNKNOWN_SPEAKER:
+share my screen. Yes. Yeah. So this is the material number.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So I'm on zero three. So this particular item we ordered in food and so there are 5000 footage is photo order quantity and the define the like,
+
+Patel, Rahul:
+What's the base unit of measurement for this? Yeah, this is just the one conversion here.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+We put C1 joined equal to 44 foot.
+
+Patel, Rahul:
+OK, and the base unit of measurement is foot only.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, it's a foot.
+
+Patel, Rahul:
+OK, can you go back to the main? Yeah, that's what I was looking at. So base unit is joint and then you converted joint to foot and the PO you have on foot.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, PO on foot.
+
+Patel, Rahul:
+Can you go to the procurement view of this material? In the same material master, you are seeing purchase order. In the material master, there is a procurement view, purchasing view. If you go to the purchase Okay, so there is something generally it uses ordering unit. So what companies normally do is that base unit is joined and next to the base unit there is generally called ordering unit, which is the purchase order unit.
+
+ If you maintain this as something which has like food, then by default the PO will always get created on food, which you have not mentioned, which means this is part of the source list because it's in PO, right?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yes, in the PO. And here you can see the batch management tick. So this is under the batch management. And so that's the reason so the why what we understand so there was a dynamic conversion factor so that we have seen the 42 isn't it in the beginning see now the 5487 so I will go to mb51 you can go into the directly from the PLA okay show it from yeah now the mb51 we receive now the this the unit of entry 289.329 this is the footage and it is converted to 7.
+
+
+
+UNKNOWN_SPEAKER:
+7 joins. It is feet only right?
+
+Patel, Rahul:
+This is feet, unit of entry.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay, unit of entry is feet.
+
+Patel, Rahul:
+So essentially what happens in SAP and you can correct me if I'm wrong here. So you have base unit of measurement is joined. So when it comes to IDP your BOM will be on joint. Your forecasting will be on joint. The demand will be on joint. When you raise the purchase order, the purchase order will be created on foot, right? The vendor will supply in feet, FT. And then when you make the GR, what happens in SAP is the GR is invented always in basement of measurement.
+
+ So it will always convert automatically foot to joint. So that's why when you do the GR, the GR will be in basement of measurement, which is joint. You'll see the inventory again in joint.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Patel, Rahul:
+So this is how, Hector correct me if I'm wrong, this is the same will happen in IBP as well, right?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Maybe only the difference here, whenever you order, if you look at on the PO, the PO it is, for example, this many joints, sorry, this many food. Food, yeah. And it will divide by 42. This is the only conversion factor we have.
+
+Patel, Rahul:
+Because that conversion factor will be taken in IPP. So if you go to Mertelmaster, the alternative of measurement conversion factor 42 is mentioned there, right? Yeah, it is there. So this data would be extracted in IPP. Yeah, OK.
+
+Hector Palacios (ADNOC Group D&CS):
+That's it. So maybe we can do all the conversions. What we need to be clear, Rahul, is when we go back to S4HANA and we send for the PO creation, then we need to know what is the unit to measure for that.
+
+Patel, Rahul:
+Yes. That's something we discussed with Vignesh, should be part of the source purchase info record. Because what happens in AdNoc is every time the PO is created, it updates the details from the PO into the purchase info record. And that info record, you will have the unit of measurement, which is the PO unit of measurement.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So we know that upfront, when we are triggering the PR from IP, Not only trading the PR, even while calculating the quantity for the PR, you know outstanding people so that that conversion also you need to apply. You know when you when you decide in the demand how much to be ordered, OK?
+
+Patel, Rahul:
+So that would be in a feed joint based as per the base in cost measurement. So when we are showing inventory in supply planning, it should be in the feed which is purchasing unit.
+
+UNKNOWN_SPEAKER:
+That's what you're saying.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+I know yeah, you know the all the quantity in the demand it will be in joint. Yes, correct. So all the demand in joint whenever you look in the PO it will be in foot.
+
+Patel, Rahul:
+Yeah but when you look at the PO, PO is when you don't have inventory but if you have inventory the inventory will also be in joint. So you have demand of 10 joint and the inventory will be of 10 joint. So if you have demand of 20 joint and the inventory is 10 joint then the PO would be raised for 10 joint converted to feed quantity. OK, that is one thing.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So for example, my forecast is 20. I have 10 and also I have OK, I have 10 on ground. OK, and also there is outstanding people where the quantity is 15. Even that is 15 years will be in the feed. OK, so that also you need to convert and then decide on how much to be ordered.
+
+Patel, Rahul:
+That is what I'm trying to mention. Yeah, so so that's what so you're seeing that whenever we're doing planning, the planning should happen on the consistent unit across so that it does not confuse that. OK, one is on the other isn't fit, correct?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, yeah, yeah, that's correct. So you need to apply the conversion factor also during this calculation.
+
+Patel, Rahul:
+That is what I'm trying to do. So this conversion factor is available in IP. And the same would be applied. Okay, this point is clear. So, Abdul if you want you can also put this remark in the BPD so that this gets documented and we'll confirm you there as well.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay, and here only thing why the Accenture they put like this We want like joint to rounded to zero always. OK, this is the solution they provided. That's the reason we put it as a batch and again, this will be now if you look at the conversion for conversion upgrade here, for example, so 289.29. Divide by 44. Divided by 7, isn't it?
+
+Patel, Rahul:
+44 right? OK, so if you divide by 44 you will get maybe less than 7 exactly, but then you're rounding it to 7.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, now see this is how the the tricky they put it here. For example, so the conversion factor is considering based on these two input combination 7 and 289.2.
+
+Patel, Rahul:
+Let's take an example if you have requirement in joints at 10 joint. So when you raise the PO, 10 joint will get converted to 44 feet, right? Yeah, exactly. So the PO will be raised for 44 feet. Now when you receive material against 44 feet, 10 joint is equal to 440 feet, right? Not 44, 440 feet. So when you receive material, so from an IBP side, I don't feel it will impact anything because the conversion which is happening is happening in the enhancement what you've done is done in SV.
+
+ S4 HANA and if we are referring the inventory from S4 HANA, it would be in feed, joint sorry, so that way it will give you the right, so whatever logic you applied in S4 HANA would be input to IBP, which means if the inventory, once the GR is created, we will use the inventory which is there in S4 HANA for our calculation only.
+
+UNKNOWN_SPEAKER:
+Exactly, clear.
+
+Patel, Rahul:
+Hector, you are lying here. Ian, do you have any question here?
+
+Hector Palacios (ADNOC Group D&CS):
+Sorry, Rahul, I wasn't completely following. But if it's related to nature, yes.
+
+UNKNOWN_SPEAKER:
+OK, then do we have any other question?
+
+Patel, Rahul:
+Because we've concluded our meeting time is already over. So let's summarize. We've discussed upon the demand the bill of material logic and the different completion codes. AdNoc team will give us a few well-planned information with all the completion codes so that we can refer to it. This can be provided immediately by AdNoc team. On top of it, AdNoc team will provide the sample bill of materials for all the different categories we've discussed in next week.
+
+ Project team will We will review internally the proposed solution today on manually inputting the completion codes, different completion codes directly in IBP, which is not in DBS system. And based upon that, confirm whether we'll be able to get a demand. We will also simulate the SAP BOM based upon the data which will be provided so that we can define BOM and see how the BOM can be incorporated in IBP from S4 HANA.
+
+ We agreed that the AdNoc team will look at the document. We will explain the supply planning process on high level, and AdNoc team would look at the documentation, supply plan documentation, and by end of Monday, they will get back to us. They will ensure that all the feedback is provided so that if there is any additional discussion required in the Tuesday's call, we can further review the open point for supply planning.
+
+ In the Tuesday's meeting, we will also align with Mohammed Asif on processes related to his AGC so that overall from a process perspective we are completely aligned and we don't end up creating multiple processes. Okay, any other point we discussed or missed? I've missed to summarize.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Everyone aligned here?
+
+Patel, Rahul:
+Yeah, that's okay. Okay, just one more thing, Jaganath. We are reviewing the time supply planning document based on your feedback. We'll get back to you. Maybe we'll probably book a 15, 20 minutes time tomorrow with you just to understand it further. We are reviewing it internally, but we'll get back to you tomorrow if possible. OK, fine. Thank you. OK, then, team, thank you very much for today's time.
+
+ Have a nice day.
+
+Hector Palacios (ADNOC Group D&CS):
+Thank you.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Thank you.
+
