@@ -1,0 +1,197 @@
+Nishant Keloth (Borouge):
+Yeah, hi Nishant.
+
+UNKNOWN_SPEAKER:
+Good morning.
+
+Nishant Keloth (Borouge):
+Morning guys. Yeah, hi.
+
+UNKNOWN_SPEAKER:
+Morning, Anandha. Good morning, Anandha.
+
+Nishant Keloth (Borouge):
+Anandha, that group ticket is still in fulfillment. I've been trying to reach out, but I think nobody's responding. Strange. I mean, try calling that number, Nishant.
+
+Anandha Krishnan (Borouge):
+Sometimes, I mean, it's not the way it's supposed to, like, you know, you're expecting them to pick up and do it, right?
+
+ROSSI, PAOLA:
+it's over this hello everyone good morning good morning fine I'm just going to the office but and now I mean I cannot see the desktop but I will listen of course course.
+
+UNKNOWN_SPEAKER:
+you you Yes, sir. Yes.
+
+Nishant Keloth (Borouge):
+No, let me call him first and see what the situation is.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Nishant Keloth (Borouge):
+Oh, Olavan Procurement? Oh, my God! He's not the right guy. Olavan? Olavan Baira?
+
+UNKNOWN_SPEAKER:
+Okay, then.
+
+Nishant Keloth (Borouge):
+I'll ask him later. Okay, bye.
+
+UNKNOWN_SPEAKER:
+I think, Nishant, shall we start? Because Khalid, I think he's on another call. OK, we can start.
+
+Nishant Keloth (Borouge):
+See, I just have one update from my side that we are still struggling with that group ticket. It is in approval. I tried reaching those guys, but I think nobody is picking up. So now we can see some action on Monday. For the file property you're saying, right? Yeah, yeah, that is that the group has to be this thing now. Other than that, I don't have any updates.
+
+Kunal Sheth (ADNOC Group D&CS):
+OK, OK. And for the Buruj, I was able to access when I tried, so maybe they have whitelisted my IP. I'm not sure.
+
+Nishant Keloth (Borouge):
+No, then I think it's yours is yours is whitelisted. Whitelisted but or by some chance you picked up the same IP which was released that time I don't know if you can try multiple times yeah actually day before yesterday also it is working and right now it is also
+
+Kunal Sheth (ADNOC Group D&CS):
+working perfect then I think then I think you should ask others also to test yeah Sagar and Rahul has already tested but they are facing the same issue it's working for you great okay next time when you log in
+
+Nishant Keloth (Borouge):
+just check what is the IP that that's coming out when when you when you see in the IP config we'll just see it no no it is also different which I share with you oh you already said that yeah
+
+Kunal Sheth (ADNOC Group D&CS):
+yeah still it I don't know why.
+
+Nishant Keloth (Borouge):
+Anandha, do you have any idea?
+
+Anandha Krishnan (Borouge):
+Not not sure. I don't know, probably unless and until Kunal did something in background because you know we cannot ascertain right. At least if we have an official confirmation from them stating that the ticket has been completed tomorrow, if there is any issues we can go back with Guys, it was working before. Now it's not working now without the fulfillment. If it is working, I cannot take it as a closure also.
+
+
+
+Nishant Keloth (Borouge):
+Oh yeah. I got it, no problem. So let's wait until but but you have one ID working now, right? Kunal, that should be.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, yeah, yeah, my ID is working so I I've told Sagar if you want to perform any activity, especially on booze, you can use my system. Yeah, on Teams call. So Nishant, that is one part related to the scoping of the Buruj. So we presume it is only one plant, right?
+
+Nishant Keloth (Borouge):
+3700. 3700, and I think that was updated. And I think Innovation Center also is part of it. But the main one is 7000 only. In future, we are expecting 7300, which is Buruj 4, that the plant is under commissioning now. So by the end of the last quarter of December, that should be up.
+
+Kunal Sheth (ADNOC Group D&CS):
+But that is also coming up. OK, OK.
+
+Nishant Keloth (Borouge):
+But for the IBP scoping, it is only a single plant. I have to start again. Because there are Abu Dhabi based plans, I mean the 700 and there is one more innovation center that also is part of the scope. But but yeah, I will. I will check with business and I'll come back again.
+
+Kunal Sheth (ADNOC Group D&CS):
+Sure, sure, sure.
+
+Nishant Keloth (Borouge):
+So if you currently for your testing purpose you can use 3700 because that's where 95% more than that the materials are.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Kunal Sheth (ADNOC Group D&CS):
+And I think for the SDD part, we have sent an email to Paula and SAP team to work on the security aspects which risk and compliance team has raised.
+
+ROSSI, PAOLA:
+Yes, and let me comment that I was sending an email I think yesterday to all of you after different SAP internal call and I was going to ask your feedback about that email because SNC can be certificate based. So I was waiting for having a feedback from your security team about my last email if you can double check to understand what is the their feedback would be good so we are not losing too much time if that kind of connection is accessible and I was also sending in the same email some SAP official documentation on how to set up it.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+Okay okay so you are saying the connection between DSA agent and S4 HANA can be certificate based also right exactly right but internally it is using RFC protocol so that is the point which was raised by Senthames last time so is it fine to go with SS and see with certificate based I mean can be it can be possible depends on your requirement.
+
+ROSSI, PAOLA:
+Most of our customers are only using RFC but if you require an additional security level you can enhance it. So let me know what your security team is thinking about that and would like to implement. So if there are additional concerns we can go over a call with the security expert team again. OK. OK. Yeah, yeah, sure.
+
+Kunal Sheth (ADNOC Group D&CS):
+So let me align with Sagar and Rinaldo. OK. That the setup is really feasible certificate-based enablement between these two systems. And if it is fine, and it is also approved by Sentamis, then we are fine with that part.
+
+ROSSI, PAOLA:
+Yes okay I mean I'm also curious to understand how it is happening for other FHP products you have in your landscape are you using RFC or are you already using SNC I mean I don't imagine I cannot imagine we are the first, sorry for the noise, I cannot imagine we are the first project having these questions. Right.
+
+Kunal Sheth (ADNOC Group D&CS):
+Anandha, can you be able to answer on this? Are we using RFC in any of our architectures?
+
+Kunal Sheth (ADNOC Group D&CS):
+or we are using SNC as a medium for communication between two systems. I think today we are not complete. So maybe I think, Anandha, you or Kaiser have a better understanding of the ad-hoc architecture.
+
+UNKNOWN_SPEAKER:
+Sorry, Kunal.
+
+Anandha Krishnan (Borouge):
+What was the ask here again? No, no.
+
+Kunal Sheth (ADNOC Group D&CS):
+Paola is asking that are we using SNC-based communication between two systems in the existing ad-hoc architecture.
+
+Anandha Krishnan (Borouge):
+When you mean between two systems like you know which system are we referring to? You're talking about...
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, currently in the IVP architecture what we have done is between DSA agent and the S4 HANA we have mentioned SNC and RFC as a protocol to communicate but that was the point raised by Santanis from risk and compliance team that inherently not secure so that's why currently Paola and team is currently working on what are the best way to make it secure so that's why she is asking that are we using this communication protocol in between the
+
+Anandha Krishnan (Borouge):
+landscape or you are still using RFC in most of your landscape between yeah between SAP systems I mean for instance it is RFC connections or that is pretty much true. I think the question from Senthamil is not between the DSA and SAP, but I think it was between CADS and DSA agent. If I am not wrong, that is what. It is not between internal SAP systems Kunal. He was referring to you know the the CIDS which is a cloud component and the DSA which is in our network or on-premise so that's where the question from Senthamil was no that was already certificated based so for that Senthamil don't have any issue between CIDS and DSA okay in that case internally it shouldn't be a problem because you know either way it is I mean for example today if you talking about you know let us say for instance BW4HANA and S4HANA pretty much it's between RFC connections only right it's not based on any certificate based it will not work that way yeah exactly okay so let's say we have also another possibility to add another security level
+
+ROSSI, PAOLA:
+must if you have already in the landscape RFC connect A few RFC is also fine. So let's wait for the security team feedback about that, and we will see.
+
+Kunal Sheth (ADNOC Group D&CS):
+OK? Yeah, yeah, sure. So Paula here, let me share my screen.
+
+UNKNOWN_SPEAKER:
+Yes. Hope you can see my screen, right?
+
+ROSSI, PAOLA:
+it has very small maybe another question can you send to me also the sdd draft because I don't have it okay sure let me share with you on email yes Kunal the sdd draft and the other day also we
+
+Anandha Krishnan (Borouge):
+had a meeting to discuss about runbook I mean it's not the runbook but the configuration steps or guide or whatever it is right yeah we haven't received any of those informations yet actually runbook was not a part of deliverables so now it's just to review like you know I understand you know these are the activities that we need to take care right as part of the project we need to perform some of these activities and it's it's good if we have hands here that makes it sense sure sure I'll share the draft version.
+
+
+
+ROSSI, PAOLA:
+Yeah, for me, just to understand, runbook, what do you mean exactly with that kind of document for me to understand? It's the manual, let me say, when the project will be live, which activities are needed weekly or regularly on the system.
+
+Kunal Sheth (ADNOC Group D&CS):
+Runbook is more of a step-by-step guide the integration activity between IBP and S4 HANA. It is more of a configuration steps which we have captured here and what are the steps we need to consider let's say if you would like to do the connection between CIDS and DSA then what are the steps which we need to perform like between IBP and DSA we need to install the certificate digital certificate would be required.
+
+ So answer to your Anandha's point, between CIDS and DSA, it is already a certificated base. So that is not an issue, which was raised by Santamys. Between DSA and S4HANA, here you can see RFC and secure network connection, where he has raised his point. And if you go to the below section, in the communication, he is mainly concerned on this three and four point. Technology we are using RFC, which is not secure based, and SAP gateway we are using.
+
+
+
+Anandha Krishnan (Borouge):
+Now, see here, I will give my two cents. But I mean, I don't, at least as of now, I don't directly have access to this team. Rfc can be you know based on authentication like basic authentication inside the rfc you can maintain the user id and password or you can make the rfc based on secure network connection if you are making it as a basic authentication over network passwords are shared but if you are making it as an snc the passwords will not be shared and by doing so it is already being secured that's my top process and and right now if you see between systems to systems then it is obviously you know there are a lot of systems that are RFC connections for example between Fiori and S4HANA Fiori is not embedded it is an standalone Fiori system and it's pretty much RFC based connection or if you take S4HANA and BW4HANA or S4HANA and GRC so all these are you know pretty much RFC based connection so We could, I mean, when you're talking to them, you could very well, you know, challenge it.
+
+ And it makes sense in the sense, you know, like Sunderbill, he's not probably from SAP background. So, you know, I also say like, if we could kind of give them what is currently in place and based on it, we can make them align or agree.
+
+ROSSI, PAOLA:
+yeah right now you know because for me it's fine everything it's just that I don't want to lose time on not losing time but you know we are already very tied with the schedule of the project so if it's needed we have this possibility and you can configure if not because you're already using rfsc in most of your landscape Why we should start with AIBP? Anyway, I mean. It's fine for me both. Both option you want to use the chart.
+
+ OK, thank you. Yeah, yeah, right, right?
+
+UNKNOWN_SPEAKER:
+Yeah, so.
+
+Kunal Sheth (ADNOC Group D&CS):
+Apologies, I have to drop.
+
+Anandha Krishnan (Borouge):
+So what you can do is you can just take it up directly with Kaiser because Kaiser can. He knows right like he's the best person and if you can check up a call with sendable and tell like you know it is an internally you know it is pretty much within our network I'm sure forget about SAP even non-SAP applications you know between oracle or any other database for that matter that we are hosting at this point in time not everything is SNC you know it is RFC based communications that's already ongoing so they shouldn't be so much emphasizing on it it is it is super to have future it's not like you know it's must to have for us to go ahead with this project that's my thought yeah yeah I completely agree with you Anandha
+
+Kunal Sheth (ADNOC Group D&CS):
+and I think we forget to invite you in that call which we were having with sap same time is and the entire group so I think you you must have also put up your thoughts okay so apologies you know
+
+Anandha Krishnan (Borouge):
+I had to drop okay I'll get back to you guys okay thank you sure sure thanks thanks thank you thank you thank you paulo yeah Thank you.
+
+Kunal Sheth (ADNOC Group D&CS):
+Have a nice day.
+
+UNKNOWN_SPEAKER:
+Bye. Bye.
+
+Kunal Sheth (ADNOC Group D&CS):
+Thank you.
+
