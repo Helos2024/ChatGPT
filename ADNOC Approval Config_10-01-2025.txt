@@ -1,0 +1,572 @@
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Qué tal, Saúl?
+
+UNKNOWN_SPEAKER:
+¿Cómo estás?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Bien, estoy llegando a la oficina con Pelayo y con Pablo.
+
+UNKNOWN_SPEAKER:
+¿Qué tal se llama?
+
+Fiamma Giorgi:
+Hola, chicos.
+
+UNKNOWN_SPEAKER:
+¿Cómo están? Hola, Pelayo. Hola, Pablo. Hola.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Entonces quería... Ya viernes, queda poquito. Quería mostrarles un tema, una configuración que preparé para el tema de los approvals. Y estoy seguro, bueno, es una configuración inicial y estoy seguro que ustedes van a poder mejorarla, al menos que se vea más bonita. ¿Ya?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Entonces, de momento. Ya, tenemos transport receipt. Después, el transport receipt se va a convertir a través de un operador de copia en purchase plan. ¿Ya? Y este es el purchase plan final, que es simplemente una fórmula. Dice si este es uno entonces tomo el purchase plan y si no es uno me quedo nulo ya pero yo cambié el formato para poder ponerlo como ticket o cruz si pongo así cero acá me queda una cruz y si pongo uno se pone uno acá y eso es lo primero que usted puede mejorar porque fíjate que no está centrado y no puede centrar estos símbolos Bueno, no tiene que ser necesariamente estos símbolos.
+
+
+
+Saul Portillo:
+Bueno, y ahí queda dos. ¿Eso lo hiciste, Basti, en la parte donde modificas la estructura del keyframe? ¿No? ¿En la parte de ahí de...? ¿De formato? No, en formato, en View Formats.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, acá, pero no me quedó. No sé cómo centrar este icono. Pero es algo que sí pueden investigar. Yo creo que se puede. Pero más allá de eso, que es un detalle que podemos ir corrigiendo con el tiempo, lo importante es para Cakey Figures, vamos a hacer esto.
+
+Conference Room (Bastian Osorio) - Speaker 4:
+Aprobar, ok.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Entonces el Purchase Plan tiene que ir, ¿cierto? Antes de saltar a eso, ya, entonces esto es el Keyfigure, este es el Output, ¿cierto? Bueno, si el, digamos, el primer nivel del Planner, si está de acuerdo, va a copiarlo y lo va a dejar acá. Y después viene el segundo nivel de aprobación, que va a ser el que pone los 1 o 0, ¿ya? Pero ya este te lo apruebo y este no. Pero al otro mes, Si éste cambia, no puede quedar aprobado por defecto.
+
+ Entonces, al otro mes se reinicia el proceso de planificación o al otro cuárter cuando sea. Entonces, hay que borrar o usar un operador de copia, ¿para qué? Para borrar los approvals, ¿cierto? Entonces, eso sería. O sea, hacer esto configure, pero con el inicio del proceso de planificación se elimina este aproval. Primero habría que guardar una copia de este, tanto de este como de este. Un snapshot.
+
+ ¿Por qué? Para ver qué se propuso y qué se aprobó. Y después, una vez que guardé los snapshots, Yo ilumino este, y ahí me queda todo, se reinicia el proceso.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+Pero, una pregunta con el que figura. La idea de esta prueba, porque aquí lo estás haciendo, evidentemente es un código, pero hay millones de códigos. La idea es que vayan código por código, qué sucede si no hacen esta prueba y no queda, si no hacen esta de poner 0 o 1 y vayan a la aprobación y no, o sea, se salten este paso y
+
+Conference Room (Bastian Osorio) - Speaker 1:
+finalmente no van a tener un Purchase Plan Final. En este caso, es buena pregunta, ¿por qué? Porque igual se puede hacer a nivel agregado. Si yo elimino acá el producto, ya por dar un ejemplo, elimino acá la ubicación.
+
+Saul Portillo:
+Te va a salir igual de vídeo. Sí, es un ejemplo más.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Igual puedo yo aprobar ya la cantidad completa puesta. Es que no sé qué tengo. Bueno, no hay ningún creo. Ah, sí, acá hay uno. Que tengo que hacer la copia acá. Pero la idea es que ellos lo puedan hacer al nivel que les plazca, que les sea más conveniente.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero una vez que se libera el plan, yo tengo que eliminar esto. Lo único que vamos a integrar son las cantidades superiores a cero. ¿Cierto? Y ahí yo aprobo esta, aprobo esta, aprobo esta, aprobo esta y esta no. Bueno, le estoy poniendo cero, pero en realidad lo podría hacer así. Igual vale. Yo creo que funciona bien igual, y se ve bien. Habría que centrar este, pero más allá de eso. Eso ya es carpintería, pero si se ve bien.
+
+ Y ahí con negrito ah ya fue aprobado entonces serían lo que nos faltaría ahora es definir para qué keyfigures tendría habría que implementar esto bueno el purchase plan está listo aunque no sé si el nivel está correcto déjame ver el nivel es que es transport receipts no sé si es transport supply desde suplier eso no estoy seguro que vamos a integrar entonces déjame confirmarlo si es transport sería el transport supply porque en este caso es este es el igual transport receipt land receipt o ambos pero bueno eso que se lo confirmo yo de este me encargo yo entonces los otros que sería Sería definitivamente el...
+
+ El...
+
+UNKNOWN_SPEAKER:
+el inventario de seguridad.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y el Forecast. Claro, SafetyStore y Forecast. Yo creo que esos dos por ahora.
+
+Saul Portillo:
+¿Y el ReorderPoint?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Claro, es que, claro, el inventario de seguridad más recibe el ReorderPoint, sorry.
+
+UNKNOWN_SPEAKER:
+Ah, ya, ya. Entonces sería...
+
+Saul Portillo:
+Sería como tú dices, un keyfigure que copie el resultado final, después un keyfigure que apruebe y después un keyfigure que me diga si aprobó, mantiene el valor del resultado final que está en la copia y si no, Lo he
+
+UNKNOWN_SPEAKER:
+dejado vacío.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Este es el reorder point, digamos el reorder point IVP. Después vendría, y creo que este ya existe, bueno, este ya existe, después viene el reorder point adjusted.
+
+UNKNOWN_SPEAKER:
+Sí, ese existe.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y después yo pondría simplemente el final, que es IF, el típico IF, ¿cierto?
+
+Saul Portillo:
+Correcto.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Si, sustituyendo o el ajustado por el canal, en caso de que tenga.
+
+UNKNOWN_SPEAKER:
+Después...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Y a la copia? No, la copia acá no haría falta porque... ¿Se lo vea una vez el final?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Approval, que es el 1, el 0. Y después, este mismo, Approve. ¿Cierto? Que tendríamos, por ejemplo, no sé, 50, 40, 40, 40.
+
+Saul Portillo:
+Y pregunto, ¿cómo lo ves, cómo lo estás pensando en el hecho de que, por ejemplo, no lo prueba? Si no lo prueba, entiendo que no lo está probando porque el valor que está viendo de 35 no le parece. Entonces, ¿qué debería hacer el usuario? ¿Volver atrás y ajustar? ¿Pasaría ahí el procedimiento?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yo creo que acá lo que podríamos hacer una alerta que no ha sido aprobado. Es buena, buena, buena idea, Saul. Por qué? Pero por ahora dejémoslo hasta acá. La configuración no avancemos en eso, pero podría ser que si éste no es cero. O sea que si éste es cero o bueno, si no es uno, se levanta una alerta de decir oye, mira, tiene esta esta alerta pendiente. O sea, esta aprobación es pendiente. Si no está aprobado, bueno, tendría, le va a decir al al planer, oye, revísalo.
+
+ Efecto. Pero el tema del río del point es que. Y acá yo tengo es la mayor duda de que. El río después es un punto dado, no va a cambiar en el tiempo, entonces es un puro valor.
+
+Conference Room (Bastian Osorio) - Speaker 4:
+Correcto.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No sé cuál sería ¿Cómo sería la idea aprobarlo? Porque en el fondo eso, o sea, o aprueba o no aprueba el 40. Este 40 obviamente se va a replicar, es el futuro. Pero da lo mismo, si es 40, no. O sea, si es 40 en enero ahora, o es 40 en diciembre del 2025, da lo mismo. O sea, tengo que aprobar un puro número. Entonces, ¿cómo, digamos, usando esta idea, expandirla? Digamos, reciclarla de modo de que en este caso sea un puro 1-0.
+
+ ¿Me explico? Que no sea un 1-0 a través del tiempo. Oye, si te encierro.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Deme un minuto. Vuelvo inmediato. No reconozco todo lo que ha dicho él. Ya, no sé. Es un amigo de mi colega. O eso, o me están vacilando a mí. Bueno, pero el día 2 es muy tímido y definitivo. All the adventures were accompanied by audiovisual format that was used in that video. O sea, claro, tú entraste con ese tipo de idea. Sí. ¿Y qué estalló creciendo en cuatro años en ese video? Luego, medio, no sé qué.
+
+ Otro medio en casa de padres. Que es lo más importante para mí. Y, bueno, yo creo que eso es todo. Que se me había que ir, justo me la dieron y me dijeron que no. Yo también, nunca, no la sé ver nunca. Sí, la han vuelto a ver.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+se hace cuando se hace ya volví entonces no sé si se te ocurre algo iba a hacer una pregunta también podríamos pensar No, no, porque estaba pensando en...
+
+Saul Portillo:
+A mí me preocupa el hecho de que no llenen el 1, el 0, por el hecho de que el usuario no ingrese y no lo haga, ¿no? Porque normalmente cuando nosotros configuramos estos de ajustes, les damos, si es vacío, mantenme el valor anterior. No es como que si no tengo ningún ajuste, igual sigo teniendo mi forecast. Más o menos estoy pensando en el tema de aprobaciones. O sea, que en caso de que sean lo que tengan que revisar...
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y en ese caso, si es que yo no, no podríamos hacerlo al revés. Que el 1 sea el rechazo. Si lo dejan vacío, toma 40 y si toma 1.
+
+UNKNOWN_SPEAKER:
+Se anuló.
+
+Saul Portillo:
+Claro que se ha aprobado, que sea siempre aprobado, si no, si no ha sido claro.
+
+UNKNOWN_SPEAKER:
+Ya, ya.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero eso lo podemos ver ya con ello durante las pruebas.
+
+Conference Room (Bastian Osorio) - Speaker 4:
+O sea, por ahora no... ¿No te complicarías con eso?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿No te complicarías con eso ahorita? Lo pondría en el script confirmación de lógica. Ok. Pero finalmente a gusto del consumidor.
+
+UNKNOWN_SPEAKER:
+O sea...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero creo que tiene razón igual. Porque si no se aprueba, queda parado todo el...
+
+UNKNOWN_SPEAKER:
+proceso.
+
+Saul Portillo:
+Y lo que tú dices de replicar, hay que verlo, porque si tú hicieras un nivel granular alto, o sea nivel año, pero los números que vas a ver lo vas a ver a nivel año, entonces en el caso de Reverber Points va a ser lo mismo, pero en el caso de...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+lo que tú dices, que aprueben el mes en curso y no tengan que estar colocando ese uno o ese cero en todo el periodo de tiempo. Lo que estoy pensando, no sé cómo, pero podría ser algo así como que éste, si éste es uno, como que esto haga como así.
+
+Saul Portillo:
+Sí, es una copia nivel o algo así por el estilo.
+
+UNKNOWN_SPEAKER:
+¿Te entiendes?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Claro, pero para eso, ¿a qué nivel tendría que estar? Como desde el periodo presente hacia adelante, ¿me entiendes? Sí, sí. Si quieres igual déjame y lo pensamos.
+
+Saul Portillo:
+Bueno, Octavio no consumí ahorita mucho tiempo, pero ya me dices, o sea, me das la idea y ahí le damos la vuelta hacia mí y yo en cómo lo configuramos.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Qué te parece? Si sería como el forecast si varía, este sería más directo.
+
+Conference Room (Bastian Osorio) - Speaker 4:
+El forecast sería esta misma lógica, ¿cierto?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+O sea, statistical forecast voy a llamarle, pero bueno, statistical forecast por cien.
+
+Saul Portillo:
+A gustado, después el final. Y listo. Pero como tú dices, está igual, la misma lógica de...
+
+UNKNOWN_SPEAKER:
+Approve. Aproval.
+
+Saul Portillo:
+Y el tercero final.
+
+UNKNOWN_SPEAKER:
+Perfecto. Ya casi tenemos cuantos casos, a ver... El otro sería... Bueno, en realidad son cuatro casos nomás.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+El primer caso. Después el segundo caso es que te lo re... No, te lo cero. Nada. Y el otro caso sería que...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+y este te lo rechazan. Dos por dos. Colaboración, aprobado, rechazado. No colaboración, aprobado, ¿Entienden usted?
+
+UNKNOWN_SPEAKER:
+Es para la aprobación de...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Bueno, ahí se lo explico un poco. El otro tema que quería ver ahora que estábamos acá es que estuvimos trabajando, bueno, no te tocamos la información, no nos tocamos la información por si acaso, Sé que trabajaron harto en ella, pero intentamos... Bueno, como ayer Sagar cargó información, intentamos correr un forecast automation con la información que cargó Sagar, pero no fue posible. ¿Por qué? Porque no se puede correr forecast automation en una versión que no sea la base.
+
+ Entonces, ¿qué hicimos? Tomamos la información y la cargamos cargamos en el actual quantity que usted entiende que no está usando, ¿cierto?
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y después generamos el forecast para statistical forecast quantity que tampoco está siendo usado. No está en el 4CM, es statistical forecast quantity, no.
+
+Saul Portillo:
+OK.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, ese no lo estamos usando, sí. Entonces, ahí empezamos a jugar un poquito con los datos. Y en realidad, bueno, ¿cuántos productos tenemos acá? Del millón de producto que cargó, tan solo 36 tienen claro, tienen claro, ah no, intermitente o continuo insuficiencia nueva, fuera y vacío no ¿Mensuales? Mensual, claro. Producto, ubicación, tenemos una pura ubicación, 2101, mes.
+
+Saul Portillo:
+¿Y cuántos mínimos de puntos te pusieron para que no fuera insuficiente? ¿Por defecto cuánto trae?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Creo que el defecto son tres.
+
+Saul Portillo:
+Por defecto son cinco, me parece.
+
+UNKNOWN_SPEAKER:
+¿En qué unidad de medida lo están haciendo, Basti?
+
+Saul Portillo:
+Ea, each, pero cargamos la each, nosotros.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Porque tenemos, después de lo que fuimos cargando ahí de todo, O sea, no es solamente... No, nosotros cargamos todo con EA. Ah, perfecto. Perfecto.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Saul Portillo:
+Pero, a pesar de eso, sabes que yo no veo tan mala la data.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Porque... O sea, lo que pensábamos con Nektor... De que no se iba a poder hacer forecast para ningún producto. O sea, que todos los productos iban a tener insufficient data. Pero... Teniendo en consideración... Que tenemos data solamente para una ubicación, igual hay algunos productos que tienen data. Y esto es desde sandbox. En 2024 casi no hay información, por lo que yo asumo que falta data obviamente en ese sistema.
+
+
+
+Saul Portillo:
+De hecho, nosotros hemos podido realizar 4K de la forma en que nos entregan son forcas de un valor fijo que varía en el tiempo por la frecuencia de consumo. Si hemos tenido valores, pero el sistema te busca como una especie de promedio o valor promedio que determina la frecuencia promedio entre que hace los consumos y entonces te pega un forcas de esa manera. Es más o menos lo que hemos visto en los datos.
+
+ ¿En qué atributos están colocando el patrón? Porque ese creo que sí puede que nos esté, para tenerlo en consideración, afectando los resultados nuestros.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, creo que sí. ¿Pero ahí el tuyo lo puedes pisar?
+
+Saul Portillo:
+Sí, sí, correcto. Pero para, digamos, correrlo después que estés terminando la prueba.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, sí, ya terminamos, así que no...
+
+UNKNOWN_SPEAKER:
+que lo puedes pisar. Ok.
+
+Saul Portillo:
+Basti, nosotros queríamos revisar contigo, más que revisar, discutir el tema de las snapshots.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No sé por qué me estás diciendo... ¿Tú estás conectado? Ah, sí, estaba conectado a la otra. El tema de la aprobación lo tengo allá.
+
+Saul Portillo:
+Hola Sebasti, queríamos discutir contigo el tema de los Snapchat. Pues tenemos una propuesta. Dame un momento, déjame refrescar.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+ya y dejamos simplemente para que vean un poco la data, entonces aquí la pueden ver La verdad. Y este que es todo intermitente, casi todo intermitente para este por ejemplo, si se puede hacer un forecast para esto yo creo que también, para estos dos aunque esto lo cueste lo tonto, mira que este me dice intermitente, como se dice en la IT y este intermitente y tienen la misma data Ah no, hay un puro dato que no es distinto.
+
+
+
+Saul Portillo:
+¿Pero será porque lo estás viendo a nivel año y como a nivel mes se está viendo eso a temporalidad?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Acá igual 20, igual se puede calcular algo. Este igual. Estos dos igual. Porque acuerdo de que los que tenían, los que tienen como menos de un consumo por año, hay unos que, los LOWs eran de 3 de consumo. En un consumo de los últimos tres a cinco años, o sea, este sería un slow mover.
+
+Saul Portillo:
+Ese es un slow mover, correcto.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Este, bueno, hay que ver qué pasa en el 2024, pero si en el 2024 tiene ventas, sería medium, porque tiene más de un consumo Y después superior a esto, superior a los tres consumos por año, ya es fast mover. O sea, este es fast mover. Claro, ya se puede hacer un forecast con eso, ¿cachai? O sea, ¿para qué hablar de estos, de todo esto?
+
+Saul Portillo:
+Es que lo que hemos visto, si lo hacen, lo que te digo, y lo que te hacen más o menos como ve la frecuencia de consumo y ve más o menos un valor promedio y te ejecuta un dato de forma intermitente, pero el mismo dato, el mismo valor, como decirte 20, 20, 20 y con la frecuencia de que se consume, no sé, cada cinco meses, cada seis meses, de esa forma. Y ese forecast para mí ya es bueno. Sí, sí. De hecho, eso es lo que hemos podido con eso después de terminar los valores de inventario.
+
+ Y tiene, digamos que tiene Tiene sentido lo que evidentemente no va a chuntar así tan exacto es que justamente el consumo lo haga en el mes que te lo está diciendo. O sea, puede que tenga se mueva algo y no la chunta. No, no, no, no la pegue. Pero el resto. Ahí sí, ahí evidentemente está complicado.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Si tiene un consumo por año. Por lo que sea bueno, por un consumo por año, por el promedio de las cantidades. O sea, si un consumo cada 12 meses. Claro, tenía el último durante los últimos 3 o 4 años. Ponle un consumo cada año. A mí eso debería ser capaz de hacer el sistema.
+
+UNKNOWN_SPEAKER:
+Está ahí.
+
+Saul Portillo:
+Ni más ni menos. Sí, correcto. Y si lo está haciendo.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Las pruebas que estamos, que estamos haciendo nosotros. Ya que me quería decir de los Nacho.
+
+Saul Portillo:
+Mira, Déjame proyectar tu momentito.
+
+UNKNOWN_SPEAKER:
+Sí, claro. Aquí tengo. Nosotros estábamos...
+
+Saul Portillo:
+Me acuerdo que Basti, hablando de este tema... Se ve mi pantalla, ¿verdad?
+
+UNKNOWN_SPEAKER:
+Sí. Ya.
+
+Saul Portillo:
+Hablando de este tema, veía... Tenemos dos maneras, la original Snapshot y la Slack Snapshot, ¿ok? El problema con el LAC de Snapchat es que al tener ese atributo del LAC, después cuando tú quieres hacer cualquier análisis de KPI con esas fotos que tomaste, tendrías que tener el otro Keyfigure también a nivel de LAC y poder hacer el KPI, lo cual yo siento que complica un poco la solución. ¿Y a nivel de request?
+
+ A nivel de request, claro, pero a nivel de request, ¿qué LAC te va a tomar porque recuerda que cuando tu tienes el tributo tienes que calcular, claro, no tendrías que ponerlo, claro, si tienes razón. Si, entonces yo estaba viendo lo siguiente, bueno aparte que esto lo estaba viendo con los chicos para explicar la forma de cómo es el original snapshot que lo hace como de esta forma, la de la escala de escalera y el lag snapshot que lo hace de esta manera, pero Basti estaba pensando si esto finalmente, porque con el tema de los lags de snapshot igual tienes que crear, digamos, keyfigures por cada lag, en cierta forma, lag 1, lag 2, lag 3, lag 4, y tienes que igual crear la cantidad de keyfigures por la cantidad de snapshots que vas a hacer.
+
+ ¿Qué opinas de hacer una lógica de lo mismo que hace IBP, pero no tenerlo tan rígido en un snapshot, sino hacerlo con keyfigures y que generemos un operador de copy que va a decirnos la secuencia con un job template? Y no tenemos un problema sino que tenemos los keyfigures denominados, que sería keyfigure1, keyfigure2, keyfigure3, por decirte algo, y cuando tú haces la copia, haces la copia de acá, suponte que esto es así, y generan la copia, esto para acá, esto para acá, y después tienen el nuevo valor, exacto.
+
+ Y nos eliminamos, y lo pienso por eliminarnos primero, este problema del lag, porque ya estos keyfigures estando a este nivel, nos permiten hacer cualquier KPI, ya sea con ventas, consumos, perdón, o con lo que sea. Cualquier KPI, con los distintos, las que tengamos, ¿no?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, yo no tengo problema, me parece bien, el único, o sea, sé que es trabajoso, que lleva hasta gotita y harto orden hacerlo, pero si se motivan, buena. Lo único que por ahora no hagan puro Skifigra a nivel request, porque no sabemos a qué nivel van a querer ellos medir nada. Entonces, mejor partir por lo simple y no empezar a configurar cosas muy sofisticadas que después puede ser que no sirvan. Así que sí, los snapshots sí, KPIs también sí, pero a nivel request, cosa de que si después dicen no, lo queremos a otro nivel, ya perfecto, pero ya tenemos al menos eso.
+
+
+
+Saul Portillo:
+Perfecto, perfecto. Y te lo imaginas los snapshots para lo mismo que estamos haciéndole el tema de la prueba, ¿no? O sea, te lo imaginas para el reorder point, Te lo imaginas para el forecast, no sé si el safety stock, pero más que todo eso, ¿no?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Partamos con esos dos y el purchase plan, pero tengo que bien definir a qué nivel, déjame confirmar a qué nivel hay que hacerlo. ¿Te puedo pedir la mochila que está allí, por favor?
+
+Saul Portillo:
+Perfecto, perfecto. Y ahí, Basti, también queríamos esto para comentarte que esto lo tenemos ya listo. Hicimos una configuración de calcular cuál es el, digamos, la segmentación por la frecuencia de consumo. Ya lo tenemos con un cálculo a través de los consumos utilizando la regla. Esta que está aquí, déjame buscarla. Utilizando la regla que tienen ellos.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Es fácil de ejecutar?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Me gustaría ver cómo queda.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Es automático. ¿Pero con puros keyfigures o hay que ejecutar un master data rule?
+
+Saul Portillo:
+No, lo único que hay que ejecutar después, el keyfigure todo lo calculas solo, lo único que tienes que ejecutar después para pegar el valor de si es F, M, S o N, es la segmentación, el ABC segmentation. ¿Y ya te quedó para los datos que tienes? Sí, ya está listo. A ver. Mírate, déjame... ¿Dónde es que tenemos la lógica? Perdí la lógica de cálculo...
+
+Fiamma Giorgi:
+Ahí lo tenés, lógica, cálculo, FMSN. Ah, mira, aquí.
+
+UNKNOWN_SPEAKER:
+Aquí está.
+
+Saul Portillo:
+Claro, estaba bien en la otra hoja. Aquí está. Puedo ponerlo en las napkins. Te explico rápido. Acá va a estar la lógica y lo vemos en IEP. Tenemos, digamos, los consumos. ¿verdad? De los 5 años, imagínate que cada año son, para no poner los 12 meses, es esto que está aquí y tenemos 6 tipos de consumo. Esto es lo que hacemos, que después le llevamos un key figure anual para ver con un contador y tenemos cuántos consumos tenemos al año, ¿verdad?
+
+ Por cada combinación. Y como sabemos que tenemos esta regla, porque la regla es, si tienes 2 consumos o más por año en los últimos 3 años, es un fast mover. Si tienes algún últimos tres años es mi mover si tiene si no tiene si no cumple con estos dos pero tiene algún consumo en el año 4 en el año 5 en un mes no mover y si no tiene consumo es un no mover entonces en base a eso es como que justamente esta lógica no si tú lo colocas manualmente este sería un mi mover porque no tiene consumo en el año 2023 este sería un fast mover porque
+
+Conference Room (Bastian Osorio) - Speaker 1:
+tienen dos por lo menos como cuenta los consumos los cuenta a nivel mensual los consumos los cuenta a nivel no.
+
+Saul Portillo:
+Cada consumo que haces a nivel semana lo llevas y lo llevas a nivel año. El conteo lo haces a nivel base, porque tu historia lo tienes a ese nivel.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Eso me gustaría confirmarlo porque, no sé, Ponte se consumió una semana y después la siguiente semana de nuevo se consumió y después no se consumió más durante todo el año y esas dos semanas estuvieron dentro del mismo mes. ¿Eso contaría como un consumo o como dos consumos? O sea, sé que mediante tu lógica contaría como dos consumos Correcto, correcto.
+
+Saul Portillo:
+Pero si en tal caso sería a nivel mensual, de igual manera también lo podemos hacer. Simplemente cambiaríamos el nivel de planificación y ya tenemos el cálculo listo. Y lo que te digo es ya al tenerlo de esta manera, creamos como varios que un que me cuente cuántos consumos tienen en los últimos tres años simplemente de forma acumulativa. Otro que me cuenta cuántos consumos tengo en los dos primeros años.
+
+ Sí, y otro que me cuenta con una condición de uno y cero de validez si tiene más de dos consumos, dos o más consumos en los últimos tres años, o sea, por año. O sea, ve el año uno, ve el año dos y ve el año tres. ¿Cómo hicimos eso? Lo hicimos teniendo esto, haciendo un offset y después en el mismo nivel con cada uno de esos offsets e hicimos el key figure de validación. Entonces, finalmente con todas estas lógicas te vas a una lógica de segmentation valor que es un condicionante si cumple con que éste es 1 éste de acá y es un fast mover si no cumple con eso se va al siguiente si cumple con que tiene el consumo de los últimos tres años es un mid mover si no cumple con eso se va a la siguiente lógica si cumple con que tiene los dos primeros años es un slow mover y si no cumple con ninguno de esos es un non mover y cómo lo hace colocándole valores de 1 2 3 y 4 y que pues estos valores que tienes en este KeyFigure con el ABC Segmentation lo transformas en letras para el dato maestro.
+
+ Entonces, ¿cómo lo hicimos acá? Te muestro aquí. Ahí le metimos Coco con Fiamma, con los chicos, dándole vuelta y nos costó un pelín, pero se logró. Mira, por ejemplo, este es el consumo a nivel anual, ¿no? Que lo hicimos para Corrective Mindset. Entonces, ¿qué hacemos? Hacemos un contador. Me voy a ir por página para que veas la secuencia.
+
+UNKNOWN_SPEAKER:
+Pensé que estaba cargado, perdón.
+
+Saul Portillo:
+Ahí va. A ver, ¿qué pasó? Aquí está. Entonces, me hace, digamos, el contador.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+no como cargó un segundo.
+
+Saul Portillo:
+Por ejemplo, este dato, para ir filtrando un código más fácil.
+
+UNKNOWN_SPEAKER:
+así para verlo.
+
+Saul Portillo:
+Entonces, por ejemplo, tienes este producto que lo que hicimos fue un conteo que se reinicie por año, en el sentido para después tomar con el IAPLA el último valor. Entonces, por ejemplo, este tiene el primer consumo que está aquí, tiene el consumo 1, lo cuenta y aquí va a hacer luego a ver que si este año tiene otro, no, este año no tiene, se reinicia en el siguiente año, aquí tiene mira, un consumo en la semana 8 del 21, luego va otro consumo en la semana 51, en el año 22.
+
+ Entonces al final, si te fijas, y va reiniciando por año. Cuando lo llevo a nivel mensual, lo veo de cierta forma de esta manera, y si lo llevo a nivel anual, este contador, lo llevo a este equifibro que se llama consumption year period content. Entonces veo cuántos consumos tuvo por año. Aquí, uno de 2020, todo eso. Con esto que está aquí me voy a la segmentación. Voy a filtrar el código. Entonces, esta es la historia y este es mi conteo.
+
+ ¿Qué hacemos? Un KeyFigure que cuenta cuántos consumos tuvo en los dos primeros años, que son estos tres. Hacemos otro KeyFigure que cuenta cuántos consumos tuvo en los últimos tres años, que son estos nueve. Y además hacemos este KeyFigure de condicionante que verifica si tiene dos consumos o más en los últimos tres años es uno, si no es cero, que lo que me interesa es el resultado que me entrega en el año en curso.
+
+ Luego con todos estos valores, tengo este configura el segmentation value que verifica primero si este es 1 ya sería el número 1 que sería F si es 0 me voy a la siguiente condición la siguiente condición es tiene consumo en los primeros tres años en los últimos tres años sí porque tengo 9 entonces es un número 2 que es un mil mugre si no contara con eso se fuera a la tercera condición y ve si tiene algún consumo en los últimos tres años y sería un 3 y si no sería un 4 Y si te fijas, como se cumple, tienes aquí por ejemplo segmentation value, aquí tienes 4, 4, tienes 2, vamos a buscar por ejemplo un 3,
+
+UNKNOWN_SPEAKER:
+para ver un ejemplo de un 3.
+
+Saul Portillo:
+Y voy a filtrar este código. En este caso tiene nada más consumo en el 2021. Entonces no cumple con esta condición, no cumple con esta condición, pero si cumple con esta, por lo tanto es un slow mover. Entonces ya tienen estos valores de forma automática donde no hay que correr ningún operador de copia ni nada, sino que es puro cálculo. Vamos a poner un 2.
+
+UNKNOWN_SPEAKER:
+Déjame filtrar su mutation value.
+
+Saul Portillo:
+Y luego un 2. Y vamos a tomar este, por ejemplo, no sé, 96.
+
+UNKNOWN_SPEAKER:
+Este es un 2.
+
+Saul Portillo:
+Tiene nada más consumo en el 2024, por lo tanto, es un mid mover, porque cumple con esa condición. A ver, a ver.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, porque debís Si un midmover no quiere decir que tiene...
+
+Saul Portillo:
+Es porque es nuevo en realidad. En realidad es nuevo, exacto. Si hay condiciones que evidentemente tenemos que ya avaliarlo con ellos, pero en base a lo que nos guste. Exacto, ya después podríamos hacer algún ajuste con una condición o algo, pero ya lo tendríamos. ¿Y uno que sería fastmover? Un segundo para que veas otro dos que tengan datos y quiero ver algo que tenga más datos.
+
+UNKNOWN_SPEAKER:
+Déjame ver, por ejemplo.
+
+Saul Portillo:
+Consumption period yield counter. Por ejemplo, este valor. Este debe de ser un 2, este que estoy filtrando. Y efectivamente es un 2, porque tiene consumos acá. Va a ser que, claro, pareciera que...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+que porque la están sacando data, bueno quiero pensar que porque están sacando data de sandbox.
+
+Saul Portillo:
+Si, pero a ver me decías un 1, veamos un 1.
+
+UNKNOWN_SPEAKER:
+Algún otro ejemplo.
+
+Saul Portillo:
+Por ejemplo este debería ser un 1. El 87. Vamos a verlo. Ahí está. Es un humo. Super. Y para eso tendría que haber, definitivamente, tendría que haber forecast pool.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Exacto. Sí, te escucho, Héctor. ¿Escuchas bien?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Y para el fast model, ¿podés validar que tenga, en los últimos 3 años, tenga 2 consumos al menos?
+
+Saul Portillo:
+Y es que eso es lo que hace. Si no tiene, mira, te voy a, te voy a, vamos a validar uno que tenga consumo en los últimos tres años, pero que no cumpla con que sean dos. Vamos a ver para que lo vean. Este caso, mira, este caso tiene cinco consumos, pero tiene uno y uno acá. Aquí te va a colocar que es un bitmover. Veámoslo. Ahí está, en un 2. Está bien, estuvo super bien. Te la arrepaste. ¿Cómo?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Te la arreparon ahí con la lógica.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Está bueno. Sí, ahí le estuvimos dando cabecita ahí entre todos, pero estuvo bueno.
+
+Saul Portillo:
+Está bueno porque es una de las cosas que les pueden mostrar desde ya.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Y podemos... Tenemos sesiones donde revisamos puntos abiertos dos veces a la semana. Quizás podrían sumarse a una de esas y mostrarles la lógica y preguntarles qué hacemos con el caso de los nuevos.
+
+Conference Room (Bastian Osorio) - Speaker 4:
+Yo lo guardaría para el Unit Testing. También. Sería... Sería como... Para mostrar cosas interesantes, pues.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Igual está bien. Ya, vos, Saúl. Gracias. Ahí avísame... Bueno. Déjame, cuando tenemos la próxima semana de configuración, creo que el lunes, pero si tenemos el lunes la voy a mover para que podamos revisar el tema de las approvals. Perfecto, nosotros nos quedamos, avanzamos hoy trabajando en eso. Si, tenemos el lunes a las 9 de la mañana, entonces mejor la voy a mover para el martes.
+
+Saul Portillo:
+Martes a las 4 de la tarde.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Perfecto, perfecto.
+
+Saul Portillo:
+No, después de las 10, martes a las 3 y media. En resumen, quedamos entonces Vamos a hacerlo para los keyfigures que son de forecast y lo de reorder points. Snapshot, lo mismo. Vamos a construir una lógica que te decía con los keyfigures calculados y le hacemos un ejemplo y se lo mostramos el martes, ¿les parece? Para que vean cómo queda. Perfecto. Ya, buenísimo. Eso sería. Ahí Héctor, porque estábamos, bueno, si quieres comentarle después a Bastido Héctor, para no consumirle más tiempo.
+
+ Le cuentas que lo tienes ahí, el tema de la lógica con los enacho. El tema de la lógica con los enacho.
+
+Hector Palacios:
+Si quieres ahí le comentas.
+
+Conference Room (Bastian Osorio) - Speaker 4:
+Vale, chicos.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Que tengan un buen fin de... Bueno, nos hablamos más tarde. Gracias, chicos.
+
+UNKNOWN_SPEAKER:
+Chau. Chau.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Adiós. Y ni siquiera es clara de que podamos volar. Constructores.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Subtítulos realizados por la comunidad de Amara.org a ver vamos a ver si encontramos...
+
+UNKNOWN_SPEAKER:
+pizza? Pizza?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+no, soy cabron, no voy a ir ahí Sí, de acuerdo.
+
+UNKNOWN_SPEAKER:
+Acá hay otro igual. Circolo popolare. Circolo popolare.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Circolo popolare, bueno.
+
+UNKNOWN_SPEAKER:
+Circolo popular, no lo sé.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+¿En qué está, Miguel? Entonces. ¿Y dejamos las cosas aquí? Sí, está cerrado, no vendrá nadie, porque sigue con la tarjeta.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Compañero, ¿está feta la espalda?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+¡Hasta la próxima!
+
+Conference Room (Bastian Osorio) - Speaker 3:
+¿Toma cerveza, vino, whisky y comer algo?
+
+UNKNOWN_SPEAKER:
+Sí, justamente.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Bueno, vamos por lo primero.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Dónde vamos?
+
+UNKNOWN_SPEAKER:
+¿Comer una pizza acá al frente?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+¿Mandar un besito?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, no, no, no. No.
+
+Hector Palacios:
+¡Adiós!
+
