@@ -1,0 +1,142 @@
+Saul Portillo:
+Señor Reynaldo, ¿cómo está usted? ¿Cómo estás? Escucha Ray.
+
+UNKNOWN_SPEAKER:
+¿Alguien aquí?
+
+Saul Portillo:
+Ahí estás.
+
+Saul Portillo:
+¡Ah!
+
+Hector Palacios:
+¿Hemos invitado? ¿Meto el correo de Vox? Sí, el de Vox. ¿Vale 250.000 o 200.000? No, por eso lo digo. Me pongo el mío, pero sí. Hola, Rey. Hola, Saúl. No, el correo. ¿Me escuchan?
+
+Saul Portillo:
+Yo escucho Héctor, denme porfa un par de minutos, ya me sumó.
+
+Hector Palacios:
+No, no, tranqui, yo creo que era más que para aprovechar que estaba Rey, pero Rey parece que está multitask.
+
+Saul Portillo:
+Sí, Rey yo hablé con él, pero no me contestaba, es que me sumé hace como 10 minutos. No sé si está o no está aquí.
+
+Hector Palacios:
+Entonces ahí vemos con Rick para llamarlo, pero nosotros estamos alineados. ¿Sabes el tema del mail para pedirle datos a Adnok?
+
+Saul Portillo:
+Sí, quería que lo revisáramos para terminar de definir finalmente todo lo que le vamos a pedir. Revisémoslo. Que me necesito un par de minutos, un momento porfa.
+
+Hector Palacios:
+Ahora entendí lo de la fórmula, tiene sentido lo que decía.
+
+Saul Portillo:
+¿Qué dices? Subtítulos por la comunidad de Amara.org Ahora sí. ¿Me escuchan? Sí, te escucho, Saul.
+
+Hector Palacios:
+Ahí me di cuenta la lógica y tení razón, Saul. No lo había visto bien.
+
+Saul Portillo:
+Sí, exacto. Es que con el offset... Y después él ve que por lo menos cumpla con dos consumos, como mínimo, para que sea un F.
+
+Hector Palacios:
+Está buena, le sacaron el jugo a las fórmulas ahí.
+
+Saul Portillo:
+Sí, lo bueno de eso es que quedó ya de forma automática esta entrega, no hay que hacer ningún operar de copia, no hay que correr nada, sino es un puro cálculo.
+
+Hector Palacios:
+Esa es la más complicada, es la única más complicada, todo eso es tema de input, la segmentación es fácil.
+
+Saul Portillo:
+Sí, al principio cuando estábamos pensándolo hablábamos de ver si con pivots y tal, pero el tema de meterle pivots al cálculo también lo complica y lo ponía un poquito complejo, entonces mejor como tú, la idea cuando nos diste la idea de llevarlo años, ahí fue que se nos prendió el bombillo de toda esta lógica.
+
+UNKNOWN_SPEAKER:
+Está bueno.
+
+Hector Palacios:
+Algo que mostrarle a estos tipos que se alegren.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+A ver, déjeme anotar aquí en una hoja aparte. Principalmente lo que quisiera es que revisemos en puntos lo que le vamos a a pedir como nuevo. A nivel de datos nosotros hemos pensado, por la parte esto es, voy a botar aquí, no sé cómo llamarlo, módulo negocio, proceso. Esto es para MRO y químicos. Entiendo que es lo que quieren pedirle aquí Héctor, lo de LTPA y lo del Reorder Point para Supply. Y teníamos el tema en los datos que nosotros para Ah, bueno, teníamos también el tema del costo, los costos.
+
+ ¿Ok? Que ahí, Héctor, ¿cómo sería el tema de costo? O sea, ¿cómo es la, cómo realmente es la nomenclatura? Porque necesitamos el tema precios para hacer la segmentación de HML. Sí, te comparto pantalla rápido.
+
+Hector Palacios:
+Aquí están todas las cosas que tenemos que pedir de tu lado. Y me falta, déjame Lo último que le había pedido era el LTPI.
+
+Saul Portillo:
+El LTPI y lo de Reorder Points fue lo que me pidió Vivek. ¿A quién le dijeron LTPI?
+
+Hector Palacios:
+Lo habré dejado ya a ti.
+
+Hector Palacios:
+Ya, ahí va.
+
+UNKNOWN_SPEAKER:
+Ahí está.
+
+Hector Palacios:
+Entonces, está el EDPA, está DROP, está el Movement Type. ¿Esto qué era, Saúl? Esto era antiguo, ¿sí?
+
+Saul Portillo:
+Sí, eso es lo de que realmente tenemos que revisarlo con ellos, que nos aplaren el Movement Type que tenemos que aplicar, sobre todo cuando hagamos filtros. Para la integración, porque hay consumos con distintos tipos de movimientos y hay consumos que son créditos y débitos. Entonces finalmente que nos digan.
+
+Hector Palacios:
+Eso está claro, tenemos que integrar el neto, está en varios puntos entre los requerimientos, varios comentarios. Dicen que tiene que ser la entrada y salida, entonces tenemos que el crédito y débito tenemos que restarlo la diferencia y eso es lo que va.
+
+Saul Portillo:
+Claro, pero eso es por la parte del flujo de integración. Sí. Pero ahí la duda que tengo es porque no solamente tienes el crédito, sino que tienes distintos tipos de movimientos, ¿no? Y definir cuáles son esos movimientos que hay que integrar, ¿ok? Y por el otro lado, el tema de qué sucede cuando nos pasan los datos, que el débito está en un mes y el crédito está en otro mes.
+
+Hector Palacios:
+No, no te compliques, Saúl. Si son dos tipos de movimientos, no me acuerdo qué es crédito y débito, restémoslo nomás. Y ya. Y si cae negativo un mes, da lo mismo.
+
+Saul Portillo:
+Por mientras, o sea, hay que simplificar el approach.
+
+Hector Palacios:
+Hagamos eso y después cualquier pero no sé qué tipo de costo es ese. Sí, un buen punto.
+
+Saul Portillo:
+En el procedimiento, como que no lo especifican tampoco. Porque si le ponemos costo en general, él va a lanzar la pregunta es ¿a qué nivel el costo…? Está cargando yo le contaré ¿Este no es el QYB, el otro es el XZ?
+
+Hector Palacios:
+¿Cuál elegimos nosotros?
+
+Saul Portillo:
+el HML era el que necesitábamos el costo porque el XYZ es por la variación de los consumos y el HML por qué lo íbamos a usar? El HML lo necesitas para para la segmentación, para el RISC Score a menor, más caro, baja el service level entonces vamos con el HML nomás es lo que dice acá, unit price veamos eso, el unit price para la segmentación hml pero de nuevo si no va a integrar vas a pedir cuando podamos integrar no, pero el unit price no está para integrarlo si, lo viste o sea, si no está para integrar no está hace 12 años No está para integrar, no está.
+
+
+
+Hector Palacios:
+No creo que digan el BITNESS que hay una línea con lo... ¿Y tú querés integrar todo? Porque igual nos podemos demorar. Bueno, pues no tengo problema con que usted no pida el BITNESS. ¿Qué importa, puede ser igual? Pidámoslo por si... Vámonos a la segura, ¿no? Entonces, Saúl, era...
+
+Saul Portillo:
+Ah, ah, ah, El TPD, la historia de los químicos y la del Turnaround también. No sé si ahora, como se la estamos pidiendo hasta ahora, Saúl, si hay que preparar un template o algo.
+
+Hector Palacios:
+Pero si no es eso, nada más que eso.
+
+Saul Portillo:
+Sí, lo que vamos a hacer es, con lo que ya tenemos de químicos y de turnaround, le preparamos, le reenviamos el archivo que tenemos ordenado y le hacemos la solicitud allí en un campo o algo y se lo ponemos en el cuerpo del corral. Eso lo llamamos ahorita, llamo yo y lo mandamos.
+
+Hector Palacios:
+¿Puedemos dejárselo mandado hoy día para que el lunes se despierte y lo vea?
+
+UNKNOWN_SPEAKER:
+Sí, eso.
+
+Hector Palacios:
+Obviamente no va a hacer nada, pero si lo dejamos enviado hoy día, para que no se atrase más a ese punto. Tiene preocupada un poco la data. Y eso, Saul, creo que está. Tengo que reunir ahora yo igual. Vale, pues.
+
+Saul Portillo:
+Bueno, feliz fin de semana. Nos vemos. Igual, chau, que estés bien.
+
+UNKNOWN_SPEAKER:
+Subtítulos por la comunidad de Amara.org
+
