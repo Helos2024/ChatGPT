@@ -1,0 +1,768 @@
+UNKNOWN_SPEAKER:
+¿Escuchas ahí? Perdona. ¿Qué tal?
+
+Sebastian Alba:
+¿Todo bien tú?
+
+Hector Palacios:
+Bien, bien, también.
+
+Sebastian Alba:
+Qué bueno, qué bueno.
+
+UNKNOWN_SPEAKER:
+Se alegro.
+
+Sebastian Alba:
+Ya por fin llegó el día viernes tú. Entonces sí, es la primera semana del año.
+
+UNKNOWN_SPEAKER:
+¿Sí? ¿Te tocó mal?
+
+Sebastian Alba:
+¿Te tocó mal? No mal, pero con harta cosa. Ya. Y apoyando a cobrar chain requests en dos proyectos de dos chain requests grandes, el de AdNock y uno en Claro.
+
+Hector Palacios:
+Y eso igual me toma harto tiempo.
+
+Sebastian Alba:
+¿Qué chain requests tenemos en AdNock? En AdNock estamos cobrando chain requests de cinco semanas, con el retraso de cinco semanas en seis décimas.
+
+Hector Palacios:
+Ah, bueno. Ah, claro. Tiene sentido. ¿Será porque...? Mucha gente se pone las pilas ahora, pasando el año, porque se tomaron casi dos semanas en general.
+
+Sebastian Alba:
+Claro, claro. Y muchas cosas que quedaron pendientes de esos días, que había que cerrar, hay que retomar ahora.
+
+Hector Palacios:
+Está bien. Déjame buscar, porque yo tenía un resumen reuniente. Y ahora que trabajemos en el tema, la magia del CPT, porque me reuní ayer con Pablo primero, que estaba enojado.
+
+Sebastian Alba:
+Para entender un poquito el contexto del proyecto, hoy día entiendo que cerramos o estamos cerrando o cerramos pruebas unitarias y estamos preparando las integrales, ¿no?
+
+Hector Palacios:
+De la primera fase. Estamos en pruebas unitarias aún. Con el tema de pruebas unitarias adelantamos listo. Pero había un poco de retraso por el lado de ellos porque había muchas cosas, clases de documentos que tenían que empezar a crear en SAP y para eso al final lo terminaron haciendo con Capgemini. Pero eso obviamente la negociación y todo eso llevó su tiempo y ahora están recién mandando información para que el equipo pueda probar y lo están haciendo a través de consultores, no internamente.
+
+ Entonces estamos entre dos cosas, entre que los de Capgemini están probando sus configuraciones y entre que el equipo está comprobando sus configuraciones también. Entonces ahí hay un pimponeo donde se está generando un roce efectivamente, porque los de Capgemini y bueno también Kering por el lado de Diana están colocando un poco de presión y casi quieren que en este caso Pablo trabaje a deshora, siendo que está en Argentina para cubrir un poco, porque no sé, para Para llegar quizás vienen los tiempos, no tengo idea.
+
+ Y Pablo levanta eso básicamente, que están como muy apurados, que no nos dejan testear bien y que necesitamos un tiempo para hacerlo de forma correcta, para que nuestras pruebas tengan sentido. Y que no lo juegan fuera de horario, que él igual está trabajando las 8 horas y que trabaja desde más temprano, pero termina a la hora que termina en Argentina, ¿no? Entonces ese es un punto... Hay tres horas de diferencia.
+
+ Pero con él ya habíamos trabajado con Saúl y Fiamma en horas de acá, de Chile a Argentina.
+
+Sebastian Alba:
+Sí, po, sí, po. Pero igual yo no permito, po.
+
+Hector Palacios:
+Me puse a revisar el contrato, el charter, cualquier cosa y no encontré nada, po.
+
+Sebastian Alba:
+Sí, así que ahí no sé qué predomina porque Pablo ha estado trabajando Si no está explícito, hay que lograr llegar a alguna especie de acuerdo, ojalá intermedio, a ver si de repente puede encender su horario una hora más y
+
+UNKNOWN_SPEAKER:
+partir una hora más tarde, algunos días.
+
+Hector Palacios:
+Podemos buscar alguna hora de intentar traslapar más, pero... Sí, ahora el tema de Pablo, que Pablo igual es un hueón que es bastante más viejo y es Es más, es perro viejo, entonces él tiene como 13 años experiencia ya trabajando y ahora le tocó un rol que no es de arquitecto ni tiene la mayor experiencia en EWM, pero sí es más jodido en temas de horario porque tiene hijos, hijas, entiendo. Entonces como que no es tan...
+
+ O sea, como que hace respetar sus tiempos, sus límites. Esa clase de consultor no vamos a tener un pendejo ahí que lo ponga mal y muere tanto.
+
+Sebastian Alba:
+tirar a los leones, bueno, trabajando en la vida de mi hija, no, lo entiendo.
+
+Hector Palacios:
+No, no está para eso Pablo, probablemente, bueno. Y él es bien claro en eso. Yo creo que eso es un poco lo que está generando el conflicto, porque él pone bien sobre la mesa, oye, yo trabajo en esta hora y ya, po, ¿cachai? Y eso, y Richard por el otro lado está como intentando empujar, porque como se siente chico todavía y quiere, como, atajar todos los goles, ¿cachai? Como que él intenta tapar el hoyo, de cierta forma.
+
+ Y ahí se generó el conflicto interno porque Pablo había dicho, oye, no puedo trabajar, que son las 8 y Richard se puso a hacer cosas por él. Entonces ahí le hizo un overlap y ahí como que se generó el roce entre los dos, porque Pablo decía, no, pero esto lo tengo que hacer yo y tengo que entenderlo yo, porque él también está aprendiendo. Y Richard con todo el espíritu de hacer que la cuestión ande.
+
+ Entonces ahí está el tema.
+
+Sebastian Alba:
+Tenemos un tema con el cliente y un tema entre los consultores de WM.
+
+Hector Palacios:
+Con el cliente igual yo creo que una es como validar con el tema del horario Pablo y qué podemos hacer. Y pedir también que le bajen un poco el acelerador porque no estamos haciendo las pruebas para CAP sino que CAP está haciendo las pruebas para nosotros también. O sea, el foco de este proyecto de WM cualquier cosa que está haciendo Capgemini es para nuestro proyecto, entonces a nosotros sí nos interesa testear bien, que ahora recién tenemos la data, entonces no pueden simplemente agarrar y tirar, porque entre medio hay errores, cacháis, y es así, es todo un flujo de la orden, ¿no?
+
+
+
+Sebastian Alba:
+¿Es un tema de tiempo, o un tema quieren que cortemos el número de semanas de pruebas, o quieren que lo intentemos más rápido?
+
+Hector Palacios:
+No, seguramente por el tema de los retrasos que ya veníamos teniendo, por el tema esto de la integración, quieren acortar camino o colocar más esfuerzo ahora con tal de que no se trabusca más retraso.
+
+Sebastian Alba:
+¿Te parece que para este punto específico busquemos hacer una reunión con el líder de negocio?
+
+Hector Palacios:
+El líder de negocio no se está uniendo tanto, estamos perdiendo contacto con Luis Lara. Está desaparecido. Al menos no se le conecta a las manadas. Está más que nada Gerín llevando estas cosas y Eric también está un poco fuera de... Pero a Eric si le pido, o sea, le hablo por WhatsApp y todo, porque con él tengo más contacto.
+
+Sebastian Alba:
+Él es más accesible, ¿no?
+
+Hector Palacios:
+Luis Lara, difícil. Pero sí le puedo pedir, obviamente.
+
+Sebastian Alba:
+Yo pensaba realmente pedirle a John que nos ayude a identificar el punto exacto cuando debíamos haber partido las pruebas y cuando las pudimos partir por disponibilidad de datos. Para que simulemos el plan con el ajuste ya del impacto que tenemos de retraso.
+
+Hector Palacios:
+Ya se juntaron para hacer una propuesta de hecho para eso. Para identificar cuáles son los retrasos.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Sebastian Alba:
+Pero eso, eso se juntó al equipo interno o con?
+
+Hector Palacios:
+Con, con Kering.
+
+Sebastian Alba:
+Con Kering, vale. Y ahí mi duda, entonces el tiempo es el tiempo que no están, están intentando cortar de manera implícita semanas de prueba unitaria. O es que están intentando tirar más rápido ahí? Yo creo que están intentando tirar más rápido.
+
+Hector Palacios:
+Tiene que ver un tema con Capgemini, porque como tienen estos consultores y seguramente tienen una tasa qué sé yo, tiene que ser algo así. Quizás Capgemini se comprometió con tiempo de trabajo y mientras más se demore, pero eso no es tema nuestro. O sea, no, no, no por eso vamos a, es que, es que tampoco, no es una cosa de voluntad. El tema es que para llegar a eso, los cabros tendrían que trabajar prácticamente a deshoras siempre y no corresponde.
+
+ Una, está fuera del, de cómo se llama, de la capacidad Porque si no es cosa de que ellos nos tiren algo y nosotros se lo saquemos al tiro de vuelta. Hay que testear y van a haber errores entre medio y lo típico. Entonces ahí está, que hay una dependencia más que nada de los trabajos de ambos equipos. Entonces tienen que entender que hay como una SLA básicamente, que hay como un Lipten para que lo procesen, lo analicen bien, documenten sus pruebas, lo que sea, y luego devuelvan.
+
+
+
+Sebastian Alba:
+Claro, y me imagino que dicen que todo el problema de esto es porque Pablo prácticamente está fuera de horario, entonces no puede ni tirar, pierde en un ciclo me imagino.
+
+Hector Palacios:
+Sí, y ahora Pablo tampoco está tomando la parte más importante, sino que hay tres tracts que son importantes. Entrada, interno y salida. Interno siempre es el más fácil, y ahí tenemos a Samir que él Después tenemos a Entrar, que es Pablo, que está entrando al mundo de WM porque tampoco tenía mucha experiencia. O sea, tiene tres años de experiencia, pero no WM casi nada. Por lo que me comenta el equipo, el Richard.
+
+ Y luego tenemos a Richard que se lleva a toda la parte de salidas, pero ahí está siendo claro, está haciendo mucha pega de consultor a la vez de arquitecto. Entonces ahí se está sintiendo un poco sobrepasado. Entonces lo que yo pensaba es que quizás me tiramos otro recurso porque me lo están levantando mucho por el gap de conocimiento. A inicio la idea es que, te acordás cuando empezamos a levantar todo esto y dijimos ya traigan a alguien que sepa, debíamos tener como dos consultores WM que sepan y al final tenemos solamente uno y dos que no saben
+
+Sebastian Alba:
+tanto, independiente del seniority, ¿cachai?
+
+Hector Palacios:
+No, entonces eso a la larga se ha vuelto, ahora se está volviendo más visible que estamos metiendo las manos porque hasta antes era diseño y ahí con níquer salvamos porque lo fuimos metiendo y ahí Richard lo aprovechó para iterar con él algunas cosas. Siempre se apoyaron harto del otro arquitecto de EWM, también preguntas internas por ahí. Pero ahora, en el momento de la ejecución, sí están todos, y todos lo dicen, el mismo Pablo lo dice, o sea, dice, yo fui claro con que no tengo mucha experiencia técnica en EWM.
+
+ Richard dice que Pablo de repente pregunta cosas como cargar un dato maestro. Entonces eso te dice que está como bien atrás. Y John también. Bueno, John más se sorprende porque pensaba que Pablo iba a dar un poco más.
+
+Sebastian Alba:
+John pensó que Pablo iba a dar más en lo técnico.
+
+Hector Palacios:
+Sí, entonces estaba viendo si terminábamos de incluir a alguien más para cerrar ese gap, una, de que Richard sienta que tiene a alguien con el cual pueda hacer como discutir. Cachai, hacer brainstorming. Dos para que apoye a Pablo en el tema de entrar, quizás podríamos meterlo ahí también. Y eso básicamente, así como para cerrar ese gap del equipo, para cerrar también un poco el tema de recursos.
+
+Sebastian Alba:
+Te voy a robar un poquito de la pantalla.
+
+Hector Palacios:
+Tengo dos nombres que me piden.
+
+Sebastian Alba:
+Este es el plan actual de margen, por si acaso, 53% estamos proyectando. Bueno, esto ya incluye creo la extensión hasta FB.
+
+Hector Palacios:
+Sí, porque antes estaba como en 38.
+
+Sebastian Alba:
+¿Qué nombres te habían pedido? Ahí Pablo y Jonathan están barajando.
+
+Hector Palacios:
+decía que confía mucho en alguien que se llama Federico Pietri y parece que está disponible.
+
+Sebastian Alba:
+Eso te voy a decir, eran los que yo veía como opción. Ahora, ¿tú crees que hay que sumarlo de manera indefinida o...?
+
+Hector Palacios:
+Yo lo sumaría para lo que resta aún, porque no creo que esto se vaya a parar en... No, no creo que se desacelere. Y este cabrón es... ¿qué es señorito?
+
+Sebastian Alba:
+No tiene tanto seniority. O sea, técnicamente me han hablado muy bien de él, que viene para todos los ciclos de pre-venta, súper pira, súper empoderado, que aprende muy rápido. Pero la verdad no sé qué nivel de seniority tiene Juan. Pero Jonathan estaba como muy conforme con él, dijo que te lo recomiendo.
+
+Hector Palacios:
+Yo estoy seguro que hay que agregar mucho a él.
+
+Sebastian Alba:
+Sí, además por lo que sale, Juan, y eso no soluciona este problema. Si esto no soluciona el problema, yo lo dejaría pedido al tiro. A mí lo que más me a mí lo que más me puede preocupar, bueno, es que el tren como es de los top, no, de los que están mejor evaluados, no quieran meterlo a una iniciativa que ya tiene otro
+
+UNKNOWN_SPEAKER:
+top.
+
+Hector Palacios:
+Como eso repite, repite.
+
+Sebastian Alba:
+No, bien, bien, que si es que se está llevando oportunidades de WM, que lo que prefieran llevar la otra iniciativa, porque aquí ya hay un equipo. Nos pasa en alguien menos potente. Pero bueno, eso es lo que tengo que intentar pelearlo yo.
+
+Hector Palacios:
+Es que tenemos que pelearlo porque aquí no ha sido tan justo con los recursos, o sea, igual no tienen ahí...
+
+Sebastian Alba:
+No, lo tengo claro, lo tengo claro. Eso es lo que tengo que pelear yo ahora, para que tengamos un buen recurso del UM y si es que está comprometido por alguna razón ver las opciones.
+
+Hector Palacios:
+Y sabés que... Richard, porque yo conversé por separado, claro, no los puse a pelear ahí en el mismo cuarto, sino que me los lleve a cada uno. Entendí el punto de vista de cada uno y después voy a tener otra sesión para calmarlo y también voy a colocar sesiones para ir revisando con ellos bi-semanalmente. Lo que pasa es que caché que estos compadres como que no tienen tanto tacto con los DM en logística.
+
+ Le hablaba Pablo, la última vez que hablé con mi DM fue a inicio de diciembre o final de noviembre, algo así. Entonces, como no están tan al tanto de este tipo de cosas, creo, no me la levantan tampoco, como cuando Cameron me levantó algo por Santi, caché, como que al final me va a tener que meter más yo para cachar
+
+Sebastian Alba:
+cómo están ellos con reuniones individuales, yo creo, así como lo hago con mi cluster.
+
+Hector Palacios:
+No sé si querís que...
+
+Sebastian Alba:
+No, no creo que ese nivel de detalle sea necesario, sí, no sé para cuánto...
+
+Hector Palacios:
+no pasa nada. Dejame hacerlo para que estén un poco más tranquilos. Tampoco nos habían evaluado tan bien. Y bueno, ya entiendo de bien un poco la frustración de Pablo, que está en una situación donde él tiene que depender de alguien que es más chico y porque tiene más capacidad técnica, pero él tiene mucha más experiencia en proyectos. Y perdón, perdón la dispersión. Richard me había recomendado uno que se llamaba Óscar.
+
+ No sé si te suena ese nombre, yo no lo encontré en el Resource One.
+
+Sebastian Alba:
+Óscar con K. Óscar no me suena, a ver.
+
+Hector Palacios:
+¿Estará acá? ¿No será un freelance?
+
+UNKNOWN_SPEAKER:
+No.
+
+Sebastian Alba:
+Externo. Ah, ahí está.
+
+Hector Palacios:
+Entonces tiene una tasa más alta, ¿no?
+
+Sebastian Alba:
+No sé cuánto estará ese, cómo... Con qué tasa estará él.
+
+Hector Palacios:
+colocáis ahí no te sale?
+
+Sebastian Alba:
+No, las tazas de los externos nos también representaban. Eso es algo que le iba a comentar a Fran. Un buen punto que me acordaste Juan, porque eso le quería pedir a Fran. Es que creo que somos los únicos que juegan ese archivo de proyección. No sé cómo el resto hace el clúster. No, no me pregunto eso, es como que... La estimación igual.
+
+Hector Palacios:
+Improvisa, pues.
+
+UNKNOWN_SPEAKER:
+Puede ser, ¿no?
+
+Hector Palacios:
+Al menos eso es lo que me ha dicho Henry, que son como más... Menos estructurados. El...
+
+Sebastian Alba:
+Ah, bueno, la verdad que Henry está con Abraham.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+¿Por qué nos robaron a Henry, weón?
+
+Sebastian Alba:
+porque había que dividir un poco la pelota. Porque al final si no, imagínate, además estaría Henry y André acá. Como si hubiéramos dividido parejo.
+
+Hector Palacios:
+André me hace más sentido porque ya está un poco más alejada hacia arriba, Chile.
+
+Sebastian Alba:
+Vale, yo igual me puedo llevar a ver el precio de cuánto saldría la inversión de Oscar. Voy a intentar pedir a Fede Prieto justo hoy día.
+
+UNKNOWN_SPEAKER:
+Tengo reunión de resourcing, de reconciliación, así que genial. Vale.
+
+Hector Palacios:
+Yo ahí voy a intentar aislar a Kerin entonces. Si ya tenemos sesión de seguimiento le voy a pedir si se puede quedar cinco minutos y le voy a comentar el tema, ahí para darle un poco de tranquilidad. Le voy a pedir una que entienda que en nuestro tiempo de respuesta igual tienen que considerar realizar las pruebas bien. Y dos que ahí estamos barajando en cómo apoyar más al equipo para que de aquí en adelante también tengamos un poco más de capacidad.
+
+
+
+Sebastian Alba:
+Perfecto. Te devuelvo la pantalla mientras tanto. Pero ahora me llevo estas dos acciones. No sé si queríais seguir explicando algo del problema o esas son las aristas, Héctor. No, déjame ver.
+
+Hector Palacios:
+Está el tema del conocimiento técnico, la expresión externa. Maravilla, está Webchat GPT, me ordena toda la idea. He usado el canvas, te genera documentos acá y puedes iterar, entonces tenés el chat acá y tú le das así como no, mira, corrígeme esto, añade más detalles, etc. Es como que tuviera ahí el copilot en el Word o algo así.
+
+Sebastian Alba:
+Puta que bueno, el día que tengamos el copilot activo en el Teams mismo, weón, va a ser muy cómodo. Sí, ojalá que sea tan bueno, es que no me he notado que sea tan No, no, no sé, no sé, pero tiene, tiene cosas como, por ejemplo, si estamos conversando ahora, podríamos decirle que nos traiga, que nos traiga el precio de los consultores, de que no podríamos adquirir la HDB, si no tiene acceso, por ejemplo, a ver cuánto ha sido el pago mensual de Oscar en proyectos anteriores al copilot y esa hueá te la puede buscar entre los documentos.
+
+ Entonces, en ese, en ese sentido, le tiene acceso a todas las carpetas de. Este proyecto, me imagino, supuestamente a tener funciones con casi como, oye, dime un resumen de la presentación de avances de tal proyecto de los últimos meses.
+
+Hector Palacios:
+Creo que el caso está bueno, pero yo eso ya lo hago, pero lo hago con chat GPT y con Power Automate. Bueno, no sé si es que porque de hecho trabajo harto con web así, me he metido caleta a hacer como apis cachai que conectan chat GPT con Microsoft List y Power Automate. Y planes, ¿cachai? Me genera reportes, aquí estaba discutiendo, preguntándole de las reuniones que habíamos tenido si había mencionado una hueá, ¿cachai?
+
+ Entonces automáticamente se mete a las minutas de todas las reuniones que hemos tenido de AdNoc, con el cliente, y me valía, ¿cachai? Entonces esta hueá es como, de hecho te lo voy a comentar algún día, a ver si empujamos algún proyecto interno, pero es que hay que ver el tema de qué herramientas valen y cuáles no.
+
+Sebastian Alba:
+Hay varios, ¿no? Lo que sí podríamos, a mí de repente más que con chat GPT, es como buscar los casos de uso, porque aquí tenía un montón de casos de uso.
+
+Hector Palacios:
+Sí, yo aquí ya tengo un par, Juan.
+
+Sebastian Alba:
+Eso a mí me gustaría, porque yo hoy día sé que todo el mundo está trabajando con web así, entonces lo que a mí me gustaría más que todo es empezar a armar como un RFP de los casos que necesitamos que cumpla, la solución que se vaya empujando. Ojalá empezara a presionar por ese lado.
+
+Hector Palacios:
+De todas formas, hay que armar un catástrofe. Yo lo que veo un poco no estaría bueno, la verdad. Lo que veo primero es que tenemos que generar con una especie de bot que te genere minuta. De partida, así como tener una tabla con todas las minutas, el acceso a la transcripción, porque ya tengo la transcripción de hoy o de donde sea que venga y algunos plaques que te digan esto de este negocio es de su play inventario.
+
+ Demanda, de integración, etcétera, como para que te ayude a filtrar la información. Entonces, una vez que tengas las minutas de todas las reuniones que has tenido y bien clasificadas, tú puedes configurar un chat GPT para que te haga queries y preguntarle, oye, ¿se dijo esto o qué se mencionó? O hazle un resumen de la última reunión y te pasa el tiro en la minuta o se mete el transcript para revisar detalles.
+
+ Está re bueno. Obviamente, sí hay ciertas limitaciones que que ir revisando, pero el caso de uso ese está bueno y creo que es como muy transversal porque lo voy a usar para consultor de proyecto, lo voy a usar para los PM, voy a usarlo ahora en tu caso como OM, cachá.
+
+Sebastian Alba:
+Sí, sí, no sé, al final todo el mundo necesita tener claridad de qué se dijo en qué minuto y una ayuda de memoria para eso y no tener que estar tú gastando el tiempo en las notas. Es brutal al final, para todo el mundo.
+
+Hector Palacios:
+Qué cagada, yo creo que al interno esta cosa la deberíamos hacer para todas las escenas Yo le estoy sacando jugo ahora, es que la verdad es que recién lo estoy terminando de hacer, porque igual tuve que aprender varias weas como de Power Automate, ¿cachai? Happy Calls, con estas weas de... Pero ya pronto, pronto casi como la próxima semana, capaz que ya lo termino de cerrar, wea. Lo he estado trabajando.
+
+ A mi interna, ¿cachai? Porque me interesa Caleta esta wea. Una inversión.
+
+Sebastian Alba:
+que está buenísimo. La única teoría que hoy día tenemos es que, por ejemplo, muchas empresas no por regla nos prohíben usar inteligencia artificial.
+
+Hector Palacios:
+Sí, no se me imagino por temas de privacidad, si eso es lo que nos limita. Pero sí, ojalá que con lo de Microsoft, porque lo de Microsoft yo sé que se hace bueno. No sé si me hace falta algo.
+
+Sebastian Alba:
+Lo de Microsoft se supone que este año quieren activarlo, pero va más lento que Río Caca.
+
+Hector Palacios:
+Desde AdDoc ya tienen algo, porque esa hueá se puede hacer con Microsoft. O sea, tú dentro de Azure tenés como una aplicación que ocupa ChatGPT por detrás, pero en el ecosistema de Microsoft y te puede hacer como un chatbot para tus documentos. Y el otro día estaba con AdDoc y caché que lo tenía. Estaba Dignesh preguntando una hueá y el chatbot le respondió y le dijo esto está en y se lo mandó wey y tenía documentación de todos lados wey es que por eso por eso esos casos de uso son arnold lo
+
+Sebastian Alba:
+tiene activo con copilot arnold que está intentando apalancar mucho las cuevas de guía bueno ya lo he visto por eso no meten tanta presión y tienen capacitaciones internas súper frecuentes pero viste en el edificio no?
+
+Hector Palacios:
+está lleno de mensajes de capacitación para todo no haces cosa de meterse a la página web tan full con EA Por eso la presión que nos tienen en IBP y ahí nos sacan requerimientos. Esto que lo haga Machine Learning. Esto que lo haga Machine Learning. Es como que IBP fuera a echar GPT.
+
+Sebastian Alba:
+Una cosa así. Efectivamente. Bueno, vamos a ver. A mí me encantaría que pudiéramos empezar, y eso me gusta mucho en mi iniciativa, empezar a detallar los casos de uso que necesitamos empezar a abordar o los que tenemos vistos en en esto sería sería ideal.
+
+Hector Palacios:
+Sí, yo quizás con un poquito de tiempo podría armarme al menos una PPT para lo que estoy haciendo, sin colocar el nombre de la herramienta, sino como más que nada como mostrar qué cosas se pueden hacer y qué se puede obtener, porque ese es el caso universal, pero yo creo que apenas levantemos la idea de que tenemos un chatbot que te pueda analizar cosas, ahí vas a poder sacar un montón de análisis, estoy seguro.
+
+
+
+Sebastian Alba:
+Claro, si esto es lo que tenemos de la Filipe para que realmente empujemos alguno.
+
+Hector Palacios:
+Es que aquí yo creo que el punto clave sea cómo, porque ahí podemos decir cómo sacamos provecho de la información con chat de pipico, paelo, etcétera, pero si tenemos que construir de flujo que te guarde la reunión en algún lado. Y eso es lo que yo ya hice con Power Automate. El tema es qué herramienta es la ideal, pues cuál te compran. Pero una vez que tú agarras esa información y tengas una base de datos creciente, hoy hace un montón de hueá.
+
+ O sea, en Microsoft List tú lo podés conectar directamente con Power BI y tener unos reportes que te hagan cosas increíbles. Entonces, si tú agarras la información La mastiqué un poco. La metí a Microsoft List y Microsoft List está conectado con Power Automate. Te genera un montón de reportes que podrían usar para todo lo que hacen.
+
+UNKNOWN_SPEAKER:
+Todo automatizado.
+
+Sebastian Alba:
+Me encantaría poder empujar, empezar a ponerle algo de forma a esta hueá. Yo no sé si hay un hueón. Hay un hueón que sube pilas. Está trabajando con camilo que creo que algo ha visto de estas cosas bueno pero me da la impresión que de repente le falta que lo ayuden a concretizar un poco se me está viendo y ayudar a una wea de
+
+Hector Palacios:
+microsoft list en una página y todo eso y son ideas buenas pero pero que que podamos ir más a algo como más profundo como esto, quizás podríamos aprovecharlo para algo así, porque igual se mete con Power Automate y estoy seguro que podría meterse harto.
+
+Sebastian Alba:
+No, al final, para mí lo que sería ideal es lo que tú comentabas, que poder estructurar esta hueá más de qué es lo que queremos activar con IA sin pensar en herramientas y qué es lo que necesita, entonces para empezar a construir, igual que cuando hacemos un IP, una etapa de datos, entonces por el primer load Independiente de la herramienta que tengamos, hay que, como tú decís, tener grabación y minuto de todas las sesiones automática.
+
+ Sí. Y lograr tener eso es el primer paso para cualquier weá. Empezar a lo mejor segmentar un poco el programa.
+
+Hector Palacios:
+Sería un valor añadido porque tú le podrías decir a los clientes, oye, tenemos proyectos que hacemos con IA. Estamos sacándole de provecho toda la información, estamos yendo a un nivel más allá. Exacto, una weá. Y estoy seguro que a Felipe le prende caletas, si de hecho había puesto a Lucas Seimandia a trabajar en esa wea. Sí, pero si están todas esas reacciones que están viniendo del lado, no sé si de Camilo.
+
+
+
+Sebastian Alba:
+Supuestamente lo debería ir a verlo Felipe en algún minuto, después Camilo, pero quedó muy atrapado y lo que más me pasa de repente es que, puta no, no. Me dicen que van a hacer algo y de repente a veces llegan cosas y a veces visibilidad de cuándo, cómo, cuáles van a ser las etapas.
+
+Hector Palacios:
+Quizá lo que podríamos hacer en algún momento es mostrarles una aplicación real, independiente de la herramienta y les podemos mostrar, mira esto es lo que estamos haciendo en Acno y esto se puede hacer.
+
+Sebastian Alba:
+Sí, a mí me encantaría. Para mí sería el ideal poder hacer, oye, este es el caso y presentar ya una utilidad casos de uso con ítems claves a ir logrando para habilitar esto. Si llegamos a presentar esto, yo creo que podemos dar un empuje super grande.
+
+Hector Palacios:
+Si al final todo el tema es compliance, eso es el gran problema que tenemos y una vez solucionando esa cuestión y sabiendo con los clientes, oye, ecosistema Microsoft perfecto, ya vamos con eso. Paso adelante, pero el tema del compliance.
+
+Sebastian Alba:
+No, pero sí, al final es que está. Si es que no es chat GPT lo que te da Microsoft, seguro va a ser mucho mejor de lo que tenemos hoy día. No será el mismo de un chat GPT, pero igual estas weas van a seguir evolucionando. Y Microsoft va a seguir con muchas lucas ahí, entonces, a lo mejor más lento, pero va a ir para arriba.
+
+Hector Palacios:
+Ahora, igual, ojo que el Power Automate, yo lo hago trabajar con chatGPT, o sea del Power Automate le hago consulta a chatGPT y me arroja hueá de vuelta. No sé si quizá hueá ya estará considerando alguna cuestión de seguridad, porque como Power Automate es una herramienta de Microsoft, se está enviando cosas a la API de chatGPT, quizás si hay compliance ahí, hay un montón que da igual.
+
+Sebastian Alba:
+Esos son los temas que hay que investigar, que me gustaría que pudieran tomar ese rol. Supuestamente va a haber un rol en Go nuevo de compliance. Yo no te dije esto, weón.
+
+Hector Palacios:
+Pero lo voy a venir. Lo voy a venir por todo lo que están mencionando de profesionalizar el Excel y toda la cosa, el Office. Me preocupa un poco.
+
+Sebastian Alba:
+Me preocupa un poco porque pienso que nos puede limitar un poco. Sí. Hay que ver qué tan se pongan burocráticos a algunas cosas, ¿no? Lo entiendo.
+
+UNKNOWN_SPEAKER:
+O sea, lo entiendo.
+
+Hector Palacios:
+Se acabó el Instagram en el computador de la pega. Está bien, o sea, es solamente normal cuando una empresa crece y sobre todo si está trabajando con clientes donde la seguridad de los datos es súper importante.
+
+Sebastian Alba:
+Eso es clarísimo.
+
+Hector Palacios:
+Por el otro lado, no nos podemos quedar atahuan.
+
+Sebastian Alba:
+que lograr un hay que lograr algún balance para mí esto es como lograr a lograr si nosotros empezamos a empujar un poquito más fuerte bueno en qué esta hueá vaya porque si no yo creo que finalmente yo creo que a mí los felipes no sienten tanto la necesidad porque están bueno a lo mejor sí pero no creo que estén en tantos frentes que piden una reacción tan rápida como en proyectos lograr tener buen la cantidad reunión y todo con contenido duro no sé yo lo veo muy distinto, yo creo que nosotros lo supimos un poquito más.
+
+
+
+Hector Palacios:
+Es que bueno, esto es como el Uber, es como llega aquí a quedarse, independiente de cuál sea la ley, la gente lo adopta. Nosotros los consultores lo adoptamos.
+
+Sebastian Alba:
+O lo lográis estructurar para que la hueá se haga bien, o voy a dejar que la hueá se meta y te pueda quejar por no regularlo, no O es tu ventaja competitiva o cagay, porque al final más que ventaja
+
+Hector Palacios:
+competitiva es subirse al carro, yo creo. Es como si no nos vamos a quedar atrás y van a haber consultoras que efectivamente lo va a empezar a usar y capaz que empiecen a bajar hasta su como se llama el seniority en los proyectos, porque van a tener caros que van a estar súper apoyados por una buena herramienta. Y van a ser.
+
+Sebastian Alba:
+Eso va a pasar de aquí a mañana, pero en un par de años, quizás cinco años. 70 años dos años si ya está metido nada más cuando es fácil es fácil ahora tenerlo con inicialidad y extra google seguro va a estar me imagino que ya tiene en su web y el de el de gus y
+
+Hector Palacios:
+no lo probado no hay tampoco lo probó mucho que estoy pagando el de chat y pititos pero está bien si bueno Los mejores, de hecho, incluso en las llamadas a pide como que me cobran así como 10 centavos de euro. Cachai, cada vez que hace la web y apico, bueno, no son como 10 euros más al mes, 20 euros más, que se yo, pero ayuda caleta. Ahí como que ya dejé de preocuparme tanto. Pero sí, o sea, está.
+
+ Facebook tiene ya Lama, Google tiene Jamie y así está lleno de una guerra.
+
+Sebastian Alba:
+Lo lo probó poquito. El del celular, no. El celular que tiene la metida a la vez. Voy a ver, voy a ver, voy a ver si logro hablar con Alejandro para que nos ayude. De repente que tengamos esa presentación de repente en enero. Y proponer que eso sean como los siguientes pasos, no como empezar a detallar. Siguientes pasos que tengamos un periodo de tres semanas, un mes para detallar los casos de uso e identificar los datos para empezar a construirlo.
+
+
+
+Hector Palacios:
+Bacán, pues si lográs enchufar eso, súmame, porque yo estoy bien metido en esta hueá. Así que, ideas de aquí a nasalito.
+
+Sebastian Alba:
+Yo me imaginaba, de repente, mostrar algunos casos de esos que tengas ahí tu herramienta, hueón, y decirle a Felipe, oye, hueón, necesitamos que se mueva, y esta es como la acción esclava que creemos que hay que hacer. Yo creo que para meterle un poquito de presión a Felipe, porque hoy día no me veo yo pudiendo empujar un proyecto como ese.
+
+Hector Palacios:
+El tema gobierno corporativo yo creo que tiene poco...
+
+Sebastian Alba:
+yo creo que va a cambiar sobre todo para este tipo de proyectos internos de metodología, cosas así, yo creo que no va a quedar ahí. Va a cambiar con respecto al año pasado. Esa va a ser mi idea, pero entonces por ahora creo Mejor ir directo a Felipe que se va a calentar.
+
+Hector Palacios:
+Con Ale igual lo he conversado, con él sabe que estoy más o menos prendido y que tengo como esa idea, así que yo creo que igual si le dan prioridad y se empieza a meter a eso, él va a
+
+Sebastian Alba:
+estar encantado también, yo sé que le gusta. Sí, sí. Yo creo que a veces le dan ganas de empujar cosas un poco más aterrizado.
+
+Hector Palacios:
+Hoy ese cabrón chico va a mil por hora.
+
+Sebastian Alba:
+Tampoco es tan cabrón chico. 25, no sé qué edad tiene. No, yo tengo 28.
+
+Hector Palacios:
+Ya, ya no. Yo decía que iba a mil por hora porque iba como todo rápido, porque creo que no tenía tanta experiencia antes de, como que había trabajado en mil hueás. Estaba con varias hueás Sí, es como muy pilar, es como que de eso, bueno, hiperquinético y ya está casado y tiene hijos y todo eso. Qué guay este, cabrón.
+
+Sebastian Alba:
+Sí, increíble, guay.
+
+Hector Palacios:
+Es buen ángel, dale, muy buen ángel. Sí, me cae bien, me cae la raja, en realidad. Encuentro bueno.
+
+UNKNOWN_SPEAKER:
+Sí, sí.
+
+Sebastian Alba:
+Es de esos perfiles que hay que causar, porque cuando tiene mucha energía puesta, a mi rol periódico, Me gustaba un montón, también, pero me cansaba. ¿Quién?
+
+Hector Palacios:
+Ro, al principio.
+
+Sebastian Alba:
+Iba muy a mil, le costó ser Ro. Ahora está más tranquila con el máster. Sí, ahora con el máster relajo un poco, porque está con harta carrera.
+
+Hector Palacios:
+Pero sí, se nota que Ro es como pro-innovation, como que le gusta...
+
+Sebastian Alba:
+Voy a estructurar eso para que de repente lo hagamos en enero. Una primera conversación en enero, las próximas dos semanas.
+
+Hector Palacios:
+Me interesa porque es algo que yo llevo casi como hobby ya a esta altura y la verdad que siempre estoy dedicando tiempo y no voy a parar así que cuando me pillé voy a estar arriba del carro igual. Así que algo vamos a poder mostrar y nada, está eso el tema del recurso que ahí te pido que ojalá lo leas antes con la mayor prioridad posible.
+
+Sebastian Alba:
+Si el tema recursos lo dejé ya marcado, me lo voy a dejar como los ítems de prioridad alta. Pero ya lo dejé de resursos, así que si lo toco en esa.
+
+Hector Palacios:
+Yo termino masajeando el equipo para ver para qué se termine eso. Porque al final el tema no creo que sería mal de llevarse mal, si al final son las presiones que hacen que el equipo empiece a rozar, lo típico.
+
+Sebastian Alba:
+¿A quién no le ha pasado?
+
+Hector Palacios:
+Bueno, a mí. Un proyecto actual. Un proyecto anterior.
+
+Sebastian Alba:
+Todo el proyecto. Imagínense, todo el proyecto y en algún minuto hay algún minuto de tensión. Algún rocecito. El miércoles ya nos estábamos agarrando con Raúl.
+
+Hector Palacios:
+Después el otro día como si nada. Ya esos perros viejos que agachaban como...
+
+Sebastian Alba:
+Ya hay cancho. Yo con Raúl también.
+
+Hector Palacios:
+también va a agarrar un par de veces, güey.
+
+Sebastian Alba:
+Es que va muy... A veces pese a que no es demasiado, güey. O ya, para la hueá.
+
+Hector Palacios:
+Sí, estaría bueno tenerlo de nuestro lado, sí, el güey. Ese sí. Sería bueno, güey.
+
+Sebastian Alba:
+Sería bueno. Pero al menos hasta que nos salgamos en vivo, güey.
+
+Hector Palacios:
+Sí, pero ¿no te parece que le empecé a seducir un poco cuando tengamos la oportunidad de verlo? Porque ahí sí, lo llevamos bien, cachai? Así como pasó con Henry en su momento.
+
+Sebastian Alba:
+Yo le preguntaría, eh.
+
+Hector Palacios:
+Yo le diría, oye, me gusta esto, así como, podría ir, yo te diría, yo te recomendaría a Brago ese semellería, una hueá así. De hecho lo tenía repensado muy tarde. Sería un buen perfil para traerlo, bueno. Súper bueno para empujar.
+
+Sebastian Alba:
+O sea, o sea, no saben S4, bueno. Tener una persona que sepa IDP y S4 tanto y la capacidad de estructurar hay que frenarlo un poco pero yo creo que muy para lo que hacemos y para el perfil que con el que trabajamos está muy bueno aquí en la zona sería una adición gigante tener a mí me haría una tranquilidad mental tener en como raúl empezando a estar tomando un rol de gestión en los proyectos buen día hoy día ¿Estás buscando un PM senior en la región?
+
+ Creo que hace falta. Eso lo estoy buscando para Roca porque la verdad, al seguir con el management lejos, fuera de horario, está siendo muy jodido porque hay muchos frentes.
+
+Hector Palacios:
+Necesitamos alguien que sea más responsable. De todas formas, necesitamos más gente acá.
+
+Sebastian Alba:
+Sí, eso estamos viendo cómo cubrirlo, eh.
+
+Hector Palacios:
+Para el de Egipto alguna claridad, al final Omar está seguro porque a mí no me ha dicho nada. Yo tengo ahora una 1 a 1 con él para cachar qué onda.
+
+Sebastian Alba:
+A mí Felipe me dijo que se quedaba.
+
+Hector Palacios:
+Quizás lo que pensó Felipe de su sesión.
+
+Sebastian Alba:
+A mí me dijo que confirmado se quedaba, que después me contaba más porque le había prometido el cosas, pero que se quedaba. Si querés, le vuelvo a escribir. No, tranqui.
+
+Hector Palacios:
+Yo lo veo hoy día con Omar. Si es que Omar me dice hoy no tomar otra decisión. Ahí comento a ver qué onda. Pero bueno, ya hicimos lo que se pudo. Eso es lo importante. No sé qué otra hueá más le podría ayudar. No sé si es que hoy día me dice alguna hueá como Héctor. Estoy pensando en él. Lo voy a decir hoy. Si tú sumas ya lo había hablado con Bastián, si le interesaba la idea. Es que sería golazo tenerlo en Andorre.
+
+ Sí, o sea, mejor que se vaya. Sé que no es bueno sacarlo de Farma o que sería mejor tenerlo en el proyecto de Abari, como se llame. Pero en última, para evitar que se vaya a meterlo a Andorre, que apoyar a Rubón, estaría bien.
+
+Sebastian Alba:
+Sí, ya sabemos.
+
+Hector Palacios:
+Y ahí hay mucho trabajo. Sí. Entonces ya, ahí te digo qué onda.
+
+Sebastian Alba:
+La próxima semana también va a estar Aelzio en Chile. Bueno, también le hablé con Adelso y le dije, bueno, ahora preocúpate que cuando haya un sitio, que quede bien alineado, responsabilidades adicionales, cómo puede ayudar en su play, ayudarlo a un camino para empezar a saber más. Por último, que también vea un cambio ahí.
+
+Hector Palacios:
+Sí. No, no, de todas formas. Pero bueno, ahí veamos. O sea, si se continúa, perfecto. Si lo veo reticente, ahí le tiro la posibilidad a Agno, A ver si le interesa para que se venga con nosotros. Y si no, bueno, que sigan ese proyecto. Me imagino que después lo van a calzar para el proyecto de Egipto que está saliendo, que va a ser más presencial.
+
+Sebastian Alba:
+La idea es que sea en eso, que va a tener más presencia, un equipo más grande.
+
+Hector Palacios:
+Vamos a tener más gente. Deberíamos contratar más gente en Egipto.
+
+Sebastian Alba:
+Ya, está el foco en contratar entonces. Sí, ya estamos entrevistando. Ya, porque ahí igual, porque la idea me decía Diego que era ¿Te acordás el que te gustó? Es el que le contrataron. Entra ahora personalmente. ¿Sí? Sí, sí me había contado Marci.
+
+Hector Palacios:
+De hecho, por eso no me gusta el tema de que se fuera. Porque cuando dije, oye, tu amigo viene llegando. Mal presente para mí. Sí, pues mal presente. Estamos queriendo formar equipo y se nos va el primer WANT y contratamos.
+
+Sebastian Alba:
+No, no.
+
+UNKNOWN_SPEAKER:
+Mal idea.
+
+Hector Palacios:
+¿Quién habría sido?
+
+UNKNOWN_SPEAKER:
+Oye, Marta.
+
+Sebastian Alba:
+No sé, no sé. Si se le han entregado propuestas.
+
+Hector Palacios:
+Bueno, ahora que necesitamos consultores de IEP ahora para un proyecto de Egipto, Marta, tiene experiencia.
+
+Sebastian Alba:
+Sí, porque el ARAI se confirmó al final de la semana pasada y esta es la primera reunión que hacemos ya de balance con los proyectos nuevos, que al final de esta vez hay varios. Pero a partir de falta ahora de los super, se vendió FCAgro, por el lado Rafa en Brasil, se vendió el Arabi, se vendió Alcir en Dubai, se vendió un pellizco más chico en Chile que se llama... Ni me acuerdo, un pellizco más chico en Chile, una empresa que no había escuchado.
+
+
+
+Hector Palacios:
+Apotente. Marta está bien con el inglés, habla súper bien. Como la mayoría de los perfiles de España, pero ni siquiera con acento, ¿cachai?
+
+UNKNOWN_SPEAKER:
+Habla re bien.
+
+Hector Palacios:
+Estuvo liderando en Holanda un tiempo cuando estábamos full y hubo un retraso ahí.
+
+Sebastian Alba:
+¿Demanda o fuera algo de supply?
+
+Hector Palacios:
+No, demanda, demanda. Tiene que aprender supply, pero entre contratar un un chico que tenga que aprender todo de cero, a Marta que tiene que simplemente expandirse, yo creo que sigue añadiendo valor.
+
+Sebastian Alba:
+A menos que contraten a alguien que realmente sí sabe todo, ¿entendés? Igual estamos buscando un senior architect o estamos intentando comerciar algún DM que nos quede al proyecto que sea de España, DM más, adicional. También, sí. Esas son las cosas que estamos revisando.
+
+Hector Palacios:
+Sí, porque irse para el Cairo es difícil, ¿no?
+
+Sebastian Alba:
+No, no. Al final la oficina va a estar en España y vamos a entregar desde ahí con viaje. Lo más probable es que esa sea la estructura principal.
+
+Hector Palacios:
+Sí, porque nadie se va a querer ir para allá.
+
+Sebastian Alba:
+No, y también se está invirtiendo para eso. Se ponen oficinas más ricas, más cómodas. En algún minuto pensaban pensada digo pensar incluso tener alguna especie de casa es la residencia para demandar gente a casa cuando tengamos que mandar eso cuando tengáis que mandar gente para los viajes de viaje que se queden ahí bueno
+
+Hector Palacios:
+pero en algún minuto estuve si te da buena idea tipo google web para tres son buenas ideas, a veces hay que pensar un poco fuera de la caja, hay que ver si tiene sentido o no. Hay cosas que no son numéricas, no las podés medir hasta el paso.
+
+Sebastian Alba:
+La presencia, la comodidad de que llegué a un lugar que ya te lo tengan organizado, cerca de la oficina.
+
+Hector Palacios:
+Claro, el tema de incentivar a la gente, de ir para allá. Está bueno. Bueno, si vienen harta hueá, bueno.
+
+Sebastian Alba:
+Vamos a ver, vamos a ver. Bueno, se está empujando bastante, bastante, bastante el punto este de España. Sí, sí, esa es la idea.
+
+Hector Palacios:
+La idea, de hecho, el tema de Omar me preocupó y lo que queremos hacer acá es sí, empezar a trabajar más seguido. De hecho, hoy día está Pablo con nosotros acá.
+
+Sebastian Alba:
+Sí, se vino. Pablo es el que vino por el día.
+
+Hector Palacios:
+Pelayo ya la segunda semana que estamos aquí en la oficina y viene. Ro va a llegar en un rato, si no llegó ya. Un día a la semana, un par de días a la semana está bueno.
+
+Sebastian Alba:
+Sí, eso es lo que nos cae con Omar.
+
+Hector Palacios:
+Sin más que Luca o cualquier cosa, eso es lo que nos cae con Omar, que no tenemos como un hub, que se siente solo, tirado, ¿cachai? Eso es. Es como decir, me gustó la universidad online, quiero una universidad presencial, algo así. Claro. Es como que a mí no me sirve lo online, que es algo que le pasa a varios.
+
+Sebastian Alba:
+Es increíble lo cultural de los jóvenes de India, que están... Para ellos el estándar es trabajar remoto. No, eso es bueno, cero problema, cero. Porque todo lo bueno es lo que buscan, ¿no? Ojalá trabajar con empresas de Estados Unidos. El horario, si la voy a lograr, les da lo mismo.
+
+Hector Palacios:
+Exacto.
+
+UNKNOWN_SPEAKER:
+Increíble, bueno.
+
+Hector Palacios:
+Sí, no, si son con la gente de acá, más que nada. Bueno, con la gente de acá, si tenemos a estos dos caros chicos que los estamos...
+
+Sebastian Alba:
+Pero en España, en general, son mucho más... Aparte, pues sí, algo entre los buenos y los malos. Sí, entonces por eso hay...
+
+Hector Palacios:
+Mucho más sociables, bueno. Por eso me preocupa que Pablo quizás venga al menos una vez al mes, ¿cachai? No, no, quizás dos, una vez al mes, no todas las semanas, porque a él le guía más lejos. Pero que se aprenda a tener este contacto con nosotros cada cierto tiempo y a ver si se motiva a venirse, en realidad también. Se lo he tirado por abajo.
+
+Sebastian Alba:
+Sería bueno.
+
+Hector Palacios:
+Y bueno, con Omar ahí ver cómo lo hacemos, porque de momento, hasta que no crezca el equipo, si va a seguir estando ahí solo y a él sí le afecta un poco más.
+
+Sebastian Alba:
+No, Egipto es distinto, no es así. A lo mejor Omar, en esta misma estructura, con estos países sí sería bueno tener un lugar donde llegue que no cueste extra o más y por eso para el coste al mes irse tres días tres días a España o cada dos meses no costaría nada.
+
+UNKNOWN_SPEAKER:
+Que venga a visitar, tú decís.
+
+Hector Palacios:
+Y los puestos de Madrid y el Cairo no son tan caros?
+
+Sebastian Alba:
+No, no creo que son 200 dólares.
+
+Hector Palacios:
+No sería malo.
+
+Sebastian Alba:
+Yo creo que realmente también es algo que conviene invertir para que se vea, que vaya con la oficina a España, que a la gente.
+
+Hector Palacios:
+¿Tú crees que sí que lo veo medio reticente, le podría ofrecer esa hueá también? Así como, oye, vente a Adnok y cada cierto tiempo vente a España.
+
+Sebastian Alba:
+Eso lo puedo usar, sobre todo si le sumamos a Adnok, sí o sí. Podemos justificarlo como gasto del proyecto. Tenemos espalda para hacerlo.
+
+Hector Palacios:
+Y así nos juntamos con él y viene más seguido.
+
+Sebastian Alba:
+Mi plan es viajar cada dos meses, máximo tres. Al menos para esas instancias que me gustaría que tuviéramos casi todo el equipo de Arnold en España para temas más internos de coordinación, planificación, qué sé yo.
+
+Hector Palacios:
+Cada dos meses. Claro, como que cada dos meses se tiene que tener una semana en vez de tres días para que tuviera sentido.
+
+Sebastian Alba:
+No puede ser una semana y pagar ese vuelo cortito, pero yo creo que se podría hacer. No sé si se lo podemos comprometer ahora. No le puedo... Si se lo di reciclante, di que es algo por lo que podís también pelear, que podís gestionar.
+
+Hector Palacios:
+Lo propongo al menos. Podríamos revisar esta posibilidad.
+
+Sebastian Alba:
+Si es que no... Solo si lo vemos más reticente. Igual, mira, Felipe me respondió hace unos días preguntándose si le confirmó 100% A ver, veamos qué dice. Pero sí, yo igual eso lo veo como una opción. Incluso, bueno, yo eso lo vería como una opción. Bueno, yo creo que en febrero, en febrero voy a andar por allá, bueno.
+
+UNKNOWN_SPEAKER:
+Acá.
+
+Sebastian Alba:
+Sí, en febrero voy a ir. Estoy viendo si la primera, la segunda, la segunda, la tercera, pero voy a andar por allá.
+
+Hector Palacios:
+¿Tenía pensado viajar a Atmos también?
+
+Sebastian Alba:
+Sí, sí. Tenía pensado hacer una semana en, una semana en Dubai, o Udai, y una semana en Madrid.
+
+Hector Palacios:
+Nosotros viajamos, vamos hasta ahora, esta es la segunda semana, la primera es la última de enero y la primera de febrero.
+
+Sebastian Alba:
+Sería buenísimo poder viajar la primera, la última que está en usted allá, la primera de febrero y segunda en Madrid. Claro. Voy a intentar coordinar eso entonces. Si, tengo que hacer otras cositas antes de mi siguiente revuelta. Buena conversa Héctor. Buena conversa, me había llamado la atención que tuvieras tanto tiempo weon. De las mañanas tengo tiempo weon. Normalmente, sabes que esta semana logré cerrar varios temas.
+
+ Igual estoy dejando espacios para temas fuera del operativo weon, porque eso no es imposible. En general mis viernes son tranquilos. Los lunes, martes, miércoles son un desastre. Puedes viernes, puedes piola y los viernes son super tranquilos. Alguna vez...
+
+Hector Palacios:
+Los primeros viernes que tengo más tranquilo, porque generalmente había estado medio complicado. Cuando deberían ser más tranquilos porque ahí no jueguen a los deadlocks. En el peor de los casos juegan a los deadlocks.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Sebastian Alba:
+Pero bueno, la idea es tener tiempo así.
+
+Hector Palacios:
+Sí, porque si no, nunca veía estratégicamente y andáis siempre pensando en lo operativo. Y no muestra la perspectiva.
+
+UNKNOWN_SPEAKER:
+Chau.
+
+UNKNOWN_SPEAKER:
+¡Gracias!
+
