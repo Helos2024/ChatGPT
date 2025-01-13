@@ -1,0 +1,690 @@
+UNKNOWN_SPEAKER:
+You Good afternoon, everyone. Good afternoon. Shall we start?
+
+Kunal Sheth (ADNOC Group D&CS):
+You need to wait for a couple of minutes. I think we are already five minutes. Let me share my screen.
+
+UNKNOWN_SPEAKER:
+Tim, I hope you are able to see my screen.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yes, we can see it. Yeah, thanks. So currently we are in the supply planning for MRO BPD. So we'll quickly go through the comments and we already most of the comments we had addressed based on the review comments this is from the Mohammed Awadullah related to that we need to minimize the human intervention in the supply planning process so wherever possible we need to put up the certain so that it can get automated to reduce the manual involvement.
+
+ This is a general comment which we need to be considered for MRO as well as for chemicals. Let me know if you would like to continue for that. I'll just read through the Jaganath comment. Material types also to be specified similar to demand planning. So here we have mentioned the material types which will be a part of MRO, that is ZRSA, ZHSE, and ZIBE, which is to be considered as a filter criteria whenever we are doing the supply planning process in IBP.
+
+ So that we have updated. In the comment section. Then moving to the next review comment from Jaga. External planning or external purchasing. So it is more of an external planning part, which we will do it in IBP, where we will have two planning types. That is one for the reorder point and one for the advanced supply planning. So that is also updated.
+
+Kunal Sheth (ADNOC Group D&CS):
+Now, as advanced supply planning is a new process in AdNoc, Jagga mentioned that this concept will be validated and accepted after verifying the result with actual data. So currently, we are into build phase, and we have started pulling the data from one ERP as well as from the root system. So based on that AdNoc-specific data, we are going to model the demo, and then we will go through the individual stages of unit testing, uid so that business is able to visualize the data and how is it actually looks
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+like in ibps so it will be an ongoing process for this point what is advanced supply planning is it we ask for the demand plan you mean items out here Yeah, that's right.
+
+Bastian Osorio:
+It's a replenishment, yeah, based on forecast. It's not based on real the point.
+
+UNKNOWN_SPEAKER:
+Next question.
+
+Kunal Sheth (ADNOC Group D&CS):
+Now moving to the next point. This is again from Jagat. This safety stock is mandatory for advanced supply planning. It will increase my inventory. So as Abhashan has just mentioned, so safety stock is mandatory. It's not mandatory, but again, it's a case-to-case basis. So whenever we have a fast-moving item and it is expected to have some safety stock to be maintained, then the system will propose that.
+
+ Otherwise, it is not mandatory to be considered whenever the reorder point planning. And this will gradually come to know whenever we are doing the demo in the system and then figure it out how system is actually working for reorder point planning as well as for the advanced appliance.
+
+UNKNOWN_SPEAKER:
+So this figure is also updated below here.
+
+Kunal Sheth (ADNOC Group D&CS):
+Next is Purchase equation and stock transfer equation to be part of SAP IBP. So system will create in IBP and then it will publish to S4 HANA as a part of planning result. Safety stock is not part of ZB planning. I think email was updated. Because earlier it was not showing as a safety stock here. So that we have detected, which is missing in the above screen. Then again from Jagga, is this applicable for MRP type Z1 and VB?
+
+ So this is basically a determination of which type to be used. So for S4 HANA currently we are using Z1 and VB, but going it will be having two types of external planning, whether it is a reorder point or ASP, that is Advanced Supply Planning. Again from Jagga, considering the Mattel Reservation, not Mattel Reservation, I think this is, here we have updated the content. To get it reflected based on Jaga command.
+
+ However, about open PR and reservation, so system will consider this as a supply element. So that also we have updated respectively here, stock plus open purchase order purchase equation, as well as open STU and STR to be considered. During the supply planning run. How about open reserved quantity? So system will consider this, and it is already updated in the point number one, as mentioned by Vivek.
+
+ Now again, this is more of a validating and accepting the result. So this is, again, we will come to know once we are loading the actual data from S4ANA to IBP. So this is more of a definition of reorder point. So that we have updated in the glossary section. So when the current stock fall below the reorder point, the system will plan the replenishment element. This is definition correction. So this process is not clear to be discussed.
+
+ So I think, Mo, Fakur, you have already updated, right? Your turnaround maintenance. So Jagga was having a doubt here, especially for the turnaround. I think if Jagga is there, then we We can clarify this point with him.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+No, he's not here.
+
+UNKNOWN_SPEAKER:
+He's on leave.
+
+Kunal Sheth (ADNOC Group D&CS):
+OK, OK, I think this point we can temporarily park.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Hi, good afternoon. Can you hear me?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So yeah, this process is not very clear. No, you're here. Yeah, I'm here because I made a lot of comments on this meeting. But my first question. Other than me, is there any other inventory focal point managed to review this document?
+
+UNKNOWN_SPEAKER:
+Arun?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So do we need some time to review this document again, Arun? Because based on this document, they're going design the system you know yeah we can have a review okay because we need to complete this as soon as possible around you know sorry and I'll let Khalid brief you we're already
+
+Mohamad Naamani (ADNOC Group D&CS):
+very late so we cannot just also extend this further we already reported to the steer co that we have a change in this Now we're already overdue in the review and now we need more time. I'll let Khalid comment, but we need to close the review and move to the build for wave two. So I'm not sure why we don't have all the input yet, but we appreciate that. I mean, we were planning to close this today.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+That's okay, that's fine, Hector. That's that's fine you know because anyhow anyhow sorry mamad anyhow this document is going to be approved on conditional basis you know because based on the results only we can give the final exactly and that's what we need with wave one or through FIRAs exactly yeah exactly yeah that's okay then fine no problem we can we can make it as a finalized document I mean you can finalize today yeah then when we see the result then we can
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+see how it is goes that's fine so this document MRO? I guess it is for MRO.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Actually there is a confusion Kunal, you are also a MRO and chemicals are also arriving, so Ali wait, you don't go.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Okay, so no I mean is it for the MRO, when you say MRO, is it for pure MRO material or for the chemical which is have Uh. Reorder point in the system already. I think I'm sorry.
+
+UNKNOWN_SPEAKER:
+OK, no.
+
+Fakhouri, Mohamad:
+Wait, wait, wait, wait a minute.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+See even the chemical is having the reorder point. It will be like MRO only, but yes, I leave. What's you? Yes, of course. Yeah, it will come under this one because whatever the items having the planning, it will be under the MRO. But for the Q, for chemical, the production chemical especially, which is refreshed based on the forecast, it will be covered under the different topic.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+So, Jagga, if your statement, then if the MRO, sorry, if the chemicals with related point is considered here, then Kunal, in the first paragraph, you need to include the material type also, because your material type mentioned in the first paragraph is only ZRSA and ZIB I think.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Because we have a lot of lab chemicals which is replenished based on the reorder point.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Here you mention the ZRSA, ZHC, ZIB. So people will have a confusion that the chemicals are not considered Yeah, that's what I thought.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah. So anyhow, they are saying example, so it's later on it need to include all.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+The material type. Yeah, with the real point and also MRO item.
+
+UNKNOWN_SPEAKER:
+I mean turn on items which are written based on the reservation.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+The workflow. Yeah, I think it is all similar. Even for the demand plan, but it is not clear and I could not even I try to enlarge it and see it. If you just go to it and explain that will be better.
+
+Fakhouri, Mohamad:
+Yeah, so that's the thing when taking screenshots of A flow, it's not. It doesn't. It's not really clear. It's not clear, but what we've done is that we've added the link. It's a PDF link that takes you to the floor. Um and we've added your comment, uh, regarding the endorser. So you will see that, uh, and based also on Friday's conversation. So once the controller, uh, completes the supply plan, it goes to the team lead first as endorser.
+
+ And then it goes to the manager as the final approver. So we've incorporated that, uh, that feedback.
+
+Kunal Sheth (ADNOC Group D&CS):
+Okay, because before I try to the link it was not opening this in the last document this one yeah I think now you can try because I am able to open okay yeah yeah so we have both supplied any MRO and we have turnaround maintenance as well the entire flowchart in the PDF format.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK, but still, why this document is mentioning MRO slash chemical? Which one? No, the document topic.
+
+UNKNOWN_SPEAKER:
+Why does it mention MRO slash chemicals?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Actually, we are going to discuss MRO PPD as well as chemical PPD both.
+
+Kunal Sheth (ADNOC Group D&CS):
+this one so that's why I invite yeah okay this document is not both is it one this is one day for tomorrow right yeah this is only for the MRO only fine yeah so once we are going to this all the 20 review comments then we will switch to the chemical BPD okay yeah So we have a PDF also attached along with this screenshot to depict the MRO for corrective, preventive, as well as turnaround maintenance.
+
+
+
+UNKNOWN_SPEAKER:
+So Jaga, shall we move?
+
+Kunal Sheth (ADNOC Group D&CS):
+Or you need to discuss the turnaround maintenance? That's OK. No, no.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Turnaround, when we see the real data, then we can understand. A little bit more you know just now currently nobody have any idea about that supply planning for the turnaround yeah right right we are clear about the mrpm and I mean real point planning but other planning we are not very clear because we don't have any data to see and verify the results okay right right and it is also one of the change topic for the user that how it will look like in IBP from the turnaround perspective.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+And here you have mentioned the digital team to confirm. So this point, I don't understand.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Because we have the role and system. The system part, I think they have to check how this is going to work. Terms of IPP but so that's why I mentioned maybe this activity list has to be confirmed by the digital team you know because okay if you look at the role and system it's most of them it's a system and
+
+Fakhouri, Mohamad:
+then IPP because so as a business user we don't have any idea about this yeah. That's totally fine Jagga but those are all standard let's say activities we're not making big customizations. Part of supply planning is that the system will gather transactional data and also will fetch the inventory levels.
+
+UNKNOWN_SPEAKER:
+Okay? Yep.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let me go to next. So here, you're talking about material planner or inventory planning. So reviewing and creation of this procurement would be done by inventory planner. So that also, Mohammad Fakhoury has updated as a response to your comment.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is, again, to be validated, aligned with actual data. So that we have already online. Next is from Majid Khan. Can item or material be added manually in the existing purchase equation? See, purchase equation will be created out of IBP once we implement this IBP as a tool. Purchase equation or STR, now the point is, why do we need to manually add the material in the PR? In the exception cases, or how it is?
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+That is possible, no? Because there may be once a replacement, I mean, once we run this program, during that review period also, there may be some new requests may come. Because they don't want it to run the program again, you know. So every day there are many new requests are coming. I mean, new items are created, so that's why they raise it out that is it possible to add any item or delete any item in the PR which is proposed by the IBP.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Well, even there are some international we are dubbing the PRS based on some manufacturer device. Should be there. So that might be the reason Archad Khan would have put up this.
+
+Rahul Patel (ADNOC Group D&CS):
+So the way I see this is that the IPP will trigger PR based upon what data we have in IPP. So there are two ways to manage changes into PR. Either you change the data in IPP like if IPP proposes.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Even the same point we discussed before. In SAP we already done the alignment on how the PR should generated based on some set logic. Yeah, but the same logic whether I'm going to adopt in IBP that we are not sure. Yes, that's the same logic logic. No, there are some manufacturer ways the system is splitting up, whereas due to the low value cases or the exclusivity or non exclusivity. No, I mean as an inventory controller we are like merging the PRS or we are segregating the items and the PR both the thing we are doing.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so. As part of the requirement, we've taken up this requirement. Your existing logic of PR consolidation should work with IBP. And that's one of the points for us. So that will work with IBP. Now, the only point is, once the consolidation logic is incorporated and the PRs are created, there are two ways you can make changes or manually make changes. Either you, on S4 HANA side, once the PRs are created, you modify those PRs manually in S4 directly.
+
+ If you have an additional input, not there while you've created IBP or in the IBP itself you add those in the supply side you add those and you can always run the program adder saying that okay I've got an additional input I need to create 10 additional peers and then you can trigger again from IBP. So we can reply to this comment saying what I've discussed that it considers the consolidation logic If we need to trigger PR from an IPP site, make changes in IPP, and the IPP will create the PR as per the change, or directly change the PR on S4 HANA side, where S4 HANA is still a PR, which means you can still make changes onto those PRs as per the input and convert that PR into PO.
+
+ So when the next time the IPP cycle runs, whatever PRs are available in S4 HANA are taken as input. And if you have creating additional PRs on S4 HANA side, would be available for IVP to make sure that in the futures of the running, this extra PRs are adjusted against. We don't create a duplicate required. I hope this will work.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+One more point, maybe in case of any emergency, if you want to create a rush PR. So we should not wait for the Pantry cycle for the IVP to run. So individual item, can we have the run Same like our MRP run.
+
+Rahul Patel (ADNOC Group D&CS):
+So it's not MRP run, but if you know that a certain PR has to be raised and you don't want to wait for IPP, then SAP will not stop to directly raise a PR, right?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+That's what I'm asking, you know, MRP run. See for us, if a user is making a work order today, the next minute I can do an MRP run, I can generate a PR. So you know, IPP, how it should be handled. You have to wait till the 31 days or 30 days run, or?
+
+UNKNOWN_SPEAKER:
+Normally, you'll re-wait.
+
+Rahul Patel (ADNOC Group D&CS):
+But if there is an urgency, you can always run IPP as well as ADOP. So which means that you will have to execute those steps manually. Say, after supply planning run, on the fifth day, you've got an additional urgent requirement. Now, there are two ways you can handle this. If you know that you need 100 quantity urgently, then directly raise the PRNS for RANA. It goes through the process, and you get 100 quantity.
+
+ And it gets reconciled. In the IBP in the next slide. Or for that one specific model, you execute the steps in IBP manually. And if you execute the steps in IBP, you should be able to care for that model manually.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Both ways are possible. That means both the way it is possible. Yeah, that's what I'm saying, yes.
+
+Kunal Sheth (ADNOC Group D&CS):
+And Rahul, just to add to your point, instead of manual also, we can increase the frequency to have a daily run for the critical material, for the emergency, instead of creating a PR manually, we will get the PR out of IVP based on the schedule, based on the frequency.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so that also we can achieve. Yeah, only thing is someone has to review and approve on a day-to-day basis. So let's align as we, this is something which can be discussed during the build as we demonstrate supply planning. We'll get to know how the supply planning happens, and we'll get to know how the PRs are created. Jobs to create PR. If the requirement is to create jobs daily basis, it's a job, right?
+
+ So as part of the system configuration, we'll schedule it the way you need it, end of the day. So that something is possible.
+
+Kunal Sheth (ADNOC Group D&CS):
+See, idea is to align with the Avadalla's comment that we should not have a manual intervention. So creation of a manual PR is a manual intervention from the end user. So it is better to get it created through the system so that planner or the manager going to approve it so that you can proceed for the procurement process further. So it is recommended to go with the automated process.
+
+Rahul Patel (ADNOC Group D&CS):
+Agreed, but the only point is IBP is a planning system, right? So which means we don't want to use IBP for independent PR creation and approval and go through because there are a lot of steps in IBP. So I don't want to take away the process on S-400 completely just because we have IBP and not allow business critical transactions to be restricted by IBP.
+
+UNKNOWN_SPEAKER:
+Sure.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let us move to the next point. See, same point which Arun has discussed. Should be clubbed based on MRP controller, project manufacturing LTP. So this is the same logic we are going to replicate in IBP. Yeah. This was raised by Hajat Khan.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+Now, again from Ajrat Khan, turnaround touches equations must be linked to WBS for Buruj.
+
+Rahul Patel (ADNOC Group D&CS):
+This is WBS, one of the requirements of turnaround. We have noted that. So this is part of the solution we are building.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Kunal Sheth (ADNOC Group D&CS):
+So project-based talk we are going to capture for the turnaround maintenance. We have a separate segment for that.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, I think this is the last comment from the MRO. So team, any doubt in the MRO? Then we can move it to the chemicals.
+
+Rahul Patel (ADNOC Group D&CS):
+The question is, if we are able to resolve all these comments, which we'll reply back today, will we have any concern getting this document the MRO supply planning. We are assuming that all these compounds are resolved, then we can initiate the approval of this document. Let's move to the next document.
+
+Rahul Patel (ADNOC Group D&CS):
+If we have the approvals identified for all of you, so I think MRO is Mohammed Abadullah, I think. Can you scroll down? Who is the approval for MRO?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, I can.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me go to the MRO.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Mohammed Abadullah.
+
+UNKNOWN_SPEAKER:
+Yeah, Mohammed Abadullah. Yeah.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK, OK, good. Go to the chemical side. So now we are into the chemicals.
+
+Kunal Sheth (ADNOC Group D&CS):
+First two is from Mohammad Sadiq. How to ensure less than three years requirement is covered with MRO?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So here we have mentioned. Updated the comment that the objective is to establish a medium term to long term up to three years and long term for up to five years feasible supply plan that meets the various stream of the demand planning and supply planning requirement capability so both the long to medium term to long term requirement are getting in this this is the only criteria to identify these chemicals so this is one of the mrp type which we are considering for planning external planning is where we are talking about a zv as well as zs for the advanced supply planning.
+
+ So this is the way how we can able to create this chemical and as we mentioned earlier that we will also have a specific material type which is going to distinguish from the MRO material where we're going to integrate
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+the chemicals to run the chemicals in IBP. Sorry for interrupting you. This document is the final revision, I mean, final version after taking in consideration all the comment which was done on December, no? Right, right. This is for the supply planning document.
+
+Kunal Sheth (ADNOC Group D&CS):
+And earlier, which we discussed, that is for the demand planning and inventory planning.
+
+UNKNOWN_SPEAKER:
+OK, OK.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So this is the final version, we can say, supply planning, which will be part of Wave 2 solution. So ultimately, we're going to see the S4 results like purchase equation or stock transfer equation which is which is going to get created through supply planning of IBP yeah let me move to next comment from Hajaratkhan why open pr planned order and other open document not considered in supply planning.
+
+ So here we have updated based on the review comments that we will have like demand forecast from coming from demand planning, material reservation from S4HANA, safety stock, stock open, POPR and open STO SR. So these are the transaction data which are going to get considered during the calculation of net requirement and then based on that system with create a purchase equation or stock transfer equation in S400.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+OK, for forecasted item, we don't need safety stock. So it should be same like MR or maybe optional if it have to be there.
+
+Rahul Patel (ADNOC Group D&CS):
+Calculates safety stock, but the forecast will be always more than the safety stock, right? Be the trigger for replenishment while safety stock is calculated as part of the standard logic of IBP.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So now for forecasted item based on what is calculated the safety stock? Forecast only. Okay, you mean like monthly forecast or one month forecast?
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, so whatever monthly forecast we have given that forecast gets considered as part of the automated logic for calculating safety stock on the event planning side.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So in this case that means we will have, because we usually maintain one month stock. So in this case if system is calculating safety stock as one month also then we'll have two month stock. Which will increase our stock value also. There are two separate things.
+
+Rahul Patel (ADNOC Group D&CS):
+When you say that you want to target one month stock, so that's a period. So the way IBP understands that safety stock is an absolute inventory in numbers, like 10 quantity, 20 quantity. This is automatically gets calculated based upon demand or the forecast. Additionally, your requirement to carry inventory of one month, which is in terms period so we define that how many periods you need to have inventory to be stocked as a stocking parameter and that is also considered uh on top of the safety stock so if we define one month period then it will not calculate a safety talk which is of two months and then it will not happen it will only looking at the forecast will try to create
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+inventory for one month period try to optimize inventory for one month only okay maybe during the demand plan sessions we have mentioned for ensure that most of the production chemical safety stock we maintain it with the supplier as VMI.
+
+Rahul Patel (ADNOC Group D&CS):
+But you mentioned right the safety stock with supplier is on raw materials not on the finished products.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, no, no. Both raw material and finished product. We maintain with them three month raw material and one month finished product or two months sometime. Yeah, then the contract. And do you?
+
+Rahul Patel (ADNOC Group D&CS):
+Do you have this data updated in as well in anywhere in the system?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, no, this is updated. Our site system is not like monthly reports from the supplier.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so right now if the forecast if the demand as an input is available based on the demand at an input or the forecast as input, we will define the parameter for how much period of inventory you would like to continue in the system, and that would be configured. Let's look at the demand when we, by the end of this Jan, we will have this demand-related discussions, demonstrations with the team. And based upon this demonstration, we can look at how it takes care of the recall.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Kunal Sheth (ADNOC Group D&CS):
+Sure, thanks. Let me move to the next. This is more of a terminology of glossary, include definition of target inventory level, which is actually the max stock level. So this Vivek has already updated in the glossary section. Again from Harjit Dhan, create purchase equation should be done by inventory controller, manager is part of creation and approval in one role will be violating segregation of duty where is team lead role so based on the input from Azhar Khan we have modified the process flow diagram so here we can see the team lead role is also there who is going to basically review and review the supply plan and and then it goes to the manager for approval.
+
+ So team lead role we have introduced earlier based on the inputs from the review comments from Ajit Khan as well as other team member. Let me move to the next. From Ayesha, all process flows must be adjusted to match.
+
+Aboobacker M. (ADNOC Gas - PD):
+The previous comment is based on the DUI, no? You mean to say segregation of duty? Yes, it's based on the DUI. If it is with the team leader level, you're supposed to stop it with the team leader level.
+
+Rahul Patel (ADNOC Group D&CS):
+The only difference here, we need to, Aboobacker, is to understand that we've discussed in other meetings as well right now. So IBP is the planning system, so we are approving plan, we are not approving independent transactions. So while we will consider the DOA, considering that we are not approving one transaction at a time, because you will be having hundreds of material and for every material IBP will propose a plan.
+
+ So your existing DOA.
+
+Aboobacker M. (ADNOC Gas - PD):
+Okay, I can understand the value based DOA only applicable in the S4 HANA, not in the IBP.
+
+Rahul Patel (ADNOC Group D&CS):
+Correct.
+
+Kunal Sheth (ADNOC Group D&CS):
+So process flow must be adjusted to match with approved DOA and please mention TN role as well. So DOA part anyway would be covered in the S4 HANA based on the approval mechanism and the new role we have introduced as a part of chemical approval process. This we would like to clarify from Ayesha also include forecast cancellation, delay, postpone, responsibilities, approval and endorsement. This we don't understand, actually.
+
+
+
+Fakhouri, Mohamad:
+Yeah, for endorsement, this part now has been clarified based on the discussion we had on Friday, which will be the inventory team lead. So the inventory team lead will endorse the supply plan, which will be an approval. And then the second approval will be the inventory manager. But yeah, we still need some clarification regarding the forecast cancellation, delay, postpone responsibilities.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, let's align this with ISA separately, and we can go back to this. Sure, sure.
+
+Kunal Sheth (ADNOC Group D&CS):
+You can move to next. This is from Ali Mohammed. End user VP approval is required in the demand plan. I hope it is included in the process. So do we need to introduce a new role, which is you are talking about VP approval? So here, there are two parts.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah. No, no. What I mean is in the demand plan only, not in the purchasing plan.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rahul Patel (ADNOC Group D&CS):
+So, I hope that this comment is not relevant for our current supply plan document. Yes.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Because the workflow was not clear for me, I could not open, so I just, that's what I was saying. Yes. So, I was not sure whether this is for the supply plan or is it for the demand plan. So, as you're, as I understand now, it is only for the supply plan. Plan, not for the demand plan. So this comment is applicable only in the demand plan, in the forecast.
+
+Kunal Sheth (ADNOC Group D&CS):
+So even though you have mentioned this comment in the supply planning, but we will ensure that this point is addressed whenever we are doing the approval workflow modeling in the demand planning for chemicals.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So whenever we model the workflow approval, so we'll need to ensure that end-user VP approval is required. So Mohith Kuri here, the workflow which we have created for demand planning, so there is a point that VP part. So does it mean the demand manager we are talking about or it is other than that?
+
+Rahul Patel (ADNOC Group D&CS):
+So just for everyone's understanding, we are working with change management team to define the approval levels, and that would be taken as input for our overall approval. So we've already initiated this discussion where at what level for IGC, for what level AdNoc expects approval for the hierarchy AdNoc has. And as part of that conversation, the definition and the configuration of what will be governed by this conversation.
+
+ So if from that conversation, we'll take this as input to that conversation that this is one of the requests received, and then the change management But it does not change the process as of now, unless we are able to define and close all the approvals for all the business processes. That is true.
+
+Kunal Sheth (ADNOC Group D&CS):
+Thanks. Why planned order is not considered about PR clubbing program? So this point also we have discussed earlier in the MRO that the PR clubbing program which we have developed in SORR, to be reused again from IBP to create a PR, considering all the complex logic which we have developed so far.
+
+Rahul Patel (ADNOC Group D&CS):
+And by the way, for everyone understanding, plan order was created by MRP. Since we are not using MRP, there is no plan order available even to be considered. And then from a supply planning, we are using PR clipping program as a reference. Existing logic would be replicated as I wish to be.
+
+UNKNOWN_SPEAKER:
+Correct. This is from Mohammed Sadi.
+
+Kunal Sheth (ADNOC Group D&CS):
+Negative reservation also to be considered.
+
+UNKNOWN_SPEAKER:
+Issue returns.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, so that we have noted as well as added as a comment here, including returns. So that it can easily do the net of during the requirement quantity calculation. This is also from Adil Khan. In case of Buruj, open planned order PR PO call of reservation stock for turnaround will be linked to WBS. So what we understood that all the transaction element are creating with reference to the WBS element similar to the MRO.
+
+ So this is also captured in the IBP so that whenever we are talking about turnaround maintenance, so supply planning will also going to get created separately and it is not clubbing the requirement which is coming from the other forecast
+
+UNKNOWN_SPEAKER:
+demand element.
+
+Kunal Sheth (ADNOC Group D&CS):
+So we will be able to have a visibility of WBS wise what are my supply plan as well as the demand which is coming from the For that, we have earmarked separate key figure also so that end user will
+
+UNKNOWN_SPEAKER:
+have a visibility on individual WBS details. This is from Prithviraj.
+
+Kunal Sheth (ADNOC Group D&CS):
+Turnaround requirements are exclusive to the turnaround and should not be considered as normal maintenance usage. Yeah, so same we have just addressed. Captured separately with a turnaround key figure for chemicals so that we have a visibility of turnaround demand as well as supply plan which is created with reference to the WBS element.
+
+UNKNOWN_SPEAKER:
+This is from Mohammed Sadiq.
+
+Kunal Sheth (ADNOC Group D&CS):
+What is supplier capacity? Elaborate please. Demo will help us to understand the So here, Hector has already answered how much supplier can provide in a given period. So this is the capacity of the supplier which we are talking about. This is a scenario where they cannot provide a certain amount if that can exist. So based on supplier capacity, that information we are also capturing in IBP. So based on that, this is nothing but a constraint which we are defining in supply planning.
+
+ The system will respect this constraint and it will create a supply plan based on this constraint so that we won't be having a overloaded situation even though supply is not able to fulfill that requirement. This we'll cover as a part of demo session so that this will be able to get how system will work.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+How you will get this information from supplier? You will take a history to understand this, is there any you know you even don't know who is the supplier right at this moment IBP even don't know who is going to be the supplier no vendor information we are
+
+Kunal Sheth (ADNOC Group D&CS):
+going to integrate in IBP so whenever yeah yeah vendor vendor is nothing but a master data which we're going to integrate in IBP so based on that whenever uh pr is getting created so pr is assigned with the specific
+
+UNKNOWN_SPEAKER:
+supplier.
+
+Kunal Sheth (ADNOC Group D&CS):
+So that we will have a visibility that how much quantity is going to perform.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+It's not mandatory that that same supplier going to be get the tender.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, yeah, so so you're correct. So we have identified a scenario where you may not have a vendor identified when the PR is created and this constraint is something which every constraint will have a separate key figure and someone has to tell to system. If this information in terms of capacity is available in S4ANA, it can be integrated. If it is not available, it becomes user input so that it can be defined one time.
+
+ Now, in the cases where we do not have vendor identified, this constraint may not be applicable because we don't even know how we can define the capacity. In that case, this would be blank.
+
+UNKNOWN_SPEAKER:
+Okay, let's see.
+
+Kunal Sheth (ADNOC Group D&CS):
+Material availability with supplier need clarity. So this has been updated in the content section. Stock in hand as well as in transit.
+
+UNKNOWN_SPEAKER:
+This is from Ali.
+
+Kunal Sheth (ADNOC Group D&CS):
+We have mentioned before this role should be by the system not by the IC. Inventory controller. So more here running the forecast. It will be an application job. Right. It should be a system instead of inventory controller. Point number seven. Would you be able to update this. Yes. Yes.
+
+Rahul Patel (ADNOC Group D&CS):
+I think the only way it gets updated the only thing is that we will have the process work will rise and the process task would be created so from a user perspective he will not be running the forecast he will just confirm whether he wants to initiate or start the task and and then the subsequent activities will be configured as a follow-up action to the task automatically so inventory controller will get this notification saying that okay this is something which which has to execute it and then the moment it will happen automatically in the backend.
+
+ So it's not that he's doing any action other than approving or initiating it.
+
+Fakhouri, Mohamad:
+Yes, the control will acknowledge that we need to run the forecast, but the system will automatically run it. It's just a step.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+The purpose is to minimize the task in the inventory as much as possible. So if it is system and this product is identified as already added to the list that this product is required. So the forecast should be generated automatically. So this is not a forecast generation, this is forecast consumption.
+
+Rahul Patel (ADNOC Group D&CS):
+We are in supply planning, right? So forecast is already available. Forecast consumption yeah based upon so basically it's one of the steps so when we will be able to show you the steps so we have flexibility of defining what steps goes automatically based upon user confirmation so one confirmation can drive three four different steps and it is it's the application job which means user is not supposed to do it user is supposed to confirm it so as you get to know the system if you give this feedback that okay combine all these three step as one trigger then we can combine those It's just that how we configure the workload where confirmation from say inventory controller will take a three, four different activities and all those three, four activities can be scheduled as part of one confirmation so that we don't create manual work for every activity to get one by one.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, so this is step is to show to the inventory controller. The reservation or the demand or the consumption because Yes, so so you will have concerning run forecast. Consumption, demand and reservation. So which one it is are all combined, all combined. All combined in one report, yes.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+It is difficult to judge unless we see it.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so that's where just for information you will have separate rules like key figures which what is the demand against what is the reservation, what is the remaining forecast. The forecast consumption will consume the forecast and show what is the remaining available forecast, and that can be used by inventory controller for planning. You're correct. As you see it, then only we'll get to confirmation, but we are just letting you know that this is how system will do it.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Correct. The point from my side is that wherever it's possible to automate automated to reduce the task of inventory control we don't want to end up having a system and then we have to review every step we have to check
+
+Rahul Patel (ADNOC Group D&CS):
+every step and you understand my point yeah noted noted yeah so for sure as we go into the next phase when we test and see you will get to know and then we'll take that feedback of what steps can be automated what steps can should has to be where you user needs to look at it for sure.
+
+Kunal Sheth (ADNOC Group D&CS):
+During the demo we will go through this individual activity step and then we will mark which will going to be done by the system but wherever you can see application job it is a system only even though the responsibility of inventory controller whether it is executed or not correctly so that otherwise what will happen if the job is getting failed then you will get a double demand so because of the consumption not happen, you will have a demand coming out of demand planning and also you have a demand coming from the metal reservation.
+
+ So that we'll see in the demo session in detail. Yeah, so this is from Aisha. A system also should generate a procurement plan for the items which can be included under long-term agreement. LTP.
+
+UNKNOWN_SPEAKER:
+Analyze recommended supply planning result.
+
+Kunal Sheth (ADNOC Group D&CS):
+The system will generate distribution plan. Yeah, so system will generate a procurement plan. Yeah, Rao.
+
+Rahul Patel (ADNOC Group D&CS):
+We've discussed this in our workshop also, and we've said that the system can generate a report which suggests the generation More if you are in SKC, if you can align this with Ayesha and update this point.
+
+Fakhouri, Mohamad:
+Yeah, Ayesha is not available. I don't see her in SKC too. But tomorrow, I'll align this with her. So we've discussed this.
+
+Rahul Patel (ADNOC Group D&CS):
+We are aligned. So let's reply to this point so that it gets documented. If she has further concerns, we can then talk to her tomorrow.
+
+UNKNOWN_SPEAKER:
+Yeah. So next is from Mohammad Sadiq.
+
+Kunal Sheth (ADNOC Group D&CS):
+Comments will be provided once the result is seen. What is scenario analysis? So this is a simulation where we need to do to understand the supply planning result before publishing into S4 HANA. Yeah, this is just an optional functionality which we can use to help planner to play around with the different scenarios and compare the results. Normally system should be intelligent enough to consolidate.
+
+ So I think this is in line with the PR consolidation. The system will consolidate the plan, this is automatic. So I think here we are talking about consolidation of the purchase acquisition based on the different logic which we have developed in the S4 HANA.
+
+UNKNOWN_SPEAKER:
+Right, Ali? Yes, exactly. Yeah, yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So the same logic which we have in S4 HANA is going to be reused in IBP to create a purchase acquisition. And then we need to validate. Whether the purchase equation quantity is created based on that combined rule which we have implemented so far. The answer is yes, we'll use the same logic. Should be clubbed based on LTPA material group manufacturer. Yeah, so I think this is also the same point, clubbing of the purchase equation based on the key combination which we have developed.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+from Ajit Khan, is it possible for inventory controller to create PR manually or adding items in existing PR? So I think this same point we also discussed in MRO, where creation of PR is definitely possible and adding of this based on the emergency. But it is a best practice to get it created through IVP. And as we discussed, the frequency of the application job can be scheduled daily basis. So this we can discuss in detail whenever we are during the demonstration and then we can finalize.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Just to clarify now in the IBB, how it will work for item which is under LTB, already there is an LTB. So direct release order will be issued or a PR will be issued.
+
+Rahul Patel (ADNOC Group D&CS):
+We will define this as part of the functional specification, so it can be done the way you want, like ideally would like to raise PR with someone reviews and approves so that the release order gets created.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Because this set will again we was having before such system, but this again it is you are adding unnecessary. Establish because so there is already a DBA, so we directly we raise the call of order or release order.
+
+Rahul Patel (ADNOC Group D&CS):
+from there to be if that's a request no need for VR okay so I'll just recommend a document this point so that when we define when we the functional special document is created for this the requirement is to make sure that directly the release order is created and not the PR and this is for all the item not only for chemical release order you mean to say the this order is basically against a long-term agreement call of order
+
+Kunal Sheth (ADNOC Group D&CS):
+but I think let us also check with Bash and Hector that yeah because yeah the feasibility part yeah this is already mentioned by the Hector here user will be able to adjust the required the system needs run the assess
+
+Rahul Patel (ADNOC Group D&CS):
+feasibility and that would be in step 11 yeah so so that we are talking about two separate Here is adjusting the quantities and the point raised was raising the order versus PR. For LTP.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Your point that for wherever there is an agreement, no need for PR creating a PR. It should be directly release order.
+
+UNKNOWN_SPEAKER:
+Understood, understood, yeah. Sure. So.
+
+Kunal Sheth (ADNOC Group D&CS):
+We have noted this point and I will just to answer this. We have a lot of requirement related to the LTP in the BID document which was raised by Aboobacker as well as from Murugan.
+
+Rahul Patel (ADNOC Group D&CS):
+I think this point is also captured there in the BID document as well. Yeah, let's let's make sure because it's a requirement.
+
+Kunal Sheth (ADNOC Group D&CS):
+We'll update that in the comments of BID. Correct, correct. Yeah, we'll update there so that the requirement is complete. As a part of BID document.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let me move to the next. What is the significance of keyfigure from Prithviraj? So KF is the keyfigure which is updated by the Vizic. And also it is described in the glossary section. This is from Mohammad Sadiq. Exporting expired batches. So whenever we are reading a stock from the S4 HANA, so system will create a filter where expert batches will automatically removed from that filter criteria is only going to fetch the stock from the unrestricted use so that we have a proper visibility in IVP which all batches we can use for further planning.
+
+
+
+UNKNOWN_SPEAKER:
+This is from Ayesha.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So in this case, sorry, In this case, that means the system will remove from the current stock or stock in hand the expired chemical or near to expire chemical quantity or what? Yeah, yeah, yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So whenever we are pulling the stock from S4 HANA to IBP, we will define a filter criteria. Now, expired stock anyway will going to be removed from the filter, but let's say stock which is going to be near near expiry like let's say next 90 days or 180 days whatever based on the business logic so system will going to integrate only those batch stock which is actually relevant for the supply planning so yeah this is a filter criteria which we can define based on our discussion and finalize and that's why we have mentioned we are going to define those filter in the technical session for the integration so that we have scheduled tomorrow So from Aisha, what about item criticality and price plus new created item with follow which logic?
+
+ So I think this we need to clarify with Aisha. So more whenever you are in line with Aisha, so I think this point also you can clarify. So that we can be able to update the comment. Because we are able to understand what about item criticality and price plus new created item will follow which logic.
+
+Rahul Patel (ADNOC Group D&CS):
+Let's talk this This is from Prachuraj from Muruj.
+
+Kunal Sheth (ADNOC Group D&CS):
+So existing fast moving in AdLog is based on consistent frequency twice in a year for last three years then how is it different? So Advanced Supply Planning is recommended for FM steady demand high LTE with resigning high consumption and lock lead time lead high reorder point and with holding cost lead to excessive holding cost so but even with ASP the safety stock will need to be high considering high lead time again leading to excessive holding cost so basically this is more of a determination of the reorder point planning and advanced supply planning so Hector has already replied on this so twice a year is still a very low frequency for advanced supply planning as it is based on the forecast so for such material in five years you can have 10 consumption for example for an statistical forecast that number of data points input is still too low to generate a reliable forecast so that's why we need to reassess IVP frequency segmentation to determine should be high as considered so basically whether material to be planned in as a reorder point or as an advanced supply planning so there are lot of parameter which we need to be considered like as a consumption recurrency, demand pattern, lead time segmentation, and stock value.
+
+ And based on that input, we'll be able to determine the right planning type to be planned in supply planning.
+
+Rahul Patel (ADNOC Group D&CS):
+So this activity will continue as we have integrated with S4R. Now we are reviewing the data. As part of the demonstration, as we go ahead, we'll be able to demonstrate based upon the data how IPP is able to plan, and then we can take it from there and align what should be the advanced supply planning and what should be the order point planning in terms of based upon the data at NOCAS or the frequency of consumption at NOCAS.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, thanks a lot. How much is left?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Sorry to interrupt here.
+
+Kunal Sheth (ADNOC Group D&CS):
+We have another meeting actually which is already started. I think still around 8 to 10 are there. So Kunal, if the comments are replied, do we need to go through each and every comment?
+
+Rahul Patel (ADNOC Group D&CS):
+Or if the comments are replied and there are no further feedbacks, let's go through the comments which are not replied or which we need more clarity so that we can wrap up this faster.
+
+Kunal Sheth (ADNOC Group D&CS):
+Sure. I think most of the points are already addressed. So there are a couple of points which is still to be answered from Ayesha. So I think, Mofukuri, if you can align separately with Ayesha, then we are, I think, complete from the chemical BPD point of view.
+
+Rahul Patel (ADNOC Group D&CS):
+Because I can see all the comments are already replied. So team, if there are any feedbacks in terms of replied comments, we are assuming here the comments which are replied are closed, which means we don't need go through them each and every one of them in the meeting. We'll align with Ayesha for the open comments where we need clarity from her, but most of all the comments other than what Ayesha mentioned are replied or updated in the chat.
+
+ So if everyone is okay, then we assume that if we are able to address all these comments, the document is complete and we can take it forward. Is this a fair assumption?
+
+Rahul Patel (ADNOC Group D&CS):
+Silence is acceptance by the way, so if there's no reply.
+
+Kunal Sheth (ADNOC Group D&CS):
+No, no, no, not all the time.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So finally, do you have any comments?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So far, so far I don't have any further comment than what's being said. So anyhow, because all the approval is conditional and we have to see because sometimes so many new also when you change and it is difficult to visualize unless you see and then each section you do it and try it and so when we run the demo and we run it practically or work in it then at that time we will be able to have the actual picture in our mind.
+
+ It as it remain theoretical and assumption. So as long as promised that we would not go live till. We see the real life demo on then maybe some case of to work in it from A to Z from the demand plan till issuing the PR. Yes, so as we are proceeding, yeah, we will have this.
+
+UNKNOWN_SPEAKER:
+Mr.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Ali, we will not go live unless you confirm us. So we will have the user acceptance UAT testing. Unless you guys confirm whoever they are at the UAT, we will not go. This is a part of the process. So it's not like it's something we'll just make live without your consent. That's for sure.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, sure.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+In this case, I think we don't need to delay any further.
+
+UNKNOWN_SPEAKER:
+So just proceed.
+
+Rahul Patel (ADNOC Group D&CS):
+Thanks a lot for the feedback. So, then we will close this comments and send this document. So, both MRO and chemicals document will send for approval. Assuming that we are closing all the comments and sending it for approval as soon as possible.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Incoming call from CV identified. One small point. Yes. During the initial discussion, somebody was highlighting that even the system will suggest Optimize a reorder point.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, that's part of the inventory planning discussion. This is supply planning. OK, OK, OK. OK, then if we have this alignment, let's conclude this call. Thank you everyone for time today and will initiate approval for this two documents as soon as possible.
+
+Kunal Sheth (ADNOC Group D&CS):
+Thank you. Thank you. Thank you everyone. Thank you. Thank you bye.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Thank you. It was.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+you
+
