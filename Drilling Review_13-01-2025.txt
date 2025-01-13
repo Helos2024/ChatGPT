@@ -1,0 +1,548 @@
+Hector Palacios:
+Hello Arun, how are you doing? Are you there?
+
+Arun Singh:
+Good morning.
+
+Hector Palacios:
+How are you? Good morning, Arun. Where are you? I'm doing good.
+
+UNKNOWN_SPEAKER:
+Great, man.
+
+Hector Palacios:
+I was telling you it's not going to be you because we have a meeting in parallel with the AdMob guys, so we are just splitting. Oh, okay. But it's okay because I was working on the logic on ADP. So let me show what we have. So we have two updates. One is that we created the bone explosion in a different way that I think is much easier, given the case. And the other thing is that they updated the bone, basically, definition.
+
+ So now we are clear what is the bone definition. It doesn't look the best, but let's check what we get, right? Let me share the screen.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+And let's open what we have.
+
+Arun Singh:
+So from that meeting, right from the knowledge transfer of drilling, right? So basically, did we capture like any importance, important stuff? Now I'm basically understanding something.
+
+Hector Palacios:
+So what is the case in the world here? Like that, like terminology, but not things that we would hear with definition, competition code, it seems that is not something that is like really standard in all the industries. So yeah, not things related to like the attributes itself, but yeah, I mean, more than the meeting, I think it was more helpful for me to check the videos that the guys share. Because they are very self-explanatory and you understand the drilling materials that you're using, basically.
+
+ Basically, we have the two bones. I don't know why this is not updated the description, but we have the bone here. Maybe it's because it's a favorite. Yeah, it's a favorite. We have the bone here and the item. That is what they will be expecting. In the bone here, you have the bone code. Directly, and the completion code is here, not anywhere else, because the completion code is related to the bone code, not to the material itself, you know?
+
+ So here you have the bone code, whatever will be the bone description, the concatenation, and then you have the completion code, the world field, and world type, and so on. These attributes here are just like for reference, but the real source of this is the customer master data, right? Or the mask of the data, the BS, WBS, something like that. So this is the one, you have the one code and that is the only key.
+
+
+
+Arun Singh:
+So this one code is nothing but the SAP material code, right? The technique code, right? Yes. Is my understanding correct? Okay.
+
+Hector Palacios:
+Yeah, this is what Bignish will create on IBP.
+
+Arun Singh:
+Okay, okay.
+
+Hector Palacios:
+But it will be assigned to us if you notice it's a bone code. Not a material for us.
+
+Arun Singh:
+Yep, yep.
+
+Hector Palacios:
+Then you have the explosion, right? The bone coat and the material and you have the bone quantity.
+
+UNKNOWN_SPEAKER:
+That's it.
+
+Hector Palacios:
+Then in a planning view, you will have the explosion. This is a very easy explosion because the bone coat and the material are different dimensions on an EVP. It's not the material in two aspects, but it's just different Yeah, so the boom code is different dimension you created, right?
+
+Arun Singh:
+Exactly.
+
+Hector Palacios:
+So the boom code, you see that the good part of this is, well, first of all, it's because this makes sense, right? In our business, maybe this one makes sense. This is a material and then you need to explore the material, but they want to see it on the material mass data table. Here it's not the same. This is a material for a boom, indeed, not the other way around. So we can put it as a different dimensions here and we can check it, the explosion, you know?
+
+ So you have the word plan and the word plan material requirements. It's a simple multiplication between this word plan and the component quantity. And that's it. Very straightforward, nice solution. Because you don't use the attribute transformation or whatever logic that makes this more complicated technique It's simple and beautiful, right? So this is fine. The point is that the BOM definition is a little complicated, right?
+
+ Let me show you what Rahul was doing in the last session we had because these guys are progressing very, very slowly. Instead of giving us the data, they give us the BOM definition, but I don't see that they are going to give us the data anytime soon. We discussed about what are the basic, the core attributes that will define the BOM. Usually, these ones, not the one ID, I don't know why you put that there, but it's the field, the one type, the completion code, and the category.
+
+ This is what they say. So we have now the category in our site, but then they have different attributes that can define the bone. So they have the casing design code, for example, the additional completion code, the weld head code, and the liner hanger cementing accessories code. But you are not going to use it in all the cases. Basically, these are like the additional codes, because you have the main bone, this one, but it's going to use this form and then you will have like the additional so you have an additional bone for the wellhead and then this is going to depend on the wellhead of course and in the casing you know then the the other one I don't know how why why this call uh I forgot the name dce download completion equipments.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, maybe, maybe.
+
+Hector Palacios:
+So this is related to completion code. Yeah. But finally, this one is related to the casing and the to the line changes meant in code.
+
+Arun Singh:
+But, uh, like, uh, the bomb master that we have, right. The bomb ID table. So, uh, will there be any difference? Like, does it make any difference to us because it will be a individual bomb id right bomb code id right yeah and now that what is the main thing we with this the main complication is a very complicated solution
+
+Hector Palacios:
+because information that we need first of all okay you give us this we can define a different bones that that's fine right so we we see how we define the bones by each combination maybe it is possible. The point is that whatever detail you have here, you will have it by case in design, by wellhead code, by line hangar cementing, and so on. Now, in the work plan, you don't have that information. So how you are going to cross the tables, how you are going to do the join.
+
+ If you don't have this attribute, you have it on the bone, but then you don't have it on the plan, how would you expect me to do the cross? You know? Yeah, that's the main thing. They have this information, they have it. That's why we have it in blue because the plan is usually the bar chart or whatever it is to find at this level. So, they say let's iterate the plan at this level and then manually on IVD we can add this or viewer, right?
+
+ So, this is the This is something that they want to add on a VPN. They want to have the main bone bone, but they want to put like additional attributes, like, like their variants of this template. So you have a template and then just want to go to that specific code and they, but I want to put this or this, you know, so that's a complication.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+So can you scroll up in this file?
+
+UNKNOWN_SPEAKER:
+Right.
+
+Arun Singh:
+Can you scroll up? So, we have OCD, EG, WL, DC. So, we have these different types of bombs, right?
+
+Hector Palacios:
+Yeah, so you see this is a combination of one because this is a casing designed to see and all these attributes and you have all these materials related to that and all these quantities.
+
+Arun Singh:
+Okay, and what about the materials that are blank?
+
+Hector Palacios:
+No, no, that doesn't make sense of this. It's just like he didn't put all the materials possible. Okay.
+
+Arun Singh:
+So, we will have all the materials, right? Yeah. Okay. For the wellhead, you have another type of bone.
+
+Hector Palacios:
+You see that it's exactly the same materials, but now you have the wellhead code here, and you define it like that. So, you have now another bone that is not dependent on the casing, but only on the wellhead and these materials. You know. And then the same for the other ones. It's like the additional material is defining which additional bumps we are bringing.
+
+Arun Singh:
+OK, so this wellhead will be part of well master data or it will be like a classification in BOM?
+
+Hector Palacios:
+Wellhead is going to be part of master data. Yes, for the bomb code probably.
+
+Arun Singh:
+OK, so the bomb code that you have shown, right? Do we need to add additional attributes? If yes, then maybe I can, you know. Start configuring. And I'll remove the old config. In that case, then.
+
+Hector Palacios:
+Yeah, I mean with your config that you were doing. Add these attributes. I think that I was creating them, I think that we created all of this, but I didn't add it to the planning layers or to the planning area. So it's just to add them. And now what I'm thinking is that, because basically this is what we will need to have in the master data. You will need to be flexible enough to have like, for example, this, and then all this empty.
+
+ And then when they fulfill this, like in the master data, That will mean that we need to bring another one related to this.
+
+Arun Singh:
+Okay. So if they put AC one, then that means do we need to bring the main bomb plus the AC one or just only AC one?
+
+Hector Palacios:
+Look how it is. So the first one, the generic one is like with the casing sometimes. Sometimes, or without the gasing sometimes. So you have this generic bump, and then when you add EC1, it needs to bring this little part. So there will be two bumps, right?
+
+Arun Singh:
+One is the main bump, and then another is additional, this one. Okay.
+
+Hector Palacios:
+This is what we need to think, but what I'm thinking is that the well plan that we are thinking on the Excel right now will need VMS data. That is the only way. You cannot put a descent code, something like this on the planning view.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arun Singh:
+So do we need to add this attribute in the planning levels or no? Or it will be part of only master data?
+
+Hector Palacios:
+Well, even the BOMS has. That planning level. So, I'm not sure. Yeah, yeah. In the planning level, I've seen at least as a reference, I guess. Yeah, you need to add it to the WOMS metadata.
+
+Arun Singh:
+So, if we go to the WOMS metadata, let me So if they update any values in this casing design or any other attributes, right? So in SAP side, right? We will have that a bomb code, right? Bomb ID code or some whatever, right? With that represented classification, right? Like if it, have selected violet core wh1 probably they should have in s4 hana as well so that the correct bomb will be you know synchronized or we are just bringing the defaulted brom bomb from s4 hana and then
+
+Hector Palacios:
+they will be just updating manually in ibp uh we will need to check how it's going to be to be honest we need to sync on the best solution in this case But it seems that, I mean, it's a good question. It's not only a topic of IVP, it seems to be a topic of S4HANA as well, because we need to bring the bond from anywhere. Yeah, I'm thinking on the first definition that we have at the beginning, like you have like a bond with everything and then on IVP you mark whatever you don't want but I think that is going to be more complicated to what they want because then you need to mark like many fields but then they want to mark like uh I just want to change the casing design or remove it and IVP should react accordingly you know okay so they're going material by material they would like to go no casing design work in side, this kind of stuff.
+
+
+
+Arun Singh:
+But then if they select, I don't know how it will be possible. If they select a well headquarter, which one, right? Uh, then, uh, in S1 on a, if there is a bomb ID, right, then only it will update the relevant materials. I don't know.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+Yeah. This is the configuration. So this is the planning layers. So you can see what plan is by week look and bone code is not the material here.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+They are loading the plant at the bone code. Yeah. And then you have the, well, so And the component, of course, is here. Component quantity. Broad, bone code. So there are three planning levels and that's it. Not really complicated, so whatever you add probably is going to be related to this. I'm thinking that the case in the wellhead and all of that is related to the well, right? So you add it to the customer master data layer and you add it to all the planning levels that are required.
+
+ That's it. So, do I need to add all those other four attributes in custom OMS data?
+
+Arun Singh:
+That is when?
+
+Hector Palacios:
+In these ones, at least, that they are the ones that we use for drilling, but in the future, eventually you will need it because the standard planning levels that we prologue, you know, what we prologue doesn't count. Maybe we prologue cost if we copy the drilling plan at the level to the supply side.
+
+Arun Singh:
+So maybe that one. OK. So those four attributes should I add in well master data or in bomb master data? No, well master data. They are related to the well. OK. So why did we not create this bomb At the well ID level also?
+
+Hector Palacios:
+Because it's too many bombs. The idea is doing this. Always just make one minute. OK, so the so basically if planner wants to.
+
+Arun Singh:
+Update my even this even this continues to be an hour gauge.
+
+Hector Palacios:
+Right, so when you are pulling this you are like maybe tackling four different wells that follows this logic like field to be exploratory and AC one, you know, so you are basically grouping. But I'm still not getting a hitter.
+
+Arun Singh:
+If I add this for right, uh, casing is an additional method into the customer's data. There will be a lot of well ID. Okay. Individual well ID. Then the, does planner has to update this, like for example, additional completion of code, easy one. Yeah. If there are like 10 wells under well type WI right. What injector then he needs to add this AC one on all of those 10 well ID or should we create or should we add this four attributes in the bomb and he will just need to add AC one here.
+
+
+
+Hector Palacios:
+it's a good question because this will bring because you have a good point because the well id I mean the the well will already have the information right yes we do have the information right the well is going to be by wellhead yeah yeah I haven't shown on this but yeah the There may be something there.
+
+Arun Singh:
+Maybe they don't need to add anything like this.
+
+Hector Palacios:
+They just don't need it. It's just like the question is, do we need to activate the bone?
+
+Arun Singh:
+Seems like the bone should be ready, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Arun Singh:
+But the thing is that to be different bombs either way I think yeah yeah there has to be different bomb I agree uh one should be the main bomb and each bomb should have a different bomb id but for this uh additional one right like for example wellhead code so if uh 10 wells has this wh wellhood wellhead code right then the bomb reference column, right? How it will be read, right? I think it is possible to use CIDS.
+
+ Only issue is the maintenance part, right? Because this wellhead code and everything is there, I think, in the file. I saw this, but... Yeah, for sure.
+
+Hector Palacios:
+I mean, if we do the integration, we need to bring the wellhead related to that. I don't see that is like, for some cases, yes, and for others, no. I think that for all the cases, we need to bring that information. Related to the well, we need to check that this information is fulfilled. If it is not, then, well, that's a complication. But they can go to the well ID method later and to place it manually if that's not the case.
+
+ The thing is that well by well, they will need to put this information if it is not there. Information is going to be of the well mass data, right? So, the question is how we do that whenever this material that by default we always bring this one, right? And when we identify that there is a bomb related to that specific wellhead one, it also brings this one. That's the technical stuff that we need to do.
+
+ The other thing is if we can integrate it or not. Manual or automatic. But our solution in the second part is regardless of that. So let's think how we can trigger two bombs instead of just one. That's the main challenge.
+
+Arun Singh:
+So basically, if they maintain well-head rate in, let's say, well-matched data, and if you are getting this information, because I know they have this information, well-head code, I don't know about the other two. And LHCA. So if we have this information to write in the Excel file, then probably in S4HANA, they just need to create two, three, four classifications more. And then probably through transformation in CIDs, I think we can bring those relevant materials.
+
+
+
+Hector Palacios:
+Yeah, I was thinking to create this like an additional file, a field, like call bomb type OCTG, WH, DCE, and LHCA. Those are the bomb types, you know. Now in our logic we need to put like if this is an LCTG, WH, and we have that specific wellhead code, then it should bring something. I'm not sure clearly how we can do that. Like you have this, and if we have this field, then bring this one if it exists.
+
+ But I'm sure that we are going to find a way. It needs to be a way to do this.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arun Singh:
+So currently, OK, I understood this logic. So right now, what should I do?
+
+Hector Palacios:
+Let's try to sync on this. I mean, let's start by adding these attributes to the well, right?
+
+Arun Singh:
+I created it, so just add it to the planning levels and all of that. Just let me note it down. Planning level and well master data, right?
+
+Hector Palacios:
+Yes, let me write this down. So we can follow up later.
+
+Hector Palacios:
+OK, so. Let's create just one.
+
+Hector Palacios:
+So it's basically what we say, add any levels. And the other thing that we are discussing is types.
+
+Hector Palacios:
+L, A, C, A, D, C, E, and what's another one there?
+
+Arun Singh:
+So these different bond types will be in S4 or in IBB? In S4, they need to be in S4.
+
+Hector Palacios:
+So we just integrate the bonds and the triggers should be automatic. If we detect that there is a bond for wellhead 1, and we have one, then automatically it should jump to bring in those additional attributes. That is what it is.
+
+Arun Singh:
+I think Vignesh will be creating material class for these bound types in S4 HANA.
+
+Hector Palacios:
+So here we create the materials. We will integrate the codes at the end. But the point is that we will not have the codes. That's the main difference. And I think that the logic that I created is incomplete there, because I just created that as a demo, you know?
+
+Arun Singh:
+The demo is done?
+
+Hector Palacios:
+No, at the end we replaced that by the definition. So now they changed. Whatever we we're going to show is not enough, because now we have the complete view of what needs to be done. So I complete the following things. What I'm going to say is that the problem with this logic is that I am assuming that it's better on the Excel. When I put the word plan, I was putting in the wrong code. That is the 102, 103, that kind of code.
+
+ But on the other side, we are not going to have that. We are going to have just this attribute like lcw water injector to be this kind of stuff so that that's going to be the complication for us because the and maybe it's not going to be a complication I mean I mean as soon as vignesh has that information on the bone I mean the what I'm saying is that vignesh will have the information of the bone here in this number that he's created on S4HANA, but it needs to be paired very well with this description.
+
+ Now this description, this concatenation, is for us the real ID, you know, from ID. This is the one that they will use in their system. So we need to think on the logic. I don't think that it's going to be too complicated. The only thing is that the the best practice, right? Because this one code is not the best. It's not the best idea possible. But let's try to work with what we have. It's not like we have many options here.
+
+
+
+Arun Singh:
+Okay, so what I need to do first, add those four attributes to planning level and well master data. And apart from this, what What else do I need to work on? The bomb logic you have already created, right?
+
+Hector Palacios:
+It's working, right? Yeah, this is before they've done this definition. So I don't have, for example, the different web types. Are the attributes, the brain level, create different bomb types?
+
+UNKNOWN_SPEAKER:
+Attribute?
+
+Hector Palacios:
+So we will need to differentiate the bombs. One way or the other, right? So, this is a boom, the main boom, this is the wellhead boom, this is the DCE boom, and so on. And then, based on this boom type, we will need to trigger. Whenever we find it, we will need to do the trigger.
+
+Arun Singh:
+So, let's think on that.
+
+Hector Palacios:
+This is not clear for me how it's going to be, but we need to think that if we have on the well plan, we have the WH one, then it needs to explode also the one type that will do each because there there is a bone with that.
+
+UNKNOWN_SPEAKER:
+Makes sense.
+
+Arun Singh:
+Yeah, it makes sense. But this WH one and all these right categories, one that will be at individual well ID level.
+
+UNKNOWN_SPEAKER:
+OK, not at the aggregate level.
+
+Arun Singh:
+Yeah, because it's right. We have detailed information available.
+
+Hector Palacios:
+Yeah, I mean all this part related to the irrigation is going to be Bigness. So, the well definition we are not going to work a lot on that. All of this that I'm showing you here and all these different bombs, this is going to be with Bigness. Bigness will integrate the additional bomb codes. The only thing that we are going to do is to really hopefully on the well ID we already have all these attributes.
+
+ So whenever we see that there is a specific bone for this main combination plus we have this AC1 for our work then we will need to bring two bones.
+
+UNKNOWN_SPEAKER:
+That's it.
+
+Arun Singh:
+Yes, understood. I understood. All right, let's try to think on that.
+
+Hector Palacios:
+I will also be thinking on how to do this because now it's not like clear like you know like this is how it should be but for sure I think that there is something that we can do about it.
+
+Arun Singh:
+Yes because I what I think the bomber shutter that you have created right will have also this information wh1 so whenever the well id has this wellhead code let's say updated right uh based on some CIDS transformation logic. So then that will have this wellhead code information available too. Yeah, something like this, right?
+
+Hector Palacios:
+So you have here the wellhead. Usually you won't have it, right?
+
+Arun Singh:
+Yeah, usually we won't have it.
+
+Hector Palacios:
+you will have like this bone type.
+
+Arun Singh:
+Will it be inside this bomb master or well master? Because not all the wells will have the well head code same. It will be based on individual well ID level.
+
+UNKNOWN_SPEAKER:
+Yeah, I don't know.
+
+Hector Palacios:
+I don't know if that every well will have wellhead, I was thinking like maybe not all the wellheads are going to have a specific bone. That is what I was thinking in my mind. So it's like something like this. You need to have the OSTG and maybe sometimes, well, imagine that in all the cases like that, and then you have a wellhead. So this is basically additional. Vignesh was also thinking on this.
+
+ This has the complete Now we're going to be more specific. And in this case, you have weld H1. Automatically, you will need to think, okay, this is the on-coat. This is the weld head. Bring this, you know? It's like the joint that we will need to do it because what I was saying is that the weld plan will be at this level, right? With the main the main attributes that define the well plan. And then if we detect that there is also a wellhead, combination of this plus this should bring this bound, the 104.
+
+ That is what we need to think how to do the joining, because remember, this is not going to be at this code. Only the one will be at this code, but the other things, no.
+
+Arun Singh:
+No, so this wellhead code, like WH1, will be So if you, if you open a well, well mastered a customer master data, can you do it for, for a second?
+
+Hector Palacios:
+Yeah. Okay. Thank you.
+
+UNKNOWN_SPEAKER:
+one.
+
+Arun Singh:
+Yeah, so here we have Uh, through C ideas, we will be updating my head over here. Okay. So only this will be, let's say for example, ZK two, four, two, we'll have WH one. So only this well, we'll have those additional components, right? Otherwise this three, all your ones, this one, Jason.
+
+Hector Palacios:
+We'll check the bones and bingo. You have one, right? But then if you have like well h2, you go here to the bomb, sorry, you go here to the bomb, there is nothing.
+
+Arun Singh:
+So it's not going to do any explosion. That is so basically in through C ideas, right? We probably need to bring all the bomb information based on this different combination in the bomb master data. Yeah. In order to work this logic.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios:
+And what is, uh, let me bring here. Change where plan for id for the concatenated plan form. Or is this change with plan form planning? Yeah, like lower to be and I don't know what it was. Will be like what I need. So it is what it was. They say that like the world plan that we break into a baby is not going to be in the bone code is going to be by the bone code description. That's fine. We will need to make sure that the logic that I created works this weight as well.
+
+ It's not that simple as I created. It's a little bit more complicated. If there is a workaround for this, like on the integration, just think, okay, let's go to the, find the code.
+
+Arun Singh:
+That's right, but But in the integration, right, behind the scene, we can take the unique code that is a MOM ID.
+
+Hector Palacios:
+Maybe we can do the crossing. If there are not too many materials, maybe that is something we can do, but we need to check.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, yeah.
+
+Hector Palacios:
+Let's pre-prepare for the base case.
+
+Arun Singh:
+And anything apart from this, any major changes?
+
+Hector Palacios:
+No, no. We had like two meetings, basically, and the first one that you were not there, Abdullatif joins at the end, because these are general meetings, it's not like really specific. He joined at the end when we were every was like complaining that, okay, drilling guys are not helping and we need to execute, you know, let's escalate. And then they brought, they brought this up to Latif and he started like, I don't know, but I gave you everything.
+
+ So you just create the template and load information. And then we start from there. And Bassem told me no, but I cannot even load the template if you don't give me this information, you know?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So, well, basically he he said, OK, the next session I will bring the information. He didn't bring a shit. And we and he got in the situation, a guy that knows better. I don't know what he's saying now. Muhammad, I was in a mood moment.
+
+Arun Singh:
+Yeah, I should.
+
+Hector Palacios:
+It's not. It's not. No, no, it's not. No, I'm not.
+
+Arun Singh:
+She gets another guy.
+
+Hector Palacios:
+Mahmoud Mahmoud Mahmoud. He is he straight. I like him. He says like he I. That he knows, you know, he would be a very good user for us. And he was bringing all this logic for us. And basically, what Rahul was doing as moderator, again, and he created this Excel, like he extracted the whole logic for us. So now we need to see how to implement it.
+
+Arun Singh:
+Okay. And do we need to create one more attribute that is bond type? That is, if it is OCDG or what, uh, what does WHAC one additional condition on those or like, um, or not required.
+
+Hector Palacios:
+I seen that at least it's going to be, you know, it's going to be, Disappear? I think that it was created here, right?
+
+UNKNOWN_SPEAKER:
+Right there.
+
+Hector Palacios:
+Yeah, it was updated. I think so. At least it's going to be informational, you know? So if you want to know where this is coming from, instead of you, like, trying to understand, okay, because we have this work here. No, we have a wealth type. It's just an additional attribute that if you use it, great. If you don't use it, it doesn't matter. But I think that at the end bigness we will need to do it, right?
+
+ So let's think, because in the worst case, best case scenario, that can help us to define the logic.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+At the end, I think that we will need to have like how I see it right now, because this cannot be I'm thinking that maybe we need to have like four key fears, you know? One key fear that is the main key fear is going to be rank always the main bone. So it will see what is my code and will explode that based on only this code. Then another one, we will need to check in this and this. Another one, we will need to check this and the other one, L-C-H-A, and so on, you know?
+
+ So it's like a combination of this and this, this and this, this and this, and you have three key fears, one by combination. So one, it will bring you something if there is something, and so on, but you always will have, at least as a base, the main one. You know? So key fear one is what they call STG, something like that. Key fear two, of the explosion will be like bone code description or bone code.
+
+ This way, we can change it. We can put like bone code ID because this is not for them. This doesn't make sense. It's like a very technical ID. This is the more ID for them. So we can rename it bone code, like check ID or SAP ID. Better. That's it. And then you have bone code plus wellhead.
+
+UNKNOWN_SPEAKER:
+And then another GPR3.
+
+Hector Palacios:
+Additional completion code. And in the last one, the LCEH. No, LCHP. No. LHCP. Liner, hangers, cementing, accessories. Whenever it finds a room like this, it will bring it. If it doesn't exist, it will bring nothing.
+
+Arun Singh:
+But then you have to set a condition also for each respective queue figure you have to set a condition depending upon the model class type. Yeah, exactly. And I don't know if they will be comfortable checking four different key figures. No, they will not.
+
+Hector Palacios:
+You only have to have a final key figure. That will be assumed.
+
+Hector Palacios:
+This is only technical.
+
+Arun Singh:
+So we are showing only the final key figure in the template?
+
+Hector Palacios:
+Yeah, they will need to see only the final. All the other scenes are for us. The only thing is that I don't like this logic piece here. You know, it's like hardcoded, the levels. You need to hardcode it.
+
+Arun Singh:
+Because you don't do hardcoding.
+
+Hector Palacios:
+But it's what we can do. I mean, in between this and nothing, this what we need to do for now. If we can think of something better, that is more than welcome. But, yeah, this is what I can think about it right now. And I was going to do something, and you will depend on the ROM type. So, if the ROM type is OSTG, you do this, and if this is TCE, you do this, and, you know, so that way you avoid duplicating things.
+
+ Because I think that is fine. I'm sure that there will be a reason why you want to bring the bomb type as well. Because I think that between this type of bombs, maybe you will bring something that you don't want. So you can avoid by constraining the bomb type. Just in case you know.
+
+Arun Singh:
+So what I'll do, I'll just create one more attribute if in case it's not done like the bomb type. Adding this bomb data master data and beside that I will be adding the additional four attributes into the well master data and also to the relevant planning levels. Uh, planning levels. And, uh, apart from this, uh, is there anything else that, uh, needs to be checked on? No, not for now.
+
+Hector Palacios:
+It's just logic and the data is something that they need to hear. We are pushing the guy KPMG guys, because I didn't feel that the, in the outlook side, they understand the, like the, how quick we need this, what we are thinking is that if we don't get to them for the next week with the data, then we are not going to show this on the visit that we have with Bastián on January at the end. So we are going to travel on 27.
+
+ We were thinking, like, if we have the data by this week, maybe we can show – we can prepare during the next week. And in this week, maybe in this one, we are going to present drilling, you know, because we travel this and this way. If they don't share the data by then, then probably we are not going to do it. But that is what we are saying so far.
+
+Arun Singh:
+So currently we are waiting for the response, right?
+
+Hector Palacios:
+To give us everything that you're going to configure right now and do it with the data you have or make up data because we don't have the case and we don't have all this information. So just create one, simple examples and based on that we can we can do this.
+
+Arun Singh:
+And what about the question that Bashir asked right in the email to this random guy did they responded with the information or no? Are they working on the bomb defense? About the questions regarding the file right the file right the original file Yeah, that is how we started the discussion with Abdullatif on Wednesday.
+
+Hector Palacios:
+No, on Tuesday, the Thursday. Sorry, Tuesday, the last week. And in Thursday, we focus on the one basically. So I don't know how many questions remain open, but yeah, I think that they took the questions, so they will bring with the, they need to bring the information at the end. That's the financing. Related to, for example, when you have different bonds for the same combination of even category type and you have 14 and sometimes you have two, I've done that if said you say the most common one.
+
+ That's it. For us, I mean, complicated a lot because at the end, well, this is for our loading, but then the, this is pignage who is going to suffer with this.
+
+Arun Singh:
+Okay.
+
+Hector Palacios:
+No, these guys, uh, yeah, I'm understanding Basti on this one because of the Latif. I saw that he was good, you know, but, um, I don't like, like any ad hoc guy so far or main guy at least.
+
+Arun Singh:
+So, uh, so basically we are waiting, uh, for the bomb, uh, data, right? Yeah.
+
+Hector Palacios:
+Then in the meantime, you are going to do this design.
+
+Arun Singh:
+Okay. Uh, so I work on this part, uh, configuration part and, uh, also then I need to, uh, work on the test script. Probably I can start.
+
+Hector Palacios:
+I already started, uh, uh, also some scenarios. We need to have by this Friday.
+
+Arun Singh:
+I understand. Yeah. So, uh, I've already started a draft for you. Let's see, I can complete it. Yeah, I can complete it. So for demand, right.
+
+Hector Palacios:
+Uh, there should be only one test, right.
+
+Arun Singh:
+For demand, right. Uh, especially for drilling, there should be only one test, right. Uh, we are not splitting into multiple, right.
+
+Hector Palacios:
+Yeah, only for this one.
+
+Arun Singh:
+OK, only one file, right? OK. Perfect, man. I have understood. Let me work on this now.
+
+Hector Palacios:
+And then we will need to work on tie-in in one moment, drilling this priority.
+
+UNKNOWN_SPEAKER:
+Oh, tie-in.
+
+Hector Palacios:
+I will work on this. For tie-in, at least we have the information on a file for the demand. So it's just using that, I guess. Not any statistical forecast or anything like that. It's just uploading man. And this is a very standard approach. It doesn't seem like something complicated. At least this is what they are selling to us, so we are going to go with something very simple, you know, like manual demand divided by 12 by month, and then run the supply planning.
+
+ But for the supply planning they say this is going to be simple like chemicals, but I don't know. We will see. At the end we will need to them to we will need to ask about the the lead time the POs and all this stuff or try to integrate it because now the good news is that we have the integration
+
+Arun Singh:
+so maybe probably they will send us to do that okay okay fine so the link is important okay uh okay fine fine man I'll work on this.
+
+Hector Palacios:
+Okay, let me know if you skip any scene or if you want to take any scene and we can work it together.
+
+Arun Singh:
+Sure, sure, sure. Okay, okay. Thanks man. All right, thank you man.
+
+UNKNOWN_SPEAKER:
+Bye. Bye.
+
