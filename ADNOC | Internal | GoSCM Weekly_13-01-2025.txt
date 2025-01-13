@@ -1,0 +1,433 @@
+Rocio Minguillon:
+Everything good?
+
+UNKNOWN_SPEAKER:
+Yes, very good. Hi, Saul.
+
+Saul Portillo:
+Hi, Ro.
+
+UNKNOWN_SPEAKER:
+Hi, Pablo.
+
+Rocio Minguillon:
+How are you?
+
+UNKNOWN_SPEAKER:
+Good. Very good. How are you, Betty? Good, good. Over here, calm.
+
+Saul Portillo:
+Well, calm over here. I would have done it just in case. I had asked for the day when Sebastian asked at the time, but in the end I didn't take it because I didn't remember it last week and we didn't get along there and I preferred to work on it, just
+
+UNKNOWN_SPEAKER:
+in case.
+
+Rocio Minguillon:
+Ah, ok. Today? Really?
+
+Saul Portillo:
+Yes, because today I had Hello, how are you?
+
+UNKNOWN_SPEAKER:
+Good, and you?
+
+Rocio Minguillon:
+Good Hi, everyone.
+
+UNKNOWN_SPEAKER:
+Hi, Hector.
+
+UNKNOWN_SPEAKER:
+Hello. How are you? Doing well, and you guys? I'm OK.
+
+Rocio Minguillon:
+I'm a little bit sick today, so my energies are low, but I'm fine.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Are you drinking too much? No, no, I'm not. It's just... I think I got cold on Friday. Yeah. I have a lot of flu. Okay. But, yeah. Yeah, I think most people is... No, no, no. I'm okay. I'm okay. I don't know. I hope tomorrow I... I get up better. All right. Hi, Rusty. OK, I think that we are on the missing. Hi, Sagar.
+
+UNKNOWN_SPEAKER:
+Hey, I'm looking.
+
+Rocio Minguillon:
+Bastia, we can't hear you.
+
+UNKNOWN_SPEAKER:
+No, we can't.
+
+Rocio Minguillon:
+I didn't know that you weren't talking.
+
+UNKNOWN_SPEAKER:
+Hi, can you hear me? Yeah, now we can. Cool.
+
+Rocio Minguillon:
+Okay, I think that we are all here. Except from Vivek, that I think that he had another meeting from Nadro, and with Rey. But Sagar is with us, so I don't see many problem. Well, let's start with our weekly. Tomorrow, we are having our last meeting on the re-base plan. I mean, tomorrow we are having one hour last on the rebase plan that is just for finalizing this, taking into account the delays that we had last week on the configuration of the interface, and also the delays that we are having on the approvals and everything.
+
+ I don't think I have to ask you then, and also Sebastian. I don't think that we should add more weeks than the ones that we already discussed and the ones that we already have from last week. But OK, we have that final confirmation tomorrow. So if everything goes well, Tim, expect to have this plan shared in our folder. I will let you know. But we are finishing this. This review. Yeah. Well, something useful to say just to see on which should we be focusing this week.
+
+ As you know, now we are on the Sprint 1 of the Wave 1 configuration. With this new plan, this should be like the last week of that Sprint 1. So I suggest you that during your configuration meetings, you could review the things that we planned for the Sprint 1, but I know that at the beginning you divided some way the different configurations into Sprint 1, Sprint 2, and Sprint 3. Well, we should review that Sprint 1 to see how are we doing with that, if we have to move something for Spring 2 and whatever.
+
+ But we all know that our main focus is to be ready to do the unit testing with the users by the 27th. So I know that that is the date that you are following. But take into account that this week, we should be finishing with a new plan. We should be finishing the Spring 1 of Wave 1. Yes? Also, from the Wave 2 point of view, we should be starting with the configuration Sprint 1. I know that with Vivec you already started some configuration, but also just to take into account this.
+
+ I don't know if there is any doubt regarding the or if it's everything is clear. Are we okay? Yes. When is the final date for Spring 1? For Spring 1, it should be this Friday, 17th.
+
+Hector Palacios:
+But we also have a tomorrow's screens, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Rocio Minguillon:
+Yeah, it's just I know that we are not following this like very hard, but I know that at the beginning you divided the configuration, so maybe it's a good time this week to see how are we doing if with the six week that we have in the future we are OK if we are. I mean, it's a it's a good let's take advantage of of this formal date to use it to review during the configuration meeting? How are we doing in terms of the progress?
+
+ OK.
+
+UNKNOWN_SPEAKER:
+But yeah. OK.
+
+Rocio Minguillon:
+So that is the plan. Then the activities that are important for this Well, in terms of this, we have the commitment of giving the script for the unit testing by this Friday. So that is an important date. I know that last week, Fiamma and Saul told me that we are OK with that. But let's be sure that we prioritize this. Well, Derm, in terms of integration, well, maybe you can do a quick update. I think that you already have been working together.
+
+ But yeah, maybe you can share how are we doing with that. I think that today also you sent an email. For AdNoc to do some stuff? Yeah.
+
+Sagar Vora:
+So currently, we have started our development. But in IBP and SAP system, currently, it's a basic authentication. And to make the SDD approved, we have to change that to, in the meantime, we have to change it to certificate-based or SNC-based. So for the SNC-based, I'm already in word with Mustafa from Adno. So tomorrow we might have a call with him to do that setup. And for the IVP certificate also, I have asked one question to Pelayo, because I'm having some confusion.
+
+ Even Reinaldo is not aware of that. So we have asked Pelayo. And once we get some confirmation, we will send that to Adno to proceed with the certificate. Authentication in the IBP. So that was regarding the configuration and second related to integration so we have started our development like on Friday and today also we from the whole team like the MRO demand team we connected Bastián, Hector, Saul, Pablo, Pelayo and Fiamma.
+
+ So basically we checked some of the interfaces high level like how it is working okay and before this call I had a work with Reinaldo so our discussion is like Rinaldo will develop the Burush related interfaces and I will be developing the one year related interfaces okay and we will be working on the configuration wherever required like together so that is a high level plan for us so and I got some feedbacks from Bastián some master data and transactional data needs to be ready now so that Saul can validate tomorrow.
+
+ So I will be working on that today and tomorrow and I will update Saul once it is ready.
+
+Bastian Osorio:
+One thing about that and two things. One for more for Rocio and then Sagar as well is that we need to check if we really need the ABAP consultants and how we're going to use those resources. Could you please, Sagar, check how many times we will need from them?
+
+Sagar Vora:
+So based on my understanding, I think Bernardo has done just a high level stuff on testing for the master data. But there are some more, means all the transactional data and even some master data extractors are pending to be modified for the plant and storage location combination for one ERP and all the changes also needs to be done for the Borush system. So that are basically the activities for the wrapper even some extractor needs extra attributes.
+
+ So that modification is also required so that all activities can be performed by that.
+
+Bastian Osorio:
+And then we need the body construction for the PRSTO generation, which have plenty of scenarios. Yes. Is that something that the about call sometimes we address as well?
+
+Sagar Vora:
+They can, but for that we have to basically guide them or provide them the address. Of course. Yeah. Then I think they should be able to.
+
+Rocio Minguillon:
+And can we start with that like now or it will be with in another time?
+
+Sagar Vora:
+I think PR, PO, that all can be done later, because that's our outbound from IVP to SBIRT. For now, the priority should be all the master data and transactional data wherever there is a location. The location should be changed to location, stored location. But for that, we will require some functional help also, like which table to be, because we don't know the transactional data is available. Storage location or not.
+
+ So there we will require some help from the functional team, might be from KPMG, Rahul and Kunal.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+No, in that case, we have plenty of scenarios when we have an agreement or I don't know, I can think just on the fly of about five different, four different scenarios. Pretty sure there is more than that. But yeah, we will need their help on that one.
+
+Rocio Minguillon:
+Of course, not defining, but building. So I have two thoughts regarding this. The first one is, so the ABAP consultants, what should be the thing? I mean, we, on Friday, we discussed that today maybe Reinaldo will be able to define the activities, like to just the review that we did. But... Sorry, the review that we did, but like, more formal, because they are available. So, I don't know what to say to them.
+
+ It's okay. If today we find the activities, and then we share with them, and we like, schedule them for an initial meeting to to align or. Or not? Hey, I don't know. What do you think, Sagar and Basti? I think so. It's fine, but the thing is that we don't have that clarity yet. But can we have the clarity or not? No, it's not up to us. Go ahead, Reinaldo. All right. I know it's right here.
+
+Reinaldo Gutierrez:
+So, yeah, okay. So, what, God, I know that the thing I'll do right now is about the outgoing workflow that we need to do on Agnon and Boruch, about Boruch's requisition and transfer order and all that. But I don't know if we already have that defined. What are going to be the result for, okay. So in that case, what they can do because right now I have all the customization done by Agnot1 ERP so maybe I can give them the customization for Borush because we yet don't have the access for Borush so maybe they can do the same that I did on Agnot and Borush and that way they can work on something.
+
+
+
+Bastian Osorio:
+Yeah my problem is the following that it took very little for you, Reinaldo, to complete, for example, the transformation, the change from plant to storage location. So considering that, at least for adding new attributes to the extractor, I think you can manage that for sure. I mean, you did something complex in a day or two. So I don't think we will then maybe if you need help replicating the logic into the second, into Voorooj, that could be a case.
+
+ But yeah, still I don't see the need of two consultants to do that. And then the second thing we need to address, and I see there more of a chance to need their help, is the purchase, STOs and PRs and purchase requisition because we have multiple scenarios and different scenarios for chemicals, for MRO, for drilling, tagging. So let's say just very simple, we have two scenarios, which I'm pretty sure there's going to be more, but if we have two scenarios per business unit, we're going to have four sorry, eight different scenarios because we have tie-in drilling and chemicals and MRO.
+
+ So eight and then replicated that into Borough which will be 17. So in that case, I think it will be helpful to have them on or have their resources available. But we don't have the technical sessions yet to start building that. And I don't want to push those sessions now because there's plenty to build before that. That is the, like the, the cherry on the cake, on the top of the cake. So there's no point in to, in to start, like, I'm pretty sure if we start building anything at this point regarding that, we will need to change it for sure.
+
+
+
+UNKNOWN_SPEAKER:
+Yep. Okay.
+
+Reinaldo Gutierrez:
+So, what we are going to do about the thing, the ABA team? Will it delay their integration to the project?
+
+Bastian Osorio:
+I will, again, Reinaldo, if you feel you need them for the additional attributes, and I expect this week to have an update regarding that, we can use them. But if you don't think is necessary, if with Sagar and you is more than enough, then let's park those resources because it's inefficient.
+
+Reinaldo Gutierrez:
+Yeah, we can have it when we have more clarity about the outgoing integration that we need to do, I think.
+
+Rocio Minguillon:
+The only thing that I would say about this is that, I mean, I understand the point on the delay of some definition, But let's take into account that from now, I mean, considering these weeks, we have seven weeks more. And then we should be preparing us to the UIT. I mean, yes. We know how.
+
+Reinaldo Gutierrez:
+When we have the time for the unit, test because I see the UIT there. This is UIT. Yeah but I don't see like a test from outside you know like we review the data.
+
+Rocio Minguillon:
+That is part of the I mean UIT data validation should be like two weeks before the UIT but with all the with all the unit testing done I mean this is like the final the final review of the integrations, but the testing of the configuration and that should be during the next seven weeks. I mean, there's no... Okay, okay, because... Then we have the siege execution that I'm not sure. I think that you repeat a lot of times what is this, but I'm not sure.
+
+
+
+Reinaldo Gutierrez:
+Is like another system that they have on SAP, okay? It's another system, another environment. Okay.
+
+Rocio Minguillon:
+That should start the 10th of March, with this new plan. So, what I mean is that, according to the plan, we have this week and then six more weeks.
+
+Sagar Vora:
+Okay, okay.
+
+Reinaldo Gutierrez:
+Okay, so Sagar has been done all the workflows on CIDS and he already loaded some data on IBP. So maybe the IBP team could help us to review the data on IBP to see if everything is okay regarding to the definition that we have right now. That way we can take an early approach of the change that needs to be done on CIDS. That is a request that I am doing right now.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Reinaldo Gutierrez:
+What do you think, Tim?
+
+Rocio Minguillon:
+I think that is related with your emails, Saul, that they answer not very kindly. I think that you asked for some data and they answered. But if you have the access now, I'm not going to provide you with data.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Reinaldo Gutierrez:
+So maybe Saul you can help us because the information that is a lot right now on IBP is about demand. So maybe you can give a review about the data. Sagar will share with you the workflow that was already done on the integration side. And you can see the data and let us know if you have any concern or any comment about the data that you are seeing on IBP.
+
+UNKNOWN_SPEAKER:
+Okay. Thank you. No, thank you to Sagar.
+
+Reinaldo Gutierrez:
+He's done all the work from there. Okay.
+
+Rocio Minguillon:
+So I will put this task. So let me, I will share.
+
+Reinaldo Gutierrez:
+Let me, let me see how you have opened. Yeah. I will share with you.
+
+Bastian Osorio:
+the integration that is done that way you can put that in the in the task okay let me let me see just just a comment from my part uh so the unit the unit testing and configuration finish on the 31st of march so I for me the deadline for march wave two ah wait two I'll be No, I mean, I'm thinking about the PR still. So we need to finish, for me, the requirement of PR, let's say, two weeks before the 31st.
+
+ So it has to be finished the 17th. So we still have two months to get the definitions and build that. So I don't want to feel that pressure now, because again, if we start getting definitions to do that, they're going to be wrong for sure.
+
+Rocio Minguillon:
+And the definitions pending are only regarding that things about Wave 2, not Wave 1.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+No, we need some definitions from Wave one for the integration, but that we will try to get them this week.
+
+Rocio Minguillon:
+Okay. And now it's better, right? Because, yeah, maybe I confused you by saying, I mean, Wave 2 is four weeks after.
+
+UNKNOWN_SPEAKER:
+Sorry? No, no, no. I mean...
+
+Reinaldo Gutierrez:
+Yeah, I know, I know, I know that we have plenty time to do the outgoing workflows. But I think that's something that we need to have, like, we have to have the definition, like, to the end of this month to start working on that. Because if not, it's going to be a problem to do it. Because we don't know how is the system about this document that we need to create on SAP, on what is our restriction, what we have, some validation there, some custom validation.
+
+ So all that we need to be aware of
+
+Bastian Osorio:
+About documentation, sorry to jump to another thing, but I had a meeting this morning with Kunal and Kushbu, and they basically shared with me the functional and technical specification. And it's so bureaucratic. Have no idea. We need to build like a document for every single thing we build.
+
+Reinaldo Gutierrez:
+But for the SDD that we deliver, we put like all the non-functional and functional requirements that we need to build on the system. So besides that, we need to deliver a functional document about everything that we are going to create, about all the extractor that we define. Yeah. Okay. Okay. So for each one, I know it's a pain in the ass.
+
+Bastian Osorio:
+It's a pain in the ass. I'm with you, Reinaldo. Also, I mean, everyone here will have to contribute to that document, but just so this is, I'm not, we already know how it is. So just to be clear. We're all prepared. It's not going to surprise anyone to say, OK, you need to build the functional and technical specification for every single thing we integrate from MesoHANA.
+
+Reinaldo Gutierrez:
+And we need that for the go live or for the SAT test?
+
+Bastian Osorio:
+I'm not sure. I want to believe for the go live.
+
+Reinaldo Gutierrez:
+OK, OK, let's ask that to know if we need that to be done by the SAT testing, because we can start to do something, you know, there, so.
+
+Bastian Osorio:
+It's called FSD and DSD. And DSD. Technical specific definition. Technical city, yeah.
+
+Reinaldo Gutierrez:
+Functional specification, yeah, OK. OK. So I can take the technical specification because it's already done in the system.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rocio Minguillon:
+About consultants, so should I cancel them until 1st of February? What should I do, finally?
+
+Reinaldo Gutierrez:
+So I think that to take that decision we can get together with Sebastian, okay, so let him know what is going on with this activity and with this point in particular. Okay. That way we can take the decision together as a team.
+
+Rocio Minguillon:
+Okay, sure. Well, okay, and so regarding the technical definitions that we were talking about that we are missing The ones regarding the Wave 1. Do you need me to ask for a meeting by the end of the week or something like that? Or we are okay with the spaces that we have regarding the open points? I think that they said that they want to cover that on the open point sessions.
+
+UNKNOWN_SPEAKER:
+I'm okay.
+
+Rocio Minguillon:
+You had your last week, I think that you told me that they want to cover all the, yes. Yeah. We will use the open presentation for the technical stuff. Okay. So, Sagar and Ray, are you aligned with that? I mean, if you, start if you continue constructing a new and we have pending definitions about attributes and that we will ask on that open point sessions that I don't have them just in case but I think that you
+
+Reinaldo Gutierrez:
+have it, no?
+
+Rocio Minguillon:
+Maybe they are in the Yeah, I think we can use that call for that.
+
+Sagar Vora:
+Okay.
+
+Rocio Minguillon:
+Yeah, I don't have them, but I think you should.
+
+Reinaldo Gutierrez:
+The hypotechnical clarification and alignment discussion, that one, right? I don't know.
+
+UNKNOWN_SPEAKER:
+Because it's another one.
+
+Rocio Minguillon:
+Hector, is that the name of the… It's twice a week, two hours.
+
+Reinaldo Gutierrez:
+Yeah, the iPod.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Reinaldo Gutierrez:
+I wish that wake me up, waking me late, how do you say? Early. Okay, Jim, and just a quick question.
+
+Rocio Minguillon:
+I was completing this, now I think I will be late, like the two consultants. If we decide that, but...
+
+Reinaldo Gutierrez:
+No, I think you can ask that access because we are going to need it, okay, for the future, so maybe we can have it earlier, it's better for us.
+
+Rocio Minguillon:
+Okay, the system is one ERP or it's another one? It's one ERP and Boruti. Okay, so I should put both.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+And why do the other ones ask just for one ERP? Okay.
+
+Sagar Vora:
+I think, Baruch, everyone don't need, right? Because earlier we had submitted the IP and we submitted, I mean, system IP only for me and Bernardo, so.
+
+Reinaldo Gutierrez:
+Okay. Yeah, and for the development team.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+Okay. So like this. Then their activity type is Is development or is data?
+
+Reinaldo Gutierrez:
+Development, yeah. Development, for all, yeah.
+
+Rocio Minguillon:
+And for the other part of the team, is testing or is display only?
+
+Reinaldo Gutierrez:
+It should be testing, yeah, but yeah, testing is okay.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Workstream, I'm not sure what it is, PRC. You don't know? I should ask Tara. I don't know. What is that?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Reinaldo Gutierrez:
+Now, it may be something. But you should put the same for us, I think.
+
+Rocio Minguillon:
+OK. OK, that's all.
+
+Reinaldo Gutierrez:
+If not, they're going to send you the comment about that.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+And here, you are the only ones that you need development Yeah, for development, we need a development key.
+
+Reinaldo Gutierrez:
+Yeah, for my user, I already have it, okay?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+I don't know what this means. User in ER1. ER1.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Rocio Minguillon:
+We are using sandbox right now. I think that's the system ID for the SAP, but I don't know what is ER1. Okay, I will keep it blank and then they can ask me and explain. Okay, thank you, team. I have to move to the huddle.
+
+Reinaldo Gutierrez:
+Thank you. Thank you, guys. Have a nice day.
+
+Sagar Vora:
+So, Bastian, Hector, can you stay a little bit, please?
+
+UNKNOWN_SPEAKER:
+Yeah. Okay. Thank you.
+
+Reinaldo Gutierrez:
+Now, in Spanish. How are you, Hector?
+
+UNKNOWN_SPEAKER:
+Good, and you, Ray?
+
+Reinaldo Gutierrez:
+Very good, very good, very good. Okay, I wanted to tell you something quick. I had sent a form to take today for my birthday, okay? But I'm not going to take it, I'm going to work because I have some deliveries to do also for Claro, and I'm going to take advantage of expanding the extractors to collect the fields, right? And I'll have that for Wednesday. And my birthday idea was to take it on the 31st of this month, which is Friday.
+
+ So I wanted to talk to you guys before continuing, because I already sent the form. So, of course, I want to talk to you guys because I can't send the form again, you know? I wanted to see if that was okay and if there was no drama.
+
+Bastian Osorio:
+No problem, but tell Rocio to mark it in the AdNoc file. So that they don't bother you, so that they don't write to you on that day.
+
+Reinaldo Gutierrez:
+All right, all right, that's it guys, I wanted to align it with you, that little free day.
+
+Hector Palacios:
+I think you can send it again, nothing should happen, that is, that the previous one is rejected by those of Human Resources who know it and that it is worth it.
+
+Reinaldo Gutierrez:
+Okay, okay, I'm going to send it again and I'm going to communicate it with Rocio and with Diego, I'll send him a message. So that human resources people are also aligned with that.
+
+UNKNOWN_SPEAKER:
+It's Robert's job, right? Yes, yes, yes.
+
+Reinaldo Gutierrez:
+Now you have to assign someone from People, from Iara or Dani.
+
+Hector Palacios:
+Put both and then you can communicate directly to her and tell her that you are invalid in the previous one and that you are going to send a new form and that you are valid.
+
+Reinaldo Gutierrez:
+In the end, this is signed by Robert and Diego, no one else. Very good, very good. That was it, guys. A bit out of the routine, but that's it. Thank you, guys. We'll keep in touch.
+
+Bastian Osorio:
+Bye.
+
