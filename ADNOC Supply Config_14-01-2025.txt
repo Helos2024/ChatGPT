@@ -1,0 +1,896 @@
+Vivekanand Gajula:
+Thank you. You Thank you. No problem. You Hey Eric, how are you doing? Hi Hector, all good here, thank you.
+
+Hector Palacios:
+How about you? Doing well, doing well. Basti is not going to join because he's in another meeting, revising the plan and so on.
+
+Vivekanand Gajula:
+OK. Can we start with the user comments yeah yeah for sure you want yeah so there was like one comment no one comment on MRO and there are seven comments you know on chemicals okay let me share my screen wait
+
+Hector Palacios:
+Let me know once you see my screen. And
+
+UNKNOWN_SPEAKER:
+Yeah, I see it.
+
+UNKNOWN_SPEAKER:
+Oh, many times.
+
+Hector Palacios:
+Hold on one second.
+
+UNKNOWN_SPEAKER:
+Are you able to see my screen?
+
+Vivekanand Gajula:
+Thank you. You Yeah, this one. Uh. What this guy is asking for is for turnaround PRS. There should be a linkage, you know, to WBS, you know, for Baruch. Turnaround PRS must be linked.
+
+Hector Palacios:
+That is an open point. Let's leave it open. We are having a session with these guys on KPMG. Continue this because Because this is something that they also mentioned on the BRD. And we are saying, OK, this is something that, for us, is an open point, that we know how we want to handle. But we are not 100% sure in all the implicances, all the consequences of having this. It's what we were discussing the other day.
+
+ It's like there is not like a static WBS element. For the turnaround, yes, but then if you have another turnaround event, you will need to have another WBS element, and that's changing like every year, every two year, every five year, depending on the turnaround event. So that means that every year, every two year, you will need to have a new connection network for that.
+
+Vivekanand Gajula:
+But in that case, the frequency is low, right?
+
+UNKNOWN_SPEAKER:
+It is.
+
+Hector Palacios:
+But again, the thing is that we need to be pretty sure on the splicing network creation and lifecycle of that as well.
+
+Vivekanand Gajula:
+Correct. Yeah, anyways, I think that's a discussion topic. So once there is a proper consensus, then only we can update something over here.
+
+Hector Palacios:
+Yeah, I think that at least we need to have another session to understand what is the WBS planning for the turnaround on the APS system. And based on that create this part.
+
+Vivekanand Gajula:
+Okay, so that is what it is. Okay, fine then I think we are good on MRO. On MRO there was only one you know comment and this is the one on chemicals you know there are multiples comments one second. Yeah so the first comment is this you know system should also generate a procurement plan for items which can be included under long term agreement so when they say long term agreement I am assuming it's ldpa right long term agreement to be yeah so I'm saying that okay a system will generate procurement plans for items with ldpa because that is our first rule right when we create a peer no he's he's not so should generate a procurement plan
+
+Hector Palacios:
+for the items which can be included under long-term agreement So he's basically saying that we should recommend materials for LGPA. Is that what it interprets?
+
+UNKNOWN_SPEAKER:
+Because my understanding was...
+
+Vivekanand Gajula:
+I'm sure because it's something that they are asking a lot.
+
+Hector Palacios:
+So they want the system to propose LGPA material candidates.
+
+Vivekanand Gajula:
+They want the system that's why he's saying for the item which can be included included in under long-term agreement. Okay so then I misunderstood you know so let me delete this you know so what is the right I mean, what is the right response?
+
+Hector Palacios:
+No, this is something for the for the process team. OK. I think that she's asking like to put it on the process, but I what what is. Is she is something that she already put like many times on the VRD comments, so I don't know. Yeah, yeah, yeah, I think they have a question.
+
+Vivekanand Gajula:
+What about item criticality and price plus the newly created items? You know which logic they are going to follow. No, we can reply here. Whatever we have here is just an example of how it can be is not the final.
+
+Hector Palacios:
+The final one we need to define it together. We need to find it with them and we were asking to them to provide the logic. Like which ones are more important and so on. You can say two things. This is just an example. It's not what it is. We need to build it and we can consider those price logic.
+
+UNKNOWN_SPEAKER:
+and new grid and so on. What is this? Oh, you're the point planning. Sorry? Yeah.
+
+Hector Palacios:
+Well, this is a proposal, but for new graded items, business criticality. That's it, right?
+
+Vivekanand Gajula:
+No, yeah, yeah.
+
+Hector Palacios:
+Sorry, I was thinking of something else, but this is the business criticality. Has to do on anything like this. Sorry, just hold on. Remove that. That comment is not because I was thinking of something else. I was thinking on several level.
+
+UNKNOWN_SPEAKER:
+This is, I think, IPV planning type.
+
+Hector Palacios:
+Yeah, so I'm thinking what is the, I think, criticality role here. What can we do about it?
+
+Vivekanand Gajula:
+Can be critical, but maybe I think, maybe I think the mission industry that or what like they thought this is for inventory I don't know but for determining the ipv planning type are we going to consider you know the
+
+Hector Palacios:
+criticality of the sql what I would propose is to with this is basically your comment there done before it's like we're gonna start by this and then we can refine with them to understand better later but I don't see it. I mean the new items I can relate for new items the I don't know if for new items you are going to assign a forecast based on the historical consumption of similar materials so you can borrow the history as well and you can say If this is going to be the historical behavior and the future behavior, you can assign a forecast-based planning or a reorder point-based planning.
+
+
+
+Vivekanand Gajula:
+If the reference material is having a low consumption frequency, then I think it will again follow the same metrics and based on that, it can assign the planning type.
+
+Hector Palacios:
+So basically what in the new materials what you will do is assign exactly the same planning type than the reference, right?
+
+Vivekanand Gajula:
+Very correct. So I think that point I can mention. And what about item criticality and price? For now we are not considering it.
+
+Hector Palacios:
+I don't know which role plays because the consumption frequency, yeah, makes sense. Low frequency, three order point, demand pattern, as well seasonal, you know. But business criticality, the only thing that business criticality could say to us is that you better anticipate it. You can say that we can discuss later for business criticality what is, we are going to have the attributes. So whatever logic we need to implement, we can do it on the fly.
+
+ But basically, let's park it to the discussion later. Let's say something like that. This is an example. Let's discuss later. And for new ideas, we can borrow the slides. The planning type of the reference. You should be part of keeping each job to help us here.
+
+Vivekanand Gajula:
+Then why are we doing this and we should directly delegate this now?
+
+Hector Palacios:
+Yeah I see it's because we we do we did it so they are going to ask us to but for the next time then when we are on the session we can ask them to to help us on these definitions this is just a starting point.
+
+Vivekanand Gajula:
+yeah yeah this one I could not get it in case of the extension shelf life how the system will act also if there is any trial for a chemical I think yeah maybe some sample chemical I don't know what they are saying If there is a trial for a chemical, what are the inputs will be for supply and inventory?
+
+Hector Palacios:
+If any trial for a chemical, what are the inputs will be for supply and inventory?
+
+Vivekanand Gajula:
+I think in case of, I don't know if I understood this correctly, like if the shelf life of a product is extended then how the system is going to behave we don't see the shelf life we have said that like many many times to her yeah so we only we only discount the expired quantity right if five batches you know then if If one batch is expired then and each batch holds a quantity of 100 then total it is 500 and if one batch is expired then we bring only 400 to IBP right.
+
+
+
+Hector Palacios:
+Excluding expire but just can you correct the exclusion excluding you see on the we have parentheses this one right excluding yeah.
+
+Vivekanand Gajula:
+what is happening man do right click please accept replacement yeah for this space this one acceptance yeah accepting search okay So yeah, should I mention like it's in the source system, the data change, the stock will change.
+
+Hector Palacios:
+I mean, that's it.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+For the first one, then for the what are the inputs for supply and inventory, if there is any trial of chemical. For a chemical. And for the trials, trials are basically they want to try a new chemical, so they start using it for like half a year, and they stop using in it and come back to the old one.
+
+Vivekanand Gajula:
+I don't know why they do that, but it's part of the process. So in those cases, we need exactly the same inputs, I guess. For trial, like, OK. A chemical trial, correct? Yeah, if available. Please put like use if available.
+
+Hector Palacios:
+I guess that maybe some of the inputs are not going to be there. Like, maybe she's thinking, like, a purchase order we don't have. Well, that's not an issue for us, because we know, you know, but for in our mind, she's thinking, OK, but we don't have purchase orders for a material reservation for that, you know.
+
+Vivekanand Gajula:
+OK. Then what else do we have? Yeah, visible. Entities has to be determined for nearly expired and for the extended one so you see what got expired that was that we are not bringing and the extended one also we are not bringing right that's correct right I don't remember this part so it's something that you created No I didn't do that I don't know I think Bastián must have added here I think we are mentioning know that then that's why we question like uh expiry expiry data as wastage we are going to bring now yeah basically she's saying I want to have this ability on nearly expired and we are anyways not bringing no extended one I don't know what it is extended one meaning for example if a material has a shelf life of 10 weeks and they extended this to 20 weeks then I think that they want to know that but how you can extend expiration date is it's going to expire or not that's no they must they must be updating the master data I think But yeah, that means that they had the date wrong.
+
+
+
+Hector Palacios:
+Or what is, it's like they are testing.
+
+Vivekanand Gajula:
+I don't know from a process standpoint what it means, but I'm just trying to see if it makes sense.
+
+Hector Palacios:
+What I'm doing with these points, this is an open topic for me. It's an open point.
+
+Vivekanand Gajula:
+It's a new requirement.
+
+Hector Palacios:
+No, you just put that, yes, we can do it, or update the thing. But I am taking a screenshot, push post, so that she can have this on there. We can follow up this in the future.
+
+Vivekanand Gajula:
+So what is the dynamic? To put here?
+
+Hector Palacios:
+So we can do it. We don't have a problem with that. It's just I'm putting like a follow-up point for Krishna because we are having these open topics.
+
+Vivekanand Gajula:
+So I will just say noted. Thank you.
+
+Hector Palacios:
+I will put it in our open points, but with a lower importance.
+
+Vivekanand Gajula:
+there is one more live pending definition for establishment this is the same point like proposal of items you know which can fall Give me one second. Let's see.
+
+Hector Palacios:
+When the man inventor inputs I will be should also present to me list of items that falls under our agreement for establishment. I think it's the same point, you know. Yeah, yeah.
+
+Hector Palacios:
+They could like notice as a requirement on BRD. Sorry? What did you say?
+
+UNKNOWN_SPEAKER:
+Noted. Yeah. Noted as a requirement on the BRD.
+
+Vivekanand Gajula:
+I think that's all.
+
+UNKNOWN_SPEAKER:
+Great.
+
+Vivekanand Gajula:
+I wanted to discuss you know few things. Do you have 5 more minutes?
+
+Hector Palacios:
+Yeah, for sure.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+I just want to ask you, you know, which solution you know we should. We should consider, you know. See, I put up, you know one simple example. OK, so now in this case I have stock of 4 I have a material reservation in March and then I have a fixed receipt you know in June and the one that you see in yellow right is is the lead time you know okay financial lead time so now now you know if we if we run this in IBP right there could be different you know possibilities now Now the first expected output is this okay where sorry before that you know the reorder point is 3 and the max stock you know is 10 and I could see different you know possibilities you know for this specific you know case that we are discussing.
+
+ Now one is that if you look at March right in March you are going below your reorder point. So as you have excess inventory, you know, at one of their internal locations, so you source, you know, from there, and you generate a receipt of 10. And then in June, you know, you are going, you know, above your max stock, you know, so from here onwards, it is 14. So this is one option. The other option is it generates, you know, the receipts like this, okay.
+
+ Creator it creates a recept of six in march and then from uh june onwards the projected stock is you know 10 so this ensures that you know the uh projected stock doesn't go above you know the max stock and then there is third case you know where it doesn't generate any recept why because as per uh their mrp you know in s4 their total supply is 8 and minus this 4 is gives you 4 and that 4 is above you know the reorder point so reorder point planning in S4 won't generate any receipt and that is the third case.
+
+ So now I don't know like which one is correct you know so that is something which we need to finalize you know so that so that we are all aligned you know on we need to see the data and because if we have receipts like a re.
+
+Hector Palacios:
+I'm saying let me think because we are putting like some examples like border examples to see how the different logic will differentiate like when cases are more extreme let's say and it's totally fine that that's where we need to focus indeed on those exceptions and if we are going to be able to even do that or not in the system.
+
+Vivekanand Gajula:
+Yeah but out of these three outputs how do we decide which output is correct.
+
+Hector Palacios:
+The point is that they don't have that visibility in the future. They never have. They just see whatever they saw in the future and we have right now. So today they are doing that.
+
+UNKNOWN_SPEAKER:
+Now, what is what we have today? What do you mean by that?
+
+Vivekanand Gajula:
+We already went through those lot sizing procedures and MR protection. No, no, no. But I mean in this case, in this scenario, what they will see today. In their system yeah so as this is a you know mocked up you know scenario if I run this you know and there is sandbox system by putting the same numbers right okay then MRP would will not generate any
+
+Hector Palacios:
+receptor it will be exactly the same because you already have the query saying we already We don't need a receipt. But indeed, what is happening in reality is that you are below the stock at some point. So what we are saying that this is not synchronization that we have. This is generating a period in which we are exposed.
+
+Vivekanand Gajula:
+But there, you know, what they're using today is completely, you know, formula-driven, you know, because Rio de Paine planning is formula-driven, you know, and their formula is what I explained to you, you know, like it looks at the whole supply and then, yeah.
+
+Hector Palacios:
+No, I completely understand that, but doing that, that means that there is a lot of inefficiencies that arise in the, in the, because when you're looking the whole horizon, you're not okay, this will arrive, but in one year, you know? Not right now. So this is an extreme example, of course, but you can have, like, not the reservation in two weeks, and then in the next year, you are a fixed receipt report, and you are saying that the system is not going
+
+UNKNOWN_SPEAKER:
+to do anything.
+
+Hector Palacios:
+It doesn't make sense to me. I mean, now that we have visibility, is we are saying, The maximum, for sure, should be sensical as well. Maybe this scenario seems too much because we are using whatever as maximum, like an arbitrary number. So we are misleading to ourselves because we are putting numbers in order to make this like an extreme example. But the reality, when we see their data, probably it's going to be more, how to say, it's going to make what we should do.
+
+ In this case, it doesn't make sense because we are making up the data. In the way of working, they are exposed. So maybe what we should do is to bring the order when we need it, not before, not after. In this case, maybe the system is going to do anything. It's not going to do anything. It's going to give it as four and just to have this three periods of exposure because you're going to be covered right away maybe this is also no more so three periods of exposure for once for one material that is moving like every two years it's not going to make a difference.
+
+
+
+Vivekanand Gajula:
+Yeah but even if we even if we discuss about this example no so till February you know they they have stock you know and they are above the reorder point and in March you know they are going below the reorder point correct So now now as they are going below the reorder point in March, so it was today. Should they get it from Their internal location like, So then in this case, what is the correct output?
+
+ Is this one or this one?
+
+Hector Palacios:
+The maximum for sure I I. But you're seeing the maximum right so that means that that is a definition that we have from before if we have no maximum inventory is because this is an inexpensive item so it's not like that no maximum inventory is
+
+Vivekanand Gajula:
+just a key figure you know I'm not using anything I'm not going to put anything in the maximum inventory key figure but they have max stock the max stock is 10.
+
+Hector Palacios:
+Then why are we the first scenario because we are going to go over 14 that doesn't make sense if we have a maximum stock we need to respect it and make whatever this is the this is what it is
+
+Vivekanand Gajula:
+right so I'm just trying to uh put you know different outcomes you know uh this like you said you know it won't make sense because from june onwards you know they will uh be going you know about their max
+
+Hector Palacios:
+stock right so now in this case we already discussed the one day between the maximum inventory and max stock is much better than max stock because we'll bring only what we need knowing that in the short term we will have the we will complete.
+
+Vivekanand Gajula:
+Yeah so this is what you know IBP can propose where we are going to put you know the max stock in maximum inventory so that it ensures that the projected stock doesn't go beyond you know the max stock so it will create a recept of six and then from June on June onwards you know your projected you know stock is 10 you know which equals to max stock.
+
+Hector Palacios:
+For me it's a solution they can they can tell us again no no we want to have we don't want to order in this case and it's between the second and the number three is that you want to have exactly the same result than today avoid ordering or we can order because she's inside of the maximum. So if it's between the reorder point and maximum, it's fine. It's healthy, right? So if we take decisions in that range, it's like maybe it doesn't matter.
+
+
+
+Vivekanand Gajula:
+OK, but let's say, Hector, I don't have any access. OK, let's say the access is zero, then it won't create anything over here, right? Because it is going to be zero over here. Then you know. Yeah.
+
+UNKNOWN_SPEAKER:
+Sorry?
+
+Vivekanand Gajula:
+it will wait until the lead time if the only thing that you can do right yeah but uh correct but then then I think uh uh then I think you know it will be difficult you know for for uh us to manage why I'm telling it's because the whole logic is uh dependent on you know the projected stop calculating if you look at the projected stock calculation only here you know you we are going below the reorder point and then from here onwards right outside the lead time we are above the reorder point and as we are using inventory target so the inventory target is going to look like this okay so wherever you are above your reorder point there I'm using reorder point and wherever we are below I'm using match stock so if there is no access so here it will create nothing okay it is going to be zero and then there is nothing like inventory target lateness so here you already have three so it won't create anything so it will continue with this four only but if this receipt would have been here right if this receipt would have been here then uh here the
+
+Hector Palacios:
+inventory target is inside of the threshold Yeah yeah I understand your point so inside of the lead time is nothing that we can do even if we.
+
+Vivekanand Gajula:
+Yeah the explanation is such that you know inside the lead time it is always going to be dependent on your internal location and if your internal location is not going to give you anything okay then then it will try to create outside the lead time but in this case as you already have a receipt, right? Yeah, now you don't need it. But if this receipt would have been here, no, then it could have created sex over here.
+
+
+
+Hector Palacios:
+Yeah. So I think that the point is that it doesn't matter. Because in the two cases, you are inside of the treasures. So no other three years and so on.
+
+Vivekanand Gajula:
+I think that whatever happens, is acceptable yeah so this is example to see here it created you know 6 because the receipt is not in June it is in July and the inventory target about this right yeah so this looks okay I mean uh we'll go with this you know we'll model this and if they say that no rmrp doesn't create anything it was works like this then I I also have this one you know in place yeah
+
+Hector Palacios:
+the point is that I think that this is like um you know lose a lot of visibility on that one it's like if you're checking in consolidated the horizon that maybe they are like very different dates and you're going to planning to trigger right now something that maybe you can get in a more time like the optimizer is going to do that is the other example that you show right that is not going to trigger right now to get as soon as we are outside the lead time we get it no we will get we we will wait until we have the need the reservation and then it will arrive something like that.
+
+
+
+Vivekanand Gajula:
+So yeah, but tell me one more thing like if we propose if IBP proposes 6 right then then this 6 and this fixed receptor 4 will will total up to you know 10 then don't you think like they they will end up in access inventory because see they know right what they are going to consume and based on their experience and their need you know they create the material reservation So, and because of that, you know, their formulas are like that, you know, on the S4 side.
+
+ That's why they look at the whole horizon because they know that when they are going to consume. So, if IBP proposes 6, then I think this 6 would be access for them, no?
+
+Hector Palacios:
+Yeah, I also agree. That's why I think that probably the maximum is going to be like for nothing.
+
+Vivekanand Gajula:
+So maybe we are like see this solution that we have known that is also in IBP where what I am doing you know I am I am I am using this you know in max inventory so that system knows okay I need to maintain you know the max inventory as 3 so as I am already above 3 right so it tries to you know adjust it because I have a very high maximum inventory you know violation cost rate but where I am confused is what is correct know because uh this one I was going with this one but then when something popped up in my mind okay if six is what IBP is going to propose and they might think that this is access you know for us and then that uh uh contradicts you know with the the whole goal you know of this project where they want to minimize their inventory it makes sense makes sense to
+
+Hector Palacios:
+me what you're saying makes sense I would do it only in a foreseeable horizon only I cannot put like the next year to share giving the next year. I'm receiving something. It will not be the case as well. I think.
+
+Vivekanand Gajula:
+Probably they when they have how much in the future, you know, I don't think so. What Bastián was telling me is that they should not create PO's or reservations, you know, beyond one year. There is one. I mean, there's one.
+
+Hector Palacios:
+I mean, we can agree where we want.
+
+Vivekanand Gajula:
+we integrate back is another question yeah yeah now that makes sense you know they they might create it on s4 side but I think we should restrict that you know so that the number should make sense yes but I think later I think what we can do is let you me and Bastián align on this no no it's show the job just to emcee if you are reconfigure this and we can show the two behaviors then we and
+
+Hector Palacios:
+tell them, OK, what is best for you?
+
+Vivekanand Gajula:
+And that's it. Yeah, perfect. I already have these two in place. We can show them.
+
+Hector Palacios:
+Because at the end, it's a trade-off, right? In some cases, this logic is going to be better. In some cases, it's not. Anyway, we need to be careful on this as well. Because maybe they can, oh, no, I like this logic part. But in other cases, I like this sort of logic. So it can become really complicated to understand which one they have to choose.
+
+Vivekanand Gajula:
+You know, they have to go with the one specific logic only because numbers are always dynamic, right? We can't bet on numbers. So yeah, so you have two scenarios.
+
+Hector Palacios:
+One is related to demand that you have like using time. And for me, the logic is better. So you are. The supply when you need it, not before. That is a win for IVD. And now you have another case with an existing supply. So the question is, should we trigger in any case here? Or can we have the best of the two worlds? That's another question. In the logic, for example, that you are placing now for the number three, are we going to respect the case in which have a material reservation and we are going to place the PR just when we need it?
+
+
+
+Vivekanand Gajula:
+Yeah, see, whatever I have configured, see, IBP will always go with just-in-time planning. So it is not going to, for example, if the receipt is here, it is not going to propose over here. So like they do on the S4 side, so it will always go with just-in-time planning.
+
+Hector Palacios:
+Okay, so that then this seems better.
+
+Vivekanand Gajula:
+Yeah, but the only thing is out of these two, right, which one?
+
+Hector Palacios:
+Are you sure that it's going to be like that? Because I'm thinking. Oh yeah, yeah, it makes sense. I think that then in that case, if we are going to respect the just-in-time, for me the logic number three which you are checking like a foreseeable horizon. Makes sense. I would think on the beginning, like, I need to see the data because if we see like, for example, that we are having a receipt in the next year, doesn't make sense, right?
+
+
+
+Vivekanand Gajula:
+But I also think that- So that horizon is something which we need to decide because when I looked at the files that Vignesh shared with us, you know, at least, you know, the MRO one is okay because it just has, one year in the past and one year in the future but for chemicals we have open peers for next three four years you know. So that is something which we need to you know align on and then if we say that okay only one year of horizon we need to consider you know and based on that we need to decide you know what should be the received then I think...
+
+ I think that it was a reset.
+
+Hector Palacios:
+We need to look for the information but not the specific number but I'm sure that they reset that we need to specify one treasure for doing this. I guess that we will need to have an additional session and we already discussed that as well like the time fences if you remember like for the PRs which ones we are going to consider and all of that. This is part of the same discussion, like which receipts or bills we consider.
+
+ And the same for the reservations. Which horizon of reservations are we are going to consider? Because whatever is in the future, maybe it's not relevant. It's going to change.
+
+Vivekanand Gajula:
+It's dynamic. Yeah, but that horizon has been set.
+
+Hector Palacios:
+No, that's what I'm saying. It's been set. That we need to fix horizons okay it's like everyone aligns but nobody has said this specific horizon is going to be part of the integration at the end yeah but that horizon is going to be a global horizon no yeah I think that we need to consider a global horizon for let's hope that we don't have like different horizon for each item yeah yeah fine then I think then given that case The best solution is the number three.
+
+
+
+Vivekanand Gajula:
+Hmm, correct.
+
+Hector Palacios:
+But depending on the item, I mean, I can say clearly that for a slow mover or something that is not being consumed like really quickly, this is the best one. For like a fast mover, for me, it's the second one.
+
+Vivekanand Gajula:
+It's like always shaking. Yeah. So then if that is the case, then IPP planning type should handle that you know I mean instead of having two values we should have maybe three or four values advanced supply planning is anyways it's a different you know thing but under ROP then we should categorize it like that ROP 1 2 3 yeah I think that also is a guess we can we can manage that we can manage that based on the all right now we need to find like a main rule because if we go like detail by detail this can be very complex okay then I think at least you know from a uh solutioning standpoint you know uh we are at least on track uh we'll see you know what works well for them so you're reconfiguring all this yeah this is already configured I tested also and these results you know I wanted to show it to you.
+
+
+
+Hector Palacios:
+You need to start showing me the IP man.
+
+Vivekanand Gajula:
+You are showing me just the Excel. No in IPPC I took runs you know. I can show you. No but not with I haven't tested with you know customers data because I'm still loading you know data in that Z01 AdMob planning area. But with sample I can show you. But with customers data I still need some time. And there also I have some questions like, I'm slightly struggling, you know, with the supply chain network actually.
+
+ So. Yeah, so what is happening, you know? Yeah, this is chemicals, you know. And this this is the open view and this is what I'm going to use you know for building the supply chain network so what I was thinking is as we have data you know for a couple of you know years in the past and one year in the future I was thinking to use only 2024 data you know and based on that create the supply chain network okay and for those location products you know which are not part of 2024 and they still exist with this file, then I will assign that tendering vendor to those combinations.
+
+ Because we don't know which ones are having LTPA.
+
+Hector Palacios:
+Yeah, we were asking, but you saw the Vignesh reply.
+
+UNKNOWN_SPEAKER:
+No, I didn't. Yeah, sorry.
+
+Hector Palacios:
+No, he was a very good He was saying basically, now that you are using iteration, I'm not going to do this because this is really complicated. Okay.
+
+Vivekanand Gajula:
+So that is the amount of help that we are getting from them.
+
+Hector Palacios:
+Let's check right now. Either way, we need the agreements. It's something that we need to raise. It's not something that we are going to get rid of But by having the agreements, that we will have a lot of what we need right now. So the supply chain network is one big topic that we need to start addressing as soon as we solve the main points of demand. But for sure, it's like using the LGPA to understand the multisourcing.
+
+ And if we don't have LGPA, then we have a tender. Process. So far I know.
+
+Vivekanand Gajula:
+Before tendering we have second step now where we see you know if they have procured anything you know if they are procured if they have made a purchase you know in the last 12 months.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+So that's what you know I was using this you know I what I was thinking I will use you know 2024 data and I will straight away you know load that because Right now, we don't have LTPA. So we don't have any visibility on the LTPA front. But at least we know that in 2024, what purchase they have done. So those vendors we have. And anything where they did not purchase, or maybe you have SKU 1 and Location 1, which was not procured in 2024, but it was procured in 2023, then those combinations will have tendering vendor.
+
+ So like that, I was thinking.
+
+Hector Palacios:
+yeah so let's follow that exactly same logic is first LTPA multi-source or just one TPA agreement but we need to understand where we are going to get that information because LTPA I don't know if that simple records or whatever
+
+Vivekanand Gajula:
+we have that information and have no idea no no LTPA I know where from where we can get that information but the problem is see we login into their system you know through this VDI right through this VDI login and and how do we and then we don't have this Microsoft you know office license okay so if I download the information you know from that table no then how do we bring it you know into IVP so by
+
+Hector Palacios:
+email yeah yeah this is until 40 megabytes so that is how I send information whenever I got it because in the beginning they share a lot of information with me that was on the on that VDI and I needed to send it to my desktop so I shared by email in parts the ones that I could.
+
+Vivekanand Gajula:
+Okay but I think getting you know LTPA can be a I mean, one option is we just load this PO in that table and see whether against this PO there is any LTP or not.
+
+Hector Palacios:
+I would strongly suggest if there is something that we can get on our own, let's do it. It's better than just asking to them because this is the way they work. They want to see that you have some work and then you ask the question if you go without doing anything to do the question they or they don't progress or they get mad. So we need to have some cities like we were doing our research this is where we find this information is this information that the one that you are thinking on and then we can iterate with them unless it's too
+
+Vivekanand Gajula:
+complicated but yeah yeah let me try you know let me try by sending this file to my email ID and let me see if I can I can download this file on the VDI and then you know do some
+
+UNKNOWN_SPEAKER:
+magic over there.
+
+Hector Palacios:
+Yeah let me know so yeah let me share the screen in a minute in a for for one second yeah so we have the constraints that they were asking on the BDI. This is something that we need to discuss with them, but let me take it to the GPMG meeting because it's not working. These meetings that we are having with them is not everyone is connecting. It's like too many topics. We are always trying to prioritize the most important ones.
+
+ So we are not having the decisions correctly placed. Rule for load sizes. Let's put a lower priority. On hold. I put it on hold, yeah. I need to do that in this file. Purchase requisition lifecycle. When to respect existing PRs. Went to the right. We're going to put the description here. We have some LTP definition. Why this is on Seoul site? Why it is ready to execute? And in definition, this is, I will take it on my site, for optimized strategy, that's what you have ongoing.
+
+ Ready to execute.
+
+Hector Palacios:
+Or it is on testing site to validate, right?
+
+Vivekanand Gajula:
+Which one?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Hector Palacios:
+This goes with the ad-hoc function. Then PRs for turnaround with the WBS element. This is open topic. We need to have a meeting.
+
+Vivekanand Gajula:
+At this point, you are keeping a separate version of this with you. Because I could not find this, you know.
+
+Hector Palacios:
+Yeah, yeah, I separated because we need to have one.
+
+Vivekanand Gajula:
+Then I was checking the wrong, you know, file then.
+
+UNKNOWN_SPEAKER:
+OK, no problem.
+
+Hector Palacios:
+I haven't communicated because I'm still doing some changes, but Have you put any point here?
+
+Vivekanand Gajula:
+No, no, yesterday you know I was asking you, right? I could not see this, you know, taking, you know, open point you know in the in the file you know but now now I understood you know you you are updating this in a separate you know file Yes.
+
+Hector Palacios:
+Thank you. You Okay. PRs for turnaround. This is the open topic. I will put it on Bastián's side now. Oh, design sessions. We need to discuss this one. Reorder point information to Bignesh. He sent us. To just check what we can do about it here. We still need the information. This will be on the Sagar site, but we will need to wait because we have Sagar with many things. Unless this is something that you think that you can get from HANA as well, Vivek, Yeah, let me see.
+
+ Let me put it on your side in the meantime, because even if we were on our side, this is not going to move fast. Session to understand the constraints. We have it with KPMG. This is what I said. The load size, we need to put it on hold. And we put it up.
+
+Vivekanand Gajula:
+Courses through decision lifecycle.
+
+UNKNOWN_SPEAKER:
+Many questions.
+
+Hector Palacios:
+Transactional data lifecycle.
+
+UNKNOWN_SPEAKER:
+So what is the purchase decision?
+
+Hector Palacios:
+And what we were thinking was like...
+
+UNKNOWN_SPEAKER:
+Open POS and STO.
+
+Hector Palacios:
+and the definition. All right. Okay. Will we use autos for flight planning?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios:
+So we are going to use quotas. Yeah. Multi-source LTPs. Multi-source LTPs.
+
+Vivekanand Gajula:
+Yeah, they already mentioned that in the VRD, I think, in some place.
+
+Hector Palacios:
+Let me look for this VRD.
+
+Vivekanand Gajula:
+But what if you have, let's say, for the same combination you have two LTP vendors and then you have a historical vendor also.
+
+UNKNOWN_SPEAKER:
+Give me one second.
+
+Vivekanand Gajula:
+How can I of races.
+
+UNKNOWN_SPEAKER:
+And that this is the note.
+
+Hector Palacios:
+He was mentioning somewhere. This is not helping.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+For call of order considering current single or multi-LTPA scenario. And this is for MR on-key mirrors. Yeah. So first, she's saying STR is the system behavior, then call of order for LTPA. Last option PR for tender.
+
+Vivekanand Gajula:
+Yeah, but that point I could not see like if there is a historical vendor then. The non LTP scenarios, I mean.
+
+Hector Palacios:
+If it's historical vendor, you use the last one in the your question is what if in the last 12 months you have to.
+
+Vivekanand Gajula:
+No, that is also a question, let's say you know you have a ltpa then you will you always use ltpa vendor but if you don't have ltpa then in the last you know 12 months you will see if they
+
+Hector Palacios:
+have done any purchase or not if they have then use that vendor and if they're not done let's put the rules here just to be completely honest so first of all strs is bychain and bychain network creation rules yeah
+
+Vivekanand Gajula:
+first is uh distribution Yes, here's one statement.
+
+UNKNOWN_SPEAKER:
+Oops.
+
+Vivekanand Gajula:
+And then.
+
+UNKNOWN_SPEAKER:
+Um.
+
+Vivekanand Gajula:
+Yeah, this is supply chain network.
+
+Hector Palacios:
+I don't know what I was thinking about.
+
+UNKNOWN_SPEAKER:
+OK, so yeah.
+
+Hector Palacios:
+The creation rules is like, what was the first one?
+
+UNKNOWN_SPEAKER:
+STRs. STR.
+
+Hector Palacios:
+But related? To SDRs is another whole thing, right? Let's think on, first of all, NPRs, and then we go with SDRs, PRs, because SDRs is also another whole problem.
+
+UNKNOWN_SPEAKER:
+It's related to PRs.
+
+Hector Palacios:
+We have LGPAs. Multisource or single. Source then last 12 months what if we have to can we use the last one always is instead of generating multi-sourcing I guess that we can just select the latest one yeah correct out of those two let's choose the latest this one yeah for tender dummy supplier so we need to create a dummy supplier that is standard unless we have an orgy fear where we can put a whatever is standard but like external receipts something like that I was thinking on but let's check what is the solution we can use both like a key fear without specifying the supplier no no but we need to yeah yeah then if you want to use external procurement then in a
+
+Vivekanand Gajula:
+production source header you will have to create those entries you know with the source rule as you and that way that is another you know head action know what I mean is just just give me a minute. See if you want to wherever there is no vendor right and without vendor also you need to generate PR no on the IP side then in production source header we have P rule and U rule right then we'll have to create a master data record with the U rule but let us leave that you know I think maybe I can do a test and see you know how that works.
+
+
+
+Hector Palacios:
+Yeah, and for the SDRs, I'm thinking, well, there is no, this kind of logic is more simple. We need to think on, in which year we are going to base this.
+
+Vivekanand Gajula:
+If we have another like table in which we can use that, or if- For one target, if there are multiple sources, then what is the logic?
+
+Hector Palacios:
+You sort of them, I guess, and to use a quota for whatever is there. No, but we have an agreement.
+
+Vivekanand Gajula:
+Do we have an agreement with the customer?
+
+Hector Palacios:
+No. I mean, you need to get the stock from whatever you get. I don't think that they care.
+
+Vivekanand Gajula:
+No, I think you are right, you know, we just need to consider the access, you know, that's it. That's it.
+
+Hector Palacios:
+But let's have a like an horizon rule and we cannot look on the full horizon because maybe we are going to get connections that are completely obsolete. Yeah, yeah. Avoid obsolete.
+
+Hector Palacios:
+Protocol explaining AdNod is requesting to flag the mid-year items in order to create ERs. The point on this one is that what is going to be generally bearable, the raw material. So all the stock related to the material or just a portion of the stock. So they will need to put the number, right? So if they, in any way, we need to understand what is the stock that we are needing for these ones.
+
+UNKNOWN_SPEAKER:
+Mm-hmm.
+
+Vivekanand Gajula:
+So what is the requirement over here?
+
+Hector Palacios:
+They're rotable or repairable or refurbishment. Basically, these materials, they are expensive and they are repairing. But there is a moment in which they cannot repair anymore. So I'm thinking, so they have a stock.
+
+Vivekanand Gajula:
+And they still have stock, then that stock will be treated as dead stock?
+
+Hector Palacios:
+I'm thinking. Let me put the example. So I think that if they have a stock on hand, there is no way to say in SAP system this is like beyond repairable. So they will need to do an adjustment manually here. So you have a stock here, and you have a reorder point. Like let's say this is below 30, right? So you are going to be always over the rear point. You will have usage for these materials. You will have everything.
+
+ But it's not going to have anything. We are not going to run anything for this. Repairable. Right. Repairable. And you will just have the stock projection of 50, whatever it is. So I am saying that whatever material reservation or whatever we have here, we need to ignore it for this material. So that means that you will not have demand for this, never. Until someone says, instead of material reservation, we are going to put it like red.
+
+ This is not going This is not a word I'm saying.
+
+UNKNOWN_SPEAKER:
+Consider.
+
+Hector Palacios:
+Consider. You will have here like vision. In a lack of better naming, but you will see. And what is this beyond reparable? It's a material that you cannot repair anymore. It's like too shabby in this case.
+
+Vivekanand Gajula:
+So here is where this quantity, like I could not understand the meaning.
+
+Hector Palacios:
+This is the quantity that you cannot repair. So you need it. That means that it's regionally repairable.
+
+UNKNOWN_SPEAKER:
+This is your demand.
+
+Hector Palacios:
+Beyond repairable is like a demand?
+
+Vivekanand Gajula:
+Yeah, you cannot use it anymore.
+
+Hector Palacios:
+Not a demand, but I mean it's a correction to the stock. You have a stock 50, because between these 50, you have 40 that are regionally repairable. We don't have a flag on SAP. And the user is saying, OK, but let me put on AVP the flag. Instead of a flag, let's put a key figure and the quantity. And they can tell us, between these 50, 40 are beyond repairable. Automatically, you are below the reorder point.
+
+
+
+Vivekanand Gajula:
+So this is inventory correction. Correct. And if you are below the order point, then?
+
+Hector Palacios:
+Minus 40.
+
+Vivekanand Gajula:
+Yeah, that is correct. But if you go below the point that you need to trigger something.
+
+Hector Palacios:
+Yeah, exactly. That's the point. That's what I'm saying is that we don't put a different supply chain network. We don't put anything different. It's just that for the repairable, we don't integrate material reservation. We don't do it. So that means that we are never going to be unless we are really below the reorder point. And in this case, just the user is going to specify this between these ones, 50.
+
+ We have 40 that are beyond repairable. We are below the reorder point. Then we need to create a forecast.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Vivekanand Gajula:
+Now I get it.
+
+Hector Palacios:
+Sorry, that's a projection appeal for this.
+
+Vivekanand Gajula:
+Yeah, a new issue trigger, new supply. OK.
+
+Hector Palacios:
+So not consider any material reserved. So this is going to be a manual input, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+What? I don't know what's coming.
+
+Hector Palacios:
+okay so again do not consider as they should not clear ERs but if you already have material repairable items then but that doesn't mean that the you are going to consume the stock is just going to go back to
+
+Vivekanand Gajula:
+the stock so no no on the IBP side you know you already have material reservations in the key figure yeah so then then for that we need to find out the way you know because you already have this So how do we identify which item is a repairable item? Do we have a flag?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+Yeah, so then I think for those items, demand planning should not, not demand planning, inventory planning should not send anything.
+
+Hector Palacios:
+For inventory planning, let's see what is the case of how we define the levels. That is why I'm not clear now. Let's think on the supply perspective.
+
+Vivekanand Gajula:
+Material reservation we are talking about. So then I think from S4, we should not integrate for repairable items.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Hector Palacios:
+Do not consider material reservation as a not integrate. The user can use inventory correction here to get a switch quantity is variable if the stock falls below this is the only demand sign up No material reservation or consumption, whatever is consumption. History. If the stock falls below the point, the normal process should follow. I would say let's execute something like this. Let's just place a planning view with this because the views are already there.
+
+ The only thing that we need to remove everything and just have the inventory correction to fear and just show, okay, if you put this and you go below the reorder point, then RPR is triggered. That's it. Completed, we say that, yes. Reorder point scenarios, yes. Complete, duplicated, and what else? Maximum stock level to fuel supply. Yes, really cool. Transaction updated at cycle. Great, I think that we went over the 40 points.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vivekanand Gajula:
+So yeah, I will work on network setup and the rest of the information I've already loaded. I think only that ROP is something which we are missing. Let's see if I'm able to, you know, do do something, take extracted information. If not, then I think we'll, we'll have to ask, you know, the problem is I don't have direct, you know, access to the system. Yeah.
+
+UNKNOWN_SPEAKER:
+Right. Yes. Yes.
+
+Vivekanand Gajula:
+I mean, the
+
+UNKNOWN_SPEAKER:
+Let me put in. Change to one. And it appears.
+
+Hector Palacios:
+s4.co. How do you know to use S4HANA?
+
+Vivekanand Gajula:
+Sorry? How do you know how to use the S4HANA? I have worked extensively on OPP, right? So OPP has tied integration with S4. And also when I started my career, I was parallelly working on both the AP as well as ECC.
+
+UNKNOWN_SPEAKER:
+That's right, man.
+
+Hector Palacios:
+That's right. What you have the knowledge is a skill. And it seems that there is a future.
+
+Vivekanand Gajula:
+Because the technical structures, you know, it's important to know. Otherwise, it's difficult to build something. No, it's important.
+
+Hector Palacios:
+And for example, I have the understanding of what are the tables, but I am not like a HANA user. I have done it in the past, but it's not like I have always access to this so it's like not a consolidated knowledge not completely you know up to date with the structures yeah no actually as a functional guy
+
+Vivekanand Gajula:
+it's important to know at least you know the basic things because at the end of the day all the data is going to come from that system only right so so from my integration standpoint you know we should know all their touch points otherwise it's slightly difficult.
+
+Hector Palacios:
+Yeah it's like they were saying I was talking with Ezequiel the other day and I was asking him because Ezequiel is one SAP guy that came to OCM to work as sales and he's living here in Madrid so sometimes I see him and I was asking him about the SAP what is the best selling product and he told me S400.
+
+Vivekanand Gajula:
+s4hana I think is sap's main solution because a lot of revenue come from s4hana yeah so that's why they focus more on that everything else is like an additional it's like an add-on right it's an add-on so exactly so
+
+Hector Palacios:
+idp for example is like whatever the is like you already have s4hana so what I can give you now Sometimes it's like part of the contract to have like an additional things or kind of a price. Yeah. So that seems like he's the future of the company.
+
+Vivekanand Gajula:
+I don't know. What was new for me is this reorder point planning, you know, because I never tested that, you know, before on the S4 side, but I think It's very different, you know, uh, then, uh, then MRP planning, you know, on the S4 side, I was thinking it is almost the same, but I think, uh, it's different, you know, after, after I conducted, you know, some tests, you know, I, I could conclude that.
+
+
+
+Hector Palacios:
+Yeah, no, for sure. It's different. It's a much, much more simplified logic and it has like many things, but well, I think that is like um at the end this is like advanced like planning without forecast for me they are more we should we should
+
+Vivekanand Gajula:
+haven't we should we should have called it like this you know one is reorder point planning and instead of calling uh advanced supply planning as advanced supply planning we should have called it as focus based planning because rop based planning is also advanced supply planning only right Yeah, it's the same.
+
+Hector Palacios:
+It's also following constraints and things like that. Basically, we are changing the trigger.
+
+Vivekanand Gajula:
+Yeah, the only thing that is missing in ROP is forecast, you know. That's the only difference. Otherwise, it's almost the same, right? We can start seeing that in the sessions.
+
+Hector Palacios:
+We can start changing the things, and we can see. Advanced supply planning for everything we are considering constraints the only difference is sometimes we are considering the forecast so we'll be forecast-based planning and we are the point-based planning but yeah that's what I think that would that would be
+
+Vivekanand Gajula:
+better because uh if we say that okay for these SKUs we are going to use advanced supply planning then at the same time we are saying that for ROP we we might be using some basic you know supply planning like that yeah argument okay Thank you so much for your time.
+
+Hector Palacios:
+Will you join?
+
+Vivekanand Gajula:
+Or do you have the Nadro meeting? No, I have Nadro meeting. OK. OK. Thank you.
+
+Hector Palacios:
+In one moment, it seems that we will need to speak. You cannot go to all the dailies. Nadro, Nadro, not on, on, on.
+
+Vivekanand Gajula:
+I don't know how this is going to work out. I also need to talk to Sebastian, because sometimes, you know, it's like, because already I'm having a lot of work, you know. From AdNoc you know I need to do a lot of things I was busy with this ROP you know solution and all but now at that time I was not having you know much work on the Nadro side because their system was getting refreshed you know so that way it was like a cooling you know period for me but now they have given me the system so managing these two you know at the same time can be very
+
+Hector Palacios:
+difficult for me Please raise that alert to Sebastian because for sure we need to as soon as possible and I don't know when this thing is going to end.
+
+Vivekanand Gajula:
+It is looking like a never-ending thing for me. But let's see what plans he has. Yes, because this is not going to change on our side as soon more and more demanding every time yeah that's what I mean because I'm too much you know overloaded with adnox work then uh when is that I'm going to you know uh work on nadrom and lucas is there but he he's not fully aware of you know each and everything and we cannot expect you know uh uh he being knowing you know each and everything because uh obb is a totally different animal you know How many people we have in Adro today?
+
+
+
+Hector Palacios:
+You, Lucas, and who else?
+
+Vivekanand Gajula:
+Today, see, I am there. Lucas is there. Then there is one guy who is working on AATP. His name is Douglas. Then on the demand side, we have Daniela.
+
+Hector Palacios:
+OK, and for inventory, we have Cristobal.
+
+Vivekanand Gajula:
+Daniela, Dragon, and Lucas is on supply with you. Yeah lucas the plan was that you know I will hand it over you know to lucas and he will take it over from me but he is not fully you know comfortable so so that's why I need to be there you know because because as a solution it's very complicated because even if he is able to get a good grip on the obp side then he won't be able to you know know what's happening happening on the S4 side because everything is going to come from S4.
+
+
+
+Hector Palacios:
+So that means that Lucas maybe is like unused because maybe as they are relying too much on you, so much on you, then maybe Lucas is, we are not using properly Lucas. Wouldn't be better that Lucas always start focusing on something called not-nugging, you have it like sidekick and you say okay I'm checking like the important stuff or the more complicated stuff but keeping work on both sides not only another
+
+Vivekanand Gajula:
+but also another but lucas we needed an adro why I will tell you because this customer you know is uh based out of mexico and the language is the problem no because I can I can work on obp I can work on s4 I can do you know all the system related That's why you say, what if we have a look at 50% in Adro and 50% in AdNoc? Wouldn't it be better for you? Yeah, that should be better. I mean, it's a good idea, but I don't know what Sebastian has to say on this.
+
+
+
+Hector Palacios:
+I will speak with Sebastian to see because if it makes sense to you.
+
+Vivekanand Gajula:
+So we both will be 50-50 percent, you know. So what I'm saying is like I'm already, you know, I'm already 50-50, you know, in both the projects.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Hector Palacios:
+So it's just using better Lucas so he can help you also in AdDoc because today is just helping you on Ladro and it's not taking full responsibility because you are the the guy that knows but you can be that guy in the two places and we can have Lucas that speak English subnodes, MRO and so on. He can do some job for you. So you can assign tasks and he can execute, I guess. So you don't worry about anything.
+
+
+
+Vivekanand Gajula:
+Let's talk to Sebastian and let me know what he thinks about this.
+
+Hector Palacios:
+OK, I will speak with him today and with Bastián as well. Probably Bastián is going to be just fine. More people? Yeah, please. Okay, let me speak with them and I will let you know what we get from that.
+
+Vivekanand Gajula:
+And actually Hector, you know, if you ask me, we at least need one more person, you know, on the supply side because drilling is okay, you know, drilling or maybe if we involve Arun also know in this and we can.
+
+Hector Palacios:
+For sure, I mean, we will have on demand side, on the demand inventory side, we have Piyama, we have Elayu, we have Palo, so we will need to move one one of them to supply for sure. So right now, it's like Pillai and Pallu don't know a lot. So basically, Saul is doing like a mentor, mentoring basically.
+
+Vivekanand Gajula:
+Those guys are totally new, right? They just, you know, passed out, you know, from their college and then they, you know, joined this company. But what I'm saying is, what I'm saying is like, see now, whatever is happening on the drilling side, you know, I know that because Arun was validating, you know, the solution with me. But he doesn't know, you know, what's happening on MR1 chemical side, as he's also experienced guy.
+
+ If we involve him also, you know, in MR1 chemicals and because MR1 chemicals is way more complicated, you know, as compared to drilling. Okay. In terms of, you know, the end to end solution, I mean. I'm just talking about supply planning because in drilling if you see right there is nothing on the demand planning side okay there is no inventory planning no but it's really complicated so far it's getting much more complicated than expected yeah it is complicated because drilling as a business as a process you know is very different right like understanding what is completion code what is well code whether it's a customer whether it's the location this and that so mapping mapping those data you know points is going to be a tricky part.
+
+ But the moment all the data comes to IBP, then I see it as a very straightforward process.
+
+UNKNOWN_SPEAKER:
+OK. Let's discuss that.
+
+Hector Palacios:
+Let me take the point to Bastián to see what he thinks about that. I'm getting the point that we will need more help on Sprite side.
+
+Vivekanand Gajula:
+Because whatever I have experienced so far, even I was very busy, you know, in brainstorming with myself, you know, on this reorder point planning solution. So I was literally, you know, spending hours, you know, to see like how this can be managed. I tested a lot. So, so, and there are so many other requirements which we haven't, you know, touched, you know. So there is a lot of work, you know, a lot of work in MRO, chemicals, supply side.
+
+ So we definitely need at least somebody who knows IBP.
+
+UNKNOWN_SPEAKER:
+Okay, perfect.
+
+Hector Palacios:
+All right, I need to jump because I'm very late.
+
+Vivekanand Gajula:
+I think we had a very lengthy conversation. Okay, thank you very much, Pierre. Thank you, yeah, bye. Bye.
+
