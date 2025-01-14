@@ -1,0 +1,453 @@
+UNKNOWN_SPEAKER:
+Hi Hector. How are you? Good, good.
+
+Fakhouri, Mohamad:
+Yourself? Hey Bastian.
+
+UNKNOWN_SPEAKER:
+Doing well. Is Kunal out? Yes, he seems to be on leave.
+
+Fakhouri, Mohamad:
+That explains why he was doing the consolidation excellent and all of that.
+
+hector.palacios@go-scm.com:
+What? Say what? That Kunal is out, he's on leave.
+
+Bastian Osorio:
+I don't know. Did we manage to address the comments? Yes, most of them.
+
+Fakhouri, Mohamad:
+There's a few ones we can go over them.
+
+hector.palacios@go-scm.com:
+Yeah.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Fakhouri, Mohamad:
+OK, let's see.
+
+UNKNOWN_SPEAKER:
+Come on. I'm Ahmed.
+
+Mudit, Khushboo (UAE):
+I've asked a question. Do you want to go through the BRD first?
+
+Fakhouri, Mohamad:
+Sure, yes.
+
+UNKNOWN_SPEAKER:
+Let's do that. Are you sharing your screen? Yeah, give me one second.
+
+Fakhouri, Mohamad:
+I'm just trying to locate it. It's asking me to log in.
+
+Fakhouri, Mohamad:
+I think for, uh... There's only like two comments. One is regarding the machine learning. To have machine learning to propose repairable items and to be identified. I didn't want to answer that, Bin Asma, but you know that's not possible.
+
+hector.palacios@go-scm.com:
+Machine learning, we have like a specific functionality is not whatever we want. But I think that she's connected because they are asking something different. They are asking just like a manual way to detect them, to say, these ones, we need them to procure because they are vision repairable. So they just want to like, that's it. But as my saying something that is not sensible.
+
+Fakhouri, Mohamad:
+It's fine. Let's just respond with what is feasible. Well, I think she's referring to, let's say, sensors, that is.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Fakhouri, Mohamad:
+If I go to her, she'll propose it.
+
+hector.palacios@go-scm.com:
+Exactly, you know, it's like she wants us to implement like predictive maintenance, something like that.
+
+UNKNOWN_SPEAKER:
+Yeah, okay.
+
+hector.palacios@go-scm.com:
+So, can I answer just like plainly, this is not feasible?
+
+Fakhouri, Mohamad:
+Maybe we can say what is feasible, you get what I'm saying?
+
+hector.palacios@go-scm.com:
+No, because what is visible is a lot. It's like the Kyle document related to the Q&A, but we cannot respond with the whole document here. It's just to say there are many functionalities explained on the Q&A document, but they are specific and not customizable. We can say that.
+
+Fakhouri, Mohamad:
+Yes. So here, because Murugan mentioned, currently repairable items which is bound to repair is not returned to blocks. Okay, we can, because IBP will only, IBP will support identification of repairable items and with inputs from planners determine which materials can no longer be repaired. I believe, here Hector, that IBP will only take it as an input, right? Because, in the material master, we can say, if this item is repairable or not.
+
+ So, you will have, in the plan, you will have that. For this material, this is going to be repairable, now it's up to them, up to decide if they want to repair it, or purchase a new, product. Replace it with a new product. Yeah, exactly.
+
+hector.palacios@go-scm.com:
+They have this repair material and they don't want to create a PR for that unless they flagged vision repairable. In that case, they want to read the PR.
+
+Fakhouri, Mohamad:
+But what is beyond repair? So exactly, I don't think IBP Yeah, support that.
+
+hector.palacios@go-scm.com:
+No, IBP will not. They will say, OK, now this material is being repairable. So that's one of the PR bodies that we are going to receive from the user.
+
+Patel, Rahul:
+Yeah, exactly. So I have joined just now, just to add to this point. So the repairable or not, from a material attribute perspective, in a master can be identified if it is repairable. But the beyond repair status is not of a material, but the inventory of the material you have. Like, you can have two quantities in stock. One of the quantity is available, and second quantity, even if it is available, that inventory is beyond repairable, right?
+
+ So that's what I just wanted to align with you. So from a solution perspective, When we say it is beyond repairable, basically, because look it from a equipment perspective or a material perspective, you have a quantity which is very expensive, and you have one quantity in stock, which is a spare quantity. So whenever the equipment goes under repair or fails, then what you do is you replace, which means you consume the available stock.
+
+ And the moment you consume the available stock, there is no material available, IBP will trigger a PR, because you need to have one quantity. But in the meantime, the old material, which was not in stock, has to come back to stock, right, if it is repairable or if it is repaired. So, there is a period in between when you consume the available material, but the old material has not come back to stock.
+
+ In that period, IBP will trigger a PR, considering there is no inventory. So, that's the period we need to identify and consider whether IP to trigger PR or not has to be exactly initiated right now in that case this is a user input whether the model which is taken down or the or the stock which is is under repair whether do we have the confirmation whether the stock is repairable or not so the point I'm trying to make it it's an attribute of the stock and not attribute of the material itself Correct?
+
+ That specific stock is repairable or not? The metal is always repairable. But that specific stock of the metal, whether it is repairable or not, how would we know it? Specific stock? Are you getting what I'm trying to say?
+
+Fakhouri, Mohamad:
+Yeah. Yeah, so maybe, Hector, if you don't mind, just Replying to those two comments, like we cannot do beyond repair. Will only take it, only flag if it's repairable or not based on the input and SAP and machine learning.
+
+Patel, Rahul:
+So from a solution perspective, I think the way we should do is that the beyond repairable model should not trigger PR by default unless a user confirms that he wants to trigger PR and that probably that confirmation we can put it in IB saying that trigger peer even if it is a repairable material which means outside IBP user has evaluated on his own that the material is the available stock is not repairable and we need to initiate procurement.
+
+ So from an IBP perspective we cannot get this confirmation. So from a solutions perspective do you think we can work out something where all the materials which are identified as repairable we don't trigger supply plan we don't trigger PR those are probably we have a separate planning sheet for repairable material and then the planner manually confirms that if there is a if there is a material which is repairable and it does not have sufficient stock IBP identifies this material that there is a need of PR but we are not generating it please confirm whether IBP maybe we should generate a PRM.
+
+ Is this something we can propose as a solution from a technical perspective?
+
+hector.palacios@go-scm.com:
+Let me think about it. I think that as a whole material is very easy, but if we are thinking to a specific stock, I need to check how we can do that. Yeah, so we don't do that.
+
+Patel, Rahul:
+So that's what I'm saying, because it will be difficult it on a stock level so rather than doing on a stock level we simply say that we'll create an alert whenever IBP sees a demand for a repairable material right but when the demand is available we don't generate PR which means it does not trigger procurement but the alert triggers review for the planner to evaluate whether the PR is actually needed or whether the material is actually repairable or non-repairable if the material If the material is repairable.
+
+ He simply. Confirms the alert saying that this model is not required, and if the model is not repairable, then the alert gets converted into PR something like that. I may be. I may not be talking correctly in technical terms of IBP, but from a solution perspective, do you think such solution is something we can agree to so that that way we give the responsibility of whether or not on the planner and he will take that action based upon the status of the equipment which is outside of IDP.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+Does that make sense in terms of solution for you?
+
+hector.palacios@go-scm.com:
+No, it makes sense. I'm only thinking it's like a high-level alert because maybe the assistant PR can say you need those 40 you only need 20 you know because those 20 are being repairable not the 40.
+
+Patel, Rahul:
+Yeah so essentially these materials they are repairable because the cost of the material is really high which means you will always have only one backup material correct which means if and if you are consuming that one backup material for a repair then and I'm assuming this material should be reordered upon planning only because you are having which means the moment the inventory goes zero, you trigger procurement for one more stock.
+
+ Now, whenever such PR or the replenishment or supply is to be triggered for such material, we show them separately. So maybe we can give them an alert or propose to have a separate planning sheet where only repairable metals are shown. Considering the value of the metal is high, probably it needs more focus and more attention. So that the planners can take decision and we don't unnecessarily take our PR from IBP, considering the value of the PR may be really high.
+
+
+
+hector.palacios@go-scm.com:
+Yes, I'm trying to look for information related to that, because I remember that when we defined the service level matrix, we were saying something about repair, like they don't have a stock or something like that. So let me look for that and you'll understand better.
+
+Patel, Rahul:
+Yeah, so in the same term, there are three, four comments which are related to repairable. So now that we've discussed about it, will you be able to answer all those comments related to repairable, once you have figured out your thought? So that one related to machine learning, one related to Abu Bakr. There are three, four comments across, right? So if you can reply all the comments which are related to repairable, once you have finalized how you want to proceed with it, based on all these people.
+
+
+
+hector.palacios@go-scm.com:
+We answer. We answer. Now I have more information. But for example, the comment that you have there is already updated. That is what I answered. And then after they discussed with Murugan, basically, on how to do this. But basically, how can I pronounce that?
+
+UNKNOWN_SPEAKER:
+Habubakar? Habubakar.
+
+Patel, Rahul:
+Yeah.
+
+hector.palacios@go-scm.com:
+He said that, basically, they need to manually input, because this is not something that they will find on S4HANA to flag it. So basically, that is not an issue. It's a smart comment that I really know how to answer.
+
+Patel, Rahul:
+but I wanted to align with you because you know it's a smart. So. So from a machine learning perspective there, how would machine algorithm understand whether it is repairable or not? There is one indicator which is like the material is repairable. The only thing what we can do is. Based upon IPPs. Count the number of instance the demand generated. Now let's say a machine which is a let's say a expensive machine something called turbine.
+
+ Turbine is really expensive machine. Now in IVP we will be able to identify how many times turbine has failed. Correct. So if the consumption is triggered three times or four times of the turbine against the same equipment asset then we know the turbine has been consumed four times. But for the same turbine, whether we have initiated replenishment? No, because we have not initiated replenishment because we have repaired it.
+
+ So if you can put up a logic in IBP that the life of the machine or turbine is, say, five cycles, and it has been consumed four times before, now the fifth time, will not be repairable. If we are able to provide something solution based upon the historical consumption based upon knowing that okay I had consumed this metal four times but I have procured only one times which means I've repaired it three times.
+
+ Do you think something in that term you can use to predict basically when it is going to be repairable next time as an additional information for the plant?
+
+hector.palacios@go-scm.com:
+We can say that they are close to repairable, but that is not much in learning. I just want to respond that and that if she wants to automate a logic, we can do that, but it's different. You know, it's not much in learning. Yeah, it is a machine learning, right?
+
+Patel, Rahul:
+In machine learning, what happens is you train the algorithm with some set of data. So here, the set of data is that, in a broader term, I am not saying, I'm not going through the dictionary. Definition. But in a broader term, what is machine learning? The machine learns based upon the available facts. What are the available facts? That there is a machine which is repairable. There is a machine which has been consumed four times but broke it one time.
+
+ That is the fact which is available. So based upon this information, if the algorithm can predict that okay this is an anticipated repairability of this machine considering it has been consumed four times and this is as an anticipated. Accuracy of the anticipation will increase as you have more data, right? In case of AdNod, the data is sparse, which means we can still put this logic as an algorithm, but this will be prediction based upon the data.
+
+ So we can always put a disclaimer that if the data set is less, any machine algorithm will not work, right? Or it will not predict accuracy. The accuracy of machine learning is directly proportional like forecasting, right? Yeah, something like forecasting. No, it's not going to work.
+
+hector.palacios@go-scm.com:
+It's like, no, no, no. The frequency is too low to get something that it's reliable.
+
+Patel, Rahul:
+But here, in forecast, what we forecast is when do you need that material, and pinpointing from our time series perspective. Here, the only thing we can identify is that the life of asset is, say, five repair cycles. You've already consumed four repair cycles. So next time it fails, it has to be procured because it may not get repaired. That's the forecast we are doing. And we are not saying you will need this machine on a certain time series level.
+
+ Does that, do you think it is relevant? Will we be able to propose?
+
+hector.palacios@go-scm.com:
+But I don't want to abuse of the language of machine learning because, you know, if it is something that is reacting with new data, even an average machine learning is not, you know, machine learning.
+
+Patel, Rahul:
+You can reply saying that this does not require machine learning, but we'll be able to predict this, this, this based upon this, this, this data.
+
+hector.palacios@go-scm.com:
+But I also want to say to Asma that the machine learning is not custom on IBP. It's just some specific logic we have, but we cannot do everything that she imagines, like machine learning because she usually is answering like that, machine learning for this, machine learning for that.
+
+Bastian Osorio:
+Let's answer what IBP can do. She can name it as she wants. But for me, that's not relevant.
+
+hector.palacios@go-scm.com:
+That's not relevant.
+
+Bastian Osorio:
+The relevant is what we are going to do.
+
+hector.palacios@go-scm.com:
+No, it's relevant because the expectation can be too high. We need to say this is the logic that making us That's why we need to be very specific on how we're going to manage this. Let's not say machine learning, but machine learning is very fancy and it's open to many things like to smart machines. It's not like that. I don't want to create unnecessary noise at this point.
+
+Bastian Osorio:
+Let's see how we can address this and that's it. I don't want to have multiple meetings on what is machine learning and what is not. Let's, again, let's stick to what we can, I'm not saying we should put something that we cannot deliver. Absolutely not. Quite the opposite. Let's answer what we can actually deliver. That is, of course, not mature learning, but let's not go into a discussion of mature learning and non-mature learning.
+
+ Let's go to the actual solution.
+
+Patel, Rahul:
+I'm aligned here on batch and start.
+
+hector.palacios@go-scm.com:
+Yeah, but I think that this is going to backlash to us. If we are not saying this is not much in learning, and then we propose things that we think, OK, but this is not really smart. It's just a logic. This is going to backlash in the future if we are not clear on what we can do and what we cannot. I say that one of the basic things that we need to do as consultants is manage the expectation, guys.
+
+
+
+Bastian Osorio:
+No, but at this point, don't want to create unnecessary noise, we want to get the approval as soon as possible and start working with the tool. We don't want to create unnecessary noise, unnecessary discussion. That shouldn't be the focus.
+
+hector.palacios@go-scm.com:
+In the last ones I also answered things like IVP is not matching. She was asking like batches on IVP and I said no, IVP is not that kind of solution. I give a broad answer, and she says, OK, approved.
+
+Bastian Osorio:
+That's fine. What I don't want to put here is mature learning, no. Let's describe what we are proposing.
+
+hector.palacios@go-scm.com:
+OK, let's do the following. You take it, Basti. I can check the other ones.
+
+Patel, Rahul:
+OK, so I think repairable was one of the points. There are quite a few comments. So, if we can, based upon our discussion, if you can reply the points related to referable, then that's one point. We'll address three, four, or five comments which are related to referable. Another open point is this turnaround order. Now, I, Bastian and Hector, in one of the meetings last week, we briefly talked about this, where there is a requirement to have what we call WBS element in the supply side and to be able to create a PR specific to that WBS element and to be able to do supply planning at WBS level in the combination of work order and WBS combination.
+
+ So basically, the planning level for supply planning is material, work order, and WBS for a plant.
+
+Patel, Rahul:
+so we did not answer this comment because we needed your confirmation that is this something possible on a supply planning level because if we say yes then the PR and I don't think we have option to say no but still I wanted to confirm with you if there are alternatives you guys are thinking upon where we have the WBS information in supply planning and we can use that WBS number to trigger a PR which has WBS number so
+
+hector.palacios@go-scm.com:
+that It is something that we can put as an open point to check because this is something that we didn't know. I mean, we have in mind a solution, but we need to discuss better, I think, with more time and to check what are the pros and cons of this. We haven't had generally like one big discussion to define. We have discussed, yes. But we haven't defined okay this is the way to go or this is how we can we can do it you know.
+
+
+
+Patel, Rahul:
+So do you want to keep this as we know we have noted this requirement uh we're keeping this an open point till we are able to finalize solution on this?
+
+hector.palacios@go-scm.com:
+Yeah I think because I think that the implication can be can be weak so um we need to understand pretty well not saying that we are not going to do it but I don't want to say this is how
+
+Patel, Rahul:
+we are going to do know so can we uh say yes and define how we are going to do this or do you want you don't want to even say yes if we are not sure how we want to
+
+hector.palacios@go-scm.com:
+do it I would prefer to give it as an open point right now because I I can say okay I want to do this like using a concatenation between plot and wus but that depends on that if that is something that we can do an iteration side as well. So it depends on the technical feasibility. So let us discuss and see the implications and how many things we are going to change because of this. Because if I say right now, no, we are going to do it that way, then we need to start raising a rise up right away for the integration flows and so on.
+
+
+
+Patel, Rahul:
+OK. So then should we then, so Mo, Fakury, can you just update this comment here? Turnaround so the request noted we will this point is added we are evaluating technical feasibility we are evaluating technical feasibility of creating of using or feasibility for for creating PR based on WPS on a supply side on in supply planning I think PRs with WPS in supply planning till the technical feasibility from this point would be identify the open item.
+
+
+
+hector.palacios@go-scm.com:
+So I guess that this could solve the point that we don't have the storage location to differentiate. If we use the WS to differentiate, that would do the trick.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+hector.palacios@go-scm.com:
+So we can answer the Murugan common with the same.
+
+Fakhouri, Mohamad:
+No, but this is only for Buruj.
+
+Patel, Rahul:
+Yeah, but this is going to be applied for all turn around. While Hazrat Khan is from Buruj, the Murugan or even Vignesh clearly mentioned that this is the same solution will be applied to everyone.
+
+UNKNOWN_SPEAKER:
+OK. Noted.
+
+Patel, Rahul:
+You can simply say noted.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+hector.palacios@go-scm.com:
+About this WBS element, is that something that is changing dynamically? Or is something like rather static?
+
+UNKNOWN_SPEAKER:
+It's static.
+
+hector.palacios@go-scm.com:
+It's a master data element.
+
+Patel, Rahul:
+So if you are aware of the project system PS in S4 HANA, so in the project system, you create project number. And under project, you create WBS element. So it's a one-time master data setup. And then this WBS element will continue in IPP. So you will use the WBS element to create work order. You will use WBS element to create PR. You will use WBS element to create stock. And then eventually, you will use this WBS element to issue material, which means the entire planning, procurement, consumption cycle is assigned to this WBase that's how you track it separately in S4HANA that whatever is happening is for that specific WBase element so once you have a WBase element or the number which is called WBase element it would be a static number forever or for until the next turnaround yes so for that specific turnaround work order if you assign you have just one field in S4HANA to assign WBase in a work order.
+
+ So if you have a work order and for which work order if the WBS element is assigned, the combination of that work order and WBS element would be forever. Even after the work order is closed, you always see that on a historical level, this work order has been assigned with this WBS and the consumption has happened for this WBS.
+
+hector.palacios@go-scm.com:
+So he says it's forever, the WBS, regardless of whether it's in our own event, you will have always same WBS?
+
+Patel, Rahul:
+No no you will have every turnaround will have a different WBS. So you have for one work order you have one WBS. If there is another turnaround in two years you will have another WBS.
+
+hector.palacios@go-scm.com:
+What is the frequency of the turnaround? Like every year?
+
+Patel, Rahul:
+Yearly, two yearly, five yearly. So there are different turnarounds based upon the life of the asset. So major turnarounds are three to five years and then there are minor which are happening maybe once in six months, once in a year. So there's not a lot of frequency of this turn at all.
+
+hector.palacios@go-scm.com:
+This is the part that I don't like, because that means that every one year, every two years, you need to update the whole supply chain network. And there is a lot of supply chain network that you already define on IVP, but then they are not valid anymore, because you change the WBS.
+
+Patel, Rahul:
+OK, so you are saying If you define WBS as a location, then it becomes a supply chain network element for you. Is that what you're saying? Yeah. I don't think we should be considering WBS as a location, because the moment we maintain it as a location, then the supply chain network should be defined automatically the moment you see the WBS in demand. So if you have a demand or turnaround, which has a work order and WBS assigned element assigned to it, then from an IDP perspective, we should be able to automatically trigger that supply chain network from the demand side, rather than giving this as an input from user.
+
+
+
+hector.palacios@go-scm.com:
+I mean, on a supply chain network, we are not thinking as an input from user, but supply chain network uses dimension, the location, and the material. So those are the two dimensions that we can use to concatenate WVS. So you concatenate it to the location or to the material. Two options. But either way, you are affecting the supply chain network. So every time that you have a turnaround, that means that you need to create the whole supply chain network again.
+
+ So let's park this point for now.
+
+Patel, Rahul:
+Probably we can have a separate discussion only to align our thoughts. But from a comment perspective, I think we are aligned on how we want to proceed with this document, correct? Yes. So can you just put this WPS as an open item so that we are all clear that this is something which we need to align?
+
+Fakhouri, Mohamad:
+You can do it later, but then let's move to the next comment if there are any other. But this one, we need to update this. There are no different storage locations.
+
+UNKNOWN_SPEAKER:
+So Hector, if you don't mind, just comment here.
+
+hector.palacios@go-scm.com:
+Yeah, we need to update that. But it's an open point, so I don't know how to answer that. Of public and specific answer.
+
+Patel, Rahul:
+So what you can mention is that we have noted this requirement and will not be planning separate soil location for WBS. So differentiate approach, plan, item, turnaround. So the requirement is differentiate approach to plan, maintenance, items, and turnarounds, right? So we will say that WBS-based planning would be used. Details of it would be discussed and reviewed in the future state. This item is still defined as item.
+
+ So in the comment itself you can say this is open item.
+
+hector.palacios@go-scm.com:
+That way we are all on the same page. Okay so we need to put something like in fit gap partially fit or gap.
+
+Patel, Rahul:
+Yeah partially fit and partially fit and we can say that we are analyzing the WBS element usage of WBS as a way of differentiating the requirements of turnaround versus maintenance and then let's make it as a part of RICEF object as well to be on the safer side and eventually we may say that we don't need a RICEF there because if it is partially fit which means it becomes a part of the RICEF object, correct?
+
+ And then keep it as an open item for us to evaluate further. Okay, let's go with the next one. Let's go to the next one because we have eight minutes. Before we If we go to next one, Bastian and Hector, we've received comments on the drilling document, so I would request you guys to have a look at the drilling document as well, today, later today, so that we are able to proceed with the drilling supply BPD as well.
+
+
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Patel, Rahul:
+Okay. System to identify fast mooring supply plan related to LTP and increase the order quantity limit. Is closed. Let's put this point internally more on us to identify where we have discussed this because we are not able to identify but this was discussed and this was closed saying that this is something which is not relevant. AdNoc inventory managers have confirmed that we should not be adding the additional quantity based upon maximum quantity for all the relatable items of the same LTTPA.
+
+ It will read inventory back.
+
+UNKNOWN_SPEAKER:
+Let's not put the comment, let's align separately.
+
+Patel, Rahul:
+I was putting that one like an open point because it's like a new requirement for me.
+
+hector.palacios@go-scm.com:
+No, no, it's not a new requirement. We've discussed this and it was closed.
+
+Patel, Rahul:
+It's not a requirement. Murugan is not aware of the latest status. Let's put up a current comment there.
+
+Fakhouri, Mohamad:
+Still learning to propose possible LTPA proposals.
+
+hector.palacios@go-scm.com:
+It is similar to the other one. I think that we also answered this.
+
+Patel, Rahul:
+I'm not sure. Probably what we can answer here is that based upon the conditions which AdNoc can provide, IBP can identify materials which are applicable applicable for future LTPs? We should say in the comment that that's what I say.
+
+hector.palacios@go-scm.com:
+So in the comment I said we can automate this logic if provided, but she said machine learning, you know, so she's understanding something different to what we already said.
+
+Patel, Rahul:
+So you can repeat your comments here again and say that this is how we're going to do and machine learning will not be applicable then if that's the case. Do you think that is something we can do? Because if there is no machine learning, then it is the fact. Yeah, I will ask Basti to take the HASMA comments.
+
+hector.palacios@go-scm.com:
+I already answered most of them. But those are more delicate. So you guys know how to handle the communication. I would prefer to be right away to say, this is what we can do. Because in the future, they will continue continue to ask and maybe in one session they will ask machine learning and we will need to answer, right? So we are just postponing what we need to do eventually.
+
+Patel, Rahul:
+OK, Sebastian, can you take up another comment on machine learning also since you'll be replying on the first comment? In the same line, you can reply to the solution here so that we are politically correct at the same time. Which one is it? The machine learning for proposing LTPA. Yeah, ask must come and machine learning for proposal of possibility. Any other point we had this? This was a
+
+hector.palacios@go-scm.com:
+Last ones were related to requirements, so that's why I didn't answer requirements here.
+
+UNKNOWN_SPEAKER:
+Yeah, the
+
+Fakhouri, Mohamad:
+They've been updated. I think the Raul, you mentioned you wanted to go over this with Hector and Bastian.
+
+Patel, Rahul:
+So Hector and Bastian, what the requirement is that if you remember the conversation on drilling, you have generic materials and demand planning happens on generic material, right? And the supply planning happens on the specific materials or branded materials. Now, there are few cases where there is no branded The demand planning will happen on generic material and the branded material will get identified when the PO is created, because the PO goes through the process of what we call auctioning.
+
+ It goes through the process where they will identify a vendor, and once the vendor is identified, they'll create a branded material. So what Murugan is mentioning is in such cases, the PR should be on generic material. If the material is not available, the branded material is not available, we can use generic material for raising PR. And then eventually, they will raise it on a branded material once the vendor is finalized.
+
+ And someone has to update the generic branded material logic. And if that logic is updated, then we can reconcile internally that even the PR was material, but we have a PO on a branded material, which means reconciliation is happening.
+
+hector.palacios@go-scm.com:
+That is not a behavior. This is tendering. So whenever we don't have alternative material, IBP will propose exactly what we are asking, right? The only reason why it's going to propose a branded material is because we are putting a specification of doing that. But otherwise, it will propose a PR for this generic as a standard.
+
+Patel, Rahul:
+Yeah, so let's agree to this. If we are aligned, then that's what his comment is. We are agreeing to this, then, right? Yeah.
+
+UNKNOWN_SPEAKER:
+OK.
+
+hector.palacios@go-scm.com:
+But I think if you see the answer, this will require workaround for the generic material where VMI doesn't exist. And then we'll be able to switch to VMI vendor and material code and deactivating the generic code proposal.
+
+Patel, Rahul:
+Yeah. Just a minute, give me a minute to be back. So you can agree upon the comment what is to be mentioned.
+
+hector.palacios@go-scm.com:
+But yeah, let's change the comment based upon what we've discussed.
+
+UNKNOWN_SPEAKER:
+But I think that the comment is fine. The point is that he's not agree with the requirement.
+
+hector.palacios@go-scm.com:
+We will need to jump to the other one more. So maybe we can continue after this.
+
+Fakhouri, Mohamad:
+Yeah, sounds good.
+
+hector.palacios@go-scm.com:
+I have time just after this meeting that we have with them, we can just continue on this.
+
+UNKNOWN_SPEAKER:
+Okay, sounds good.
+
+hector.palacios@go-scm.com:
+Okay, thank you guys. Okay, thank you guys.
+
+Fakhouri, Mohamad:
+Bye. Bye. Thank you.
+
+UNKNOWN_SPEAKER:
+you.
+
+UNKNOWN_SPEAKER:
+Bye!
+
