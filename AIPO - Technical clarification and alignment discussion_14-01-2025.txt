@@ -1,0 +1,818 @@
+Khushboo Mudit (ADNOC Group D&CS):
+Hello. Hi, everyone.
+
+UNKNOWN_SPEAKER:
+afternoon. Thank you.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+you Good afternoon.
+
+Rahul Patel (ADNOC Group D&CS):
+Hello.
+
+UNKNOWN_SPEAKER:
+Good afternoon, everyone.
+
+Rahul Patel (ADNOC Group D&CS):
+Good afternoon. We have Mohammed Ashiq as well. Abdulla, can you check if my Thank you so much, Ashley, for joining.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Salam. Good afternoon. Okay. I think from, uh, from, uh, offshore at the Latif here, I'm sure I'm at the Asha and, uh, I'm at the Asha and the Latif. If you would like to add user or who's involved, if you would like, please involve them or we Alit, can you please just confirm if the needed people are available in the meeting so we can move forward?
+
+UNKNOWN_SPEAKER:
+What's the agenda today?
+
+Rahul Patel (ADNOC Group D&CS):
+Alit, as per our discussion last meeting, we looked at offshore drilling plan, and today we would like to make sure we are learning the onshore, the BOM definition, what we discussed. So that we are, the solution is complete for both onshore and offshore. That's one point. And then after that we would like to go through the supply documents for, and if there are any questions related to supply documents for Delling and Tyne.
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+I'm trying to pull in the end users, not joined.
+
+Rahul Patel (ADNOC Group D&CS):
+If not joining, at least you can start with the supply review, right? Yeah, Mohammed Ashiq, can you confirm if we can start with the drilling bomb discussion or do you want to start with the supply plan?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+If it is regarding some technical application that end users input is required with wait for the end users to in the meeting.
+
+Rahul Patel (ADNOC Group D&CS):
+So can you confirm if we have any users?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+They are there in the meeting, but they're not joining. I even added them separately.
+
+Rahul Patel (ADNOC Group D&CS):
+I see Mathew has joined and
+
+Mathew Koskoski (ADNOC Onshore):
+Yep, good afternoon, I'm here.
+
+UNKNOWN_SPEAKER:
+Hi Mathew, good afternoon.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, good afternoon. With OCTG, I think Mathew is there for any clarification on the model.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, so good afternoon everyone once again. So as part of the IVP project, we are trying to define the solution on how we will be able to forecast the demand for the drilling materials. So last week we had conversation with offshore team and we have a good understanding of how we can define the Bill of Metal for Offshore team. We would like to align the same solution with the Onshore team as well to make sure that the definition solution definition is taking care of the requirement from both the teams.
+
+ The idea is not to have separate solutions but to have a common solution in IPP which can be defined for drilling as a business practice and then can be adopted all the group companies. So with that premise, let me share my screen and give you a brief overview of what the solution is. We have this Excel sheet template defined. The detailed process, OK, let me start with the process so that the end user team is aware of what we are trying to do.
+
+ And then I will go through this document. Just hold on a minute. I'll pull up the process map.
+
+Rahul Patel (ADNOC Group D&CS):
+So, this is the proposed end-to-end process for drilling planning. So, on the left-hand side, we have Vendor, which is one of the streamlines, which is VMI Vendor. You have SAP IBP as the streamline. You have DWS as the well-planning system as one of the streamlines. S4 HANA and then you have vendor which is not a VMI vendor but a vendor which is used for procurement of one-time materials. So, I'll zoom a bit before we move.
+
+ So, So this is the high-level process. The process starts with getting the well-planned information from DBS or Excel. We have considered both the possibilities. But if you have the well-planned in DBS system, we'll integrate it with the DBS system. Or we'll have an Excel sheet import or upload mechanism where well-planned can be uploaded into IBP system. Additionally, we will have the Bill of Materials definition in S4 HANA.
+
+ Which means this bill of material will help us identify the material. So we have defined some attributes of the well and the same attributes will be used to define the BOM in S4HANA. So based upon this attributes matching, we'll be able to essentially get the bill of material for well, specific well. So in IPP, the process starts with uploading the well plan. Importing the Bill of Materials for S4 HANA, and then based upon these two data inputs, calculate the delivery demand.
+
+ Then the demand needs to be reviewed and finalized. So the demand what we are looking in IPP will be on generic material and not on branded materials. Once the demand is finalized on generic material, it will go to the supplier planning. So in IPP, we have two phases. One is demand planning and second is supplier planning. In demand planning, the of the process is to make sure we have a final demand.
+
+ And in the supply planning, we make sure that the demand which is identified is fulfilled. So in the supply planning, we go through the supply planning process where all the different inputs, the mapping between the generic material and then the alternative material or the branded material is imported into IVP. If there is a VMI stock available in S4 HANA, that stock gets imported into IVP. If the stock is not available in S4 HANA, VMI stock can directly be uploaded into IBP, so that we have the visibility of what is the available stock at ad-hoc location, at VMI location, and based upon this, create a supply plan.
+
+ When we say supply plan, essentially we say that what is the additional material which is required based upon the drilling plan, whether the material is available at a different location, whether we can do stock transfer, or we need to trigger the PR creation. So here the first evaluation we do is whether we have LTPA in place. If the material does not have LTPA, which means it has to go through the tendering process, so we'll create PR.
+
+ The PR gets created here on the generic material itself because we do not have the branded material. Assumption is that if there is no LTPA, there is no branded material, which means we'll have to So, we are considering the PR to lead time to consider PR to PO and it goes through the vendor, vendor then acknowledges the PO, he provides the metal and the stock is received in S4 HANA and eventually issued to the well.
+
+ If there is a LTP in place, then we trigger a call of order. The call of order is created in S4 HANA, which is based upon which the VMI vendor delivers the stock in VMI location. So, we have this lead lead time, different lead time considered to convert the call of order from, to trigger the call of order, or the time taken after the call of order is created to receive in the VMI inventory. And from the VMI inventory, the lead time is defined as the time for which the vendor will keep the stock in VMI.
+
+ And then from once the stock is available in the VMI, based upon the actual consumption date on site, on well, be moved to S4 HANA and then issued to the specific well-based quantum material reservation. So this summarizes the end-to-end process of drilling, including demand planning and supply planning. So before we move into the details of how we are going to define BOM, any question here on this end-to-end process, what we are proposing?
+
+ This process has been discussed and aligned with the team last week, with the offshore team, and today Today we are aligning with the onshore team.
+
+UNKNOWN_SPEAKER:
+No, I think that's, yeah, sorry.
+
+Rahul Patel (ADNOC Group D&CS):
+I think it's clear from OCTG's side. OK, perfect. So now that it is clear, the main agenda of today's meeting is to discuss on how we define the bill of material. So let me pull up the Excel sheet where we have this logic. So this is a very basic example. So bear with me on the example. What we are trying to do on high level is that we have this well plan. This well plan will have the attributes of the well, saying what is the plan or concession code, what is the well type, what are the completion code, what is the category, and the combination of these attributes is, we can call it a BOM reference.
+
+ So this combination is nothing but the combination of all these unique attributes which define the well, and for every such unique attribute you will have a bill of material So this is just an example that for this BOM reference I have defined these are the generic materials and these are the quantities. This is just an example for us to understand how IBP will define the bill of material. Now based upon this generic example for offshore last week we aligned that there are essentially four different bill of metal categories which we need to align.
+
+ So these four categories are OC, then weld head materials, down hold completion equipments, and then LCH, liner hanger, and cementing accessories. So the way we've aligned is that there are some common attributes. The common attributes are basically, these are the common attributes, like the field of the weld type, the completion code, and the category. So these common attributes are available to all four BOM categories we are having.
+
+ So these are the common attributes. Attributes, and then based upon what kind of BOM we are trying. So, along with, say, these four attributes, if we have to define wellhead, then the code for wellhead, like, in this case, example is wellhead1, is just a dummy code, but then you will have an actual wellhead code, and in combination of this, then we'll have a wellhead BOM. So, the idea is to create a unique BOM for these combinations and these codes, and then based upon actual plan so you will have we will have this uh uh this attributes of the well identified and then we'll be able to get the bill of material for this respective categories of material and then if we are able to get this four different categories of material this helps us to have the complete bill of material which is all the all the metals which are required uh for well so this is uh any question from the onshore team on this whether they think this is in line with what we do today and will help us define the bill of utility or the demand in S4 and IBP?
+
+
+
+1Mathew Koskoski (ADNOC Onshore):
+I've got a question. So I understand how you're basically creating a sequence or a code for the bill of materials, but why are we doing that instead of using like the well ID or in onshore we use sequence number. So it's a unique identifier for the well plan itself.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so sequence number But then, every time you create a well, you will have a unique number. So, we are planning to use sequence number as one of the identifiers, which is like 1, 2, 3, 4, 5, 6, ABC. Let's take this example. The sequence number... So, is the...
+
+Mathew Koskoski (ADNOC Onshore):
+I guess this will clarify. Is the idea to reuse bills of material, or is it to create them individually for every well as they come up?
+
+Rahul Patel (ADNOC Group D&CS):
+So, the idea is to reuse the bill of material. So, to be able to define bill of material not at a specific well sequence number, but at the completion code level. And then when we know that for a specific well, what are the different completion codes assigned, then we use the bill of material based upon the completion codes. So we don't end up creating bill of material for every independent well in S4 HANA.
+
+ While in IBP, based upon this, you will have unique material required for every well identified. So the idea is to define the master data where we have the maximum information set up as a standard data, and then incorporate—use this master data in IBP. And then eventually in IBP, you can then—based upon this reference, you can add or delete or change quantities, but this becomes the starting point for, like, most of the material you are required for delete.
+
+ Does that answer your question?
+
+UNKNOWN_SPEAKER:
+Yeah, that's clear.
+
+Mathew Koskoski (ADNOC Onshore):
+I mean, the thing with Onshore is that the the variations are huge, you know, there's hundreds and hundreds of them.
+
+Rahul Patel (ADNOC Group D&CS):
+So it's not too much different if you're doing hundreds of them versus the well-by-well sequence planning.
+
+Bastian Osorio:
+Rahul, let me add something. You're right. The thing is that we need to start with a baseline. So I understand that the BOM needs to be modified per well ID, but this will work to give, in some cases, a good starting point, in other cases, well, just a starting point. I don't know if that makes sense. Yeah, no, that's clear.
+
+Mathew Koskoski (ADNOC Onshore):
+I mean, either way is the same level of ease in terms of providing...
+
+Vignesh Perumal (ADNOC Group D&CS):
+Also, Mathew, one more information. If you start constructing bombs you know based on well that means the drilling team will have to do a lot of work for each well they need to go and set up bombs you know into the SAP system which is quite a task by itself so that is why what we are doing is we are for each combination of field well type and completion code plus category we are generating a base base bomb and once that is there you can you can adjust it, add it, or change the quantities as required subsequently.
+
+ Because creating a bomb for every well is going to be a very difficult thing to convince. Every single well, if you have to create, it's a lot of master data maintenance in the SAP system too. Yeah, exactly.
+
+Mathew Koskoski (ADNOC Onshore):
+I mean, this is kind of how we operate at this point, but it's a little bit more flexible on the end user side. Provide them the list of what the bill of materials could contain, but then they choose the quantity, which sometimes is zero for some items. Once they're there, let's say handed that bill of materials, then they create MRs with this. So I think that's all clear. It does get a little bit tricky, let's say when we get into the, let's say a completions, for a good example, with pop joints and crossovers.
+
+ So because all of our downhill completion equipment is threaded to VAM top, one of the cases we have is like, let's say Valerik, all VAM top. They don't actually need any crossovers. Versus, let's say, Tanaris or Marabini providing Tanaris Blue or JFE Lion. They do need these crossovers. So on one hand, OneWell will just need some PUP joins. On the other hand, with the same generic materials, you're going to end up needing a lot of crossovers and some PUP joins as well.
+
+ So has this been considered or what's the way forward on something like this? I think there's a possibility to use a generic item that's a PUP slash crossover or something to do it.
+
+Hector Palacios (ADNOC Group D&CS):
+What we are thinking right now Mathew is that basically we have the generic bomb and we do the first explosion but then we we can help to we can give to the user the possibility to adjust in the numbers that you are getting from that explosion. So you will get a material requirement like it's going to be the initial quantity but you are always able to adjust that to remove materials or to add materials if you are missing So I guess that that can handle these variations that you see even for the symbol.
+
+
+
+UNKNOWN_SPEAKER:
+OK. Yeah, clear. Yeah, the Pups and Crossovers are always something difficult.
+
+Mathew Koskoski (ADNOC Onshore):
+I mean, in terms of the larger scale quantities of orders, it really is just the tubing, casing, conductor that are more critical, let's say, to keep track of because they're such high volume and high value. Pups and Crossovers can usually be managed a little bit more actively by the vendors. One further question I have on a little bit more bigger picture kind of side of things is, I understand the purpose of the forecasting to get a sum of the built materials that are expected for whatever period of time.
+
+ Then you also have pricing and financial data associated with it. But in terms of ordering, what is the output? Is there any tie-in with ordering or any expectation that this will be managing Yeah, indeed.
+
+Hector Palacios (ADNOC Group D&CS):
+This is for us just the first step to understand what is the amount of materials because what we want to do is the creation of PRs. So, basically, Rahul, you have the floor. Yeah, this is the floor, right?
+
+Rahul Patel (ADNOC Group D&CS):
+So, what we've talked right now is till box number four, or till box number five, where we are able to identify demand. So, IBP will propose the base demand based upon the Bill of Materials, and the planner will basically essentially review it and finalize, make all the changes as per his input, and then you have the demand. Essentially, this demand is then integrated with the supply module where you are raising the PRs, POs directly through IBP system.
+
+ So IBP is integrated with S4ANA, which means whatever demand we identify, you will have complete visibility for that demand, what is the current stock available, what is the in-transit metal, what are what is the additional metal we need to procure, when you are supposed to receive that metal based on the lead times you defined. So you will have a complete end-to-end visibility on the requirement of all the related materials.
+
+ That's the end objective. OK.
+
+Mathew Koskoski (ADNOC Onshore):
+Yeah, one of the, I mean, the main aspect of, let's say, the OCTG procurement process that's difficult isn't actually figuring out what we need in terms of quantities. This is already, you know, I can provide this data because it's kind of already what we do. Issue is the reliability of the vendors. We're seeing a lot of delays and a lot of flexibility in terms of what they're planning versus reality.
+
+ One question further on this topic is if suppliers are giving us a report monthly on what their true delivery dates are, how does this integrate into the plan and is it easy to do? We'd be doing it quite a lot. There's a lot of active management in terms of delays and expediting from other suppliers to make sure that everything's covered as per the plan.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+So the UI of the application is Excel-based, which means you would be working in Excel front-end only. So it's as easy as working in Excel. Now, if you have this additional input, which is coming every month from a vendor, that what is the realistic delivery plan against the proposed plan, then that information can be easily incorporated into the system as you are working in Excel. And then IBP will evaluate how, based upon this additional input, how supply plans are looking like, Do we see any bottlenecks anywhere because of the change in this supply plan from vendor?
+
+ Does that answer your question?
+
+UNKNOWN_SPEAKER:
+Yeah, all clear. Okay.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, so with that perspective, then I just need a confirmation that the solution we are designing, which is essentially based upon the well plan identifying the attributes for the different categories of material, and using that attributes to define the standard bill of materials, and then from the standard bill of materials, define the drilling demand. This will take care of the requirement of onshore as well.
+
+ Is this correct?
+
+Mathew Koskoski (ADNOC Onshore):
+Yeah, I think the only variation I really see is that offshore uses a lot more of their field information. Well type, we would probably, I mean, we could still use the field that does define a lot of it for us but the well type instead of choosing like water injectors the example you have there that would be more like heavy casing like casing or work over designs for us so I guess it would work fine.
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+Okay so then if that is the other field right Rahul which you have not considered here I think he is talking about the casing type that is not actually casing design you remember that we've considered here casing design That
+
+Rahul Patel (ADNOC Group D&CS):
+is what we've been told that the casing design code or casing ID is what has been used to further get OCTG merchants. OK.
+
+Vignesh Perumal (ADNOC Group D&CS):
+For onshore, I don't think they have many fields, like maybe not that many. But I think casing design is also one of the factors, Mathew. Yeah. I mean, we do have quite a lot of fields, like 13, 14, 15.
+
+Mathew Koskoski (ADNOC Onshore):
+But what we do is we go field, and then the well type would be heavy casing design, light casing design, work over, and completion code. That should give us everything we need, I think, to make individual bills of material. That's how it's subdivided at this point.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So you mean to say that you don't differentiate water injector, oil injector, CO2 injector? Your bomb is not dependent on the type of well? Is that what you mean?
+
+Mathew Koskoski (ADNOC Onshore):
+No, so it is actually, but it's under the completion code side of things. So our completion code actually defines if it's a water injector, gas producer, etc. The completion code is a combination of the completion code plus the well type. Exactly. And that's why the casing ties into it too, because based on the completion code, the casing can change. And based on the field, of course, the casing and completion can change in terms of quantities expected.
+
+ So yeah, as long as it's acceptable to have a slightly different list for well type than offshore, then we can fit this format.
+
+Rahul Patel (ADNOC Group D&CS):
+And from a solution perspective, I think Vignesh, this will not create a difference because... No problem. The weld type will remain the same. The completion code and then the casing code design combination will lead to a different combination. And then for every unique combination, if we are able to define BOM, then we still get to the point where we want to receive, right? Yeah, yeah, no issue. No, I think it's all clear.
+
+ So, do you have any question, Vibhish? Sorry. Okay, if not, then probably the next step for us is that can help us with some sample data from your realistic few well plans, like four or five, if you can help us with some combinations of the well plan where you have your different completion codes. Then what is the next step for us is to use your data and to be able to demonstrate a solution in IBP based upon this discussion so that you can then actually see the solution in IBP and give your feedback in terms of Okay, this is what we have discussed.
+
+ We've used your data and this is how it will look in the system. This is how the system will create a Bill of Materials for you. So for us to reach to that next level, we need some sample data where we are able to identify these different attributes. Maybe not all, but at least a few, like five, six wells with different attributes. And for different attributes, if you can help us with some sample Bill of Materials, it may not be the complete Bill of Materials for all the metals, but at least some sample metals with which we will be able to identify the different metals required in the different metal group, and then we can evaluate and test the system that, okay, the combination has changed, so IVP is now using a different set of bill of total, and we are able to see that specific demand coming into IVP.
+
+ So is this something you can help us with? Yeah, super easy.
+
+Mathew Koskoski (ADNOC Onshore):
+Just send me an email so I make sure I don't forget it. And it's no more work to do five or or 30, so just choose the number of wells you want me to do to give a good sample.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+And I can provide that back on email, no problem. Okay. And Mathew, is this the same process that followed by the downhill competition as well as the wellhead team? Is there any difference from the OCTG?
+
+Mathew Koskoski (ADNOC Onshore):
+I think wellhead is a little bit different. I believe, follows a relatively similar to OCTG. But yeah, I think you have to talk to them for a little bit more More details on that. So really, really briefly, Abdulla, what they're working on here is converting from a list of wells to a standardized bill of materials. And I mean, with OCTG, there's like 500 plus, let's say, individual bills of materials where we could cover for all the wells.
+
+ But what they're requesting here is a list of wells as a sample, and then a bill of materials, which is like just generic SAP codes, and then the items associated for each of these bills of materials. So maybe it'll provide them like 50 wells, and there's like 35 different BOMs.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Yeah, we kind of have that, and this is all done through the EWDP system. So for the DCE, yes, it can be done. It's gonna be similar to the OCTG. For the wellhead, it's, bit more complex because they take two basically two information different informations from the business plan to say that this is what we really need if this is what you guys are looking for yeah so essentially
+
+Rahul Patel (ADNOC Group D&CS):
+the idea is to that based upon the well plan identify the attributes from the well plan and use the combination of the attributes to define the independent uh yeah so for For DC and OCTG, it's relatively similar.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+For the well-headed, it's a bit more complex, because there is an additional input that they take in. So the different combinations of these inputs would give them a different bill of materials. So the combination is quite a lot. So do we know that?
+
+Rahul Patel (ADNOC Group D&CS):
+What is that different combination of input? Or we'll have to talk to someone from the team.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+No, you need to speak to them. They would have something, but it's a lot of work. Abdulla, do you have anyone from the Valera team right now who can join and explain? The best person to talk to is Omar Aouf, Hashim, but I don't know. To be honest, he's the best person to talk to about it. Sorry to jump in.
+
+Mathew Koskoski (ADNOC Onshore):
+I have another meeting I have to attend, but thank you very much for the time, and Abdulla will catch me up on anything discussed after here.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Thanks, guys. No problem. Thanks, Mathew, for your input. So maybe we can have another session for Wellhead. The guy is on leave right now, so he cannot attend.
+
+Rahul Patel (ADNOC Group D&CS):
+So Abdulla, one question. So from a philosophy perspective, I understand there are different attributes which are related to Wellhead, which means we need to make sure that the attributes which are specific to well heads are also considered but from a philosophy perspective where we have a well plan and there are attributes related to well plan and then if we are able to capture those attributes and the combination of that attributes define the bill of material.
+
+
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Yeah so we already yeah so as as a what you're trying to achieve it's kind of done we already have a system that does this exactly it's okay okay so we're And it does it for wellhead, it does it for DCE, it does it for OSSDG, even for liner hanger and cementing accessories. So we already have this and it does it already. But like I said, the wellhead is a bit more challenging because it takes two different inputs from the business plan and it gives you a bit of material.
+
+ So with the different combinations, it's quite a lot. But I'll leave it for the, guide to give you more information.
+
+Rahul Patel (ADNOC Group D&CS):
+For sure, so we will probably have this discussion specific to Wellhead, but from a philosophy perspective, whatever we are working on, which can be utilized for Wellhead, we just need to understand what are those additional inputs which are required for Wellhead, and if we are able to address this additional input, then a solution as a whole for all the material groups can be used, can be defined, correct?
+
+ Yeah. Okay, I think this at least gives us the confidence that the solution what we are trying to build, the same solution can be applied to both onshore and offshore. While there are some specific attributes which can be related to the way we define BOM, the number of attributes can be a little bit different, but that the logic and then the idea, the philosophy behind how we get a bill of material is same across.
+
+ So that's the way on a process level we are aligned. So Mohammed Arshique probably we will need your support to have this discussion as soon as possible. Do we know when this person would be available when we say he's on leave for wellhead?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Abdulla, you have any idea?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+I'm not sure, but I think maybe a day or two. He was he was available yesterday, so I think it's just maybe he's not available today.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So why don't we keep on Thursday, maybe?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, yeah, that was. That's what I was proposing. So we have another follow-up meeting on this on Thursday. So, Ashik, if you can help us invite this person for Thursday's meeting and confirm if he'll be available on Thursday, then this last piece of well-heard materials can be addressed, and then we can then finalize the solution as a whole for entire link. All right, sure. Okay, this was the point we wanted to discuss with the offshore team, so thank you very much for the time everyone now the second session of discussion is more related to the documentation so if anyone else from that either community if you want to drop probably you guys can drop and then we will work on the documentation of the teams.
+
+ Okay, so you guys don't require me to do. Okay, that's what thanks Abdulla. Right. So I think this was good discussion. So we have this high-level alignment on the solution for onshore and offshore. So let's have this follow-up call on next Thursday. And by the end of Thursday, then we will be able to summarize the entire solution. As discussed, we'll share this request for data. So Mohammad Ashiq, we need your support to get the sample data.
+
+ Latif will also need the sample data on the similar terms for offshore as well, so that we are able to use that data and define the solution in IPP, so that we can demonstrate it to the team in the subsequent weeks. OK. Now, with respect to documentation, there are two sets of documentation we would like to discuss. So first of all, thank you, Abdulla and Mohammed Ashiq, for providing your feedback the drilling documentation.
+
+ I saw your email and there are quite a few comments which you guys have, which you guys have provided feedback upon. So before I go to drilling, I think I would like to go with the tying document because it has relatively less comments and we'll be able to quickly go through it. So is it okay if we start with tying document?
+
+UNKNOWN_SPEAKER:
+OK, fine. So just give me a minute. Let me pull up the document.
+
+Rahul Patel (ADNOC Group D&CS):
+Just a minute, I got logged off the system, so I'm just logging in.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Rahul Patel (ADNOC Group D&CS):
+I think I'm about. I'm sharing my screen. So this is the PPT for time. So we had this initial feedback from Jagannath and we've addressed all the points which were mentioned by Jagannath in this talking Is my screen visible to everyone?
+
+UNKNOWN_SPEAKER:
+Yes, Rahul. Okay.
+
+Rahul Patel (ADNOC Group D&CS):
+So, from a supply planning time perspective, the process is much simpler than Delling, where the demand from time basically is visible into the, let me open the process map if it is attached. So essentially what we are saying is that the demand from the demand time will be available. We'll do the supply planning. So essentially, we'll look at all the data, which is what is the inventory available, what are the open POPR.
+
+ And based upon the inventory, we will have the supply plan. And the supply plan will create PR or STR. Now, since time does not have the vendor-managed inventory VMI condition, this becomes pretty straightforward as standard IPP solution where, based upon the demand which is identified in time, we are creating a supply proposal. So the process is straightforward that you have demand, you have the transaction data from S4ANA, and based upon the open PR available inventory, open PR view available inventory, we create a supply proposal for the tying materials.
+
+ So we've discussed. So this is the time BPD. So sorry, Abdulla, you had sent us an email with specific comments that the detailed process.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So we are discussing time or?
+
+Rahul Patel (ADNOC Group D&CS):
+We are discussing time. Yeah, so this is time. So this is what you've replied comment for time, right? So this is supplied time. So this feedback was time, right? Is that correct? Sorry. Yes, this is for time. Yeah, yeah. So the three comments you had is the details of the process. Stock against forecast. So this is what and then the forecast to forecast comparison and forecast with actual consumption.
+
+ So the forecast to forecast consumption would be part of the demand planning of time where you have a demand or a forecast which is created in time and every time we save forecast it will be saved as a snapshot. The next time when you have a forecast you can compare what was the forecast and previous forecast. So this is related to demand of time while we are reviewing the supply of time. This is a standard functionality of IBP.
+
+ So this is something which is part of the base feature of the IBP. So this is part of the solution we are designing. Now forecast with actual consumption, can you elaborate what do you mean by forecast with actual consumption?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+A forecast actually is what was the demand and what was actual consumption.
+
+Rahul Patel (ADNOC Group D&CS):
+Oh, OK. So what was the final demand, and what was the actual consumption? Yeah, this is something also is a standard report in IBP where we will be able to review that, OK, I had a forecast of 100 quantity, and the material reservation or the issue happened of 120. So based upon, so since we are integrating the reservations into IBP, we will always have visibility of, based upon the forecast, how many reservations are there.
+
+ So it's part of the forecast consumption what we call it in IBP as the solution in IBP. The details of the process of doing stock against forecast. So this is, again, part of the overall process where we are doing supply planning. So as part of this process, when we are doing supply planning, here you will have the visibility of what are the reservations, what was the forecast, or what is the demand.
+
+ Against the forecast, what is the available inventory, and what is the reservation created against that demand, the complete visibility, however. So this item 8 to 10, 8, 9, 10, are essentially where we have this activity defined. So if I have to show you that. So this is what we are seeing. All the data, including stock, would be integrated IPP system, so mortal reservations, as I mentioned. The mortal reservation is actual consumption against the forecast.
+
+ We are integrating it. Stock, the stocks which are available, we are considering stock which is available.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Rahul, actually what I mean is, like if you've seen in the drilling document, you have given the review, right? How the review will happen. There's a snapshot of how will that work.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so Excel sheet snapshot where different objects So you want snapshots to be added in the stock? You don't have it here.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+I mean, those kind of review how the stock will look like, you know, and what does not that is not shown here or it's not mentioned anywhere.
+
+Rahul Patel (ADNOC Group D&CS):
+So the reason it is not shown here was because for drilling, we had this initial input for data and we had demonstrated you how the initial first it would look like, And we had moderate depth and that's why we incorporated those snapshots. For tying, since we did not execute the activity, we do not have those actual snapshots of how the data will look like, But in the similar terms, it will also look like the same for tying as well.
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So in this document, where exactly does that specify that review of forecasts against talking? Where exactly in the document?
+
+UNKNOWN_SPEAKER:
+The forecast is in the demand part.
+
+Bastian Osorio:
+I'm talking about the supply planning.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+After the forecast has been created, then how do we do the supply planning? So this is what is, let me show you.
+
+Rahul Patel (ADNOC Group D&CS):
+This is where it is. Mentioned. So this is a supply planning process. These are the input for supply planning, the transactional data and the master data, what we have identified here. These are the master data and transactional data for supply planning. So the supply planning process detail starts from here, that what is the supply planning, what is the period, horizon, short-term, or long-term, then what is the master data which will be used, what is the transactional data which would be used, and then based upon that data, how you will have the information from vendor.
+
+ And this supply chain network is essentially the relationship between the vendor and the ad hoc plant and the material. And then the supply planning model, the hard constraints are basically constrained from what is the lead time for the model from the specific vendor. So these are the constraint of lead time. And then soft constraints are basically, if you have multiple vendors, then what is the sourcing quotas, and what is the distribution plan?
+
+ So that's the soft constraint. So in a way, what we have done is we have explained the process in a text. Bastian, is it possible for us to put up a snapshot of the Excel sheet from a supply planning which highlights that upon the demand, which has come from demand planning, the supply planning. These are the attributes which would be visible. Yes, we can build something. So Ashik, if you're able to put it, that's fine.
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, it'll be fine. Because we want to see how the supply plan is going to be done. It's like on monthly, how do you get the how do you come up with the current stock and on order against the demand and then how do you get the visibility of stock cover and the shortages.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah so this is this would be a generic supply plan Mohammed Asif because since we are right now in process of defining this in IBP we are building it right so whatever we'll show will give you a snapshot of how it should look like but it will not be exactly the same as we configure the system the tying requirement. We will show you exactly how it will look like in the demonstration when we have the unit testing for tying.
+
+ And then you can actually see it in Excel sheet, test it yourself, and provide your feedback eventually. So the point I'm making is we will add that snapshot. This would be a sample snapshot so that you get an idea of how the data will look like, But at the same time, this will not be a final commitment. These are the only fields. We will still be able to update it based upon your requirement as you test it in the unit testing.
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Is that OK?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, that confirmation is fine. Yeah, so other than that, you have any other question or any specific comments?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Some comments were there. Some comments were mentioned.
+
+UNKNOWN_SPEAKER:
+If you can go to. Yeah.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Like if you can go from the top, if any other comments Let me go from the top.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, there are no comments. So, there were some spelling-related grammatical issues which we have updated. Then, so there was this question, how this collaboration with vendor what do you mean by that so here we have updated that essentially collaborated with vendor which means the vendor what are the agreements in terms of how much inventory we need to maintain per vendor as a stock policy because we understand for tying for some metals we carry inventory for one year versus for some metal we carry inventory for the six months or eight months so this is what the collaboration of vendor means so we've updated this comment.
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So how will why is it vendor I mean here we don't have specific VMI concept here. So why is it like collaborating with a vendor?
+
+Rahul Patel (ADNOC Group D&CS):
+While it is not a VMI, vendor is defined as the person who will supply, in the supply plan as the person who will be providing us the material, right? So when a specific vendor material combination will be able to maintain the lead time for inventory policy in terms of how much stock we want to carry upfront so that lead times can be defined appropriately in supply planning. Suppose you have a vendor X which is providing a material A Now for that material A the for that specific vendor if the lead time what we are maintaining is say one year sorry the stock what we are maintaining is one year then that one year of inventory becomes a lead time for us in planning.
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+So that's how that's what we mean here collaboration it's not me but we don't have that sort of problem The point here is we don't say for this supplier I will hold one year. Inventory, so what we know is. If I have to, you know there are lead times I have a lead time at the material at the material level that is, you know the three latest three deliveries we are getting the lead time. That's all I know.
+
+ I don't say that I want to stock one year worth of materials. We are not having such a process like that.
+
+Rahul Patel (ADNOC Group D&CS):
+What you're saying is you don't want to maintain this lead time at a vendor level, but only at a multi level irrespective of from which vendor it is bought.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yes, yes, this is what they are. Now there are cases if there is an agreement in the agreement. Yes, there could be specific, you know, lead times which are mentioned. That is for agreement for that vendor that lead time could be different. Otherwise this is what the business was telling you. You know they will have a job which runs on the SAP HANA system and that job is to take the latest three deliveries of the core material and update the replenishment lead time.
+
+ So you will get you know what is the replenishment lead time for that material based on last last three deliveries.
+
+Rahul Patel (ADNOC Group D&CS):
+Agreed. So for sure replenishment lead time is an external lead time, which we need to consider, and I agree to this for the discussion, and we are going ahead with the same logic. But in terms of inventory policy, it's also defined as lead time in IBP, because you're supposed to stock for one-year material, right? But based upon – so that one-year period essentially is added as a lead time into the planning so that you are always doing planning beyond one year, because you're supposed to carry the inventory So that's where this inventory policy stocking policy in vendor combination.
+
+ Has been updated. Will I try to stop for one year?
+
+Vignesh Perumal (ADNOC Group D&CS):
+That means I am putting all my capital and tying up my capital and holding this in my balance sheet as stock for one year. No, why will I try? Why will I do that, Rahul?
+
+Rahul Patel (ADNOC Group D&CS):
+That's what the time thing shared us that based upon the delivery. That is what the business has told you.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yes, yes. So that's what the business has told us. Yeah, just like lead time wise, the collaboration is fine. You may have agreements, and that agreement may have a specific lead time based as per the supplier. But then the stock cover is same for all. Stock cover that we maintain has a different inventory policy which we maintain.
+
+Rahul Patel (ADNOC Group D&CS):
+So let me put this comment here. Inventory policy for stock coverage is not dependent on vendor, correct?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Rahul Patel (ADNOC Group D&CS):
+On vendor. So content. Right now, I'm capturing this comment here. So while I'm saying content updated, we'll take this point. I don't want to lose this comment. We'll update the content to make sure that it's not a collaborative render, but it is a spur discussion. Inventory policy was talker. It is not dependent on content updated accordingly. So I'm putting this comment here.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+And collaboration is valid for like what I said, for those items that we have a valid agreement with suppliers for that collaboration as per the lead time is valid.
+
+Rahul Patel (ADNOC Group D&CS):
+OK. OK, I'll take that comment as well. Vendors, materials, materials with LTPA. Will have lead time agreements and can be considered as material vendor collaboration, correct? See Rahul, so what you will do is the logic will be like that.
+
+Vignesh Perumal (ADNOC Group D&CS):
+The agreement is supposed to be more specific lead time, but in the agreement there is no lead time you know mentioned you will have to rely on the material level lead time.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, if agreement let me put that as a left hand does not provide exactly lead time you have to rely on the material now the material itself would have been based on last three procurement.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Data. Transactions. OK, yeah, yeah.
+
+UNKNOWN_SPEAKER:
+Transactions.
+
+Rahul Patel (ADNOC Group D&CS):
+So I'm capturing this note here so that we are agreeing on this and then we'll align the content to make sure it's in line with what we discussed, OK?
+
+UNKNOWN_SPEAKER:
+OK. Let me post this.
+
+Rahul Patel (ADNOC Group D&CS):
+Then here, he was asking why TR is created, because we understand that there will be some materials which will not have LTPA, which means which may go through process and for tendering process will have to get PR, right? For the because the supplier is not defined, so we assume it's a new supplier, which means it will go through PR process.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So is this still correct? Yes, there is no source of supply already, then it will be a new one.
+
+UNKNOWN_SPEAKER:
+Yeah, that's fine.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, OK, so I think this this is fine. This was specifically, we could not understand the question, why it is late at time, because irrespective of whether it is time or not, you will have something which needs to be planned immediate basis, something which is planned for long term basis. So immediate plan is essentially, you have the demand, but you also have the maternal reservation consuming the demand.
+
+ So you have this visit. This is what the point you were talking about, right? How is my forecast getting consumed?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah but you see this there is what rig site and there's no rig site for or jetty for tying material.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay so I think this was because the discussion we got this update later that tying is not applicable for both onshore and offshore so that's why this assumption was that the tying material will go to Essentially the The well side and that's why this discussion is so we will update this comment to make sure it is relevant for onshore.
+
+Vignesh Perumal (ADNOC Group D&CS):
+It is not relevant for offshore, right? This is what we discussed no last time. Yeah, yeah, yeah, yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+So yes, that's that's correct. Now this was a generic assumption that tiny bit replicable for both onshore and offshore and then. We are essentially supplying the material to the well site, right? And probably that's why this jetty or this came into picture that how will you supply material, it will go through. So it was, Tim was trying to be a little bit more descriptive, so we'll change this.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Correct, but what exactly, see, here in the planning horizon, you are telling short-term plan and medium to long-term plan. A planning horizon is a window, for which you are going to plan. It should be a period, right? But all these are your written concepts over here, like in the planning horizon, if you if you tell a short term plan and a medium to long term plan, it must be like maybe a short term plan, maybe for a month or a week and long term plan could be more from months to years.
+
+ Where is any of that? Because here the second one, this plan usually covers beyond six months to five years, right? This is what your long term plan is saying. But I'm expecting something like that in the short term plan. What is the short term plan? Is it from weeks to months? How many weeks to months?
+
+Rahul Patel (ADNOC Group D&CS):
+It's not there in the short term plan. Noted, Vignesh. So the idea was to explain the activity which is done in the short term plan. Essentially, since we are coming closer to the point of consumption, the work is more from an ad hoc user perspective to evaluate okay what is my demand, what is the available stock, what is the material reservation and everything seems to be okay that was the idea but for sure we will also update this to make sure that the period of the short term plan is also updated in this document so that it clearly signifies what is the period
+
+Vignesh Perumal (ADNOC Group D&CS):
+for short term versus what is the period for long term. Okay. Just make a note of it somewhere otherwise you may forget it.
+
+Rahul Patel (ADNOC Group D&CS):
+So let me reply to this comment here, which Jagannath has discussed. The meeting content will be updated. Clear to define. And activities considering 9, 8, 1, 2, 3, 4, 5, 6, 7. I've taken this note. Moving to the next point. So I've taken this. So I think the comment above will make sure this point is also addressed. Not clear. So here, essentially, in the long term, mean to say is that here, since in the long term, it is more towards making sure the material is available in time in the short term, the activities essentially is made from a planning perspective to basically have visibility of what is the supply plan and whether the supply plan does not create any impact in the short-term plan is what the activity is.
+
+ So that's where we wanted to highlight Also in the long term plan, this gives a visibility on overall requirement of the model and then. Essentially, it also helps you to define how we want to supply this.
+
+Vignesh Perumal (ADNOC Group D&CS):
+This is fine. It's fine, I see. Ideally, what you mean by short term plan is to ensure. Within, you know a month. That the inventory the tie-in inventory is available to sustain operations whereas the mid to long-term plan is going to you know ensure that your supply planning is going to sort of provision the materials in the future like around from six months to five this is what you are trying to say here Rahul.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+Correct additionally in long term you also have the visibility of overall requirements so you you can put some effort on identifying vendors, if there are VMI needs to be created, or not VMI sorry, if the LTPs needs to be created and whether is there an opportunity to create LTP now that you have visibility of overall requirement for a model in a larger horizon.
+
+Vignesh Perumal (ADNOC Group D&CS):
+So which means the work in the mid to long term is more strategic in nature. OK. So the short term can be a thought of as issuing immediately orders to sustain operations operations in the very near future, whereas the long term could be going, you know, venturing, analyzing to see long term framework agreements or something like that. Exactly, which can be fine.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So it's mentioned in the mid to long term covers beyond six months up to five years, so short term would be up to six months.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, we've not objectively mentioned up to six months, so that's where I've taken this comment. Try clearly what is that short term versus long, mid to long term planning horizon. Okay. Okay. So here when we say supplier code, if there is a vendor available, then that vendor as per the ltpa uh becomes the supplier code for us for product location combination so it's not necessary actually this is master data this
+
+Mohammed Ashic (ADNOC Onshore - PD):
+is master data for time planning process right yeah so so why would we maintain uh a supplier code just for the release order yes because if you have ltp then you have the supplier code, right?
+
+Rahul Patel (ADNOC Group D&CS):
+So that information would be extracted from IBP S4 HANA and then used in in supply planning because supply planning you're doing against a vendor if you have this information. So even if it is not VMI managed, a supplier is not managing inventory, you are managing inventory, but you still have LTPs in place, right?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Can you read to the next location source as well and see if it's thing to do. Are you confused with the VMI and tie-in?
+
+Rahul Patel (ADNOC Group D&CS):
+In the master data source, mutual plant vendor, mutual plant, mutual So based upon historical consumption of STO, PO, what we have, if we have more than one- What is STO and- Stock transfer order or purchase order. So basically, what are different sources for procuring this material? Now, if you have historically done stock transfer between the systems, then that location will also be identified as source for that product, which means that, so that if there is a stock available in a different say, location, and you want to leverage that stock for initiating the STO, then this is what system will tell you.
+
+ So essentially what we are doing is that we are looking at the – so we are defining this relationship for that material is that how you will be sourcing or fulfilling this material, either through a vendor or through a different plant based upon the STO relationship. And if there are more than one vendor, then What was the the one of the requirement becomes? What is the quota between if they have two vendors like that?
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+How is the quota distribution between these two vendors is what we're trying to explain here. Yeah, the quota is fine, but the thing that is mentioned before, like plan to plan.
+
+UNKNOWN_SPEAKER:
+See.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See, materials are your materials. Or your, you know our plant codes, wells we are clear. Location product you're saying that this is a combination of tie-in, you know tie-in materials and I think it is tie-in materials extended to plant and supplier code. Yeah, this is something like your info record looks like because.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, this is just a combination. Yeah, you can call it as info record.
+
+Vignesh Perumal (ADNOC Group D&CS):
+This looks like something like an info record, which is something like a master data. The location source in this master data, the sourcing material from plant to vendor or between plant to plant relationship will be reflected based on STPOs. So what are you trying to say over here? So this is going to be the material and plant combination based on historical stock transport orders which are placed.
+
+ Is this what you're trying to say? Yes, so essentially.
+
+Rahul Patel (ADNOC Group D&CS):
+This is also called as transport lane and Bastion Hector. You can correct me if I'm wrong here and what we're trying to do is historical. So if there is a material historically we we know that it has been procured from a certain vendor or for an STU it has been created as a certain certain plant has been providing this material for stock transfer, that information essentially would be stored as master data, so that for a certain, so there are two separate master data.
+
+ We need to define that a material is extended to which all plants and which are vendors, and then out of those plants and vendors, which all have historically, from which all locations we have historically sourced that material, so that we know that, okay, as a master data, a material is extended to plant A, plant B, supplier A, supplier B. And historically, plant A has supplied us with this material.
+
+ So that's what we're trying to establish here as a master data. Does that answer your question? Am I able to? Am I able to?
+
+UNKNOWN_SPEAKER:
+Clarify.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+I don't know what you what you're trying to explain here, but Whatever it is, if it's a good for.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+It's a good something.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so for sure it's good only, but Bastián or Hector, you want to elaborate more from a technical technical perspective.
+
+Bastian Osorio:
+You made a clear point. For me, it's clear that based on historical data, we're going to build the different links, lanes between the different location and the vendors. And based on that, we can then create the supply proposal considering the lead some support.
+
+Rahul Patel (ADNOC Group D&CS):
+So. Do you want to spend further time here or we want to move ahead? If there is any further question? Yeah, you can move ahead, but I I think there is a
+
+Mohammed Ashic (ADNOC Onshore - PD):
+It was planned to render. I don't understand what plan to and if there is if this is just a information record for some kind of validation, it's OK. So this is a master only.
+
+Rahul Patel (ADNOC Group D&CS):
+So here we are not trying to say that it will do anything. Basically, we are trying to set up master data even before we can create supply. So for us to create supply plan, who will be supplying this material? So either a vendor supplies it or a plant supplies it. So we are just trying to establish that relation between a material and who will supply that material. So that we can create a supply plan and then based upon that supply plan, lead times and other parameters and constraints can be considered for us to get to the supply plan.
+
+ So this is the data we're trying to explain. This is the data which is required for us to define the supply plan. You can't read it from here.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+What about if there are orders that may be placed for tie-in as well as MRO? Will this location help them to differentiate what is the on-order for tie-in and MRO? Is it the storage location that you're trying to explain? That, OK, we will be considering the storage location as a location source.
+
+Rahul Patel (ADNOC Group D&CS):
+It's a good question and we've discussed and agreed that there are specific time related storing locations which are specific to time in our last call.
+
+Vignesh Perumal (ADNOC Group D&CS):
+See here Ashik what they are trying to you know say is material is a material independent entity location is a location it could be a plant okay well we know Now, location product, what they are trying to say, say for example, assume that you have one tie-in material, and you have got this material previously from one group company, and in another instance, you got from one supplier. So they are going to create one combination of the material with the plant, because it was procured from intercompany, and one probably for the material versus the supplier code, because probably you created with a supplier code.
+
+ The location sources, I think what they are saying, if you have procured that material from, say, another company, your plant and plant will become one combination. And if you're procured from a vendor, plant and vendor will become some combination.
+
+Rahul Patel (ADNOC Group D&CS):
+This is what this is reading, actually.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+But for us, The differentiation required for location source is the tie-in story location, which I don't know if this information will cater to that, or you can add, you can rephrase this to include this tie-in story location.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, so as discussed, for tie-in location, is the time for storage location, right? And the C to be used for supply planning. Yeah, this is we discussed last meeting, Ashish. Yeah, this is something we discussed in the last meeting. So we will specify the tying storage locations. We have the input, right, Bastian, Hector. So we can add those tying storage locations in this document so that it summarizes.
+
+ These are the storage locations we are considering for tying at this point of time. OK, we can move on. Yeah. So this is what we are trying to explain here in that, so that you have a supplier, you have a plant, and then we are defining, so you have plant, so you're defining the relation between vendor and plant, plant and plant, so that ultimately the metal is issued at a final well level when the metal goes from ad hoc plant to well for time.
+
+ So this is high level network, and this is what we are explaining here, like in master data. So all the definition between the relationship between different relationship between vendor is the master data what we've explained. For a specific material. Additional comment, let's see. OK, so there does not seem to be any additional comment. So that's it. That's it. So so Mohammed Ashiq. Then if you are able to address all these comments, which we'll do in some time today, do you have any other comments on time?
+
+ And if not, then can we initiate the approval for this time document if the comments are addressed?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, I mean, if you can respond like the email, you said that those will be addressed in the reports.
+
+Rahul Patel (ADNOC Group D&CS):
+So I'll do is I'll respond to you once the comments are addressed. We've received your feedback. We've reviewed your feedback. We've agreed upon some changes which needs to be done. We'll make those changes and confirm back to you, and then we'll initiate the approval process for this document, OK?
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Rahul, can you go up for the first or second page? I want to see who's supposed to approve, because as I know, there is two members for this team.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so we have Khalifa.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+I don't think Abdulla input would be required considering that this is only for onshore.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, but I mean, no, no, it's not about related to inshore offshore.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+It's related to, I mean, a team member with Khalifa.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, yeah, yeah. OK, so this completes a time supply planning.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+This will this will not come under Khalifa, right? So. So I would. Hey, this is this is.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+They have assigned to Khalifa as a focal point for this document. And you and Abdulla a member under Khalifa. Like like me, I have a that's fine.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+No, no, if it's OK, if it's OK with that Khalifa is already aligned, it it's OK. Yeah, yeah, I mean after you will sign and Abdulla.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+I'm going to share the document with Khalifa. He will sign then he will forward it to us.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+OK fine.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+So if I can just receive from you and Abdulla, one of you sign first and to another person then submit it to me today and I'm going to get the khalifa sign then we can share it with as well
+
+Mohammed Ashic (ADNOC Onshore - PD):
+because we have a separate tie-in focal points so none of them participated so and their signature is not there as well so from a signature perspective what we have discussed and agreed is that only the approvals will provide a
+
+Rahul Patel (ADNOC Group D&CS):
+signature nature. From a reviewer's perspective, if you can confirm that the process looks okay, or whatever we've discussed in line with the requirements, then I don't think in the waiver and documentation also we have received any specific approval from the reviewers. We just want to make sure that reviewers have reviewed it, provided the comments, the comments are addressed, and the document looks okay for them.
+
+ For that, we can send this document to approvers for approval.
+
+UNKNOWN_SPEAKER:
+All right. All right. So this document is fine.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+So you please move to drilling if there is no any question.
+
+Rahul Patel (ADNOC Group D&CS):
+One more. From a time demand perspective, Mohammad Ashiq, I don't see any comment there. So can you please make sure that the trying demand is also reviewed by you or if you're reviewed and there are no comments we are fine with it. Tie-in demand? Yes.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+That was a separate document?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, yeah so separate document we had shared the tying demand document was there somewhere around around three weeks back so along with the drilling supply plan in the trying demand document as well. So as of now, we do not have any feedback on that document. So we are fine if there is no changes, but it is a pretty simple document in terms of from a demand perspective. The end user will provide a demand which gets updated in IBP, and that demand becomes a reference for our supply running, right?
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So that's what we were discussing. It's straightforward. We have just to upload, right? There's nothing else to do.
+
+Rahul Patel (ADNOC Group D&CS):
+So if you can have a look at it today and confirm us on email that this looks OK, or if there are questions, then we'll try to.
+
+UNKNOWN_SPEAKER:
+So that way, the entire tying process from demand and supply is addressed. Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+OK. Now, let me just check, do the time check, because we have a weekly meeting later today. So let me quickly do the time check whether we'll have time to go through the drilling.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Can we do it tomorrow morning?
+
+Rahul Patel (ADNOC Group D&CS):
+I mean on the drilling part. Yeah, just give me a minute. Just let me check where we are with the time. So we still have half an hour. What is the recommendation question.
+
+UNKNOWN_SPEAKER:
+I should ask so we can make it tomorrow morning.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+OK, it's it's dependent on the Latif because we need their. Yeah, so let's do one thing tomorrow morning 10 to 12.
+
+Rahul Patel (ADNOC Group D&CS):
+I'll set up this meeting for time drilling and we can review the document and approve it. So is everyone okay with tomorrow morning 10 to 12?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Only drilling. We can't make it more earlier, I mean the more earlier the better.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+comes? Sorry. I think it's suggesting 8.30 or 9.00.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, 9.00 would be better.
+
+Rahul Patel (ADNOC Group D&CS):
+We have some status meetings in the morning till 10.00, so that's why we were planning to see from 10.00.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Also, if you can excuse your management, because the team they will have operation also meeting and they will have other meetings. So this is the only time that we can use it.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+And 1 o'clock we have another meeting on the same for I think role level.
+
+Rahul Patel (ADNOC Group D&CS):
+Impacting as a person. Yeah, Hector and passion. Will you? Will you be able to join at 9 AM UAE time tomorrow?
+
+Bastian Osorio:
+It's 6 6 AM here. Pretty early. It can be one hour later, at 10 a.m.
+
+Rahul Patel (ADNOC Group D&CS):
+We have Arun as well, right? Arun can join and then you can join the conversation later, right?
+
+Bastian Osorio:
+Yes, still, I mean, if it's possible to make it at 10, it will be better, but if it's not possible, that's fine.
+
+Rahul Patel (ADNOC Group D&CS):
+Because availability of Mohammed Ashiq seems to be a constraint, so we'll have to plan this meeting tomorrow, 9 a.m.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Okay, then even if it's 10, okay 10 to 12, it's fine Who at the lot if you are fine, we can move forward Yeah, but as I should mention because we have another meeting on so this small gap We
+
+Rahul Patel (ADNOC Group D&CS):
+have again at one. We have another meeting So let's do the Okay, make it 10 to 11. Let's try to finish it, but OK. OK, then let's have this meeting 10 to 11 tomorrow and finalize the drilling documents for approval that. Alright, then I think. Any other point anyone has? OK, then there are no other points and let's continue this discussion on drilling documents tomorrow at 10 AM. Thank you very much everyone.
+
+ Have a nice day.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Mohamed Ashaq, can you please work with Mohamed Ashaq and get his signature and sign and submit to me the document, OK? No, it's not updated. So I think we are waiting for the revised documents. They will update it now. Or they will write their comments in the document and it will be captured there, same as how we did it.
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No, no, they will update. The last day we don't have much comment actually.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+The demand is solid, so that's... Khalid, is that for us?
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Yeah, yeah, Ahmed. So the document will be updated and we'll share with the team through the link. I mean, it will be available there. Today they will update it? Yeah, yeah, the link is available, yes. No, I mean, today it will be and today the team they can review and sign it.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, probably tomorrow. Yeah, please just make sure that it will be it will be available.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Yeah, yeah, I'm sorry. How we are going to sign whether it's a document update and sign or with command we sign. No, what we did in other other documents with the comments. Comments was there, and we have signed it to be captured.
+
+Rahul Patel (ADNOC Group D&CS):
+This is what we did.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+You have seen the previous comments, the previous document? Yeah, yeah, yeah. So can we do the same? Yeah, you can do the same. Let me share with the team, with Abdulla and Asha, how we did it before. Yeah, I know. Let me just share with you. So this is one of the documents. You can see the screen? Yeah, I can see.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+This is the inventory planning.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+It's like this has been assigned like this. The comments was there, and the clarification, it has been provided by KPMG. And then we have to sign it. So it will be recorded that this is our comments and what they have promised us to be implemented or to be captured or to be updated in the document will be in the future.
+
+UNKNOWN_SPEAKER:
+Right. So let's apply the same.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Yeah, you can apply the same.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+See, as far as the end users, this they are fine. I mean, like up to the T4R check and they confirm it. You can go ahead and approve it. OK, this is this is the concern, whatever the way you to proceed with but yes you can capture the comments as well yeah we can follow the same yeah so if they have some changes comments they can add it
+
+Mohammed Ashic (ADNOC Onshore - PD):
+into the same document and once they are over I think we can save the pdf and then put our signature okay so so for for tie-in it's done just go through it because what they did they have answered all
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+the questions and there is some some points they have promised to update it by this sentences so if it is in line with your requirement please you and Abdulla just sign the document so I can share it with Khalifa
+
+Mohammed Ashic (ADNOC Onshore - PD):
+okay so Khalid you will let us know when it's complete for signature yes yes so once the the team has updated and incorporated your comments, right?
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Khalid, please send message to the who's leading from KPMG that the team here they are waiting for their comments to be implemented in the document. So after that they will sign. We are waiting for KPMG to capture all our comments there, OK? OK.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Thank you, thank you.
+
+UNKNOWN_SPEAKER:
+Bye!
+
