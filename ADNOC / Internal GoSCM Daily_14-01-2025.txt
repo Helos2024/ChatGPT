@@ -1,0 +1,426 @@
+UNKNOWN_SPEAKER:
+Well, I get that.
+
+Sagar Vora:
+Hola.
+
+UNKNOWN_SPEAKER:
+I started. Hello.
+
+Bastian Osorio:
+That's alright. So you will be later. Will be a couple of minutes later, so let's wait for her.
+
+UNKNOWN_SPEAKER:
+OK.
+
+UNKNOWN_SPEAKER:
+I see a lot of hiring.
+
+Fiamma Giorgi:
+Hey Dean, how are you?
+
+Bastian Osorio:
+Doing well, thank you. Thank you.
+
+Bastian Osorio:
+Hi, Proceo.
+
+UNKNOWN_SPEAKER:
+Hi, Dean.
+
+Rocio Minguillon:
+How are you?
+
+Bastian Osorio:
+Doing well, and you?
+
+Rocio Minguillon:
+Here I am.
+
+Bastian Osorio:
+You seem to be a little bit, I don't know, your throat.
+
+Rocio Minguillon:
+I'm having problems with my, okay, now you can hear me now?
+
+UNKNOWN_SPEAKER:
+Yep. Okay.
+
+Rocio Minguillon:
+Well, team, thank you for joining. Sorry about the delay. I was just arriving. Let me share my screen and we can review the activities. Okay. So first of all, Ray and Sagar, I booked a session for today. I don't know, Sagar, I think that it's too late for you, but I don't know, Ray, if you are able to join. I mean, today we had a conversation on the rebase plan, and well, there is an urgency or a priority of this FSD document.
+
+ And I want really to align between you, Rusty, and the ones that are invited to the meeting. I want to align the different requirements that we have, in which of them we can start from now, in which of them are for the Wave 1, which of them are for the Wave 2. If we need to join the ABAP consultants, right now or then. I mean, I don't know if you agree with me, but I think that we need this meeting to align that.
+
+ But if not, just let me know, because if you think that is a waste of time, let me know. But I think that it will be useful to align on that, on the requirements and also on the dates and everything, because I don't know. What do you think? I know you can. Ray, are you available at that time?
+
+UNKNOWN_SPEAKER:
+I agree with that.
+
+Reinaldo Gutierrez:
+I think it's very great that we have that multiple people who can align about those documents that we need to create. With those documents, we can deliver it to the ABAP team and they can start working.
+
+Rocio Minguillon:
+That hour is out of your office. Time now, I think. Maybe I can schedule it for tomorrow if you need to be, or we can't have it, right?
+
+UNKNOWN_SPEAKER:
+You tell me.
+
+Sagar Vora:
+Yeah, it's a bit late for me for today, like I have some plans at 10 p.m.
+
+UNKNOWN_SPEAKER:
+I guess, yeah.
+
+Sagar Vora:
+So if you can schedule tomorrow or else you guys continue and I can connect with Reinaldo tomorrow morning and check with him.
+
+Rocio Minguillon:
+Okay, what do you prefer? That we have it today or should we reschedule it for tomorrow?
+
+Reinaldo Gutierrez:
+I think we can have it.
+
+Rocio Minguillon:
+If we have some questions, we can ask that tomorrow. Okay. Okay.
+
+UNKNOWN_SPEAKER:
+Sure. Perfect. Perfect.
+
+Rocio Minguillon:
+Thank you. Thank you very much. Well, then regarding the activities, well, comments of the of the Wave 2. I think Hector is not here and Vivek neither, okay. But I don't know, Vashti, if you have any comment on that because, well, as I understand, that is the priority for Wave 2, to close all the comments.
+
+Bastian Osorio:
+I don't know if you have any update on that or should I check with Vivek and… I've been addressing some of the comments, I understand, I know that there are still some comments pending and they're working on them. So I think we can, I mean, we can check in the chat.
+
+UNKNOWN_SPEAKER:
+OK, yes.
+
+Rocio Minguillon:
+Or if they need something. OK. And the drilling comments today, I don't know if I misunderstood or what, but I understood that tomorrow they are having a session with the drilling team. To see some doubts. Hi, Hector.
+
+UNKNOWN_SPEAKER:
+How are you?
+
+Rocio Minguillon:
+Okay. Hello. We were just talking about the documents of the way too. I don't know if we have already like the tasks, the different comments distributed or how can we do to achieve these of finishing tomorrow with the comments?
+
+Hector Palacios:
+I think that we already answered all that we could on drilling. Arun already did it. We are waiting for a session that we have tomorrow for closing drilling points or to get more clarity on the ones that we don't know. For supply VPD, we were just answering the ones that we are missing from Vivec. So it's fine as well. It's on their side. And from BRD, the same. So there are many things that are on their side and we are just putting the comments.
+
+ So maybe what I can do is to say that to KPMG that we answer all that we could and that now the open ones that we need to follow up with them, with the AdNod, with KPMG, whoever.
+
+Rocio Minguillon:
+Okay, yes, Hector. Let's put that on a clear way on their chat so they can take that comment and then tomorrow they don't say, ah, but you didn't tell me. Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you for the update. Okay.
+
+Rocio Minguillon:
+Well, I don't know, Vashti, if you need something related to the RICEF matrix and the data requirements. This is very related to what we are going to review today with Ray, but...
+
+Bastian Osorio:
+I will review it. Well, I had a first review with Kushu and Kunal yesterday, and we will have a second review tomorrow. I think with that, we'll be able to start building the FSD for the most urgent stuff, which is the extractor. Okay. And then... Yeah, also, Sagar, I will schedule a meeting tomorrow morning to review again the data.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, sure. Best case.
+
+Rocio Minguillon:
+Okay, perfect. And then, then, ah, the test scripts. Where are them? Just for me to check. It's...
+
+UNKNOWN_SPEAKER:
+Uh-huh. Oh, this is… Configuration. And unit testing. Okay.
+
+Fiamma Giorgi:
+So, we have updated with Saul the inventory and demand for chemicals and MRO. We just finished that. So, it's ready for review.
+
+Rocio Minguillon:
+This one? Yeah.
+
+UNKNOWN_SPEAKER:
+Okay. Yes.
+
+Saul Portillo:
+Like I said, Fiamma, if you please for Bastian or Hector, it's okay, the test script. And in the meeting today, we need to see, for example, the parts for the preventative and turnaround. We don't have much activities or much processing in that part. But for correctives and chemicals, it's ready for demand and inventory.
+
+UNKNOWN_SPEAKER:
+Okay. Nice. Okay.
+
+Rocio Minguillon:
+Thank you, Saul. And I think that you, Arun, are working on the drill.
+
+UNKNOWN_SPEAKER:
+Yes, yes, yes. So, I completed the demand part.
+
+Reinaldo Gutierrez:
+Yes, I'm working right now on supply.
+
+Arun Singh:
+Nice. Okay, thank you guys.
+
+Rocio Minguillon:
+So, I have a doubt related to this. So, in this test script, we are taking into consideration only the scenarios that we wanted to test during unit testing, no? What are you planning, Basti and Hector, regarding the other scenarios? I mean, are we going to include them? Because there is a deliverable that is the testing scenarios, but those scenarios are referring to the UIT scenarios. So my question is, I mean, we are going to use these, but then we will add some other testing conditions or some other, yeah, I don't know, some other activities or not?
+
+ I don't know if my question was – We have corrected, prevented drilling turnaround, well, chemicals.
+
+Bastian Osorio:
+We are missing tie-in It's the only one that is missing.
+
+Rocio Minguillon:
+OK, yeah, but my question is, yeah, can you repeat the question? Yes, sure. My question is if the scope of this is only unit testing and then we will add to these scenarios for the UID. Because I'm worried because we have a deliverable and I just want to know When are we going to finish that deliverable? But yeah. Which deliverable?
+
+Bastian Osorio:
+The test scenarios.
+
+Rocio Minguillon:
+I mean, we have to show them, to show that the scenarios to them and they have to approve them. But for unit testing or for?
+
+Bastian Osorio:
+No, no, no, for UIT, for UIT. Okay.
+
+Rocio Minguillon:
+But I'm just, I'm just, I just want to be clear with your idea. I mean, first we have these scenarios and then we will add the ones of the UIT.
+
+Bastian Osorio:
+Yes, this will work as a draft for the UAT scenarios. We will add some more stuff.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rocio Minguillon:
+OK, perfect. OK, then I will check the date for that other thing just to have that ready for that date. But I will check it. OK. OK, Tim, I don't know if there is Any other comment? Also. Yeah, I have shared that integration. With you.
+
+Sagar Vora:
+And the integration, yeah, I saw it. I didn't have a chance to review it that way.
+
+Rocio Minguillon:
+I didn't answer, but yeah, I saw that you have all the detail of the activities, so we are gonna our meeting today on that?
+
+Sagar Vora:
+Yeah, basically what I need exactly like whatever development we are doing, right? So no, it's outside in a realize there is an integration folder.
+
+Rocio Minguillon:
+As you're sorry. Yeah. So a question and Hector.
+
+Sagar Vora:
+So here we are maintaining like which all interfaces we developed up there for one year. We will update the status and we need help from your end like for the updating the testing status column F so that like if any extra column or extra attributes are required or is there any issue like if everything looks fine then you can close that if there is any concern or remark then you can maintain in the G column so that we can like if any extra attributes are required we will like add that attribute to the IDP.
+
+ So this will help to track like what are the developments completed and where we stand. Okay. And in the extractor status in the second tab.
+
+Rocio Minguillon:
+Okay. So here you will put like all the tasks? Yes, all the tasks. Okay. But you also have the mapping file, no? I mean, do you have another?
+
+Hector Palacios:
+So this is for the internal testing CDIs. What is named? No, no, the testing for the iteration.
+
+Rocio Minguillon:
+SIT.
+
+UNKNOWN_SPEAKER:
+SIT.
+
+Hector Palacios:
+This is for SIT. Yeah, before SIT, we can say.
+
+Sagar Vora:
+Basically, now we have loaded the baseline base for sure. This is internal, Hector.
+
+Rocio Minguillon:
+This is internal testing. Yeah, they want us to, while we are doing our unit testing, also checking on the integrations, just to test in a functional way.
+
+Sagar Vora:
+I don't know.
+
+UNKNOWN_SPEAKER:
+Correct, correct.
+
+Hector Palacios:
+We have no reference today. No, no.
+
+Sagar Vora:
+Basically, on Thursday and yesterday, if you remember, we loaded some MRO part usage data, right? Yeah. And similarly, we loaded the customer product and location and like location underscore storage location. So whatever interfaces, CIDS interfaces are completed, we are maintaining here. So we need help from your end for the testing, like high level testing in the base version, IBP base version, like the data looks correct or if any extra, if any attribute is missing, Okay.
+
+ For the product or for location product, we have mapped some of the attributes, but if you need some extra attributes, then you can let us know.
+
+Hector Palacios:
+No, but this is not internally, Sagar. We need to go with that because we are missing a lot of definitions. We are missing filters. We are missing additional attributes. This is not something we will get internally. We have some ideas, yes. We can put it as yes as well, but there is not much point in trying to check internally, we need to go with them and to show them in the sessions, this is what we are getting.
+
+ What else we are missing? Is this okay? We need to do something else. But we need to start pushing that. This is very fun. This is great. So let's take this to the sessions, but let's align with Bastian because I also think that we need to start pushing this as soon as possible.
+
+Sagar Vora:
+Yeah, I'm saying like first level of testing needs to be done internally, right? And after that, go to them.
+
+Hector Palacios:
+There is not much input on our side due to same. It is what it is.
+
+Rocio Minguillon:
+Okay. Maybe, but I have a doubt on that, Hector, because we have these two weeks of something called UAT data validation. I think that is what usually in project, I mean, usually in project we have state a phase of data validation, where the user--.
+
+Hector Palacios:
+But that is after SIT, right?
+
+Rocio Minguillon:
+But SIT is, I didn't have that understood from SIT. I mean, I thought that SIT were just about, I don't know.
+
+Hector Palacios:
+Is with the technical team, with Bing, with all these guys, and to show the integration.
+
+Bastian Osorio:
+Is only technical.
+
+Rocio Minguillon:
+But it's only technical. About the quality of the data only about the integration and if we are taking the the correct like yeah um I'm a little bit confused on that yeah I mean not really sure we we need to validate of course
+
+Hector Palacios:
+we need to validate with the users but they need to provide us this and two weeks is not enough we need more time for we need to get this validation before which validation the UAT data validation yeah for me UAT is which data we are going to use for the UAT but not to validate if this data is correct or not that is something that we need to say we have before because if we wait for two weeks for doing that job we are going to fail it's not going to be enough two weeks before UAT that's crazy no it's crazy we cannot wait two weeks for expecting that in two weeks we are going to solve all the issues that we are seeing in the data.
+
+
+
+Bastian Osorio:
+We need to start iterating as soon as possible on that. Sebastian has more clarity on this plan. I already discussed this with him and at that time, like it was last week, it made sense so we need to check with him. I'm not sure of, yeah.
+
+Hector Palacios:
+Let's take it, but I mean we cannot do an UI team internally for this. We need to to have working sessions, as we have been doing, and to check together what the, we cannot work in separate ways, you know, not integration and then functional. We need to be together working, checking what is going on, and then go with the customers to solve whatever question we have related to each one of these flows.
+
+
+
+Bastian Osorio:
+But the fact is that there is certain technical activities, like for in SAT, I understand that is to move, for example, to transport to, I don't know, install the extractor and all that. And this needs to have an approval from Bignish. And that is just purely, purely technical.
+
+Hector Palacios:
+There's nothing functional related to those activities. And that is this SAT.
+
+UNKNOWN_SPEAKER:
+Yeah. Yes. Yeah.
+
+Rocio Minguillon:
+As I understand, SAT is not related to checking the quality of the data. And the competition of the data, and that is about other technical activities. But okay, okay, let's discuss the data. What I think that is going to happen is that we are going to do this in parallel to the configuration and the unit testing. That is what I imagine. But yes, let's check it. But for now, I don't, sorry, Sagar, I think that this is good.
+
+ Also, as you are like integrating the data, I understand that you also do like a high-level validation if the data is completed. I mean, if you have a... Rejections and all that.
+
+Sagar Vora:
+This is a third point that Sagar is raising.
+
+Hector Palacios:
+Basia, I think that the open point sessions are not going to be enough for this. They said to us, no, let's take it an open topic session, but we are never progressing. There is not always the right people on those sessions. We need to have a specific session for integration. You started discussing at least the English.
+
+Bastian Osorio:
+I absolutely agree. We need to have those sessions cleared. But if there's plenty of work to do in our side, I don't want to push those sessions. That's why I scheduled a new meeting tomorrow to review the data. We checked yesterday and there's still plenty of work to do. Before jumping into the a session with the user to check the data. There's plenty of things. So, for example, we didn't have all the equipment, we didn't integrate the description for location, for materials, the product group.
+
+
+
+Hector Palacios:
+Let's have a minimum, but we cannot have all the flows ready to just go to one session. In the first session, we are going to have material and maybe customer, that's all. So, we don't need to have every float before going with them?
+
+Bastian Osorio:
+No, not every float, but the minimum. The minimum is to have, I don't know, the description of the material, the description of the location, the material group, the things that we see in the extractors, the things that you would... There's no attribute to be added. There's just what it is in the extractor, no more than that.
+
+Rocio Minguillon:
+Okay.
+
+Bastian Osorio:
+Okay, so I don't write The goal is to close all these like small gaps we have tomorrow. Okay. So we can schedule the meeting. I don't know. Let's place a meeting, otherwise we will push this. This is a critical point.
+
+Hector Palacios:
+They are not even, they don't want to help us anymore with the data. They say, okay, no, you have the Let's integrate. Yes, no.
+
+Rocio Minguillon:
+No, they are not. They are assuming that we have all the information to integrate. But what is Bastian saying is that we can't push that point. Let's place the sessions for the next week. I don't know. So we have enough time.
+
+Bastian Osorio:
+Yeah, it's fine. We can even have it on Friday. I'm fine with that. But I don't want them to tell us Oh, but there you can see all the information in the extractor and you're not integrating it. Let's avoid that. Let's see. Look, this is everything we have. Now it's up to you. There's nothing you can say to us, basically.
+
+Rocio Minguillon:
+OK, so I will raise the point today in the huddle of integration open points that has to be separated from the meetings that we are already having.
+
+Bastian Osorio:
+I think Bignesh is the main lead here from AdNode.
+
+Rocio Minguillon:
+OK. OK, so I will like raise this point. Some functional guys like Abdulatif, depending on the session, right?
+
+Hector Palacios:
+The Abdulatif, the Murugan, the Yaranat. And the purpose is to start So, yeah, we need to add these guys as well. I don't know if all at the same time, but we need to.
+
+Rocio Minguillon:
+Otherwise, we will just start yelling. Yes. The purpose is reviewing the data that is already integrated and defining some attributes, extra attributes, and some definition that we still need. Yeah. Okay. We have to have the detail of what are we going to, of what are we missing, or maybe we can divide it into master data. I mean, the first session, we're gonna see material and all the attributes.
+
+
+
+Hector Palacios:
+I propose you have a continuous session, not to have like agenda. Just a continuous session with the interaction topic.
+
+Rocio Minguillon:
+Okay, but for the functional persons, they will ask, who has to join depending on the exactly data that we are going to review. That's why.
+
+Hector Palacios:
+We can focus one day on MRO and the other day we can focus on Kim and Julie.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Sagar, you wanted to say something. Go ahead.
+
+Sagar Vora:
+I was just suggesting we start with Vignesh and then how the session goes and from next session onwards we can bring the required. But yeah, this is also find MRO chemical one day and next time drilling and time.
+
+Hector Palacios:
+Okay. Now we already did that with Bignesh and he didn't like it. So let's bring the business.
+
+UNKNOWN_SPEAKER:
+Okay. Okay. And one more point.
+
+Bastian Osorio:
+But I understand that the meeting we had with Bignesh for drilling was more more for me was more like functional, wasn't it?
+
+Hector Palacios:
+Yeah, but there are many things that if we ask what we need as an additional attribute, Bigness is not the user. No, no, absolutely agree.
+
+Bastian Osorio:
+Bigness is not useful at this point for us in drilling. For MRO and chemicals, I think he can give us some more details, but for drilling, not at all. Nah, he's in for everything.
+
+Hector Palacios:
+We need Bigness, he's going to give us the clarity of the data and the users are going to let us know what is relevant. So we need the two of them. If we go with Dignesh only, he is not able to say, okay, this should go on IUP or not.
+
+UNKNOWN_SPEAKER:
+He's not the man. Yeah, agree. Okay.
+
+Sagar Vora:
+And one more point. So if you go to expect us, fit us. So here also, Hector, we will require some help. Like we can do our testing I think we did a high-level testing of the extractor for location and storage location, but now we can do a proper testing and we can close the points.
+
+Hector Palacios:
+So what we need to do is prepare for those sessions. As Bastian is saying, let's go with that session, let's meet all of us, with Saul, Vivek, whoever we need, and let's prepare what we understand, we are missing and so on, but let's join together to prepare these sessions. It's not like doing – let's not work on silos on this.
+
+Bastian Osorio:
+We need to – I scheduled a meeting for tomorrow. Oh, sure.
+
+Saul Portillo:
+So great to work with you. Thank you very much. Sorry, I have a doubt. You are working now in the historical consumption or it's ready? And you need our support to validate the data. Because I see in the morning and I see the jobs, I see a lot of rejection because they don't have a customer. I don't know if you review that in this moment or...
+
+Sagar Vora:
+Yeah, so I will check for the rejections because I'm checking that with Reinaldo because what is happening, I can see some of the customers in that sector, but it is not going into IBP somehow. So I will check that with Renato for the rejections and I will update. So that's why I kept that as in progress because it's not completely closed.
+
+UNKNOWN_SPEAKER:
+Okay. Perfect. Thank you. Thank you. We lost Rocio. Yes, she moved to Le Havre. All right.
+
+Saul Portillo:
+Do you have any open topic, guys?
+
+Hector Palacios:
+Something that you want to review? Or we have a meeting year in like half an hour, so you can check there.
+
+UNKNOWN_SPEAKER:
+Okay. All right.
+
+Hector Palacios:
+Thank you, Dean.
+
+Bastian Osorio:
+Thank you, Dean.
+
+UNKNOWN_SPEAKER:
+Thank you.
+
+Saul Portillo:
+Thank you. Bye-bye.
+
