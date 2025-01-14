@@ -1,0 +1,310 @@
+Jonathan Hernandez:
+Sí, con Iker andábamos ocupados ayer en algunas sesiones, pero ya hoy anda un poquito más libre, esperamos ya no tener que ocupar a Iker de este lado, entonces también ya para esa puede ser, llega a requerir.
+
+Richard Quinteros:
+Sí, genial. Richard, Samir, de su lado, ¿cómo les va? Muy bien, todo bien. Estamos vivos. No, estamos ahí, estoy ahí ahorita ayudándole un tema de inventario para que pueda avanzar con sus pruebas. De mi lado, pues ya yo le comenté a Kering ayer porque me reuní con ella y Belving y Florencia al final de la tarde para ver unos temas ahí de unas pruebas de Florencia para el tema de anulación, ¿vale?
+
+ Y pues me salió un error en el tema del can speak. Es un paso, es una transacción que nos permite cancelar el picking en los procesos de salida y ver cómo se comporta. Hay tres escenarios de eso. El primero es anulación del documento sin haberle hecho nada de entrega y salida, por supuesto, anulación sin haberle hecho nada. Funcionó sin ningún problema. El segundo es anulación, cancelar del Picking, ¿vale?
+
+ Y después anulación del documento. Pero la cancelación del Picking pues saltó un error que pasé por correo el día de ayer pidiendo revisar una nota exactamente. Pues nada, podré avanzar con esa prueba que ella me pidió una vez se revise la aplicación de esa nota. Y el tercer escenario, pues obviamente se logra casi que igual teniendo la nota aplicada. Si no la tengo, pues no la puedo lograr. Y eso no eso para poder suplir un requerimiento específico pues del negocio y de Florencia, justamente necesitaba probar eso.
+
+ Y pues con respecto al escenario de cara el día jueves, yo le comenté a Kering que lo que iba a poder alcanzar probar de cara, mostrarse los ya ya ya, es el tema de exportación. Ellos me mandaron varios escenarios, pero no voy a poder mostrarle todos esos escenarios que me están pidiendo, porque me están pidiendo despacho al cliente, me despachó varias cosas, pero dije para que puedan ver y se queden ellos lo que quieren ver es cómo funciona el grupo de consolidación, ¿no?
+
+ Entonces, para podérselos mostrar, solamente voy a preparar de cara a la exportación, al flujo de procesos de exportación y que ya se queden tranquilos, ¿va? Pero para eso ya estoy casi listo, ¿vale? Ya estoy casi listo, estoy casi cerrando ya algunos temas puntuales con ellos. Yo con ellos, no, perdón, con mi proceso y ya está. Mostró el día jueves sin ningún inconveniente ok eso se va a poder ver ahora que otra cosa iba a decir hay varios temas ahí que vamos a tener que revisar con ellos ok y pues aquí les voy a mostrar mi pantalla para que les vamos a traemos se lo voy a platicar un punto número 1 pensando en el futuro de cara a las cargas iniciales los lotes de cara a las cargas iniciales los lotes viven en ECC, pero no viven en EWM.
+
+ Nosotros no podemos cargar inventarios si el lote no existe. Eso es la regla número uno. Ahora, desde ECC a EWM no se pueden enviar los lotes aún, ni desde EWM se pueden cargar. ¿Qué hay que hacer? Yo conseguí por ahí una que la voy a estar mandando si no es hoy a finales de la tarde, mañana en la mañana. Una nota que especifica para el uso de la transacción BD90 para enviar IDOCs con lotes. Se tiene que aplicar esa nota y se tiene que hacer un par de configuraciones y modificaciones en SC, actividades manuales en SC, para poder usar o que exista la transacción BD90 en SC.
+
+ Y eso hay que revisarlo de cara a las cargas iniciales. ¿Vale? Porque, obviamente, los lotes para las cargas iniciales tienen que ser enviados desde SSO.
+
+UNKNOWN_SPEAKER:
+¿Ok?
+
+Jonathan Hernandez:
+Digamos que ese punto es importante, pero de momento no es necesario hasta que lleguemos a la parte de la carga.
+
+Richard Quinteros:
+¿Correcto? Correcto. ¿Por qué no es importante ahora? Porque ahorita se trabaja con entregas entrantes. Y si se necesita cargar algún dato, usar un producto, con un lote específico, se crea el lote manualmente en el WM y se crea en SAC, ¿vale?
+
+Jonathan Hernandez:
+Ok. Entonces, pero es importante, como decís, ir levantando la mano para que se revise.
+
+Pablo Palacios:
+Yo lo que... A ver, obviamente esto es de WM, yo eso lo he hecho en WM. Naturalmente lo que se suele hacer es una carga masiva de lotes, como una tarea de católoga anterior a migración de los stocks. O sea, para la migración de los stocks, vos necesitas tener todos los datos maestros, por un lado inicialmente el material, por otro lado los lotes, si es que están gestionados por lote. Lo que se suele hacer es agarrar la MB51, MB52, siempre me las confundo con la 51, no sé qué es.
+
+ Hacer la bajada de todos los stocks que hay en SC, y de esos stocks te informan los respectivos lotes. Entonces, agarrás esos los lotes y se crea masivamente en EWM mediante, a ver qué herramientas, puede ser un LSMWB, que existe, está activo en EWM, o ver si se usa alguna otra herramienta de migración masiva, lo cual desconozco en EWM, pero LSMWB ya de por sí existe. Así que, lo último, crearlos masivamente como tarea de Catover, antes de la migración de stocks.
+
+ Entiendo que podría ser una solución.
+
+Jonathan Hernandez:
+Pregunta, Richard, ¿LSMW está activa en EWM y se usa? Y aquí va mi pregunta. ¿LSMW está activa también en S4 y el mismo SAP te dice que ya no recomiendo utilizarla? ¿En EWM se sigue utilizando? ¿Esa no es para conocimiento?
+
+Pablo Palacios:
+A ver, Johnny, no es tan así. No es que SAP, S4, nos recomienda utilizarla en el SC. Es que generó, crearon una nueva herramienta que es el Migration Cockpit y dentro de eso han generado objetos que directamente son programitas, por así decirlo, y dentro de cada frente, cada módulo utiliza los objetos que le interesan. Por ejemplo, MM te va a utilizar objetos de creación de materiales, creación de proveedores, creación de lotes, etc.
+
+ Creación de stocks, etc. Hay objetos dentro del Migration Cockpit que vas, lo seleccionás, bajás un Excel, que es el template a llenar, y después seguís los pasos para hacer la descarga. Entonces, existiendo eso en F4HANA, que antes no existía en SC, es mucho más simple la que es la migración masiva. No significa que el SMWB en F4HANA no exista más. Sí existiendo. Porque hay objetos que no existen en Emulation Compit o simplemente porque, nada, sí, sí entiendo.
+
+ Alguien capaz que prefiere utilizar el SMW para alguna otra cosa. Y en EWM estoy mirando ahora, puse la transacción y está, está activa.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Jonathan Hernandez:
+Sí, no, pero preguntá del SMW porque tuve un tema en otro proyecto, pero en S4, que quería hacer, o se quiere hacer una carga de las unidades de conversión masiva, yo preguntaba, yo conozco el SMW, Me comentaba el de Meme, es que el mismo Zap, justo por esta parte del Migration Cockpit, ya nos recomienda usar el SMW. Y bueno, cuando es primera vez, creo que está la MM57, creo, si no me recuerdo, para cargar una vez de conversación por primera vez.
+
+ Pero bueno, esa era para conocimiento mío.
+
+UNKNOWN_SPEAKER:
+Sí. No, no.
+
+Pablo Palacios:
+Mientras esté activa vos la podés utilizar. Más allá de que lo recomiendo, el NoZap es una herramienta de cargas masivas. Donde vos podes diseñar el digno programita para hacer la carga masiva de Gears pero después nada, no es una recomendación de Zap que te diga si lo usas va a romperse tal cosa, no.
+
+UNKNOWN_SPEAKER:
+Ok, ahora.
+
+Richard Quinteros:
+Voy a hablar yo, por favor. Ok, voy a comentar algo, para eso voy a compartir mi pantalla, ok? Ok, en HAN, vale? Esto es, lo acabo de buscar, de hecho lo acabo de buscar, acaba de aparecer, pero yo lo digo con base lo de los lo de los. O sea, el principal punto. Es recomendable usar el SMW en EWM HANA? No. Ok. Punto principal. Se puede? Sí. Es recomendable? No. Para comenzar por ahí. Método de integración.
+
+ Datos maestros. Se considera el lote uno de ellos? Sí. De hecho, aquí se comenta BATMAS. Tipo de mensaje ok un rp se envía a wm descentralizado ok y él lo recibe para comenzar por ahí y la integración pues es vía alea idocs ok ahora más bajito nos fijamos y nos dice que el objeto 5 5 no perdón donde está Laidoc lo tenía ahorita aquí, lo tenía ahorita aquí, te lo juro, te lo juro, te lo juro. Dónde está?
+
+ Ahora lo perdí, lo perdí de vista. Mi segundo B de 90, B de 90. Permítame, permítame. Dios mío, pero si lo tenía ahorita aquí. Sé que me puse. Aquí está. Ok, iDocs. En este apartado se explica, de hecho estaba por aquí, ahorita lo tenía, pero bueno, voy a saltarme a este apartado, este cuadro dice lotes, batmas, ok, batmas es el tipo de mensaje que se usa. Estos son estos son CWM, matmas, todos estos son los que nosotros hoy en día tenemos creado y hacemos envío distransacción BD 90.
+
+ Ok, este se usó para BD 10, BD 14, B de 12, pero ellos dicen B de 90. Ahora, si tú te bajas el sistema de ECC, vale que en este caso es el sistema en cuestión. ECC que sostiene este RP. 1, 2, 3 y ponemos 500 y ponemos que la canción BD90.
+
+UNKNOWN_SPEAKER:
+La transacción dice que no existe. La transacción no existe.
+
+Richard Quinteros:
+Yo me puse a investigar. Y hay una nota que sugiere para poder usar el BD90, que es la buena práctica. Es necesario aplicar una nota. Por aquí, de hecho, te lo va a seguir seguro, te lo va a decir. Entonces aquí te dice la información del servicio WM. Bueno, por aquí está. Estoy casi seguro que tengo la nota por ahí guardada. Yo la voy a buscar y se la voy a pasar. Y ustedes en apoyo, si gustan, pueden echarle un ojo.
+
+ Pueden echarle un ojo a esa nota. Y por ejemplo Pablo y decirle que piensa, ok? El SMW lo considero una opción? Sí, lo considero una opción, pero no es recomendado por SAP. No está recomendado. Lo ideal es seguir los pasos. La nota me parece que habla de cuál es lo correcto para poder enviar lotes de cara a la carga inicial de SAP SCM, parece a EWM, solo como consideración. Ahorita creo que no lo discutamos tanto, no nos demos dolor de cabeza, no es impedimento ahora, ¿ok?
+
+ ¿Significa que Diana debe ir estudiando de cara a esa nota? Sí, que va a ser, ¿no? Y yo creo que no es malo que les quede a ellos como una herramienta ahí, ¿no? Dado caso, pues ellos quieran hacer la un inventario porque pues obviamente es un inventario nuevo en su almacén que están lo pueden hacer por una orden de traslado si lo pueden hacer sin ningún problema o de compra no sé por lo que lo hagan pero nada son cosas que hay que ver déjenme nada más o permítanme nada más pasarle la nota y pasamos la página de momento que no discutamos tanto ahorita en esto Sólo quería hacer ese argumento o comentario.
+
+ Y pues nada, yo ese es el estatus hasta el momento.
+
+Jonathan Hernandez:
+Es igual, bueno, el punto es lo que les mandamos la mano. No se tiene que ver ahorita, pero que se sepa que es un punto que tiene que revisar. Si bien no lo puede ir revisando, pues mucho mejor para ganar tiempo. Pero es algo que en su momento revisar y pasando al otro punto, retomando algo de la hacienda ayer con respecto al formato que Samir trabajó en su momento. Con el apoyo de Pablo, ver si tuvieron la oportunidad de actualizar los avances que tienen cada uno en sus pruebas.
+
+
+
+Richard Quinteros:
+Yo pude actualizarlo, ¿vale? Yo pude actualizarlo, pero no es más diferente de lo que ya tienen ustedes. Yo puse 65%. Yo no sé qué esperan. Pero pues es que la verdad es que tú presentaste un 65% de avance. Si nosotros tuviéramos más que un avance de eso, o sea, si lo tengo yo para exportación, pero si nosotros tuvieramos un avance más que eso, pues se fuera visto representado en lo que tú presentaste, o tal vez un 67, un 66%, pero no fue así, no.
+
+ Tú presentaste un 65% y eso es lo que yo he avanzado.
+
+Pablo Palacios:
+Yo no lo actualicé, pero de paso, ya le vamos a hablar desde Excel, les comparto un minuto.
+
+Richard Quinteros:
+Yo lo actualicé, por si acaso.
+
+Pablo Palacios:
+Sí, ahí lo estoy viendo. Comparte un minuto, yo lo tengo abierto. Lo que hice fue, por un lado le agregué las clases de entrega, al costadito más que nada, para tener identificado el escenario con la clase de entrega. A ver, para testearlo, es más identificable por el código de la clase de entrega hoy en día que por el nombre. Tal es así que desconozco por ¿Por qué? Pero nosotros tenemos, a ver, por ejemplo, en este caso, un traslado, recepción y acomodo de PT, producto determinado desde APT, que es un traslado, y recepción y acomodo por traslados, que la verdad que no recuerdo mucho la diferencia entre ambos, pero fíjense que les puse como que son las mismas clases de entrega.
+
+ Ahora, tenemos clases de entrega, ZDIG, por ejemplo, Que no sé a qué escenario corresponde, pero siendo un traslado, lo identifiqué de esas formas. A ver, ZD, yo tengo como traslado ajustes de Z11, entrega, movimiento, mercancía. Para mí es un traslado de una entrega a entrega, una entrega entrante. No tenemos un escenario descrito en el VPD como tal, como ZD está describiendo. Bueno, surgió, evidentemente surgió posterior.
+
+ Más que nada a Johnny le digo. Surgió posterior y surgió por algo que detectó quizás Florencia. A ver, surgió del lado de Florencia, claramente. El ZD. Así que como que los voy agrupando acá. Lo que es devolución y anulación, también. Nosotros tenemos un solo escenario de devolución del lado del cliente. Hablado de Florencia, me describió el ZSB y el ZREC. A ver, el EWM va a funcionar igual para ambos escenarios.
+
+ El ZREC, entrega entrante, rechazo por cliente, que es exactamente el mismo. Y el ZSB, faltante inicio de ruta, sobrante inicio de ruta. Eso no lo tenemos como un escenario como tal en nuestro BPD de EWM. Entonces, Va a funcionar igual que el zrec. Está, de hecho, así configurado. Pero en este template nuestro, perdón, me fui a otro lado. Este template nuestro lo voy agrupando de esta forma. Nada, esto es más útil para mí que para mostrar, ¿no?
+
+ Si quieren después, si esto lo van a mostrar en algún momento, esto lo podemos ocultar. Respecto a los porcentajes, yo todavía no lo actualicé. Pero voy a seguir la misma logica ahí que dice el TweetChart del 65%, aproximado. Y solamente de los que pude ir testeando. Por ejemplo, ZLog, ZST, ZA, ZST, etc.
+
+UNKNOWN_SPEAKER:
+Pero bueno, nada.
+
+Pablo Palacios:
+Eso. Comentarlos. Vale.
+
+Richard Quinteros:
+Ahí, por ejemplo, Pablo, los procesos que son clases de entregas diferentes, pero se manipulan igual, que una, por ejemplo, hablando del tema de traslado, pero pues que no se platicó de una clase de documento, pero obviamente entra dentro del mismo flujo BBP y traslado, pues manipula al igual. Si ellos se ponen, oye, mira que esta clase de entrega, pero ellos dicen que al final, oye, mira, se trata de un acomodo diferente, de un proceso, la forma es diferente.
+
+ Ahora sí, espérate, ven acá. El MVP es esto. Ya está.
+
+Pablo Palacios:
+No, no, por ejemplo, claramente está, por ejemplo, el Z importación y el Z lock, que es compra, proveedor local y compra, proveedor de importación, en EWM para nosotros es exactamente igual. Está así identificado con dos clases de entrega distintas, simplemente porque ellos, en el lado de compras, en SC, siempre van a necesitar tener identificado si es una compra importación o una compra de la proveedor local.
+
+ ¿Por qué? Porque hay un montón de microterms, de clases de condición, los proveedores son distintos, así que es totalmente lógico que tengan dos clases de entrega distintas. Pero este es un caso claro de que en EWM estas dos clases de entrega funcionan igual. Pero bueno, nada, ahora lo actualizo un ratito Johnny, los porcentajes, y le más o menos grandes rasgos va ahí también 65% yo creo que en eso tenemos que más o menos seguir la misma línea en casi todas las frentes salvo que haya algo así como este el de Richard 75% alguno que veas que está mucho más adelantado sí pero creo que le voy a poner a todos 65% ahora me voy a fijar bien de ojo porque lo tengo
+
+Richard Quinteros:
+el 75% porque le estoy haciendo mucho énfasis porque el cliente lo quiere ver Ok, está bien, está bien, está bien, está perfecto. Estoy apurando, pero no es. Ah, mire, pero porque te llevas a 35, entonces 65. Si el cliente pregunta, me voy a perder, porque tú quieres verlo ya por el tema de los grupos de consolación.
+
+Pablo Palacios:
+Entonces por eso me estoy apurando, por eso lo tengo avanzado. Ya está bien. El que más testeado tenés. Es lógico. Exactamente.
+
+Richard Quinteros:
+Cuanto más testeado tenés, más más cositas le vas sacando. Exactamente. Ahora yo. Yo le pondría 65 a todo eso. O sea, por qué? Porque estarías llevándote la contraria. Obviamente está bien que lo hagamos nosotros y es el deber ser, pero nada más te estoy diciendo que lo más probable que veas es eso. Ahora Samir va a tener mucho más avance porque claro, se trata de procesos interiores, son procesos que no necesitan mucho testeo.
+
+ ¿Por qué? Porque son súper estándar. Más sin embargo, si lo necesita y Samir pues obviamente los ha probado, los ha probado muy estándar. No garantiza que, ojo, estas pruebas que nosotros estamos haciendo no garantiza que el escenario esté 100% ok, ok? Vale la redundancia. ¿Por qué? Porque el 100%, el ok no lo va a dar el cliente en sus pruebas, ¿vale?
+
+Jonathan Hernandez:
+Ok, no necesariamente entiendo por no buscar esa parte de no desalinearnos con respecto a lo que va el cliente, pero el 65% que se mostró es un 65% general, ¿no? Puede ir con unos estén al 70, otros al 50 y ahí se más o menos se puede compensar un porcentaje. O sea, es igual. Si el porcentaje que ustedes muestran aquí es diferente al que yo presenté el día de ayer, no pasa nada. Yo me ajusto a lo que ustedes están reportando.
+
+ La idea es tener la mejor visibilidad posible. Y hoy en la sesión de avance voy a mostrar este, pero con la nota de es un documento en proceso. La idea es que, y es la petición equipo, para el próximo jueves que la siguiente sesión ya tengamos listo este documento, pero hoy decirle que mira, así te lo vamos a manejar de ahora en adelante. Es una visibilidad que tú pediste. Así lo estamos viendo. Si tiene algún comentario ella, mejorarlo para el jueves.
+
+ Hoy lo voy a presentar como una primera versión en proceso, sin porcentajes definitivos, sin porcentajes o versiones listas del documento, pero es un avance.
+
+Richard Quinteros:
+Vale, pero lo que pidió, ¿no?
+
+Jonathan Hernandez:
+Sí, y justo. Y lo forza el equipo. Siéntanse libres del porcentaje, ajustarlo a la realidad. La idea es también no solo para ni para Diana, sino para nosotros. Esa visibilidad de, oye, si un escenario está al cero, está al cero y vemos qué tenemos que hacernos. Si alguno ya está al 90, al 100, pues bien que tenemos ese avance, ¿no? Pero la idea es tener la mejor o la mayor visibilidad posible.
+
+Richard Quinteros:
+Sí, o sea, básicamente los míos están al 65% porque están configurados, pero no los he probado, ¿ok? Déjenlos ahí, no los mueva más, hasta que yo los pruebe.
+
+Pablo Palacios:
+Y si Si acá tenemos mayor porcentaje en el interno, está buenísimo mostrarlo. O sea, si Samy ya agarró, no sé, Scrapping y ya lo testeó dos o tres veces y funcionó bien. Yo lo he hecho. Mandale 90, supone.
+
+Richard Quinteros:
+De hecho, ya yo he hecho el Scrapping inclusive personalmente, ¿ok? Ya yo lo he hecho y se contabiliza y todo se ve allá en SC, todo se ve bien. Súper estándar, ¿me entiendes lo que te digo? Sí, sí, sí. Ahora, yo no soy el que puede decirlo, pues es mi compañero Samy, que tiene que encargarse con sus pruebas, garantizar que ese porcentaje es el correcto, no el cual no es.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Richard Quinteros:
+Oye, oye, si es como en reprovisionamiento que puedo poner que hay un 70 por ciento porque pues ya las colas están, también las las órdenes de almacén, pero tampoco ponerle un porcentaje muy alto porque no son las pruebas suficientes. Claro, exactamente. Estoy de acuerdo contigo. Está de acuerdo. Nada más chequen por favor este documento momento y actualizar en su porcentaje, ¿va?
+
+Jonathan Hernandez:
+Sí, creo que eso va a ayudar a visibilidad tanto interna como a visibilidad del lado de Diana y va a ayudar a lo que platicábamos ayer. Si vemos que se empiezan a complicar las fechas, bueno, por ahí lo vamos levantando, pero si hay el apoyo de ese equipo de aquí al jueves, sí les encargaría que ya quede completamente actualizado y lo más transparente posible.
+
+Richard Quinteros:
+Ahí John te Bueno, si gusta, te busco a linterna y yo y pues ya. Este platicamos algo y de cara a que pues bueno, nada, ya mañana vemos si damos la noticia o no damos la noticia, vale? No es nada malo, chico, tranquilo.
+
+Jonathan Hernandez:
+Yo tengo disponibilidad ahorita de 12 a 1 y ya tengo el rápido y si quieres, si no hay más Pablo Samir para los liberamos y nos quedamos aquí si quieres Richard.
+
+Richard Quinteros:
+No se vayan tranquilos chicos que son cosas buenas.
+
+Pablo Palacios:
+Gracias Pablo Samir.
+
+Jonathan Hernandez:
+Igualmente Richard me avisa para ver si nos juntamos.
+
+Samir Milan:
+Dale ya te busco ahorita Samir. Claro.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Richard Quinteros:
+Cuéntame amigo. Men, por ahí he estado platicando con esto, de repente esto ya te he estado platicando, ¿no? Porque tú eres el que está pendiente del tema de la logística y demás. Posiblemente, yo me imagino que ya te comentó, pero posiblemente pues entre, entre, o sea, se está cerrando, ¿ok? Se está trabajando, pero posiblemente entre alguien más apoyar, ¿va? En lo que es posible.
+
+Jonathan Hernandez:
+Sí, de hecho ya, incluso le pedí, o le di un nombre, yo le había pedido No sé si conoces a Federico Prieto.
+
+Richard Quinteros:
+Sí, sí lo conozco, claro que lo conozco. De hecho, Héctor también me dijo lo mismo, Federico.
+
+Jonathan Hernandez:
+Ahorita está libre, está sin asignación. No tenemos algún lugar donde lo podamos asignar. Entonces le dije a Héctor, es el momento de empujar por él. Pasa que es un poquito solicitado Fede, entonces andan viendo si sí o no, pero yo le pedí empujemos. Fede es una persona muy aplicada. Obviamente no es un señor, eso sí, yo lo sé. Yo sé que eres un consultor, pero es un consultor que se aplica mucho, igual que tú has venido estudiando para certificación, entonces tiene fresco toda la parte del GWM, entonces conoce los procesos, ¿no?
+
+ Entonces es un consultor que aportaría muchísimo valor. Entonces es al que yo vengo empujando a reserva de que se confirmen.
+
+Richard Quinteros:
+Ya, pero tú ves que, o sea, tú ves como buena idea integrar a alguien más al equipo, ¿no?
+
+Jonathan Hernandez:
+Sí, sí, no, totalmente. O sea, yo se lo pido, se lo vengo pidiendo a Héctor, ese conocimiento original. O sea, yo sé que tenemos un Inker, que tú le escribes, te contesta, un Charly, o sea, muchos, o todos en el equipo, tú les buscas, te contestan, pero no lo mismo que estén fijos en el proyecto y sean
+
+Richard Quinteros:
+involucrados. Sí, es lo mismo que me planteó, no, que me dice Héctor en la reunión que tuvimos. Él me dice, oye, pero pues supongamos que te lo pongo el 20%, pues de una vez le he hecho un par y le dije, no, es lo que buscamos. ¿Por qué? Porque no buscamos un 20%, buscamos un consultor fijo y está bien, él también me apoyó, lo checó, me parece que fue con Seba y está muy bien que busque a uno full time desde un principio, desde diciembre, no sé cuándo lo venimos diciendo, en diciembre, en noviembre, no sé ya, que necesitamos a alguien senior o con conocimientos más presentados pues de WM para que nos apoye aquí.
+
+ Y pues bueno, se armó lo que se armó y somos lo que somos y estamos lo que estamos. Ahora, ¿que hoy en día lo sigamos necesitando? Sí, claro que sí, lo seguimos necesitando. Me platicaba Héctor de tratar de, por ejemplo, quitar actividades, ya ves que los procesos más amplios son los de salida, entonces él me decía de quitarme, quitarme peso a mí, para que yo pueda seguir abocándome, por ejemplo, si me necesito un palo, necesito un apoyo, pues está bien, si se necesito un apoyo está bien, poder consumir tiempo en esas cosas o cosas en específicas como esta que son de carácter general para el proyecto, como el tema de envío de lotes, todas esas cosas, armar plan de cutover, ¿no?
+
+ De cara a lo que sigue. Obviamente ahorita me quedo corto con hacer el tema de la especificación funcional también del desarrollo. Me quedo corto de tiempo, me quedo corto en muchas cosas porque obviamente me estoy abocando a tratar de terminar los los flujos de proceso o las pruebas, entonces se me hace difícil, se me hace difícil estar en todos lados al mismo tiempo.
+
+Jonathan Hernandez:
+La idea que tú ves Richard de este consultor extra es tomar los puntos que se nos están o nos están faltando manos, apoyar en algunos que traemos.
+
+Richard Quinteros:
+Dividir, dividir los procesos de salida, mira si te fijas de los procesos de salida son buen, son buen, entonces partirlo a la mitad, Vale. Eso me quita peso a mí para poder abocarme no solamente a mis procesos de salida, a los que me queden, sino a terminar lo que está abierto. Especificación funcional. Este terminar el tema de temas no cerrados como temas de de de. Pues básicamente estos temas que están saltando definición, temas de definición, como por ejemplo hablar con el cliente.
+
+ Oye, mira, ven acá. Dime, dime realmente cuántos son los especificaciones de empaque que te faltan. O sea, cómo son tus embalajes realmente físicamente que veo que eso es una brecha que se está abriendo por ahí más sin embargo el cliente no responde a esas cosas porque de repente no es Melvin o no lo hemos sentado vale en una mesa y el tema de lotes vale armar un plan de cutover eso no lo hemos construido vale y siento que pues también es importante el tema de las especificaciones funcionales que siento va a estar el primero en la lista, el de la etiqueta y el de el de la de cross.
+
+
+
+Jonathan Hernandez:
+Y ahora.
+
+Richard Quinteros:
+Ah, y ahora ahí sería bueno también yo ya ir empujando a que la VAP tome el tema del desarrollo de las clases de procesos de para pique en dos pasos. Sí, sí, sí, sí. Pues ya lo vaya tomando, ya lo vaya montando. O sea, algo que nada más quede a transportar, pues, sabes, que ya esté hecho.
+
+Jonathan Hernandez:
+Y creo que yo podría a partir de tener la conversación con Héctor porque sería bueno que ese recurso, por ejemplo, podría llevar con el ABAP ese desarrollo, ¿no? O sea, lo que vaya a pedir el ABAP de dudas, escenarios, el funcional que el consultor cliente lo pueda apoyar. Yo lo apoyo, yo lo apoyo, yo lo apoyo. No, pero buscando esa partición de tareas, O sea, para que no desviarte de lo que estás haciendo, que entre a tomar esa parte.
+
+ O sea, puede tomar el que entre, que tome toda la parte de los desarrollos. Que se encargue y se asegure con el ABAP que los desarrollos queden bien y queden probados. Eso es un punto. Y aparte, dividir los puntos de salida. O sea, yo te preguntaba de cómo veías ese apoyo para ver si, en este caso, Fede, que es el que yo estoy empujando, puede apoyarnos con esos puntos o necesitamos un poquito más de experiencia.
+
+ Por lo que platicas y por lo que veo, sin problema, yo veo a Fede tomando eso. Y sacándolo sin problema y apoyando en otros temas que se pueda hacer.
+
+Richard Quinteros:
+Si pienso en Fede, si pienso en Fede, no estaría mal, no sería ni mala idea, ¿por qué? Porque Fede trae mucha experiencia en temas de especificaciones funcionales, lo sé, la trae, entonces nos sirve. No podemos poner, claramente no podríamos poner a Pablo, no podríamos poner a Samir, porque obviamente no sé cuál sea su base, o especificaciones funcionales con respecto a WM, pero sé que Fede la trae.
+
+ Entonces, sí, tienes razón.
+
+Jonathan Hernandez:
+100%, si tú me dices, oye, Fede, tenlo de la etiqueta, tenlo del cross-doctrine, estos desarrollos, tú encárgate de sacarlos adelante, Fede lo va a hacer sin problema. Van a estar, obviamente, al principio del que le demos el contexto y, a partir de ahí, él lo va a tomar y lo va a sacar. Eso no me preocuparía en lo absoluto. Entonces, creo que, a partir de ahí, puedo empujar con Nectar y, oye, ya platicamos de Fede, necesitamos a Fede y necesitamos ya a Lab.
+
+
+
+Richard Quinteros:
+Sí, me sirve, está bien. O sea, no solamente abocarlo a esos procesos de salida, sino pues echarle también un poquitico más de repente cuando tenemos la especificación funcionando. Está bien, me suena. Ahora, hablamos de darle continuidad con el ABAP, ¿no? O sea, no hablamos de que ella no tenga que hacerla, ¿no? Obviamente déjame, permíteme a mí hacerlas, ¿ok? Porque yo conozco el contexto tal vez yo soy el que tiene que hacerla ¿vale?
+
+ Ya tenemos una hecha ¿ok? Faltarían dos ¿no? Que sería el de la etiqueta y el de el cross ¿ok? Faltarían esos dos puntos que son los que faltan ¿no? Porque el de clase de proceso ya está hecho, son tres especificaciones ¿no? Estamos pensando a ver tal vez dos, tal vez 3 no, tal vez 4 eh, ahora que lo pienso. Porque sería una especificación funcional para el tema del cross. ¿Está hecha o no está hecha?
+
+ No está hecha. ¿Vale? Otra especificación funcional para el tema de este... A ver.
+
+Jonathan Hernandez:
+¿Es la etiqueta del cross?
+
+Richard Quinteros:
+Pero la etiqueta no, vamos a hacer una especificación para ambas etiquetas. ¿Sale y entra? No.
+
+Jonathan Hernandez:
+No, son dos. Exactamente.
+
+Richard Quinteros:
+Serían dos de esa y una de cross. Más una que ya tenemos hecha, que es la de la clase de proceso, que ya está lista. Serían tres faltantes. Entonces sería ponerse a hacer eso desde ya, me entiendes? Pero garantizando, pues todavía no tenemos el recurso. Vamos a esperar que a ver qué pasa. Mientras tanto seguimos trabajando como vamos, desplazando un segundo plano esas cosas que realmente no son stoppers justo ahora, ¿vale?
+
+
+
+Jonathan Hernandez:
+Pero que se necesite, ¿no? Pero que se necesite. La nota, ahorita no se necesita, pero es mejor levantarla más de una vez y que se vaya platicando.
+
+Richard Quinteros:
+Sí, de hecho, ya tomé nota aquí, ya tenía yo la nota, pero la perdí de la vista, lo apunté con para tema de lotes, de lotes, y inicial, ¿no? Carga inicial. O sea, yo no estoy muy de acuerdo con el tema del SMWV. Ahora, porque no es buena práctica, ¿no? Sigue siendo, sigue estando como opción, sí. Pero no es la buena práctica o la recomendación de SAP, ¿no? La recomendación de SAP es... BD90. Y para la BD90 se necesitan aplicar estas modificaciones y demás al ECC.
+
+ ¿Qué le corresponde a Diana? Por supuesto. Va. Alineado con eso, yo ahorita me llevo...
+
+Jonathan Hernandez:
+Pregunta nada más rápida, Richard. Todos los lunes te llega un correo por parte de Natalia Dirobet.
+
+Pablo Palacios:
+¿Lo ves?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Jonathan Hernandez:
+a la asignación, ¿te está llegando bien?
+
+Richard Quinteros:
+O sea, a mí me llegó hoy, me acaba de llegar hoy, creo, me parece.
+
+Jonathan Hernandez:
+Llega los lunes, luego se le pasa y lo manda a los fuertes, pero generalmente llega los lunes.
+
+Richard Quinteros:
+Exactamente, hoy sí llegó raro, ¿eh? Llegó raro. Llegó raro, pero Natale Dirube dice, buenas días Richard, a continuación se muestra el detalle de las asignaciones, Quintero Richard Llanado lo vuelve. Pues sí. ¿Se aparece al 100%?
+
+Jonathan Hernandez:
+Sí, 100%. Ok, entonces creo que el problema nada más es conmigo, porque yo no salgo así.
+
+Richard Quinteros:
+No, o sea que tú tienes así una escena de todos lados, mi compa, así que, pues, hay matemática pura.
+
+Jonathan Hernandez:
+Es un gusto que se debe reflejar, ¿verdad? No, nada, es que era para decirle que es el mío y me llevo lo del funcional y lo de la va vale vale yo quería platicar eso contigo pues para que te hemos alineado todos nosotros tres no sea hector tuyo que nos ha contado muchas gracias por levantar la mano y qué bueno que si lo estamos está empujando vale qué bueno me alegra bueno men eso muchas gracias no pero es de tiros ya porque ahí estamos dale pechadito
+
