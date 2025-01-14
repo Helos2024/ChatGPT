@@ -1,0 +1,928 @@
+Saul Portillo:
+Hola Pablo, Pelayo, ¿cómo están?
+
+UNKNOWN_SPEAKER:
+Hola, bien.
+
+Pablo Lopez:
+¿Tú qué tal? Bien, bien.
+
+Saul Portillo:
+Chicos, antes que se sumen aquí Baskin y Héctor, le pusimos una lección saliendo de esta para pedirles que nos apoyen cada uno con unos temitas que estamos ejecutando. Y ahí también, Pelayo, nos alineamos con un tema de tu a ver si también yo con Pablo después me alineé también, que no he terminado de revisar esas actividades que faltan. Noté descrito en la mañana, Pelayo, como usted ha dicho ayer, porque realmente estuvimos ahí primero avaliando las integraciones de SAGAR, después estuvimos probando las configuraciones y en reuniones también, entonces por eso no te avisé.
+
+ No, ningún problema, ningún problema, Entonces, ahí pusimos, chicos, una sesión de una horita, para que no sea hasta tan tarde para ustedes ahí pegado a esta sesión. Y les mostramos unas cosas que queremos mostrarles y que nos puedan apoyar de cara al proceso.
+
+Pelayo Fernandez:
+Ok. Vale. Genial. ¿En qué va a consistir?
+
+Saul Portillo:
+¿La sesión en este momento?
+
+Pelayo Fernandez:
+No, no. La tarea que tenemos cada uno así para ayudaros.
+
+Saul Portillo:
+Son dos cosas. Uno es un tema, para que lo tengan notado. Uno es un tema de revisar el tema del BRD de Chemicals, el documento, y poderlo anexar en el MVP de demanda. En cada punto y le vamos a explicar cómo hacerlo. Y lo otro tiene que ver con el tema de hacer unos ajustes en la data de la versión backup. Queremos ajustar en base a los datos que nos compartieron manualmente el equipo de APNIC.
+
+Saul Portillo:
+Sí, por cierto, funcionaría el alerta. ¿Qué era?
+
+UNKNOWN_SPEAKER:
+Tienes que guardar lo primero como favorito, que era lo que yo había leído.
+
+Saul Portillo:
+Después que lo guardas como favorito, ya se te guarda en el dashboard de alertas. Y después puedes ejecutarlo. Mira, lo voy mostrando. Mientras se suma aquí el chico, vamos aprovechando el espacio de tiempo para irle mostrando también a los chicos lo que vamos mostrando. A ver. Avísame cuando se haga mi pantalla. Y ahí por favor avisan si se suman los chicos para ordenar. Esto que está aquí, Pablo y Pelayo, estamos trabajando en el tema de la aprobación.
+
+ En este caso es el forecast. Esta es la venta histórica de Corrective Maintenance, los consumos, perdón. Este es el forecast. Esta línea que está aquí es el input que carga el planner, el ajuste que puede hacer. Si no hace ningún ajuste, tienes digamos el forecast final, que es esta línea. Y luego hay un tema de aprobaciones y un keyfigure de alertas. Las aprobaciones es, aquí el usuario, el cliente puede colocar cualquier valor por encima de 0, 1 o 2, a colocar, lo hicimos de esa manera por si se equivoca, pero es que la idea de esto es que esto fuera como un binario, pero lo dejamos así de que si colocan cualquier valor, ellos pueden, digamos, rechazar este valor de FORGE que está dando la herramienta, ¿no?
+
+ Rechazar y en la línea siguiente el tener el rechazo con esta X, fíjense esto es un 1, lo que hicimos fue a nivel de, digamos, de visualización y de formato, que se viera como una x una x en el caso donde haya rechazos para más fácil visualización y luego este equifígio lo que te muestra es bueno si fue rechazado no el forca final no lo copia sino que no tiene ningún valor y te genera una alerta con este valor de 1 en los casos donde fue rechazado.
+
+ ¿Cuál es la idea con esta alerta? Si yo le doy aquí, por ejemplo, vamos a suponer que yo no tenga la alerta cargada. Ni tenga tampoco este filtro. Esta alerta significa en que el sistema me filtre las combinaciones únicamente que tuvieron rechazo, para que puedan validar solamente lo que haya rechazado el sistema. Porque puede haber millones de combinaciones. Y la idea es que ellos vayan y validen específicamente la combinación que alguien vino, el usuario o quien sea quien apruebe o rechaza, rechaza la combinación.
+
+ Entonces se fija aquí, ahí tengo un dashboard de alertas, porque esto se guarda como una vista en favorito y simplemente le doy acá y el sistema...
+
+Fiamma Giorgi:
+Ya lo tenés abierto.
+
+Saul Portillo:
+Te dice que lo tenés abierto en otra...
+
+Saul Portillo:
+es que dice que it's already open las alertas de donde se programan?
+
+Pablo Lopez:
+desde el Fiori?
+
+Saul Portillo:
+las alertas se programan desde el Fiori, es el keyfigure de alertas y luego aquí se guarda la vista como un favorito para que justamente los Por ejemplo, la X esa como de alerta Es un keyfigure, si quieren después de la sesión cuando estemos ahí reunidos les mostramos ¿Para qué lo ven? Raro. Ah ya entras aquí y el te abre claro el templo ya estaba abierto Y te abre el template correspondiente a las alertas.
+
+ Y te muestra las alertas.
+
+Fiamma Giorgi:
+Claro, porque vos capaz estás en otro template, te sale esa alerta, entonces vas, apretás ahí y te abre el template directamente. Esa es la idea. Esa es la idea.
+
+Saul Portillo:
+Simplemente vas ahí al dashboard, pum, le das y te muestra el template. Ya tienes listo y armado con las alertas. Esa es la idea.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Saul Portillo:
+Ahí los chicos como que se retrasaron. Mientras los chicos ahí... Ahí se sumó Héctor.
+
+UNKNOWN_SPEAKER:
+Ahí se sumó Héctor, ok. Buenas. ¿Cómo va?
+
+Hector Palacios:
+Hola Héctor, ¿cómo estás?
+
+Saul Portillo:
+Bien. ¿Pati se salió?
+
+UNKNOWN_SPEAKER:
+No se ha subido. Ah.
+
+Saul Portillo:
+¿Vas a asistar en otra sesión o…? No lo sé, no lo creen.
+
+UNKNOWN_SPEAKER:
+me voy a mover de mesa. Vale.
+
+Hector Palacios:
+Tiene algún punto importante que quieran revisar?
+
+Fiamma Giorgi:
+Tenemos ahí Héctor una lista de puntos que tenemos que revisar con ustedes, ahí Saúl lo tiene abierto y la idea es que podamos ir revisando esos puntos.
+
+Hector Palacios:
+Tenemos que mantener la lista para que estemos alineados.
+
+UNKNOWN_SPEAKER:
+Ya, ya estoy. No, lo que pasa es que Héctor lo ordenamos de cara a esta sesión.
+
+Saul Portillo:
+Estábamos en la mañana trabajando con FI y lo ordenamos un poco para mostrarles esta sesión. Más que el listado de open points o cosas que teníamos. Están distintos. El listado interno para poder justamente avanzar con la sesión de hoy. Estamos haciendo varias actividades y también dividirnos con el equipo para ir avanzando en cuanto a la configuración.
+
+Hector Palacios:
+Es lo mismo, Saúl, igual prefiero que centralicemos porque quiero que tengamos un solo lugar donde tengamos la mayoría de los puntos, para no estar en distintos archivos porque si no igual perdemos visibilidad de las cosas que tiene, de las cosas que no, etcétera. Quizá, a ver, déjame ver. Porque al final lo que me gustaría que pasara es que, por ejemplo, se conectara Pablo y que él sea asalarioso.
+
+ O sea, ¿cuáles son las actividades que tengo asignadas? No, un archivo. Pero si vamos con esto, con el que tengo yo, con el que tienen de integración, etcétera, nunca vamos a consolidar eso. ¿Qué cosas tengo? ¿Por qué cosas me están asignando? ¿Por qué me están asignando de todos lados? Lo primero que...
+
+Saul Portillo:
+bueno, dos cosas que estuvimos trabajando Héctor, fue el tema de la approval, que nos pidió en las últimas lecciones Bastian que lo trabajáramos, ¿ok? Y el tema de alertas. Creamos una alerta para este tema de la approval que queremos, digamos, ahora mostrarles, ¿no? Primero, la lógica de approval y vamos a ver un tema de un keyfigure que vimos un cálculo errado, lo modificamos nosotros, lo dejamos tal cual como estaba en MRO todavía, pero queríamos validarlo con ustedes primero antes de...
+
+ Porque está así configurado en la demo y no sé si es que está por algún motivo configurada de esa manera, es como un cálculo de la agregación del reorder point. Primero este punto, vamos al tema de los approval, hicimos el keyfigure de approval tanto para el forecast como para el reorder point, la lógica simplemente que hicimos fue este keyfigure de approval donde el usuario puede poner cualquier valor, porque en principio habíamos hablaba en su momento con Bastian de que si colocan cero estaba aprobado y si colocan uno estaba rechazado, pero que hablamos en su momento, la idea, la propuesta que le dijimos fue, mira pero que pasa si no entra ningún usuario y no coloca ningún valor, necesitamos finalmente un forka final, o sea que por default ya se apruebe, pero que si quiero rechazar algo, ahí es donde yo puedo algún dato para rechazar.
+
+ Y no limitarlo a que fuese el valor de 1 porque puede venir Héctor, se equivoca y le pone un 2. Puede venir Fiamma y se equivoca y le pone un 4. Lo hicimos de una forma que si coloca cualquier número el sistema lo lleva a un 1, lo reconoce como un 1, por ejemplo, si me voy a parar en este que está acá, le coloco un 4, fíjense que está como 4, ya una vez me coloca el formato de X centrado, que es lo que quería Basti también, que nos pidió que lo apoyáramos, a dejarlo de esa manera y una vez se guarda, me rechaza, o sea, no tengo el valor del forecast aprobado y de una vez me lo transforma en un 1, para que siempre el valor independiente, coloquen 1, 10.000, 30.000, el valor que coloquen, cualquier ajuste que hay allí, me lo transforme en 1 para después utilizarlo a nivel de otra KPI o alerta que queramos hacer.
+
+ Entonces, por default me coloca eso, no le colocamos los cheques de buenos, porque si no también, si le colocamos cheques de bueno, bueno, pensamos que sería demasiado recargado el sistema con los cheques como de positivo, como que se estuviese aprobado. Sino que, no sé si te parece la idea, que justamente el usuario solamente entre a rechazar en caso de que rechaza, si no quiere rechazar simplemente no tiene que hacer ningún ajuste y ya por default está aprobado, tal cual como cuando se rechaza se ve esta X y no veo forecast, no me carga ningún forecast porque se supone que tengo que venir a balear.
+
+ ¿Qué hago después entonces? Ahí es donde viene la alerta, déjame cerrar aquí para que lo veas.
+
+Hector Palacios:
+Construimos una alerta. ¿Por qué tú estás empezando fácilmente?
+
+Saul Portillo:
+demanda continua o podemos simplemente dejar un periodo sin demanda? No, hay donde justamente entra que tú puedes venir acá al dashboard y abres esta alerta y el sistema te muestra cuáles son las combinaciones que han rechazado. Y me muestra las dos combinaciones que han rechazado. Está bueno.
+
+Hector Palacios:
+Ah, pero tiene planer input, o sea, lo puede...
+
+UNKNOWN_SPEAKER:
+ya.
+
+Hector Palacios:
+El estadístico, el planner lo corrige y después hay un manager que sería el que coloca si lo aprueba o no. Exactamente.
+
+Saul Portillo:
+Entonces, si lo rechazan, tendría que venir a revalidar, no sé quién sea la persona, y ahí habría que revisarlos con ellos si les funciona de esta manera o no, no está lógica, ¿no? De venir hasta alerta, ver qué combinaciones han sido rechazadas y hacer el ajuste correspondiente. Borro, borro o habría que ver cómo sería ese siguiente paso, porque yo vengo y digo el 1 no le sirvió, entonces voy a dejarlo en 0 o voy a ajustar aquí a 5 o el valor que corresponda o el mismo como después, como sería el proceso de reaprobar, eso es lo que tendríamos que ver, la segunda instancia, porque tendría que salir aquí y yo pongo por ejemplo, yo guarde Ok, guardé el dato.
+
+ Vengo acá, lo guardo. Entonces luego tengo que evidentemente eliminar la alerta, eliminar esto, para que ya esté como aprobado. Y luego vendría una persona.
+
+Hector Palacios:
+Estas soluciones específicamente lo que necesitamos para las PRs y para los niveles de inventario, pero no estoy seguro si acá en Demand Planning van a venir a este nivel de detalle, decirme en este material específico, para este material específico, yo no estoy de acuerdo. Eso lo encuentro improbable. Pero es exactamente lo que tenemos que hacer para la inventory policies. Y en ese caso, cada vez que coloquen un rechazo SAUR, se tiene que mantener el valor anterior que habíamos integrado.
+
+ O sea, tenemos que tener un key figure, que es lo último Y si es que está con la cruz, que mantenga ese número, es decir, no mande nada. O que coloque un vacío, de forma que cuando copiemos a Supply Planning, no sé. No, mejor colocar el número para que tengan visibilidad de cuál era el número anterior. De forma que cuando copiemos a Supply Planning o integremos hacia S4HANA, que se integre el último número válido, no el que propone el sistema ahora.
+
+ Por si no les gusta.
+
+Saul Portillo:
+Pero cuando hablas del último número, Valio, ¿a qué te refieres? Porque imagínate que en este caso.
+
+Hector Palacios:
+El actual. O sea, tú cuando estás haciendo Inventory Policy estás proponiendo cosas nuevas, ¿no? O sea, imagínate, estamos en una revisión dos veces al año y en la revisión ahora estoy proponiendo un nuevo nivel. Va a venir el manager o quien sea a decir, no, este no me gusta. ¿Y qué se mantiene? Lo que había. Y si acepta, para lo nuevo.
+
+Saul Portillo:
+Entonces ahí entraría lo siguiente que les queríamos mostrar, el snapshot, porque el snapshot es el valor anterior. ¿Por qué tenemos el snapshot de esto? Es que lo tenemos, lo tenemos que justamente que fue el otro que conversamos con Master Cedia, la lógica de hacer los snapshots, yo creo que también tú estabas Héctor, de hacerlos con los keyfigures calculados y un operador de copia y de hecho no demora nada.
+
+
+
+Hector Palacios:
+¿Y no se puede usar la funcionalidad estándar? ¿Cuál es la desventaja?
+
+Saul Portillo:
+La desventaja de la funcionalidad estándar es la primero, que si me voy aquí a los snapshots, la estándar que es el original snapshot, se lo hace de esta forma, el flujo de esta manera, y que aparte tienes un tema de... No, el LackBase es este. El LackBase lo hace de esta forma y el original Snapshot lo hace de esta manera. El problema del LackBase es que te agrega la tribu. Esos colores los conozco, Saul.
+
+
+
+Hector Palacios:
+Fue casualidad nada más. Fue casualidad. Pero cuando hacemos los copios ¿Acaso no queremos simplemente hacer lo mismo que el snapshot original?
+
+Saul Portillo:
+Sí, pero tenemos la ventaja... ¿Qué sucede con esto? ¿Te equivocas con un snapshot y no puedes reversar o echar hacia atrás? O también tienes el flujo de cómo lo hace, el periodo de cómo lo hace de esta manera. ¿Para eso está el redo, no? El redo lo que te hace es que te modifica el último que hayas ejecutado. Más no te regresa esto hacia acá, por ejemplo, si quieres reversarlo y traerte este al Snapshot 1, no lo puedes hacer.
+
+ También tienes un tema, lo que te digo, cómo tienes los datos, ¿no? Lo tienes, digamos, de esta manera, teniendo, ¿cómo te digo? Y el otro tema que te, o sea, Lo veíamos por eso y lo veíamos porque fue la otra solución, creo que era por el tema de los KPIs.
+
+Hector Palacios:
+En todos los casos se pueden equivocar, en el medio actual. Yo creo que al final vamos más que por construir una solución a prueba de damis, es más que nada como una solución en que ellos tienen que tomar conciencia de que una corrida importante, una ejecución que la ejecutan una vez al mes y que tiene que salir bien, y que pueden corregir el mes actual nomás, pero no los anteriores, o sea, si ejecutan el Snapchat dos veces igual es problemazo.
+
+ Porque después tenemos que crear la quitar la ingresa, y es una paja, porque imagínate, si hacemos esta lógica y nos comprometemos para ello, entonces imagínate cuántos que pierde Snapchat vamos tenemos que crear para todo lo que tengamos que mantener
+
+Saul Portillo:
+es que de hecho lo hicimos acá mira lo hicimos ya los creamos creamos esa lógica de esta forma vez este por ejemplo y lo que hacemos nosotros operar de copia que copia de éste a éste luego va de lo
+
+Hector Palacios:
+que dicen jeffords pero porque antes los snaps que habían eran bastante malo ahora creo que están mejores ahora parecen no hay temas de horizonte ni nada de eso.
+
+UNKNOWN_SPEAKER:
+No estoy seguro.
+
+Hector Palacios:
+¿Cómo temas de horizonte? Los originarios de Snapchat, sí. Que copía, de hecho, menos de un año. Eran como nueve meses. Entonces, era un número finito de semanas hacia el futuro y hacia el pasado.
+
+Saul Portillo:
+Entonces, cada vez que ejecutaba en Snapchat, se iban perdiendo datos hacia el pasado. Eso es lo que sucede en el hecho de que tú vas teniendo datos de aquí en adelante, como te decía ahí en forma escalera con los colores, de aquí en adelante, es sucesivamente con el original snapshot, no vas teniendo esto como lo tienes así completito, que tú puedes mantener todo el horizonte de tiempo y que se vaya digamos copiando la información que vas modificando, porque tú ejecutas tú puedes ir viendo, digamos, tú vas modificando el futuro nada más, el pasado se va quedando igual y tú sigues igual teniendo en este equifijo la diferencia de los originales snapshots que lo vas teniendo de esta manera.
+
+ Me voy a poner el rojo para que no me digas, no me digas nada, el morado ahí.
+
+Hector Palacios:
+¿Qué pasa con el original en el pasado? Esa parte no la entendí.
+
+Saul Portillo:
+O sea, los originales snapshots lo que hace es que, por ejemplo, si yo yo hago un original snapshot aquí en enero, me copia esta franja morada, luego me voy a febrero, hago otro original snapshot y ya no tengo, ya este valor lo pierdo. ¿No se puede controlar ahí con un parámetro?
+
+Hector Palacios:
+¿Cómo?
+
+Saul Portillo:
+¿No se puede controlar con un parámetro? Se puede poner un offset de menos tanto. Tú puedes venir acá.
+
+Hector Palacios:
+que estoy dando yo lo prefería lo más simple posible porque cada vez que se echa a perder esto o documentarlo etcétera es todo un tema al final añadimos capas de mantenimiento hacia el futuro porque nos van a empezar a pedir el snap de todo y cada vez que nos piden el snap, joder, tengo que hacer dos epifigmas, un copioperator, más el que revierte, más no sé cuánto más el Redux. Es una paja enorme.
+
+
+
+UNKNOWN_SPEAKER:
+Sí, eso sí.
+
+Saul Portillo:
+Pero lo que sigue ella con este tema es que si ella se llega a equivocar con este tema, no hay forma de reversarlo. No hay manera de recuperar datos, no hay manera de como echarlas atrás. Porque lo más que te hace el sistema...
+
+Hector Palacios:
+Es que ahí sí, es que tenemos que confiar en que van a bien entrenado y que si que se ejecute que se equivocan en correr el snapchat después tienen que correr el redo y eso lo tenemos que decir siempre porque incluso al final lo configuremos esto no igual tenemos que dar exactamente el mismo mensaje y ser igual de enfático en decirle no puedes correr el snapchat dos veces durante el mismo ciclo no puedes y si llegan a usar el cómo se llama el de revertir es porque estamos fallando en entrenamiento Y también, si es que hacemos el tema del ciclo, o sea, del Process Management, esto no debería pasar por el usuario y ejecutarlo dos veces.
+
+ Debería, por el mismo ciclo debería ejecutarlo. Cuando ellos digan ya, cerramos el ciclo, se ejecuta automáticamente. Entonces, creo que deberíamos buscar, o sea, te lo digo porque yo lo configuré así, pero incluso configurando los copios de proyectos en el otro proyecto, creé una opera revertida, solamente un redo, en el caso de que se equivocaran en un ciclo, pero ya se equivocan, o sea, si se equivocan es que tengan este de aquí con tal de actualizar el ciclo actual, pero...
+
+
+
+Saul Portillo:
+Si, que haga la copia de este, suponete que esto cambió a 14, y cuando se haga la copia aquí se ponga el 14.
+
+Hector Palacios:
+Exacto, eso es solamente eso. Pero que si no nos estamos metiendo ahí en la pata de los caballos, como decimos en Chile. Porque esto al final nos va a generar un extremo adelante. Yo prefiero que mejor vamos con los snapshots originales. Y si que hay un requerimiento muy fuerte, como diga, no, no, es que nos vamos a equivocar. Siempre creen esto. Ahí lo pensamos, pero ahora la solución Está perfecto, el tema es que más adelante nos va a joder tener que estar configurando todo esto cada vez.
+
+
+
+UNKNOWN_SPEAKER:
+¿Tú ya se lo mostraste a Bastián?
+
+Saul Portillo:
+Era lo que habíamos conversado, le mostramos la propuesta para hacerlo y nada, hoy le voy a dar a mostrarle ya como ejecutar.
+
+Hector Palacios:
+Que lo otro es mucho más fácil, es cosa de como el keyfigure, el offset y lo lanzo y ya están hasta los operadores deberían estar listos de una, no tengo que ni preocuparme de hacer el operador, no tengo que
+
+Saul Portillo:
+preocuparme de hacer los keyfigures, no tengo que preocuparme de hacer como tres copy operators distintos. Ya. Y al final es más o menos lo mismo.
+
+Hector Palacios:
+Solamente te diría, vamos con el no estándar, con el COVID-19, si es que tenemos alguna limitación de horizonte, si me dicen así como no podemos tener más de nueve periodos en el pasado o algo así, o nueve periodos en el futuro, ahí lo pensaría, pero la verdad es que...
+
+Saul Portillo:
+O sea, porque en cuanto a limitaciones, la realidad es que tú pones de qué periodo, qué periodo puedes tenerlo, por ejemplo al menos 5, periodo 100 por decirte algo, tu le pones el sufijo, la eliminación que tienes es más cantidad de snapshots que lo máximo que puedes hacer son 12.
+
+Hector Palacios:
+12 está más que bien.
+
+Saul Portillo:
+Y listo.
+
+Hector Palacios:
+Yo lo colocaría al menos 12 en el pasado y hacia el futuro, no sé, los 5 años son cuanto Ah, pero esto está pensando en el periodo, está pensando en semana, ¿no?
+
+Saul Portillo:
+Es que el keyfigure está a nivel semana técnica.
+
+Hector Palacios:
+Se lo va a hacer en semana técnica. Entonces tenemos que multiplicar los años por 65, por 62, no sé, era uno sonoro.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Hector Palacios:
+Pruébelo, pruébelo, pero no configuraría todo eso, Saúl, solamente porque se me creo que aquí tenemos que ser conectados, al menos con esta solución con ellos, son tantas cosas las que tenemos que ver, que si no empezamos a nosotros a añadir más trabajo en cosas que son más nice to have, que más to have, no estamos entrampando nosotros mismos.
+
+Saul Portillo:
+Ya, ya se entiende.
+
+Hector Palacios:
+En ese caso, No lo ha aburrido todavía, déjala, revisa si es que funciona la otra, una vez que digamos, ah, ya mira, sí, funciona, ya es lo mismo, excepto que no tiene esto, ya lo demás lo podemos...
+
+Saul Portillo:
+Sí, sería bueno alinearlo Héctor, porque yo veo que también así lo está trabajando Arun, me parece. Por esto que...
+
+Hector Palacios:
+Sí, no sé quién lo creó eso, no sé si Arun, pero creo que lo hicieron a la para mostrar algo. Claro, Vincent, entonces imagínate estar alineando un montón de copia operator, es que ya te lo digo porque yo ya pasé por esto, ya lo hice en Gif, justo donde tenía como ocho versiones de los snapshots, una por país, para distintos XFigures, era un infierno esa cantidad de XFigures, y cada vez que fallaba, y más encima son tan importantes que si se ejecutaba mal y generalmente era por el copio del predictor, era mucho trabajo.
+
+
+
+Saul Portillo:
+Entonces voy a colocarme aquí y vamos a probar cómo viene la snapshot. Ok. El tema de los approval, Héctor, ¿lo ves bien entonces? Como está quedando con esa alerta. O lo que harías es, me decías era, ¿cómo dejar de alguna manera que el dato lo mantenga? El dato en el approve, independientemente sea aprobado o no. ¿O cómo lo trabajarías? En ese momento, lo que hablamos en la última sesión es que Nos pedían que lo hiciéramos para el forecast y reorder point y lo hicimos para los dos.
+
+ Lo tenemos para los dos igual. Pero el tema de que si deja el valor o algo, es simplemente modificar algo en la configuración. Es sencillo. Es sencillo. Pero ya queda a criterio cómo queremos tenerlo.
+
+Hector Palacios:
+Sí. Primero tenemos que entender cómo se van a batillar. Porque no es que el demand manager va a llegar aquí y sabe ir punto por punto a revisar Esto no, ellos no van a ese nivel. Tenemos que decidir las reglas claras de qué va a ser un trigger de la alerta para que le aparezca en una vista planificación. Entonces, la vista, él va a decir, no sé, cuando se desvía malla esto o cuando se cambia un slow mover que no se cambia nunca.
+
+ Cosas así, no sé. Pero sí tenemos que tener claro de cómo, qué condiciones van a hacer que se llegue a la alerta. Alerta es lo que va a hacer que este tipo apruebe o no. Porque en muchos casos, nada va a cambiar. Entonces, ellos no quieren revisar las cosas que ya saben que están así y que no cambiaron. Solamente quiero cambiar lo nuevo, ¿no? Entonces, esas reglas de alerta las tenemos que tener claras.
+
+ Y lo que me preocupa es que ellos contrataron la, ¿cómo se llama?
+
+UNKNOWN_SPEAKER:
+Control Tower para eso.
+
+Saul Portillo:
+No sé si Basti quería mostrar esto como un primer acercamiento para estas primeras pruebas y que a partir de ahí pudieran consultarse estas definiciones.
+
+Hector Palacios:
+No está bueno. Así es lo que tenemos que tener. No sé si lo vamos a traer una vista planificación o lo vamos a tener un planner workspace. Tenemos que ver. Pero el tema es que sí tenemos que hacer uso de Control Tower, porque si empezamos a configurar esta alerta aquí para trabajar en la vista planificación, significa que ellos compraron un módulo de IDP para nada. Y no es el caso. Ellos nos van a estar pidiendo, oye, compramos Control Tower, ¿dónde lo estamos usando?
+
+ Tenemos que usar la alerta de Control Tower y ver cómo esas alertas de Control Tower las podemos conectar en un Planner Workspace a una vista en donde ellos pueden modificar. No sé si les llegue a mostrar a ustedes el tema. Estoy pensando. Al menos el Process Management sí se puede conectar con Planner Workspace. Y las tareas que se asignan dentro de la herramienta es como revisar esto, etcétera. Sí se pueden asignar a una vista de planificación del Planner workspace.
+
+ Tendríamos que revisar si la alerta también, si podemos revisar la alerta y tener una vista en donde revisar esta alerta y tener esta misma lógica, pero en el plan en workspace para ese tipo de gente.
+
+Saul Portillo:
+Tendríamos que buscar la forma de hacerlo desde el FIORI, pocas palabras, y desde que sean actividades que simplemente no tienen que estar ejecutando nada, sino que ya deben ir a la alerta y vayan y lo hagan de la más expedito, más sencilla.
+
+Hector Palacios:
+¿Has trabajado en esa aplicación de alerta?
+
+UNKNOWN_SPEAKER:
+Realmente no.
+
+Saul Portillo:
+De hecho, esta alerta la logramos viendo manuales y viendo el... No, está re buena, está re buena. Pero es la standard.
+
+Hector Palacios:
+Tenemos una aplicación del Fiori para el tema de la alerta, entonces... A mí lo único que me preocupa es que estos son como los casos de los usos que deberíamos tener para eso, y si no lo usamos, y si no usamos Control Tower, Entonces no estamos usando la funcionalidad, no nos van a cobrar. Yo con este he trabajado, la verdad, pero hace tiempo que no lo Déjame editar rápido esa obra, a ver si quiere sacamos algo en un minuto.
+
+ Esta se llama Define and Subscribe Custom Alerts. Veamos si esta es. Es alert. La verdad es que esta, incluso la pueden generar ellos si se les ocurre algo.
+
+Saul Portillo:
+Ahí sería utilizar la Z01, si vas a usar la que tenemos nosotras.
+
+Saul Portillo:
+y backup version.
+
+UNKNOWN_SPEAKER:
+Alert definition template.
+
+Hector Palacios:
+Parece que hay un template para que se puedan crear. Igual como la pista tendrá un template, es todo lo mismo. Mira, Excelite template. Ahí está. Y ya sabemos que se puede asociar a un Excelite template. Entonces, imagínate, le llega la alerta por Control Tower. No la revisan en el favorito, pero sí lo lleva al favorito de la misma forma. Estos son los templates? Sí, son los templates, pero no los que estábamos mostrando porque los tenemos guardados en favoritos.
+
+
+
+Saul Portillo:
+Estos son los templates que están guardados para todos. ¿Cuál es el más parecido?
+
+UNKNOWN_SPEAKER:
+Ninguno tiene alerta.
+
+Hector Palacios:
+Remove obsoletes. No usa alerta. Es que esto es lo que no tiene una planning view. Porque imagínate que se crea una alerta y cómo la pago. Yo antes en GFoods, como no teníamos control tab, lo que hacía es colocar un número. Entonces, yo manualmente, como tú estás colocando el tema del símbolo de cruz o el ticket, hacía que pusieran el 1 para que se apagara. Pero esto es más user friendly. Porque es una aplicación aquí mismo.
+
+ Entonces, llegan todas las pueden decir mira esta siesta no? Esa alerta la pusiste para el forecast o no? Si, para la aprobación del forecast lo que pasa es que el template que estás agarrando creo que no tiene eso probablemente es para navegar, no es para definir nada dejemos estos Cuatro meses, rolling... Llevalo hasta abril 25, que en abril 25 hay una alerta, si se te la filtra. Quiere decir que si en el horizonte de los cuatro meses tengo cuatro alertas, en vez de crearme cuatro alertas separadas, me las consolida en una.
+
+ Usual. Me imagino que depende caso a caso, pero en demanda al menos quiero ver todo el forecast, no como un pedacito del forecast. ¿Tú tienes algún snapshot configurado ahí? O sea, ya me lo mostraste, ¿no? Usemos Equifier.
+
+Saul Portillo:
+Dame un Equifier, el estadístico, ¿cuál quieres realizar?
+
+UNKNOWN_SPEAKER:
+Final Lag 1. Ahí está, lo tienes.
+
+Hector Palacios:
+Entonces voy a comparar este que sea porcentaje.
+
+Saul Portillo:
+Select value te pone equal to y el select value te lo da.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Y acá. A ver, que sea sobre el 120%, o que sea por debajo del 80%. Entonces, estamos diciendo que tiene un threshold de menos 20%, básicamente. Less than 80%. Entonces, ahí decimos, cualquiera que se devíe 20% de este y muéstramelo este lo quiero revisar mira machine learning cruce es lo que quieren saber yo no tengo puta idea que esto pero suena fácil a ver Choose where you want
+
+UNKNOWN_SPEAKER:
+to use sensitive base. Luis, ¿qué está haciendo?
+
+Hector Palacios:
+Create more information, machine learning rules. Ahí tenemos que investigar. Que hace esto, si es que me está filtrando la alerta o qué está haciendo. Si me la está agrupando, filtrando, eso es lo que tengo que entender. Estaría bueno que estos métodos, porque estos métodos de clustering lo que hacen es similar a lo que hace la AC. En la segmentación AC, generalmente nosotros definimos el 80-20, el 80-15 o 5 o el 70-20-10, ¿verdad?
+
+ Nosotros definimos los thresholds. Lo que hacen estos métodos es que los definen automáticamente viendo los valores similares. Entonces dicen, todo esto se parece un montón, Estos son los A Y después dice, estos son los B y estos son los C, automáticamente. Machine learning, super fácil. Me pregunto si esto hace lo mismo. Cómo definir automáticamente, estas son las alertas importantes y estas no. Eso lo tenemos que investigar, pero definitivamente tenemos que intentar.
+
+ Ah. Soft clustering, hard clustering, automática.
+
+Hector Palacios:
+No tengo idea de qué hace esto. Voy a dejar este GIF y el porcentaje. Y aquí te crea uno gráfico simple. Para mostrarte la alerta. Y ya.
+
+Saul Portillo:
+RiotWomp. ¿Cuál están usando?
+
+Hector Palacios:
+UMB estamos usando nosotros. Bonito. Esa es. Y hay bastantes cosas, ¿no? Sí. Incluso el Procedure Playbook es como un manual que nosotros podemos juntar, que se crean directamente niveles. Entonces, le pueden decir, mira, cada vez que recibe este tipo de alerta, acá tiene que ser esto, esto y esto. Entonces, como meter un poco el Change Management dentro de la misma herramienta. Sharing. Exacto, compartir con los usuarios.
+
+ Sí, tenemos un grupo de dar un email. Que crean. En Automatica, the Universe.
+
+Hector Palacios:
+A ver, entonces esto genera una suscripción también, ¿no? Como que creamos el template y ahora se pueden crear suscripciones a esta letra. Y ahí se puede incluso hacer una segunda capa de parametrización para que le llegue a esta persona o a esto sí, a esto no.
+
+Saul Portillo:
+¿En cuanto a referencia de suscripción es como que le llegue un correo o algo así?
+
+Hector Palacios:
+Capaz, no estoy seguro. No estoy seguro. Pero al menos que lo vean en la aplicación. Eso sí. Desaler, subscriptions. Opt out. Esto muestra la que dejaste de seguir. No tenemos ningún caso quizás de error range. Entonces hay que ejecutarlo.
+
+UNKNOWN_SPEAKER:
+La verdad es que no me acuerdo tanto.
+
+Hector Palacios:
+Creo que eran varias, como cuatro aplicaciones. Está más relevante.
+
+Hector Palacios:
+Van a haber dos razones. Una es que esté pensando. Y otra es que efectivamente no haya ninguna condición que lo esté haciendo a moverse. Déjame ver esto. Parece que edit, Alex, subscription. Sí, esta es la subscription. Entonces, ¿puedes darme un ejemplo? Para filtrarlo.
+
+UNKNOWN_SPEAKER:
+Acá puedo filtrar.
+
+Hector Palacios:
+Se pueden usar los filtros de la adin también, por eso está. Que me diga un producto.
+
+UNKNOWN_SPEAKER:
+Usa el...
+
+Saul Portillo:
+te lo pongo aquí, en el chat, más fácil. Y déjame... ¿Tú pusiste qué periodo de tiempo? Pusiste enero, ¿no? Porque creo que te filtró enero del 25.
+
+Hector Palacios:
+Sí, enero. Y coloca y pone un cambio sobre el 20% no sé si es el doble el número es que en enero es 0 voy a ponerle 3 y lo voy a guardar hago el snapshot enero hasta abril puede ser cualquiera de hecho cambia Vamos a ver, vamos a ver, vamos a ver, vamos a ver.
+
+Saul Portillo:
+que se me dé a filtrar. Código mensual.
+
+UNKNOWN_SPEAKER:
+¡Gracias!
+
+Hector Palacios:
+Subtítulos realizados por la comunidad de Amara.org No sé si tiene usuario. Sí, todavía no tiene usuario.
+
+UNKNOWN_SPEAKER:
+Creo que no.
+
+Hector Palacios:
+No, todavía no. Me pidió Rocío la información y que le pasara el pasaporte y todo eso, pero no me ha llegado nada. Ya lo estamos viendo. Ahora sí.
+
+Hector Palacios:
+Un segundo, creo que estás ejecutando la parada de copia. Pero cámbialo en el GIF.
+
+Saul Portillo:
+Ah, ya, ya, ya.
+
+Hector Palacios:
+Hice un snapshot. Hice un snapshot y luego voy a... Deja abierto el snapshot. El snapshot está abierto.
+
+Saul Portillo:
+No, está por System Editable.
+
+Hector Palacios:
+Notification relevant. Y acá se le pueden añadir dashboards adicionales, complementary charts. Entonces, cualquier dashboard que creemos en la aplicación original, lo podemos dejar acá también como una visualización. Listo. ¿Cuál fue el que comparaste, Héctor?
+
+Saul Portillo:
+¿Fue el final con el Sí. Supongo bien exagerado el cambio para que aparezca. Y después en el Workspace.
+
+Hector Palacios:
+Ahí está, ya está listo.
+
+Saul Portillo:
+Ya salir de febrero a mayo del 25 tiene un cambio, tiene cambio significativo.
+
+Hector Palacios:
+Entonces, la gracia de estos software es que tú puedes crear una alerta a nivel general, a nivel de ad-hoc, y después colocar una suscripción para Onshore. Otra para Sour and Gas. Otra para, no sé, y así. Entonces, cada IGC puede tener su propia suscripción, pero todo viene del mismo template. Eso es lo que voy a decir.
+
+Saul Portillo:
+Pero ese dos filtro ya es por atributos, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Parece que...
+
+Saul Portillo:
+¿No será que tenés que modificar ahí? Dice de enero a enero.
+
+Hector Palacios:
+Está diciendo nada más de enero y como de enero no hay datos. Capaz, pero recién que abrí no me dejaba. Está ahí... Quizá lo dejé mal en la definición original.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+Ahí sí. Ahí sí, cuatro meses. Descriptions. Ah, alert range. Perfecto.
+
+Hector Palacios:
+Es que esto es lo que querían decir. Cuando entran acá y Y acá es que ellos pueden decir SNUST. Es decir, for me, for all user. Go to analytics.
+
+Hector Palacios:
+Ah, te voy a mostrar el dashboard. Ah, mire, lo puedo guardar. Entonces, sí, esto está más conectado.
+
+Saul Portillo:
+El tema es, ¿cómo cambia el dato? ¿Dónde lo cambia? Sí, sí.
+
+Hector Palacios:
+Ahora, el tema del Workspace. Ojalá que, yo tengo fe al Workspace, porque el Workspace lo están usando para todo. Para consolidar varias cosas. Veamos si está bueno. Sí. ¿Tú te acabas con este?
+
+Saul Portillo:
+Muy poco, lo trabajamos con la demo. Lo que más traje fue la vez que estuvimos allá haciendo la demo.
+
+UNKNOWN_SPEAKER:
+Genial.
+
+Hector Palacios:
+Ah, si se puede. Cariño, si dice no wordbook asignato es suscribirse. Entonces, si podemos hacer eso, ¿qué estamos haciendo?
+
+UNKNOWN_SPEAKER:
+A ver y...
+
+Hector Palacios:
+Hagámoslo rápido. Y acá puedo colocar el gráfico y puedo colocar una vista. Entonces voy a ir a la alerta y me va a mandar para acá.
+
+UNKNOWN_SPEAKER:
+Planning View.
+
+Hector Palacios:
+Y en la Planning View.
+
+UNKNOWN_SPEAKER:
+Y hay que crearlo. Sí.
+
+Hector Palacios:
+¿Se ha decidido si después la podemos reutilizar?
+
+UNKNOWN_SPEAKER:
+¿Material y location? ¿Causando alguna planta pertubante?
+
+Saul Portillo:
+La que tiene datos, que es la 2101.
+
+UNKNOWN_SPEAKER:
+2101, correcto. La filtramos.
+
+Hector Palacios:
+¿Y qué quifías tenés tú ahí, Saúl?
+
+UNKNOWN_SPEAKER:
+Te digo.
+
+Saul Portillo:
+Estadística del forecast por CM. Si querés pongamos nada más el final. Final. El approval. El approve. Y la alerta. Esta es la alerta.
+
+Hector Palacios:
+Esta es la que vamos a prescindir ahora porque podemos crear una de esas alertas que creamos ahora solamente porque esa alerta la creaste cuando el tipo, el manager dice que no?
+
+UNKNOWN_SPEAKER:
+Esa alerta exactamente.
+
+Saul Portillo:
+Cuando dice que no, genera la alerta. El approve va arriba del approve. Y la versión, recuerda que es la backup version. Sí, ahí está. Esto igual se puede dejar bonito.
+
+Hector Palacios:
+Yo he trabajado con esto y puedes colocar como color y cosas Si no puse ningún filtro y el macro.
+
+UNKNOWN_SPEAKER:
+Está en el chat. ¿Y qué es lo que es, Chonera? 21-01. Esa es la CIHA Field Plan.
+
+Saul Portillo:
+Esa que ves ahí.
+
+UNKNOWN_SPEAKER:
+Ya. Y aquí sí pueden trabajar.
+
+Hector Palacios:
+A ver, ¿cómo puedo asignar esto?
+
+UNKNOWN_SPEAKER:
+OK, Save Workspace.
+
+Hector Palacios:
+Bueno, aquí se puede jugar por los formatos. Esto es Appearance. Template, no leo ninguno. Create. Template. Lo que estoy viendo es que no te sale el alerta, ¿no?
+
+Saul Portillo:
+Creo. O sea, el alerta no, el valor que guardamos en la prueba en el mes de abril. Así que sale. No te sale.
+
+Hector Palacios:
+Tengo el semifinal.
+
+Saul Portillo:
+Ese. Ese aprobó. Para... Ah, no. Perdón, perdón, perdón. Ahí está. Mala mía. Claro, se había borrado el de ese código. Necesitamos el cambio.
+
+UNKNOWN_SPEAKER:
+Create task.
+
+Hector Palacios:
+Mirá. ¿Qué es esto? Ese está bueno. Mira, mira. Puedes ver resultados acá. Y automáticamente ellos pueden disimular. Agarran algo así y colocar como CREATASK y se la pueden asignar a alguien. Creo que es la primera vez que en un proyecto tenemos de todo. Entonces, estas son cosas que antes no habíamos explorado.
+
+Saul Portillo:
+Nunca habíamos tenido Control Tower, que no teníamos el Process Management. Héctor, ¿puedes utilizar el código que te acabo de mandar? ¿Ese sí tiene la alerta?
+
+Saul Portillo:
+Pero este no tiene lecta. Ese no tiene porque se borró.
+
+UNKNOWN_SPEAKER:
+Lo borramos ahorita cuando hicimos el cambio. Ahí está, ahí está el 1. Ahí está.
+
+Hector Palacios:
+Sí, el formato obviamente lo va a joder un poco, pero nada. Vamos a cambiar el formato por toda esta funcionalidad. Ah, mira, mira. Algo he hecho.
+
+Saul Portillo:
+Ya se me ha perdido.
+
+Hector Palacios:
+Sí, febrero. No entiendo qué está haciendo para verlo. Quizá lo que no voy a hacer es que ahora, como existe por primera vez un, como existe por primera vez uno de estos de, un Workspace. Ahora quizá me lo muestra. Ver esto Custom Alert Definition. Quizá aquí lo puedo asignar.
+
+Hector Palacios:
+Ah, no veo. Tiene que haber alguna forma de hacer esto de que no aparecería eso si no lo. You need to assign a workbook to the alert subscription. Subtítulos por la comunidad de Amara.org Pero creo que ya se entiende al menos. Tenemos que bloquear eso y entender dónde carajos asignamos el workbook. Pero creo que esta es la funcionalidad al final. Me aparece la alerta, le hago clic acá y tengo la vista.
+
+ Y en cualquier caso la puedo apagar también. Aquí me van a aparecer las actividades que están apagadas. Y una vez que esto lo revise, El planner también va a tener su vista donde él va a poder hacer esto y revisar. Y ahí tenemos que pensar en cómo hacer la iteración. En la segunda revisión es como ya lo trabajé. ¿Cómo le aviso que realmente cambié el número? Quizás con una condición de que si está la alerta más que, qué sé yo, que el número haya cambiado, no lo sé.
+
+ Pero sí hay que pensar en esa parte. Y acá está la funcionalidad de que van a asignar tareas también. Entonces quizás es como que quizás el planner crea el cambio y dice, mira, lo revisé. Y ahora le asignan la tarea hacia el supervisor. La revise y dice, mira, ahora sí. Y lo pasa.
+
+Hector Palacios:
+Este, déjame ver si lo tengo que compartir con Shirin. Ahí se los compartí para que lo sigan explorando.
+
+Saul Portillo:
+Será Custom Alert, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Les paso la página ahora mismo.
+
+Saul Portillo:
+Deme un segundo para que no lo perdamos vista.
+
+Hector Palacios:
+Acá hay una. Este es donde se define la alerta y la suscripción adentro de esa misma alerta. Se define la alerta y la suscripción. Luego, este es el Workplace, donde asigné la alerta. No es muy complicado, es intuitivo, pero hay que dedicarle un poco de tiempo para Ahí está, estoy viendo la que compartiste.
+
+Saul Portillo:
+¿Tenés otro punto, Saúl, o revisamos rápido la lista para ver si tenemos alguna cosa que cerrar o abrir? Sí, mirá, teníamos, a ver, teníamos ese. El tema del cálculo del keyfigure de ReorderPoints que me parece que está haciendo mal el cálculo como lo está agregando No lo estábamos dando en cuenta, Héctor, y lo vimos por la configuración.
+
+UNKNOWN_SPEAKER:
+Déjame irme acá.
+
+Saul Portillo:
+¿Qué está sucediendo? Primero, que una de las cosas que vemos que el cálculo, ¿verdad? Lo está haciendo a nivel de call week, de semana calendaria. Y luego se calcula que a ese nivel de semana calendario lo lleva a semana técnica, esto que está aquí. Y luego hace el WOM2 y luego con el WOM2 lo lleva con un tema de averaje al non-root para que tú puedas tener después verlo, deberías ver el mismo valor, ya sea en mensuales a nivel semana o año de ese producto.
+
+ ¿Y ese reorder point que viene a nivel semana-calendario de dónde lo sacan? Por eso era la pregunta, porque esto ya estaba así. Y este reorder point lo sacan del keyfigure que viene del reorder point ROP Total Maintenance. Toma este o toma el ajustado. Y este maintenance que está aquí, lo que hace es como la.
+
+UNKNOWN_SPEAKER:
+No, este tenemos que ignorarlo porque, ¿qué pasa aquí?
+
+Hector Palacios:
+Esto está asumiendo una forma de trabajo sin supply planning, donde está haciendo el punto de reorden total. Toma el punto de reorden de la mantención correctiva y después le suma un punto de reorden de la mantención preventiva. El punto de reorden de la prevención preventiva es simplemente durante el lead time, cuánta actividad de mantenimiento de daño. Una actividad que me va a consumir 100 piezas durante los próximos 6 meses.
+
+ Entonces, ese es mi punto de reorden de mantención preventiva. Es simplemente la suma de todo lo que va a pasar en los próximos 6 meses durante el ítem. Y acá después te suma uno final. Este no es el que tenemos que usar. Tenemos que usar solamente el de mantención preventiva, correctiva, perdón. Porque lo demás lo vamos a hacer con supply planning. Todo lo que sea preventivo pasa directamente al supply planning.
+
+ Y es cosa de Supply Planning, no usa Rewarded Points, sino que llevar el... Estoy pensando... Rewarded Points, Supply Planning... No, pues va a planificar solamente Just-In-Time.
+
+Saul Portillo:
+O sea, porque tú tienes este que es el correctivo, ¿verdad?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+Luego tienes, entendíamos que este... El ajuste. Y el final, entendiría que es este. Se está sumando el preventivo, ¿no?
+
+Hector Palacios:
+Porque ahí se llama PM, ¿viste el de PM?
+
+Saul Portillo:
+El de PM, dame un segundo. Este, este y este.
+
+Hector Palacios:
+Es el que te digo yo, que el próximo, la demanda durante el IPTEN, ahí está.
+
+Saul Portillo:
+Fíjate, el Dependent Demand lo está sumando. Ok, este es el Dependent Demand que es el preventivo.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Hector Palacios:
+Se viene algo interesante igual. Está propagando la demanda. Está tomando Preventive Maintenance. Y este.
+
+UNKNOWN_SPEAKER:
+Claro, este que estábamos viendo que es manual override.
+
+Saul Portillo:
+¿Verdad? Ese es el comando este que está aquí. Y este que está aquí. Realmente si lo abres.
+
+Saul Portillo:
+Tiene que ser la sumatoria, como tú dices, del ReorderPoints más el de Preventive. Es lo que está pasando. Pero claro, en Preventive hoy en día no tenemos nada. Aparte de este tema, lo que estamos viendo Nosotros no generamos nada de preventive en EO.
+
+Hector Palacios:
+Esto es cuando ellos no tienen supply planning, por ejemplo. Entonces, lo único que tienen es demanda EO y generan, o solamente EO, y generan los resultados para mandarlo al S4HANA. OK. Pero nosotros tenemos todo un flujo aparte para el preventivo. O sea, la work orders o el forecast de la work order, lo que sea, eso lo mandamos a supply planning. De forma acorde, ¿no? Pero no con un punto de reorden, sino que...
+
+ Déjame pensar. Me va a guiar ese punto, pero por ahora no pensemos en esto, Saúl. Al final esto no lo iba a mandar a supply nosotros.
+
+Saul Portillo:
+Ya, porque nos estaba pasando aparte, el problema lo detectamos también porque estaba pasando de cuando él tiene las semanas técnicas, fíjate que como que tiene duplicada el dato porque está viendo este valor a nivel de Code Week, lo pega, lo hace, por eso el cálculo lo hace a nivel de Code Week y luego lo pega el mismo valor en las dos semanas, haciendo que el último, el digamos, el tenga esas semanas calendarios como duplicado porque sumó los dos valores y hace el cálculo a nivel de call week, que es lo que hace aquí.
+
+
+
+Hector Palacios:
+Hay que llegar al máximo entonces, no a la suma.
+
+Saul Portillo:
+No, pero aquí lo hacen, para mí el problema está aquí, lo hacen a nivel de call week este cálculo y no a nivel de técnica week. ¿Me explico? Porque después esto lo llevan y lo pegas a nivel de wick, el valor, y eso es lo que está pasando ¿En el otro funciona bien?
+
+UNKNOWN_SPEAKER:
+¿En cuál otro?
+
+Saul Portillo:
+¿El correctivo?
+
+UNKNOWN_SPEAKER:
+¿En este?
+
+Saul Portillo:
+No, ese no.
+
+Hector Palacios:
+Ah, sí, ese es el correctivo. ¿Funciona bien o no?
+
+Saul Portillo:
+Este es el original, sí. Sí, porque lo... Digamos... Sí, sí, esto funciona bien.
+
+UNKNOWN_SPEAKER:
+Este funciona bien.
+
+Saul Portillo:
+Cuando lo llevo a nivel semana y cuando lo llevo a nivel mes. Voy a tomar el último dato. Está funcionando bien. Tiene un IP LPA. El problema es con este que está duplicando y que bueno aquí venía todo el tema de la prueba y todo esto.
+
+UNKNOWN_SPEAKER:
+No sé si aquí se está trayendo.
+
+Saul Portillo:
+No sé si aquí se está trayendo.
+
+Saul Portillo:
+ese creo que está pasando es que está trayendo el total maintenance tiene otro valor 31, 32, 31 y lo veo a nivel gases. Ejemplo total. Y el Preventives. Desde Preventives yo no tengo nada y el Total sigue siendo por el mismo problema del Call Week. Para mí el problema es este tema del Call Week, que es donde cambia. Es cuando tengo semanas técnicas, duplica porque el cálculo se está haciendo hacia nivel.
+
+
+
+Hector Palacios:
+Vamos a tener reunión para mañana, te lo voy a citar. Esta la tenemos una vez a la semana, ¿no? La tuvimos, creo que fue la última en juego. Viernes. Deberíamos tener dos por semana de este término, mínimo. Más cualquiera que hiciéramos ad hoc.
+
+Saul Portillo:
+Y Héctor, de hecho, poco a poco pensando en las pruebas que se vienen, porque ya lo que nos quedan, entiendo, es esta semana y la próxima, y a la otra de arriba ya se está viajando el 27 para hacer estas primeras pruebas, ¿no?, de unit testing. Y todas estas cosas deberíamos tenerlas listas, ¿no?
+
+Hector Palacios:
+Entiendo que es la idea, ¿no? Sí, a mí lo que más me preocupa es la parte preventiva, que ahora vimos que la data al menos sí trae más cosas. Entonces, a eso es lo que tenemos que rechazar.
+
+Saul Portillo:
+Y ahí te preocupo un poco el tema de justamente, no sé si les pasa a ustedes también, de tener la data, llegar bien con esa data, ¿no?, para hacer todas las pruebas y su ADN.
+
+Hector Palacios:
+De todas formas, digamos que podemos integrar, si no tenemos que ir con toda la data, si no tenemos que ir con un poco de ejemplos, pero con la data de ellos y mostrarles ¿Vas a ponernos una sesión para mañana?
+
+Saul Portillo:
+Sí. No, tenemos que seguir revisando. Sí, porque quisiéramos revisar otros puntitos allí que tenemos y seguir revisando también los puntos que tenemos abiertos, ¿no? Por ahí avanzando. Bueno, hemos trabajado en esto, en el tema de los approvals, de los snapshots, de los alertas. Hay varios temitas ahí. Estuvimos trabajando en el MVP y lo dejamos listo en la parte de corrective, pero en la parte de preventive, como no tenemos prácticamente datos ni estamos ejecutando nada realmente por la parte de preventive, no sabemos bien bien qué tanto vamos a mostrar y qué escenario vamos a mostrar, de cara por amenaza de demanda.
+
+ Tomamos decisiones rápidas, esto de la segmentación HML porque lo habíamos pedido, de nuevo se nos olvidó eso era por el cost-unit-price era para correr la segmentación HML porque ellos nos las habían entregado pero queríamos generar una regla para correrlo
+
+Hector Palacios:
+de forma automática la queríamos por algo Por el tema del RISC Score.
+
+UNKNOWN_SPEAKER:
+Esta segmentación es parte del RISC Score.
+
+Hector Palacios:
+A ver, la primera esta sí se la podemos ver con Sagaro, ¿no? Pedírsela, oye, que nos integre la información a nivel de Functional Location para la data que ya nos pasaron.
+
+Saul Portillo:
+Sí, de hecho, él está en eso. Y justamente por eso le pregunté hoy en la sesión, porque intentó integrar y le rechazó, por decirte algo, el 90% de los datos. Y cuando me metí a ver los rechazos era porque le decía que no conseguía el Customer ID o el Location ID. Y creo que ese es el problema que tiene, que iba a revisar con con Reinaldo hoy. Veamos mañana a ver qué nos cuenta en base a eso. Y él está integrando, no químico, está integrando ahorita expert parts, MRO.
+
+
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+Pero no tenemos nada, o sea, a ese nivel de equipment. De hecho, no hemos subido...
+
+Hector Palacios:
+No, usted en demanda de inventario no hace nada, así que esto era solamente porque Estamos consolidando la petición, pero esto es de Viveca. Y Viveca ahí se va a meter al sistema.
+
+UNKNOWN_SPEAKER:
+A ver qué pasa con eso.
+
+Hector Palacios:
+Lo de MRO parece que sí vamos a trabajar con, no sé si maintenance, pero sí pareciera que al menos vamos a tener data suficiente para pronosticar algunas cosas creo. Pero de nuevo aquí estamos super pobre, no se ve bien esto.
+
+UNKNOWN_SPEAKER:
+Movement type definition.
+
+Saul Portillo:
+Es revisarlo con ellos. Necesitamos saber qué movement type Pero sí, teníamos que calcular el neto, ¿no?
+
+Hector Palacios:
+Eran las devoluciones más los consumos más devoluciones, o algo así.
+
+Saul Portillo:
+Pero sé que habría que verlo con integración, cómo va a quedar finalmente. Y que nos digan los filtros que hay que aplicar, ¿no? Porque hay muchos movimientos allí. Lo que definimos, porque en principio lo que debíamos definido Héctor que con los datos manuales lo hiciéramos nosotros de subir los dos tipos que pensamos que eran y hacer el neto y si quedaba negativo quedaba negativo. Pero a nivel de integración hay que ver cómo va a quedar esto.
+
+
+
+Hector Palacios:
+Ya, pero esto al menos podemos... No lo veo tan terrible si no vamos con el neto y salimos con lo que nos diga simplemente el ladón. Y esto de la lógica ya lo configuraron, ¿no? Sí, ya incluso con la alimentación FMSN. Sí, ya corre de esa forma. Sí, lo tenemos listo Héctor, para MRO.
+
+Saul Portillo:
+Para química habría que replicarlo y ver si la lógica de cantidad de consumo es la misma, simplemente.
+
+UNKNOWN_SPEAKER:
+¿Me explico?
+
+Saul Portillo:
+Porque al final los químicos calculados dependen de la lógica que le hayan definido. Que la que teníamos era esa de Morrow, de si tiene más de dos consumos, si tiene dos consumos los últimos tres años por año en un fast mover y así sucesivamente, ¿no?
+
+Hector Palacios:
+No sé. Guardemos a vista para validar. Guardemos a vista para validar. Yo la verdad es que con el poco tiempo que tenemos las sesiones, no creo que sea algo que debamos mostrar en la sesión. Sino que vamos a tener que mostrarlo antes y decirle hoy que nos validen o cualquier cosa. Pero la verdad que son tas O sea, tan poco tiempo que tenemos con tanta gente que si nos vamos a enfrascar en una segmentación, nos vamos a consumir un cuarto del tiempo que tenemos establecido probablemente.
+
+ Entonces, discutámoslo. Pero esto ya está chupadito. Y tenemos que mostrar a ellos. No sé dónde, pero a ver.
+
+UNKNOWN_SPEAKER:
+para discutirlo con Bastian.
+
+Hector Palacios:
+Y esto era demanda y era un inventario. Research score matrix definition. Ahora avanzado con esto, ¿tenemos alguna definición inicial? Cómo puede ser esta matriz, porque habíamos estado conversando, ¿no?
+
+Saul Portillo:
+Sí, esa es la matriz. La matriz que está subida es tal cual como la que teníamos en el BPD.
+
+Hector Palacios:
+Sí, no, que la del BPD era cualquier cosa.
+
+UNKNOWN_SPEAKER:
+Tenemos que darle una vuelta más.
+
+Saul Portillo:
+Ya, porque ahí se ejecuta un master data rules y queda Vale, esto se lo voy a quitar de encima, me lo voy a poner yo.
+
+Hector Palacios:
+El tema es que no logro avanzar con nada. Pero lo voy a echar un ojo yo a ver si es que... Pásenme lo que tienen, Saúl, y yo lo empiezo a iterar. Ok. Esto está del lado de KPMG la verdad. Esto ya está para validar. Esto está del lado de SAP.
+
+UNKNOWN_SPEAKER:
+Pero no es tan...
+
+Hector Palacios:
+Creo que no es tan importante lo de bajas prioridades, ¿no? Porque igual podemos trabajar con lo que tengamos ahora. En última después mejoramos las fórmulas, pero ya. Inventory holding, policy, data availability. Eso está. Está solamente moderna integración. Entonces tampoco es importante. Más es de ir a hierarquía. Está con el tema de integración. Aquí lo que sí podemos hacer es revisar los VRD.
+
+ En los VRD están los comentarios. Generalmente dicen un reporte con esto. Y en los reportes te piden que aparezca esto, esto y esto. Entonces, si alguien puede revisarse el VRD y simplemente echarle un ojo a esto. Y ver qué comentarios tengan con los reportes. Déjame buscar si aparece algo para darle un ejemplo. Weboards, aquí. Y a veces dicen qué atributos deberían tener. Por los mismos comentarios, por ejemplo, este comentario está sin nada.
+
+
+
+Hector Palacios:
+Pensé que había un comentario. Aquí está, por ejemplo, PR Analysis and Report based on Group, Company, Commodity. Entonces, ya sabemos que tenemos que integrar esos atributos. Y aquí dicen, Manufacturing, country of origin, product criticality, business flag, non-mover, etcétera. Entonces, aquí ya como que nos dan una noción de varias cosas que tenemos que integrar. Es como ir revisando todo lo que tenga que ver con reporte y diversos que nos dicen, nos dan una noción de qué cosa podemos traer acá.
+
+ Reporting capability. Sí, ya lo revisamos. Parecía eso. Pero estoy seguro que en el de demanda también van a aparecer cosas así, como de repente van a salir comentarios o requerimientos de reporte y que agrupen por esto, por esto y por esto.
+
+UNKNOWN_SPEAKER:
+¿Quién nos puede ayudar con eso?
+
+Hector Palacios:
+¿Quién se puede revisar el documento del BRD y revisar si falta algo?
+
+Saul Portillo:
+Creo que nos pueden apoyar algunos de los chicos, o Pelayo o Pablo, que tienen acceso Yo puedo ayudar.
+
+Hector Palacios:
+Si tengo acceso, sí. Lo que no sé si tengo. No, esto seguramente no. Yo me lo bajaría y lo mandaría. ¿Se quedan los comentarios también guardados? Sí.
+
+Fiamma Giorgi:
+Pero si estás al lado de Agno, va a dejar descargándolo, creo.
+
+Hector Palacios:
+No, por eso digo lo bajo y me lo mando por mail, eso es. ¿Tito tiene acceso a esto? Yo creo que sí. ¿Puede revisar quién tenga, si tiene acceso? Sé que Pablo tenía acceso al menos. Y bajárselo, o sea, Pablo tiene acceso al BDI, pero no tiene acceso a este documento en particular. Entonces hay que meterse al área eso y bajárselo. Porque si yo lo intento bajar, Mira, no me dejan ni copiar cosas. Por ejemplo, ya no me dejas nada más que escribir.
+
+
+
+Fiamma Giorgi:
+Claro, no te permita. ¿Cómo decís, entonces, o sea, entrar por la máquina, por la cosa virtual?
+
+Hector Palacios:
+Sí. Y entrar a la carpeta en donde están estos BRD, descargarse el demanda, inventario, el supply, lo que sea. Y mandarlos por mail.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+A tu mail de WSSM. Y ahí se lo pongo a pasar a Pelayo para que lo revise y busque todo lo que está asociado aquí como reporte y que nos digan como qué atributos adicionales debían traer. OK. Eso podríamos hacer con ese. Y creo que estamos. Ahí después vamos revisando lo otro, Saúl, pero si son cosas que no matamos en la misma sesión, mejor que lo mantengamos acá para seguimiento, porque esto yo quiero después también incluso colocar recordador y cosas y que en el mismo mail, te mande por mail las cosas que están asociadas a cada uno, así para llegar a un seguimiento más, como se llama, más pro de esto.
+
+
+
+Saul Portillo:
+OK. Entonces deberíamos anexar ahí. Las cosas que vimos hoy de Snapchat y esas cosas. Sí, sí.
+
+UNKNOWN_SPEAKER:
+Sí, sí.
+
+Hector Palacios:
+Ahí apóyate a los chicos, también pídele a Pablo, a Pelayo y te vayan ayudando con eso, si es que necesitan mantener este documento o quizá, pero sí, tengamos todo en un puro lugar para que cuando lleguemos a las sesiones nos metamos este archivo y vamos uno por uno y revisemos ya, en este sí, este no, cuál es la nueva acción, etcétera. A quién se lo asignamos y así.
+
+UNKNOWN_SPEAKER:
+OK. Dale.
+
+Hector Palacios:
+Victor, ¿me puede repetir lo mío exactamente? ¿Qué es? ¿A qué te referías? Déjame compartir nuevamente para que quede claro. Lo que pasa es que asociado a un material, por ejemplo, o a una planta, o a un equipo, hay muchas jerarquías adicionales, como el tipo de equipo, el tipo de material, familia de materiales, cosas así. Entonces, esa es la información que nosotros tenemos que integrar desde los sistemas fuentes hacia IBP, ¿vale?
+
+ Así como la familia de materiales ya lo tienen en LRP, es forjada. Y el ISAGAR tiene que integrarlo hacia IBP, ¿vale? Y acá tenemos una noción de qué cosas tenemos que integrar. Generalmente, cuando entra algún comentario, perdón, requerimiento que dice reporte, ahí es cuando están esas cosas por ahí. Entonces, lo que hay que buscar primero. No me deja buscar en la página. Busca todos los comentarios que están asociados a reporte acá.
+
+ Y aquí podemos ver si es que se menciona algo de como de agregación, de cuáles son los atributos que deberíamos traer. Aquí no dice nada. Igual se lo podría pegar y preguntarle a la HTTP si encuentra algo. Pero. Vale. Acá. Por ejemplo, en este caso sí. Mira, fíjate. Dashboard will be configurable. En filtering parameters. Si acá está. Material group. Company. Manufacturer. Country of origin, verticality, bcflag, fm100.
+
+ Todos esos son atributos que tenemos que traer a IDP. OK, entiendo. Échale un ojo y a ver qué encontramos. Esos son importantes ahí.
+
+UNKNOWN_SPEAKER:
+Vale, genial. Vale. Perfecto.
+
+Saul Portillo:
+Dale, vamos a continuar. Gracias.
+
+Hector Palacios:
+Dale, yo chao.
+
+UNKNOWN_SPEAKER:
+¡Gracias!
+
