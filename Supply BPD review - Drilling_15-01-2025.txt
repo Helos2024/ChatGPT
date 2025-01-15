@@ -1,0 +1,932 @@
+Rahul Patel (ADNOC Group D&CS):
+Assalaamu Alaikum As-Salaamu Alaykum. You you Thank you. You.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Salam.
+
+UNKNOWN_SPEAKER:
+Good morning, everyone.
+
+Mohamed Abdallah Mohamed (ADNOC - GP):
+Good morning.
+
+UNKNOWN_SPEAKER:
+Salam. Good morning. Khalid, I think Ashiq and Abdul are available.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+They are available. So let's start to utilize the time.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, yeah, right. Let's start. Document for give me a minute. Minute.
+
+Khushboo Mudit (ADNOC Group D&CS):
+Hello, everyone.
+
+UNKNOWN_SPEAKER:
+Good morning.
+
+Rahul Patel (ADNOC Group D&CS):
+Good morning. Let me know once you all can see my screen. Yeah, I can see you. Zoom in a bit. Good morning, everyone. And as per our discussion yesterday, let's resume the conversation on supply planning BPD for drilling.
+
+UNKNOWN_SPEAKER:
+So let me go through this.
+
+Rahul Patel (ADNOC Group D&CS):
+So Abdul, your first comment essentially summarizes the entire process. And you are kind of summarizing the entire process right from planning, which is essentially the drilling demand planning and then supply planning which is supply planning so we've not replied to this comment because this document already summarizes we have already discussed the drilling demand planning is a separate document which is approved and we are focusing here on the supply planning for drilling and we've already covered all these points what you mean okay so we are not having any
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+specific comment for this uh summary you mentioned okay now uh see mainly the the vendor quota consideration the vmi vendor so and also the word to how to manage this one if they want to see the total order quantity so uh the based on some vendor specific so how it will determine Yes, so in the supply planning, we will define, so let me go to that specific point, the process.
+
+Rahul Patel (ADNOC Group D&CS):
+So there is something called, we have this master data, right? So in the master data, you are having location source master data and location source production source master data, we are defining for a material and a plant combination who is the vendor who will be supplying. So in the supply planning you will be able to see for a material who is the vendor and what are the like open STOPO quantities with this.
+
+ If you have more than one vendor then you can also define the quota. Here if you see the quota would be used for if there than one vendor so do we have Rahul how will you manage this data now this master data where we will maintain in IBP yeah in IBP this data will be maintained so what will happen is IBP based upon the historical so the way we do is that you have this historical historical procurement history that you know what are the open POs, PRs, STOs.
+
+ So based upon that, once we connect the system to S4HANA through interface, this data would be taken into IPP and IBP will recommend what are the vendor combinations. If a given material is procured, if you have two VMIs for a given material, you'll be able to see both the based upon the the ltp is available in s4 now now see currently there are certain allocation within by
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+the drilling team and the some vendor they are managing some plant some fields the final field so now this information there are there are some strategy they already adapted to distribute the the orders or the the supply planning yeah so we want to implement the same thing same way what we done in the demand so we capture the demand and all and the supply said there are some elements were currently the drilling team managing to distribute the suppliers
+
+Rahul Patel (ADNOC Group D&CS):
+yeah so so that's what I'm telling on supply side when we define the smart data if drilling team provides this input on what is the relationship between whatever we explain in the part of the like a purchasing for a
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+code whatever so this is not that case so this is the area and also once they the once the IBP proposes a play then and it's from for example we have tenor is 1338 casing the total thousand quantity required it proposed tenor is 800 and Valeric 200 for example suppose they want to change now how this changes changing happen this what we want to just somewhere you want to capture yeah so that is part of the basic basic
+
+Rahul Patel (ADNOC Group D&CS):
+supply planning I'm just let me show you if we have a screenshot related to it so that is part of basic supply planning where in the excel sheet let me show you how it will happen so that just to explain the concept one and then you have vendor one for that material and the same material has vendor two right yeah see Rahul this is all clear how we will capture and how we will ensure this will continue see
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+now see even the previous one also we put so many note here and so what we understand we are signing off the document without updating the our capture the document the suggestion isn't it we are not saying we are not uh suggesting so so no at least we want to ensure that these are the captures so maybe uh we are discussing now and whenever we do the implementation we want to ensure these are the things considered agreed agreed so this is several time so this is not the first time we are discussing but were the document captured this is a we understood we explain and we discuss requirement everything like that then I listed all the requirement because we want to ensure somewhere is captured and because our intention mainly see this document fine our intention we want to see this one in the IP at the end so we are not maintaining we want to fine-tune the document but we want to ensure the tool while delivering the tool this requirement recapture that's it yeah no so I I noted your point so so let's I'll just I'll take this feedback.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+So essentially what you want to what you're saying is whatever you have mentioned here is somewhere updated in the document. Do you want to make sure it's updated in the document in a way you want, right?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, not only at the update the document, want to ensure that the what is the plan to IBP and because we are not. It's not big project, isn't it? It will conclude within a few months. OK, so at that same time. So while we are, we are going to the next phase, we want to. We don't want to lose any points.
+
+Rahul Patel (ADNOC Group D&CS):
+So let me mention a comment. As discussed in the meeting, we will update the document with additional content which explains how above requirements are addressed in supply planning.
+
+UNKNOWN_SPEAKER:
+Is this okay?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, the supply planning and so here.
+
+UNKNOWN_SPEAKER:
+Okay, that's fine.
+
+Rahul Patel (ADNOC Group D&CS):
+So the basically this is the allocation and another but if you scroll there it's one more thing I'm trying to the prs okay okay so uh regarding pr creation there is one question so there is uh so if we go to our process map let me open the process map once again just a minute In the process map, if you see in the supply planning, let me zoom it a bit. In the supply planning, once the supply plan is reviewed, then as per our earlier discussion, we said we have either pre-recreation or a call of order against LTPA.
+
+ So this is what you are mentioning PR. So the PR is created, PO is created. So if there is no LTPA, essentially a PR is requested, which goes into the tendering process.
+
+UNKNOWN_SPEAKER:
+Correct?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+This is what you're talking about? Yeah, OK. Once the create PR. It directly comes into adnox talk because there is no VMI okay so after the PO this PO particularly it will not compare with the material location again so yeah so see once you have PR system if in S4 another
+
+Rahul Patel (ADNOC Group D&CS):
+Gets converted to PO, all this information will come back to IBP only. So, when you, if the PR is converted to PO, you will, so essentially, the way we look at IBP is that you have, say, let me open the Excel sheet, let me go back to the Excel sheet, here. Right, so you have this requirement of 80, right? And then, against this requirement, you will have supply proposal. So supply is say 80. Now that you wanted 80 and then the PR is 80 which means that supply is 80.
+
+ Now if the PR gets converted to PO as well, the supply still remains 80, right?
+
+UNKNOWN_SPEAKER:
+Yes, correct.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so that's the point. Does that answer your PR question, Abdul?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, this is the first part. And the second part for the, if I were to create for the Blanket PO, PR, then how IBP will assist for the Blanket PO, which is we call the PR type LTPA. This is not for the immediate purchase, this is for the creating a purchasing agreement. And based on the, like, for example, normally what we do, are covered up to for example now up to 2025 our LTPA will going to expire this year okay now we will extend for two more years the existing LTPA during this phase maybe within few months what we do we want to create a PR for requesting LTPA which need to cover for next five years okay so basically what we do we will we are cover up to 25 and 26 this is a two-year extension now 27 onwards the new LTPA will commence okay okay so this calculation for example 27 28 29 and 2030 so we want to establish an LTPA this proposal how we can initiate through
+
+Rahul Patel (ADNOC Group D&CS):
+Okay so what you are saying is that once the LTPA or the blanket PO is expired, for renewal of this LTP or blanket view, you want us to create, want IBP to trigger a PR, which is LTPATPR, so that it gets converted into a blanket LTPA for the future requirements, correct?
+
+UNKNOWN_SPEAKER:
+Yes, correct. Okay.
+
+Rahul Patel (ADNOC Group D&CS):
+What input do you have? So the question here is that if you have LTPA for a material, will you raise the LTP against the same vendor for the same material or you'll again go through the tendering process when when you are trying to do
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+the LTP again to go to the tendering process. So in the now currently we have all the branded number the sorry the the unique ID tendering number is there. So based on that we want to go for the PR for tendering purpose.
+
+Rahul Patel (ADNOC Group D&CS):
+It will be for going for tender tendering purpose that the PR will be based on generic number is what you're saying. And then so every time LTP gets expired, you see you expect IBP to raise a So the logic here is if the LTP exists, then the next PR which is raises LTP PR only correct. It cannot be non LTP PR. A regular one time procurement PR.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Exactly, yeah, so it should be LTP PR and it required after the coverage we can say after the expiry date. Now, for example, maybe if you want to system perspective, maybe we can consider like this. The expiry date, if exceeding the demand, then it can be calculated for the new PR.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so for sure we need to consider expiry date and every requirement which goes beyond the expiry date has to be considered as the requirement for new PR.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, where we can input what the period we required actually if it is like 3 year or 5 year.
+
+Rahul Patel (ADNOC Group D&CS):
+So just a minute let me capture this requirement so requirement is to raise LTPAPR after expiry of existing LTPA. This is based on expiry date of LTPAPR. Listing ldba and on what basis the period what you question is defined so 2 years 3 years 5 years what is the rationale behind defining the period the quantity to be considered what quantity then according the estimation will revise
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+so if we consider for example 5 year it will be the x value If we consider for 7 or 8 years, it will be another value, isn't it?
+
+Rahul Patel (ADNOC Group D&CS):
+So IDP cannot decide this, that for how much period the LTP has to be raised.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So we will- So we can input somewhere what period required.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, you want to manually input what period is required. Yeah, exactly. And this is a user input, or this is something the purchasing team defines when they create PO this should be the user input definitely the tender strategy or whatever the requisition and whenever the at the end the this conversion will do by invented team isn't it so by then I need to somewhere the input the the period required I am capturing this point of the Latif we will review this with the team internally and then accordingly update the
+
+Mohammed Ashic (ADNOC Onshore - PD):
+content here okay okay I think we discussed this in our previous sessions around requirement of this.
+
+Rahul Patel (ADNOC Group D&CS):
+Not exactly this one. Yeah.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, we discussed this thing. So in the tie yesterday, in the tie-in itself, there was this medium term, long term, and short term, In that you have mentioned the same thing which is similar to make LTP requirements.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so essentially the only difference is that in the entire discussion we have not discussed about having a separate PR type which is LTP extension PR type like a PR for a new LTP. Either we were in all the conversations either we were raising a PR for one time procurement if there is no LTP Or we are creating a call of order against LTPA. While we may have discussed, but we never discussed about having a LTPAPR creation in the process.
+
+ So let me take this input. New LTPAPR. All right, question.
+
+Bastian Osorio:
+Is this for all the materials?
+
+UNKNOWN_SPEAKER:
+Hello, can you hear me? Yes, Bastian, I can hear you.
+
+Bastian Osorio:
+Yeah, the question is if this definition of creating a LTP agreement when once it's finished is for all the materials or just for a few ones.
+
+Rahul Patel (ADNOC Group D&CS):
+So, Bastian, what I understand and Tim if you can correct me if I'm wrong is that every time for drilling most of the materials are driven through VMI agreement which means they have LTPA and so for all the materials where the LTPA gets expired for the future period if there is an LTPA available then the PR which is raised by by IBP is an LTPAPR. So basically from an IBP perspective we need to check whether LTP is available.
+
+ If LTP is available, raise a call of order. If LTP is available and also check the expiry date of LTPAPR. So beyond expiry date of LTP it would be a LTP, PR, and not a call of order. Does that answer your question, Bastian?
+
+Bastian Osorio:
+So for the ones that have an LTP.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+And if a material didn't have one, didn't have one, there's no need to yeah so for a model which does not have ltpa it will anyways go to the one-time procurement pr which is a normal pr with tendering process
+
+Mohammed Ashic (ADNOC Onshore - PD):
+it would depend right because I I mean it's mentioned that one the ltpa items which the expiry is after the expiry then for those item it has to suggest for the ltp pr but for the other item where there is no PR I mean there is no agreement and since it is IBP it should you should suggest based on the consumption is we have to go either spot PO or or an agreement based on historical consumption it is
+
+Rahul Patel (ADNOC Group D&CS):
+an AI system right so you should suggest where we need to go to yeah so this was discussed in other sessions as well where we said that if the inputs which define whether the model is, like what are the conditions which will help us identify whether it is LTP or not. So the conditions which AdNoc used to evaluate whether it should be a spot procurement or it should have LTP. If those condition inputs are available, then we can create alert in IBP.
+
+ And if those conditions are met, system will propose but this is a candidate for LTPA.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, that's fine. Yeah, that's what I was coming to.
+
+Bastian Osorio:
+Yeah, we need to define those rules clearly. Because I understand the requirement, but it's not clear what are the exact rules that define when the LTPA can be suggested.
+
+Rahul Patel (ADNOC Group D&CS):
+I think this viewpoint, this is discussed in the above point, right? Purchased equation to be created for multiple long-term program argument. So, I'll capture this point, duplicate this point. I'll just reply the same point is discussed. Rahul, the point is clear.
+
+Bastian Osorio:
+We need to have in the future more technical sessions to define these rules.
+
+UNKNOWN_SPEAKER:
+yes.
+
+Kunal Sheth (ADNOC Group D&CS):
+Rahul one more point see all the points which we have just discussed that are considered as a design inputs because requirement is clear but whenever you go into the config mode then we need to define each and every as a definition point in the rule section.
+
+Rahul Patel (ADNOC Group D&CS):
+So from a business perspective they're clearly identifying how they want it and the request is that somewhere in the document we are we are able to quantify or we are able to give the content which correlates to this. So let's take this request and then we'll proceed with it. So Mohammed Ashiq, your next point was demand is initially approved by end-user. So here we are talking about approving a supply plan and not demand.
+
+ So demand is already approved but then here the requirement, here the process is that IDP will propose supply plan like what is the PR, what is the PR content and someone has to review and confirm from that okay whatever proposal so at this point the the when the review of supply plan happens here you can change that okay I have vendor one as ibps proposed that vendor one should be supplying but you know something that vendor one will not be able to supply and there is a vendor two available so move the supply plan to vendor two all this changes what ibps proposed will happen here and the approval is to have the final supply plan which goes
+
+Mohammed Ashic (ADNOC Onshore - PD):
+to the procurement process Yeah so Rahul sir what I was what I meant is like we already have approval for the demand now when we are doing the supply planning why we need again a manager level approval is it there was a requirement like that mentioned and and it's not just that one quarterly that you might have to review you you will do every month a review for topping up based on the available for forecast.
+
+ So maybe in a quarterly we have a forecast and then maybe in every month we may do a supply planning to top up the requirements. So and is it that there was a request to make it a manager level approval for every time that you do a supply planning? Anything on this?
+
+UNKNOWN_SPEAKER:
+Sorry, Ashik.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+No, the thing is here, for every supply planning, we have to do approval. It has to go to team leader. It has to go to the manager. So in current scenario, we don't do any approval for the supply plan. Only for the forecast demand, we do an approval.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, OK.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+here for supply planning also we have to do approval as well as it's just not quarterly like we may have every month we may have to do a review to top up based on the old approved forecast so is
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+this a requirement that we put or it's just yeah okay see what I just want to reconfirm now whenever we do the supply planning approval in within IBP, it will automatically convert approved document in SAP, isn't it? It will not go for any further approval. No, no.
+
+Rahul Patel (ADNOC Group D&CS):
+So approval in IBP is approval of the plan. So currently, today, you have SAP. So SAP is a transactional system, right? So every transaction goes through an approval process. So if you raise a PR, PR is the transaction, and the transaction gets approved for the value. Now, IBP is a planning system. Which means we don't have an independent transaction for every PRAs. We have a plan and this plan is a material plant combination that you will have all the materials for the specific plant or specific location.
+
+ So if you're planning for drilling, all the materials for drilling are approved ones.
+
+Bastian Osorio:
+Now what happens if the approval... Sorry to interrupt but we that configuration that allows to basically approve or reject amounts at month material level, monthly material level. So it is possible, but of course considering the amount of materials, the amount of different vendors it will be time-consuming to approve every single quantity. So again, during the configuration phase, we're gonna show how we can basically perform like a massive approval.
+
+ But yeah, it's just a compliment to what you're saying. It's not possible to approve every single amount. I mean, it is possible, but it's not practical. It's very time consuming. But we need to find a way to be efficient here, because I'm just thinking how many materials are we working on in drilling. Thousands of materials is somewhat responsible for approve the forecast of each one of these material.
+
+ Or is something that is more broad, more systematic? Yeah, thanks for the input, Abhashan.
+
+Rahul Patel (ADNOC Group D&CS):
+So the point here is that approval in IBP is not the same as approval in S4 HANA. And we expect that you will continue your existing DOI approval in S4 HANA, because here in IBP, you're approving a plan and not approving a transaction. Does that answer your question, Abdul?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+okay and then so based on this plan so the IVP will create the PR or how the PR will generate or PO will generate the PR or STO yeah so what will happen is you have the supply plan you
+
+Rahul Patel (ADNOC Group D&CS):
+make changes to the supply plan and once you approve the supply plan it automatically triggers a background task that all the quantities which are approved in the supply plan are triggered on S4 HANA to create PR in S4 HANA. So, there is interface between IBP and S4 HANA. So, the quantities which are approved as supply plan will get converted to PR in S4 HANA and the PR will get converted to PO in S4 HANA.
+
+
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So, it will consolidate and so within...
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, it will consolidate. Now, the consolidation will happen on S4 HANA side because the PR is created in S4 HANA. So before the creation of PR, the program will make sure that all your existing consolidation logic is considered and all the different materials from IBP in the quantity of different models for IBP are consolidated to raise the PR in
+
+UNKNOWN_SPEAKER:
+S4 HANA.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So we are coming into two different topics here now first for the approval okay are we going to do a full objective we have requirement to do every time approval for the plan at the manager level uh I should
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+if suppose the based on the new change if the required approval then we have to obtain it actually so as Rahul said so it will not be like 10 pieces this for the particular plan so it would be just
+
+Rahul Patel (ADNOC Group D&CS):
+one approval which which triggers everything. So it's not like every PR is approved. So the supply manager is looking at the overall plan. So there will be some dashboards and statistics available. So he can review what was the previous month's procurement plan, what is this month's procurement plan, how the things are changing. So all those information will be available for a manager to review. And if he's comfortable, he simply approves it.
+
+ And his approval triggers the automatic creation creation of this PR process.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Now, if that is going to be a tedious work, I mean, once you trigger this auto PR or auto PO, then you need to do a lot of work on amending these draft PRs or PO. We need before we generate. Yeah, because don't know how when it creates an auto PR there may be a lot of ambiguities in the quantities requirement change there may be a lot of changes so you know making a changes to a draft PR and
+
+Rahul Patel (ADNOC Group D&CS):
+Is going to be more tedious so prior creation of yeah so so we expect all the changes to the quantities are done by an IBP only so if you're confirming quantities whatever you mentioned in IBP IPP is the same which will will be showing up in PR. So why do you expect changes between approved supply plan in IPP versus PR created in S4 or not?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So before prior to the draft PR of yours created, does that plan show you this is going to be the PR quantity? This is going to be the pure quantity.
+
+Rahul Patel (ADNOC Group D&CS):
+Exactly so so the supply plan in IPP will tell you that how much quantity of VR is going to get created for a given material vendor combination. So that's the point of reviewing supply plan is that IBP based upon the available inventory stock in hand, based upon the demand which approved demand, IBP will propose that this much quantity of material you need to procure and this is the vendor. So this is your and on this date you need to initiate the procurement.
+
+ So once this is confirmed by IBP, you will review it. Once you review it, you adjust the quantitative changes based upon your expertise and knowledge. And once you review and confirm it, then it goes for approval. And if you approve it, it triggers PR. So there should not be any manual work on the PR side if you have reviewed your plan on IBP.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Still, I don't think so, because in the plan, there are some items which are at high level. Maybe there are some accessories and are not included part of the plan. So currently, since we are doing a manual PO and PRs, so whatever is part of the demand will show up in supply.
+
+Rahul Patel (ADNOC Group D&CS):
+If you do not have something which is part of demand, will not show up in supply and it will it IBP will not plan that material so if all the materials which are required for drilling we need to make sure that are part of demand and then for that demand we are doing supply planning we are reviewing the quantity and the quantity if we are reviewed it will create a PRNS for HANA.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Abhilash it will not work this if you see now in casing tubing you have different connections different uh and accessories related to that this all are I don't think so it will be part of the uh the forecast and it will be properly uh accordingly proper pros will be generated in a sequence even for wellhead wellhead also there are a lot of tools percentages uh accessories are based on some percentage of the main equipment and those things are not defined anywhere.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+So what we can do Abdul and Mohammad Ashiq is as part of the further step so from a solution perspective this is a standard solution from us from IVP that you have demand based upon the demand you have inventory and you have supply plan and the supply plan gets converted into PR so that's a standard process. Now as part of the build activity when we are building the solution. We will have follow-up discussion, detail out such small things which will allow us to make changes in the solution.
+
+ So here we have mapped the high-level process on how the data flows. Specifics, what you are mentioning about, the way we are doing for drilling, we are going through the details of BOM, we are identifying the fields, how will we define BOM. We will continue doing that activity so that we have all the input required to build a system the way you want. Here, we are highlighting the process where we are saying that you have demand.
+
+ Now, if there are some, in the last two discussions, if you remember, we have tried to fill up the bill of material in discussion with the team, saying that, and we agreed that this is how we'll get the bill of material. Correct? Now, if we are able to get a demand, then the supply planning is essentially making sure that what demand we've identified we are able to fulfill that demand.
+
+Kunal Sheth (ADNOC Group D&CS):
+Rahul, to answer Mohammed Ashiq point what is the basic ask is that see apart from whatever demand is coming from demand planning it is also approved by demand manager and it is now flowing to the supply plan so all the material we have considered for the supply plan now what is the requirement is that apart from the material which you have identified for the drilling there is a option available where they also would like to add additional item like drilling bit the initial bit which they have identified it is not working now they would like to add drilling bit they would like to add lubricants or other miscellaneous items which should be a part of my supply plan so if we are able to do this in IBP then no need to amend the What I understood from Muhammad Ashiq is that.
+
+ So if you are able to do this in IPP, then there is no need to update the PR, whether for the existing quantity or addition of a new item. So that is the ask, even though it is not a part of any bill of material.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Right, Muhammad Ashiq? Yeah, somewhat. Yeah. We may have similar items that we may have to add. Maybe that is not part of the bomb.
+
+Kunal Sheth (ADNOC Group D&CS):
+creation of an additional item Rahul in the block material in IBP. So I think this we need to look with the Bashian and Hector to see the feasibility because the block material which we are going to integrate. Kunal, I'm hearing a question.
+
+Bastian Osorio:
+Are these material parts of the additional completion code or they're completely like of the scope materials.
+
+Kunal Sheth (ADNOC Group D&CS):
+What I understood it is completely out of the scope.
+
+Rahul Patel (ADNOC Group D&CS):
+These are not part of the bill of materials and these are directly added as a demand in IBP.
+
+Bastian Osorio:
+It is possible. It is possible but this has to be during the demand phase. It cannot be in the supply phase. It has to be during the demand phase and this demand has to be linked a specific way out.
+
+Rahul Patel (ADNOC Group D&CS):
+And Mohammed actually in the demand planning also we discussed this point and we clearly said that we will, the requirement was mentioned clearly by the team and we accepted that requirement that yes we will have ability to manually add quantities beyond the bill of metal and also change the quantities as per the planner wish. So essentially the point we are trying to make is in the demand phase we have to make sure that all the metals which are supposed to be procured are clearly identified and updated.
+
+ If you don't maintain a metal in demand, that metal will not get procured through IBP.
+
+Bastian Osorio:
+This is, of course, assuming the material exists in S4HANA, exists in the respective plans, so on and so forth. The material has to exist. It cannot be a material that doesn't exist in S4HANA. Data has to be there.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Once we've done the supply planning. OK, this can be reviewed with the demand planning planner as well with the training team.
+
+UNKNOWN_SPEAKER:
+As a workflow.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So we reviewed and discussed right yesterday. Also in last two meetings. No, no, IBP, IBP. Within IBP, once we generate... Supply plan.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Supply planning, can we review it before approval? That's what we're asking for. One more endorsement, right?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, one more endorsement.
+
+Rahul Patel (ADNOC Group D&CS):
+If you require endorsement, we can add it. So that's a configurable thing, which can be changed as per your requirement.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah. And also, now, once the demand plan approved, there is any provision, so then what will be the consequence? It will automatically generate supply plan or supply plan also can be previewed while demand plan preparation. How does the relationship between demand planning and supply planning?
+
+Rahul Patel (ADNOC Group D&CS):
+Supply planning and demand planning are two independent activities. Supply planning focus, so before step you need to know what you need. Once you know what you need that's your demand. Now once you know what you need the next step is IBP will recommend that okay this is the supply planning. So there is a process called running supply planning job. Here based upon this process IBP will recommend it does not become finalized by default.
+
+ It would recommend that you had a demand of 10 quantity. If you run the supply planning job you have stock of 4 quantity and you need to procure six additional quantity. Just a simple example. Now, this recommendation will come from IBP. Someone has to review it and accept it. Yes, the recommendation from IBP is correct. If you feel that the recommendation of IBP is not correct, please change that.
+
+ You know that the demand is 10, but you expect that I need to keep buffer of two more. Just take an example that IBP has suggested to procure six, but you want to procure it. Then make the changes in the plan, and IBP will generate PR for each quantity so once this review happens then you up someone reviews the once the supply planning review is done by the controller someone reviews it approves it and the moment it is approved it creates the PR that's the flow of the process Abdul okay in this case during the what-if scenario so what if only for the demand or it is full cycle the demand it can It can be done for demand and plan as well.
+
+ Correct me, Bastian, here. The what-if scenario can be executed for both demand and supply, both, right?
+
+Bastian Osorio:
+Yes. Yeah, for both. What if, for example, I change the date of a well? Or if I change the number of wells, what is going to be the consequence in demand? And then I can try the same thing for supply. What if, I don't know, I create a PO, there is a PO of I don't know more more unit or less units will be able to to fulfill my plan or I will not those kind of analysis can be
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+done through what-if scenarios so yeah it's answer question that's for the what-if scenario that before submitting the demand plan they can preview review the both demand and supply through what if scenario, isn't it?
+
+UNKNOWN_SPEAKER:
+Yes, that's right. OK.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+OK, so this supply chain that that is going to be executed for the endorsement is going to be based on each category or is it going to be item wise or is it overall full plan?
+
+Bastian Osorio:
+How is this process going to be? It's basically a stock balance. You've already defined the demand in the demand phase. And then that demand is balanced through against your current stock, against your open POs, against your agreement. And based on that, recommends a purchase plan.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+No, what I'm saying is it is going to be a category-wise it's at material level so how will that how will you create PO for each item you'll create a PO PR or PO yeah but then then they will
+
+Bastian Osorio:
+get consolidated in a Solhana based on on a defined logic but the requirement is at material level so the team has to endorse each item by item? It can be done that, but it's not recommended because there are, I don't know, hundreds or thousands of materials. They can be done per category. OK, for this category, I approve the plan. And if he has doubts, if he is not sure of the quantity, he can say, no, I reject this entire category.
+
+ Please take a look again review the demand wherever Once they update that he can say, okay, that's fine approve For the entire for the entire category, of course he can go for Individual materials, but that will be extremely time-consuming. It is not recommended Yeah, yeah, so I was saying based on category.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So this document mentions by category, right?
+
+Rahul Patel (ADNOC Group D&CS):
+We've mentioned categories from supply planning. Now, this is the first time we are saying that we need a demand reviewer to review the category. So if you see, we have mentioned categories. So we have mentioned the categories. And so this category be available but up till now we have not discussed that we need an additional reviewer in place so but I think we've added this based upon the earlier discussion yeah so here we have added the reviewer as well let me open now it can be what we understood it was team lead is required to review based upon the earlier conversation we also added the team lead as one of the role to review the supply plan.
+
+ Now the question is, is this still the team lead or is this someone from demand end user from an end user community. So our assumption was this was inventory team lead and then inventory manager yeah the separate planning it will be by category isn't it yeah we can do we can do it so since we are defining category we can do it by category so so the so you want approval by category is what you are saying right yeah by category yes okay so let me put this comment here so that updated in the doc.
+
+
+
+Mohammed Ashic (ADNOC Onshore - PD):
+and also to include the demand planner in the workflow.
+
+Rahul Patel (ADNOC Group D&CS):
+So this will create three levels of upper wall then. So the current process is that it goes to inventory team lead and it goes to inventory manager. So you want to add one more level of upper wall here.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Abdul is there a requirement for manager to approve this plan or if it's not required why we can have team leader as the approval?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah yeah see DIY we can finalize later on however it's need the one level approval or two level approval so this can be concluded however as Ashik said so on pre-approval required from the demand plan It is now in
+
+Mohammed Sadique (ADNOC - PE&ICV):
+the manual thing also they are approving, right?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, manual thing actually Sadiq, it's coming from them.
+
+UNKNOWN_SPEAKER:
+Yeah, but with an endorsement from the manager.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah. Sadiq, there are two things here. One is the demand that is already has another approval by their manager. This is now for the supply. This is a different approval. So this is within the inventory within the inventory approval.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Maybe, Ashik, see if you remember the initial discussion. So, the initial requirement we have to endorse by both actually. So, first like any pure recent or the production commitment, we can say manual. So, what we agreed with the drilling team, the drilling managers and the inventory manager will sign. So, maybe in the same aspect, it will be initially the demand plan will approve by the drilling then the final supply plan can be approved by the inventory manager.
+
+ So then the same thing will replace with the electronically here.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Okay, then we need to have three level here. We need to have another one more demand planner in this.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Also, if you put the demand planner in between the supply, they can ensure that we are meeting, because the distribution of the quantities and all, one of the main agenda for the demand planner. So they can ensure the separate plan meeting the requirement as well. The Latifa Nashik for the drilling planner. Um, this going to be after the inventory Before, before, before, before the inventory.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Before inventory.
+
+Mohamad Fakhouri (ADNOC Group D&CS):
+So just after inventory controller goes to drilling demand planner and then inventory team leader as well. And lastly, inventory manager.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so this comment is noted here so that the document will get updated based on one more comment.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+the one that you said you know we can manually add any items that may be not part of the bomb to be included here so that's part of demand planning and it's already part of the BPD approved BPD for demand we've mentioned that it's there and it's approved okay and okay now fine what about the sequence because when we are doing manual PO or PR we have a sequence of item like suppose now you have one type of main equipment you have the related accessories in a sequence not that you may have PO's uh I mean the items and accessories are scattered here and there different line number that would be a difficult task of having a proper delivery schedule so um will that be catered into this demand planning can you elaborate a bit more on sequence here say for example now you have the main equipment of say three and a half inch line pipe OCDG and then you may have say five six accessories of this not part of the forecast say just imagine that it is not part of the forecast and then you need to include these three four items and when you add these item it may not be in sequence of the same that means the main equipment will be there below that you need the so that it will come together in one set so our question here is why it would not
+
+Rahul Patel (ADNOC Group D&CS):
+be part of forecast no I said items that may be not part of the forecast so I so the question is why would you have a scenario where items are not part of the forecast for example some so no
+
+Mohammed Ashic (ADNOC Onshore - PD):
+some some items are like tools okay it won't be part of the uh bomb you know you when you order this much kind this much quantity quantity of a wellhead you need to have this much percentage of tools that should come along with that. So it will not be part of the BOM.
+
+Rahul Patel (ADNOC Group D&CS):
+Agreed. So if it is not of the BOM, but we are still providing you the functionality to change the demand before it approves. So even if it is not a BOM, you can manually add this component directly into the demand plan. That you already mentioned.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+That you already mentioned.
+
+Rahul Patel (ADNOC Group D&CS):
+So I think that the demand is final. All the models to be planted.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+No, so when we create from the demand plan when you create the automatic PR or PO the sequence of item will not may not be in in line with what is our requirement is suppose now if you have one particular wellhead the accessories and tools may not be in line with the same and maybe not in the same sequence maybe it may be at some other line number.
+
+Rahul Patel (ADNOC Group D&CS):
+So let's confirm that the demand will be complete which will include all the accessories and all the optional materials which are not parked above. So from an IBP perspective we know exactly all the materials to be procured. Now when the PR is to grace what you are saying is the PR has to have a certain logic of creation like there is a certain sequence And the same sequence has to be followed in the system.
+
+ Yes. And what is the sequence depended upon?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Maybe we need to put the sequence in the demand plan itself. You need to provide it in that sequence. And that PR should be in the same line number or something. Exactly.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+That's what I'm saying. We'll maintain the sequence in the bomb.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Maybe the item is not part of the bomb if it is not part of the bomb, but you need to have it in the same sequence.
+
+Rahul Patel (ADNOC Group D&CS):
+Demand plan. What is the impact of sequence like, I just want to understand what sequence drives if you have the reason I'm saying it that you have a date like you have a material and you need on a certain date.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+And we all depend on the PO. Once the PO happens, so this PO will go for like a longer period, number one, like one or two year period. And number two, it will go into the different party. It will go for the first, the quality, what's called the inspection team, TPI, and all. So what they're looking for, they're making like packages. Within the PO, they'll make small, small packages. So as Ashik mentioned, the main item will come in the first.
+
+ For example, we have 1338 casing. This is a big pipe. We have 1054. And after that, we'll have accessories. So these old accessories will follow, like pump joint, the crossover, so on. And this will be one set, basically. Now, the second, after that, the next item will come. For example, 958 casing. If you want, I can I have something here open.
+
+Rahul Patel (ADNOC Group D&CS):
+Before we look at the system, Bastian, you have a question. You understood this requirement of creating the supply plan in a certain sequence?
+
+Bastian Osorio:
+No, I'm not sure what does it mean, the sequence. You have a linear sequence, one after the other?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+We are ordering always with the packages like the automatically to build package so we cannot mark Package number and all in the city. So what we do this all set. For example, now this is the first item. This case in seven inch casing. Now we need this old document as reason and mother. So this third quantity is for the first item. And this is the proceeding items. So it will become once we want the same sequence to follow The first item, then the second item.
+
+ If you mix up, then it will confuse for the order reviewer. This is a document at the end of the PO for the entire up to the TPI up to the delivery. So there are different parties using this particular document. So for them, very easy if you get all this particular item in one batch.
+
+Rahul Patel (ADNOC Group D&CS):
+So this is the sequence what Ashik is highlighting. Question here, in the sequence between packages, the same material can repeat?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yes, yes, yes, it can happen. Because of the whatever the difference, but at the time it will be together.
+
+Rahul Patel (ADNOC Group D&CS):
+If a material there is 100 piece requirement, but in package one you need 10 piece and package 2 you need 10 piece, then you will put it in sequence in each package even if the same material is. Required from a demand perspective.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yes, yes, yes, because you know, see the thing is if you don't if you don't get the in a complete set then you cannot use the main equipment so you need so if you put it no if you don't put in sequence maybe even delivery everything can be as per as per their own requirement and then when we receive we may receive the main equipment we don't have the accessories that we can use it Bastian, you have a
+
+Rahul Patel (ADNOC Group D&CS):
+question around this?
+
+Bastian Osorio:
+In the white, this cannot be addressed with the PO. Like the PO needs to be generated in certain packages.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, but then for PO to be generated in certain packages, this information should be available in IBP so that IBP can give this information. Information to S4HANA to create this in package, right?
+
+Bastian Osorio:
+I will also think if, let's say, 10 materials belong to a certain package, we should be able to aggregate those materials based on this package. Let's say package A has 10 materials, and these are the amounts. Then package B, so on and so forth. I understand you want to see the materials requirement based on these packages because these packages are the final requirement. This is how they should be so they can be used.
+
+
+
+UNKNOWN_SPEAKER:
+I understand that.
+
+Bastian Osorio:
+And if you want to adjust the demand to fulfill, that sequence that's fine there's no problem for that I'm just wondering how can we display the information in the same fashion that you just show but overall for me I see is more about how to display the information in which order then the number about capabilities itself. Because at the end, you just need materials, but they have to be, yeah, they need to follow certain sequence.
+
+ We need to find a way to define that sequence, to display that sequence in the system. I understand that requirement, but more than that, I don't see, yeah, I guess I understand the requirements. I think it's something more related to configuration mode of fine-tuning the tool to match the exact display that you just showed. And it's something we need to work on. But of course, we will need more input, more examples.
+
+ And this is something that needs to be happened with the users in the configuration phase for supply.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+So what I've done is I've taken this as the, so rather than POPR is to be created, Let me share my screen and let's put the comment together so that it captures the requirement you clearly have.
+
+Rahul Patel (ADNOC Group D&CS):
+Just a minute, my ad-hoc login got expired, so that's why I'm not able to share it again. I'll have to just put my password up again.
+
+Rahul Patel (ADNOC Group D&CS):
+okay so let me share my screen is my screen visible yes okay so basically item material item sequence OK. Materials to be added in PR in a certain sequence. So is this OK? Material to be added in PR in a certain sequence? To ensure the main material has all the yeah so essentially we are controlling PR from IVP and the PO gets corrected same as PR so from an IVP perspective we are creating PR right ensure all the materials are required to sequestration all the material the main material has all the required I'm capturing this requirement so that we can review this and then make it part of the requirement document.
+
+ So Kunal, we also need to add this to BRD.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, sure.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, then let's go to the next point. Monthly stock closing is required. So this is a standard process. Process every month during after month and the stock will automatically get updated in an IPP. You missed any point here. Inventory line direct reporting TL. So you also mentioned right the TL approval is required.
+
+UNKNOWN_SPEAKER:
+So we've already discussed about this.
+
+Rahul Patel (ADNOC Group D&CS):
+This is discussed.
+
+Rahul Patel (ADNOC Group D&CS):
+Then the next point is, five years you said, so we have updated it five years. Each category you want to have such a report, right? That's counted. So we already have category mentioned. Reports would be at category level. These are generic and would be specific like stock coverage, yes. So here we have only shown samples based upon the stock we have. So the reports would be built after we set up the system.
+
+ The basic configuration happens the way you want. Then on top of it reports will be built and then there we will make sure that specific reports with specific information is provided. And the reports are configurable in nature which means We can work with you to define the reports in the way you want. I think that was the last.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+We can just go up.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me go backwards. This one we discussed. This one we discussed.
+
+UNKNOWN_SPEAKER:
+This one we discussed.
+
+Rahul Patel (ADNOC Group D&CS):
+Reporting we discussed. Monthly closure stock we discussed. Material to be added in certain prequels. Direct release order are made. There are no... Okay, this point we missed. Direct release order are made. There are no PRs or ROs. Can you confirm this point?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So now you're saying IBP will make only PR, so PO will be in S4 and so then it's clear.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah. Conversion will take place.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+This is written here also, right? Yeah. Sorry, Rahul. So if it is the LTPA covered, it will make a result directly, isn't it?
+
+Rahul Patel (ADNOC Group D&CS):
+Or it will be PR and So we have, we have, so IBP, recommends or the best practice from IBP is to raise only proposals. So, orders are confirmed documents whereas PRs are proposals. So, the proposals are triggered by IBP and the proposals are converted to firm document in S4HANA. Now, how the proposals get converted if that's something we can discuss separately with the technical team because in uh in uh s4 hana there is an there is a way with which you can like convert the pr to p
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+automatically and uh this one we discussed before and we said that we need IBP to establish the recommend for three documents yeah we'll find the pr pure release and stu yeah so we don't want to unnecessarily dependency so many the system at the end.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so this was also discussed. Your requirement discuss with technical team with Vignesh as well. And then this was so the conversion of PR to PO without either. Users intervention is something which would be taken on S4 HANA side.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+But your proposal like, Proposal will go to S4 HANA and can convert it to your proposal converted to a call of order for this order.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yes, because that's why we want to go for this complex scenario. So even whether if the the see the the requirement is so whether it's already in LTP, then we can make it a result directly. That's what we agree. That's what we discussed also.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, and it's yours well. Uh, I let me confirm this point back. Uh, I've I'll take a note of this where this was this point was mentioned here, right? Yeah, it's the if the release order in the moral discussion we agreed that it will convert it to STO and color for it.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+And and to end up here, right? Who is still is fine.
+
+Bastian Osorio:
+You don't need to go through on STRS. You can go directly to but for for PO you need to go through PR first.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+No, before the release order we don't need to go for PR. You can directly convert to this order.
+
+Rahul Patel (ADNOC Group D&CS):
+So that's a release order is essentially that you have a blanket PO in place and you are just updating the quantity into the same blanket.
+
+Bastian Osorio:
+I think it's something we need to define with the technical team. I don't see the limitation. In case there is an LTP a call of order that should be pretty straightforward. But all the technical details need to be addressed in a further technical session. I'm hesitating in the case there is no LTPA. All the tendering process and all that, of course, require more time and more technical details. And it's not that easy to just create a call, as the other examples.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, you're right.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+We are mainly addressing the release order. So the streamlined release order only. There will be the valid LTPA in place. And we can validate in a fund and the requirements, everything possible. Then we'll make convert to the pure release. However, so the approval, it will take care within SAP. It's fine.
+
+Rahul Patel (ADNOC Group D&CS):
+So I'm just capturing this comment here. That as discussed, release order and STO will be created directly from IP. Will be created when LTP is not available. Then another point, any other point here? What about outstanding order ad-hoc system? What about outstanding on order? Ad-hoc system outstanding order would not consider material delivered to VMIR. We need to have order quantity. So here, Let me clarify, Ashik.
+
+ The outstanding order means the quantity, the difference between the PO quantity and the VMI quantity, correct?
+
+UNKNOWN_SPEAKER:
+Not VMI quantity.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+It will not be VMI quantity because outstanding order would not consider what is in VMI quantity.
+
+Rahul Patel (ADNOC Group D&CS):
+Suppose you raise the PO of release order of 100 quantity right. Now again the release order of 100 quantity the vendor confirmed that he has confirmed the availability of 50 quantity in the VMI yard which means the VMI quantity is 50 now.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+The PO quantity is 100, the VMI quantity is 50, the outstanding quantity becomes 50 correct then in this no not not in our system because uh from the 50 whenever we are going to consume the outstanding orders will start
+
+Rahul Patel (ADNOC Group D&CS):
+reducing yeah so in s4 hana for sure the outstanding will always show at 100 because you're not received in in your system it's still in the vendor yard vmi yard right so technically you have the entire 100 quantity the
+
+Mohammed Ashic (ADNOC Onshore - PD):
+outstanding quantity unless you do grn in adnog when you issue the model correct yeah yeah so but even then even if you have the VMI quantity from supplier you cannot directly minus the on-order against the outstanding because you may have you may have also consumption.
+
+Rahul Patel (ADNOC Group D&CS):
+So we have open POs right so we will show so basically in supplier planning we will give visibility to what is stock. Stock in both ad-hoc location both in VMI location will give you open PO quantity basically pure quantity nothing but outstanding quantity.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Now Rahul another question how you are planning to get a VMI stock which is not in our system.
+
+Rahul Patel (ADNOC Group D&CS):
+There are two ways we have a custom table where the VMI stock is updated. So there is this interface between the VMI system and S4ANA system.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+There is no VMI system each company have different system.
+
+Rahul Patel (ADNOC Group D&CS):
+Agreed. So there are two.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+That's what I was saying. No, Sadiq. We have a VMI integration for the suppliers. Maybe some suppliers are not yet integrated.
+
+Rahul Patel (ADNOC Group D&CS):
+We may have to integrate. Till then, we'll have also the manual upload option. OK. So here, let me then update this comment.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+open po open po quantity will be the outstanding quantity and in this you are not one more thing what we discussed last time in the technical session like for outstanding orders there will be a specified delivery time so So how is that captured here?
+
+Rahul Patel (ADNOC Group D&CS):
+So basically, when you have the open queue quantity, against that open queue quantity, you also have the expected receipt date, right? So based upon lead time, so every item would be shown in different rows. So there will be a separate row for outstanding open queue, and then you'll have a follow-up row on expected good receipt in IBP. And then that expected good receipt basically the difference between two is lead time so uh po you have a po with outstanding quantity say po raised on say first uh january 2025 uh the goods is it expected based upon
+
+Mohammed Ashic (ADNOC Onshore - PD):
+the lead time is say 12 months it will be first january no no it's not like that we we had a detailed discussion on this we said that we should have say 100 piece in a po it may be uh staggered with maybe 10 sets every month, 10 sets every month till the POS complete. So in the, what we do currently is that in the Excel sheet, the 10 has been distributed. So here you may not have that information as 10 has been, how to distribute that 100 outstanding quantity.
+
+ So last time you were discussing on how from a supplier can update through Ariba.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, if you're talking about staggered quantity, we have captured that as a requirement in the BRD document. There are some comments again related to staggered, but as per our discussion in the technical call, we agreed that since Ariba is something which is not possible, we will continue to do it manually, which means we will have a key figure for us to identify the staggered delivery, correct?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So where is this manual?
+
+Rahul Patel (ADNOC Group D&CS):
+mentioned in this BRD? Do we have that defined? So basically BRD is not at that detail level where every specific detail is mentioned and what we are doing is we are keeping the document at high level so that the details can be worked out as we work. Now that we are in updating the getting the br bpd approved the discussion what we are having already is the next step of this document so if you don't have it here in the same comment you please mention what is that uh how about your plan okay let me capture this blackland yeah some stock visibility I'll stop to the comment here.
+
+ Let me capture this here so that we can take note of this okay so we discussed outstanding i've updated this for staggered quantity monthly breakdown is required mr is not considered so we've mentioned that this is just a snapshot which with an aggregated view you will also have the monthly breakup of the same and we are considering mr for consumption of forecast so mr mr is not considered we don't if there is a forecast demand plan that quantity
+
+Mohammed Ashic (ADNOC Onshore - PD):
+is only considered we don't consider what is outstanding mrs because you may have a lot of mr that has been raised but not yet withdrawn or they're not they have cancelled plan or it's not you may have stale data
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So that is not considered, yeah. Yeah, MR, let's see, maybe Rahul, this can be tracked through the plan, isn't it? The demand plan, the MR also.
+
+Rahul Patel (ADNOC Group D&CS):
+So basically, why you need MR is that, so you have a forecast and the actuals are driven by MR. So if you don't have MR, you will not be able to know that, okay, what was my actual consumption against my plan consumption.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, not for the demand calculation.
+
+Rahul Patel (ADNOC Group D&CS):
+No, not for demand. This is this does not drive demand. Basically it consumes the forecast. So if you have forecast of 100 quantity and the reservation is listed for 50 quantity, that's how you know that against the forecast consumption of 50 quantities.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+But the procurement happens against the forecast only. OK, so for the demand you will not include MR.
+
+Rahul Patel (ADNOC Group D&CS):
+It's only for actual. Yeah, it's only for actual. That's how you can mention here. So this is what the material for forecast consumption to our duplicate demand. So this is not that we are saying that there is an additional demand from a MR.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So this is a forecast consumption activity in IBP and
+
+Rahul Patel (ADNOC Group D&CS):
+That is fine. No, not on that, on the below, on the below comment. Uh-huh, OK. As discussed. Discussed. Material reservations are considered as actual consumption against forecast cost this will not drive any procurement will be based on forecast only.
+
+UNKNOWN_SPEAKER:
+Okay. Yeah. Okay, we discussed this.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, it will be open irrespective of contract. Yeah, this is we need a clarification. Contract gets gets expired. There is an call of order. This is an order which which will be open till the value gets exhausted or contract gets gets exhausted.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+This is what our understanding. So call of order if a contract expires still that will be valid till the expiry of that till the end of the delivery. Can you see that again? Expiry yeah can you say that again please so suppose your contract is expired you must have you must have already done a release order and that release order delivered uh till that uh till the the completion of delivery of
+
+Rahul Patel (ADNOC Group D&CS):
+that quantity that that call of order will be valid irrespective of agreement is valid or not so you're correct so if 31st december is the contract expiry date and if you have a call of order on 30th December the call of order will be valid because the delivery will be beyond the contract expiry date still the call of order contract is at that point is clear so this is not we are okay so you want me to clarify here contract dates get expired this date this order will be open till the value gets exhausted or contract dates expire order will be open for for raising the call of order so once the contact is but will not be able to raise a new call of order against the same contact right yeah we cannot raise call of order but the outstanding orders will be valid yeah so that so we are not talking about outstanding order anywhere we are only saying the order will be open till for call of order only so the the idea is that okay we'll clarify this content here saying the order.
+
+ So the agreement is still valid on delivery beyond the expiry date. The agreement is still valid for a little beyond expirated. Content will be updated.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Oh, that agreement is not valid. For delivery or delivery. OK.
+
+UNKNOWN_SPEAKER:
+For delivery. OK.
+
+Rahul Patel (ADNOC Group D&CS):
+Not for new release order. OK. Or CEO call of order CEO.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, also the new CEO recommendation things one is expiry date another one fund availability yeah so that's why it has open till the value gets exhausted or the date so if both value based and date based right yeah this only for the new releases okay this is an order which will be open no will be open to know no no it will be generate see call of order valid once we issued the call of order from system till the delivery yeah once we done the call of order there's no relationship between the ltpa yeah so the even after expiry the they can deliver and get the payment so that's what the agreement level for delivery beyond expiry content to be elected have taken this feedback yeah okay now so this is the order which will be open no this is only the thing is it will be open till this is what I meant it this will be open call of order no this will not that means it will close after the that's why I wrote my comment there so to update the content.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+Let me let me review this content with the team and we'll update this content.
+
+UNKNOWN_SPEAKER:
+So that's why I've taken this feedback. Okay. So Abdul, the conversion factor. You're okay, right?
+
+Rahul Patel (ADNOC Group D&CS):
+We've discussed this in our technical meeting as well that the unit of measurement and then the alternative of measurement will be considered. So then existing agreement coverage has to be cleared PR will be raised otherwise agreement coverage has to be considered What do you mean here, Ashik?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So when you are trying to raise a new PR, right? So for the supply. Yeah. So existing agreement coverage should be considered. Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+So basically, there are two cases we discussed. Whether we have LTP or whether we don't have it today. If we don't have LTP, we will use PR. If you have LTP and the LTP coverage is getting close, then we discussed about this requirement of creating a LTP after. No, no, no, PR for LTP. That's what we discussed with Adulathish previously. Yeah, yeah, yeah. So, we're talking about the same point here, right?
+
+ That's what I was trying to confirm. Okay. So, we already taken a note of that point and we will add that. We will evaluate that PR for LTP and we will add that content. So, again, the material reservation related point so we also said that MR will ensure consumption of forecast because you mentioned that if you can go to the content it says materialization one of the input IP will be calculating unconsumed demand Virtual reservation is one of the input to calculate the unconsumed demand, right?
+
+ So unconsumed demand, that's what. So you have a requirement of, say, 100 quantity. And if you have raised a MR of 50 quantity, which means unconsumed demand is only 50, which means if the reservation is raised and the goods issue has happened for reservation, we should not, again, add this 50 quantity into demand, right? So that's how the forecast consumption happens, and whatever is left is the unconsumed demand.
+
+ The consumption of demand happens to motor reservation.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So, unconsumed demand is considered to the demand? Yes, because if you have a forecast of the 50, 100 quantity. No, so then we are going by the forecast, right?
+
+Rahul Patel (ADNOC Group D&CS):
+We do not need to duplicate in case we may have already unconsumed, we do not want to calculate yes so so how it happens is let's let's take this example demand is I I'll just say forecast is 100 right and stock is say 100 now you have both stock and forecast now you have mr which is a 50 quantity with this mr the stock gets reduced to 50 because you issued the quantity so with mr you have MR of 50 and the stock of 50, right?
+
+ Now, if I don't consider the MR, what will happen is I have forecast of 100, but I have stock of 50 only. So what IP system will assume that you still need to procure 50 quantity because your stock is not covering. So by MR, we make sure that, OK, so your forecast is 100. You already consumed quantity of the review unconsumed forecast forecast is basically 50 here so that the unconsumed forecast is 50 stock is 50 and the reservation has consumed 50 quantity of forecast no you cannot consider that mr because here
+
+Mohammed Ashic (ADNOC Onshore - PD):
+the forecast uh unconsumed mr would be something that was uh for the previous months or else some maybe uh which is coming in the next 3 months. So you cannot consider unconsumed MRs into this calculation. Just a minute.
+
+Rahul Patel (ADNOC Group D&CS):
+Hey, Ashik, sorry for that. So can you say that again? Sorry for this disturbance. Can you say that again, Ashik? Let me open the screen regarding the forecast. Yeah, here we are.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Now, what I was saying that any MRs, any unconsumed MRs or outstanding MRs, we cannot consider into the demand because this may be part of the upcoming forecast quantity or else maybe some MRs have been cancelled or under cancellation or the well is cancelled.
+
+Rahul Patel (ADNOC Group D&CS):
+So, we are not consuming MR as forecast. We are consuming MR for forecast consumption. The forecast would be always as per the demand.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So in this example, so in this example, the 100 is the forecast. Stock is stock is 50. So original stock was 100.
+
+Rahul Patel (ADNOC Group D&CS):
+So let's take month one month two, right? So we started month one in the month one. The forecast was 100. And we got stock of 100 so the forecast and stock matches so there is no additional requirement now in the month 2 what happened is that you consume 50 quantity the stock is reduced by 50 but if I don't reduce the forecast by 50 because you've consumed stock then the if the forecast remains 100 yeah yeah stop your closing stock is zero how will you consume again 50 so closing stock is 100 right you have a forecast of
+
+Mohammed Ashic (ADNOC Onshore - PD):
+100 So that forecast is already consumed, right? The 100 is already consumed.
+
+Rahul Patel (ADNOC Group D&CS):
+Forecast does not get consumed by stock. Forecast gets consumed by consumption of the stock.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So see, you have a forecast. So when we do this demand supply planning, we consider the forecast as the anticipated consumption.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah. In theoretical terms in any planning system the forecast is basically a requirement. Now the requirement is fulfilled when the stock is consumed. So what any planning system does is that the forecast and the stocks are matched so that if there is any change in stock or if there is any change in forecast then the system can reconcile it. If you consume forecast based upon stock and tomorrow if the stock changes then the forecast for any reason something got blocked, something got scrapped, and you don't have any metal.
+
+ But if you consume forecast, if you use stock to consume forecast, then system will not create additional requirement, because system says that, OK, I had forecast of 100. Now I have stock of 100. I don't care what happens to the stock later now. We cannot do that. So the theoretical mechanism to consume forecast is that you have a forecast, you have a stock. And when you actually issue the material to the required then that goods issue or the mutton reservation consumes the forecast.
+
+ So the revised forecast is now 50 and the revised stock is 50 and everything balances out. For some reason, if the stock gets reduced to 40, then this 10 becomes the additional requirement which needs to be fulfilled again. And the alert would be raised that, OK, you had a stock of 50 against the forecast, but sometime 10 quantity could block. Now you are no more covered for your forecast.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Abdul, did you understand? I'm not getting it.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Actually, what I'll try to explain the MR mainly to update the actuals always. Yes. That is fine, but I understood that.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+OK, MR is to know what is actual, but here. Any in the document it's mentioned any unconsumed uh mr will be part of the demand right so it's not unconsumed it's unconsumed forecast how can you make sure how can you make sure that maybe if you see our excel documents where we forwarded previously on how we do the supply uh like uh how we do in your in in your excel sheet how will you be doing the uh six months coverage how do we you know select the
+
+Rahul Patel (ADNOC Group D&CS):
+required quantity for on order since the demonstration is I don't have a demonstration right now uh bachelor you there can you pull up the supply planning sheet for drilling. Rahul Bhasin has already left, jumped to another meeting but for the consumption of forecast he has already depicted on page number 15 of this document. So At this point of time, Mohammed Ashiq, we've discussed this in the demonstration we've had where we demonstrated how IBP looks like in terms of supply planning.
+
+ We've referred to your Excel sheet and we have agreed that you will be able to see the data the way it looks like in Excel sheet. And here we are only talking about the way IBP needs to work in terms of the forecast consumption. This is standard functionality of IBP where you have a forecast and the forecast gets consumed based upon the actual consumption, and the actual consumption is received by a Mertel reservation.
+
+ So, the Mertel reservation is the input to IBP for calculating unconsumed demand is what we are trying to share.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So, if we are not able to… Anyway, my comment is there.
+
+Rahul Patel (ADNOC Group D&CS):
+We will see when we have the… Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so let's proceed. Shall we proceed from this point? Yeah, yeah. OK. So this is we've already discussed manual intervention required. We said that manual intervention should be done in IBP only and whatever changes done in IBP would reflect in PR in S4 HANA.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, that's fine because we when we have manual intervention I mentioned that we need some sequences and that also if that is all satisfied uh we can go with the there's no issue in creating uh yeah yeah so so
+
+Rahul Patel (ADNOC Group D&CS):
+we've also discussed about all these comments regarding approvals so I think we've we've reviewed and addressed all the comments any other questions yeah last one last question now this is about the items that has bomb so we have some
+
+Mohammed Ashic (ADNOC Onshore - PD):
+materials which may not have a bomb like say drilling drill bits that may be that may be given as a manual requirement I don't know what is the background on it so on that how will you do that we
+
+Rahul Patel (ADNOC Group D&CS):
+do we have options to do that as well I separate supply chain so when you say so drill bits you want to see in in the demand planning you can you can create or add any material you want manually which is not part of the bomb so if you maintain that little bit as a requirement as uh as a manual material as a manual input in the demand planning no not by then so it's like you may have
+
+Mohammed Ashic (ADNOC Onshore - PD):
+a forecast the drilling may provide a forecast but that is without any bomb how we have for time and you may have to do a manual upload and then review the demand plan so will that be available why would
+
+Rahul Patel (ADNOC Group D&CS):
+you what what are the metals which you will need to so these are these metals are not related to well plan no drill I think drill bits are not part of part of the bomb ability you may also have
+
+Mohammed Ashic (ADNOC Onshore - PD):
+some items similarly you You don't have a bomb, but you may have a forecast.
+
+Rahul Patel (ADNOC Group D&CS):
+That forecast has to be created manually in IBB, right? So you want that forecast to be updated in IBB manually, right? And we said that we will have ability to add materials manually beyond bomb. Yeah, but we can't add the forecast.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+No, we can't upload the forecast.
+
+Rahul Patel (ADNOC Group D&CS):
+want to upload the forecast beyond Bob and not add manually. Is that correct?
+
+UNKNOWN_SPEAKER:
+That's correct. Yeah. Yeah, Rahul, go ahead.
+
+Rahul Patel (ADNOC Group D&CS):
+So for the materials which are not part of the bomb, and the forecast has been created manually, you are saying you need to upload and not only enter manually. Is that correct understanding? Yeah, yes. And the same case is there with Abdul as well? Abdul? You there? OK, so let me take this up as additional input that to be able to upload the manual demand directly in IPP. Let me capture this. And Rahul, I will also this as a requirement in the brd yeah in the brd as well so that uh yeah uh this gets tracked and updated so process flow insert I'm adding a new command drill bits are not
+
+Mohammed Ashic (ADNOC Onshore - PD):
+does not have any uh bomb because they are based on yeah so and also be directly in the IBP.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, so what I'm saying is demand, let me share my screen again. Demand other than BOM. So demand other than BOM can also be uploaded directly in IBP.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so I'm capturing this comment. OK. Anything else?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+You can mention example a little bit so you know what exactly this is talking about.
+
+UNKNOWN_SPEAKER:
+OK. OK, any other question?
+
+Rahul Patel (ADNOC Group D&CS):
+Any other feedback? On the drilling supply planning.
+
+UNKNOWN_SPEAKER:
+That's it for me.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Anyone else has any other comment or feedback?
+
+Rahul Patel (ADNOC Group D&CS):
+If not, then thank you very much for all the inputs. We will update this document based upon the feedback received and get back to the team as soon as possible for the approval. So a quick question, Mohammed Ashiq and Abdul, if we are able to address this discussion, what we have heard, we can go ahead for the approval of this document with the inventory manager, correct? Yes, yes. Yes, we can. OK.
+
+ So I'll send this confirmation. By the way, Mohammed Ashiq, we have updated the supply planning time based on our yesterday's discussion. What I will do is, considering both the documents are to be approved by the same manager, we will send both this document together so that both the documents can be approved at once. But you can have a look at it, the supply planning for time we have updated based upon the remarks you've provided.
+
+ Yeah, that's it.
+
+UNKNOWN_SPEAKER:
+Yeah, thank you.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Thank you very much for your time today, everyone.
+
+Rahul Patel (ADNOC Group D&CS):
+Have a nice day. Thank you.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Thank you, Kevin. I think they've dropped it.
+
+UNKNOWN_SPEAKER:
+Okay. You Bye!
+
