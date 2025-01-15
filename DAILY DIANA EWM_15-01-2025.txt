@@ -1,0 +1,168 @@
+Jonathan Hernandez:
+Hola Richard, ¿cómo estás?
+
+Richard Quinteros:
+Vivo amigo, ya soy ganancia.
+
+Jonathan Hernandez:
+Siempre hay que verle el lado positivo.
+
+Richard Quinteros:
+Pues sí, mientras sigamos vivos vamos a seguir acabando con nuestra fe. Mira, ¿y cuándo presentas tú el otro examen? Lo programé para el viernes. No, yo no te digo que vaya a presentarlo esta semana ya, yo dije ya Me queda un intento, bueno, pensando en tres, ¿eh? Yo estoy pensando en que son tres y no cuatro. ¿Y ahora cuántas certificaciones tienes? ¿Mandé? ¿Y ahora cuántas certificaciones tienes?
+
+ No, pues ninguna.
+
+Jonathan Hernandez:
+Por eso te digo que, pues, prefiero creerte. A mí me lo explicó mi delivery. Entonces yo le creo un poquito más a ella. Pero igual yo, en mi caso, hay otra compañera, está Rocío, que también de presentar la misma que yo, entonces lo que estamos haciendo esta semana ella y yo es reunirnos todos los días y hacernos como un grupo de estudio, una manera de tratar de sacarlo, porque también ella lo presentó el domingo y tampoco pasó.
+
+ Sí, están rudos los exámenes ahorita, muy duros. Ese empuje que le están dando a S4HANA le está haciendo todo más difícil.
+
+Richard Quinteros:
+Sí, es que a mí, por ejemplo, cuando yo presenté la nueva apuntación, como te digo, estuvo más sencillo, y lo pasé sin problema, ahorita estoy teniendo más problemas que el anterior y me di cuenta que las preguntas como te digo son abocadas también full full a S4 pues entonces lo complica bastante porque pues hay muchas cosas de S4 que no conozco todavía. Yo lo que hice fue me metí en la página en el learning como tú me habías comentado, me puse a revisar ahí ¿no?
+
+ Y como hay preguntas que son de SIGNATE, ¿Signatio? ¿Signatio? Esa cuestión, y como hay preguntas que son de CleanCore, me busqué esos cursos, pues, y busqué los que me dieran como en su glosario, en su índice, pues, me dieran como las herramientas de lo básico, ¿no? No que se pusieran a hacer cosas técnicas, porque no, no tengo tiempo para eso. Solo lo básico, concepto y demás. Y no me los he visto todavía, y por eso te digo que para esta semana No voy a programar mi examen porque no tengo tiempo, mucho trabajo.
+
+
+
+Jonathan Hernandez:
+Mejor prepararse para el siguiente intento.
+
+Richard Quinteros:
+Sí, sí, yo estoy contando que me queda uno más y pues bueno, que sea lo que Dios quiera. Esperemos que pare bien.
+
+Jonathan Hernandez:
+Hola Samir, Pablo, perdón, buenos días, estamos ahí desahogándonos un poco de las certificaciones.
+
+Richard Quinteros:
+¿Te tienes que certificar Pablo?
+
+Pablo Palacios:
+No, no lo tengo como objetivo. De todas formas me lo han puesto un montón de empresas. No es algo que tenga mucho interés de mi lado. Pero bueno, ya se verá en algún momento.
+
+Jonathan Hernandez:
+Hay como spoiler equipo. Creo que estuvieron todos en la sesión de kick off de logística. Ya lo dijo Felipe, este año es de certificar para toda la empresa, entonces nadie te va a salvar.
+
+Richard Quinteros:
+Así que aunque lo tenga o no como meta prepárese.
+
+Jonathan Hernandez:
+Sí, sí, sí. Pero ahorita no se preocupen por eso. Ahorita la preocupación está en otro lado. Pero listo equipo, cuéntenme por favor qué avanzaron el día de ayer.
+
+Richard Quinteros:
+A ver, comenzó yo. Ya literalmente yo estaba batallando con un error de picking, ok? Y era por eso el tema de las preguntas que yo les había hecho de si manejábamos una unidad de manipulaciones en las ubicaciones de picking. Por lo general, en los proyectos de retail en los que yo he estado, nunca la hemos manejado. Por eso pregunté en el grupo de repente para que sea algo más, más interesante, que todos tengamos opinión al respecto.
+
+ Pues le pregunté, pregunté aquí en este grupo y le pregunté ¿no? Y que también piensa que sería bueno manejar la HU. Este Pablo también comentó lo mismo. Pues bueno, haciendo caso a esa a esa a esa idea, pues nada más estoy haciendo unas modificaciones a nivel tipo almacén de export picking de exportación, porque estoy probando con base a ese primero, y si me funciona, pues ya lo lo homólogo en los demás tipos de almacén de picking, ¿vale?
+
+ Y estaba enfrentándome, todavía lo sigo teniendo, pero estoy haciendo esas modificaciones en función para poder salir ya de ese error y que pueda yo avanzar con mi proceso de picking. Creo que es lo único que me está estorbando en estos momentos. Solo eso. Estoy avanzando, preparándome para la prueba de mañana. Ok, ¿cómo vamos para la de mañana? La de mañana vamos bien, a excepción de ese tema que tenía y el dump que tuve temprano, que el dump ya quedó y el tema de picking pues también va a quedar, tengo mucha fe que va a quedar ahorita en la prueba que voy a hacer.
+
+ Y nada, estaremos listos. Nada más le voy a pedir a Florencia que me haga un par de escenarios más iguales a esto.
+
+Jonathan Hernandez:
+Y ya probamos mañana con exportación.
+
+UNKNOWN_SPEAKER:
+Ok. Ok, muchas gracias.
+
+Jonathan Hernandez:
+Del dump que salió, Richard, ese se resolvió, ¿correcto? Sí, se resolvió. Era un tema de, pues, temas de inventario.
+
+Richard Quinteros:
+Por alguna razón que desconozco y hay cosas muy tenidas que tampoco tengo explicación del por qué yo tengo explicación, yo no tengo ni una explicación ahora para darla, pero lo que yo pienso es que pues hay cosas que de por sí no tienen que ver, pero el sistema internamente, de estándar, hace validaciones y aunque yo estaba creando un proceso de reaprovisionamiento o de picking, me saltaba el DOM, pero seguramente es porque el sistema internamente hace alguna validación y pues estaba pegando algo de inventar la configuración de inventario.
+
+ Se corrigió la configuración de inventario, ya le funciona el inventario a Samir y pues ya no sale el DOM. Ok. Según pude ver, analizando el DOM, era un problema con un programa de inventario, literal.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Jonathan Hernandez:
+Pero ya se corrigió. Muchas gracias por el update. Samir, ¿Cómo vamos?
+
+Samir Milan:
+Ya con la corrección del dump, ya estoy haciendo la creación de inventarios. Ahorita estoy haciendo pruebas enfocadas en inventarios solamente. En eso vamos. Ok, ok.
+
+Jonathan Hernandez:
+Y Pablo, ayer ya no vi si te respondió el error con el escenario que pediste, sino para darte los refuerzos.
+
+Pablo Palacios:
+No, no me respondió, pero continué con el otro. El escenario que le pedí es de un nuevo caso de compra e importación. Pero bueno, continué con el otro escenario que era un traslado de producto de exportación. Así que hoy, ayer y hoy estuve con ese tema. Tengo algunas cositas ahí. Pero tengo que cerrar un error. Pero sí, digamos un error siempre, más que nada de estrategia, de determinación de ubicación.
+
+ Que una vez que cierro eso, ya le vuelvo a mandar mail a Florencia, volviéndole a pedir ese escenario y le sumó un nuevo escenario de traslado de exportación para volver. Así que hoy eso me queda pendiente para ahora, a la tarde mía.
+
+Richard Quinteros:
+Una pregunta, Pablo, con respecto a las configuraciones de entrada, nada más una consulta. Por ejemplo, ya ves que en el almacenamiento, ellos en la etapa de Tubi y Asis, ellos pedían Y también Luis lo pedía, ¿no? El tema de que antes de acomodar la ubicación final pasará por una ubicación intermedia antes del rack. ¿Eso lo estás tomando en cuenta? Lo estoy tomando en cuenta.
+
+Pablo Palacios:
+Le hice una configuración inicial para que pase por el tipo de almacén 081.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Pablo Palacios:
+Inicialmente voy por ahí. Todavía no está del todo, no, es algo que tengo que ir limando. Pero estoy con otros temitas antes de eso, pero lo tengo en vista, sí.
+
+UNKNOWN_SPEAKER:
+Eso es. Listo.
+
+Jonathan Hernandez:
+Equipo, ¿tuvieron la oportunidad de actualizar ya las gráficas de progreso? Sí. Todo está actualizado ya.
+
+UNKNOWN_SPEAKER:
+Excelente. Gracias por ese apoyo.
+
+Jonathan Hernandez:
+Entonces, equipo, me llevo como alerta, Richard, el tema que comentaste al inicio.
+
+Richard Quinteros:
+¿Cuál?
+
+Jonathan Hernandez:
+El primer hito de las shows.
+
+Richard Quinteros:
+Sí, pero eso no te lo lleves como alerta, eso yo lo soluciono, yo me encargo. Es como que no pasó nada, yo me encargo, eso es. No te preocupes que eso queda 100% seguro.
+
+Jonathan Hernandez:
+¿Y stopper que necesitemos del lado de Diana de Capgemini para avanzar? De momento nada de mi lado.
+
+Richard Quinteros:
+De momento nada de mi lado. En la tarde, pues, Florencia convocó una sesión. Voy a tratar de agregarlos a ustedes. Yo no sé por qué, pues, siempre me a mí y lo sacan ustedes, la verdad es que pues ya se lo voy a volver a regañar. O apóyeme y voy a reclamarle a Kerin que todas las sesiones donde participe el equipo de GoSSM esté el equipo completo y no pues nada más yo, ¿no?
+
+Jonathan Hernandez:
+Sí, sí, la voy a regañar con este punto porque ya veo varias que han enviado y no nos convocan y nos separan y eso no nos ayuda porque nos desalinea a la internet.
+
+Richard Quinteros:
+Exacto, entonces ahorita les envío una reunión a los tres, pues entiendo que de repente no se puede conectar, pero que nos conectemos los que estemos. Se trata sobre los materiales de embalaje. Ya ves que yo ayer levanté, creo que fue ayer, levanté la mano con respecto a los materiales de embalaje en el grupo de WhatsApp, no sé si se fijaron. Es sobre eso. ¿Qué está pasando? Que ellos, imagínate, ellos en su, en su ECC, ellos no tienen creado los materiales de embalaje como materiales de embalaje.
+
+ Y eso está mal, ¿vale? Esa definición que ellos tenían porque ellos hacen el embalaje en WM pero ellos no tienen creado sus materiales de embalaje como materiales de embalaje y en consecuencia hay una vista que se llama datos de embalaje específicamente que tiene el tipo de HU y pues en los materiales de embalaje que hoy existen no vamos a poder agregar ese datos porque ellos no tienen esos materiales creados de esa forma entonces por ahí viene la discusión tienen que La idea es empujar a que los creen así, que es el deber ser.
+
+ Y pues una vez que los creen así, que agreguen a nivel dato tipo de unidad de H.U. Tipo unidad de manipulación, agreguen el tipo que le corresponde. Ese dato lo usa el WM. Vale, comparto mi pantalla rápidamente nada más como para que salga un poquito más representativo. Mira, este es el 200, vale? Si tú te bajas a la M.A.T.U. Y buscas un material de embalaje, por ejemplo, este lo creé yo. Este lo creé yo y el por qué aquí hay una pestaña que se llama datos de embalaje.
+
+ Este es el WM. Aquí tiene el tipo de material de embalaje. Este hoy en día, como tiene los materiales creados, sí lo pueden agregar este, pero este no. Y se necesita que nosotros necesitamos que nos los envíen desde allá. Y si tú te preguntas, recha, pero si no se puede ¿por qué lo tiene tu material? Porque yo modifiqué el IDOC a mano en SC, pasándole el valor para que me llegue aquí, ¿me entiendes?
+
+ Pero no es el deber ser, o sea, lo hice para poder avanzar en nuestras pruebas, ¿no? ¿Ok? Ahora, ¿qué tienen que hacer ellos? Pues ellos en SC tienen que crear estos materiales como materiales de embalaje, ¿vale? La vista correspondiente que ellos tienen que agregarle el tipo de material de embalaje y el tipo de manipulación tienen que agregárselo son datos de cc eso es estándar entonces por ahí viene la sesión de la tarde porque Florencia me escribió un testamento al privado por whatsapp diciéndome que claro explicándome no la casuística a veces los medios medio recito para que vean que me escribió En medio de Richa.
+
+ Uy, tenemos el día de hoy. Si te parece, voy a proponer una reunión mañana para que hablemos con Melvin Walter Nodier y contigo bien de esa necesidad. Ok, porque te hago este comentario, porque en realidad esos materiales no están creados como un tipo de material de embalaje como tal. Son materiales que hoy están usando en el proceso de WM en el APT para embalar y quisiera que alineemos bien la necesidad de tu lado o por si lo que en realidad debemos hacer es crear ese caos, es decir, materiales nuevos que sean embalajes como tal, pero si gusta nos juntamos mañana y lo revisamos bien en una llamada para evitar problemas, ¿vale?
+
+
+
+UNKNOWN_SPEAKER:
+Eso fue lo que me dio. Entendido.
+
+Jonathan Hernandez:
+Entonces, ahorita les envío la reunión y pues bueno. Yo si me subo, entiendo que a lo mejor para Pablo puede ser un poquito de tarde, pero nosotros tres y podemos incorporarlos.
+
+Richard Quinteros:
+Si yo te digo yo no voy a empujar a otra cosa que no sea que los creen como materiales de embalaje que es el deber ser. Si, si para que le buscamos por otro lado.
+
+Jonathan Hernandez:
+Yo voy a empujar por eso y nadie me va a hacer cambio de parecer. Vale, perfecto.
+
+Richard Quinteros:
+Muchísimas gracias por el contexto Richard. Ahorita les paso a la sesión. Vale.
+
+Jonathan Hernandez:
+Listo equipo, si no hay más, deslibero el espacio y cualquier tema estamos pendiente.
+
+Richard Quinteros:
+Dale, ves. Listo equipo. Cambie fuera. Gracias. Buen día.
+
