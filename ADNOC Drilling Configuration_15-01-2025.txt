@@ -1,0 +1,1914 @@
+Hector Palacios:
+Arun, are you?
+
+UNKNOWN_SPEAKER:
+Yeah, I'm doing good.
+
+Arun Singh:
+Just going through the comments that were made by Rahul on the supply liquidity document.
+
+Hector Palacios:
+Okay, but check with Basti, because Basti joined to the session today, so I guess that he will have some inputs. He stayed in a session because we now checking the vrd comments okay but I want to check with you the configuration man if we are okay yeah we can work on configuration now because today right I was waiting for
+
+Arun Singh:
+that meeting to have to be happened but I did not see any invitation man so no no I checked on both on my adnoc emails plus uh I'm going same I did not I thought there is no meeting, you
+
+UNKNOWN_SPEAKER:
+know, happened.
+
+Hector Palacios:
+No, it's fine. So here you can tell us what happened on that session. That's it of the points that we were taking yesterday to which one you got and see if what we are thinking here is making sense or not.
+
+Arun Singh:
+Yeah, sure. Let me share again.
+
+UNKNOWN_SPEAKER:
+Can you see my screen? Yeah.
+
+Arun Singh:
+Okay, so I've done the first four steps. If you check this new planning level right in step four that you mentioned, right?
+
+UNKNOWN_SPEAKER:
+This one.
+
+Arun Singh:
+So I created.
+
+Hector Palacios:
+is planning level because there had to be bomb headers inside this seems like yes um all right but this is the bomb here that has the bomb code of the code I think this list we don't write okay yeah at all the attributes that you can they're not only the line Hangar 17 also add the other ones. No, even the bone code in this case needs to be the root because you know this needs to be exactly like the master data.
+
+ This is the yeah. Not the bone description.
+
+Arun Singh:
+Only the bone code. Okay, because in other planning levels, I think we have marked OCDG code, right?
+
+Hector Palacios:
+This one is different. Yeah, but this is the base one, out of which you will create the other one. So, this one is to have all the attributes, the line hanger, cement, and the wellhead, basically all that you have on the on the biomass data.
+
+Arun Singh:
+So, basically we need a wellhead, placing design, the general completion code. Where is the additional completion code?
+
+UNKNOWN_SPEAKER:
+already there, right?
+
+Hector Palacios:
+Yeah, it seems like that's it.
+
+UNKNOWN_SPEAKER:
+I'm missing something there.
+
+Hector Palacios:
+Let me check the value. Sorry, the design. No, it's like that. The theory, do we have it?
+
+Arun Singh:
+Category, I think we have it. Let me see. Category, category, category. Channel, no, no. OK, let's put that aside like that. We need to do it.
+
+Hector Palacios:
+But for now, let's not worry.
+
+Arun Singh:
+Okay, so just let me.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+So, what is now we need to create attributes keeping it in the model for this one.
+
+Hector Palacios:
+Now you need to create the other, let me see. You need to create another planning layer.
+
+Arun Singh:
+Which one?
+
+UNKNOWN_SPEAKER:
+This one?
+
+Hector Palacios:
+The attribute of kefir, yes. You need to create that attribute of kefir.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+But what would be the planning layer of this one, right? Only z equals no matter?
+
+Hector Palacios:
+Did you create the kefir?
+
+Arun Singh:
+No, no, no. I'm creating right now.
+
+UNKNOWN_SPEAKER:
+It will be attributable schema, right? Yes.
+
+Arun Singh:
+I only suspect the issue will occur during the integration. That is the only thing that I suspect.
+
+Hector Palacios:
+We can know. That we can check on the mass data loading the different values. And if we have a rejection of loading, then we can say, okay, this is not going to work.
+
+Arun Singh:
+I don't know of the key figure one, or what should be the name?
+
+Hector Palacios:
+Eh, whatever. It's just a dummy key figure, so.
+
+Arun Singh:
+But it will be in the master data, right?
+
+Hector Palacios:
+Yeah, on the master data.
+
+UNKNOWN_SPEAKER:
+I don't know. This.
+
+Arun Singh:
+One for the
+
+Arun Singh:
+Oh. But I went in 00.
+
+UNKNOWN_SPEAKER:
+No, it doesn't matter. You can leave it blank. Hey, guys. Did you already finish? Yes.
+
+Arun Singh:
+OK, so done with this one. What else? Now we need to create a new variable?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So in this one, you use the code will hit and bomb ideas as roots.
+
+UNKNOWN_SPEAKER:
+So just copy the one that you created. No, without the wig.
+
+Hector Palacios:
+This is not with wigs.
+
+UNKNOWN_SPEAKER:
+OK. Yeah.
+
+Hector Palacios:
+If you created the weeks in the year one, also remove it. It should be time independent. The first one? The last one. The one that you used to copy is the original.
+
+UNKNOWN_SPEAKER:
+It's also time independent. OK. So now, one by one.
+
+Hector Palacios:
+So the bone code, the OCDG code, and assign the wellhead code. That one is the one I want to check if it's going to work. And in the attribute that's here now, create an aggregation of this.
+
+UNKNOWN_SPEAKER:
+What?
+
+Hector Palacios:
+Did this? It's recorrected.
+
+Arun Singh:
+And then let's activate just to know if they say we getting an early error.
+
+UNKNOWN_SPEAKER:
+Or do I check for in the meantime?
+
+Hector Palacios:
+I don't think it's an early error.
+
+Hector Palacios:
+It's only a matter to play smartly with which attributes you are assigning to the planning layer. Because I have done weird stuff here, like this. But I think that we can pull it off, but it requires some.
+
+UNKNOWN_SPEAKER:
+Let's see what we get. Guys, question.
+
+Bastian Osorio:
+Do you know how can I create a template that has more than 15 columns?
+
+UNKNOWN_SPEAKER:
+15 columns.
+
+Bastian Osorio:
+Why more than 15 attributes?
+
+Hector Palacios:
+I don't know if there is a limit.
+
+Bastian Osorio:
+I have never tried to do too many columns.
+
+Hector Palacios:
+There's 15 columns, maximum, it seems. Check on the global parameters. Maybe there is something.
+
+Arun Singh:
+What is the learning level that failed, Arun? This one, said weak, the one I think just throwing error.
+
+Hector Palacios:
+But it's weird because it was working before. Now what we changed is we added the Yeah, but you also, you can be the customer because it worked before, right?
+
+UNKNOWN_SPEAKER:
+Which one?
+
+Hector Palacios:
+Can you create another one from scratch? It's better because I think that but it is not related to the customer attributes.
+
+Arun Singh:
+No, no, it's not related to the customer attributes.
+
+UNKNOWN_SPEAKER:
+I see you there. Yes. Let me show you something for the approval that I was checking with you guys yesterday.
+
+Hector Palacios:
+So they were showing me the solution, but I told them that, first of all, the approvals, we need to filter in any way because they need to get alerts for this. And if we are going to use any alert, we need to use Control Tower, because they have the module, and they are expecting us to use it. So this is working really fine, I think, because you can define what is going to be an alert for approval.
+
+ It's like, if there is any change, or this change is over 20%, or if this is in this threshold of value, trigger the approval. And in this case, you can have it as alerts, right? And you can put it here, like, pending approvals. You can take it to a planner workspace. And in the planner workspace, you can- What is the configuration? I don't get it. What the configuration of what?
+
+UNKNOWN_SPEAKER:
+What is the alert?
+
+Bastian Osorio:
+The alert is something that we decide on that.
+
+Hector Palacios:
+It's what I was telling you. It's like, we can use, like, changes versus the last cycle. If there is any change in inventory parameters, you can, for example, highlight. You can say, OK, now we are proposing something different to what you have.
+
+UNKNOWN_SPEAKER:
+You can review it.
+
+Hector Palacios:
+Or is 20% different? I don't know. It's something that we need to define what is relevant.
+
+Bastian Osorio:
+But in this case, what is that?
+
+Hector Palacios:
+It's whatever. It's not even related. But just to show you what On this, you can have an alert subscription of pending approvals. We need to have that definition. And then you will have all the alerts here. So this is all that you need to approve. So whenever you go to each one of these, the view is going to filter. And it's going to show you where is alert. It's going to highlight. And you can place the number that you were thinking, like one zero right there.
+
+ It's not going to be like the like the tickets and the grass, you know, but at least this is going to be like more fury like for this task. And they can see that person, whatever is helpful for them to do the analysis. So I think that this is like nice looking for them at least. The other thing is that they can assign tasks. So for example, we are in the plan. But I know that I see like create task thing here.
+
+ Jobs. This one's right there. Ah, here. You see? Create task. So you can, I don't know, if something you finish, you can create task based on this and assign someone. But it seems that you can assigned to a specific combination? I don't know. I don't know. But at the end, the point is that we can control the flow. We can also raise an alert for the reviewer whenever an alert was like, I don't know, if you rejected something.
+
+ And then someone did the change again, you can receive it back. We can configure an alert for that as well. So it will appear again, like reviewed alert, you know, and instead pending approvals, you can like a second review.
+
+Bastian Osorio:
+And you can see it and assign a workbook for each alert. But if someone made a change how you can know they made a change without looking at it.
+
+Hector Palacios:
+So I made a change because you're changing the key fear and the alert is activated, right? So you have a key fear and you have two things, two conditions. One is that it has a rejection by once, right? And two, you did a change now.
+
+Bastian Osorio:
+And you can see your alert. Because you took I guess you made a copy of the key figure, right? Of the approved key figure, and that is different from the one that is...
+
+Hector Palacios:
+Yeah. We'll need to sync. We'll need to sync. I'm not... I mean, I'm not like... I'm syncing out loud in that regard, but I'm sure that we can find a logic for the second review. But this looks nice because we are taking... We are using the layers functionality. We are using the Work Planner, the workspace. We can assign an alert to a specific planning view where they will have the fear and they will have dashboards to check this.
+
+ I think that this is what they would be expecting for approval. That's it. Going back to you, Arun.
+
+UNKNOWN_SPEAKER:
+Yeah, so I have activated the planning area.
+
+Arun Singh:
+Once it is done, then probably we can create an attribute as the keyfigure. Did you run any check? Yeah, yeah. So I ran the check. So I had to delete the attribute as the keyfigure because the planning level has you know yeah the time assignment so in order to work properly you need to activate first you know so just you can you can go
+
+Hector Palacios:
+ahead because that uh attribute as keyframe didn't exist on the system it wasn't activated so you can just read it planning level planning level existed right so the planning object creation at the back end right but didn't you create
+
+Arun Singh:
+a new planning level or you are just it was it was created and it was activated but now we have removed the time attributes from the planning level. So the system was not allowing me to activate the planning area because of the attributes. So let's wait for a few minutes. I think it will be done.
+
+Arun Singh:
+Actually, on the time part, yesterday I have dropped a message to Rahul on the chat room.
+
+Bastian Osorio:
+But did he reply?
+
+Arun Singh:
+I did not see right now, but in the morning it was not being replied, so I don't know the current status. Yeah, so there were three points. I in total there were four points I completed only in the first one. The rest three I think yeah. We need some help on that part. Hmm. Yes. I think that when you finish your planning process and you say, okay, I review, then you send to approval and what we can do is take a snapshot before approval in that moment.
+
+
+
+Hector Palacios:
+The reviewer is going to get it, is when you say, okay, reject it. But you have the Snapchat as well. So that way, you have the comparison between the changes post-rejection. And you have the rejection. And that can trigger an alert for the reviewer again. So if there is no change, of course, nothing is going to be triggered. But if there is a change to some rejections, then yes, I need to do a double check on that one.
+
+
+
+Bastian Osorio:
+Yeah. Arun? Sorry. Just reading um Rahul messages and he replied so after we finish this you can take the comments uh regarding that they they wanted to have like a a sample uh planning view just to check how is it gonna look but it has to be of course you can use some some um some materials from from their their the information they have shared with us, but it's just to, they wanna check how it's gonna look, no more than that.
+
+
+
+Arun Singh:
+Yeah, but they have not shared the file, right? Because even I was mentioning in one of the point about S-Log information that Vignesh has shared.
+
+Bastian Osorio:
+He shared, no, he shared, View with some storage locations.
+
+Arun Singh:
+Views with some storage location. Yeah. But you can take a look.
+
+UNKNOWN_SPEAKER:
+Is it activated?
+
+Bastian Osorio:
+Because I feel if we're doing two things at a time, it doesn't work. So we can check it later. Review the messages. And if you have doubts, we can connect and review again.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+I think this planning. No, I agree again, because the naming is also incorrect. I don't know if you delete it, but I will suggest you delete it because when we start with the servers.
+
+Arun Singh:
+Should I delete this planning load?
+
+Hector Palacios:
+Remove the attribute ASCII fear first. I think that the attribute ASCII fear is finally used in this planning level, so it's triggering there.
+
+Arun Singh:
+Yes, that is the cause. But then... Let's check. If I do a check, it will be successful.
+
+Hector Palacios:
+You already did it.
+
+Arun Singh:
+It will be successful. But what should we do with that planning level?
+
+Hector Palacios:
+There is a solution, but I'm trying to avoid it because it will generate too many combinations. The ideal scenario is that. We can do a kind of a joint.
+
+UNKNOWN_SPEAKER:
+here.
+
+Hector Palacios:
+Um, we do see.
+
+UNKNOWN_SPEAKER:
+you The virtual mass area we cannot do attribute as key field, right?
+
+Hector Palacios:
+Probably not, because storing a planning object Let me share the screen to see if we can get something quick here. Because in the virtual machine data, you can always copy the virtual machine data into a normal machine data. With the master data rules.
+
+Arun Singh:
+With this approach in IBP, the benefit for the ad-hoc team is that they can see the BOM at well-ideal level. Because at the moment, this information is available in two different systems. Well-planned and the other system UWDP for the bomb but in IBP yes I think in one single place they will have this kind of visibility of it.
+
+Bastian Osorio:
+Yeah see what can we I just need to jump into the RICEF meeting.
+
+Hector Palacios:
+So I'll talk to you later. All right, see you. And let's use a well-hit that we were working on for now. Then we can add the other ones. And the join. And I guess that we cannot bring the attribute as kefir here.
+
+Arun Singh:
+No.
+
+Hector Palacios:
+Seems like we can not change, then I can just add it to the kefir, but let's check. Maybe that there is something new. What is the same?
+
+Arun Singh:
+You need to select, I think the refer machine as ML customer.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+I will check that. Um, no, I want to bring everything from the one here, except this one.
+
+Arun Singh:
+But Bombheader does not have this, right? It is, it will be a reference, reference to the Amaro customer, right?
+
+Hector Palacios:
+The one here needs to come from the one here. The other ones, we don't need them.
+
+Hector Palacios:
+We need the OCDG.
+
+Arun Singh:
+But how you will be updating VALID in this form or in this virtual master data?
+
+UNKNOWN_SPEAKER:
+You're right.
+
+Hector Palacios:
+I don't know if I need to put it. Let me check.
+
+Arun Singh:
+Because ideally, the planner will be updating, I think, in the VALID master data, right? All those additional computation.
+
+Hector Palacios:
+This is just a technical data. I'm not thinking the guys to enter here. So from customer, the attribute will be the field. And will be here, will be exactly there. Just give me a second.
+
+Arun Singh:
+I'll be back.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+Basically I'm saying I want to have all the levels that I have on the mass data of bonehead for wellhead. So I want to that the wellhead is equal to the wellhead on the customer, the well type on the customer and the What else? Well, type also the same one on the customer. So I want you to bring me those customers that they have the same. We'll hit, we'll type, we'll feel, but the massive data that is going to be bringing all the data is this one here.
+
+ Only the detail like the customer ID will be there. We'll come from the other one.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+It's sick. Sick nurse. You. Bye.
+
+Hector Palacios:
+Can you put it in the meantime, again, the attribute ASCII field? I will change the planning later.
+
+UNKNOWN_SPEAKER:
+Okay. Oh, no, I will leave. Something that I will create again. Did you create anything here? Creating now.
+
+Hector Palacios:
+You create a new planning level, right?
+
+Arun Singh:
+Yeah, set up on here.
+
+UNKNOWN_SPEAKER:
+OK, let's see from here. And see.
+
+Arun Singh:
+OK. Done.
+
+Hector Palacios:
+When you create it, I want to see if there is still, I cannot bring this up. From the, yeah. Let me refresh just in case.
+
+Hector Palacios:
+A reality we don't need.
+
+Hector Palacios:
+That's the limitation.
+
+Arun Singh:
+I think in the virtual master, probably you could not assign. Yeah, that is the only for simple and I think compound you can do it.
+
+Arun Singh:
+Bye!
+
+Arun Singh:
+Maybe you have to do it like a first grade virtual. The virtual table will be updated. Then we'll see ideas. It will do. We look up and just update everything in. Simple master. Let's say then from there, I'll say, yes, it's not a regression, but then how you will do it.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+We can implement the later changes only when there is something new. I can sync on something like an indicator. Yeah, I sync on what we can do here. Because your master data rule, you can do whatever you want, right? So imagine that. Just an idea, just to complete the idea. So imagine that you are on the customer master data. And you have the, well, case. So you change it to, it was empty, now it's, You'll see that you have another attribute here that is going to be triggered only when you have changes.
+
+ It's going to be called, I don't know, change it, indicate. Whenever the user does that, we have something here, like yes and X. And then when you do the copy to the master data from the video, mass data to the real mass data, you will filter the x only. So it's quick. Only the change that I did is copied into the new mass data. Then in the night, an iteration should do a mass data rule that is going to be a schedule.
+
+ We'll do the following. We'll filter the x, and we'll place an empty value again. So that way it can work. And we only change the things that are important.
+
+Hector Palacios:
+Delete the other one See you soon.
+
+Hector Palacios:
+Do I need the OCD? I don't need it. It's very simple. You OK, now I have the attribute on the RIMAS data. But do I need it? I think that I don't need an activity list here, so we have the well ID.
+
+Hector Palacios:
+So the bone code.
+
+Arun Singh:
+You can check if there is values, then update this value as one. Yeah, but we don't need it, I think, because we just need to assign the bone code, right?
+
+Hector Palacios:
+So in this master data, you already have in the virtual mass data, not even in that one, you already have the customer ID and the bone code that should go there.
+
+Arun Singh:
+So you don't need anything else, right?
+
+UNKNOWN_SPEAKER:
+You just assign to the planning layer. You are at base level here. OK.
+
+Hector Palacios:
+Why?
+
+Hector Palacios:
+because this also depends on the completion code. Okay, I heard you. But we said that we will have the OCD code. This is going to do the join for me.
+
+Arun Singh:
+This is the planning layer, right?
+
+UNKNOWN_SPEAKER:
+Mm-hmm.
+
+Hector Palacios:
+OK, so here, where is the mass data for the planning layers? Z-bomber data, right? Yes, this one. So here we have the information by well. Location doesn't matter. Bone code. Did we change the bone code to the OCDG? Description, yes. And here we have the But this is from the share and this is not what we.
+
+Hector Palacios:
+I'm going to delete that one code. This plan is layers. This is deleted. This won't share plan layer. OK. There's a little bit of everything, because with the visual maps data, I think that I don't need the attribute as key field. So I can get rid of that. Oh, here, blank layer. It's new, so it doesn't matter. Well. I think that we are getting somewhere here. But this will mean that we will need to have separate mass data for each pump type.
+
+ That shouldn't be a problem. It's not the best solution, I guess, for reviewing the bumps. But it is what it is. Ideally, the bumps should be more technical here. So if they want to check or change something, they should do it on Xperhan. Stay one to do it.
+
+UNKNOWN_SPEAKER:
+they should review the different formats. Yeah.
+
+Arun Singh:
+I'm just thinking of some, I guess, they will have to upload Yep. Manually, you know, most of them.
+
+Hector Palacios:
+But don't they, one day create it on S4HANA as well?
+
+Arun Singh:
+No, no. They will have it. Because they are not using system. They are not using EWDP or what?
+
+Hector Palacios:
+But on S4HANA they will create the manually, so I don't know.
+
+Arun Singh:
+I did it this short, but I don't think so. Well, if they need to maintain manually, easier.
+
+Hector Palacios:
+So they have one master data for each one, the web head for the additional completion code, et cetera.
+
+Hector Palacios:
+Maybe. Now, maybe we can. I'm not pretty sure, to be honest.
+
+UNKNOWN_SPEAKER:
+Can you join virtual master data? Can you? What? Join virtual master data?
+
+Hector Palacios:
+Join virtual master data with? Another virtual master data? So for example, if you create one virtual master data that for the world hit, one virtual master data for the case in one virtual data for the LHCA, then can we join in all of them into just one? That's a good question, because if we can do that, maybe we don't need to replicate the configuration four times.
+
+Arun Singh:
+I have never done that. Conjunction with so many virtual mass data.
+
+Arun Singh:
+I have created one virtual master data in one of the projects. It was like a master-master data, like a collection of all the data. And then through CIDS, we used to extract the information. But what you're saying, I'm not sure, Matt.
+
+Hector Palacios:
+I've never done that. Let's see. No. First of all, I need to assign the wrong code first, but from the virtual mass data. So what I'm saying is that if we, this what I'm doing is for the well-hidden mass data, I am assigning a wrong code. This one. So I'm bringing it from here. That's the point. If we consolidate, we need to bring it from the consolidated one. I don't know if I need it here.
+
+UNKNOWN_SPEAKER:
+Yeah, I need it here.
+
+Hector Palacios:
+Add to the OCD code, yes. And related to the customer ID, you will bring the one share, the one code. Here. You can create another planning layer in which this bone coat is. I don't know if we need it to be a root or not. Then we will need to do the explosion, so I guess that it will check this is the bone coat and will explode it to these materials. So the joint should be done here.
+
+UNKNOWN_SPEAKER:
+And your planning level is.
+
+Hector Palacios:
+This is the one material on code.
+
+Hector Palacios:
+Yeah. And limit the age of them.
+
+Arun Singh:
+This is getting more complex.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Singh:
+See, the easier method would be, you know, your bomb header and item right in them is customer or a sequence ID associated okay and let's say we have all the bomb information from s4hana okay and basically maybe CID through CIDS.
+
+Hector Palacios:
+In CIDS we need to do exactly that we are doing here.
+
+Arun Singh:
+Yeah. So CIDS will need to, you know, just take all this full additional attribute and then the relevant sequence ID will be updated in the BombWatch data.
+
+Hector Palacios:
+But it's not real-time.
+
+Arun Singh:
+It will not be real-time also, right? Because Planner has to update those value, right? So it will be after the update, then only we'll get this information. Either through rule-based or through CIDS.
+
+UNKNOWN_SPEAKER:
+Events rule-based will be periodic, right?
+
+Arun Singh:
+So that is why, you know, in the earlier master data, right, in the basket I have created well id also as one of the root because uh all these additional attributes value right will be updated uh you know on
+
+Hector Palacios:
+a frequently basis okay so then system has to pick the right bomb that's the thing yes it's not real time so the the guys will change say well hit type and this will not react.
+
+Arun Singh:
+Yeah, so even rule base has to be run, right?
+
+Hector Palacios:
+No, it's not right. It's triggered. Data you can clear some action.
+
+Arun Singh:
+So that is the case, but still you need to probably include the You need to do it.
+
+Hector Palacios:
+Once you do it, it should trigger a chain of actions. It simply will update the virtual machine layer And then we'll see. OK, let me think on that, Haroun. I will give it a second thought because that is the point that the bomb item, you need to to the bone code, but if you're bringing the bone code from another mass of data, probably it's not going to work well. Now, the bone code, not necessarily, because you are defining the list.
+
+ I think that we are just drowning. Because usually, when you have the bone conversion factor, for example, no attribute is defined on that mass of data. It's a compound. So this very well can be a compound as well. And we can bring the attributes from other metadata. So I'm just, this is not going to be an issue. Where is the, I am just thinking. Nonsense. So that should be the case. This shouldn't be a limitation.
+
+ Look, well, maybe as we are changing the routes, that can be an issue for sure. But let's see. You already did it, so I guess that when you change the root of this, it's because we didn't have this. Data yet in the system.
+
+Hector Palacios:
+It seems like this is going to be activated. Now I do this.
+
+UNKNOWN_SPEAKER:
+Ciao.
+
+Arun Singh:
+you Did they share any thing related to the data? The batching data has, you know, results, few queries. So did they correct it and send back to us? Or not yet?
+
+UNKNOWN_SPEAKER:
+Which data? Drilling? Tying?
+
+Hector Palacios:
+Yeah, yeah. Drilling, drilling.
+
+Arun Singh:
+Not tying.
+
+Hector Palacios:
+I'm drilling and we have no data. These guys are not being helpful. I see that we asked one guy from it's like an Indian Canadian guy that was working the other day okay and I seen that we asked them to provide like some bomb example so we can replicate it on the system so it happens to me like whenever I when I hear we talk with an end-user I said okay this is this guy is good he knows you know this is the guy I should be talking to and then
+
+Arun Singh:
+you have a I don't know.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Hector Palacios:
+I think that we are playing with the wrong people for that. Okay, so let's connect. Let's see if we can do the right assignment, if this is reactive. Let's see what is here. It's probably going to ask me why it asked.
+
+Arun Singh:
+All right. One more thing Hector in the drilling part right yesterday we were talking about the forecast consumption that it's not relevant but I saw more comments on that part in the document and they mentioned that it is relevant to the forecast consumption the MR thing is required for the forecast focus consumption, so not sure.
+
+Hector Palacios:
+Can you ask Sebastian if they check something related to focus consumption there? Yeah, yeah.
+
+Arun Singh:
+On the check-in machine, yeah. Here we have the word here, great.
+
+Hector Palacios:
+All right, then let's put some values here. So we have the wrong codes, that's right. Probably we will need to do some updating here just to to trigger the reaction. Then you have the customer material. Are we maintaining this in the customer material at the end? Yes. Did you move all the attributes?
+
+Arun Singh:
+Yeah, yeah.
+
+Hector Palacios:
+It's in design. Let's do something smart. It's inside channel.
+
+Hector Palacios:
+Or fill head.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+Can we check which ones will be changed here? Because we are filtering by world head. OK, world head we don't have. So we will need to put something, WH. Or do we have a wheelchair here? Let's check. Do we have a wheelchair in the back? No. Let's just meet up something. You you This one. And we have the well sheet.
+
+UNKNOWN_SPEAKER:
+Well sheet one.
+
+Hector Palacios:
+Water injector, lower saccum. Completion code to be. We just need to make sure to add the ID field for this.
+
+Arun Singh:
+Now we'll check virtual light.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+First of all I will...
+
+Hector Palacios:
+All right, looks good. Now let's put some values. And we will put another thing here as well. So we'll hit and just put either one as well. Let's remove the filter for now. Okay so I will put work here so just to see how this thing is going to react so we're here Yeah, right. Please change now to worship. Sure. Boom.
+
+Hector Palacios:
+Automatically, that's great. Let's go to the home exploration. So this is the one that we have by OSDG code, right?
+
+Arun Singh:
+Still here, like in item level, we need to modify, right? Because I don't know if we have item components or that respective valid code. Let's see.
+
+Hector Palacios:
+Let's start by the work plan. So we can put a number there. I need to refresh this. Well ID, well field, well type, completion code. But for the creation, I need to be just to create the combination I need Very few information. Okay, so we were working with which fears, which one was the code. You Thank you. For this one, we already had some sync.
+
+UNKNOWN_SPEAKER:
+It is in sync.
+
+Hector Palacios:
+I think it's fine. I think we already have something.
+
+UNKNOWN_SPEAKER:
+I think the OCDG code was 2bns, right?
+
+Arun Singh:
+Something in your virtual master data. And this is 2b. If you scroll down, I think.
+
+Hector Palacios:
+on create the combinations because as we say, change these tools, the G-code, then this work plan. Did you reload the data again or something like that?
+
+Arun Singh:
+No, no. I think it might be available when you have created a dummy data. Yes, but as we change the level of this, Let's try to create a new combination, then you will see.
+
+Hector Palacios:
+When you change from bone code to OST code here, we should have deleted, right? So I don't know why it is there yet. Usually, it gives you an error. So it's saying you are changing the mask data layer and so on. Let me see on the filter by something. Otherwise, we'll get it.
+
+Hector Palacios:
+Now we look at John. So we are Yep. First time I see it. Okay. Okay. We wanted to run it for the, which ones are.
+
+UNKNOWN_SPEAKER:
+Oh, BNS right?
+
+Hector Palacios:
+039.
+
+UNKNOWN_SPEAKER:
+Let's use other one. But the OCD code was different, right?
+
+Arun Singh:
+It was to be NS.
+
+UNKNOWN_SPEAKER:
+Let me check.
+
+Arun Singh:
+you I think for the other one, the combination is not selected.
+
+Hector Palacios:
+No, no, this is fine. Just one second.
+
+UNKNOWN_SPEAKER:
+So this is the combination that doesn't exist. Yes. Yes.
+
+Arun Singh:
+Now, if I change this to WH1, then you'll first see what they look like,
+
+UNKNOWN_SPEAKER:
+It's nice.
+
+Hector Palacios:
+So it's reacting.
+
+Hector Palacios:
+No, not this one.
+
+Hector Palacios:
+Let me just reactivate the component quantity just in case it starts because sometimes it's just a a matter of synchronization. Where is it on my thing?
+
+UNKNOWN_SPEAKER:
+Is it a different name? We don't have the configuration.
+
+Hector Palacios:
+At one point I told you because we are not going to get there yet.
+
+Arun Singh:
+It was giving an error, I think.
+
+UNKNOWN_SPEAKER:
+Well, yeah, the component quantity thing, right? Yeah.
+
+Hector Palacios:
+Yeah. And bone, here bone code. Save. Not the right one.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Hector Palacios:
+Okay, let's cross fingers that this doesn't give any error. Actually, when you are using this conversion factor key fields, you're always bringing the roots from a normal metadata.
+
+Arun Singh:
+Yes.
+
+Hector Palacios:
+The point is that usually it's not a virtual metadata.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Hector Palacios:
+you We'll be back in five minutes, man. Well, this is okay.
+
+UNKNOWN_SPEAKER:
+Thank you. You Bye.
+
+Hector Palacios:
+you you Okay, I'm back and I think that we have them. Let me save this.
+
+Arun Singh:
+you I mean learning area is that still? Yeah. Right now or? Yeah yeah with your wife only or with your parents?
+
+Hector Palacios:
+no only with my wife my parents are in chile I have a sister of 17 years old okay so yeah they're doing their life there oh okay but I'm coming back probably when? Uh this year I don't know half the year I don't know when is the best moment but for sure I want to go back my parents are getting old so I want to be there to make sure that they are game okay anytime I can come back in the future going to do a quick refresh of the data because usually this is the when we do this kind of stuff if we don't refresh the data after the configuration Yeah, it won't work.
+
+ Okay, this is good. Let's see how it reacts to the changes. So if we already have one for this, for the 1.0.2, but let's create the 1.0.3 is a good example. 1.0.3, because that one has the same OCD code. One word here.
+
+UNKNOWN_SPEAKER:
+Those two. But we should be having two bomb, right?
+
+Arun Singh:
+One for CDG and one for valid, right?
+
+Hector Palacios:
+Yes. It disappear. That's weird. It's like I can select.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+Ah, because I don't have any customer with that.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Arun Singh:
+But you have this customer, right? Only one customer, Z3039, right? So you will have two BOMs, right? Plus Verlet, right?
+
+Hector Palacios:
+Yeah. So I'm saying let's change the customer to see how it reacts. Seeing if we get to have that scenario. Yeah, that's why it's not letting me. Let's go. What if in one moment I just decide, no, it was this one. It shouldn't be a guess scenario again. It shouldn't be. Because it shouldn't exist a one for that. But I don't know. I think the best case scenario is to say, okay, I don't have a I haven't defined it.
+
+ So, let's create a plan for this one, for example. This, I am sure that it's going to work. So, let's see now this work that we have No assignment yet. And in one moment we will say, okay, now we have a boom for this. It does exist a combination. So we will create plant here. Didn't I delete that? No, that wasn't the idea. Let's take another one. The idea was like, I don't have it, then I it and it works.
+
+
+
+Arun Singh:
+But if you don't have it, then it should also work, right? For the main. For the main, yes.
+
+Hector Palacios:
+We need to configure the main as well. I am just doing the additional right now and the main should be always there.
+
+Arun Singh:
+So once we have both the bombs, then I think it should be fine.
+
+UNKNOWN_SPEAKER:
+fine.
+
+Hector Palacios:
+So now, okay, this is a good one. So I have also some examples here. And now I say this should have the, it's always the same what so I save it now that you know voila this is this is it you didn't have faith on me Arun no no I had man but I'm
+
+Arun Singh:
+still not able to Where is the main bomb code? This is for Vennet, right?
+
+Hector Palacios:
+Yeah, this is just additional. The main code, we will need to do the same. Only that the main code, the difference is that it will always exist, you know, because the plan will be assigned to this code from the beginning. So it will not be an issue.
+
+Arun Singh:
+It's like more simple. How would you create a main bomb then in your master data, right? Header and bomb item.
+
+Hector Palacios:
+Why have the word material requirement there?
+
+UNKNOWN_SPEAKER:
+Just a mess now. Okay, well, not here.
+
+Hector Palacios:
+Well, I will delete. I will explain to you the steps so you can replicate for all the other bombs and for the main one. Um, let me see.
+
+Hector Palacios:
+I think the solution is much better than expected. I don't want, ah, there it is.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+So let's start by mass data. We need to define this. We don't need it. Is mass data. So you will. First of all, we will need to have mass data for every bump. Okay so you can reuse this one as the main one but then you need to start replacing the the other ones the bone hair for the work head bone header for the yeah why because at the end we will have like different bone codes and they will have different attributes this is the only way to do it if we want to achieve this for now maybe then we see a more elegant beautiful solution for all of this, but at least this works.
+
+ Let's start putting in the list.
+
+UNKNOWN_SPEAKER:
+is for 1.
+
+Arun Singh:
+That's what I'm thinking now.
+
+Hector Palacios:
+The thing is, I don't know how to join in there at the end because we can create a different data for each point here. Yeah, for the item it seems like it's the same. I think that is the only solution because when we are doing the join at the end in that table in this one if I show you here so you see that we are doing the join between OCDG and customers right in the other scenarios we will have like multiple run codes for the same combination so that means that it cannot be a root you cannot bring that information from there.
+
+ Seems to me. But aside of that, there is complications. I mean, for creating an additional, for doing the same that I'm doing here to create the virtual master data, you need to use different rules for every case. In this case, we are crossing, we are doing the join with the web header, but in the next one, we need to do it with the additional completion code and so on. So yeah, it's going to be a complication.
+
+
+
+Arun Singh:
+It needs to be that way. But what about the main code?
+
+UNKNOWN_SPEAKER:
+It will only have OCDB code, right? Yes.
+
+Arun Singh:
+And then you will have like, so there will be only one bomb at a much later, but there will be four Yeah.
+
+Hector Palacios:
+Because we can create an arbitrary mass data with the same attributes, but then when you need to bring this into IVP, you need to decide which one.
+
+UNKNOWN_SPEAKER:
+From which mass data you're bringing the code at the end. Okay.
+
+Hector Palacios:
+The thing is how to join them, right?
+
+UNKNOWN_SPEAKER:
+I'm not sure.
+
+Hector Palacios:
+Let's try it together, maybe we can find, we can do it really quickly, maybe not.
+
+UNKNOWN_SPEAKER:
+Let's see.
+
+Hector Palacios:
+Header, let's copy this one. New. Header, pigeon code.
+
+Hector Palacios:
+Hopefully, there is something beautiful here. Like a double join. First of all, okay, I created. Now I will create a new virtual master data.
+
+Arun Singh:
+But you cannot do it in single master. Data, right?
+
+Hector Palacios:
+So I cannot create a join of two virtual masked data. That's the main point. I cannot select them. Then how can I do this?
+
+Arun Singh:
+But based on Vell and BombHeader, can you create a single monster at all?
+
+UNKNOWN_SPEAKER:
+In this one?
+
+Hector Palacios:
+No, because I have the join conditions. Here I have the WorldHit, for example. So this works only for the BombType WorldHit, as soon as we are on the linear kanger. Cementing coat, we need to do the join with that one. We cannot have the two joins at the same time, it's not going to work. Because for the Lighthanger cementing coat, this attribute usually is going to be empty, so we'll fail, we'll not do any join.
+
+
+
+Hector Palacios:
+we can create different master data the point is that then later I don't know how to join them in a single master data you can probably create a reference master data and then include all those virtual master data do you think so let's say I haven't worked a lot with this one but maybe compound no I don't think that is that's going to work as well the other way you need to be from scratch here is not just.
+
+
+
+UNKNOWN_SPEAKER:
+Other options.
+
+Hector Palacios:
+Let's create it for the meantime, then we can sync on average.
+
+Arun Singh:
+Can you go back to Excel, your master data? So I was thinking that Oh, we're done.
+
+UNKNOWN_SPEAKER:
+Well, okay.
+
+Arun Singh:
+Can you do one thing, Hector? Can you bring the well-planned at completion code and well ID level and bring all the other information like wellhead, planning their activities in this master data. So what I'm trying to think of that if we have one completion code and we have one well ID in the base planning level of well plan and we have this different source ID code that is let's say OCDG code or we have main bomb then we have wellhead.
+
+ Ideally, it should work.
+
+UNKNOWN_SPEAKER:
+Just a minute. I think it's something different here.
+
+Hector Palacios:
+Maybe we can have the four, but not necessarily they need to be like the front end for the user. So the user will see one. Out of this mass data, we will create the four additional mass datas.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+I was thinking here that we have the wellhead code, we have the OCTG, the custom ID.
+
+Arun Singh:
+Basically, if you can get all the attributes right in single most data in this virtual let's say that would have been great so so yeah we can do that but it will require really let me do something like this
+
+Hector Palacios:
+now I will show this So I will be... How do I have a hierarchical one here? Isn't that one too many?
+
+UNKNOWN_SPEAKER:
+Hierarchy, exactly like this.
+
+Hector Palacios:
+Great. So let's sync for now on the long here. Yeah. So let's grab this one.
+
+UNKNOWN_SPEAKER:
+And that.
+
+Hector Palacios:
+So the text that I put there is not related to the shape or doesn't matter. So this will be a bone code, right? Then you will with master data rules, you will create one header, hostd, you will create the same, you got the idea. This is the virtual master you are talking about, right? Yes, these are going to be Completely related to that one. And here you will have. Gold. Oh, Steve. From from code oh yes from code See.
+
+
+
+Hector Palacios:
+that's it so for the user they will see this only on the system and with the bomb type and so on when you come here you will do a join as well or you you will put a filter I think I think we can feature or not.
+
+UNKNOWN_SPEAKER:
+Doesn't matter, doesn't matter.
+
+Hector Palacios:
+What you will have is the join, right? So what you expect is that in this math data in the main one where you have the one here you will have only the existing um you for example if we have three bombs it's not like for the one zero two one is that you will have here the additional competition code one and the line hanging in one as well right it's not like that it's just one bomb for the wh so and BOM type.
+
+ This WH indicates that the only attribute that we should have here is that one, wellhead1. All your ones that are not OCDG should be empty. In fact, we need to reorder this a little bit. I don't know if we can save it, but we can teach to the user to do this OCDG code. Type.
+
+Hector Palacios:
+field world type completion code even the casing that is something that is not completely clear but we are very very close so only this one so then you will do the join versus this attribute so you will create in the virtual mask data will create only the ones that have So in a way, this is going to define the filter. You don't need to have one. It's going to be like that. And we'll create a virtual master data for this one, for this one, for this one, for this one.
+
+
+
+Arun Singh:
+For the one item, probably it's going to be the same. But how do you update a wh or lhcf will write in bombheader master data we don't need to uh the only thing that we need to on that master data is to have the their bomb code id okay no but you will need to write those other attributes right then only you will be able to create this different version of Australia, right?
+
+Hector Palacios:
+There can be just some multiplication. I mean, you can just create it for the code that you need for the bone code OCDG and you create the virtual master data behind with exactly, it's exactly the same four times. The only thing is that it will explode only what you need.
+
+Arun Singh:
+No, I understood that part. I understood that part. So see, there are two things. One is your, uh, well master data, where you will be having the actual source value getting updated. Then you have this bomb header, right? In the beginning. So how this bomb header will be updated with those attribute values through ring or rule-based or through virtual master data?
+
+Hector Palacios:
+Yes. Our reference is the same, right? So at the end, we just need to map into another attribute, but maintain the same structure. So you can do this technical item as the data that will work with the logic in the background.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+The user don't see it.
+
+Hector Palacios:
+So let's check again. So now with this one. So this one. So yeah, just one BumpHeaderMaskData, you create four of these ones, BumpHeaderWorldHead, doing the cross between the attribute that matters. In this case, remove the word head and replaced by the additional computation code, the same here. But all the other things will remain the same. We will need to add category here as well. Probably category will need to be an additional filtering.
+
+ Basically, all the customer attributes that are going to be in two places, they need to have this relationship or yes, they need to be equal. So we cross only what is needed. What is important, right? And not other things. But do we need this bomb header helper attribute? No, no, no, not right now. Only in that we need customer OSTG among code. Well, here it is not necessary, but it's good to see it just to do the debugging to check if this is working.
+
+ But no. Nothing else. So, replicate this four times.
+
+Arun Singh:
+So, I need to create three different master data. What's the master data based on this one?
+
+Hector Palacios:
+Wellhead. Okay. And Addition. Okay. Four. Worksheet, and LengthHangarSementingCode.
+
+Arun Singh:
+Wellhead is already there, right?
+
+Hector Palacios:
+but yeah but for the item you will need the viewer ones as well because you know we have you you will need to change them yeah I will create an example replica on this one not exactly you need to change there you need to create the different codes different codes right okay yeah I think that you can create it right here so it's not going to be an issue it's like,
+
+Arun Singh:
+So same attribute cannot be used, the BOM code.
+
+Hector Palacios:
+No, because at the end you need to bring the You need because what if you put the BOM code in all the four master datas, right? But the BOM code will be updated based on this one, right?
+
+Arun Singh:
+Based on the filter that you specified.
+
+Hector Palacios:
+Yeah, but if all these ones has the same bone code attribute, from which massive data then you will bring it to the planning level? You have four. So you need to create four?
+
+UNKNOWN_SPEAKER:
+Yeah. Okay.
+
+Arun Singh:
+That is the technicality at the end.
+
+Hector Palacios:
+We need to separate in such a way. That's why we were thinking in a moment like this. Like four key figures. It's always four because we have four different definitions. Now, the point is that if you maintain one bone code, then when you go to the planning level, which one do you select?
+
+UNKNOWN_SPEAKER:
+From which massive data you have four?
+
+Hector Palacios:
+If you select from here, then only this is going to be valid. The other trees are not going to work.
+
+Arun Singh:
+How you will do this? Right? Of all these four different key figures.
+
+Hector Palacios:
+You will do it.
+
+Arun Singh:
+Material and, uh, well, I did. That would work, right?
+
+UNKNOWN_SPEAKER:
+Yeah, then you need the four different key fields.
+
+Hector Palacios:
+So you will have the different BOM items. That means that you will have... Now we have an issue here, component quantity.
+
+Arun Singh:
+I thought we will have code ID across the different modulator.
+
+Hector Palacios:
+It will be the same. The attributes will be different.
+
+Arun Singh:
+It's just to make the differences. But then your web plan will be in the same attribute, right?
+
+Hector Palacios:
+In the bound code, right? Yeah, the point is that for this combination of web ID and and bond code of ctgcode. You have a wild id1 or ctg1 and then you will have like different bonds. So you need to have different bond codes. 101, 102, 103, 104. Each one of this will bring you different materials, right? The problem is that if we put it on the same attribute, it's like the conditions doesn't let us to have one of your famous data for bringing all the codes in just one massive data.
+
+ So we will have four mass data with different conditions. This is the wellhead condition, sorry, the OCDG condition, wellhead condition, DCE condition, LHCA condition. When you have different bombs, So then when you go to the planning level, you need to assign the BOM code to the planning level. So if you select from each one of them, you will dismiss the other ones. So you will need to have this kind of stuff.
+
+ So BOMs.dg, BOM code, workhead.
+
+Hector Palacios:
+This one. So it will be like this. So on the planning level, on the planning level at the end you will have four different attributes, right?
+
+Arun Singh:
+And I think this will cause an issue, okay, Victor. If somebody wants to view the well plan at aggregate level, right, so it will count as four wells, okay, instead of one well plan. Because I think you're bringing one single well plan onto the four different levels.
+
+Hector Palacios:
+No, the well plan won't see this. I mean, they don't have the wrong code. I mean, if they bring it, yeah, for sure. But remember, this is additional attribute, it's not bringing combinations. So that means that when you go to the planning view, you will see, you won't see this, you will see this. Sorry, it was just explaining but in reality, it's like this.
+
+Arun Singh:
+So if I check in the system right now, right? Technically, the well plan is at bomb code ID level, right?
+
+Hector Palacios:
+Yes. Okay.
+
+Arun Singh:
+Yeah, there is one bomb code ID, which is nothing but let's say OCD record. Okay. But now then you are creating a different bomb Let's say for wellhead 1, there is bombcode id 1, 2, 3. So now this well plan, how this well plan will flow to bombcode id 1, 2, and 3. You are creating different attributes, right? Yeah.
+
+Hector Palacios:
+Following the logic that we did. So now you follow the same logic. You create another bombcode, you assign the bombcode to the planning level, and then you have this one.
+
+Arun Singh:
+No, no. I understood that logic. I understood that logic. That your well plan is at bound code ID level. The other three attributes of bound code ID is not there. In the base planning level of well plan, right?
+
+Hector Palacios:
+But this is not the same. Remember this is the concatenation, lc, chuby, injection, whatever will be the category.
+
+Arun Singh:
+But the attribute ID is code ID, right? It's not ID 1, 2, 3. How we will desegregate that well plan from OCTG to 1, 2, 3 are the letter words. I hope you understand my point. So you will need to have 40 figures.
+
+Hector Palacios:
+So this is a well plan will be the input for all these 40 figures, well plan that we have all the codes. So you will have the bomb, the explosion for the OSDG Explosion. In the OSDG Explosion, you will have the following. You will have the bone code of OSDG, the materials, and component quantity.
+
+Arun Singh:
+No, I understood this part. I'm not questioning this one. In the initial stage only, right? So let me share my screen. I think I'm not able to explain it clearly. We have this well-planned, right? And the planning level of this well plan will be stored at this form code ID, right? Form code description. This is for OCDG. But what about the other one, LHCA? All those attributes are not there, right?
+
+ Here. So this well plan, how it will flow from this key figure to that level of attributes?
+
+Hector Palacios:
+We have to select the attributes, right? Right here, we need the with the wellhead right so you have the wellhead on the custom master data table you have the osdg code and in the virtual machine data we have osdg code and wellhead and wellid sorry but we identified from the wellhead all the wellids that applies to this so on the concatenation of osdg code and the wellids from that wellhead we bring the completion code no no I'm not talking about bringing the completion or how
+
+Arun Singh:
+we will bring the well-planned from this form code to those other attributes because you are not multiplying well-planned with respect to the component quantity of this, right? So, other like LHCA, right?
+
+Hector Palacios:
+So, if we have well-planned at this panel level.
+
+Arun Singh:
+Because we have the well plan at this level and the wellhead code is also available at this level.
+
+Hector Palacios:
+No, no. What you said is different.
+
+UNKNOWN_SPEAKER:
+It's not only OCDG.
+
+Arun Singh:
+No, no. But bomb code description is there, right? In your master data, this is there. But now you're saying that we need to create a different bomb code ID, right? Attribute.
+
+Hector Palacios:
+Yeah, but for the v3 master data. So that one, yeah.
+
+Arun Singh:
+This one. So then how it will work.
+
+Hector Palacios:
+You will bring one from each mass data, right? So you will have each mass data 1, 2, 3, and 4 and you will bring bone code 1, 2, 3, and 4.
+
+UNKNOWN_SPEAKER:
+I don't know how it will work, man.
+
+Arun Singh:
+From well-planned to this different levels, right? The calculation that we are doing is but the input on the starting point, I don't know. I did not get the idea.
+
+Hector Palacios:
+Let's do another one.
+
+Arun Singh:
+I can create the master dev, but I'm not sure man, how the well-planned, right?
+
+Hector Palacios:
+But I don't understand. I mean, we are, we are already with the budget, right? So what is the difference with LCH?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+So what I'm saying that Z bomb code, right? This attribute will be used in other metadata or not. No, no.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Hector Palacios:
+So now the well plan is that Z bomb code, right?
+
+Arun Singh:
+No. Okay. So OCD, okay. Okay. Now OCTG, and now we have different bomb code for LHCA. It's a bomb code one, right? Then how the web plan will be, you know, visible at that level?
+
+Hector Palacios:
+Web plan doesn't need to be visible at that level. It's the next key field.
+
+Arun Singh:
+Web plan material requirement. Okay.
+
+UNKNOWN_SPEAKER:
+Okay. We can test now. Got it?
+
+Arun Singh:
+No, no, I still have, I still have that one. That's fine. We can test now. But I can create this monster data, for sure. I can create this monster data.
+
+Hector Palacios:
+No, there is one complication that I need to sort out right now. It's like, we have the different completion codes, but the component quantity that is indeed The completion code quantity is... We will need to use mass data rules for this one. Yeah, the item we cannot create it with the... We have a simple solution for that as well, master data rules. Why I'm saying, because from the item you need to bring the component quantity that is an attribute of Kefir, and we cannot bring that from a reference master data or a virtual master data.
+
+ You cannot bring attribute of Kefir. So, let's read the other one. Let's do what I'm thinking in general for the first two, and you complete the other three ones, okay?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+So, let's add new C bond code, code hostd, and search.
+
+UNKNOWN_SPEAKER:
+That's enough.
+
+Hector Palacios:
+I'm just taking the opportunity of creating everything at once.
+
+Hector Palacios:
+right? Notice one. So this sink is going to be equal to the one code. I need to delete this one first, but then you have it. We have different And what is the length of that one there?
+
+Arun Singh:
+I think it was 40. You created this now?
+
+Hector Palacios:
+Yes, I will need to delete this. Can I change that?
+
+Arun Singh:
+Yeah, you can increase it, but you can't.
+
+UNKNOWN_SPEAKER:
+This one?
+
+Arun Singh:
+You can change it to 40.
+
+UNKNOWN_SPEAKER:
+Great.
+
+Hector Palacios:
+Let's see now if reacts automatically or we will need No.
+
+Hector Palacios:
+And we do exactly the same for the other one. Oh, hey there. Um, let's do that.
+
+Hector Palacios:
+This one is not the one that additional completion code. There should be another one. This one we will need to change it.
+
+Arun Singh:
+I think you already have created an additional completion code. It's just the name is not updated.
+
+Hector Palacios:
+I think it seems so.
+
+Arun Singh:
+Yeah. Yeah.
+
+Hector Palacios:
+name I think this one is that is the one that we need to use so let's remove this as we will remove this part Road.
+
+UNKNOWN_SPEAKER:
+Page.
+
+UNKNOWN_SPEAKER:
+We will need to remove some configuration.
+
+Hector Palacios:
+and to make this change be this enough yeah great but either way I will need to remove something there this is going to be all ctg and here will be closed in this window. What are your main ones?
+
+Hector Palacios:
+As you know, OCDG, we will need to do it normally.
+
+Arun Singh:
+It will be normal, right? We don't have to create virtual mass data.
+
+Hector Palacios:
+It will be an issue because we, if we don't do it normal, if we don't do it normal, then here with this cross crossing that we have here, it will bring everything because you have exactly the same OCDG code for the webhead for the land hangar code and so on. So there we need to find out a way to put a filter, maybe the BOM type, we can use it as a filter there as well.
+
+Arun Singh:
+But I think virtually cannot use filter if I remember.
+
+UNKNOWN_SPEAKER:
+No, we don't know.
+
+Hector Palacios:
+But on the configuration when you are doing the component quantity multiplication, you can do So maybe in the key figure level, right?
+
+Arun Singh:
+But let's say in the master data, often the value will be visible.
+
+Hector Palacios:
+Let's do one that is not the OSTG. The OSTG is logic, like the old logic. We don't need to get to the wildcat code and so on. We can sync on that one later. But let's sync on the main one set. The big difference in OSTG is that we don't have the additional attribute that will help us to do the crossing. So let's keep it on, let's park it out. I will bring the other one, ACC. The main one we can do The main one doesn't matter because it's always going to be visible.
+
+ So it doesn't need to be reactive. It's not that it's going to go on the planner and change the world type and this will be a trigger. It's not like that. It's always trigger. So that one we can trigger with a master data rule. We can do the master data rule that every time that we integrate this, it copies only the main ones. Into another master data that we use for this. We can do it with master data rules instead of virtual master data.
+
+ Let's go with the DCE. So that is not going to be an issue. It's the reactiveness that's the problem. Bounger, customer again. Now we are going to cross against this one additional completion code. We remove this one, we don't need it. I need to wait. setBomCodeDigitalCompletionCode or DCE BomCodeDCE or TBC so I remove this one I bring the DigitalCompletionCode here as well Here is the sit bone code.
+
+ And this is the completion code. Done. So we have two now. Let's go now with the master data rules.
+
+UNKNOWN_SPEAKER:
+Manage master data.
+
+UNKNOWN_SPEAKER:
+Hold on.
+
+Hector Palacios:
+OK, so we are following rules here. Then we can just copy changes, whatever. But this should have an OMRO part. We should have a nomenclature here.
+
+Arun Singh:
+For drilling, I think I've drilling something, starting on training. Have you created one? Yeah, I created one only for the common items. Just search for drilling. Yeah. Let's create something quick.
+
+Hector Palacios:
+Then we can check drilling bone item. This doesn't need to be real time as well. As soon as we have the bone from the system will be created automatically. Target mass data. We haven't created. So we will take one here item, we will just copy this one.
+
+Hector Palacios:
+sitcom quantity cd cd and the code sitcom code you This one out. This one out. The name.
+
+Hector Palacios:
+I see. Oops. Oops. I just missed like two minutes, two minutes.
+
+UNKNOWN_SPEAKER:
+So shit.
+
+UNKNOWN_SPEAKER:
+When do we have the day?
+
+Hector Palacios:
+I think it's late today. I don't know why this is taking so long. Let's go with the WDH first. Item. To start again. You I don't see it. It's not a special metadata.
+
+UNKNOWN_SPEAKER:
+Ah, activation. Quick. Okay, now this one.
+
+Hector Palacios:
+here. Okay, creation, update, allow, deletion, allow replacement. I don't know why it doesn't let me automatically. Maybe it was. So use one of these.
+
+Hector Palacios:
+Oops. This is wrong.
+
+Hector Palacios:
+Now we have two conditions here.
+
+Arun Singh:
+We do have filter. I think it may under Um, I think that for applying the filter, you're right.
+
+Hector Palacios:
+We should bring it if you want to use it for now. For now, let's just copy whatever we have.
+
+Hector Palacios:
+will not make a difference.
+
+Hector Palacios:
+We can fulfill this with a must data rule later, but just to avoid to have too many records on the other one.
+
+Arun Singh:
+I will put it here.
+
+Arun Singh:
+Okay. Okay. Hello.
+
+UNKNOWN_SPEAKER:
+Are you getting there?
+
+Hector Palacios:
+We are getting there. Nice man. Just one minute.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+And can we just copy this?
+
+Arun Singh:
+I think you can.
+
+Hector Palacios:
+you It's not active yet.
+
+UNKNOWN_SPEAKER:
+The Okay.
+
+Hector Palacios:
+c e c e and there should be automatic so that means that whenever you change a value on the original it will trigger a copy automatically to the next one yeah this is iteration then we care about the iteration and then the normal one and this will be in the background automatically okay I think that we have the the two cases now I need to delete the key fears the I need to add to the planning letters.
+
+ First of all create the wrong name there but that's fine here.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arun Singh:
+Here the trick is only bring the information. This one and this one, not a big deal.
+
+Hector Palacios:
+Here is the same. The other one will be an issue because we will need to have one by each component quantity.
+
+UNKNOWN_SPEAKER:
+Boom, here again. Root, root, root. Thank you. Yeah.
+
+Hector Palacios:
+I think that here we need to add all the attributes as well because in the original we don't have product so if we want to bring the material mass data we need to do it here. That's why we have it like this.
+
+UNKNOWN_SPEAKER:
+Thank you so much.
+
+Hector Palacios:
+Okay, I created this, then I create the next one.
+
+Arun Singh:
+All your time I think would have been consumed in a meeting only.
+
+Hector Palacios:
+Yeah. I don't like it. So that's why I said to Vasya that let's divide. Makes only sense, right? Is we cannot be in all the meetings.
+
+UNKNOWN_SPEAKER:
+Exactly. The naming, this is naming should be DC, right?
+
+Hector Palacios:
+Was a testament just to see if you were paying attention.
+
+Arun Singh:
+I'm not.
+
+Hector Palacios:
+You are, you are. Okay, let's see. Now that I have the planning layers, I just bring the attribute ASCII figure from the new mass data. Component quantity.
+
+UNKNOWN_SPEAKER:
+BCE. BCE. 70.
+
+Arun Singh:
+We are doing something extraordinary. It's a very complex web. Yeah, I wasn't expecting demand to be that this is complicated.
+
+UNKNOWN_SPEAKER:
+For me, complicated.
+
+Hector Palacios:
+I was saying all the time, no, demand is an input. Demand is an input. Now I have all this weird stuff. Demand planning is always like this. Always you're doing weird stuff, not like planning inventory planning you say no this is what it is yeah all right okay so we have the conversion factors now we need to have just the different material requirements explosion for I would create it as a I would create it as a I'm sinking.
+
+
+
+UNKNOWN_SPEAKER:
+As a health care, but all condition that these.
+
+Arun Singh:
+So we will simply be as now. In the same key figure, you can achieve it right? The the all conditions.
+
+Hector Palacios:
+I don't know because we will have the same the same planning level.
+
+Arun Singh:
+But based on the bound types condition, right? Probably you can do it. But yeah, it's better to have separate view figure. No worries.
+
+Hector Palacios:
+No, it's the point. Yeah, I know what you're saying about the planning level. The output planning level is for all of them is the same. So we have one calculation by Kefir in the same planning level.
+
+Arun Singh:
+Yeah.
+
+Hector Palacios:
+Can we? Let's see.
+
+Arun Singh:
+At the end, we're going to limit it to then.
+
+Hector Palacios:
+No, no, we cannot, because the, yeah, the complication is that.
+
+UNKNOWN_SPEAKER:
+Oh, God.
+
+Hector Palacios:
+You can have a sub, because I was thinking like, let's put the full calculation in the same level, I see. One, two, three, and four, but it's the different plane layers. So you can put only two.
+
+Arun Singh:
+Yeah, yeah, the bomb zone is.
+
+Hector Palacios:
+But I think at the end, probably you need to like probably uh everything needs to be aggregated at material and location customer level okay I will be back to that one I will copy where lan mat rick oh I
+
+Arun Singh:
+just copy the name wrong.
+
+Arun Singh:
+And Kunal is saying that all the supply document is ready for approval, except reading the few comments. There are some focal points that were discussed in today's meeting. But he has mentioned that time also can be sent for approval. But I have not worked on those few points so far. I don't know if he has checked those points.
+
+Hector Palacios:
+Which points?
+
+UNKNOWN_SPEAKER:
+There were three.
+
+Arun Singh:
+There were four points that Rahul has mentioned yesterday. I worked on only one. And for the other three, I was waiting for Rahul's inputs. I think he has sent his reply. But I don't know. Kunal is saying that the document is ready for approval.
+
+Hector Palacios:
+This is Kunal's responsibility. He didn't get it right.
+
+UNKNOWN_SPEAKER:
+Okay, now I have a doubt here.
+
+Hector Palacios:
+It's not giving me any issues. But I think that we can have an issue with the planning layers. Maybe we will need to replicate for the planning layers and so on. I think that will be the case because from this multiplication, there will be missing some primitives.
+
+Arun Singh:
+But let's say if we get there, then it's fine.
+
+Hector Palacios:
+But if not, what we need to do is to have one by each and then just to add in our final one, planning level that assume all the figures.
+
+Arun Singh:
+Maybe we can remove the bomb code in that stage. Yeah, that is what I was mentioning. In the web time, we should probably remove the bomb code. Do you know, currently in India, there is a big festival going on sorry what yeah it's a big so currently in india right there is a big festival going on which will uh last for about a month or half one and a half month okay right now it's yeah yeah it's called mahakund and where is that so basically uh like a lot of uh hindu devoting right or from other religion also.
+
+ They will go to this place called Prayagraj. It's in Uttar Pradesh. It's one of the state in India. So there is this river called Ganga. It's a holy river for all the Hindus. So basically, these events will occur every 6 years or every 2-12 years. And right now, this event occurs in 144 years. Once. Okay.
+
+UNKNOWN_SPEAKER:
+Yeah. 144 years.
+
+Arun Singh:
+So like one in a life then.
+
+Hector Palacios:
+Yeah.
+
+Arun Singh:
+One in a life event. So basically what happens it's so there is this history that what do you call? The immortal immortality thing, right? So that was good. There was God and devil. OK, so they were fighting for this immortality. And so it was like a water in a liquid form. So it's a story. So some of the liquids. So like one of the God was taking this holy water and some of the drops of fallen into this particular four places.
+
+ So one is like this Prayagraj. So basically all the saints, all the clerics, the big level one will, you know, take a bath in the morning for this one and a half months. So it says that, you know, your mind, your souls get moksha. There won't be another reincarnation of you. It's like you are done. You will join the light.
+
+Hector Palacios:
+What do you say after that?
+
+Arun Singh:
+The Nirvana? Yeah, you can call it Nirvana. Moksha is Nirvana. You won't reborn. You will be joined to that big light. Eternal. Yeah, eternal. It will be eternal. And it says like the government is expecting expecting around 40,000 people will be coming to the place. So all those people will be taking bath in the Ganga river. So it's one of the biggest event. Are you taking part of that? Are you going?
+
+ I wanted to, but due to the ad hoc, I need to get one more life to complete the adnog activity. Yeah. Yeah. So, uh, my, uh, mom and dads, all the older people, right. Uh, elderly people are going actually from my family. I wanted to, but yeah.
+
+Hector Palacios:
+Do you say that if you want, if you go, you need to like spend the whole day or something like that?
+
+Arun Singh:
+No, no, no, no. But it's, it's far from here. So if I want, if I want to go there, right. One day will take me to reach there. And one day will take me to come back to home. And then like one day I need to stay there. What about the weekend? Weekend is fine. I think two days, but I need one additional One more day.
+
+UNKNOWN_SPEAKER:
+Hmm.
+
+Arun Singh:
+So, uh, so this, uh, Steve jobs, wife, right. Uh, she's also the, like, she's there for an entire month. Steve jobs, Steve jobs, wife, the upper founder, right? Yeah.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Singh:
+So, so his wife is also there like a lot of, uh, Hollywood celebrities, uh, you know, are part of this event.
+
+Hector Palacios:
+And you know, I can expect a promise. Steve jobs I think that he was like very spiritual yeah he was he plus mark zuckerberg they were both very spiritual the other ones I don't know maybe they do it more mostly by tourism but steve jobs probably he was like in down trance yeah the beatles you know they were also I'm betting the Indian culture in one time.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Singh:
+Yeah. But you, but you should, uh, visit Indus, you know, once in your lifetime. Okay. You will get a lot of different origin of India.
+
+Hector Palacios:
+Okay. Yeah.
+
+UNKNOWN_SPEAKER:
+Yeah. For sure.
+
+Hector Palacios:
+Once in a life. What is the best city to go?
+
+Arun Singh:
+See, if you want to know, The true Indian culture right or you should visit the oldest city in the world, which is the Varanasi It's a it's a blissful place. Okay, Varanasi It's a city. Yeah, it's the oldest city in the world. Can you write it? Yep India is a big place.
+
+UNKNOWN_SPEAKER:
+Yeah. Too many people.
+
+Arun Singh:
+Yes, but too many people in the city. But if you go to this, uh, smaller city, right. There are less number of people. Okay.
+
+UNKNOWN_SPEAKER:
+Yeah. Where is the Taj Mahal?
+
+Hector Palacios:
+It's like the Taj Mahal, where it is.
+
+Arun Singh:
+Taj Mahal is in the same state that I was talking about. Oh, yeah? Yeah, yeah. So like most of the, this is the state name. It's Tar Pradesh, OK? Varanasi, Prayagraj. All these main, main important site are in Uttar Pradesh. This is one of the state in India, one of the big state. But Taj Mahal is not like they have commercialized Taj Mahal.
+
+Hector Palacios:
+But it wasn't difficult. I assume it's a TV renaissance. I think that we are not going to create. I've seen this. Isn't this like where the people is bathing in the river?
+
+Arun Singh:
+Yeah. So this is the Ganga river.
+
+Hector Palacios:
+This is the only river. Is where the people also is like you have corpses of people that died or something like that?
+
+Arun Singh:
+Not really. So no. We have cremation places near the bank of this river. But for some unknown bodies or something which are discovered, then all those bodies will be thrown away in this river. But there are cremations around here. So this is one of the oldest cities.
+
+Hector Palacios:
+in the world actually I don't doubt it it's crazy it's torture you know like so many years when you talk about india you talk about thousands of years I'm not used to that I'm from a country that is like
+
+Arun Singh:
+200 years old yeah so this place dates back 5 000 years 5,000.
+
+Hector Palacios:
+It's crazy. 5,000? Yes. Is it here again?
+
+UNKNOWN_SPEAKER:
+5,000, man.
+
+Hector Palacios:
+It's like human mind is not able to comprehend that. We live We understand years, maybe a decade. I'm not sure if we can understand a decade. 10 years, you know, it's like too much for us. We live like 100 years if you're lucky. How can someone understand what is 5000 years? It's outside of what is principally in chile yeah my grandmother uh he's around 90 plus 90 plus yeah yeah my grandmother from the other side he lived until 90 98 I think or 92 probably 92 I think that maybe she was older but we didn't know because in that time in chile when you were born and you went to the government offices to register that you were born.
+
+ It wasn't like that strict, you know? So people maybe was born and then in a couple of years they put you that you were born. So maybe she was also...
+
+Arun Singh:
+we don't know.
+
+Hector Palacios:
+She was a... A woman of the country she didn't she didn't know how to use money she barely knew how to read you know okay yeah okay so we have this whole logic man and now we want to check if the bomb explosions are happening I lost one last data here.
+
+UNKNOWN_SPEAKER:
+Let's see why.
+
+Arun Singh:
+I think you have filter, right?
+
+Hector Palacios:
+No, it's a, I think that I changed it for another one. Let's see. DCE. And now DCE. Something in the name, but no problem.
+
+Hector Palacios:
+This is DCE and this will be.
+
+UNKNOWN_SPEAKER:
+We are also missing.
+
+Hector Palacios:
+No, that doesn't matter. I'm sinking on when you remove this filter.
+
+UNKNOWN_SPEAKER:
+Right for DC.
+
+Hector Palacios:
+Yeah. When you do that. Yes. The lower one. Yes. But here from here, yes. Nothing. Oh yeah but we can use the same customer I think yeah yeah we can use the same dashboard yeah let's use the skip that filtering but we are missing the component uh item normal one very easy I will need to go back because as we remove that component, now we don't have it.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+Okay, not a big deal. Let me save this. The point is that we have no attribute related to the mask data, to the blinding area.
+
+Arun Singh:
+Maybe because I need to All your doubts for me.
+
+Hector Palacios:
+And let's forget about that. Let's activate, let's add the attribute as keyfigure. We will need the, did I delete that plain layer? Yeah.
+
+Hector Palacios:
+After this we stop a little bit. I'm running out of time. Okay, so we have the phone code. This I will just leave it because at the end I will share with you all this stuff.
+
+Arun Singh:
+Yep. Once this is done, I'll follow the same logic and create the other two master data. Yes.
+
+Hector Palacios:
+And for the, for those, did you remember that probably we will need to do it as a mass data rule. Data rule, right? It's the only way that we can place a filter.
+
+Arun Singh:
+So we need to add bound type, right? Yes. So these ones, why they are not being created, these ones? I think the DC is not updated.
+
+Hector Palacios:
+But this also is not included. This is a simple one, right?
+
+Arun Singh:
+Yeah, this one.
+
+UNKNOWN_SPEAKER:
+Yes. All right. All right. All right.
+
+Hector Palacios:
+And this is great. That's fine. This is not created. You see, because we don't have anything related to that. Yes. We can use the same one and say, um, no not the same one here we need to for sure yeah I will need to remove that no no I don't need to I just can came here where is that um shoot ah I think that I could select if have this local filter or not here. Can I just say, no, I don't want it.
+
+
+
+Arun Singh:
+Yeah, you can, I think.
+
+Hector Palacios:
+Just click on that filter condition. Where is that? Here?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+It doesn't seem like that, that you have an option. In the planning views, yes, but here I don't, I'm not finding it.
+
+Hector Palacios:
+This is not right. This will be a DCE one. No, this one, because I don't think that we have combination for this. We don't have this. And additional competition code. Uh, accs you want.
+
+Hector Palacios:
+We can use the same one. Give me one minute man. You can use the same one.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Singh:
+Give me one second please. Okay.
+
+UNKNOWN_SPEAKER:
+you Payments for additional completion code.
+
+Hector Palacios:
+Supposedly, only this is not working.
+
+UNKNOWN_SPEAKER:
+Why?
+
+Hector Palacios:
+complete your code.
+
+UNKNOWN_SPEAKER:
+you Ah, yeah.
+
+Hector Palacios:
+Won't work. What can I do here? I don't have this combination. Seems that that's the reason. No, no, this is not the reason. So what we are doing we're joining the nice that says field type okay makes sense Let's change it. Beautiful.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Arun Singh:
+I think we need to just update the bomb item. All right. Then we'll get the exclusion for additional completion code as well.
+
+Hector Palacios:
+Give me a minute, man. I'm talking with us.
+
+UNKNOWN_SPEAKER:
+Okay. Okay.
+
+Arun Singh:
+you All right, I'm back, man. Hello?
+
+Hector Palacios:
+Yeah, I'm back. So it's working.
+
+Arun Singh:
+Let's see now what we are missing is the component quantity. You have applied for set case 0.045 it has both wellhead and DCE plus OCDG, right?
+
+Hector Palacios:
+So three bombs, right?
+
+UNKNOWN_SPEAKER:
+Okay. Is it correct?
+
+Arun Singh:
+My understanding is correct?
+
+Hector Palacios:
+Yeah, yeah. For the same well, we are having the DCE and the wellhead. So now I'm sure that the master data for the wellhead is working fine. Now need to check the well item, sorry, the bomb item. So let's see the master data that we have, the one that is not letting me save. The one here, bomb item, bomb. Boom item now boom header wellhead boom header dce boom item wellhead boom Item BCE. So let me, the first thing that we need to do here is, I think this is all we have.
+
+
+
+Hector Palacios:
+let's start by doing this reloading and this is wh and this one is the ce so let's give it a minute because usually this will start running in the background I don't know how real time it is but I'm sure that that it should trigger something.
+
+UNKNOWN_SPEAKER:
+Here, let's remove that filter. Customer.
+
+Hector Palacios:
+CK0 for this one?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arun Singh:
+0.45 and 0.51.
+
+Hector Palacios:
+okay so you have a dce and a wh when you have the wh is follow the the wh one when you have the dce you have additional completion code one mass data where we have for this well we have the wellhead one and additional completion code one and well the above item doesn't matter and here we are doing the crossing so for this one one for here we have it one hit one and the other one here we have it 1 0 3 1 0 1 1 0 3 and let's see this beautiful was created it was copied you know component quantity 14 of std code that one The same for the other one.
+
+ Great. Oh yeah, alright. Let's see.
+
+Hector Palacios:
+Why it's not bringing this one WH. Yeah, I have it here, but it's not exploding. Let's see why. At least one of them is doing it, but the other one is not doing it.
+
+Arun Singh:
+Maybe something with the filter?
+
+Hector Palacios:
+All right. Okay. Doesn't matter. So, ah, it's not.
+
+UNKNOWN_SPEAKER:
+Why?
+
+Arun Singh:
+For this customer, ZK05N for DCE and WH, right?
+
+UNKNOWN_SPEAKER:
+HomeCode WH should come. We are so close.
+
+Hector Palacios:
+e material id ah let's check the proper one um okay so we have Chucky fear where? You. You Hopefully this is not related to the mass data. Reloading, hopefully it's not.
+
+Hector Palacios:
+This stat now is going to be an issue.
+
+Arun Singh:
+What is the issue?
+
+Hector Palacios:
+I just reloaded in the wellhead the master data. And it reacted. So it means that all the master data below needs to be there before. And it's what we are expecting, right? So maybe it's not going to be an issue. I mean, wellhead explosion with the virtual master data should be there. They will hide, it should be there because this is coming from integration. So then the user, the only thing he's going to do is to come here and to decide between master data and the other.
+
+
+
+Arun Singh:
+So they will be updating in bomb header or in customer master data? Because this field I think will be integrated through S4ANA, right?
+
+Hector Palacios:
+Yes, they will update the customer. So the question is, come here and they put webhead automatically so this is the scenario is that they must be this array created so if they don't have anything they should have only the main bone right and as soon as they come here and they put acc1 and here they put wh1 We will do it.
+
+Hector Palacios:
+Yeah, okay.
+
+UNKNOWN_SPEAKER:
+Great.
+
+Arun Singh:
+So here you have everything. This is coming from the two bones.
+
+Hector Palacios:
+If you want to see details where we have more key fields for it, they should know it. They're going to be technical. But either way, you have all the... And if you pull the... It doesn't make the example, I mean, sorry, sorry, the example doesn't make sense, right? Because this is the materials should be different. The point is that we are bringing like the same materials, but it's not going to be the case.
+
+ It's not in the same bone, you will have two materials. So this zoom that you see here is not real. It's not real.
+
+Arun Singh:
+Yeah, the material code will be different.
+
+Hector Palacios:
+So if you bring the material ID. We are. Yeah, maybe we have the same material in this case.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Arun Singh:
+It's the same material.
+
+Hector Palacios:
+Yeah, because we are lazy, but we should. Wouldn't be like that. So it's working as expected. Real good. Yes.
+
+Arun Singh:
+So now what I have to do, I have to create the same logic for the other two, right? And what else?
+
+Hector Palacios:
+I'm sharing with you all of this, man. It's a whole session. So you have the Well, not this. Not this, not this. Header for the well and for the DCE, right? Well, DCE virtual. Then you need to create the BOM item technical for the new one, DCE and the other two that are missing. And then you create the master data rules. Then you create the planning layer. Level for them and then you create the key figure.
+
+ So I will keep just one of them in as an example. So yes, you can send me just one example.
+
+Arun Singh:
+I think I already got it, but yeah. Okay. And also need to add categories, right? In all the most data, right? Especially in the bomb header, right? Or not in the item, but in the bomb header.
+
+Hector Palacios:
+In category, yes, because that is going to be part of the concatenation. That's what we are expecting. In reality, not in all the cases. That is what they explain to us, but then they say, no, it's going to be easier definition at the end. For some cases, yes. For some other cases, no.
+
+Arun Singh:
+Now, can we just create only one master data, like based on this four, right? Bomb header and item for DC and WH. Can we create only one, just one master data? Well, it exists.
+
+Hector Palacios:
+The one master data is the source for all of this, right? The bomb header, bomb item that are being integrated. And then we split it in four, but technically, so they won't see it.
+
+Arun Singh:
+So we won't be showing them these four, right? No.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+Okay. This is just for us. Okay. So let me do this. So we have this great application. Work at Nook. Let's create one collection. This is for bomb explosion dynamic bomb explosion spring there you go so I can share this with you no this I'm sharing let me know if you can see it Yeah, I can see.
+
+Arun Singh:
+Wait, did you learn something new? Yeah, I learned something new. That's good. That's not one thing, but many things.
+
+Hector Palacios:
+Not I, not me, not even I, I was believing that this was going to work.
+
+Arun Singh:
+Yep.
+
+Hector Palacios:
+So I saved also the favorite of the master data. Let me share the screen again, just to share you all that, not to leave you alone. OK, this one, let me save it.
+
+Arun Singh:
+I'm sure the number of times. Accessories only one man. Considering. I'm rolling in a lot of new comments.
+
+Hector Palacios:
+Just focus on what is the details, whatever is on the process side, they should take it. For now, at least. If they tell us and they start signing, we can go back with them.
+
+Arun Singh:
+But it's more related to the execution order, man, like form orders, POSTR, I don't know.
+
+Hector Palacios:
+We can check it later with them.
+
+Arun Singh:
+Let me check with Bastián if he has some context on this. Then probably I can update the documents. There are two contacts.
+
+Hector Palacios:
+Ok man, I share with you the planning view and the favorite of the master data so you can just enter to this Sure, sure, I'll...
+
+Arun Singh:
+bomb explosion in the two cases Ok, I'll work on the configuration then, ok? Alright, but let's take one, one, one break man Yeah, yeah, sure, sure, take care Thank you man, bye Yep.
+
