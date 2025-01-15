@@ -1,0 +1,697 @@
+Kunal Sheth (ADNOC Group D&CS):
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+Good afternoon, everyone. Let us wait for one more minute, and then we can start.
+
+Kunal Sheth (ADNOC Group D&CS):
+We hope you can see my screen.
+
+Kunal Sheth (ADNOC Group D&CS):
+Shall we start? Aboobacker, Arun?
+
+UNKNOWN_SPEAKER:
+No, I'll go ahead.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+OK, thank you.
+
+UNKNOWN_SPEAKER:
+Yeah, OK.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is the first comment from Asma related to the eMarketplace integration with eMarketplace is one of our executive requirement at an outcome from this project. So this is already addressed and instead of having an integration with eMarketplace, Murugan has already updated that it is more of a business process to basic cup and the LTP which we have in ERP that we need to consider in IBM. For the creation.
+
+
+
+UNKNOWN_SPEAKER:
+What is the solution he has given? Suggestion or solution?
+
+Aboobacker M. (ADNOC Gas - PD):
+He said that there is no interface required between IPP and eMarketplace.
+
+Kunal Sheth (ADNOC Group D&CS):
+So the supply management purchase initiative shall look for all approved LTP of ERP including and if LTP available for pure is created by IBP, so that is the solution which Morgan has suggested. Yeah, yeah, yeah, yeah then moving to the next point. Exporter quantity shall be considered in deriving order quantity in supply planning. So for Murugan, so order quantity from demand plus export quantity shall be final PRCO quantities.
+
+ So this is for the creation. So Hector has already aligned on this and on top of that Murugan has also repaired. So the point is, expired batches should not be considered for the on-hand stock. Whenever we do the supply planning for this material, MRO and chemicals, it is mainly for the chemicals. So as he is explaining that expired batches are basically transferred from unrestricted to the block stock in ERP.
+
+ So it should not be considered for the planning. So IBP shall not review batch expired process data. So I think it is more of a S for HANA point. So whenever we do the integration between S for HANA and IBP for the stock, the block stock will not going to consider for this as this is an expired batches.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, apart from this, IBP should tell the like expired chemicals availability. We need some notification or some report. We need to do something if expired chemicals, we need to check with the user for the future usage or we need to approach manufacturer for extending the validity period. So the system should tell, VPA should tell, no? So if you are not going to consider, but since it is looking for that expired validity date, it can generate one report or notification, no?
+
+ This batch is already expired or going to expire, something like that.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, OK. So one is for the flat learning. Yeah, go ahead. I think that below, I put a comment related to this, like to classify between nearly to expire and the ones that need to be extended. So yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Kunal, the thing is, in this requirement, we already made through an RITM in SAP, and for ARTNOG refining, and monthly report on system like a notification gets circulated through emails like nearing expiry chemicals.
+
+Aboobacker M. (ADNOC Gas - PD):
+Since inventory controllers they are going to review this IBP report so then notification also should be generated here.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Aboobacker M. (ADNOC Gas - PD):
+Instead of looking into SAP for know this kind of reports or IBP is So if it gives, it will be helpful.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Kunal Sheth (ADNOC Group D&CS):
+So I think this point is already addressed by Hector. Hector, could you tell me which point you are referring to?
+
+Hector Palacios (ADNOC Group D&CS):
+I'm not sure. There are many, but surely we are going to get there.
+
+Kunal Sheth (ADNOC Group D&CS):
+OK, OK.
+
+Hector Palacios (ADNOC Group D&CS):
+Is it in BRD or in BPD? I've seen that this on the end. I'm not sure right now.
+
+Kunal Sheth (ADNOC Group D&CS):
+So here I am just mentioning the point that we need to consider that expired stock as well as report or alerts would be required for expired stock as well as near expiry.
+
+UNKNOWN_SPEAKER:
+Nearing expiry?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, near expiry stock. What is near expiry? Some chemical is going to be expired next month, right?
+
+Rahul Patel (ADNOC Group D&CS):
+So not to pay us.
+
+Aboobacker M. (ADNOC Gas - PD):
+So like in terms of, do we have a definition in terms like 30 days 60 days what is the near expiry yeah yeah six months six months are no it's supposed to six I'm just mentioning six months example if
+
+Rahul Patel (ADNOC Group D&CS):
+the expiry is within six months and is near expiry is that correct hmm yeah okay so then you can capture this definition as well so that it's clear that what is near expiry yeah I just mentioned near expiry example
+
+Kunal Sheth (ADNOC Group D&CS):
+six months for visibility in IVP so based on that system should create an element in see already there is an alert in SAP so that should be integrated to IVP that's it. Okay let me move to next point to have machine learning items and to be identified. So Bastian, you have already provided a reply on this. So with the proper input data, the mean time between failure and the average number of replays before replacement can be estimated per item.
+
+ This can be used to recommend repairs or PRAs when we need it. I think Asma is not there.
+
+Aboobacker M. (ADNOC Gas - PD):
+No, this is maybe is the one that some machine learning is required to even to identify know which item can be repaired. So already we have a field We already all the items were repairable items are identified and flagged in the system already there available. Yeah, that is enough already is available. Already I repairable items are flagged. And and apart from that, if there is any more items can able to repair that to be informed I mean from the end user or manufacturer has to inform us.
+
+ This item can be repaired. The end user can tell this you can repair in house or sending to manufacturer facility. So end user has to tell.
+
+Kunal Sheth (ADNOC Group D&CS):
+So almost know all the items, repairable items already we identified.
+
+Aboobacker M. (ADNOC Gas - PD):
+Okay. This is something. Something different, like machine learning, some items like, so now you say any items, any electronic items, you can repair, right? So that way she may want something. But as far as spare parts are concerned, already all the repairable items are identified.
+
+UNKNOWN_SPEAKER:
+It's flagged.
+
+Aboobacker M. (ADNOC Gas - PD):
+So you put a lot of education to be done in either way. Already there. The field is available in SAP.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Kunal Sheth (ADNOC Group D&CS):
+There is no flag already available. Understood. Let me move to the next one. It is also from you, Aboobacker. Repairable items are already identified and flagged in the system, which you just explained. The requirement is when the item quantity beyond repair, IBP must have some option to the user to declare as beyond repair. Then only IBP should consider replenishing the quantity. The comment has already been And here.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+The the issue here. The issue here, so we have a repairable items. I already identified the we are issuing to the user. OK so that removed pieces they are sending it for repair. So you can able to repair, repair and replace the return back to. That is the currently available scenario. So we are issuing new pieces to the user. The removed pieces sending for the repair. After repair, they are returning back to stock.
+
+ But after sending for repair, if they declared beyond repair. So how we are doing it? Manually they are sending notification, I mean email notification or through warehouse, they are informing us, this particular piece is beyond repair, go for replenishment. So, we are raising PR in turn, okay. So, that previously in Maximo system and in Adnan Gas, what we used to do? We issue to user okay they if it is beyond repair they return back to I mean actually we used to like that all repairable items are issued to the suspense account first time okay so once they repaired and refurbished they can return back to stock so it will be removed from the suspense account so that is what we followed.
+
+ If it is beyond repair again, still they will return back to stock, but again we we issued back to user account instead of suspense account. That way we managed that beyond repair. So now in SAP there is no such option. Once if you shoot to the user, we are issuing to directly to the user account so they they that is their responsibility to repair or refurbish, return back to stock. So now, in case of beyond repair, we are having the concern.
+
+ Once we declare beyond repair, there is no, they will not return back to stock, right? So in that case, they are supposed to have some option, maybe in IBP or now they are doing it through email, like email they are informing us, quantity become beyond repair and go for further replenishment. So we need to capture somewhere in IBP itself. But Murugan said this we need to be now dealt in SAP itself.
+
+ But there is no such option in SAP. So then we need to think how we can deal with this one. If we can able to, possible to bring some option or to know given to the user to declare it as a brand repair that is well and good.
+
+Kunal Sheth (ADNOC Group D&CS):
+I understood your point but here the individual piece we are not managing in IBP because it is in the quantity terms so like batch management or the serial number mechanism it won't be having an IBP let's say we have five material and each are having a unique serial number. So a specific serial number we have given to the user for checking. And if it is beyond repair, right? So we are talking about individual parts which need a replacement.
+
+ Let's say we need to procure a new material. But in that case, that level of detailing would be difficult.
+
+Hector Palacios (ADNOC Group D&CS):
+Bastian or Hector, if you can throw a light on it, because it's- Guys, I don't see why it's necessary the Bachelor Kunal for doing this. I mean, there is a point on Murugan that we should flag this on ESO HANA. That's okay. I think that also centralizing this kind of information is always a good practice. So, if you want to do it that way, that's fine. But on IVP, you also can do it. As you are asking, is it possible to have on IVP like to say this quantity is beyond repair, we discount it from the stock on hand.
+
+ And that means that if we go below the reorder point, we should trigger an order. So we can place this as, let's say, an additional demand sign on, because you are saying this stock is not used anymore. It's beyond repair. So you need to raise a PR against this stock, because it's not going to rotate. So yeah, I think that is something that we can easily do on on IVP, given the case.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, we can put on hold. We can discuss this maybe later. But it's as I understand, right?
+
+Hector Palacios (ADNOC Group D&CS):
+Only if you put the quantity is that IVP should raise a PR, right? Because in all your case, this is something that is going to be repairable and come back to stock. So we don't need to raise a PR for them. It's just in that case that you say this, I don't know, 50 is beyond repair. You put it on the, on IVP and IVP will plan accordingly if we need to plan.
+
+Aboobacker M. (ADNOC Gas - PD):
+That if it returned back to stock, that will go against the movement type 202 or 2622222. So it will be captured. Anyway, it will be captured as issue a return transaction. So, but the beyond repair means it is not they cannot able to return to against any reservation because that piece itself no beyond repair. So just one notification that we showed a piece is beyond repair.
+
+Hector Palacios (ADNOC Group D&CS):
+So, so go for replenishment.
+
+UNKNOWN_SPEAKER:
+Okay, that can be done.
+
+Aboobacker M. (ADNOC Gas - PD):
+Okay, just you can capture somewhere this one because as Murugan he No, we need to deal with SAP itself.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+I think that is something that we need to follow and open point sessions. Maybe, Khushboo, you can help us to track this point we have here, because it's like a pending definition of if we capture this on S4HANA or if we can just do it directly on IDP.
+
+Kunal Sheth (ADNOC Group D&CS):
+We need to align on that, but I think that okay yeah yeah and this point need a further discussion to find out the place where we need to do it whether in S4 or IBP okay we will take it forward from the open points yeah let me move to the next one from Hajrat Khan currently there is auto clubbing program in one ERP ERP generated from MRP will be clubbed based on MRP controller project or turnaround LTP or MRP group metal group will it be continued or replaced so existing S4HANA logic will be reused in IBP to create a purchase equation yeah so answer is yes we're going to reuse the same program a suggestion here because we
+
+Rahul Patel (ADNOC Group D&CS):
+have quite a few comments and we have only 27 minutes left of the call so can we focus on any open points team has rather than going through every comment or if there is a comment which we would like to review with the team, specifically focusing on that comment, because the system is documented, we are communicated, people are getting notifications, so everyone is supposed to look at the comments.
+
+ But in case of this meeting, we would like to review the ones which are critical and important, where either there are questions from the AdNoc team on a specific comment, or we need clarity on a specific comment from AdNoc. Let's focus our efforts on those comments, if everyone is OK.
+
+UNKNOWN_SPEAKER:
+So, Aboobacker, do you want me to jump to a specific review comments, which we need a discussion? No, no.
+
+Aboobacker M. (ADNOC Gas - PD):
+Whoever made the comment, if they are available, then they can able to tell whether they got the reply or not.
+
+Rahul Patel (ADNOC Group D&CS):
+okay they're not available how can we decide how can we tell this it's okay yeah so if they are not in the call Aboobacker they've also got a notification on email as well that we have commented and replied back so this is a live document everyone gets notification when the comments are applied closed or updated so uh if people are not available in the call uh we'll not be able to discuss those comments but if you have any
+
+Kunal Sheth (ADNOC Group D&CS):
+specific questions regarding anyone else's comment as well please go ahead and add not a problem just run through the comments that I will as you mentioned because Murugan is also not in the call and Hajrat Khan is also not there this is from the Hajrat Khan just scroll One by one comments, this is from the Asmar.
+
+UNKNOWN_SPEAKER:
+Yeah, let me go to your point, Aboobacker.
+
+Kunal Sheth (ADNOC Group D&CS):
+Differentiation supposed to be based on work order type and not by the storage location. So Rahul, we discussed that in one of our call, storage location also we have discussed, right?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah. Are you like I? I know you've written this comment, but in one of the calls we had our understanding on the discussion we had was that for turnaround material there is a separate storage location which only captures the turnaround material.
+
+Aboobacker M. (ADNOC Gas - PD):
+So that's not how we are now. It's a change actually. Now it's not based on the storage location. Maybe some companies they are using it. Mom, I said I guess no, we are changing it. We are giving no. To only one option main store know they can they can reserve it.
+
+Rahul Patel (ADNOC Group D&CS):
+OK. OK, so if that's the case, then let's update the comment because it may be a group company wise practice, which means it group company specific practice which was provided input in the meeting. So let's not make the solution which is stored location level and if it is plant level, if anyone has specific store location, it will not be a concern, right? So let's let's take this comment and proceed with this like we'll keep it will not keep it at a straight location level.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+system asma.
+
+Rahul Patel (ADNOC Group D&CS):
+The idea of what asma meant here linked to item level and RRs. Do we know what is RR?
+
+Aboobacker M. (ADNOC Gas - PD):
+Can be a return request item linked with item level and RRs. Can you go to the comment? Common metal access companies. Regular replacement This is a reporting part.
+
+Kunal Sheth (ADNOC Group D&CS):
+I think this we can clarify with us. Yeah yeah it's a report later later part yes yeah yeah because anyway it will become later only report the next this is from murugan added actor has added this is this is again a report from This hector has already addressed, generate code versus alternate code to be considered for this so I think this will work if you can throw this I would like to discuss here yeah so You there on the call?
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, Rahul. Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+So just for everyone's understanding, I just wanted to show you are also listening, that we had a request in one of the inventory decisions where the request from an inventory team was that when the PR is raised, if there is an LTPA, and the LTPA has 10 different materials, if one of the material goes below minimum quantity, then all the materials would of the same tpa has to be filled to the max quantity of this requirement we have discussed and agreed that this will lead to extra inventory and should not be considered as requirement so uh I just wanted to make sure we are aligned on this as a this is not a requirement because murugan has raised the same requirement as a as a two okay so what is the order so so the point I'm trying to I will reply to this comment saying that this was discussed in the previous meeting and it was agreed that this will lead to excess inventory.
+
+ So should not be considered as a requirement.
+
+UNKNOWN_SPEAKER:
+Please confirm.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, OK, because this is business. We need to confirm this at the business.
+
+Rahul Patel (ADNOC Group D&CS):
+Business has agreed like we have. We have discussed this as one of the open points in business meetings and this was agreed.
+
+Aboobacker M. (ADNOC Gas - PD):
+Agreed OK OK. Yeah, stock actually is talking about only fast moving items fast moving items anyway no if you have more quantity it can be issued in next next term so that is why no he he wanted no only for the fast
+
+Rahul Patel (ADNOC Group D&CS):
+movers you know you apply go with the maximum slab agreed but then this specific point was discussed with the business and like it was said that no this will lead to extra inventory we should not be you constraint this
+
+Aboobacker M. (ADNOC Gas - PD):
+as a requirement because this was otherwise if you can able to notify him give the notification or alert such a domain it's not meeting that no minimum order value so then we can know specifically we can check that particular ltpa release address then we can add a delete the item quantity now these kind of things know which is IVP should notify us it's not about IVP should or should not it was the point is that this was discussed
+
+Rahul Patel (ADNOC Group D&CS):
+and business said no this will lead to inventory we should not be initiating procurement like we should not be raising PR for all other metals of the PR if one of the metal goes below ROQ So this is minimum
+
+UNKNOWN_SPEAKER:
+order value for that LTPA.
+
+Rahul Patel (ADNOC Group D&CS):
+So we consider minimum order value but additional requirement of not only a minimum order value but then based upon other items of the same LTPA should be replenished till max level. That's the requirement which Murugan has mentioned. So Kunal let's reply to this comment from Murugan, let's review the meeting where this was discussed and then confirmed by the end user. So we can reply that this was discussed and confirmed by the business users that it will lead to excess inventory and should not be considered as a requirement.
+
+
+
+UNKNOWN_SPEAKER:
+You can mention this comment.
+
+Rahul Patel (ADNOC Group D&CS):
+Increase of order quantity No, so you can simply say that this was discussed as open points. This was discussed as open point with business, with AdNoc. And since this can lead to access inventory. Uh this requirement was dropped requirement was dropped so uh please confirm just put this comment so that you're fine with this okay sure next time to the next This is done.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is also done. So here is a prioritization to be followed. This is from a book, should enable to edit PRSTR.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, I think we can do it. We can do it in S4 HANA. We can edit, no?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, in S4 HANA, you can always edit. We are not changing the process on S4 HANA. Will recommend and create from IBP to S4 HANA. If you have authorization in S4 HANA to edit PR or STM, then you can always. Oh, yeah.
+
+Aboobacker M. (ADNOC Gas - PD):
+Clear, clear.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is, again, a report from Murugan. Machine learning to propose possible LTV proposals. Yeah, the same version is also updated here. This is on the performance.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So here, from Abu Waqar, the report shall have filter based on manufacturer movement, material this point is related to you are looking for that the previous comment only she want the machine learning no so if there is any report
+
+Aboobacker M. (ADNOC Gas - PD):
+we need to filter only by manufacturer or by movement or any particular material group also we included the criteria filter. When you want to do the analysis for LTPA based on only based on maybe manufacturer or maybe fast moving items, no manufacturer, fast moving items from that manufacturer. So something like that.
+
+Kunal Sheth (ADNOC Group D&CS):
+Before creating an LTPA. Proposal to Anna yeah to do the analysis to create a LTP right but as much point is related to the creation of my LTP a proposal using machine learning so I think more or less both our point is related
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+same same report like things on a reporter right what they're highlighting also currently in a in the existing system it is in pure manual activity to pick the items or to select the items for LTPA proposal so that they
+
+Kunal Sheth (ADNOC Group D&CS):
+want to like a proposal from IBP understood yeah and to propose a LTPA proposal we need a selected set of parameters which we use as a reference point see how the MRPPL generates now based on some set algorithms same
+
+Aboobacker M. (ADNOC Gas - PD):
+like that for LTPA selection they need some kind of formula or some algorithms yes we need to know how much is the output yes the output how much is the the quantity we need to select is supposed to check no last three years movement some particular manufacturer.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Common logic that item should be on fast mover and it should be like an same manufacturer in case if it is an exclusive agreement exclusivity is there means separate PR. So those kind of logic system for us. Agreed.
+
+Rahul Patel (ADNOC Group D&CS):
+So probably as we as we start working towards the building of the solution, right, we will have this technique. We have this technical session planned every week, two sessions where detailed clarity and all such points are we are expecting input while we're building. So we'll take these points as all this. All these points are taken up as additional input required later as we build. So Between the document approval and the demonstration of the system, we will have this technical calls set up between the teams.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+This will be used as a design input CRL. Let me move to the next one from Ajay Ratnam. This is already answered. By Murugan as well as Hector. This is already answered.
+
+Kunal Sheth (ADNOC Group D&CS):
+this is for the storage tank capacity this is also answered here it is inventory ensure storage tank volume data made available in SAP MM data. Maximum quantity shall be equal to the tank volume. Quantity shall not exceed maximum quantity even if the demand is more.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+We cannot put on inventory management. It should be through the asset management team.
+
+Kunal Sheth (ADNOC Group D&CS):
+here it is more of a master data maintenance but this point we will align with Murugan perfectly that who is going to own this data whether EAM or...
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+on chemical we will not know it is used in which tank. The AM team should give the tank volume or whatever, where it is used. It should be from the AM team.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, but irrespective of who provides it, what we are saying is to be updated in Metal Master. In S4. It's not who provides, but it's where it is updated. That in the material master this should be updated tank volume now who would have this information so as part of the activities if the if the if the max volume is not maintained then it will not consider max so if if we want this function to work with to have max then this data has to be uploaded so we can take this as one of opportunity for adnog and identify who can update this data so updating yes in
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+material master we can keep this but who will provide this data so Khushboo let's take this action as an improvement opportunity for adnog same like our bomb data for the spares yes similar to the bomb data so I don't
+
+Rahul Patel (ADNOC Group D&CS):
+think like there will be any question about who updates this it's just that someone has to verify and make sure sure that the data is updated. So we'll take this as an additional action item.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+This is similar to the BOM data. For spares, they are giving the below materials. Same with it for the direct deliveries for the chemicals.
+
+Rahul Patel (ADNOC Group D&CS):
+They are proposing to maintain in the tank volume. Agreed. So I'm not saying it's not different. I'm just saying we are taking this action as a separate action. So we have a separate action where all the data-related improvements, which Adno is supposed to work upon, are recorded. And we'll share that feedback with the team so that item does not get missed that someone has to update the material master and and if it is a EWM team yeah it is the empty and then this point we
+
+Aboobacker M. (ADNOC Gas - PD):
+need to route through the property so that this is addressed this is specific to some GCC not for all the GCC all the GCC Are you using no time? See whatever maybe see if you I am is tank based on the based on the stock set up. Only we are ordering right now.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I don't know what they're writing now, like for the direct deliveries like caustic soda or sulfuric acid. So what Morgan is proposing to have to declare the tank volume?
+
+Aboobacker M. (ADNOC Gas - PD):
+For the for the discussion, required for this one then in that case.
+
+UNKNOWN_SPEAKER:
+Should be available.
+
+Kunal Sheth (ADNOC Group D&CS):
+So we need to mention the opportunity, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+note of this what is the name of that concept yes we don't need to mention here push was taken note of it we will take a note of it right so from from a solution perspective we are aligned yeah sure so we need to align with the EWM team as well as for the room Then let me move to the next point. This is already updated by Hector. Inventory parameter, shall we maintain it either plant-favor or storage-depletion?
+
+ That is updated in the comment section. This is also updated.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is done. Both the points need to be considered. During purchase equation RFQ stage, if there is any unused return to stock, IBP should trigger notification to respective inventory controller for applicable action. Here, let me put points on it.
+
+Aboobacker M. (ADNOC Gas - PD):
+So it is more of an alert notification to be generated in IVP. Yeah, it will help us to delete the quantity from the PRRF queue. Can you say that again? Okay, I can speak. Yeah, but yeah, see if already PRRFQ is available. If the quantity is returned back to stock, then it will help us know to delete there from the PRRFQ. We cannot able to.
+
+Rahul Patel (ADNOC Group D&CS):
+So I will look at what you're saying is that you have a PR and RFQ raised, but then some quantities reversed like they wanted to consume 100 piece, but they've consumed only 70 piece. 30 quantity got reversed. The stock is again coming. So if the stock is available and PR is also rest, which is of excess quantity, then the notification should come correct?
+
+Aboobacker M. (ADNOC Gas - PD):
+Yes. Delete delete from the PR.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, yeah, so probably that's the point factor that the team what we're trying to say is that initially you you request the PR was raised, but then later there was some reversal in the system. Now stock is again coming back. So if the stock and PR both are available, we should highlight such excess PR's to be deleted.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Around even the same logic is should be for the work order cancellation or modification for the AIM team.
+
+Rahul Patel (ADNOC Group D&CS):
+So basically, either the forecast is deleted or the stock is available. So the same logic will be applied. If the forecast is deleted, which means there is no demand. So the PR which is generating is irrespective of demand. So you have excess stock will be created. So this is something which is required for both either the demand gets canceled or the inventory is available now.
+
+Kunal Sheth (ADNOC Group D&CS):
+In both the cases, we need to generate an alert if there is an increase in the inventory position at IBB site.
+
+UNKNOWN_SPEAKER:
+You can mention a comment here.
+
+Rahul Patel (ADNOC Group D&CS):
+This would be taken up as an alert requirement.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So even the AIM team also should be notified. Cancelling any work order, I mean the demand. If that particular item is is part of RFQ or the PR, no? And they should be alerted. So here what happened? People there, right? Really, they are canceling the work order without even notifying the inventory team or anyone.
+
+Rahul Patel (ADNOC Group D&CS):
+We cannot do that because it's the work order is created in S4 HANA and S4 HANA is not integrated with IPP. Is integrated with S4 HANA. What we can do is if someone is if if IBP recognizes that work order the demand from work order is cancelled now and if there is an open peer we can highlight this as an alert but we cannot alert or stop the end users in S4 HANA which is a different system.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+No that is fine we do not want to stop it but some kind of alerts it should go.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah so alerts would be only the IBP after the work order is cancelled and then alert can be shown as in both demand side and on supply side.
+
+Hector Palacios (ADNOC Group D&CS):
+So, Tim, if we are going to take this as a new requirement, we need to probably place it, I guess, as a point here. So not just a comment. We need to put it on the table.
+
+Rahul Patel (ADNOC Group D&CS):
+So this is an alert requirement, right, Hector? Yeah, it's a requirement.
+
+Hector Palacios (ADNOC Group D&CS):
+So we need to place it somewhere, because if it is in the comment, probably it I will miss it so just like the right requirement exactly what we need to do and then the comment as well like we are
+
+Rahul Patel (ADNOC Group D&CS):
+doing with everything else okay so let's let's add this one more row into the same requirement let's add this as a requirement so you can update this comment here that this would be added as an additional requirement into the
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Since we are into PRD only this can be added as additional And Rahul, one more thing, like in the demand planning, if the PR is getting generated based on the work order now, so that work order number or
+
+UNKNOWN_SPEAKER:
+the reservation number, somewhere it should have a link with the PR.
+
+Rahul Patel (ADNOC Group D&CS):
+Is this something possible?
+
+UNKNOWN_SPEAKER:
+Can you repeat?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Why we are requesting this now? Maybe, for example, in the month of November, somebody made a work order and IVP proposed to raise a PR. And after three, four months, the work order gets cancelled. And we converted that PR to a PO. And even material also will come. After one or two months, material will come. What happens after a period, there will be a recancellation where without a demand, there will be a stop in the system.
+
+ So then every problem will come on the inventory engineer. Why ordered, why without a demand item is getting ordered. So there will be no control or governance on the excess stock.
+
+Rahul Patel (ADNOC Group D&CS):
+So for sure there will be some control because you will have this historical, you can always show that was demand because we are taking a snapshot of demand. But where is the demand?
+
+UNKNOWN_SPEAKER:
+Where is the demand?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Because the demand is cancelled by the user.
+
+Rahul Patel (ADNOC Group D&CS):
+So if the demand is cancelled in S-400, does not mean there is no track of it in IVP. It will clearly show the earlier demand was 100, now it's 0.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So we'll know that, OK, someone has cancelled it.
+
+Rahul Patel (ADNOC Group D&CS):
+Where is the cross-reference? When you say cross-reference, what do you want to mean by document number?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See, somewhere in the IVP, tool, like if it is proposing a PR, there should be a link with the work order number and the item number.
+
+Rahul Patel (ADNOC Group D&CS):
+So Hector, what are the...
+
+Hector Palacios (ADNOC Group D&CS):
+No, IVP doesn't work like that. Is not a transactional system in that regard, it's only a planning system and we work with numbers, with quantities. But you have like pegging, what you're saying is pegging, basically to assign the reservation number with the purchase order number, is not going to work like that.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+And again, we will be in the same issue what we are currently facing. You know the IBP also we are ending up in the same situation. See, you are not having a control for for EAMT. Team will create the work order. They will cancel over a period. I can see construction. Procurement, they will action the PR. They will complete that job. And end of the day, if the work order gets canceled, inventory people, we are in trouble.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+So I can see in the following. First, we need to find an alert whenever we have a...
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+We should have a track in the PPO or in the PR.
+
+UNKNOWN_SPEAKER:
+know.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So again, we have created this PR.
+
+Hector Palacios (ADNOC Group D&CS):
+I mean, if you have that drug is going to have on this for kind of a day, this is not something that we have an ID on IDP, we start there. Alright, so what is more like a system limitation then. So what we can do is to raise an alert whenever we have worse talking for sure. And then we also can whenever we are canceling a reservation. Because on the system, you will have the historical information as Rahul was mentioning.
+
+ You can take a snapshot, what was the reservation number on May, for example, and then if you are on July, that reservation number goes away because someone can cancel that. We can say, okay, something happened here, probably a cancellation because these numbers now is zero, and if we have a cancellation plus overstocking, we can raise an alert and tell here we have an overstocking because cancellation.
+
+ So you don't need to have the tracking number to know this. You just need to understand the situation.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But where you will keep these snapshots?
+
+UNKNOWN_SPEAKER:
+On IVP.
+
+Hector Palacios (ADNOC Group D&CS):
+Is taking this information. Monthly basis probably so we can take a photo every month to see what is the reservation quantities and then the photo is not a searchable field with the material code.
+
+UNKNOWN_SPEAKER:
+Come again.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+If it's a photograph, you cannot search a material. If you keep 1000 photographs, you cannot search an item from that photograph.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, yeah, for sure you will take a snapshot of the whole reservation number, you know, so you can have for in May, you have this reservation for this material, this quantity, this month. Now on June, you have this material and you don't have a reservation anymore. So something happened. Someone changed the number in the meantime, you know, so we can compare the actual, the current scenario with what happens in the last month from the last two months and you say, okay, yes, something changed.
+
+ So there should be a cancellation because now we don't see a number.
+
+UNKNOWN_SPEAKER:
+No, I didn't get your point.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I think, yeah, I think Hector, the point is you said photo.
+
+Naamani, Mohamad:
+So you mean a snapshot, not a picture? Because I think the point is you need to be able to search on this snapshot. So it has figures and numbers.
+
+Hector Palacios (ADNOC Group D&CS):
+The snapshot is another key theory. It's like another table of the same information. It's not like a screenshot on your computer. No, it's information. Yeah, I think that's the confusion.
+
+Naamani, Mohamad:
+Correct me if I'm wrong. I think it was Aboobacker. So it's not a picture, a photo. I think Hector meant a snapshot. So a time, a cut of the information at that time. Correct?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+It's a complete version of the in the previous cycle, for example.
+
+Naamani, Mohamad:
+Does that clarify the point, Aboobacker? I think that was a confusion in terms of a picture.
+
+Hector Palacios (ADNOC Group D&CS):
+It's not actually a picture.
+
+Naamani, Mohamad:
+It's a record.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+It was Arun. Oh, sorry, Arun. My bad. See, but table-wise, we cannot maintain vector.
+
+Rahul Patel (ADNOC Group D&CS):
+It could be table-only. Yeah, you will always see. So it is a key figure, which means you will see in a table what was. So if you say Jan, February, March, April, every month you will see for the same but how the demand is changing between Jan, February, March, April, whether it is increasing, whether it is decreasing, or whether it is going zero.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Again, it is going to reflect only the quantity, but my ask, what is the demand number, like the work order number or the reservation number. For the early point planning, there is no issues. The system will work fine. For the demand planning, doesn't problem like to avoid the overstocking.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, but as we discussed, IPP. You want to mute? As we discussed, IPP is not a transactional system. It's a planning system which depends upon numbers, so we don't get independent document numbers in IVP, but only the quantities of the document. So that way the only way we can compare this is the quantity which was available in the previous one versus this month. The further analysis has to happen on S4 on a site and not an IBP site.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+And Arun you will get the triggering point why there is a difference of quantity if you refer the last three snapshot or last five snapshot and based on that variation then you can easily track from which order meant it is basically generating this requirement in s4hana point of view but order number we won't be able to get it in ibp but you will get the visibility as well as triggering point so that you will be able to analyze
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+in detail in s4hana on it on that particular month and date for example in any shutdown in every shutdown, there are so many leftover materials coming. Currently, we do not have a track now whether some items are purchased through the work order which is specifically for that shutdown. There should be some kind of link now in IBP to get the report so that the item is procured for this type of work order.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+So you will have demand segregation between what is the work turnaround requirement versus corrective preventive requirement because we will have the separate key figures in IBP. So that differentiation will be available. The only point we are making is you will not have order numbers in IBP. You will have quantities segregated at order type level. So you know that what is the requirement for reorder, what is the requirement for turnaround work order versus preventive work order versus corrective work order.
+
+ Information will be available, not the work order numbers.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Now we can take a report of leftover, like cancelled work orders where we replenish the quantity. That would be available through the demand changes.
+
+Rahul Patel (ADNOC Group D&CS):
+Demand was X and the consumption was Y, which means we have procured based upon demand X and the leftover quantity that basically unfulfilled consumption because people have not consumed the quantity which was out of quantity.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+We cannot give one line to the management. We procured this for the demand, but demand canceled. There should be some kind of a backup report now.
+
+Aboobacker M. (ADNOC Gas - PD):
+To be in a report only, we need to tackle this one. We need to have a report. Work are reserved against work order, but without the issuance work order got closed or completed.
+
+Rahul Patel (ADNOC Group D&CS):
+I understand the requirement, but that's not technically possible. An IBP perspective. That's why we are saying this. So probably when we can demonstrate this to you, how it works, probably if it makes more sense.
+
+Naamani, Mohamad:
+I don't know if we are going for an advance in terms of reports team. So even if this information is coming from us for whatever IBP received, can't we schedule a monthly report that shows this of whatever was captured. So Arun's point just so that you know what was actually part of this snapshot and then a periodical report will capture this. Wouldn't this help in at least making sure that this information is captured and it's not like lost after a couple of weeks?
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Maybe we'll keep this point for the next meeting discussion. Maybe we'll take other people's insights off, like Murugan or Jagan, and other companies' insights also we can ask.
+
+Kunal Sheth (ADNOC Group D&CS):
+So additional alert requirement we have noted down, and we will discuss in detail whenever we are building this alert for the different companies' requirement.
+
+Rahul Patel (ADNOC Group D&CS):
+For this additional alert, we need to add this as one of the rule. Is there a requirement of additional alert?
+
+UNKNOWN_SPEAKER:
+Sure.
+
+Kunal Sheth (ADNOC Group D&CS):
+We will update after this call as an additional requirement so that it is noted down and team can also go through the individual requirement.
+
+UNKNOWN_SPEAKER:
+Let me go to the next point.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is from Murugan.
+
+UNKNOWN_SPEAKER:
+This is also done. Yes.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is also updated for VMI template.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is an answer from the Murugan.
+
+UNKNOWN_SPEAKER:
+No requirement for drilling material.
+
+Kunal Sheth (ADNOC Group D&CS):
+The material code from demand phase until PR phase will be... I think, Rahul, this point we have already addressed, right? With Abdul Latif and Muhammad Ashaikh.
+
+Kunal Sheth (ADNOC Group D&CS):
+This is on our drilling session.
+
+UNKNOWN_SPEAKER:
+That's the same point we are discussing here.
+
+Kunal Sheth (ADNOC Group D&CS):
+If you call up, there shall be a specific number, supply module when creating. So this is basically input from the RUGAN.
+
+Rahul Patel (ADNOC Group D&CS):
+okay this is this is in line with what you discussed right for drilling you will have demand would be at a genetic level and supply would be at a specific material or branded material and then and if there is
+
+Kunal Sheth (ADNOC Group D&CS):
+no branded material then it raises pr on genetic material correct correct so entire flow he has explained because demand we already on a generic material and then PR we need to raise on the branded material.
+
+UNKNOWN_SPEAKER:
+That description Murugan has explained.
+
+Kunal Sheth (ADNOC Group D&CS):
+So we'll use this as a design example. This is also accepted. This is also addressed. Quota arrangement is also accepted.
+
+UNKNOWN_SPEAKER:
+discussed.
+
+Kunal Sheth (ADNOC Group D&CS):
+I will not explain it. This is already addressed by Mahatma Gandhi.
+
+UNKNOWN_SPEAKER:
+Can you clarify what is eMarketplace?
+
+Rahul Patel (ADNOC Group D&CS):
+So eMarketplace they are.
+
+Aboobacker M. (ADNOC Gas - PD):
+They are also making LTPS for a specific no commodities. Like hoses, gaskets, so many different commodities, they have made LTPs. Is it Ariba? No, not in Ariba. Same as SAP only. Same in SAP.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Catalog purchase.
+
+UNKNOWN_SPEAKER:
+Catalog purchase.
+
+Aboobacker M. (ADNOC Gas - PD):
+Already they have created, for so many items, they have created LTPs. And e-catalog, e-market, e-catalog items are also already flagged against each material as a catalog. E catalog items. Already there is a flag with all the items where whatever items already covered in the E catalog LTPA already flagged. It's as a E catalog field against you can check. I think there is a difference between the requirement.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+What is what asthma is required? What Murugan has discussed probably take this this one point as we'll keep this one point as open item to be discussed with Murugan and Asma separately.
+
+Kunal Sheth (ADNOC Group D&CS):
+So Rahul all points are discussed and aligned so now I think is the next step.
+
+Rahul Patel (ADNOC Group D&CS):
+So let's connect with Khalid. So from Aboobacker and Arun from your perspective I think we've discussed whatever points you had in and we've clarified, right? So from your perspective will be OK to sign this. Take this up further. We will. I will align with Khalid whether how we can take feedback from Oregon and asthma for some of the open points. But then other than that, I think the document looks to be OK.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, it's supposed to come from them only. Yeah, yeah, yeah. Approval anyways will come from them only, but before I need approval, I just wanted to make sure that since you you guys like you know last time we given for demand flying same way we can give the okay okay
+
+Rahul Patel (ADNOC Group D&CS):
+so that's what I am confirming that if there is go ahead from you I will talk to Khalid about because most of the other feedback is from either Murugan or Asma so I'll talk to Khalid how we can align their feedback and take this for approval yeah even if there is any further comment also we can able to add it right now at this point of time no we would like to we don't want to have this as a like a living document that we keep on adding comment at least for the signup we will take this then probably what we can do is based upon this one set of information we will build the system and when we test it with you you if you have any other feedback then during the testing we can take that additional feedback right when you look at the system so right now you're not looked Feedback you're giving is based on the theoretical discussions.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, yeah, I agree, I agree, no issue.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, OK. OK, then I think then let's conclude this call. Kunal, later today let's align with the team on updating some of the points that we have discussed today and also internally align with Khalid on how we take this forward for approval.
+
+Kunal Sheth (ADNOC Group D&CS):
+Sure, sure. Yeah, I'll update that comment. OK, thank you everyone. Have a nice day. Thank you everyone. Thank you.
+
+Naamani, Mohamad:
+Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you. Thank you all my.
+
