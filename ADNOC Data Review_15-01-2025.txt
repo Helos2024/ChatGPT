@@ -1,0 +1,826 @@
+Vivekanand Gajula:
+All good, yeah. Thank you.
+
+UNKNOWN_SPEAKER:
+Saga.
+
+Saul Portillo:
+you I think we won't. Good morning.
+
+UNKNOWN_SPEAKER:
+Yeah, I saw it. What? Just one breaker?
+
+Sagar Vora:
+Yeah, I think we have too much. We have 1600 records.
+
+Bastian Osorio:
+Let me check something.
+
+Sagar Vora:
+There are only three plans available.
+
+UNKNOWN_SPEAKER:
+Maybe we're missing some unit of measure.
+
+Bastian Osorio:
+We have loaded the unit of measure.
+
+Sagar Vora:
+the data.
+
+Vivekanand Gajula:
+Bye.
+
+Bastian Osorio:
+Yeah. There you go.
+
+Bastian Osorio:
+you So we do have something. So we know.
+
+Saul Portillo:
+And Sagar, the problem for the rejection is the same, no? The customer and location. I see in the job, no?
+
+Sagar Vora:
+Yeah, so for the location, I think that locations are not part of the list which we have received from the beginning. So that's why the locations, means we are not loaded that locations in the extractor. So not sure how it is flowing into MRO acceptor okay and similarly for equipment so some equipments are of valid locations some are of invalid location so that is fine but some are valid equipments but that equipments are not flowing into IBP somehow from CIDS so for that also yeah I'm not able to figure it out so I'm just doing that analysis.
+
+ So once the improvements are available in the ITP, we will be, means that prediction count will decrease.
+
+UNKNOWN_SPEAKER:
+But I think we have the success records are there.
+
+Bastian Osorio:
+Did you load the description? Yes, I had loaded the description.
+
+Sagar Vora:
+In which? What is the attribute?
+
+UNKNOWN_SPEAKER:
+Product description.
+
+Bastian Osorio:
+Product description? Correct, yeah. It doesn't have to go there. It has to go somewhere else because it's not a product. Yeah, but we can check that later.
+
+Sagar Vora:
+I'm out of parts, I think.
+
+UNKNOWN_SPEAKER:
+Yeah. So this one.
+
+Bastian Osorio:
+The one that is so these ones.
+
+UNKNOWN_SPEAKER:
+Are.
+
+Bastian Osorio:
+Oil oil. In material type is it it is also loaded, right? Yes, it'll take a look.
+
+Bastian Osorio:
+So Saul, I don't know if Hector mentioned it, but my thought, it's like, okay, the way I see it, there's no way to build, like, it's not possible to replicate the forecast into the future, right? I mean, with a, like, every six months or every year, so what I think we need to do is just to create a forecast, but this forecast to nothing. So, they have to collaborate. If they don't collaborate, then there is no forecast for preventive maintenance.
+
+ So, what we're trying to do, basically, is that they can start building the preventive maintenance plan in IVP. They can have a reference of the previous consumptions, and we can create a forecast for but that is just for reference. It will not be input for any formula that ends up in a calculation.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Saul Portillo:
+I understand. And with that reference and the history, the idea is they collaborate and build the forecast in the future.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Bastian Osorio:
+Because as we have seen, there is no way to replicate this into the future.
+
+Saul Portillo:
+There's no pattern. There's no nothing. And we can build, for example, a key figure with a counter, like we build the FMSN to see, for example, quantity of consume you have in the past, in the different years. I think it's a good input, a reference to build.
+
+Bastian Osorio:
+But the question is, the FSMN is only using corrective? No, for now it's for corrective. We need to build for the different We need to confirm that because we need to confirm that because there is a chance that. They're using the total consumption. Preventive plus corrective. Yeah. But I guess what you will be just change change the input. It will. It won't have a huge impact in the Isn't it?
+
+UNKNOWN_SPEAKER:
+What do you need?
+
+Bastian Osorio:
+The FMSN or what? No, no, I'm saying that if you, if the FSMN is calculated using the sum of the consumption for preventive maintenance plus the corrective maintenance. I mean, the change in your – in all the calculations you developed shouldn't be a big impact because you already – I mean, it's just changing the input.
+
+Saul Portillo:
+No, no, no. It's not a big impact because you only need to change the input for the the first counter and that's it.
+
+Bastian Osorio:
+It is easy to build. I'm trying to check if there's any material that has both There's one. No, it's.
+
+UNKNOWN_SPEAKER:
+Converter, what is this? Transform, I don't know.
+
+Bastian Osorio:
+The corrective is way larger. Too high for corrective. Okay can we start? Checking what we have and what is missing.
+
+Sagar Vora:
+Samar, if you can share your screen, please.
+
+Saul Portillo:
+What is the subtotal for two kefir? Correct? No, for all materials. What is the total for actual consumption and the average? Thank you. You Okay. We have more records or more quantity the corrective mild test compared to parenting.
+
+Saul Portillo:
+Yeah, it's like, oh, there's no comparison between them.
+
+UNKNOWN_SPEAKER:
+No, preventive is a 10% of the corrective number, quantity. Yeah. OK. Let me check something else.
+
+Bastian Osorio:
+These are, sorry, let me. These are the spare parts.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Saul Portillo:
+It's lubricant.
+
+Bastian Osorio:
+Yeah, it seems.
+
+UNKNOWN_SPEAKER:
+But you have a clear idea of what is needed for preventive, right?
+
+Bastian Osorio:
+Create a forecast for preventive, just as reference in OK.
+
+Saul Portillo:
+And the forecast, only a reference, not with this. Yeah, it won't.
+
+Bastian Osorio:
+Yeah, there's no need to create an input for, like, to use it as an input for any calculation that will lead to final forecast, you know?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+Bastián I have a quick question so for preventive like you know you were saying we will just you know generate the focus you know which and then you know will be used as a reference you know so then then for preventive are we going to any demand signal?
+
+Bastian Osorio:
+Yes, but only in case they collaborate. We're not going to use, we're not going to create a signal automatically, right? Yeah, like it doesn't matter how big is the input from the history.
+
+Vivekanand Gajula:
+We're not going to use it as a But if they collaborate, let's say they go and put some inputs, which is mainly going to be on the demand planning side. So this, we are going to send it to supply planning, post-collaboration, whatever numbers we get. And then when we send it to supply planning, we send it to what level? OK, broadcast level. Because in theory, this is something that will be performed on an equipment.
+
+ Yeah, that is correct. OK.
+
+Saul Portillo:
+And your idea is try to build a FMSN with a summary of preventive and corrective?
+
+Bastian Osorio:
+We need to check, but for me it should be, because at the end what you are assessing is the consumption, regardless if the consumption was for preventive or it was for corrective. But we need to confirm with them.
+
+UNKNOWN_SPEAKER:
+Okay. Okay. I don't know.
+
+Saul Portillo:
+We don't have data for the future in the preventive because they send plan activities in the future in the big data I don't know if we have the data for the future in the system, because they know the forecast for some materials in the future.
+
+Bastian Osorio:
+Can you share your screen again in the table or the table, Sagar, the table of the extractor this using this filter for PM4?
+
+UNKNOWN_SPEAKER:
+Yes. Yeah.
+
+Bastian Osorio:
+The one that you just integrated.
+
+Sagar Vora:
+Or you want to check the filters?
+
+Bastian Osorio:
+No, no, I want to check the table and see if there is something for the future.
+
+UNKNOWN_SPEAKER:
+Yeah. Last. It's fun.
+
+Sagar Vora:
+Not in this sector, if they don't feel free.
+
+Saul Portillo:
+But Sagar, in the structure, will you have other structure for the future data?
+
+Sagar Vora:
+We have other, and these are the other, these are historical, okay, there are some of the things.
+
+UNKNOWN_SPEAKER:
+Okay, that's delicious.
+
+Sagar Vora:
+I think they have plan work or work center.
+
+UNKNOWN_SPEAKER:
+No, these are just extra information.
+
+Sagar Vora:
+I don't see anything related to forecast or future, means in the keyword. Might be if we go inside the extractors. Currently we check these two extractors. And these are mostly historical. This is actually a sage. But I don't think it is a planned rock. Or which Order time for PM04 or PM01 or PM02? Yeah, only for.
+
+Saul Portillo:
+But you don't know. Corrective initiatives.
+
+UNKNOWN_SPEAKER:
+Please.
+
+Sagar Vora:
+These are also historical. These are sandbox systems, I'm not sure. But I don't see any. Any in the future. Also like which tells this extractor will give a future data. And also like whatever extractor we are checking which means although it's written actual but once we have a proper system then we can say that is there any future data available or not.
+
+Saul Portillo:
+And Sagar you have for example a required quantity, third required quantity for the maintenance order. I think We can see, for example, this table, the part requirement quantity for maintenance order. Because I don't know if you see in the chat I share, for example, a table they send us in the data. This table is for the main maintenance activities in the future. And I sent a list in the chat of the materials.
+
+ And I don't know if you tried to filter. Is this material in the part requirement extractor? I don't know if it's there. Because if you see the table, They send a requirement quantity for the different parts ID in the future.
+
+Bastian Osorio:
+Sorry to interrupt. Is there any order for the future for preventive maintenance, PM4?
+
+Sagar Vora:
+Addictive maintenance.
+
+Bastian Osorio:
+No productive, no PM 4. There's nothing for the future. No, nothing, but the thing is that when when they. We don't know for how old is this data, so maybe. I don't know, maybe 22.
+
+Bastian Osorio:
+But is there any status in the table, the extractor?
+
+Sagar Vora:
+Nope, there was no status. I mean, so it's spelled like this.
+
+Bastian Osorio:
+Yeah, because that is not the extractor, like the standard extractor for preventive. The standard extractor for preventive is the other one. Can we check that extractor? Which one you are talking about?
+
+UNKNOWN_SPEAKER:
+This one.
+
+Sagar Vora:
+Yeah. Preventive maintenance calls. Here I don't think something is there.
+
+Saul Portillo:
+And I see there. For the future. He sent only data for December 2024, not for the future, not for the 2025, 2026, 2027. I don't know if they have the planned preventive activities in the system.
+
+Sagar Vora:
+If you see this, so in this we have a maintenance call, number of call But I don't see any quantity.
+
+Bastian Osorio:
+And they know the date you have the date period start period in time profile.
+
+Sagar Vora:
+Maintenance item text.
+
+Bastian Osorio:
+Every every yeah, we should integrate this as well. Can we integrate this?
+
+Sagar Vora:
+Yeah, I mean, so this is the master data I can create. So this is maintenance.
+
+UNKNOWN_SPEAKER:
+Everything here is standard.
+
+Sagar Vora:
+Let's try to integrate this. Yeah, I will integrate the maintenance plan item and the text OK.
+
+Bastian Osorio:
+But I understand that the If I'm not wrong, is it the material?
+
+Vivekanand Gajula:
+Bastion, just one thing. What is that we're going to do with this maintenance plan?
+
+Bastian Osorio:
+Initially use it as a reference.
+
+Vivekanand Gajula:
+But we don't have it.
+
+Bastian Osorio:
+No, we don't have any bone, although unless unless the item is a material, but I'm not sure.
+
+Vivekanand Gajula:
+The item is. Yeah, so I'm just wondering how this is going to help us.
+
+Bastian Osorio:
+Not again again. We are trying to give the planners as much information as we can so they can collaborate.
+
+Vivekanand Gajula:
+But we understand that.
+
+Sagar Vora:
+yeah just for reference just for reference yeah so uh I I need to integrate three items right one is In MRO parts, it will be a product ID, right? Do you know how it is with CIDS, how it is the standard extraction?
+
+Bastian Osorio:
+We have here the extractor, but the integration, where it goes, what? Do you have that information?
+
+UNKNOWN_SPEAKER:
+Yeah?
+
+Sagar Vora:
+Like, which field needs to go with what?
+
+Bastian Osorio:
+I think, Bastian, this will go and sit in the maintenance plan master data of iGraphy.
+
+Vivekanand Gajula:
+No, yeah, that is for sure.
+
+Bastian Osorio:
+But for example, because there's plenty of things in that table, which ones we need to use? For example, I know in product we need to upload the maintenance, the ID, but the maintenance activity is a product. I know that. The product in the extractor.
+
+Vivekanand Gajula:
+Yeah, what I'm trying to say that I can tell you know. So in the extractor you know there is there is nothing like maintenance activity ID. So maintenance activity ID is a concatenation of maintenance plan number, maintenance item number and task list. You know maintenance package identifier.
+
+Bastian Osorio:
+No, but but everything here is is standard. We should be almost plug and play. We don't have to do any of concatenation. I believe that. Yeah. Yeah.
+
+Vivekanand Gajula:
+So for example, this one, you know, can you read this? So this is the extractor, you know, IDP MRO maintenance activity. Is that extractor or what is that? Yeah. This is the one that he was showing. Yeah. This is the one you're showing now. So, uh, so in the output, maybe it is showing you maintenance plan them and package as three separate elements. But I think when it goes to IPP, I don't know where that transformation happens.
+
+
+
+Bastian Osorio:
+There you go. The product ID is used for maintenance activity, which represents a concatenation of the following. Yeah. So that transformation automatically happens. Yeah. And do we have that concatenation in the extractor or we have to build it inside? Yes.
+
+Vivekanand Gajula:
+I'm not sure. I think we'll only get to know once we run this extractor. If it automatically happens, then I think the extractor is there is already run.
+
+Bastian Osorio:
+But I don't know where where that logic is.
+
+Vivekanand Gajula:
+If he has written that, I'm not sure.
+
+Sagar Vora:
+Yeah, we can check this.
+
+Vivekanand Gajula:
+But in this we don't have activity ID, no?
+
+UNKNOWN_SPEAKER:
+In your maintenance plan number item. I think you need to.
+
+Sagar Vora:
+I believe you have to build the concatenation in CIDS.
+
+Bastian Osorio:
+I think you're right. Yeah, Vivek. Because you have here the individual things. Oh no, there you have it, isn't it?
+
+Vivekanand Gajula:
+I know it's not, I know. So what I was what I was thinking is what if we directly run this and see what goes into IVP? I mean, if it doesn't go, it won't go right. It won't that concatenation won't happen automatically.
+
+Bastian Osorio:
+No, it will not happen. Yeah, you have all the elements You have all the ingredients to make your omelette. But it's not, but you need to prepare the omelette.
+
+Vivekanand Gajula:
+I was under the impression that it happens automatically, but I think we need to do it exclusively.
+
+Bastian Osorio:
+But if we open, let me open the master data for preventive.
+
+Sagar Vora:
+I can open here.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+No, no. Go to master data. OK.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah. It should be pretty straightforward. So OK.
+
+Bastian Osorio:
+We know that. Yeah. What I say is a concatenation of three things. Maintenance activity is the same thing. Maintenance description, plan number, task list description, task number. All this one should be in the extractor. So let's, okay. So product ID is the concatenation. Right? If you go back to the help.
+
+Sagar Vora:
+Plan number, item, and task list maintenance package.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Can you go back to the extractor?
+
+Sagar Vora:
+Yeah. We have plan number, item, task list, I believe this one.
+
+Bastian Osorio:
+Okay, but there you have it. You can build it right? Can you go back there? Maintenance item in task list maintenance package maintenance package identifier. What is this maintenance package? Can you go back? Maintenance package, I think this one. Yeah, package. So it will be the first, the second, and the fifth. Yeah, this one.
+
+Sagar Vora:
+And then what will be the, if I go back here, so we have an ID, we have The plan number, you have it. What is the plan number here? Where is the plan number? The item. OK, this is the maintenance plan. And there you have the maintenance item text.
+
+Bastian Osorio:
+No, no, just a second.
+
+Sagar Vora:
+Here we have a maintenance activity ID. So what is the maintenance activity ID?
+
+Bastian Osorio:
+For me it's the product ID is the same one. This both will be same. Yeah, it's an attribute. So you if you want to check the maintenance, you don't have to check product ID. You check maintenance. Otherwise it can be confusing for the users. This is a mask basically.
+
+Sagar Vora:
+Yeah, this is the same product ID. But here in description they have written tomorrow maintenance description.
+
+Bastian Osorio:
+Yeah, we could put the description, but if you go back, do we have description for each one of these?
+
+Sagar Vora:
+We have for item.
+
+Bastian Osorio:
+And we have for task list. Yeah. Okay, then what else we have? Then we have a couple of more maintenance.
+
+Sagar Vora:
+What is maintenance strat? Can you...
+
+Bastian Osorio:
+This is strategy.
+
+Sagar Vora:
+Strategy, no, we don't have that one. Calendar, start. That's in strategies. Scheduling by calendar, due date, back to calendar, like that. We don't have all that. So we have task list number.
+
+Bastian Osorio:
+And task list description.
+
+Sagar Vora:
+The other one also exists.
+
+UNKNOWN_SPEAKER:
+Here we don't have task list number.
+
+Bastian Osorio:
+I'm pretty sure it should. The relationship between the standard attributes and the extractor should be somewhere.
+
+Sagar Vora:
+Yeah, I think let me check. I think there should be one more. I'm using a maintenance activity at tables. There should be text and I think in this sector, we should get the required text. So I have to load this concatenation in the product master also right the concatenation of this tree this will go in product master also and it will go in this also a narrow maintenance plan also right yes Okay, I'm
+
+UNKNOWN_SPEAKER:
+sorry.
+
+Sagar Vora:
+but I don't see any text and I mean stay slow. The same table will be.
+
+Sagar Vora:
+I am just maintaining the maintenance item text only. I am not sure from where to get the task list number. Here there is no task list.
+
+UNKNOWN_SPEAKER:
+Can I share my screen? Yeah, I think it's.
+
+Bastian Osorio:
+So this is resources because it's task. Task. List data. This one is not needed because task list is related to assets. Then maintenance plan, but it doesn't tell that much, right?
+
+Bastian Osorio:
+This is the one that we were checking, right? Yes, that is. And that's pretty much all. Doesn't give us too much information.
+
+UNKNOWN_SPEAKER:
+And then transactional data.
+
+Bastian Osorio:
+Maybe we're checking transactional on later. Did you check this one too, right? Yes, I checked this one. Can you open it also?
+
+Sagar Vora:
+Let's see if find more information there, if we can somehow link information in that table with the other one. This MRO maintenance plan, right?
+
+UNKNOWN_SPEAKER:
+This one, right?
+
+Sagar Vora:
+So in this, we have a maintenance call and the number of calls. Only these two look like transactional data.
+
+Bastian Osorio:
+And what was the one that we were missing?
+
+UNKNOWN_SPEAKER:
+Sorry? What was the attribute that you were missing?
+
+Bastian Osorio:
+Task list number.
+
+Sagar Vora:
+So here we have a task list. And if you move to the...
+
+UNKNOWN_SPEAKER:
+Right. Right. Okay.
+
+Sagar Vora:
+on which you said.
+
+Vivekanand Gajula:
+But Dustin we won't get task list no because they are not maintaining only. But that means that column should. I think somewhere I read you know I don't remember you know that reference but if you don't have task list and I think what was the third field, that call number, I think that is what we have to take.
+
+Bastian Osorio:
+OK, but let's park this for now, because it's not, we know we're not going to find too much useful information in this one. So can you open the, Let me open it myself. Drilling and my own chemicals. Let me share my screen. And we'll review. What we have so far.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sagar Vora:
+Materials. Standard materials we have loaded.
+
+UNKNOWN_SPEAKER:
+In progress. Yeah.
+
+Bastian Osorio:
+The thing is that we need additional attributes are still pending, but Yeah, maintenance activities like a week could say. In progress. Turn around activities that this is turn around. Do we have an order for turnaround?
+
+UNKNOWN_SPEAKER:
+So sorry, what happened?
+
+Bastian Osorio:
+In the you were showing the the different order types PM4, PM3. Do we have an order for or turnaround activities.
+
+Sagar Vora:
+Let me check.
+
+Sagar Vora:
+Yes, turnaround maintenance is there.
+
+Bastian Osorio:
+Yeah, let's let's start. Let's start working on that.
+
+Sagar Vora:
+Let's integrate as well. 06 historical quantity.
+
+UNKNOWN_SPEAKER:
+Let's start.
+
+Bastian Osorio:
+Let's start with historical. And then we check if we can find some some something for the future.
+
+Sagar Vora:
+Yeah.
+
+Bastian Osorio:
+Hmm. Let me check the Shit. The figure name.
+
+Sagar Vora:
+We will require the MRO parts also, right?
+
+Bastian Osorio:
+Yeah.
+
+Sagar Vora:
+And in the MRO parts, I mean, the product ID, it will be standard product ID, right?
+
+UNKNOWN_SPEAKER:
+Not a maintenance plan.
+
+Saul Portillo:
+For the turnaround, we don't have it for the past because we only deal or meet for the future activities. We can build a new one for the first approach.
+
+UNKNOWN_SPEAKER:
+If you need, we can be around.
+
+Saul Portillo:
+Sorry, I lost connection for a minute.
+
+Bastian Osorio:
+I believe it's still a good idea to integrate the historicals and then to check if there is something for the future. But we can start with the orders for the Sure, Saul, no problem. Can we check if there is something for the future? Can we check if there are orders for the future?
+
+Sagar Vora:
+Yeah, I mean I have just executed for PM 06, so it's taking some time. So once the data is available, then I can check.
+
+Saul Portillo:
+I said the key figure for the future.
+
+Sagar Vora:
+Is this for future or even for the industry also? Yes, for future. For future, yes.
+
+UNKNOWN_SPEAKER:
+Greater than current date?
+
+Saul Portillo:
+No, for turnaround.
+
+Sagar Vora:
+Yes, for turnaround. No, no, means I'm asking the turnaround PM06 data we have to load into this integer, right?
+
+Saul Portillo:
+Yeah, the turnaround is the beyond 06 type.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+But I don't have to apply any date logic, right? Like the history or features, anything like that.
+
+Bastian Osorio:
+Is there something for the future? It's running.
+
+Sagar Vora:
+It's still running? Yeah, it was still running.
+
+UNKNOWN_SPEAKER:
+So I applied some filter and I executed.
+
+Sagar Vora:
+OK. So I applied one plant and ZRSA. Yeah, I can see some 2026 entry also. Yeah, there are some data for future also is there two two materials this material is zero value I think only this material has value yeah it yeah means requirement quantity is there I think actually zero but requirement is Yes,
+
+Saul Portillo:
+I think that the numbers require quality because actual quality is when you do it historically, I think.
+
+Sagar Vora:
+But the key figure you gave is like, means I have to apply any logic. I was just asking that. If the dates are in past, then I have to take the actual quantity. And if the dates are in future, then I have to take a requirement quantity. Anything like that I have to apply for this demand means in this demand figure you understood like what I am trying to get. So what I am saying for this PM 06 okay do I have to apply any such logic like if my date okay if my date is in past like which is basically less than current then I have to consider the actual quantity.
+
+ And if my dates are in future, for example, this one, then I have to consider the requirement quantity, something like that.
+
+Bastian Osorio:
+Yeah. Yeah, that's absolutely right.
+
+Sagar Vora:
+And that, I mean, you're on point. So only for this PM 06, not for any other, right?
+
+Saul Portillo:
+The PM 012 and four. No, although not beyond 06, because this is the key for turnaround. Because being PM01 is corrective and the other is for preventive. It's other process.
+
+Sagar Vora:
+OK, I will create this interface. So basically, total three interfaces I have to create now. One is maintenance plan. Second is, again, product master with maintenance plan. Third is ML. Parts that will have basically the product IDs. This will not have a maintenance plan, right? This one in MRO parts or it will have the MRO parts like the maintenance plan also. Now, can you confirm me on this interface, these two interfaces?
+
+ These two are required?
+
+UNKNOWN_SPEAKER:
+Yeah, absolutely.
+
+Sagar Vora:
+So one will be based on the standard product ID and another one will be based on the maintenance plan, the concatenation.
+
+Bastian Osorio:
+Yeah, but that way we can park it because we will need to have a meeting to define the details about the maintenance plan.
+
+Sagar Vora:
+For now, you need to have a part and product ID. Means we have mandatory values, we have a value for that.
+
+Bastian Osorio:
+Sorry, MRO parts and maintenance plans are not going to the same one. So it's the product ID. So in product ID, you have the maintenance plan and you have the parts, spare parts. And then the way the users see it, they usually see MRO parts and maintenance plan. Users don't see product ID. So you have, as you put there, plus maintenance plan, and then product plus MRO parts. I don't know how you are writing it, but basically to load a part, you need to load any product and MRO parts, and to load the maintenance.
+
+
+
+Sagar Vora:
+See, we have generic products available like this one. These are generic products. I will name it as a generic.
+
+Bastian Osorio:
+Yeah, those are products, right?
+
+UNKNOWN_SPEAKER:
+Correct. Yeah. In that case.
+
+Sagar Vora:
+So that is already done. That was already done. Now, the new interfaces which I have to create in the MRO maintenance plan, where I have to.
+
+Bastian Osorio:
+And that goes also in the product ID.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Sagar Vora:
+In the product ID, again, I have to create one more product master with the maintenance plan. Yeah. Correct? Two interfaces. And in MRO parts, I have to load a generic product ID.
+
+Bastian Osorio:
+Correct? Yeah.
+
+UNKNOWN_SPEAKER:
+And then also MRO part.
+
+Sagar Vora:
+Also the MRO parts means what? Parts. I don't think we have any expector for MRO parts.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+you know so if you see this screen okay so we have for equipment functional location maintenance plan but we don't have anything for MRF I think the generic product ID will go into MRF parts. The one which is available in the Mara table, right? So that Mara table product ID will go into MRF parts. I don't think any other product means any other acceptor will go into that.
+
+Bastian Osorio:
+Let me check.
+
+Sagar Vora:
+But because, can you open the master data MRO part? Yeah, I can.
+
+UNKNOWN_SPEAKER:
+I already opened.
+
+Sagar Vora:
+Yeah, I'm Maro. No, no, this is not. So it has a product ID part ID.
+
+Bastian Osorio:
+Is this one is just. For the materials. Mara materials, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+But this is the mask. Yeah, so if you see here, product here again, I will put up products from the Mara table. Yeah, OK, yeah, and even in the part ID I will put the Mara table product.
+
+Bastian Osorio:
+Yeah, again in in description you have the material description so we don't we don't use product. The user should not see product. For users, product doesn't exist. It's just for us.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Sagar Vora:
+So that's why I wrote the MRO parts with product ID, product master with maintenance plan, and MRO maintenance plan. So these two are connected. Parts product ID is already completed. So that is already available. And PM06 turnaround maintenance. So for that, I have to create. So these are the new interfaces which are required.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+And similarly, we will require a location product also for maintenance plan. But I'm not sure if this maintenance plan will be a product. Sorry, location, storage, location level. I don't know. The way we have location prototype, do we have anything for this MRO parts?
+
+UNKNOWN_SPEAKER:
+We don't have.
+
+Sagar Vora:
+So we just have to know.
+
+Bastian Osorio:
+And I said you have it I said it's also but I think you completed assets, right? Yeah, I said I loaded the equipment number Yeah location product is cool.
+
+Sagar Vora:
+Can you go back? Yeah, oh Yeah, it's cool.
+
+Bastian Osorio:
+Look there. There's another one for that Yeah. But go back to IBP, sorry. Yeah. Yeah, we have a model location parts. Yeah, that one. And it's Marcy.
+
+Sagar Vora:
+OK, this is Marcy. Can you open it?
+
+UNKNOWN_SPEAKER:
+Yes, I can.
+
+Sagar Vora:
+So location product and Marcy.
+
+Bastian Osorio:
+So yeah, location product This is Mara. Can you open the master data, please?
+
+Sagar Vora:
+Yeah, just a second. I will write location product is also required for maintenance. What do you want?
+
+UNKNOWN_SPEAKER:
+OK, this one.
+
+Sagar Vora:
+Location part says location ID product ID and I think FMF.
+
+Bastian Osorio:
+Yeah, those, Rinaldo cannot open, cannot integrate them yet. But yeah, but yeah. But this is from Marcy, right?
+
+UNKNOWN_SPEAKER:
+Yeah, Marcy.
+
+Bastian Osorio:
+This is Marcy standard. And I can integrate this one also.
+
+Sagar Vora:
+Okay, I can do this. Location product is required, right, for maintenance plan also.
+
+Bastian Osorio:
+Yeah, but don't focus on maintenance plan for now.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Finish all the rest first and then we go for that one. Okay, sure. One conversion is fine, right?
+
+Sagar Vora:
+The UAM conversion is done.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+But I think UAM conversion, OK, we can discuss that later. But UAM conversion will be required for this also then. But I'm not sure this will be available in SAP. So I'm not sure. No, that might not be required. OK, for now, let me focus on these three. And if the time permits, I will focus on this also.
+
+UNKNOWN_SPEAKER:
+And then we can again reconnect. OK. OK.
+
+Bastian Osorio:
+Please, once you finish SAGAR, start completing the file. Yes, keep track of everything in the file. Otherwise, we're going to lose track.
+
+Sagar Vora:
+Sure, sure. I'm already maintaining here, but I will update in that file. Here, I've maintained like the customer, the equipment master, the source. Table, the target table, and the filters which we have left.
+
+UNKNOWN_SPEAKER:
+So I'm maintaining this. But yeah, I will update that. OK. OK. Yeah. Good.
+
+Bastian Osorio:
+That's it for today. We meet tomorrow to keep checking.
+
+UNKNOWN_SPEAKER:
+Yes, sir. Saul? Yes, sir?
+
+Bastian Osorio:
+We have a meeting later, right? With Hector at 4 p.m. Here, 1 p.m.
+
+UNKNOWN_SPEAKER:
+for you. Yeah.
+
+Saul Portillo:
+Okay, see you later then.
+
+UNKNOWN_SPEAKER:
+See you. Thank you.
+
+UNKNOWN_SPEAKER:
+Bye!
+
