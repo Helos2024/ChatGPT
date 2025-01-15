@@ -1,0 +1,220 @@
+UNKNOWN_SPEAKER:
+but everything is good. Hi Rahul. Hey Khalid. Hey Nishant.
+
+Rahul Patel (ADNOC Group D&CS):
+Hey Rahul.
+
+UNKNOWN_SPEAKER:
+Nishant, any update on the ticket? Ticket?
+
+Nishant Keloth (Borouge):
+OK, I'll tell you the story. And I got back to a person to actually use that group. But see, as I said, the show must go on. You can schedule a call with me anytime if there is any task pending.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, the configuration task we have finished, but then now we are also requesting access for dev. So today we are waiting for approval from Fedad, which means is the moment we start dev, probably we cannot work on the screen sharing basis. Our developers would need access to Puroj's dev system. I understand that.
+
+Nishant Keloth (Borouge):
+So I think by then, let me try to sort it out. Kunal is still on another call.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+You know Kamal Sridharan? Kunal? Which Kunal?
+
+Nishant Keloth (Borouge):
+I don't know Kunal. Digital security security.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+What is the boss? Come on. Come on. Come on.
+
+Rahul Patel (ADNOC Group D&CS):
+We are not. This one.
+
+Nishant Keloth (Borouge):
+So, tomorrow early morning because and ask him to prioritize this as soon as possible.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So Kunal sir, what's pending on him?
+
+Nishant Keloth (Borouge):
+See, I told him that what happened was morning I pinged him and I said, we have created the group as you recommended. Can you please guide on adding this to the whatever so that firewall access is open? So he was saying, look, call Aneesh Sain because I'm busy right now and I'm completely busy today. So I called Aneesh. Aneesh doesn't know anything about the group. What to do, what not to do. Maybe he has no idea because there are many people involved.
+
+ So I need to get in touch with Kunal to figure this out.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So tomorrow morning, I will try to push this. I think probably you may be required to get another ticket to add and add those users to the group.
+
+Nishant Keloth (Borouge):
+But the earlier ticket, the firewall open, that's already there.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+No, that's fine. Again, now you don't need any firewall opening anything. You just need to add that group to the users, right? Ruben gear. OK.
+
+Nishant Keloth (Borouge):
+Because this ticket was raised by another basis, I will.
+
+Rahul Patel (ADNOC Group D&CS):
+I will speak to him.
+
+Nishant Keloth (Borouge):
+In the call.
+
+Anandha Krishnan (Borouge):
+Yeah, call it basically. You know, come on, you need to go ahead. And he should be. Allowing the access based on this new group that is created.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So that step is pending.
+
+Nishant Keloth (Borouge):
+So just to update you, morning I had pinged Kunal. Kunal pointed me to Ashish Sen and Ashish Sen looks like he's got no idea what's happening. So then I went back to Kunal and I told him, see he's not having much of a knowledge what needs to be done, but he has read the message, but I haven't got any response from him.
+
+Anandha Krishnan (Borouge):
+OK, so let's let's like I said, you know, let's try tomorrow morning Nishant.
+
+Nishant Keloth (Borouge):
+I mean, unfortunately we are at their mercy, so let's wait.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+So Anandha, we are also raising a request for development success access. The design board at Apple would have a request, once Firas's approval is received we can we will take Kunal's approval and then we'll raise request to get IDs created in development environment as well the project environment.
+
+Anandha Krishnan (Borouge):
+Excellent see once this is done now we know like you know how things need to be done because we will just use the same group going forward the only difference is just the target IPs. Yeah no problem.
+
+Rahul Patel (ADNOC Group D&CS):
+So target IP is while you've raised the request can you please target IPs as for development as well right away so that we don't wait later because our IPs are the same either way we need to create a new request and we will do we will initiate it yes so let's let's not wait for our IDs to be created because IPs are available our IPs are available so that if both target and source IPs are If we can parallelize that request as well, then while we're either getting created, this will get sorted out.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, I agree.
+
+Anandha Krishnan (Borouge):
+The only thing is I just want to make sure this is working before going ahead and creating more. If it's if I have, you know already confirmation that it's going to work, then I will go ahead and create so because these are two different teams. The team that's going to allow is from camel, which is a firewall team and the team that created the group. And if it's not working, sometimes we have to redo the whole thing.
+
+ So just wait for this one till tomorrow and then we will create.
+
+Rahul Patel (ADNOC Group D&CS):
+You also have been out on the call, so then I'll do. I think yesterday there was a discussion with that not team on setting up this SNC, which is a certificate. You have any update on it?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yes, yesterday we did that meeting and we give to Mustafa all the information regarding the SNC connection and he will take that information with the base 16 to install that configuration on SAP. Is it the same? Me to create a ticket for certificate. There is a certificate or there's two different tasks going on.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Two different tasks.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+OK. OK. Yeah. By the way, the certificate request, I see it's approved. So now it is fulfillment in progress. A work in progress so probably it should be assigned to someone to work on it yeah okay so from an STD perspective I think we were having two open points one was uh uh approved agreed in the meeting with
+
+Rahul Patel (ADNOC Group D&CS):
+Sintamys with SAP so we updated the comments in the STD the second one is what uh I was talking about to Reinaldo where we need to set up the SNC as per the recommendation from SAP and verify if this mitigates the risk, which this team had raised. And if this step mitigates the risk, then we'll be able to close all the open points from Synthomas on SDD and get his approval.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So I believe one point was related to CIDS, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+Related to CIDS, action was that user ID and password is required for even CIDS configuration, one-time agent addition. It was discussed and agreed that the consultant's user ID would be used for the one-time setup and configuration. Once all the setup and configuration is complete, we will enable IA space login so that authentication will happen and we don't need to enter user ID and password and SAP has confirmed the long-term solution is to create technical ID so that in future if any change has to happen or any configuration additional agent changes has to happen then SAP themselves are changing the process to create a technical ID which means that and this was discussed with Santamish and he agreed to this solution saying that from a project perspective from From a cutover perspective, this will become a cutover activity where we set up the system with manual user ID and password of consultant, then enable the IS for AdNoc so that we don't need to provide either ID and password, and then eventually the technical user ID from SAP will help us do any future modifications.
+
+ So this was the one point with respect to CIDS. Second one was that user authentication using certificate between DSSR1 and S4 HANA, which uses RFC protocol for login with secure network communication. So SAP has recommended some additional certificates based authentication. So that's what is being, that's what Reinaldo mentioned that this is now being, yesterday we had a meeting with that now to work through what is required.
+
+ So now that's what is being worked upon. So once we do the configuration, I think tomorrow there is another meeting planned with the HEC team so that they can complete the configuration. And once it is verified that authentication can be done and user ID password cannot be used, then this will also mitigate the secondary stress.
+
+UNKNOWN_SPEAKER:
+Yeah, I hope so.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So after these two we should get through the SDD approval completely. Yeah, that's that's the expectation. Yeah, OK, apart from this. Else is going on in the development domain? Are we working on the extractors, configuration?
+
+Rahul Patel (ADNOC Group D&CS):
+So what we are doing is, since we have access to Sandbox, we are trying to, the interface is now set up between Sandbox and IBP system. The team is running the extractor, verifying data set by data set, like all the master data, transaction data, where they are able to see what kind of data is available. Analyzing the data. Currently they are working on identifying fields and extractors. So a team has requested that next week onwards we will need more technical specific discussion where fields and fields related discussion can happen with functional people from like the core team from AdNoc as well as we'll need Vignesh and like core SAP people as well in the call.
+
+ So that interface by interface we can view on the questions the technical team has. That's the agenda from next week onwards. So the technical meetings we'll have, we'll leverage the same meetings, but then we'll change the topic from currently we are talking more drilling specific discussions which were pending. Now next week onwards we'll have the interface specific discussions and we'll give you update of the interface as well what's happening there.
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So you are able to extract the data from S4HANA into vp you can see the data there so correct and configuration has some configuration being done and we can see some scenarios is that so that's a configuration right now
+
+Rahul Patel (ADNOC Group D&CS):
+in process based upon the wave one approved bpds we have right so the plan is that in the week of 27th december and so for two weeks December and the first week of February, we will have the meetings, kind of a walkthrough meetings with the key team members, where we will not only demonstrate, but we'll also give them access to the system so that along with us, they can also walk through the same steps and see how it is working in IPP.
+
+ So that's planned in the last week of January.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Okay. But this one, you will be doing it on sandbox data it will not be on a development or a quality data right or or by that time you will be able to establish the connection this will be so my
+
+Rahul Patel (ADNOC Group D&CS):
+understanding Khalid correct me if I'm wrong sandbox has better data than development correct because it's a recent refresh of production yeah yeah so in sandbox we have I believe two clients uh I don't know the exact client in number ERX is what we have received access to.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, ERX is Sandbox, right? So whatever you do on the ERX, you need to repeat that in development, right?
+
+Rahul Patel (ADNOC Group D&CS):
+And that's one activity which we have prioritized and working upon. So while we are waiting for, while we have requested the access to Sandbox, team is now working on creating FSDs for whatever we did on Sandbox, so that, so Sandbox, we- It will not be transportable, yeah.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+so it will not be transferred you have to redo all those work and the SIT should be done on those on the development only right so on the project landscape which means that you need to move from the development to SIT server your transports establish the link there and then perform the SIT there.
+
+Rahul Patel (ADNOC Group D&CS):
+So right now we are what we are doing in the week of 27 is more like unique testing and not SIT. Will follow up later. So as we are going through the sprints of development, whatever development we are doing, we are giving this early access to the team so that while we are developing, if there is any feedback, we can make those changes while the development is happening. So that's what the idea of this early access in the week of 27th Jan.
+
+ So for sure, for SIT, in the meantime, since we are working on FSD, we will have those is approved and then parallelly we are setting the access to development right so things will work and in the meantime team is
+
+UNKNOWN_SPEAKER:
+leveraging sandbox system.
+
+Rahul Patel (ADNOC Group D&CS):
+So for the same purpose Khalid do we have update on the the IBP plugin ticket because we expect that in the week of 27th end users should also have access to IBP For me, you can continue, but then give
+
+UNKNOWN_SPEAKER:
+me one minute. Sure, sure.
+
+Rahul Patel (ADNOC Group D&CS):
+So Kunal, any other point from you from a technical perspective?
+
+Reinaldo Jesus Gutierrez Blanco (ADNOC Group D&CS):
+Reinaldo, do you do you need anything else or any other input? Not from my side.
+
+Kunal Sheth (ADNOC Group D&CS):
+Rahul, for the CIDS, we also need to set up the AdNoc Azure IDP. So that we will have a single sign-on symbol to the IBP.
+
+Rahul Patel (ADNOC Group D&CS):
+So that also we need to set up as a part of STD. Yeah, but that's something we'll have to do once we have the confirmation, right? All the different agents and clients is set up, because we will continue modifying the CIDS agents with the data stores for different SAP environments. So right now, what we have done is we have configured sandbox. We'll configure dev. So till it goes to production, we cannot do this Azure IDP configuration, because then once we do this IDP configuration, it will not ask for Azure IDP password, and we will not be able to complete the step there, right?
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+No, but otherwise, because with reference to the SDD point of view, Senthamesh is not going to approve if we are not going to set up this part.
+
+Rahul Patel (ADNOC Group D&CS):
+We will identify as part of cutover activity and we will provide them that by this time this will be happening. So I think this is what was discussed with Sintamesh and he is aware that okay we have to do the activity in non-prod and let's align with him and give this clarity to him that by this assumption we still need some activities to be done and this activities need user ID and password for us to add this additional data stores on CIDS site so we put our timeline to it so that he is aware that okay by this
+
+Kunal Sheth (ADNOC Group D&CS):
+date it will get completed and it will make it part of our activities right see even for development also we can use the same conception because the technical user ID part that is already implemented by Sagar now the data store part whenever day we need to connect with the dev system so that if we are able to do it with via Azure ID we Technical ID will have to repeat in all the systems, right?
+
+Rahul Patel (ADNOC Group D&CS):
+Because the technical ID what we have set up is only for sandbox. We'll have to create the IDs again in further development systems. So I don't think we'll be able to close that action immediately, but for sure we'll have to update in the STD and give them the timelines on when this activity will be completed so that he is comfortable with the input we have provided and approves the STD.
+
+Kunal Sheth (ADNOC Group D&CS):
+And also we need to check the feasibility from the Reinaldo and Sagar's textbook.
+
+Rahul Patel (ADNOC Group D&CS):
+I think that's something is standard which is possible which SAP has also confirmed and we've done already for IPP. So the same steps would be required for the CIDS server as well. Okay, so Khalid, you back? Yeah, I'm back. Just wanted to check on the request for the Excel plugin.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, as I told you earlier, the risk and compliance, I reminded the guy responsible for this. I haven't called the response yet.
+
+Rahul Patel (ADNOC Group D&CS):
+So the risk here is that we want to have users having access in the week of 27, so which is like last week of Jan. So if we can, by this weekend or early next week, if we are able to close this request, then I think we also need to raise request for end users to have this IVP plugin installed, right? So it will take another few days for that request to be closed. Was to get completed. So probably by Friday or Monday this week, if this request gets closed, then we can ask end users to or the key users to get this IPV plugin installed on their laptops or the computers.
+
+ Okay, so I don't have any other point unless Khalid, Nishant or anyone has any other point to be brought into for this discussion today. OK, then if there are no further points, then let's conclude our call to this. Thank you, everyone. Have a nice day.
+
+Reinaldo Jesus Gutierrez Blanco (ADNOC Group D&CS):
+Thank you, everyone. Thank you, guys.
+
+UNKNOWN_SPEAKER:
+you
+
