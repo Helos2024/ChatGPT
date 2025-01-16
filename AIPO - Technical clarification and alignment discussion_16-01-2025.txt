@@ -1,0 +1,494 @@
+Rahul Patel (ADNOC Group D&CS):
+Good afternoon team. How are you today?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, I mean, we hardly have to do anything. He's been more than a few other things and too busy for me. I have few things pending from my side to the camera. If I don't have any clarity on when he wants to discuss, I'll let you know. I'll tell him that we should help me keep up on board for the discussion. Yeah, and I'll let you know. Take care. Minute before we start our discussion today.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Hi Abdulla, thank you for joining. Is Omar available today?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Maybe he went for prayers but maybe we can try Yeah, I don't know.
+
+Rahul Patel (ADNOC Group D&CS):
+I don't think anybody is issuing a wish. OK, so probably we can start. We have passion, we have sour. OK, so maybe Mohammed Asiq and Abdulla, You guys have seen my email on the discussions to summarize the discussions from past two, three sessions, so that we are all on the same page. Regarding the data, that's something which we need help from you. We started configuring IVP system based upon the discussions we've had.
+
+ And now what we need is essentially some sample data so that we can validate the configuration we can understand what we are doing is correctly working the way we expect, and then demonstrate the working solution based upon our discussions to you guys. So our plan is that by the week of 27th, we want to have the sessions planned, not only for the link, but as well as for MRO chemicals, everything what we talked about for wave one, the demand and inventory.
+
+ We would want these sessions to be planned. One of the key important requirements from a delineating perspective is to have this data available with us so that we can complete our configuration, do our internal analysis and testing, and then demonstrate a working solution with some ad-hoc data, the completion codes, the bill of materials, and show you how create demand for you in further link, as well as give you a hands-on experience on the tool on how you can change the demand, change the quantities, and finalize the demand as part of this unit testing workshops.
+
+ So this is an important thing I want to talk about. So Mohammed Ashikar Abdul Lati, Will you be able to help us with this data by as soon as possible or maybe end of tomorrow?
+
+UNKNOWN_SPEAKER:
+Yeah, hopefully Abdulla, can you share that data?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+I forwarded the email to you guys.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+So no, I I actually have the Excel sheet open and honestly I don't understand what needs filled out from our end. You guys just let me know what needs to be done.
+
+Rahul Patel (ADNOC Group D&CS):
+So what we are looking for is like, let me go back to the Excel sheet so that we can all be on the same page. Let me open that.
+
+UNKNOWN_SPEAKER:
+you Hi Vala.
+
+Rahul Patel (ADNOC Group D&CS):
+Good afternoon. I'm good. How are you?
+
+UNKNOWN_SPEAKER:
+My screen is visible? Yes. OK.
+
+Rahul Patel (ADNOC Group D&CS):
+So essentially, there are two sets of data. Now, one thing is the well plan. Now, well plan is essentially, we would like to have a, for both onshore and offshore, few wells, which has essentially these fields identified. These are the fields which are critical for defining BOM. We've discussed field, well type, completion codes, categories, and then the additional completion codes. At this point, the format is not important, but if you already have a well plan and it has all these fields, it may have additional fields, we don't mind, but we expect at least these fields available for a specific well ID, so that we know that, OK, this is the well.
+
+ This is the well ID. And for this well, these are the attributes available so that we can simulate this data in IVP. Now, eventually, this data will come from either DBC system or manual upload. But then for us to even design the system for the integration or for manual upload, if you can help us with the sample data, we can use your sample data.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+OK, so when you say sample data, data, how many samples do you need? Maybe up to 10, 8, 10.
+
+Rahul Patel (ADNOC Group D&CS):
+If it is easily available, we just need a few 8, 10 wells, if you can provide us. And then for each code, you want to know what's the BOM for each one, right?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Yes. Yes.
+
+Rahul Patel (ADNOC Group D&CS):
+So for the codes we are providing in the well, for those codes, we need this BOM so that we can simulate what we discussed. Now, what we are talking about is an Excel sheet, right? We want to create those build-off materials and see and have this relationship mapped.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Okay, so you wanna issue like some sort of forecast of with this number of files and these conditions you would need these number of items. Yes, yes, yes. But so this is what I just need to understand a bit more and I'm sorry I'm asking this question maybe it's a bit late but we already have a system that does this. Why are we doing this now? We already have a working system that exactly does what you're trying to achieve.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+So probably someone from AdNoc can help you understand why we are doing this. But then from an IDP as a tool perspective, and that's where it is different maybe from an existing tool. So you do not have a single tool which has end-to-end visibility from demand. Which is integrated enhanced for running till supply planning to automate the entire process. What we understand is your current tool, you have a tool for well plan which focuses on your well plan, then you have a tool called EDWP which focuses on the bill of materials, but you do not have a single system which has holistic integrated view of end-to-end process.
+
+ So that's where IPP is a demand forecasting, planning, and end-to-end supply execution tool, which allows you to give at an ad hoc headquarter level, not only at a specific group company. If this tool is implemented at ad hoc level, then the end-to-end visibility, which can be disintegrated or broken down to the last point of information, and it can further aggregated at an AdNoc level, which gives AdNoc the complete visibility of the demand for drilling, for MRO, for chemicals, as in businesses, and then for the entire demand, what is the supply line, and gives them opportunity to centralize the entire process.
+
+ So that's what I understand, that's why this tool is brought in. And also the processes in AdNoc, all of them are not using the same processes this tools allows us to centralize the process in the same way for everyone so that this gives us visibility in a similar manner to the
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+organization. So that's all great and the only concern that I have we already have a working system which we currently use and it took us a long time to have it working and what you're trying to achieve here is great it's just my concern is that there are some communities like wellhead where things are much more complicated and there is multiple inputs which if it needs to be read on again it's a lot of work and it's a lot of hassle right so if we have a working system then why don't we just adapt to the current system and then you can connect it to whatever other tools that you have right because the ewtp system it's connected to the well planned system that we currently have.
+
+ I can issue forecast based on the business plan whenever I need to. So.
+
+UNKNOWN_SPEAKER:
+That's my only concern here.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Abdulla, I think I mean you can still use your old system.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+The thing I'm not against anything.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Yeah, yeah, I'm not against anything. Don't get me wrong.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So maybe yeah, I know, but to make it things easy we don't want to the task but the thing is to make it more easier maybe the way that you are we are designing a template like in SAP IVP similarly if you can generate a report within your system it will be just matter of giving that data in excel sheet and uploading so you will work on your own system but then the final data we will have to just upload through through excel sheet so if you have a common if you have a common way of understanding on how the data to be required then we can use that and we can maybe if you don't have in the similar manner in within your system maybe we can ask even your it that's application ewdp it guys to have a similar way of generating a report so it can be uploaded yeah so I'm not against any So that
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+will be okay, right? That will be okay, right?
+
+Rahul Patel (ADNOC Group D&CS):
+The idea is not to have a duplicated effort or a manual effort.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+My point is we already have a system. It doesn't seem very smart to duplicate another system that does exactly the same thing. That's my only concern.
+
+Rahul Patel (ADNOC Group D&CS):
+Agreed. So the way I see it is that right now, based upon the discussion, we understood that not everyone is having the same way of working or everyone is using the systems in the same manner like you guys are using the system probably to the extent but within the community as well maybe OCTG is using or Wellhead is using but others and I might be wrong here and correct me if I'm wrong but the understanding is that the system also within the group company is not leveraged to the extent the system is capable of and the feedback you received is AdNoc is trying to have the system centralized for quite some time, but they're not able to achieve this common system across trailing for every commodity in every company code.
+
+ Now, what we can do is, we are trying to have a common definition. Now, when we have this common definition and we demonstrate a system to you based upon this definition, based on the sample data you provide, probably the discussion can be what data field can be integrated with an existing system we
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+can so that we can do this sorry so we can do this but again I'm just going to tell you one more thing so the this the inputs that I take today from adnoconsure and I can give you the bill of materials and everything however you will face an issue where other of course might not follow the same thing and this is why they're not even using this the system, the EWTP system that's there today. So I can provide you all this information, but like I said, the way that they calculate things, and this is the reason they don't use the EWTP system, is because they don't do it the same way.
+
+ Okay, so that's fine. I think I understood what you guys need. I can provide it. Tomorrow as hard, but I can provide it early next week. But like I said, that's something maybe you guys will face with the other opcodes.
+
+Rahul Patel (ADNOC Group D&CS):
+And this is a very important input, and thanks for sharing this input. So one of the things, do we have Khalid on the call? I'm here, I'm here. Yeah, Khalid. Khalid, you are in the middle. Yeah. So one of the things what we need to do is that align with an ad-hoc. Probably once we get the sample data, once we demonstrate, we also need to align with an ad-hoc parallel is that how what is the difference between the adoption of the existing process between different group companies like we have onshore offshore like and we also have other which are which will which will be onboarded soon.
+
+ So how from a change perspective will impact the existing group companies and what does it mean from a technology solution because we are talking about existing technology solution being used not in the same way in existing environment and we are trying to have one more technology solution which either replaces or integrates with this to have this minimum effort of transition. We don't want to come with a solution which which essentially duplicates the work, and then adoption of this new solution takes years again.
+
+ So whatever has been created either gets integrated, like the well-planning system. So we know and acknowledge the fact that IPP is not a well-planning specific solution. It's an industry standard planning system, which means we can plan end-to-end planning, end-to-end forecasting, and some planning can happen in the system but IBP at the same time is not a industry-specific drilling specific planning solution which means if there are industry-specific drilling specific planning solutions which are there in the network such as DBS which is a well planning system we don't intend to replace DBS with IBP right we just want to integrate DBS with IBP so that existing work which is happening from a planning perspective can be integrated.
+
+ Now with this assumption we need to this conversation so that we understand the impact while we are working parallel to build the system.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So probably we need to do a change impact assessment for this area as well. So what is the change we are expecting in this? Yeah, and so this is what system we're talking. So I just joined in the middle so I couldn't. You know, understand the conversation from the beginning. So which system DWP are we talking about?
+
+Rahul Patel (ADNOC Group D&CS):
+So let me give you an overview of where the conversation started. So we said that we need, so we've discussed this logic of how we define the bill of material or the demand of IBP. So we have this data from DWS basically, which is the well-planning system where we get all these attributes. Now the bill of material, when we wanted the sample bill of material, the input we received Today, we have this in EDWP system, which is their primary planning system.
+
+ But not all the group companies use EWP system, which means that there is a difference between how the tool EWTP is adopted within OutNow. And if someone is using like for wellhead, the input is that the wellhead process is pretty complicated, and that's managed in EWTP. System. So if that's managed in EWDP system, if we replace the Bill of Materials with S4 HANA Bill of Materials, that can be an additional effort because a lot of time has been spent in adopting this system.
+
+ So that's the context for Discussion College.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Okay, so let's discuss this internally first and align and then we go to the leadership and we come convey this message to them and seek direction on that.
+
+Hector Palacios (ADNOC Group D&CS):
+Hari, Rahul, I have a question. Have we seen this system before?
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, we have in one of the sessions, the EWDP system was shared, right? We do have a recording from one of the previous discussions.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, so in the EW system, they are doing the, they're planning the well, right? And they are, so we have two systems. Forecasting also, they're doing the forecast also, they want planning till what step they are doing and what integration we are expecting with with that so let me let me put up a some schematic around what we are trying to
+
+Rahul Patel (ADNOC Group D&CS):
+discuss so that everyone is on the same page and if so we have dbs system so let me call it this dbs well planning so this is where you have you have the well bar charts right so this is the Is DBS name correct and is this definition of well-planning system correct?
+
+Hector Palacios (ADNOC Group D&CS):
+So, there I guess that we only have the well schedule. Basically, we don't have the materials yet.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah. So, basically, this is five years well-planned. Yeah.
+
+UNKNOWN_SPEAKER:
+Okay. Right.
+
+Rahul Patel (ADNOC Group D&CS):
+So, this is one system. We are not replacing that. We are not replacing that.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Does this system do the supply planning also? No, no, no, no. OK. But it does the demand planning.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah. Material allocation plan. They call it MAP, right? This is what we are trying to do now. Yeah. So this is the EDWP system, which is integrated. Now, these two systems are integrated with each other today.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+OK.
+
+Rahul Patel (ADNOC Group D&CS):
+it is in which company this is in onshore right and then now also there is Excel sheet so let me put an Excel sheet Microsoft Excel MS Excel being used for the same purpose and Excel is a manual now we are trying to put another system, which is IBP. Let's put this IBP here.
+
+UNKNOWN_SPEAKER:
+I'll put IBP here.
+
+Hector Palacios (ADNOC Group D&CS):
+And in EWP, E-D-W-P system, do we have the bounds?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So what we are trying to do, Khalid and everyone, I want to understand also what processes we are doing in each system, right? This is okay.
+
+Hector Palacios (ADNOC Group D&CS):
+One is, Khalid, one is of the plan layer, just a schedule of the work, when it's going to happen, and the other one, I suppose, that is the material explosion. So, which materials we need to use for each work. So, precisely that is what we are intending to do on IVP right now. It's like you give me the plan and I with a and I take the bone, and I explode this to the material requirement. And then you can further change that, but it is precisely that.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+You have S4 HANA. Let me put S4 HANA as well as one of the system, because that's a primary system. And IVP talks to S4 HANA as well. So we take materials from S4 HANA. Bill of Metal from S4 HANA. So this is how the future looks like where DBS is there, EWDP is there. You have IPP and you have S4 HANA. So this Excel sheet, if we are adopting IPP, should go away. What process is being done in what system okay let's put that as well so we let me insert here so let me put in the box itself today we are having procurement MRP right I don't think MRP is being
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+done for this kind of materials in SAP so let's say probably I believe is the procurement to create the release order you see the material and issue the material Inventory, we have inventory.
+
+Rahul Patel (ADNOC Group D&CS):
+You have consumption. And also you may have agreements, right?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+If you have a long term agreement.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so procurement, which means contracts, yeah, agreement. And you have master data, right? Master data for the materials. Yeah, yeah. Master data let me say mm data okay okay now DBS has a five years of well plan so I've already said that and EWDP if anyone can help me I think you have MAP metal allocation plan we already said MAP you have MAP you have basket they call it basket let's put the word which is bomb and you have metal master so which is not same as SAP metal master so is this correct definition from an either there
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+will be what activities are happening here so here do you get so you have no so the EW it's EWDP so it's a yeah it's a well delivery the system does many things but a part of it it does the material forecasting so it takes the five-year business plan for example and we input for example the baskets and or BOM right and it calculates for each item in the BOM what is the current what's the forecast of that item per month for each year so that was used to be material management team yeah sorry dbs I think maybe for us it is d it's dws yes yeah so dbs is this is the offshore therapy technology over there dws yeah yeah so dbs are both same type thing yeah there's there are both the same thing okay because we've heard dbs and sometimes sometimes dws oh yeah so the ewdp system it's available for both onshore and offshore but for some reason offshore does not use it so we are the only ones who are currently using it and offshore is excel sheet however they do have access to it so that's what we understand even they're not using it
+
+Rahul Patel (ADNOC Group D&CS):
+or their bill of metals are not up to date so when you say onshore are you using for all metal categories or a certain metal categories some don't use it because we have VMI contract previously everyone used to use it in onshore so that's what we also understand not completely used post VMI post VMI because VMI created another set of materials and those set of materials are not updated in the metal basket so you do have metal basket on your old metal cores but you don't have metal basket on the new metal cores of the different we have we have baskets and all of we have baskets in all the new codes right it's just a matter of
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+since we went to this VMI model things are done a bit differently that's all.
+
+Rahul Patel (ADNOC Group D&CS):
+So when you say not completely used by post VMI Excel is used?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+No it's done all through the suppliers it's not an Excel thing it's just suppliers actually do it because the inventory is managed by them.
+
+Rahul Patel (ADNOC Group D&CS):
+Demand forecasting also supplier the planning is also done the bomb definitions are done by supplier but like I said some still use it some maybe they don't use it because they depend on the vmi supplier okay so what we are trying to do here is this this bomb definition uh so broken so in the to be set we want to define bill of metal in s4 hana and this bomb definition so the well plant remains in g DBS or DWS.
+
+ You integrate DWS, DBS, IBP, so you get five-year well plan. And what we anticipate are the future state would be demand would be forecast would be done in IBP. Inventory optimization would be done in IBP. And then supply planning would be done in IBP, which means you have the end-to-end of everything and then the supply plan gets integrated which means only the PR call of orders which are automatically created, which users are not creating anything.
+
+ Since it is integrated, you define end-to-end plan here and then IBP creates the supply plans for you, the PRs, the STOs, the STRs. Also, IBP has visibility of inventory at a different level. If you use IBP, then you also do the stock transfers because you have visibility of not inventory at your location, but all the locations where this specific model.
+
+Vignesh Perumal (ADNOC Group D&CS):
+You need to also put one Excel sheet connecting IBP that VMI stock, which is not because in order for you, you need to know the stock at the VMI place, right? Otherwise, you cannot do. Maybe you put one more input to the IBP called as the VMI stock levels. Because that is essential for us to this. Currently they said that they are providing through Excel sheet, but that must come.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, I agree. So let me put this as input as we must talk level. You're correct so that we clearly identify that. Also looks at the VMI stock level. Also looks at SAP, so it is. It can be integrated VMI stock. It went to restore HANA. Now the only point of the discussion what we are having is how do we define bill of material where do we define bill of material and how we can avoid the rework in defining bill of material that's the point of discussion is this correct like that's the point of contention if we are able to define bill of material in s4hana then the entire demand inventory supply planning and I think, see Rahul, can I ask like this?
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+I think there was a clear mandate from the excellence team that there must be a single source of truth for the bill of material and it should come from SAP HANA, right? I think when Murugan was there, they have cleared and everybody has agreed to this concept of having SAP SAP HANA, the BOMS in the SAP HANA is the master, single source of truth, which can later be revised or amended as per business requirement.
+
+ But the source of truth for the BOMS will be the SAP HANA system. And subsequently, whenever the additional materials are required during the planning phase, yes, they can change the quantities, add new materials. All this was agreed, right? Or why are we again going trying to do this.
+
+Rahul Patel (ADNOC Group D&CS):
+So we have Mohammed, sorry let me confirm the name, sorry Abdulla, yeah sorry for that. So we have Abdulla from the Tilling Onshore team and when we were requesting data he brought up this point saying that he will share the data with us but he see that why we are duplicating the efforts if we already have the bill of material, and have we aligned internally that all the systems, like, what is the intent of bringing things in IBP?
+
+ That's what I was explaining, that how IBP is different than EWDP, and how IBP will help us bring everything on a single page. So that's where you're explaining this concept. And in this discussion also, if there is any, from a change management perspective, if we see that any issue we expect, then let's take this as a parallel track of conversation while we are defining the solution in S4HANA, how to address the change in management between the different systems or different technology solutions being used today and how those will transition to IBP.
+
+ That was the intention of discussion. So just to make sure everyone is on the same page, I put this picture for everyone to be aligned on what we are trying to do in IBP. So essentially the point remains open Vignesh is that for onshore they are using EWDP for defining the bomb. And we need to align that all the bombs which are defined EWDP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Again, again, like I said, OK, we need one single source of truth for the bomb. OK, that if business agrees. I will have all the bomb because EWDP is not only a It is it is having other functionalities, whether if we can, if I can get the bomb from there, which must be very accurate. OK, because even my my problem is. If they are already doing this exercise in the EWDP and if I'm going to tell them come and do the same thing once again into the SAP HANA system, two times people will not do.
+
+ But for me you know there should be one source of truth and our as far as I'm concerned, for business request, they were saying that have the bill of materials in the SAP HANA. That is why we said that it is from the SAP HANA. Whether onshore or offshore, there must be an agreement between both stakeholders that one system will be used as the source of truth for all BOMs. And that will also require, if you're going to use EWDP, that must have some sort of synchronization with SAP so that any new materials being created, updated, must reflect that so that they can assign that also into the existing bomb.
+
+ I think all this is being done manually over there in EWDP now Rahul.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so that's something from a change management perspective so that everyone is aligned on this thought process while we are. So we've taken this input, we're building the system, we're documented this processes and while we are doing this as a parallel change management action is to make sure this alignment is complete between the different stakeholders so that we can proceed with the while we are reviewing and testing the solution.
+
+ This change management communication can happen is something we were discussing today.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Yeah. Abdulla, one question to you if I can ask. So in the EWDP system, if I get the equipment basket, will I be able to get all the items from planning to completion to wellhead? Everything you know, Is it available in the EWDP system or a part of it is only available Abdulla?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+No, so like I said. Prior VMI was our main forecasting tool for all the drilling material, right? Because we went to the VMI model. And the challenge here is because obviously all the inventories with them, so we cannot depend on them to work out the forecasts.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Can I ask this? So not everyone, by the way.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+So not everyone. A lot of people still use EWTP. One of them is the Wellhead team. And the reason is because it's to forecast it. Things are a bit much more complicated.
+
+Vignesh Perumal (ADNOC Group D&CS):
+OK, thank you. One last question from my side. Is there some sort of feature or an integrated function functionality in the EWDP which the business uses for constructing the bomb. For example, if you go to the SAP system, it is a pure manual process, you have to maintain it. But since EWDP system is having additional well delivery planning, do you get some input from maybe some different sources so that the business can accurately construct a bomb or is it like no, it is just a manual, they have to do it over there.
+
+ What do you mean manual? For example, is there some feature or facility which tells the user in the EWDP system that for this well, these are the suggested materials required for for the delivery. Is there some parameters over there in the EWDP? Or is it like users will go and manually upload one Excel sheet?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+No, so we don't upload any Excel sheet or anything. So all the different BOMs are in the system. We can go and amend it. So whenever those selections are selected in the business plan, it forecasts based on the bomb that was selected, if that makes sense. It calculates the bomb, and it gives you the forecast. So it does all of that. So I don't manually go to each well.
+
+Vignesh Perumal (ADNOC Group D&CS):
+No, I don't go manually to each well and change the bomb, no.
+
+UNKNOWN_SPEAKER:
+We don't do that. OK. OK.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, I think, as I say, what Abdulla is trying to explain nowadays after the VMI award, the vendor is providing the plan.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+They are providing the plan based on Excel, I think, and the vendor. So that's what I want to point to. So before the VMI, the fully function and readability, everything was planned and especially the vendor information, we fully depend on the vendor.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Oh, okay.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+That's what you want to say, isn't it?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+So again, yeah, it's partially true because there are some communities like Wellhead where things are much more complicated. So they still require or still use the UWDP system. However, I'll leave it to the Wellhead team to decide. You know, to explain it more. But yeah, the challenge is all the deliveries and everything and the current stock is with the VMI suppliers.
+
+Rahul Patel (ADNOC Group D&CS):
+So Abdulla, from a change management perspective, if we have to like get alignment with the stakeholders, then we have to talk to all the companies. So what I understand different team for every commodity, right? So which means we have to talk to every commodity team separately.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+Also, is there a team which from an IT perspective?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+There is a team that manages from IT that manages this. This platform.
+
+Rahul Patel (ADNOC Group D&CS):
+OK. And then, so if we talk to every commodity team, talk to IT team, so that purely from a change management perspective, so that everyone is aware of what we are doing versus what is happening. So this would have been parallel to the solution we are building, so that if you help us with the data, we will demonstrate how the solution looks like in IBP. And that can also help us identify make sure that change management and adoption can be smoothly discussed with the team.
+
+ These are the two teams we need to talk to further as part of change management while this solution is being built on the lines what we've discussed.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+I think I can see Omar is also here as well from team.
+
+UNKNOWN_SPEAKER:
+Hello. Good afternoon. Hello. Good afternoon, Omar.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+It's regarding the material for the combining material for commodities to get the full quantity. Am I right?
+
+UNKNOWN_SPEAKER:
+Sorry.
+
+Rahul Patel (ADNOC Group D&CS):
+Can you say that again, Omar?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+This is regarding combining bluff material To get out, get like for assemblies quantities from the system, correct, correct, correct.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so have you been part of the previous discussions? Have you attended any of our previous meetings?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Just make sure this is the first first meeting. I just finished the things I just joined now. Sorry for joining late.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me give you a brief overview of what we are doing so that you are on part on page with what we are doing and then probably you can add value to the conversation. Before we go into details, so what we are trying to do, SAP IPP is the solution we are trying to implement at AdNoc. So this is as per AdNoc leadership direction that IPP is an end-to-end integrated business planning system, which allows you to integrate demand, optimize inventory, and create a supply plan.
+
+ And then the supply plan has visibility at AdNoc level, all the group companies, all the agencies, All the plants, all the locations are planned at once. And since it is an SAP solution, it has a direct integration or native integration with SAP S4 HANA, which means all the master data, like materials, contracts, vendors, the purchase orders, the inventories, the transactions which are consumption, are directly integrated with SAP IBP.
+
+ Also, SAP IBP will get integrated with the third party system, which has visibility of VMI stock, or we are also planning to integrate with the DBS or DW system. So in integration with all the systems, what we are planning to do is to have a demand forecast in IPP for all the dealing materials. And then with the visibility of all the information from VMI stocks, the open transactions, open POs, STOs, having visibility of inventory at different locations, optimize inventory and create an optimum supply plan which will allow you to meet the demand forecast.
+
+ And this tool not only allows you to create the end-to-end visibility, there have a lot of reports, there is a simulation and functionality where you can simulate how my demand is changing and based upon my demand simulate how my supply planning is changing and have a clear visibility of the impact of different changing parameters and come up with the best supply plan which will allow you to plan your drilling operations in a single window.
+
+ So that's the high level objective of the project to be able to implement IBP for drilling business of ADNOC. Now how we are doing this is we are doing this in two stages. We are connecting IBP to the DBS or DW system which helps us get the five-year well plan and then we are defining the bill of for all the drilling materials in S4 HANA, and the combination of well plan and the bill of materials, we will be able to create a demand forecast in IDP, and based on that demand forecast and integration of data with S4 HANA, we'll be able to generate the supply plan.
+
+ Now, how we are going to do the demand forecast? This is how, on a high level, we are trying to give. So, essentially, when we have the well plan, these attributes of the well, which are well type, completion codes, category, or the field. These are some of the basic attributes which we are using, and the combination of these common attributes are used to define bill of metal. Based upon the combination of attributes, a unique bill of metal would be defined on a generic metal code in S4HANA, and the combination of the well plan, the attributes, and the bill will help us define the Bill of Materials.
+
+ So to go to the detailed discussion what we've had with the team as of now. So we will have different completion codes. So for a given well, you will have field well type, completion code category. And then based upon the different material categories, you will have a different completion codes for different material categories. And the combination of different completion codes and material category will help us define the bill of material, and then that bill of material, once defined in S4HANA, the steps is to get the data from the DBS system or DWS system, from that, define and determine the BOM, and then essentially work on the sub-platform.
+
+ That's the plan we are trying to work upon, and that's where we are aligning with different stakeholders. In last two, three meetings, we've come to a point where there was where everyone agreed that this methodology of creating a bill of material unique bill of material for a combination of the attributes of the well for specific category will give us the entire bill of material and if this entire bill of material is maintenance for HANA we can create demand for all the components of well in IPP and give this visibility for the planners and then planners can further so this bomb we are not saying is the final bomb this is the we can call it as the base bomb which is common for this attribute and if there are any additional materials which are specific to the well which needs to be added then that can be added in IVP system directly for a specific well so if you want to change quantity if you want to add materials after the reference of the bomb can be done directly in IVP so that's how we are planning this entire process And that's where we were discussing today with the team.
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Thanks so much, Rahul, for the summary. It's a very thoughtful summary. Now, a question. For the bill of materials shown here in the screen, it's the generic bill of material, not the specific one, right?
+
+Rahul Patel (ADNOC Group D&CS):
+So yeah, the idea is that we define bill of material on generic material. And then we have additional mapping between generic material and say branded material or forecasted material so you can have multiple branded or what we call specific materials per vendor so this mapping is available or has to be maintained in S4ANA where a single generic material can have multiple branded materials and when we do the supply planning IBP will look at a stock of different branded metals and recommend you that how the supply planning should happen for a generic code.
+
+ So the planning happens on generic level, but the supply planning happens on the specific metal or branded material. And the mapping between generic metal and the branded metal is one of the inputs for IBP for planning.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+OK, let's talk about the Wilhelm section now, because I know about the details of the Wilhelm. I don't know about other communities, but I I think they are following the same type of forecasting we are using. Now, until the point where you have generic vs. Branded specific, okay, until that point...
+
+Rahul Patel (ADNOC Group D&CS):
+Let me bother you for a minute. I would like to record this conversation so that it can be referred future, because since you are providing us input on wellhead, is that okay if I quickly start recording Yeah, so what we'll do, we will not go into
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+details in your head now, but OK, let's start recording.
+
+Rahul Patel (ADNOC Group D&CS):
+Khalid, are you able to record the session? For some reason, I'm not able to record the session. Or Tara, are you there on the call? So I don't think Khalid is on hold. OK, let's continue this discussion.
+
+UNKNOWN_SPEAKER:
+I started the transcript. Yeah.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Just reshare the screen.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Yes, OK. Until we have the generic VS branded table, or let's say a forecast, until this point, we have our own system, which is we have EWDP, which is directly getting the information from DWS once it's approved, or let's say we have a scenario under review. And once we review the EWDP, we push it through the system to another software. I can't recall the name of the software. Supply Chain Management and Inventory Team.
+
+ Mohamed Ashok, if you can remind me, what's the name of the software? MRP. MRP. EMRP. EMRP. So EMRP, it analyzes the output reports from the EWDP and develop for them a supply plan for based on the generic When you say supply plan, is it a supply plan or it is demand for cost? Supply. Supply means demand, how much they need per month for next year. OK.
+
+Rahul Patel (ADNOC Group D&CS):
+In terms of IBP, that is called demand because you are only finalizing what you need. You are not looking into what you have and what extra you need to procure. OK.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Now, this demand plan, we will check it manually against what we have and what we need to buy. Now, in terms of full head, the demand plan comes, all the Wilhelm analysis is in set. So the Wilhelm is, we define it, let's say the Wilhelm code, let's say DimH55 is a set. This set is a combination of items. Now, what's the items under this set is defined in the contract, which we have in SAP. Now, once we reach to the demand plan, we will have number of sets required per month for next, let's say, whatever, next two years, three years, five years, depends on the forecast.
+
+ We will know how much items that we need to cover for certain period and based on that set, we will break down to see what's the required material under that set we need to procure. Before going to procure the items, we check also the availability of the sub items in our store and the sub items the VMI stores. Sometimes the there is complication in the checkup. This is why we interfere in the manual checkup here, not the automated.
+
+ Sometimes sub-items are not completely used as set on rig sites. So we have partial utilization on rig site. Let's say they have a workover wheel and they have some items which is usable from previous installed X-trees. So they keep the good stuff and they use the items items that require to be, so let's say we have a spool hangar Christmas tree, we have dimensions of the Christmas trees, but the spool and hangar is in good condition, so they will take only the Christmas tree from our sets, new sets, and you get back the hangar and spool.
+
+ So we get a partial sets returned back from the rig. Okay. So based on that, we make our analysis, how much we need to buy per sub-item in the demand plan.
+
+Rahul Patel (ADNOC Group D&CS):
+So if we have to align this process in terms of how we would like to do in IBP, so can we go one step at a time? Like EWDP, when you say that you have this demand, the EMRP basically allows you to create a demand. But EWDP, you have your metal allocation plan or metal basket is what you got, right? So this is demand is nothing but a metal allocation plan. And then EWDP has your metal basket.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Is that correct? It has the material basket and it generates the report per the code so it gives how many it's some kind of demand plan but it's not enhanced like the EMRP in the procurement team or the procurement division.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Okay so no so just to sorry to interrupt Omar we don't use now the EMRP so we don't need to explain about that because EMRP after the VMI we are not using that system anymore.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Okay, so we are depending on EWTP completely, depending on the forecast.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, so we are getting the forecast from your site, then we are doing a joint review with supplier where we are getting the information from various system and then through an Excel sheet we are doing the review now.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Okay, so if you want I can show you a sample of the forecast we are getting from the supplier from the from the EWDP.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, so yesterday yesterday we had discussion with Abdulla and Mike Matthew. So then yesterday there was a conversation that wellhead is bit complicated. We have some additional. Yeah, so maybe if you can explain a detail on how how do you analyze the bomb and well in the EWDP system.
+
+Rahul Patel (ADNOC Group D&CS):
+the data and dwa system that will be more beneficial yeah okay before you start I just want to check again khalid will are you able to record the session for some reason I am not able to record this session
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+because if uh if you're getting to know details of wellhead uh planning then I would even myself I can't record is a is a meeting invite sent by tara right is she able to do just a minute uh I'll
+
+Rahul Patel (ADNOC Group D&CS):
+just take a minute here So that this is an important conversation I would like to record and I don't want to come back again to you Omar again for the same information to be requested. So please bear with us for a minute or two.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Rahul, I am trying to record from Snagit. So, try to, you can proceed now Rahul. Snagit will record the voice?
+
+UNKNOWN_SPEAKER:
+Sometimes it does, sometimes it doesn't.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Sometimes it don't, so we are hopefully lucky. It records the screen, though, or if you want to capture, you know, Omar's comments, then probably you need to set up something separately to capture his information, which he's giving. Let's do one thing, probably, because this information may be valuable, so maybe we need to set up another session to capture his comments.
+
+Hector Palacios (ADNOC Group D&CS):
+We have the transcript, so we can do a lot with that at least.
+
+UNKNOWN_SPEAKER:
+OK. I don't know, Rahul, for you is that enough or you want to have the video as well?
+
+Hector Palacios (ADNOC Group D&CS):
+Are you there, Rahul?
+
+UNKNOWN_SPEAKER:
+Here we are.
+
+Rahul Patel (ADNOC Group D&CS):
+Harley, I've checked with Tara as well. She's the organizer and for some reason she's also not able to record so we don't have option but to proceed without recording.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+The other option is I can send an invite now and if that is fine with all the stakeholders here.
+
+Rahul Patel (ADNOC Group D&CS):
+Everyone, is it okay to switch the call because this is something we would like to record. Omar, Vignesh, finish everyone else.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+If it's possible to reschedule. Or we can try to send in another invite for everyone to join.
+
+Rahul Patel (ADNOC Group D&CS):
+Just switch call from this invite to a different invite. OK, because I have 15 minutes to join a different commitment. If it's fine. Yeah, so let's conclude. If we are able to conclude in 15 minutes, let's try to switch it.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+No, I have no issues. For me, it's fine.
+
+Rahul Patel (ADNOC Group D&CS):
+OK. Khalid, can you send us an invite again? Yeah, just give me a second. We need Omar, we need Vignesh, and all of the stakeholders from this meeting.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Abdulla? We'll be back soon.
+
+Rahul Patel (ADNOC Group D&CS):
+Only request call it before after you send probably try joining your own meeting and see if you're able to record if there is if you're not able to record that will continue here.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Okay. OK, I have sent an email.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, we'll wait for you here.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+you I'm able to record this join there.
+
+UNKNOWN_SPEAKER:
+you Hmm.
+
