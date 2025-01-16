@@ -1,0 +1,343 @@
+Rocio Minguillon:
+Hi how are you?
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Rocio Minguillon:
+Wait a minute for the rest to load.
+
+UNKNOWN_SPEAKER:
+How's it going?
+
+Saul Portillo:
+Very good. I want to tell you something. I was talking to Vivek and I think that is a slight inconvenience for us. I think it is the issue of the two planning areas. Because, let's say, the configurations are made in the ACNOC, right? And the procedure is that we do it in the ACNOC, validate it, and then we move it to the AZ-01 ACNOC. What happens? When you do it, we are doing all the tests to check the results and they do it in the AZ-01.
+
+ And you change, for example, a parameter in a forecast model, or you change a parameter in a forecast automation, if you don't do it in the previous one, in the ACNOC, and you do the merge, it changes it. Because it copies everything, it copies keyfigures, everything. So, what we are doing is, in a way, doing the Z01, executing, seeing that it works well, and then we replicate in the ACNOC. That we do it manually.
+
+ Because it would be a lot of delay for us if we do it in the ACNHOC so that it can go through, activate, and then prove that the change we made is good. So that's why we're working in a certain way on that. That's why we notified the group that when they did the merge they would inform us, but I was asking right now and I was explaining to them why we are doing it that way. And not the other way. That is the problem that we have, so that they know how we are doing it when we are doing, I don't know, changing, because simply changing a parameter in a forecast model and running a forecast or something like that, I would have to do it in the ACNOC, generate the copy and then test it.
+
+ You are generating double work. Exactly, in a way, for those points, so that they know how We are not doing it that way.
+
+Hector Palacios:
+What if we moved completely to AdNoc? Is it very complicated?
+
+Bastian Osorio:
+What happens is that, for example, yesterday, Hector, you were configuring and Arun was configuring a large part of the day. And the guys are testing there with the master data and everything, discovering models. And no, we could be working simultaneously and work in the same area.
+
+Rocio Minguillon:
+And can you do the same? Unit testing, I wouldn't recommend it because the same thing will happen to you later in all the stages, right? I mean, like, there's always someone configuring...
+
+Hector Palacios:
+But that's the day-to-day of all the Zapi and Pengo projects, right?
+
+Rocio Minguillon:
+We always manage with two. In the projects where I was, we always managed with two and with the merge. But as I see it, you are the experts. Yes, yes.
+
+Bastian Osorio:
+I mean, the best practice is the one mentioned, it was boring to have an area of practice.
+
+Hector Palacios:
+But what is happening, Saul, is that he is not using the merge because every time he has to do a merge, it means that everything has to be changed first, even the operators have to change first in the AdNoc and then do it, that is, changing a simple parameter forces him to do that.
+
+Saul Portillo:
+Exactly, what we are doing, Basti, is like we try, we see that everything is fine in the 0.1 and then we replicate in what we have already done in the app so that when they give the merch it does not affect us because it happened two weeks ago and when they made a merch we had done the tests I don't know what we created all the operators and this and we saw that it changed and we did not think that it was nothing more at the level of keyfigure and well it changed everything and that's it because in the end and I try for example a copy operator but something simple to say or a fork automation app with the data of the z01 And it's not an option in the merge to not copy the parameter.
+
+
+
+Rocio Minguillon:
+I mean, it sounds like... Yeah, it sounds something that it should be possible to do. To solve. Let me ask in the... How we were doing, because I'm sure that I didn't have that problem in Megalabs, because I was... Remember, Saul? I mean, I was configuring also in the parameters. Of course, you do it in the last one, in the one that you have all the data and everything, in the Z01. But... Okay. Okay.
+
+ I don't know, Hector, maybe we can see if there is another possibility or then decide what to do. But for now, I think that that is okay, Saul. I mean, I know that it's replicating the work, but...
+
+UNKNOWN_SPEAKER:
+Yeah. Okay.
+
+Bastian Osorio:
+The thing is that we still need to have plenty of work in configuration and drilling. And also, probably Vivek will also be doing some work. And of course, we will have in the next couple of weeks the unique testing, which means that If we're doing the unit testing, no one can do anything in terms of configuration during the testing because we will be there with users. And for two weeks, more or less for two weeks, being completely stuck in configuration doesn't sound like a good idea.
+
+
+
+Hector Palacios:
+But it's happening in a way. For example, Vivek is working for the unit testing data. He's having a Z01. That is the one that we will showing to the user, that is the one that they cannot do anything while we are doing it, you know? He's not working on the AdNoc one. Nobody's working on the AdNoc.
+
+Bastian Osorio:
+He's doing the configuration and then just jumping right away on the other one. So it's the same problem. But during the UIT, for example, or during the unit testing, if Vivek, for example, or Arun needs to something and we are doing testing, they cannot do it. So the only way to manage is to... Now I remember how we did it. We didn't use...
+
+Rocio Minguillon:
+I remember, I just remember because I was a consultant at that time. We used the original one, the configuration one, but we didn't create the models right there. We just use it for the configuration of all the key figures, the master data, and everything that we need to try and whatever. But the models, we just create it in the one that now is the Zeta-01. So then if you merge, you don't delay the models.
+
+ No, yeah, but the thing is that when we make the merge, we lose all the models, the copy, the forecast models, the automation profiles, everything. Ah, no, no, no. But you shouldn't. I mean, there's an option in the merge that... Maybe there's an option to not copy all the... I mean, the ones that exist in both planning area with the same name, it's true that you replicate the configuration. I mean, if you change a parameter and then you merge and it's the same name, then yes, it changed.
+
+ But if it does, I mean, if the model doesn't exist in the original, in the one that you're merging, then it's okay because it not eliminate the new one. Yeah, but I think there is another way to do it because, yeah, all the models disappear, like the first way that you try.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Yeah. We should find a way to not lose the word.
+
+Rocio Minguillon:
+Maybe we can review it in a quick separate meeting and see how come we don't. But it's a good point. I will put it here.
+
+Hector Palacios:
+So we need to know when we are going to jump to the next one.
+
+Rocio Minguillon:
+I'm not sure about that. Is that in the SITU? I'm not sure. I don't know. I really don't know. A review planning area, waiting for marking. Okay. Okay, so are you okay to discuss this in a separate All right.
+
+UNKNOWN_SPEAKER:
+Yep. Yeah. OK, thank you.
+
+Rocio Minguillon:
+Thank you very much. Well then, go ahead, Vivek.
+
+1Vivekanand Gajula:
+Yeah, I have a question for Bastian and Hector. So I just wanted to know, for unit testing, are we going to use the data that has been recently integrated to IPP via CIDS? Or we are going to use the data that Vignesh has provided?
+
+UNKNOWN_SPEAKER:
+Can you hear me?
+
+Bastian Osorio:
+Yes.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+I think we should use the data from the integration because we still need plenty of data for supply. And that data, Vignesh is not willing to provide, give us more information. So anything additional we need should come from integration. So in that sense, I prefer to jump directly to integration. If at the end of the day, that's what we're going to do. It's just like, okay, we have the extractors in that way we can, we can move faster.
+
+
+
+Vivekanand Gajula:
+So let's try to do that. For now we're focusing on port.
+
+Bastian Osorio:
+So do we have transportation lanes? We need to check I mean we don't of course we don't have it loaded but we need to look for the or how it's going to be the logic for that but even if you are but even for weakness
+
+Vivekanand Gajula:
+if you ask me can you give me the transportation list I'm pretty sure he won't be able to provide yeah so he has already not given the transportation so in his files you know that is missing so I think whatever you know I discussed with Hector based on that what I did is whatever past you know we use he has shared with us now based on that I developed you know the network okay but if we go through extraction now so we need to build that logic and I'm not sure you much time it is going to take.
+
+
+
+Bastian Osorio:
+The thing is that I'm not even sure how we're going to work with the storage location because if that is the case we will need plenty of definitions that we don't have yet. So that's why I'm having... No, no, I understand and it's something we need to work on together because let's, for example, do we have the link between vendors and the storage location? I think that that is a yes, right? And the info record, is there the info, the relationship between vendor and the storage location or just- I think I don't think so, you know, they maintain any info record.
+
+
+
+Vivekanand Gajula:
+So probably, you know, to get that information, you know, like where source is a vendor and receiving location is a combination of plant and SLOG. So that should come from is order itself okay okay I mean I mean transactionally there is something you know which can be relied upon you know to to build up the network you know uh but I'm I'm I don't
+
+Bastian Osorio:
+know like you know I haven't seen you know any info record you know uh in their pews so far yeah then then let's let's say we're gonna use that okay we're gonna use that we do have the relationship in that document between between vendor and storage location, right? No, no, between plant and vendor, not between storage location.
+
+Vivekanand Gajula:
+I'm talking about the file. I hope you are also talking the same.
+
+UNKNOWN_SPEAKER:
+Yeah, the PR.
+
+Vivekanand Gajula:
+Yeah, so the file that Vignesh has said, right, in that you have only vendor and plant. There is no SLOC. Yeah.
+
+Bastian Osorio:
+And the thing is that Murugan, I heard Hector, but he said not, I don't know if it was Boruga, but someone from AppDoc said, no, we don't need to work on storage location. It's just a small part of the organization that works at that level.
+
+Hector Palacios:
+Are you kidding?
+
+Vivekanand Gajula:
+No, I'm not kidding.
+
+Hector Palacios:
+I think in one of these- Because we need to put them together in a room.
+
+Vivekanand Gajula:
+I think if I remember correctly, in one of the supply discussions, they said that they have a lot of moments, you know, within a plant, you know, between S-Log to S-Log. This is what I heard.
+
+Bastian Osorio:
+Can you say that again?
+
+Vivekanand Gajula:
+No, I don't know who was that guy, but what he was saying is when we demonstrated that ROP scenario, right, in the same session, you know, they were saying that we have so many moments, you know, between S-Logs, you know, uh that that fall under you know the same plant. So for example the plant is 1201. But that means they're working on a plant level or a storage location level? On the s-lock level for example the plant is 1201 so they are moving uh the material you know within the same plant you know but between two storage locations maybe from building to another building.
+
+
+
+Bastian Osorio:
+So that is Murugan's point, that we need to work at storage location level. And we are going to plan STL for storage locations in Simplant?
+
+Hector Palacios:
+Yeah, and I have a document also.
+
+Vivekanand Gajula:
+I've seen those documents in the system, but I don't know whether we're going to consider that. But that doesn't make sense for us, right?
+
+Hector Palacios:
+This is not that level that is like warehouse management or I don't know what else but it's more operational not planning I'm just scared if we do everything at the plant level and then we need the PR by storage location then how we are going to convert the plant storage location. If there is like one unique combination of product plant for the same storage location, great. But as soon as you have like for the same plant and material, you have many storage locations, that's the huge complication.
+
+ Maybe what we can do is to raise the hands and to ask for this guy from KPNG that supposedly worked on this one ERP implementation. If this guy that is not connecting but supposedly is the boss of the processing data team. I don't know if you remember Basti, the one that in the kickoff was talking about data.
+
+Vivekanand Gajula:
+I think his name is Gunjan, is it?
+
+Hector Palacios:
+Gunjan, that guy. He's supposedly known. When Murugan got really mad with me when I raise the point, he said, where is Mungun? Where is Gunjan?
+
+Vivekanand Gajula:
+Because he knows, you know? I think he left KPMG, I guess.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+We can raise the point there in the chat with them and ask, no? I think the thing is that no one is The only one is Rahul, but he's not helping in things that we need.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+We can ask in the huddle, because I also am not...
+
+Rocio Minguillon:
+OK, yeah, try to ask in the huddle, but usually, ultimately, the huddles are, I don't know, just about repeating things that are on that list. But try, I mean, I don't know. Try, but if not, then the chat. I found it interesting, that chat, that sometimes people take more attention to that. Should I put something here, like a task related to that, or just to keep that in mind, or it's not necessary?
+
+
+
+Vivekanand Gajula:
+by any chance do you know today mrb you know is managing that I don't know what do you see when you were checking the the reorder point of No I just saw the reorder point configuration but I didn't go to the transaction you know data level I just found you know some of the STOs you know where the supplying plant is the same and the receiving plant is the same only the SLOG is different so that means the issuing storage location you have and then a receiving storage location so those documents I have with me and they also have some intercompany you know scenarios as well where one plant that is okay you know intercompany is between two different you know uh two different uh plant codes but within the plant I saw moments as well I guess we need to take note for that and discuss on the on the sessions when we get to discuss pr with
+
+Hector Palacios:
+them because um I know that they have mentioned many times that they have inventory levels by storage location and if you don't have it by storage location then you get the plant the plant number but they have by storage
+
+Vivekanand Gajula:
+location the number yeah this can increase you know the volume as well you know on the VP side yeah I tried I tried man because today I was talking to Sagar and we were running something and it was literally,
+
+Hector Palacios:
+you know, throwing a dump. Yeah, it's a risk, you know, but they were like, they were standing in their position with this one. Yeah. And that is little to say.
+
+Rocio Minguillon:
+We can give visibility on this now I'm realizing. I have to make a file today. I will use the files that Sagar and Ray already have, like just with the titles of the different master data and transaction data that we need, and we will maintain that status there. So maybe, for example, this will be something that will be there as pending, and well, everyone will see why, but I think That helps, I don't know.
+
+ But do you agree or?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Okay, but I will keep just this. Okay, I have one, two things, two important things to say. The first one is that today, Hector and Basti, I have a meeting with Tara and then one with Kai with change management. Tomorrow there is a meeting at 8 in Spain, but I don't think it's necessary for you to join, or if any of you can and want, it's OK. But it's just about following up this training strategy that they are very, very aligned on the thing that The dates that are on the base plan are based on train the trainers strategy.
+
+ So we are all aligned that we are not going to do an end user training with this plan. I mean, that is not possible. So then they want to align on the thing of enable now. I don't know. I don't know. They want to have meetings to talk. They want to talk. They feel like talking. Yes. So, yeah. I don't think that it's going to be very productive, but I keep you in the loop with the definitions that they make.
+
+ The only thing that they want us to approve is the plan of having one month, five weeks, develop the content. But that was exactly the same as the original plan. So I will assume that it's OK to have that activity. Well, I don't know. I should open the plan, but yeah, it's five weeks. They want our approval on this. Five weeks of training content development. But it's in parallel with the SIT and the end of the conference.
+
+ I mean, this started 17th of February. And then... In one month? It's five weeks, yeah. It starts in one month, yes.
+
+UNKNOWN_SPEAKER:
+The training development material.
+
+Rocio Minguillon:
+Because it's for the UIT, I mean, it has to be done before the UIT.
+
+Hector Palacios:
+And when is the training?
+
+Rocio Minguillon:
+The training is two weeks before the UAT.
+
+UNKNOWN_SPEAKER:
+Two weeks for the training, that's...
+
+Rocio Minguillon:
+For the end-users training. No, sorry, end-users, no, training trainers. Yeah, originally this was three weeks, so I can raise that. But two weeks is too... Two weeks is not going Nothing is going to happen in this project in two weeks. Yeah, I don't know why they changed it, but I will tell them. Yeah, that makes sense. Put it there. OK. But yes. OK. OK, that was about that. Then about the scripts theme, tomorrow, can I take these ones to share with KPMG.
+
+ Am I okay if I take these ones? Because tomorrow we have to share with them. I mean, it's not a big deal. It's just to show them that we are working on the unit testing. But I think that Rahul and that is gonna actually check each step, but is it okay if I share this tomorrow?
+
+Hector Palacios:
+Yeah, I think that we...
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, sure.
+
+Rocio Minguillon:
+Okay, and as I understand, we are still not having the one for Tai Il. But we are planning to maybe not doing that on the unit testing, as I understand. At least not on the weeks that we are trying. Okay. Okay. So, I will share these two.
+
+Rocio Minguillon:
+Ah, and this one. These three. And the drilling, maybe not. Maybe just this.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Rocio Minguillon:
+Well, I don't know if anyone else has something to raise. I will keep talking with you, Sahar, and Ray about the Borussia access.
+
+UNKNOWN_SPEAKER:
+Hi, Rocio.
+
+Reinaldo Gutierrez:
+So, I got the access for Borús, okay? But I don't have, like, the development key. Without that, I cannot do any of the enhancements that need to be done on the Borús, okay? Yes, sure, sure, sure.
+
+Rocio Minguillon:
+Borús is always working with Sandbox. Or I don't know.
+
+Reinaldo Gutierrez:
+I don't know how that works. I don't know. I send you the connection so that way you can ask there to see if that is the sandbox.
+
+UNKNOWN_SPEAKER:
+We call that S14.
+
+Rocio Minguillon:
+S14.
+
+UNKNOWN_SPEAKER:
+Sorry?
+
+Sagar Vora:
+The S14 what? You can ask them for Burush S14 system.
+
+Rocio Minguillon:
+Okay, the thing is, if I, I mean, for the development key, they probably will ask us for the document that we were talking the other day, the FSD, because if we want to make changes, they have to be approved. So I'm trying to know if it's the same as in the other case, that we can start working without doing the FSD because we are working on a sandbox. I mean, that is why I am asking this, but I am, I don't know.
+
+
+
+Reinaldo Gutierrez:
+Yeah, in that case, Rocio, I don't know if Borús has a sandbox, as I don't have, okay? So maybe that's because they don't give us the development kit or something that we need to ask to them.
+
+Rocio Minguillon:
+Yes. Okay. Okay. Sure. I will ask that. The thing is, I think that you don't understand this. So it's complicated.
+
+Reinaldo Gutierrez:
+Okay. Okay. For the other hand, I already have the authorization object for, for Agnet to create a custom field for location product and product. Okay. So Alejandra we'll be working on that today.
+
+UNKNOWN_SPEAKER:
+Okay, fantastic.
+
+Rocio Minguillon:
+And that is in Sandbox? That is in Sandbox, yeah. Okay, and please don't forget the FSD. Yeah, the FSD.
+
+Reinaldo Gutierrez:
+I know Bastian will share with me the document. I don't know if he's already done that.
+
+Bastian Osorio:
+to review the document together so because it can be a little bit tricky to understand because there are plenty of things that are not part of the FSD. There are some things that are part, some things that we don't need to build right away. So, yeah.
+
+Vivekanand Gajula:
+Okay.
+
+Rocio Minguillon:
+I scheduled the meeting. I scheduled the meeting. Yeah, okay.
+
+UNKNOWN_SPEAKER:
+Thank you both. Okay, team.
+
+Rocio Minguillon:
+I think that I need to jump. But thank you, and let's keep talking. Thank you. Take care.
+
+UNKNOWN_SPEAKER:
+Take care. Thank you. Bye-bye. Thanks. Bye.
+
+Rocio Minguillon:
+Thank you.
+
+UNKNOWN_SPEAKER:
+Bye-bye. You. You Bye! You
+
