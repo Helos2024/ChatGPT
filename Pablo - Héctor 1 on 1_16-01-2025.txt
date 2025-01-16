@@ -1,0 +1,398 @@
+Pablo Lopez:
+¿Y tú? Muy bien. Aquí liado con la demo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Ves? ¿Algo de nada más interesante?
+
+Pablo Lopez:
+Sí, la verdad que sí. Ya voy avanzando más. Aunque estoy ahora mismo estancado con una cosa que no sé si... Es que no sé muy bien de dónde puede venir el error.
+
+UNKNOWN_SPEAKER:
+¿Puedo compartir pantalla? Sí, claro. Mira. ¿Se ve ya? Sí. Vale.
+
+Pablo Lopez:
+Yo tengo ahora mismo el Actual Quantity, que es esto de la demanda histórica, cargado a nivel mes. Y mi objetivo es que cuando lo ponga a nivel semana, técnica, esté como igual proporcionado todo. Para luego poder hacer el supply y eso. Pero yo le doy y me sale así. Todo como que se Entonces pone todo en la misma semana.
+
+UNKNOWN_SPEAKER:
+¿Cuándo lo cargaste, estaba a nivel semana?
+
+Pablo Lopez:
+Yo lo cargué así.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces yo creo que ha cogido como el primer día de cada mes. En realidad lo que pasa es que en IBP la mayor parte de la información se carga a nivel de semana, pero no una semana cualquiera, sino que se llama semana técnica. No sé si Saúl te ha explicado el concepto hasta ahora.
+
+UNKNOWN_SPEAKER:
+Sí, sé lo que es Semana Técnica.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Vale, entonces el número... Cada Semana Técnica contiene un rango de fecha, ¿verdad? Es como del día al 15, del 15 al 17, cuando son así como divididas, y si no del 11 al 18, por ejemplo, cuando es completa. Ahora, el día que uno coloque va a caer directamente a la Semana Técnica que corresponde a eso, ¿no? Entonces, lo que tendría que ver es que tú cargaste la información de esta forma, ¿verdad?
+
+UNKNOWN_SPEAKER:
+Sí. Vale, ahora vete a IDP nuevamente.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Duplica esta vista.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Deja la nivel mensual.
+
+UNKNOWN_SPEAKER:
+Modifica los números. El 242 coloca 243, por ejemplo. Porque es todo random, ¿verdad? Da lo mismo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Si lo cambiamos. Es lo que he hecho, por eso no...
+
+Pablo Lopez:
+Ah, lo hiciste así y no pasó. No, no cambió. Porque yo creo que a lo mejor medio sigue vinculado a esto.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ve a la configuración del plan Inaria a ver cómo está configurada la desagregación. Esto es lo que llamamos desagregación, el cómo queremos que un valor que está a alto nivel, como mes, se reparta entre las semanas. Y lo podemos definir de muchas formas, pero tenemos que ir a la configuración de tu plan Inaria en el Botadverse.
+
+UNKNOWN_SPEAKER:
+¿En el Fiori?
+
+Pablo Lopez:
+Sí. Eso también lo vi. ¿Y esto?
+
+UNKNOWN_SPEAKER:
+Ahí está. Fíjate. Proportionality. ¿Esto? Sí.
+
+Conference Room (Hector Palacios) - Speaker 1:
+El mismo GIF y los valores almacenados. Entonces, la misma proporcionalidad que tienen los valores almacenados de tu GIF. Si queremos repartir en partes iguales, Entonces quitamos eso. Y dejamos que... No proportionalization. Y ya. ¿Esto qué hace, perdón?
+
+UNKNOWN_SPEAKER:
+Lo que estaba haciendo es que miraba los números que están en la semana.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y en la semana tenían 0, 0, 0 y números. Entonces calculaba una proporción y decía hacia dónde tengo que arrojar el número. Hacia la única semana que tenía número, porque todas las demás ponderaban 0% excepto esa que tenía un número y ponderaba 100%. Entonces asignaba todo a eso. Eso es lo que está haciendo. Reparte proporcionalmente en la semana respecto al valor que ya existía. Entonces como solamente existía en una semana, todo el número se iba de ahí, porque ahí estaba el 100% de la data.
+
+
+
+UNKNOWN_SPEAKER:
+Se entiende, no? Vale, sí.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Si tú calculas la proporción, ahí como tenía en la semana, la otra estaba vacía, entonces su porcentaje, como su share, digamos, su proporción era cero, porque de toda la data al mes estaba concentrada solamente en una semana. Entonces esas semanas que tienen datos se llevan el 100%. Ahora lo que hiciste fue que no haya una desagregación proporcional a nada, entonces cada vez que cargue un número se va a repartir en partes iguales.
+
+
+
+Pablo Lopez:
+Ahora voy a probar a ver si se ve bien y ya empezaría con la demanda.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Este no se ha demorado en nada.
+
+Pablo Lopez:
+Pues no me hubiese dado cuenta de eso en la vida, creo yo. Estaba ya pensando en poner estos otros datos para borrarlo, luego que se desvinculara esto, volver a empezar a hacerlo de cero esto. O sea.
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Toco menos eso. Sí, no, no te lo quieres con eso. No quiero inventar la rueda. Ojalá que esté activa la parte del weak weight. El weak weight. Es una proporción para esas semanas técnicas. Y le asigno una proporción en base a la cantidad de días que tenga. Porque hay semanas que tienen los 7 días, porque esas también. Pero esas semanas técnicas que están entre meses, algunas tienen 2 días y las otras tienen 5 días, por ejemplo.
+
+ Entonces la idea es que cuando nosotros hagamos esta desagregación, igual respete el porcentaje de días que hay en esa semana. Porque si es una semana tan pequeña, pequeñita de dos días, no quiero que reciba la misma cantidad de volumen que la otra semana que tiene siete días. No sé si se entiende la idea.
+
+UNKNOWN_SPEAKER:
+Sí. Vale. ¿Podría interesarle en WeakWeight o?
+
+Conference Room (Hector Palacios) - Speaker 1:
+El WeakWeight está por defecto. Ahora, a veces siempre está vacío porque es un parámetro. Hay una master data que se llama aquí hay el time profile, el perfil de tiempo que está ahí abajo, mira, donde dice time profile.
+
+UNKNOWN_SPEAKER:
+¿Dónde? En general. Time profile, ese.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y ahí hay un atributo adicional a ese time profile que se llama win weight.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y ese está cargado.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Es el último, de hecho. Esta es solamente la definición, pero esto se descarga de otro lado. De hecho, en data integration, veas Data Integration, please. Y Download Template, abajo. Time Profile. Template, sí. Y descarga el tuyo. Búscalo por ahí, porque tiene una ID única. Devuélvete al plan en área. Era SS. Oh, un número grande.
+
+UNKNOWN_SPEAKER:
+Sí, hay que buscar SS.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yo creo que si lo describes te va a aparecer.
+
+UNKNOWN_SPEAKER:
+con el periodo existente.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Esto lo estamos haciendo para validar si es que lo que está cargado. Esta es la columna, verás, de IDP. Casi toda la información de Xfigure está asociada Vale, busca si tiene un week wait ahí algo cargado.
+
+UNKNOWN_SPEAKER:
+No. No. ¿Y eso qué significa?
+
+Pablo Lopez:
+Que no hace ninguna desagregación temporal.
+
+Conference Room (Hector Palacios) - Speaker 1:
+O sea, que eso que te decía de los días de las semanas técnicas no lo va a respetar. Ahora, no es tan terrible. Da casi lo mismo, es como un nice to have pero no es mandatorio. Así que si quieres ignorarlo más, intentamos hacer la desagregación y veamos cómo se ve.
+
+Pablo Lopez:
+Lo intento aquí. Sí, lo voy a poner. Es que se cargue.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Mantén siempre una vista en el nivel mensual y la otra en el nivel semanal para que no estés cambiando. Bueno.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y ahora si tienes que modificar el número nuevamente.
+
+UNKNOWN_SPEAKER:
+No pasa nada. ¿Estamos viendo los mismos datos? A ver, lo voy a cambiar aquí. ¿Estamos viendo las mismas semanas? Esto era enero.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Claro, eso era enero.
+
+UNKNOWN_SPEAKER:
+¿Sí cambió? Pero no. Cambió el número pero no se repartió.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Puedes devolverte la configuración a ver si se activó el plan en área y quedó el cambio hecho.
+
+UNKNOWN_SPEAKER:
+Exactamente el mismo blind area.
+
+Pablo Lopez:
+Sí, sí. No me había pasado eso antes de que...
+
+Conference Room (Hector Palacios) - Speaker 1:
+A ver, muéstrame que sea el mismo planeario, vea la distancia.
+
+UNKNOWN_SPEAKER:
+¿Cómo pregunto?
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿A dónde me voy? A la vista de planificación, veá. Borra el 198 y cárgalo de nuevo. Hagamos eso. Ahora en la vista, cárgalo. Veá la de mensual.
+
+UNKNOWN_SPEAKER:
+¿Y le pongo otro de nuevo? Sí. Es como prender a apagar esto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y vamos a la vista a ver si se repartió. ¿Qué carajo? ¿Qué mierda es? ¿Por qué no funciona?
+
+UNKNOWN_SPEAKER:
+No lo había visto de su mente.
+
+Pablo Lopez:
+Y no es porque se haya como agarrado a esto.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Dame un segundo para intentar entrar con el usuario.
+
+UNKNOWN_SPEAKER:
+Tengo acceso. 167 planarias, qué locura.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Subtítulos realizados por la comunidad de Amara.org No había visto esto, la verdad.
+
+Conference Room (Hector Palacios) - Speaker 3:
+Parecía casi un mal funcionamiento del sistema, pero generalmente...
+
+UNKNOWN_SPEAKER:
+Ah, ya sé lo que puede ser.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Los otros periodos no existen, es lo que pasa. Es que no tiene opción, mira. Ve a la vista.
+
+Conference Room (Hector Palacios) - Speaker 3:
+Perdón, siempre diciendo cosas Es poco específica.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ve a la vista de semana técnica.
+
+UNKNOWN_SPEAKER:
+Y ahí filtra solamente la semana 2 del 2023.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Algún como hago yo? En time solamente la semana 2 esto puedes copiar y pegar mira ve ahí copia y en la otra pega le doy a ok? Si ajá Lo muestra, pero es que no existe el valor. Estos son los que llamamos Planning Objects o combinaciones dentro del sistema. No sé si esto te lo había explicado alguien, se lo expliqué hace poco creo. No es que existan todas las combinaciones posibles, sino que existen solamente las que se cargan.
+
+ Hay dos formas de crear combinaciones en un sistema. Una es por la carga de la información, como lo hiciste tú. Tú dijiste estas semanas, esta información. Las demás semanas no existen. Las creaste tú cuando subiste la data.
+
+Conference Room (Hector Palacios) - Speaker 3:
+Las que existen las creaste tú cuando subiste la data.
+
+Conference Room (Hector Palacios) - Speaker 2:
+O las puedes crear manualmente aquí. De hecho al lado de Master Data Workbook dice algo Planning Objects. Pero eso es más para cuando creas data de cero, cuando ni siquiera existe la combinación de clientes, location y product. Aquí como ya existen los periodos es más fácil. Entonces vamos a lo siguiente devuélvete a la vista anterior no perdón la de semanas pero muestra el horizonte completo y que estábamos trabajando.
+
+ Guardo un número en las primeras semanas. Cualquier número, un cero. Un cero basta, por ejemplo. Selecciono todas y guardo un cero.
+
+UNKNOWN_SPEAKER:
+Para todas.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Para la misma combinación? Exacto.
+
+UNKNOWN_SPEAKER:
+Eso, ahí. Y dale save. Ahora esas combinaciones existen.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ve a la otra vista y cambia el número nuevamente.
+
+UNKNOWN_SPEAKER:
+A ver, ¿qué número era?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Febrero. No, no, el febrero Te falta una creo. Te falta la del 52B. Ve a la vista. Perdón, a la parte del horizonte de tiempo. Ves?
+
+UNKNOWN_SPEAKER:
+Presiona que sí.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y ahí ve a la anterior. Esa semana la 52B de este año también. Ahí está el otro número. Cambia el primer número en la vista mensual. Ahora te va a funcionar. Entonces era eso, que no existían las combinaciones.
+
+Pablo Lopez:
+Es porque IBP es celoso de la cantidad de datos que crea.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Los otros datos los muestra visualmente, pero no es que exista en la tabla. Por detrás y existe algún valor ni alguna combinación en particular. Todos los sistemas de información que son base de datos son muy celosos de cuánta data se va a almacenar, de qué data es válida. No es que todas las combinaciones sean posibles. No todos los productos se venden a todos los clientes desde las mismas plantas.
+
+
+
+Conference Room (Hector Palacios) - Speaker 3:
+Hay productos que solamente se van a vender en Australia y otros que solamente se van a vender en España, por ejemplo.
+
+UNKNOWN_SPEAKER:
+Entonces, para que no se crea el sistema de que puede hacer cualquier cosa con cualquier cosa.
+
+Conference Room (Hector Palacios) - Speaker 3:
+De hecho, las combinaciones que existen en el sistema tienen que tener una coherencia. Por eso es que así es el oso.
+
+Conference Room (Hector Palacios) - Speaker 2:
+O el usuario me indica, haciendo un proceso, esta combinación va con ésta y con ésta, o se infiere directamente de la carga de datos. Porque cuando se cargan los datos, el sistema asume y esas combinaciones son validas.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces las crea también.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Pero no te va a crear todos los periodos ni nada por el estilo. Hay muchas formas en IEP de crear las combinaciones. Cuando se genera un forecast, por ejemplo, hacia el futuro. El sistema para esas combinaciones en los periodos futuros las crea.
+
+Conference Room (Hector Palacios) - Speaker 3:
+Y generalmente cuando corremos algoritmos como Inventar y Supply también se crean automáticamente las combinaciones.
+
+Conference Room (Hector Palacios) - Speaker 1:
+El algoritmo lo determina así. Pero si no, no. Ahora, lo que te recomiendo es como, quizá llena de ceros todo esto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Mira, la segunda, para que trabajes de una forma inteligente, la segunda hoja, duplícala, pero duplícala en Excel, no en IBP.
+
+UNKNOWN_SPEAKER:
+Solamente como copiar esta hoja.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Exacto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Y dónde lo pongo? Acá mismo, da lo mismo.
+
+UNKNOWN_SPEAKER:
+Después la borras. No pasa nada.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Esta hoja está desconectada del sistema. Si ves la parte del filtro, dice Worksheet Filter.
+
+UNKNOWN_SPEAKER:
+Eso porque no está funcionando.
+
+Conference Room (Hector Palacios) - Speaker 2:
+De hecho, mira, si abres el Edit View, no te va a aparecer esta vista.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Esta vista está totalmente es conectada, porque la hicimos de la forma normal, no de la forma que debería ser SNP. Entonces los datos ya los tienen acá. Te recomiendo ir a la vista de semana y cargar todo de cero, cualquier número, cosa de que puedas crear todas las combinaciones posibles. Igual que ahora se Selecciona todos los horizontes de tiempo y carga llena de ceros y guárdalos en el sistema para que se creen todas las combinaciones.
+
+ Ve hacia el final, mira como lo haría yo. Control y a la derecha. Ponte en el cuadrado el de las esquina de abajo y con el teclado presiona shift y vete hacia la izquierda y control shift y a la izquierda dale hasta lo que de devolver un poco sube ¿Uno abajo?
+
+UNKNOWN_SPEAKER:
+¿Uno abajo?
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Uno más? Creo que falta, porque todavía está... Raro. Intenta no seleccionar...
+
+UNKNOWN_SPEAKER:
+Ya lo he perdido.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y es que se están marcando las semanas técnicas. Eso hay que quitarlo.
+
+Pablo Lopez:
+Solamente que se lo de arriba.
+
+UNKNOWN_SPEAKER:
+También sirve eso.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Devolvete una. Eso. Y ahora sube.
+
+Conference Room (Hector Palacios) - Speaker 1:
+CTRL-SHIFT y sube.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Se vuelve loco esto.
+
+UNKNOWN_SPEAKER:
+Quitar el control.
+
+Conference Room (Hector Palacios) - Speaker 3:
+El control es todo lo que hace arriba.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Presiona cero, cero, control, enter. Control, enter.
+
+UNKNOWN_SPEAKER:
+Ahí va.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ya, ahora vete a la vista que está para que se actualice con los ceros. Y ahora del backup, ¿qué te hiciste?
+
+UNKNOWN_SPEAKER:
+Cópiate los datos. Esto lo llevas a la nueva vista. Perfecto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ahora, lo único que no tiene sentido es que la semana, por ejemplo, la 5A tenga 42 igual que la 4. La semana 4 del 2023, fíjate que esa es una semana de 7 días.
+
+Conference Room (Hector Palacios) - Speaker 3:
+Y la semana 5A probablemente tiene 2, 3, 4 días.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y están recibiendo el mismo volumen. Eso idealmente no.
+
+UNKNOWN_SPEAKER:
+Ahora, por como esta es una demo, da lo mismo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y sobre todo que los números son random.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No pasa nada.
+
+Conference Room (Hector Palacios) - Speaker 3:
+Pero normalmente hacemos que cargamos el Week Weight para que al menos tenga una proporcionalidad respecto al número de días. Si hay dos días en esa semana, entonces es que reciba menos volumen. Proporcional a la cantidad de días, básicamente. Las semanas que reciben siete días, esas se llaman una proporción mayor.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y las semanas de dos días, etcétera reciben proporciones menores.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Vale, perfecto. Bueno, muchas gracias. Dale, ahora te toca seguir con lo demás y ver que bueno, cómo va.
+
+Pablo Lopez:
+Sí, ya mañana por la mañana empiezo ya con lo que te manda la planificación y eso, el forecast. Vale, perfecto, sigas teniendo Si tienes alguna duda, coméntame.
+
+UNKNOWN_SPEAKER:
+Si, si, perfecto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Dale, buenísimo, si no hay más dudas entonces dejémoslo acá y mañana continuamos.
+
+UNKNOWN_SPEAKER:
+Ok, perfecto, gracias.
+
+Pablo Lopez:
+Dale Pablo, chau chau, que estés bien.
+
