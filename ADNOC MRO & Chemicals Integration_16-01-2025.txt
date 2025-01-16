@@ -1,0 +1,1193 @@
+UNKNOWN_SPEAKER:
+Is there a question? So how is that going?
+
+Sagar Vora:
+Is your technical team going to go ahead with IVP or not? All right. No, no, I mean, I start. I joined the discussion and start, so there again, was explaining why we are going means what means it was again back to zero explaining yeah the whole process of dealing with the new customer new end user yeah it's tricky
+
+Conference Room (Bastian Osorio) - Speaker 1:
+but I think the answer should come from the management because they are the one I mean I understand the reason the reason is to unify basically the demand coming from different different agencies for drilling, okay? But if it's just to unify demand, then there's no need to create the bomb header, bomb wellhead, and all that. They should just somehow upload the demand at a given level, let's say at well-tied with their respective dates, and that's it.
+
+ They can have an overall view of the forecast for the consumption. We can take some snapshot to see how it evolves the demand throughout the month. Some KPIs then generate the purchase requisitions, purchase orders, and that's it pretty much. Right? No need to create like a super tailored solution for all the different type of BOM, for BMI, well with all the complexity that we are addressing at this point.
+
+ But again the final answer should come up from the management team and I think that's what we are needing. We are in need of more want that direction, where are we heading?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Sagar Vora:
+Since I joined for first half, first one half, but then I saw, like, again, the discussion is going in the same way, so then I continued with my development.
+
+Sagar Vora:
+Okay, I think we have to call and say, hey, hello, thanks, good morning.
+
+Saul Portillo:
+Hi, good morning. Hi, everyone. Sebastian. Hi, guys.
+
+UNKNOWN_SPEAKER:
+How are you?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Okay, let's start with a quick review of what are the changes of the massive data. Let me open my the file so we had some some issue today guys but nothing related to chemicals or mr. Oh I think the project is completely justified in this to business area that the critical part and the most problematic aspect is it's draining for sure but yeah we're gonna keep I have.
+
+Saul Portillo:
+open the LVP if you need to see the system.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+You created this one.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+I created but for now you can go go back and you can open the other sheet no no I like this one so product it's in progress right no no so that's why I'm saying uh we can I mean I will I need to update this sheet so for now can you just go back uh uh on the same folder There is one more sheet. Yeah, the first one, CIDS status. No, no, CIDS status, yeah. For now, we can refer this one. Oh, yeah.
+
+UNKNOWN_SPEAKER:
+Hold on. Let's start with materials. Product?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Detail, this one is not, if I'm not wrong, this is MRO parts, isn't it? Yes, sir.
+
+Sagar Vora:
+Yes, yes. So if you see the H column, H column is our IBP target table.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+OK. So let's start reviewing. Is this one is completed? In this case the thing is that we have at least two, I can see, well we have three versions for this, I mean sort of version. We have one for spare parts and chemicals and then we'll have one for maintenance additives and then we will have one for drilling.
+
+Sagar Vora:
+So this one is just for? This is just a mara I would say. Okay I will put a product mara then.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Even MRO parts is also a mara? No no but the thing is that one product matter can be also the other one can be there the maintenance you have yeah so that we have yeah this one uh the row number 12 what I'm going ah there you have this one you have it here right yeah yeah okay it's fine it's completed as well yeah I I created that that's fine man you've been working quite a lot Okay, so let me check.
+
+
+
+Saul Portillo:
+I don't know, but when I try to open the master.pro in this version, the system gives me an internal error. If there is too much combination or I don't know.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yes, the same for me. Maybe if you have too many combinations or something like that.
+
+UNKNOWN_SPEAKER:
+Maybe if you filter by material type. Let me check.
+
+UNKNOWN_SPEAKER:
+Let's go. It says no data found for me.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So let's go to MRO part.
+
+UNKNOWN_SPEAKER:
+Filter.
+
+UNKNOWN_SPEAKER:
+Taking some time.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+There you go.
+
+UNKNOWN_SPEAKER:
+Did you use a filter? Yeah, I added a filter.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So, sorry, question, Fiamma, did you have the chance to look at the comments briefly in the PP? I just want to make sure that the comments are there.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, yeah, I have just...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So, if you check, This one is here, this attribute. Okay, so do we have a total here? That's a lot. It's 700,000.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+I think you have applied a filter, right?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, just for spare parts. That's ZRS.
+
+UNKNOWN_SPEAKER:
+Do you say Z or Z?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Z?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yufiama, Z or Z?
+
+UNKNOWN_SPEAKER:
+Z or Z?
+
+Fiamma Giorgi:
+Z or Z, yeah.
+
+Sagar Vora:
+How do you say Z in English?
+
+Fiamma Giorgi:
+I think it's Z.
+
+Reinaldo Gutierrez:
+Z.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I don't know.
+
+Sagar Vora:
+Z or Z? Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Well, set air as. Not set are. Set are as a So we have. 713.
+
+Sagar Vora:
+1789 What is a level no memory You have not applied anything.
+
+UNKNOWN_SPEAKER:
+No, I did. Material type. I saw that for. And so what I'm going to do is to.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Apply it.
+
+Saul Portillo:
+I see the global configuration. The limit is to.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, way too much. Can you change it?
+
+UNKNOWN_SPEAKER:
+Can you put 1 million? Yes.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Material batch size and we change for 1 million.
+
+UNKNOWN_SPEAKER:
+Maximum data.
+
+Saul Portillo:
+in master data of max batch size, 2 million.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's the number of record in master data.
+
+Saul Portillo:
+Put 500,000. Okay. It's ready.
+
+UNKNOWN_SPEAKER:
+Ready? Yeah. Writing. Writing data. Come on, baby. You can do it.
+
+Saul Portillo:
+But for example, Basu, with 500,000, you cannot see all the materials in all parts.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+I'm good. It's fine.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I mean, we will need to use filters. Otherwise, it doesn't work.
+
+UNKNOWN_SPEAKER:
+OK. Look. It loaded. 2 million. No, no, 500,000. 500.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I don't know what I'd say. Maybe it's for a cachet thing, but just 500. But it said two million.
+
+UNKNOWN_SPEAKER:
+Good job. Good job.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So I guess the thing that, yeah, I mean, we don't need to, yeah, the material is used. And now if I go here, I will see the same number, right?
+
+UNKNOWN_SPEAKER:
+In French, 500,000.
+
+Sagar Vora:
+But I think we'll need to check with Vinesh for some more. Filters if possible means. Yeah we need to add more attributors for sure. In this sandbox system so not sure production system will have that.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's fine and now Question, the million-dollar question. What is the material type for the activities?
+
+UNKNOWN_SPEAKER:
+Oh, me and Megan.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I guess we don't have 500,000 or more than 500,000 combination records for that one, right?
+
+Saul Portillo:
+Yes, 900.
+
+UNKNOWN_SPEAKER:
+900,000. 9,200. 8,320.
+
+Saul Portillo:
+100.
+
+UNKNOWN_SPEAKER:
+320. Is it faster if I do it in MVP?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Have you used this?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Look, we have everything already.
+
+UNKNOWN_SPEAKER:
+Two million. Way faster.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So I used main sharing.
+
+Sagar Vora:
+Main again.
+
+Sagar Vora:
+But these are default, basically, the dummy one which we created.
+
+UNKNOWN_SPEAKER:
+Good.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Then what is the name of the set or one thing or something?
+
+UNKNOWN_SPEAKER:
+Maintenance plan. Yeah. 900,000. Yeah. Yeah. It's fine. Yeah. But it means that in the problem is the same, same number.
+
+UNKNOWN_SPEAKER:
+Yeah. You can duplicate the screen.
+
+Sagar Vora:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So then, can we check the bomb?
+
+UNKNOWN_SPEAKER:
+No, I have not created bomb.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But can we check The the extractor.
+
+Sagar Vora:
+Yeah, we can check and
+
+UNKNOWN_SPEAKER:
+Good job, Sara. Resource, do you want to start with resource or how?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, resources we don't need to integrate.
+
+UNKNOWN_SPEAKER:
+me.
+
+Sagar Vora:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Here the product should be the, I don't know, but I'm confused here because this is not the bone for material, this is not for production. So is this extractor still useful for the bone of the maintenance activities or this is the bone for production?
+
+Sagar Vora:
+Okay, so just once we are looking for a model we You go to the top, Project Breakdown.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Project Networks, no.
+
+UNKNOWN_SPEAKER:
+Material, no.
+
+Sagar Vora:
+TeamU, Resource, that's it?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's for Project System, sorry. Ah, yeah, that's because it says Project System, then you need to go to the top. Yeah, that one. Maintenance plans be extracted.
+
+Sagar Vora:
+I know that one, but then task list be extracted.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, the task list, material consumption be extracted, the one below. That's it.
+
+UNKNOWN_SPEAKER:
+Can I look at it?
+
+Sagar Vora:
+It's on right? Yeah Then you have the product which is a component. Product ID.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+that you can use as a header in concatenation with the location. So this world header will be 2101 underscore POM.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sagar Vora:
+Can you go back to the help? Yes. Okay.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But with that, you can filter the, you can start building the BOM. There's no need to load anything related to time consumption because we're not gonna integrate nothing related to resources, okay?
+
+UNKNOWN_SPEAKER:
+Okay, so resource and location resource are not required, correct?
+
+Sagar Vora:
+Question?
+
+UNKNOWN_SPEAKER:
+Give me a second.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Hello? No, nothing related to resources.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+And then what will be the bomb header here? You said like this, 34 underscore. But then what would be the bomb item?
+
+UNKNOWN_SPEAKER:
+The item is the product ID. Isn't it?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Give me, can you copy that? No, you cannot, right?
+
+Sagar Vora:
+Let me take a screenshot and look for those materials. So I can do one thing, I can put this bomb 5 0 3 4 is a material or what inside in thunderstorm usually bomb header you have let me let me Yes, you can.
+
+UNKNOWN_SPEAKER:
+You need anything?
+
+Sagar Vora:
+No, let me share my screen.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So here I have the material.
+
+UNKNOWN_SPEAKER:
+Let's see if the material is in AVP. No.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But this material does even exist in...
+
+Sagar Vora:
+Yeah, I'm checking.
+
+Sagar Vora:
+Looks like it's some material.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+And why it's not integrated?
+
+UNKNOWN_SPEAKER:
+The material type is not there. Let me check.
+
+Sagar Vora:
+Material type is there.
+
+Sagar Vora:
+That material is there.
+
+UNKNOWN_SPEAKER:
+Can you apply star and try to search that material? Sorry?
+
+Sagar Vora:
+I said, I can see that material in IBP.
+
+UNKNOWN_SPEAKER:
+Can you try to search again?
+
+Sagar Vora:
+Apply star and then search.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But if I put the code here, it doesn't, I don't see it. No, I can see that.
+
+Sagar Vora:
+I'm not sure why. Yeah, you have applied a filter of maintenance plan, right? You have to apply.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+What type of material is this one? A Z?
+
+UNKNOWN_SPEAKER:
+A A
+
+Sagar Vora:
+A C? The last one.
+
+UNKNOWN_SPEAKER:
+R? No, no.
+
+Sagar Vora:
+Above that. Can you apply star before one just put a star not sure it's coming. From you.
+
+Sagar Vora:
+You have to put a product ID.
+
+UNKNOWN_SPEAKER:
+Page one. Is that it? No. So it's 1,200.2.
+
+Sagar Vora:
+I have pinged you on the chat, if you can search that directly.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I'm not sure why it's not coming for you.
+
+Sagar Vora:
+No, I don't see it.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I don't see it. It's not here. It's there. I can see.
+
+UNKNOWN_SPEAKER:
+But why? I believe you, but I cannot see it here.
+
+Sagar Vora:
+Can you just copy paste the one which I gave you right now the chat.
+
+UNKNOWN_SPEAKER:
+There you go.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+What happened?
+
+UNKNOWN_SPEAKER:
+Maybe it's not the same number.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Maybe there's a space, I don't know. Gasket. Okay, fine, then it is a material.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, that is fine, but I'm saying like, that will be a bomb item.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, now we can check that, so you have to two months of data. So the first one is production source, and you have three main attributes here.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+You have probability, you have location ID, and then you have a source ID.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So source ID is log ID underscore long.
+
+UNKNOWN_SPEAKER:
+Okay?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Product ID is the maintenance ID, that concatenation. And log ID is from the table, log ID.
+
+UNKNOWN_SPEAKER:
+Okay?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+And then you have the coefficient.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+You can use just one. And then you have production source item. And here you have source ID.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+And you have component ID. And you have quantity. And I think all this can be the source ID is It's a problem.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+It's a problem that, well, we just see, we just seen it, right? And the quantity, I think we need to check the table again, but I'm pretty sure.
+
+Sagar Vora:
+I have given the screenshot. If you can copy paste from the chemistry.
+
+Hector Palacios:
+Yeah, let me share my screen. For what is this? It's a bomb header and bomb item. But something that we are going to use in our own chemicals?
+
+UNKNOWN_SPEAKER:
+Yeah. In which part?
+
+Saul Portillo:
+and the preventive maintenance.
+
+Hector Palacios:
+But we don't have the ones, right?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's why we're checking that we do have some data.
+
+UNKNOWN_SPEAKER:
+Oh, good.
+
+Hector Palacios:
+But really, it's very unmaintained, to say the least.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, but it's better to leave the we don't know how much data in the extractor. It's easy to say. It's not going to take a lot of time, right, Taga? It's not something we need to build from scratch. The extractor has all data. That's what Taga was sharing. Look at this extractor. The maintenance item, the maintenance, well, we have the product ID here. You've seen the... This is the item. Thank you.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So I saw that this flows on the CDIs, CIDS side were already not like, I'm not saying that you build it, but they were like pre-built, you know, like a standard.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+Some are pre-built. So only like whatever changes we want to make. So mostly like I'm doing, I'm using the standard, uh, extractor okay means the table I'm using and I'm creating by applying like whatever filters and whatever global variables we need not the exact pre-built what they have provided.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Let's try to use anything that is pre-built because we're not gonna make any change.
+
+Sagar Vora:
+So in that there are many some filters like for example the transactional data where we were bringing the consumption history so that they would have applied some filters means there was no PM01 or basically the order type filter they were applying a material type filter so for us material type filter was not required so I applied the order type filter and they had some time horizon filters but for us we there is no time horizon filter required means I applied the time horizon because some of the data was of 2018 and that was not available in IBP so it was giving error so I said like applied a filter of year which is greater than 2020.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That is something that I wanted to address the thing is that we need to come up with a basic proposal and you can look for support for if required because you have plenty of experience on this. For the filters, for example, I will say something super basic, status. If the status is inactive, well, we don't need to integrate those materials. Are we applying those standard filters for the integration?
+
+
+
+Sagar Vora:
+No, so that filters are not applied only, like I need to check by default when the extractor, the data is loaded into the extractor, that filter was by default taken care or not. So I was also just checking like how many products like for ZRSA material type how many products are there in the in the Mara and if I apply a deletion flag filter then how many records I was doing that analysis. So I will recheck like just to make sure like only the active products and the active items are going into the IBP not the in But that is what I was saying.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I think we should, for example, for that specific case, status, we need to tell them, OK, for which status algorithm we're going to integrate, because this is a filter that we use all the time. Although they haven't said that, we need to be proactive. Understanding that they haven't give us nothing, basically. And along with that, come up with some more proposals. And again, here you can look for support from the rest of the technical team.
+
+ Reinaldo, pretty sure he has, this guy have done this, I don't know, I will say thousands. I really know which filters to apply. In most cases, the filters are okay. Statuses, I don't know what else, but...
+
+Sagar Vora:
+Yeah, yeah, mostly the types, yeah. Even for transactional, the order types or the movement types and all that filters are required. I think that we already have it, at least for material, you know.
+
+Hector Palacios:
+I think that you already have it, right?
+
+UNKNOWN_SPEAKER:
+Mm-hmm.
+
+Hector Palacios:
+What is like the value material? Areas and so on.
+
+Sagar Vora:
+But we need to confirm with them or basically we need to show them like we are applying this filter so let us know if any additional filter needs to be applied or anything needs to be changed.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, we have to be as proactive as we can. Yes. Because we know these guys don't like to work.
+
+Hector Palacios:
+They don't like to work.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+They want consultants to do the whole project. Yeah. So OK. Now let's move into the transactional data.
+
+Sagar Vora:
+But for, yeah? I think you were showing that bomb had a bomb item. So can you just finish that so that we can?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+And do you have, which one is the coefficient here?
+
+Saul Portillo:
+Is it come up?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But no, no. Yeah. No, no. The component coefficient is something different.
+
+UNKNOWN_SPEAKER:
+Sorry. This is the output.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+What, this is the output coefficient.
+
+UNKNOWN_SPEAKER:
+Oh, in the bomb.
+
+Sagar Vora:
+Let me check in the master data. What is required?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+And this is the component coefficient.
+
+Hector Palacios:
+But even if we go with this, I don't think this is going to be well-received. Well-received what? The bomb, this bomb part. We have no bomb, and we said on the sessions, we are not going to use the bomb. So if we go now, we have an interaction with the bomb, they will say, why?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, I want to. Know what is there and be able to visualize it.
+
+Hector Palacios:
+But they already told us that, yeah, maybe you will find a lot of information because they have a lot of information. But maybe that is even the 10%, right? So if that is the 10%, it's no use. It can be thousands and thousands of combinations, but it's not the complete version. So I don't know if we should.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, I'm not going to. I don't expect to create a plan based on this. Not at all. I just want to know what is there. But we're going to jump right now into the transactional data and we'll see. We're going to integrate the preventive and the turnaround.
+
+Hector Palacios:
+Let's focus on the preventive. Turnaround is for later.
+
+UNKNOWN_SPEAKER:
+Yeah. Again, you chose Sagar, what do you have for preventive?
+
+Hector Palacios:
+I think that you, sorry, I have been missing some sessions, but I think that you were checking like preventive maintenance, history. We also need something on the future because we have the work orders and supposedly they are placing work orders for the So that is the very first thing that we need to use as a preventive plan.
+
+Sagar Vora:
+I have noted for the preventive what I I think in the system there was nothing for the future. I have loaded the data into the IVP system, so if someone wants to share anything.
+
+Hector Palacios:
+Yeah, we need to check because Vignesh was able to share with us information. And Saul, correct me, but when Vignesh shared information with you, he shared the same table for the past and the future. Am I right?
+
+Saul Portillo:
+Yes, but for the future, only for December 2024, 10 combination, I don't know, a little combination.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+With the standard extraction, we can get, just changing the order type, we can see the future consumption for preventive. And we have a difference between access and requested. So I guess this these numbers come from the reservations?
+
+Hector Palacios:
+Reservations, I'm thinking reservations, but the reservation is not telling you the safety. This is preventive.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, no, a reservation can be created as a result of an order.
+
+Hector Palacios:
+So if you have reservations in the future, that is for sure preventive. They are not planning correctly. So yeah.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Can you show us this factor? You can also, when you create a preventive order, you can also, it also creates a reservation. Yeah, yeah.
+
+UNKNOWN_SPEAKER:
+Yeah, it's like one to one.
+
+Hector Palacios:
+Sagar, can you show us this factor? Let's start discussing from there to understand if you have any filter on the horizon or something. Wanted that because I think that is exactly the same extractor for the past and the future.
+
+Sagar Vora:
+Yeah, so I loaded the data for this PN04. Did you put any filter for the horizon? No, I haven't put any filter for the horizon. I can show you in just a minute.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+You remember, Sagar, we had two quantities, one Requested Actuals. Is this one requested or Actuals? We have something.
+
+UNKNOWN_SPEAKER:
+So this is Actuals.
+
+Sagar Vora:
+So for turnaround, I have applied a filter in which I have applied a logic in such a way that if the date is less than current date, then I'm taking Actuals or else I'm taking the required. That's cool. But I have not applied the same logic for this.
+
+UNKNOWN_SPEAKER:
+For preventive.
+
+Sagar Vora:
+For preventive. For preventive, I'm just checking the actuals.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Now, can we do the same? I mean, let's review the table to check if the numbers, if there's a difference between the numbers.
+
+Sagar Vora:
+So you want to apply this means This data is coming for future. So shall I apply this filter? Means you just want to see like the requirement and what's the actual, right?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I think we should, in this case, we should integrate requested, but if the numbers are the same, then. Okay, let's see. But can we look at numbers because I guess the last six months of at least the last six months of 2024 were future when they made a copy to sandbox.
+
+Sagar Vora:
+Yeah, so you want to see in the extractor, right?
+
+Sagar Vora:
+And PM 04 is preventative, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But don't put today, put like, I don't know, like September 2024, because I'm pretty sure that was future at that point.
+
+Sagar Vora:
+Yeah Yeah, how many records do you have Yeah, we have some record but here the equipments are blank here we have a equipment And how many records do you have in total? I'm not sure the count.
+
+UNKNOWN_SPEAKER:
+Will not count.
+
+Sagar Vora:
+But they're not that many, right? So I'm taking this, but if you see both are same.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+And are you filtered by location?
+
+Sagar Vora:
+No, I have not applied any filter. For this I have applied for loading, for this expected, but not for in the CIDS.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So this is the only thing we're integrating for preventive, for all the locations?
+
+Sagar Vora:
+Yeah, for all the locations.
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Sagar Vora:
+In IPP, I'm not applying any location filter. I have applied just location filter just for validation purpose. Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So we only have like, I don't know, 10, 12 records because those ones that don't have equipment cannot be loaded.
+
+Sagar Vora:
+Correct. So I think here we have 12 records.
+
+UNKNOWN_SPEAKER:
+12, yeah.
+
+Sagar Vora:
+And the total is coming in 150.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So we don't have, at least at this point, for the future, we don't have any meaningful data. Don't you guys agree? I mean, 12 records for a company as Ethnoc is absolutely...
+
+Saul Portillo:
+Nothing.
+
+UNKNOWN_SPEAKER:
+It's nothing.
+
+Hector Palacios:
+Yeah. That is not related to the system because this is a complete copy of the production system, I guess. Maybe not maintained with certain frequency, but it's a complete copy. So whatever they had in that moment is what we are seeing here right now. It's an snapshot. And if you, yeah, sorry, if you are all the 2020 What if they are not doing work orders and they are doing their regular reservations?
+
+ Is there a filter for reservations?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I guess there's a extractor for reservations because, yeah.
+
+Hector Palacios:
+Sir, can you check it have anything like that for reservations? I think that some in one moment you showed me that because I was saying guys that the reservation are by storage location if you remember like two weeks ago or one week ago.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But it should be there. No, this is yeah this is end project system transactional data reservation maintenance repair.
+
+UNKNOWN_SPEAKER:
+Yeah, we have these everything together. No, no, no, no.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Go down, go down. Can you go keep going on? Click look for reservations. Look, look in the, just no, not there, not there.
+
+Sagar Vora:
+Okay.
+
+UNKNOWN_SPEAKER:
+Control F. Okay. Nothing.
+
+Hector Palacios:
+No, it's not part of the standard. I think that's the other day you were showing us directly, not the structure.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+R-E-S-P, R-E-S-P, that one.
+
+Sagar Vora:
+That table is used as a source. These are the reservations. Yeah, that is. But I think that is used as a source for this extractor which we are using.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+And some data is coming from R-E-S-P. In that two expector, I think only in that two expector the RDSP is used. I don't see in any other expector. No, there's none.
+
+Hector Palacios:
+Can you check that table, Sagar, if we have information that is relevant for the future?
+
+Hector Palacios:
+And apply the filter.
+
+UNKNOWN_SPEAKER:
+Apply a filter by.
+
+Hector Palacios:
+Do you have a material type filter?
+
+Sagar Vora:
+Yeah. Material type.
+
+UNKNOWN_SPEAKER:
+Okay. Yes.
+
+Sagar Vora:
+Last time. We don't have.
+
+Hector Palacios:
+than how we can filter by MRO materials. Because chemicals, I'm sure that they have full reservation in the future.
+
+Sagar Vora:
+The question is for MRO. Might be we have to join the materials with the product and product table and see. The material type and if it is DRSA then.
+
+UNKNOWN_SPEAKER:
+I can check randomly like,
+
+Sagar Vora:
+You would need to do a join. No, no, I will just check like what are the, out of that many materials, how many of are DRSA?
+
+Hector Palacios:
+have millions of materials.
+
+Sagar Vora:
+Almost 20 materials are of DRSA.
+
+UNKNOWN_SPEAKER:
+Come again? 20 materials? No, no.
+
+Sagar Vora:
+Means I just selected randomly these many materials. And I was checking how many materials are of material type is DRSA. And I found this one. I think this.
+
+UNKNOWN_SPEAKER:
+Hello. No, no, I think someone is calling from... I don't know. Yeah. Oh, okay.
+
+Hector Palacios:
+Yes, tell me. So how we can filter, like, you know, from the reservation, see if we have a MRO materials. Because join is not going to tell us a lot.
+
+Sagar Vora:
+Yeah, no means we can join, we can do the join, but exactly what logic we need. So here, what is the quantity? That is the quantity.
+
+UNKNOWN_SPEAKER:
+What is the plan?
+
+Sagar Vora:
+Do we have to create a... For the future, we have to extract the data from this table? You are suggesting that? I want to see if we have data to use.
+
+Hector Palacios:
+Because I am really concerned that we have no future data for predicting maintenance here.
+
+Sagar Vora:
+But I have not applied even the...
+
+Hector Palacios:
+The point is for MRO we need to know this. For chemicals, no. I'm sure that for chemicals this is full of data in the future. I'm pretty sure because that is the way they work. I just want to So if we cannot do this without a flow, let's leave it here. But if there is a way to show only MRO, that is what we want to see.
+
+Sagar Vora:
+We can do that, but I'm just thinking like we have a material here, plant here, accommodate here, quantity here. I can check CRSA basically, the material type. Uh like how to check the order type okay so order number is a reservation number so we will require a order number okay we have a order number also so we can check the order number is of pm04 or not right I can do a join with the UFK and I can a filter like I just want a PM04 data for the future and I can try that.
+
+ Is this something easy or something that will take you time?
+
+Hector Palacios:
+Because if this is something that will take time, I will prefer not to do it. No, no, it will not take much time.
+
+Sagar Vora:
+Once it is done, I can let you know. It will take some time, not much time.
+
+Hector Palacios:
+OK. Tyson, for the chemicals data that we need to equipment layer, do we discuss about that?
+
+UNKNOWN_SPEAKER:
+No, I don't.
+
+Hector Palacios:
+But even if we have the data, it's going to be obsolete, like six months old, something like that? Because we ask for bigness, we ask bigness this information, he said no, you already have the information for the integration, but the integration is with this system, this system is very outdated.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So the question is, is that the data that we… It's not that outdated. That's the thing.
+
+UNKNOWN_SPEAKER:
+It's not that outdated. No?
+
+Hector Palacios:
+How many months? Like six months. Well, that means that we need to go back with the models and all of that. Yes, I think that is outdated.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Hector Palacios:
+That means that in the six last month you have no data pretty much There is there is a scenario rush, but it's not it's not that bad Sorry Another one is that all the models that we are doing we need to do all sets and all of and so on Inventory is not going to work like this Supply plan, yes. Okay, but let's check what we can get for the chemicals data. That's something for – at the FMRO, we have data shared by BNH.
+
+ We can go with that. Preventive is Sachet. Let's see if Sagar can get something from the reservations. And let's check the history for chemicals. I see that you were extracting, but we get many rejections. So, what can we do about that?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+No, no way. No, that integrated. We have integration.
+
+UNKNOWN_SPEAKER:
+It's fine. Yes.
+
+Hector Palacios:
+So you said that we had like many rejection of it.
+
+Sagar Vora:
+Earlier there was some detections. So yesterday I corrected that. Basically it was some equipments and some locations were not available. So I applied the extractors and applied filter. So now there are zero detections.
+
+Saul Portillo:
+So that means that we have the good data? Hector, this is the data for MRO, not for chemicals.
+
+Hector Palacios:
+No, I was asking specifically for chemicals.
+
+Saul Portillo:
+No, for chemicals we don't start to upload the data.
+
+Hector Palacios:
+Let's check for chemicals because for chemicals we have the information not at the level we need it. We need it by customer. This is a strong requirement The information is separated by cost center. So if we go at the location level, they won't like it. We need to get information at the customer level.
+
+UNKNOWN_SPEAKER:
+Equipment level, sorry.
+
+Hector Palacios:
+What do we need to go with this? So it's on our flow. I guess that is the same one, right? The same flow, different filters, that's it? Am I correct?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, but question Sagar, did you apply because you loaded basically everything into the historical consumption for corrective maintenance, is that right? You included the chemicals as well.
+
+Sagar Vora:
+So how to identify chemicals or I think I am missing that part.
+
+Hector Palacios:
+And what is the material type?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+That's what I'm trying to say. When we said we loaded all the information for corrective, that included, that includes chemicals. Yeah, yeah.
+
+Hector Palacios:
+For chemicals, you need to include everything in just 24. So remember, it's not that you have only corrective, you have preventive as well. Maybe it's a cheap percentage, like 5%. I don't know. But you need to include all the PM01, 02, 03, 05. I don't know which number, but it's only No, but but turn around it shouldn't be no it's only Corrective preventive the breakdown and I don't know what it's about those four or five.
+
+ Let's do that. Let's do that. That's why I'm saying So let's use the same flow.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Let's change the filters and let's integrate to the chemicals give here Yeah, can you provide the the right key figure?
+
+Sagar Vora:
+Yes So, thank you And can you explain me again? So currently, I have loaded PM 0, 1, 2, 4, and 6 in the provided keyfigure, but without any material type filter. Now, for the chemicals, we have to load the keyfigure, which is all good. But do I have to apply any material type filter?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, but you have the filters. So it's all right. For material type, you do have it.
+
+Hector Palacios:
+Material type, there is one that is a spare parts, right? So I guess that is for MRO.
+
+UNKNOWN_SPEAKER:
+Z-R-S-A. Yeah. Z-R?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+No, but there's no need to do that to you.
+
+Hector Palacios:
+Sagar already have it. Yeah, yeah, but Sagar doesn't understand this part. So for this business that is MRO, you have the filter MRTAL, right? For that one, you will have two gears. One is going to be for corrective, maintenance that is going to be related to some PM1 and PM2, I think. And then you have preventive that is going to be related, correct me, Saul, but it's like PM3 and PM4, right?
+
+Saul Portillo:
+Let me check.
+
+Hector Palacios:
+Check the filters and the maintenance.
+
+Sagar Vora:
+We have applied only PM4 for preventive.
+
+Hector Palacios:
+Chemicals you already have there. You have another material type for chemical.
+
+Saul Portillo:
+The PM3 and 4 is for preventive. PM3 is general maintenance and PM4 is preventive maintenance and PM5 is productive maintenance.
+
+Hector Palacios:
+Can you hear Saul? Corrective is PM?
+
+Saul Portillo:
+PM1 is corrective order. Okay, PM1 is corrective Break break down order m3 m3 is general maintenance. Oh In for if preventive maintenance in five if preventive maintenance predicted Yes What? Px6 p.m. 6 is turn around I don't see for chemicals because number 7 is MOC order, 8 is refurbishment, PMGN is general non-maintenance, and PMPA is pool asset order.
+
+Sagar Vora:
+Let me share Yeah, I've shared the screenshot on the chat.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Hector Palacios:
+Generally, it's the one that I don't know how to place for MRO. But for chemicals, let's put everything in just one place. So in chemicals, you don't have corrective or preventive. You have just one key field, history, let's say. And here, you need to include all the PM1 to PM5. For what I'm seeing right now. So that's the main difference. For MRO, you have two t-fears, corrective preventing. For kidney gas, you have just one on IV.
+
+ So you will need to have another flow for this one. It's going to be the same extractor, but on IVP, it will be a different flow pointing out to a different t-fear that Saul can share now. And this needs to be at the same level that you have it right now. So I guess I need to check this.
+
+Sagar Vora:
+Do you have to apply a material type filter also for the chemical or all the material?
+
+Hector Palacios:
+Yeah, yeah. This is only for chemicals. So whatever you're doing here, it doesn't apply for MRO or whatever else.
+
+UNKNOWN_SPEAKER:
+It's only for chemicals.
+
+Saul Portillo:
+I recently built a key figure because the key figure is a level with proclog. And we don't change because it's lost the data. Uploading a backup version but I just want for now it's ready it's ready I shared it in the chat all right and this moment is activated so that CHM is low chemical so I to load for ZCHM.
+
+UNKNOWN_SPEAKER:
+Correct? Can you repeat? OK, let me share my screen. Yeah, that's great.
+
+Sagar Vora:
+So for MRO, I have not applied any material type filter. OK, but I understood we are just looking mostly about the ZRSA. I'm not sure then why we are loading these all material Chemicals include catalysts and chemicals in additives.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+It's true. Maybe operating supplies as well. I'm not sure. Yeah, I also not sure about that. I don't know why.
+
+Hector Palacios:
+But the first two ones for sure.
+
+Fiamma Giorgi:
+It's for spare parts because in the information that Vignesh shared, it was a spare part too. Which one? Operation supplies, breaking supplies. That one was spare parts.
+
+Hector Palacios:
+Do we have the MRP type in the data that Vignesh shared?
+
+Sagar Vora:
+Yes.
+
+Hector Palacios:
+Can you check, Saul, which MRP types? That is not the MRP type, the material type.
+
+Saul Portillo:
+The material category for chemical is chemicals and catalyst. It is spoken, right? The rest mostly is for tomorrow, right?
+
+Sagar Vora:
+I will jump to minutes with Arun.
+
+Hector Palacios:
+I don't think that we need to discuss a lot there, but let me jump with because he was doing some configuration.
+
+Saul Portillo:
+I also want to go there to understand what's going on and all that. Just one last question. Yeah.
+
+Leaving...Hector Palacios:
+For spare parts, loops, operation supply, and spare parts.
+
+Sagar Vora:
+I will jump in the main time.
+
+Saul Portillo:
+Son, can you repeat? Loops, operating supplies and spare parts.
+
+Sagar Vora:
+I don't see loops.
+
+Saul Portillo:
+I think it's HSE materials. I don't know. Red HSE.
+
+UNKNOWN_SPEAKER:
+This one.
+
+Sagar Vora:
+I don't know because I don't give off So, I was saying for the MR which we loaded already late data, right? So, we have not applied any material type filter. So, do we have to apply this filter means basically remove this material types. For MRO, no material type filter is required, but for chemical we have to apply material type filter. Okay.
+
+UNKNOWN_SPEAKER:
+Now I'm just checking with you guys.
+
+Sagar Vora:
+And for chemical Sagar, I send you the key figure for history.
+
+Saul Portillo:
+Yeah, that is fine.
+
+Sagar Vora:
+I understood like in that I have to load data PM1 to PM5, but I think I have to apply a filter for this material type, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Sagar Vora:
+Yes, yes. But for MRO, no material type filters are required. Means that includes the chemical data also.
+
+Fiamma Giorgi:
+No, it shouldn't. No, because chemical is not in the MRO.
+
+Sagar Vora:
+Then I have to apply this.
+
+Saul Portillo:
+For MRO, you need to exclude the chemical methyl types.
+
+UNKNOWN_SPEAKER:
+They are separated.
+
+Sagar Vora:
+Just exclude this. For rest, we are good. Then I need to make this correction in the and I will reload the data. You also need the target key figure. Yeah, I think you just shared, right? This one.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+And the other one.
+
+Sagar Vora:
+Yeah, the other one you have it.
+
+UNKNOWN_SPEAKER:
+Which other one?
+
+Sagar Vora:
+Yeah, the rest are available. And the planning level is the same. Okay, I'm out of part usage.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+These are the three or four people that I see. Okay, guys, I will jump into the next one.
+
+UNKNOWN_SPEAKER:
+See you later. Okay, sure.
+
+Saul Portillo:
+Thank you. Sagar? Yes? A question. I don't know. I see in the MRO part usage, okay, the transactional data. Let me show you.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Saul Portillo:
+One minute, please. I'll show you. You see the IVP?
+
+UNKNOWN_SPEAKER:
+Yes. Yes?
+
+Saul Portillo:
+OK. For example, I don't know why for consumption history, the packet version is the manual data, OK? We upload Vignesh, OK? But when you integrate, I see more – I don't know – the 10 percent in this year, and this year the 50 percent of the ignition give off. I don't know if you have many rejection in this plant, in 2101, the data. I don't know.
+
+Reinaldo Gutierrez:
+Can you share that file with us, please? That file that we did give you.
+
+Fiamma Giorgi:
+Yeah.
+
+Saul Portillo:
+It's in the SharePoint, I mean. It's in this SharePoint? Or the link. The realized configuration and data, Agnode manual upload, if you can download this one. Agnode template MLM update, okay. I think, copy the...
+
+Sagar Vora:
+Okay. Can you just go back to that sheet and just show me again?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+Okay. And the actual usage for CM?
+
+Saul Portillo:
+Yes, because this is the history for corrective maintenance, and we only have the manual data for the 21.01 and is more data. I think that one is the final.
+
+Fiamma Giorgi:
+Do you have like the first one, not the final? Yeah, if you see the row number six, I think.
+
+Saul Portillo:
+I think it's the same because we don't have change. Just in case, just in case, let me check. Yeah, yeah, it's the same.
+
+UNKNOWN_SPEAKER:
+Listen.
+
+Saul Portillo:
+So let me check.
+
+UNKNOWN_SPEAKER:
+I will.
+
+Sagar Vora:
+I will get back to you on this.
+
+Saul Portillo:
+OK. Perfect. If you need time to review with us, just tell us, Sagar and Reinaldo.
+
+Sagar Vora:
+Sure, sure. I will update you guys.
+
+Saul Portillo:
+Thank you, Sagar.
+
+UNKNOWN_SPEAKER:
+Thank you, Reinaldo.
+
+Saul Portillo:
+Thank you.
+
+Sagar Vora:
+Bye-bye.
+
