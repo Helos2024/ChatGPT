@@ -1,0 +1,535 @@
+Omar Auf Abdul Rahman (ADNOC Onshore):
+So it basically gives me the section of the overhead available in the demand planning and the quantity per month. And we have different sheets for the different years and different company names. Based on that, this we use for demand planning, but in different formats. So we download it and we make analysis in the Excel sheet so we can know the conception per year in a giant sheet in which we put the quantity available in our store and the VMI store.
+
+ And from there, we know from the planning how much we need to buy a set. Now, here each set.
+
+Rahul Patel (ADNOC Group D&CS):
+So this wellhead1112, these are the wellhead codes or these are the sets?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+No, this is the wellhead code. We have the set called WH11, WH10, WH22, WH13. And this is the quantity required per month.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rahul Patel (ADNOC Group D&CS):
+And the set has its own bill of material. So if I take wallet10 as one code, then it will have 10 or 15 items as part of this wallet10 bill of material.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+It will have like 11. Some wallets have 8 sub-items. Some of them have 11, some have 15, some have 25. So it depends on the wallet type. OK. These sub-items have multiple suppliers. Some of them is compatible across, some of the sub-items are compatible across suppliers. So we can use lower part from one supplier, upper part from different supplier. And some of them are compatible, some of the items are compatible across all the headsets or part of the headsets.
+
+ Let's say we have running tools, it's compatible with like 50% or 60 percent across the wellhead types.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, so can you help us with from a well plan from DBS or DWC system how this wellhead is determined? Do you allocate the wellhead code to the well plan or from a well plan how we know that which wellhead code is to be or which code has to be identified? I think it's a point. So you have a well plan right? From a well plan how would we know which are the unique so in the well plan is there any code wellhead code which is allocated to well plan so that we know these are the wellhead materials to be selected
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+for a specific well yes this is the this is the download of the wellhead plan yeah so the combination for you is field well job type what all fields are maybe we have the company we have the company the owner and we have the fields, we have different fields. This is the well name, this is the job type of the well, and this is the rig number, going to drill the spot date of the well. Okay, I can't forget the face code.
+
+ So, completion code of the well, okay, sequence number, this is for the DWS, and you have the well head. So, this is, now the asset team, what they will do, they will enter the well name, they will enter the spot date, they will type job they want to do on the well. Okay, the spot date, the spot date is the I think they entered the roughly spot date because the date depends on the rig availability.
+
+ After that planning team, they will be interfering here. And they enter the commission code. When they enter this data, the DWDP cross check the commission code against the job type, and the data we are entering, and it will determine what type of full head will be required for this one okay so based upon
+
+Rahul Patel (ADNOC Group D&CS):
+the combination of completion code job type and the well type you get to know the what is the wellhead code which is w30 so the system automatically determines the wh31 is the code based upon this combination exactly exactly between
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+the job type and the commission code okay yeah this is to determine the wellhead type to be displayed here we have some type of yeah oh sorry to you but just one more question so for every well you will have only one wellhead code? For every well we have one wellhead code yes it's this is as per the this system some of the wells require two types of wellhead but that one is odd cases so we deal with it individually.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+Okay but then the wellhead code which is determined by EWDP system is essentially automatically determined the combination you have you identified and for every well you will have one wellhead code and for every wellhead code you will have the
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+bill of metal defined which will have the quantities of the metal based upon the wellhead code correct yes yes this wellhead code it's available in awdp in the system itself isn't it yes okay okay you want to integrate yeah yeah So if we get a connection or we have stacked, the valid code will be there. There should be a connection.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+If there is no connection. No, no, no.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+What I'm getting. So the valid code default is there in the AWDB.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+The valid code is defined in the AWDB. We define it in the AWDB.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Let's say one of the... The system is available, isn't it? If the system integrate, it will get the valid code from EWDP directly.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Yeah, this report is downloaded from EWDP.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+What I'm sharing here, this was downloaded from EWDP on the forecast.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Now, Rahul is asking you, there is any dependency on certain fields. So what I want to say to Rahul, so the valid code is straightaway available in the EWDP system.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, but then it is determined based on the combination of job type field. Completion code is what omar mentioned right yeah that's true but whenever we do the connection then this code will fetch we can fetch it so for us see from what i've understood from an IBP perspective wellhead code is nothing but the bomb header material that this defines that okay you have this header and under this you have this unique combination so the wellhead code determination based upon the field and well and completion code combination we will define so probably we can refer to the EWDP system and define the same in S4 HANA so that we are able to define the bill of material or replicate the bill of material in S4 HANA and and the determination of specific wellhood like well S31 we can replicate the same logic what is what mentioned that if a combination of field and completion codes your certain wellhead code then the logic what we are trying to build is exactly the same.
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Basically, it's job type and commission code. We have no control on the field, so our control parameter is job type and the completion code. Keep in mind that the job type, this code has its own bill of material for certain communities, non-Wheelhead communities. Some of them, even the code for the Wheelhead, some of them we include also. This has also its own Bluffaterial. So these items, the only codes, is caused with Bluffaterial.
+
+ So this has own Bluffaterial, and this has own Bluffaterial. But the combination of these two, it defines the top section of the wellhead I have been storing.
+
+UNKNOWN_SPEAKER:
+Not noted.
+
+Rahul Patel (ADNOC Group D&CS):
+So I think our thought process, or whatever discussions we have discussed, is in line with what you have explained, where we are using different attributes of the well to define different material requirement. So for wellhead, the attribute which is relevant is job type and completion code, whereas the attribute job type and completion code itself has own bill of material for a different category.
+
+ And that's what how we are also trying to define in the same thought. So from a demand perspective, I think our discussions we've been having all this while is in line with whatever you have explained. So we can proceed with the next step, that is that for well-held 31, let's take an example. Can you show the bill of material for well-held 31 in the EWTB system?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+So this is developed from the current contract, or let's say from the bill of material we are using in the previous tender or in GONK tenders. And this defines the items under each well-held type. So this is the well-held type over here, and this is the items from Supplier A, Supplier B.
+
+Rahul Patel (ADNOC Group D&CS):
+Can you filter out just Valnet 31, the one we have looked at, so that we can focus on the one example, so that helps us relate the information.
+
+Bastian Osorio:
+Small question here. What is the, in this case, what is the job type? What is the meaning of the job type? Is the job that the well-held will be performing? Can you provide some examples?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Okay, the job types is the planned activity going to be on the well or let's say it defines the objective of the well. For this one, let's say this one. It is a drilling water well. This one is, let's say, observer well. This one is oil producer. OK, so each code has its own. Description told them. This is also same as weld type? I don't know about the weld type. I haven't heard about it.
+
+Rahul Patel (ADNOC Group D&CS):
+I don't know from where you get this weld type. Yeah. So because in our previous discussion, we also talked about weld type, which is exactly the same what you're explaining. Water injector weld type or gas injector weld type or similarly.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Yeah, we have definition for each job type in the EWDP. So in EWDP, it has the each job type It's under maintenance now, so it's quite a bit slow.
+
+UNKNOWN_SPEAKER:
+So we have job types. This is the entire job types we have in AdNoc.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+And each one has its own explanation. This is x, hx, gg, horizontal, wag, injector, and Shuaib by unit g, like this.
+
+Rahul Patel (ADNOC Group D&CS):
+So this one assigned to well plan in the DWS system, correct?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+It is the objective of the well. What's the what's the job going to be done and in which results are going to reach?
+
+Rahul Patel (ADNOC Group D&CS):
+So can you show this job type? Do you? Can you open DWS system and show one of the job types allocated to DB?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Yes it is. It is in the DWS. The well type is more of a generic description. The job type is more specific, the type of well, whether it's work over, whether it's a new well, whether it's slanted, whatever, at which unit, for example. So it has a bit more description into it. So in reality, the way that we forecast material is based on a few attributes. One of them is the job type. The other is the completion code.
+
+ Then you have something called phases, which is if you have a completion code, a job a specific completion code and a job type then you have a phase and then you have a fourth thing which is called additional completion requirements. So those four they give you a full basket of material for a well based on the selection.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah noted thanks Abdulla. So from an IPP perspective since we'll be integrating or we'll be taking data from from DWS. So, the point we are trying to understand is, since this is available in DWS, we'll be able to take that as an input in IBP, and we'll be able to determine the wellhead code in IBP as well, similar to
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+how it is happening today. Okay. So, this the job types, as I explained, and it has its own belief material. Some of them, like only a couple of items, and some of them, it's like a long list of items. And each one, also, this is a code. So behind this code, there is another belief material defined. This one, not toolhead. It's not a toolhead item.
+
+UNKNOWN_SPEAKER:
+So it's defined somewhere else. So I have no idea how to reach it.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+OK, so we came back to the sub-assembly for the, or sub-items for the world head. So WS31, this is the sub-items under WS31. And this is defined also in your system where this is the bill of metal for WS31, correct?
+
+Rahul Patel (ADNOC Group D&CS):
+No, the WDB, the role ends in the code.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+So the role of the WDB ends here. So we take this code, now based on code we'll analyze how much required was the what's available in stocks how much we need to cover the the with let's say with 2025 and based on that let's say we need to buy X number of the H31 to cover this year or to cover the lead time as for the contract and from that we proceed in procurement they will proceed with this list to buy this item now we define the quantity per each one, because some of them is running tools, some of them is main items.
+
+ Also, there will be manual deduction for the items which is available extra in the, as explained earlier, some items is returned back from the rigs and can be reused. So we make also manual deduction. So number here of the, let's say if we get 100 pieces required in WS31, it doesn't mean that the PO number be 100 set for each.
+
+Rahul Patel (ADNOC Group D&CS):
+Where do you define this relation between WH31 and all these model codes?
+
+UNKNOWN_SPEAKER:
+This is some items for WH31.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Is this defined anywhere in any system or this is available?
+
+Rahul Patel (ADNOC Group D&CS):
+It's in the contract.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+It's available in the contract.
+
+Rahul Patel (ADNOC Group D&CS):
+So you have a separate contract for WS 31 so when you say it's available contract you define that if the valid code is this and then these are the methods to be provided yes yes it's available in the current
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+contract available in text format in the in the subsystem okay text format not in as a line item in the lgpa it's a line item but it's like item the line items is this these items you will get all of them yes yeah you will get all items in one list. OK, and text format we have 31 is combination of this. OK, the which 55 combination of different stack up some items is here available also in the page 31 or division 55.
+
+ The batch 14. Yeah, it's replica items so can is common item across multiple sets. Mama, that's what this is.
+
+Rahul Patel (ADNOC Group D&CS):
+What we were mentioning yesterday when you're saying we need to follow the sequence and sets specific order so that the item related to a specific set are all procured together which includes main items and the tools.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Exactly this is for wellhead similarly we have for even OCTG and completion as well.
+
+Bastian Osorio:
+Okay so essentially here a comment from my side Rahul in that case is there an attribute something like that that can basically unify these different materials this different and make them part of a set?
+
+Rahul Patel (ADNOC Group D&CS):
+So right now, the set definition, what we see is mentioned as text in the agreement, which means there is no direct relation anywhere in the system saying that wellhead code, say WH31, is the header. And then the items of this wellhead code, these are the models. This is maintained as part of the contract and the text form. So when we replicate this information in S4HANA as a build-off model, then wellhead code 31 we will have this item 10 to 12 defined as item number 10 20 30 in the bill of material and that can be the reference for us to create a purchase order or the call of agreement in the specific for the specific material in specific order or sequence so that we will be able to complete the requirement of creating this agreement in a specific order for the specific set of materials and even get what you explain the whole thing you explain again please yeah so so essentially when we define the bill of material in s4 hana you will have wh 31 what we see here as the header and then you will see all the items which are mentioned from item number 1 to 12 as the component of the header so that we know that for wh 31 item number 1 is 1 3 0 0 1 0 0 4 4 3 6 and item number 12 is 1 3 0 0 1 0 0 4 4 1 double 8.
+
+
+
+Bastian Osorio:
+So I understand that but that will be possible only if those materials are related to only one bomb.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes for example so you will have a bomb for WH 31 you will have a bomb for WH 32 likewise you will have a bomb for every wellhead code that's what they also have today they have the wellhead code and for every wellhead code there are list of materials which are identified now if we replicate this information of the wellhead code and the components of wellhead code as bill of materialness for HANA and for this will of material of this wellhead code is its combination of job type and the completion code right so which means the attributes which select this wellhead code 31 is a specific job type in a specific completion code so if we have a well plan and if well plan has a wellhead code and a completion and a job type, which is there in the current system, then we can identify, okay, this is the 31 code and these are the materials.
+
+ So, when we build up the demand for wellhead, the combination of these two attributes will help us derive this component required for wellhead in a specific order in a specific manner. They use SAP for it, then yes, the only reason for integration. Does that make sense, Bastian?
+
+Bastian Osorio:
+For any EPM.
+
+Rahul Patel (ADNOC Group D&CS):
+reporting so more technical details but overall is clear yeah so if there are specific discussions we can have it internally but if we have any questions from omar or Abdulla probably we can ask those questions yes uh I do
+
+Arun Tejnarayan (ADNOC Group D&CS):
+have one question now so in this actual sheet right uh basically the items that we see are nothing but the branded materials but from ewdp uh the equivalent basket is mapped let's say for example completion code will have 10
+
+Rahul Patel (ADNOC Group D&CS):
+generic codes or 10 item right 10 generic sap code so where is that information so that information is not related to wellhead it was a different commodity when we looked at uh omar clearly mentioned for wellhead the the ed sorry the the metal basket planning system only has it ends with wellhead and the material information of right now is part of the contract they have and this is also mentioned as part of the text.
+
+ So, every commodity has a different way of planning and for wellhead this is how the planning is happening. Correct, Omar?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Yeah, but there is something you said about the bio-fitterial having the bio-fitterial defined that you will put this one in the system, link it in the system and it will appear automatically in the forecast and the wellhead or even in the other commodities it will will not work like this. If we end up with having the actual numbers we have linked to the forecast, then we, let's say here, let's say W3-1, we have this supplier, W3-2, we have the suppliers.
+
+ We have another three suppliers from the previous contracts available in our store. If we have a new contract, we will have another, let's say this, how many items? This is 12. If we have another contract with two suppliers, we'll have 24 other new items that we have to link. If we have three suppliers, then we are to fit six items. So this will not be a way of planning. Now we are talking about one wool head.
+
+ We have about 50 wool head types. The amount of sub numbers I have for the wool head, let me give you an idea how many, let's say, okay, it's like 500, let's say 150 for one supplier. So if we are going to work this way, it will never reach to end in the planning. So this way we end up the wool head, and I believe other items same thing, we end up with a generic code. And this generic code is defined as a bit of material for the current contract.
+
+ Now this one is current contracts we have, I have another list for the previous contracts, which is available. It includes all type of wool heads as well, including the 31.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+This is the 31 in the previous contract, which is available in the store, and we are trying to assume it. So this is why all our stories in the forecast end up with the generic code. And this generic code, we translate it later in different type of either sheets or per community.
+
+Rahul Patel (ADNOC Group D&CS):
+Thanks for this input, Omar. As per our discussion we are also trying to follow the same methodology which means the bill of material what we will define for valid code let's take an example valid code 31 we will not use branded material codes in the bill of material but we will use generic material codes only in bill of material for that we don't have for the same valid 10 different materials based upon different vendors so we'll have just one bill of material which is essentially the generic bill of material we will have another table in S4 HANA where you will have mapping between one generic material and multiple branded material for the same generic material.
+
+ So if you have four suppliers providing the same material and the four suppliers have four different supplier model codes, then there will be a table where this mapping will happen between the generic material code and the branded material code. And when we do the supply planning, we will check on which material code, what inventories are available on the branded side. So the demand or the forecasting happens purely on the generic metal code and when we are doing the evolution of stock and evolution of what to order from where to order, at that point of time system will convert this generic metal demand automatically into branded metal demand based upon availability of stock or user can provide his manual input saying that I want to buy from a specific vendor and consider the branded metal code of that specific vendor for procurement.
+
+ So that that something will happen. So to answer your question, yes, we are considering the point you are raising here.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Who will do the mapping? Sorry. Who will do the mapping for the software? I think it's called HANA.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+So SAP, in the SAP, there is already a table. So S4 HANA is essentially SAP. In SAP, there is this custom table which Tim has shared with us, which has this mapping. Now, for sure, we'll have to evaluate and confirm that the mapping is up to date. But then if that mapping is not there, we will need support from AdNord to make sure the mapping between the generic code and branded code is complete or updated.
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+That is correct. So for us, and let's say specifically about the Wilhelm, we have the generic code for 2H31. Completely, it's like assembly. So I can give you a generic code for the set of this. So we need to generate this generic code. So what's the use of having a specific assembly code for a supplier, okay, and make it in S4 HANA? At the end, you get a zero because there is no, in the stock, we don't keep as assemblies, keep the subassemblies in stock.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+So assembly codes will not be for suppliers, assembly code will be only for generic metal and then specific supply so so the metal codes there will be no assembly code for a specific supplier. When we define assembly code in S4HANA it would be only to identify what is WH31 as a unique material so you will have a assembly code which is which is equivalent to say WH31 and then you will have the components of that assembly code as the generic materials in S4HANA.
+
+ So the demand can be identified at a generic level. And the branded codes will not have assembly codes. The branded code will have mapping between the material codes. Let's take an example. The material number one, say 13010044036. I understand this is a branded material today. So if this is a branded material, the bill of material will have the generic material of the same biometric material. And then through the mapping, we'll identify whether branded material A to be used, B to be used, C to be used.
+
+ And that also can be user input, where user said that for this, well, use the branded material A For another, we'll use branded material B.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+So that becomes the plot of the supply planning. OK. Now, we have a problem here. Yes. OK. Assuming that we have the generic code for this item. Now, this is the generic code. Because it was requested in Maximo. This Maximo generic code is not available in SAP anymore because the new system doesn't require it. But let's say we have the generic code for the sub-items for WS31 under the WS31 assembly.
+
+ Now, for the supplier, we have the specific code, supplier code, which is matching this generic code. Now, in different assembly, in different assembly, we will have the same naming, the same generic code, okay? But supplier, this item supplied by supplier is not compatible with that type of full head. So it has another different specific code. While the supplier have the same tool applies for that, let's say the batch 32 applies for the batch 32.
+
+ So there will be change in the subalizable code in coordination to the generic code. For us, the generic code serves the items under this assembly. So there is a chance that this is repeated as a description, but its function is different specific subnumbers.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, so let me reiterate what I've understood and then we talk it further. So what you are saying is you have wellhead code 31 and you have wellhead code 32. Both wellhead code 31 and 32 can have same genetic material but when the compatibility of the specific code comes the wellhead code 31 because of the other components the specific genetic material code may not be compatible with a certain branded material code.
+
+ Which means there is a dependency between the compatibility of branded codes with the well-head codes and not only with the generic code, correct?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Okay, let me rephrase it. Now, in dimension 31, we have this code which is surface tool. Okay, this general code is linked to this description of this item. Yes. Okay, but in dimension 32, okay, let me, I think dimension 32, it has the same case Let me just filter it. We might have this there. OK. So by luck here, we have the same item. So we have this tool is 1,300, and this tool is 1,300, which is available, which is where you put an initial tendering stage.
+
+ And this one is part of the description of the sub-item. Now, when it comes to the awarding, the supplier gives the specific numbers for it's 1,300. But for this 1,300, this supplier, the blue one, has different code for this type of full head, while this one, red one, has same code for this type of full head, which is correlated to 1,300. So if we are using the 1,300 and remap it to a specific line item, we'll have two quantities coming from the supplier, and we'll have a fake number, a fake quantity showing on the end report, the final report.
+
+ Let's say if I have five sets from this one, I have four sets from this one, and I have 10 sets from this one. Okay, so this 10 sets, it has the same JREC code, but it's used only under W32. If I run the quantity, if I run the quantity available in store, it will give me 1519 sets from this code, while in reality I have only nine from this code from these two suppliers.
+
+Rahul Patel (ADNOC Group D&CS):
+So what you're saying is if we depend only on the generic code, then you can have multiple, we can have multiple branded codes. And if you look at the example, what you're saying is we'll have 19 quantity if we have just like 1300 with the relation with 36 and other codes. Yeah, I think we understood what your point you're making, trying to make, which means the relation between branded code and generated code is not one to one, but it also dependent upon the word head assembly code.
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+OK, I can maybe rephrase it now to something clear, but not the the items under the generic code not necessarily to be compatible with different sets that have the same generic code.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, I got your point. So we've noted this point. Thank you for sharing this input. We will review internally how this point can be mitigated. I do not have answer right away because this point was never discussed in our previous conversation. So thank you for helping us specify this point. Any other point you think similar to this what you feel might create issue for the solution we are trying to build?
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Not in mind for time being, but if I get something in mind, definitely I will either give you an email or highlight it in the other sessions.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, so based upon what we have discussed, if we are able to address the last point you've raised, do you think then the solution we are trying to build will work for We tried many times with different teams to
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+have the final report, which is the final demand report, specifically, not only on a generic level. And once we reached to the final stage, due to the variety of compatibility of items and the tools we have in Woodhead, we couldn't find a solution from Woodhead's side, because it's quite complicated. And quite complicated compatibility sets. Noted. So let's give it a try considering that.
+
+Rahul Patel (ADNOC Group D&CS):
+I don't say give it a try. We will for sure put up all our efforts to make sure that if ad hoc leadership has selected this tool as one of the tool for demand and supply planning. Based upon today's discussion, we will put this as an input for our planning. And hopefully we'll be able to demonstrate to you how this tool works when the required input is provided and give you the confidence that probably this will be the last tool you guys work upon when we're looking at.
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+If you have any question or anything, I don't want to put a stick in the wheel, but this is the points that we faced previously. That's why I'm highlighting this point now. If you have anything, any clarification, please feel free to contact me.
+
+Rahul Patel (ADNOC Group D&CS):
+Only thing I would request before we drop the call is, since you have all this data ready, will you be able to share some sample information or Excel sheets where we can correlate this information so that when we are building this in IPP, we have the sample data or the real data from your planning system for us to work upon? Is this something you can share with us?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+A specified document, I cannot share it until we have permission from the management. If you can approach the green light from the management, I can share it.
+
+Rahul Patel (ADNOC Group D&CS):
+So when you say management, who would be the person who will give you? Our VP. Khalid, is this something we can get this confirmation? Because it is important for us to get this data in terms of how the relationship between the Excel sheets as an input for our design so that we can simulate the same information in IVP as well.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, so just probably you send us an email and we'll take as much help in this one to take the data.
+
+Rahul Patel (ADNOC Group D&CS):
+So we've already sent this email today, Mohammed Ashiq if you remember. So we've requested data for all the wellhead category, all the material categories including wellhead. So Ashiq can you help us take it forward? Essentially what we are looking for is sample well data like I don't need the well plan information from all the wells but at least 10, 15, 20 wells if you can help us with and for those corresponding wells what are the wellhead codes and for those corresponding wellhead codes what are the bill of metals or the metal basket you have.
+
+ I don't need for everything and everything just need for 10-15 different wells what are the well l codes and for those well l codes what are the different relationships between the well l code and the material basket.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+The email that you forwarded I already forwarded to them on based on the template if they have if they can fix it.
+
+Rahul Patel (ADNOC Group D&CS):
+So Omar I'll go back to the template I don't mind if you can share your sheet you don't need to follow my template but essentially what we are looking for is like a wellhead plan maybe for 15-20 wells and for that corresponding well plan for 15-20 wells you can give us the wellhead codes and then for those wellhead codes help us with the bill of metal that's what we are looking for so that we can simulate this in our system and create those bill of metals and update the demand in IVP.
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+You mean sample for the situation? Yes, so you have like 31, right?
+
+Rahul Patel (ADNOC Group D&CS):
+So probably we need like 510 wells. So in that 510 is probably someone has 20, someone has 25, someone has 30. So give few examples to play with, not just one, so that we can check in the system when we are setting up that. OK, if the wellhead is 31, whether we are getting wellhead code 31 code. If wellhead is 20, then whether we are able to get 20 metals in IBP so at least 5-10 examples not all.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah okay yeah Omar I think you will not get the full list of those items under WH 31 or 14. It will be like the bomb they are looking for the bomb that how you define in EWDP to get this equipment and and this bill of materials.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+I think at your point.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me share my screen again. This is what we're looking for. So you have this well plan, right? So this well plan had the completion code and then you you talked about one more code. Let me add that code to this list. So we had well type and you also had job type, right?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+So let's take a combination between well type and between job type and the the wellhead we until now we have I believe 19,000 data entry as last time I checked yeah so so job type and the completion code so
+
+Rahul Patel (ADNOC Group D&CS):
+so when we say wellhead material we said it is a job type plus completion code right so basically you will have a wellhead code so let me say a well heard code wh1 is derived from job type plus completion code and then for this job type and completion so we will have job type and completion code defined as an attribute and for that attribute you will have this generic model so now you've given one example as wh31 we need some more examples for So you have given 31 as an example, right?
+
+ You've shown us so we need like 810 different wells. We have where you have different wellhead code and for every wellhead code we need this block material definition.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+I can share data whatever required, but I got to have a green light to share this data because it's within the classified documents.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, probably apologies. Can you help us with the name whose approval is required to get this data from Omar and then we can take us myself to get this approval for us so that we can get this data.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Oh my God, they're asking for only sample data, not for what is your active data.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+OK, you have the data with you.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Now what did they are asking for the bill of material? Whatever the planning sheet that we are doing, I already forwarded to them.
+
+Rahul Patel (ADNOC Group D&CS):
+They have those sheets. Don't think I should. We have this planning sheet what we discussed right for wellhead.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Now we have. I have I given you that.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me quickly check because we don't want to then unnecessary bother anyone. If we have this data, give me a minute. Yeah or or we can align over if you have like I I don't want to like keep you waiting if you have other activities we'll continue or I'll work with Arshik if he has already provided us with data quickly on the call and if we don't have data then we'll get back to you Omar or Arshik.
+
+
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+No issues, no issues, no issues. Okay, thank you so much, thank you Jens, thank you. Thank you so much for your time. One small question, we have the tool now which is EWDP and we have DWS and this tool is quite developed because we been working on enhancing it for the last, let's say, 15 years. But it's like a side question. Why not focusing on developing the EWDP to reach to the level that it's required?
+
+ Because now it's integrated with SAP and taking the data from there. And last time we had a meeting last year, I believe, early last year, with the IT team, they were abrogating the EWDP to have the quantities, getting the quantities and values also from subsystems. They have like a phase two for it. It's like a huge jump for EWGP to the same level that you are looking for. They also collect the samples and data for the quantities to have the demand plan you're looking for.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+Can you probably help us answer this question as a director from AdNoc Literature? Initiating this for us? Khalid or Abdulla, anyone can help us answer this question?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Because the AWP now under AdNocHQ is not under Onshore. The IT team is under AdNocHQ.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Umar, Khalid can explain here in detail. See, actually, this IVP initiation from HQ IT only. And the from us that he said Khalid is representing and he'll explain the background of this IBP and so how it's working see as you mentioned so the the AWDP whatever you are related it will be there so it
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+will not replacing AWDP or any system to IBP yeah I don't mean replacing I mean it seems double requirements on two different systems just to avoid duplication because whatever they requested before, we had the same meeting, identical to this meeting. They ask also for sub numbers, they ask for the sub items, the different suppliers, different coating. And they said that they are working on phase two for EWDP.
+
+ So for us as end users, it sounds like duplication for the world. I don't know, it doesn't seem that you have any knowledge about this phase two. To EWDP. I just recommend, it's just a recommendation here. Just check with the IT team for EWDP because you might both working on the same channel, but in two different directions. If it's the same, so we can combine the efforts.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+If it's different, then we can, we can, we can proceed with whatever we're working on now.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Actually from us, we have, we had from the management and management invested time and money to procure this tool and some direction from the procurement team that there should be a single tool for the inventory planning and optimization. So this is why we are implementing this tool and this should be the tool being used in all Adno Group companies for the inventory planning.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Yeah, same thing. They are also going to buy a tool for this purpose. And it's not only for Adnok Onshore, it was for the entire Opco Adnok group of companies.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Is it for the inventory optimization and planning?
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+It's the same story. Yes, exactly. I don't know the name exactly what they are looking for, but they were looking for the same thing for the demand planning and these things.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Because we had direction from the higher management, means from the SFPP, from the director and yeah.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+You can check with the people in the IT who's responsible for this was Mr. Ayman, Mr. Ashraf. I can't remember the names. I can get the names for system and put it for you on chat.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Okay. Ayman Abu Nimra.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+I believe, yes. Aiman Abu Nimr, something like this. I believe, yes, you are right. Yeah.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+And the other guy called Ashraf. He's from the asset management team, upstream asset manager. Probably from the asset management perspective, they might be doing. OK, we'll check that.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, great. All right, then. Let's spend some time to make sure that the data you shared is something same what we're looking so that it will help us close this point right away in the meeting. Let me share my screen again.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Let me pull up the OK, so it is something for me. I have to jump to. Thank you. Thank you. Thank you all. Thank you.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me share my screen. These are the files which we have. Yeah. Which one of this file is specific to Wellhead? Can you help us identify? Because I think we had this one is OTCG. Omadashi, can you see my screen?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Just check that A1 forecast DMF.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+I think this is the sheet you had, Helper. So, this we talked about this in the supply planning.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+So, I remember this, but does it have wellhead.
+
+Rahul Patel (ADNOC Group D&CS):
+If you go in other tabs, if you can see the other tabs. Consumption forecast. Okay. DMF. Okay. So, it has wellhead 31 if I select.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+No, you will not get those list of items. So, here.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes. It's just planning data so let me go through the old completion codes we have completion code because the planning is at just a set level one set level and the rest of the information so probably we need to go one more level below because we'll have to define bomb so other than set we also need the bill of material of each set Set, we have to give separately.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+It is not there in the forecast. Separately maintain an Excel sheet. So they have just that.
+
+Rahul Patel (ADNOC Group D&CS):
+Do you have that Excel sheet with you where you have defined sets and the components of the set?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, that is what Omar was showing, right? That last.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so the same. Is this with you as well? Or you will have to go through Omar only? I can send you that data. Yeah, so if you can send a set information, then one more thing I just wanted to check how this is allocated from a well plan will we be able to how we can match this with well plan so we have this well plan right let me pull up the well plan so we have received this well plan dbc data right so now if if we take this dbc data so we have completion code but it does not have the it has well type but it does not have the job type so you need more for that more details so so what we are looking for is a sample plan like a 10 15 wells like this which has the uh which has all that includes including the job type so that so we can say that okay 16 sees the completion code and say job type is double pi so for the 16 c and w uh 16 c and w I wellhead 10 is the code and this is the bomb of validity so that way we'll be able to convert the information from well plan to uh the bomb for that well plan this is what we are
+
+Mohammed Ashic (ADNOC Onshore - PD):
+looking for uh mamadashik yes what is missing here I can give you is the item list of a set which is not part of the plan but that is less If you can share that also, then that's the first
+
+Rahul Patel (ADNOC Group D&CS):
+step. And then we can then go back to Omar and ask only for this well-planned.
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Yeah, that I'll show you. I mean, I can give you a sample of the equipments from a set.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, so this is something we can then show. So, Abdulla, what we've discussed is only for onshore, right? So, for offshore well-haired, so like we have sent the email, how can you give us the bill of metal for all that metal categories, well-haired OCTG and others? Abdul, if you are there on the call?
+
+Rahul Patel (ADNOC Group D&CS):
+Rahul, you're asking me something? I was asking to Abdulla.
+
+Hector Palacios (ADNOC Group D&CS):
+Rahul, maybe in the meantime I can ask you something because in some sessions ago we were defining the WorldHit based on a combination of the OCDG and the casing and remember and the WorldHit code. Now in this session with Omar it seems like it's only related to the WorldHit code, which materials we need to bring. So I'm not sure if we have common definition across all the companies, you know, because that can be an issue because if we have conflicting logics, because maybe some of them they do it this way, some of them this way, you know, so I don't know if that's the case.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+I was trying to connect with Abdulla and see that the wellhead is it seen for what we've discussed today is the same for offshore as well. No.
+
+UNKNOWN_SPEAKER:
+Abdulla, are you there on the call?
+
+Rahul Patel (ADNOC Group D&CS):
+If Abdulla is not there, then... So I think that is what you're highlighting. Hector is a valid risk that we need a common definition for a category between group companies. Now today's discussion we got more clarity and this is the one which end user is providing which means he himself is planning on the same notes which means that's what we are using. In last meeting I think we had Abdulla and he was not from Wellhead that's why he was saying to talk to well-head guy and he confirmed us the well-head as well and I've updated this well-head definition.
+
+ The only point left now is to make sure that we are aligning for all this definition for both group companies so that the solution remains the same. Abdul, if you're back can you hear us or we'll have to plan we'll have to talk to him separately then. Yeah, he may be. OK, why don't you?
+
+Mohammed Ashic (ADNOC Onshore - PD):
+Why don't you put a message in the chat so that you know at least he can forward you the list of similar way of similar shield which I have forwarded for the wellhead including the sets that I mean the equipment that follow in the sets.
+
+Rahul Patel (ADNOC Group D&CS):
+So that's what I meant when I sent that email that we needed categories and everything. So, yeah. Let me probably, I'll connect with Abdulla again separately. I'll send that in chat as well. Let me put up the chat. Abdulla, we have discussed, well, well heard. Onshore can you please confirm if offshore offshore so rahul can I leave I have some other engagement is it okay is there anything else I will from me I think uh uh at this our meeting is also coming to an end right this is uh yeah so let's conclude this call uh I will send this note to Abdulla and uh uh Others can join.
+
+ Probably, Hector, Arun, Vasanth, would you like to continue for five minutes to reconcile our discussion before we close? Yes, sure. Others probably can join. Drop, sorry. So, yeah, Mohammed, Ashif, Khalid, everyone, you can drop and then. Yeah, I have another committee. Yeah, yeah.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Okay, I'll stop there. Thank you. Thank you.
+
+Rahul Patel (ADNOC Group D&CS):
+Same method.
+
+UNKNOWN_SPEAKER:
+You can call us. You want to call in a different meeting?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me set up a quick invite for 15 minutes. Rahul, we can join the previous meeting, which was set up earlier.
+
+Kunal Sheth (ADNOC Group D&CS):
+Same technical meeting. Yeah. Let it be.
+
+Omar Auf Abdul Rahman (ADNOC Onshore):
+Oh, yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+If everyone is OK, let's join the technical meeting. That's fine with everyone? Yeah.
+
+UNKNOWN_SPEAKER:
+Thanks. You Bye.
+
