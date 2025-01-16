@@ -1,0 +1,342 @@
+UNKNOWN_SPEAKER:
+What's up, man? Hi, what's up?
+
+Hector Palacios:
+I thought you were in Aruna, haven't you joined yet?
+
+Pelayo Fernandez:
+Oh, no, no, I haven't joined yet. No, not yet, not yet. How are you?
+
+UNKNOWN_SPEAKER:
+Good, good. I'm with what you told me.
+
+Pelayo Fernandez:
+I'm on it. Later in the afternoon I'll let you know if I have any questions, but for now it's going well.
+
+Hector Palacios:
+Ok, perfect. We don't need that. So, generally, any project, just so you know, because you're going to get an impression of it, of how the project is done, naturally. When we do projects, we have people dedicated to the projects, on the client side, who, although they are doing their job, but they give a percentage of the project and they collaborate with us a lot. So, we ask them questions and they answer us by e-mail and things like that.
+
+ Here it is almost impossible for them not to do that. It's like we ask them, hey, and what additional fields do we bring? Family, the region of the client, things like that, and they don't answer anything. It's a topic that we've been bringing up for a month, so basically I'm putting together my gauze that they threw around.
+
+Pelayo Fernandez:
+Let's see if we can mount something, right? Exactly. Sure. But is this because you're working with KPMG, or is it more because AdNoCars is so big, and work the way they work, they don't listen.
+
+Hector Palacios:
+I think it's a huge problem the amount of people we have involved. They did a huge project for 12 companies, and there are a lot of people. So we don't have clear managers, and no centralised person would be able to know everything each company needs in particular. We don't have a global expert, that's what happens. We have a lot of local experts, and those guys, obviously, we have, imagine, 12 local experts.
+
+ If you have 12 responsible people, then you always have to align 12 people. That everyone agrees on something.
+
+Pelayo Fernandez:
+It's crazy, it never happens. It's a special case, it doesn't happen often. Exactly. Hey everyone, how are you?
+
+Arun Singh:
+Hey guys, I'm doing good. How are you? Very well. Okay.
+
+Hector Palacios:
+Do you have any questions with the configuration?
+
+UNKNOWN_SPEAKER:
+Because I think that we have this placeholder.
+
+Hector Palacios:
+Maybe Vasthi wants to check something else. But you and me, we were working just yesterday on this. So I don't know if you want to continue something or or configuration it's done so you have it great it's something that we can check together now like we probably need to test uh the result okay with some dummy
+
+Arun Singh:
+data so you completed the configuration and but did you add some data I I have not I've just completed the configuration part.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+Guys, can we go through the configuration just to make sure we are all on the same page on what it's been doing?
+
+Hector Palacios:
+Yeah, I can help you with that, as we'll see how it's more clear. I think there's a chance we will have to start from scratch.
+
+Bastian Osorio:
+I hope that.
+
+Hector Palacios:
+No, I don't think that's too start from scratch, but I think that this can become much more complex. So what we are doing is that we will have the bone header and item as the data that will be like the original one. This is the one that we will load from HANA, and we will have an IDP. But then to achieve the logic that we are saying, the four key fields and so on, we needed to separate this in four massive that we use automatically on IVP, some with master data rule, some others with virtual master data.
+
+ That is a functionality that we have just to join some tables. And basically, in one BOM header, an item is for the OCD, the main one, right? Then we have one for the white header that we will need to adjust right now a little bit. This one as well, because now we were mentioning the job type right? Bone header item for the DCE, this is traditional completion code, and then for the liner hanger cementing code.
+
+
+
+Bastian Osorio:
+Don't think about the changes we discussed today, because if we go down that path...
+
+Hector Palacios:
+It's just different joints, because yesterday we were thinking, okay, the weld head will depend the fin, the weld type, and the basic ones, plus the weld head coat. Now we think that only depending on the weld head coat. So basically each weld head coat will have their own bone. That's what I think now. So given that case, it's going to be simpler, not more complicated.
+
+Bastian Osorio:
+But I'm not convinced. Still, I'm not convinced because they're not coming with just one. With who we talk, they have a different view, so it is complicated. It's awful.
+
+Hector Palacios:
+Yeah, I completely agree. This is what I was telling Pelayo, this is not the common project. If you have too many people that need to agree and they don't agree, we don't have one global So I feel a risk in the UAT session, OK, because I don't think we will have any common ground, right, between
+
+Arun Singh:
+different AGC. And I think we won't be having any common logic, you know, to define the bound for different categories. I don't know. But this looks concerning to me. For me, it's one step back.
+
+Hector Palacios:
+It's why we are implementing IVP if you already have a specialized system for this. It's why instead of spending time and resources on creating the wheel again, why don't you spend time and resources trying to make your user start using your system? That is for this. For supply planning, IVP. But for the bomb explosion, I think that they should stay with their system. Because otherwise, you will have I don't know what's going to be the purpose of that system if we put IVP.
+
+ They say, no, we are not going to replace. How not? The main purpose of that system. Can you hear me?
+
+Bastian Osorio:
+Yeah, yeah, sorry. I was talking over. Yeah, no, the answer that Rahul is giving, I think is a fair answer, is that because they are looking to consolidate the requirements, the material requirements from the different AGC, which sounds fair, but in that case, but we don't do it on the same system right on the old system that is what I'm saying and then on IBP you just integrate the the forecast mate yeah because I guess in that system they don't I I guess here I'm not saying this is absolutely right but my feeling is that they don't have the ability to create a prs and sto they don't have like ivp has more like this feature of perhaps more That's why I say that IVP is for supply planning.
+
+
+
+Hector Palacios:
+That is for sure. So we will do supply planning as it is, NPRs and STRs and whatever.
+
+Bastian Osorio:
+But the bomb explosion should be there on the system. I agree on that. I think that that makes more sense than building everything within IVP. From scratch. Very sophisticated complex system that there's no way we're going to be able to replicate in IVP.
+
+Hector Palacios:
+We are completely sure we are going to miss something if we start doing it and it's going to be a never-ending because this is a 15 years old system.
+
+Arun Singh:
+But guys I have a small different perception in this so basically the users are matured enough but users If you remember Rahul has mentioned one point and I think it is justifiable because the users from different agencies are not using the system completely. So from Agnox standpoint they want to bring all the users on a single platform for the forecasting model. Why not the old one?
+
+Hector Palacios:
+That is the question. We understand the point of consolidating but why not the old one?
+
+Arun Singh:
+Because the old See, if I see that old system, right, like EWDB, it does not give me the information about all the components that are extended to the well. But from IBP perspective, if I see, right, we will have that kind of visibility. So, that will give an edge for the planner, you know, because all the well will have their individual, you know, components or material requirement. At the different places, okay.
+
+
+
+Hector Palacios:
+When you mean the components you are referring to attributes or are you referring to the materials that we...
+
+Arun Singh:
+Materials, materials required for the well.
+
+Hector Palacios:
+That system is a specialized system for this, so I don't know why they are not... I guess the same reason of why they are not able to use it today, we will have it on IBP. I don't see why IBP is going to be better on that than on a specialized system. Indeed, what we are doing right now for the material, you see all the virtual mass data, mass data rules, and so on.
+
+Arun Singh:
+This is very custom. This is not a standard. Correct. But see, in IBP demand, we can build a custom logic for all the AGCs. So if they come on common ground, right? Define a singular logic, right? Then probably the IPP will be a good solution for them. That is what I think, or I believe.
+
+UNKNOWN_SPEAKER:
+OK? But yeah.
+
+Hector Palacios:
+They were not able to do it on the old system. They were not able to do it on the old system. And I think that they have tried many times with different software. So IPP, like, put in a barrier. Generic IT solution for planning not for one for drilling. That's my point. But this is not specialized.
+
+Arun Singh:
+From the ad-hoc management they have not sent a clear message that once IBP is introduced right for drilling business then what all functionality goes away or will be redundant from EWDP system. That kind of information communication has to be sent from the ad-hoc management. Otherwise this question will always arise as you know in the user mind that why I should do same thing at two different places.
+
+
+
+Hector Palacios:
+And three system now you're taking this tiny part in JVP. But there are many things that they are doing on the dot system as well. So well-planned system will remain there.
+
+Arun Singh:
+Well-planned system will remain there. But I believe we are replacing some of the functionalities functionality from EWDP to IBP.
+
+Hector Palacios:
+Yeah, but this is not the first time that a new series raising this point. Today we have two users raising this point and then like one month ago another guy was saying but we already do this on this system. Are we going to do double work? Are you going to replace? It's like it's not completely clear what we are trying to do here.
+
+Arun Singh:
+Yeah, so I agree. So like how give them demo right we won't be able to come on a single conclusion until unless the management team you know send a clear communication that this is the IBP system for your forecasting then they will come
+
+Hector Palacios:
+up with some single logic else this will be never ending man that's why we need to ask him are you sure of this decision because they also told told us. I think that there are other guys doing the same project like EWDP phase 2 and you are doing this, the same questions. So imagine that we are working in parallel with another team that is trying to do the same. Like that would be like ridiculous.
+
+UNKNOWN_SPEAKER:
+Yes, exactly.
+
+Arun Singh:
+I agree. So that clear communication has to be sent. Like what planner has In this system, I don't manage my device to take care of that.
+
+UNKNOWN_SPEAKER:
+Yeah. Okay. So that's either. Yeah.
+
+Hector Palacios:
+Is it safe on the main bone?
+
+UNKNOWN_SPEAKER:
+Right.
+
+Hector Palacios:
+So in some cases you have, uh, I put two examples in that moment. We're not configuring just a minute.
+
+Bastian Osorio:
+Just a comment. These, these master data is, is absolutely nonstandard. It's costume. They created from scratch. This doesn't exist in IVP as it is right now, OK? I mean, it exists, but not in the standard.
+
+Pelayo Fernandez:
+OK, got it.
+
+Hector Palacios:
+All right, so we have the VOM codes that will exist on SAP. We have the VOM type that everything here should come from SAP. It should have the OCD codes, like the basic ones, right? And this is the concatenation, OCD code. The plan is going to be at this code from their system in the integration. And then we have for the WH wellhead, we have the wellhead code, right? For the one that is DCE, we have the additional completion code here, but not the others because the others are not bringing information here.
+
+ They are just additional. They are generic. It depends on this one, sorry. Here we have the well information that we are checking on this particular well. You know, this well has this wellhead code and this additional completion code and the bone item for that one. So then we have a lot of technical metadata that they want to see. For example, the bonehead well, we would take it to the well level.
+
+ So we do a join. We say, look for all the wells that are related to the wellhead one and assign this bone code for the DCE. Look for all the way. All right.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+You show to us how you build that. Oh, let me look for that. That is a secret.
+
+Hector Palacios:
+We need to pay for that.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Hector Palacios:
+It's expensive there. That's the charge per hour that I have. Yesterday was teaching. Didn't believe that we could do that. We could do this, but we were able to.
+
+UNKNOWN_SPEAKER:
+Elayo, you will be introduced to Khalid, I believe?
+
+Pelayo Fernandez:
+Yeah, we're supposed to have a meeting at 1.15. But they cancel it so I'm not sure when are we going to have it.
+
+Bastian Osorio:
+I don't know why he wants to meet you.
+
+Pelayo Fernandez:
+It's just politics. I hope that they know that they are just starting.
+
+UNKNOWN_SPEAKER:
+Let's check that.
+
+Hector Palacios:
+I hope that they are not expecting you to be like an expert.
+
+Pelayo Fernandez:
+I hope so too.
+
+Hector Palacios:
+All right, so let me show you what we did here. You need to show which master data you are going to join. So basically, it's like a blue cup. It's that. Not more than that. On the VLOOKUP, you have the information at the well level. And from the BOM, you need to cross with the well head. In this case, this is why I was saying last year that we were crossing with the well tie, with the well field, with the well head.
+
+
+
+Bastian Osorio:
+So here, customer. OK. Let customer field is equal to MRO BOM header.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So you are saying basically. Take from the customer's data, all the customers that they have this WellHead1, and you're crossing with this BOM, right? So basically you are saying, okay, all these customers that are related with the WellHead1, with the WellFear, with the WellType, will assign this BOM code, you know? So basically that's the logic. We are saying like that this is what we are doing is this is the joint parameters we say that the bone here the well head in this table needs to be equal to the well head in this other table in the customer the same for the field the same for the field type the well type so you have these three conditions yeah now we need to change it to just one because based on what we saw in the section seems to be just one unless then the next section they say that no for for option we do it otherwise and do you need to run a job to generate the virtual or is it real time real time yeah real time so that means that today they change something on the master so the the obligation is this one they they are here on the master data so far we haven't defined anything right so This is the case.
+
+ They should have a bomb, a main one, but only that. Now, if they come to the mass data, let me show you a planning view of the explosion.
+
+Arun Singh:
+So, Hector, when you say the main one, so does it mean like we are referring to OCDG like casing design?
+
+UNKNOWN_SPEAKER:
+Yeah, OCDG.
+
+Hector Palacios:
+So you see that bomb, right? Yeah.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+That is the main one. That should be always be there. Now we are thinking on the additional ones. When they put, when they decide now, okay, for this where we are going to use this wellhead or this addition completion code, then they put it on the master data. They automatically, uh, IVP will trigger the materials that we need.
+
+Bastian Osorio:
+No, no, no, but wait a second.
+
+Hector Palacios:
+So you have the virtual and can you add attributes to the data and load information there no not not load only bring information from other tables so in this virtual the customer is going to come only from the customer's
+
+Bastian Osorio:
+data because no no but I mean additional attributes from this if they exist on the customer or in the bone here yes yeah and what is the why why is the use of this I mean, it looks fine. You're making the relationship, but at the end you want to load something at this or you want to create a configure at this. No, that is what I was going to show you.
+
+Hector Palacios:
+You don't want to load it on the BOM tables. You want to load it on the customer in the world table. So you have this one, right? We have no idea what is going to be the completion code or the world head. In one moment in the future, we will know, right? And we will assign the core world and the core completion code. So this is the current scenario. This is the plan, but you should have also the main BOM.
+
+ We don't have it yet because we haven't loaded the data. But let me show you. I add the additional completion code here. I save. And then here, I refresh. And automatically, you have this material that you need from DCE. So you need to have one kefir for WH, one for DCE, for the main and one for the LineHangar17 code. An additional one will be the sum of everything. But for our logic, we need to separate it.
+
+ That is the discussion we had the other day. So now, for DCE, it's okay. What happens if now I want to assign the correct weld head. So now if you add the correct weld head, you will have also material requirements coming from that. This case is a bad example because we put the same material in the two cases, but the idea is that different materials. And the final is the sun? Yeah it's true yeah it's a sun but you know it's different materials.
+
+
+
+Bastian Osorio:
+How many wells plants we have?
+
+UNKNOWN_SPEAKER:
+Sorry well types?
+
+Hector Palacios:
+Sorry bomb types? Four so far. Well header, OCDG. Yeah this is what I have here. Well header. Which one is that in the key figure? In the key figure I have today, we'll hit in DCE for the example that I'm showing. I don't configure the other ones, but we haven't loaded data.
+
+Bastian Osorio:
+Okay, you need to load data in customer and in the BOM type.
+
+Hector Palacios:
+Yes. So from the user perspective, they will never see this data in the background.
+
+Bastian Osorio:
+only technical because we need to do different closings you know yeah and can you go back to the BOM okay then you have BOM parent BOM item yes and we will need to add the BOM type here as well
+
+Hector Palacios:
+that is will be related to the BOM code we can do that with a master data rule from the integration we will receive the information here for the BOM type when BOM code BOM type and all the other attributes here we bring the bump type as well, and that way we can work in the four different bumps. So from a solution perspective, I think that it's fine, you know?
+
+Bastian Osorio:
+The point is that- There is a chance that we will have to, I mean, I don't know what's going to happen with all these requirements, but there is a chance that you will have to, I guess, two options or split the BOM header to address completely different headers or just add additional attributes that will be valid only for a few BOM headers. No, it's not a big deal, man.
+
+Hector Palacios:
+I guess that the changes are going to be okay now. The world head depends only on the world head, not in the field, not in the world type. Remove these attributes, that's it. Or add additional attributes here, like the job type. But more than that, like changing just the basic of the mass data, assigning to the planning levels, but the structure of the four key fields, that's not going to change. The operators that we created, the internal mass data, the mass data rules, the key fields are going to stay the same.
+
+ We are going to do only fine-tunings. So I'm not scared care that they have different definitions. So the moment they say for onshore, we do it only depending on the wellhead. But for offshore, it depends on the wellhead and in the case in design, you know, different rules. That means that we need to start multiplying the victor and master data. And that is going to be awful. If we have four and they stay the same, great.
+
+ But if they start adding more and more conditions that you cannot consolidate, then you will need to start replicating again.
+
+UNKNOWN_SPEAKER:
+So yeah, it can be very bad.
+
+Hector Palacios:
+It can be very bad. So the point is that it seems to me that they are not able to create like general conditions. That's what I think.
+
+UNKNOWN_SPEAKER:
+Fine.
+
+Hector Palacios:
+But other than this, I don't know what else we need to do on drilling. I mean, we are kind of blocked right now. Arun, do you have anything to discuss? Any question?
+
+Arun Singh:
+I have only one point to make. The logic is working fine, but from the business standpoint, right? If they add more and more condition, right? If they don't come on a single ground for this warm logic, right? Then this will be a very complex, you know, thing to achieve.
+
+Hector Palacios:
+Yeah, we will not have only four bombs, we'll have like 10. Yeah, exactly.
+
+Arun Singh:
+Because based on, I think right now we have, let's say, four categories of we are trying to, you know, achieve. But if they try to, you know, come up with some different condition for the same category then this logic will not be appropriate man so yeah the this will work only if uh both onshore and offshore will have you
+
+Hector Palacios:
+know single logic for each category consolidate the magic word the key word in this whole project consolidate, homologate, have a single process. I don't know if that is possible, to be honest.
+
+UNKNOWN_SPEAKER:
+But let's see.
+
+Hector Palacios:
+I mean, for the meantime, the only thing that we can do, Arun, if we don't have any more work on the comments and drilling and so on, is just to put some data to what you already did. So if this is working now for all the four categories we have so far, we can show this. We can show the benefit. We also can show what is the drawback, what we are thinking right now. And that's it. And other than that, I don't know what we can do more than waiting for the data and definitions.
+
+
+
+Bastian Osorio:
+Guys, we need to go for lunch. But yeah, we're going to discuss more about this during the huddle. So see you there.
+
+UNKNOWN_SPEAKER:
+We're doing that. OK.
+
+Bastian Osorio:
+See you guys. Today and we need your input, Arun, there.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Pelayo Fernandez:
+Okay. Take care, guys. Bye.
+
