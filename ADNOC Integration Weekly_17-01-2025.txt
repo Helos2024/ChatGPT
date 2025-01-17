@@ -1,0 +1,527 @@
+Conference Room (Hector Palacios) - Speaker 2:
+Hey Sarah, how are you man? I'm doing well, I'm doing well. I'm here with Beate Bastien.
+
+Sagar Vora:
+Yeah, I have your voice hearing, that's all.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yeah, that's what we are trying to do at least, to build some community here. We are many here on Madrid, so at least me, and in the future when Saul came back because he went to Chile for this month, but on February he should be back. So at least we four and Rocio sometimes. So yeah, we're trying our best to come here.
+
+Sagar Vora:
+So it looks like no one is from Madrid.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Everyone is traveling or what? From here is Pelayo. Basti is going to stay here as well.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I'm staying here.
+
+Conference Room (Hector Palacios) - Speaker 2:
+I'm staying here sometimes. Saul is staying here for good probably. Rocio is because she's studying. So at least we have three now.
+
+Sagar Vora:
+I'm saying that basically you are not from Madrid, right?
+
+Conference Room (Hector Palacios) - Speaker 2:
+I'm from Chile, Bastián is from Chile and Saúl is from Venezuela. We are Latinos, man.
+
+Sagar Vora:
+Yeah, because even like when I had a word with Aira on the chat and even the Rocio, they all are like traveling. They are not basically from that place.
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, we are immigrants. She's from Argentina.
+
+UNKNOWN_SPEAKER:
+Yeah, correct.
+
+Conference Room (Hector Palacios) - Speaker 2:
+The only Spanish guys you have in this project is Pelayo. The new ones.
+
+UNKNOWN_SPEAKER:
+OK, OK.
+
+Sagar Vora:
+So you guys speak other language like Latin? No, no, no, we are just Spanish.
+
+Conference Room (Hector Palacios) - Speaker 2:
+We are not that great. We are not like you. It's not like one country, 1000 languages. It's just Spanish there.
+
+Sagar Vora:
+I think one dozen would be a lesson, but I think there are more than that. But again, I don't know all that.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ben, we are kind of short of time, so we wanted to check with you some things related to the storage location. We know that we cannot do anything from integration right now, but we can explore a little bit on this for Hannah. So our main concern is, for example, do we have the purchase orders at the storage location level, the same for stock transfer, If we have a good case in which we don't have the information, then we can try to discuss this again with AdNoc, because they are being very pushy with this.
+
+ But we don't like the idea. We have never liked the idea. So we need to understand which information we have and which information we don't have at this level. So, Rusty, do you want to share with something?
+
+UNKNOWN_SPEAKER:
+Yeah. No, no.
+
+Conference Room (Hector Palacios) - Speaker 1:
+We want to check because we were speaking with JGVT and it said basically. So the main challenge for us is the location source, because we need to find a way to define the location, the location source, but at storage location level. And we were speaking with chat GPT. And he mentioned that if we if you run the MRP at storage location, then you in the material master, you should you should find the information of storage location supply.
+
+ So, can you share your screen and show us for a few materials the material master?
+
+Sagar Vora:
+Okay, sure. So, which material master you want to see first, right? Yeah, let's go to the standard one or The extractor one?
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, the standard one. Let's go to this. This research will be nothing related to the extractors.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+But I doubt here. So here, which field or basically what we are searching in Material Master?
+
+Conference Room (Hector Palacios) - Speaker 1:
+It's called MRP area.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Basically we want to know if for certain storage location you have like a preferred storage location that is going to source it. What is like the supplier for the internal supplier for that specific storage location material. So I think that on the NRP area under the material master we should have that information. Not completely sure because we are ignorant on this but let's try to see if we have something but it's the I think it's not the matter it's the mercy you know material master in this uh data level okay you're
+
+Conference Room (Hector Palacios) - Speaker 1:
+a master right so much in the one that you have the Yeah, MRP type, MRP controller. But here we don't have storage location.
+
+Sagar Vora:
+Do we have storage location? Yeah, we have. Let's look for just one material.
+
+UNKNOWN_SPEAKER:
+Yeah. Any special procurement? Do you have something? Yeah.
+
+Sagar Vora:
+A special procurement we have, but it's empty here, so I think we need to take some more.
+
+UNKNOWN_SPEAKER:
+So what is the storage?
+
+Sagar Vora:
+OK, you check for one storage location. Yeah, I mean, I took only single material. Instead, I will put multiple.
+
+UNKNOWN_SPEAKER:
+Maybe we can call Vivek. I will try to call him.
+
+UNKNOWN_SPEAKER:
+Is empty?
+
+Sagar Vora:
+Yeah, most of the products is empty.
+
+UNKNOWN_SPEAKER:
+What if you change? But you don't.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No found values. No values found.
+
+UNKNOWN_SPEAKER:
+No, there are some.
+
+Sagar Vora:
+So here there are special documents. Set one. Your storage location here? Storage location, just a second. Hi Vivek, thank you for joining.
+
+Vivekanand Gajula:
+Okay, hi Vivek.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Vivek, so what we're trying to figure out is basically how to build the location source. So we understand that if you run the MRP at, if your MRP area is storage location, then that field, the special procurement should be other storage location. So thinking about that, I think we should be able to build the supply network, the location source, using this. And in this case, look for the plan 1202 for the storage location.
+
+ S002, we have the special procurement is set one but what if my question is now what if the storage what if the source is a different because I'm pretty sure that can happen that the source is another plant can be that can that be the case yeah of course can you help us to identify one of those examples because here I guess these two locations belong to the same plant isn't it belongs to different plants?
+
+
+
+Vivekanand Gajula:
+I think we need to check the configuration of Z1. Of what, sorry?
+
+UNKNOWN_SPEAKER:
+Yeah. Can you go to SPRO, Sagar? Yes.
+
+Sagar Vora:
+Click on that magnifying glass. Sorry, click on that spectacles. I'll do a control point. Just type special space procurement.
+
+UNKNOWN_SPEAKER:
+Type special space procurement. OK.
+
+Vivekanand Gajula:
+yeah the second one click on that execute icon yeah now can you click on that can you click on position at the bottom you have position no enter the plant what was the plant yeah click on that z1 on the top. It just says, I think we won't be able to identify from which s log to s log the moment is But in this case, special procurement is U, which means what? No, no. U is for stock transfer. The special procurement type on the top is Z1.
+
+ And this is what we were seeing in the MARC.
+
+Conference Room (Hector Palacios) - Speaker 1:
+So here, it only says storage. So what is the storage location in this?
+
+UNKNOWN_SPEAKER:
+What are we checking?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Because it said external procurement. External procurement for what? What is it? For what? Which storage location? This is what I was checking.
+
+Vivekanand Gajula:
+Generally what happens, you know. Whenever they move goods from one plant to another plant, the other plant is mentioned, you know, in the special procurement type. Yeah, but as as you know, this case is different, right? Because the moment is happening within the plant. Itself. So I was just checking, you know, if the other S-Log is specified over here or not. So I think that option, we don't have it over here.
+
+
+
+Conference Room (Hector Palacios) - Speaker 1:
+So only S-Log we have is. So we only have movement between, like within a plant.
+
+Vivekanand Gajula:
+Yeah, within a plant. But it is not telling us, you know, between which S-Logs. So I think that intelligence, let me show you one doc. Let me share one.
+
+Conference Room (Hector Palacios) - Speaker 1:
+But here is a special procurement type said one okay External procurement and you have the plan what? I don't understand. What are you showing here?
+
+Vivekanand Gajula:
+No, no, see what I was saying is that when you see this is the target plant Okay, well zero two is a target plant But if the moment would have happened, you know between target plant and the source plant Then at the bottom if you see you have issuing plant.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Can you see that? Yeah, yeah, so there they mention you know what is the source plant you know for that you look in the store store stock traffic says purchase requisition from plant to MRP area period.
+
+Vivekanand Gajula:
+So so this is happening between sorry within the same plant itself. So so we won't get it from here, you know. For that I think we need to we need to look at the look at the you know stock transfer you know which is an AKPO table I will show you one document okay I think I don't lose it Let me share that with Sagar. Look, supply in plan 1202 storage location is what we are doing. Yeah, let me let me show you something.
+
+ Sagar, can you open this STU in ME23? Yeah, ME23 and can you can you open this function? Yeah, I've said I've shared you know one document.
+
+UNKNOWN_SPEAKER:
+Can you just open that document? And the group chat.
+
+Vivekanand Gajula:
+I don't care. No, no, you had that, those two boxes, no? Next to that.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+Or PO? No, it's purchase order.
+
+UNKNOWN_SPEAKER:
+Enter.
+
+Vivekanand Gajula:
+Yeah, so one second. Can you click on that personal setting on the top? You have that display key, no? Can you click on that display key? Yeah. So scroll to the right.
+
+UNKNOWN_SPEAKER:
+One second.
+
+Vivekanand Gajula:
+Pashtun, you are there, right? Yes. Yeah, so now if you look at the supplying plan on the top, it is what 1201 it's 1201 and the receiving plant is also 1201 okay now this is a transport stock transportation order okay correct so so it's a ST only right when you move the goods between two internal locations then it's a ST always right then you have this storage location PM Now, Sagar, can you scroll to the right?
+
+ Right here, right? No, no, this one?
+
+Sagar Vora:
+No, no, not there. Aha, here.
+
+Vivekanand Gajula:
+OK. Yeah, in the item here.
+
+UNKNOWN_SPEAKER:
+Scroll to the right.
+
+Vivekanand Gajula:
+Yeah, here you have the issuing storage location. So the movement is happening between S009 and PALAS within plant 1201. And what is the What is the receiving storage location? Yeah, scroll to the left. It is PLAS.
+
+Conference Room (Hector Palacios) - Speaker 1:
+OK. So do you think using this information, we should be able to create the location source?
+
+Vivekanand Gajula:
+Yeah, we should, but that's a separate thing. But the main question is, should we do it or not? Are we going to go to that level?
+
+Conference Room (Hector Palacios) - Speaker 1:
+The thing is that the main point, Vivek, is they are running the MRP at MRP. The MRP is storage location.
+
+Vivekanand Gajula:
+They're not working at plan level. Yeah, that I get it. But are we going to have all the demand the reservations this and that at that level, at that granular level?
+
+Conference Room (Hector Palacios) - Speaker 1:
+That's the million-dollar question, literally.
+
+Vivekanand Gajula:
+Because without that, then how are we going to generate any supply plan?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yeah, that is for sure. I know that the reservations are at that level, for sure. Sahar, can you mute yourself for a minute? Sorry. Thank you. Reservations, for example, are at the storage location level, but we were checking the other day with Zagra, I think that the information for work orders, like maintenance, is not at the storage location level. That's a complication, so we need to see if we will have an option or not.
+
+ I think that maybe we need to have a call with the GPMG team, not Rahul, but we can bring Kunal and Cushbo, they are experts on S4HANA, so they can tell us us, help us like you are doing right now, but maybe in a deeper level as well for these cases that we don't know. And the point is that they are running today, as Vashti said, they are running everything at the MRP, and at the MRP run they have it by storage location, so the expectation is to continue at the same time.
+
+ If we do it at the plant level on IVP, then the question is how we raise PRs at the storage location level, you know? It's like, can we do then later on is for HANA in any way? Can we do a MRP run at that MRP run to convert? I don't know. No, no, I mean that that is not even logical, right?
+
+Vivekanand Gajula:
+For example, you generate a PR of 100, you know, at the plant level. And if that plant has, you know, four storage locations, then on what basis you will tell that at this storage location, you know, I would hope that a combination of material and plant, it will be equivalent to one specific
+
+Conference Room (Hector Palacios) - Speaker 2:
+storage location. I don't know why they would have different storage location for the same material, but maybe they have, so that's the complication.
+
+Vivekanand Gajula:
+They have, no, just now we saw one example, no?
+
+Conference Room (Hector Palacios) - Speaker 2:
+They have the same material, okay, we saw the example, so then...
+
+Vivekanand Gajula:
+But can we check, like... There is a screen that...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Area. Yeah, there is a screen in I think the material master called MRP area which has all the information for the MRP run.
+
+UNKNOWN_SPEAKER:
+Can we check that screen?
+
+Conference Room (Hector Palacios) - Speaker 1:
+It has the safety stock, it has the procurement time, it has all that information. And I think it was MRP2 or something like that. Yeah, material master you mean.
+
+Conference Room (Hector Palacios) - Speaker 2:
+And then they are expecting also Vivek to have that information at that level, you know, like the safety stock, reorder point, you can have it at the two levels, at the plant level and at the storage.
+
+Vivekanand Gajula:
+Sagar, can you enter the same material? I mean from that STO you copy that material.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+You copy that and put that in 1201. In which 1201 plan yeah put it put it over here. Now you select those MRP views you know. 1 to 4.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Is the MRP 2?
+
+Vivekanand Gajula:
+Yeah, now put Go to MRP2.
+
+UNKNOWN_SPEAKER:
+See at the bottom it says MRP area like this.
+
+Vivekanand Gajula:
+Can you click on that MRP area? Go to MRP1. Yeah, at the bottom you have MRP1. Yeah, so there are three MRP areas in this. Yeah, we have C++, S009. Can you select one? Yeah, see? Now the information is at the MRP area level. Yeah.
+
+Conference Room (Hector Palacios) - Speaker 1:
+And in this case, MRP type, PD, what it means, PD?
+
+Vivekanand Gajula:
+Means that they are not using reorder point planning. Its forecast based plan. I don't know if they have forecast or not.
+
+Conference Room (Hector Palacios) - Speaker 2:
+And the special procurement?
+
+Vivekanand Gajula:
+No, I think that is based on reservations.
+
+UNKNOWN_SPEAKER:
+And the special procurement?
+
+Vivekanand Gajula:
+Special procurement, go to MRP2. It should be Z1.
+
+UNKNOWN_SPEAKER:
+Yeah, Z1.
+
+Vivekanand Gajula:
+But it is external.
+
+UNKNOWN_SPEAKER:
+Yeah, external.
+
+Conference Room (Hector Palacios) - Speaker 1:
+But we don't have...
+
+Vivekanand Gajula:
+What do you mean external? Z1 means that is happening within the plant like that. In storage location for EP, what it means that? See, there are two things, right? I mean, one is storage location. Storage location is C-S-A-L. This is my understanding. And for MRP area, they just added M, you know, as a prefix.
+
+Conference Room (Hector Palacios) - Speaker 1:
+but the storage location is what is the C-A-S that's the storage location. Correct. And who's sourcing?
+
+Vivekanand Gajula:
+No, here I think we'll not get that information from where you know like between which slots you know the moment is happening. That I think. But my question is, I don't know how that is decided.
+
+Conference Room (Hector Palacios) - Speaker 1:
+You know, if we are running, if they're running DMRP at this level, then there should be an information related. It can be empty, but there should be information about how this material is supplied to this.
+
+Vivekanand Gajula:
+Yeah, your question is, you know, valid. That's why what I was telling is, can we go to that STU and check, you know, who created that STU? Is it created through a background user ID? Or somebody created it manually? Can you go to that STO Sagar? We were saying that there is plenty to work on here.
+
+Conference Room (Hector Palacios) - Speaker 1:
+There's plenty to research instead of just jumping into a solution.
+
+Vivekanand Gajula:
+Can you go to, maybe I don't know where it is, but can you go to delivery at the bottom or do one thing you know just copy this stu number and put this in ee ee double ko table this
+
+Conference Room (Hector Palacios) - Speaker 2:
+guy is the sub guru vivek yeah no no It's a big world, SAP.
+
+Vivekanand Gajula:
+This MRP area thing, MRP area planning, I never saw. I never did it before. Yeah, who created this? Yeah, I think it's a background user only. How it created STO, that I don't know. Like, how it got to know that the movement should happen between those two storage locations. So that is something which we need to ask. Know an MRP expert or maybe someone who is uh expert of MMA internally in GoSCM we can ask someone no but you you see that the the expectation then if they we do the same they don't want to lose
+
+Conference Room (Hector Palacios) - Speaker 2:
+this we are replacing the MRP run by a supply planning so they are expecting this to happen in the same way yeah I think there's no no way around yeah it seems and we'll have to face it.
+
+UNKNOWN_SPEAKER:
+Let's focus on how to get information.
+
+Conference Room (Hector Palacios) - Speaker 2:
+If we have some dumb things like to move the information in the same plant, then let's do it. It's just early time zero, I guess. It's more information, that's for sure.
+
+Vivekanand Gajula:
+But it's not just supply planning, no? We also need to think from the inventory standpoint as well, right?
+
+Conference Room (Hector Palacios) - Speaker 1:
+But I understand in the...
+
+UNKNOWN_SPEAKER:
+And if we go to that level then...
+
+Conference Room (Hector Palacios) - Speaker 1:
+In the MB51, that's what Chattopadhyay told us, we can find the consumptions at land level, but also at source location level.
+
+UNKNOWN_SPEAKER:
+MB51.
+
+Vivekanand Gajula:
+I think it is an MB 21, I guess.
+
+UNKNOWN_SPEAKER:
+Material reservation. OK.
+
+Vivekanand Gajula:
+51. 51 is what?
+
+UNKNOWN_SPEAKER:
+Material document list.
+
+Vivekanand Gajula:
+Let's check. I think this is GI list, I guess. I think in RESB table, we can check. That is reservation table.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Let's check that one. Which one is it?
+
+Vivekanand Gajula:
+Re SB. Yeah, just yeah, we have a stock. This one is source for the for the extractor.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yeah, yeah, correct.
+
+Vivekanand Gajula:
+If we have a slot. No, no, don't put it. Just put the materials either.
+
+Sagar Vora:
+Yeah, I'm talking about video.
+
+Vivekanand Gajula:
+Yeah, it's even though this is still what you're putting in this. OK, OK. Here you have a class and it's double zero nine. There you go.
+
+Conference Room (Hector Palacios) - Speaker 1:
+So I guess the above team should be able to get this one in the extractor, isn't it?
+
+UNKNOWN_SPEAKER:
+These are reservations, right?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yeah, these are reservations.
+
+Vivekanand Gajula:
+But I think this is what we are thinking, no?
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, we are looking for the information about the work orders that can be corrective, preventive. I don't know if here you can differentiate corrective from preventive.
+
+UNKNOWN_SPEAKER:
+This reservation should come from an order. Yeah, there you have it.
+
+Vivekanand Gajula:
+And that order should something like preventive yeah yeah then I don't know what is the table I think there is one without order so I guess that was manual so manual ones also we will bring no one of them didn't have an order so I guess it's because of that See, we have corrective and third one is predictive, I guess. Yeah, so we will need to do a join between these two tables to get the information we want.
+
+
+
+Conference Room (Hector Palacios) - Speaker 1:
+But I think the extractor does it by itself. No, it doesn't.
+
+Conference Room (Hector Palacios) - Speaker 2:
+But it's not at the storage location, so we will need to check in which place. No, no, no, of course.
+
+Conference Room (Hector Palacios) - Speaker 1:
+What I said is the above consultant needs to...
+
+Conference Room (Hector Palacios) - Speaker 2:
+inside. Yeah.
+
+Conference Room (Hector Palacios) - Speaker 1:
+We need to put the storage, but Reynaldo already did it for the plant.
+
+Conference Room (Hector Palacios) - Speaker 2:
+For the plant, but this is a little more complicated. So, yeah, I know. Maybe we can have a conversation with Isabel. Let's just meet with her.
+
+Conference Room (Hector Palacios) - Speaker 1:
+But let's schedule a meeting right away. Can you schedule the meeting? Because I need to meet with, not now, I mean schedule the meeting now.
+
+Conference Room (Hector Palacios) - Speaker 2:
+For, yeah, for next week. Yeah, for Monday maybe. You can ask Isabel to have the meeting with us.
+
+Vivekanand Gajula:
+Okay, thank you guys. Just one point, you know? Yeah. I think we need to check with someone, you know, like how to identify, how to identify, you know, between which SLOGs, you know, the moments are happening, like how MRP understands that. So that is something which we need to, we need to, you know, do a research.
+
+Conference Room (Hector Palacios) - Speaker 1:
+But what, again, Chachi Bidit told us, I don't take this for true, but it says that when you change the MRP area, by default, it's plant. But you can change it. And if you change it to storage location, it means that all the fields that once worked for plant now are valid for storage locations. So basically, they're saying it's the same.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Maybe we can check.
+
+Conference Room (Hector Palacios) - Speaker 1:
+The thing is that, let's be honest guys, even when we have the MRP, when we work at plant, we don't have the supply chain network. It has never been, I mean, it's rarely the case where when we have the, we always define rules as a table or that has been my experience.
+
+Vivekanand Gajula:
+I don't know for you guys. I think I have one example.
+
+Conference Room (Hector Palacios) - Speaker 2:
+But we have a good case. I mean, whatever MRT run we are having, there should be a supply chain network behind, right? A definition. It needs to be somewhere. And we know that they have multisource LTPA, so they also have that information on multisource allocation. Let's check whether if this has been done on the MRP area and if we can harvest this in a way. Because what we know from the structure is that we – yes, we can generate a supply chain network, but it's single source.
+
+
+
+Vivekanand Gajula:
+It's not multisource. So, that means that we need to do an adjustment here. Let's check this. I don't know. I don't know if those documents exist. This is between two locations, you know. Between two different ad-hoc locations. But in SAP, whenever the moment happens between two locations, it happens through a SPK only, special document type. But I don't know what I'll do.
+
+UNKNOWN_SPEAKER:
+It's not there.
+
+Vivekanand Gajula:
+I don't know from where he pulled.
+
+UNKNOWN_SPEAKER:
+Check this one.
+
+Sagar Vora:
+It's really too big. Check the other one.
+
+Vivekanand Gajula:
+Okay, then you leave it. I don't know from where. Check any other order No, nothing. Maybe I will try to find one example. But I think we need to find out how to create supply chain. Anything else, guys? You are on mute. Sorry, man, I was learning something with Vashti.
+
+Conference Room (Hector Palacios) - Speaker 2:
+We will schedule a meeting to review this internally at 4.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Vivekanand Gajula:
+Vashti, so you're just talking about an internal meeting to check with Isabel if we can do that joint that we were discussing before. We also have to have the review of demand and inventory Okay, so, guys, let's do the following. First, one is the input from demand.
+
+Conference Room (Hector Palacios) - Speaker 2:
+That is the most important one, usually. Let's have a session with Isabel to understand how we can do the join to get the information from the reservations, but joining with the work order so we can differentiate between preventive and corrective. That is important. And then let's have maybe another one with Gushpo, Kunal, and maybe if we can also bring Rahul. Maybe with Rahul as well to check if we can get the supply chain network from anywhere as well.
+
+ Because the MRP run is using something, so let's understand what it's using.
+
+UNKNOWN_SPEAKER:
+That's it.
+
+Vivekanand Gajula:
+So it's a couple of meetings. Let's try to use the additional resources on this. I'll put it on Tuesday because Monday we are fully booked. Okay, perfect. I don't know if you have any other comment, guys. No, nothing from my side.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Thank you, Eric. Thank you, guys. Really, thank you for joining in a flight. Thank you, Sarah. Thank you.
+
+Vivekanand Gajula:
+Have a nice weekend, guys. Thank you, guys. Bye-bye.
+
+UNKNOWN_SPEAKER:
+Bye!
+
