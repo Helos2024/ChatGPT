@@ -1,0 +1,312 @@
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, I don't. But I could not.
+
+UNKNOWN_SPEAKER:
+Yeah, we can.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, come on.
+
+Kunal Sheth (ADNOC Group D&CS):
+I could not wait for someone. No, I think we. Yeah, yeah, so Khalid the point regarding the Excel add-in which you shared couple of point which we need to refer back to the risk team so that is updated and then we will share with you so that you can take it forward with the risk and compliance team. Please please share that with me as soon as possible. Related to the SDD. So Sagar and Kaiser was working on this.
+
+ So Sagar, today you have raised a data store ticket to SAP, right?
+
+Sagar Vora (ADNOC Group D&CS):
+With high priority. Correct. So what happened like today morning when I started working, so the IBP data store was not working. So that's why I sent that to Kaiser and Mustafa. So we guys connected and we found, means I found one node We tried to implement the steps, but that didn't resolve the issue. So that's why there is a high priority.
+
+Kunal Sheth (ADNOC Group D&CS):
+And this data store is connecting with the development system, right?
+
+UNKNOWN_SPEAKER:
+Yeah, CCF system.
+
+Kunal Sheth (ADNOC Group D&CS):
+Which is Sandbox or it's a development?
+
+Sagar Vora (ADNOC Group D&CS):
+No, no, IBP CCF system, Sandbox.
+
+Kunal Sheth (ADNOC Group D&CS):
+OK, IBP Sandbox system.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So Sagar this was working before and now it's not working?
+
+Sagar Vora (ADNOC Group D&CS):
+Yeah till yesterday it was working fine. So from today morning somehow means it started throwing error. So we tried to perform like we found one SAP node where exact same error was mentioned and they gave the resolution and we tried the same. But somehow we were facing the same issue. So I mentioned everything on the SAP ticket. So Sagar, does it impact the existing work we are doing in terms of integration or in terms of building system?
+
+ Yes, we cannot load for basically the IBP data store is not working so we cannot import the target table and we cannot load any data to IBP via CIDS.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So what is the impact of this activities build activities means we cannot do the development any build integration we cannot create an integration can you send an email explaining the problem the action the possible resolution time and the impact of this internally to the project team because everyone should be aware of this is something which has now stopped which was working and it impacts the build activity we are doing because next week of 27th we have this unit testing right so for unit testing if the if the functional team is doing build and if their work is getting impacted by this this should be raised internally at least so that everyone is aware as well as with ad-hoc team so that they are also aware or probably you can just send a note to ad-hoc team based upon what you discuss internally.
+
+ Keep Khalid, me, everyone posted about what's the issue, what's the resolution action, what's the impact, and when we expect the problem to be solved. And if you need support from SAP, let's raise this immediately with Paola, so that she's aware of that this is an important issue which needs to be addressed immediately.
+
+Sagar Vora (ADNOC Group D&CS):
+OK. So to the ad hoc team, meaning to whom?
+
+Conference Room (Patel, Rahul) - Speaker 2:
+to the project team, which includes Khalid. Okay, okay.
+
+Sagar Vora (ADNOC Group D&CS):
+Vignesh Khalid.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Vignesh Khalid, Kaisar, Sensitizen. Infrastructure-related issue, Kaisar should be also in the loop, so that whatever discussion you had in the morning, based upon that, let's have this communication between ADNAC and the project team so that, and then request you to raise this immediately to Paola, considering today is Friday, we may have support over the weekend. So if we did it right now, probably we'll get immediate priority on the support.
+
+
+
+Sagar Vora (ADNOC Group D&CS):
+Yeah, I already did this. I will send the same ticket.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+Yeah, yeah, yeah. So Sagar, then because of this activity, the the The security essentially did work is also getting impacted.
+
+Sagar Vora (ADNOC Group D&CS):
+No, no, that will not be impacted. So yeah, one of the resolution which we can try, currently, IBP we are doing is via basic authentication, username, password. So we were already planning to do with certificate-based authentication. So might be like once we perform all the steps and we can recheck, so that can also resolve the issue, like we can try that option also. In the meantime, it means, Now SAP replies back.
+
+
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So what is the status on this action for SDD where we wanted to SAP or Paola had recommended the steps for SNC. So are we able to execute that?
+
+Sagar Vora (ADNOC Group D&CS):
+Do we know when we will be able to close that activity and get the confirmation that certificate-based authentication is working? So yeah. I and Mustafa have cleared the steps for the FMP. But now the plan is like first we will complete the IBP certificate-based authentication. For that, a certificate is required, P12 formal certificate. I think Kaiser can update on that by when we can have that certificate ready.
+
+ Once it is ready, then we can close the IBP-related steps. And once that is done, Then we will proceed with the SNC. So Kaiser, if you can help us with the dates by when we can target to close it.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Yeah, so I'm expecting today. I don't know. She is in some workshop. I mean, the person who was actually supporting us. In this regard so she she is in a workshop she said she'll come back and then do it so maybe well let's let's assume that we'll get it by end of the day saga certificate we're talking a day back with with you mean Khalid where the request is approved is under deployment yeah that's right that's the public certificate correct okay so what we are target is we are targeting to actually close this certificate based authentication between the DSA and IVP first.
+
+ And then we will take up the second connection between DSA and S4R. So that's the plan here.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So that means that unless we do not close that the other one DSN as for HANA, our SDD will be still in the hold stage, right? We will not get, let's say, full approval from the center.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+A question here, Kaisar, is that if we know that we are going to execute this activity and if we know SAP has means work which means can we update the STD with this steps and get the confirmation while we
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+are working on it or we'll have to finish the work and then get the approval on STD no no actually we can update that we can update the timelines you know to fix this by let's say three months or six months and then we can get an approval get an approval on the STD document but what they will do is the compliance team they will raise an exception in the system yeah and they will put the ownership to Khalid and after three months if it is not resolved then they'll keep following up.
+
+ I think they will raise a risk right and then that risk has to be mitigated with a risk exception.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+I think next week probably we should talk to do this activity means to align with the compliance team and provide them our feedback and take the exception from them.
+
+UNKNOWN_SPEAKER:
+Yeah, let's not if we know the solution.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Yeah, so by most likely by Monday or Tuesday, we should be able to get the out outcome of this connectivity. So if there are any gaps again then you know we will reach out to SAP but the problem is I mean you know you're going with the risk exception it will again take some time actually so the compliance team they have to log it they have to get the approvals from their you know from their So, better we target to close this next week.
+
+ Both the connections?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, both the connections.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+To IBP and DSA to S4 HANA. We should target to close both by next week.
+
+Kunal Sheth (ADNOC Group D&CS):
+But it will only resolve one point, Kaisar. That is, basically, Santam has raised two points. And this is one of the point that is certificate-based authentication. And second one is, in CIDS, we need to enable the single sign-on, similar to IBP. So that is also one of the risks he has raised. So what Santami said that he will be going to raise two risks, and we need to provide a risk mitigation plan with the timeline.
+
+ So again, we need to follow the long process. So instead of that, if you are able to complete this activity, and parallelly we will also update the document. So by that time we will be able to get an approval from Xanthamys.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+So I'm not sure about the second one. What is that single sign on thing?
+
+Kunal Sheth (ADNOC Group D&CS):
+See in IBP if you remember, we have activated the Azure IDP to login into IBP, but in CIDS currently we are directly entering the username and password to log on to CIDS to perform the data store activity for which Sagar has raised a ticket. So for that also, if we'll be able to enable the single sign on, then Senthamesh is okay to sign off that part.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+But do we have the action plan or do we do we know the required actions to achieve that single sign on?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah. So SAP has already provided a link where we can find all this detail how to perform this activity. So Sagar and Rinaldo need to align with you. Because together we need to perform this activity and complete and then once we are done then we can also inform to Sintamys that this activity is completed and in parallel we also updated the HDD with the single sign-on part
+
+UNKNOWN_SPEAKER:
+similar to IBP.
+
+Conference Room (Patel, Rahul) - Speaker 2:
+So Kaiser and Kunal the only point here with respect to single sign-on is that if you enable the single sign-on then user ID password would not be required and I understand and further you can correct if I'm wrong we'll need to have additional data store created for every non-prod system will initiate the testing here onwards like development quality and other other non-prod system and for that activity we still need the user id password so my understanding is still all the activity related non-prod is complete we cannot complete the single sign-on activity is this understanding correct Sagar yes yeah I mean I was also having same understanding means what I understood from that call like we will do this
+
+Sagar Vora (ADNOC Group D&CS):
+single sign-on before the goal I would like in non-production and production box.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+So Kaiser what SAP has said is that this can be single sign-on can be activated right now the only way to log into IBP is to user ID and password this is required for setting up the different data stores for different non-prod and product servers, right? But once you do that, we can activate a single sign-on as a part of cutover activity. We can mention this as a cutover activity saying that step one is to configure system with user ID, and that would be done by the consultant's ID.
+
+ And then eventually, the single sign-on will be activated, which means from an AdNoc perspective, no one requires to put up a user ID and password. Now, in future, If some changes has to be done on new data store or new activities to be done on DSA server configuration, SAP is in process of defining a technical ID for that activity. That solution is not yet released from SAP, but the technical ID will take up this consultant's role of a short-term technical ID would be created which will be used for configuring the server, if any new data store requirement comes in future, and then the technical ID will be closed.
+
+ So that's the complete solution which was discussed along with Sintamys in the call with SAP, and Sintamys had agreed towards this solution. So essentially, my understanding is that we should update the SDD with this solution path. Step one, configure the servers with the consultant's ID. Step two, as part of the cutover, enable the SSO before go-live. Step three, as a long-term future plan, SAP's solution of using technical ID will mitigate the risk incomplete.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+Senthamiz was aligned to this solution. Rahul, just to clarify the last point, what understood from the Rinaldo when I discussed the same point that see one activity we already set up with the help of SAP ECS team to connect CIDS with DSA agent for the non-prod environment that we have done for the sandbox similarly let's say we are moving from development to quality so in that case we do not require technical user for setting up the same thing because it is already established only agent set need to connect with and that can be done separately that that won't be a challenge the only thing is now data store part which we need to do it on CIDS for individual non-prod system so that can be done through single sign-on user that won't require technical user to set up with.
+
+
+
+Sagar Vora (ADNOC Group D&CS):
+Kunal can you repeat again because like if we want to log into DSA right for any any flat file related or any to upload any certificate within a GUI the DSA GUI which is there on the agent so for
+
+Kunal Sheth (ADNOC Group D&CS):
+that the DSA agent which we have done the activity with the SAP ECS team last time wherein we have used your ID to set it up right so that is a non-prod environment now we have only one non-prod for the DSA and CIDS but we have multiple system for the S400 Now, to connect non-product CIDs as well as DSA with multiple S4 HANA, we only need to set up the agent part. What I understood from the Rinaldo, we did not to perform the same activity with SAP ECS team because that connection we have already established with your ID.
+
+ But going forward, we need to use a technical user ID, which SAP is planning to provide in future. And then automatically it will get automatically block what we understood from the Paula. Now, the data store part. So currently, what we have done is we have connected CIDS with the sandbox S4 HANA system, right? So that is one data store. Similarly, whenever we are moving to build, we need to create a data store for the dev environment.
+
+ Same for quality. So that activity, we need not to perform DS aside. That will perform on CIDS side. And that we can do it via single sign-on. We did not to use a technical user perform that activity. So that is the point which I understood from Rinaldo and same we can do it for the single sign on also.
+
+Sagar Vora (ADNOC Group D&CS):
+Yeah, for S4 HANA that is fine, but for IVP we have to perform means we have to download and upload the certificates. So currently we have done a CCF, only the CCF system, CCF instance I would say, but we have a CCF6 and CF7 also that will be connected to same non-float CIDS system.
+
+Kunal Sheth (ADNOC Group D&CS):
+Right, so that is the we need between both on the cloud environment that is IPP as well as CIDS. So I know anyway we are using the single sign on.
+
+UNKNOWN_SPEAKER:
+But certificates are usually generated on the DSL.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Team, let's align this internally Chagar and Kunal, but the idea here is that from an SDD perspective. We need we need to whatever we discuss with SAP and send them is we need to make sure that that gets documented in STD. And this point gets resolved as we discussed with SAP. Now, the only point remains is when do we enable SSO, whether we can enable SSO now, or whether it can become part of the cutover activity.
+
+ Kunal, Sagar, let's align this internally.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+But then the steps remains the same. Yeah. But see, you don't have to enable the SSO in production. Then close that risk exception or close the SSD approval what we can do is whatever agreement we have with the we had with the compliance team we can implement in the development system and then tell them the same will be done in the production system so they'll approve the SDD document.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Agreed agreed so Kaiser my point is also the same that we documented it is decisions this is our approach and if they've aligned on the approach they'll approve right yeah yeah exactly yes yes yeah then we parallelly uh you know work on the implementation of yeah so so my understanding let me rephrase again there are two points which are related to which are open related to std one we talked about this sso approach this is more of a documentation we've already aligned on the actions uh but the documentation has to be updated in std so that the centum is can review and confirm our approach.
+
+ And based upon it, approve the SDT. Now, second point, what we talked about using the certificate-based authentication, what Kaiser mentioned is we will be able to close the activity by next week. And if we are able to close the activity, then we don't need to raise an exception for it. And let's update the SDT with the actuals and then get approval. So essentially, which means by end of next week, we should be in a position to get the approval approval on STD from the compliance team.
+
+
+
+UNKNOWN_SPEAKER:
+Right. Yeah. Sure. So in parallel, we'll start updating the STD document.
+
+Kunal Sheth (ADNOC Group D&CS):
+And the single sign-on, sorry, the SNC part we'll be able to complete by next week. So at least one part we'll be able to test that it is perfectly working fine. And SSO, we will start with the development system as Kaiser has confirmed.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Yeah. Exactly. So that takes care of STD. Sagar, we've talked about the ticket with SAP, which means you'll send this notification, send this communication internally so that everyone is aware of this important issue. And we'll raise this with Paula, with SAP, so that one point gets addressed. Now, one more point I want to discuss is now we have received approval from Kunal on user IDs for development environment.
+
+ So Khalid, do we need to follow up with anything? Or the infrastructure team allocated will give us the ideas.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, actually I just sent an email to Sagar to allocate one resource to work with us, but I saw Sagar is on leave. So we, this is Sagar Kisani. Yeah, he has to allocate or someone from his team. So in case he's not there, we can, let's see. Probably if it's not today then on monday we need to follow up that's one thing second thing also I just saw that kamil doesn't haven't approved the system user uh so yeah yeah I think that for that is a separate approval or uh I don't know maybe kasar you know what is it sorry so so for uh to get access to the development environment The project team provided a sheet of users.
+
+ And in that user list, they have also mentioned one system user. Okay, I think that's required for the connectivity or interface. So Kunal has provided access to all the project team member, but he hasn't provided approval for the system user. So I'm assuming that there is a separate process for that or what for the system user.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+for system user no there is no separate process so if you want to include it you can include it but you have to provide a proper justification why you need that user okay okay I see uh yeah that do
+
+Conference Room (Patel, Rahul) - Speaker 1:
+we have the system user in uh sandbox and we we have the id we have the roles identified and it's working so we when we provided the list of user we have given this reference of sandbox system which was created in sandbox yeah you can give a reference probably we need to talk to Kunal again for his approval or Kaisar we need approval from Kunal for system user as well no no if it is part of your list then it is fine then he specifically mentioned that system user is not approved in the email.
+
+
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+But there is no separate process, I don't know. I am not sure if there is any separate process. Maybe you. Have to discuss with Sagar first. Sagar KC Naini.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+OK, so let's call it then connect with Sagar in the on on Monday because we need his support. For other users. So we'll check with him on system user requirement as well.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Probably he'll be aware of what are the steps there. Right, right. OK. He's off. OK. He'll be back 20th January. Yeah. Or he has designated Shagufta and Vineet.
+
+UNKNOWN_SPEAKER:
+So we can also discuss with Shagufta and Vineet. But the right person is Sagar.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Yeah. Other point, now Sagar will take care of one ERP access, right? So Anandha, Nishant, we need the same users to guru GRP as well. So we send that request to you, forward that approval from Kunal to you guys.
+
+Nishant Keloth (Borouge):
+Yes, please. So forward that request for which all user you want, and we will take care.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+OK. Same line Nishan, any update on the file?
+
+Nishant Keloth (Borouge):
+Yes, I was chatting with Kunal only, working on it. I hope it's done.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Is there a way for us to escalate now that we have not started any work on sandbox and we're starting work on development and this issue needs to be resolved on priority. So Nishan, is there a way for us to escalate this internally or do we know when we can lap? Can we put a date around it like when we expect at least? Because it's been open for a while now. I understand you're supporting us, but see actually.
+
+
+
+Nishant Keloth (Borouge):
+Kaiser to whom through yes, because this is not on good side is on Adnox side. But Kaiser, how should we I mean that this has to be here. Yeah, he said he's going to do it today, but let's wait. Let's wait until Monday morning. Yeah, probably because he just responded that he's doing today.
+
+UNKNOWN_SPEAKER:
+So.
+
+Nishant Keloth (Borouge):
+Let's see one thing.
+
+Anandha Krishnan (Borouge):
+I mean, just my comment again. See, usually these things happen when we are trying to set up in the first system, so but then we gather the knowledge in the sense you know the process knowledge like creating the security group which was which is a one-time activity going forward for the development and quality we will use the same security group and whoever the users like you know any anybody joining newly in your team we just add those users in the same security group so that way the the ticket or the records will be expedited so we will not be such a delay in the future systems as well.
+
+ But like Nishant mentioned, we'll just wait for the day and he's already closely following up with Kunal to see if it can be expedited.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Noted, thanks for the update, Anandha.
+
+Nishant Keloth (Borouge):
+So Nishant, as we discussed, there are two steps. One is to create group. Group creation is already happened and now he's assigning those groups to firewall.
+
+UNKNOWN_SPEAKER:
+OK. So the group will be quite last.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+would be white listed on the firewall and then the next step would be user to be allocated to the group, right?
+
+Nishant Keloth (Borouge):
+See, this is too technical for me. He said that what I told him once you do that.
+
+Anandha Krishnan (Borouge):
+So sorry, I shouldn't roll the group creation means it will be created and the users are already added into the group.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+OK, so group created with users added into it. Now only the white listing on the firewall will happen and with that active will be able to access Exactly right noted OK. OK, which means that if activity this activity is complete between today and Monday, then Monday at least we should have access to. So what sandbox? Yeah, what I told him is once you finish off, let me know.
+
+Nishant Keloth (Borouge):
+I'll ask the team to test from their laptop and confirm. So he said that he will let me know.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Sure, yeah, then probably condition you can like keeping ping us on chat or somewhere and will try to test immediately.
+
+Nishant Keloth (Borouge):
+I'll do that.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+OK, we talked about this. Sagar, you had one more issue with the access, right? That is resolved?
+
+UNKNOWN_SPEAKER:
+No.
+
+Sagar Vora (ADNOC Group D&CS):
+It means I don't have still the one ERP and the Borus access code.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+No, no, not related to access, but then there was this email regarding some missing authorizations.
+
+Sagar Vora (ADNOC Group D&CS):
+I think, yeah, Reynaldo was working with the team, so I think, yeah, I'm not sure on that. Okay, okay. But I think he's taking care, I think they got connected yesterday, I will send that update.
+
+Conference Room (Patel, Rahul) - Speaker 1:
+Okay, okay, so this takes care of that activity. Anyone has anything else to be discussed? I leave anything from your side. No, no, so we're fine. I think we already covered here. Yeah, so let's continue with the actions we've decided and then we'll connect in the next session. All right then, thank you very much. Everyone have a nice weekend. Thank you. Have a good one.
+
+Anandha Krishnan (Borouge):
+Thank you. Thank you. Thank you guys.
+
+UNKNOWN_SPEAKER:
+Bye!
+
