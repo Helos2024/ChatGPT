@@ -1,0 +1,1372 @@
+UNKNOWN_SPEAKER:
+Hi, Tara. How are you? Hello. Hello.
+
+Roumanos, Hadi:
+Tara, do you mind, please, sharing the RISC itself by the time everybody joins? No problem.
+
+Madhavan, Tara:
+So I discussed with Rocio on the delivery dates that you asked me for, and she said she will share it later today.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Roumanos, Hadi:
+So that's one of the items that we have, right?
+
+Madhavan, Tara:
+Yeah, yeah. And in the meeting that I had with Khalid and Rahul, Khalid was saying that even UAT meetings he prefers to have. I mean, it will be mostly remote with people logging in from their system. Rahul said let's discuss the possibility of in person later, but I was asking now because I wanted to check whether we have to raise requests for laptops and stuff. But this is what Khaled said, probably once Rahul is there, we can discuss it further.
+
+ Let's do this one step at a time.
+
+Roumanos, Hadi:
+The reason we booked an hour is to go through all of our items with the team, or at least the ones where we don't have an answer for. And then once we're done with this, we can tackle this point.
+
+Rocio Minguillon:
+Yeah, so we have an hour for this meeting today. I think that I don't have the update as...
+
+Roumanos, Hadi:
+The roadshow is either in a train or in a car or something that's moving.
+
+Madhavan, Tara:
+Yeah, that's what I thought too.
+
+Roumanos, Hadi:
+Let's give it a few minutes.
+
+UNKNOWN_SPEAKER:
+I'd like Raoul to be here and Mohamed if possible.
+
+Madhavan, Tara:
+Shall I share the sheet now or wait?
+
+Roumanos, Hadi:
+Now let's give it a few minutes, sir. This is Mohamed. Let me ping Raoul.
+
+UNKNOWN_SPEAKER:
+Hi everyone.
+
+Roumanos, Hadi:
+Hi Mohamed. You can start sharing now. Actually, you know what, let me share. I want to do the edits myself.
+
+UNKNOWN_SPEAKER:
+I will join. Okay.
+
+Roumanos, Hadi:
+We have, we have. Oh, there we go.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Roumanos, Hadi:
+Let's go in order. So we tried to close as many of these as we could internally, but we need your support for the remaining ones. So these are the items that are saved. Open. Let's tackle the critical ones first and then we'll go down in priority.
+
+Naamani, Mohamad:
+So Hadi, who do you need?
+
+Roumanos, Hadi:
+We also have, we only have Rocio from GoS. Rocio is enough. If there's anything pending, then she can trace with her team. Yeah, this is something technical. No, no, sure. So Kunal, on the SDD, can we have a closure date for this one?
+
+Sheth, Kunal:
+on SDD we have two open points that is one is for the single sign-on CIDS so what I discussed with Sagar that we need to first prepare the set of steps which we need to complete and on Monday we will have a discussion with Kesar to get the closure date for because it's a joint activity which we need to perform GoSiem team along with Adnok team.
+
+Patel, Rahul:
+So to add to this further in the technical call Adnok team including Kaiser has confirmed they'll be able to help us close this by next Friday. Next week Friday all the actions including AdNog they will help us to close it so let's put the date of next Friday for this.
+
+Roumanos, Hadi:
+Okay but as an immediate action did we book that meeting with Kaiser or not yet?
+
+Sheth, Kunal:
+Sagar has Sagar is basically communicating with Mustafa so he is getting the time and based on that he will send an invite.
+
+Roumanos, Hadi:
+Just make sure that the meeting gets booked today otherwise you might get an answer from Kaiser that he's busy on Monday or something right so agree agree just to make sure you have that session with Kaiser so that at
+
+Patel, Rahul:
+least this one doesn't get pushed sure uh there is one very urgent point to be discussed so uh Hadi do you want to go through this list or I just want to make sure that the latest very urgent point discussed today is aware the team is aware about Is it related to SDG or not yet?
+
+UNKNOWN_SPEAKER:
+Not yet.
+
+Patel, Rahul:
+This is related to the build, what we are doing, and it kind of risks the build.
+
+Roumanos, Hadi:
+OK, keep it, keep it just mentioned as soon as we're done. I don't want to disrupt the flow, but do make sure we mention it so we won't let anyone drop before you mention. Drilling data and drilling demo, we covered this together with Raoul on datasets, so we have a due date of 22nd, which is Wednesday. Is this aligned with everybody on the call?
+
+UNKNOWN_SPEAKER:
+From our side, yes. Okay. Use cases for testing.
+
+Rocio Minguillon:
+I need to check with you, Rocio.
+
+Roumanos, Hadi:
+Where are we on this? Because in theory we should be done today. Is that the case? Yes, it's that the case.
+
+Rocio Minguillon:
+I will right now share with you the script.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sorry, I think it's related to to drilling. And it's something that I know we have discussed, but I think I cannot mention it enough that. For me, we have a huge risk in drilling. I don't know what is the best moment to address this. How did you you can.
+
+Roumanos, Hadi:
+Let me know when. That Raoul was referring to, or is it different?
+
+Patel, Rahul:
+It's the same thing, I think. Yeah. OK, so can you tell me?
+
+Naamani, Mohamad:
+We need to have a separate or dedicated time. Maybe end of the call, we'll just have the focal group. But yes, this is related. I mean, this could impact the build user testing, the data required, et cetera. I'll let Hadi, I mean, once he finishes the full update, purpose. Then any new risks or things that are not in good shape that will become either the second half of the call or will agree on individual discussions.
+
+
+
+Roumanos, Hadi:
+Agreed, let's move as fast as we can with the points that we know and then we'll add those back to the note. Okay, 17th John, number of end users. So this is a discussion that's been happening over the past couple of days. Is this something that we can close soon, so we have 17th Jan as an end date, which is today. So are we in decent shape to close this? Kyle, Rocio?
+
+Campbell, Kyle (UAE):
+So the key users have been identified, yes. End users, we're still in the process of identifying all the end users because we need to have that awareness session first and then we need to reach out to those focal points to get them to help us against other end-users. So key users, yes. End-users is in progress right now.
+
+Roumanos, Hadi:
+What's the date that you expect to close end-users by?
+
+Naamani, Mohamad:
+Hopefully by the end of next week. We have more. Do we have a date for that overview session based on preparation?
+
+Fakhouri, Mohamad:
+Realistically, I think this will take some time because one is They even mentioned that you know, some people get on boarded and they get off boarded they leave so this way The high level session which is Needed ASAP the
+
+Naamani, Mohamad:
+one we discussed a couple of yesterday and the day before in terms of high-level overview that you and I think Kunal can handle maybe with Kushboo which would help before the UT starts that's what I'm referring to yes so
+
+Fakhouri, Mohamad:
+we had a session today with Mohammed Awadallah to review the content he asked us for some updates he wanted us to use a more let's say futuristic template the plan was that we wanted to do this by Tuesday but if we want us to incorporate some feedback Tuesday might be a bit stretched so we need to manage them also better so this is not the time to be picky choosy etc we need to do it ASAP so that's
+
+Naamani, Mohamad:
+something I mentioned to Kyle before, the idea now, they think that we have all the time in the world and the clock is ticking. So for me, having the session, the right level session, sorry, the high level content required is good enough. You can tell him we need to do this faster, so we need to have this session first. Guys, if you're stuck, then start pulling us in, Hagi or myself, but we need to manage those ad hoc requests.
+
+ They don't care about If we don't sleep at night or they're trying to impress the business, to impress the organization. Everyone has an agenda, even the people supporting us. So those requests, we need to give them an ultimate in saying, okay, but we need to do this by Wednesday and this will not be done. So shall we go for the basic content or delay it, which means UT will be delayed? Throw it in his lap.
+
+ If you're stuck, if you prefer not to have those discussions, let us know, but we need to be a bit more forceful. For those, yeah.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Fakhouri, Mohamad:
+If that's the case, Kyle, then maybe we can, Kyle, Edith, Bisher, what we can do is we'll just incorporate some of the feedback that he asked us without revamping the whole document with a new template. We can just keep the whole, the template as is by just adding...
+
+Naamani, Mohamad:
+Yeah, let me suggest... Wrap up the content based on what you you know And then maybe hadi we can brief Khalid quickly on it with Asma saying we have this comment We need to move ASAP on this please because Asma and Dawood might
+
+Roumanos, Hadi:
+be on the call starting Monday Which we can do Monday morning now that Asma is on the call. So, okay Do you mind forwarding the Monday morning call to Fakhoury so that he can join us to 930?
+
+Campbell, Kyle (UAE):
+I'll be on leave next week, but so, but yeah, Mohammed will, I can take this one. I think the end user identification might actually be a bit ambitious. Mohammed's right, Fakhoury's right. By the end of next week might be too. Soon? I have a concern.
+
+Naamani, Mohamad:
+Bischer needs support with all due respect to everyone because also that's why we have sometimes a good cup, bad cup. If you're not around to play that bad cup role, etc., maybe you need to involve more because Bischer will be on the receiving. I mean, he's also, his role might not be, he might not be able to push back on them if they're not providing the or if we're stuck, or spinning wheels. So while you're on leave, and I know you mentioned you delegated to Bisher, but we need to make sure we don't end up not progressing well.
+
+
+
+Gusev, Nikita (UAE):
+But I'm there to support Bisher, we're already aligned on that.
+
+Naamani, Mohamad:
+Then that's it, then we're okay. Because in the email I saw that Bisher will cover, and we know AdBlock by now, so we just want to make sure...
+
+Gusev, Nikita (UAE):
+No, no, no, as we agreed before, while we While the team, Kyle and Edith will be away, me and Bishar will be there.
+
+Roumanos, Hadi:
+In the interest of time, for the remaining items, let's not discuss the how we do it. Let's discuss where we are and what are the next steps. If there's a discussion to be had on the how, let's have it separately, please. And this is Kunal's lab, so by when can we prepare that FSD? Document in order to start the review with AdNoc?
+
+Sheth, Kunal:
+So template is already shared with the GoSIEM team and we were having a discussion Bastian and Khushboo on this and RICEF list we have discussed and so GoSIEM team needs to update and prepare this document as FSD has is technical. But what we understood is that TDD might not be required because FSD is also having a section which covers the technical part of FSD.
+
+Naamani, Mohamad:
+Yeah, yeah, you're right. And milestones, they always refer to FSD, not TSD. And the TSD is something which is required after the program development has happened after testing.
+
+Patel, Rahul:
+So at this point of time, we only need the FSD section to be updated. Just note that we have more than one fsd and not just one fsd so every object in the rxf list will be a separate fsd except for interface where all the interface points can be part of a single fsd.
+
+Naamani, Mohamad:
+Can we agree on the date to follow your rules? Yeah if you want to put a date and maybe mention that fsd is not one just like drp is etc. So if you want date it might become dates addy because multiple which is fine I just need I need something to track from the team.
+
+Roumanos, Hadi:
+So if you want to break it down into multiple documents of multiple dates, I'm fine, but I need something.
+
+Sheth, Kunal:
+Yeah, what do you think? Basian based on our discussion, when we'll be able to complete the draft FSD.
+
+Naamani, Mohamad:
+If Cushmo is helping in this and I think she got the rise of list from yes, we do. Do we have the content? I think mostly or maybe Cushmo could work and I'll do or whomever from your side, the last.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+What is what is required for the FSD? All the points and of course, I think we will have our first draft for the for the main points we already know. Because there are some, I mean, the core part of the FSD are there two cores part of one of the extractors and all the modification we need to do to the extractors or we're doing or we're not. To the extractors. The changes we have made to the extractors and second part is.
+
+ Related to the, to the PRS. Yeah, generation, but this, this is part of way too. So, I think we will, we will generate 2 FSD 1 for way 1 and 1. And a 2nd, 1 for way to start is that. Is that OK?
+
+Patel, Rahul:
+That should be OK, but we've already started the Wave 2 build as well. As per the revised timeline, our Wave 2 build has started from 13th January. So even though we will have to FSD, but we'll have to start putting date for both, because then if we don't do that, the Wave 2 will get impacted.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But we don't have the detail for the Wave 2. I mean, regarding the purchase requisition and all that, we haven't had the technical reconciliations to define the technical part?
+
+Patel, Rahul:
+The technical information, if you look for my email before this meeting, I've sent a technical documentation from AdNoc, the functional and the technical document for their existing program for the reconciliation. So I would recommend to have a look at that technical documentation and internally we'll align.
+
+Roumanos, Hadi:
+I'm cutting you off because I don't want to spend too much time on each. The how again on the timeline that we have by when is the latest date we should have fsd so that we don't impact our build so again I don't want to discuss how and I want to discuss content I
+
+Naamani, Mohamad:
+want to discuss dependencies and where we are in each stage so for wave one fsd by when do we need to get it done what does it delay or what What is the prerequisite for it?
+
+1Sebastian Alba:
+Yes, I won't confirm the date, but just for everyone to know, we'll have, even if, as Facilien said, we'll have one for Wave 1 and one FSD for Wave 2, the main separations will be inputs and outputs. So the first FSD will cover all the inputs for Wave 1 and 2, so with that already accepted we can advance with most of the configuration of Wave 2 as well. So it won't be, if we manage to have that confirmed, we unclog the configuration for at least more than a month, month and a half.
+
+ So that's definitely going to be the focus.
+
+Naamani, Mohamad:
+Guys, sorry, bear with me because it might be me. What is the FSD, Raoul, what does it stop us or allow us to do if we have it ready or not.
+
+Patel, Rahul:
+Is a functional specification document. At NOX requirement is that any change on S4 HANA and I'm talking about only on S4 HANA side. If you're changing anything for S4 HANA, there should be a FSD in place. Okay. The FSD should be approved.
+
+Naamani, Mohamad:
+Okay, now to answer Hadi's point. So under Hadi, yeah, this is I remember the details. Based on this, when do we need it to be ready and developed, then approved, so that we do not get delayed in the plan. I think Hadi is using this lens because, guys, we're happy to spend hours on those hurdles, but if we want to be efficient, this call should be going through the list, agreeing on updates, and then if there are the standalone sessions, then we'll agree on those separately.
+
+ This way we don't waste everyone's time, and they deserve the discussion. So for this one, Let's just brief Hadi. When is it needed after which it becomes late? And then we go backwards. We'll say it takes five days to be approved, and then we need to finish it next week because we need it done by end of January. Can we come up with, or do we have those dates now? Hadi, I'm assuming that's what you need.
+
+
+
+Naamani, Mohamad:
+So we don't know exactly when is it needed.
+
+Roumanos, Hadi:
+Bastian, Raul, do you want to get together and come up with this date of this code so we don't spend too much time on this? Essentially, by when is this due, approved, without impacting our timeline for a build? That's the question for both Wave 1 and Wave 2.
+
+Patel, Rahul:
+Can we get those dates? I would request GoSCM team to provide, from a project perspective, from a build activity perspective, how much time it requires to build everything based upon what we've done in Sandbox to do it again in dev and help us with the date so that we can do this backwards planning.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yes, for MRO and chemicals it's pretty straightforward. I think we won't have any issue providing those details for drilling. It's a different story but we can discuss.
+
+Roumanos, Hadi:
+Okay, let's take this in a separate session where we talk specifically about if that's okay with everyone, so that we don't spend too much time on this. Hadi, I will set up a call on Monday with Bashian and Rahul and we'll get the date after clarification. Okay, fine. So let's discuss. Okay, so as a next step, a line on Monday, what is Monday 2020?
+
+UNKNOWN_SPEAKER:
+With GoSCM.
+
+Sheth, Kunal:
+Okay, Kunal, ERP access for GoSCM in Buruj, is this something that was need to chase a knock yeah today today we were having a technical call and Rahul also mentioned the escalation part but Nishan from Buruj said that let us wait for one day and Monday if if it is not done then we will escalate okay so I'll give us an update yeah Monday morning no more okay nice keep track of so each of you whoever is assigned
+
+Roumanos, Hadi:
+a task keep track of it so that you give us an update whenever we our next huddle so that we don't have to individually call out people right so Kunal you need to give me two updates on Monday just keep track of those of the critical ones you might have more of once we get to the high ones.
+
+Sheth, Kunal:
+Hadi for the first one it is a 24th not the 20th Monday.
+
+Roumanos, Hadi:
+I know but you have a session with Kaiser on Monday so I need to know how that session went and if it didn't happen if it didn't happen I need to know. I'm not talking about due dates I'm talking about next steps and how you update us, cool? Understood, yeah, sure. All right, thank you. All right, moving on. Completion, these are covered. So I'm not going to, actually, we can close those since we have those.
+
+
+
+Patel, Rahul:
+Is approved. You have sent back mail. One signature is missing from Matmatar. This is, BPD is closed.
+
+Roumanos, Hadi:
+When do we get this?
+
+Patel, Rahul:
+We don't know, right? So let's put 20th for now. Yeah, but one signature from Asma has received.
+
+Roumanos, Hadi:
+Signature of Mohammad Matar is missing, yeah. This one is closed, yeah. OK, fine. All right, moving on to demand process changes for MRO team. This is Raul, Nikita, Monday. The question here is, what's the next step besides engaging with the end users? Next step is to keep this as Monday.
+
+Patel, Rahul:
+This should be, I think, it should be now Mo and Nikita, considering that the next immediate next step is the presentation end-users of the high-level process is what we discussed.
+
+Gusev, Nikita (UAE):
+Okay. Demand process changes for MRO team. So that's the communication we are preparing now and would like to lead it through Asma and then Abdullah to EWM VP, SVP level, right, to be kind of cascaded down the EWM organization. Why wouldn't we want to share that communication with them? I think, Kyle, correct me if I'm wrong, but I think we already have the slides and we'll have to meet up with us on Monday together with Bishar and go through it and confirm the next step.
+
+
+
+UNKNOWN_SPEAKER:
+Is that correct?
+
+Campbell, Kyle (UAE):
+Yes, that's correct.
+
+Roumanos, Hadi:
+Okay, fine. All right. This is an important one which we haven't talked about in a while. So I need an update from both Change Management and GoSCM for the day in the life of, for training material content. So we have 25 of Jan as a due date. Are we on track?
+
+UNKNOWN_SPEAKER:
+Are we ignoring this completely?
+
+Gusev, Nikita (UAE):
+What's the status? When did this item appear here? About three weeks ago, if not more. About three weeks ago, really? And Change Management has been responsible for during all these three weeks?
+
+Roumanos, Hadi:
+and GoSCM, yes. But again, developing the training material in Go is GoSCM, so that's why you have both. So, Rocio, do you have an update from your side?
+
+Naamani, Mohamad:
+Guys, this is simply the training material we're discussing to prepare. One way of driving or how it should be structured is a day in the life, because when we prepare training, either it will be based on use cases or a flow, a sequence of things. So this is not discussed this before as a way to organize or structure the trainer. That's the idea.
+
+Roumanos, Hadi:
+Okay, so Tara to schedule session with obviously we're not on track with this with CR and go SCM to align on training material required. Let's have this either Monday or Tuesday.
+
+Naamani, Mohamad:
+Hadith, the call you had earlier today, those activities can be merged because I think you were discussing training material earlier today.
+
+Roumanos, Hadi:
+No, we were discussing approach. It's a bit different. Material is a different discussion. Then this one, yeah, could be combined. Fine. Create plan of ad hoc users' involvement in Build-SITU18. This is delayed. What's the story on their involvement?
+
+UNKNOWN_SPEAKER:
+All right. The
+
+Roumanos, Hadi:
+OK, so the key is how they how they're involved, right, the key users, how they're involved and in what shape and when. So the plan, right, for all of these key milestones that we have.
+
+Patel, Rahul:
+Would the description change to end user now that we are not using the trainer approach?
+
+Roumanos, Hadi:
+So what I suggest is we can merge this one with the training approach that we were discussing this morning because that also includes the involvement of both key users and end users. So that would be my suggestion here.
+
+Naamani, Mohamad:
+But we need to have a clear understanding of how they're being involved. Let me remind you why is this here or the importance. We're now struggling to have people ready for the unit test. And we said we need to be from now identify, have everyone lined up. It could be you might say the UT and the SIT is the same group. But this is important, so we don't not end up one week before SIT saying we need to book rooms and the resources and we don't know who they are and it's a short notice for them.
+
+ We already have a risk for UT and people being ready. That's why we agreed on the calendar and we need to send it. I think it's either sent today or Monday. So that's the logic of it. Again, most of these here are related to us acting earlier or getting ready because I've is slower than we are and we learned a few things now on some whether approval or actions.
+
+Roumanos, Hadi:
+Just booking a room is a nightmare. All right. So a few things. We were talking about involvement of end users. We can potentially merge this with the training approach, OK? And the exercise that you're doing, Tara, which is the schedule of upcoming key activities and the logistics associated with those. The invites that we need to send to AdNoc, right? So all of these are part of the same effort, which is planning involvement and planning our team's presence and planning the events that are happening in the future.
+
+
+
+Campbell, Kyle (UAE):
+Okay, so all of those are part of the same sort of effort. Okay. Sorry, can I ask, is it change management's responsibility to create the schedule for these key users' involvement in build SRT and UAT. I'm not so clear on whose responsibility it is. Okay, so there's a few things, right?
+
+Roumanos, Hadi:
+There's the training strategy which we discussed this morning, which is CM. There's the timing of when these things happen, which is CM in alignment with PMO, so you and Tara sit in the room, agree on when things are happening. There's PMO helping you schedule those sessions that are needed with the end users. There's you identifying who needs to be there, and there's GoSCM creating the content to be in those sessions.
+
+
+
+Campbell, Kyle (UAE):
+So it should be straightforward to everyone. But the key users have been identified, and I think the schedule is already done for some of this RATARA. I think I discussed, I could be wrong, but...
+
+Madhavan, Tara:
+For the unit testing, yes, but for the upcoming ones, SITU80, we have to...
+
+Roumanos, Hadi:
+Sorry, bear with me. I don't know why this keeps coming. OK, let's not, again, spend too much time on this.
+
+Naamani, Mohamad:
+Sorry, I got distracted.
+
+Roumanos, Hadi:
+All right, I don't have approval for the Excel add-on. What's our next step here?
+
+Madhavan, Tara:
+Follow up with Khalid, right? Did Kunal send the mail?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Madhavan, Tara:
+OK, then yeah.
+
+Sheth, Kunal:
+Do we expect a closure date? Closure date, actually, there was a couple of points which risk and compliance team has asked Khalid to update. So we have already provided the feedback on it and Khalid has updated in the ticket request. But again, it is up to risk and compliance team to get it approved. But if we get the name of named person, then maybe we will follow with to get it approved.
+
+Roumanos, Hadi:
+We can't have a date here, otherwise it's not realistic because it's in their court. All I ask is that Kunal you can follow up with Khaled on Monday.
+
+UNKNOWN_SPEAKER:
+Sure.
+
+Roumanos, Hadi:
+Alright, I'm going to just add Raul and Kunal here. Alright. Invites for unit testing.
+
+Madhavan, Tara:
+That's on us. Yeah, I'm working on them.
+
+Roumanos, Hadi:
+They will be sent out today. OK. That's something that you're working on as well with Rocio. That's also merged with whatever we discussed earlier, which is the plan for key user involvement, right? So that's the calendar for UT, SIT, UAT, etc. And the logistics of this all. Logistics from our side and logistics from Adnox side, right? Rooms needed, laptops needed, flights needed, hotels needed, all of that lovely stuff.
+
+ Okay, so get an update on that calendar or schedule. Sometimes between Monday and Tuesday?
+
+UNKNOWN_SPEAKER:
+Yeah, sure.
+
+Madhavan, Tara:
+I will discuss with Rocio and give you an update. Please, even if it's just a calendar.
+
+Roumanos, Hadi:
+So what we need is an Excel sheet that shows the three, four weeks ahead of time and what's happening in those three, four weeks and who's traveling and what do we need to tell AdNoc to do, basically.
+
+Madhavan, Tara:
+Yeah, for the next four weeks, yes, we can provide.
+
+Roumanos, Hadi:
+We don't need to go much further than that. Let's stay realistic and let's at least make sure we're able to do this. Project team not communicating with the required stakeholders from drilling. Let's pause this because it's part of the drilling discussion. So we'll get to it in a second. Raoul EWDP, this is something that you would align on with AdMob, right?
+
+Patel, Rahul:
+Yeah, this is again with drilling.
+
+Roumanos, Hadi:
+Okay, fine. Let's park it for the time being. The mediums I'll fly over because most of them are either done or on track. Invoicing is with me. I'll update the team. Insights and recommendations document.
+
+Patel, Rahul:
+Do we have Kushabal on the call or not? No. We don't have Rocio or Bakshin. This was GoSiem team in our last session said that by the end of today you'll provide the confirmation. So are we on track? Any updater here?
+
+Naamani, Mohamad:
+Anyone from GoSCM, Rocio, Bastian, who can give us an update?
+
+UNKNOWN_SPEAKER:
+I think I cannot hear you, Rocio.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I haven't worked on this document. Develop insights and recommendation document that's the one you're talking about? Yes, insight and recommendation. I don't know.
+
+Roumanos, Hadi:
+I don't have information about this.
+
+Rocio Minguillon:
+Tara, can you chase Rocio after the call, please? Yes, it's a PPT.
+
+Naamani, Mohamad:
+When do you expect to be done, Rocio?
+
+Rocio Minguillon:
+Let me align with that.
+
+Roumanos, Hadi:
+Okay, so Tara, can you please get an update from Rocio when you can?
+
+UNKNOWN_SPEAKER:
+Okay. This is on me.
+
+Roumanos, Hadi:
+I'm going to chase Khaled on this. Firas and Khaled, on your business project plan dates, this is almost closed. I think right now you've aligned with CM Tara, so all we need to do is update ServiceNow. Update ServiceNow, correct. Yeah, yeah. We might need to do a quick check with Firas on monday though yeah I have to check with Mohideen too because the dates are changing so what is the process I don't know I'll check with him and then we okay okay but this is on us primarily not the team so we can drive this as long as we have all the content from the team which I think we do so this is on jan 20 which is fine update project plan ncr this is the same thing so I'll keep it there complete training approach this is um We discussed this this morning.
+
+
+
+Naamani, Mohamad:
+Just add the financial part to CR so that Tara also knows that we can.
+
+Roumanos, Hadi:
+Let me replace this here. OK, OK, so let me replace this by. Final sorry one second to finalize variation. Plus financials and this is going to be.
+
+Naamani, Mohamad:
+Had Muhammad. And Sebastian voice or I'll call you later to brief you on the discussion with, sorry, Firas and your suggestion about the control tower. That's for Sebastian. I'll connect separately. Great.
+
+Madhavan, Tara:
+Yeah, I just wanted to know the difference between CR and variation in this context, but if it's CR. No, no, good question.
+
+Roumanos, Hadi:
+Is just the project plan dates with no implication on besides project plan variation is money sorry yeah no they won't be separated we've agreed and I double-checked it will be so please do not submit the CR on its
+
+Naamani, Mohamad:
+own there is nothing separate variation order is a contractual thing for now to preserve our right and the money we will include the estimate inside the CR itself saying there is a change request moving the call live date with this. There is a cost element estimated as such. Later on, once we finalize the number exactly, there will be a variation order on the contract or to get the money. Let me ask Kadeem if there's a place to do this, Mohamed, because to my understanding, all we can say is that there's...
+
+ But that's what we asked Khaled to do. Khaled, this is Hadi, what we asked Khaled in the morning, if you remember, I asked him to check on this. That's exactly the point. Yeah, so here maybe there's...
+
+Roumanos, Hadi:
+Yeah, so maybe here as a in the CR hang on. So let's not call it variation CR plus financials and here let's follow up with. With Khalid on service now CR plus. Cost estimate. OK fine. The changes to the plan is also tied to this, right? Because I think... Yes, but you and me can agree on how to do it. We need to first make sure that we can include that cost estimate as part of the changes in ServiceNow.
+
+ Kyle, training approach, we had a meeting this morning. We need the two slides, one that shows the timeline and one that shows the who does what as part of the approach. When can we have this?
+
+Gusev, Nikita (UAE):
+It's actually three slides, Hadi. The first one will be We are going to have the first draft of it on Monday.
+
+Roumanos, Hadi:
+So let me put Wednesday as a closing date and then we can discuss on Monday just so that you don't rush. Okay, fine. So review first draft of training approach on Monday. Approval matrix. This is us, Tara. So we need to check with Khaled on the approval matrix for all the approvers or at least bodies that approve in each of the major milestones, SIT, UAT, GoLive, etc. So the sooner we can get with Khaled, my suggestion is to book from now a session with him either, not Monday, Monday is getting busy, probably Tuesday, with the sole purpose of saying for UAT who are the approvers for SIT, etc.
+
+ So that we can anticipate ahead of time.
+
+Naamani, Mohamad:
+Okay, I have another Can you please update the joint plan, our plan, not the service now, to include the FSD development and approval, et cetera, if it impacts some of our activities? Because right now we don't have any visibility on it in terms of when it's needed. So when you discuss with Kunal and Raoul or Bassem the timing, as Kunal said on Monday, let's make sure we're keeping track of it. This way we know the baseline date.
+
+ We shouldn't guess about dates of such things. So let's make sure it's there. We will have some of those new rows.
+
+Madhavan, Tara:
+Instead of adding rows, we have another tab in that sheet with deliverable dates. That's what Rocio said. She will update and give me today. Isn't that enough? Or do you want me to include this?
+
+Naamani, Mohamad:
+This is for you to figure out deliverables. But if that deliverable and its approval has an impact on some activities before and after that, it should be in the plan. Only as a rule, right? Because it becomes a prerequisite. Okay, so once I get the dates from Rocio, I will incorporate it into the plan. No, it's fine. The whole point is to track dependencies data, right?
+
+Roumanos, Hadi:
+So if there's an action that might delay something else, we should know about it, right? Yeah, that's what I said.
+
+Madhavan, Tara:
+So once I get the dates from Rocio, I'll include it in the plan.
+
+Roumanos, Hadi:
+Okay, sounds good. Reference material solution confirmation, that's Raul. You're going to get an alignment internally. Let's not do it on this call, but I'll trust you to. I have a meeting scheduled on Monday. I have a meeting scheduled on Monday, so I'll update after the meeting on Monday. Okay. Exclusion, you have the chat with Mohammed and let us know how that goes. Yeah, we'll talk to Mohammed on Monday, Christopher.
+
+ Yeah, Monday. Okay, fine. Hang on. Let me just... Yeah, this is EOQ calculation, Kushboo, I'll check with her. We are ready with the calculation. Once she's back, Monday we'll send it across to AdNoc. Fine, okay. E-market list, you can check with Khaled. List, internal alignment with Kushboo, fine. Do we have a date for RICEF or should I check with her?
+
+Patel, Rahul:
+Is ready. That's what driving FSD documentation.
+
+Roumanos, Hadi:
+Okay, let me plug Monday because we need to agree internally on what the next step is. Because this here...
+
+Naamani, Mohamad:
+It's better to merge them, Hadi, to save your life, your cell to entries, you might do so. Because that's a person for the rest.
+
+UNKNOWN_SPEAKER:
+Fine.
+
+Roumanos, Hadi:
+Potentially we can close this one.
+
+UNKNOWN_SPEAKER:
+All right. All right. Analytics story.
+
+Roumanos, Hadi:
+This is something that GoSCM needs to raise with SAP. Bastian?
+
+Naamani, Mohamad:
+Is this the one that is now going to be delayed till December? Maybe my memory is failing me.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Which one, sorry? Analytics story standard of feature not available. Yeah, this is late till December.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+So you're gonna have that discussion with SAP?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Roumanos, Hadi:
+Okay, by when?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+We will have a meeting on next week. But there is nothing we can do in order they won't change, they won't install the servers because we requested.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+So this is like a product thing? Yeah, it's a product update.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, it's an infrastructure plan. They need more infrastructure and the plan for that infrastructure is to be ready on December.
+
+Naamani, Mohamad:
+OK, so maybe that's one topic we'll also take offline. This is something that SAP are delaying across the globe or only for this region or the instance? No, just for this region. Because I know Anand, the guy from SAP, has a lot of muscle power to push for certain things, especially if ADNOC is impacted. So I think I'll add this as one topic. There is what you mentioned to be discussed separately, the drilling data bastion, and this one.
+
+ I think these are topics to be Discuss separately so that you can proceed daddy All right, but there there is not too much we can do about it And we'll get this answer to I'm not saying that's the case etc. We will we'll see let's let's align and during the discussion What could be the best response?
+
+Roumanos, Hadi:
+Okay leadership demo if you recall we had mentioned this a while back where the leadership or Khaled told us that the leadership want a demo of the solution. So we need to agree on a date. Tentatively we had put 10 Feb but this is something that we need to give some attention to so that we don't keep pushing it.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Thoughts here? We said during the unit testing two weeks We can kill two birds with one stone. We can do it in that week.
+
+UNKNOWN_SPEAKER:
+When exactly is this happening? 27th of January. OK.
+
+Roumanos, Hadi:
+We can put the date after the leadership testing, but then we can align the date.
+
+Patel, Rahul:
+So it's not immediately due, but this is... It's fine, but what we need is to brief Khaled so that he can book the leadership accordingly.
+
+Roumanos, Hadi:
+So if we agreed on a date, and let's agree on a specific date, let's have the conversation with Khaled to book it. And that's just 10 days from now.
+
+Naamani, Mohamad:
+Can you keep a note for Monday morning, please, to bring this up to Khaled and say when is a good date?
+
+Roumanos, Hadi:
+We'll be ready somewhere starting Jan 27, so at least we can take his direction if needed. We can tell him we can proceed.
+
+UNKNOWN_SPEAKER:
+OK. Yeah.
+
+Roumanos, Hadi:
+Usage within IPP, that's the slide that Pushpa was going to put together. I'll follow up with her. Internet data dashboard for progress tracking.
+
+UNKNOWN_SPEAKER:
+Rocio?
+
+Roumanos, Hadi:
+I will send you that also today. That's a lot of stuff you're going to send us today.
+
+Rocio Minguillon:
+Are you sure? No. It's on medium, so don't kill yourself. Refresh your session for UT.
+
+Roumanos, Hadi:
+Still Rocio. No, but this I don't know what. No, no, this is what we discussed with more.
+
+Naamani, Mohamad:
+Yes, that's what we discussed with more. Let me delete this because it's it's too.
+
+Roumanos, Hadi:
+All right, now drilling.
+
+UNKNOWN_SPEAKER:
+What happened to my filters?
+
+Roumanos, Hadi:
+I removed the filters on my screen.
+
+Madhavan, Tara:
+Does that impact yours? I didn't think so. No, but they get deleted because I can't even see the others anymore. No, no, I didn't do anything. Wait, hold on.
+
+Patel, Rahul:
+Refresh, probably save once. Hopefully it will come back. Please, please tell me. I can, I can see everything on my screen.
+
+Roumanos, Hadi:
+I don't know why you can't. Okay, fine. Uh, you guys start discussion on reeling.
+
+Naamani, Mohamad:
+Let me sort this out. Yeah. So before any changes started now, so that had, it can be done. So, because yeah, uh, Microsoft 365 can act up and mess up things.
+
+Roumanos, Hadi:
+Yeah.
+
+Patel, Rahul:
+So before drilling, An issue which was raised, a technical issue. Essentially, some of the configuration on CIDS server is not working the way it was supposed to work. It was working till yesterday evening. Today morning, when the team looked at the configuration, the data stores were not available, which means that the interface between S4 HANA and IBP is down. And a high ticket is raised with SAP.
+
+ This was discussed with AdNoc infrastructure team in the meeting today morning. And together, a high ticket was raised. The information is shared with the team as a general email update. And also to Paola, we send this requesting urgent support, which means if this issue is not resolved, the build activities, what I understand.
+
+Naamani, Mohamad:
+Before, so Hadi you're done with the list, are we now moving to some specific topics that require the time? Yes, I'm done with my list, so we can discuss this. There is one topic drilling data that Bastian raised, there is the IBP, so I'm listing them, maybe not all of them will cover. It's not just data, sorry, it's not data, it's more complex than that. Yeah, yeah, I mean I'll We'll give it this title and then when we discuss we figure it out.
+
+ I'm just listing what are the things that request require an additional session so that this topic you raised this. So is this the service that is enabled by SAP? Raul, the CIDS? Yes, so CIDS SAP that after waiting all that long for that environment now it's down. Yes, in a way. Yeah, you're correct, right? So this is a topic we need to separately, and I think I added the IBP analytics thing to check what can be done.
+
+ Hadi, based on this list, or team, based on the discussions, what items do we need to take offline? Because I think, Hadi, to your point, the discussion huddle should be, today was an extended one, but later on to be efficient, 30 minutes would be, we know about all the risks and the requests, and we're checking on progress or any additional action, and if for whatever reason there's a new one, we will not because ideally also during the day, these things are added and Tara is adding them to the list.
+
+ This way we're efficient and then we take discussion separately. So we're more, I mean, we focus and not everyone is waiting on the call without any interest in most of the discussion. Having said this, what is the highest priority you would like to discuss since we have 10 minutes? Is it the drilling data plus plus? Or is it the CIDS?
+
+Patel, Rahul:
+The CIDS is just an update because there is nothing we can do. This is raised with SAP. I'm just letting everyone know so that everyone is aware that this issue is there and needs urgent resolution. But the resolution should come from SAP.
+
+Naamani, Mohamad:
+My understanding is you, Tara, and Hadi had a discussion in the morning and you updated the risk list. So I'm assuming this point that you refer to is already in Hadi's list, no? No, this came later.
+
+UNKNOWN_SPEAKER:
+No.
+
+Naamani, Mohamad:
+It happened even after your call?
+
+Patel, Rahul:
+Yes.
+
+Naamani, Mohamad:
+Okay, so for Raoul or the team, whenever we have those, so also we don't waste time during this call just to figure out every detail. We can talk more about the action. Please share, ask Tara, please add the following risk with this. This way on the call we can discuss what is needed so we don't waste time logging stuff which we have just as a basically saving time. Yeah, that's the way going forward.
+
+ This call was a bit of an exception to clean up our list. Exactly, so in a way we're agreeing Raoul even that let's talk with Bastian and the team, whomever should be involved on this data or the drilling part, data++, so we figure out what we need to do. Okay, Bastian, who do you need to stay so we don't hold everyone? Everyone is welcome to stay but just to be efficient. You, Raoul, Seba, Bastian, Alba.
+
+ But I need them also so that they know the nature of it, the impact. So if I'm helping more from pushing, but they know the impact of it. So I don't think you need Nikita, Kyle, Edith, Bisher, etc. So the exchange management team knows. Do you need anything from Mo? Is there anything he can do or no? No. Okay. So and then the rest will stay please just to discuss this.
+
+Roumanos, Hadi:
+Everyone else, CM team, thank you for sticking with us this long and have a good weekend. Thank you all. Bye. Thank you.
+
+Campbell, Kyle (UAE):
+Thank you, team.
+
+UNKNOWN_SPEAKER:
+Bye-bye. Should we start? Yeah.
+
+Naamani, Mohamad:
+Yeah, but give us the high-level view first so we understand because you're living this, Basti and Raoul and the team, but Maybe to my understanding, I just want to understand where it fits. So we figure out what needs to be done and also the impact on which area.
+
+Patel, Rahul:
+This is the high level solution we have. We have a well plan. The well plan has the well as an independent item and the well has a certain attributes.
+
+Naamani, Mohamad:
+Raul, to put things in the right context, that was my request. So we're talking first of all, wave one. We're talking demand. Now, for me, Sorry, but we were talking about the entire project, for me, the whole project. Fair enough. But as a vertical, since we have MRO, chemicals and drilling, this is an under drilling, right?
+
+UNKNOWN_SPEAKER:
+Correct. Okay.
+
+Naamani, Mohamad:
+Then go ahead. So we have the solution design in two steps.
+
+Patel, Rahul:
+First step is we get the well plan. The well plan has certain attributes and based upon these attributes, we get the bill of material and IPP. So this is on high level the solution. Now, from a agreement perspective, from a document perspective, from a BPD perspective, this is what we have mentioned, and everyone is aligned to the solution.
+
+Naamani, Mohamad:
+So this solution is still the same. Can you repeat this again? Sorry, Rahul. Can you repeat that last sentence again so I make sure I understood? We're talking about the BOM elements being or missing from S4 or even the DWS, whatever it's called, right? So there is no BOM definition.
+
+Patel, Rahul:
+I am talking about the solution methodology or the solution logic which we all agreed upon the solution logic is you have a well-planned or let me let me open a certain document so that this will make things further sting the building solution something than it is showing 2.0. Yeah, so this is our solution. Yeah, we can start from here. Yeah, this looks better. So you have IBP as a core piece. And IBP gets the bill of material from S4 HANA and the well-planned from the well-planning system, which is called DWS or DBS.
+
+ Both the words are used as replaceable to each other. So, based upon the combination of the well plan and the BOM, we get the demand in IPP, and then the demand goes to supply planning. So, during supply planning, we have the stock of the VMI. So, for the function… So, the difference between the BOM to well plan is the timing of the… Five-year plan. …activities, right? Yeah.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Naamani, Mohamad:
+Okay.
+
+Patel, Rahul:
+So, well plan is the five-year plan for the well. So, you have hundreds of wells getting planned. So, over the period of five years.
+
+Naamani, Mohamad:
+And to execute those activities you need to know the different bombs so that you know what you're building. Exactly.
+
+Patel, Rahul:
+So basically what we are doing is for this five year horizon we are planning material in IBP. Now to plan material we need to know what is the plan on high level so that for that plan we and we need to know the bill of material so that based on the combination IBP can know what is the requirement that becomes a demand and the demand gets converted into supply plan. Now I will not go into EWTP system or others.
+
+ I'll come back to it because there is another point related to it. But right now to get to demand we have so this is a sample well plan. So this is how the well plan looks like, You have a well ID and there are these are the attributes of well. Just don't get to technical details but we have a well and there are attributes of well and there are four. So, then the attribute become the definition of your bomb?
+
+ Yes, the attributes are then taken as a definition of bomb. So, let us take these are the four different bomb types you have OCTG, you have well head, you have down hold completion equipment and you have LCHA which is liner hangar and cementing. So, these are the four major categories of material. So we need to define for a single well we need to know the bill of material for all the four categories then only we will get to know the full bill of material for a single well.
+
+
+
+Naamani, Mohamad:
+So you mean for a well you have four bombs. Yes. Okay.
+
+Patel, Rahul:
+And each bomb should be an S4. All of these bombs should be an S4 and every bomb has a different attribute combination from well to get to this bomb. Yeah absolutely. Okay now this so for IBP solution to work we need to know what is the well plan we need to know what are different attributes which are associated with the well and we need to know how is the relationship of these attributes those specifical material groups so that we can determine the bill of matter for that metal attribute so that's the logic And ideally, yeah, maybe a question clarification.
+
+
+
+Naamani, Mohamad:
+Ideally, everything related to, I mean, I know that the bombs were missing, but ideally the item, the master or the material plus the bomb definition should go into SAP. So someone should be responsible to define all of those on S4. We can help them or basically we don't because they know their system. So that IBP will consume, will go to the well plan and figure out the demand which is how many wells and when and then based on each well go to S4 pick the relevant bombs and accordingly the relevant material and understand what supply is provided.
+
+ Is that the right let's say next steps because not everything will be in Excel and if the well plan continues to be in Excel or DWS but the bomb has to be defined on S4.
+
+Patel, Rahul:
+Yes so essentially we need the well plan which is already there in the existing system and we are integrating with the DWS or DBS system which means that's not a concern. Sorry, Bastian wanted to say something.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, I wanted to take a step back here in the conversation because for me the problem is not just technical, it's more profound than that. So we have had plenty of sessions with the drilling users and every time we have a new session, working session, we come up with a different definition. I don't know how many sessions we have had so far, but every time it gets more and more complex, we start with more.
+
+
+
+Naamani, Mohamad:
+We have four and we need to add more attributes to each one of these VOM and pretty sure we have a new session. Just to clarify one thing because Raoul mentioned this on Friday, sorry yesterday, saying that it's an issue with how much Abdul Latif and the Ashik know and it's always a moving target. They tell you something and then later on they will either not have enough info or someone else would come like Omar and different info.
+
+ Is that the same challenge? Because we also raised this to Asma and Khalid and correct me if I'm wrong Raoul, they promised or they already started providing the right experts. Are we talking about the same thing or something completely different?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Raul, you know what I'm referring to. Yes, but the problem, I think, is not a definition from the user. And it's not a problem. It's just the nature of this business, which basically is very decentralized. Each separate team has their own way to work. Looking to like consolidate to unify different definition and I think we need to face that at least from our end it's not possible to come up with a single solution because just as I said the nature business is not centralized but I will come up with a solution I'm talking about the bad part of the bad side now but then I will give the good points okay but help me understand
+
+Naamani, Mohamad:
+the problem So first of all, not that many parties get into drilling. So this is why I understand your statement, but it shouldn't be the case. So this is not like everyone does drilling their own way. Now, if we're talking offshore difference versus onshore, could be. So what I'm trying to understand, how is this sort of discrepancy or information, lack of information consistency, how does it impact what we're doing?
+
+ Let me yeah, let me let me sorry. Let me just finish the question because for me if we're agreeing with them Look, we'll go to DWS and take the plan. So the moment we activate IBP, this is what we're expecting We'll go to DWS get the plan But also by then you would have defined for every well type The corresponding bomb in s4. So what I'll do I'll go from IBP collect the plan for different wells, based on that well ID, I'll go to S4, fetch the relevant bombs, bomb, yeah, bombs in this case, set four, and the items, and then analyze the demand and prepare for the supply.
+
+ Now, if they prepared one well type, not 50, if they have 50 well types, or if they didn't do the bomb, it becomes more of them being ready and preparing the data. So where is the here is it that even that logic is not correct and they might not have the plan or so help me understand I know it's it's me lacking the full depth that you have that is not
+
+Conference Room (Bastian Osorio) - Speaker 1:
+correct it is correct but it just in some cases they have multiple cases in this is just one of many cases like what let me clarify let me clarify here so there are two things to this uh story that
+
+Patel, Rahul:
+while abdul latif and muhammad Madhashiks, we started conversation with them. We have now a realization that since there are four categories, the four categories have a different way of planning. And then this planning also is different between onshore and offshore. So from a solution definition perspective, when it is changing every time, essentially since we are not talking to these eight stakeholders every time, every time a new stakeholder comes from one of these eight people, and then it gives his perspective of his way of working, and then we realize okay this is something new.
+
+ So essentially to plug that problem that's where we discussed today with Asma and Khalid to make sure that we have this eight people identified and we immediately close the conversation with the eight people so that the definition of how they specifically plan for the respective plan.
+
+Naamani, Mohamad:
+So you're saying eight people because they have eight ways of planning or eight different types so that you need to understand when you're talking to two group companies so for multiple types types and the two group companies have a
+
+Patel, Rahul:
+different way of doing it. So that you mean offshore onshore. Offshore onshore correct. So we need to talk but but on high level everyone is agreeing to this methodology the only thing which changes is which attributes are responsible or which metal group. So we are detailing it further saying that okay for OCTG for onshore there is a there is a different attribute and there are OCTG for offshore there is a different attribute.
+
+ They are not doing it the same way in both the companies but the methodology is that we are still talking about well plan and we're still talking about defining the BOC.
+
+Naamani, Mohamad:
+But there is one more thing. OK, but I have a clarification. Sorry before I forget, I have a clarification here. Why do you need to worry about that table? We showed from 10 till 22 if. You're all you need to worry so correct me if I'm wrong. The well plan says that in order. So this is the plan we need over the next 12 months will have that many wells. Well, Type 1 is actually going to leverage bomb X, bomb Y, bomb Z, bomb D, in order to, so if they provide you with this mapping of well based on the plan and the bomb reference, then they need to worry if they give you a reference of the bomb, but it's not defined on S4.
+
+ I'm not saying that we don't care, they need to do all of this definition because for you you shouldn't worry if those rows 10 to 22 are basically you have the right information or not because you're telling them look I'm going to go to DWS get the plan and for each well you have on the plan get the building blocks or the items based on the bomb list that you provide so I'll take the bomb go to S4 if you give me 50 items 500 or 0 items that's how I'm going to work.
+
+ So why do you need to worry that you have four bombs, three, seven different variations? Let them create all the permutations of bomb because the moment they'll give you the plan and in each plan, very well, what are the constituents or the bombs related? All you do, you check the bomb, go to S4 if you don't find it. So there is definitely, we need to jointly work with them, but that dependency or that That cycle depends on how properly they do the homework but I'll stop you're saying partially correct I usually like to be fully correct but
+
+Patel, Rahul:
+I'll accept. So basically every combination has a different attribute and we need to make sure that the when we are getting the well plan all the required attributes to define all the four categories for both the group companies are identified we don't have this information since we have not spoken to all of them. So every time we talk to someone else we get a new attribute saying okay they use this attribute and then we need to figure out whether this attribute is part of the well-planned system or this is something we need to capture separately so that we can get to the point where BOM is defined.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's why I was saying for me sorry the problem is not technical and this is I think we're close to the core of the problem.
+
+Naamani, Mohamad:
+It's source of information yeah source of info and how complete is the data.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+And that's still technical for me.
+
+Sebastian Alba:
+So I'm getting that you think that we'll be able to close the design soon, but the problem is that I keep changing the solution or adding new requirements. It keeps happening over time. We'll have changes in one month and we'll be in this situation once again.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+We have a proposal for solutions. I want to go to that point now, but there's one more thing that needs to be addressed that one user tells us and he was pretty honest, transparent, and I think it's pretty much the feeling of many of the users we have talked to that they don't see because they've been developing their system for 15 years, he mentioned. It's extremely customized, so he doesn't see the point.
+
+ To define the bombs after they already, I mean, considering that they already have a system, a system for 15 years, extremely tailored. Okay. And we understand that. So I think for me, the approach should be different. We should use IVP and give them the benefits of what IVP can deliver. If we try, for me, to be honest, if we try to address the complexity of more multiple AGCs onshore, offshore, and each one of them doing something different, that is jeopardizing the success of the project.
+
+ For me, we should take, and this is something I discussed with Hector this morning, we should receive just the forecast and focus on the supply part. Receive the forecast at well ID and material level with the different categories. The bomb site, I think, All that complexity is something we cannot address in ADP. And we shouldn't. We shouldn't because it's not the purpose. The purpose is to create a purchase plan.
+
+
+
+UNKNOWN_SPEAKER:
+Fair enough.
+
+Naamani, Mohamad:
+Let me ask you this in this case to make sure. First of all, if you go back to this Excel, Raoul, the well. So when they provide you with a plan, this is just like a preventive maintenance plan or whatever. They provide you with a plan. Turnaround. This is a plan to create or develop new wells, right? So that's what the plan includes. Now, for each well type, if the well type is W1, there is a unique combination of OCTG material, WH material, DCE, and what is this?
+
+ Material. Is that a correct assumption, Raoul and Bassim?
+
+Patel, Rahul:
+so every well type has a unique combination now every what sorry every row so let's say every well ID 1 2 3 4 5 there is a unique ID which is well ID so every well ID will have a unique combination of this material depending on the parameters. Is it by ID or is it the well type? The well type is one of the defining parameters completion code is other defining parameter casing design code is different parameter well head code is different parameter so combinations of different parameters create different unique attributes for so so for a single well so well ID or the sequence number defines what is the well and that well has multiple parameters and combination of this parameters define unique model requirement in each of this group so it's like a multiple and I mean a very high number of permutation for bombs yes there are multiple permutations so here let's let's his example the wellhead materials are combination of job type and completion code so they will take a completion code to be with
+
+Naamani, Mohamad:
+a job type certain then if that combination changes the wh material changes similarly and they have a logic for and they have a logic for this so in a way identifying the constitute or the raw material needed or the spare parts whatever in each bomb is depending on their that computation now I think I think this is this is your point rather than boil the ocean and try to create all the bombs. As long as you can take that well and instead of looking for bombs in S4, all you do is from that DWS system, take the well plan, take the items based on that well plan, what are the spare parts that they're basically they need, which definitely are available as master in S4.
+
+ Based on it understand what is for consumed and create the supply plan. Is that your suggestion Bastian? Yeah With a gazillion bomb if there is no value in it because bomb typically is done when you have 10 15 20 or your manufacturing company you have 50 car models or Whatever, but here if it's so many of them and it continues to change then yes Now, if the number of permutations we're referring to here is again manageable, let's say we only have 10 or 15 or 20, then it might be worth it.
+
+ But if it's a moving target, then I agree with you, Bastian, in this case, as long as IBP, instead of looking for the bomb, because I remember bomb was an expectation or a prerequisite for us. But if it's not, and IBP can read the plan, which logically is, you can read the preventive maintenance or this well-planned plan and based on it, you know that these are the items as opposed to bomb one bomb that will get the details, detailed items.
+
+ Then we should be OK in this case.
+
+Patel, Rahul:
+It's just one point. One point more there. So what you understanding is partial. What what Baskin is saying is. Yes, because I want to make sure everyone clearly understands and I know you have a very quick learning ability so I just want to give it this once to you. So essentially what I'm saying is well plan is correct but then the demand essentially becomes input to IPP as a manual input which means whatever activity they are doing so today the demand is calculated manually in excel sheets based upon this well plan and what we are saying is we will not automate the logic of calculating demand in excel in IPP you continue doing what you are outside your system in Excel sheets, and directly upload the output of your activity in IBP as a demand for this well plan.
+
+ Upload the activity of that demand so that demand doesn't go through S4?
+
+Naamani, Mohamad:
+How do they consume it? Supply planning happens.
+
+Patel, Rahul:
+So we are talking about two pieces, right? One to define what is required. That's demand. Now, the what is required definition is you have a well plan but the well plan does not have a material plan it has only the well plan I need to produce will now how to get from well plan to material plan these are the steps now if you don't automate this then user will continue doing what they are doing today in whatever systems they are doing most of them are using excel sheet which means they will continue manually calculating from well plan to material plan and then the material plan has to be uploaded in IPP as a direct input instead of you reading fall through the bomb.
+
+ Correct. Correct. OK.
+
+Naamani, Mohamad:
+That's what now.
+
+Patel, Rahul:
+So here here one thing what why Bastian was saying that they are using a system which has been used for the past 15 years. The EWD system which is the complexity here which has the metal definition bomb definition. But the point which Adnok is saying that this EWD system is a 15 year old system which is getting improved but then it is only used by onshore and that too for only certain metal category because post VMI they could not use this system completely which means one group company offshore is doing completely in manual in excel sheet and a portion of onshore is also doing it in manual in excel sheet and that is where AdNoc had requested that if we can eliminate this excel sheet and automate the process of defining BOM it will add a lot of you to ad-hoc interlink process.
+
+
+
+Naamani, Mohamad:
+Okay let me then ask you this and this is now to not to challenge but to check how acceptable what Bastian is referring to and what you just mentioned in terms of let's say continue using the WS now first of all roughly how many bombs do you think we have that's question number one and is it Still continuously changing so they've been using it for 15 years fine It might be good because it matured now.
+
+ So my question is if let's say we have a total of 50 bombs and in their Excel sheet in their plan based on the Sorry the plan itself and the combination of those columns they can tell us which bomb ID is then which computation of bomb, not computation, permutation. So the bomb ID that will come out of it. Then we will say, okay, today the number of permutations you have or total bombs is let's say 50, which means we'll do this pane one time, define those 50 bombs on S4.
+
+ And all they need to do in this case, because now it's a fixed definition, the bomb shouldn't change for the same combination of columns that you told me about in a well or in that row two or three. All they need to do when we read the DWS with the plan is just to refer to the right bomb from S4. So that question number one is, is the number of bomb manageable? Two, do they always have new bombs because of the nature of the business or no, they matured?
+
+ So for example, a steel manufacturing company or a cable manufacturing company. So I have like 50 bombs because I have 50 products. Every one or two years, I might add another bomb, but it's not like every one month I double my bombs. My question, does it make sense in terms of how I'm trying to give AdNoc two options saying, look, we would like to move everything to IBP plus S4. But today, in order to do this, have that many bombs and later on you can continue to update them.
+
+ If on the other hand they have a gazillion bomb and they continue to change we owe them the normal solution telling them look we can still fetch that bomb details from S4 itself but be careful because that definition of bombs needs to be continuously maintained by the business team because this is not something we can automate. What we can automate is read from the dws the plan and read the relevant bombs from s4 I'll stop here I hope we're on the same page I didn't go too fast but that's my my sort of comparison or how I can tell ADNOC to go for this versus that let's start with the question of number of bombs and how many time new ones will come up we don't know number of bombs but we know there are a
+
+Conference Room (Bastian Osorio) - Speaker 1:
+lot, not in 100s and 50s, but there are a lot. Yeah, same. And we don't know how many permutations we will have. I think they have exceptions to the rule every time.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+No, but permutations for me means more bombs.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, for me permutation means combinations of attributes that define a unique bomb.
+
+Naamani, Mohamad:
+Yeah, that's why I'm saying, so if my understanding of the bomb, I mean, be okay It's a definition that the quantity, maybe even the quantity doesn't change, but the list of items under a bomb should not change. If it changes, then it's a different bomb, correct? Yeah, that changes all the time.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+It changes, so it increases the number of attributes that define a unique bomb.
+
+Naamani, Mohamad:
+So not only the quantity, even the number of attributes.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Naamani, Mohamad:
+So Raul stepped out. I don't know why. Let's wait for him just because he has visibility on.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But just a point. Not very technical. I think we need to be smart and think what is the value that we can add them instead of just try to tackle the problem that maybe we can even, we can't do that at the end of the day. So I think we have to play smart here.
+
+Naamani, Mohamad:
+No, I agree on the logic, but the problem, you're catering to two different stakeholders groups. So if you're talking to the users, they might say, look, we've been using it for a while. And what you're asking for now becomes we need to define those permutations on S4 and then use this TWS only to create the well plan, so on and so forth. Why not stick to what we have? If you're talking to management, they say today, I'm okay to trust Excel in creating the plan as opposed to use S4 directly to list how many wells will be when, so on and so forth.
+
+ But I don't want all the logic of a bomb and quantities and the items to be still on Excel, which is a single point of failure. So you're right with the logic and where we can add value. But unfortunately, it's not a straightforward answer, because it's just like now you're coming up with a new solution, ignore all of this bomb, blah, blah. Some users are using Excel, and it's much more convenient, but with a margin of error.
+
+ And you go to a system that has user access and control and you cannot have some fields empty, et cetera. Unlike in Excel, you can just do whatever you want. It will make users' lives miserable, but management would say, I need something reliable with the full controls, so on and so forth.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But that's what's lacking for me, that there is not a vision from management that has been conveyed to the users, because every user tells you a different story, and they even ask us, what is IBD? What is this project for? What is the usefulness of this? And for me, that of course shows that there is a lack of vision. And for me, that's also another point. What is what we are trying to achieve here?
+
+ What is the expectation from management and why that expectation hasn't been shared with the key users? Because they don't have a clue of what we're doing here.
+
+Naamani, Mohamad:
+Yeah, AdBlock is too big. And by the time any message will cascade down, it could be either diluted or some people will not be ready. Maybe they sent already. So I think that's why you have a change management track on this project, because you need to identify who would be impacted like those and figure out. So here, I wouldn't say I wouldn't call it resistance, but you're just trying to tell them, look, you need to use this tool because my upper management decided on it.
+
+ And this is how things be in the future. Tackling that discussion, I think, I think is important. But before this, how easy or not is the application or the technical aspect of it? And that's why I'm trying to quantify the problem.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's the thing is that they're making good arguments against IVP because they said they have developing this software for 15 years, they have a very customized solution. So why are we creating something from scratch when we already have something to address this complexity?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Okay, let me play the role.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Just 10 seconds, then that's why my proposal is, let's try to use the benefits of IVP in our favor and tackle the problem in a more lean, smart way instead of just running into the storm.
+
+Naamani, Mohamad:
+Yes, but I'll tell you where the challenge is. In this case, you are accepting the pushback of the business and coming up with sort of a compromise or whatever you want to call it, whereby management might tell you, look, I know it's been 15 years, but I've paid an arm and a leg for the licenses and for your implementation project. Tell me, what is the difference between continuing to do this versus switching?
+
+ What does it take? That's what I'm trying to...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, there's plenty of... That's what I think is the core of the conversation. There's plenty of benefits we can get from IVP. We're using it as an input for the forecast. First, we will track the different version of the forecast. So if from one month to the next one, they change completely, forecast impacting all the supply chain vendors and purchases, orders, all that, we will keep track of that.
+
+ OK, then the thing about we will erase, we will get rid of the Excel sheets because everything will be done in ADP. So they can. Yeah, go ahead. Can I go?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I think that the Sorry, Hector here. I think that the main benefit is like planning. In fact, when we when we talk about like the like the normal scenario for a project implementation, like it's drilling, is the correct supply planning. As I've said many times, demand is just an input. Yeah, the objective is to optimize your supply planning.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+No, no, I get it.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, and we are drowning in demand when demand for us should be just an input. That's the point. And the users are raising some points. I've seen that yesterday one user is saying, we have tried to do three times already and we haven't been able to do it. And he also said, I think that another team is working on the same thing that you're working today. It's like a phase two for the WES, something like that.
+
+ So it seems that we are not completely sure if we are the only ones working in this problem right now. It may be another team for another solution or for the existing solution is also trying to do this at the same time.
+
+Naamani, Mohamad:
+So I really try to figure out then look but there's a difference. There's no other IBP that's happening in parallel There could be something that is helping them Upgrade DWS or make it more efficient, etc. Something like that. So you're right. Yeah, you're right We need to understand and we talked to Khalid and he mentioned this to Firas We'll try to understand just for one simple risk so that if today DWS is the source We don't want this source to change and even in one year But because, I mean, it could be good business for us to come and reconnect it.
+
+ But the idea is, while doing it now, that's why we always ask, is this solution stable? Are you using it as this source? Or S4 will become the main source. Now, quick question. If we use their Excel, or sorry, is this Excel in reality the DWS, but this is just a report from it? Or it's a combination of DWS plus Excel. There are two tools. One is DWS.
+
+Patel, Rahul:
+I'll go back to the flowchart. There are two tools. One is DBS or DWS. So let's call this one tool. And this other tool is EWDP. So this has the plan. This has the material. So the plan, we are fine. We can integrate. The material is where? Is the point where it's a concern which Hector and team have.
+
+Naamani, Mohamad:
+Which is the one that creates all the permutations that we've seen. So that Excel that you had is a combination of the two tools. The top is the DWS, the bottom is the EWDP.
+
+Patel, Rahul:
+Some companies are using EWDP, some companies are not using this EWDP. And then simply take the well plan, convert it to Excel, create the material requirement, and that's it.
+
+Naamani, Mohamad:
+So this EWDP tool is used for onshore, again, So in your graph make sure that it's either the EWDP can they make the acronyms harder and Excel it's either or so I think one so either it feeds this one or that one and the common as well planning. I'm following your logic but I'm playing also now the management role who would say okay guys If I continue to do this, what is the risk? And let me start first with the risk.
+
+ What is the risk if I continue to do this instead of asking them to move all the bombs so that color the right ones may be different color, either the EWDP and MS Excel make them green. It's fine, Raoul, later you can fix it. Raoul, please. Just color them green. I think the question from the management would be. Can you make those two green instead of blue so we talk about the different? OK, so we said the plan where this is a DWS and it's an integration with the system.
+
+ Logically, there's no risk there because we're relying on their plan. EWDP and MS Excel is where I'm seeing another or a risk, because either we will read from them, which means IBP is dependent on, other than S4, on another system, or for offshore case, NXM. Is that at least the first risk that we're referring to?
+
+Patel, Rahul:
+No. This only, so, yeah, so, We are talking about how we get the bombs. Partially, bombs are here. Partially, bombs are here. Now, the question is whether the SAP becomes the primary system for defining all the bomb, or the bomb will continue to be in EWDP? That's one question. What is the primary system for bomb?
+
+Naamani, Mohamad:
+Yeah, that's what I'm going in the same logic, Rahul. I'm saying the risk of keeping the greens is you don't have the bonds required by the blue box unless you tap into the green Excel or system and you don't have it as a proper definition in S4. That's in a way the risk. I'm trying to follow Hector and Bastian's logic that we do not want to drown into the demand. We just want to get this demand. However, they bought the three licenses or the three modules and they want to also do all of this in order to automate and also to consolidate as much as possible.
+
+ Thanks. So today, yeah. Can I intervene? This is not the first time that this happens to me.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+It's like a scope problem that whenever we need to integrate to a tool, they think, OK, why we don't take this tool that we want to get rid of into IVP. The problem is that many of the times that tool that they want to get rid of is a very specialized tool. That is out of the scope of what IVP can do. And I think that is the case. When I see this system that they have in, they have many things that are very, very specific for drilling projects and IVP is not that.
+
+ So if we try to take even just a part of that, we are not going to replace that tool, not at all.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+And you're talking about EWDP? Yes, that tool. So IBP cannot replace EWDP.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I see the risk that the expectation is that it needs to be very line that if we are going to take something it's going to be a very little part it's not that we are replacing that so you cannot
+
+Naamani, Mohamad:
+replace it you still no no yeah we cannot they still need wdp that's why the question is all you're breaking up can you hear me just just to be aligned in that argument hector I think it's critical if we
+
+Sebastian Alba:
+present that argument actually just set to tell them that the right way to do it is to activate the project system on S4 HANA that they are not willing to do. So they don't want the standard solution, they want a customized solution, IPP covering part of what even the S4 system should be doing. That's what I'm understanding. I am aligned with that. I think that the project system is the specific thing No, but I don't have to jump to another call, but I'll allow you later with the next number.
+
+
+
+UNKNOWN_SPEAKER:
+Sure, Sebastian, yeah. Thank you, sir.
+
+Patel, Rahul:
+So from my perspective, EWDP system, SAP IBP will not replace EWDP system, but IBP just needs the bill of metal piece of it. Now, whether the bill of metal stays in EWDP system or S4 HANA system, whichever system where the of metal stage then in that case adnoxial online internally that becomes a source system for everyone not just a partial uh like some people do use ewb system some people will use this for honor and some people will use excel that cannot work so yeah that's so let me summarize so we can close also yeah yeah just hold on one second
+
+Naamani, Mohamad:
+So, onshore are using either the EWS and offshore are using XENT. I have the following summary. Sorry, go ahead Kunal.
+
+Sheth, Kunal:
+Before you add the summary part, just would like to add that on top, add to the Bastian point that yesterday based on Umar's and Abdullah's point, they were looking for a business case for IBP as they are doing for last 15 years. So, definitely they are not going to replace the EWS. But I am just going through the SOW. They have clearly mentioned that whatever the bill of material which we have in EWDP or in the Excel for offshore, they would like to integrate in IPP without creating anything in S4ANA.
+
+
+
+Naamani, Mohamad:
+Which SOW are referring to? The origin, the scope of work we received, they refer to EWDP and Excel?
+
+Sheth, Kunal:
+Yeah, Excel.
+
+Naamani, Mohamad:
+Let me pull up the SOW. Excellent. Can you tell me the page number?
+
+UNKNOWN_SPEAKER:
+Page number 16. 16.
+
+Patel, Rahul:
+Here it is, 16 point number 10. Hold on. Where is this? 10, 10, OK. You're still at 9. It's 17.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+Capable of providing for the forecast to be carried out on business plan, which is DBC or well-planned. Bill of material and required quantities based on the forecast planning software should have capability to upload required data such as forecast plan, bill of material through spreadsheet. Spreadsheet. Especially for the offshore which they are talking about wrong. So I have no group planning software as applicable.
+
+ The software shall integrate with SAP for generic alternate stock code moving average by the SSA. The software shall integrate stock information from VMI in SAP. The software shall have capability to customize and enable stock based on kitting. The software shall have performance, perform component stock review analysis. Each categorized commodity are the four commodity for each category they want to have it separate.
+
+
+
+Naamani, Mohamad:
+Let's read the rest of the bomb later. Sorry Raul, but I think it's a good catch Kunal. Look, I think what this means. And in this case we can use this argument saying that these are two systems that are here to stay. And based on this definition. It's an option for them to define those bombs on S4, but we need to know. I think Tobias in Hector's point, as we design the solution now, are we getting the material from this EWDM?
+
+ Or we get it from S4, but we need to know from now. It seems at this point, based on the scope, and given that they invested in those two tools, I wouldn't say we misunderstood, but I think from the beginning, they're not trying to reinvent the wheel. And to your point, Hector, they want to use IDP. I mean EWDP has so many other functionalities so they will keep it. Now is there a sort of a challenge in this case because this is for drilling so we're saying for drilling demand we're reading from EWS and EWDP everything whether it's the plan and the material I think the only reason we need S4 is just any reference if it's a master item, and then IBP will just do the whole homework.
+
+ Is there a challenge, Hector, Bassem, and definitely Kunal and team, if, because MRO would use a different source. Everything is in S4. And then chemical most probably. So having those different variations is okay. If you got my question. Can you repeat? I didn't get it. So I'm saying fine. I mean, we spent a good amount of time, but to conclude, especially with what Kunal shared with us, that it's better and it's even part of their requirement to use DWS for plan, DWDP for the material.
+
+ However, this is applicable to drilling. When we go to MRO, Amaro and Chemicals. It is okay in terms of configuration. Yeah, it's okay that we use Asphor as a source. So I'm saying those different variations and where to get demand for each item type or business line drilling versus Amaro is okay. We can have multiple sources for the same solution, right? Yes, for sure. Okay. So interesting guys. Thanks Konal for let's say giving us a reality check, because I think it solved most of the argument that we were having, even what Bastian said, let's be more efficient.
+
+ By the way, isn't this list, isn't this something most probably you created, Bastian, with Sebastian earlier? I didn't do this list. I didn't create it. You were part of it. Just look.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I think that drilling came later.
+
+Naamani, Mohamad:
+At the beginning it was only MRO. I wasn't involved in drilling.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I wasn't involved in MRO and chemicals.
+
+Naamani, Mohamad:
+Yeah, it could be at the beginning it was MRO. Okay, so do we have our answer now? Because it seems if we follow this, as long as they keep maintaining EWDP and EWS properly, and our integration stays working, then we should be okay, correct? Yes, that would be the ideal scenario. The other question would be, we know S4, we know how to, I mean, when you create the extractors from IVP to S4, either the standard ones or you might do some fine-tuning.
+
+ Now you need to almost build custom or almost unique extractors to EWDP and DWS, correct? Correct which means on one side to create documentation which is fsd etc because it's there correct me if I'm wrong Raul because it's it's modifying extractors we need to write this ASAP that's one two no no if it is
+
+Patel, Rahul:
+not as for the extractors will directly connect from from IBP to this third-party system which means it's not an It's a new element, it's a new element.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+No, no, it's not a modification of Alice Thunder, it's a new element. It's a new integration directly from those systems to IBP.
+
+UNKNOWN_SPEAKER:
+We'll have to have a completely new extractor between IBP and DWS or DBC system.
+
+Naamani, Mohamad:
+And that was my point, which means you need to document it and get the approval on it as an FSD, no?
+
+Patel, Rahul:
+Yeah, I think so, but we have to check.
+
+Naamani, Mohamad:
+So my jump to that conclusion immediately. Now the second point, and this is mainly to whomever is working on integration, Bastian and Hector, because we have on our team people who know S4, do we have the counterparts in DWS EWDP that will help us when we build the extractors so they give us the right info? No. Because that might become another risk.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, it's a risk because we are also not sure of the feasibility so far. So we don't know the technical there and we need to assess if this is something that we can do a direct integration between the system or between a csflat file in the middle but we need to check how we
+
+Naamani, Mohamad:
+need to do this. Okay now to be honest I had this on my list now I remembered it maybe a month back because I discussed it with Khaled. I was listing in my brain the key risks and I mentioned that we have every when I knew about third party in the workshop. So I put this as a risk. Now, if they provide us with those resources, then we can work with them on this extractor. And as you said, was it a flat file or because it also depends on how frequently we need this.
+
+ So this means as a request or as an immediate action for us, this means for as if we're building now the extractors to get for drilling sorry for mro and chemicals and we are doing this for s4 we need immediately counterparts to start working with us on the extractors for drilling following this logic ews and ewdp correct a movie have a one percent I have a question for you before you ask me in the architecture in sdd what did we put in that grow drawing that shows IBP, the different source systems, whether S4 is one source, mostly it seems for MRO and chemicals.
+
+ Did we show also those two? No, these two we haven't shown in the SDD document.
+
+UNKNOWN_SPEAKER:
+Why not? We knew about them from the beginning.
+
+Sheth, Kunal:
+The integration, if you would like to do integration then definitely it should be part of architecture but if if it is a part of flat file upload then need not to mention in the SDD okay anyway let's I'm not
+
+Naamani, Mohamad:
+going to in a way claim that I would have thought of it but ideally I mean anyway SDD they know it's a living document but now it needs to include this integration because this will trigger or give us the right to say guys because of this so we understand the S4 and we'll work on the extractors but for this as we build the extractors we need someone from EWP, EWDP and EWS to tell us or to handshake with us saying these are the fields that we need for the plan and for the material and so that we receive them.
+
+ Right, Sebastian and Hector?
+
+Naamani, Mohamad:
+We lost bus ride. OK, so good discussion. I mean, once you're done.
+
+Sheth, Kunal:
+I know the name of a person who can help us on this. It is to be official, guys. Yeah. So I took the name from the our design session only. That is Deepak Deepak Agrawal. If you remember, he has explained us this more the two system.
+
+Patel, Rahul:
+during our design workshops yeah yeah I know we've connected with them in yeah he's from the IT who is actually handling this two system from AdNoc yeah okay about the point it took us almost an hour I'll let you
+
+Naamani, Mohamad:
+finish Raul but it's a good discussion I think part of it also let's always reuse the sound like Kunal did because it answered half of most of the questions possibly, but I think we need to have those discussions because it could be either a risk or we need to brief the business on. I hope we have a closure or we're okay, other than trying to identify who are the counterparts to work on the technical integration with us.
+
+ Is that okay, Bastian and Hector? Before, Raoul, you want to close, you open up. So, Bastian, Hector, we're okay on this front, right? Of architecture or how to proceed. Sorry, just to be clear, what are the next steps? So that's what I'm saying, in terms of what system to use for what, it seems we have even a green light from the SAO and we will tell them, we'll explain this to them, that Ford Well Plan, we will take it from EWS, we will get the bomb and Excel for offshore.
+
+ So we next step is to confirm this that this would be our. Architecture or integration architecture. That's one two. We want them to provide us with their counterparts. Technical resource that can work with us on integration for those two systems because for S4 we already have the started, correct?
+
+UNKNOWN_SPEAKER:
+Correct. But I will.
+
+Naamani, Mohamad:
+What did you want to add? It's complicated.
+
+Patel, Rahul:
+Two risks to what we have discussed. So let me play the bad cop here. And apologies for that. There are two risks to the discussion we are trying to have.
+
+Madhavan, Tara:
+OK, it's a nice change from Pramod. So. I was just thinking Raghav started learning and taking pointers from Pramod.
+
+Naamani, Mohamad:
+Yeah, he's correcting everyone. I don't know. I'm not going to comment. And Raul, you know what I'm dealing with. Sorry, Basen and Hector, this is what I'm dealing with. I'll stop you. Bye, Raul.
+
+Patel, Rahul:
+Yeah, so the two points I want to mention here is that they've clearly said that while TBS and EWDP are the points where we need to connect, integrate with AdNoc group planning software as applicable. So they can always claim SAP is the group planning software. So I am not assuming anything, but I feel that there will be resistance to the discussion what we are having. Second point, the EWDP system, which we are saying that as per the solve, we need to connect with it.
+
+ But within AdNoc, not everyone is using, which means if we go ahead with this architecture, we need to push AdNoc so that everyone adopts EWDP internally so that our plan can work. These are the two risks.
+
+Naamani, Mohamad:
+These are valid. These are not, I mean, I would say a risk, but these are part of the explanation. That's why I said the first step to R Sebastian, the next step is to draw this architecture. That's why Kunal we need either to amend, but I don't want to get into delay of the approval. Let us finish what we submitted and then we can update version two because it's a living document. So we need to draw this architecture and tell them that's how we will get each piece of info we need.
+
+ So for MRO, it's going to be, so I think we'll create two or three flavors of that drawing. Is actually S4, S4, everything is there. Chemical is the same. For drilling, it will be the following architecture. Now, as we say, though, maybe someone who's not involved will say, no, no, guys, why do we need this? Let's just have everything in S4. So we need to explain not only based on the sound, that basically those two systems have information to Hector's point that not all those features are part of IBM's And if you want to take some of those items, let's say from EWDP, you want to take the bomb, move it to S4, you have the following complexity, which is so many permutations and so many new bombs that we're happy to accommodate or to assume a bomb is coming from S4 like we're doing for other verticals.
+
+ But basically, this is not something that the team can do. I think we just need to have this preparation with the architecture so that we can explain it to them. Most probably, they will say, okay, this is our SAO for now. Okay, let's say six months or one year down the road, we decided to create BOM on S4. I think it depends if we're still in hypercare or if it's after, if it's a change request or they will do it, it's to be decided on.
+
+ So this is the first action, which is almost socializing or explaining this architecture. And based on it, we need to get the technical resources ASAP, which can be in parallel. We don't need to wait. We just need to tell them, look, EWDP and EWS are sources who are the counterparts so we can continue on the integration. Agree, Bastian, in terms of what we can work on next, because we're trying to finish the extractors.
+
+ Yes. As you continue for S4, we'll identify who is there for the rest. And as Hector mentioned, do we have a preference or recommendation, Hector, to go for direct integration versus flat file or whatever? What are we doing with S4 direct?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Direct is always the best, but this is a very specific system, so it's unlikely that that is the case. In those cases, we use the CSV file in the middle. But I don't know if we can just download information in a frequent basis from BWDS or whatever system to that flat file, you know?
+
+Naamani, Mohamad:
+So that's the question. Then that would be the first, I mean, the reason we'll tell them as we're designing and knowing that as for we're doing direct integration, we need to start talking to the technical resources for those two systems to agree on the best way for integration.
+
+UNKNOWN_SPEAKER:
+Flat file, direct, whatever, etc. Okay. Yes.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+And we need to start having those sessions as well. I think that we have one technical in the morning, maybe we can just start using that one for these topics unless, I don't know, maybe that's too little time, 30 minutes.
+
+Patel, Rahul:
+Before we go to AdNoc, probably Hector, Bastian, Kunal, all of us need to align on what is our plan and strategy because up till now we are having a certain stream of thought and That's what got documented in BPD, and we are trying to execute and demonstrate that. Now, with this SOW input and what we're trying to do, we need to align on how our existing thought is changing to a new thought, how we communicate to make sure AdNoc accepts this thought and helps us with this new direction.
+
+ Yeah, we need to be very smart.
+
+Naamani, Mohamad:
+See, we've been pushing AdNoc for, We see the variation. For me, we were talking about in BPD, BRD, et cetera, about what is supposed to happen. We read the demand from the system. We understand from their system. We understand we're based on inventory policies. Then we split the supply. Now we're saying in the how, so that was the what. In the how, we're basically tapping for drilling MRO chemicals into S4, but for drilling it's this system, and go into details.
+
+ Where do you see that we're changing course?
+
+Patel, Rahul:
+Today, so the changing course between what we have been worked out all this while, this definition and everything. Whatever we are trying to do, connecting the system, are we going to get the demand? Are we going to get the bomb? What we're trying to do with this new approach and how it influences our demand we don't know that right this current approach we knew how we are going to get a demand I assume we are we are going to
+
+Conference Room (Bastian Osorio) - Speaker 1:
+manage the integration to get the demand up well well id level are we going to get directly the demand or are we going to get the bill of material from the system for me the demand the demand right away
+
+Patel, Rahul:
+see raul required quantity is nothing but the demand if you see after bill of material and required quantity based on the well design bill of material and required quantity right based on well design so correct I'm seeing that we need to get this uh forecast the forecast plans is not capable to upload required data such as forecast plan and bill of material so forecast plan they can always be the forecast plan for the well and the bill of
+
+Conference Room (Bastian Osorio) - Speaker 2:
+material so we are if you already have the plan exploded bill of material sounds a little redundant. Maybe they have a reason why but probably it's like a misunderstanding.
+
+Patel, Rahul:
+We know from all the sessions right that their system does not give them the requirement. We know from all the discussion that the requirement is calculated manually in Excel.
+
+Sheth, Kunal:
+See Excel part Rahul that is for the offshore but for the onshore TWDP is having the capability to generate the forecast.
+
+Patel, Rahul:
+So we are not differentiating the solution for onshore or offshore, right? Which means whatever solution we discussed, if we are integrating with EWDP, we know that EWDP also is not giving them the direct requirement, which means are we talking about integrating BOM or are we talking about integrating demand? And we know that demand is not computed in EWDP, right?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But even if we take this problem to ourselves. The BOM issue, Rahul, if they are not able to solve it, why IBP is going to do something better than a specialized system and that is what I don't understand. Why we are talking about getting all this product into IBP instead of just using well what they have.
+
+Naamani, Mohamad:
+Sorry Raul, why are you saying that demand is not in EWDP? Is giving you the BOM which includes all the material and the quantities. Now, the actual consumption that happened is in S4, right?
+
+Patel, Rahul:
+No, so F core consumption happens when you plan, you have material available, right? So that's the last piece of IBP where you have forecast, based upon forecast, you have material, material available. Now I'm building the well and consuming.
+
+Naamani, Mohamad:
+Let me repeat the question. Is trying to read the demand. Demand means consumption of items. So in S4, it's whenever there was a work order that got executed and it consumed two dots, one screw, blah, blah, based on a specific work order to build a well or to do preventive maintenance or corrective maintenance. Now, that's not correct.
+
+Patel, Rahul:
+That's not correct. Let me correct you here. Demand means the consumption happens through two years or three years after you forecast the demand. So you are forecasting two or three years ahead of time from the point of consumption. So SAP has data after you, after the material available, after you produced well and now you're consuming the material to make sure that when the well is produced you're correct, consuming the right material.
+
+ But planning happens two or three years before. So demand is two or three years ahead of the consumption. Okay. Which means two or three years ahead of the consumption, we need to forecast demand, right? How would we get demand? Demand is a multiplication of BOM and the plan. Says, for one well, I need this much quantity. I have 50 wells. So based upon the number of wells, I need to multiply the quantity with BOM.
+
+ I get the requirement at material. Now, the EWDP has BOM. The DW has plan. Where is demand? That's why they are saying bill material and the required quantity based on the well design. The excel sheet I've seen from EWDP includes the items and the quantities.
+
+Naamani, Mohamad:
+But these are the bill of materials, right? The excel sheet you just showed. Which excel sheet? This, my excel sheet, this?
+
+Patel, Rahul:
+Yeah, it has the quantity for each item. No, this is something we've prepared for our IBP calculation. So this is not from EWDP.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But it's true, I mean, if you already have the BOM, then why you would have the BOM if you're not exploring? You have the bone for exploring, so they need to have the material quantities on that system or in Excel or whatever.
+
+Naamani, Mohamad:
+How can they have the sophisticated EWDP solution, which they said they've been working on for 15 years, and it says for this well type and this combination that you have on top, well IDX, it's well type and completion code blah, blah, blah. Based on it, the EWDP spits or identifies all the different material and the quantities. If it doesn't identify the quantities, then how do they define it? Manual?
+
+ Yes, that's the reason why most other group companies are not using it. Only certain set of people are using it.
+
+Patel, Rahul:
+It cannot be manual after 15 years. That's the reason why. That's the point AdLoc is making, that even though we software, we are not able to have a single solution across group companies and they're looking towards IBP as a single solution, single process for all the group companies. But IBP won't be able to replace EWDP Rahul. I'm not disagreeing to the fact that IBP will not replace. All I'm saying is we don't know for sure to conclude the process.
+
+ This is how we are going. So what let me propose is let's have this discussion with the EWDP guy once again and confirm the the fact that EWP has the demand, which is what we need. And we integrate, we repeat, and get the demand. Now, for us to propose a solution, this fact has to be established.
+
+Naamani, Mohamad:
+Once this fact is established. And to have the discussion organized, and it's easy to understand, like I had to ask a gazillion questions to get there. So I think you need to say, what we need from a source system are the following. Plan, bill of material or items, Quantities and anything else you would say today for drilling for chemicals and MRO we're using we're getting all of this from s4 because the demand is planned there and You have the material so on and so forth, but for drilling the plan is from DWS EWDP should include Material and quantity now if you don't have that quantity What is the alternative?
+
+ Ideally if we're integrating with EWDP either we will get this quantity or if they say no, we don't have it If you even if you force them to define bomb that gazillion permutation of bomb on s4 But they don't have the quantity. They will still guessing let them guess in EWDP and put it better than Doing it in s4 and it will be extra effort. You got my point Raul even if you say today EWDP is not exactly good source for demand quantities.
+
+ But it's not good enough. You still need it somewhere. So ideally you keep it from you get it from EWDP and they need to shape up to update the quantity, correct? Otherwise, how do you get it? You cannot get it from S4 because there's no bomb there.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+So either they have to shape up the EWDP system internally or they need to give us the data in Excel sheet till they shape up.
+
+Naamani, Mohamad:
+No, no, no, no. Too many doors and I hope Bastian and Hector I would assume they'll agree because it will make things complicated. We don't want a Christmas or a party of multiple sources so if we're tapping into the EWS for one thing and EWDP for the remaining let's say virtual BOM list of material and quantities let's not say give us the BOM or list of quantities from EWDP and give me the sorry list of material from EWDP and give me the quantities of those material in an Excel.
+
+
+
+UNKNOWN_SPEAKER:
+It's a nightmare. Right? Yeah.
+
+Naamani, Mohamad:
+So Raul, you open a can of worms here. Basically, it's easier for them.
+
+Patel, Rahul:
+The point I'm trying to make is the point I'm trying to make is AdNoc is not able to implement EWDP in AdNoc group companies. Right now, a certain section of AdNoc people are using it. What we are trying to tell them is that as per the SOW we are supposed to integrate with EWDP. You internally work out how will you integrate this across the group companies. How group companies will use this EWPD system.
+
+
+
+Naamani, Mohamad:
+That's what we're trying to propose. I understand your point. And you do not accept their exceptions. You just tell them basically since we're integrating for each vertical drilling versus MRO versus chemicals will have one way to integrate and collect the data and it will be for drilling EWS plus EWDP. If they're not using it, not all of them are using it, they should use and if they're using it half-baked and they don't have quantities then they need to put quantities.
+
+ You need to fix your design it cannot be a moving target.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, my point is that I understand the current problem, Rahul. We are aware that they haven't been able to use this system. The big point is that if they haven't been able to use that system, why they will be able to use IBP that is not a specialized system for this? So they haven't been able to use the specialized system, you know? Whatever we are building on IUP, IVP is not made for this. Whatever solution we are building related to the bombs is very, very custom.
+
+ It's specific in this scenario because we have bombs, but not this bomb scenario.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+So, um, we are reinventing the wheel basically for them.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+And this is not the way, this is not the solution for this.
+
+Naamani, Mohamad:
+Or we're allowing too many workarounds because if you're saying now let's allow them to use multiple sources, and even when using EWDP have quantity from Excel and whoever is not using EWDP let them then you will have three or four integrations and even if this is doable technically it's a nightmare to manage remember Raoul when we started with this document recommendations and findings etc is to force them to standardize on certain things including what is to be defined in S4 if there are missing attributes on the item mask or even some, I mean, we thought at the time that BOM should be in S4.
+
+ Right now, the same should be here. We're integrating with EWS and EWDP. This is the data that we're expecting. And whatever is missing, they need to start filling it until then. Isn't that the logic that we use for this findings and recommendation? That if something now is not available in S4, they need to fill it ASAP. True? Are we on the same page? Rahul or you disagree? We cannot please everyone and accept the status quo and design around it because it will be later on our responsibility to update or adjust.
+
+ Not to mention that some people will make us look bad that we did the mumbo-jumbo spaghetti architecture.
+
+Patel, Rahul:
+So while I agree to what Hector said that if they are not able to utilize their own system which is specialized for the last 15 years across the group companies, I don't think, as part of the project timeline, they'll be able to do this. So when we are proposing the solution, if we don't give alternative to EWDP, then we are planning for failure. Because if they are not able to utilize this EWDP as a common system for last so many years, how do you think we can say that they'll be doing it in the next few months?
+
+ First of all, they'll not be able to do it in the next few months, which means the alternate solution is only to directly upload demand in IBP? So if they are not, I think that in that case, the failure is the only option, because if they are not able to do it on their system that they already know, it's less likely that they will do it on a system that is just starting. So that's what I'm saying.
+
+ If it is not their system, if it is not our system, the only way to do it is continue doing how they're doing it manually and directly upload the demand in Excel in IBP, right?
+
+Naamani, Mohamad:
+I need to disagree here with one sort of rationale that you're following. That if adopting a new solution like IBP is going to be hard, then let them go back to the old habits. This is a very dangerous exception to allow them to do, because also management will say, guys, we got you here so that we move to standard, we eliminate exceptions, et cetera. Tell us what's required and then we'll make it happen.
+
+ Now, if, because my problem is if we allow those exceptions, it will be another 15 years and no one will use it. Which means IBP will be as good or as bad as that Excel, lousy Excel sheet that they're filling and it could be completely full with errors. Do you agree? Because you cannot, I mean, it's just an Excel sheet. So using the excuse or the argument that because it's 15 years, it means they cannot push now, let them make that decision.
+
+ We need to tell them today the different sources. And again, that's how we need to structure that discussion with them. We're okay. Chemicals, we're okay. Drilling, these are the sources. And these are your options. If you continue to do this, then basically, Knock yourself off, just keep doing it, but then you're not leveraging the value because it could be very error prone. Or you need to all use one solution so that you have something reliable.
+
+ But immediately assuming that it will not happen and then go for the exceptions, that's what I think is not going to help us. Then we will not, maybe later on the solution will never be accepted. So you think that you're trying to avoid failure. Becomes us staying forever because we didn't put a proper target. We owe them and ourself a reliable or robust target architecture. Any workaround that is referring to a specific duration.
+
+ So we will say, look, between wave one SIT and maybe during hyper care, we will do now one time load of data from Excel, but we will design the solution to read from EWDP. So that you'll give you a bit a couple of months to load or to populate all the missing info fine But designing it based on an Excel without them making that decision is Going to make us look really but at least that's my don't take it personal I'm just now arguing because this is ad knock and you have everyone under the Sun that later on will come and look how KPMG they don't even know how to configure something like this.
+
+ No one will say there was an exception etc So, we will push back, and if they decide to go for half-baked solutions because they don't want their users to change their habits, let Asma and the team decide and say, yes, you're right, guys, we thought that we can do this. Now, if they can do it in six months, they have hypercare, we can just train their team and they can do this. If not, then it's a no-brainer.
+
+ Another phase later on. At least are we aligned, Raoul, on the logic. I don't want us to surrender because they failed for 15 years to use this to, so that we can also fall into that trap.
+
+Patel, Rahul:
+While I'm aligning to logic, I feel that we are being too optimistic in saying that just because.
+
+Naamani, Mohamad:
+But I cannot, yeah, but I'm not going to jump to a conclusion that they will push back and accept the pushback of users and then go for the compromise. I'll make my case first. I'll push against that and highlight it to whomever is deciding. If they surrender saying, look KPMG, we know, I mean, we wanted to use this, but it doesn't look feasible. Let's go for it. Why do I have to make that compromise?
+
+ I'll keep it as an option. I know that could be the failover option, but I will not immediately assume it.
+
+Patel, Rahul:
+Yeah, that's fine. That's fine. So let's, let's, I think we've been having this conversation for a while now. Let's conclude the conversation, define the next steps on how we want to proceed. Because this changes the way the solution design is happening. And I don't know what this change will create impact to the timeline which we are having. So let's align on the next steps. We should change the timeline that we have?
+
+ I don't know. I hope not. If we manage to get the integration.
+
+Naamani, Mohamad:
+Yeah, if we integrate properly with EWS and EWD. For the information?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I mean, in terms of configuration, it will simplify a lot of stuff. We've been making a lot of fancy stuff that won't work. So we just have to go with a more simple standard model. So in terms of configuration, I think it, I mean, if we, we will do it. My concerns are more regarding the integration, part. So that will be, for me, the first step will be to align this solution with Abdullatif or whoever is responsible for drilling.
+
+ And then second step is start immediately with the technical team to get the integration, get the file. I have an objection.
+
+Naamani, Mohamad:
+I don't want only Abdullatif because I don't want someone who would say, yeah, I'm not sure, etc. This is more of a decision making team.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sorry, that's what I said, Abdullatif or whoever it is. And maybe I was a little bit soft. This is my suggestion. For me, for me, absolutely is not enough.
+
+Naamani, Mohamad:
+Exactly, so I think we need to brief Khaled. And then even if this discussion, because this is a very important discussion, if we want to pull, I'll use the same situation that I would when we involve Firas saying look, we although it's for MRO demand and it's for the free case of end user. I know that's why I'm saying, but in order to explain it properly, will say this is the case. We realized, and it could be a quick discussion or something, an easy sketch on a slide for Firas to say, this is the situation.
+
+ Last time we didn't even need a slide. He only said just draft it and send it to business. Here we need to explain it, but at the same time, so the discussion with Khaled Monday morning is, Khaled, this is the case. This is not something that we want Abdul Latif as point of contact now for drilling to make a decision Because this is a headquarter decision on how this tool is going to operate The reality is you have two systems today for drilling that are partially used now If we design the tool we want to make sure it's across and this is what needs to happen so on and so forth and Then we'll because I agree Abdul Latif would either drag this or might not be able to have any answer.
+
+ What doesn't hurt is to check with Khalid to start looking for those experts because nothing prevents us from trying to understand in parallel how those tools work and what would be feasible as integration like Hector mentioned. While we mention to everyone that this is how this integration would OK.
+
+Patel, Rahul:
+OK, so the immediate next thing is to align with Khalid on who are the people with whom at a headquarters level we need to align, including Firas for sure. And then to be able to parallelly work upon a communication plan with this set of important people who can help us decide on the decision, and in the parallel work with the technical team to understand more about the tool.
+
+UNKNOWN_SPEAKER:
+Correct? Yeah.
+
+Patel, Rahul:
+Hector Palacios, you guys OK with this approach? Yes, whatever the case, either way we are going to integrate to the systems, so we need to need to start checking this.
+
+Hector Palacios:
+Technical steps will come later on, but first we need to align with their management.
+
+Naamani, Mohamad:
+Yeah, but but whatever the technical steps, let's do in parallel to to know who can help us etc it doesn't hurt to start because it will take us some time to identify existing solution also we are connected to DWS
+
+Patel, Rahul:
+so which means we have to have that conversation anyways so let's initiate that conversation for DWS and also for EWDP we need to know even if the old solution also we needed more information of EWDP so anyways we need to connect to those technical people to understand the current status of the systems this is going to be needed anyway it's not so let's Yes, let's not wait for this decision and let's continue working in the technical approach at
+
+UNKNOWN_SPEAKER:
+least. Sure.
+
+Patel, Rahul:
+Okay, so I'll align this with Khalid Monday morning first thing on the day, but we need to parallelly work on putting some PPT together. So let me see if I can put my thought together on the PPT over the weekend so that Monday we'll try to put something together for at least the first draft to be reviewed internally.
+
+Naamani, Mohamad:
+Okay, while closing guys around the table, when we have those discussions that require this attention, so now we extended by an hour the huddle. I think the purpose of having the huddle very well organized and the list always up to date is whenever we're hitting a roadblock for one of those rows, we immediately schedule a call to discuss that item separately, like we've done for this one. So let's make sure that if there are other topics that are urgent and require attention, we'll make sure to raise them and book a session with whomever is needed.
+
+ Maybe for other sessions like today, the training plan, I didn't join, Hadi and Tara did. But at least let's make sure if there are some pressing things that we book the required time so we don't delay you also from execution.
+
+UNKNOWN_SPEAKER:
+Okay. Noted. Okay. Yeah. Right.
+
+Naamani, Mohamad:
+Um, that's how much time we can afford still to have a child.
+
+Roumanos, Hadi:
+So if you want to jump on a separate board with at least let's be quick if you can. Otherwise it's fine.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Roumanos, Hadi:
+Let that mean I'll call you something.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Roumanos, Hadi:
+All right. Thank you, everyone. Have a nice weekend.
+
+UNKNOWN_SPEAKER:
+Bye. You Bye!
+
