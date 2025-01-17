@@ -1,0 +1,393 @@
+UNKNOWN_SPEAKER:
+Let's wait for the I mean, yeah.
+
+UNKNOWN_SPEAKER:
+Are in the office? Yes. Yep. Every Friday. Cool. Hi everyone. Hi.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So a few updates. I think this is more concerning, it's more related, it's absolutely exclusively related to drilling. Just so you know, Arun and Sagar, we had a meeting this morning with Hector first, and we aligned into, instead of building all this complex bond in so many different levels in which we will not be able to integrate, I mean, to address all AdNod's complexity related to BOMs. We agreed on basically put that complexity out of the system and integrate directly from EWDP.
+
+ So we have then a new session with KPMG management. Can you unmute yourself, Sagar, please? Yeah, thank you. And this is going to be the strategy to follow, to push in the following days and following weeks. So the idea is to integrate the forecast from their system directly at well ID and material level. And this is where, and from there, we can start the process, okay? We, of course, we can, take snapshots to see how the demands evolve but the core of the solution will be supply.
+
+ We're going to manage supply with the standard bombs as you define with ratios and that's it. So I think this will simplify the project and will add value quickly. I think that's the main benefit. We will be able to address their complexity quicker instead of trying to build something that we will never finish, okay? So from the integration point of view, I think nothing has been changed so much. The only thing is that we won't need to integrate the BOMs from their system, which in this case obviously simplifies the work.
+
+ So with ThingSagger, then we still need to load the production source header and item four to establish the relationship between generic and branded codes. But this is something that we'll be addressing wave two. So no need to worry or to rush on that task. Okay. And in terms of, yeah, and we will need to start working on the integration for EWDP probably via be a flat file, but we will start having the technical session once first KPMG aligns with the technical team, sorry, with the management team of AdNoc, basically stating that how it's going to be the strategy, the design strategy, right?
+
+ But I don't know what's your thought, Arun, if you want to say something related to this decision, if you think it's a good idea.
+
+Arun Singh:
+I think, yeah, looking at the project timeline, I think it's a good idea. Let's directly integrate the forecast into IPP, and probably they can do some fine tuning at the demand side. But yeah, because the BOM project will never be finalized until unless they have internal alignment. So I think, yeah, that should be fine.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Cool. So we don't have a clarity regarding the dates yet. For sure, we cannot afford more delays. But considering this simplifies the project, this shouldn't have a negative impact in the timeline.
+
+UNKNOWN_SPEAKER:
+OK. Why is it not here?
+
+Arun Singh:
+Why is it not here? So basically, I'm So then in wave 2 we will be demonstrating both like small piece of demand and entire piece of supply, right? For the unit testing?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+It's not clear. For me, it will be great if we manage to get the info because configuration will be pretty straightforward.
+
+Arun Singh:
+Okay, so now the drilling and tying will be following the same principle, right? Like direct upload demand.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, you're right. You're right, they will be kind of the same solution. The only difference will be that in tie-in there is just one code, whereas in drilling of course you have BMIs, you have for those BMIs, but from demand perspective, you're right. They're kind of, from demand perspective, they're the same. We need to load a demand at well ID level, which for us is going to be a customer, right?
+
+ And that's it pretty much.
+
+UNKNOWN_SPEAKER:
+Yeah. Okay. That's fine. But don't, don't do change.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Don't, don't change. Don't erase anything. From the configuration until we have the total confirmation. Otherwise, can you imagine you could start deleting and then say, no, no, we will go with the bump.
+
+UNKNOWN_SPEAKER:
+Okay. Cool.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+How are you guys going with the scripts? This is something that Fiamma was asking. I'm not sure what... Sorry.
+
+Fiamma Giorgi:
+Yeah, yeah, we just finished because we made some adjustments for the preventive part. Now I think it's ready. I mean, it's a draft, but I think she can share it with the KPMG.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+We'll have a meeting, a one hour meeting on Monday to review the demonstration in one second meeting to address the inventory session. I will schedule that meeting later today and the inventory session will be on Tuesday, as I said. Another point that concerns me, that worries me, but I will discuss it with Hector later, now that you're here, Reina, is that we still are missing some definitions for the for building the extractors for the storage location mainly for location source.
+
+ And I understand that for some key figures, we also don't have the definitions or we haven't defined the logic that will allow us to integrate transactional data at storage location level. So it's something that I will discuss today with Hector.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+From my side, I don't have nothing else to add. I don't know if someone had something to add, any announcement.
+
+Sagar Vora:
+Someone will become father, I don't know, or mother. No, no, no, I'm already fathered.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+Uh, so I think you have one, one kid. He's nine months old. It's low. It's too lowly, too lowly.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Please. Okay.
+
+Sagar Vora:
+I was saying like, uh, today I connected like in, uh, afternoon we had a call. Okay. The technical call. So I told him, so the IBP system. Term the IVP data store is down basically okay so we are not able to progress with the development so Rahul asked me to update the whole thing that's why I forwarded means I have sent one email then also I requested Fowler to help with SAP. I have raised a high priority as a certificate on that and apart from that we were expecting to complete one IVP certificate set up today.
+
+ Okay, by end of day, but I think the certificate is not ready from AdNoc. Kunal is behind me like ask Kaiser by when we can close. But I said like, I cannot commit the dates because it's with AdNoc. So still I have requested Kaiser to try to close by next week so because uh he is saying like we have to somehow close the std sign up so we get the payments so you know mostly next week we will try to close the pending items uh from the std front like the ibp certificate the smc certificate and the necessary.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+And I heard something about the data stores in a ticket that was raised.
+
+UNKNOWN_SPEAKER:
+What happened?
+
+Sagar Vora:
+Data store is not working. It's giving error.
+
+UNKNOWN_SPEAKER:
+OK. But in the sandbox.
+
+Sagar Vora:
+Yes, in the sandbox. And why is that? We don't know the exact reason. It might be some changes might have happened from the ad hoc front. We are not sure. So today we connected in the morning. I shared one SAP note and we performed some steps, but it was not a success. We are still facing the same So that's why we raised a high-priority ticket.
+
+UNKNOWN_SPEAKER:
+Yeah. Happens a lot.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But I guess if they raise the note today, it should be very high, I understand. The status, the priority, it should be solved quite fast.
+
+Sagar Vora:
+Hopefully means I raised in my morning and till now I haven't means it's still processing on SAP. The status is processing on SAP. So that's why I've asked Pelayo also from SAP to help with that. But it looks like she's on leave like today. She might be back on Monday.
+
+UNKNOWN_SPEAKER:
+So let's see like how much time it takes.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Okay.
+
+Sagar Vora:
+Yeah, because of this, like we also means we can do development, but we cannot test anything like, No, no, I'm saying like we can do the development, but we cannot test. That's it.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Have someone something else to say?
+
+Reinaldo Gutierrez:
+Yeah, for the single sign-on on CIDS, I was talking with Rahul, I think. We are looking for the best time to do it because I know if we start to do that action, we are going to lose the connection with CIDS. So we are going to stop the integration part. So I have to meet with Rocio to look at the best time in the project to do this action because it cannot be done in the cutover part of the project.
+
+ It has to be done early in the project. That's the thing there.
+
+Sagar Vora:
+It has to be Yeah.
+
+Reinaldo Gutierrez:
+I have to be like, yeah, yeah. It has to be before.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+I mean, I also said they said the same thing, but Kunal is behind. Uh, he's saying like, if we don't do now, then that STD will be signed with risk. And, uh, then college needs to submit some risk mitigation plan, something like that. Some extra steps it should be performed. But I said, like, uh, it would be risk. Like if we currently do the single I know, because in case if we face any error, then that means that will create some issues.
+
+ But Kunal was not agreeing, Rahul was okay. So might be that's where Rahul had a word with Reinaldo.
+
+Reinaldo Gutierrez:
+Yeah, yeah. And the idea, Sagar, is to put that in the FDD and submit that for approval the next week. So I will be filling that in the We cannot test it next week? No, we are not going to perform the stack next week. But what we are going to do is to pull the stack of how to do it in the SDD. And during the Cutover we cannot do it? No, it cannot be done in the Cutover, but it has to be before, yeah.
+
+ So that's why I have to meet with Rocio to see the best time in the project to perform this action because it could take us like a week if we have any error there.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, yeah. I think the sooner the better because the more we approach into the unit testing or any testing phase, the more likely we need integration. So if we run out, like if we, I don't know, if you guys just you better break it now than break it in, I don't know, in a month.
+
+Reinaldo Gutierrez:
+Yeah, for sure. That's why I want to meet with Rocio to see the timeline of the project and to be aware of what is the best moment to do it.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+And Reinaldo, I think in HDD we have already updated the architecture and the operational model side with single sign-on. And also we have mentioned and like it would be a single sign on, but I don't think we have to mention steps because that will be in a run book, right?
+
+Reinaldo Gutierrez:
+Yeah. Yeah. But, uh, Rahul want to let it in the document, you know, like a reference. So I send you the note, uh, for the single sign on. So I will put that now there as a reference to the single sign on by CDS.
+
+Sagar Vora:
+Okay.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Reinaldo Gutierrez:
+Another thing I said, I think just to let you know that yesterday They consult the album consulting finish the The extractor for product. So now product has the new fields Okay, that's so so saga you can Import again the extractor and you will see the new custom filter I don't know about the team who is going to put the fields on IBM Yeah, for now, we are not going to be able to map it for the error that we have in the datastore.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But if you can create those fields, it will be great.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But they already exist. OK, that's perfect. No, not all of them. So the event team can help us on this one. Can you take this point? I think that Renato shared the other day the list of fields that we have by the extractor.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Which fields are? They're not in the segmentation?
+
+Reinaldo Gutierrez:
+No, no, no, much more than that. Add more, add more. Let me find the email. Yeah, let me find the email.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+It's fine. Reinaldo, this is what Vignesh shared with us like months ago, right? Yeah, like it's the first meeting that we have. All the possible fields, yeah. So that's better to have left over than...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, but do we have something in Dijkstra? Do we have info? There guys.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+We should, because that information is for print.
+
+Reinaldo Gutierrez:
+This is for product, ok. So, this was already done by Isabel and Alejandra, so we can import the extractor for product, ok.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+With those, with these fields, ok. It's fine, but it's not what we need, ok. Why? No, these ones look better.
+
+UNKNOWN_SPEAKER:
+This is for the location product, ok.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Can you go to Mara please?
+
+UNKNOWN_SPEAKER:
+Sure, sure, sure.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+There's no obligation. Tag number, position number, drawing number.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Ray, what about the other table that you remember that Vignesh shared some hierarchies table with us? Something like that?
+
+UNKNOWN_SPEAKER:
+The custom table, right?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, they had a custom table where they were maintaining the Let me check.
+
+Reinaldo Gutierrez:
+Because those was what I have on the scope. Let me check if I have.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+If we check the integration file, I'm sure that we have it.
+
+Reinaldo Gutierrez:
+Let me share that with you. This one right here.
+
+UNKNOWN_SPEAKER:
+Unify product group.
+
+Reinaldo Gutierrez:
+This was one custom table that they show us in the beginning of the project. But this one looks even better.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Product group ID or description. Fine. Product commodity code. This one looks better. I mean, it's still. Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Sagar, do you have the integration table that we had the other time? Can you share, Sagar, because I'm sure that I put it on one table, all of this.
+
+Sagar Vora:
+Do you have the integration file, please?
+
+UNKNOWN_SPEAKER:
+Can you open it?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Where we have all the information. I know that you have been changing it, but we still have to look up.
+
+Sagar Vora:
+Hang on. Yeah.
+
+UNKNOWN_SPEAKER:
+Let me stop sharing.
+
+Reinaldo Gutierrez:
+Let me share.
+
+UNKNOWN_SPEAKER:
+If not, we can ask to those.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+That is good news because it was really fast. So that is good news always. I'm hoping that if this is a new table, it's not going to be as difficult because I'm sure that these attributes are from Mara, so it was easier. Can you go to material? There it is.
+
+Reinaldo Gutierrez:
+It's the same, the same table. Is it the same?
+
+UNKNOWN_SPEAKER:
+Yes. But we don't have those yet.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+We need to add them, right?
+
+UNKNOWN_SPEAKER:
+So you need to add those fields there? Those five fields? Absolutely. Okay. Is it fine?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+For example, manufacturer, they were asking about that. Product hierarchy. I think that we have many that helped, but for sure we will need the other ones as well. For example, this one, I cannot point out, but the last one is in the request, the product hierarchy. Yeah, it's in the request. Great, man.
+
+Reinaldo Gutierrez:
+Let me check it then. Yeah, it doesn't matter.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+It's going to be iterated, but I'm also, I'm checking with Pelayo additional ones that they could have requested during the VRD because they are just asking for reports and when they ask for report they are saying I want to
+
+Reinaldo Gutierrez:
+see it in this level and in this level and so on so maybe we we get some additional fields from that yeah if you go if you go to to the SAP you will see that we have some field for hierarchy there let me connect Okay, give me one moment.
+
+Sagar Vora:
+I think these are the fields which I think you shared with me. Customer wants manufacturer country and all that.
+
+UNKNOWN_SPEAKER:
+Exactly, yeah.
+
+Sagar Vora:
+So you have it on the same file setup, like open points? Yeah, in the same and the country for the manufacturer of product. And some more like which one you shared. Okay, I will share my screen for the moment.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Can you share that link with Pelayu Sagar, please? On Teams? Share the link of the file because he's consolidating and if we have some requests here to double check.
+
+Sagar Vora:
+Yeah, also we have added some more filters like what material type we are going to use and then we need to import all the material. So whatever like technical questions and here also we can check like we have these all material types.
+
+Reinaldo Gutierrez:
+So I take the screen if you want to share.
+
+Sagar Vora:
+Let me stop here.
+
+UNKNOWN_SPEAKER:
+Okay. Okay. No, no, no, that's fine. Okay.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Okay. Yeah, guys, we can we can we can we have a weekly tech Integration Weekly, so we can discuss further there.
+
+UNKNOWN_SPEAKER:
+Sure.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+We're kidnapping or hijacking this meeting for integration details.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, but great news, Fernando.
+
+Reinaldo Gutierrez:
+Yeah, good.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Reinaldo Gutierrez:
+I will keep you guys posted, okay, about this.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, and if you can update, in the meantime, the extractor table, just to make it updated.
+
+Reinaldo Gutierrez:
+Yeah, let me share something. In real quick, guys. So as you can see here in the extractor, we already have some field for the hierarchy there. So this field we can use. All this one right here are the custom field that we added. So that's it. Okay, thank you.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So, Fiamma, when you create, well, we need to indicate what are the names of the new attributes that we're going to create Fiamma.
+
+UNKNOWN_SPEAKER:
+She knows?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+No, but the same one. So, Reinaldo can share the, did you copy Fiamma in that email, Reinaldo? Otherwise I can look at it and send to Fiamma and we can decide the names.
+
+UNKNOWN_SPEAKER:
+Let me do it, let me do it. Yeah, please.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Fiamma, can you show to Pablo and to Belayo how to do that?
+
+UNKNOWN_SPEAKER:
+Yeah, sure.
+
+Fiamma Giorgi:
+So, should I meet with you guys and discuss the names and the attributes?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+No, just put the same name.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+You have created freedom there, Fiamma.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So, join with Pablo, Belayo, teach them how to do one or two and they can continue with the rest.
+
+Fiamma Giorgi:
+Okay, for product and for a location private, right?
+
+Reinaldo Gutierrez:
+Yeah, the ones that we have.
+
+Fiamma Giorgi:
+I send you the email, Diana.
+
+UNKNOWN_SPEAKER:
+Yeah, I receive it. Thank you. Okay.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Cool. Thank you, guys. Have a good weekend.
+
+UNKNOWN_SPEAKER:
+We're almost there.
+
+Fiamma Giorgi:
+Thank you, guys.
+
+Reinaldo Gutierrez:
+Thank you. Bye, guys.
+
