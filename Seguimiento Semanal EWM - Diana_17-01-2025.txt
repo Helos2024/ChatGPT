@@ -1,0 +1,225 @@
+Richard Quinteros:
+una nota así que gracias a ti que lo encontraste siempre cuando yo las pueda conseguir se las pueda pasar pues nunca será un problema para mí no te preocupes bueno ya para no demorar porque tuvimos que mover la sesión
+
+Kerin Bonilla:
+hay Claro sí, con todo gusto.
+
+UNKNOWN_SPEAKER:
+Listo, equipo.
+
+Jonathan Hernandez:
+Vamos a iniciar con nuestra acción de seguimiento. Gracias a todos por subirse.
+
+UNKNOWN_SPEAKER:
+Feliz viernes final de semana.
+
+Jonathan Hernandez:
+Estamos a tres semanas de cerrar el plazo que tenemos para la realización. Porcentajes de avance, tenemos 70 iniciales, comercial inicial precios cross, 65 en entradas, 73 en salidas y 60 en internos. Creo que se me quedó al revés, pero voy a confirmar si está en el revés. A nivel detalle, Keren, y no sé si así es más o menos, les hace un poquito más de sentido cómo están los avances. Separando por procesos, entradas, internas y salidas.
+
+ Tenemos 27 procesos. Cada uno tiene diferente porcentaje de avance en entradas, en internos y en salidas. No sé si más o menos así era la expectativa de cómo verlo.
+
+Kerin Bonilla:
+Sí, sí, porque así ya nos da un panorama, por ejemplo, que los movimientos internos pues ya casi van a estar, sí, al verlo visualmente, que el mayor foco está entre qué procesos de entrada, ¿no? De esa manera. Y sí, si nos ayudan, si un proceso ya se terminó, pues al 100 o al 90, si falta probar o algo, y alguna nota, si hay algún stopper en algún momento, falte algo que concluir, en vez de dar el lado, sea una definición o lo que nos haga falta.
+
+
+
+Jonathan Hernandez:
+Ok, sí, sí, cuenta conmigo que le digo ahí la solicitud. Para que tengas el contacto que tienen para el equipo, es que estos porcentajes se actualicen diarios. Y de ahí hay un 1% de avance que se realiza para que tengamos también la imagen tanto del lado de Google, o sea, hay que transmitir algo a quienes si algo nos atoramos, bueno, es para levantar la mano, ¿no? Entonces, así lo vamos a estar manejando estas semanas como tengamos los avances.
+
+ Y pasando a nuestras actividades de estatus, bueno, esta semana también fue de pruebas, de revisión de escenarios y también por ahí revisamos con el equipo de CAP el tema de los materiales de embalaje que están con ellos. Y también ya sé que se hubo una pequeña introducción con ustedes y se continuará la siguiente semana. Por eso lo estoy marcando como una actividad para continuar la próxima semana de los materiales de embalaje.
+
+ Vamos a estar también, esperamos, y también ya con la especificación de la ampliación de EWM CrossDog. La parte de la aplicación de nota para cancelación de peaking fue la que ahora ya confirmaste, ¿no, Richard?
+
+Richard Quinteros:
+Sí, ya se quedó, ya se quedó solucionado. De hecho, estoy trabajando ahorita con Florencia y ya hicimos la prueba de los dos escenarios faltantes y todo bien.
+
+Kerin Bonilla:
+Súper. Estas eran devoluciones, anulaciones, ¿no?
+
+Richard Quinteros:
+Ese era el tema de, ya ves que la otra vez estábamos reunidos ahí, Kering, que estábamos probando pues el cáncer peak, y ver cómo qué pasaba si yo era para rechazar. Quiero anular esta entrega, no votar la cero. Este y todo ese tema, no? Pero ya todo ese tema quedó. Ahora, claro, todavía falta la prueba de devolución, o sea que la entrega entrante que se recibe de aquí, aquí en el WM. Ok, recordemos que cada vez que un auto venta a un cliente o algo, genera una devolución de cara al centro de servicio.
+
+ Nosotros tenemos que poder recibirla y adicionalmente también existen devoluciones que son contra el pedido de venta entonces que una nota de crédito y demás entonces ahí pues queremos estamos viendo ahorita cómo funciona o cómo queda la entrega en el
+
+Jonathan Hernandez:
+WM la entrega entrante para recibir esa devolución eso es lo que estamos viendo ok y la otra dicha devolución Vamos a samplear el tema de la nota para la transferencia inicial de Maestro Delotes.
+
+Richard Quinteros:
+Ok. Nada más acá equipo les comento. Melvin, no sé si está por ahí o Nelson. Bueno, tenemos que prepararnos para un tema particular. Esto es un sistema ESC, como todos sabemos, integrado con un EWM HANA. Claro. Ahora, ¿qué pasa? De cara a la carga inicial de inventarios, hay algo que tenemos, muy importante que tenemos que hacer. Y los digo porque es base de lo que dice SAP al respecto. Para el tema de lotes, nosotros antes de cargar inventarios en SAP WM necesitamos tener lotes también, en WM, creados.
+
+ Y obviamente los lotes se crean en SC, o ya existen, existen en SC. Esos lotes tenemos que enviarlos a EWM vía IDOC. Lo que pasa es que el SC no tiene la transacción BD90. Es la que común, normalmente se usa para el envío del IDOC tipo de mensaje BATMAS. Lo técnico, pero sin eso me entiendes, espero que sí. Es suficiente para mí. Ahora, hay una nota que habla de unas parametrizaciones o unas modificaciones que hay que hacer en SC.
+
+ ¿Vale? Para que la transacción BD90 exista. Hoy, si tú la buscas en tu SC, pones BD90, no existe. Pero sí es necesario que exista. Y esto de cara a la carga inicial de inventario. Necesitamos enviar todos los lotes desde ECC a EWM. Una vez que los lotes ya lleguen a EWM sin ningún problema y existan los lotes en EWM, pues obviamente ya podríamos avanzar con la carga de inicial de inventario. Si gustan, el día de hoy, al finalizar la tarde, les dejaré un correo electrónico con la nota de lo que sugiere SAP, ok?
+
+ Y pues básicamente eso sería el tema.
+
+Melvin Alvarado:
+Era una pregunta sobre ese tema y no te sirve, no te sirve un traslado del almacén IBM a este almacén en WM.
+
+Richard Quinteros:
+Eso implicaría mucho trabajo, mucho trabajo procesal ahí Melvin para poder procesar esas entregas entrantes y llevarlas realmente a sus ubicaciones origen. Las ubicaciones de destino. Mucho trabajo procesado.
+
+UNKNOWN_SPEAKER:
+Me explico, me explique.
+
+Richard Quinteros:
+Imagínate tener n cantidad de entregas, ok? No, no, no.
+
+Melvin Alvarado:
+Yo lo que me refiero a hacer un solo, un solo traslado. O sea, yo tengo, por ejemplo, yo estoy en un IEM, ok? El PT IEM se llama. Hacer un solo traslado de todos los materiales, el EWM, no me refiero a parciales, o sea, que es un solo traslado.
+
+Richard Quinteros:
+Ya, pero ¿tú te imaginas eso?
+
+Melvin Alvarado:
+O sea, yo me lo imagino, pero lo que quiero saber es cómo lo recibiría un EWM.
+
+Richard Quinteros:
+Claro, eso es EWM, o sea, tú tienes que confirmar cada tarea de cada producto en su ubicación de destino correspondiente. Manualmente ¿Por qué? Porque el hecho de que tú lo hagas así implica de que tú no lo vas a pasar por los pasos del proceso ¿Me entiendes? Descarga nada de eso porque tú lo único que quieres llevarlo a la ubicación final ¿Estás de acuerdo?
+
+Melvin Alvarado:
+Pero una pregunta ¿Pero cómo se va a comportar la máquina?
+
+Kerin Bonilla:
+¿Cómo la máquina?
+
+Melvin Alvarado:
+La maquina, si lo vas a tener en un IEM, vas a maquinar en un IEM y después vas a hacer el traslado al EWM.
+
+Richard Quinteros:
+¿Pero por qué terminamos hablando de marquilla?
+
+Melvin Alvarado:
+Porque me preocupan los traslados entre almacenes IEM y EWM también.
+
+Richard Quinteros:
+Ah, ya no, pero eso es un entredentante, o sea, si tú vas a un traslado entre un almacén IEM a EWM, eso es un entredentante normal.
+
+Melvin Alvarado:
+Ahí nada más tenemos que considerar, Richard, si es así de esa forma, una prueba integral porque yo lo que quiero ver cómo me queda financieramente también el movimiento, porque tú me estás diciendo que la del alta de un solo en el EWM se vaya hacia atrás, pero tengo que considerar los temas financieros también. Claro, porque tengo que ver cómo le doy de baja yo a esa existencia en el EWM.
+
+Richard Quinteros:
+Sí, correcto.
+
+Melvin Alvarado:
+Creo que esto lo platicamos es que hablamos de traslado al inicio pero ya pero no hay tema hay nada más de ponernos de acuerdo como como manejarlo y ver el tema financiero nada más o sea no tengo tema está
+
+Richard Quinteros:
+bien pues así como tú entiendo tu punto lo podemos revisar de hecho en una sesión aparte si gusta pero pues nos estamos llenando de sesiones está bien está mal pero sí porque es que bien, sale cada tema, pero bueno, pero sí, o sea, es válido, es válido el punto de la carrera inicial. Creo que también es importante y pues no podemos pasarlo por debajo de la mesa. Este de repente no sea ahora el momento, porque estamos con varios temas sobre entre los pies.
+
+ Entonces, pues creo que primero vamos a vamos abordando uno por uno y tenemos este en la lista, porque pues sí lo veo como como relevante ya para cuando vayamos a producción y demás, no?
+
+Kerin Bonilla:
+Podés entonces hacernos el favor de mandarnos el detalle para que no se nos quede la nota y la vamos a aplicar cuando tengamos esta sesión y definamos el punto. Que no, como dices tú, podría ser la siguiente, de esta semana que viene a la siguiente, para abocar lo de consolidación y lo de embalaje primero en esta semana, ¿verdad? Y el tema de inventario que te pedí al espacio.
+
+UNKNOWN_SPEAKER:
+Sí, sí, exactamente.
+
+Richard Quinteros:
+Estamos buscando cómo organizar los temas porque si no, pues bueno, Queremos solucionarlos todos y terminemos solucionando nada porque son muchas cosas. Entonces vamos poco a poco. Entonces si Melvin lo tenemos apuntado para revisarlo y pues hoy al final de la tarde les envío la nota.
+
+UNKNOWN_SPEAKER:
+Vale. Ok. Eso equipo.
+
+Richard Quinteros:
+Adelante John.
+
+Jonathan Hernandez:
+Aquí solo nos hace falta entonces en la aplicación de la nota para cancelación de PIC y en esa ya está ok.
+
+Kerin Bonilla:
+Creo que fue lo que hablamos en el inicio, ¿verdad? Pero aquí faltaría lo del proceso de consolidación, que es un tema que parece pequeño, pero es algo que tenemos que llegar a definir, ¿no? Sí. Solo para ponerlo, porque sí lo hemos estado trabajando, John, para que lo pongas. Bueno, Richard realmente lo ha estado viendo, pero aún debemos de concluir sobre esta definición de cómo vamos a operar con de consolidación para que no se nos quede en el focus de lo que hemos estado haciendo.
+
+
+
+Richard Quinteros:
+Traigo varias ideas ya, no, traigo una idea más, una idea más que nos puede ayudar, pero la revisamos el martes, el lunes.
+
+Kerin Bonilla:
+Tranquilo, no nos dejes spoiler, fue mucho por hoy en la mañana. Listo. ¿Me ayudas, Jonathan, a pasarme, por favor, esta presentación? Porque sí me gustaría la de los procesos, si me la ¿Lo colocas en el compartido?
+
+Jonathan Hernandez:
+Sí, sí, con gusto. Le agrego esta parte de los grupos de consolidación a la PPT para que quede aquí, que se ha estado revisando y si se continúa la revisión.
+
+UNKNOWN_SPEAKER:
+Y la subo al compartido.
+
+Kerin Bonilla:
+Ahora viene la pregunta. ¿Necesitan más datos o directamente con lo que nos está procesando Flor? Vamos supliendo lo de las pruebas y configuraciones. Pregunto para lo de las actividades de la siguiente semana.
+
+Richard Quinteros:
+Para mí, o sea, para mí, procesalmente hablando con respecto a salida, yo tengo yo tengo lo necesario para seguir avanzando. Pero yo, como yo les decía, en los materiales de embalaje es importante conocer ese tema. Ok, si sé cómo trabaja hoy. Bueno, medio sé ya cómo trabaja. No es por lo que me han dicho que ponen una caja. Además, claro, pero aislando un poquito eso, o sea, No tenemos por qué llevarnos el cómo trabajan hoy al sistema actual.
+
+ Podemos mejorarlo. Entonces hay que hacer como un cambio de chica ahí, no? Entonces, sin miedo al éxito, creo que tenemos que tratar de cambiar cosas indispensablemente que hoy en día operen de esa forma, no?
+
+Kerin Bonilla:
+Y yo creo que de todas las imágenes y los videos que nos mandó Melvin, hay mucho que rescatar en el tema de cómo están los materiales que están mandando en embalaje tal vez te sirve visualmente para que entendieras cómo es el proceso. Creo que eso ayudó muchísimo porque ahí hablábamos del pallet completo o el pallet o inclusive la rista suelta que decía Melvin que había encima de una caja, ¿no?
+
+Richard Quinteros:
+Claro, claro, claro. Al final, como les digo, si es una preventa es en dos pasos. Ahorita no vamos a tomar la decisión para esto, solamente que quería transmitirles el mensaje de que ustedes también me ayuden a transmitírselos al equipo de lo importante que es que de aquí o sea desde que ustedes adquirieron el WM en adelante no necesariamente necesitamos utilizar o sea reutilizar todo lo que hoy en día utilizamos para la operación Diana recuerden que Si EW me llega es para cambiar y mejorar muchas cosas.
+
+ Entonces, si necesitamos agregar datos, modificar datos o tratar de arreglar cosas, pues creo que el mejor camino es hacerlo. Nada más quería transmitir ese mensaje.
+
+Melvin Alvarado:
+no todo el tiempo y que sí entendido no sé perdón no yo estoy yo yo estoy digamos de acuerdo contigo el o sea a mí lo que me ocupa porque suele pasar eh Richard es que no tengamos o no les se les proporcione toda la información para una configuración óptima que o sea tenemos que que no trabajar igual.
+
+Richard Quinteros:
+Voy a tomar el ejemplo de los materiales de embalaje y estoy muy de acuerdo con tu observación. Voy a tomar el ejemplo de los materiales de embalaje, por ejemplo, ojo con eso, ¿no? Porque yo sé que ustedes hoy en día de repente los usarán con una norma de embalaje o que por X o Y entonces se agarran las ristas y la meten a la caja, pues no, pero no le prestan atención. O sea, la verdad es que lo hacen así hoy en día físicamente, manualmente y operativamente.
+
+ Pues no hacen nada físicamente con las ángeles, no escanean nada, o sea, sí, yo entiendo ese punto totalmente, pero es que ahora no va a ser así, ¿me entiendes? Ahora, si necesitamos un material de embalaje sobre el cual nosotros vamos a embalar, pues ahora va a ser escaneado con radiofrecuencia, ahora va a ser manipulado con ángel, ya no, o sea, y si necesitamos que se creen esos materiales de embalaje del sistema, pues necesitamos crearlo, o sea, y hacerlo y avanzar ¿Vale?
+
+ Solo como, como.
+
+Melvin Alvarado:
+Es que hay de acuerdo, o sea, yo a lo que voy, Richard, lo siguiente va. Por decirte algo. En las imágenes que yo les mandé o las videos que les mandé. Sí, yo las vi. La actividad de picking para ellos termina, la picking en dos pasos termina, hasta cuando ya colocan en la zona, ya por cliente en la zona de FI los pedidos por cliente y dicen ok ya está lista la ruta A para cargar entonces en ese momento ellos contabilizan y dicen ok ya despaché ahora bien el siguiente paso lo que sigue después eso no está digamos eh eh en el proceso expuesto ¿Por qué?
+
+ Porque viene una persona que no es del almacén que es el repartidor digamos el motorista del vehículo, tirándolo así, él no tiene hang, él no hace nada del sistema, simplemente él, ok, ya me dieron la mercadería, hoy quiero ver cómo la meto al camino. Entonces, esa actividad, digamos, que él cubica, mandémosle un cubicaje manual, él la hace aparte. Entonces, ¿a dónde estoy apuntando yo? Suponete que yo diga, ok, mira, hoy quiero Si quiero optimizar el transporte más adelante, tengo que considerar esa actividad que está haciendo el motorista.
+
+ Ahora bien, en el EWM, que voy un poquito más atrás de lo que estamos hablando, a dónde termina la frontera del almacén con el repartidor. Entonces, ese es mi objetivo de compartirles la información, porque cuando ya esté igual, te decirle mira, realmente debemos trabajar como trabaja Eduardo. Ahí me monto en lo que voy a estar diciendo. Pero también una mala información que te llegue a ustedes, podemos generar también una mala comunicación.
+
+ Entonces por ahí voy yo. Nada más.
+
+Richard Quinteros:
+Vale, por ejemplo, en el tema que tú me comentas, entiendo total todo, todo, todo lo que me comentas vale. Entiendo que al final ocurre un proceso físico, que va excedido de la actividad logística, que es el donde el repartidor o el dueño o propietario del camión, pues carga eso, va cargando su bolsita. Él no se lleva el palet, sino que va cargando esa cuestión, su antojo dentro del camión. Y ahí es donde ocurre realmente la carga física.
+
+ Pero pues digamos que en ese apartado de WM lo excede, porque nosotros tenemos que hacer la carga vale nosotros hacemos la carga y hacemos la salida de mercancía una vez que nosotros hagamos eso pues no veo como buena práctica que dejen esa mercancía en la puesta a disposición vale usar eso eso o sea si aunque te lo vas a llevar ya listo hasta ahí cargamos vale o sea te lo vas a llevar ya perfecto hasta ahí cargamos y ahí donde ocurre la carga pero si no ni damos salida, nada, nada, nada.
+
+ Pero dar salida de mercancía y que la mercancía se quede ahí en la puesta de disposición, pues no sé, no me no me gusta esa idea. Entiendo, entiendo que el transportista se toma su tiempo para arreglar su camioncito, pero creo que eso lo vamos a tener que mirar más a detalle con Walter, porque usted también tenía esa duda.
+
+Melvin Alvarado:
+No me olvide que hay una productividad ahí pues, o sea, desperdicio de productividad, mejor llamémoslo así, desperdicio. Imagínate que viene el motorista, o el repartidor, se siente y me dice, ¿se toma un café? Es el tiempo muerto que no lo capturas en ningún lado.
+
+Kerin Bonilla:
+No, y ahora, bueno, Richard no me recuerda si estaba Melvin, pero nos explicó que las puestas de disposición inclusive en el sistema van a estar reservadas, y ahí, como son direccionales, ahí va a decir que está ocupada por un proyecto Eso es lo de salida y usted no va a poder hacer el recibo porque el sistema le va a decir hey, pero estás ocupándolo.
+
+Richard Quinteros:
+Entonces ya puedo poner en cantidad de mercancía en la puesta de posición en. Vale, solo que no es correcto porque vayamos acumulando una mercancía y que eso tiene que estar afuera. Me entiende qué rollo con esto? Me entiende? O sea, como que hay algo en cuello de botella y hay que revisarlo. No me parece bien que el transportista se tome su café y su tiempo ahí de ir cargando la mercancía. Bueno, con el lujo de la vida.
+
+ De hecho, evalúen nada más de aprovechar la carga que genera el WM. Las tareas de carga. Si guste, chicos, pues de momento sería todo, no seguimos avanzando la siguiente semana.
+
+Kerin Bonilla:
+Bueno, lo que quería concluir eran los datos. Tú estabas bien, no sé. Bueno, Samir y Pablo con datos necesitan sobre los procesos de las pruebas unitarias para esta semana o ustedes se lo vamos a ir solicitando a Flor según la necesidad. Se lo vamos solicitando a Flor según la necesidad, pero Pablo va bien de momento y yo de mi lado.
+
+Richard Quinteros:
+Lo único que espero son los materiales de embalaje. Nada más chequenlo, echen un ojo a eso y según se Seguro, seguro que la siguiente semana vamos a seguir hablando del mismo tema.
+
+Kerin Bonilla:
+Dale, va listo entonces. Este. Bueno, Mervi, usted no me avisa si vamos a configurar, creo por lo que nos mencionó en la tarde, lo que le iba a ver con con Walter, si no, pues en todo caso para ya mandarles aquí a los chicos los materiales y las y si Flor lo revisa y las configuraciones que tienen que hacer. Hablando de los materiales de como tipo de material y unidad de manipulación que deben contener.
+
+
+
+Richard Quinteros:
+Si, pasese la flor, yo se los recomiendo porque Flor pues le da ese vistazo bueno, ¿no?
+
+Kerin Bonilla:
+Siempre del lado de SCE.
+
+Richard Quinteros:
+Ya le hicimos parte del team EWM de implementación. Sí, sí, sí, los conocimientos de SCE, muy muy bueno. Eso entonces equipo, seguimos avanzando y pues bueno nada nos vemos la siguiente semana con la mejor actitud.
+
+UNKNOWN_SPEAKER:
+Muchas gracias.
+
+Kerin Bonilla:
+Feliz tarde.
+
