@@ -1,0 +1,556 @@
+Rocio Minguillon:
+I know, so it's okay.
+
+Gusev, Nikita (UAE):
+Kyle, could you call me in once the team is here? Yeah, we're waiting for someone from PM1. Yes, just ping me once you guys are starting, right? I'll switch back from the previous meeting to this one. I want to switch back there for a minute or two.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Roumanos, Hadi:
+you Hey, Kyle. Hi guys, sorry, my fault. I kidnapped Raul.
+
+Patel, Rahul1:
+Let me just tell Nikita to join.
+
+Rocio Minguillon:
+Give it a minute.
+
+Campbell, Kyle (UAE):
+I think Raul is coming back.
+
+Roumanos, Hadi:
+Unless you want to start, that's fine.
+
+UNKNOWN_SPEAKER:
+Yeah, we can give it a minute. It's fine. All right.
+
+Roumanos, Hadi:
+Tara, did you see the email from Awadullah.
+
+Naamani, Mohamad:
+As I told you I'm not able to to attend the call but I'm just joining just to double check will I be holding you up or delaying you or you're fine I mean if I'm not attending.
+
+Roumanos, Hadi:
+I'm juggling so many Did you get the chance to see this?
+
+Naamani, Mohamad:
+Not that all documents were signed in touch to I know so approval on the design documents. Yep. Ah good. Yeah, that's a good Good news. Congrats everyone a lot. You can go away Muhammad. I'll manage this withdrawal Yeah, because I know Kyle and Nikita wanted me and honestly, I know I'm a bit Annoying these days, but I have so many things to juggle. So If I'm not needed, I'll save you my attendance.
+
+
+
+Gusev, Nikita (UAE):
+Okay, talk soon. No worries, as we agreed yesterday.
+
+UNKNOWN_SPEAKER:
+Thank you. Yeah, thank you. Bye. So, are we starting, yeah?
+
+Gusev, Nikita (UAE):
+I would just...
+
+Roumanos, Hadi:
+Yeah, we can start. Rahul is joining us soon. I think he's just... He's off for a minute.
+
+UNKNOWN_SPEAKER:
+Excuse me. I'm back. Sorry guys, I'm still coughing.
+
+Gusev, Nikita (UAE):
+But I'll try to kind of put the storyline very short with the key dependencies, right? So, recently we have received two asks from Halid on training. One ask is to get rid of the train-the-trainer approach. So that no one from AdNoc will play a role of a trainer. And our team will have to deliver all the trainings to all end-users. Yeah. Just a note, at this point of time, all the end-users have not been identified.
+
+ We can assume there will be around 100-150, that's my feeling. From all the meetings that we had with different people, and we're trying to structure and decompose the potential number of the end users, right? So that's kind of one thing, moving from TTT to full scope and user training delivery. Second thing is the ask to use EnableNow as a tool to actually, as I... Again, from my experience of knowing EnableNow, to maintain the process structure, as well as to upload all the training materials and maybe update them afterwards, right?
+
+ For this one, we were discussing two major points. First, in our team, there is no experience in using EnableNow. So it's a clear gap, like zero, right? Neither Go or CM, no Second, we were asking Halid to provide us with a point of contact who would be kind of enable now owner to make sure that we are following, you know, all the requirements, all the governance stuff, all the like naming conventions even, you know, because we might come up with our naming of the courses and they would say, no, this is not the way we are maintaining it in the system.
+
+ System, right? So it's a lot. So there should be one person in AdNoc who would be providing us with the guidance on how to do things in Enable Now. So that is currently missing as well. So these are two major points. Now, it all leads us to the third point, which is updating our plan. So given we have some uncertainty in the previous two points, we cannot be sure that it doesn't impact our plan. That's the purpose of our discussion today, to discuss these three, just as a short intro.
+
+
+
+Rocio Minguillon:
+Maybe the team can now catch up and go into more details on each. Any comments, any questions from anyone?
+
+Gusev, Nikita (UAE):
+Or everything is fine, we're just keeping the plan as it is and just don't really care and finish it.
+
+Roumanos, Hadi:
+It depends on, okay for me, giving enough time for training given your assumption Nikita of the number of users is key, right? The last thing we want is to get to the point of training and figure out we don't have enough time. So I think this is where the alignment between you and Rosso needs to happen to make sure that we're accounting this as part of our plan. If not, then Let's see what kind of changes we need to make.
+
+
+
+Rocio Minguillon:
+That's my only comment here. Yes. Now, there I have two comments. The first one is that definitely the plan, the three, well, yesterday I think that there were two weeks in the way one, but two or three weeks in the way one will not be enough to have like 150 end users trained. But I will assume that this is not linked to the UIT. So maybe in that three weeks, we need the key users to be trained, no matter that they enable now or the strategy is going to be for all the users.
+
+ But then that end users can continue training by the time that we are still doing the rest of the activities. But they are not going to have the same support as the one that the people in that three weeks will have. So, I mean, this strategy to not train the trainers, it's not going to help them. That is for sure. I mean, always, always, it's better to have key users that are more trained than others, and that help, and then there are the guides.
+
+
+
+Roumanos, Hadi:
+I think, just to, I don't want to cut off, But I think the whole story of train-the-trainer is off the table. We know that, right? That's from yesterday's comment. So if we don't follow train-the-trainer, then what's our alternative and how do we present it to Cloud? That's the question. Because if we keep going back to train-the-trainer, then we're setting ourselves for a problem later on, which is not realistic.
+
+
+
+Gusev, Nikita (UAE):
+removed from the table, we are still having key user training, but the idea of the training is changing because we don't need them to be trainers anymore. Having the key user training before UAT, we just want them to be prepared to properly run the UAT, right?
+
+Roumanos, Hadi:
+Which then makes sense, but the only thing I would recommend, and I'll The only thing I would recommend is to visually represent this, because we need to have that conversation with Khaled at some point, ideally Monday. We tell him these are the activities running in parallel, that's where we're conducting the key user training, and that's where we're conducting the end user trainings, in comparison or in parallel with the other activities that are happening.
+
+ So far it's in discussion But how do we easily show it to college is my question, right?
+
+Rocio Minguillon:
+Because we need their endorsement on this. Yes. And what's the idea about also having the training? Because, yeah, one thing is to show that in a more visual way. But I think that it's not that hard. I mean, we can present it in a... No, it's not hard. Yeah, but then I have also a comment. What is the strategy that they are like expecting for that end user training? I mean, I'm not sure how Enable now works.
+
+ I mean, I think that it's that you just upload the videos or the material and then they go there and do it. But are they expecting following up? I mean, are we going to be the ones that will have the responsibility that all the end users finish their training and are properly trained before they go live? Or who is going to be that responsible?
+
+Roumanos, Hadi:
+I don't think we should be responsible for them doing the training if we upload, but that's something that we need to agree with Khaled. I think our responsibility needs to be to provide the content and their PMO's responsibility should be to make sure that they actually attend those trainings and conduct them. It can't be us, right?
+
+Rocio Minguillon:
+I can't control what AdMob does. No, no, no, that's why, yeah.
+
+Gusev, Nikita (UAE):
+Yeah, probably we need to reiterate the messages that were put there in the proposal where we said all the admin sits with AdNoc, not with us. They would be responsible for identifying the users, they would be responsible for setting up the invites, to track the attendance, etc. Okay. Align the schedules of their vacations, you know, all that. A whole lot of admin work. It should definitely be taken over by them.
+
+ And they should give us the responsible person who would be actually responsible for it. For example, Fatima from change management or someone else.
+
+UNKNOWN_SPEAKER:
+Right? Perfect. Perfect.
+
+Rocio Minguillon:
+So in that case, I think that our strategy should be like in that three weeks that we have in the plan, we will focus on, of course, the content will be available in Enable now. That is the other that you were raising, but I think that point of the enable now is easier to mitigate and to, in this one month and a half that we are still having, then try to see what is going on with enable now and the person that you ask Khalid.
+
+ But then, okay, upload all the content there, and with that person from enable now, like organize the, the path of the training. And then the sessions of that three weeks will be focused on the key users that are going to be the ones that participate in the UIT. And then the path for the ones that are only end users will be just enabled now, and maybe we can have some of channel of support or something like that.
+
+ Oh, that's not going to work.
+
+Gusev, Nikita (UAE):
+No.
+
+Roumanos, Hadi:
+I have a suggestion and I keep going back to how do we present this and then we'll get back to your point. Two slides is what I'm seeing. One that showcases the plan, not the entire plan, just the section for when is training happening and in parallel with what, just so that they have that visual of when things are happening. The second slide is who does what, right? So it's a matrix of project team prepares the content, uploads the content, et cetera.
+
+ AdNoc identifies the users, sets up the sessions, validates that the trainings are being taken, et cetera, right? So one is the timeline, and one is who does what. These two is all we need to have that conversation with Khaled and get it approved. Now, that's different from the actual content of the trainings. We're not even getting into that right now. But this approach doesn't need to be a complicated one.
+
+ It just needs to showcase when are we doing what and who is doing what, basically. That's it. That's my view.
+
+Rocio Minguillon:
+Any thoughts?
+
+UNKNOWN_SPEAKER:
+I agree. Oh, yes.
+
+Gusev, Nikita (UAE):
+I agree.
+
+UNKNOWN_SPEAKER:
+I agree.
+
+Roumanos, Hadi:
+OK. And the sooner we can have that conversation with Khaled, the better, because obviously there might be resistance from their side. So at least we can manage that early on. The last thing we want is to...
+
+UNKNOWN_SPEAKER:
+Go ahead.
+
+Rocio Minguillon:
+Oh, yes. To do that matrix plan, I just want to be aligned with the strategy. I mean, with how are we going to do that. So the meetings, do we all agree are going to be just for the key users during that three weeks. I mean, the rest of the users are going to use just enable now. Are we okay with that? That is what I'm asking because I will put that there.
+
+Gusev, Nikita (UAE):
+Rocio, excuse me, may I just try to rephrase what you are saying? What you are saying is that we are still holding the key user trainings, like with our people, with our consultants, right? But then for the end user, do you want Do you want just them to have access to training materials and do self-based learning or do I understand it in a wrong way?
+
+Rocio Minguillon:
+No, exactly, exactly. Maybe we can think on a way of giving them support while they are doing that in Enable now, but it's impossible to, in that three weeks, have sessions with everyone.
+
+Gusev, Nikita (UAE):
+Yeah, but we have five more weeks after UAT. End-user training as per plan. Carl, could you please bring up the plan so that we go through it again? Because we still need confirmation from GoSCM that the timelines for training material development, key user training, and end-user training for both waves are good with them. Although we try to keep the same logic as we had in the In the previous version of the plan, we just need Kanav.
+
+
+
+Rocio Minguillon:
+I answered yesterday, but... Raul wants to say something, excuse me.
+
+UNKNOWN_SPEAKER:
+Raul.
+
+Patel, Rahul1:
+Yeah, so the only point I would like to add here is that while we are considering this training strategy, we also need to understand how we deliver the training logistics, computers, laptops. It is an important point to be considered that if you are going to train all the end-users, how are we going to train all the end-users? Is it going to be teams meeting only? That clarity has to be confirmed upfront because if it needs in-person training, then having meeting rooms and having computers in the meeting rooms becomes a bottleneck for the training plan.
+
+ And if we have more end-users, this thing might become complicated. So I just want to make sure that we don't miss this point.
+
+Gusev, Nikita (UAE):
+Very valid point. We'll definitely put it in the two slides that Hadi is suggesting to have in front of Khalid.
+
+Rocio Minguillon:
+Yeah, probably the second one, right? When we're saying who does what and how. Yeah. Okay, here I see these two weeks, but these weeks are not extra weeks. I mean, that activities are in parallel of the data on cutover preparation. I mean, this was not an activity. I mean, it's in parallel of other activities that the consultants are gonna be doing there that are critical. So I don't think that they are gonna be able to have the sessions with the end users that were not expected to this.
+
+ I mean, if they want us to change the strategy and do also sessions with the end-users, we should change the plan also. Because there, as you can see, on-user training is also in parallel with the data and cut-over preparation, go-and-on-go decision.
+
+Gusev, Nikita (UAE):
+saying is that the scope is changing, so how are we dealing with the scope change? Either we simplify the approach saying, look guys, this is your material and now it's up to you to educate yourself. That's one. The second one is to probably allocate additional resource to have these trainings which were not there in the plan before. Because we have to do more work now.
+
+Roumanos, Hadi:
+Yeah, additional resource means more money, and more money might be something that we won't get.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Roumanos, Hadi:
+That's my concern, right? So my only suggestion is to find a way to work with what we have. Based on what we're suffering from in the delays, I wouldn't even think about the option of adding more people at this point. That's my thought. So we can go with Khaled and tell him, hey, given that we're going with end users, that's what we suggest in terms of way forward, and try to sell it in that way.
+
+Rocio Minguillon:
+I don't see any other options at this point. Yeah. What I see as a strategy also in terms of, I mean, let's assume that we have resources and that we can do the training sessions during that three weeks with end users, with around 100 users. Also, what Rahul is mentioning is true. I mean, maybe we have to think about them doing in enable now and just having, I don't know, one session per day, not that long, and where they can raise their dads.
+
+ But I don't know. If they don't have, like, key users, like the trainers, it's going to be tough for them. But yeah, for us, I mean, it's impossible to tell like all that hours did that three weeks by the time that we are preparing the cutover. I mean, those are not extra weeks are weeks that were already.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+Design for other things.
+
+Roumanos, Hadi:
+So so question you had mentioned that we have five weeks after that to those trainings. Is that still the case?
+
+Gusev, Nikita (UAE):
+Oh, probably I'm mixed with the training content development where we have five weeks. Yeah, it's line 50 and we only have three weeks of end-user training delivery for wave one. So yeah, Rocio was absolutely right saying that in the beginning and I think it's two weeks for wave two which can be converted back again, two, three weeks as well. Could you scroll down a little bit?
+
+Roumanos, Hadi:
+How many end users are we training?
+
+Rocio Minguillon:
+We still don't have the final number. It's the one that today we're going to have, according to the rough estimate.
+
+Gusev, Nikita (UAE):
+Excuse me, where are you going to have those numbers from, Rocio?
+
+Rocio Minguillon:
+The key users?
+
+Gusev, Nikita (UAE):
+Yes, no, the end users.
+
+Rocio Minguillon:
+I know, the end users, I'm not sure. I mean, that is what Kyle was mentioning, I think.
+
+Campbell, Kyle (UAE):
+Yeah, sorry, I don't know what you got. I think, Hadi, what did you ask about the end users or the key users?
+
+Roumanos, Hadi:
+So, okay, I have two questions. One is we realized that training all the end users in sessions in those three weeks is not feasible because there's I don't know, 100, 150 of them. That much I understood. If we're training key users in that duration, my question was, how many key users are we training? And if we don't have the number yet, then what's an estimate of that number? Just so I understand at least what we're trying to do.
+
+
+
+Campbell, Kyle (UAE):
+Raoul, I think we have the list of the key users, right? It's going to be the same as the are in the unit test, you know?
+
+UNKNOWN_SPEAKER:
+I think it's the same, Rahul.
+
+Madhavan, Tara:
+Isn't it the same? The ones we identified for you testing? Yeah, it is around 30, if I'm not wrong.
+
+UNKNOWN_SPEAKER:
+That could be a rough number.
+
+Roumanos, Hadi:
+So let's go with 30. So what we're saying is that we are going to train those 30 in those three weeks, in sessions, and for end users, the higher number, they will have to train themselves. My concern is this might not... It's a big risk. It's a big risk, yes. What are our options? Either we offer that without an impact on our staffing and timeline, but it's a big risk. Or we have to train the 100, 150 end users.
+
+ And we have to do it. Not in that, not in those three weeks, but in over the course of, you know, weeks after that.
+
+Madhavan, Tara:
+Hadi, I would say just close to go live because otherwise in my experience, what people say is they would again demand training because they might have already forgotten what exactly so.
+
+Roumanos, Hadi:
+So what I'm trying to say is if we are going to train and reduce the risk. If we're going to train all the end users and reduce that risk that Nikita is talking about, then when do we do this?
+
+Gusev, Nikita (UAE):
+Hadi, may I ask a question? I've heard many times from you guys that we have a very long hypercare period when the data will start to be populated. And basically, as I understand, in the case of our project, Business Go Live will actually not happen at the time of technical go-live. It will start to happen a bit later, right? So why don't we then split... A couple of weeks later, yes.
+
+Roumanos, Hadi:
+A couple of weeks later?
+
+Rocio Minguillon:
+Based on the plan that Rocio shared, that's what I saw. Yes, the business... Do you mean the business go-live?
+
+Gusev, Nikita (UAE):
+The business go-live, yeah. When the users start actually to contribute to all the forms and all the templates, Yeah, it's just two weeks later. It's just two weeks later, okay. Yeah.
+
+Rocio Minguillon:
+It's expected to be... No, which means...
+
+Gusev, Nikita (UAE):
+Excuse me, Hadi, let's just finish my thought. Which means that we can extend the duration of end-user training until the technical go live and then we'll have a couple of weeks before the actual start of the business go live and the start of using of the system
+
+UNKNOWN_SPEAKER:
+by the users. Right?
+
+Gusev, Nikita (UAE):
+So, I mean, the line 65, for example, can be extended until 23rd of June. So that was my question, Nikita, right?
+
+Roumanos, Hadi:
+So if Rocio, you're going to do end-user training for all of them. Yeah. When would you do it? If you don't have any and resources, when would you have time to do this? And I'm not giving you any constraints, right? Not even Go Live.
+
+Rocio Minguillon:
+Okay, but do they expect that users to participate in the Go Live or are they able to do the Go Live just with the key users? No, no, but that's what I'm trying to say, right?
+
+Roumanos, Hadi:
+If you don't have any constraints, if you don't have any constraints, If you need to train, because we are going to face pushback, they're going to tell us, guys, we need you to train end-users.
+
+Rocio Minguillon:
+So if you have to do it, when do you have time to do it, irrespective of constraints? OK. We will go live with just the key users and do it after that first go live, first week of
+
+Roumanos, Hadi:
+So from when? Until when would you focus on end-user training, not key user, end-user? So you will start end-users, when and by when do you finish? And I know that this might overrun beyond go-live, I get it. I'm just asking when can you do it if you're not adding resources?
+
+Rocio Minguillon:
+Okay, then I should like review it with the rest of the team because I mean, having that in parallel of hypercare is also something, I mean, I'm not sure we have like the resources to do it and no matter when but in parallel to other activities.
+
+Roumanos, Hadi:
+Yes, that's what I mean, right? So at this point what we're trying to do is find compromises, okay? And my suggestion is to present both options to Khaled, say hey we can do key users before go live and give you the content for end users to train themselves, he'll say no but anyway let's offer it as an option. Which will save you the trouble. Option number two is okay we can do key users before go live and we will start end-user training from day X and we will finish in day Y which is going into hyper care or whatever okay but but that's what we can do and let him pick and choose.
+
+ If he says no I want you guys to do end-user training also before go live we tell him it's going to cost you X amount of dollars because we don't have the resources to do it, right?
+
+Gusev, Nikita (UAE):
+So we essentially have three options.
+
+Roumanos, Hadi:
+Yeah, pretty much three options, but I'm not even considering option number three because they're not going to pay us. So all I'm saying is if he wants us to train end users, you know, in sessions, then it's going to drag until date X, which is beyond go live. There's no other way to do this, is what I'm hearing.
+
+Rocio Minguillon:
+Yes, exactly. Okay, fine.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Gusev, Nikita (UAE):
+Okay, guys, I think we are all clear, right? So we just still need, Rocio, a confirmation from you about the dates of training content development.
+
+Rocio Minguillon:
+The confirmation, I just sent an email yesterday, but just quick. It's everything, right? Except for wave one, that the key users training should start a week earlier. For wave two, it's okay, but for wave one, just one week earlier. Oh, sounds good, sounds good.
+
+Roumanos, Hadi:
+I suggest we spend 10 minutes at 2pm to go over this brief with Mohamed, see if he has any objections to offering those options to Khaled, and then we'll take it from there.
+
+Gusev, Nikita (UAE):
+Yeah, so from practical perspective we will have Kyle and Edith on the training from Monday to Wednesday. So what I suggest is that me and Bishar will pick up this topic and we'll describe in the first slide the three options, in the second slide the overall timeline for the training, and on the third slide the specific RACI where KPMG is responsible should be responsible for, as we discussed.
+
+Rocio Minguillon:
+Okay. And let me, so let me now, now I have then an internal meeting, let me confirm in the option two, the dates and everything.
+
+UNKNOWN_SPEAKER:
+Yeah, sure. Okay.
+
+Rocio Minguillon:
+That would help a lot. Okay, okay, okay. Perfect team.
+
+UNKNOWN_SPEAKER:
+Okay then.
+
+Campbell, Kyle (UAE):
+Thank you very much all. Thanks, guys. Thank you. Sorry. Hari, Tara, Nikita. Hi, Nikita. I just want to ask something about this timeline. Is Hari and Tara still on this call?
+
+UNKNOWN_SPEAKER:
+No. Tara is here.
+
+Campbell, Kyle (UAE):
+Nikita, would you mind going There's an email that Tara sent. Yes, Tara, please. Can we just discuss this? Nikita, if you have time, sorry, I just want to discuss this email from Tara about the timeline where we had a question and we needed to discuss it. Sorry, I know you in the dark but I had sent this uh email to Hadi and Tara about all these different points um and Tara asked if we can connect to just discuss this.
+
+ Tara so could we discuss this Nikita is that fine with you for five minutes? Yeah yeah sure. And Nikita is that okay with you? Yeah yeah let's go ahead. Do we need to get Hadi in here Tara?
+
+Campbell, Kyle (UAE):
+If we can, that would be good.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Campbell, Kyle (UAE):
+Sorry, I was talking on mute.
+
+Madhavan, Tara:
+Try to add him if he's free. He'll join.
+
+UNKNOWN_SPEAKER:
+Otherwise we'll just continue without it. OK.
+
+Campbell, Kyle (UAE):
+It doesn't look like he's joining, but Tara, you want to go through these points, right? What's going on?
+
+UNKNOWN_SPEAKER:
+Hari?
+
+Madhavan, Tara:
+Yeah, we pulled you so we can discuss those points Kyle mentioned in his mail. Just quick 10 minutes, we'll not take more.
+
+Roumanos, Hadi:
+No, let's take as much as we need and close those.
+
+Gusev, Nikita (UAE):
+OK, so should I go through them one Do we need to ask you in this conversation, Tara, as well?
+
+Roumanos, Hadi:
+No, no, it's purely PMO, I think. Yeah. OK. OK, fine. So point number one, Eid holidays and the other holidays are included.
+
+Campbell, Kyle (UAE):
+So but when you say they're included, do you mean that they are like that week is missing or what do you mean by...
+
+Madhavan, Tara:
+We had considered, what Hadi means is while planning, we had considered Eid holidays and accounted for the absence of users? So let me summarize.
+
+Roumanos, Hadi:
+So we had a rebaseline plan coming from GoSCM with new dates for GoLives, et cetera. And these GoLive dates account for downtime of two days in each of those holidays. If you see, I'll share my screen for just a quick second.
+
+Gusev, Nikita (UAE):
+Adi, is it really two days? Because, for example, from my experience it's actually one week.
+
+Roumanos, Hadi:
+Agreed Nikita but we're going with two days because we can't afford to lose more if they end up losing more it's on them not on us right so the official dates are two days each but I agree with you they might take more just because people like to go on vacations or whatever yeah but we can't anticipate that we need to tell them that when you guys need to find your people for whoever's missing in those days.
+
+
+
+Campbell, Kyle (UAE):
+Okay, but could I just, can I try to explain something? So, with these new go live dates, right, we worked backwards from these new go live dates to get this to all fit in. Okay, so, but like the, I think it's the end user training somewhere, we'll fall in that period of where those day, where it is happening. So, what if the employees are not available? Just trying to find where end user...
+
+Gusev, Nikita (UAE):
+I think we need to mark a column, a final column for March, which is AG. And was it the first column of... The first week of June, was it?
+
+Roumanos, Hadi:
+And AG are the ones I would highlight. And user training is happening over the course of two, three weeks, no?
+
+UNKNOWN_SPEAKER:
+Yes. All right.
+
+Roumanos, Hadi:
+So you're going to be missing a couple of days here and there. Fine. I mean. I mean, OK, that's fine.
+
+Campbell, Kyle (UAE):
+I was just raising the point to you that. No, no, no.
+
+Roumanos, Hadi:
+I get it. I get it. All I'm saying is that in the plan that we had shared from Rocio, these were accounted for. So. That's all I'm saying.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Campbell, Kyle (UAE):
+OK, then, so the original change management deliverable timelines did not account for Marketa and Fadi's review and approval. So what I meant by that was that, as I understand, the deliverables, when the timeline was done initially, it was as if the deliverable was going to be ready. We would do the deliverable, and then it would be sent to AdNoc. So the time frame, like the one week or one and a half weeks to get Fadi and Marketa's was not built into those original timelines.
+
+ So now if I go to the new project plan where I have the timelines for the deliverables, I'm saying that this review time is still not built into the duration of those deliverables. Can I be mean?
+
+Roumanos, Hadi:
+Usually it's Mohammed, but we don't have Mohammed on this call, so I'll have to. By definition, you can't do a plan without accounting for partner approval. If you've done that, then that was an issue from the get-go, right? Because at no point in time in any project you submit deliverables that have not been reviewed by your partner. That's just the way things are. So that's point number one. Point number two is Fadi's review and approval is something that happens as you develop the document, as you've seen in all of the deliverables.
+
+ So even if you finish a document, let's say 70%, you present it then he gives you comments, which means his approval comes in a day or two after you send the final document. It doesn't happen in a week or week and a half. That's for FIDO. For Maketa, I'm not sure how the process works. If you send her the final document and she needs two weeks to review and approve, then that's something that I wasn't aware of So again, these are the two points.
+
+ I can't agree to a point that says we didn't account for partner approval. That should be something that is embedded in any plan. So Nikita, any thoughts on this?
+
+UNKNOWN_SPEAKER:
+No thoughts, Fadi.
+
+Gusev, Nikita (UAE):
+Because when I was making up this plan in August, it was my second month in KPMG. And at that point of time, I didn't even think about it, to be honest. I had no clue.
+
+Roumanos, Hadi:
+So my suggestion is to mitigate this. It is to mitigate this by preparing both partners as much as you can before you need the approval. Let's say your document is due on the 10th of whatever, June. Then you make sure that you're able to submit the final deliverable let's say on the 9th and get it approved on the 10th given that you've gone through multiple reviews with both partners as you develop the document.
+
+ So don't wait until it's done. And that's something that we've been stressing from day one to get comments, right? That's the only way this is going to work.
+
+UNKNOWN_SPEAKER:
+Yeah, okay.
+
+Roumanos, Hadi:
+So you're not going to get additional time just because you asked for it? That's not going to happen?
+
+Campbell, Kyle (UAE):
+So I wasn't really asking for additional time, I was just trying to give you guys like the as-is and you know...
+
+Roumanos, Hadi:
+No, no, no, I understand, I understand. What I'm trying to do is help you figure out how do you manage this now that you know that you need X amount of time for Marketa or Fadi. So, I don't know how the process works for Marketa. You need to tell me. If she needs three weeks to approve a document, then we have a bigger problem. But if you can keep on presenting the work-in-progress document to her and then suddenly get it approved, then that might work better.
+
+ Yeah, we will manage it.
+
+Campbell, Kyle (UAE):
+Okay. And then the training content, that's we've discussed. Our deliverables have been extended into September. So this point was that, I mean, on the current budgets and the project plan and stuff, the resources have been allocated up until August. But as a result of the rebase line, now it goes into September. So I was just saying that, are we going to get any money from three baseline because um very very valid point um we have the same problem um two things I would say here uh start thinking creatively of how
+
+Roumanos, Hadi:
+you will revise your staffing assuming you won't get money which is what I'm doing right now for p for for governance and, you know, me, Tara, Kushboo, etc. In the event we do get money, then we keep the same level of staffing across the board just because we got the money for the delays. Okay, but I'm not sure that's going to happen. So what I'm doing right now, and just so that you're aware, so that you might need to go through the same exercise, what I'm doing right now is I'm thinking, okay, what did I save in the first four months of the project by having, let's say, Khushbu join a bit later, right?
+
+ What did I save because Mohammed is charging 60% instead of 65%? What did I save because I got Raoul instead of Amid on the governance team? And on top of that, is that enough to make me survive the next three weeks of delay or no? If no, then how do I change the staffing of myself, of Mohammed, etc., to be able to deal with this. Now if Mohammed tells me great we have money because of the delay then all of that goes out the window because we have the money.
+
+ But if we don't at least I'm prepared in revised staffing and in accounting for past savings.
+
+UNKNOWN_SPEAKER:
+That's what I'm doing.
+
+Campbell, Kyle (UAE):
+So if you want to do the same thing then be my guest. Okay fine. Then this D4 deliverable which is I think It's a post-go-live strategy support model. Post-go-live strategy, right? Yeah. We are not this far along the way. Yeah. Yes, Tara?
+
+Madhavan, Tara:
+No, I was about to say this will be mainly tech team, but you will be involved too. Yeah, we'll be involved, but not a lot.
+
+Campbell, Kyle (UAE):
+And this features in quite a few places. So it's up there, then it's down here as well.
+
+Roumanos, Hadi:
+I don't think... Let's pause. What do we need CM for in post-Go-Live support?
+
+Campbell, Kyle (UAE):
+Nikita, you can correct me if I'm wrong, but I believe it's just the cascading of the messages, right?
+
+Gusev, Nikita (UAE):
+It's preparing the right messages, the right qualms, and cascading it to the right people, make sure the awareness session is there.
+
+Roumanos, Hadi:
+If that's the case, then it's not led... Yeah, I agree. It's not in any way led by CM, CM needs to support in comms etc as Nikita mentioned then that's what you do but yes you're not needed you're not leading this is the is the point you're right.
+
+Campbell, Kyle (UAE):
+Yeah so again I was just bringing this to your attention to let you know that we have not touched this so whoever is if whoever's responsible for this this is highlighted in pink and they might think it's for CM
+
+UNKNOWN_SPEAKER:
+but they need to check this timeline.
+
+Roumanos, Hadi:
+So just so I get it highlighted in pink means CM? Yes, okay. Tyra, highlight it in whatever technical is, and let's bring it up to Rocio. Will just be supporting, let's not have it in pink, makes no sense.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Campbell, Kyle (UAE):
+Yeah, and there's another one down here. Okay, those are the points that I wanted to discuss.
+
+Roumanos, Hadi:
+All right, happy times. The only not happy times is the fact that we might not get money, so I suggest you start thinking early of how do you modify your to be able to last until the end date. But I'll give you an update on this, obviously, as soon as we start getting into those conversations with Firas, which is what Mohamed is doing. Okay, clear. All right.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Thanks.
+
+UNKNOWN_SPEAKER:
+Anything else?
+
+Roumanos, Hadi:
+Everybody's happy? That's it. That's it.
+
+Madhavan, Tara:
+Yeah, Hadi, something else. Will you be able to talk to me separately on the or are you busy?
+
+UNKNOWN_SPEAKER:
+You're trying really hard, aren't you?
+
+Madhavan, Tara:
+You will come and ask me one day and I won't have any answer.
+
+Roumanos, Hadi:
+Yeah, yeah, I know, I know. 1pm, hang on, I'll book it now.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Roumanos, Hadi:
+And if someone asks me why I'm not in the office, I can blame you. Yeah. Fine. All right. 1 p.m.
+
+UNKNOWN_SPEAKER:
+Talk later.
+
+Madhavan, Tara:
+Thank you, guys. Okay. Thank you. Bye.
+
