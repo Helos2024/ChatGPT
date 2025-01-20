@@ -1,0 +1,601 @@
+Sheth, Kunal:
+Thank you. Thank you.
+
+Patel, Rahul:
+Oh.
+
+Bastian Osorio:
+Bye.
+
+Mudit, Khushboo (UAE):
+You're high, Mushroom.
+
+Patel, Rahul:
+Hi, Rahul, are you there? Rahul, if you are speaking, you are on mute. Sorry, I was on mute. Yeah. Hey, Bastian, hope you had a nice weekend. Can you hear me? You too. Was too short, but
+
+Bastian Osorio:
+Can you hear me?
+
+Patel, Rahul:
+It was too short. Weekends are always short. We need three days, four days weekend. Absolutely, absolutely.
+
+Bastian Osorio:
+Yeah, and I had to work on a few things during the weekend, so it felt even shorter.
+
+Patel, Rahul:
+Yeah. Even if you don't have to work the weekend, it just feels short. Probably on the Sunday afternoon, you get the blues. Monday blues, you start feeling after Sunday, right?
+
+Mudit, Khushboo (UAE):
+After Sunday afternoon.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+Saturday afternoon, Saturday evening. OK. So Bastián quickly wanted to align on the new model requirement process.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+So the last, let me share my screen The last conversation we had was with Murugan. So let me pull up that conversation. The following topic are clarified on rule creation. Data pattern recognition rule-based planning. Maximum order quantity is not addressed in strategy as well. Maximum order quantity, so he's kind of aligned to this. So this is what he mentioned. The following topics are clarified.
+
+ Control creation, data pattern recognition, and rule-based planning. So he has kind of confirmed that he's okay with this. That's what I understood. Unless anyone feels other way around? Tom, you're OK? So now the question is, when are we going to show some examples of this with real data, right? Yes. Currently? There are two questions to it. As part of our supply BPD or demand BPD, we said that we've not addressed any process piece of new model requirement, right?
+
+ We removed everything which is related to new model requirement. We said it's an open topic. We are discussing. So there are two things. What happens to the documentation? How we document this in terms of what is the process we are proposing? And with respect to that process, do we need to get confirmation from AdNoc? This is the new model requirement process because we never reviewed this process with AdNoc.
+
+ Second, then how we demonstrate this process with the AdNoc data. These are the two things. Things, correct? I mean, I think you can answer the first question.
+
+Bastian Osorio:
+You with the team can answer when or what is the right place to document this. And based on that definition, we can proceed.
+
+Patel, Rahul:
+I don't know if Mofakuri was not part of this call. Let me pull him. Mofakuri request to join. Let me pull him so that we can Make sure that, Hector, just for your information, we are discussing the drilling. Let Mo Fakury as well join, and then I'll summarize quickly for both of you. All right.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Patel, Rahul:
+So the baseline plan. How do I read the dates?
+
+UNKNOWN_SPEAKER:
+Hey, Mo. Please call him. Hello.
+
+Hector Palacios:
+Mo, can you hear me?
+
+Patel, Rahul:
+Yes, I can. Sorry to pull you in a call directly. Kind of missed you sending this invite so we are talking about new metal process right so as part of our dbd documentation we did not create any content and new metal and the assumption was that there is a process to be defined eventually and once the process is finalized we'll put up the process around new metal right so now this is a continued discussion on the same so I was just going through the email from morgan and morgan has confirm that following topics are to be clarified on.
+
+ So the following topics are to be clarified on rule creation, data restriction, and rule-based planning. So essentially, OK, so what we need to do is we need to clarify. Probably I'll talk to Murugan and understand what clarification he's requiring. At the same time, now, Assuming that this is the process we have proposed, this is the solution we have proposed, we need to put up a process around it to make sure that the clarification and the process can be taken with that number confirmation.
+
+ That's the first step. And the second step is that with respect to this process, how we demonstrate the process in IBP, and what input a GoSiem team would need to demonstrate this process so that we can define the solution can be designed and defined around it. So that's what we would like to discuss in the call, so that we are all aligned on how we make sure that the new portal process is not forgotten.
+
+ Because it's been a while we've talked about it. It's almost two months back, a month back. We are on the 20th, January. It's 12th, December. We've got this feedback. But because of all other priorities, we were focusing on documentation. So we could not come towards it. Now that the documentation piece is complete, received approvals for BRD, BPD for both wave 1 and wave 2. Let's focus on closing some of these open points and the most important one is the new mutual planning.
+
+ Okay, so Bhashan go ahead you were suggesting something. Bhashan or anyone Do you have any question or suggestion how we proceed with this?
+
+Bastian Osorio:
+Yeah. Sorry, I was speaking on mute. Yeah. So two things. Regarding documentation, I'm not that concerned, because in the PPT, it's pretty detailed. So it's more into, from the technology side, it's just to put that PPT in like a Word document format. And that's it from our side. Course that needs to be complemented with the process part. I guess we will address.
+
+Patel, Rahul:
+Can you unmute yourself?
+
+Bastian Osorio:
+Then the next question is when are we going to showcase this? So of course we're going for the unit testing next week and we have plenty to show already so I think it's not feasible at least during the next two weeks to show the solution. I think also we will need some definitely we need some of their input regarding new materials to start again showing the solution what we need absolutely is first the new materials and then the attributes.
+
+ Because the solution, all the solution relies on established relationships between the new materials and old materials. And for that we need additional attributes as, I don't know, material categories, families, groups, so on and so forth. And we don't have, currently we don't have any of that. I think Maybe, Hector, you can help me here, but we were working on getting more data from Big Niche, not on manual files, but sources, sources of additional attributes.
+
+ Yeah, I remember we discussed this on Friday. And we do have some additional information that, I don't know who identified this data, but Reynaldo was working in the integration. But still, this data is, are some details that are not like any, They're not like any additional attributes that can help us to classify materials into different categories. So we are stuck basically in the same place all over the time.
+
+ They're not providing additional attributes that can help us to refine, to enrich, to make the data.
+
+Hector Palacios:
+Just to complement here, Bastian, whatever additional hierarchies that we need to build this is something that was shared by Bignage only by Bignage so this is not business validated not provided so we will go with this just to kick start the conversation but we still need to go a long way to get this done and just for you to know this is a crazy scenario this is not something that we have seen in any project in my life that we take so much time to get the attributes that the business want to see.
+
+ That is something that is really bad in this project. I remember that in that session there was one guy that was saying that we have one specific visualization on S4HANA table where we can bring the information of similar characteristics. So if you have a material then you can know what is the usage of this and so on. So, I remember that in the session that we presented this, someone was sharing the screen and show a transaction or a table, so we can use that as a base.
+
+ Let's go over that session and see the recording if we have any, or the transcript, and to see what are the attributes that we were discussing, because we have a starting point there. We need to go back with them to understand what are the attributes we can use. Can you see my screen?
+
+Patel, Rahul:
+Can you see my screen?
+
+Hector Palacios:
+Is this one?
+
+Patel, Rahul:
+Yeah, so basically every material has a classification view. And this is what I think, Bastian, you were talking about when Rinaldo was working, because this was discussed as one of the attributes of classification of the material which we need to pull. Basically, here they have created classes. So if I look for classes, so this is how these are the classes or attributes. And for every class, these are the like, and for within every class, they have this characteristics which define what is like, so type, length, what is the size, what is the material.
+
+ So depending upon if this is a spacer, right? So the attributes of spacer, they've identified. Now it can be something else. It can be a pump. So what are the attributes of pump? Depending on the material, you say that we will have different characteristics. Yes, so this is already available in AdNoc. Material this characteristics is already assigned and for that the classification is already assigned and for every classification the value is already assigned which means we know for all the existing material what are different attributes which we need to look for and compare the attributes with the new material.
+
+ So whenever the material gets created these attributes would be allocated and based on the attributes see that what is the reference model.
+
+Hector Palacios:
+Are we 100% sure, Rahul, that this is what we were discussing in that session?
+
+Patel, Rahul:
+That's why I pulled this up, because Vignesh has demonstrated to me as well. This was part of one of the previous discussion. And this is what the data looks like, And if you see, it is also in line with the result of the classification, like actuators, adapters, amplifiers. Basically what kind of material it is and for that material they have this, this is a complete set of table they have.
+
+Hector Palacios:
+Yeah, and what about that keyword, it doesn't seem like a standard classification but a lookup. Which keyword? The first column, you see that it doesn't seem like a standard. No, no, so this is something which is defined by AdNod themselves, so let me show what I'm mean keyword is not like an standard field it's not like product category or product sound you know it's a category but your
+
+Patel, Rahul:
+family no no it's a standard field but it's a it has a different way so SAP has this classification as a standard view for models every model has classification what is the name of the class this depends upon the company defined and what are the characters so this is a flexible characterization or classification of data which any company can do but the table or the objects are standard like for a material what is the assignment of class and for a class what are the characteristics so so if you see this is standard table correct so characteristics micrometer and what are the values possible I I want to make it to display mode I don't want to change these are they have not put descriptions There is no data for this, so this is an incomplete, this is not a good example.
+
+ But essentially, this is a standard transaction, CT0, right? And in the standard transaction, you can like... Oh, this is class. So I can say, let's take example of... So if the valve, what does it mean? Means you're basically here. And CL01 and CL02 and CL03. But we need to check for the unconfirmed security Essentially what happens is, they have these classes created. This is a standard transaction.
+
+ And we can find this data from standard tables. And the allocation of classes to the materials is a standard. Every material has its characteristics, right? So, spacer is one example, right? So, we have assigned spacer to this material. Now, here the definition of spacer type, spacer size, spacer material standard, and additional info. Here it's defined. So, for every spacer type, there is value, possible values.
+
+ These are different values of spacer types they can have.
+
+UNKNOWN_SPEAKER:
+Sounds complicated.
+
+Patel, Rahul:
+Yeah. So basically for every material you have this assignment of class and then the values are the so the characteristics are different types of characteristics which is what we are looking for and then for every specific model you will have only specific value here you can have multiple values but then they are located the specific value that so what is that you're saying it depending on the category or on the class of the material, you have different attributes, right?
+
+
+
+Bastian Osorio:
+Correct. Correct. That is complicated because at the end in AVP, what we have is just one master data. Sorry, one material master. So if you have, let's say you have attribute ABC for material one and DEF. For material 2, at the end of AVP, we need to create, I mean, that is independent. I mean, that is the same for, we will have to create attributes A, B, C, D, E, for everything.
+
+Patel, Rahul:
+And the integration again, so it's not that, I don't know.
+
+Bastian Osorio:
+I don't know if you can hear what I'm trying to say. We cannot create one flexible attribute.
+
+Hector Palacios:
+That can be dangerous because usually that leads to inconsistencies. So, this is how it looks like,
+
+Patel, Rahul:
+So, for a spacer, the class is, say, spacer. Class is spacer. And char, there can be more than one char. So, this is the nested data. And for every char, say, this is the char type, right? Yeah. So, char is the nested data. Type and for the care, so let's say care one. And insert care one values one. So for care one, the value one is length. This is how the data would look like for material. Oh this is only one now you can have for us in a single class there can be yes what you mentioned there can be multiple cats and so that depends upon the material class that how many attributes can be this is a flexible thing in a sport that this can be a flexible attribute the number of cats there is no fixed number of cats for each class and how many how many and I don't know it's us because
+
+Bastian Osorio:
+at the end we need to build integration and each new field.
+
+Patel, Rahul:
+Yeah, so there are like to have a source. Yeah, there are more than I can tell you how many cats are there. There are 2660 different classes.
+
+Bastian Osorio:
+OK, and each class has a like several fields, right?
+
+Patel, Rahul:
+Yeah, it's got several characteristics and each it has several values.
+
+Sagar Vora:
+So the values are not a problem.
+
+Patel, Rahul:
+The problem is that you have multiple fields for different classes. Car plus value becomes a unique combination for a material. What we can do is, I mean, you can import the data. So basically, when you import data in IBP, you can define this logic, but for a material. What is the class concatenated to what are the correct what is the correct isn't for that what is the characteristics value now you can create a string out of it that class plus care one plus value one plus care two plus value two right and this can be you can have only one essentially attribute in IVP.
+
+ But this attribute is concatenation of all the attributes of S4. So that whenever you are importing, you have the complete string. And then you compare the string with. I don't know how you want. That can be one of the ways so that you know. And then once you have this data, you can split it into different attributes. You can define a keyword which splits a special character which splits the one attribute to another.
+
+
+
+Bastian Osorio:
+You have the charts. I was thinking maybe just integrate, find a way to integrate the chart. Whatever it is. The problem is that the users will not know what are they seeing. Depending on the material is the meaning of the attribute.
+
+Patel, Rahul:
+So what's the last name?
+
+Hector Palacios:
+Yeah, that's what I'm saying.
+
+Patel, Rahul:
+If you think like a generic attribute, just like attribute one. Sorry, Raúl, I won't mute you.
+
+UNKNOWN_SPEAKER:
+Yeah, please, Gord.
+
+Bastian Osorio:
+Yeah, I mean, if the meaning of the attribute changes depending the material that will be very complicated for the users. Like, what am I seeing?
+
+UNKNOWN_SPEAKER:
+You know?
+
+Hector Palacios:
+No, but one attribute is saying what you're seeing. That is length, width, whatever. And the other attribute is giving you the value of that. So in the planning view you can have both.
+
+Bastian Osorio:
+Yeah, so one attribute is the definition.
+
+Hector Palacios:
+yeah and the next one is a yeah that could be an option generally we need to test I only seen is that sometimes you have master data inconsistencies when you have this hybrid attributes because I have the I have done this in the past like you have an hybrid attribute that's for certain materials is going to be this and for the others is going to be the other thing the problem with that definition is that sometimes it can be, how to say, it can bring inconsistencies.
+
+ But I'm not completely sure. Maybe it's not the case here.
+
+Bastian Osorio:
+Maybe with the, I think with the virtual master data, it can also be the case. So this material is, I think with that can work.
+
+UNKNOWN_SPEAKER:
+Come again?
+
+Bastian Osorio:
+With the virtual master data. The material is this type of material, then the class is that. And we have a new table, new master data. No, it's going to be infinite.
+
+Hector Palacios:
+It's going to be integrated. No, but the virtual you need to create it. No, no, just one virtual.
+
+Bastian Osorio:
+But why do you need to do a virtual if this is not? Because then then you will, no, no, no. Yeah, it is a join because depending, you have in one different, the join is the, will be just one join, but you have an additional mass data of all the different attributes. So I'm gonna give you a basic example. If, I don't know, if material is engine type of type, If the material type is engine, then the first attribute means volume.
+
+
+
+Hector Palacios:
+But you can integrate directly the first attribute as an additional hierarchy. Yeah, but then you need to integrate it to all the materials.
+
+Bastian Osorio:
+Yeah. I don't know. I mean, it can be the case. Yeah, it can. I mean, yeah. Whatever is easier.
+
+Hector Palacios:
+The point is that you use virtual metadata when you need joins and this is the information here the lowest point is material so material metadata should be enough. And I don't think that you have a table in which you can say okay from this table for all this material this is going to be the value not at all because different material they have different lengths. One by one, either way.
+
+Bastian Osorio:
+Yeah, but find whatever works best.
+
+Hector Palacios:
+Yeah, now the point is that we need to define what is the cluster in this concatenation. That is the complication.
+
+Bastian Osorio:
+I'm sorry to take a step back, but I'm surprised that Rahul is showing us this at this point. I mean, I'm glad you're doing this work, Rahul, but still, I'm complaining here, I shouldn't do that. Why at this point, you are showing us this? I think this should have happened, I don't know, Vignesh showing this, I don't know, three months ago.
+
+Patel, Rahul:
+So we never had this point to come back again. So I thought that when Vignesh showed it to you, it was clear. Now, only when you ask that, OK, we need to have this information, I thought this information is available. That's why I showed this. When we sent the email asking for the attributes, he never replied. So when you say attributes of material for classification?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+I don't think so.
+
+Hector Palacios:
+OK. I don't know. There is plenty of information on S4HANA. That's for sure. The point is that integrating and doing the adjustment to the extractor and all of that takes a lot of time. So we cannot just assume that let's bring everything, because that is a lot of work. The idea is usually we need to filter out, okay, this is what we need to bring, and then we work. That's the missing part that we have been having this whole time.
+
+ So let's do one thing now from this learning.
+
+Patel, Rahul:
+All the interfaces, wherever you need input, let's have this conversion. Probably we'll be able to fix it immediately. We don't need to go to AdNoc. Based upon all the discussions, we know, like me and Krishgu can help you identify the data source in S4ANA if you have questions. And then use a technical session to ask clarifying questions so that we don't have long technical sessions, and we close this conversation as soon as possible, so that you guys get time working on extractors.
+
+ Is that something you think we can do internally? Like this point got discussed because we were discussing the numerical requirement. And when we were discussing the numerical requirement, you said that we need data, and we showed you data, which means there are other topics as well where we can help you in the technical data side to identify S4 HANA-related fields? So the question is, do you think we could like GoSCM team technical and IPP, sorry, the KPMG team, we can have this technical discussion internally to identify what are technical questions you have?
+
+ And is there something we can help you right away based upon the information we've been gathering across all the discussion and our knowledge of S4HANA so that we can give that information as soon as possible and the only thing we do is verify with AdNoc that is this correct because it takes time to get data from AdNoc which means that we'll spend a lot of time getting this input from AdNoc but then if we propose that this is what we are using from your data then we can get this confirmation immediately from AdNoc.
+
+
+
+Hector Palacios:
+That approach is better is what Bastian is saying work. It's not that way. It's better to show something even if it's wrong to ask him.
+
+Patel, Rahul:
+So, I think we are already over our meeting time because I think there is another call. Is it set up by me only? Yeah, FSD. So, probably we can use the same. We can continue here because this also relates to FSD because the way Someone else is waiting for FSD call. I see someone has jumped. Maybe not note taker. It would be note taker, yeah. So what I would propose, Bastian and Hector, is that maybe today also if we have time, we can spend time to go through all the technical requirements on data from your side.
+
+ And what we can do is, from our side, whatever we can fix on for another day we'll immediately try to close one by one let's go to the list and try to give you whatever you need immediately if you are able to do that it solves a lot of questions from your side and we don't need to go to AdNoc and we just only go to AdNoc or utilize the technical systems only for clarification is that something and and what we can do is whatever decision or discussions we are talking we'll document in in the FSD saying that this is what we are using from S4 and FSD.
+
+ And anyways, FSD will get reviewed. So they can confirm with an FSD if this is OK or not. So that we do, like we kill two birds with one stone. We also get a definition, and we also get the uproar. And while we are getting the uproar, FSD gets uproar.
+
+UNKNOWN_SPEAKER:
+Is this something we can do, Bastian and Hector? Yes. Excellent.
+
+Patel, Rahul:
+So probably, Khushboo, let's have this session. Do you think we can have this? We can start working on this right away today, or is there something planned for you guys? Yes, can you hear me? Yes, I can hear you now.
+
+UNKNOWN_SPEAKER:
+So. Hello, you're speaking. Yeah. Can you hear me? Yes. Yeah. So we.
+
+Patel, Rahul:
+So the idea is to come up with a proposal with an integration. Yes. OK. Yes. That's the idea. So the idea is to come up with a proposal based upon data we have. And confirm that proposal with that. So this is how we are trying to do it. So this is for the new models, right? So for new models, this is the proposal that we'll utilize this information and move. Let's put up a process around it.
+
+Bastian Osorio:
+Yeah, so I will schedule a call then on tomorrow. I think we don't have Invent 3U2. Let me move this one later.
+
+Patel, Rahul:
+Let's have this before our technical call. Let's have this internal discussion before our technical call so that we can utilize the technical call specifically for points which we need input from AdNoc.
+
+Bastian Osorio:
+I will schedule a meeting on Wednesday. So a working session with with us and Sagar, so we can start to figure out this integration, okay? Do you think it's a good idea? But this is a working session.
+
+Patel, Rahul:
+Yeah, we can have it, call it a working session, so for sure. Just a minute, yeah. Yeah, we can call it a working session, but do you think we need to do it on Wednesday? Because we have technical session tomorrow with AdNoc, then if we have this working session, what do you want us to talk with AdNoc in tomorrow's technical session?
+
+Bastian Osorio:
+I mean, from today to tomorrow, there's nothing we can do in terms of integration.
+
+Patel, Rahul:
+Or we cancel the tomorrow's technical session and use that time for our internal discussion, because we already have that in our calendar.
+
+Bastian Osorio:
+I mean, we said that that if we come up with a question from them without having something to show, it's not gonna work. So yeah, for me, it's fine if we cancel tomorrow and instead of that, we have the working session for me, it's even, it's fine.
+
+Patel, Rahul:
+So let's do that. Let's do that because I don't want to go to AdNob without like clarity between us that what we are trying to do. So let's do that. Khushboo, let's cancel tomorrow's technical session and have this workshop.
+
+Bastian Osorio:
+Yeah, I will schedule. I'm scheduling the session.
+
+Patel, Rahul:
+OK, you go ahead and schedule the session and will cancel tomorrow's technical session without knock. Integration working session. And then between tomorrow and day after Wednesday we can have all the points discussed so that Thursday's technical session we have a clear understanding of what we're discussing with that now. So Sagar Hector. Who else? Who else from your side should be in that meeting?
+
+ A purely technical session. Do you want me to include Kujbu and Kunal? Yes, both Kujbu and Kunal are technically experts on S4 HANA.
+
+Bastian Osorio:
+Yeah, that's good. I also will add Vivek, just speak and be there. I will put the session at 9am for us, but it's is conflicting with the daily stand-up, but that is not a problem because it's the same people.
+
+Patel, Rahul:
+It's the same people, OK?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, yeah, yeah.
+
+Patel, Rahul:
+Roshu is asking whether we can move the technical discussion to after 4 o'clock, like after our next week. OK, so that's clear. We've aligned on two things. We've aligned on our new process, new model process. So essentially, MoFaQuery start putting the process together. Probably, we can help you to put up the process and we can verify the process with GoSiem team. And GoSiem team, based upon the discussion on the data, we can share and we can start putting the thing together.
+
+ For sure, we don't need to demonstrate the solution as part of the next two weeks, but then we can work together while you're also here to finalize the process around it so that a week after that we can have this conversation with Adnok on new material processes, correct?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+Okay, that's with the new material process. Anything anyone has Any other question on the new model processes?
+
+UNKNOWN_SPEAKER:
+No, not not the new material, but
+
+Bastian Osorio:
+It just wanted to highlight that we also have other topics open.
+
+Mudit, Khushboo (UAE):
+For example, hierarchy. If we have any questions and we want to utilize the technical discussion on Thursday to close this, then we can take this topic also up for tomorrow's working session.
+
+Patel, Rahul:
+Yeah, let's talk hierarchy separately because what I understand Bastian is changing the approach for hierarchy. He'll propose and then we'll confirm with that log. Correct Bastian? Yeah. Let's utilize technical meeting tomorrow for internally closing all the points. I can help you with whatever data we have on IBP's S4 HANA side for hierarchy as well so that we are clear on that and then work towards defining it in IVP, show it to AdNoc and get their confirmation.
+
+
+
+UNKNOWN_SPEAKER:
+OK, sounds good.
+
+Patel, Rahul:
+OK, now let's come back to our FSD, TSD talk. Khushboo, we want to talk about FSD and TSD, right? Can we ask Sagar to join here? Because we had invited Sagar and Rinaldo in that call, technical team, but they're not here.
+
+UNKNOWN_SPEAKER:
+Yeah, let me call Sagar. For the FSD, right? Yes.
+
+Bastian Osorio:
+I think.
+
+UNKNOWN_SPEAKER:
+OK. I'm calling him. He should.
+
+Bastian Osorio:
+Okay, send the invitation.
+
+UNKNOWN_SPEAKER:
+Let's wait for him.
+
+Patel, Rahul:
+For FSD, I have shared the functional specification of existing AdNoc program on reconciliation of PR. It has both functional specification and technical specification which means by this document this document documents the logic of how AdNoc is reconciling peers today the expectation is that we can utilize the existing program change the input condition from existing input which is from S4 and utilize the same program.
+
+ But for us to complete the documentation, you will have to review this detail shared by AdNoc and propose a revised FSD or new FSD, which leverages the existing program. So do you have any questions around it? Or do you think this information will be sufficient for you to propose the FSD for?
+
+Bastian Osorio:
+Yeah, I mean, what we, I, I had a meeting with Reinaldo and Sagar and what we agreed to do is first, of course, we're prioritized because we have to, for me, we will have to separate the, there's no way around, we will have to separate the FSD in two documents, one for the web one and the second one for the web two. And those, all the details regarding PRs and STOs, here Sagar, will be addressed in the second web because we're still missing plenty technical details that will be defined in technical sessions, right?
+
+
+
+Patel, Rahul:
+So when you say plenty of missing information, let's talk about those missing information tomorrow. No, you provide the details, but we need to start. Yeah, yeah. And I think with that, we also talk about that, that will be the starting point, the current system, the current generation logic. Sagar? Hi, Sagar. Hey, hi, Sagar. Can you hear me?
+
+Bastian Osorio:
+Can you hear me? Yeah, thank you. Hope you had a good weekend, man. Yes, yes. So thank you for joining. One thing we are discussing about DFSD, we were all in this meeting, so that's why I called you here. I'm going to. OK, so sorry we were discussing about the FSD. We had a meeting the other day with Rinaldo and I'm just sharing the what were or. Conclusions from that meeting. So we said we're going to divide the FSD into into documents, right?
+
+ One for way one and one for the way to the the one for the Wave 1 will address mainly the extractors and the integration logic to integrate back the attribute, the segmentation FSMN, right? And in Wave 2, we're going to address the rest of the extractors that are not addressing the Wave 1. And of course, the core of the documentation will be the part related to PR and STO creation.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+So, because we don't have technical details, we haven't had technical sessions with them. What Rahul proposed, which I think is a very good idea, is to start by re-utilizing their current logic for PR generation, which I believe also addresses LTPA. And again, as always, we need to come up with a proposal, with a solution, and of course, because they already have something, we can start from there.
+
+ And then if more details are needed, we will have these technical solutions. But the idea is not, like, start progressing as much as we can before, sorry, without the need of their help. Otherwise, you know how it's been working, it's a constant back and forth, without too much progress yeah so I think you shared just one point you share you share the document but could you share it again with me and
+
+Patel, Rahul:
+saga because I'm not sure when you send it okay we'll do that again so I'll share that uh by the way best and I'm still waiting for your reply on that document on uh the question from khalid so that's
+
+Bastian Osorio:
+a separate but I yeah I couldn't find the email. Let me send it to you.
+
+UNKNOWN_SPEAKER:
+I have so many emails.
+
+Patel, Rahul:
+Yeah. I'll send you that email again. So by the way, Sagar, what will happen is, I agree with Bastian's comment to further build to it. We have separate FSD for Wave 1, and we'll have separate FSD for Wave 2. Wave 1 will focus essentially on the interface and the changes related to interface, what we expect. Will focus on the additional interface related changes which are related to Wave 2, the additional data which we need only for Wave 2, plus this PR, PO, reconciliation and creation of this STOs on S4 on a set.
+
+ These are the two objectives of Wave 2 FSD. So let's prioritize this in this format. Now if you have any questions, technical questions, we are planning this technical workshop between GoSCM and KPMG tomorrow. It is the same time that we had with AdNoc, so we will not have direct meeting with AdNoc tomorrow because a lot of the things probably we can help you internally from S4 HANA side. So let's have this workshop tomorrow and let's see what all points gets closed and whatever points are open between our workshop, we'll take it to AdNoc on Thursday's discussion so that this week we are able to get maximum input at least for the FSD for Wave 1.
+
+ Okay, that's the agenda.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Patel, Rahul:
+Now, based upon this discussion, you need to help us when you will be able to confirm that the FSD would be done so that we can make sure that the FSD is not getting delayed. And I can then work with Vignesh to get you the approval on FSD as soon as possible once we have the draft ready.
+
+Sagar Vora:
+Okay, yeah.
+
+Patel, Rahul:
+I will update you on that. So any question on FSD or FSD-related point?
+
+Sagar Vora:
+No, I remember I shared the document with you, Sagar.
+
+Bastian Osorio:
+I want to take a look at the document before closing the meeting. Let me see where I put it. In the integration. Let me see. Let me see.
+
+UNKNOWN_SPEAKER:
+Let me see.
+
+Bastian Osorio:
+Realize integration. It is in the KPMG folder.
+
+UNKNOWN_SPEAKER:
+Let me sign in.
+
+Bastian Osorio:
+So we can take a look and be aligned on what it's going to be for.
+
+Sagar Vora:
+Going to share some document right for FST. Template is already shared.
+
+Patel, Rahul:
+Sagar, you have the template with you? Yes, it's best.
+
+Sagar Vora:
+Let me say last week we had a walkthrough. So currently I don't have handy, but you have it with you, right? Yeah, yeah, yes, yeah.
+
+Patel, Rahul:
+So the plan is that all the interface related changes should be part of the same FST. Probably the only thing is we can have one FST interface for Wave 1 and FSD interface for Wave 2?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+I think we were planning for two FSD, one where we are going to modify related to extractors, and one FSD where we are going all the integration related interface, like product, customer, means whatever interfaces we are developing. That will be captured in one FSD for Wave 1, and one FSD where we are modifying the extractors standard FSD. So that will be captured in another application.
+
+Bastian Osorio:
+Let me share the file. The file is called WRicef and here I put WAVE, right? So, okay, we said, well, this one is going in WAVE 1, the interface I did 1ARP routes for sure. Consolidation criteria, Wave 2. Is STO. Call of order, LTP creation, all that, Wave 2. Wave 2, the PAP, anything related to PR, Wave 2. So let's go to Wave 1. Material master updates in S-Rohana via Badi.
+
+UNKNOWN_SPEAKER:
+Yes. Wave 1.
+
+Bastian Osorio:
+Wave 1. Yeah, Wave 1. Yeah, this is for drilling, but drilling is a different story.
+
+Patel, Rahul:
+Yeah, but this is generic material. So for us, if it's a generic material, it should be just material.
+
+Bastian Osorio:
+So it should be Wave 1. Yeah, this is Wave 1, and this is also mapping between generic material.
+
+Patel, Rahul:
+So this is the mapping between generic metal and alternate metal?
+
+Bastian Osorio:
+Then that is supply, and that is wave 2. OK. So then I will put wave 2, and I will put what will be then extract generic slash branded material Relationship.
+
+UNKNOWN_SPEAKER:
+Relationship.
+
+Bastian Osorio:
+Relationship sounds too romantic. Relation.
+
+UNKNOWN_SPEAKER:
+Mapping. Mapping.
+
+Bastian Osorio:
+Just say mapping. Yeah.
+
+Patel, Rahul:
+A way to integrate minimal order and value.
+
+Bastian Osorio:
+I think this is, I put on, yeah, we don't know about this. I think we said we're not going to use, we're not going to do this. Do you remember this point, Raquel? This is required.
+
+Patel, Rahul:
+This is part of our BRD. We're not going to do, there are two points related to order value. One is minimum order value, and second one was multiple materials topping max based upon the order value. So there are two critiques.
+
+Bastian Osorio:
+Exception. Yeah, we put it in the right setting. We don't know how we can address that.
+
+UNKNOWN_SPEAKER:
+The logic.
+
+Bastian Osorio:
+Do you remember that if I have a requirement for one material, but I need to, as you said, top up for the minimum ordering value, which material should I select?
+
+Hector Palacios:
+We said that we are going to implement an alert for that, not to solve the issue.
+
+Patel, Rahul:
+Yeah, yeah, so this is, but you need to have the data, right? It's an alert, but then you need to have the data to decide the alert, right? Yeah. OK. But from a solution perspective, we need to have the data to even generate alert.
+
+Bastian Osorio:
+Yeah, then. Integration of the value. What should be in the FSD is just integration. The configuration will set anything related to IPP is not part of FSD.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Bastian Osorio:
+And the only thing, whatever we are changing, only on S4 and S8 should be in FSD.
+
+Patel, Rahul:
+Whatever we are doing in IPP, they don't care. Point of time it would be a configuration document only so which means we need to just have one configuration document which which takes where you take screenshot of every configuration you do in an IBT.
+
+Bastian Osorio:
+Yeah then yeah VMI, Wave 2 as well. Yeah this is part of what yeah here we have we need to have an internal conversation but it's we can address this later but this is Wave 2 as well.
+
+Patel, Rahul:
+In the VMI you have to two things, right? One is integration for S4 and other is the interface, which, where we are able to upload directly into IBP. So that would be not be RICEF, right? Where we are able to uploading directly, but then where do you define the fields for?
+
+Bastian Osorio:
+Yeah, this is a critical point, but we only have four minutes left. So it's definitely, we can take later. Let me put a color just to remind. Storage policy for materials and lead time between vendors, yeah. Identification of repairable material to ensure alert is set up for inventory to check with end users, yeah. This is one, yeah. Yeah, it's one, but what about the, we don't have any source for this.
+
+
+
+Patel, Rahul:
+We'll tell you right that's where we in the tomorrow's technical session we'll tell you from where will you find a repairable material.
+
+Bastian Osorio:
+Okay. What does PR lead to with budget? Yeah wait to home upload we say we are not we're not gonna listen to people.
+
+Patel, Rahul:
+Yeah so by the way before we close we have three minutes so I had a call with Khalif inventory manager for drilling and we explained him the situation the complexity of bomb which is bringing in metal category and the complexity between onshore and offshore on the tool different tools drilling tools and the future path where the tool is replicating they are the drilling team has the improvement of the like drilling team is proposing to improvement of the tool so this was aligned with Khalifa and Kalifa is in agreement that we should not have a different process between the two companies and we should not be replicating the efforts of one tool into another and the link team is more comfortable with EWDP tool then let's build our solution in a way that we don't have duplicate effort in both the system which means that...
+
+ Can I delete this then? Let's not delete this but the next step is for us to like what is the agreement Next step is that for us to have the detailed discussion on EWDP, what's there in EWDP, what's happening in EWDP, how the EWDP tool is used, and what data we need from EWDP in terms of demand so that we can say that this is what we'll get from EWDP and we'll integrate that with IPP. Now, short term can be a manual upload so that the interface can work later.
+
+ But before we say yes, this is how we'll do it. We need to have this discussion with EWDP to define and close the definition what we want to do this and once everyone is aligned we can then delete such point. So to summarize, based upon our Friday's discussion, today morning this was discussed with AdNoc and the next steps are as I explained. Talk in detail with the EWDP team. So right after this call I will go talk through Vignesh, we need to align this with Vignesh.
+
+ No more Bill of Materials in S4 HANA. We're directly talking about demand upload. Now once Vignesh is aligned, we will initiate these calls tomorrow. So probably you'll get invite from me between tomorrow and day after to have this conversation with the EWDP team. So this is update on drilling. Yeah.
+
+Sheth, Kunal:
+Rahul, before we close, let us have target completion date for the FSD and TSD so that we can also update on the Hedis tracker FSD FSD just FSD later later FSD now yeah later on so we have two FSDs
+
+Patel, Rahul:
+what you are saying one for the enhancement of standard extractor and second is the interface which is totally new correct Sagar for wave 1 Yes, correct.
+
+Sagar Vora:
+That was my understanding, yes.
+
+Bastian Osorio:
+For me, the separation should be in waves. Wave 1, wave 2, whatever is needed for the UATs of wave 1 is going to be in the FSD, regardless if it's interface or enhancement or whatever.
+
+Mudit, Khushboo (UAE):
+Just whatever is needed for the UATs.
+
+Patel, Rahul:
+Okay, so what I would recommend is that let's identify all the actions of wave 1. So before that, Sagar, are you clear what all things are part of the wave 1? And do you have all the required information to put FSD together?
+
+Sagar Vora:
+Yeah, I went through and yeah, like whatever is mentioned in column one is should be the part of their work.
+
+Patel, Rahul:
+Yeah, and then you have all the required information to put it together in FSD form.
+
+Sagar Vora:
+No, I need to check means I was working purely on integration part, so I need to check and I can update all that. So I need to connect with Rinaldo also because the plan was like Rinaldo was going to work on FSD and I was going to focus on integration.
+
+Patel, Rahul:
+Okay, if that's the case, then can you connect with Reynaldo and help us with this? When do you think we can have this FST completed? At least a draft one, put together. If there are any questions, let's make sure Reynaldo also joins tomorrow's call on this workshop so that if there are any questions related to interface or fields or anything, it can be part of the same discussion. OK, OK, sure.
+
+Sagar Vora:
+I think tomorrow's call will be too early for him, but at least I can help you with the dates once I discuss with him.
+
+Patel, Rahul:
+Yeah, so probably if there is anything which he needs specifically, probably if you can align during the day to day and add that specific points on Reynaldo in tomorrow's call, that will also be great. If he's not able to join, you can cover for him.
+
+Bastian Osorio:
+That would be great. Can you meet today with Reynaldo and define deadline and you can share the details you know where's the document right and you also have the same in the same there's a template there yeah I can see the template yeah
+
+Patel, Rahul:
+yeah cool thank you okay then I think we can conclude our call okay okay thank you thank you all right
+
