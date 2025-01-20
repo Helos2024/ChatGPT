@@ -1,0 +1,840 @@
+Hector Palacios:
+Hey Vivek.
+
+UNKNOWN_SPEAKER:
+Hi Hector, how are you doing?
+
+Vivekanand Gajula:
+Doing well man, how about you?
+
+Hector Palacios:
+All good yeah, thank you. Great man. Vivek, just out of the topic question, related to the reorder point you said that you downloaded that information right yeah you downloaded for the information that vignesh share right or or you you did it like generally no no uh
+
+Vivekanand Gajula:
+whatever uh location products you know that I got from vignesh only for those combinations you know I downloaded the rop okay and this is something that you loaded on ivp yeah in backup version backup version on which plane area uh z01 adnoc let me check I will give you the key figure name you know you loaded on one key figure not in the master data no not in the master data because to load this data in master data we need an attribute no yeah right now we don't have any attribute I just created one that's why I was asking now you created okay yeah for reorder point and my stock level only for your point okay now what's the plan like are we going to are we going to bring in the edge locks and then you know we'll create the network and consider that you know during planning I didn't get the question.
+
+
+
+UNKNOWN_SPEAKER:
+Can you repeat?
+
+Vivekanand Gajula:
+No, what I'm saying is right now we don't have anything at the S-Log level. So for unit testing, we need all that information. So what is the plan? So we first bring all the S-Logs and then the transactional data and then show that to the business maybe for supply you need testing yes for demanding inventory we are not getting to torch location I don't think that we get to decisions with that but if for supply you know we are going to have it at the s block level then then the assumption is that you know we have the demand and inventory entry plan at that level?
+
+ Or we don't have it? We will have it, right?
+
+Hector Palacios:
+We will try to have it, yeah. OK, OK. If we don't get to have that for this session, then I guess that we will work at the planned level as well in the meantime.
+
+Vivekanand Gajula:
+OK. If you don't mind, can you please take care of one thing? I have created this attribute IPB planning type, and that is blank at the moment. So can you fill that attribute so that all combinations which are having forecast-based planning, I can copy the forecast only for those combinations?
+
+UNKNOWN_SPEAKER:
+That is one pending topic that we have.
+
+Hector Palacios:
+It's not completely clear how we are going to see it to be honest.
+
+Vivekanand Gajula:
+Because right now, I am not clear like because right now I am treating every combination as ROP based plumbing because I don't know which one is focus based plumbing.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+That's one big one.
+
+UNKNOWN_SPEAKER:
+Give me one second.
+
+Hector Palacios:
+Take care of the topics we have for supply planning. And Samsung. That is pending.
+
+UNKNOWN_SPEAKER:
+That is on hold.
+
+Hector Palacios:
+This is pending the LTPA definition. That's pending. That is not also, I wouldn't say, well, it's critical in the definition side, but it's not like critical if we go or not with that. For the testing agents. The turnaround part is something that we need to discuss. Let's wait for Bastian on that. Turnaround data at the equipment level. This is something that we are going to to start now I'm not sure if we did the last thing that we discussed about this is that you were going to try to get it from for Hannah I don't remember
+
+Vivekanand Gajula:
+but but it is I mean it's too complicated you don't get it so it's better you know they give us or I don't know then what do we need to do yeah no but the the weak complication I don't think there is equipment level is it wbs level that's this one right yeah this one I think we were discussing about uh some custom solution no One section to discuss about the constraints.
+
+Hector Palacios:
+The transactional data lifecycle. Those are like impending. The planning type definition for sure. I want to close with Astian. And the supply chain network.
+
+UNKNOWN_SPEAKER:
+Mm-hmm.
+
+Hector Palacios:
+So those are the big topics that we have pending definition yet.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+so you got there your point information it is still missing the lgba right yeah lgba we don't have it so right now we just have rule 2 and 3 you know for vendor you know selection rule 2 is if they did a purchase in the last 12 months so we'll use that vendor and rule 3 is tendering so only that we have it in the list.
+
+Hector Palacios:
+I'm just curious on where is the information for this, the LTPA information. I guess that should be on the info records, but I'm not completely sure where you can find it, you know.
+
+Vivekanand Gajula:
+So info record is a separate, you know, uh, document. Is what it's a contract. No. So contract is, uh, what they call it as LTPA. That is my understanding. Do you know if there is a standard table for that yeah I mean standard transaction I know which is I think uh me 33 yeah me 33 and this contract should be this contract we can find it in double ko table now guys that we should find it can you share the transaction name or table name my understanding I think transaction is ma33 which is equal for contract and table should be this one table You can check this.
+
+ Yeah. Yeah.
+
+Hector Palacios:
+contract all right let's keep it there I mean the the big priority right now is to get whatever we need for inventory and run but we need to start looking as soon as possible on this as well and one
+
+Vivekanand Gajula:
+more thing actor like for unit testing we are going to only take care of mvp right so So whatever inventory plan we are generating, you know, on the inventory side, like reorder points, safety stock, and even the max stock, won't be part of MVP?
+
+Hector Palacios:
+I mean, we are not going to consider that for supply planning? You think that, for example, the supply planning is going to be constrained by what we do here on the mining inventory?
+
+Vivekanand Gajula:
+No, I'm anticipating one question from the business. So they might ask us, like, you are using the ROP, max stock level, and safety stock, what Vignesh has provided to you. So that means we are leveraging the restaurant information on the supply planning side. They might ask us, then, what is that uh what is that we are doing with the output of ip inventory uh no we can wait until we have it very well um we cannot we go with the output ibp inventory until we have we are sure that the data is fine is validated I think they will just compare with uh what they have in s4 hana and once they get the confidence on uh the output that inventory is generating then then uh the output of inventory will replace there as for an output is it that's the intention okay but for the initial uh few months uh after we go live it is going to be like that only
+
+Hector Palacios:
+or or only you know uh this is during the testing phase I I think that that we will realize when we are there, for sure. But the most likely scenario is that we go live. Even when we go live, this is not going to be completely validated. I mean, it's too much data and too many people that need to validate.
+
+Vivekanand Gajula:
+So this will take some time to get there. OK, so then I think IBP inventory is only for simulation purpose. Yeah, for now, yeah.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+We need to propose the first layers. But then they need to approve, I guess, the important one at least. They need to make sure that this is in the limits if this makes sense to them. And just once this makes sense to them, we can just integrate information.
+
+UNKNOWN_SPEAKER:
+OK. Let's go with the next one.
+
+Hector Palacios:
+This one, Vivek, is something that, if you remember, that we can start just creating. Do you remember the Rotables planning? Uh-huh. But it's just an easy way that, remember, that we were discussing to use it with the inventory correction keyframe, and that's it. The only thing that's fine.
+
+Vivekanand Gajula:
+this kind of materials you set. Do not integrate material reservation as they should not trigger PR. But in this what is that we need to do I mean they they just have to use inventory correction and put the quantity right which is beyond reparable yeah and then system will automatically take care of it no yes so if you do a correction that place the the stock on hand below the rear the point it will trigger yeah yeah that is already taken into consideration because uh in my calculation no projected stock calculation I have considered inventory correction also but only the first period of inventory correction.
+
+ Okay so I can do a test you know I can do a test I will put some something in inventory correction and then and then we'll see what is the output And then the storage location impact is something that
+
+Hector Palacios:
+we were discussing with Basti and then you join on Friday. So we realized that basically we need to go with the storage location level. The news is that there is like one way to get the reservation. So we are checking that we can join the order number with the reservation and we can get what we need yeah yeah so basically these are the topics let me check if something that we can do here right now to be will wait WBS something to discuss These are missing sessions, so we check with the KPMG team.
+
+ Let us line with them. Line type definition, equation rules.
+
+Vivekanand Gajula:
+OK, tell me one thing. Thing for third round I understand you know they they want to have visibility you know at the WBS level but for preventive maintenance do they have any hard requirement to have have the demand you know at the equipment level I mean directly loaded to independent demand No, we will load everything at the weapon level. Yeah, but is there any specific requirement for that?
+
+Hector Palacios:
+In Kimigal, yes. They want to do the information at the cost center level because that's the only way that can separate of that that can be an issue but in chemicals there is nothing like corrective preventive no no there is not yeah
+
+Vivekanand Gajula:
+so then chemicals demand when we copy to supply planning it will be at product location level only no in depending on the market figure?
+
+Hector Palacios:
+No, we need to look at the customer level. Because the cost center is the way that they can separate who is the owner of that forecast.
+
+Vivekanand Gajula:
+And the cost center related to the functional location that is kind of a equipment forecast is okay I'm not talking about focus so on the demand planning side okay we we keep it you know at product location customer level
+
+Hector Palacios:
+but at the inventory level um not that I know I mean they can tell us no we also need the information on by cost center That would be weird, right? Because the big difference with turnaround is that we don't need to have the safety stock and all that kind of stuff that we define the inventory levels. As soon as we have the inventory levels, then it doesn't make sense, I guess. You have the information segregated by work breakdown structure or whatever.
+
+ Here, for me, wouldn't make the sense as well. I mean, I know that the inventory team is a shared service, so usually it's one centralized team for that. Maybe turnaround is exception, it's not in the inventory shared service layer.
+
+UNKNOWN_SPEAKER:
+Correct, correct.
+
+Vivekanand Gajula:
+See, I'm not talking about turnaround, you know, I'm talking about anything that is not, you know, turnaround, okay. Now in MRO you have turnaround, in chemicals also you have turnaround. But anything that is not turn around you know let's first talk about chemicals so anything that is not turn around on the chemical side we are going to copy the demand you know to the independent demand key figure or
+
+UNKNOWN_SPEAKER:
+not.
+
+Bastian Osorio:
+all good what about you doing well it's just the weekend was too short for me but there's nothing we can do about it uh you started long ago uh yeah yeah we started the discussing the points and now that
+
+Hector Palacios:
+we have here on the screen only the ones that needs like definition uh so are the big points but be aware what you were asking about kefir to copy the man, right?
+
+Vivekanand Gajula:
+Yeah, let's align on that.
+
+Hector Palacios:
+Yeah, for the pipeline, there is not going to be a case like the WBS element aside of turn around. But what do you mean by WBS element is is something that we were discussing with Rahul that we need the information at that level as well is the breakdown structure, they need to have everything related to that.
+
+UNKNOWN_SPEAKER:
+Better information.
+
+Hector Palacios:
+Just bear a moment with me there. So we think the information for chemicals is going to be at the customer level for sure. Equipment level.
+
+Vivekanand Gajula:
+So entire chemicals will be at customer demand information yeah demand information only so that's it yeah so consensus demand is where we are going to copy is what you are saying right yeah okay but as soon as you enter
+
+Hector Palacios:
+to the stock level information like material location then it will be that level we will not create like something similar to to turn around you know it's it's going to be that I get it so uh my main question
+
+Vivekanand Gajula:
+was about the demand you know so I I was thinking that only for turnaround you know we'll use consensus demand but you are saying for uh for chemicals as a whole you know it is going to be uh at the product and customer level yeah and let's see for tomorrow at the end we are not completely sure which one we are going to use I think it's going to be a combination of both, independent and consensus.
+
+
+
+UNKNOWN_SPEAKER:
+I think so, yeah.
+
+Hector Palacios:
+We're not completely sure because for the preventive part, it seems that we don't have a preventive number. If we had a preventive number, then I could tell you, yes, let's do it at the equipment level because we take the future work orders or whatever plan they have at So if then later they want to see which one wasn't satisfied because of supply planning, they can see specifically this equipment was affected.
+
+ That is the ideal case. But so far we have seen the data. They don't have strong information about preventive maintenance. So it's even a possibility that we go in chemicals and to just combine everything. That's one big possibility. So we need to check. And in the case of MRO, there is no strong requirement to keep the information separated by equipment or by cost center or whatever. So maybe on MRO, we go with independent demand.
+
+ OK.
+
+Vivekanand Gajula:
+That's something we need to check.
+
+Hector Palacios:
+But I guess that we will have more clarity in the next weeks when we are there on site yeah so then for chemicals as we are going to use consensus demand we also need customer source for that no yeah that's correct and you are saying mostly it is going to be one is to one right one because it's going to be one to one So at the end, the customer source, we can build it based on the same demand. So we get the information.
+
+ Imagine that we get the information at the storage location level as we are thinking. Then you will have the demand by storage location, and then you can just create based on the same demand the customer source table. It will be kind of a dummy table for me.
+
+Hector Palacios:
+All right, let's discuss the points that we have here. Let me know if you are missing one here. But I think these are the big topics that we are pending a strong definition. One is CLTBA. We have one big file that was shared by Aisha, I think. And for who shared this, I saved it. Need to see where I live.
+
+Hector Palacios:
+We are reacting. So here we have something that we need to get and to understand. If this is something that we can get into rules. So Vivek, what we said here, maybe this is something that you can take in the meantime, because I want to take it, but it's not going to happen soon, especially not in the next week.
+
+Bastian Osorio:
+But this is something we need to address during the technical session.
+
+Hector Palacios:
+Yeah, but first we need to analyze this, because they supposedly These are the rules. So we need to understand this is something that we can get from IVP, something that is relying on information that we don't have in the system. So basically, Vivek, they are pushing a lot related to this, right? So they want IVP to propose when a material is candidate to have an LGBT arraignment.
+
+UNKNOWN_SPEAKER:
+Basically that.
+
+Hector Palacios:
+So we need to understand these rules that they have and to see if this is something that we can just translate easily into an alert on a report or whatever. But we need to analyze this and to understand if this is feasible or if this is enough for us to start a discussion. So maybe this is the first step that we can take. So in a moment, if you have enough time and you points, then we can start with this point.
+
+ Otherwise, we will need to wait because at least I want to take it, but I have some other priorities.
+
+Bastian Osorio:
+Can we go back to the table, please?
+
+UNKNOWN_SPEAKER:
+Give me one second.
+
+Hector Palacios:
+So I can leave this for you with X supply. I'm leaving it here, man, if you want to check it later. But I am, it's not, it doesn't seem like a road.
+
+Bastian Osorio:
+Yeah. But can you filter everything? What do you want to say? Related to supply, all the points related to chemicals and supply.
+
+UNKNOWN_SPEAKER:
+So supply, MRO and chemical supply. Okay.
+
+Bastian Osorio:
+Is there a way to, okay, these are the open points. What I want to check if, I don't know if you'll be able been working on the script script for the testing at least on a very high level yeah on a high level what are the cases that we want
+
+Vivekanand Gajula:
+to address during the during the unit testing yeah the high level script I had already prepared you know a couple of weeks ago uh I think it is already loaded on the SharePoint as well.
+
+Bastian Osorio:
+I haven't had the time to check it.
+
+UNKNOWN_SPEAKER:
+Let me open it.
+
+Hector Palacios:
+That's an interesting point because I was the scripts that we have for the mining inventory, I was analyzing what is like the state of each one, you know? Related to definitions, data, configuration, fine-tuning, so on. And this has been like a guide to understand what are the next points for us. It's a complementary enter view from the open points, but this is like more in a more order way because we know step by step what we need to do, what is like the status.
+
+
+
+Vivekanand Gajula:
+This is for this test script?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+These are basically the scenarios that we need to do the money inventory. So you can do something similar for supply planning.
+
+Bastian Osorio:
+I think he already did it.
+
+Vivekanand Gajula:
+But I think initially the format was different. So I used that.
+
+Hector Palacios:
+Yeah, the format is not the important part. I can then later check the format.
+
+Vivekanand Gajula:
+It's just like to put in comments what we are missing, what is what the format was so I just used that format and I had put, you know, the steps.
+
+UNKNOWN_SPEAKER:
+No, it's fine.
+
+Hector Palacios:
+It's fine. It's just like the status of each one. Like, which one you seen? Okay. No, I mean, we are well behind on this one.
+
+Vivekanand Gajula:
+So we are missing this, this and this for getting this done.
+
+Hector Palacios:
+You know, it's just like, uh, you, you, you take, we can put a comment around there or we can just copy the steps in another table and to see, okay, for this one we are okay, for this one no, we are pending like three definitions to get there.
+
+Bastian Osorio:
+Give me a second. Okay. So, validating master data through IVP XLABing. This is fine. Let's go a little bit of which master data we want to validate, because there's plenty of master data here. So I assume here that at this point, materials, location were already validated in the demand phase.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vivekanand Gajula:
+So for supply, what should be the master data to be validated?
+
+UNKNOWN_SPEAKER:
+How about transportation lane? OK.
+
+Vivekanand Gajula:
+Vendor to And plan to plant also know.
+
+UNKNOWN_SPEAKER:
+But we are.
+
+Bastian Osorio:
+Why why plant to plant?
+
+Vivekanand Gajula:
+Log when we say s log it is planned underscore s log, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+So then I think in that only it will be covered.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vivekanand Gajula:
+what else in terms of master data because there is no bomb so I think for supply the main master will be transportation lanes only rest will be taken care on the demand planning side right locations products yeah patient product yeah so I think supply work is what they need to validate.
+
+Bastian Osorio:
+Okay, transactional data, validate transactional data through a VPX, material reservations, planned stock, open POs, open STOs, maximum stock level. And let's put uh two more uh points one is reorder point and the other one is safety stock and yeah and forecast when I will set the first one for me should be forecast forecast. You But in that case, the maximum stock level will be determined by, in the case of reorder point line, by reorder point plus UOQ, right?
+
+
+
+Vivekanand Gajula:
+But I think for unit testing, they will validate this on inventory side or they will check what we what we loaded you know from the res4ana system so what is that just it's just to know it's a risk point
+
+Hector Palacios:
+right now we don't have a like a final definition we don't have the eoq and that eoq is not a global definition so it's one important point that we need to discuss But it's for them. Not just so it's inventory.
+
+UNKNOWN_SPEAKER:
+It's inventory, sorry.
+
+Bastian Osorio:
+Then we have release demand and inventory policies. Then we run a copy operator from IVPXLADIN to release the demand plan and inventory policies from IVP Demand Planning and Inventory. Yeah, that's fine. Respectively.
+
+Vivekanand Gajula:
+but ekta we won't release inventory plan no are we going to do that in the unit testing no yeah so then I think that point will have to remove no now let's keep it for the do we need either
+
+Hector Palacios:
+for the unit testing?
+
+Bastian Osorio:
+Yeah, this is just a guide for what we want to show you during the unit testing.
+
+Hector Palacios:
+Yeah, because I don't think that is a strong requirement from them.
+
+Bastian Osorio:
+Review the demand plan. Yeah, it's fine. You put it here. That's why we didn't need it. Validate inventory policies. Yeah. Planner will review the following constraints that will be big exciting lead time supply capacity Material availability load size. I Think we haven't addressed any and we don't have any information related to supplier supplier capacity And when you say material availability, you mean like stock on hand?
+
+ Plus yeah, I'm stopping hand plums of open orders open a study tool stock in general, right?
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Bastian Osorio:
+Okay, then we'll review the following IVP planning types which will be automatically determined based on material segmentation.
+
+Vivekanand Gajula:
+This is again an open point, you know, review IVP planning type because we don't have any definition at this point in time.
+
+Bastian Osorio:
+But I believe we made a definition, which I'm not saying is absolutely right, but it's a starting point. We should take that and iterate from there. And I think that definition is in the, we put it in a presentation, which is related to, do you remember what we put in it, Hector? Yeah, but it's vague.
+
+Hector Palacios:
+We are not saying, we are saying like long lead times, but we find why it's a long link time.
+
+Bastian Osorio:
+Yeah, but still I think we should someone recover that definition and start to complete it. But I think we put a couple of hours or a couple of minutes at least. And to make a simple, very basic definition, we should take that and start iterating until we get the final one. I will take that point for myself.
+
+UNKNOWN_SPEAKER:
+I think the definition is fine.
+
+Hector Palacios:
+I took some time to get it done. That we haven't defined the real parameters. It's qualitative right now, it's not quantitative. Run forecast consumption, this is good.
+
+Bastian Osorio:
+Planner will run forecast consumption. Well, we're not worried what it is. Security, prevent mature reservation. To be treated as additional demand. Okay.
+
+UNKNOWN_SPEAKER:
+Advanced analysis system recommended.
+
+Hector Palacios:
+Vivek, were you saying you figured where you loaded the reorder point?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+Bastián just one thing instead of calling it as advanced supply planning can we call it as forecast based planning?
+
+Bastian Osorio:
+The thing is that yeah we could we could and maybe it's a good I think I believe it's a good idea.
+
+Vivekanand Gajula:
+Because whether it's reorder point or forecast based anyways we are going to use advanced supply planning algorithm. No yeah I think it's a good idea yeah so that change we can make it in the test script yeah we should have done it long ago though yeah but because that advanced applied learning confuses me so so it will confuse them also maybe it will send the wrong message as well Vivek when you downloaded the information is clear what is the unit of measure of that or it's always like the base unit of measure?
+
+ It was base unit of measure only I just took the values okay see in MRO I think the unit of measure is each as you know so there is no issue you know with UM conversion and all but in chemicals you know for different products they have different base unit of measures so I think I think what I've seen in the system is all that have been converted to UMB. I think there was a separate unit of measure that was created called as UMB.
+
+ Because in Excel we can't select different UMs, right? No. We need to select only one UM and that is UMB for chemicals mostly.
+
+Hector Palacios:
+Okay, so the real deployment information you have it is by by base unit.
+
+Vivekanand Gajula:
+Yeah, by base unit only. No exclusive conversions like that. Great. I was thinking on the weekend on alerts.
+
+Bastian Osorio:
+I was thinking, and I think we always need to do this exercise, come back to Scratch and think what is the value we're adding with IVP and what are the basic easy stuff we can do that will add value quickly? And for supply, I think one alert that will add value immediately in the short term is an alert that compares, for example, if there's a material that hasn't been consumed in the last, let's say, five years and has a stock of above, let's say, one, we should put an alert for that.
+
+ So they can basically, I don't know, dispose it, whatever. But I guess, let's say, because I understand like a very expensive piece of equipment that if it fails, you need to have at least one in stock, it's fine that you have it, right? One piece or two pieces. Okay, that's fine. But then if you have, for example, certain material that hasn't been consumed for the last five years, and you have 100 pieces, then what's the point of having it?
+
+ So this is something that, of course, the alerts can help you to identify super quickly and it can I mean there is no way to to get this wrong so is it possible you configure this this other Vivek yeah
+
+Vivekanand Gajula:
+yeah I think what we are consuming you know what is the consumption frequency for that if I'm not mistaken we we already have one key figure on the demanding side I think that was created, you know? Maybe I can use the same one and do a check with stock.
+
+Bastian Osorio:
+Yeah, but I think we need to do that exercise of making it, I mean, start with very basic features, usabilities, and then, because we have a lot of stuff in the users, let's face it, they are very, let's say, I don't know, in maturity, the usage of IVB. So if we can show them very basic and simple user cases that add value, I think that will create some momentum good for us.
+
+Vivekanand Gajula:
+We need to think in examples like this. And this alert should be both in Excel as well as created as a custom alert, right?
+
+Bastian Osorio:
+I think for now in Excel is fine. Then we can go to more, more, more complete, more sophisticated alerts and all that. But that's my point. During the unit testing, we want to, it's an introduction for the users. So, for example, you were discussing an LTPAA, and it's something that, of course, needs to be addressed and is very important. But we shouldn't start from that. Because if we start from that, we're not going to gain the users, it's going to get complicated, we're going to miss definitions, and it's going to be chaotic.
+
+ Whereas if we show like easy application like this, all the same, they can say, okay, this thing seems to work at least for these basic, then you can add some value. That's why I always push for for demand planning being the core of the solution, because demand planning is easy. There's no way to get it wrong. And you can add value quickly. Well, in this case, I don't know how much value we'll add them applying because this is something different, but in general terms, I'm speaking.
+
+ So let's think about, well, you can think of Vivica in simple user cases that will basically create like a foundation for the rest of the solution.
+
+Vivekanand Gajula:
+That will create a dependency for the users of IVP.
+
+Bastian Osorio:
+Let's say they say, okay, I want to use IVP, I need to use it because it at least allows me to do A, B, and C, which is pretty easy, but I do it very quickly in IVP.
+
+Bastian Osorio:
+And I think, and the same for shortages, we need to find a way. Well, I think you will do it. You're probably, you're super good on this, on create alert for shortages. The alert definition, I think you can make it better. But for me, it's if a material has been consumed on the last three or five years and the stock is above one or two units, we should have an alert so they have to dispose that stock.
+
+ It's consuming probably space in the warehouse, I don't know, it's not being used and it's not critical. I don't know, we can start by simple definition that you can think and then we can share it with them and we can refine it but yeah I think we can take a generic you know business rule and then
+
+Vivekanand Gajula:
+we can show them okay there's how you can there's how we can define you know the alert in the system but yeah once we get the exact business rule then we can modify it for me the most generic alert
+
+Bastian Osorio:
+and in that regard will be five years consumption 5 years with no consumption and stock on high and above, too.
+
+UNKNOWN_SPEAKER:
+Okay. Fine.
+
+Vivekanand Gajula:
+So, what are the others?
+
+Hector Palacios:
+What are the others so we can take note of that?
+
+Bastian Osorio:
+I just mentioned it.
+
+Hector Palacios:
+Repeat so I can place it on the document.
+
+Bastian Osorio:
+I will call it disposable stock. I will call it that way. Basically, it's stock above two units and no consumption on the last five years.
+
+UNKNOWN_SPEAKER:
+Excess stock.
+
+Hector Palacios:
+OK, excess stock. Yeah, it's one of the requirements.
+
+UNKNOWN_SPEAKER:
+So we need to do it.
+
+Vivekanand Gajula:
+But that requirement is, for example, you have X location and that location has some you know requirements so before you raise a PR you check you know if y location has any excess then use that and then you look
+
+Hector Palacios:
+for a PR so that is excess stock requirement no no they want to know which are the overstocking items so for that they want us to identify which ones are not being consumed and we have excellent stock and there
+
+Bastian Osorio:
+is no demand for okay so I can get that's overstocking no no overstocking overstocking is a good name excess stroke yeah I bet you guys that you will have hundreds if not thousands of materials like this for drilling stuff they they had bought but they didn't use and it's just sitting there on the stock.
+
+Vivekanand Gajula:
+This one I think we need to plan. What if we need to be more specific?
+
+Bastian Osorio:
+So we have the excess stock that is aligned with the requirements.
+
+Hector Palacios:
+Which other one do we need?
+
+UNKNOWN_SPEAKER:
+Shortage.
+
+Vivekanand Gajula:
+or dangers.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+Let's think about more because I mean, at the end of the day, these two are the main things, right? Strategies and overstock. But what will be other like simple and high value added features? We can think about supply planning.
+
+Vivekanand Gajula:
+I don't know if they need an alert like this like whenever their projected stock goes below ROP no but in that case system would automatically generate a plan if they want to to see that alert.
+
+Bastian Osorio:
+Let's ask our friend here.
+
+Vivekanand Gajula:
+is living.
+
+UNKNOWN_SPEAKER:
+element again, but not.
+
+Bastian Osorio:
+But it's close to. To try to do.
+
+Vivekanand Gajula:
+But
+
+Bastian Osorio:
+I don't know what's going on with this guy. I don't know why I'm assuming he's a guy.
+
+Vivekanand Gajula:
+That guy has just started the week, no?
+
+Bastian Osorio:
+Okay, I'm gonna stop it because I'm always put please because you never know what is gonna happen with the AI Maybe they will remember you treat me like shit when I was just a baby That's very important production capacity supply collaboration scenario planning distribution planning I think here we need to take a little bit distribution. And it's something, Vivek, we were discussing on friday um that I don't know what what is your experience but in my experience we always need to build the the supply chain network from scratch they they rarely maintain or they have well maintained the special special procurement.
+
+ And we always need to create a set table in S4HANA for like material type and define the supply chain network. So I think it's something we need to have in the radar that we might have to build in a set table supply chain network what is your experience Vivek have you used this special procurement for the for building the supply chain network or have you used in the past the asset table or something custom logic yeah so so I have different experience I I can say I have varied experience you know on this so now there were some
+
+Vivekanand Gajula:
+clients you know who who were you know using SPK so SPK only supports single sourcing you know it only tells you okay which target location you know sources from which you know source location so we used that SPK so this only covers the internal you know supply chain network and then we created the you know transportation lane master on the IBP side and then for lanes you know between vendor and location we used to have info records but there were also customers who were not using SPK at all.
+
+ So for them what we did was we created a z table where we told them to just enter the source and target location because the moment you go to the product level then it's too much of maintenance.
+
+Bastian Osorio:
+What I've done is I mean I agree with you what I've done is by material type. So in this case will be material type, s-lock origin or from, and s-lock to. The point here is we have more than, I don't know how many locations we have I think I can check right away. Well, but we have plenty. I think I have. Just like quick numbers here. They have 3 million materials and they have 14. They say material plant storage location, they have 14.
+
+ So I think number of, I take the number of combination here and I divide it by material, I should get the number of the storage location, isn't it? Am I right? It's 14 divided by 3. It will give me 4, which doesn't make sense. But I know why, because in many cases, the material is not active for all the storage locations, right?
+
+Vivekanand Gajula:
+correct yeah I don't know I cannot get the number from here so so MARD comprises of all those storage locations which are not in use also I mean which are which are having free use stock as zero okay so so I think instead of getting it from MARD I don't know what is the reason of getting it from MARD in In another problem is that they will say they will I'm pretty sure they will say we can send back and forth right yeah cyclic you mean yeah which is not good but I think that can be managed you know if we use optimizer uh but uh heuristic won't be able to manage that yeah it will simply stop you know it will result into failure but this is a I think this I mean you say about the transfer be back the transfer between locations yeah so it's like a to b and the other way around as well a to b b to a cycle but for the system in the same right we just need to have this the lanes no if you have even if you have lanes heuristic doesn't work like that it fails because of that cyclic issue so right you know well we need to use optimizer probably yeah optimizer works depend on the way you model the cost.
+
+ But I don't know if they have such moments.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Let's come back to the, but we need to, can you take a note of that, Hector, or maybe you're already had that point.
+
+Hector Palacios:
+Supply chain network definition?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So first of all we are going to create it based on the... Let me share just quickly just to see if we are aligned on that one.
+
+Bastian Osorio:
+We have some time to request that but I think it will be very hard to get that definition from them. I don't like to work at all.
+
+Hector Palacios:
+No, we need to go with something for sure. So, LTPA agreements, we should have the multi-source or single-source. So, if we integrate that data, we should know between LTPA and this information. Then, last 12 months, it's basically the same PR creation rule. So, the question is, If we don't have an LGPA, we check the last 12 months procurement. And if we have two, my proposal would be use the last one always, not to multisource in that case.
+
+ And last case, we need to create a dummy vendor for the VR, for the tendering. But these rules are based not on the, this is on the transactional data probably. The same for the SDR. But as we were discussing the other day, we need to understand what is the supply chain network they are having today to run the MRP. And based on that, we need to start creating this. Probably it's not going to be as complete, but it's going to be on a starting point.
+
+
+
+Bastian Osorio:
+But I don't get how we're going to create it based on storage on the orders?
+
+Hector Palacios:
+Yeah, I think that we need to check it because otherwise how you can check what is the last spend or in the last 12 months because they want the PR related to that, right? So that means the supply chain network needs to be aligned with that.
+
+Bastian Osorio:
+No, but when we're speaking about the transportation lanes for me, that is more straightforward because based on the orders, right?
+
+Hector Palacios:
+Yes and no, but because you can, what is the horizon for that?
+
+Bastian Osorio:
+I don't know, because as you said, we need to come up with a simple definition, then we can refine it. We're not going to come up with a definition by ourselves. This is the definition.
+
+Hector Palacios:
+So it's aligned to what they are expecting for the VR. So if you don't have a GPA, that I guess that most of the information we can get it from here. But if you don't have it, you need to check the last year. Months, what is the last vendor?
+
+Bastian Osorio:
+12 months for me sounds too little. No, but last 12 months is what they said. Ah, it was their definition. Okay. So, yeah.
+
+Hector Palacios:
+And then if you don't have it in the last 12 months, I'll be a tender. So you, even if you had in the last 24, it doesn't matter. It's all the information.
+
+Bastian Osorio:
+Yeah, that's fine. The definition is fine. Cool. But I'm more concerned to the stores to the supply chain network between storage locations.
+
+Hector Palacios:
+That is, yeah, that is STRs.
+
+UNKNOWN_SPEAKER:
+STOs. Based on transfers.
+
+Bastian Osorio:
+Yeah, but the right name is STOs because you can create an STO without going Yeah, but then the point, the problem here is that this is not something they have today.
+
+Hector Palacios:
+So this is entire on us. And yeah, that's what I'm saying.
+
+Bastian Osorio:
+Of course, we will create, I think, a very poor supply chain network based on this. Because it's not something they've been, they're doing, right? And this is one of the objectives of the project.
+
+Hector Palacios:
+For this part, yes. For this part, they are running the MRP run. So I guess that they have something, even if are pieces.
+
+Bastian Osorio:
+Yeah, regarding the vendors, I think it's a strong definition. It's their definition. I think it's strong. I'm saying for storage location, for movement, storage locations? Because if they have some overstock in one storage location in whatever AGC and they have shortage or lack of stock in another AGC, IBP should propose the movement, right? But what if this has never happened before?
+
+Hector Palacios:
+So in this case you need to check one specific material and to check what are are all the storage locations ad-hoc wise that they have the same materials and we need to build that the network like all for all
+
+Vivekanand Gajula:
+all the all the possible combinations that's the only way but so that way anyone can share with anyone I don't like it um because can we yeah go ahead can we do it this way like maybe uh we we uh we leverage you know uh maybe past three years or five years of their STO data.
+
+Bastian Osorio:
+And based on that, we create the network. Yeah, that's what I was saying. As a starting point, it's good. But it's not good enough. Why? Because this is something that they are not doing it right now. They work in silos. So basically, you can have excess of stock in one agency for one material, and for the same material in a different agency, you're buying. But because there's no communication, you're basically buying more than you need, right?
+
+
+
+UNKNOWN_SPEAKER:
+They don't have the visibility.
+
+Bastian Osorio:
+So in this case, addressing your example, you won't have any STOs that will link these two storage locations. What Hector is proposing if the material is active in the storage location then we connect it to to all the rest of storage location that also have the active material that this this will create endless links endless it will
+
+Vivekanand Gajula:
+be I will say probably millions of combinations and but but Bastián today whatever STUs you know exist in their system right whether it is within the same plant movement or cross plant in a moment, then how did they create
+
+UNKNOWN_SPEAKER:
+those STOs?
+
+Vivekanand Gajula:
+That's a good question. And this is what we were discussing on Friday as well, right? So I was like, OK, if they already have that data, then why are we not using that data and bring only those specific, you know, records in the system rather than looking at all the permutation and combination and increasing, you know, the volume of master data on the IPP side.
+
+Bastian Osorio:
+Again, I agree with you, Vivek, that we need that information and it's the starting point that we have.
+
+UNKNOWN_SPEAKER:
+It's fine.
+
+Hector Palacios:
+Why don't we do something like this? Because I understand your point that I think that is reality. It is the reality that we have like too many nodes for the same. We have like these, these are storage locations, right? So you have a cluster of storage location, let's say that is our plant. And then this is another storage location. Not sorry, the storage locations. So one option is just to, start building like all the possibilities right so it's this and this is what you're saying now this is going to become crazy because if we go this way then you will have like many many possible combinations right so that way we can make a mock-up of this that is going to be great so what do you know how to say I only know how to say this in spanish Yeah, it's crazy.
+
+
+
+Bastian Osorio:
+It's not a good idea. It's going to be endless. Why don't we do something like this?
+
+Hector Palacios:
+So we take a centralization node that is going to be a dummy and this is going to be another So now everyone is connected to a centralization dummy. That is basically a substitute for the plan that we don't have. You know, so everything is here. You get the point, and then we do this.
+
+Bastian Osorio:
+I think it is a good idea. I like it. The only possible withdrawal is what if you need to send material between storage locations within the same plant? Well, because this is going to be a double-way path, right?
+
+Hector Palacios:
+So, you will have to communicate between this and this and this and this. So, it will...
+
+UNKNOWN_SPEAKER:
+Yeah. Oh, okay.
+
+Hector Palacios:
+No, it doesn't look fine.
+
+Hector Palacios:
+no it doesn't look fine because you won't see that it's a good idea on paper at least maybe between sharing between this and this is fine you know I don't know if you need to know what is the specific storage location that is supplying if you have like the plan is saying no this is getting from this company I guess that that is fine Not completely sure. We can validate with them. But between storage locations, that should be a problem because then they need to share between them.
+
+ Otherwise, you wouldn't know what is the storage location they're supplying, right? Because you have this in the middle. And on IEP, you won't know from which side it's coming from So you will need to have the, between them?
+
+UNKNOWN_SPEAKER:
+What are the connections?
+
+Hector Palacios:
+One thing is, I think, the third alternative.
+
+Bastian Osorio:
+The first one stores location. The second one is this logic. I'm not going to consider the combinatoria. I don't know how to say that in English. Permutations. Permutation. I'm not going to even think about that possibility because it's not going to work. So first, STOs. Second, this logic. And third, and easier for us, easier is the easiest, is they have to come up with a definition, with a set table, and give us the definition.
+
+
+
+Bastian Osorio:
+And if they don't, we will use the storage location, sorry, only the STOs.
+
+Hector Palacios:
+The point is that the STOs only reflect something that they are not doing today.
+
+UNKNOWN_SPEAKER:
+No.
+
+Bastian Osorio:
+They are doing it today. They are doing it.
+
+UNKNOWN_SPEAKER:
+That's what you say?
+
+Bastian Osorio:
+They are not or they are? They are not doing it. Not STOs, reflects only things they are doing today.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Hector Palacios:
+So the big point is that today they are lacking the visibility to do what we are intending to do. So basically, it's not the right future view.
+
+UNKNOWN_SPEAKER:
+It's fine.
+
+Bastian Osorio:
+But honestly, I think the best idea, and I will say not even the best idea a possible feasible idea because we are saying we're making him a very arbitrarily and probably wrong assumption that you can move stock from whatever agency to wherever agency from whatever source location to whatever storage location. And that is not a fair assumption at all.
+
+UNKNOWN_SPEAKER:
+Don't you guys agree? No, no.
+
+Hector Palacios:
+For sure we need to confirm before trying to do this because it's going to be a mess.
+
+Bastian Osorio:
+But if the IBP proposed the movement from AGC A to AGC B, who says that that is possible, that there is not financial implications, that we should also take into consideration between uh uh advising this movement so for me
+
+Vivekanand Gajula:
+the definition should should come from should come from them yeah I think bastion uh can't we ask them to share their logistics network I think that would be much better no sorry no no if we if we ask adnoc to share their logistics you know and I think that would be that would be you know much easier because they know from where to where they do the movements right yeah yeah so let's push for that let's push yeah
+
+Bastian Osorio:
+yeah I think we have some let's push for that definition for at least two weeks as much as we can and then if we don't get it then we can think about a different thing.
+
+UNKNOWN_SPEAKER:
+Okay, let me share my screen and take a look.
+
+Bastian Osorio:
+But coming back to the point that our friend here was mentioning, let's assume we have the right network now. What can we a quick value added for to show.
+
+UNKNOWN_SPEAKER:
+You're thinking on Alex? Let's see on that path for the money inventory.
+
+Hector Palacios:
+I think that for today is enough for supply. Let's go with the other that is for next week.
+
+Bastian Osorio:
+Yeah, but then you want to think about simple user cases for demand in inventory? Yeah, yeah.
+
+UNKNOWN_SPEAKER:
+Same way sketching is fine. Vivek can come up with some ideas in the meantime, I guess.
+
+Hector Palacios:
+But let's start, the two of us, let's start thinking on the Man Inventor because I have two of them, but we need to think together on what else Thanks.
+
+Bastian Osorio:
+But we do have something. I mean, I'm reading this and I'm remembering the conversation we had on Friday with the whiteboard and all that. Well, it's not the white paper. So we do have something. We need to work on that. We need to polish the examples. But we do have an idea of what we're going to show. Yeah, let's polish it. But we need to polish it in this. From my perspective, we need to start working with the data and come up with the examples.
+
+ Yeah, we do have it. I have it somewhere here.
+
+UNKNOWN_SPEAKER:
+I have it here. We need to come up with storage location for the historical consumption.
+
+Bastian Osorio:
+That should be the priority.
+
+Bastian Osorio:
+I'm not sure. This is an important question, Hector. Do we want, I think at this point, if we're not able to do it right now, like in a day or two, we should just come up with a plan. Let's say we're going to change the storage location for the unit testing in the historical consumption.
+
+Hector Palacios:
+No, we are not going to get it done when we need it.
+
+Bastian Osorio:
+Then let's go with planning. Complain we say for unit testing well you we just we just integrated information very just like one week ago so they cannot complain and it's something that I also want to check with I mean I will I will have a meeting today with with this guy Pelayo and I also will join Pablo and and I will ask them to create a few examples for the use of Joule. If they come up with something good, then we can also show it.
+
+
+
+Hector Palacios:
+We don't have access to Joule.
+
+UNKNOWN_SPEAKER:
+Why?
+
+Bastian Osorio:
+We need to raise an aught.
+
+UNKNOWN_SPEAKER:
+Fucking hell.
+
+Bastian Osorio:
+Yeah, it's lagged. Okay, but at least we can start doing it that way, right? During this week?
+
+Hector Palacios:
+Yeah, we need to use the Fagin Joule. That's a good point that you raised there. Let's raise a note right now. Let's check for that. I think that I was raising some point. I don't remember where I left it, but I think that there is a note for doing this for activating. We need to ask help for... Maybe not for next week, but we need to start raising this.
+
+Bastian Osorio:
+When do we have the SAP meeting? We need to raise the note this week.
+
+UNKNOWN_SPEAKER:
+Today, if possible. When is the SAP meeting?
+
+Bastian Osorio:
+Next week? Next week.
+
+Hector Palacios:
+Okay, we didn't get it. Okay, let's free up Vivek and let's start discussing our point.
+
+Bastian Osorio:
+I need to jump into another call in four minutes.
+
+Hector Palacios:
+All right. Let's discuss later then. We have a call with Rahul just to discuss new materials. Yeah, but then we have management.
+
+Bastian Osorio:
+But what is expected?
+
+Hector Palacios:
+We are not going to get it done before. Even if everyone agrees, no. Rahul, you're right. We are not going to get it done. Let's go to the session to discuss. All right, guys, I will continue on my slide.
+
+UNKNOWN_SPEAKER:
+See you guys. Okay, thank you.
+
+Vivekanand Gajula:
+Thank you, Vivek.
+
+Hector Palacios:
+Thank you, Athir.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Vivekanand Gajula:
+Thank you.
+
