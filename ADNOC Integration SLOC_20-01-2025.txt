@@ -1,0 +1,829 @@
+UNKNOWN_SPEAKER:
+Hola.
+
+Isabel Paredes:
+Buenos días. Buenas tardes por acá.
+
+UNKNOWN_SPEAKER:
+Buenas tardes.
+
+Bastian Osorio:
+Entremos a Héctor y a Reinaldo. Sí, Bastián.
+
+Isabel Paredes:
+Bastián, quería platicar contigo aprovechando. Yo tengo unas sesiones seteadas con mi otro porcentaje de proyectos. Normalmente en la semana lo tengo en el horario de diez y media. Bueno, días a las diez y días a las diez y media. Entonces vamos a averiguar si las juntas normalmente van a ser en este horario.
+
+Bastian Osorio:
+Diez y media, a ver, ¿y qué hora es ahora para ti?
+
+Isabel Paredes:
+Ahorita son las diez y yo tengo junta a las diez y media en el otro proyecto. Ahorita, sin problema, ya me organizé con Alejandra para poder tomar esta sesión y que ella tome las otras. Pero, por ejemplo, mañana tengo junta a las 10. Son cortas porque son de mi chequeo daily. Y el miércoles tengo otra vez a las 10 y media, el jueves a las 10. Pero era para saber si más o menos las juntas en AdNoc también van a ser en este horario.
+
+
+
+Bastian Osorio:
+En realidad, por acaso, de la tarde entonces tampoco quiero yo agendar sesiones que sean muy temprano o sea digamos muy tempranas para ti porque para mí yo te podría agendar una reunión que sea a la una de la tarde pero para ti van a ser como a las seis de la mañana que no creo que es muy temprano así que en realidad podría ser un poco antes de esto pero creo que en general vamos a intentar como Reinaldo está en Chile y tiene una zona de área más cercana a la tuya creo que lo mejor es que nos reunamos de forma puntual.
+
+ Y ahí te encontramos un lugar en tu agenda. Y en el trabajo más cotidiano, yo me junto con Reinaldo y ahí usted encuentra un momento para reunirse, que las acomoda los dos. Pero en realidad, como te digo, no pretendemos que las reuniones con tu otra asignación.
+
+Isabel Paredes:
+Ah, perfecto. Sí, muchas gracias. Y por eso tomé sin problema esta y dije, bueno, me organizo en lo que agendamos bien cómo serán las juntas. Curiosamente, bueno, en México ahorita no se está haciendo cambio de horario, ¿no? De verano. Antes teníamos ese switch, pero ahorita no. Y digamos que mis juntas quedaron establecidas entre este horario. Pero, por ejemplo, de 9 a 10 tengo libre, por ejemplo, ahorita toda la semana.
+
+ No sé si esto pudiera cambiar cuando cambie el horario de verano en Europa, pero al menos ahorita sin problema podemos agendar en toda la semana tengo libre de 9 a 10, ¿no? Puntualmente pudieran ponerme alguna junta de otro tema en Google o lo que sea, pero en tanto a mi Daily del otro proyecto, no, no. O sea, tengo libre totalmente. Entonces pudiéramos, pudiéramos ser en cualquier otro horario. Y también le decía yo a Rocío que igual si en algún momento ustedes necesitan que nos conectemos antes, ya sea en horario de 7 o de 8 o de cualquier horario que sea relevante conectarnos, pues tampoco tenemos problema, nada más que nos enteremos desde antes con anticipación para poner despertador o lo que sea, no?
+
+
+
+Bastian Osorio:
+En dado caso que sea un horario muy de madrugada. Pero como como te digo, como Reinaldo está en Chile, en realidad quién está como reuniéndose de forma diaria con el cliente por el lado de integraciones Sagar, que es un consultor que está en la India, entonces digamos están en prácticamente el mismo uso horario que la gente del proyecto. Y después Saga tiene reuniones frecuentes con Reinaldo y de allí ustedes pueden, digamos, hacer un gestión del trabajo con Reinaldo de forma más interna, de modo de que no tenga que obviamente apegarse al uso horario del mirador, porque va a ser descabellado.
+
+ Yo no quiero que te tengas que estar sumando a reuniones en horarios raros, a las cuatro de la mañana, cinco de la mañana no. Entonces, por eso, mejor lo coordinamos. Digamos que quien sea el que centralice los requerimientos sea Sagar. Si hay alguna duda puntual, nos buscamos un espacio en la agenda, pero tú continúa en tu horario normal. Y si es necesario conectarse a esta hora, bueno, lo hacemos como tú mencionaste, con anticipación y de modo de que no te tope con toda otra asignación.
+
+ Acá está Héctor Palacios, creo que ustedes ya se conocían.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Bastian Osorio:
+Está también trabajando como arquitecto dentro del proyecto. Y el propósito de esta reunión, como dice el título, es... Nosotros sabemos que tú tienes mucha experiencia en SAP, en SSC, tanto en SSC como en SFORJANA, entonces tenemos unas dudas técnicas que queríamos consultarte. Te cuento que... Este cliente, bueno, es enorme. Y tienen, bueno, bastantes ubicaciones, pero la particularidad es que ellos están trabajando, hicieron una modificación del MRP area, del área MRP, y en lugar de hacer la ejecución del MRP a nivel de área, a nivel de planta, está haciendo a nivel de storage lo que No sé si habías escuchado algo así alguna vez antes.
+
+
+
+Isabel Paredes:
+No, pero cuéntame cómo va.
+
+Bastian Osorio:
+Entonces lo que tenemos que básicamente hacer es toda la data, tanto la data como transaccional, como alguna data maestra, es modificarla. Por ejemplo, ¿por qué? Y ahí ya hizo un buen trabajo Reinaldo en armar una concatenación entre la planta y el Store Location para definir la que va a ser el Location DBP. Pero nos hace falta esto, hacer esto también para otro, para Data Maestra y para Data Transaccional.
+
+ Te doy un ejemplo. La tabla Location Product. Hay algunos productos que, bueno, cuando uno trabaja a nivel de Marcy, que hay productos que están activos en una planta y productos que no activo en la misma planta. ¿Cómo se aborda esto trabajando a nivel de Storage Location? Lo mismo, por ejemplo, los consumos históricos que vienen por órdenes. ¿Cómo hacemos la integración de modo de poder también encontrar la correcta Storage Location para los consumos históricos?
+
+ Y finalmente, y es algo que bueno estamos viendo cómo lo vamos a abordar el tema de la red logística. Normalmente los clientes, bueno, en mi experiencia, hay un indicador que se llama Special Procurement, pero que solamente permite Single Sourcing. Básicamente, si un producto es suministrado por otra planta, bueno, en ese escambo, que espero no equivocarme, que es el Special Sourcing, ahí se indica.
+
+ En este caso, como el MRP está ejecutado en Storage Location, tendríamos que ver si ese campo es válido, o si en realidad hay que ocupar otro campo, o cómo es la lógica. De todas formas, es bastante posible, y yo particularmente pienso que no vamos a encontrar demasiada información allí, y vamos a tener que terminar pidiéndole a los usuarios, y ahí va a ser un desafío, porque ellos no son muy dados a colaborar, que se lleven una tabla Z, una red logística para los distintos tipos de materiales.
+
+ Entonces esas son más o menos las preguntas que queríamos abordar durante esta reunión.
+
+Isabel Paredes:
+Ok, pero entonces lo que necesitan es saber si se puede manejar el Store and Location concatenado como lo están manejando ahorita, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Isabel Paredes:
+Y en cuanto ¿Necesitan saber cómo escoger ese storage location? Sí, ¿cómo básicamente hacer todo ese cambio?
+
+Bastian Osorio:
+O sea, ¿cuál va a ser el impacto de ese cambio en toda la información, tanto en la data transaccional como en algunos datos maestros?
+
+Isabel Paredes:
+OK, OK. Ahorita lo que vi que tenía avanzado Rey es concatenar el dato maestro para crear el nuevo centro, ¿no? Con ese dato concatenado. Lo que entiendo es que ahorita no lo están pudiendo manejar o no lo han implementado como tal dentro de la logística, ¿no? Para crear las órdenes.
+
+Bastian Osorio:
+Antes de ir a la red logística, Entiendo que es un desafío, pero que todavía no quiero abordar. Porque yo sé que es más complejo, entonces quisiera ir por lo más urgente, que es, por ejemplo, los consumos históricos. Y cómo determinar... Bueno, primero preguntar si es posible encontrar la fuente, o sea, el consumo histórico a ese nivel. No definir una regla, sino encontrar si existe el consum, porque bueno, yo estuve leyendo un poco y se supone que el consumo estricto exista a nivel de location.
+
+
+
+Isabel Paredes:
+Nosotros no tenemos que idear ninguna regla para para determinarlo, sino que es posible encontrarlo. OK. De lo que yo Recuerdo temas de Storage Location, por ejemplo, en otros clientes. Efectivamente, cuando tienen pedidos creados con Storage Location, pues en el histórico manejan esa versión. Lo que no sé es si antes ellos ya manejaban Storage Location aunque fuera separado el dato, ¿no? O sea, el centro por un lado y el Storage Location como dato separado en sus pedidos.
+
+ Si lo tenemos al momento, digamos, de leer el histórico y tuviéramos que concatenar para comparar contra una solicitud de un centro que ya lo tiene concatenado unido para IVP, yo creo que no habría problema de leerlo, ¿no? O sea, dividimos los datos y nos vamos a en las tablas estándar, en la información aunque sea por separado y luego la volvemos a unir para para desplegarla en algún repositorio o enviarla a algún lado, ¿no?
+
+
+
+Bastian Osorio:
+Es que eso es punto, por eso estoy esperando que se suma Reinaldo porque quiero revisarla, creo que entremos y que miremos un poco porque no... Claro, quiero que abordemos un plan de acción para para los siguientes días siguientes semanas de cómo vamos a modificar esto porque estamos contra el tiempo y no no quiero quedarme con con la idea de que eh con la duda de si existe o no existe esa información creo que lo confirmemos y si bueno si no está eh ver cuál es la alternativa pero eh pues no esperemos que porque tú no tienes credenciales ¿cierto?
+
+
+
+Isabel Paredes:
+No, o sea, Y aprovecho para preguntarle si ya lo tienen. Y cuando nos estamos conectando la semana pasada para hacer lo que nos solicitó del engagement, lo hicimos con el de Ray y el de Javier, y lo hicimos con el de nos pasaba el token y todo
+
+UNKNOWN_SPEAKER:
+eso para conectarnos.
+
+Bastian Osorio:
+Héctor, no sé si tienes algo que agregar por ahora.
+
+UNKNOWN_SPEAKER:
+No, de momento no.
+
+Hector Palacios:
+Tienes que subir a Racing.
+
+Reinaldo Gutierrez:
+Subtítulos realizados por la comunidad de Amara.org Hola, ¿cómo estás, muchachos?
+
+UNKNOWN_SPEAKER:
+Disculpen.
+
+Isabel Paredes:
+Hola, Rey, ¿qué tal? Hola, Rey, buen día.
+
+UNKNOWN_SPEAKER:
+Buen día, buen día.
+
+Reinaldo Gutierrez:
+Estaba cerrando una sesión, pero aquí estoy. Qué bien.
+
+Bastian Osorio:
+Gracias por sumarte, Reinaldo. Lo que estábamos hablando, bueno, y el propósito de esta reunión era revisar un poco más detalles del Storage Location. Lo que queríamos averiguar, para Long Story Short, es si es posible, o sea, cómo va a ser la lógica para para integrar el consumo histórico a nivel de Storage Location. Después hay otras dudas y lo mismo para, de hecho, podríamos partir en realidad por la Location Product.
+
+ ¿Cuál va a ser la lógica? Bueno, primero, si es posible, es que lo que estuvimos leyendo con Héctor el día viernes es que, como ellos hicieron una modificación del MRP, o sea, cambiaron el nivel de ejecución directamente en Sorjana, es que es posible definir más o menos todos los datos maestros y datos transaccionales de IBP a nivel de Storage Location sin la necesidad de definir una regla, sino que la información está almacenada en algún lugar de Sorjana y eso es lo que queremos revisar hoy día en eso.
+
+ No sé si entiende lo que lo que intento decir, pero tenemos que decir bueno, si está válido para la planta, está válido para todo lo que he hecho. No, o sea que esa información está almacenada directamente en esa orjana.
+
+Reinaldo Gutierrez:
+Hay unos puntos en particular en donde se asumió para todos, que fue para practicar. No fue en lo que he hecho en producto, porque en lo que he hecho en producto se verificó en la mar de si estaba extendido. El material, pero si en otras como Functional Location, MRO, se amplió para todos y quizás por allí es en donde tú dices que la información existe en S4, ¿no?
+
+Bastian Osorio:
+Ya, entonces, claro, sí, sí, sí. Entonces, por ejemplo, la MARDI entonces establece la relación de... Location Product. Ya, perfecto. A nivel de Service Location directamente, Sí, sí, ahí ya.
+
+Reinaldo Gutierrez:
+Para mí no sirve para variar.
+
+Bastian Osorio:
+Ya, entonces, y por ejemplo, Safety Stock, Reorder Point, ¿también están definidos a ese nivel? Deberían. Deberían, deberían, deberían, porque se debería salir de la mar de.
+
+Reinaldo Gutierrez:
+¿Puedes proyectar tu pantalla en el sistema y podemos revisar un poco?
+
+Bastian Osorio:
+Porque la idea de esta reunión es que miremos un poquito el sistema para papeemos un poquito de lo que hay.
+
+UNKNOWN_SPEAKER:
+Ya estoy iniciando.
+
+Reinaldo Gutierrez:
+Dice que el SafeStock ReorderPoint no está en la mar D, sino que está en la mar C.
+
+Hector Palacios:
+Ahora la mar C no sé si está Daniel Storage Location.
+
+Reinaldo Gutierrez:
+Nosotros hicimos un... Yo conversé eso con Sagar, que nos lo levantó Harun, me parece.
+
+UNKNOWN_SPEAKER:
+O Vivek. Hicimos un cambiecito.
+
+Reinaldo Gutierrez:
+Porque estaban llegando muy vacíos. Entonces hicimos un cambio. Ahí les voy a compartir pantalla. Si yo me voy a las 18... Acá un momento para justo ver ese tema en particular.
+
+Hector Palacios:
+Parece que esto de mantener el SafetyStock y .reorder en el StorageLocation no es nada estándar.
+
+Reinaldo Gutierrez:
+Lo bueno es que como podemos lanzar código en el sistema es fácil de Hay una posibilidad de resolverlo, ¿no? Mira, lo que nosotros hicimos es que nosotros en la Marde, por ejemplo para Location Proc, que llevaba ciertas cantidades...
+
+Hector Palacios:
+No, pero en este caso no es simplemente explotar, sino que tenemos que saber específicamente el número a nivel de Storage Location que en algún lado tiene que estar, porque lo han mencionado 20 veces. Entonces seguramente...
+
+Bastian Osorio:
+¿Cuál es la lógica que destacas? Disculpa Héctor. ¿Cuál es la lógica...? ¿Quién puso un regalo?
+
+UNKNOWN_SPEAKER:
+Ah, vale.
+
+Reinaldo Gutierrez:
+Nosotros estamos verificando que en la mar de vale que es a la final en la mar de. Aparte de estar la relación de esto, la location también hay cantidades de. De cómo se dice de almacén, vale? Entonces, por lo menos aquí el libre, el libre utilización en la almacén del stock de libre utilización, si. Tiene que ser mayor a cero y solamente estamos llevando eso es lo que es un producto que cumplan esas condiciones para no llevárnoslo todos porque si nos llevamos todos van a llevar muchos con vacío y eso entiendo yo lo que nos levantaron era que no lo necesitaban y como esto primero tiene que pasar por una primer review del cliente en donde ha llevado por el orden por Es que me parece una definición un poco arbitraria, porque puede ser
+
+Bastian Osorio:
+que por coincidencia no haya stock de libre disposición, pero eso no quiere decir que el artículo no esté válido en esa combinación.
+
+UNKNOWN_SPEAKER:
+Totalmente.
+
+Reinaldo Gutierrez:
+Nosotros lo hicimos porque bueno, si quieren limitar la data, lo hacemos y se lo colocamos allí. Pero justo fue cuando se cayó el sistema. ¿Hay algún marcador al lado como activo o no activo?
+
+Bastian Osorio:
+Me parece más adecuado una definición de ese tipo que básicamente si hay stock mayor a cero.
+
+Reinaldo Gutierrez:
+Mira, en la MARA no, pero en la MARA sí y ya eso es una validación que hicimos. Pero en la MARA está a nivel de producto. Bueno y a nivel de producto la bloqueas, no? O tú quieres el bloqueo a nivel de stock?
+
+Bastian Osorio:
+A nivel, claro, de storage location, porque, bueno, evidentemente a nivel de mala también tiene que estar, pues si el producto no está activo, no se integra bien. Ahora, si el producto está activo, lo integramos para para todo, simplemente para todos los storage location que tienen stock. No me parece una regla válida.
+
+Hector Palacios:
+Hay que hay que filtrar los baches también, pero ahí no nos enfrasquemos en la discusión de filtros acá, veamos la lógica de Storage Location, ya que estamos con ISA, veamos si acá tenemos que hacer algo porque ahí está la MARDI y parece que aquí podemos sacar la Location Product fácilmente.
+
+Reinaldo Gutierrez:
+Sí, es que ese ajuste que le estoy mostrando es Location Product.
+
+Hector Palacios:
+Vale, pero no es ninguna explosión, sino que estamos trayendo directamente de la MARDI la información.
+
+Reinaldo Gutierrez:
+Totalmente, claro, no, aquí yo no estoy explotando, yo simplemente verifico que el material va este material centro extendido a esos a esos almacenes vale que está extendido me los traigo vale eso es lo que se hace acá que es como lo manejas a pues que es justo esta lógica que está acá y acá las chicas agregaron los campos que nos íbamos a traer de la marce los campos custom perfecto perdón rey me imagino que algunos campos si nos
+
+Hector Palacios:
+vamos a tener que traer directamente la marce pero algunos de la mar de porque la marce a nivel de plantas solamente no entonces totalmente entonces ya ahí está el punto de reorden que seguramente es porque no sé a dónde más lo vamos a encontrar sino en la mar de la malde y sé que esto y todo eso nos vamos a tener que traer esos datos también de hecho va a haber una lógica que en el caso de que no haya un septi esto que la mar de se lo traiga de la marce ¿Por qué?
+
+ Eso nos decían, que a veces cuando nos decían, no tenían algún dato a nivel de cómo se llama storage location, que lo definían a nivel de planta y que teníamos que traer eso.
+
+Reinaldo Gutierrez:
+Puede existir, porque aquí justo está, aquí hay un campo, ¿vale? Que hace referencia a un storage location, pero este es diferente.
+
+Bastian Osorio:
+A ver, está por aquí. Te doy un ejemplo de por qué encuentro que eso puede ser incorrecto. Si a nivel de planta se define un stock de, por ejemplo, un safety stock de 100. Y nosotros, como estamos trabajando a nivel de storage location, vamos a buscar ese 100 y lo ponemos, por ejemplo, en 5 storage location que están dentro de esa planta.
+
+Hector Palacios:
+Al final, como fumado, va a dar 500.
+
+Reinaldo Gutierrez:
+No, no puede ser. Si no está, no está bien mantenido el dato maestro y debería subir. Claro, ¿por qué? Porque imagínate tener que hacer todo ese juego para algunos, ¿vale? Y verificar de acá, porque obviamente aquí está el reorder que mencionabas, aquí está el reorder point. Existe también en la Marce, pero en la Marce En la Marselle no tenemos la relación a nivel de Storage Location, sino a nivel de centro.
+
+
+
+Hector Palacios:
+¿Y esa Storage Location EP qué es?
+
+Reinaldo Gutierrez:
+Este no tiene nada que ver con nosotros, es con Storage Location for EP dicen, pero puede estar lleno, puede estar vacío.
+
+Hector Palacios:
+Pero no sabemos qué es. Déjame sacar un pantallazo del campo.
+
+Reinaldo Gutierrez:
+Pregúntale a JPT.
+
+UNKNOWN_SPEAKER:
+Cuidadamente. A ver si le doy doble clic acá.
+
+Reinaldo Gutierrez:
+Pero ese campo puede o no puede estar lleno, ¿vale? O sea, no es como mandatorio en esa tabla y eso claro.
+
+Bastian Osorio:
+Yo diría por lo sano y por lo sencillo de que si no está mantenido Storage Location, no está.
+
+Reinaldo Gutierrez:
+Fíjense, este es el Storage Location por defecto por los seguimientos externos. Eso es lo que dice de ese campo.
+
+Hector Palacios:
+Es que puede ser el caso, Arti, que el tema lo que he hecho no sea un de hecho creo que no es general sino que para algunos casos quizás lo están haciendo a nivel de planta todavía y nosotros lo quizás pero bueno empecemos por eso no se nota no está después valíamos más yo creo que podríamos empezar a expresarse externa ¿Qué dice ese campo?
+
+Bastian Osorio:
+Procedimientos externos.
+
+Reinaldo Gutierrez:
+¿Son tipos de materiales que son trabajados antes de entrar a planta? Y obviamente todos los materiales se manejan allí, ¿no?
+
+Bastian Osorio:
+Ese es como el tema. Ahora, el siguiente punto que queremos revisar, que guarda relación directa con esto, es el tema de los consumos. Bueno, usted ya estaba trabajando con los extractores Reinaldo y queríamos ver si los consumos para, por ejemplo, el consumo histórico para también a Storage Location. Y si es así, pueden hacer el ajuste para desde ya empezar a utilizarlo.
+
+Hector Palacios:
+Esto es lo que trabajamos el otro día con Sagar y con Vivek, que estuvimos revisando. Definitivamente, la información a nivel de Work Order no está a nivel de Storage Location, está a nivel de planta solamente. Pero luego, asociada acá a Work Order, orden de trabajo, hay una reserva. Reservation. Entonces, el Reservation, ese sí está a nivel de Storage Location, ¿vale? El tema es que es como que ganamos algo, pero perdemos otra cosa.
+
+ Cuando estamos a nivel de Work Order, podemos saber si esto es preventivo, si esto es correctivo, si esto es etcétera, ¿verdad? Pero cuando estamos a nivel de Reservation, no podemos saber. Entonces, de alguna forma, vamos a tener que hacer el cruce de forma que podamos tener las dos cosas, que podamos tener ¿cuál es el tipo de orden, si es preventivo o correctivo? Porque eso lo tenemos que separar en distinto key field.
+
+ Y lo otro es que saber, o sea, tener la información a nivel de storage login. Entonces, tenemos que hacer un cruce de las reservaciones y entender cuál es la orden asociada y de la orden sacar cuál es el tipo de orden, si es preventivo o correctivo. No sé si, sí.
+
+Reinaldo Gutierrez:
+Claro, la cuestión es que eso se ejecuta en un K-Figure, ¿no? Entonces, lo que yo veo allí es que si nosotros tenemos la orden, ¿vale? Y esa orden está referenciada a una reserva. Entonces, lo que podemos hacer es desde la orden ir a la reserva, de la reserva tomar el almacén asociado, y ese almacén cocatenarlo con el principal que nos vamos a llevar.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Hector Palacios:
+Y es como... Exactamente. Puede traerte realmente la orden que tenemos que integrar y ahí cruzar hacia la información de Storage Location desde la reserva.
+
+Reinaldo Gutierrez:
+Claro, y esa relación ya la tendríamos allí. Bueno, chévere. Se viaja el dato con esa Storage Location porque es el que está referenciado en la reserva social.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Hector Palacios:
+Entonces ahí el punto es que tenemos que cambiar y cómo nos puede ayudar a Isaí.
+
+Reinaldo Gutierrez:
+Vale, déjenme, vamos a buscar primero un dato, no?
+
+UNKNOWN_SPEAKER:
+Esto aquí es RSA3. Perdón, que le quiero muchas gracias.
+
+Reinaldo Gutierrez:
+Y este sería. ¿Este de acá, no? No, este de acá, ¿no? ¿Este de acá, cierto?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Reinaldo Gutierrez:
+Vale, yo me acuerdo que nosotros revisamos uno un día de estos y vimos como que estaba asociado a un proyecto pero si tú dices que ya vieron otras cosas, perfecto. Vamos a ejecutar para que me traigan Ajá.
+
+Hector Palacios:
+lo que salía en la marce. Está interesante, cuando vimos que había un storage location external provisioning, ese campo que estábamos revisando, que me llega a Http, es donde una P.O. Puede recibir el, ¿cómo se llama?, el suministro. O sea, cuando se genera una P.O., se va directamente a el material. Es como de recepción, de hecho. Esto lo revisamos una vez y lo vamos a revisar de vuelta.
+
+Reinaldo Gutierrez:
+Esto lo revisamos. Esto era la UFK, me parece, porque es una orden. Entonces teníamos esto y lo habíamos revisado.
+
+Hector Palacios:
+Esto ¿Te acordaste cuando el otro día estábamos, el viernes, no me acuerdo qué día, estábamos hablando, hoy día parece, de la red logística a nivel de Storage Location y que había un nodo que podía centralizar?
+
+Bastian Osorio:
+Sí, es que generalmente cuando uno siempre, cuando compra algo, llega en un almacén de calidad.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Hector Palacios:
+O sea, no de calidad todo, pero si llega a un estado inicial y después se despacha para distintos lados, ¿no? Parte sea de la calidad, parte sea de ir directo para adentro y así. Pero ese punto de recepción puede ser el dummy que ha hablado hoy día de que en un plan B podría conectarse entre las distintas ubicaciones. O sea, ese dummy se comunica con toda la storage location de la planta, pero entre plantas se comunican con ese punto de centralización, no todas con todos.
+
+
+
+Reinaldo Gutierrez:
+Ok, por ejemplo, aquí tengo dos órdenes que salieron en el extractor. Y estas dos órdenes, lo que yo le veo referencia es un proyecto acá. Diferentes proyectos referenciados, obviamente diferentes órdenes. A ver, cuál era la otra sección para ver órdenes, 13, puede ser. Lo tengo aquí. Ya sabe cuál es la transacción para ver órdenes. Se la recuerda.
+
+Isabel Paredes:
+No.
+
+UNKNOWN_SPEAKER:
+¿Lanzación para revisar orden?
+
+Hector Palacios:
+Sí.
+
+Reinaldo Gutierrez:
+Estoy preguntando a la HIPT. ¿Y el 03? No.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Isabel Paredes:
+Esa es la de los equipos.
+
+UNKNOWN_SPEAKER:
+Están levantados y mando para otro lado.
+
+Reinaldo Gutierrez:
+esto esto ¿Cómo que no? Aquí se guarda. No, no, no, No sé en qué sentido.
+
+Isabel Paredes:
+A lo mejor el tipo de proyecto que estamos agarrando. La orden que estamos viendo de ese material no es la adecuada, ¿no?
+
+Reinaldo Gutierrez:
+Pero él, se supone que él... Es una orden WPP. Ya le voy a preguntar a mi experta. Uy, cerré la página. ¿No la cerré? A ver el...
+
+Isabel Paredes:
+Aquí está. El tipo de material.
+
+Reinaldo Gutierrez:
+en la afco vas a encontrar la reserva y después aquí para la resve creo que es la transaccion o es... Ah no la tabla es la resve c16n y en la tabla resve Deberíamos poder encontrar las reservas.
+
+UNKNOWN_SPEAKER:
+Está acá. Y aquí está.
+
+Reinaldo Gutierrez:
+La reserva asociada al 440 es esta. Si tú dices de acá, podemos tomar el Historical Location. Por ejemplo, esta está hecha a la M001. Esa es la idea, ¿no? Héctor, según lo que tú planteas. Sí. Vale, entonces el viaje...
+
+UNKNOWN_SPEAKER:
+ahora aquí puedo abrir un sticking note.
+
+Reinaldo Gutierrez:
+Entonces, hay que intervenir el... En este no, y nos sale afk no, dejame jugar, ay no me deja jugar voy a anotarlo por aca las tarlas que se ven involucradas afk y bueno con esas dos tablas vas a poder obtener el store location y hay que intervenir este Es el extractor que hay que intervenir. Ese es el extractor.
+
+UNKNOWN_SPEAKER:
+Y en la red.
+
+Reinaldo Gutierrez:
+Martínez.
+
+UNKNOWN_SPEAKER:
+Esta. El campo. Eléctricos. ¿Aló? ¿Idea clara, Insta? ¿Veamos? Háganme ver el lector.
+
+UNKNOWN_SPEAKER:
+Más.
+
+Reinaldo Gutierrez:
+Ese sería entonces el plan. Entendería yo, no vamos a modificar este extractor. Vale, vamos a ir a la tabla ASCO, que es en donde se guarda la relación entre hacia su reserva. Vale. Y después nos vamos a la tabla renda. Obtenemos el almacén y ese almacén va a ser concatenado nuevamente en el extractor.
+
+Bastian Osorio:
+Y habría que hacerlo para todos los tipos de orden, para las preventivas, para las correctivas y turnaround.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Reinaldo Gutierrez:
+Claro, para todos los extractores que conlleven órdenes, no? En este caso.
+
+Bastian Osorio:
+Ahora para esto con Han para si para esto con Han y para el otro, para poner algo que porque esto esto es para para la web 1 para web 2 podemos seguir revisando las órdenes. Creo que el otro tema es Open Purchase Orders, ver si las órdenes están a nivel de Pero es que estas son órdenes, ¿no?
+
+Reinaldo Gutierrez:
+Estas entiendo yo que son órdenes Basti.
+
+Bastian Osorio:
+Estas de acá.
+
+Reinaldo Gutierrez:
+Por ejemplo, vamos, esto no lo puedo ampliar así. Aquí lo puedo ampliar más. Ejemplo, voy a filtrar acá y voy a poner solamente los que comiencen por ivp asterisk y lo de aquí a sslash. Y estos son todos los que tenemos relacionados a ivp. Y si vemos los keyfigures, por ejemplo ahorita el que estábamos viendo era éste, que es el material consumption, que es en donde identificamos ésta de acá. Entonces ésta es basada en órdenes también, órdenes de mantenimiento.
+
+ Luego, ¿cuál otro tenemos acá? Este material cost rate que es el cost per unit.
+
+UNKNOWN_SPEAKER:
+Entiendo yo no.
+
+Reinaldo Gutierrez:
+Este también debería ser para demanda. No sé si lo vamos a cargar, si lo vamos a necesitar.
+
+UNKNOWN_SPEAKER:
+Después está la actividad.
+
+Reinaldo Gutierrez:
+Vale, pero la única que veo relacionada a órdenes es esta.
+
+Bastian Osorio:
+Pero no son órdenes de compra.
+
+Reinaldo Gutierrez:
+Esta de acá que de otro tipo de órdenes?
+
+Bastian Osorio:
+No, son distintos tipos de órdenes, no es lo mismo. No, no, sí, totalmente.
+
+Reinaldo Gutierrez:
+Yo creo que la que tú te mencionas entonces sería esta, no?
+
+Bastian Osorio:
+Order, quantities, aggregated, no, no, no lo sé.
+
+Reinaldo Gutierrez:
+Yo te voy a decir cuál es.
+
+Isabel Paredes:
+Yo creo que voy a estar en material, vendor, atributo, no material, vendor, no. Ese es un productor, no productor.
+
+Reinaldo Gutierrez:
+Están buscando. La de la de solicitudes a pedir.
+
+UNKNOWN_SPEAKER:
+Gaspiar. Sí.
+
+Reinaldo Gutierrez:
+No creo que exista. No hay que creerlo.
+
+Hector Palacios:
+No existe como extractor.
+
+Bastian Osorio:
+Y si están, están las de Order Kefir.
+
+Hector Palacios:
+Ahí abajo hay uno que se llama Order Kefir.
+
+UNKNOWN_SPEAKER:
+muchas posibilidades.
+
+Bastian Osorio:
+¿Puede hacerle doble clic? Customer. No, parece ser Excel orders porque tiene cliente. No, esto es de todo.
+
+Hector Palacios:
+Había mrptype o mrplement, decía, y dependiendo de eso era una o la otra. Me recuerdo que una vez que Saga lo abrió y había en las opciones salía como, no sé si esto es una transacción donde uno podía coger qué darse.
+
+Reinaldo Gutierrez:
+Hay una transacción acá, creo que es esta. Y acá podrías ver todos los parámetros de entrada. ¿Puede buscar ese?
+
+UNKNOWN_SPEAKER:
+¿En dónde?
+
+Hector Palacios:
+En market element type, el segundo.
+
+Reinaldo Gutierrez:
+Marquina.
+
+UNKNOWN_SPEAKER:
+Cuarto. Cuarto. Ahí está. Está acá. Sí, sí, sí. No, no.
+
+Bastian Osorio:
+Ese sales order orden de venta. Estamos buscando puestos de decisión. Pero me va a citar como te dices. Order. Order.
+
+UNKNOWN_SPEAKER:
+Ahí está. B. E.
+
+Bastian Osorio:
+Arriba el segundo. Pero ese era Purchase Order.
+
+Hector Palacios:
+Sí. Y eso lo querían integrar o era la PR? PR o B.O?
+
+UNKNOWN_SPEAKER:
+Open B.O.
+
+Hector Palacios:
+Es PR, mira. Subcontracted planning or No, no, no.
+
+UNKNOWN_SPEAKER:
+Es la Purchase Order.
+
+Bastian Osorio:
+Es la PE.
+
+UNKNOWN_SPEAKER:
+¿Eso es lo que querían traerse? Sí. Vale. Igual está la posibilidad de que algunas PR las tengamos fiotas aéreas y otras no.
+
+Hector Palacios:
+Hay que revisar eso igual. Tenemos que entender en qué horizontes respetamos las PR y en qué horizontes las modificamos. Eso es PR, pero las PEO no se pueden modificar.
+
+Bastian Osorio:
+Mira la VEA, Purchase Requisition.
+
+Hector Palacios:
+Eso sí. Entonces, Reinaldo, ¿cuándo para pasar a...?
+
+UNKNOWN_SPEAKER:
+Porque esto todavía no...
+
+Bastian Osorio:
+el tema de estas de las órdenes de venta, o sea, de órdenes de compra, es secundario por ahora, pero el tema sí de modificar el extractor para los valores, poder modificarlo, poder cargar los valores históricos a nivel de storage location. Eso sí lo necesitamos. Bueno, en cuanto antes, obviamente, entendiendo que conlleva un esfuerzo. Entonces, ¿cuándo crees tú que se podría avanzar en eso?
+
+Reinaldo Gutierrez:
+Ahí la pregunta va más para Issa. Issa, tú que viste la explicación y los cambios que hay que hacer, ¿no? ¿Hacia dónde hay que ir?
+
+Isabel Paredes:
+Sí, sí, entendí los cambios. Entiendo que solo es entregar el OKD con el concatenado y no tanto dividir un monto, ¿no? ¿O sí voy a dividir cantidades?
+
+Bastian Osorio:
+No, no hay lógica de división. Simplemente hay que encontrar la fuente del dato. El dato existe a ese nivel.
+
+UNKNOWN_SPEAKER:
+Vale, sin problema.
+
+Isabel Paredes:
+Y esta ya está implementado esta parte del extractor, ¿no? Creo que ya tenían algo implementado de esto.
+
+Bastian Osorio:
+El extractor estándar está listo y de hecho estamos integrando datos con el extractor estándar. Pero a nivel de planta no, simplemente para mirar un poco los datos. Pero no es lo que se necesita. Para el proyecto. O sea, nos sirve como un primer acercamiento a la data, para ver un poco los volúmenes, etcétera, pero de nuevo no... Eso no es el requerimiento.
+
+Isabel Paredes:
+Exacto, es implementar este, ¿no, Rey? Sí, lo podemos implementar hoy.
+
+Reinaldo Gutierrez:
+Sí, así tal cual, o sea, a qué tal las tablas, que hay que pasarse o sea no no es complejo pues yo creo que incluso podríamos tenerlo para mañana aquí te estoy adelantando un poquito de la lógica obviamente hay
+
+Bastian Osorio:
+que implementar ese método porque ese método no está implementado pero pero un poco para para mañana estaría fabuloso o sea si no pueden mañana pueden pasar mañana un día no hay problema, pero mientras antes mejor.
+
+Isabel Paredes:
+Sí, claro, así sin problema.
+
+Bastian Osorio:
+Y con ese ya no podemos juntar con Sara y empezar a A integrar y seguir realizando, digamos, ver cómo da. Ok, entonces quedamos en eso y esperamos, esperamos su aviso para. Para empezar a revisarlo.
+
+Reinaldo Gutierrez:
+Listo, listo, sin problema, sin problema de mi parte. Y bueno, Isa, si tienes alguna duda, pregunta, pues avísame nomás.
+
+Bastian Osorio:
+Perfecto.
+
+UNKNOWN_SPEAKER:
+Muchas gracias.
+
+Hector Palacios:
+Gracias a ustedes.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Reinaldo Gutierrez:
+Chau chicos.
+
+Isabel Paredes:
+Hasta luego.
+
+UNKNOWN_SPEAKER:
+Muchas gracias.
+
+Hector Palacios:
+Estaba pensando en esta weá del Storage Location mañana con KPMG deberíamos exigirle un poco a esta wea de que nos den claridad de qué onda supone que fue KPMG mismo que implementó esta cuestión del One ARP y que entienden bien cuál es la lógica y todo eso por eso es que Murugan se enojo tanto weon estos weones deberían darnos un poco de noción y no nos dan nada weon eh pero mañana tenemos reunión para eso weon si puse el tema ahí el tema que tenemos lo lo puse para para que lo rehicimos con KPMG mañana pero pero la verdad que si weon enojó tanto esa vez porque decía puta estoy trabajando con usted mismo vengo trabajando desde antes y no saben igual y llevamos cariño de tiempo y nosotros venimos trabajando en esta hueá y todavía no estamos seguros si es que vamos para allá o no me parece un punto válido acordémonos mañana dale con eso no hay que empezar a verle esto bueno se hacen muchos hueón, hueón.
+
+
+
+Bastian Osorio:
+Todavía te dobló el culo, todavía te dobló el culo por el...
+
+Hector Palacios:
+Sí, hueón, porque la verdad es que deberíamos ser... Deberíamos ser capaces de pedir hueás tranquilos, hueón, y siento que... No, yo te... Cuando decías todavía te dobló el culo por la...
+
+Bastian Osorio:
+por la follada que te dio Murugan. Sí, pues, por eso.
+
+Hector Palacios:
+Por eso digo, deberíamos poder pedir las hueás tranquilos y esto, hueón, en volar se nos fue y tenía pues así como oye, esta WEA ya la vimos con ustedes, ustedes mismos diseñaron los de KPMG, etc. Entonces, que se hagan cargo, que nos digan, porque desde ahora siento que igual estamos a ciegas haciendo esta configuración y después el día de mañana capaz que lleguemos y hay un montón de yeezys que trabajan a nivel de planta, ¿te imaginas?
+
+ Y nosotros cambiándole la WEA porque este weón de Murugan se le ocurrió y nadie en una discusión temprana que tuvimos cuando recién hablamos de esta hueá, Murugan dijo como que esta era la oportunidad para que todos homologaran esta forma de trabajo, cachay? A Storage Location, quiere decir que hay lugares que no están trabajando a ese nivel. Hay casos donde tenemos el stock de seguridad definido por y no por Storage Location.
+
+ Si tú te ponías a pensar, si tenías una planta, Juan, y tenías una Storage Location, tenías cinco Storage Locations, imagínate que por equimotivo, tú voy a tener stock de seguridad, o sea, tenías un material que se rebarca entre los cinco. Va a generar un stake stock por cada uno o va a generar un stock centralizado?
+
+Bastian Osorio:
+Según lo que dice esto, si están trabajando al MRPRS, es Storage Location por cada uno.
+
+Hector Palacios:
+Sí, Juan, pero es que eso es lo que me cuestiono, porque entonces, ¿por qué tienen a veces stock a nivel de planta?
+
+Bastian Osorio:
+¿Por qué tienen a veces puntos Yo, se me ocurre que es porque en ese caso no están trabajando a ese nivel, pero es posible, la pregunta sería, ¿es posible setear MRP areas en distintos niveles?
+
+Hector Palacios:
+¿MRP areas en distintos niveles?
+
+UNKNOWN_SPEAKER:
+¿A qué te referí?
+
+Bastian Osorio:
+Porque el MRP area es finalmente a qué niveles se planifica. De hecho, MRP material replenishment planning area. O sea, ¿a qué nivel se corre el MRP?
+
+Hector Palacios:
+La pregunta es que el MRP se ejecuta a nivel de mar peria. Siempre. Siempre. Hicieron que la mar peria sea igual storage location. Sí, así es.
+
+Bastian Osorio:
+No sé si eso yo lo leí. Así es. Tú defines por defecto el MRP area es planta, pero se puede modificar y hay una modificación que se puede hacer. ¿Y para qué se modifica? Para trabajar Storage Location. La pregunta, que no sé si es la adecuada, o sea, si se puede hacer, es si es posible definir para alguna compañía MRP Area Planta y para otras MRP Area Storage Location.
+
+Hector Palacios:
+Debería, po. Debería.
+
+Bastian Osorio:
+Porque si es así, si es así, en realidad NiveP no sería problemático, po, porque decimos, bueno, si somos capaces de definirlo con precisión decimos bueno mira para todas estas plantas no no lo abras cachai?
+
+Hector Palacios:
+si bueno seria lo ideal de hecho yo una cosa que me preguntaba ya que pasa si trabajamos a nivel de planta perfecto y después cuando le generamos las PR necesitan que vayan con storage location eso es lo que yo decía yo puta si vino la hueá a nivel de planta entonces por aquí ni storage location a cinco Pero después la cosa que acabamos de leer hoy día decía como una Storage Location por External Procurement.
+
+ Entonces todas las PIOs tienen que ir a esa wea. Ahí está. Entonces tú podrías definir la PIA a nivel de planta y después que se agarre de eso y lo asigne y listo. No tiene que darte la pasta de irte a nivel de Storage Location y ver el traslado interno o cualquier tontería.
+
+Bastian Osorio:
+Pero ya hay una lógica hecha para la generación de las PIAs ya está hay una lógica que ellos tienen nosotros y enviar al lado bueno rajul envió la documentación bueno el día siempre yo le pido a rajul que envíeme y no lo tenía que enviar a ver y esa es ahora es que ya le entregaron la lógica de se supone que sí por rajul lo voy a escribir en un mail a rajul te lo voy a poner en copia Y avanzaba, avanzaba.
+
+ Bueno, Barrosillo también.
+
+UNKNOWN_SPEAKER:
+Barrosillo.
+
+Bastian Osorio:
+Estaba pensando hoy día, weón, de trasladar interno de Storage Location.
+
+Hector Palacios:
+¿Cómo va a hacer esa weá? ¿Para qué chucha vaya a hacer eso? Porque existe, po. Pero ¿por qué crees que quisiéramos hacer eso? O sea, si estamos en la misma planta, ¿por qué no suministro la máquina desde otro Storage Location en vez de estarme pasando internamente para después pusarla?
+
+UNKNOWN_SPEAKER:
+¿Te das cuenta de que de repente llegamos a unos casos medio absurdos?
+
+Hector Palacios:
+Eso es lo que me preocupa. Porque si yo tengo realmente una distinta storage, lo que he hecho, y mantengo el mismo material, entonces es porque no lo quiero compartir. De hecho, la única razón que yo me imagino que, si es mi distinta storage lo que he hecho, para el mismo material en otra planta, es porque hay que tener bien lo que voy a usar para esto es de lo que voy a usar de esto otro. Entonces internamente no daría ninguna cuestión de compartirse, ningún traslado, nada de eso.
+
+
+
+Bastian Osorio:
+Pero es que se supone que el tema de trabajar a distintos locations es que el uso del stock es exclusivo. Exacto. Entonces si te llega y sigue así, digamos que tiene que haber un procedimiento ¿No vas a poder compartirlo?
+
+Hector Palacios:
+No, es exclusivo. ¿Por qué lo voy a poder compartir?
+
+Bastian Osorio:
+Por lo que conversamos.
+
+Hector Palacios:
+Por ejemplo, imagínate que no es el caso, pero imagínate que tengo una Storage Location para Tune Around. Me lo respetan, yo no quiero usarlo para preventivo. Y nadie me lo saca, ¿está bien? Para eso mismo tengo una Storage Location dedicada a eso.
+
+Bastian Osorio:
+Porque si no tendría una hueda centralizada. Si se puede compartir de forma, digamos, indiscriminada, entonces ¿para qué Chucho trabaja a nivel de Storage Location?
+
+UNKNOWN_SPEAKER:
+Exacto.
+
+Bastian Osorio:
+Estas son las preguntas que mañana tenemos que hacer.
+
+Hector Palacios:
+Dale, déjame ver si las tenías. Tenía por ahí la web, pero...
+
+Hector Palacios:
+¿Qué pasó con Rili? Dijiste que recibió un mail de Firas, un weón importante, pero yo no recibo ni una vez.
+
+Bastian Osorio:
+No, no, un mail, un mensaje. Lo que hubo es la weá que dijo Raúl, porque tú estabas ahí, ¿no? No. Dijo que habló con, no era Firas, otro weón, pero más arriba, y que le dijo, no, esta weá de la AMPOM no va. Y vos le dijiste ya, ¿tú?
+
+UNKNOWN_SPEAKER:
+¿Así de alguna?
+
+Bastian Osorio:
+No, no.
+
+Hector Palacios:
+resumiendo pero bueno bueno ahora la gran pregunta como chicha porque a nivel de material no pero para ellos nos dijeron que buscar la forma de siempre lo dijeron subir la información de forma masiva a través de Excel o archivos
+
+Bastian Osorio:
+planos. Sí, está bien y yo lo entiendo, pero de ahí que nos pasen la información.
+
+Hector Palacios:
+Es que no es un tema más de responsabilidad porque claramente ahí nos va a haber un gap. No es mi responsabilidad dejarte los archivos listos. Porque igual incluso si te pongo una macro para transformar lo que tú quieras en el formato y el Yo el día de mañana me voy, ese macro falla y quien se hace cargo?
+
+Bastian Osorio:
+Yo ni siquiera voy tan lejos. O sea que te encuentro razón en lo que dice y algo que vamos a tener que abordar en su minuto. Pero lo pienso para el UIT. Unitesting, para el UIT vamos a tener integración del pico. Entonces tenemos que tener algo para mostrar.
+
+Hector Palacios:
+Nos van a tener que pasar. Si, guantá.
+
+UNKNOWN_SPEAKER:
+Bueno. Ya, ahí después conversamos un problema a la vez, bueno.
+
+Hector Palacios:
+Tengo como 500 problemas, hueón. Esa es la hueá que me calentó un poco la sesión que teníamos de management, hueón, que nos empiezan a tirar hueá. En el plan decía claramente que la hueá de preparación de material de training empieza como en dos, tres semanas, no sé. Y desde ya como no tengo una estructura, claro, lo hueón, son súper proactivos y no tienen ni una hueá que hacer, puh hueón.
+
+Bastian Osorio:
+Uno mandan, puh hueón.
+
+Hector Palacios:
+Son súper proactivos y se pueden dar el lujo de ser proactivos, de anticiparse, hueón, porque totalmente lo hace el equipo OSCM. Yo simplemente puedo levantar la mano y pedirles, no, ustedes lo hacen porque ustedes saben, nosotros no sabemos. Nosotros hacemos process management, pero no cachamos ni mierda la herramienta. Entonces los hueones se quieren adelantar y toda la hueá y nosotros que estamos pa'l pico con mil hueás tenemos que adaptarnos responder cualquier hueá que piden?
+
+ Bueno, o sea, está bien que quieran llegar a tiempo con el tema del training, pero nos faltan un millón de definiciones. Bueno, ni siquiera vamos a ver qué también nos van a recibir en la semana que viene. Sé que hacemos las sesiones, porque así como van, capaz que nos digan, no, es que con este tiempo que nos dan, no hemos podido poner a nadie. Pero bueno, nosotros al menos tenemos que pensar que es la semana que viene para que le pongamos un poco acelerado a esta hueá.
+
+ Y empieza a tener un poco más de forma al menos.
+
+UNKNOWN_SPEAKER:
+Y ahora que...
+
+Bastian Osorio:
+¿Quieres ir la próxima semana o no?
+
+Hector Palacios:
+O sea, de ir o no, casi que me da un poco lo mismo, bueno, la verdad. Podríamos trabajar en la oficina con tal de darle más, no sé, más formalidad. Lo mismo. En vez de ir a la oficina, ya podríamos ir a la oficina acá. Ahora el tema que lo pasa es que igual ya lo compramos, entonces no sé qué vamos a hacer con eso. Lo podemos cambiar, lo podemos cambiar. No lo pagaste. O sea, lo pagaste tú. No, no, no, no perder como 70 euros, no se weón.
+
+ Bueno, si nosotros no pagamos.
+
+Bastian Osorio:
+Weón, es que yo estoy seguro que si hacemos las sesiones así, primero, amanece, no, no se pueden, ya se mandaron las reuniones. Es que el culia igual me calienta, porque dicen, no, no se pueden, no se pueden cancelar las reuniones, pero weón, si no, nada, ustedes tienen que borrar esta, weón, nada preparado, no es que nosotros vamos a estar ahí proyectando, weón, como ¿cuántas horas? 80 horas, weón, proyectando qué cosa, ¿cachai?
+
+ Si el tema el objetivo era que lo hicieran ellos, que se los guiaran, etcétera, etcétera.
+
+Hector Palacios:
+Igual yo creo que hay harto para discutir, si no, no creo que nos vayamos a quedar cortos de eso, de tiempo de la sesión. Y si terminamos antes, bacán, pero yo creo que podemos aprovechar incluso tiempo para resolver dudas. Con tiempo podemos armarnos una listita de cosas que queremos paliar con ellos y aprovechar Una cosa clara es como, mira, le estamos mostrando los atributos. ¿Qué atributos quieren?
+
+ Algo que nos falte. Y que empiecen ahí a lanzar, ¿cachai? A decir, como no, mira, falta esto, esto, esto. Y así en general, como definiciones que no las tenemos tan claras, como el RISC Score, podemos quizá ahí usar la misma sesión para terminar de trabajarlo, no sé. En el caso de que nos vaya quedando tiempo, de que nos falta tiempo con ella, nos falta. De que lo podemos aprovechar, sí. No, no, no pasa nada.
+
+
+
+Bastian Osorio:
+¿Entonces no nos mandan a la chucha, weón? Sí, pues es lo weón.
+
+Hector Palacios:
+Lo que te iba a decir ahora esto, weón, es que Rajul ya está un poco menos acelerado porque terminamos con la carga de los documentos. O al menos ya está de lado. De ellos, no sé cuántas iteraciones nos falta para cerrar. Pero eso significa, caché, estamos a 20, weón. Me acuerdo que estábamos a... Inicio de diciembre pensando que lo íbamos a sacar en la semana que viene, una hueá así. Dos meses después.
+
+ Pero la hueá es que ahora siento que tienen un poco más de tiempo libre y se están ofreciendo cada rato. Dicen, oye, los podemos ayudar, los podemos ayudar. Empecemos a tirarles toda esta hueá. Decirle, oye, el tema de Storage Location. Ustedes hicieron este proyecto, no nos lo tenemos claro cómo es esto. Súper poco estándar. Y cada vez que, y las veces que hemos hablado de esto con Adnok, nos putean, hueón.
+
+ ¿Entonces con quién carajo podemos definir la sesión? ¿Internamente? Porque a ustedes les gusta obtener el conocimiento interno siempre antes de ir con Arno. ¿Qué nos puede ayudar? Y si no, puta, que la lleven ustedes. Tú sabés, Raúl, sabés mejor. Es porque nosotros, Cush, vos también, tráiganos esta respuesta, listo.
+
+UNKNOWN_SPEAKER:
+Tráiganos la definición.
+
+Bastian Osorio:
+Yo creo que eso sí se puede empujar. Sobre todo con eh Raúl que siento que el que tiene la la relación más de confianza y hasta la semana pasada el culiao hasta hasta la masa wey ando con las cagas los documentos con mil weas weon ahora quizás
+
+Hector Palacios:
+lo tenemos recién cachai pero eso es lo que me da paja es como este weon lo tenemos cien por ciento enfocado en su wea y cada vez que estamos con Agnot se preocupa de levantar sus temas cachai como que lo es un culiao y eso bueno ahora ojalá que no pero hay cucho yo no creo que cucho se esté matando haciendo hueá pues y cunal como hueón lo tiene de capitáncito revisando los documentos pero tampoco es que se hace cagar trabajando en los documentos el hueón es tan pinca de enviarlo con errores de ortografía o sea el hueón nos está dedicando realmente a hacer la pega entonces tenemos ahí varios recursos por ejemplo esa hueá que logramos cuando empezaron a hablar de no, que quieren esta presentación de awareness y ahí hicimos la enviación y se lo lanzamos a Fajuriwen y le preguntaron a Rajul si quería sumarse y dijo no, que no estaba seguro que iba a poder, que si quieren que lo colocaran en copia y que se podía y hacerlo posible pero si no, no.
+
+ Hasta el mismo gacha que los Werners tienden a hacerse los Werners y tirarle toda la pega encima. Entonces creo que es más de hacer cuando nosotros estamos hasta la masa en configuración, todas estas hueás tienen que empezar a pasar más por Fajur y por Cunal, por Cushpo y por Rajul. Tenemos que tirarles pega porque creo que nos quedamos con hueás de nuestro lado que no deberían ser de nuestro lado a veces.
+
+
+
+Bastian Osorio:
+Que no son muy resolutivos. Como que, no sé, por ejemplo, la hueá del Illo del Kibo, tú le tiraste a ella y no quedó en nada.
+
+Hector Palacios:
+por eso mañana levantar nuevamente esta cuestión y cualquier cosa si lo bueno no sé si son muy penca igual no sé que me apaga aquí como que no podemos levantar nada como que no podemos cargar nada pero por qué no le decimos a la mano y hoy en avaní les pedimos estas definiciones nos están ayudando cachai y si igual nos cuestiona nos podemos ver pero esto no es de tecnología proceso y nadie nos está ayudando.
+
+
+
+UNKNOWN_SPEAKER:
+A mí lo que más baja es que KPMG es gigante, Wansi.
+
+Hector Palacios:
+KPMG no es este equipo. Pero este es el equipo que está asignado al proyecto y esta hueá es finalmente una... Pero cuando ellos contratan a OSCM, ellos contratan a OSCM, no nos contratan a nosotros nomás. Pues Wansi, ¿saben qué? Si nosotros tenemos la mensa duda de cómo funciona, no sé, este optimizador, ahí está Martín tal y fue bueno o le preguntaba a cualquier hueón que esté atrás fácilmente mandar un mensaje listo y lo solucioné yo te genera una sesión o asignar y ahí se derrementa el proyecto por un rato sin necesario cachai esa hueá yo también deberían tener que hacerla o sea si tienen un hueón que experto así hueón así referente mundial y que sabe hacer esta hueá puta y que cuesta que derremente el error en cinco minutos al si te puede resolver la duda.
+
+ Si no, bueno, ¿qué contratamos? 75%. Lo bueno es que están ahí desde CAPMG quienes son los de la data eran 2. Los del proceso eran 2. Los de Exchange Management son 3. Bueno, nosotros somos 10 solo nosotros. Y somos un track. Y ellos por track tienen dos, tres personas. Por eso me calienta la hueá, es como que no está súper desequilibrado. Estoy seguro que nosotros no nos pagan mucho más que cualquiera de esos hueones, sin embargo, la PMG tiene que ir al inmenso margen de la hueá, es ridículo.
+
+
+
+UNKNOWN_SPEAKER:
+Esos hueones les pagan una mierda. ¿Qué te digo?
+
+Hector Palacios:
+Pero levantemos las sesiones de Tana. Mucho es sordo, güey. Ahora hay que quitar un poco el foco de la hueá de documentos. Mañana empecemos a tirarle hueá. Integration working session. Ahí tenemos para tirarle varias hueás a esta hueá, güey. De partida yo le tiraría el tema de storage location que estábamos hablando. Y así. Voy a ir al control de los puntos. Pueden ir asignando KPMG y ahí les vamos haciendo seguimiento también a ver si les podemos tirar alguna web.
+
+ ¿Y la red logística? La red logística es otra de las grandes definiciones. Es como, ¿cómo carajo la vamos a seguir? ¿Dónde están los, dónde está toda esta información de el TPA?
+
+Bastian Osorio:
+No nos pongamos a hacer, no nos pongamos a hacer inventos raros. Bueno, si esa web nunca funciona, que ellos lleguen con la data. Y ahí también de nuevo empujar a, empujar a, ¿Acá PMG?
+
+Hector Palacios:
+Sí, no sé, hay un montón de definiciones que tenemos pendientes, oye, necesitamos esto. Pueden ayudarnos a llevarlo en paralelo, si quieren, si nos necesitan, nos sumamos, ¿cachai? Pero ellos también tienen que ser capaces de definir, si no es tan compleja la hueá, es simplemente, oye, necesito esta hueá en este nivel de detalle, para esto, ¿cómo la puedo obtener? Tú eres el experto en eso, Jana, ¿no yo?
+
+ Porque de repente nos estamos mareando tú y yo, así, chat GPT, ¿cachai? ¿Tenemos que empezar a repartir mejor los recursos?
+
+UNKNOWN_SPEAKER:
+¿Debe estar bueno? Tuviera mal miedo. Estamos, ¿no? Estamos. Vale. Mañana empezamos ahí a repartir.
+
+Hector Palacios:
+Hola, ¿cómo estás? ¿Cómo? Chicho. Oye.
+
+UNKNOWN_SPEAKER:
+Oye. Subtítulos en varios idiomas
+
