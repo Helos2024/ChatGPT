@@ -1,0 +1,976 @@
+Hector Palacios:
+Hola, ¿qué tal?
+
+Saul Portillo:
+¿Cómo están?
+
+UNKNOWN_SPEAKER:
+Hola.
+
+Pablo Lopez:
+Hola, ¿qué tal?
+
+Hector Palacios:
+Patrón seguro está pegado en el tema de la Jado, yo creo. Nosotros podemos darle nomás. Revisar los puntos que tenemos.
+
+UNKNOWN_SPEAKER:
+¿Quieres revisar algo tú?
+
+Hector Palacios:
+Porque lo mío ya casi te lo mostré, entonces, para no repetir hasta que llegue Bastián, ahí lo repetimos, pero si quieres vemos el tema de los approvals que tení y ver qué es como...
+
+Saul Portillo:
+Te muestro un poco. Es muy parecido a lo que habíamos conversado En última sesión, ¿te acuerdas cuando hablamos del flujo?
+
+Hector Palacios:
+Lo tenemos en esta PPT.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+Porque esto está como súper agrandado. Lo tenemos en esta PPT, pero aquí va como una especie de lógica con cálculos de equifibro, ¿ok? Para generar vértices que nos sirven de tenerlos tanto en un Excel, por las alertas de acá, como también poderlo, esas alertas nos sirven para filtrar las combinaciones desde el lado de hacerlo directamente en el Planner Workspace y con las tareas. Aquí pensando en el flujo de aprobaciones que hablamos en esta presentación, ¿no?
+
+ Donde hablamos de justamente el Planner envía su forecast, ejecuta el snapshot, luego lo que hace es que viene el aprobador, el aprobador valida solamente las Nacho del mes anterior. Evidentemente, si el plan no cambia, no tiene de qué validar. Si el plan cambia, es lo que va a validar. El aprover rechaza algunos casos. Esos casos le llegan al planner en la actividad y luego el planner vuelve a hacer el cambio.
+
+ Pero para hacer la aprobación necesita el cambio, no? Para comparar si el nuevo forecast que está rechazado por el aprobar está modificado o no en base al primero que ya revisó el aprobador, ¿no? Y luego el aprobador lo que va a revalidar solamente las combinaciones que fueron rechazadas en la primera instancia, pero que ya tienen cambio. O sea, que ya es distinto eso en su momento. En pocas palabras, ese flujo lo hice de esta forma con forecast.
+
+ Este está el keyfigure de snapshot, el keyfigure de diferencia y un keyfigure de alerta que me muestra qué combinaciones tienen diferencia. Luego tengo el forecast backup y el tema de lo que ya habíamos visto la semana pasada de la approval y la Después tenemos que avaliar si queda o no el dato, si lo eliminamos, si queda así o si sigue quedando independientemente de que haya sido rechazado. Pero luego, digamos, al haber estado rechazado, ¿OK?
+
+ Tiene que volver atrás, tiene que volver a modificar el forecast. Este aquí es el mismo que el anterior. Tiene que modificar el forecast. Y aquí tengo una alerta de otra alerta, que es la alerta de filtrar los materiales. Que están rechazados en primera instancia, pero que ya tienen un cambio. Eso es el valor del backup o del forecast anterior que me entregó el planner para validar. Y ahí terminó de sacarnos, digamos, la aprobación.
+
+ Y lo veo a nivel de template. Lo estábamos ahí terminando de aceitar, Héctor, para contarte aquí un poco. Que está aquí, que es una alerta donde me muestra las combinaciones que tienen diferencia en el plan. Cris, déjame cerrar un momento para que veas, estoy acá. Simplemente de por acá abro la alerta y me va a traer las combinaciones a nivel mensual y a nivel producto de ubicación que tienen diferencia en el forecast versus En este caso hicimos dos ejemplos.
+
+ Tengo este aquí, esta combinación. No sé si se ve muy pequeño o se ve bien. Tengo esta combinación, por ejemplo, que tiene diferencia acá porque el forecast era de 2 y el snapshot del mes anterior era de 5, por decirte algo. Entonces por eso es lo que ahí cambia el plan. Tengo una diferencia de menos 3 y tengo esta alerta que es la combinación, digamos, o el punto donde se generó el cambio. Y de igual manera acá, esta combinación sucede lo mismo, donde tenemos el forecast y tenemos el snapshot del mes anterior y una diferencia de 3, de 3, y en cada uno de los meses igual.
+
+
+
+Hector Palacios:
+Bueno, yo creo que esto sí lo vamos a tener llevar si o si al tema del Workspace. No sé si vamos a poder usarlo también en el Excel, porque estaba pensando eso mientras hablaba, pero el tema es que esa alerta de Control Tower, que tiene la ventaja de que las podemos apagar, debatida porque estas alertas de Dashboard no se pueden apagar. Tendríamos que configurar un keyfigure adicional que sea como snooze alert y todo eso.
+
+ El último podría ser, el problema es que siempre va a estar de la otra alerta. O quizás no, quizás no. Igual se pierde parte de la funcionalidad porque la otra se puede apagar hasta el próximo ciclo, etcétera. En esta no, el que apago se va a apagar por siempre. Y lo malo es que esas alertas control tower tampoco se pueden aprovechar aquí en la vista. Entonces yo creo que todo lo que sea manejo de excepciones, que sea alerta pruebas, cosas así, vamos a tener que estar obligados a trabajar en la web.
+
+ De lo contrario, en el Excel vamos a perder funcionalidad.
+
+Saul Portillo:
+Ya, pero yo lo construí, Héctor, pensando en que este configurador de alertas es el que pudiéramos usar. Tú lo puedes meter directamente en el Control Tower.
+
+Hector Palacios:
+Es lo que pensaba, que en vez de que tú configures en el Control Tower como que este sea menor que este, o que este sea distinto a este, metes directamente ese keyfigure y colocas que si este keyfigure vale 1, entonces alerta.
+
+Saul Portillo:
+Exacto, es que esa es la idea. Esa es la idea que tenía, porque al tenerlo ya en el template, ya llevarlo a gráfico, a control table y todo, es usar justamente esto.
+
+Hector Palacios:
+Usar el keyfigure que me está dando alerta. Ahora, siguiente, igual ojo, eso siempre cuando colocamos un patrón, hay dos formas de generar alerta en en Control Tower. Una es que nosotros seamos bien claros y definimos este threshold, es decir, si es que es menor a 80% o es mayor a 120%, da lo mismo. Es como que si tenemos clara esa diferencia, esa condición, perdón, la dejamos así como estamos hablando ahora mismo.
+
+ Pero después está la otra parte que es más interesante, dado que a AdNoc le interesa mucho el Machine Learning, la AI, es que El mismo sistema decía eso. Es así como cuando el AVS, en vez de que nosotros le coloquemos los thresholds, las condiciones, se calcula automáticamente y no le digamos nada. Algo similar pasa acá. Entonces ahí lo que tenemos que hacer es como usar un key figure que sea referencia, que en este caso sería la diferencia, que tú ya lo calculaste por ahí, si no me equivoco.
+
+ Actual usage. Sí, es esto, el error y la diferencia. Entonces, esa diferencia quizá en un valor absoluto, pero esa diferencia podemos meterla al Machine Learning, porque te pide un key field solamente. Y ese key field le podemos decir busca entre, no sé, los BED o los ABC, no sé. Y ahí lo va a intentar agrupar, va a calcular un threshold para los A, un threshold para los B y un threshold para los C.
+
+ Quiere decir que para los C quizá puede ser más permisivo, Lo normal es que en los C hayan bastante desviación. Lo normal es que en los A haya menos desviación. Entonces, en base a esos clusters, es que va a automáticamente setear el threshold, que nos diga, estos son los raros, todos los demás son normales, porque es lo que se ve constantemente.
+
+UNKNOWN_SPEAKER:
+Entiendo.
+
+Saul Portillo:
+Si, en vez de dejarlo fijo, porque aquí lo estamos dejando fijo. Yo en el ejemplo de acá lo estoy dejando como, tiene diferencia o no tiene diferencia, Pero puede pasar que hay diferencia de un valor, de un número, y eso porcentualmente, un 2%, tampoco es necesario salir a avaliarlo.
+
+UNKNOWN_SPEAKER:
+Ya te entiendo.
+
+Saul Portillo:
+Y eso lo pueden hacer desde el Control Tablet.
+
+Hector Palacios:
+Sí, déjame compartir para robarle pantalla en un rato. Esto lo había encontrado yo. No sé si habré cerrado la página. Veamos si aparece algo acá. No. No sé dónde carajo lo dejé, pero era Zap. Either the alert clustering AI.
+
+UNKNOWN_SPEAKER:
+¿Qué significa? No. Mira, igual está bueno este tutorial para que lo sigan para aprender a hacer esto de la alerta.
+
+Hector Palacios:
+Los paso aquí ahora que lo encontré. Por si tienen dudas de cómo usar Control Tower para la alerta. Ahí está el tutorial directo. Voy a buscarlo, pero había encontrado un vídeo. A ver, quizá no es necesario el vídeo. Voy a buscar esto del Key Means. Lo que hace es como agrupa la data. Entonces imagínate que aquí lo que estamos graficando en realidad es la diferencia entre el forecast y el ciclo anterior.
+
+ Entonces, claramente, por ejemplo, para productos que son X y Z, para los X las diferencias van a ser menores, ¿verdad? Para los Y quizás van a ser un poco mayores y para los Z van a ser grandes. Entonces, si definimos el mismo threshold, la misma condición para los tres casos, no va a hacerse Entonces lo que le podemos decir al algoritmo es como, agrupa por X y Z y tú decides cuáles son las agrupaciones y cuál es el threshold que vas a hacer.
+
+ Entonces primero los agrupa. Estos son los valores de X, estos son los valores de Y, los valores de Z. Y entre ellos voy a calcular cuál es la desviación normal o cuál es la diferencia normal. Y solamente las que estén muy por fuera de eso son las que voy a generar una alerta. Del promedio del clúster, algo así. Entonces, eso es lo que hace el algoritmo, pero lo hace por sí solo. Nosotros no tenemos que estar definiendo cómo se llaman los thresholds.
+
+ Entonces, quizá esto nos pueda ayudar a definir menos alertas, también, que implica clustering.
+
+Saul Portillo:
+Eso está bueno. Pero cuando, disculpa Héctor, pero cuando hablas de algoritmo, ¿es comparto el cliente utilizando, justamente, la aplicación? Utilizar algún otro atributo para hacer este filtro y que sea a través de este resultado de diferencias. Es lo que quieres hacer, como que con el resultado de diferencias, tienes todas las diferencias, todas las combinaciones, y eso lo haces con una segmentación, corre una segmentación a eso, eso es lo que estoy tratando de entender.
+
+
+
+Hector Palacios:
+Mirá, déjame un ejemplo más, que te hace más sentido. Cuando tú estás haciendo actividades, imagínate que que se ha dado una alerta de accuracy cada vez que se dan los valores para los X que servía 20%. A los Y no le podemos pedir lo mismo, porque sabemos que se van a equivocar más o menos. Entonces, ponte tú, le dejamos un 40%. A los X, espérate, cuando la accuracy sea menor a 80%, digamos. A los Y cuando sea menor a 60% y a los Z cuando sea menor a 30.
+
+ Porque sabemos que pedirle a que todos tengan un 80% de accuracy va a ser Realista, ¿no? Entonces tú manualmente estás definiendo aquí estos thresholds. Estás diciendo para los X una acuración de 80, para los Y de 60 y para los Z uno de 30. Lo que sabes tú es que no puede tener uno transversal. Tienes que definirlo por parámetro, ¿no? Porque está muy relacionado a la variabilidad. Lo que va a hacer este algoritmo, el K-Means, es que tú no tienes que definir eso.
+
+ Si no le vas a decir K-Means, házmelo, sácame los thresholds para los X y Z. Pero automáticamente. Entonces esto va a revisar los datos y capaz que te diga, no, esto es 82, esto va a ser 60 y... No sé, voy a inventar 55. Y esto va a ser 40%. Entonces lo define automáticamente el algoritmo. Tú no tenés que decirle nada. Normalmente todo lo de la alerta se trata de esto. Tú ves la alerta diciéndole cuándo el forecast accuracy sea menor a 80, cuándo sea menor a 60 para los i, cuándo sea menor a los 30 para los z.
+
+ Acá no se define entre reglas, sino que se define solamente una. Dice cuándo el forca accuracy sea bajo. Y acá automáticamente el algoritmo debería definir los trechos por segmento. Tú no tendrías que hacer nada.
+
+Saul Portillo:
+Solamente una alerta. Y ese CAMINS, ese 82, 52, 40 y pico, lo hacen las aplicaciones de segmentación.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Automáticamente la alerta. No me he metido tanto. Que echarle un ojo, la verdad. Porque hasta ahora estoy definiendo la alerta de alto nivel también, pero... Ah, mira, ahí se actualizó. Está bueno esto porque lo actualicé en el Workspace y se actualizó en la aplicación de acá. Está totalmente conectado. A ver, Definition... Aquí es donde está la regla, ¿verdad? Entonces puso una regla estática. Y después te dice que se pueden definir reglas dinámicas.
+
+ Y esas son las de clustering que tenemos. Aquí, Machine Learning Rules. Ahí te dice. Tenemos estas dos formas de clustering que lo que buscan es lo mismo. Aquí tendríamos que meter la diferencia, el key figure de diferencia. Y aquí los atributos en base a los cuales queremos que haga esto. Parece que automáticamente se filtra en base a los que tenemos aquí arriba. Significa que simplemente aquí, por ejemplo, tendría que traer el ABC, por decir algo.
+
+ Y que dependiendo de esa segmentación, que me genere los clusters acá. ¿Dónde lo dejé esto? Acá. Entonces se toma el SPFIR. ¿Este será? La diferencia versus el snapshot es el primero, el de abajo, el segundo.
+
+Saul Portillo:
+Bueno, en el medio, pero el segundo es la diferencia. Ese. Y acá tendríamos que seleccionar.
+
+Hector Palacios:
+Amelocluster por A, B y C. Machine Learning Parameters User Defined. Uf, ahí se puso más interesante. Wow. ¿Cuál es eso?
+
+UNKNOWN_SPEAKER:
+Distance y Distance Method.
+
+Saul Portillo:
+No, hay que ponerse a investigar un poquito ahí.
+
+Hector Palacios:
+Ellos son los clustering, subclustering, hard clustering. Eso vamos a que en algún momento entendemos. Porque sé que lo preguntan. Nunca se lo van a aprender, van a creer que lo dijimos seteado, pero para que no nos pillen desprevenido. Al final te va a encontrar low layer, porque el algoritmo piensa que la actividad debería estar alrededor de los 82% y cuando algo se envíe mucho de te va a decir, OK, esto está extraño.
+
+ Ahora me pregunto, ¿cómo diferenciamos cuando sea bueno y cuando sea malo? Pero nada, eso se trata de investigar un poco eso. OK. Vale. Pero se ve bien, Saúl. Mientras esté la lógica ya puesta, empecemos después ya a configurar ¿Tú ahí qué parte del flujo configuraste?
+
+Saul Portillo:
+¿Lo configuraste entero o configuraste solamente uno o dos casos? Entero, o sea, porque te muestro.
+
+UNKNOWN_SPEAKER:
+Porque está este primero. ¿Se ve en la pantalla?
+
+Saul Portillo:
+Sí se ve. Esta primera alerta, que es la que te va a filtrar las combinaciones que están distintas. Entre el Forecast y el Snapshot. Y después está la otra alerta que no he terminado de guardarla, pero es con este Keyfigure que tengo acá.
+
+Saul Portillo:
+Este que está acá calcula la diferencia entre el forecast y el backup. Tendré la copia del Forka final al Forka Backup antes de que el Planner haga los cambios para poder hacer otra estabilidad. Y esta alerta te va a poner un valor de 1 si esto sigue estando bloqueado, sigue estando no aprobado, y si tengo diferencias entre el Forka, quizá ya modificado por el Planner, y el Backup. O sea, ahí es lo que tengo que, porque si sigue bloqueado, si sigue no aprobado, pero el Planner no ha hecho ningún cambio, yo no voy a salir a balear nada, porque siguen estando rechazados, el Planner tiene que hacer su trabajo.
+
+ Y la alerta le va a seguir saliendo al Planner hasta que se va a retornar y se ha ido al Planner hasta que esto no tenga combinaciones con bloqueo. O sea, con una aprobación. Que haya como un ciclo que va y viene, pero con esto mismo habría que verlo cómo sigue en la parte del flujo de aprobaciones, pero más o menos esa lógica, al final es, si vuelves a cambiar, vuelves a computar, ya lo haces como cíclico, vuelves a computar la copia al backup y si sigue esto de combinaciones que están iguales pero está reprobado, le va a seguir apareciendo la libertad porque ya no te den combinaciones.
+
+ Porque aquí el aprobador lo que tiene que hacer para que ya no le siga haciendo el loop es borrar, ya quitar acá, por ejemplo, en el plan del workspace y ya con eso quedaría aprobado el plan. Como quitarle el bloqueo. De cierta forma. Y algo así, claro, tenemos que aceptarlo mejor ahorita porque nos falta otro dashboard aquí construirlo. Y ya si quisiéramos verlo directamente en un plan de Workspace y con tareas.
+
+ Y lo hacían, trataba de hacer un ejemplo. Y esto lo estamos haciendo con el Forecast. Y al tener esto listo con el Forecast, replicaríamos lo mismo con los datos de Inventory, con Reorder Points.
+
+UNKNOWN_SPEAKER:
+Vale, buenísimo.
+
+Hector Palacios:
+Me parece bien. Terminemos de configurar esto y ya. Ya empecemos a configurarlo en el plano Workspace y el Alert. Si tenés algún problema, avísame. Por ahora, lo de Machine Learning está perfecto, pero no nos metamos ahí. Hagamos tres short sencillos, simplemente con el 20%, y después, con más tiempo, nos metemos a entender qué es lo de Machine Learning. Pero de momento, mientras tenemos una alerta, está bien.
+
+ Después podemos irnos más fancy.
+
+Saul Portillo:
+Sí, yo creo que podríamos, ya entendiendo y que a ellos les haga sentido, Héctor, ahí ya, Prácticamente es como el que yo acabo de hacer ahorita, porque la verdad es, ¿hay diferencia o no hay diferencia? O sea, no cuánto, ni qué porcentaje, simplemente hay o no hay. Y me aprobaste o no aprobaste, pero para que yo vea en el flujo inicial. Ellos tienen que darnos ese input, y ahí vemos si lo que tú dices con machinero lo hacemos bien, o ponerle valores fijos, o ver de qué manera.
+
+
+
+Hector Palacios:
+me mostraste del aprobado, eso ya no como que es lo que es, ¿no? O sea, o lo modificaste o no lo modificaste, ahí no hay segunda ni machine learning ni segunda lectura, es o lo rechazaste o lo modificaste después de rechazado, es así, son lógicas duras. El tema es con el filtro de información, el filtro inicial, porque tanto el planet como el aprobador van a tener filtros de distintas magnitudes, me imagino que el aprobador va a ver algo más filtrado, todavía.
+
+ Pero esas alertas quizás las podemos filtrar de alguna forma con el tema de Machine Learning. Hay que definir Thresholds que tengan sentido. No te vaya a definir, por ejemplo, un 80% de Threshold y que estén 99% de los datos bajo eso. Sino que te define algo que tenga más sentido, más promediado quizás, y solamente te traiga las que estén fuera de eso. Después, si con el tiempo, subiendo esa cosa de la misma alerta.
+
+ Lo ideal es que es adaptativa, creo. Pero es para el filtro inicial, no para el aprobar.
+
+Saul Portillo:
+Yo creo que eso lo iremos discutiendo con ellos y también viéndolo en las pruebas. Porque, ¿qué te puede pasar ahorita Héctor? Que este primer filtro de las combinaciones que tuvo cambio contra el mes anterior, puede ser que te salgan un millón de combinaciones y de repente en En ese millón de combinaciones, 900.000 cambió el valor de 1. O sea, de ser un forecast de 16 pasó a 17. Eso no es tan representativo como para que tengas que entrar a hacer una validación.
+
+ Exacto. Más si lo que tú dices, me cambió de 16 a 40. O sea, me duplicó y todavía un poco más. Esa combinación tiene que salir al plan, al validador, para aprobarlo.
+
+Hector Palacios:
+Exacto. Va así. Vale, está bien. Revisemos los datos para empezar a filtrar, porque aquí necesita un poco más de ayuda ustedes que lo han estado trabajando más, ¿no? Entonces, empecemos a filtrar de alguna forma lo que vamos a trabajar, porque no podemos estar trabajando sobre todos los datos. Lo que yo quiero es que en el dashboard de inventario que les mostré, se vayan metiendo para revisar caso a caso una vez que afinemos el modelo, pero que me ayuden a validar, de decir que hay cosas que podemos cambiar o no, si son errores, más profundo, etcétera.
+
+ Pero al menos es para hacer el fine-tuning, básicamente. Lo que va a hacer el planner. Nos vamos a poner en los zapatos de ellos, ¿no? Entonces, hoy día me toca probar. ¿Qué quiero revisar? Bueno, quiero revisar los que son distintos a los que tengo hoy día, de partida. Quiero revisar los casos donde el nivel de servicio que propone el sistema, o sea, el punto de reorden no va a cumplir con el nivel de servicio esperado, también.
+
+ Cosas así. Entonces, vayamos viendo caso por caso y vamos solucionándolo. Si es que hay un problema, no, mira, es que ahí nos faltaba la pieza en estándar. No, es que esto debíamos haberlo calculado con la gama, pero la lógica actual me lanzó un poasón. Cosas así, ¿vale? Pero para que lleguemos a ese nivel, primero tenemos que reducir el scope. Porque ahora yo veo el, acabo de ver el filtro que teníamos con MRU.
+
+ Y hay más de 1.000 materiales seguramente. Entonces, filtremos, ayúdame a filtrar, si alguien puede compartir pantalla, Fii, tú quizás, si tú estás trabajando con los datos. Y ahí vamos filtrando los que no tengan segmentación de partida, eso lo dejamos afuera de una. Y así vamos reduciendo para ver si es que una, que quede un tamaño de datos que tenga sentido, que nos Dos, que tenga los datos llenos.
+
+ Y tres, que sean representativos también. O sea, quiero filtrar, pero no a tal nivel que no me quede ningún mover, por ejemplo. Quiero que igual el filtro quede el F, el M y el N, no sé.
+
+UNKNOWN_SPEAKER:
+Y el S.
+
+Saul Portillo:
+¿Sabes qué vista podemos usar, Filip, Héctor? Y aquí por la de justamente esta del fast, medium, slow y non-mover a nivel de año. Y ahí podemos filtrar. Un set de datos. Y podemos agarrar un F, un 5F, un 5M, un 5N y un 5NM y con eso validamos que tenga todos los otros atributos.
+
+Hector Palacios:
+Me dan un minuto y vuelvo, pero primero entran a abrir la vista y empiecen ahí a iterar un poco, a ver si filtramos a nivel de LocationPro, cuando a nivel de Pro solamente no sea donde están los atributos, eso es lo que hay que ver.
+
+UNKNOWN_SPEAKER:
+acá.
+
+Saul Portillo:
+Si quieres, tienes ahí el template del FASMO.
+
+Fiamma Giorgi:
+Sí, sí lo tengo abierto.
+
+Saul Portillo:
+Perdón, acá me equivoqué, no es el Location Products, es Location...
+
+UNKNOWN_SPEAKER:
+Es la MRLocation Parts. Ahora sí.
+
+Fiamma Giorgi:
+Acá tengo el template No sé, creo que tiene algún filtro puesto.
+
+Saul Portillo:
+Ponle location 2101, que son nada más las ubicaciones.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+Yo creo ahí para no No, no, el último sí lo dejaría. Los dos últimos sí lo dejaría en FMSN.
+
+Saul Portillo:
+Ese, el value. Claro, porque vamos a filtrar combinaciones. Y la unidad de medida, esto está en backup, ¿no? Backup version, sí. Listo.
+
+Saul Portillo:
+Por el lado de... Si quieres aplicar un filtro que tenga valores, que marque el usage, el consumption period counter, a nivel de año. A nivel de year? No, primero de arriba.
+
+Fiamma Giorgi:
+En date hay que cambiarlo a year? Si, no me acordaba donde era el keyframe, ahi esta.
+
+Saul Portillo:
+No, pero no utilices el acto de usage, utilices el period of counter.
+
+UNKNOWN_SPEAKER:
+Perdón.
+
+Fiamma Giorgi:
+El period of counter. Ese. De 2020 era o 2021?
+
+Saul Portillo:
+2020.
+
+UNKNOWN_SPEAKER:
+¿Cuál es? Ese. Ese.
+
+Saul Portillo:
+que sea por lo menos mayor a 1 o a 2 o a 1 en al menos un periodo para que se traigan combinaciones que tengan historia porque si no tenemos hay combinaciones sin datos sin nada que la están filtrando
+
+Hector Palacios:
+también el FMSN para que sepamos dentro de esto nos queden casos de uso. FSMN, el BED, el ABC, todo lo que nos haya pasado. ¿Ese? El segundo. No, la verdad que no estoy seguro, pero el B… Creo que es este, porque este es el más crítico ¿Hay algún atributo de familia o algo así que podamos usarlo ni nada? Sí. Vale, al menos es para vamos a trabajar con ese y el category lo cargaron como es el filtro inicial.
+
+
+
+Fiamma Giorgi:
+No, no tenemos category todavía puesto, vamos a poner superparts. Vale, buenísimo.
+
+Hector Palacios:
+Y ahora filtremos también, pero aquí específicamente, en esta vista filtremos todo lo que sea A, B, C, todo eso, las segmentaciones que estén vacías, please.
+
+UNKNOWN_SPEAKER:
+Raro que no haya. Ya podría estar vacío. ¿Ustedes vieron la data?
+
+Fiamma Giorgi:
+Y en realidad todas las segmentaciones pueden que algunas estén vacías.
+
+Hector Palacios:
+Ya, filtremos. No queremos ver nada que esté. Y no, te faltó el no.
+
+UNKNOWN_SPEAKER:
+HTML.
+
+Fiamma Giorgi:
+Sí, vamos con eso. Y ahí después vemos los resultados.
+
+Hector Palacios:
+Si es que efectivamente quedó algo dentro que queramos filtrar. Pero capaz a ver debe ser el otro entonces ahora sí Y a ver, ¿cuáles quedan?
+
+Saul Portillo:
+El B y el C. El B debe ser el B y el C. Debe ser el otro también.
+
+Fiamma Giorgi:
+Pasa que hay uno para producto y otro para location product. Y el de producto no lo estamos usando. Estamos usando el de location product. Sí, sí. Como venga F, F, Lo que me llama la atención es que no hay... ¿Cómo lo van a ver?
+
+Hector Palacios:
+Ah, es que no tengan otras cosas. Ya lo hacen, siempre lo hacen.
+
+UNKNOWN_SPEAKER:
+Hola Basti.
+
+Bastian Osorio:
+Hola, disculpe por estar tarde. Tengo un tema, Héctor. Es insolita, André. Nos estaban pidiendo que canceláramos el viaje porque no tienen computadores todavía. Ya, pero le mostramos a nosotros y no van a hacer nada. Está bien, pero, o sea, yo digo si le mostramos a nosotros, pero en ese caso no hace falta que tengamos durante dos semanas, mañana y tarde.
+
+Hector Palacios:
+En modo que no quiere que viajemos, ¿verdad?
+
+Bastian Osorio:
+Dice que es que hay que ahorrarse la plata y el esfuerzo, si es que en realidad los usuarios no van a ir y si quieren ir no van a poder trabajar.
+
+Hector Palacios:
+Pero sí, tenemos que empezar a tener sesión, o sea, me traería tranquilidad no tener la sesión en la próxima semana, sí, pero también creo que estamos cada vez más en riesgo de no mostrarles nada y seguir avanzando y vamos a llegar, imagínate, no sé cuántas semanas quiere que empecemos a volver en el tren.
+
+Bastian Osorio:
+Justamente le dije eso yo, o sea, ellos no nos ponen definiciones, no nos dan la data y ahora tampoco vamos a dar la sesión, mejor hacemos el proyecto entre nosotros.
+
+Hector Palacios:
+Vamos a llegar con una bicicleta de lujo y nos pidieron un Lamborghini.
+
+UNKNOWN_SPEAKER:
+Ya, pero igual, lo que estoy haciendo ahora...
+
+Hector Palacios:
+Eso no cambia lo que tenemos que hacer ahora, en absoluto. Sí, no. Pensemos que tenemos la sesión igual. Busquemos si viajo o no, da lo mismo, pero pensemos la sesión igual. Entonces, lo que estamos haciendo ahora con el equipo es que yo le estaba mostrando, básicamente, configurar un dashboard para avaliar los resultados de inventario. ¿Vale? Pero paso uno antes de empezar a avaliar y revisar toda la alerta es, ¿qué scope de la data vamos a revisar?
+
+ Porque BigNet nos pasó una cantidad de combinaciones que ahora tenemos que decir cuáles son las que queremos ver. No nos da el tiempo para revisar todo. Entonces, enfoquémonos, ¿cuál va a ser el scope de las Y acá estamos haciendo primero filtrar que tenga información de partida relevante y que las segmentaciones como tal no estuvieran vacías, para que si llegamos a algún punto y tenemos que filtrar por algo, entonces no nos veamos limitados por eso.
+
+ Y en eso estamos, básicamente. Estamos filtrando. ¿Cuántas combinaciones hay acá, Fei?
+
+UNKNOWN_SPEAKER:
+Más o menos.
+
+Fiamma Giorgi:
+Estoy yendo a 24.
+
+Saul Portillo:
+No, pero filtran... ¿Cuántos kifigos tenemos acá? Ah, tenemos tres.
+
+Hector Palacios:
+Perdón, sí. Sí, sí, no, bien.
+
+UNKNOWN_SPEAKER:
+200, entonces.
+
+Hector Palacios:
+208.
+
+UNKNOWN_SPEAKER:
+Bien.
+
+Fiamma Giorgi:
+Ahora lo que me preocupa es que nos quedamos sin nada.
+
+Hector Palacios:
+Tenemos una sola, que eso estaba viendo, una sola material A
+
+Fiamma Giorgi:
+¿De todo lo que nos pasaron tenemos solamente una? Los spare parts, estoy viendo, ¿no?
+
+Hector Palacios:
+¿Solamente una? ¿De qué sentido tiene eso? Y de la edad que nos pasaron, a ver, si me pongo a revisar la edad que nos pasaron, ¿no voy a encontrar mucho más?
+
+Saul Portillo:
+Es que la edad que compartieron, justamente eso, el 36 de Toda la razón.
+
+Hector Palacios:
+Bueno, es lo que es. Vale, eso es lo que nos pasaron, listo. 200 se ve un poco mejor. ¿A quién se le ocurre que otra cosa podríamos hacer para reducir esto?
+
+Saul Portillo:
+Yo agarraría un set de datos, que sean 10 códigos que sean fastmover, 10 códigos fastmover.
+
+Fiamma Giorgi:
+Se escucha como lejos, y después cerca, y después se va lejos de nuevo.
+
+UNKNOWN_SPEAKER:
+Hago tu micrófono. ¿Hola?
+
+Saul Portillo:
+¿Se escucha?
+
+UNKNOWN_SPEAKER:
+¿Me escucha bien? Ahora sí.
+
+Saul Portillo:
+Ya, me quité los audífonos, yo creo que se están quedando sin batería, es por eso. Podemos hacer una cantidad de 10 códigos que se llaman Fast Mover, 10 Mid Mover y lo podemos mover por el Concussion Period Gear Counter de manera acumulada, ¿no?
+
+UNKNOWN_SPEAKER:
+Puede ser.
+
+Hector Palacios:
+Ahora, la idea es que igual no nos quedemos cortos de las otras segmentaciones. De la PID, a ver. Al menos aquí ya tenemos un filtro de 200.
+
+Saul Portillo:
+O podemos hacer un concatenado también.
+
+Fiamma Giorgi:
+¿Y los del RegiScore, si no? Si tomamos lo que usamos para el RegiScore. Que eso es un concatenado entre FAST, HML y... ¿Cuál era el otro? Y BD.
+
+Saul Portillo:
+Claro, bueno, estos tres.
+
+Fiamma Giorgi:
+A lo siguiente, create el concatenado aquí mismo, Fi.
+
+Hector Palacios:
+Si querés, ponte unas columnas donde sea. A la derecha, a la izquierda, da igual. Y con Catena, creo que te va a convenir más a la derecha, porque aquí están todas esas columnas que están como unidas, o sea, te va a costar hacer los bilucápilos, contífilos. ¿Catena todas las imitaciones?
+
+UNKNOWN_SPEAKER:
+¿Deberíamos ver un solo GIFI o no? Es que si no, no va a poder filtrar.
+
+Hector Palacios:
+Yo creo que mantén los 3 y divide, Esto no es tan sencillo de hacer. Vas a tener que lanzarte todas las combinaciones posibles primero.
+
+UNKNOWN_SPEAKER:
+Ahora, cópialas al lado y quítalos repetidos. Quítalos aplicados.
+
+Hector Palacios:
+Y claro, pégalo un poco más allá para que podamos hacer un Billucap. No, creo que está bien ahí.
+
+UNKNOWN_SPEAKER:
+Haz un Contif.
+
+Hector Palacios:
+Y veamos cuál es el más repetido y de ese lo filtramos más, para que no nos queden tantos. Contar sí. El rango selecciona toda la S, la columna. Más fácil si la selecciona la columna entera, sí. Ah, este no. Es el problema que decía recién. Selecciona, entonces, el rango simplemente para que no estén quemados.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Y que sea igual al que está a la izquierda.
+
+UNKNOWN_SPEAKER:
+¿Cómo sería?
+
+Hector Palacios:
+El de al lado, el de la izquierda. Eso. Eso, de la derecha. Dale y repite Palo. Vamos a ver que se repite más y ahí intentamos filtrar un poco más.
+
+Saul Portillo:
+Pero antes de bajarlo tienes que dejarlo fijo, fijo en la celda, ¿no? Ah, Palo, tú tienes toda la razón. El S6 y el S6-29. Ahí. Eso nada más. Si, si lo puede retraer. No, no cambió mucho.
+
+Hector Palacios:
+No, pero ya sabemos cuáles son los que sobren y cuáles no.
+
+Saul Portillo:
+Entonces ahí podemos... O sea, ahí se ve la cantidad. Mira, 165, 11, los dos primeros.
+
+UNKNOWN_SPEAKER:
+Los midmovers.
+
+Saul Portillo:
+Fastmover el 33, el 90. Fíjate que son 6.
+
+Hector Palacios:
+Tiene harto sentido lo que están haciendo, ¿no? Podemos filtrar los C, que no sean tanto. Fijate que son C, C, C. Todos los que son altos son C porque obviamente son la mayor cantidad de combinaciones siempre. Ahí tenemos harto que filtrar de qué forma podríamos hacerlo. ¿Cuántos son B?
+
+Saul Portillo:
+Es que estoy viendo que son más 30 y 7 B. Ya, agarramos la misma cantidad de C's y ya. Y 6 son 1.497. O sea, el ABC prácticamente ni nos sirve, Héctor, prácticamente.
+
+Hector Palacios:
+El ABC de ellos. Exacto. Entonces los C's seleccionemos, hagamos una selección random. Es como tomemos los 30 más, no sé, los 30 mejores. ¿Cómo lo podemos medir ahí? ¿Cuál es el mejor configurador, Saul?
+
+Saul Portillo:
+En la actual usa se va a traer el volumen, pero el contador por año es la cantidad de veces de periodos que tenemos anuales en algún consumo. El counter y el period counter.
+
+Hector Palacios:
+Consumption y period counter. Sí. No, mira, hagamos algo mejor. De los C, tenemos 10M, 10F y 10 del otro. Y ahí ya formamos y los D los dejamos todos. Y el A también, el A tiene que estar.
+
+UNKNOWN_SPEAKER:
+Igual me parece muy raro que no tengamos ninguna A
+
+Hector Palacios:
+Igual esta vista, guárdala, guárdala como un favorito, compártela con demás para que en cualquier momento si tenemos que devolvernos y si miramos estas combinaciones tan malas, cambiemos por otras, nos devolvemos a esta vista. Que quede como un favorito. Y acá tú simplemente tomate todos los B, los A, los B y los C, como te dije, agarra un 10, 10 y 10.
+
+Saul Portillo:
+Es un 10 que puedes agarrar, yo creo que es lo que le digo. Puedes filtrar de consumos en el año. Una consulta, yo estoy un poquito desenchufado. Hola, ¿me escuchan? Ahora sí. Sí, sorry. Y yo estoy un poquito desenchufado porque me subí tarde.
+
+Bastian Osorio:
+Yo lo que quiero revisar, pero no, no, cambien esto, lo voy a revisar por mi cuenta, el script de inventorista en la carpeta, ¿aceptó?
+
+Fiamma Giorgi:
+Si, está junto con el de demanda.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Hector Palacios:
+Yo estoy tomando inventario, Basti, si querís revisar algo, creo que es mejor estar pensando en lo de preventivo, en lo de forecast, cosas así. Saúl está trabajando en los approvals, yo estoy trabajando en todos los inventarios, Y ahí sí nos falta más quizá la parte preventiva o correctiva que vamos a mostrar.
+
+UNKNOWN_SPEAKER:
+OK. Ah, Iván, tienes que estar relacionado a lo que estáis revisando recién.
+
+Hector Palacios:
+Yo creo que hay un mensaje importante de decirles cuáles son los que realmente nos vamos a enfocar para que ellos nos den su input. Porque si les decimos, oye, no, es que estamos girando un forecast para todos, nos van a mandar a la mierda. Va a decir, pero lo M y lo S, ¿por qué quieren hacer un forecast? Y van a tener toda la razón. Entonces tenemos que también decirle. ¿Puedes repetirlo, por favor?
+
+ Que tenemos que decirle en cuáles nos tienen que proveer un forecast o qué importa, que es importante que se enfoquen. Porque no se van a enfocar en todo. Y claramente no nos van a dar un forecast ni nos van a valiar un forecast de lo M, de lo S.
+
+Bastian Osorio:
+¿El forecast como un forecast colaborado? ¿A qué te refieres con que nos den un forecast?
+
+Hector Palacios:
+El forecast, porque lo ajusten, que lo revisen, ¿no? Eso es lo que tienen que hacer, ¿no? Tomar el estadístico y hacer un doble check y valíarlo, ¿no? Claro. Vale. ¿Cuál va a ser el scope de los números que tienen que valiar? El forecast base, ¿no? O sea, lo que definimos nosotros lo que va a ser como advanced supply planning forecast based. Eso nos interesa, pero nosotros estamos diciendo que los van a ser un segmento de los F siquiera.
+
+ No todos los F, sino que unos segmentos de los F. Y esas son las reglas que estábamos hablando con Bidex, de que si tienen listas en largo, etcétera.
+
+Bastian Osorio:
+La regla de las mandecas, las mandecas, o sea, lo que está en el BBD, o sea, no es mucho. Es una humilde definición. No sé si hay que agregar más, yo creo que... No es una definición O sea, es una cuestión conceptual, pero como definición no es posible llegar a nada con esto.
+
+Hector Palacios:
+No, hay que revisarlo a números, a decir que es un link tan largo, cosas así. Pero hay que pensar más o menos, llegar con una primera propuesta para que digamos, mira, en esto tienen que enfocarse. Y quizás ellos nos pueden ayudar a iterar, pero no podemos Y ahí sí está muy complicado levantárselos con los KPNG. Que nos ayuden, que traigan su consultoría millonaria de donde sea y que alguien nos apoye ahí, no sé.
+
+ La verdad que es una definición de proceso que la estamos tomando. Mando a nosotros.
+
+Bastian Osorio:
+Lo mismo de OrderSize quedó súper parado, ¿no?
+
+Hector Palacios:
+Se lo había llevado Kuchpo y nunca más lo discutimos, quedó como ahí enestancado. Así es. Bueno, ahí tenemos otro inventario también. O sea, el OrderSize está pegado en EOQ, pero EOQ es para demanda continua. ¿Y qué pasó con el intermitente? No tenemos ninguna definición y sí que van a jugar con eso los de Andoc. Ahí tenemos ahí un punto abierto.
+
+UNKNOWN_SPEAKER:
+Va, a ver. Entonces agarremos de momento, agarremos random número.
+
+Hector Palacios:
+Y si lo podemos guardar en un atributo usted elija. Cual, pero es que ese atributo lo defina estos son los datos de la unit testing. Acá nos vamos a enfocar para MRU. Después en algún momento tendremos que hacer lo mismo para químicas, también definir cuáles son los datos, pero definamos algo así. Es como, a ver, sí, no sé, agarremos el A, 25B y 25 del C. Intentemos que tenga que sean representativos de las demás atributos, sobre todo el FMSN.
+
+ Ese es el más importante.
+
+UNKNOWN_SPEAKER:
+Los demás, no sé si tanto. Ok.
+
+Saul Portillo:
+Ok, podemos usar un atributo con el marcándole la X, tal cual como lo que habíamos hablado del borrado, el atributo borrado.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Puede ser cualquiera, pero aquí queda un filtro y ese filtro, si me lo pueden, me lo comparten.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Hector Palacios:
+Perfecto. Vale, eso tiene que ser.
+
+Fiamma Giorgi:
+Marquemos las tareas, porque creo que son varias cosas que tenemos que ir trabajando. Bueno.
+
+Hector Palacios:
+Esto me lo llevo guardando. Sí, a ver. ¿Dónde están los tags? ¿Puedo compartir pantalla? Sí.
+
+Saul Portillo:
+Lo primero que hablamos ahí, Héctor, fue el tema del atributo, la creación de atributos para variación de integración versus conversion.
+
+Hector Palacios:
+Sí, eso es menos prioritario. Para la demo de la próxima semana no es tan necesario. Sí, hay que intentar agarrar el tiempo para tirárselo a Sagar para que trabaje en eso. Es que no sé en qué está Sagar sino en otras cosas porque han estado trabajando tanto entre sistema y conexión y cosas así que no sé si está ahora está con mucho tiempo libre o no. Pero hay que empujar eso. Vale, entonces... Definición...
+
+ Scope for... ¿Cuántos habíamos dicho de cada segmentación, o sea, tomábamos los C y después de los FMSN? De los B25B y coloquemos 25C también. Ahí tú intenta que sea un número parejo de FMSN. O sea, de FMS, lo N me imagino que no van a… Igual si te das cuenta en la data trabajando, igual tanqueando por fuera muchos casos ahí revisa, pero no nos paremos por eso, o sea, arreglamos algo primero.
+
+Saul Portillo:
+tener y más se que ve porque ve recuerda que son casi 37 combinaciones de 1500 casi el 95 por ciento es un c de lo que pasó vignes por eso van a quedar mitad y mitad o no son más
+
+Hector Palacios:
+no sé en realidad que son muy son mucho más lo sé el 95 por ciento de los datos ese claro pero probablemente por eso no le interesa tanto lo sé a eso lo que yo que entre todos los que quieran optimizar los cells son los que menos, los primeros que van a filtrar probablemente. Entonces enfoquémonos en esto, agarramos el A, los B y los C. Si después nos van tirando más productos encima mejor, pero por ahora es lo que tenemos.
+
+ Esto interno y le voy a colocar el tag test de Unit Testing, para que después podamos filtrar todo esto acá.
+
+Saul Portillo:
+Y ahí se le crea el filtro y listo, también. Ahora ya tengo un filtro y listo.
+
+Hector Palacios:
+Este va hacia Fiamma. Vale, ¿qué otra cosa estamos hablando de Unit Testing que tú, Saúl, estás trabajando en?
+
+Saul Portillo:
+El tema de los Approvals, pero ya llevarlo en la que te mostré y llevarlo al tema del Control Tower, probarlo con Control Tower. Y también el tema de utilizar, dijimos que el dinámico, lo seguimos en el siguiente caso, pero ponerle valores a los rangos de los filtros.
+
+Saul Portillo:
+valores al rango de los filtros. Si, hablábamos ya de futuro que se haga como un machine learning, pero en principio, ahora, pongámosle un...
+
+Hector Palacios:
+Si, de momento hacelo con los traits normales, no te ocupes tanto de machine learning.
+
+UNKNOWN_SPEAKER:
+Si, si. ¿Qué más?
+
+Hector Palacios:
+Standardization, eso lo tengo yo. Inventory. Standard Deviation Calculation of Intermittence. Que va a ser la mayoría de los casos. Después revisamos los demás. Pero por ahora con esto está bien. Héctor. Esto está, capaz que le llegue un mail con esto. Estaba configurando.
+
+Fiamma Giorgi:
+Sí, te iba a decir, Héctor, que está como relacionado con los tasks de Teams. Porque me acaba de llegar la tarea. ¿Te llegó? Sí.
+
+Hector Palacios:
+Le puse que se actualizara cada 5 minutos con los de Teams para para que tengamos la funcionalidad esa también que te avisa, porque esto. Quiero centralizar acá más rápido que el Teams, pero el Teams está bueno que te avisa. Vale. Sí, fue eso.
+
+Hector Palacios:
+Vale, ¿qué más nos falta aquí?
+
+UNKNOWN_SPEAKER:
+Último equipo.
+
+Saul Portillo:
+Yo comenté, pero no sé si ponerlo como tarea que va a actualizar el tema de los Demand Pattern y todo esto en backup version. Pero no sé si eso es ponerlo como a cargar realmente. Es algo más netamente disimulado. Ah, cargar los VCM.
+
+Hector Palacios:
+Obviamente esto va a ser más relevante para los productos que estés cogiendo ahora tú.
+
+Saul Portillo:
+Pero en ese caso, Héctor, No tenemos la data. Dijimos que había que pedirse la SAGAR. Ah, no, la tenemos. No, no, recuerda que dijimos que había que pedirse la SAGAR, que a Márcis lo pedíamos para que lo integrara.
+
+Hector Palacios:
+¿Vas a intentar ir por ahí? Sí.
+
+UNKNOWN_SPEAKER:
+¿Y qué está SAGAR ahora?
+
+Bastian Osorio:
+Eh... Específicamente ahora qué está haciendo, no lo sé.
+
+Hector Palacios:
+¿Pero está con alguna prioridad? ¿O lo podemos traer y pedirle cualquier cosa?
+
+Bastian Osorio:
+Igual tiene que avanzar en varias cosas.
+
+UNKNOWN_SPEAKER:
+¿Lo va a asignar o no? ¿Ah?
+
+Hector Palacios:
+¿Lo va a asignar?
+
+UNKNOWN_SPEAKER:
+Es como...
+
+Hector Palacios:
+Y ahí me dirá si no.
+
+Bastian Osorio:
+No, pero obviamente es un recurso del proyecto, así que puede...
+
+Hector Palacios:
+No va a pasar, si es que nos va a responder o no, va a pasar si es que podemos confiar en que esto se va a hacer o no.
+
+UNKNOWN_SPEAKER:
+Vale. O sea, lo tiene que hacer.
+
+Hector Palacios:
+Si se lo pedimos, lo tiene que hacer. Tampoco lo quiero desordenar, pero bueno, él revisará acá. Qué carajo pasó acá que no... ¿Qué más nos falta? Los otros puntos que hablamos, bueno, el seguir trabajando en el plan del workspace.
+
+Saul Portillo:
+Pero ya está ahí en las actividades. Y el máximo stock, el rigor del point, esas cosas.
+
+Hector Palacios:
+¿Y el stock lo tenemos?
+
+Fiamma Giorgi:
+¿Nos pasaron eso?
+
+UNKNOWN_SPEAKER:
+Sí. Sí, sí.
+
+Hector Palacios:
+Sí, creo que sí. Stock. Reorder point. ¿Y el máximo stock? ¿Viste si hay algo de lo que nos pidieron configurar?
+
+Fiamma Giorgi:
+Máximo stock. No estoy segura, creo que no.
+
+Hector Palacios:
+Vale, si está bien, si no, ya tendremos que esperar.
+
+Saul Portillo:
+Lo bueno es que nos pasaron esa data.
+
+Hector Palacios:
+Vamos a revisar esto a ver si se nos ocurre algo.
+
+Saul Portillo:
+Víctor, habías hablado también de, que posiblemente modificar el dato de no que sean 30 puntos sino que sean menos para el distribution type reducirlo a cuánto reducimos a 15 pensando que lo va a estar ejecutando 10 a 10 ok
+
+UNKNOWN_SPEAKER:
+Eso es.
+
+Saul Portillo:
+Y el tema Si no lo tienes en cuenta, recuerda que el sistema lo está calculando a nivel semanal.
+
+Hector Palacios:
+Ehm...
+
+UNKNOWN_SPEAKER:
+Ya, ¿me podés ayudar con esto tú? No, nada complejo. Es simplemente calcular.
+
+Hector Palacios:
+Me he hecho perder algo ahí. Es simplemente calcular, este, número que está a nivel semanal a nivel mensual, porque esto no este demand rate no hace mucho sentido para ello. Ok, ok, ok, No, no, mejor a ver, espérate, esto es semanal, multiplícalo por 52 y divídelo por 12. Eso es más exacto.
+
+Bastian Osorio:
+¿Le podemos pedir a Pablo esto que lo haga Pablo o entre los dos Pablo y Pelayo?
+
+Hector Palacios:
+Sí, obvio. ¿Sabrías cómo hacerlo? Ahora mismo no, la verdad. Pero se aprende, se aprende, vamos.
+
+Pablo Lopez:
+Yo te lo voy a dejar a ti, Pablo, de momento.
+
+Hector Palacios:
+Pero lo ves con fiebre. Sí, y Pelayo también.
+
+Bastian Osorio:
+por favor sumelo para que vea como se ve.
+
+Pablo Lopez:
+El próximo se lo lanzo a Pelayo.
+
+UNKNOWN_SPEAKER:
+¿Saben?
+
+Hector Palacios:
+Toda esta lógica que hice, pero esto la verdad es que va a tomar más tiempo porque son como siete que están por detrás para estimar el nivel de servicio con el el punto de reorden que estamos proponiendo. Estaría bueno tener este, pero también con el punto de reorden que tienen ellos. Para mostrarle ya, mira, este es el nivel de servicio que han tenido, una estimación del nivel de servicio con ese punto de reorden.
+
+ Pero eso nada, eso no, está más complicado, como yo.
+
+UNKNOWN_SPEAKER:
+Héctor, una pregunta.
+
+Saul Portillo:
+Las configuraciones que estabas haciendo esta mañana, ¿las existen en la Z01?
+
+Hector Palacios:
+¿Las existen en la Z01? Estoy pensando que hagamos todo en la Z-01 y copiemos para atrás. Al revés. O sea, en vez de hacer un replace, que hagamos un merge. Hay que revisarlo primero, porque no estoy seguro cómo va a quedar. Sé que Arun estuvo moviendo, parece que Arun estuvo haciendo un merge hacia acá. Porque hoy día estuvo trabajando en la configuración y Arun generalmente trabaja en la de AdDoc.
+
+ Entonces, capaz que él hizo el y funciona perfecto porque no se me borra nada.
+
+Saul Portillo:
+No, no, no. Él trabajó en la ACNOC y corrió porque vi que corrió una vez el segmentation en la ACNOC. O sea, el que está cargando datos dummy está probando por allá.
+
+UNKNOWN_SPEAKER:
+Ah.
+
+Hector Palacios:
+Vale, yo creo que lo que tenemos que hacer es intentar hacer un merge de real. Un merge de real. Es como, si es un merge, no es un replace. Tiene que juntar lo que está en las dos planilarias. Lo que sí va a reemplazar, es que si tú tienes un operador llamado A en la ADNOC y en la Z01 también, va a tomar el de la copia. Entonces, si estoy copiando la Z01 hacia la ADNOC, va a copiar el Z01 hacia ella.
+
+ Pero es porque comparten ese keyfigure. Pero los keyfigures que no se comparten, como todos los nuevos que yo creé, no deberían desaparecer.
+
+Saul Portillo:
+Deberían mantenerse.
+
+Hector Palacios:
+Entonces, creo yo que la lógica de Azahol para evitar el doble trabajo es configurar directamente en la AdNoc y copiar directamente en la Z01 y hacer un merge de vez en cuando hacia la AdNoc. Sería con, a ver...
+
+UNKNOWN_SPEAKER:
+Al revés el flujo, no, no...
+
+Saul Portillo:
+No, no, no, lo entiendo, lo entiendo. Entiendo lo que quieres decir, pero estoy viendo es el tema de...
+
+Hector Palacios:
+Es como si alguna vez Productivo lo pudiéramos haber lanzado hacia Testa o algo así. Y aquí se puede porque estamos en el mismo tren.
+
+Saul Portillo:
+¿Sería con el merge with existing? La verdad es que yo no estoy tan seguro.
+
+Hector Palacios:
+Igual haría una prueba primero, quizás creando un clon de cada área y haciendo eso en las áreas clon. A ver si es que pasa algo. Porque lo que estamos hablando con Bastián el otro día es qué pasa con los prefijos de la master data. ¿Se van a sumar todo la master data? Si va a mantener solamente una. El miedo es que aparezcan después los prefijos MRO y Z01.
+
+UNKNOWN_SPEAKER:
+Pero ese tema partímoslo.
+
+Hector Palacios:
+O sea, si vamos trabajando en la Z01, yo estoy seguro que de alguna u otra forma podemos copiar hacia atrás. El cómo no está claro, pero el de que se puede, yo estoy seguro que sí, que podemos hacer algo.
+
+Saul Portillo:
+Yo lo que me preocupa, Héctor, es que nosotros lo estamos haciendo como el doble trabajo para asegurarnos que no nos pasará nuevamente, ¿no?
+
+Hector Palacios:
+Pero que de repente los chicos hagan un traspaso del ACNUR para acá y pisen lo que ya se está haciendo la 701.
+
+Saul Portillo:
+Es lo que me preocupa. Por eso, por eso de patearlo.
+
+Hector Palacios:
+No, pero le dije una, igual se puede estar cuadrado, cualquier cosa.
+
+Saul Portillo:
+Si, en una instancia anterior. De activación.
+
+Hector Palacios:
+¿Qué más? Para el punto del script. Ese es el punto que tenemos. Relacionado a Planner Workspace. Creo que todos. Sí, Review Final Forecast en Apple Wallet.
+
+Saul Portillo:
+Esto es lo que estamos trabajando ahora mismo.
+
+Hector Palacios:
+O sea, no sé si hay un espacio para KPI, Dash, Pro Aleph. Creo que todo entra en el Planner Workspace. Este momento bajimos la abrividad a load.
+
+Saul Portillo:
+A nivel de KPI ya está el tema de accuracy. Pudiéramos utilizar eso. Dijo, creo que fue Basti, si creamos un ex podcast y analizar simplemente.
+
+Hector Palacios:
+Eso también es un punto, porque el accuracy para los intermitentes no hace sentido calcularlo mediamente, tenemos que consolidar a nivel de cuárter o algo así para que podamos calcular algo.
+
+Saul Portillo:
+Si, pero, ¿puedes mostrar algo a nivel anual y algo a nivel de cuárter de year? No, no, no, partamos a nivel No, no vas que digo en la vista, en lo que le vamos a mostrar a ellos, porque ya el cálculo está a nivel de request, pero digo cuando le muestres el resultado, a qué nivel mostrarlo.
+
+Hector Palacios:
+A nivel de request está bueno, pero en algún momento vamos a tener que pensar en un cálculo más complicado, que el tiempo sea a nivel de request, pero que el nivel de planificación sea uno base. Porque cuando mostramos a nivel de cueste, como lo de Diana que teníamos Saúl, que simplemente un cálculo a nivel total va a ser precioso. Pero a nivel detalle va a ser una mierda. Entonces tenemos que encontrar una forma de hacer un weight hacia arriba.
+
+ O sea, que lo que yo vea en número global sea un representativo de lo que está pasando hacia abajo.
+
+Bastian Osorio:
+Sí, eso es cierto, pero...
+
+Hector Palacios:
+De momento el recuente de Pelagón, pero de momento si vamos con eso no.
+
+Saul Portillo:
+Sí, habíamos hablado ahí, Héctor, con Basti, pero no en esta primera instancia, también de utilizar los atributos que ya vamos a hacer más adelante con los que tengamos. Pero, por ejemplo, hay uno que es como familia, creo que si mal no recuerdo, que tienen varios segmentos de producto. Entonces, de repente el cálculo sea como la diferencia de la accuracy de ese nivel, ¿no?
+
+UNKNOWN_SPEAKER:
+El map.
+
+Saul Portillo:
+Y, pero claro, que no complicarnos ahorita en esta primera instancia con eso hasta que no tengamos todo bien claro. Sí, sí, sí.
+
+Hector Palacios:
+De momento yo creo que basta de esto. El esqueleto, que las cosas funcionen bien superficialmente, visualmente, que le hagan sentido como a Day in a Life, como dicen ellos. Esto es lo que va a hacer paso uno, voy a entrar aquí, voy al Planner Workspace, voy a realizar la alerta, voy a terminar mi tarea, sigue el siguiente proceso. Pero todo esto creo que al final lo que iba con el Planner Workspace creo que en un mismo Workspace creo que muchas cosas se pueden convivir.
+
+ Quizás vamos a tener que tener uno para el planner y otro para el reviewer, pero capaz que sea igual, capaz que sea muy parecido. Así que hay que ver si realmente vale la pena tener separado o si es que es mejor tener solamente un planner workspace, pero con distintos filtros. O sea, alertas distintas que filtren cosas más importantes para el reviewer y que para el planner muestren más cosas, no sé.
+
+ Después con el tiempo, Así que podemos separarlo, separamos, pero de momento creo que con uno basta.
+
+UNKNOWN_SPEAKER:
+Y luego...
+
+Saul Portillo:
+¿Qué otras cosas tenemos en rojo acá?
+
+Hector Palacios:
+¿Está hablando a nosotros, Saúl, o está...?
+
+Hector Palacios:
+cuando el excel se me cuelga así es que voy a tener que cerrar todo y capaz que pierda algunas cosas Vale y reviso. Pero el RISC Score me lo dio yo. No sé si alguien tiene esto que lo pueda compartir. Porque mi Excel.
+
+Saul Portillo:
+Yo creo que lo tengo abierto, déjame ver. Yo lo tengo abierto. Aquí está. Sí, voy compartir eso. Aquí está.
+
+Hector Palacios:
+Voy a filtrar los que están en high, que son los más críticos.
+
+Hector Palacios:
+El de Preventive, ese está crítico. No sé si tengo algún update en eso. Sí que tenemos data ahí al menos. ¿Cuál es el estado de ese? La última vez que estuvimos con Severo, no recuerdo.
+
+Saul Portillo:
+Yo creo que el iba a integrar, pero no sé en qué quedó esta integración, en la que va a lidar. Y validar con él.
+
+Hector Palacios:
+Puedes ir a los status de la izquierda para revisar más o menos qué es lo que teníamos en teoría. La definición la tenemos al menos, de qué tenemos que integrar, eran los PM 3 y 4 si no me equivoco, creo que ya se lo dijimos ¿no? Ya le pasamos el keyfigure y todo ¿no?
+
+Saul Portillo:
+Sí.
+
+Hector Palacios:
+Puedes colocarle uno ahí, en la parte de definición ¿Por qué si la tenemos más clara? La data es la que no nos ha integrado y la configuración, eso, y fine tuning, ya, eso ya es como. El risk score, eso lo rehizo yo. Dejámelo ahí. Y el order size también lo tengo a mi lado, pero la verdad es que ahí no tengo. No me dio tan bien. No he encontrado mucha información de eso. Patio te diga, y tú lo de preventivo, ¿no?
+
+ ¿Pero qué es exactamente lo que quieres...? El preventivo, yo no sé qué vamos a mostrar, si vamos a configurar Dash, por qué cosas queremos mostrarles, cuál es la historia que les vamos a contar.
+
+Bastian Osorio:
+La definición a la que llegamos fue mostrar la data histórica, prior year, prior two years y setearon un configure de colaboración. Más que eso no podemos hacer.
+
+Hector Palacios:
+Vale, entonces, Saúl, ¿podemos configurar eso? ¿O ya lo configuraste? Ya está.
+
+Saul Portillo:
+El que sí no está es el de los prior, creo. Pero eso lo puedo configurar.
+
+Bastian Osorio:
+Si querés, yo me lo anoto. Me gustaría que lo tomara Fiamma y que pudiese guiar un poco la configuración Pablo y a Pelayo, un prior year y un prior two years para el preventive.
+
+Hector Palacios:
+Sí, esto voy a tomarlo como segunda prioridad, como para mañana, miércoles, mañana o miércoles. Hoy día lo ideal es que los puntos que te arrojé para bloquear y después te los sigo avanzando.
+
+UNKNOWN_SPEAKER:
+Dale.
+
+Hector Palacios:
+Pero ahí todavía nos falta la data, ¿o no? Tenemos que aliar con SAGAR que haya cargado esto.
+
+UNKNOWN_SPEAKER:
+Sí. Históricamente tenemos algo en backup.
+
+Saul Portillo:
+Históricamente tenemos algo en backup para que se vea el funcionamiento de los keyfibers, por ejemplo. Pero sobre todo lo histórico.
+
+Hector Palacios:
+Podría aprovechar también tu feed de aliar con SAGAR cómo va con la data, porque al final cualquier cosa que configuremos, si no tenemos los datos históricos, no nos va a funcionar. No tenemos datos, así.
+
+UNKNOWN_SPEAKER:
+Perfecto.
+
+Hector Palacios:
+Vale, yo reviso lo de Transactional, lo de Master Data con SAGAR a ver si puede integrarse los campos que en teoría ya conectaron Isabel con Alejandra.
+
+UNKNOWN_SPEAKER:
+Vale, voy a colocar una tarea.
+
+Hector Palacios:
+No, porque se me tildó el Excel. Pero una vez que lo solucione, voy a colocar una tarea de eso también de preventivo.
+
+UNKNOWN_SPEAKER:
+¿Vale? Perfecto. OK. Está bueno.
+
+Hector Palacios:
+Entonces, si necesitan ayuda, si se pierden con el tema de configurar el preventing, el Work Planner, Workspace, cualquier cosa, ahí me avisan y nos juntamos.
+
+UNKNOWN_SPEAKER:
+Perfecto.
+
+Fiamma Giorgi:
+Vale.
+
+UNKNOWN_SPEAKER:
+Para ahora.
+
+Saul Portillo:
+¿Tiene algún punto del lado usted? No.
+
+UNKNOWN_SPEAKER:
+Por ahora no.
+
+Hector Palacios:
+No, creo que no. Basti, algo que querés revisar tú?
+
+UNKNOWN_SPEAKER:
+Eh, no, no.
+
+Bastian Osorio:
+A ver, me queda. Tenemos que, creo que afinar un poquito. Bueno, primero el tema de, pero igual esto, este tema es para supply y el tema de la definición, si es supply planning o forecast base o reorder point. Pero ya lo tenemos enviado.
+
+Hector Palacios:
+Tiene un poco los de demanda porque tienen que saber qué, dónde poner el Pokémon, el para que no estén poniendo el foco en forecastear algo que, por ejemplo, el reward point.
+
+UNKNOWN_SPEAKER:
+Claro. Sí. Sí. OK.
+
+Bastian Osorio:
+Y lo otro, el tema de la determinación del service level. También tenemos que afinar esa definición.
+
+UNKNOWN_SPEAKER:
+Risk score, decís? Sí.
+
+Bastian Osorio:
+Risk score plus service level. O sea, que el service level ya después. Pero sí, risk score. Eso me lo tomo yo.
+
+Hector Palacios:
+Y mañana que estamos con los de KPMG, pidiamos también un poco de ayuda en el tema de order size, porque se veía a Ocuxpo para trabajar el EOQ, pero después para los intermitentes eso no sirve. Entonces yo me he puesto a buscar en hartos lados y la verdad es que no me está yendo muy bien. ¿Por qué no sirve el EOQ para intermitentes? Porque se basa en que la demanda es contínua. Ese es el assumption que tiene por detrás la fórmula.
+
+ El EOQ, ok. La gracia es que tú tenés un trade-off. O podés disminuir la frecuencia o aumentar el volumen. Es como alta frecuencia bajo volumen o baja frecuencia en alto volumen. Uno verso el otro. Bajo uno y el otro sube. Pero en el caso de mando intermitente, la realidad es que los dos tienden a estar por abajo. Que tanto el volumen como la frecuencia son bajos. Entonces el UI no te sirve. Porque no te da ningún balance.
+
+ No te pasa ningún balance ahí. Y fuera de eso es lo que dice la teoría. Entonces no podemos aplicarlo. De hecho, hice algunos ejemplos solo y realmente le ocupa, además de intermitente, puede dar cualquier cosa que no tiene sentido. Valor Schenegger. Entonces ahí, a ver, mañana sí que a los de KPMG le levantamos ese punto y le decimos, mira, esto es una crítica, que generalmente nosotros decimos que esto es un input, pero como ustedes son KPMG, no van a pedir que les entreguemos una solución, ¿no?
+
+ Es lo que nos dijo el otro día Raúl. Entonces ahí a ver si es que nos podemos apoyar de alguien que sepa, que nos puede facilitar eso, no sé.
+
+UNKNOWN_SPEAKER:
+Vale, permiso.
+
+Hector Palacios:
+Entonces si no tienen ningún más Ningún punto más lo dejamos acá, ¿no? Cualquier cosa, si tienen alguna pregunta, Fidel, o de las cosas que te puse ahí, avísenme, ¿vale? Vale, Dani. Vale, buenísimo. Gracias, equipo.
+
+UNKNOWN_SPEAKER:
+Gracias, chicos.
+
+Fiamma Giorgi:
+Gracias, equipo.
+
+Hector Palacios:
+Chau, chau.
+
+Bastian Osorio:
+Chau, chau. Subtítulos realizados por la comunidad de Amara.org Subtítulos por la comunidad de Amara.org Más información www.alimmenta.com
+
