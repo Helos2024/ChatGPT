@@ -1,0 +1,339 @@
+Richard Quinteros:
+¿Te escuchas a kilómetros de distancia, Pablo? Es el micrófono de la máquina, porque la tengo al lado.
+
+Pablo Palacios:
+¿Pero tú usas audífono? Ahora no, no, porque el que usaba un día para el otro ustedes dejaron de escuchar, así que entiendo que el que usaba ahora está roto, entonces voy a comprar otro.
+
+Richard Quinteros:
+Está bien, está bien. Hola, buen día, Tim. Hola, Samir.
+
+UNKNOWN_SPEAKER:
+Buen día.
+
+Jonathan Hernandez:
+Este equipo me ha pedido que se subiera, pero bueno, vamos a empezar con la solicitud del vídeo. Por ahí veo que Pablo ya Es un proceso de entrada, entiendo, ¿no?
+
+Pablo Palacios:
+Sí, proceso de entrada por compras de importación.
+
+Jonathan Hernandez:
+¿Cuánto tiempo te llevó, Pablo, ese video?
+
+UNKNOWN_SPEAKER:
+No, en la mañana.
+
+Pablo Palacios:
+Lo fui haciendo, fui pausando por momentos. Lo bueno que al momento de pausar y reactivar, no se, ¿no? Si se nota en el video, o capaz que si se nota de estar en cambio de pantalla repentino, ¿no? Pero bueno, vos podés pausar y ver, analizar, hacer lo que quieras en el medio y reactivarlo como la continuación del video.
+
+Jonathan Hernandez:
+Ok.
+
+UNKNOWN_SPEAKER:
+Ahí...
+
+Jonathan Hernandez:
+¿Cuánto tiempo nos llevaría a hacer la otra parte? Internos y salidas?
+
+Richard Quinteros:
+Pues bueno, de salida yo lo puedo hacer. Yo tengo varias escenarios ya listos, tengo exportación, tengo ventas de clientes centralizados, de distribuidora. Es un solo proceso de salida o quieren ver, por ejemplo, un picking en dos pasos, quieren ver un picking directo, ¿qué quieren ver en el video?
+
+Jonathan Hernandez:
+Y tal cual como se las anotan en el grupo, es un flujo de entradas, aquí lo tengo, un flujo de producto desde recepción hasta despacho. Tanto no, sin particularidades, sin... Esa cosa incluso me dijo que puede ser en un servidor aparte, por eso le decían el de Go si quieren, nada más que se vea el flujo del servidor, de cómo es, de cuándo se recibe y cuándo sale. Y se acabó. Y unas tomas del dashboard.
+
+
+
+Richard Quinteros:
+Pues yo le puedo hacer uno de salida... Uno de salida de exportación, bastante sencillo, mañana en la mañana. ¿Por qué, Pablo?
+
+Jonathan Hernandez:
+¿Y eso cuánto creación hace el video del chat? Eso lo hago yo rápido, eso lo hago yo rápido.
+
+UNKNOWN_SPEAKER:
+Va, entonces...
+
+Jonathan Hernandez:
+Sigamos la premisa que yo les comentaba ahí ya, Pablo. No audio, no... Nada de ediciones. Grabar pantallas, el flujo y se acabó, no más.
+
+UNKNOWN_SPEAKER:
+Está bien. Y...
+
+Jonathan Hernandez:
+listo, pasando al siguiente punto equipo, temas de avances. Estaba revisando el cronograma y para esta fecha ya deberíamos empezar a trabajar en el script de pruebas integrales.
+
+Richard Quinteros:
+en el script de pruebas integrales o que en los pasos ustedes te refieres como que al armado de paso de lo que ellos tienen que probar, no?
+
+Jonathan Hernandez:
+Bueno, que primero vamos a probar nosotros en conjunto con ellos en integrales y en UATs ellos van a probar solos.
+
+Richard Quinteros:
+Ok, sí, sí. O sea, es empezar a armar el script. Básicamente puede ser sobre el mismo archivo de avances que ya tenemos en línea. Ese tiene una pestaña de una sola pita que te lleva a cada uno de los procesos.
+
+Jonathan Hernandez:
+Lo que sí les pediría, equipo, es utilicemos los formatos que tenemos por metodología. Ahorita les voy a compartir cuál deberíamos utilizar para las pruebas. ¿Ibas a comentar algo, Pablo?
+
+Pablo Palacios:
+Sí, no. ¿Qué esperan de ese script? Porque el paso a paso de los flujos están, de hecho, ¿Qué más esperan? ¿Más que el club o la selección? A mí me parece que si lo que esperan es un pantallazo del paso a paso, prefiero mandarles videos. Porque es prácticamente un panel de capacitación. No, no, no. Eso no es lo que es.
+
+Jonathan Hernandez:
+espera. Les comparto cómo lo manejamos en Go, y algo que estamos empujando mucho este año, y sobre todo yo como responsable, es que utilizamos formatos que tenemos de metodología. Este es el formato que tenemos.
+
+UNKNOWN_SPEAKER:
+Ahí pueden ver mi pantalla. Listo, ahí se ve.
+
+Jonathan Hernandez:
+Este es el formato que tenemos. De pruebas y script. O sea, la idea es poner las fechas de inicio de prueba y aquí abajo empezar a documentar. O sea, aquí dice prueba 1, proceso en tu end, subproceso, y aquí lo que vamos a ir documentando es todo esperado y cuando salgan aprobando, pues ponerlo aquí como status de la prueba aprobado, o en proceso, o no sé, incompleto. Lo que existe aquí es ir documentando todo lo que tengamos que aprobar.
+
+ Entonces, lo que comentan es Es cierto, Richard, lo que ya habían trabajado en el documento de avance, se puede, creo que nada, desadaptarlo y pasarlo para acá. No habría que trabajar más. Y utilizamos este documento para darle seguimiento.
+
+UNKNOWN_SPEAKER:
+Entonces, les voy a pasar este link.
+
+Pablo Palacios:
+OK. Yo eso lo he ido haciendo. Hay que dar algunos escenarios de entrada. De hecho, hoy, le mandé un mail hace un ratito, pidiéndole escenarios de entrada que todavía no han sido testeados. Y de eso yo he ido documentando en un Excel mío, que bueno Samir se lo ha demostrado en algún momento, hace unos días atrás. Imagino que a medio de prueba en ese Excel se tiene que colocar, no sé, el código, el número de documentos generados, cada uno de los pasos, o alguna prueba en ese sentido.
+
+
+
+Jonathan Hernandez:
+O es simplemente poner una estatus y decir prueba ok, o paso aceptado, no sé. Creo que...
+
+UNKNOWN_SPEAKER:
+Pero me quedé pensando.
+
+Jonathan Hernandez:
+Sinceramente, Johnny, no sé qué ganan ellos con esto.
+
+Pablo Palacios:
+No es algo que piden ellos, es algo que estamos pidiendo en Go.
+
+Jonathan Hernandez:
+¿Nosotros en Go? Ok. Para mañana, el objetivo de este documento son dos objetivos. Tener el control de las nuevas que vamos a probar, tener el control del avance de las pruebas, y al final se le entrega a Diana de, oye, aquí están las pruebas, los escenarios que probamos, todos están completados y aceptados. Y la idea es que si después en productivo sale algún escenario que no está aquí, es nuestra defensa, ¿no?
+
+ De, oye, tú no me pediste probar nada más, todo lo que probó salió OK. Cualquier escenario diferente, pues, es un control de cambios porque no se solicitó.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Pablo Palacios:
+En realidad, sí.
+
+Jonathan Hernandez:
+Algún escenario que no esté en el DPD, La idea es, en estos respaldos, todos los señores que debemos probar, vamos a ir dandoles seguimiento para tener también el avance de las pruebas, y ya al final se le entrega al 100% todo, y nosotros ya cumplimos, si tú identificas algo mal, revisamos, pero con control de cambios.
+
+Pablo Palacios:
+Bueno, sí, está bien. Como te decía, yo de mi lado, algunos señores ya los tengo testeados, he ido ajustando. Las cositas que tengo ahora mapeadas para ajustar no son propios de un escenario, sino propios de la solución completa de entrada, que hay que ajustar. O sea, hacen a cualquiera de los escenarios de entrada, así que no es específico de uno. Pero sí, el primer problema, en mi caso, es hacer un pasaje de información entre distintos excerpts.
+
+ Esa es lo que todavía tenemos, dos, tres semanas para trabajarlo.
+
+Jonathan Hernandez:
+O sea, no hay que empezar con ese tema. Pero empezar con eso es lo que quería comentarles, porque en teoría en el plan ya deberíamos empezar a verlo. Entonces, para que no lo pierdan en el radar, yo como segunda prioridad, pero para que lo coincida. Sí.
+
+Richard Quinteros:
+Ahí yo ahorita sobre el archivo de avance, lo que voy a hacer es ir actualizando poco a poco esos y pues ya después al final pues lo que hago es un traspaso, ese documento que tú tienes.
+
+Pablo Palacios:
+¿Dónde está Johnny? Porque ahora lo subiste, pero este chat capaz que después lo guardemos.
+
+Jonathan Hernandez:
+¿En qué parte del SharePoint está puesto? Ese que les compartí es el que tenemos en la carpeta de metodología de Go, entonces vamos a hacer algo. Sí, mandalo a nuestro SharePoint. Sí, lo voy a subir a nuestro SharePoint.
+
+Pablo Palacios:
+Tenemos una carpeta ahí de testing. ¿La de testing? Sí, o yo, no sé, como quieras. Ah, sí, testing, cierto, pruebas integrales.
+
+Jonathan Hernandez:
+No, porque este va a ser para integrales.
+
+Pablo Palacios:
+Ah bueno, claro. Yo el videito que hice lo puse en Testing Unitarias, por si querés ir para atrás y ahí lo ves. Se lo mostró a los chicos, ya aquí estamos.
+
+UNKNOWN_SPEAKER:
+Ahí está puesto.
+
+Jonathan Hernandez:
+Entonces ya está por aquí el equipo. Igual yo ahorita me encargo de poner lo del logo y demás puntos finos. Ustedes les encargo la parte... Crucial que es los escenarios, ¿no? Lo demás es banalidad y eso yo lo hago.
+
+UNKNOWN_SPEAKER:
+Listo, equipo.
+
+Jonathan Hernandez:
+Siguiente punto en la agenda. Sesiones del día de hoy. Richard, ¿cómo estamos para la sesión? Bien, bien, bien.
+
+UNKNOWN_SPEAKER:
+Todo bien.
+
+Richard Quinteros:
+De hecho, no solamente me ha buscado ver lo que le voy a comentar el día de hoy, pero solo para que estemos todos al tanto o estén todos al tanto, mi propuesta sea va a ser que los rangos numéricos de grupos de consolidación se creen automáticamente conforme llegue la entrega con el cliente. Para que ellos no tengan que estar creando grupos de consolidación. Todo lo que se platicó desde el inicio, digamos de que los grupos de consolidación sean personalizados, con que no va a poder ser así.
+
+ La idea es que los grupos de consolidación sean numéricos y asignados internamente por el sistema. Para que ellos se ahorren el trabajo de tener que estar creándolo uno por uno.
+
+Jonathan Hernandez:
+¿Tienes pensado, Richard, cómo abordar la sesión? ¿Podemos tratar de llegarles?
+
+UNKNOWN_SPEAKER:
+Sí, sí, tranquilo.
+
+Richard Quinteros:
+Ustedes no se preocupen. Yo tengo una labia poderosa.
+
+Jonathan Hernandez:
+Aquí es cuando hay que usarla.
+
+Samir Milan:
+El avión solo se usa para mujeres, amigo.
+
+Jonathan Hernandez:
+Temas de avances, equipo. Entradas, Pablo, veo que no se ha movido el porcentaje. Ahí estamos atorados con...
+
+Pablo Palacios:
+No, no lo modifiqué, pero sí, está avanzado. Sí, sí, sí. Lo podría, esta semanita... ¿Cuándo hay que mostrarlo? ¿A finales de semana?
+
+Jonathan Hernandez:
+El viernes.
+
+Pablo Palacios:
+Sí, para finales de semana, después lo modifico.
+
+Jonathan Hernandez:
+Yo nada más le pregunto porque... Va a tener el control es a mí igual de tu lado en momentos internos pero que no llevas en misma situación no está actualizado juego que no esté deteniendo no no actualizado estaba esperando lo de inventario pero ya lo resolví ayer con richard entonces ya en este día lo actualiza perfecto igual que supongo en tu caso no richard entonces no no yo estoy bien ya puse en mi actualización que lo que está al día lo que está ahí
+
+Richard Quinteros:
+es lo que es o sea ya le ya actualicé de hecho cliente centralizado actualicé despacho cliente distribuidora, clientes directos. Sólo que le voy a hacer una pregunta a Diana en la sesión de la tarde 3 30 con respecto a unos procesos ahí que son clientes directos, despacho, contribuciones sociales y donaciones. Voy a hacer unas preguntas de esos procesos al final, porque básicamente no tengo escenarios de prueba.
+
+ Pues entonces, para ver si es que me falta algún escenario, que lo chequen con Florencia, no que me lo pasen. Pero eso, ya yo le puse ahí avance.
+
+Jonathan Hernandez:
+Lo que estaba revisando, y tienen toda la razón ustedes, pero lo que está en ese documento de progreso que trabajaron Samir, Pablo, no, no, los que trabajaron en el documento, pues es básicamente el script de pruebas, ¿no? O sea, vamos a agarrar, o sea, ok, primer día, estoy hablando, a ver. Vamos a empezar con recepción y acomodo del PT hasta, desde APT. Vamos a ir al 1, cuál es el paso 1, qué rápido he trasladado.
+
+
+
+UNKNOWN_SPEAKER:
+Hasta ahí.
+
+Jonathan Hernandez:
+¿Cuál es el resultado esperado de la prueba? General sería de la unidad de transporte del punto de control. Entonces, creo que pasar esto a que les pase sería mucho más fácil. No sé cómo lo ven.
+
+Pablo Palacios:
+Sí, sí. Creo que es lo que íbamos a hacer todos. Sí, creo que sí.
+
+Jonathan Hernandez:
+Mejor. Nada más, lo que sí les pediría, entiendo que esta es la que está en el VP, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Jonathan Hernandez:
+Hagamos un doble check de los pasos, si vemos necesario agregar algún detalle adicional.
+
+Pablo Palacios:
+En mi caso hay un paso invertido que quedó en el VVP de esta forma, así como están viendo acá, pero es al revés. Entre el paso más o menos, el paso 11 y el 12, que está primero en toda la parte del VVP, está primero que se descarga y después se genera el HW. En la práctica es al revés, tienen que generar el HW primero y después la descarga. El flujo operacional lo tengo así. También lo hablé con Iker, me dice que si es así, primero se genera el HV y después se descarga.
+
+ Así que nada, eso cuando se haga la capacitación y se explique, seguramente nos digan, ah, pero el VVP está distinto. Ah, pero el VVP no es una versión final final final, tranquilo. Lo que se puede remar por ese lado es... No, pasa que si lo hace por Handgel, hace las dos cosas juntas, entonces ahí listo.
+
+Richard Quinteros:
+Bueno, es que también todo depende del escenario, ¿no, Pablo? Porque si te mandan H.U. Ya no tienes que crear, solamente recibir, entonces hay que hacer la descarga.
+
+Pablo Palacios:
+Ah, también, también. Así que nada, son vueltas que se le pueden dar a la aplicación, pero en el paso a paso, simplemente, como... Yo más que nada estoy... Por ahora no he traído No he testeado en Hangel, no sé si alguno de ustedes ha llegado a testear algún escenario en Hangel.
+
+Richard Quinteros:
+Por ahora no, bien. Bueno, no he probado entrada en Hangel.
+
+Pablo Palacios:
+No, no, no, sus escenarios.
+
+Richard Quinteros:
+Sí, sí, hemos probado escenarios en Hangel, por ejemplo, salida, inventario interno y funcionar a la perfección. Genial, genial. De hecho, ya existen los recursos. Ahí existen los recursos y demás, entonces ya puedes inclusive hasta trabajar gestionado por sistemas automático.
+
+Pablo Palacios:
+Yo he probado algún paso, pero no un escenario completo de entrada. Lo que voy a hacer seguramente más adelante es un escenario completo de entrada como Javi, para tener las dos versiones y nada más. Pero a ver, para tranquilidad de Johnny, más que nada, si funciona con las transacciones, funciona con Hangels. O sea, no hay forma que no funcione con Hangels si funciona con las transacciones.
+
+Jonathan Hernandez:
+Me ha pasado que no funcione, pero no es por tema de configuración. De la configuración de ustedes, sino de la configuración de la Hantiel.
+
+Pablo Palacios:
+Exacto.
+
+Jonathan Hernandez:
+Sí, de ese lado se me quedó tranquilo. Yo sé que cuando están funcionando en GIF, en la Hantiel, es sin tema. Richard, no han respondido de la nota del viernes.
+
+Richard Quinteros:
+No, no han respondido absolutamente nada.
+
+Jonathan Hernandez:
+Voy a mandar un reminder más para que no se les olvide y lo tengan en mente. Para no dejar pasar más. Como dijimos, no es necesario ahorita, mejor que lo vayan revisando vale vale el otro tema pensando en las fechas de viaje no usted viene y tu constancia de laburar correcto o te la envío a ti no me han enviado nada todavía me recuerdo que mandaste los pasos y dijo que iba a tramitar la constancia como respuesta pero quería consultar contigo si te la mando a ti, si no para de una vez escribirle DNA y que ya la vaya
+
+Richard Quinteros:
+gestionando. No, solamente pues me dio respuesta, eso que respondió fue lo único que dijo, no me la mandaron aparte.
+
+Jonathan Hernandez:
+Entonces me llevo el punto para preguntarle a DNA qué pasó con esa constancia y no sé dónde vaya a pasar.
+
+Richard Quinteros:
+¿Y cuándo es que es la fecha más o menos de viaje John, que no recuerdo bien? Para el 10 de febrero. Ok.
+
+Pablo Palacios:
+Es de febrero, no era la tardía de febrero que había mitad de semana, no, yo no. ¿Tomamos días de febrero o cada lunes? Lunes. ¿No habíamos dicho después del...
+
+Jonathan Hernandez:
+no era el 17, habíamos dicho el 17?
+
+Pablo Palacios:
+No, seguro que tengo el 10. Bueno. No sé en dónde habrá quedado en las reuniones con nosotros, era el 17 este día o porque no tengo muy fijo la fecha. Lo tengo clarísimo. Porque el 13 de febrero es mi cumpleaños, cumplo 40 años y esa semana no me muevo de Argentina. El festejo del 40 ya estoy armando el festejo. Por eso te digo, y de las reuniones de diciembre que hemos tenido, yo tenía clarísimo que lo más probable era el 17 de febrero.
+
+
+
+Jonathan Hernandez:
+Primero, fechas que tenemos planeadas, y además sabemos que no va a ser la definitiva, ¿no? Podemos, se puede...
+
+Pablo Palacios:
+Claro, ya sé, ya sé.
+
+Jonathan Hernandez:
+Pero bueno, está bueno que haya salido el tema ahora. Sí, no te preocupes.
+
+Pablo Palacios:
+Yo me lo metí aquí para revisar y no dejarlo pasar. 13 de febrero, mi cumpleaños, me pueden mandar el regalito. No, mentira. Pero bueno, sí. Lo celebramos una semana, unos días después, allá. Ah, claro. Por eso. 40 años no se cumplen por los días.
+
+Jonathan Hernandez:
+En mi caso este año son 30, así que también tiene una buena celebración. Bien.
+
+UNKNOWN_SPEAKER:
+Totalmente.
+
+Jonathan Hernandez:
+Cambio de década. Es correcto. Cualquier tema. Una cosita.
+
+Pablo Palacios:
+Aprovecho que estamos acá más que nada para Richard. Bueno, y Sammy también. Richard, voy a configurar lo que es la estrategia de entrada para Reserva y Reserva 2. O sea, exportación. Lo voy a poner en... Bloque si después encontramos algo distinto lo ponemos en palet pero yo creo que por lo que he visto de que te permite hacer la configuración en bloque te permite indicar que entran dos palets horizontales en profundidad y eso no lo tiene en palet nada necesario hacerlo uno de los dos es necesario porque eso no va a delimitar la capacidad.
+
+
+
+Richard Quinteros:
+Y lo testeamos, al final vemos cómo se comporta, el cliente también lo ve, y al final pues bueno, ellos toman la decisión al final, no? Es una parametricación que se hace a nivel tipo almacén, y pues de repente un poquito ahí el tema de parametricar las capacidades, pero al final pues nada, lo único que tienen que considerar es que por ejemplo para ese caso, como son generalidades en el tipo almacén vas a tener que vaciar todo lo de reserva y reserva de exportación, vaciarlos totalmente, se tiene que vaciar, de repente con un ADGI, no lo hagas todavía, déjame por lo menos el escenario.
+
+
+
+Pablo Palacios:
+Déjame ver, ojo, hay algunas a nivel de tipo de almacén que no es necesaria, yo no sé si esta va a ser necesaria, porque no está relevante como si fuera gestión de HU o gestión de un HU.
+
+Richard Quinteros:
+Ya, lo que pasa es que eso le cambia el comportamiento al tipo de almacén, entonces como le cambia el comportamiento cuando es el paleo bloque, pues sí creo que va a ser necesario, porque por ejemplo esto que ella vive en la ubicación, cuando tú almacenas en una ubicación de bloque, él hace una partición de la ubicación, como un medio.
+
+Pablo Palacios:
+Entonces ya eso hoy día, con el inventario que existe, no existe, no hay una partición. Este control de capacidad, al menos en WM, pero este control de capacidad por bloque, después no te tira el porcentaje en la ubicación de si tú está al 50% o al 100%, no es el control de capacidad de que el botón a nivel de tipo almacén donde vos indicas una estrategia de control de capacidad. Este control de capacidad por bloque va por otro lado, no te tira el porcentaje, no vas a ver en la ubicación que está al 50% o al 100%, no funciona de esa forma.
+
+
+
+Richard Quinteros:
+Un favorcito, ¿será que la podemos hacer mañana esa? O sea, ¿la puedes hacer mañana, es que por ejemplo hoy estoy haciendo unas pruebas y también el tema del grupo de consolación, entonces si hacemos eso ahorita pues de repente me impacta en las pruebas y pues bueno, nada más
+
+Pablo Palacios:
+para decir. Dale, dale. Igual, viste que el ambiente de los cintos está abierto, no sé si lo han notado. No está tan bueno, pero bueno, capaz que me sirve. Yo he probado a hacer en el 200 y si en el 200 hay datos de querer grabar y no dejármelo, me va a tirar el error a él mismo. Así que lo que voy a hacer es eso, probar grabarlo en el 200. Si me dice que está todo ok, justamente es que no te hace la validación por ubicaciones y funciona.
+
+ Deja continuar. Así que nada, voy a hacer eso en el 200. Si no me tira ningún error, listo. Si me tira error, bueno, habrá que vaciar todas las ubicaciones del RES y bueno, es un dolor de cabeza. Nada, se hace rápido, yo te ayudo. Dale, sí, sí, hay que ir tratando, sí. Pero bueno, nada, eso lo veo, lo veo hoy a la tarde, a la tarde mía. Dale, pa. Vos seguís con lo tuyo, si veo que me trago en eso, te lo dejamos para mañana.
+
+
+
+Richard Quinteros:
+Dale, pa. Siga.
+
