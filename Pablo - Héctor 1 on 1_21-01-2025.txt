@@ -1,0 +1,576 @@
+Pablo Lopez:
+Bueno, me queda la presentación Powerpoint y prepararme un poco, porque es de una hora se supone, entonces para ir...
+
+Hector Palacios:
+Dale con la presentación, crea una bonita, como tu hiciste la mejor presentación que vi al menos de la entrevista, así que algo similar.
+
+Pablo Lopez:
+Sí, sí, eso tenía pensado, o sea, tenía pensado trabajármelo bien y eso.
+
+UNKNOWN_SPEAKER:
+Impresionante.
+
+Hector Palacios:
+Exacto, el trabajo del consultor. Y nada, esto es, por ejemplo, la parte de demanda.
+
+Pablo Lopez:
+Aquí tengo lo de los outliers, la corrección esta de los valores nulos.
+
+Hector Palacios:
+Veo un par de correcciones, está bueno.
+
+UNKNOWN_SPEAKER:
+El forecast aquí.
+
+Pablo Lopez:
+Se ve al nivel también, está bien.
+
+Hector Palacios:
+Luego el tema de colaboración, que he hecho a dos niveles.
+
+Pablo Lopez:
+Aquí he hecho un par de ejemplos.
+
+Hector Palacios:
+Perfecto.
+
+Pablo Lopez:
+Y luego aquí el Copy Operator para pasarlo a lo que es Story.
+
+Hector Palacios:
+Ahí lo que puede hacer como para el tema de colaboración, para darle un poco más de ejemplo, deja como ajuste de Demand Planner y ajuste de Demand Manager, en vez de primera y segunda. Para que quede claro que primero lo hizo un ajuste de alguien en el Planner, es que revisó los números el que revisa y ese dio el visto bueno. Vale.
+
+UNKNOWN_SPEAKER:
+Sí, puedo hacerle.
+
+Pablo Lopez:
+Y esto es el supply.
+
+Hector Palacios:
+En el caso de Marships, ahí lo que podría hacer muy rápido es crear un keyfield de fulfillment. Tiene que haber ahí. O un local member, quizás. No es tan complicado. Mira, te enseño rápido. Vea donde dice... Déjame ver... Settings. Abre a la derecha. Eso es lo último icono que hay. Abre la flecha. Options. Siempre me confundo con el sus3. A la derecha dice Local Members y haz clic en Activate Local Member Recognition y dale OK.
+
+ Vale, ahora después de la tercera línea, ábrete una línea en blanco después de Customer Receipts. Ábrete una fila en blanco.
+
+UNKNOWN_SPEAKER:
+¿Cómo se va a hacer? Sí.
+
+Hector Palacios:
+Y ahí elige un nombre tipo fulfillment rate, como la tasa de cumplimiento, fulfillment rate, y crea una fórmula que va a tener que quitar el tema del cero obviamente para que no haga divisiones por cero pero debería ser el customer receipts dividido el consensus demand entonces coloca en una fórmula excel simplemente y el consenso demand el 95 en este caso vas a tener que corregir la fórmula no sé qué le pasa y por qué No te la tomo
+
+UNKNOWN_SPEAKER:
+todas, pero...
+
+Hector Palacios:
+No, no, no. Solamente corrija las fórmulas, porque ya sí creo. Quizás por el nombre tiene el Excel en español para las fórmulas. Si lo tiene en español o no.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Pablo Lopez:
+Pero...
+
+Hector Palacios:
+el 88 en este caso, hazle click al 88, hazle click primero al que tiene que salir el paréntesis, Si el 88 es mayor que 0, entonces coloca que sea la división de CASUMERCYPES dividido con CESUMAN, de lo contrario que sea vacío o 0, vacío mejor.
+
+Hector Palacios:
+tiene que ser el futuro que está arriba el que está abajo el 88 ese dividido el 88 y ahora la segunda opción si es falso déjalo doble comilla comilla eso. Mira, kickstraining no funciona. Ah, ha desaparecido. Sí, algo le pasó. A ver, déjame... Ah, no, te puedo pedir controlar pantalla, kickstraining.
+
+Pablo Lopez:
+¿O a lo mejor se cree un key figure del Fiori?
+
+Hector Palacios:
+También puede ser. Lo que pasa es que el local member generalmente te funciona para hacerlo más rápido, pero si te sale más rápido el Fiori, está bien. La verdad es que ese key figure te lo diga de una forma más intuitiva para la persona, porque él va a ver un número y si no lo ve detenidamente, no va a entender la magnitud Pero si tú colocas un Full Frame Rate y te hizo 80%, 100%, 20%, claramente se va a ver cuándo no está cumpliendo.
+
+ Y de hecho, se puede jugar con los colores, colocar como estos formatos que cuando esté bien cercano al 0, que aparezca bien rojo, o sea, que esté cercano al 100%, que esté en verde, algo así. Se ve visualmente bastante bien y te hizo un Vale. Vale, ¿qué más? Vale. A ver, es que esto realmente no lo he terminado.
+
+Pablo Lopez:
+O sea, me falta perfeccionarlo para ver qué figuras pongo y eso. Realmente he puesto estos.
+
+Hector Palacios:
+Haz clic en otra hoja para que aparezca esa barra en No sé por qué está pasando últimamente. Y ahora, cuando te devuelvas, va a desaparecer. Depende del demand, el demand. La demanda neta es la demanda de todos lados. Si es demanda dependiente que viene de otra planta o si viene directamente del cliente. Yo creo que aquí más es como hacerle sentido a los casos. Si tienes, por ejemplo, un caso en donde haya demanda de una planta y además de un cliente directamente, ahí quizás sería bueno mostrar el net demand y decir que ahí está consoleando la demanda.
+
+ ¿Eso se entiende bien o no, eso de demanda dependiente, independiente, net demand? Ahora mismo me perdí un poco. Vale. La demanda independiente es la demanda que viene directamente al cliente. ¿Vale? La demanda dependiente es la demanda que viene de otra planta. Esa otra planta tiene demanda directa al cliente, pero se propaga hacia arriba de la cadena suministra. Entonces, ¿tienes por ahí el ejemplo este del Gotabertz, el que te dieron donde aparece la relojística?
+
+
+
+Pablo Lopez:
+¿El denunciado?
+
+UNKNOWN_SPEAKER:
+Sí, el denunciado.
+
+Hector Palacios:
+Ahí, por ejemplo, el Customer 1 se almacena desde la planta 1 y del centro de distribución 2, ¿verdad? Quiere decir que, mira, ponte en la perspectiva de la planta 1. Esa planta 1 está satisfaciendo al DC2, al centro de distribución 2, y directamente a un cliente también, Customer 1. Quiere decir que, entonces, la demanda que viene de Customer 1 es la demanda independiente. En cambio, la demanda que viene del DC2 es demanda dependiente, porque se está satisfaciendo la demanda de todos los clientes que se consolían en esa planta y después le demandan a la, perdón, que se consolían en ese centro de distribución, DC2, y luego en la planta 1 parte de eso se Se abastece, ¿no?
+
+ Entonces, eso es lo que se llama demanda dependiente. Porque esa demanda que viene de los clientes empieza a viajar a través de la cadena de suministro hacia arriba, agua arriba le llamamos. Y esa que está entre ubicaciones, generalmente demanda dependiente. Si es que es entre una ubicación y un cliente, es independiente.
+
+UNKNOWN_SPEAKER:
+Y si es que es entre ubicaciones, es dependiente.
+
+Hector Palacios:
+¿Hace sentido? Sí. Básicamente, la dependiente es la más común. Es simplemente la demanda propagada. La independiente es la que está de cara al cliente. Entonces, si vas, busca la planta 1, por ejemplo. Y para ese producto. ¿Cuál era la demanda del cliente en este caso? Customer 1, 95. Vale, esa es la demanda de 95. Perfecto. Entonces, cuando vamos a la planta 1, tiene esa demanda de 95, pero dice dependiente.
+
+ Y después se suma con Por eso es que es dependiente, porque esa demanda viene de otra planta. Depende en demand. Déjame ver, SXFigure, ¿qué nivel está? Dame un segundo.
+
+Hector Palacios:
+No, ese nivel está a nivel de planta. Depende en lo que he hecho en demand. Siempre hay muchos key figures en Supply Planning que son consolidaciones. Pero hay otros key figures que te dan un poco más de información, que te muestran lo mismo, pero con más detalle. Hay uno que se llama Dependent Customer Demand y otro que se llama Dependent Location Demand. ¿Puedes traerlos esos dos? Si quieres, créate una copia para que no estropees.
+
+ Es tu vista. Este es simplemente para que analicemos los dos. Depende en Customer Demand y depende de lo que he dicho en Demand.
+
+Pablo Lopez:
+Eso te da más información. Ahí está. Ahí está. Es que me había perdido.
+
+Hector Palacios:
+Entonces, mira, si ves la parte, depende en custom. Demand probablemente esa se como se llama es igual a la demanda que tenía del cliente 1 si va a la vista de donde tenía la demanda el customer source pero en el caso del consenso human 95 95 67 67 y en la que creaste es casi hay un 81 pero hay pero probablemente el 81 Sí. Lo que pasa es que el 81 probablemente no fue capaz de satisfacerlo, ¿verdad?
+
+ Si nos vamos a la vista de la demanda, ¿fue capaz de entregar 81? Sí. Tiene que ser igual al de abajo, no al de arriba. El de arriba es lo que se quería, pero el de abajo es lo que se pudo. Entonces, todos los key fears que van a estar del lado supply planning, fuera del que es la necesidad, el customer demand, todos van a estar alineados a ese número, porque ese fue el número actible. Entonces por eso que ahí te aparece el 81, porque eso está llamando a eso de ahí en realidad.
+
+ Vale, volvamos a la lista para seguir revisando ese número. Entonces de esos 81 y eran 189 que venían de otra planta.
+
+Hector Palacios:
+Depende del location. Tráete un atributo que se llama chip2. Chip2 location. Sí, así se llama, creo. ¿En este mismo?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Ahí está. Y eso debería decirte que eso realmente lo estamos transportando a la otra planta, el DC2. Ahí está, planta 1. Fíjate que el Transport Supply está moviendo esos 189 hacia allá. Hacia esa planta, desde la planta 1 hacia la DC2. Y ese número 189 está totalmente cuadrado en el dependen lo que he hecho.
+
+Pablo Lopez:
+¿Y por qué en algunos pone non?
+
+UNKNOWN_SPEAKER:
+¿Cuál, por ejemplo?
+
+Hector Palacios:
+Ah, es porque esos key fears no están definidos a ese nivel. El dependent demand está solamente a nivel de producto y planta. El net demand también. Por eso te decía, hay muchos key fears son de consolidación, que te vas a dar cuenta. Esto, imagínate que son como la arista, las reglas logísticas son la arista y los nodos, ¿verdad? Figura de la arista y los vértices. Entonces, básicamente, muchos QIFIER son aristas, por decirlo de alguna forma, y otros son centrados en el nodo.
+
+ Entonces, cuando tú quieres ver información, por ejemplo, relacionada a inventario, o toda la demanda que tengo desde este centro de distribución, la demanda total, o todo el suministro que tengo hacia este centro, o sea, hacia esa ubicación, son QIFIER que son centrado en el nodo. ¿Vale? No tienen mucha información de dónde viene, hacia dónde va. No traen eso, sino que te dicen los totales. Así, cuánto llegó, cuánto se fue y cuánto hay.
+
+ Entonces, ahí va a haber Key Figure como el, ese que se llama Dependent Demand, Demand Supply, Receipts, Stock Projection. Todos esos Key Figures van a estar a nivel de planta y material o Product Location. ¿Vale? Y después hay otros que sí te dicen específicamente cuánto se mueve, de dónde hacia dónde. Y esos son los que están, los que se llaman como Lane Keeper. Tiene otro nombre, la verdad, pero están centrados en el camino que conectan los dos.
+
+ En el, ¿cómo se llama? ¿Cuál es el mejor nombre para decir en español esto? Lane.
+
+Pablo Lopez:
+Transportation lane. Sí, como camino, ¿no?
+
+Hector Palacios:
+Sí. Líneas de transporte. Sí.
+
+Pablo Lopez:
+Y en general, ¿cómo me recomiendas qué key figures debería poner? Porque sí, es cierto que hay muchos y muy distintos entre ellos.
+
+Hector Palacios:
+Estaba hablando, Bastián. Me quería llamar a una sesión plebiscitaria contigo. Generalmente, cuando son vistas de inventario, está bien dejarlo a nivel de todo lo que entra, todo lo que se va, etcétera. Cuando quiere decir estos son los transportes, porque al final, estos key figures te van a mostrar cuál es el plan de producción, el plan de distribución y el plan de compra. Cuando hablamos de plan de distribución, si nos interesa saber de dónde se va, desde dónde hacia dónde va.
+
+ Cuando hablamos de plan de compra, también, desde dónde se compra, desde qué proveedor y hacia qué, no sé, hacia qué planta va a llegar el material y así. Entonces para este, a ver, este no sé si es el master schedule, yo le llamaría a esto...
+
+Pablo Lopez:
+¿Este primero o este segundo?
+
+Hector Palacios:
+Dejo este segundo, ¿no? No, no, el segundo era para analizar, no. El primero Este, para mí, sería, yo me traería el key figure de proyección de inventario. ¿Tiene alguna vista donde vea la proyección de inventario acá? Sí, ese es el que está faltando.
+
+Hector Palacios:
+Sí.
+
+UNKNOWN_SPEAKER:
+Está vacío siempre. Algo le pasó entonces. Revisa la configuración de SIGIFIG.
+
+Hector Palacios:
+Por alguna razón se apagó. Hay que entender qué le pasó. Va a tener que ir al Fiori. ... Nada, a la parte web.
+
+Pablo Lopez:
+Porque pone que es un output del supply, ¿no?
+
+UNKNOWN_SPEAKER:
+O sea, no se debería haber calculado solo...
+
+Hector Palacios:
+Revisándolo... Sí, generalmente los problemas que tiene esto es que a veces se desconecta eso de Input Output Supply Planning, se desconecta. Pero en este caso no. No sé, a ver. ¿Tiene el train area de AdNod por ahí? Para que revise el mismo Xphere y para, porque ahí sí funciona. Entonces, para que comparemos una con una y veamos si que hay algo que es evidente. Tiene muchas cosas distintas. Pero lo de abajo son cálculos mensuales.
+
+ No importa lo de abajo, son cálculos adicionales, simplemente. O sea, lo de arriba lo tiene igual.
+
+Hector Palacios:
+Ejecuta nuevamente el optimizador. Para que veamos qué puede ser.
+
+Pablo Lopez:
+Ah, ¿y el viernes iré a la oficina? Sí, seguro que sí. Yo también, que es lo del All Hands, el kick-off, dijeron.
+
+Hector Palacios:
+Vale, buenísimo.
+
+Hector Palacios:
+creo que César había reservado una sesión, una reunión y todo, perdón, una sala de reuniones.
+
+Pablo Lopez:
+¿A la que había en la entrada?
+
+Hector Palacios:
+No lo sé la verdad, pero me llegó una invitación de que estaba reservada. Hay que darte una tarjeta Ahora puede que nos falte señalar si se almacena o no. Pero normalmente por defecto asume que todo se almacena. ¿Eso dónde?
+
+Pablo Lopez:
+En el Fiori.
+
+Hector Palacios:
+En uno de los datos maestros, de hecho. Inventory policy, algo así. Hoarding policy. No recuerdo porque hay uno que es para inventar y otro para supply, pero si lo veo, no sé cuál es. ¿Cierra?
+
+Hector Palacios:
+Igual hay que revisar los demás. Mira, esto, la planta 1, claro, la planta 1 si debería tener una proyección de stock. El tema es que está siendo cero, eso es lo que veo. No es que el KFIR no se calcule, es que no está almacenando nada. Básicamente lo que entra se va. Eso es lo que estoy viendo, a ver.
+
+Pablo Lopez:
+¿Y antes daba tanto?
+
+Pablo Lopez:
+No, antes no daba tanto.
+
+UNKNOWN_SPEAKER:
+Ah, vale, es que murió abajo.
+
+Hector Palacios:
+Sí, no, es que abajo se empieza a acumular de todos lados, ¿no?
+
+Pablo Lopez:
+Sí, claro, cuando va el supply, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Y son materiales robóticos también, robomativas. Puedo entrar en la tabla que se llama Location Product? Debería haber por ahí un Key Field, o sea, un atributo que se llama Holding Policy.
+
+Hector Palacios:
+Y me entró el hijo de policieta.
+
+UNKNOWN_SPEAKER:
+¿Y qué tengo que poner? Es que por defecto debería ser cero una vez.
+
+Hector Palacios:
+Te voy a echar a buscar en Material Supply. Te voy a echar a buscar. ¿Te acuerdas que te pasó una vez un bot de Supply Learning? Quizá ahí debería aparecer el Learning.
+
+Hector Palacios:
+Dice que por defecto es almacenable, pero es cero. Igual mete un cero ahí por si acaso. En todos sus valores. ¿En todos? ¿En todos los? Ah no, espérate, no, en el supplier no. Porque ahí es solamente donde se va a almacenar. Que serían las plantas. Y en el centro de cruce. Te recomiendo algo, mira, anda a la parte de Master Data, para que sea más fácil. Master Data, hazle clic al cuadrado ese del Master Data Workbook, al cubo, perdón.
+
+ Para cambiarle los filtros. ¿Sabes qué? Sí, no pasa nada. Y en Atributos, filtro al que quieres ver. Pero en la pestaña de al lado, la de arriba, de filtro. En la barra del medio, donde aparece General, Atributos, Filtro, a la derecha. Más, más. Saliendo de ese panel, de hecho. Ahí, al medio. La barra que está entre los dos paneles.
+
+UNKNOWN_SPEAKER:
+Eso. En atributo, el segundo.
+
+Hector Palacios:
+Ahí quita todos los atributos y deja solamente el Honda y Policía, para que sea más fácil. Es más fácil ahí donde dice Available Attributes, eso.
+
+UNKNOWN_SPEAKER:
+Exacto.
+
+Pablo Lopez:
+Subtítulos realizados por la comunidad de Amara.org Ahora lo intenta nuevo.
+
+Hector Palacios:
+Igual no va a pasar. ¿Qué es lo que está haciendo?
+
+UNKNOWN_SPEAKER:
+¿Está entregando?
+
+Pablo Lopez:
+¿Definiste los costos acá? No.
+
+Hector Palacios:
+O sea, no aparece costos aquí. Algo tiene que existir. Subtítulos realizados por la comunidad de Amara.org Le dice la POM, te habla de los recursos. Efectivamente no hay ningún costo y quizás por eso el optimizador a comportar un poco extraño. No hay ningún tamaño del hotel, outsize, algo así?
+
+UNKNOWN_SPEAKER:
+No.
+
+Pablo Lopez:
+Mira, este es el optimizador que estoy aplicando y no... Dónde era? No le metí costes ni nada.
+
+Hector Palacios:
+Sí, que lo que está haciendo es ser bastante lean, como bastante puro, no almacena stock nada, menos que le digan.
+
+Pablo Lopez:
+¿No te dieron ningún inventario de seguridad tampoco por el estilo o algo así? No, no, o sea, lo único que mandamos es esto. Sí, por eso hay proyectos de la JV que son más difíciles que los ¿Tienen recursos de almacenamiento en DC1 por 1000 pallets?
+
+Hector Palacios:
+¿Planta 1 y 2 por 500 pallets? ¿Eso lo configuraste? ¿Todavía no está?
+
+Pablo Lopez:
+Eso sí, eso está. Tiene que estar aquí.
+
+Pablo Lopez:
+¿Esto se ve aquí? No me acuerdo dónde estaba.
+
+Hector Palacios:
+Pero lo metí. Mira aquí. Ahí dice el location. ¿Cuál es el recurso? Resource 1, 2. Pero eso, ampliación de planta. Resource plant 2. El último que dejaste era como el recurso.
+
+UNKNOWN_SPEAKER:
+¿Qué es cada uno?
+
+Pablo Lopez:
+Ahora mismo no recuerdo. A ver, que lo tenía apuntado.
+
+UNKNOWN_SPEAKER:
+A ver, voy a mirar.
+
+Hector Palacios:
+Te dice del resource type, al final te dice que es cada cosa.
+
+UNKNOWN_SPEAKER:
+Espera, uno almacenamiento y cero producción.
+
+Hector Palacios:
+Uno almacenamiento y el otro es de producción. Sí. Vale, perfecto. Bueno, sí. Y se revisa. Eso tienes que mostrarlo de alguna forma también. Ahí tiene que haber una vista. ¿Dónde? En la presentación PowerPoint. Un segundo.
+
+Hector Palacios:
+¿Tiene alguna lista entre las que definiste donde se vea el consumo de recursos? Específicamente el recurso de producción es el que, bueno, el de almacenamiento igual, ¿no? Porque ahí tienes tú el capacity supply y después tiene que haber un key field que te diga el capacity consumption.
+
+UNKNOWN_SPEAKER:
+No, no tengo. Vale, vas a tener que crearte algo por el estilo.
+
+Hector Palacios:
+Déjame ver si es que yo creo alguna vez alguna vista. Esto.
+
+Hector Palacios:
+Mirá, por ahí encontré algo de una vista que había creado de Yeti en ese momento. Me acuerdo que algo teníamos de... Esta te la puedo pasar para que te llegue alguna idea. Sí, por ejemplo, está el tema del fulfillment. Fulfillment son los mismos keyfigures, solamente les cambiamos un poco el nombre para acomodarlo a lo que el cliente está acostumbrado. Pero aquí está, por ejemplo, el keyfigure de Fulfillment, que sería simplemente uno sobre el otro, ignorando los casos en donde uno sea vacío, porque si no te va a dar una división por cero.
+
+ Aquí lo que pasó. Es que se entregó demanda de forma muy tardía. Eso es lo único extraño. 49. Perfecto. Pero esa es una. Siempre. Me gustaba verlo de esta forma porque hacia la izquierda iba viendo, esta es la cadena de suministro, ¿no? Entonces por acá está la perspectiva del cliente y después ver cuánto es lo que realmente Pasó que por lipchain acá no se podía abastecer, o por capacidades, lo que fuera.
+
+ Entonces pasaba esto. Y al principio era como con lo que tuviera, hacía lo que podía y después de cierto momento en adelante podía planificar y se aparecía en tu percentage. Luego, esta es la Inventory que tenía. Y el siguiente es por Product Location, está Dependent Demand, esto con HAN, OpenPO, Esa, ignórala. Esa también. Estos son básicamente los transportation supply que tienen. Transportation supply y eso deberían estar más que.
+
+ Esta es el coverage. ¿Cuánto periodo de demanda? Básicamente añádele a la que tiene el proyecto de stock y ya está bien.
+
+Pablo Lopez:
+Esa en el que tenía yo que se llamaba más Sí.
+
+Hector Palacios:
+Sí. Llámale Inventory Projection o algo así, Stock Projection. Algo por el estilo, porque es para revisar básicamente el balance inventario. O Stock Balance. Es también un buen nombre. Y después hay vistas que son bastante más sencillas.
+
+Pablo Lopez:
+O sea, llamo Stock Balance a Projected Stock.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+¿Qué estaba haciendo acá? No recuerdo.
+
+Pablo Lopez:
+Y entonces al final que... Es que hay condiciones.
+
+Hector Palacios:
+Por ejemplo, en este caso le habíamos pedido que apareciera algo en el proyecto de stock, o sea, que hubieran 14 días de inventario, si no me equivoco. Entonces por eso el algoritmo se ve obligado a hacerlo. ¿Ejecuta el algoritmo? Terminamos de ver esto y después veamos cómo hacer el tema del stock. Estos stocks de transfer son estos key fields de transfer receipts. Le cambiamos nombre por additional PO, project PO, porque es como lo que ellos manejan más.
+
+ Pero es básicamente eso, es como el transfer receipts. Entonces, hay algunas que vienen directamente entre plantas. Tú lo puedes saber porque hay, debería haber un filtro, ¿no? Que esta vista, obviamente, está conectada a su sistema. Entonces, puede que nada funcione acá. Sí, nada funciona. Pero hay un filtro para identificar cuáles locations son las de origen, cuáles son vendors y cuáles son plantas normales.
+
+ El location type. Entonces, es básicamente el mismo GIF que si Transport supply y transport receipt, que son equivalentes. Uno de la perspectiva del supply y el otro de quien recibe. O sea, ambas sirven. Una te dice cuándo va a llegar y la otra te dice cuándo se tiene que pedir. Entonces, por ejemplo, esta es importante cuando tienes como compras. Te va a aparecer aquí el vendedor. Vendor 1, por ejemplo.
+
+ Y acá Location 1. Y va a aparecer Material 1. Y la fecha en donde se tiene que, básicamente, mover. Entonces, yo crearía una vista donde sale como Vendor, como External Procurement. Como esta acá, realmente, Vendor Production, Este de acá. Este es un proveedor. Aparece Location ID, pero este es un proveedor. Aparece con la S, Supply. Esto es lo que se mueve y hacia dónde se mueve. Y aquí tienes que traer solamente el Transportation Supply.
+
+ Básicamente una vista donde se dice todo lo que se mueve de un lado hacia otro. ¿Vale? Ese anólogo, que es Location, Proc, Chip 2 y el Transport Supply. Eso sería vender chip. Pero tienes que asegurarte de filtrar solamente los proveedores, nada más. Luego tiene que haber una de stock transfers, que son las TRs que hablamos mucho en el proyecto, que son las transferencias entre plantas, que sería exactamente la misma vista.
+
+ La única diferencia es que intenta filtrar la ubicación de a una planta, no a un vendedor. De hecho, esperate, en ADNOX tenía una lista de esto. Estoy puro jodiendo porque en ADNOX algo tenemos. No con recursos y cosas así, pero sí teníamos algo chiquito que había hecho en ese momento.
+
+Pablo Lopez:
+Y para hacer el tema de Vendor Shipments, solo pongo Transportation Supply y para Stock Transfer pongo transportation supply y transportation receipt.
+
+Hector Palacios:
+Puedes mostrar los dos porque ambos te dan perspectivas distintas, pero a ver.
+
+UNKNOWN_SPEAKER:
+No, deja solamente uno.
+
+Hector Palacios:
+No, no es para tanto, no es importante. Dependiendo del cliente, dependiendo de la vista, dependiendo del cliente, le va a interesar saber cuándo llega o cuándo se manda, ¿no? Entonces, dependiendo del caso, va a ser uno u otro. Tenemos supply. Fastmover, advanced breakdown. No sé cuánto de esto ande porque puede que parte de la data la hayan borrado, qué sé yo. Entonces, a ver, aquí la había estructurado de esta forma.
+
+ Primero tenía el demand forecast. Esa ya la tienes tú, no tienes que adaptarla a esto. Demand forecast. Y después está la diferencia que teníamos un safety stock, entonces por eso que se generaba como un mínimo esa cantidad. Y luego teníamos la parte de stock balance, que está el stock on hand, los receipts, supply, este ignóralo porque es muy dmr, el safety stock y el project stock, entonces ahí te generaba número.
+
+ Y luego lo que te decía del Stock transfer, pérate, ese es el detalle. Ignóralo. Proposed transport sheets. Eso en realidad el transport supply puede ser. Y el purchase plan también es lo mismo. Yo en este caso usé los sheets. No recuerdo por qué, pero tú puedes usar el supply. Lo único que filtra los vendedores y acá filtra las plantas. Interno. Fíjate que aquí el Purchase Plan está por vendedor y el Stock Transfer está entre plantas.
+
+
+
+Pablo Lopez:
+Al final todo es mostrar lo que ocurre en todo momento.
+
+Hector Palacios:
+Exacto, esa es la veracidad. Y acá está el caso Fulfilment Rate que te decía. Y bueno, aquí si nos falta mucho de lo de producción. De producciones es que estaba aquí. Aquí estaba component usage, lo que tenías tú recién. Component procurement. Todo lo que me alienta es a la iglesia. Subtítulos realizados por la comunidad de Amara.org Aquí está el Available Capacity, que sería el Capacity Supply. Consume Capacity, que sería este de acá.
+
+ Este es el que tiene que ser la capacidad consumida de producción. Donde aparezcan estos dos, básicamente. Puedes crear luego esto de acá. El otro es Utilization. Parece que ya también está ese Key Figure Utilization. Esto te dice cuál es el capacity. Sí, porque los otros son Key Figures. Uno te dice cuál es la capacidad, el otro dice cuánto se consume y el otro te dice el porcentaje. Muy parecido a lo de la perspectiva de demanda, cuánto es lo que se pidió, cuánto es lo que se entregó y cuánto es lo que se Básicamente eso, pero con producción, ¿no?
+
+ Cuánto es lo que se pidió, pero cuánto es lo que tenía. Aquí, al contrario, cuando está al 100%, ¿por qué está en rojo? Bueno, en realidad, en tema de recursos de producción, si está muy bajo la capacidad utilizada o si está al 100%, ambos son como valor al rojo. Porque si está una máquina, la estoy utilizando al 70%, significa que estoy perdiendo tiempo esa máquina. Podría usarla más y no la estoy usando.
+
+ Hay unos niveles que son como entre 80, 100%, que se consideran como saludables. Más allá del 100, obviamente, no puede ir porque ese es el máximo. Pero si está abajo del 80, 70, es como que está subutilizada y esa es pérdida de plata. Es como un costo de oportunidad, básicamente. Entonces, eso tendría que ser para el consumo capacidad de producción. Revisa también para la capacidad de almacenaje, que debería ser una similar a esta.
+
+ Lo busco de una vez. Pero tiene que ser muy similar. ¿Por qué no filtra casi nada? Qué extraño. Ah, mira. Claro, claro, claro, claro. Este es el de producción. Aquí se dice recurso, resource, location, source. Todo lo que dice source, la SRS, SRC, eso está relacionado a recursos de producción. Source es como el de la bomba. Viene ahí. Este de transporte. Location from resource. ¿Y dónde, carajo, está el otro?
+
+ Acá está. Week, resource, location, producto. Este es el que te interesa. El que no tiene ningún apellido. El que tenía la P adelante es para producción y este de acá es para para la planta, para el almacenamiento. Y creo que de almacenamiento todos son con Capacity Supply. Y acá está el Capacity Utilization. Y tiene que haber otro que se llama B Utilization.
+
+UNKNOWN_SPEAKER:
+No, este parece que es global.
+
+Hector Palacios:
+Es que te va a decir el capacity utilization independiente del tipo de recurso. A ver. Claro. Vale. Solamente el de consumo varía, pero tanto el de suministro, el capacity supply, como el porcentaje también es independiente del tipo de recurso. Solamente el keyfigure del consumo. Si es consumo de producción va a ser distinto que si es consumo de almacenamiento. Entonces eso habría que crear. Eso de momento ahí.
+
+ Intento trabajar mañana. Y re-simular nuevamente la tarde. ¿Y qué más? ¿Puedo compartir nuevamente? Sí.
+
+Pablo Lopez:
+El tema del proyecto Stock, al final lo dejamos así en blanco, por el tema de que no hay costos y de que no hemos dicho nada, de que almacene.
+
+Hector Palacios:
+¿Preferiría a alguien? ¿Incluso inventaron algo?
+
+Hector Palacios:
+Capacity Utilization. Ahí te mandé como las 4 vistas que tienes que trabajar. Uno es la capacidad, la utilización de la producción, del recurso de almacenamiento. El plan de compra o procurement plan, y el otro es stock transfer plan, que es el plan de tal lado, que son los que FIAT que te decía que son el transporte supply ese.
+
+Pablo Lopez:
+Está más que bien.
+
+Hector Palacios:
+O sea, en mi vista tiene que tener esta FinCo. Sí. ¿No te va a servir transporte supply? Transporte... Oh, sí, sí, sí. No, sí. Ese te va a servir. Ese es el que está por lane, por transportation lane. Ese es el que tiene la información de origen. Es el que dice supply a secas, es el que no tiene información de origen y etcétera. Por eso que cuando vea la información de supply y transportation supply, puede que te digan casi lo mismo.
+
+ ¿Por alguna razón hay no transporte supply? No, no, el supply, perdón, el supply consolida todo. Todo lo que se está suministrando la planta. Puede ser un traslado entre la planta o puede estar suministrando directamente al cliente, eso te dice todo. Entonces, por eso es que puede que haya una porción que sea distinta entre supply y transportation supply, como veo ahí. En algunos casos sí, en otros casos no, es igual.
+
+
+
+Pablo Lopez:
+¿Esta vista, por ejemplo, en qué entraría? ¿En cuál de estas cinco J sería?
+
+UNKNOWN_SPEAKER:
+¿Production? No.
+
+Hector Palacios:
+No, esta otra la que hablamos de stock balance, esa de stock balance.
+
+Pablo Lopez:
+Vale, entonces hago stock balance y estas otras 5 hojas. Esas otras 4 creo que eran.
+
+Hector Palacios:
+Ahí sí se me pasó una y después mañana lo realizamos, pero yo veo 4 más que tienes que añadir a parte la que tenía ahí. Ve si que reemplazan alguna de las que ya tenías probablemente. Y la de demanda hay que mantenerla también. Claro, esa de producción probablemente component usage.
+
+UNKNOWN_SPEAKER:
+Sí, claro.
+
+Hector Palacios:
+Ah, sí, esa de producción también te va a interesar, porque ahí tienes que ver los raw materials, ¿verdad?
+
+Hector Palacios:
+No, la materia prima, eso te falta aquí. Porque ahí te dice los finish woods y los semi-finish, pero también para producir los semi-finish también necesitamos los raw materials, los materiales, las materias primas.
+
+UNKNOWN_SPEAKER:
+Vale, vale.
+
+Pablo Lopez:
+Pero eso dejémoslo para una segunda iteración.
+
+Hector Palacios:
+Primero veamos las vistas que te pasé y después pensamos en esa ahí. Las vistas que tengas déjala ahí, no las modifique, sino que añade estas que te estoy diciendo. Mañana seguimos revisando qué podemos añadir.
+
+Pablo Lopez:
+Y mañana revisamos también lo del proyecto de gestor.
+
+Hector Palacios:
+No, el proyecto de gestor, muéstrame nuevamente el enunciado a ver si hay algo que podamos rescatar. ¿El tema de los tiempos de producción también lo dejaste bien? Si emporó la hice.
+
+Pablo Lopez:
+Sí, o sea, ahora mismo no sé en qué master data estará, pero tiene que estar.
+
+Hector Palacios:
+Estudiatelo para que mañana lo revisemos, pero eso es lo que tiene que estar bien definido. Simplemente es cómo traducir el consumo de productos, si yo te digo 100 unidades, a alguna unidad de producción, de capacidad de producción. Pueden ser horas, pueden ser cantidad de personas, pueden ser días cualquier cosa pero mientras la conversión tenga sentido es decir como 100 productos equivalen a una hora de esto está bien vale entonces así va a ser la conversión en algún momento 200 productos se traducen en 2 horas y así es un factor de conversión básicamente entonces hay que decir 100 del sg1 es una hora por ejemplo Quizá hiciste la división ahí, porque a veces pasa también que tenemos
+
+Pablo Lopez:
+que estar dividiendo.
+
+Hector Palacios:
+Sí, 1 entre 100, 1.
+
+UNKNOWN_SPEAKER:
+Yo creo que es esto. Sí.
+
+Hector Palacios:
+Entonces, básicamente aquí puede que esté diciendo Capacity Consumption Rate. Claro, ahí está diciendo de la BOM para hacer el producto FG1. Entonces, para hacer 1, ¿cuánta hora necesito? Probablemente minutos, entonces esa es la división.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Échale un ojo porque parte de cómo se llama de la presentación es decirnos estas cosas, que son más técnicas, es decir, mira, aquí hicimos esto y esta es la capacidad de producción, quiere decir que para producir una unidad tenía que, no sé, eso significa 1 dividido en 100, o que sea.
+
+Pablo Lopez:
+Sí, sí. O sea, claro, todo eso lo quiero hacer. O sea, ¿me queda terminar el template este? Bueno, el template este y el del downside, que me imagino que será igual, ¿no? ¿Te pidieron hacer algo así? Sí. O sea, es el heurístico infinito en downside y el optimizado en base versión. Lo único que me queda es modificar las templates y luego hacer una buena presentación que lo que estaba pensando en temas de fechas, porque a mí se me envió la demo el viernes, que eran dos semanas, pero sí es cierto que al final viernes fue por la tarde, última hora.
+
+
+
+Hector Palacios:
+Sí, la presentación seguro que se pasa para la próxima semana, tranquilo que no sea. Vale.
+
+Pablo Lopez:
+Es que prefiero que sea la semana que viene y preparármela mejor, porque si es el viernes, y teniendo en cuenta que luego el jueves por la tarde coger el tren, ya es prácticamente.
+
+Hector Palacios:
+Sí, si no, eso lo podemos modificar por el tema del MAM y todo eso. Vuelve al enunciado a ver si es que pillamos algo más y lo dejamos. Si no lo pillamos hoy día, mañana seguimos revisando. El número 4, a la slide 4. Entonces, ahí habla simplemente de BOMS y de capacidad de cuánto se consume de recursos Básicamente y luego extensiones de capacidad. Eso también lo vamos a tener que considerar. Capacity Expansion Rate también hay que ver si es que lo está tomando o no.
+
+
+
+Pablo Lopez:
+Todo eso lo he puesto en la base de la data.
+
+Hector Palacios:
+Estos son los recursos de almacenamiento. Stock inicial. ¿Eso lo pusiste? Stock inicial. Pues, no lo sé.
+
+Pablo Lopez:
+Te falta el stock on hand, creo.
+
+Hector Palacios:
+Vea la lista de balance. Sí, te falta el stock on hand. Ese es el inicio.
+
+Pablo Lopez:
+Pero creo que eso me falta. Creo que no lo he hecho.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Hector Palacios:
+Ponte a ello durante mañana. Cárgale el stock con Hunt y ahí algo se va a ver porque al menos va a mostrar que al inicio había stock y después como que se esvaneció. Porque cuando uno, básicamente cuando no le dicen mantén stock por X motivo, no lo va a mantener. Es que nosotros generalmente le decimos mantén 5 días de inventario, 5 semanas de inventario o tener al menos 200 unidades de inventario y así es que lo respetan.
+
+
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Pablo Lopez:
+Y una pregunta, ¿el stock inicial eso lo tengo que hacer en el mes actual?
+
+Hector Palacios:
+Sí, en la semana actual y de hecho en la semana técnica actual, de ser posible. Vale. Estamos, a ver, ¿qué semana estamos? Ah, bueno, esta semana no va a haber problema. Y la siguiente tampoco. Así que si la sacamos entre la semana esta y la siguiente, está bien. A veces, cuando cambiamos de mail, estamos a mitad de semana, es que ahí te genera un problema y hay que estar seguro de cargar bien el stock en la semana que corresponde.
+
+ Pero nada, cárgalo y veamos cómo se hace. Bueno, ejecutando el optimizador, estamos al otro lado, porque el heurístico infinito es mucho más fácil. Será ninguna capacidad ni nada de eso, va a ser siempre capacidad infinita. Vale. Ponte a trabajar durante mañana y juntémonos para ver el avance y el viernes también. Y bueno, intentemos juntarnos aquí, bueno, miércoles, jueves y el viernes te veo allá, ¿no?
+
+ Entonces ahí la sacamos durante todo el día.
+
+Pablo Lopez:
+Perfecto. Entonces la presentación sería ya para la semana, Sí, sí, sí.
+
+Hector Palacios:
+Tranquilo con eso.
+
+Pablo Lopez:
+Yo me aseguro que se hace. Vale, perfecto. Y la última pregunta. He visto que estabas activando planilarias durante el día de hoy. ¿Ahora vas a seguir? Lo digo porque es que tengo que activar yo una cosa y...
+
+UNKNOWN_SPEAKER:
+No, activa.
+
+Hector Palacios:
+Creo que no tengo nada que activar de momento.
+
+UNKNOWN_SPEAKER:
+No quiero irse a resultados.
+
+Pablo Lopez:
+Vale, perfecto.
+
+Hector Palacios:
+Dale. Perfecto. Hablamos, Pablo.
+
+Pablo Lopez:
+Nos vemos mañana.
+
+UNKNOWN_SPEAKER:
+Chau. Chau, chau.
+
