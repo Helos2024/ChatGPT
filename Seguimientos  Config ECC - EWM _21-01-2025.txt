@@ -1,0 +1,362 @@
+UNKNOWN_SPEAKER:
+Bueno, Karim, también todo muy bien aquí. Se unen todos y dicen, ahora vamos, equipo go.
+
+Kerin Bonilla:
+Y uno por uno entra.
+
+UNKNOWN_SPEAKER:
+bien coordinados.
+
+Kerin Bonilla:
+¿Verdad?
+
+Richard Quinteros:
+Ahora vamos equipo. ¿Cómo estamos Richard?
+
+Kerin Bonilla:
+Tiempo sin saber de ustedes. Creo que sí, vemos que tal vez somos rápidos ahora. Hay un tema pendiente por ahí, tal vez se nos logra subir flor, de una petición que hizo Pablo, que era unas transacciones A ver si lo logramos, que se conecte ahora. Sí, yo de hecho iba a hacer unas preguntas. Y una pequeña solicitud. Vaya, dame un segundo, vamos a ver si nos.
+
+UNKNOWN_SPEAKER:
+A
+
+Kerin Bonilla:
+Pequeña Correcto.
+
+Jonathan Hernandez:
+Y Kerry, nomás un comentario de lo que comentaba la información pasada de Richard de una sesión para ver los temas en conjunto. Solo si de preferencia este viernes entre 10 y 11 El tema de la presentación de los documentos de exportación creo que era, ¿no?
+
+Kerin Bonilla:
+Ajá. Bueno, ok, lo tomo en cuenta. Muchas gracias. Muy bien.
+
+Kerin Bonilla:
+Dice Flor que le demos unos minutitos, ya se nos une. E iniciamos. Solo que sí, no se te olvide John el formato para empezar a hacer la preparación de los scripts de pruebas, si ustedes ya tienen algunos definidos para empezar a trabajar de con los equipos, como si te fijas, hay varios key users que trabajan del tema operativo, entonces hay que irles apartando mejor una hora diaria y no esperar que el último día estemos sentados un montón de tiempo.
+
+ Y tener ya los scripts a nivel de, ya sea un Excel planteado.
+
+Jonathan Hernandez:
+Sí, ahí lo he practicado el día de hoy con el equipo por la mañana. Van ellos primero a plasmar allí los escenarios que y cada uno de los proyectos. Ya lo tenemos con el paso a paso. En principio hay que probar, pero si ya lo platiqué con el equipo, él va a estar trabajando.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Kerin Bonilla:
+Hola, Flor, ¿cómo estás? Hola, bien. Ustedes, perdón la demora. Gracias por incorporarte. Dame un solo que ver.
+
+UNKNOWN_SPEAKER:
+Bueno.
+
+Kerin Bonilla:
+Si gustas, iniciamos cualquier necesidad, pues creo que Melvin está en rojo, pero de cualquier forma se la transfiero para aprovechar el tiempo de ustedes también. O aquí tenías la pregunta, Richard, si te falta algún participante para ver si lo busco.
+
+Richard Quinteros:
+No, no, no. O sea, también Melvin. O sea, es más que todo Diana y este, pues no. Algunas cosas.
+
+Kerin Bonilla:
+Dame un segundo entonces, permítame.
+
+Richard Quinteros:
+Flor es la culpable, no mentira, no mentira. No diga que ya me perdí.
+
+Gianni, Florencia:
+No, igual ya Diana me echa tantos culpos que yo.
+
+Richard Quinteros:
+El chale, pero tienen que creerse, creerse. No, no es buena relación.
+
+Kerin Bonilla:
+Me pasa problemitas para su solucionar de tú.
+
+Richard Quinteros:
+Esa es nuestra forma de querernos. Vamos a incorporarlo a un segundo. De igual manera, Florencia sabe que ahí, por ejemplo, del lado de salida, generando mis escenarios, entonces ahí pues trato de no molestarla tanto. Y debo los escenarios, igual no hay problema.
+
+Gianni, Florencia:
+Tengo que crearle los escenarios a Pablo, pero ya están, justo con Nodir tuvo un temita con su VPN que recién, por eso llegué un poquito más tarde, se le resolvió, así que ahí va a empezar a hacer los escenarios. Escenarios.
+
+UNKNOWN_SPEAKER:
+Bien, bien.
+
+Kerin Bonilla:
+Ok, Flor, gracias. Ese tema teníamos ahí también pendiente. Ya está Melvin por acá. El equipo tenía un par de preguntitas por hoy, Melvin. Vamos a aprovechar. Dale, Richard.
+
+UNKNOWN_SPEAKER:
+Bueno, equipo.
+
+Richard Quinteros:
+Aquí les comparto mi pantalla rápidamente. Solo para comentarle lo siguiente. Ya ves que yo estoy haciendo una validación de cara a todo lo que tenemos, lo que ya voy avanzando para ir actualizando ahí el entonces me surge una duda con estos dos, estos dos cuadros en rojo que se observan aquí, si lo alcanzan a ver, maquilada pack externo y maquilada pack interno y el tema de despachos clientes directos y despachos de contribuciones sociales y donaciones, obviamente yo también estuve ahí molestando a Florencia pero quería como cerrarlo, cerrarlo con ustedes, entonces partiendo por despachos de clientes directos y despachos sociales y donaciones.
+
+ ¿Esto entra dentro de los flujos de ventas normales? Según Florencia me estuvo comentando es algo sí, que sí.
+
+UNKNOWN_SPEAKER:
+¿Es correcto?
+
+Melvin Alvarado:
+En la última sesión sí, que mencionamos si se facturaba o no se facturaba y si se factura.
+
+Richard Quinteros:
+Vale, pero entiendo que una clase de entrega por ejemplo para probar esto podríamos generarla estamos en condiciones de en 500 poder generar un flujo de despacho cliente directo y despacho contribuciones sociales y donaciones?
+
+Gianni, Florencia:
+Están dentro de los set de salidas que hicimos Richard, el flujo de degustación y después el otro de clientes directos cualquiera Ah, perdón, es que yo estuve buscando ahí, estuve buscando aquí, por ejemplo, tengo pruebas de 500, este fue
+
+Richard Quinteros:
+el primero, este fue la versión 2 y este fue el último, pruebas de versión 3, correcto?
+
+Gianni, Florencia:
+Sí, el de degustación que creo que fue la primera o segunda prueba que hicimos, la entrega de F7 es el que ellos te dicen que es la línea, espérame, bájale, yo te digo, espérame, baja un poco el archivo, la línea 18, ahí es donde suele entrar el proceso de, de cómo me dijiste, de donaciones y el otro, pero es una venta normal, no hace nada distinto, sí tiene una lógica diferente pero en la facturación que es NSC, pero a nivel proceso logístico es un proceso como si te envían un ZFL6, perdón, un ZLF4.
+
+ Ok, perfecto.
+
+Richard Quinteros:
+Nada más me podrían juntar una entreguita o un pedidito de esto para yo hacer el flujo. O sea, yo puedo a partir de ahí replicarlo sin ningún problema.
+
+Gianni, Florencia:
+Te hago una nueva porque esa va con un cliente y una organización de venta distinta. Estaba en el set inicial, pero te replico una nueva.
+
+Richard Quinteros:
+Así tienes. Y nada más para agregarlo aquí no es mucha molestia si no es mucha molestia perdónenme ok y el tema de ese eso que tú me vas a hacer ahorita va a ser el tema de contribuciones sociales no correcto si lo querés nombrar con ese nombre si eso es como para abordar este punto el de contribuciones y el despacho de clientes directos pues puede ser considerado como pues un tema de despacho cliente centralizado o distribuidor.
+
+
+
+Melvin Alvarado:
+Espérame Richard, quiero ver. Dejalo así, despacho contribuciones sociales y donaciones, porque así está el proceso.
+
+Richard Quinteros:
+No, es que así, así, yo lo estoy teniendo en cuenta, no te preocupes.
+
+UNKNOWN_SPEAKER:
+Ajá.
+
+Richard Quinteros:
+Es solo que, que, o sea, que ese que van a generar ahorita ese escenario es para este, ¿correcto? Es para este, ¿va? O sea, que este despacho contribuciones sociales y donaciones pasa por el mismo ZFG, correcto? Perdón, ZLF, perdón. Sí, ZD, sí. Entonces, nada más ahorita, pues obviamente es el que va a trabajar ahorita. Me va a hacer Florencia el favor de pasarme un ejemplo. Y ahora este despacho de clientes directos es lo mismo que hablar de estos dos.
+
+ Están aquí arriba.
+
+Melvin Alvarado:
+Tienes los centralizados, sí. Déjame, déjame ver.
+
+Richard Quinteros:
+Porque yo aquí tengo el WEP, si quieres, pues lo presiona en el WEP, dame un segundo. Aquí tengo el Excel, Richard, acórdate.
+
+Melvin Alvarado:
+Aquí tengo el Excel. Ok, ok.
+
+Richard Quinteros:
+Y fíjate que aquí dice que proceso de generación de una salida desde el centro de servicio del WEM por ventas a clientes exclusivamente nacionales. Los mismos son clientes de grandes grandes volúmenes bajo ciertas condiciones y acuerdos por establecidas de ventas, ¿vale? Pero entiendo que se va por el mismo flujo, ¿no?
+
+Melvin Alvarado:
+De centralizado, distribuidora. Sí, el centralizado, pérate, solo quiero ver algo. Salidas, son salidas.
+
+Richard Quinteros:
+Sí, de hecho fíjate que pues va bajo el mismo esquema de picking en un mismo paso, pero en un paso, pues, ¿vale?
+
+UNKNOWN_SPEAKER:
+¿Quieres centralizar el directo para hacer el mismo? Sí, ¿no?
+
+Melvin Alvarado:
+Sí, es el mismo. Vale, nada más que, por ejemplo, quizás para hacer la diferencia, el despacho Walmart es el mismo circuito que se utiliza para Dollar City.
+
+Gianni, Florencia:
+Sí, pero no entra en EWM, porque lo que entra para Walmart, para EWM, es el traslado que hacen al almacén intermedio.
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Gianni, Florencia:
+La venta sale del PT33, es que es facturación Walmart y eso es un IEM.
+
+Melvin Alvarado:
+Entonces esa salida no le llega. Está bien. Yo me refiero al circuito de de Dólar City.
+
+Gianni, Florencia:
+El de Dólar City es el que dice venta centralizada.
+
+Melvin Alvarado:
+Ok. Entre Callejas. Ah, pues sí, el otro es cliente directo. Sí. Ah, pues cliente directo puede ser cualquier otro cliente. Puede ser un cliente mayorista, cualquier otro cliente que que del CD.
+
+Richard Quinteros:
+Entonces, en teoría podríamos considerar que este cliente directo es como similar al proceso de descentralización distribuidora.
+
+Melvin Alvarado:
+Sí, es como digamos, va, ok, hoy un cliente que lo atiende, un detallista, por decirte algo, se le facture directamente desde el CD, no le atendió ninguna ruta. Ok, va, perfecto.
+
+Richard Quinteros:
+Entonces, pues nada, este pues listo. Esa era mi duda. Ahora el tema de este no me pasa en ningún escenario pues es lo mismo que centralizar distribuidora solamente quiero garantizar el flujo de proceso de despacho contribuciones sociales de naciones que es así y el tema de maquilado paga externo o paga interno ahí nada más no sé si tenemos algún flujo representado migo porque entiendo que debe ser como un traslado entre almacenes pero si no sé si me mandaron ese escenario ahí nada más acordarme Richard, si ese lo
+
+Melvin Alvarado:
+definieron que va a quedar en... Lo busco aquí, de hecho, PAC externo, PAC interno, aquí está.
+
+Richard Quinteros:
+Desde aquí dice proceso de generación de una salida por traslado entre almacenes con origen en el centro de distribución EWM, se trasladará a proveedor externo los materiales, materiales terminados, consideradas materias primas por el proceso en sí, ya que se constituirá en un nuevo SKU al finalizar su proceso. De maquila en un almacén externo del aleo de WM. Posteriormente, finalizado un nuevo desecado o maquilado, el mismo ingresará al centro de distribución de WM para su almacenaje mediante un nuevo circuito de traslado.
+
+
+
+UNKNOWN_SPEAKER:
+Ese es el externo.
+
+Richard Quinteros:
+Y el interno dice, proceso de generación de una salida por traslado entre almacenes. Con origen, el centro de distribución de WM se trasladará a materiales materiales terminados, considerados materias primas por el proceso en sí, ya que se constituirá en un nuevo desecado o al finalizar su proceso de maquilado en un almacén IEM externo al EWM. Dicho almacén IEM se encontrará situado en la misma locación que el EWM, pero el mismo no estará asociado al EWM.
+
+ Por este motivo, no será necesaria la generación de una unidad de transporte en su proceso operativo de salida. Posteriormente, finalizando ese cabo maquilado, el mismo ingresará al centro de distribución EWM para su almacenaje mediante una operación de traslado entre almacenes. Con movimientos migos.
+
+Melvin Alvarado:
+Sí, todo es a nivel de IEM y luego se traslada al devolverla.
+
+Richard Quinteros:
+Pero si me gustaría, por ejemplo, tener una entrega...
+
+Gianni, Florencia:
+No tengo definido, ni hablábamos en su momento, de ningún movimiento logístico para hacer una entrega específica para esto de maquilado. No estaba dentro de los flujos que nosotros revisamos. Revisamos.
+
+Melvin Alvarado:
+Ahí sí me perdiste, ahí no te entendí.
+
+Gianni, Florencia:
+Nosotros hicimos un relevamiento con todas las clases de movimiento migo que había que generarse, teniendo en cuenta anulaciones, traslado para cuando se saca de un IEM y se tiene que ingresar a un EWM, o viceversa. No tengo dentro de todo lo que revisamos nada referente a maquilado.
+
+Melvin Alvarado:
+Ah, es que por eso pregunta la ve a Richard ¿Cómo se va a manejar el tema de traslados? Porque yo estaba pensando en esta escena de que estábamos traperando.
+
+Richard Quinteros:
+O sea, el tema de traslado, aquí nada más como comentario. El tema de traslado, por ejemplo, nosotros podemos manejar esto sin ningún problema por un traslado, ¿ok? No más que, pues, hasta el momento no sé qué clase de movimiento van a usar, se va a usar para el traslado, ¿sabes? Estándar. O sea, entre un almacén yeme. Entre almacén, EWM yeme. ¿Qué clase de movimiento se va a usar? Normalmente se usa, pues entiendo que es 311, 312...
+
+ Esta tengo mapeada, mira, Richard, espérate.
+
+Melvin Alvarado:
+La compartí, te voy a quitar pantalla, dame un segundo.
+
+Richard Quinteros:
+Pero nada más para entender a nivel SC, qué clase de entrega corresponde a esas clases Ahí nos alineamos, va, dame un segundo.
+
+UNKNOWN_SPEAKER:
+Aquí está.
+
+Melvin Alvarado:
+Dentro de la salida aquí está el maquilado externo. Yo aquí tengo mapeado un 311.
+
+UNKNOWN_SPEAKER:
+311 es...
+
+Melvin Alvarado:
+no sé si van a ampliar un un poquito más, perdón.
+
+UNKNOWN_SPEAKER:
+311.
+
+Richard Quinteros:
+Pero me preguntaba por lo siguiente, el 311 Florencia se usó hoy en día, Diana, lo vamos a usar para, para, podemos usarlo para una salida de un almacén Yema, de un almacén WM, un almacén Yeme, si está contemplado o se está usando para otros procesos.
+
+Gianni, Florencia:
+El 311 se usa para muchas cosas, yo no tengo mapeado ningún movimiento logístico nuevo, ninguna clase de entrega nuevo para este proceso de maquilado, de hecho hasta el momento es la primera vez que lo escucho, más allá que sé qué hacen pero dentro de este proyecto, no tengo yo dentro de mi alcance crear un movimiento nuevo ni entrega nueva, por eso no estaba dentro de los flujos, entonces ahí escucho.
+
+
+
+Richard Quinteros:
+Estás respirando profundo Florencia. No, no, perdón por esto. No, no te preocupe. Claramente, pues, Melvin, esto, esto se llama. O sea, hagamos algo, sí, hagamos algo, con estos dos puntos.
+
+Melvin Alvarado:
+Porque el maquilado es, déjame hablar con Rafael Archila. Mañana me reúno con Rafael Archila, cómo ve estos dos puntos, porque yo aquí lo veo, sinceramente, cuando los maquilados no lo vi muy, muy, muy bien esos escenarios. Entonces déjame revisar con él para determinar el alcance de esos dos.
+
+Richard Quinteros:
+Dale, dale, está bien, no hay ningún problema de este lado. Déjame esos dos procesos.
+
+Melvin Alvarado:
+Sí, está bien.
+
+Richard Quinteros:
+Nada más quería tener como que ese feedback para ver eso, porque digamos que ya quiero cerrar mis pruebas, pero estoy en eso, no? Ahora hay nada más, pues de momento, pues pendiente eso y la entrega.
+
+UNKNOWN_SPEAKER:
+¿Va?
+
+Melvin Alvarado:
+Quizás ahí, quizás aprovechando la sesión, no sé si se puede, porque yo también necesito ir como planeando actividades.
+
+UNKNOWN_SPEAKER:
+Entonces, espérame.
+
+Melvin Alvarado:
+Yo lo que necesito, a ver si me quito esa Yo lo que necesito saber de cada proceso, de cada macro que tenemos, que tenemos movimientos internos. Este no va aquí este va aquí este no va aquí este va aquí vaya de estos de este de las configuraciones que ustedes tienen estimado yo lo que necesito de terminar con ustedes si no es en esta sesión puede ser otra es el tema de que escenarios están listos para tenerlo yo digamos también que podemos ir preparando por decir que algún ejemplo que diga Pablo mira ya todas las entradas están listas entonces ok yo veo los escenarios y
+
+Richard Quinteros:
+va a ser los escenarios empieza a preparar información ok o sea la información puedes irla preparando desde ya va para para todo de hecho no o sea obviamente me imagino que cuando te refieres información te refieres a un set de datos no para como producto producto, clientes, proveedores.
+
+UNKNOWN_SPEAKER:
+Sí, correcto, sí.
+
+Melvin Alvarado:
+Lo que yo quiero evitar es el tema de reproceso con los temas de Q-SER. Entonces, digamos, para el nivel de... Todo así como hacemos nosotros las pruebas. Nosotros ya sabemos todos los escenarios del negocio. Entonces, lo que hacemos es hacer lo que ya está listo. A esto le damos prioridad en base al plan entonces decimos mira eh vamos a comenzar con la parte de por decirte algo volviendo al ejemplo de de Pablo mira todas las entradas ya están listas menos que por decirte devolución a proveedores un ejemplo ah ok entonces escenario digamos no le metemos mucho ruido y nada más nos ponemos de acuerdo con ustedes con los consultores cuando va a estar listo y lo desplazamos en fechas ok entiendo entiendo entonces vamos
+
+Richard Quinteros:
+dándole prioridad digamos a los datos que según el plan va que ya están vale mira déjame me me reúno con el equipo eh si no es hoy porque hoy básicamente de repente Pablo ya pues obviamente por horario no está me reúno con Pablo, Samir, John y pues ahí vemos más o menos qué escenarios ya están ok por ejemplo eh según el plan que nosotros o o el la actividad que nosotros ya tenemos ok por ejemplo los porcentajes de avance y y ahora pero entiendo que que no, no digamos, no van a intervenir en el sistema actualmente o si quieren intervenir en el sistema.
+
+
+
+UNKNOWN_SPEAKER:
+Hablo de doscientos.
+
+Richard Quinteros:
+En doscientos no intervenimos. Ok, listo. Entonces ahí, pues básicamente Melvin. Yo, yo, o sea, yo quiero creer que para la fecha correspondiente de pruebas integrales. Ok, pues vamos a estar todos listos, o sea, todos los escenarios deberían estar listos. Ahí la idea es que ustedes lo prueben o se prueben o lo prueben en conjunto con nosotros. Y si se detecta una falla, pues básicamente ahí mismo se corrige.
+
+ Esa es la intención. Pero ahora de que priorices un escenario antes que otro, no creo. No, pues dale tu orden. Al final, pues vamos a probarlo todo.
+
+Melvin Alvarado:
+Te voy a sacar carrera. Hoy estás pactando con el diablo, acordate. Si no, ¿qué te diga Flor?
+
+Richard Quinteros:
+Si, al final vamos a hacer pruebas de todo tipo, ¿no? Vamos a hacer pruebas de entrada de todo tipo, pruebas de salida de todo tipo, independientemente de cuál esté listo o no. O sea, todos deberían estar listos, es la realidad.
+
+Melvin Alvarado:
+Y pues nada, eso, no hay prioridad. Ok. Te dejo pantalla libre ahí. Dale, ahí sí me sale.
+
+Richard Quinteros:
+me si se trata de un tema mira que nos bloqueamos en en este proceso ahí está el tema maquilado pero pues al final es algo que debería solucionarse lo más pronto posible y de este lado yo debería ya tener
+
+Kerin Bonilla:
+lista mi prueba y la funcional lista no para que ustedes prueben o sea eso no no es un impedimento a lo que me refiero vale tranquilo acuerdo ok listo bien creo que quedamos pendientes con los datos de flor y los datos que te vamos a proporcionar de maquila para el día de mañana esperamos despejar esa consulta y también tenemos pendiente lo de embalaje melvin no sé si eso ya se lo había confirmado richard lo de los tipos de
+
+Richard Quinteros:
+materiales de embalaje porque flor tendría que hacer una configuración recuerdo si el tema del embalaje yo creo que ahí querín puede puede ocurrir eso después de la presentación del flujo de para que tengan una noción más clara de lo que se necesita Melvin. ¿Si se puede hacer eso? ¿Cómo, cómo? ¿Volver a repetir? Mira, ya ves que hay una necesidad de materiales de embalaje. ¿Lo recuerdan? Sí. Ahora, pero sí me gustaría que vieran la sesión, el flujo de proceso completo de exportación, para que se tuvieran una idea de por qué la necesidad tan estricta está respecto a eso.
+
+
+
+Melvin Alvarado:
+Mira, en lo que tenemos, o sea, los materiales de embalaje son las cajas y el pallet, nada más en este momento. Mañana puede cambiar algo por el tema, digamos, el tema de bolsones, pero ahí ya dependemos del criterio de archivo.
+
+Richard Quinteros:
+Ok, entonces, pues, si tienen creados esos dos materiales, Pues me quedaría de maravilla. No sé si nos lo han creado, si lo van a crear.
+
+Gianni, Florencia:
+No, porque yo todavía estaba pendiente de si debemos hacer la configuración para que el ZM funcione como material de embalaje.
+
+Kerin Bonilla:
+Y recuerdo que a eso hay que agregarle el tipo de embalaje y el tipo del HU, recuerdo, ¿no? Yo lo tengo por acá.
+
+Melvin Alvarado:
+¿Y cómo procedemos? ¿Lo hacemos? ¿No lo hacemos? ¿Se pasa? Hay que crearlo como acordamos la vez pasada. Que son materiales nuevos, queríamos tomar el Zeta, el tipo material Zeta embalaje, que se van a caer dos nuevos.
+
+Gianni, Florencia:
+Zeta cero uno. Ok, no, no, pero ojo, ahí necesito configurar, como estaba toda esa duda y que estaban revisando, no hicimos nada. Yo le voy a pedir a Nodier que actualice los datos del SZSM para que funcione la solapa que necesita EWM, y ahí también hay que los tipos de manipulación, cuáles serían los tipos de manipulación para cada material de embalaje.
+
+Kerin Bonilla:
+Correcto, el tipo de unidad de manipulación y el tipo de material, son los dos datos que debemos asociarles. Sí, así es.
+
+Gianni, Florencia:
+Ok, y cuáles son los tipos de unidad de manipulación que van a usar estas materiales, porque también lo tengo configurado, pero los materiales son y palet y la unidad de manipulación también es caja y palet. Sí, debería ser caja y palet, de hecho. Yo le voy a pedir esto a Nodier y les confirmo cuando esté. Claro que sí. Listo. Si ya no hay más temas, sí, por favor, si les puedo robar unos minutos, Kerim, Melvin y Walter.
+
+
+
+Kerin Bonilla:
+Claro que sí. Respondiendo igual que Rich.
+
+Richard Quinteros:
+No dieron mi nombre, así que yo creo que me voy.
+
+Melvin Alvarado:
+Muchas gracias, chicos.
+
+Gianni, Florencia:
+Gracias. Hasta luego. Gracias a ustedes. Adelante. No, bien. No era una consulta que me parecía apropiada hacer con el equipo de Go, pero solo quiero asegurarme en base a lo que hablamos hace unos días, que ahí está la asistente de go ah bueno igual no voy a decir
+
+Kerin Bonilla:
+nada malo pero y no sé cómo se y no sé cómo se baja eso quiero verlo
+
