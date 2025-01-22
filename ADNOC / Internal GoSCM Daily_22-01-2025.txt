@@ -1,0 +1,688 @@
+UNKNOWN_SPEAKER:
+Hello, Sagar. Hello, everyone.
+
+Rocio Minguillon:
+Hello, Sagar.
+
+UNKNOWN_SPEAKER:
+Hello. How are you? I'm fine, thank you.
+
+Rocio Minguillon:
+Are you going for the MAM, Rocio?
+
+UNKNOWN_SPEAKER:
+Yeah, that's why we were talking.
+
+Rocio Minguillon:
+I mean, at the time of the MAM, I'm able to go to the offices and everything. But I have a special class about data management until 3.30. But I don't know if I can stay and I can leave. But I don't know what to do. I mean, it depends on if you all are going and everything, then I could miss that class and go. If not, or if you already have your schedule.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I think we are going to be in the office at least me and Pablo, Pelayo probably, right? Yes, I'm going as well.
+
+UNKNOWN_SPEAKER:
+Yeah, we have the man. Yeah, I know.
+
+Conference Room (Hector Palacios) - Speaker 1:
+So indeed, Cesar, I think that he reserved one room for that.
+
+Rocio Minguillon:
+Yeah, for the month I will be there. I need to go.
+
+Bastian Osorio:
+I need to go every year. But if you guys want to stay for a few drinks, I can come back because I have to go to sign a contract. But then if we can drink for free, then absolutely I'm coming back.
+
+UNKNOWN_SPEAKER:
+For the apartment? Yeah. Great man.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yeah, let's do that. I think that in the month probably we are going to stay a little bit. Six and a half, and then maybe we can go for some.
+
+Rocio Minguillon:
+Let's see.
+
+Bastian Osorio:
+Did you ask for permission?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Conference Room (Hector Palacios) - Speaker 1:
+All the Fridays. But that's why I cannot go during the week because of that, you know?
+
+Bastian Osorio:
+Yeah, but you can, yeah, you can ask your wife to join us.
+
+Rocio Minguillon:
+Yeah, of course. Maybe we can join together. If they want. I'm nice. I can be nice with them.
+
+UNKNOWN_SPEAKER:
+What was that? No, that I'm nice.
+
+Rocio Minguillon:
+I can be nice with them.
+
+Bastian Osorio:
+Who told you that? My friends.
+
+Rocio Minguillon:
+Fiamma can tell that. Yeah, they love you way too much. Nah, just kidding. Okay, so let's review the points that we have too many today. So first, let's start with the technical ones, so we can, like, Sagar and Ray can, like, leave the meeting, because we have a lot of functional topics regarding next week. So regarding technical things, how are we doing with the FSD? Is it progressing well to have some progress on Fridays?
+
+ Is there anything to raise? I don't know if Ray is here, but maybe, no, no, he's not. Maybe, Sagar, do you have any information on this? Do you know if everything's going well or? Okay.
+
+Sagar Vora:
+No, I don't have much information. I need to check with Ray. Don't worry.
+
+Rocio Minguillon:
+I will check him and ask. If there is any need, because this is priority. Okay, then, Sagar, regarding the other technical thing, is there anything that you need our help? I mean, as far as I know, there has not been progress on the accesses. I mean, you're still using Ray Access, and the Verush Access is still not there.
+
+Sagar Vora:
+Yeah, I mean, I still don't have any access like one ERP. So I'm still using the Rails Express and still the IBP data store is down. So we are not able to move forward with the developments. So today we had one call with the Adnox team to perform some of the activities. And now we were planning to connect, but I don't see invite yet. So I'm waiting for that call. We will do some more configuration.
+
+ And then I will reply back to SAP, like whatever would be the outcome of the current meeting, I will reply back to SAP for the further help.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sahar, just to clarify, this is stopping us from integrating the data, not from working on the flows?
+
+Sagar Vora:
+Yes. I am not able to fully work on the flow because I can like develop but I cannot test so I am not sure like if I will get error or whatever so I can just do the development yeah and I even like I am not able to import a new key figures or the tables if I have not imported already from the IBP then I am not able to import support that also from IBP.
+
+Rocio Minguillon:
+What is the blocker there? Sorry, I missed a little bit.
+
+Sagar Vora:
+So basically, the CIDS agent is not able to talk with IBP. Looks like there is some firewall or proxy-related issue at ad-hoc end. They are not sure what is the issue, so we raised SAP ticket. Looks like it's a firewall or proxy issue, so we have to check with them like how they can help us with that.
+
+Rocio Minguillon:
+So that's something that a few days before that was working, no?
+
+Sagar Vora:
+Yeah, it was working till 16th January. On 17th January, I raised the SAP ticket because I was not getting any input. But yeah, still the ticket is open and we are working on that.
+
+Rocio Minguillon:
+Okay, but we don't know really what is going on there in ATNOC, because they don't tell us.
+
+UNKNOWN_SPEAKER:
+Yes, correct.
+
+Rocio Minguillon:
+Okay, but yeah, definitely they don't have this on their huddle list, so I will ask them to put it. Is Rahul and Kunal aware of this?
+
+Sagar Vora:
+Yeah, everyone is aware, so I have kept everything over email, also so that because sometimes what happened at no team is not replying back.
+
+Rocio Minguillon:
+So I kept Rahul and everyone so that they can escalate the issue. Even Khalid is there. Okay. So we are look on most of the new integrations that we have to do.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Rocio Minguillon:
+Okay, okay, okay, okay. Well, from the definitions, were you able to, I mean, yeah, from the definitions, did you have meetings with?
+
+Sagar Vora:
+Yeah, so today we had a KPMG call, so on that I cleared some of my doubts, so I need to create Excel basically the company code plant descriptions and I will share that with Rahul and he will take that to AdNoc just to confirm like whatever company codes, plants we are telling that these are basically the requirement. No extra additional company codes or plants are required.
+
+Rocio Minguillon:
+Okay, thank you.
+
+Sagar Vora:
+But I think one point for Hector and Bastián, like whatever expected changes which Reinaldo has done, like plant underscore SLO, do we have to show that to Rahul to take his input? Because he was saying like the planning will be at MRP area level, but now whatever changes we have done, do we have to show them and take their inputs?
+
+Bastian Osorio:
+It's a good idea, but first, let's align internally. I don't want them to basically taking control of what are we doing. We are the experts and we have to have ownership of our work. So yeah, they also were requesting to join some of the meetings. And of course, this got good, good stuff. Like for example, we can delegate and we in anything, for example, more, more, I don't know, managerial that you feel Rahul or Kunal or even, or Cushboo have more expertise or they're, they can add value, more value than us, that's fine.
+
+ But they don't let them tell us what to do in terms of technical stuff. OK, so first, let's align internally in anything big change and then we can we can share with them.
+
+Sagar Vora:
+Yeah, no, no, I was saying because I think we will require their help for the transactional extractors, right, to check which tables will be required. In the extractor to be modified. So for that, I think earlier the plan was like we check with Raul and team. So here we can give them.
+
+Bastian Osorio:
+Why he wants to know that? I mean, of course we can provide that information, but I'm not getting why he needs to know that.
+
+Sagar Vora:
+No, we can tell them like for master data extractors, like for location or whatever at the master data extractors are there. We just heads up like we use these tables And this is the output. And for transactional data, we need help with the standard SAP tables, which we have to basically use in the extractor.
+
+Bastian Osorio:
+Yeah, that's fine. And in addition to that, we have spoken with Isabel. She's an above consultant. And she agreed to make the changes regarding the transactional data. Specifically to the historical consumption for the all the different type of orders. So. I mean, of course, we can inform and I think it's good. It will happen that we will start informing Rahul and Kunal, whoever on high level, what are we doing?
+
+ But no more than that, because I don't want to create more like steps in between of doing some That's my concern.
+
+Sagar Vora:
+Yeah, no, no, I think this was planned earlier, like we take their help for identifying the tables. That's why I said. And even Rocio, even the Khushboo and Rahul, they were asking to upload this Excel sheet on their KPMG so they can also practice.
+
+Rocio Minguillon:
+Yes, I mean, I uploaded that last Friday, but I told them that that is not going to be a live document and that we going to just upload it. I'm going to just upload it on Fridays. And if they are not OK with that, well, then we will have that conversation fastly of how or in which level we let them involve or not. But yeah, micromanagement, I don't want you to maintain this there, because then we lose independency.
+
+ But yeah, I'm uploading this on Fridays. But I think that what is missing here, and I was going to ask if for you, Bas, the director, and all the team is useful or not, is to add the additional data that is still not even defined. I mean, because here we have this, but here, I mean, we have visibility on what we are missing, that is all this. But I think that there are more things that are No, as I understand, there are things there.
+
+
+
+Bastian Osorio:
+This is who created this file. And this is this is the one that is being sharing is being shared with. Yes, yes, yes. And are they requested for more information?
+
+UNKNOWN_SPEAKER:
+No.
+
+Rocio Minguillon:
+No, no, I mean for me, no, I don't know.
+
+Sagar Vora:
+No, they are asking me to upload this document on their folder and update there. So I said, Rocio already shared this document.
+
+Rocio Minguillon:
+Yes, I already shared and I will update it on Fridays, not every day and not every hour.
+
+Sagar Vora:
+Yeah, that's fine.
+
+Rocio Minguillon:
+And this should be the detail level, no more than that. No, no, exactly. What I am asking is for you, if you think that we should ask the data that is not be that maybe there is not there is missing here I mean for Salaar to have you on.
+
+Sagar Vora:
+Yeah basically he is saying like if any interfaces which are not added here can be added. It's fine, it's fine.
+
+Bastian Osorio:
+That will work and it's that's fine but yeah but the thing is that we need to be careful because they will start adding like very non relevant and eat data, like... Yeah, no, no, we... The thing is, yeah, they can add whatever they want, but we need to keep track of what is core and what is not core.
+
+Rocio Minguillon:
+Yeah, what we need, because, I mean, it works, and this has to work to us. Then, if they are asking something extra or whatever, you tell me and I manage it.
+
+Bastian Osorio:
+Yeah, and again, we need to be super careful into not creating more work for itself then just by informing them, right? If it takes 5-10 minutes, that's fine, 15 minutes, that's okay at a week. But if we're having like endless meetings just to inform what are we doing, no, that is not possible. Sorry, I do some, I don't know, work 30 therapy session here, but Nemani as well yesterday, like asking what are you gonna doing in the workshops, who's like, what's going on?
+
+ I mean, we've been doing this for years, we know to do our job. He's like, they're like control freak. I think that's why this is why because they have nothing to do. Because they're all they have just like an army of project managers. So they want to project manage everything we do because they don't have nothing else to do.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+Yeah, I mean, I'm trying be that that nexus that help us to to you to focus on the things that you need and I to try to to give them what they need but but yes don't don't do something that you don't need because they are directly asking please talk talk to me and tell me and we figure it out how to manage it.
+
+Bastian Osorio:
+We need to try to use the them in our favor.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So yeah, if we if we've got informed things, let's inform to delegate. I have these 10 points, but there are three points that I cannot take. Please take you take these three points. OK, so let's do like inverse. OK, so in anything I didn't notice that you're joining of meetings very, I don't know, ad hoc meetings. I will call it that way just to not be controversial. So if you can delegate these meetings to Kunal and you focus on the technical side, that's good.
+
+ That's better. That's better for us. So let's try to use this reporting thing they're asking in our favor.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Is this something that we can do, Sagar? Do you really need to be on those meetings because it requires some technical expertise from CIDS on your side or is something that Kunal can attend?
+
+Sagar Vora:
+No, I think it's more technical so I don't think Kunal can help because basically I'm providing them the steps and I'm helping them what should be the how to perform that.
+
+UNKNOWN_SPEAKER:
+All right, but definitely we need to use them.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I mean, so far they haven't been involved because they were like pushing the documents. Now that they are not in that, they have more free time and we need to use all the expertise because that's why we have Cushbowl. Now we have another gear that is also CIDS, I understand. We have Rahul that will take a more technical role now, and Kunal, they are all technical, so we need to use their knowledge and knowing that AdNoc is not giving us time to escalate points or to show us the system, to solve some questions, then we need to use them, for sure.
+
+
+
+UNKNOWN_SPEAKER:
+Yes, exactly.
+
+Sagar Vora:
+So no, these are very technical calls, basically I need to tell them how to perform that's why I'm joining because we don't have access. But yeah, if I'm not required in any meeting then surely I will ask Kunal or anyone from TTMG to attend and pass the message to us.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Especially now that we have Rahul in our side working on the technical stuff we need to use him because he's on analog facilities usually. He's there so he can communicate right away with Khalid, with whoever is there and can get the information quicker for us. So I think basically what we need to do is to try to involve them in the sessions, but we need to define on the sessions in the morning, we need to define the priorities together.
+
+ So we can communicate that, we can say what is important, what is not and what they should be helping us to do and what the technical OSM should be doing as well. That is mostly the building, but we can use this opportunity so then they can get information from us, for us, from AdNoc, you know.
+
+UNKNOWN_SPEAKER:
+That is the most important part.
+
+Rocio Minguillon:
+Yes, tomorrow I will meet with Rahul actually at 8 and I will tell him basically what are we doing in terms of functional configuration and in terms of technical configuration. And yeah everything is to him to understand and to have him still having him on our side I mean basically he wants to join that's the point he finished the document parts now he wants to join to the technical
+
+Conference Room (Hector Palacios) - Speaker 1:
+part that's the point so I told him let's use let's use these resources because we need to use them we are not lacking resources we are lacking resources sorry yeah so so let's use them and that way they can facilitate our job as well. So we can have more hands. So that's the approach. Instead of reporting to them, it's working with them.
+
+Rocio Minguillon:
+We're working with them. Yeah. Yeah. Reporting only to Hadi and Nama. But Rahul, OK. Rahul can do that. Or Cushboo can do that.
+
+Conference Room (Hector Palacios) - Speaker 2:
+They can work with us.
+
+Rocio Minguillon:
+Yes, I'm working with Cushboo and Abel now, for example. Like right now, she's going to help us to figure out how to do that. But, yes.
+
+Bastian Osorio:
+What is enabled now? I've seen plenty of meetings. Yeah, I will...
+
+Rocio Minguillon:
+Is it for the invoice? Yeah, it was... No, no, no, no. It's for the training. The training? Yeah, I will... Yeah, I will update you now on that. But first, something very quickly regarding the next week unit testing. I just wanted to know if you want... My help on preparing that kickoff, like two slides, like saying how it's gonna work, the unit testing, the thing that we're gonna have, the scenarios and whatever, or if you want to do something more informal, like just showing them.
+
+ A very generic presentation for Fiori and Exeladine introduction will be super helpful okay okay then I I will do it um okay okay perfect I will do it and I will share with you so you can use it um probably there is some you don't need to no no I have no I don't know I have material from other projects and it's it's yeah it's just 15 minutes of the makeup concentrated trying to there are a few slides
+
+Conference Room (Hector Palacios) - Speaker 1:
+high level because most of the work is going to be in the system. So, we are going to show the Excel, the Azure.
+
+Rocio Minguillon:
+Yeah, it's not just for me. I work a lot with change management people, and for me, it's very, very important to set the expectations at the beginning of the session and the dynamic, and that's all. But yeah, I will provide you with one slide to help you with that. Also, if you Okay. Yeah.
+
+UNKNOWN_SPEAKER:
+That's all.
+
+Rocio Minguillon:
+I don't know if we need a session for you, or you're okay, like, organizing between you how you're going to do that dynamic. I mean, who is going to share, who is going to present, or if you need a space to organize that. I don't know if you're already organizing that in your configuration meetings, or if you need additional space to try to talk and organize, how will you divide the responsibilities?
+
+ I don't know. Saul is going to lead these sessions, Hector, these ones, Besty, these ones. Do you need that time or you're okay organizing the dynamic of the session and the responsibilities?
+
+Bastian Osorio:
+No, we decided that I'm going to I'm going to take, of course, Hector can jump or Saul or whoever, but I'm going to take the lead in the demand planning session and Hector will take the lead in the inventory session. For the session on Monday, we haven't decided, so I think it's something we can define now.
+
+Rocio Minguillon:
+On Monday, it's like the general session, no?
+
+Rocio Minguillon:
+This introductory session for design validation. What was the purpose? I mean, first, well, showing that simple slide, but then about the content? No, it's a thing.
+
+Bastian Osorio:
+It's not related to, it's just like how to log in, how to open a template, how to apply a filter, how to... Like the basics. Yeah, basic IVP.
+
+Rocio Minguillon:
+You want to connect with the same area?
+
+Bastian Osorio:
+Yeah, ABP 001. Okay. So, let me think.
+
+Rocio Minguillon:
+Arun, do you want to take this one? I don't know. I don't know.
+
+UNKNOWN_SPEAKER:
+Hello? Yeah.
+
+Bastian Osorio:
+So on Monday we have, it's not even confirmed because it depends on them having their laptops with the Excel add-in. But what we need to do here is like an IVP 001 session, meaning how to create the connection, how to log in, I don't know, check, for example, different reports in the system, very generic. So considering that I will take the lead in the demand planning sessions, Hector will take the lead in the inventory planning sessions for chemicals and also for MRO as well.
+
+ So could you please take this session, intro session for IGP? I think Rocio, she will provide some inputs. Here. I mean some content and so you will have to to just join it and basically show the basic IDP functionality.
+
+UNKNOWN_SPEAKER:
+It's no more than that.
+
+Arun Singh:
+Okay, so basically I'll be showing in my laptop or like they have to perform and someone will be monitoring it.
+
+Bastian Osorio:
+I mean you will you will show in your laptop but the idea is is they do it on their laptop. That's why this session is not confirmed yet, because it doesn't make sense to do it if they cannot do it in their laptops.
+
+Rocio Minguillon:
+Exactly. Okay. And theoretical content about the process? No, no. We are just talking about IPP and how to open the system, but not the process.
+
+UNKNOWN_SPEAKER:
+Of course.
+
+Bastian Osorio:
+And this session is at six.
+
+Rocio Minguillon:
+I think maybe of course we can, I mean, for Chile?
+
+Bastian Osorio:
+Yes, yes, yes, this is for 10, 10 for us, 10 Spain.
+
+Rocio Minguillon:
+So what we can do, what we can do, so when you will be able to provide the Tomorrow, yeah, I can meet Arun and show him tomorrow.
+
+Bastian Osorio:
+We need to be, again, super careful with the format. We need to use abnock format if they see anything that is not abnock stuff, they don't like it. So, yeah, just a couple of slides, basically just recapping what is IVP, what are we doing with this project, but in very general terms, terms and then we can jump directly into the system, into Fiori. Tomorrow is Thursday, so if you guys can meet, start working, and then we can meet again on Friday to finish the details.
+
+ And if you feel like it, we can also meet on Monday to make a dry run. But again, it's very basic. We're not going to specific like how is the inventory reorder point calculated no no just no just just the basics about it yeah like the first video of the of the training yeah okay and of course Hector and I will be there and I hope everyone can join that meeting and The workshops. So, yeah. Is that fine?
+
+
+
+UNKNOWN_SPEAKER:
+Is there any doubt?
+
+Bastian Osorio:
+Not from my side. For me, the most important part is to make super clear, at the beginning of the session, what is the purpose of it. We're not gonna, the idea here is to start to have a hands-on session, so we're gonna do the, take the first steps to you guys using the system. So, and then tomorrow we're going to start reviewing the planning, chemicals, so on and so forth.
+
+Rocio Minguillon:
+But for now, just basic. Perfect. Yes. Well, that was the quick question. Then I have to move to the huddle, but then there is something about enable now that it's that, okay, today I talked Can you talk with Tara because I don't have the meetings for the next weeks.
+
+Bastian Osorio:
+Sure.
+
+Rocio Minguillon:
+Okay, anyone else is missing the sessions? Samuel. All except Basti and Hector. The rest, you don't have it. No? Yeah. Then we can share. We can do it. In your AdMob email neither, because I think that we should get into with our AdMob email. Please let me know if in your AdMob email you have it or not. Let me check if you don't have it, I'll talk to you. You don't have it. Okay, don't worry. Yeah, I will ask Cara to check that, yes or yes.
+
+ Don't worry.
+
+UNKNOWN_SPEAKER:
+No, thank you.
+
+Rocio Minguillon:
+No, no, you're not here. Okay. Then regarding EnableNow, the only thing that I wanted to ask, EnableNow basically is the official platform where SAP recommends to do the trainings. Basically, it's easily integrated with S4HANA, with Ariba, with SuccessFactors, with all the solutions that SAP provides. On the occasion of We think that it's connected to something called training center that there is for IPP that I will check a little bit more on the scope of that training center and the content that is there.
+
+ We need to figure it out with Gushboo, how do we integrate that material with this EnableNow. Also in EnableNow, you can also upload other content. Like videos or whatever. But the thing here is that I need to contact someone from SIP to go deeper on that integration, because in the documentation, there is not enough information about that integration between IVP and enabled now. They mostly talk about, I mean, they mostly talk about S4HANA and Ariba and whatever, but not about IVP.
+
+ So I was thinking if I can contact Pelayo, she also, Kushboo also me that.
+
+Sagar Vora:
+I think I already sent one email to Pelayo for this SAP Enable now because they said I think she wanted some help. So I will loop you and then you can take it forward later. And if you need, then let me know.
+
+UNKNOWN_SPEAKER:
+Okay, sure.
+
+Conference Room (Hector Palacios) - Speaker 1:
+So what we need to understand is what we can have as a base because maybe all the basic material like the introductory material that we want to do on Monday is something that they have as a template there so we can just use it.
+
+Rocio Minguillon:
+Yes, yes, yes. This is important because that can mean that maybe half of the job is done. Yes, I mean once I I look for it, but yeah, let me see a little bit more because it's like the one that is in the help of IDP. I mean, it's easy in the tool, but let me today look a little bit more and I will tell you. Okay, and the other thing is what we need to understand is... Let me share the screen. To understand what is going to be the integration of this, right?
+
+ I'll go back to the Hadoop because they're gonna... And I take this point over. Yeah, I will.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Maybe something related to this, like the interactive tutorials or I don't know, but I don't understand what is that we can integrate this. I mean, it's going to be interactive, like we are going to have the applications here and this is to be no can you can you for a second for the yeah the question I'm sorry the second I mean you
+
+Rocio Minguillon:
+there where you were you have a second item that is like a graduation hat this one yeah there there then you click on learning center and here here you have content I have to go and and see what is that content. But this is the thing that Kushu thinks that can integrate, can be integrated to enable now. Wow, we have everything here, everything.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yeah, once I look for it, and...
+
+Rocio Minguillon:
+But then what is what we need to integrate?
+
+Conference Room (Hector Palacios) - Speaker 1:
+I mean, what we need to do is to be enabled to say, this is what you will see.
+
+Rocio Minguillon:
+In enable now it's like integrated in this but in a learning pathway. So here you have all the content, just content. But then in enable now what you can do is doing a learning path and then having the track of the users or how are they doing, how are they progressing and that. I mean this is like the content but then the point about integrating is that you can have the learning path and all the tools that you need to follow the users and to them to follow a path.
+
+
+
+Conference Room (Hector Palacios) - Speaker 1:
+We need to customize this because what we see here is very standard.
+
+Rocio Minguillon:
+Yes, exactly. That is what we have to understand the scope of this and the things that we need to add. I mean, I wouldn't count on this for this I mean, I will see if there is something that is useful to put the diagrams on a PPT or whatever. But for the 10th of February, we need to be clear on what are the things that we are going to develop and what are the things that we can take advantage of from here and use them in Enable Now.
+
+
+
+Conference Room (Hector Palacios) - Speaker 1:
+Definitely, we need to use this. This is much better. This is like the video, but better than a video. This is looking really great.
+
+Rocio Minguillon:
+Yes, and they tell you what to do. I mean, this exists, like, since always, but you have to, the advantage of having this connected to enable now is that you can tell the users what to do first, what to do second. You can provide extra content for some topic that you need more customization of the material. In other project, we look at it and we decided not to use it because it was very independent for the user to follow the things.
+
+ But I think that in this project, it's going to be perfect to have it integrated to enable now and use it. There, I wanted to ask, today I will review all but then Is there someone who is available to help me on that? I mean, doing this plan on what content is there, what content is not there, and to organize that. Actually, but we need to be involved on that probably after the discussions that we are having.
+
+ Yes, of course, but maybe, I don't know, Pablo or Pelayo can help me and then we present this to you. And we can be in charge of that and then you can give us the feedback.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yes. But then also we need to understand how much of the MRO part is here because MRO is new, so it's very likely that a big chunk of the information is not there. Like how to run the MRO profile, probably there is nothing related.
+
+Rocio Minguillon:
+Okay. I just want to do that first. Like that first view and to try to save your time. But okay, well, maybe I will ask then for Pelayo or Pablo's help to, I mean, I will review today and if How can we approach it? But yes.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Perfect.
+
+UNKNOWN_SPEAKER:
+OK. Thank you. Thank you very much.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Thank you, Jim.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Bye-bye. Bye. Bye. Of the reports that we had talked about.
+
+Pelayo Fernandez:
+Yes, I share the screen now. Ok, if not, we will never work this. Yes.
+
+UNKNOWN_SPEAKER:
+Let's see, can you see it?
+
+Pelayo Fernandez:
+No, now With the famous Cesar, right? The what? The one who saw someone from the Godards who looked like Cesar Paul. Yes, now I'm with the famous Cesar Paul here. The thing is that, well, here I have everything I was writing down. Tomorrow, Chemicals... And I didn't find anything about Drilling. At least, what I thought. If you want, we can watch it together. There's no Drilling? I mean, you filtered Report and there was nothing?
+
+ No, no. And not only that, I was reading it and I couldn't find any other clue.
+
+UNKNOWN_SPEAKER:
+Nothing. I mean...
+
+Pelayo Fernandez:
+What I did was... I filtered it, but then, just in case, since there weren't many, I was also reading it. And in the drilling part, I couldn't see any important points, in which you could get any extra attribute, anything. I couldn't see anything. Can you copy that board and paste it here in the chat?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Or pass it to me through the internal chat, because if not, it will reach everyone.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Pelayo Fernandez:
+I don't think I'm going to see it. I'm looking for it.
+
+UNKNOWN_SPEAKER:
+Boom.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Let's see what it grabs.
+
+Conference Room (Hector Palacios) - Speaker 2:
+It talks about WebPlan, BOM, but it is already considered. They are not hierarchies. Categories. We already have them considered. ForecastCode as a key attribute. Each material must have a forecast code as a key attribute.
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, you're right. I'm going to answer it directly.
+
+Pelayo Fernandez:
+After the rest, I did seem to find something. In the MRO, equipment life cycle, prices, repairable items. I don't know. Then, historic consumption, maintenance plans. What is this? Manufacturer's meantime. I don't know, I've found something, but nothing related to drilling.
+
+UNKNOWN_SPEAKER:
+Yeah, that's fine.
+
+Conference Room (Hector Palacios) - Speaker 1:
+And the other thing...
+
+Conference Room (Hector Palacios) - Speaker 2:
+Let's review the other thing, let's see what interesting things we have about MRO, chemicals, whatever. I'll tell you quickly if it's already considered or not.
+
+Pelayo Fernandez:
+Of course, from 1, having read this and the comments, possible attributes I have taken from these. Equipment Life Cycle, Prices, Repairable Items. I don't know if it's considered or if you see it useful.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Leave that Equipment Life Cycle. Leave it with an asterisk, because we haven't considered that one, but we have mentioned the rest.
+
+Pelayo Fernandez:
+Ok, so I'm going to put it...
+
+Conference Room (Hector Palacios) - Speaker 2:
+Leave a column next to it, so I can refine it for this session. I'll put it in black, if you don't mind. It'll be easier to look for it next to it, so...
+
+UNKNOWN_SPEAKER:
+Copy. Yes, yes. I'll copy it then. Yes.
+
+Conference Room (Hector Palacios) - Speaker 2:
+That's it. Then proposing, ah that too, but ignore it because we have it in consideration at least. Which one do you say? The second one, let's ignore it.
+
+UNKNOWN_SPEAKER:
+Ok. The...
+
+Conference Room (Hector Palacios) - Speaker 2:
+historic consumption, maintenance plan, that's it, it's fine.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Let's continue.
+
+Pelayo Fernandez:
+This, but if there is a date for this, we can get it.
+
+Conference Room (Hector Palacios) - Speaker 2:
+That's actually what we proposed, so we have it in consideration. What's in column E is what we wrote, and what's in column B is what they asked for.
+
+Pelayo Fernandez:
+So it's generally more in column B that we're going to find something interesting. Yeah, so it was more about looking at the column in the comments, right? Yeah. Ok, so this then, because this is taken from the comments of this table, so nothing. Storage, location, plan, material group, that's in consideration, right?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yes, it's in consideration.
+
+Pelayo Fernandez:
+Actual consumption forecast, this is what it says here, so nothing.
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, that doesn't work, there's no attribute, so no.
+
+UNKNOWN_SPEAKER:
+And then...
+
+Pelayo Fernandez:
+Ah, this comment, physical material, pack size, material code.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Pack size, leave that aside. Physical material, I don't know what you mean by that. It's the material, but I don't know. Only for the same physical material with different pack size.
+
+UNKNOWN_SPEAKER:
+Ok, that's interesting. Let's continue.
+
+Pelayo Fernandez:
+Regional Hub, but I've seen this here and I don't know very well what it was, so...
+
+UNKNOWN_SPEAKER:
+Yes, that's good.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Each plant under each regional.
+
+UNKNOWN_SPEAKER:
+That one too, paste it next to it. I don't know if that's some attribute that we already consider, but it's to...
+
+Pelayo Fernandez:
+Yes, to make sure. And then this one, at the end, safety stocks, rear end point, all this is what he has pointed out here. It's all our parameters. Yes, that's the functionality of the system, so it goes like this or like that. And then this, the HML, the HML movement, nature of item, it refers to the sizes, I don't know.
+
+UNKNOWN_SPEAKER:
+The movement, probably the FCMN.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Of course.
+
+UNKNOWN_SPEAKER:
+nature of item sizes.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Do you have a desktop computer?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Conference Room (Hector Palacios) - Speaker 2:
+The screen looks huge.
+
+Pelayo Fernandez:
+Yes, it's just that with the money they gave me for the setup, I bought a curved monitor. And the truth is, to divide the screen... Well, it looks very good. To divide the screen, that looks super super good. Look, there's this comment on the 14th that says Not only consumption history for MRP type, also we consider HML, movement, nature of item, such as sizes, material type.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Oh, wait, you're looking under the... Ok, leave that Nature of Material aside. The rest is fine. Ok, so I leave the Nature of Item and in the background it's the Sizes, right?
+
+Pelayo Fernandez:
+The material type I also leave it aside.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, I think we already consider it, it seems that material type is like lmr or I don't know, but obviously it is already there. You know what, just leave it anyway, just in case. Material type, ok, to show material type.
+
+UNKNOWN_SPEAKER:
+It can be...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yes, obviously it refers to the same thing, but just leave it just in case.
+
+Pelayo Fernandez:
+Ok, well, this is what I found, these are the ones I found, there is nothing else.
+
+Conference Room (Hector Palacios) - Speaker 1:
+This is for MRO and for chemicals.
+
+UNKNOWN_SPEAKER:
+This is...
+
+Pelayo Fernandez:
+Using BRD, IPOL, Demand and Inventory Finder.
+
+Conference Room (Hector Palacios) - Speaker 1:
+And it's clear, it's conciliated.
+
+Pelayo Fernandez:
+It's MRO Chemicals Inventory, Chemicals Demand, MRO Demand, Drilling Demand as well. It's both. Demand and Inventory.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Conference Room (Hector Palacios) - Speaker 1:
+That's it then. If you can, pass me those attributes, more than anything, what I would like to know is if it is MRO, chemical, or both. And the attributes that we have to consider. Okay, I'll pass you the Excel. I'll pass it to Sagar so he can check if we really have them mapped, and if not... Okay, how... I'll pass it to you in writing, or I'll pass it to you...
+
+Pelayo Fernandez:
+Yes, yes, pass it to me in writing in the chat, it's okay. Okay, well... I'll put the business, the process and the attribute that we have in doubt.
+
+Conference Room (Hector Palacios) - Speaker 1:
+The business and the attribute. The process is not going to add up.
+
+Pelayo Fernandez:
+Ok, I'll send it to you now. Ok, perfect. Thanks, Player. You're welcome. Are you going on Friday?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yes, we're going on Friday. Besides, it's the monthly meeting, so it's a good day to get together.
+
+Pelayo Fernandez:
+What do you usually talk about?
+
+Conference Room (Hector Palacios) - Speaker 1:
+The truth is that lately I haven't been joining because it was later in Spanish time and I didn't join, but generally they talk about news, especially things like human resources, probably the topic of promotions is going to be touched on because February is coming, that's for sure, sometimes about news about projects, that I don't know, we won a project here, and they start commenting and things like that in general, like big idols that are in the company, when someone joins, maybe birthdays, I don't know, things like that.
+
+ Did they ask you to introduce them?
+
+Pelayo Fernandez:
+No, no, no, they didn't name me, they just named Pablo in the toast on December 31st, but not me, not on the 31st, when we did it to end the year, but they didn't say anything to me. Pablo had to introduce himself.
+
+Conference Room (Hector Palacios) - Speaker 1:
+That's what happens, when new people arrive, they have to introduce you. So, like you, you weren't there for the previous one, I think. You arrived for the new year, but that wasn't the official event, it was a New Year's Eve one. Now, maybe you have to... They'll ask for it. Maybe they'll ask for it on the same day, so be careful with that. Pablo introduced himself in Spanish, so it's fine. Even if it's in English, you won't have any problem.
+
+
+
+Pelayo Fernandez:
+Yes, no, no, no problem. I just want to say that it's a bit late for Spanish time, and it's Friday.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yes, yes.
+
+Pelayo Fernandez:
+But after that, we'll go.
+
+UNKNOWN_SPEAKER:
+Sure, yes.
+
+Pelayo Fernandez:
+We'll have a beer. Ok, ok. See you. Ok, see you. Bye.
+
+UNKNOWN_SPEAKER:
+What? Bye. Sorry, what? I thought you were going to tell me something.
+
+Conference Room (Hector Palacios) - Speaker 1:
+But if not, bye. No, no, no.
+
+Pelayo Fernandez:
+I'll send it to you now.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ok, bye.
+
+Pelayo Fernandez:
+Perfect.
+
+Conference Room (Hector Palacios) - Speaker 1:
+you Bye bye, ciao ciao.
+
+UNKNOWN_SPEAKER:
+you
+
