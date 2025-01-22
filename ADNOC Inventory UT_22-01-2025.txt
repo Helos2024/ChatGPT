@@ -1,0 +1,1278 @@
+Bastian Osorio:
+Bastián, ¿cómo estás? Bien, ¿y tú, Saúl?
+
+UNKNOWN_SPEAKER:
+¿Cómo estás?
+
+Bastian Osorio:
+¿Qué tal se llama?
+
+UNKNOWN_SPEAKER:
+Bueno, ¿cómo están?
+
+Bastian Osorio:
+Bien.
+
+Bastian Osorio:
+Esperemos un poco a Héctor, pero a mí lo único que me interesa, bueno, son dos cosas. Primero voy a, no en esta sesión, pero quiero revisar los dos scripts. En general creo que están bien, pero falta agregar, pero eso lo voy a hacer yo, falta agregar la parte de Preventive Maintenance. Básicamente diciendo que vamos a, lo que habíamos hablado, de que vamos a tener algunos key figures que van a servir de referencia, y luego vamos a abrir la colaboración en caso de que los planners quieran empezar a planificar planes de mantenimiento.
+
+ Y esa sería la única distinción entre la planificación parte de ManPlanning para MRM Chemicals. No sé si ustedes ven, primero otra distinción No, la realidad es esa.
+
+Saul Portillo:
+Creo Basti que, recuerdo Fiamma, no habíamos agregado esa parte, lo del forecast de referencia.
+
+Fiamma Giorgi:
+Sí, sí, sí, agregamos uno. Eran tres pasos de preventive al casi último.
+
+Saul Portillo:
+Lo que pudiera faltar Basti ahí es lo que tú hablas de colaboración. Es lo que pudiera faltar como una línea de eso.
+
+Bastian Osorio:
+Entonces, hola Héctor.
+
+Hector Palacios:
+Hola, ¿qué tal?
+
+Bastian Osorio:
+Oye, pensando un poco en las sesiones de la próxima semana, ya se acerca la fecha. Yo te propongo lo siguiente, que nos dividamos. Yo tomé las sesiones de demand planning y tú tomé las de inventory planning.
+
+Hector Palacios:
+Sí, yo estaba enfocado en eso.
+
+Bastian Osorio:
+Sí, entonces lo que me interesa esta sesión y yo por mientras me bajo para trabajar en demand, para revisar todo el tema de demand planning. Es. El tema del cálculo. De si tiene algún ejemplo, a ver si hace sentido, porque el script ya lo revisamos y para mí el script es más o menos, o sea, está bien, está correcto. Obviamente es básico y está bien que sea básico. Porque estamos recién empezando. Entonces no sacamos nada con tener un un.
+
+ Un script super super detallados y finalmente este el primer. Como ya lo hemos dicho en infinidad de ocasiones. Pero me interesa ver un par de ejemplos y cómo se hace el cálculo y si tiene sentido, ¿cachá?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+A ver, realicemos este de acá. Este es un cálculo extraño de ellos donde ellos tienen este rewarded point y el máximo lo definieron al 100 porque simplemente fue el máximo que han tenido históricamente. Entonces aquí se condice el número. Máximo consumo. Sí, máximo consumo que tuvieron es de 100. Y ahí definieron el reorder point y el máximo stock en 100 también. Y BP te está dando algo mucho más pequeño.
+
+ Déjame revisar cuál es. Yo tengo esta hoja.
+
+Bastian Osorio:
+lo otro vamos a estar trabajando en la backup versión y cuántos materiales cuántas combinaciones tenemos en la vaca bueno tenemos una pura ubicación cierto y cuántos materiales cuando tenemos como 50 60 no recuerdo definimos 51 25 de fastmover, perdón,
+
+Saul Portillo:
+25 de B, 25 de C ¿Dónde está? ¿Tienen un filtro?
+
+Bastian Osorio:
+Hay un filtro que compartí que se llama Unit Testing, y después están los filtros de A, B y C.
+
+Fiamma Giorgi:
+Son 25 de C, 20 de B y 1 de B.
+
+Saul Portillo:
+Ahora es algo orbital también, o sea, definimos por el ABC Y es uno, Basti, porque en lo de ABC ellos solamente tienen un material con A Por eso.
+
+Hector Palacios:
+Vale, este es el valor que ofrece IDP, te pone un reorder point bajo porque realmente... A ver, cuál es la razón aquí. ¿Pero cuál es la demanda promedio? La demanda promedio está acá, esta es la demanda promedio por el liptend, entonces el liptend demand, 5.
+
+Bastian Osorio:
+¿Pero cómo está ¿Cómo construiste esa vista?
+
+UNKNOWN_SPEAKER:
+¿Cómo?
+
+Bastian Osorio:
+¿Los parámetros?
+
+UNKNOWN_SPEAKER:
+Pequeños. ¿Pero cómo se calculan?
+
+Hector Palacios:
+Es la demanda promedio que estoy viendo acá, lo multiplico por el lifetime. ¿Pero qué pasa si te mueve la vista? No se mueve. ¿Cómo no se mueve? No se mueve, pero si es para hacer en la análisis de la obra, sino esto no se lo va a presentar a ATNO, que es para no ser. Entonces tenemos nueve datos, con los nueve datos dicen no, esto no es suficiente para que el problema empiece en estándar, entonces se va con Poisson.
+
+
+
+Bastian Osorio:
+Exacto.
+
+Hector Palacios:
+qué en qué horizonte temporal en todo el horizonte en cual 5 años seguro que estoy tomando en cuenta de diciembre 5 años justo entonces si los números son bajos ahora hay cierta limitación porque al principio el consumo Y podemos
+
+Bastian Osorio:
+ver el... Porque acá lo primero para mí sería ver el consumo anual.
+
+Hector Palacios:
+Es un M. ¿Son los rojos? Está catalogado como F, pero esta es la segmentación de ello, ¿verdad? Sí, esa es la de ello.
+
+Bastian Osorio:
+Si, pues si te fijas, el 2021 tienen 100, después tienen el 2021 48, si son los rojos, después tienen el 2022 14, hay un par de valores más, pero un 65, después en febrero de 2024 10, o sea, han tenido varios, digamos, several consumptions en casi todos los años.
+
+Hector Palacios:
+Claro, en fastmover realmente. En los últimos tres años, 2022 tuvo dos, 2023 tuvo dos. Dos consumos por año más o menos ha tenido. ¿Pero que sea fastmover no quiere decir que no se puede usar por son? ¿Está correcto para mí lo que estás mostrando? Sí, el tema es que los números igual son medio... Hay una variabilidad. Gigante, pero hay una limitancia, es que hay una variabilidad gigante, pero también hay consumo muy esporádico.
+
+ Entonces aquí creo que todos los modelos se quedan un poco cortos, la verdad. De hecho este es el target service level que queremos y esto es lo que se estaría logrando con lo que estamos. Igual el target service level es algo que se vería con mucho dato. No entiendo, ¿cuál es el Estimated Service Level? Si comparáis el Lipton Demand que tuvieron históricamente, es decir, esta demanda sobre el Lipton y así, y lo comparáis contra el Reorder Point, veís en cuántas veces cumplió.
+
+
+
+Bastian Osorio:
+Un Exposed Service Level. Más o menos, sí.
+
+Hector Palacios:
+una estimación porque dicen que si el IP también es de un mes entonces bueno en este caso no está sumando nada es simplemente la demanda es la demanda sobre el IP es un puro mes y este material también va
+
+Bastian Osorio:
+a tener forecast osea imposible que no tenga forecast con este...
+
+Hector Palacios:
+como va a tener forecast con estos datos bueno son horribles pero osea pero esperate esperate eso es lo que yo decía siempre del F. Imagínate que tenemos dos consumos por año, con eso no hacen nada.
+
+Bastian Osorio:
+Pero los dos consumos son, fíjate que en promedio son 35, 65, 100, 48. Lo que dice la estadística en este caso es que vas a consumir. O sea, si la tuviste que jugar por algo el año 2025, van a consumir el nuevo a consumir. Bueno, en promedio ha consumido como mínimo, se han consumido, no sé, dos mil veinticuatro. Yo no lo tomaría en cuenta porque sabemos que la información de ahí está completa, pero todos los otros años han consumido más de cincuenta unidades por año.
+
+ Entonces. Si el litro es muy largo, tienes que comprar.
+
+Hector Palacios:
+Felizmente, una de un mes.
+
+Bastian Osorio:
+Pero eso de todas formas lo puede dar el sistema.
+
+UNKNOWN_SPEAKER:
+No sé si tendría este caso como Advanced Price Planning. ¿Tú crees que van a arrojarse?
+
+Hector Palacios:
+Porque imagínate, ¿qué les va a arrojar el sistema aquí? En base a tu número, imagínate que tiene un promedio de 40 o de 30 de Order Size. Y le va a decir, tenés que comprar 30 en, no sé, en agosto de este año. ¿Por qué? Porque IVP simplemente está diciendo con qué accuracy, súper mala, pero tenés que comprar 30 este año. ¿Tú crees que la van a seguir? Así como para tomar una decisión de replenishment basado simplemente en un forecast malo.
+
+
+
+Bastian Osorio:
+Es que yo lo que diría primero en términos En términos anuales, ¿cuál ha sido el promedio de consumo? Pues digamos que 50, por decir algo, o ya 40, simplemente por decir algo. Para hacer el ejemplo, si en los últimos cinco años han consumido 40 anuales, digamos, de forma, digamos, no se puede, van a tener que comprar, o van a quebrar, o van o tienen que comprar?
+
+UNKNOWN_SPEAKER:
+Una de dos.
+
+Hector Palacios:
+Esa es la gran pregunta, porque aquí me imagino desde un E. Entonces, ¿realmente importa o por qué no? B y D. Bueno, está en medio. Entonces, la pregunta es, ¿quieren mantener stock para esto? Yo entendía del manual de invento y procedios que no, que va solamente para los B, querían mantener inventario.
+
+Saul Portillo:
+Además, el low cost, eso sí también importa, pero...
+
+Hector Palacios:
+No, eso está en favor de tener inventario, porque si cuesta nada...
+
+Saul Portillo:
+Y es un C que parece no representada. Ese ABC de ellos, ¿qué significa? Porque entiendo que el vital, el de otro es vital, el de saleable o lo medio, pero el ABC, ¿por importancia de qué? ¿Es el mismo ABC nuestro de demanda?
+
+Hector Palacios:
+Sí, es el mismo ABC nuestro. Pero con valor, entiendo, no con volumen. Después llega la discusión esa de decir que lo forecasteamos o no. Yo creo que al menos este es como el de los casos que no sé si pega. O sea, quizás, quizás. Realmente son ítems que son como de bajo, como decía Saúl, de baja importancia. De bajo volumen, quizás deja que el forecast lo haga, que se haga automático el replenishment, y ahí vemos luego que se levanta una alerta si después tenemos sobrestock, pero quizás no les da lo mismo.
+
+ En vez de estar seteando los niveles, quizás que se genere el forecast y en base a eso ya.
+
+Bastian Osorio:
+Pero para mí, Héctor, este es un caso de manual. O sea, para mí la data está buena para probar el modelo. No digo que esté buena en el sentido de hacer un forecast preciso? Evidentemente no. Pero digamos, consumo esporádico y como con alta cantidad, consumo dos, tres, una vez al año, es como que justamente acá tendríamos que ser capaces de testear la, digamos, la utilidad de todo el modelo, tanto por forecast, tanto como por reorder point.
+
+ O sea, si no pudamos mostrar cómo abordar esto y ser capaces de entregar un ejemplo convincente, estamos mal. Pero lo digo internamente, o sea, tenemos que ser capaces de llegar a una solución.
+
+Hector Palacios:
+Yo le tengo respoca fea al Forkast, pero sí entiendo tu punto. Aquí mi gran pregunta es que ellos van a querer que se hagan decisiones de replenishment en base a esto, porque el Forkast saben que no va a ser como bueno. Entonces, ¿realmente queremos seguir esto o queremos seguir un simplemente o planificar así cuando pase. En vez de planificar, simplemente reaccionar.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Bastian Osorio:
+O sea, pero lo que tú, sí, te encuentro razón, pero lo que tú estás diciendo sin forecast es que el service level, digamos, actual service level sin forecast es el 67 por ciento.
+
+Hector Palacios:
+Con el YORK-REPON que estamos definiendo aquí en IBP, pero es una alerta.
+
+Bastian Osorio:
+Claro, expone, y es por eso que justamente yo creo que el forecast viene a complementar el otro, el porcentaje que te falta o no?
+
+UNKNOWN_SPEAKER:
+Puede ser.
+
+Bastian Osorio:
+Pero cuánto te da el reorder point?
+
+Hector Palacios:
+El nuestro va como a 14 por ahí. Lo tengo en la otra vista con más detalle.
+
+UNKNOWN_SPEAKER:
+14.
+
+Hector Palacios:
+Ah, pero porque es un mes.
+
+UNKNOWN_SPEAKER:
+Sí, pero...
+
+Hector Palacios:
+Es que igual cambié... No sé si le cambié a esto... ¿Qué parece como gama esto? A mí me dio 14 porque es lo que da el gama. Pero no sé por qué está clasificado como gama. Parece que yo lo... Fique manualmente para ver qué da, para ver qué me diera algo mejor.
+
+Bastian Osorio:
+Igual en ningún caso da algo tan bueno, entonces... Pero es que 14 no puede ser, porque un Josette dio como una naive, así súper naive. Cada vez que tú te lo sumó... Es la demanda sobre el item, po.
+
+UNKNOWN_SPEAKER:
+Sí, no sé si lo sé, pero si ocupamos Poisson...
+
+Hector Palacios:
+9. 30, si ocupamos la normal.
+
+Bastian Osorio:
+Pero es que ahí yo creo que hay algo mal con la depresión estándar, ¿no la está escapando?
+
+UNKNOWN_SPEAKER:
+Acá está.
+
+Hector Palacios:
+7, semanal sí. Si la convertimos a meses, sería algo como esto. Por el lifetime, por la raíz cuadra del lifetime.
+
+Bastian Osorio:
+¿Pero cuánto da más o menos?
+
+UNKNOWN_SPEAKER:
+¿La mensual? 16.
+
+Bastian Osorio:
+¿Y con una desviación estándar se supone, o con una desviación estándar sobre el promedio, cuánto capturamos para una distribución gamma?
+
+Hector Palacios:
+Y el promedio, espérate... 87 Es que, espérate, que ahí no sería nada más sobre el ítem Tengo que pensar bien en estos casos. ¿Cómo lo vamos a hacer? El 100% de variabilidad es el que está yendo abajo, 123%. Estos son los valores mensuales que estoy obteniendo la vista, porque ni cargando la hora ni el semanal. Y estos son los que está obteniendo IBP. Entonces simplemente me aseguro que estén de la mano, ¿cachai?
+
+ Cualquiera que esté calculando yo acá, este es el de IBP. Esta es la desviación estándar que calculo a nivel mensual. Bueno esta es la giga calculo semanal IBP y son valores resimilares y de hecho me dieron los valores iguales para el gama en este caso 14 14 está bien cachai pero 14 no es que no lo podéis presentar 14
+
+Bastian Osorio:
+los usuarios nos van a mandar a la chucha porque cada vez que he tenido un consumo ha sido bueno muy pocos consumos que han sido 14, casi todos los consumos son altos. Entonces, es como que estáis acá firmando que te van a quebrar el inventario. Y la única explicación que encuentro yo es que la desviación estándar es muy baja. Porque hemos visto que los consumos han sido 100, 50 y tanto, 40 y tanto.
+
+ Entonces, entiendo que el promedio, por puro promedio te de eso, si lo entiendo y está bien.
+
+Hector Palacios:
+Ahora mira, si le quita el 0 acá y hace una variación estándar solamente del order size, 29, pero el gamma se va a la mierda.
+
+Bastian Osorio:
+¿Cómo se va a la mierda?
+
+UNKNOWN_SPEAKER:
+1.
+
+Bastian Osorio:
+¿Pero por qué te queda 1 si la detección estándar es más alta, debiese aumentar?
+
+Hector Palacios:
+Tiene que ver algo con los factores de forma y eso, que cuando las vías son estándares es demasiado alta respecto a la medida. Es porque la medida es baja, es el tema. Si le quitamos los cero a la medida también sería baja, pero también es irrealista porque...
+
+UNKNOWN_SPEAKER:
+A ver... Sí, ahí está bien.
+
+Bastian Osorio:
+Pero es que esto va a funcionar bien en algunos casos y en otros no.
+
+Hector Palacios:
+Entonces tenemos que entender en qué casos vamos a calcular la medida, si los cero y en qué casos los vamos a calcular con los ceros porque va a ser un problema.
+
+Bastian Osorio:
+Acá en particular está bien porque el promedio, cada vez que tenéis consumo, es alto, no es bajo. O sea, decir que el consumo, el promedio...
+
+Hector Palacios:
+¿Te acordás de la fórmula que teníamos del demand rate? Quizá aquí, quizá este es el ejemplo del por qué se acostuma Sí, la que se multiplica por tres.
+
+Saul Portillo:
+O sea, la que es por el meet and meeting failure y la otra. Ya la vamos a buscar. Pero 87, 87 sí me cuadra.
+
+Hector Palacios:
+Entiendo que los números te hagan sentido, pero es que a mí no me hacen sentido los inputs, ¿cachai? El 36 no es lo que yo espero, porque la frecuencia es tan baja, que no esperai que durante el lead time tú vayas a tener esa cantidad, esa magnitud.
+
+Bastian Osorio:
+Tipo, sí, justamente sí, ¿por qué? Porque cada vez que tiene el consumo son de esas cantidades, pues Héctor. Si tiene el consumo, digamos, pero déjame terminar. Es un mes. Cada vez que tiene consumos son grandes. No, no, no, no. Pero espérate.
+
+Hector Palacios:
+Este es el consumo sobre el Lipton. Imagínate, tú decís Lipton es de un mes, 36 por 12. Cuánto te da? Es el consumo anual estimado por el Lipton. No puede ser.
+
+Bastian Osorio:
+No, pero pensando No, porque cada vez que tienes consumo, yo lo entendería así, si es que tienes consumo durante el lead time, el promedio es 36. Si es que tienes. Y tiene sentido, porque cuando hay consumo, nunca son muy rara vez un consumo bajo.
+
+Hector Palacios:
+Estoy comprando.
+
+Bastian Osorio:
+que Va a haber 36.
+
+UNKNOWN_SPEAKER:
+Ojalá que sea así, porque sería bastante sencillo solucionarlo.
+
+Hector Palacios:
+También estaría de la mano con que en el operador le quitan a los ceros, para calcular la variación estándar. Revisemos otros ejemplos para ver si realmente ha sido así o si tenemos algún punto en donde no se cumpla. Aquí tenemos otro donde estamos por encima de ellos, pero tampoco estamos logrando exactamente lo que queremos.
+
+Saul Portillo:
+¿Qué es el MTF entre leaptime por la demanda promedio?
+
+Bastian Osorio:
+Ya tenemos dos opciones para explicar eso. Pero, espera, antes de cambiar el dato, ¿le podéis cambiar leaptime?
+
+UNKNOWN_SPEAKER:
+¿Cambiar leaptime?
+
+Hector Palacios:
+Sí, a un input.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Bastian Osorio:
+Ahí en tu forma, si le ponen un litán de una semana. O quien empiece con esto, yo estoy llevando, estoy llevándolo al extremo.
+
+UNKNOWN_SPEAKER:
+Te lo bajas.
+
+Hector Palacios:
+Espera, dame un segundo y por alguna razón.
+
+Hector Palacios:
+No, no me va a funcionar porque al final tengo esta hoja única entonces. Tengo que trabajar en una más. ¿Me vas a mostrar esto otro caso? Quiero ver rápido si es que esto que decís es algo que vamos a tener que aplicar, porque eso que decís tú capaz que tenga sentido, pero puede que sea algo que ya se ha considerado con las fórmulas.
+
+UNKNOWN_SPEAKER:
+Este no era el que quería ver.
+
+Hector Palacios:
+Es que si agregan los ceros, está el subestimado Recuerden que tenían un montón de casos donde ellos son... Uff, ¿qué pasa acá? Tenían un montón de casos donde ellos tenían como un reorder point de 1, entonces a mí me preocupa que sí que hacemos esto. Bueno, capaz que no, capaz que no pasa nada.
+
+UNKNOWN_SPEAKER:
+Este caftao, ¿no?
+
+Hector Palacios:
+Sí, porque si el promedio esperado es 40, hay que tener 47. Standard deviation de 3.
+
+Bastian Osorio:
+¿Pero el promedio es 40? ¿Cuánto tienes que consumir? Standard deviation de 3.
+
+Hector Palacios:
+Si esta cuestión fuera... Es demanda sobre el lifetime, porque el lifetime seguramente es más largo. Si pusiera esto, el lifetime... Eso si que no lo entiendo.
+
+Bastian Osorio:
+Ah si, no se si puede ser, no se si puede ser.
+
+Hector Palacios:
+Service level de 99. Y los valores, bueno es que los dbp están malos. Ah claro, estos son los que deberían dar dbps y que sigamos con los 0. Y aquí debería elegir la normalidad. Y debería darte un 47 que no me está dando porque está corriendo con los valores de IP. Aquí tiene un punto en donde dar 47 y ellos lo que tienen es máximo 22 y ese 47 esperate son cinco semanas de...
+
+Bastian Osorio:
+¿Puedes mostrar el consumo?
+
+Hector Palacios:
+Los consumos siempre andan por 12 sí es que te suma los próximos cinco meses cuando se suma este más este más este cachai porque ese es tu periodo de exposición entonces cuando ves esta barra estás viendo los próximos cinco
+
+Bastian Osorio:
+cuando ves esta barra estás viendo los próximos cinco y cuál es tu cuál es tu lead time cinco cinco meses aquí es que no te funciona ¿Y cuánto es el promedio?
+
+Hector Palacios:
+Tenemos que mejorar los nombres ahí porque no se ve directo. Tenemos que bajarle a lifetime, lifetime demand. Tenemos que hacer nombres mucho más sencillos para esto. ¿Cuánto es tu promedio anual?
+
+Bastian Osorio:
+¿Cuánto es tu promedio anual?
+
+Hector Palacios:
+¿Tenemos un keyfigure para eso?
+
+Bastian Osorio:
+¿El anual no? No, el mensual. Podemos crear un gráfico, espérate, dame un segundo. 1.48 por 52. Son 76 dividido a la mitad, 38. Más o menos 38. ¿Cuánto te da de Reorder Point?
+
+Hector Palacios:
+Da 13 con el modelo usual y da 47 si le quitamos los 0. Está bien el segundo. El promedio, sí, está bien.
+
+Bastian Osorio:
+¿Cómo va a estar bien si tenés 16 tarifs por sobre?
+
+Hector Palacios:
+Tú tienes que tener sobre 16 para tener 100% de Por eso, porque tenemos el 46.
+
+UNKNOWN_SPEAKER:
+Pero, ¿46 es excesivo?
+
+Hector Palacios:
+No, si tu lifetime son 5 meses. Pero tu lifetime de demanda histórico, fíjate, para eso puse eso. Para que te fijaras que aquí, lo máximo que he tenido históricamente sobre el ítem es 16. Este no es el consumo, este es el... Consumos sobre el item, el máximo. Los consumos son 8, 8, 4, 8, 8, 8.
+
+Bastian Osorio:
+Es decir, yo lo hago súper sencillo como la prueba de calidad que hago. Cuánto es tu consumo? El I.D. 1.48. 48, cierto? Por 1.48 por 52, tu demanda anual es de 77. Ya, si yo lo divido por y lo multiplico por 5 para que me quede la demanda durante el litán me queda 32 ya entonces en promedio la demanda durante el litán es 32 entonces como mínimo de río después tengo
+
+Hector Palacios:
+que tener 32 como el promedio de demanda sobre el litán es 16 el máximo 16 históricamente pero cómo puede ser eso si tu demanda promedio es 1.48 la semana Imagínate, el máximo sería 20 por acá. ¿Tienes el código? ¿Tienes el código para buscarte la demanda anual?
+
+Saul Portillo:
+Estoy haciéndolo acá en el gráfico. Ahí está, 3647 lo doy, 3647, 20, 20... Pero 20, Basti, 20 es lo máximo.
+
+Bastian Osorio:
+Para que yo lo pueda entender, sígueme en mi línea de razonamiento y si está mal dime dónde, pero si me cambié completamente lo que estoy diciendo, yo me pierdo. Dale, dale. Ya 1.1.48 por 5. O sea, por por 52 por un año y yo lo divido por los 5 meses. Esto dividió por 12 por 5 meses. Me da 32. Entonces la demanda promedio durante el liten. Me da 32.
+
+Hector Palacios:
+De nuevo el cálculo, como es.
+
+Saul Portillo:
+Disculpa, Basti, pero antes de que te diga aquí estuvieron los consumos anuales. Aunque tengo aquí una vista y el promedio se agarra los cinco años es 15 tengo el 2028 21 28 22 16 23 28 y 24 16 entonces 1.48 está malo ese material usage average rate pero creo que ese creo que es monte no ese monte dice wiki no creo que al final Ah, el número 48, este es weekly, sí.
+
+Hector Palacios:
+Sí, está bien, 48 multiplicado por 4 es weekly. Y este tú lo estás multiplicando por 52.
+
+Bastian Osorio:
+Bueno, pero es lo mismo que agarrar el monthly, 1 o 4.
+
+Saul Portillo:
+El anual promedio me da 15, se agarró.
+
+Bastian Osorio:
+Sí, 4.94 por 5 da 24, 24.7. Exacto.
+
+Hector Palacios:
+A ti no te interesa el anual, te interesa qué pasa sobre el lifetime.
+
+Bastian Osorio:
+Pero si siempre está sobre el promedio, porque el promedio es muy poco. El promedio es tu, digamos, como el... No sé, salir en polera, en polera y jeans en la noche española. O en estos días. O sea, en volando acá vais de frío, pero estáis con mucho riesgo. No sé si ven el ejemplo, pero siempre tenéis que estar sobre el promedio. Entonces, el promedio te da la primera referencia. Y a eso hay que sumarle una componente que viene desde la desviación estándar.
+
+ Que si la desviación estándar es mucha, que en este caso me parece que no, sería poca. Y si la desviación estándar es mucha, sería poca. Y si la desviación estándar es mucha, sería poca. Bueno, se te va la mierda.
+
+Hector Palacios:
+Y este, ¿por qué pozón? Podría ser pozón. Este es... Dijimos que debería ser... Esta no es la master data. Tenemos que llevar toda una master data en común. ¿Puede moverte tú por mientras todos los atributos, los de segmentación, lo que sea? ¿Podemos moverlo a la Location Product? Debería estar todo ahí. Porque creo que tenemos el Distribution Type, lo tenemos en MRO, Location Parts, y después todas las segmentaciones las tenemos en la Location Product.
+
+ Está todo ahí en este momento Subtítulos por la comunidad de Amara.org Está súper bueno el Planner Workspace que se puede aquí mismo cambiar. Entonces yo ahora, por ejemplo, lo cambio manualmente. Lo cambio a gama. Y puedo guardar aquí Y el modelo también lo puedo ejecutar de aquí, solamente que no lo tengo para la versión backup. Laborial. Tabla.
+
+Hector Palacios:
+¿Cachaste o no?
+
+Bastian Osorio:
+El tema de los ceros, mirá. Sí, los ceros, pero del primer ejemplo me quedo que hay que sacar los ceros. Ya, pero ahora si los sacáis...
+
+UNKNOWN_SPEAKER:
+Ya, espérate.
+
+Hector Palacios:
+Pero para este segundo ejemplo, si los sacáis, es que te queda la patada. O sea, no es una regla única, eso es lo que voy. Aquí te queda demasiado. Si no, quitai los 0.
+
+Bastian Osorio:
+Pero miremos con número. De nuevo, ¿cuánto es el promedio semanal? 20, ya lo dijimos.
+
+Hector Palacios:
+Era como 20, 25 por ahí. Entonces sobre eso ya está bien. No puede ser 47. No, no, no.
+
+Bastian Osorio:
+Pero el promedio era 24, ¿cierto? Entonces tú siempre tienes que tener más que el promedio. Y en este caso el service level es 94. 9 cachay y tu estabas diciendo 13 con 13 que es el bis leve 99% el dia del... Osea si tenis consumo muy alta probablemente que te rompa entonces que es el bis leve 99 ese es pozón, pozón de azonugra pero pero cuando con cero o sin cero?
+
+Hector Palacios:
+aquí sin los ceros se haga la mierda pero es que el nivel de servicio es 99% déjame revisar por qué no está trayendo se le quedó corto 55.
+
+UNKNOWN_SPEAKER:
+Para mí no está mal. Para mí está malísimo.
+
+Hector Palacios:
+No, porque cómo va a estar bien. Pero mirá, fíjate que tenés que entender este gráfico. Este es el máximo histórico que ha habido. Nunca había ni siquiera. Nosotros estamos estimando 24. Jamás ha pasado. El máximo histórico ha sido 16 de la demanda sobre el item.
+
+Bastian Osorio:
+pero entonces el promedio de la demanda es que entonces el promedio de la demanda debe ser más bajo, Hugo. Hay un tema que estoy viendo con el, con el, aquí calculándolo manualmente, ¿no?
+
+Saul Portillo:
+Con el average weekly rate. O sea, nosotros tenemos el máximo, el consumo que tiene, cuando tiene un consumo, son 8 unidades. No tiene más.
+
+UNKNOWN_SPEAKER:
+¿Ok?
+
+Saul Portillo:
+Cuando tiene 16, porque hay 2 consumos durante ese mes o un mes y otro. Si yo saco el promedio, sacando los ceros a nivel semana, ahora todos los consumos, lo divido entre la cantidad de consumos, te da ocho. Si le saco los ceros. Si no le saco los ceros, te da cero punto algo, porque es 60 entre 180 pedidos aproximadamente.
+
+Hector Palacios:
+Que tienen cero, en la venta histórica. Tenemos que hacer una diferencia porque si no le quitamos los cero, el promedio va a ser ocho, ¿verdad? ¿Cuál es la diferencia entre un intermitente que tiene promedio ocho a uno que tiene demanda continua que tiene promedio ocho? ¿Debería haber alguna diferencia o no? Esa es la pregunta. No estoy diciendo que el caso no.
+
+Bastian Osorio:
+No se puede evaluar solo con el promedio. Tienes que agregar la dirección estándar. Y si tú agregas los cero en el promedio y la dirección estándar, En ambos casos la variación estándar sería cero. Si no consideramos los cero, para el continuo y para el intermitente, la variación estándar sería cero porque siempre tiene lo nuestro. ¿Podría abrirte un Excel y hagamos algunos casos? ¿Lo tengo acá? No, un Excel para ver promedios hacia FortaMIS.
+
+
+
+Saul Portillo:
+Héctor, ¿qué valor te entregó allí el Material Usage Average Weekly Rate, que es el que calculamos con el Forecast en este caso?
+
+Hector Palacios:
+El Average Weekly Rate era 1.48, si no me equivoco.
+
+Saul Portillo:
+1.48. Eso es lo que me llama la atención, cómo el sistema, si le estamos ejecutando un Simple Average y estamos tomando la historia, aquí estoy viendo el algoritmo, la historia sin los ceros, o sea, la historia normal, ¿cómo te entrega
+
+Bastian Osorio:
+ese forecast promedio? Mirá, el ejemplo más sencillo es si tu demanda promedio sin ceros es 8 a la semana. Si tu demanda es 8 a la semana y tu deviación estándar es 0, y pongamos que tu en una semana, entonces tu Reorder Point es 8. Es el promedio. Y como no hay decreción estándar, con 8 te vale.
+
+UNKNOWN_SPEAKER:
+Con 8 te sobra para tener, en teoría, 100% el nivel de servicio.
+
+Hector Palacios:
+En este caso no va a valer, ¿verdad? Para este caso es lo mismo con 0 sin 0. Standard deviation.
+
+Hector Palacios:
+Ahí te cambian bastante los números, ¿no? Entonces ahí si te dice que tu promedio de demanda es de 2.
+
+UNKNOWN_SPEAKER:
+Y este es 3.58 de deviación estándar. Con 0.
+
+Bastian Osorio:
+Con 0 y sin 0.
+
+Hector Palacios:
+Ahora el punto es, ¿cuánto te daría poción con esta opción?
+
+Bastian Osorio:
+para mí sincero acá en este caso vamos a meter un lifetime de nosotros decimos la cuestión por ejemplo por un litre de semana en cada caso Mira, vuelvo a ver porfa el ejemplo. ¿Cuánto sería tu safety stock? En los dos casos son claro.
+
+UNKNOWN_SPEAKER:
+Vamos a calcular. Ponle cuatro periodos. Cuatro periodos.
+
+Bastian Osorio:
+Cuatro periodos de lead time.
+
+UNKNOWN_SPEAKER:
+Un segundo.
+
+Bastian Osorio:
+pero mira al tiro con cero a mí me da una mala sensación porque te da una detección estándar y acá evidentemente no hay una detección estándar Depende de que estés mirando.
+
+UNKNOWN_SPEAKER:
+Estoy mirando los datos.
+
+Bastian Osorio:
+No es de enviación estándar, pues sí.
+
+Hector Palacios:
+No, order size o evento. Porque si veis por periodo, claramente hay una enviación estándar. La mayoría de los periodos tiene cero. No hay demanda.
+
+Bastian Osorio:
+Eso muestra la intermitencia. Si yo soy planner, yo sé exactamente lo que me van a pedir. Entonces, como que no me tengo que cubrir frente a las variaciones porque la serie de tiempo es altamente pronosticable. Sí. Sigamos con el ejemplo.
+
+Hector Palacios:
+Por lo cero dice que la demanda esperada sobre el listene de 32. Que no es el caso, ¿verdad? Sobre el item es 8. Entonces tenemos un caso en que unos números nos gustan y otros no. O sea, mira, por ejemplo, con 0 si me gusta la demanda sobre el item. Sin 0 si me gusta el promedio.
+
+UNKNOWN_SPEAKER:
+Que es este de acá.
+
+Hector Palacios:
+Este caso en realidad no aplica a esto de acá. Aquí. Porque eso es demanda continua. Entonces tenemos como un caso mixto. Porque si le quité los cero, la demanda sobre el lifetime no tiene sentido. O al menos el cálculo que estamos haciendo nosotros, como lo estamos calculando, no tiene sentido. Si calcular, porque si calcularamos... Eso es lo que me pasa. Lo que tendríamos que hacer acá es calcular la demanda sobre el Lipton, que sería como esto.
+
+ La suma de este 1, 2, 3, 4 periódicos. Esta es la demanda sobre el Lipton. Entonces el promedio de esa demanda sobre el Lipton es lo que me va a dar acá. De esto voy a excluir ese porque está sonando cualquier hueá. Este de acá. Es similar. Claro, el lote...
+
+Bastian Osorio:
+Ese es como lo esperable, lo que te arrojaría el crosstone, de hecho. Sí, es que por eso es lo que hace... Eso es lo que hace Por eso ocupa el forecast.
+
+Hector Palacios:
+De todas formas es un input para el reorder point y el reorder point tiene que tener este número de antes. Tiene que ser más similar a este que a este. Entonces para el lifetime demand, si no incluimos los ceros, vamos a meter cualquier cosa al modelo de Poisson.
+
+Bastian Osorio:
+Pero va a meter cualquier cosa porque le estamos metiendo pura demanda, no le estamos metiendo forecast.
+
+Hector Palacios:
+Pero para calcularlo no voy a usar el forecast para Pozón porque son demandas intermitentes, te va a tirar los stock en ciertos periodos solamente.
+
+Bastian Osorio:
+Pero si lo hacía a nivel mensual.
+
+Saul Portillo:
+En este caso el sistema Casa y periodo de 7 unidades. Casa y meses de 7 unidades.
+
+Hector Palacios:
+La cuestión es que el demand rate sí lo tenemos que calcular con los ceros. Pero si hay casos en donde esto nos va a dar horrible, que es como el primer ejemplo.
+
+Bastian Osorio:
+Está mal. Ninguno de estos dos casos aplica perfectamente.
+
+Hector Palacios:
+Ahora veamos la fórmula que tenemos metida en el que nunca me he entendido. ¿Saúl cuál era? ¿Dividió qué?
+
+Saul Portillo:
+Ahí está en el chat. Es el mid-time between failure dividido entre el lead-time multiplicado por la demanda promedio.
+
+Hector Palacios:
+¿Puedo revisarte este caso en el time series análisis, Saúl? Que lo estuviste haciendo hace poco, ¿no? Sí. ¿Para que sepamos cuál es el mid-time between failure?
+
+Saul Portillo:
+¿Quieres ver la ejecución? Este no es el ejemplo que queremos ver.
+
+Hector Palacios:
+Igual podríamos aprovechar este, porque este funciona bien con los ceros.
+
+Bastian Osorio:
+Simplemente tenemos que asegurarnos que escoja el modelo adecuado aún así está por sobre lo que están esperando pero quedaba 13 sí y la actitud y cuánto es que de nuevo a mí no me cuesta yo tienen 10 pero yo tengo valores correos a no ser pero si fíjate que cuando yo cuánto ¿Cuántos 16 veo? 1, 2, 3, 4. Caleta 16. Y el LITEN es 5 meses.
+
+Hector Palacios:
+Creo que tienen esto al revés, fíjate.
+
+UNKNOWN_SPEAKER:
+Pero Héctor...
+
+Bastian Osorio:
+16 y la demanda sobre el LITEN. Los consumos son 8. Ya, 8, 8. Pero en 5 meses, si tienen consumo 2 veces, te van a romper el inventario. Y eso ha pasado varias veces.
+
+Hector Palacios:
+No, pero si acá lo tienen. Esta es la demanda sobre el Lipton. No es más que esto. No puede ser más que esto. Esto ya consideró eso.
+
+Bastian Osorio:
+Ya es el máximo. Y lo tienes varias veces y tú tienes 13. Históricamente tu demanda sobre el Lipton.
+
+Hector Palacios:
+No, no, no, no. Ahí te doy de nuevo. La demanda histórica es 8, 8, 8 y 4. La demanda sobre el Lipton, sobre todo estos cinco periodos, es 16. Y si hay los próximos cinco periodos, es 16 también. Es el peak de consumo.
+
+Bastian Osorio:
+ese pic lo has tenido en el gráfico 2 3 4 veces ya has tenido cuatro veces y tú dices entonces voy a fijar mi orden bajo ese punto pero como si ya ha pasado cuatro veces o sea en el caso el caso que tú me estás diciendo que ha pasado cuatro veces te rompe inventario está mal y tiene un 99 por ciento nivel de servicio si está mal bueno se puede Por eso es una alerta, por eso está
+
+Hector Palacios:
+acá. Por eso está el 60% acá y está el 99.
+
+Bastian Osorio:
+Ya, pero no me digáis que está lento. Es que te cuadra, si no cuadra con el 99% del nivel del servicio. No, no, digo que está bien.
+
+Hector Palacios:
+Digo que es más de lo que yo esperaba.
+
+Bastian Osorio:
+A mí me da lo mismo de lo que yo esperaba, si es que nosotros somos capaces de... O sea, primero tiene que quedar claro para nosotros. Porque si está claro para nosotros, vamos a ser capaces de explicárselo a ellos.
+
+Hector Palacios:
+Si, estoy pensando por qué lo pueden tener así. Eso es lo que estoy pensando. Y tienen un máximo de 22 y tienen un reorder point de 10.
+
+Bastian Osorio:
+No estoy seguro si ellos le pusieron cada vez esos datos o si alguna vez alguien los puso. Pero alguien puso el máximo, ¿cachai?
+
+Hector Palacios:
+Entonces el máximo se parece más a lo que podríamos tener de IP de reorder point. Ese es el que se parece.
+
+Bastian Osorio:
+Es el 22 que nosotros podríamos obtener.
+
+Hector Palacios:
+Sería el 16 más el safety stock. El safety stock para nosotros Entonces nosotros planteamos esto básicamente, un 6 y un 22. Es para entender un poco más qué es lo que están definiendo con el máximo.
+
+Bastian Osorio:
+Lo que hay que calcular es la demanda promedio durante el lead time sin los ceros. Esa es tu demanda.
+
+Hector Palacios:
+La demanda promedio sobre el leap time. Sin ceros, eso es lo que hay que calcular.
+
+UNKNOWN_SPEAKER:
+Average.
+
+Hector Palacios:
+Ojalá que no lo sea. No. La van a calcular por fuera. Pero es limitado porque el sistema lo puede calcular automáticamente.
+
+Bastian Osorio:
+Ya, pero este caso tiene solución y es considerándolo cero.
+
+Hector Palacios:
+Y da los números que quiere. Vamos al que no nos funcionaba.
+
+Bastian Osorio:
+No, pero es que está ahí. Puede ser un juegazo. No, no es juegazo.
+
+Hector Palacios:
+Es por el tema de cómo se llama la frecuencia. La frecuencia y la variabilidad. Este no es tan variable. Fíjate, los consumos son ocho. Es baja variabilidad y los modelos estos funcionan perfecto.
+
+Bastian Osorio:
+El problema es cuando tenía una WEA de 100. Es que para mí se resuelve tomando la demanda promedio durante tu lista en filo ceros. Esa debe ser, esa es tu demanda.
+
+Hector Palacios:
+Volviendo al tema que vamos a tener que estar, eso funciona para este caso, no para el otro. Entonces vamos a tener que saber cuándo separar este caso del otro.
+
+Bastian Osorio:
+Veamos si no funciona para el otro, veámoslo.
+
+Hector Palacios:
+Ya lo vimos, si da 47. Y dijimos que 22 estaba bien. Estamos dando el doble.
+
+Bastian Osorio:
+No, no. Hicimos demanda promedio, pero no demanda promedio sobre el listein. Los datos que yo tengo a la vista son demanda promedio sobre el listein.
+
+Hector Palacios:
+Todo esto es demanda sobre el listein. Entonces si yo le quito el 0 para el caso anterior. Y acá le quito el 0 para la desviación estándar.
+
+Bastian Osorio:
+¿La demanda promedio durante el litro es 40?
+
+Hector Palacios:
+Sí, porque le estás quitando los cero. Entonces, si querís mantener la demanda, tenés que sumar los cero. Siete. Ahora sí me ha sentido.
+
+Saul Portillo:
+No, pero si te da 40, ¿por qué estás sumando, Héctor? Porque si tenés consumos de ocho y quitás los cero, ocho por cinco que cinco meses, entre ocho te da ocho, o sea, te debe dar el mismo ocho, ¿no?
+
+Hector Palacios:
+cada vez que tengo un consumo son 8 unidades 8, 8, que sacarlo. Si es que esto no es lo que entra en el modelo, es el punto. Lo que entra en el modelo es la demanda sobre el listado, entonces eso es lo que tenemos que sacar del promedio. Eso es justamente lo que estoy diciendo, es la demanda promedio del listado.
+
+UNKNOWN_SPEAKER:
+Y también por acá.
+
+Bastian Osorio:
+¿Y cuánto, Saúl, cuánto dice la demanda promedio sobre el lead time?
+
+UNKNOWN_SPEAKER:
+Si la saco manualmente. A ver.
+
+Saul Portillo:
+Sacando los ceros, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Creo que aquí estamos llegando a algo, pero sí estamos cambiando el modelo. Yo creo que estamos acercándonos al modelo.
+
+Bastian Osorio:
+Es que lo que pasa es que IBP considera el forecast y ahí nos cambia y estamos cambiando radicalmente el modelo. Es 11, te da 11. Yo entonces, ah, pero bueno.
+
+Hector Palacios:
+¿Cómo se dice? ¿Cuál es la palabra en español vulgar? ¿Como el villero o algo así?
+
+UNKNOWN_SPEAKER:
+¿Villero, no?
+
+Hector Palacios:
+¿Cómo se dice en español? En Venezuela el opuesto de Cifrino?
+
+Bastian Osorio:
+Yo sé, yo sé, yo sé, yo sé, pero no me lo digas por favor, Saúl, yo sé. Lo vas a decir o te acordás? De barrio, como de barrio puede ser este un malandro.
+
+Saul Portillo:
+Si, un malandro. Aunque malandro, malandro es que puede robar, pues. Es más eso.
+
+UNKNOWN_SPEAKER:
+Ya, claro.
+
+Hector Palacios:
+Ahí está, 11.
+
+UNKNOWN_SPEAKER:
+¿Sí?
+
+Bastian Osorio:
+¿Está bien? Ahí sí.
+
+Hector Palacios:
+Entonces el gran problema es cómo estimamos esa, la demanda sobre el IPTECH, que si seguimos el estándar de IP no nos funciona.
+
+Bastian Osorio:
+Pero ¿cómo sacaste ese 11? Sorry, Héctor, eso no es... No justo con IVP. Voy a hacer a cada abogado de IVP porque no es eso lo que está proponiendo.
+
+Hector Palacios:
+Está proponiendo una fórmula que no la hemos explorado todavía.
+
+Bastian Osorio:
+Sí, sí lo sé, pero te hace la diferencia entre la venta actual y el forecast. Y de ahí hace algo. Pero no es No, eso es la deviación estándar.
+
+Hector Palacios:
+Estamos hablando aquí de la media solamente. La media es el demand rate por el lifetime. Pero yo no sé si ocupa eso. Sí, sí, sí, sí Calculémoslo ahora con los valores que en teoría deberíamos utilizar en IAP. Tenemos que tener la mid-termitin failure, tenemos que tener el lifetime y tenemos que tener el demand rate, pero con cero.
+
+UNKNOWN_SPEAKER:
+¿Sabes?
+
+Hector Palacios:
+Tú tenís los valores para...
+
+Bastian Osorio:
+¿Cómo con cero? ¿Cómo con cero? ¿Sin cero?
+
+UNKNOWN_SPEAKER:
+¿Pero durante el lifetime?
+
+Hector Palacios:
+Tenemos por ahí el... Déjame buscar cuál es el original. Vati, en el modelo que te creaste para Dragon Oil tenís la fórmula estándar del demand rate, porque esa viene. Métete a forecast model por ahí, porque aquí probablemente la tenemos, la cambiamos, pero en el modelo original tiene que decirnos cómo es.
+
+Bastian Osorio:
+Oye, con esto nos vamos a terminar agarrando a combos, pero vamos a sacar un modelo... Vamos a sacar la mejor.
+
+Hector Palacios:
+Mira este, este es el modelo original.
+
+Bastian Osorio:
+Pero de que es duro el hombre es duro.
+
+Hector Palacios:
+El modelo original tiene sustitución por cero, o sea el que veo yo, no estoy seguro si está bien. Revisa los duplicis.
+
+Bastian Osorio:
+Pero yo quiero ver cómo da sin ceros, pero con la demanda promedio durante el lead time. Ya nos dio bien.
+
+Hector Palacios:
+¿11? 11, esa era.
+
+UNKNOWN_SPEAKER:
+Ya, 11.
+
+Hector Palacios:
+pero como te pones igual es que el punto es que este dato actúo no lo podéis meter no podemos meter este 11 tenemos que buscar un workaround tenemos que agarrar este 11 y dividirlo por el list time porque sabemos que después el modelo lo va a multiplicar por el list time ¿cachai?
+
+Bastian Osorio:
+y si dividirlo por el list time te daría...
+
+Hector Palacios:
+no po, no po, hay que dividirlo Esto es un dato, bueno si lo divido por el índice en el mes me va a dar el promedio mensual.
+
+UNKNOWN_SPEAKER:
+2,14.
+
+Hector Palacios:
+Si tiene sentido, era 8. 8 dividido por algo, ¿no? 8 dividido por 4 debería ser más o menos.
+
+Saul Portillo:
+O sea, si yo lo hago manualmente, a mí me está dando, oye, hay que unirse al 1.6, ¿no? Me está dando ese número, Víctor. Porque tú estás tomando el 16 que ya estás sumando valores del IPTIME, pero la realidad es que si es promedio, es el promedio.
+
+UNKNOWN_SPEAKER:
+A ver, es el promedio.
+
+Saul Portillo:
+A ver algo. Ah, no, no, no. Espera, espera, espera. ¿Cuánto es el mean time between failure and orgasm, Saul?
+
+Hector Palacios:
+El que calcula el forecast automation es 21.55 semanas.
+
+Saul Portillo:
+¿Pero para el primer caso iba a este?
+
+Hector Palacios:
+Para ese, 47.
+
+Saul Portillo:
+Para el 47 es 21.55 semanas. 21.55 semanas.
+
+UNKNOWN_SPEAKER:
+21.55 semanas.
+
+Bastian Osorio:
+Estamos hablando que son 5 meses, 5.1 meses.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Saul Portillo:
+Por eso el después te genera un forecast cada 6 periodos. Bueno, está entre 3 y 5 meses en realidad.
+
+UNKNOWN_SPEAKER:
+Aquí se extiende un poco más.
+
+Hector Palacios:
+Ahí está. Como 5 meses más o menos me dijiste entonces que era el... Sí, el calculate between Dale, y el leap time habíamos dicho que en meses también era similar, ¿no? Era como cinco meses.
+
+UNKNOWN_SPEAKER:
+Ahí está. Cinco meses.
+
+Hector Palacios:
+¿Y cuál era la fórmula, Saúl? Está ahí en la...
+
+Saul Portillo:
+es MTBF entre leap time multiplicado por la demanda promedio. La que tiene...
+
+Hector Palacios:
+La demanda promedio es la que tiene ceros. En este caso, demand rate final era esto multiplicado por un roundup.
+
+Saul Portillo:
+Roundup del mid-time between failure entre Entonces listo.
+
+Hector Palacios:
+1.26, eso es lo que calculaste tú entonces. Bien, entonces... Recuerda que nosotros no estamos usando esa fórmula o la escribimos en la parte de invento, estamos usando el usage weekly rate. No, claro, claro, sí sé que no la estoy ocupando, pero esto el estándar de IEP. Ahora simultiplicamos este por el lifetime. 6,62 cercano a los 7 que estábamos obteniendo cuando calculábamos normalmente. Ahora vamos con este ejemplo yo sé que va a dar bien.
+
+ Lo enchufamos acá.
+
+Hector Palacios:
+y este si le metemos los ceros, claro te dan valores más de lo esperado. Pero considerando los f' y el cero, que los quitamos, igual está cercano. Veamos otro ejemplo.
+
+UNKNOWN_SPEAKER:
+Suma.
+
+Hector Palacios:
+Lo que ya hemos calculado con 27, 39.
+
+UNKNOWN_SPEAKER:
+La variación está en la cilo 0.
+
+Hector Palacios:
+¿Sabes por qué salió? ¿Por qué el item?
+
+Bastian Osorio:
+¿Cuánto era en este caso?
+
+Hector Palacios:
+En este lista es más... No sé. Era un mes. Y lo más bajo era el menos.
+
+Bastian Osorio:
+Por eso se acercó más.
+
+Hector Palacios:
+No, pero estos números tienen más sentido. O sea, no te cubre el 99, el 90 es igual al 90.
+
+UNKNOWN_SPEAKER:
+Entonces...
+
+Hector Palacios:
+¿Quién? ¿99?
+
+UNKNOWN_SPEAKER:
+se nos va, ¿cachai? A ver ¿no te hizo otra web?
+
+Hector Palacios:
+o una columna Y ahí sí. Esa es la mierda. Y tampoco es lo que recomendamos. Y esto tiene variabilidad de de esa demanda dividido a...
+
+UNKNOWN_SPEAKER:
+La viación estándar. Ah, no, está bien, está bien. ¿123?
+
+Hector Palacios:
+O sea, claro, claro, no tiene sentido que los números son varios más que la mierda. Entonces me tendría un gamma de 125.
+
+Bastian Osorio:
+Tienes que tener más del doble de demanda promedio. Si la demanda promedio es de 27. Pero este número da.
+
+Hector Palacios:
+El caso obviamente le vamos a bajar el stock pero da. Al menos si seguimos tu método. No encontramos una forma de estimar bien el lifting de la demanda. Lo agarramos simplemente el histórico y no sé si es lo ideal. No, no es lo ideal.
+
+Bastian Osorio:
+Es que tú tienes razón en que este caso funcionó, pero en otros casos lo va a romper.
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Hector Palacios:
+Yo creo que si el tema es que estamos fallando en estimar esto realmente, el histórico del lifting demand promedio. Con los ceros y los ceros lo único que estamos fallando en eso, en estimarlo. Pero si lo estimamos bien, el modelo va a agarrar bien. Ahora, una forma de estimarlo es ver el histórico. El tema es que este histórico traslapa cosas de repente. Cuando yo te muestro un número, por ejemplo, en el ejemplo anterior te mostraba números que están traslapados en realidad.
+
+ Porque este 16 está pillando esto.
+
+Bastian Osorio:
+Está correcto que todo tiene que estar Para mí tiene que ser sincero, pero todo tiene que estar normalizado por el Litang, ¿cachai?
+
+Hector Palacios:
+Lo que importa al final es que estimemos esto promedio, efectivamente. Que tenga sentido. Ese número es el correcto.
+
+Bastian Osorio:
+Ese número que tú tenías ahí es correcto, el 16. Y con eso hay que sumarle la desviación estándar.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Fue a la chucha aquí BP con esto. Pues lo revisamos, pero tiene que ser por los números climáticos. Pero el tema es cómo llegamos a este promedio del 16. El tema es que este 16 está moviendo los próximos 5 periodos. Este 16 también los próximos 5 periodos. Entre medio y entre lave, porque están considerando los mismos puntos.
+
+Bastian Osorio:
+Pero si lo la desviación está también debería calcularse como la desviación estándar de las demandas durante el LIFTEN porque da lo mismo si tenís digamos puede tener una variación gigante a nivel semanal pero si al final a nivel si lo llevas al LIFTEN.
+
+Hector Palacios:
+Eso es lo que queremos tener si esa desviación de la demanda sobre el LIFTEN es una estimación que tiene el modelo Ahora, basarse puramente en datos históricos también puede no estar bien.
+
+Bastian Osorio:
+Pero es lo único que tenemos. Ah, no, porque entonces no consideras el forecast?
+
+Hector Palacios:
+No, porque en teoría considerai el...
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Hector Palacios:
+Creo que es lo mismo, creo que es lo mismo. Déjame tomar esto de acá. Al final esto lo calculamos con la versión estándar de la demanda por la raíz cuadrada. Pero es como...
+
+Bastian Osorio:
+Eso bueno no sé de dónde sale, ¿por qué la raíz cuadrada del time?
+
+Hector Palacios:
+Es por el tema de la desviación estándar con la varianza, que la desviación estándar es la raíz cuadrada de la varianza. Entonces lo que está 1 a 1 debería ser la varianza con el lifetime. Y cuando le saques la raíz cuadrada a eso, te queda la desviación estándar por la raíz cuadrada del lifetime. Pero mira, aquí se parecen a Aspo. Esto con la fórmula de SAP.
+
+UNKNOWN_SPEAKER:
+Por eso Regina se está haciendo la enferma. Pero funciona.
+
+Hector Palacios:
+El número que debería dar, ¿no? Se acerca bastante con la corrección que hicimos por los...
+
+Bastian Osorio:
+Acá, ¿cuánto es la demanda promedio durante el listeo?
+
+Hector Palacios:
+Sin ceros. Esta, 20. Calculemosla acá.
+
+Hector Palacios:
+27 segundos. Sí, exactamente lo que está... ¿Pero cuántos son los LinkedIn? ¿Cuántos es LinkedIn?
+
+Bastian Osorio:
+Uno. Un mes.
+
+UNKNOWN_SPEAKER:
+Bueno, punto 20 también.
+
+Hector Palacios:
+Ah, ya, punto 20. Está fácil.
+
+Bastian Osorio:
+Es que por eso, es por eso, boludo. ¿Por qué un mes? ¿Por eso cuatro? Por eso te cuadra, Hugo. Por eso te cuadra. Pero si eliten después de dos meses, fíjate, ponle eliten dos meses. Suponiendo que se te va a arrastrar Tenemos 40 días, claro.
+
+Hector Palacios:
+¿Dos meses dijiste? Sí. Dos meses, un mes, perfecto. Vamos a ver cómo cambió el gráfico para entender, porque no sé cuál es tu punto. Aquí solamente este cambió, porque este, claro, no tuvo más consumo. No cambia tanto porque es infrecuente, entonces es casi inafectado. Está quedando más o menos lo mismo. Metámonos un lift en brigio pero acá sí porque aquí hubo consumo frecuente y acá estuvo pa pa y te arrojo que en los próximos meses te va a subir entonces ponle mira ponle 107.94 todavía está súper bueno sí pero si ponle 6 meses se te va a disparar como hay en día un segundo 24 y este te da 17 24,5 esto lo tendríamos que multiplicar por el, ah no por 12 y 17, 24,5 que haría si metiera el 24,5 acá y enciende un número que te puedes comprar porque si es 95 no tiene que cubrir el 100, 95% es Está bien que el 100 sigue afuera.
+
+ Sigue dando muy bien la fórmula IDP. Vamos a darle ahora los 6. Eran cuantos son hasta octubre del 180 día.
+
+Hector Palacios:
+El tema es que parece que cuando el consumo es infrecuente, el lifetime no afecta tanto. Por eso es que en la fórmula aquí tienen lo de SAP, consideran un ratio, porque al final depende de la relación entre el mean time between failure, o sea la infrecuencia, y entre el lifetime. ¿Cuáles efectos hay que tener? Entonces aquí estos compadres están diciendo, si el Mean Time Between Failures es bastantes veces mayor que el Leap Time, vamos a multiplicar la demanda.
+
+ Y este es el caso en donde no nos funcionaba la fórmula anterior. Porque consideramos solamente esta parte, ¿no? Y obviamente cuando tú le metis los cero, subestima ahí bastante. Pero con este factor de corrección, Incrementa por 5S en ese caso. Así da más sentido.
+
+Bastian Osorio:
+¿Pero en qué parte va a ser esa fórmula? En la fórmula de Mandate por Inventory Planning.
+
+Hector Palacios:
+Ahora no hace sentido y por fin no... Por fin encontramos el caso, está bueno. Entonces recomiendo ocupar esa fórmula.
+
+Bastian Osorio:
+De momento sí, porque es el estándar.
+
+Hector Palacios:
+Al menos si la usamos mal...
+
+Bastian Osorio:
+¿Y qué estáis ocupando antes?
+
+Hector Palacios:
+Solamente esto. Y el de Inventory, porque no lo entendíamos. Bien de aquí se veía.
+
+Saul Portillo:
+El de inventory es el rate from inventory planning. ¿Cómo se llama? Material usage average weekly rate for inventory planning.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Saul Portillo:
+O no sé si quiere, for inventory planning, es decir, for INSS. Es abajo.
+
+Hector Palacios:
+Ah, usas final, claro. No el final que puede estar corregido.
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Hector Palacios:
+Es que el final incluye lo del... ¿Cómo se llama? El demand pattern. Sí, para el caso de cuando tenemos producto nuevo sin esto. Sin data. Donde se ocupa el maintain between failure. ¿Hay que hacer un app de esto? ¿Para nosotros? ¿Para entender este modelo? Creo que ahí se mariconó, Regina. Porque en el estándar de... ¿Te acordás? Si preguntamos a New Material, el mismo standard de EPI dice que para los nuevos materiales usemos el Minted Meeting Failure.
+
+ Podría habernos dicho sí, ese es el estándar. Ocupan el Minted Meeting Failure y no hubiéramos sacado el mismo problema. Pero como no nos quiso apoyar, es que los de SAS nos siguieron con la hueá de que, oye, tiene que identificar automáticamente. Este me queda claro, pero cómo entra...
+
+Bastian Osorio:
+porque finalmente lo que se necesita también es el CV, el coeficiente de variación, y eso sí lo calcula con... Como que no termino de entender todo lo de que ocupa para calcular la web, ¿acháis? El CB finalmente hace las veces de desviación estándar, ¿cierto? Y la demanda, digamos, este key figure viene haciendo las veces de demanda. Y esos son los 2 componentes que necesita.
+
+Hector Palacios:
+Calculemoslo. A ver, espérate. Esa desviación estándar, ¿Saúl, te acordás del key figure que era? Que yo empecé a usar otro distinto.
+
+Saul Portillo:
+Sí, te lo digo.
+
+UNKNOWN_SPEAKER:
+El de forecast error.
+
+Hector Palacios:
+O CV. O CV te va a salir. No, pero el que nos interesa el resultado porque el CV lo multiplica por la...
+
+UNKNOWN_SPEAKER:
+por el forecast.
+
+Saul Portillo:
+El material que estará ocupando.
+
+Hector Palacios:
+el usuario. Estándar que estuve calculando yo. Y también el demand rate.
+
+Saul Portillo:
+El weekly rate, material usage weekly rate.
+
+UNKNOWN_SPEAKER:
+Eso.
+
+Hector Palacios:
+Para poder calcularme la situación.
+
+UNKNOWN_SPEAKER:
+En la lista.
+
+Hector Palacios:
+Estelse, lo que pasa es que tú tienes que tener un exposed forecast para que esta cuestión funcione. Entonces, ¿cuál es el modelo de pronóstico que teníamos por ahí?
+
+Hector Palacios:
+correcto. Este de acá es el oficial, ¿no? Ese es de la otra plenaria, creo.
+
+Fiamma Giorgi:
+Si debería ser lo mismo, al menos que se haya cambiado algo.
+
+UNKNOWN_SPEAKER:
+Ahí tienes, es el quinto arriba.
+
+Hector Palacios:
+Si este está igual, entonces ya tenemos el keyfigure. Perfecto, este es. Este es el que tenemos que nosotros meter ahora al modelo de cálculo de... Creo que la cerré porque...
+
+Bastian Osorio:
+O sea, oye, pero en resumen, no es ni la demanda con ceros ni sin ceros, sino que la demanda, entiendo que sin cero más un factor semanal. Bueno, lo calcula esa hueá que calcula y que viene siendo las veces de demanda promedio durante el lifetime.
+
+Hector Palacios:
+Díselo. Sí. Con cero y con el factor de corrupción.
+
+Bastian Osorio:
+No, pero conceptualmente. Conceptualmente lo que te da más o menos es como la demanda promedio durante el litán sin ceros.
+
+Hector Palacios:
+Es una estimación de esa, sí.
+
+UNKNOWN_SPEAKER:
+Eso es lo que hace.
+
+Hector Palacios:
+No es la demanda promedio del litán, es como que un weekly rate para que la demanda promedio sobre el litán te dé bien cuando multiplicas por el litán.
+
+Bastian Osorio:
+Sí, déjame proyectar un poco para que también... Todos los que hemos ganado que si estoy en la publicación trata de nadie para quien lo Juan puede estar un mes explicándole la hueá. O sea, no, no lo digo por pelaje, que no sea inteligente ni nada, sino porque es enredado. Tenemos esta demanda y el ítem de dos semanas, o sea, de dos meses. Ya.
+
+UNKNOWN_SPEAKER:
+Entonces este.
+
+Bastian Osorio:
+La pregunta es. Este es Juan Ceros y ahora vamos a logramos Hay casos de un cálculo como cada dos meses, ¿no?
+
+Saul Portillo:
+Si te parás en el mes 2, serían 0 y 125 y tienes el promedio. Si te parás en el mes 1, serían 100 y 0 y tenías el 100, ¿no?
+
+Bastian Osorio:
+Entonces, si yo te digo, si yo les digo, ¿cuál es el ítem de dos meses? ¿Cuál es la mi demanda promedio durante el list time. Si yo agarro estos dos y los promedio 50, 50, 62,5 y acá 65, simplemente lo hice así para que quede bien claro y después hago el promedio de esos 59.2. O sea, bueno, casi 60.
+
+UNKNOWN_SPEAKER:
+Está mal, pú.
+
+Bastian Osorio:
+¿Cómo va a hacer eso? Si yo estoy viendo acá claramente que la demanda promedio es sobre 100. Y acá yo hice el promedio de la demanda durante el lead time. Y me dieron más. Y acá lo hice al revés, pues lo hice los sinceros. 100, 125, 100. El promedio sería... El tercero sería 130 porque 5 y 6 tienen 0 y 130 y el promedio da acá si hago eso sin ceros me da 118 pero si tomo este y lo multiplico por 2 este por 2 también da 118 en
+
+Saul Portillo:
+este caso porque te coincide que tienes un cero en tu en todos los periodos de dos meses que está calculando.
+
+Bastian Osorio:
+Claro, en realidad este es el válido. O sea, este es el ejemplo que intento hacer. ¿Por qué a cada cinco para los dos meses?
+
+UNKNOWN_SPEAKER:
+Ninguno es correcto.
+
+Saul Portillo:
+Es que de hecho, de hecho, inclusive te va a dar, pero aquí yo entiendo que lo separaste de dos meses pero debería ser el mes 1 te da 50 se agarra 1 y 2 en el 2 se agarra 0 y 125 te da 70 y algo y en el 4 por ejemplo te agarras 0 y 0 te da 0 y eso después te afecta en el promedio total si lo quieres ver de esa manera porque ahí lo estás viendo como que entiendo que dos meses pero te saltas después al tercer mes con los dos meses y así sucesivamente ¿Por qué el sincero está malo según tú?
+
+
+
+Hector Palacios:
+¿Cuál? ¿El sincero está malo porque decís que está malo?
+
+Bastian Osorio:
+¿Sincero? ¿Este? ¿Está cercano, no? No, ese está bien, ese está bien. Pero es que uno puede decir, ah, pero este igual está bien, pero lo que pasa es que tienen que multiplicarlo por dos. Pero... ¿Y da 100?
+
+UNKNOWN_SPEAKER:
+¿Está lo mismo? Sí.
+
+Bastian Osorio:
+Está bien.
+
+Hector Palacios:
+El mean time between failure es 2, y ¿cuánto es el lifetime acá?
+
+UNKNOWN_SPEAKER:
+O sea, este está incorrecto.
+
+Bastian Osorio:
+Es 2 meses. Este está incorrecto. ¿El lifetime es de 1? 2 meses.
+
+UNKNOWN_SPEAKER:
+Yo no me gusta este cerro rojo.
+
+Bastian Osorio:
+¿Por qué está incorrecto? Porque... Estoy calculando la demanda. ¿Cuál es la demanda sobre el lifetime promedio?
+
+Hector Palacios:
+¿Cuál es la demanda sobre el lifetime promedio? ¿Cuál es la demanda sobre el lifetime promedio? ¿Cuál es la demanda sobre el lifetime promedio? ¿Cuál es la demanda sobre el lifetime promedio?
+
+Bastian Osorio:
+Es que esto es lo que hay que hacer, esto. Tengo que sumar mi demanda durante el lead time y después a esto sacar el promedio.
+
+Hector Palacios:
+Eso es lo que está más en la fórmula, pero lo de SAP llega a lo mismo. Claro. Lo de SAP es tu 59 por 2. En este caso, porque tu mintime y tu infailure es 2, ¿no? Digo por el lead time que es 1, queda eso.
+
+Bastian Osorio:
+¿Pero por qué?
+
+Bastian Osorio:
+Ya, pero es que este también está mal. Este estaría correcto. Pero este está mal. ¿Por qué? Porque si yo acá la calculo de mes a mes. Pero si descontando los nulos, y después yo tendría que multiplicar por 2, por más, por 2. Pero eso está mal, pues no podía. Sí. Ya, ahí está el concepto clave. Y lo voy a anotar simplemente para que no se me olvide. Si uno no cuenta los nudos.
+
+Hector Palacios:
+no podéis multiplicar por el lead time.
+
+Saul Portillo:
+Calculando el tiempo en el configurador.
+
+Hector Palacios:
+Sí, pero ¿cómo se llama el profile que tenés de Porco Automate y si lo guardas ahí?
+
+Saul Portillo:
+Es el que está en Wix.
+
+Hector Palacios:
+Creo que nos vamos a tener que mover a BaseLef.
+
+Saul Portillo:
+Es que en baseline están los datos. Héctor, ¿se puede hacer pruebas? Porque lo hemos modificado aprovechando que Sagar no está haciendo integraciones.
+
+UNKNOWN_SPEAKER:
+Hoy en día los datos de backup están en base version.
+
+Saul Portillo:
+Los datos de integración los pasé a Ops-Aid para poder correr forecast automation y todo eso. Héctor, ¿y este por qué no nos sirvió?
+
+Bastian Osorio:
+Ahora, Héctor, ¿por qué este no nos sirvió? O sea, sé que el promedio no servía, el promedio no servía, pero nos daba mal la detección estándar. Este modelo ocupando la demanda promedio con ceros, ¿por qué no servía? ¿Porque te subdimensionaba la detección estándar?
+
+Hector Palacios:
+Por los casos que donde había muy poca frecuencia, subestimaba mucho el evento. Porque si bien la demanda es baja, porque el evento es infrecuente, Cuando pasa el evento, la demanda es alta.
+
+Bastian Osorio:
+Y eso es porque de su dirección a la dirección estándar.
+
+Hector Palacios:
+De alguna forma tenemos que mostrarle, meter entre medio el tema del evento. Porque ese promedio no te dice nada. El promedio por sí solo te dice, puede ser una demanda continua de 5 o puede ser una cuestión que tenga, no sé, 100, pero una vez año, entonces si lo dividís por 12, no es el mejor ejemplo, 60, pero una vez al año, entonces lo dividís por 6, por 12 y te da 5 también. O te podís tener 5 todos los meses, o podés tener 10 cada dos meses y así, ¿cachai?
+
+ Si tú sacas el Average Demand Rate, no te dice nada, te dice solamente un promedio. Cuando tú complementas con esos números, con esos factores, el Mean Time Between Failures y el Leap Time, ahí se están metiendo más cosas a la ecuación. Te dice la demanda promedio, bueno, la demanda promedio del evento.
+
+UNKNOWN_SPEAKER:
+Exacto.
+
+Hector Palacios:
+Pero hay que corregirlo por la magnitud porque si no, no te va a decir nada. El modelo Poisson en ese caso te va a decir, si tenés demanda cada dos meses de 10, si tenés demanda total cada mes de 5 o si tenés demanda una vez de 60 al año, te va a dar la misma hueá. Y no tiene sentido. Porque en algunos casos tú tenés que prepararte para 5, en otros tenés que prepararte para 10 y en otros casos tenés que prepararte para 60 de una.
+
+ Sino voy a estar teniendo el mismo parámetro para los tres.
+
+Bastian Osorio:
+Pero ahí la desviación estándar es la que da cuenta de eso, ¿no?
+
+Hector Palacios:
+Sí, ¿no?
+
+Bastian Osorio:
+Es la demanda, finalmente. Es la demanda, esa demanda calculada, ajustada.
+
+Hector Palacios:
+Sí, la desviación estándar te va a decir algo, pero parece que no es totalmente suficiente.
+
+Bastian Osorio:
+¿Es tan normal la demanda promedio durante el lead time?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Bastian Osorio:
+Bueno, no sé cómo le deberíamos llamar. Porque tampoco es exactamente la demanda promedio durante el lead time, ¿cierto? Lead time de más, digamos, lead time de más, expected lead time de más. Expected. Y en este caso, se parece, es esto.
+
+Hector Palacios:
+Sí, sí, es como eso. Es como esto, sí. Si de hecho eso es lo que tenemos que utilizar para poner en raya el modelo, para darnos cuenta. Pero yo diría con la fórmula de SAP porque al menos esa tenemos un background y SAP lo puso.
+
+Bastian Osorio:
+Tiene que estar asociado a alguna teoría. A todo lo que estamos haciendo yo puedo hacerlo.
+
+Saul Portillo:
+Tengo que hacer una parada técnica breve y bueno.
+
+Bastian Osorio:
+Soy ordinario. De hecho, no.
+
+Hector Palacios:
+De hecho, no fui ordinario en absoluto. Dale, sí. Seguimos luego, pero está buena la conversa. Tenemos que seguir así las sesiones.
+
+Saul Portillo:
+Tenemos que pensarlo entre todos. Dale, nos vemos.
+
+Fiamma Giorgi:
+Chao.
+
+Bastian Osorio:
+¡Gracias!
+
