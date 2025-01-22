@@ -1,0 +1,480 @@
+UNKNOWN_SPEAKER:
+Hello. Hello. Good evening, everyone. Hello. Good
+
+Daboul, Bisher (UAE):
+Sorry, Tim, before we start, I just have a question for confirmation. So is ADNOC LNS out of the scope officially?
+
+Roumanos, Hadi:
+Bashir, clarify what do you mean by that in terms of AGCU?
+
+Daboul, Bisher (UAE):
+Yes, so because we have the FAQs document, it's ready for release, but we just have this question pending.
+
+Roumanos, Hadi:
+But again, better to be aligned with everybody.
+
+UNKNOWN_SPEAKER:
+But yeah, nobody wants to talk about it.
+
+Roumanos, Hadi:
+So we're missing quite a few people. We need Gwessiem. We need Naamani. Ideally, Raoul. And I want to focus today's discussion on not our risk and issues log, just because we need to take a bit of a step back and think of the main activities that are upcoming and what do we need to make them successful. So I'll just wait until we have a decent forum and then we can and get started.
+
+Roumanos, Hadi:
+Tara, do you have any visibility from Rocio if YCM are going to join? I don't, but I can check. We need someone from them. Ideally, Rocio, if none other can join. So yes, I appreciate it. Kushwa, is Raul still with you? Yes, Raul and Moa are here.
+
+UNKNOWN_SPEAKER:
+Okay, thank you.
+
+Roumanos, Hadi:
+I have messaged, Rocio, and Boston has joined. OK, thank you, Tara.
+
+Naamani, Mohamad:
+OK, it's good. Khaled captured this time record this I'll remember it but it needs to be an hour and that should be for one of the actions when had he goes to this item to add it yeah yeah I don't know who's
+
+Roumanos, Hadi:
+joining to write yeah we're in the same room I will concoction one night okay we're just giving a second for Rocio to join and then She will join in any second, but we can start. Okay, let's go for it. So a few things before we move. Mohamed, the way I'd like us to run this discussion is let's quickly cover some of the important items we're tracking in terms of risks, and then step a bit back, take a look at upcoming activities that are important, and make sure we have all the dependencies for them.
+
+ And then I'll highlight to the team what are the activities that we are going to do internally to sort of prepare for those. So starting with our usual suspects, any updates from the Excel plugin to the SDD? You know, the high level risks that we always talk about.
+
+Patel, Rahul:
+Any updates there? Yes. So it has made quite the progress.
+
+Naamani, Mohamad:
+Today we've received four approvals. Screen so we know how it will follow.
+
+Roumanos, Hadi:
+I'm not following the flow, so please if you can just let Rahul give us the update because I want to focus on the prerequisites for next steps, not go through the risks one by one. Go ahead, Rahul.
+
+Patel, Rahul:
+So we've received all the necessary approvals. One final approval is pending and they've asked for some data. Since I'm now part of the group, they've asked me the data. So after this meeting, I need to connect with Kunal and Sagar, probably, and then provide the data, which means approval will get completed. But the comment they have is, I've explained them in the group that how this is important, what is at stake for this.
+
+ So they will get back to us tomorrow and confirm the SLA for packaging once the data is provided to them.
+
+Roumanos, Hadi:
+So we can hope to achieve approval tomorrow in your view?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Patel, Rahul:
+So what I'm understanding is approval is the first thing. Second step is they be able to package. So they call it package, which means it becomes part of the image. That's the second step. And the third step is installing on the specific PCs. So what I'm anticipating is approval to be received tomorrow yes and then they will confirm how much time they'll need so they say based upon the installation files they will understand how much time it takes to package it into a image and based upon that once we receive the time we'll get to know what is the additional time to get it installed so right now we don't know the end date but this is the last it is okay
+
+Roumanos, Hadi:
+so based on me the best case scenario is probably sometime mid next week. Okay fine. The second item the SDD which is always a high profile. Any updates on that from your side? Just some more comment.
+
+Bastian Osorio:
+The best possible scenario is that we get their approval for the Exceladin. We get they install the Exceladin Yeah, in my view, it's the installation mid next week.
+
+Roumanos, Hadi:
+Approval is going to come tomorrow, as Raul mentioned. And then after that, there's the image. And then after the image, there's the installation. Then what we do with the Monday session? It's unlikely that you will have this add-on on their computer on Monday, based on what Raul is just saying. Please correct me, Raul, if I'm wrong.
+
+UNKNOWN_SPEAKER:
+Correct. Correct. You're correct.
+
+Patel, Rahul:
+So we cancel Monday meeting?
+
+Roumanos, Hadi:
+There are two ways, either we cancel it or do you think we can... No, what we can potentially do by Monday and that's the reason why I'm... Yeah, go ahead. So in my view, Bastian, I think one thing we can explore is using our machines, which already we've raised the tickets for. So we can possibly, but then again, if we're using our machines, we need AdNoc people to be in the AdNoc HQ to use our machines, which is also unlikely according to Khalid.
+
+ So even if we do have access from our machines, we won't have the people to use them. So on Monday, if everything is going the way it is today, you will have ad hoc people join calls without access on their machines. Which, as we were discussing over the last few days, is a very, very, very bad way to do things. And postponing is not much better, right? Have visibility as to what's going to happen later on.
+
+ So I'll take opinions from the team and then we'll take it forward.
+
+Bastian Osorio:
+My opinion is that the plan for the Monday session was to do an introduction with Dave following the steps we are describing, showing. So given the fact that it's very unlikely that will be possible, I will cancel the meeting and instead I will focus on the workshop for the next two weeks starting on Tuesday, in which we're going to show basically what the step-by-step, we're going to take different use cases using their data.
+
+ We're going to, of course, it's very likely that we will receive feedback and more requirements. We have to collect those requirements and so on and so forth. But at this point, start doing some kind of introduction to IDP, how to log in, how to open different views does not add any value considering that they won't be able to replicate that and at the end that session will be in terms of effort, in terms of time lost because if they don't do it they're not going to learn.
+
+ You learn in practice, you don't learn just by seeing, but by doing.
+
+Roumanos, Hadi:
+I'm aware but I'm worried that this will also start impacting our timeline, right, Bastian? And we just actually, literally today, just re-baselined. So we need to be mindful of that as well. So if we're telling them, hey, just because you can't show up or use your laptops, we're pushing the session and we're impacting our timeline, therefore we're starting to incur delays, then it's also not great.
+
+
+
+Bastian Osorio:
+But yeah, I understand, but I don't believe this will impact the timeline considering that you need the unit testing, I mean, ideally, ideally was that they were hands-on on the system right now. It hasn't been possible, okay, but that hasn't, that doesn't change, I mean, they lost the chance and that's it, but we're not going to change the plan for that.
+
+Roumanos, Hadi:
+Yeah, yeah, I get it, I get it. So, another question for you, and maybe that's for Raul, because we still don't know whether mid-next week is a realistic estimate for the whole image and installation on their laptops, right? We might be, did you get any view from them how long that takes or no? Because they might get approved, right? They might approve tomorrow, but they might tell you, hey, it takes two weeks to put it on the image, right?
+
+ I don't know. 2 Correct.
+
+Patel, Rahul:
+So that's something they will, they requested some data, and based upon that data, they'll it will take to make it part of the image.
+
+Naamani, Mohamad:
+Can someone explain to me are we in this case if we don't have combination for the add-on are we cancelling Monday session or all the sessions?
+
+Bastian Osorio:
+Just Monday, just Monday.
+
+Naamani, Mohamad:
+Okay we'll keep it until maybe tomorrow or whatever. There is no straight answer unfortunately Hadi because it's like okay now they know it's to be approved by three Khaled said. Tomorrow we'll see if they can do a barrel or not. It's a continuous chasing game.
+
+Roumanos, Hadi:
+Yeah, let's not spend too much time. I agree with Mohamed. Let's keep it until tomorrow or Friday, then we can answer it.
+
+Bastian Osorio:
+Agreed, Bastouf. And just to be clear regarding what Mohamed Damani was saying, we're going to do the sessions. Of course, we're not going to create the value we expected because we cannot directly with them on site with their using their laptop making question but that doesn't mean that we're not gonna try to do everything which is in our side to make it as productive as possible. The point that I want to make is that the timeline won't be affected we cannot be changing I mean if we change the timeline based on anything like this we will never finish the project I think we need to find ways to get.
+
+ I fully agree Bastian.
+
+Naamani, Mohamad:
+I will tell you one more benefit of the sessions we discussed it and Khaled confirmed it today. Remember we said we want to make sure that the list of scenarios we have and will run through the UT is the approved one. So when we go to UT we know that they will not come up with new ideas or they'll say no we don't like this etc. So as you said Bastien UT might not be as effective as we expected, but it will be an opportunity when we show them the list to get approval and by the end of the session per area, we confirm this is the list based on which we will do our own SIT and they will do their own UAT.
+
+ Even Khaled said get it approved so that you don't chase a mirage or a moving target when you get to UAT. My point is clear, right? In terms of the list of scenarios.
+
+Bastian Osorio:
+So we're going to fix the idea is to finish the script during the unit testing and then that's what we're going to test in the UAT and it is what it is.
+
+Naamani, Mohamad:
+Yeah, if you cannot finish all of them, at least doing them this the actual script finishing everyone at least agreeing on all that list of scenarios. To make sure, OK, that's how if you run all of those during when we do it as it internally, and one day you do your AT this will allow them to accept the solution they say oh it's a comprehensive
+
+Roumanos, Hadi:
+thing which is normal but given how many hiccups we had that's a good opportunity for us to close this topic okay let me let me build let me build on this bus so in the next few days ideally starting tomorrow I will work with Tara Rocio and Raoul to put a full-fledged plan for the UT including sessions and scenarios that will be covered okay that's from a planning perspective that at least gives us a target to cover these scenarios in those sessions however as Mohammed mentioned if we somehow fail to meet that target because the sessions take forever or whatever then we at least need an approval from them that these are the same scenarios that we can cover in UAT and they don't expect any changes the last thing we want and that's what we've been discussing lately is to get to UAT someone says, no, that's not the right scenario.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, valid? Yeah, there. OK. Kunal, you had something?
+
+Bastian Osorio:
+Just to summarize, we want to get a clear picture of what is going to be the criteria for approval UAT. And this has to happen during unit testing.
+
+Roumanos, Hadi:
+So we know what we have to approve. OK, exactly, exactly. So two things, right? First, we need a clear picture. Plan of the upcoming sessions, and what's our plan down to each session, how it's going to be broken down to be able to cover them. That's action number one, which we can do as whatever we want to call it, TMO or the funny people. Second action is, OK, if we don't meet that plan for whatever reason, then we need to identify the criteria to get those scenarios approved in anticipation of your Because if you do things according to the plan, then it will be easier for us to communicate, hey, this is exactly what we're going to do in UAT.
+
+ Are you guys OK with it? But if you don't cover them, let's say you skip X amount of scenarios, then how can we be sure that these still apply for later, right? So that's just the two actions that we have. OK, the detailed plan will do and will validate with as many people as we can, especially Khaled and especially Asma, just to make sure that both the business and technology are aware of this. And then we go for action two, which is validating those.
+
+ Yeah. OK, Kunal. Yeah, Hadi. So Hadi, we are discussing this Excel add-in that is a user interface.
+
+1Sheth, Kunal:
+So in IBP, we have two interfaces. One is web interface and Excel. So Excel, we are currently facing a challenge. So my question to Bashir is, Bashir, can we not leverage partner workspace till the time they are getting an access to the Excel add-in.
+
+Bastian Osorio:
+Yes, but it is, I mean, for me, planning workspaces is very useful to show some examples. It looks great, it looks fancy, but the day-to-day work is done in Excel. Everyone works in Excel because it's easier, because it's friendly, because it is very easy to modify, whereas of workspaces look way better, but it's not that, I don't know, customized or easy to tailor user friendly. Yeah, we agree.
+
+Sheth, Kunal:
+But let's say, till one week, we are not getting access. So it is they have a feel of the data by using the web interface using browser, because browser, every user will be having either Microsoft Edge or the... Yeah, it's a good idea.
+
+Bastian Osorio:
+It's a good, actually, it's a good idea. Just to review data, not to work, not to collaborate, not to any of that.
+
+Sheth, Kunal:
+Because they also have a feel of that they are able to access the IBP system, but via a web UI instead of Excel add-in. I can understand that Excel add-in is having more flexibility compared to the web UI, but still, they can leverage the data and can see the demand at least, whatever they're going to do.
+
+Roumanos, Hadi:
+Is it something we can do in the event we face troubles with this Excel add-on? I mean, at this point, let's take whatever we can get, right? So is this something, even if it's not great, Bhasin, as you said, is it something that's doable?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+But just to be clear, just to show some planning views with information. Yeah. No more than that.
+
+Roumanos, Hadi:
+I get the small print. I'm just trying to explore options, which is what Kunal is doing as well, just in case we still face issues in this Excel.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+So, Bastian, then in that case, the Monday session can be leveraged to show this, to give them hands-on in their data? For the UI, web UI login?
+
+Bastian Osorio:
+I don't feel it's I mean, I would prefer not, to be honest, because we are running out of time. Today is Wednesday. We will have two days to prepare this session, to prepare all the different views, to prepare the deck and all that. I don't know. Align internally and I can give you a final answer in just a few minutes.
+
+Patel, Rahul:
+No problem, we can align tomorrow because we have until tomorrow till we decide what we do.
+
+Roumanos, Hadi:
+That's the point, let's agree. Let's wait until tomorrow, see how this Excel discussion goes. Maybe by then you will have a view also of the image and the installation. Maybe there's some miracle and this whole thing happens before Monday, I don't know.
+
+UNKNOWN_SPEAKER:
+right?
+
+Roumanos, Hadi:
+Maybe they tell us it takes two weeks and then we will have to go through with the Kunal's suggestion.
+
+Bastian Osorio:
+Still, there are plenty that will be, I mean, if we do it with Fiori planning views, planning workspaces, there still is going to be plenty that will be out of the scope of the workshop, of the session, because that can only be done, and it's easier at the end. But yeah, let me check. I know there's plenty we can show, like introductory content, but I would like to check with the team first if they feel we can prepare something strong for Monday.
+
+
+
+Roumanos, Hadi:
+Sure, okay. Let's not spend too much time on this. We have a way forward.
+
+UNKNOWN_SPEAKER:
+Kunal, SDD, anything?
+
+Sheth, Kunal:
+Yeah, Hadi. So on SDD, again, we have and created a certificate and currently waiting for Mustafa to download and share with Sagar on the SNC part, secure network communication.
+
+Roumanos, Hadi:
+So you're waiting on Mustafa. Let me do something. I'll share momentarily the notes from the circle with the leadership support. Tomorrow morning, when we speak with Khalid, you're on the call. Remind Khalid to ping Mustafa and to push him in case there's delays from Mustafa's side. So maybe that will help him. So if you don't do it, I'll do it. But either way, we need their support.
+
+Sheth, Kunal:
+Today, Hadi, we have done already twice follow up with Mustafa along with Khalid. So in our technical call, Khalid pulled Mustafa and asked him to perform this activity. So he has already done, but somehow he was not able to proceed further. So finally, certificate is again created. So this is the latest update from Sagar that Mustafa needs to download again. Share with him so that remaining activities other can perform.
+
+
+
+Patel, Rahul:
+Kunal or Sagar, do you know like after the certificate, how many steps are there till we close this issue?
+
+Sheth, Kunal:
+Actually, some of the steps are depending on the SAP ECS team also. So for that, we need to set up a call with this Raghav from SAP team.
+
+Patel, Rahul:
+And then Mustafa said that we can go and create a ticket with the ECS team for their support for the meeting, right? We just need to raise a ticket with the CP for that, right? Right, right. So which means the action is still again on us to have this ticket created and call set up. Yeah, yeah.
+
+Sheth, Kunal:
+So Sagar unable to create a ticket. So he approached Khalid to create a ticket on behalf of us so that we can proceed. So Khalid told the ticket is not required. We can straight away set up a call. So that is the latest update from Khalid and Sagar. So we again, we will set up a call tomorrow to complete this activity on SNC part.
+
+Patel, Rahul:
+So essentially certificate has to be uploaded and SNC configuration with ECS team has to be completed so that this concludes the activity and after that we validate if it satisfies the compliance team requirement and then it can be part of the STD, correct?
+
+Sheth, Kunal:
+Right, right, right. So that is one part and second one is enabling the single sign-on for CIDS.
+
+Patel, Rahul:
+That's something we have discussed upon. So I'm just checking for this point so okay okay so let's let's align on this push this tomorrow and let's see if we are able to close this point let's follow up with if Ali said that we don't need meeting ticket for meeting then let's send this invite right away today only so that tomorrow we have this time blocked with the ACS team sure sure so you're reading my mind right so as soon Let's start blocking those activities,
+
+Roumanos, Hadi:
+including any meetings that we need. OK. Fine. Last point before we move to planning is Asma and change management. Nikita's here? Nikita's here. Any progress on that front? Were you able to meet Asma?
+
+Gusev, Nikita (UAE):
+Do we have any progress on end users? We've met. Wadalla and Tariq. We are making the progress. So they will be sending out the memo. It's one thing through the VP. Second thing, we're going to have the awareness session Monday, Tuesday, next week. I think this will be scheduled together with sending out the memo, probably tomorrow.
+
+Roumanos, Hadi:
+Okay, my only concern here is don't delay scheduling it beyond, let's say, tomorrow morning, just to give them enough heads up to attend. If you go until, let's say, Friday, half the people won't be there because they would have already their calendars locked.
+
+Gusev, Nikita (UAE):
+We agreed to sync it with the issuance of the memo, because in the memo they will also request February 3rd as the deadline to submit us with a list of users from each department for each of the group company. So, and then if we are in time with this deadline, given that some of the group companies will definitely delay the submission of the lists, then we would have an additional week before the actual time, which would be really critical for us in terms of the names, in terms of the headcount.
+
+ So far, it's fine. I mean, I wouldn't mark it as a risk, So let's see how it goes.
+
+Roumanos, Hadi:
+One more question. Go ahead.
+
+Patel, Rahul:
+Do you think we can start with giving them one week because two week would that be like so that even after delay we are able to close it by two week. Let's start with the first deadline after a week because we all we are asking is name One, so the first period of time we're giving them is basically six working days.
+
+Gusev, Nikita (UAE):
+If the memo will be issued tomorrow, then it's 24th to 31st, which is six working days. That's one, right? Correct. From 3rd to 7th, it's another five working days. It's one week. Yeah. It's not two weeks.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Patel, Rahul:
+Pretty good. So we said it's two weeks, right, right now, that the memo will go on tomorrow, which is Thursday. Tomorrow, hopefully, yes. And the first expected date of answer is by 7th, correct?
+
+Gusev, Nikita (UAE):
+No, by 3rd, which is Monday. Which is Monday, OK.
+
+Patel, Rahul:
+So we are expecting by 3rd. And then again, if not, the worst case would be 7th, which is essentially two weeks from now. Yeah, yeah, two weeks from now, yes. OK. One more thing, I happened to talk to Murugan today on different topics. So he was asking about how we are involving this, how is the change management happening with MRO. And his feedback is this is going to be the most difficult change management of the project.
+
+ And his past experience says that the EWM team may not accept the proposal we are creating now for sure we have this leadership guidance alignment and everything where we are able to push it but even for projects something like
+
+Roumanos, Hadi:
+one erp they faced a lot of challenges a lot of points this is a risk that I'd like us to add so tara if you have that excel open can you please add it because so far everything that we've discussed is covering the excel except this yes so right so just just add a row for cm And then we can agree on the content with Raul, but at least have a placeholder for now, please.
+
+Patel, Rahul:
+Correct. And he said that right now you should have a plan B, assuming that EWM team will not accept this change. So that the project timelines, there is a mitigation action from a Project Goliath perspective. If this is the only plan you're going with, he said all the best.
+
+Patel, Rahul:
+All right, let's add this risk.
+
+Roumanos, Hadi:
+Yeah, let's add this risk. Separate discussion.
+
+Gusev, Nikita (UAE):
+But at the same time... Yeah, gentlemen, but at the same time, we're still kind of pursuing this communication through Abdullah over to the EWM VP, right? For the cascaded communication to the EWM, right?
+
+Patel, Rahul:
+Yeah. He said, we should go ahead and approach this. It's not that we should not abandon the approach, knowing that it's difficult. Let's have this approach communicated, but from a project perspective, have a plan B where the impact is softened. If you depend upon this as the change which is required for the successful goal of the project, he said, this will impact goal F. Based upon his experience working with AdLoc all these years.
+
+ So he said this is one of the most difficult community to work with from a change management tree, not from a tool or anything. He said, he gave an example, a simple change that with SAP they had to raise work order. Now, without work order, SAP cannot work. Their expectation was, I will go and walk into a store and take metal without any official document in SAP. And they had to go to the highest level of leadership for them to create a work order.
+
+
+
+Gusev, Nikita (UAE):
+in a second. Okay, okay. If this is that critical, I'll just have an idea in my mind on how to regroup the change management team so we could, for example, we could dedicate Edith as a dedicated resource for this EAM kind of domain, right, to work specifically on that until we feel like it's It's past that.
+
+Roumanos, Hadi:
+Can we have a separate discussion just to deal with this? For now, let's log it as a RISC. We have a conversation between you, me, Nikita, and Raul to agree on how to manage this. I don't want to spend time on this call to agree on what the next steps are. Agree, agree. Let's have a separate one. Yeah, sure.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Roumanos, Hadi:
+Training approach. I know that we discussed this last week, Nikita. You had in mind to prepare a few slides. To start socializing for with Nomani first and then with Khaled. Is there anything there that we can see between tomorrow and Friday?
+
+Gusev, Nikita (UAE):
+So we were just two, me and Bishar, this week and we were pushing forward these couple of things on focal points and then users. So tomorrow the team is full again and hopefully tomorrow we'll be able to finalize the slides.
+
+Roumanos, Hadi:
+Let's at least have a view with Mohammed, maybe tomorrow, end of day, even if you don't have full content, let's at least discuss how this is going and the direction, please.
+
+Gusev, Nikita (UAE):
+Bisher, could you please set the meeting for all of our team, Mohammed, Nomani and Hadi, for tomorrow?
+
+Roumanos, Hadi:
+Any time in the afternoon, just pick a time when you find a space, at least that fits with Mohammed's schedule, the rest is fine.
+
+Gusev, Nikita (UAE):
+Yeah, yeah, only see Mohammed's schedule and the rest, and we'll manage it. Okay, well done.
+
+Roumanos, Hadi:
+I know you had your hand up. Sorry, what's up?
+
+1Rocio Minguillon:
+No, okay, I just wanted to raise another point that we were not discussing these days, but I know that today you also raised it to AdNoc during the status meeting, but it's about this IVP data store that is now down, and the ticket is already with SAP, and the priority is already raised with AdNoc, to have a man that tomorrow there should be a priority to raise to Adno because this is impacting the configuration, the integration, the configuration of the integration, the new integrations that we are still not doing because of that.
+
+ Yeah, I discussed this with Rahul. I know that he's aware, but for all of us to be aware of this.
+
+Roumanos, Hadi:
+Rahul, is this something that we have in our Excel that we've tacked, that's critical given the impact that we have, or not yet?
+
+Patel, Rahul:
+Yes, it's there in the Excel. This was raised early this week where the data store was down. We have raised a very high ticket with SAP. So the latest update, Rocio, I have is SAP has recommended some steps which we have communicated with AdNoc, right? Which means AdNoc is supposed to execute those texts and confirm if the problems result. Is that correct?
+
+Rocio Minguillon:
+Yes, yes. What Sagar told me is that AdNoc is not giving us so much detail on which is the step which they are failing with or which they are having issues or problem with. So they are not giving us transparency on when and how are they going to solve this. So maybe tomorrow we can focus on that, on asking them, OK, have you tried to do that step? On which one are you having issues with?
+
+Patel, Rahul:
+Yeah, to see. Yeah. Agreed. Agreed. Probably one request would be that Sagar has raised this email where everyone he has mentioned this is a risk so I would request Sagar to send this email today again notifying everyone we are all part of that including Adna this is the risk where Khalid and the project team is part of it clearly identifying that this is a most critical thing from a project perspective and please put up a date if if this issue is not resolved by
+
+Rocio Minguillon:
+this date it will impact project Yeah, what we were discussing is exactly that. I mean, every day, we have not buffers in terms of configuration. Then, of course, we can do some things faster to try to recover the delay. But for them, it should be like the visibility should be, OK, per day that you are still not solving this, then it's a day of delay, as we did in the other cases. Shur Sagar with the one that resend these.
+
+ Send support.
+
+Patel, Rahul:
+Yes, because we have this original email from Sagar highlighting this issue when we had this issue. So we can build upon the same email and make sure this is highlighted as in bold red. I don't know. Let's not use red color, but it's highlighted in the best way possible for AdNoc to be aware that now this issue will create delay or it is impacting us severely and will impact the timeline. And we need urgent support from- Let's please bring it up tomorrow.
+
+
+
+Naamani, Mohamad:
+Yeah, yeah.
+
+Patel, Rahul:
+And if we can send this email tomorrow, then we can build upon this, that email, and then make sure we push everyone around to make sure this takes the maximum priority.
+
+Rocio Minguillon:
+Okay. Okay, okay.
+
+Patel, Rahul:
+So, Hadi, this is the issue I was talking about when we're talking in the hard, when we're setting up, when we're preparing the content for weekly, where there is a potential of Okay, let's just email and then mention it
+
+Roumanos, Hadi:
+to Khaled, see if there's anything he can help with. Okay, this covers most of the points at least that I wanted to cover within the time Mohammad, is there anything specific that you want to mention?
+
+UNKNOWN_SPEAKER:
+Rawal, is Mohammad still with you?
+
+Roumanos, Hadi:
+Yeah, I'm saying no, nothing that came...
+
+Naamani, Mohamad:
+Oh, sorry, sorry, I didn't hear. Sorry, Rawal, I'm saying you... You wanted me to mention what? OK, that's fine, but I will the point we were discussing about the team and engaging with them, including the orientation and then training. It's already on the radar. Yes, so we've added that risk of from the feedback from Oregon now.
+
+Patel, Rahul:
+So let's I'll work with the team tomorrow to like work in details and then if there is point to be taken in terms of timeline and activities, we'll take that.
+
+Roumanos, Hadi:
+In terms of next steps, at least for me, I'm sitting down with you, Rahul, I'll book a session, you and Khushboo. Tara, you'll be in training, so we'll have another session with you on Friday, just to sort of flesh out the plan for both the UTs and the eventual SIT and UAT down to each session, so that the main objective of this is going to be to identify and be aware of dependencies as soon as possible.
+
+ So by accident, again, as usual, the ALM story popped up today. So nobody likes things popping up. So we need, and the prerequisites for those, the better. Hence the plan. Sorry, I don't know whether it's my turn. Your voice was breaking, Hadi. It's okay, no need to... No need, I'll just schedule a session and you'll be part of it, so that's fine. Go ahead, Dushyant. I just have a question to Mouna Amani.
+
+
+
+1Daboul, Bisher (UAE):
+It's the same question I asked you, Hadi. Is there confirmation on the AdNoc LNS removal from the scope? Because we need it for the FAQs.
+
+Naamani, Mohamad:
+to my knowledge Asma mentioned it in one of the meetings that they are not in scope so if you have you and Nikita are or can be on side to check this with her she's the reference she is the second in terms of ownership after the VP so she has the right to say and that's your in or out I remember it very clearly that she mentioned it and I think even Khaled didn't object although in another meeting Khaled was saying Let's see if they are in or out, but Asma was very clear.
+
+ So if you want to trust me, I mean fine, but double check.
+
+Daboul, Bisher (UAE):
+I think she will confirm this and you can send it by email in this case.
+
+Naamani, Mohamad:
+Let's not leave it hanging, having it written, but at least unless my memory is failing me miserably, that's what she said.
+
+UNKNOWN_SPEAKER:
+Mo?
+
+Patel, Rahul:
+Yeah, I agree.
+
+Roumanos, Hadi:
+Yeah, just also the other day, speaking to Mohammed Awadullah, he re-mentioned that LNS is out of scope. Guys, everyone, everyone, don't take anything as oral confirmation, okay? If you want to sit with her and validate, great, but send an email, say, hey, per our discussion, this is to confirm that LNS is out of scope.
+
+Naamani, Mohamad:
+Okay, because someone Yeah, this is something you and Raoul will have to be to write it or trigger it so Respect to more be sure everyone on the operational team working. This is fine, but as a school information I think you just need to agree. What is the best way or the best? Segway to mention the saying dear Muhammad or dear asthma per the last discussion. We want to confirm. This is the understanding copying Okay.
+
+
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Roumanos, Hadi:
+So so just as Bisher, just get that confirmation once you speak with us more. And I'm happy to send the communication, just revalidate again, just so that we don't trust previous conversations.
+
+Gusev, Nikita (UAE):
+Sorry, just to add to that. I think we can, excuse me, Bisher, just a sec. We are now excluding LNS from getting end users, right? So I think we can already send the official kind of request confirmation itself?
+
+Roumanos, Hadi:
+Fine, as long as we have it written somewhere, is the point.
+
+Naamani, Mohamad:
+Because the confusion is in the list of focal points, there is Sheikh Salim, Zainab Ahmed as ad-hoc L&S reps. So what are they? Dummy representatives? They are there but they don't count or they cannot vote? So yeah, it's worth double checking. I think it could be based or something to Khaled and Firas, dear Khaled and Firas, so we understood the following based on what Beshir will confirm or more already heard.
+
+ We want it to be, I mean, ensured. Not that it will change that much from a number of users, but from setup, it's an additional entity, so I think it will help us. So yeah, it is a bit still up in the air.
+
+Daboul, Bisher (UAE):
+Okay, Asma is on leave, so I'll speak to tomorrow to reconfirm and I'll let you guys know so you can send official confirmation.
+
+Naamani, Mohamad:
+Sure and in this case Bashir he can confirm to you or explain this sort of representative from LNS Sheikh Salim and Zainab Ahmed. If it's out of scope is it for them to get acquainted with it to tease them and then later on in a subsequent project or phase they will be on boarded? At least let's try to understand it this way we know that their vote doesn't come And if they are in UAT or UT or whatever They they're nice to have but they cannot neither block the session nor block the
+
+Gusev, Nikita (UAE):
+approval So that's the logic Mohammed I think it doesn't make sense to re-ask our dollar because he was insisting on that on exclusion of them Okay, then you're right today, right?
+
+Naamani, Mohamad:
+If you are if it's fresh and you're sure then it's just this communication Hadi as a confirmation We will have to trigger it as governor Steve That's OK.
+
+Roumanos, Hadi:
+That's OK. We can do this, Raoul and I. That's fine. Lovely people.
+
+UNKNOWN_SPEAKER:
+Anything else? No, that's it. OK.
+
+Roumanos, Hadi:
+Tara, you and I and Raoul can flesh out the risk that we've just noted tomorrow as part of our session.
+
+Gusev, Nikita (UAE):
+I'll send the invite. OK. So we'll catch up together, Raoul, you and me, right, Hadi, on the EAM?
+
+Patel, Rahul:
+Yeah, yeah. New risk about the discussion with Boroland, right?
+
+UNKNOWN_SPEAKER:
+Oh, yeah. Yes.
+
+Roumanos, Hadi:
+Alrighty. Okay.
+
+Patel, Rahul:
+Thank you, everyone. Thank you. Thank you. Thank you.
+
+UNKNOWN_SPEAKER:
+Bye-bye.
+
+Roumanos, Hadi:
+Thanks. Bye.
+
