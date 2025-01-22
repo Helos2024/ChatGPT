@@ -1,0 +1,127 @@
+UNKNOWN_SPEAKER:
+identificadas.
+
+Pablo Palacios:
+Y algunas cositas no las puedo, no las he podido avanzar. Algunas porque requiero hablar con Richard y ponernos de acuerdo. Creo que, bueno, han leído algún mail por ahí dando vuelta. Otras cosas, también lo planteé ayer, creo, que es el tema de la estrategia para tener un control de la capacidad. No sé. Ser todavía por quienes efectivamente hace falta que estén las ubicaciones vacías y bueno sé que están trabajando Samir y Richard y si vacía las ubicaciones por ahí le complico los escenarios a ellos así que lo tenemos que poner a acuerdo para hacer esos cambios.
+
+
+
+Jonathan Hernandez:
+Para esos escenarios, Samir, ¿cómo vamos como para darle oportunidad a Pablo de hacer sus pruebas?
+
+Pablo Palacios:
+¿Vas a vaciar todas las ubicaciones, Pablo? ¿Vas a vaciar todas las ubicaciones? El tipo de almacén reserva 1 y reserva 2. A ver, es vaciarlas momentáneamente. Yo creo que podríamos llevar el estoque ese a una ubicación intermedia del 9010, por ejemplo. Si fuera una puerta de entrada, una ubicación intermedia de puerta de entrada, y después devolver el stock. Es una maniobra, hay que estar haciendo, ¿viste la tarea de almacén de traslado que has hecho, Sammy?
+
+ Bueno, eso, con todo el stock que hay en reserva 1 y reserva 2, hacer el cambio de este respectivo en configuración, y después, si se quiere, se vuelve a poner el stock. Adelante. Nada, no quiero hacerlo en el momento en el cual por ahí ustedes están testeando. Más que Samir, me preocupa más el escenario de salida de Richard. Tampoco que le vacío el stock y le esté haciendo una salida. Así que eso.
+
+
+
+Jonathan Hernandez:
+¿Hay sugerencia, Pablo, no poder hacer en las horas de la mañana que tú empiezas antes que nosotros? Sí. Sí, podría ser. ¿Podremos coordinar ese horario, no? ¿Puede ser para que no choque? Sí, sí, sí. Y ya sabe que a las horas de la mañana no está conectado, pero bueno, sabe que estás haciendo ese tipo de pruebas.
+
+Pablo Palacios:
+Sí, no hay problema. Sí, podría ser. Pero bueno, nada, ahí había dos estrategias, una que también le había comentado, una a nivel de bloques y otra estrategia a nivel de paneles. Nada, estoy ahí averiguando. La diferencia, porque la realidad es que las diferencias entre APA no son a nivel funcionalidad tan importantes. Pero bueno, nada. Al final estuve investigando también por afuera con una colega que es muy experta y creo que la mejor es si por Fallex.
+
+ Porque la de bloques no tiene la diferencia ni la funcionalidad, sí a nivel teórico, bloques es más que nada para cuando el stock está en piso y se apilan pallets, se apilan bloques, por así decirlo. Acá son dos ubicaciones de rack, teóricamente, conceptualmente correspondería a más pallets, ahora a nivel de funcionalidad las dos sirven igual, las dos controlan capacidad igual, pero bueno, nada, si vamos por la mejor herramienta debería ser por pallets.
+
+ Así que eso era lo que estaba viendo y bueno, esa consulta la terminé de averiguar hoy. Así que eso de mi lado. Bueno, también estaría bueno hablar con Richard. ¿Qué más tengo? Bueno, y después los escenarios que tengo pendientes, Johnny. De mi lado, que habrás visto el mail ahí que mandé a Florencia, la respuesta sobre todo del lado de ella, del lado de ella nos blanqueó, por ejemplo, hubo un escenario de traslado, entraban por traslado con HU, ese escenario hasta el momento no se ha podido testear, por el lado del DSC, pero la respuesta ellos todavía no la han podido generar, así que eso no está testeado, y lo mismo para los escenarios de dos casuísticas ¿Y qué eran?
+
+ Ah, ahora tengo que leer el mail. La casuística ZSB. Eso me preocupa un poquito porque dice que hay que testearla directamente en calidad. Pero bueno, testearé en calidad y se verá. Y ZRay y ZDig, ahí le devolví la consulta porque están trabajando con una clase de exposición a nivel de entrega que no es la misma clase de exposición para las demás casuísticas. Y la verdad me hizo ruido de tener que considerarla.
+
+ Nada, se considera, la incluyen en la configuración, pero estaría bueno que me lo confirme y le pedís a confirmación. De hecho, incluso también quiero más todavía la confirmación porque esas entregas que me mandó ayer fueron generadas hace como 10 días atrás. Nunca me las había mandado. No son entregas que ha generado ahora. Entonces debe ser entrega que ha generado a modo prueba suya, interna, y nunca nos las mandó o nunca nos las comunicó, por así decirlo.
+
+ Entonces capaz que en su momento la generaron con esa clase de exposición y no se dieron cuenta. O capaz que sí. Pero prefiero esa confirmación cuando me lo confirmen. Ahora la corrección, no, la inclusión en el customizing y se puede estrategiar. Mientras tanto, tengo que esperar esa respuesta. Esos escenarios lo vas a ver en el porcentaje, lo vas a ver en el 65% porque siguen igual que... No podía haber ni siquiera un primer test.
+
+
+
+Jonathan Hernandez:
+Sí, no. Necesitamos esa parte del lado de flor. Perfecto, Pablo. ¿De tu lado, Samir? Digo, vamos bien con los porcentajes, en qué estamos y qué nos falta.
+
+Samir Milan:
+Ahorita estaba recién acabo de actualizar, ahí te di que estabas en el documento también, John. Acabo de actualizar lo de inventarios. Ya solo estoy haciendo más pruebas que ayer hablé con Pablo y con Richard para ver qué tipo de más pruebas podía hacer para seguir puliéndolo y que estuviera correcto. Voy a continuar así con todos los otros procesos que ya los he avanzado, pero aún así voy a seguir sacando más pruebas para ver qué detalles pueden salir.
+
+ Pero acabo de actualizar ya los procesos de comentarios y ya aumentó un poco el porcentaje del total.
+
+Jonathan Hernandez:
+Sí, se ve muy bien. Para esas pruebas que te va a hacer Samir, ¿necesitas algo? ¿Algún input?
+
+Samir Milan:
+¿O tienes todo para hacer las pruebas? No, no, no. Pues todo es interno, entonces no.
+
+Jonathan Hernandez:
+Todo lo requiero ya lo tengo. OK. Super. Entiendo. Y si no me corriges, Samir, lo que tienes, digamos que hasta lo que has probado está correcto, eso lo vas a estar valiando para hacer o identificar alguna mejora posible.
+
+UNKNOWN_SPEAKER:
+¿Correcto?
+
+Samir Milan:
+Sí, correcto. Estoy documentando yo en un Excel aparte, que es algo más personal, aún así para seguir puliendo eso y que salgan correctas las pruebas y que no salga algún detalle.
+
+Pablo Palacios:
+OK. Súper. Eso está perfecto. Muchas gracias. Ahí ya veramos. Yoni, que probablemente la semana que viene, si está todo bien con los tiempos y seguimos así con este tema de las pruebas, quizás hagamos una, impulsamos los escenarios. Yo paso a hacer algunos escenarios, a testear algunos escenarios internos, y él pasa a testear escenarios de entrada. Así también hacemos una transferencia de conocimientos ahí.
+
+
+
+Jonathan Hernandez:
+Eso estaría muy bueno. Bueno, así nos quedamos cubiertos por todos lados. Si se puede ir a los tiempos, sería muy buena actividad. Sí, sí, sí.
+
+Pablo Palacios:
+Sí, yo creo que, ah, como le dije a Sami, a ver, si se dan las reuniones que, bueno, yo de mi lado, como te decía, hay algunas cosas que necesito juntarme con Richard e ir haciéndolas, y son cosas que ya están identificadas y son rápidas de hacer. Entonces, si se dan todos esos tiempos, yo calculo que esta semana entradas estaría de nuestro lado en gran volumen, podría llegar a estar en un 90% como así decirlo.
+
+ Así que nada, bueno, Isamir ya estaba más o menos en esos porcentajes, ya ha testeado todo, bueno, va a seguir testeando, pero bueno, yo creo que del lado de él también podría darse. Así que, siendo todo así, la semana que viene podríamos llegar a Para esa consulta con Richard, ¿te parece, Pablo, si le pido un espacio hoy más tarde?
+
+Jonathan Hernandez:
+No tan tarde para ti, pero para que vayamos cerrando esos puntos. Yo le comento que no se podía subir a la sesión, a lo mejor un poquito más tarde.
+
+Pablo Palacios:
+Tenés idea, sí, sí, si sabes en qué horario se puede juntar él, si no, yo le escribo y lo voy a juntar, no te preocupes.
+
+Jonathan Hernandez:
+Ok, si quieres, escríbele, por favor, Pablo, para que si no subamos hoy.
+
+Pablo Palacios:
+Sí, sí, sí, ahora le escribo. Le escribo ahí en el grupo, así estamos todos al tanto, Si estás libre también, en el momento de juntarnos, te sumas.
+
+Samir Milan:
+Sí, claro que sí, Pablo.
+
+UNKNOWN_SPEAKER:
+Por supuesto.
+
+Pablo Palacios:
+Envíamela también a mí. Perfecto.
+
+Jonathan Hernandez:
+Y nada, les comento, equipo, me buscó Perín hace rato. Voy a reunirme con ella mañana. Solo ella y yo. Uno de los objetivos que tiene para la sesión es que quiere establecer lo del script de pruebas que comentamos ayer. Ya tenemos la versión, falta llenarla, pero no pasa nada, lo que decimos ayer no, estamos con tiempo, sabemos cómo hacerlo, pero bueno, que ella sepa que lo que les comentaba ya lo tenemos en el radar y es una actividad que vamos a trabajar, no lo estamos dejando de lado.
+
+ Otro punto que quiere conversar, plan de capacitación de Key User, que es cómo lo vamos a realizar y lo que hemos platicado, esa capacitación se realiza durante las pruebas, esas pruebas son para capacitar, no hay un periodo adicional para hacer esas capacitaciones, Es una base, seguramente. Es una base interna.
+
+Pablo Palacios:
+Y como te había contado, yo lo vi con mis propios ojos. Ellos tienen Hangels hoy en día, en el workhouse principal, el de producción, el denominado APT. Tienen Hangels, están trabajando con Hangels, o sea, no debería ser algo desconocido para ellos. Sí, es lo que me llama la atención, que es lo que quieran revisar, porque no sé qué espero.
+
+Jonathan Hernandez:
+Bueno, más bien, a lo mejor es clarificarle que es la misma configuración que ha hecho su equipo para otros dispositivos. Para el WM, no hay nada de extraño ahora.
+
+Pablo Palacios:
+Yo no la conozco, nunca la he hecho, siempre la hace la gente interna, es como que lo hace, es como que, a ver, te lo simplifico con una tontería, te dan una compu nueva en la empresa donde estás trabajando y le tienen que poner el office. Bueno, quién lo hace, lo hace la gente del sistema de la compañía, no lo hace el consultor. Una tontería, te digo, ¿no? Pero así es simple.
+
+Jonathan Hernandez:
+Y también deben tener la gente que hace la asignación de los usuarios de los equipos, ¿no? Porque eso también es tema BACY y SABAP, y ya lo deberían haber hecho antes. Entonces, no sé qué le extraña, pero bueno, se lo clarifico el día de mañana, pero, digo, solo para que pidan en el conocimiento que tengo esa sesión mañana con él.
+
+Pablo Palacios:
+Sí, lo único que te puedo llegar a pedir en algún momento es el tema de errores. Eso sí, a ver, Es algo que obviamente la responsabilidad de ellos es definirlo. Pueden llegar a requerir de nuestro lado nuestro asesoramiento del tema de roles y permisos. Eso sí, en algún momento pueden llegar a pedir. No me parece necesario en el día de hoy. Estamos lejos todavía.
+
+Jonathan Hernandez:
+Y con este tema de roles, nosotros asesoramos, no tenemos nada que pedir. Asesoramos. Si no, no podemos nosotros tomar decisiones por ello. Nosotros damos sugerencias de los roles que deberían estar. A nivel organización tienen que definirlo bien, pero eso sí está claro. Pues eso era lo que tenía yo para la sesión, equipo. Mañana, como todos los jueves, hacemos el check de la parte de avances y que se quieran levantar para la sesión del viernes.
+
+ Pero por ahora, si no, los dejo libres para que sigan con sus pruebas.
+
+Samir Milan:
+Listo, John.
+
+Jonathan Hernandez:
+Y eso es todo.
+
+Samir Milan:
+Gracias, chicos. Tengan un buen día. Igualmente.
+
