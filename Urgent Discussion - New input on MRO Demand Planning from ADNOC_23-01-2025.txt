@@ -1,0 +1,491 @@
+Patel, Rahul:
+I'll be talking about this in cloud.
+
+UNKNOWN_SPEAKER:
+Do we have GoSiem team?
+
+Hector Palacios:
+Hey, Rahul, how are you?
+
+UNKNOWN_SPEAKER:
+Pretty good.
+
+Patel, Rahul:
+How are you?
+
+UNKNOWN_SPEAKER:
+Very well.
+
+Hector Palacios:
+So you have good news?
+
+Patel, Rahul:
+I don't think it would be good news, but we have opportunity to convert it into good news. Every problem creates an opportunity to create good news out of it. Chaos is an opportunity.
+
+UNKNOWN_SPEAKER:
+Let's check.
+
+Patel, Rahul:
+OK, so we have both Hector and Bastián, so I think we can conversation. Thank you very much for joining. So today there was this discussion with Tariq. Tariq is from Inventor Excellence team and so the discussion initiated from our discussion with them from a change management team where we were asking for end users details like the key stakeholders from MRO the maintenance team, and then the end user, so how many people are involved.
+
+ So as part of discussion, Tariq had a couple of questions. One, so let me share that question, but the question led to a revelation on the process on demand side, the input which we did not had up till now. Okay, so let me talk about it. Or probably I'll use excel sheet so that it helps communicate better with everyone. So we are talking about MRO demand only. The scope of our discussion is only MRO demand.
+
+ Now what happens today is they have Let's say preventive, corrective, or let's say work order. I will call it work order. So they have work order in SAP. So the work order gets converted into, so whenever you have work order, if the materials are allocated to work order, you get material.
+
+Patel, Rahul:
+Now this reservation, essentially what they are saying goes to approval. So there is approval of the reservation. If the reservation is approved, so let me say approved, and let me say rejected. These are the two options which happens. If the reservation is approved, what happens is, it becomes input to MRP which means their planning process today only considers approved reservation this is the most critical input for their planning which means if it is approved MRP creates PR
+
+bastian.osorio@go-scm.com:
+and you get for preventive and corrective?
+
+Patel, Rahul:
+It does not matter. In general everything. So that's why I've put work order. They don't care their current process. There is nothing called planning. Everything is work order based and every work order creates reservation and every reservation. So there can be manual material reservation or there can be work order based material reservation. In any case, the reservation has to be approved and they enhance their MRP to the point which means if the work they have done customization in standard SAP to the point where only the approved reservations are considered as input to MRP and the only approved reservations are converted procurement plan for material procurement, which means the supply planning does not, they don't do supply planning at a future period.
+
+ They do the only supply planning for the approved material reservation.
+
+Hector Palacios:
+So basically what we are saying is that we cannot, in the current process, we cannot use a forecast to trigger a PR. It needs to be a reservation and approves.
+
+Patel, Rahul:
+Exactly, exactly, which means the supply planning. So we need to quickly rethink that what this input means for us, which means there are multiple dimensions to this input. One, from a demand perspective, there are two pieces to demand. One is forecasted demand, and second is confirmed demand. So when Adnox is confirmed demand, they mean approved reservation. They don't want anything else but approved reservation as confirmed demand.
+
+ So what happens to the forecast IBP has proposed and approved in IBP? And this discussion triggered when we said that will happen in IBP for demand. So they said if demand is approved in IBP, what are you approving IBP? Because users have already approved reservation and that's the only input we took for supply planning. So he wanted to confirm whether we are only the approved demand in IBP, what does that mean?
+
+ So this forecasted demand, confirmed demand, forecasted demand, let's take this example. What happens to this forecasted demand in IBP and do we even need to approve considering we don't want user to work in the two systems separately. So there is this approval impact and the involvement of user also this also impacts number of user involved.
+
+Patel, Rahul:
+Because the point there, when we started asking how many people are involved, the maternal reservation process, every end user is involved, which means thousands of users are there who create mother reservation. If we bring in the demand confirmation or demand approval process in IVP, they are asking why cannot we give all the thousands of users across all the agencies and put up access to IBP, where they'll approve demand.
+
+ But then if the demand is already approved, and this is an S4 HANA process, which I don't think we should be changing or we can change, which means that there is no point of getting all these users in IBP for approval because they've already approved the demand. So if they're approving demand based upon confirmed forecast, then what happens to the forecast which IBP has proposed? And what does this mean to our demand planning in IPP?
+
+ So I just wanted to make sure this information is available to everyone, because this is the first thing we'll discuss Monday or Tuesday next week. And if we do not show based upon this expectation, this will lead to a chaotic conversation.
+
+bastian.osorio@go-scm.com:
+Yeah. So thank you for this input, Rahul. It's very just in time, let's say. So first of all, there are two main differences between the current MRO process, demand process, and the proposed process. The main difference is that in my, the information that we have, is that because they are creating work orders and then from their reservation or they're focusing on the short-term horizon, right? I didn't hear you, but I don't think they're creating reservations for one, two, three times in the future, or are they?
+
+
+
+Patel, Rahul:
+That's an additional thing. So from an, let's say, analysis perspective, for future action. We don't know and I think one of the expectation now is that even Vignesh shared is now that you are able to look at our data, please give us analysis of what do you see in IBP. Because up till now they do not have a single system where all the data from different good companies is available in a single source and then someone can do analysis about what does this mean in terms of how far the reservations are getting created?
+
+ What is the planning?
+
+bastian.osorio@go-scm.com:
+We can check that and it's a good idea and I will do that today. But the idea here is that I always take this step back to think what are we doing this? What is the value added? The value added is that if we look at this process work order, it looks like a short term in the sense of meaning one year or maybe two years, right? Yes. And maybe just in just a few AGCs for a few plants. So they are acting reactively, which of course creates all sorts of issues.
+
+ Stock outs, rushing orders, so on and so forth. So what we're doing here is to provide a baseline so they can start creating the PRs and start creating the PRs for medium and long-term horizon. This will work as an input, but then there's the need to the creation of this new role, which is the demand planner. So users, the engineers can, instead of focusing on reserve material, they can focus on doing their job instead of starting concerning about if I have or I don't have material.
+
+ The idea here is to have the material at the right time at the right place. So that will be my first thought. Regarding the users involved, 1,000, as you said, no, there's no way to involve all these people. Keep working based on this, but they will consume the forecast. So the reservations will do, as we said, the reservations will not turn directly into a PR, but the reservations will consume the forecast.
+
+
+
+Hector Palacios:
+Maybe what we can use, another thinking out loud, an alternative is use time fences. So, for example, for the next three months or whatever horizon we define we only use work orders that are translated to reservations and for the longer horizon we can place a forecast to give this like long-term visibility. Yes, so basically there are two aspects we need to address.
+
+Patel, Rahul:
+One is what is happening in short term. See, I don't think we will be able to change their behavior or process in the short term which means we will have to adjust our process with current process they have. What does this mean? The short-term planning or medium-term planning happens only based on reservations. And supply planning, the PR creation process is only dependent on the material reservation.
+
+ The reason why this is important is because there is a budget aspect to this, which means when the reservations are created and approved, someone is checking budgeted and confirming that, yes, I have budget, which means you can procure material. If we create a forecast in the short term, and if IBP is not checking budget, and the approvals are not driving budget, then supply planning team, the inventory team will not be able to on their own procure material, because there is no budget to buy the material, or no one has confirmed.
+
+
+
+bastian.osorio@go-scm.com:
+Then we need to add the user in the supply planning. For me, and we always, even playing at the budget absolutely and this is a required input but what Murugan said there's plenty of agencies that don't have budget I don't know what he meant by that but this is some this is a feedback we received.
+
+Patel, Rahul:
+Yeah but but then see when you mean by budget and if you bring in budget in IBP which means what happens to the reservation approved in S4 or not because this is also taking against the budget. So either SAP checks against budget or IBP checks against budget. You cannot have both the process checking against budget and approval in both the process.
+
+Hector Palacios:
+Is this only for MRO or also for Chemicals?
+
+bastian.osorio@go-scm.com:
+Only for MRO. Okay that's less an issue now. Let's say we have two things. I think in terms of the forecast, what we can do with the budget is basically, if the forecast is higher, is above the budget, then there is an alert to be raised.
+
+Patel, Rahul:
+But the problem, the point we need to understand is that we are trying, So we are trying to involve a large group of community who have their independent process. And I don't think by any means the approval in IBP should trigger procurement. The way I see is while we have to differentiate between short-term planning and long-term planning, short-term planning would be based upon the reservations. We need to check the horizon of reservation.
+
+ For sure, but then the long-term planning would be based upon the forecast what we're providing, but then the forecast will be an input for strategic planning only. It will not drive any procurement in IPP. It may indicate the risk which the business can make it into, which means the reservation is of 100 quantity, but based upon historical consumption we see that you need thousand quantity which means an exception can generate future long-term LTPA planning can happen but it cannot trigger procurement plan in S4 HANA.
+
+
+
+bastian.osorio@go-scm.com:
+So IBP will will not generate PRs?
+
+Patel, Rahul:
+Yeah for for the forecast. Can generate PR only for the the approved reservation quantity.
+
+UNKNOWN_SPEAKER:
+OK, so but but
+
+bastian.osorio@go-scm.com:
+So this is only my own, but but yeah, but in and then why? I mean, I I understand that we want to integrate the reservations to compare with the forecast and maybe trigger some alert in case, but if they are creating the PRs in S4 HANA with the reservations and only with CreatePRs, then why are we going to create the PRs from the reservations from IBP? There's no need to do that. We're taking an additional step to do the same thing.
+
+
+
+Patel, Rahul:
+The thing is, IBP utilizes the inventory at different stored locations, so the inventory optimization can happen based upon the inventory available at multiple locations and not directly at the store. You can share the stock. Yes, that's the point.
+
+Hector Palacios:
+That's one of many things, I guess, but yes, you can share the stock. We need to calculate inventory parameters. Let's think on this in a moment, because this is a change that is like last minute, so we can not go to that session expecting to propose a solution. Indeed, what I'm seeing is more close to what I was discussing like in many sessions ago in OneHuddle that I think that for MRO the demand planning process is not like a big deal that we are not going to do a forecast, this is a confirmation.
+
+ We are saving to involve too many users that are not used to work on the system so I don't think that this is a bad place for us. I think that for MROs if we want to base every single reorder as they are doing because they have this process, then let's go for it. I think that we are fighting for a very tiny portion of fast mover that maybe is, I don't know, 2% that, yeah, it's probably thousands of combination because you have too many materials.
+
+ But either way, I think that our expectation was like most of the time we were going to do a reorder point-based plan. So, this is very aligned with that.
+
+bastian.osorio@go-scm.com:
+So, the idea here, Hector, just to confirm then, is it's going to be just to go ahead, Moun, you were, your hands were...
+
+1Fakhouri, Mohamad:
+Yeah, I just... But, thanks, Bastián. So, if that's the case, if we're only considering forecasting for the long term, I don't admit to short to midterm will be based on approved reservation then in terms of like just planning calendar there's no need to do it on a monthly basis anymore.
+
+UNKNOWN_SPEAKER:
+Which part more?
+
+Hector Palacios:
+Supply planning or demand planning? Demand is strategic now it's just like a vision of the next five years maybe a yearly because I don't see a need of having a monthly framework.
+
+bastian.osorio@go-scm.com:
+Yeah, there's no need to do it on a monthly basis anymore. Yeah, but for thinking in that, well, a few things, I think it will be nice to have the budget in IVP.
+
+Hector Palacios:
+It's a reference for dashboards, but not that they are going to take decisions. I think that all the demand planning process will be external, basically. We will bring an input, we will just calculate the inventory levels, the PRs and the set. So this is inventory planning. There's two things here.
+
+bastian.osorio@go-scm.com:
+They are not doing demand planning.
+
+UNKNOWN_SPEAKER:
+No.
+
+bastian.osorio@go-scm.com:
+So what is happening is this is just execution. The execution, the consumption, the create, of course, all that will happen directly in Srohana.
+
+Hector Palacios:
+that most of the cases were going to be reordered point-based planning, right? That the consumption that they have is not like for a forecast. And even if you generate a forecast, it's not something that you will want to create a PR for that.
+
+bastian.osorio@go-scm.com:
+No, no. What I'm trying to say, demand planning will still happen in IVP, which will not happen is the PR creation from IVP. But that is not demand creation.
+
+Hector Palacios:
+But what am I planning for tomorrow?
+
+bastian.osorio@go-scm.com:
+We don't need it. Because we need to look at the medium and long term.
+
+Patel, Rahul:
+But that is just reference.
+
+Hector Palacios:
+I mean, this is not a huge value added right now. The main point of AdNoc is PR creation. So if we create a short term, for them it's a huge value. For me, what do you mean with short term?
+
+bastian.osorio@go-scm.com:
+The short term, they are doing it. We're not going to change that. Short term, medium, whatever.
+
+Hector Palacios:
+But we always knew that this is going to be reorder point based planning. So I don't know what forecast we can do. The forecast that we were going to do was for a very tiny portion of what is fast mover, let's say. That's the only portion. But mid-movers, slow-movers that probably compound like 98% of what they have is really point-based planning. We cannot do a forecast for that.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+bastian.osorio@go-scm.com:
+We can do a forecast, but that forecast will not drive PRs. Then why we need it?
+
+Sheth, Kunal:
+Then why we need it?
+
+Hector Palacios:
+It's not like a...
+
+bastian.osorio@go-scm.com:
+For budgeting, for start, for example.
+
+Hector Palacios:
+Budget is once a year, so it's aligned with what Mo was saying. This is something that we can run at a yearly basis.
+
+bastian.osorio@go-scm.com:
+Yeah, it's a strategic. Yeah, I agree. It's a strategic. It's not, it's planning. It's not an execution. It's for sure. Yeah, for sure. And I know that the core of the solution will be the reorder point calculation and then PR generation and STO generation. That will be like the execution part, but the planning part, for me will still be the forecast which I think can be run on a quarterly at a quarterly level not on a quarterly basis we can run the forecast on a quarterly level so what is going to be the forecast and we can check the forecast on a quarterly or even in a yearly basis yeah and now knowing that we have a much less frequency the question is
+
+Hector Palacios:
+it doesn't seem like something that we need to involve this team of the EWM team. I don't think so. I think that if we are going to run a strategic forecast, that is something that the same inventory controllers can take.
+
+Patel, Rahul:
+Yeah, I believe the same thing. I need to add a few points to this conversation.
+
+Fakhouri, Mohamad:
+Finish your talk.
+
+Patel, Rahul:
+no go ahead because then if everyone is aligned I I have to add some more value to this so that we can define the next steps and I have some more uh surprises for us so I don't want to go surprise they just say they will go for the end is that you have 35 minutes to surprise us it will be very difficult to accommodate new surprises essentially I'm giving information in pieces so that everyone uh can align to what we have shared and then work on the next piece of information.
+
+
+
+Fakhouri, Mohamad:
+Yeah my question is that if we're okay so we're now we're kind of all aligned we're all aligned that demand planning for MRO will be strategic either on a yearly basis or semi annually so how would this impact Inventory planning.
+
+UNKNOWN_SPEAKER:
+Inventory planning? No, I don't see it.
+
+Hector Palacios:
+Because inventory planning is always kind of parallel. You are not using the forecast to drive the inventory levels. You are using the actuals only. So you calculate like a demand rate, and that is disconnected from the forecast. It's like a different measure for driving the inventory policies.
+
+bastian.osorio@go-scm.com:
+But that will still, yeah. That will still drive PRs, potentially. OK.
+
+Fakhouri, Mohamad:
+And the demand rate will take into consideration the, let's say, all the approved material reservations that are being created in SAP? Yeah.
+
+Hector Palacios:
+For me, it's like that. For me, it's that we need to, I'm expecting that when we still need to have the division between corrective and preventive. Whatever a reorder point and all of that that we calculate is for corrective, is for the unexpected. If they have planned activities, planned maintenance, my expectation is that they are raising it in time so we can plan that volume, you know. So if they need to do a maintenance activities on, I don't know, on December, then we can plan accordingly.
+
+ They need to raise it with enough funds anticipation, so the lead time will get on time, you know?
+
+Fakhouri, Mohamad:
+I'm not explaining correctly, but basically we need to anticipate that. They said for preventative, they do raise the work orders in advance, so the material reservation gets created in advance, same as turnaround.
+
+Hector Palacios:
+Yeah, so I don't expect to include that input into the reorder point, and in safety stock calculations, because as this is something that is going to happen, and we know when it's going to happen, then we can plan just
+
+bastian.osorio@go-scm.com:
+in time. But, Hector, question here. Sorry. For sure, we're going to change the reorder point of multiple materials. Some of them will be higher, and that will create PR. But how are we going do that? Are we going to do it from IVP or are we going to transfer the reorder point?
+
+Patel, Rahul:
+Yeah, so the reorder point conversation I just want you two guys to hold for a second so that we can come back to this point again.
+
+Fakhouri, Mohamad:
+Just while we're still at this discussion regarding the approved material reservation, Raul, like how is it separated or distinguished in SAP whether the material reservation is approved or not because what I know is that there is a workflow and
+
+Patel, Rahul:
+the work order but so they have two workflows work order as well as material reservation or it's just work order so excellent question and the answer is there is a custom table. So what happens is there is no work order approval. The work order status gets released. Once it's released, the reservation goes to a custom logic of approval. And this custom table has approved status. And this custom table approved status gets as an input to MRP.
+
+ That's the enhancement they've done in MRP. So MRP looks at this custom table, checks that for a work order if the reservation is approved, reservation is approved then only considers mrp for planning so we need to integrate this custom table with idp as well so that we know the reservation status I'm surprised they don't have a workflow we have workflow at uh on a reservation yeah reservation but not work order yeah Not work order, because they don't care about work order.
+
+ All they care about material getting issued to work order. The surprising part is, and this is the reason why they are not using maintenance plan. I'll come to that point. But the point I'm trying to drive is, the second point I'm trying to drive is, now once the input comes to MRP, they have two type of material. Stock material, which means you always keep stock, and based upon the stock consumption, the ROP trigger, Yes, Khalid.
+
+ Guys, is it okay for us to take a 15-minute break? There is this maintenance expert which Khalid has arranged based upon this conversation for me to talk to. So, there is some more clarity that I would like to talk to him. So, is it okay if we break for 15 minutes and connect again in 15 minutes? It's an important thing. I talk to him and get more clarity so that I can provide his clarity.
+
+Hector Palacios:
+Okay, so let's continue this discussion.
+
+Patel, Rahul:
+I don't want to miss this conversation. I don't want to move this conversation to later or tomorrow. Let's continue this conversation in 15 minutes. Let's just stay here on hold. Yeah, we can stay here on call.
+
+UNKNOWN_SPEAKER:
+Vasi, are you there? Yes.
+
+Hector Palacios:
+So with this new information, I think that it doesn't make sense to have a session on Tuesday. We cannot cancel it just now.
+
+bastian.osorio@go-scm.com:
+Well, the information is just right now.
+
+Hector Palacios:
+So what we are going to do for them to keep them entertained if we don't have like a model. And the people, also we are saying these people is not going to participate. I think that we need to cancel.
+
+Sheth, Kunal:
+Hector, your point is valid. So let us discuss this in our today's huddle call.
+
+Hector Palacios:
+It's just to realign on what is our thinking right now. I think for now that it doesn't make sense. So exactly, we need to discuss with Mo and Harry. But if we are not going to include these guys, why we are going to call them?
+
+Sheth, Kunal:
+Strange thing is, in the AZ session, they never discussed this point.
+
+Fakhouri, Mohamad:
+Hector and Bastián, just a thought, because they will probably ask us this. So if, let's say, we cancel Tuesday's session, are we going to be delayed in terms of workshops? I don't think so.
+
+Hector Palacios:
+I think that this is going to make it easier for us. So we are basically killing one process.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So let's continue with the same agenda, the same days. We have inventory on Wednesday. We just cancel on Tuesday because on Tuesday then this doesn't make sense anymore.
+
+Fakhouri, Mohamad:
+But Tuesday, can we do more strategic demand planning?
+
+Hector Palacios:
+Yes, but... I think that it's better, I think that as this is so new, it's better for us to take a step down and to align, take a step back, yes. Let's align on what is the value that we can bring and let's align first with Moodle and with all these guys before going with the final, with the key users.
+
+Fakhouri, Mohamad:
+Yeah, because one thing, sorry, I'm not sure which conversation Raoul was having with Tariq, maybe it was today, but yesterday Tariq mentioned that the thing is, his concern is that if we give access to those maintenance end users and the demand, because they're only involved in demand, they'll be able to put whatever they want. But then, as soon as there is a budget against it, or financial, then they'll remove half of their wish list.
+
+ And that explains why there is an approval process on the material reservation and not on the work order.
+
+Hector Palacios:
+Yeah, but it seems that in this case, as they have work orders, because that's not going to change, right? They still need to put the work orders, against the work order reservation is being created, so bring that process of approval or whatever into IPP, I think that is not going to add value to what exists and it's going to be much more complicated because then we need to do the change management for these hundreds, thousands of users.
+
+ I think that is not in our favor. And in their favor as well.
+
+bastian.osorio@go-scm.com:
+No, I think the only thing we can do in demand planning is to create a forecast on a quarterly or even yearly basis and then compare it again if we can integrate the budget or we can help them to create the budget per AGC, per plan, I don't know, and that's it pretty much.
+
+Hector Palacios:
+Yeah, and high-bucket right? So like quarter, a forecasting quarter buckets.
+
+bastian.osorio@go-scm.com:
+Yeah, that will work better.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+bastian.osorio@go-scm.com:
+And even per, even maybe per category. Categorical materials. Yeah, that's right. We can create a layer or something like that.
+
+Hector Palacios:
+We can do that. They will still see the history. I mean, they will see all that information because because it's very related to what we are trying to do in inventory planning now.
+
+bastian.osorio@go-scm.com:
+And yeah, it's not going to be based on forecasts. Good. Yeah.
+
+bastian.osorio@go-scm.com:
+Hector, in which area are the guys working? I mean, in Z01, but where did you load the information?
+
+UNKNOWN_SPEAKER:
+Zagar? Z01.
+
+bastian.osorio@go-scm.com:
+And in which version?
+
+Hector Palacios:
+Integration, and then we loaded it in Base, and Saul moved everything to a version called Upside. Upside. Yes, to be able to continue working with Time Series Analysis.
+
+bastian.osorio@go-scm.com:
+And why can't you do it with integration?
+
+Hector Palacios:
+I don't know. That's a good question. Why don't we talk about integration? I can ask you to do it. I don't think it will be complicated. You already know what you're doing. But it's better if Sagar loads directly, not in integration. Because now that we got this topic out of MRO, what we wanted to do with Sagar doesn't make sense anymore. I mean, we want to be at the base. So you can start your new integration.
+
+
+
+bastian.osorio@go-scm.com:
+Well, we have a meeting about integration later, and I'm going to ask you to load some things.
+
+Hector Palacios:
+We don't have the datastore. If you need anything, ask me, because... Let me change to English. So we are... Kunal is going to help me with downloading some data. So I'm asking...
+
+bastian.osorio@go-scm.com:
+What is going on with the... They just don't, I don't know. They just don't, I don't know.
+
+Hector Palacios:
+They just don't, I don't know.
+
+bastian.osorio@go-scm.com:
+They just don't, I don't know.
+
+Hector Palacios:
+They just don't, I don't know. They just don't, I don't know.
+
+UNKNOWN_SPEAKER:
+They just don't, I don't know.
+
+bastian.osorio@go-scm.com:
+They just don't, I don't know. They just don't, I don't know.
+
+UNKNOWN_SPEAKER:
+They just don't, I don't know.
+
+Sheth, Kunal:
+They just don't, I don't know. They just don't, I don't know. They just don't the steps which they have given it is not working. So we have downloaded the log with the help of ad hoc team and then again we have sent back to them for analysis purpose.
+
+bastian.osorio@go-scm.com:
+So it's been more than a week Kunal and if you raise a ticket on very high they contact you in the time to contact you is two hours.
+
+Sheth, Kunal:
+I think it is raised with high priority and the issue is pop up after 16th of January. So it seems there is some issue in the access.
+
+Hector Palacios:
+Is Paola replying to you, Ak? Because Paola lately is not reacting very fast, I think. Just to know if we need to escalate, because the past year.
+
+Sheth, Kunal:
+It has already been escalated to Khalid internally. So they are also checking with them. And we have highlighted this risk of not data availability issue.
+
+Hector Palacios:
+I would raise just to inside SAP as well because if power is not reacting to the topics that we are having then maybe we need to involve Solomon or put it put in copy Solomon just this is good idea
+
+Sheth, Kunal:
+I think Ideally, we should change it to very high. But verify is for the production, right? Not for the sandbox.
+
+bastian.osorio@go-scm.com:
+It doesn't matter. You can put it if you say it's affecting your time, like your project budget. And for a customer as...
+
+Hector Palacios:
+I say that if it is ad-hoc should be very high.
+
+UNKNOWN_SPEAKER:
+Right, right.
+
+Hector Palacios:
+So, can you put us in the loop? Kunal and maybe we can also push a little bit to Paola.
+
+Sheth, Kunal:
+Sure, sure. Yeah, let me look you all you in. Firas is also marked this Khalid's boss. Hector, you are already in that email on your AdNoc ID.
+
+UNKNOWN_SPEAKER:
+AdNoc. Okay, we'll check.
+
+Hector Palacios:
+And in the meantime, well, Kunal is going to help us to get information. So I will ask some information to Kunal in preparing that email. So Basti, if you have anything that you would like to get, let me know.
+
+UNKNOWN_SPEAKER:
+Begin at it.
+
+bastian.osorio@go-scm.com:
+The company, for example, for the different locations, the thing is that it's so much information that I think, of course, the integration is, I mean, I don't want to make you work many hours for something that we should do.
+
+Hector Palacios:
+We should be doing like in the short term. Yeah, yeah, yeah, yeah. But the company, at least we have just one location for this UT.
+
+bastian.osorio@go-scm.com:
+Then somehow some cost center, for example, for the different equipment? I'm thinking in demand planning because there is nothing we can, for example, at equipment level, there is no aggregation attribute. And I think the right here, the key attribute is the cost center. We don't have a cost center for the equipment. We do have the equipment for the historical constructions, but we don't have cost center.
+
+
+
+Hector Palacios:
+But I would suggest to put the demand planning for MRO in the parking lot. For chemicals. But for chemicals we have more time, so maybe we get it on time with integration.
+
+bastian.osorio@go-scm.com:
+I hope so.
+
+Hector Palacios:
+Let's focus now on raising the topic to Paola. Let me check my it.
+
+bastian.osorio@go-scm.com:
+Come back in a second.
+
+UNKNOWN_SPEAKER:
+OK.
+
+bastian.osorio@go-scm.com:
+you.
+
+Hector Palacios:
+Okay, so sorry. I see that we write to Paola just today, so let's give him the opportunity. If by tomorrow he has an answer, then we can absolutely manage.
+
+UNKNOWN_SPEAKER:
+you Bye.
+
+Hector Palacios:
+you So I think that I'm going for lunch. This is taking too long and otherwise I will not be able to do it.
+
+UNKNOWN_SPEAKER:
+OK.
+
+bastian.osorio@go-scm.com:
+Rahul is still not back.
+
+Mudit, Khushboo (UAE):
+My suggestion is we drop off and he can just call again once he's back. I think it might take more than we anticipate.
+
+Fakhouri, Mohamad:
+Yeah, for sure. Yeah, that's a good idea. OK. OK. See you later, guys. Thank you.
+
+UNKNOWN_SPEAKER:
+you.
+
+Sheth, Kunal:
+Thank you.
+
+UNKNOWN_SPEAKER:
+Bye!
+
