@@ -1,0 +1,670 @@
+Vivekanand Gajula:
+Let us wait for others to join. Hello.
+
+UNKNOWN_SPEAKER:
+Hi, Vivek.
+
+UNKNOWN_SPEAKER:
+Hi Vivek. Hi.
+
+UNKNOWN_SPEAKER:
+Hi, everyone. Hi, Shubham. Hi, Rahul. Hi, Rahul.
+
+Mudit, Khushboo (UAE):
+So yesterday, we agreed that we need to have a separate call segmentation discussion. Since we had the placeholder today at 12, I just thought we can use this time to discuss segmentation. And if the time permits, there are any other topics.
+
+Patel, Rahul:
+cover then that as well. Will it be possible for you to pull the segmentation slide from the the design workshops we had. The idea is that we essentially look at all the segmentations, multiple segmentations we agreed upon, and then technical team, Vivek and Arun, can confirm how this is getting defined in IPP. And out of this, what all points we need to take back to at on clarity from segmentation.
+
+
+
+UNKNOWN_SPEAKER:
+OK. Is it design workshops or the BPD?
+
+Fakhouri, Mohamad:
+Anything is fine. I think it can be. We also mentioned in the BPD as well, right, from the workshop.
+
+Patel, Rahul:
+So we can open from the BPD as well. I think BPD would be a better reference because then we also have updated the formulas there, right?
+
+Fakhouri, Mohamad:
+Yeah.
+
+Patel, Rahul:
+So let's start from BPD.
+
+Fakhouri, Mohamad:
+Yeah. Let me get that.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Patel, Rahul:
+So this is the segmentation used for RISC-Core but the definition of each segmentation like VD, FNF and HML. What is the definition of each segmentation? We have a section where we define how the VD is getting calculated. What is VD? What are the segmentations we are going to create in IBP? Yeah, here. So VD is essentially items that are critical to operation queue moment. Essential items. So from a VD perspective, this is something as input to IBP, right?
+
+ Like, Vivek, you looked at this? Or Vivek, or who do we have? Arun, we have, right? What we want to do is that there are six segmentations. We've agreed that we'll create an IPP for a material. So for each of the segmentation, we need to conclude on how we are going to calculate a segmentation. What are the inputs required to calculate a segmentation? So one is the logic of how the segmentation gets defined.
+
+ Second, for that logic work what is the input and from where this input is coming. We need to get this sign off from AdNoc so that we are aware. Now in any of those inputs if the inputs are not in IBP directly from any of the existing standard extractors then we need to connect with AdNoc and say that if this is not part of existing data or standard data from extractors where is this data available in S4.
+
+ Identify those and then if reach to a point where it is neither available in IVP nor in S4, then we need to agree upon how will we get this data so that the calculation can happen in IVP. We need to close this definition for design so that we all are on the same page in terms of how this segmentation gets calculated and agreed with AdNoc, as I'm signed off with AdNoc. So that's the intention we wanted to have this conversation so we'll need technical team support to to understand where we are with this have we done any work in terms of defining the segmentation or how we can get this
+
+Vivekanand Gajula:
+forward with this understanding yeah so far actually what I've seen in the system is we did you know write some calculations you know to calculate uh the consumption frequency and all and also we have configured you know some of the rules in the system I haven't checked you know that in full detail because uh Fiamma you know from uh the technical team you know was working on this so I don't know uh to what extent you know uh uh we have completed it and if there are any loopholes or if there is any missing data so that you know I can check with the team and you know let you know.
+
+
+
+Patel, Rahul:
+Okay, so then the intention is to make sure that we've agreed upon the definition, and if there needs to be any separate conversation, we've discussed this with Adnog that we will plan a separate meeting only to discuss the segmentation with them, and we want to have this conversation specific to the point of data we need. So, I would appreciate if this can be internally discussed within the GoSCM team, and then we can have a specific, if there is a specific input required, we need to know what is that specific input.
+
+ Now, from a definition perspective, I understand we've defined that definition in the BPD, right? So, FMSN, the definition is clear. It's consumption, it's what is fast, what is medium, what is slow, and what is non-moving, right? So, this is defined in this BPD, which means the logic is not a concern. Now from a consumption I understand historical consumption will drive this so I don't think we should have any concern with FMSN.
+
+ Yeah nor the HML. Yes so definition of cost is also available. Now what are the other segmentations we need to define?
+
+Fakhouri, Mohamad:
+So the criticality this might be just an input Yes.
+
+Patel, Rahul:
+I think this one is open, right?
+
+Fakhouri, Mohamad:
+Items that are critical for operations are given higher priority. So, yeah, this might be an input.
+
+Patel, Rahul:
+In terms of criticality, do we know what is the standard definition of what is critical, vital, essential, desirable?
+
+Vivekanand Gajula:
+actually if we go with the standard you know flow right there is normally a indicator you know in the material master but looking at the you know data that Vignesh you know shared with us in that I think they already have you know this field you know criticality field you know which tells you know which items are vital desirable and essential so we just need to see you know from where exactly you know I mean from which field of that material master you know those values are coming from okay so I can talk to Hector and Bastián you know on this so apart from criticality I think the last conversation that I had with Hector was related to this lead time you know segmentation so I think as at this point in time it is not clear like what kind of lead time you know to be called as high lead time, medium lead time or low lead time.
+
+ I think that was something which was open.
+
+Patel, Rahul:
+Okay so I think Mo we have not captured all the segmentation in the BPD. I see only three segmentation whereas we had discussed six segmentations in the design workshop.
+
+Vivekanand Gajula:
+I think lead time should also be part of this.
+
+Patel, Rahul:
+Yeah so Mo will it be possible for open that one slide on segmentation we always used to discuss.
+
+Fakhouri, Mohamad:
+Yeah give me one second.
+
+Patel, Rahul:
+And let's check lead time is part of it if not then we'll we'll say lead time the seventh one but then the definition of two is clear vd you think is an input you you already have that input right
+
+Vivekanand Gajula:
+from the data provided by vignesh just yeah I can I can see that vd you know column in the file that vignesh has provided so so basis that I'm pretty sure yeah yeah it has it has the edi it has so we just need to check you know whether this was pulled from the system or from somewhere else.
+
+Patel, Rahul:
+I think it will be demand.
+
+Fakhouri, Mohamad:
+because we showed it in demand.
+
+Patel, Rahul:
+Oh, OK. Demand MRO, you can open demand. Demand classification The second slide segmentation. So, ABC. So, FMSN is something which we have defined in the BPD. Yeah. And HML is something which we have defined in the BPD. Now, ABC, XYZ, and VD. We have discussed, and it's an input as of now. Let's continue to be assuming that it's an input. Now, ABC is something we need to define and html is something we define now how html and html is already there for x y z is on inventory holding value so more can you look at the inventory policy for this definition like what is ABC what is Inventory management.
+
+
+
+Fakhouri, Mohamad:
+Yeah, so they have. But it's different than the typical ABC.
+
+Patel, Rahul:
+I think we should follow this logic only.
+
+Fakhouri, Mohamad:
+Yeah, what they have in the current policy. So class A, 10% of total number of items in inventory contributing towards 70% of total consumption value.
+
+Patel, Rahul:
+So when they say total consumption value class a item they compare with what like a technique to classify metal by its consumption by applying Pareto like so with by applying Pareto they so is it at when they are doing Pareto will it be the total value or will it be the which are grouped to define Pareto.
+
+UNKNOWN_SPEAKER:
+Is it specified here?
+
+Patel, Rahul:
+Because in the Pareto you say that the total consumption value so if there are 100 materials you are analyzing then you say that the total of 100 material is 1 million dollar and class A material basically contributed 10% of total number of items contributed. 70% of the value by 10% of material should reach to this class A I will quickly join in a call. I have to jump to a call. All quickly. I'll be back in a minute.
+
+
+
+Fakhouri, Mohamad:
+So 10% of total number of items and inventory here. Go to sleep. To the wall.
+
+Fakhouri, Mohamad:
+I don't know Vivek is it on the material master sorry what the ABC classification do they have it one second in their file they provided that information.
+
+Vivekanand Gajula:
+So yeah, it comes from material master.
+
+UNKNOWN_SPEAKER:
+I don't know what is the field for that, but yeah.
+
+Fakhouri, Mohamad:
+I can see it in the file. Yeah. Function value.
+
+Fakhouri, Mohamad:
+Is the, how are they doing the classification? Can you do this classification based on plant or like how is it done in the Material Master or it's just based on all of AdNoc?
+
+Vivekanand Gajula:
+Because you can create a Material Master based on, For that analysis, you know, I haven't done it.
+
+Fakhouri, Mohamad:
+For the same material, is the classification different or no?
+
+Vivekanand Gajula:
+Yeah, I'm checking that.
+
+Vivekanand Gajula:
+I found one, you know, material that is extended, you know, to three locations. Yeah, but only for one location, you know, they have the CBC value. Let me check for some of the rest. Then I found another SPU where the ABC value is same and that material is extended you know to two locations.
+
+Fakhouri, Mohamad:
+Okay. So I have to check how they're calculating the total number of items. Is it by location or? All of
+
+Sheth, Kunal:
+And Vivek, I have just gone through the unit test testing script which was provided by Rocio. So this ABC segmentation step is missing. I can see the XYZ, FMSN and VD and HML is there. OK, so the job which we are scheduled to calculate the segmentation that is only for the XYZ and FMSN that is the consumption variability and consumption frequency but I don't see the consumption value job.
+
+Vivekanand Gajula:
+You are saying there is no step that exclusive you know for ABC segmentation. Correct. Okay so I can check this you know.
+
+Sheth, Kunal:
+Yeah so that is one part. Is missing. And another is, we have mentioned that for HML and VD, we are not going to calculate in IBP. We are referring from S4 HANA master data. So that is a return. So that is a one time, but going forward. Yeah, Hector.
+
+Hector Palacios:
+Do you have a table with this? So we have the same table that we put on the VPD, for example, do you have it here?
+
+Sheth, Kunal:
+Yeah. Oh, could you please share that table which you just opened?
+
+Fakhouri, Mohamad:
+On the workshop or BPD?
+
+Hector Palacios:
+Whatever, but we need to take it to Excel and put the comments there. But because for me it's really clear, so let's put it on a table in Excel really quick and to know which is what we need from AdNoc. Exactly, that one.
+
+Hector Palacios:
+And you show me the segmentation I can do something very quickly for you Sorry, can you show the segmentation? Presentation table.
+
+UNKNOWN_SPEAKER:
+Just one second, please.
+
+Hector Palacios:
+My friend will create a table.
+
+Fakhouri, Mohamad:
+I just want to make sure that this is the same, I don't think it's the same as that one. 10%.
+
+UNKNOWN_SPEAKER:
+It won't start. Check the chat more.
+
+Sheth, Kunal:
+the definition of XYZ is different in the ad-hoc PDF file and the which we have mentioned in the our presentation sorry not not presentation that is in the unit descript let's check Yeah.
+
+UNKNOWN_SPEAKER:
+So.
+
+Hector Palacios:
+Let's remove the part of demand planning, inventory planning, supply planning that is not adding value. The calculation on IVP as well. Let's put a column of input KIFIA or input value, I don't know. That is what we will need to ask to add and we will need to iterate.
+
+Hector Palacios:
+and another one that is going to be a status okay so the ABC is the consumption value we don't know what is consumption value yeah so probably what we can do is based upon understanding put what is that and
+
+Patel, Rahul:
+confirm this is that now consumption value is essentially the way I see is that when you are seeing can you can you go back to the what we call the policy because the policy defines it so we'll simply take it what's there in policy and define the fields here and get this confirmed like so now here this is like the technique to classify metal based on Pareto right so when you say Pareto you need to define group of
+
+Hector Palacios:
+material which are clubbed together that's really for us and it's a standard and I have no issues on the logics. So it's just to know what is the input value. The Pareto law and all of that is going to be an easy case on IUP. The only one that is complicated, the only one is BED. All of the others, we are very clear with logic, we only need to have the input. Agreed.
+
+Patel, Rahul:
+So that's what I'm saying. One of the inputs, so when you do Pareto, you'll not do it for all the materials, right? Like if you have 1.4 million materials you will not combine everything the total value of that 1.4 million and then define what is the top 10 2030. So generally Pareto analysis is done at a grouping level like similar materials compared together and what's the ABC analysis. So we just need to like when we did take this input from AdNoc is the what is the grouping for Pareto right.
+
+
+
+Hector Palacios:
+Okay yeah that's very correct. Let's go to the Excel and put a group in column as well please.
+
+Patel, Rahul:
+Yeah yeah And then for that grouping, we need to do the input key figure. So there are two inputs to this. One is the grouping logic, saying that when you say Pareto, what is the grouping for Pareto, for ABC? And then if we know the grouping, then what value is to be grouped? The value, I think, the point which is to be grouped is this material value, which means it would be the cost of the material or the procurement cost of the material.
+
+
+
+Hector Palacios:
+You say like the unit price of the material? Yes. But multiply by the volume?
+
+UNKNOWN_SPEAKER:
+Volume, right.
+
+Patel, Rahul:
+So you have two figures, unit cost of the material and consumption volume of the material. So that's how you say that you do. Now when you do this, you don't volume, you don't decide, define by volume. So you have like, 100 metals. Every metal has price, right? So, you combine the cost of the total material and see that total value of 100 metals is 1 million. So, out of 1 million, what is the percentage of… what are the metals which are contributing to 70 percent?
+
+ So, you probably sort it in the volume and define top 70 percent, right? That's the A-class material. So, essentially, the grouping defines… helps us to identify what all metals to be clubbed together to get this Pareto analysis, and the input figure is the cost of the material so when you say cost can you put on the input if here is going to be consumption value equal to unit price times consumption volume not volume consumption I don't think it would be consumption volume it would be only unit cost but multiply by the consumption volume right why
+
+Hector Palacios:
+would you need to the Because then the HTML is unit price. Some of them, this segmentation and pressure that needs to be the value. Usually, IABC segmentation is the total volume or the total value. And that is the price multiplied by the volume.
+
+Patel, Rahul:
+OK, let's put consumption of volume. But if we say volume, then we need to also define what is the period for volume.
+
+UNKNOWN_SPEAKER:
+The period.
+
+Patel, Rahul:
+yeah so if you say consumption volume for one year six months five years how much volume you're considering right so group yeah in the logic the consumption volume period let's put two columns one is going to be calculation level
+
+Hector Palacios:
+and you're going to be or rise horizon, period.
+
+Patel, Rahul:
+So when we discuss with AdNoc, we'll take this our understanding, get their confirmation if they agree, we get an input sign-off. Because I think we now have learned multiple times with AdNoc that if you ask them question, they will not give you answer, but if you ask them to confirm or validate, they'll correct us and give us the correct input we need.
+
+Fakhouri, Mohamad:
+So what is our hazard for consumption value?
+
+Hector Palacios:
+Usually, 24 months. Usually, it's like a rule of thumb. It's not scientific. But 24 months, two years is kind of representative of what is happening.
+
+Patel, Rahul:
+Question mark. So let's continue. This gets closed.
+
+Hector Palacios:
+And the status is that we are pending the unit cost.
+
+Patel, Rahul:
+When you say pending unit cost, you already have that unit cost as part of the standard interest, right?
+
+Fakhouri, Mohamad:
+No, maybe pending consumption value, consumption volume.
+
+Hector Palacios:
+The volume is the history, so the unit price is what we don't have yet.
+
+Patel, Rahul:
+You don't have unit price?
+
+Hector Palacios:
+Let me double check.
+
+Patel, Rahul:
+Because unit price should be part of the standard extractor.
+
+Hector Palacios:
+Maybe the standard structure is yes, but we haven't been able to integrate that yet.
+
+Patel, Rahul:
+But I think when we integrated, did we check? We said the extractor is down But then as part of the original, when the extractor was available, this data, can you check on the S4 side with, say, Rinaldo or Sagar? Because this data should be available as part of standard extractor on the add-on tables on S4 side.
+
+Hector Palacios:
+Let me ask you, Sagar. It should be, but we haven't prioritized that.
+
+Patel, Rahul:
+We have been checking other things, modifications, to yeah yeah which is fine but I I'm assuming this is pretty standard so we don't need to go back to add now for something which is standard unless we are not finding data in it so status to be checked with technical team on s4 side extractors because interface is not working okay status is confirm well Confirm the extractor.
+
+UNKNOWN_SPEAKER:
+Confirm the extractor. Yeah.
+
+Fakhouri, Mohamad:
+I'm not saying that we are going to go with AdNoc with this.
+
+Hector Palacios:
+It's only one. I would only confirm the logic if consumption value is that for them.
+
+Patel, Rahul:
+So here, when we're checking with AdNoc, we will check grouping logic. We'll check the consumption volume horizon and the formula if this is correct. And if they are aligned with it, and if we know that the data is coming from extractor, this point is closed then.
+
+Hector Palacios:
+All right. Let's go with the second one.
+
+UNKNOWN_SPEAKER:
+This is stone.
+
+Hector Palacios:
+So we calculated that to the location and material level, because I think that I can double check with Saul and that was working with this, but the data that was provided there. I'm not completely sure now. But it's not going to be an issue. I mean, if they ask us to do the calculation material level or material location level, we can do it very easily.
+
+Patel, Rahul:
+At what level currently?
+
+Hector Palacios:
+I think that they had it at the material level. But it doesn't make a lot of sense.
+
+Patel, Rahul:
+Maybe they are doing it because they need to do it manually or you know but it doesn't make a lot of sense right now this this is marc table which means they are doing at material and plant level so
+
+Hector Palacios:
+probably we should also check that the grouping logic should it be at plant level or storage location level yeah probably for most of the logics I will do it like that This doesn't require grouping the calculation level. Do we have the column with the calculation level right there?
+
+Patel, Rahul:
+Or we can say grouping logic is the same as calculation, because in a way, we are kind of calculating at a certain level, right? So grouping logic itself is a level.
+
+Hector Palacios:
+Yes, but then, for example, ABC also need to check if the calculation is shown by plant material or I mean prologate material or by material only.
+
+Patel, Rahul:
+Agreed agreed so let's add one more column after C which is calculation level so that we have horizon we have key figures and you have level and for the first one also you can specify the level which is my
+
+UNKNOWN_SPEAKER:
+Yeah. OK. This one is the same metal plant level.
+
+Patel, Rahul:
+copy it from a different level and the this this the input key for the logic would be consumption volume or consumption consumption frequency right to consumption uh yeah volume consumption actuals or consumption volume not value based on that we
+
+Hector Palacios:
+can play the frequency yeah this is a raid on Yeah, you can group this.
+
+Patel, Rahul:
+So this is done. Horizon for the volume? It's on the same logic. Yeah, you can copy this and we can get this confirmation that how much volume they want us to consider.
+
+Hector Palacios:
+No, it's on the logic that if MCN remember that here we are checking even the no more than five years.
+
+Fakhouri, Mohamad:
+Yeah, that's true, that's true. So we already have the horizon.
+
+UNKNOWN_SPEAKER:
+Based on the logic.
+
+Hector Palacios:
+Based on the logic.
+
+UNKNOWN_SPEAKER:
+The status to validate.
+
+Patel, Rahul:
+To validate with AdNoc.
+
+UNKNOWN_SPEAKER:
+Correct? Yeah.
+
+Hector Palacios:
+It's already done. Stock holding value. So here I have a big question, Raul. So if they don't have the holding value, then how the hell they don't want to provide us? They don't have the stock holding value, supposedly, for the EOQ formula but they have it for the x y set.
+
+Patel, Rahul:
+Can you look at the inventory policy what Yeah.
+
+Fakhouri, Mohamad:
+Classification rate, stock value of the...
+
+Hector Palacios:
+So probably it was a misunderstanding when we put that in the PPT or I don't know. Let's put then a stock value that can be basically the stock quantity multiplied by the price.
+
+Fakhouri, Mohamad:
+uh so here uh is this the input stock there you can put the the same material plant layer.
+
+Hector Palacios:
+And the grouping is to redefine. It won't work, because you have the layer.
+
+UNKNOWN_SPEAKER:
+Yeah. What? Did. All right, Sean.
+
+Hector Palacios:
+24 months as well.
+
+UNKNOWN_SPEAKER:
+And this is spending what?
+
+Hector Palacios:
+The structure part is the same. So maybe here, what we need to think is that maybe we need to use a full horizon because they have some SKUs that are very slow movers. But maybe the price is huge. So if we take the last 24 months, we will see consumption, but it's because the frequency.
+
+Patel, Rahul:
+Plant level, stock quantity into price. So how XYZ is different than ABC? This is based on the stock amount, not the consumption. Okay, so whatever stock you have in hand, based upon the stock, what is the, what is the, which material has having the maximum stock in terms of like contribution, right? Now, this, which means this will change every month, probably, based upon like how the consumption happens.
+
+
+
+Hector Palacios:
+So this, this segmentation parameter has to be I'm just thinking on the horizon, because if we put a horizon of 24 months, we are going to live outside the slow movers. Those slow movers, maybe they have little stock or little consumption, but maybe they have a high price. But the question is, is this horizon applicable?
+
+Patel, Rahul:
+Because we are looking at stock, and stock is a static figure at any point of time, right? Is no horizon for stock unless you're going to look at stock every month and for past two years and based upon that you're going to evaluate you can put a more you can put the current month current or current period current period yes one more thing probably we can add is the frequency of calculation of this this segmentation like which segmentation is to be calculated at what frequency like x y z would be something which would be calculated monthly because every month the stock changes and then we need to re-evaluate so can we add one more parameter so that we can get this confirmation on frequency as well from ad-hoc that at what is the frequency they expect us to calculate this in ibp calculation frequency we can say I think we can say this is quarterly, right?
+
+ This is what we have said as part of the...
+
+Hector Palacios:
+So Sagar just confirmed that we have the interest factor for that, for the unit price. Okay, so we have unit price, right?
+
+Patel, Rahul:
+That's what my understanding was as well.
+
+Hector Palacios:
+Yes, now it's just to confirm the definitions with that.
+
+UNKNOWN_SPEAKER:
+And we are good to go. Monthly? Yeah.
+
+Hector Palacios:
+And in the extractors, sorry, the column H, you can put pending. Or confirm definitions, confirm definitions.
+
+Patel, Rahul:
+But we have all the input, right? Yeah. Like if there is only stock quantity.
+
+Hector Palacios:
+Not inter-rated, but yes.
+
+Hector Palacios:
+The same one for the ABC. For HTML, segmentation, the GPD. Material plant level. As well although this is not going to change right based on the plant this is the unit price so it's more related to the material itself more than the plant right so yeah it shouldn't be just material And this
+
+UNKNOWN_SPEAKER:
+is unit price. Current period as well. Based on logic. So we already have. No, no.
+
+Patel, Rahul:
+The current period, it's based on logic, right?
+
+Hector Palacios:
+It's unit price. So I guess that is the latest one, right?
+
+Fakhouri, Mohamad:
+Yeah, so currently it.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+And they can tell us the frequency. Otherwise, let's put the one that we are proposing, like quarterly. I don't remember which frequency we are proposing for segmentation. I think we proposed quarterly by default for everything.
+
+UNKNOWN_SPEAKER:
+Yeah, I guess.
+
+Hector Palacios:
+and then confirm the definitions.
+
+Hector Palacios:
+Here they will be logic.
+
+Fakhouri, Mohamad:
+I don't think that this applies here.
+
+Hector Palacios:
+There's no need for grouping this logic Okay Not applicable then yeah Segmentation I guess that is by material. Oh, yeah Can be by material location oh, I mean this seems like be it could be material equipment, right?
+
+Patel, Rahul:
+Whereas it is dependent on equipment, because this VD defines that how critical this material is for that equipment, but it also depends upon how critical the equipment itself. If the equipment itself is not critical, then the material does critical because even if the material like if the equipment is something like there are like hundreds of machines available and if it feels it does not impact any of
+
+Hector Palacios:
+the operations right I guess that when you have the same materials used for one critical and and for another one that is non-critical uh yes that is critically your way right yes because this depends upon function of this function
+
+Patel, Rahul:
+of this So, here, the logic should be we could simply say the input from S4. Import from S4, the first C column. Or, yeah, I don't know. Okay, that is not, okay, you can put it here, like import from existing, import existing, not calculated in IBP, import from We could simply say not calculated.
+
+Hector Palacios:
+In that case, we shouldn't have columns. We should put everything in black and to put like not calculated in IVP. IVP. Import directly from IVP.
+
+Patel, Rahul:
+Yeah, and you simply said import directly from IVP. S4, sorry.
+
+Hector Palacios:
+This is a real line with them or they are going to...
+
+Patel, Rahul:
+That's what we'll propose. Because in our discussion you also mentioned that it's not possible to tell how it is to be calculated, which means whatever the way they are calculating, we'll continue calculating and update in S4 or we need calculation logic. Let's propose this and I am sure they will not like this and probably they'll push us to calculate and we'll simply say that we don't know how to calculate, you tell us how you are calculating and if that formula is provided to us, then we can discuss how it can be calculated in IBP.
+
+
+
+UNKNOWN_SPEAKER:
+Correct? Yeah, let me check.
+
+Patel, Rahul:
+Let's check VD. Is there a logic definition? Is a very common word, so I don't think you'll be able to find VD.
+
+Fakhouri, Mohamad:
+Oh, yeah, this whole scoring.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah. So there is this really. Yeah.
+
+Patel, Rahul:
+I mean, it waited.
+
+Hector Palacios:
+We died. I don't know then why this was a us to provide a logic if the array have one.
+
+Patel, Rahul:
+Because we were asking logic and we did not look into this so if this is something which is because we were asking then he did not knew so he was pushing at us that you tell us.
+
+Hector Palacios:
+Yeah. So is this possible? I mean equipment criticality with touch for parameter.
+
+Patel, Rahul:
+Frequency of part failure we know that. Equipment criticality we know that. Consequence of the failure on equipment operations.
+
+Hector Palacios:
+So, this is what is consequence. Those factors I don't know what is what we will need to integrate information because criticality I don't know.
+
+Patel, Rahul:
+Equipment, so it's part of the equipment master I know if there is a field on equipment where which identifies whether the equipment is critical or not. So, this comes from the extraction. Frequency of part failure this is the consumption historical consumption and how frequently the part is failing.
+
+Hector Palacios:
+So, can we raise that with MCM? Yeah, because MCM, yeah. Frequent, occasional, rare and remote.
+
+Patel, Rahul:
+So, let's discuss what we can do is more you can incorporate this as part of your exercise sheet. These are the parameters, right? These are the input, the first column. So, let's remove the gray because if they have the logic calculation, let's evaluate this logic. So in the first column C, you can put the calculation.
+
+UNKNOWN_SPEAKER:
+OK. These are the input conditions, right? Equipment criticality.
+
+Patel, Rahul:
+Are we putting in the right column?
+
+UNKNOWN_SPEAKER:
+What is column C?
+
+Patel, Rahul:
+Grouping. It's grouping, right?
+
+UNKNOWN_SPEAKER:
+Input.
+
+Patel, Rahul:
+Column C is grouping. A column is in portrait or grouping to be decided, right? Material level. We don't need to group them for VD.
+
+Fakhouri, Mohamad:
+It's just by material.
+
+Patel, Rahul:
+Yeah, not applicable, correct, but muddy and the level would be material equipment plant. One ERP major announcement. Material. I'll jump to that. Equipment.
+
+UNKNOWN_SPEAKER:
+And plant. Is needed the plant?
+
+Hector Palacios:
+Because if you have the equipment, it's already inferred by the equipment. Yeah. Yeah.
+
+Patel, Rahul:
+And equipment is part of the plant. So we know which equipment is part of the plant.
+
+Fakhouri, Mohamad:
+OK. Key figures. So we need equipment criticality.
+
+Patel, Rahul:
+So Mo, let's finish this Excel sheet. So in the technical session we have after half an hour, we'll take this with Ad-hoc team and get the confirmation in the session itself. So we'll start with this. So what I would recommend, you have the invite for the technical session, right, Mo?
+
+UNKNOWN_SPEAKER:
+No, I don't.
+
+Patel, Rahul:
+I had asked, let me forward it to you so that you'll get invite. And we'll start with this. I'll forward the entire series. To you.
+
+Hector Palacios:
+So yes, because of the data store we were not able to integrate some attributes that we are expecting from the team so it's something that you guys can help us to get from a source yes we can help if you know the attribute what you want we can help okay let me create a list of the attributes today this shouldn't be too many it's more like material related that I'm expecting to have something horizon would horizon not applicable
+
+Patel, Rahul:
+right because grouping is not applicable it's it's a attribute of equipment not applicable yeah calculation probably quarterly will be there but once it is calculated it's not required to recalculate calculate, right? Because equipment criticality, unless the, yeah, it has to be, unless the consumption frequency or anything, confirm definition. Hector, when you are saying you need attributes of material, if you can help us with which materials you need, then it will be easier.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Hector Palacios:
+We have one, so far we have one, you need test so I can tell you the like 50-60 materials.
+
+Patel, Rahul:
+Yeah, give us the materials.
+
+Fakhouri, Mohamad:
+There is one segmentation which is the BC.
+
+Patel, Rahul:
+Yeah, that one I don't think that we can do any logic on that one.
+
+Hector Palacios:
+Is an input parameter, so this is a material master attribute.
+
+Patel, Rahul:
+You can put business criticality segment. It's just an attribute of a Matel in S4-R. So either Matel is busy or it's not busy. There's no two ways of doing it. I'll have to jump to another call. Another call has already started but you can conclude the lead time discussion as well because then we'll need to make sure that the segmentation gets discussed in the technical meeting today then.
+
+Hector Palacios:
+Let's put in the barking load the lead time one because we are not clear on what is going to be a good parameter for load lead time or short lead time yeah yeah okay let me jump to the different call sorry yeah let's leave it here then we can continue with that one more because here I need to sync more on that one I'll just put it at the other than hide it for now okay and hector according
+
+Sheth, Kunal:
+to this modification of Excel sheet, we need to update the scenario as well. Because currently for VDNHML, we have maintained that we're only going to read from S4 HANA as a static value.
+
+Hector Palacios:
+But now- The scenario is probably most for focusing on the UAT and the unit testing. I really doubt that we are going to go scenario by scenario. Because of the little time you have for showing the core functionality and this segmentation not going to be a hot topic it's going to be more on the calculation of inventory on the resource and you know right right as
+
+Sheth, Kunal:
+it is a one-time activity only but to cover in totality maybe we should create a separate one because in that it is clearly mentioned that we will going to extract from the S4 HANA but their ask is to calculate in IBP so for that we are and just putting the input key here calculation.
+
+Hector Palacios:
+Yeah, you're right. We will need to review it again, Kunal, before going with the UAT. So in that moment, I guess that we will correct that point. OK, guys, need to leave you.
+
+UNKNOWN_SPEAKER:
+Sure, Hector.
+
+Sheth, Kunal:
+And whatever data you required from S4 HANA, send it across to Rahul, myself, and then we will extract it from the table level and then we'll send it to you so that you can write up the scenario in IBP.
+
+Patel, Rahul:
+Sounds good, thank you. The other meeting got moved so...
+
+Hector Palacios:
+I was telling the guys that for the lead time segmentation we need to think more about it because we don't have a clear definition on what is short and long. We have a very big a very vague definition like long and short but we don't have like an idea what is going to be long and short.
+
+Patel, Rahul:
+So let's do one thing, rest of the segmentation parameter will align with that now today, we'll keep lead time open and internally let's have a similar to the segmentation let's have a separate call only for discussing lead times, what we know what are the gaps and then let's also discuss the lead time in terms of how it will be for chemicals versus same RO versus drilling because that the overall definition of lead time because there in the drilling we know there are multiple lead times right which means we need to have a holistic conversation internally align ourself what what we know what you know what input which is already available in S4 which we know is there and based upon that come up with an exact requirement on how what we want to discuss with lead time correct yeah so I'll take this note, let's have a separate conversation of lead time between like probably tomorrow or two days
+
+UNKNOWN_SPEAKER:
+later. All right, all right.
+
+Hector Palacios:
+Yeah, that one can wait maybe a little bit because the main focus is on that. Yeah, it's for supply planning, the main focus right now is for the inventory demand next week.
+
+Patel, Rahul:
+Yeah, yeah, agreed.
+
+Hector Palacios:
+Or we can decide who can That's also an option, but I think that part of the discussion is to be database. We need to check the data, as you're saying, on chemicals. Let's check what are the common lead times. Let's create some charts, maybe, and based on that, we can decide.
+
+Patel, Rahul:
+Yeah, because rather than asking, let's prepare ourselves and then propose this is how we want to utilize, like, do it for the lead time and get confirmation from right now so that the conversation becomes easier.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+All right then.
+
+Hector Palacios:
+All right guys, I need to leave you. I need to work on some configurations as well.
+
+Patel, Rahul:
+All right, all right. Let's continue. Thank you. Bye. All right. Thank you. Thank you. Kunal, can we connect separately?
+
+Sheth, Kunal:
+Yeah, sure. Let's connect separately.
+
