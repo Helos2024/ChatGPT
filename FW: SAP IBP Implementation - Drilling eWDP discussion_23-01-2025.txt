@@ -1,0 +1,301 @@
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Hello, good afternoon.
+
+UNKNOWN_SPEAKER:
+Yeah. Yes. Hello.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Hi, Ashraf. Hi Kunal.
+
+UNKNOWN_SPEAKER:
+Maybe we can discuss as much as we can. Hello everyone.
+
+UNKNOWN_SPEAKER:
+Hey, I don't. Hello.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+I know for sure.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+And I think we can start while others can join, because then I don't want Ashraf to be on hold. I don't think Mohammed Ashiq is available. Have I consented to Abdul? Let me pull Abdul and this call so that Atlas is available from onshore.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Let's start. Hello, good afternoon, Ashraf. Good afternoon.
+
+UNKNOWN_SPEAKER:
+I hope you can hear us well.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Yes. OK. So let me give you a brief about what we are trying to do so that we are aware of our projects and the things we are trying to do. So SAP IBP is the AdNoc's initiative from the headquarters to have centralized planning process for all the group companies of AdNoc. So, the project scope includes MRO, which is maintenance planning, chemicals planning, and drilling material planning. So, we've had quite a few sessions on drilling material planning with drilling end-users from both onshore and offshore.
+
+ Abdul is our point of contact for our conversations with offshore. Similarly, for onshore, we have Mohammed Ashiq and Abdul. So, as part of this project for drilling, what we are doing is that we are trying to get the demand of drilling materials. So, the functionality in IBP is divided into three pieces, where we work on the demand. Demand is necessary, but we are trying to get the demand of drilling materials.
+
+ So, we are trying to get the demand of drilling materials. So, we are trying to get the demand of drilling materials. Essentially, per well, what are the material required for drilling. Based upon this demand, we work on the supply planning, where this IPP tool is an SAP's proprietary tool, which has a native integration with SAP S4ANA, which means it has real-time connection to all the data available in S4ANA, including inventory, purchase orders, and all the transactional data for procurement.
+
+ So what the tool is supposed to do is define the demand for the drilling materials, and based upon the demand for drilling materials, create purchase proposals, and have this end-to-end visibility from a planning perspective so that the material can be planned and inventory can be optimized. So this is the objective we are trying to drive through this project. Any question on the objective we are trying to drive this project?
+
+
+
+UNKNOWN_SPEAKER:
+Oh that's clear.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+So basically drilling they prepare their material forecast usually and this is the expected is the output of this process to be shared with IBP and to allow for ensuring that the inventory is available. If it's not then the system will maybe raise the PR or something like that right?
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+So you have exactly put it correctly. The system will automatically raise PRNS for HANA, which means it's an end-to-end process. So what we are looking for is to have some information. So we understand from the discussion with all the stakeholders that for Onshore, EWDP is a tool where you have the material forecast. And we are looking forward to understand how the forecast is available in EWDP tool.
+
+ And if there's an opportunity for us to integrate directly with EWDP tool so that without any user intervention, this forecast can be taken as input to IBP. Now we understand there can be some challenges. So from an approach perspective, what we want to define is the mapping between EWDP and S4 HANA IBP. Sorry, not S4 HANA, IBP. Define this template for the people or for the community or for the end users who are using EWDP tool.
+
+ This input can come from EWDP directly, whereas the teams which are not using EWDP tool, this mapping can be provided to them so that they can directly provide data to us in the format we define in discussion for EWDP, so that eventually if they tomorrow migrate to EWDP, then the format and the data remains consistent in IBP and they can also start getting directly data from EWDP.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+So that's the direction we've received from the AdNoc leadership and that's where we are working on evaluating how we can integrate or what are the data fields available in EWDP which we can get input to SAP IBP.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yeah, that's clear. So maybe, yeah, thank you for this explanation. I think first of all, maybe besides Mohamed Ashiq and Abdul, basically the main stakeholder for issuing the material forecast, the drilling material team, the oil services team. So they are an important stakeholder that maybe they need to be engaged down the road because they will be responsible to issue the material forecast report, which is the one that is approved.
+
+ So basically you need a baseline that you will rely on in your planning, right? Where they come in, because they can prepare multiple forecasts for various reasons, but it needs to be agreed which version is the baseline that will be output. That's maybe number one. Number two, my understanding is that drilling, they can prepare material forecasts like maybe every quarter in onshore. So I'm not sure if that's in your consideration.
+
+ Or what's the frequency of the planning or this integration you have in mind?
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+So normally it can be minimum monthly, but then the tool has the flexibility to define flexibility or frequency as per the business requirement. So if the demand changes only quarterly, then the frequency of running the process can be set as quarterly. Quarterly. But if someone wants to change demand every month and check if the supply planning is covering the changes in demand every month, then the tool can also work on a monthly frequency level.
+
+ Very good. So you have that flexibility.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Or it can also be ad hoc.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+Suppose if there is something which you want to, if something you know is changed and you want to pass on that input immediately, which means you can trigger that conversation with the stakeholders, create this input, create this demand revision, and let planners work upon the new proposal immediately.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+So I think this is part of the business process that needs to be agreed with the business owners for that process, which is the materials team in Adno Control. So my second question, yes.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+One more thing, as you mentioned, you have multiple versions of demand forecast. Has the functionality to do simulation based upon the version planning, which means you can have one base version, which is the approved version, but you can also have multiple versions for simulation and see that based upon how the demand is changing in different versions, what is the impact on overall material availability and decide which version has to be has to be defined as the final base version which gets into actual procurement proposal.
+
+ Which means, if there are multiple versions available for demand in the tool, we can incorporate multiple versions in IBP as well.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+My second question regarding the integrations. What kind of integration is IBP accepts because from onshore from either BDP usually we expose the data through maybe database link or a view so I just want to understand from your side while the middleware in between is SAP
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+Which is cloud integration data services which has all the different kinds of of interface mechanisms available, including flat file interface, XML interface, direct, like API-based integration, or if you are exposing tables directly, database, probably we can also look for, we can also check if that integration can be supported directly between the tools.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yeah, I'm just wondering, so maybe we can explore either a web API or a view database view, so we have that option, at least.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+So, from a project perspective, there are a few things from a – before we proceed, I just wanted to confirm that you are the right stakeholder to help us design and decide upon the – from an IT perspective, or do you think we need to involve any different stakeholders from IT who will help us take decision? Because we have a project timeline, and we want to make sure that if we need support from the tool, you have availability or you can help us in the project timeline to define this interface so that's one thing probably we would like to work and once that segment is there if that's not the case then probably we can start with an offline interface probably a file-based interface and then eventually work towards an online interface which where the two
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+systems are directly integrated yeah I see I see your points okay clear for the for digital digital focal point, it's me. I'm handling this subject. So for anything, I will be supporting you on that. Just I wonder, what's the timeline for your project?
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+So essentially, we started in the October. So we have right now at a design. We already have a design approved. But during the design discussion with the material planning team, when we we were when we were trying to go through the details of the process we realized there is some change required so we've we've come back to drawing board so we are kind of in the rush to redesign complete the design again the change is a design is simplified but then we still need to finalize uh the go live of the project is uh uh is may and june so we have to go live so the go live what we are looking for is june go live right now which means we have to complete the build in next maybe a month or month and a half to make sure that all the data interface related activities are complete and then UAT during the March and April and then do the cut over in June, July and go live.
+
+ That's the timeline we are looking for right now. So from an urgency perspective, So, we've had conversation with the drilling material planning team, Abdul and Mohammed Ashiq are helping us out, have already helped us out on having the clarity. So, right now, what we would like to discuss upon is that there are certain fields which we expect where we need data as an input based upon our conversation.
+
+ And we would like to understand if this data is available in the tool or any other additional data which is available which we can use. So that when we integrate with IBP, at least we define the template, what are the data objects between the two tools which needs to communicate, and that template design is ready so that we have this understanding that yes, with this interface, we'll be able to get demand and then proceed with it.
+
+ So that's the first thing we would like to analyze, understand, and close with the team. So that's where I think I'll be talking more to you in terms of to understand if, since we have had discussion with business, to understand in terms of what are the fields, whether the fields which we require are available in the tool, and if that fields are available, can we, then how we can extract that can be the second part of our discussion.
+
+
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yeah, yeah. Do you have that, the rest of fields expected from IPP ready?
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Yes, we have a first draft ready. We are reviewing it. Probably I can show you the first draft, but probably during the day, today or tomorrow, we can help you with the final field list. So, essentially, this is the file with data which we are looking for. So, the idea is that we have a well, and for a well, we are able to identify the material. So essentially, some of the attributes are well-level attributes, like the sequence, the company, the field, the rig, the well, and the design completion code.
+
+ These are all well-level attributes, as well as the well requirement dates, like the start date, end date. And then some of the attributes are material category, like well-head code design, or what is the category of the material. If there are any codes from a casing design perspective, that is something we are looking for. And for that specific well, what all different materials are available, the material codes and their quantity.
+
+ So this is what on high level we're looking for. We are reviewing this list internally, but we will get back to you with this final list probably by tomorrow if this can help. And then we can have the conversation, further conversation on this data object or these fields what we need.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yeah, a majority of these fields are available in AWDP. I just want to if you have example data or sample data, because I need to verify some of the columns might have maybe, how to put it, they might have different terminology or meaning depending on the situation. So I just, if you have sample data, so I can verify it with business group here, responsible for the material forecast. Ensure that it is accurate for for the integration purposes.
+
+
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Okay so while right now we don't have all the sample data but probably we can work with Abdul and Mohammed Ashiq to like put three four rows of data so maybe Abdul whatever data we have will fill it and then if we need additional help probably we'll connect with you and try to put additional input in terms of sample data so that we can share this template with Ashraf and then probably then Ashraf based upon this template you can review it and we can have a follow-up call to understand which all data objects what does this mean so what is that technical field name in your system and what is the description so that we have a correct mapping between the two systems so you'll have your technical fields will have our technical fields and we'll have a business description to each field which makes sense to business so that we have this one-to-one mapping between the two systems.
+
+
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yeah, that's great. Okay. When can I expect this template? If you can share it with me, it's fine. I can just review it quickly. Remaining some sample data, I need that maybe next week. It's fine.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+So, we have this template ready today. We will internally finalize these fields and then we will work with Abdul to put there is some sample data between Friday or Monday early morning. We will be able to share this template with you. Then Ashraf great.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+But if I understand this from offshore, so maybe some attributes are not applicable to onshore. For example, the tower I think.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, yeah, yeah, right. See what we can do. So we will better will take the sample data from onshore. Yes, so the rumor of for someone can assist on this. Yes. Well head, you explained correctly last time, isn't it to you? Yes, yes.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+But then we have this issue where they said that we need leadership approval to share the data. So we don't have that data yet with us.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So probably we can. What about OCTG you have?
+
+UNKNOWN_SPEAKER:
+I think that is.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+Have, I don't have. So Ashraf, the thing is we don't have data for all the categories. We have the planning data from dws system sample and we have sample octg data but not for all the categories so is it okay if I give you for only one category it should be fine yeah yeah if that's
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+the case then we can we can ourselves put these things together and send it to you like quicker or faster yeah and if muhammad ashik or the abdul karim can review it that's even better because they know onshore data
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+better Yeah, OK, OK, then that's probably we can do is what we can do is we can put data ourself into the template, get it reviewed by the onshore team and then send it across to you. OK, now if we are able to send this by early Monday morning or tomorrow end of the day, what do you think? How much time will need for for you review this and get back to us is it something which can be done quickly by you or is it something which will need some more time for you like we just wanted
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+to understand no no it's very clear I think in a matter of one two days just to verify with business I'll get back to you on the spot no worries okay okay I think then if that's the case then
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+probably if we get this clarity in terms of data and understanding then probably we'll be able to close the redesign and agree upon the template and then this template can be used for both onshore and offshore. One quick question, Ashraf. When you say forecast, you have forecast at material level, right, in EWDP?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+And this material codes, SAP material codes?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+We have internal item codes, which is for EWDP, and they are associated with the generic item number. Which is in sub, and with quantities, of course. So that's why I need to sample data, just to cross-check it with the business group here, just to ensure that it is as you expect. Yeah.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+And if possible, once we give you sample data, for the same field, if you can extract sample data from EWDP system and give it back that this is how the data looks like for what we are expected so that this helps us make sure that our understanding is same in terms of what we are requesting, what you're providing as well. Absolutely. Sure. All right, then I think we have this alignment.
+
+UNKNOWN_SPEAKER:
+Anyone have any other question for Ashraf?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Thank you, Ashraf. I really appreciate your support here. So we'll work together on this.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Alright, then if there are no other questions, appreciate all the time effort time and also under the well planning as well as to discuss with.
+
+UNKNOWN_SPEAKER:
+So so I should have.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+I'm assuming the well planned data since EWDP system is connected to DBS or DWS system, which means it has the well planning data data as well in the in the same system, correct?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Exactly exactly. So I will be. Reviewing this template with the data with the planning team and the material team in onshore and confirm accordingly yeah so so in that case Abdul then we don't need to separately get well planning data because then with a single
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+template we'll have both well-planned data well well well-planned data as well as material data and within ipp then we can use the same data to put up different views at well level and at material level yeah okay just to
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+confirm The planning data is included in the template you just shown, right? Correct. Or is it something else?
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+It's the same template.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+So that's why we've created only a single template. So the initial fields will be related to wealth. And then you will have a few fields related to material category. And then you will have material codes and the quantities. OK. Yeah.
+
+UNKNOWN_SPEAKER:
+OK. Good. Yeah.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 1:
+So this is the date and the quantity. So essentially, this is what we are looking for. What we are looking for is some generic data which related to well which is applicable to all the materials and then the specific material type related or the material category related information and then the material related information like old material code, SAP material code and then the date when this material is required and the quantity when this material and the quantity of the material.
+
+
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+This is what on high level we are looking for.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, okay. Asha, for one more thing, for the AWB perspective and the the data structure same to onshore and offshore?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+I think 90% it will be the same some attributes may be not applicable to onshore like the tower maybe or another column so but ideally it should be the same yes exactly because I believe offshore they are using DWS but they are not activating the material forecast that's my understanding you don't have the material forecast Yeah, DW. Is the same, isn't it? Yes, exactly. Yes, it is the same. For offshore, I think you need to engage with the offshore digital focal point, because he is responsible to the data.
+
+ You know Deepak Agarwal? Yeah, yeah. I think you know him, right? So you need to coordinate with him on the offshore data. But the integration point, I think it will be the same, because it's the same database. But in terms of data and authorization and approval, need to manage it with him.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+OK, so Ashraf, a question. If Offshore does not use EWDP for the material plan, do you have well-planning data for Offshore in your system?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yes. Yes, the well-planning data for Offshore is there. However, they are not using the material forecast system.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+OK, so which means that a partial data for Offshore can also be received from EWDP system, and then the Offshore team can further with the model planning data. Exactly, exactly.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yes, but this has to be confirmed with the digital focal point from offshore, Deepak. Okay, okay.
+
+UNKNOWN_SPEAKER:
+Okay, noted.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+So probably the next meeting we will have Deepak as well as part of the same discussion so that everyone is on the same page and if there are any concerns with respect to then we'll involve, like we will not have any surprises later.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, Rahul, I want to the DW system as Ashraf mentioned, so this is already used in offshore-onshore and also I think the sour gas also extended isn't it?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Sour gas, I think there is a plan to implement, they are fully implementing it, yes.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay, so there's a plan, okay, so that's good and also the now it's fully matured and all the approval are obtaining through this system on later so for both onshore offshore and it's going to upstream as well as in the rest of come again what is for the DWS the old approval for the is happening in the within the database and the review also the final version is issuing under the database for onshore and offshore regarding the will
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+plan you mean yes yes exactly What I've done, I think, any other question from anyone?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Or then we can... Yeah, can you just... Rahul, Abdul joined right now.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+So, can you just...
+
+UNKNOWN_SPEAKER:
+Hey, Abdul.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Hey, Abdul. Thanks for joining. So, we just had a discussion with Ashraf, understanding from our tool perspective, how we can integrate with the EWDP tool. And what we have agreed upon is that we will share a template based... So, based on on all our discussion with different stakeholders, we have created a template of the data we need in IBP for us to do demand planning in IBP. This template we will share with Ashraf and then he will help us evaluate from an EWTP which all information is available in EWTP and which may not be available.
+
+ On high level, he feels that most of the information should be available. We have shared a sample template during our call, like showing him the template. So what we are doing is, internally, we will finalize the fields for the template. We will fill some data based on the data we have. We want to review this with you before we send it to After Rush, with you and Abdul, so that the template has the correct sample data.
+
+ And then Ashraf can then review internally and confirm from an EWDP tool whether the data is available, the data looks in EWDP, so you can help us share some samples from EWDP, and then what are the technical specifications of those fields in EWDP, and from there we'll initiate the inter-integration related discussion further, if the data from a business perspective is aligned. Okay, share the term then we'll do it.
+
+ Yeah, so that's what we were discussing and agreed upon, and so next step is for us to share this template Abdul and Mama Abdul to review it and then share it. Yeah, I should be all three of you. And probably we also need to include Sorgas Abdul Latif when we review this template.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No time being no need because it's that there is no activity. We don't want to complex. So as I mentioned, if it is extending whatever I just want to align with Ashraf. Then it will follow same so we can say that all three companies and in future.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+What about a language? Hailing Russia I believe they have started using TWS, but I'm not sure how maybe mature that Yes, yes, yes exactly Good, good.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So Rahul, basically all four companies are going to use the DWS. So the integration is good enough for the DWS. And as EWDP, Onshore Fully Utilizing, and we want to see, and also the Onshore, sorry Offshore, there is a plan, but not started, only Umururu Fuel Asset Test, they start using it.
+
+Conference Room (Rahul Patel (ADNOC Group D&CS)) - Speaker 2:
+Okay, noted. So, I think then we have aligned, like, these are the next steps will help us close the design immediately. So, let's get back to this. I will work and get back to you. All right, then. I think we have concluded. Our meeting time is also over. So, thank you very much, everyone, for the inputs, and we'll get back to you soon with the required data.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Thank you. All right. Thank you. Thank you, everyone. Thank you. You
+
