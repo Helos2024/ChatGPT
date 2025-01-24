@@ -1,0 +1,287 @@
+Nishant Keloth (Borouge):
+Morning, everyone.
+
+UNKNOWN_SPEAKER:
+Morning Anandha.
+
+Kunal Sheth (ADNOC Group D&CS):
+Good morning, Nishant. Good morning, Anandha. Good morning. Nishant, I have just sent you an email for Buruj access. So yesterday, Kali told me that let us raise an Buruj VDI because currently that IP address is causing issue. And till that time, so he went to the Accenture team and they come to know that they are currently using Buruj access via VDI. So my VDI is approved. So today I am able to even access the system but while entering the username and password I don't know why it is continuously going to the data loading mode just change the theme of the GUI and then try accessing
+
+Anandha Krishnan (Borouge):
+it okay okay so it is related to GUI I don't know it's classical or signature either way one of them. I think, let me quickly share my screen.
+
+Nishant Keloth (Borouge):
+Rahul is in another meeting. Sorry, sorry, I was calling someone, just a moment.
+
+Anandha Krishnan (Borouge):
+I'll be back Kunal.
+
+Kunal Sheth (ADNOC Group D&CS):
+Okay.
+
+UNKNOWN_SPEAKER:
+Kunal, Rahul is not here now.
+
+Kunal Sheth (ADNOC Group D&CS):
+Rahul is another parallel with Khalid and this Jaga to discuss the supply supply chain network. Just just wanted to ask you something.
+
+Nishant Keloth (Borouge):
+Have you guys separately identified the AI based functionalities which I mean scenarios which are part of IBP? Yeah, there are a couple of area where we will be using where we are in our set. Can you? Do you have that thing handy or somewhere so that you could share with me?
+
+Kunal Sheth (ADNOC Group D&CS):
+I think from our side, there is a change management team who has prepared a FAQ. So around two to three questions is related to AAML. So you'll get those details where we're going to leverage this.
+
+Nishant Keloth (Borouge):
+No problem. If you could give it to me, it would be because, you know, everybody is actually behind this now. What are the new scenarios related to this, so it would be good if you could give something.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Morning Kaisar, how are you doing? Morning Nishant, I'm good man. Thank you. Just my voice is gone because of throat pain.
+
+Nishant Keloth (Borouge):
+Good morning.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+You sound like a rock star now.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+So, Kaiser, you are planning to set up after 2.30pm, right? Based on the ECS team availability.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Yeah, Mustafa is checking. So, he might schedule it at 3.
+
+Kunal Sheth (ADNOC Group D&CS):
+Okay, sure.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+But the steps I read the email steps are for only SNC right? Or any other steps that we had to execute? No, no, it's only for SNC. Only for SNC, right? OK, OK. All right. Because they'll get confused by seeing all these attachments and emails.
+
+Kunal Sheth (ADNOC Group D&CS):
+Actually, two parallel.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+topic are going on that that is the reason getting confused yeah yeah that's where the confusion is yeah right but it is clear I mean like if it is only snc then yeah so they can follow the excel uh
+
+Sagar Vora (ADNOC Group D&CS):
+so in that cd4 is mostly the steps needs to be performed on the agent and the er6 we have to perform on like it's a sap steps so either mustafa can perform or yes And that we will handle it
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+internally no problem. ER6 we will do it internally.
+
+Sagar Vora (ADNOC Group D&CS):
+But at the end ER6 certificate will be shared to again DSA. So on the call we have to finish and at the end I will require all the parameters to pass into CIDS.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+So we can finish all the steps. This user password you have?
+
+Sagar Vora (ADNOC Group D&CS):
+No I just have user I don't have password. I think it's the generated from the
+
+UNKNOWN_SPEAKER:
+The system.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+So we need to find out who received the password, right? Yeah, might be none or asthma.
+
+UNKNOWN_SPEAKER:
+They can.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Not sure if Khalid had received the password.
+
+Sagar Vora (ADNOC Group D&CS):
+No, no, no.
+
+UNKNOWN_SPEAKER:
+Sagar, you have sent two emails. One is on the IBP data store and one is SMC.
+
+Kunal Sheth (ADNOC Group D&CS):
+So both are dependent on DS activity, right?
+
+UNKNOWN_SPEAKER:
+Yes, yes.
+
+Sagar Vora (ADNOC Group D&CS):
+okay okay so in the single call you're going to perform both for both the issues yes okay okay and there is one more activity uh basically the IBP base ibp certificate certificate based authentication we did for one erp agent okay but since the agent is means we are getting the IBP data store error so I would prefer like once IBP data store is up and running then we can perform the same activity for the burush tenant okay okay
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+I have the passwords agar I'll pin you separately just keep it with you is it working after changing Let me try.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let me share my screen. Thank you. You We can take this outside this meeting, we will just, we can just focus on the other topics.
+
+Anandha Krishnan (Borouge):
+Yeah. So I think these two are the main topics.
+
+Kunal Sheth (ADNOC Group D&CS):
+which we are discussing and today kaiser has already set up a call with the team so maybe three o'clock around we will discuss and try to resolve that issue data store as well as sncpart and for the buruj we are going via vdi approach nishant so if it works for me perfectly fine maybe we will request all other team members to to raise that request because currently. That would be the easy way out here.
+
+
+
+Nishant Keloth (Borouge):
+Otherwise it's going into loops.
+
+Kunal Sheth (ADNOC Group D&CS):
+I mean, yeah, I've been this is currently working, but still I'm not sure whether when it will get resolved.
+
+Nishant Keloth (Borouge):
+Now can you check that part? Did you try? I think another was asking. Sorry I didn't hear what was your response. Can you check the team and check whether it works for you now? Uh, directly here in the Go go to options and You know, wait somewhere there will be.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Nishant Keloth (Borouge):
+Not here 11 second. Because I pulled this up from my phone.
+
+UNKNOWN_SPEAKER:
+Wait.
+
+Anandha Krishnan (Borouge):
+I think it's already changed.
+
+Nishant Keloth (Borouge):
+Yeah, it looks OK. Double click now and check whether it's working.
+
+Kunal Sheth (ADNOC Group D&CS):
+No, still getting the same error. Partner not reached. This looks like I don't know network issue.
+
+Nishant Keloth (Borouge):
+No, I'm talking about the VPN one. I think he's trying the other way.
+
+Kunal Sheth (ADNOC Group D&CS):
+OK, media you are saying sorry media. Yeah, we do.
+
+Nishant Keloth (Borouge):
+OK, let me check. Because this one it's not easier. Me and Khalid last week. I mean, yeah, early this week with speaking to guy. Now they're going to Azure team. It's it's reaching where also if getting BDA is easier, better we go for that.
+
+Anandha Krishnan (Borouge):
+But what do you think? Yeah, it's fine. No, he's less bureaucracy as well.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, yeah.
+
+Kunal Sheth (ADNOC Group D&CS):
+Actually, this is hand. I don't know why.
+
+Nishant Keloth (Borouge):
+OK, can you just can you just close from the top somewhere or use any way to close it up.
+
+UNKNOWN_SPEAKER:
+Stop transaction.
+
+Nishant Keloth (Borouge):
+Or close the window even or open the menu again.
+
+UNKNOWN_SPEAKER:
+whatever. See. Open the SAP logon pad again, please. I don't why it is not visible.
+
+Kunal Sheth (ADNOC Group D&CS):
+Because you have to share the entire screen. No, it is already shared. This is within the browser. Now I can only see the screen. For us also, the other one is appearing shaded.
+
+UNKNOWN_SPEAKER:
+No, I think.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let me close this. You restart to the title session wait it's not closing no no uh how maybe I need to restart the session restart the session or inside that terminate uh programs is there any There is a cross at the bottom.
+
+UNKNOWN_SPEAKER:
+Are you able to click that at the bottom right?
+
+Nishant Keloth (Borouge):
+No, it is not working. Right click and see what you're getting.
+
+Kunal Sheth (ADNOC Group D&CS):
+Create session. It is also not working.
+
+Nishant Keloth (Borouge):
+Better restart it. So I'll give you a second.
+
+Kunal Sheth (ADNOC Group D&CS):
+Thank you Within the browser, I don't know why it is not coming.
+
+UNKNOWN_SPEAKER:
+Sorry.
+
+Kunal Sheth (ADNOC Group D&CS):
+can I drop off like if nothing yeah yeah sure I think I think that is only two critical point related to the ibp one is the data store issue and second one is snc so I think yeah that we will yeah anyway we will discuss afternoon so for the buruj part let me check vda access is already granted but still I'm facing issue in the sap access So let me check, Nishant, and then I'll get back to you
+
+UNKNOWN_SPEAKER:
+in case any help is required.
+
+Nishant Keloth (Borouge):
+Sure, sure. So I can drop off anything else from my side, or we're good?
+
+Kunal Sheth (ADNOC Group D&CS):
+I'll restart the session for the VDI. I think it is hanged now.
+
+Sagar Vora (ADNOC Group D&CS):
+So I just joined. Kunal, do you got the access for the brooch?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, I got the access and also tried to export. Is the sandbox but I don't know why the system got hanged so we need to restart again.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+I think it should work now.
+
+Kunal Sheth (ADNOC Group D&CS):
+It is accepting the username and password but it is loading the data continuously.
+
+Nishant Keloth (Borouge):
+Restart it and change the another set no the same thing it should work I think so restart it better you restart it.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah yeah sure sure after restarting I think maybe issue might get resolved.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So this one this this This way it should work, right? So we should not have any other issues.
+
+Kunal Sheth (ADNOC Group D&CS):
+I'm not sure.
+
+Anandha Krishnan (Borouge):
+You are able to reach the system.
+
+Kunal Sheth (ADNOC Group D&CS):
+So I'm not expecting any issues except for this theme. So let's pick it up. Thank you. Anandha, you have suggested to restart only, right? I think Anandha left. Yes, yes, restart it now. Yeah, yeah, I'll restart it. And then I'll update you on the team. Yeah, please. OK. Fine.
+
+Nishant Keloth (Borouge):
+Khalid, do we have anything else? Or we're good?
+
+UNKNOWN_SPEAKER:
+I don't think so. No.
+
+Nishant Keloth (Borouge):
+If you need anything, just give me a shout.
+
+UNKNOWN_SPEAKER:
+Sure, sure.
+
+Nishant Keloth (Borouge):
+Thank you, Nishant.
+
+Anandha Krishnan (Borouge):
+Have a good weekend, guys.
+
+Nishant Keloth (Borouge):
+And Kunal, ping me if you have faced any issues in connecting. Then we'll pull in Ananda separately, if that is the case.
+
+Kunal Sheth (ADNOC Group D&CS):
+Sure, sure, Nishant.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Nishant Keloth (Borouge):
+OK. Have a good one, guys. Bye-bye.
+
+Kunal Sheth (ADNOC Group D&CS):
+Thank you.
+
+Sagar Vora (ADNOC Group D&CS):
+Thank you.
+
+Kunal Sheth (ADNOC Group D&CS):
+Bye!
+
