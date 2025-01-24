@@ -1,0 +1,374 @@
+Richard Quinteros:
+¿Cómo estás, Fer? ¿Me escuchas?
+
+UNKNOWN_SPEAKER:
+Fuerte y claro, amigo.
+
+Fernando Tlaxalo:
+Es que no se conectan mis audífonos. ¿Cómo están? ¿Cómo estás, Richard? Muy bien, muy bien. Ya tú sabes, poco a poco.
+
+Richard Quinteros:
+Dándole ganas.
+
+UNKNOWN_SPEAKER:
+Bien, todo bien.
+
+Richard Quinteros:
+Bienvenido a este proyecto.
+
+Fernando Tlaxalo:
+Pues gracias, no sé qué tan bueno, qué tan malo.
+
+Richard Quinteros:
+Ya lo verás, no te preocupes.
+
+Pablo Palacios:
+Hola chicos, ¿cómo andan?
+
+Richard Quinteros:
+Hola Pablo, ¿qué tal?
+
+UNKNOWN_SPEAKER:
+¿Qué tal Pablo?
+
+Pablo Palacios:
+¿Qué tal, cómo estás?
+
+Fernando Tlaxalo:
+Un gusto.
+
+Richard Quinteros:
+¿Qué tal Mave?
+
+Fernando Tlaxalo:
+¿Qué tal Mave? Pues ahí va, ¿eh? Realmente, híjole, son complejos.
+
+UNKNOWN_SPEAKER:
+Muy complejos.
+
+Fernando Tlaxalo:
+Yo me fui de paternidad. Apenas hoy me estoy reincorporando, pues agarré todas mis vacaciones. Pero cuando me fui, pues estábamos en pruebas. Y no sé si son complejos, hermano. La siguiente semana el equipo va a ir para allá, va a ir a Celaya. Lo que pasa es que son...
+
+Richard Quinteros:
+son digamos delicados principalmente porque ya traen conocimiento de SAP y son delicados, son delicados.
+
+Fernando Tlaxalo:
+Son delicados y a la vez son flojos porque están acostumbrados a que todo les hagan entonces pues no quieren hacer nada.
+
+Richard Quinteros:
+Así es, así mero son. Además pues toda la cuestión que tienen de que tienen ahí a una empresa de logística en No, y también son de cuidado, porque les decía yo, hasta parece que tienen una lista de todo lo que se les dijo y
+
+Fernando Tlaxalo:
+asumen que se va a hacer.
+
+Richard Quinteros:
+No, y no es eso, sino que pues al final del proyecto, o sea, al final en el proyecto, ellos digamos que eran los intermediarios, ¿no? Y por ejemplo, el cliente brava decía algo, en él y quien lo tomaba, en él y quien se lo pasaba, no lo pasaban nosotros. Pero eso fue un problema, porque al final parece que Snellekin no pasaba muy bien la comunicación, el cliente a nosotros.
+
+Fernando Tlaxalo:
+Yo no, hay otro tema, que también no tienen conocimiento de la herramienta, o sea, se ponían a diseñar y el diseño que te aventaban, tú tenías retrabajos por todos lados y varias veces también les digo, es que eso es mucho, no, no, es que así lo hacemos, ah bueno. Pero sí son complicados también, pero para la siguiente semana van a ir a Celaya, van a ir a Celaya a las pruebas integrales ya básicamente para terminar con eso y empezar con el otro almacén.
+
+ Pero ahí va la vaina.
+
+UNKNOWN_SPEAKER:
+Ahí va.
+
+Richard Quinteros:
+¿Quién es, Samir? ¿Samir? ¿Samir Milán? Buen día, ¿me escuchan? Fuerte y claro, amigo.
+
+Fernando Tlaxalo:
+Te escuchamos.
+
+UNKNOWN_SPEAKER:
+¿Me escuchan?
+
+Richard Quinteros:
+Fuerte y claro. Te presento a Fernando Traxalo. Forma parte del equipo ahora de WM.
+
+Fernando Tlaxalo:
+A ver, prenda mi camarita para que nos veamos por lo menos un ratito.
+
+UNKNOWN_SPEAKER:
+Sí, tengo que maquillarme primero, espérame. Peinárteme.
+
+Samir Milan:
+Una peinada.
+
+Fernando Tlaxalo:
+¿Fuiste a la oficina, Richard?
+
+UNKNOWN_SPEAKER:
+No.
+
+Richard Quinteros:
+Me quedé retirado, pagué las casetas, el combustible, nada.
+
+Fernando Tlaxalo:
+No, pero ahorita ya... All hands, obligatorio para todos.
+
+UNKNOWN_SPEAKER:
+Bueno, bueno, bueno, bueno.
+
+Pablo Palacios:
+Chicos, estamos todos en silencio. Ahí Johnny no se iba a presentar, así que no, no, no podía estar presente.
+
+Richard Quinteros:
+No va a estar, bueno. Así que somos lo que somos. Somos lo que somos y estamos lo que estamos. Bien. Bueno, mira, principalmente, pues nada, date la bienvenida, Fernando, al equipo de Diana. Hablándote un poquito de Diana, para darte una pequeña introducción rápida. Digamos que Diana es una empresa de productos alimenticios, como papitas, sabritas y cosas así. Sus procesos logísticos son muy estándar.
+
+ Nosotros le estamos haciendo unas configuraciones bastante estándar. Unos que otros que se nos salieron del estándar porque se llama CROSS. Después platicaremos tuyo más aparte de eso, para hacerte digamos un boarding bastante correcto. Pero digamos que ese se salió un poquitico del estándar de salida, se llama Cross Autoventa y Cross Preventa, así se llama. Ellos tienen dos procesos logísticos conocidos así como Autoventa y Preventa.
+
+ Ese proceso se salió del estándar, porque haz de cuenta que no es cross como tal, ya bien conocemos nosotros el concepto de cross docking, el concepto de cross docking, llega a la mercadería en mi almacén y una vez descargo y puff para el good, para el good dicho son ¿no? Y de ahí mismo pipuponchao despacho y fuera, ese es el proceso estándar, ahora aquí no funciona así ¿por qué? Porque ellos hacen un traslado, un traspaso entre almacenes ¿ok?
+
+ De pertenecientes al mismo centro y pues de nosotros tenemos que mandar la mercadería preparada para el pues el destino final final de ellos, autoventa o preventa de un almacén intermedio. Vale, es decir, vamos a poner un ejemplo. Ellos tienen su planta o su centro de servicio. Vale, el WM ellos despachan a un almacén intermedio. Vale, ese almacén intermedio toma la mercancía y la carga en unos almas, en unos otros almacenes IEM que son reparto o autoventa, así se les conoce.
+
+ Entonces para nosotros en el WM solamente nos llega una entrega de salida con el dato de cabecera que corresponde al almacén intermedio. Nosotros ahí no sabemos quién es el final final. El almacén IEM final de ellos no sabemos nosotros. Entonces la única manera que nosotros encontramos para es por el grupo de consolidación, a través de un desarrollo, ¿vale? Llega la entrega de salida, en esa entrega de salida viene un texto, ¿vale?, que especifica, básicamente, el final final, el cliente, el almacén yema, el que va, pues, realmente, ¿no?
+
+ Y en ese mismo desarrollo, pues, va a pasar o se le va a pegar el grupo de consolidación correspondiente a ese final final, ¿vale? ¿Para qué? Paremos de cara no al intermedio sino al final final real ok ese es el único desarrollo ahí no es un cross talking como tal y por eso se hizo como como el desarrollo por ese mismo término si se entendió más o menos el punto lo iremos viendo poco a poco más o menos más o menos y si tienen documentación de eso me voy a dar bastante en el pp también me voy a dar bastante de lo pasado Damos acceso a la carpeta.
+
+ De hecho, ahí está todo. Que esa carpeta puedes ver el documento de diseño. Puedes ver todo lo que lo que traemos y lo que llevamos. Vale, vale. De momento yo le comentaba yo que yo estoy avanzando ahorita. Ya ha avanzado varios procesos de salida. La idea es que tú nos apoyes en procesos de salida porque son mayores. Vale, yo déjame un momentico. Te voy a compartir mi pantalla en un segundo. Te voy a compartir mi pantalla acá.
+
+ Si ves acá este pequeño, digamos, Excel. ¿Se ve? Ahí se ve. En este documento están todos los procesos de Tubi, del BBP, partiendo por entradas, que es este primer bloque que está acá, y su avance ejecutado, y lo que falta. De este lado tenemos procesos internos, su avance y lo que falta. Y de este lado tenemos procesos de salida. Si te fijas, la mayoría de los procesos son salidas, o sea, son más que el resto.
+
+ Sí, hay mucho despacho.
+
+Fernando Tlaxalo:
+Exactamente. Ahora, ¿qué pasa?
+
+Richard Quinteros:
+Yo he abordado los que dicen 90 hasta el momento. Todo lo que dicen 90 ya lo he abordado, los tengo ahí probados, ¿ok? Unas que otras definir. ¿Por qué no lo pones al 100, Richard? Porque estoy esperando algunas que otras definiciones, como pues materiales de embalaje y demás, que ellos están trabajando todavía sobre eso, y eso me va a ayudar a mí a poder definir los perfiles de embalaje, las normas de empaque y todo ese tipo de cuestión para las reglas de creación, ¿vale?
+
+ Por eso no los he cerrado totalmente. Ahora, ¿qué otra cosa? Acá los procesos que no están avanzados son los que tienen 65%, Si están configurados, ¿vale? Están basados en configuración, pero no están probados, ¿ok? Entonces, básicamente, la idea es que, por ejemplo, tú ahorita estás llegando, tratar de dividir un poco el trabajo de salidas, ¿ok? Y, de repente, revisar cómo vamos a manejar el tema de especificaciones funcionales.
+
+ A ver, como te dije, el CROSS, el tema ese de CROSS que te comenté particularmente, necesita una especificación funcional. ¿Cuántos desarrollos hay, Richard? En total, en total, vamos a decir cuatro. Serían dos formularios, que son los de la etiqueta, y dos, uno que corresponde a la determinación de clase de proceso para el picking en dos pasos. El picking en dos pasos estándar siempre trabaja con el 20-20.
+
+ Entonces, como este tiene dos tipos de picking en dos pasos, son diferentes, hay que no indicar el 20-20. 20-20 sino 20-20 para uno y 20-21 para otro. ¿Me explico? Y eso es por desarrollo. Esa especificación funcional ya está hecha. Tienes el micrófono apagado.
+
+Fernando Tlaxalo:
+Dame un segundito, perdón. Subtítulos realizados por la comunidad de Amara.org Listo, Richard, perdón, disculpa. No te preocupe.
+
+Richard Quinteros:
+Entonces, la especificación funcional para el cambio de la clase de proceso en el Piquín en dos pasos ya está hecha, ¿ok? Eso lo hice yo ya. ¿Cuál falta? Especificación funcional del CROSS y la de los dos formularios, ¿vale? La etiqueta de entrada y la etiqueta de salida, ¿ok? Esa hace falta. Esos tres. Entonces, la idea es planificamos entre tú y yo para uno qué procesos puedes tomar de salida ok y qué formulario me puedes ayudar yo puedo hacer uno y de repente tú dos o yo dos y tú uno independientemente de no el que haga la especificación funcional del cross pues las otras dos especificaciones que son de formulario que la haga el otro consultor se entiende ok ok Ahora, creo que no es la sesión como para decirte una vez, mira, estos son tus procesos, no?
+
+ Si quieres nos podemos reunir tú y yo aparte y ya te digo yo exactamente cuáles puedes tomar tú. Ok. Y pues de repente ahí con eso, pero ya teniendo claro esos procesos, te puedes ir al BBB, buscas esos procesos, le das una leída, lees un poco el BBB para, para, para tú más o menos entender cómo está el proyecto. Ok. Y partimos desde ahí. Qué te parece?
+
+UNKNOWN_SPEAKER:
+Sí, sí.
+
+Fernando Tlaxalo:
+Ahí me va a ayudar bastante que me den el acceso a la carpeta. Voy viendo el BP. Me imagino que cada uno de estos escenarios procesos está detallado en el BP. Entonces lo reviso, lo checo y otra cosa que iba yo a preguntarles ahí. Este son solamente estos procesos. No hay algo que salga ahí sobre la manga de parte del cliente.
+
+Richard Quinteros:
+No es eso. De hecho este excel está armado de cara a los procesos construidos en el bbp, cada uno de ellos está en el bbp.
+
+Fernando Tlaxalo:
+Otra pregunta, ¿se está planeando tener documentado cada uno de estos escenarios?
+
+Richard Quinteros:
+Básicamente si te fijas en este documento, le haces clic a cualquiera y te va a llevar a el paso, los pasos del proceso, ok? Estos son los pasos mapeados en el BP, ¿sí?
+
+Fernando Tlaxalo:
+Lo tenemos nada más de esta manera, no tenemos un documento que diga, ah, mira, en esta pantalla de la PRDI tú le picas aquí y haces esto y eso.
+
+Richard Quinteros:
+No, no hay ningún manual todavía, no hay ningún manual de ningún tipo. Ahora, ¿se está previendo eso ya para el futuro? Sí, pero de momento como lo que lo más importante o rojo digamos así decirlo son a terminar las configuraciones de cara a que las integrales en teoría deberían comenzar a partir de 10 de febrero por allí de hecho se está estimando se está estimando un viaje a sitio ya para para esas fechas ahora puede que se desplace uno o dos días porque porque pues básicamente el cliente tiene algunas cosillas allá que está haciendo entonces por el miércoles es la semana que viene se va a definir exactamente cuándo es la fecha de viaje para las integrales ahora que tú puedas o no viajar es un tema que pues puedes acercarte ahí con tu delivery o con John lo checas vale porque entiendo que eres papá entonces está bastante pequeño entonces entiendo totalmente no te preocupes esta primera etapa de pruebas integrales la podemos tomar el equipo vale pero bueno sin embargo no asumo nada o concluyo nada todavía eso te lo te lo dejo si puedes o no.
+
+
+
+Fernando Tlaxalo:
+O sea, perdón, se tienen 24, se tienen unas semanas, dos semanas para terminar. Sí, exactamente.
+
+Richard Quinteros:
+Sí, sí, sí, es un reto, no te lo voy a negar, es un reto. Este proyecto comenzó un poquito, empezó a presentar muchos retrasos a partir de noviembre, diciembre y porque empezó a empezar a presentar retraso porque el cliente pues hay configuraciones específicas que son de ECC, ok? Es un ECC integrado con EWM Cloud, ok? Ok. Es decir, el EWM está descentralizado en su cajita, pues, ok? Entonces ellos no tenían conocimiento de las configuraciones técnicas que tenían que hacer de cara a ECC para que nosotros requeríamos de este lado también EWM, o sea, como clases de entrega, todas esas clases de movimiento, todas esas cuestiones que son propias de ese se ellos no tenían conocimiento.
+
+ Entonces se demoraron mucho en conseguir de repente un consultor y la consultora, pues que le diera, digamos el consultor para para suplir esto. Entonces, como que se perdió mucho tiempo. Nosotros ya teníamos nuestras configuraciones hechas, pero no teníamos ni cómo probarla, porque pues y mientras habían documentos. Exactamente. Entonces por eso se retrasó mucho. No fue culpa. Fue culpa de ellos.
+
+
+
+Fernando Tlaxalo:
+Ok, es raro que no se tenga nada de eso.
+
+Richard Quinteros:
+Bueno, qué te digo a mi estimado amigo? Entonces, pues ahora cómo queremos avanzar al futuro? De esa manera, como te comento, yo creo que un buen punto de partida es que te leas el BBP. Principalmente abócate en leer los procesos de salida, que son los más importantes sobre lo que vamos a estar trabajando, que digamos los claves. Ahí ya después, si quieres, no sé si será hoy o el lunes, hoy lo veo bastante complicado porque estoy trabajando en configuraciones, entonces el lunes a primera hora podemos reunirnos y decirte mira, lo vamos a organizar así, tú tomas estos procesos, yo me quedo con estos procesos, tú tomas estas especificaciones y yo esta especificación.
+
+ Entonces lo que quiere John y lo que quiere Héctor es como liberar un poco a mí para poder yo apoyar pues en cosas puntuales como requerimientos específicos del proyecto del cliente vale dudas del cliente preguntas del cliente darle respuesta al cliente y o ayudar al equipo pablo samir vale que ahorita pues la verdad es que si he tratado de ayudarlos pero de repente no puedo estar siempre metido de poquito todas todos estos procesos de salida todas esas cosas
+
+Fernando Tlaxalo:
+encima vale sí entonces ahí yo voy a pedir dos cosas, que me den acceso a la carpeta donde tienen todo eso para yo dedicarme el día a día a meterme como ratón de biblioteca a ver eso. Y lo otro, me imagino que también es con John, ¿no? Accesos, permisos, VPN, no sé si todo eso se maneje, güey.
+
+Richard Quinteros:
+Sí, de hecho, ya eso, nada más permíteme, por ejemplo, John ya esta mañana le solicitó al cliente tus accesos. De hecho, quedó en eso. En solicitarle tus accesos todo el tema de por ejemplo vpn en su vpn es un poquito extraña no es como el cisco como el forti client no de hecho fíjate como en la vpn de acá que estoy mostrando mi pantalla no sé si lo alcances a ver ellos usan algo que se llama 00 warp perdón warp aquí tal cual como ves aquí entonces tú cuando prendes el flaxito aquí pues ya está la red de ellos y te puedes conectar al sistema, vale?
+
+ Pero es mucho más fácil que un 40 client Cisco, de hecho, pero su instalación lleva un manual. Entonces me imagino también te ayudaré. Yo te paso el manual, te lo puedo pasar para no estar jodiendolos tanto a ellos. Yo te paso el manual y hacemos la instalación.
+
+Fernando Tlaxalo:
+Te parece bien, bien, perfecto.
+
+Richard Quinteros:
+Entonces, pues eso como primer punto, déjame nada más checo con John. El tema del acceso a la carpeta, te echas una mirada al BBP, si quieres también te la voy pasándome para que no perdamos tiempo, te paso la última versión del BBP. Sí, por favor. Por aquí mismo te la paso, déjame ver si me permite. Y te lo arrastro para acá.
+
+Fernando Tlaxalo:
+¿Es en El Salvador o en Ecuador? En El Salvador, amigo. El Salvador. Vas a conocer a Nayib Bukele. El país de Nayibuque, el hombre más polémico. Madre de Dios, tío. Ahí te lo pasé. Si quieres, yo te lo encargo. Perdón, ¿en qué horario empiezan a conectarse con ellos?
+
+Richard Quinteros:
+Reuniones. De hecho, nosotros de horario como como estamos desde aquí conectados desde las nueve, ocho, sea normal, porque creo que tenemos el mismo horario que él. El único que no está en el mismo horario, pues sería en este caso Pablo, porque él está en Argentina. Entonces, pues él se conectó de repente más temprano que nosotros en madrugada, pero cierra más temprano también. Entonces es por la diferencia de área.
+
+ Samir es de México, creo que es de Monterrey, Coahuila.
+
+Fernando Tlaxalo:
+No recuerdo bien, Samir. Apóyame.
+
+Richard Quinteros:
+Coahuila, Coahuila. Coahuila es la misión.
+
+Fernando Tlaxalo:
+Ahorita y en Coahuila.
+
+Richard Quinteros:
+pero sí pero de hecho pues él está en el mismo horario que nosotros sin ningún problema y pues cualquier duda pregunta comentario bueno el equipo está Héctor realmente como él es como el líder del proyecto por así decirlo más abajo viene Jonathan y Jonathan digamos que está como el proyect manager vamos a decir está coordinando todas las actividades es el proyecto y demás como siempre le sigo yo más abajo como arquitecto está pablo como consultora de lm al igual que es a mí como consultora de lm y tú que te sumas también parte del equipo consultora de lm vale ok pablo pablo se está está tomando apenas digamos agarrándole la onda a la parte de lm ya había trabajado con el UM, soportando algunas que otras configuraciones específicas del módulo.
+
+ No tiene conocimientos totalmente técnicos, pero ahí va. La verdad que es un gran trabajo. Samir está comenzando apenas, es junior, está aprendiendo. Más sin embargo, se aventó toda la configuración de movimientos internos para que te lo sepilléis. Esos son los juniors de Go. Yo no empecé así, yo empecé con soporte como dos años más o menos estuve en soporte y pues bueno nada yo como el lado de arquitecto en la batalla en la pelea mi primer proyecto como arquitecto aprendiendo como ya
+
+Fernando Tlaxalo:
+sabe y pues nada aquí estamos amigos bienvenido al equipo mientras pues ahí en lo que podemos apoyar este igual Pablo sabe Si hay algún tema ahí que por tiempo Richard no les pueda apoyar, con todo gusto me escriben y lo vemos. No hay ningún tema con eso. El chiste es empujar el proyecto porque la fecha está bien pegada. Sí, sí, sí, sí. Ya nada. Entonces, este igual ahorita ya empiezo a ver el BBP y pues si ya voy y si tengo algunas dudas, pues ya las voy anotando para el día lunes que nos llamemos.
+
+ Pues exponer la Richard.
+
+Richard Quinteros:
+Vale, perfecto, perfecto, perfecto. De hecho, te busco el lunes. Temprano para ya organizarnos vale si te parece si me late ahora por el mismo canal y pues nada ahí te pasa el bp por el chat para que le vaya echando una leída te vaya un intro a los procesos cómo está el rollo bastante estándar como te digo sólo cuatro desarrollos y pues nada vamos vamos bien un poquito retrasado de un poquito no bien retrasados este con pruebas integrales a la puerta a la vuelta a la esquina este como te digo checa el tema del viaje con hector con jon vale si no puede estar bien y si puedes también no te preocupe este pues nada eso y felicidades por ser el papá gracias luchas aprendes a hacer más con menos horas de sueño bienvenido a mi mundo pues si ya llevo hace por ahí hace cuatro años no te preocupes de hecho ya cumplió 5 ahorita cumplió 5 el 18 de enero reciente pero bueno vamos a la jugada amigo pablo no sé si sea para poder hablar creo que si es papá tú eres papá no no muchacho para cuando la cría primero la pareja pero la pregunta del millón quieres ser papá si si están los planes apúrate listo y tú Samir, no sé si seas papá pero te ves joven.
+
+
+
+Samir Milan:
+No, no, obviamente todavía no, todavía me faltan algunos años para ser papá.
+
+UNKNOWN_SPEAKER:
+¿Qué edad tienes tú, Samir?
+
+Richard Quinteros:
+25. Mera fuente de la juventud. Pero está bien, está bien, comenzaste a buen momento. Pues nada, equipo, sigan trabajando en sus actividades y pues vamos conversando. Bienvenido al equipo, amigo.
+
+Fernando Tlaxalo:
+Pues ahí andamos, ahí nos estamos escribiendo.
+
+Richard Quinteros:
+Ah, mira, pero espérate un segundo, que yo fui tan poco educado antes de que se vayan. Yo fui tan poco educado que no dije que te presentarás tú. Yo? Para que Samuel y Pablo te conozcan. Así que antes que nos despidamos, adelante.
+
+Fernando Tlaxalo:
+No, pues mucho gusto, muchas gracias. Creo que por ahí habíamos tenido una llamada previa hace unos meses para hablar un tema de cueva. Pues realmente, en cuanto a experiencia, pues ya llevamos más o menos, conozco a Richard desde nuestros 24, más o menos. Estamos en pañales, ahí los dos dando soporte, entonces, pues la misma experiencia que tal vez puede tener uno, puede tener el otro, con diferentes roles o diferentes eventos sangrientos en algún punto de nuestras vidas en cuanto a proyectos, pero realmente Es una carrera que nos gusta, nos llena los dos, ¿no?
+
+ Pues experiencia, pues empecé a trabajar con SAP desde los 21, más o menos. Me titulé, de hecho, con SAP como siendo comprador junior en MM. Y pues de ahí brinqué a EWM en un almacén. Y de ahí para el real, ¿no? Ya en GoSSM en febrero cumplo cinco años de estar aquí en GoSSM. Ya me ha tocado por ahí algunas experiencias. Teniendo algunos roles ahí también en cuanto a equipo, agarrando proyectos que Richard deja sangrando y tratando de empujarlos.
+
+ Pero realmente es parte de la carrera. Como les comentaba hace un momento, si en algún momento tienen alguna duda y Richard como arquitecto pues no llega a tener tanto el espacio porque ser arquitecto realmente es muy demandante. Porque estás viendo no solamente el módulo de la implementación, también ves otras cosas. Entonces, si en algún momento tienen alguna duda, pues, con todo gusto ahí nos empelotamos todos.
+
+ Si no sabemos todos cuáles, pues, siempre hay alguien más arriba dentro del equipo de Gov que nos puede orientar. Alguien con más expertise, conocimiento, porque hay muchas cosas que realmente hacemos una vez y no la volvemos a hacer y se nos olvida. Pues, en algún momento que tenga una duda, les reitero, Estamos abiertos muchachos y pues vamos a empujar el proyecto porque si está muy muy corto el tiempo por lo que veo.
+
+ Lo que da tranquilidad es que veo que comentan que es muy estándar, muy estándar. Entonces eso ayuda bastante. Ahí nada más me quedo con una duda, Richard. ¿Están en Fiori o están en Gui?
+
+Richard Quinteros:
+En Gui. De hecho estamos en Gui porque la web no la hemos usado. Me parece que la tienen por ahí. Me parece que la tienen por ahí, escuché, pero no se ha hecho nada, ningún tipo de uso de la herramienta, de nada de eso.
+
+Fernando Tlaxalo:
+Ok, solo me pregunto porque si es cloud, ese app va a querer empujar a Fiori, entonces, más que nada por eso, por eso, no, entonces, todo está empujándose hacia allá, eso era mi duda nada más, si estaban ahí, pero
+
+Richard Quinteros:
+para nosotros como consultorio no marca diferencia para el usuario si digamos que no no hay o sea tampoco se habló en ningún momento ni se ha usado en ningún momento herramienta como el word house copy el chip y copy no se usan ninguna de esas funcionalidades de repente pues sean sean ahora sí se habló de das ok ese sí y pues es un tema de gestión decir el tema de la gestión que se tiene que revisar aparte, ¿vale?
+
+ Porque ahorita, por ejemplo, no hemos avanzado con configuraciones de edad, solamente con todas esas configuraciones de los procesos que tú ves ahí. Pero, pues, bueno, nada, al final me dice Iker que edad, pues, no es tan complicado, eso es rápido.
+
+Fernando Tlaxalo:
+No, no es complicado echarlo a andar en cloud.
+
+Richard Quinteros:
+Pero bueno, nada de la web de momento, ¿vale? Nada de la web.
+
+Fernando Tlaxalo:
+Bien, no, pues, listo, muchachones, ¿no? Por ahí, bueno, como les comentaba. ¿Quién se levanta a leer comida? ¿Tú o tu esposa?
+
+Richard Quinteros:
+¿Qué edad tienes, Fernando?
+
+Fernando Tlaxalo:
+¿Qué edad tienes?
+
+Pablo Palacios:
+30, cumplí 30 en octubre pasado.
+
+Fernando Tlaxalo:
+Ya casi te alcanzo.
+
+Richard Quinteros:
+Ya casi te alcanzo, yo cumplo el 23 de abril 30 también.
+
+UNKNOWN_SPEAKER:
+30, imagínate.
+
+Fernando Tlaxalo:
+Entonces, pues sí, realmente es... Está padre esta carrera de DWM. Muchas veces te frustras porque los clientes no cooperan, pero realmente...
+
+Richard Quinteros:
+Este sí coopera, este.
+
+Fernando Tlaxalo:
+Lo bueno, lo bueno, lo bueno.
+
+Richard Quinteros:
+Es muy buena onda. Es un cliente muy buena onda. De hecho, es muy inexperto. Y Pablo también lo sabe. De hecho, inclusive estuve viendo un correo de pasillos que están pidiéndole seguía a Pablo en que les explique algunas cosas que yo no sé qué quieren ellos que les explique pero o sea me parece algo demasiado claro totalmente normal
+
+Pablo Palacios:
+a mí me ha tocado estar en cliente es un cliente muy predispuesto como dice Richard tiene muy poca preparación muy pocos conocimientos, contados algo, algunas excepciones, como aparenta ser ahora Rafael, que es el nuevo PM del lado de ellos, que se sumó, que da la impresión, es muy nuevito, así que recién lo estamos conociendo, pero da la impresión de que es una persona mucho más despierta que el resto del equipo.
+
+ Correcto. Pero bueno, nada, a veces está bueno que sean bastante nuevitos, para ir, porque son más maleables, y uno los lleva más o menos para donde uno quiere, entonces eso está bastante bueno para los proyectos, este tipo de proyectos donde la tecnología, donde están naciendo con la funcionalidad de esta tecnología, así que no es tan bueno.
+
+Fernando Tlaxalo:
+Eso ayuda bastante, que nazcan con la herramienta más que nada y no que tengan ya un conocimiento de cierta manera maleado, ¿no? En el cual se han acostumbrado a trabajar de una manera y quieren llevarse tal cual eso a la nueva herramienta, ¿no?
+
+Pablo Palacios:
+Entonces, esto allí va bastante bien. JUAN MANUEL LUCERO. Sí, me ha pasado en muchos proyectos también de workhouse donde el cliente estaba naciendo, pero estaban haciendo la funcionalidad, pero trajeron a un PM o a un funcional de otro lado con sus propias experiencias de haber generado cuestionado, vos dejabas Android y venía y decía, no, no, acá están haciendo perfecto, pero yo sé que se puede hacer tal cosa y tal otro y tal otro y te vienen con problemas a veces.
+
+ Esta no es la ocasión, en este caso no hemos tenido esas experiencias, así que en ese sentido son bastante maleables y bueno y también es todo estándar, así que también en ese sentido también es un proyecto que a nivel complejidad no es demasiado complejo, no debería ser.
+
+Fernando Tlaxalo:
+¿Tú eres WM, Pablo?
+
+Pablo Palacios:
+Yo soy MM, WM y EWM los últimos dos años. Yo hago consultoría SAP, empecé con MM hace 13 años atrás.
+
+Fernando Tlaxalo:
+Ah, bien, perfecto.
+
+Pablo Palacios:
+Y de ahí a los cinco años me metí en WM, desde ahí hasta hace dos años atrás, haciendo los dos modules MMWM, pasando por varias consultoras. Yo empecé en Seidor, muy conocida en Europa, después estuve en Accenture, después estuve en PwC, después en SAP directamente, SAP Argentina, ahora en Go, y en forma freelance también estuve trabajando mucho para Europa. Unas cosas, no más implementaciones.
+
+Fernando Tlaxalo:
+Perfecto, pues si hay buen material de equipo Richard.
+
+Richard Quinteros:
+Claro que lo hay amigo, ya estamos casi terminando, mentira, ahí vamos, casi terminando realmente. Estamos por volver en camino. Como todos los proyectos amigo, a veces hay retrasos, a veces se apuran, a veces terminamos bien, a veces terminamos mal, pues bueno, este proyecto pues faltó ahí un poquitico de ayuda de parte cliente con respecto al lado de SCC y pues bueno lo estamos viviendo ahora un poquitico andamos a las carreras el cliente a veces bueno de repente se nota un poquitico perdido a veces no a veces anda activo como todos los proyectos.
+
+
+
+Pablo Palacios:
+Nos han robado la comodidad del plan digamos porque el plan estaba con unos cuantos un abanico de tiempo bastante amplio para toda la etapa de construcción y esa comodidad que teníamos nos las han robado completamente Sí, exactamente.
+
+Fernando Tlaxalo:
+Pero tiene sentido lo que dicen, que realmente desconocían ellos muchas cosas y asumieron muchas cosas ellos, y a la mera hora ya que necesitábamos probar de este lado, pues nada de clave estaba construido.
+
+Richard Quinteros:
+Exactamente.
+
+Pablo Palacios:
+Y seguro que si hubiera sumado a este Rafa antes, este Rafa en el rol que está sumado ahora, este retraso no hubiera pasado. Es correcto.
+
+Richard Quinteros:
+Lo que pasa es que Rafael estuvo de cara al proyecto de IVP para Diana. Ya se implementó del mismo lado de GoSSM IVP para ellos y está funcionando y todo bien. Rafael estuvo en ese proyecto y pues estuvo participando. Ahora se sumó recientemente, me parece que fue esta semana, a participar en el nuestro.
+
+Fernando Tlaxalo:
+Él es el cliente de Diana.
+
+Richard Quinteros:
+¿Nuestro app? De momento hay una chica pero no recuerdo su nombre pero no ha comenzado a trabajar los desarrollos vale no todavía vamos a esperar a ver ahorita el lunes que hablemos con john ok porque este sitio para ya que se empiece a sumar a trabajar en estas con desarrollo de hecho ya hay una especificación funcional hecha para que la empiece a trabajar y tenga trabajo mientras nosotros de repente vamos trabajando en las otras dos etiquetas y la de otro desarrollo rayo no ok listo pues nada equipo eso era todo ahora sí bienvenido fernando bienvenido gracias muchas gracias chico buen fin de semana Ano.
+
+
+
+Fernando Tlaxalo:
+Un saludo.
+
