@@ -1,0 +1,420 @@
+Bastian Osorio:
+¿Cuándo potencialmente podría ser? ¿A qué tarde? Como que antes de pasar el unit testing, tener como quizás no dos semanas, pero quizás sí una semana de unit testing. Como unit testing second iteration, second string.
+
+Rocio Minguillon:
+Ah, o sea, hacer de nuevo algo así.
+
+Bastian Osorio:
+Lo que pasa es que, claro, como originalmente estaba planeado que teníamos tres sprints, ¿cachai? Entonces, este vendría siendo para mí el sprint 2. ¿Dónde estamos acá?
+
+Rocio Minguillon:
+Hoy estamos a 27 de enero, estamos acá. Estamos en la segunda semana del sprint 2.
+
+Bastian Osorio:
+Claro, entonces podríamos... Digamos, potencialmente, rechace la cita, ya, potencialmente, pero...
+
+Rocio Minguillon:
+Y lo que pasa es que si haces más tiempo, o sea, después no te van a quedar semanas para prepararte O sea, porque después de las semanas que vienen quedan 3 semanas De web 1 estamos hablando, no? O sea, todo... Web 2 tenés más tiempo, web 2 mirá...
+
+Bastian Osorio:
+Sí, no, pero que web 2 es...
+
+Rocio Minguillon:
+otra historia Claro, sí, sí, por lo más...
+
+Bastian Osorio:
+Nos quedan entonces cuántas semanas desde la siguiente? No, porque la siguiente también tenemos Por eso, no. Serían tres semanas, no? Difícil. Sí, complicado. Más o menos, claro, tendríamos que matarnos las dos semanas, el día y las 17 para poder presentar algo super bueno el 24.
+
+Rocio Minguillon:
+No, pero a mí me convendría ir a UIT directamente, o sea...
+
+Bastian Osorio:
+Sí, y después sí, preparar todo eso para pasar al UIT y en un ¿Tú, cuando partes la configuración, ya partió, cierto? Sí, la semana pasada.
+
+UNKNOWN_SPEAKER:
+El sprint 1. Sí. Sí.
+
+Bastian Osorio:
+Mira, tú me pusiste una tarea la mañana que creo que es la aprobación del FSD, ¿cierto? Sí.
+
+Rocio Minguillon:
+Sí, lo voy a revisar el 30 de mañana. Vale, eso. Che, ahí Basti y Héctor, no sé si quieren que hablemos de esto, pero rápido. Yo les quería decir una cosa que estaba pensando a ver qué les parece, últimamente veo o sea me pasa a veces que como que todo tiene que pasar por ustedes y eso a veces es una sobrecarga muy grande para ustedes y también problemas en la comunicación y yo no sé tampoco si todo lo que les pongo ahí es útil o no, o sea como que yo últimamente estoy como como canalizándoles todo, entonces creo que no sé si se agrega un nuevo valor y no sé si debería ser más independiente en algunas cosas o ver si a capas me estoy enfocando en cosas en que no me debería estar enfocando y demás entonces ahí lo que me recomiendo Seba también es como tener bien en claro, o sea yo recién estaba tratando de hacer el listado terminar, pero tener bien en claro como cuáles son todísimos los frentes que tenemos hoy abiertos por cada una de las actividades y como poner un responsable final, o sea, que ustedes de algunas cosas solamente tengan que aprobar, digamos, lo final.
+
+ Bueno, es parecido a lo que hicimos en el FSD, ¿no? Aunque bueno, vos también te tuviste que involucrar bastante en explicarle, Rey.
+
+Bastian Osorio:
+Lo que pasa, Rocío, yo estoy de acuerdo con eso y ahí forma, yo creo que tenemos, yo hago la la autocrítica, de que para llegar a ese nivel tenemos que involucrar más. O sea, nos pasó con Arun que hicimos, obviamente, con poco tiempo y por eso digo que hago la autocrítica, le pedimos la presentación, una cosa re sencilla, y llegó con algo que no era, digamos, de la calidad que se espera. Entonces, yo creo que, no sé, ahí es totalmente, te pregunto cuál, cómo como lo viste, que ha sido lo que nos ha faltado para poder hacer que los otros consultores se empoderen.
+
+
+
+UNKNOWN_SPEAKER:
+Tiempo. ¿Tiempo para dedicarles a ello? ¿Para qué explicarles?
+
+Rocio Minguillon:
+No para explicar. Yo creo que lo que hemos fallado acá es echar a andar la máquina.
+
+Hector Palacios:
+Si el tema es que quizás no depende de ellos, de los diseños iniciales, ¿Cómo podría verse el sistema? Y hemos hecho pocos seguimientos. ¿Qué seguimiento hicimos al final? Es como revisar los puntos. Sábado nos mostró un par de vistas, pero nunca le dijimos, oye, falta el dashboard, falta esto, falta esto. Nunca tuvimos el tiempo para dedicarle. Y ahora que nos vimos frente a las pruebas, empezamos.
+
+
+
+Rocio Minguillon:
+Ahora están encontrando con eso en todos los aspectos. O sea, en la configuración también, como que ahora.
+
+Hector Palacios:
+Los dejamos muy solos. Pero no le dimos ninguna guía, ese es el tema. Y ahora que venimos nosotros, como decíamos, no es la calidad que nosotros le daríamos. Ese es el punto. Es como que los dejamos solos y entre tanto que los dejamos solos, ninguno salió con algo que nosotros consideráramos apto. Entonces yo creo que ahí fallamos. Es que, bueno, nosotros somos los arquitectos de partida. Entonces debimos haberle dedicado esto a pensar en cómo queremos que se vea esto.
+
+ Y después que ellos tomen la posta. Y que sigan. Pero eso no lo hicimos. Entonces, yo creo que va un poco por ahí. Me va a culpar el tema de por qué no lo hicimos claramente por un tema tiempo. De que con la cuestión del cierre al diseño, que lo dejamos trabajar mientras nosotros nos dedicamos a hacer el diseño, cuando debió haber sido al revés. Debimos haber dejado que ellos cerraran las documentaciones mientras nosotros armábamos algo, una máquina base, no sé.
+
+
+
+Bastian Osorio:
+Pero desde ahora, ¿comparto todo? Todo el análisis que hace Héctor, pero, ¿qué pasa de ahora para adelante? Yo pienso que, primero, es necesario, es fundamental que los usos, que, y ahí hay un tema con el horario, que el líder de demanda de inventario al mes de MRO de Chemicals vendría siendo Saúl. Y Saúl, la sesión mañana a las 7 de la mañana para nosotros, lo que quiere decir que a las 3 de la mañana es Saúl.
+
+ Saúl difícilmente se va a conectar y si se conecta va a estar, contando ovejas. Entonces, obviamente, todas las sesiones sería súper importante para que él tuviese toda la información posible para seguir liderando. Sería fundamental que él estuviese, ¿cachai? Porque en el fondo estas son las sesiones más importantes que hemos tenido hasta el momento, en términos de contenido, en términos de la introducción en sí misma.
+
+ Pero él no va a quedar con él, lamentablemente, no va a quedar con el nivel de conocimiento que va a quedar Héctor o que va a quedar yo que va a quedar bueno algún. Esa es una otra historia, porque el tema de línea está detenido. Ahora hay también, bueno, también Pelayo, Pelayo y Pablo tienen la reunión por el invitado.
+
+Rocio Minguillon:
+No, no es que eso es lo que te decía que no se podrá enviar a Pelayo. O sea, Pelayo no puede entrar a esa reunión ahora y Pelayo no, pero pero se la reenvió, o sea, en su momento me dijeron que ya está, que ninguno de los dos, como para que... Pero se la envió a Pablo, si es que... Igual no veo tanto eso como en que afecte, ¿no? O sea, igual se la reenvió, pero creo que lo de Saúl es un tema... O sea, el lunes creo que él vuelve y esta semana, lo posible, podríamos hablar con él para que pueda conectarse, porque coincido en que es muy importante O al menos que se revise sí o sí bien toda la reunión en detalle, que haga preguntas.
+
+ Para mí lo que falta claridad también es de realmente hacerlos dueños, ¿no? Y que se sientan con la responsabilidad de eso. No sé. Sí, o sea, sería genial.
+
+Bastian Osorio:
+Y esto yo lo voy a intentar juntar con él el jueves, que él pudiese, por ejemplo, liderar una reunión de químicos. Al menos una sección de la reunión, ¿no? No hacer el... Como digo, no hacer la toga, pero no sé, a ver...
+
+Rocio Minguillon:
+O si no realmente que sí, que ellos sean los que hagan nomás la configuración. Por eso decía lo de ver bien cuáles son todos los friends que tenemos abiertos, porque eventualmente otras cosas pueden ser 100% responsabiles.
+
+Bastian Osorio:
+Exacto, y lo mismo Arun y lo mismo Vivek. Ellos son constructores senior. Ellos tienen que poder liderar sesiones. O sea, el trabajo de configuración no es suficiente para el valor que ellos debiesen añadir. Yo creo que también la expectativa de ellos, al menos de Saúl, y que es comprensible, Sí.
+
+Rocio Minguillon:
+Ok. Bueno, entonces, como plan, les parece que, o sea, entonces entiendo que de todo esto, o sea, Saúl es el responsable último de, o sea, ustedes son los arquitectos, pero Saúl...
+
+Bastian Osorio:
+Igual, ¿le podrías preguntar, Rocío, si se va a poder sumar a la reunión de mañana?
+
+UNKNOWN_SPEAKER:
+Ya lo dijo.
+
+Hector Palacios:
+¿Dijo que sí? Sí, está preocupado por esto. Yo le dije que tenían que invocarse ahora de lo que hiciéramos nosotros. Tenían que hacer exactamente lo mismo para el químico, al menos preparar el material. Pero sí estaría bueno que le pidiéramos que tome el desafío de presentar él. Que nosotros vamos a estar ahí, obviamente, pero que debería tomarlo. Preparándole speech. Mejora bastante el tema en inglés.
+
+
+
+UNKNOWN_SPEAKER:
+De una.
+
+Rocio Minguillon:
+Bueno, bueno, después del training, bueno, esto, ¿eh? O sea, lo que les decía era, la activación de Naver Now me encargo yo hasta que sepa bien qué hay que hacer y ahí les pregunto. Pero, o sea, no, no, ocupemos espacio para esto. Después, end users, estrategia, alignment. También lo puedo tomar yo, digamos, y preguntarles de última la respuesta final de lo que tenga para decir KPMG. Training content extractor, lo que decía, verla con Saúl.
+
+ Y no sé si con Aaron, pero como Drilling todavía está en Payaless, no me iba a juntar con él. Pero no sé ahí. Para training, va a ser Aarón, pero para todo el resto va a ser Saúl, ¿no? Todo lo que sería training de drilling, o sea, Saúl va a llevar todo el training, menos drilling, que lo va a hacer Aarón, ¿verdad? Así es. Pero todavía no, o sea, ustedes, yo me voy a dar cuenta, bueno, cuando esté ya, o sea, con Aarón todavía no estoy hablando de nada porque todavía no hay nada.
+
+ Bueno, y no sé si hay alguna tarea, porque para no ponerme a repasar todo esto, ¿hay algo que les esté preocupando de estas cosas, de estas responsabilidades? O sea, porque hasta ahora entendí lo que sería configuración y lo que serían estas sesiones con usuarios. ¿Hay algo más que, hay algo que les esté preocupando de la división de responsabilidades, de temas en los que estén mediante A mí me gustaría también involucrar, y siento que Pablo está más avanzado en temas de configuración, Héctor, no sé si tú crees que deberías ser como el junior de Vivek.
+
+
+
+UNKNOWN_SPEAKER:
+¿Cómo lo ves? Sí, por favor.
+
+Hector Palacios:
+Y ahí quizás tirar a alguien que apoye a Arun también. Pero bueno...
+
+UNKNOWN_SPEAKER:
+No entendí, Héctor, esa parte.
+
+Rocio Minguillon:
+Estoy pensando, porque el tema de Vivek también es crítico.
+
+Hector Palacios:
+Hay que revisar eso luego, porque él todavía está en NADRO. Y ya nos estamos aproximando y ya me veo que vamos a llegar con Vivek y va a ser la misma historia. Vamos a llegar como dos semanas antes y nos vamos a dar cuenta que no tiene nada bueno configurado. Todo por definir.
+
+Bastian Osorio:
+Siento que igual Vivek ha liderado más. Al menos en configuración, como que con las cosas que ha salido se ha visto bien.
+
+Rocio Minguillon:
+Vale, entonces este es uno de los temas igual que creen que necesitamos levantar a Seba, ¿no?
+
+Hector Palacios:
+Lo de Vivek.
+
+UNKNOWN_SPEAKER:
+un riesgo.
+
+Hector Palacios:
+Si él me lo levantó el mismo, me dijo que estaba con muchas cosas, que pronto iba a estar con muchas cosas porque ahora había tenido cierto tiempo, porque nada de lo nos está moviendo, pero ahora que en poco se va a mover de nuevo y él seguía con el tiempo y quería que le pasáramos. De hecho, él quería que le pasáramos a Arun.
+
+UNKNOWN_SPEAKER:
+Decía, pásenlo.
+
+Bastian Osorio:
+No es cierto, es que ahí yo hablé con Seba y es lo que se me dijo. Es que Vivek, lo que siempre decimos que es lo mismo para Sagar. Lo primero es que él organice todas sus actividades. Hay que hacer ABC 1, 2, 3. Luego, si él no es capaz de tomarla, vemos quién lo va a ayudar a tomar el punto 1, el 2, el 3. Pero lo primero que dice Vivek es poder... Vivek tiene que decir sí, pero me tiene que decir Héctor y Bastián.
+
+ Le voy a delegar a Vivek para que Vivek le delegue a otra persona y ya.
+
+Rocio Minguillon:
+No, es que Vivek ya, o sea, claro, él debería estar liderando la configuración, ¿no? Y si tiene dudas, preguntarles a ustedes, pero el to-do list, ¿quién lo arma? ¿O ya lo armaste vos, Basti, con él o no? Sí. El ir diciendo los sprints y tal.
+
+Bastian Osorio:
+Sí, lo que pasa es que la solución va, evolucionando. Con la nueva definición que nos dio, por ejemplo, Raúl, yo me pasé todo el viernes y el fin de semana trabajando en ajustar lo que está ahí. Pero hay que estar allí, hay que estar, digamos, donde las papas queman, como se dice en Chile, para agarrarla. Si tú no estás allí, no estás sumando las sesiones, me tomaría más tiempo a mí explicarle a Cesto, a lo otro, igual yo voy a tener que estar conectado todo el rato con él explicándole lo que tiene que hacer.
+
+
+
+Rocio Minguillon:
+Sí, al final sí sería bueno que se empiecen todos a sumar al HADEN, o sea, todos no, pero Vivek, Arun y Saúl. Vale, les voy a pedir eso a los tres porque sí, o sea, yo me di cuenta que antes estaba re perdiendo el producto y ahora tengo todo así ordenadito, pero porque, o sea, ahora estoy como al tanto, que me sumo a todas las sesiones que había ahí para ver. Oye, una pregunta que te va a subir en el tema de los data stores.
+
+ No, está ahí, está a punto de caramelo, pero no. Está del lado de AdNoc. ¿Cómo? ¿Está a punto de caramelo?
+
+UNKNOWN_SPEAKER:
+Claro, está a punto de caramelo.
+
+Rocio Minguillon:
+No, no, no está resuelto. Eso está apagado. Ahí lo tengo en el estatus, o sea, estamos agregando un día de atraso por día de que falte eso, pero está del lado de Adnok ahora aplicar unos pasos en algún proxy, no sé, no entiendo. Bueno, entonces le hablo yo a A Vivek, un copio a Pablo o quién? A Pablo y a Vivek, va?
+
+Bastian Osorio:
+No, o sea, lo primero a Vivek, a Vivek que decirle que sí. Es que también, ¿en qué está Vivek ahora?
+
+Rocio Minguillon:
+Configurarse en Web2 debería estar.
+
+Bastian Osorio:
+Pero tú, Héctor, ¿has podido hablar con él? Porque no entro. Yo tampoco, está botado. Está en nada. Es simplemente que nosotros no tengamos en cuenta, no hay que, digamos. No, no, no, por ahora no. Bueno, pero en realidad sí, porque ya debéis empezar a trabajar.
+
+Rocio Minguillon:
+Pero que él no sabe qué configurar o cuál o cómo sería.
+
+Bastian Osorio:
+Yo creo, a ver, busquemos y los scripts están, Héctor.
+
+UNKNOWN_SPEAKER:
+No lo sé. Pero...
+
+Bastian Osorio:
+pero reírse más con él, o sea, hay que juntarse con él en algún momento, pero ahora mismo yo no... Sí, porque yo tampoco, si yo mañana también tengo sesiones de 7 a... Todo el día con esta cuestión, pero él debía estar trabajando en paralelo a los scripts, entonces eso debía ser...
+
+Rocio Minguillon:
+Tú, Ro, acércate a él y vean que está, pero... Pero, o sea, él debería tener trabajando en los scripts En los scripts y con la data y solicitando data.
+
+Bastian Osorio:
+Si le falta data, se la tiene que pedir a, bueno, Business ya nos mandó a la mierda. Bueno, pero entonces listando la data que necesita. Y tercero, si le falta apoyo en configuración, que puede contar con Pablo y obviamente ahí, pero que tiene que ir también enseñándole.
+
+Rocio Minguillon:
+Vale. Eso me parece una baja un poquito más aterrizada. Perfecto. Listo. Listo, listo, listo. Bueno, y otra cosa, este miércoles Seba sale de vacaciones, es el jueves. Entonces, ahí también... ¿Seba?
+
+Bastian Osorio:
+Sí, Seba. No, no.
+
+Rocio Minguillon:
+No, no es el tipo de gente que... Seba. ¿Quieres más definición?
+
+Bastian Osorio:
+No, no.
+
+Bastian Osorio:
+Yo creo que lo que nos queda ver, sería pendiente, pero bueno, no tiene que ver directamente con Seba. Es en caso de, si vamos a confirmar las fechas de UIT, empezar a reservar el hotel. Lo primero es conversar con KPMG si nos quieren allá, porque si no, nos vamos con nuestra música a otra parte, donde nos quieran. Pero de ser así, o sea, idealmente la UIT tendría que ser Como dijimos, dos semanas.
+
+ Bueno, son tres semanas. Yo creo que si son tres semanas, da justamente para que estemos todos.
+
+Rocio Minguillon:
+Son cinco semanas, ¿eh? Ya, pues, entonces. Me falta una banda.
+
+UNKNOWN_SPEAKER:
+Pero sí.
+
+Bastian Osorio:
+Pero tenemos que ir desde ya planificando y la idea sería, yo creo que siempre, digamos, nos vamos intercalando. Vivek y Arun ya dijeron que ellos pueden estar solamente una semana al mes. Entonces, teniendo en consideración eso, tu... No sé, podría... Rocío, si te tienes que salir con un...
+
+Hector Palacios:
+Si quieren estar una semana al mes, está bien, pero igual hay que ligar todo. Toda la sesión, aunque estuviéramos nosotros en Sirio, deberían estar presentando a ellos, si no, nunca la van a agarrar.
+
+Rocio Minguillon:
+¿Y Saúl, no? No, no, todos, todos, Saúl, Vivek, Arun, todos tienen que leer estas cosas.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Bastian Osorio:
+Pero si puedes, si puedes tener una propuesta de viaje sería bueno y bueno yo no tengo problema con estar dos semanas seguidas, yo creo que Héctor tampoco, Saúl tampoco, Vivek y Arun no pero lo que podríamos hacer si son cinco semanas es, por ejemplo, la primera o la cuarta, o la primera y la última, o la segunda era con ellos dos. O sea, que igual estén dos semanas, pero ponerle dos semanas de gap en el medio.
+
+
+
+Rocio Minguillon:
+O tres semanas de gap entre medio. Dale, amazing. Y para Wave 2 también vamos a hacer esta especie de pruebas unitarias ¿Con usuarios?
+
+UNKNOWN_SPEAKER:
+Sí. Sí, lo tenemos que hacer.
+
+Rocio Minguillon:
+Por ahora sin viaje también. O sea, como ahora.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Rocio Minguillon:
+Vale. Bueno, dale, dale, dale.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rocio Minguillon:
+Sí, yo me encargo de eso. Igual, por suerte, todavía falta. Y todavía tengo que identificar un poco más si tenemos que ir preparando algo para esta sit. ¿Ustedes, alguien? ¿Ustedes entienden bien qué hay que hacer en esto, en esta Seed Execution?
+
+UNKNOWN_SPEAKER:
+Porque yo no.
+
+Bastian Osorio:
+Son como pruebas de integración. Ejecutar todos los flujos y que funcione correctamente.
+
+Rocio Minguillon:
+¿La dinámica es como con el cliente o como? Creo que no.
+
+Bastian Osorio:
+Creo que son internas. Pero seguramente hay que entregar un reporte.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Bastian Osorio:
+Bueno, me encargo de entender. Yo creo que también es que lo puedes conversar con Kunal.
+
+Rocio Minguillon:
+¿Yo no?
+
+UNKNOWN_SPEAKER:
+Sí, pareces con Kunal. Y con Kushu.
+
+Rocio Minguillon:
+listo ok bueno hay algo más de yul ahí me fijé basti no, nadie nos respondió no me equivoqué, nadie nos respondió Voy a hacerle un follow up.
+
+UNKNOWN_SPEAKER:
+Coloca a Soliman de copia.
+
+Hector Palacios:
+Yo le mandé el mail a Soliman. Ah, tú le mandaste. Esto es bueno y lo tienen super tirado. Pensé que AdDoc era estratégico. Como que no se entiende. Y lo peor es que AdDoc tiene un montón de cosas que quiero comentar. Que el Jules, que el tema de esta de Enable Now. Siempre tiene una parte Es el Soliman Kattab o Soliman...
+
+Bastian Osorio:
+No tengo idea, pero es el de ventas.
+
+UNKNOWN_SPEAKER:
+No, el único Soliman...
+
+Bastian Osorio:
+bueno, tiene mailsub. No, no tengo idea, yo tampoco.
+
+Rocio Minguillon:
+Kattab. ¿Pero cuál fue el que respondió del Enable Now? No, no fue Paola.
+
+Rocio Minguillon:
+Paola. Ah, y para que sepa, Héctor, ya le escribí a Pero no les podemos pedir directamente, oye, apóyennos con alguien.
+
+Hector Palacios:
+Porque la otra vez cuando estábamos re perdidos con el tema de conectar con los usuarios acá, porque no usan la consola de forma normal, trajeron un experto. Entonces, no sé cuál es el problema, que ahora nos traigan a alguien media hora para que lo conectemos.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Hector Palacios:
+Porque si no, vamos a dar bote la vez que si yo esto, si uno es un experto al lado, también me posee un montón por entender la cuestión y después tan pronto se despida de la guía que tenía, no sabés qué chucha hacer. Si no es nuestro experto, no es nuestra expertiz ni responsabilidad.
+
+Rocio Minguillon:
+Sí, o sea, ahí yo coincido, pero que sea como si yo no escucho la que insista, o sea, porque no sé, como que me duele que nosotros tengamos que estar preocupándonos por la plataforma donde a hacer las capacitaciones, cuando nosotros no tenemos nada que ver con eso. Entonces, acá le puse que queríamos que alguien, que ella o alguien de CAMP-MG, lidere la conversación entre SAP y ADNO sobre la activación de EnableNow, que lo que vemos es que no son solo communications tasks que podemos hacer, sino que hay prerequisitos y hay otras cosas que hacer.
+
+ Tampoco estamos seguros de los beneficios de la integración y de qué contenido se va a poder integrar a EnableNow y cómo va a funcionar. Y me puso que lo iba a ver en internet. Pero nada, como que estoy tratando de que Pero si no, directo le respondo a Paola que... Que nos permita hablar con un experto.
+
+UNKNOWN_SPEAKER:
+Vale. Bueno. Nada, algún otro tema que les preocupe.
+
+Rocio Minguillon:
+Esto te puede quedar un poco de información personal.
+
+Bastian Osorio:
+Vale, pero no tengo mucho rato. Vale. Tengo unos 3 minutos. No tengo mucho rato en cualquier cosa.
+
+Rocio Minguillon:
+Gracias. Chau.
+
+UNKNOWN_SPEAKER:
+Chau. Como no tengo mucho rato.
+
+Bastian Osorio:
+Qué quiere decir esa sesión de Diana?
+
+Hector Palacios:
+Oye, no. Lo que pasa es que me llegaron.
+
+Bastian Osorio:
+Te quería agarrar para un rato, pero me llegaron una caja del Reino Unido que me las mandé. Estaban en la aduana y me pidieron un como mío, un pene y como que tienen que entrar con un documento. Yo tengo mi niña, pero todavía no está activo, me dicen.
+
+Hector Palacios:
+Te mando el mío, dame un segundo.
+
+Bastian Osorio:
+Son unos son unos y son unos y tu dirección son unos quesitos nomás. Me mandaron de Colombia unos quesitos, unos familiares que tengo por allá, pero nada van a quedar tu nombre, pero nada más que eso. Llegan acá, cagaste, pues.
+
+UNKNOWN_SPEAKER:
+Unos quesitos.
+
+Bastian Osorio:
+De Colombia.
+
+UNKNOWN_SPEAKER:
+No son.
+
+Hector Palacios:
+Ah, no la ganaste.
+
+UNKNOWN_SPEAKER:
+No, el...
+
+Hector Palacios:
+Todavía no me sé mi niña, entonces le tengo un chat GPT que me dice... ¿Pero tú no tenés ni...
+
+Bastian Osorio:
+si tú erís español no tenés niña?
+
+Hector Palacios:
+Sí, sí, a mí no me acuerdo por eso, de mi niña me lo sé de memoria, no me sé mi... De niña.
+
+Bastian Osorio:
+Me acuerdo de tu DNI.
+
+UNKNOWN_SPEAKER:
+Sí, obvio.
+
+Bastian Osorio:
+Tu nombre completo. Ah, y lo otro, ¿me podís también enviar una foto tu también? Por los dos lados, por favor.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Hector Palacios:
+Puta, la hueá no funciona, pero lo tengo por ahí, DNI, extraíta. ¿Y la foto de la tarjeta de crédito por los dos lados va también? Sí.
+
+UNKNOWN_SPEAKER:
+Tranquilo.
+
+Bastian Osorio:
+Espérate sentado, ¿eh?
+
+Hector Palacios:
+Ya bueno. Tengo que saltar a la siguiente.
+
+UNKNOWN_SPEAKER:
+Te lo mando por WhatsApp.
+
+Bastian Osorio:
+Ya. Gracias.
+
+UNKNOWN_SPEAKER:
+Dale.
+
+Hector Palacios:
+Chao, chao.
+
+UNKNOWN_SPEAKER:
+Chao.
+
+Rocio Minguillon:
+¡Suscríbete!
+
