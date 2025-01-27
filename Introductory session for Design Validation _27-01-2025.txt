@@ -1,0 +1,1278 @@
+Khalid Sarfaraz (ADNOC Group D&CS):
+you BEEP Hello, good afternoon.
+
+Rocio Minguillon:
+Hello, good afternoon.
+
+UNKNOWN_SPEAKER:
+Good afternoon. Good afternoon.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Good afternoon, everyone.
+
+UNKNOWN_SPEAKER:
+Hello.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Rahul and Khushboo who will be leading today's session?
+
+UNKNOWN_SPEAKER:
+Hi Khalid.
+
+Rahul Patel (ADNOC Group D&CS):
+Technical team would be leading the session, Hector and Darshan.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+OK, OK. I don't see them yet here, so we'll wait a few minutes. Yeah, we have Arun from the technical team.
+
+Rahul Patel (ADNOC Group D&CS):
+We'll just wait for a minute or two for other members to join.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+OK. Thank you.
+
+Rocio Minguillon:
+I think that Bastien is already here.
+
+UNKNOWN_SPEAKER:
+Bastien, can you hear us? Yes.
+
+Rocio Minguillon:
+OK, so Khalid, let us know. Sorry, I hear my voice.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+The main. Connect again. Then let's wait for one more minute for everyone to join and then we'll start at. In a minute.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, let's wait a few minutes.
+
+Rahul Patel (ADNOC Group D&CS):
+Rahul, for this session, you have invited all the users All the users, everyone who is supposed to be part of this Data Annualization, all of them are invited, who have received an invite for the next two weeks. So this is General Session Khalid, where we'll give introduction and some basics of how to use IPP and login into IPP.
+
+Rahul Patel (ADNOC Group D&CS):
+Today, we'll not talk into details of license processes, but focus more on IBP as a tool.
+
+UNKNOWN_SPEAKER:
+Okay. For this, we should...
+
+Mohamad Naamani (ADNOC Group D&CS):
+And I think, Khalid, it's good to record this one. I think you own the invite or Tara Tara you can do.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, definitely so it can be referred. I'm do we need another. Wait another minute to join to let join the other users we actual users here you know some of the actual users here will be using the system in the in future.
+
+Rahul Patel (ADNOC Group D&CS):
+Alid we'll have future sessions with actual end users here we're talking about the people who part of our initial discussion from the workshop and the design documents review the current sessions. Yeah yeah I mean the focal points. Yeah focal points people who have helped us put up the documentation together who are part of the design workshop so that we can validate. The next two week agenda is to validate whatever we have discussed as part of the BPD and BIDI document.
+
+ Comment in next two weeks.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Should we wait a couple of minutes or we can start?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+I think now let's get it started.
+
+Rahul Patel (ADNOC Group D&CS):
+All right.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Hi, everyone. Thank you for joining. This is the first session for unit testing for the SAP IVP implementation for MRO chemicals and drilling. So let's look a little little bit of the agenda for today. We're going to start by reviewing the sessions agenda for the next two weeks. So as you already know, during the next, this and next week, we will start having the unit testing sessions where we will review the main user cases for MRO chemicals.
+
+ Really is a different story, okay? So during this session, well, we're gonna review first the session's agenda in more details, then we're gonna make a recall, a brief summary of what is the project about, so introduction and overview, and then we're gonna jump directly into the system and... As I was saying, we're going to jump into the system and show you how you can set up the connection of your Excel add-in for IDP.
+
+ Once we finish that, we're going to see how we can use the Excel interface to review master data. Also in the Excel interface, we can review how to review, how to modify, how to tailor the different planning views to plan basically to review data and to plan, yeah, to do the more daily job. And finally, we will review the web interface, okay? There is an app called Planner Workspaces that, of course, it is very useful so users can do their job, okay?
+
+ So having said that, let's jump into the presentation.
+
+UNKNOWN_SPEAKER:
+Thank you. OK.
+
+Rocio Minguillon:
+Thank you, Bastian. So I'm Rocio. For those who don't know me, I'm part of the project management office. And I will explain you where we are and what is the aim of this stage that we will be conducting during this week and during next week. You will find the agenda on your schedules. So we have already finished the design stage, where we our AS-IS and 2B sessions. We defined the future state solution, addressing the current gaps and aligning with business needs.
+
+ And now we are on this stage that we call unit testing, where we are going to evaluate the initial solution. We are going to test some basic scenarios, and we will identify gaps and log new issues in the backlog for the project and resolution. This is the first time that you will be in contact with the tool, but it's also very important for you to know where are the stages that are after this, so you can understand the scope of this unit testing.
+
+ After these two weeks and after this unit testing, you will have another stage that will be the user training. So we're not expecting for you to know how to use the entire tool and knowing all the functionalities that are on the tool. This is just an early stage where you are going to have contact with the solution and testing some basic scenarios. But we are not expecting for you to have all the user training right now.
+
+ Also, it's very important for you to know that after that, we will have our user acceptance testing, where you are going test all the scenarios to verify all the functionalities of the system that you were already part in the design phase. After that, we're going to have our goal live and then we're going to have our six months of hypercare and you will be able also to continue addressing the solution and refining the tool to ensure the optimal performance in the live operations, yes.
+
+ So it's very important for you to understand the scope of this session, that it will be the first time that you start using the tool, but you have to be aware that then we will have the user training and also the user acceptance. This is like an early stage where you will have contact with the tool. So the sessions agenda, you already have some meetings scheduled for this week or the next week, depending on the process where you will be being part of So you have there your agenda.
+
+ If you have any doubts related to the agenda or the purpose of each session, you can ask us, Rahul or whoever is on there for you. So I don't know if there is any doubt or if you want to comment anything else, Bastian. If not, we can continue.
+
+UNKNOWN_SPEAKER:
+No, it's fine.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I don't know if there's any doubt from the users. I take that as a no.
+
+Rocio Minguillon:
+Okay, thank you.
+
+UNKNOWN_SPEAKER:
+Okay, I can go. Perfect.
+
+Hector Palacios (ADNOC Group D&CS):
+Thank you very much. Hi everyone, Hector here. So this is just a brief introduction of what we have been doing so far, what is the core of this IVP functionality. As you know, we are having this project for inventory optimization. The idea is to have the operation running smoothly. So we want to have a high service level that this is working fine. But at the same time, we want to decrease, if possible, For that, we have this core solution that is called IVP, that is working on the cloud, and it's dividing these three modules.
+
+ That is very important to understand because this is defining the scope of what we will see in the next weeks, and then what is coming after, okay? So, we have demand planning, inventory planning, and supply planning, these three big boxes that you have here. Usually, we are a little confound on what is inventory and supply planning, so it's important to understand what is the scope of each one, right?
+
+ In the first wave that we have, and this is encompassing the sessions that we are having in the following two weeks, is demand planning and inventory planning. And after, in the future, you will have phase two, in which we will focus on supply planning, all right? So this first phase, demand planning, inventory planning, is all about setting what we need, right? Then in supply planning is when we will face the reality.
+
+ We will say, okay, this is what we need. We'll be able to do it based on the constraint that we have in the supply chain network, like the lead time, like capacities and so on. So let's go each one of them. First of all, you have demand planning. Main input of that will be the historical consumption. And here we will want to have to create a forecast of what is going to be the future need. For MRO, this is going to be the interfaces, corrective and preventive.
+
+ Corrective, as you know, is what we are not planning, what is just happening, but on IVP, we want to take this into consideration and to create a forecast for that, right? Then you have preventive planning that, ideally, this is just an input that is coming from the maintenance team. So these are the plan activities. For those activities, I will need these materials that is what we need to provide, right?
+
+ So that's the whole idea. The main purpose of demand planning here is trying to create a forecast, right? That is the best possible scenario that exists in planning. So if I'm going to plan for a material, I want it to have it just when I need it, not before, not after. And for that, I'm trying to anticipate the need to create a forecast. Now, reality is that we are going to use algorithms algorithms to try to break the future, and some of them are going to be much in learning, some of them are going to be more simple than that, but very good sometimes.
+
+ The point is that all these algorithms to try to break the demand depends on data, and they are hungry models. They need data in order to create reliable resources in the future. So, as you may know, not for all the cases, this is going to be the scenario. You have a lot of mid-movers, slow-movers, non-movers, that you will know that they don't have enough data in the past, so I can create a forecast for that.
+
+ So we know that the statistical forecast is not going to apply for all the cases, especially if we don't have enough data. For all the other cases, probably we will continue with the good old reorder point, as we have discussed before, right? But for many cases, and also for chemicals, for example, we are expecting to have enough information to create a good forecast, and for fast movers we are also expecting something like that.
+
+ We will see that in more depth in the future, but that's the idea. Then you have inventory planning, and here it's really important to understand that inventory planning is only about the inventory levels. So we want to calculate the safety stock, reorder point, maximum stock, that provided that we have the information about historical consumption, the lead time, also historical lead time to calculate the variability of that, service level, economic order quantity, these are the big inputs that we will need to calculate this.
+
+ So, it's only about the mentor levels. I saw that in BRD we have many requirements related to, for example, value in the stock or the stock projection. That is something that we see later when we have the whole picture. So, in the next phase, in the next wave, we will see supply planning. Here we will have the forecast that we generated on demand, we will have the inventory levels that we generated here on inventory planning, and also we have information like the open POs you have, STOs, the lead time, supply chain constraints, and those are encompassing many, many constraints, like load sizes, like storage capacity, maybe supplier capacity, quotas, arrangements, and so on.
+
+ So it's a big, let's say, bag of different inputs. So supply is going to take all these inputs and try to get this demand and inventory levels, right? So for that, it will create the supply proposals that, as we know, are the PRs, but will create it only if we don't have a stock to share. If we have a stock that we can share between plants, we are going to do it. That is going to be the STR proposals.
+
+ And here, just for you to know, here is where you have the stock projections, because here is where you have all the inputs necessary to do an inventory balance at last. So here is where probably most of the dashboards or things that you are requiring on the BRD is going to come into place. Can you click, Rocio, one more? It's also important to mention that we will have the whole segmentation here.
+
+ So all the segmentation that you have on the inventory procedures manual, we have it here, like the ABC, XYZ, those are easy ones, provided that we have the right input that is a standard functionality. Is not that standard, but we were already able to create it on IEP. That's a big win. And then the ED segmentation, I'm completely sure that we can do it based on logic. We saw the logic that you have on the inventory procedures is very feasible.
+
+ We only are checking if we have the inputs that we need on S4HANA. That's the whole point. Also, cross-functionality, you will have alerts and visibility. You will find that in the last part of this session, we will show you the different charts that we have on the system and the different alerts that can create the approval part and all of that. This is cross-functional. This is something that you will see in demand planning, inventory planning, supply planning.
+
+ It's not depending on the module, but it's a cross-functionality on everything. That's it. Can you do a couple of clicks, Rocio? So now the idea is just to show you the Excel interface. Can you go back? Because it comprises the two things. So we have the Excel interface, as Bastian was showing, and now they are going to introduce, they are going to show you the Excel part, and then later on the session, I will show you what is the web interface, what we can do there in this functionality that we call the Planner Workspace.
+
+ All right, so that's it. I don't know if you have any questions, please just interrupt us. Otherwise, we can continue with the agenda.
+
+Achmad Sonhaji (Borouge):
+Can I ask a question, please? You mentioned that it will be two phases. Phase one is demand and planning. So, what is the output of this in our system after the life of the phase one? Will it be an automatic ROP or something Exactly.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, we will generate the inventory levels so basically we will need to integrate this into S4HANA and you will continue operating in the old way with the new inventory parameters that you have approved for sure, not all of them but the ones that you have approved and then later when we have supply planning then we will connect to supply planning on IVP and from supply planning we will generate the BRs not from the MRP Okay, so in the
+
+Achmad Sonhaji (Borouge):
+first phase, then from the IBP, I mean, like, propose the MRP parameter, and after approved, then we'll be updating the material master, right? The MRP parameter, material master. Then it will propose a BR, yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, no, no, in the phase one, phase one. In the phase one, yes, it's going to just update the inventory levels and the material master, yeah.
+
+Achmad Sonhaji (Borouge):
+You're right. It's after approved by our team in IBP, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, everything is relying on approval. We are not going to share any information to S4 that is not approved by an user.
+
+Achmad Sonhaji (Borouge):
+Okay, all right. And the second phase will be PR, right?
+
+Hector Palacios (ADNOC Group D&CS):
+The output. Yeah, exactly. STRs, basically. Okay, all right.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Okay, thank you.
+
+Hector Palacios (ADNOC Group D&CS):
+All right, Tim. I think that we can continue with the showing how we will set up the connection.
+
+Arun Singh:
+Yes, thank you, Edna. Let me walk you through the connection setup. Let me share my screen quickly.
+
+UNKNOWN_SPEAKER:
+Let me know once you can see my screen, guys.
+
+Arun Singh:
+I can see it. Okay, perfect. Hi, guys. My name is Arun, sorry.
+
+Rahul Patel (ADNOC Group D&CS):
+Arun, just one thing before you start the setting connection. So what we have done is this IBP plugin is automatically pushed to the users who are part of this workshop. So you can see most of you having this IBP plugin available in the Excel. If not, then you can reach out separately, or we'll share you the details of how to get it installed. So I just want to make sure that while you are participating in this session, understanding how the plugin is set up, probably after this workshop, spend some time making these connections available, and if there are questions, you can reach out to the team so that we can help you guide on setting up this connection.
+
+
+
+Arun Singh:
+Go ahead, Arun. Okay, thanks. Hi, guys. My name is Arun. So basically, Excel 8 is required to establish the connection between your Microsoft of Excel with the IBP HANA database. Once you open the Excel, you will see a particular tab called SAP IBP. Here we have an option that is the connection option. Once you click on logon, you will see this connection manager screen. You can click on this open connection manager.
+
+ In order to establish a new connection, for example, You can provide a connection name which is more meaningful from your preference. So let's say I specify my road demand. Then we have another area where we need to input the server URL which is nothing but the web URL. So here is the URL basically. I'll paste it in the chat box as well. Okay and then you can see we have a section called planning area okay so in order to find the right planning area you just need to click on this ellipsis or these three dots and just select the z01 add-on this is the preferred planning area for the mr chemicals and all the other business segments okay and once you click on okay your uh a connection will be established over here you just click okay and then you can click on logon so once you click on logon it will ask your credentials okay and uh so there are two steps of authentication one is your password uh and then second is your microsoft authenticator app so uh based on that
+
+Prathviraj Anchan (Borouge):
+those uh secure connections There is no two-step authentication.
+
+Rahul Patel (ADNOC Group D&CS):
+Essentially, we have enabled SSO, which means that the moment you click on the login, it should automatically take the authentication from your Windows login, and then you should be able to connect automatically to the system. So this two-step authentication, if you are accessing IBP from an external environment, be required but if you're accessing ibp through your computers of adnok then this authentication is not required it is sso enabled correct thanks now for clarifying so
+
+Arun Singh:
+yes so uh once you establish the connection you're logged in successfully into ibp and you will see uh this kind of you know your home page and uh so this is how you set up the connections over to you
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+bashir yeah I'm gonna share the URL in the chat. I just want to confirm that any of the users are able to perform this procedure that you, Arun, just indicated. And Bastien or Arun, it's also important to highlight to the team how frequently do you need to, so once you create the connection, every time you want to use, you don't need to create the connection again. You can use the one they created, but you log in again, right?
+
+ So that is like one time in a way. Yeah, one time per system. Yeah, one time per system. That's what I wanted to address is that we are here connecting in the development system. Once we go into the go live, we will need to perform the same procedure, but for the production. System. So, I don't know if any of the users already have the Exeladim installed. If that is the case, I would like to share the screen and perform this procedure so it is clear for everyone how to do it.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+Anyone from Artnok who are on the call, can you confirm you have this IBP plug-in available in their Excel. Can you check right now?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Excel nothing came, going to restart. When it's implemented?
+
+Rahul Patel (ADNOC Group D&CS):
+This morning it got implemented. Yeah, so today morning. So if you can log off all the Excel and start to log in again, fresh session, it should show up.
+
+Hector Palacios (ADNOC Group D&CS):
+So Arunkumar share an image and yes, we don't have it.
+
+Rahul Patel (ADNOC Group D&CS):
+Can you close all the Excel sessions start the Excel fresh again, because even if it is implemented, it will not show up unless you restart the Excel.
+
+Hector Palacios (ADNOC Group D&CS):
+So some people, they already have it. So yes, that was successful. So if anyone has Excel, will they mind sharing their screen?
+
+Rahul Patel (ADNOC Group D&CS):
+Because if they can share the screen, we can walk through for everyone's benefit. Others can repeat. And probably we can spend this next 10, 15 minutes to sure whoever has this excel plugin they are able to create this or set up this connection.
+
+UNKNOWN_SPEAKER:
+Okay Rahul, I've got it. I'll share my screen. Right. So you were able to create the connection?
+
+Prathviraj Anchan (Borouge):
+Yeah, I've reached up to here.
+
+UNKNOWN_SPEAKER:
+So I think. Can you? Yeah. Can you?
+
+Hector Palacios (ADNOC Group D&CS):
+Not just that.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+UNKNOWN_SPEAKER:
+I'm not sure whether it's moving ahead now.
+
+Rocio Minguillon:
+We can't see your screen as you were sharing just the pop-up. Yeah.
+
+Prathviraj Anchan (Borouge):
+It looks like I'm connected now because at the left-hand top earlier, it was showing a logon icon here. Now it's showing the disconnect. Can you share the screen so everyone knows?
+
+Rocio Minguillon:
+You're not able to see my screen now?
+
+UNKNOWN_SPEAKER:
+No, no. OK.
+
+Prathviraj Anchan (Borouge):
+Let me know when it's visible. Yeah, you're connected.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But I want to make sure, I mean, pretty sure the URL is OK. So everyone can know. Can you disconnect, please? Clicking disconnect. Yeah. And log on. And click in the three dots, please. The three dots, yeah. So yeah, you created. It's fine. So can you click the pencil just so everybody knows what you did? There is a pencil in next to the server URL. The connection name I recommended to change it because just to clearly state that this is the development system so you can call it SAP IBP development.
+
+ The URL is the one that I don't share in the chat and that's it.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Select OK.
+
+Rahul Patel (ADNOC Group D&CS):
+Are you able to add this URL into the connection?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, trying so the planning is default, isn't it? Planning area. Planning either you need to.
+
+Rahul Patel (ADNOC Group D&CS):
+three drop downs there.
+
+Hector Palacios (ADNOC Group D&CS):
+C01, C01.
+
+Rahul Patel (ADNOC Group D&CS):
+Abdul, you want to share your screen to show it?
+
+UNKNOWN_SPEAKER:
+Okay. Can you see my screen? Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+What it says default, can you change for Z01 at NOC or click the Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Or you can also click the three dots. Here we'll ask you. Yeah. That's one.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+That's one. Last one.
+
+UNKNOWN_SPEAKER:
+Yes. And OK. Is that as default? Yeah. No. Yeah. It's fine.
+
+Hector Palacios (ADNOC Group D&CS):
+If you have more than one connection, it will show always this as a first one.
+
+UNKNOWN_SPEAKER:
+and log on.
+
+Hector Palacios (ADNOC Group D&CS):
+So the ones that are seeing no planning area found is because probably not put in the C01 adnoplane area.
+
+UNKNOWN_SPEAKER:
+For you, you're okay.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay, fine, good.
+
+Hector Palacios (ADNOC Group D&CS):
+But in the chat, we have Jaganath, for example, and Mohamed that are seeing some issues. So, Jaganath, do you want to share the screen?
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, yeah. Can I share the screen?
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, I'll share the screen.
+
+UNKNOWN_SPEAKER:
+Let's see.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, logon, you go to the left, you see logon button.
+
+UNKNOWN_SPEAKER:
+the ribbon.
+
+Hector Palacios (ADNOC Group D&CS):
+So you need to set up the connection. Go to the three dots. Create connection up there. You have a button for that. Create connection in the middle. And there you need to put a name just for identifying IVP development, for example.
+
+UNKNOWN_SPEAKER:
+Now you need the URL that was shared by Arun.
+
+Hector Palacios (ADNOC Group D&CS):
+I can paste it again so you can find it quicker.
+
+Hector Palacios (ADNOC Group D&CS):
+There it is. And on planning area, please click the three dots, exact.
+
+UNKNOWN_SPEAKER:
+It's connecting.
+
+Hector Palacios (ADNOC Group D&CS):
+you with your user, with your email.
+
+UNKNOWN_SPEAKER:
+It's connected. That's one.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, it's optional.
+
+UNKNOWN_SPEAKER:
+You can go with that. No problem.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But the name, please call it, change the name because then we, in the future, we're going to create a new connection for the production system. So, Yeah, call it development.
+
+UNKNOWN_SPEAKER:
+Okay, for me, it says the application.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, now you can log on.
+
+UNKNOWN_SPEAKER:
+Good to go.
+
+Hector Palacios (ADNOC Group D&CS):
+So for so the ones that you after closing on the tabs of Excel and you are still facing the issue then you will need to check with the IT team because this is beyond what we can do as consultants, this is internal, but you will need to check why it wasn't implemented. So now it's connected for me?
+
+UNKNOWN_SPEAKER:
+Yeah, you're connected. Good job.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Is there any doubt or we can jump into the next phase.
+
+Rahul Patel (ADNOC Group D&CS):
+Anyone needs any support? Everyone who has IBP is able to set up the connections correctly and log on into IBP?
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Yeah, so some of the people. If it shows like a demand area is not planned, we don't need to worry.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+No planning area Can you share the screen so we can fix it?
+
+Rocio Minguillon:
+Because it's a problem.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Now I'm here.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can you see my screen? Yes, can you click log on please?
+
+UNKNOWN_SPEAKER:
+And the three dots.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+No, no, it's not working. OK, click OK. Log on. Again, please. And there is three dots next to the connection name. Yeah. Can you click the pencil? No. There is a pencil there. And where it says default, can you click the three dots?
+
+UNKNOWN_SPEAKER:
+This one? Yeah. Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And you need to select the last one.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+OK. OK again. And now you can connect. Well done. There you go.
+
+Hector Palacios (ADNOC Group D&CS):
+Anyone else is facing an issue because the ones that they don't see the SAP IP ribbon, that is beyond what we can do. Probably you don't have installed or you need to check with the IT team. But if you have issues with the connection, connection, maybe we can do something here on the session.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, there is some different issue Tariq has.
+
+Tariq Umar Muhammad Qureshi (ADNOC - GP):
+I think Tariq does not have access to IBP.
+
+UNKNOWN_SPEAKER:
+Tariq, can you show that once again? Yeah, I shared this image.
+
+Hector Palacios (ADNOC Group D&CS):
+Arun, can you check if Tariq has the user Yeah, sure.
+
+UNKNOWN_SPEAKER:
+Let me check.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, because that means, yeah, that's another issue. It's not recognizing the single logon, basically.
+
+Hector Palacios (ADNOC Group D&CS):
+Single logon means that you, with just your email, you are good to go. You can access. No password required like in all the other systems, but here is single logon. That this is not working.
+
+Rahul Patel (ADNOC Group D&CS):
+Can you show the connection once, Tariq, if you're able to set up the connection correctly?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can you see? Yeah, three dots. Can you click the three dots and the pencil? Cancel?
+
+Tariq Umar Muhammad Qureshi (ADNOC - GP):
+No, the pencil. Oh, sorry.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, it just seems to be working.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+I think there's a thing. Can you quickly check and confirm if he has access?
+
+UNKNOWN_SPEAKER:
+Yes, I'm checking on that part.
+
+Carol Adriano Mendez (ADNOC - PE&ICV):
+No, no, no, still not.
+
+Tariq Umar Muhammad Qureshi (ADNOC - GP):
+Yeah, not otherwise.
+
+UNKNOWN_SPEAKER:
+No. Between as you have a question. Yeah, this got resolved.
+
+1Prathviraj Anchan (Borouge):
+Actually I was trying to work on Excel parallelly, but then now it's possible. Usually when you have the pop up open is that you need to close it to continue working on the other sessions of Excel?
+
+Prathviraj Anchan (Borouge):
+Yeah that's right so I think can't work parallelly yeah on the SAP IBP and normal Excel together yeah that's what it means. Yeah of course you can.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah you can you can we can explain in later sessions how to do that I mean the the point is that you can have just one Excel session in which you have your all tabs or all Excel sheets in IVP, or you can open a separate IVP session for the Excel, so they don't interrupt each other. We can do that later, but I think that in the training we can teach you how to do that.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Tariq Umar Muhammad Qureshi (ADNOC - GP):
+Hector, for me, further investigation is required, how to connect. We are checking internally.
+
+Arun Singh:
+Arun, were you able to check if Tariq has a new Yes, yes. It's already there. So he has the user.
+
+UNKNOWN_SPEAKER:
+Yep.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, then we will need to check internally why you can't because this is the single logon. They should be enabled like for everyone else. So let's work it out. Let's work it out. This is going to take a little bit more than this session.
+
+Rahul Patel (ADNOC Group D&CS):
+All right, anyone has any other issue? Can we proceed to the next section? Are we able to log in those who have IPP?
+
+Hector Palacios (ADNOC Group D&CS):
+For Ameris, Ameris is not enabled. Yeah, so we have the two issues so far. One is a single logon. It's only for TARIC, and the other ones are the IPP is not enabled that we see on many cases for CAROL, AMEN. Yeah, I can I don't have the SAP IVP table. Yeah, I just saw the screen share.
+
+Rocio Minguillon:
+For those who don't have the SAP IVP tab or your tariff that you are facing that are issued, don't worry, please stay at the meeting because you will be able to follow the guidance of the consultants and you will see the scope of the tool of the basic functions. So stay in the meeting and follow the guide of the ones that will be sharing the screen.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+OK, so let's jump into the next phase. Is that okay?
+
+UNKNOWN_SPEAKER:
+Yeah. So I will share my screen.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Please let me know when you can see Can you see it? So, okay. So, for the ones that already set the connection, you should be able, clicking on the SAP IDP tab, you should be able to see something like this. Something like this, right? This panel, IDP panel, okay? So, the first thing we're going to do is to explain how to review master data. For that, we have here this cube with the name of Master Data Workbook.
+
+ If we click here, we will find this Create tab. If we click here on the Create tab, the system will show us the following screen. Basically, we can review master data and transactional data as well. Of course, we can start by reviewing master data. We can carry master data to review master data, and then in the master data type, we're going to start by reviewing the materials. We have here the material master data.
+
+ On the top of that, we can go to filter here and we can apply a filter so I have already a filter created which is called spare parts okay so having those so I'm gonna click okay so here we can see all the different materials that have been loaded that are already in the system with the different attributes. So what we have so far is, as you can see here, this is, of course, the key material ID. And we have multiple other attributes that will add more information to the analysis.
+
+ So this is the most basic setup. Here we have the description, material family, material ID. Then, because we will... Can you open the favorite?
+
+Hector Palacios (ADNOC Group D&CS):
+I think it will be easier to check. I think just the share favorite.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, I'm going to jump into that.
+
+UNKNOWN_SPEAKER:
+OK. OK, so.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Is it possible here to save this view as a favorite so you don't need to create all of them once you once you create it once. So just by example, here is that favorite. I'm going to create an on add and I don't know, I will call it sample example. Okay, example one. I click add and now every time I want to access to this view, I can go to favorites and I have it here. Example 1. And it will load it automatically.
+
+ So that is one thing. So for this session, I created a favorite here called Intro Master Data. And in this Intro Master Data, we have three master data types. We have locations, and we have materials, and we have location parts, which very similar to the Mar-C table in S4HANA. Remember, first of all, that all this data is integrated from your S4HANA into the IVP. So what we're going to have first here in the location are the different plants and different storage locations.
+
+ So as you can see here, we have a location which is the 1201 and then we have all the storage locations within this plant. Of course, we will have a description and then we will add some more attributes, for example, location region and we will find more details. We will review the details of the information later. Then, if we have too much again, we will see all the different attributes that have been completed for the material.
+
+ So we have the description, we have the manufacturer, we have the material family, the material type, product category, which I think we will rename it as material category, material group, which is widely used by ad hoc users, commodity, commodity code, product group, unified IDs. And these are pretty much the different attributes we have for the material master, which is very similar to the MARA table in S4HANA.
+
+ And then we have another one called MRO location parts. Here we can have more attributes. Here, as I was saying, is very similar to the Marcy and we can find the relationship.
+
+UNKNOWN_SPEAKER:
+Yeah, please.
+
+1Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, brushing. What is the limitation limit of the number of rows?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Good question, good question. Currently the limitation is 500,000 combinations OK records. So that's why it's very important here. I'm going to click in edit is to set a filter. OK, here I have a filter, but you can define a filter as you like by material type, by if you're looking at the location parts by, for example, plant, and you will see all the different combinations for that plant, so on and so forth.
+
+ OK. We just have limitation of visualization. Yeah, I mean, we can increase the visualization to the maximum of the DXL of two million, but it's not recommended because it will take too long to load two million combinations. So 500,000, I think is a good number. And still, I mean, users won't need to review more than 500,000 combinations at once, okay? So we highly recommend the use of filters, okay?
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+But user can increase the limitation by himself, or is there any other configuration?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+No, the system has only one set of global configuration.
+
+Hector Palacios (ADNOC Group D&CS):
+Believe me, you don't want to see one million rows there.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, no, I want to compare and Yeah, if you go to the medical master data, because I think we have 1.5 million records already. So in terms of master record review, if we wanted to see what other materials are having the missing data, okay, so maybe I may pull out maybe 1.5 million records.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, that's the case. We can increase the limit, yeah. Now bear in mind that there is an extra limit as well to this. It's like, I think that is close to one million or something else. I think it's two million. Okay. Yeah, but we can increase it. We can increase it.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+Just bear in mind that sometimes if you don't place a filter, it can take very long to load. So, well. Josh, better the planners try to use this planning by category. We knew that all these millions will put down the effectiveness or slow down the system. To calculate all this replenishment of supply planning, better try to not to use more than 500,000, sorry, 50,000 records. We had this discussion many times with this team.
+
+ It sounds to use like planning team better to use within their categories in their... Normally one inventory staff might handle or controller might handle maximum of 10 categories, UPGs I mean, battle group, right? Better to limit the number of items used in this analysis.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+This is a good point you're raising, Murugan, because as users will be responsible for a certain categories, we need to set those so the users are able to only monitor that combinations. If a user is not responsible for planning, I don't know, category A, he shouldn't be able to see it. So in that sense, he won't need to review the whole.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+The reason it is not just 1 million record team. If I have a valve group, for example, there are around 40,000 records or 30,000 valves, in the Metalsmaster unique SKU. I might run it across 50 to 60 plant. And within a plant, we have multiple storage locations. This is why we were always advising companies to go and have less number of storage locations. But as on today, we have many plants, many storage locations.
+
+ We have 4,000 storage locations. So try, all the team, while training, please explain the controllers. Even right in the training slide, we suggest not to use more than 50,000 SK a unique item. Right, so that in multiple plan, multiple storage location you might not face issues. Right, if you go by category, hardly the maximum items found in the category should be well. OK, you might not find those in SK something in the value of 40,000 SK something.
+
+ So better try to limit it by the categories. If you can, if you fighting and supporters and limiting it is really good. Or probably they use give very less users to access all the categories. Maybe planning team or section or something like that, and for all the other users try to give limited category access or. They're all enrolled with some MRP controller limitations in SAP.
+
+UNKNOWN_SPEAKER:
+Probably it can go by that also.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+OK, Let's jump into the next table, which is the location parts.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Can you do the same step once again?
+
+UNKNOWN_SPEAKER:
+Sorry, how did I get here?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+You mean? Yeah. So you go here to. In fact, I can share you. I can share you my view. So for example, I will share this view with you. So if I go here. And this is something you also can do with other users. If you've created which you believe is a useful view, you can share it with other users. So I'm going to share a view, OK? OK. So this view is called intro MD.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So I don't know.
+
+UNKNOWN_SPEAKER:
+Yeah. Hello. Okay. Okay. Probably, yeah, this is a useful example.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So, can you share your screen a little bit, please? Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+You will need to log off and log on because something was just shared to you. Can you disconnect and log on again, please?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can you click, yeah, disconnect and log on. Log on.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, now if you go to the favorite, no, to the favorite on the right side of this cube, yeah. Yeah, there you go. And that one is shared by me, right? If you click there. And there you go. You see some kind of difference because you're not able to change the master data but you're able to see it. This is another thing we should address. In general, the master data shouldn't be changed by any user because it comes from the source system, from S-Rohana.
+
+ If you want to change it, they have to change it directly in the source system and then it will get integrated here. So can we go to MRO location parts, please?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So here, as I was saying, you can see the relationship between the different materials in a plan. Also, we're going to see the different relationship between storage location and material. But this is something that with the current data, we don't have yet. We will have it in the next few days once we set all the integration. And let's see some of the attributes. The most important ones are BD, segmentation is coming from your system, vital, essential, and desirable.
+
+ Fast, medium, slow, and non-movers, which for now, this one were loaded from your system, but in the future, be calculated in IVP and then integrated back to S4HANA. Which is your classification. Which is based on price and also it's your classification. Which is based on stock value and, well, variability and IVP planning type. All the rest of the attributes are internal and we will explain then how they are defined in the next few sessions.
+
+ Is there any doubt related to the master data?
+
+UNKNOWN_SPEAKER:
+Yeah, please.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, so if I want to create a new one, so from here, it will create.
+
+UNKNOWN_SPEAKER:
+Create.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, master data. Yeah, and here, for example, you can, I don't know, let's, for example, go to, there's MRO asset. Asset. Yeah, click OK. And here's where we have the equipment. Bear with us because, of course, we're building the integration, and there's plenty of missing attributes. But here, for example, we have different equipments.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So as you know, the system is not fully populated, and we are heavily working with the technical team to load all the information required. OK? OK. Sheikh, you had a thought? I'll just share my screen.
+
+1Sheikh Saleem (ADNOC Logistics & Services):
+I just wanted to show.
+
+UNKNOWN_SPEAKER:
+Yes, sure. We're seeing your email.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So, this is the, I have selected the plant here, but the attributes are not coming for No, but because you have the material there, you need to change it to?
+
+UNKNOWN_SPEAKER:
+You can change it here to location. Okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Probably it opened in some sheet on the Excel.
+
+UNKNOWN_SPEAKER:
+There you go.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can you go to master data workbook again and click Edit? Ah, plant.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, no, no, yes, yes, you can plant, yeah.
+
+UNKNOWN_SPEAKER:
+And okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So here you have all different locations and vendors, and you can maybe look for those plants here. If you filter in the location ID directly in the, yeah, in the sheet, maybe you can look for the plant that you were looking for. But the details were shown in your PC the time it's not been complete list of ABC and all it's not been showing ah yeah because that is an in another table in is in the MRO location part and instead of location is called MRO location parts there you go OK, then I have to save this in this favorite.
+
+ Yeah, if you want to save it as a favorite that is possible.
+
+UNKNOWN_SPEAKER:
+And call it as you like, OK, thank you. Cool.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So now we're going to, because we only have one more hour, we're going jump into the into review planning views okay so I'm going to share my screen again maybe it's a good opportunity to check with the team if
+
+Hector Palacios (ADNOC Group D&CS):
+they see like any obvious missing hierarchy from the material because we have so few maybe the team can say something quicker I'm missing this one yeah I'm gonna open the favorite and let's go into this is the information we
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+have so for So there is no more than this.
+
+UNKNOWN_SPEAKER:
+Sorry.
+
+Hector Palacios (ADNOC Group D&CS):
+So this hierarchies is what you will see on the views for reporting purposes, for dashboards, for setting up the filters that you were saying right now, for example, which categories is going to see this user and so on. So all these information for us is very, very valuable. These are like the candidates hierarchies that we saw on the MATA table. There is another table where we got the broad commodity code and so on, but usually we see more than this in our customers.
+
+ So, I don't know if for you this is enough, what you are seeing here, or you are missing something very obvious that we we are not seeing so far.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, just to go back to what Hector was saying, being AdNoc such a massive company, we would expect to have way more attributes depending on the company, depending on the type of material, on the category. So we believe this is not going to be enough so planners can do their analysis. So what are the attributes that are missing and where we can can find them.
+
+UNKNOWN_SPEAKER:
+Anyone?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It is very difficult to make final decision.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Let every user go through.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+If there is any new additional field added, they can Do you think the title of many of the fields are to be standardized?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yes, we can.
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+Yeah, I think there are a lot of new terminologies. Everybody will be getting confused. Go by the procedure and SAP captions. Whatever we are using. Yes. That's not family. Something is new for me. Yeah, broader category. I think in SAP middle middle group, Right product and product category are the same for us. Metal group code and metal group description. But this power part is not metal group product category, but that is what metal type, right?
+
+ Yeah, it is metal type. Right, so similarly, if you can give us this titles, one of us can help you out in standardizing this title as per our SAP terms or as per our procedures.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, we can do that.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Point taken, we will adjust the description, but we still have the doubt of additional attributes that need to be integrated, additional fields that need to be integrated into the system. We have requested this before, but we haven't received the information because we understand that the information is not I mean, multiple stages, you have multiple definitions, but we can manage these different definitions.
+
+
+
+Murugan Kaliaperumal (ADNOC - PE&ICV):
+Who is taking responsibility of this? Khalid from planning team or inventory team? See, sometimes a common male, nobody will know who is going to do this. Khalid? Abdul Hello, yeah. Somebody somebody should take responsibility of completing the field requirement whether extra field is required or not if you send a mail to many people so they will think somebody else is doing we need to assign to one person or two person to do some activities we are we are closing down when was this mail sent I'm not aware of this is it related I know about the drilling part it's okay now now somebody who can take responsibility find out Abdul and Das send it to Abdul and Das, let they together finalize the number of fields required, right?
+
+ Anybody else can give idea, please give ideas to them. Yeah, yeah, OK. Thank you, thank you.
+
+UNKNOWN_SPEAKER:
+OK. Hey.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And, of course, this is for material but also for location materials. I think this will be the main table for the entire project material and location material.
+
+Hector Palacios (ADNOC Group D&CS):
+So, if you need help on this, Tim, we can have a session together. We can work this with the interaction team. For us, it's really important because this means that we need to interact this. We need to build the iteration for these fields and also to change the structure for HANA because the structure has some very standard fields. Probably some of the ones that you are going to provide are not in the standard, so we will need to build it, right?
+
+ That's why for us it's so important to have this information up front and not wait for the training and for other sessions because that means we will need to come back to to build an IAM.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Okay, let's jump into how to create a planning view. So, two things here. So, only advanced users are able to create new views from scratch, from templates. So, this is something that that most users won't have the option to do. So they instead need to go here to new view and create from template, okay? So if you click here, you'll find here, I mean, template, okay? So I created a template to start called sample 0.0.0.0.dp.
+
+ And this sample have first, The time settings is set at a year level from 2020 to 2025. As you know, you can change this to month, quarter, or year. But for now, we're going to set it, leave it on year. Then the attributes is at which level we want to see the information. So in this case, we're going to see the information location ID level and using maybe some of the categories we have here. I'm going to put material type.
+
+ So at this level I'm going to see the information. Then we have key figures. There's here plenty of information that of course is integrated from S4HANA but is also generated in IDP or collaborated from users. So for this example, we're going to see the actual usage for preventive maintenance, meaning how much material it was consumed for preventive maintenance activities, and the same but for CM, for corrective maintenance activities.
+
+ Here we have the unit of measure that we have set it in unit measure base, which is unit, and the currency is AED, okay? But in this case, the currency is not useful because we're not visualizing any key figure that is actually in terms of money. It's just an amount, okay? But again, if we want to see the, I don't know, valorization, the budget, information that is related, that it is in currency, we should select that.
+
+
+
+UNKNOWN_SPEAKER:
+Okay?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Layout, we can basically change the way the information is displayed, but this is something that I don't recommend to change that often. And filter, we will use a filter that was shared by Fiamma Giordi, a consultant, and it basically it states that it will show just loops, operating supplies, and spare parts. Then in alerts, we will define certain alerts, but it's not something that we're going to cover through this session.
+
+ It's a little bit more advanced use. So I'm going to click OK, and the view will be generated.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+There you go. So we have for the location 2101, we have three different material types. We have known, which means that that field is empty for certain materials. Then we have set loop and set RSA, which are spare parts, if I'm not mistaken. Here we can see the chart from this information. And we can see here the green bar is the actual usage of material for corrective maintenance, and the green in the blue bar is the actual consumption for preventive maintenance.
+
+ If we want to filter the chart for some of the attributes here, we can click here. For example, let's see just the information related to set RSA, and I can click plus, and it will just show me the filter by that one. Now, we can modify this filter directly here. So what I'm going to do is I'm going to click the right button, and I click in Quick Edit Planning View, and then Add Attribute After. So for example, I'm going to add the material ID.
+
+ And now I'm able to visualize all the information and material ID level. So here in this case, for example, I have a loop that has a lot of consumption. So I can also filter the field. I can use a filter to just visualize that information. And as you can see here, this loop has pretty much just consumption for corrective maintenance. So that's where only seeing the green bars. What if I want to see the description of these materials?
+
+ Well, I can do this again.
+
+UNKNOWN_SPEAKER:
+I attribute after, and I can add the material description.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+If I go to a loop again, here is a compound, FLD, liquid, and so on. Probably you know better than me the meaning of this material.
+
+UNKNOWN_SPEAKER:
+What else can I show here?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Of course, if I go here, I have this filter, but I can use other filters as well. And I can change it directly here. So for example, here I have a few materials that we will see it in tomorrow's session called MRO forecast data. So I'm going to click here. And now I'm seeing just a few. I changed the selection. So as you can see, it's very user-friendly. It's very easy to navigate through these different views.
+
+ So let's think I like this view, so I want to save it just for myself. I can go here, and I can go to Favorites here, Favorites. And I'm going to call it 000 favorite. And then I can also share the view so other users can see it. So I'm going to share it. I'm going to share it with Abdul. And then, Abdul, could you please share your screen so we can confirm that you are able to visualize the view.
+
+
+
+UNKNOWN_SPEAKER:
+Okay. So go to IVP. Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So can you disconnect, please? Because every time I share, yeah.
+
+UNKNOWN_SPEAKER:
+Hold on.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And if you go to favorites, not to those ones, to the other ones, to the ones in the left side. Go to the left on the top left. There you go. Almost there. Which one? Favorites.
+
+UNKNOWN_SPEAKER:
+Favorites. Yeah. Favorites.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+There's a star called favorite. There you go. And that's the one that I share. If you click there.
+
+UNKNOWN_SPEAKER:
+It's under the planning view.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I don't know what, can you, can you go to IVP again? Oh, there you go. Okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+OK, but here you can see the view. We need to check what are those errors. But you can see here the view that I was just sharing. We need to make sure to get rid of those errors. But as I was saying, yeah, this is the information that we were seeing. OK, let's try to adjust the view just to make sure it is possible. Go to YBP, please. Go to YBP. OK. And go to Edit View. This is an YBP tab, OK.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+And Planning View, Edit View.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Edit View, OK.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And go, for example, for, yeah, let's let's instead of seeing the information at a year, let's see the information on a quarterly basis. So on time level, you display that and you can click quarter. So let's select from, for example, from the quarter from, I don't know, let's look at the consumption of 2022, just to make an example. So from Q1 till Q3, 4 of 2022.
+
+UNKNOWN_SPEAKER:
+Oh, okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Q4 2025. This is okay. That's okay. And click okay. And there you go. Now you are... Welcome to IBP, Abdul. Well done. Thank you. Okay.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So you changed the view, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And if maybe you don't want to see the description, It's not adding any value to you. So you can click the right button on the description. On the description, under the description, click the right button.
+
+UNKNOWN_SPEAKER:
+No, in one description.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Not on the header, in one description.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, OK.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+OK, on description, OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It doesn't show you the part of the view. It doesn't matter. Let's go to Edit View again and Attributes. You can here add in and remove attributes. On the right side, you have all the selected attributes. Let's say you want to see the information by the asset, which is equipment. So you can get rid of the asset ID. That's cool. Please add it. Select it. And maybe you don't want to see the description.
+
+ And so you can get rid of the material description. You can't share this with any of the user. With us this page. I mean, in the future, if you create something like this and you can share it with us. Yeah, that's a good idea. So we're going to do that exercise. Okay, and we don't have the asset now because we're working on the integration, but in the future you'll see the equipment here. Okay, so let's see.
+
+ You want to save this future. Just for you. You go to favorite and add. And you can name it as you like, And add. You can even create a new folder if you like,
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+What about this part?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It's for the chart. If you click the X here, when there is no X, it means that the chart is showing the entire information which is in the view. Then if you want to filter, Maybe just by one material. Just put a filter by just that material. And you're seeing just that material. OK. And you can select multiple materials if you like,
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So that means the graphs and all, it will particular to the one material.
+
+UNKNOWN_SPEAKER:
+Yeah. That's right.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And then if you want to get rid of such objects, If you click the X in the filter, it will show you everything. Let's suppose you want to share this view with another user. You go to Favorite again and Share. You don't have Share. No, you don't have that. Access yet we need to add give you permission to share views but you will be able to share views with other users okay yeah so uh we need to check other stuff in the Fiori app because this is just
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+one view and so I will I have a question if you allow me yeah where I can see the I mean the companies here I mean this material sure deal for the quarter But where I can see which company
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+are using this item? The company will be an attribute for the location, for the plant storage location. So that will be an additional attribute. We don't have it yet, but we need to add it.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+But the location ID is the plant code, isn't it?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, it's a plant code.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+I think this is one of the conventions that need to be standardized, this location ID. It's better to have a plant ID. Instead of location ID, call it plant? Because location, most of the terminology of SAP is mean like storage locations. So if it's plant ID, much better, actually.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, location ID can be renamed to plant. Location, and we will have plants.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, location ID is like the MRP area, in your case, on the MRP run. So, it can be a storage location, it can be the plant, depending on the case. For us, this is the basic dimension on IBB. So, in this case, location ID can be both. We will have a different attribute that will be the plant ID as well, related to this. So, this is the part of the attributes that we need to get not only for materials, also for location.
+
+ The company attribute that we are discussing for us is also very important. Equipment information, yeah, we need to define sooner than later what are going to be all the fields that we will see on IVP so we can proceed with the integration.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+It's in this, like instead of showing a Is there any option to select as a monthly?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, of course you can visualize it on a weekly on a quarter. Yeah, go up. Remember to edit view. And here we have the time settings. This is in quarter. Change it to months. And yeah, OK.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+And also in the bar chart, the key figures are actually for preventive maintenance and corrective maintenance. If you want to see the sum of both, again, no need to separate these two fields.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, we also have that one.
+
+Hector Palacios (ADNOC Group D&CS):
+I don't know if in the actual, Sebastian, but we can create it for sure. It's just a sum.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, like a combination of both.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I think if you go for key figures, you're in attributes, but no, in the DPU is fine. Okay, sorry. If you go to key figures, you click in attributes, but you can go to key figures to the next one. The key figures yeah in the left side you are selecting in the left side left. So Latif on the left side you have five options time attribute key figures go to key figures key figures okay there you go yeah if you click on actuals if you look for actuals here for example you you will have reservations you have plenty of things uh what was the consumption on the previous year But if you click in the search bar, it says, if you write actuals.
+
+
+
+UNKNOWN_SPEAKER:
+That's OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And I'm not sure if we already configured the sum of both. But, Arun, you will find the sum of both here. No, no, no, Click OK, please.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So I want to remove this one or keep it?
+
+UNKNOWN_SPEAKER:
+Yeah, you can remove it if you like, And there you go.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And now you can because in the series you were. Can you click the X in this series? In series and yeah and then in on the left the left one oh yeah there you go and now you please click the yeah that one and click plus there you go all right um should we go to the let's go to the very back just just one small for my part, there's no need. If you lost something, it's not a bad thing. We don't expect you to get everything on the first session.
+
+ We will have multiple training sessions, and we will have unit testing, UIT, SAT, then go live, hypercurse, so it's one step by step, okay? So if you have more doubts, we can address them later. Thank you.
+
+1Carol Adriano Mendez (ADNOC - PE&ICV):
+Carol, you have a question? Yes, I have one question. You are sharing the data, right? You can share it with multiple users, and how the user will receive it? Is there any notification, like an email notification, that you share the data?
+
+Hector Palacios (ADNOC Group D&CS):
+You mean the planning view? No, usually you will get it on the exit, but I don't think that there is an for that.
+
+1Carol Adriano Mendez (ADNOC - PE&ICV):
+But you can select multiple users, right? Right now, it's shared only with WLT.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Yeah, yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+And also we can configure groups, so we don't need to go one by one. We can select one group and that group, imagine that has like 12 people at the same time. Okay, thank you. Okay, let me share the screen team because I will take the Fiori part just to show you. Just one second.
+
+UNKNOWN_SPEAKER:
+One second, I'm going there.
+
+Hector Palacios (ADNOC Group D&CS):
+So Excel, what Bastien was sharing, this is something really useful for me. I am a really fan of Excel and a decent user, and I can apply formulas and all of that. So in that regard, Excel will continue to be the best one, right? So I guess that when SAP decided to have an extension for IAP and ADDON, they were thinking on that. Most of the planning in the world is happening in Excel. So a step closer to adoption of this tool is let's use Excel as the platform.
+
+ But we also have this additional theory platform that for you may look very familiar because it's the same one that you have for HANA and for many SAP application. This is the base platform. Here I'm very surprised of the late developments that we have been having here because we are compounding many applications in just one place that we call the Planner Workspace that I will show you in a bit. So, this is the Planner Workspace, and it's looking like this.
+
+ So, on Planner Workspace, you have many things at the same time, and this will greatly benefit if you have a big screen and your remote desktop. If you have a good screen, you will see this much better than I. I just have an not a laptop. But here you can have a web view that this is like a planning view. Imagine this, the figures that we're taking right now on the Excel. And here you can also have the time.
+
+ I don't have it for the example, but yeah, you can have the multiple periods here. And you can save data here. You can put numbers here. You can save the same way that you were doing it in Excel. Exactly the same. Additionally, you can have the master data as well. So you can visualize data, for example, we are checking here a specific combination of material plant, and you will have all the segmentations related, and if you want to have the description, the categories, material type, group, whatever hierarchy you have there, you can place it here as well, if it is informational for you.
+
+ And then you can also use the native charts that you have here on the web, right? So we can confirm for you some initial charts that you can have for analyzing the information that you are getting from the Excel or from here, and to take decisions based on that. So that is why this is called Planner Workspace, because basically we are expecting you to come here to see the information, to adjust information, see right away how this information is changing the dashboards that you see here, and work
+
+UNKNOWN_SPEAKER:
+here.
+
+Hector Palacios (ADNOC Group D&CS):
+Another very interesting stuff that we have here is that here we can configure the alerts and the tasks. Let's start by the tasks. We have a process. I think that we had a specific session where we're discussing about this, but you are implementing a process here, and IBP is going to be the tool supporting that process. That process has many steps on the demand side, inventory side, supply side, we have responsibles, we have tasks, and so on.
+
+ So, we want to put this in a very organized way, and each planner, controller, will have their task assigned, and you will see it. So, imagine that this is going to be in the background, right? Every company can have their own process, their own responsibles, and now I'm a controller, a planner, and I can come here, and I can see the task task that I have assigned. So now the part of the process that I'm right now is that the map planning already happened, right?
+
+ Now I need to check the inventory parameters. So the first job, for example, is to run the inventory optimization. And for me, this task is aligned to a job run. So I don't need to run the job. I don't need to do it. I just need to set to complete and the run is going to be happening in the background. So if I come here, basically the model that is calculating the parameters is going to be running here.
+
+ Usually takes like three minutes after running the task, but it's going to appear eventually here. You will see it run and you will see it finished as well. So once that I did that, basically all the inventory parameters are going to be updated. If there is new input, that is going to be the case. If there is no new input, probably they will stay the same, but basically running the update, right? So once this is done, I just can click on go or yeah, that is something or refresh.
+
+ And the numbers are going to be refreshed based on the new run, right? So that's for one thing. So now the next stage for me probably is to, let me check if this is re-updated. Just one second. But there is going to be a new task.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Is there a question? I think that is just a random interruption.
+
+Hector Palacios (ADNOC Group D&CS):
+No worries. All right, so that is the idea. So you have a step of the process and it will take you here. So Every step of the process also can be assigned to a specific view. For example, this one was related to this view. If I have another step of the process like validating the resource, probably you can have a different view of this that can be for another person, not necessarily for you, and you can check it, right?
+
+ So you can have the tasks and the specific task will have a specific view for you to interact with and to analyze the resource. Another very interesting aspect of this is that you have alerts. So, imagine that, for example, here, you have this tab. So, you can have different set of alerts. So, for example, I'm checking here service level issues, that the model is proposing something, but for some cases that the exceptions is not going to work fine.
+
+ So, I can click here and I can see the different cases. So, for this material, for this plant, and so on. So, you click here and it's going to take you to that specific case, right? So here maybe service level is not the best one you want to check. If you check the historical service level that you would get from using your current reorder point, it's not looking fine. This is the proposal and so on, right?
+
+ So you can check the resource. There can be another alert, for example, pending approvals. So this can configure as an alert and you can check which cases I need to approve because they are big changes. I'm filtering, by the way, I'm just filtering what is relevant. I don't want to see everything. Maybe some specific, some vitals, I don't know, business critical, or that they are having a huge impact on the stock value.
+
+ For example, the X materials, you can check those ones and to see what are the current yield point, what is the proposal. For example, you have a very good case here. In which you have a carbon reorder point of 95. If you have 67, it's going to be mostly the same. So you are reducing the stock here and kind of maintaining the service level that you had in the past. So this is like an historical service level.
+
+ This is the target. But if you had this reorder point, how the past would have been resorted. Basically that. So, you have this new reorder point, you can approve it, you can just put a 1 here, save, and this one is approved, and that's it. If you don't want to approve it, the other way around, if you see that there is something to check, let's see another example, maybe there is some case that I don't want to approve.
+
+ Not this one, this looks fine. Well, this is a good one that probably will require some analysis. So, the proposal that the system is doing, imagine that this comes from the planner. The planner runs the model, he already checks the different results, and now he's sending this to the approver. The approver comes here, it says, okay, it seems weird. I mean, it seems that we are decreasing the service level.
+
+ This is fine. If I'm not sure, I can create a task. So I can assign a task. I can tell, for example, this is this material. I can put a name, check this material, and I can assign this to an user, right? So I can assign this, for example, to Arun. So this is my coworker, and then apply. And Arun will receive it in their site. So Arun, in his site, he will check when he comes here, he will see also these tasks.
+
+ So for example, this one that I have here, I also see it because I'm the one that I assigned this task, but Arun will see it. He will click here, and it will take him directly to the case that I want him to check. So this specific material for this specific plant, I can put a description if I want to give a notion of what is the weird stuff that I'm seeing that we need to check, and he can review the task.
+
+ Once he solves, imagine that he does some changes here, he propose something different, he can set to complete it and complete the tasks. So this way we can manage the different exceptions and basically focus on only what is relevant. So in instead of focusing on every combination, because that is going to be impossible. First, we need to understand what are the important ones, so we can generate alerts for those ones only.
+
+ Then we can check in which cases we should trigger an alert, right? Because maybe there is some service level issue, because there is a big change on the proposal of the reorder point or safety stock or market stock, and so on. And then the user will see only the cases in which we need to take a look and we'll solve those cases in the system. If there is something weird, I can create a task and I can assign a user to check that specific task as well so he can solve it.
+
+ Basically, this is just an approach. We will go deeper on the sessions to explain the different key fields we see here, the different visualizations. But this is the way of working that we can have on this part of IPP. That is basically the other side of the console. You have Excel and you can also have this tab here, the planner workspace, where you can enjoy having these different charts, mass data, planning views, alerts, tasks.
+
+ I don't know if you guys have any question about this.
+
+UNKNOWN_SPEAKER:
+Any question, any comment? Should we leave it here, guys? How many companies available?
+
+Aboobacker M. (ADNOC Gas - PD):
+All the data available or only 2, 1, 0, 0 available? Only this one.
+
+Hector Palacios (ADNOC Group D&CS):
+only this one. We haven't been able to have the whole integration so far. We just have it like some weeks ago and we are still facing some connection issues. And this was some initial data that Bigness shared with us and we are using for unit testing. So for MRO, I think that we have only this plant so far.
+
+Aboobacker M. (ADNOC Gas - PD):
+Just I'll share, Misk. Just explain me how to extract one simple report with. Something like no only put some list of items known to see I'm not clear how to extract that. OK, so this is the one. Now I want to see one company code.
+
+Hector Palacios (ADNOC Group D&CS):
+something just how to extract that can you help me no this is fine the problem is that as we are saying that we don't have all the attributes this is just basic data we have companies is still something that
+
+Aboobacker M. (ADNOC Gas - PD):
+we are missing you know just you want to see the report in single line how to make it um I need to remove something here, right? Yeah, what is what you want to see? Only the actuals, for example?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, only actual usage.
+
+Aboobacker M. (ADNOC Gas - PD):
+OK, then click OK and that's what you will see. How to change this location?
+
+Hector Palacios (ADNOC Group D&CS):
+how to change that is part of the filter so if you go to edit view edit view okay if you go below the filter um probably there is no I seen that you don't have filter so basically that is what you see but you can apply uh allocation id filter for example yeah can you click on attribute No, in the filter, there is a part that is called attribute as well.
+
+UNKNOWN_SPEAKER:
+Go back to the filter, please.
+
+Hector Palacios (ADNOC Group D&CS):
+The one below, above, sorry. Here. Yeah. You can select location. Okay.
+
+UNKNOWN_SPEAKER:
+You can write it as well. This location is nothing but plant ID?
+
+Aboobacker M. (ADNOC Gas - PD):
+It's a description.
+
+Hector Palacios (ADNOC Group D&CS):
+It's in this case, the one below is location ID. That will be the ID.
+
+UNKNOWN_SPEAKER:
+Location ID.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, just below.
+
+UNKNOWN_SPEAKER:
+And in values.
+
+Aboobacker M. (ADNOC Gas - PD):
+This is the location ID, right? Yeah, that seems easy.
+
+Hector Palacios (ADNOC Group D&CS):
+Company code. Company code, we don't have it yet. What is this company? That should be a company, but we don't have it yet. One should be the id and your one should be the description but we don't have so only one plant code is available right now you mean uh can you go below to see if maybe we have something else but I think that's the case we can you can place a filter as well not filter you can able to uh So yeah therefore unit testing is going to be a very reduced data set.
+
+
+
+UNKNOWN_SPEAKER:
+It's more focused on functionality.
+
+Hector Palacios (ADNOC Group D&CS):
+As soon as we have the iteration we for sure we will be adding more and more data at least.
+
+Aboobacker M. (ADNOC Gas - PD):
+So we can add this as a favorite.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah. You basically you can check the template customize it and then save it for your own with your filters with your adjustments etc but Hector this red color for now what what we should understand like 8440 those usually are alerts that we can have um this is just an example I guess this bastion created this one I'm not really but probably it's related to outliers. So whenever we see some very abnormal data point, we can put, okay, this is very far from the average, and we can highlight that.
+
+ So maybe sometimes, because this is driving the resource, right? So maybe you don't want to see a number, you want to see a number that makes more sense, or maybe that is highlighting that something is not right on the data. Is it normal to have 400 of this material in the ceiling?
+
+UNKNOWN_SPEAKER:
+High consumption, I can say.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+High consumption more than the max stock. Is there any logic behind the coloring? Behind your layers? You have maintained some color, no? Like red color. Yeah. So it is an alert, fine. We agree it is an alert. So this alert is regarding to the max stock level issuance or how we should interpret it?
+
+Hector Palacios (ADNOC Group D&CS):
+In this case, it's basically you have a very high consumption in the path. So, the question is, is this number correct? Did this already happen or maybe we are just having a data issue here that we are not classifying correctly? That can be a guess, but the way that we say that this is an outlier is based on a standard deviation. So, in the data you have the average of the data and you have the standard deviation.
+
+ And if the number is like three standard deviation over the average, this is a weird stuff.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But Hector, sorry to interrupt. Yeah, this session is just introductory. All the details of the process, the step by step, how we're going to do the planning will be addressed in the next few sessions. OK? So at this point, we just wanted to show how the system works. In general terms, in terms of the interfaces, the others, so on and so forth. But in tomorrow's session, we are going to start addressing all the details from the demand planning process.
+
+ And in the session of Wednesday and Thursday, we're going to address all the inventory part. So have some patience, and tomorrow we're going to start already working with some sample data and start planning.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But I think I believe the objective of this session was already achieved, which is basically.
+
+Aboobacker M. (ADNOC Gas - PD):
+The idea is nothing but a material number. This is a material number.
+
+UNKNOWN_SPEAKER:
+Yes. Yes.
+
+Aboobacker M. (ADNOC Gas - PD):
+It's a material number.
+
+Hector Palacios (ADNOC Group D&CS):
+It is showing two times here. You're trying to see the ID and description but it's part of the fine-tuning that we need to do yeah okay now is that you shouldn't yeah this field name to know it will be changed as per the existing one right no yeah yeah I think that one of the things that we need to start doing is to filter because you will see here many attributes you won't you won't use some of their are a standard IVP we need to remove them or hide them So let us do that job before you start like checking here because you can get really confused seeing so so much.
+
+ So so many fields.
+
+Aboobacker M. (ADNOC Gas - PD):
+No, no, it feels available now. There is no issue of keeping the fields if you want to. But the only thing that the name and nomenclature to be no as per the existing SAP whatever field name available in SAP. Yeah, point taken.
+
+Hector Palacios (ADNOC Group D&CS):
+We will try to maintain the same nomenclature you have there. Still, we need to learn a lot on this.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, this is part of the fine tuning.
+
+Hector Palacios (ADNOC Group D&CS):
+This is why it's really important for us to show you the system first time. This is day one.
+
+Rahul Patel (ADNOC Group D&CS):
+Don't worry, we'll have a lot of sessions from here onwards to get to answer. It's a lot of sessions. We don't expect you to start learning. We just want to show it now and we're giving you access so that you can play around. See, get familiar, click everywhere, see what happens where so that you guys have access to play around as well. So whenever we're demonstrating something in the session, in your free time, during the session or later after the session, you can go through it, see how the data makes sense.
+
+ You're able to do it on your own.
+
+Aboobacker M. (ADNOC Gas - PD):
+And probably the next session will be even know before the before the workshops starts. And so that's why today's session is a lot of our comments here.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+It would be great that this data is editable, but it will not change the master data, isn't it?
+
+Rahul Patel (ADNOC Group D&CS):
+Correct, master data should not be editable. Master data is just a report Translational data in terms of what IBP is proposing should be editable, not the historical data.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+No, I mean, if we already download this one, it is editable, but it will not change the reflect in the master data.
+
+Rahul Patel (ADNOC Group D&CS):
+No, nothing is. Right now, what you're doing is only S4ANA. Nothing is happening on IBP. Sorry, only IBP.
+
+UNKNOWN_SPEAKER:
+Nothing will change in S4ANA.
+
+Rahul Patel (ADNOC Group D&CS):
+Unless we decide to send it back. So there are two separate systems configured by interface.
+
+Aboobacker M. (ADNOC Gas - PD):
+So yeah, if I if I if I correct this data and yes, we save this one to be saved, right?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Save in our own file, not not in the master.
+
+UNKNOWN_SPEAKER:
+Not in master.
+
+Rahul Patel (ADNOC Group D&CS):
+Not in S4 HANA, but it I I BP the separate system. So whatever changes you do gets uploaded to IPP cloud. So it's while you're seeing you're working on Excel, changes will get uploaded to IPP. If there are. But that depends upon what field you're allowed to change.
+
+Aboobacker M. (ADNOC Gas - PD):
+So if you're allowed to change something and if change something, then that would be uploaded in IVP. Anyway, this is as you said that this is a for the first decision will see.
+
+Hector Palacios (ADNOC Group D&CS):
+OK. First time this is.
+
+Aboobacker M. (ADNOC Gas - PD):
+By seeing all these fields, it's okay. It's good to see we can extract whatever data we want. There should be some templates available, easy to select. Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, I created a task for my team so we can start filtering what is relevant because in the example, there is many information that you won't use. It's a standard IPP, but that doesn't mean that we are using it on ad-hoc. So we are going to remove all the empty fields that doesn't have any information or meaning. For key fears, we will start doing the same with your feedback as well, because many of the lines, the key fears are going to be new for you, right?
+
+ Statistical forecast is new, that is not on S4HANA. But maybe the old ones, like the actual consumption, we can try to find a common ground on S4HANA as well. So, if you collect that way, we can try to follow the same struct.
+
+UNKNOWN_SPEAKER:
+Okay. Good.
+
+Hector Palacios (ADNOC Group D&CS):
+Tim, do you have any other questions? Remember that we continue tomorrow and this whole week we are having like two sessions a day for demand planning, inventory planning, especially for maintenance for MRO planning.
+
+Tariq Umar Muhammad Qureshi (ADNOC - GP):
+Please resolve the issue of the access so that tomorrow we can participate.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, we will try to do our best. We will push it. Consultants cannot, but we can work closely with IT so we can close the point.
+
+UNKNOWN_SPEAKER:
+Any other point, Tim?
+
+Aboobacker M. (ADNOC Gas - PD):
+How to keep only one sheet here? How to remove other informations?
+
+Hector Palacios (ADNOC Group D&CS):
+You can just remove it like you do it on Excel. Just delete it. But from the Excel part so you can close here.
+
+Aboobacker M. (ADNOC Gas - PD):
+You can just delete.
+
+UNKNOWN_SPEAKER:
+Delete from here, yeah.
+
+Prathviraj Anchan (Borouge):
+I just tried using the location ID of 2100 that sharp field, but this is what I got as an output. You want me to share my screen?
+
+UNKNOWN_SPEAKER:
+Yeah, you can share. No, the iPhone. Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+probably we have all the plans but what we don't have yet is the oh yeah you're trying to select one of the ones that will have the storage location layer we still don't have it we have only the the plant level shaft field plant ah that was this one right that one yeah that's the only one we have so far yeah and you need to select the master data type needs to be location. We will also filter what you see there so you don't become overwhelmed with such OK, and then I can.
+
+
+
+UNKNOWN_SPEAKER:
+Alright, so we will check more on details on this.
+
+Prathviraj Anchan (Borouge):
+And if required, then possibly we'll get a feedback.
+
+UNKNOWN_SPEAKER:
+Alright, perfect.
+
+Hector Palacios (ADNOC Group D&CS):
+Team, you have any other question?
+
+UNKNOWN_SPEAKER:
+All right, then I think thank you everyone for your time today.
+
+Rahul Patel (ADNOC Group D&CS):
+Let's connect tomorrow. All right, perfect.
+
+Hector Palacios (ADNOC Group D&CS):
+Thank you very much. Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you.
+
+Khushboo Mudit (ADNOC Group D&CS):
+Thank you.
+
+UNKNOWN_SPEAKER:
+Take care. Thank you. Bye.
+
