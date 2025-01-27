@@ -1,0 +1,284 @@
+Saul Portillo:
+Today I submitted to the session because I don't know why this session came to me as early in the morning. Last night when I checked, I didn't leave, I knew there was a design but I checked and at night I didn't see anything and I said, well, I'm going to take advantage of the rest a little more and when
+
+Reinaldo Gutierrez:
+I got up I was in the middle of the session.
+
+Rocio Minguillon:
+Yes, I'm sorry, I started doing supposedly Friday and I was here Okay, hello, Sagar. Hi, everyone. Change to English. Okay, Hector, no. The first thing that I wanted to ask, if you, well, today was an important day because it's the first time that the users could access to the, some of the users could access to the, to the, to IVP, that is, that is good because they, they could install the, the add-in finally in their computers.
+
+ At the beginning, that was, seems, seems impossible, but then they did it. And well, I, I couldn't be in the session so maybe Hector if you can share with the rest of the team some thoughts or what do you think, how did you feel with the session and how did you?
+
+Hector Palacios:
+I liked it, I liked it. I feel that they were more committed. I don't know if that is a message coming from above or this that just seeing the system they are more interested, participating. So in the session we were setting up the connection, then when Bastián was doing his part, he was more interactive, and they were really engaged in that part. And at the end they were asking again, how do I do this, how do I do that, you know?
+
+ So they were kind of eager to learn how to use it, at least the exit part that was the most interactive. So that is good, I think. It's the first time that I feel that they are interacting a lot. So I think that is a good indicator for the incoming sessions. We can hopefully keep them entertained. We can keep them like that. I don't know if that's going to be the case, but let's hope.
+
+Rocio Minguillon:
+Yeah, that's good. I don't know, Tim. Any doubt or anything I mean most of them connected then I will ask to the KPMG teams to send us like the analysis of who connected and who didn't so we can have that on hand to see. Then while I was in the first part of the session and they were very bold and they weren't rude or anything so that was also good. Yeah, it was good. So from tomorrow, you have the sessions, Fi and Saul.
+
+ With you, Peledo and Pablo, for now, like for this stage, we are not forwarding you the sessions just because of a bureaucratic thing that is going on with AdNoc, but for next stages you will be participating also. Can we do something about it?
+
+Hector Palacios:
+Can we just share the invitations or they are keeping us from doing that?
+
+Rocio Minguillon:
+No, we shouldn't because if Khaled sees that they are connected then he will complain because he asked us to for now be like behind scenes, but maybe if we, if Bastián or Seba talk to him, they can solve it, but I'm on that with Bastián and Seba. So for now, no, but Bastián and Seba knows and are with that. Okay. I'm really sorry, but yes, this is the thing. They are complaining about having more users accessing to their data, but they know that you're working on it.
+
+ But let us fix it and sooner or not you will have the meetings. Of course, I will also try to share you the records. That's for sure. Okay. Thank you. Thank you very much. So let's go to the activities of the week. There is some topic that I wanted to discuss today. So from the technical side, I already shared, Sagar, the worries about the development of the activities regarding the database issue.
+
+ The last thing was your ticket on Friday and some steps that they have to do, am I right? Today in the huddle, I will try to raise the point of a caution point about them doing the following app, KPMG I mean, and AppNoc doing the tasks that are related basis and not waiting for us to tell them what to do, because we are not in charge of that. So basically, I already talked about that with Hector and Basti, but I don't know, Salar, if you want to add something on that or something that I should take into consideration today to talk with Hadi, Rahul, Kunal.
+
+
+
+Sagar Vora:
+Yeah, I'm not sure if it comes under whose scope. But yeah, like for IBP, we found one solution, means basically the IBP URL was not maintained in the ad-hoc proxy. But for that, they need a ticket to maintain that. So Khalid has raised a ticket. Then I asked Kunal to be behind Khalid to get confirmation on the ticket and make sure they add the proxy, means URL in a proxy. So that will solve the IBP data store issue.
+
+ And second is for SNC. I checked with for SNC setup. So basically, means the SAP currently we are using basic authentication username, password. So instead they want SNC certificate based. So for that we completed the activity on Friday, but we were getting some error. So for that, I checked with SAP and they said we have to generate one certificate from SAP. So I asked either from AdNoc to do that and schedule a call with the hack team basically who perform means who has the access of server who can perform the further activity.
+
+
+
+Rocio Minguillon:
+Okay, but in this case, do we need some kind of intervention from our side?
+
+Sagar Vora:
+We followed basically one document because this is completely new, it's a basis activity, but somehow we tried to manage this. Now we are almost at the last step. Okay, so in case we get error again, some type of error then yeah we have to take some basis guy help like some inputs okay okay so should I wait to or well I can I can okay I can I can let you know by tomorrow because I have already asked either to perform some steps.
+
+ So once he perform and still it's a failure, then I will let you know.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+But I will just make it clear what are we doing and that is not in our side completely. I believe it. Okay. Okay, okay, okay. Perfect. Then from the technical side, I also, well, there is something, Hector, that is related to the navel now. We receive answer from Pelayo regarding how should be the integration between EnableNow and IBP. But now what we were wondering with Sagar is whose responsibility is that if we should prioritize that activity during this week or not.
+
+ I don't know, Sagar, if you had the chance to see how difficult or which type of activities.
+
+Sagar Vora:
+There are some prerequisites like SAP enable now manager needs to be installed. But it's not giving a clear information like where, like in whose system it needs to be installed. And there are some IVP communication set up needs to be done. So I can do that communication set up part by referring that document. But before that, whatever prerequisites are there, right? OK. So I will raise that, that they should manage.
+
+
+
+Rocio Minguillon:
+I mean, we don't have to. Be asking about that prerequisite or whatever because we didn't commit to do the training in any kind of system. So communication settings, maybe we can help later. But first, they should manage all the prerequisites and whatever.
+
+Sagar Vora:
+In the communication settings, some inputs will be required like the SAP enable now URL and all that stuff. But that is the second part, the first part is the installation and all, so I'm not sure about that.
+
+Hector Palacios:
+We can tell them what we need, that's the only thing, how they get it, that's another point.
+
+Sagar Vora:
+I can share that document where it is giving steps, so I can share that document.
+
+Rocio Minguillon:
+like whatever is required. This is the document or there is another one?
+
+Sagar Vora:
+I'm pasting in this group chat.
+
+UNKNOWN_SPEAKER:
+So is this one? I have pasted.
+
+Hector Palacios:
+we need to connect to that system and so on. But so far, I still don't understand what is going to make the difference to connecting or not the system.
+
+Rocio Minguillon:
+I'm not that sure, but it's a requisite from, well, not the thing about being connected. That is not a requisite, but doing this thing on enable now is a requisite for, I mean, that is the training platform that they want to use. But connecting, we're not very clear about the advantages. I also have been looking for it. But if it's, I mean, there is a possibility that you can access to all the content that was there in the central center.
+
+ But let's see. I mean, let's see if the integration and that communication settings are useful or they are easy or not, or how much time do they take? How many times?
+
+Hector Palacios:
+How much? Okay, I'm not in the loop of that email with Pelayo.
+
+Rocio Minguillon:
+No, maybe you're not. I will forward you. Okay. Okay. But what is your concern, Hector? So I can manage because the idea is that you can rest from these tasks and focus on the others. Let me know what do you What are you thinking about?
+
+UNKNOWN_SPEAKER:
+Yes, please copy me in this image. OK.
+
+Rocio Minguillon:
+OK, I will. I will just react a bit after the decision and I will send it to you. OK, because we need to ask about what is the need of connecting with.
+
+Hector Palacios:
+It's like every time we are asking for something she's only sending us links that probably we can find on our own but they are not giving any support on this and this is a ray area this is not something
+
+Rocio Minguillon:
+that we should be doing. No of course but I want Cushwood to be the one that is like complaining about that I mean we just need to deliver the content of the training that is what is like a court That is, yeah, the compromise. So this is like a secondary topic that Kushboo should be the one that is or whoever in KPMG, but I want her to be the one that answers and says, no, yes, give me more.
+
+Hector Palacios:
+Yeah, the point is that I don't like these sessions with this hash Maybe they connect us with the guy that knows enable now. And now it's like, we need to guide them how to do these things. And we are not experts.
+
+UNKNOWN_SPEAKER:
+We are just not open.
+
+Hector Palacios:
+This is what happened to us the last time that we were trying to connect users in this whole new environment. Nobody knows how to do it. There is not like a PDR user guide. So here's where I am expecting SAP to provide someone to connect. No, guys, it's like, are you going to help us? I don't feel that they are helping us.
+
+Rocio Minguillon:
+No, no, of course. Go ahead, Sarah.
+
+Hector Palacios:
+Let's discuss that with Sarah today, but I don't want Sarah to be focusing on this. It's only if Sarah can help us with the communication user. That is the typical thing that they do on IEP. But aside of that, no. No, that's for sure.
+
+Rocio Minguillon:
+No, but I think that today I will make that clear with Gushu in the HADL. I want to make that clear with Gushu in the HADL. I mean, we can do something in IVP if it's needed, and they have to tell us what to do, and that's all. But they, with SAP, should be the ones that are discovering and talking with AdNoc about how to configure this and to have this for the product. Okay, so well, that was one of the tasks.
+
+ Then the other one was related to accesses. Today, Koushbo or I don't know who sent an email, a message that you all the ones that were supposed to, like Hector, Saul, Ray, Sagar. You all should have your access to Borús and to Adnok, to one MP3.
+
+Sagar Vora:
+Yeah, so for Borús, I think what was like last week, what was happening, I think Reinaldo was not able to log in. I'm not sure now that issue is resolved for Reinaldo. But I think they were saying a new Burush VDI access will be required to access to Burush SAP system. So today, I was checking in the Kunal system. Within a VDI, there was one more VDI for Burush. And from there, he was able to log into SAP.
+
+ So he was saying we all might have to request VDI with the access, like SAP access.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+I will ask for that to Tara, of course. Yes. Okay. And what about your SAP, well, the one from AdMob? Do you already have your own access? No.
+
+Sagar Vora:
+No, I'm still waiting for my ID passwords. I tried with Reinaldo's ID password, but it is not working in my system, my VDI. That is also open point.
+
+Rocio Minguillon:
+This, can you please ask OSM team to validate the access? No, we don't have any access. I mean, we didn't receive that. You need a password for one ERP now?
+
+Sagar Vora:
+No, I think they are saying the standard password is the right welcome at the date.
+
+Rocio Minguillon:
+So I think that password should work. Which password? I'm sorry, I don't understand.
+
+Reinaldo Gutierrez:
+The password that I shared with you, Rocio, that's the password for Borussia. Should be the same.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Reinaldo Gutierrez:
+Okay, but it's not working because another thing Yeah, because we cannot reach a bullish system on on the BDA.
+
+Rocio Minguillon:
+Yes Okay, but they want for a month one year P. Is that I mean do you all have your own? Access or are you using the credentials from right now?
+
+Sagar Vora:
+Yeah still No, I don't have my ID available.
+
+Rocio Minguillon:
+Okay, so they have to provide you with an ID?
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Rocio Minguillon:
+That is the way that it works? Yes. An ID and a password? Yes. And you didn't receive any of that in your...
+
+Sagar Vora:
+No, I haven't received it in my email or anywhere.
+
+Rocio Minguillon:
+And the rest of the team Neither, I mean, you, Hector, Saul, I mean, she told me that you already have your access, but no, the answer is no.
+
+UNKNOWN_SPEAKER:
+Am I understanding well?
+
+Sagar Vora:
+Question for me.
+
+UNKNOWN_SPEAKER:
+Yes, for everyone.
+
+Rocio Minguillon:
+Yeah, I don't know.
+
+Sagar Vora:
+Yeah, I think user IDs, I'm not sure. It's not available, so we need that.
+
+Rocio Minguillon:
+Yeah, and here it is. Is not the user ID, like shared. This is the user ID, no? Like Yeah, this is the user ID, but it's not available for me. For me it's not there you see. What is the user ID and password? This is Arun. Yeah. OK. So Vivek is the one that I have. And Saul, you too. Okay. Okay. Okay, okay, okay. Right. Well, this is clear. I will put this to me. Okay, then there is another thing that I wanted to highlight.
+
+ Sorry, Ray, quick question. Did you share both of the FSD or the one of Wave 1? The Wave 1.
+
+UNKNOWN_SPEAKER:
+Amazing.
+
+Reinaldo Gutierrez:
+Yeah, we need to review that with the team to see if everything is OK. I sent that to Bastián because Bastián wanted to review it first. I didn't get any comment from him. Maybe he hasn't had the time to review it. But this is the Angnaut team chat, so maybe Hector or someone from the team want to check it out and let me know what you think.
+
+Rocio Minguillon:
+That would be great. So it's shared with us, but not with KPMG yet.
+
+Reinaldo Gutierrez:
+Yeah, yeah, because we need to review all first. Let me find it. Yeah, there you are. Okay.
+
+Rocio Minguillon:
+Okay, I will ask them right now because they are going to ask us about these during the
+
+UNKNOWN_SPEAKER:
+Yeah, okay. Okay, okay, okay. Thank you very much.
+
+Rocio Minguillon:
+And then, Ray, are you going to progress on the web too?
+
+Reinaldo Gutierrez:
+document during this week, or how do you do that? Yeah, that's the idea. I will start doing that document. I need to talk with you, Rocio, to review the Gantt and find the best timeline to perform the SSO configuration for CIDS.
+
+Rocio Minguillon:
+Perfect, yes. Whenever I'm free to do it. Yeah, it will be after the huddle.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Rocio Minguillon:
+Yes, of course. Okay, amazing, amazing, amazing. Where is the FSD here? Ah, here it is. Okay, let's remove Sarah and let's put her. Let's ask him. Okay. But this is the way one is for today. So I need to ask. Okay. Fantastic. Then the feedback document for UT sessions. I don't know. I'm not sure if they want that to be a backlog or whatever, Hector. So I will ask. And then I let you know what is the purpose of this because I'm not really sure.
+
+ But do you want me to push them to work in any way so I can recommend that for them or what do you think, Hector? Because I think that this is kind of a place where they want to put like the back logo things, but also their errors. I mean, as I understand, they want to put everything here. But I don't know if that sounds as a good idea for you, so I can know what to push.
+
+Hector Palacios:
+It seems like an open point, so I don't know why they would like to have it in a separate file to the one that we already have.
+
+Rocio Minguillon:
+OK, that's a good point. Perfect. I will take that into consideration.
+
+Hector Palacios:
+And I don't know what expecting from us, they should be taking note on this, not us.
+
+Rocio Minguillon:
+We are presenting.
+
+UNKNOWN_SPEAKER:
+Perfect. Open point versus not. OK.
+
+Hector Palacios:
+Usually, I don't think that is a good idea.
+
+Rocio Minguillon:
+You have the points in many files. Yeah, that's right.
+
+UNKNOWN_SPEAKER:
+Perfect.
+
+Rocio Minguillon:
+Perfect, perfect, perfect. OK, then another point was that I scheduled a meeting. Saul, Pelayo, and Pablo, I scheduled a meeting for tomorrow. Also, Hector, for you to know, you don't need to be part of the meeting, but I just copied you to be aware of it, where I will just provide you with the last test alignment on how it's going to work, the content development, and also the the key users training.
+
+ So I want to share with you a little bit about that, and then talk about new activity regarding this point that we should focus when we have time during this week or next week. But I just want to start from you that 15 to 20 minutes to talk a little bit about this because we need to start thinking on this, but it's just about that. And I know that Saul is going to be in charge of the training, so I invite it to you.
+
+ Is that OK? OK. Amazing. Well, Tim, anything else that you wanted to share? Well, of course, yes.
+
+Arun Singh:
+Go ahead. Yeah. So after you assigned a task related to the business roles and authorization, I believe. So basically how to begin with and What are the you know reference? File or materials that you know I could use. In order to start this activity.
+
+Hector Palacios:
+Um? Let's just take a minute after this session, please.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Okay, amazing. And, of course, I didn't talk about this, but, of course, the priority for the functional team is the unique testing that we are doing these days with the users. So, if there is any issue or any problem that you are having with the different tasks and the time, as we have meetings the whole day, please let know and so we can find a way to manage it. But if you see that you are not being able to achieve everything, let me know.
+
+ OK. OK, thank you. Bye bye. Thank you, Jamie.
+
+Reinaldo Gutierrez:
+Thank you, bye. Bye guys. Bye guys.
+
