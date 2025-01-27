@@ -1,0 +1,837 @@
+UNKNOWN_SPEAKER:
+Hi everyone. Hi guys. Hi team.
+
+Mudit, Khushboo (UAE):
+We'll give a few minutes for everyone to Thank you for joining.
+
+Fakhouri, Mohamad:
+I can only attend the first half that I have an appointment.
+
+Mudit, Khushboo (UAE):
+Hi Arun, can you check if, yeah, Bastian's here. Also if Hector is joining.
+
+Arun Singh:
+I think he'll be joining in a few minutes.
+
+Mudit, Khushboo (UAE):
+Let us wait for another one or two minutes.
+
+Patel, Rahul:
+Let's start. Are we waiting for anyone? Just Hector, but I think we can start.
+
+UNKNOWN_SPEAKER:
+How do you want to start?
+
+Patel, Rahul:
+Do you want to start with your list or you want to start with drilling? We have Arun as well and Bastian as well.
+
+Mudit, Khushboo (UAE):
+Let's do drilling first, then we start with other topics when we have Hector also on the call.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+Arun, you there, right? Yes, sir. Let's align on the billing template, because on our Thursdays call, we said we'll send it to them on Friday. But it's Monday, and I also need to send it to Momodarshan. So we could not connect last week.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+Do you want me to share my screen? Yeah, you can share the screen. Essentially, what I want to do is go through the list, and we also need to put some data, right? So you have data as well. You have the data files, what we have. So we just need to put some well-planned, and for some well-planned, put some material for at least category OTCG, what we have for. OK, let me share my screen. Yeah, let's work on this together so that we can work that's putting things so that by probably in half an hour we should be done with the file which we can send it across to AdNoc.
+
+
+
+UNKNOWN_SPEAKER:
+Okay, just give me a second.
+
+Patel, Rahul:
+Can you see my screen? It's showing up. Okay. Yeah, so can you go to the mapping file what you prepared? Yes. Sequence ID is something. Let's go one by one. Sequence ID is something. Yeah, well, initial name, company, and field. The company is, yeah, field is OK.
+
+Arun Singh:
+So in one of the file, I saw, I think it's from the onshore where they have this well tower as well.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Patel, Rahul:
+Because I've not seen well tower anywhere. Just give me a second.
+
+Arun Singh:
+Yeah, yeah, just give it.
+
+Arun Singh:
+This is the other file that was shared before. So if you see here, column D, weld tower, and weld type, category. Weld, tower, category.
+
+Patel, Rahul:
+But we've not discussed this as part of any of our discussion. That is an important field. So do you remember the Excel sheet I've shared where we looked at all the critical fields? Let's not put it unless they need it because I don't think it was discussed or highlighted by anyone as an important field. Let's highlight this as red.
+
+Arun Singh:
+Basically we don't have sequence ID.
+
+Patel, Rahul:
+in the data which is fine. I think we know that they already have it. So I was talking about only weld tower, highlight weld tower. I don't think it's a relevant field. Weld type, required zone, what is requested zone? Can you go back? This is the required zone. So this is basically all the additional attributes that Offshore team is using from DPC system. Okay, so do you have the one for onshore as well, this DPC?
+
+ So what you've done is you've combined onshore and offshore? Yeah, yeah. So this is just a master field, yeah, for all the commodities. Okay, so required zone, rig. Can you put a completion code, additional completion code as the start of, because this is a well-attributed, right? So you are having material codes and you're putting So, let's put something which is related to well in the initial text, right?
+
+ Wellhead code. Now, why do you need a wellhead code separately? Because you have category, right? They have this wellhead code. I don't know how people kept the wellhead code as a part of wellmonstrator. It should be part of wellmonstrator, right? It would not be, right? It would be part of the bomb. There are two things. One is something which is well and second is something which is EWDP. So, basically it is a derived field in EWDP.
+
+ So, initially it should bring completion code and then additional completion code as one of the field. First completion code sorted out. Let's remove this unless this because we have we are providing category right and category wise we are seeing metal code but they have all the big well head code values so I don't know because if we add well head code then we also need to add other codes right we are only adding valid code but then adding not other codes so either we add all the codes or we add none of the codes correct correct so this one okay we have now category a casing design is again attribute of this part from where casing design is attribute of SAP material this one.
+
+ But then casing design is only for OCTG material not for everything. Correct. So we don't need on casing design as well. Because now we don't care about because all this information is required because when we are trying to fill.
+
+Arun Singh:
+So now it will be covered as part of category right OCTG.
+
+Patel, Rahul:
+Yeah so we should we should put category and then we should put generic material code. But what is material type type. Material type.
+
+Arun Singh:
+I don't recollect the example now.
+
+Patel, Rahul:
+Type I'll come back on this.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Patel, Rahul:
+Uh, old material code, material requirement, date, a quantity. We are missing two fields. Well started and well ended. So initial section only before materials. Right only not necessarily right I am starting a well on a certain date but for a same well the well goes to the phases so the will ends so I'm starting first of jan and I'm ending 30th of june and in between I need materials for the same and every material may have different date right yes yeah so we need the well started and ended also as part of so that with that well started and ended you can essentially show well level plan with the same data right so with the same data you can show well plan as well as material demand per well so put it in the initial section the initial section should be everything which is related to material before you get into material category up to column G is everything related to material well right and they want to do with it.
+
+ Should I just right start it? And I said with a dick mutter type, old mutter code, scroll to the right. All right, this looks OK. OK, so now let's pull up some data. Let's add a few records from onshore and a few records from offshore. You have, this is material allocation branded, but do you have well-planned for offshore? Yeah, so just take, just filter out for one of the completion code to be, let's put it for two weeks.
+
+ Well-typed, just take well-typed, add two well-typed, so that we know. Category 1 slot for New Horizons. So just take one well from New Horizons category. So you have one well from slot and one well from New Horizons. 40 and 20 and you can take ZK. Okay, let's take this.
+
+UNKNOWN_SPEAKER:
+Yeah, okay.
+
+Patel, Rahul:
+Slot, new record. Yes, started, ended, company. Completion code okay copy capture all this information into so let's put the sequence which is okay sequence we don't have it right yeah yeah so let's keep in the sequence they have right but it will be easier for them also to call it because they already have the sequence right they have a field of Thank you so much.
+
+Patel, Rahul:
+Break field tower. Take out water depth.
+
+UNKNOWN_SPEAKER:
+Started and it okay.
+
+Patel, Rahul:
+Go back to the file once again. Completion code is missing.
+
+Patel, Rahul:
+more than so additional completion right additional completion do you have that yep extra requirement are you sure this is additional completion code extra requirement yes this is extra requirement they call it additional completion all right because I thought like to be there will be a code to it no no So that is what a sort of textual name. Yeah. For you also to copy data, it becomes much easier.
+
+
+
+Arun Singh:
+Yeah, correct. A little cosmetic change later on.
+
+UNKNOWN_SPEAKER:
+What is this one? I don't know.
+
+Patel, Rahul:
+What is this? Yeah, I think we don't need slot.
+
+Arun Singh:
+We just need completion code, additional completion code. We can take off slot.
+
+Patel, Rahul:
+We don't need it for both, right? Yeah, it's the only form. OK. Now. Our rest of the fields are category, material. Yeah. Category should be part of well, right?
+
+Arun Singh:
+No, it's not part of the material.
+
+Patel, Rahul:
+No, it's part of well, right? It's not really coming so that's well category and we need a material category so you can say material category other than category so instead of type I don't recollect what exactly why exactly I have put a material type yeah the material category is essentially otcg that yeah the four categories yeah it so now now just take this one well and push it to the file Sorry, what do you see?
+
+
+
+UNKNOWN_SPEAKER:
+For the first, we will go to MAP file.
+
+Patel, Rahul:
+Let's see what are required.
+
+UNKNOWN_SPEAKER:
+There is no more.
+
+Patel, Rahul:
+Let's look at other way around. Let's look at what's the value they have. Is it there? Yeah. Slotted priority, that's correct category. Started ended, just change the started ended.
+
+Patel, Rahul:
+completion code is also to be additional if the requirement for an hour in slander that's it okay now for this for this what are the materials just filter it by that right now put the materials right copy all the materials Let's do one thing. Copy all the metrics and the quantity. Copy and transpose it. Copy everything. In the new sheet. Put filter and remove everything black. Some of the rows has.
+
+
+
+Mudit, Khushboo (UAE):
+two material numbers.
+
+Patel, Rahul:
+Let's do remote duplicate. So essentially this becomes a sample right that this is the OCTJ model for this well. We may not have all the model but we need other categories as well. Yeah put filter select.
+
+Patel, Rahul:
+But there are I think some spaces. Some blank one thing select the entire column and put filter. Yeah. You put filter and now take out the blanks. Put filter on both the side, both the columns. Are you filter by blanks? Uh remove filter filter by blanks take out select this select all or deselect by blank yeah this select remove all only select by blank select all okay give me access can you give me access no I cannot take control so Under the filter, go to click filter.
+
+ There is option select all. First select all. Remove the select all. Yes, now only select the blanks. Okay, delete row. Delete all rows. Select all and delete rows. Select all. Not able to delete. No, no. Just give me a second. Yeah, select all, yeah, and delete rows.
+
+UNKNOWN_SPEAKER:
+Right, click delete rows. I think I'm deleting everything.
+
+Patel, Rahul:
+No, delete rows.
+
+Patel, Rahul:
+A clear filter. Here you have materials, right? Do you hear me? Yes. Is there anything we need to check?
+
+Hector Palacios:
+Because we have a lot of the team here and I don't know if Vivek needs to know this, for example. Also, Bastian and me, we are focusing most on the session for tomorrow on Wednesday. So I think that we need to do a better use of the time. So is it something that you can check with Arun in a separate session? Can we check what is important now? Correct, correct. We can do that.
+
+Patel, Rahul:
+So that's why I asked at the start, how do you want to do it? So I think everyone is okay. So I agree, since most of you are here and we don't want to waste your time. So Arun, you understood right what we want to do. So probably once you, can work once you're done with this ping me personally and then we'll connect and try to clean it up and send it across that neck okay so we've done this for one well the second well also you'll have to do the repeat activity so that for every well now you know the materials now we have taken this for offshore we'll need two more materials for onshore similar two wheels two more wheels one onshore all
+
+Arun Singh:
+right but can you give me a like I don't know uh which file I have to refer for onshore I'll go through my inbox okay yeah but if I'm not able to find uh I'll ping it to you okay
+
+Patel, Rahul:
+sure sure no problem okay okay yeah thanks so I think then let's start with the question from from open points perspective which we have listed yeah let me share my screen so quickly bastion Hector, before Khushboo goes through the files, Friday I've sent you an Excel sheet with the, what we call, the supply network. So, I hope, I don't know if you're spending time around it, if not later, whenever you have time, have a look at it.
+
+ This supply network we've aligned with AdNoc, probably this needs an internal review before if we have any other questions to go back to AdNoc.
+
+Hector Palacios:
+All right, I haven't seen that. Did you send it on Friday?
+
+Patel, Rahul:
+Yeah, I sent it on Friday and it's in chat, our GoSiem KPMG chat.
+
+UNKNOWN_SPEAKER:
+Ah, it's in there.
+
+Vivekanand Gajula:
+Okay, Vivek, are you there?
+
+UNKNOWN_SPEAKER:
+Yeah, Hector. Can you take that appointment?
+
+Hector Palacios:
+Me and Bastian are full for this week. So, can you check? I've seen that Rahul something related to the supply chain network on this chat of KPMG so please check and let's see if we it makes sense to what we were thinking we were discussing yeah so on high level we
+
+Patel, Rahul:
+have two types of supply network so I'll not spend more than a minute there are two types of supply network at NOC is confirmed so network one and network two and then which agencies are having this kind of network which allows us to know where is the storage location and where is storage location not here so Network 1 essentially depends upon the storage network as the MRP area, storage location, and Network 2 does the planning happens at plant level.
+
+ We've assigned AGCs to both the network. Also, the third sheet has the allocation which AdNoc wants to do within the company, so they've given us some rules on at what level, depending upon Network 1 and Network 2, between the inter-company and intra-company planning logic, provided. Just have a look at it.
+
+UNKNOWN_SPEAKER:
+Yeah, sure. OK, let's start with this excerpt.
+
+Mudit, Khushboo (UAE):
+Firstly, Hector, I think you created the second sheet for the open points, was it? Was it you?
+
+Hector Palacios:
+Yeah, yeah, I think that this one is not a good idea to consolidate here because this like a table that is dynamically updated. All the rows are going to change positions and so on. It's better to take this and copy into another sheet, but to copy is a clean start. If you use the same one, the next time that I do an update, it will be a mess.
+
+Mudit, Khushboo (UAE):
+What kind of update do you do to the sheet?
+
+Hector Palacios:
+It's a query, because this is a query table that is connected to another table. An iteration in the middle. So, whenever I'm putting any additional point that we need to discuss with you guys, this will be updated and the positions are going to change of the issues.
+
+Mudit, Khushboo (UAE):
+Okay, but then I wanted to have a single sheet because I may also add open points to this list.
+
+Hector Palacios:
+Yeah, I guess that is better that you take these points and you take it to your table. You can maintain the format, whatever, but it's better to take this and take it to another table.
+
+UNKNOWN_SPEAKER:
+That's the best approach.
+
+Mudit, Khushboo (UAE):
+Okay, all right.
+
+Hector Palacios:
+For now, I will not update so we can keep working. Meanwhile, you take this into your table, I will keep it like this. Otherwise, if I do the update, probably I will do a mess.
+
+Patel, Rahul:
+I think what we did a prior day is that we looked at this table with the thought that we'll update the same table only. I think we updated the content of this table as well, right? Yeah, probably. So let's go one by one. Probably let's focus on demand and inventory. Considering that that's the sessions we're going through. Let's go one by one, first with demand and then with inventory.
+
+UNKNOWN_SPEAKER:
+Yeah, MRO, MRO.
+
+Mudit, Khushboo (UAE):
+Okay, these are all the points we have open for a model chemicals and demand. The first one to process just now consider automatic termination.
+
+Hector Palacios:
+This is this is related to the new material planning. Yeah, yeah, this is an action that's not going to change this week.
+
+Patel, Rahul:
+Then we have material hierarchy. This one on Friday when we were about the supply network. Murugan also confirmed the hierarchy and that's part of the file which I've shared. So maybe I can take a minute to go through the file to show where the hierarchy is and that's what they confirmed. So probably we can use this information for tomorrow's session as well to make sure that we are all aligned You have that open.
+
+ So, essentially what you what the point you were mentioning is correct, which means that they don't have a really. So, if you see on the right hand side network to I think to go to supply network to. On the right hand side is location, company, plant. So these are the location hierarchy they're expecting. On the right hand side, right section, yeah, this. Yeah, yeah, correct. Can you scroll? So you can probably type in a hierarchy so that it's relevant for everyone.
+
+ So it got discussed in the same meeting. So we simply said, so what they want is from a location perspective, they all care about company, plant, and storage location.
+
+Hector Palacios:
+Okay. And this is in general even on onshore companies everything they want to have every single storage location is what they have today yeah so so storage location there are two two types of uh hierarchies so supply network one will
+
+Patel, Rahul:
+have storage location because mrp areas are defined as storage location level and supply network two are the companies where the mrp areas are not at location level but plant level so if you see on the left section mrp area level plant and for gas refining, sorghum, gurus, offshore, aliasar, for all these group companies the MRP area is at plant level which means your the location hierarchy local company code and plant and then the MRP area is equal to plant so you'll have plant repeating at MRP area.
+
+
+
+Hector Palacios:
+Okay so for some companies is the the lowest level is plant?
+
+Patel, Rahul:
+Yes and these are one, two, three, four, five, six companies the lowest level right all right and then supply network one if you go to supply network one the lowest area is uh can you go to supply network one the lowest area is mrp area where the mrp area every storage location has a different mrp area because they do planning at and the companies which are reliable on are onshore drilling distribution lns and alder these are the group companies where the uh lowest area is plant, sorry, storage location.
+
+
+
+Hector Palacios:
+Okay, but for the other ones, can you give me an example of the ones that are at the plant level?
+
+Patel, Rahul:
+Yeah, so it's written in the supply network. Go to supply network 2. I've mentioned the name of the companies on the left. See, these are the name of the companies.
+
+Hector Palacios:
+So for Buruj, for example, the plant is MRP area and the supply chain network is defined at plant level. Correct. Right, great, great.
+
+Patel, Rahul:
+So that's what we discussed in Align. So it's important, I think, for you to align. This gives a lot of clarity on. And so essentially, they want the location hierarchy to be in this fashion only. So they have location, company, plant, and location. That's the location hierarchy. And for material, they have two levels of hierarchy only. Planning group there's mrp control name and mrp control so can you scroll to the right do you know to which AGC belongs the plant 2101 we will have that mapping right as part of our we had this right 2101 go to go to the the same folder where you were before from where you pull this fight on the teams here go to general yeah and there is something called data there is there is a data data folder design workshops go to Go to Design Workshops.
+
+ Document from our docker. OK. I know where the files are. I think those are from adobe. On Ardnoxite.
+
+UNKNOWN_SPEAKER:
+Vivek, you can speak up.
+
+Hector Palacios:
+If you wait, you are not going to talk. Yeah, yeah.
+
+1Vivekanand Gajula:
+Rahul, you know, I have one question. So whatever AGCs, you know, that fall under, you know, supply network 2, for those AGCs, the lowest level is plant. Okay, that I get it. Next to plant, you know, under, you know, those AGCs, we have also put SLOG. So what exactly is that?
+
+Patel, Rahul:
+You have SLOGs, but the planning is not happening at the SLOG level. So by default in SAP, you always need a SLOG. Materials are stored at SLOG level. But then the planning does not happen. So if you can, do you have that file open? While Kushiku is looking for that storage location. Bhasin will get back to you on this. You also have that data available. You can check with Sagar. Sagar has clear understanding of plant and company code mapping as part of the extraction.
+
+ So if you scroll up here, so Vivek, I put storage location because so if you see PO at plant level receiving at any storage location. So storage location does not matter from where I receive. I do planning at plant level, PO at plant level and receive at any location. There can be more than one storage location. Yeah, but while sending the PR right to S4 right, it is going to pick up the default storage location?
+
+ It is going to pick up a storage location which is mental mask right. So when you receive Every muttel has a storage location in muttel mastername, mrp2. So the planning still happens at plant level. And within plant, a muttel can go to a specific storage location depending on the plant configuration. That data is available as mastername. Can you scroll to the right? Going to hierarchy. Hierarchy must be connected to the point for a model perspective, they have this table, MRPController, name of the MRPController.
+
+ So what they're saying is, the group would be first level is chemical. Now, if you see, there are chemicals IC1, IC2, IC3, IC4, different MRPControllers are named, right? So what they want is the grouping, first level of grouping is chemical, and second level of grouping is exact MRPController. That's how they differentiate material today.
+
+UNKNOWN_SPEAKER:
+Sorry, it says company. Sorry?
+
+Hector Palacios:
+I'm talking about two things.
+
+Patel, Rahul:
+The first row is the location hierarchy, second row is the material hierarchy. These are two separate sets of data. I've just put it one after another. This is location hierarchy. So I've got input for both location hierarchy and model hierarchy.
+
+Hector Palacios:
+And that chemical, drilling, mechanical, what kind of hierarchy is that?
+
+Patel, Rahul:
+That's the, they call it planning group.
+
+Hector Palacios:
+Planning group. Okay, now I see it. I saw that was below company.
+
+Patel, Rahul:
+Yeah. Yeah, and then MRP controller code. So, essentially, code becomes the next level. So, within a group, there can be 10 different MRP controllers, right? So, that's how they see it in their system. So, this is what I got from Google. So, MRP controller is a material hierarchy?
+
+Hector Palacios:
+Yeah, it's a material hierarchy.
+
+Patel, Rahul:
+So, every material will have one unique MRP regardless of the company? It is part of the master directory. So, every plant will have a different MRP controller for the same material.
+
+Hector Palacios:
+So, then MRP controller depends on material and location? Yes. Okay. All right. That makes sense. And the MRP area?
+
+Patel, Rahul:
+Area is not here. Location ID, SMRP area for us. Yes, yes. So, if you see, probably what you can do is you can create a separate row between the two because we have not put an example for it yet. So, for material hierarchy, I have put an example. For this, I have not put an example. So, basically these are two separate data. So, if it is supply network 2, you will only have planted with supply network 1.
+
+ You will have Okay.
+
+Hector Palacios:
+Is it clear for us where to get this information? For example, MRP controller, I know we know from where?
+
+Patel, Rahul:
+Yes, yes. Controller is part of MARC, for a material plant combination. Can you share the mapping with us?
+
+Hector Palacios:
+I would like to have a couple of things. The mapping, so Sagar, take note on this and start working on that. Yeah, it's a standard field. It's a standard field. It's a standard.
+
+UNKNOWN_SPEAKER:
+Okay. Yeah.
+
+Patel, Rahul:
+So, standard MARC has this. Has this MRP controller. Can you show that quickly? No, the MRP controller, I'm pretty sure.
+
+Hector Palacios:
+The planning group, I didn't see it.
+
+Patel, Rahul:
+The planning group, there is another table. Can you give dump once? That MRP configuration table where they have all MRP and the description of all the MRP controllers.
+
+Vivekanand Gajula:
+Rahul, one more question. Now, for whichever AGCs the planning is going to happen at the SLOC level, in those cases, let's say if there are multiple SLOCs that are assigned to a plant, do we know which SLOCs do we need to bring it on to IVP? All the SLOCs will have, so there is a configuration table where mrp configuration we have it but for example let's say a plant has you know 10 s blocks and maybe out of those 10 you know only four or five you know are relevant you know so if we bring all 10 then I think that would increase the master data volume as well right once it gets multiplied you know with materials at this point of time what they
+
+Patel, Rahul:
+recommend is to bring everything because they will because there are hundreds of plants and for every plant there are quite a few locations. So it would be difficult to tell from their perspective what they'll say. Going at every plant level, they'll not be able to confirm within a plant how many stored locations are there. And they want us to essentially take it from system and give it to them as an input.
+
+ So let's take an example of a plant. Now within a plant, if you go to MRP area configuration, we'll get to know what is the MRP area configuration and within MRP area which all locations are combined together. So if there is an MRP area configuration which essentially combines storage location or a specific storage location is planned separately then only that storage location is only supposed to be planned separately.
+
+ So if it is there in S4 HANA it should also be there in IBP. That's the logic.
+
+UNKNOWN_SPEAKER:
+OK. This is the table.
+
+Patel, Rahul:
+You're limiting 50, but you can give this information T240D. This is the table for MRP controllers. It has all the details.
+
+Patel, Rahul:
+E240D. It is for not for. Yeah, it has plant as well, right? But the allocation to material would be from Marcy. So the name basically they want a grouping by name, right? Chemicals, drillings. I think what Morgan said they don't have grouping in SAP. Yeah, so they want us to look at name. So if you see name that a chemical slash IC1 right chemicals IC2 so they want the grouping all chemical as one group.
+
+ Yeah, so this is the table to get that data. Do you want this table? Offline Hector we can extract and give it to you.
+
+Hector Palacios:
+The point is that I also I don't have the market controller but yes if you can provide this table yeah please.
+
+Patel, Rahul:
+Because the interface is not working so could you download this and send it across to them so that while the interface will be worked upon by say Sagar Hector can use this data for next uh whichever session is having
+
+Vivekanand Gajula:
+rp controllers uh so hector you know as raul is saying you know if uh there are uh uh you know I mean whatever s laws are assigned you know to a plant we need to uh uh bring you know those s laws into IBP then I think we'll have to think through like you know how do we uh create this application chain network because for the one that are storage location level yeah that's what there are few agencies which are a storage location level few agencies which are not a storage location level right yeah I mean what are going to be the rules you know like how do we know like from which s log to s log you know the movements are happening so that is something which will have to to improve it.
+
+
+
+Patel, Rahul:
+But Hector, as discussed, their expectation is that every SLOC should be able to fulfill every other SLOC within a plant. So if you go to the third tab, Khusbu, inter- and intra-company planning, so this is where they are saying that the planning level one basically is at a SLOC level, which means within a SLOC, the model should go. Planning level two is plant, which means within plants, the metal should move.
+
+ The planning level 3 is group company, which means the plant within the same group company, the metal should be moving. Even in the same company? Yeah, so level 3 is group company. Even in the same plant? So even in the same plant, you have storage location, right? So if the storage locations are planned. So if you look at supply network 1, the storage locations are separate supply areas. Which means every every supplier has plant separately which means they would like to optimize inventory within same within different store location of same plant so that's the planning level one same physical plant yeah it's the same same plant physically no it's the same plant in SAP but they are still locations yes yeah makes sense so supply network one so I've converted supply network 1 and 2 into this definition here so that we know that if AGC supply network 1 type then the planning level 1 would be within store location level 2 is within plants of the agency and level 3 is basically within the group company so at this level optimization of the inventory before it goes out for external procurement.
+
+ Now the ultimate level is you buy from external vendor but before you buy from external vendor there is intercompany where they want us to look at if the store material available in different group company as well but uh the point was uh what uh adnog is saying that within the same company it should be by default sto which means sto gets default priority you should not be asking or approving or getting approval from anyone IBP should by default confirm this sto whereas when it is outside group company it's a proposal and someone has to look at it because the group company may have different reason of having extended inventory which means that this planning has to happen as
+
+Arun Singh:
+an user confirmation at level 4 okay so inter company confirmation between the same company no confirmation yes okay now also I see in the s-lock table right we probably have a list of s-lock which are relevant to a drilling plant I believe 1201 and I think 1401 so do we need to bring s-lock for those uh respective plant as well let's go to supply network one within supply network one if it is these are the onshore is what
+
+Patel, Rahul:
+they have this planning at a slot level. So every link site here is a basically storage location. A well, a site, a field. I don't know how they would every regular storage location. So this is the distribution between agencies. Does that answer your question, Arun? So, basically in drilling, we are doing planning at plan code level, right?
+
+Arun Singh:
+Not at SLOG level, right? Both for onshore and offshore.
+
+Patel, Rahul:
+Now, when we are doing MRO we're doing at supplier level for drilling materials at plant level. So we'll have to differentiate that level between when we're doing planning of drilling material versus planning of MRO material. Correct.
+
+Arun Singh:
+So in that table, in that S4 table, I saw the SLOG relevant to the drilling plant as well. So that is why I was asking, do we need to bring SLOG for those as well? Will it be consumed in other process MRO something which I'm not familiar with.
+
+Patel, Rahul:
+So drilling and MRO are two separate processes, let's not combine both. So whatever happens in drilling happens in drilling, whatever happens in MRO stays in MRO. Okay. All right, so Hector with this your hierarchy question gets answered?
+
+Hector Palacios:
+I mean we have some hierarchies for the some additional hierarchies but we still But that's the point.
+
+Patel, Rahul:
+They don't think they need more. So the point we have discussed here, you can have a look at it and see if we can add MRPController and MRPControllerGroup as the hierarchy. That's what they're interested. We can show more if we have and get their confirmation. But essentially what I understand from Murugan is they don't need like their work distribution, the people which are allocated to hierarchy.
+
+ Are this way only. They distribute their work at metal group level, which is drilling or whatever it is, mechanical, electrical, and then the second level of distribution happens at MRP controller. Every person is responsible for one or two MRP controller activities.
+
+Hector Palacios:
+That's great for rule definition and all of that, but as soon for reporting, we are checking if we need more material, hierarchies and Murugan said that Jagannath and Abdul Latif were going to take this point.
+
+Patel, Rahul:
+By the way, Jagannath and Murugan only were part of the discussion when he shared this hierarchy. So probably we can refer back to this conversation and we can get this point close with them. But at least I just wanted to make sure you are aware of this input which was discussed before our call today. This was discussed on Friday.
+
+Hector Palacios:
+All right, so I just wanted to share what is discussed from hierarchy what additional things we need to talk tomorrow.
+
+Patel, Rahul:
+location we've shared the hierarchy for sure we can check that hierarchy during our workshop tomorrow and day after what additional hierarchy you need equipment hierarchy is what you need as well yeah yeah we need to discuss equipment we need to discuss some if there is something else material aside of the one that we take next steps here is that material and uh location hierarchy shared by adnoc additional can be discussed during workshop and then let's take an input on additional hardware like equipment and what other things here.
+
+ Input shared by AdNoc to be reviewed in the session, to be reviewed in the design validation. By the way, Hector, Bas and everyone, they want us to call this session as design validation and not a unit testing because we are not connected to their development environment. We cannot call it officially. We are not, from an S4 perspective, we are still taking data from Sandbox and Sandbox is not a unit testing environment as per Khalid.
+
+ So we may call whatever we need. The agenda of workshops will not change. What we call only that changes. Okay.
+
+Hector Palacios:
+For tomorrow's session, is all the companies are invited? Yes, all the companies are invited. Great, great. Okay, let's continue this point, but I think that it's great that Abdullatif and Yaganand have this task. Instead of like pushing to the end users, they should be responsible to defining what are the hierarchies.
+
+Patel, Rahul:
+Yeah, I'm sure that there is some there is going to be something else yeah okay this that's the hierarchy point we want to discuss I think reservation and general maintenance so all these three we said we need to discuss with ADNOC yeah let's discuss this with ADNOC where uh so by the way hector the general maintenance are you trying to uh right now I see there is only preventive and corrective so I think probably after this discussion we
+
+Hector Palacios:
+may have to have general mentors as a separate planning book no no I think that it needs to be part of one of them or is or we know it or we don't know it that's the question yes so
+
+Patel, Rahul:
+from what I understand it cannot be but we will discuss and confirm that but I I feel that it would be different. It would not be preventive, it would not be corrective, it's a separate planning.
+
+Hector Palacios:
+So the idea is to forecast what we don't know and what we know we put it as a plan. So if general maintenance is a plan then we can use it as a plan and we can treat it as that but the segmentation idea is similar to corrective because we don't know, we consume directly after.
+
+Patel, Rahul:
+So basically general maintenance it's similar to corrective but the items are not MRO items. These are general maintenance items, which are general items.
+
+Hector Palacios:
+Well, then it needs to be on the corrective part, or what we don't know, because there is no purpose of having different lines for something that we don't know. We need to consolidate that as a unique forecast, like for chemicals in that case.
+
+Patel, Rahul:
+So let's have this conversation. Session, I think maybe we can also have this topic discussed tomorrow as part of the month or one of the sessions of the month where we talk about general maintenance.
+
+Hector Palacios:
+Okay, please have this sheet in hand so tomorrow we can evaluate. Maybe we can put a tag there, like tomorrow, check tomorrow, I don't know.
+
+Patel, Rahul:
+Yeah, I'd probably end up the session every the session. Anyway, we go through those items, right? Probably in one of the sessions, we go through this as an open item. Good, good, good. Okay, the last point. I know this is something which is not at all priority, low priority, but I would ask someone to like have a look at it because it has come from asthma. It will create noise even if it is not important.
+
+ And yeah, so whenever or whoever can take this in parallel who is not right now working upon any of the important things, probably you can Yeah, I would take that as an open point for later.
+
+Hector Palacios:
+Let's keep it there, but I think that we should treat it as a low priority until we have some.
+
+Patel, Rahul:
+All right, next let's look at MRO inventory, not development, because not drilling, not drilling, only MRO inventory. Because next week workshops are all Yeah, invented it up. So, this score metric, then it would be validated through UT, right? I will propose something initial and they will help me to find tools. Correct. Order, EOQ, we are taking this definition, that description, Kojbu is leading, so we'll continue working on it.
+
+ So, then the master will be higher up.
+
+Hector Palacios:
+Continue with the EOQ and if there is one that doesn't make sense and we can check what we do and intermittent data.
+
+Patel, Rahul:
+Agreed because we don't have any other data at this point of time. So let's first define what is EOQ. Let's be able to calculate EOQ. Probably this week we should be able to finalize the definition of EOQ. When do you think we'll be able to close this this week?
+
+Mudit, Khushboo (UAE):
+I have something prepared we can buy.
+
+Patel, Rahul:
+This is after the call. Then master data hierarchies. Sorry, before we move to the next one, what does this mean?
+
+Mudit, Khushboo (UAE):
+Definition of for order size and intermittent demand missing.
+
+Patel, Rahul:
+So Hector has a point that the EOQ what we are calculating is used only for continuous demand and cannot be for intermittent demand, whereas ADNOC policy does not differentiate EOQ definition for continuous consumption versus intermittent. So what we are saying is that since we do not have a differentiation, we'll continue with ADNOC's policy of using the same EOQ definition for both intermittent and continuous demand, unless Hector is able to find something better.
+
+
+
+Hector Palacios:
+Yeah so far it doesn't seem that that is going to happen. So let's check if the results over here do make sense and as soon as they start not making sense then we can see what we do in that case. But I think that for intermittent data there is not a strong definition on how to do it because we are lacking the main part that is having data you know so if you have very low data there is not
+
+Patel, Rahul:
+much you can do with that. Remove this row completely.
+
+Hector Palacios:
+segmentation the segmentation matrix what was this we already have a matrix for we are discussing last week and I think that you already discussed with the with the team with jaganath at least is that the same as what we discussed which segmentation matrix sorry can you say that again the segmentation matrix that we build with last week and I've seen that push was presented on there.
+
+Patel, Rahul:
+All right, all right, so we continue working on it to be discussed. So, yeah, so I think the only thing now pending here is that the supply, the lead time segmentation is the only point left. I think the rest of the segmentation metrics is discussed and aligned, so probably we can use this now.
+
+Hector Palacios:
+We need to check for VED if we really have the information we need. The equipment criticality, the of failure? Frequency of part, that is FMC. Equipment criticality, I guess that can be found, but consequence of part failure?
+
+UNKNOWN_SPEAKER:
+Not sure.
+
+Patel, Rahul:
+Maybe we can use, can we like use this excel sheet to discuss during our workshop? In the innovative sessions? Do you think it will make sense? And in the In the meantime, parallelly, we can work with the supply segmentation. Mo, are you there? I think Mo has dropped, right? He has to… Yeah. But then let's have this internal action on us to define at least the logic of supply. But for that to happen, we need to define which all supply lead times… lead time segmentation.
+
+ Sorry, my bad. This logic of the grouping, the calculation level, is that validated with the team?
+
+Hector Palacios:
+We discussed this with our top, right? This is validated, right?
+
+Patel, Rahul:
+Yeah, in the last call, it got validated. I remember, Hector, I think you were there in the call as well.
+
+Mudit, Khushboo (UAE):
+This file, we showed it as it is. To AdNoc and this was validated by Jagan.
+
+Patel, Rahul:
+So let's keep it in the process only for the lead time planning and then we can we can demonstrate or show this into our like this sheet can be also further discussed into the supply in the inventory that's the next week or later this week on in the design pallet Do you think you can put this as one of the slides in the table so that once we send this PPT, whatever we are discussing, if we have a PPT, we can get the final confirmation from everyone as part of the evaluation?
+
+ For lead time, let's take let's go on a separate session. Then then we had these three points which we actually added in this list after a discussion internally last week and they came from the BPD review sessions. So we can keep it aside for now. By the way, I got more information in eMarketplace. So eMarketplace is not a separate application, but essentially a separate purchasing organization in SAP.
+
+ So they have a centralized purchasing organist, which essentially takes care of centralized contracts at AdNoc. So what they want, once the integration with e-marketplace essentially is similar to the requirement from Ayesha, where they would like us to propose which materials are applicable for contracts or LTPA. And the centralized team, what it does is, at AdNoc level, centralized, they look all the total requirement, total demand, and then come up with a centralized contract.
+
+ And if there is already a contract at agency level, then they don't follow procurement from agency contract, but they follow procurement from the centralized contract. And this process is called e-marketplace, where the team is looking at per material group, commodity level. If walls is a commodity, They will have one contract, which will have thousands of wall listed. And for the entire wall, if any requirement comes, it should go through the same LTP.
+
+ OK, but for what are you reading? This is supply as well, right? Yeah, you're correct. Will it have it? Yeah, let's keep that. OK. So I think with this, I think we've discussed the MRO inventory. Now let's look at chemicals quickly, because now from an MRO perspective, we need to, so whatever validation we need from AdNoc, Hector, probably you can include it in part of your, essentially the CPDs from this file so that it gets discussed in the, and we don't need to plan for a separate session, correct?
+
+ Is this something we can do? Yeah, yeah. So this sheet also becomes some kind of input for you or one of the agenda we would like to drive through the session from design validation. Take out supply, only focus on demand. OK, we have only three months. All right, then I think we are good here. I don't think we'll have to discuss it. So rest of the plants are all supplied. So Hector, do you want to do this later supply?
+
+
+
+Hector Palacios:
+Yeah, I seen that later because we are running with some things. Just a question, the company code that we are discussing is part of the location master data?
+
+Patel, Rahul:
+Yeah, it's part of the location master data. So do we have Sagar? Sagar is aware of those master data. He's already shown me as well. So that file is already available with us. At your site, can you check if Sagar is available? Join this call. It will take a minute. If Sagar is not available, let me show you where the file is and it's a S4 HANA file. Thank you.
+
+Patel, Rahul:
+Do you remember at the start of the project really at the start we had created this company code and this mapping. I'm referring to those files only which you already have but let me share that again with you. So that we know what you're talking about. So if you see initial data extracts, so here we have this table for T001 company code table. So if you see T001, these are the company codes and the company code names.
+
+ All right, now there is another table. But how can I link the, yeah. Yeah, company code to plant linkage that is this. Yeah, so this is the company code 1200 and these are the plants of the company code. Which table is this one? 80.001K.
+
+Hector Palacios:
+And what does it contain?
+
+Patel, Rahul:
+Let me take a screenshot for Sarah. What I'll do, I'll share this folder link to everyone so that you can have a look at it. It has the company code and the plant code mapping. Given that mapping yeah tww0 plant this is the plant this is so this is the see works and bw key so essentially this is for so this is the plant and this is the common key which connects the company code and plant code if I open this in editing in Excel This is the company code is burks book now b u a r s so w e r k s is the plant code w e r k s is the plant yeah yeah and then b w key is essentially the Plant code linkage with company code.
+
+ So, let's take name of table T001W has the plant linkage with the, sorry, the linkage of UniKey with the plant code. So, it has all the plant code, plant description, address of the plant, everything. Okay, this is plant data. TWW1W is a plant data and the BWKEY is the linkage between plant and company code. So if I close this and if I go to the table of Rahul, BWKEY that is more of a valuation area which is representing more than one valuation area within a single company.
+
+ But I think we can use this other definition of plant code as well, right? Essentially, 1200 is a company code. So, whichever valuation area starts with... Is the company code. Correct, correct. Is the company code. So, 12 star would be the valuation area. So, all will fall under the same company code.
+
+UNKNOWN_SPEAKER:
+Correct. Yeah.
+
+Hector Palacios:
+Is there any description to that or is it only a code?
+
+Patel, Rahul:
+There is a description to it.
+
+Hector Palacios:
+and but you can I guess that knowing the table you can get uh twice the source of the description I know right yeah I can get it by itself yes other can get it like if if you go if
+
+Patel, Rahul:
+you go to table like the table name is available right for within the table for every field you'll get a description as well So I'll share this folder, copy link to this folder. And I'll send it to Sagar separately. All right. Data. Extract. This was really early when we extracted, right? Copy link. So we can use the same information. Yeah, just one question. How can we get the link here?
+
+Hector Palacios:
+Because this we said is to add the material and plant there, material location, right? So, how can we know here what is material because I have only the plant and MRP controller? So, how I know to which material CC supply?
+
+Patel, Rahul:
+In the MRC, you will have material and MRP controller relationship. Okay and this is just to get this controller name yeah so this is the standard table for list of all the controllers and which controllers reside to which plant that's the standard definition and for a material marc has all for every metal which is the mrp controller all right yeah you're right OK, that's it.
+
+Mudit, Khushboo (UAE):
+Bye. Thank you.
+
+Hector Palacios:
+Okay, if that is so, then we need to check guys. I don't know if there is an error point.
+
+Mudit, Khushboo (UAE):
+On the open points tracker, just coming back to demand for drilling, although we don't have these sessions immediately, but they're still part of Wave 1, right?
+
+Hector Palacios:
+Yeah, well, I just saw that Tara put some sessions for next week but we are as we were saying we we don't feel that we are prepared for that unless we do something a miracle this week maybe next week
+
+Patel, Rahul:
+we can choose something but so far let's do one thing let's define this drilling data requirement Arun if we can work parallelly on this we don't need to you can disturb anytime you want for drilling so that parallelly we work with the D-Link. Let's target today at least we send this file for Muhammad Ashiq and Abdul Latif's review, so that tomorrow we send this to the IT person who can help us with data.
+
+ So Hector, for D-Link, what information will give you confidence if we are able to get the sample data and the file we are requesting, the template we are putting, will that be sufficient for you to do the show the
+
+Hector Palacios:
+D-Link demand planning? For so many sessions, because if we are not going to the explosion on IEP, sorry, then I think that it's just like a validation session of the data and the input, and that's it. We can still show them how it would, you know, it's just iterated.
+
+Patel, Rahul:
+Agreed, agreed. But we can still show them few views of, like, few planning views in drilling, like one at well level, one at material level, one at one at metal category level because that way at least they'll know what they're getting in the and we can validate this and get this up close right okay this is what you're getting I know it's not a lot to show but at least whatever we know we'll be doing we'll show it and get
+
+Hector Palacios:
+this confirmation because that's how we'll get a design validation for dealing demand as well correct yeah yeah let's do that if we get the data on time and I don't is able to to integrate it I mean, we will be able to get the data on place and to create the views. The only point is if they are able to give us the data on time. Correct.
+
+Patel, Rahul:
+So, let's do one thing while it's right now on our part to give them template. So, Arun, let's finish the template. Let me know if you need help from me and let's target to send a template today to AdNoc so that we can chase them throughout the day because the IT person said that it will take 2-3 days to give us the data. Because he will be able to extract it. If he is able to extract and give us data for two to three days, we can use the same data in our validation.
+
+ Okay. All right. So based upon that, we will have to like go through the drilling again later because whatever is drilling is not applicable at this point of time. Unless we look at the data and then if we have additional questions the data.
+
+Hector Palacios:
+No, and many of the points that we have there are indeed something that I have on hold on my side because as we are removing the bone most of that it doesn't make sense now.
+
+Patel, Rahul:
+Agreed, so we may have to go through the list again and then once we get the data, after we get the data, knowing that what data we will switch and whether it makes sense, we'll either have a new list or we'll delete these items from the list.
+
+Mudit, Khushboo (UAE):
+OK, and that's drilling. But the other items that I have highlighted on the screen here, which is inventory and demand for MRO. And we said that these will be validated during the design validation workshops. So I think for these, at least we should be prepared.
+
+Patel, Rahul:
+So I think that's what Hector said and we discussed slides. He can take the input of one of the slides can be mentioning these items in the workshop as well. So that while we are going through demonstrating in the same session, we can ask questions regarding this from the team and get the closure. Rather than having a separate session planned, we already have all the required ideas.
+
+Mudit, Khushboo (UAE):
+All Hector needs to do is make this point as part of this.
+
+UNKNOWN_SPEAKER:
+Yeah, during the design workshop, we don't have to plan separate sessions. Yeah. Okay.
+
+Patel, Rahul:
+All right.
+
+Arun Singh:
+I have one thing to ask. So in today's session, there was this one user, Tariq, who has encountered a connection error. So, Hector, I checked on the IPP side. The logging data looks fine to me. So maybe we can ask him to recreate the connection again.
+
+Patel, Rahul:
+How to do it? You created it as part of rest of the users or you created after you raised the request?
+
+Arun Singh:
+No, no. I created today only for all the users. Even Tariq should have the... Let's connect with Tariq separately.
+
+Patel, Rahul:
+You, me and Tariq, we can have a call separately. Yeah, yeah.
+
+Hector Palacios:
+But probably, Rahul, this is beyond us because it doesn't seem like it's connection or whatever step in our side is okay. The point is that when Tariq is joining in Excel, he's asking for attention and that shouldn't happen.
+
+Patel, Rahul:
+it should go with a single logon like for everyone else let's validate from our side before we say this is yours and then once we are sure we'll ask Khaled to we can also raise this as the see all this issue will come up and we'll need Adnox help to resolving all these issues right now so this is first of the many issues which will come up let's go one by one and let's agree with the process with Khaled that if anything which is not IPP how do we like fix Who are the people who access this?
+
+ All these things need to be worked upon, right?
+
+Hector Palacios:
+Yeah, yeah, but for sure that is not an ADP. That is not an ADP. That is on its side. Because Arun is not even creating the user. It's whatever we got this user from an iteration with Azure. So it's whatever it is. And Arun did the same process. It wasn't one by one. So it was like a massive upload, I guess. Yes, yes, like the other users are able to access.
+
+Patel, Rahul:
+So maybe before tomorrow's session, like maybe like 30 minutes before, you know, whatever time suits you, maybe you and me and Tariq, you know, can connect quickly, like for 10 minutes. Corrected, because I'll be in SKC tomorrow, which means I can sit next to Tariq. Tariq also sits in SKC. So we will be in the same office tomorrow. So I can sit with Tariq and we can quickly figure out if there is anything we can't do.
+
+ If we cannot do anything about it, I'll ask him to raise an internal ticket for AdNoc to fix. And if you have time, put it on users without add-in. Yes, users without add-in. We have the list. Let me, I will work on it.
+
+UNKNOWN_SPEAKER:
+I've taken that action separately. Right.
+
+Arun Singh:
+And Raul, after this meeting, if you have 10-15 minutes, let connect and quickly because I already updated the template so maybe you can have a one.
+
+Hector Palacios:
+Others can drop and we can continue if the others are not required.
+
+Arun Singh:
+Okay, perfect. Leave you guys. Thank you. Thank you guys. Thank you. Thank you. Thank you. Yeah, share your screen. Second.
+
+Arun Singh:
+So this is the file. Two fields are missing, one is the sequence id and the other is the old mutl code. Mutl code is for two wells, right?
+
+Patel, Rahul:
+Red is for 45 and the lower one is for 50. Mutl code for 50 is different. Correct. Mutl code is different and the well type is different. That's why I have highlighted both the wells.
+
+UNKNOWN_SPEAKER:
+Let me check.
+
+Patel, Rahul:
+Yes, but for example.
+
+UNKNOWN_SPEAKER:
+See.
+
+Arun Singh:
+The start date of the material is 12th April and the well start date is 25th April. It does not matter at the monthly level, but how do we focus on the data? Do we refer and load the start date? We keep the start date of the well. We keep the start date of the well.
+
+Patel, Rahul:
+Then we have to specify here. So in that, we will ask the well requirement dates. One minute, Mohammad is a lover, so let's quickly take him on the call and show him.
+
+Arun Singh:
+I wanted to ask one more thing.
+
+Patel, Rahul:
+Well plan is there, right?
+
+Arun Singh:
+So we are loading the well plan on the start date.
+
+Patel, Rahul:
+time period. For example, Unless they come up with a separate MTR requirement date. See, our understanding is that the start date of the well plan is on the 23rd.
+
+Arun Singh:
+Yes, I still need the MTR requirement. My understanding is the same. It's just that the user should not say that, for example, we have a drilling bar chart, right? So, the horizon span of the drilling bar chart is up to this region. Yes, so we have to show the 6-month drilling bar chart as a replicate on the chart level. Is this how we have to show the 6-month well horizon? I am visualizing it from now.
+
+
+
+Patel, Rahul:
+So you are saying that since we have start date and end date, we can put a nice visualization in IBP.
+
+Arun Singh:
+Yes, I am visualizing it so that they can see that my well plan is up to this horizon. See this.
+
+Patel, Rahul:
+You can show it. So basically what will happen is that you take this simple input, the first input. The first 8 fields are according to the well-planning. So on the basis of those 8 fields, your well-plan is made. Now that well-plan, you can create a visual of well-plan whatever you want. See, whatever you can show well, you have to sell it. I am also thinking the same thing, what to sell? Correct.
+
+ Is there anything for them or not? In drilling and tying, it is the same scene.
+
+Arun Singh:
+Yes, so at least show something beautiful. So at least I will feel something.
+
+Patel, Rahul:
+Yes, we have done something, something is happening. So they will be angry as if we made them run away.
+
+Arun Singh:
+But now tell me by confirming this, Rahul. The start date of this file is different and the recommended date of the material is different. So what to do in this?
+
+Patel, Rahul:
+Welcome started it up now to get a welcome started. Okay, so it's not just old material code.
+
+Arun Singh:
+No, no, no, I don't have Onshore's file. I checked it.
+
+Patel, Rahul:
+Onshore's? One minute. I checked it in my system. I didn't find Onshore's. Wait, wait. Let me see. If it's there, our work will be done. Yes, yes. If Onshore's is there, it will be sorted. Where did it go? Extracts. No. Adnog. RTP.
+
+UNKNOWN_SPEAKER:
+You can approve it on it.
+
+Patel, Rahul:
+It's all offshore. You want it onshore, right? It's offshore, right? It's offshore, right? How long do you live in Dubai? I live here for 3-4 weeks. I go to India once in 3-4 weeks. It's good. It's not good. You get worried.
+
+Arun Singh:
+That's true. But you can take your wife too.
+
+Patel, Rahul:
+No, kids and school bills. It's a mess. That's true. It's not what I'm seeing. Let me check the website. He gave us the data. If we get something, it will be done. If not, let it be. We will send it as it is. They don't give us the data.
+
+UNKNOWN_SPEAKER:
+They have troubled us a lot. Their design is done.
+
+Arun Singh:
+But the main issue is that they don't give us the data.
+
+UNKNOWN_SPEAKER:
+Abdul Latif. Abdul Latif.
+
+Patel, Rahul:
+Abdul Latif. It will take half an hour.
+
+Arun Singh:
+Can we ask Abdul Latif in Teams, what is the sequence ID of these two wells?
+
+Patel, Rahul:
+We don't have to bring our own well, right? Let's ask him. You gave us offshore data. We need offshore sample data.
+
+Arun Singh:
+Give us the data of two wells. Where is it, dad?
+
+Patel, Rahul:
+It's under offshore. Okay. Send me a work file. In the morning, Subat, give me your number. I don't get you on Teams. I will stay on Teams.
+
+Arun Singh:
+Will you stay? Yes, ping me and I will come. Because we have a session at 10 in the morning.
+
+Patel, Rahul:
+So, we will get time between 9.30 and 10. So, in between tomorrow… Because this is our dealing. We get time in the whole day. I will catch Abdul Latif and Abdul Kareem both. I will get the data from both. We will fill it and send it ahead.
+
+Arun Singh:
+Abdul Latif is there, right? Offshore is there. Not onshore, right?
+
+Patel, Rahul:
+Abdul Latif is offshore. Offshore is there. Onshore means talking to Mohammad Kareem. Mohammad Ashik is not there. Mohammad Ashik is not there. Okay. Is Ashik on leave? Ashik is on leave. Abdul Kareem is the guy in his place. He is with him. We will catch him. Tomorrow we will sit with him and fill it.
+
+Arun Singh:
+Abdul Latif says he wants the sequence ID and old material code. Even if you don't give the sequence ID, it will work.
+
+Patel, Rahul:
+Even if you give the old material code, it won't work. It will work. It will be sent from their system.
+
+Arun Singh:
+If the IT guy can give it, then it's okay. The IT guy will give the sample that he has. Okay, it will work. We need both well plan and MAP plan.
+
+Patel, Rahul:
+I want to see both because there is no field in Onshore and Offshore. That's why it is important to see both. Company will know what is Onshore and what is Offshore. What was your location level attribute in this?
+
+Arun Singh:
+In the location level, this field, as Vignesh said, is LZA1408, the plant. And the other fields have different plant codes. So, it is with Vignesh.
+
+Patel, Rahul:
+So, we will have to see how to align this well with the plant code company. So, how can we do that information-free? In this mapping file, we have to say that we want to get it. So, what we will do is, we will harass the location of SAP, that is a different table. We should find some common factor between SAP and EWDP, in which the plant code is the same in SAP and EWDP. So, we will have to ask the IT people, how is its location?
+
+ Which field is the location? So, we will have to talk to the IT people.
+
+Arun Singh:
+So, should I make a separate column for it or not?
+
+Patel, Rahul:
+Don't do it now, we will put it in the mail, Okay.
+
