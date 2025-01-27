@@ -1,0 +1,1086 @@
+Pablo Lopez:
+¡Hola, Saúl!
+
+UNKNOWN_SPEAKER:
+¡Hola, Pablo!
+
+Saul Portillo:
+¿Qué tal?
+
+UNKNOWN_SPEAKER:
+¡Hola, Saúl!
+
+Pelayo Fernandez:
+Una cosita. Luego, más tarde hoy, ¿podríamos mirar las actividades que tengo del GOTTAVERSE para que les des el visto bueno?
+
+Saul Portillo:
+Sí, si quiere hagámoslo saliendo de esta reunión.
+
+UNKNOWN_SPEAKER:
+Perfecto. Hagamos eso.
+
+Saul Portillo:
+Genial. Ahí ya sé que estoy al D, principalmente contigo Pelayer, y sorry por eso.
+
+Pelayo Fernandez:
+Nada, no, no, ningún problema. Estoy avanzando con otras cosas, entonces no pasa nada. Y si quieres hoy no y lo miramos mañana, como quieras, no me importa.
+
+Saul Portillo:
+No, no, lo hacemos hoy una vez saliendo de la sesión, yo creo que tenemos tiempo a hacerlo y te echamos una mirada. Una vez para dejarte listo ese ok, que Perfecto. Hola, Pablo. ¿Cómo vas con la demo?
+
+UNKNOWN_SPEAKER:
+La demo bien.
+
+Pablo Lopez:
+Yo ya le he dicho a Daniela que estoy listo para presentarlo. O sea, ya me queda darle un pequeño retoque y el resto ya está listo. Perfecto. Perfecto.
+
+UNKNOWN_SPEAKER:
+Buenísimo.
+
+Saul Portillo:
+A la espera de que me den fecha para la presentación.
+
+UNKNOWN_SPEAKER:
+Buenísimo. Hola, equipo. ¿Qué tal? Hola.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Hola.
+
+Saul Portillo:
+o la de tu?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Tenemos a Bastián, yo creo que la prioridad es lo de él porque mañana tiene que presentar este tema de demanda, pero seguramente está ahí atascado en la jada.
+
+UNKNOWN_SPEAKER:
+Igual le voy a preguntar.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Porque si tenemos que lo que le haga falta. Fede, de los atributos que reviví me dijiste que habías cargado uno de PROC ID, si no estoy mal, ¿verdad? PROC GROUP ID, algo así, me dijiste.
+
+Fiamma Giorgi:
+Sí, pasa que lo del grupo, lo de material grupo ya estaba cargado y lo de manufacturer le agregué la descripción y cambié para que quede el ID de un lado y la descripción del otro.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Pero el otro ya estaba cargado.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Fiamma Giorgi:
+¿Dónde dijiste que lo metiste? Matiré el group ID. No lo puse en el otro que es como description porque no me dejaba por la cantidad de letras.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Fiamma Giorgi:
+Ahí está. La descripción y el producto. Pero esto no estaba lleno ya? Ese es el documental que ya estaba.
+
+UNKNOWN_SPEAKER:
+Y lo reemplazaste?
+
+Fiamma Giorgi:
+Es que era lo mismo. El archivo que me pasaste era lo mismo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ah mira, no había fijado. Vale, entonces esto es lo que tenemos que cargar acá. Pensé que eran ¿Por qué están en tabla distinta en SAP?
+
+Fiamma Giorgi:
+No, por lo menos decía lo mismo. Y ahí lo quise cargar ahí, pero como el atributo sabe que tiene limitación de caracteres, no me lo permitió. Por eso lo dejé en esa, para no hacer el cambio.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Bien, bien, bien. Entonces, tengo material type.
+
+Fiamma Giorgi:
+Y Manufacturer no estaban todos, solamente algunos.
+
+UNKNOWN_SPEAKER:
+Sí, sí.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sí, era lo que había.
+
+UNKNOWN_SPEAKER:
+Tenemos que empezar a migrar también lo...
+
+Conference Room (Hector Palacios) - Speaker 2:
+Todo esto que se llama MRO algo, MRO Location Parts, todo eso lo tenemos que migrar a las tablas originales porque no hay ningún beneficio en mantenerlo. Normalmente el beneficio es que para MRO tú en la tabla de productos tienes tanto materiales como actividades, entonces si querías fijarte solamente en los materiales te ibas aquí a MRO Parts, pero nosotros no tenemos actividades, entonces no hay ningún beneficio en mantener una data maestra separada para lo que debería ser producto, para lo que debería ser lo que he hecho en producto.
+
+ ¿No hay posibilidad de que en un futuro lo necesitan? No lo creo, e incluso si lo necesitaran, no sería nada que no se pudiera corregir con un master data rules para este caso. Incluso si lo necesitaran, yo pienso que estaría creándome otra data maestra en vez de estar para las actividades, por ejemplo. Lo único que veo es que son posibles complicaciones en el futuro. Así que mejor quitémoslo porque estoy seguro que mata algún error.
+
+ Sobre todo la configuración cuando estamos haciendo cosas con los planning level, cosas extraña, esto nos puede dar un error. Ya me pasó, de hecho, creo. Así que es mejor que lo llevemos a los datos maestro original.
+
+Saul Portillo:
+¿Ahí quieres, Héctor, llevar los datos y a su vez también eliminar al maestro en la configuración? No eliminarlo, sino que ocultarlo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+De hecho, ya le pedí a Arun que creara un rol donde los usuarios no pudieran ver nada de esto. Y también le pasé los atributos que le dije que viéramos estos solamente para que los usuarios no vean esta cantidad de atributos. Es decir, incluso si se meten a la location product, no van a ver todos esos atributos que aparecen ahí, sino que van a aparecer los relevantes que les filtramos. Preferible es así, que empiecen de a poquito y después vayan, vamos añadiendo complejidades.
+
+ Dale, Basti, está en la Haul todavía.
+
+Saul Portillo:
+Héctor, ahí te quería preguntar, en actitud personal y después de este plazo estaba hablando ahí con FI también, que ese mismo sentirnos en el hecho de que vimos que ustedes estuvieron, o vi que ustedes estuvieron full el fin de semana trabajando, configurando, haciendo cosas, haciendo pruebas, y quisiéramos que eso no pasara, ¿no? Si no, ¿cómo nos podemos ayudar más? ¿Por qué faltó de repente entrar Héctor ahí para que nos no sucediera eso o son netamente pruebas.
+
+ Principalmente la preocupación es cómo poder ayudarlos más en que prácticamente lleguemos a que ustedes estén chequeando más que todo, revisando resultados o digamos no trabajando tan a fondo y menos un fin de semana.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Pero es más la culpa de que el tema de que no han quitado tan estas sesiones que no hemos podido hacer propiamente la pega de arquitecto. Yo sé que cada vez que están conspirando algo, están pensando, ah, pero tenemos que revisarlo con ellos, tenemos que revisarlo con ellos. Nosotros no tenemos tiempo nunca. Yo creo que esto que estamos haciendo ahora es lo que debimos haber hecho con más tiempo durante las sesiones que teníamos y usted ayudarnos a afinar.
+
+ Pero sí debimos al menos haber definido como una estructura base que vamos a usar los planes Workspace, Y eso creo que nunca lo hicimos con tiempo. Llegamos al final. Estábamos solamente con las planning views, con la información cargada y no nos dedicamos nosotros a jugar un poco con los números y ver qué es lo que estábamos haciendo, para lo que quisiéramos presentar también. Y bueno, también cosas pueden pasar.
+
+ Nueva información fue saliendo en el camino, entonces tampoco es una visión, por ejemplo, la de ahora que tengo con los planning workspaces y todo eso, no es una cosa que que tenía hace un mes probablemente. Pero ahora, Saúl, yo creo que la ayuda va a venir es como todo lo que hicimos igual hay que replicarlo para chemicals. No sé si replicarlo como tal, sino que quizás subir la data, pero al menos revisar los resultados, iterar un poquito.
+
+ Porque Bastián estuvo pensando la estructura de cómo quería visualizar chemicals, perdón, demand planning, y yo lo haciendo del lado de Inventory Plan. Qué cosas serían interesantes revisar, cosas así. Y es parte de lo que presentamos hoy día, ¿no? O sea, lo que presenté yo hoy día. Que esto acá... Sí, esto lo podemos discutir luego y ver de qué forma lo mejoramos. O cómo lo replicamos para... Para químicos, eso.
+
+ Fíjense en las sesiones, o sea, si no se pueden conectar por la hora va a estar grabado en teoría. Así que sería como lo mismo y la próxima semana es como intentar tener esta estructura ya lista, supongo.
+
+Saul Portillo:
+Yo por un lado voy a hacer el esfuerzo para estar ahí a las 3 de acá, pero me voy a hacer el esfuerzo para poder estar de servicio. La vimos a Héctor, realmente no la vi cuando me levanté porque no estaba, entonces no pude estar desde el inicio.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Pero mañana hay una sesión a las 7 de la mañana de acá, entonces va a estar más complicado.
+
+Saul Portillo:
+Pero bueno, a ver si puedo hacer el intento para estar desde el inicio y eso nos ayuda también a todos, como ya lo mando hoy, que hay que ir trabajando y que se estén enfocando y que están preguntando también
+
+UNKNOWN_SPEAKER:
+los usuarios. Sí.
+
+Saul Portillo:
+Y nuestra gran preocupación, Héctor, era siempre del lado cómo colaborar más y cómo apoyar más a ustedes, principalmente que están llevándose ahorita el trabajo de presentar y de liderar toda esta parte y evitar que tengan que hacer el trabajo sintiendo que si de repente lo que no hicimos estuvo completo o si era simplemente Un tema de que nada, eran pruebas que habían que hacerse ahí para tratar de entender ese lado.
+
+ Era por esa la consulta y esa preocupación desde este lado de que lo que vayamos trabajando en el tiempo nosotros, digamos, le sea de gran utilidad al proyecto y a lo que vayamos a presentar.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Nada más que para eso.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sí, sí, sí, obvio. Obvio, obvio. Nada, es que yo la verdad me puse a... No es algo que yo supiera antes de empezar a meterme, ¿no? O sea, me metí y empecé a iterar. Y la pregunta era, ¿cómo puedo revisar si estos resultados tienen sentido o no? Y esto fue solamente ponerme a pensar de cómo, de qué forma lo podría valida, ¿vale? Y se me ocurrió esta forma de hacer como una post-service level. Es como decir, ya, si tengo este punto reorden, ¿Cuál hubiera sido entonces el nivel de servicio que hubiera obtenido?
+
+ Entonces, de ahí saqué una alerta. Cada vez que el nivel de servicio ex post, digamos, esté por muy debajo del target service level, lanzo una alerta. Que en este caso no es así. Pero es la idea. Y lo otro también es que ahí nos estuvimos cabeceando bastante con los resultados y cómo elegir cuándo usar la gama, cuándo usar la población, cuándo usar la normal, ahí estuve peleando bastante. Entendimos entre medio el demand rate.
+
+ Esa fórmula rara de SAP también, en esa sesión que tuvimos. De hecho, la semana pasada ahí nos dimos cuenta de que funcionaba. También el cómo tratar la desviación estándar también lo tuve que aprender ahí a la mala, jugando con los números en el Excel, haciendo análisis. Y la verdad es que eso no lo sabía, Saúl, hasta la semana anterior probablemente, cuando me metí. Porque igual este modelo es nuevo, entonces no me había dedicado 100% a analizar bien los números y de qué forma lo podía entender o validar.
+
+ Entonces, más que nada por eso. Si me hubieras preguntado hace tres semanas, probablemente no te hubiera podido responder tampoco.
+
+Saul Portillo:
+Es que tenía que meterme para poder sacar Perfecto, por ese lado, sabíamos a menos que era algo así Héctor y todos realmente estamos en cierta forma aprendiendo porque es la primera implementación de este módulo. Pero nuestra gran preocupación era desde el lado de apoyar más, cómo podemos apoyarlos más y evitar en cierta forma que teníamos que estar en grado ustedes que estuvieron este fin de semana ahí metiéndose de cabeza.
+
+ Porque no vi que estuvieran tanto el sábado y domingo y eso.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Es lo que digo es como un problema de arrastre porque esto lo que estuvimos haciendo ahora con la presión del tiempo de que oye tenemos que tenerlo para la próxima semana es algo que debimos haber hecho hace bastante tiempo y con todas las sesiones que nos van poniendo encima es imposible que nos dedicáramos a hacer sesiones de trabajo y dedicarnos realmente a armar algo como de cómo valíamos tu número porque al principio lanzamos los números perfectos, se ven bien, pero como que no teníamos ninguna forma de revisar si está bueno o no.
+
+ Es el punto. Y no se me ha ocurrido cómo. Tampoco ESAP, tampoco provee de tantas cosas ahí como para hacer esos análisis iniciales, sino que te da un montón de GIFs y no te da gráficos, no te da nada. A mí lo que se me ocurrió al final es que el Reorder Point teóricamente es como Entonces, si yo tengo suficiente demanda sobre el lifetime, debería funcionar. O sea, es la demanda sobre el lifetime más el safety stock, ¿verdad?
+
+ Entonces, básicamente lo que estoy haciendo acá es calcular la demanda histórica sobre el lifetime. O sea, es una suma, sumo los siguientes periodos. Lo negro es la demanda real, pero lo que está en azul es la de la demanda de los próximos tantos periodos. Aquí no sé por qué pareciera que eran distintos.
+
+Saul Portillo:
+Voy a revisar los números. El azul no es, ahí dice arriba, historical lifetime.
+
+UNKNOWN_SPEAKER:
+La demanda por el lifetime.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Es eso, ¿eh? Sí, sí. Acá también estuve jugando con los modelos y los parámetros. Sí, porque no estaba seguro de cómo generar los números realmente. De cómo calcular, por ejemplo, la media, de cómo calcular la deviación estándar. Y estuve jugando con los modelos a ver de qué forma lo hacía. Pero la verdad, hasta el fin de semana me estaba cabeceando con esto. Hasta el viernes creo que estaba con eso de, ¿cómo calculo la deviación estándar?
+
+ Porque los números que me dan no me hacen sentido.
+
+Saul Portillo:
+Y así. Sí, eso está bueno. Está bueno lo del lumpy.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ya se lo explico, mira. Déjame buscar un ejemplo mejor que este. Este tenía una demanda lista en dos meses. Ah, ya. Funciona. Fíjense que estos periodos que están acá no son periodos continuos, en absoluto. Son periodos que están, de hecho, parciales. Esto es 2020, 2021, 2022, octubre, 2022, junio, 2023 y así. Pero me sirve revisarlos todos juntos al final. Y lo que hago es calcular la demanda sobre el listing, porque esa es la demanda total que tengo al final.
+
+ Si yo recibo 10 ahora y día a hora y después mañana me llegan dos más, yo no puedo usar los 10 para definir el punto de orden, yo tengo que usar los 12, porque no soy capaz de llegar mañana con más demanda. A mí lo que me importa es cuánta demanda recibo durante el lead time, porque durante ese periodo yo no puedo hacer nada, ¿verdad? Simplemente esperar hasta que llegue un nuevo pedido. Entonces, por eso es que hay que prepararnos para la demanda que va a haber durante todo el lead time.
+
+ Ese es el punto inicial, lead time demand. Y eso en la base del modelo sería el input inicial de IO. No es que estamos midiendo la variabilidad de la demanda, medimos la variabilidad de la demanda sobre el lifetime. Y lo que entramos de demanda a la fórmula tampoco es la demanda, es la demanda sobre el lifetime. Todo es demanda sobre el lifetime. Variabilidad de demanda sobre el lifetime. Y la media también es la demanda sobre el lifetime.
+
+ Entonces, el punto reorden. Es el safety stock más esa demanda sobre el lituan. Entonces, si yo tengo un punto de orden, por ejemplo, de 67 y reviso la demanda sobre el lituan histórica, veo que en la mayor parte de los casos estoy haciendo bien. Tengo 1, 2, 3, 4, 5, 6, incluso, no, 6 solamente. 6 periodos de 7 en los cuales yo fui capaz de, o sea, esa cantidad debería ser suficiente. Y eso sería un 83%.
+
+ 6 de 7, creo.
+
+UNKNOWN_SPEAKER:
+Eso es básicamente.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Entonces el target era 95, entonces simplemente la pregunta es como, ¿está bien el 83? Realmente sí, porque no tenemos tanto periodo histórico en el pasado. O sea, después del 83 saltaba directamente al 100, entonces tampoco había posibilidad de otro número. Número. Porque como son 7 números, son salto abrupto, ¿no? O sea, si le ha hecho a otro más, salto directamente al 100%. Eso es lo que entiendo.
+
+ Entonces, en este caso está bien. No hay gran problema. Aquí esto me está dando toda la información que necesito, desde el nivel de servicio, la demanda en meses, el lead time en meses. Esto creo que lo puse al revés. Puse la fórmula al revés. Debería ser menos. El coeficiente de variabilidad. Y, bueno, el punto de reorden y lo que estoy proponiendo. ¿Vale?
+
+UNKNOWN_SPEAKER:
+Y acá está toda la información de la segmentación.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Entonces, así estoy calculando el service. Ahora, un punto importante que he trabajado es cómo definir qué modelo trabajar. Porque, ¿te acuerdas cuál era la regla? La que tenían ustedes del modelo Poisson, de cuándo usarlo?
+
+Saul Portillo:
+Empezaba por el tema de la cantidad de puntos históricos, si tenía algún patrón o no, en imán pata, y después los que tenían patrón por el tema de la variabilidad, para ver si era gamma o normal.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Vale, era como si era x de variabilidad, en teoría era gamma, o sea, Tintudecky era Gamma, perdón, era... Gamma, sí. Gamma, sí, sí.
+
+Saul Portillo:
+Y si no tenés patrón, era Poisson.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, y le pedíamos 30 puntos mínimo, ¿verdad? Correcto. Bueno, me di cuenta que esos casos no iban a funcionar. De hecho, pasaba que un modelo como, creo que la primera alerta. Tengo un caso aquí donde tenía una demanda de 100 y después tenía unas demandas como de 2, de 4, de 6, 10, 4. 65, 71. Imagínate la variabilidad de esto, es gigante. Tiene un coeficiente de variabilidad de 138%. Solamente midiendo los periodos con venta, no midiendo los periodos de los ceros, no los consideramos.
+
+ Entonces, es como una variabilidad del tamaño de la demanda. Cada vez que hubo, ¿cuánto varía? 138% o más o menos, sobre la medida.
+
+Saul Portillo:
+Perdona, ese coefficient of variation fue un keyfile que creaste para justamente evitar que el sistema me lo haga con valores nulos o periodos que no quiero, ¿no?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sí. Ok. Sí, en realidad este creo que lo...
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, este es el que saqué... No, lo saqué de la aplicación, Saúl.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, sale de la aplicación. Bueno, el tema es que habíamos definido una regla de 30 puntos y esto... También me lo arrojaba como porzón y porzón me da una mierda. De hecho, si les muestro el ejemplo. Déjenme guardar esto porque lo quiero revisar luego igual. Entonces me hice esta vista para revisar cuál es el resultado me da de punto de reorden de la gama de normalmente de Poisson, etc. Y bueno, la clasificación de este, si lo hacía por Poisson, mira, me da 29 de punto de reorden.
+
+ Y claramente aquí no iba a funcionar mucho porque 1, 2, 3, 4, y el punto de reorden que tienen actual es de 100, etc. Entonces, sería muy feo. Este ejemplo, creo que lo habíamos revisado, de hecho, la semana anterior. Y aquí es que me descubrí que la demanda intermitente tú la puedes separar en dos cosas. En lumpy, que sería la demanda intermitente extremadamente variable, y en intermittent, que es la variable, que es la menos variable.
+
+ Las dos son intermitentes, pero lumpy es como muy errática, como el caso de aquí. Entonces, incluso si tenemos pocos datos, es mejor usar la gama. La normal no está... Yo creo que en este caso, fortuitamente, da buenos resultados, pero no es ideal para estos casos. De hecho, creo que se va... Bueno, ahí se normaliza un poco más, creo. Pero sí, no es la mejor. La normal, de hecho, es para poca variabilidad.
+
+ Entonces, mientras la mantengamos para escenarios de poca variabilidad, está perfecta. Suficiente data. Baja variabilidad, está bien. Pero tan pronto hay alta variabilidad, hay que atenerse a lo que nos da la gama. Que en este caso da mucho mejor que la posón. Entonces, eso es un descubrimiento que independiente de la cantidad de datos que tenga, si el lumpy debería ser gama.
+
+UNKNOWN_SPEAKER:
+Eso es.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces también cambié un poco esa definición. Puesto en reglas la verdad, pero por ahora estoy pensando algo como que si tiene menos de 10 puntos, no de 30, menos de 10 puntos usamos la de Poisson a menos que sea lumpy, si es lumpy usamos la gama y si tiene más de 10 puntos ahí revisamos entre la gama y la normal dependiente de la variabilidad. Entonces cambió un poco la la estrategia no es 100% poca son cuando hay poca data.
+
+
+
+Saul Portillo:
+Y no va bien. ¿Y Lumpi es algo que tu modificaste? ¿Está en el Rock Castle Information?
+
+Conference Room (Hector Palacios) - Speaker 1:
+No lo había escuchado nunca. Es un flag. Tampoco lo he usado nunca, pero lo vi y me hizo sentido.
+
+Saul Portillo:
+¿Lo modificaste en el del Semarang?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Este. No, no, el de semanal se lo agarro a Basti. Se lo agarro a Basti. Yo estoy usando este del mensual, pero es que lo estoy usando entre medio. Es que la verdad que no estoy viendo un, para el mensual, no sé, en inventario no me sirve. Y Basti tampoco lo está usando.
+
+Saul Portillo:
+Lo pusiste en el último, Héctor.
+
+Conference Room (Hector Palacios) - Speaker 1:
+El último si está con lo de lumpy.
+
+UNKNOWN_SPEAKER:
+Ah, claro.
+
+Saul Portillo:
+Ese es el uno que dije.
+
+UNKNOWN_SPEAKER:
+Ahí sí, se separa.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ahí tiene un trecho que es el coeficiente de variabilidad y así la clasificación. Así que tiene mucha variabilidad, lo hace lumpy.
+
+Saul Portillo:
+Ojo Héctor, que nosotros creamos un atributo, que no es ese que tienes allí, el parDemandPattern en meses, para pegar el resultado, usamos uno que es en Wix, ahí están separados.
+
+UNKNOWN_SPEAKER:
+Pero Basti se lo agarró.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Puso algo para definir el, así que era forecasteado, Puso algo de 25 puntos y a mi eso no me funciona, por eso lo moví. ¿Y dónde están pegando entonces el mensual?
+
+Saul Portillo:
+En la venda lo están usando. Si quieren le cambiamos el nombre. En vez de month le ponemos yield, por ejemplo.
+
+UNKNOWN_SPEAKER:
+¿Sí?
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Usted todavía no llegó? O ya llegó?
+
+UNKNOWN_SPEAKER:
+No, no ha llegado.
+
+Saul Portillo:
+Quedé que la sesión la cambiaron para una hora.
+
+UNKNOWN_SPEAKER:
+Me imagino que se van a agarrar otras cenas. La de Lady Hattern. Sí, pero la de mañana en Turión. Ah, sí. Bueno, era así.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Tenemos que mover la data maestra hacia las normales, pero eso yo creo que después del jueves, entre jueves y viernes tenemos que hacerlo porque antes de eso vamos a estar en las sesiones, así que no sé si nos conviene. Lo de mover la master data probablemente Esperemos un poco a que salgamos de algunas sesiones. Porque si no, podemos poner en peligro el contenido. Tengo un par de alertas.
+
+UNKNOWN_SPEAKER:
+A ver.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Son las alertas de cuando hay grandes cambios alrededor del point, por ejemplo. Y cuando hay cosas. Cuando está muy abajo de lo esperado. Por ejemplo acá, me está dando 67.
+
+Saul Portillo:
+Cuando hablas de grandes cambios, es la diferencia entre ReorderPointCurrent y ReorderPointPropuesto, ¿no?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, aquí debería tener un porcentaje de cambio, yo creo. Sí, debería crear algo adicional.
+
+Saul Portillo:
+Pregunto, Héctor, porque con el tema de la producción, nosotros habíamos creado un keyfigure y una alerta el keyfigure es la diferencia entre el current reorder point y el reorder point el reorder point final después de todas las colaboraciones ¿lo crearon? Sí, eso existe porque ya está listo para poder hacerlo en los approval solamente falta dejar listo el template que les dejo ahorita porque ya está todo configurado para hacer el paso a paso tal cual como hicimos en el forecast.
+
+ Entonces, si quieres utilizar ese y si quieres de repente, que definamos ahorita mismo y lo trabajamos, un porcentaje de variación que le quieras colocar, porque cada diferencia va a encontrar todas las diferencias, porque la realidad es que la mayoría son distintas, no ocurre el poco inmersivo que propone el IBP. En la mayoría de los casos va a pasar eso. No sé cómo... Porque también el tema es que porcentual...
+
+ Qué tanto porcentaje, no? Porque es distinto el porcentaje de 5 a 10 unidades a decir el porcentaje de 100 a 200, no?
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Qué kifir utilizaron en el trabajo en eso ahora? ¿Qué kifir utilizaron para el curren? Porque yo creo un atributo como GIF.
+
+Saul Portillo:
+Utilizamos el que se llama Current ROP.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Este de acá, vale. Entonces, esa alerta está buena. De hecho, yo también me he creado esta similar, que era la de ROP Big Changes. Entonces, esta no sé si tiene No es necesario configurar la nueva porque, a ver, edit subscription. Bueno, acá no nos bastó mucho.
+
+Saul Portillo:
+Creamos un keyfigure de reorden point para hacer la misma lógica con la estadística del forecast. Reorden point de backup para ver en aquellos casos que digamos se rechace. Que el usuario realmente lo cambie y la comparación del Kubern versus el reorder point propuesto.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Saul Portillo:
+Y están las alertas, entonces... ¿Cuál equifigura es usted?
+
+UNKNOWN_SPEAKER:
+No, el equifigura de alerta.
+
+Saul Portillo:
+La alerta todavía no la hemos grabado ahí.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces, no, tranqui. Está agregada. Esta se llama, deberíamos cambiar el nombre al review, no sé. Pero aquí tengo las dos cosas. Rob Big Changes Review. Y esta está sin tanto filtro. Tiene el filtro, debería tener el filtro de lead time, en realidad, para los productos de la demo, básicamente. Pero luego hay uno, Pending Approvals, que es solamente para los productos que tienen alto valor de Es solamente una idea.
+
+ Al final, de cierta forma, tenemos que reducir el scope de lo que van a revisar.
+
+UNKNOWN_SPEAKER:
+Entonces, creé esa.
+
+Conference Room (Hector Palacios) - Speaker 1:
+La artista creo que está bien. Al menos la primera.
+
+UNKNOWN_SPEAKER:
+Y luego, la de la prueba.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Aquí está el KIFIR que hicieron ustedes. Le ponía el 1. El tema es que pasó algo raro en la configuración. Creo que me pasó en el pasado también. Reward point. Esto. Es un tema de porque estamos mala técnica.
+
+UNKNOWN_SPEAKER:
+Se me duplica el valor.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces, mira, la lógica la cambió un poco porque dije, como hay tantas cosas que revisar, es mejor que aprueben a que rechacen ahora mismo. Es decir, solamente lo que yo apruebo pasa. Porque de lo contrario, si hago que pase todo menos lo que yo rechazo, hay mucha probabilidad de que se les pase algo. ¿Verdad? Porque estamos hablando de millones de combinaciones. Entonces, al principio al menos, no sé si después la vamos a cambiar.
+
+ Pero al principio al menos tiene que ser al revés. Es solamente lo que yo apruebo pasa si no se mantiene lo anterior. Entonces le cambió un poco la lógica para que si es que valiera 1, entonces toma el Proposed Reorder Point de lo contrario que mantenga el current.
+
+Saul Portillo:
+Entonces si está vacío, se queda con el 100.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Es que es más fácil así porque si no es que se van a hacer cagar. Imagínate la cantidad. De datos, se me van a pasar todo. Es imposible que ellos lo atajen todo. Es mejor que ellos revisen cuál quieren que pase en vez de que estén revisando cuáles quieren que no pasen. Entonces, ven el problema, que debería agarrar el 66 y me lo duplica, porque es una semana técnica.
+
+Saul Portillo:
+Creo que es porque está a nivel, ya te digo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Pero la fórmula está, la fórmula no tiene ningún error. La fórmula está perfecta. Si el tema es que es un comportamiento de IEP, es porque este de acá tiene el Last Period Aggregation y funciona, porque la parte A y D tienen 66. Pero este de acá no lo tiene. Y cuando lo mezclo en una fórmula, pareciera que Es como que echa a perder el comportamiento de este de acá. No sé si se entiende lo que estoy diciendo.
+
+
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+¿Tenés la fórmula por ahí?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, aquí la tengo. Porque por lo que yo muestro en la pantalla, el Proposed Reorder Point funciona bien, se ve bien. Y el current reorder point también, pero cuando lo mezclo es que el resultado funciona mal.
+
+Saul Portillo:
+Aquí está. Toma el IP de A, y aquí toma. Si es nulo, toma el current reorder point, si no, toma el otro.
+
+Saul Portillo:
+y después lo multiplicas por el conversion factor no será porque está tomando, le colocaste este, el total maintenance y este está sumando o sí? Sí, yo creo que sí, porque está sumando estos dos mira, colocá en la vista mira el Proposed y coloca el ROP Preventive Maintenance. Puedes colocarle solamente el CM?
+
+UNKNOWN_SPEAKER:
+Editar este.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, este no, cambia el de allá, el de la fórmula que ve del Ya, ya, ya.
+
+UNKNOWN_SPEAKER:
+Colocar este.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Estaba como 15 minutos antes de la sesión cambiándolo y no lo hice, no logré funcionar.
+
+UNKNOWN_SPEAKER:
+No iba a funcionar nunca en realidad.
+
+Bastian Osorio:
+Hola, ¿qué tal? Disculpen la tardanza. ¿Estamos en modo español o modo...?
+
+UNKNOWN_SPEAKER:
+Español.
+
+Bastian Osorio:
+¿Y qué pasó, Arun? ¿Lo cortaste?
+
+UNKNOWN_SPEAKER:
+No lo sumé. Pero si yo lo sumé vos. ¿Lo sumaste? No lo veo.
+
+Saul Portillo:
+No aparece. Está listo.
+
+UNKNOWN_SPEAKER:
+Está acá.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yo lo mandé a hacer una cuestión de filtrar atributos y más datos maestros, para que en las sesiones se vea menos basura y que se vea más lo que deberían saber, lo que deberían ver.
+
+UNKNOWN_SPEAKER:
+Ya.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Revisamos lo tuyo, Basti, que es lo de mañana?
+
+Bastian Osorio:
+Sí, vamos revisando a ver si encontramos algo. Lo que sí necesito es lo que te había pedido Saúl, las reglas de segmentación sobre todo las fmsn lo primero que necesitas porque me metí a ver la tributo y estaba cargado no no la regla o así ya más de tanto consumo son No, es la regla, Saúl. Está en una presentación de inventario, te la paso.
+
+Saul Portillo:
+Ah, ya, te refieres a la presentación.
+
+Bastian Osorio:
+Entonces, el Datascope que tenemos es una planta, 1,130 equipos con uno más consumo during the last five years, 437 materials with corrective maintenance consumption over the last five years, 3,004 consumption events for corrective maintenance, nine materials with preventive maintenance consumption over the last five years, 90 consumption events for preventive maintenance. Este es el testing scenarios, pero mañana lo voy a ajustar un poco porque...
+
+ Bueno, hay que ajustar algunas cosas, pero esto está correcto en términos...
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Entra en la segmentación igual? Porque en teoría es del equipo de inventario.
+
+Bastian Osorio:
+Sí, es que le voy a llamar planning type.
+
+UNKNOWN_SPEAKER:
+Ah, ya.
+
+Bastian Osorio:
+Y acá tengo el proceso. Raúl me dice que no deberían mostrarlo. ¿Por qué? Dice que puede crear mucho ruido.
+
+UNKNOWN_SPEAKER:
+¿Por qué?
+
+Bastian Osorio:
+Me dice que en lugar de mostrar el proceso, simplemente menciona que hay distintas opciones y que ellos tienen que decidir cuál pero a mí no me no voy a decir y de hecho si vamos a mirar la un touch porque me dio ruido.
+
+Bastian Osorio:
+Entonces, dividimos los materiales mediante dos atributos, forecast base y reorder point. Los materiales forecast base son los que tienen más de 25 o más consumption events durante los últimos cinco años. Estos materiales son 18. Tienen consigo 684 consumption events y tienen un consumo total de 40.550 unidades. O sea, 18 materiales, 550 unidades. Por otra parte, los materiales que van a ser planificados con ReorderPoint son 419 materiales y estas combinaciones tienen consumo.
+
+ O sea, estoy dejando afuera los materiales que no tienen consumo. Un total de 2.320. Consumption events y 23.000 de consumo. Y lo tenemos también en términos porcentuales. Podría agregar otro en términos porcentuales de los tipos de materiales. Bueno, ahí lo agrego.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Cuál es el scope de la data que estoy solamente la que no pasó fitness. Y ahí cuando mostraste que eran 18 materiales pero el otro salían con 419.
+
+Bastian Osorio:
+Sí. En total tenemos materiales como 500. O sea 436. ¿7 materiales en total?
+
+UNKNOWN_SPEAKER:
+Lo que estoy diciendo... ¿Y estoy revisando para todos?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Porque yo en las prebonitarias estoy revisando como 50.
+
+Bastian Osorio:
+No, pero esto se hace con la data transaccional que está sujeta a la ubicación... O sea, es que es una clasificación súper sencilla. Si tiene más de 25 consumidores, O sea, consumption events, puntos, forecast base. Si tiene menos, reorder point. Sí, sí, no, sí, era padre.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y cuando les escribí el resultado, ¿en qué datos se debe enfocar? En los dos puntos. Dependiendo para qué puntos.
+
+Bastian Osorio:
+Pero no tenía uno de ejemplos así claros.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Como uno es para que no te pillen. Porque es entre 500 y demás. Que hay una cuestión que está dando...
+
+Bastian Osorio:
+En los forecast page. O sea, es que para budgeting voy a analizar la data en términos más macro, ¿cachai? Por ejemplo, acá está el budget, ¿cachai? Y este, el budget, es sample data, ¿no? O sea, es dummy data. Y lo que quiero decir es que teniendo el budget, y acá está el forecast, se pueden, bueno, y ahí voy a mostrarlo en el Exceladín, va a generar una alerta diciendo, mira, el budget está sobre el forecast, ¿cachai?
+
+ El forecast está sobre el budget.
+
+UNKNOWN_SPEAKER:
+Eso, sobre.
+
+Bastian Osorio:
+Y el principal tema para mí es este.
+
+Bastian Osorio:
+el 5 bueno menos de hecho menos si lo ponemos pero que si se fijan más del 98 o 99 por ciento de la data del consumo es solamente correctivo a mí lo único que me dice que esto lo pasó mal bitnitch probablemente pero de todas formas nosotros no vamos a hacer podcast para preventivo así que aún cuando fuese opuesto no es como que puta la cagamos no tenemos forecast para preventivo nunca dijimos que íbamos a tener forecast el
+
+Conference Room (Hector Palacios) - Speaker 1:
+mensaje yo creo debería ser si que o sea deberíamos empujar a que tengan preventivo aparte y si quieren que hagamos forecast y lo empujan y lo empujan entonces mezclamos todo pero inicialmente diría que no.
+
+Bastian Osorio:
+O sea, lo que estamos proponiendo ahora no es un forecast con los dos.
+
+UNKNOWN_SPEAKER:
+Y cuando...
+
+Conference Room (Hector Palacios) - Speaker 1:
+espérate, MRO correctivamente, ¿es cantidad de combinaciones o es cantidad de volumen?
+
+Bastian Osorio:
+Volumen de venta. Combinaciones son muchas menos. Acá tengo la... Voy a crear una combinación. Para que yo vea el pareto, para que yo mira estas son las combinaciones pero en volumen es esto el que está acá son menos consumos pero mucha más cantidad es el pareto es como el pareto en esteroides porque 18 materiales son 40 es como el 60% de la data. Pero son como el 5% de los materiales detrás del 60% del consumo.
+
+ Corrective. Solamente corrective. Y esto sería como el 95% de los materiales, dice el 40% restante.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Esto idealmente, Basti, lo que deberíamos hacer es respecto al valor. Dile que cuando tengamos datos lo vamos a hacer respecto al valor que ahora estamos haciendo unidad y por ejemplo probablemente no es representativo porque estáis mezclando peras con manzana acá, pero una vez que convertamos todo a plata es la
+
+UNKNOWN_SPEAKER:
+misma unidad de medida.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Todo está convertido a plata. Y se puede comparar, acá probablemente... Dale eso, dile al principio, mira estos son como los posibles gráficos que podemos hacer. Este está en volumen, estamos mezclando distintas unidades de medida, pero en el futuro lo hacemos con cuando tengamos data de valor.
+
+Bastian Osorio:
+Ahí está el paletubo.
+
+Bastian Osorio:
+que pueden, por ejemplo, ser mil unidades de de esas gomitas que te ponían en el oído. Esos estarían acá. Pero no, porque tenemos puros materiales acá, ZRCA.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, pero no sé, me imagino que sean un millón de tuercas y está inflando el número caleta. Entonces tú decías, claro, son parte del 4% de tipo material, pero son 4 millones de esa tuerca, que valen penis, no vale nada. Y te está inflando el pared y te está diciendo que, no sé, porque el 80% del volumen es por esto y es que realmente son tuercas, no puedes comprar una tuerca con un motor.
+
+Bastian Osorio:
+Es que el punto, es que da lo mismo, si el motor igual va a ser, el motor da lo mismo que valga un millón de dólares, igual va a ser porque lo que importa es que tenga más de 25 consumos.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Si tú les querías hacer una análoga gráfica y decís, mira este es el impacto, tenemos estos fastmovers y están contando por, no sé, esto. Si le colocáis volumen, es lo que te decía yo, pueden hacer cuatro millones de tuercas y eso puede ser, en unidad de volumen, puede ser el 95% de todo, pero son puras tuercas. El otro 5%, estamos hablando de bombas, de motores, de sellos, de cosas más importantes.
+
+ Entonces no te está dando el sentido de importancia. Ahora es lo mejor que podemos hacer con la data que tenemos, pero en el futuro esto debería ser con valor, con plata, para que si tenés 5 millones de tuercas se traduzca, no sé, por un 10% y un solo motor se buscan el otro 30% se reinicia se lo actualizo a que lo guarde con el mismo nombre nunca conseguía volver a la próxima.
+
+Bastian Osorio:
+Así que.
+
+Saul Portillo:
+Y por supuesto, puede ser que no quede claro.
+
+UNKNOWN_SPEAKER:
+Bueno, entonces les voy a mostrar este Dash porque más.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Esto es como va a ser el análisis del de la edad actual.
+
+Bastian Osorio:
+mierda. Subtítulos por la comunidad de Amara.org Vamos a mover esto por acá.
+
+UNKNOWN_SPEAKER:
+Ahí sí.
+
+Bastian Osorio:
+Subtítulos por la comunidad de Amara.org Y acá lo tengo, el mismo análisis. Es que la primera sesión yo creo que va a ser más que nada de eso, de entender un poco. Pero después tengo los demás escenarios, de forecast, de... Bueno, acá está. Planning time, data cleansing, forecasting, budgeting. Y ahora tengo que trabajar en el... Me falta el tema de preventive. Y snapshots. Pero si vamos acá a data, lo que tengo primero acá es el análisis de...
+
+ ¿Cree que valga la pena el tema de los snapshots? Sí, o sea, si tenemos tiempo de revisarlo, sí. Pero obviamente va a quedar por final. Ya, entonces, mira. Deja hacer nada.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Acá tenemos...
+
+Bastian Osorio:
+No, si ya hicimos toda la configuración.
+
+Saul Portillo:
+Claro, como te podemos ayudar en las vistas, en análisis, en algo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yo tomaría una de estas vistas.
+
+Saul Portillo:
+Caul toma una de estas vistas.
+
+Bastian Osorio:
+de Academic Planning, la de Forecasting, y preparan la parte de... Tiene que ser dos cosas, el Snapshot y el Accuracy.
+
+Saul Portillo:
+El Accuracy, ok.
+
+Bastian Osorio:
+Sí, esas dos cosas tienen que estar en la misma vista. O sea, la vista sería 140 dp, Snapshots en que O accuracy, como quieras llamarle.
+
+Saul Portillo:
+¿Y qué vera quieres decir? ¿El Snapchat también?
+
+Bastian Osorio:
+¿O solamente de la historia? De los dos. Porque sería ideal, oye, mira, si haces, bueno, un año forcateaste esto. ¿Qué sigo? Salí de ese, forcateaste esta otra cosa.
+
+UNKNOWN_SPEAKER:
+Ya. OK.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Oye, ahora, Planning Type no debería ser pegado al equipo de mando. Deberían usarlo nomás, pero eso debería ser una segmentación. Parte de quien haga segmentaciones o automáticamente, no sé. Pero debería ser un input al... A Demand Planning, no parte de Demand Planning.
+
+UNKNOWN_SPEAKER:
+Es que...
+
+Bastian Osorio:
+Es que, o sea, para mí lo tiene que ocupar quién es el usuario de eso. Es... Los inventos y controles, ¿cachai?
+
+UNKNOWN_SPEAKER:
+Por eso.
+
+Bastian Osorio:
+Pero la información la genera el proceso de manplanning porque finalmente basado en el número de datos que tú tienes es que puedes saber si un material se puede forcastear o no.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Para mí eso es antes de manplanning, segmentation planning, que nunca me quisieron meter ese proceso antes, pero es un proceso que corre, lo pusieron cada cuarta debería de ser que incluso anual. Y anualmente tú definís la opción, no debería ser algo que esté cambiándose a cada rato. Como una ejecución a una frecuencia más baja y después todos los procesos, demand planning, inventory planning, supply planning, todos usan.
+
+ Lo único que tiene demand planning es el input que el histórico demanda, pero no por eso diría yo que es Y está claro que los de mantenimiento, si es que se meten acá, no van a hacer eso.
+
+UNKNOWN_SPEAKER:
+Pero mira, esto por ejemplo...
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sí hay que mencionarlo, pero hay que dejar bien claro que no es una tarea que van a hacer los de EAM, que le llaman, E-A-M. No, no, está claro, no.
+
+Bastian Osorio:
+O sea, es que de hecho yo creo que lo tienen que hacer la... O sea, primero se va a hacer automáticamente. O sea, el sistema te va a decir, mira, este sistema, este producto es este no, ¿cachai? El Chocaztapo, mira por ejemplo este material, este material es forcasteable, un gas que tiene 75 consumo, ¿cachai? Y es posible que nosotros no tengamos toda la data, y esto ni siquiera a nivel de equipo, si no estamos hablando acá a nivel O este lubricante, hay un lubricante que tiene el marzo.
+
+
+
+UNKNOWN_SPEAKER:
+Mira estos dos.
+
+Bastian Osorio:
+Estos materiales obviamente son forecasteables. Entonces lo que estamos diciendo es que el reorder point no se va a usar el reorder point para estos materiales.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Con esa cantidad de counters que tení, podemos sacar un buen safety stock. Con un buen nivel de servicio y cualquier variabilidad debería comérsela ese safety stock. Es mejor tener un safety stock y al resto planificarlo just in time, que tener todo un reorder point y meter toda la demanda sobre el IPTEN en esa cuestión y tener siempre, no sé, un montón de stock por esto. Es mejor así.
+
+Bastian Osorio:
+Y el tema de las reservations, algo también nos van a preguntar, y lo que tenemos que decir es que las reservations no sacamos Lo que pasa es que en este caso, para estos materiales, las reservations se van a consumir el forecast. En cambio, en los otros casos, las reservations van a ser lo que van a drive, trigger, the PRs.
+
+UNKNOWN_SPEAKER:
+Esa parte de la reservación.
+
+Bastian Osorio:
+Porque para los ingenieros...
+
+Conference Room (Hector Palacios) - Speaker 2:
+El tema de ellos es que dicen, yo solamente puedo gatillar una orden de compra, una PR, con Approved Reservations. Nada más. Entonces yo creo que la parte que nosotros le estamos proponiendo, le estamos diciendo, hay parte de eso que debería ser mantención correctiva. Idealmente no debería ser un porcentaje tan alto, pero si ese Forecast debería gatillar.
+
+Bastian Osorio:
+Pero este material, por ejemplo, Gasket, que yo supongo que además es un material O sea, no, yo creo que en términos, por ejemplo, de volumen, o sea, en términos de precio, yo supongo que estos materiales son baratos, cachai, si tu miras el tagostini, como se llega, o al menos, yo lo llamaba en la universidad, flech, flech, joints, cachai, pero estos son para uniones de tubería. No, no creo que haya nadie pensando en aprobar una pía de esto, ¿cachai?
+
+ Como esperando, aprobando, bueno las reservaciones pasan nomás, ¿cachai? La cosa se compra nomás. Nadie está aprobando la compra de estos insumos tan irrelevante en términos unitarios. Discutámoslo con ellos mañana. Pero igual está bueno aclarar nuestra idea entre nosotros que nadie, quién va a estar, o sea, estos materiales, esto es lo que de mucho volumen y bajo costo en general. Entonces no podía estar, oye, no tenía que hacer una reservación y ya la tengo que aprobar para poder comprar...
+
+
+
+UNKNOWN_SPEAKER:
+¿Tenemos segmentación y esas cosas para esos materiales?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sí, obviamente.
+
+Saul Portillo:
+¿La HML y todo eso está cargada? Sí, la HML está cargada.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Para esos 500 materiales son?
+
+Saul Portillo:
+No, no sé si para los 500, pero para los... ¿HML qué sería, Bill? Sí, porque todos los que...
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, Vidi, no. Vidi te dice el impacto de la operación, pero no te dice cuál es el costo de ese material. Con todo loco, uno.
+
+UNKNOWN_SPEAKER:
+Ah, trajiste los dos. Bueno, bueno, bueno.
+
+Bastian Osorio:
+Entonces, eso lo que estamos haciendo vos, estás ocupando el tiempo de forma ineficiente. ¿Por qué no metí eso?
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Por qué no metí esa segmentación ahí en crear de los que son forecast base cuáles son hml vas a ver porque en volada todos los que son forecast base son realmente son todos forecast base por cierto acá tengo solamente forecast base son todos un logo bueno en la misma sesión podemos agarrar unos gráficos con ellos creo Porque nos van a decir ya, pero qué tipo de materiales son esos. O te van a decir, yo creo que esos materiales son de estos chicos.
+
+
+
+Bastian Osorio:
+Y el BD me parece medio chanta, no me lo creo. ¿A dónde que van a ser todos baitados?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Baitan en el sentido de que si es que faltan, porque puede ser una pequeña tuerca, pero si falta y no puede ir a reparar la máquina, es baita. La pregunta es ¿qué máquina estáis reparando con esto? No qué material estáis usando para repararlo.
+
+Bastian Osorio:
+Eso justifica en todo caso la compra basada en forcas porque no podíais estar esperando a que te llegue la reserva, a que sea necesario para que lo compres. Lo teníais que tener antes.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Si podíais, teníais una cantidad absurda de stock.
+
+Bastian Osorio:
+No es óptimo, pero es posible. Pero de nuevo es ineficiente.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Exacto, eso es lo que el mensaje que tenemos Porque ellos tienen el stock del próximo año prácticamente con tal de que no les pase nada.
+
+UNKNOWN_SPEAKER:
+Tienen unos puntos de orden ridículos.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Entonces el approach que estáis siguiendo igual es más simplificado. Data para pronosticar, pronosticamos. No nos estamos enfocando a decir que el material es barato, caro, o si es que el lifetime es mayor que el meantime meeting failure, ni nada de eso. Porque en el BDD igual le habíamos puesto un poco más de color a esa definición, pero... No es que esté en contra de la idea de que sea simple. De hecho cada vez que lo pienso mal la idea del forecast nos dice que va a ser perfecto si para eso está el simple stock.
+
+ Porque el punto reorden lo que te dice de cierta forma el punto reorden te dice mantengamos el stock de no sé del próximo seis meses porque el ítem es el mes entonces puede ser un montón, mantengamos la demanda en los próximos seis meses ahora. Eso es lo que te dicen y eso puede ser un número alto. En cambio aquí podemos decir lo más probable es que esa demanda caiga durante el quinto Si no, tenemos esta cantidad de septistock.
+
+ Sobre todo si la demanda es más o menos continua, el approach del forecast debería funcionar. Los que son peligrosos son específicamente cuando hay poca frecuencia, pero cada vez que viene, viene con todo. Es como cada un año, pero de repente, ¡pa! 100 de una te piden. Esos son los peligrosos, porque si lo hacemos con un forecast, obviamente no va a funcionar. Y ningún septistock te va a poder suplir esas cantidades de golpe que vienen.
+
+ Tenemos que asegurarnos, Bastián, que los que vamos por castellanos sean de esa onda, de que no vengan de repente cantidades muy altas y fuertes. Porque si no, ahí los ponemos en peligro.
+
+Bastian Osorio:
+Es que, bueno, voy a revisar, pero me parece improbable que sea así. ¿Por qué? Yo también creo que eso es lo mismo. Un vuelo es un vuelo que suena así. Mira, si casi todos son planitos, ¿cachai? No, son todos medio...
+
+UNKNOWN_SPEAKER:
+son todos parejitos.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Y el forklot es en nivel mensual? ¿No estáis usando la segmentación de TimeSeriesAnalysis?
+
+Bastian Osorio:
+Sí. La estáis usando, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sé que la estáis usando para separar qué es ForecastBase y qué no es. ¿Pero estáis siguiendo de que este es intermitente, este es estacional?
+
+UNKNOWN_SPEAKER:
+¿Estáis usando eso? Sí.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ya, porque yo también lo estoy usando.
+
+UNKNOWN_SPEAKER:
+Estamos usando el mismo atributo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Pueden ayudarme con eso a separarlo? ¿Crear uno que sea para inventario? Y a Bastián le dejarle...
+
+Bastian Osorio:
+¿Pero cuál es la disidencia?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y yo para inventario ocupo un mínimo de 5 puntos para definir que tiene suficiente data o insuficiente, porque lo que pasa es que cuando tú al TimeSeriesAnalysis le dejas ahí 25 puntos, quiere decir que bajo eso no te hace ningún análisis, no me da ni el MeanTimeBetweenFailure, no me da nada, me dice insuficiente data de una, entonces me arruina un poco el propósito. Yo necesito que sobre 5 minutos.
+
+
+
+Bastian Osorio:
+De hecho, poniéndole cabeza, yo los materiales que son reorder points los forecastearía incluso a nivel año.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Es que el tema es que ese forecast tenés que bajarlo a algún mes específico para crear la orden de compra, si no hay que decirlo. No, si esos materiales te va a tirar orden de compra los ríos del puente ah tu decís del forca de referencia sí sí de acuerdo o cual o a nivel de cuartel a mí ese forca es que lo disculpan
+
+Bastian Osorio:
+para alguna cuestión del tpa o algo así pero más que eso no sé Eso, si no enfoques que no... Es solamente de referencia. Y para estos materiales sí lo voy a hacer a nivel mensual.
+
+Saul Portillo:
+De hecho voy a editarlo a esta nivel mensual. ¿Pero iba a tener que tener un keyfigure aparte o usar el mismo keyfigure? Es de referencia.
+
+UNKNOWN_SPEAKER:
+¿Cómo?
+
+Saul Portillo:
+Está de referencia.
+
+UNKNOWN_SPEAKER:
+No robo estadísticas.
+
+Bastian Osorio:
+Es lo mismo, simplemente que no se... El no va a pasar este a independent demand en supply planning?
+
+Saul Portillo:
+De aplicar el filtro.
+
+UNKNOWN_SPEAKER:
+Ajá.
+
+Saul Portillo:
+Subtítulos realizados por la comunidad de Amara.org Héctor, una pregunta, ¿te acuerdas cuando nos compartiste esto de MSME? Lo compartiste, que lo puse ahí en el chat. Lo compartiste del archivo de ACNOC Group Inventory Revision, el documento que yo nos compartieron, porque estoy viendo aquí otra tabla algo distinta.
+
+UNKNOWN_SPEAKER:
+No sé qué compartieron, la verdad.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No tienen por ahí, de hecho, sé que tiene la tabla, o Rahul, no sé dónde.
+
+Saul Portillo:
+Mira porque estoy viendo esto, voy a partirlo en un chat. A ver si ves lo que está en el chat allí, que acabo de enviar. Este es el documento interno de ACMEC. Y fíjate que es un poco distinto lo del Frequent, Occasional, Rare, No, pero ignóralo, yo creo que ahí usamos simplemente el FMSN.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Lo que pasa es que esta es la segmentación BID, parece como que no la asociaron a...
+
+Saul Portillo:
+No, no, no, pero lo digo la parte de arriba. Sí, Frequency, Occasion, Alert, Remote.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Para mí esa es la FMSN, pero como que no hicieron el nexo.
+
+Saul Portillo:
+Claro, claro, pero fíjate que dice once or more every year.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, no, no, pero esta es sola Espera, pero esa es solamente para BED. La FMSN está más arriba y es la que compartiste tú. Lo que digo es que utilizaron en el mismo documento, metieron dos segmentaciones de frecuencia. Una que ocupan a nivel general, FMSN, y después cuando hablaban de BED, metieron una que se llama, no sé cómo se llama, Occurrence, y pusieron otra segmentación.
+
+Bastian Osorio:
+Pero yo creo que hubo una inconsistencia en la solución, no sé quién hizo ese documento. Ah, Saúl, esa es mi pregunta.
+
+Saul Portillo:
+¿En dónde cargaste la segmentación de ellos? En el atributo que dice FMSN y BP. FMSN solo, el de ellos. FMSN solo.
+
+Bastian Osorio:
+mira, viste que está y z non y este está como f bueno yo creo que hay que cambiarlo acá, no?
+
+Bastian Osorio:
+Pero este no tiene... Viste que no... Eso hay que arreglarlo. Es que es rato, porque mira, ahora el maestro...
+
+Saul Portillo:
+Yo me metí esta mañana, ahora el maestro de...
+
+UNKNOWN_SPEAKER:
+¿Tienes FMSN? ¿Seguro? ¿No vi el otro? ¿DeepTank en group?
+
+Saul Portillo:
+Que raro, pues he cambiado aquí, estoy en la paramilitarización.
+
+UNKNOWN_SPEAKER:
+Y, no.
+
+Saul Portillo:
+Tengo la sospecha de que está en varios atributos, o sea, está en otro lado nuestro.
+
+Bastian Osorio:
+No, míralo, ahí está, ahí está.
+
+Saul Portillo:
+Ahí lo vi. Entonces que se ve que como se modificó chicos porque o sea uno que se llama curren fmsn mira ahí está el l pero mi duda pero mi duda es es raro porque no teníamos fmsn no teníamos xyz de hecho si te va a la configuración abnormal teníamos o lo teníamos así FMSN y FMSN-IDP.
+
+UNKNOWN_SPEAKER:
+Ahora sí se llama así.
+
+Saul Portillo:
+Lo que me extraña, lo que te digo es que no sé si se modificó algo porque en la ACNUR normal, ¿cómo está igual que ésta? Está FMSN y FMSN-IDP como lo habíamos dejado.
+
+Bastian Osorio:
+Yo no he tocado esto. Yo no he tocado esto. Pero aún así, por favor, hay que recargar los valores. En el current hay que ponerle... Bueno, hay que agarrarlo, ¿no? Ya, pero ¿tienen ustedes algo que esté apuntando a ese...?
+
+Saul Portillo:
+Hay que revisar, porque lo que me parece raro es que esté cargado ese Z.
+
+Bastian Osorio:
+Este ya me libre. Para distinguir, porque corren FMSN, no se entiende bien cuál es el IBP y cuál es el sistema de ellos que está ahí.
+
+Saul Portillo:
+Es que sí lo teníamos, FMSN y FMSN-IBP.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yo le puse FMSN por lo que habíamos hablado ayer, pero... Se debería colocar IBP por mientras para la sesión, pero a la larga debería llamarse FMSN, porque IBP va a ser la fuente oficial. No debería tener distintivo. Se debería al otro llamarle FMSN, SPO, no sé.
+
+Bastian Osorio:
+Llamenle como ustedes estimen conveniente, pero que se entienda bien, porque así no se entiende bien.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Pero carguen el que tienen, po.
+
+Bastian Osorio:
+Pero, ¿corren en IBP? No, carguen el que tienen. Igual se presta para confusiones.
+
+Bastian Osorio:
+Mejor S4 y AIBP.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Puedo editarlo ahí mismo? Edítalo ahí mismo, por momento ahí.
+
+UNKNOWN_SPEAKER:
+Dale, edítalo. Ahí.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Editarlo los dos, si. Porque uno lo toma a la vista y el otro lo toma a la master data.
+
+Bastian Osorio:
+Dejalo igual.
+
+UNKNOWN_SPEAKER:
+Ya, pero entonces hay que cargar el S4. Pues eso.
+
+Bastian Osorio:
+Sí, eso es todo de mi lado.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Quieres cenar y voy a revisar el final entonces?
+
+UNKNOWN_SPEAKER:
+¿Tenés la lista ahí?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Para mantener el mismo estándar después. ¿Vas a ejecutar Datacleanse o algo así?
+
+Bastian Osorio:
+Voy a mostrar nomás, pero Datacleanse no funciona como lo veo yo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Es que para data intermitente si no tenés suficiente de referencia, no te va a funcionar bien.
+
+Bastian Osorio:
+Sí, por eso, de hecho, yo lo saqué de que, bueno, ahí Saúl lo configuró, que ya apunta, es simplemente sugerido, ¿cachá? Y hace la corrección, pero no...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Porque yo iba a estar preguntando, veía el número rojo y preguntaba, oye, ¿esto qué es?
+
+Bastian Osorio:
+¿cachá? No, si está bien explicado, decimos que simplemente el sistema indicando que podría haber algún outlier, pero finalmente la decisión va a ser de los usuarios.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yo creo que esto deberíamos calcularlo La verdad es que cuando la data no es continua y más o menos pareja, funciona ahí nomás. Pues igual como cuando tenía un forecast y la data es muy variable, que va a dar un forecast más o menos. Bueno, el DataCleansing es lo mismo. Tiene la data muy variable, entonces no sé cuál es un punto de referencia en ese sentido. Es simplemente así. Yo creo que se puede ejecutar el DataCleansing, pero tendría que tener algunos filtros bien definidos.
+
+ Pero en el proceso en donde un tipo de mantenimiento venga a corregir esto no lo veo improbable.
+
+Bastian Osorio:
+Yo estimo que no sirve como referencia en algún caso excepcional y si no la data viene cruda. ¿Por qué no lo quitar y no más o menos que veamos el caso de uso? Lo voy a revisar y si no veo que no hay ningún caso específico donde Si funciona bien, lo voy a hacer acá. Tengo aquí. Y este Review FFFMSN Segmentation lo voy a poner más arriba. Pero es que eso no es de demanda.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Este inventario lo asistió en mi sesión, pero...
+
+UNKNOWN_SPEAKER:
+No debería ser acá.
+
+Bastian Osorio:
+Pero sigue una segmentación, ¿no? ¿Cuál es el problema?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Lo ven los Inventory Controllers.
+
+Bastian Osorio:
+Pero es como una segmentación ocupada como en...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Pero los que están a cargo de la segmentación, de revisar los valores, son los Inventory Controllers.
+
+Bastian Osorio:
+Bueno, y el Forecast también.
+
+UNKNOWN_SPEAKER:
+No.
+
+Bastian Osorio:
+Pero si actualmente hay un forecast. Y ahí va a ser la figura del demand planet que estamos hablando.
+
+UNKNOWN_SPEAKER:
+Tiene.
+
+Conference Room (Hector Palacios) - Speaker 1:
+La figura del demand planet que estamos pidiendo, si están pidiendo la gente mantenimiento.
+
+Bastian Osorio:
+Justamente Raúl dijo, o sea, es lo que queremos evitar, que no hayan 100 demand planet. Un. 200 demand planet. Yo creo que mañana la sesión es un poco para discutir eso. Pero yo no empujaría eso, no les diría... Bueno, acá tienen que estar revisando el forecast, ¿cachai? Yo voy a mencionar esto, debería ser llevado a cabo por los inventores de controles. Y para mí los demand requesters deberían seguir haciendo su trabajo tal y como antes.
+
+ ¿No te parece? El problema es que hay un desalineamiento de lo que estamos pensando y lo que se está pidiendo actualmente.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y es por eso que tenemos sesiones de una a dos horas con Namani discutiendo esta hueá. Actualmente ellos le están pidiendo al Demand Requester y al Demand Planner. Así como es hoy día, esa es la cuestión. Entonces si estáis trayendo a alguien que se llama Demand Requester a IDP es porque estáis pretendiendo que haga algo en IDP. Lo mismo para el Demand Planner. El Demand Planner sí, al Demand Planner de todas formas.
+
+ Si hacen superar como hoy en día, ni siquiera deberían meterse a IDP, deberían generar Work Orders y ya. Y eso se integra. Ellos no tienen que ni meterse al sistema.
+
+Bastian Osorio:
+Yo estoy de acuerdo con eso.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ya, pero es que eso no es lo que estamos empujando, o al menos cada vez hay gente empujando con ello.
+
+Bastian Osorio:
+Empujando no, involucren a estos usuarios. Estoy de acuerdo, pero ahí la conversación es otra. En qué momento vamos a transparentar que en realidad su input va a seguir siendo otra vez desurjana con la creación de las órdenes. Esta sesión puede ser para mostrarle el sistema, pero en realidad yo no veo no veo cuál es el valor agregado y ahí tenemos que sí ser más inteligentes en cómo comunicarlo, cuál va a ser el momento y ahí yo puedo estar de acuerdo contigo que quizás mañana no es el mejor momento pero no vamos a por una presión de algo que se dijo seguir insistiendo con algo que es incorrecto.
+
+
+
+UNKNOWN_SPEAKER:
+No, lo sé, lo sé.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Lo que más me preocupa es que estamos dando beneficios entonces como quizás va a mejorar fuerza que se vayan metiendo ellos porque estamos diciendo mira todo esto son fans mover y comprenden esta cantidad de de la demanda del volumen
+
+Bastian Osorio:
+entonces como que va a ser un incentivo y deberían si meterse a preocuparse no sé yo creo que no tenemos que intentar de forma digamos paso a paso y a la conversación a llegar al punto a aquellos a decir no acá sentimos que ustedes tienen que seguir o sea creemos lo mejor es que ustedes sigan haciendo el trabajo como lo siguen haciendo hasta ahora y los inventores y controllers van a tener que forecastear, ajustar el forecast para estos 5 o 4% de materiales que estamos viendo que tienen consumo masivo, ¿cachai?
+
+ Y a mí me parece que eso es una buena solución, si te soy honesto.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Voy a anotar las preguntas claves ahí. Una pregunta clave sería el tema de cuánto de la mantenimiento debería ser correctivo y cuánto debería ser preventivo en porcentaje, porque nos estaban diciendo el 80-20. Si fuera el 80-20, entonces estos compadres deberían hacer su pega bien, ¿no? Hagan lo preventivo y lo correctivo, quizás, lo hace IPP.
+
+Bastian Osorio:
+Eso, y sí, y eso también que tenemos que hacer algo, remarcar mañana que esto, ahí me le hiciste mucho Raúl, que esto... Primero, no hacer... Bueno, como son estos... Están presionando mucho porque no se diga que hay data challenges. Ese concepto lo tenemos que... No sé por qué. No, no hay que mencionar eso. Como que siempre mostrar el aspecto positivo. No falta nada. Sino que estamos progresando.
+
+ Ok. Eso lo dijeron ellos. Segundo... Hoy día la sesión del Hadoop. Entonces, ¿cómo vamos a transparentar el problema que tenemos? ¿Cuál problema? ¿El de la demanda preventiva? Sí, o sea, es que como tú dijiste, ese debe ser un tema de Bignes, que Bignes no nos pasó la data. No, porque nosotros igual lo vimos en el extractor. Ah, no, no estoy seguro. No, sí, lo vimos en el extractor. No sé, pero la cuestión es que los usuarios no son los responsables de data, entonces como que no ¿Mañana no se van a conectar los de mantenimiento, Bastien?
+
+
+
+Conference Room (Hector Palacios) - Speaker 1:
+Son los de siempre. Mejor aún entonces. Entonces mañana en lugar de...
+
+Bastian Osorio:
+Pero con los de siempre es que tenemos que empujar la idea de que los de mantenimiento no se metan.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, pero entonces es que eso es justamente lo que está ocurriendo en la República.
+
+Bastian Osorio:
+¿Por qué no vamos a mencionarlos mañana? Si mañana está el core team y no van a estar los de mantenimiento. Mañana es cuando lo tenemos que conversar justamente.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Pero tú mismo estás diciendo que no quieren que digáis desafíos, porque no digáis que no tenemos problema de datos, ¿cierto?
+
+Bastian Osorio:
+Bueno, yo soy más de la idea, yo comparto tu idea, yo soy más de la idea, pero es que tampoco siento que el tema de la data sea muy... No me preocupa demasiado, porque es lo que hay, ¿no?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Tenemos que saber trabajar con eso, Me preocupaba que tengan de repente dos meses de demanda preventiva y ya. Que el caso, según lo que recuerdo, en la sesión de diseño, cuando estuvimos discutiendo, que había un caso que tenían dos meses.
+
+Bastian Osorio:
+¿Qué hacemos con eso? Nada. Al futuro, dices tú. Sí. Pero lo tienen como órdenes.
+
+UNKNOWN_SPEAKER:
+Exacto.
+
+Bastian Osorio:
+Eso ahí lo tiene que abordar el equipo de Change Management, de cómo empiezan a ser Y eso sí es bueno, ajustar sus planes de mantenimiento preventivo. Y eso va a ser algo que quiero abordar en la sesión de la tarde o quizás ya del miércoles en la mañana.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Bueno, mañana discutamos, bueno.
+
+Bastian Osorio:
+Sí, yo me tengo que salir a otra reunión, pero después seguimos hablando. Chicos, perdónenme antes que saquen.
+
+Saul Portillo:
+Ya vimos cuál era el problema con por qué Basti hay en el FMSN, valores de aquí, de porque estamos usando el mismo atributo como id y descripción es el que usamos para variability, cuando corrimos de variability llegó la descripción también en el otro, eso es lo que estaba pasando, es el mismo atributo solo que uno es id y otro es descripción, se corre el x y el z con id y descripción te pegan los dos, o se corre separado quitando la descripción o creamos un atributo que creo que es la mejor solución, un atributo únicamente para eso, para no ser uno que tenga ID y descripción que el día de mañana nos pueda afectar.
+
+
+
+Bastian Osorio:
+Sí, ahí cambien, creen otro atributo. Yo no pondría material, yo crearía uno nuevo para el FMSN, porque no es material grupo. Sí, sí, vamos a hacer eso.
+
+UNKNOWN_SPEAKER:
+Gracias, chau. Chau. Gracias, chicos. Chau. Chau.
+
+UNKNOWN_SPEAKER:
+Más información www.alimmenta.com
+
