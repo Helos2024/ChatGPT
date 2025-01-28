@@ -1,0 +1,345 @@
+Richard Quinteros:
+Hola chicos, ¿cómo están?
+
+Melvin Alvarado:
+Buenas, ¿cómo estamos? Muy bien, muy bien.
+
+Richard Quinteros:
+Y ustedes? Comer con vida, vida. No hay tema. Seguimos vivos en la batalla. Me alegro muchísimo.
+
+UNKNOWN_SPEAKER:
+Excelente. Hola, hola. ¿Cómo están? Bien, bien. ¿Cómo estamos? Muy bien. Aquí atrás hay un par de cosas.
+
+Kerin Bonilla:
+No sé si ya habían empezado a hablar, perdónenme. No, todavía no.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Kerin Bonilla:
+¿Algún punto que quisieran resaltar? Yo sí tengo un pendiente con Flor y aprovechando que Walter está por aquí, pero los dejo a ustedes primero.
+
+Richard Quinteros:
+No, pues creo que más al lado de Florencia, ¿no, Flor?
+
+Gianni, Florencia:
+Buenas. De mi lado, lo pendiente que tenemos es la reunión que solicitamos mañana para ver el proceso de devolución. De proveedores. Ahí, baleando con ODIER, nos chocamos con una imposibilidad en SC, así que el objetivo es revisar con el equipo de Richard, y no sé si ahí también aplica Pablo, la mejor solución porque puede generar cambios de proceso como hoy se tiene, pero porque hay una limitante de que en el SC, así como lo teníamos planteado, no se puede hacer y la verdad que de nuestro lado nos golpeamos cuando ahora nos entramos a configurar que no se dio cuenta de esa limitante.
+
+ Así que tenemos pendiente eso, devoluciones a proveedores. Yo le pedí a Kering que mañana esté Melvin, Walter y había solicitado a Sandrita Sosa, porque sé que es la que más maneja ese flujo, para poder charlar y buscar la mejor solución o qué propuesta o cómo con ese proceso. Por otro lado, tengo pendiente el apoyo de Richard, que ya me dijo que me iba a estar colaborando en terminar unos flujos que se dispararon desde la interfaz de autoventa.
+
+ Ahí, a nivel general, más allá de que la mayoría sabe, pero nunca está de más aclararlo, NSC no termina el proceso una vez que le entregamos la entrega al EWM, sino que las integraciones, ambas dos deben recibir esa entrega, y ver cómo funciona la salida PowerStreet. Ya lo que es autoventa, probamos los procesos actuales, la lógica, generamos ruta local, ruta cross, se cargó el ID con el número de ruta final en el caso de cross, solo quedó pendiente para terminar de probar el desarrollo de mi lado, el apoyo que necesito de Richard con esas entregas.
+
+ Con lo que es reparto, seguimos probando. Se había encontrado un error en el código, así que está el ABAP revisándolo. Pero ya le había dicho de antemano también a Richard que les iba a estar enviando esas entregas para que me colabore para terminar de probar. Lo que es configuración, ya se solventó el tema de embalaje que teníamos. Ahí la verdad es que encontramos la solución. Gracias al Espíritu Santo porque hay una un problema técnico que viene así ya antes de Diana, pero lo importante es que ya se solucionó, se crearon los dos tipos de unidad de embalaje, se se extendieron, solo ahí el detalle que creo que es el tema que traía Kering es que deben tener en cuenta extender todos los materiales de embalaje por lo que estuve viendo en producción para son todos tipos materiales Z-REP o Z-REP de respuestos que están utilizándose en esas HU.
+
+ Sí es importante de que los activen, porque de hecho hoy en producción están utilizando el material que Pablo informó que estaba inactivo, en producción también está inactivo, porque bueno, igual ahí me apoyo en Richard, pero por lo que me comentaba Nodier, eso se filtra en el IDOC, si están inactivos directamente no se mandan. Pero bueno, si los que están usando normas de embalaje, deberían estar activos, así que solo ese punto.
+
+ Y dime.
+
+Kerin Bonilla:
+Pausa. Walter, con el tema de los embalajes, no sé cuándo lo vamos a poder tener, porque si ya necesito que Flor configure.
+
+Melvin Alvarado:
+Pero que ahí me pierdo, vaya. Esos embalajes o esas que se utilizan en el APT, algunos que son Sí, pero cuando se hace. Espérame, espérame, espérame, espérame. Entonces, yo lo que quiero saber es el tema de si esos, porque son ZR, vos mismo lo estás diciendo. Entonces, no son, no están dentro del grupo de de material de embalaje.
+
+Gianni, Florencia:
+Entonces, en la última que quedamos, que si van a crear esos materiales, o otros nuevos materiales, en el grupo de material, valga la También se había comentado en el correo que les mandamos, el proceso de traslado del APT al EWM traslada las HUD salidas del SB02 al SB22. Y si hoy están usando estos materiales en dichas normas, esos materiales deben existir actualizados en el EWM. Si no, las entregas no llegan.
+
+
+
+UNKNOWN_SPEAKER:
+Ahí tengo mis dudas. A ver, te explico rapidito. Dale, dale.
+
+Richard Quinteros:
+Imagínate que tú usas un palet de caoba en el APT, un tipo que tiene su material, el embalaje. Tú dices, bueno, pero pero yo voy a crear un nuevo código para los materiales de embalaje, como tú bien dices, está bien, yo creo un código para los materiales de embalaje de EWM, está bien.
+
+UNKNOWN_SPEAKER:
+¿Está bien?
+
+Gianni, Florencia:
+¿Me escuchan?
+
+Richard Quinteros:
+Yo sí te escucho.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Richard Quinteros:
+Entonces, haz de cuenta, en el APT tú tienes KOVA y allá en el EWM no tienes KOVA, tienes, no sé, ¿qué te gusta? Madera sencilla. Pino. Pino, pues. Tienes de pino. ¿Pero qué pasa? El APT te va a mandar, va a generar salidas de mercancías con embalaje. Material, lote, embalaje. ¿Va? Esos tres elementos. Cuando eso viaja, hace una entrega de salida, esa entrega de salida viaja o va hacia WM. ¿Qué? Porque el APT le manda a WM, ¿vale?
+
+ Porque es el centro de producción, si no estoy equivocado. De esa forma, como se genera una salida en el APT, con esos embalajes, ese producto, ese lote, también se genera a su misma vez una entrega entrante, que es para, del lado de DWM, poder recibir. ¿Vale? No sé cómo lo están haciendo ahorita en SC, pero me imagino que es por algún SPEC o algo así. Quiero pensarlo, no lo sé. Pero, básicamente, las unidades de manipulación que tú usaste, o los tipos de unidades de manipulación la que tú usaste para embalar en el APT que vas a mandar hacia EWM, pues esos mismos materiales de embalaje van a llegar en la entrega de entrante a EWM.
+
+ Cuando esa entrega de entrante con esos materiales de embalaje llegue y no exista el material de embalaje allá, se va a caer, pues no va a funcionar.
+
+UNKNOWN_SPEAKER:
+¿Me expliqué?
+
+Melvin Alvarado:
+Ajá, pero al final lo que entiendo que no importa que está en el grupo de materiales ZREP.
+
+Gianni, Florencia:
+No.
+
+Melvin Alvarado:
+Eso es lo que entiendo, o sea, que realmente lo que hay que, como un ejemplo, voy a utilizar esta palabra, como ampliar el DWM son estos materiales que están en ZREP.
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Gianni, Florencia:
+Lo que hicimos en D500 fue actualizar estos materiales, uno de los materiales que nos habían pasado, el que termina en se le agregaron las solapas propias para el proceso de WM para que le lleguen en estas entregas. Lo mismo que hicimos con uno, hay que hacerlo para todos. Al menos lo que usan en las normas de embalaje y activarlos, porque están varios. Hoy, por ejemplo, cuando recibí el correo de Richard, de Pablo, perdón, entré a producción a ver si estaban usando ese material o era algo del ambiente.
+
+ Y no, efectivamente, ese material también lo están usando en producción y está marcado como inactivo. Por eso hacía el comentario que ahí me apoyaba en Richard, pero a mí me comentaba Nodier que para que Lido, que informa los datos maestros de materiales, el material tiene que estar activo. Así que debemos, o deben, o apoyamos, revisar todos los materiales de embalaje que están usando en el APT, activarlos, extenderlos a completar las solapas, estas que armaron, que armamos, y enviárselo al EWM para que también sean parte de sus
+
+UNKNOWN_SPEAKER:
+datos maestros.
+
+Walter Segovia:
+Cuidado porque entonces ahí van los grupos de cajas también, va.
+
+UNKNOWN_SPEAKER:
+Sí, grupos, tendidos, cajas individuales.
+
+Melvin Alvarado:
+O sea, todo eso llegaría.
+
+Walter Segovia:
+Sí. Tarimba, mira, aquí lo tengo. Tarima.
+
+Richard Quinteros:
+Recuerden, recuerden, recuerden una cosa. A nosotros del lado de WM, ustedes cuando se refieren al tendido, para para refrescar un poquito la memoria, al tendido se refieren a El tendido, digamos, si tiene, digamos que la tarima tiene cinco filas. Ajá, cinco. Cada fila, cada fila es un tendido porque es un una cama. Una cama correcto va, así correcto va.
+
+UNKNOWN_SPEAKER:
+Ok, ok.
+
+Richard Quinteros:
+Y eso, cada cama de esas es un HW?
+
+UNKNOWN_SPEAKER:
+Sí. O no? Sí o no? Sí.
+
+Richard Quinteros:
+Pero por qué hacen eso y no mandan un pallet completo? Es que todavía no entiendo.
+
+Walter Segovia:
+Y por la naturaleza de algunos productos que no se pueden estivar con pallet completo por ser muy frágiles por lo contrario, por ser muy pesado. Entonces se combina un tendido, por ejemplo, de producto pesado y otros tendidos de producto liviano.
+
+Kerin Bonilla:
+Pero no habíamos dicho que ya no iban a haber de las misceláneas.
+
+UNKNOWN_SPEAKER:
+Exactamente.
+
+Richard Quinteros:
+Esto no te va a acabar.
+
+UNKNOWN_SPEAKER:
+Yo lo dudo.
+
+Melvin Alvarado:
+Esto no te va a acabar.
+
+Richard Quinteros:
+O sea, yo lo digo porque...
+
+Melvin Alvarado:
+porque a veces vienen hasta de plantas distintas ¿Por qué lo digo? A ver, si ustedes hacen eso ¿Vale?
+
+Richard Quinteros:
+En EWM sí o sí tiene que haber una desconsolidación. Y va a ser un paso adicional para ustedes, un trabajo adicional. Eso hace un trabajo para ustedes porque al final lo que van a absorber nuevamente la responsabilidad es el EWM.
+
+UNKNOWN_SPEAKER:
+¿Por qué?
+
+Richard Quinteros:
+Porque ustedes no pueden almacenar palet multi SKU, sino mono SKU de diferente lote, ¿OK? No, yo te entiendo Richaí.
+
+Melvin Alvarado:
+Lo que pasa que ahí sí nos tenemos que ir más atrás del proceso de las aduanas del lado de la PT. O sea, sí sí te entiendo, o sea, yo te digo que no, o sea, el objetivo es que no suceda.
+
+Richard Quinteros:
+no te estoy garantizando que vayan a desaparecer posiblemente minimicen pero no van a desaparecer bueno cuando en esos casos de que lleguen así nada más tenemos que tener cuidado con eso que comenta Florencia porque si ustedes van a tener no sé esos tipos de HW de WMP que están usando también y lo van a recibir de este lado se pueden crear si se crean y si en EWM hay que hacer algún retrabajo para poder separar esa mercadería hay que hacerla hay que hacerla porque porque eso no se puede almacenar así.
+
+ Recuerden que nuestras ubicaciones de rack son mono-SKU, no multi-SKU. Correcto. Entonces sí hay que cuidar mucho esa parte. Ahí nada más escuchen lo de Florencia. O sea, traten de minimizarlo. Entiendo el punto de que habrá casos en que se les escape. Y en esos casos en que se les escape, básicamente hay un workaround de la DWM, para hacerlo, para ejecutarlo, ¿OK? O sea, para cómo tratar ese esos escenarios.
+
+ Pero traten de que no pase porque pues si quieren un proceso continuo, sin interrupciones, pues hay que hacerlo bien desde el inicio, ¿no?
+
+Kerin Bonilla:
+Yo creo que ese tema mañana es lo que nos explicaría del foro o si mañana hay el tema de la evolución eh tenemos a a los demás podemos que miseláneos no lo iban a ver en la entrada de APT. Igual te comprendo a ti que si no pues es una configuración adicional en SNWM que no la tenemos.
+
+Richard Quinteros:
+Es que nosotros no almacenamos miseláneos.
+
+Walter Segovia:
+No es que al final digamos si viene una miselánea no se almacena como miselánea, como tal, sino que se separa. El material de embalaje es el que ocupan virtualmente, pero físicamente no se almacena tarima miscelánea.
+
+Kerin Bonilla:
+Es correcto, por eso es el paso extra que dice Richard, que si eso es así, hay que ver en el WDM porque no está contemplado.
+
+Richard Quinteros:
+Correcto. Solo eso, chicos. Pero lo que dice Florencia, pues es necesario. Considerar todos los tipos de manipulación, como les digo, son totalmente importantes. Y enriquecer sus datos, si están marcados para borrados, activarlos, si los están usando, todo eso. Y creo que quedó bastante claro. Ahí dijiste algo Melvin, bastante importante.
+
+UNKNOWN_SPEAKER:
+Todos a la vez.
+
+Gianni, Florencia:
+Bueno, nada, sólo esa observación con los materiales, de si los que están activos lo deben activar porque se están usando, si no, no va a ser tomado por el IDOC para viajar al EWM. Y más que nada por este proceso. Después, lo que les comentaba, la configuración nosotros ya estamos finalizadas, queda pendiente mañana la charla de devolución por si surge algo o en este tiempo que Richard y Pablo nos soliciten particularidades como el tema de embalaje.
+
+ Ya estamos de nuestro lado terminando ese manual de configuración para entregárselo. Estamos con las pruebas de las integraciones. Lo que es autoventa, si les parece y ven apropiado, les puedo hacer una primera demo en desarrollo hasta la llegada del EWM. Una vez que Richard me colabore con los casos, yo lo valido si funciona bien. Y ya podemos pensar en el 100% de la demo cuando estemos en pruebas integradas.
+
+ Pero por lo menos la primera parte ya se las podemos ir revisando si quieren. Así como hicimos la primera demostración, ya hacer una segunda demostración con las integraciones, porque hay muchas tablas de parámetros que se adicionaron, muchos campos, que va a ser también actividad de cutover, que ustedes deben entender cómo funciona, porque el objetivo es para ser escalable en el tiempo. Escalable en el tiempo, en el sentido de que si cambia una, por ejemplo, Guatemala empieza a operar en el EWM como El Salvador, la misma definición, con cambiar un flag, él funciona la integración, más allá de las configuraciones que son aparte.
+
+ Queda pendiente revisar el tema de las notas de crédito de devolución, pero honestamente yo prefiero pasar a calidad y hacer un mini set de pruebas en calidad con Richard, porque tengo muy limitante las pruebas, como me falta probar dos movimientos de mercadería, que tampoco los puedo probar porque tengo el ambiente bastante feo y me genera mucho trabajo acomodarlo que esperar a validar en calidad esas primeras pruebas.
+
+ Ahí un poco alineado como Melvin había dicho la vez pasada, como se trabajó en otros proyectos que se va planificando las pruebas integrales para ir avanzando en paralelo en el caso de que algún tema se requiere en dicho ambiente probar de nuestro lado. Así que nada, en la brevedad les doy aviso de que ya terminamos los desarrollos, como les comenté, autoventa, el estado, reparto, estamos terminando de probar con ABAP para solicitar el apoyo de Richard y terminar el flujo.
+
+ Las configuraciones ya están completas, falta que revisemos lo de devoluciones. Así que ahí estamos y ya estoy viendo el SharePoint que me compartieron, toda la documentación para que lo vayan a ir validando. Ya también estamos trabajando con los manuales de configuración.
+
+Richard Quinteros:
+Ahí una pregunta, Florencia, cuando te refieres a devoluciones, tú dices que me mandaste, tú me mandaste un correo el viernes. Perdón, es que no lo he revisado porque estaba full también de mi lado. Entonces, pues básicamente ahorita lo que voy a hacer es revisar lo que tú me comentas para cerrarlos. No sé si tuviste oportunidades de hacer el tema de las devoluciones, las clases de documentos que te pedí, quizás.
+
+ No sé. Déjame ver aquí cuál fue. Yo te mandé un correíto. A ver. Ah, OK. Sería esta manera de prepararme dos entregas de tipo de devolución al proveedor local y una para devolución al proveedor de importación.
+
+Gianni, Florencia:
+Eso es lo que queremos revisar mañana porque necesitamos ver con la solución. Ah, bueno, ya, con razón.
+
+Richard Quinteros:
+Esa es la sesión de mañana entonces, listo, alineado. Ok. Entiendo. Esperemos no sea tan malo.
+
+UNKNOWN_SPEAKER:
+Ajá. ¿Qué otra cosita?
+
+Richard Quinteros:
+Bueno, ahorita te mando entonces respuesta de eso y te mandé por aquí el chat un mensaje de error que tengo en SC con el material de embalaje para ver si me puedes apoyar, revisar. Dice que falta en el customizing asignar el grupo de material Y001, grupo de material supongo que es de embalaje, a clase de medio de embalaje 0001. Ahí te pasé el mensajito al chat. Me imagino que es porque como están entrando la contabilización y está registrando unidades de manipulación, entonces por eso pasa eso.
+
+
+
+Gianni, Florencia:
+Ese te dio con el último con el 116?
+
+Richard Quinteros:
+No, no, no, eso es una entrega mía. Ok, es mi entrega, que pues yo hicí, pero la estoy contabilizando y no está pasándolo por esa cola, no, que se quedó ahí en SCC. Un tema con los materiales de embalaje. Pero me parece que dice que falta la asignación de configuración. O sea, no sé si me puedes ayudar, ¿vale?
+
+Gianni, Florencia:
+Sí, sí, sí, dale ahí reviso, le digo, le voy a pasar ese error a Nodier y te aviso y lo revisamos, sí.
+
+Richard Quinteros:
+Dale. De momento, pues nada, entonces te respondo ahorita el correo y seguimos avanzando, ¿vale?
+
+Kerin Bonilla:
+Walter, con ese tema de los embalajes, ¿cuándo podríamos tener ya listado para que lo pueda revisar Flor? Porque si necesitamos hacer la sola paz.
+
+Walter Segovia:
+Sí, allá le contesté el correo que es el mismo que nos ha compartido. Es el listado el que ya valide con planta y todos están siendo usados.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Walter Segovia:
+No te escuché. Solo Melvin quiere opinar algo aquí.
+
+Melvin Alvarado:
+Igual yo creo que hay que revisar ahí porque no sabemos si por eso se han actualizado esas normas.
+
+Richard Quinteros:
+Y una pregunta, aquí nuevamente, creo que ya la hemos hecho como varias veces. En los rack de EWM, de Centro de Servicio, ¿qué pallets o qué tipo de pallets almacenan?
+
+Walter Segovia:
+El 1x1x20, el estándar. ¿Sólo uno?
+
+Melvin Alvarado:
+Normalmente el que están utilizando es el 11-0-43. ¿No hay uno más grande? El otro es de Estados Unidos, MIGAR no tiene otro código.
+
+Walter Segovia:
+110042 tiene el de Estados Unidos, pero las medidas son las mismas.
+
+Richard Quinteros:
+Pero si existen como materiales de embalaje separados hay que usarlos también.
+
+Walter Segovia:
+Si es que se separa con otro código porque lleva un tratamiento de plagas el de Estados Unidos diferente al de Centroamérica. Pero la medida es igual.
+
+Richard Quinteros:
+Vale, nada más aseguren de crearle el dato maestro para enviarlo a AWM también.
+
+UNKNOWN_SPEAKER:
+Eso.
+
+Kerin Bonilla:
+¿Eso lo apoyaría usted, Melvin?
+
+UNKNOWN_SPEAKER:
+¿Cuál?
+
+Kerin Bonilla:
+¿Instanciando ese dato maestro de AWM de los embalajes y después que Flor revise las solapas?
+
+Richard Quinteros:
+Si gustan, no los envíen ustedes, solamente indiquen o sea me informan cuáles son los materiales de embalaje que ya actualizados totalmente ya con sus datos maestro todo y nada más con la intención de que yo los envíe y así me dejan me dejan el chance a mí de poder enviarlos y poder controlar el envío es decir para yo saber que llega correcto que llega incorrecto pero si solo requiere que se le dé la actualización al dato maestro y
+
+Kerin Bonilla:
+ejecutas todo lo del. Yo ejecuto el envío. Ah, pues sí, nos ayuda usted a ir Melvin.
+
+Melvin Alvarado:
+Yo voy a revisar las normas, cuáles materiales están y voy a ver con Walter cuáles son realmente los correctos.
+
+Kerin Bonilla:
+Ok, bien, entonces espero la sesión para mañana, la moví porque Sandrita no podía después de mañana. Así que el tema de la devolución. Y ahí pues concluimos ese punto. Igualmente, Richard, para lo de exportación que habíamos quedado pendiente.
+
+Richard Quinteros:
+Sí, sin problema.
+
+Kerin Bonilla:
+Y hablábamos con Richard la vez anterior del traslado a calidad y ahí menciona que ellos pues solo le demos la indicación y ellos pueden trasladar también en algún momento que para WM no sería como ese mismo ambiente, diferentes mandantes ejecutarían los traslados, te comprendí, verdad Richard?
+
+Richard Quinteros:
+Así es, para nosotros es sencillo, o sea, no hacemos STMS, pues ni mucho menos, no? Es como irse al mandante o destino e importar y ya, y pues aplicar el cutover, no? Y pues ya. Lo coordinamos después de la sesión, Flor, de lo que concluyamos de la evolución en caso de la posibilidad de trasladar lo que tú querés probar ya en QA como prueba unitaria y ya después la agenda de lo demás que
+
+Gianni, Florencia:
+nosotros tenemos que probar como equipo Sí, igual podemos ir haciendo traslados a calidad para ir avanzando en paralelo, aunque lo de mañana genere cambios de customizing en SC o en donde sea. O sea, no es que porque transportemos ahora no vamos a necesitar transportar de nuevo, así que podemos ir haciendo transporte parciales. Yo puedo ir haciendo transporte, no tengo tema.
+
+Richard Quinteros:
+Nada más que, pues, dame un chance entre hoy y mañana y, pues, de lo que tenemos. Ok. Listo. Ok, de acuerdo. Les agradezco mucho entonces. Antes, antes, antes, Jenny, me escribes por WhatsApp y para revisar este tema, este error, es que de esto, pues, dependo para el end to end del escenario de mañana de exportación.
+
+UNKNOWN_SPEAKER:
+Please.
+
+Gianni, Florencia:
+Dale, sí. Déjame contactar para que nos apoyen y ahí te aviso.
+
+Richard Quinteros:
+Vale, si no pues nada, ya igual que quede la cola ahí mañana y pues ya se vio el escenario en EWM, pues no pasa nada, que es lo importante.
+
+Gianni, Florencia:
+Pues bueno, eso equipo. Usted, una pregunta, ese mensaje lo estás viendo en SC o en EWM?
+
+UNKNOWN_SPEAKER:
+En SC.
+
+Gianni, Florencia:
+Y por qué transacciona? Si abro el texto, y se lo paso más detallado a...
+
+Richard Quinteros:
+Usted no se preocupe que yo le muestro acá mismo, mire.
+
+UNKNOWN_SPEAKER:
+SMQ2.
+
+Richard Quinteros:
+¿Sí se ve?
+
+UNKNOWN_SPEAKER:
+Sí, Pip.
+
+Richard Quinteros:
+Ejecutamos y aquí está el mensaje de la única entrega, ¿ve? Y aquí doble clic y aquí te dice doble clic en el customizing falta asignar el grupo de material PM ya está resolvido en la clase de embalaje 0001.
+
+Gianni, Florencia:
+Listo. Listo, danos chance que ahí le pido apoyo a Nodier y te aviso por WhatsApp. Vale. Perfecto. Gracias.
+
+UNKNOWN_SPEAKER:
+Muchas gracias.
+
+Gianni, Florencia:
+Subtítulos realizados por la comunidad de Amara.org
+
