@@ -1,0 +1,1026 @@
+UNKNOWN_SPEAKER:
+Oh.
+
+Bastian Osorio:
+Hi, Please let us know when we can start.
+
+UNKNOWN_SPEAKER:
+Can you hear me?
+
+UNKNOWN_SPEAKER:
+Yes, yes, that's true. Great, thank you.
+
+Bastian Osorio:
+Is Halid here?
+
+Tara Madhavan (ADNOC Group D&CS):
+He is actually on another meeting with Asma, Rahul, etc. It was supposed to end by 1.30 but we are seven minutes past now. So should we wait for him or should we start? Can you give me a minute? I'll try and check.
+
+UNKNOWN_SPEAKER:
+I'll update you. Can you hear me? Yes. I have like one request.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+For example, the morning you showed us an example. You can start.
+
+Tara Madhavan (ADNOC Group D&CS):
+Rahul will join once his discussion with Asma and everybody.
+
+Bastian Osorio:
+Okay, continue with your question, Aysha.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+The morning you show us like the report and how I really work based on the location. For example, like for me as an inventory controller, when I come like for work, I like to do my regular things. It's either on reservation report for...
+
+Bastian Osorio:
+Sorry, Aysha, but I cannot hear you well. It's like you're far away from the mic.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Now it's OK? Yeah, now it's better. Yeah. Like, normally, we run reservation report for action. We're running the new stock report for action. And everyone is assigned with the MRP controller, which I use it to give me all item on the list with different locations and plants. Here in IBP, how it will be? So either I go like a single location, because, you know, in the future, I'll be handling amount of control for all of the group companies.
+
+
+
+Bastian Osorio:
+So how will you handle this?
+
+UNKNOWN_SPEAKER:
+Yeah, so let me share my screen.
+
+Bastian Osorio:
+So as we were saying in the previous session, we will have two cases, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+The one is when it's forecast based and one is And the second one is when you're planning based on reordered point. When you're planning based on reordered point, there is no change. Although you will be able to see the reservations in ABP, the forecast won't drive the PR generation. So you will still have to approve the reservations for the reordered point planning materials. Okay, but for the materials that are forecast-based that, as we said, have more than 25 consumptions in the last five years, you will first start by buying based on forecast, okay?
+
+ Then you will receive that reservations and that reservations will consume the forecast. Because these materials, as we saw, is very likely, although we have, of course, to extend the analysis for all the materials, are going to be very high in consumption. And secondly, it's very likely that these materials are cheap. So cheap, high consumption materials you don't have to go through this approval process.
+
+ For expensive materials with low consumption, yes, the process will still be the same. The only change in the short term will be that we will optimize the pre-order point levels, and then you also will have the option to see the long-term planning, long-term forecast, and this is where we're going to see now, how it can, it provides more value, the long-term forecast. But again, for reorder point, you only will buy based on reservations.
+
+
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Sebastian, I get all of these things. My question is, for example, let's say Asha is handling mortgages. It's one group from electricity and commodities. I want to start now reviewing and doing actions from Minnesota conservation. How in IBV I will deal with that? How, like, for example, I go filter motors under which a multi-controller for all plants, how I will do this practically?
+
+Achmad Sonhaji (Borouge):
+That's my question.
+
+Bastian Osorio:
+Yeah, we'll see it now. We'll see it now. So first, I want to show this. OK, we will have a set. Two forecasts. One is just for the reorder point, it's just a reference, OK? And it will run on a yearly basis. We will run a forecast on a yearly basis, although we can change this to quarterly if the data is sufficient enough. For the forecast-based materials, we will run the model on a monthly basis, OK?
+
+ Here I have, and again, as I said, the purpose of the forecast-based forecast, well, sorry for the redundancy. The purpose is the PR and STO generation. Whereas for the reordered point materials, the forecast, the only purpose of the forecast is reference, okay? So let me show you. You some details. First of all, here we have the chart for the forecast. As we were seeing, as I was mentioning in the morning, we only have for one location, which is the 2101.
+
+
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I don't want to go based on location. I want to go based on item or groups.
+
+Bastian Osorio:
+Yeah, so let's go based on item. So this is for the forecast based material. So here you have the plant and you have the material.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+You want to filter the information or you want to see it in a consolidated way?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+For example, let's say I'm handling all the motors for all admin group companies. I'm responsible for replenishment and reservation.
+
+Hector Palacios (ADNOC Group D&CS):
+So you want to see all the motors in all the plants.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Basically you want to filter all the items under this group for all companies for all plants.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, in that case I will explain that question. See actually all the inventory controllers based on the material group there will be mapped metal group. So we can run based on the material group. Yeah, I'm not. Yeah, MRP controller will be mapped based on the material group.
+
+Bastian Osorio:
+So let's say you are in charge of, let me put one example here, of this material, OK? So what you can do is go here, IBP, edit view, and filter.
+
+Hector Palacios (ADNOC Group D&CS):
+Fabacio, they want to filter by material group. Can you look for the attribute that is called product group? We need to change the naming, but let me find it for you.
+
+UNKNOWN_SPEAKER:
+Just give me a second.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Aysha, do you have the ID number, material group ID? Look for Prague ID, Prague group ID, Vasthi.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Prague group 25 ID. Let's select 32.
+
+Hector Palacios (ADNOC Group D&CS):
+That one. Let's check if that what they are expecting. We are in a process of fine-tuning the naming conventions.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Now you can search by the code number 32 series.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Or we can search by, you know, for the UPG, like 32 series. We can get like this.
+
+Bastian Osorio:
+We cannot hear you well, Aysha.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Like, for example, I told you, like, I'm responsible for all electrical group, for all admin group companies, which falls under 32 series. Here in IBP, I can put, for example, I'll filter all 32 series product to be chosen. All the items?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So in this example, I'm just putting one material for this material group, OK? But in the same way, you will be able to just filter by just that material. Sorry, by just that material group. And see all the materials, or if you prefer to see the view aggregated, you can just take out the material ID and look at the total category. So in this case, we are seeing the entire category, the oil, lubricants, and greases for general use.
+
+ And we're seeing first the consumption of the last year, then the consumption of this year, then the forecast, And then the forecast, OK? I'm going to explain later these three key figures. But based on the consumption, the system is telling us that the forecast is 830 per every month on the other. So one month will have demand. The next month, no. And like this for the next few years. So we have some more demanding in some periods.
+
+ So then when you receive a reservation, you also will see the reservation here. The reservation will consume this forecast. Why are we doing this? Because based on this forecast, I mean, based on the consumption pattern, you need to buy before you get you get the order, the reservation order. Why is that? Because your consumption is too high. As you can see here, you have consumption almost every month, on multiple months.
+
+ So that's why this material can be forecasted. But again, for the materials that have less than 25 points, the forecast will be only for reference purposes, but the forecast won't drive the PR of STO generation. I don't know if that answers your questions, Aysha. Aysha?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Yeah, Boston, continue.
+
+UNKNOWN_SPEAKER:
+Boston, one more question.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Is there any feature like to filter by MRT control?
+
+Bastian Osorio:
+You can filter by anything you want. If we have that information in S-Rohana, we will integrate it and you can filter by whatever information we have here. But do you have that information in S-Rohana?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Yeah, sometimes we run reports based on MRT.
+
+MM- SKEC2 - L08:
+Sorry, I mute the room because there was some noise.
+
+Hector Palacios (ADNOC Group D&CS):
+So, in summary, we can bring all that information for the unit testing that we have right now for the design validation. We haven't integrated the MRP controller yet, but for sure it's on the list of the things that we need to integrate because we know that you are separating your work and your assignments based on that. So different planners or controllers will have different MRP controller assignments, right?
+
+ So yeah, you will be able to use it. We will be able to filter based on that. We will be able to create reports. Based on that alerts, everything that you do on IVP can use that information.
+
+Bastian Osorio:
+OK, let's continue. So as I was saying, this is the forecast for the reorder point materials. So let's review a little bit the model first, and we will check some of the results. So if I go here, so there's an app that you can see here. It's called Manage Forecast Models. If I click, I will see all the different models that are available in the system. Again, for the ones that are rear-of-the-point based, this is the one.
+
+ Z01 ad hoc statistical forecast MRO year. If I click on it, I can see the time period, meaning at the time that I'm running the model is year. I'm using the last five years of history and I'm forecasting the next four years. I can change this to And this error measure calculation is to measure the error I will put the last year or last two years. Just to give you an example, we need to fine tune that through testing with more data.
+
+ Then if I go to forecasting steps, I have first the input. The input that I'm using is the actual usage for corrective maintenance, final, is the data which was corrected manually. We checked that at the end of the previous session. And then the output is the statistical forecast for corrective maintenance. And in this case, we're using three algorithms, the cross-zone method method, the cross-zone TSB method, and the automated exponential smoothing.
+
+ Here I put a brief description of the models, although during the training sessions we will explore and see more about these different algorithms. But the main difference between the cross-zone method and the cross-zone TSB method is that crosstalk method is more rigid, calculates then. So these two models calculates two things, basically. These two, crosstalk and TSV, calculates two variables. First, the time between consumptions and the amount that is consumed in every period.
+
+ So for example, what we saw here is that in general, These materials, or this is what the system is predicting. This material is consumed every two months, right? Once every two months. But every time this material is consumed, the amount is 830 units. OK? So it's like the lot size and the time between consumption. OK. What is the difference between these two models is that the TSB calculates our probability of consumption.
+
+ So in some, you won't have fixed periods like this. In some cases, you will have more periods with zero consumption. And in other cases, you will have less periods depending on the probability. And the probability is something that is calculated automatically in the system. And then we have the automated exponential smoothing. The automated exponential smoothing is a model that takes into consideration three components.
+
+ The first one is the average. The first one is the average. The second one is a trend. And the third one is the seasonality. OK, but I don't want to go in too much detail regarding the models. What I want you to know is that the system will try these three models and will select the best one, as we can see here. Which forecast will utilize? Utilize multiple forecasts and choose the best forecast based on an error, OK?
+
+ OK, I'll save. I will say the forecast model updated, and now I can run it. The model that I updated was the one that runs on a yearly basis. So to run the model, I go to IVP here. I go to Application Jobs, Run, and the Statistical Forecasting. I'm going to run the model. Model at material and location level. And the model to be used is the Z01 ad hoc statistical forecast MRO year. For the filter, as I said, I'm going to only run for planning type reorder point and run.
+
+ If I click Navigate to Status, I can see more of the details of the different runs that all other users have done. So, for example, here Hector has been running different models, me as well, Saul, Vivek, so you will be able to see who runs what, when And as I can see here, the model finished. So I can close here, go to IBP, and refresh the data. So let's take one example. So first of all, I can see here in the chart that pretty much the model is in line with the previous consumptions, right?
+
+ The green bars are the historical data and the blue bars are the statistical forecast. So although you can make some adjustments, I don't think it's necessary to make adjustments because again, except for the reorder point, the model will only work as a reference and mainly I think it can add a lot of value for the budget. We'll review that later. But let's take this one. So as you can see, on average, here we have 15 for the model forecast for the consumption for every year of 17 units per year.
+
+ So why is this useful? Because although this material will be ordered based on reservation, not in forecast, you already can have a first glance of how much, how will be the consumption for the next years and start planning your budget, okay? Same here, for example. We still have some work fine tuning the models, but in general, I will say that most materials have a pretty good enough forecast. Here, for example, you have 7, 6, 2, 12, and the system forecast 7 for the next years.
+
+ We can see here the chart, and it looks reasonable, I believe. But the important thing is that because you can have a lot of material that will be reordered point-based, you know, at a high level, so at a high level here, for example, how much you will consume for these materials. And on the top of this, we'll, of course, we're going to... Okay, I will continue. So, as I was saying, if we will be able to forecast for the different locations, for the different And this isn't just as you check, just takes a few minutes, a few seconds to run the model and choose the best one.
+
+ So we will be able to generate an estimation. I think a decent estimation on a yearly basis for the consumption of the next five years. So in terms of how much AdNoc will spend in terms of purchasing spare parts, you already you will have a first glance in just a few minutes. Again, this is for reorder point. Here you have more examples. But yeah. So now we're going to jump into the forecast base.
+
+
+
+UNKNOWN_SPEAKER:
+The forecast base. Yeah? Question?
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Are ROP set in that in the middle because now they mentioned on the for the next five years projection so once it is approved on it will go and update the middle master at ROP number no in this case
+
+Bastian Osorio:
+this forecast again works only for reference purposes yeah just reference for this one forecast based forecast based yeah for this one yes But now let's see the model for this one, and let's see the results. So here, the model is a statistical forecast MRO month, because it runs on a monthly basis. So these models can run on a more detailed basis. Why? On a more granular level, on a multi-level. Why?
+
+ Because we have way more data. So we have 58 historical periods, and we're going to forecast 58 periods, which is, or we can put 60 months, which is five years. The forecasting steps are the same ones that for the previous model. We're going to run the three models considering intermittent model croissants, but also materials with more continuous demand patterns. We have here selected considering time properties.
+
+ This is important. What is that? It means that as we run previously the forecast automation, which will determine if a material, it will recognize using material learning the different demand patterns. So for example, if the system recognizes that certain material have a continuous pattern, meaning like a flat pattern, the consumption is very stable across time, then the the system will apply only models that address this type of demand pattern, meaning continuous flat.
+
+ Conversely, if the material, for example, has an intermittent pattern, then the system will only run the cross-turn methods. Why? Because this is the way the material behave.
+
+UNKNOWN_SPEAKER:
+OK. So we're going to save it.
+
+Bastian Osorio:
+The forecast model is updated now, and we're going to run it.
+
+Rajiv Kumar Gupta (ADNOC - PE&ICV):
+So forecast model, you said, which forecast model we have to use? It depends on the planning, what kind of planning we are doing. Either it is operational planning, short-term planning, or long-term or strategic level, is it something Exactly.
+
+Bastian Osorio:
+At the end of the day, it's something that can run automatically. We can, in fact, merge all the different models and put it in just one job. But I'm giving, of course, the full explanation so you have the full context of what are we doing. But at the end, yeah, just with one step, we're going to run the two models. I mean, you can merge many steps into one job template and then the person in charge, the process champion, will run the model and you just will see the number.
+
+ But yeah, but again, I said I'm giving the full explanation so you understand in full detail what's going on in like in the back end of the system. Okay, so for run the model, again, SAP IDP, application jobs, run, and statistical forecasting.
+
+Bastian Osorio:
+Again, we always will run on a location level and material ID. And the model is the statistical forecast MRO month. And the filter, in this case, reorder point, sorry, not reorder point, forecast-based materials, right? Just for the materials that have more than 25 consumptions. It's running. I don't know what's... I will disconnect and log again because something seems to be happen for this small set of data this system is lagging with the huge data how it is going to handle I think I have a connection problem so what that the It should be taken care of I'm not sure where it is.
+
+
+
+UNKNOWN_SPEAKER:
+but it seems to have a connection problem.
+
+Bastian Osorio:
+Okay, now Come back. Good. So we can check the status of the forecast that I run. I need to run it again.
+
+UNKNOWN_SPEAKER:
+Again, statistical forecast. And forecast base. Run.
+
+Bastian Osorio:
+Now it's working. I think it was just a connection issue. But no, don't worry. We have run multiples, a lot of different combinations, and the system takes just a few seconds, even a few minutes. Look, finished. So I'm going to select the filter forecast base and look at the results. OK, here I'm seeing on a monthly basis, but just for the, sorry, I'm gonna give you just to look at the different materials, materials ID, okay?
+
+ Great. So also, just to look at the information on a high level, I'm going to put the data on a quarterly basis. And then if we like, we can go in further details. So let's start from 2022, sorry, 2023 till 2028.
+
+UNKNOWN_SPEAKER:
+127, yeah. Okay.
+
+Bastian Osorio:
+So let's say this material, for example, this gasket. Yeah, the system is giving us a flat consumption, a flat forecast of 19, in some cases 38, but mostly 19, a flat consumption. Here, this one also looks, yeah, the system is giving us 36 flat. Blood consumption If we go for the materials with higher consumption this one for example There's yeah this one or the lubricant Yeah, it's It's in 22, I believe.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah. OK.
+
+Bastian Osorio:
+So the next step will be the collaboration. OK. So what if a planner wants to collaborate and adjust the value that the system is providing? Well, there is two ways to do it. And the final definition needs to come out from the users. But in this case, let's say for this material, let's say the user says, no, this is too much. Based on my knowledge, based on my experience, I believe the consumption will be 25% lower.
+
+ So I can put, for example, for Q2, 2025 minus 25. And I save it.
+
+Bastian Osorio:
+And the system will automatically deduct the corresponding amount for the 25%. So my final forecast will be $1,245. So the proposed value from coming output of the statistical forecast is, well, almost $17,000. 100, whereas based on the adjustment made by the planner, the final amount is something close to 1,200. And you can do it, of course, the other way around. Instead of increasing the amount, let's say I'm going to increase it 50% here.
+
+ And you just go here, click Save.
+
+Bastian Osorio:
+And then you have the increase amount. Or instead, if you want to just keep it as it is, or maybe if you want to deduct the 100%, you want to say 0%. Here I deducted total amount and the forecast is zero.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+And this is a question for the users because their request was to work with percentage and that's fine, that can be done. But do you prefer to work with directly with quantities or with percentage?
+
+UNKNOWN_SPEAKER:
+Quantity will be better. Correct.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Quantity will be better no?
+
+UNKNOWN_SPEAKER:
+Quantity or percentage?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Whatever the quarterly or the monthly or the early no? Instead of giving as a percentage increase or decrease. You can define the quantity is fine.
+
+Bastian Osorio:
+Yeah, yeah, they can. We will adjust the configuration so you, instead of putting the percentage, you put directly the amount. So in this case, you put, I don't know, 500, and the final forecast will be 500, regardless the percentage. Is that definition common? Across the different users.
+
+UNKNOWN_SPEAKER:
+Okay, can I go to the table once again?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The planner input table. So in Q2, 2025 the statistical forecast is 1660 the system is addressing that quantity and planner he reduced from 1660 to may be 1000 or ok minus 25% is ok so in Q3 the forecast will become 830 because there
+
+Bastian Osorio:
+is no change from the planner the final amount stays as it is in the statistical forecast.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So at least each quarter of the scale, I mean, this file has to be reviewed?
+
+Bastian Osorio:
+Yes, but only for the, I mean, it depends. You can maybe just review at the beginning of the year the full next five years, or you can go month by month as you prefer. But again, this is just for forecast-based materials. That will be...
+
+Hector Palacios (ADNOC Group D&CS):
+We were proposing the frequency based on the movement type. So if something is, for example, I don't know, mid-mover, I don't expect you to check this every quarter, right?
+
+Bastian Osorio:
+It's not going to change. A mid-mover is unlikely that is forecast-based because it moves frequently.
+
+UNKNOWN_SPEAKER:
+Yeah, you're right.
+
+Bastian Osorio:
+This is just for fast-movers. For medium-movers, we won't plan with forecast.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, fast-movers, I think that the proposal we had on the that was like every every month. But we also want to hear you if you think that is too much too frequent.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Let's discuss about it. Did this I mean this comment or feedback? No, we should hear from the You team. All the wonderful this data.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, let's park it here. We take the point.
+
+Bastian Osorio:
+I think we will be able to.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I mean others comments also we can come up and don't conclude with my comment this is my observation. Maybe if other companies want some other thoughts as we can take their input. OK, so. And this planning how we can differentiate between the planning team and the maintenance team like because for turnaround there is a separate planning so they do the planning of all the shutdown requirements yeah and how to differentiate that activity
+
+Bastian Osorio:
+and the individual early planning activities at the maintenance plan yeah we have here the key figure for a turnaround but are two separate process um we have here the the reservations for TM, but this forecast and the reordered point definition is parallel to turnaround, because turnaround is something that for sure will happen, so there's no need to forecast that. There's no need to create a forecast for something that you know it will happen.
+
+ And same for reordered point, you don't need to have a safety stock or or the point for something that we know will happen?
+
+Hector Palacios (ADNOC Group D&CS):
+I think the question is more related to how we are going to separate because probably we have the same key figures for supply planning. We have the same attributes, the same products in some cases. So the answer, Arunkumar, is that we have it on the open topic list. We still are defining what is the best option to define what is turn around and what is is a maintenance plan, the normal one. Because sometimes I understand that you share the same materials, right?
+
+ So even the same plants, the same storage location sometimes. So there is not a clear definition on that site, whether that may be the WBS element or the movement type on the order. So let us check what is the best course of action here to separate. But for sure, we know that is a requirement that you see to on is going to be separate. We should be able to filter what is turned around from what is normal plan.
+
+ So let us fine-tune and as soon as we have an answer for that, we will come to, we will answer.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Basically, the maintenance planning should be done in beginning of each year or before of the, like January or December, they should finalize the maintenance plan for the next year.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+And our frequency and our input. Yeah.
+
+MM- SKEC2 - L08:
+But Arun, the yearly plan, what you're doing is only for turnaround or rest of the maintenance plan as well?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Now there is no plan, no, like fixed like each January or February, they will give the plan for the next 10 months or 12 months.
+
+MM- SKEC2 - L08:
+Everything in the maintenance.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+everything they will do irrespective of the schedule. Some they will do a work order in January, maybe for December month they may make a work order in June. If they make a work order for January, it may be the requirement in March or April.
+
+MM- SKEC2 - L08:
+So basically for a future requirement they create work order in January only for whether it is corrective, preventive or even if it is Yes.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+If you're giving a statistical forecast for the next five years, once you have to review the file by beginning of each year.
+
+MM- SKEC2 - L08:
+Here the difference Arun is that for sure we need to fine tune it, but the ideal mechanism is that The preventive and the turnaround, there is no forecast. There is only a requirement and a future horizon. So if you have a turnaround order, and the order is for, say, December 2025, then it's an input to planning. We are not forecasting it. We are not using historical turnaround consumption and saying that future turnaround consumption should be this, this, this.
+
+ That's a one-time event which happens every one year, every two years, and that is an input. Planning how it happens in the while you're creating the work order what all uh uh machines you would like to uh like uh repair during the turnaround now that's one input similarly when it is preventive maintenance it's again input to planning which means that in theoretically I'm not saying we'll have to continue to undergo but ideally you have a maintenance plan tells you that okay how much material you need on a future date with a certain frequency every three months you have this preventive maintenance and every three months you need certain say gasket or certain wall you need to change then that is a input to the system saying that every three month I will need you don't need to forecast that that comes with an input but only when it is corrective where we don't know when the failure will happen we are trying to predict and make sure that the material is available irrespective of Since I don't know today when the failure will happen, when the breakdown will happen, I'm using historical data to predict when the failure can happen and use that information to make sure the material is available on time.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In that case, then we should have the bifurcation based on the equipment ID, no?
+
+Bastian Osorio:
+We can add the equipment ID here.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Because any planning or the maintenance guy, they will look in based on the equipment or the bill of materials.
+
+MM- SKEC2 - L08:
+For sure. So, Arun, the question is, for a single material, do you want to see all the three demands in one sheet where you have what is the preventive requirement, what is the corrective requirement, and what is the forecast from correct, from system?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So, because... If you're giving a report this kind of a which takes this template now so a planner should understand for this equipment what are the items they previously consumed and what is the data you're proposing for the future all right
+
+MM- SKEC2 - L08:
+see if you like this report now like item number description key figure they cannot understand anything yep we can have that yeah yeah so probably equipment they template we need to create where for every equipment we can tell what are the materials and for those materials.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+We're not going to do anything unless until there is an approved work order.
+
+MM- SKEC2 - L08:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The hour activity will start after the approved work order. The PR generation.
+
+MM- SKEC2 - L08:
+Correct.
+
+Prathviraj Anchan (Borouge):
+So along with the equipment it will be better if we can make it work order wise. Yaron, wouldn't that be a better option?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See, in case if it is through work order now specific to work order, only those cases they will review. Since it is a planning tool for the future, they have to give the equipment details.
+
+UNKNOWN_SPEAKER:
+Yes, equipment.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+If I am a planner, I make a work order for pin equipments. So if you're giving a report of nothing to review in it because that work order is created by me. I already done a plan. I updated the work order. But what this IVP tool is going to support for the next future requirement, maybe for the 2026 or 2027. So for that planning, they should give based on the equipment ID. Observe bomb data.
+
+Prathviraj Anchan (Borouge):
+No, no issues, Arun. So equipment ID can along with be there, but in in I don't know how y'all are practicing. Y'all are making the work orders you are saying because for us all the work orders are being generated by maintenance.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+For us for planned activities, planning Department they're doing even the maintenance over there doing. Signed activity comes under planning. Some activities comes under the maintenance team. And every year. It is related to the particular equipment.
+
+MM- SKEC2 - L08:
+Yes, that's what we have from different equipments, right? Or you will have one each work order.
+
+UNKNOWN_SPEAKER:
+Single equipment. OK.
+
+MM- SKEC2 - L08:
+So if there are two equipments who needs maintenance, then probably you'll have two separate work orders.
+
+Aboobacker M. (ADNOC Gas - PD):
+Functional location based on the functional location.
+
+MM- SKEC2 - L08:
+Yeah, so work order can be functional location and then if it is functional location probably you will have more than one equipment materials also part of the same work order then.
+
+UNKNOWN_SPEAKER:
+Yeah. If it is at functional location. Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Maybe one material ID will be linked with multiple equipments.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+the other way around.
+
+UNKNOWN_SPEAKER:
+Yeah, it's clear.
+
+Bastian Osorio:
+So, coming back to Can I ask one more question?
+
+Achmad Sonhaji (Borouge):
+Yeah, of course. Yeah, about the preventive maintenance, I mean, if that one is not forecasted, then as I mentioned, if it is like three months, but if the lead time of the delivery is six months, then how you will cover it?
+
+UNKNOWN_SPEAKER:
+Because we believe that if it is three months.
+
+Bastian Osorio:
+If you have the reservation, so you put the reservation now and the lead time is six months, okay, you have for that the reorder point.
+
+Achmad Sonhaji (Borouge):
+Yeah, so it will be based by reviewing the reorder point, right? I mean, it's not based on reservation. Only.
+
+Bastian Osorio:
+So there's two options to address that or they plan more like with anticipation the maintenance activity or we manage through the reorder point.
+
+Achmad Sonhaji (Borouge):
+So I mean in that case then we will have the historical consumption here right? So I mean We can analyze based on the historical consumption to evaluate the reorder point. Yeah, that's right.
+
+Hector Palacios (ADNOC Group D&CS):
+As Sebastian is saying, if you're not anticipating, because if you know that you're going to consume it in six months, then in supply planning, we can plan to have the stock available for that moment, right? Not with six months of anticipation, but when you're going to need it. So that's the ideal scenario, that you have the input and we can plan accordingly, right? But if we don't have that input and the preventive maintenance is going to be only corrective maintenance, right?
+
+ Because if you are not creating work order for the next month, then I guess you are just consuming and that is already part of the system.
+
+Achmad Sonhaji (Borouge):
+I mean, the work order type is called preventive maintenance, okay, but they will do it like in the next three months, for example. But the material required is need six months to deliver.
+
+Hector Palacios (ADNOC Group D&CS):
+So they plan for the next three months, but you have a lead time of six. Yes. So that is not anticipating. Yeah. It needs to go for the rear deck pump.
+
+Achmad Sonhaji (Borouge):
+Yeah.
+
+Bastian Osorio:
+So then how do you handle it? Right? So this is what we are planning here. So first of all, as you said, this is a prevented these go directly into supply planning, meaning directly into PR generation. Why? Because you know for sure that you will consume that. There's not an if there. It's not like, oh, I believe, no, it will consume. But for that, we need to have a preventive maintenance plan is something that I understand we don't have currently.
+
+ And I highly recommend to start pushing that, start creating the preventive for the next few years. In that sense, we can use the forecasting, meaning, well, the forecast or the reordering point just to manage what is not predictable, what is not for sure, what is the correct data activities. So I reserve the reordering point for dysfunction, for unpredictable events. And then the preventive plans, will be bought for sure, because we know that will happen.
+
+ This is the best practice. Separate, that is what we need. Ideally, of course, we can merge these two and just create a forecast, but that is not as consistent as this, as separate the different consumptions. Because as you're saying, if you know you're going to perform maintenance activities in three months, you also know that in in three in six months or eight months or even a year so why don't we start planning that and
+
+Achmad Sonhaji (Borouge):
+buying right now instead of just waiting until the last moment where where you know you can stock out yeah because now it's normally uh that one is only happen with the turnaround not with the preventive maintenance because preventive maintenance like you know it's done by maintenance sometimes we got any proper communication with the inventory too.
+
+UNKNOWN_SPEAKER:
+Sorry, can you say that again?
+
+Achmad Sonhaji (Borouge):
+Yeah, yeah, I mean, you know, we have like a long-term planning is normally often around, yes, it's there. I mean, like one year in advance, or maybe one or two year in advance already, they create a work order and a reservation. But for private maintenance, I'm not sure that it can be planned in advance. Maybe we need to, I mean, communicate or coordinate more with the maintenance team. Yeah, I think the one here is for maintenance.
+
+ So maybe any, for any other corporation, how they handle private maintenance.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, we are taking note on that. We kind of understand that you are working right now kind of in silos. That they are taking care of their staff but we are not collaborating into just one number of maintenance so we can plan the inventory accordingly. Best scenario is that we have the anticipation so that way we don't have uncertainty we can plan to have the stock when we need it not with most of anticipation because we don't know you know so a lot of certainty should come from the preventive plan, but it seems that we are lacking that.
+
+ I'm not saying that we are not doing it, but probably the data at least is not being maintained for that. So if we have this kind of scenarios that you have three months preventive maintenance work orders for the next three months, but delete in six months, that is not usable for us. We will need to create the reorder point and safety stock calculation based on the whole data and that will mean that we will have a higher safety stock and a higher reorder point and that is not optimal and the core of this project is to reduce the stock, right?
+
+ But it's impossible if we don't have this process in place in which they are communicating to us what are the preventive activities. That's the whole meaning of preventive, right?
+
+Achmad Sonhaji (Borouge):
+Trying to from the beginning for the implementation of this process. I think maybe in the starting we can combine the preventive and corrective in the like in the evaluation. So yeah, I mean to. Uh, if you the reorder point, maybe then after the maintenance is established good, then maybe we can start to use preventive at the using forecasting. For sure.
+
+Hector Palacios (ADNOC Group D&CS):
+So what we can do is to establish the system in a way that at the beginning, we can start with preventive and corrective, everything together, general orders, whatever needs to be considered. Then we can set up a global parameter that in the future, just with a simple switch, you can start using only corrective part in the best case scenario. So we can plan for a smooth transition in the future. But yeah, let's prepare for the two scenarios at the end, for the best practice and for what is the reality.
+
+ And we will raise this point as well because it's part of the project.
+
+Bastian Osorio:
+And it has to be addressed also with the change management team. Yeah. And try to guide the maintenance planners, help them into start creating the maintenance plans. Because of course, the change needs to come from technology and this is what we're doing here, implement a tool that will give you the visibility to make the long-term planning, but also needs to come from the users and the way they work currently, which they need to communicate more, they need to start creating preventive maintenance plan so we can differentiate the different consumption and therefore reduce the reordering point and use the resources of the company more in the
+
+UNKNOWN_SPEAKER:
+most efficient way.
+
+Bastian Osorio:
+One thing that I want to also address is the budgeting part. We believe we can add some value in the planning. Again, if we go to the Excel sheet here and we go to the template, there is a template called budgeting.
+
+UNKNOWN_SPEAKER:
+We have some alerts here. The budget here, I just put a number.
+
+Bastian Osorio:
+But as you can see, the system is giving me some alerts. If I go to the alerts here, are related to forecasts about the budget. So based on the statistical forecast on an annual basis, I can see highlighted in red that my final forecast is about my budget for this Okay? So in this case, the long-term planning team, I'm not sure who is the exact responsible that they need to do that, or they need, I guess, negotiate a larger, a greater budget, or the other way is to just reduce the forecast, right?
+
+ Maybe the system is giving us way too much consumption, so we need to reduce it. So let's assume for 2021, we want to reduce the forecast by 15%. So minus 15%.
+
+UNKNOWN_SPEAKER:
+We save here.
+
+Bastian Osorio:
+And the amount was reduced. And as you can see, you don't have the alert anymore. So the next question is how the system will reduce this 15% across the different materials. And it will be proportionately, right? Based on the weight. So of course, materials with more forecast will be reduced in absolute terms by a larger amount, but in materials with a smaller forecast will be reduced in absolute amounts, okay?
+
+ But of course, this is assuming that we have for budget in place. So, we have received different perspectives regarding the budget and how they manage, how the inventory controls use it to planning the long term. Users here, can you, team here, could you please provide more insight regarding how, what is the role that the budget plays in the demand planning?
+
+UNKNOWN_SPEAKER:
+Anyone?
+
+Bastian Osorio:
+Because I understand in some cases you use a budget to approve or to reject reservations. So could you give us more information regarding the budget?
+
+UNKNOWN_SPEAKER:
+Completely with the user.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+The inventory team doesn't have any call on budgeting.
+
+Aboobacker M. (ADNOC Gas - PD):
+So we don't have any budget. To each user and the cost center WBS.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+Sometimes there is a budget issue, we will tell the user to replace with some other WBS. Who's the one managing the budget?
+
+Bastian Osorio:
+The planning team, the maintenance planning team. Okay, so it's the maintenance planning team is the one that that should be responsible for this budget and there is no differentiation between corrective and preventive both goes for the same plan and the same material goes to the same
+
+Sheikh Saleem (ADNOC Logistics & Services):
+budget. Yes, I believe that. This could be the only scenario that is for both corrective and preventive maintenance can be used in this CMWBS.
+
+Bastian Osorio:
+Yeah, in that regard, I believe that this long-term planning can work for the planning team, because as you can see here, you have visibility of the previous year's consumption and the future year consumption. And with that, the budget, yeah, I mean, there's a clear value added here or they can start building the budget based on the quantities.
+
+UNKNOWN_SPEAKER:
+It's something we need to discuss with the planning team.
+
+Bastian Osorio:
+We have a few more points, but I prefer addressing more questions and reserve these points for tomorrow's sessions. Otherwise, I think it will be way too much information just for one session. So I prefer to keep addressing questions regarding mass data, regarding what we have seen so far, instead of jumping into more information at this point. There's something else I wanted to show here in the dashboard.
+
+ Yeah, this one. So you also can see, of course, here in the dashboard, basically the same information that we were seeing over there. You have here the budget, the forecast, and the study forecast. This is the forecast collaborated with the planner, but if I update this, F5, we see that the amount is decreased, right? So now the forecast is below the budget Bastian, a question for you.
+
+MM- SKEC2 - L08:
+Have we shared all the templates with all the end users? Can they access these templates on their own? For this one, yes.
+
+Bastian Osorio:
+For the XLABing ones, yes. And as I explained in the session you just have to click here new view from template and you'll see the templates here you can use a template here okay okay so every every user who are on this call can
+
+MM- SKEC2 - L08:
+access templates right if they want but from from our perspective we already shared the templates with everyone yeah all right we can check maybe if someone can share the screen and just to make sure that that is the case
+
+Bastian Osorio:
+if not We'll fix it right away. I don't know if someone wants to share the screen so we can see, we can check that you have access to the templates.
+
+UNKNOWN_SPEAKER:
+Anyone? I want to be a hero. Yeah. That's it. Great.
+
+Bastian Osorio:
+So look, look on, you already have the connection there.
+
+UNKNOWN_SPEAKER:
+So a new view from template.
+
+Bastian Osorio:
+And on the top, you have the templates. So let's use, for example, planning time. In the folder, yeah, planning type. And then go to filter, please. And please, in attribute, there is a white square. Right, planning type. Below the attribute, yeah, there, planning type. You can look for it, or you can write it, type it, yeah. As you prefer. And this is planning type. And in this case, select this forecast space.
+
+ If you click the three dots on the values, it will show you the different forecast space. OK. And And you can, yeah. Yeah, it gives you that message because you need to add sensibility. Can you refresh? What do I need to do? What is that? Go to IVP, please. And click Enable Content. And go to the, yeah, there you go.
+
+MM- SKEC2 - L08:
+And here you have the view. Aboobacker, can you Now that you've enabled it and set the sensitivity.
+
+UNKNOWN_SPEAKER:
+Yes, I'm thinking.
+
+Aboobacker M. (ADNOC Gas - PD):
+You want to do it again? No, it's fine.
+
+Bastian Osorio:
+It's working. So now you can save this view just for you. So if you go to favorite, let's see. Let's assume you like that and call it, I don't know, MRO Demo.
+
+UNKNOWN_SPEAKER:
+planning.
+
+Bastian Osorio:
+OK, now you can close the view just to show you how to access to it next time. Because you already saved it. You can please close it.
+
+Aboobacker M. (ADNOC Gas - PD):
+Completely close? Yeah. Close it.
+
+Bastian Osorio:
+You don't need to save it. Don't save. And if you want to access again, you go to favorites. Instead of doing all the procedure, you just go to favorites, and there you go. I think that error is related to the safety But as you click, OK, now you have. And the same thing applies for filters. Let's say you want to filter for, I don't know, certain, if you click the x, click the x, please.
+
+UNKNOWN_SPEAKER:
+Yeah, there you go.
+
+Bastian Osorio:
+Let's assume you want. To, first of all, for example, if you click on the right button on the BD in a value, for example, click the right button in the BD segment, you have the BD segmentation there as an attribute.
+
+UNKNOWN_SPEAKER:
+You see it? Yeah.
+
+Bastian Osorio:
+So yeah, right button. I know you don't have it. Sorry. I don't know you don't have the here there is there and there should be something related to ibp but it's not here okay but let's let's go to a deep view then I think hector probably we need to document
+
+MM- SKEC2 - L08:
+this specific uh can you capture this point that on right click they are not getting ibp shortcut please please help us on this uh rahul please open points yeah open point because um Probably we need to check with someone
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+with Khalid if it is like specific to users.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah.
+
+MM- SKEC2 - L08:
+Or is this something which because of any policy in AdNoc this specific. It's not coming. So when you right click on IVP, there is a IVP shortcut on setting up. It improves the, it works faster. Like you don't need to go to the screen every time. With right click only, you can filter and set filters.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+But that IDP on right click is not coming. No, the filter or what actually?
+
+Bastian Osorio:
+You can still apply a filter.
+
+UNKNOWN_SPEAKER:
+You just need to go to edit view and go to filter.
+
+Bastian Osorio:
+It's just a shortcut that is not working. So here, for example, attribute.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+it is coming know the filter option filter option when I click it is coming okay cool filter by selected value something like that can you can you show your screen if you if you're getting it correct I don't know whether the same filter I'm checking okay I'll share my screen see this one right filter it's filter you're saying No, this is the Excel filter.
+
+UNKNOWN_SPEAKER:
+It's different. Okay.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+That case, I think same.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+MM- SKEC2 - L08:
+The IVP on the top there, there comes an IVP menu.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+MM- SKEC2 - L08:
+For some reason that that's not showing up in Ardnoff. Let's, let's take this point and we'll, we'll see from with the right, with IT team, how this will show.
+
+UNKNOWN_SPEAKER:
+But yeah.
+
+Bastian Osorio:
+But again, as I was saying, if you want to filter, you go to Edit View. If you don't have access to that shortcut, if you go to Edit View, Filter, and let's say in here, we want to filter by BD. So if you look for BD, you can type it. Yeah, BD. Yeah, that one. And then if you click the three dots, let's say, I don't know, just be vital.
+
+Bastian Osorio:
+and it will show you just the vital items right how do I know the number of items total number of items um there is an yeah yeah that's a good way to do it 224.
+
+Aboobacker M. (ADNOC Gas - PD):
+23 probably, because you're counting also the header.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Otherwise we need to go.
+
+UNKNOWN_SPEAKER:
+Here you can add.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah.
+
+Bastian Osorio:
+And we need to, of course, do some housekeeping here just to look at the, there you go.
+
+Aboobacker M. (ADNOC Gas - PD):
+So Aboobacker, you're already an expert now.
+
+UNKNOWN_SPEAKER:
+Yeah. I'm a learner, actually.
+
+Aboobacker M. (ADNOC Gas - PD):
+First learner. Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In this report, if you could map what are the quantities they reserved, how much they consumed, what's the leftovers, that should be useful. Yeah, this is correct. I think only the actual usage. It's not having much value addition.
+
+Bastian Osorio:
+And you can add the preventive. Here's just the corrective.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But if you look for corrective, if you're taking only the usage quantity, the issuance quantity, take one of the reserved and what they consumed.
+
+Bastian Osorio:
+Look for, sorry, no, look for preventive. Preventive. You click PM, but click preventive. Instead of PM, preventive. We will change the name to PM, but preventive. It's the first one in the stroke. No, it's just prep. Can you leave? There you go. It says strong match and it's the first one. Yeah. And if you don't need to change this name of the field. We need to do some housekeeping for sure.
+
+Aboobacker M. (ADNOC Gas - PD):
+Same, same name. Yeah. And if you go to a filter, you can leave both.
+
+UNKNOWN_SPEAKER:
+You can leave both.
+
+Bastian Osorio:
+So you can see both altogether for all the materials. The first one.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+And, okay. Can you populate the reserved quantity? This is the actual usage. What is reserved? We will integrate reservation.
+
+Bastian Osorio:
+It is already created. We have already there. You can also have the reservation.
+
+Aboobacker M. (ADNOC Gas - PD):
+That's for sure.
+
+Bastian Osorio:
+Yeah, now there's no values now, but we will have it shortly. But for the first material, you see that you have actual consumption for preventive This is actual reservation. Yeah, but for now, we only have loaded actual consumption for preventing and for correcting. But in the next few days, we will start loading also reservations and more attributes, and the system will start getting populated.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah. Actually, it will be helpful for us for this utilization to find out how much is utilized against the reservations. If you have the actual reservation and whether it's consumed or not consumed, we need to see that.
+
+Bastian Osorio:
+Can you go to attributes, please? You can also look for FMSN. And the one called IVP. Or you can select, no, yeah, the first two ones. The first two, the S4 as well. Okay. I don't know.
+
+UNKNOWN_SPEAKER:
+Why this is empty? Oh, sorry.
+
+Bastian Osorio:
+It's because these materials don't have consumption. It is coming with me, actually.
+
+UNKNOWN_SPEAKER:
+The location ID is different.
+
+Bastian Osorio:
+Yeah, it's because you're not filtering by location.
+
+UNKNOWN_SPEAKER:
+Sorry.
+
+Bastian Osorio:
+We are adding more materials. We only have information for 21.01. So can you click cancel, please? We have all the locations ID available or only some particular plan code?
+
+Aboobacker M. (ADNOC Gas - PD):
+We have plenty of location, but they don't have any transactional data.
+
+Bastian Osorio:
+OK. So for now, we'll pick up. Only 2101. Only 2101 is having the data. For the UITs, which will happen in just a couple of weeks, we will have all the pooled information loaded.
+
+Aboobacker M. (ADNOC Gas - PD):
+But I'm suggesting better to have each company, one plant. For Adana Gas, you can take one plant, onshore one plant, offshore another plant, something like that. So then it will be helpful for us to review, no?
+
+Bastian Osorio:
+Yes. And yeah, it's very important to also work with the filters because as you can see, there are too many results, too many combinations. So that can happen. So let's go to filter and filter by the location. If you go in the filter, location ID, ID. There you go. And the value 2101. The first one.
+
+UNKNOWN_SPEAKER:
+Also there.
+
+Bastian Osorio:
+OK and OK.
+
+Aboobacker M. (ADNOC Gas - PD):
+This performance no need to check it. Yeah, yeah, for sure. Taking all this much time to load.
+
+Bastian Osorio:
+Yeah, we need to be very, very careful with the use of filters here. It seems that it didn't start working. The thing is that, and I think probably you also have faced this issue before, that considering the amount of information that AdNoc has, the use of filters is mandatory. Otherwise, if you try to open a view without filters, the amount of information is too massive for any system.
+
+Prathviraj Anchan (Borouge):
+But the time it is taking for each transaction, so before the end users can find out the filters, it will be a lot of usage. Yeah, the way it's going now.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Aboobacker M. (ADNOC Gas - PD):
+Maybe initial and later they have to fix this this. See, it's part of what we we need to do so far.
+
+Hector Palacios (ADNOC Group D&CS):
+The point is that we haven't loaded enough data to to sing that this is related to that. Is there is any performance? Probably we will need to check it on on the computer or the Excel, because on our side, at least, I haven't had any performance issue. I don't know, Bastian, if you have experienced anything like that, but it's not usually the case. Usually when you have too much data is that you start blaming the system and say, okay, yeah, because the system is not reacting fast to too many records, right?
+
+ But now we don't have a lot of data. I don't know, what are we loading here, Basti?
+
+Bastian Osorio:
+No, yeah, close the program. I'm going to share my screen. I think he just load a location without filter.
+
+UNKNOWN_SPEAKER:
+Location, massive data.
+
+Hector Palacios (ADNOC Group D&CS):
+No, not in a view.
+
+Bastian Osorio:
+But we don't have a lot of data, so it cannot be really What I wanted to show is the FMFN.
+
+Bastian Osorio:
+So.
+
+Bastian Osorio:
+So, look, this is, well, here we have the list of the 400, I think 400 something materials. Yeah, 437. And here is the number of times that material was consumed for preventive and for corrective. So based on this, the system calculates automatically the FMSN. So for IVP, this is a fast mover. Why? Because it was consumed five times in the last five years. But for Ines Orjana, this is So we have some differences.
+
+ So we need to check that. So here, we have the values for FMSN. It's the same calculated by IVP, 4,400.
+
+UNKNOWN_SPEAKER:
+It's fine.
+
+Bastian Osorio:
+Because these two materials are highly consumed, more than, I don't know, more than five times a year. But in some cases, there are some weird stuff. So for example if I filter here as well I will just filter by slow movers. Yeah and look here is there is just one consumption for corrective maintenance but in S4HANA it is But we only have one consumption. So this is weird. And we have many of these cases where just one consumption and medium mover in AVP is calculated as a slow mover.
+
+ So we need to check that. Why do you have that classification in SOR HANA? And one of the many objectives of the project is to optimize. This parameter from IVP to S4HANA, okay? So, during the UA... Maybe it's outdated.
+
+Hector Palacios (ADNOC Group D&CS):
+What is the frequency in which we are updating this segmentation on S4HANA? Do you know, guys?
+
+Aboobacker M. (ADNOC Gas - PD):
+What's that question?
+
+Hector Palacios (ADNOC Group D&CS):
+We were asking if what is the frequency on which we are updating the FMCN segmentation on S-Rohana, because we have some differences. So we want to understand. Once in a year, once in a year. It's very likely, very likely that we in the meantime, we had a consumption that completed these two to an M, I don't know, or F. So maybe that's the explanation, Bastian, why we have this.
+
+Prathviraj Anchan (Borouge):
+Yes, it is possible. But so quickly, I can't say because it's just the first month of the year and generally the update is in the first week of the year.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay. And what about when you have new materials? How do you deal What is the segmentation for them? Do you have a special scenario here or it's just going to be an S or an N?
+
+Prathviraj Anchan (Borouge):
+Because we want to have data.
+
+Hector Palacios (ADNOC Group D&CS):
+We go with M. Yes, M.
+
+MM- SKEC2 - L08:
+By default, all right.
+
+Rajiv Kumar Gupta (ADNOC - PE&ICV):
+By default.
+
+Hector Palacios (ADNOC Group D&CS):
+We can follow that rule.
+
+UNKNOWN_SPEAKER:
+Okay, I have a question.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+For example, if we need any changes for the motion, it will be reflected in the If this value will be updated in S4HANA? For example, if I want to change the movement based on the definitions and the consumption here. If I did any change, it will be reflected in S4HANA.
+
+Bastian Osorio:
+But this rule is based, I mean, this is defined.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+This value is defined in a rule. The rule is, I think, you provided, but it's here, right? So then the system will calculate it. It's not up to it.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+See here, FMSN, IBB. This is IBB definition for the movement for that particular item. So this one, this value, the S, it will be reflected.
+
+UNKNOWN_SPEAKER:
+In S-Mohana? Yeah.
+
+Bastian Osorio:
+Yes, that's the idea, to integrate this value back to S4HANA.
+
+Hector Palacios (ADNOC Group D&CS):
+We always need to aim to have one single source of the tool. So, the information needs to be generated in a single source and then to be deployed to your system. Now, the requirement we understand is that let's automate this, because this is not something that is automated on S4HANA. You need to do it manually, and then upload the information on S4 HANA. So now we will do it for you and we will update S4 HANA and IDP will be the source of truth for the segmentations.
+
+
+
+1Vivekananda Shetty (ADNOC - PE&ICV):
+This FMSL data is coming from MetalMonster S4?
+
+Bastian Osorio:
+This one. So we have two attributes here. The FMSL IVP and the FMSN S4HANA. The ones from S4HANA of course come from S4HANA. The one from IVP was calculated here.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Is the FMSN S4HANA data coming from master data or how it is?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+So now we have the two because we need to compare. But in the future should be only IVP, the source of the two. So whatever is here we should paste it on S4HANA so they should be exactly the same.
+
+Aboobacker M. (ADNOC Gas - PD):
+What is that field key figure name called number of times the consumption number of times.
+
+Bastian Osorio:
+So this is the amount of time this material was consume for directive maintenance and this one for preventive maintenance.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, but I see that we need to unify.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+It's quite a number of good issues, isn't it?
+
+UNKNOWN_SPEAKER:
+The events, yeah, consumption.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+If it is more than two in one year, it's fast-moving. But that IBP gives up, even if it's only one time.
+
+UNKNOWN_SPEAKER:
+Sorry?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Yeah, IBP giving a fast-moving recommendation, fast-moving. It was only one time, even in one year. I think that the one is if the condition was met.
+
+Hector Palacios (ADNOC Group D&CS):
+Let us validate internally with the team that was developing, but I think that is just a counter that, OK, in this year, I had two movements, something like that, or more than two.
+
+Bastian Osorio:
+But we take the point. And I believe although we're going to create the forecast based on both on the sum of the corrective and preventive, it's still good to have the visibility of this separation. I think we can add values considering also the future I think in the future, the idea is to separate these two consumptions, so it's better to already have the system set, separated, but in a way that we can work
+
+UNKNOWN_SPEAKER:
+as only one consumption.
+
+Aboobacker M. (ADNOC Gas - PD):
+Keeping in the 2-0-1 movement, not captured here, no? Yeah. That may be the reason.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+But SWOTCAS mostly is preventive and corrective maintenance. Yes. Mostly. But it is, I mean, that's a big, if you're going to have only the corrective maintenance, there's a big number of reduction because preventive is also very less. They're using mostly the corrective maintenance. All the time.
+
+UNKNOWN_SPEAKER:
+Yeah, most of the consumptions are related to corrective.
+
+Bastian Osorio:
+But when we define the segmentation, we need to consider all the consumptions.
+
+Hector Palacios (ADNOC Group D&CS):
+No matter if this is preventive, corrective, general maintenance, we need to count all them, right?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Yes, I think also that before we already mentioned for the ROP is much better also until all this type in future are segmented properly. You can consider also that the consumption 201 also.
+
+UNKNOWN_SPEAKER:
+201, okay.
+
+Hector Palacios (ADNOC Group D&CS):
+So 201 is consolidating everything as basically what we should use as a source of historical demand, historical consumption, sorry.
+
+UNKNOWN_SPEAKER:
+Yes. Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Did you create a sphere with the consumption counter? Or like the events? Because you were counting the points.
+
+UNKNOWN_SPEAKER:
+Data points.
+
+Bastian Osorio:
+But sorry, I didn't get what you said.
+
+Hector Palacios (ADNOC Group D&CS):
+Because here, this Kefir is not telling you how many consumptions you had this year. But I think that you have a Kefir for that.
+
+UNKNOWN_SPEAKER:
+Yeah, it's telling me this one. Is that one?
+
+Hector Palacios (ADNOC Group D&CS):
+So it tells you that you had eight consumptions, OK. So yeah, there is something not working right there because you see that you have ones. Yeah, it's possible. And it's fast. We will check it. I remember that we were checking internally and it was making sense. So probably it's a confusion between the key figures and all of that. Let us check because everything is fast and in some cases we don't have more than two consumptions.
+
+
+
+Bastian Osorio:
+Maybe it's because here I'm checking at, unless this material was consumed. I don't believe, no. Yeah. Because if a material is consumed in the same date, but in different equipment, that counts as one of the two.
+
+Hector Palacios (ADNOC Group D&CS):
+Saul has another one. Saul has the key fear that we need to use consumption year periods counter.
+
+Bastian Osorio:
+Yes, but I think it's the same value. Yeah, I think the error you need to see, the error is in the rule. In the final key figure.
+
+Saul Portillo:
+Yeah, but we'll check.
+
+Bastian Osorio:
+Okay, just to close what we still have pending, we will review tomorrow. Tomorrow is snapshots and accuracy KPIs. That is mainly what we have. And we can also review again the FMSN segmentation with the to make sure it's working properly. Okay. Is there any question? Any comment? Nothing. Okay. Then thank you for joining. Thank you for the participation. Thank you Aboobacker for sharing your screen and see you tomorrow.
+
+
+
+UNKNOWN_SPEAKER:
+you.
+
+UNKNOWN_SPEAKER:
+Hmm.
+
