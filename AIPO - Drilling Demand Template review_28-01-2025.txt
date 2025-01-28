@@ -1,0 +1,578 @@
+Rahul Patel (ADNOC Group D&CS):
+This performance... Thank you very much.
+
+Rahul Patel (ADNOC Group D&CS):
+for joining. So, I think we can start a call. We have Abdul and Abdul on the call. We also have Vignesh and Arun.
+
+UNKNOWN_SPEAKER:
+So, let's start the call. I hope you can hear me. Am I audible?
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, yes. So, the agenda of this meeting is to essentially review the template we've based upon our understanding of all the descriptions we've had. So that we can align on both onshore and offshore requirements of different fields and parameters, those should be part of this template. Once we are aligned on this template, what we will do is send this template to the EWDP IT team. And then we would expect the feedback from them saying what all parameters are there in this EWPT system which we can take as input for our planning.
+
+ All right. So let me share my screen, walk you guys through the template. We also have some sample data updated so that the template makes more sense. And then we'll seek your confirmation on this template. Let me share my screen. All right. So this is the template what we have. So let me increase the width a bit and increase the size of the primary fields so that it makes more sense.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+So basically this is the outcome of the EWDP which will give you you know what is the material required when.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Rahul Patel (ADNOC Group D&CS):
+This is what you are.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+You are not going to do a bomb determination over here.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes we are not going to it so that's where so based upon our discussions we understand the EWDP tool has something of sequence ID which is with which the independent single well activity is identified so we've kept it blank because the excel sheet you've provided did not have it so we are looking for a rig field well well type category start date of the well end date of the well the company which is completion code additional completion code and the generic material.
+
+ Now when we say generic material we are asking for a category as well that this material is for which category. If there is old material code available which helps people understand we can also have the old material code as an input and then for a specific material what is the required date and what is the required quantity. So let's take an example now we have this we have filled two wells here from the data which we have received here for offshore.
+
+ So the way we look at is that for this well for OCTG material category we are saying these are the materials which are required to be forecasted and this is the quantity and on this date the materials required. Now assumption here is that the materials are required on the start date of well but then based upon the well progress and the plan probably you may have a different material requirement date but then for the benefit of this example this is we have created so Abdul just wanted to check with you I do you think is this sufficient amount of data in this template or any critical field which you think is need to be added which we
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+have not added here let me take out the filter so that you can read it well what about the design.
+
+Rahul Patel (ADNOC Group D&CS):
+Casing design now what we understand is casing design is input for planning of OCTG model right but since we're getting input directly here do we need casing design here as well again because. Yeah yeah exactly we need. Okay so let me take this as an field here we'll adjust it so one is casing design. Casing okay casing design I've added here let me mark it a different color so that we know we've added this field what else you need One second.
+
+
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Rahul Patel (ADNOC Group D&CS):
+Any other feedback? Abdul, you can also confirm from your perspective.
+
+UNKNOWN_SPEAKER:
+So, up till this point, the data are more from a well perspective.
+
+Rahul Patel (ADNOC Group D&CS):
+So, let me say highlight it as a well and these are essentially perspective data like what is the material.
+
+UNKNOWN_SPEAKER:
+Relative item code is there adding no.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Which item code? Generic material item like like you're adding SAP generic material code, right? Code that you are adding? The item code can be the old metal code? No, like say for example they say CR 07 for example it's a it's to pertain to certain commodity.
+
+Rahul Patel (ADNOC Group D&CS):
+This item is the item code of EWD Package number.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Item in the EMRP previously there was an item code like say for example. CE05 that to a float caller to a particular size. So the thread can be anything. So. So it is some sort of like Generic.
+
+UNKNOWN_SPEAKER:
+Generic. It will be replaced by generic.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Now this generic number, whatever you mentioned, that code, particular code, they have to create a new SAP number. So that SAP number, the whole idea, they want to put another bill of material as a generic material and alternative material other side. To achieve. Yeah, I think this is good enough. This looks good enough.
+
+UNKNOWN_SPEAKER:
+Can we start with this?
+
+Rahul Patel (ADNOC Group D&CS):
+We can send this to the IT team, get their confirmation. I'll add the casing design. This is only for OCTG first you're doing, isn't it?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No, no. So basically, I have example of OCTGs I've added.
+
+Rahul Patel (ADNOC Group D&CS):
+So when I'll request, I'll request for all material categories. So when we send them, we'll say that we have material category field. We have added example of OCTG, but when you confirm, we need confirmation for every material category in the same format. So tomorrow, if there is, say, let's take wellhead, right? So we'll have wellhead as category, and then you have materials of wellhead showing here.
+
+ Then you have, what was the Downhole completion, right? DCE. Yeah, downhole completion equipment. Then you will have materials of DCE. So that's how we will be able to segregate. OK, for per category, what are the materials? But the template will not change. In the template we have this material category which differentiates the material per category.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, in this case, one second, can you go up through the fields?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+additional completion code you have okay yes then you can add wellhead code as well the question is so wellhead code if I add the wellhead code would be at well level and then basically if I add a wellhead code
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+here then it will show it will repeat against every material no not like that see what will happen the same like completion code so they have valid code so the completion mainly the down part of it the wellhead is in the top part of it so they have two code you can put that one as well this is coming from the map which is called the dws so if I take but the point here is if I add
+
+Rahul Patel (ADNOC Group D&CS):
+wellhead code let's take wellhead code now wellhead code is not a code it's a bill of metal header no no if you remember at the same time exactly so w12 are the bill of metal header right which means and which will be in the bar chart itself so easy to but then yeah so if we have so what I'm assuming is that if I have wellhead code here then here essentially you will have WH 11 here and then the materials of WH 11 will show up here right.
+
+ So, again it the wellhead code would be part of the material category right. Wellhead code will it be because here the wellhead code will have and you will have wellhead mat 1 wellhead mat 2 let us say this wellhead code has two materials, right? So wellhead code 11 will have this. So this is how I'm forcing it. Correct me if I'm wrong here.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No, see what I'm telling you. See this all the now we are looking for some key to connect between the two sheet, which is only for the map, which is the plan and then another from the like material list or the equipment basket.
+
+Rahul Patel (ADNOC Group D&CS):
+So in IBP will not have two sheets right here will have only one sheet in IBP and then the single sheet the data will be uploaded. Now what we understand is all this data is available in EWDP.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+At the end see now once we've done yeah we understood this understood see what we have to do so if the data is fetching in the such a way that the like we have to concatenate all the the like different fields for example we have a valid code number two and which is mapping to some other category and same way other was was So it will be the key between the drilling plan, which is DBC, to the equipment basket.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+But equipment basket is in EWDP, right? And we are connecting to EWDP directly. So what the point I am trying to tell is that equipment basket will give us both the well plan as well as the material plan, equipment basket. So we don't need to have this key part of our our file because it's part of already the EWDP system and the outcome of EWDP system which is the metal basket for the well is directly will try to upload
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+in IBP. The problem here what I understand from the onshore the valid code we cannot determine from this numbers whatever the field here so it will be difficult to determine the valid code. So anyhow so valid code is as a valid code is there. Let's see.
+
+Rahul Patel (ADNOC Group D&CS):
+I will add this valid code so that this cut I will add casing design and well head code all right and additional completion code this completion code yeah completion code additional completion code casing design and well head code yeah
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+so yeah in the in the can you give a like this can you the O to a list of values OCTG, DCE, well head, liner hangers like that. Otherwise people will start entering it anyway.
+
+Rahul Patel (ADNOC Group D&CS):
+So you want me to put up a validation here? Yeah, let me put.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+I mean, otherwise you'll get data which is some I don't. Want to just get data in a in a specific.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so can we write up the OCTG? And cementing LHC cement liner hanger and cementing LCH LHC cementing accessories. Yeah, so if I take this as so let me put a validation to the entire row.
+
+UNKNOWN_SPEAKER:
+Data. Data validation data validation. List of values list. Yeah, source. Sheet. OK. So. Yeah. Alright.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+OK, then this is good enough.
+
+Rahul Patel (ADNOC Group D&CS):
+Do you think we can send this? To the IT team.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+One question for the ability ability.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+This wellhead code will be what wellhead will be one material or it will be having a lot of materials under that.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, I will.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+Yeah, this is. I think we have a well in that knock HQ. Yeah, this is the wellhead.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, you showed me as the red. I just don't know whether it's a wellhead or a Christmas tree. There will be some few more equipment. OK, this is the one this is sheet. Yeah, yeah, yeah, Once BOM is coming at the time we can elaborate. There are materials under that AOF 154 like that you mean? Yeah, I'll show you. Now the valid code. See, these are the material number. They have, as Bukhari mentioned, they are putting again another combination as a generic number.
+
+ These are the generic numbers, OK?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+These are the generic numbers and see here, These are the equipment. This is a valid code. From here, the manual starts. So the starter rate system, casing angle, like that.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+Okay, got it. See, why I ask this question is, now, can you go for...
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+One more second. Now, to derive this valid code, they make a, like, the unique key here, the combination definition. Can elaborate. So this is what the same thing what we are doing, but there are the congregated more field from here. So see the the project is coming and the dual is coming, then slot recovery is coming, then DOP, then there are many factors element which is determined to the the valid code so that's the reason so if actually we don't want to maybe it's not available any fields they developed this code from the the code for example dual and single so easy they want to make it dual single something like that then slot recovery some are available some are not so there's a reason if we make the valid code directly there then so So they can fully depend on the
+
+Rahul Patel (ADNOC Group D&CS):
+Well, it could just category under the wellhead code is directly available in EWDP, right? Because that's what we have seen that they they have this wellhead code available in EWDP auto as an input as input is there, but also it's already there.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+That's what they highlighted offshore. If not there. So what we do, we will make a small announcement. It's already there. Done a good exercise here. We can ask the team to input this one in offshore.
+
+Rahul Patel (ADNOC Group D&CS):
+So the question here is the wellhead code would be in EWDP. Will we also have the materials of wellhead in EWDP?
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+No.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Where does the material of Offshore no. Offshore yes. But as they highlighted in the after the what called VMI. We have to see how the what is the challenge on the VMI part of it. So anyhow up to this one DBC the is available. Both onshore and offshore no issue.
+
+Rahul Patel (ADNOC Group D&CS):
+In EWDP so the well plan for both is available the only the material allocation plan is something which is not available for both and probably we can start with the same manual import for offshore and onshore already has it and then once onshore starts offshore starts using this then it can be same for both.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah this is the like BOM what we are expecting here for example so So they mentioned ext1 here. See you can see existing one. So which is the equivalent to the valid code for completion. Yeah, this one ext. So if existing stock. So there are in offshore case we have a lot of existing material available. That's the reason they put both mapping old code and the store code and the this is the the combination.
+
+ The will of material we are expecting. So these are the existing one. It will be the key and these are the description of it like lemon description. This is the material number.
+
+Rahul Patel (ADNOC Group D&CS):
+Similarly, you will have a separate metal code for existing. The SAP metal code would be separate for existing versus post VMI, right? Yeah, so anyways, this mapping in the alternate metal field. Yeah, so so we don't need to know planning whether it is existing or new VMI material we only need to know the the generic material codes and then based upon the stock available IVP will propose whether you are using
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+existing materials or you're using VMI materials.
+
+Rahul Patel (ADNOC Group D&CS):
+So yeah you had a point okay Vignesh is on hold Vignesh wanted to have a spot now Abdul if If I share my screen, the point I am trying to make here is, let's take wellhead code, wellhead 01 I take from system. So the way this file works is that the rows repeat for a single well. So if it is a well, let's take this 53. It has only two materials. But the well information in orange will be same. The only thing which will change is material code.
+
+ But if I keep wellhead code it will show against OCTG as well the same wellhead code.
+
+UNKNOWN_SPEAKER:
+Repeat.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Do you want to say it this way? Yeah, that's true. Whenever we want to map the wellhead code for mapping OCTG for example, we will not use wellhead code for example. We don't know. So this is one of the option we can adapt.
+
+Rahul Patel (ADNOC Group D&CS):
+So you are saying let the wellhead code be here OCTG it may not make any difference because OCTG will be a separate input and anyways this will come from system so it is just an information available even it will show as OCTG module that's not a concern. That's it. All right do we have Vignesh back on the call? Still on hold. Because he had a point. So now OK, so anyways, if this data which we are seeing is only for offshore, can we have maybe one information one well for offshore like we have two wells right here for offshore?
+
+ Can we have? Do you have something readily available? You can paste in the chat and we can simply put here like onshore data.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+I think Ashik shared the wellhead, the same thing. No, no, no, but it does not have a well plan.
+
+Rahul Patel (ADNOC Group D&CS):
+It only has wellhead materials.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+I'll show you.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, let me open that. So.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rahul Patel (ADNOC Group D&CS):
+Just a minute. To be drilling. So this is the file, right? The DBC is only for onshore offshore. There is nothing for onshore.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, no, well it will. Onshore wellhead.
+
+Rahul Patel (ADNOC Group D&CS):
+So we have onshore, this is the onshore file AON DMF. This has well head completion codes. I think this is completion code.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay. I think I'm looking for well plan.
+
+Rahul Patel (ADNOC Group D&CS):
+I cannot see the well plan. This is the well plan.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, let's go through.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, everything is put it is the OK, let me put let's let's take an example. We have well filled company is a spot. Spot date is the starting start date. OK, face code.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+We don't have face code. Yeah, this is what we want to ask them whether they are required or not.
+
+Rahul Patel (ADNOC Group D&CS):
+For the any further. So completion code will had additional requirement is additional completion code. Then. These are status, gas lift, supplier, okay.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So, this is supply planning. So, we are not worried about it, right?
+
+Rahul Patel (ADNOC Group D&CS):
+So, if I take any one well type. So, this is well. There is no well type by the way. This is only well.
+
+UNKNOWN_SPEAKER:
+Yeah, fine.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+See, you can put the sample values.
+
+Rahul Patel (ADNOC Group D&CS):
+So, let us take WH14 and then let us take any one right let me take 119 now it has only one method code no no go to any other one uh yeah 123 2 so you have wellhead 14 okay
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+right yeah where are the materials of wellhead I read material note here uh maybe now so this is the code for example wh14 isn't it okay so can you go to the completion codes completion codes okay so I put wh14 not here not here not here uh no old completion consumption forecast here wh14 okay yeah filter okay here wh14 only two no no can you go to bh No, this was plan only.
+
+UNKNOWN_SPEAKER:
+Inventory?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Inventory, yeah, here. No, this also, no material code in it.
+
+UNKNOWN_SPEAKER:
+No material code.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+For us, the field name, what they put it, should be almost, um, valid code. Valid code revision.
+
+Rahul Patel (ADNOC Group D&CS):
+So the wellhead code to material mapping is something.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Yeah, they have it actually. Yes, you have that technical FMC.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+The work order in Excel, the initial one.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+That I don't have. It's let me check that one you the current one.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Maybe I can. Yeah, current one.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+So the the technical from so what they mentioned their valid code.
+
+Rahul Patel (ADNOC Group D&CS):
+So I just want to update this sheet sample data from onshore as well so that it makes sense for them. They can give us onshore data as well as offshore data.
+
+UNKNOWN_SPEAKER:
+Are you looking for an item code for a wellhead?
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+They're using one sheet. Let me see whether it's I have that one.
+
+Rahul Patel (ADNOC Group D&CS):
+So if I've wellhead 14 now while item codes are what does this mean? You already have one well, right? So why you have so many items rows for one head one well?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+What is this?
+
+Rahul Patel (ADNOC Group D&CS):
+So yeah, wellhead 14 there are 47 rows.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+No, no, wellhead 14 is a code. This is one well, right?
+
+Rahul Patel (ADNOC Group D&CS):
+One row is one well.
+
+UNKNOWN_SPEAKER:
+Yeah, this one well.
+
+Rahul Patel (ADNOC Group D&CS):
+So this you have the well number somewhere there. Well, it's just as well so it does not have well.
+
+UNKNOWN_SPEAKER:
+There is no well type.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+So same data isn't it?
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, but then if there are if every row is a separate well then we should have well type and well idea separate things right. So that's what we do not have a lot of data on onshore all the data all the data you have provided is of offshore and that we have used this to update a sample here and we are aligned here.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+I don't have a relative that file.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+OK.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Do you have a you have OCTG? Yes, I have OCTG right. This is the MAP OCTG. Then maybe Abdul can assist on from this.
+
+Rahul Patel (ADNOC Group D&CS):
+But this is.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+only offshore there's nothing onshore no no similar one Matthew forwarded no we only have one OCTG for offshore there is no OCTG for onshore with us can you check we have that OCTG part similar one map the allocation same thing This is the offshore OCDG plan, material allocation plan.
+
+Rahul Patel (ADNOC Group D&CS):
+Do you have onshore material allocation plan?
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Let me check the latest one. Because I keep only the stock, I didn't keep the location one. I think we requested to share Matthew to share.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Can you check any Matthew share on behalf of IBP? Sorry, so you didn't copy.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Yeah. Can I share this one? Sure, yeah.
+
+Rahul Patel (ADNOC Group D&CS):
+Maybe show your screen if you can.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+OK, this is what we keep. So Matthew shared this one with you.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Allocation. Can I go to other one? The well name will start date. No, we have no no application. Stock summary.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+No, no, stock summary only incoming and only stock. Because allocation wise no allocation he keep the quantity only he I mean well wise they have not mentioned here.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Dispatch also missing.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+No, dispatch only the MRDT.
+
+UNKNOWN_SPEAKER:
+That's what is already dispatched.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+But allocation, we just, if we want the well details, then we need to get it if they have, they're keeping a separate file like that.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, why don't we ask Matthew to provide the well plan?
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Yeah, OK, just because he's not he's off today so I can just summarize what is the requirement then I will get that one. Because in the current day we are only concentrating on the stock only, not in the allocation, the well details.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+So you know if there's the team is keeping any separate file for that and I need to check that one.
+
+Rahul Patel (ADNOC Group D&CS):
+OK.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+So OK, Basically this is a summary of all three VMI supplies so it will give us a you know overall picture how much stock we have then based upon their allocating only the quantity is mentioned here not the well details.
+
+Rahul Patel (ADNOC Group D&CS):
+So this is something if you can share but this is something from a supply planning so we can refer to this for supply planning discussions but from a demand perspective Abdul we need something similar to what we shared right where you have a well and for the well plan you have for respective well you have metal allocation plan. OK, so that I'll check with that whether they are keeping a location plan at well level is what we're looking for.
+
+ This becomes a demand and we convert the demand into something which is this where you do the supply planning, correct?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+So what did you had a question? Yeah, see what I wanted to get. I think I can share your screen now.
+
+UNKNOWN_SPEAKER:
+Yes, let me do that.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+from what I understood, you know. See this, you are having this, right? See this well head code is nothing like a bomb header, right?
+
+UNKNOWN_SPEAKER:
+It's a bomb header, correct?
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+So see, then make that as a as a generic put bomb header. If it is OCTG, it is the OCTG bomb header. If it is well head code, well head bomb. Required or or is it only okay for for wellhead to be as a separate one or you can call it as a bomb header if it's a wellhead then wellhead header if it's a OCDG that's what I was trying to ask.
+
+Rahul Patel (ADNOC Group D&CS):
+I think the point is correct but that's what I even asked to Abdul and what he said is the the EWDP system will have wellhead materials and the category wellhead But if this information would be constant like all the fields what we are seeing are constant for all the wells will all for a well and will repeat for every line item that will show just as reference even if it is not relevant for OCTJ.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+It will just repeat and be there. If that's what I understand from Abdul correct Abdul.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, correct. OK, OK. So so let's start. Let's start from here and then let's send this across so that at least the conversation starts and then during the conversation with it if we have to further improve it we'll improve it but let's start from here is what
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+I feel everyone agrees to this.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay fine yes. Vignesh you okay with we started from this point yes yes all right then I'll send this this file I'll mark every one of you and Sushant will send this file to the IT person we spoke last week and then let's take it from there. If it needs further conversation, probably will have conversation with that team. If it's able to provide sample data from EWDP with based upon this file, probably this will help us take it forward.
+
+
+
+UNKNOWN_SPEAKER:
+All right.
+
+Rahul Patel (ADNOC Group D&CS):
+OK, anyone has any other point? No, that's fine. Alright, then thank you very much for your time. Let me send this email to the EWDP and we'll take it from there.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+OK, have a nice day, bye bye. Thank you guys, bye bye.
+
+UNKNOWN_SPEAKER:
+9. 29. 29. 10.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 2:
+9, 10, 15, 11 years.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, What's that? I don't know.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+So, we will be able to do that. So, we will be able to do that.
+
+UNKNOWN_SPEAKER:
+Okay. Yeah.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Thank you. Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you very much. Okay. Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+It'll be all right. Okay. Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Hello. Hello. On document number three by double zero.
+
+UNKNOWN_SPEAKER:
+Thank you. Thank you.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+If you are a premium.
+
+UNKNOWN_SPEAKER:
+Okay. Okay. Okay. Okay.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+I'm sorry.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Also in terms of Oh, thank you. Yeah.
+
+UNKNOWN_SPEAKER:
+I think.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+You know, no, no. What do you expect to see?
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Okay. Okay.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Okay. Okay.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Thank you very much.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Thank you. Thank you.
+
+UNKNOWN_SPEAKER:
+Okay. Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Thank you. Okay.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Okay.
+
+UNKNOWN_SPEAKER:
+Okay. Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Okay.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+I'm.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+I think that's it for you. This is what I have always thought.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Bye. Thank you.
+
+Conference Room (Vignesh Perumal (ADNOC Group D&CS)) - Speaker 1:
+Now, yeah.
+
+UNKNOWN_SPEAKER:
+Okay. Okay. You
+
