@@ -1,0 +1,890 @@
+Saul Portillo:
+me acosté, ahí sí me acosté porque estaba muerto y de hecho pensé que la reunión era a las 7 y era a las 6 y media, entonces entré tarde, no me acordaba y quedé dormido y entré y nada, a
+
+UNKNOWN_SPEAKER:
+partir de ahí he seguido trabajando.
+
+Pablo Lopez:
+Si tenéis alguna tarea o algo así que me podáis enviar y así os ahorro tiempo, yo lo hago.
+
+Saul Portillo:
+Sí, yo creo que mañana, vamos a ver cómo sacamos la configuración para mañana organizamos, hoy nos organizamos al final de esta reunión y le pedimos apoyo principalmente en cosas que puedan ayudarnos en configuración o algo, porque tenemos que empezar a ver el tema de químicos y en cierta forma es como replicar lo que tenemos en corrective y replicarlo a químicos si nos falta algo.
+
+Pelayo Fernandez:
+Ok, pues ayudamos en lo que nos falta, pero hay que dormir claro.
+
+Saul Portillo:
+Gracias chicos, créanme créanme que pasamos mucha rabia Fii y yo ayer intentando, bueno Fii se conectó conmigo después en la noche y viendo a ver, inventamos inclusive una solución alterna, la probamos y no daba, no daba, no daba y nos acabamos de dar cuenta, ahorita te la vamos a mostrar como se asume en el story y Udacity, era un simple parámetro y nos dimos cuenta porque claro a mí se me ocurrió ahorita, mientras estaba en la sesión del dajado, le voy a decir oye voy a probar la solución en la planinaria de la ACNUC.
+
+ A ver si es que en esa funciona porque ya no se está configurando directamente allí y no se ha hecho ningún merge. Y cuando probé, inventé unos datos, iba probando y funcionaba perfecto y le iba diciendo a Phi, mira Phi, funciona perfecto en la ACNUC. Revisemos a ver contra la Z01, a ver qué está de distinto en la configuración, porque no puede ser que no nos den la Z01, antes nos daba y se rompió porque eso la solución nos daba.
+
+ Y primero empezamos a comparar porque hay una aplicación en IBP que se llama Keyfigure Calculation, donde tú puedes ver la trazabilidad del Keyfigure, como que este se calcula con este, más después esto con esto, como que te va haciendo todo el nodo del cálculo y cuántos subniveles de cálculo tiene. Veíamos que Pero bueno, esa data distinta era porque en la ACNOC está tomando, para contar los periodos de venta, está tomando la sumatoria de la venta de corrective, preventive y químicos.
+
+ Que en un momento lo cambiamos así, también en la 701 ACNOC, para probar la solución con eso. Y después se revertió en la ACNOC a que fuese solamente, no calculado, sino que utilizará simplemente el keyfigure de corrective pero después revisando, revisando, digo, pero eso no puede ser, vamos a ver que otra cosa puede estar faltando, me di cuenta que en el keyfigure de counter que te cuentan hay venta o no hay venta, si hay venta pone 1 y si no hay venta pone 0, en el de ACNIC estaba con el 0 y en el de Z01 estaba con 0 y justamente aquellas combinaciones donde no ponía el null y no veíamos valores ni siquiera de cero en el 2025 y en los otros años, era donde estaba generando el error.
+
+ Y nada, lo acabamos de cambiar y ahora funciona perfecto. Entonces ahora tenemos que desechar lo que hicimos ayer, y tenemos que borrar eso, borrar todos los operadores de copy y los keyfigures que agregamos adicionales, porque empezamos a inventar un poquito a ver cómo podíamos solucionarlo y taparlo y de hecho logramos una solución pero no nos dimos cuenta que la solución seguía teniendo algún tipo de error y fue lo que se presentó hoy en la mañana y en la mañana había un error y el cliente se dio cuenta y dijimos nada vamos a revisarlo pero la rabia pues porque la solución estaba lista y funcionaba perfecto.
+
+
+
+Fiamma Giorgi:
+La enseñanza creo de todo esto es ver las cosas con la cabeza fresca y con mirada, porque a veces cuando nos enredamos en algo y mirar y mirar y mirar y no lo encontramos, fíjate que hoy lo sacaste mucho más rápido, o sea, lo buscaste de otra forma y detectaste el error mucho más rápido, pero me parece que ayer ya estábamos medio quemados, o sea, ya no veíamos me parece.
+
+Saul Portillo:
+De hecho yo empecé a las cuatro y media, cinco de la tarde con eso, y me paré la computadora a las 11 y cuarto y FI se unió conmigo como a las nueve de la noche hasta las 11 y
+
+Pelayo Fernandez:
+11 y algo claro es que si trabajando tanto al final acabas quemado y no te salen no se te ocurren las soluciones ni nada no es que llega un punto que no ves es como que ves pero no ves
+
+Fiamma Giorgi:
+en realidad, es como que te enredas en lo mismo y no le encontrás la vuelta.
+
+Saul Portillo:
+Sí, tal cual.
+
+Fiamma Giorgi:
+Pero bueno, por lo menos estaba funcionando igual, es lo importante.
+
+Saul Portillo:
+Sí, cuando vimos que en la ACNOX funcionaba bien, porque se me ocurrió inventar cualquier número y empezar a probar, y oye, pero en la ACNOX funciona perfecto, O sea, ya por ahí era un alivio. Ahora tocaba encontrar por qué enlace de 01 no estaba. Y ayer realmente, ayer anoche sí lo pensé, el hecho de probar en la ANNOC 01, pero entre tan embotado que estaba y cansado, dije, ah, ya.
+
+Fiamma Giorgi:
+Es que incluso, viste que yo en un momento te dije, lo estoy comparando con la ANNOC, pero estaba igual. Pero lo que estaba comparando era otro keyfigure, no era el que vos detectaste, que estaba distinto.
+
+Saul Portillo:
+Sí, estábamos comparando Estaba comparando. Claro, ese.
+
+Fiamma Giorgi:
+Ni se me cruzó por la cabeza comparar el otro, porque si no lo hubiésemos detectado ahí. Y encima estaba cambiado de nombre, entonces capaz ni lo detectábamos.
+
+Saul Portillo:
+Y ahí en configuración, chicos, de aprendizaje para todos, inclusive ahorita para mí, porque tuve que revisar eso ayer, pero como dice Fikun, sin cabeza fresca no se te ocurre, es ir desde el el principio y el final de un cálculo, desde el origen, desde el primer keyfigure y empezar a ver qué puede estar pasando e ir probando que todo esté correcto.
+
+Fiamma Giorgi:
+Si se traban en algo, déjenlo y vuelvan al rato. Mírenlo y capaz ahí se dan cuenta.
+
+Saul Portillo:
+Ahí chicos yo creo que se va a sumar, porque el enlazado le pidió a Basti que se quedara un rato y se quedó Vivek también, así que esperemos ahí que se suman Basti y Anito.
+
+Fiamma Giorgi:
+¿Qué tal? ¿Cómo vienen con la demo y con el proyecto?
+
+Pablo Lopez:
+Yo la demo la he terminado ya. Le pedí fecha a Daniela y estoy esperando fecha para presentarlo.
+
+UNKNOWN_SPEAKER:
+Ah, genial. Genial, genial.
+
+Pelayo Fernandez:
+Yo con el proyecto bien lo voy a acabar hoy, yo creo. Y así puedo seguir parte de Supply Planning 2, que me queda la parte teórica y alguna actividad, solo que la de Supply Planning, ya me dijo Pablo que está un poquito rara, faltaba un poco de cosas, entonces bueno.
+
+Fiamma Giorgi:
+Te diría que ni lo mires.
+
+UNKNOWN_SPEAKER:
+Si me preguntás a mí...
+
+Fiamma Giorgi:
+Yo Supply Planning 2 nunca lo vi. Lo empecé a ver, me confundió más de lo que me enseñó, así que lo no abandones. Gracias por el consejo.
+
+Saul Portillo:
+Está más confuso en los vídeos que de repente hacer una sesión si quieres cortita de una hora y te explicamos ahí todos los maestros y cómo funciona supply, creo que me va a sacar más provecho.
+
+Fiamma Giorgi:
+Sí, de hecho te diría que mires más el módulo 1 y le prestes más atención lo uno y lo reveas, que te va a mirar mucho más claro que mirar el otro.
+
+Pelayo Fernandez:
+Ok. Pues el otro, si tengo alguna duda con las actividades, os pregunto. Y si veo que hace falta que me expliques algo más y nos importa, podríamos tener una sesión.
+
+UNKNOWN_SPEAKER:
+Sí, sí. Por mí, genial. Genial. Hola, ¿qué tal?
+
+Hector Palacios:
+¿Cómo estás? ¿Qué tal?
+
+Pablo Lopez:
+Hola, Héctor.
+
+Hector Palacios:
+Bien, bien. Héctor, good news.
+
+Saul Portillo:
+¿Sí? ¿Durante la FMCN? Durante la Huddle, logramos el tema de FMCN y nos dimos cuenta que se había roto con unos cambios que no sé si lo llegamos a hacer nosotros o da lo mismo, pero en el sentido de que en el counter, en el key field del counter, cuando no encuentra venta, le estaba colocando null y no cero. Y eso hace que se rompa la solución. Y nos dimos cuenta porque se me ocurrió ahorita, me han trabajado y digo voy a probar en la Acnoc la solución, o sea, en la otra plenaria.
+
+ Inventé los números y probando, digamos, las imágenes, a fin, mira, funciona perfecto para esto, funciona perfecto para esto, funciona todo perfecto. Y lo acabamos de cambiar y ahora funciona perfecto en la plenaria que estamos usando, en el cálculo. De hecho, validamos, o sea, yo fui validando y todas las combinaciones y yo iterando ahí con Phil, como Phil estaba en la sesión, iterando con ella ahí y ahora ya, está lista, está perfecta, ahora lo que tenemos que correr nada más es el ABC segmentation, pero nada, aprendizaje, estábamos hablando ahorita con los chicos, ayer estuvimos a tardísimo, yo creo que estamos embotados a la cabeza, inclusivísimo cambios, configuraciones nuevas, figuras almacenadas, el problema, crear un keyfigure, inclusive almacenado, simplemente para tener algún almacenado en ese planning level que no teníamos ninguno, a ver si era un tema de planning level o de planning horizon, y nada.
+
+
+
+Hector Palacios:
+¿Tenían algún copio en el editor?
+
+Saul Portillo:
+No, ya está como lo mostramos inicialmente, te acuerdas que la vez que lo vimos que lo hacía de forma automática. Ya, perfecto. Pero inventamos ayer uno con Code Operator para por lo menos salir del paso y entregar algo para la reunión de hoy. Pero justamente ese que entregamos para la reunión de hoy, no nos dimos cuenta de esos casos. Cuando era vacío, te ponía el 1 como Fast Mover o te ponía cualquier otra cosa y no estaba haciendo bien la solución.
+
+
+
+UNKNOWN_SPEAKER:
+Ya, no, no está bien.
+
+Hector Palacios:
+Ya, listo. Quería pedirle ayuda por el... Que bueno que lo sacaron, Saúl. Lo tenés más pegado tú, Juan. Lo tenés más pegado. Está ahí terco con eso. No lo querés soltar.
+
+Saul Portillo:
+No, estaba... Estaba... Bueno, pregúntale a Fiamma. Estuvimos ahí hasta las 11 y media de la noche terco.
+
+Hector Palacios:
+Está ahí quemado con sacarlo. Está ahí picado. Picado, eso es.
+
+Saul Portillo:
+Es que Héctor, no funcionaba perfecto y se lo dejó mostrar en una sesión a ustedes y todo estaba bien y de repente que no funcionara era como qué carajo pasó, como que intentar encontrar el problema.
+
+Fiamma Giorgi:
+Sí, sí, un embole, o sea, porque nos daba bronca qué decíamos, pero si funcionaba, qué fue lo que pasó y no entendíamos, no entendíamos.
+
+Hector Palacios:
+Mirá, y la próxima semana, Saúl, tú llegas el 4, ¿verdad? El 4 día, martes.
+
+Saul Portillo:
+El martes, sí.
+
+Hector Palacios:
+El martes va a estar viajando, ¿cómo va a ser?
+
+Saul Portillo:
+O sea, el martes las reuniones normales y corrientes y salgo en la noche de acá, del martes.
+
+UNKNOWN_SPEAKER:
+Estaré llegando en la mañana del miércoles.
+
+Hector Palacios:
+Déjame buscar el pasaje. De combate y estamos llegando, pero no sé si le tinca tomar secciones de lo que estamos presentando.
+
+UNKNOWN_SPEAKER:
+Presentarlo, prepararlo.
+
+Hector Palacios:
+Yo creo que ahí hay el preparar el speech más importante. Yo creo que le ayudaría bastante, no sé si es que le tinca el desafío, Saúl. Y que igual a lo largo, igual tenés que hacerlo para los trainings, entonces una exposición más temprana, no a tu, porque ahí vamos a estar yo, a Tián igual, en todas las sesiones, pero quizás tomar cierta parte de la presentación, o cierta parte, mostrarnos las inventaciones, o mostrar esta parte de inventario, o esta parte de mando, no sé qué te parece.
+
+
+
+Saul Portillo:
+Sí, me parece bien, nos alineamos a ver qué parte pudiera mostrar, por lo menos esa parte de lo que tú dices, la segmentación que la hemos trabajado full, la podemos traer a nosotros a explicarles cómo nos está haciendo de forma automática el sistema y variar qué sea lo que realmente ellos necesitan.
+
+Hector Palacios:
+Sí, igual me interesa también que entiendan bien la parte de inventario, también como para enseñar, no todo el modelo por detrás, sino al menos el tema del análisis de resultados, eso sí me que se metieran bastante. Ver los números, revisar los indicadores que tengo ahí en el Planner Workspace y ver si te hace sentido o no. Cosas así. Entonces, si es que llegamos a alguna parte con los usuarios, iterar.
+
+ Les podríamos mostrar, interactuar, incluso con el tema de la approval. Podría estar yo de un lado como reviewer, tú como planner y podríamos simponear un poco ¿Cómo se haría? Creo que eso estaría bueno para la próxima semana.
+
+UNKNOWN_SPEAKER:
+OK. ¿Qué te parece? Difícil.
+
+Hector Palacios:
+A ti también te tinca dar una vuelta. Piénsalo. Pero sería un buen desafío ahí hablar con el cliente también, obviamente, en las sesiones que tuviéramos en la tarde.
+
+Fiamma Giorgi:
+OK. Bueno. ¿Esto cuándo sería, perdón, Néctar?
+
+UNKNOWN_SPEAKER:
+Próxima semana.
+
+Fiamma Giorgi:
+¿Y está pensado? ¿Un training? O sea, ¿cuál es la?
+
+Hector Palacios:
+No, no, no es training, sino que las mismas sesiones que estamos teniendo de validación de, ¿cómo se llama? Están llamando validación de diseño, pero simplemente le estamos mostrando por primera vez lo que hicimos, ¿no? Luego de todas estas sesiones de todo el diseño, básicamente. Porque antes de eso eran puras demos con números inventados. Ahora tenemos números de ellos. Tenemos datos de ellos, sus productos.
+
+ Con un poquito más de cosas, ¿no? Entonces, sería como mostrarle a hacer, yo lo que tengo pensado para mañana es como una especie de recap, de mostrarle esto, lo que hace este módulo, estos son los cálculos que hay detrás, etcétera. Bueno, mañana pueden ver. Obviamente, la sesión de la mañana quizás no se conecten, pero va a haber una grabación, me imagino. Entonces, podríamos revisar eso y luego para la próxima para químicos próxima semana, podríamos basarnos en eso.
+
+ De acuerdo, en realidad es replicar lo mismo pero de químicos.
+
+Saul Portillo:
+En pocas palabras, lo que estamos haciendo esta semana, hacerlo la semana que viene con las variaciones que tenga químicos.
+
+Hector Palacios:
+Sí, incluso algo más simple, porque piensa tú que el tema del forecast aquí es mucho más evidente, Es mucho menos resistencia, deberían estar los mismos planificadores que lo van a hacer, supongo. Es mucho mejor que el tema que estamos viendo con MRO ahora mismo.
+
+UNKNOWN_SPEAKER:
+Vale, ahí lo revisan.
+
+Hector Palacios:
+Yo igual para mañana estoy casi, o sea, estoy full trabajando en eso. Si les quería pedir ayudar, si me podían revisar el tema de los roles, por si es que mañana lo hacemos correr alguna que otra cosa, que tengan asignados las cosas de inventario. Todos los jobs que tenemos de inventario, básicamente. El que te creaste tú, Saúl, yo lo estuve modificando un poco porque le añadí los masters that rules que tenía FI.
+
+ Pero nada, para que tengan acceso a esas cosas en caso de que lo tengamos que ejecutar.
+
+Saul Portillo:
+Ok, echamos una mirada.
+
+Hector Palacios:
+Hay un job que tiene todos los pasos, y eso está perfecto, pero después hay un job que tiene solamente la ejecución de inventario, para que puedan ejecutarlo desde la web.
+
+UNKNOWN_SPEAKER:
+a ver un segundo y les muestro.
+
+Hector Palacios:
+Este. Ah, este, este me imagino que es el que contiene todo, ¿no?
+
+Fiamma Giorgi:
+Yo había hecho uno, sí. Creo que es ese. Debería ser ese, pero no.
+
+Hector Palacios:
+Que tengan este y este. Este solamente contiene la parte de inventario, para que no tengan que ejecutar los master data tools, nada de eso, sino que de una, que se ejecute la parte de inventario. Y es más fácil también, porque estoy seguro que es más fácil que tengan acceso este de acá, porque tienen que tener más el data rules. Y para temas de acceso, esas cosas son un poco más complicadas. OK. Luego, ¿había un job, Saúl, del tema del snapshot que, te acuerdas que para cuando mandamos a avaliar, se debería tomar un snapshot?
+
+ ¿Cuando, para la banda Google?
+
+Saul Portillo:
+No hemos creado el job como tal. Podemos crearlo. Lo que estamos haciendo es correrlo directamente entrando a Snapchat. Vale. ¿Pueden ayudarme con eso? También que los usuarios lo puedan ver.
+
+Hector Palacios:
+No creo que eso sea algo que lo alcancemos a ver mañana, pero por si acaso. Yo creo que esto va a ser más como material del jueves.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Fiamma Giorgi:
+Eso es Snapchat. Del ReorderPoint estamos hablando, ¿no?
+
+Hector Palacios:
+Sí. Exactamente. Lo es Snapchat del ReorderPoint. Y esto, que tengan acceso a Jobs Inventory Optimization MRO. Full. Y otro debería ser, no sé cómo llamarle a esto, pero uno debería ser como todo y el otro debería tener un nombre que indique que es solamente la parte del operador de inventario.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+Eso, lo que tengo pendiente también es crear las Planning Views. No me he puesto a revisar, estaba más del lado de la presentación. Pero creo que había algo configurado de antes, ¿no? Sí, de inventores, sí. ¿O es mejor compartir una pantalla, Saúl, tú o Fí? Ustedes la tienen. Voy a ver si les doy un icono. Rápido y me ayudan con eso también porque estoy...
+
+Saul Portillo:
+Déjame, déjame...
+
+UNKNOWN_SPEAKER:
+¿Perdimos algo, Saúl? Voy, voy.
+
+Hector Palacios:
+Entonces si lo de FMSN está bueno, quizás mañana igual podríamos comentarlo.
+
+Saul Portillo:
+Sí, sí, yo creo que sería ideal. Sobre todo Bástico nos vaya a mostrar demanda que decirle mira lo que teníamos lo que vimos ayer ya está corregido y que se pueda hacer la comparación para que tengan esa idea de que detectamos un error lo corregimos súper rápido y súper rápido, sí ya, teníamos este que tenía los inputs, el material replenishment, material weekly rate, teníamos este que era la optimización que te entregaba los resultados.
+
+ Pero evidentemente hay que hacerle mucho cambio en base a lo que ahí has estado trabajando sobre todo en el planer workspace.
+
+Hector Palacios:
+Yo mantendría el tema de esto de los indicadores, así las voy a mantener en el workspace. Aquí una cosa que le quitaría primero es como la noción del tiempo, porque esto es más que nada estático, al menos los resultados Dejaría solamente el periodo actual. Y luego cambiarle quizá a lo input, cambiar un poco los nombres, ¿no? Que están muy largos, eso de material, replenishment, lead time, weeks. O sea, si yo le llamo lead time y weeks, lead time days.
+
+
+
+UNKNOWN_SPEAKER:
+Falta poner filter. Oh, time. Para copiar.
+
+Hector Palacios:
+Podemos reemplazar ahí el Target Inventory Position por Max Stock, ¿ya?
+
+UNKNOWN_SPEAKER:
+Target Inventory.
+
+Hector Palacios:
+Max Stock Level.
+
+UNKNOWN_SPEAKER:
+Max Stock.
+
+Hector Palacios:
+Ahí tengo una duda, porque en teoría el inventario te lanza los dos. Pero dijimos Max Stock Level nomás de momento. Propose. Safety Stock Propose. ¿Este quitaría el de días? No sé si quitarlo, quizás mostrémosle los dos por si acaso. Mira, muéstrale el lista en días y en meses lo haría, no en semanas. Pero sí le cambiaría el nombre. Puedes quitarle lo de FII por mientras, lo de Material Replenishment que diga Lead Time Days.
+
+
+
+Fiamma Giorgi:
+Lead Time Days, ok.
+
+Hector Palacios:
+Y se llama Lead Time Months también el otro, ya lo tengo confirmado.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Saul Portillo:
+Entonces, el orden, vamos a poner esto de último, me imagino. Soil, secha y stock. Este es el máximo stock al final. El máximo stock al final. El final.
+
+UNKNOWN_SPEAKER:
+Target sale this level.
+
+Hector Palacios:
+El demand rate también me cree uno que está a nivel de meses.
+
+UNKNOWN_SPEAKER:
+Se llama demand rate month. Monthly. Eso.
+
+Hector Palacios:
+Reemplazaría el primero por eso.
+
+Hector Palacios:
+y el lifetime en días 25 días que son 2.45 meses aquí está lo mejor vamos con lo más simple de cualquier cosa si lo piden lo meten ahí está Service Level, Demand Rate. Voy a meterle también el coeficiente de variabilidad. Se llama Coefficient of Variation. Eso es lo que estoy calculando con el JobTie. Eso. Y ahí le explico. Conte el Service Level. Si podemos, coloquemosle unos colores, por ejemplo...
+
+ Ahí ustedes decían qué colores, pero creo que recién lo teníamos bien, era como que los outputs estaban en otro color y los inputs esos estaban en otro color.
+
+Saul Portillo:
+Sí, así que ponerle porcentaje. Porcentaje. A target service level.
+
+Hector Palacios:
+Entonces, esa vista está buena, yo creo.
+
+Saul Portillo:
+Le ponemos a estos tres. Un color como azulito y así también, y a este último le ponemos una raya abajo para que separen las combinaciones.
+
+Fiamma Giorgi:
+Claro. Saúl, ¿te puedes parar sobre el MaxStoreLevel?
+
+Saul Portillo:
+Quiero ver el ID. ZMRO Chemicals MaxStoreLevel.
+
+Fiamma Giorgi:
+Me parece que ese no es, porque justo estaba viendo que hay uno que se llama así, que se llama MaxStoreLevel pero es el de químicos.
+
+Hector Palacios:
+Igual podemos el Target Inventory Position, pero cambiemos el nombre para que sea más... Claro, es Target Inventory Position, justo lo quería cambiar, pero no me dejaba porque decía que existía uno. Es que aquí igual no deberíamos tener ninguna distinción entre químico y MRO, porque sobre todo, no sé, no le veo la ventaja al menor. En demanda sí, porque eran distintas cosas.
+
+Fiamma Giorgi:
+Es, perdón, es ese el que recién mostrabas.
+
+Saul Portillo:
+Este, el de máximo stock level.
+
+Fiamma Giorgi:
+No, ese es el de químicos.
+
+Hector Palacios:
+No tengamos uno, no tengamos uno para todos. De hecho, yo creo que igual lo metía en el... Pero sí, el que tiene el cálculo correcto es el Target Inventory Position, pero a ese llamémosle Max Stock.
+
+Saul Portillo:
+Ok, y sacó este.
+
+Hector Palacios:
+Sí, Max Stock. Ok, ahí lo cambié. De paréntesis quizá ahí o para que se note que no es el máximo stock de supply, sino que el máximo stock de inventory. OK. Max stock y inventory. Sí. Pero llamémosle así porque si no, no van a entender. Ah, otra cosa, Saúl, que estaría buena traerse acá es lista en demanda. Lista en demanda.
+
+UNKNOWN_SPEAKER:
+Ahí lo cambió. Es el segundo. Yo configuré el segundo.
+
+Hector Palacios:
+No sé si configuré el primero o si estaba de antes, no sé. Pero sé que el segundo funciona bien. O sea, el que sumaste funciona bien. Colócalo detrás del item, luego el item. Y sería demand rate por, sería como expected return.
+
+UNKNOWN_SPEAKER:
+Ahí.
+
+Saul Portillo:
+No sé si poner algún filtro que nos demuestre aquellas combinaciones que no tengan el IMAN Rate.
+
+UNKNOWN_SPEAKER:
+El Unit Testing, sería eso. El que compartió FI. ¿Para el filtro? Sí. Hay un filtro que se llama Unit Testing.
+
+Hector Palacios:
+Pero mételo como Workbook, Workbook Filter, para que todas las pestañas estén...
+
+Saul Portillo:
+para todos. Listo.
+
+Fiamma Giorgi:
+Y agregale que sea en Mario. Ah, no, bueno, está adentro.
+
+Hector Palacios:
+Sí, sí, está perfecto. Eso. Está bueno. Esto sería para analizar los resultados con ello.
+
+Fiamma Giorgi:
+¿No hay algún otro nombre que haya que cambiar?
+
+Saul Portillo:
+¿No quisieras meter aquí el current? ¿El Target Inventory Position se lo cambiaste, Max?
+
+Hector Palacios:
+Sí, ese se lo cambié ya.
+
+Fiamma Giorgi:
+Si se desconecta y vuelve a conectarse, Un beso.
+
+Saul Portillo:
+Subtítulos realizados por la comunidad de Amara.org De hecho podés cambiar el keyfigure ahí en los que ya están o no.
+
+Fiamma Giorgi:
+Fijate que ya tenés tres agregados. No sé si se puede... Simplemente, claro. ¿Cómo se hace para change ahí atrás?
+
+Saul Portillo:
+En change, aquí cambias el valor.
+
+Hector Palacios:
+Pero igual me parece extraño que se hayan desaparecido porque le cambié el nombre, no a los kifillos, no es que le...
+
+Saul Portillo:
+Es como que... ¡Ah!
+
+Fiamma Giorgi:
+Que está con la descripción, mira.
+
+Hector Palacios:
+Ahí está. ¿Lo tiene que ser con descripción? No. ¿Coloca kifillos? No. Ahí está, ahí está. Saúl, mira. Ándate a Members. Haz con dicho. Ahí en ABC, Change Black, Bukkake Fierce. Ahí. Ahí está el examen.
+
+Saul Portillo:
+Sí, eso sería.
+
+Fiamma Giorgi:
+Tu tasa de examen de embasaje.
+
+UNKNOWN_SPEAKER:
+Max Stock. Está cambiado.
+
+Fiamma Giorgi:
+Está cambiado el nombre.
+
+UNKNOWN_SPEAKER:
+Max Stock. Inventory. No, no, no. Inventé.
+
+Hector Palacios:
+¿Puedo colocarle un access.io? ¿Solamente io?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+Igual le doy, da lo mismo, porque se quedó con el key field. Así que va a funcionar igual. Proposed alrededor del point. ¿Y el otro era? Proposed.
+
+UNKNOWN_SPEAKER:
+Buscar nuevo proposed. ¿Ya está?
+
+Hector Palacios:
+Pero el safety stock.
+
+UNKNOWN_SPEAKER:
+Ah, ya.
+
+Saul Portillo:
+Lo que sí voy a sacar. El máximo stock para ponerle línea. Para ponerlo en otra parte y ponerle línea abajo.
+
+Hector Palacios:
+Sí, llámale simplemente Propose Max Stock, nada más. Sí, niño, porque ahí va a llegar claro.
+
+Saul Portillo:
+Propose Max Stock.
+
+Hector Palacios:
+Y aquí… ¿Están tomando apuntes, Playa y Pablo? Sí, sí. Lo que aprende mucho en estas reuniones.
+
+Pablo Lopez:
+He visto cómo hacer una cosa del formatting sheet, lo acabo de descubrir gracias a esto.
+
+Saul Portillo:
+está aquí.
+
+UNKNOWN_SPEAKER:
+www.alimmenta.com ¿Añade descripciones?
+
+Hector Palacios:
+Sí, creo que eso nos falta. Añade, por ejemplo, el PROGROUP. Metí en la data maestra para que tengan algo. También ya que tenemos harto espacio, podemos meter hartas cosas. No, ese es el de abajo.
+
+Fiamma Giorgi:
+El unify ID. Ese es la descripción, el otro es el ID.
+
+Hector Palacios:
+Ahí está. Puedes llamarle, al PROGRUP, puedes colocarle PROGRUP ID y al otro que se llama PROGRUP solamente, en vez de unify ID. Aquí siempre tengamos la lógica que si está el nombre simple, sea la descripción, y si dice ID, es la ID.
+
+Saul Portillo:
+¿Y este commodity, Héctor?
+
+Hector Palacios:
+Mételos todos también. Así es como se llaman en SAP, así que... Colócalos esos al principio y mira, colócalos en este orden. Primero el Pro Commodity, después el Commodity Code, después el Pro Group, y después el Material ID. ¿Y qué más teníamos? Material. El Product Commodity es el más grande, o sea, el más jerárquico para el principio. Y después empieza con más nivel de detalle. ¿Qué más teníamos?
+
+ Material.
+
+Saul Portillo:
+El grupo creo es también, o es lo mismo, es que estoy confundido. Hagamos algo, ya va. Vamos a abrir aquí el maestro.
+
+Saul Portillo:
+¿Revisan los favoritos?
+
+Hector Palacios:
+Yo les compartí uno favorito, Faul. No sé si ya los tiene usted, pero en Master Data.
+
+UNKNOWN_SPEAKER:
+Ese. Sí. Y ya están filtrados.
+
+Hector Palacios:
+Este es el de Logitech. Y el otro el de producto.
+
+Fiamma Giorgi:
+El de producto es el que tiene todo eso, exacto. Me acabo de cambiar el nombre, no sé si está actualizado.
+
+Saul Portillo:
+No, tengo que salirme y volver a entrar.
+
+Hector Palacios:
+Es igualdad lo mismo, pero tenemos Pro Group, perfecto, y el otro es Material Family, y eso como que no logro entender si es que está duplicado, Esto de acá fue lo que nos compartieron ellos. El que se produce category me parece super inventado.
+
+Saul Portillo:
+Realmente lo utilizamos para separar, que era químicos, que era spare parts.
+
+Hector Palacios:
+¿Dónde han sacado eso?
+
+Fiamma Giorgi:
+El Product Group fue lo último que me pasaste en Tor, para cargarnos. No sé cuál es la diferencia entre todo eso. O sea, en Product Group ID, ese de ahí, es la descripción del Product Group. Aquí dice Compressors y Filters.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Fiamma Giorgi:
+El Comodity, Comodity Coop y Group. Eso fue lo que cargué ayer.
+
+Hector Palacios:
+De hecho, ya estaba en realidad. Bueno, dejémoslo así por mientras. Cualquier cosa en la sesión ahí tiramos. Pero vamos a darle a este. Quizás quitémosle alguno porque la verdad es que está súper grande.
+
+UNKNOWN_SPEAKER:
+¿Este? Sí, este está muy grande.
+
+Saul Portillo:
+¿Sabes qué me llamó la atención de su ex-eladín Héctor?
+
+Hector Palacios:
+Que ellos no tienen esto. Darun está habilitando esas cosas. Dijo Darun que ya lo corrigió. Metámosle también en el Reese's Code. ¿Cómo es el ID? ¿Me dejas ver un segundo?
+
+Fiamma Giorgi:
+Sí, porque queda mucho espacio para algo tan pequeño.
+
+Hector Palacios:
+Y también me gustaría meter aquí las inventaciones, pero no sé si vale la pena. Sino simplemente irse a la data maestra. ¿Qué podría ser? Métele la FMSN, Saúl, solamente para mostrarle que se puede traer, para que lo entienda, porque si vamos a la data maestra, capaz que piensen que solamente se puede hacer ahí.
+
+Saul Portillo:
+¿Ponemos el IVP? Sí, el IVP. ¿Y algo más?
+
+UNKNOWN_SPEAKER:
+¿HML?
+
+Hector Palacios:
+Y PC también.
+
+UNKNOWN_SPEAKER:
+Ahí está ahí.
+
+Saul Portillo:
+este hecho tenemos que actualizarlo, ahora detectamos el error.
+
+Fiamma Giorgi:
+Perdón, ¿cuál es el keyframe que veíamos recién, que no lo veo ahí?
+
+Saul Portillo:
+Es el master data. Perdón, con razón no lo encontré, es el master data.
+
+Hector Palacios:
+Saltemos ahora a la Dimentor Input, porque no sé qué poner ahora.
+
+Bastian Osorio:
+que desconectar que tengo otra sesión pero solamente quería mencionar una cosa a Saúl, un desafío.
+
+Hector Palacios:
+Ya les mencioné.
+
+Bastian Osorio:
+¿Qué cosa? Que nos ayudaran a presentar la próxima semana.
+
+Hector Palacios:
+¿Sí? Sí, ahora nos puede ayudar solamente la tarde y Saúl está un poco complicado porque son la semana de viaje entonces creo que viaja el martes la noche y llega el domingo, perdón, El miércoles.
+
+Saul Portillo:
+No creo que se va a arrancar a la primera. O sea, la que va a estar complicada es la del miércoles nada más.
+
+Bastian Osorio:
+La primera del miércoles.
+
+Hector Palacios:
+Pero, o sea, claro, lo ideal sí está. A ver.
+
+UNKNOWN_SPEAKER:
+¿Cuál es la primera del miércoles? Chemicals.
+
+Bastian Osorio:
+Es Chemical Demand Planning. Sí, yo creo que lo ideal sería a la segunda, a la de las diez y media de la mañana de acá del lunes, que sería para ti a las seis y media.
+
+UNKNOWN_SPEAKER:
+¿Cómo da el lunes?
+
+Saul Portillo:
+¿Cómo va la semana del miércoles?
+
+Bastian Osorio:
+No, porque el día lunes, el día lunes y el día martes tenemos químicos.
+
+UNKNOWN_SPEAKER:
+Claro, claro.
+
+Saul Portillo:
+Para eso, para eso, para eso, pues lo que digo, para eso no tendría problema. Lo único que tendría problema es para el miércoles de la mañana.
+
+Bastian Osorio:
+Es que el miércoles de la mañana.
+
+UNKNOWN_SPEAKER:
+Ah, verdad.
+
+Hector Palacios:
+El miércoles de la mañana tenemos inventory. Es la sección 2 de inventory y esa es la toma. Está concentrado. Está concentrado todo el lunes a miércoles la boxazón.
+
+Saul Portillo:
+Pensé que era de martes como estamos hoy, esta vez de martes a jueves igual.
+
+Bastian Osorio:
+No, no, el jueves tenemos trilín.
+
+UNKNOWN_SPEAKER:
+¿En qué?
+
+Saul Portillo:
+En que no se vuelve todo confuso. Ahí, Bastián, ya solucionamos el tema de FMSN. Después de tanto de cabezazo, dimos cuenta que se me ocurrió con la configuración que teníamos en la AdBlock y estaba dando perfecto y el problema era que en el counter no podía llevar el valor de nulo cuando no encontraba ventas, sino que tenía que tener un cero para que después sea considerado y tome, porque cuando tiene ceros se marea un poco la solución con qué segmentation value va a entregar cuando encuentra vacíos.
+
+
+
+Hector Palacios:
+Pero yo creo que lo más importante es que la
+
+Bastian Osorio:
+gente se sienta bien. Y yo me voy a agendar las sesiones con Saúl una vez terminadas las sesiones para empezar a trabajar ya en el material para el lunes y martes.
+
+Hector Palacios:
+Lo bueno es que hay harto que reciclar, pero hay que echarlo a andar.
+
+Bastian Osorio:
+En realidad el proceso es exactamente el mismo. Y ya sabemos que...
+
+Hector Palacios:
+Algunos Dashboards no, porque tú estás ahí enfocándote en cosas más de NRO, como la cantidad de la cuenta y cosas así. Aquí me imagino que va a ser más demanda continua. Sí, es más demand planning clásico. Exacto. Debería ser más una simplificación de eso. Y para nosotros va a ser mucho más cómodo explicarlo también.
+
+UNKNOWN_SPEAKER:
+Sí. Ya, dale. Sigamos entonces. Nos vemos, chau. Chau.
+
+Hector Palacios:
+Chau a ti. ¿Pudiste la de input, Saúl? A ver qué podemos hacer con esa, porque siento que tenemos toalle. Tampoco es que me gusta ver los outputs, si no tenemos... El target service layer acá no pinta nada. Material use, software use.
+
+UNKNOWN_SPEAKER:
+Es que no sé qué podríamos meter acá.
+
+Hector Palacios:
+Quizá el histórico demanda simplemente, pero la historia completa.
+
+UNKNOWN_SPEAKER:
+podría ser. El actual usage.
+
+UNKNOWN_SPEAKER:
+Sí. Eh, pudiéramos poner el forecast.
+
+Saul Portillo:
+No, no, el forecast no pinta nada acá.
+
+Hector Palacios:
+El lollipop quítaselo porque eso es como un dato casi atemporal. El Weekly Rate también. Yo creo que esto quizá a nivel mensual y ya. Tirarlo desde el inicio sin eso. O dejarlo rolling desde ya para que no lo tengamos que estar cambiando en el futuro.
+
+Hector Palacios:
+Eso. Todo lo demás son, los podemos dejar ahí mismo, en la misma pestaña, no habrá necesidad de estarlos separando. Tenemos la variabilidad, ya la dijimos, que Okuno falta. Eso sí, pero es que no tenemos nada. Rememberability, Upgrade, Service Level. No, está bien. Yo creo que con esta vista ya está. Y la otra sería bueno, Saúl, colocar una... Copiáramos esta vista. Esto lo podemos hacer rápido. Esta si quieres ya guárdala.
+
+ No creo que más le podamos hacer.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Saul Portillo:
+¿Cómo querés colocar la otra? ¿Sobre la misma, verdad? Esa que se dice esta.
+
+Hector Palacios:
+Sí, replázala, no.
+
+Fiamma Giorgi:
+Dale a update nomás, para mí.
+
+UNKNOWN_SPEAKER:
+¿Dale update?
+
+Hector Palacios:
+Sí, sí, sí, voy. Colócale, sí, please, en Inventory Inputs, colócale Historical Consumption. Y acá sí le podríamos meter cosas, Saul, ahora que estás volcado. Como el Demand Pattern. ¿Qué más? La segmentación FSM, FSN, FM. Uf, se me fue. FMSN.
+
+Fiamma Giorgi:
+El MAPAT es el de IO, ¿no?
+
+Saul Portillo:
+Sí, es el de IO, ¿no?
+
+Hector Palacios:
+Si igual no vamos a ver nada, aunque está a nivel semanal, no vamos a ver nada aquí que sea ultra continuo.
+
+Saul Portillo:
+Y el tipo de… Déjale, déjame decirle nomás, Saúl, los demás.
+
+Hector Palacios:
+le interesa más cuando ven los resultados. Aquí es como para echar más o menos la frecuencia. La frecuencia y el patrón de demanda ya.
+
+UNKNOWN_SPEAKER:
+Esto da que querías cambiar por intermitente, Víctor.
+
+Saul Portillo:
+Si hay que colocarle un threshold un poco más alto.
+
+Hector Palacios:
+Podés revisarlo eso también, lo pueden anotar de revisar luego de que ojalá quede solamente intermitente, hay que colocarle un threshold un poco más alto. Si llegan con estacionalidad, se van a confundir.
+
+Saul Portillo:
+¿No quisieras poner aquí la demanda multiplicada por el historical lifetime? ¿O no? ¿Utilizas tu gráfico para analizar?
+
+Hector Palacios:
+No, creo que mantengámoslo allá nomás. Después vemos si la llamo a Cuartero o algo así.
+
+UNKNOWN_SPEAKER:
+No sé cómo sea.
+
+Hector Palacios:
+Es que tampoco quiero que... No, creo que debería ser en la misma vista. No podemos crear una específica de...
+
+Saul Portillo:
+¿Cuál revisa es esa?
+
+Hector Palacios:
+Espérate. Revisar cómo queda, porque acabas de que diga que todo es constante. Y si así entonces. ¡Hasta luego!
+
+Hector Palacios:
+La cuarta, bueno, creo que la cuarta quizá haga más sentido para MRO porque si no el horizonte le queda muy grande creo.
+
+UNKNOWN_SPEAKER:
+Dejemos la cuarta.
+
+Saul Portillo:
+Me adivinaste.
+
+Saul Portillo:
+Aquí está el coeficiente de variación, también voy a ponerle dos decimales, igual que el dipton en meses.
+
+Hector Palacios:
+Pregunción por un. Subtítulos realizados por la comunidad de Amara.org Ahora la sesión es la próxima semana, no sé qué tanto sentido tenga. Pero ahora que lo estoy pensando. Covid-19 debería ser un porcentaje también. De hecho, mételo con el. No, es como un input. Como un input. No, hay que crearlo separado, porque si no, va a quedar con el mismo formato el target Ah no, pero mira, espérate, en el targetServiceLevel es un input también.
+
+ Puedes colocarlo en el mismo formato los dos.
+
+UNKNOWN_SPEAKER:
+Mételo ahí, en el targetServiceLevel.
+
+Hector Palacios:
+Ok. Ahí, change, edit.
+
+Saul Portillo:
+No, no, edit.
+
+UNKNOWN_SPEAKER:
+Exacto.
+
+Hector Palacios:
+Estoy pensando que la próxima semana quizá las las sesiones de inventario tengan un poco menos de sentido, porque de demanda sabemos que son equipos totalmente distintos, pero en el caso de inventario de que tienen la partícula Chair Service. Ahí, Gregory, esto ya luce bastante bien.
+
+Saul Portillo:
+Ahí está.
+
+UNKNOWN_SPEAKER:
+Perfecto. Guardemos la luz.
+
+Hector Palacios:
+Hay otra más que se podría crear, pero esa la podemos hacer rápido.
+
+UNKNOWN_SPEAKER:
+Eso.
+
+Hector Palacios:
+Y luego, mirá. Quizá ocupa este mismo template, Saúl, de Mentor Optimization. Y guárdatelo como otra vista, como What-If Scenarios, Inventory What-If. Ok, quítale Historical. Sí, quítalo. Y añádele, no, deja, claro, sí, guárdala, perdón, sorry.
+
+UNKNOWN_SPEAKER:
+Guárdala.
+
+Saul Portillo:
+2.1. Inventory sería escenarios.
+
+Hector Palacios:
+¿Cómo lo quieres llamar? Ready for scenarios.
+
+Hector Palacios:
+para el punto 2.1 y acá coloca No te lo he compartido, déjame compartirte. Y él por mientras saliendo de IETF, Saul, cuando entre los papeles de poner.
+
+UNKNOWN_SPEAKER:
+Compartiste por el chat?
+
+Hector Palacios:
+No, estoy compartiéndote escenario en IGP. Ah, conéctate por el chat. Está aplicando cambio. Ahí aplicó. Puedes conectar de nuevo.
+
+Hector Palacios:
+y colócale en edit view, añade todos los escenarios. Allá abajo, donde dice, reparte versiones. 78, eso. Menos el baseline. Pero el baseline igual, creo que está. Que se usa en cada caso y ahora en layout déjalo como columna que me está poniendo mírame, version, me pide un escenario sí, que lo sacamos recién tirate el escenario hacia la derecha abajo del periodo Ok.
+
+Saul Portillo:
+Pero yo voy a tener que echarle… ¿Alguno del otro país se llama? Y la segmentación de repente.
+
+Hector Palacios:
+El de RISC Score está haciendo bulto, pero FIIA le cambió el nombre.
+
+UNKNOWN_SPEAKER:
+Hay que hacer el clear caché solamente. Ha cambiado el nombre.
+
+Hector Palacios:
+Hay que hacerle, hay que limpiar el caché.
+
+Saul Portillo:
+Es que le pido una vez para que veamos si con eso...
+
+UNKNOWN_SPEAKER:
+Veo.
+
+Hector Palacios:
+Ah, sorry, tengo que saltar. Pero ese, súbelo no más, Auron, y después le hacemos feintune en la misma sesión, Darum. Ok. Vale, sorry, tengo otra sesión, lo dejo. Pero gracias por la ayuda.
+
+UNKNOWN_SPEAKER:
+Un momento.
+
+Hector Palacios:
+Sí, Pablo.
+
+Pablo Lopez:
+A las 5 y media tú y yo teníamos lo del one on one, pero me está hablando Darum. Para tener la reunión de Business Roles.
+
+Hector Palacios:
+Claro, conectate con Arun entonces y mañana nos juntamos nosotros.
+
+Fiamma Giorgi:
+Ok, perfecto.
+
+UNKNOWN_SPEAKER:
+Vale, gracias. Chau, chau. Chau, gracias.
+
+Fiamma Giorgi:
+Saúl pregunta a Rosy, nos juntamos hoy por el tema de el training content o si lo vamos para mañana?
+
+Saul Portillo:
+¿A qué hora es?
+
+UNKNOWN_SPEAKER:
+¿Ahorita?
+
+Fiamma Giorgi:
+Ahora, sí, en este momento.
+
+Saul Portillo:
+Sí, es ahora. Y una vez creo yo, ¿no? ¿Eh? Y una vez creo yo, ¿no? ¿O sea que nos reunamos? Sí, yo creo. Para no pasarlo para mañana.
+
+Saul Portillo:
+Ahí está. Lo que hay que poner es el baseline de primero. Diré que ya nos pasamos por ahí.
+
+Fiamma Giorgi:
+Sí, ahí les puse, ya nos vamos.
+
+UNKNOWN_SPEAKER:
+¿Y necesitáis ayuda con algo de esto?
+
+Pablo Lopez:
+Lo digo porque me lo podéis decir y me pongo yo en ratos libres.
+
+Saul Portillo:
+Sí, tenemos primero que ordenarnos a ver qué...
+
+UNKNOWN_SPEAKER:
+a decirte ahorita qué trabajar. No sé si sabría decir...
+
+Saul Portillo:
+a guardar estas ideas. Nos movemos entonces. Nos movemos.
+
+Pelayo Fernandez:
+Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org ¡Ahora!
+
+UNKNOWN_SPEAKER:
+Subtítulos realizados por la comunidad de Amara.org
+
