@@ -1,0 +1,452 @@
+Vivekanand Gajula:
+Hi, Pablo. Hello.
+
+Vivekanand Gajula:
+Hey, Pablo, how are you? Hi, Bastian, all good. What about you?
+
+UNKNOWN_SPEAKER:
+Good, good.
+
+Bastian Osorio:
+I think this session went good enough. Not excellent, not great, but good enough. I think we still have a few things to fix, but all in all, it's fine. I think also Hector was supposed to be here, but never mind. So finally, we're getting some time to work on the supply plan. And I don't know Vivek, because I haven't, sorry, I haven't had the time to check if you were able to start working the supply script?
+
+
+
+Vivekanand Gajula:
+Yes, I prepared the supply script, the one that we reviewed last time. Can we check it, please?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, sure.
+
+Bastian Osorio:
+So I'm not sure if you are all we're already able to start preparing the different user cases. But if not, the idea, and that's why I also invited Pablo here, is that he starts to support you in configuration, in loading data, and requesting data to BVIC or to SAGAR, but basically start delegating some activities uh it is yeah yeah really needed it that of course I understand you also have some work in nato so that's why he he can start supporting you um like from now basically yeah so but uh bastian you know on the
+
+Vivekanand Gajula:
+supply side there are a couple of you know open uh questions now for example uh for this design validation sessions right we we have started with demand and inventory and we are presenting that you know in the base version itself right because the demand and inventory doesn't require you know much of the transactional data as far as you have the historical you know consumption we are good you know with that but same is not the you know case with supply planning right you have so many things you know on the supply planning side so so now there are two things you know one is we on the data that Vignesh has provided that is one thing and the other thing is we start integrating you know the data that is required for supply planning so whatever set up by data in the system is purely you know based on what Vignesh you know has provided to us and that is in the backup version not in the base version.
+
+
+
+Bastian Osorio:
+Yeah that's what I wanted to check the script because if we go point by point we can start tracking the missing data and start work on getting that from SAGAR. I think because we still have some time until we have the unit testing for supply, we should manage to get it from SAGAR in this way to prepare some consistent scenarios. But that's the first thing, the visibility.
+
+Vivekanand Gajula:
+sharing my screen you know let me know once you're able to see my screen. Can you see my screen? Not yet. I guess I can see. Let me I'm gonna disconnect and connect again connect again fine okay yeah and now I can see it yeah so this is the you know script for MRO okay so so the first you know step is master data you know validation So generic master data anyways we have in the system, but one that is specific to supply planning is transportation lanes, so which is your supply chain network.
+
+ And this is what is open as of today.
+
+Bastian Osorio:
+Rahul told me that he shares this information in the KPMG chat or file, I'm not sure.
+
+Vivekanand Gajula:
+No, that information will just tell you like for which AGC's you know we need to consider you know plant I mean for which AGC's we need to do the supply planning at the plant level and for which ones we need to do it. Do you have that file because I was working on something else yesterday I couldn't check. Yeah this one, this one.
+
+Bastian Osorio:
+So for example this supply network one.
+
+Vivekanand Gajula:
+That is what he shared. Yeah this is what he shared. But this is not supply chain network at all no these are just the rules you know I mean what not even you know full-fledged rules you know when we say transportation lanes we we are talking about the real data right so this is not that so what he's saying you know so what are you so sorry just to know I understand what he's saying because I was part of the session when where he built this file but this is not an intra company planning what does it said over there in the in the tab intra inter inter and intra company planning like he has just you know defined the levels you know like now what yesterday I think yesterday we had a call right so in that what he was saying is for intra company you know supply planning system should generate the STI proposals and same it should do in enter company as well but that is subject to approval and then it should go for purchase plan.
+
+
+
+UNKNOWN_SPEAKER:
+Today we have the daily huddle.
+
+Bastian Osorio:
+I don't know if you were invited but I need you to start joining the huddle. I think least I don't know twice a week. Today is from one hour and we need to raise this point ASAP. Because he said he shared but this is not this is not a supply chain network and nothing that can work for the unit testing.
+
+Vivekanand Gajula:
+Yeah so so what I did was is I mean I told you right I I have everything you know set up in the backup version and the way I created supply network is purely you know based on the based on the open PO and SPOs you know which Vignesh you know has shared with us but if we are relying on S4 you know to get that integrated to base version then then probably you know we need to have clear cut you know rules in the system you know to have that information in IPP.
+
+
+
+Bastian Osorio:
+We addressed this point during the daily huddle. Can we jump into the next scenario? If you have a point, any doubt, Pablo, please let us know, okay? Because the idea is you should be aware of everything, at least in supply. Okay, regarding transactional data, forecast is fine, we have it, because it's going to be created by the system. Material reservation, we need to get it.
+
+Vivekanand Gajula:
+Yeah, material reservation, I told sagar you know I was talking to him you know uh during the second you know uh session that we had today so he was telling me that they are having some issues with data store
+
+Bastian Osorio:
+post which you know they are going to integrate I I know but but I I have faith that before the unit testing at least because I'm not sure when I don't want to check but we still have at least three more weeks so I'm confident that we should be able to get data on time. Regarding reservation, sorry, we need to make the distinction there. For me, it's good to have that visibility. Reservation for CM, for PM, and for TM, turnaround maintenance.
+
+ Because the treatment is different. And also, I think the bot the thing about the distinction between materials.
+
+Hector Palacios:
+Sorry, there is what they are saying so far is that there is no distinction between corrective and preventive on. They have just reservation.
+
+Bastian Osorio:
+I'm fine with that. I'm fine with that. But I prefer to merge them within IDP than just because then we're going to close the the option for them to plan. For example, with the forecast, I think we should integrate them into separate key figures and then within IVP to sum them and use it as a forecast. But if we just integrate everything into just one key figure, we're saying basically, OK, keep doing the wrong thing forever.
+
+
+
+Vivekanand Gajula:
+Yeah, you're right. As of today, we have three separate key figures for three types of maintenance. If I understood you correctly, we should have four key figures, three as inputs and the fourth one is going to be a total of all three, right?
+
+Bastian Osorio:
+Let's make the distinction here. For forecast-based materials, of course, CEM and PM will consume the forecast. OK, but TM is a separate case because TM doesn't doesn't consume forecast TM as a as a separate requirement.
+
+Vivekanand Gajula:
+Yeah, but but as a reservation we have to get this information in three separate key figures, right? Yeah, ideally, yeah, yeah, but but based on today's call board, what I've seen is they also want. Figure you know which which gives them the total of all all this all the three key figures right yes in total there should be four key figures is what I was saying yeah but yeah but here I have a
+
+Bastian Osorio:
+question regarding still because for cm and for pm I'm I'm okay with that I'm I'm no I know that for now they are just there's no distinction from cm and then PM from PM for them. It's basically the same thing. But TM should be a different story.
+
+Hector Palacios:
+Because TM is a complexity we have today because we need to separate it, but we have the same key fears and we have the same massive data. So the question is how we will do it. How we can put a flag there so that we can...
+
+Vivekanand Gajula:
+But order type is different, no, Hector?
+
+Hector Palacios:
+Yeah, but that's only the demand, right? But the consensus key fear the same and we have the same materials but the materials is for me for me let's say you have a separate you know we can still separate but not the stock on hand not the
+
+Vivekanand Gajula:
+not the maybe no no see consensus demand we can still separate but the moment it goes to the location level will lose that visibility. Exactly.
+
+Hector Palacios:
+You can separate the demand but I don't know if it's going to be the best option because you have the consensus demand that's the only key fear with the equipment. You use another option you lose the equipment so it's just I don't know if that's the best option. And that is still open right that is recorded as an open I think that we need to point to have the equipment data.
+
+Bastian Osorio:
+But Hector, can you please explain me how they have the same, so they have dedicated stock, exclusive stock for TM and for the rest?
+
+Hector Palacios:
+We need to understand how they are doing it today because it seems that only the, the point is that, I don't know if they have a stock at all. That's one thing that we need to understand. Do you have a stock reserved? In any way. But if they do, if they don't, the point is that today they have different work orders that are related to a WBS element, the work breakdown structure. And that is triggering a separate team, a Piranha, I guess, and they are creating separate PRs for that.
+
+ And it's a whole different team. Yeah, so yeah, one option. I'm thinking now, Aldo, what if we create a separate planning area, separate massive data?
+
+Bastian Osorio:
+We need to match their requirements at some point, right? And they want...
+
+Vivekanand Gajula:
+No, no, no, no. It's completely separate. But the situation is going to be still the same, no?
+
+UNKNOWN_SPEAKER:
+Why?
+
+Vivekanand Gajula:
+No, no, even if you have a different planning area, they won't get the visibility at the order level, right? That's right. That's another point.
+
+Hector Palacios:
+So, we have two points here. Two points here. One is how we separate separate from normal plan and preventive maintenance. How we separate maintenance from general. Applying area is a Your question is, they are asking more detail. They want to have this information.
+
+Bastian Osorio:
+I need to mention the risk. We're already loading into one planning area 1.4 million materials. We're saying we're going to do the same thing for another planning area. So, in terms of integration, that represents a risk, I believe.
+
+Vivekanand Gajula:
+Two planning areas will have so much. I don't think so.
+
+Hector Palacios:
+I don't think so. For what I learned from because I have a big, big issue on Subtis when I was a junior like Pablo and they explained me that the HANA tables are separated by version so when you have a planning area you have different HANA tables in different versions so you can duplicate and it's still the same and if you have a different planning area you have another table for that so it shouldn't be any...
+
+ Same.
+
+Bastian Osorio:
+Why don't we use another version in that case with independent master data?
+
+Hector Palacios:
+That's a good solution as well. Yeah, I don't know. Let's see if we don't lose functionality because you know that sometimes with versions you don't realize but there is something that you cannot do on a version. But if that's the case then also I buy it.
+
+Bastian Osorio:
+I buy it. I'm having problem here understanding what is, because what is what we cannot differentiate that we're not able to do everything in one planning area? Because you're going to make servicing, right?
+
+Hector Palacios:
+It's the same material. You cannot have, the keyfiers, for sure, you have one set of keyfiers for supply planning, right? So it's not something that we can change. That aside, you cannot separate keyfiers.
+
+Vivekanand Gajula:
+Now, why if you have the same Bastiaan, Bastiaan, their main ask, you know, what I understood from Hector is that whenever supply planning is going to generate a PR, right, by PR they want to know, okay, to which TMs, you know, order it is connected to. That is the second topic.
+
+Hector Palacios:
+The first topic is how to separate preventing...
+
+Vivekanand Gajula:
+Even at the WBS level, you know, even at the WBS level, if not at the work order level, how you are going to tell based on the fear whether it is for TM or PM or CM?
+
+Hector Palacios:
+That's the second topic. Let's first discuss what is the problem of differentiated preventive form because one is how differentiated two planning approach because we have two teams, we have the same materials and the same key fears. The other topic is how we get to a different Which keyfigure do you refer? Supply keyfigures, stock projection, all the keyfigures are the same, right?
+
+Bastian Osorio:
+But if, I'm saying if, for example, they have different storage locations, they're just... No, they don't have. I'm just saying that's the case. So how, my question, my first question will be how they do it now?
+
+Hector Palacios:
+Because on the MRP run, probably they can link to a WBS element or something like that. So that's one thing. The only solution that I see, if you are using exactly the same materials, the same key figures, is to create another region, another planning area, whatever. A different version of the model with their own data. That's one thing. And that way we can use the same key figure and not create weird stuff.
+
+
+
+Bastian Osorio:
+Yeah, that's one solution. But if it's only the demand, I think one time Mariangel created an additional key attribute for demand type.
+
+Hector Palacios:
+Yeah, but that doesn't apply for the algorithm. The algorithm is pretty fixed. You have location, material, customer. That's it.
+
+Vivekanand Gajula:
+Hector, just one quick question. Let's say they have a material that is shared between TM and p.m. And if that material and even the location is also shared right it's not a separate location right and for that material and that location combination you have a stock of 100 and even if we plan it in a separate version or in a separate planning area stock is stock right so then you understand how they separate it yeah it's an open question yeah so then it will go go as the same you know quantity Don't think about the
+
+Hector Palacios:
+solution now.
+
+Bastian Osorio:
+We know we're facing an issue here. We need more information and we need to come up with a solution. But let's, for the sake of the time, let's jump into the other points.
+
+Hector Palacios:
+Sorry, I need to go because I'm focusing on tomorrow's presentation, but aside of these points that you're reviewing, it's important to have the scenarios. My suggestion, Vivek, is to start from the end. Let's start creating some dashboards, a planner workspace, a way to analyze information, and then everything is going to fall easily. Because when you have the picture of the planner workspace, how you did it, Basti, creating the, I don't know, the dashboards, the views, is that everything start making sense, right?
+
+ So let's start by that, because if we don't have a visualization in which we can easily explain to the planners how to see the information in the results in planners' workspaces and in the planning views, then it's not going to make sense. I would suggest to try to the planner workspaces because the planning views, I don't, I'm not a fan of the planning views for supply planning, to be honest. It's like, it's really difficult to...
+
+
+
+Bastian Osorio:
+But you check that for demand planning, they love it.
+
+Hector Palacios:
+They Yeah, the demand planning is easier. You have more attributes.
+
+Vivekanand Gajula:
+See, if we open planner workspace, then I think we can create, you know, the templates and all, but on the demand side, we didn't show the planner workspace, right? I will show it tomorrow. Okay.
+
+UNKNOWN_SPEAKER:
+So yeah, we need to do it.
+
+Hector Palacios:
+I mean, whatever is easier for the tasks that we are doing, we can create. I think that we need to have the two things. You need to have the planning views and you need to have the planner workspace. So that's where we maximize the adoption. The ones that they like to have the visualization right there and so on, they can use the planner workspace. Other ones, they can have the planning views.
+
+Vivekanand Gajula:
+but I think maybe we can put it this way like we can first we'll prepare the planning templates you know in excel and same thing you know we'll replicate in planner workspace and we can you know just tell them you know as part of speech that this is one of the alternative options you know that they can use.
+
+Hector Palacios:
+More than alternative I think it is kind of mandatory because the full approval process that we are creating is based on alerts, and the alerts are only on the planner workspace, not in the planning views. The control tower alerts. So, we need to use that functionality for approvals because they will go PR by PR, approving and saying, okay, this is okay, this goes. So, we will need to give them the planner workspace for doing that.
+
+ So, what I suggest is let's create some charts that they have the demand, they have the stock transfers, the PRs, all the results that they want to see, some inputs like lead times, I don't know, load sizes information, because you can put the master data as well in the Planner workspace. And if it is easy for you, then it will be easy for them. But that is my suggestion. That is going to make your work more, you know, Okay, but let's keep reviewing.
+
+
+
+Bastian Osorio:
+Yeah, I need to, yeah. Yeah, so Vivek, of course, we will have two scenarios, right? And I think the first point is, so the first scenario is forecast-based and the second scenario is a reorder point. So for reorder point, I think it's more straightforward. We have the reorder point and then we have reservations. And I think you created a good, a very solid where the reservations trigger consumption or the stock being below the reorder point.
+
+ And for forecast-based, we have the forecast consumption. We will on a monthly level, at least at this point? Yeah.
+
+Vivekanand Gajula:
+So Sebastian, like reorder point and max stock level, that is also pending. That is also pending. So we haven't integrated that. So I've told Sagar to integrate that as well. So I think, yeah, we have reservations forecast to be anyways calculated on the demand planning side. Stock will come open PO and STOs will also come from S4. And this max stock level and ROP will also come from S4. So for this design validation, we are going to use ROP and max stock level that we have on the S4 side, right?
+
+ Yeah. OK. So this is OK. Where the confusion is when to use independent demand key figure and when to use you know consensus demand because that when we put it on the template no that's where can you repeat the question no on the supply planning side we have two two standard key figures no one is independent demand and the other one is the consensus demand right yeah so when when to use independent demand and when to use consensus demand because I don't know whether we should keep that in the template or not.
+
+ It's a good question because the best practice is that for corrective.
+
+Bastian Osorio:
+The best practice is that for corrective we use independent and for preventive we use.
+
+Vivekanand Gajula:
+Yeah, that is as per standard. Yeah, but
+
+Bastian Osorio:
+Because at the end. When you run the forecast in, we're running the forecast at material location level. You don't know for sure that that specific equipment will require this amount. We're saying on average this is the demand. It's at the product location level.
+
+Vivekanand Gajula:
+I mean material location level. We are not running it at material location and oh corrective maintenance is okay okay it's at material and location level only so that will anyways go to independent demand okay that's not a problem but for preventive and tm right
+
+Bastian Osorio:
+we are going to have it at the consensus level right but the thing is that now now they want to run the forecast with everything corrective plus preventive because they don't plan, basically. They just consume. And at the moment of creating the reservation, they put the order type. And sometimes it's not even right. So we're going to forecast for everything. But they still want to have the reservation.
+
+ For me, the smartest, the safe, I don't know, the right thing to do will be to make the reservation at location level and the forecast at location level as well. Would that be an option to differentiate TM? That the TM can go to consensus demand and PM plus CM to independent?
+
+Vivekanand Gajula:
+no no see uh differentiating uh tm and uh uh differentiating tm at the uh demand level right I mean as a demand input we can still do it but what hector is saying yeah yeah is the rest of it
+
+Bastian Osorio:
+once we go to the next level right then then we don't know you're right you're right yeah so let's put the tm outside But for now, let's part PM, because if we keep talking about that, we're not going to make any progress.
+
+Vivekanand Gajula:
+So what you are suggesting is, now anyways, corrective and preventive, we are going to merge it, right? And based on that, we are going to focus. So it's one single focus. Now we don't have something like CM PM it's it's this yeah one single you know forecast which goes to independent demand directly right. Okay okay fine this is okay then then for for forecast consumption also will consider PM and PM so okay so this is sorted PM so so if we if we keep PM aside then then there is no need of using consumption demand at this point in time, right?
+
+
+
+Bastian Osorio:
+But forecast consumption, yes. And if they want to have the visibility of the equipment, they can also look at the equipment for the reservation. But the reservation will consume the forecast at location level. And it's the same then for the forecast consumption for the standard demand planning, where you create the forecast but at the end if the sales order comes from client customer X you still can conceive the forecast for customer Y
+
+Vivekanand Gajula:
+because yeah because you are at location level yeah you are forecasting on an aggregated level correct so yeah even now I have configured it that way so forecast consumption is going to run at product location level only it's just that one of the input which is forecast is going to be at product location level and reservation is going to be at the more detailed level.
+
+UNKNOWN_SPEAKER:
+Correct no? Yes.
+
+Vivekanand Gajula:
+Yeah so that is okay I think we have those things so what is open that is open you know we will get that you know from from S4 and then this is really yeah so then inventory okay this I need to change no because inventory policies we are not going to validate on the oh this is I think yeah I think one supply one of the another scenarios we need to address is the service level definition using the
+
+Bastian Osorio:
+risk score we need to come up with a proposal it is not going to come here no ah sorry this is for That is for inventory.
+
+Vivekanand Gajula:
+Yeah. Yeah, my bad. Yeah. So inventory policy is OK. So they will review S4 parameters. OK, this is OK. Constraints, yeah. Lead time, yeah. Yeah.
+
+Bastian Osorio:
+Another important part is, OK, for me, forecast base and all that is pretty, I mean, I see it clear. Where we have more problems is with reorder point. Why is that? Because what Rahul explained to us, I think you were part of those, I'm not sure if you were part, but what they currently do is that when they create a reservation, no, no, when they create the, I think the order, that order needs to be approved so they can trigger reservation.
+
+ So let's say, next week or in two months, you're going to perform a preventive activity. So you create a work order and then someone from the inventory team can approve that order so they can trigger the PR or whatever. Right. And that's why they were so insisting, insist, yeah, insisting in getting like approval process in ADP. Because they don't want to they want to let the users to just start creating work orders or so they can trigger PRs and they then don't use the material.
+
+ So for me this issue has a pretty, I don't know how to deal with this because if we say okay Okay, I think we should only integrate, I mean, we can integrate both, but we should differentiate between, let's say, pending approval in a key figure and approved reservation, something like that. And only- But that is an input, no? Yeah, that's an input. The thing is that the only value that we're adding here, for the reservations is that we can trigger STOs or PRs.
+
+ So that is my point. If they say, well, we don't want to approve NS4HANA anymore because if we approve NS4HANA, that triggers the PR immediately. And we want to assess first if it is possible to use an STO to self-source. Instead of going for a vendor.
+
+Vivekanand Gajula:
+So then I think during integration itself, we need to build that logic so that when we feed the approved material reservations to supply planning, it generates the STR and PR proposals purely based on that.
+
+Bastian Osorio:
+So what we're saying is that, OK, the approval process will happen in S-Rohana, but how that reservation will be fulfilled will be determined in IVP. Yeah, yeah.
+
+Pablo Lopez:
+Can you take note of that, please, of that scenario? Sorry, Tim, I'm a little bit lost because I don't know what I will have to do exactly, if you can explain me more.
+
+Bastian Osorio:
+I think for now, there's no something specific, but I don't know, Vivek, if at this point you need to support into something, but what are we doing now, Pablo, is basically list all the scenarios we need to prepare. And then based on that, probably Vivek will guide you into what needs to be done.
+
+Pablo Lopez:
+Okay, perfect. This is part of integration?
+
+Bastian Osorio:
+No, this is configuration and scenario. It's for unit testing supply. Okay. So it's basically the same sessions we have today, but for the phase two supply.
+
+Pablo Lopez:
+Okay, perfect.
+
+Vivekanand Gajula:
+okay so so that is something which we need to uh do it you know on the integration side uh but uh nothing changes you know from from ibp from ibp supply plan standpoint right so as far as it gets the input it is going to plan based on that what what sorry which one is it which point is it no no uh what I'm saying is uh just now we were discussing discussing about the approval process, no? Yeah. So we need to only bring those, you know, I mean, yeah, we need to bring only those material reservations that are approved, you know.
+
+ We can also bring the ones, you know, that are pending from approval, but supply planning is going to happen purely based on approved material reservations. Yeah. So nothing changes, you know, from supply planning points, planning side is what I was saying.
+
+UNKNOWN_SPEAKER:
+And do you see. Do you see what.
+
+Bastian Osorio:
+Do you see the need to.
+
+UNKNOWN_SPEAKER:
+Any.
+
+Bastian Osorio:
+Do you see any need. To create an alert here like,
+
+UNKNOWN_SPEAKER:
+Like
+
+Vivekanand Gajula:
+pending pending no alert is not required because the key figure itself is going to be separate no yeah otherwise how are we going to integrate you know which one is approved and which one is pending so that that is only possible if you have to separate you know uh key figures yes so that itself is like an alert you know yeah it's just that you know today we don't have that key figure so yeah so we need to create you know we need to create so I think for material reservation ideally there there will be only two key figures one key figure is like cm plus pm and the other one is going to be tm and this we can call it as maybe approved material reservation CM plus PM and the other one is going to be pending or maybe pending you know for approval something like that or we are reservation pending reservation pending something like that and that is going to be CM plus PM so TM anyways you know we we are not considering it right now.
+
+
+
+Bastian Osorio:
+Okay so I think that they.
+
+Vivekanand Gajula:
+But I don't know, like, for this unit testing, we will be able to do that, because we don't know the logic, you know. So we need to get that logic first. The logic of what? Logic of identifying, you know, which one is approved and which one is pending. Do we know that?
+
+Bastian Osorio:
+We need to explore with Sagar.
+
+Vivekanand Gajula:
+I'm not sure but maybe we can first thing is to have the requirement clear then once we have the requirement clear we need to meet with Sagar and try to find out the and there is one more thing no like one more thing that we have is integrating independent material reservations. What do you mean by that? Independent material reservations with 201 moment type. That is not related to not to corrective, not preventive, nothing right?
+
+
+
+Bastian Osorio:
+Yeah but at the end of the day it has to be accounted during planning.
+
+UNKNOWN_SPEAKER:
+Yeah yeah for sure.
+
+Vivekanand Gajula:
+So that is going to be a separate key figure or we are going to merge it with the
+
+Bastian Osorio:
+I think we should separate it, but I'm not. I need to check more about that because it's we I don't know.
+
+UNKNOWN_SPEAKER:
+I'm not sure if. If.
+
+Bastian Osorio:
+Is it possible to create an order? Is it how they do it? Did they just create reservation out of nothing? I don't know.
+
+Vivekanand Gajula:
+I mean today today what they were saying is more than 50% of the time do this only across agencies. They don't create reservation with respect to any work order. They directly create it. And they do this only when they are very sure about consuming that material. When they are or when they are not? When they are, that is what I understood. So if we put the laws based on work order then will never catch you know this guy because this guy won't have any work order so will not will not you know have this and they were repeating this quite a few times like 201 is not being considered right now which should be considered maybe I think on this we a discussion with Rahul but for sure they need this yeah I'm just thinking if we integrate this then it should be part of the regular material reservation or a separate stream of demand maybe separate is better so that they know how much so that they know what is 201 and I think If it's possible, it's always better to
+
+Bastian Osorio:
+give them that visibility. At the end, we're going to just sum the different inputs and create a forecast and all those things.
+
+Vivekanand Gajula:
+On this, I think we need to align because this will also be considered during forecast consumption. This I think is open you know so I will tell Hector you know to or maybe I can put this you know in the open point list yeah put it please and and this lead time no bastion so lead time I think right now we don't have any network but what I was saying thinking is today they have they must be having lead time at the material location level so if we if we bring that you know then I think from a visibility standpoint it would be good I think today we don't have it yeah and this is the rest of the steps okay yeah okay the first step will be I mean we have the daily in
+
+Bastian Osorio:
+in an hour and we will speak with with sagar about the the integration and once the integration is fixed we can start working on the on the points yeah okay and and uh and in terms of alerts right if
+
+Vivekanand Gajula:
+you remember last time we discussed about that overstock alert so that overstock alert I created okay shortages we already have it we already have it so I can just rename it to shortage you know right now it is having a different name so overstock alert and shortage we already have it projected stock situation anyways they can see it and then the recommended plan also we have it I actually wanted to have one dedicated session you know where we review you know some of the results you know of supply planning mainly the results that we are getting you know for materials you know that are planned based on ROP so that is something which is new for for all of us right yes because before we go in front of them right at least you know we ourselves you know need to be convinced you know with the output otherwise it is going to mislead them.
+
+ Basant tell me one thing like this planning type how did you guys update it? Is it through rule or through segmentation? Through rules? No, no, through rules. I mean, you just see if the number I didn't find any rule, you know, do you know which rule is that?
+
+Bastian Osorio:
+No, no, I didn't manually, but I plan to do it with a rule.
+
+Vivekanand Gajula:
+So it just content. You updated it manually? Yeah.
+
+UNKNOWN_SPEAKER:
+OK, OK.
+
+Vivekanand Gajula:
+I was actually looking in the system. I think you updated only for location 2101, I guess. Yeah, because it's the only one that we're using for the testing. No, but for chemicals, you didn't do it, right? No, but chemicals the next week. Yeah, okay. So, so I think, because, because based on that, I'm going to release the forecast now. Yeah. Yeah. So fine, then I think the main thing is lane and so I also need to update the cost you know because we are using optimizer so we also need to think through about the cost modeling strategy how do we automate that OK.
+
+ I think that's all for now.
+
+Bastian Osorio:
+I think there's plenty of things to be managed once we have the connection with S4.
+
+Vivekanand Gajula:
+Yeah, yeah. And one last thing, from a dashboard standpoint, what is that we need, which is more you know, that is relevant to supply planning?
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Bastian Osorio:
+I think we need to start first. I mean, for projected stock coverage periods, of course, for that, that is the coverage period is just for forecast.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Vivekanand Gajula:
+That's all what I can think right now. OK. And yeah, so supply planning also will We'll keep it at plant level, no?
+
+UNKNOWN_SPEAKER:
+Yes. For design validation.
+
+Bastian Osorio:
+Yeah, I mean, if we're able to, yeah, if we're able to get good data at storage location level, then that is, we can do that. But for now, I mean, let's wait to see what information we have.
+
+Vivekanand Gajula:
+Yeah.
+
+Bastian Osorio:
+this question is that basically it depends on the depends on the on the plant if they run the MRP at plant level or at storage location level so we need to define that if there's a marker see these AGC's
+
+Vivekanand Gajula:
+right they they do the planning at a slog level Okay, and these AGCs, right, they do the planning at plant level. Yeah. But right now we don't have AGC and plant relationship.
+
+Bastian Osorio:
+Yeah, we need to find out and based on that, what is what we're going to integrate, right? Yeah.
+
+Vivekanand Gajula:
+But then, then they might also be able the output at that level.
+
+Bastian Osorio:
+But yeah, yeah, of course. So the type process will be based on plan or source location based on this definition.
+
+Vivekanand Gajula:
+Depending on the agency. OK, then at least you know I can focus on configuration whatever small task you know we have I can assign it to Pablo yes he can he can work on it and at the same time you know he can also get the hold on the system. Can you repeat what I can do? No I will let you know Pablo so I can give you some basic, you know, tasks. Okay, so right now we are waiting for some key, you know, related to IVP.
+
+ But yeah, there is some configuration work, you know, that we have, you know, most of the configuration is done, but whatever is pending, I can, I can explain you so that you can start working on it.
+
+UNKNOWN_SPEAKER:
+Okay. Okay. Thank you guys.
+
+Bastian Osorio:
+Talk to you.
+
+Vivekanand Gajula:
+Thank you.
+
