@@ -1,0 +1,352 @@
+Vivekanand Gajula:
+Okay, perfect. Hello everyone.
+
+UNKNOWN_SPEAKER:
+Hello. Hello. You Bye, guys. Hey, Ray.
+
+Reinaldo Gutierrez:
+How are you?
+
+UNKNOWN_SPEAKER:
+Very good, my friend. Hello.
+
+Reinaldo Gutierrez:
+Hello, Pelayo. Hi, Fiamma.
+
+Bastian Osorio:
+Hi, Tim.
+
+Pablo Lopez:
+How are you?
+
+UNKNOWN_SPEAKER:
+Hello.
+
+Rocio Minguillon:
+Hi, Gene. Thank you for staying. Sorry about the delay. It's, I mean, we are not going to plan anymore to have this meeting after the huddle, because it's impossible. It always takes more than an hour, you know.
+
+Sagar Vora:
+It's crazy. I was expecting delay, like when you scheduled this after the huddle.
+
+Rocio Minguillon:
+Yes. That's crazy. Hi.
+
+Bastian Osorio:
+Sorry, guys, for being late.
+
+Rocio Minguillon:
+Okay, so the thing that I wanted to talk, I don't know if there is any other thing that you want to see before, but like since some days ago they are asking about feasibility on the pending definitions that we have and when are they going to impact us. So, for example, As I spoke with Vivek, I think yesterday or the day before, the supply network definition is almost like next week is going to start affecting because he can't do anything without that.
+
+ Is Vivek here? Yeah, I think so.
+
+UNKNOWN_SPEAKER:
+Vivek, he was here.
+
+Bastian Osorio:
+Yeah, I'm not sure because I I dropped before the call ended regarding the supply chain network, but did you guys come up with a final solution or we're still working on it?
+
+Vivekanand Gajula:
+Yeah, we are still working on it. So what Rahul suggested was let's schedule one more meeting which is going to happen tomorrow. So it looks like we are still shorting down, you know, the supply chain network creation rules. And once we have full clarity, you know, then only, you know, we can start, you know, working on it.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+And I'm not sure if in the pending points, Rocio, you have like the approval process, something like that. Reservation approval. If it's not there, Can we add it, please?
+
+Vivekanand Gajula:
+This is the one that we were discussing with Raul.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+I mean, it's more complex than that. I think that is just one leg of the entire requirement.
+
+Rocio Minguillon:
+So we have two activities here now. The first one is to see which pendings do we have in each process, and then the date or whatever. I mean, because I'm not sure if this list is complete or not. I mean, I know that Hector made it up according to the points that he had. But maybe it's worse to review if there is something missing. But that kind of thing, for example, reservation, I find just these that talk about the reservation.
+
+ I don't know if it's the same. What does it say? We'll utilize it.
+
+Reinaldo Gutierrez:
+I don't know.
+
+Rocio Minguillon:
+No, no. No, that is not the one. Nothing to do.
+
+UNKNOWN_SPEAKER:
+OK. No.
+
+Rocio Minguillon:
+And it's in supply, I suppose.
+
+Bastian Osorio:
+No, I think it also could be in demand. I'm not sure how to classify approval process. Reservation approval process. Let's call it that way. Let's put it for, I don't know if there's for demand for me, just put it for demand and call it a reservation approval process.
+
+Rocio Minguillon:
+Because Vivek, at the end of the day, it's demand, right?
+
+Bastian Osorio:
+It's not like you are not thinking about how to fulfill it. You're thinking the definition is should we fulfill it or not.
+
+UNKNOWN_SPEAKER:
+Yeah, that's correct.
+
+Rocio Minguillon:
+OK, now I will look how this works. Or put it general.
+
+Bastian Osorio:
+Yeah, general. Yeah. Better you put it general. OK.
+
+Rocio Minguillon:
+But one thing is, how do you prefer to do this? I mean, do you want me to join with each of you and review each of them to see the impact. Because the impact, it's very, I mean, we can say that there is no impact. But when we see the calendar, we see that they then are going to blame us if we don't say right now that it's going to generate impact.
+
+Bastian Osorio:
+Because- My problem, and I understand what they're saying, and they want to track everything. But my problem is that we have, it's not a problem. We have, we still have like four more weeks of unit testing. And of course we expect some change in definitions. That's fine. But I cannot say everything will have an impact because that's part of the unit testing change a few things. No, I don't know.
+
+Rocio Minguillon:
+Of course. But the things that are still open, like for example, the two like more clear examples that I know are this network thing of supply, then on drilling, it was a lot. So, I mean, the impact is pretty clear for me. I mean, in five weeks, yeah, well, in four weeks, we should be finishing the configuration, the build. So if they expect us to start with UIT the 7th of April and to do this, like, bureaucratic stuff.
+
+
+
+Bastian Osorio:
+Yeah. Again, it's said during the daily For me, the bottleneck is not the configuration. For me, the bottleneck is the definition. They're coming up with a definition. For me, that is, and let's give a safety lead time of, let's say, two weeks.
+
+Rocio Minguillon:
+So when we should finish the build. For example, this. Risk score matrix definition. This is for inventory. So this is pending definition. So we still don't have the input.
+
+Bastian Osorio:
+But in one more layer, one more layer. So of course we can, if they come up with the definition and we have two weeks to build it, I'm going to be exaggerated, but just to make the point, we have a day to build it. If this definition requires no additional information, there's no impact for us. But then the problem is that they say something and they start iterating. So it's fine, they iterate a little bit, but we need to come up with a final definition and we hopefully can test the unit testing at the end of unit testing.
+
+ So for me, the final field for me, let's say all this definition should be closed one week before the end of unit testing, depending if there's wave one or wave two.
+
+Rocio Minguillon:
+What do you mean? Like the build or what?
+
+Bastian Osorio:
+The build, the configuration.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Which still have, I don't know, three, four weeks.
+
+Rocio Minguillon:
+Okay. But they are not points that you need before. I mean, like, for example, I understand that for, like, the first definition, I understand the thing about the iteration, but I also understand that there are points here that we don't have a clue about it. I don't know this order size, but I don't know what is the EOQ definition. I mean, can we wait until the 10th of February, or that will mean that, no, the 10th of February, no, the 17th.
+
+ Can we wait until that, or that will...
+
+Bastian Osorio:
+Can you tell me the example again?
+
+Rocio Minguillon:
+Pending EOQ definition. I don't remember the name in English. The optimal quantity. We are working on that. Let me think about it.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rocio Minguillon:
+Because the big worry here is that then we said, OK, no, this is not going be part of the UIT because you give us the definitions too late, or you didn't give us the definition. They are going to complain about that. So I understand that that is basically why they need us to define these dates on everything. And for example, on supply, I don't know where is the network. Supply chain error creation.
+
+ We have this with the status pending definition. I understand that this is for next Monday, because then you start not having the time that we were supposed to have. No? Am I right? I mean, I don't know. Too dramatic. I understand the point about the iteration that it's supposed to be, but maybe we can push them to have some definitions, like the initial definition.
+
+Bastian Osorio:
+Let me, I will take a look at the file and I will give you an answer, but again, it's hard for me to come up with a straight answer. And what do you see? Because, and even if they come up with a solution, let's say we say next week we need to come up with all the definitions. They will come up with definitions and we'll have to make some changes during the UIT because they will realize, oh, this is not exactly as I thought it will be.
+
+ Once and for all.
+
+Rocio Minguillon:
+Yeah, but that's another thing. I mean, yeah, I will say that they should give us some definition now and some others will be for the last week. But there are some that maybe need to be like for right now. I don't know, Saul, Vivek and Arun, how do you see it as you are also like the ones that are configurating and waiting to these definitions to continue.
+
+UNKNOWN_SPEAKER:
+What do you think?
+
+Vivekanand Gajula:
+Bastian, you know, presently there is a lot of confusion around material reservations, right? Yeah. So there is no clear picture like in CEM what should happen, in PM what should happen. They should get merged, this and that. So I think every time we start discussing, it keeps on changing. So there is no uniformity at this point in time. So for me, I completely agree with you, Vivek.
+
+Bastian Osorio:
+That's why it's hard for me to say, OK, in two weeks, you need to come up with a definition, or otherwise we will be delayed. It's hard. I cannot push for that. We need to, the users, the key users need to get more, and this is why it's very useful to get the unit testing. They need to see how the system works, they need to see some data, and then they will be able to come up with a final definition, a final solution that works.
+
+ But for me to push them into, say, like a final definition without having all the knowledge, it's hard, it's like, I don't know, I cannot say that. Because if they come up with a definition, would you be sure that that definition won't be changed?
+
+UNKNOWN_SPEAKER:
+No.
+
+Vivekanand Gajula:
+See, at some point in time, there has to be a consensus. It cannot be like this. I mean, it cannot be like, know, where they keep on, you know, changing, there's a somewhere, somewhere change management, the guys have to chip in, right?
+
+Rocio Minguillon:
+Yeah, maybe we can in supply, I see that we have also more time. So we can plan like more like, with more. Yeah, like February, end of February, whatever some definitions. But for example, yeah, I mean, demand. I mean, we have the unit testing next week. And then we have three weeks or two weeks of finishing everything. So that are the things that I don't know. Are we going to keep maintenance planning for MRO?
+
+ For example, this. This is the thing that we're speaking about. Can you say that again? Are we going to keep maintenance planning for MRO? Yeah, of course. Yeah, of course. We need this, like, next week, no? Like, the 7th, I understand. Because then... Or not. I mean...
+
+Bastian Osorio:
+Look, I will schedule a session tomorrow with Hector and the leads, if they're needed, to come up. Because some of these definitions are our definitions, our definitions based on or understanding of the business. Hector put it there, it's fine, they are there, but it's because we didn't have the entire knowledge. We haven't seen the full picture at that point. So now that we have the unit testing, we know more about this.
+
+
+
+UNKNOWN_SPEAKER:
+Okay, okay, okay, sure.
+
+Bastian Osorio:
+So there are, you mean that there are some... The point is in general. Yeah, until the users and until we don't interact with the user during the unit testing with real data, we're not going to close definitions.
+
+Rocio Minguillon:
+OK, then if you if you think that we should put like one week before.
+
+Bastian Osorio:
+The one look, we have one more week of unit testing, so give it one more week so we need, but but don't don't confuse this with KPMG Jet. I will schedule a meeting tomorrow with Hector. We will go through all the points and we'll see if anything is... So first, I think there's a few definitions that we already have, so we're gonna close that. If there's pending definitions that are not in the file, we're gonna add them.
+
+ And then if there are things that we have some time, We can wait more, we can, well, indicate that, and in the case we need very urgent, we need that as soon as possible. We can indicate that.
+
+Rocio Minguillon:
+Okay, please include me in that session, and also Saul, Vivek, and Adam, I think that they should be so they can, like… Sure. But, yeah, whenever you can, please, because, yeah, for example, the network of supply, I think that that is urgent or not. I'm not understanding well. Yeah, it is urgent. Sorry, come again, Rocio? No, the definition of the network, the supply network. Yeah, that is required, right?
+
+
+
+Vivekanand Gajula:
+Otherwise, we won't be able to do anything on the supply planning side. Exactly.
+
+Rocio Minguillon:
+OK, so that's kind of, that are the kind of things that I think that they need to be aware of
+
+Vivekanand Gajula:
+Yeah. But, Bastian, you know, one backup plan that I had was whatever data we got from Vignesh, right? So that data, we have it in a backup version, right? So I created a network based on that.
+
+UNKNOWN_SPEAKER:
+Sorry, what was that?
+
+Vivekanand Gajula:
+No, no, we got some data, you know, recognition, right? Like OpenPUs, you know, and STUs. So based on that, you know, I took some assumptions and I created the network in backup version.
+
+Bastian Osorio:
+For me, that is the approach, is to come up with something. It can be basic, it can be even a little bit silly, but at least show something and then they're able to see, no, that doesn't work, then what works?
+
+Vivekanand Gajula:
+Yeah, that's what I mean. Whatever data, like whatever ROP information of my stuff, you know, level information we have. So based on that, at least, you know, in the backup version, you know, we have supply planning and output, what is missing is the demand planning and output. So because that demand planning we are running in base version now, but but that is also not a problem, you know, I can copy that to backup version so that we have a full picture, you know, of supply planning, at least, you know, in the backup Mm-hmm.
+
+
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+I'm going to schedule the meeting for tomorrow. I just have a question, and I'm going to have a meeting. Well, I need to also have a meeting with Sagar.
+
+Rocio Minguillon:
+Sagar, are you here?
+
+UNKNOWN_SPEAKER:
+Is Sagar here? Yes.
+
+Bastian Osorio:
+Sagar, we need to- Yes, yes, I'm there. What I think is more urgent is to have a plan for the wave one for all the Extractors for wave one. So first of all, you have the list of the different of the different Integration flows that we have in what what when are we gonna be able to have everything? So, of course what you need that testing we don't expect to have everything or Or the sooner the better Because we can with this data for example, I'm just gonna give you an example I don't know.
+
+ For example, they were asking about how many of materials we're going to forecast. If we're able to integrate all the corrective usage and the preventive usage, we're going to be able to provide that definition. And based on that, they're going to say, OK, if they're, I'm going to say, just run the numbers. OK, if there are 10,000 materials we need to forecast, then that's fine. Something we can manage, so we will going to involve the demand planners.
+
+ If there's 500,000 materials that need to be forecasted, then no, the technician is another one. But for that, we need to have all the, at least the data for the wave one ready and integrated so we can run the model to see the results. So, yeah. I put the integration session on Friday, but I will try to meet you with you tomorrow so we can review the data flows and see what is pending. Okay? Okay, but I can see Friday's invite.
+
+ I cannot see tomorrow's invite. No, no, I will schedule a meeting for tomorrow.
+
+UNKNOWN_SPEAKER:
+Okay, okay.
+
+Bastian Osorio:
+And I understand, and for me this is the most urgent topic, that the firework was approved and it's just a matter of hours they fix it, right?
+
+UNKNOWN_SPEAKER:
+Yes, correct.
+
+Sagar Vora:
+So they can fix it tonight also, but they said they will fix it tomorrow, so let's wait.
+
+Bastian Osorio:
+And what is the progress on the adjustment in the extraction? Considering the storage location? This is something that Isabel was working on.
+
+Reinaldo Gutierrez:
+Yeah, so Isabel already did the change for that case here. She is looking at the storage location from the reservation related to the order. So that was done. Okay. That was the most important one.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+Okay. I'm going to try to, and when can we, well, we need to have the firewall ready to integrate and check.
+
+Reinaldo Gutierrez:
+Yeah, but we can, we can review the data tomorrow because tomorrow we'd have a meeting, right? To, to see all the integration points.
+
+Bastian Osorio:
+No, I moved that meeting, but okay. I will, I will move it for another, 5.30, 5.30, is 5.30 fine for you? Yeah.
+
+Reinaldo Gutierrez:
+It's okay, maybe even I can send you an image regarding the data.
+
+Bastian Osorio:
+No, no, we need to be together checking.
+
+UNKNOWN_SPEAKER:
+Okay, okay. Okay.
+
+Bastian Osorio:
+Yep.
+
+Rocio Minguillon:
+So, Basti, can I schedule the Can you tell me at what time you want to schedule the meeting to see the open points?
+
+Bastian Osorio:
+Maybe I can, I will try, maybe I will do it now, later. I need to go back home. Yeah, no, the thing is that I really want to...
+
+Rocio Minguillon:
+We have something, Taller Practico Performance, I don't know, I don't even know what's that. No, you don't need to join that, I mean, the evaluation process for OSCM. Okay, less than four, maybe five. Spain? Yeah, I will invite Hector. But it's in 45 minutes now? Yeah. Yeah, sure. Okay, and I would really like to, I know that now maybe they are not not so aware of the, yeah, but I really think that's how Arun and Vivek.
+
+ Yeah.
+
+Bastian Osorio:
+Let me have a quick look of the dependent definitions because I need to organize them. I don't want to jump, I don't want to book a meeting inviting anyone just to check an Excel and organize it. So I need to organize it first. Then we can meet all together.
+
+Rocio Minguillon:
+OK.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rocio Minguillon:
+As you want. But I don't.
+
+UNKNOWN_SPEAKER:
+Yeah. OK. OK.
+
+Rocio Minguillon:
+So see you, Jim.
+
+UNKNOWN_SPEAKER:
+Thank you. Bye. Bye. Bye.
+
+Bastian Osorio:
+Thanks. Bye. Bye, guys.
+
+Vivekanand Gajula:
+Basti?
+
+UNKNOWN_SPEAKER:
+Yes?
+
+Bastian Osorio:
+When do you want to watch the Skifigures? We have a meeting tomorrow, right? We have it tomorrow, yes. Yes, yes, yes. Ok, and the... See you tomorrow. Ok, and the cancelled Monday... Can we move it to Friday, if there's anything?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+Yes, yes, Friday at 10. I'm going to...
+
+UNKNOWN_SPEAKER:
+Perfect.
+
+Bastian Osorio:
+Ok, ok. A training session.
+
+UNKNOWN_SPEAKER:
+Bye!
+
