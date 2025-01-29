@@ -1,0 +1,693 @@
+Rido Mardian (ADNOC Sour Gas - Procurement):
+you Hi, good afternoon.
+
+UNKNOWN_SPEAKER:
+Khalid.
+
+UNKNOWN_SPEAKER:
+Hi, hi everyone.
+
+Khushboo Mudit (ADNOC Group D&CS):
+Hector, do we also have Bastian on the call?
+
+Hector Palacios (ADNOC Group D&CS):
+We can start the session. Yes, I see Bastian. Yes, I'm leading this one. Just confirm on Adnox side if we can go ahead.
+
+UNKNOWN_SPEAKER:
+Khalid, are you there?
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, I think I think we can start here. All right, perfect. So let me start sharing the screen. Just one second. Good. Tim, please let me know if you are able to see the screen.
+
+UNKNOWN_SPEAKER:
+Yes, we can.
+
+Hector Palacios (ADNOC Group D&CS):
+All right, perfect. Thank you very much. So hi, everyone. Hector here. We are starting today the sessions related to inventory optimization. Let me go back. Inventory optimization for MRO. So we are having three sessions. We have this one today, and tomorrow we have two. The third one, probably if we have any open topic, we can use the time. Otherwise, we are able to cover everything in the two sessions.
+
+ Can use only two, right? But let's keep the placeholder so far because it's highly likely that we are going to use either way. So this is how I'm planning this session. First of all is to do like an IDP inventory recap because we saw these concepts like time ago. Some of them you are familiar but let's see how IDP is going to deal with these calculations and so on, okay? Then a second let's check the inventory process.
+
+ I have reduced a little bit. It's not the detailed process that you see, but high-level process that we will follow in for the testing scenarios. Now, here on the EoIT, of course, it's going to be much more detailed with each case. But here, to have a high-level understanding on what we are doing, we are going to do it in a more aggregated way, let's say. Also, to show you a system demo. We have some numbers.
+
+ They are not quite a lot. As you know, as you have seen on the sessions right now, so far is that we don't have a full integration yet. We have some unitary testing data, but it's your data. So at least that can help us to drive the discussion. And then one important topic that we need to finish is service level discussion. And finally, we will leave some paid for some open points. That can happen on the next sessions, not necessarily this one.
+
+
+
+UNKNOWN_SPEAKER:
+All right?
+
+Hector Palacios (ADNOC Group D&CS):
+If you are having any question while I'm presenting, please interrupt me and we can address it properly.
+
+UNKNOWN_SPEAKER:
+All right?
+
+Hector Palacios (ADNOC Group D&CS):
+So let's start by the recap of what is inventory on IVP. So the main purpose of IVP, as you know, we have three stages, demand planning, inventory planning, supply planning. Each one is going to have its input, their inputs, and their outputs. In the top of that, we also have a segmentation that is cross-function because you are going to use it in every part of the process probably. We will also have alerts and visibility that is supported by an Excel interface and a web interface.
+
+ I'm planning to show you both today. But as you may know, we are focusing on the inventory planning. I put here in into parentheses, into brackets, the levels, because this is specifically what we are addressing today. This is a discussion about safety stock, reorder point, and max stock. We are not going to stop projections or anything like that. That is going to happen in supply planning in the next weeks, okay?
+
+ Phase one is only about demand planning and inventory levels, all right? So, let's go ahead. The main purpose is as we know, is to calculate these three parameters, ROP, safety stock, max stock. So these three are composing the levels that we need to set up in the system. And IDP is going to calculate it in the following way. So the one that we are usually going to calculate on IDP is the reorder point.
+
+ And the maximum stock and the safety stock are going to be derived or is going to be of having the reorder point. So if you have the reorder point, if you add the economic order quantity or order size, the optimal one, you get the max stock level. And in the case, if you reduce the expected lead time demand, you get the safety stock. So reorder point subtracting the demand order lead time. And here, reorder point plus order size, or EOD, OK?
+
+ These are the formulas for EOQ. This is something that we are discussing with you internally, because here we have some information about the demand we have, but we need the ordering cost and the holding cost. It's an open topic that we are checking how to close, because we are missing those inputs and we are providing a way to calculate them. The other one, the expected lead time demand is much easier.
+
+ You're familiar with the concept, but it's basically what in the lead time, how much demand should happen. So it's just a simple multiplication here. The demand would be an average of the demand, historical demand, and then you multiply by the lead time and you get more or less what consumption we should have in that period. Okay? So these are the three parameters we have. All right. Let's continue.
+
+ So this is How is it going to interact in the system? So this is intermittent. It mostly is going to be intermittent consumption. So you have, let's say, this is your current stock level. You have a demand. You drop, right? You continue for some periods without demand. Then you have demand again. You drop below the reordered point. You go back again. This jump is going to be your society, the economic order quantity.
+
+ So in the best scenario, we continue and we don't go below the safety stock, but that can happen. In some case, if we don't go, we get to the reorder point, but we don't go below, then we will get the maximum stock. That is why we have the maximum stock calculation like that, because it's the maximum theoretical level. If you trigger, but you don't go below the reorder point, that's as much as you can get, not more than that.
+
+
+
+UNKNOWN_SPEAKER:
+that.
+
+Hector Palacios (ADNOC Group D&CS):
+Then another case is that you can go below the safety stock. It can happen. It's not what we would want, you know, because the safety stock is just in case, but what is prepared for these cases in which it just happened, and then we will trigger again and again, and we repeat the cycle. So this is the way that it's going to behave. We are not planning to use the safety stock, but in reality will happen, of course.
+
+ So let's see, what are the main inputs for calculating this? So we know what we want, we are the point, safety stock, maximum stock, but where are the inputs on our supply chain network? So imagine that you have your plants here or a storage location, right? And some plants that may be feeding. In some cases, I guess that you have a direct communication from the vendor to the final plant is fine. But the point is that you will have different inputs that we will need to consider.
+
+ First of all is the calculation of a demand rate. Of course, this is going to be based on historical consumption. The lead times that you have on the supply chain network from the vendors to the plants, between plants and so on. Between plants probably is going to be near to zero, so it's more important from vendors to plants. Sourcing quotas if we have. For example, if this plant is being supplied by one in two different locations upstream, then we can define, based on the history, what is the normal transfer, like 30% from here, 70% from here.
+
+ This is only if we have anything like that. So far in the data, I haven't seen a scenario for this, but if we happen to have like this, then this can be also modeled on the system. The inventory policy is to know where we can stock, because if we are not going to stock in certain location for x, y, z reason, then we don't need to calculate any inventory policy. So it's basically an indicator for excluding the combinations in which we are going to calculate inventory levels and the ones that we are not going to calculate inventory levels.
+
+ Let's continue. The demand variability, so this is calculated based on historical consumption. You see how much it varies on the time. And lead time variability as well, because not every event we will have exactly the same lead time. So if you have an average like six months, maybe once it's going to be seven months or five months. We don't know exactly a number. So we can have an average, but if there is certain on that, we also want to know that to include a buffer for that in the safety stock.
+
+ And the economic order quantity is not optimising, as I said before, it's not optimising the reorder point of safety stock, but it's directly for the calculation of the maximum stock, but it's not going to affect the core calculation of the safety stock reorder point. And finally, but not less important, is the service Service level is going to influence a lot. Service level is basically the non-stock out probability.
+
+ So if you have, for example, 90% of service level, that means that, in theory, 90% of the times that you have a demand, you are going to be able to cover with the reorder point that you have in the city stock. 10% of the time, you are going to be out of stock. OK? Choose wisely what service level to apply, because if this is a very, very critical part for business continuity, then maybe we want the maximum service level that is 99%, and then we will have a huge buffer just in case we have any variability on the demand or in the lead time, so we can get exactly what we need.
+
+ But in some cases, I guess that, for example, segmentation when something is desirable, then maybe it's not worth it to have a huge service level if this is not going to have a huge impact on operations. Because having a high service level means that you need to have a lot of stock, and that is precisely what we need to reduce. So the question is, do we need to have safety stock or reorder point in those cases?
+
+ And if we need to have, maybe we can have, but not so much. So we can reduce service level to 90%, 80% to have something just in case, but not completely to cover for all the possible scenarios. Because even if we have it, the impact is not going to be something that we need to take into account. This is not something, this map that you see here with all the possible calculations in IVP, is something that we can If we want to go in a deeper discussion, we can come here to understand how everything is related.
+
+ You can see that there are many calculations, but we are not going to stop here to do a deep dive. Basically, what I want to tell you is that there is some input from integration. For HANA, for example, the historical consumption, the unit cost, the stock that we use for segmentation, the historical consumption for the demand rate, variability, mean time between for calculating the demand pattern.
+
+ All of this is very valuable information for us, and we get it from historical consumption by applying some machine learning algorithms. We also will need the lead time. The historical lead time, if we want to calculate the variability of the lead time, then we need to know what is the history of that lead time so we can calculate it, the standard deviation and so on. And we also want to use the lead time calculation that you already have.
+
+ So here, We don't want to reinvent the wheel because you already have a calculation that maybe you are using in other processes. So basically, we want to use exactly the same lead time that you have today on S4 HANA. And all this information that you see integrated or manually updated in some cases is going to be a direct input for internal calculations that will lead to the main inputs. So the main inputs are the demand during the lead time or and demand, the total variability that includes demand variability and lead time variability.
+
+ So it's just a whole number that we are putting together. Then we have the distribution type that I will explain in a couple of slides, the service level that I was discussing before, and the economic order quantity. These five inputs are going to be helpful for calculating the reorder point. And based on the reorder point, then we can get the safety stock and the maximum stock right way. So this is just a complete map of how all the calculations are related from the initial inputs, the integration ones, until the outputs.
+
+ If we have any questions later, we can come back to this and we can use this useful map to explain what we have there. Let's discuss about the inventory model. This is related to the distribution type that I was talking about. For inventory calculation, we need to rely on distribution of probabilities. So the probability distribution, it will tell you all the possible values that can have the consumption.
+
+ So if you have, for example, a consumption, let's take this one for explaining. So imagine that whenever we have a consumption, the normal value is like 10. This is like the expected amount, the most average value that you will see in the history. So this is telling you that the probability of this happening, based on the historical results that we have, is around 13%, let's say. But it's also possible you have 16.
+
+ So here, instead of having 10 of consumption, you can have 16. And the probability of that is much lower. It's 2%, right? So using this information in a IVP, inventory we calculate the most optimal stock level based on the information that we provide. This distribution and the probability distribution is going to be different for each case. So for material A and plant A is going to be one. Then for the same material in a different plant can be different because the consumption pattern is different.
+
+ Maybe it's the same material used in two machines that is failing at a different rate. So the normal the expected quantity will be different, and the standard deviation will be different, and so on. So for each combination, we are calculating this distribution type, and we are optimizing the inventory based on this information. This is critical for the inventory optimization. In the inventory procedure manual that you have, it is mentioned right there.
+
+ It's like, for normal distribution, for critical parts, put 90% service level using the normal distribution. So it's right there, but it's not enough. So distribution type, the normal, is the most common one and the most used around the world, but it has some limitations. This distribution type is good for parts or materials when we have kind of a stable demand. So we have variability, but not so much.
+
+ It's more And also, we have enough information to calculate a standard deviation, because that is one of the main input, the standard deviation. And if you don't have enough information in the past, you cannot calculate a proper standard deviation. You need to have some data for doing that. And precisely, that is the issue with MRO parts. Sometimes you have once a year or once in three years. So you have three points.
+
+ In the grid events in the past, in the last five years, maybe you have three consumptions, or you have one, or you have two, or you have five. I don't know. But in all those cases, this is not enough for calculating a reliable standard deviation. So we don't use it. In those cases, there is a better distribution that is called Guason. This distribution Statistically, it's for unfrequent events. So in many of the MRO cases, when we talk about mid-movers, slow-movers, this is going to be the way to go.
+
+ Because when you don't have enough information, you want to use this probability distribution to drive your inventory parameters, your inventory levels. And in all other cases, we have the Galois distribution. This is a very good one when you have high variability. So imagine that you have, for example, in this case, the normal consumption that you have is like 4. And that is a 12% probability. And it can be less.
+
+ It can be more. But as you see here on the curve, you have a bias. So this is allowing to have very high peaks. So basically, what I'm saying is this distribution when you have like normal demand, like four units, 10 units, and suddenly sometimes with a low probability, what happens, you have like 50 units or 100. But I have seen some examples that you have some very crazy peaks on demand. Well, this probability is useful for modeling that behavior.
+
+ So basically, Here is the variability and the band frequency are going to help us to decide what is the distribution that we are going to use. So whenever we have low data, we are going to use Poisson. But if the variability is too high, we are going to use Gamma. All the other cases is going to be normal. So normal is when we have enough data for high frequency, moderate frequency, I'm expecting to have data for doing the calculation, but the variability, when we say this variability is a standard deviation, needs to be moderate.
+
+ It cannot be too high. If it is too high, the best one, again, is gone. Okay? So, these are the models. The system is going to calculate this. What is the low demand frequency? That is the system. What is high or moderate variability? That is the system. So, basically, the system will, using the history, will derive all this information and will assign the proper model for optimizing the inventory parameters.
+
+ So it's going to be automatic. But just for you to know and understand that behind, there are many things going on. Let's continue. This is an example of the Poisson distribution and how we are going to derive the parameters from here. So imagine that if you don't have any safety stock, your reorder point is going to be two. It's exactly the expected demand during deletion, right? The deletion demand is two.
+
+ So in the base case, if you are not accounting for any additional safety stock, this is how much you need to have in inventory level, two units. And this distribution is telling us that this is going to account for 68% of the cases. So for 68% of the cases with two units is enough. For the rest of the cases, it's not going to be enough. Why is it not? Because maybe the demand can be zero in most of the cases, 14% probably.
+
+ It can be one during the lead time. In that case, it's like 27%, or it can be two, 27%. If I have two units of a stock, then I can cover these three cases, right? And if we sum the probabilities, that is exactly 68. 27 plus 27 plus 14, that is 68%. What happens if I add just one unit? So if I add one unit of a stock, I have one offset stock. In total, I have a reordered point of three. That accounts for the 86% service level.
+
+ So 86% of the cases with three units is going to be enough. And we can continue with the exam. And you can see that if I'm increasing the units of a stock, I have higher and higher probability of fulfilling the demand, right? So with these five pieces, we are able to work for 98% of the possible cases. That's the idea. Now, how is this going to work is the other way around. So we are going to specify the service level.
+
+ We say, for this part, I want have a huge availability, so we need to have a stock, and we need to place 99 percent, for example, of service level, and IBP is going to calculate this. It will tell you what is the reorder point, and consequently, what is the safety stock amount. What you need to understand from here is the higher the service level, the higher the safety stock. You see that increasing the service level, you are basically affecting the safety stock part of the reorder point.
+
+ Okay, because the reorder point is accounting for the safety stock plus demand during the lead time, that in this case is two.
+
+Hector Palacios (ADNOC Group D&CS):
+Are you getting what I'm trying to show you here? OK, let's continue. We'll check that this is clear. But either way, we are going to jump to the system. If you have any theoretical questions, we can come back. Let's discuss about the process and the testing scenarios that we are going to have. The process is basically this one. So we have these five main steps. First one is to define the service level.
+
+ Once we define the service level, we also need to review the other inputs. So we have, as we discussed, demand input. We have a lead time input. We have the service level that we just saw before. And we need to review that these parameters are OK. If we trust that everything is OK, then we can run the job. Once we run the job, we can use IDP to analyze the results. So we will have planning views, like the ones that we have been seeing so far in the previous sessions.
+
+ And we have some web views in which we can also analyze and use some nice charts and layers and things like that, that will help us to focus on the most important cases, the big changes, and so on. Optionally, you can perform what-if analysis, that means You can play a little bit with the service level, for example, and see how that is going to affect the reorder point. And finally, probably this is something that we are going to cover tomorrow.
+
+ We want to showcase the functionality that we are seeking for approvals inside the system. And basically, it's like you have this proposal. If you approve it, then we can integrate this back into supply planning, S4HANA, whatever we needed. We can mark as official, basically. This is the new reorder point. This is the new safety stock. This is the new max stock. So that's the process that we want to follow.
+
+ These are the scenarios we have. So we start from segmentation, because segmentation is not the same cycle. Probably this is going to have a much lower frequency, like yearly level, yearly frequency. But it's a very important input. It's going to help us to analyze source to understand the nature of the products, if this is ABC is really important in consumption, or HML, if the price is high or not, the stock value, the criticality, and the movement type, right?
+
+ So all this information is going to be available for you. We are going to calculate it on IVP, and you will be able to use it on IVP and integrate it back even to S4 HANA. But IVP will be the source. Then service level, we need to see how we are going to maintain the service level, then how we are going to review the input, how we are going to run the job to calculate the inventory optimization, analyze resource, what-if analysis, what we discussed before.
+
+ The approval part, and this is very related to the next steps. Inventory level release and a snapshot. The release is basically when we are copying this information for supply planning. So now we say, okay, this is the new reorder point. Use it on supply planning to drive the PRs. Or integrate back this information to S4HANA if you are using it for any other reason. Also, take the snapshots. We have discussing about the snapshots that are basically photos or screenshots of the previous cycles.
+
+ So we can also run the snapshots once it's approved. And finally, dashboards on KPIs we can also discuss Let's do a system demo and let me show you what we have. I think that many of you already have access to IVP, so at least you should be able to see views like this. As for demand planning, we have as well our own views. When you come here, you will have some MRO demand planning, and these are all the views that Bastian was showing you during in the last two or three days.
+
+ And here we have inventory level planning, is where we have our main views. So the inventory process is very simple, to be honest. You have the inputs, you review that the inputs are fine, you run it, and then you review the resource. It's no more than that. Of course, then we have approvals and things like that, but that's the reason why we have very few planning views. That doesn't mean that in the future we can go reports and things like that, this is something that can become more and more complex over time.
+
+ But as a starting point, this is the initial plan view. So here is where we see the inputs and where we see also the results. So if I click OK, it's going to take me to this view. I'm not doing it again because I already have opened the view, but this is what you will see. So it will open like this. So I have two tabs here. One is depending on time, because here, maybe you want to see why it's historical consumption.
+
+ I have it on quarters, because in monthly buckets, maybe it's too sparse, the data. So we want to consolidate it a little bit. And the data, you can visualize it in a better way, right? So this is how the system, sorry, the data is behaving in the past. You see it? And also, you have as a reference, the information the last two years of the last year. So when you are in the quarter 2 of 2024, this is the quarter 2 of 2023, and this is the quarter 2 of 2022, right?
+
+ Because this is one year before, and this is two years before. It's just some reference information. Not necessarily you need to use it. But in the past, we have seen that it's handy to have a reference of what is normal. So here you have the actuals, you see, and you have information that is already generated by the system. So the system is classifying this and it's telling you this doesn't have enough data.
+
+ So whatever classification we want to do probably is not going to make a lot of sense because we have one, two, three, four points on the history. That is not much information to tell you this is like that or to have a proper classification. But in the other cases, We can say it with property. We can say with certainty this is intermittent, because we have checked the demand, we have enough information to calculate it, and we say, OK, this is intermittent.
+
+ And in our cases, it's going to say that it's lumpy. Lumpy is basically intermittent, but with huge variations. So in this case, for example, it's very clear that you have this amount of data, and then you jump to a dot. Thousands, and then you come back to 2,000, then less than 1,000, and so on. So it's basically intermittent, but very, very volatile. So the system is going to use this information to assign the proper model in the inventory optimization.
+
+ Lumpy demand is probably gamma, because gamma is for very variable information. The next step is much more interesting. So here's where you can review the So what you see here on white is all the input. So you have the demand rate. That is basically the average that we are calculating for this material, right? The lead time in months. So we are going to integrate information in days, but then we can translate this into months.
+
+ So we can see the information in this consolidated way instead of seeing the days specifically. Then this is expected demand during the lead time. So it's just a multiplication of these two. This is the coefficient of variation. Basically, this is telling you how variable the information is. This is standard deviation divided by the average. So it will tell you how much in percentage is varying from the average.
+
+ So if your average is 100, then you can expect to have between 100 plus 50 or less 56. That is like the range of numbers, the standard range of numbers. It can go beyond or after, but it's just a measuring of the variability. It's a normalized standard deviation, let's say. Then you have the target service level. That is something that we can define at a high level. We are going to show later, or we can be very specific here.
+
+ And then you have the different proposals of IBP. So you will have the safety stock that is calculating, the reorder point that is calculating, and the maximum stock level that is calculating. In this case, maximum stock is going to be always equal to ROP, because we don't have the EOQ information so far. So when we have the EOQ, this is going to be this quantity plus EOQ. And you will have the max stock level.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+So what is the current stock level? Is there any stock level?
+
+Hector Palacios (ADNOC Group D&CS):
+Your current levels? Yes, there is. So let me show you the other part, because the IDB has these two sides. So we have the Excel side. And now let me show you the web part. So the web is where I'm putting so much more effort into visualizing information, because we have dashboards. So let me show you what we have here. One second that this is refreshing. Let's focus on this one. One second.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Hector Palacios (ADNOC Group D&CS):
+So as we show in the introductory session, this is a functionality that we call the workspace. So we are expecting you to analyze information in this kind of application. You can always use the Excel because Excel is great. We love it. But here we also have a some charts that we can use for analyzing information. If you like Excel, you also have seen something similar. All the information that I show you in the Excel, we can bring it in the same way here.
+
+ We can put some nice format, we can decide what we want to see here, if we want to bring more information and so on. But you see again, you have the service level, the demand rate, the lead time, the expected lead time demand. Let me make it this bigger. Information that's coming from the system, mean time between failures or like the frequency of failures in average, coefficient of variation, the variability again, the current reordered point and the proposed reordered point.
+
+ And then we have some approval key fears that we are going to discuss later, but let's focus here. So at the beginning, let's not focus on the resource. I want to discuss about the resource, but let's do like by the system right now. So let's not get stuck. And here, you also can check mass data. So you can check what are the classifications related to this. So you have this location that can be a plant or can be a storage location, depending on the case, the AGC.
+
+ Then you will have the material. And then you will see what is the inventory model used. In this case, it's G, gamma. Then you can see if there This business continuity or critical part is saying no, it's not. Is essential. The FMCN is an M, and so on. You get it. And here you have the expected demand pattern that is saying it's lumpy. So it's highly variable. And you can check it right away here in this chart.
+
+ So in this chart, you have many things going on. So you have, first of all, these lines are the actuals. So you have 100 on June 2020, then in February you have 2021, and so on. You follow the area. But something that is more interesting than this is what is the demand during the lead time. Because maybe if you have consecutive periods, you want to know what is the demand of the next two periods, not the demand on that specific period.
+
+ So in this case, this is the demand during the lead time. The lead time in this case, I think that it's just one month, so it's not doing a good effect. Let me see if I find a better scenario here. Right here. Here is a better one. So the demand was four. It's always four. Very predictable. The point is that sometimes they happen very close. So you have June and July, you have demand. So the demand during the lead time is going to be eight in this case.
+
+ Let's see what The lead time is, we have it around here, five months. So basically, we need to focus on what is happening in the next five months. I'm on June, and in the next five months, I will have eight of demand. The same on July, and so on. So it's consolidating across the time, the demand for the lead time. This is the important part, because this is what is going to give us an issue. It doesn't matter that we have demand of four only, but if this happens, if it is happening just one after the other, that is an issue because if the demand is not then four, it's eight.
+
+ That's what we need to be prepared for. Aside of this, you will have some lines that are showing you here. For example, the current max stock that you have, this is the current reorder point you have, and this is the proposed one you have. You can also have the proposed safety stock, but in this case, it's not in any set of stock, it's all your reorder point. So you can see that in this chart, you can analyze the reorder point, compare it against the previous measure, right?
+
+ And you see how this can historically has been worked. So in your current inventory position that is 5, for this scenario, probably we have failed in many cases. For example, here, the demand during lifetime was 8, and we have five, so it wasn't enough to cover that. But maybe it's not an issue. Maybe this is not an important combination, so it doesn't matter. But for some critical parts, we want to assure that this reorder point should be above most of the peaks we have here, so we are able to cover every time.
+
+ Of course, this is only just looking at the past, but it's the best we can the future, we don't know what is going to be the consumption. But we can analyze the proposals and we can check, okay, if I have this reordered point, how the path is looking like, I'm having a good service level or I'm failing most of the times. Basically, this chart is going to tell you that. And very related to this, you have a service level calculation.
+
+ So, for example, our target Let's say it's 95 percent. But the results we are getting are – historically, they are not performing great. So, that means that maybe we need to adjust some more. So, for example, we are proposing you have five and we have six. So, 56 percent of the time, that was enough. In all the other cases, this was not enough, especially when we have these peaks of eight, eight, eight.
+
+ In those cases, the calculation is not So this is a very simple calculation. We are calculating in which cases we were able to cover, because we have 1, 2, 3, 4, 5, 6, 7, 8, 9 events. And only on, I think that in five cases, we were able to calculate that. So that is at 56%. The other four cases, we were not able to cover with this amount of reorder point. OK? Interesting to see. Can you bring up the value in here also?
+
+ The value, yes, for sure. I don't have value unit price information, but yes, we can do it as well and complement the dashboards. Let me check that if for tomorrow I can place some shared dashboards with the value part. Of course, the data is going to be made up. If I got to have some real data, I will try that. Probably it's going to be made So we can see some dashboard in the impact in value as well of these levels to see if this is important.
+
+ But remember that we also have the segmentation here. So this is telling you that this combination in particular is costly. It's a high value. Is not the most important in consumption terms. There are some others that are more important. And XYZ is telling you that the stock value that you have currently is high. So this may be some opportunity to reduce the stock. Let me check another example here on the alerts to show you this chart, because I really like this one.
+
+ So this is telling you what if, for example. If you compare reorder point with service level, how much reorder point you should have for every service level. So if you want to have like 99% this layer, that is this case. You see the letters here. We can make it bigger later, but I guess that in your screens you are going to be able to see it. If you want to have 99%, you need to have 116 units of stock for the reorder point, the level of reorder point.
+
+ If you want to have 95%, 89%, 66%, and so on. So you see how the reorder point is increasing with the service level. So you are seeing your current service level for this case. So our current service level, because we are seeing, OK, this is not a critical part, and this is just essential. So maybe it shouldn't have a big service level. We are putting 80%, right? But with 80%, we are getting around here.
+
+
+
+UNKNOWN_SPEAKER:
+Very low.
+
+Hector Palacios (ADNOC Group D&CS):
+23, I think that probably this is low variation with numbers, but it's 22. It's very low, right? So it's not going to work in most of the cases. Indeed, if we look at the past, with this amount of data, we would, in 56% of the cases, that would be enough. Today, you have 100% of service layer, because you are putting a very huge core and reorder point. You have 100. So I guess that you saw the history, and you saw, OK, this is the maximum that we had in history.
+
+ Let's have that. So in that case, we are for every scenario, and that's fine. You are prepared, but also the question is, is it really important to be prepared for all the scenarios or we can spare some stock-outs? Is it going to have a big impact or not? That's the big question. So if the impact is going to be huge, then yeah, probably we want to assign a much higher service level in our case to get something close to this, for example, over 100.
+
+ So we can call for all these scenarios. So this is some nice view that you can have to analyze in the results.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Also, let me show you quickly. The ROP calculation, you're considering also the ordering cost, isn't it?
+
+Hector Palacios (ADNOC Group D&CS):
+Ordering cost. Ordering cost? The maximum. The maximum, yes. The maximum, yes, it should. So let me go back to the slide. Why I created this nice slide where we have all the relationships. So when you talk about the maximum stock, this is related to having the reorder point and also the economic order quantity. The economic order quantity, as you see here, is depending on the ordering cost and in the holding cost.
+
+
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Yeah. So are we already having this convention for all the group company?
+
+Hector Palacios (ADNOC Group D&CS):
+This information is something that is proven to be a challenge to have. In SAP HANA, you don't have – this is the ordering cost or this is the holding cost. So our team is providing some way to calculate it, way to estimate it, and we need to still validate that. We are discussing that with Muru and I think how we can provide that information. But so far it's not like a clear feel on SAP that we can use and say, okay, this is the input for economic order quantity.
+
+ So for the holding part, for example, we are saying holding cost is a percentage of the price of the item or the stock value, I think. So, for example, if you have a stock value of 100, then we are saying that, okay, like 15% of that is going to be your holding cost. So then out of the 115 is the holding cost. The ordering cost, we have something more complicated that we are providing. On tomorrow's session, we can take our time and discuss about that, because it's one of the open points we have.
+
+ If we start discussing right now, probably we are going to use the whole session. So let's park it out, and let's discuss it tomorrow. But yes, it's important, because we will need that input in order to define the max stock level. Let me continue. So this is to analyzing results. This is our first way to see it. All of this is configurable. You can have all the charts you want. Let me show you some quickly designed tabs.
+
+ So you can decide if you want to see like three at a time or you want to have it by tabs, depending on what you are seeing, I guess, how you want to see it.
+
+MM- SKEC2 - L08:
+The layout is something that also...
+
+Hector Palacios (ADNOC Group D&CS):
+I think that there is some mic open there. I will continue. So here you can change the layout of this. You can place a B here or not. You have some, like, if you want to see just one view for everything and you have tabs, you can do this. Here we have many options. I don't want to do it right now because maybe I'm going to make a mess. I don't want to spend time of the session, like, in the view. But yeah, so just for you to know that you can play a lot with this.
+
+ Then let me show you one additional view that we should have before this one is to analyzing the inputs. So here we have a very basic approach to this that we can make it more complex and more complex with time. This is the first time that I'm showing you something, but we can have LinkedIn review. So Out of ignorance right now, I'm just putting the lead time grouping by material, I think. Let me check.
+
+ Material family. And basically, this is telling you the average lead time for each material family. This one is telling you the service level that we are defining based on the BED segmentation. So you have BED. You have BC, yes or no, critical or no. And then you have ABC. In this case, you have BCBC. Here we have an ABC, A-B-E-C. And this is the service level that is assigned for this combination.
+
+ So for something that is vital, it's an A And it's not critical, we have a 95% of service level. For something that is critical, right away we have a 99% accuracy. There is no discussion. So if this is business critical, we have 99% of service level, the maximum we can have. If it's not, maybe we around and assign a less service level to something that is not that critical, something that is maybe just desirable, and it's moving very slow, and the stock value is not high.
+
+ In those cases, maybe we can have 80 percent service level, very low, or maybe we cannot have service level at all. We can say, okay, for this one, let's not keep any reorder point of safety stock. We can do that as well. The lead time demand review, can see what is the average demand during the lead time. Also, we can group here by families and by frequency, FMCN, so you can see numbers. So in general, for the rings, the lead movers, they are having three units of demand during lead time.
+
+ That is like the usual. So we can do many things like this. Let me show something that is more interesting because here at the right, you have all the inputs. The ones that are key figures, like numbers, you know? So you have the service level, demand rate, the things that we have discussed so far. Then you have master data. So this is a number. These are letters. These are information, right? So one very interesting stuff that I find out is that you can, for example, filter here.
+
+ Let me click outside, Filter, Inventory Inputs Review, so you can see the details. Here you have the information consolidated that for you is bringing attention. For example, this one here is very weird. It's a high amount, but maybe if I see the SKUs that are here, it makes sense. You are experts on the materials, I'm not. But here you are basically based on this analytic, you are filtering the details here.
+
+ So you can filter the planning view, and you can see for this year demand lead time, you can see what is the demand rate, for example. Okay, it's huge. And the lead time now is not big. It's less than one month, right? So yes, you have like huge demand during the lead time, but also it's not that critical because you have a very quick lead time. And while this is the expected demand during lead time, the calculation is not that much.
+
+ Also, with the master data, you can do it, for example, here on this one. If I want to filter, it's filtering the master data, and it's showing you this material. I think that we can put later the description as well, so this is much user-friendly. But you can say, okay, this is a critical part. Yes. So that's why it has a 99 percent of service level, because it's critical. Or not, it doesn't matter.
+
+ It's busy, right? You can do the same. Click outside. Then you click inside. Must data input review. And you can see, OK, all these materials are below this category. All of these are E. All of these are non-critical. And all of these are B. And it's bringing all your information related, like HTML, X, Y, Z, movement type, What are the models that we are using? If you want to know, what is the pattern on each case?
+
+ Intermittent, lumpy, insufficient data, and so on. So you have a lot of information to analyze here to understand, OK, this is looking fine. What is the information below? You, again, have this very, how to say, interactive way of working. So if you are interested in doing this, we are going to configure as well for you. So you will have the two things. You can do it on Excel because Excel, as I said again, is really great.
+
+ You can do many things on Excel very quickly if you want to filter and you can take this information and get a Bible table, you know, something like this. Very easily on the Excel is great. So if you are good in Excel and you like it like me, you are going to be spending a lot of time here. But you also have the to get here on the web. So, I think that the web, the main advantage is that you have some charts that are really nice to see, that on Excel, yes, we can have it, but it's not that easy, like here.
+
+ Here is much easier visualization, and you can have your Excel here, and your charts here, and your math data here. Basically, everything you need to know is right here, so you can take decisions. You analyze the data, and you take decisions. Okay. Let me show you. Again, if you are having questions, just bring it on. I will continue. So, here we have two important steps here that are going to help us to focus because, as you know, you have millions and millions of combinations.
+
+ So, the big question is, if I'm a controller now, what are the important ones? How I can filter important ones to focus only on those cases. Or later, if I'm an approver and I need to approve the new reorder point, how can I check the important ones again, the big changes? I don't want to see all the cases because in many cases, maybe there is no change. So I don't need to see it. I don't need to go to the Excel and start filtering by myself.
+
+ I can have an alert, okay? So alerts is something that you can enjoy here on the web part better than the Excel. In the Excel, you can but the full functionality that is related to another module, Control Tower, you can have it here. It's integrated to this functionality. For example, it's what we have been seeing so far, historical service level issues. In some cases, as I was showing to you, service level was not quite good, so this is required to check.
+
+ But what we are checking is an exception. It's not the cases in which we are doing good, is the cases in which we are not doing good. You can come here, see the different dashboards, analyze. These are the parameters. The service level is too low, so you can adjust. You can play with this change. I think that it's not enabled to change it. I will change that later. But you can change the service level, run, and you will have the new proposal.
+
+ That is going to be very similar to what you already know here. Because here you have the different reorder points and the different service levels. Of course, you can have something in the middle. It's up to you. But these are the normal numbers that we put on the service level. Check that you are focusing on just one material, not in all the cases. You can separate the alerts. You can say, okay, these are the high-priority alerts.
+
+ These are low-priority alerts. We can define the rules for that. It's very simple. In the system. And you can see that you are going through the different cases, and you're checking, OK, this looks fine, it's not, and so on. So if something is fine, let me go back to the previous one. Something is fine. You can say, OK, nothing to do here. So we can turn off the alert. So this is the alert. We can click here, and it's smooth.
+
+ Basically, you are turning off. It's not going to again on your screen, it's going to appear on this part, snooze. Let's do an example. So I snooze, and this is the one that I already reviewed. So I don't need to go over this again, right? But you have the option here, snooze it. Let me check. It's just snooze in all the cases. But you can change here on snooze. No, I want to do another scene. Edit.
+
+ So you can decide how to snooze.
+
+UNKNOWN_SPEAKER:
+Forever.
+
+Hector Palacios (ADNOC Group D&CS):
+So I don't want to see this anymore. This is not an alert. So forever it will be turned off. Or you can snooze until one specific date. After this date, it's going to appear again on your screen. Or you can until you get new results. Sorry, I lose. So until you have the next results. Here until data changes. So maybe, okay, for now it's fine. Next time that we have a change, let's bring it on to see what is proposed in the system.
+
+ So you have all these options, and it's up to you how you want to deal with the alerts that you're receiving. So this is one example of the service level. Whenever the service level, it doesn't seem that it's quite fine, so we need to refine there. Or you can have, for example, ROPB exchanges review. So here we are only bringing bringing into attention the big changes when we have huge percentage change.
+
+ So, for example, the very first example that we are taking, you have a currently ordered 0.100 and IBP is proposing 0.22. It is a huge change, right? So, here you have all the information to review it, okay? If you are a reviewer, you have a nice functionality. So, you are reviewing the resource and maybe you want to assign it to someone So you are going to sign this, for example. Let me bring this case.
+
+ This is the material that I want you to check. You can put a description. Reorder point, too low compared to prior one. You can put a date. Please have this review by next Monday. Priority, high, and you can assign who is going to do it.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+So I went to actually why we need the value here. If you propose something here like this one, maybe the item like course is less than $1. Maybe only $1. The change is like if you change like from 100 to 80s 80s. It's only less than $100 or so. It's very low value items, so we need to have like like example. The proposed with the failure is much more clear when we are proposing some changes or so.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, you're completely right. You're completely right. So here I'm proposing a set. This is a set. So as you say, the stock value is low. Is also low. Everything is saying, no, this is not a huge amount. So it's not important. That's why we have different alerts. So one of the alerts, for example, is going to be approved. So what here we are filtering, let me show you here what is the filter behind.
+
+ It's telling me only the XY sets. That are X. It's just an example. We can use HTML. We can use ABC. But as you see, there are so few because we are not focusing on the ones that are pennies. We want to focus on the ones that are thousands of dollars or millions. I don't know. But yes, we can segregate the alerts to bring to attention only the ones that are relevant. And I guess that this case is one of those, right?
+
+ So maybe At least it's expensive. It's an H, ABC is a B, X, Y, Z. It seems that a lot of the stock value is right there. So this one is something that we can check, and I can create a task and say, check this case. It's a ring, right? So you put the date. Please do it by tomorrow. High priority assigned. I will assign Bastion and create. So once I create this case, Bastion in their site, in this site, he will see it.
+
+ So what Bastion is doing right now, I am going to play like I'm Bastion right now. So here I have my tasks. Okay. So here you have your alerts and here you have your tasks and check this case. So if I click here, first of all, let me go to another screen so you can see this important I'm in another screen, right? So this is another product. Now I'm coming here to see this case. I click here, and it's taking me right away to the screen that I need.
+
+ So you need to focus on this material. The filter is already placed. When we created the task, it's using the filter that we had in that moment, right? It's for this specific material, this plant. So he will check the number. The points here, he will analyze, okay, I will correct, I will increase the service level, whatever, I correct it, and then set to complete it. You can put it here, setting progress, so just for telling now, let the other one know that, okay, this is ongoing, I'm taking action on here, or you can right away set to complete it, and you can say, okay, it's completed.
+
+ Then I also will see it on my completed list, right? Check this case. So I can go ahead, see numbers again. OK, now it looks fine. Perfect. If it is not looking fine, I create the task again. So it can be a ping pong, basically, to solve this issue. So these are individual tasks that you can create for other users, especially if you're an approver, reviewer, how you want to call it. But if you are reviewing the work of anyone else and you need to assign a responsible to solve this issue that doesn't look fine, you can do this functionality and you have the tasks.
+
+ These are going to be individual tasks that you can have on the system, so the user created. But also you will have some process tasks because there is a lot ongoing on in the background as well. You have a process of inventory planning and the process has some stages. First stage is, for inventory levels. Let's check the inputs, review and run. Second stage is inventory levels review. What are the results?
+
+ Third stage is approvals, right? So all of this is very customized in the system. So we have the responsible, you know. So here is Bastian is the reviewer. So he will be approver. But before, I am the one that is analyzing the resource. So once I analyze, I tell you, OK, you can review now, because I already did my job. It's your turn, right? And I can finish this task, and then Bastian can start the approval process.
+
+ So this is high level, right? And here I can show you what are the tasks. So here you have one, inventory levels. So I click here. It's asking me, because it's taking me to the tab that I need to use. So this is the workspace that I have assigned for this task. Here I'm going to review. I see, OK, this is looking fine. Let's see this one, because it's high. I'm going to filter. Sorry, I'm design what?
+
+ I'm going to filter. I see the values. Looks fine. Everything looks fine. Let's do the run. So after I review, and we can complement with alerts as well. Whenever something is missing, we can trigger an alert and say, okay, this is missing, and then the user can go to us for help and say, okay, yes, the lead time is missing. There is no lead time. We need to put something, right? All these corrections are based on exceptions as well or on a high-level review like I'm showing you here.
+
+ Once you do this job to check, okay, everything is looking fine, you can run. And it doesn't need to be perfect, right? But at high level, it needs to be fine. So at least most of the results are going to be fine when we run the model. If we see something like critical, you know, like, OK, the lifetime is missing for everyone. So in that case, yeah, you need to solve it, right? But let's say that you already did the review.
+
+ When you set to complete, the second part is going to happen. The job is going to run. Just confirm that the inputs are fine. So once that I click here completed, the system is going to trigger a job. It's not real time. It's like a frequency of three minutes, but it's going to appear here. So when you come to the status, it will appear here. The system frequency is like three minutes. So in the scope of the next three minutes, you will see running here on the background.
+
+ I just did the test today, and I see, okay, this is the job for inventory, inventory profile. This is calculating the reorder point, safety stock, max stock, it's calculating all of that. And here it's telling you all the runs that we had in the past, the users are running this, and so on. You have a lot of information that probably not all of that information is important, but it can tell you the status.
+
+ And also important, if something fails, it also will tell you. So, of course, this fail, you don't have updates because of that. That's the reason. Not because the numbers didn't change. It's because the job didn't run for x, y, z reason. So, that is something that we need to review. Okay. So, I made some time. And as you see now, the job is running. You see it? So, this will take minutes, probably not a lot, because we don't have a lot of data.
+
+ In the future, let's see. I don't know. We have millions of combinations. Maybe they can take like 10 minutes or more. We need to see. So you can go for a coffee. You get back. OK, the run is finished. Now I can start the next task that I have. So next task, let me see. Inventory levels for you. So now that I run the job, I can go to the specific tab and review the results. So this is the very same tab that we have been checking so far and will show me everything.
+
+ So it will take us some moment to load because I have no filter here that is about practice. I should have a filter, otherwise it can stay forever with the amount of data we have. So this is another tell how we are going to operate on IDP. You will have a process behind, you will have tasks assigned, you will have alerts that will help you to focus on the most important part. You will have this nice views task force to analyze information, to see the resource, the proposals.
+
+ We will bring the value here as well. We have the segmentation, but if that is not enough, let's bring the value and you see this is important and this is not. And again, you also have the planning view in the background. So you have this one that I prepared for reviewing the inputs. This is the pilot table example. So just to see the historical consumption, here you have a chart. As we saw in previous sessions, you can filter specific things as well, not to see everything, but maybe you want to see only this combination.
+
+ You have not a lot of data there. You want to filter this one. Here you have some more data. So you can see the pattern. You can analyze the history here. In the other one, you have all the inputs and outputs. So you can also check the proposal layers. We can bring also here on the same view a comparison between current and proposed. It's something very easy to do. Not very complicated, to be honest.
+
+ Let me do it because I think that we have enough time. So let me bring here, for example. So we have reordered point proposed, and right away, the current reordered point. Let's have the two. I can put it here as columns. And let's see. So now you have a report with the current reordered point, next proposed viewpoint and you can have a comparison. So you can do something very simple like this, no this is like one minus this, this is a personal change.
+
+ So you can have a percentage here, you can use Excel as always, you can have your own reports, your own formulas here and you can see how this is is changing. I think that I did it probably the other way around.
+
+UNKNOWN_SPEAKER:
+Maybe this one.
+
+Hector Palacios (ADNOC Group D&CS):
+Oh, yeah. That is a reduction of over 100% reduction on the earlier point. This is an increase. And so you can see the cases in which this is an increase or a decrease. As you know, this is Excel, so you can play a lot with this. This is the rated stuff of ABB. So the main purpose of ABB is being a tool that not only is going to provide you the resources, it's also giving you all the information and the environment so you can analyze information very quick and to get results out of this.
+
+ So it's start analyzing the information rather than executing it. What else I have to show you here? For what if analysis, we can also have a tab. Let me show you. I think that I already have open right here. So here you have the different scenarios. You see? The service level is 99, 95, 90, and so on. So you can filter. So this is a proposed reorder point. Let's filter this particular case. And you can see how this is behaving.
+
+ So in this case, let me see.
+
+UNKNOWN_SPEAKER:
+Ah, the safety stroke. There you go.
+
+Hector Palacios (ADNOC Group D&CS):
+So here you have the 2,000. Then close to that again. You see? We can change the default. Format of these numbers is not complicated. It's just Excel at the end. And you can see how with the different service level, how the reorder point that the system proposes changes. This is your current scenario or baseline. So you can compare everything. You can do it through an Excel, or you can do it here on the web, as I put the example before, just checking this particular alert.
+
+ And you can see it here on this chart. All right, so in this case, I think that we don't have variability. So the service level is not affecting. But let me look for something better. So you have the same what-if analysis here. So you can see. Or you can do it here. You can do it on the Excel. You have the two options. Whatever suits you better, OK? Tim, any questions so far? Anything that you need to do today that you that here you are missing it.
+
+ Do you have any feedback so far?
+
+Aboobacker M. (ADNOC Gas - PD):
+Hector, is there any audit you want to see the previous change when it was happened? Is there any transactional ID, something like that?
+
+Hector Palacios (ADNOC Group D&CS):
+Like changes, historical changes. So you see, for example, if a user put a number here, like what is the traceability of that?
+
+Aboobacker M. (ADNOC Gas - PD):
+Not only that one, for example, levels know after updating. Is there any transactional ID like this year number? No, we are using it in the recipe.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, so maybe like this because this is the current we are the point.
+
+Aboobacker M. (ADNOC Gas - PD):
+This is the current one you are showing after update after updating the proposed ROP.
+
+Hector Palacios (ADNOC Group D&CS):
+This is the current one there.
+
+Aboobacker M. (ADNOC Gas - PD):
+This is the proposal. This is the proposal. After updating. I want to know some transactional ID for this one. Some some. Say like no, see if your current system you want to change something we are raising CRN based on this year.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+Master data changing settings.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+He wants to know who has done the last that's been changed.
+
+UNKNOWN_SPEAKER:
+Master data in.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, OK. Um. Let me see. In the metal master right yeah back in this for honor and what basis it will be updated is there any any cr or anything else or just I mean here we have like because this resource you can change them I think that particularly not disappear um I don't I'm also missing the bottom but we have a functionality that is called uh Probably we don't have it enabled, yeah. It's something that we need to configure, but it's called history changes.
+
+ So you can see this here. It's called change history. Yeah. Change history. Thanks, Basit. We need to activate it. Yeah, we don't have it enabled, but that basically is telling you all the events that have happened for this particular combination in this particular key field. The reorder point so you can say uh if a new user put an input you will see okay like previously you showed that the snapshot like that it's not to be sold an option you have many options to trace the history so it's not short for example is to see versus the last cycle what was the last cycle results so so if that is what you want to see perfectly we can do it uh I can show you
+
+Aboobacker M. (ADNOC Gas - PD):
+tomorrow see if in future no if somebody wants I want now in against what necessary some certified list of items are here. All these items are changed now after changing. If I want to see you know if if it goes against one simple single ID then we can able to trace not this many items are changed against that ID.
+
+Hector Palacios (ADNOC Group D&CS):
+Oh yeah, yeah, and they change history report that we have. We can do the same. So if in the same like in the in just one run you are updating, Many of them, you see. And you save, and you say, OK, this is a new reorder point. This was the proposal of IBP, but I will override it because I know better. So in that case, the system is going to trigger a change event. And you will have an ID for that, and it will tell you, in just one run, we changed all these materials.
+
+ This was the previous value, and this is the new value. It will tell you all that information, but today we don't have it. So let us configure this. Maybe for tomorrow, we can have some nice example to see if that is what you are expecting. Yes.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, those information is also included in that.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, just for you to know, this is related to the manual inputs. But if this is like a system change, I think that we need to use the snapshots in that case, because they it's not going to tell you the system changed this or that in that moment. Or maybe yes, I will check that. So far as I know, the functionality is for user changes, not for system changes. Well, reservation is different because the reservations come from S4 HANA.
+
+ So because they're coming from S4 HANA, it's not like someone changed it directly in IDT. So that's why we are are using snapshot instead of these changes?
+
+Aboobacker M. (ADNOC Gas - PD):
+Not necessary to have the snapshot, but we need some ID to know for the future audit reference. Let's see what is the case.
+
+Hector Palacios (ADNOC Group D&CS):
+Let us show you all the traceability functionalities we have, and hopefully that is enough. Because the vision that is this is like the system is behaving so maybe what you are requesting also can be a gap right something that the system is not prepared to do but let us show the functionality first and then we can decide if that is going to be a gap or not okay good team you have any other questions about the system.
+
+ Is it clear? That's good. Only need to be more familiar with the button and the click, click, click.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Where to find the click is now. But you're going to learn fast. You're going to learn fast.
+
+Hector Palacios (ADNOC Group D&CS):
+Good part, this is an Excel, so Excel is easy. The web part, I think that is intuitive. It's not that complicated, not too many buttons, not too many actions. We also, the plan is to set up something standard, but this is an iterational process, so we are going to iterate, iterate, iterate until we have it as you need it.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Summary-wise, are you having this one or you will be having in the other session, like summary report? This is for tomorrow.
+
+Hector Palacios (ADNOC Group D&CS):
+I haven't built the initial one. I was preparing this material, but let me create a dashboard like the one that Bastian was showing yesterday. But we can have and we can propose some initial charts, okay, and then we can start complementing with what you want to see. Just keep in mind that this is only for the inventory levels. As soon as we are thinking on the stock projections or things like that, that is on the next stage, supply planning, because there is where you forecast, you have the reservation, you have the open POs, STOs, whatever, that you need for a stock balance is going to be there, not here.
+
+ Here is only reorder point, maximum stock, and shift stock. Let me go to the presentation to discuss the point. So we have seen so far like the what are the dubs where we can do, for example, this. Review the input, where we can run. I think I'm missing that. Run. So I showed you that when you complete a task, the system can automatically run. Right? So that is what we did. So we finished our task of reviewing input, we said to complete, and automatically it's triggering a job in the background.
+
+ But what if you are doing additional changes and you want to So in that case, you can run it from here. So you have a job. You won't see as many options, because we are going to limit this to what is important to you. As I'm a consultant, I have access to everything right now. This will be a filter, at least, for you. And you will need to run this one. I think that we need to put some more user-friendly names, and then you just and it's going to run.
+
+ You can do it here on the web. You can do it also in the Excel. So you always have the two sides of the coin. Here you have run, maintenance repair operations. And here you will have also filter, the inventory profile. The best part here is that you can apply some filters. You can say, OK, I want to do this on a scenario. So I don't want it to be a feature. I want it to run in a scenario. And you can place some filters, so you run it just for this combination, not for everything.
+
+ I just want to change this one. So you select the material, right? And that way you make sure that you don't change the things that you already reviewed. So all this, you can do it on the system. Once you run it, you can come here and check the status the same way that we did it on the web. It's also here. So you have all the runs, the status, who is running it, which date, even the filter. If you have a filter with a name, you can see it there.
+
+ A lot of information to know the status. That is for running the jobs. Let me go back if I'm missing something. Analyze results. We already see that we can do it on Excel, we can do it on the web. What if analysis is all related to the service level? Different service level, different output, For the rear-end point, safety stock, maximum stock. The approval process, let's leave it for tomorrow, okay?
+
+ So we have some scenarios to discuss. Today, let's use the session time to discuss the service-level approach, okay? So let me go to that point. So this is an important discussion. This is what we already did to them. Service level and risk score. So for service level determination, the important thing, let me go back. The important thing is to understand how critical is this material. So if we have a very critical material, we want to have a 99%, not 100% because 100% is like too much.
+
+ Usually from 99 to 100, there is a huge jump into the stock. So it's just a thing related to probability. But the best practice is always to put the maximum service level is 99, because that is like almost 100%, but with results that are not crazy. 100% is like for crazy stuff, like very remote probabilities. We need to know which are the important materials in which we need to have a very high service level, very high stock.
+
+ In all your cases, there are opportunities for decreasing the stock. So you need to tell me, or you need to tell the system indeed, how to classify it so you can say, okay, for these materials, they are not really important. If we have a stock out, that's not a big deal. It's not going to stop operation. We can live with that. In that regard, then let's put a lower service level. What I'm trying to say is that we can segregate the service level by a risk score.
+
+ The risk score is telling you what risk an stock out is imposing to my operation. If the risk is high, we can put priority one. If the risk is non-existing, then we put priority six, like the lowest one. Here I have an example how we can do this. I need your input because you know better than me about your products, your materials. So what I think is that if this is business continuity, then of course the service level is the highest one.
+
+ So we don't care about the BEV, ABC or whatever other segmentation, this high priority, we have 99 service level. But if this is not business critical or business continuity, then let's change BED because this is also telling me what is vital, essential, and desirable. So in BED, we can say, okay, if this is an A and B in value, we can put a second priority, 95 percent, but if this is a C, that means that it's less important than the other ones, then let's put a three, 90 percent, and so on.
+
+ So you can follow the same logic, like a decision tree, and you say, okay, for this segmentation that is not critical, desirable, and C, a very low service level that is 70%. In the case that we don't need to keep a stock at all, then we need to put six, because that is not going to propose anything. So we need to exclude them in a way from the calculation. So we don't create inventory levels for this case.
+
+ So first question, because I think that the main point is to know which ones we need have stock levels. Do we have on SAP any flag that is indicating me that this is a stock item or not? Do you have it right now? I think that I have seen that, but I want to confirm.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yes, it's based on the material type. It's a material type.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, so only those items is where you are going to be focusing to maintain the right inventory levels, I guess.
+
+UNKNOWN_SPEAKER:
+Yeah, yes, good.
+
+MM- SKEC2 - L08:
+OK, so let's work out. Can you elaborate more on material type?
+
+Aboobacker M. (ADNOC Gas - PD):
+What do you mean by material type? So we have spare parts consumables. Like HSE items, lubricants, chemical catalysts, we have a type available is that RSA is that cat is that came that HSE. So what kind of this material type perspective?
+
+MM- SKEC2 - L08:
+You're not stationary.
+
+Aboobacker M. (ADNOC Gas - PD):
+I just see material all over the jet lag furnitures. So when it is non stop. If we don't buy code by item number by by item number also, we can differentiate whatever item code starts with one two series. Other 16 series and now 15 series is at NBW. 16 series are non stock items Zilog items. So when it is a non stock item, what happens to it like non stock items only induces only they will rise a PR and it will not come into our control.
+
+ So whenever it will not be plugged to not be planned through IBP. That completely goes under user control.
+
+MM- SKEC2 - L08:
+So if it is not planned into IBP, then, Hector, do you even need to consider it as part of this profile and set target level?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Because it's not even... It's already non-MRO, actually, that item. I think we hear only MRO item is separate from ZLAG and Z and BW. It's all MRO.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I had my questions because when I was reviewing the inventory procedures, I think that I checked that, for example, even for BED materials, sometimes you have some stock items and others that are not stocked. So, for example, essentially saying only when they can impact the operational or HCA. So, I guess that there are some essentials that are not stockable, non-stocking materials.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+So, that was my question. That material type you will not find here and the other MDG material creations process.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, okay, so it's not here. All right, so if it's not going to be part of the scope, then it's easy for us. It's just plan everything, basically. We don't need to exclude anything. What about some materials? For example, do we have some PD materials today that basically you are just triggering a PR based on a reservation, but you are not keeping any stock? Do you have scenario like that?
+
+Aboobacker M. (ADNOC Gas - PD):
+All these categories can fall under PD and Z1 type. These categories you mentioned now VED stock items all can fall both categories are the PD and Z1 category.
+
+MM- SKEC2 - L08:
+Okay so Hector essentially the way I understood is that the material which is forecasted which means you don't need to keep stock of it. If there is a forecast, then only procure based upon forecasts are not applicable are PD items and the materials which are not forecasted, which means the materials for which you have reorder point planning are having stock levels.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, but for the forecast one we also need to have this because on the forecast even if you don't have point use the safety stock. So on the supply planning approach we have a forecast but with safety stock. So safety stock that means that we either way we need to calculate it here.
+
+Aboobacker M. (ADNOC Gas - PD):
+So as per the procedure safety stock only applicable to vital and fast moving items.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay and that makes sense because for us to create a forecast needs to be fast-moving as a minimum requirement. It's not enough, but I think that needs to be fast-moving movements so we have enough data in the past to create a forecast in the first place. So I think that is going to be only natural, that separation. So fast-moving and vital, you said. Okay. We take note on that, that only for those kind of materials we have Is this segmentation procedure with you so you can check this you can if you have the procedure with you so you can check all this like
+
+Aboobacker M. (ADNOC Gas - PD):
+you know page number uh 60 60 onwards 60 onwards 61 onwards you can see okay yeah yeah to decide this risk factors.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, but that, okay. But based on what you see right now, this makes sense to you? Because maybe if I go to Inventory Overseer, I have some information that is not available. Sometimes we need to check. Because I was checking, but not all the information that you have, for example, we will need to have a lot of classifications, probably, to drive the right research score. But I think that either way, it's important to have your inputs.
+
+ If you think that an approach like this makes sense, for example, the business critical should be the high priority, then BED, we can go decreasing the number as soon as we have data. Maybe we can spend, if it is not here to you, just seeing the table in theory, maybe we can get some feedback from checking the results. So we can check some materials and say, OK, this is the proposal of IDP. These are the numbers we're getting.
+
+ It's OK or not. So maybe we can do some examples and see if the assigned service level is making sense. Otherwise, what is making this wrong? So let me jump. Let's see if this exercise is going to work.
+
+Achmad Sonhaji (Borouge):
+Can you repeat? Yeah, I need to ask again this table. Wait, there is no price here to calculate the risk.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, you say that we need to include also the price.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Achmad Sonhaji (Borouge):
+Should we replace ABC by the HTML or should we Yeah, because for I think like we mentioned before, right in the in the demo, because if the price is low, then better we have the higher stock level, right? Because if the price is, for example, the price is only $1 and compared to the price is, for example, 1,000,000, it will be considered the stock. If it's only $1, we can have more stock, right?
+
+Hector Palacios (ADNOC Group D&CS):
+So so you say If the price is high, we should have more stock for that.
+
+Achmad Sonhaji (Borouge):
+Less, no. If the price is low, there will be more stock, right? Because it's coming at the same price. OK. Yeah, right? If the price is only going to be high, then we can have maybe more stock.
+
+Aboobacker M. (ADNOC Gas - PD):
+No, ABC should play the role here. That is the consumption value. You have to consider ABC only in the first attempt.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, that's something that I need because we have ABC is that price times the volume. So it's considered the two things. So maybe you can have something very low value on price, but you have a huge volume, millions. And then the ABC is going to be an A because you say, okay, it's not that expensive, but the volume is huge.
+
+Achmad Sonhaji (Borouge):
+So it's a huge amount of value here. So a second. The price is less, right? Then you will have more stock or less stock?
+
+Hector Palacios (ADNOC Group D&CS):
+In this case, it's not clearly if I made the price because it depends on the things. Yeah, yeah. So I only have one dollar.
+
+Achmad Sonhaji (Borouge):
+That consumption is 1,000. Only 1,000 price. So I put less, only stock one, for example, not more because the risk is less. Yeah, for the in the case of the building value, right?
+
+UNKNOWN_SPEAKER:
+Give me one second.
+
+Hector Palacios (ADNOC Group D&CS):
+I just want to be more interactive on the Excel to see if we can get something from here. OK, so you want to include another variable to say the HTML in this case. So HTML, if we have a high price, then we would like to have less stock as well, because it's having a huge impact on the stock value.
+
+Achmad Sonhaji (Borouge):
+will impact the stock value if the quality is not consumed, right?
+
+UNKNOWN_SPEAKER:
+Then there will be a risk.
+
+Hector Palacios (ADNOC Group D&CS):
+But are we talking about the HML, the price, or are we talking the stock value, the XYZ?
+
+Achmad Sonhaji (Borouge):
+Yeah, yeah, second. I just give the impact. If we maintain the high price with the stock, then the stock is not consumed, right?
+
+UNKNOWN_SPEAKER:
+You're right.
+
+Achmad Sonhaji (Borouge):
+You're right. That is a very good input. Exactly. More because our stock value will be high if it is not consumed. Compared to the low price, right? If I have a low price, I only have, for example, 5 dirhams. I have 10, there is only 50 dirhams. Compare if I have 100,000, 500,000 if it is not consumed, I will have my stock value not move for high value.
+
+UNKNOWN_SPEAKER:
+Okay, okay.
+
+Hector Palacios (ADNOC Group D&CS):
+So that will be decided based on the VED analysis.
+
+Aboobacker M. (ADNOC Gas - PD):
+If you want to keep that high value items, you have to classify as vital items. No, no, no, this is not vital because I just, maybe the price is high, just high, right?
+
+Hector Palacios (ADNOC Group D&CS):
+Let's put some rules and then I can come up with a matrix, but I think that first of all we need to understand and how each segmentation is going to affect the final value, right? I will put some other as well, so maybe we can discuss. So ABC, it should be, so if we have an A, that should be a higher stock or lower stock? This is consumption value. This is consumption value, yeah. So what do you think that should, how this should be?
+
+
+
+Achmad Sonhaji (Borouge):
+Yeah, because this will be two factors, depending on the quantity and depending on the price. Yeah, if the price is low, the consumption is high, it will be the price, the ABC can be fall into B, right? Yeah. If the price is high, but the consumption is low, it can be fall to A
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, but my question is more on the side of now. We know that this is an A For X, Y, Z reason, this is A, right? High volume or high price is an A uh we should have a high it can be high price and low volume right depending on the price exactly but now that you know that uh what should be the impact of an a in the stock so should we have higher stock because it's an a or should we have lower stock because it's an h if we are not clear then maybe it's not a good option to include it because for example the xy set this is it
+
+Achmad Sonhaji (Borouge):
+can be be grey, because you know sometimes the consumption is low but the price is very high, then it becomes A, right?
+
+Hector Palacios (ADNOC Group D&CS):
+Exactly, so maybe it's not the information. For example, in the case of HML, you say as the price is high, the impact, the financial impact is high, so let's have less stock of that, so it will lead to a lower stock. You are as we have, we are overstocking probably, because we have a 10x, that means that we need to have a low stock or point out to a lower stock level, and...
+
+Achmad Sonhaji (Borouge):
+For my case, ABC and XYZ, in my opinion, is not required in the calculation, because it's, I mean, this grey, this area, this two field is grey, because, you know, and the stock value doesn't mean, okay, not the high consumption maybe also high but stock value also maybe not moving right not clear right yeah ABC is of course no consumption value consumption value only ABC if high consumption XYZ XYZ means stock level right stock level if it is high for example if the if X is what for the stock high right For example, if A, it means that if the stock value is high, it can be two, two possibility, right?
+
+ The stock is not move, stay there with high value, or the stock is required, or this is high consumption, then we keep it in stock.
+
+UNKNOWN_SPEAKER:
+Yeah, right?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, the X by itself is not telling you the whole picture.
+
+Achmad Sonhaji (Borouge):
+Yeah, so this is not give the right picture, right? Yeah. Also. The consumption is high because of the price is very high, but the consumption is not frequent. Probably these two are more for alert purposes. We can use them to filter to see.
+
+Hector Palacios (ADNOC Group D&CS):
+In this case, it's very interesting to check because, as you say, this can be something that is overstocking basically, or this is a high consumption. Value for us, something that is with a high frequency or a very high price, I want to see it, what is the results that we are getting for that.
+
+Achmad Sonhaji (Borouge):
+Yeah, so the clear picture will be HML and FMSN instead of ABC, FMSN. We call FMSN, fast, medium and slow moving. So if it is fast, the price is low, there will be more stock. Right fast and price low okay yeah you will put stock higher right because we'll be uh I mean uh what is mostly used will be mostly used right okay so let me fast moving medium moving slow moving fms yeah
+
+Hector Palacios (ADNOC Group D&CS):
+so I I'm just placing the hierarchies because we need to take this in order right so first one priority bc second one bed a third one is going to be hml and then fmcn because you can have a fast mover and maybe you have a high price but this is business continuity so we cannot play around with that we need to have the maximum yeah okay so make sense I was excluding this because i've seen that in those in some cases even when you have like a very low frequency sometimes you have big demands like you you are receiving, at once you are receiving like 100 units of this, so...
+
+
+
+Achmad Sonhaji (Borouge):
+Yeah, especially if the price is low, then we can better to put in stock, right? Because the risk of the stock value is less, right? Yeah. Yeah, I mean if it is falling M, maybe you're moving, but the price is low, then I mean to put in stock is a bit, will be lower risk, right?
+
+UNKNOWN_SPEAKER:
+Yes. Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+So if the price is low, the price is the price of hierarchy, so that is defining the level and then we can just play around a little bit with f and see if this is an f, it's a high
+
+UNKNOWN_SPEAKER:
+price. And an f? Yeah. Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, I think that I'm gaining more clarity on this So let me take this information. Let me do a run with myself and see how to structure this matrix based on the information we have available. And maybe tomorrow we can give it a second thought. So I can come up with this, how it's looking like, and we can see together if there is something else that we need to place or not. Aside of segmentation team, do you think that there is any other indication that maybe it's not a segmentation, but it's a characteristic of the material.
+
+ So, for example, rotables. I think that in the past we said rotables. We don't have a stock. We don't plan that because it's a different way of working. Do we have another exception like that? You say for this material, this specific type of material is really important and should be very high priority or is all based on segmentation. Are we missing some input there or we think with the segmentation is enough?
+
+
+
+UNKNOWN_SPEAKER:
+Well, I think it's good enough now for these four factors.
+
+Achmad Sonhaji (Borouge):
+Nonetheless, this is just an initial stage, right?
+
+Hector Palacios (ADNOC Group D&CS):
+So we will come up with this initial proposal that we are discussing together. We will see the results with them. And as soon as one of the results is not making sense, we can make this more and more complex. So it's just the initial state. I think that what I wanted to cover today because I wanted to get until the service level, this is fine today. So tomorrow we can show some additional things like dashboards, snapshots, change history, that we were discussing.
+
+ The new service level matrix, we have four points there. Dashboards, change history, it's very closely related to the dashboards. New service level, not reach score matrix. And we can take time discuss about the open topics. Between them, we have open topics. OK? The data that we are missing for that. And let's dedicate some time to discuss about the segmentation rules. Because we have an initial stage, but we were validated with Jagannath last week.
+
+ And now we want to share with you the rules, because we also need to automate all A, B, C, X, Y, Z. We have some indications of how to do it on the inventory procedures, but I think that we need a little bit more information on that. So let's check tomorrow. What about the case of B, E, D? The case of A, B, C, X, Y, Z, we have a matrix there that we can take some time to discuss. For today, 10 minutes are not going to be enough.
+
+ Let's take the opportunity that tomorrow we have four hours blocked for this, so for sure we are going to be able to cover this point. And other than this, Tim, tomorrow let's check if these scenarios that we are planning at high level are enough, because these are like the one-on-one of how inventory planning is done on AVP. But if there is anything else that you need to cover, let's discuss tomorrow because we need to include it on the UAT, okay?
+
+ So you need to test it. And for that, we need to configure before and so on. Probably, in all of the cases that you are thinking right now, what will be inventory planning? Because this is only inventory levels planning. But maybe we can capture some of the scenarios that you also want to see later on supply planning. That's also fine, okay? Because it's closely related. That's it from my side. I don't know if you have any other questions on your side, or you want to check something else.
+
+ It seems that we are OK. So if you are not having any more questions, let's leave it here. Let's continue tomorrow on the morning And based on the progress on the morning session, we can decide if we use the afternoon session or not, right?
+
+UNKNOWN_SPEAKER:
+That's it for today.
+
+Achmad Sonhaji (Borouge):
+Thank you very much.
+
+MM- SKEC2 - L08:
+Thank you. All right.
+
+Aboobacker M. (ADNOC Gas - PD):
+Thank you, everyone.
+
+UNKNOWN_SPEAKER:
+Thank you.
+
+Achmad Sonhaji (Borouge):
+Thank you.
+
+UNKNOWN_SPEAKER:
+you
+
