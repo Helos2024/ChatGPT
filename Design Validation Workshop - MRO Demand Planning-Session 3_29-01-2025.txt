@@ -1,0 +1,1110 @@
+UNKNOWN_SPEAKER:
+Morning, everybody.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+Good morning, good morning, good morning.
+
+UNKNOWN_SPEAKER:
+you Nishant. Hi Nishant, you there?
+
+Nishant Keloth (Borouge):
+Nishant, you have any plans to come here today?
+
+Bastian Osorio:
+Not exactly.
+
+MM- SKEC2 - L08:
+OK, we wanted to clarify something for the Buruj, so maybe we'll align separately. Yeah, sure, that would be better.
+
+Nishant Keloth (Borouge):
+I'll get the required folks also in the call in that case.
+
+MM- SKEC2 - L08:
+OK, OK, thank you.
+
+MM- SKEC2 - L08:
+Guys, we should be starting now. Key focal points have not joined yet.
+
+UNKNOWN_SPEAKER:
+In this call, we need right now guests today.
+
+MM- SKEC2 - L08:
+Yes, just yesterday. Same people as yesterday. Thank you. This is the third session of Goosene team has not joined. Arun, can you check if other e-member from are joining.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, let me check.
+
+UNKNOWN_SPEAKER:
+We have two arms.
+
+MM- SKEC2 - L08:
+Yes, we have. You you Can we start the session, please? Who will be? Let's give another couple of minutes. Govasanthi is also joining.
+
+UNKNOWN_SPEAKER:
+Okay. Okay.
+
+MM- SKEC2 - L08:
+They will come here. They can come and stay. It does not add the value. The only benefit is there are additional benefits coming here, but Be gone. No, no, no.
+
+UNKNOWN_SPEAKER:
+Hashtag. Oh my God.
+
+MM- SKEC2 - L08:
+Oh my God. The party.
+
+Bastian Osorio:
+Hi everyone, sorry for being late. I had a connection problem. Give me a minute and we can start.
+
+MM- SKEC2 - L08:
+All right. Thanks, Hector. Oh, thanks, Bastian.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Rahul and team, while waiting, this is to complete whatever we started yesterday. So this is our third session, right? For drilling, for MRO in demand, correct?
+
+UNKNOWN_SPEAKER:
+Correct, correct. OK. Can you see my screen? Yes. Yes.
+
+Bastian Osorio:
+So the blue ones are the ones you covered already, Bastian, and yellow are the remaining?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+So just to summarize the points that we have reviewed in the last two sessions are, first, the planning type. In second place, we have the segmentation, specifically FFMSN, which it will be reviewed again during the afternoon session for inventory. Then we review data cleansing, we review the machine learning algorithm and how it works. Then we review the statistical forecast, including the crosstone algorithms and how we can run the model in two different levels depending on the purpose of the forecast, right?
+
+ One for reference and one to use it for certain materials as trigger for PR and STOs. Then we review the preventive maintenance. The conclusion is that for now, there's no such a thing as preventive maintenance plan. So for now, we're going to merge, we can consolidate the historical demand from preventive and from corrective to create the forecast. Then we review a little bit some of the budget and alert, where we see that where IVP can indicate us when the forecast is above and the budget, so we need to take action.
+
+ And we have now the points 10, 11, and 12, which we're going to cover during these sessions. OK, the first one is execute and review forecast snapshots. Second is review accuracy KPIs. And third and final one is the reservations snapshot snapshots and alerts. Okay, if there are any questions so far.
+
+UNKNOWN_SPEAKER:
+So let's jump into the system.
+
+Bastian Osorio:
+As always, We need to log on. OK, so I have created a template to cover this part of the process, right? Which is called, if we go to the Demand Plugin, accuracy. Okay. So let me add some two key figures. Okay, so first of all, as it was requested, we made the change and now instead of adjust the forecast by a percentage, we change it by a fixed amount. So we have this example for the location we've been reviewing in the last couple of days, 2101, and we have these materials ending in 662.
+
+ So for, let's say, for the quarter one in 2026, the forecast is 13, OK? And for now, there is no planner input, OK?
+
+UNKNOWN_SPEAKER:
+There's no planner input.
+
+Bastian Osorio:
+So yesterday, we reviewed that it was possible to adjust by a percentage. But it is also possible, and this was the requirement to replace that percentage by a fixed amount. So the final forecast takes 13 when there is no value for planner input. But if we collaborate a value, let's say 20, We save it. We see that the final forecast, which will be the input for supply planning, is 20. So in this way, again, always the planner is the one who has the final word in terms of what is the forecast okay so um with that what we have here is two key figures the statistical forecast accuracy and
+
+1Arunkumar Viswanathan (ADNOC Refining - HQ):
+final forecast accuracy yeah please in this note in the key figure column can we have the total installed quantity for the particular so that it will be easy for any planner to have a correct forecast when you say install
+
+Bastian Osorio:
+quantity is like 5 numbers so you cannot blindly put more than 5 numbers just to confirm install quantity you refer to the current stock of this material or?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+the current stock, the total installed quantity for that area yeah yeah absolutely the middle id is linked with multiple equipments now in fact the total bomb quantity if you can reflect in the key figure for the review process it
+
+Bastian Osorio:
+will support the planner so the key figure that you're referring to is called is it exists by default in stock on hand no the sum of total installed quantity or the component quantity.
+
+MM- SKEC2 - L08:
+Sebastian, the point he's referring to is not stock on hand, but if if you have a metal and the metal is part of five different equipments, then the install quantity is five.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+OK, so it's yeah, I'm going to take note of that.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Refer to bomb quantity or the component quantity or install quantity. It's a bomb quantity and for that particular because this is anox short gas data can confirm this item we have a bomb.
+
+Bastian Osorio:
+If you can show what Arun asked is the total bomb in salt quantity. Yeah, Arun mentioned this requirement yesterday. Yeah, we take note of that. And for that specific cases what we need to do, I think the best idea will be to land at the basket level.
+
+MM- SKEC2 - L08:
+I think what we will have to do is for every metal understand from equipment bomb to like for every metal through equipment bomb identify that which all parts which all equipment is part of and what the quantity so that
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+the total install quantity can be one of the key figures for a given material so that ultimately this is the ask for the optimization see the install quantity is five number I mean the should not put 20 numbers as
+
+Bastian Osorio:
+he declared in q1 2026 yeah it's clear I don't and we'll take it and we'll review during supply sessions but it's a good point the one that you're raising and we need to address it somehow um so yeah it's here we have two key things years, called Statistical Forecast Accuracy and Forecast for CM Accuracy. So as you can see, this is a measure of the accuracy in comparison with the actual usage. We understood, and this is something we need to fix, that the forecasting doesn't need to be only for corrected But we need to set sum up preventive plus corrective and make just one forecast.
+
+ So it's something we need to fix. But the idea is the same one. We're going to create a forecast, and this forecast have an accuracy. So I want to take the Q4 of 2024 as an example to make the point. So for this specific material, we have an accuracy for the statistical forecast of 54%, whereas for the forecast final, it's 50%, OK? The usage was 24, whereas the statistical forecast, 13, and 12 for the planner input for the final, OK?
+
+ So after, let's say, a year, we will be able to measure who was more accurate if the statistical forecast or the planner input. Of course, in the beginning, I understand that we need to create some confidence in the numbers provided by the system. But after a year, we'll be able to make a comparison for every single material and say, OK, for which one the system was more accurate and for which one the planners were more accurate, OK?
+
+ That we find that the system was more accurate, then in that case, there is no need for collaboration. We can let the system do its job. And the statistics will be good enough to plan the demand from these materials. Whereas, of course, we will have certain materials. We're speaking here about the forecast, the materials that will forecasted. Whereas some materials, of course, because they have such a hard pattern to be predicted, need the input for the planners.
+
+ And this is some reality that we need to face. In general, just as a reference, most materials can be forecasted, at least the materials that we are addressing here can be forecasted with a decent accuracy by the system on a quarterly level, okay? But there will always be certain materials that need from the input for planners, so we are not saying that the system will do everything by itself. Of course, the collaboration is crucial, is essential to get good results, and that's why we are building our process around collaboration.
+
+ OK. So. The next point is, are there snapshots? OK. So let's come here and I'm going to add the view and add some keyfigures.
+
+MM- SKEC2 - L08:
+Any question on forecast accuracy like, So there is a field available material installed base.
+
+Aboobacker M. (ADNOC Gas - PD):
+What is that field?
+
+UNKNOWN_SPEAKER:
+The key figure.
+
+Aboobacker M. (ADNOC Gas - PD):
+Material installed base.
+
+Bastian Osorio:
+It's referring to, I think, the equipment. The number of pieces, not the number of quantity. Number of equipment, huh?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+So this is a good functionality to understand how the forecast, the statistical forecast, and the final declaration will be evolving. So at the end of every planning process, we will run to two Jobs, okay so Well, we're running for this one But yeah, you you will get the idea here. So we go to run but sorry before jump jumping into the execution the idea of this of this job is to Again, as I said yesterday is to make a photo of the statistical forecast and the forecast of the collaborated forecast.
+
+ Why? Because we can see how the forecast has been evolving and we can see if the input for the planners was greater or was lower in previous periods. So for that, and it's something that will happen automatically in the system, but I still wanted to show, you go to Run and go to Snapshot. So for now, we have three snapshots. We will be able to take a photo of the forecast, of the final, of the statistical forecast, and then of the material preservation.
+
+ But it's something that we will review in a minute about the reservations. So what I'm going to do snapshot for the forecast final. Once it says finish, we can refresh the beam.
+
+UNKNOWN_SPEAKER:
+Okay, finish.
+
+Bastian Osorio:
+So let's take mechanical, for example, OK?
+
+UNKNOWN_SPEAKER:
+Here.
+
+Bastian Osorio:
+Before updating the view, what we have is that the current, for example, let's take October 2026. The current final forecast is 25, but the forecast of the previous period was 59 and the forecast of the period before that, let's say two months ago, was 59. So if I refresh this, okay, we have now that it is like a cascade. Okay, now the three periods ago is 59, two periods ago is 59, and now one period period or current period is 25, which is the current value.
+
+ So we have in total 12 key figures. Sorry, 12 snapshots. So we can say the plan like 12 different versions of the forecast. And this is valid for the collaborated forecast, but also for the statistical forecast. OK? We can do it. We're going to run. Also, just to make, again, the example for this identical forecast, we're going to run it, OK?
+
+UNKNOWN_SPEAKER:
+Or maybe, I'm not sure.
+
+Bastian Osorio:
+I don't think the user can run it, but because it will be good idea. So again, IDP, application jobs, run, snapshot.
+
+Bastian Osorio:
+and we'll see the statistical forecast.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+is finished so now we should we should be able for example here this zero going down to the snapshot 2 and the the 176 will be safe in the in the first snapshot okay if we click refresh that is what happening okay and again we can say until up to 12 different versions. Is there any question at this point regarding accuracy and snapshots the difference between snapshot 1, 2 and 3 what exactly it conveys?
+
+ It is a period of months or? Yeah it's when it was a run so basically we will run one per month at the end of of the planning cycle we will run the snapshot so in this sense you can you will be able to see what was the forecast of the last well when we complete a year of the last 12 months okay what what was the forecast in January what was the forecast in February in March so on support okay yeah this voting I mean it's not easy to understand The manual needs to be very, very clear in this regard.
+
+ Maybe we can change it.
+
+Aboobacker M. (ADNOC Gas - PD):
+Instead of snapshot one, two, three, you can bring the date or month. Yeah, but it doesn't, yeah, it could be the case.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+As a developer, yes, you know all these things, but see from the business point of view, and the business user will understand this one, two, three, snapshot one, two, three.
+
+Bastian Osorio:
+It means one month, one month ago, two months ago, we can fix it to, to adjust the name. So, so it's like the scientific forecast one month ago, two months ago, three months ago, and the same for collaboration.
+
+UNKNOWN_SPEAKER:
+Date, date is better, date.
+
+Aboobacker M. (ADNOC Gas - PD):
+Last trend date.
+
+Bastian Osorio:
+In terms of the accuracy, this formula is pretty simple. It's just the difference between the actual usage and the forecast divided by the actual usage. Besides this one, which is pretty standard, is there any other? Because this one is useful, it's widely used, but it's basic. Besides this one, is there something else that you want to see? Because we have plenty of KPIs we can configure. But we don't want to start configuring, I don't know, multiple key figures that won't be used and that at the end of the day can create more confusion, more, more, yeah, confusion versus instead of adding value.
+
+ So that's why we prefer to come up with something basic. And then based on your input, on your feedback, on your requirement, building more KPIs in terms of accuracy, and difference of the actual consumption with what was planned.
+
+UNKNOWN_SPEAKER:
+Basically, what is the advantage of seeing this accuracy?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Sorry? What is the main advantage of running this accuracy report? What is the meaning?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+What is the main advantage significance of this report what what the output can be used from this report actually yeah so essentially one of the primary objective can be that if you know the forecast accuracy and whether the forecast
+
+MM- SKEC2 - L08:
+is giving more accuracy or the manual input is giving more accuracy you can compare that and over the period of time if you think forecast is able to like the forecast is able to predict actual consumption in a better fashion then you can rely on the forecast and reduce your work with this report saying that okay in past two quarters we have seen that forecast is more accurate than manual input and probably manual input is creating more inventory or less inventory like it's creating problems but actually we are getting closer to the actual consumption is closer to the forecast then this will help decision-making process on where you want to focus your efforts in terms of reviewing the
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+plan. See, I think Rahul, ultimately now the planner input is mandatory.
+
+MM- SKEC2 - L08:
+Row number 10. It is not mandatory.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+It is only to help him to decide on the quantity, correct?
+
+MM- SKEC2 - L08:
+Yeah. Considering there are millions of materials in Aetna and prioritization of the material. If the forecast accuracy is high and you feed from the historical data, why would you like to spend time and effort on somewhere where there is already a good forecast accuracy? You probably will spend time on something where you would like to add manual input to some other cases, right? So the intention, the primary intention is to give you that how accurate the forecasting process of IBP is and whether it is coming closer to actual and more closer more reliable the forecast and then you don't need to essentially
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+take a decision, give this manual input and rely on forecast more and more.
+
+MM- SKEC2 - L08:
+Ultimately it is related to how you are consuming and how good IVP is coming closer to your future consumptions. Predict how good IVP is predicting your future consumption so can you rely on the prediction is the accuracy forecast accuracy.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Our main issue on the inventory or the stock cover ratio it is the non consumption of reserved items. So how we can have a control using this tool so that we want to measure.
+
+MM- SKEC2 - L08:
+So when you say non consumption of reserved items you would like to see this against what is the actual consumption?
+
+UNKNOWN_SPEAKER:
+Yeah. So.
+
+MM- SKEC2 - L08:
+On top of this, we can also add that Sebastian, do you think we can add this report where you have the reservation from system and against the reservation? What is the actual usage of the material?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So you may have a reservation of 100, but actually you already have some.
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+When doing when doing this is forecast by system, it won't check the stock availability?
+
+Bastian Osorio:
+No, this comes in the supply part. If the forecast... So this forecast is not considered stock available at all?
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+No, no.
+
+Bastian Osorio:
+The forecast is only derived by the historical consumption.
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+So it is the planner who has to compare the stock with the forecast demand.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In respect of stock availability, they need to plan for the future. So this tool is only for planning for the future requirements, like the maintenance plan.
+
+Bastian Osorio:
+This is how much they will consume. Then they will, of course, there is a specific phase of the process in which they're going to compare the the actual plan with what is available in terms of stock and in terms of open POs. But in this step, there's no need to start thinking about what is available right now in terms of to collaborate the forecast. Why is that? Because they can be planned, as you can see, for the next year.
+
+ So there is no need to compare right now with the actual available stock so this forecast again is just for certain materials for the materials that have high consumption and okay so it's not anywhere the planner can modify the
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+forecast formula or this once it's this set of parameters are set it will be permanent for yeah it's not the system calculate different parameters for each material, okay?
+
+Bastian Osorio:
+But the planner has the possibility of changing the forecast for any material. So in this case, it's 13, if he leaves, no, that's over here, 25, 26, sorry, it's too high for Q4 2026, it should be around 10, he can change it and always is the that the Exactly, exactly, exactly. If a material was widely used in the, let's say, last 12 months, the system will give you a high forecast regardless how much stock you have right now.
+
+ Because it's saying, okay, based on the statistics, it is very likely that you consume, I don't know, something similar of what you've been consuming in the last 12 months.
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+So forecast is totally based on movement history from last five years. Exactly, exactly.
+
+Bastian Osorio:
+Then, of course, there is a supply part where we're going to see if that consumption is feasible. If we need to raise a PI, if we need to get stock from a different location, or if maybe the open purchase orders is enough, or maybe in the worst case, scenario, the consumption is way too high and there's no PRs that can be raised in time to fulfill that order. That is, of course, the worst case. But in this step, we're not thinking too much about availability, but about how much we've been consuming and how much we Yes, there's a few questions.
+
+
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+So is it mandatory for the planet to go ahead with the forecast requirement or just review and return?
+
+Bastian Osorio:
+So I will come back a little bit to what was. Can you see my screen, the presentation? Can you see it? Yeah, yeah. Yeah, so. So first. I'm going to add, sorry, I'm changing on the slide because this was a change in definition we made during these sessions, which is something we expected is good. So, we're going to take the preventive maintenance historical consumption and the corrective consumption and we're going consolidating.
+
+ Then if the material has more than 25 consumption, not in units, but in consumption events, because as we have seen, sometimes a material is, let's say, it was consumed one time last year, but that one time was consumed, I don't know, for, let's say, 50 units. For us that, for this rule, that is just one consumption. Okay, if this material has more than 25 consumption in the last five years, so it's a very high amount in ad hoc terms, then this material can be planned with forecast.
+
+ This rule, of course, is not fixed. With more data, we can start iterating. We can start trying different numbers until we get the right one.
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+What's the difference between this current minimum maximum order MRP plan. It's also based on movement, also based on the stock level.
+
+Bastian Osorio:
+I think you currently don't plan based on forecast, you only plan based on reorder point.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So for these materials, what we are saying is that you don't need to expect to have an order to start the purchase Even if there is no reservation, there is no requirement, the system will predict, forecast. That's the point. Yes, yes, exactly. But based on the history, because you have 25 consumptions in the last... So let me show you again one. We have a small set of data, but still I wanted to show some of these materials, okay?
+
+
+
+Bastian Osorio:
+So what we have seen so far is that these materials are characterized by high consumption and low value. And so if we go to the materials, yes. So look at this battery, for example. Cell, this battery had a total of 33 consumptions over the last five years, OK? And well, we don't have to, this data is not updated. But if we are, let's say we're in 2024, because maybe this material is not active anymore, it's very likely that you will consume this material again based on the history, OK?
+
+ Or let me see a gasket with a lot of consumption. OK, this one. OK, you consumed 75 in the last five years. And in the last four years, you didn't consume less than 100 units. So what we are seeing in this specific case of material is that you need to expect to have an order to raise the PR. Why? Because it can happen then when the material order is raised, it is already too late to buy the material.
+
+
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+So this will add up more inventory if the item is not used?
+
+Bastian Osorio:
+It depends because we will reduce the reorder So you will plan with what the statistics said, with what you actually need. But it's a fair point and we need to check with the numbers, okay? But what we're saying is based on this, and we can check the forecast for this one. Let's check the forecast for this one. Specific material. I'm going to filter it here.
+
+MM- SKEC2 - L08:
+Basim, there are quite a few questions or quite a few people who would like to ask questions. Prathviraj and Aysha, so can we take those questions as well once you're done explaining? Yeah, of course. So let us know once you've this conversation so that we can...
+
+Bastian Osorio:
+Yeah, so for example this material had a consumption which it was, I don't know, 44, 44, 37, 18, 24, 42 and then in Q1 2023 of And the forecast is flat, 36. So based on the consumption history, as you can see, it is very likely that you will consume. The statistical forecast is not something out of the box. It's something very, like, it should make sense just right away just by looking at it. And you can see it here.
+
+ We have the chart which shows what is the actual, so let me create this chart just with these three values. Okay as you can can see in the dark blue bars, we have the consumption of the previous year. In the green bars, the consumption of the current year. And finally, in the light blue is the statistical forecast. And you can see it makes sense. So based on the consumption of the previous months, it's something very likely that you will consume this amount at least this amount maybe more maybe a little bit less we will measure that difference okay so again what we are seeing that's in these specific cases where we can maybe maybe increase this amount but this is based on the best practice maybe instead of 25 we can make 30 something around that but no more I wouldn't put something more than 50 we can say these materials will be consumed for for sure in the next few periods.
+
+ Whereas just to confirm, for the majority of materials, this rule will not be answer affirmative. And then you will have reorder point where for reorder point materials, then the forecast is just used for reference purposes. And in this case, you absolutely is mandatory to create a reservation to raise the PR or the STO. There's no way around for these materials. The system won't plan by itself. The system won't propose a PR or STO for this type of material, which in numbers are way more.
+
+ In fact, while Yeah, I don't want to go back to the numbers, but in general, we have seen that at least for the small set of information, we have less than 5% of material can be planned based on forecast and around 95, 96% of the material, of ad hoc material can be planned, will be planned with reorder point. Reservation is still mandatory for them.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+I don't know if that's clear if there's any question in this regard or we can jump to the next question.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The consumables, it will be useful with this tool for the forecast. The other spares, it will again still be in the same reorder point planning. Yeah.
+
+Bastian Osorio:
+Yeah as I said most parts so you can think okay if for most part you are not using the forecast then what is the value what the system can do for this part and well there's multiple things but I will say the main two things are first that we can recalculate the reorder point based on advanced model for spare parts. And this is something we will cover today in the next session, in the afternoon and tomorrow.
+
+ And then we will create a supply plan that look not only for stock in the vendors. So if there's a need of stock, we'll not only go to the vendors, which which of course is still the case, but also we look first in different adnox plants, even in other HGCs, if they have excess of stock for these materials. If that is the case, before jumping directly into the PR generation, it will recommend an STO, a stock transfer order.
+
+ So in this sense, we will reduce purchase of unnecessary materials where that material already exists in other facilities. Okay. But in this case if the material number is same then only you can do it right.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Right now like every company has a different material number right. That's one thing.
+
+MM- SKEC2 - L08:
+We need to look into that. So Vivek, what we understand this different material issue is only limited to chemicals.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Is it applicable to MRO as well? But I'm I think. Yeah, I think what we mean is the common item.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Now the common item is not standardized into one material number, so it is not calculating the same figure for and doing the STO.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+properly yeah there is no single material for the common item that's yeah that's one challenge we have maybe the common material flagging is already there maybe for that only whatever Mr.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Prasant telling it will be applicable so when you say common material what do you mean by common material can you like add some item available in multiple companies the same material code But what I checked from the standardization team
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+earlier, they said they're doing for the new item when they create it, but the old one, I think I'm not sure how they're doing. No, sorry, what exactly? See Nishant, see right now we even though have one common item right now for all the old items the different different metal number is in different different companies even the same item but right now for the new item when they are creating in MDG right now they are standardizing this not the old one.
+
+
+
+Nishant Keloth (Borouge):
+No no standardizing in the sense can you explain standardizing in single item and it will be extended to all the group companies.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Not exactly with Not only Buruj, even the AGC's as well.
+
+UNKNOWN_SPEAKER:
+OK.
+
+MM- SKEC2 - L08:
+So what you're saying is. Standardization will not work with Buruj because there is a different material code classification.
+
+Nishant Keloth (Borouge):
+Classification will be same because we're using the same template, but material codes will be different.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Buruj is one case, but for even So we can take this action as an open item because we knew this from the chemicals workshop that chemical has this issue, but this was like we did not know if MRO also
+
+MM- SKEC2 - L08:
+has the same issue and we will capture this and share this feedback with the leadership.
+
+Nishant Keloth (Borouge):
+See as far as I know, know this is a continuous process that's happening in AdNoc because during 1 ERP I think standardization at a material code level didn't happen. So that could be the reason and of course that is a reason but there is a continuous ongoing process. Vivek maybe Murugan you can check with him you'll get the latest update.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Okay one more point here to capture see even though the standardization, based on standardization, deduplication happened and single item will be used in the across group company. However, to get the consumption history, so we need somehow to link the old material, then only our consumption pattern will work exactly. For example, so in offshore we are using one material for maybe last 20 years and now this year we change to the new material and the forecast will come based on the new material number.
+
+ However, if you want to compare with construction history, at least somehow we want to link to the old material. Maybe if this is the case, at least we can have old provision, the same like what drilling material we are doing it. So, if we capture this information under the alternate material, maybe this is a solution.
+
+MM- SKEC2 - L08:
+We do not need to do the alternate material. Abdul, there is a standard functionality product life cycle management tool is available where you can refer to a old material as a historical reference so that when you're forecasting a new material you don't lose the history of the old material and you can update this mapping directly in IVP.
+
+Mohamad Fakhouri (ADNOC Group D&CS):
+And in the material method there is a field for all material number as well?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah that that will be only one to one number So maybe that field is not good enough to capture.
+
+MM- SKEC2 - L08:
+Yeah, because there will be one too many based upon every agency, right?
+
+Mohamad Fakhouri (ADNOC Group D&CS):
+Yeah, I want to many.
+
+UNKNOWN_SPEAKER:
+Yeah, that's true. Yeah, yeah.
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+But my understanding is this prediction is based on last five years data, right? Yes, they are from last five years. All new number. We are not using any old number from since one year. Also, outputs are converted to new codes.
+
+MM- SKEC2 - L08:
+But not sure what I'm hearing is. It's not consistent across agencies. Same material, even if it is new code in one ERP, the material code can vary for the same physical part. Across agencies.
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+OK, OK, but you know link it is. Since 2020 we are using only ports only.
+
+MM- SKEC2 - L08:
+Alright, we have taken note. Let's proceed with this so.
+
+Aboobacker M. (ADNOC Gas - PD):
+Someone has one one suggestion regarding this one. If there is a common items already mapped, I mean merged. If that the flag is DP, you can able to. Consider no old items transactions here. What do you mean by DP? Duplicate duplicate already that item is merged. Common items being used for all the GCC's. Since we will, we may need. We may miss all the old items transactions, no? So in that in that case, no better.
+
+ No, if you can read that if any items are the common material flag is.
+
+MM- SKEC2 - L08:
+for sure we can read the dp but then you still need to tell the system that what is the new material for the dp yeah that will be there cross reference material will be there where it will be in s400 it will be available yeah it will be available for the old items only yeah for the old item you even if see either from old to new or new to old anyway if we are able to establish this
+
+Aboobacker M. (ADNOC Gas - PD):
+link that this was the old material now it is duplicate and now the issue here for the old material only we can able to see the cross reference material for the active material. Yeah, OK, you can able to read. If we can read that, I'll I'll tell you the scenario. We have one common material. OK, I'm Adna gas. One item number maybe answers another item number. We will kill the Adna gas item number.
+
+ Item number as active. OK, when we had no gas item number, what we used to do? We put the flag, you know DP cross reference here at the answer item number here where I had no gas item number, but they in turn know the answer items. There will be no no link. Which is fine, just activate them.
+
+MM- SKEC2 - L08:
+That's fine, because anyways that that number will be used both ad-hoc gas and onshore so that's that's fine but if you're able to have this reference that ad-hoc gas number is killed and it is referred now the new reference number is this onshore number that would be good enough for us to get this updated in IVP okay that you keep a note yeah okay that is what we need so so abu walker later if you can uh uh send a screenshot of sop where this reference number is available We can then look into details of it.
+
+ Sure, I will give you one example in the chat. Yeah, yeah, alright. And then, uh, based upon what Aboobacker mentioned, the logic would be same across the agesis. The same process would be followed.
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yes, correct, yes, yes, yes. Alright.
+
+MM- SKEC2 - L08:
+So in that case we'll take that as an input so that this can be used to refer the historical consumption killed or duplicate material. One more thing between Buruj and 1 ERP, is there any reference of the similar materials or the Buruj will always be different? Is there any connection between a between Buruj and 1 ERP?
+
+UNKNOWN_SPEAKER:
+Nishant.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, actually there are common items, but all Buruj items are no prefixed with the B and sooner or later.
+
+UNKNOWN_SPEAKER:
+Yeah, sooner or later.
+
+Aboobacker M. (ADNOC Gas - PD):
+No, it will be. It will be merged. I think there is some plan. So they will. It will be merged with no all other items. That is what I heard from them, which means if we do not have this reference, will not be able to optimize. After merge after merge we can have that options.
+
+MM- SKEC2 - L08:
+Alright, alright. You have a question.
+
+1Prathviraj Anchan (Borouge):
+Yes, yes, thanks and about the common items also. As far as I know there is no indicator or flagging, but maybe Achmad or Nishant can confirm more on that just in case there is, rest of my knowledge, there is no flagging. Coming back to forecasting of consumption. So while we were discussing this, we are talking all about materials which have past usage at least for the last five years, which is like medium moving materials.
+
+ But our main challenge in inventory for inventory optimization is slow moving and non-moving materials. What's our plan on this as far as forecasting or any kind of action for this is concerned? Because that remains a challenge. When is this going to get consumed? And how we can possibly have some forecasting for this to engage with the end users?
+
+Bastian Osorio:
+So regarding this low movers, we're going to, of course, there is no way to make a forecast for them. So the way they're going to be planned is going to be through reorder point. We're going to calculate the optimized reorder point, which an IVP has a specific model to address this type of material. We're going to review that in full detail in the next few sessions, today and tomorrow. This is for slow movers, but for non-movers or for new materials, the storage and we need to find reference to plan these materials.
+
+ We don't have a demo for that yet, but I think we will schedule a session to having some data to show you how it's going to work. But the idea is to establish a reference with other similar materials and based on that, establish the reordered point parameters.
+
+Prathviraj Anchan (Borouge):
+Basim, thanks for the response. And it's fine, but see, our challenge remains is the utilization or consumption of these slow movers and non-movers, because that's where our main area of optimization is. And it's almost close to 50% of our inventory value, if I have to put it in perspective. So that's our biggest challenge as of today. So for me, more than the medium movers and the fast movers, and if you're looking at forecasting of these materials, we might be still able to optimize but the percentage in terms of inventory value is not going to be significant.
+
+ I hope I'm addressing my point well.
+
+Bastian Osorio:
+Yeah, it is clear.
+
+Prathviraj Anchan (Borouge):
+So, I need to have a very definite plan on what's my plan on slow movers and non-movers, how is the tool going to help me to optimize this inventory. So for me, that's it. If yes, it's going to come in the future, it's fine, but this is my main area of concern.
+
+Bastian Osorio:
+Yeah, because we are in demand planning and as you mentioned, these materials have and I can show you some example of those materials. OK. So here. I'm going to go to IVP. I'm going to filter here. Let's say html are high value. These ones are high value and vital. First of all, you can see right away we at least have some fast visibility. So that is one thing. And I think these materials can refer of what you're saying.
+
+ So there's only one consumption for the last five years. Right? So if you, let's take this one as an example. There's nothing much we can do in terms of forecast for this material with only one consumption in the last five years. So the only thing we can do to optimize the inventory is first give visibility in the sense that what is the value of this stock, where it's located, and how critical it is, right?
+
+ Then we can optimize the reorder point. And if there is a need for this material in a different facility, in this case, we are only speaking about the 2101 plant, then we can move this material between different AdNod plans instead of just jumping directly into the purchase process, okay? Yes. Is there something else that you will think it will be a good approach to address these materials? Is there something that we're missing here?
+
+
+
+Prathviraj Anchan (Borouge):
+No, I think you have hit a significant point as far as the utilization in plants will be concerned. But that is precisely what we need to look for slow movers and non-movers. And that will be very key. So when it comes to slow movers and non-movers, I think from each plant, whatever are the slow movers and non-movers and how we are going to identify that how well it can be utilized in the other plants.
+
+ So we need to have a very clear understanding of how this mechanism is going to work, that is going to be key for the slow movers and the non-movers.
+
+MM- SKEC2 - L08:
+Additionally, Prathviraj, what can happen is, since with IBP, you will have the entire visibility at ad-hoc level for a specific metal, provided that the metal codes are same. Provided the metal codes are same. What will happen is, you can also take a decision saying that you have a material, and you have of a certain material which is slow mover and you are not consuming anything and you see that it cannot get consumed anywhere in AdNoc as well because it's not being used or it's not slow mover everywhere and you are now carrying inventory.
+
+ A management decision can also be taken to liquidate inventory considering that we have not used it in past and we don't foresee it getting used in future rather than increasing the inventory holding costs. Liquidate the inventory can be one of the options to optimize the inventory. With this reality, yeah, yeah, agree fully on this route.
+
+Prathviraj Anchan (Borouge):
+So so so if I'm going to more specific, this is what I want. So let's say I'm taking a slow mover in my inventory. That material needs to be verified with all other plans, so the mechanism has to work in this way that it is verified with all other plans that they still don't have any usage and it goes then to the AdNoc level where they decide that this material which can no longer be used, let us say in the next 5 years also, that is the mandate given by all other plants and then we decide on the course of action.
+
+ So, while liquidation is one of the options, I would say still we might, we can kick in another mechanism where if the material is still in usable condition and we have the manufacturer details and all, can there possibly be a buyback contract?
+
+MM- SKEC2 - L08:
+I know of Sorry? You can swap this with some other material which is more useful for you.
+
+Prathviraj Anchan (Borouge):
+No, I'm saying is a buyback contract with the same manufacturer agency or an agent who possibly sees a usage of this material somewhere else in the, you know, some other company outside of AdNoc.
+
+MM- SKEC2 - L08:
+Correct. Exactly, exactly.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Prathviraj Anchan (Borouge):
+So for sure.
+
+MM- SKEC2 - L08:
+Sorry, go ahead. For sure, this visibility will be brought in by DP so that the decision making can with this complete end-to-end visibility.
+
+Prathviraj Anchan (Borouge):
+Yes, so this is for me a very important aspect and I would want to know that how we can actually bring in with the tool where we can run reports periodically and know that this is it and present to the management that this is what we have done and this is the action plan going forward. I hope my point is clear.
+
+Bastian Osorio:
+is clear and thank you for the input because it's very, it has a lot of value. So what I propose is to showcase this specific example during the supply sessions, okay, that are gonna happen in a couple of weeks. So how I visualize this, any material that hasn't been consumed or has, let's say, consumed less than two units, just to give a number, we should check actual numbers and it has to stop above let's say two units the system needs to trigger an alert okay so you can just by by opening a planning view you can see all the materials that as I said there is very little consumption consumption and a considerable sub value so you can
+
+UNKNOWN_SPEAKER:
+take action on those materials. Noted, noted.
+
+Prathviraj Anchan (Borouge):
+So Raul if the point is clear, let's note it down as what's going to be our action plan on this and in our forthcoming sessions.
+
+MM- SKEC2 - L08:
+Let's discuss in detail on that, yeah? Absolutely, thank you. We have Aysha's hand up quite a while.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+Aysha, you have a question, please proceed. My question is, in the previous Excel there was no accuracy. I think I'm not able to hear you clearly.
+
+MM- SKEC2 - L08:
+I saw can you come a little bit closer to my no. Yeah, now it's better, much better. Thank you.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+On this on the exit sheet, where was the forecast accuracy? There was like 2 accuracy.
+
+MM- SKEC2 - L08:
+What's the difference between them? Let's go to forecast accuracy here.
+
+Bastian Osorio:
+Yes, yeah, yeah. Between them is that, as we were saying, the system provides a statistical forecast, okay? And then the planners, of course, can make an adjustment to this forecast. So we have two accuracy, one for the statistical forecast, as I said, it is the output of the system, of an algorithm, and then you have the accuracy for what was the collaboration of the planners, okay? So that's why we have two accuracies.
+
+
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+And I have to consider which numbers? It depends on the purpose.
+
+Bastian Osorio:
+So, of course, the final forecast that will drive the purchase or distribution process will be the input for the planners.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+So the forecast for CM final, this is the final output I have to consider for the supply.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Aysha, maybe it is not much relevant to inventory. All this tool, it is helpful only for the planning team or the maintenance team.
+
+MM- SKEC2 - L08:
+OK. I don't think so. That's completely correct, Arunkumar, because this also gives you an ability to go back to the planning team and say that the demand you are putting the numbers which are coming are not close to the actual, which means you need to, like, the demand is not, if the forecasting accuracy is not correct or the final forecast, there is a huge variation between the actual consumption and the final forecast, which means that either you're creating more inventory or you're creating shortages, right?
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Rahul, that is the reason we asked to introduce a field for the installed yeah for sure we have taken note we will add that but then it's it would also in the first instance let system alert the user that they are having this much excess reservation correct and one more thing in the key figure you have to introduce some value value for the particular reserved quantity or the input quantity yeah why because the users they are making a work order of the reservation but they are not withdraw why because the value might be more and they should they are not allowed to use that budget within that year or they are a deficit of the budget so they are planning but they are not using in that in that year so this remains an open reservation so at least if you project the value now then it will be useful for them whether they need that much value to be consumed for that particular error.
+
+
+
+MM- SKEC2 - L08:
+So noted for your input is taken. We will add the reservation as a key figure and the consumption against reservation so that this data will give you. All of this data can help you question people think that you are creating a demand, but you're not consuming it or or something is wrong. So what's wrong? You can question this project. And bring in the accountability which you wanted to bring in with this data.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Again, this is going to our existing tradition. The same activity currently we are doing. Even after implementing IPP, again we have to do the same activity. Can you say that again?
+
+UNKNOWN_SPEAKER:
+Sorry, Arun.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See, what are the challenges now? I mean, challenging the user or the worker, which we are currently doing Even after implementing IPP, the same activity we have to do again?
+
+MM- SKEC2 - L08:
+You are not doing this. This is ready-made available to you. See, if someone demands some material, and if it is approved by his management, then from an inventory perspective, you're supposed to fulfill it. But then if that fulfillment leads to excess inventory, and you can have this documented in system which IBP allows you to, then this gives you ability to question bring accountability so that you are not responsible for something which someone else has given as input and that has been approved by the respective management right.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Then why they should be approved in the demand planning? So that control mechanism should come in the first cycle itself.
+
+MM- SKEC2 - L08:
+Yeah that's the expectation right when the demand is there the demand is approved so that we don't then the person whose approved demand would be questioned that if the approved demand is 100 pieces and you are consuming only 25 this report will tell you exactly so this report who is going to approve this is not there is no approval for the report this is data facts probably in the beginning I mean in before three or four meeting Murugan
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+or somebody they are telling that in future there is no work order creation in the system in SAP any requirement planning team they should give the input in the IBP tool so that means there should be some level of approval if user is I mean if they in the work order or if they create a work order and again giving input in the IPP, it is a double job, double activity, no?
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+You're right, Rahul Kambal. How it's come, without any reservation, how can we control it? What is the mechanism here? Is this your new role here, or new strategy by Infinite Excellence team here, or what?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, correct, sir, correct, sir. Rahul, either user, they have to make the work order in SAP, So those inputs should be configured here or the work order creation should be dismantled and they have to continue using the IPP tool. If they start using the IPP tool, then there should be some kind of approval mechanism, no? Whatever the planning team they are giving the input data, maybe their team leader or delegation or whatever, they should approve these quantities, no?
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Hello, Arun. So the work order that Sriram not existing. Indeed, all the preventive maintenance for us should be an input. So let's make a clear distinction on what is preventive and corrective, right? So preventive is the plan activities that we are expecting the maintenance user to create as a plan, as a work order, and we are going to feed IVP with that information. Then you have corrective maintenance.
+
+ That is what you are not and what you are not planning. That is where IBP can create a forecast.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So the final- Yes, please declare to the team the planner input for CM, serial number 10, from where this data is coming. Somebody should manually enter or it comes automatically from the work order.
+
+Hector Palacios (ADNOC Group D&CS):
+It cannot be a- What? It cannot be a work order because you're not anticipating correct maintenance, you're anticipating preventive maintenance. Correct maintenance just happens. So it's going to happen tomorrow and you need to correct it, but you're not predicting that it's going to happen 10 months in the future, right?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Already they're making a work order, no?
+
+Bastian Osorio:
+Then what is the input here in this IBP tool?
+
+Hector Palacios (ADNOC Group D&CS):
+So for this part is the actual consumption. Exactly. But correct maintenance activities.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Still, I'm not clear. What is this serial number? Important planner input for CM.
+
+Bastian Osorio:
+Is what the so let's start from from the beginning. So what we are applying here is the
+
+UNKNOWN_SPEAKER:
+Corrective usage.
+
+Bastian Osorio:
+OK for the future, just based on. And consumption history for corrective maintenance. OK, what we're seeing that But in cases with a lot of, in case of materials with a lot of consumption, there will be consumption for sure. So this is a clear case where we have more than 20 units in almost every single quarter, okay? So there will be consumption. In the statistics, which is not the final word, it's saying that in general you will consume units per quarter, OK?
+
+ So then the planner can adjust this. Why? Because maybe they have more information, but this is only for corrective. So for these specific materials, which are widely consumed and we believe are less than 5% of the ad hoc materials, there's no need to create, there will be no need to create purchase, sorry, a material order to drive the, I mean, to consume it, of course, you need the order, but to buy it, they don't need to have the order because there will be consumption.
+
+ But for the wide majority of materials, it will be the work type, the work order that will drive the purchase process. Bastian, I have a question. The planner input.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+You mean the planner should create a reservation based on these numbers? Which is for Bastian? We don't have a reservation. We do have a reservation.
+
+Bastian Osorio:
+It's something we will review right now. We have a specific point to address a reservation. Do you want, can we jump into the reservation part?
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+No, because you said the system will send a demand plan to the planner for his review. Review and approval. Based on what he will review, because you don't have a reservation in the system.
+
+Bastian Osorio:
+You only have a woman's right. We do have the reservations.
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+We do have the reservations. OK, OK. Demand plan not only based on movement, it's also based on reservation.
+
+Bastian Osorio:
+Yes, but let's say you have an inexpensive material, okay? Here we are planning for more medium and long term, so there will be no reservations for that material if you look more than six months ahead. That's the thing. We're proposing go for a more that the just zero, zero here. And then just wait for the order. But what we're saying in this specific case, as you see here, we don't even have data for Q4 because the data is not updated.
+
+ You have seen that you have in the last three quarters, consumption of at least 37 units, so it's very likely that you will consume units, so you need to buy, right?
+
+Noushad Mattummathodi (ADNOC Drilling - MD):
+See, as an inducer, I'm happy that if you have more inventory, but as a planning planner's point of view, it should be, let them take the decision.
+
+Bastian Osorio:
+Yeah, yeah, but Brahm, I agree, and I'm not changing We are not, you are not proposing that. I think it will be more useful to check another material because it has a lot of consumption.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Let's check this one. Okay.
+
+Bastian Osorio:
+Okay. This material had one consumption in Q3 2024 and for the previous year, there is no consumption. And if you look in all the history, there is just one consumption for this material. The forecast in this case, because this material is reordered point, even if someone puts a number here, it will not try purchase. Why? Because this material is reordered point. So there needs to be an order, an order, and you will see a reservation, and you will see an existing, an approved reservation, and that is the only thing that will drive the purchase or the STOs, OK?
+
+ But this is a different case. Why? Because we don't have, there's no way to predict the consumption of this material. So the only, the best we can do is to wait for the reservation, OK?
+
+Bastian Osorio:
+and that drives me to the next point which I want to have the time to address it.
+
+2Sheikh Saleem (ADNOC Logistics & Services):
+Can I ask you something brother? Yeah. What we understand from your previous slide is that what I understand from your before conversation, automatically the reorder point will be adjusted based on the past consumption. So once the reorder point is adjusted need for planner to send any reservation he can the inventory team can automatically create a new PR. Am I right or is there any conflict of an opinions?
+
+
+
+Bastian Osorio:
+No when when they reordered point and in something we were reviewing in the afternoon sessions but
+
+Sheikh Saleem (ADNOC Logistics & Services):
+No but in your previous slide there was a lot of consumption in for five quarters. Yeah. So there was a statistically forecast that if you see that there was 36, 36 to be requested.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+In that particular scenario, the planner has, if the reorder point is set accordingly as per IBP planning, then the inventory team can raise the PR based on the reorder point adjustment, isn't it?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+scenario, I think two scenario, in the, if the count of the issuance, if it is more than 25, they are not considering ROB based planning, it is directly like a forecast planning, correct Bastian?
+
+Sheikh Saleem (ADNOC Logistics & Services):
+Yes. Based on the next, I mean next five quarters. For this, I think mostly it will consumables and fast moving will be taken into consideration, Exactly, exactly and so in that particular case the reorder point will be addressed accordingly by the system isn't it?
+
+Bastian Osorio:
+Those materials will be planned based on a forecast reorder point of course will have a place a role in the planning but it will be I think the main component will be the forecast.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+But my question again in here, will the RIOTA point will be adjusted accordingly?
+
+UNKNOWN_SPEAKER:
+Yes, yes.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+Okay. So you are, they will take into consideration anything which is consumed more than 25 quantity.
+
+Bastian Osorio:
+No, 25 events. Events means 25 times that are consumed.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+Yeah, can be if you have enough 50 times every time you consume it will be way more than 25 times means each time maybe it is consumed on one quantity, 25 times it has to be consumed.
+
+UNKNOWN_SPEAKER:
+Yeah. Okay.
+
+Bastian Osorio:
+So, we only have 20 minutes and I want to review this one which is a reservation. So, as we can see here we have a dashboard that indicates some alerts. So, if I click here. I have a reservation decreased.
+
+UNKNOWN_SPEAKER:
+So if I click here, it leads me to this planning view.
+
+Bastian Osorio:
+What we have here is the actual, I'm going to explain each one of the key figures, is the actual usage Material for Preventive Maintenance, Actual Usage of Material for Corrective Maintenance, Reservations for Corrective Maintenance, and Material Reservation for Preventive Maintenance. And then we have the Total Reservation, which is nothing but the sum of the previous two, of these two. Here we have 120.
+
+ Here the Total Reservation is 120. Then the final one is we're going to change the name to Total material reservation one month ago. So what happened here is that, and this is why the system is driving an alert, is that one month ago, we had a reservation for 40 units here in Q1 2025. But now that amount has decreased to zero. So every time this happens, I understand this is an issue, the system will that, as I just showed, will guide you to visualize this situation.
+
+ So again, every month we will take a photo of these reservations. And it's the same for the forecast. We have up to 12 photos. So you can have photos of each month of the previous year. And you can compare it with the current reservation. If the current amount is less than the previous amount, then the system will generate an alert, okay?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Bastian, what is the zero and what is the 40? Consider now we are in Q1, 2025.
+
+Bastian Osorio:
+Let's say someone create a reservation of, let's say in Q4, they create a reservation for 40. Okay so we took a photo okay you you know what was the reservation at that at that period of time okay it was 40 this 40 was uh q4 2024 reserved quantity yeah but then someone now someone deleted delete reservation so if we compare current reservations to current total reservations with what was the reservations for these materials in the one month ago there was a decrease in the reservation and this is what the indies system is indicating you
+
+Aboobacker M. (ADNOC Gas - PD):
+yeah here some more things are also required so what happened to that 40 pieces whether it's issued Our internal we raised any PRRF QPO. Is there any informations that also to be no shown here?
+
+Bastian Osorio:
+So yeah, we can stop. We will add the open or open PO's. Um? And in the current stock. But but this is specific report is regarding the decrease. If the if the reservation increases, increases so let's say instead of having zero now we have 50 there is no other because they're requesting more they're not increasing this is okay fine by seeing all this information is fine but
+
+Aboobacker M. (ADNOC Gas - PD):
+then we need to add some more yeah you can add no as you mentioned no the balance current balance availability is there any actual usage for this last quarter I guess that reservation here we have not right. Yeah, here we have it. Yeah, but there is no issue happened.
+
+Bastian Osorio:
+No consumption happened.
+
+Aboobacker M. (ADNOC Gas - PD):
+No, no, but this is just an example of what is that? Yeah, someone deleted that reservation.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Aboobacker M. (ADNOC Gas - PD):
+So that that information we need.
+
+Bastian Osorio:
+Yeah, I want to see that and also And I will, it was mentioned a few minutes ago that we need to create an alert for when there's a reservation, but at once the period, so after Q1 is finished. So for past periods, if the reservation is above the actual consumption, okay? So for example, here we will have an alert in Q2, Because the total reservation was 20. But the actual consumption was 12. So there is a need for an Alec here.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Aboobacker M. (ADNOC Gas - PD):
+So we previously we we had a 120 pieces on reservation. OK, yeah, then what is that? Yeah, you could see the total reservation notice.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+100 plus 20, 120.
+
+Bastian Osorio:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So with this report, what we should understand, you're showing an issuance pattern, 500. So the demand is 140.
+
+UNKNOWN_SPEAKER:
+No, no, no.
+
+Bastian Osorio:
+The total reservation is 120.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But in Q2, it is again 20, no? Yeah. The total reservation is 140. Out of 140, the actual issuance might be around 70, correct?
+
+Bastian Osorio:
+50.
+
+UNKNOWN_SPEAKER:
+50 plus 21.
+
+Bastian Osorio:
+Yeah, 71. So, what this report actually says?
+
+Aboobacker M. (ADNOC Gas - PD):
+We do not know. These 38 pieces issued against these 100 and 120 reservations, maybe previous reservations, previous quarter reservations.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+It is also possible.
+
+Bastian Osorio:
+What I'm trying to explain is that you will have the visibility of compare the actual consumption for preventive or corrective against the reservations on a higher level.
+
+Aboobacker M. (ADNOC Gas - PD):
+In that case, you said 100, 120 is the total reservation, 120 pieces in Q1. 20. That means 100 pieces must be issued or some piece deleted or something happened. What is that details?
+
+Bastian Osorio:
+No, no. These are different reservations. But in fact, check here, there was a reservation for 140 total.
+
+Aboobacker M. (ADNOC Gas - PD):
+It means 140.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Aboobacker M. (ADNOC Gas - PD):
+At the end of Q2 2024, supposed to be 140. Yeah, 140 maybe you can minus 12. 140 or even only 20. 140 140 maybe if there is no consider if there is no issue happened for Q1 and Q2 is supposed to be 140.
+
+MM- SKEC2 - L08:
+These are all static numbers, so it's not that 120 is changing to 20.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See the understanding now. I mean from this now what I assume in Q1 the reservation is. Maybe in Q2 they have deleted the 100, so it is 0.
+
+MM- SKEC2 - L08:
+Yeah, so. No, no, so that's not the case. How to interpret this? Yeah, so the way to read this data is that you have a CM reservation of 200. You have a PM reservation of 20, so the total reservation is 120 right now. If you have to track the changes of reservation, then you'll have to compare snapshot. One snapshot, two snapshot, three. For the same Q1, you will have multiple snapshots. So you'll see that, OK, Q1.
+
+ So let's take an example. You are in Q1 right now, and you're trying to forecast something in Q4. So as you get closer to Q4, the Q4 requirement will change every quarter, right? So every quarter, if you're taking snapshot, for same Q4, you will see snapshot one, two, three, four, and you can compare how the Q4 requirement is changing between one snapshot to another. That's one way of looking at things.
+
+ But when you look at Q1, Q2, Q3, Q4, these are the independent requirements in those months. And we are saying, and then for that same month, or for the same quarter, we are saying, what is the actual usage? The actual usage is consumption of the stock. So to read this Q1 column, which is highlighted, you have a reservation of 100 against the reservation you have consumed only 38, which means your reservation of extra, say 52 quantities extra in this case, or 62 quantities.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Those 38, maybe from the previous month's reservation also. No, but in the reservation, you have requirement date, right?
+
+MM- SKEC2 - L08:
+So what IBP does it, based upon the requirement date, it shows in that specific month only, and the conjunction of that specific week month is compared to the requirement date. So, you can raise the reservation today, but the requirement date would be 12 months from now, right?
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, not necessarily.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Many reservations, they are putting the same date on the next day.
+
+MM- SKEC2 - L08:
+Which is fine, but see for any system to do any analysis, it depends upon the data. Now, the data and reservation is you have a reservation creation date, you have a material date in that reservation. Now what we are showing here is when is the material required as per reservation and when is the consumption. So for sure it can happen. So if you look at overall trend you will always see that the reservation requirement date and the consumption date there is a difference.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+That will show in the data. In order to understand this particular this one we need more information required. Otherwise we cannot Yeah, we cannot be able to interpret no with. With the deal, because I hear everything you actuals were showing actual usage, actual current metal reservation, right? Yes, so in that case we need to see no some more data. Why it reduced reservation if there is no consumption, whether it's deleted or not deleted?
+
+
+
+MM- SKEC2 - L08:
+Well, what?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In this case. Whether it may be a record or approved date.
+
+Aboobacker M. (ADNOC Gas - PD):
+Record or approved date only you have to consider.
+
+MM- SKEC2 - L08:
+So reservation approved date is what you see. We can. We can change this to the date what you want to show. Approved date requirement that that can be a discussion, but essentially the message we are trying to communicate is we are able to compare two things. One how the reservation quantities are changing over the time and secondly, How how much is the actual consumption against the reservation? These are the two data we're trying to highlight here.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+But that is not enough actually to to agree. So what additional thing you need?
+
+MM- SKEC2 - L08:
+Let us know and we'll see if if we can add it.
+
+Aboobacker M. (ADNOC Gas - PD):
+Let us know what what we need here.
+
+UNKNOWN_SPEAKER:
+The current balance.
+
+MM- SKEC2 - L08:
+Current balance means topic current stock.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, current stock on hand stock on hand. We may need the address of ERP also.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+We are not going to go much detail in this report now. It is purely it is for the platit people.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yes, we need to find out some other report for review.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In this report, let them introduce the total reserved quantity or the cumulative reserve quantity. Yeah.
+
+MM- SKEC2 - L08:
+So if you want to have a cumulative field, we can have cumulative fields. So the intention of showing is this is what we have prepared. And we're open to get your feedback on what all additional things you would like to add. If you want to have a cumulative quantity and compare the cumulative quantity with cumulative consumption so that you know that what is the total requirement, total consumption, we can show that as well.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, since they're talking about reservations, so we need to have see all the reservation related information.
+
+MM- SKEC2 - L08:
+So let us know what exactly you need and we can. We will take that as input and try to add this to the report is what I'm saying.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+Also, Rahul, if you can add the installed quantity for this specific spare part.
+
+MM- SKEC2 - L08:
+Yes, because yeah, they order sometime more than the installed quantity. Yeah, installed quantity is noted. What else? Aboobacker, you would like to add?
+
+Aboobacker M. (ADNOC Gas - PD):
+Current balance. Yeah, current balance. And PRPO quantity.
+
+MM- SKEC2 - L08:
+Current stock, open PRPO, STO, noted. What else? Target date. What do you mean by target date, Aysha?
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+When they will start the maintenance. When they will start the maintenance. Yeah, they put like target dates for that date. So that's the requirement date, right?
+
+UNKNOWN_SPEAKER:
+Yeah, requirement date.
+
+MM- SKEC2 - L08:
+So right now, the system is configured to show the quantity as per the requirement date, which means if I'm looking at Q3 2024-21, which means the metal is required for repair in Q3 of 2024.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+I know with some items, for example, which is related to turnarounds, they have names for the turnaround. We can mention. I don't know if you can explain this because this is in the final.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, OK, so turn around is a separate.
+
+MM- SKEC2 - L08:
+I think we are talking about only correct in whatever the fields which is relevant in the work order.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+For those you can map it here.
+
+MM- SKEC2 - L08:
+So you, if you can help us with exact field details, then we'll be able to come back to you and see how we can add that here. And it's fine, you can you can send it separately to us like,
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See all this information only we are telling that involve the EWM team. All right, all right, this is kind of a best practice. They have to follow some answer. They're not putting work or I mean the tar title some they will put in the long description. Inventory now since we are used to it we know I mean which it is for which turn around. So to simplify the process if they can make in the first instance know it will be easy for everyone.
+
+
+
+MM- SKEC2 - L08:
+Yeah so turn around in separate conversation let us let us Arun turn around we will have a separate conversation, but from a corrective and preventive. And we noted your input that we also need to talk to the EWM team. So anyway, there is a separate discussion and plan going on. So we have a plan to interact with the EWM team and get their feedback as well. What we would expect, at least from your perspective, if you have any feedback, we can incorporate.
+
+ Additionally, we'll for sure talk to the EWM team as well.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Just include that in solid quantity. Cumulative work order quantity and even in some of the examples what you've shown now, the actual usage you are reflecting some data in Q1 2025, Q2 2025. So that has to be corrected.
+
+MM- SKEC2 - L08:
+There is, okay, you are seeing actual usage in future periods? Yeah, it got filled up.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I mean, not for this item. Previously you've shown some other items. I don't know like gasket or something.
+
+MM- SKEC2 - L08:
+Alright, I think yeah, that's that's the correct. You should have only actually said only in past periods.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+Future players will not have any actual usage. I don't know one thing.
+
+MM- SKEC2 - L08:
+Yes, that's input. We have received that the reservation only approved reservation should be incorporated. Right now we are in process of updating the logic. Have for approval of reservation. We are in process of incorporating it, but yeah, we have this clear input of having only approved reservations.
+
+Aboobacker M. (ADNOC Gas - PD):
+So there should be some option to see all the reservations like here item perspective.
+
+MM- SKEC2 - L08:
+We are seeing I want to see from the That is something is not possible, because when the data gets to IBP, the transaction number, the reservation number are not available in IBP. Only has a reservation date, reservation quantities. So at the material level, you will be able to see the quantities, but not the exact reservation number in IBP.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+And how planning team will be able to do that?
+
+MM- SKEC2 - L08:
+It will be available at the quantity level.
+
+Aboobacker M. (ADNOC Gas - PD):
+The quantity is about different users or different work order.
+
+MM- SKEC2 - L08:
+Yeah, so so that's where the right now we are looking at location and material level. If a person responsible for a specific department and specific say material group, then we also can. That's called hierarchy. We need to set up this hierarchy so that a respective person can only look at the data for the respective area is responsible for.
+
+Bastian Osorio:
+And also we can add here the cost center which is linked to the equipment.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Regarding the planner input, still it is I mean briefing detail.
+
+UNKNOWN_SPEAKER:
+Yeah, I don't know one thing.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+It says it's an inventory gonna be centralized. If you mention like this one probably belongs to each group company.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Or which that that is from the location ID or so you can find out. Yesterday meeting they said they will be updating the plant and name or the description.
+
+MM- SKEC2 - L08:
+Yeah, so Aysha, whatever you're seeing is for specific location, specific agency only. You can aggregate data if you have authorization to look at it, but then at material and location level we are looking at, which means a location of a specific agency we are looking the data at.
+
+Aboobacker M. (ADNOC Gas - PD):
+You can be able to see the same single item might be linked to multiple plants.
+
+MM- SKEC2 - L08:
+We can able to see the consolidated reservation plan. Yes, that's called aggregation. And if you have a same metal across AGC's.
+
+Aboobacker M. (ADNOC Gas - PD):
+Not AGC, under one AGC, different plants.
+
+MM- SKEC2 - L08:
+Yes, that is also possible.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Here, regarding the open reservation, we need to take also into consideration the open reservation, even though the work has been completed. Because you know that some of the reservation is still open, but the work is 100% completed, but still open. So that we need to have something in IPB to consider how can we tackle it. How can we show that this is already closed?
+
+MM- SKEC2 - L08:
+So we will take and we'll create an alert saying that if there is a reservation which is creating a requirement IBP, but the corresponding work order status is complete, then that should be highlighted as alert.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+OK, perfect. This is to consider this most important thing. They will make an order, but they will not utilize that work order. They will create a new work order and they will take the material maybe for the preventive maintenance now. Yeah, so due to which the initiated in the beginning, it gets stagnant in the system.
+
+MM- SKEC2 - L08:
+Yeah, so that's what we will we will be able to see all this data in IBP saying that if you have work order one which has the reservation one which which has created this inventory 10 pieces but now you create a work order two for the same material and you consumed against work order two which means the reservation is work order one but the consumption is work order to without approval reservation, then we can highlight in terms of
+
+UNKNOWN_SPEAKER:
+quantities how the mismatch is happening.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So let's take this alert.
+
+Rajiv Kumar Gupta (ADNOC - PE&ICV):
+So can we add this, you know fields as a as part of key Which one? I mean the open reservation and the other details.
+
+MM- SKEC2 - L08:
+So probably have this reservation analysis report which allows you to look at different. Passion, I'm adding this as one of the input for us to have a reservation analysis report where we are able to compare this different inputs or different key figures of a reservation based upon the material and reservation competition. OK, we need to close this session because of the time and we will have a meeting.
+
+ Yeah, we already started a weekly meeting, so let's close this session and focus on the inventory in the next session. After this and I've taken input on what points we've discussed regarding the reservation and different alerts of reservation. Can you forward the invite to this case?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+MM- SKEC2 - L08:
+Alright, well, we'll keep talking in the afternoon session. Thank you very much for you. Thank you so much. Have a good day bye. Thank you.
+
+UNKNOWN_SPEAKER:
+Bye-bye.
+
+UNKNOWN_SPEAKER:
+Hmm. You
+
