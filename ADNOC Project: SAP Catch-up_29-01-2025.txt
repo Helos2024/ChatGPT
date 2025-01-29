@@ -1,0 +1,238 @@
+Bastian Osorio:
+the usage of storage location is in some cases because of separation of demand or separation of stock. One storage location, although it's in the same plan, it can only use, let's say-.
+
+Hector Palacios:
+Can I interrupt? Hello, Regina.
+
+UNKNOWN_SPEAKER:
+Hello.
+
+Kafizova, Regina:
+It's more than that.
+
+Hector Palacios:
+It's the configuration that they have on Spore HANA is the storage location. Is a physically different location. So you can see, for example, on offshore, the drilling rigs, they can have one rig, let's say, in Japan, and another one in China. And they are the same plant, but they are different storage locations. It's how they configure this for HANA, basically. I don't know what is the main reason.
+
+ I understand that there is some advantage of doing that. But basically, they are separate locations. It's not the same plant in many cases. So that's the strong requirement of why we need to have different, the planning by storage location, because in reality they are different physical locations.
+
+Kafizova, Regina:
+It's not the same plant, not the same point in the map, you know? Okay, I see. Um yeah so what uh I can see in the extractors now in standard extractors you're not even mro specific one but it's just standard it seems that they extract only location so if I go to to location even yeah
+
+Hector Palacios:
+just to location now for for us we will need to uh we are already doing some changes on it but for us will need to be something like the MRP area because they already have this definition that for some companies they use the plant level or the MRP run and for the other ones they are using the storage location indeed.
+
+Kafizova, Regina:
+So MRP area is telling us which one in each case so we will need to use something similar I guess. Yeah so like location is quite an important attribute, let's say, and important master data in IBP, and this is one of the basic ones. So that would mean that all of the extractors, the standard ones, the IBP for MRO specific ones, will have to be reworked.
+
+UNKNOWN_SPEAKER:
+That's right.
+
+Kafizova, Regina:
+And that is a lot of work. Like really a lot of work.
+
+Hector Palacios:
+Yeah the point is I don't know well here we don't have like an alternative it's not going to happen that they accept you going at plant level because that will be a loss of what they are doing today and also it will be incorrect and because as I explained there are difficulties.
+
+Bastian Osorio:
+Even just to give you an example a reservation made for one specific storage location, it cannot consume the salt from another location, another storage location, although they are in the same plant.
+
+Kafizova, Regina:
+Many examples like this you can think of OK, maybe let me discuss this also with my colleagues. But yeah, I'm afraid, like, yeah, probably there won't be an easy solution, let's say. In that regard, we are working on it.
+
+Hector Palacios:
+So we are involving a WAP consultant so they can help us to modify the structure or whatever we need to in order to do this. Now the big question is, is it a better approach to modify this extractor or to create a CIDS flow? Because I've seen that for in terms of performance is much better to modify the extractor.
+
+Kafizova, Regina:
+Am I correct? Absolutely. Yeah, that's true. But like let's say at least at the moment I don't think CIGS really can handle this kind of task because there is no really a way to let's say integrate Let's say we don't have extractors on S4HANA side, which extract storage location. So that's why first it is a must to adjust extractors or create new extractor based on the standard extractor, something like this, and add more, let's say, logic on top.
+
+ So that should be possible. And only after that, of course, CIDS should be adjusted. But only CIDS, I don't think it will be even possible from the technical point of view. So yeah, ABAP developer is required, and then CIDS should be adjusted as well. Yeah.
+
+Hector Palacios:
+Just to confirm, because that is the approach we are following, and our integration consultant because he also knows a little bit about. So he was able to bring the storage location, for example. So many massive data was modified. Transactional data is still something that we are working with them because we need to understand very well if all the information on a storage location. So that's one big point.
+
+ But I think that it's proven that at least on our side, it's possible. Are also involving some ABAP consultants in the project, so they are working with us on this.
+
+Kafizova, Regina:
+Okay, but please make sure to at least have some assessment of the amount of data, so how many product location, in this case product storage location, will combinations are planned to be loaded in loaded and to be processed in IBP in total in case it will be used in production for all of the ad-hoc companies, let's say, how scalable it is.
+
+Hector Palacios:
+I think that all the systems of ad-hoc are basically a snapshot of the previous one. So when you talk about, for example, the UAT system, the tenant, it's a snapshot system like one month ago, and so on. So I think that the one we are working on is a snapshot of the last six months, like the last six, let's say. So in terms of data, I would expect that they are similar. And what we have seen so far is that it's working very fast.
+
+ The CADS communication...
+
+Bastian Osorio:
+Yeah, no, the integration is working fine. Where we have more challenges is in IVP directly, but the integration is working fast. Although we are just visualizing a few materials, when we work with a huge combination of, well, a number of combinations, regardless, you are just visualizing a few combinations, let's say a hundred, if like in the backend that you have, I don't know, more than one million combinations, the system, it starts to get or very slow.
+
+
+
+Hector Palacios:
+But I don't know if that is going to be the case, Regina, because if the IVP and S4HANA are based on HANA technology, shouldn't be similar the performance? Because they are already handling this information, this amount of information on S4HANA, right? So is a risk IVP in that regard?
+
+Kafizova, Regina:
+I would say that we just let's say have to have some kind of assessment. So how many product location combinations or how many combinations do we expect to have in IBP? Yes, as you mentioned, IBP is also based on HANA and like not recently, but I mean we have this functionality that can expand the space, the memory that is used and to the solution based on the usage. So it is scalable, let's say on the fly kind of, but still, yeah, like we should like at least understand a level of this amount.
+
+ For example, if it is in total like product location combinations, it can be like 10 millions or it is like 500 millions.
+
+Bastian Osorio:
+yeah so no no it's not 500 millions it's something it's less than 20 million but I will say more than 10 millions combinations material location sorry let's say location location material whatever is the location storage location or plant so
+
+Kafizova, Regina:
+product product locks uh you expect uh less than three uh 30 million of combination no no let's say 20 million. 20, uh-huh.
+
+Hector Palacios:
+I don't know how much if we include the equipment for the demand part, I don't know how much will change.
+
+Kafizova, Regina:
+Okay, so prod locks around 20 million of combination, meaning that for one product there might be more than So one storage location, right? Yeah, around 10, actually, because we have 1.4 million materials. And around 10 storage location, OK. OK. I think that should be fine but I will check that and here we are talking about only about real products, real materials not maintenance activities as products, right?
+
+
+
+Bastian Osorio:
+There's no maintenance activities here unfortunately.
+
+Kafizova, Regina:
+Okay so this is Based on this.
+
+Bastian Osorio:
+Yeah, the other question next questions. Yeah So there's two things they have that they have Preventive plans like every six months every I don't know 12 months We do have some some of that information, but those plans are not linked directly to with bombs Okay, so it's just a plan but it's empty of material Once the plan approaches, they create the reservation. And with the reservation, they put the materials there.
+
+ So first of all, I'm not a PM expert. So I don't get what is the actual difference between a material plan that happens, let's say, every six months. Is it possible to link the bomb directly to that plan based on maybe historical consumptions? So we're a little bit lost on that. But still, what we know for sure is that the bomb is not well-maintained, and they basically have these plans as reference.
+
+ And once they close to the due date, they create the work order that then triggers the material reservation, and the work order they put, let's say, in some cases they put maintenance order, but in all the cases pull just a general order or corrective order. They're not to, let's say, I don't know. They're not taking this part very seriously. They put any order because for them, it's just consumption.
+
+ For them, what is important is to track what is being consumed. If this was corrective, preventive for there is not that relevant, although we're pushing to make a change in that regard. But in terms of historical data, there is not such a such a distinction.
+
+Hector Palacios:
+Now, it's seemingly that it's such a mess that I don't see the point here of separating corrective from preventive because they are using and distinctly sometimes they are putting a preventive activity as a corrective or as a general activity. And then, well, it's not trustable. Let's say it's not reliable to use this approach, I guess. We don't have the preventive plan for the future. The corrective and preventive history is not correctly segregated.
+
+ So probably here, the only thing that we can do is just to do a normal forecast and base our inventory policies and supply resources based on that. Just for you to know that this is a very probably a common scenario that the teams are not using the systems as expected, right?
+
+Bastian Osorio:
+They are not really mature. Yeah, I've been in contact with other clients and it's the same situation. They don't have the maintenance plan correctly maintained and they use In some cases, I mean, in the best cases, is that they track the order type correctly, but that doesn't mean that the plans exist. That means that when they're creating the order, they put the right order, PM1 or PM4, whatever it is, okay?
+
+ But in terms of plan, this rarely exists. As I said, I've been in contact with a few more customers and it's very, I mean, haven't seen a customer having well-maintained palms.
+
+Hector Palacios:
+It's probably the profile of the people that are working on this because these are very hands-on people that are working on the plant. So I think that whenever they are asking something, they just want to create the work order, but they don't care about the details.
+
+UNKNOWN_SPEAKER:
+The plants.
+
+Bastian Osorio:
+You have the engineers on one side, And then you have the inventory controllers, which are trying to basically to maintain the right levels of stock, but not thinking too much about which activities will be performed in the future, just
+
+Kafizova, Regina:
+to be able to handle their uncertainty coming from the engineers in the different, let's say in the plant factories, wherever. Okay. I see. Thank you, colleagues. Yeah. Actually, when we originally developed our EVP for Moro solution, we actually mainly relied on the best practice for the maintenance planning. So the assumption was that maintenance activities are planned in advance with the correct task list.
+
+ Is my understanding correct? By a bill of material, you mean a task list for a maintenance plan? Yeah. Okay. Yeah. So, and we had an assumption that, yeah, like in the best practices for maintenance planning, for maintenance planning, the task list should be maintained and then they should be assigned to the preventive maintenance plan. And then, you know, it's kind of aligned and done in a best practice way.
+
+ And of course, as you mentioned with the work orders, when they are created, created manually or maybe code from the maintenance plan. Of course they have the right order type so that it can be very easy to distinguish between a corrective maintenance, preventive maintenance, or maybe unforeseen unplanned order. So this was our main assumption here that customer uses the best practice approach for the maintenance planning as well in their PM system.
+
+ And yeah, of course if customer does this then they get a lot of value out of IBP yeah because we can do a lot of things having this data in place and yeah of course the most benefit ad-hoc as well can get if they also use PM maintenance in the best practice approach let's say with the best practice that's correct and that is what we are recommending for sure yeah Reality will be different because we will need to
+
+Hector Palacios:
+react to reality and place the system as they have it today. Exactly. But it is true at the end. If you have something that is certain, your inventory level, the safety stock should be lower. And then that's a much better approach than trying to produce uncertainty.
+
+Bastian Osorio:
+Yes, exactly. Just to give ballpark numbers. They mentioned that the preventive activities account for close to the 80% of their consumption. If we're putting that in the forecast, the increase in the reorder points is going to be huge.
+
+Kafizova, Regina:
+Yes, that's true. But yeah, usually when we also hear this information, we also have other customers. With similar situation. And yeah, they actually followed the same approach. Yeah. So they just considered all orders. Yeah. All work orders from the history. And then I think they didn't even distinguish the order type because no one really did that. They just created orders and that's it. And then they just took all of the history from the past and then just forecast it based on the average weekly demand rate and mean time between failure and all of this kind of stuff.
+
+ This leads us to question number four. And then based on this data, yeah, they calculated, I think they only used reorder point and maximum levels, if I'm not mistaken. And they, didn't go further, they implemented only inventory, so that's why they only calculated inventory levels, so the reorder point and maximum level and that's it, and then they just send this data back into S4HANA and then MRP is executed there.
+
+ Can we stay in that point, Regina?
+
+Hector Palacios:
+Sorry, because the point number two, I think that is what it is, and it's not that we can very sophisticated solution. We will need to work around with this information. But you mentioned the point of the maximum stock that I'm interested because the maximum is the reorder point plus the EOQ, right? So they are very strongly requesting the order size part. And we are saying yes, EOQ. Now, at the same time, I know that's for very intermittent demand, like, you know, consumption is like once a year or twice a year, EOQ approaches may not be the best.
+
+ So we haven't seen the results yet because we are struggling to get the data from them to calculate this in the first place. But I'm quite sure that the EOQ is for continuous data. And then here on the very intermittent environment, that may not be sufficient. So I don't know if there exists something related stock in that case that we can follow. I've been trying to do some research, checking papers, and I'm not finding anything that can tell me this should be the maximum stock when you have an intermittent environment.
+
+ I don't know if you have checked that in our customers, but this is a challenge that I have here.
+
+Kafizova, Regina:
+Actually, I'm just searching for the deck. Yeah, we can calculate EOQ in IBP. But I think it is mainly, as you mentioned, for the cases when the consumption is continuous. So let me just open. Okay, Jack.
+
+Hector Palacios:
+I would think that in those cases I just wouldn't use the maximum level, just use like reorder point. Well, that is another point, Regina, these cases in which the forecast is, sorry, the consumption is so frequent is unlikely to do the forecasting part. So it's going to continue on reorder point. And while in some cases they are requesting the maximum, but I guess that is not necessary.
+
+Kafizova, Regina:
+You can do it just with the reorder point. Yeah, I think that might be an option. And if you have the data from the You can even try to run this like as we delivered the new operator that calculates EOQ and service level. So yeah, you can try to run this operator for EOQ and then check what is there. But yeah, again, I think like EOQ and this maximum inventory really might be more relevant for the more frequent consumption behavior.
+
+ Yeah, it might not be that relevant as the Riora point, for example, yeah.
+
+Bastian Osorio:
+So we're close to the end of the meeting. So of course, we have way more questions. I think it's an interesting conversation.
+
+Kafizova, Regina:
+Would it be possible to schedule some more time? Yeah, yeah, yeah, absolutely. But yeah, maybe I can briefly go to the question number four because, yeah, I can explain it really quick. So this is a key figure that I think goes into the inventory planning that is copied into the inventory planning parameter and I think here if you just scroll down a little bit.
+
+Hector Palacios:
+It's basically the demand rate multiplied by a correction factor.
+
+Kafizova, Regina:
+Exactly, yeah. So this calculated mean time between failure is an output from the forecast automation app. So it is calculated by IBP, yeah, this mean time between failure. And then, so it is considered in the calculation also as a kind of a ratio. And then we have the replenishment lead time, yeah, so the lead time for the parts. Then we just, yeah, do this kind of balancing of the, average weekly demand rate, yeah, so that we balance with this coefficient.
+
+
+
+Hector Palacios:
+Yeah, what I realized is this is very useful when you have like demand, like it's very intermittent or frequent, let's say, for example, once a year, but you receive, let's say, 30. Just in one bunch, in one order, you get 30 at once. And when you use only the demand rate, this can be underestimated because it will calculate during the lead time the demand during the lead time it will be 10 or 15 maybe it will say but the problem is when
+
+Bastian Osorio:
+you receive the demand it's not 15 it's 30 you know so yeah it's clear so when uh can we meet again well this week we we have some time on friday I believe Mm-hmm.
+
+Kafizova, Regina:
+Yeah, sometime Friday You are in European time zone at the moment. Yeah. Yes. Yeah. Mm-hmm. Yeah, then anytime starting from 11 a.m Will work Great. Sounds good.
+
+Bastian Osorio:
+And is it is it good if we schedule for 45 minutes? Yeah, yeah, even even for one hour.
+
+Kafizova, Regina:
+That's fine. Okay, because I also would like to discuss the inventory balance topic co-innovation. Yeah, yeah. Just a quick question before we finish.
+
+Hector Palacios:
+We have some ongoing challenges and what I'm very interested because they have enabled now, so we need to integrate SAP with enable now and also we want to use Joule because they are very eager to have AI. Whatever is AI, they love it. So both things require some integration that is kind of a for us because we are not the experts for there. I mean, we can do the part on the on the IVP side, but usually they are expecting us to know everything, you know.
+
+ So we go to these sessions and I had this experience before and as soon as something is out of my knowledge, they don't know how to do it and we are stuck. We don't know how to progress. So I don't know if it is with you that maybe we can request some expert from SAP support for these two tasks or is something that we need to do with Paola, Soliman?
+
+Kafizova, Regina:
+I don't know who we need to respond to this. Yeah, absolutely. So I think, yes, Soliman can support with finding the SAP IBP consultant. Is this what you mean? No, no, it's not.
+
+Hector Palacios:
+It's more on the, because, for example, for the integration with with Jules, I think that we need BTP knowledge.
+
+Kafizova, Regina:
+Okay. Yeah, sure. I think Solomon should be able to find the right person for this. Yeah, absolutely. Please just write him this request, as I'm also not an expert in the integration with Jules or the BTP topic. Yeah, so I think that would make sense. Yeah. Like question is that with this you know the regulatory requirements regarding the like GNI stuff in Abu Dhabi in Abu Dhabi I think there are some restrictions on the Jew usage but I think our customer success partner Paula is investigating this topic but still please contact so to request this kind of consultants I think he will yeah he will be able to support yeah and in case there are any like MRO related topics and if you have any issues or problems of course contact me or also yeah contact Solomon he will also forward the request to the right people in case any of any questions so if you are stuck please let us know as soon as possible, and then we will try to support as fast as we can.
+
+
+
+UNKNOWN_SPEAKER:
+Great.
+
+Hector Palacios:
+Thank you very much. Good to know.
+
+Bastian Osorio:
+Yeah, sure. We'll speak more on Friday.
+
+Kafizova, Regina:
+Yeah, okay. Talk to you on Friday. Have a nice day.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Bastian Osorio:
+Hector, we need to jump into demand planning the session. I think they moved the session in the morning. Yeah. Let's go to that one.
+
+UNKNOWN_SPEAKER:
+Great.
+
+Hector Palacios:
+Thank you very much.
+
+Kafizova, Regina:
+Okay. See you. Bye.
+
+Kafizova, Regina:
+Bye!
+
