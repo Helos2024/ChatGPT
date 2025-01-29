@@ -1,0 +1,185 @@
+UNKNOWN_SPEAKER:
+Hello, good morning. Morning Paula, how are you doing? Fine, you? Good, good.
+
+ROSSI, PAOLA:
+Let's wait for the other. To join.
+
+UNKNOWN_SPEAKER:
+Joshua.
+
+Nishant Keloth (Borouge):
+Good morning, everybody. Good morning.
+
+Kunal Sheth (ADNOC Group D&CS):
+I think initial parallel call is also going on, so let us. Yeah, yeah, yeah, good discussion. So here for the Buruj, the development key was requested by Rinaldo. OK, yeah, that is one is pending and other is the IBP add-on which we need to perform on the Buruj side.
+
+Nishant Keloth (Borouge):
+OK, so is there a mail? In this regard.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, and an email to Anandha.
+
+Nishant Keloth (Borouge):
+OK, Anandha is here in the call. Yeah.
+
+Anandha Krishnan (Borouge):
+I guess this is the project development access because if the next stage right after completing the sandbox, so the first thing is if we have all the necessary approvals in place, that's one thing. Have it then yes we need to create a request to the basis team or security team and you need to tell us you know what are the access that is required because sandbox I just told them give them whatever they want can I go ahead and assign the same roles or similar access and project development you need to give those details OK.
+
+
+
+Nishant Keloth (Borouge):
+Fine, so we can actually give the same access that that they have in AdNoc system, right? I love. So we can share the same template that they gave in AdNoc. We can provision them the same request as access here as well, isn't it? Yes, we can. Yes, OK. You need a request for this from while or how does it go?
+
+Anandha Krishnan (Borouge):
+I mean usually I believe I don't know while once it's a blanket approval right for the project team like they can yes onboard into our systems. So once you have that you can create the request saying you know please create so and so users in the project development system with so and so rules and then the security team will pick up the request.
+
+UNKNOWN_SPEAKER:
+request.
+
+Nishant Keloth (Borouge):
+OK, I'm just looking for that mail. From Rinaldo.
+
+Anandha Krishnan (Borouge):
+I think this morning also there was an email if I'm not wrong.
+
+UNKNOWN_SPEAKER:
+From Rinaldo.
+
+Anandha Krishnan (Borouge):
+This morning it was from Rahul. He forwarded the email.
+
+Nishant Keloth (Borouge):
+Yeah, her request you said. Project okay fine so Rahul I'll take this mail and I will follow up with vile and we'll do the needful so sure sure okay and I don't think now you guys have a direct VPN for gurus right yeah so
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah VDI for me it is working so we have created a mass request to enable for the entire team okay so that is with whom I think Tara has raised a request. I don't know the status currently.
+
+Nishant Keloth (Borouge):
+OK, so yours was a trial and it's working fine, right?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, it is perfectly working fine for me. So on the same line team has raised that.
+
+Nishant Keloth (Borouge):
+OK, perfect so that part is resolved so we don't have any firewall stuff now. So what we need is just now what we need now is access to development landscape. Fine, I will take this up with while and we'll do whatever needed here. Whether it's a ticket or email approval, take care of it, not an issue.
+
+Kunal Sheth (ADNOC Group D&CS):
+Right, so there are three points to witness and one is a development access. Second is transport request which we need to add whatever changes TR template.
+
+Nishant Keloth (Borouge):
+So I think Khalid was mentioning about charm. Anandha, we don't have charm. We don't use charm functionality right as of now.
+
+Anandha Krishnan (Borouge):
+No, we don't have guys. So it will be kind of a manual import. But we do have a project tracker and Nishant can share all those details. Nishant, this morning you might have received an email from email from Voil. Voil, yes. Yeah, but I just remembered it's also another thing. Apologies for this, I don't know, kind of a hiccup. We are also refreshing our project development system. So there is another email from Ed on this to best emission.
+
+ So this activity is intended to complete by 5th and So is there any impact that you guys are having on this? It is in this email last week. I got it.
+
+Nishant Keloth (Borouge):
+I got it. When are we planning to configure the dev? On our landscape.
+
+Anandha Krishnan (Borouge):
+So this is a refresh activity, right?
+
+Nishant Keloth (Borouge):
+Like you know it's planned to complete by 5th and yeah, no, I'm asking for IBP config. When are we expecting this? What's the timeline in depth?
+
+Kunal Sheth (ADNOC Group D&CS):
+Sagar, can you?
+
+UNKNOWN_SPEAKER:
+Answer that. Timeline.
+
+Nishant Keloth (Borouge):
+OK, no, but yeah, I mean, currently I'm not aware I can check and I will get I can get it because see if it then it's fine, but before that means you know when you refresh the whole stuff will go out. It's also good for the project guys.
+
+Anandha Krishnan (Borouge):
+I mean, in my opinion, right? Like you will have better data. Because the project quality and the next thing is project and even if there is, I mean, I'm not expecting it, a delay in the sense we intend to complete by 15th but even if there is a delay on your side by a few days I request you to kind of manage it you know by some means because it will greatly help the project.
+
+Nishant Keloth (Borouge):
+Okay I will let you know like when we are planning to perform the And then we can discuss further because even if you have user access now in Dev, I mean whatever you do will get. You know, we'll get refreshed out. Yeah, yeah, so better. I think in that case just look at the timeline. Then we will take it up accordingly. But let me know today itself if there is any other. If it's it, it has a huge impact.
+
+ Then another we don't. We will have to take it up with Eddie to figure out how this refresh will work.
+
+Sagar Vora (ADNOC Group D&CS):
+But that will be data refresh like right?
+
+Anandha Krishnan (Borouge):
+we do the installation IBP at our installation and configuration so that should not pipe out right it will be gone it will be gone because it is uh we are copying from the production to project development it will be a system copy right yeah okay then in that case it would be better if we perform after 10th feb or else it will be a rework I will also see if we can release it even before 5th 10th guys because um I mean it's it's just the S4 system, right?
+
+ 15th is the date that we have for all three systems or all project development system. But S4 system if we can release well in advance that might also help you look at your timeline.
+
+Nishant Keloth (Borouge):
+How is it falling and then we can take a call? I think we can. I think another will be more generous if we can release before time in case if it's that urgent. Your timeline first and let us know.
+
+Sagar Vora (ADNOC Group D&CS):
+OK, OK, I will let you know guys.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Nishant Keloth (Borouge):
+And in the meantime I will get the internal approvals required for this access and the moment the system is refreshed you can have access also.
+
+UNKNOWN_SPEAKER:
+Sure sure Nishant.
+
+Kunal Sheth (ADNOC Group D&CS):
+Nishant as we have two parallel landscape, one is Baudev and one is normal dev.
+
+Anandha Krishnan (Borouge):
+so currently we will get an access to bowdo right no I mean that's the change management process we will be starting with the project dev not about the project dev and project quality followed by bowdo quality and obviously production I'm not sure but yeah that's the process okay okay so so we'll get the project development.
+
+Kunal Sheth (ADNOC Group D&CS):
+And based on that, we'll need to transfer to the audio. And Sagar, the activity which you need to perform IBP add-on on the Guru's system, so that we will do it once we get an access, right? But I think we cannot perform that.
+
+Sagar Vora (ADNOC Group D&CS):
+I think, I'm not sure, like for the first time, how it was done, I was not there. But we will require a basis because we will not have all the authorization.
+
+Anandha Krishnan (Borouge):
+OK, OK. It has to be done. We did it in sandbox. The same way we will do it in the project dev as well, subsequent systems as well.
+
+Kunal Sheth (ADNOC Group D&CS):
+Sure, sure. So let me check the timeline internally, and then Nishant, we will get back to you on that.
+
+UNKNOWN_SPEAKER:
+No problem.
+
+Kunal Sheth (ADNOC Group D&CS):
+Perfect.
+
+UNKNOWN_SPEAKER:
+Yeah, by today itself.
+
+Nishant Keloth (Borouge):
+So anything else from Buruj, or we can get back to the other call?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, I think that is all from our side.
+
+UNKNOWN_SPEAKER:
+Khalid, anything else from your side? No, no. OK.
+
+ROSSI, PAOLA:
+Sorry, I have some questions regarding the SAP incident that raised. Anything you need from me as an help because I understood that you are checking the firewall configuration for one ticket. I don't know if you have already feedback about that.
+
+Sagar Vora (ADNOC Group D&CS):
+Yes Paola, so I think we have raised a new RTIM and currently it's in risk and compliance so once it is approved then we will whitelist IBP-URN in the proxy and then we can test. Once it is successful, then we will close the ticket.
+
+ROSSI, PAOLA:
+So as of now, I don't think we need any help from SAP. So yeah. OK. Perfect for me. Let me know when you can. No, no, no. Let me know when you can test it. So in case, just want to be sure everything is working Sure, I will update you once like we proceed with that activity.
+
+Sagar Vora (ADNOC Group D&CS):
+OK, thank you.
+
+UNKNOWN_SPEAKER:
+Thanks, thanks Paula.
+
+Kunal Sheth (ADNOC Group D&CS):
+Thank you everyone.
+
+Anandha Krishnan (Borouge):
+Thank you bye. Thank you.
+
+UNKNOWN_SPEAKER:
+Yeah. You Bye!
+
