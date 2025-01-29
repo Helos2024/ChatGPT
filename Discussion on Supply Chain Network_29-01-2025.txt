@@ -1,0 +1,938 @@
+Vivekanand Gajula:
+Bye.
+
+UNKNOWN_SPEAKER:
+Hello, all. Good evening. Hi, everyone. Hi, everyone. Hello, Cushba. Hello.
+
+Vivekanand Gajula:
+you.
+
+Vivekanand Gajula:
+If you don't mind, can you please check with Rahul if he's going to join?
+
+UNKNOWN_SPEAKER:
+Yeah, he's here.
+
+Patel, Rahul:
+If you don't mind, can you please check with Rahul if he's going to join? Yeah, he's here. You Hello, can you hear me? Sorry, we had ad-hoc team members in the meeting room, so I had to talk to them. Everyone is here now. I'm not able to hear. Let me see what's there. So let's try. I cannot hear my voice. I think my speakers are off.
+
+UNKNOWN_SPEAKER:
+Can you speak now? Yeah.
+
+Patel, Rahul:
+Can you hear? Yes. Change my device to bluetooth all right uh Hector Palacios uh just one uh point I would like to discuss before we get into the conversation about supply network. Today, you were there in the call, right, with Asma. So, essentially what we are doing is... So, Asma is the business project manager. So, the challenges we are facing on MRO in terms of approvals between IBPS for HANA, the gaps in the data, the practices which will impact the utilization of the tool.
+
+ We've highlighted all those gaps with Asma and have asked her guidance on how we proceed so that it can become an input for us. Now, today I will send that email documenting all the discussions so that we have the clear understanding of process and So maybe after the hurdle. What I would request is to quickly Bastian Osorio have a 15 minute 30 minutes call to go through the process. What I've discussed.
+
+ It's not different than what we have discussed, but I'm just I just want to make sure that before I send it to asthma. All of us, including both of you are on same page with us.
+
+Hector Palacios:
+Alright. OK.
+
+Patel, Rahul:
+me see yes give me one second to check after her okay it's good all right uh one point which has come as an action item like there are two points which has come as action item on us based upon this so adnog needs data information on some of the points to take decision uh such as the split between the consumption between corrective preventive at a total level. Now while we are working on interface I'm just letting you know that this is something from a data analysis perspective at a corrective preventive or I will share that details on what level they are expecting data analysis so that they can take decisions in terms of how they would like to proceed and the strategy of how they would like to change.
+
+ So that's one thing Second important thing conversation came is we've agreed like AdNoc has agreed with us that they will remove the MR approval process on S4 HANA. And the approval can only be done in IBP. Which means that if approvals of demand has to happen in IBP, if the approval of demand has to happen in IBP, What they are asking us to check is that today the approval process is backed by the budget allocation, which means a certain agency is approving a certain material reservation.
+
+ Then internally, the S4HANA processes that that material reservation blocks the budget allocation. With that value of the reservation. Now for sure I've explained that IBP is not a transaction system which means the way the transactions are executing in S4ANA you will not have that liberty in IBP but they still want us to check that whenever there is a forecast and if we're talking about a set of continuous demand material where the planning would be forecast based and not reorder plant based.
+
+ If it is a forecast based planning, then they want IBP to block the budget on S4 HANA site, which means from demand. I don't know how it can happen, whether it can happen or not, but what they're expecting is if someone approves demand in IBP, the equivalent value of the materials approved, the respective cost center budget should get blocked. That is what they are expecting as a… So, you are consuming the budget, basically.
+
+
+
+Hector Palacios:
+Yes, yes.
+
+Patel, Rahul:
+If you are approving the demand, so the ownership not only is in IBP, which is like only system-based approval, but you are locking the budget as well. So, if tomorrow, if the budget is locked for this demand which means it cannot be a situation where you're procuring something but there is no budget to procurement so if there is no budget at which level happens this at cost so per equipment uh that's something we'll have to analyze but maybe so so generally we'll have to understand the cost center hierarchy which is something Kunal can extract from IB S4 HANA to understand what is the cost central hierarchy but essentially in S4 HANA the budgets are allocated to cost center and the cost centers have a budget value which means if for every demand element we will have to identify the corresponding cost center it can be from the if the material is based upon the equipment, or it can be from the plant level hierarchy.
+
+ So we'll have to figure that out. But essentially, if there is a cost center available for every material, then the request is to block the cost center with that equivalent cost so that there is a commitment from the end user community that, yes, I'm approving the budget, and when I'm approving the demand, I'm blocking the budget so that when the procurement team procures the material, they don't have concern regarding availability of budget to buy the material.
+
+ Yeah, but supply planning, yeah, it's a necessary step before supply planning, but then the blocking happens in demand process.
+
+Hector Palacios:
+What happens if I'm consuming the whole budget and then I have another reservation or forecast on IVP that require more money? What happens in that case? Is that you cannot do it? How will I decide what is a good allocation and what is not a good allocation of the budget at the end? Because if you consume it consume everything and then they later cancel in.
+
+Patel, Rahul:
+So what we can do is, Hector, if you can confirm that if this is something possible between IBP and S4 HANA, which means IBP can allocate or restrict the budget in S4 HANA or block the budget in S4 HANA, then probably we can have a detailed conversation around this point to understand the exact design, what happens if this is the scenario, what is the cost, and all those details. At this point of time the time we had I could only take note of this requirement because they are really pushing for it and one of the reason why they want to push for it is if in supply planning for any reason I've procured the material and they are not consuming the material as per the allocated then they would like to charge back the cost of that to that respective cost center.
+
+
+
+Hector Palacios:
+Do you know which part of the S4HANA is this information so we can analyze with Sagar and Reinaldo if this can be done?
+
+Patel, Rahul:
+This is something related to cost center budgeting. So this is a FICO module of S4HANA where financial In Kunal, it would be FI, right? The cost center, sorry, it will be CO. The cost centers would be CO. So under CO process, there is a monthly and annual budgeting process. And what they confirmed is they have budget plan for five years, which means in S4 HANA, they have budgets against cost center for next five years.
+
+ What they are expecting is that to have this visibility in terms of budget for next five years and blocking the budget year on year so that they have a clear understanding. So probably for future perspective the budget if it is exhausting it is an indicator but for the current year if the budget is exhausting or you're trying to consume more than budget then someone has to change or revise the budget.
+
+ So probably it becomes an alert but for sure we'll need to have a detailed discussion if we are to execute an IPP.
+
+Hector Palacios:
+Okay, but let's do the following. Anyway, I will need to have the table so we can assign this to Sagar right now to say because otherwise I know how he will ask me because he can know but he wants to confirm, right? Yeah, he wants to block the budget in S4. Yeah, but what is the table at the end? What is the table that we can use to check because that they can deep dive and check, OK, this information, yes, you can update it, we can iterate, I don't know.
+
+
+
+Patel, Rahul:
+I'll check with Khalid as well because this is something FICO related activity and most of us are like from a MMPP or procurement perspective. So we'll check if this is something we can provide or I'll ask Khalid to help If there is an internal FI consultant who can help us with identifying the correct tables, then I'll get it from him.
+
+Sheth, Kunal:
+OK. Right, one input from my side. This is more of a controlling, so it is a part of cost center accounting in S4 HANA. So maybe we need an expert from controlling area. So yeah, we do have a number. Yeah. So we also need to talk with Namani.
+
+Patel, Rahul:
+Yes, so but before we talk to we need to talk to Khalid and get initial evaluation done by Hector saying is it possible if it is possible it will need enhancement in S4 on a site which is CEO specific enhancement and we'll also need to involve a CEO consultant for this enhancement.
+
+Sheth, Kunal:
+Correct and Rahul the budget part you're mentioning for next five years which they are creating are they using any other tool or they are doing in S4 on a We don't know so that's why we need their CEO person
+
+Patel, Rahul:
+to tell what is happening and then we will talk to Khalid whether their CEO consultant will manage or you want CEO consultant from us. Now this is something which becomes a new additional effort from our side because as part of this project we I don't think we envisage any CO related activity. So one step at a time, I will talk to Khalid and get some CO related information. Based upon this information, Hector and Bastian, if you can confirm whether it is possible to block or allocate a budget based upon the approval in S4 HANA, based on approval in IBP in S4 HANA.
+
+ And if it is possible, then we'll take up next level who will do how we how we will do it all right okay let's go with the supply chain discussion then yeah all right yeah uh we know we wait
+
+Hector Palacios:
+for it uh like the forum is open for you uh and bastian uh are you able to meet after the huddle because rahul was uh requesting some time after the how to check the about planning process discussion based on the new inputs sure we can move the the daily later right we can move it or cancel it I think that this is high priority because yeah yeah oh we can put it put the the daily after this no
+
+Bastian Osorio:
+I think it's too late okay um yeah yeah sure I will move it for one hour although there's like I don't know yeah okay then let's go with supply chain network discussion uh how we proceed uh it's on our
+
+Vivekanand Gajula:
+side Vivek or yeah so yesterday you know I connected with Rahul okay and there are you know some open questions you know that are evolving you know around the supply chain network okay so so um So Hector and Bastian, you know, as of today, we don't have any clear cut, you know, rules to define, you know, the supply chain network and IDP. So that's why, you know, Rahul suggested, you know, to schedule a meeting where probably, you know, Khushboo can help us out, you know, in defining those rules, you know.
+
+
+
+Hector Palacios:
+Okay, do you have an Excel right there?
+
+Vivekanand Gajula:
+Yeah, so actually Rahul has shared shared one Excel with us, which basically tells us for which AGCs the supply planning happens at what level. So we'll continue with the same Excel, and then probably we'll try to jot down the rules that can be used for creating supply chain network, because at the end of the day, we need to communicate this to the technical team. I mean the CIDS team so that they are able you know to extract that information and get it into IVP.
+
+
+
+Hector Palacios:
+Okay let's do the following because in our side we need to be clear with the questions we need to get from AdNoc. So can you open that file that Rahul has and let's put a table with the questions. So be very specific so GPMG team can help us with the specific questions.
+
+UNKNOWN_SPEAKER:
+questions. Yeah, I'm sharing that Excel file.
+
+Vivekanand Gajula:
+Let me know once you all see it. We can see it. Yeah, so so there are, you know, three tabs, you know, and the supply chain network file. If you look at this supply chain network one, this list sounds, you know, all the AGCs, you know, where the supply planning happens, you know, at the SLOC level. OK. And in supply network too, you have all those AGCs where the supply planning happens at the plant level.
+
+ And then you have some inter and intra company supply planning process. So now let's take the simple one, which is the plant level supply planning. So now the question is, whatever internal movements that are happening between ad-hoc locations, how do we create the lanes you know between them that is uh one question and the other question is if these plants you know are taking uh materials you know from uh the vendors right uh so how do we create a lane you know between uh vendors you know and the plants okay uh because let's put a let's put a table there Vivek can you
+
+Hector Palacios:
+create a table and let's put a because then this like you know we have different aspects right so one is from vendor to plant. Between storage location, intercompany, we have many cases.
+
+Vivekanand Gajula:
+Plant to plant you have. Then vendor to plant you have. Between storage locations.
+
+Patel, Rahul:
+To SLOC from plant to plant.
+
+Hector Palacios:
+But the SLOC movements Rahul are between storage location is the same plant. Or between storage location on different plants? Same plant, same plant. So SLOC is an MRP area within same plant, right? But these are different locations in reality. Yeah, these are physically different.
+
+Patel, Rahul:
+It's not the same point in the map. Yes, it's not at the same point on the map, something like a rig, right? You have physical rig one, rig two. They are different. But in SAP, they are storage locations.
+
+Hector Palacios:
+That's why they have created mrp area for it all right all right this is not required no this is not required no this is vendor to plant there is one specific storage location I think there is a mini store that is receiving from the vendor if I'm correct correct but that is a slope to a slope only no yeah and what about the between what plant to plant you already put it okay it's fine within within AGC and outside AGC and this is intra company then you have enter company put it in in parenthesis cross yeah exactly cross AGC within AGC okay so so usually this information is something like we can get from historical data or from massive data that we have on sulhana for example vendor to plant that is info records right and so in just one point do you know like do you know whether they have info records so so let's let's take one
+
+Patel, Rahul:
+by one now vendor to plant if we understand there are different processes right when from vendor to plant so you have pr you have call of agreement you have repeat orders right so let's highlight the documents for like yes you have uh you have a call of uh you have repeat orders yeah this is okay can you place it in another column so we can do the same for OK. So let's take external scenario for us because it's the easiest one.
+
+
+
+Vivekanand Gajula:
+And then and then PR. OK. But PR without any reference to vendor right. Tendering PR with tendering right.
+
+Hector Palacios:
+pr into bracket tendering and then pr into bracket ltpa for the limit okay so another thing that we need to understand because let's say let's expand the point uh in ltpa we can have multi-source so I guess if we go to the ltpa agreements we can get that information as well so in ltpa you can So, you can have more than one. For the same material, you say you have different LTPAs.
+
+Patel, Rahul:
+LTPAs are at purchasing org level. So, this is where this E, what was that E, what was the word E? E-Marketplace. E-Marketplace. So, with LTP, the E-Marketplace concept comes in. So, for a material, so the general high hierarchy of purchasing is that you have a purchasing org and a purchasing org is assigned to a plant. Now within a company code you can have one purchasing org assigned to all the plants.
+
+ But what AdNoc has is a centralized purchasing org which essentially is at group AdNoc level which is beyond company group company. So when the ltpa is created you have if it is between different purchase orgs the priority is given to the centralized purchase org if there is no centralized purchase org ltpa then the priority is given to agc level purchase org so there are this is the priority between multiple ltpas now khushbu When it is LTPA, you already have a table level confirmation for a material, right?
+
+ For a material, what are different agreement types? It's a special document type for purchasing document type in SAP S4 HANA, right? So you can help us with this document, help team with the document type for respective LTPAs, correct?
+
+Mudit, Khushboo (UAE):
+Yeah.
+
+Hector Palacios:
+Document types can be derived. Studies that you happen to be at different levels so you can have a little to be at no level and then you can have a specific by AGC yes for the same material for the same material correct and I
+
+Patel, Rahul:
+guess that priorities for the specific if we don't have it the global one yeah right is global if not global then specific okay Alright, now we can say that we have purchasing document type for each and every. This. Different documents right now. Any question on LTPA? Khusboo will help us with the This can be a working file, so I hope you are on the shared file which we have on. Is it? So what I would request is update this tab.
+
+ Once we have done this, you can update the tab on the shared file so that the specific document types in SAP can be be added by Khusbu here for each.
+
+UNKNOWN_SPEAKER:
+Agreement alright. OK.
+
+Patel, Rahul:
+So any question on LTP?
+
+Vivekanand Gajula:
+One question that we have is if there are multiple LTPs right then then I think the requirement was to use you know quotas right so so what is going to be the ratio you know for each is it going to be equally splitted or or they have any preference you know.
+
+Patel, Rahul:
+Yeah let's put this as an open item right so if so basically when you are seeing multiple LTPs at same level because they have said priority first global but if at global if you have more than one LTP then probably will need to ask them the quota so you can put quota as open item and if you have the live learning we have quota and we can have priority so the priority means let's get always everything from this
+
+Hector Palacios:
+one unless it's not able to deliver but then we can go to the next one cascading so let's put the two options because I think that uh in the vrd someone was mentioning something related to the price of quality that we have Yeah, so let's understand.
+
+Patel, Rahul:
+So priority matrix as well as quota matrix. Let's put both in our supply planning session so that we can take this feedback. Right now, from an agreement perspective, the only priority I'm aware of is this priority at NOC level. But then if there are multiple agreements then if there is another priority to be incorporated, then we can take that input in the supply planning validation workshops.
+
+UNKNOWN_SPEAKER:
+Okay. All right.
+
+Patel, Rahul:
+Anything else on LTPA?
+
+Hector Palacios:
+Are we clear on the tables where we can find this information on LTPA? Is something standard?
+
+Patel, Rahul:
+Yes, so that's what I've said. If Vivek can move this to the shared file, then Khushbu can help us identify the tables correct tables and the and the fields here and that ltpa ltpa will have material vendor as well as location right yes so the table will have so we will help you with the table and the critical uh fields like the document type will will give that input so that for that document type you will get to know probably we can also share the sample extract from scp so that or a material or for a set of material so that you can evaluate it would have generally there will be a receiving plant and there will be a so when it is from vendor you have a receiving plant who is supposed to receive it and you have the purchase org so purchase org will be allocated to agc and the receiving plant would be the plant under that agc because so there is no the material plant allocation in terms of agreement, but the material plant allocation in terms of receiving plant, correct?
+
+
+
+Vivekanand Gajula:
+Yeah, receiving plant only I was referring to. Because that is what we need, right?
+
+Patel, Rahul:
+So so let's do the detailed conversation once Khusbu is able to give the details and you can talk about it. Let's go through the points one by one for to confirm you will have the details of the table.
+
+Hector Palacios:
+standard sap table and we'll provide you the details of the tables and the fields available in the table all right uh we also we can you are the column for the source let's leave it in blank but you use
+
+Vivekanand Gajula:
+Our column so then pushbook and sap source sap source put it sap source uh and one more thing you know uh I don't know if uh maybe uh you know, that information also should be part of LTPA. Should be having some validity as well, right? Yes. Probably that also needs to be taken into consideration, I guess.
+
+Patel, Rahul:
+So you mentioned all the points you want to check from an LTPA perspective. And once the source table is available, all the fields can be verified, what all things are available. This is all standard, like we are not talking about anything. Yeah, so it's all standard.
+
+Patel, Rahul:
+And anyway, this is one of the requirements because we need to have the LTP end date. And if there is a requirement going beyond LTP end date, then we need to raise LTP APR. So the fourth element, LTP APR, essentially depends upon the validity of LTP in terms of quantity or the date, whichever expires first.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Patel, Rahul:
+Alright, so we've talked about LTP and probably you can bring LTP, LTP, PR as a second item because both of them are related. If LTP is exhausted.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+If the material has LTP A And if if the LTP A quantity or the value is exhausted.
+
+UNKNOWN_SPEAKER:
+Quantity value or time.
+
+Patel, Rahul:
+Quantity Quantity or value or value. Or validity. Or validity is expiring.
+
+UNKNOWN_SPEAKER:
+Then trigger LTPAPR.
+
+Patel, Rahul:
+So here what we are saying is your LTPAPR is exhausting. Now you need a new LTPAPR and for the new LTPAPR this LTPAPR is triggered. But if you trigger LTPAPR then you don't need to trigger PR for all the periods right because LTPA has five years generally three to five years of or two years depending on the contract so suppose if you are from a time series perspective by suppose the current LTPA is exhausting say December 2025 then every forecast beyond December 2025 should have a new LTPA but we can say that in January 2025 you need to trigger a new LTPA should be there.
+
+ So PR can be triggered maybe two or three months before the actual LTPA is required so that they can make sure that the new LTPA is created in time. That would be the expectation here when it is triggering LTPA PR.
+
+Hector Palacios:
+So one PR for covering future period. So depending on the right one or the other.
+
+Vivekanand Gajula:
+Yeah.
+
+Hector Palacios:
+is this point yeah we are going to generate the pr so we can put a any kind of indicator there because if we are going to bring the information then we can segment it yeah there is a separate pr type which is which is specifically ltp aptr not that was about planning vivek you you will generate the transport receipts that's it but then after that we need to classify based on the information we have before sending the information back to HANA.
+
+
+
+Patel, Rahul:
+Yes, but this information should be part of the supply planning evaluation that users should be aware that okay, the current LTP is exhausting by December 2025 and someone has to make sure that the new LTP has to come in place by January 2025 and probably trigger for that is say october 2025 right that information should be available so that because the LTPAPR will also go through rendering so there will be a different lead time for creating a new
+
+Vivekanand Gajula:
+Based upon the rendering process right so do you see any impossibility or any issue no no what my question is to trigger this LTPAPR right what is the source I can what the demand signal?
+
+Hector Palacios:
+The only point is that the LTPA they have some days of validity so you will know that until January 2026 you can create based on the same vendor but after that there is no LTPA in place it's not really finished so knowing that information you can classify your transportation receipts and you can say, okay, these ones are with the old agreement and these new ones in the future, they will need a new agreement.
+
+ So that is information the team is going to need in a report, in an alert or something like that. And when we integrate this back into S4HANA, the team will need to, integration team, will need to place a flag for this. If we integrate back, I'm not sure, what is the right step of what we are talking about?
+
+Vivekanand Gajula:
+If the LTPA itself is expiring then the new PR that IBP would create it will switch to tendering vendor no?
+
+Hector Palacios:
+Yeah but let's first check because well maybe this also can happen in the short term right so if you have for example something that in March is finishing the LTPA agreement then the PR that you are generating in April, what I understand here is not at entry. It's like, no, let's place another LGPA agreement for that. Rahul can expand when he comes back. OK. In the meantime, while we don't have Rahul here for LGPA.
+
+ I'm back. I'm back. OK. The question, Rahul, is that imagine that LGPA agreement finish on March this just in two months so we generate before March we generate the normal PRs but what happened after is when you need you say that we need to generate the LGPAPR.
+
+Patel, Rahul:
+What is the difference of that versus the tendering? So basically you have different what we call document type in SAP so you have a non PR is basically one-time procurement or and so essentially when it is tendering you don't know the vendor. In LTPA you know the vendor but you might you don't your document is exhausting which means you need to extend the LTPA period or you need to create a new LTPA and it may be with the same vendor or when they create a new LTPA you'll get a new vendor so which means that the the changes to a new vendor based on this LTPA.
+
+ Whereas when it is PR, this is generally used for one time procurement where the value of the procurement is generally high, so they don't rely on existing vendors. They ask. They can go to existing vendor or they can ask new vendor to provide fresh prices and every time the procurement happens, it starts with like quotation price and then procurement.
+
+Hector Palacios:
+Okay, but then in the case that we have on April, for example, now the LGPA is expired. You need a quantity on April. We need to plan for that. We assign the same LGPA vendor that we had before?
+
+Patel, Rahul:
+Yes, probably we should assign and highlight that, okay, we have assigned to the same vendor, but be aware that this may not get fulfilled because LGPA is exhausting.
+
+Hector Palacios:
+And we can create the report. That's fine. But then when we create 2S for HANA do we need to have another classification for the APR or will be the same LTP APR or whatever you will not you will you will trigger PR only till the point you
+
+Patel, Rahul:
+have right visibility so essentially that data would only remain on IBP side the supply plan okay you will not send that feature requirement first of all first of all IBP won't create any PR only because that LTP itself you
+
+Vivekanand Gajula:
+know has expired OK, so yeah, so you won't be able to create, but we should have an alert. You will know how it will create. See if your validity is till March, so till March only it will create.
+
+Patel, Rahul:
+Why it will create something in April? Yeah, so basically you will trigger one PR. You will not create LTPA. There are two separate things. You already have LTPA in the existing LTPA. You are creating additional material request. So that's what is happening in LTPA. But if the LTPA gets exhaust, in the first period after it gets exhaust, you will trigger LTPA PR, but the PR will remain there as it is.
+
+ You will not create future, the PR essentially, the way I see is that the quantities will be there in IVP. They can understand what should be the new PR contract value like but then you you will not create any purchase element in S4 HANA because there's nothing to create there's only one element to create which is PR but then unless the PR is converted into a contract we cannot create additional proposal in S4 HANA so that's where the process stops from IBP to S4 HANA.
+
+ Does that make sense like is it making sense for other side.
+
+UNKNOWN_SPEAKER:
+Yeah, I think so.
+
+Hector Palacios:
+At the end, we only need to classify it differently. For UVVEC, it's the same transportation receipt. You don't care about the expired date. You need to say to them, we need a PR for that. The agreement is another topic. So for the ones the agreement okay that's perfect it's green the ones are outside the agreement we need to place an alert there and we need to tell them and bring into visibility that we need this it should be
+
+Patel, Rahul:
+an LTPA but it's expired yeah one more we don't send that to us for HANA yes we don't send one more point we need to get this clarification from ADNOC is that currently they do not have a long term planning process. Everything is based upon the work order type, right? So you will have only one instance of requirement. What is there in work order? So we will need to have this confirmation whether they want IBP to create PR PO for all future periods or they want to limit only from an execution perspective based upon the lead time.
+
+ The point I'm taking is we have five years visibility of forecast. Will we create LTP if the LTP is available will create the schedule line for five years? I don't think so. We may only create only for next three four months so that's something from a solution perspective we need to have this flexibility to allow them to control how much of the forecast gets or how much of the requirement gets converted into a SAP receipt element.
+
+
+
+Hector Palacios:
+Okay yeah we need to have that discussion so we can figure the DR for something that we are receiving in 10 months, but we need to do it right. So in the next three months horizon we need to decide which ones are going to trigger or maybe four months horizon they need to tell us.
+
+Patel, Rahul:
+So they need to tell us the horizon and they need to tell us which all will get triggered, but from a solution perspective we need to give this ability for user to give this input so that it gets converted into an action on S4 side.
+
+Hector Palacios:
+Yeah and for tendering we also need to consider this additional time so when we okay you need to review it now so they have enough time for doing data entering and then receiving what they need correct correct all right we clear on ltp and ltpa pr yeah let me check the comment if the material has ltpa and if the quantity or value validity expiring then trigger ltpa pr okay just to put there a Vivek that the ltpa pr is not integrated back to S4 HANA just for alert purposes?
+
+
+
+Patel, Rahul:
+I think we'll have to integrate LTPAPR to S4 HANA because there is a separate PR type. Now, the trigger probably can be manual. By default, we should not trigger it because one PR will cover the entire future period, right?
+
+Hector Palacios:
+Okay, so can we put Yeah, yeah, yeah. So let's put a question on how to identify the LTP API. What is the order type or the whatever plug you need to place.
+
+Patel, Rahul:
+Yeah, so that can be input from us from our side.
+
+Hector Palacios:
+Can you add a column Vivek to put like, how can we call this flag to say this is a tendering, this is a LGPA, this is LGPA PR.
+
+Patel, Rahul:
+Document type. Purchasing document type.
+
+Hector Palacios:
+Can you create another column, Vivek, so we can put the document type and the team can help us to also understand that for the developing.
+
+Patel, Rahul:
+They won't even do it in S4 now, they do it in alpha. Which gets converted to Arima and then you get kind of once you finalized your vendor then the PR gets converted to PO. But essentially it starts with the PR. Yeah, so you can capture PR, but you don't have a document for tendering as such. Yeah, but so we from a IP perspective. It's a standard of PR. Document type is standard PR.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Sheth, Kunal:
+Now, which company is having a maximum metal moment? Is it a sour guess? I don't know why this question like, No, why I'm asking because if the maximum moment is going within that company, then we can use as a reference to extract the data because in one of the discussions, some of mentioned that sour gas is having the key company where we have this metal movement. Of course, within that company we will be able to find all the scenario.
+
+
+
+Patel, Rahul:
+So when you say movement within storage location within cloud and all those things. Correct, correct. I don't think I have that input. Sour grass, let's understand from AdNoc on what kind of reference Because I was just referring the sour gas plant 21000 that is the company code.
+
+Sheth, Kunal:
+More than 8 document types they are using in S4 HANA.
+
+Patel, Rahul:
+So I think the document type would be a client level configuration, right?
+
+Sheth, Kunal:
+Yeah, it's a client level but during the creation they are also entering the company code whenever like PO creation.
+
+Patel, Rahul:
+just referring that yeah for sure because the purchase log is assigned to company code which means you will need a company because ultimately the financials are at a company code level but then the document type is at client level
+
+Sheth, Kunal:
+right or it is you're talking about document type of purchasing documents no no I am just referring the this one second ekko table where we have a whenever we enter the We have more than 8 to 10 document types
+
+Patel, Rahul:
+are used. So they have a separate document only right between STPOPO all those documents types.
+
+Mudit, Khushboo (UAE):
+Yeah, there are two things. One is document category. The other is document type. Document category is what you use to differentiate between LTP or contracts, purchase requisitions, purchase orders and so on. And document type is within purchase order. You may have five different document types for example. Yeah, standard purchase orders, stock transport orders, subcontracting, purchase orders, consignment purchase orders.
+
+ So this is.
+
+Sheth, Kunal:
+If we take one or two company where we have maximum at this moment procurement or maybe STR, STO. Yeah, sure, sure. So let's do one thing.
+
+Patel, Rahul:
+Let's go through this one by one, all these items and then eventually the data we can provide from S4 will help us take this lesson better. Because this right now let's focus on the fields and tables because while we can do analysis for one of the plants, eventually we'll have to do this analysis for all the plants like after importing data from S4. So I think first thing is to give the mapping between S4 so that IBP can configure the extractor.
+
+ And once the extractor is configured, the analysis of data can be done at an ad hoc level. All right, next.
+
+UNKNOWN_SPEAKER:
+Repeat orders.
+
+Patel, Rahul:
+Are we done with LDPA? Can we move to the next?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So in repeat orders, one question that I have is that we are checking last 12 months, right? So we are checking which vendors had in that horizon what if we have two can we just decide the latest one so just to simplify because otherwise we will start having the same issue which one uh sourcing quotas priorities you know so how can we reduce complexity.
+
+Patel, Rahul:
+I think the first latest one should be considered let's put it that way from our side the the last if the last procurement is within one year then whichever is the vendor from the last procurement becomes the repeat order vendor because unless on the same date you are having order to two different vendors I think there will be like that would be a really complicated scenario but I think let's limit to only one the last procurement because otherwise
+
+Hector Palacios:
+we need to start establishing some rules like what arrangements or priorities or somebody needs to tell us or we to get this from somewhere because they are not going to maintain for all the cases for sure.
+
+Patel, Rahul:
+Millions of communities. And last procurement logic is less than 12 month period.
+
+Hector Palacios:
+In last two months.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+So this is also defining basically how we define the lanes because we need to construct the path between the vendors and the plans and we need to see which ones are valid which ones are not yes whatever comes outside these rules we also need to embody that because that that will happen that will have some lanes that in the past were okay but now they are not valid anymore so we don't want to generate proposals for those cases
+
+Patel, Rahul:
+correct so whatever is not part of ltpa and repeat order becomes the pr tendering here we don't have vendor so essentially we'll need to a dummy vendor I don't know how would you do it but essentially it means that you've not identified the vendor you will create PR without a vendor and then the vendor gets allocated eventually and then that updates the supply network.
+
+Hector Palacios:
+Now we will have a dummy vendor then there in vendor there because we need to also put the lead time.
+
+Patel, Rahul:
+Yes but then we also need to update that okay we start with tendering vendor And after six weeks, the tendering process is complete. So the actual vendor gets allocated to the material, which means that the supply network should get updated from dummy vendor to the tendered vendor.
+
+Hector Palacios:
+The tendering PR is something that we will show you on the system, or we also need to integrate back to S4HANA?
+
+Patel, Rahul:
+We need to integrate back to S4HANA, right? Which will get triggered in S4 HANA the PR will not have a vendor the PR then will get updated with say correct vendor and then we need to we need to essentially pull back this information from that PR if the vendor is available and then so so essentially we need to remember that what whichever PR by the way Khalid is calling me I'll to switch the call. Give me two minutes.
+
+ So, Hector, here PR can be created without the vendor.
+
+Mudit, Khushboo (UAE):
+Why do you have to use a dummy vendor?
+
+Hector Palacios:
+For specifying the lead time in the supply chain network. If we don't have a vendor, then we cannot define a lead time.
+
+Mudit, Khushboo (UAE):
+Okay, but then if the vendor changes, you will change the lead time also, is it?
+
+Hector Palacios:
+Yeah, we will create, we will have always a dummy lane let's say, from the vendor to any plan that requires a tendering. So I think that it's just one unique dummy vendor. And we define a initial lead time. When we have the real vendor, then we need to have a priority VBAC. Because tendering process will be because we don't have basically a lane, right? So it's the only alternative. But as soon as we have another alternative that to be integrated back we need to tell the system now this is the new lane the new run it needs to go to that lane not to the tendering lane no
+
+Vivekanand Gajula:
+need of priority so in that case what we can do is yeah so we need to make it you know invalid because anyways you know that is of no use so we can also delete you know such dealings you know going forward just to you know reduce the volume of master data.
+
+Hector Palacios:
+Let's see if we can avoid the dummy vendor and we can place the lead time in another place or if there is an opportunity. I'm not completely sure.
+
+Vivekanand Gajula:
+What I'm saying is initially when we know that okay we don't have any you know. I understand the point.
+
+Hector Palacios:
+The point that I'm making now is that then we will have a a lot of invalid lanes because of this. So let's see.
+
+Vivekanand Gajula:
+We will do a clean up now.
+
+UNKNOWN_SPEAKER:
+Yeah, you're right, you're right.
+
+Hector Palacios:
+We also have housekeeping jobs. Yeah, we can do that.
+
+Sheth, Kunal:
+Hector, instead of creating a PR with the dummy vendor, can we not create a PR without source or supply? Because initially during the tendering process, we don't have a finalized vendor and whenever...
+
+Hector Palacios:
+Yeah, but the question is how I place a lead time because I need to have a in order to account for a lead time.
+
+Sheth, Kunal:
+But they are also maintaining the PDT in the Metal Master.
+
+Bastian Osorio:
+Sorry, but this is just for IBP, it is not that we can change the Adam Eventor, so there's no need to discuss that further.
+
+Hector Palacios:
+Yeah, when we are saying Adam Eventor is entirely IBP, when we integrate back to S4HANA, it's just the material and the plant requirement.
+
+Sheth, Kunal:
+Just to propagate the lead time in PR you want to say from IBP to S4ANA.
+
+UNKNOWN_SPEAKER:
+Yes, yes. Right, right.
+
+Vivekanand Gajula:
+And also you know one more thing like for lead time this source is always going to be MARC.
+
+Patel, Rahul:
+Now that lead time discussion we need to align there is a separate discussion which we need to have similar to this where we need to identify all different lead time requirements, MRO, chemical, and the link-specific discipline process, because every process has a different lead time requirement. And then to identify which of the lead times would be available from S4 HANA, and which of the lead times we may have to maintain directly in IBP.
+
+
+
+Hector Palacios:
+So the sources for the lanes, the connections, is the same source that we will have for the lead times, or will be at a different table? Because otherwise, we need to put a source lead time field there as well. So we are clear from where we need to bring any lead time.
+
+UNKNOWN_SPEAKER:
+Sorry, I did not get it.
+
+Patel, Rahul:
+Was it for me?
+
+Hector Palacios:
+Yes, because we have a SAP source, so we are going to get the connections, the lanes from that, right? So you will go to LTP agreement, we know which vendor, which plant. Now about the lead times, we will get it from the same table on the LTP agreement, so we will check another table. Because if that's the case, then we need to put another column as well for the source of the lead time.
+
+Patel, Rahul:
+Generally, it's not the same table because the lead time is the master data, whereas the LTPR is a transactional data. The way SAP will do is, it will copy the master data from the master data element and convert into a transaction that is in start date or end date. So it will refer to master data element, say that based upon this master data, your required delivery date is this. It will not say your lead time is this in the transaction limit.
+
+ It will generate a required delivery date based upon the lead time maintained in the material master.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+So then we have an early time source.
+
+Patel, Rahul:
+Yeah, but now we are talking about. So let's talk about MRO. There are clearly external and internal lead time. External lead time is from the point of the release of, say, purchase order till you receive the material in AdNoc, which can be used for end use purpose, right? So that's an external lead time. And there's an internal lead time lead time between the PR creation till PO creation. So we will have to figure out how this internal and external lead time can be maintained.
+
+ External lead time is standard which is the material master field. Internal lead time there is a standard field but there is this disagreement between agencies whether it can be used as internal lead time for everyone. So that's something we need to align for MRO and chemicals at least. Now drilling it's a different discussion because we know drilling there are like multiple lead times between different like different purposes right so we what about the the lead time between when you receive the the material and then when you
+
+Hector Palacios:
+are at least finally able to use it because there can be some quality checks and some logistics externally and that will that should be part of externally time but it's a good question and we'll have to validate and confirm
+
+Patel, Rahul:
+that ad hoc is considering that as part of external lead time.
+
+Hector Palacios:
+So again, lead time from PRPO conversion and then external lead time to cover from the PO release until you receive it and it's available. Yes.
+
+Patel, Rahul:
+Because SAP generally has this, if it is quality check, then you will have stock type. And based upon the stock type, you will have a date. So the only thing we need to check the custom program for lead time calculation, it's going to the point of stock release from quality and not Okay.
+
+Hector Palacios:
+That is a good question to put there, Vivek, as well. Is the external lead time considering from the receipt until it's available?
+
+Patel, Rahul:
+The question is, the lead time, do you want to take as input from S4HANA or do you want to calculate based upon the transactional documents?
+
+Hector Palacios:
+I think that the agreement was that we were going to use whatever program because they already have a calculation so more is for avoiding reinventing the wheel I think. So if they have something let's use that because I guess that Lipton is used on many other processes not only ADP and we can use the same. Either way we will need to have the historical Lipton to calculate the Lipton variable So when you say lead time variability, you will calculate based on historical procurements?
+
+
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+And I could get the average. I could get the average, but for me, it's more on the side of what is official and what is not. And the one that they are using for HANA seems like the official one, right? And I guess that when they are lacking information, like you don't have enough information, they have some rules. So let's leave it like there. And if we have enough information, we calculate variability or not.
+
+
+
+Patel, Rahul:
+but not all right more complicated all right now now the only thing is uh for chemicals we discussed that considering there is a sufficient amount of data IBP can do better job of predicting because their current program is limited to three transactions last three transaction only so so lead time calculation for chemicals I thought we discussed it would be done by ibp is this we can still correct we guess I have to problem with that indeed there is
+
+Hector Palacios:
+an application for doing that so if they want us to to calculate it.
+
+Patel, Rahul:
+Because this is something we proposed in our session that's what I remembered that we said that a chemical is more continuous demand which means there are a lot of data points for us to do a better job of predicting lead time which is more accurate in nature and we should be using IBP for calculation lead time. So are we still doing it is this because this is something we proposed and they agreed to it.
+
+
+
+Hector Palacios:
+Now again, I just had the idea in my mind that there was a program and that we were going to use the program but if for chemicals we agree that there is an option.
+
+Patel, Rahul:
+Yeah, because the program may work good for MRO considering that there are limited procurement transactions and that if the number of transactions are less, it's considering also that the time between the two transactions is very high because you guys buy something today and then buy something after two years, right? Which means the current program is more logical for MRO and we should depend upon it, but for chemicals probably it may not be the right program because it only averages the last three documents.
+
+
+
+Hector Palacios:
+And what about the fast movers? Because on MRO you also have fast movers, we have many cases and we have like more than 25 data points, is what Bastian was showing. So in those cases, 25 points is right for calculating lead time variability and average.
+
+Patel, Rahul:
+Yeah, so if that's the case, so what I would recommend is, anyways we are calculating lead time, let's recommend this to them that you have a lead time in your system, which is based upon your program, and if we are calculating lead time, if we are saying there is a huge difference between our lead time and their lead time, if the lead time we are calculating is more accurate, then we should give this information to AdNoc to decide whether they want to use IPP lead time or depend upon their existing program.
+
+
+
+Hector Palacios:
+What do you think? Yeah, I think so. So whenever we see that whatever we are calculating is not enough, then we can bring their lead time and use that.
+
+Patel, Rahul:
+All right. Oh, we good with. Vendor external to plant.
+
+Vivekanand Gajula:
+Oh, one more thing, Rahul, like what about lot sizes?
+
+Patel, Rahul:
+Lot sizes, I think that would be determined by the EOP quantity, right?
+
+Vivekanand Gajula:
+No, no, from which table do we need to fetch? Little master also we have lot size, no?
+
+Hector Palacios:
+No, but the point that is bringing, Rahul, is right. So, we are trying to get the economic order quantity from the vendor. So, whenever we find quantities, should respect that. Now, it also can be a constraint, Rahul, because the economic order quantity is what we want, but can be a constraint on the vendor side that say, no, we can supply 10 at a time. 10, 20, 30, 40. No matter that your EOQ is 25, you need to order 20 or 30.
+
+
+
+Patel, Rahul:
+So I think we need to put up a matrix there and align with AdNoc saying that how do you want us to prioritize lot size, whether it is based on EOQ or because while we have a standard SAP feed for lot size, which is there in MRP 1 view, if the data is available there then I think we should prioritize that over EOQ because I think we will focus using EOQ only for defining the max inventory parameter whereas the procurement should happen from the lot size for supply planning should be considering the lot size which is there on material master.
+
+
+
+Hector Palacios:
+Yeah that's correct so the constraints first priority is and if you don't have a constraint and you're free to ask in the amount you want then you can use the if there is no lot size parameter defined in MetalMaster.
+
+Patel, Rahul:
+Exactly.
+
+Hector Palacios:
+So, the question would be, Vivek, if you can put it right there, the question would be where is the lot size information?
+
+Patel, Rahul:
+Rather than saying from where we should say that should we refer to the lot size in material master because let's not keep it open ended. So that we close the conversation immediately.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Mudit, Khushboo (UAE):
+And and we can even say should we use a lot size from material master or leverage the EOQ that will define.
+
+Patel, Rahul:
+We should recommend that we should use material master and if not, then use EOQ.
+
+Hector Palacios:
+OK, then let's frame the question that way.
+
+Patel, Rahul:
+Yeah, agreed.
+
+UNKNOWN_SPEAKER:
+Rahul, just a parenthesis.
+
+Hector Palacios:
+Do you guys know where the unit price information is on the system? Like for a quick download of that information to show something tomorrow? Unit price?
+
+Patel, Rahul:
+Yeah, there are two, three ways you can calculate the unit price. One is through your info record because what they do is they copy info record so every material vendor combination you will have a price procurement price per unit or the size whatever is the lot size per that you will have plus you will have the moving average price which is a so based upon all the previous procurement you will have so probably we should we should show them both and ask them which makes more sense.
+
+
+
+Hector Palacios:
+I think that the requirement on the BRD is the moving average price otherwise it has price.
+
+Patel, Rahul:
+So, which means both, right? So, no, one or the other.
+
+Hector Palacios:
+I mean, if you have them, let's use that. Otherwise, the last one.
+
+Mudit, Khushboo (UAE):
+What we need to check is if in the system they both are same.
+
+UNKNOWN_SPEAKER:
+I think they might be same.
+
+Patel, Rahul:
+But for the moral conversation, they will not be same. They will not be same because moving average price will change every make GR because the price changes every time you GR so the moving average price changes whereas the last price will only show up in the info record so last price will always be different than the average of all the prices you've had over the period of time.
+
+Hector Palacios:
+Is it possible for you guys to get that information or for tomorrow is impossible? Because if we are sure Give us materials.
+
+Patel, Rahul:
+I think that should be pretty straightforward.
+
+Hector Palacios:
+I have the materials, so yeah, I share one email with Kunal.
+
+Mudit, Khushboo (UAE):
+Yeah, the material and the plans that you are planning to use as examples.
+
+Hector Palacios:
+I share that information with Kunal. I will respond in that same email. Let me look for that.
+
+UNKNOWN_SPEAKER:
+Okay. All right.
+
+Patel, Rahul:
+Are we clear from vendor to plant from a supply planning perspective?
+
+UNKNOWN_SPEAKER:
+to you? Yes. At least here we have some questions.
+
+Hector Palacios:
+I don't know if we because we are past the time. Are you okay to continue a little bit more? I think that I can for 15 minutes at least.
+
+Patel, Rahul:
+Let's highlight this in the...
+
+Hector Palacios:
+Can we continue 15 minutes and then we close?
+
+Patel, Rahul:
+I think so because yeah, let's continue for next 15 or 17 minutes to be precise and then we'll close.
+
+Hector Palacios:
+Okay. So, what can be more complicated? The slog to a slog within plan. So, my understanding is that they want to move from every storage location to every storage location. So, basically it's an all for all all the possible permutations. Correct.
+
+Patel, Rahul:
+System-wise, it's going to be a lot of records because if you're doing this for every storage location and all the combinations are valid, can be… But all to all within same plant, not from different plant. Yes.
+
+Hector Palacios:
+So, in this case, you have five. That means that you have 25 possible combinations or lanes between everyone. Six six and six but the main store is do we consider for this because yeah for me regarding is moving for four to five uh this main store uh will always procure right it won't take all these uh yeah
+
+Patel, Rahul:
+yeah the the other s locks will not procure but then uh from an inventory perspective the inventory can be in any of of the six storage locations, right?
+
+Hector Palacios:
+Yes, and the normal lane is from the main to the each one, right? But then you need to add over that, because that's why I'm excluding, because that is for sure that we will have a database in every scenario. But then you have another scenario in which you need to configure between them, between the five. So in that case, you are adding 25 more lanes. Between all right so so what is your suggestion like do we need to this can be this big a complication because now this just one example but then let's multiply for all the plants and all the storage location that we have on every plan so we can end up with so many that what I was thinking at the beginning is let's create back and forward from the main to the slope one so the slope one can fit the main store one and the main one can fit the storage location two.
+
+ In that regard you have only 10 in this case.
+
+Patel, Rahul:
+So you are creating like an echelon?
+
+Hector Palacios:
+Yeah, you're creating an echelon in the middle. Now that is going to do the optimization part. The question is that in a transactional when we create the STRs it's going to be fine that we say okay we are moving from a storage location one to main store and them from main storage to storage location too because there are going to be two movements not one.
+
+Patel, Rahul:
+Can we enhance this on S4 HANA side that if it is like one if it is part of the same storage location we cannot have two while IBP can recommend that but the actual STR gets created in storage location one and two without getting to main like that can be a custom enhancement right logic can be built up in program to avoid this additional movement?
+
+UNKNOWN_SPEAKER:
+Yes, I think so.
+
+Hector Palacios:
+Because the logic, I think that the logic is always from the main store to the storage location, right? So, as soon as you have something from the storage location to the main one.
+
+Patel, Rahul:
+Let's take this point to the team during, probably I can ask this to say Murugan or someone and see whether how the physically moment of inventory happens, whether the physically it goes back to store and then gets to rig 2 or it goes from rig 1 to rig 2. Do they even have a transport mechanism to move material from one rig to another? What if the material is the one rig is in one location of C and the rig 2 is in other location of C?
+
+ Because they may not have regular transport physical transport planning between two storage locations because that's not has been the case it's not optimized to that purpose right so ad hoc movement of metal between one storage location to other location probably become more expensive than getting the metal back to the main store and pushing to the new store right yeah because you already have yeah you already have a physical movement channel which means if the ship is going from main store to store one it is returning back empty.
+
+ We can leverage the same transport mechanism to bring the metal back to main store and push the metal to the new store or the alternate store.
+
+Hector Palacios:
+Also, the building of the lanes, technically, data-wise, I think that is going to be much easier. Main store from a storage location is the normal movement, so there should be information on S4HANA that is telling us this is the lane, this is the combination.
+
+Patel, Rahul:
+Agreed, but this may be case for C, but I don't know if that's the case for rig. Maybe we understand you have a field and within the field there are multiple locations, right, sites where the drilling is happening. So, if the rig 1 and rig 2 are part of the same field, I think they might like without going to main store which is like somewhere in other we need to understand from a physical attributes perspective what makes plants and how far the storage locations are there from the plant and whether they can physically optimize the movement of inventory between store locations or between store location main store that helps us define the transport routes.
+
+
+
+Hector Palacios:
+Yeah we need to understand how the distribution is taking place what is what are the possibilities because we are just putting ideas here but we don't know if it is physically possible indeed.
+
+Patel, Rahul:
+Can you put a question Vivek? Put up this question for us to take it back to the AdNoc team so that we can try to clarify this.
+
+Hector Palacios:
+What is the physical movement? You can place there Vivek in that sheet. We are considering there. What is the physical movement between the storage location movements.
+
+UNKNOWN_SPEAKER:
+That's right.
+
+Hector Palacios:
+Yeah, that's correct. Then for this we also will need the document type, I guess. I don't know if for STR we need to classify it on different ways or it's just STR.
+
+Patel, Rahul:
+For STR storage location, there is a different type, right? Because traditionally you do the SDR between plants in between company codes, but between the within the same plant. The SDR is basically it is SDR, but it is 311 moment only, right? Because you are essentially doing moving moving inventory from one storage location to another. So it's 311 moment triggered by a inbound and outbound process.
+
+ Yes, don't even create a PO for that but we need to check if they have a purchase order. I think they are using stock transport orders. So they will not have a PR because it will directly create STO because this will not go through because even Murugan was pretty furious when we said we'll create PR because for such transactions essentially you are moving from one store to another and directly creates STO.
+
+ So we will have to trigger STO and a document type has to be confirmed. So that's something. Add one more question there to confirm the document type and the STO type for such moments.
+
+Hector Palacios:
+Right, so we need to fulfill the table only. No, you don't need to do it. Be like this is a rehab as a field that we need to fulfill.
+
+UNKNOWN_SPEAKER:
+In the column F.
+
+Vivekanand Gajula:
+Yeah, but I tell you know one thing. If let's say you know they they want to have three moments, these are slots right without creating lanes you know between these x slots how how are we going to you know optimize the inventory levels and across across you know ad-hoc locations the question is how we build the lanes no uh no no how we build the lanes that's a separate you know uh uh topic you know but without building the lanes I mean without creating the lanes between these S-Logs, how are we going to optimize the inventory?
+
+ Will we need to create the lanes between all these S-Logs?
+
+Hector Palacios:
+I think in this case, we are calculating decentralized levels. We are not optimizing, like putting everything on the main store and putting the zip stock there or something like that. We are calculating everything buy storage location because I know they are different different physical locations right yeah what I mean is you have stock at a SLOC 1, SLOC 2 okay and then you have stock at main store right
+
+Vivekanand Gajula:
+so first you need to use up you know all the stock you know that you have at the SLOC level and then only you have to go to the main store no so that is what I was talking about yeah so that is what inventory balancing is right.
+
+Hector Palacios:
+Exactly, but that is the natural behavior of IVP, right, because the customer facing location, let's say in this case, is each storage location, so you will use as a priority all the stock you have right there available, And just after that, you are going to propose any movement. So I don't know if I'm getting the question, Vivek.
+
+Vivekanand Gajula:
+No, maybe I think we can discuss this separately. Yeah, let's discuss something else. Yeah.
+
+UNKNOWN_SPEAKER:
+OK. Let's continue.
+
+Patel, Rahul:
+So we have six minutes. Any other point you would like take before we call it off for this session at least and Vivek you can plan one more session tomorrow about this just to follow up on rest of the points so that we can conclude the entire discussion on supply planning. So what else so we've talked about supply network one now one point we can talk about supply network one is now we've discussed about stored location total option let's try to see if within same AGC plan to how would you have it.
+
+ Now the question is yeah question is whatever logic we are applying within plant the SLOG to SLOG can we apply the same logic within agency plant to plant.
+
+Patel, Rahul:
+to optimize inventory within AGC?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah. That is standard.
+
+Hector Palacios:
+So if we are able from a storage location inside this plant, we can do it between plants for sure. But in that case, I guess, Rahul, that is always going from the main store to main store.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Hector Palacios:
+OK, so we don't need be like 10 different lanes from every storage location to every storage location in your place. It's just from the storage location to the main store, from the main store to the main store, and from the main store to the other storage location.
+
+Patel, Rahul:
+So basically determination would be at a plant level. So if I take plant one, the stock can be at the main store or stock can be at a rig level. Now it's an extra stock within a plant lying at storage location one. So when you create the stock transfer order, probably if the stock lying at storage location one, you cannot directly issue that storage location one stock even if it is extra to a different plant, which means it has to be in two steps only.
+
+ Always first going from storage location one to main store and from main store going to the main store of other plant. And from that storage location store, it will go to the exact required storage location. So, it can be… So, there are three lanes? Yes, because extra inventory can be anywhere in the plant, right? We don't know for sure that extra inventory, but from one plant to another plant, it will always be from one main store to another main store, but eventually after what you receive in a main store, it should go to the storage location where it is required, right?
+
+ So, I may require at storage location 5 in plant 2 but the inventory is in storage location 1 of plant 1 right which means first the metal will move from storage location 1 to main store from main store it will go to plant 2 and from plant 2 main store it will go to storage location 5 of plant 2.
+
+Hector Palacios:
+So we are talking 1, 2, 3 movements. But in plant 2 plant why we are bringing an angle of S log because that can be the point as well so in some AGCs they are working on the storage location level then if you need to move to another plant how you will do it so we were we were discussing inside the same plant how we move it but now between plants that are working at the storage location level how we do it okay so then that
+
+Patel, Rahul:
+is a separate scenario right SLOG2 s-lock in a cross plant right yeah so so we are taking within agency cross plant right so but to fulfill that from the inventory is in a different plant so but then within a plant the inventory is always at a store location level right so we need to also evaluate check with that now what is the physical movement when it is between two plants whether it will move from s-lock to main store and from main store it will go to main store or different or whether it will move from s-lock directly to main store if that's the case then it would be one transaction document where there is a receiving plant there is a sending plant and there is a storage location of sending plant and there is a storage location of receiving plant correct correct so that should automatically get defaulted from the material master now that may not be case because the material can be in And in metal master.
+
+
+
+Vivekanand Gajula:
+The plan to plan, right? So we are directly bringing this talk at the plant level, right? So we we are not taking into account the clock level, right?
+
+Patel, Rahul:
+But in SAP you cannot keep stock at plant level, right? So when the studio has to be created, you need to specify in which total location of the plan to stop to go.
+
+Sheth, Kunal:
+Just to give an input on this three cases, I'm just referring the mark Marcy table with the special procurement so most of the cases they have maintained this as a single value so means plant as well as from which storage location they are going to supply like M002 so that is the main store which you just explaining in the previous sheet so they do have a master data set up in S4hana the question is do we need to use the same master data or we need to revamp the entire thing for the supply chain network because they have also created a storage location available special procurement type.
+
+
+
+Patel, Rahul:
+Correct, so that Kunal will work within the same plant because those are only to fulfill within the same plant to different storage location and the special procurement. Do they have the special procurement between plants as well for the same?
+
+Sheth, Kunal:
+Yeah, yeah, yeah, yeah.
+
+Patel, Rahul:
+Can you share your screen screen once again? So, so probably you are saying there are two separate special procurement case for movement, but then they may not have the special every every different combination will not be defined as special procurement key. Also, we will have a problem that if the stock transfer should happen between the two, do we always need a special procurement key in S4? See, special procurement means we are binding one plan to another plan, right?
+
+
+
+Sheth, Kunal:
+But that is not the case in the 2B landscape.
+
+Vivekanand Gajula:
+They would like to set up this.
+
+Patel, Rahul:
+Agreed. So the point I'm trying to make is it's not a fixed relationship. Now with special procurement key you are correct it's a binding which means the fixed relationship but the question I am asking is to raise the stock transfer order. Do you by default need special procurement key or without even special procurement key allocated in material master I can directly send one material from one plant to another plant.
+
+
+
+Sheth, Kunal:
+This is just this is just a proposal whenever you creating a STR automatically system will based on the special procurement key. But in the 2B scenario.
+
+Patel, Rahul:
+Yeah, so in the 2B, I don't think we'll be able to create all the combination of special procurement keys, right? Many to many, which means the STO should be created without having special procurement key. Right, right.
+
+Sheth, Kunal:
+To make the thing simple, they have maintained this master data, but we have a limitation in S4. Maximum only one procurement key we can maintain in the master data. But based on the physical movement, they must be having more than one supplying location. So that we need to discuss and clarify with the team.
+
+Patel, Rahul:
+So Khushboo, do you know when it is STO between plants, you can create STO without special procurement key allocation to Mattermaster, right?
+
+Sheth, Kunal:
+Let me share my screen quickly.
+
+Patel, Rahul:
+Yeah, the point I'm trying to make here is that we should not get restricted by the special procurement recreation on S4 site for creating the STOs between random storage locations and random plants.
+
+Sheth, Kunal:
+See in the 2B we are not going to refer this field because it is a hard binding. See this is our plant 4102. This is the storage location which they are receiving from the vendor. Now if you see the description of Z1 it says that supply plant is same as this one.
+
+Patel, Rahul:
+but storage location is m002 yeah now if you see the m002 description that is mustafa warehouse yeah so generally they receive in the warehouse only they don't receive to the end point storage locations what you are trying to say
+
+Sheth, Kunal:
+correct correct and if you see the just uh overall entries in the table they have lot many combinations they have created see here supplying plant with the storage location similarly these are the consignment direct production one second I think these are the limited entries let me remove the filter put the filter on plant no no here just the different key combination which they have created as a special procurement.
+
+ So, around 3000 entries are there.
+
+Patel, Rahul:
+So, this is all the plants, right? Yeah, all the plants. So, I think we'll be fine. All we need to understand is how the physical movement happens when it is plant to plant, whether it goes to main store only and then how. Because in IBP, you will have requirement at a MRP area level. Right so if it is at MRP level area level you may not be able to fulfill directly from one MRP area to another MRP area it it has to go to a different main store and then only go to MRP area so let's take this point uh we can uh uh vivek you can take this action on us to verify with that now similar to so SLOG to SLOG how the physical movement will happen for plant to plant
+
+Sheth, Kunal:
+as well see answer quickly this vivek point they do have a plant-to-plant also, like this C. 9301 is the supplying plant and 9309 is their receiving plant. So they have a plant-to-plant movement also. They do have a location-to-location also. If you see the below combination, they also maintain the soil location. In fact, in the description as well.
+
+Patel, Rahul:
+Yeah, but the point I'm telling Kunal is that in SAP you can only define non-fixed configuration. So, you are saying we can use the configuration document of special procurement to define the transport lanes, multiple transport lanes between different plants, possible combinations?
+
+Sheth, Kunal:
+No, what I am saying is this is the as is, but here we have a limitation. So, point is in the 2B, they may be having more than one supplying plant as a transportation lane that we need to create in IBP. So, that is their requirement. So I think this setup would help them.
+
+Patel, Rahul:
+That's the point.
+
+Vivekanand Gajula:
+Yeah, and also if you know the receiving plant has more than you know one source location, we also need to find out, you know what is going to be the logic for that. Are we going to use quotas or any prioritization mechanism? So that is again.
+
+Patel, Rahul:
+So basically that that situation comes if you have more than one plants there where you have expanded and what is the preferred location to buy to get the stock transfer prompt, right? You can have a situation where you have a shortage in one plant, but the stock is there in four different plants.
+
+Vivekanand Gajula:
+Which is the one which would be preferred one? Correct.
+
+Patel, Rahul:
+That also should come in picture, so there should be not only the physical route, but the prioritization in terms of if the stock is available at a particular location.
+
+Sheth, Kunal:
+In fact, at the MRP area level also, they are maintaining this entry. See here, stored location to stored location. So they do have the setup, but this is not a scalable setup in the 2B part.
+
+Patel, Rahul:
+Yeah, yeah, yeah, good. OK, so I think we've already gone beyond our point, so let's continue from this tomorrow. Is it OK?
+
+Vivekanand Gajula:
+Yeah, so at the same time I will schedule a meeting so we can continue.
+
+Patel, Rahul:
+You know from where we have stopped today. Yes, yes. All right then.
+
+Vivekanand Gajula:
+OK, thank you.
+
+Hector Palacios:
+Thank you so much. Thank you.
+
