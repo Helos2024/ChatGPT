@@ -1,0 +1,1190 @@
+UNKNOWN_SPEAKER:
+Good morning, everyone. You Good morning, everyone. Good morning. Good morning, everyone.
+
+MM- SKEC2 - L08:
+Good morning. Do we have everyone? Required people on the call? Did you call me?
+
+Sheikh Saleem (ADNOC Logistics & Services):
+I guess I had gone out of chat.
+
+MM- SKEC2 - L08:
+Abu Waqar is not, we need Abu Waqar, Arun. I don't see any one of them. On the call.
+
+UNKNOWN_SPEAKER:
+you. You Good morning. Good morning. Good morning.
+
+MM- SKEC2 - L08:
+Let's start. We have.
+
+UNKNOWN_SPEAKER:
+At one we have.
+
+MM- SKEC2 - L08:
+I are we have to go north. We have Nishant that we do.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+We have, so let's go by company. So we have brooch.
+
+UNKNOWN_SPEAKER:
+We have HQ.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+We have. Anybody from Edna onshore offshore?
+
+MM- SKEC2 - L08:
+So I guess we have. You know you invited onshore offshore today.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, all are invited for all the sessions.
+
+UNKNOWN_SPEAKER:
+So yeah, so Mohammed Najeeb is one.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+K.
+
+UNKNOWN_SPEAKER:
+Refining.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+anyone from refining Distribution.
+
+MM- SKEC2 - L08:
+you Let's start then.
+
+UNKNOWN_SPEAKER:
+Call it anyone from planning team.
+
+MM- SKEC2 - L08:
+I'm out.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Hector Palacios (ADNOC Group D&CS):
+Tim, should we start then?
+
+UNKNOWN_SPEAKER:
+Yes, we can start.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, let's go ahead. Either way, Tim, just to remember it's important the commitment with this because we are doing some validations and if we are doing this validation then in later stages is a risk of delay, right? So just to carry that message.
+
+UNKNOWN_SPEAKER:
+All right, let's see.
+
+Hector Palacios (ADNOC Group D&CS):
+So last session, we were taking basically a recap on the concepts. Then I did basically a tour on the system, how it's looking like on Excel, how it's looking like on the web. Today we have pending, these things. First of all, it's the approvals. This is not a native functionality that we have on AVP. Approvals is not an approval tool. It's something that we said before. But I think that we can do something here.
+
+ It should be an easy configuration. Hopefully, it's what you are expecting as well, okay? So, I will show you today two ways that we can get this done on AVP, on the Excel and on the web. Then, I can show you some dashboards and the Snapchat functionality. That is no different to what we already saw on demand planning, but just for you to know that we also will be taking that part. We will discuss about the service level.
+
+ From yesterday, we got a good discussion about that, on how to define the service level for the different segmentations. We had some ideas. So today we are going to show you how it's looking like after that. And finally, we have time for some open points. So as soon as we finish with these points, it would be a very good idea. So if some users can start using the tool, like checking the views that we have on the web, I will be sharing the links.
+
+ Also, you already have access to IUPs. Some of you, I think that, not all of you, because some of you have some pending points related to the add-in, but the ones that you have at the add-in, you can enter to the tool, you can check with me the views, you can ask your questions and so on, okay? So let's start by that. Let's see what we have from the approvals, first of all. Let me share two views that I have.
+
+ Migoo, Just give me a question because I'm missing. Missing access. All right, so On the view that you have on the Excel, yesterday we were checking that if you go to New View, you have Template, and right here you have the views for Inventory Plan. So far we have three. One is for Inventory Level Optimization, where we see most of the inputs, outputs in the system. Then you have one view where you can see the what-if.
+
+ The big difference is that here you have many scenarios so that's why we have a different view for this. And then you can have another for checking the snapshots and what is the history of the changes or that, okay? So let's do that. In the first one is the one that I have here. So yesterday I was showing you that we have... Yamini, you have a question? I think it was an error. So in this view, you have the historical consumption function, right?
+
+ Because this one really depends on the time. So, yesterday I showed you that we have this by quarter based on the termitance of the data and frequency. It seems like a good bucket of time to review the information, at least historically. Either way, something that you can easily change to months, to years, you know, that's also a possibility. Then, inventor optimization. In this video you have the main inputs of the tool, the demand rate, lead time, and then together they come to the expected lead time demand.
+
+ This is what is inputting into the algorithm. Then you have coefficient of variation, that is telling you in a percentile way what is the variability. This is basically a standard deviation divided by the average. So it will give you a normalized percentage that is easier to read because and the higher the demand, the higher the standard deviation. So different materials can have different standard deviations, but at the same is exactly the same variability.
+
+ So it needs to be like as to reference to the average of the data that we are seeing, okay? So if you have an average of 10 and you have a variability of two, a standard deviation of two, then you have 20% of variability. And if you have 100 of average and you have 20, again, you have 20% variability. It only changed the demand size, right? But this is important input. Then you have also the target service level, that this is what we are defining at high level.
+
+ And remember that the higher the service level, the higher the safety stock, and the higher the reorder point percent. And then you have here the outputs, the IVPs on the left, going to propose you the safety stock, reorder point and max stock. The max stock so far is going to be equal to reorder point because we are missing the EOQ calculation, okay, just for lack of inputs. Sheikh, you have a question.
+
+
+
+1Sheikh Saleem (ADNOC Logistics & Services):
+Yeah, brother, just wanted to ask you, this MRP type is mentioned somewhere in the field, whether it is reorder point planning or it is upon request?
+
+Hector Palacios (ADNOC Group D&CS):
+Not yet, we haven't integrated that. The plan that we have today is that what we define as reorder point and forecast phase is going to be defined here on the tool. I just have one more question brother.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+If the item is classified as abound demand and there are repeated purchase and consumption is high, will the system propose us to change this to reorder point planning?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, for sure. For sure. So, let's see some examples after this. Right now we are calculating basically the safety stock reorder point for every item. Even if we, because on MIT we will have two approaches, right? For MRO probably the most common one is going to be reorder point because of the consumption frequency. In that case, we will provide with the reorder point and we will do the proper run on IDP.
+
+ Then for what is forecast-based, we are planning to do the forecast. This is for fast movers, for cases in which we have enough information to calculate a forecast. And doing the forecast, we still need the safety stock, not the reorder point, but the safety stock is still needed. So, in both cases, even if we go with a forecast-based approach, we need to run the inventory optimization so we can calculate the proper parameters.
+
+ Now, if you need to have safety stock or not, that will depend also on the segmentation that we define. So, that is going to be part of the discussion discussion that we have later about the service level, right? Because if we for some SKUs that we think, for example, for slow movers, they shouldn't have safety stock at all. Then we need to define that in the tool so we don't calculate the safety stock.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK. Hector, can we put some value for the economic order quantity and then see how the proposal for the Mexican stock.
+
+Hector Palacios (ADNOC Group D&CS):
+Let me see if that is an open input. I think that so far it is. Because on the basic IVP, reality is that this is just an input. It's just something that you integrate from SRHANA. If you have that information and we use it. So, for example, in this case, It's just a matter to put a number and it should work. Oops, let me check. Let me do a quick check. I don't think that this is going to solve it for today because this takes a little bit more.
+
+ Oh, no, no, no. Is that I need to run the algorithm.
+
+UNKNOWN_SPEAKER:
+So let me do the run.
+
+Hector Palacios (ADNOC Group D&CS):
+It's as simple as that, but you need to run the algorithm. So I can run it for, I will run it only for this material. So in order not to affect the resource that we have on RSKU for now, let's do the example. I will choose material.
+
+UNKNOWN_SPEAKER:
+Okay, let's try.
+
+Hector Palacios (ADNOC Group D&CS):
+So, when you run a job on an EP, this is the first time that I'm showing you. As you saw, we go to the application, we select the correct job type, and you run. So, you will have less options than me and then when you run it you automatically you have a status here you see so status now is finished you can also navigate sometimes it takes more time so you go here you see all the jobs are running or have been run and to check the status you can refresh right but I prefer the pop-up because it already tells you when it's finished I don't need to close it Let's see the results after this.
+
+
+
+UNKNOWN_SPEAKER:
+No, I will need to check it.
+
+Hector Palacios (ADNOC Group D&CS):
+Let me check JAGA because probably it's something just to put in between the parameters of the output, to put this key here. I haven't maintained that maybe because I wasn't focusing too much on economic order quantity as we didn't have it, okay? But we have a session in the afternoon, so for the session that that will be ready okay yeah and what is the okay the proposal is 937 what is the consumption pattern for this the consumption pattern let's see one so let me take you here to the dashboard.
+
+
+
+UNKNOWN_SPEAKER:
+So here is a view where you will have some analytics to check the information.
+
+Hector Palacios (ADNOC Group D&CS):
+Let me make this slower. So here is that you have a lot of information that we see on the view as well, like target service level, demand rate, lead time, all of that information, current reorder point, Suppose we are the point and so on. Here, let me put that mode and make this one bigger. So this is the consumption pattern that you have. Okay, so we have a big peak here. I guess this is the worst.
+
+ Maybe, I don't know what's happening here really, but it definitely is an outlier. Right so here is your this is your consumption the black line that you see there I'm going to do a little highlight so this is the consumption this is not continuous by the way not necessarily you can see that here you jump from november to may right from may to june that is continuous but then august september october december that that is more continuous I'm not sure if this This is a chemical, it seems like a chemical.
+
+ Then in the blue ones, you have demand over the lead time, okay? Probably the lead time here is very low. Yeah, it's less than one month. So that's why we have the demand of the lead time is less than the demand in the month, because the lead time is less than one month. Let me check, so enter to full screen. So this is the month or the leap time, this is the one that really is important to us. And here you have your references, you have your current reorder point, you have your maximum stock.
+
+ Okay, what is the monthly average consumption for this? Monthly average consumption, so if you go to the demand rate, this one, this is your leap time in months, and this is your the expected demand during the lead time. The variability.
+
+UNKNOWN_SPEAKER:
+Is there any safety stock here?
+
+Hector Palacios (ADNOC Group D&CS):
+Safety stock from IBP, let me check. From IVP, yes, we are proposing and probably you also have some safety stock. I haven't integrated your safety stock, I think. I was focusing more on the reorder point. But we are going to do it. We are unblocking this part of the integration. So far, the only data we have there on the tool is more manual upload because we have some issues with it also.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+The demand rate for monthly, I can see 500. The expected lead time consumption is 184. Let's say 700. Why it is proposing to keep, The main point is probably the target service level.
+
+Hector Palacios (ADNOC Group D&CS):
+So what are we expecting on having, what is the probability of covering the stock? Okay, so let me show you two things. Different service levels are going to give you different values. So our values more related to this point, I think that probably is outdated. Let me see. Yes, it needs to be updated because this is the number that you are getting for 80% so this you see that changing the service level you can have different values and if you go for 99% that is the maximum that we that is always recommended you have like 2000 okay and then here not 95 and this is what you should have from 90% okay how we are defining what service level to give to the tool is based on the segmentation because we think that the segmentation is going to give us an idea of the criticality.
+
+ Very critical parts like business continuity should receive 99 percent, the maximum, and uncritical parts they should have the lowest one or not have at all safety stock or reorder point. So in those cases the way we are trying to put this together is based on these segmentations. We have a matrix that we need to discuss today as well. One is the most important part is the VC part. If we know that it is, then maximum service level.
+
+ And then if it is not a critical part, we check the VED segmentation. And inside the VED, we also are checking HTML and FMCN from a discussion from yesterday. But we can continue to discuss today if the service level that we are putting here is appropriate or not. Okay, but it's just matter to choose the the right service level depending on the part.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Okay with this sample data is it possible to run a make a report like what is the existing ROP and what is the proposed ROP for all the materials as a one glance?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah let me show you that so this is where I was going because you were not there yesterday.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+I know I was not there because they already showed it yesterday.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I see okay okay then everybody's covered. No problem we can show it again.
+
+Hector Palacios (ADNOC Group D&CS):
+I have another question now.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+You consider the unit conversion like in available if it is in the system like now we have like a sample that is showing some that came it is actually is like a glycol it is like in one pack it consists like maybe 150 liter or like a drum 208 liter when you do calculation you consider that unit of supply also which is like example if it is available in the unit conversion so you are rounding up it to like we cannot order like okay 150 liter of drum of oil so it should be like 208 or standard unit conversions.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Okay that's a good input usually in inventory we don't take it that much into consideration but I think that at least after we get the input we can round up to the right load size right But this is just the inventory levels. But even if we don't do it, it's on the supply side. Because let me just go back to show you the process. So in this process, what we are saying basically, here we are going to calculate the reorder point, max stock and safety stock.
+
+ So imagine that we keep the same values that we have today without the rounding. Funding is going to be considered here on supply planning. In supply planning is where you will have all the information. You will do the reorder point run or the forecast-based run, whatever. You will have material consumption, forecast, the inventory levels that we are calculating here, more information about open POs, STO, what is going on right now, the stock on hand, all that information.
+
+ And between the constraints is the lot size. So, if you are saying we move between these quantities in a rounding value, then supply is going to consider it. So, no matter that we have, for example, a reorder point of 2000 and 300, if we need to round up to 200, 200 and 200, you know, it will, in supply planning, it will propose to stock up until 2400 because it's going from 200 and 200, considering that conversion.
+
+ So, I I don't think that inventory planning needs to take account of this, but supply planning will, because it's part of the restrictions that we need to respect. So whatever PR we generate is going to respect that.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+On the PR level you mean so?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+In the parameter it doesn't have to, but when conversion to PR...
+
+Hector Palacios (ADNOC Group D&CS):
+It doesn't have to, because it only knows I need to go above that, but it will go above that considering the log size on supply planning. For example, let me do a quick example here on an exit.
+
+MM- SKEC2 - L08:
+Also, Rido, the thing would be that maybe one vendor has a different lot size and another vendor may have different lot size. Exactly. From a supply side, it makes more sense to have lot size based upon different vendor priority and if you incorporate lot size in ROP and round it, probably you will slightly increase the parameters as well to round it to the lot size parameters.
+
+Hector Palacios (ADNOC Group D&CS):
+So imagine that you have a lot size of 200. Okay. So you can move information between 200, 400, 600, and so on. That is the rounding value. Then you have a ROP of 500. If we go to, for example, let's say 430 on a stock on hand or available stock, then IBP will propose some like this like propose receives first stock and hand will not be 430 because the supply is not set like if it is already stock on hand it should be like only 400 okay let's put 400 in this case okay but you need to go over 500 right so IBP will propose okay we are missing then 100 but I cannot move 100 because I need to move between 200 and 200 so it will propose 200.
+
+ So your stock after will be at the end 600. So at the end it doesn't matter to have the RRP calculated and as Rahul is rightly mentioning as this can differ by every vendor and we will have in the plant just one reordered point or in a storage location one just one reordered point, then it wouldn't make sense to have the rounding because it can be different depending on the case, right? But in supply planning going to be respected.
+
+ So you will have the stock considering this constraint that you have here, the lot size.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Is it clear? It's clear, but it will give a lot of impact, like access-wise.
+
+Hector Palacios (ADNOC Group D&CS):
+But it's a reality, right? So, when you, okay, I kind of understand the point that you're making.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+If Jagga doesn't have any problem, we don't have any problem. Because he will give us audit funding for overstocking. That's a good statement.
+
+Hector Palacios (ADNOC Group D&CS):
+I don't think there is something that at the end we cannot solve with a simple calculation for the report. Because maybe if I understand correctly, the report will depend or maybe on the vendor, so we need to have the proper load size, we have a reorder point too low, without considering this, then we will trigger an alert or something like that. We can manage that, I think. We can have the common reorder point, we can get it to, for the comparison, we can get it to the vendor layer, no issues, and then we can properly fine tune this so we are not triggering any access or anything like that.
+
+ Because this, I think, is what better represents reality, right? So reorder point should be around here. It doesn't matter the lot size for that. And then supply planning should care about the lot size, right? So let's see with the data later. When we have more information on lot size on supply planning, we can come back to the discussion and to see the reports are how they are looking like,
+
+Prathviraj Anchan (Borouge):
+Hector, can you go back that you were just showing.
+
+UNKNOWN_SPEAKER:
+Yeah, for sure.
+
+Hector Palacios (ADNOC Group D&CS):
+Go here, here we are.
+
+Prathviraj Anchan (Borouge):
+Yeah, yeah, in this the lead time is 0.36 months. Yeah, which means the material can be available in less than about 10 to 12 days if I'm not mistaken, yeah?
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, it's something that you need to tell me if you prefer to see it on days or not, because we have all for you. Time in this as well.
+
+Prathviraj Anchan (Borouge):
+No no that's fine what I'm saying is if the lead time so and this is delivery lead time only yeah not the PR to PO.
+
+Hector Palacios (ADNOC Group D&CS):
+It should be everything to be honest right now probably I'm not really sure but we need to sync on the lead time from the moment that we we generate the need from the PR until we are able to use
+
+Prathviraj Anchan (Borouge):
+Alright, in any case, like let's say it's from PR to GR, so the entire lead time when the lead time is so low. I guess this is should be a LTP item because nothing else. Yeah, yeah, this is so fast. Yeah, OK, if it's an LTP item, then straight away. Why am I looking at such high ROP or Max even? Because this is something which is available to me. Like on a weekly basis or maximum on a fortnightly basis, then straightaway it should trigger me that I can keep stock maybe of maximum three weeks.
+
+ Yeah, that's how I'm going to optimize. Yeah, so in that case you're thinking like,
+
+Hector Palacios (ADNOC Group D&CS):
+If I have LGPA, I don't need to have such a buffer, right? It's just the demand over the lead time, It is already part of this custom calculation, isn't it?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+The lead time is there. Yeah.
+
+MM- SKEC2 - L08:
+So essentially what you mean is there is a lead LTP available, then the service levels are dropping drastically considering that you have this availability of material at your hand. No service level shouldn't drop role.
+
+Prathviraj Anchan (Borouge):
+What I'm saying is I can maintain my service level if it's an LTP item straight away. System should understand that the material is going to be available to me within three weeks of like a release order. Less than three weeks, I mean, to be precise. So my maximum stock should be half a month, like 0.5 months. Yeah, I mean, not even three weeks, 0.5.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Prathviraj Anchan (Borouge):
+Because my lead time from the release order is less than half a month.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Prathviraj Anchan (Borouge):
+is less yeah so so which means if I keep half a month stock and if it so so rop rop can be roughly you can say up to whatever is the lead time because right the moment release order is picked up it's going to deliver within two weeks yeah or maybe some more buffer but not to the point what you are seeing here absolutely absolutely that's correct so in What you see here is that the current reorder point,
+
+Hector Palacios (ADNOC Group D&CS):
+the one that you have on S400 today is weak. And I'm considering this because as you're saying, the leap time is slow. So your expected demand during the leap time is less than half a month. So this is what you have in the month, 500, and the expected demand is less than 200, that much less. But also it's considering the variability. So it's saying, okay, yes, that is expected, but it can be more, it can be less.
+
+ So we need to prepare for the cases in which it's more. Now, even if we have a stock out, let's say, it doesn't matter because it will arrive in just two weeks. Then if that's the case and it's having zero operational impact, then maybe we shouldn't have such a buffer. We should have a very low buffer and that is a low service because it's not necessary. Service level is only when you have a huge impact into your operations.
+
+
+
+Achmad Sonhaji (Borouge):
+So maybe you can check also the price. If it is a low price, then you get stock more in case of the stock.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes. And in this case, for example, it's low. And for the service level, we have this into consideration. So it's E, essential. It's L, low. And it's a fast move. So in this case, as we were discussing yesterday, I think that for fast movers in low price, we can have a little more stock without issues.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+And also Hector, here we are just looking at one of the real point. Let's assume what would be the maximum stock I should stock for this?
+
+Hector Palacios (ADNOC Group D&CS):
+The max stock for this one is the same one.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, no, no, forget about the EOQ. It should be more than the EOQ, correct?
+
+Hector Palacios (ADNOC Group D&CS):
+So why I should keep that much you know.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+My lead time consumption is only 184. Why I should keep 1000 in my system. I mean on stock as a maximum. Where is the IBP max level Hector?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+This is a current we were the point on IDP.
+
+Hector Palacios (ADNOC Group D&CS):
+We don't have the max because we are missing the
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Normally normally the maximum will be double the real fund. Let's say OK so in this case.
+
+UNKNOWN_SPEAKER:
+OK, it's it's.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Well, I feel that this something wrong in this proposal.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+No, I think that yesterday we already I have asking also how you define these. OK, I already have some. Conventions for that holding cost and the ordering cost for all group company.
+
+MM- SKEC2 - L08:
+Yes, so yeah, we do. There is this we are working with excellence team to define that logic into IBP to add that. So the proposal is almost ready and the final confirmation will send today to the team to get this reviewed. And once it is available, Jaganath, do you want me to share that with the team here, what we've been discussing? We can. Why not? Yes, please. So in the second session today, we can go through that.
+
+ At the end of the Hector, whenever you think we can switch to this, we can have this EOQ discussion separately. If you want to have it now, we can show it now as well, but then we are proposing to capture some details in IBP and calculate EOQ in IBP.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, okay.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+If you can give like one item example using your formula, the one like you are showing in the Excel sheets with all We have that we also have that much better also so we can have that that clarifications as probably say if it is lead time then we can play around on that one on the particular number if it is correct calculation or not based on the input.
+
+MM- SKEC2 - L08:
+Hector, do you want me to? Do you want us to share the screen or go through the lead time convert EOQ conversation right away?
+
+Hector Palacios (ADNOC Group D&CS):
+Right away, let's just let's wait. Let me show something related approvals. I think that's the important part as we finish with the approvals and we have other topics but less important. So, then we can jump to the UI. It doesn't matter the order to me later.
+
+MM- SKEC2 - L08:
+Yes, all right, all right.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, so let me continue. Jagat, we are going to come back to these examples to explain the numbers to see what is the best proposal possible and let's discuss also the formulas and all we need to understand those numbers, all right? Let me show you before for the RRP approval part, okay? So on IVP, we can do it in two ways. We can do it here on the Excel, that is in that you like the Excel a lot, and or you can do it on the web as well, okay?
+
+ So as we see it is going to be on this fashion. You will have your current year points. So this is what you have on for HANA today. You will have the RRP proposal on IVP. Here we can put key fears like indicators that tells you okay this is the change proposed you know so um you can see what are the biggest one the or the the lowest one so we can focus on the big changes okay and the big changes you can have another key fear called a reorder point approval so in this one is just a matter to for example we have 10 and we are going to 15 let's say we we look at it and it's okay Also you can add this cost impact one of the field.
+
+
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Yesterday we already asked them to put the value on the different. Yeah, I don't have the real value.
+
+Hector Palacios (ADNOC Group D&CS):
+I tried to put the current yielded point here in value, but it's not updated.
+
+Aboobacker M. (ADNOC Gas - PD):
+Because approval is related to value. Two fields, sir. Old value and the new value.
+
+MM- SKEC2 - L08:
+Okay.
+
+Aboobacker M. (ADNOC Gas - PD):
+Due to the change.
+
+Hector Palacios (ADNOC Group D&CS):
+Let me take note on this one. Let me put it on another view so I don't lose the traceability. But this input is really, really important for us. Because this is fine tuning of the views. This is why it's really important to see a system as soon as possible, because then you can provide this early feedback and we can take it consideration so cost impact will be like the current pre-order point value sorry sorry max value current max value and the new max value at the max okay okay so yeah current and recommended proposed proposed or recommended we can we can use the the better terminology the ones that you decide So far, I was using proposed, but if you want to recommend it, we can use that as well.
+
+ Okay, so let me take that into consideration. And then, as I was saying, at the end, what is approved is what the controller is saying. By default, will maintain, as the reorder point approved, the last one. So, unless you come here, you analyze the resource and you say yeah this is okay to go, then we are going to replace. That's the only way it is going to happen, not before your approval.
+
+Achmad Sonhaji (Borouge):
+So, in this case, for example, any approval for the approval only single level approval or it can be multiple level?
+
+Hector Palacios (ADNOC Group D&CS):
+The approval, yeah, you can do it multiple level and not necessarily, well, I don't know if it makes sense to you to do it at a higher level, right, but Let me know. From my understanding, it's like... For us, no.
+
+Achmad Sonhaji (Borouge):
+On the PR, we have to depend on value. So it can be, you know, it can be TLA level or manager level, final approval.
+
+Hector Palacios (ADNOC Group D&CS):
+So it can be discussed here. Yeah, yeah, yeah. The approval, we can have many approvals, for sure. So, which levels of approval do you think that is necessary? That is also an important input, because today we have confirmed just Based upon our discussion with the Inventory Shared Service team, we have received feedback of two levels of approval.
+
+MM- SKEC2 - L08:
+One is the Inventory Controller would work on the proposal. There will be a team would be a reviewer and there will be a manager who would be the final approver. This is the input we have received in terms of work, review and approve.
+
+Achmad Sonhaji (Borouge):
+So it will be regarded as the price, therefore price will be finalized by the manager, right?
+
+MM- SKEC2 - L08:
+Yes, so you have the inventory controller who is reviewing the proposals from IBP, team lead will review view the work done by the inventory controller and manager will approve.
+
+Achmad Sonhaji (Borouge):
+All right. All right.
+
+UNKNOWN_SPEAKER:
+Thank you. Okay.
+
+MM- SKEC2 - L08:
+Okay.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah. Sure.
+
+Achmad Sonhaji (Borouge):
+Sure. All right.
+
+Hector Palacios (ADNOC Group D&CS):
+So, Tim, we can put more information here in order to make the analysis better for sure. But just a simple example, if you have 10, for example, here, current reordered point, but you don't have any approval, that is 10 is what you see. So we are not going to use a separate planning or in S4HANA, we are not going to send any information different than this until you put the ticket there. In the case that you put the ticket, like in the example below, we are replacing that.
+
+ So this, after the approval, and when this process is finished and we say, okay, let's start using this new reorder point, then officially we are going to take a snapshot of what's the previous quantity, right? We will put in the current reorder point, we will put the new quantity, because now this is the current, this is the change, and that is the information that we can iterate to us for HANA and we can use on supply planning.
+
+ Okay, so that's how it's going to be related to the approvals. Now, this is only the web view, sorry, the Excel view. If I go to the web, The idea is the following one. Let me see, because I think that I had some changes. So, in this functionality, as we were discussing yesterday, we have some alert subscriptions, okay? So, we have some alerts whenever the historical service level doesn't look fine.
+
+ When we have big changes in the proposals, that right now I have for the rear deployment, but can be for the maximum, for the safety, so we can review everything. And one of them can be also the pending approvals. The great thing of these alerts is that we can go filtering what we are going to consider. Here I have a dummy filter. Let's not focus on this because this is the data that I'm using for the testing.
+
+ But basically, for the first one, for the controller, maybe we can see more information than for the manager. Probably, right? So in the case of the manager, the information should be filtered. So one of the things that we can filter is, for example, let's focus on the items that has the most of the stock value today. You can also focus on the H1 because I seen that in the procedures, I read that you need to micromanage that and so on.
+
+ So you can define what is the scope of what I need to focus, okay? So others are going to be visible or the approvals in this case sorry only for this scope of data that are the critical things to review not for whatever thing that is a penny you know it's for something really important so when you come here to pending approvals you will have the different ones so it's telling you the material and the plant and I think that later we can confirm more information I think that is here on the settings but it doesn't matter when you click here at the end you can have all the information you want here on the in the view so it's filtering this specific case and then you can come here on the same view and you can put the approval here so if you think this is fine right let's save it so you save it and then the reorder point proposal here should be replaced by the six now instead of the five so this is new now In the case that I don't like it, right?
+
+ And it's looking weird, but we can always create a task to the planner to ask for information.
+
+UNKNOWN_SPEAKER:
+So this is SKU.
+
+Hector Palacios (ADNOC Group D&CS):
+Check proposal of this SKU, right? And we can write a date. Let's do it by next week. I don't know if that's too much and you can put a priority. So you can assign a person here. Let's put Jaganath right now. So I create the task and then later, Jaganath, we will be able to see this information on the tool. So when Jaganath comes to the IVP and the planning workspace application, he can come here.
+
+
+
+UNKNOWN_SPEAKER:
+It's already here.
+
+Hector Palacios (ADNOC Group D&CS):
+It's one of this one. Check proposal of bring. So it will appear here. And here you can see, okay, this is the high priority. It was assigned by, changed by Hector, and basically that. So when Jaeger comes here, he will click on this and automatically will take him to the view where you have the filter applied and all that, all the information that you need for reviewing this basically. So it's basically the same screen that I had I assign the task, it's the same screen that the user on the other side is going to see.
+
+ So that's a really nice functionality that you can use for reviewing exceptions to go back and forth. All right, so I don't know if what we are showing right now for approvals makes sense on the tool. This, what you are seeing is internal, just on IDP, okay? To explore other functionalities, we could, but we would lose this kind of views because an IVP is already prepared and you have all the information, you need to take decisions, so I don't know if it is better to take the decision outside of IVP or it's just fine to have it here on the system.
+
+ Let me know what are your thoughts on that.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, you can add the total consumption for the last three years, equipment installed quantities?
+
+Hector Palacios (ADNOC Group D&CS):
+Quantity installed? Yeah, I think that we can bring it into the system for informational purposes. Yeah, for sure. Here is intrinsically considering the demand, right? So you have a higher or lower installed quantity. You have higher or lower demand of parts. So we'll be considering the demand rate.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Also, Hector, if we can add MRP type, if it's PDMZ1.
+
+UNKNOWN_SPEAKER:
+Yeah, OK.
+
+Hector Palacios (ADNOC Group D&CS):
+I'm just thinking what is going to happen with the MRP type, because if we are moving this into ADB?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Many items are planned on demand. It's based on forecast or reservation. But some items have a level, which shouldn't have it.
+
+MM- SKEC2 - L08:
+okay especially planned on demand all right that's that's help us for reviewing that's more than just I want to highlight one point here is that the mrp types what you have today uh are in sap because you are using mrp for plan yeah as we switch to idp yeah but as we switch to idp we will have to change mrp type because we will stop mrp and we will IVP for planning right so the current MRP types will be changed to IVP which is like the MRP type will be something called X0 which is external planning which means you are not doing planning in S4 HANA an external tool like IVP is planning for you so the MRP
+
+Hector Palacios (ADNOC Group D&CS):
+type information would not be relevant after you go go with IVP but is it that that's my my main point I understand that maybe the standard field, Rahul, we need to start using the X0, but there is important information that Aysha is mentioning, like this is PD, right? So, I would prefer that kind of information to stay on S4HANA, it's not because I don't want to replicate on IUP, it's because I think that the best practice is to centralize always this kind of information on the ERP.
+
+
+
+MM- SKEC2 - L08:
+So, if there is relevant information, I don't think it would be possible to store that information in S4 HANA unless there is a custom table created. So probably the recommendation here would be to, for the first, at the time of cutover, we should be storing this first existing MRP type information in IVP as a snapshot for future reference so that this information is available to users because as However, we will have to change the MRP type to X0.
+
+ If we don't do that, MRP will continue changing the PRs and what we are setting to IVP. Yeah, but Aysha is mentioning something really relevant.
+
+Hector Palacios (ADNOC Group D&CS):
+For example, PD, that is only on demand. We don't need to have a forecast. We don't need to have a reordered point or inventory levels. It's just when I need it, I buy it. So in that case, IVP, What we have been discussing so far is not including classifying this. It's only saying, or we go with forecast, or we go with reorder point, right?
+
+MM- SKEC2 - L08:
+But we are always thinking of planning in this case. So basically, such on-demand material, the forecast should be zero by default, right? Because even if it is consumption, you will not try to forecast it unless you are requesting it again in SAP. Yes. Separately Hector on how we do this, but yeah, let's take this input.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Now you can clarify our team. The existing V1 or VB or H1. You're planning to change it to XO. So same like that there is an inverted PD. So for the PD items, what is the new technology? What we have to follow?
+
+MM- SKEC2 - L08:
+You just declared everything would be everything would be X X0 in the All the material is planned. Yeah, because existing MRP type which you have is for MRP which is SAP MRP right. Now if we don't want to run SAP MRP and you want IDP to run your supply planning then the MRP type for all the materials which are planned from IDP becomes X0 which is external planning.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Then how you will identify like what are the items or I think there is no link between this, because the IBP, they do not consider any MRP type, because IBP is proposing something based on the consumption and then forecast and these kind of things, you know. They are not at all considering the MRP type. You will see in S4 HANA, items may be with the levels, but maybe IBP may be proposing to have advanced supply planning, like forecast planning.
+
+
+
+MM- SKEC2 - L08:
+We can think of keeping this information somewhere so that you don't lose the context as we transition, but eventually as you start using IDP, you may not need to refer to that information again and again again.
+
+Achmad Sonhaji (Borouge):
+So I this one will be in phase two right now.
+
+MM- SKEC2 - L08:
+Phase one is still using SAP.
+
+Achmad Sonhaji (Borouge):
+Can you say that again? It's fun. This X0 will be applicable in phase 2, right?
+
+MM- SKEC2 - L08:
+Correct, X0 should be applicable in phase 2 when we do the supply planning.
+
+Achmad Sonhaji (Borouge):
+Yeah, so for now when we implement phase 1, it's still using MRP from SAP, right? Then it's still using Z1.
+
+MM- SKEC2 - L08:
+Correct, correct. But there's only like 3-4 weeks difference between phase 1 and phase 2, so there's not much gap between the two.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Okay, Rahul, what if the item is PD and there is a regular consumption, for example, then I have to change it to Z1, which is a regular replenishment item procured based on ROP levels. How will IBP tackle this issue? It's going to be X0 forecast, then I have to convert to ROP. Will tackle this.
+
+UNKNOWN_SPEAKER:
+All right.
+
+MM- SKEC2 - L08:
+So generally, as Jaganath has clearly mentioned, and that's the fact, IBP does not depend upon the MRP type definition. What IBP does is IBP looks at historical consumption and proposes future procurement. Now, if it is a PD, but it has a continuous consumption for the past few years, then it will become a forecast type of material, which means you are forecasting And the forecast, you don't need levels in that case, because the forecast is there, and you will procure based upon forecast.
+
+ It will not become a reorder point planning, because you are expecting a continuous kind of demand. We can still define parameters, but then essentially, if it is a continuous demand, why would you set reorder point? You will simply procure based upon the forecast.
+
+Hector Palacios (ADNOC Group D&CS):
+I don't see if we have cases. In which we have continuous demand and this is PD, right? Or do we? Because if this is continuous demand, then why we are having this PD on demand?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Because we will always need it, right? Actually, we have some items are PD, but since like they change from low consumption to high consumption, then we change them to Z1 type.
+
+Hector Palacios (ADNOC Group D&CS):
+Exactly. Yeah. That is only natural, but I think that PDs more applicable for some materials are very infrequent.
+
+MM- SKEC2 - L08:
+In those cases, yes.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Yeah, IB prepared materials. You don't have to do anything. So an IBB, so in this such case, it will be like always under forecast?
+
+Hector Palacios (ADNOC Group D&CS):
+If we have an infrequent one, the most likely scenario is that we don't have a forecast for that. Because the frequency when it's I'm thinking on very unfrequent, I think on mid-movers, slow movers below that range. So like if you see the five last year, maybe you have five consumptions is once a year, you know, or three consumption is less than once a year. So in those cases, having a forecast and trying to prepare like a very good forecast and nail it is going to be impossible because the data points are so few that the forecast not going to be reliable.
+
+ The same way if you you try to calculate like an average with two points you know that is not representative. Here if we try to calculate a more a better forecast with five points it's also you can do it but it's not representative. So it's not a good idea. In those cases we are continue with reordered point that means that we need to set up the levels and if we go below the reordered point then we go back again.
+
+ For this kind of that you consider PD, we need to, in a way, we need to be able to flag this. So maybe we don't keep the inventory levels or we keep the bare minimum, right? So just when it drops below like the minimum possible quantity, then you reorder again, something like that. That's what we get. Yeah, correct.
+
+MM- SKEC2 - L08:
+The only thing is essentially when it is PD, I think the lead time of procurement would be pretty high, right? Because then you may not have a regular vendor supplying it and it may go through tendering process. So every time you receive a request from that point, you start working towards fulfillment. So I hope these materials are not the ones which are critical, right? These are not important materials.
+
+ Is this understanding correct, Aysha, in terms of PD? Materials are generally not important.
+
+UNKNOWN_SPEAKER:
+I'm sorry, I'm sorry.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+So when it is on demand, it's on demand.
+
+MM- SKEC2 - L08:
+Yeah.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, so it's on demand, right?
+
+MM- SKEC2 - L08:
+Which means it will have its own lead time from a procurement perspective. So if if end user says request a material which is on demand. The fulfillment may take more time considering from the point of demand confirmation till the point of receipt it may go through process of rendering and lead time of the external vendor and till you get it back in your system correct yes so which means if we have if it is a on-demand material the lead time for procurement is high which means this is not something if it is important has to really plan it much advance so that the lead time of procurement can be accommodated.
+
+ If it is not important and if it is not important, which means I don't care if I receive it tomorrow or day after, I'm ready to wait for this material, correct?
+
+Aboobacker M. (ADNOC Gas - PD):
+Theoretically, yes. Not all the cases. We have I have one scenario that we have some items vital items. There's no movement for many years, but you said they want to keep as stock levels. So those kind of items how we are going to tackle here.
+
+MM- SKEC2 - L08:
+So today what happens to this?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I'll tell you some instance, but there are some. Chemicals or catalysts. It is like a contingency based requirement or these chemicals are used only in case of unit startup. It is purely contingency based. It is a turnaround requirement right? Not a turnaround. If there is any upset in the unit and unit is get down then to start up the unit they may need that particular chemical.
+
+MM- SKEC2 - L08:
+So do you have level for this such materials?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yes, but it may not be having a fast moving nature.
+
+MM- SKEC2 - L08:
+Yeah, yeah, but then it would be managed through the reorder point planning, right? You will, IBP will also set up levels for this. It's not a fast moving material. It's a slow moving material, but you will have some consumption history to it because it may have been consumed and then you can set up levels for Instead of forecast planning, it will fall under ROP. Yeah, so that's what. So if it is slow moving material, which is not getting consumed really fast, that's the first point we discussed, right?
+
+ It would be based upon the reorder point planning, because there is no sufficient data to even generate forecast.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Aboobacker M. (ADNOC Gas - PD):
+No suggestion from the IBP for those items, right?
+
+MM- SKEC2 - L08:
+when you say no suggestion what do you mean?
+
+Aboobacker M. (ADNOC Gas - PD):
+no recommendation from the IBP if already we have existing ROP so there will be no recommendation even there is no movement so why do you think there is there will be no recommendation from IBP? It will be so you will come to know even slow moving vital items user want to keep ROP. So those items we don't want to touch it. So how are the IVP going to give? I will do the reorder point as well.
+
+Hector Palacios (ADNOC Group D&CS):
+So we are taking everything to IVP. We are going to the forecast space, so based on a forecast we can propose.
+
+Aboobacker M. (ADNOC Gas - PD):
+Already we have a setup not to touch the setup based on the user requirement. So those items we will suggest only forecast basis? No, no.
+
+Hector Palacios (ADNOC Group D&CS):
+Depending on the item, the frequency will tell you, let's go this way, reorder point. So, IVP will also follow a reorder point run on supply side, but it will do. So, it will respect the reorder point that we are generating here based on the information available, and whenever we have a consumption or a reservation, it's going to trigger the PR. From IBP.
+
+MM- SKEC2 - L08:
+No, no, no, this input as manual input not change so whatever so your recommendation would be same as what is there today and that will be set as that will continue to be the level on S4 as well.
+
+Aboobacker M. (ADNOC Gas - PD):
+We need to control through some field the extra field for those items.
+
+MM- SKEC2 - L08:
+So how do you identify today such items is there a field in SAP to identify such items?
+
+Achmad Sonhaji (Borouge):
+We have already read FMSN is there then you have PED so if it is then there is ROP then you don't want to change that you can uncheck it.
+
+UNKNOWN_SPEAKER:
+So it is based upon the segmentation parameters what you're saying.
+
+MM- SKEC2 - L08:
+So there is here is I mean the in the screen here is me is there right?
+
+Achmad Sonhaji (Borouge):
+We have FMSN is there then we have yes right? If it is free then S or N then the ROP is there. You don't want to change the if you in case you don't want to change the ROP uncheck the approval, right?
+
+MM- SKEC2 - L08:
+Yeah, yeah, you can, if IVP is proposing something you can always not agree to it and not approve it.
+
+Achmad Sonhaji (Borouge):
+Yeah, I mean, yeah, I mean you can, you can refer on this parameter, okay, FMSN and PET for example, right, because it's mentioned there that if an equity is low or not moving but still vital and you want to keep ROP there, then you can skip out.
+
+MM- SKEC2 - L08:
+Only thing is, if you want us to identify such material separately, then you are you need to help us identify the logic with which we can identify such materials separately. If it is a field which which you identify in S4 RANA, let us know the field. If it is a combination of segmentation logic what you are mentioning Achmad, then give us that input and probably we'll be able to highlight such materials for you.
+
+
+
+Achmad Sonhaji (Borouge):
+Yeah, yeah, it can be like maybe by default if it is M or if it is V, by default if it is M maybe you don't want to change. I don't know but I mean maybe If it is FOM, if it is a proposal, maybe you need to consider to change based on the statistical review. But I think from here, you can easily identify based on your review. If you don't want to change or you want to change, you can just filter it out from PED and FFMS.
+
+
+
+Prathviraj Anchan (Borouge):
+If I'm under, sorry, if I'm understanding correctly, how they are going to do is, and correct me if I'm wrong, Rahul, y'all will be running the usages for all of the materials and finally proposing that these will be the list of materials which will go for forecast-based planning and the remaining will remain at reorder point planning, which we will have to review, verify and confirm, and then only it goes ahead.
+
+ And at the same time, whatever remains as reorder point planning also, you will suggest the system suggested or recommended MRP levels as against the existing MRP levels, which we will again review and tell whether we want to continue with the existing or we will go with the proposed. So, Achmad, that is how it is.
+
+Achmad Sonhaji (Borouge):
+So that's normal.
+
+UNKNOWN_SPEAKER:
+Sorry.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Raghul, are you considering the current MRP levels in IBP? From S4 HANA?
+
+MM- SKEC2 - L08:
+Yes, so we will bring in the current ROP current levels as a reference for you to compare.
+
+Hector Palacios (ADNOC Group D&CS):
+But OK, yeah, it's the one we are the point.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+But it will not be used for your calculations and all, I mean your analysis.
+
+Hector Palacios (ADNOC Group D&CS):
+No, just for the charts, for the comparison, for the alerts, yeah.
+
+MM- SKEC2 - L08:
+So that when you are reviewing the proposal from IBP you know what's the current level and then you decide whether you want to continue with the current level which is there in S4 HANA in IBP as well or you want to go ahead with the proposal of IBP.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Okay, let's see. I have an idea. Which is currently with real point planning. OK, now the IBP is proposing to go for the advanced supply planning. OK, so when I agree on this, OK, let me OK, I'll go for the advanced supply based planning. What will happen to the parameters or MRP type? Whatever I set up in the S4 HANA, it has to be corrected, right?
+
+MM- SKEC2 - L08:
+Yeah, so again, irrespective of whatever you do, the parameters on S4 HANA side are not relevant for planning in IBP, because the parameters on S4 HANA are S4 HANA MRP. Since we are switching to IBP-based planning, which is advanced supply planning, even if we update the parameter in S4 HANA, it will only for the reporting purpose, only for the visual purpose, because the planning will be influenced by the parameter, which are now there in IBP only.
+
+ What you said where the currently the material is a reorder based reorder point planning and then if IBP thinks that based upon historical consumption the material has to change to advanced supply planning then this information would be available and by definition if it is advanced supply planning you don't set up inventory levels the only inventory level which is considered in advanced supply planning is safety stock and then you replenish as per the demand which is as per the forecast, which means you only buy how much you need rather than keeping a level and replenishing based upon consumption.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, maybe once we have the real data only we can able to understand a little more about this and
+
+MM- SKEC2 - L08:
+Probably a point for Hector. Hector, will we be able to show this example to Jagannath where the currently the material is reorder point planning, but historically is a sufficient consumption to convert into an advanced supply planning. So from an inventory optimization perspective, what would be the difference in the parameter the controllers would have to look at?
+
+Hector Palacios (ADNOC Group D&CS):
+For sure. So we need to have the information of the MRP type, the current type. We can compare it with what Bastian was calculated and we can review the case.
+
+MM- SKEC2 - L08:
+Hopefully we have in between the 50 cases we have here with data, we can find something yeah I think this is something should be possible uh because I think we have a similar case like the one we are looking
+
+Hector Palacios (ADNOC Group D&CS):
+at has a continuous demand right but we are but we are not necessarily uh it can look like that but it's only highlighting the periods where we have something so we can jump from december 21 to june 2020 sorry
+
+MM- SKEC2 - L08:
+from december 2020 to june 2021 it's just to see so let's look at if there is something has a continuous demand as per IVP but has a reorder point as per the current input and if we are able to show that scenario specifically then it will make sense in the next session. So Jaganath, let us see if we have data to showcase so that it clarifies the doubt you have.
+
+Hector Palacios (ADNOC Group D&CS):
+If we are not able to show it today, Jaga, next week for sure. For next week Again, we are having sessions for inventory planning. It's the same team, right? It's not different people. Correct. Okay, so we will be able to focus more on data than in the going back again to the dashboards and approvals in theory, because we already discussed that today. We can always review back, but I think that we will have more time to review examples like this.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+Hector, for the... Jahan question, one second, this Jahan question, why this question is, he raised, because since we have some MRP type, PD and Z1, they're already existing. Since IBP is going to propose some type, maybe from ROP to, I'll say like this, ROP means Z1 forecast based means PD. OK, from ROP to Z1 to PD type. OK, why don't you update these same information there? For example, if YBP is adjusting from ROP to on demand.
+
+ So better let the same type known from PD to Z1 you can change it or Z1 to PD.
+
+MM- SKEC2 - L08:
+Will it work no? If we do that, probably will not be utilizing the benefit.
+
+Aboobacker M. (ADNOC Gas - PD):
+Is trying to bring because today this IBP IBP suggestion based on the IBP suggestion proposal only IBP proposing from ROB to on demand. OK, for example. If already existing one is is it one type? You can better change it to PT type in. Same. You can from Z1 to PD. Why you want to use different type in S4 HANA? Let it be in the IBP itself. Anyway, you are going to update. You are going to remove. For example, ROB to on-demand means you have to remove all the stock setups.
+
+ So then you have to update with the PD, remove all the stock setups. You want to from vice versa, from PD to ROB, change it to Z1. Update all the setups.
+
+MM- SKEC2 - L08:
+Yeah, we can always do that. We can always update S4 HANA with no we cannot update. Sorry we cannot update on S4 HANA the MRP type because. We cannot do that because for MRP if we if we don't update the MRP type in S4 HANA to X0 which is external planning. Then you will not be able to turn off MRP. If you run MRP, proposal created by IBP will get deleted by MRP. So we don't want to have a situation where where you have two systems working in parallel for the same material and the outcome of IBP gets erased by MRP.
+
+ So to turn off the MRP.
+
+Aboobacker M. (ADNOC Gas - PD):
+We can remove the access for not to run the MRP, so that is different case, but not to update those fields based on the IBP recommendation. You can update only these parameters like two values.
+
+MM- SKEC2 - L08:
+I don't think that's possible because.
+
+Aboobacker M. (ADNOC Gas - PD):
+I'm telling if if you want to keep no PD type you want to change the stock setup system will not allow you to change it.
+
+MM- SKEC2 - L08:
+But system should not know because you are not using S4 HANA for after IBP. There is no need for system to know in S4 HANA.
+
+2Vivekananda Shetty (ADNOC - PE&ICV):
+We need more discussion on this one. Rahul, one question I have for the same question. See, he says that IBP proposing like forecast-based, not ROP, it will not go back and update the S4?
+
+MM- SKEC2 - L08:
+It will not because S4 HANA, the MRP type has to be X0, which is external planning. Today, since you are using S4 HANA MRP, you have PD or VB MRP type. Which tells MRP how the planning should happen. Now with IDP is the external planning tool where we are using inventory optimization advanced supply planning in IDP we should tell S4 HANA that stop doing planning. The planning will happen in external tool and that's how we tell SAP S4 HANA that the MRP type is now X0 which is external planning not planning by S4 HANA.
+
+ So for all the materials So Rahul, you mean each item has two MRP types?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+One in S4 HANA, one in IVP?
+
+MM- SKEC2 - L08:
+Yes. So IVP, there is no MRP type. Is either advanced supply planning. So IVP is kind of a better MRP, right? So you will have MRP type of X0 only for all the buttons in S4 HANA. So you'll have to stop looking at S4 HANA to categorize what kind of material it is. You will only have to rely on IBP to understand what kind of material it is. Today, you are used to use this, so that's why this is probably creating some confusion.
+
+ But as we go into supply planning, as we start using more and more systems, you will realize that you don't need to even look at S4 HANA. You will always look into IBP only. Is the only tool where you will understand how the material is getting planned.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+OK, Rahul. If I received an MDG for a new item created, So for MRP type, this will be x0?
+
+MM- SKEC2 - L08:
+It will be x0. Then in S4 HANA?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Yeah, it will be x0 in S4 HANA.
+
+MM- SKEC2 - L08:
+And as part of the new material creation process, it will come into IVP. And IVP will determine what is the reference material for it. And it will propose whether it has to be reorder point planning or advanced supply planning in IVP. That you will not look at it in S4 HANA. S4 HANA will be defaulted to X0.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+So after IBP implementation like MRP, it's always X0?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Achmad Sonhaji (Borouge):
+Can we make ROP in the beginning and the IBP manual for new material? As per the input of end user?
+
+MM- SKEC2 - L08:
+You can, you can, you can always see even if system proposes it will come for your review and then you can always change it the way you want. No, no, I mean, I mean this is for new material. OK, even for new material, right? We have MDG. New material will also go through the same process.
+
+Achmad Sonhaji (Borouge):
+Yeah, yeah, second row. So normally we just expect parallel process when we receive MDG. OK, it will be there is a proposed ROP from end user for example. Material is vital. Then how we will initiate this ROP in the system because it's no more using material master in SAP. It will be maintained in IBP, right? So can we manually enter in IBP in the ROP for the new material if it is vital?
+
+MM- SKEC2 - L08:
+Yes, you can maintain that manually in IBP the ROP if you have input from end user. So the way it will happen Yeah, but not link to MDG, right?
+
+Achmad Sonhaji (Borouge):
+So the inventory don't need to manually enter in the IBP, not link to MDG because now we have MDG that we enter ROP and then automatically will be defected in the S4.
+
+MM- SKEC2 - L08:
+But in this case will not be there, right? Yes, in this case it will not be there even if you capture an MDG. Since in S4 the the the MRP type will always be defaulted to H0. All these parameters needs to be updated in IBP directly.
+
+Achmad Sonhaji (Borouge):
+Yeah, so inventory team should also, I mean not only process MDG, but need also to enter manually in IBP. So we need to also the manual guideline. OK, how to do it in IBP.
+
+MM- SKEC2 - L08:
+So Achmad, what will happen is the way is proposing right now that system has proposed ROP you will have similar screen for the same screen for new model as well but the current ROP would be something which is blank because it's a new material and the proposed ROP would be something which will come from IBP. Now similar to the way you are reviewing any other material you will review the new material parameters as well but then you can change it to the user input as so you will not agree to the proposal from IGP
+
+1Arunkumar Viswanathan (ADNOC Refining - HQ):
+but you can change it to the user input you want and it gets goes for approval yeah we can simulate during the testing yeah yeah I just have one scenario or a question so the forecast is to planning you suggested on the 25 number of issuance during the last five years period. Just in case if an item, for example, during the turnaround. So there are multiple reservations as per the equipment ID. So the issuance pattern for particular period, maybe in one quarter, it may exceed more than 25 because of the turnaround requirement.
+
+ Can I stop you here?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+MM- SKEC2 - L08:
+So turnaround is not part of, it's not part of corrective or preventive maintenance. What we are focusing right now, it went to the level for corrective and preventive maintenance. Turnaround becomes direct input. So we don't consider the historical consumption of turnaround into the planning. Turnaround becomes direct demand and it goes to supply chain. So we buy what you need based upon turnaround work order.
+
+ If it is one work order, and work order does not matter.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But those turn around work orders, how will you differentiate?
+
+MM- SKEC2 - L08:
+Work order type. You have separate work order type for turn around. Also we have WPS and work order.
+
+Achmad Sonhaji (Borouge):
+You can put work order type or WPS.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I don't know Rahul, this kind of information you have to educate to our EAM team while you are giving this session. Because we have seen multiple work orders.
+
+Hector Palacios (ADNOC Group D&CS):
+in PM03, PM02, PMGM yeah so this is also used for the turnaround you see that this aggregation is not trustable this aggregation so sometimes they are doing turnaround but putting for example PM1 for corrective correct correct yes correct there are many way like that yes so it's ok ok see there is no due diligence on that selecting the IP I think that I've seen some cases if I look here probably we'll find like one big spike on the
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+demand and in that case yeah CM then changing the status into shutdown they're looking on you know maybe they put somewhere in the work order to yeah in Burut's case they put also in the revision revision they put on the revision only they keep the maintain the CM three ones series and put the revision now into shutdown.
+
+Hector Palacios (ADNOC Group D&CS):
+Is that information that we can have like the revision is something that we can integrate into AVP and say okay in this period we have this kind of issue because let's see this case. Let's see this quantity. It's not normal at all if you see the consumption.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+That is 2021 we have a major shutdown. Maybe they refill all these tanks is they flush it and they need to re normally for this like glycol they top up a normal condition but during after shutdown they they may flush and everything and dry and drain everything they need to top up from zero so that's why it's increased the double up but it's 2021 yes we have shutdown but normal this one because this is this like this equipment is running the equipment it is only for a corrective or preventive only normally the work order but during sometime if it is not happening, they will do this one, they will drain and they will top up.
+
+ Normal like oil also the same.
+
+Hector Palacios (ADNOC Group D&CS):
+I think that that is better if we can integrate in such a way the data like to flag the period or to say this was in this particular month we have a shutdown.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+No, no, no. As mentioned already, it normally make that revisions in normal condition. Other than what we cannot define it. You cannot define it. If they flag as a revision as a shutdown yes we can identify but there are so many CM it is creating that triggering the high consumptions but we cannot differentiate item by item.
+
+Hector Palacios (ADNOC Group D&CS):
+Can we trust for example that revision because maybe they are doing it for some materials but for the others it's happening the same but they are not putting anywhere that this is a shutdown. Is that a reality? That for some materials they are not flagging that this is shutdown, even in their revision?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+They are not flagging in the material level, they are flagging in the work order level.
+
+MM- SKEC2 - L08:
+Yes, Hector, if this is available in SAP at work order level, I think we should be able to extract that information and segregate turnaround separately.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, yes, please let's take that point because that best case scenario of course if we have the information from the source.
+
+MM- SKEC2 - L08:
+We've taken that point and let's look at the data in S4 and see how we can segregate so that probably in the future session we can show how the how the segregation between work order is happening in IBP so that user can get this confidence that okay we are able to take out turnaround requirements separately then correct and prevent it.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But Rahul in the yesterday workshop you have taken only two type like PM 0 1 and 3 right so yeah so PM 0 1 is corrective and then PM 0 4 is preventive I just mentioned in the chat the
+
+MM- SKEC2 - L08:
+same thing correct yes it's the same thing that's the work order type yes this is how we are segregating between different so if you want us to combine other than this too.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So what will happen? The historical data's.
+
+MM- SKEC2 - L08:
+Agreed, so this is an open point where I don't. We discussed yesterday, right? So you also create manual reservation and the consumption happens at the cost center.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+That information is that is an additional one apart from the other. Instead of PM 0113, there are some other models with other type also. I don't know if I RPM GM.
+
+MM- SKEC2 - L08:
+Yeah, so PM 05 or PM 04 would become part of the preventive only, right? Predictive also type of preventive only, correct? You predict before it happens.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The terminology wise, yes, your discussion is correct, but how the users see they actually using it. We have to speak with them. Alright, so essentially, If you are proposing something, you propose only this two has to be used.
+
+MM- SKEC2 - L08:
+Yes, so we have only so we have three breakup only either it is corrective or a preventive or turnaround. Now if any of the orders should be part of any of this three, then we can make this change to make sure that if you feel that the predictive is more breakdown in nature and should be part of the historical consumption of predictive should be part of the corrective, We can add that into other part of the corrective only so that it shows up correctly and your point is correct.
+
+ We can validate this from user so that it it shows the actual behavior in the system.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+And for analysis for the last five years you consider. In the redeveloping the data's.
+
+MM- SKEC2 - L08:
+Can you say that again?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Last thing I don't see yesterday you show some data's not like you taking only two. Type PM 0 1 and 3. Yeah, so instead of PM 1 and 3, it takes even the others also. Like what I mentioned.
+
+MM- SKEC2 - L08:
+So from an analysis perspective, we'll show the consumption pattern for every work order type and then we'll ask which work order type should be part of which planning in IBP. Either it will be corrective or preventive or turn around.
+
+UNKNOWN_SPEAKER:
+Yeah, OK.
+
+MM- SKEC2 - L08:
+Point noted analysis to be for every work order type historical analysis for past five years. Anyone at any other point of college you had in your hand if you wanted to ask something.
+
+Achmad Sonhaji (Borouge):
+Around the the condition for the work order is it will be in the generic or it will be plan level. So I mean maybe different plan. Different implementation because maybe it's not unifying the process of the turnaround or the corrective maintenance currently. For us, for Bruce, you know the order type, it can be different. Maybe they use corrective for turnaround also, maybe. But they put the WBS in it, in the work order.
+
+ So I mean, my point is that be applicable for plan level or or the generic unique unified level so we would like to have same definition across so that everyone is working because there are two things uh as much
+
+MM- SKEC2 - L08:
+what we need to do is what is happening today is one thing but we also need to make sure that it happens correctly for future right yeah yeah sure so so we want to have a unified way of doing things if someone is doing differently we can but then we'll have to ask them to change it to the unified. You have doing across agencies. It has to be following the same way of executing order across agencies.
+
+
+
+UNKNOWN_SPEAKER:
+So that's it.
+
+Achmad Sonhaji (Borouge):
+Here will be a cut off, right? I mean for the migration of the or some history. Maybe you can check it from level what is closest one right in the future. Maybe we can agree on the unified process.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+So Rahul, for Tenorant, we'll go directly to supply?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+And for PM, supply?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+MM- SKEC2 - L08:
+And for CM, forecast?
+
+UNKNOWN_SPEAKER:
+Yeah. Yes. OK. Forecast and ROP, both.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, it's exactly. OK, Tim, let's continue. I want to go fast over the dashboard functionality, a snap to functionality so we can focus on discussing the open topics and later maybe we can enter to the system as well to play around and to see its functionality. So, dashboard wise, what you need to understand is that planner workspace is more focused on checking the example by example. So, you have material location combination, and you can check the exceptions, case by case, this is the way to go, okay?
+
+ If you want to see the resource consolidated, you can always have a dashboard as well. So here's where you can bring like the value conversions and so on, because after converting to value, then we can compare them, right? Before volume, we are comparing like apples with oranges probably. Value is everything in the same measure. So, this is just to give you an idea. It's not at all any final state, but it's just for you to see which kinds of visualizations you can have here.
+
+ So, for example, lead time demand or the lead time by itself, you can review it in this map chart, heat map chart, where the colors are indicating like the the number basically so if it is a high number you will have colors around here or whites here this is just a way of the format we can change it for something I can show you an example later but it's like a gradient of the same color so more clear more dark is a possibility as well service level review so you can check by the different segmentations the service level you're getting at high level variability.
+
+ This is coefficient of variation. As I said, it's just a normalization, let's say, of the standard deviation taken to a percentage. So you can see by family, you can see how they are behaving, if this makes sense. It's just to review the input, to know your data, to understand that sometimes why I'm having high safety stocks, because yes, you have a high variability as well. Charts you can have here, right?
+
+ I think in most of the cases we are getting some CNS because we are proposing a safety stock and probably you don't have it, okay? So it's something that we need to fine tune as well. But here is showing you increases or when we are proposing decrease, but at high level. Then you can have some charts that show you the value, ROP by family.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+I see that we have an open mic there.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Hector user can make his can able to make his own dashboard. Yeah, yes, yes, you can.
+
+Hector Palacios (ADNOC Group D&CS):
+You can modify whatever. Yeah, we can teach you how to do that. We can put it as plan as part of the training, yeah?
+
+1Prathviraj Anchan (Borouge):
+OK. Sorry Hector high variability. What exactly was that? We are having high inventory levels due to high variability. Can you elaborate a little more?
+
+Hector Palacios (ADNOC Group D&CS):
+For sure. Yeah, yeah, for sure, for sure. Let me see if I have one useful slide. I don't think that I have one, but we can check one of the charts with some examples. So here the intrinsic probability is that you will have an average of the data. Okay, so let's see in this case, it's going to be around here, right? Near to 1,000, let's say. But you know that the data is going to vary to these numbers, even to these numbers that are sometimes like crazy high, or the double, or like 200.
+
+ So that is showing you a standard deviation, okay? So what is a normal deviation if you take an average of all deviations from the average, all the differences, then you have the standard deviation measure that is so famous in statistics. Now, that standard deviation is telling you the dispersion, how variable it is, because in the best case scenario, this is fairly flat. You don't have deviations.
+
+ That is a dream scenario for a planner because you know exactly what is going to happen. But when you have variability, it's the other way around. It's like kind of unpredictable. So in that case, we should have a higher safety stock because we can plan for 1,000 or we can expect that 1,000 is what we are going to receive on the lead time. But the reality is that sometimes you hit these peaks, right?
+
+ And for those cases, you're not going to be prepared. So when you have high variability, you also want to have a buffer. So this buffer is exactly this reorder point that we have here. So the higher, basically the, not the reorder, I'm sorry, the safety stock. So reorder point is safety stock plus demand over the lead time. Or we can calculate it the other way around. We can say that the safety stock at the reorder point the demand over the lead time.
+
+ So this red part is just covering for that variability. So you have variability on demand, you have variability on lead time, you need to cover for that because it's not going to be the expected demand. This is the expected demand over the lead time, right? It's like this little box. But then for accounting for variability, you need to have an extra buffer. So that's why you have city stock in the first place.
+
+
+
+Prathviraj Anchan (Borouge):
+Yeah, noted on that, Hector. But finally, the decision making would be at the inventory controllers discretion because this might be like a spike, which is not really going to be your normal demand in the coming few periods, based on which you might still not want to alter your MRP levels or anything of that sort, like even safety stuff for that matter.
+
+Hector Palacios (ADNOC Group D&CS):
+So maybe something that we would like to have as well is maybe an outlier correction. So in the system provided that we have enough data for doing this, we can cut off this. Imagine that even after all that we are discussing about turnaround, we are not able to distinguish and we are going to get the data as a whole. But the system can easily, at least this case, can be easily identified. And the system can say, okay, this is an outlier.
+
+ Maybe this one as well, and can put it as an average value. In the cases that we are not able to do so, maybe the user can help us. The user can do it just once, because you see that input, and you say, okay, this is affecting my results. I can put another value there, run Inventory Optimization again, and from now on, I'm getting the good proposals. It's time just to remove some to do a little of data cleansing, basically.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Prathviraj Anchan (Borouge):
+Basically, it's going to highlight you any kind of, which is an abnormal event or incident.
+
+UNKNOWN_SPEAKER:
+Outliers.
+
+Prathviraj Anchan (Borouge):
+Yeah, outliers. Outliers, exactly.
+
+Hector Palacios (ADNOC Group D&CS):
+So let's do that. I think that, at least in this case, until we are not sure that we can segregate the data between turn around perfectly, because that is a challenge so far. Then we can start thinking on these data cleansing approaches. Because IVP is there for that. I mean, the existence of these algorithms is because SAP is well aware that in every company, there is some outliers on the data, things that shouldn't exist maybe, that is a problem of data management, for example, in this case, but it's a reality in companies.
+
+ So in those cases, we want to be able to detect these abnormalities and to correct it so our resources are not affected by them, like in this case. Okay, let me go back to the dashboard. So you can have visualization also by value. Don't take the number, please, because the numbers are made up with just some dummy prices. Probably if you see some things are not going to make sense at all, but you can compare families, you can decide on the irrigation level as well.
+
+ Here is where we need a big input on what are going to be the hierarchies or attributes that we are going to use for visualizing information, because here on the dashboard is really important. Comparisons on the service levels. So whenever you have a reorder point proposed by the system, you can check in the past, is this reorder point enough or not, right? So this is the estimated historical service level of IVP with the reorders points that we are proposing.
+
+ This is the current scenario. The only thing that is saying to me right now is that probably we are calculating higher levels for IVP than in the system. So maybe we need to do some fine tuning there for some cases that really we don't need to have safety stock or reorder point that high. And this is the target, okay? But the target is more thinking in the future and these measures are more focused on the past because it's the only information that we have to measure that.
+
+ And then you can also have dashboards like this comparing different scenarios that this is what if analysis that I was talking to you about last session. And you have, for example, this is for the 99% service level, this is for the 95, 90%, 80 and so on. So you can see as you increase the service level, you are going to increase also your proposals. And this is the basic scenario, the current situation.
+
+ So yeah, this is about dashboards. It's something that we can configure in the system to have this big view to analyze the data at high level. If you want to go to detail level, you always have the planner workspace that we're discussing. And you also have the Excel that we are discussing as well. So on Excel will be fine to do all kind of reports because this kind of visualization like the one that I'm showing you right now and to put a formula here to compare this with this and to do your own kind of calculations, in that case Excel I think is the best.
+
+ You can create pivot tables and so on. So it's up to you at the end how many reports you want to have. We can define at the beginning some examples, some ideas, but the idea is that you are trying so you can do whatever you need on Excel as well to create your own customization views, save it here, you know, like this is the initial template, but if I change something that I want to save it for me, and I can save it here, I can share with other users, but you are the owner.
+
+ That is the message that we want to give. So that is about that. Related to snapshots, we can also take a snapshot by cycle. So imagine that we have here a monthly cycle. We have some issues with the naming there, but the point is that you can take a screenshot of what was the, this is just an example, it's not the final key field, but you can take a screenshot of what was the reorder point on the last cycle cycle, two cycles ago, three cycles ago, and so on.
+
+ So, you can see the evolution over the time. So, depending on the frequency you are changing this, maybe you are changing this quarterly or yearly, you will see where the prior resource of this, and finally, if we convert to value, we can also take it to a dashboard and check on the dashboard how this particular material is changing over the years on the reorder point level, max level, safety stock levels, and so on.
+
+ So it's basically a copy. Every time that you are creating new proposals, you are making sure of saving the prior ones, and that way you are creating like a traceability of the cycles. What I said in every cycle, all right? That can be also useful for visualization, for reporting, and so on. What else? Yesterday we were discussing about history, okay? So, I think that I have right here an example change history view.
+
+ So, on IDB, we can create a change history report that whenever we are making a change, it's going to tell you who is doing these changes, okay? So, for example, here we have one example of my coworker that was changing for the sake of the example one number, and it's telling you the change ID, who did it, and so on. So it's a report that basically is going to tell you all the information about a change, the prior result, the after result, the change ID.
+
+ So if you are changing many things at the same time, they will share the change ID. It's basically the event of change and all the information related. So this is a view that we can have on the Excel. But then if we go to the web, we also have the same one. Let me show you on the web. Change history analysis. So it's exactly the same one. You can select what you want to see, which keyfigure was changed by an user to track the historical changes.
+
+ And you can apply filters, you can look for the specific user, or if you know the ID, you can filter only that specific ID on the view. You know so just to check what that change event and here you can also play with the time range so you can say okay I want to check the changes done in the last week or the changes done in the last month right so yeah basically it is providing you that traceability of the information and whatever change you are doing to the official key figures that we are adjusting you can keep the track of the changes here.
+
+
+
+UNKNOWN_SPEAKER:
+Okay, is there any question?
+
+Hector Palacios (ADNOC Group D&CS):
+Because aside of this, snapshots, change history, dashboards, I think that now we can just jump back to the open topics.
+
+Aboobacker M. (ADNOC Gas - PD):
+Can we be able to bring that material number into that criteria? The change ID?
+
+Hector Palacios (ADNOC Group D&CS):
+The change ID? There is no more material number? So the original changes, you know, but then you have this view of the effects of the changes and you can look for the material ID. Yeah, for sure. So you can look for the specific material where you have the change and you can find information. It's better to write right here, I think, let me do an example. Example if I take this one let me see if I took it yes so you select it to go and it will show you it will load a little bit to retrieve the information but it will get a report for you that even you can take it to the excel later so if you want to take this information to an excel and play there you can export now and you get a So many visualizations that we have on the web can also have this, right?
+
+ So you just take it, whatever you are seeing on the web, you can say, okay, I want to see it exported to Excel and you already have a report here that you can share and you can store in your site.
+
+UNKNOWN_SPEAKER:
+So, yes. All right.
+
+Hector Palacios (ADNOC Group D&CS):
+Next point that I have, aside of the dashboard snapshot, is to continue with the service level discussion. So, yesterday we were discussing about this point. We were saying the service level is impacting the safety stock, right? So, we were showing you some dashboards. The higher the safety stock, the higher the reorder point, point is the demand over the lead time plus a buffer plus that safety stock.
+
+ So basically increasing the service level increases also the reorder point for us. Now we need to understand in which cases we want to have a high service level and in which cases it doesn't matter. What I was telling you yesterday is that service level is the non-stockout probability. So basically saying that if I have a service level of 99, I am expecting that in 90% of the cases, I don't have a stockout.
+
+ So, I'm able to fulfill the consumption or the demand. And in 1% of the cases, the contrary, we are facing a stockout. If we have 80% of service level, then you have 20% of a stockout probability. So, depending on the impact of that stockout is that we can want to reduce it or increase it, right? So if we have a very critical material, for sure we want to have a very high service level. We want to reduce the stockout probability to the minimum possible.
+
+ If the stockout is not having a big effect, then maybe we want to have a low service level because otherwise we are going to be overstocking when it's not a need for that. So, this is the definition, and we were discussing yesterday to include these segmentations. The proposal yesterday was BC, BED, and ABC. Between the segmentations, based on the iteration that we did yesterday, we come up with the idea, let's include the HTML, the price is a better indicator of what should be stocked or not, and then let's consider also the FMCN.
+
+ So the first point remains the same. So we have business continuity each part, then the higher risk score, that is a 99% of service level. If then it's not a business critical, then you have a BED, right? So you decide based on that.
+
+Achmad Sonhaji (Borouge):
+I think in the MMSN, it's not supposed to be opposite. If it is fast moving, there should be higher safety stock. Higher safety stock. Okay, it's the other way around.
+
+Hector Palacios (ADNOC Group D&CS):
+Let's correct it right here. Okay, perfect, thank you. So then if we have a buy term, we will check first the price. So if the price is moderate or mid or low, we keep a higher stock. If the price is high, then we want to keep less stock. Here we are going to decide if this is an F, then higher service level, because then higher consumption, then I guess higher possibilities of having a stock out.
+
+ And then if that is an M, mid-mover, maybe we can drop a little bit the priority and put a 4. That 4 should be an 80% service level. If this essential we are going to look again this is a low price and we can have a higher service level it is not going to have a big effect in the stock value but if it's a high price it will have a high effect on the stock value at the end so again we consider between F and M and we assign the proper priority and so on.
+
+ So of course the D desirable is going to have the lowest values of service level and also I kept separate here the SN, okay? So SN is slow and non-moving. I guess that you don't want to give us levels of stock. Am I correct? Because it depends, right? So if this is an ML, maybe it doesn't matter. It's a vital ML, it's still going to receive a higher level. But if it is not, maybe for the slow movers, non-movers, you don't want to keep any stock levels.
+
+
+
+Achmad Sonhaji (Borouge):
+You know there is FMSN is nothing, not FM or SN, then I put two, I don't understand, for the first ML, for ML, The point here when you have a line, how to say this?
+
+Hector Palacios (ADNOC Group D&CS):
+This point, when you have that there, it's basically saying it doesn't matter. So for example here, business continuity is the only thing that matters to take this issue. I don't care about the BED, HML or FMC.
+
+Achmad Sonhaji (Borouge):
+business continuity then priority one here is the same scenario yeah so then the second one is you know vital and medium low price but FMCN is nothing so mean you regard us the FMCN then you put 2 yeah regardless of the FMCN we are but if it is not moving then maybe we have to put 2.
+
+Hector Palacios (ADNOC Group D&CS):
+Excellent. The last part?
+
+Achmad Sonhaji (Borouge):
+Yeah, I mean if it is slow-moving and non-moving, why don't we keep the highest service level, 95%? Ah, yeah, yeah, you're right, you're right.
+
+Hector Palacios (ADNOC Group D&CS):
+So we need to put something like there is different than NS. But do you agree that it's slow-moving and non-moving should have the lowest service level possible or not existing at all?
+
+Achmad Sonhaji (Borouge):
+Yeah, so the highest is if it is, the price is low, the fast-moving and vital advances fit highest service level right yeah so let's keep it like this that's better but also maybe we consider again the the club m and l because you know l is like two thousand and below uh dirham then m is ten thousand so I think the the price also be different maybe team here can give feedback so let me understand better uh do
+
+Hector Palacios (ADNOC Group D&CS):
+you want to separate this even further, like between mid and low?
+
+Achmad Sonhaji (Borouge):
+Yeah, because you know, low is the gap, low is like 2,000 dirham and below, right? Then M is 10,000, between 2,000 to 10,000, and high is 10,000 and above. I mean, because this is a big, wide, big gap, a big cloud, I don't know if this quite also give impact on the stock value. Because it will have the impact on the stock value, right? It will have a higher ROP so I mean if you can have different matrix for M and L okay not in the club together so maybe be like V, L and F for example one then V, L, M so
+
+Hector Palacios (ADNOC Group D&CS):
+I don't know maybe if you okay let me work on it I will just explode the branches because this is like a tree right so we are just exploding branches but let's see how it looks like between the six numbers. I just hopefully we don't end up with like 20 risk scores, you know, because if you have like for each case, let's see how it's looking like, If I see that this is becoming too complex, then I will raise the hand and tell you that maybe we need to stop in one place.
+
+
+
+Achmad Sonhaji (Borouge):
+Maybe Hector also input, maybe you can see the population of armed You know, you can check, you extract data from our system. Okay, how many material with V, how many material with L, how many material with M, how many material with S, for example, for S, right? From that, you can make like distribution, right? Normal distribution. So how you can, then you can put proper distribution on the target surface level.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, it's a good idea. Let us do the following. We have good news that because we have some issues with the connection between ADP and S4HANA was solved today. So we are very happy. We will start integrating much more information than what you have seen so far. Hopefully for next week, when we start discussing about chemicals, we have much more information. So let us prepare some slides. We will integrate all the segmentation information you have today.
+
+ Integrate the historical data, hopefully stock levels, whatever we need to do this analysis. And we can create maybe a dashboard for doing this analysis and checking, okay, here's where we have concentrated most of the value, I guess. So maybe here are opportunities to put a proper service level. And you can help me with that. I will try to put all the dashboards so we can do the analysis, but it's important that we do the analysis together to say, okay, yes, this is a candidate to reduce the service level or here this is very important and we need to increase it.
+
+ Let me come with a proposal, but let's iterate together and also based on the results, not just in this matrix, but let's check some specific cases and we see if the proposals on IVP with the service level that we are proposing from this matrix makes sense or not.
+
+Achmad Sonhaji (Borouge):
+Okay, hopefully you can extract it. I mentioned, okay, we want to see the distribution of this segmentation. How many we have V, how many we have E, how many we have D, and how many we have H. Here, how many we have M, how many we have L. Then we can see the distribution.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, yeah. Good point. Materials. Let's do this.
+
+UNKNOWN_SPEAKER:
+Proceed with them.
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+So if I may add the suggestion, uh, also the numbers also can, uh, correct me if I'm wrong after the BC as per criticality of the materials, I think directly we should go with FMSN. Before even we go to the video or the, uh, value of the materials. Because after the BC, which is business But after that, we need to look into the movement of the material to have them as category wise. From the FMSN, we go to the VED and then the value level.
+
+ Because honestly, right now in ADNOC, we don't even look into the value. More we focus on the movement, also the criticality of the material. Also the criticality of the material on the failure in the operation.
+
+Hector Palacios (ADNOC Group D&CS):
+But you're saying that case, it's even more important than the BED?
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+Exactly, yes.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Okay.
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+So if the material is fast movement and vital, that will be number one. But right now you're mentioning like if the material is essential and fast, but the medium movement is actually more important than the vital movement.
+
+UNKNOWN_SPEAKER:
+Yes, yes.
+
+Hector Palacios (ADNOC Group D&CS):
+The hierarchy in details, as you're saying, first with CBC, then BED and then as last the FMCN. I wasn't considering this that as much, you can tell me if I'm wrong, but the point is that even when I have some meat movers, imagine that you have a consumption like once a year, sometimes you have like big, a bunch of demand at once, you know? So in those cases is if we reduce the service level may indicate that for such in frequent cases we are not fully prepared, but maybe we can check with some resource.
+
+ So, I didn't want to bring the frequency into the equation because in a way the frequencies are reconsidered because you have a demand rate, right? So, when you have an F, the demand rate is higher and the consequence of that is that the safety stock proposed or the reorder point is also going to be higher because the demand rate is such So, in the formula, I think that is already kind of considered, you know.
+
+ So, that's why we were thinking more on other parameters that are not considering the formula. For example, BCA, I have no input for my safety stock calculation there. The same way for BLE and HML. But for MNCN, it's intrinsically considered on the calculation.
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+So, how to affect know if the score is high. So what will be the consideration of these materials?
+
+Hector Palacios (ADNOC Group D&CS):
+So maybe let's see some examples on the on the web.
+
+UNKNOWN_SPEAKER:
+OK, let's see if we find.
+
+Hector Palacios (ADNOC Group D&CS):
+I see. The views just okay let me check well this is a mid mover for example um it's a e as well so in this case we have a high variability you see here this happened 2020, 2021 but it's having a mean time between failure and frequency is like every five months in average. Yes, it's every five months you're having an event. And we are putting a low service level here because we say, okay, this is a E, you know, it's also an M.
+
+ So it's low frequency, low price, and the demand is very erratic. It's very variable. Over 100% so these are the recommendations this is how it is looking like for a mid mover let me look for maybe a fast mover let's check if this is a scenario not that one it will be better if I go to the excel and try to find One example myself. Ah, finally we have one here. So this is a, maybe this is a good example because it's a desirable and it's a fast mover.
+
+ So what is important measure here to define if this is important or not? Right now I'm saying that it's not that really important because it's desirable. It's not vital, right? So these are like the different reorder points that you can get depending on the different service layers. Let's analyze the inputs. So this is the amount rate. You are trying like more than one piece a month. The lead time is almost three months.
+
+ Sorry to bother you.
+
+MM- SKEC2 - L08:
+Just a time check. We are beyond our planned meeting time. So do you think we can continue this conversation if everyone, we can continue this conversation in the second session?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, you're right. Miss the time. Let's continue in the next session then.
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+I apologize guys, I stopped the question in the late time of the session.
+
+Hector Palacios (ADNOC Group D&CS):
+No problem, we can do the analysis later. For that reason, we have that time also allocated. So let's do that. Perfect, thank you very much team. See you later in the afternoon.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Thank you, everyone. Thank you, everyone. Thank you.
+
+UNKNOWN_SPEAKER:
+Hmm. You
+
