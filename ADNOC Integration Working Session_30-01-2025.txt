@@ -1,0 +1,1128 @@
+UNKNOWN_SPEAKER:
+Hola. I just moved the session. Yes, half an hour. Well, 20 minutes.
+
+Fiamma Giorgi:
+Ray, do you want us to show you where we are aligning?
+
+UNKNOWN_SPEAKER:
+Please, yes, to notice.
+
+Saul Portillo:
+This way we take advantage of it and when it adds up, suddenly Basti changes the sign in one or the other thing, but we can go and see what we have mapped and we can go there and understand. So the guys can also see it. Let me, let me, we're going to share. If you want to go, go sharing and I'm going through the technical norms of what I was looking for right now of the, of the Attributes. I'm going through the chat.
+
+ Yes, I see it. Foreign Foreign Critical part.
+
+UNKNOWN_SPEAKER:
+Say, say, say.
+
+Saul Portillo:
+Yes, because they said today in the session that I think they have a field, we should see it and see if there is a field where they put, if it is for ROP or for Forca, that is what I understand. Yes, yes, because in fact they want to compare what IBP calculates against what they currently have.
+
+UNKNOWN_SPEAKER:
+The ABC? We have two of these.
+
+Fiamma Giorgi:
+No, we don't generate the ABC. I got confused with the 15.
+
+Saul Portillo:
+No, the ABC is this. This is it.
+
+UNKNOWN_SPEAKER:
+Okay. Okay.
+
+UNKNOWN_SPEAKER:
+foreign um I'm opening it.
+
+Saul Portillo:
+If you want, Fee, we can show it to Ray, at least. Foreign foreign Okay.
+
+Fiamma Giorgi:
+Should we start with the latest news?
+
+Saul Portillo:
+No, let's start first with... Let's go a little bit backwards, Ray, so that we already have it mapped 100% and we can review it later. First, let's focus on chemicals, which is the urgency for next week. A cuanto a transaccional. Ese que ves en la línea 7, es el que tiene que ver con el consumo histórico de los químicos. Ahí hay un tema, Rey, que entiendo que va a tener que evaluar, porque el proceso de MRO y de químicos, ellos comentan que es similar.
+
+ Y en MRO, tú tienes separada lo que son los consumos correctivos y los consumos preventivos.
+
+UNKNOWN_SPEAKER:
+¿Sí?
+
+Saul Portillo:
+Entiendo, ahorita le consultamos, él quiere validar si eso existe también separado de esa manera por el tipo de orden en químicos. ¿Ok? Porque ahí te estamos colocando un solo key figure para el consumo, porque nosotros siempre teníamos en el radar que químicos era simplemente consumo correctivo. Pero hay que mapear allí en los datos de ellos a ver si realmente ellos se the chemical consumption by preventive and corrective.
+
+
+
+Reinaldo Gutierrez:
+Could you add a column that says extractor?
+
+UNKNOWN_SPEAKER:
+Yes. Yes?
+
+Reinaldo Gutierrez:
+Would you know what the extractor is for each of these case figures?
+
+Saul Portillo:
+No, but that's in a file, right?
+
+Reinaldo Gutierrez:
+Yes, yes, yes, but ask, just in case. In the MRO mapping we have Let's see, I'm looking for it.
+
+UNKNOWN_SPEAKER:
+Where is it? Realize. No.
+
+Saul Portillo:
+Integration.
+
+UNKNOWN_SPEAKER:
+Extractor.
+
+Saul Portillo:
+It must be that, extractor list.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Saul Portillo:
+Ok, if you filter up, there is a file, an IVP, what is this? I don't know.
+
+UNKNOWN_SPEAKER:
+No, I think it's not this one.
+
+Fiamma Giorgi:
+No, it's not this one.
+
+UNKNOWN_SPEAKER:
+externals.
+
+Saul Portillo:
+Okay, uh it is I think that this is the mapping by fields, but not the extractor. Correct, Ray.
+
+UNKNOWN_SPEAKER:
+I don't understand.
+
+Reinaldo Gutierrez:
+Yes, correct. But in the first sheet, in the main, there are the extractors, right? So below are the key figures. So, of course, those are key figure extractors. So, of course, that's why I ask if we know which extractor it is. I'm going to send you a link in the chat.
+
+Fiamma Giorgi:
+This one, right?
+
+Reinaldo Gutierrez:
+and there you will be able to see all the mreo keyfigures and all the related extractors so of course if we have the extractor Perfect, but if we don't have it, then...
+
+Fiamma Giorgi:
+As far as I can see here, it's already mapped.
+
+Reinaldo Gutierrez:
+Material consumption history for chemicals. I think it's this one.
+
+UNKNOWN_SPEAKER:
+Yes, that one is already...
+
+Fiamma Giorgi:
+It's already integrated.
+
+UNKNOWN_SPEAKER:
+Let's see.
+
+Saul Portillo:
+Sure, but that's... It's integrated for... No, they're two different ones.
+
+Fiamma Giorgi:
+No, no, they're two different ones. Then, for corrective...
+
+UNKNOWN_SPEAKER:
+Ah, it's the same in this case. It's the same.
+
+Saul Portillo:
+It's the same extractor. Let's see...
+
+Fiamma Giorgi:
+of part corrective data but I can't find it material conservative for corrective, material conservative for chemical, complying with the insurance plans order ah this is the preventing cost per unit If we are missing the inventory, I mean. Where is it?
+
+Reinaldo Gutierrez:
+This would be in the link. Let's see. For that, there is only safety stock, reorder point, and finance active stock. How are you, readers?
+
+UNKNOWN_SPEAKER:
+Sorry, is this, right? The location product. Let's see the order point.
+
+Fiamma Giorgi:
+Why?
+
+Reinaldo Gutierrez:
+Because at the end there should be the quantities and that's why they suggest it.
+
+UNKNOWN_SPEAKER:
+Well, there you have it.
+
+Reinaldo Gutierrez:
+Notice that on the right side, sorry, on the left, there is one that IVP, MDO, INB, which is the inventory investment. There on the left side, in the menu, so to speak.
+
+Saul Portillo:
+No, but it doesn't show anything.
+
+Reinaldo Gutierrez:
+Yes, yes, it says that... It says at the beginning of... At the beginning it says... But you say that's not it. Because that's what it says, that we create a task based on this And it should bring those flows, those tasks related to those cave figures. And you need all this for next week. All these cave figures that are here, which are 16. Well, 15.
+
+Saul Portillo:
+¿Cuáles son los principales? Porque hay otros que podemos, digamos, no tener el día uno, ¿no? Pero si el actual consumption es clave, ese es clave evidentemente para químicos, te diría que leaptime y el current reorder point. Foreign foreign Hello, Hector, how are you?
+
+Hector Palacios:
+Hello, hello. What a coincidence, do you know where they keep the Deep Dive? No, no, no, no idea. We're going to have to get in here. It's not like with them, ask them things, we don't get anywhere, we already tried it.
+
+Reinaldo Gutierrez:
+Ready, ready, I'll check, it must be... If we take it out of the standard, and if it's not in the standard, we tell them, you have to keep it.
+
+Hector Palacios:
+Do you think so? No. Let's ask the CableMG team. They have resources, There, Hector, to comment a little bit, we were taking advantage while you and Basti were going up, in this half hour of the hall, which is why I didn't go up as well, I was like quickly
+
+Saul Portillo:
+mapping what we urgently need to be able to work chemically, right? For the next week's sessions. Yes? And chemically, we are mapping it as from line 7 down, of the key figures that we would be needing, that one is the historical event, the historical consumption, that there I understood Basti, that as this Yeah, but when you talk about the same flow, it's putting And chemicals, all in the same keyfigure?
+
+
+
+Hector Palacios:
+No, no, no, because M is separated.
+
+Fiamma Giorgi:
+Corrective and preventive refers to chemicals, all in this same keyfigure.
+
+Saul Portillo:
+All together of chemicals, perfect. So that would be the keyfigure.
+
+Hector Palacios:
+The other thing we could do is that here we still lack the general orders, that's the issue.
+
+Fiamma Giorgi:
+Let's configure a single flow where they always load ACM and PM and then all I don't know, I don't understand The same one we have for MRO, use it for chemicals, and then in this one add these two, but
+
+Hector Palacios:
+only with a filter. Sure, and we don't save a flow. Because that is already, in fact, I think it is configured, but we would have to check the filters because there are some orders, some types of orders that are called general orders, orders that we are not mapping anywhere, I
+
+UNKNOWN_SPEAKER:
+think.
+
+Hector Palacios:
+I don't know, So, Ray, what we have to do is simply take this, so we have any mapping doubt, foreign foreign Okay, okay.
+
+UNKNOWN_SPEAKER:
+Si.
+
+Saul Portillo:
+Eso es lo que separa por el tipo de material, si es correctivo o preventivo, y si es turn around.
+
+Reinaldo Gutierrez:
+O sea, todos esos son los tipos que se tienen que integrar, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Reinaldo Gutierrez:
+O solo el PM06.
+
+Saul Portillo:
+No, el PM06 es con el turn around, ¿ok? Tenemos un key figure This is PM06.
+
+Fiamma Giorgi:
+This is PM04. This is PM01. And for chemicals, which one did we choose? PM01 and PM03, right, Hector? No chemicals, it's going to be the sum of the previous ones.
+
+Hector Palacios:
+This is for...
+
+Saul Portillo:
+In summary, your idea is, in the Act of Use of Materials for Corrective Maintenance, add everything that is corrective, and then At the level of logic of calculation, we go to the separate keyfigure of chemicals, reading which are the chemicals materials, correct?
+
+Hector Palacios:
+Add the two previous keyfigures only. The one of correct and preventive. Of course, but separating the chemicals materials only.
+
+Saul Portillo:
+That's what I mean, with the logic of calculation. No, no, no, nothing happens here.
+
+Hector Palacios:
+We do not lose anything in that the DMROs are added too. We are so separated. In the numerator there is the distinction of which one we use for the keyfigure.
+
+Saul Portillo:
+What you say is to have a keyfigure And that's it. And that's the one we use for the chemical forecast.
+
+Hector Palacios:
+And we don't use it in MRAU. Or if we decide to use it, we'll see. But if we have the separation before and after, we add it or subtract it. Whatever we can think of And that's how we also homologate the key figures. And that we don't have so many key figures. And we use the same dashboards. And we use the same track. Get rid of that list 111, 117. That's not going to be different. So it's in these key figures.
+
+ Plan preventive maintenance. Can you raise the number 8 first, then the 4?
+
+Fiamma Giorgi:
+Here we have doubts about which one of these two was. If the Unicos standard or the Unit Price. The Unicos standard.
+
+UNKNOWN_SPEAKER:
+This one. No, the...
+
+Saul Portillo:
+Ah, I know it's the Unicos standard.
+
+Fiamma Giorgi:
+This one above the 4, you told me. No, after the 4.
+
+UNKNOWN_SPEAKER:
+Oh. And what about the ReorderPoints? One question.
+
+Hector Palacios:
+The link time they need is the link time of providers or centers?
+
+Reinaldo Gutierrez:
+Providers. So it would be the info register, right? You can put that there and register. This is probably going to be a little more complex than they expect because they are going to do more than a lifetime. And the providers were loaded as in the location already or not? If the provider does not exist in the location, it will not load.
+
+UNKNOWN_SPEAKER:
+Do you understand? And what is the alternative?
+
+Hector Palacios:
+That is, if you want it from providers, it is the info register.
+
+Reinaldo Gutierrez:
+If you want it from the centers, okay, which are obviously the centers that already It's in the master data. That's why I asked, what lead time would you want? If it was provider lead time?
+
+Hector Palacios:
+But you're talking about plant to plant lead time?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios:
+But in the end we need everything, right? But the most important is the provider one, right now.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Hector Palacios:
+Plant to plant, it shouldn't be a problem, at least foreign foreign around We could say that it is for the last, but in reality it is the same flow and they change a filter and that's it.
+
+Saul Portillo:
+I went with the material reservation that we had placed and the chemical one, following the line of historical consumption, There is a key figure that is the subnotory of corrective and preventive. There is one that is all complete, corrective and preventive, but there is one of preventive. The one I showed you is from CM, it is corrective. Foreign um But the reservation, same.
+
+Hector Palacios:
+Yes, let it be the sum of both. And that's not a zeta.
+
+Reinaldo Gutierrez:
+Can I steal the screens for a moment? To make it clear with the liptime? Just a moment. Ok, I'll share it with you for a moment, ok? Ok, in the info register, ok? Here we have the liptime. Okay, this is the plan in delivery time, which obviously for certain scenarios is 28, 124 and such, and this goes from provider to center, obviously here I am seeing the header and now I am going to see the foreign foreign Okay, plus the lifetime, obviously.
+
+ But if it's standard, then this is probably already in the extractor. Yes, yes, I'm going to check the extractor now, but I wanted to tell you that the information is there in the registry.
+
+Hector Palacios:
+Yes, check where the lifetime comes from for the mreo issue, because mreo in theory has its own extractor, so this should exist. What happens is that here, Ray, the lifetime is not part of the Yeah. Yeah. We ask ourselves how to improve it. Okay, okay, okay. What? Read time. How do you see the reservations?
+
+UNKNOWN_SPEAKER:
+Repeat?
+
+Hector Palacios:
+How do you see the reservations?
+
+Bastian Osorio:
+I don't have it now. What are we doing?
+
+Hector Palacios:
+We are talking about LinkedIn and we are prioritizing Kifir. Can you share again?
+
+Saul Portillo:
+Yes, I'm going. We are doing the list, we are working on it to pass it on to Ray and Sagar with the priorities for the session.
+
+Bastian Osorio:
+foreign um And then we open it, right?
+
+UNKNOWN_SPEAKER:
+Yes, yes, yes. I totally agree.
+
+Hector Palacios:
+And for Varia and GCL standard, so there won't be that much problem. I was thinking, for me, that maybe it would be better to put an additional root field where we call the order type and that integration carries simply actors and that it has the last name.
+
+UNKNOWN_SPEAKER:
+Amin.
+
+Hector Palacios:
+If we take that route, why don't we also add the ID? Not for now. It's a technical one only for us. But how many order? Let's continue this way and then We don't need to make that decision now.
+
+Bastian Osorio:
+There is an extractor that I would like to see. It's the one that I just sent a few minutes ago to Reinaldo. It's the one for I don't know why I put it here. Can we look at this extractor please? I'm gonna put it in the chat. Because they mentioned that in some cases they have the preventive plant and I would like I'd like to see it.
+
+UNKNOWN_SPEAKER:
+Sorry, what structure?
+
+Reinaldo Gutierrez:
+The one that I put in the chat. That's not that structure, that's a template.
+
+Bastian Osorio:
+What's the difference?
+
+Reinaldo Gutierrez:
+The difference is that that only exists on CIDS for using as a reference. Create the workflows. And the other one is like the, yeah. Isn't this one? Yeah, the extractor is that, yeah. It's the same that we have been using.
+
+UNKNOWN_SPEAKER:
+So let me share my screen.
+
+Reinaldo Gutierrez:
+Let me share my screen, okay. But can we check what what is IVP using?
+
+Bastian Osorio:
+I mean, what? Because we can see the full table, but we are not sure why is this one right here, right? Yeah, no, no, that is not the text. Not cons core mate.
+
+UNKNOWN_SPEAKER:
+No.
+
+Sagar Vora:
+I think I remember last time Hector said we have to create based on RESV table, because I think when we checked data, future data was not available. Plan was to extract from the RESV.
+
+Bastian Osorio:
+But Sagar, just to understand correctly, This MR9 configured PEM order part, Rocio, is a template for CIDS. So with that, we can know what is CIDS taking from the extractor table, right?
+
+Sagar Vora:
+Yeah, so basically in that multiple data flows are there for multiple key figures. So we just have to take that as a friends so for example we already loaded some data for actual consumption for preventive maintenance then actual usage for breakdown order like that so by default basically it uses the same extractor
+
+Bastian Osorio:
+only yeah so like multiple key figures are in the same table in the same extractor table that is clear But what I want to check is what is the exact data from the table, from the extractor table, that this
+
+UNKNOWN_SPEAKER:
+key figure is using. Sorry.
+
+Bastian Osorio:
+It's tired? Memory load, leave the translation.
+
+Bastian Osorio:
+so yeah you want to know the table for this extractor right I want to know yeah what what is the data that that pm order part uh well that configure is using okay let me I will stop sharing for
+
+Reinaldo Gutierrez:
+a moment I will find the documentation And then, you know, like, give me a moment, please.
+
+UNKNOWN_SPEAKER:
+Okay, I will share my screen again.
+
+Reinaldo Gutierrez:
+So, can you see the document here?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Reinaldo Gutierrez:
+So, for this tractor, okay. That's the one that we are checking out. All the information comes for the order table, reservation table, a model to obtain the material type, reservation. This is the order table again. This is, I think this is calculated by the extractor. The same here for these four files. Then we have reservation again, the order table, and this is for functional location. Then again, reservation.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Reinaldo Gutierrez:
+This is what is filling this extractor right here. This is the logic.
+
+Bastian Osorio:
+I need to explain myself correctly. I know it is used to populate a few key figures, the actuals, corrective maintenance, preventive maintenance, but what I want to check is what is the exact data from that extract from the table itself, not in the document, in the table that is being used to populate that key figure.
+
+Reinaldo Gutierrez:
+this table on SAP?
+
+Bastian Osorio:
+No, to the extractor table.
+
+UNKNOWN_SPEAKER:
+Yeah, let's see.
+
+Reinaldo Gutierrez:
+This is what we have.
+
+UNKNOWN_SPEAKER:
+Just one record?
+
+Reinaldo Gutierrez:
+Yeah, because I put one record here.
+
+Bastian Osorio:
+So, let's filter for one, for example, for one loop, for one plan. For the plant 2101.
+
+Sagar Vora:
+We are already using this extractor for some of the transactional data like corrective order, breakdown order which we have already loaded into IBP. But we don't have any in the preventive maintenance plan.
+
+UNKNOWN_SPEAKER:
+Corrective maintenance. Because this is PM01? No.
+
+Bastian Osorio:
+So, it's called inside it from there. It's cool. Let me check. TM01 is breakdown order.
+
+UNKNOWN_SPEAKER:
+Sorry, correct order.
+
+Sagar Vora:
+TM02 is breakdown. Then TM03 is general maintenance, then preventive maintenance, and predictive maintenance, and turnaround maintenance. I don't see the correct order.
+
+Bastian Osorio:
+Let me share my screen.
+
+UNKNOWN_SPEAKER:
+Yes. For a second. Sure.
+
+Bastian Osorio:
+Prevented maintenance. Prevented maintenance demand. We haven't seen that data. We have loaded prevented maintenance actuals quantity. That's right. Actuals at this one as well. This one we're not using, but this one we haven't checked. And they mentioned that they do have some data. So that's what I want to check. Maintenance plans GIF. Okay.
+
+Reinaldo Gutierrez:
+Like I will share my screen and we look that. Again, OK. So this is the data regarding this one. I don't know if you want to check it out.
+
+Bastian Osorio:
+What is the 2020? Can we look for? The thing here is that you have different things, right? Different dates. So I'm not sure what is the date. That the key figure is using.
+
+Reinaldo Gutierrez:
+So this is the requested date. Ah, OK. So you want to know what is the key figure you're using. OK. I think we have that in the standard.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sagar Vora:
+Yeah, so we also created some interface where we are using actual sponsorship?
+
+Bastian Osorio:
+Yeah, for Actuals, we do have the data. In fact, the next key figure in this Mm-hmm.
+
+Reinaldo Gutierrez:
+okay so where is it that I create right here everything is here yeah all master data all key figures in place okay so the one that you are looking for is the let me open This right here This is the last one Yeah, and this is the other one. So let's see the date that the standard is using. Okay? So this is using pre-audit start date, okay and on the On the extractor that fills me see if I can see the detail of the fields here no I cannot so no but that must be required they must be sure no resource I have this information right here so let's go to the transactional data um the key figure is this one right here so he's is using, you guys remember the name?
+
+ This one right here is the quantity, this one. It's called requirement date for component. Okay, that is the one that the standard are using for fill the date. Is that okay?
+
+Bastian Osorio:
+Yes, and the key figure and the amount I guess is required quantity, right?
+
+Reinaldo Gutierrez:
+Let me check, yeah, no problem. The amount is using the same name, like ultra quantity right here. So let's see on the extractor.
+
+UNKNOWN_SPEAKER:
+So yeah.
+
+Reinaldo Gutierrez:
+No, no, that cannot be.
+
+Bastian Osorio:
+So let me show you in the extractor.
+
+Reinaldo Gutierrez:
+So actual quantity will be this one right here. This is requested quantity. Yeah. This is the actual quantity, okay? And this is the request quantity. Yeah, I guess it's request because it's demand.
+
+Bastian Osorio:
+Can we filter in request date for the future? Sure, request date, okay.
+
+Reinaldo Gutierrez:
+Let's see if we have... Uh something here okay request date okay uh tomorrow right so no sorry from from the first of january okay okay because this data is called there I don't think so that we are going to have data in this year. Let's see.
+
+Bastian Osorio:
+OK, let me see. I have the location. You only have one month, right? You put just January. Can you add more months?
+
+Reinaldo Gutierrez:
+So you want me to go to the end of the year?
+
+Bastian Osorio:
+Yeah.
+
+Reinaldo Gutierrez:
+old 2025 nothing let me erase this one right here there you go there we have some information for in for the for September I think, yep. This one right here is in the future. If you see this one also.
+
+Bastian Osorio:
+And do you know, I don't know if this is coming from a reservation or this is coming from a plan? Where's the origin of this data? This one right here. You have this.
+
+Reinaldo Gutierrez:
+That's the type. That's the yeah, I am one. Yeah, and this number must come from the table Our FK.
+
+Bastian Osorio:
+Sorry and PSP.
+
+Reinaldo Gutierrez:
+What is that PS PS o2?
+
+UNKNOWN_SPEAKER:
+This one right here.
+
+Reinaldo Gutierrez:
+Mm-hmm. Let me check let go to the table again Yes What are their type? You can see they are the type that they're right.
+
+Bastian Osorio:
+So yeah, yeah. And PS02, what is it?
+
+Reinaldo Gutierrez:
+This one right here. Network with activity assignment. What does it mean?
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Reinaldo Gutierrez:
+Network with data assignment.
+
+Sagar Vora:
+Question, I think last time when we were having the discussion, so Hector, to bring data for future for PM 0 3 PM 0 4 and PM 0 5 so can we apply this three filters or not doing check data
+
+Reinaldo Gutierrez:
+is there for a price okay only only fight okay let me let me see what I'm right for inside okay let me hit where we don't have so let me run it again okay this is the document type it should be order type order type now so you want me to put this one right here 0.4 and 0.5. I don't know.
+
+Sagar Vora:
+I think I cannot. You can put PM 0.4 and 0.5. Not 2, 4. 4 to 5. 4 to 5, yes.
+
+Reinaldo Gutierrez:
+eight yeah but you have to remember that this is sampled so the data is from last year maybe they have more data than on production okay hector do you think this data come from reservations from borders where I can
+
+Bastian Osorio:
+I can I can response that let me check okay No, no, of course, this data comes from From preventive orders. And what is the total amount we have? Of record.
+
+Reinaldo Gutierrez:
+No, yeah, 18, yeah, yeah, no, that is no more. It is for all 2025, okay? So you want to know if this data is from order, right? Yeah, this is an order and maybe have A reservation assigned.
+
+UNKNOWN_SPEAKER:
+Let me see.
+
+Reinaldo Gutierrez:
+I think traffic center. Oh, sorry. I think this is in another table. Let me see. I have it right here.
+
+UNKNOWN_SPEAKER:
+This one.
+
+Reinaldo Gutierrez:
+Yeah, you have a reservation assigned, but maybe it's another kind of reservation. Let me see. So this is a... Oh, it doesn't have. A related table but it says us all like I don't know I don't know guys if that is what you want to see this is a kit so I think it's a group of materials look What are the materials?
+
+UNKNOWN_SPEAKER:
+This one right here.
+
+Reinaldo Gutierrez:
+This one? Yeah, but I think this one right here, if we go to... Oh, I don't know. I don't remember the... There is one transaction to see the list of material related to the useful.
+
+Reinaldo Gutierrez:
+here okay no my bad so this is a reservation related to that order and if you can see the scheduled day to finish is on July. And the start is the same. I expect it to start on the last year, actual start date.
+
+Reinaldo Gutierrez:
+Something else that you want to see, guys?
+
+UNKNOWN_SPEAKER:
+No.
+
+Bastian Osorio:
+I think we can start integrating based on the priority you already defined.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Reinaldo Gutierrez:
+So the other extractor that you want to see is this one right here. OK. Let's see. The template first. This is the maintenance plan.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Reinaldo Gutierrez:
+He using peer to start date.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Reinaldo Gutierrez:
+So if we go to the extractor.
+
+UNKNOWN_SPEAKER:
+I don't see it.
+
+Reinaldo Gutierrez:
+This one.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Mm hmm.
+
+Reinaldo Gutierrez:
+I don't know, maybe. Meanwhile, Saul, Fiamma, can you show me the Excel that you need for the next week, please? Yeah, sure. Here. So, we are going to use... Okay. Master data to populate this. No, on the K-figure. On the K-figure, I saw that you put like a master data extractor there.
+
+UNKNOWN_SPEAKER:
+Ah, here. Yeah.
+
+Fiamma Giorgi:
+For the current real-world buoyancy if this work.
+
+Saul Portillo:
+the principal key figures and talked before in the session. The idea for the consumption is to integrate for the same key figure of the actual usage of material for corrective maintenance and later for preventive All these for chemicals and square parts in the same key figure?
+
+Bastian Osorio:
+Yeah, same one. The only difference is going to be the type. The material type. The only difference for chemical will be the material type.
+
+UNKNOWN_SPEAKER:
+Yeah, okay.
+
+Bastian Osorio:
+Guys, I need to jump into another call, but I come back in 30 minutes.
+
+UNKNOWN_SPEAKER:
+Thank you much. Thank you.
+
+Sagar Vora:
+You might think this is already completed. So we already know it is.
+
+Reinaldo Gutierrez:
+Sagar, I know we have like an excerpt there with the status of all the integration that we are doing. Maybe we can show that to the team, that way they can see what we have right now.
+
+Bastian Osorio:
+I'm not sure if we are integrating general orders. Are we?
+
+UNKNOWN_SPEAKER:
+No. What do you mean?
+
+Reinaldo Gutierrez:
+What do you mean by general order? Because we are...
+
+UNKNOWN_SPEAKER:
+PM03?
+
+Sagar Vora:
+No, it's PM01. PM03. 3, 3, 0, 3.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+3, 0, 3.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+We are putting just a corrective for now because that is our understanding.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+They say they want the general consumption as well, but that's what I heard. Yeah, but it's part of corrective. Ah, yeah, yeah, yeah.
+
+Reinaldo Gutierrez:
+Yeah, it's part of the same K-extractor, okay? So we need to add that filter there somewhere.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+So it will be great, Saul, if we can check how many materials. Because if we integrate these two, we're going to be able to check how many materials we have to make the distinction between planning type and how many materials we have for reorder point, how many materials for planning type, sorry, for forecast base. That will be nice to see.
+
+Reinaldo Gutierrez:
+Yeah, go back to the extractor that you wanted to see, Basti. I have the data. I don't know if you want to see it before you go.
+
+Bastian Osorio:
+No, when I say plying type is just integrating materials and location and equipment and these two key figures we can determine the plying type. It's a rule that we are Okay.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Reinaldo Gutierrez:
+Yeah, no problem.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Saul Portillo:
+See you later. I understand that tomorrow's session, they have one, the material, the planning type in the sub-node. They have the, whether it's for a reorder or whether it's for a forecast, the current in the system or not. They don't have it.
+
+Bastian Osorio:
+I understand they don't have it in that way.
+
+UNKNOWN_SPEAKER:
+Okay. They don't plan based on forecast. Okay.
+
+Saul Portillo:
+Okay. Bye.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Reinaldo Gutierrez:
+Okay. Can you put a a priority for all those key figures that you need for the next week, please? Yes. You can put a color if you want or a column, yeah.
+
+Saul Portillo:
+Or I think we can order in the list. Like Hector said, for example, the cost per unit for number four, the plan is the order.
+
+UNKNOWN_SPEAKER:
+I think.
+
+Saul Portillo:
+I don't know, Hector, for turnaround for the next week. I don't know if it's a priority. Because...
+
+UNKNOWN_SPEAKER:
+That's the last priority.
+
+Hector Palacios:
+But the point is that turnaround is so easy. It's exactly the same flow. Apply a different filter. So maybe you want to do it the same way, right away. Then I see that there is a Yeah, because we wasn't sure of which one is it.
+
+UNKNOWN_SPEAKER:
+This one, okay.
+
+Reinaldo Gutierrez:
+So I don't know if you guys image that Sarah shared regarding some point that is here on the list. PM01, PM02, PM04, PM06. Sarah, can you share the screen to check this?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Sagar Vora:
+Can you guys see my screen? Yeah. Yeah. So for this key figure, MRO part usage is PCM. We have loaded data for PM01 and PM02.
+
+UNKNOWN_SPEAKER:
+At PM03. At PM03. OK.
+
+Sagar Vora:
+Now I'm just typing PM03. And then we have loaded. Data for uh mro pm actuals quantity for pm04 okay then we have loaded mro turnaround actual usage for pm06 okay okay then today I loaded data for mro CH and chemical material usage history for PM 0.1 to PM 0.5, total five.
+
+Hector Palacios:
+Yeah, that's also fine. We are thinking just to load on the ERP field without the filter by chemical. How are you differentiating between chemicals?
+
+Sagar Vora:
+For chemical, I applied the material type was D. ZCHM.
+
+Hector Palacios:
+We were thinking on unifying so you can put all the in the same flow just one flow and then we so that one day forget about that one just in the original ones where you are iterating PM1, PM2 and PM3 tree, put the chemicals filter as well. So we bring all the data.
+
+Sagar Vora:
+I didn't understand.
+
+UNKNOWN_SPEAKER:
+Can you repeat?
+
+Sagar Vora:
+Here, I have not applied any material type filter.
+
+Hector Palacios:
+You're not applying. So that means that in that flow, we are also bringing chemicals. Yes. So earlier, I developed that. So do I have to apply? There is a material type filter that should be applying because otherwise we will bring some other materials like a finished wood so we don't want to see so I get material type you mean this material type right let me see yeah exactly that one so if it is a reapply for the it's fine so I can apply like I need to reload in replace what I can apply this three material types for MRO and don't filter anything you put all the materials types in just one flow so we are going to use that for everything basically all right okay then we are good with this like here I have not applied any material type yeah so I will
+
+Sagar Vora:
+create one more for PM03 and then we are good with chemical In chemical, I applied THM and CHM and CAT. I think LUB is also required, I believe. Yeah.
+
+Hector Palacios:
+When I say PM03 is not a different flow, it's on the correct chip maintenance one.
+
+UNKNOWN_SPEAKER:
+It's inside.
+
+Hector Palacios:
+So when you filter, filter by PM01, PM02, PM03.
+
+Reinaldo Gutierrez:
+Yeah, I think that's because he's putting the information and more than 1k figure, right? So that's why you have like, no, no, no Yeah, because it's like a half-performance issue if you put all the... Yes. Okay.
+
+Hector Palacios:
+And, Sagar, are you joining, are you merging the information before sending to IBP? Unifying? Yeah, basically it's an insert update, right?
+
+Sagar Vora:
+So at the end it will keep on in IBP, the new records will be formatting.
+
+Hector Palacios:
+No, but the point is that I'm not really sure if we can have the case that you have a prevent chip or the incorrect chip for the same material, same plant, same date.
+
+Reinaldo Gutierrez:
+That can happen. I think there is a problem of definition there, Sagat, because like Hector was saying, if you put separate workflow, you are going to have the problem that maybe you're going to place information that we already have for another type of document.
+
+Hector Palacios:
+Yeah, but in that case, if this is an issue on your side, maybe we create another keyfigure and that's it.
+
+Reinaldo Gutierrez:
+Yeah, a keyfigure for each one of the of the document type and then the team can make a copy operator to put everything together.
+
+Sagar Vora:
+Yes, yeah, if possible, but I'm just for my understanding like if I don't apply filter and if I bring everything then somehow if the records are same then what you are expecting the aggregation or like the point is that
+
+Hector Palacios:
+maybe we have we have some combinations that are being shared for the same idea or same plans and same day maybe you're replacing if you run after I understood but if I don't like if I keep a single interface
+
+Sagar Vora:
+okay and if the are same, then it will fail somehow because it will give us some error. Okay. Okay. Some aggregation.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Reinaldo Gutierrez:
+So maybe Hector and Tim, maybe you guys can create one case for each one of the document type. And that way we can generate a new workflow there.
+
+Hector Palacios:
+Is that better for performance error? Because that is only thing that should matter to us if it is better performance let's go let's do it that way you have a separate flow if we knew if you need to join and that is going to your
+
+Sagar Vora:
+form then let's do that yeah it's due to performance so I think it's better if we have a separate key figure and at the IVP and we just add that so can we support key figures so we will need
+
+Hector Palacios:
+to have like uh correct uh actuals pm1 pm2 pm3 pm4 and six also six already has a different key fear oh yeah definitely it's in the it's in the list no the list for for family the first one the pm1 We need to separate them. What we are discussing is to add new key figures because Sagar is loading one flow after the other. And maybe he's replacing things. So there is a technical challenge there. So we are not joining all the...
+
+ We are creating basically one flow for each order type. And then we are sending one after the other. That can mean that we have a replacement.
+
+Saul Portillo:
+The idea is one keyfigure for PM1, one keyfigure for PM2, and either summary in the calculating. It's just a performance point.
+
+Hector Palacios:
+It's better for SAGAR23 separately than using a joining or whatever. Okay.
+
+Sagar Vora:
+So one suggestion, like Reinaldo, if you want, you can just go through again, because I understand expected is also are not working if we execute without the filter so tomorrow like if you also give a go ahead after checking into the extractor then I think Saul and team can start working on creating multiple key figures for each order type because it will be too big work for them because even for chemical I think I have created five interfaces.
+
+
+
+Hector Palacios:
+Forget about chemical to be just one key fear for actors.
+
+Sagar Vora:
+They are all chemicals, everything together. OK.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Saul Portillo:
+Then I think, well. And Hector, I have a doubt. The attributes for separate chemical and a spare part, another one is the material type in the master data pro, no? I think so. I don't know the nomenclature, but this is no?
+
+UNKNOWN_SPEAKER:
+Yes. OK.
+
+Hector Palacios:
+But we don't need to build any logic on that. The filters are only for user roles and so on. But we use the same key fears for actors.
+
+Saul Portillo:
+OK. And I don't know, Hector, if Sagar and Reinaldo have the attribute for the master data product, the new attribute you upload in the demo. For example, the product commodity, the product commodity group.
+
+Reinaldo Gutierrez:
+No, we don't. There is some more attributes that you have.
+
+Hector Palacios:
+Yeah, for the old table, do you remember there is like... Ah, the custom table that they have.
+
+Reinaldo Gutierrez:
+Yes. Okay, okay. So, can you give me the fields? I can do that real quick or ask the team to do it.
+
+Hector Palacios:
+Yes, I want to make, I want to order at least, do you have a mapping list there, like attributes by attribute and the mapping?
+
+Sagar Vora:
+Like which attributes I have currently mapped?
+
+Hector Palacios:
+No, they are attributes by attribute if we have it fine or not. I mean I'm building something like this but I'm not really sure if you already have something. Let me share the screen.
+
+Sagar Vora:
+Currently I did in this manner like whatever data I loaded right like for the I loaded these all fields then for MRO parts I loaded this one then for a gift product where maintenance plan I'm loading so like that
+
+Hector Palacios:
+way I created this one list okay for each master data okay now we need to unify yeah you can put a column beside each one and put the source this is what we are going to do guys we will have here all all the attributes and what is status, we are going to help you with that. But as soon as we confirm what we need to do, you need to help us if we are missing the mapping or something else, because probably we are pending a map.
+
+ So I will put this status. So first is confirm is needed. So if this is not confirmed, you don't progress on this. But then if we confirm, we need to check definition. With KPMG, they can tell us, OK, extract from this table and from that. Now that we know from where, we go with the ABAP team. And the ABAP team can help us to put this in the extractor. Then you say that you execute, you're in progress, validate, completely discarded.
+
+ Basically, yeah. But we need to have this mapping for all the attributes so we know in which status we are and what are the pending points. OK? So let's go ahead. What is that?
+
+Reinaldo Gutierrez:
+What is that field? What is that document, Hector?
+
+Hector Palacios:
+It's the initial one that we are using. So what I'm planning to do is to take this mapping and put it on SAGAR Excel.
+
+Sagar Vora:
+OK. So one doubt, Hector, like I can see here there are many fields, OK, but I don't think these all fields are available in IBP product. Yes. OK.
+
+Hector Palacios:
+So that's a good idea. That's a good idea. So we need to put also appending IVP. So whenever we see that they're spending something on IVP, we can also filter and the guys can help us to validate all the ones that we need to grade.
+
+Sagar Vora:
+Okay, but my question is like from where you got so many fails because there are a lot.
+
+Hector Palacios:
+That's why I said that we are going to do a cleansing because probably most of the them. The ones that are coming by standard by instructor. So I'm going to do a cleansing and I will tell you focus on these ones. The other ones are going to stay on the list, but you don't focus on them. So confirm it is because it's not confirmed. It's something that they say to us in like three months ago probably, but I'm not sure that this is going to be needed.
+
+ So if I'm not sure, to create it.
+
+UNKNOWN_SPEAKER:
+OK. Let's start.
+
+Sagar Vora:
+Yeah, because we are we have more than 150 fields. I don't think this is not required yet.
+
+Hector Palacios:
+OK, so when we put confirm it is because it's not validated that we need to integrate it.
+
+Reinaldo Gutierrez:
+Can you put maybe to be defined or to be I don't know something else. It's confusing for me at least that one. What can we put? Maybe with a question mark? Yeah, because needed, I don't know, conflict with client, maybe with Agno.
+
+Hector Palacios:
+Yeah, let's put something easy to understand for now and then we can in a lack of better name.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah.
+
+Reinaldo Gutierrez:
+Okay.
+
+Hector Palacios:
+So let, let me finish this to do our first cleansing of this, because this is what we are doing a cleansing. Maybe, maybe I'm just going to remove it until we don't know. Okay. But, uh, there are many of these ones right now that I, that I think that you already asked to Isabel, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Reinaldo Gutierrez:
+Yeah. There are some there and they started because was the first that they team asked for so yes that that's the point that the ad hoc team was like like throwing some fears and yeah you can integrate all of this
+
+Hector Palacios:
+and basically they they were giving us the the whole meta table yeah yeah and it's not what we what we usually do so let me do a cleansing and let you know okay these ones are and then you will
+
+Reinaldo Gutierrez:
+help me to understand which ones are with are pending about and are pending id and so on You know what is a good question that you can do, Hector, for this is if they are going to use this field for the segregation of the information in the future.
+
+Hector Palacios:
+Because if not, it's like, you don't need those. All of this, for example, that's why I have confirmed it. It's because I am pretty sure that it doesn't make any sense, but we want to shake it away.
+
+Reinaldo Gutierrez:
+Okay, perfect.
+
+Hector Palacios:
+Supposedly, they are going to work on this and give us a list, but these guys are so slow. They are not going to move any fast.
+
+Reinaldo Gutierrez:
+So it's better that we start defining something. So for the custom table, I saw down below that you have like the custom table. Can you scroll down? Yeah. So you need product commodity and product commodity code.
+
+Hector Palacios:
+Those fields, right? Yes. Okay, let me look for material. I've been moving some things here. That's pretty sure that we have here then.
+
+Reinaldo Gutierrez:
+Yeah, to ask to the team to do that.
+
+UNKNOWN_SPEAKER:
+Maybe we can go forward.
+
+Hector Palacios:
+I lost the table, but we have the...
+
+Reinaldo Gutierrez:
+Yeah, I saw the table, the custom table. Yeah. Unipg and the the fields maybe it's missing but uh that's the table okay I I was sharing this information with me so from this table the only ones that I saw that would make sense so far is this two
+
+Hector Palacios:
+we have the drag group but this material group drag group but I think that this is just the the key so we have it on the mat as well And we use it for the join.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+So if you know the material group, you can get the pro commodity and pro commodity code. Related to that?
+
+Reinaldo Gutierrez:
+To that material group.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Reinaldo Gutierrez:
+If it's one, OK, yeah, I got you. I got you. Yeah. I will ask for the team to do that. I will send an email. And copy you and that with the definition, okay?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+Okay, let me work on this and probably I will be calling you later, Sagar, if I have any questions. So I will be asking you to fulfill anything if it is missing.
+
+UNKNOWN_SPEAKER:
+Okay? Okay, sure. All right, perfect.
+
+Hector Palacios:
+With this, we can go with KPMG and they can help us as well to map whatever we are missing.
+
+Saul Portillo:
+I don't know if it's necessary to to work in the key figure as well because don't finish and and configure to Sagar and Ray.
+
+Hector Palacios:
+Yeah the same one please send me the ones that you have right now Saul and let's work on it on that.
+
+Saul Portillo:
+Do you have a meet right now or? I don't know if we we can work with you in this.
+
+Hector Palacios:
+Give me one second, sorry. Okay.
+
+Saul Portillo:
+Just one second, I think I lost the meeting.
+
+Hector Palacios:
+Oh no, I have a meeting right now, it's in five minutes. So please send me that, Saul, and I can put the format. It's just formatting, so it's not going to be Send me the information and you guys focus on the chemicals examples. I will start running something with what we have in case that we have any issues with the data or with the integration. Let's start with the data that being the share. So let's run the algorithms and everything.
+
+ Let's make sure that we have exactly the same information for chemicals, the inventory run and all of that.
+
+Saul Portillo:
+But I have a doubt because, for example, if we work in Snapshot, for example, Snapshot is a, the key figure is a level with Proc Log in this moment, because we don't have a customer, we don't have an asset. And all the configure for chemical is for the key figure chemicals. If later we upload the data, we need to change various key figure configuration, and I don't know if...
+
+Hector Palacios:
+because then, you know, you have like many of the dashboards we have today or things like that are with the key figures for MRO. OK. I'm talking nonsense. I'm talking nonsense. So let's check with Basti. I know that for inventory, it's going to be pretty much the same. So it's just about data run, basically. But in demand, check with Basti. I have a doubt.
+
+Saul Portillo:
+The material reservation we need at level with proc.cost or with proc.lock because we change and I think we have an error. I would think that at customer level as well.
+
+Hector Palacios:
+quarter, then it should be at the same level.
+
+Saul Portillo:
+Okay, because now it's a level with Proglock and Vivec for this data is at that level. I think we need to build a new... Sorry, I wasn't paying full attention before, but we were discussing about reservations, right?
+
+Hector Palacios:
+Did we check if this is at the customer level as well?
+
+UNKNOWN_SPEAKER:
+The material reservation?
+
+Saul Portillo:
+Yes, this is my doubt. Is it necessary for a customer level or not?
+
+Hector Palacios:
+Yeah, but my question is if in the tables that we were checking, Ray, you were checking the tables for reservations before?
+
+Reinaldo Gutierrez:
+Yeah, I was showing you guys the table for reservations. I was paying attention.
+
+Hector Palacios:
+Do you know if that is by equipment or by functional location?
+
+Reinaldo Gutierrez:
+The information? The reservation is related to a order. So you're going to have the material there? Let me show you. Okay.
+
+Hector Palacios:
+So from the order we can get everything basically. We can get the material, the plant, the asset.
+
+Sagar Vora:
+Equipment whatever let me show my screen. I was able to see equipment.
+
+Reinaldo Gutierrez:
+So I think But not for all the order Yeah, because there is some maybe we need this filter right here the requirement type Because maybe we are not going to use the type of orders. I see in the system But here you can see the material type related to the reservation the plan a requirement dates and the order related to the reservation.
+
+Hector Palacios:
+But then there's no equipment there.
+
+Sagar Vora:
+So I think if you open that extractor where we were having the records for the future.
+
+UNKNOWN_SPEAKER:
+This one? No, no.
+
+Reinaldo Gutierrez:
+I think I closed it. And it takes so long to execute. Okay. Yeah.
+
+Sagar Vora:
+I think when we passed PM04 and PM05 for the future, there, I think there were equipments for some of the records. For some of them, not for all of them.
+
+Hector Palacios:
+Yeah, not for all of them. If that's the case, then let's keep it at the location level. I'm not completely sure what is the priority of that. Saul, because I know that Basti is pushing for that, but we are using the workhorses for the forecast.
+
+Saul Portillo:
+This is for forecast consumption, right? Yes, but because Bastian needs the data to show in the meeting, because for demand, they ask for that. Bastion will upload data for CM, for MRO. Okay. Let's see.
+
+Hector Palacios:
+But the point of reservation is that you need to do the joining with the work orders to understand the type. It's not right away. You need to check the order. And by checking the order, you can maybe get the customer some of the equipment. My point is that there are some reservations that are manual. So they are not related to work orders, are manual reservations and in those cases I don't think that we will have the customer.
+
+ Okay, we're back to the lab. Let's see if we can run it at the plant level, Saul, I'm not sure.
+
+Saul Portillo:
+Okay, we changed the the configuration because Hector and Vivek upload the data. We don't see the data because we have a filter when we see the AVP, because they need to do it as an example for supply and the different testing scenarios.
+
+Hector Palacios:
+Okay, all right, but check with Basti, please, and then we can tell Sagar and Reinaldo at which level.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+OK. Need to jump, guys.
+
+Reinaldo Gutierrez:
+Bye-bye. Thank you.
+
+Saul Portillo:
+Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you. Thank you. Bye-bye. Bye.
+
