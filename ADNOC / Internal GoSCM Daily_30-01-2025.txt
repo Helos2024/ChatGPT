@@ -1,0 +1,530 @@
+UNKNOWN_SPEAKER:
+Ah, everything's fine.
+
+Pelayo Fernandez:
+I'm going to help Fit, because if not...
+
+Fiamma Giorgi:
+Thank you very much, Pema. Hi guys, how are you?
+
+Bastian Osorio:
+I'm fine.
+
+Saul Portillo:
+How are you?
+
+Vivekanand Gajula:
+Pablo, Pelayo, how are you?
+
+Fiamma Giorgi:
+Just Pablo or Pelayo, I don't know which of the two can help me. You have to help me with a configuration.
+
+Hector Palacios:
+I don't know who...
+
+Bastian Osorio:
+I can do it.
+
+Sagar Vora:
+Ok, yes, I can help too, no problem.
+
+Fiamma Giorgi:
+There are two keyfigures.
+
+UNKNOWN_SPEAKER:
+Okay. Perfect.
+
+Pablo Lopez:
+I'll help you too, okay?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Pelayo Fernandez:
+Araya, are you still with GOTAR? Yes, I'm finishing Project 1.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Saul Portillo:
+If you want, you can focus on that and we can review it tomorrow morning.
+
+Pelayo Fernandez:
+What do you think?
+
+UNKNOWN_SPEAKER:
+Okay. Yes, yes. I think it's good. Hi, Arun. Hi, Sagar. Hi, Hector. Okay. Hi, guys.
+
+Vivekanand Gajula:
+That'll do. Thank you.
+
+UNKNOWN_SPEAKER:
+I'm fine, thank you. Okay, so let's review the different activities.
+
+Rocio Minguillon:
+Well, well, well, about what you were asking, Sagar, regarding your days off, holidays. Let me ask now, Vasthi, but yeah, of course we should tell them, but I will tell them, don't worry. But what was he asking about? I mean, what specific activity?
+
+Sagar Vora:
+Yeah, like he was asking like why when the master data and transactional data will be available.
+
+Rocio Minguillon:
+Ah, but for when or for what?
+
+UNKNOWN_SPEAKER:
+Or just in general.
+
+Sagar Vora:
+Do we have the last five years of data in the system, like the historical data for MRO and all that?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+So this is okay, Sagar, no? These three days are the ones that you are out? Yes. Okay. Well, let's go to the activities because we have a lot of things today. Well, let's start that we are just now talking about data. So I have a question. I understand that we now have the access to the development environment. So my question is, when are we going to pass from Sandbox to them in terms of the mapping?
+
+ I don't know if we are align on that, like all of us.
+
+Sagar Vora:
+I'm not sure, like I haven't received any go-ahead, like currently we have not even configured the development system in the CIDS, so currently we are still working with Sandbox, but yeah, like if we need to go ahead with their system, then it will take because we have to do some prerequisite activities.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Well, I think that we should start with that activities as I understand that the SITs are in the development system. So, now that we have access, we can start with that because for the Wave 1, the SITs are not that far. I mean, let me open. Do you agree, Hector? I mean, we should start with the development, no? Maybe I will Ray is not here, no? I will chat in the integration group so we can align on that.
+
+ We are at the region session, just after the phone. Ah, nice. OK, so then can we add this task to the technical session? So let's put it here. Do you agree that this is a conversation that we should have now, Hector? In the region?
+
+UNKNOWN_SPEAKER:
+No, no, no.
+
+Rocio Minguillon:
+I mean, like, the thing about, instead of Sandbox. I mean.
+
+Hector Palacios:
+I don't understand when we need to migrate to.
+
+Rocio Minguillon:
+Originally like in the in the in the papers like Sandbox is just for the Explorer, but now they were delayed on providing us. I mean the mapping should be done in the But yeah, OK, OK, so let's let's go on.
+
+Hector Palacios:
+Do we know what we need for doing that?
+
+Rocio Minguillon:
+I understand that we already have the access, so now it's about stacking.
+
+Sagar Vora:
+We have access for us, but for CIDS, we will require a separate ID, which we have currently in sandbox. So similar ID needs to be created in development system. After that, we can start.
+
+Rocio Minguillon:
+Okay. So the requirements is very important. Yes. Oh, my God.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sagar Vora:
+Currently, the SNC setup which currently we are doing, where we are stuck and we are taking as it is L. So once it is resolved and we are able to complete in sandbox system, then similar activity we have to perform in the dev system, like all the system whenever required.
+
+Rocio Minguillon:
+So you can type S&C setup if required, S&C. Okay, so with integration side, we have two priorities. One, of course, is the mapping and all the interfaces that are pending. But today in the session, I'm not sure if I'm going to be able to show it, but it's very important to start with this because it's a requirement for SIT that everything is in them, no?
+
+UNKNOWN_SPEAKER:
+Let's push it. Okay. Okay.
+
+Rocio Minguillon:
+So then, Hector, today in the huddle they are going to like the first thing that they are going to ask is this thing that they are asking me for a couple of days that it's composed by two things. One, they want me to give them visibility on the on the progress of the configuration activities. For that, I will just use this sheet from the configuration plan. Then regarding the open points, the ones that are pending definition, I think that you had a conversation today with Rusty regarding the thing that they were asking about the dates where these pending definitions become a problem and a delay
+
+UNKNOWN_SPEAKER:
+in the baseline.
+
+Rocio Minguillon:
+Can you hear me? Yes, we can. Yeah, we put some dates, but in, I think, yeah, if you go. I think I saved it. Hector, can you hear me? Yeah. So, which I saved, but you changed the file?
+
+Hector Palacios:
+I'm trying to do the backup.
+
+Rocio Minguillon:
+But you did it? Because I'm not sure if the one that I saved Is the one that you said you said without our name. So I'm dating, but I'm not sure if you can see it.
+
+UNKNOWN_SPEAKER:
+No, this is not the one.
+
+Bastian Osorio:
+Let me look for it.
+
+Rocio Minguillon:
+This is the one that is shared with KPMG.
+
+Bastian Osorio:
+No, we didn't change it. We didn't change there.
+
+Rocio Minguillon:
+Give me a second. I just did the update.
+
+UNKNOWN_SPEAKER:
+This is the configuration plan.
+
+Bastian Osorio:
+Yeah, it's in general.
+
+Hector Palacios:
+I will share with you the link.
+
+Bastian Osorio:
+But it's in a different file.
+
+Hector Palacios:
+Just try now. OK.
+
+Rocio Minguillon:
+In this one, Hector, or in the configuration plan?
+
+UNKNOWN_SPEAKER:
+No, in this one. Yeah.
+
+Bastian Osorio:
+Can you move to the left? We need to filter a little bit here to the left. Yeah, there you go. So we need to filter by, okay, pending definition priority and the ones that says KPNG. Next to the, on the right side of the column impact.
+
+Rocio Minguillon:
+Yeah, yeah, one second.
+
+UNKNOWN_SPEAKER:
+Oh my God.
+
+Rocio Minguillon:
+Okay, I will filter with this filter that. The macros are not going to work on the web.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+I love using the web, but okay. Everyone hates the web, but I'm okay with the web. I'm happy with the web. Then, Basti, we need to like taking advantage of the time, then we need to align very good with Ray, because Sagar asked for three days of holidays next week, like a long time ago. You also should receive the forms from HR. So we need to, and it's on the schedule, in the travel plan with KPMG since more than a month.
+
+ But yeah, we need to take that into account. Because it's next week.
+
+Bastian Osorio:
+Yeah, so, and who put you a meeting, Sagar? You were saying something about HR.
+
+Sagar Vora:
+Yeah, yeah, like with the India team, we have some conference meeting.
+
+UNKNOWN_SPEAKER:
+Ah, yes. Okay.
+
+Rocio Minguillon:
+Today, I also have it. It's actually harder at the time that you have the integration session.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+Yeah, correct. But during the, Can you please brief Reinaldo regarding the integration logic that we were thinking of
+
+UNKNOWN_SPEAKER:
+Sure, sure.
+
+Sagar Vora:
+I will brief him. Okay. I will join like I am expecting it should work within 15-20 minutes and I'm expecting our dialogue will extend. Yeah.
+
+Rocio Minguillon:
+Honestly, that call is not bad. I mean, you will see that it's not bad. I mean, I already have it. You can stay 20 minutes and then. Because there is a PPT from the meeting and it's exactly the same as they are saying. Pending definition. These ones are the ones that you want to filter or what? Pending definition from or what do you want me to filter?
+
+UNKNOWN_SPEAKER:
+No, that's it.
+
+Bastian Osorio:
+I know. And the meeting where it says meeting, but we need to filter everything that says KPMG.
+
+Rocio Minguillon:
+Okay. Here. So these are the ones that we need to check with.
+
+Bastian Osorio:
+We have some dates, but these are the ones we need to check with KPMG. All the rest is internal, or it's not creating any impact.
+
+Rocio Minguillon:
+So we have mapping. OK, so can we put some dates? Taking advantage that we are all here, so we can finish this activity. Hector will put the dates. Go ahead, Hector. Put the dates.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+For integration, we already said that we need to have it on Mars.
+
+Bastian Osorio:
+Let's copy that for the integration points.
+
+UNKNOWN_SPEAKER:
+For the integration, yeah.
+
+Rocio Minguillon:
+For integration, you have the data.
+
+UNKNOWN_SPEAKER:
+You can replicate it there.
+
+Rocio Minguillon:
+And for the configuration, we don't have a We have a, I don't know, for the supply chain, but the thing is, can you change supply network creation rules?
+
+UNKNOWN_SPEAKER:
+Can you change for, instead of configuration, can you change it to integration?
+
+Rocio Minguillon:
+Regarding the preservation approval process, what we're saying for us, it doesn't represent any impact. In fact, we can change the definition, if it doesn't trigger any additional integration flow, we can change it on the slide. See the plan for a second.
+
+Rocio Minguillon:
+From the points up here, this point that is for inventory. Well, this one, I don't know if that's an error. But this point that is from inventory, it shouldn't be like before.
+
+UNKNOWN_SPEAKER:
+Like
+
+Rocio Minguillon:
+Which one?
+
+UNKNOWN_SPEAKER:
+The order size.
+
+Rocio Minguillon:
+I think it's with you, Hector. I mean, because in March, we have to be doing the SIT, so the integrations must be finalized.
+
+Bastian Osorio:
+But this is not for Wave 1. No?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Sorry. As it says, inventory. Okay. Amazing. We're just missing this one. You also created me a task related to this reservation approval process. What do we need regarding this? I see you created that one, I think.
+
+Sagar Vora:
+Which one?
+
+UNKNOWN_SPEAKER:
+The approval process?
+
+Rocio Minguillon:
+Yeah, like someone created me a task on the planner.
+
+UNKNOWN_SPEAKER:
+For Rocio? Why?
+
+Rocio Minguillon:
+I don't know. Maybe you...
+
+Bastian Osorio:
+I don't know. Maybe it's not for you, Rocio.
+
+Rocio Minguillon:
+Ah, okay.
+
+Bastian Osorio:
+So this one triggers task in the planner?
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Rocio Minguillon:
+I received an email that says...
+
+UNKNOWN_SPEAKER:
+It's back and forth. Yeah.
+
+Rocio Minguillon:
+I received an email. I mean, it's in that... Dark planner and then that... What does it say?
+
+Bastian Osorio:
+Can you filter by your own task?
+
+Rocio Minguillon:
+No, but it's not in this planner. It's in the one that I don't know where it is. I mean, I received an email, just an email.
+
+Bastian Osorio:
+I didn't... Maybe it wasn't me.
+
+Hector Palacios:
+It was something else. No, it's the planner.
+
+Rocio Minguillon:
+It's the planner. No, maybe it's...
+
+Bastian Osorio:
+Preservation approval process. Maybe it's your boyfriend asking you to do stuff.
+
+Rocio Minguillon:
+Here it is.
+
+Hector Palacios:
+Here's the proof. It's my name because Automation is one of my users, but they say you put the dust. But not for her.
+
+Rocio Minguillon:
+I think I saw Rocio's name. Probably was a mistake. Yeah, okay. No problem. So, which data do we set to them here? Which one? Approval process? Yeah, and RISC core matrix. Core matrix, I don't think there is a RISC, so... Okay, no, no date. And for this one?
+
+Bastian Osorio:
+Yeah, so one thing, because we have just 10 minutes left, nine minutes to be precise, for Saul, we have, as Sarah mentioned, we have now the integration, so we need to start to integrate data for next week. So we have today, we have well the integration working session later, and then we try to, with all due respect, squeeze Sagar to tomorrow in terms of getting as much data as possible to prepare a quality session for next
+
+UNKNOWN_SPEAKER:
+week.
+
+Rocio Minguillon:
+So that should be the focus today and tomorrow. When are you leaving, Sagar?
+
+UNKNOWN_SPEAKER:
+I'm leaving on Saturday.
+
+Sagar Vora:
+I mean, Saturday, Sunday is holiday, so I will be back on February 6th.
+
+Bastian Osorio:
+Okay, so next week you're out.
+
+Sagar Vora:
+Yeah, I will be back on Thursday.
+
+Rocio Minguillon:
+Thursday and Friday I will be back. So, Rocio, we need more. It's urgent. We need more. We need collaboration for He cannot be, he needs to be, because Sagar is out, we need an integration consultant. So this... So Ray, then we can talk a little bit about if you are available to be more available on these three days that Sagar is not going to be here.
+
+Reinaldo Gutierrez:
+Yes, I was talking about that with Sarah yesterday, so there's not going to be any problem.
+
+UNKNOWN_SPEAKER:
+Amazing.
+
+Reinaldo Gutierrez:
+I think we need to talk about the group that I created, about the timing to work early in the morning with Agnot and Kralo to be more performance in my activities.
+
+Rocio Minguillon:
+Maybe we can talk about this on the chat. Yes, please. Sorry, Ray sent a chat, but I don't know if you were able to see, but he explained and proposed times to work better and to be more efficient.
+
+Bastian Osorio:
+Yeah, I understand that, but during those three days that Sagar is not here, We need to manage and if it's something we need to escalate, we need, of course, a greater allocation of Reinaldo in the project.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+Please, if you can align internally with Ray and then see Ray if there's someone from the integration that can help you. On during the three days or if it's okay? I can see if there's any results available, but I don't think if it's worth to three days, I mean, but we can discuss it.
+
+Bastian Osorio:
+I'm pretty sure Sagar will leave everything advanced in progress, but what we need to, okay, we need to integrate this Let's check that let's try to fix this attribute and stuff like that too. So quick things quick wins I don't know the things that don't need like a lot of time, but they is like a little bit urgent Because we're in the middle of the building phase So what time do you need
+
+Reinaldo Gutierrez:
+that I just start working 4 a.m. 3 a.m. Just let me know I to align with Claro.
+
+Bastian Osorio:
+I think we can start working at 9, let's say 10 a.m. Here, which is 6 a.m.
+
+UNKNOWN_SPEAKER:
+for you. Okay, sure.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+So, then something that I want, I need... Just one final comment, Rocio. Sorry, sorry to cut.
+
+Bastian Osorio:
+But we will have a session later and we can organize the work better there. We can take more time to talk and make the decision.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Rocio Minguillon:
+And Basti, something that I don't know if you were here when I was mentioning is that in that session we also need, I know that the integrations now are the priority, but we don't have to forget about using the development environment because we can't be on sandbox by the SIT. I mean, we need to go to development and we already have the accesses, so we have to start that. So, Sagar was mentioning that there are some requirements.
+
+ The SDD is approved, no, but I think that – I don't know why, but we can go to development, no? I don't know, Ray, if you have more context, but we have the accesses.
+
+UNKNOWN_SPEAKER:
+I mean, we now have the accesses.
+
+Sagar Vora:
+I think SDD is almost approved, like they have raised two risks, which needs to be based on some timelines given, but I think the rest they are good to approve.
+
+Rocio Minguillon:
+But yeah, I mean we don't have to forget this because we don't have like many weeks for that, just four weeks.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+Okay, well then the other question that I have that I need to align is they asked me about not the schedule, but just like the amount of sessions and the timeline to the unit testing for wave two. Because if it's in three, I mean, according to the calendar and what we were talking the other day, Rusty, we have three weeks more. But three weeks is not a lot for them. So they need to, I mean, Khalid is asking to block that time in the calendar.
+
+ So I was wondering if you and Vivek could provide me with a definition like tomorrow about just a day, just a week, so they can block the... Let's define it right away. Yeah, it's Vivek here. So where are we? We are in the... So here, one second that I will wait to...
+
+Bastian Osorio:
+So I guess we're going to... At least, let's try to book some time. So, there you have, we have, and we are now in the week of the...
+
+Rocio Minguillon:
+We are now here.
+
+Bastian Osorio:
+We are in the week of, yeah.
+
+Rocio Minguillon:
+The third week of Spring 1.
+
+Bastian Osorio:
+Yeah, so let's give, we have to give at least, well, we still need plenty of data regarding the supply chain network. So, let's and next week we have the session, so three weeks. Let's put the 31st. So, 3rd of March or 10th of March?
+
+Rocio Minguillon:
+Yeah, I imagine these two weeks. Yeah, those two. Let me see in demand and where are we? Okay, we are not having sessions there in demand because we are preparing the content.
+
+Bastian Osorio:
+Yeah, so what we can do, regarding drilling I cannot say anything so for now I wouldn't schedule anything related to drilling because now I don't know what we're gonna do with that but for now I will schedule yeah I will schedule same as this week first week for spare parts and second week for chemicals okay two sessions per day or well let's align two sessions per day and then we What we can do is Monday to Wednesday.
+
+
+
+Rocio Minguillon:
+Thursday and Friday internal work. What do you think Vivek about these two weeks and the dynamics that Astiana is proposing? Do you have any comments?
+
+Vivekanand Gajula:
+You were asking about the design validation sessions for supply planning, right? Exactly. Yeah, so that totally depends on the prerequisites.
+
+Rocio Minguillon:
+Yes, but considering the situation right now, and yeah, because we have to...
+
+Vivekanand Gajula:
+Yeah, of course. You know somewhere I feel before before we commit on those states right prior to prior to that we need to internally you know have a look at the supply planning results because anything that is based on forecast based that is regular supply planning but at least you know that ROP scenario you know we need to review so that But internally, we are aligned on that before going in front of the customer.
+
+
+
+Bastian Osorio:
+Yeah, of course, Vivek. But we will have four weeks of preparation. And if there is no data, for example, for supply chain network, or if we don't have a clear definition, we will just postpone the meetings. But we need to give a tentative. We need to book some time. Yeah, tentatively, I think. Ideally, these two weeks, as we did in this and next week. Then, if we don't have data, that's another question, and we have still, as I said, four weeks to prepare this.
+
+ So, I think, initially, it looks fine, but again, as you said, Vivek, if we don't have the definitions, of course, we can postpone. But, for now, it's fine. Me I don't know what what's your what's your take?
+
+Vivekanand Gajula:
+Oh that is okay and also you know in Feb I'm not there for one week okay so so I'm trying to you know I'm trying to complete you know as much as I can you know before before you know I take that break so but but you know you me and you know Hector at least you know we need to align on few things that is more you know readiness you know standpoint so so that we know you know what all things we need to you know uh demonstrate you know to the customer yeah yeah okay that's enough information for me so thank you very very much we need to jump in else we need to jump here
+
+Saul Portillo:
+to the huddle um well saul yes I agree with you we we we start working with the manual data but parallel work with the integration data with the manual data configuration and in the working in the integration and configure at level with product cost for chemicals.
+
+Bastian Osorio:
+Yeah and one more thing we also need to work maybe it's no need to do it right now maybe tomorrow or when or after we finish the integration session We need to start working in the approvals for reservations. There's two key figures, one called Material Reservation for PM and another one called Material Reservation for CM. We need to create additional key figures like same material preservation 4 p.m.
+
+ Approved the same thing of the other thing for these two for CM and 4 p.m.
+
+Saul Portillo:
+okay and the idea in CM if the actual uses for chemicals plus MRO no for corrective maintenance or only MRO no for now I will keep it simple Okay.
+
+Bastian Osorio:
+The thing is that with, for me, the process with chemicals and MRO is looking the same. The only difference is that event, I don't know, for now, I don't see any difference, honestly, because what we're saying is for spare parts, we are merging, corrective and preventive, but in chemicals, it was in that but we still need the visibility of the different type of orders. So it's not that we can integrate everything into just one key figure.
+
+ Okay. Okay.
+
+UNKNOWN_SPEAKER:
+I will jump into the daily huddle.
+
+Bastian Osorio:
+Thank you. Bye.
+
+UNKNOWN_SPEAKER:
+Bye. Bye.
+
+Vivekanand Gajula:
+Bye, guys. All right.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+UNKNOWN_SPEAKER:
+Bye!
+
