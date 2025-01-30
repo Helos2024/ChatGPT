@@ -1,0 +1,1045 @@
+UNKNOWN_SPEAKER:
+Hi, team.
+
+Bastian Osorio:
+Are we waiting for more people to join?
+
+MM- SKEC2 - L08:
+Yeah, I think we'll need more people from Hard Knock. We don't have Aboobacker. Let me see if I can ask Aboobacker to join. Let me see if Rajiv is available to request to join. Request to join request to join request to join I'm trying to pull people in the call. Here we have Jaganath. Joined, we have Satik on the call. We have Arun. We have... Jaganath, we can start the call. I think...
+
+UNKNOWN_SPEAKER:
+Aboobacker is...
+
+MM- SKEC2 - L08:
+I don't see Aboobacker on the call. I think we have everyone from morning session. Do you think we can start the conversation or start the meeting, Jaganath?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Rajiv, we need to check with Khalid or some planning team, you know.
+
+MM- SKEC2 - L08:
+Khalid is not on the call, but I think we have we have onshore, we have.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Only onshore and sour gas.
+
+MM- SKEC2 - L08:
+So our guests, we have Achmad, we have Aboobacker, I think we have all the people. Let's start.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Yeah, all right, let's start.
+
+UNKNOWN_SPEAKER:
+All right, let me share the screen.
+
+Hector Palacios (ADNOC Group D&CS):
+I think that what we can do now team is to go through the open topics that we have. And then we if we have some spare time we can start checking the the results and analyzing data, okay? So we have two things to discuss about the open topics related to definitions that we want to confirm with you. One is segmentation and the other one is economic order quantity. So, Raúl, do you have right there the segmentation file that we were creating or Cujbo so we can share I don't have the link of that one.
+
+
+
+MM- SKEC2 - L08:
+Yeah, we can share. Do you want to go through the segmentation first or UOQ first? Segmentation. OK, let's go through the segmentation first.
+
+UNKNOWN_SPEAKER:
+Quimbo, will you be able to share that? OK.
+
+Hector Palacios (ADNOC Group D&CS):
+So as you know, Tim, the segmentation is a topic that we are planning to calculate directly on IDT. For that calculation, we have some guidance from the inventory procedures, but there is more information that usually we need to calculate. This is not enough to say the treasures like the 70, 20, 10 percent or higher than this price. In many cases, for example, for HTML, that is going to be enough.
+
+ But when we say, for example, ABC segmentation, we need to be clear on what is the horizon that we are looking in the past. Because we say the consumption value, but of the last month, the last year, the last two years, what is the horizon for driving a good calculation on this, or what is what you're doing today? Usually two years should be more than enough, but knowing that here we have some slow movers as well, I think that at least a full horizon should be considered, but let's validate with you how you are doing it today.
+
+ So let's see. Segmentation, we need to know how we are going to group. So, we calculate the ABC in a set of data, right? So, are we going to calculate at company level or are we going to calculate at ad hoc level, you know? At which level do you do the calculation? Material plant level or only material? So, we classify only materials or we classify the combination of material and plant or material search location.
+
+
+
+Achmad Sonhaji (Borouge):
+That's plant level.
+
+UNKNOWN_SPEAKER:
+Plant level.
+
+Hector Palacios (ADNOC Group D&CS):
+Plant level, perfect. And for the grouping logic, are we grouping by company? We have the ABC by the whole ad-hoc.
+
+Fakhouri, Mohamad:
+Hector, just one thing. For the grouping level, I remember, Jagda, you mentioned it is per company. So is it all companies now per plant or how is it?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Grouping, APC and all, the GPI fields. Plant level. Plant level, yeah, plant level. That is what we mentioned here, no? As for the last discussion.
+
+Hector Palacios (ADNOC Group D&CS):
+No, but one thing is the calculation level. I mean, for every plant and material, they will have a classification assigned A, B or C, right? Yes. So, the same material can have different classification depending on the plant. Yes. For one plant can be A and for the other one can be C.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios (ADNOC Group D&CS):
+Depending on the use. Okay, that's fine. Now, the question is how we route them. Because the ABC is a measure that is relative to the set of data. So, if we have a set that is only the company, then we are ABC for the materials that we are using in that AGC okay so that means that if we calculate this way the same material for one AGC can have one value and for another AGC can have another value should be something like that or should be a like a cross definition for the whole company this is an A and this is an A for Bruges this is an A for oil and gas and so on.
+
+ Is that the way or should we separate it by company?
+
+Mohammed Sadique (ADNOC - PE&ICV):
+No, no, the segmentation is the same for all the companies.
+
+Achmad Sonhaji (Borouge):
+Same for all the companies. Same procedure, right? But the cost is one level, right?
+
+Hector Palacios (ADNOC Group D&CS):
+Because my consumption and your consumption will be different, can be different, depend on the class.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios (ADNOC Group D&CS):
+So let's keep it per company, okay? Um okay the consumption value we think that is basically the the actuals in the past multiplied by the unit cost that should be the moving average price uh basically that definition is that correct or are we missing something here
+
+Achmad Sonhaji (Borouge):
+we have a good issue value right from the you know consumption is a good issue and price it can be different time to time and the good issue.
+
+Hector Palacios (ADNOC Group D&CS):
+So you say that let's integrate directly the value, not multiply the volume by an average price, but let's bring the value that happened in the past. Yes, yes. Okay. Let's take note on that question, please.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Sheikh Saleem (ADNOC Logistics & Services):
+Brother, can you repeat this question again? I did not get it clearly.
+
+Hector Palacios (ADNOC Group D&CS):
+We were saying based on what we are going to calculate the ABC segmentation. So, we were proposing let us take the volume, the consumption volume in the past, the actuals and let us multiply by the price. But here the input is not, let us integrate the value in that moment because the price is changing. I think that it would be a better input. It is more precise, let's say.
+
+UNKNOWN_SPEAKER:
+Yes, that's right. Perfect. Horizon.
+
+Hector Palacios (ADNOC Group D&CS):
+So when we calculate this, how many months in the past we should see? I think that Aboobacker was saying in the chat, he was saying like 12 months. But if we check only the last 12 months, we are not going to see data for some slow movers, mid movers, they are going to be out of the calculation.
+
+Achmad Sonhaji (Borouge):
+But our analysis is based on five years. Yeah, when we calculate like FMSN is five years data.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+The question is about ABC.
+
+Achmad Sonhaji (Borouge):
+Yeah, ABC is not there, it's not in the SOP, it's not mentioned how many years, right? So for us, we calculate like, I think three years. Jagannath, we calculate yearly, no?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yearly, yes.
+
+Achmad Sonhaji (Borouge):
+So, what are the requests here, Jaganath?
+
+UNKNOWN_SPEAKER:
+We calculate yearly. This ABC. Yeah.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So, you are taking last 5 years historical data and then calculating the ABC. Okay, 5 years.
+
+MM- SKEC2 - L08:
+I am checking, let me.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, no, wait, wait, wait.
+
+Achmad Sonhaji (Borouge):
+Hector, I am asking a question. Hector, let me check, if I am not wrong. I think.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+But generally, what we do, no? Unless we take last 12 months. Every end of the year we do this updation, so we take the current month consumptions.
+
+Hector Palacios (ADNOC Group D&CS):
+So if we take the last 12 months, that means that if I have an slow mover that didn't have a consumption last year, the consumption is going to be value is going to be zero and will be classified automatically
+
+Achmad Sonhaji (Borouge):
+as a C. Yeah, yeah. Second, Jaganath this one is for us is we use for the stock account.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Cycle account.
+
+Achmad Sonhaji (Borouge):
+Cycle account is we have every year. So for C, every three years. B, like two years. And A is every year, right? That's why we consume in last three years consumption. Yeah, because of that we take three years consumption.
+
+Hector Palacios (ADNOC Group D&CS):
+So it's three years for the calculation horizon?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, because you depend on if only last year then we'll we'll give you the because each company is having a different calculation so we'll agree on this one please keep it open let us not one more point if you
+
+MM- SKEC2 - L08:
+are discussing interleaves to discuss that today your process was because this was a manual calculation effort now your system is going to give you this value as an automatic calculation would you like to change this frequency and horizon example is today you are doing this year and activity for based on actuals of the last year right or at the start of the year so if it is a it is something system can calculate for you do you want to consider the period as a rolling period that if I every time I do it can be rolling uh 12 months in the past so that the the data is more realistic and more accurate so which is the best
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+practice Rahul, you need to advise us.
+
+MM- SKEC2 - L08:
+I think it would be always looking at what is really happening in the whenever you're calculating, you should be looking at past 12 months. It should be rolling period because if you keep it rolling, then you are incorporating the actions which are happening over over that. Because if you do it every 12 months, then you are delaying the impact of what has happened in last 12 months in the next period, right?
+
+
+
+Achmad Sonhaji (Borouge):
+I'm doing. I think last yesterday I think we discussed for ABC because this one will not give a right figure. You know ABC is. And I'm not waiting. Let us hear from Rahul OK. For example, a a you will put like this is being back on the service level, right? Now. This segmentation will impact your safety level, right? The ABC ones so far, no. Oh, no, only OK. If it is not, then no problem. Because if it is impact to safety stock, then I have to answer.
+
+ If it is not, then no.
+
+Hector Palacios (ADNOC Group D&CS):
+It can impact the alerts, maybe, because you want to focus the important ones. You say, OK, I want to check the A's. And only for that one, I will dedicate time for that. You know, so that can impact the process, not the calculation.
+
+Achmad Sonhaji (Borouge):
+If it is not back to service, then no problem.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, but the recommendation from our side is what Rahul was saying is let's use the up-to-date information. That means the last 12 months rolling. So we don't need to take 24, 25. We can take the last 24 months, 36 months, and so on. So we can take the periods that you decide. Let's keep it open. Frequency is clear as well. Annually different companies they have different horizons. So let's decide eventually.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, don't put this kind of comments there. OK, only we need to agree to bridge because they said that they are considering three years that I didn't confirm with them, but all of the companies we have only one logic. OK, let's say if I do this calculation in December. OK, let's say 2024 I will take full before data and then I do this calculation.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+MM- SKEC2 - L08:
+All right.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+For all group companies, only brooch I need to check with what they do.
+
+MM- SKEC2 - L08:
+Okay. All right. Yes. So 12 months for all group companies confirmed brooch to be confirmed.
+
+UNKNOWN_SPEAKER:
+Last two months. Yeah, we did three years last three years consumption.
+
+Achmad Sonhaji (Borouge):
+I think that the best approach is if we can come up with a unique definition for everyone. Yeah, that's OK because we use this for the cycle for this way because they see it every three years. Why then we take 3 years.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, then let's go with the next one now.
+
+MM- SKEC2 - L08:
+The frequency is also different for Gurush then. Yeah, no, frequency is N and V, but then if it is identified as C, then they'll do cycle count every three years, not spend every time on the cycle count. All right, let's proceed to the next.
+
+Hector Palacios (ADNOC Group D&CS):
+So in FMCNIC it's clear for us. So the grouping logic we don't need it. Calculation level, material plant because the same material in different plants can have different consumptions. It's fine. It's okay. That way.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Hector, I think this topic we already discussed. You see this segmentation. Now go to that column B. Okay. Why it still says use tries in last one Last time we met and we corrected this one, right?
+
+Fakhouri, Mohamad:
+With whom, Rafael, do you remember? Yes, twice in the last year. Yes, yeah, those are not updated, Jagat, but
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Once you're bringing the old data, how many times? We already discussed this one. We updated many things.
+
+Fakhouri, Mohamad:
+Then what we are discussing here? No, no. We're just we're discussing the the logic. But for the definitions no it is we will take the from the BPD.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I think that you only seen different I see. No no you are discussing logic here. We discussed once. No no no don't discuss any logic here. Go as per the procedure. Okay there is no separate logic for each company. Everybody is using the GPT, GPI procedure. Take the logic from the procedure. And then I incorporate here. OK, if there is anything to be discussed, we can discuss.
+
+UNKNOWN_SPEAKER:
+Don't discuss the logic here, please.
+
+Hector Palacios (ADNOC Group D&CS):
+But yeah, you're saying that we here we are missing logic. Not everything is on the procedure, so they they like the treasures that you have there. Yes, we have it, but as soon as we discuss about horizon calculation level grouping logic that there is no such a thing on the procedure. And it's something really important We need to know all the five.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+All these five are it's in the procedure. The logics are in the procedure.
+
+Hector Palacios (ADNOC Group D&CS):
+No, only the the treasures, not the grouping. The grouping, the calculation level, the horizon is not on the procedure.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+This also we discussed last time.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, what is the doubt you had here?
+
+Achmad Sonhaji (Borouge):
+Which part? Sorry, last time this. It's not in the procedure, so only twice every year, but not mention how many years. Per year, correct? It's not mentioned last year, so...
+
+Hector Palacios (ADNOC Group D&CS):
+No, FMCN, I think it's much more clear. For example, the ABC?
+
+Achmad Sonhaji (Borouge):
+For F, it's just not mentioned last year. Only every two years, twice every year. Yes, only that one.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+No, no, Achmad, it is every two years, twice, and every three, last three years.
+
+Hector Palacios (ADNOC Group D&CS):
+That is the definition we have configured, indeed. On the system, it's a fast mover. It's like that you have two consumptions, in the last three years.
+
+Achmad Sonhaji (Borouge):
+Yeah, so we have it in three years, right? Guys, guys, wait, wait.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Hector, can you repeat the fastmover definition?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, fastmover is like at least two consumptions in the last three years. Last two years?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+In every year you need to have two consumptions. Three after a year, right? Last three years, Hector. Rahul, I'm fed up with this. This topic we discussed already many times and also why we are repeating All right, let me align this, Jaganath, what's the concern here with the team, and we'll get back to it if we need more information.
+
+MM- SKEC2 - L08:
+But again, I think that we still need some logics here to discuss.
+
+Hector Palacios (ADNOC Group D&CS):
+It's not everything, it's not all about the inventory of seals. There is more information that we are going to need for BED segmentation. I'm pretty clear of the logic, but I need to see the inputs of that. Because one, the measurable theory is going to say what is the consequence of the item missing? I need that information for the logic. Is that information on SAP? That is the question. So, please let's continue the discussion.
+
+ We have many things to discuss here.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Which one, Hector? Go to a specific point.
+
+Hector Palacios (ADNOC Group D&CS):
+Let's jump the FMCM. Let's go to BAD, please. So, on the Okay, so in the part of inputs, you see the column E, you have equipment criticality, consequence of part failure, and frequency of part failure. When we see the frequency of part failure, that is a different definition than FMCN. So one question is, can we use FMCN as a frequency failure for that definition. I would recommend to go that way so we have only one definition for what is frequency FMCN.
+
+ It's already in S4HANA right?
+
+Mohammed Sadique (ADNOC - PE&ICV):
+And you're taking from there.
+
+Hector Palacios (ADNOC Group D&CS):
+Which part the FMCN or the frequency of part failure because I seen that they are different definitions on the procedure. The VED is already in S4HANA. Yes, but the VED is something that we need to configure on IVP. We need to automate the logic. So for doing that, we need to think.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Hector, my advice, please align with your team. OK, this we already discussed many times. Come up with the correct file, then we'll discuss this. Let's go to the URQ, please. We already discussed this many of these points, please.
+
+Hector Palacios (ADNOC Group D&CS):
+But I still don't know and I don't think that anybody knows in my team what is equipment criticality, where we get this information. My main question is, because we need to consider these inputs, do we have these inputs on S4HANA? Because whatever automation we need, needs to have a source data.
+
+Achmad Sonhaji (Borouge):
+For us, Bruce, we have logic in the MDG to calculate the criticality. There is calculation, yeah.
+
+Bastian Osorio:
+MDG?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah.
+
+Achmad Sonhaji (Borouge):
+We make automated calculus on the selection and MDG, there is a custom field, yeah, to define the human criticality cost kind of heart value, the kind of heart value that vanish all in MDG. It depends on the select, then it has a calculation on the PDO.
+
+UNKNOWN_SPEAKER:
+The PDO will be automatically calculated.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, but then this information is not on S4Khanna?
+
+Achmad Sonhaji (Borouge):
+In MDG, MDG, yeah. So I have the formula, I will check in the formula, we implement it.
+
+Hector Palacios (ADNOC Group D&CS):
+And what about the second field consequence of part failure?
+
+Achmad Sonhaji (Borouge):
+Yeah, this one is part of also the calculation.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, but the information is, do you have it on MDG, S4HANA, where we can find this information?
+
+Achmad Sonhaji (Borouge):
+In the MDG, MDG. Why is not related with FMSN? Because FMSN is a consumption. The failure. Okay, we have a message on the chat from Aboobacker.
+
+Hector Palacios (ADNOC Group D&CS):
+No need to update BED. The point, Aboobacker, is this is one of the requirements we have on the BRD. So, this is why we are having this discussion because the requirement is to automate this.
+
+MM- SKEC2 - L08:
+So, Aboobacker, if we understand what you are saying is that the whatever is there in S400 should be input to IVP as it is.
+
+Aboobacker M. (ADNOC Gas - PD):
+We should not calculate this again in IVP. Yes, yes. No need to calculate again in IVP because we need user review and concurrence for V item and all. So, recently we did for all the V items. So, some of the items know they reviewed and downgraded to desirable or essentials. So even though it is not based on the equipment, even equipment criticality there, but the users declared that you can downgrade to desirable or essentials.
+
+ That is why it's better. We need to review with the user. As always, so better use as is in the as far as is possible.
+
+MM- SKEC2 - L08:
+All right, because we were doing this conversation because one of the requirements BID was to calculate all the segmentations in IBP. But if this is the process for VD and you already have an alignment and it's reviewed, then we'll take this as input and we'll integrate VD as input to IBP and not calculate in IBP.
+
+Hector Palacios (ADNOC Group D&CS):
+How we can communicate this, Rahul, to whoever raised this? I see that Aysha was requesting this.
+
+MM- SKEC2 - L08:
+So let's let's take this as one of the agreements of this meeting and send it across to the team as part of the discussions what we are having.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So yeah, yeah, now watch it is specifically asked that we need to be calculated anywhere in the PRD.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Essentially it was asked that all the holiday even if it's need to calculate it, you need to get in touch with user departments, you know. When you discuss with EAM team, you get this information and post it out there. Because equipment criticality, consequence of part-time failure, this is all related with their activity. Now currently in S-400, they are giving us what is VED and we are directly inputting that.
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+This is what my information is also. It's more of an input than any calculation.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+So if there is a calculation behind this, it's only user or the planning team will know.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, so the input is that let's try to integrate this information and let's confirm, Rahul, let's communicate internally that this is going to be that way.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, good. Let's continue on X, Y, Z. We also need to group because these are Pareto segmentation, so we need to know the grouping. I check that we can use by company as we do it by ABC. Material plant level is also fine. The calculation, we think that is just the stock on hand that we have currently, the available stock multiplied by the price. Is that okay or we need to integrate in a different way?
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Can you confirm, Tim, that the stock value measure that you are using, can we use it like this, the stock quantity by price?
+
+UNKNOWN_SPEAKER:
+Or do you have another measure of that?
+
+Achmad Sonhaji (Borouge):
+Stock value is from the table directly there, right? I think we have a table for stock value as a BW and it's for the normal project and project sqbw, that will be the stock value.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, so we need to find the specific input of a stock value, not to calculate on MVP.
+
+Achmad Sonhaji (Borouge):
+Yeah, it's probably a direct value, no calculation.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, let's please take that note and we can go to the integration session. To find out where we can get this information based on the information already provided for doing the mapping. Sorry, Hector, which one are you talking about? The X, Y, Z. The column E for the X, Y, Z instead of a stock quantity by price is going to be the direct input. There is one field in one of the tables that here Hamad is mentioning in the that we have the table n, b, e, w, w, n, b, e, w, and q, b.
+
+ There you have it.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Is it for Bruges, right? This is not...
+
+Achmad Sonhaji (Borouge):
+It is SAP, SAP table. Table, but it's for Bruges, right? Even for Arnab also we use this table for the stock value, you can see. For XYZ? No, no stock value, right? You asking stock value or XYZ. No, I mean, Hector mentioned that stock value will be quantity times by price, right? Then I mentioned that stock value is there in the table field.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, yeah, what you're asking Hector? Stock value or XYZ indicator?
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, so we integrate the stock value from the table as an input on EVP we calculate the XYZ segmentation based on that.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+OK, OK. But there is XYZ indicator also in S4HANA. You will not consider that, right? No, no.
+
+Hector Palacios (ADNOC Group D&CS):
+The requirement is to calculate everything on IUP. On S4HANA, correct me, but you don't have an automation of that, right? No, no. And it's better to have the info.
+
+Bastian Osorio:
+It's better to have the info. It will add value for the, not just to see the segmentation, but to see the actual number that is been used to calculate it, it will add value for sure.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+But the requirement, Khalid, in BRD is that let's try to automate all the segmentations on IVP. That is what we have on... Right, right.
+
+UNKNOWN_SPEAKER:
+OK. Good.
+
+Hector Palacios (ADNOC Group D&CS):
+Can you go to the right, Cushpo, to see if there is anything missing? Because the horizon here doesn't apply. Calculation frequency is something that you're doing in yearly as well? Or in which frequency are you calculating the XYZ segmentation?
+
+UNKNOWN_SPEAKER:
+Annually as well?
+
+Achmad Sonhaji (Borouge):
+Yes, annual update for all these parameters.
+
+Hector Palacios (ADNOC Group D&CS):
+everything the same. Perfect.
+
+Nishant Keloth (Borouge):
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+And for HTML, the unit price I guess is the moving average price that you have on S-Rohana. So we can use that input to calculate that segmentation. Is that okay?
+
+UNKNOWN_SPEAKER:
+Yeah, based on the current interface. Okay, let's use that definition.
+
+Aboobacker M. (ADNOC Gas - PD):
+This is an easier one.
+
+UNKNOWN_SPEAKER:
+Fine.
+
+MM- SKEC2 - L08:
+And business continuity, I guess that that one is going to to rate it I don't see I don't know if there is a logic for that just a minute hml hml we are seeing based upon the current moving average by the rb that's what we're confirming right unit when it is unit price it's moving average price right or the price from the uh the last purchase order moving average price only that is more representative yeah all right 0.1
+
+Hector Palacios (ADNOC Group D&CS):
+can be an exception. And for business continuity team, I guess that there is no logic for that. At least on the inventory procedure, I haven't seen such an explanation for this. I think this is outside the business, the inventory procedure. So far, it's just an indicator.
+
+MM- SKEC2 - L08:
+I think on S4 we just need to consider that indicator from a Okay, good.
+
+Hector Palacios (ADNOC Group D&CS):
+With this, I think that we are okay. The leap time segmentation is not a hot topic right now, Cushpa, so let's not put it there.
+
+MM- SKEC2 - L08:
+It's not important to discuss now.
+
+Hector Palacios (ADNOC Group D&CS):
+Also, it's something that doesn't exist today, so whatever we put here, we something that we will need to propose to the team.
+
+UNKNOWN_SPEAKER:
+Good.
+
+Hector Palacios (ADNOC Group D&CS):
+The other open topic that we have is economic order quantity, Rahul. You wanted to discuss something else, right?
+
+MM- SKEC2 - L08:
+Yeah, so let's talk about the economic order quantity we've prepared based upon the previous conversation. We've prepared a logic and this can be reviewed with the team here.
+
+UNKNOWN_SPEAKER:
+You want to share the screen? Yes, I'm sharing my screen yet. Thank you.
+
+MM- SKEC2 - L08:
+Is the screen visible to everyone?
+
+UNKNOWN_SPEAKER:
+Hector, you can see right? Yeah, I can see.
+
+Hector Palacios (ADNOC Group D&CS):
+Rahul, can you help me with this? Because you were working more on this than I in this proposal.
+
+UNKNOWN_SPEAKER:
+You are on mute guys. Yeah, alright.
+
+MM- SKEC2 - L08:
+So, I think this is what we are trying to do when it comes to calculation in the IDP. So, we have to formalize the standard formula. That's what we are doing. And for every parameter which we are using the calculation, we have explained what is the parameter, what is the field type, and what will be the calculation logic. And we're just creating a sample calculation in the Polymer. So basically, the primary fields are D, S, and H.
+
+ D is nothing but the demand. We directly have it through IBP. So if you can go to the row 14 highlight, this is something which is directly coming from IBP. When it comes to ordering cost, ordering cost is combination of purchase order cost, administrative cost, and inventory cost. So this would be a user input as per the previous description of the team. And this input would be required at plant level, because we understand the EOQ calculation would be at plant level, plant-material combination.
+
+ So every material for a plant can have a different EOQ, can have different max inventory calculation. Based upon consumption so the purchase order cost administer cost so this would be something which would be required at annual level every year we will have this input on an annual level as an user input and yeah so every agc for the respective plant has to provide this input in idp for us to calculate the ordering cost same goes to holding cost the holding cost is essentially uh it is a calculated key figure which means it is a it is a percentage of inventory holding cost and inventory holding cost what we are seeing is basically moving average price.
+
+ So how much so that it is the inventory value and the percentage of inventory value becomes the inventory holding cost. So the recommended the suggestion we are doing is to calculate the the inventory holding cost as monthly. What is the average inventory holding inventory we are carrying And then based upon that, based on the average inventory cost, calculate the holding cost for the year. And then if we are able to calculate all these key figures, then essentially you have to formalize them straightforward.
+
+ So this is how we are doing the sample calculation on the right. So essentially, we get input on the purchase order cost, administrative cost, and the inventory cost as input. Generally, finance team may have this. If you're doing it today, you already have this as input. Ordering cost, we are saying, is essentially the sum of all those administrative costs. And then holding cost is essentially the inventory cost into a fixed percentage of inventory holding cost.
+
+ So is this something you guys agree to or disagree to? Confirm if this logic makes sense for us to proceed with?
+
+Hector Palacios (ADNOC Group D&CS):
+More than the confirmation, Rahul, because I think that we need to, if that is aligned with the Muru and Jagannath, the team will align. The main point is this information, the source of that information is something that we will need to update manually. It's something that we can integrate from the system. That is the main question.
+
+MM- SKEC2 - L08:
+If you see in the column D, we know for sure purchase, order cost, administrative cost, inventory cost is not available in system, which means it is a manual user input.
+
+Aboobacker M. (ADNOC Gas - PD):
+Based upon that, currently we are not using any UOQ. This is something new, new IBP. So then we need to have discussion how to calculate this one. So, usually when we were in the old system, how we put for example, safety stock 1, reorder point 2, maximum 4 means, we put 2 and EOQ, mean 2 plus 2, reorder point plus EOQ equal to maximum.
+
+Hector Palacios (ADNOC Group D&CS):
+Exactly.
+
+Aboobacker M. (ADNOC Gas - PD):
+So, that way we don't consider any the purchase order cost or this administrative cost nothing we don't do anything yeah but this is something new we need to we need to know where for the new items how we will calculate if there is no purchase happened if user returned back with the zero cost how we will calculate this eoq so this is the challenge shabu bagher the eoq is a textbook formula is the same one everyone knows that
+
+Hector Palacios (ADNOC Group D&CS):
+formula when you are studying that that's the formula and depends on the demand, depends on the ordering cost and in the holding cost. So, if you want to find the optimum, you have two options or you order frequently in low quantities or you order unfrequently in high quantities. So, that those are the two options.
+
+Aboobacker M. (ADNOC Gas - PD):
+That case only is applicable to fast moving items, not with other items.
+
+Hector Palacios (ADNOC Group D&CS):
+Exactly, on the fast moving. So, this is going to be especially important for fast moving and for chemicals in general, is going to be like that. So this definition that we have here, the question is, OK, we know that we need the ordering cost and we need the holding cost. The challenge is how we can estimate it because there is no such a field on S4HANA. So that is the main question. And what the team was helping here is to come up with a proposal.
+
+ The purchase cost is going to be this plus this plus this. The ordering cost is going to be this percentage out of the unit price, something like that.
+
+Aboobacker M. (ADNOC Gas - PD):
+So that is the logic that we are validating. The inventory holding cost for that particular item you are calculating, or for 12 months average for that particular item? For the item, yes. So that means at the end of the year, if we have 1,500, 1500 maybe 2000 so then divided by 12 yeah so essentially what we are saying holding cost every month and you have some inventory right so that's the
+
+MM- SKEC2 - L08:
+inventory you are holding so if you if you calculate the average inventory for the entire year then you know that what is the average inventory I am carrying so that becomes the input for calculating inventory holding cost and an inventory holding cost can be a fixed percentage of average holding based upon How much like, Holding cost for the all the items in a community value or only for that particular item.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+So you will have to calculate for all and for individual items.
+
+MM- SKEC2 - L08:
+This is how you can calculate and if you repeat this calculation for all the items in your inventory then it goes to the it gives you the inventory holding cost. If there is no inventory. It which means there is no inventory holding cost associated to that metal, right? Because we are not holding any inventory for that material.
+
+Aboobacker M. (ADNOC Gas - PD):
+So that that means only individual items calculation individual items value, yes.
+
+UNKNOWN_SPEAKER:
+The state is not clear.
+
+Aboobacker M. (ADNOC Gas - PD):
+Now we need to have more very difficult to calculate for each inventory item.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Each item level to calculate the holding cost. It will come as a constant. I mean the one value for the plant or company level. So, we and also we need to see what would be the way I mean variation say for example, if I put the inventory holding cost as 150 and what would be the proposal for the UOQ even if I put 300 what would be the results. So, we want to see the variation. So, that we can agree upon whether it would go by material level, plant level it depends on the variation how much I have got I mean how much impact it is going to do on my calculation.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+So for holding costs, I think it's easier because we don't have such a field on S4HANA, right? We don't have, but this is holding cost. The proposal is by the team is that we have the annual, the price of the stock that we have, I mean the valuation of the stock, and 20% of that is going to be the holding cost. That is a benchmark.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+That's okay, correct. But why it is mentioned total quantity for 12 months?
+
+MM- SKEC2 - L08:
+What is what does it mean? So what we're trying to do is that you hold inventory in your warehouse or in your plant, right? It may be just four days before five years before. OK, fine. Yeah, so so. So essentially what we are saying is what is the average inventory you hold for an year and then if you are holding a certain inventory average inventory for a year, you spend some money to hold that inventory, right?
+
+ So that value of the inventory you're holding can be a percentage of the value of the inventory you have. So that's the basis we are trying to set up here, saying that first calculate what is the average inventory you have for a specific material. Now, if it is not getting consumed over the period of time, you will have a consistent average inventory of the material. Now, if you have average, say, 100 pieces every month, you have average inventory of a material.
+
+ If the material cost is a 100 rupees and you have 100 then it becomes 10,000 as the the average inventory holding value. Now if we have to calculate the cost there is no empirical formula to convert from holding cost to holding value.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So probably you take a percentage of that. But how to let's say I have an item. OK, let's go to the item level. I have 10 piece which is 100. Unit price, OK? That means. 1000 yeah 1000 yeah so how so you will take 20% of it or yes OK fine.
+
+MM- SKEC2 - L08:
+Because I'm a little confused why it is mentioning quality for 12 and 1000 so the average becomes 1000 divided by 12.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+MM- SKEC2 - L08:
+Yeah, we'll take 20% of that, but what do you think average is 100? That's what I understand. If you have every month 100, which means for 12 months you will have 1200. Correct, if it's constant. What is the average inventory you have? That defines if you are holding something for a long period of time, you are spending money on holding that inventory every month. So we are calculating what is the inventory you are holding every month, what is the average inventory for the year.
+
+ Average inventory is the month and every inventory every month divided by 12 gets the average inventory for the year and what is the value of that average inventory?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Okay fine, fine, fine. So each let's say in 2024. So you will see what is the value of your inventory in each month January, February, March. Then add them and divide by 12, then 20% of it, right?
+
+MM- SKEC2 - L08:
+Yes, yes.
+
+UNKNOWN_SPEAKER:
+Okay, fine.
+
+MM- SKEC2 - L08:
+So do you think this logic can work for AdNorm? That's what we wanted to confirm from you so that if this something you agree and you want us to calculate, then for sure, as you said, we will calculate this and you can change these numbers. If you want to say what happens if I keep it 10%, then the calculation changes. And then if the calculation changes, what is the impact of that calculation on EOQ?
+
+ And if the EOQ changes, what is the impact of that calculation on the max parameter we are maintaining? So you'll be able to change and simulate this what you want to do, right?
+
+Hector Palacios (ADNOC Group D&CS):
+This is something that we can automate. We can get the material, the value of the stock, the average value. We can get it from the integration, calculate it. The percentage, the user can manually update this as a global parameter. That's perfect. So this should be fairly automatic and easy to get. Ordering cost is the challenging one.
+
+MM- SKEC2 - L08:
+Ordering cost, essentially, we are waiting. This is a completely user input. So if you see, we are not calculating we are asking user to provide input. If user provides this input, then the ordering cost can be some of the administrative cost, purchase order cost, and inventory management cost.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Purchase order cost, that's OK. Administrative, what is the inventory management cost?
+
+MM- SKEC2 - L08:
+Do we have that write up? Yeah, I think we have.
+
+MM- SKEC2 - L08:
+The cost related to receiving and inspecting goods on arrival. Inventory management or?
+
+UNKNOWN_SPEAKER:
+Yeah, inventory management. Can you see this? Yeah.
+
+MM- SKEC2 - L08:
+So once you receive that material, you have some cost associated with inspecting and receiving. That's the cost.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+How it is become inventory management? Receiving and inspecting.
+
+MM- SKEC2 - L08:
+We are just sharing you the standard definition. Fine, fine, no problem.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+What we can do? We can just put the definition there so that it is very clear. See, when you put inventory management, it means something different. So, maybe receiving and inspecting. Mostly it will be inspecting. Receiving what? Costing what? That is the management, warehouse management cost, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+MM- SKEC2 - L08:
+Yeah, yeah, because essentially you you first feel it's at some other location. Then you move it to some other location and then do the inspection and again release that material for like, So if there are any costs which are separately tracked, then it can be part of this inventory management cost. Rahul.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Yes, I remember Morgan was clearly explained last week. To you and regarding this one. We don't need to discuss about this. Just make a template. And give it to the planning department. They will enter this one on annual basis. Automatically the calculation will be should be done.
+
+MM- SKEC2 - L08:
+Exactly, that's what you see. That's the template we have prepared where it's a user input. So and we if you see the logic is that for the purchase order cost administrative management cost, it's a user input. If you have to provide this input at plant and metal combination and this is the template we are trying to we are trying to put it here and the same template will be available will be created in IDP which means and the planning team will have access to this template.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+If they maintain data IDP will automatically calculate based upon the formula we have discussed.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Then this discussion should be planning team also should be included here in the discussion or materials management planning. Yeah they will have like because these are.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+See above this is a template they put it as a material it does not mean that at the material level okay maybe at the plant level you can give or maybe at the company level also you can give. Company level yeah. As one constant you know anyhow the demand is going to come from the actual material level the other that I mean the input can be the constant it does not mean that goes by material it just a template it is something like that, but it is impossible to put the data in this.
+
+ Let's let's discuss with the planning team at the Oracle.
+
+MM- SKEC2 - L08:
+Then I agree with that, please alright, but on a high level do you agree or do you think this logic is something which we can work with planning team or any feedback on the logic? We have put it here.
+
+UNKNOWN_SPEAKER:
+Based on your experience.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Based on our experience, These are the cost considering in this calculation, but each company can calculate in different method like different value. All right. So let's discuss with the corresponding team. So if they agree with this one, then we will finalize and let them input the data on this template on annual basis to IPv6.
+
+MM- SKEC2 - L08:
+Noted. OK. So anyways, if you scroll to the right, the template requests data in annual basis So we have like 20, 25, 26. You will have to put input for every of these parameters once in a year. So agreed. We'll have this separate conversation with planning day.
+
+UNKNOWN_SPEAKER:
+Noted. All right. All right.
+
+Hector Palacios (ADNOC Group D&CS):
+Do you want to take it forward? Yeah, I mean, these are the topics that we wanted to cover. So for right now, what we can do is that, guys, have any question or if you can jump if you want to jump into a system we can do it. Next week we also have sessions as I already told you hopefully we already have an integration so hopefully we will have much more data than today and I think that as we have been explaining most of the the views and everything for chemicals is going to be fairly similar it's the same team so we are going to continue with the same I think that the next session can be more interactive in the sense of going with some particular materials, checking the proposal and so on.
+
+ So, I don't know if you want to do something else on this session or we can leave it here because some material we are fine, we cover everything.
+
+MM- SKEC2 - L08:
+Yeah, so any question from the team, any specific point they would like to us or if you would like to give us on the specific scenarios you would like to Based on data, we can take that input on a scenario level and use that input to show it in the next session. Any input on scenario team, like what are the scenarios from an inventor perspective? So one scenario you mentioned about EOP where you'd like to change and see the impact.
+
+ We've discussed about one scenario where the material changes from continuous PD what we call reorder point and reorder point to continuous demand. So to be able to compare from existing system and to be able to see how IBP is proposing. Any other scenario from an inventory perspective you would like us to simulate so that you can verify and check the system proposal?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I have Rahul.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I'm still like, I don't know where is the start point in IBV.
+
+UNKNOWN_SPEAKER:
+Let's see.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Let's say I'm every day coming. For example, see, every day I'm waking up, coming to my office, I open SAP Fiori. I have, it's either auto PR, I need to review or do my analysis. Or run reservation report, or run an LSTOCK report to do the demand plan, the supply plan, which is PR, PO, and everything. My question here on IBB, where is the start point? I mean, from beginning, you are showing off that and this and that.
+
+
+
+Bastian Osorio:
+So I believe that there's a good question.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Just to give you the overall picture, Tell me as an inventory controller, once I come in the morning, what I have to check in IBB so that I take action for replenishment, for shutdown, for PM, CM, and these things. Where to start?
+
+UNKNOWN_SPEAKER:
+This is my question.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I think that because it's most of your tasks of generating PRs and things like that is what we see next, right, on supply and planning. Today is more about how you define the inventory layer. So think on what are you going to do when you generate inventory layers? What is your task? That is what we are replacing today with the content that we have been showing.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Hector, I want to know there is demand, inventory, supply. I want to know where is my role in demand and in inventory and in supply.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, so I can tell you inventory.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Like what I have to do and demand what the things I have to review with the actions like I'm responsible of it. What is the user responsibilities and inventory part? What is my role and the supply area? What is my role? What is my activities? What is my time? This is I really I want to know it. And I BB.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, Basti, you want to reply for the demand part?
+
+Bastian Osorio:
+I can show the inventory side. Yes, and I'm going to share my screen the image that we shared yesterday. So first of all, this in general will be a monthly, Aysha, will be a monthly process, OK, in general. For some materials, of course, there will be no changes, OK? So let's say you start want. So first of all, the first thing to do is to classify the materials depending on the planning type. Depending on the planning type of material is the procedures that you need to follow.
+
+ So what we are seeing here is that if the materials, and IVP will give you that information, has more than 25 consumptions over the last five years in a specific storage location or plan depending on the company, you will have to review the forecast for the next few months, few years. And if the material has less than 25 consumptions, which we believe is going to be at least 90% of the cases, then you will have to just jump directly to check reservations and check then inventory levels.
+
+ Okay. Yeah. Bastian, just one thing.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+I think this is clear to them. It's more of a theoretical. What our users probably may be looking for is what in the system they have to do. You know, probably you need to do a day in the life of an inventory.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes. Yes.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, exactly in the system. You know we have. So many times theory theory, but now that they want to see in the actual system that what they didn't do.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Yeah, let's say Boston. I'm handling motors for our group companies. I just want to see only motors for all group companies.
+
+Bastian Osorio:
+Give me a second. I'm logging into into this. System.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I want to see like what the function, what the tasks, the daily tasks that I have to do it in IBV.
+
+Bastian Osorio:
+So first is to log in, right? I'm pulling, I'm So now I'm here and you will go to, well, you will have. Have already saved your views. Okay, but now I will open a template, which is nothing but a planning view.
+
+Hector Palacios (ADNOC Group D&CS):
+So when we create the training material, Aysha, we will create like a step by step with the visualization of the reports of use where you need to enter to do certain tasks. So, it will be clearly stated you enter here to do this and this is what you need to do for all these materials, basically that. So, we will have the step-by-step. Now Basti can show you in the view despectage.
+
+Bastian Osorio:
+Sorry, let me Yeah. So here, you will see the first step is to review the historical data, OK? So here, we have a few examples, right? And let's take this one, OK? So this one, and the system will tell you how a total of consumption on the last five years 25 consumption events for a total amount of 260 units. So because we said starting from 25 or more consumption, this material will be planned based on forecast, we can review the forecast for this material.
+
+ So how do I check the forecast? Go to the, I'm summarizing here. But I can go to the next view, which is forecasting. So I'm going to filter for that specific material, which is the 662.
+
+UNKNOWN_SPEAKER:
+If I go here.
+
+Bastian Osorio:
+And filter, I can filter for that material.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+And this is what the system, so we have here four key figures. Sorry, let me add. I need to add a Mm-hmm.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Preston, there is no filter for the MRP controller?
+
+Bastian Osorio:
+Yeah, we will add that. We will add that. It will be there. If the inventory controller is in S4HANA, you will filter your own materials. That is a good observation. So let me look here for...
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Because our work is based on MRP control distribution.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+So that is a good point. So let's assume this responsible for this material, okay? So for this specific material then you will need to, if it's needed, to adjust the forecast, okay? So we have here three different, sorry, five different key figures. The first one is the consumption of the last year, the next one is the consumption of this year, and then we have the statistical forecast, and then your input.
+
+ And based on your input and the combination with the statistical forecast, you will have the final, which is going to be the input for the inventory calculation and also for the supply planning, which will then trigger STOs movement between plants or PR. In case there is not enough stock in Adnox facilities. So let's say for this one, let's check this example. For example, for, let's say, let's go to July.
+
+ Or in reality, for the next six months. So the next six months, let's say, from March onwards. This is the forecast that the system is giving me. Okay based on this previous consumptions which we have here the consumption in april 2024 2024 is because this is the previous year august september and october um this is the forecast is the 13 one month yes and the next month no so you can say no instead of this what I'm going to do is to just put I don't know zero I I believe there is going to be zero consumption, zero consumption, and then here I'm going to put, I don't know, 50.
+
+ And zero, zero, and zero.
+
+UNKNOWN_SPEAKER:
+I go here and save.
+
+Bastian Osorio:
+And this is the Sorry, I want to put that zero here as well. And this is going to be the forecast for the next few months. And based on this, based on this demand, you will have to plan. You will have to jump into the next step, which is inventory policies, determination, and then supply planning. Here, you also can add more data, okay? And it's something we're working on, but you will be able to see, for example, stock, stock on hand, which is the stock in different ad hoc facilities.
+
+ Also maybe, I don't know. Let me think more about this. Yeah, but this is the main for now is the one of the important ones. For now, we don't have stock because that information hasn't been integrated, but it will be integrated in the next couple of days. So you can plan how much is going to be the consumption.
+
+UNKNOWN_SPEAKER:
+Or for these materials, OK.
+
+Bastian Osorio:
+Then. What you can also do is to check, and this is an activity that will happen not that often. I prefer to go to MRO materials, sorry, to reorder point materials. So just to refresh, these are the materials and this, yeah, reorder point materials. So for this material, in something also needs some work instead of having you a forecast. So let me go to the planning type. Here I go to, again, you will be responsible for these materials, but will be the reorder point materials.
+
+ So this one, for example, a gasket that although has a lot It just have 12. I think it's better to check a different material.
+
+UNKNOWN_SPEAKER:
+This one. OK.
+
+Bastian Osorio:
+So I'm going to filter by that material.
+
+UNKNOWN_SPEAKER:
+Last question.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I have to consider which quantity for which month, for which year?
+
+Bastian Osorio:
+For the next time. Years but for for the for the material. So here I'm doing forecast for five year in advance. Of course the focus yes yes in in general terms yes but the focus should be of course in the next two years.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Yeah then it will go Yeah.
+
+Bastian Osorio:
+Yeah, so I'm looking for a cursor.
+
+Bastian Osorio:
+OK, so here, for example, although you have a forecast, the forecast doesn't mean anything. So in this case, you will have the reservation. In this case, we don't have reservations. But the definition we're coming to is that you will be able to, well, first of all, see reservation and approve them. So I just will give you an example here, but let's say you have a reservation for, I don't know, June, when is the due date, when would they require the material for, I don't know, 10 units.
+
+ So you will be able to approve or reject this reservation. OK, say OK. You can go ahead and then go to the next step, which or you can reject it and the consumption although will be there it won't it won't trigger any PR or STO okay so in demand planning these are the two I will say the two main activities okay then there's a third activity which is it is budgeting but this activity I think it will happen once once a year which is to compare the consumption of the total, and I think it's a good place to make you the question, how do you do the budgeting nowadays?
+
+ Do you compare the consumptions against a budget? Do you have that figure in your analysis?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Aysha? Like, we don't check the budget here.
+
+Bastian Osorio:
+OK, so how do you, I mean, what is the criteria then to reject or to accept a reservation?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+For example, it's more than the installed quantity. If it doesn't meet the target, for example, sometimes they do reservation, it is required like next day or like next week. So there is like some criteria between SLA.
+
+Bastian Osorio:
+This is the interesting part, okay, because, okay, you will be able to, for example, here we can add the link.
+
+UNKNOWN_SPEAKER:
+Yeah. Hector, which one is the lead time here?
+
+Hector Palacios (ADNOC Group D&CS):
+The last one, sleep time, months, days, weeks.
+
+UNKNOWN_SPEAKER:
+OK, let's put lead time months, OK? OK, two months.
+
+Bastian Osorio:
+OK, so you, for example, we are now, and I'm going to adjust the view to make it simpler, we are in January 2025. OK, so let me put just the right key here.
+
+UNKNOWN_SPEAKER:
+Hmm. Forecast. Okay.
+
+Bastian Osorio:
+So what you have here is that the last time this material, you will see something like this. The last time this material was consumed was in November 2024. And the amount consumed was one unit. And then you will be able to see the reservations. For example, you have a reservation for February. I'm going to just put a random number, five units. And that will generate And then you have the lead time, which is two months.
+
+ And then you will be able to say, OK, do I accept or I reject this reservation? Considering all the situation, OK, you have only one. You have stock for two units. And you also will see the open POs and the due date, the delivery date for those POs. And that's it. With that, I think you will have enough information to do your analysis. And based on your rejection or acceptance of this amount, the next process will be triggered, which is, as I said, the first inventory policy definition.
+
+ Supply planning definition, which in this case, the system will check if there isn't stock in some other plants, or if there is not enough stock in other plants, then it will trigger the PR generation based on LTPA or based on depending on the material, right? And you will have to perform this analysis for all the different materials that you are in charge. Then another thing you can do is to check, and this is another that I have here, the material reservation alert.
+
+ If you click there, the material will take you immediately here. So what we have here is that the reservation for a material was reduced. It was 40 and it was reduced back to zero. So you can say, I don't know, what do you do when that happened, Aysha? When you see that for a material that you're responsible for, they put a reservation, maybe you accept that reservation and now the reservation has been canceled.
+
+ Or the amount reduced?
+
+UNKNOWN_SPEAKER:
+I don't do any action.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+If it's cancelled half, I don't do any procurement action for that one.
+
+Bastian Osorio:
+But I understand, but is this information is still useful to know that, well, a reservation for the one you created a PR was cancelled?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I don't get your question, master.
+
+Bastian Osorio:
+So you, I mean, many of the users have mentioned that one of the issues they face on their job is that in some cases that the users or okay, the business create a reservation. Okay. With that reservation, then they cancel. Okay. So when that happened, and here I'm showing you that you have that visibility. In this case, this zero means that indicates that you had 40, as we can see here. Let's say the last month you have a reservation for 40, but that reservation was canceled.
+
+ And now the amount is zero. So when that happened, what do you do? Because it was mentioned in multiple locations that the inventory team needed that visibility, need the visibility of reservation that has been reduced in amount or cancelled. When that happens, what is the next step?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+What is the action that you want to take based on that information? No action, Boston. If they cancelled or they settled in between, like anything, no action we do. No procurement, no PR, no call of order, nothing.
+
+Bastian Osorio:
+This one just like for tracking. Yeah, it's fine. Yeah, maybe you will need to, maybe you, I'm just guessing here, maybe you will try to cancel the PR or talk with the supplier to see if it's possible to postpone I don't know.
+
+Ali Ali Raya (ADNOC - GP):
+Yeah, no, if if we are process the PR, OK, and we are created already below and when we receive this material and we deliver for the end user. We have to contact with him again to create to open a new reservation cause material already.
+
+UNKNOWN_SPEAKER:
+She is based on his demand.
+
+Bastian Osorio:
+Why you need to create a new reservation? If that the first one he he or she already be was cancelled.
+
+Ali Ali Raya (ADNOC - GP):
+Was already married material already replenishment according to his request. But why, for example, sometimes we request some like slings. And when we receive this material, we found is in the user already cancels his material or reduce quantity or the receives material forever from another location, but material purchased based on his his demand. For this reason, we asked him again to create a new work store receives his material.
+
+ So he keeps his material as a built-up material in the store there.
+
+Bastian Osorio:
+Okay, so you ask them to, okay, you need to create the order because we will receive the material. Yeah, against his demand, against his resolution before. It's like basically saying, okay, assume this amount.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Bastian Osorio:
+Yeah, so this will be the next action you can do having this information?
+
+UNKNOWN_SPEAKER:
+Good afternoon.
+
+Mariam Ahmed Sulaiman (ADNOC Onshore - PD):
+I believe the reservation we cannot control with the end user because he can cancel at any time and material will be arrived. It will be staying in onshore stock so I cannot enforce the end user again to open his reservation because he don't have budget even for this year or next year, or maybe the equipment change or something change in his plan. So we need to have a control while we have issue PR, PO material arrive.
+
+ If there is between between the PO delivery item arrive, we need to control if the still reservation number are covered in PR or not. If it is reduced, we need some action with the supplier to reduce. To maintain our requirement without having extra. I believe the reservation we cannot handle this one or to create some rules in reservation. To deduct the amount while the like they purchase from their account, not procurement account.
+
+ Like like 100% commitment, not as a plan or assumption.
+
+Bastian Osorio:
+But here you You have mentioned multiple actions you can take based on this information. Again, you have the alert here, as you saw here, and we will keep creating more advanced, more user-friendly report that can guide you to perform this action. Of course, the system won't do the actions by itself, but it will provide you all the information, all the reports so you can have the information quicker, in more easy access, and then you can take the action that you think is necessary.
+
+
+
+Mariam Ahmed Sulaiman (ADNOC Onshore - PD):
+The actions will take on the same day of my release PR, but until material delivered, the data will be changed. The requirement quantity will be changed if reservation cancel So here this is the affecting us. I don't know how we can control this one to give us a notification. But even the notification, if it is give coming to email, I will receive a lot.
+
+Ali Ali Raya (ADNOC - GP):
+Or can we can link it by BR or link it by budget? If. Finally he play for the reservation after we going for the process cause normal having like that. He can use the reservation and second day he cancelled or delete or reduce the quantity or take material from another location. And finally, when we receive the material, we are looking for the reservation. We don't find that. We need to control the reservation while we link it with the PR.
+
+ The end user, he can't change or make modifications. Any permission from the controller.
+
+Bastian Osorio:
+Yeah, it's fine. So for our part, it's something I think we can check next week. We will create some reports to measure this in percentage, in difference, in amount, and also hopefully in value. What is the value difference in the different periods because here I have a snapshot, which is basically a photo of all the reservations at a given period of time. Let's say I take a photo now of the reservations that I have in the system.
+
+ In a month in the future, I can take another photo and compare what are the new ones. Let's see if there's someone that will reduce or cancel. And I can compare in terms of amount, as I said, in terms of value and in terms of percentage. OK. And based on that, take action. I don't know, Alisha, if it is becoming, of course, there is more analysis, there are more things, but at least on basic terms, it is more clear what will be the use that you will give to IVP.
+
+
+
+UNKNOWN_SPEAKER:
+And also one issue more regarding the reservation.
+
+Ali Ali Raya (ADNOC - GP):
+Sometimes you find the reservation duplicated many times for the same item. More than consumption. And you find the one one person he created, for example, 15 piece for one item. And the same time we find maybe 56 work order for the same item and the consumption less than required. Also, we can't control. Any mechanism to control this issue also?
+
+Mariam Ahmed Sulaiman (ADNOC Onshore - PD):
+This is happening onshore and we have material planning, engineering, for all assets. They do the task. So they are, before they release any new plan, they are compared with the previous and they manage this one in onshore by manually and then communicate with all end users to fix the system if there is duplicate, if there is for example, if there is a team. If there is a team behind to correct their reservation.
+
+
+
+Ali Ali Raya (ADNOC - GP):
+Requirement for example, for the adult request many times work order. For the same item. And when we go for the process to replenish the stock, we have to go for the make. Report for the open reservation approved and start with we exclude all duplicated reservation to start process and take more more time. But we need also to find any mechanism to stop this issue. From beginning with the end user like when he tried to create work order with the same item system him like notes or notification is already requested before reference work order number by in the user name like that.
+
+ And if you need to process, please justify like that to make more control to make sure what, uh, outstanding quantity for reservation is really not more than consumption.
+
+Bastian Osorio:
+Yes, I mean, you will have that visibility in the system, but we're getting there. There's still plenty of information to be integrated to an analysis to be performed dashboards to be created. So this is just an initial phase and we are working to get there. Okay. But I would like to hear a comment from Aysha. I don't know if it's becoming, of course, we don't expect you get 100% of everything. Is she left?
+
+
+
+UNKNOWN_SPEAKER:
+She's on hold. Okay.
+
+Bastian Osorio:
+So I think that's it for now.
+
+Hector Palacios (ADNOC Group D&CS):
+Tim, if you have any questions we can take it now, but remember that next week we are also having more sessions and probably you will be participating on those so we can take a more practical approach on those sessions. Now that we have reviewed some concept initial views then in those sessions we can go right to the action.
+
+MM- SKEC2 - L08:
+All right probably one more input if there is any input on the scenarios you would like us to show then please provide that input as well either in chat if you want to connect us through email or anything or on team chat if you if you focus scenario you would like the you would like us to simulate, please give that info so that we can consider showing that specific data scenario to you.
+
+Prathviraj Anchan (Borouge):
+Raul, if you could have like some sample data where you know what we discussed that based on the past usages. Whatever will be like recommended for either going for forecast based planning or reorder point planning. If we could have some sample data like that.
+
+MM- SKEC2 - L08:
+So I understand we already have that and we have shown whatever we are showing that is in IVP only with the sample set of data. Maybe we can go through it again in the next session to showcase what. How IVP determines whether it is a reorder point planning. I think this is something we've already shared, right?
+
+Bastian Osorio:
+Yes, it's there, but we will try to populate with more data for next week.
+
+Prathviraj Anchan (Borouge):
+Yeah, that will be good. And more with like spares, equipment spares, and from different categories, so like valves or motors and things like that. So we get to see like a spread of all of them.
+
+MM- SKEC2 - L08:
+And essentially, you would like to see how system proposes whether it's a reorder point planning or a non-supply planning.
+
+UNKNOWN_SPEAKER:
+Right. Correct.
+
+Prathviraj Anchan (Borouge):
+Correct. And even if the MRP levels, it's proposing something, what it is proposing and how it is throwing up. So, we get to know that what is basically the mechanism it's working on.
+
+MM- SKEC2 - L08:
+All right.
+
+UNKNOWN_SPEAKER:
+Thanks.
+
+MM- SKEC2 - L08:
+Thanks for the input, Prathviraj. Any other input for us to consider? All right, if there is no further input, then let's conclude our meeting today. Thank you very much, everyone, for your time today, and we'll catch up next week.
+
+UNKNOWN_SPEAKER:
+OK, so good day.
+
+Achmad Sonhaji (Borouge):
+Thank you. Thank you. Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you.
+
