@@ -1,0 +1,771 @@
+Kerin Bonilla:
+por acá viendo un montón de puntos.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Tiempo sin saludarte. Hola, hola.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Apenas estoy comiendo, imagínate.
+
+UNKNOWN_SPEAKER:
+Aprovecho. Muchas gracias.
+
+Kerin Bonilla:
+Bien, chicos, creo que están los representantes más principales. Seremos breves. Flor, con Nelson y creo que por ahí Richard te dejaba unas preguntitas si ya podías trasladar por lo que hablábamos de ir avanzando los traslados a calidad.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Sí, déjame hacerlo hoy, si te parece.
+
+Kerin Bonilla:
+Él me dijo que tenía unas órdenes por ahí pendientes, no sé si le contestas, tal vez él nos da más detalles. De las órdenes de trabajo que tenía pendientes.
+
+UNKNOWN_SPEAKER:
+Quién?
+
+Kerin Bonilla:
+Nelson me dijo que tenía unas órdenes, me dijo pendientes de trasladar.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Ah, bueno, pero eso tiene que ser lo primero antes que yo transporte. O sea, primero tienen que tener todos sus transportes aplicados para yo transportar los míos.
+
+Kerin Bonilla:
+Ayudas a confirmarle y así le digo a él que nos haga ese detalle y los pase.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Por lo menos lo confirmo por WhatsApp.
+
+Kerin Bonilla:
+Es que ahí nos preguntaba si ya estábamos listos porque me había mencionado ese, ese, ese pozo.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Déjame preguntarle a Nelson por el, por el WhatsApp. Nelson, tus órdenes de trans, transporte, transportes, basis, ya están en su totalidad en SAP, EWM.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Lo que pasa es que no recuerdo, ahorita tengo que buscar ahí los pero creo que era el 500, ¿no?
+
+UNKNOWN_SPEAKER:
+Del lado de DWM.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+No recuerdo.
+
+UNKNOWN_SPEAKER:
+Sí, ¿no?
+
+Kerin Bonilla:
+Ya te lo paso. Creo que era de 500.
+
+UNKNOWN_SPEAKER:
+DWM es 500, correcto. De 500. Para transportar. Ordenes. Customizing. El WMGO. ¿Así? Vamos a ver qué nos dice. Vale.
+
+Kerin Bonilla:
+Flor, hoy nos contestó Richard de la prueba que te debía.
+
+UNKNOWN_SPEAKER:
+¿Yo?
+
+Kerin Bonilla:
+Sí, o ayer en la tarde, perdón, ayer en la tarde.
+
+Gianni, Florencia:
+Sí, sí, pero bueno, estoy terminando de testear porque cuando vuelve a EWM, yo tengo, de EWM, mi lado tengo que hacer un montón de validaciones y pruebas. Así que ahí el regreso encontré un error y está en ABAP. De mi lado, como les puse recién en el correo, Kerin, como las fechas de inicio de pruebas integrales según el plan fue ayer, como se trabajó en otros proyectos con Diana, nosotros transportamos todo a calidad, y lo que aún estamos pendientes, porque tuvimos ahí unas demoras en esas pruebas de desarrollo, es lo último que el equipo planifica para pruebas.
+
+ Como la verdad es que todo el proceso estándar, al menos en ese SES ya se puede probar, excepto las devoluciones, órdenes de compra, hasta que nos confirme Richard lo que se habló ayer, siempre trabajamos en entregar todo, el 90% en la fecha acordada para que ustedes puedan ir planificando sus scripts y avanzando con todo y dejando los últimos las integraciones. Así que, de mi lado, ya pase todo a calidad.
+
+ Pueden empezar a configurar los datos maestros cuando esté lo de Richard, ¿no? Hablando de que ya esté todo en calidad. Y pueden empezar con todos los scripts de pruebas de lo que es estándar. Menos devolución a proveedores porque, dependemos de lo que hablamos, creo que fue ayer, y las integraciones. Después todos los demás procesos ya los podrían ir esceduleando y probando para no afectar a las fechas que teníamos pactadas, Kery.
+
+
+
+Kerin Bonilla:
+Sí, con lo de devolución a proveedores, quedamos que iba a ser un almacén de devolución al que se iba a procesar, ¿verdad?
+
+Gianni, Florencia:
+Pero no me dieron feedback de si hay que crearlos, con qué nomenclatura si hay que crear dos, si hay que crear uno.
+
+Kerin Bonilla:
+Fíjate que hoy le pregunté a Mervín, me dijo, yo lo voy a crear, me dijo.
+
+Gianni, Florencia:
+Bueno, entonces de nuestro lado descartamos entonces esas pruebas y va a ser una prueba entre ustedes y EWM. Porque de nuestro lado ya creamos las dos tipos de devolución, siguiendo la premisa de separar en compras locales por o importación. En el correo ahí, Kering, les puse los dos tipos de clases de órdenes de compra separando eso, pero puede ser que decidan seguir usando una porque el cambio es más que nada en EWM, y en ECC es el proceso
+
+UNKNOWN_SPEAKER:
+que ya conocen. Ok.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Hay una pregunta, Kering, o sea, ¿Qué onda con el tema de maquilado externo?
+
+Kerin Bonilla:
+Eso te debíamos lo de la clase de movimiento, recuérdame.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Sí, van a revisar la clase de movimiento y demás, porque es un proceso que Janine y Florencia no tienen en su radar. Entonces, pues de ahí van a hacer una estimación, supongo, o algo por el estilo, pero esos son temas ahí que tienen que revisar Janine.
+
+Gianni, Florencia:
+Sí, gracias, Richard.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+No te preocupes, lee bien eso, pues. No sé si lo han revisado, qué ha pasado.
+
+Kerin Bonilla:
+Déjame validar con Melvin, porque él se había llevado esas dos clases. Lo estaba verificando, creo que acá con el equipo. Ahorita yo ando en el centro, le voy a ir a consultar.
+
+UNKNOWN_SPEAKER:
+Adelante.
+
+Kerin Bonilla:
+Pase ese detalle hoy, porque sí, ya eso ya no se nos podría quedar.
+
+Gianni, Florencia:
+Sí, igual ahí. Necesito un poco de KT porque a la fecha, en todo el tiempo que estamos en DNA Caring, nunca habíamos visto esos procesos. Sabemos que maquilan, pero nunca la fecha, por lo menos en MM, si yo agarro a los consultores, ¿conoces algún movimiento para maquilado como ese proceso? Nunca lo habíamos tocado. Entonces, ahí necesitamos entender cómo es ese proceso, honestamente. Si es un amigo, si es un amigo, cómo lo hacen hoy, para ver si hay algún otro impacto, porque hasta que Richard lo nombró, no lo conocíamos.
+
+
+
+Kerin Bonilla:
+Dale, yo estoy tomando nota para ver si te podemos agendar esto lo más pronto posible.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Bueno, y del lado de transporte, pues nada más voy a esperar que nuestro compañero responda, y una vez responda, no se preocupen, pues ni que sea y super que la farmacia a las 8, 9, 10 de la noche, me
+
+Kerin Bonilla:
+pongo ese transporte, ¿vale? Ok. Flor, nosotros con lo que tú ya pasaste, ya podríamos hacer diversidades de pruebas en función de todo lo que conlleva ECC, que no fuera WM para garantizar que no estén nada afectado, ¿cierto? ¿Problemas de afectación?
+
+UNKNOWN_SPEAKER:
+Yo creo que sí.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+O sea, perdón, Florencia, que me tomé la potestad de responder.
+
+Gianni, Florencia:
+Particularmente las que más tienen que probar son las integraciones, pero esas todavía son las últimas que tienen que probar. Después sí es bueno si quieren hacer una entrega, un flujo de pedido en el SB22, pero en otro almacén que no sea el PT30, pueden ir probando. Si no, igual pueden empezar a probar con todos los flujos estándar. Crear órdenes de compra, crear local e importación, por lo menos esas son las que sé que del lado de EWM, Pablo revisó.
+
+ Y traslados también, pero sin la HU, porque nos pidió Pablo un nuevo caso y eso lo vamos a estar generando el lunes, se lo vamos a estar entregando. Después pueden probar movimientos logísticos que son de logístico, que no son de integraciones, pedidos de venta, crear todos los pedidos de venta, notas de crédito de devolución, que sí, en calidad, si bien lo testeamos más o menos con Richard, no había muchos casos, pero se puede probar en calidad, él por lo menos ya revisó que le llega como entrega entrante.
+
+ Después pueden probar si está adaptado el monitor de facturación electrónica, anular para ver si la lógica que nos colaboró en el software y ver cómo le llega ese flujo a Richard. Todo eso, preparar datos maestros, extender. Lo único ahí, Kering, que yo te puse en el correo, que son dos puntitos como a considerar, que por ahí sería bueno que se los pueda mostrar de 500 a grande rasgo, es cómo cambia el proceso operativo en la parte de compras.
+
+ Y lo único impacto de datos maestros que tienen son los materiales que son los que van a usar de embalaje, que es al completarle la solapa embalaje WM con el tipo de unidad de manipulación. Ahí, Richard, solo para yo poder cambiarle las descripciones, el E1 y el E2, ¿cómo quedaron? Pallet, caja, caja, pallet. Esas definiciones realmente te las va a responder Melvin.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+¿Por qué? Porque al final, por ejemplo, de este lado, nosotros necesitamos que ustedes nos definan el nombre de cómo van a quedar esos tipos de unidades para nosotros, simplemente cambiar la descripción y ya está.
+
+Gianni, Florencia:
+Estoy en la misma. Nosotros creamos dos, E1 y E2, pero no le pusimos descripción por las dudas de que, bueno, cuál va a ser cuál, pero...
+
+Kerin Bonilla:
+Tipos de unidades de manipulación, perdonen que estoy hablando rápido, estoy tomando nota. ¿Cuáles tenés, perdona, para hacerte la descripción? Definición?
+
+UNKNOWN_SPEAKER:
+E1 y E2.
+
+Gianni, Florencia:
+Inicialmente nos dijeron pallet, caja, pero bueno, como para confirmar.
+
+Kerin Bonilla:
+¿Quieres confirmar si el E1 va a ser para pallet y el E2 para caja o qué valor le vamos a definir nosotros como Diana, verdad?
+
+Conference Room (Richard Quinteros) - Speaker 2:
+No, ya están definidos el E1 y el E2. Lo que quieren es darle una descripción. ¿Cuál para cuál? O sea, ¿el E2 es caja o es pallet? Huele uno, es caja o es pale, eso es lo que quiero.
+
+Gianni, Florencia:
+Dale, ya lo noté. Le dejamos a su gusto. Nada, eso, si quieren, como te digo, sería bueno mostrarles cómo va a operar las órdenes de compra a partir de ahora para que ustedes tengan ese owner. Después, si quieren, si no, también nos podemos juntar rápidamente por el tema de los datos maestros, pero inicialmente lo único ahí impactado es este material de embalaje. Pero sería bueno que cuando Nelson le confirme a Richard el transporte que ya deje los IDOCs como para que ustedes prueben los datos nuestros ya con el IDOC de producción.
+
+
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Una consulta, ¿puedo? Yo no sé, pero contemplaron, Kering, algún tema de soporte las integrales de ECC? Por ejemplo, cuando empecemos a probar ya ECC contra EWM y demás, ¿surge algún tema técnico del lado de ECC? ¿Quién lo va a soportar?
+
+Kerin Bonilla:
+Déjame verificar porque hay unos tiempos que se nos une con lo que aún tenemos con FLOR, pero sí creo que hay unos espacios que estamos entre los mismos o la Hola Melvin, ya que está por acá. No sé si usted nos puede ayudar o tenemos que trasladárselo al resto del equipo, pero Richard y Flor me comentan que nos hace falta la definición de la descripción de las unidades de manipulación para el E1 y el E2.
+
+ ¿Qué valores le vamos a brindar nosotros a esas unidades de manipulación.
+
+UNKNOWN_SPEAKER:
+Melvin, ¿me escuchas? Sí, sí, sí.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Básicamente Florencia y Kering se refieren al tema de que, pues bueno, ya conocemos el concepto de las unidades de manipulación y todo lo que implica, ¿no? Ahora, en esta definición de tipo de unidad de manipulación y sabiendo que es un dato que ahora se va a agregar en una solapada específica de ese y un dato que se usa en AWM para indicar o saber cuál es el tipo de embalaje que representa para su uso.
+
+ Normalmente traíamos como historial que básicamente íbamos a manejar la caja y el pallet como tipos de UMP, pero no sabemos bien de forma cerrada si ya este es el concepto final que se va a manejar, solo caja y pallet, o existen otros tipos, o por fin el concepto, ¿no? O sea, que entendamos esto y que, pues, así debe de ser. Porque, por ejemplo, lo que Florencia ahorita está pidiendo es que tiene los E1 y E2 creados, pero necesita darle la descripción.
+
+ A ver, E1 es pale. Ah, mira, y E2 es caja. Pero...
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Y si va a haber algún tercero.
+
+Gianni, Florencia:
+Y si va a haber algún tercero.
+
+UNKNOWN_SPEAKER:
+correcto. Un tipo diferente.
+
+Melvin Alvarado:
+Fijate que en teoría va a haber un tercero que se va a llamar Bolsón. Ok. El día de mañana se va a hacer una prueba en piso. Ok. Ajá, porque realmente, digamos, como yo les comentaba anteriormente, el almacén prepara cajas. Ajá, de cartón. De cartón o plásticas. Pero viene el repartidor y las pasa a un bolsón bastante grande. Entonces, esa prueba se va a hacer el día de mañana. Para ver si agregamos ese tipo de manejo.
+
+
+
+Conference Room (Richard Quinteros) - Speaker 2:
+En teoría, el bolsón es para el de cara al despacho.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Ok, entonces sí, pues, o sea, básicamente esos tipos tienen que considerarlo.
+
+Gianni, Florencia:
+Sí, pero ahí no podés convertir. Ah, pero pregunto ahí de ignorante. Vos, el operario de almacén va a dejar una caja en la puertita, como nos mostraba en el video Melvin. Ahí ya terminó el proceso de sistema, ¿no? O ahí eso, la cajita en realidad va a ser bolsón en el sistema, aunque físicamente sea una cajita, porque después viene el vendedor, el repartidor. Y los mueve a la bolsa.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Bueno, mira, aquí hay dos formas. Lo que pasa es que, por ejemplo, en las preparaciones y como está en el diseño, se presentó que pues nosotros estamos piqueando sobre, digamos, el material listo, ¿no? El material de embalaje listo, sea una caja, sea un bolsón, sea un pallet o una tarima, pues como lo conozcan. Nosotros estamos piqueando de la manera más lista posible, ¿no? Puede ocurrir así. Suposte tú que pues si usted me dice mira yo estoy piqueando en caja pero qué crees que yo llego al staging donde coloco la mercadería pero yo hago un repack para llevar estas todas estas cajas pues acomodarlas en un
+
+UNKNOWN_SPEAKER:
+bolsón.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Ah ok ese repack en sistema se puede hacer de hecho se puede hacer con la pistola la radiofrecuencia pues ellos pueden crear un material de embalaje tipo bolsón con su tipo de unidad de manipulación y lo crean y lo que hacen es hacer repack de estas cajitas hacia este bolsón. Eso se puede hacer. Mira la foto que te mandé.
+
+UNKNOWN_SPEAKER:
+¿Dónde? Ahí en el chat está. Ok. Es un bolsón gigante. Es como una preparación.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Son varios bolsones.
+
+Melvin Alvarado:
+Entonces lo que hicieron ellos, desarmaron las cajas y los transformaron en bolsones. Bolsones gigantes.
+
+UNKNOWN_SPEAKER:
+Ya, entiendo.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+¿Y este bolsón gigante va a un solo destinatario?
+
+Melvin Alvarado:
+Sí, va por cliente cada bolsón. Ok, ok, ok, ok.
+
+UNKNOWN_SPEAKER:
+¿Y mezclan cajas?
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Sí, pueden mezclar cajas.
+
+Melvin Alvarado:
+Ahí depende el tamaño del pedido. Sí, sí se puede, sí se puede.
+
+Conference Room (Richard Quinteros) - Speaker 2:
+O sea, es un repack fácil, como lo que te comentaba, ¿no? O sea, mira, tú cajas, las cajas están aquí, pero yo necesito crear una HU o una unidad de manipulación de expedición, ¿me entiende?, porque esa es la que se va, y esa HU o UMP de expedición es ese bolsón,
+
+Conference Room (Richard Quinteros) - Speaker 1:
+entonces lo que hace es ir reempaquetando, ¿me entiende?
+
+Gianni, Florencia:
+Entonces habría que crear en los tipos de materiales ZREP uno que sea bolsón, para que lo puedan usar en eso.
+
+Melvin Alvarado:
+entonces lo que lo que la prueba que se va a hacer para ponerlo en contexto se va a hacer que desde el piquen o la van a preparar de un solo los bolsones esa es la prueba que se va a hacer mañana porque ahí ahí donde ves eh equipo estos productos están desde como de las ocho de la mañana no no están desde como desde las ocho de la mañana estaban cajas a mediodía se transforman en bolsones, pero son casi las 4 de la tarde y el reparto ahí los ha dejado, no los ha cargado.
+
+
+
+Conference Room (Richard Quinteros) - Speaker 2:
+Ya, pero indiferentemente de, te comento Melvin, yo puedo hacer, podemos hacer la preparación, lo que ustedes van a probar, está bien, pero si ustedes ven que esa prueba es positiva, nosotros inclusive podríamos hacer el picking y una vez ahí mismo vamos a preparar, o sea, tú vas piqueando sobre esas bolsas, me explico, eso, eso, eso es lograble, pero si tenemos que tener como que el tipo de WMP definida pues.
+
+ Sí, de acuerdo. Entonces, de repente puede inclusive seguir la misma nomenclatura del E1, E2, creen un E3.
+
+Melvin Alvarado:
+E3. Le ponen Bolsón. Entonces, eso es lo más probable. Pero mañana les confirmo.
+
+Kerin Bonilla:
+Pero de lo, perdón, que me tuve una pequeña llamada en un momento, pero los valores actuales si los podemos definir Melvin.
+
+Melvin Alvarado:
+No, eso si mantienen, no hay tema.
+
+Gianni, Florencia:
+Pero quieres ponerle palet y dos cajas o te gusta así y listo.
+
+Melvin Alvarado:
+Si, si ahí no, no, el orden de los factores no está en el producto ahí.
+
+UNKNOWN_SPEAKER:
+Al final ustedes ya lo verán en el sistema.
+
+Kerin Bonilla:
+Uno palet y dos cajas, Flor y Richard, para que quede ya definido. Un tercero en la confirmación que nos hagan Melvin, ahí lo vemos. Melvin, también lo que nos preguntaba Richard al inicio es lo del maquilado, el maquilado externo e interno para definir a Flor sobre la clase de movimiento y de igual manera Flor me pregunta que ese proceso no lo conoce y habría que ver cómo se hace para que ella lo pueda comprender, si es un amigo, qué tipo de transacción estamos utilizando.
+
+
+
+Melvin Alvarado:
+esa sería similar a lo que tocamos el día de ayer con la devolución a proveedores se va a maquilar en un IEM es decir que si el producto está en el EWM se va a hacer un traslado del WM al IEM de maquila y ahí se va a transformar y cuando este transformado se va a hacer se va a pasar a de este IEM al EWM correcto ¿Con qué movimiento lo vas a pasar?
+
+Gianni, Florencia:
+¿Tiene que ir con una entrega especial?
+
+Melvin Alvarado:
+¿Cuál va a ser el proceso? No, no, como un traslado, Flor, o sea, realmente cuando lo paso yo al al almacén de Maquila, suponete que yo paso los componentes, voy a transformar en jalapeño, el churro, lo voy a meter ¿Qué? En un promocional X. En M&M van a utilizar para elaborar un nuevo producto terminado. Cuando nazca ese nuevo producto terminado, lo que van a hacer es un traslado del del IEM al WM, o sea, no hay nada especial así de.
+
+
+
+Gianni, Florencia:
+Un traslado, ¿con qué movimiento? Porque a ver, acá es importante que ustedes entiendan que ahora todos los movimientos de mercadería, sea por migo, por orden de compra, que va a ir al Si usan uno estándar, les va a crear una entrega estándar, porque así está parametrizado. Entonces, Richard tiene que saber que le va a llegar esa entrega. Si van a querer usar el Z11, por ejemplo, que es por MIGO, que pueden hacer del IM al PT30, ya hay un tipo de entrega asociada, de entrante asociada en ese movimiento específica y homologada en el EWM.
+
+ Entonces, mi pregunta viene eso. Vamos a crear una entrega específica, un movimiento específico para que Richard lo pueda homologar. Usan el Z11, que ya está homologado.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Aquí te presento mi pantalla, ¿vale? Pack externo, el último concepto de crear, validar, entregar y salir. La misma podría generarse automáticamente, independiente de las definiciones en SCC. Crear documento de traslado entre almacenes, movimiento 311.
+
+Gianni, Florencia:
+Correcto. 311 te va a generar la entrega estándar, porque el 311 no fue tocado dentro del proceso para el IWM, por eso se crearon nuevos. El Z11 lo dejamos preparado para que les haga una entrega entrante cuando hacen un traslado de un IWM al PT30.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Y te funciona también para el mismo proceso, o sea, el proceso de salida, ¿no? Debería funcionar.
+
+Nodier Hernandez Arias:
+Sí, entiendo.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Entiendo que debería, por ejemplo, si tú quieres hacerlo el, el, el inverso, que es sacar de WM a, a, al almacén IEM, ¿qué clase de entrega dispararía ahí?
+
+Melvin Alvarado:
+O sea, realmente nosotros estábamos pensando en utilizar el estándar 311. No sé si lo ve, lo ven ustedes ahí.
+
+Gianni, Florencia:
+Pero el 311 va a sacar de un IEM y lo va a meter en el EWM.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Gianni, Florencia:
+entonces usen el seta once porque el tres once no está homologado para el proceso si homologamos el seta once para esas necesidades de un IM trasladarlo al PT treinta OK entonces sería para el para el para el que viene
+
+Melvin Alvarado:
+de regreso sería el seta once para enviar o sea porque ya sé ese o o cuál sería el que el que ingresa mi entendimiento, vaya. Si los productores tengo en el EWM y los voy a pasar a un IEM, ¿qué clase de movimiento voy a utilizar?
+
+Gianni, Florencia:
+Eso lo tenés que hacer en el WM, no en el CC.
+
+UNKNOWN_SPEAKER:
+Por eso te estoy preguntando.
+
+Melvin Alvarado:
+¿Qué clase de movimiento voy a utilizar?
+
+Melvin Alvarado:
+Richard, Richard.
+
+UNKNOWN_SPEAKER:
+¿Estás por acá?
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Ah, ¿pero es a mí la pregunta?
+
+Melvin Alvarado:
+Sí, sí, sí. ¿Cómo va a ser el traslado? ¿Cómo va a ser el traslado del EWM al IEM?
+
+Conference Room (Richard Quinteros) - Speaker 1:
+¿Qué clase de movimiento vas a utilizar? Pues el mismo 311 puede servir, pero no sé cómo esté mapeado el 311 en SC.
+
+UNKNOWN_SPEAKER:
+¿Me explico?
+
+Conference Room (Richard Quinteros) - Speaker 1:
+O sea, ¿qué clase de entrega...? Si yo hago... Mira, si yo me voy al amigo, yo coloco mi origen, es el PT30 y mi destino es el almacén de maquilado, ¿qué clase de entrega me genera eso?
+
+Gianni, Florencia:
+Creo, Richard, que lo que quiere usar Melvin es lo que hablamos ayer para proveedores, que en el EWM hagan primero el traslado a un IEM, eso llega a SC, le da stock a ese IEM y hacen la orden de compra desde Melvin propone usar este mismo concepto, pero ya en el NSC lo vas a tener en el IEM también. Y desde el IEM lo maquilan, lo hacen, lo procesan en PP, y luego con el Z11 lo vuelve a ingresar el último producto al almacén del EWM.
+
+ Así sería, ¿no? El flujo, Melvin, ¿lo dije bien?
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Entonces, pero, pero, pero solo porque usted está hablando como como la solución de ayer. Está bien, yo entiendo, yo entiendo el tema del almacén y me que está fuera de WM solo yendo a la perfección. Yo lo único que cuál es mi detonante, mi detonante va a ser mismo movimiento amigo 311 para sacarlo de WM y llevarlo al almacén y en mi intermedio y ese no en WM.
+
+Gianni, Florencia:
+El traslado lo deberían hacer en el WM.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Pero cómo vamos a hacer el traslado de WM si un documento generado desde ECC?
+
+Melvin Alvarado:
+No, no, no Richard, es que la pregunta es la siguiente. Quizás veamos el tema, por lo que te dije, vamos un paso atrás. ¿Cómo trasladó de un almacén WM a un IEM? Sí. Esa es la pregunta. Entonces, ¿Quién ¿Quién detonaba? Ese es el.
+
+UNKNOWN_SPEAKER:
+Ahí.
+
+Melvin Alvarado:
+O sea que. Lo que le digo. Lo que te digo, voy a hacerle amigo y decir, va, este amigo va a hacer un traslado, un trescientos once.
+
+UNKNOWN_SPEAKER:
+Ajá.
+
+Melvin Alvarado:
+Eh, del del PT treinta.
+
+UNKNOWN_SPEAKER:
+Ajá.
+
+Melvin Alvarado:
+Al PT veinticinco. Ajá. Me va a generar la entrega, vos la la atendés, le entregas a alguien. Ajá. La entrega de saliente, la atendés, la confirmás, va, OK. Ya la tiene el IEM así te entiendo. Correcto, así es, así funciona. Yo así, o sea, yo como estoy aplicando Richard, así lo había entendido también.
+
+Gianni, Florencia:
+Pero no fue lo que hablamos ayer. El proceso que hablamos ayer, que dijeron que sí, que Nodier propuso, es hacer un traslado en el EWM, que impacte en un IM, y ya con el stock en el IM, en el SC, hacer la orden de compra de devolución.
+
+Melvin Alvarado:
+Correcto, entonces yo lo que le entiendo a Richard es, utilizando siempre ese mismo escenario, quien detona siempre el traslado.
+
+Gianni, Florencia:
+No fue lo que dijo ayer Nodier en la solución, ¿eh? No, ¿cómo no? Eso fue lo que dijo Flor. Eso fue lo...
+
+Melvin Alvarado:
+Yo así le entendía a Nodier.
+
+Gianni, Florencia:
+Yo hablé con Nodier. Él me dijo hacer un traslado en el EWM para que impacte en ECC, ingresando al ECC.
+
+UNKNOWN_SPEAKER:
+Por eso es que así...
+
+Gianni, Florencia:
+EWM, no NCC. Así va a ser, Flor.
+
+Melvin Alvarado:
+Lo que yo le entiendo a Richard es que el traslado van a ser en Amigo, un ejemplo. Él agarra el documento y lo atiende en el EWM y dice, ok, mira, ya lo preparé, lo voy a sacar del WM. Ahí va IEM. Así lo entiendo. Pero ahí corregime, Richard.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Sí, es que no tenemos el lado de WM. O sea, al menos que usemos entregas y salidas directas, pero eso no está nunca. Sobre el mapa, nunca ha estado sobre el radar. Entonces siempre la necesidad parte del SC. El SC le dice a EWM, mira, mándame esto que lo necesito, a la almacén IM tal, ok, EWM va, prepara esa entrega, le da despacho, chao, contabiliza, y SC pues ya tiene en el almacén IM desmaquilado el producto.
+
+ Él hace su cuestión y ahora hace su clase migo nuevamente, pero esta vez no por el código de los diferentes materiales, sino por el código de material correspondiente hacia EWM. EWM recibe una entrega entrante y almacena.
+
+UNKNOWN_SPEAKER:
+Mucho silencio. Te preocupa. Yo sí había entendido.
+
+Melvin Alvarado:
+Yo hablé con Nodier también y él me dejó claro.
+
+Gianni, Florencia:
+Lo de Ton, el traslado se hace en el EWM y es como a lo inverso. Lo que él propuso ayer, de devoluciones a proveedores, que en el EWM se traslade la existencia a un IEM, ese IEM va a entrar a ESC, le va a dar stock al IEM y ahí pueden hacer la orden de
+
+UNKNOWN_SPEAKER:
+compra.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Pero no, no, bueno, no sé si tengas por allá la mano a nodear, bueno, la mano No, no, no, cerca o que lo puedas comunicar para subirlo. No sé cómo está eso.
+
+UNKNOWN_SPEAKER:
+Para contextualizar, quizás.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Pero pues digamos que EWM no puede hacer una entrega.
+
+UNKNOWN_SPEAKER:
+Para sacar.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+O sea, sí puede, pero no es EWM quien detona, digamos, necesidad o ese movimiento.
+
+Gianni, Florencia:
+Nosotros trabajamos contra la entrega. Bien, ahí le volví a preguntar a Nodier y me volví a decir EWM.
+
+UNKNOWN_SPEAKER:
+Ok, pero.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+¿Tú crees que se puede subir, Flor?
+
+UNKNOWN_SPEAKER:
+Ahí estoy preguntando.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Subtítulos realizados por la comunidad de Amara.org ¡Gracias!
+
+Conference Room (Richard Quinteros) - Speaker 1:
+No, y él tiene un ojo muy parecido, es un amigo mío colombiano.
+
+UNKNOWN_SPEAKER:
+Me acuerdo completito de él.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+No sé si te suena, Florencia, el nombre de Norberto.
+
+UNKNOWN_SPEAKER:
+¿No? Norberto.
+
+Gianni, Florencia:
+No, staff colombiano, solo mis compañeros. Porque no conocía a otros.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+¿Y tú vives en Colombia o en Argentina?
+
+UNKNOWN_SPEAKER:
+Hace dos años vivo aquí en Colombia.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+¿Y eso por qué cambiaste de lugar? Si se puede saber, o sea, no sé, ¿no te gustaba Argentina o tenías amigos allá? ¿Cómo es todo el show?
+
+Gianni, Florencia:
+Dame un minutito y ahí te cuento. Te voy contando mientras espero a ver si nadie me contesta. No, la realidad es que yo en Argentina económicamente no estaba bien, trabajaba 24 horas al día, tenía tres trabajos y ya con mi marido estábamos viendo de buscar suerte fuera de Argentina. Íbamos a ir a probar suerte a España, pero sin nada. O sea, con la visa y una mano adelante y otra atrás, sin trabajo y nada, y en el medio me salió la oportunidad de relocalizarme en Capgemini, Colombia.
+
+ A mi marido su trabajo también lo pudo relocalizar, así que decidimos venir a Colombia y estamos mucho mejor en todo sentido aquí en Colombia que lo que estábamos en Argentina.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Entonces en Argentina la cosa no es que esté muy bien, ¿no? Está mejor en Colombia.
+
+Gianni, Florencia:
+en muchos sentidos no lo está.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+No me haces, no puedes compararte pues, yo soy de Venezuela. Así que bueno, no hay competencia.
+
+Melvin Alvarado:
+¿Y vos cuánto tiempo tenés fuera de Venezuela?
+
+UNKNOWN_SPEAKER:
+Ocho años.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Ya digo, llevo ocho aquí en México y yo digo, güey, carnal. Carnalito. Como picante, porque aquí comen picante, pero como si fuera sal, ¿eh? Se echan picante a todo. Madre mía. No lo cura. Pero pero pero claro que la calidad de vida aquí en México pues obviamente mucho mejor de lo que era en mi país o es en mi país realmente.
+
+Gianni, Florencia:
+A mí también yo trabajo con clientes de centroamérica y de colombia y de guatemala entonces siempre hable como neutral pero desde que estoy aquí en colombia ya estoy más a veces tiro palabras salvadoreñas o colombianas o de estas regiones y mi familia me dice ya no te conocemos me dice no pero si tienes el acento argentino marcado y el pollo como me me molesta Alvarado.
+
+Melvin Alvarado:
+Y cuando has conocido un argentino normal, yo nunca conocí a un argentino normal.
+
+UNKNOWN_SPEAKER:
+¿Cómo normal?
+
+Gianni, Florencia:
+Hola Nodier, ¿cómo estás? Hola buenas tardes. Nodier, estoy peleando con el foro con lo que vimos ayer y necesitamos tu sabiduría de lo que hablamos si nos puedes explicar un poco más de cómo sería ese proceso tú alguna vez habías realizado?
+
+Nodier Hernandez Arias:
+Correcto, lo de la devolución a proveedor.
+
+Gianni, Florencia:
+Sí, queremos ver si lo podemos implementar para otro proceso también. Correcto.
+
+Nodier Hernandez Arias:
+Ahí, como tal, digamos que desde el lado de WM, lo que digamos se recomienda hacer es tener una ubicación, llamémoslo dentro de un tipo de almacén, X, como cuales tengan. Un tipo de almacén donde tengan una ubicación, llámese de evolución a proveedor. Una ubicación. Allá irían a poner, digamos, todo el producto. Digamos que en su momento van a tener ese proceso, digamos, de evolución. Lo van a mover allá, digamos, con su respectiva warehouse.
+
+
+
+UNKNOWN_SPEAKER:
+Para moverlo.
+
+Nodier Hernandez Arias:
+Y cuando esté allí, La idea es que por medio de la aplicación, la transacción AGI, A-D-G-I, con esa transacción lo muevan al almacén IEM, que es donde se va a hacer finalmente la contabilización de la devolución a proveedor, en este caso el movimiento 161. Pues ese movimiento de la AGI ya físicamente no hay movimiento dentro del almacén, ya están las en la ubicación de devolución a proveedor. Desde ahí yo hago la contabilización para moverlo al almacén IEM que se defina para devolución a proveedor.
+
+ Le tengo que marcar allá en la ubicación de almacén y ponerle al almacén IEM donde lo voy a descargar. Él me crea al movimiento una tarea que ya obviamente me hace el movimiento entre almacenes y a partir de allí ya se hace el amigo con el pedido de devolución afectando ese almacén IEM, ya ese movimiento no afecta EWM, EWM ya hizo su movimiento del stock a ese almacén IEM y ya se contabiliza el 161.
+
+
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Ok, ahí pues por ejemplo, esto obviamente pues no puede ser utilizado. Primero tenemos que revisar ese proceso de devolución. ¿Por qué? Porque por ejemplo, en la concepción del proceso de devolución, como está diseñado en el documento En cuanto a diseño de Tubi, pues básicamente siempre se habló de tener una entrega de salida, ¿no? Que lo consumiese y que lo mandara hacia ese almacén destino, IEM, ¿no?
+
+ O sea, o al menos se pensó de esa forma, ¿ok? Pero usar una transacción como la DGI, que es una transacción pues como para scrap, ¿ok? Se puede usar para scrapping, son salidas de mercancía no planificada. Para eso no se pensó. De esa forma no se pensó. O sea, el diseño no está pensado de esa forma. ¿OK? Eso con respecto al tema de devolución. Ahora, eso no se puede transpolar para acá, porque simple y sencillamente está bien que, por ejemplo, para el tema de devolución se tenga una ubicación y demás, porque desde ahí se toma todo ese producto.
+
+ Al final, el producto que tú colocas ahí es el que se ha programado en IEM intermedio. Pero en este caso, tú necesitas una estrategia de salida para poder determinar los productos, de dónde los vas a tomar, es decir, de las ubicaciones de almacenamiento, tomar o rescatar, piquear, ¿vale? Y una vez que ya tú haces el picking, pues ya lo pones en una puesta de disposición y despachan. ¿Y por qué pasa esto?
+
+ Porque simple y sencillamente no son productos ni para devolver, ni para escrapear, ni mucho menos nada de eso. Son productos almacenados en ubicaciones de picking, ¿no? Entonces, esos productos que en teoría van a sacar y se van a maquilar, se consumen de allí, de esas ubicaciones. Y existe una estrategia, existe un FIFO y pues debe funcionar para que eso funcione debe funcionar contra una entrega de salida.
+
+
+
+Nodier Hernandez Arias:
+Lo que pasa es que esto aplica normalmente digamos las devoluciones a proveedor no puede ser un proceso constante y normalmente lo digo solamente digamos como lo he manejado en las compañías manera que es como de cultura general las devoluciones a proveedor no son una constante, son puntuales, eventuales. Entonces, ¿qué pasa? Si en el descentralizado como tal, tenés una limitante, no puedes crear un movimiento 161, 161 para que cree salida, entrega salida.
+
+ Eso no se puede, ¿sí? Para poder hacer algo con estrategia, tenés que hacer un traslado entre almacenes, o sea, un 311. ¿Qué es lo que ocurre? Si haces el movimiento 311 te va a generar una entrega de salida para que hagas el movimiento como tal de traslado y después les toca hacer otra vez otro movimiento para hacer la mixta. Eso es doble esfuerzo, sí, pero cuando te digo, obviamente digamos lo que ha tocado son hay que hacer muchas transacciones para algo que es eventual.
+
+ Por eso realidad, digamos siempre el tema de las devoluciones a proveedor se toma se hace desde el EWM, es eventual, los pales se mueven hacia la ubicación de evolución y desde ahí se hace la H. Pero son puntos pues, digamos, los supongo que los comparto obviamente como ha tocado y ya como para que ustedes los definan cómo hacerlo. El uno tiene 10 pasos, el otro tiene 3.
+
+UNKNOWN_SPEAKER:
+Ambos llegan al mismo resultado.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Pero lo que pasa Ok, este es mi comentario. Por ejemplo, no en el caso de devolución. Hablo del caso del que estamos platicando ahora, que es un escenario donde nosotros necesitamos sacar unos productos específicos que se encuentran en unas ubicaciones que tienen una fecha de caucidad, sacar 2, 3, 4 productos, sacarlos, colocarlos en un staging y despacharlos. ¿Cuál sería el criterio de determinación si usas un ADG?
+
+ Me parece que el criterio de determinación va a ser manual, ¿estás de acuerdo?
+
+Gianni, Florencia:
+Pongo un poco en contexto a Nodier, te comento igual, porque la idea era usar el, tienen una necesidad por el proceso de maquilado, ellos tienen que unos productos en el PT30 quieren mover a un almacén IEM, eso va a llegar a ICC, va a entrar a PP, lo van maquilar, van a armar otro producto terminado y luego lo quieren volver a enviar al PT30. Entonces, como ayer se habló de ese traslado para devolución, la idea era ver si se podía reusar para este proceso de maquilado.
+
+ Pero me habían dicho que es lo que tú estabas discutiendo, porque...
+
+Nodier Hernandez Arias:
+Eso es otro tema, sí, porque, o sea, la devolución es eventual y yo puedo saber, digamos, a criterio manual, cuáles son los pales o los materiales. Pero ya cuando es maquila si tiene que llevar unos criterios digamos de selección si es el FFO o eso y ya ese FFO quedaría manual ya no podría hacer ese movimiento digamos de moverlo en ubicaciones y sacarlo porque el operador puede mover cualquiera a criterio de quién de él más no estaría criterio de una regla pero entonces pero las maquilas las hacen con qué con el movimiento o sea no van a ser ningún no hay un pedido de un 541 o de facilitado a proveedor antes de, sino que primero lo hacen, primero lo van a pasar a un almacén IEM, así está definido.
+
+ Sí, se va a pasar a un almacén IEM. O sea, no hay un pedido de subcontratación para enviar los materiales, para crear la entrega por la M2O.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Eso es algo que tenía que responderme Melvi.
+
+UNKNOWN_SPEAKER:
+Melvi.
+
+Nodier Hernandez Arias:
+O sea, porque el pedido de Maquila, pues hay Maquilas que yo facilito a proveedor, y después nuevamente me traigo lo que corresponda, pero no sé cómo definieron el proceso de su contratación.
+
+Gianni, Florencia:
+No, esto es maquilado que hace Diana, no a proveedores, no Melvin.
+
+Melvin Alvarado:
+Son como los combos, por así decirlo. Si tenemos ambos. Pero ambos están en el mismo proceso, así lo han definido.
+
+Nodier Hernandez Arias:
+Digamos que No, nunca se facilita proveedor, nunca se facilita, lo hacen en un almacén IEM, la conversión ahí con alguna orden.
+
+UNKNOWN_SPEAKER:
+Sí, correcto, correcto.
+
+Nodier Hernandez Arias:
+Vale, correcto. No, ahí yo creo que por ese sentido, para poder guardar, yo creo que ahí pronto con lo que mencionaba Richard, para que guarde esa estrategia tendría que irse por el traslado entre almacenes, un 311, y lo que pasa es que ahí obviamente, claro, ese movimiento se va a ver reflejado hasta que hagan todo el proceso en el EWM. Y ahí sí puede tener richa las estrategias para decir la secuencia, para que tome el pepo y no esté a criterio del operador.
+
+
+
+Gianni, Florencia:
+O sea que tenemos que considerar hacer un nuevo movimiento de traslado Nodier con una nueva entrega saliente para esto de Maquilado. Porque hoy los que tenemos así con ese son son para el autoventa y reparto y habilitamos el Z11 pero para ingresar al PT30 deberíamos crear uno nuevo que no le atregan.
+
+Nodier Hernandez Arias:
+Claro, tendría que ser por ejemplo, no sé, por ejemplo Richard si tendríamos ahí como que mirar bueno cuál es si se usa el o se usa el estándar que es en este caso cuando se usa el 3 él va a determinar la clase de entrega en el SS que es la D.O.G. Y en el E.W.M. Si determina la A.U.B. O alguna pues que se llame D.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Maquilas o cualquier otra. De hecho, sí, de hecho me parece que son las mismas D.O.G. Y D.I.G.
+
+UNKNOWN_SPEAKER:
+son las mismas.
+
+Nodier Hernandez Arias:
+Exacto, sí, porque en los movimientos presuntos toma es, toma la D.O.G. Y dentro de salida y o la D.I.G. Puede ser un movimiento de entrada.
+
+UNKNOWN_SPEAKER:
+Correcto.
+
+Nodier Hernandez Arias:
+ya mirar con cual movimiento nos vamos y sobre eso pues nosotros ahí Flor lo meteríamos dentro de la tablita porque como toda la aplicación y obviamente ponemos la estándar ahí lo que tendríamos que definir es si usamos esa estándar y ya Richard le haría la equivalencia en el EWM cuál le va a colocar.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Sí eso digamos que eso es lo de menos porque eso es rapidito pero por ejemplo ahí me preocupa mucho lo de afectación, o sea, ustedes con ese, si tocan ese 311 se estaría afectando de alguna u otra forma algo de otro, otro, porque ese 312 me imagino que lo usarán en otros almacenes, ¿no?
+
+UNKNOWN_SPEAKER:
+No, no, pero no debería afectar porque va a ser un almacén IEM.
+
+Nodier Hernandez Arias:
+Ok, perfecto. Nada más hay una pregunta. Puedo tranquilamente hacer un flor, un nuevo Z, un nuevo Z, igual que al 311, que se llama traslado para maquilas, un ejemplo. Pero finalmente va a ser la misma clase de entrega y no puede ser, no necesitaríamos una clase de entrega Z. Pues la misma estándar, la DOG. Y ya con esa es la que le pasamos a Richard y Richard la mapea con la que... El estándar de aquí también existe esa misma DOG.
+
+ Exacto. Y podemos hacer un Z para que no se quede el 311 como estándar flojo. Los dos aplican.
+
+Gianni, Florencia:
+ella como ponernos de acuerdo a nosotros creamos un zeta maquila para que lo tengan bien separado bien lo único que me quedó duda entonces fue lo de devolución a proveedor qué camino vamos a seguir ahí iba a ser una
+
+Conference Room (Richard Quinteros) - Speaker 1:
+pregunta una pregunta no dier que diferencia entre el 122 y el 161?
+
+Nodier Hernandez Arias:
+La diferencia es que el 122 se hace contra un documento de material, o sea ya contra una recepción, ya que se hizo previamente. Y el 161 se hace es global al proveedor, un pedido de evolución que reúne muchas entradas que se hicieron de ese proveedor. Pero el 122 va con referencia. El 161 va sin referencia.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Ok, ¿y cómo lo hacen hoy en día Melvin? Lo hacen sin referencia, ¿correcto?
+
+UNKNOWN_SPEAKER:
+Hoy hacen 161. 161, sin referencia.
+
+Nodier Hernandez Arias:
+Es un pedido que dicen, le recibo todo un año un proveedor y en el mes 13 le voy a devolver esta parte, pero esa parte no es de una entrada que se hizo el mes de entrada, no. Le voy a devolver esta. Entonces hacen un 161 que ya contablemente ya le va a dar la cuenta por pagar al proveedor y así pues como la contrapartida. Y el 122 le anula de la entrada que se hizo propia a una factura.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Ya te caché. Anula la compra. Ahí nada más. Creo que tenemos que revisar entonces del lado del diseño de cara al diseño BBP, el diseño de pues el proceso de devolución, porque Porque la devolución, como tal, estaba planteada como una devolución estándar, ¿no? A través de un pedido de compra. Pues por eso se hizo así. Estaba mapeada de esa forma, ¿no? El pedido de devolución lo hacía con el 122, que va contra la orden de compra, el pedido de compra, y pues se hacía así.
+
+ Pero entonces ese proceso que tú comentas, Nodir, que es con base al ADI, pues sí hay que tenerlo un poquito bastante más separado de los otros flujos comerciales. ¿Por qué? Porque digamos que aquí nosotros colocamos, se coloca el producto dentro de una ubicación específica, como bien comentaba Nodieri, y se hace una DGI para sacarlo. Una salida de mercancía no planificada, sacarlo del almacén. Y este proceso, pues, cambiaría o tendría que cambiar.
+
+
+
+Kerin Bonilla:
+Pero eso si nos vamos por la vía de la DGI y si nos vamos por el inicial del IEM, porque ahora ya mencionamos un montón de temas a la vez.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Por ejemplo, para el tema de devolución, es que se juntaron dos temas aquí, se juntó el tema de Maquila y el de devolución, pero hablemos del de Maquila El de maquina ya quedó. Se va a hacer una clase de movimiento, clase de entrega y todas esas cuestiones. Ahora, el tema de, y se maneja, pues, como ya está mapeado en el TUBI, en el documento de diseño. Ahora, el tema de devolución a proveedor, que es un caso secundario, que obviamente no podemos dejar pasar por debajo de la mesa, pues, sí, a nivel de WM, procesalmente cambia.
+
+ No puede ser así, porque en ningún punto tenemos una entrega. ¿Me explico? Se basa en la ADGI con un movimiento, hay que tener una ubicación específica para esos productos que van a devolver al proveedor. Hay que tener su tipo de almacén específico, su tipo de almacén, pues tienen que hacer un movimiento interno de los productos que ustedes vayan a devolver, colocarlo en este tipo de almacén. Y una vez que se coloca en este tipo de almacén, pues ya cuando corresponde hacer el movimiento correspondiente para el almacén IM, se va a hacer el ADGI como paso final para sacarlo de WM.
+
+ Eso pone la mercadería a nivel IM, ¿OK? Y ese IM, pues, es donde ocurre todo el proceso que hacen ustedes con el 161, creo que era. Pero si cambia este proceso, pues, no va a ser así. ¿Me explico? Porque no es un proceso, esto es para el proceso contra un 122. 121, perdón. No, perdón, 122, perdón, perdón, perdón. Pero como no lo hacen con 122, sino con 161, este, sí necesitamos cambiar esto. Porque, pues, el proceso no puede ser contraentrega por ser descentralizado.
+
+
+
+Kerin Bonilla:
+Melvin y lo que hablamos con Sandrita hoy, entonces ya no aplicaría porque ya otra solución.
+
+Melvin Alvarado:
+Gracias a Dios no somos rey, cambiamos las transacciones.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Pero qué platicaban ustedes con Sandrita? Que cambiamos el proceso.
+
+Melvin Alvarado:
+Porque nosotros pensábamos que el proceso iba a ser igual el traslado. Pero aquí ya acordamos cómo va a ser la devolución. Pero a nivel de proceso, no, no, no es nada más interno que nuestro.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Ok, no, pero entonces si déjame revisar internamente aquí con John, John Nathan, pues este cambio que tiene que ocurrir, ok? Este y pues ver cómo lo manejamos, vale?
+
+Kerin Bonilla:
+¿Te parece, Karim? Dale, perfecto. Sí, porque de igual manera, según escuché a Rafael ayer, los pedidos de devolución no es un alto índice, un volumen alto. Así que después podemos ir viendo cómo le damos la prioridad a todo ello. Si hay casos, haya que reestructurarlo, ¿verdad? Solo hay que definir lo que Flor tiene que hacer y después nosotros Verde nuestro lado.
+
+Gianni, Florencia:
+Si vamos con este proceso, de nuestro lado no tenemos que hacer nada. Sigue el proceso como hacen hoy. Hacen el ZDEV, la orden de compra, van al amigo y hacen el 161. Ahí creo que el que tiene más impacto es Richard que por ese cambio que estábamos hablando.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Sí, porque cambió el pues los pasos del proceso porque por la forma en que en que se quiere operar por el tema del 161 pues por eso no más porque si las devoluciones ocurrieran contra el pedido de compra pues realmente pues pasará así no era como se tenía pensado pero como no ocurre contra el pedido de compra pues no más que pues ahí no puede ocurrir así Sí, ocurre con el 161 y ese 161 solo va a ocurrir para el almacén IEM, no para el WM.
+
+ ¿Sí? ¿Se entendió? Ok, ok.
+
+Kerin Bonilla:
+Va, me avisas entonces cómo lo conversamos para después dialogar con el resto del equipo y poner los onboarding de cómo sería aunque no estuviera el 100% finalizado el proceso, ¿verdad? Solo para darle la contelexión. Contextualización a los demás a la vez, a Rafa, a Walter y a los que nos hacen falta. Y aunque después quede definido ya en configuración y todo lo demás, lo vamos viendo en otra prioridad.
+
+
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Sí, de hecho yo me voy a buscar ahorita a hacer, o sea, esto lo puedo intentar hacer de repente en dos días, algo así, hago esta configuración o en menos. Y una vez la tenga lista, si quieres lo vemos. Para que vean cómo funciona. Pero antes necesito checarlo con el ¿Cómo lo vamos a manejar?
+
+Kerin Bonilla:
+Dale, está bien.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Pues nada, Nodier, muchas gracias, ¿eh?
+
+UNKNOWN_SPEAKER:
+Muy amable, amigo.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Bueno, ya no sé si se fue.
+
+Kerin Bonilla:
+Ah, ahí está.
+
+Nodier Hernandez Arias:
+Listo, Richard.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Vale, amigo. Chaito.
+
+Kerin Bonilla:
+OK, Flora, entonces quedamos al pendiente y solamente con los acuerdos de los maquilados cerrados por la nueva, o sea, cerrado en lo que nosotros debíamos en concepto de definición. Quedamos con el nuevo set para maquilado y el proceso de evolución que Richard nos va a ayudar a hacer la nueva ruta a seguir. Y los tipos de unidades ya están definidas, así que ya despejamos varias cosas. Si te debemos algo, por favor, en el WhatsApp nos escribes y ya busco a quienes nos correspondan.
+
+
+
+Gianni, Florencia:
+No, de mi lado solo debo las integraciones, pero porque la estamos probando y los casos de Pablo que el lunes ya, no viernes, colabora en enviarles nuevos casos con HHU.
+
+Kerin Bonilla:
+Ok, listo. Les agradezco muchísimo, pasen feliz tarde.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Igualmente.
+
+UNKNOWN_SPEAKER:
+Chao.
+
+Conference Room (Richard Quinteros) - Speaker 1:
+Muchas gracias.
+
+UNKNOWN_SPEAKER:
+¡Gracias!
+
