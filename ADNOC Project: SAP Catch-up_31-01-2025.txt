@@ -1,0 +1,491 @@
+Kafizova, Regina:
+Hello colleagues, how are you doing? Hi Regina, how are you? I'm fine, thank you, and what about you? Very well, thank you. Are you in the same room? Yeah, we're in the same room.
+
+UNKNOWN_SPEAKER:
+That's good.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Okay, let's discuss the point we have. Something if we are missing the email?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yeah, if we have any question and then we can jump into the I think the main topic.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Now let's discuss about the inventory part.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Maybe the error calculation?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I think that the most important part that we are facing is the challenge of supply planning, okay? So what we are wondering is because, you know, the MRO solution at first is pushing to use the infinite heuristic, right? That is a standard. But I'm not about the supply license because the main thing that they want to do on the system and they don't have today is share stock between plants, between storage locations in this case.
+
+ So we are a little concerned about this because what we know today is that between all the plants that they have today or all their products, they want to share between all the plants. So we are kind of on a all for all scenario, you know? So that is a big network that we are going to have. And is going to be or the finite heuristic or the optimizer depending on the constraint requirements that we will be checking with them.
+
+ So I don't know if you think that in performance this can be an issue or can be an unsolvable problem because you know we are talking about millions and millions of combinations.
+
+Kafizova, Regina:
+Yeah, so I think that is the main reason why I suggested at NOC to participate in inventory balancing. Early adopter program which actually yeah like anytime I think already next week they can start. So did you have a chance to discuss it with them? Are they open for this?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's also we want to understand better. In the last session you told us that you wanted to discuss without this so maybe if we can understand better where is this inventory balancing if this is in part or if this is like planning part. We also would like to understand better and how we can use this.
+
+Kafizova, Regina:
+That is a new functionality. Yeah, sure. So I would say that for the task that you explained with this all tool combinations from all like applications. I would say that inventory balancing seems to be more suitable because, as you mentioned, the MRO has infinite heuristics as in standard. And actually, in combination with inventory balancing plus infinite heuristics can give this kind of flexibility without implementing the time series optimizer, which might be quite challenging task for such amount of combinations and to optimize these things might be very challenging.
+
+ Regarding the amount of combinations, inventory balancing can support proposal of transfers for the cases where we don't have the transportation lane in IBP master data. Inventory balancing operator should be able to, maybe let me share my screen. Yeah, so inventory balancing, I hope you can see it.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yes, we can see it.
+
+Kafizova, Regina:
+Okay, thank you. Yeah, so inventory balancing, the main purpose of it is to rebalance inventory based on parameters. Yeah, I think I don't have them here, but maybe on the other deck. But the main idea is that we have some shortage, a shortage key figure, and I think maximum days of supply. I think it can be both in pieces and days of supply. Yeah, so maximum target and shortage. So this key figure should be configured separately.
+
+ We have a configuration guide for this. But the main idea is actually to rebalance inventory from one location to another, where there is too much stock, where the stock exceeds the target inventory, to the place where there is some shortage of inventory based on our planning data. And for this, we don't have to have the transportation available in master data system should be. Algorithm should be able to propose it anyway and then it can be, let's say a decision made that.
+
+ Yeah, I want this proposal really to happen and confirm this and then the corresponding master is that if I'm not mistaken will be created directly after that. So the so that it is exactly what this is exactly what we need.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+This is nothing but I mean, you describe in full detail what we need, what we're looking for.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But you're telling us, Regina, that this runs with the infinite heuristic, right?
+
+Kafizova, Regina:
+Not really. It's a separate application. It's a separate algorithm. It runs separately. First, it calculates this inventory. So first, I think we run, like in the last planning cycle, we run infinite heuristics. And then after infinituristics, we check the shortage and the location where we exceed our maximum inventory level. And then after that, we can run inventory balancing operator, which proposes the transportations from one location to another.
+
+ Then a planner can review them, and after that, confirm these proposals and then run heuristics again already with these inventory balancing transportations fixed. Yeah, so having them fixed and considering them as input. Yeah, and then we run heuristics again and consider them fixed. And then after that, yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+You generate the purchase orders and So it's like a, sorry, just to check if I understand correctly. So it's like a three-step, as I see it. First of all, you run to understand what are your needs, what are your shortages. Then you do the inventory balancing that will generate a proposal between locations. And then this is going to be an input for a second run of the algorithm.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+It all happens at once. In the algorithm, this is internal thing.
+
+Kafizova, Regina:
+It doesn't matter, if they are three jobs, we can put a template for that as well.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Yes, yes, exactly, exactly, yeah. So first it balance, first calculate demand, then balance, and then goes for vendors.
+
+UNKNOWN_SPEAKER:
+Yeah. Cool.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yes, this is what we need to do in it, yeah. So it doesn't matter the algorithm because I'm just thinking that maybe we have other constraints that the infinite heuristic is not going to be able to do right, so we need to check that as well. It's something that we need to check related to the performance, because I have...
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But why are you mentioning the infinite heuristic?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Because that is... No, but... Oh, yeah, of course.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+I mean, infinite heuristic is it's not enough for us that that's clear if we should assess this one or then the optimizer but infinite heuristic is not it's not gonna be good enough because also they have three a is
+
+Conference Room (Bastian Osorio) - Speaker 1:
+like um how is called material replacements you know the substitution that We also have that. So I think that the infinity receive doesn't allow us to do that.
+
+Kafizova, Regina:
+You mean the interchangeability parts interchangeability? Yes, yes. For this I think I have some links on the help page. I have to check that. I think to some extent it might be supported but I have to check that. But yeah, just as you summarized with the inventory balancing. Yes, so first we run inventory heuristics first from the previous run. Then we calculate the shortages and where the safety stock exceed the target inventory.
+
+ Then we do inventory balancing exactly which matches the shortage and supply, and then we run supply heuristics again, the infinite one. And then, so you mentioned that there should be interchangeability, yeah? So this I need to check. But for this inventory balancing topic, yeah, so we have this algorithm, let's say, available. In February it will be for early adopters only. So customer have to open an incident.
+
+ On a specific component and then we will make this operator visible to them and in May it will be available for all of the customers without any. Restrictions and But for this, of course, like when this operator is enabled in February, we would like to also to work close with you and the customer together and understand the feedback yes so does it work as expected or maybe something is missing maybe something should be changed so this is exactly the chance the window when we can make some changes let's say in the logic and implement them before May release before it is available for all customers and there might be different options how to run, how and when to run this algorithm.
+
+ So it might be closely coupled with supply planning. So first inventory balancing and then a heuristic run which considers them as an input. But after discussion with some customers we understood that maybe not for everyone it will be that suitable. So that's why we also consider this on-demand usage it so for example you just calculate it I don't know once in a while and then in the next heuristics run this input will be considered always as fixed transportations yeah so you don't have to run it every month to replan but if you kind of certain with some transportations you don't have to rerun this inventory balancing operator each month together with your supply planning but it will be kind of saved and fixed and considered in all of your future heuristics run so both options are possible yeah again it's up to the customer to decide but we mostly consider it to be on demand mainly and we also assume that no not all of the parts will be considered because some cheap and some cheap parts which are not that critical maybe we don't have to do it for them yeah because we just buy or maybe have a lot of stock for them like for very small pieces that are not that critical but for some expensive and really critical parts which we don't just buy like in case we need them.
+
+ So for this kind of very expensive and critical parts this is the main focus let's say in the with this operator.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yes a question because you always mentioned heuristic is this constraint to use using this algorithm?
+
+Kafizova, Regina:
+No, no, no, no constraints. So it's this is absolutely separate algorithm. It will be a separate profile in the MRO. Inventory planning profile. I think it will be part of it if I'm not mistaken, but It will be a separate algorithm which is not linked anyhow to any algorithm. Yeah, so it will just.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But when you generate the outputs and it's going to give you proposals, is it going to use one standard key figure on the optimizer or heuristic?
+
+Kafizova, Regina:
+I think, if I'm not mistaken, we should be able to change the output parameters, but I think mainly it will be either the standard or the Z ones, because we might also manually change them if needed. So I think it should be very flexible and it should be considered in all supply planning operators, in heuristics and in optimizers, so I think it won't be a problem.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Regarding the first step, you mentioned that it first deploys the demand and checks for shortages, but this is just internal, it doesn't consider, it doesn't go to vendors.
+
+Kafizova, Regina:
+What do you mean it doesn't go to vendors?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So I'm thinking if there is a stock in another location.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's one important point because if you run the optimizer heuristic it will say okay I don't have a stock but it will try to bring it from a vendor, right?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So this what they want to avoid so I guess that the first one will be trying to avoid that to generate a group yeah it will just calculate demanding shortages and then look for in the second step stock policy
+
+Kafizova, Regina:
+look for the stock in different locations and the third step will be look to the vendor yeah is it like this um yeah we there is actually a way to prohibit the procurement kind of prohibit the procurement from vendor in the first run by having adjusted receipts as zero. Yeah, so if this configure is zero then no receipts are planned from vendor or maybe yeah, the sourcing ratio is zero from vendor and then from internal locations it will be 100% for example for some period.
+
+ And then yeah, we run this first. I think there is also a configuration guide available. So this is just the general deck. Yeah, but I will share also with you the configuration guide. So how to configure the shortages and excesses key figures, because they are not part of the planning area yet and they have to be considered, but it's not complicated. There is step-by-step guide. I'm sorry? It's not going to be an issue.
+
+ We can configure all of this. Yeah. That's good. And after that, yeah, we run inventory balancing operator, which reshuffles everything. And after that, we already don't prohibit any procurement. So we run it normally with the different, let's say, fixed receipts, fixed transportation receipts and supplies. And yeah, and then we can use normally as input for the heuristics. OK, great. Perfect, so Regina, can you share this information with us so we can start?
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I think that we need to open the ticket right away. Yeah, yeah. Well, when can we open the ticket?
+
+Kafizova, Regina:
+I will check with the colleagues. I think it may like it might be even like next week. Yeah, and I will share the details with you like how to open the ticket, with what specific component, what the text should be and everything. So I will check this and share it with you today.
+
+UNKNOWN_SPEAKER:
+Okay, great, perfect.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So this is exactly what we need and it's one of the biggest points that we have. So yeah, I'm sure that you also have that point on your side because, you know, they are all in the street usually. The combinations are crazy.
+
+Kafizova, Regina:
+Yeah, exactly. So then I will share with you all of the documents I have for this early adopter program and also the details how to open the incident. I will share it with you today and then next week I think you can open it.
+
+UNKNOWN_SPEAKER:
+Great, perfect.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Thank you very much Regina. Another point that we also want to share feedback is that But for example, here on this AdDoc, they have some turnaround period shutdown. They are basically big maintenance activities that they have like once a year, so every two years. And I think that they are using the PS model for that. And they are assigning work orders to breakdown it, work breakdown structures, the WBS element.
+
+ And one of the requirements that they have and they pushing a lot with this, is to have visibility across the whole supply chain network, all the resource, even the PRs, I mean the procurement proposals, they want to see the WBS element related to that. And that is something that we lose visibility on time series, right? So in one moment we start in material location and we lose visibility of WBS that could be, I don't know, customer dimensions, or whatever, but it's not something that we can provide.
+
+ So something that they can push is the order base, because the order base has that level of information and so on. But I don't think that this is part of something that we can do in the current scenario with MRO. Am I correct? Because we have the license, but related to structure or...
+
+UNKNOWN_SPEAKER:
+No.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+and we should build something as a perp structure.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, that is a requirement that you keep in mind because sometimes they want to keep that traceability. Usually these kind of users, they are very ERP oriented, you know?
+
+Kafizova, Regina:
+Yeah, we actually have standard integration of the project system objects into IBP and consider them at a proper downstructure element. So in this case, we have standard content to integrate master data and key figure data. I can also share the details with you. I have also, I think, a recording of how this data can be exactly displayed, and I can also show it now. But the main idea is that we integrate project network activities and consider them in IBP the same way as we would consider the maintenance activities.
+
+ I know that for AdNoc it's not really that relevant to preventive maintenance part. But it's actually the network activity is considered as a product in IBP. And then we consolidate the demands from PS and from PM into consensus demand, key figure, and send them to supply together with the forecast for the corrective maintenance. And then it all is considered in supply planning run. And at the end, we can see total requirements for components and resources And then based on this, we can generate the supply requirements and send PIRs into S4HANA.
+
+ But to describe it in more details, we actually have extractors and integration content that integrate work breakdown structure element as a customer in IBP. Just as you mentioned, network activity is concatenated and integrated as a product in IBP. So network plus activity ID is a product ID in IBP. And then plant, of course, it's just a location in IBP, nothing new here. And then material component requirements are modeled as parts needed as a part of bill of material, let's say, as a part of this header of network activity.
+
+ And work centers requirements modeled as routing, yeah, for this header. Yeah, so this goes into production source, resource master data type, yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But as you mentioned here, the WBS is a element of a customer element, let's say. A customer, uh-huh. So it will lose the visibility later on, because the moment that we generate the procurement proposal, you don't have the customer, right? So that is precisely the thing that they want to know. I'm generating this procurement proposal, I want to see to which WBS element this is related to, you know?
+
+ So that's the challenge. The only thing that I have in my mind right now is a concatenation. So I can concatenate the WBS element with the material and then run the whole thing, right? So I don't lose visibility because it's there.
+
+Kafizova, Regina:
+But other than that. Yeah, that's one of the points. And anyway, this network activity is a unique one. Yes. So in one or in a whole project, there is only one network activity with this ID assigned to only one World War I structure element. Yes. So it's always a one-to-one relationship. So as you mentioned, concatenation might be one of the option when we put it in the name of a source ID, for example.
+
+ But maybe we can also create some kind of key figure that actually, you know, we have this masqueraded...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But, Regina, just a point here because you are saying that the WBS is linked to the activity, right? Yes. One-to-one, but we will also lose the activity in one moment because after doing an explosion and getting the material requirement, the specific material, Then we lose the link, right? Because we can have for multiple activities, we can have one common material, and then in one moment, this will be all unified.
+
+ And we will lose the traceability of the specific activity.
+
+Kafizova, Regina:
+Yes, but there is a key figure, if I'm not mistaken, at a more detailed planning level, which is from and like product and product from or product and product to meaning there will be a dependent production demand key figure which is stored at if I'm not mistaken location main product which is product from component which is component and and I think that's it and maybe source ID maybe source ID is So there are some key figures where you actually can check the dependent demand between main product, which is activity and dependent demand.
+
+ If I'm not mistaken, I can.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+You're right, you're right, and that's what we did. We have, although it's not, it's not. It's not like straightforward, but yeah, you're right. You have. We have that disability where we lost visibility is when we are when you are like buying from a vendor because you don't know from which activity you are buying you just see an amount let's say a hundred a hundred
+
+Kafizova, Regina:
+but for which okay I'm a hundred but for which project you don't know so you mean not the demand part but exactly the supply part of the process when we actually have the receipts and supply from vendor activity. Yeah, so already rounded based on the lot size and all of this kind of thing. Yeah, yeah. Actually, I was thinking about the master data type called customer source and I think it is exactly at product product, receiving location, and so it's customer.
+
+ Yeah, so it's customer, meaning corporate downstructure element, the product, and the location. So maybe with the help of some key figure calculation as. Yeah, I'm thinking that there should be an X.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So as you're saying, if we have like in the production source resource basically we have the link maybe then it's just a matter of disaggregation or calculation to get like the percentage of yeah in the in the customer source because in the customer source you have location you have customer you have product exactly yeah exactly yeah yeah I think that we need to run some examples and if we if we find a way that also is efficient related to resources because also we have the that constraint.
+
+ Let us check internally how we do this and then if we have any other questions, I don't know if we can solve it with you, but at least we can give you the feedback if this can be a future
+
+Conference Room (Bastian Osorio) - Speaker 2:
+issue for another customer, you know? Yeah, absolutely, yeah. Okay, regarding the new algorithm, will you provide details to create a node?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Kafizova, Regina:
+Yeah, absolutely.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sorry Regina, I'm taking all the opportunities to ask you. There is one additional question that I have related to MRO for inventory. Is this related to when you have multi-equivalent scenarios? So, for example, I know pretty much that the amount rate configured with have for the plants where you have the machines, right? So there the demand is clear but as soon as you are going upstream and you have one plant that maybe is just supplying to the other ones but it's not having operations there, which key theory is going to use
+
+Kafizova, Regina:
+that one for calculating a safety stock? I think actually safety stock with the inventory operator is calculated only via a single stage. So MRO inventory operator is only single stage and I think it gets an input at the product location level. Yes, so customers are not involved at all in the planning level. But I'm sorry, what exactly your question? Could you please?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, you're right, you're right.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+What is the input demand to calculate the rate?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yes, for example, if you have a plan where the demand is only the dependent demand, so usually your operators calculate the dependent demand and you use the dependent demand to calculate the inventory, the safety stock level. That is what's there, yeah. But here, do we have anything like this or how we can calculate the demand just based on the historical transfers? What can it be? Have you seen it already?
+
+ The dependent demand is not generated by the algorithm. That is what I think. I haven't tested because the most common scenario for sure is from the vendor directly to the plant. That is the link. But I think that we also have some scenarios in which you have another echelon in the middle.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+And in that case, there is no forecast. I mean, there could be a forecast of like dependent demand. The dependent demand is a forecast at the end of the day.
+
+Kafizova, Regina:
+It's a propagation of the forecast.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But for the path, there is no actual usage of dependent demand, something like that.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, it's something that we can get finally from using, I don't know, another algorithms like the heuristic and just to do a run to get the dependent demand upstream, but I was wondering if this was already part of the standard MRO profile or if it's as I am thinking that we need to generate the demand for those nodes.
+
+Kafizova, Regina:
+Yeah, that's actually a good point. I think, yeah, the demand that we use in our inventory operator is the average weekly demand rate. This is the main one, I would say, and it is actually calculated based on the actual usage data but in case it is somehow an intermediate location I'm not sure how this data so you mean that the actual usage data will be on the receiving location from vendors but as nothing will be consumed at the intermediate location but it will be used as a transit only no historical data yes it's not consumed because the point that I'm making
+
+Conference Room (Bastian Osorio) - Speaker 1:
+is that there you don't have machines right so it's not like you're consuming you need to think on other things like on transfers probably you'll have consumptions somehow otherwise you couldn't withdraw stock from them maybe let me check on
+
+Kafizova, Regina:
+this question with my colleagues Because I think usually we have quite simple supply chains where we have mainly historical data on the locations. But if we don't, then how do we calculate the average weekly demand rate? Of course, we have many other like key figures to support with that if there is no historical data. But maybe we can somehow reuse the dependent demand data for this for future or Yeah, that's a good point.
+
+ Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I don't think that is going to be the most common scenario, to be honest, because as you say, the standard is like vendor to plant directly. But let us check with the data. The point is that just right now, because that NOC is very complicated in order to get an iteration done, really, really complicated. We just connected the data like one week ago, then we had a lot of data store issues. And just from yesterday, we are able to have the connection finalized.
+
+ So we are focusing on integrating the most we can these days. And this is the perfect scenario for what you say. All these scenarios, you check what is the scenario with the supply chain network, and also the sharing between the stock sharing part, the balance Mm-hmm.
+
+Kafizova, Regina:
+Yeah. And like, is there an option or maybe like also sometimes customers, they ask if it is possible to plan safety stock levels at the more aggregated level. So for example, not to calculate the safety stock for each and every plant, but rather calculate it at a region level and then kind of use it for all other, let's say, locations. Is it something? I'm sorry?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+You're saying that less centralized because that is going to reduce the amount that we need and then do a kind of balancing between locations.
+
+Kafizova, Regina:
+Exactly, yeah. So, did someone from EDNOC mention this? Do they?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I don't think that they have that vision, but certainly is a better strategy maybe we can start pushing an idea like that but everything that we need we do with them it needs to be based on results so yes I think that we will need to create one scenario with decentralized stock and then when we centralize the stock and to show them how this is going to be.
+
+Kafizova, Regina:
+Okay yeah that sounds good and what actually is the status at the moment of the project itself, like did you complete the design phase?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yes, we completed the design phase. These are two phases, right? So we have one wave, it's inventory and demand, and the other one is supply. And we are finishing next week the unit testing for demand and inventory. Okay. And maybe, how many weeks we are going to do UAT for demand and inventory? Five weeks. Are doing that and you don't better depend on me. What is the question? What is the stage we are in the break right now?
+
+
+
+Conference Room (Bastian Osorio) - Speaker 2:
+We're in unit testing for and we are unit testing for wave one and configuration for wave two.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+But we are still although and I think all the project I'd like this we I think the main definitions are are done but we still need some, we will need some iterations because they're asking for weird stuff like approvals, materials approval mainly, sorry, material reservations, approvals. This usually happening in S4HANA. They wanted to do it here, although we know IVP is not a solution for do this kind of approval.
+
+ And they also want an approval for the forecast. But I think it's a customized logic we can manage. It's just like, I don't know, someone needs to approve the forecast just by running an operator or they can make changes and that will be the trigger for the approval. Yeah. Another question, and I think it's because many materials will be, you know, spare parts have a very low consumption so in some cases we're not able to create a I will say valid forecast right if you have consumption of let's say five I don't know just a very low consumption there is no forecast that can be created so how do you determine if a material is forecast based or if it's reorder point is based on reorder point?
+
+ What will be your rule?
+
+Kafizova, Regina:
+I would say that we have it more or less in standard. Yeah, so if there is insufficient data or no data calculated in the demand pattern attribute after the forecast automation, then we have this kind of logic with the meantime between failure with all of these coefficients and balancing and stuff. And for the rest, if it is intermittent, uh then or continues then there are some let's say more uh normal ways to calculate it using the average weekly demand rate and other things uh but I think um you you actually presented the options to to the customers right on this specific topic uh I mean you did it for I think for the um new product introduction but I think if they don't have any history but I think the same can be used for uh rare parts as well.
+
+ Yeah, so maybe like plan at an aggregated level like product family level, for example, and then just use it to keep on stock. Or there might be also, I don't know, let's say the virtual master data type that based on the node like demand pattern can also put either your point or safety stock just through this mapping. Or even manage master data rule app, which will fill in an attribute in master data type that if in the demand pattern the value is no data or insufficient data, then just use the reorder point logic.
+
+ If it is intermittent or continuous, then use the safety stock logic, maybe something like this.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+What is the default value for insufficient data? Records, something like that?
+
+Kafizova, Regina:
+Sorry, what do you mean?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+The default value for insufficient data, because it's something you can change, right?
+
+Kafizova, Regina:
+Yes, absolutely.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+So what would you say is a valid or a fair value? Because of course 50 points sounds like too much, but five points maybe is too little.
+
+Kafizova, Regina:
+We have exactly this configuration, this key figure that you shared in the email with the material usage average weekly rate, which actually checks if the calculated mean time between failure, replenishment lead time, and if all of it is zero or empty, I think the default value is one, if I'm not mistaken. And in case there is something then they are considered Okay But of course like I would say that it still should be checked with the data that is in the system and Yeah, maybe with the help of the simple moving average algorithm or crossed on TSB for example check How frequently and in what amount is the demand?
+
+ And maybe, yeah, use it somehow for it, but even if it's like super rare, maybe it still makes sense to use it as a basis for the inventory calculation, even if the demand will be like, I don't know, one
+
+UNKNOWN_SPEAKER:
+piece and that's it.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I found it is like my second Because they are kind of pushing a lot related to having information related to order number, you know, to have this paging. So I hear a lot the user saying that. And we know that we have order base, but also we know that is not the standard for MRO. Do you think that, Regina, is there any plan for the future, like connecting or syncing again, maybe for MRO, we also could push an order-based scenario?
+
+ Exactly.
+
+Kafizova, Regina:
+A lot of customers are asking about this functionality, so it's absolutely understandable. And I think the plans are not very certain, but closer to the end of this year, I think there will be a new planning area introduced, which actually combines the time series and the order-based planning area. So they will be in the same planning area. So our idea is that once it is available for the customers, we could also continue enhancing it for the MRO scenario as well, so that MRO order data is in the same planning area where the forecast and the maintenance plans are.
+
+ So that is our idea. But of course, this will be not earlier than the end of this year or early next year. But what I can propose now, maybe as an intermediate solution, I'm searching for a deck. There might be a good option. The following one, just loading the slides. The main idea of it is to navigate from IBP Planner workspace to the view in S4HANA. So let me share my screen. It can be. Yeah, it can be.
+
+
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Kafizova, Regina:
+It can be very easily configured. And here, what a planner can do, select material and a material number in a planning view, and then navigate. And then they can navigate to the MD, if I'm not mistaken, the transaction is called MD04, which shows all of the overview of all reservations, demands, purchasing, and whatever that is linked this specific material so if they would like to uh let's say have this visibility maybe maybe for now yeah exactly so to the transaction with the with this reservation or it can be like I don't know um I'm not sure in which transaction there are some reservations I know only the table uh but yeah maybe there is a transaction where there are only reservations for a specific material.
+
+ So that is also possible. So navigation from IBP. So if they have any doubts, they can navigate with one click into this material specifically in any transaction is for honey, including MD 04 or any other transaction which shows reservations orders. Sorry.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Not the table is called recipe.
+
+Kafizova, Regina:
+I raise B. Yeah, exactly exactly. The table, I'm not sure it is possible to navigate, but to transaction, it should be fine. Yeah, to transaction with this material filtered, it should be possible. So maybe like, it will be at least some intermediate step for now.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Regina, even with the material filter, you say?
+
+Kafizova, Regina:
+Yeah, yeah, exactly. So that's good.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+That's good. So at least they have the visibility. They don't, they won't have the begging. For sure, but... It's a step in the right direction. Yeah, for sure, and it is great. Let's see, we will tell you, basically, if we have this kind of requirements, but we will push not to have that pay in and to let them know that this is what the system does right now.
+
+Kafizova, Regina:
+Yeah, exactly. And what we are also working now at the moment, I'm not sure if I have it here, Actually, we are looking into a direction of creating a key figure, which actually shows the potential issues with part shortages or labor resources shortages at the asset level. So not only at the maintenance activity level, but also at the asset level. So for example, warped down structural elements or equipment or some functional occasion, for example.
+
+ So it should be also alerted which asset is affected. So not only which part is missing, but also which asset is affected by the fact that this part is missing. Okay. Yeah, it might be also somehow maybe helpful in this use case.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+For sure, syncing on the feature direction, the last session we discussed about the AI part that they really like, the Excel new chatbot that we will have, you said that we probably will face some UAE regulation related to Gen AI, that is something that is Paola is checking, right?
+
+UNKNOWN_SPEAKER:
+Yes, exactly, exactly.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So, okay, we can communicate with them.
+
+Kafizova, Regina:
+Yeah.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+You need to put the AI logo in everything you're selling these days, otherwise people who won't buy it.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+They are crazy about AI. They are crazy about that, Regina. They are pushing like you don't imagine how they are. Well, I don't know if that's in general, but for sure AdNoc is full AI. If you enter to the web page, they have AI right there.
+
+Kafizova, Regina:
+Everywhere.
+
+UNKNOWN_SPEAKER:
+Everywhere.
+
+Kafizova, Regina:
+Yeah. And actually, like speaking about AI, of course, this is only our plans and we're not sure when exactly we will able to deliver that, but we also plan to work on the AI agents that will enable the interchangeability of parts. Yeah, so exactly the topic that we discussed. Yeah, so it. One day, maybe with the help of AI like interchangeability might be also possible without without the Optimizer and what I also Also found on the help.
+
+ Is this page regarding this product substitution and interchangeability? So I shared the link in the chat. It's about the master data that might be used for the substitution topic and this master at the tab is only available with infinite heuristics. Yeah, so so yeah. Exactly what should be suitable. So it doesn't work with any other algorithm but only with the infinite heuristics. So maybe this is something that can be used for the interchangeability topic.
+
+ Yeah I think that was saying that there is more than one interchangeability, right?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+So I think that when it's related only to the material, no matter the location, I think that is just for demand.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+That is the problem. It's just for demand. If it's part of a company, it doesn't work. Okay.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But yeah, I know that there is a lot of information that helps us. We need to go back again. But for sure, in supply planning, we will need it. Either way, in the worst case scenario, you can create a dummy bill of material, right?
+
+UNKNOWN_SPEAKER:
+So, yeah.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I think that for now, at least I don't have any more questions you asked me also.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+No, thank you for your time, Regina.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+This was really productive, really useful.
+
+UNKNOWN_SPEAKER:
+Yeah, thank you.
+
+Kafizova, Regina:
+Really happy to support. And so I will follow up on the following topics. So first of all, on the inventory balancing. So I will share with you the files that you can also show to the customer about it. Because they also should agree to participate because they will have to provide their feedback to you or to us of course we would like also to participate so if they are fine with it then we will be more than happy to let them test it and implement it and share the feedback which we then can use really to change the algorithm for We'll also share the details about the incident, like what exactly should be created and how.
+
+ Then I will also check about the safety stock calculation for the intermediate location where there is no historical consumption data. Yes, so how to better, how better to calculate this average weekly demand rate. And I will also double check on the topic that we discussed last time. Time with the storage allocations planning. Yeah, so how exactly like maybe colleagues did implemented something like this, so I will double check with them and also on the topic of having no preventive maintenance activities and Don't having no really distinguishing between the order types and so that everything kind of is mixed.
+
+ I understand that you're pushing direction so that customers at least make the order types aligned yes with preventive is with preventive types and corrective with creative corrective but yeah the the rest of the history I think as you mentioned is already uh not aligned so yeah so we also have to think about how how to better deal with it so that the results are um let's say as expected yeah because if there are too high then yeah it's it might be not very good for the customer.
+
+ And I think also there was a question about to generate receipts up to the maximum stock level when the stock on-hand plus in transit quantity falls below the Read point, similar to how it works in MRP in Sbuhana. I think the target inventory position should be helpful here.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yes, we need help. Have a logic there because sometimes you need to consider target inventory position as the reorder point and sometimes you need to consider it as a maximum stock. So one colleague of us was working on that and was creating a good running example with that customization. So yeah, but they are pushing a lot on having this reorder point, even if we do something like that, that is the scenario with few data, infrequent.
+
+ They were pushing us a lot to do it on IDP, as you know, as we discussed before. I think it's not, we would have liked to have that in the MRP run, but they want to have just one place for working and two for generating the procurement proposals. So that's why we are in this situation right now.
+
+Kafizova, Regina:
+Okay, I see. But like, I think there are options, let's say, to generate purchase requisitions directly from IBP with the help of some bodies, but I would say that it's not really the best practice. The best practice, of course, is just to plan in IBP and then send it to the execution system so that all of the documents are created there.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+We will see if we can reopen that door, but they are very stubborn in in some regards related to that. So, you know, it's a difficult customer in that sense.
+
+Kafizova, Regina:
+Yeah, I see. Yeah, but in case you need any support, let me know. And I'm not sure if this was also communicated to you, but on the week of the 17th of February, I think it will be 19th of February, Wednesday in three weeks. Me and Laura and Paola will travel to Dubai to the customer success day and we will also visit ad knock on the 19th just to present like future road map and you also. Maybe yeah, discuss some AI also related topics and demand related topics.
+
+ Yeah, if, I don't know, if you have anything to add or like for me to also discuss with them, let me know. But yeah, we will have, I don't know, maybe 30 minutes with them for questions or so. So yeah, if there are any topics that you want me to discuss with them or kind of also reassure that, yeah, this is our best practice for sure and that we are aligned some points just let me know and yeah I will also like communicate it from my side.
+
+ Exactly I think that that's really important.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Our main points is what we have been discussing in the last two sessions but if we remember something during these days and we think that it's relevant for you to discuss with them we can send you an email regarding to that or have a meeting how you prefer. And you know the scenario you balancing the licenses that related to supply planning?
+
+Kafizova, Regina:
+Yeah, we are actually. Like for early adopters, I think it's it's not that, let's say, relevant because AdNoc has all of the licenses, the inventories, the S&OP and supply, so it's not a problem for them.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+But at the moment it's more in my main concern with that is that they bought that license precisely for inventory balancing so if we told them now no inventory balances is not part of supply license that that can be
+
+Kafizova, Regina:
+a noise you know. Yeah absolutely we have some discussions at the moment on this topic so I cannot tell anything specific but I hope then in one or maybe couple of weeks I will have some answers on this question. But yeah we are aware of this situation and I think the main reason yeah exactly that they bought this S&OP license was the optimizer and inventory balancing was not available yet let's say yeah so it won't it will only be available in February and we cannot let's say sell product licenses based on our let's say, planned roadmap.
+
+ Yeah, so I know this is not acceptable, so that's why the only option that was possible was the time series optimizer. Yeah, so that's why. But now it seems that, yeah, we will have it soon available, but regarding the license, as soon as I know something, I of course will share with you.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yeah, it's just for us, for everyone to be aligned. Because if they get to question that, we need to be prepared for giving them a lying answer on this. But for now, we will say that this is part of supply-planning functionality, at least until we don't have clarity.
+
+Kafizova, Regina:
+Yeah. At the moment, the only way that they can do inventory rebalancing is time series optimizer, which is part of RNS license. Yeah, starting from May, it should be decided. But once I know something, I will of course let you know. All right, perfect. That's all from my side, Regina. Thank you very much. Okay, thanks a lot also for sharing the details. But yeah, other than the topics that we discussed, there are no issues or problems or concerns maybe like nothing like that apart from what we have discussed.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Not big enough to bring it to you probably. If we remember something then we can share it also by email so you are aligned as well.
+
+Kafizova, Regina:
+Okay yeah that sounds good and do we have a monthly meeting or is it weekly one?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+I think we have a monthly meeting but Bastian was checking that I just it's out of the room right now Bastian but I know there is a monthly meeting or bi-weekly I will check with them okay I just cannot
+
+Kafizova, Regina:
+find uh when is when is the next time ah okay I think here it is so it's on the um on the 12th of February yeah yeah bi-weekly meetings okay Yeah, then I'll talk to you on the 12th of February. Hopefully, I will discuss all of the topics with my colleagues and then come back to you with the questions or at least some point of view from our side on the topics. Okay, perfect. I really appreciate it, Regina.
+
+ Yeah, thanks a lot, colleagues. Thank you very much. Yeah, thank you.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+You too. Bye bye.
+
+Kafizova, Regina:
+Thank you. Bye.
+
