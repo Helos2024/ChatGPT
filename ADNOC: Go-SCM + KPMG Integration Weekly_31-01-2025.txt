@@ -1,0 +1,781 @@
+UNKNOWN_SPEAKER:
+I've asked him.
+
+Vivekanand Gajula:
+How are you?
+
+UNKNOWN_SPEAKER:
+All good, you say? Doing well, thank you. It's Friday.
+
+Bastian Osorio:
+Yeah.
+
+UNKNOWN_SPEAKER:
+Be seeing you next week.
+
+Mudit, Khushboo (UAE):
+Hi everyone, good morning.
+
+Vivekanand Gajula:
+Hello, good morning, good afternoon.
+
+UNKNOWN_SPEAKER:
+Hello. You Hello, Kim. Hello. Hello.
+
+UNKNOWN_SPEAKER:
+Hello. Hi Kunal, Kusum.
+
+Mudit, Khushboo (UAE):
+Yeah, I have a question.
+
+UNKNOWN_SPEAKER:
+Hello.
+
+Bastian Osorio:
+Yeah, I think we can start because everyone's here. Yeah. I think it's the best time we managed to have this meeting. And of course, the purpose is to give you some updates regarding the progress in the integration front, right? So, I don't know, Sagar, if you can you can share the latest updates regarding, well, of course, we finally managed to activate the integration. And we have integrated several different master data key figures.
+
+ So if you can brief us on the progress on that, maybe share some document, that will be good.
+
+Sagar Vora:
+Yeah. Sure. The status like where we stand and what all items are pending. So I think that will be good to get back here. So can you guys see my screen?
+
+Bastian Osorio:
+Yes.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Sagar Vora:
+So I believe I think last time Roshu had shared this file with you guys. So and after that, I think the development was on hold due to that IBP data store issue. So yesterday, we have again started the development, loading the data into the integrated version of our IBP. So here is the status. The completed ones are the ones for which we have loaded the data, but it is not 100% complete because we are still doing the internal validation, like which all the fields are mapped.
+
+ If it is not mapped, then which fields are pending. So for that, we are still doing some activity to validate or if any pending definitions are there. So we are still working on that. But on a high level, like we have done.
+
+Mudit, Khushboo (UAE):
+One quick question, Sagar and team, are you all able to access the development environment now? On one ERP?
+
+Sagar Vora:
+Yes, I am able to access one ERP development system. But this data we have extracted from the sandbox system.
+
+Mudit, Khushboo (UAE):
+OK, which is fine. Eventually, we will have to do it in development and then move the TRs, right?
+
+Sagar Vora:
+Yes, correct. So basically, the development system needs to be created in the CID and the extractors needs to be installed. So all that activities are pending, which is planned. I'm I believe in next week.
+
+Mudit, Khushboo (UAE):
+OK, so when you do this in development and you need the you need to capture these in TRs, just let us know we have TRs created which are tagged to charm.
+
+Sagar Vora:
+So this is Adnox internal process. We need to comply with that.
+
+UNKNOWN_SPEAKER:
+OK. OK, so.
+
+Sagar Vora:
+Yeah, so. Can you repeat the activity?
+
+Bastian Osorio:
+Yeah, AdNoc has their own process of how they move between environments.
+
+Mudit, Khushboo (UAE):
+So they create a charm ID on some tool. There is a charm ID. It's basically related to the change management process. There is a charm ID. And the TR that we will create, or rather they have created, will stack to that charm. So all our objects that we need to move into higher environments from development has to be captured within that TR. Otherwise we won't be able to migrate between environments.
+
+ I think Rahul has forwarded that email with the TR, but whenever you do this and you need the TR, reach out again, we can help with the TR details.
+
+Sagar Vora:
+So these are the list of master data and the transactional data where MRO part usage is and the chemical related industry, so that all data we are trying to integrate. I think in the sandbox system, the future data is very limited. So hopefully, once we are in the dev system, we should have a good amount of future data for MRO. These are the in-progress where we have to start, where we are getting some error in extractor due to the high volume of data.
+
+ So we are evaluating internally. And there are some rejections. Basically, the product ID or the location ID is not available in the IBP system. And due to that, there is a rejection. So we just have to validate. The rejections are Basically, that product ID might not be available because of some incorrect plan. So we have to apply some filter and try to make zero rejections. And these are some supply-related master data, which are pending.
+
+ Basically, once we have a clear definition, then we can integrate that. And some transactional data list, which we have to bring to the IBP, we have made a note And we will keep on updating this as and when we get some more information. So this is how the high level integration status.
+
+Bastian Osorio:
+There is an issue that I would like to address here and see if we can. So there's two issues. The first one, I think, is more quick to resolve. Is that in many cases, for many orders that affects the actual historical consumption and also the maintenance, sorry, the reservations, is that in some cases, the IVP needs an asset. Just by the way the system is structured, you need to link the consumption of any material to a location, whatever is this plan or storage location, and then to an equipment.
+
+ In some cases, the order doesn't have any equipment. In terms of more from a functional perspective, this makes sense because we are nothing but tracking the different consumptions, the different maintenance activities consumption, whether this is corrective or whether this is preventive.
+
+Hector Palacios:
+If we are missing the equipment, it's because they are not providing the information, right? Maybe it's not mandatory, but if you are requesting something, it's because you need to do something in an equipment or maybe a functional location, but I don't know. I think the data should be equipment level. One option we have in this case, because I assume, Bastian, even in the orders, you say that they don't have the equipment sometimes?
+
+ And in the manual reservation, it can be the same. Cushpo, Kunal, do you know if the reservations are by your side? Equipment or is it only material location?
+
+UNKNOWN_SPEAKER:
+Kunal, do you know that?
+
+Mudit, Khushboo (UAE):
+I think it might not be, there might not be an equipment in every case. Right, right.
+
+Kunal Sheth (ADNOC Group D&CS):
+So reservation mainly they are created by material reference only. So in our yesterday's call also, I think Muruganar Samoa has confirmed that reservation is legal document which inventory team is considering for further planning like creation of a purchase equation or the stock transfer equation.
+
+Hector Palacios:
+That's right and for the inventory they don't care about the equipment, they care about the plant. Basically you have all the material in this storage location or in this plant and it's fine. We need to understand I mean we can we can plan a material location level but then if we are in the idea in supply planning is that if you are not able to provide what you need you need to understand which equipments are going to be affected.
+
+
+
+Bastian Osorio:
+We cannot plan a location level because I mean one of the main points they are requesting is to have the cost center and the cost center is not linked to a location is linked to an asset.
+
+Hector Palacios:
+That's also right. But that's on the demand side. And yeah, the demand side is mostly related to the reservations.
+
+Bastian Osorio:
+So for forecast also, I mean, for forecast, we have the equipment there, the asset. So if we get rid of that, we're basically just, I don't know, I think we lost track of of who's consuming, we'll say, okay, this plan or this storage location is consuming, but for what? We will lose that vision, that visibility. I think what we can say is to create a dummy if the order doesn't have any, so my concern here, we can cut it and say, OK, if the equipment is there, then there's no way we can upload it.
+
+ But I'm afraid we are losing plenty of consumption that can be substantial. So I was thinking maybe to create a dummy asset called no asset or no assigned asset, something like that. And just put it there.
+
+Bastian Osorio:
+Maybe then we can proceed only with the reservations and forecast that has an asset link associated, but at least we will have that visibility that there are plenty of orders. We don't know the exact amount or the, yeah, that have no asset.
+
+Mudit, Khushboo (UAE):
+Bastián, this is something you are referring to for consumption to capture consumption is it and reservations as well okay yeah okay because uh there was also an email from khaled this morning they have a custom table z mm t c id stage where they are capturing some data and they have asked us to use this table to look at the consumption. Let me just share my screen.
+
+UNKNOWN_SPEAKER:
+So this was the email.
+
+Mudit, Khushboo (UAE):
+Can you see my screen? Yeah. Yeah, the movement data for the last five years is captured in a separate custom table in S4 HANA. Ensure that the movement data is fetched from this table for the last five years history while the current month's movement data can be fetched from standard SAP tables. And when I'm looking at this table and sandbox, this is what we have. There's no equipment information, only location and material.
+
+
+
+Bastian Osorio:
+Good thing is that has the plant MRT So in some cases it has the plan, and in other cases it has the source location, right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+That is good, but there's plenty of missing information here. So the equipment, the order type, there's no order type, it's just consumption. Yes, it's purely consumption. For us it's fine, but when you weigh more, more information than that.
+
+Hector Palacios:
+This is supposedly for the last five years. But why we have a table is we already have the last five years.
+
+Mudit, Khushboo (UAE):
+I think it I'm not sure. Maybe it has some data. From the one ERP migration, but I think that was. Before five years.
+
+Kunal Sheth (ADNOC Group D&CS):
+I think this is legacy system.
+
+Mudit, Khushboo (UAE):
+That's my understanding as well, but I think they migrated in 2020, was it Kunal? And this says only last five years, that means starting 2021.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, so last three years anyway, we'll be having in the standard table only. So beyond that, we need to refer to this table.
+
+Hector Palacios:
+That's why years is enough. I think that going beyond that is going to be crazy for us.
+
+UNKNOWN_SPEAKER:
+Right. Yeah.
+
+Mudit, Khushboo (UAE):
+So we basically have to use this table as well.
+
+UNKNOWN_SPEAKER:
+No, no, no.
+
+Hector Palacios:
+Last five years we have it. If they have from 2020, we are already in 2025.
+
+Mudit, Khushboo (UAE):
+But what they said is to take the data from this table for the last five years and not But we got the information.
+
+Hector Palacios:
+That's what I'm not understanding.
+
+Bastian Osorio:
+From the standard extractors, which are not related to this table, because it's just a set table, and the extractor only uses the standard tables to create the...
+
+Hector Palacios:
+So the question is, is the data incomplete? Because I have seen many examples with the data in 2020. So I don't know if it's... Is unreliable?
+
+Bastian Osorio:
+I don't know. And the thing is that this table is definitely not enough, because we are not able to differentiate between the different type of consumptions. And we don't have the equipment. Can you come back to the table, please?
+
+UNKNOWN_SPEAKER:
+So we have the quantity and the amount.
+
+Bastian Osorio:
+That is good. But in the standard table, we have the actual quantity and the request So we're able to track how much for the future it was for the reservation, for example, how much it was actually requested and how much was actually consumed. So, yeah, there's plenty of consumed reservations. But I don't know what's the difference between these two. Maybe, Sagar, can you please share with the team the tables that the extractor is using to build the consumption?
+
+
+
+Bastian Osorio:
+Yeah, so we're we're maybe able to track the
+
+Sagar Vora:
+The difference between these two.
+
+UNKNOWN_SPEAKER:
+Yeah, the standard.
+
+Kunal Sheth (ADNOC Group D&CS):
+Sebastian, it looks like moving in Jagga. I think yesterday only. Send an email to Khalid saying that this is the table which we need to consider for any consumption for price movement everything.
+
+UNKNOWN_SPEAKER:
+If you scroll down.
+
+Kunal Sheth (ADNOC Group D&CS):
+Just open the Murugan's. Here he is clearly mentioned that please ensure that data considered from IBP consumption movement or spend calculation shall be from this SAP custom table has passed all AGC ERP data and the current data. So we should not rely on the SAP default tables.
+
+Patel, Rahul:
+Looks like I think, yeah. And they have also one program.
+
+Kunal Sheth (ADNOC Group D&CS):
+Let's say currently we are in the month of January. So January month, we need to either pull from the standard table or in the month of February, January data will automatically get updated in the custom table. So that is also mentioned by Jagat. So one background job is executed every month to refresh every month.
+
+Bastian Osorio:
+Yeah, I mean, of course, sounds it sounds fair requirement, but the issue we have here is that we already have a logic, which is the extractor. So this is built in. Integration from scratch. And without extractors, although we're able, maybe we're able to create to adjust extractor. I don't even know. I don't know. Maybe you can give us your thought on this. It needs to go with the extractor.
+
+Hector Palacios:
+It needs to be Or else the custom expector needs to be created based on this table.
+
+Sagar Vora:
+But that will also, like need to check ABAP run down so how coding can be done and all that. Can you come back please to the table? Yeah but this will be one time right no no like five years no I think it refreshes every time that's that's what they're saying yeah we can but once we have a fire no no once we have a history and then we are planning to bring from the standard table then we again don't have to go back to this table right no no standard table data is also getting updated every month here.
+
+
+
+Kunal Sheth (ADNOC Group D&CS):
+So, that is the point which Jagga is mentioning.
+
+Sagar Vora:
+So, we not at all consider the standard table. Correct.
+
+Kunal Sheth (ADNOC Group D&CS):
+Only for the current month we need to consider the standard table, rest all we need to pull from this table.
+
+Mudit, Khushboo (UAE):
+Let's just verify this with Vignesh again on Monday, maybe Kunal just to be 100% sure. But yeah, I think have to integrate at least this table.
+
+Bastian Osorio:
+But but just so we cannot at least the way it is right now we cannot integrate this for to forecast because as I said we don't have the equipment and we don't even have the week we just have month
+
+Hector Palacios:
+and in the year and you can correct it and prevent it you don't know yeah you know that you cannot also do the type but that's the big thing that our whole process is correctly presented and here you have no indication of that so this is not the best practice that you you guys are helping us put with us now right so we need to clarify this point yeah let's clarify this also with vignesh yeah yeah so our
+
+Kunal Sheth (ADNOC Group D&CS):
+assumption that this table only maintain the corrective maintenance, not the preventive and turnaround maintenance data.
+
+Bastian Osorio:
+I don't think so. I don't think so, because they also have the general order.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Bastian Osorio:
+But we don't have any segregation here in this table. Yeah, in turnaround.
+
+UNKNOWN_SPEAKER:
+Is it here turnaround?
+
+Mudit, Khushboo (UAE):
+We don't know that as well.
+
+Bastian Osorio:
+we know we don't know and if it's here let's assume it's here how we're able to differentiate right also something we don't know because there's not no mention about order type yeah there is another issue I want to mention, although it's addressed in this table, that we have some approach. We would like to check what is your thought on, we basically, in some cases, we will, for the location definition, in some cases, we will have, well, what we are going to integrate is the MRP area.
+
+ In some cases, the MRP area is the plan and in some other cases the MRP area is the storage location. So we were thinking in a logic of how to determine when to integrate the plan straight and when to integrate the storage location. And there's a table which is MRP area that basically defines every customization for the MRP. So if this table is populated, it means that they're using the storage location.
+
+ If for a specific material in a specific plan, let's say for a specific material in a specific plan, you can find the combination in the March seed, but you cannot find it in this MRP area table. It means that this material runs by default in the MRP, which is plant. So we're thinking to use that MDMA table for MRP area. So we're thinking about to use this logic to define, to integrate basically search location and plant combinations.
+
+ I don't know, what's your thought on this? If you have more knowledge regarding MRP area and customizations.
+
+Kunal Sheth (ADNOC Group D&CS):
+As Vignesh last time mentioned, they have created an MRP area to segregate other storage location which is not MRP relevant. So that is one currently they are using for the planning purpose and similarly the stock handling is also done at that level. At an MRP area. So if a store location is defined as an MRP area, so planning is not happened at a plant level, but that particular store location level.
+
+
+
+Bastian Osorio:
+Yeah. Yeah, here's a yeah, so I summarize it. If product is available in Marcy and not in the MDMA, then the product is at land level. And if product is available in the MDMA, then it's a storage location. But the thing is that this logic needs to be used to basically to go through everything. Because for the transactional data is the same right if you want to integrate a reservation or a or a historical consumption you need to know if you need to integrate a material or sorry a plant or our store location so so for that you have to OK, but I guess you think it's fine, right?
+
+
+
+UNKNOWN_SPEAKER:
+Yeah, Bashir.
+
+Kunal Sheth (ADNOC Group D&CS):
+So I think it is perfectly fine to segregate. Because those stored locations which are not defined as an MRP area, it means for those stored locations, AdLog is currently planning at a plant level. And that we have also checked the MRP parameter maintained in the SORANA.
+
+Bastian Osorio:
+OK. So Kunal, so I think we have to finish the meeting. We have two points there. Check the table that Yaga shared, or Bigness shared, I don't know who shared, or Khalid. And the second point is to confirm, maybe confirm this, I mean, because from a theoretical point of view, this works, but we need to confirm with them if this is the way to do it.
+
+UNKNOWN_SPEAKER:
+Right, right.
+
+Kunal Sheth (ADNOC Group D&CS):
+So I think maybe what we can do If Vignesh is available, so maybe in the second half, we can plan a meeting with Vignesh Khalid for half an hour, just to clarify this point.
+
+Hector Palacios:
+Otherwise we can set up a call on Monday. Cool. Okay, guys, we have a couple of minutes more, especially KPMG.
+
+UNKNOWN_SPEAKER:
+Sure, sure.
+
+Hector Palacios:
+I want to share something. So I was placing an In this file, I'm trying to get a full detail of the information, a field by field of what we need to do. So this is what we already have related to master data, because we have the general status. But then when we go to detail in the fields that we have been provided or that we know that we need to get, this is saved there, right? So many of the information is not confirmed.
+
+ So we don't need to worry about it, because most A lot of this information is just a standard. It's not that they are using it. Probably we can iterate and it's going to be empty, you know? So it's not that important. But the ones that we have identified that really are important, they have their status. So if we are pending a definition, for example, then there are some internal status for us about IVP for development and so on.
+
+ Basically execution. So where we probably will be needing more help is whenever we have something like a spending definition. So you can help us to check in S4 HANA if there is something standard for doing this. Otherwise, we don't know, right? So we have some of those points. There are not many, really. And let me check. First of all, do you have access to this file, guys? I will be sharing with you.
+
+
+
+Sagar Vora:
+I think this is on GoSCM. I think Rocio shared the file, I think, one week back. But that time, this tab was not available.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+We need to check how to integrate this in their file so they can see this as well. So there are a couple of things that right now I'm identifying that we will need probably some help to define because, for example, location ID for us was the storage location. But what we are getting lately is this needs to be the MRP area, right? So I don't know if we are clear on what is the source of that in our side.
+
+ You know then let's stop here but if we don't we will need your help team so where we can get this field or how we can do this transition.
+
+Sagar Vora:
+I think that's what we currently discussed right the question gave the logic but we just need a confirmation from AdNoc and if we are good then we have to confirm I mean implement that logic.
+
+Patel, Rahul:
+What is this confirmation Sorry, I was with Khalid. I could not join the meeting earlier. So it's just something. There should be a standard table in SAP which identifies MRP areas and plants and the MRP areas within plants. And we've already received input from AdNoc that which AGCs has what definition. So if we can segregate AGC-wise logic, then for every AGC, we know whether we are looking at MRP area, which is at plant level, or we're looking at MRP area at SAP.
+
+ Location level and that's the standard definition in S4 HANA.
+
+Hector Palacios:
+So instead of looking at the table let's put a filter and you have different flows that's what I understand.
+
+Patel, Rahul:
+Yeah so we also need to look at the table but after table we need to put filter and then make sure that based upon the filter which AdNoc has given in terms of which agency will follow which supply network planning we can can differentiate this table. The table in Asperhana should be in line with that logic as well.
+
+UNKNOWN_SPEAKER:
+That one's clear, Rahul. Thank you for that.
+
+Hector Palacios:
+Then it's one really important field for us that is inventory holding policy, that is telling you if you stock or not that material in certain part. Because it can be flowing there. But if it is not a stocking, then this is important that we don't generate a stock on hand or a stock projection for that item in this location. So this should also be in a standard field. In this tractor, we don't have a standard mapping here.
+
+ But I know that Vignesh shared the information with this plug so that's something that we will eventually need for supply planning.
+
+Patel, Rahul:
+The way I understand this Hector is that this is happening through MRP type today in their system which means whenever they are creating a material they check this confirmation from user whether this is going to be a stock material which means you would non-stock metal which means I don't need to plan any stock for this material unless you raise a reservation, we should initiate the procurement process.
+
+ So that's MRP type PD. The challenge here is that the moment we start using IBP, the MRP type will change to X0. So we will lose this information and I don't know if there is any other field in SAP where this is maintained. So there are two ways I think we can do it and for sure we can take this input for us to check with the team if there is any better way but if we do not have any better way we will have to create a custom table on IPP side to store this information what was the initial definition whether it was PD or not PD so that this definition can continue but the the problem with this is that this definition will remain or to be made will always to be maintained on IPP side which I don't think would be a best practice but I don't see any different way any other way of doing it.
+
+
+
+Hector Palacios:
+Okay, do you see any complication of creating a table on their side on S4 HANA?
+
+Patel, Rahul:
+Table on S4 HANA would lead to a development in S4 HANA and it should not be a table but it should be an enhancement to the material master which means someone has to maintain a material master with this field.
+
+Hector Palacios:
+Rahul is that whoever is maintaining that today, is that person going to be an IVP directly?
+
+Patel, Rahul:
+I think that person would be an IVP because inventory controllers, so as part of their current new material creation process, when the material creation request comes to him, the MDG request comes to the inventory controller, they talk to the person who is raising this request and up all these parameters like the definition of MRP type and all this. So, this is part of their new metal creation process.
+
+ Now, since we are changing their new metal creation process with the reference metal process whatever we are trying to bring in, we cannot change this process of MDG of identifying whether the metal is a stock material or non-stock metal. Now, the only The only point remains is, where do you capture this information? Today, this was captured as MRP type in S4 HANA. Tomorrow, if we add a custom table on SAP or a custom table in IBP, then that field becomes the point where this will get captured.
+
+ Now, doing this in MDG helps them maintain this data automatically in S4 HANA. But doing with IBP, this process will become manual.
+
+Hector Palacios:
+Well, I don't see a different way unless I know what these are, what you're saying is that the material level or the material location there, because if, if it isn't at your Marsy table, Marsy table. Okay. Okay. That's good. Um, but we need to have that information either way. We will need to have it is because if you have two locations probably like this one location one that then is feeding location two this is not going to let me agent two um and you can only store here you know and not here what we want to avoid is ivp generating and stock on hand here yeah I I got the point I understand it in the critical input for planning because this will first point of planning whether
+
+Patel, Rahul:
+Should even run forecast or do ROP or anything for this material right. You can keep this on us and we'll talk to Vignesh on Monday. He's not available today if he would have been available I would have closed this point immediately but he's not here in office today so let me talk to him on Monday and we'll try to close this point.
+
+Hector Palacios:
+Okay perfect I will add it to the open list. All right and related to let's say let's see let's see our unit this is for the key figures so here I seem that I am already duplicating something yes the moment this is the moving average price this one that yesterday you were providing us with that information on kush okay can you share us also the the logic or you already did it, I think.
+
+UNKNOWN_SPEAKER:
+Can you confirm? You mean the logic for the moving average price?
+
+Mudit, Khushboo (UAE):
+Yes. Yeah, OK. But again, this is also a standard table, MBEW. Yeah, MBEW table only. You'll have a field for moving average price in MBEW. Yeah, so in the Excel that I shared with you, There is a tab. Yes, correct. There is a tab that I added with an extract of MBEW for the sample materials that you listed.
+
+UNKNOWN_SPEAKER:
+Is stable.
+
+Patel, Rahul:
+The field would be something else, right? You also added field also in that? Yeah, I think I added.
+
+Mudit, Khushboo (UAE):
+I'll double check, but I think I mentioned it.
+
+Hector Palacios:
+If we get to the table, it will be easy to find the PLN. Get the technical name. Yes.
+
+Patel, Rahul:
+I think it's a good practice, Khushboo, that every time a GoSCM team requests data from us, we also provide them the table name and field name so that that becomes part of the extractor. I think that's a good practice.
+
+Mudit, Khushboo (UAE):
+Yeah, I did the field name, or I probably did a VLOOKUP. I'll just double check.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+If not, then let's make sure that every time the data request comes for any data from S4 HANA, we should be able to provide them not only data, but the technical details as well. So that if they decide to incorporate, they know the details already.
+
+UNKNOWN_SPEAKER:
+Yep. OK.
+
+Hector Palacios:
+Thank you, guys. And then material reservation, then the IES data, that's something that we can check internally. Historical consumption value. They say that we had a table, but is the same table that you were sharing, Cushma, the one before? Because I was seeing that historical consumption value as well.
+
+Patel, Rahul:
+So Hector, help me here.
+
+Hector Palacios:
+What do you mean by historical consumption value? It's the input for the ABC segmentation.
+
+Patel, Rahul:
+All right, but then what is this value exactly?
+
+Hector Palacios:
+Yes, that is kind of the price by the volume of what you're buying.
+
+Patel, Rahul:
+Yeah, p times q. So the material reservation table should have this as well. So whenever you consume something in SAP, automatically SAP calculates the consumption value of that, and the quantity and the rate multiplied are part of the consumption table. The consumption you're taking from which table? I hope you're taking from MATLAB table or metal reservation table. So I just want to make sure we understand one thing about consumption.
+
+ There are two ways you can identify consumption in SAP.
+
+Hector Palacios:
+Yeah, consumption is for the standard structure. I don't know, Sagarik, if it is for us clear, what is the source of that information?
+
+Sagar Vora:
+I think it is something from RASB table. It's extractor, but extractor is using.
+
+Patel, Rahul:
+It's RASB, right? Which means you have, against reservation, you are checking which reservation has a confirmed quantity. All right, if that's the case, we just need to check what all different movement types are highlighted because, all right, Sagar, once you are able to extract the data of consumption, is it possible for us to review the data as well? So that if there is anything...
+
+Mudit, Khushboo (UAE):
+Rahul, I also highlighted the custom table that they shared with us this morning.
+
+Patel, Rahul:
+Yeah, yeah, that was one more thing. Yeah, I forgot because that was...
+
+Kunal Sheth (ADNOC Group D&CS):
+And Khushboo, in that custom table, consumption value is already there.
+
+UNKNOWN_SPEAKER:
+In that table.
+
+Hector Palacios:
+Kunal, you say the same. Yeah, the point with that table, Raful is not separated by priority, correct you?
+
+Bastian Osorio:
+He doesn't have the equipment as well.
+
+UNKNOWN_SPEAKER:
+Should I share my screen again?
+
+Mudit, Khushboo (UAE):
+I have it open.
+
+Patel, Rahul:
+Yeah, please. Yeah, if you can quickly, yeah. Khushboo, can we compare Like this comes up with the custom table. Can we take one example and compare with standard table? What is different? What different they are doing in the custom table versus a standard table?
+
+Hector Palacios:
+I think they are just grouping at material, a monthly level. Material and plant, they have the MRP plant.
+
+Patel, Rahul:
+That's fine, but then. Just take one material. For just for the benefit of understanding and for the same material for the same period see what is the standard table. I think this this table only summarizes the requirement on monthly bucket so they have this month so I think we can talk to Vignesh and explain that we should not be using this and then get it confirmed through the team.
+
+Mudit, Khushboo (UAE):
+Can someone remind me the table name for reservations?
+
+UNKNOWN_SPEAKER:
+RESB. Sorry?
+
+Patel, Rahul:
+RESB.
+
+Patel, Rahul:
+So, can you go to this, yeah, to the custom table? Just run the custom table with this just material. Execute the table with just this one material as input. So that let's compare material in the material field above, below, above the, yeah. All right. I think they are taking.
+
+UNKNOWN_SPEAKER:
+Requirement quantity withdrawn quantity 3.
+
+Patel, Rahul:
+The value is also here. The currency is USD here. Are they changing the currency to something else?
+
+UNKNOWN_SPEAKER:
+In the custom table.
+
+Hector Palacios:
+Do they work at USD?
+
+Mudit, Khushboo (UAE):
+they were going to work out the currency so I noticed they use at a company level they use the company code currency and that group level you they use their own ad so that the company level is USD yes
+
+Patel, Rahul:
+okay can you also check mat-doc table for this material let's take another example where we have multiple entries so that we can like Okay, there are three.
+
+Patel, Rahul:
+and movement type let's check double click on any of the record or movement type I think what's the size by moment type spelling of moment BWRT yeah movement type 261 BWRT consumption against work order 261 means Yes.
+
+UNKNOWN_SPEAKER:
+And 201?
+
+Patel, Rahul:
+201 means cost center. Close this. And manual reservation? Manual reservation is 201. Scroll to the right and see moment as for all the three transactions I think the first one is only relevant for us looks like but why do I do have that Oh 2023 2023 what did they do why they have this two moments procurement the records receipt happened in 2023 and it's scroll to the right, it must be 101. Movement type, if you can see where if there is movement type.
+
+ Yeah, 105, 103. These are GR movements and 261 is consumption. So only one consumption. So this data is matching. The only thing which is happening is, can we check another model which has multiple rows? I doubt they are only, in the custom table, aggregating the value on a monthly level, which means that we will lose the important context between.
+
+Hector Palacios:
+What do you want to validate, if we are losing information here for sure, or if the information is matching completely?
+
+Patel, Rahul:
+I just want to make sure that if information is matching completely, then we'll tell them that we don't want to use your table you are aggregating I just want to ensure there is nothing additional which is other than aggregation happening in this yeah this is standard yeah so if there is if there is nothing more value added in custom okay this is the material right you're talking is this one metal only yeah 701 700 that's a good material stock material take this as an example, it has multiple entries.
+
+ So here we can see there are 51 documents, which is 51 consumption moments. So here what you will see is in this table, this is standard metal document table, so it captures all the moments. It has the quantities, it has the work order, it has the amount. So if you see local currency amount lc so you'll see what is the value of the transaction and also have quantity. Rahul, just one question for Sagar.
+
+
+
+Bastian Osorio:
+Is this table used as input for the extractor Sagar?
+
+Sagar Vora:
+No, this table is not used as input for extractor.
+
+Patel, Rahul:
+Now can you compare the total quantity here? Can you check the total quantity? Can you put on the quantity. Yeah. The total quantity is.
+
+UNKNOWN_SPEAKER:
+502.
+
+Patel, Rahul:
+Now go to the custom table. Put this matterless filter only. Remove here, remove here. You're not restricting here in MATLAB. So the quantity, put up a sum for quantity. There are two quantity fields, right?
+
+Patel, Rahul:
+What is the next quantity field, sum of next quantity field? Quantity received, quantity consumed. So here they're consuming 1000 quantity. And can you go to RASB?
+
+Patel, Rahul:
+Look at the required quantity. Required quantity is quantity required and quantity withdrawn. Go to the Sum of quantity withdrawn.
+
+Kunal Sheth (ADNOC Group D&CS):
+Rahul, there must be some business reason for creating this custom table, so I think let us clarify with Khalid Vignesh.
+
+Patel, Rahul:
+Alright, so Khusbu, I think there is some difference between what's happening there versus what we are doing. So if you see ARMR, that's automatic and manual reservation. It's a requirement type. I think something which is coming manually versus something which is coming from system. There is an indicator in reservation whether says whether the reservation is manual or automatic for a work order. So 560, 560 is matching with MATDOC.
+
+ Can you go to MATDOC?
+
+UNKNOWN_SPEAKER:
+It's 560 only, right?
+
+Patel, Rahul:
+502 because there is deletion. Go back to reservation table and filter out deleted. Go back and in the selection, not equal to deleted. Yeah. Just put up a sum again. 535, so something is wrong. We need to align which quantities to be taken. Hector, let's not spend further time. We'll take this interval and confirm like what should be the logic for consumption.
+
+Kunal Sheth (ADNOC Group D&CS):
+Rahul, one is logic part and second is all the required inputs which Bashir and Hector is looking for that is not, we are getting from the custom table like preventive versus corrective. That detail is missing here.
+
+Patel, Rahul:
+Yeah, so I think let's take this action on us to align with the AdNoc team so that it is clear to the team on making sure they're extracting right information.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Mudit, Khushboo (UAE):
+And there's also a question about equipment, right? We can check that as well.
+
+Patel, Rahul:
+Sagar, are you confirming that the standard extractors are looking at rsb table only so there are three tables ufk afko and rsb so essentially what uh standard extractor is doing is going to reservation it can be vice versa it can you can start with work order check the reservation number and from reservation number come to actual consumption. Or you can start with the reservation, get work order number, and identify work order type.
+
+ So essentially, what is happening is work order type differentiation happens with work order field on reservation. And that's how you know what is corrective versus preventive actual consumption.
+
+Sagar Vora:
+Yeah, that's the logic applied in standard.
+
+Patel, Rahul:
+So I think we should follow standard logic and not follow the custom table. And I'm pretty sure the standard logic will have all the required conditions in terms of what is to be considered, what is valid consumption, and what is not a valid consumption. Because the way we saw this, the deleted item and everything may also not show up on standard. Is there any way for us to run standard extractor for one material and see the outcome in the staging tables of S for Anna.
+
+
+
+Sagar Vora:
+Yeah, I can give you the T code.
+
+Patel, Rahul:
+You can execute that and you can edit it. So let's let's compare this internally that what standard extractor is extracting volume and compare this with standard table and compare this with the custom table and then we'll take it with the ignition team.
+
+UNKNOWN_SPEAKER:
+OK, alright.
+
+Patel, Rahul:
+Can you also give me the table name? Yeah, I will give you the extracted table. So what happens, Khushbu, the moment add-on is installed, custom IBP-specific staging tables are created on S4 on a site. So what extractor does is, it extracts the data from standard tables and puts the data in staging table. And from the staging table, data moves from SAP to IBP. So which means we'll also get to know this staging table what is the value what is the field so maybe we don't need to run you must have run the extractor already right okay yes you just need to pass the filter and just validate the data yeah ibp table of on s4 on a site yes all right uh we can go back to hector and Bastián your list it put the action on us to resolve this for you?
+
+
+
+Hector Palacios:
+I think that is really Rahul. The other point is the reservations but I think that we have been discussing that internally so let us check what is our understanding and if we need any help we can go back to you.
+
+Patel, Rahul:
+All right, I think your reservation should be getting through this RESP table only which is standard table only so I don't think you need to do If you are referring to consumption table, RESB table, it gives both the reservation and the quantities, open reservation as well as closed reservation.
+
+Bastian Osorio:
+Now, that's what we have in the extractor as well, requested quantity and actual quantity.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios:
+So, I think with that, we get to know what is the open reservation. Yeah, the point, Rahul, is that we don't get the equipment always there. In the reservation? Yes. If we don't get the equipment, the most affected is chemicals that they were requesting the cost center information, so that is related to the equipment or function allocation.
+
+Patel, Rahul:
+No, no, so I think we need to clarify here, the chemicals, the consumption will not happen through work order, the consumption will always happen to manual derivation, 201 moment, right? So the moment you use manual reservation, the reservation account assignment category is always cost center for manual.
+
+Hector Palacios:
+So the cost center information is right there or we need to join?
+
+Patel, Rahul:
+No, it should be right there in the RSV table. Khusbu, can you share screen again and go to RSV table?
+
+UNKNOWN_SPEAKER:
+There should be cost center field.
+
+Patel, Rahul:
+OK. So you don't need to and once you know the cost center now chemicals consumption is not may not be directly always linked to equipment. Consumption should be linked to equipment not chemicals because you are consuming chemicals to make sure the plant is operational.
+
+Hector Palacios:
+Okay so they're gonna changes say that for chemicals should be based on the reservations but for MRO should be based on work orders?
+
+UNKNOWN_SPEAKER:
+Yes. Exactly.
+
+Bastian Osorio:
+What do we have in the extractor? Work orders probably must be.
+
+Hector Palacios:
+Yeah because we have the PM01, PM02 and all that.
+
+Patel, Rahul:
+Yeah for consumption you don't need for chemical consumption you don't need to go to work order level you just need to look at reservation the RASB table. Cost center would be part of this. Control, search for cost center. No, it's not. It would be. I searched. Control F, cost.
+
+UNKNOWN_SPEAKER:
+Nothing showing up.
+
+Patel, Rahul:
+No. Can you open any reservation? MR23 something. But it has to be manual reservation. Just wait. Look at if there is an indicator for manual reservation, reservation type. What is the fourth or fifth column here? Yeah, M something with an X. No movement allowed. Next to it and next to it. Final issue, missing parts. Okay, double click on it. Any reservation and you'll see there would be a field which identifies reservation type.
+
+
+
+UNKNOWN_SPEAKER:
+No, not that I can see.
+
+Patel, Rahul:
+Go to requirement type and drop down, take a drop down requirement type. Is it popping up anything? No, drop down is not working. There are only two values. Do one thing, go to MR25 transaction directly. And put the same material. MR25.
+
+Patel, Rahul:
+I don't think it's it's the transaction 26 27 try 27 no 24 put mr00 now so go to Oh, am I reservation transaction?
+
+UNKNOWN_SPEAKER:
+MB23? I think MB, yeah.
+
+Patel, Rahul:
+I got lost between MB and MR. So here, if you see order cost center or order, either two. So when it is 261, right, moment type, it is always cost center. And when it is 201, it is always cost center. Center so either you can do it by cost center by order so probably movement type is there in the reservation table filter by 201 you'll find cost center go to the reservation table or ASB filter by movement type yeah put 201 201 only 260 unit 201 all right take this example open this reservation take the reservation number go to mr 23 sorry not mr mb I am for some reason it's stuck as mr in my mind mind.
+
+ Yes, you see cost center is available. So this is the point I was trying to make Hector that for every. Yeah, but not in the table. We have to figure out how to get this cost center from the other version. That's something we can help. We have to link it to another table. We can take out this logic. How this cost center is allocated, but the reservation has the cost center. I think the cost center for the reservation, you'll have to figure out the movement type 201 MacDock and from MacDock you'll get a call center.
+
+ Pass on this reservation number to MacDock. Move and type this here. Reservation. Do you have the reservation? Yeah. This execute. You have so many. I need to jump, but at the end we need to figure out how to get the cost center.
+
+Hector Palacios:
+The information is available, just we need to figure out how, right? Yeah, yes. So, okay, I will leave this task on your side then. Yes. You know that you are helping us with this and that's it. I think that's the main point that we were missing.
+
+Patel, Rahul:
+I have a couple of points before you jump. I don't want to take more time.
+
+Hector Palacios:
+Can we stay after?
+
+Patel, Rahul:
+Yeah, for sure we should stay after a little bit. I'll only take a minute. There is a request from AdNoc. Murugan is pushing us saying every time a forecast is approved it should create a reservation in S4 HANA.
+
+Hector Palacios:
+So that they are seeking on if we create a corrective forecast then that portion should also have a reservation on S4 HANA.
+
+Patel, Rahul:
+Yes, because then reservation will be created the reservation will go to approval. It will trigger the so I think this is this can be also linked with the request which is like blocking the what we call funds on S4 on a side. So if we are able to create reservation the reservation can go through approval process and it can block the funds. So let's talk about it after hurdle.
+
+Hector Palacios:
+OK, let's talk about that. Yeah, yes, see you.
+
+UNKNOWN_SPEAKER:
+Bye bye bye Sagar.
+
+Patel, Rahul:
+Yes. Let's make sure that you are interacting with us for anything which is don't wait for any clarity you need on on interface side from S4 Anna. Yeah, sure. Alright, we want to make sure that as soon as possible we are able to grid data on IBP side, there are some critical insights which we would like to drive on the data, and these insights are driving the decisions
+
+UNKNOWN_SPEAKER:
+on the design. All right.
+
+Patel, Rahul:
+Vivek, sorry I could not join earlier, so did you guys talk about the supply network and the open point and supply network?
+
+Vivekanand Gajula:
+No, not yet.
+
+Patel, Rahul:
+So then let's continue this after the hurdle. I think team would be available and then why don't you go ahead and plan this meeting after the hurdle so that. We all can be aligned. And continue this discussion, including the supply network.
+
+UNKNOWN_SPEAKER:
+Yeah, sure.
+
+Patel, Rahul:
+Anything from anyone else?
+
+UNKNOWN_SPEAKER:
+Just one thing, Rahul.
+
+Vivekanand Gajula:
+If you remember last week, you were talking about one requirement where AdNoc wants to have this MR approval process on the IBP side. So you were saying that if the MR is greater than the max stock level, then by default, it shouldn't we considered you know during supply planning okay until and unless you know it is approved yeah correct so so you
+
+Patel, Rahul:
+were about to ask them you know what happens in cases you know where max stock level is zero where max stock level is zero which means everything is based on approved reservation only which means you don't you don't want to keep stock like if the max stock is zero there is no stock expected in sap right no but you have rop right you have rop for that rop like rop can if max if there is rop then max
+
+Vivekanand Gajula:
+stock cannot be zero right max stock will always be more than rop no no they have two scenarios no in in one scenario they just have rop and their replenishment so you know ROP and there is another scenario where
+
+Patel, Rahul:
+they have ROP as well as max talk so if there is no max talk you consider ROP as the trigger okay so wherever there is no max talk then there is no max talk you replenish always to the ROP right so if you let's look at a theoretical example if you have 100 quantity of reservation the ROP is 50 system will procure 100 even because it's more than ROP right yeah but if you don't have stock then system will procure 150 yeah so in this case reservation is more than ROP if there is no reservation if there is no stock system will procure only 50 right yeah in that case system Yeah, so I think we should then align the logic to ROP.
+
+ If the reservation is trying to bring more than ROP.
+
+Vivekanand Gajula:
+Then you don't. OK, then then I think in that case ROP should be considered as what you're saying, right?
+
+UNKNOWN_SPEAKER:
+Yeah, Max. OK.
+
+Patel, Rahul:
+So we don't want to showcase this example at this point of time. This is one of the requests they wanted to check we are still aligning on the process change so as of now from a supply planning perspective we should continue on working on the standard process we've already aligned the only thing which you need to consider Vivek is in your definition uh did we share you the custom table where approvals of the reservations are stored no no at least I don't have with me with whom you have This was shared, right?
+
+ Anyone remembers if we have shared this table with the team?
+
+UNKNOWN_SPEAKER:
+Custom table approval. Let me check.
+
+Patel, Rahul:
+This was received from Vignesh, I guess. Vignesh, Vignesh. So essentially, all the reservation should pass to this custom table and check whether the approved is there. And only if it is approved, it should trigger PR creation. Have a forecast but the PR creation is a function of approved reservation okay so Vignesha Vignesha but in reality MR approval will take place in airport or in So we are trying to push to take out the MR process completely.
+
+ So the discussion is a process. So unless that discussion is approved, we cannot say that it will happen. So we should assume that it will not happen and we'll continue building the solution based upon the current fact where MR is approved.
+
+UNKNOWN_SPEAKER:
+OK. All right. Fine.
+
+Patel, Rahul:
+All right, I'll confirm you the table. I don't have that. I thought Khalid shared with me, but I don't see this. So I'll check with Khalid and confirm once again.
+
+UNKNOWN_SPEAKER:
+The table for custom.
+
+Patel, Rahul:
+Table for MR approval. OK. All right, Kunal and
+
+Vivekanand Gajula:
+Could you can you just stay back on the call?
+
+Patel, Rahul:
+OK, thank you guys. I'm talking about. So I have documented the minutes of the letter. I have documented the minutes of our conversation with the ask my team.
+
+UNKNOWN_SPEAKER:
+Bye!
+
