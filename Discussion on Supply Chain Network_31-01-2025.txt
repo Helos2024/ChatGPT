@@ -1,0 +1,571 @@
+Vivekanand Gajula:
+Hi Vivek, hi everyone. Hi everyone.
+
+Mudit, Khushboo (UAE):
+Should we start?
+
+Vivekanand Gajula:
+I've asked it out to join as well. Yeah, we can start.
+
+UNKNOWN_SPEAKER:
+You want to start with it?
+
+Mudit, Khushboo (UAE):
+You said you had some questions.
+
+Vivekanand Gajula:
+So I went through the you know, I went through the technical details you know that you have put in the file right so I was just trying to connect the dots you know like how do we build the logic I was just checking you know on that front do you have that file open Yes.
+
+UNKNOWN_SPEAKER:
+Can you see? Yeah.
+
+Vivekanand Gajula:
+Now now if we start with the very first scenario right, which is intra company that is planned to plant within AGC. Uh, what we're saying is a document category is OK. You know if then under document type we have ub so so anything that is ub is plant to plant is what we are saying yes what I need to check here is and that's something I plan to discuss with
+
+Mudit, Khushboo (UAE):
+vignesh I when I was looking at the stock transport orders I noticed there are some where they have done just storage location to storage location under the same document type and additionally I also noticed they are posting transfer they have transactions on transfer postings with 311 313 and 315 movement types so I need to check with Vignesh if we capture both the data for storage location to storage location and then if that's the case how do we filter and if it's just plan to plan then yes it's definitely just document type UB there is no Z document type for plant to plant correct no no they have z document types but it's not applicable for mrp okay and how do we link this you know to a movement type I mean so for movement type you have if you want to look at the movement types in the purchase orders you have ekb table the history where you get
+
+Vivekanand Gajula:
+all you get order history and the movement types I think I was actually checking you know ekb so in ekb I am not able to see you know full set of data so it doesn't reflect the entire you know moments that we can see in ekb what data are you specifically looking for I mean ekb I was actually checking you know for some random you know locations okay so I barely you know found found any data you know in that no but I was able to see a lot of data there is data but I was just checking you know for for the locations you know which we got from Vignesh.
+
+ If you just click on number of entries there is a lot of data but out of that what is relevant for us I was just checking you know for that. Do you have any specific material or something that you were checking? One second. I have one you know, I think I found this, you know, couple of weeks ago. Can you check this STO? 691446. Again, this is not blank, but this is S log to S log, you know, within the same blank.
+
+
+
+Vivekanand Gajula:
+As I was having the STO number, so I thought of checking this, you know, in their table. It seems to be, it's open, they have not posted. Correct, so they didn't do any movements, you know, against this. But if we have such cases, then we kind of, you know, miss out on something, right?
+
+Mudit, Khushboo (UAE):
+Yes, but whenever they do the whenever they do the GR and goods issue it it will reflect in EKB is what I'm saying that will capture the history.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sorry guys, we are with a double mic here. Just a question. So we are checking plant to plant, right?
+
+Vivekanand Gajula:
+Yeah, plant to plant.
+
+Mudit, Khushboo (UAE):
+So you see here, I have some examples. Can you go to the right side?
+
+Vivekanand Gajula:
+Let's check what is the plant and what is the material. Yeah. That's probably, you know.
+
+Mudit, Khushboo (UAE):
+Oh, the plan and the material.
+
+Vivekanand Gajula:
+Yeah, plant and material is okay. Guys, a question here.
+
+Conference Room (Hector Palacios) - Speaker 1:
+So we are taking plant to plant and we are thinking on creating the lanes using the STOs. Am I correct? Yeah, yeah. What about, because the problem is that that is totally constrained to what happens what is what we need to propose, you know, the future, what it doesn't exist. So how we can know which lanes are valid, which are the possible combinations, because today maybe they have possible transfers that they are not doing because they don't have a IVP.
+
+
+
+Patel, Rahul:
+I don't think they'll be able to help us. They are expecting something from us. They believe that a tool has capability to look at all possible combination. So this is something we'll have to figure out technically how without reaching to AdNoc to be able to define like look at inventory at different levels and optimize it. I thought the proposal from you said your detector was to not define all the lanes so that we reduce data but still be able to do it right that's what you but then okay okay But if the idea is
+
+Conference Room (Hector Palacios) - Speaker 1:
+to provide, we need to limit this in some sense, because otherwise we are going to send data from Abu Dhabi to China, you know? So what is the nonsensical scope and what is the sensical scope? That is something that we will need from the team, because otherwise we are going to create all the possible combinations. Then why are we checking the SDOs in the first place, if we need to check all of them?
+
+ Right? It doesn't make sense. So we need to define what is the scope of what makes sense. What are the possible combinations? They need to tell us, at least at high level, they can say transfer between UAE is possible. Transfer to UAE to Japan is possible. I don't know. But I've seen that they have many locations, and I don't know if every combination is a possibility. If it is a possibility, then let's think how we create the logic but we are not depending on these STOs in this scenario it doesn't make sense then.
+
+
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yeah and here we have experience here it's not possible of we coming up with this definition they are the expert on the business and that which movements are possible maybe even if there's two plants very nearby still maybe there's there's a factor, I don't know, maybe some bureaucracy, I have no idea, that makes it impossible to make a stock transfer. So this information should come from them, at least on a high level.
+
+
+
+Patel, Rahul:
+So based upon my understanding, they don't think they will be able to provide this information. They said it will depend on the system to propose and take decision after the system proposes whether to do it or not. I can go back the team ask again if we do it.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Maybe Rahul, maybe because they think that we need to provide like plant by plant combination, but if we say no, I see this is high level. Tell me country by country. If I do transfer inside the UAE, that's perfect. If I do transfer from the UAE to another location that is far away, let me know if that is possible or not, because the system otherwise will propose whatever.
+
+Patel, Rahul:
+All right, I'll We can take this as one of the discussions with the team to see if we can get additional level of confirmation, but we still need to integrate this EKB in purchase order table because we need to know OpenSTOs and OpenTOs, OpenTransactions, right? So this table will give us the details of At least we know that these are valid.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Patel, Rahul:
+We may not be able to utilize this. For defining transport link, but we need the this table to identify the transactions.
+
+Vivekanand Gajula:
+And the purchase orders that that's correct, that's correct. This is an important one for us. One quick question, so this EKB table. Shows both open as well as closed ones or only the closed ones or the other way around only the closed ones and also partial ones if for example 10 quantities were ordered on a line item and they've only transferred
+
+Mudit, Khushboo (UAE):
+five it will come up in this table but if they have not posted the other five it will not show up in this table it basically only captures is the history the transactions that are posted yeah so this this
+
+Vivekanand Gajula:
+represents only the closed orders right yes closed and partial yes but then I think for open ones we cannot refer to this table I guess yeah is that correct yes but for open you said EKKO and EKPO. Yeah, so like in sales orders we have VW table where you have all the open quantities. So in case of
+
+Mudit, Khushboo (UAE):
+Purchase order will have to refer EKKO and EKPO. Yes, correct. You also have in EKPO you will get If it's if the goods movement is completed, the delivery is checked normally. So this is also something you'll get an EKPO. Along with partial delivery, it shows or only for complete it shows only after it's completed. I can give you the field names of both of those so what I was doing was I was also I had also taken out some extracts so once I upload all of them on the SharePoint and highlight the fields
+
+UNKNOWN_SPEAKER:
+which you can pick up. Just a question.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sorry, I wasn't completely following, but this is related to the lead time you're discussing.
+
+Mudit, Khushboo (UAE):
+No, just the movement types, just the transactions that are posted.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Okay, because I'm also checking the lead times. Is this information that we can use for the historical lead time?
+
+Mudit, Khushboo (UAE):
+For historical lead time?
+
+UNKNOWN_SPEAKER:
+But I thought between STOs the lead time is going to be zero, no?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yeah, probably. Yeah, no, you're right, you're right.
+
+Vivekanand Gajula:
+I think maybe EKB where it can help is it covers both, you know, STOs as well as POs. So it can at least help in giving us the historical lead time for purchase orders, you know, which is between vendor and plant.
+
+Patel, Rahul:
+You can calculate for anything, even if it is if there is a lead time coming in, it will give you a right estimate. But yeah, technically, you should be able to use the same tables to calculate lead times for any procurement document, including STO. Right. So, at least from the POs, we will need it.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I remember that in the sessions, the team said that plant to plant is, at least on the UAE, should be zero. And now we come back to the question is, I think that I've seen some locations that are far outside. This is a big company, right? So maybe they have in other parts of the world, they have also plans. So if we do an STO from Abu Dhabi to there, we have a considerable lead time that we need to consider.
+
+
+
+UNKNOWN_SPEAKER:
+Yeah. Thank you.
+
+Vivekanand Gajula:
+So then how do we now proceed, you know, and let your network. So, so, uh, Rahul, uh, I mean, you guys are going to reach out to AdNoc business and, uh, have a discussion with them.
+
+Fakhouri, Mohamad:
+And then, you know, we kind of, uh, start, you know, building the rules. Good. But since LNS is out of scope, wouldn't this make it easier?
+
+UNKNOWN_SPEAKER:
+Everything is within UAE? Can you repeat more?
+
+Conference Room (Hector Palacios) - Speaker 1:
+I didn't catch it.
+
+Fakhouri, Mohamad:
+So ad-hoc LNS is out of scope. Yes. Terms of distribution, I'm assuming everything would be within UAE.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Is it that way? Don't we have some, don't we have some wells very far away as well? Or is that all of That is basically LNS.
+
+Fakhouri, Mohamad:
+I didn't look at the plant data, but are there like locations outside of UAE?
+
+Mudit, Khushboo (UAE):
+So what I have on my screen is all the purchase orders, sorry, stock transport orders plan to plant slash storage location to storage location now all of them at least are within UAE because these were the company codes within
+
+Patel, Rahul:
+which they did the stock transfers okay that's also I'll also check intercompany I think that's where this question is more valid maybe yeah but all the company codes are within UAE the intercompany Maybe if we check offshore, that is
+
+Conference Room (Hector Palacios) - Speaker 1:
+the best candidate to find out if they have something really far away.
+
+UNKNOWN_SPEAKER:
+Offshore? Offshore, yes.
+
+Conference Room (Hector Palacios) - Speaker 1:
+how to identify it to be honest.
+
+Mudit, Khushboo (UAE):
+I don't know if you have the description right there.
+
+UNKNOWN_SPEAKER:
+Let me give it a try.
+
+Patel, Rahul:
+Addresses like countries which are there in the address code of plant. Yeah, we need to check plants and their addresses.
+
+UNKNOWN_SPEAKER:
+Probably T001W would be plant.
+
+Mudit, Khushboo (UAE):
+Offshore rate.
+
+Patel, Rahul:
+Anything like look at all the plants where the plants are there. Just go to T001W and see which is the country of the plant code.
+
+Conference Room (Hector Palacios) - Speaker 1:
+At least it is telling me that basically Adnog is focused on UAE.
+
+Fakhouri, Mohamad:
+Yeah, I mean that's also that would be my assumption. If it's outside of UAE, then it's just...
+
+Conference Room (Hector Palacios) - Speaker 1:
+I read somewhere, I know why, I know why, because I think that some suppliers are from China, I remember that we saw some data from China in Chinese letters, you know, in kanjis, and was because of that, it's the supplier, not our plants.
+
+Fakhouri, Mohamad:
+Yeah, everything is from UAE. But they're external procurement, so it's fine.
+
+Patel, Rahul:
+Yes, that is fine. Can you take out the filter and put for all the plants? Let's see all the plant codes.
+
+UNKNOWN_SPEAKER:
+Is there any plant code which is beyond you? And if there is, what are those plants?
+
+Patel, Rahul:
+Put filter not equal to 8. How many plants are there which are not equal to 8? Hardly 15. You can put on the
+
+UNKNOWN_SPEAKER:
+43. Yeah, 43 and what are those?
+
+Patel, Rahul:
+Let's look at the name of the plant. There is Japan.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I knew I some something I read.
+
+UNKNOWN_SPEAKER:
+But
+
+Conference Room (Hector Palacios) - Speaker 1:
+Is that something that? It's a logistic center.
+
+Patel, Rahul:
+I don't think so. We'll have to check if any of these are in our scope. I don't think so these plants would be in our scope. Can you check at what are the company code for these plants?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Probably for distribution of the oil, the final product maybe.
+
+UNKNOWN_SPEAKER:
+I think that should be.
+
+Fakhouri, Mohamad:
+Yeah.
+
+Patel, Rahul:
+We should probably get the company code for You can use valuation key as company code No, but you don't get that in the plan table, right? You can get it on company code so you can take the valuation area as you can pass on valuation as company code.
+
+Mudit, Khushboo (UAE):
+I doubt that. Work, but let me try.
+
+Patel, Rahul:
+Yeah, the valuation area you can copy everything. And this is a scampi code. Most of them are booze and not not, but I and that's what I also felt like the brood is something. The first one is standard we need to ignore the two company codes Arcus Egypt I don't think so 57 this company codes are in our scope right yeah I don't think so and the Buruj we have only one company code and one location in our scope rest of them are Buruj because Buruj has a business upstream business where it it sells lot of products to the different countries it's that's why Buruj is different company code because it has this international business so I think we can conclude everything is in uae yeah probably this is related to finished product yeah finished products of buruj okay rks engineering egypt I don't think Arcus any anything related to Arcus is in our scope all right let's go back to the delaying discussion then now now that company countries are out of scope we still need to have everything like theoretically everything would be possible to transfer between you you know yeah since also yeah we it will need to be all for all basically yeah all for also How do you think you'll be able to manage?
+
+ Is there a solution in IPP for all?
+
+Conference Room (Hector Palacios) - Speaker 1:
+I don't know. We need to ask to Sagar how because at the end it's not an IP. We need to create that supply chain network on the structure. That's the only way.
+
+Patel, Rahul:
+Do you think you can check with SAP if what is the recommendation if it is all for all?
+
+Conference Room (Hector Palacios) - Speaker 1:
+for them is just they create a supply chain network and even when you have multi-source plants, they just decide by one. So, the structure standard is not the best one in that case.
+
+UNKNOWN_SPEAKER:
+We always modify it.
+
+Conference Room (Hector Palacios) - Speaker 1:
+So, let us think on this scenario, Rahul. Usually, we don't do this. Usually, we base on the history because usually In our companies, they are transferring between all the plants. So it's just the information is on S4HANA. If here we are in the realm of what hasn't been done before, then we will need to create a way to have all the lanes possible. Let me see if I can do it on IVP or if we will need to do it on S4HANA.
+
+ Let us check first.
+
+Patel, Rahul:
+The only thing what we can think of is for a material dynamically check where the stock lies and all the locations where the stock is only create those lanes for the material so that we don't get all for all.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, this needs to be restricted by the markd table, I guess.
+
+Patel, Rahul:
+No, but see even if we want to like when will you need a transport lane when there is stock available, correct? If there is no stock, there is no stock transfer. So, the first restriction you can put is when CIDS is looking at the stock information at material and plant location combination.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Maybe today it doesn't have a stock, but tomorrow maybe yes, right? So, for us, the supply chain network is less dynamic, Rahul. It's not like, if I have a transaction, then I create the lane. For us, it's like a base. It's a mass data. So, it's always there.
+
+Patel, Rahul:
+Probably, there's something we'll have to do different for AdNoc, because if you're not able to restrict by any constraint, then...
+
+Vivekanand Gajula:
+I have a point, you know, to make. Let's say if we go with creating lanes between all the locations, and if genuinely AdNoc doesn't physically move goods between two different locations, then in that case, what will happen?
+
+Fakhouri, Mohamad:
+So I think Hector's point is valid. We are right now in the realm of unknown. The reason why is because previously they didn't have that visibility, right? If a stock is available in a different, let's say, company, then maybe it might be better to buy it from them rather than externally purchasing it. So I think we need to do it for all based on the material, like where the material is extended.
+
+UNKNOWN_SPEAKER:
+Yeah, let me think.
+
+Conference Room (Hector Palacios) - Speaker 1:
+I have a way to create massive data on IDP as well, so we have an application, but I never been done this before, so I will need to check if this is in the possibilities and then.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yeah, I wanted to say that For me, the problem, even if we are able to create all the combinations, which I think at the end, as Hector is saying, maybe we could do that with IVP. The performance, we have 1.4 million materials with I don't know how many different locations. So we're going to create, I mean, run the optimizer with that is going to be a chaos. I don't think it's going to run. How many combinations we're going to have It's a permutation.
+
+
+
+UNKNOWN_SPEAKER:
+It's insane.
+
+Patel, Rahul:
+It's not going to work. Has to answer for performance, not us.
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, but they're going to say, OK, guys, I mean, it's not reasonable to try to do this.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Well, the internal transfer time for every plan should be dismissed, right? They told us. So in terms of what is optimal, we need to use nodes, central nodes. So maybe we can create a dummy node that every company is transferring to the central node and from the central node to every company. So it's like a way to reduce drastically the amount of combinations that we have on the supply chain network.
+
+ Then we need to think how we do the transfer because it will generate two transfer. But if If they are transferring to the dummy, maybe then we can do a transformation of the data.
+
+Conference Room (Hector Palacios) - Speaker 2:
+We can do something. But we need to think about it. Yeah, we need to talk about it. It's not, I think, jump directly into the conclusion, OK, let's create every single possible permutation. It's not going to work. And we need to find a smarter way to do it. We need to start thinking about a possible design and then do it. Or maybe in different stages like I don't know with a central storage location per plant and then without central per another one and like this we will need to use the centralization in the next that that's what you're doing
+
+Patel, Rahul:
+in network on supply chain networks we need to use a way to centralize all right I think we have two very smart solution architects from a company called way here, Rahul. So I'm pretty sure you guys are going to figure out how to solve this complicated problem.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yeah, that's why they pay me, let me think on it. All right, let's continue with your points and at least this one we know that we need to think about it.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Patel, Rahul:
+But at this point of time, the only conversation I'm going to have with them is if there is any challenge or constraint on supply network in terms of physical movement of inventory. When I say physical movement of inventory, whether even it is directly possible to move from one plant or it has to go through a centralized communication because the logistics channels are optimized in a certain fashion.
+
+
+
+UNKNOWN_SPEAKER:
+Okay, yeah.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Whatever we model on IP also needs to be related to reality. So, let's check these vision channels.
+
+Patel, Rahul:
+Yeah. So, Khushboo, rather than asking them any country-level constraint, we should ask if there are any logistical-level constraints in terms of moving, like if the two wells are in a sea, then do they even have a ship which communicates between the wells, or it always comes to a centralized – the ship channels or ship movements are between point A and point B, between a centralized depot which is onshore versus a well which is offshore.
+
+ So probably that's something we can check and that can something help you guys in determining this central nodes.
+
+UNKNOWN_SPEAKER:
+Yeah, OK, right.
+
+Patel, Rahul:
+Let's continue.
+
+UNKNOWN_SPEAKER:
+We will check the water balance.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Vivek, you there?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+Vivek, can you share?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yeah, sorry. To continue the discussion on the lanes, do we have any other questions? Because plan-to-plan is on our side. We need to discuss how we create the supply chain network, but do we have any other point? Plan-to-plan within AGC, cross-AGC is basically the same problem. Vendor-to-plan Now, I think that the team has given us a lot of clarity here.
+
+Vivekanand Gajula:
+We'll get this relationship between contract and purchasing documents from EKKO itself, right?
+
+Mudit, Khushboo (UAE):
+Yes, contract is tables for contractors. With KPO. You'll get it there.
+
+UNKNOWN_SPEAKER:
+OK, it's just a different document category.
+
+Mudit, Khushboo (UAE):
+Rahul, do we need to check with AdNoc about quotas. I don't think we have a lot of clarity on whether or not they use quotas and if they do, how they use it.
+
+Patel, Rahul:
+I think quota would be input directly in IVP if there are multiple vendors. The only thing between contract is if if the contract if there are multiple contracts between the eMarketplace contract versus AGC contract, then there will be no quota. eMarketplace contract will get priority Yeah, do you remember the purchase organization they mentioned for eMarket or did they?
+
+Mudit, Khushboo (UAE):
+They did mention, but I it was just a mention over the chat.
+
+Patel, Rahul:
+They did not confirm probably. Is this something you have like, Can you check the configured purchase orgs and see if anything makes sense from description? Do have.
+
+Mudit, Khushboo (UAE):
+I tried to look at it. But I couldn't find. It's difficult to say which one is their central purchase organization.
+
+Patel, Rahul:
+Does it mention anywhere the eMarketplace?
+
+Mudit, Khushboo (UAE):
+No. Consider AdNocHQ as the one?
+
+UNKNOWN_SPEAKER:
+No. Nothing right?
+
+Patel, Rahul:
+Maybe you just ping to, you can ping Vignesh and ask for this purchase offering marketplace. Yeah, I'll take all these questions.
+
+Mudit, Khushboo (UAE):
+questions to him together.
+
+Vivekanand Gajula:
+And Krishbu, do we know like what is the document type for LTPL?
+
+Mudit, Khushboo (UAE):
+That also I need to check with him because when I looked at the tables, there are a lot of document types created for ldps we have so many document types created for contracts so you need to check also with vignesh which are the applicable So they have also created contracts based upon the types of material.
+
+Patel, Rahul:
+Yeah, based on the type of contracts they have. Yeah, let's take this discussion with Vignesh.
+
+Vivekanand Gajula:
+Monday I have one question on repeat orders okay so let's say you know for a material they don't have any LTPA okay so then in that case we are going to rely on their historical information right if let's say in the last 12 months if they made a purchase then that vendor we are going to consider you know for future purchase you know so so are we going to refer you know E-BAN table for that or EKKO because in E-BAN you get PRs and STRs no yes E-BAN is only requisitions of all types yeah all purchasing documents are EKKO yeah that's what I mean there you have written no ZZ BSART underscore SUB with the value as repeat order so should we should we refer E-BAN table you know to extract the historical information I mean historical vendor or should we get that you know from E-K-O E-K-P-O.
+
+
+
+Mudit, Khushboo (UAE):
+I think E-BAN because this is this custom field is only defined at PR level it's not in the PO.
+
+UNKNOWN_SPEAKER:
+What else?
+
+Vivekanand Gajula:
+I think SLOG to SLOG also we have the same issue like we have it for PLAN to PLAN.
+
+Mudit, Khushboo (UAE):
+Yes, yes.
+
+Vivekanand Gajula:
+that will get covered with these two questions. I have one more question, you know, on this lot size. Let's say we refer, you know, to the lot size that they have in the material master so bastion and nectar you know imagine you know a situation where we have a multi-sourcing you know scenario where a plant you know can take from another plant as well as you know from the vendor and in ipp we have the large size at the lane level right which is at the more you know detailed level so how do we how do we manage this because on the s4 side we have the large size you know at the material and location level Will that get answered now that they have said they want to use EOQ?
+
+ It's already confirmed. Yeah, they shared us a confirmed template.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Patel, Rahul:
+so it will it will be mentioned over there because that is still an open-ended question yeah but are these two related because EOQ will use to define max level do you want to use this EOQ also as lot size parameter I don't think we have discussed this that want to use EOQ for lot size yeah but this EOQ is on the inventory side not for defining yeah that's that's the point I was trying to but do we still need the because vendor may have a different lot size right and each vendor will have its own lot size parameter.
+
+ The info record will have lot size right for every vendor.
+
+Mudit, Khushboo (UAE):
+No, I don't think so.
+
+UNKNOWN_SPEAKER:
+I don't think info record captures that.
+
+Vivekanand Gajula:
+But do they have info record at the first place? Yes, they have. I'll check some examples.
+
+Mudit, Khushboo (UAE):
+but I don't think they define lot size and info records because the way I am understanding is you need winter specific information right see you have supplier data but you don't really define log size.
+
+Patel, Rahul:
+There is this additional tab right for info record where purchasing tab as well. Yeah purchasing tab as well.
+
+Mudit, Khushboo (UAE):
+And you check some other Thanks for the call.
+
+Mudit, Khushboo (UAE):
+Let me try to find a good example and I'll check that.
+
+Patel, Rahul:
+Yeah, because that's what I understand in the purchasing info record should have this value. I don't know if AdNoc is.
+
+UNKNOWN_SPEAKER:
+Maintaining this information.
+
+Patel, Rahul:
+There is one general data, second is purchasing data.
+
+UNKNOWN_SPEAKER:
+Yes, yeah.
+
+Patel, Rahul:
+people purchasing data.
+
+Patel, Rahul:
+This is purchasing data.
+
+Mudit, Khushboo (UAE):
+This is purchasing data. Yeah. They have PDT. Max quantity. But no lot size.
+
+UNKNOWN_SPEAKER:
+This is good.
+
+Patel, Rahul:
+I think this is may not be a correct example because it's a kit. Handling type, PD, group and core terms quantity unit of conversion transport gene shipping instruction minimum quantity so minimum quantity is the lot size right if there is no minimum quantity means you can order whatever. Vivek, I think we can use minimum quantity as lot size, right?
+
+Vivekanand Gajula:
+Yeah, I think we need to check, you know, if the video has this information.
+
+Patel, Rahul:
+The standard quantity is is 1 which means lot size is 1 for them the multiple of 1.
+
+UNKNOWN_SPEAKER:
+Put standard quantity as well. The list. The same they're not using this.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah. Yeah, I don't think they're using.
+
+Mudit, Khushboo (UAE):
+In that case, I think then you'll have to refer to the log size in the material master, right?
+
+Vivekanand Gajula:
+Yeah, I don't see anything. In contract, there is no log size, right?
+
+Mudit, Khushboo (UAE):
+No, no.
+
+Mudit, Khushboo (UAE):
+No contract is a a budgeting document.
+
+UNKNOWN_SPEAKER:
+Anything else? No, nothing.
+
+Mudit, Khushboo (UAE):
+Bastián, Hector, any questions from you as well?
+
+UNKNOWN_SPEAKER:
+They dropped actually. Oh, they dropped.
+
+Patel, Rahul:
+OK. All right. So If there are any questions, don't wait for the call. You can directly send it across to us. Any one of us, all of us so that we are not waiting to have meetings.
+
+UNKNOWN_SPEAKER:
+Yeah, sure.
+
+Patel, Rahul:
+Anytime you have any questions, simply. Send it across to us. Should we create groups for supply planning or just demand planning for the inventory planning to address specific? Points in specific discussion. Does that make sense?
+
+Mudit, Khushboo (UAE):
+I think we can use the technical group you created, Rahul read.
+
+Patel, Rahul:
+The technical group I wanted to have to have like technical interface related discussion only like mappings and everything so. Any technical challenges? Is where inter anything related to interface, Rinaldo and Sagar related stuff. Because most of the functional things gets discussed on the GoFCM chat, but then there are so many comments happening from PMO perspective as well. So I was wondering if there is an opportunity for us to create like specifics, like whatever discussion we are having with Vehicle Supply Planning specifics.
+
+ Right?
+
+UNKNOWN_SPEAKER:
+Yes, yeah, if it benefits you by now.
+
+Mudit, Khushboo (UAE):
+Let's discuss this in huddle.
+
+Patel, Rahul:
+Let's see everyone says I don't want to keep on creating like tons of group for every possible conversion and then people figure out where to where where I've commented in which chart.
+
+Patel, Rahul:
+Yeah, it gets lost between multiple groups.
+
+Sheth, Kunal:
+Yeah, yeah. I think now the common group should be fine, which was.
+
+UNKNOWN_SPEAKER:
+Remesh arrows.
+
+Patel, Rahul:
+I'm right. Yeah. All right, then let's conclude our course.
+
+Sheth, Kunal:
+Also, thank you send the option. Maybe that is the final Let's see.
+
+UNKNOWN_SPEAKER:
+Bye bye everyone. Thank you bye bye.
+
+Mudit, Khushboo (UAE):
+Have a nice weekend bye.
+
