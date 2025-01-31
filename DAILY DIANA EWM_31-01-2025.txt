@@ -1,0 +1,208 @@
+Richard Quinteros:
+Llegando, llegando. Don, ya, ya, ya a usted le chilló la o todavía no? Ok, eso es decir, aquí en México ya chilló la rata o no chilló la rata? En qué sentido? Es que eso es lo que eso lo escuchaba yo mucho en los almacenes cuando llevo aquí a la Ciudad de México. Chilló la rata es que si ya ya pagaron, pues.
+
+Jonathan Hernandez:
+Así me llegó en la madrugada.
+
+Richard Quinteros:
+Loco, pero por qué a mí no me han pagado guata? No entiendo y me he fijado en la notificación cuando me desperté ya estaba la notificación de que ya había caído sí pero a mí no me ha caído la notificación y se me hace súper raro tu cuenta siempre me llega una notificación, luego nada más entro y ya está.
+
+Jonathan Hernandez:
+No, ya realicé, no, no, todavía no.
+
+Richard Quinteros:
+¿No tienes ningún problema con la tarjeta, con tu cuenta de banco?
+
+UNKNOWN_SPEAKER:
+No, no que yo sepa. Vengo de allá.
+
+Pablo Palacios:
+A nosotros acá, acá de Argentina.
+
+Richard Quinteros:
+el miércoles 5 y hay algo es que estoy revisando un tema un tema personal pues mío no tema personal mío y por eso tengo que ir hasta ahí por eso tengo que que el pago ni nada de eso Muchas
+
+UNKNOWN_SPEAKER:
+gracias.
+
+Richard Quinteros:
+Subtítulos realizados por la comunidad de Amara.org si quieres platicamos vale chicos le quería hablar del tema de devolución ya ves que por ahí pues tuvimos una sesión el día de ayer pues básicamente estuve platicando y con querín y con odiel y con florence y melvin el tema de evolución al parecer tiene que cambiar el proceso de devolución tiene que cambiar o sea por eso es lo que la revisa primero con ustedes porque porque no sé ahí pues cómo lo vamos a manejar o sea tiene que cambiar y por qué tiene que cambiar es que ellos voy a compartir déjame ver un momentico si tengo aquí el sistema abierto primero este aplicar después no entonces esa sí ese mero ok porque el tema de devolución tiene que cambiar nosotros en el documento de diseño lo teníamos planteado como que la devolución puede ocurrir de dos formas no la devolución puede ocurrir una de la primera forma que el estándar que ya conocemos, a través del pedido de compra se hace el pedido de devolución, ¿vale?
+
+ Esa es la que todos conocemos, ¿no? Y ese proceso involucra una entrega saliente que, pues, busca el inventario en el WM y saca eso al proveedor, ¿no? Es una devolución por una clase de movimientos, si no mal recuerdo, 121-122, ¿vale? Ese es el normal. Diana hace ese movimiento a través de una clase de movimiento que se llama 161. Ok, voy a buscar aquí MV51. Clase de movimiento, para que lo veamos aquí.
+
+ Entonces, ¿qué pasa? Este y este, ¿no? El que normalmente se usa es el 122B, de evolución a proveedor. Pero esto ocurre a través de un pedido de compra o sea siempre la base es el pedido de compra y a diferencia de este que es el movimiento 161 que es el que usa Diana es como un movimiento a través de una entrega pero no funciona no funciona contra el pedido de compra y digamos que no funciona para un EWM descentralizado no clase de movimiento que no se puede usar con EWM descentralizado, porque éste no distribuye una entrega hacia EWM.
+
+ Y por ahí estuvo revisando Florencia y Nodier, y hay inclusive una nota que explica eso. Y la clase de movimiento que usa Diana es esta. Entonces, como nosotros teníamos pensado el proceso de devolución con base a éste, que es con pedido de compra, obviamente nosotros hicimos todo un proceso que habla de hacer el pedido de devolución, generar la entrega de salidas, entrega de salidas a BWM, WMSP y todo ese tema.
+
+ Un flujo de proceso de salida normal. Ahora, la idea de hacerlo diferente surge por esto, por esta clase de movimiento. Yo tengo la idea en la cabeza de cómo y de hecho si me permites hablar con todo el permiso porque lo quise probar ya lo hice también ya lo configure y ya lo probé y ya funciona ok entonces es decirte antes de irnos con el cliente a decirle mira podemos abordarlo o no podemos abordarlo cómo lo manejamos cómo podemos manejarlo porque hay que hacer cambios en los pasos del proceso mira yo hice un borrador aquí esto es una segunda versión del vp y ahí dice el borrador fíjate que aquí ya yo actualicé los pasos a cómo es el deber ser primero se identifica el producto en la recesión de compra esto puede ser una forma el operario escanea el producto hu y el sistema pide trasladar a ubicación intermedia de pasillo este es el proceso normal de recepción hasta lo tengo entendido y se me equivocó para mí o sea si lo pides trasladar que es una intermedia de cara al RAC pero en esa confirmación pues yo van a usar un código chbd para mover producto o hu a zona de devolución ya que no cumple con los estándares llana ok si si tienes razón tienes razón es una salida pero a ver cómo te explico el producto mira hay dos formas procedimentalmente tú puedes identificar en la recepción un producto que no cumple con los estándares diana ok tú puedes tú puedes identificar un producto que haces con ese producto ese producto debe mandarse a la ubicación de devolución en específico vale y cómo se envía a de devolución en específico?
+
+ Pues nada más a la misma tarea que corresponde a la confirmación, o sea, la misma tarea con la que tú confirmas en la zona intermedia, la ubicación intermedia, ahí mismo en la pantalla RF, le colocas el código de sección CHBD y le cambias la ubicación destino para que sea esta la devolución.
+
+Fernando Tlaxalo:
+Hay una pregunta, perdón, antes de... ¿Esta devolución es el recibo identificado Diana que el producto no cumple, caucidad, maltratado, whatever, pero por proceso ellos lo mandan a una ubicación de devolución?
+
+Richard Quinteros:
+Por proceso va a ser así, porque las devoluciones ellos las hacen con la clase de movimiento 161, no 122.
+
+Fernando Tlaxalo:
+O sea no pueden ellos en recepción rechazar el producto y ajustar la posición, necesariamente tienen que hacer ese movimiento que dices?
+
+Richard Quinteros:
+Es que pues la físicamente lo recibieron si ellos ya ellos lo recibieron o sea se está recibiendo el producto realmente no o sea si tú ajusta esa tarea y rechaza pues realmente dónde queda el producto no en el limbo
+
+Fernando Tlaxalo:
+pero si te lo recibes pero si por proceso se les propone que tengan una validación realmente proceso de ellos se tengan una validación de antes de recibir verificar el producto o reciben ellos a ciegas Yo creo que normalmente deberían
+
+Pablo Palacios:
+existir las dos contemplaciones, los dos procesos. Porque seguramente, quizás, llega el camión y ven que está el pallet todo roto, caído, no sé, pasó cualquier cosa en la ruta y ahí mismo te lo rechazan. Y ahí se termina el proceso. Pero eso no hay que hacer mucho, digamos, directamente hay que mostrarle que no avance con el proceso. Decidirán ellos qué hacen, si dejan la entrega en stand-by, probablemente dejan la entrega en stand-by y quedará ahí.
+
+ Pero este flujo que está queriendo mostrar Richard es para cuando ya está más avanzado, se recepciona.
+
+Fernando Tlaxalo:
+O sea que recibieron algo que realmente estaba dañado, no se dieron cuenta y lo notaron luego.
+
+Pablo Palacios:
+O capaz que era, no sé, no sé. Sí, sí, sí, es así, es así.
+
+Richard Quinteros:
+Porque imagínate que ellos al mes, ellos recopilan una cantidad de productos inclusive que están dentro del almacén y que lo van a devolver al proveedor. Entonces en ese procedimiento pues entra este.
+
+Pablo Palacios:
+Entonces ahí el paso 3, Richard, porque yo el paso 3, ese paso no lo he testeado porque no he encontrado el momento, la acepción CHBD.
+
+Richard Quinteros:
+Ese es estándar, no te preocupes, te va a funcionar.
+
+Pablo Palacios:
+Sí, sí, me imaginé, pero a ver, quiero testearlo, pero más allá de yo testearlo, digamos que creo que ese paso hay que sacarlo del resto de los flujos de entrada, porque creo que están casi todos. Hay que dejarlo solamente en este proceso, en esta casuística.
+
+Richard Quinteros:
+Vale, estoy de acuerdo con eso. Tenemos que echarle una segunda pasada al BBP, porque obviamente ya hemos actualizado muchas cosas y de repente hacer una versión final final no ya con todos los últimos cambios pero bueno sólo como que ahorita pues vamos a seguirle así y pues ya al final en los entregables pues le damos la última versión vale modificamos ahora por ejemplo una cosa les explico ya bien como tú bien sabes pablo nosotros en el almacén tenemos un tipo almacén que se llama averías te acuerdas vale pero ese avería solamente es para ese De acuerdo.
+
+ Y solo para scrap. Ahora este producto que en teoría deberá ser para producto para devolver al proveedor. Yo le creé, pero ya yo hice todo eso. Yo le creé un tipo almacén que se llama DEP. Devolución proveedor. Ok. Y que ya tiene áreas de actividad. De hecho, ya le creé con tan solo una ubicación más que suficiente, una ubicación muy genérica. De devolución al proveedor. Y básicamente, pues, es cuando tú detectes alguna mercadería que está dentro de tu almacén, que esa será devuelta al proveedor, eso es procedimental de ellos.
+
+ Ellos mueven esa mercadería por un movimiento creado o confirmado por radiofrecuencia, independientemente de... Igual yo puse todas las transacciones aquí, ¿vale? Y esa mercadería reposa en la ubicación de devolución. Ahora, ¿qué pasa? Y esto también fue platicado con Nodier, con Florencia. ¿Qué pasa cuando esa mercadería está en, digamos, la ubicación de devolución? Como Diana, la clase de movimiento que usa para esto es la 161, pues esa 161 no soporta entregas para EWM, no soporta un EWM descentralizado.
+
+ Y hay que notar que dice. Entonces la idea, y también Nodiel fue partícipe de esta idea, es que se haga una salida de mercancía no planificada para ese inventario en la ubicación de devolución hacia un almacén IM, que ellos ya están creando, de hecho ya están trabajando en eso, están creando un almacén IM de devolución. Cuando EWM haga la salida de mercancía no planificada hacia ese almacén IEM de devolución que se puede hacer, ok?
+
+ No necesitas nada de entrega ni nada, solamente yo hago una salida de mercancía, le indico, voy a mostrarle aquí el sistema, que ya está funcionando. Pues eso lo tuve que configurar ayer para probarlo, ¿no? Para ver que pues no nos estamos cayendo muela. Entonces aquí se pone el almacén, aquí le ponemos. Ubicación de almacenamiento y le ponemos el almacén al que se dirige la mercadería. Por ejemplo, en este caso sería pues cualquiera de lo que, pues en este caso lo voy a intentar mandar a uno, el que sea lo voy a mandar a Maquila.
+
+ No sé que el otro no lo han creado todavía, pues tú buscas el producto donde está o la ubicación de fue la que cree de prop vale ahorita no hay inventario pero cuando existe el producto simplemente marcas la línea y le das contabilización de mercancía y listo ya eso en el wm genera un 411 que no tiene efecto contable ni nada ni nada por el estilo y pone la mercadería en el almacén y m ahora qué pasa en el almacén y m eso es lo que ellos necesitan ahora sí hacen su 161 consumiendo la mercadería de ese almacén y m de devolución me expliqué si físicamente va a seguir estando en el mismo complejo nuestro así es y ok entonces van a ser ese día me va a existir ahí si así es entonces cuando yo haga ya nada tiene contemplado si ya están estos o que de hecho ya el día de ayer lo platicaba Este pues Florencia también estuvo participando, no dierdió esta idea de la ADI porque en otro momento, en otro proyecto lo escuchó y así pasaba en otro proyecto que tuvo este.
+
+ Y pues bueno, ayer también hizo sentido. Yo solamente no estaba muy seguro porque nunca había probado hacer una salida de mercancía no planificada, si un almacén y me entiende y ¿Parece necesario el código de excepción?
+
+Pablo Palacios:
+Porque digamos que el movimiento de mercadería... No le veo la distancia inicial.
+
+Richard Quinteros:
+O sea, lo que pasa es que el código de excepción siempre y cuando será necesario... Ya ves que ellos querían calidad desde un principio, ¿ok? Y como no hay calidad, no tienen QM, Quality Management, entonces pues básicamente no pudimos ofrecerle una forma de rechazar esta mercadería y cambiar o sea, no rechazar, cambiar, redireccionarla para scrapping, pues, o redireccionarla para devolución, más que el código de sección.
+
+ O sea, el código de sección significaría en teoría la decisión de si sí o si no quieres almacenarlo como un calidad. Pero como ellos no tienen calidad, pues yo creo que hasta ahí es lo máximo a lo que podemos llegar a ofrecerles.
+
+Pablo Palacios:
+Incluso este movimiento, si quieren separar esa mercadería de una desidentificada, hacen un movimiento entre ubicaciones, lo llevan al tipo de almacén. Por eso me sigo cuestionando la existencia, en qué instancia usaríamos ese código de excepción.
+
+Richard Quinteros:
+Lo que pasa es que sería improductivo si yo le digo al cliente, mira, llévalo a la ubicación de RAC y después ya cuando ubicación de rack, sácalo y llévalo para devolución.
+
+Pablo Palacios:
+Pero dijiste que si detectan que tienen que devolver la mercadería un mes después, ya en ese instante.
+
+Richard Quinteros:
+Ya en ese caso aplica el movimiento interno. Pero por ejemplo, durante la recepción, si yo detecto que esto está vencido, de una vez lo mando para allá para que lo almacene.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Richard Quinteros:
+Entonces si va a ser como bastante operativo del lado de Diana, ¿no? Ahí no sé qué piensas tú, Fernando.
+
+Fernando Tlaxalo:
+No, pues sí, ya lo voy hasta lo configuraste y jala, o sea, realmente, si resuelve el tema que ellos tienen ahí, pues está bien, ¿no? Realmente, si lo mueven a esa ubicación y con esta clase de movimiento queda, yo lo veo bien, Richard. Pero ya, dices que ya está aprobado por ellos, ¿no? O sea, ya te dijeron que sí.
+
+Richard Quinteros:
+Sí, ya ellos dijeron que, o sea, básicamente, no dijeron, o sea, sí dijeron que sí, pero le dije yo, mira, espérate, no tomemos decisiones a personas. Déjame revisarla con mi equipo para ver qué procede en estos casos, porque se supone que ya esto es un BBP, un documento de diseño ya, ya, ya firmado, no?
+
+Jonathan Hernandez:
+Ahí John, cómo se va a ver esto? Sí, justo. O sea, porque entiendo que fue un cambio rápido, no Richard? Con una configuración rápida, sencilla o no? Sí, sí, sí. Entonces no veo caso cobrarles un día o menos de un día, no? Pero, ojo, sí tenemos que documentar que se hizo ese cambio. Entonces. Hay que hacer un control de cambios, un control de cambios y especificamos qué fue lo que se cambió a solitud de Diana.
+
+
+
+Richard Quinteros:
+Incluso le cambios a posto cero por dejar constancia de que hubo un cambio en el diseño y que por tema de ley. Ok, sí, por eso te digo que preferí checarlo con usted internamente.
+
+Jonathan Hernandez:
+Si te parece, Richard, agarro un formato, te lo lo lleno con lo que me corresponde a mí y nada más te digo que tampoco me olvides a llenar con el cambio que hiciste.
+
+Richard Quinteros:
+Les doy un repaso nada más de que hice Pablo porque esto en teoría es una función estándar o sea esto es estándar pues o sea no necesitas configurar nada para esto lo único que yo necesité hacer fue crear el
+
+Pablo Palacios:
+tipo almacén de devolución o sea más nada que eso o sea pero esto es estándar perfecto y está muy bien porque es lógico siempre el tipo de almacenes de devolución se nos ha pasado también a nosotros por alto en
+
+Richard Quinteros:
+la etapa de diseño pero bueno obviamente eso no se lo vamos a decir el cliente por supuesto es muy normal sí porque ellos nada más considera que a nosotros se nos pasó bueno digamos que por alto porque al final en el diseño nosotros pues durante los ASIS de repente también en algún momento pudimos haber asumido que ellos hacían solamente el movimiento con el 122 que es un movimiento es una devolución en función del pedido de compra pues nosotros asumimos eso pero realmente no es con el 122 normalmente sino que ellos lo hacen con el 161 y por ejemplo tú ponte que lo hacen una vez al mes que agarran todos los productos que van a devolver al proveedor, y puf, puf, fuera.
+
+ Así.
+
+Pablo Palacios:
+Sí, incluso quedó mucho más simple, porque si el proceso de devolución, la salida en sí, no la estamos tomando el WM, la está tomando...
+
+Jonathan Hernandez:
+Así es. Queda más simple, incluso. Sí, y al final de cuentas quedó como una mejora.
+
+UNKNOWN_SPEAKER:
+¿Cómo?
+
+Jonathan Hernandez:
+Sí, al final de cuentas quedó como una mejora. Pero bueno, ya hay que documentarlo para que quede que se cambie el WP y a futuro no me digan que el diseño, el proceso no se parece al que está en el WP porque nos faldamos con un documento.
+
+Richard Quinteros:
+Claro, o sea, aguas. Ahorita nada más está en este borrador que yo hice. Está la segunda versión del documento en mi PC, pero no está en el legal legal que está en la web, o sea, en el Teams.
+
+Jonathan Hernandez:
+No, no, no, no se puede modificar. Justo, justo eso no lo podemos tocar, por eso vamos a hacer el cambio donde se va a especificar cuál fue el cambio. Y lo podemos poner como un anexo del BEP, ¿no? Este cambio va anexo al BEP, con este cambio en el proceso de devoluciones.
+
+Richard Quinteros:
+Vale. Pero eso, eso es lo que pasó con devolución. Entonces, por esa razón, ya tú ves que mi porcentaje de devolución avanzaron de tal manera, porque en teoría, pues, significó esto nada más, pues, hacer esto.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Jonathan Hernandez:
+Vale. El listo el otro punto equipo que comentaba al inicio tal con con Pablo también por ahí también me preguntaba y creo que Fer nunca se enteró porque todavía no estaba de regreso. Va a haber un cambio de tenant de los servidores de Go que empieza el día de hoy a las 4 de la tarde. Entonces por favor equipo a partir de esa hora si es posible minutos antes no ocupemos nada relacionado a Microsoft, Correo, Teams, absolutamente nada.
+
+ Por ahí también tiene algunos temas que trabajar de la demo. Entonces ahí por la borsa no cogemos nada relacionado a microsoft y hasta el día lunes ya podremos tomarlo. Hasta el martes. El lunes tenemos una sesión ahí con Rafa, es una sesión muy rápida, no hay que preparar nada, solo la sesión de la contextualización del proyecto.
+
+Richard Quinteros:
+Oye, pero no teníamos lunes feriado, ¿qué pasó?
+
+Samir Milan:
+Feriado, pero para Diana no es feriado.
+
+Jonathan Hernandez:
+No estoy de acuerdo. Por la etapa del proyecto y mover la sesión, lo veo complicado. Voy a intentar hablarlo con Kerin, a ver si se puede.
+
+UNKNOWN_SPEAKER:
+Les aviso.
+
+Richard Quinteros:
+Pasa Nico, te pasas.
+
+Fernando Tlaxalo:
+Siempre se puede, yo siempre que conozca a alguien.
+
+Richard Quinteros:
+Yo que me quería para tarde.
+
+Jonathan Hernandez:
+Te puedes quedar tarde, la sesión está a las 4.
+
+Richard Quinteros:
+Yo que me quería está temprano de mi lado todo el calendario de las acciones ya lo mandé a caramba claro que si están todos copiados así es cierto y así es cierto entonces listo el documento amigo pero ya ya por favor para las certificaciones por favor ya ni que fuera supermercado ni tiangui no quiero saber nada de certificaciones hasta el otro año me bajo porque me está marcando que no sé quién es y dale pues ahí aproveche y dice la cuestión del lunes.
+
+ Estamos en contacto.
+
+Richard Quinteros:
+Un saludo.
+
