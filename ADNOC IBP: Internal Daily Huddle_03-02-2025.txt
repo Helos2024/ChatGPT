@@ -1,0 +1,899 @@
+Naamani, Mohamad:
+Hi, everyone.
+
+Naamani, Mohamad:
+Hey guys, how are you?
+
+UNKNOWN_SPEAKER:
+Hello. Hi everyone. Before we start, overall, how were the sessions today?
+
+Naamani, Mohamad:
+I had some objections on the data, but overall, maybe not today. Until now, are we satisfied overall with the outcome, whether engagement, briefing, check, key questions, some points on data? I know we have a few pending design points, but overall judgment as we progress. I think it's always good to have this two or three minutes.
+
+Bastian Osorio:
+Yeah, I mean, today we had some issues with the data. But I mean, regarding the MRO session, specifically last week's sessions, I feel we made some good progress. I think in chemical we have some errors with the data. I'm still working on them. I'm pretty sure we will be able to recover the confidence in tomorrow's session. So, all in all, I feel we're progressing maybe two steps onwards or one step backward, but yeah.
+
+
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+feedback from today's session which we need to consider is the team is expecting to validate solution in completion before it goes to UAT which means we have to give them confidence from data from solution in a fully working way before it goes to UAT so SIT which means the team would be part of SIT the ad hoc team and the they would need this confidence that we are able to improve their parameters, improve their performance.
+
+ Whatever improvement we are asking, we are saying will work, has to be demonstrated in SIT at least.
+
+Naamani, Mohamad:
+Look, anyway, we're doing something a bit unusual by engaging with them early. I think with SIT, although typically we need this time to ourselves, but that's call it early UAT, with one condition that UAT doesn't bring new people. So the point is, yes, if they would like to do this sort of alignment to check, I think it will make our life easier during UAT because UAT is a heavy process from approvals, not from the steps.
+
+ So we might finish the approval, it will take. Multiple steps, so on and so forth. I let the team comment if this is an issue. But I think the earlier the better, uh, that we have this sort of Comfort giving to them. It might not be everything. Even in the steel code, they were saying, Okay, uh, if people are if there are some roadblocks, what do you suggest we go live with first? And then after go live we continue.
+
+ So there is some mood now that it doesn't have to be perfect but let's go live so that we can claim okay we're progressing. That's my input on your idea or your concern Raoul. Any input from I can see Saul, Arun, Bastian. Yeah I'm so good to see you.
+
+Bastian Osorio:
+I was a little bit surprised what what Jagannath said, because he said basically not the solution needs to be fully validated before going into unit testing. Then what is the purpose of unit testing? We could eventually jump directly into Go live if the tool has to be fully validated before going to unit testing. So I'm not sure. Unit testing, you mean UAT, not unit testing? Unit testing, sorry.
+
+Naamani, Mohamad:
+He's saying it needs to be ready before UAT. So UAT becomes more of a formality or a step just to close to ensure business are okay, so on and so forth. That's his idea. So you're doing UAT now. We have five weeks for that. Yes, but now look, we would need to align on this internally. I don't think the SIT would be perfect, but for example, to the data, some key points. Again, the purpose of SIT is for us to be comfortable with the solution and typically we don't involve the key users.
+
+ But in terms of having them involved at the time, it will make your AT, let's say, faster. Now, keep in mind, And I think either Khalid or either, sorry, Raoul or Tara mentioned that during UAT, there are certain things that are not just typically going through the cases and getting approval, right, Raoul? I think there was something mentioned by Khalid that we need to be aware of And for this, we need Tara and Khalid, sorry, Tara and Hadi to create that so that this will answer Bastian's point.
+
+ So we have five weeks, why do we need to rush? It's actually something different and let's highlight it now. If needed, let's add it as a risk or increase it if it's not critical enough. Yes, go ahead.
+
+Bastian Osorio:
+No, so we are doing unit testing and as you said, we could eventually said no, we're not going to involve the user at this point, but we prefer to because we want to receive feedback as soon as possible so we can build something more which is more solid right?
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Bastian Osorio:
+That's clear but still there are plenty of requirements that we plan to cover for example new product introduction and there are many requirements that I'm not going to mention now but they're not being covered during unit testing but should be covered during UAT because there were and so on and so forth. But when, if this is not in unit test in UAT, when are we going to try, when we can showcase these requirements, the solution for these requirements?
+
+
+
+Naamani, Mohamad:
+But Bastian, I'm concerned a bit because one of the things I mentioned twice, and we agreed this becomes the outcome of the CUT, is agreeing on a list of scenarios from now. Now, you might not have the time to check all of them, granted, but you cannot go to the AET with something that is a surprise and they didn't know about it now during UT or probably during SIT if you want to give them a preview.
+
+ Are we aligned on this? Because I agree, you will not have all the time now in UT and maybe in SIT to do everything, but at least you might do a faster pass. You might say, Just like today, I think you were answering them. This is to show a preview, but the final data will be after cut over or during your AT. But let's make sure there are no new scenarios. Yeah, go ahead.
+
+Bastian Osorio:
+No, no. First SAT for me is more regarding the integration is not regarding the exactly the features of the of IVP is more. It's more to make sure. Everything in terms of integration is working fine, okay?
+
+Naamani, Mohamad:
+Yeah, I know the typical SIT, I agree with that, even UT usually, even UT we don't, that's not the typical mode of UT. I have a suggestion so that we don't sabotage the whole meeting. Let's add a risk or an action, whatever you want to call it, it's definitely critical where we agree on the upcoming eight whatever weeks that we have until including UAT so that the expectation from now so for example Jagannath is saying it needs to be approved before the full concept of before I agree with you Bastian I mean then why do we need to do UAT but let's also understand what is expected earlier than this.
+
+ And Raoul, we need to probably do this probing to understand better. But in all cases, let's make sure whatever we're planning over the next 10, 12, maybe 14 weeks is in sync with their expectations, so we don't have any surprises. This point today came a bit out of nowhere. It doesn't mean we have to approve it, but let's make sure we set expectations. Otherwise it becomes a different, let's say we're talking about two, we're talking two different languages.
+
+ So can we add this? I don't know how you'd like to word it. Or Tara, if you added something you and Hadi on detailed planning and preparation for Feb, March, April or whatever.
+
+MM- SKEC2 - L081:
+Thank you. Let's try to close this by this Thursday because. Then I don't want to be like two weeks. If it drags beyond that, probably a week after that I will. I may not be available and then after that.
+
+Madhavan, Tara:
+Like I just want to make sure we prioritize this as this week activity.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+MM- SKEC2 - L081:
+Already added this last thing last Yeah.
+
+Naamani, Mohamad:
+Where? Because this is definitely critical. It impacts everything we're doing. So if it's not, or you want to highlight it, just please do. Yes.
+
+Rocio Minguillon:
+And for you to know, the expectations that we have are the ones that are according to the methodology and according to that, we all agree here. I mean, the UAT, the whole is of scenarios, and the SAT, the integration testing of each other.
+
+Naamani, Mohamad:
+Rocio, I agree. But let's not leave things to interpretations. We have a demanding client. So to be on the safe side, let's articulate what we're planning to do because today what we have was the high level plan saying, okay, SIT from date X to Y, UAT, cut over, so on and so forth. Let's now take this opportunity, just like we had the last week and this week, workshops to draw over the next few weeks what did we have in mind, and if there are sessions, whether we're doing them solo or with a client, so that we can eliminate any confusion or wrong expectations.
+
+ Maybe we have something else in mind and we'll correct this. Again, it doesn't mean we'll accept any different scenarios, but let's make sure we address it so that they also do not come with this saying, ah, we thought the following. No. So let's close that. Exactly.
+
+Rocio Minguillon:
+I totally agree that we need to align with APNOC. The only thing that I want to make sure is that we, as KPMG and OECM, we are aligned on what were our expectations before this risk.
+
+Naamani, Mohamad:
+This is why, Rocio, you requested that we have this detailed plan over the next few weeks. I think maybe Tara is getting some input from you. Unless we, as you said, this Cork or this team, we're not clear what is happening next week. So for wave one, what's happening for wave two, what's happening? Not at the high level, just like almost on a daily basis. Again, it doesn't have to be nitty gritty, but it could be OK.
+
+ Next week is wave one, open points closure, wave two, start of UT, whatever, so on and so forth. We said that we need this before when we were a bit late with UT. We said let's plan this so that we have, we prepare all the things needed ahead of time and also we ensure that ad hoc counterparts are available when we need to. Now if this is not yet done, I'll let Hadi and Tara confirm, then I'm concerned that we'll have, we'll fall under the same trap again as we get closer to wave two.
+
+ I think we're also forgetting that we have another way of working environment. So Tara, where is the point that you mentioned? What priority did you give it and what's the name of it so that we agree?
+
+Madhavan, Tara:
+If you want to share your screen. Yeah, one minute I will transfer the call to my laptop.
+
+Roumanos, Hadi:
+Tara, if you want to Share with me the link actually did. So let me let me do that. It's the same file, right?
+
+UNKNOWN_SPEAKER:
+You want me to open it?
+
+Madhavan, Tara:
+It's it's. Say I'm happy.
+
+Roumanos, Hadi:
+Yeah, OK, let me open it and I'll share my screen so that.
+
+UNKNOWN_SPEAKER:
+The voice doesn't go. Give me one second. All right, this is.
+
+Roumanos, Hadi:
+The weeks up top. The activities so. Fine.
+
+Madhavan, Tara:
+So I put till end of April Adi and this is as per the current project plan. There might be few activities where we can flesh them out a bit more. With Rocio on that. I need to also add dependencies.
+
+Roumanos, Hadi:
+Yeah, but this is this makes it a bit harder to see what's happening in a particular week, but that's OK. We can we can manage.
+
+UNKNOWN_SPEAKER:
+So. We're here.
+
+Roumanos, Hadi:
+There's wave one FTD. There's wave one UT fine.
+
+Madhavan, Tara:
+So I thought if you filter you'll see the activities that are happening for that week.
+
+Naamani, Mohamad:
+No, if I may, let's let's switch back to the risks. But if this is what you're working on Tara, as we agreed, it's let's put the wording and in the boxes just like we drew it on the board so that when I'm reading Jan 27 till 31 or Feb 3 to 7, I don't need to go right and left in that specific box. It shows what I have, just like when you're you have a week view. What do you have under that? But again, this is the start, so it has what it includes.
+
+ My point is, do we have it as a key request that that needs immediate attention? And if not, can we increase the priority? Because this was discussed before. If we're not there yet, and we're not as Rocio, you mentioned fully aligned. Then let's increase it in criticality. That's why we'll see it because that's the concern when we have high and we don't have the time to cover them.
+
+Rocio Minguillon:
+Yeah, I will include this. But yeah, but here is that I have to be aligned with. With us now, this is I think for us is like I mean, we have to. We have to have been like finish the sprint as is in the plan, but not validating solution like today they were like,
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Can we agree on an exception for tomorrow?
+
+Naamani, Mohamad:
+Sorry, Raoul. Can we agree on an exception for tomorrow? Let's spend tomorrow's HODL only on this because this will drive everything else that we have. If there is something in our list of risks related to open issues, we'll see when it's addressed. If there is something related to confirmation of users, we'll see when do we need those users and then I think let's close this tomorrow if everyone is okay let's create it as I will make it an hour based on it we'll leave tomorrow's session very clear as Rocio you mentioned we're both aligned I think we're almost there but the idea is we're also clear what we need to tell Anouk if there are objections then say no we expected this we'll tell them no that's not the typical definition or what we do again Jagannath has his we can change our plan.
+
+ Uh, so at least we go back to our list. Let's definitely, uh, promote whatever you have created Tara to critical and let's change tomorrow's session to an hour just to talk about this. Let's call it next three or four months. I'll go life plan from now. I think this program is big enough to deserve a bit of a meticulous planning.
+
+Roumanos, Hadi:
+The only ask is that I use the time from now until then to reformat this as we discussed, right? So each week has boxes and I've updated the time for tomorrow's meeting. Let me do something. So the example, I'll share my screen just so that there's no misunderstandings. The idea is to have in the week of the 27th, right? You will have the elements are or the activities that are happening, right? So this is well, this is not relevant anymore.
+
+ Let's go with this one. So in Feb three to seven, you have wave one FDD. Um, you have, et cetera, et cetera, right? So in that same box.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Madhavan, Tara:
+Okay.
+
+Roumanos, Hadi:
+Yeah, I understood it differently, but yeah, uh, yeah, that's that's that's the gist of it okay so then you have a large box for that week and in that large box you have everything that's happening in this particular week it makes it easier for us to see um what drives what and if there's any dependencies okay okay then I'll remove the activities column I'll I'll just keep the dates column and I'll list down activities inside that's the idea right so so Discuss this before you left, right?
+
+ So you don't need the activities you need. It's like a calendar, right? A calendar that you stick on a wall. You only have the dates and what's in them, right? Think of it as a grocery store, a grocery list or whatever it is. I had understood it.
+
+Madhavan, Tara:
+That's for example, Sprint 1. What are the specific activities for Sprint 1? That to be listed in the video.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+OK, so now we're back to being OK from understanding perspective this this needs fixing so let's let's go back to our critical list and then for the ones that are blank yeah are you sharing anything I'm sharing.
+
+Roumanos, Hadi:
+I'm sharing my screen.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Can you see it or no?
+
+Roumanos, Hadi:
+No, no, we cannot see.
+
+UNKNOWN_SPEAKER:
+Let me.
+
+Madhavan, Tara:
+Not coming on the big screen.
+
+UNKNOWN_SPEAKER:
+I'll try to share again.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Because when Tara shared, we could see, yeah, I think it's just you, Raul, everyone else.
+
+Naamani, Mohamad:
+Cross your team, you can see the screen, right? Yeah, yeah, yeah.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+I think we are not able to see in this. The meeting room will look at our individual laptops.
+
+Roumanos, Hadi:
+Let's try and address the ones that we've added recently because they don't have. Um. The right information in here, so my priority starting with this one because Tara said she created it.
+
+Naamani, Mohamad:
+So this call developing the plan for the next three months. I don't know what Tara called it, but let's make sure it's and it's critical. You remember what you named it Tara, or can you point it to Hari?
+
+Madhavan, Tara:
+Yeah, I developed plan for UTS IT. It's an old task that I've updated to critical now. There's one more similar which will yeah.
+
+Roumanos, Hadi:
+OK, OK fine, I'll find it. Let me just filter and then we'll get to the other ones in the end. OK, SDD this was closed. We'll get there, we'll get there, I'm just...
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Sorry, you know... Quick update on filling data. We had a meeting today as well. The end users are aligned and they will provide us data tomorrow.
+
+Roumanos, Hadi:
+Okay, so this now is for...
+
+UNKNOWN_SPEAKER:
+Okay, so I'd knock to provide data, correct?
+
+Roumanos, Hadi:
+So now it's pending with them.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah, yeah, so they had some questions which which we answered and now they are good with what we are doing and they will confirm us with data tomorrow based upon the data next step.
+
+Naamani, Mohamad:
+So it's on track or it's orange from a time perspective.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Now from from a time perspective, we just had a call with Bastian before this header. Once we get this data, let's keep it orange. Once we get this data, We will work internally and see how much of it we can get, whether we can leverage any of the sessions which are planned on Thursday to showcase anything based upon this data.
+
+Naamani, Mohamad:
+OK, now I noticed that the SDG1 was closed. Sorry, go ahead. Finish question on this.
+
+Bastian Osorio:
+Just a few comments. Can you, once we finish the huddle, Raul, can you stay? Yes.
+
+UNKNOWN_SPEAKER:
+Sure. Okay, so this sorts out.
+
+Roumanos, Hadi:
+End users, any progress? Because our due date is way past right now. Kyle, I don't know who else is on the call.
+
+UNKNOWN_SPEAKER:
+We haven't made any further progress.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 2:
+Tariq was supposed to have sent out the end user template last week, Friday. We spoke to him today. And he still hadn't sent it out because the memo is still under review. So we've been following up and telling him we need this sent out, but it still hasn't been sent out. That's for MRO and chemicals. For the other ones, I've been following up still. I sent Abdul Latif an email today, and we spoke to Read today, so I'm still waiting for those.
+
+ So, I mean, I've been doing all I can to get it, but that's where we are.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+But they've not sent the template yet.
+
+Naamani, Mohamad:
+This will not progress in this case. So either we need to raise it in the morning with Khaled or raise it to Asma. Otherwise, I mean, you can keep bugging them, but obviously it needs to be escalated. So we'll say, we'll assume we have zero users in your intersection. Good luck. Raoul, take a note.
+
+Roumanos, Hadi:
+Let's bring it up to Khaled tomorrow. And I don't know why Asma is not joining the morning calls. I'll speak to him again, because at this point she needs to be in all of them, right? I can't always keep complaining to Khalid. Sarah, you're driving the calendar, so this I'll add tomorrow as the due date so that we can review during our Hadr.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 2:
+Yeah, I think if Asma isn't there tomorrow it's not going to help, because the memo and stuff is sitting with her She needs like someone needs to inform her that we need this stuff. Urgently, so she's not there. Mods to be a problem.
+
+Roumanos, Hadi:
+That's that's fine, Kyle data for this one. Please remember our initial conversation had more than the activities in the boxes, right? So what we'll need and I'll go back to the initial Excel. Is let's say you have a week of Feb 3rd or let's take the second week as an example, 10 to 14. So you're going to have one big box with all the activities happening in this week. But you'd have on a second row, another big box with dependencies, right?
+
+ And then you'll have a third row with another big box that is specific to logistics. Because we had that conversation, if you recall, right? We went into detail. So we're going to need that level of detail to make sure we're capturing the right dependencies for each of these weeks. Again, the last thing want is getting to a certain week and not having ticked all the boxes that we need for the activities in that week.
+
+ The same applies to logistics. Let's say week 3 in Feb. Based on those activities, who do we need from AdDoc as stakeholders? Who do we need from GoSCM to be here, for instance, so that we can prepare accordingly and not start rushing just before that week to tackle all of these points. So again, that conversation happened. I don't even remember when, but that's the end.
+
+UNKNOWN_SPEAKER:
+So drop everything.
+
+Roumanos, Hadi:
+Yeah, so let's drop everything that you're doing right now. Go kidnap Rocio, do whatever you need to do, but we need that view before tomorrow's huddle so that we can focus on these items. All right. All right. Last point. Management. Minutes to Asma Raul. That's on you as the last action item. Has anything happened since then?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+I've sent this details like minutes and everything to her. Tomorrow Khalid and me will have conversation with Asma on next step. That's what we agreed today because he wants to give it today before we escalate.
+
+Roumanos, Hadi:
+Okay so this is on going, but you'll brief us on how this conversation goes. I don't want to keep things open that don't need to be open, right? So if this is...
+
+Naamani, Mohamad:
+Okay, on the highs... One second, Hadi. On SDD, it was critical but closed, although two other risks were triggered and Kunal mentioned them. Are they logged here as high or critical? I want to make sure they're not lost. Kunal, can you confirm please that those two were created. Yeah, the two that spun off the SDD. And are they high or they're critical?
+
+Sheth, Kunal:
+I think row number 65 and 66. Hadi, can you remove also other filter so that maybe?
+
+Naamani, Mohamad:
+I remember on the call that we said we'll close SDD, but will create those two, let's say smaller risks. I don't want us to join the closing if we don't have them.
+
+Roumanos, Hadi:
+65, 66, they're high. Are they on track? Okay, fine. So let's keep them as on track. Let's quickly cover the ones that we have here that don't have, otherwise we're going to miss something. So data validation, go SCM team to share. Is this delayed? Is this on track? What are we doing here?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Data validation, I think data connection is restored. The last point, which was open from us, we discussed today, so we'll give that feedback. Now, GoSim teams needs to put up a date around when we can have the validation here.
+
+Rocio Minguillon:
+I mean, Rahul, did I send you the real-time with the updates on the integrations. So the end of the integration, it's like the end of the sprint three in wave one and the end of the sprint three on wave two. And I don't know which further like visibility do you need, or if you have that, we can connect with the technical team, but I mean, you now have the file. Today the links were but now they should be working.
+
+
+
+Roumanos, Hadi:
+Let me ask you this, Rahul. What's the next step on this line item? What needs to happen?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+So what needs to happen is we need to send this validation data insights to AdNoc for decisions which are open. The ones which is on MRO chain management also is waiting for a couple of insights based on data.
+
+Roumanos, Hadi:
+Let's have a tentative date to share those validation data insights and then we can discuss it later If it's not something that's critical, let's push it. I'll align this.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Rocio, just for information, Khushboo had sent an email with respect to scenarios which we are looking for and important ones. Based upon the template you are having, we'll look at it. If the datasets are available, then I think Bastian mentioned that if the data is extracted, the templates are ready, the outcome can be provided pretty fast. We'll align this based upon if anything needs to be expedited so that we get this as soon as possible.
+
+
+
+Rocio Minguillon:
+OK, yeah, I will. I will answer the email so with with the with the link because yeah, I see that we didn't answer.
+
+Naamani, Mohamad:
+OK, um, I did remove low and medium.
+
+Roumanos, Hadi:
+Let's show critical and high only. These these ones we haven't even captured before, so I'm just trying to make sure we have the right. Data. I don't do in chemical scope. Internal agencies is something to track closely now or no?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+We need to talk with Khaled. This is something I'll take it for tomorrow's discussion as well.
+
+Roumanos, Hadi:
+Okay, so don't share with Khaled this request and clarify scope.
+
+Rocio Minguillon:
+Fine.
+
+Roumanos, Hadi:
+Planning risk visibility of cutoff date to close all open points before it starts impacting critical path of build. Okay, so is this related to the initial open point one that we had right so we had technical open points for demand inventory supply is this the same thing or no?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah I think that's the similar thing but the risk was in terms of that we needed visibility and I think visibility is provided by Rocio. We just need to make sure that based upon that if there is any risk getting created based upon that visibility we need to put it in this file so you can put an action on me to confirm if there are any visibility risk with respect to the timeline shared by Rocio.
+
+
+
+Naamani, Mohamad:
+And team Hadi and Rahul, can we use the 9 a.m.? I know we couldn't today, but let's use 9 a.m. To do this so that we have a clean list when we do the huddle. Otherwise, we're not able to check the latest with the team. They're all waiting for you.
+
+Roumanos, Hadi:
+Discussed with Rocio, consultants cut over required access. So we'll see what's going on here.
+
+Rocio Minguillon:
+I think that's the first time that I see this point. Yeah, this one basically is one of the things pre-requisite for UAT, right?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+So essentially, this is related to the same point what Mohamad Namani was mentioning, that UAT is not only testing, but UAT also means that we do the technical steps, which means while we have four weeks or five weeks there, we may not have an entire four or five weeks with the users. We will have to do our consultant work, like the mock cutover activity has to be part of UAT. And for us to do that, if we don't have IDs defined, roles defined, during SIT, then we will not be able to do this.
+
+
+
+Naamani, Mohamad:
+Let's indicate who needs to discuss with who, because right now, discuss with Rocio. But there is unless I missed it. There is no owner, no.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+This this this probably we need to assign to Reinaldo because it's it's a technical steps like interface and related everything which has to happen for production has to be simulated for quality first. It has to be Reinaldo and Sagar assigned to.
+
+Naamani, Mohamad:
+And Rocio, please read the full list that there is nothing, not only the ones to you. There's something not clear. This way between you and Tara, Raul, Hadi, we're on the same page. If something was added, you're not clear. Let's make sure it's clear.
+
+Rocio Minguillon:
+It says we don't have access to the SharePoint, but yes, definitely yes. And I think that, Rahul, according to the detail that you are having regarding the prerequisites from AdNoc and the different stages, I think that it's very important you are on that conversation that we are having with data where we
+
+UNKNOWN_SPEAKER:
+are.
+
+Rocio Minguillon:
+What happened to your access? What happened? Yeah, that's that was something that I was going to mention. So this weekend our tenants change. So we were based in Germany and now we're in Spain with with professional accounts with all the security regulations that we need. But so then. Our access is changed. Your SharePoint are not working because you have to delete with the admin, with the administrator of the accounts, you have to delete our accounts and add them again.
+
+ So there is data with that point.
+
+Naamani, Mohamad:
+Ideally, yeah, give us a heads up on this because now many things that you should be working, collectively we should be working on together will not be available to you until we fixed it. I think last time our IT team did this sort of setup. Tara, I think you're checking with Sheroes.
+
+Madhavan, Tara:
+Yeah, Sheroes said he can help me. We need to do something in that KPMG marketplace, but I'm waiting for him to be free.
+
+Naamani, Mohamad:
+OK, please book time with him first thing in the morning because this is going to be a bit of a disruptive case for us. I mean, just this simple list is not visible to the GoSCM team, not to mention documents, any other shared presentations being prepared. So that's not ideal or not, that's just ideal. That's not good at all. So yeah, and Rocio, please, when those things happen, try to give us a heads up because also our IT team is not the fastest.
+
+ So we just need to be ready with those things.
+
+Rocio Minguillon:
+Yeah, yeah, yeah, sure, sure. Today I think that we say like at the first hour.
+
+Naamani, Mohamad:
+Yeah, but this is a centralized IT team for us. We don't have our own IT team. This is KPMG's team. Yeah, I think they react. It's like when you deal with AdNoc, maybe a bit faster.
+
+Rocio Minguillon:
+So just keep this in mind. Yes, yes, yes, definitely yes. But yeah, we are having the same issue with all the all the customers and all the partners working with OSM.
+
+Roumanos, Hadi:
+Guys, I I need to jump in the next 5-10 minutes, so let's please try and finish. Kunal, you covered these two points for STD, so I'll leave you with those. The last two value realization is the Muhyiddin item, so we need to discuss with Sebastian and Cesar the value realization.
+
+UNKNOWN_SPEAKER:
+Dimensions plus estimates.
+
+Roumanos, Hadi:
+And this needs to happen. I'm putting mid this week just so that it doesn't drag. We can talk about when to reach out to them. Plan the integration activities in OneARP and Bourouj development systems for next two weeks. Where did this come from and why are we delayed?
+
+Patel, Rahul:
+Sorry for that. No, it's okay.
+
+UNKNOWN_SPEAKER:
+So this one, row number which, sorry?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Last one, right? Plan the integration activities in one ERP and Borush development systems for the next two weeks. Yeah, so essentially, this is something which we discussed on Friday, right now after which two activities ad hoc we wanted to have a planned meeting invites sent across to the team so that this if we don't send invites most of the time ad hoc team is not available and deletes our activity and this was to be sent on friday as per discussion with saga but I think saga is on leave for next two days as well so uh Reinaldo was to send it but I'm not sure Reinaldo has sent it.
+
+ So Roshit, Roshit can you check if Reinaldo is aware of this?
+
+UNKNOWN_SPEAKER:
+Hi guys. Hey hi Reinaldo.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah I'm preparing this information to send that today okay in a moment I will send that to you okay. All right and Tara if you if we need help in blocking meeting will ask.
+
+UNKNOWN_SPEAKER:
+I already messaged.
+
+Madhavan, Tara:
+Sarah, we can't hear you. Yeah, hello, can you hear me now?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Madhavan, Tara:
+I already messaged Reinaldo. Reinaldo is also available. But I'm not.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah, I think Reinaldo is sending something.
+
+UNKNOWN_SPEAKER:
+That's what he confirmed. OK.
+
+Roumanos, Hadi:
+Fine, let's go back to our. Filtering Okay, this we covered.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+I think there are additional filters. There are additional status for bind.
+
+UNKNOWN_SPEAKER:
+Yeah, you're right.
+
+Roumanos, Hadi:
+This is 14th Feb, FSD, TSD. Where are we on FSDs?
+
+UNKNOWN_SPEAKER:
+Feedback.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Feedback was provided and I see, Rocio, you replied an email, right? Is it completed? The changes are completed in FSD?
+
+UNKNOWN_SPEAKER:
+So two questions, right?
+
+Roumanos, Hadi:
+We had wave two FSD. Also due today. So is this somewhere close to being done?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+The Wave 1 FSD? Wave 2 FSD.
+
+Roumanos, Hadi:
+We had decided to have it ready by February 3rd, which is today. I think Wave 1 is also delayed.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Wave 2 is still open. We are still working on Wave 1 FSD. And Wave 1 FSD, we have sent feedback, but I think GoSim team is not able to access the FSD document, which means the document has to be attached and send over email. Kunal, your feedback document, can you send it across email to the team?
+
+Sheth, Kunal:
+Yeah, Rahul. So I'll send the latest version from SharePoint to the GoSNT.
+
+Roumanos, Hadi:
+So, okay, this is for Wave 1. I'll ask again though, for Wave 2 FSD, in what state are we? That we had planned to finish today?
+
+UNKNOWN_SPEAKER:
+We are.
+
+Rocio Minguillon:
+We are finalizing their review with right now, but we're there.
+
+Roumanos, Hadi:
+OK, OK, so we're close to being done at least yes. Alright, alright. But in terms of actions for with one FSD, uhm? This still needs to be sent to to them for approval, correct?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Correct, we are. So, based upon our feedback, we need to make the changes. Now, the only point here for Wave 1 is, Rocio, we have created one FSD for Wave 1, which is related to interface. We also need that second FSD for Wave 1, which updates master data from IVP to S4, which is the interface.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+So while.
+
+UNKNOWN_SPEAKER:
+Yeah, go ahead. Yeah, so. Howdy, the one one of the FSD is getting completed.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+The other FSD is that I think at same status as we've got this day so. There are multiple FSD's of wave one. Based upon the changes right now we have two out of two. One is reviewed and sent back for up for changes and the other one we are awaiting from GoScan.
+
+Roumanos, Hadi:
+Let me ask you this, when does this become, actually I have two questions, should we break this down into the multiple lines for all the FSDs because it's starting to make more sense to me so that we can track them separately. Right now it's a big bucket and I don't know when this bucket will have to move from high to critical, right? So I suggest breaking this down, so I'll add that note to Taro.
+
+ Let's break this down to one FSD or to each FSD, TSD per row, and then I need you, Raul, to tell me when this becomes something that we need to make critical, right? Because I know that there are dependencies on this.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Right now I think that those for sure hi and then uh rocio I will need your input that when do you need this approved to start work on uh dev because this is a prerequisite for to starting work on dev so we are already in between build so considering time we have left for field and you need to do the work you need to tell whether it is already urgent critical yes Yeah, so yeah, according to the data
+
+Rocio Minguillon:
+we were. I mean the way the data we put where the dates like, Yeah, the ideal way dates, but we're still not having impact. But yeah, the FSD for wave one. It's urgent because we still have three weeks only for spring one spring 3 so.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+We can promote wave 1 as a agent and wave 2 as hard.
+
+Rocio Minguillon:
+Yes.
+
+UNKNOWN_SPEAKER:
+Exactly.
+
+Roumanos, Hadi:
+Okay, fine. Access for Buruj. Tara, you're driving this for VDI access.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+One more thing before we go to the next one. Reinaldo and Tara and Rocio, last week we received access to development environment. I'm waiting for this confirmation if you're able to log in because that's also like along with FFD, you need access and I still don't whether you have developer key, whether you have required access. If anything needs to be excluded within our talk, I need to know immediately.
+
+
+
+Rocio Minguillon:
+The only thing is the BDI access for Baruch. That's the thing that is raised, but the rest it's OK.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Let me confirm that I already asked for that confirmation and everyone told me I need confirmation for Buruj, not Buruj one ERP development. So we have received access. ER5 and ER6 we have received access. Need this confirmation on this.
+
+Rocio Minguillon:
+Right now, yes, yes, sure. I can give you the confirmation right now, but let me check one more time just in case.
+
+Roumanos, Hadi:
+Taro, we have a configuration sprint status updates from Rocio here. And now we have an action plan with dates. Should we combine both? Because then you can add completed on each of the activities that you complete.
+
+Madhavan, Tara:
+Would that make more sense?
+
+Roumanos, Hadi:
+Yeah, yeah. Okay, fine. Let me just close this one so that we don't keep them open for the sake of keeping them.
+
+Madhavan, Tara:
+Okay. As being out of scope that item is closed but we did not really get any mail confirmation.
+
+Roumanos, Hadi:
+I know I'm chasing Khalid on a daily basis so that's fine.
+
+UNKNOWN_SPEAKER:
+Technical open points for these three Rahul, you want to keep them open?
+
+Roumanos, Hadi:
+Hello Rahul?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Oh, sorry, let's keep them open unless we are able to close everything.
+
+Roumanos, Hadi:
+We have this ongoing thing, but unless those are closed, we cannot say it to the news.
+
+UNKNOWN_SPEAKER:
+OK, invites data. Where are we on invites?
+
+Madhavan, Tara:
+Did we send everything or is there anything pending still? Invoices. Sorry, so the invite. For the plan day one, Invites have been sent. But for Wave 2 UT, Rufio has sent me a high-level plan, which you said after we confirm the calendar. Let's keep it open.
+
+Roumanos, Hadi:
+Once we confirm the calendar, we close this, and you send the invites, and then we close this. Fine. Data validation. Who's driving? Oh, we just covered this. Never mind. Define consultants. We covered it. Plan integration. We covered the rest. Type, is there anything, so we've covered critical and we've covered high, my question to you is, is there anything that we haven't mentioned in critical and high that's about to blow up in our face?
+
+
+
+Rocio Minguillon:
+So I need everyone to take a minute and think, is there anything, we covered all of the criticals and all of the highs, have we No, now one point that Bastian wants to take with Raúl is the changing on the schedule for this week for drilling. So that was something that we already said on Friday that we will work today, that is the drilling session and the alignment between us on the content. It's critical because it's this week and we need to cancel the session if needed, but we will just talk with Rahul about it, then it is clear.
+
+ Okay. Question.
+
+Roumanos, Hadi:
+This goes for us, Tara, Rahul. Why do we have value realisation here? And we have another one, if I'm not mistaken, that covers this, which is called a line with Khaled on business benefits on and the business on benefits document for IVP. It's the same one. Right, so I'll add tomorrow's date as or five as the date and let me delete. Yeah, kill one of them.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+It's going away. One point I need to add here. The list which is high. Is a One ERP TRS.
+
+UNKNOWN_SPEAKER:
+Which one?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+You can add a new item which is high transport. Uh, what we can parent transport request for one ERP for at now one year.
+
+Roumanos, Hadi:
+All all transport request.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah, transport request parent. The parent we apparently we need to get a parent I don't know what that means.
+
+UNKNOWN_SPEAKER:
+You'll elaborate.
+
+Roumanos, Hadi:
+I'll just add it.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+So to start any development work, TR has to be created and they have this mechanism where they provide a parent TR and whatever technical team does becomes part of that TR.
+
+Roumanos, Hadi:
+I'll let you elaborate. But let's add it here and let's have tomorrow's date on here.
+
+UNKNOWN_SPEAKER:
+Okay, fine.
+
+Roumanos, Hadi:
+Let's back up. So in the lows and the mediums, this is fine. This is fine. Benefits of human training approach. Is there anything happening there? Kyle.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 2:
+I'm in discussions with Fatima about what the best approach would be, but I just wanted to highlight the fact that those intersections that we have, they actually or inventory and supply. So it's mainly for Wave 2 end users that we have at the moment.
+
+Roumanos, Hadi:
+And the ones for Wave 1, we don't have. This goes hand in hand with your end users, correct?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Roumanos, Hadi:
+Okay, let's leave it for now. Approval matrix, this is something that we still are dropping you on, Ayatollah. Let's aim to finish it by the end of this week.
+
+UNKNOWN_SPEAKER:
+So seventh.
+
+Roumanos, Hadi:
+Analytics story, what's the latest on this?
+
+Roumanos, Hadi:
+Do you want us to keep? To keep looking at this item, should we close it?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+This is Rocio, the latest email which has come from Kunal where he's able to see. The best practice templates can be adopted, but analytics story app is not. Can we get this confirmation?
+
+Rocio Minguillon:
+Yeah, we got that confirmation from SAP. That was I mean that was also Sebastian raised but we didn't agree with you Hadi and Mo on how we'll be us communicating that to Adnoc I mean because the app is not going to be available until the end
+
+Roumanos, Hadi:
+of the year and there are workarounds yes definitely but let's aim to discuss this separately and I'll leave it until the end of the week as well Let's not waste time on this call.
+
+Naamani, Mohamad:
+Leadership demo. There is an issue here, and I mentioned it by email. I'm not sure if you're copied. If we do not have enough dashboards or report to show, then this is beyond critical. Because if you tell an exec here that SAP didn't enable something and will go live but will leave you blind, then I would like you to tell the executives this. I'm not going to be there. That's why I mentioned in my my email, Hector said, let's not share with the SCIRCO, which is fine.
+
+ That's why I wanted everyone to be aligned. But guys, we cannot go with this solution without management reporting or dashboards. If we have nothing, it means this needs to be escalated even yesterday or before saying, these are the things that we know as GoSCM KPMG as available dashboards. They're not available in UAE. We're raising a major risk because we cannot show you those reports once the solution is live.
+
+ If it's that bad, it needs to be that critical. If not, then I'm happy to keep it as is. So do we have an answer which case it is? Do we have any dashboards? Do we know what we can go live with or no?
+
+Rocio Minguillon:
+So maybe, Basti, how do we want to approach this? I mean, let's have a team.
+
+Bastian Osorio:
+Yeah, there are dashboards, but our basic are not as advanced as analytic stories, but we do have some dashboards. In fact, we have shared them with the users during this session, so probably you have seen them, too.
+
+Naamani, Mohamad:
+So, yeah, but all the analytic stories that Konal shared today, the PDFs, are not available No, those no. Okay, because this is what the execs are expecting. So it means we need to make a decision, highlight this, we need to officially raise it. Now is the time we can say with the solution, as we're trying, we don't need to tell Adnok that we knew about it months back, but we never escalated. We'll say we thought it will be out by Feb, but it seems it will be till end of year, which means today that's the max we can give you by go live unless you talk to SAP and expedite this.
+
+ Guys, this is not a solution for, this is a planning solution. And you know this more than I do. If execs don't have results, they asked about it in the last team call, whomever attended. So now they're starting saying, ah, okay, you're progressing. What would I see once you go live? We'll tell them maybe something, but it could be like a 1955 report, but no dashboard Imagine you're in their shoes, what would you do?
+
+ So let's make this critical, please. I would like to understand why is SAP pushing this out? Is it a technical thing? And then as a replacement, I would like Suleyman and Paula to sit in front of the Steerco and tell them exactly why this is not possible. And what's the alternative? We're not magicians, collectively, go SCM, KPMG. So if there is no solution, no one will accept this excuse. I know everyone now is busy to get the data, etc.
+
+ But imagine all your hard work is gone because the executives can see nothing. They'll tell you, okay, so maybe you're just doing nothing and I cannot see it, so give me a proof. I'm being very pessimistic because that's the case. Now everyone has started saying, because the SVP started joining, Show me what I have. To a certain extent happy in the morning when I saw or at noon when Kunal showed me the dashboards.
+
+ Now we have nothing. Or it seemed to have something very primitive. So this is definitely not a good position to be in. For whomever paid millions for the solution.
+
+Sheth, Kunal:
+More just to add to your point. Whatever dashboard Goesian team has prepared this is more of an operational level reporting in IBP but whatever exec is currently expecting that is more of an analytical story and as for the SAP roadmap also.
+
+Naamani, Mohamad:
+That's the case operational are needed by key users etc to run their business that's normal they need to see how things are happening but execs didn't care less about anything we're talking about they'll say are you telling me you'll go live and I will see now I mean, again, guys, I know we're all busy in making this happen, but no one will see the value of it until they see that. I, for whatever reason, thought the February release will give us something.
+
+ And I remember someone said the analytics is going to be late, but I thought at least there would be something. But if it's a complete, basic, rudimentary set, then no, this is something let's add as an action. We need to discuss either tomorrow or at the earliest and raise it to SAP, official email through Khaled saying today what we have is not enough, we need to understand why is the solution sold to us without the following capabilities, although we know as AdNoc and also through our partners KPMG and GoSCM that's available elsewhere.
+
+ Let Anand and Suleiman and Paula stress over it, not us. Anyone disagrees on the Completely agree.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+We should complete right away. Tell this to Adnog. Actually, we are already setting this with Adnog. Exactly.
+
+Naamani, Mohamad:
+That's why I'm saying now we cannot tell them we've been sleeping on it. But guys, perspective, perspective, perspective. I know we're all working hard, but from an exec, they have a gazillion projects. They paid millions for this. If they don't see what we're working on, how would you expect them to appreciate the effort? They have nothing. So it's also to give our work justice. I think I killed this too.
+
+
+
+Roumanos, Hadi:
+I beat this to death, so let's move on.
+
+UNKNOWN_SPEAKER:
+Tara, can you cover the last few items that we have here? I need to jump. Tara? Sorry, Adi.
+
+Roumanos, Hadi:
+Can you please cover the last item that we have here in case we need to update the dates and the next steps and potentially urgency, please.
+
+Madhavan, Tara:
+One minute.
+
+UNKNOWN_SPEAKER:
+Just switch to my laptop. Sorry, it's crucial there in the office.
+
+Rocio Minguillon:
+Could any of you share me please the file with the information about the users by email because I can't access to the KPMG SharePoint and we need it. Which file with users?
+
+UNKNOWN_SPEAKER:
+The security one.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+OK, she has shared the link.
+
+Rocio Minguillon:
+No, I don't have the link because it was in the in our chat. OK, let let me the security one with with all the users and the the ones that have key development access.
+
+UNKNOWN_SPEAKER:
+Thank you. Yeah.
+
+Madhavan, Tara:
+Can I go through the remaining items?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+OK, the only thing probably we have to rush because we are in a space it too.
+
+Naamani, Mohamad:
+Yeah, yeah, yeah, there were a few of them that I don't know.
+
+Rocio Minguillon:
+That's also the thing that I already shared, like the data status.
+
+UNKNOWN_SPEAKER:
+I'll keep on hold also.
+
+Madhavan, Tara:
+OK, there's only one item on hold. There's only one item that does like the AI usage.
+
+Rocio Minguillon:
+We decided OK, that's that's OK. Tracking that's what I shared on Friday and again.
+
+Madhavan, Tara:
+Proposing sustainable options either to be added in the master data that item. It's with Bastian. Go ACM to propose a solution.
+
+UNKNOWN_SPEAKER:
+Do we have anything on this?
+
+Rocio Minguillon:
+Question is in the call.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Naamani, Mohamad:
+Which item are you on, Cara?
+
+Madhavan, Tara:
+Line number 68.
+
+UNKNOWN_SPEAKER:
+That's low, let's move on to something.
+
+Naamani, Mohamad:
+OK, enable now activation.
+
+Madhavan, Tara:
+Technical team to set up interface. So is this done? That's with that's with Khusbu.
+
+Naamani, Mohamad:
+We need an update from her.
+
+Madhavan, Tara:
+So where does Khusbu set up a call with Kaiser? For this Wednesday, OK.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah. OK. This one, let Raul comment.
+
+Naamani, Mohamad:
+Last one, who is it with? It's also Raul. OK. Raul, are you there? Decide on actions and if actions are late on criticality. Yeah, so this is something we discussed.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Let's give it till Thursday for me to close, look at it and confirm if any of the actions are. This one is we discussed tomorrow with college. This is correct. Yeah, yeah, yeah, yeah. The last one is this is for me to like me. I'll review this internally with and we'll identify if there are any additional risks based upon this file shared by.
+
+UNKNOWN_SPEAKER:
+Put Rahul's name. Yeah, put mine in here.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+And the actions are already updated and you can put them.
+
+Naamani, Mohamad:
+Yeah, and team I have a request for the governance team. The 9 AM we should use to clean this up or to use it as a daily start for us. What needs to be done? That's for the core governance team. For the rest, please keep this open. So that if there is an activity in the remarks that you need to do so that you remember, we're getting busy during the day. So this way we'll make sure that it's attended to.
+
+ And Tara, from our side, we need to keep this open also from a governance team, check it just to remind people if we think that it's not taken care of Otherwise we'll end up in the huddle just reminding about the same thing. So now we need to help the team Everyone is sucked into his or her mayhem. I need to jump when someone is saying anything.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yes, so there is an email from Vice President Procurement for requesting some data. I have marked you and we need to discuss this with Khalid tomorrow so that we can reply.
+
+Naamani, Mohamad:
+There's an email from whom? Vice President Procurement.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Vice President Procurement. Requesting some data. I can provide the data, but I'm marked it to colleagues.
+
+Naamani, Mohamad:
+I'm dope you so that we can discuss with some data. What does it does requesting some data mean from where?
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+So basically he has. He has some question related to how MRP will function after this IBP, so we need to elaborate more on the functionality of IBP and how it will replace the current MRP as a solution.
+
+Naamani, Mohamad:
+OK, so that's not data that that's a clarification or explanation of the solution. That's not data in terms of data like items.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Sorry, my bad. It's not data. Yeah, so I've looped you. Yeah, we'll reply that.
+
+Naamani, Mohamad:
+And we need to talk to Khalid at 930. OK, yeah, yeah. I've put all the points to be discussed with Khalid in our PMO chat for everyone's reference. Yeah, but let's use this as a reference for everything. Keep chasing, but also clean it up because right now we're spending good amount of time during this call on figuring out where this fits or not, which is not the idea.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 2:
+Sorry, Mohamed, can we bring up the risk assessment thing tomorrow in the meeting with Khaled?
+
+Naamani, Mohamad:
+It's with Khaled. If anyone talks to you, tell him please check with Khaled. This is not something we've done. We need also to be clear, we do not own everything in the project. So if they say please we need an answer say this has been add them is if it's an email add Khalid and Asma and say please dear Asma Khalid appreciate we're not responsible for everything under the sun so if it's in person you can just say can you please send us an email copying or send Khalid and Asma an email copying me as Kyle I'll explain but it's something with ADNOC so let's also be firm in terms of what we own or not.
+
+ Thanks, everyone. I need to jump.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Rocio Minguillon:
+But that can you hear us? You're muted. I don't know. I don't well, I don't is here. Maybe we can start with this point. It was regarding Rahul the meeting we have on Thursday of drilling. Then the question of Bastian and Arun was regarding that we receive the – we end up receiving the data, I'm not sure if today or Friday. What were – what was you considering to show on that session? Because we don't think that we have enough content to do that session actually, the drilling one.
+
+
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah, so. Yeah, so essentially what we discussed with Bastian was that we already have a template and the template is discussed and agreed with AdNoc, which means we are just waiting for data to be loaded for the template. So while AdNoc is working on the data, can we configure the template in IBP so that once we receive data, we simply upload data for the template and then show in IBP how demand will look like, because there is no demand, there is no forecasting, or there is no nothing, but only uploading the data as template.
+
+ The only additional thing we can do is whatever data gets uploaded to the template, we can convert that into multiple different planning views, so that we can one show for different material types, what are the planning view, one we can show on the well-planned level, and one we can show on overall, and probably what we can like the snapshots what we're talking about so that historical changes in demand can be tracked and some reports or some dashboards liquid
+
+Rocio Minguillon:
+demand which we can show that's something if it is possible we can utilize this time to work in parallel okay yeah no definitely I need the feedback from arun and bastian because I'm not sure yeah so yeah I don't
+
+Arun Singh:
+need them yes yeah I know so basically So basically what I was thinking of, let us review the data that we get hopefully by tomorrow and let us connect you, me and Abhashan and probably we go through the data and you know we will try to you know map some of the solutioning part in IBP and hopefully we can showcase them on Tulsi meeting but there are like after redesigning there are a lot of open questions in my mind so probably maybe we can discuss them in tomorrow's session.
+
+
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+So in the meantime can you like work parallelly on identifying all the attributes and key figures based on the template because we already have a template right I think it's 90% the template is ready they will provide us some feedback on maybe a few more fields to be added which becomes the attributes for us but then other than that if we are setting something parallelly then once we get to data for sure, we need to discuss the data and see if there are any additional changes with respect to data.
+
+ If the data we receive leads to a lot of changes, then for sure we'll have to move the session from Thursday to maybe sometime next week. But if the data we received is something simple enough for us to showcase on Thursday, then we can discuss internally and continue with the Thursday session.
+
+Arun Singh:
+Yeah, so that is what I'm saying. Hopefully, if we get data by tomorrow, let us connect and just go through it. And let us try to map what Okay, okay, okay, perfect.
+
+UNKNOWN_SPEAKER:
+So let's let's align tomorrow. All right.
+
+Rocio Minguillon:
+Well, I think we're all good. Well, yeah, good book or Rahul if you can please share me the so we can try this today.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+The thing is, the file is on Cushboo's local desktop and she.
+
+Rocio Minguillon:
+But isn't it? I think now it's in the realized.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah, so so let me forward that detail on the Adnox side. I've I've received something.
+
+UNKNOWN_SPEAKER:
+Let me forward it. To. Reinaldo. OK, Reinaldo, you there? Yes.
+
+Reinaldo Gutierrez:
+I'm forwarding you all the details with all the system IDs.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+I could find a track. I could track that chat where where all this information was provided.
+
+UNKNOWN_SPEAKER:
+OK. OK, this will take this.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Yeah, this will take care of the details and everything.
+
+UNKNOWN_SPEAKER:
+OK, thank you. Alright, thank you bye bye.
+
+Conference Room (MM- SKEC2 - L08) - Speaker 1:
+Have a nice day.
+
+UNKNOWN_SPEAKER:
+Thank you guys.
+
