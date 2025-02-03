@@ -1,0 +1,1318 @@
+UNKNOWN_SPEAKER:
+Good morning. Assalamu alaikum, Yaser.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+How are you?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Wa alaikum salam.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+How are you, Sadiq? How are you?
+
+UNKNOWN_SPEAKER:
+How's everything? Alhamdulillah khair.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+All good. Alhamdulillah. Thank you. Alhamdulillah. Okay. So because we have anyone from offshore here?
+
+UNKNOWN_SPEAKER:
+Abdulrahman Okay.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Abdulrahman Rido? I invited Hajar Khan, Yaser.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Yes, sir. From offshore, please include the Marwa team. It will be better. Because Abdul, he's taking care of drilling.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+So... I'm trying to add... Who is this one?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Najeeb.
+
+UNKNOWN_SPEAKER:
+No.
+
+Aboobacker M. (ADNOC Gas - PD):
+No answer from him.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Yeah, Najeeb is sick today.
+
+UNKNOWN_SPEAKER:
+I will...
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+No problem.
+
+UNKNOWN_SPEAKER:
+Noorah.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+If Latif is here, that's fine.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+But if you are busy at Latif, just recommend to us a name and you can invite him here.
+
+UNKNOWN_SPEAKER:
+I think we are okay, Read. Roll.
+
+Fakhouri, Mohamad:
+I think Raoul is on a different call. He'll join in a minute. But Bastian, Hector, I think we can start.
+
+MM- SKEC2 - L08:
+Yes, Raoul just turned up for a second.
+
+Bastian Osorio:
+But I think we can start, Bastian, right? Yes, please go ahead.
+
+UNKNOWN_SPEAKER:
+Good morning, everyone. Let me share my screen so we can start.
+
+Bastian Osorio:
+Please let me know when you when you can see it.
+
+UNKNOWN_SPEAKER:
+Can you see the screen?
+
+Bastian Osorio:
+Yes, we can see it.
+
+UNKNOWN_SPEAKER:
+Yeah. Okay. Welcome, everyone.
+
+Bastian Osorio:
+So, this is the first session for the unit testing chemicals demand planning. Okay. What we're going to see is basically first we're going to review the data scope, then we're going to review the different scenarios that we plan to cover during these different sessions. Then we're going to jump into the planning type definition. Finally, which is going to take most of the sessions, is the system preview.
+
+ During the system preview, I would like to to that some of the users can share the screen and starting already interacting with the system. So we can right away start solving some doubts and so on and so forth. So one more thing is that for chemicals demand planning, we will have three sessions and for inventory planning, also chemicals, we will have three more sessions. Okay, so we have this one in the morning, one in the afternoon and one tomorrow morning and then for for inventory we will have one tomorrow afternoon and then on Wednesday we will have one in the morning and one
+
+MM- SKEC2 - L08:
+in the afternoon okay. So let's go. One point uh the last week MRO and user and chemical and user uh sorry the people part of this conversation may or may not be same so let's assume that we start from scratch or at least for the demand
+
+Bastian Osorio:
+yeah yeah of course of course okay data scope uh this is so we are working here we will be working with a subset of data okay so this is the subset of data that uh we will cover and we will review in the system Okay, we have 10 plants here are listed. We have 68 materials with material category chemicals and catalysts with consumptions over the last five years. I mean, we do have more materials, but we're not considering them because they didn't have consumption over the last five years.
+
+ And then we have 84 material plant combinations and finally 869 consumption events. These consumption events come from material reservations.
+
+UNKNOWN_SPEAKER:
+We will see that.
+
+Bastian Osorio:
+Let's review these scenarios. We will start by review the planning type definition and see how it looks in AVP. Then we're going to jump into the FMSN segmentation and how it is calculated directly in AVP. Then we're going to jump into the data cleansing, how to run a data cleansing job and how to review results, and then how to accept them or modify them if we like, Then we're going to jump into the statistical forecast for chemicals.
+
+ Again, how to generate forecasts and how to adjust it when needed. Then budgeting and alerts. And then material preservation approval is something we're going to cover in the afternoon session. Which is basically how we can approve or reject. Our reservation.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Point number four. Adjust historical consumption data cleansing. What do you mean by? I'm not very clear on that.
+
+Bastian Osorio:
+Yeah, so because we want to for some materials we want to generate a forecast. We need data. That is correct, right? That is, we need data that follows certain pattern. So in some cases you have exceptional situations. Let's say for any given reason in one year you consume, I don't know, 10 times more than one specific material, but it was for an exceptional situation, something that is very unlikely will repeat.
+
+ So we shouldn't use that data. And that example that I'm giving that we use 10 times the usual consumption, we shouldn't replicate that to the future. So to do that, we need to clean the data to have something to have consistent data to be used to generate a forecast. But to be clear here, we are not changing the source data. So you still will be able to see all the consumptions. We're not going to change any data in the source system.
+
+ It's just we cannot generate a new key figure with the adjustments.
+
+UNKNOWN_SPEAKER:
+OK?
+
+Bastian Osorio:
+Okay, so in number eight, this, as I was saying, material reservation approval, this is something we didn't cover during the MRO, the demand planning, but we are gonna cover it here, which is, yeah, how to approve and how to reject a reservation, and as I said, we're gonna review this in the afternoon session. And finally, we have four points that I need to review tomorrow, is snapshots for forecast, but also for reservations, and number 11, and the accuracy KPIs.
+
+ And finally, we have some contextual navigation, which is an app. I'm not sure if we're going to have the time to cover it, but it's basically that you can jump directly from IVP to S4 HANA to review some transactional data like material orders and so on and so forth. But this is at the end and it's more, as I said, it is to review the data from S4. Jumping from IBT.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I have a question here, number 8, regarding material reservation approval here. So now the demand planning output will create a reservation in SAP IPB or in ERB here? Or what exactly here, after the demand planning initiated?
+
+Bastian Osorio:
+The output of demand planning. Will still happen in Surjana, but the difference is that it can be rejected or approved in AVP. Of course, if you reject that, this element will not be considered to the later PR or STO generation.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+That means that the demand planning it will be, it will create a material reservation, right?
+
+Bastian Osorio:
+If he is approved.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+It is yes, so it's about.
+
+MM- SKEC2 - L08:
+So I think I'm going to point out. Yes, the point here is from Morgan also in what they are saying. Yes, yes, yes, but I'm discussing this internally with murder. Yeah, what they're requesting is once the once the Demand is approved in for the approval, it should automatically create PR for the demand in S4 Adam.
+
+UNKNOWN_SPEAKER:
+Perfect.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+That's what we need because you know that the current practice here in SAP IBP, no PR will be released unless we have a reservation. Because we have a cost center and everything, all everything, it will, that means we will have a commitment here. Once we have a reservation, so that we will release the PR and to avoid any excess or any accumulated quantities. So that now we need to have a demand planning from the end user.
+
+ Once that demand planning is approved, it should be the output of that one. It should be creating a reservation and then it will forward to the supply plan to create a PR based on the approved reservation and quantities. And I think you told us we'll discuss it in the next session, I think, right? In deep dive, I think. We have another session in the upcoming session, inshallah. We'll discuss it further, inshallah.
+
+
+
+Bastian Osorio:
+No problem. Yeah, sure.
+
+MM- SKEC2 - L08:
+Yeah, go ahead. So yeah, sir, and everyone, probably one question is that these are the scenarios which we feel are relevant based upon the possibility which we have in IVP. Now, on top of it, as part of this discussion, we would also like to get the feedback on what additional scenarios you would like us to consider as we show the solution. Now, we are talking about the list of scenarios. We'll go through each and every scenario.
+
+ We'll show them how things will happen in IVP. Be. Now looking at these scenarios, one of the expectation is that you give us the confirmation on what additional scenarios you would like us to configure so that that becomes part of the solution design and those scenarios will be part of the further SIT and UoT testing scenarios so that when you are testing this system you know these are the scenarios to be tested.
+
+ So we need input from AdNoc team on the scenarios which are to be included as part of subsequent phases of the project.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+No problem. The team here is experts and they will provide and share their feedback. No problem.
+
+Bastian Osorio:
+Just we need to see all the scenarios and we'll decide. All right. Thank you. Great. So chemical planning type definition. So the entire process starts, of course, and this assumes we have the master data, but starts with the historical consumption that is the historical material reservation. But the actual consumption, not the requested quantity. We use this information, the master data, plus this transactional data to generate a forecast, okay?
+
+ To do the forecasting process. This forecasting process is first used to long-term planning in which, in this process, the forecast the output of this process, the forecast, can be compared, for example, with the budget. Okay, so if you have a budget, it will be very useful to integrate it to IVP so you can compare what is going to be the, what is the system is telling you is very likely that you will consume in the next five years, let's say, against what you have in your budget.
+
+ So we can generate alerts or even you can refer in your current budget based on the forecast, okay? But this is a long-term planning as we have here, okay? Then for materials that have more than 25 consumptions in the last five years, when I say 25 consumptions, I don't mean 25 units or 25 tons or 25 kilograms. I mean 25 consumption events. The material was consumed it was there were were more than 25 uh preservations were were made for this material.
+
+ 20-25 times huh? 25 times you showed correct?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+25 times you showed. Yeah. Yes it was 25 times I showed yes.
+
+Abdulrahman Al Meqbaali (Borouge):
+Yeah final issuance, final issuance.
+
+Bastian Osorio:
+Yeah if a material was was I was saying it was consumed more than 25 then this material can be forecasted. So then we will create a forecast. And this will be the main input for inventory planning and supply planning. Reservations here will still be useful, but it will consume the forecast. Whereas if a material has less than 25 consumptions, the planning type will be reordered point, meaning we're not going to trigger any PR or STO unless we have the reservation, okay?
+
+ And this is the main difference with forecast-based where we're saying you have so much consumption for this material that you shouldn't wait until you have the reservation to start buying. But we'll review some examples What about if the material is new?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+It does not have historical consumption.
+
+Bastian Osorio:
+That is a different scenario that we're going to cover during the UATs. We're not going to cover here, but just a brief introduction. We have to generate a rule for that material based on other materials information. So, for example, if we're going to try to first generate establish like relationships between this material and the other ones or we can use the information provided by the manufacturer.
+
+ But the process of that, the example that you're giving is very important. We have a solution for that, but we haven't, we're not going to cover here. Maybe we can do a session later in the next few weeks to cover that specific example, which is very important.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, to get the last five years data, OK, so how are we going to get this last five years data? Are you going to interface with the custom table which is available for HANA or from the SAP standard table? Because SAP standard table will not have your files data. So please make sure that you are interfacing with the SAP custom table where we used to have more than 5 years data. Yeah, from the ERP I mean old ERP also.
+
+ Maybe you can check with ignition so you can help you on this. Please make sure you are interfacing with the customer.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Already they have already. They have been given that custom table which holds the consumption for the ease of planning, even that table is having on monthly. You see, the way that is happening, Jagga, is that the reason why that table may not be suitable is that table is having consolidated consumption. That is, each month, if the material was consumed, the value consumed, the quantity consumed is there, OK?
+
+ But it doesn't tell that that material was issued two times or five times in the same month. That information will only be available in the standard SAP table. So in other words, maybe three, one ERP data, maybe we may not have that sort of information. But anyway, they know the table that we are talking about.
+
+MM- SKEC2 - L08:
+Yes, so Jaganath and Vignesh, we have analyzed the table. So that's something, Vignesh, I would like to connect separately to discuss this. I can involve Jaganath also in that conversation. There are two reasons where we see that the table may not be directly useful. One, the table does not identify which element for which the consumption happens. So if I have to use it for MRO, I cannot split between CEM, PEM, or other consumption history.
+
+ It has the total quantity and value only. So that's one thing. It is at material level, but further does not differentiate between different types of consumption within the material. What is the manual consumption versus what is the PM? The same goes here. So we understand the table. We've reviewed it. Later today, we'll have a quick session to discuss about it and close how we want to proceed with actual consumption.
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+That is fine. We can align on that. And one small correction. Which you are saying. See, this reorder point is not going to be triggered when there is a reservation. It doesn't mean, technically, that is not the right. Whenever the stock falls below the reorder point, that time, you know, the reorder point gets triggered. So it is necessarily not the reservation. So if the stock falls below the reorder point Also, the reorder point planning should happen.
+
+ So just to make sure that is considered. Yeah, yeah, of course. Yeah, OK.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But Vikrish, in the previous session, they said there is no ROP for any items in the future. There will be.
+
+UNKNOWN_SPEAKER:
+Why?
+
+Vignesh Perumal (ADNOC Group D&CS):
+There will not be any ROP? I don't know.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+That is what they said. In IVP, there is no ROP.
+
+MM- SKEC2 - L08:
+No, no. So, Arun, I think the previous session what we discussed is the MRP types which you have today in SAP will not exist. The MRP types in SAP will be X0 which is external planning. The differentiation between reorder point versus advanced supplier planning, that all information would be available only in IPP. It will be, that's the problem.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So, what is the, instead of Z1, we have to use the D3.
+
+MM- SKEC2 - L08:
+So that is actually that is high. In S4, in respect to whether it is PD or Z1, if the model is to be planned in IBP, it has to be at 0 otherwise. Now, when it comes to IBP, you'll be able to differentiate in IBP what is forecast-based planning versus what is the point-based planning. So that differentiation, you'll be able to see in IBP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Let me explain it like this, Arun. So what you are going to be just Analyzing is, does that material require to be planned or not planned? OK, if it is planned, simply in the MDG, it will be x0. At the SAP HANA stage, you are not going and trying to tell the system, this I want reorder point planning, this I want PD plan. No, no, you are not going to do all that. Simply in the material master, x0.
+
+ That means it is going to be planned in an external system. Now, when that material comes to the IDP, then there will be this sort of an algorithm. Okay, now they will check whether a material has enough data points for consumption like this. Like if there is more than 25 points, again, you can correct me after I'm completing the round. So if there is more than 25 points consumption over five years, then that is a good candidate for advanced supply planning where they can generate a forecast.
+
+ If there is no, if there is less consumption, then what will happen is there will be a reorder point planning. Same sort of reorder point planning that we have in the one ERP. And you guys will be also, on a periodic basis, be assessing the reorder point safety stock. This is very essential. So you will be doing that for materials which the IDP identifies as relevant for reorder point planning. Now, Rahul, please correct or add anything that I missed.
+
+
+
+MM- SKEC2 - L08:
+You are exactly correct. This is what is going to happen. The differentiation would be available in IBP. You will be able to look at levels, confirm levels, agree on the levels, change the levels in IBP. You will stop using S4 HANA for planning the material and the fields which are related to planning in S4 HANA would not be relevant.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Rahul, my question is very simple. In case most of the chemistry we have designed Definitely will have more than 25 issues for the last five years. Yeah, so those items you're going to do a forecast based on planning. So whether the reorder point or the Mac stock will be available or not.
+
+MM- SKEC2 - L08:
+For those items. So. If it is not reorder point, do you still need the the Mac stocks and other parameters that are to be be maintained?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+That was the same question I am asking you. Once you fall under forecast-based planning, whether the ROP and safety stock has to be available or not in that item?
+
+MM- SKEC2 - L08:
+So by definition, if it is not a reorder point planning, the reorder point is not required. Safety stock would be there. You can have max if you want, but then by definition, if it is not a reorder point planning, you do not need to define which means you are procuring based upon the forecast. You exactly know what is required, when it's required, and the procurement planning is dependent on that.
+
+ My question is whether the ROP level will be there in the item master or not.
+
+UNKNOWN_SPEAKER:
+In SAP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+No. That's what I said to Vignesh. It's there in the external system. It's being planned in an SAP. External system, right? The SAP, see in the SAP system, the MRP engine is not going to run. So the material is going to go by.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Vignesh, if there is any issue now, Vignesh, operations or the end user, they will go to the MRP parameter in the SAP and they will see what is the ROP set in the item master. So for this case, what we are going to do?
+
+Vignesh Perumal (ADNOC Group D&CS):
+He is asking for maybe the visibility to the end user. It is not for planning purposes, only for information But see, the thing is, if it's a forecast-based planning, what they are trying to say, they are not going to calculate the reorder point. Whereas if it's a reorder point planning, the thing is, reorder point will also be calculated. And also, it will be pushed to the SAP HANA system, right, Rahul?
+
+ Reorder point and safety. So even though MRP engine in the SAP will not run, it will just be there in the SAP HANA system, at least for reporting purposes or any other purposes, right?
+
+MM- SKEC2 - L08:
+So we will take that. Allows us to maintain the reorder point because you know dependent parameters based on MRP type. Maybe not all the parameters. We have to check whether if we are able to maintain this parameter.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+If we are, we can push that information, not a problem. All the other companies they operate this IPP.
+
+MM- SKEC2 - L08:
+Or the MRP parameters. See there are two things in most of the companies. Or every company which uses IBP, the MRP type changes to X0, which is external planning, which means the parameters on MRP1. See, the MRP1 to view parameters are for MRP to execute. Those parameters define how you want MRP to execute. If you stop using MRP and stop using IBP for planning, then those parameters are not relevant at all for S4HANA.
+
+ That's why those parameters are not relevant. Updated everyone starts adopting the parameters from IVP directly so we understand your requirement here we want to give the visibility of parameters to end user in some form today we are using SAP if the data comes back to SAP this communication to the end user would be efficient is what you are trying to say so we've noted this and we'll check how we can maintain this in S4 HANA even though it's not relevant for mRNA okay and is
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+there any like a feasibility to view what are the items falls under forecast planning and what are the items of course and you'll be able to see that in IVP and we will this is the first scenario we're going
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+to cover okay okay all right okay so let's go into that just yeah if you allow me I'm a little bit confused now. Two points we need to clear it. At the beginning in the previous workshop, you remember that we have discussed, we have two scenarios. The first scenario where chemicals are received in forecasts out of the system and does not have reorder point. The second scenario is for the item which is with a reorder point, maximum reorder point.
+
+ So for those item, I remember we said that wherever there is a reorder point already set in the system, it will be treated same like the MRO. Like the MRO material. And for chemical which does not have reorder point in the system, the consumption will be generated and it will go to the inducer to review and make the final consumption, final forecast. Now in this scenario, First, we need to clear if my understanding is right or not.
+
+ The second point, here you are saying more than 25% consumption in the last five years. Of course, most of the chemicals will have more than five times issued in five years, but for production chemicals, most of our items it fall that it's changed within between three to five years. So every three years to five years, we have new items being introduced. So in this case, this will not be captured by the system to measure whether they have more than 25 or not.
+
+
+
+Bastian Osorio:
+But question, these materials, the ones that are being introduced are replacing or old materials? Or a completely new?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, it is mostly replacing old material.
+
+Bastian Osorio:
+In that case, I think it is a different scenario because you can find the consumption. I mean, you can basically use the old information for the new material, assuming that it will behave in the same way.
+
+UNKNOWN_SPEAKER:
+Right? Yeah, OK.
+
+MM- SKEC2 - L08:
+So for this point, Ali, Mohammed, and Bastian, this was clearly discussed that whatever new material reference, material discussion of what we are having for MRL is not applicable for chemicals, because chemicals, they know which material is to be introduced in place of which material, which means standard lifecycle-based planning is relevant for chemical. And history from the old material can be used by this manual input of life cycle planning.
+
+
+
+Bastian Osorio:
+That's right. But this this world middle and new material.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+The relationship is there in the S4 HANA yeah?
+
+Bastian Osorio:
+Yeah, even better because we can integrate it.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+The relationship is all under the same category. It will be in the same product group mostly and it will be under the same material type.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+For example, you are using one chemical. After five years, due to the change in property of the field or some other reasons, you are introducing another replacement chemical for the same. Are you using? I mean is there anything between the old code and new code in S4 Anna or it?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+It is. It is maintained manually through some other exergy. Yeah, it is mostly maintained manually because it is. Even though it is the same application, but it is different product.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK, OK, maybe you need to share this to them. Although I have another question and say for example I'm. There is a new chemical introduced OK, not a replacement chemical. OK, just two years before and also it is having more than 20 times 20 times of consumption within the two years. So this chemical falls under which category as per this flowchart? Here for campaigns. No, it is 20 times only OK. Consumed 20 times in the last two years.
+
+
+
+Bastian Osorio:
+But do you have that relationship with the old material? No, no, no.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+This is a completely new chemical, OK? Introduced just two years before. And it is consumed 20 times more than, I mean, 20 times, at least 20 times in the last two years.
+
+Bastian Osorio:
+Here, reorder point. Still under the reorder point planning. Yeah, you don't have enough data to create a good forecast.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+But if there is no reorder point, Because now for chemical, we don't put reorder point. I mean, for the forecasted chemical, there is no reorder point. It is only based on the forecast. So what I suggest that for, even if it is new, it have to, from the beginning, forecasts need to be captured.
+
+Bastian Osorio:
+Yeah, that is possible. But for that, we need to have the with the old material. If we have the relationship, that's fine. The material can be forecasted. But if not, if we have just, let's say, three, four consumptions, that is not enough information to, in no relationship with the old material, then that is not enough information to generate the forecast.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, it will go to the end user to put his forecast, to put his information. Input of the forecast.
+
+UNKNOWN_SPEAKER:
+OK. Yeah.
+
+Bastian Osorio:
+I mean, user input here is also.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+See, whenever there is currently whenever there is new new chemical introduced. This is not usual, but we have scenarios where new chemicals been introduced or new application and where we don't have a previous reference to measure in it. So in this case, from the beginning, we will receive the forecast from the end user to tell us their plan, how much they are planning to consume. Then later on, you can add the consumption after one year to be a reference.
+
+ But even if it is new, then again, the forecast from the users will be needed.
+
+UNKNOWN_SPEAKER:
+it.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Reorder point is only for chemical which have certain patent and from the beginning it has been in the time of coding and creating the material, the reorder Minimum and maxima has been set. So this is no problem in it, but what we are looking for chemical which is Forecasted and it does not have reorder point in the system Okay, I think it is it is better if we review some data and
+
+Bastian Osorio:
+then we come up With the questions because it's in this sense. We're gonna make more on our database Observations so we all can understand better, okay? Okay, but please consider this scenario because it is important. Yes, I want to consider that.
+
+Hector Palacios (ADNOC Group D&CS):
+That's why I want to jump into the data. Yeah, before we jump, Ali, is this the most common scenario that you are basing on forecast instead of a reorder point? Sorry? Is this the most common scenario based on forecast instead of reorder point?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Fakhouri, Mohamad:
+Okay, okay. I have a question here. Yeah, just one point. I think, but some, and correct me here if I'm wrong, Tim, but some group companies, it is only based on the order point. And Ali, to your point, and some other companies, it is just solely based on user input forecast.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, that is what I was telling. We have two scenarios, which need to be separated. One scenario where there is a reorder point and another scenario we don't put reorder point or minimum maximum in the system and it is based only in the forecast.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+And I think Ali, mainly for onshore, offshore and sour gas I think, right Ali?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+I'm not sure about sour gas, I think so, but onshore, offshore also So I think maybe Dhafra. A question here early. Is there a specific reason why we still want to use reorder based planning?
+
+MM- SKEC2 - L08:
+If even if we have sufficient consumption history in the system, do you think we can? If we can provide better forecast, we can. If there is an option for us to do forecast based planning or no, only reorder based planning, point based planning?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, no, no. It's better we do it in the forecast because reorder point, it is usually for the regular consumption like lab chemical and all this. But for bulk use of chemical like production chemical, we depend only in the forecast because the Sometimes it stays stable, sometimes it changes, and the forecast from one month to another may be different. So we don't want to just order and keep it in our stock because the quantity also for some of the chemicals, the consumption is high.
+
+ We have a range between 80 to 400 to 700 drums per month.
+
+MM- SKEC2 - L08:
+For sure, based on consumption, we'll be able to predict this and if there is a seasonality or if there is a the pattern in the consumption that would be input to the forecast planning. But the question is, you shared that some of the agencies only do reorder point planning, correct? So at the agency level, the definition is there that a certain agency will do only reorder point based planning.
+
+UNKNOWN_SPEAKER:
+Is this correct?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+I did not get exactly your question.
+
+MM- SKEC2 - L08:
+So when you say you have two scenarios, reorder point based planning versus So, forecast is clear, not a question. For the scenario where the reorder point-based planning happens, is it happening for specific AGCs or specific materials?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+This is for only the consumable and laboratory chemical and some chemical which is used in low quantities, but for the regular chemical which is have continuous dosage in the field, which is only in the forecast.
+
+MM- SKEC2 - L08:
+All right, so there is no, because what we understand is like based on the previous discussion, certain agencies would like to only plan based upon reorder point planning, but it is not agency specific, it is metal specific. Consumables and lab chemicals which have low consumption are for reorder point planning as per today's understanding, correct? Is this understanding correct?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+In our situation, but in other chemical, in other group of company, maybe it is different.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, well, I think what Mr. Ali is trying to say is, for his company, like the lab chemicals or other items, they do order based on the ROP. For chemicals, they are planning on demand. If a user tells they need the material, they're ordering.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So yes, sometimes no, you have to understand in this way.
+
+UNKNOWN_SPEAKER:
+That's right.
+
+Bastian Osorio:
+My question is, is there a way to determine in the system if a material is forecast based or reorder point?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, see from now what you have to do is if the item is based on the planning like based on the user request if they're ordering again those items are the history know it's already captured so based on the system is going to give the trigger for the next one or two years what is the future requirement so how to validate this requirement you tell us from system point of view so you have the data maybe for all these requirement last five years data you have all those items are ordered based on the demand from the user, not on the ROP levels.
+
+ Since we have the last five year data, you tell to Mr. Ali, this is my recommend, I mean the future recommend for the next one year. So how to validate this quantity, they have to check with the user.
+
+MM- SKEC2 - L08:
+So how to develop the system, you define to him. So that's what would be suggested by system. Just checking if there is anything today other than MRP type in a city which separates this classification of current planning or it is defined in MRP type only.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See everything is based on the MRP type only. So whatever you develop now just develop based on the either VB or Z1. So in Arnog refining and gas we follow the Z1 category like an ROP plus the external reservations. And if it is a PD means it is purely based on the user requirement. Yeah.
+
+MM- SKEC2 - L08:
+So when it is PD, the user requirement we discussed comes in Excel sheet and that's what gets converted into.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Either through an Excel sheet or through an approved reservation, like a work order reservation.
+
+MM- SKEC2 - L08:
+Yeah, yeah. So for sure the best way to consumption history, if it is getting consumed regularly, IBIC will propose forecast. That's what we've discussed. We are aligned there. The only point we just wanted to make sure we are aligned is the reorder point best planning. And then the feedback is consumable lab chemicals, which are consumed in low quantity, are reorder point. So the differentiation is on such materials.
+
+ Let's look at the data. Probably Bastian will have a look at the data, and then we'll see how this discussion can continue I think we can proceed with our agenda what we are planning. Is that okay with everyone? I have a question.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+What if the item wasn't consumed more than 25 in the last five years and same time doesn't have a reorder point, where it will go?
+
+Bastian Osorio:
+We will calculate that reorder point.
+
+UNKNOWN_SPEAKER:
+Sorry?
+
+Bastian Osorio:
+We will calculate a reorder point in ABP.
+
+UNKNOWN_SPEAKER:
+OK. And another question.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+In terms of the budget, what the feature like IBP will give me to help me in a budget?
+
+Bastian Osorio:
+So first of all, it can give you the most used feature for budgeting is basically that. You put an amount in, let's say, in a currency, and then it disaggregates the consumptions based on the forecast, okay? So you can convert a currency amount into quantity. That is one way to do it. And then you can compare that quantity with the forecast, okay? Let's say you forecasted, I know, of 50 units, you have in your budget, let's say 50 units for a material.
+
+ If this material is getting close to that 50 unit, then you need to take a look at your budget. But I think it's more useful to look at in aggregated terms, per location maybe, per plant, per AGC, so on and so forth. Compare what is your consumption, your actual consumption in your in your forecast against your budget. Let's say if you are, I don't know, in the middle of the year and you already consume 80% of the budget, that is of course, that is not good.
+
+ Things like that, analysis like this is the that you can do in ABP?
+
+UNKNOWN_SPEAKER:
+Is it clear? Yes. Another question I have.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Let's say if I have a new item, and as per you, IBP will tell me the MRP type is X0. Then it will undergo under this process. OK, if the item will go for forecast base, then it will stay the same at zero? Or there is no differentiation between the forecast and reorder point?
+
+Bastian Osorio:
+In S1?
+
+UNKNOWN_SPEAKER:
+No, in IBP.
+
+Bastian Osorio:
+No, no, no. In IBP, you will be able to see the difference between these two types.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+OK, how I will differentiate? For example, there is no MRP type, for example, for this and this, instead of going checking the consumption last five years or checking if the item has levels or not. Yeah, let me show you that right away, because I have it here. For example, as for HANA, we know PD, it will go based on demand. Z1, it will go for ROP. Level here in IBB. How will we differentiate this one will go for forecast or ROP level?
+
+ I will not go check each single line item, what's the five-year consumption or check if it has a level or no. Will differentiate this? Yeah, forecast base.
+
+Bastian Osorio:
+Here we have an attribute called forecast base, okay? Can you see my screen? I'm And these materials with the attribute forecast base are planned based on forecast. Then I have other materials called reorder point. And these are planned based on reorder point. So it's very straightforward. You don't need to deep dive into the system to find this characteristic. You can find it right away. In fact, we will create, I already create a template which has this planning type activated in each one of the different planning views.
+
+
+
+UNKNOWN_SPEAKER:
+Is it clear?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+This can be captured anywhere in the item master so that everyone can access or get an idea about this.
+
+MM- SKEC2 - L08:
+So Arun, we will check how we can update this in item master, metal master SAP. We'll have to verify and confirm whether SAP allows us to update this planning type again, even if we are not using. There are other ways to do it.
+
+Vignesh Perumal (ADNOC Group D&CS):
+We will see. Objective is, their requirement is clear. We will find out a way to provide the solution, which is reportable. There are many ways we can do it. We will not go into that. Right now, but let's do that later.
+
+Bastian Osorio:
+One final comment for my part before jumping into the system is that this rule for me shouldn't be fixed. If a user says determine, if a planner says determine, no, this material, even though it has only 20 consumptions, it should be a plan based on forecast, the user should have that option. Or the other way around, as well. If they say, no, maybe this material was consumed, I don't know, 30 times in the last five years, but I want to still be planned based on reorder point, that still is an option.
+
+ This is a baseline that, of course, I recommend to be followed in most of the cases. But for some material, you need to use a forecast, even though you don't have maybe enough information, and you need the users input that is also possible and the system should address that, okay?
+
+Vignesh Perumal (ADNOC Group D&CS):
+But that input must come from the inventory controller, right? Because the inventory controller will be the right guy who can make such a decision on the proposal.
+
+UNKNOWN_SPEAKER:
+Exactly, exactly.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, the input will come So the end user does not do this. The input for the forecast will come from the end user, not from the inventory control.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Input will come from the end user, which you are right. But the end user does not say, I want this material for forecast-based. I want this material for reorder point. These are decisions which are generally by the inventory controller considering the frequency of consumption, criticality of material, maybe some other stock keeping parameters, based on which the inventory controller can take such sort of the system will propose, make a proposal to you.
+
+ If you want, you may override it.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+This is what they're trying to say. Side, minimum and maximum. Inventory control can challenge the end user and talk with them. But at the end, it is the end user who recommend the minimum and maximum level during creating of the material in MDG. So the same, it will go whether it will be in reorder point or in the during the forecast?
+
+UNKNOWN_SPEAKER:
+I'm not too sure because this is new to me.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I am not too sure whether this should be left to the user to decide whether they want to execute a forecast. I don't know. If you ask me, I wouldn't suggest that. But anyway, this is you because this is not the end user's decision how I replenish the material. He has the requirements. He may have a safety stock, and he may have his requirement, but he does not dictate how the inventory team does the planning.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+That is your responsibility, right? It is both sides. Yeah, Vignesh, actually Ali is right.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+They recommend what they require, but we do like a challenge of whether we can go based on the planning or based on RLP level. We do like this type of challenges between them.
+
+Vignesh Perumal (ADNOC Group D&CS):
+And this is what they are trying to say. You do have the option to to overwrite the decision if required, I shall.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Yeah, so you know regarding the setting up for the stock levels minimum box during the creation of any new recreated item, our rules and responsibility as a inventory controller here to review that levels. And to update the review and update the methods of whether this item to be ordered on demand or this item to be ordered on forecasting with no levels or what is the minimum maximum. We need to review and challenge the end user and sometimes you know this is the hour but the ombuds it should be initiated by the end user and users should put the min max and minimum and it will come to us here in better control they will review and update and challenge the end-user.
+
+ After that, once everything is okay, maybe sometimes the end-user puts a huge quantity, a huge max. But the uninstalled quantity is not like this one, really. Based on the uninstalled, we need to review that. Oh yes, we have the uninstalled quantity, 10 bases, but the end-user put 11, let's say 20 bases. We need to challenge the end-user. This is wrong. We need to update, adjust the levels, and also we need to decide, well, this item, is it with levels or without levels?
+
+ We need this item either forecasted without levels, this item is a reorder by MinMax and that one. Once everything, the decision is done from our side, we approve it and we take the management approval, then it will be transferred to the material master and we'll go ahead with the regular management as usual.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I think we are discussing two points over here at the same time. Whenever a material is requesting a material using MDG, the user is going to request with these parameters, right? Then it comes to you as an inventory controller for review. Then your due diligence, you are going to do, and you are going to approve. This cycle will be complete. The proposal, like you guys have told, is going to come from the end user, because you don't know about the medium, but they will know.
+
+ So they will make the proposal. This is the material cataloging process, OK? They are not actually trying to talk about that process. Now, assume that the end user when he used, when creating the material, he put his expected stock keeping parameters or the replenishment parameters. Then you reviewed it, you challenged him, you agreed on the levels, and then you set up the inventory parameters here.
+
+ This process actually is happening after that. Then what is going to happen when these materials are going to IBP, the AI is going to work or not or machine learning, what it is going to do for each and every material, it is going to check the historical consumption. And it is going to give you, the inventory controller, the capability to choose, to have a view of whether that material, if you have a forecast-based planning, you may benefit from the long term in terms of cost.
+
+ If you have a reorder point planning, it is sufficient to actually for your inventory service level. So this system is going to propose to you. These are tools that the inventory team did not have previously in the one ERP. OK, one ERP, simply whatever there in the material master is there for the past 10 years. OK, nobody's going and changing it. Nobody's going and challenging it. No, that is just static information over there.
+
+ Once it is set, it is not getting reviewed. The point here is in the IVP, there is an AI and machine learning algorithms which are going to keep running. And it is going to give you the best forecast. But then again, what we are just trying to say is the machine learning may suggest something to you. But if you want to change the way you want to plan a material, Because you may know that for your operations, I want to change the type of planning.
+
+ You have the option. This is all what they are saying. Yes, you are right. The end user will come. The initial suggestion for the stock keeping or replenishment parameters will come from the end user only in the MDG skill system.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Well noted. Well noted. Well noted. I think after that and after, once the material we have a consumption for those items. Yes, by the machine learning, yes, we need to decide. But now, again, because at least now at the beginning, we need to see now the different scenarios. You know, the thing is that chemicals, it's not like a model. Chemicals, we have a lot of scenarios. You know that. Onshore is different than offshore.
+
+ Atomic gas is different than sour gas. As mentioned by Ali, Ali said that they are not utilizing the order point. They are utilizing or they are the process there and onshore and offshore. The forecasting, based on the forecasting demand. They have a manual work. But in the AdNIC guys and the remaining agencies, they are utilizing min-max. They are based on the reservation, the VR tracking of the system, and et cetera, the normal process.
+
+ Some different scenarios. We have lab chemicals, shelf life items. We need to see that scenarios. We need to ensure that, yes, now we have the full scenarios, the team here will situation. Once everything is done, then from our side will be satisfied. Then now we have only everything is like a drone. Yes, this forecasting we have more than 25 and that one. Maybe yes, we agree with you. We agree with the team IBP team.
+
+ Yes, but we need to see everything now and in front of us.
+
+Vignesh Perumal (ADNOC Group D&CS):
+We need to see the real. We need to see the data.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Once everything is done, yes, we will see. Yes, yes, yes.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Basit, did you manage to get access to the production data?
+
+Bastian Osorio:
+No, this is just a subset of data we are working to get. I mean, we do have access to the data, but we need to make some adjustments in the integration. So for now we have a subset of data, but in the next for the UATs, of course we will be connected to the development system and we will have way more than, I mean, of volume it will be, I think, the entire scope.
+
+Hector Palacios (ADNOC Group D&CS):
+We cannot access to production data right away. It requires some time and some transport on S4HANA side to get to that because we are using an instructor. We are using an instructor on S4HANA and that is not something quick, right? So, in order to get to production system, first we need to go through every system, right? So that will take some time. This is the data which I have given you previously.
+
+
+
+Vignesh Perumal (ADNOC Group D&CS):
+This is what you are trying to show or is this some other data? So Jagat, this is actually production data that we have given to them. It is not some random numbers which are shown here. So we have taken the production data and we have given it to them. These numbers are coming from the production as of end of November 2024, if I remember, or mid of December 2024, Jaga. So then for the production, like live production data, a live production connection, that is not established yet.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Bastian Osorio:
+Right, let's start. Then here we have four different key figures. And we are classifying this information based on the attribute planning type. And of course, as you know, we have two values here, forecast base and reorder point. OK, so what are the key figures that we have here? But here, first, we have the actual usage for chemicals, which for gas-based, we have a total of almost 15 million units or base unit.
+
+ Okay? And the total consumption events, we have it – well, we have it first separated by year, and then we have the total for the last five years, which is in total 382. And these are all these 382. And 82 consumption comes only from eight materials. So huge consumption volumes, also a lot of consumption events for just a few materials. Whereas for reordered point, the situation is a little bit different because we have a fewer consumption, two million, 600,000, and the total consumption events are more, but the materials are way more.
+
+ So, the difference here is clear, whereas for forecast-based, we have huge consumption volumes, a lot of consumption events, but just for a few materials. For reorder point, we have also even more consumption, but distribute way more materials okay so I'm gonna jump a little bit here into the dashboards you can look for the app here in Fiori dashboards.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Just a doubt in between sorry when you count the consumption events or transaction events so if multiple issues are against one reservation so you count it as multiple goods issue like for some reason they are issuing partially you know they are issuing partially in different dates so you count them as multiple events or it's it's again yeah same reservation yeah if there are consumptions in different dates then they are considered as different consumptions even though it is against
+
+Bastian Osorio:
+the same reservation yes yes because what is our I will say I've got a feature of the system. This is a time series system, right? It's not a transactional system, so we don't have here the order number. We have just the consumption, the material, the location, the source location if it's needed, the equipment, and that's it. We don't have the order. The order is the same, but the consumption are distributed across different periods of time for the system.
+
+ Consumption speed because they happen in different periods.
+
+MM- SKEC2 - L08:
+So sorry, any specific point here with respect to which we need to consider? Where it is consumed in the system? I'm just thinking about this point.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+You know if if one if it's the same reservation and they should due to maybe some logistic issue or something, they make goods issue in different dates or in multiple time in same day, for example. So it's not. I don't know whether it's supposed to be counted as multiple events.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yes, I think you're right. Yes, say for example, if a reservation is having different lines, this will happen against different lines for the same material. Then you can consider as a one one time. If it is a single line. But partial issue you have to consider one time only. Even though I've two times issued.
+
+MM- SKEC2 - L08:
+So the question is, what is the Just a minute. So what is the physical relevance of good tissue? So there are two practices which can happen. One is you create one reservation for the let's say for the entire week or entire month and based upon daily consumption, your goods issue against the same reservation every day that had identified. In that case it would be a partial consumption against a specific reservation.
+
+ But the quantities based on daily consumption or you have reservation and you would like to consume everything at once. So from a from actual physical consumption pattern perspective, what is more relevant? Is the daily consumption pattern more relevant or you would like to focus on consumption pattern per reservation?
+
+Mohammed Sadique (ADNOC - PE&ICV):
+I think it's supposed to be consumption pattern preservation, but team you have other point of view can share it.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+For the forecasted quantity for the forecasted chemical the quantity which is matter only the number of time it's not important whether they have taken it at one time or they have taken it in several interval time during the month it depend the quantity per month how much quantity they are taking or bearing how much quantity they are taking.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Yeah, I think for chemical quantity is more, more, more reliable because not like MRO. Is you can define by the CM or PM, they're all prototype. But for chemicals, sometimes they're using many, many times the same reservations that they just add just to make a good issuance in the same month. So it is going to be the same repeated reservations. The quantity is more based actually.
+
+MM- SKEC2 - L08:
+So it's a very good discussion I would like to spend five more minutes here to understand what is the physical relevance of this. So Ali the point you are saying is for the forecasted material the monthly consumption quantity is more relevant than the consumption events is that correct understanding?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yes exactly event is not important how many time in how many interval time they have taken the quantity but the the quantity which is This is more important for us. Within a month, yes, within a month. Within a month, within a year than quarter. So eventually if there are that will give a clear, clear picture to compare between their forecast and the actual consumption.
+
+MM- SKEC2 - L08:
+Exactly OK, so so since the forecasting input is on monthly bucket, you would like to compare what is the monthly forecast and what actual consumption and compare how much deviation is there from the forecast. What is actually exactly?
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Legacy legacy consumption data you're going to depend on monthly data, right? Not to call. You don't have the count information we do have.
+
+MM- SKEC2 - L08:
+That's that's the point we would like to understand is now when when you look at SAP, there are two data events. What we have one is the the reservation and second is the consumption. So you can get both. If you track at movement type level. So if you if you have a reservation of 1000 kg and the consumption against reservation is 201, this 1000 kg can be split between five like 200 kg Monday to Friday.
+
+ Monday you consume 200 kg, Tuesday you consume 200 kg. So you can have five movement types every day. Five documents created against same reservation with 200 kg, but the reservation quantity Now, that's the point we would like to understand is that those five and from what I understand from early even the 1000 kg reservation is not relevant. We need to essentially consume, put everything into a monthly bucket and see what is the monthly consumption and compare that.
+
+ But to come to monthly consumption, we need to add all the quantities of actual consumption against reservation.
+
+Mohammed Sadique (ADNOC - PE&ICV):
+Yeah, I think that the count is not doesn't matter monthly consumption or total number of reservation is matter.
+
+MM- SKEC2 - L08:
+But from an IP perspective, if if we only look at reservation, whether it gives us sufficient data point to even come up with a forecast is that something will have to check. So point noted we will discuss this other separately in terms of how we want to use consumption data from systems so that it makes more sense.
+
+UNKNOWN_SPEAKER:
+OK. You had a question.
+
+MM- SKEC2 - L08:
+Sorry, Hector. No, we can ignore right now, Rahul. I see that it was already responded.
+
+Hector Palacios (ADNOC Group D&CS):
+All right.
+
+Bastian Osorio:
+I have a question because you're saying that it is more in the volume, the quantity is more important than the number of consumption events because they are in some cases making, yeah, a lot of consumptions against the same order. But my question is, what if you have just a few high consumptions, I mean, just a few consumption events, but with high volume? How are you able to create a forecast based on just a few points which huge volumes?
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+The forecast is received by quantity for a month or a year. So what's important is whether they are taking the full quantity, they have forecast more than the forecast or less than the forecast. It does not, I have some asset, they do the reservation for particular chemicals for the complete but they don't take it all at once and they take each month certain quantity. Because we don't keep stock for three months in our store, we deliver it on a monthly basis.
+
+ So at the end what matters is the quantity, not the number of the reservation or the number of the time has been issued. It matters how much quantity has been issued to them.
+
+Bastian Osorio:
+Yeah, I get your point. Thank you. Okay, so we have this interface, but as you know, we also have the web interface. And here I have created a dashboard, which of course so we'll have access to. And we can click here and the system will show us the dashboard, OK? So let's go by dashboard. So first, we have the chemical spline type. And it's showing basically the same information that I was showing in the other system, where eight materials with 382 consumption events have more than 14 million, almost 15 million of consumption.
+
+ This is in quantity, of course, in base unit, but in the near future we will to be able to show this in value, OK? In dirhams or dollars, whatever you have. OK. Yeah. Here we have the consumption volume bought in terms of percentage. So we are saying that the forecast-based material for this subset of data consuming are accounting for the 85, for 85% of the entire consumption, okay? Whereas the reorder point are only accounting for 15% of consumption.
+
+
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+That means 85% of the items are classified as on demand, you mean?
+
+UNKNOWN_SPEAKER:
+No. In the system?
+
+Bastian Osorio:
+It means that, yeah, it means that the consumption comes from, yeah, it means that reordered points are consuming 85% of the volume. The amount of materials with reordered point, sorry, with forecast base actually is only 10%. So 10% of the materials are consuming 85% of the volume. This is the Pareto law and it's happening all the time. So just a few materials consume basically most of the volume.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+But why you have only 84 items from the test system? How many chemicals do you have?
+
+Bastian Osorio:
+Number of chemicals you have. Yeah, it's it's I said in the beginning we have.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Why only 86 materials you to consider?
+
+Bastian Osorio:
+Did because now this is just a subset of data. Is it? There's no reason behind it, OK? 68 material. Why only 84 materials in chemical must be more than that, right?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, yeah, no.
+
+Hector Palacios (ADNOC Group D&CS):
+Of course I'm not saying where this is a this basis for us is unique. Testing so we are just validating the runs we usually and on the projects we don't use as much data at the beginning and then accordingly we are confirming the design we are adding and more and more data so that
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+that is going to be the case for UAT you should see all no not in UAT see when even for SAT we want to see the production data oh yeah for sure okay not UAT SAT I mean before You're completely correct, correct? OK, so and also if possible, try to bring more volume here. You know it is very difficult, understood, understand all scenarios with limited number of records, you know. Is it possible to know what are those 76 items item numbers which is false under the RP?
+
+
+
+Bastian Osorio:
+Yeah, of course. Uh. So if we go here, to planning type, right? And we go here to the planning type per material. We're seeing the different materials. I'm going to hide the chart so you can see more materials. So this material is, for example, one is silica sand. Of course, it's consuming a huge volume. But we still have all the materials that consume in all in all the years.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So how do we know which are the chemicals in this list is consumed more than 25 times in the last five years? Which which field identifies that parameter?
+
+Bastian Osorio:
+Yeah, here I mean if it's It means that it's consumed more than 25 based on the number of times it's consumed in last five years.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, yes. OK, how did you manage to arrive that this planning type? Based on consumption, yeah, where is that tab out?
+
+Bastian Osorio:
+Is this is the total consumption events for chemicals?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So if I make the 50 into 20, the planning type will automatically change to ROP?
+
+Bastian Osorio:
+No, because this is a calculated value.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+That is what I'm asking.
+
+Bastian Osorio:
+Where is that calculated? In the configuration, the system counts the number of consumption automatically. There is no user input needed here.
+
+Hector Palacios (ADNOC Group D&CS):
+This is just to show you the logic. At the end you won't see this information you will only see this is forecast based or reorder point based nothing else but this is like a behind so you understand the logic.
+
+UNKNOWN_SPEAKER:
+Okay can you filter the ROP based planning here? Planning type ROP?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Ambassador one thing from this excel sheet what I have to do what action or what is required from my site? That is what it's saying. I came to know this is ROP. I know all these things. What's the next step?
+
+Hector Palacios (ADNOC Group D&CS):
+It's only for explaining the logic on how the system is separating the information. It's basically saying for these ones we have enough information so we can calculate a forecast. For these other ones we don't have so we go with reorder point. But this tab is only for explaining the logic. In the future there is no use for it. It's just for the discussion today.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+So all this will go for the supply?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, basically you will see the planning site attribute and you will use it. That's it. But then you don't need to come here and to see the consumption number and so on. No, you don't need to do that. That is not part of your tasks.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+But why are you seeing light, bulb, all those things? Can you please What kind of filter you applied here?
+
+Bastian Osorio:
+I can see there are some spare parts also in there. The the filter is for. And material category, catalysts and chemicals.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+This product category derives from the material group. I think.
+
+Hector Palacios (ADNOC Group D&CS):
+Do you have an example? Because maybe we need to check as well.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Because I saw something.
+
+UNKNOWN_SPEAKER:
+Go down. A gas analyzer.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+No, that's fine, just go up.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Go down, go down, go down. Spacer, what is it?
+
+UNKNOWN_SPEAKER:
+Wait, wait, wait, wait. Spacer. What is this?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Spacer wbf. Spacer wbf. Can I check on the system?
+
+Abdul Lathief Muhammed Kunhi (ADNOC Offshore - IC):
+Yeah, you know, maybe we have to see at least as a fast movers to ensure and now that happens in the
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Like like,
+
+UNKNOWN_SPEAKER:
+Something.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+This number into chat window, please. Let's check what is needed. Maybe the middle group is from chemical.
+
+UNKNOWN_SPEAKER:
+Special. Consider no. OK.
+
+1Ameer Ali Muhammed Kizhakkanikath (ADNOC Offshore - MATCATT):
+Hector, do you have considered any data Because in the data scope we can see there is no one for location ID starting with.
+
+Bastian Osorio:
+Now the location that we are addressing ours year.
+
+1Ameer Ali Muhammed Kizhakkanikath (ADNOC Offshore - MATCATT):
+Yeah, so one for is not there. Our plan code is starting from one for so that is not considered OK fine. OK, OK fine.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Alright, go ahead please.
+
+Bastian Osorio:
+So the only action that is needed, Aysha, I think that is a good point that she's raising, is that you will have to maintain the forecast, or at least you will have to take a special look, yeah, to the material, to the forecast of the material that are forecast-based. For this one, although we're creating a forecast for budgeting purposes, you don't need to collaborate that forecast because it won't trigger PR STOs.
+
+ The only forecast that will trigger that is the forecast base, the forecast-based materials, okay? So, what I want to also address that is IPP can also calculate the, I want to add it here, the FMSN segmentation, okay? For example, of course, most materials forecast-based are F. But there is one material. What was the previous planning type?
+
+UNKNOWN_SPEAKER:
+What do you mean, the one in this?
+
+Aboobacker M. (ADNOC Gas - PD):
+Yes, now it's in this. Now, recommended one forecast-based. What was the previous one?
+
+Bastian Osorio:
+I don't know we don't have that information here.
+
+Aboobacker M. (ADNOC Gas - PD):
+Since it's the first time you don't have that information. Otherwise, you can bring the MRP type here.
+
+UNKNOWN_SPEAKER:
+Yeah, that's that's for.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah. If you don't want to consider this forecast based on RLP, there any any option to remove it? Don't get the your comment, sorry. No, if it's not, this is recommended as a forecast, correct? Based on the number of times consumption. So, as already if we reviewed with the end user, we agreed not to go with the forecast based only on ROP based. So, in that case, is there any option to remove from here?
+
+
+
+Bastian Osorio:
+Yeah, we can remove it, but I don't think we agreed come up.
+
+Aboobacker M. (ADNOC Gas - PD):
+You mean you want to jump seed reorder points yeah instead of reorder point sometimes the user want to go with only forecast based on demand otherwise vice versa from forecast based to ROP so but the recommended one forecast based
+
+Bastian Osorio:
+but the user wants to go with the ROP how to change it yeah how to change it yeah it's something we need to configure for now but you will be you will have a a way to market to flat to make a flag and that will make the change. OK.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So that that will be one time activity. You don't have to do each and every time whenever you refresh this data, right?
+
+Bastian Osorio:
+Yeah, yeah, if you if you make the change that that will stay.
+
+Aboobacker M. (ADNOC Gas - PD):
+So where where the where will be that flag over in IBP? Yeah, or you have to create field, right?
+
+Bastian Osorio:
+Are they available? Yes, probably. I'm thinking it will be something like this. You have here the material master, OK? And if I go to material, and I'm going to filter by the chemicals, OK? And you have here all the attributes here you will see. So this is happening in location parts because it depends on the location if the material is forecast based off a reordered point. So here you have the different combinations and here you have change flag.
+
+ So here you will have something like this. Let me put the...
+
+Bastian Osorio:
+the planning type first. Okay, you have the planning type and then you will have planning type change flag so you can rename it. If you say not this, I want this forecast rate and forecast base. That's it. And then you will have to save it. Or you also will be able to do this on the Fiori.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Best in this planning time, it will be reflected in S4HANA?
+
+Bastian Osorio:
+I think it's a good idea to have it there, to have a set, a seed, field attribute, so you can have that in S4HANA as well. It's a good idea. Okay, so any doubt regarding here? So just a few more comments regarding segmentations before jumping into data cleansing. Yeah, there is one material that caught my attention, this one, because it has a lot of consumption, 28 consumption, but it's still middle mover.
+
+ Why is that? Because in 2023, so if we go to the rule for fast movers in all this, we have the fast movers is at least twice a year year in the last three years, but this material has a huge volume. It was consumed only one time in 2023 and one time in 2020. So if it had more consumption numbers, more consumption events in 2023, then it will be a fast-moving idea, but because it had one consumption in 2023, then it's middle.
+
+ Okay, but it is of low price in desirable, so it's not a very relevant material, I believe.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Now the FMS, is it accurate? Based on pollution procedure definition or just this example here? No, it's accurate. As per our policy. Internal policy. This is your policy.
+
+Bastian Osorio:
+It says material frequently consumed at least twice a year in the last three years. This material hasn't been consumed at least twice a year in the last three years.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Because in 2023 it was consumed just one time.
+
+UNKNOWN_SPEAKER:
+OK. 2023.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+OK, go to an example for past month. Take an example. For fast-moving items.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, here's this one. So this data, this chemical, are from which group of company?
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I can give you the location.
+
+UNKNOWN_SPEAKER:
+Yeah, plant, maybe from the plant. The plant.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+4102.
+
+UNKNOWN_SPEAKER:
+For well drilling, I think.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, because this is. It is for well cleaning, mostly this chemical CH. And they use it whenever there is. They have a project for well cleaning. So it is not continuous. Use, they may use it once in a year, twice or three times, but when they use the quantity, it's huge.
+
+Bastian Osorio:
+It makes sense. It kind of makes sense. But yeah, it's very, I don't know, different, the consumption patterns from spur parts where the consumption is very low. If the frequency is low, also the consumption in most cases is low. Whereas for chemicals, it can be the opposite, right? Just in this case, a little frequency with high volume. Ali, a question on that.
+
+MM- SKEC2 - L08:
+When you say it is used once in a year or twice in a year, should it be part of the turnaround order? Like, is it mentioned in the turnaround?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+For onshore, this type of chemical, it is under service contract and we are not having the stock for it. We are not managing it as an inventory material. It is part of service contract.
+
+MM- SKEC2 - L08:
+But then if it is part of service contract, then it will not be able to work planning, right?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, for onshore, but for other. Companies I don't know. Maybe it have different application in some other company like refineries and all this, but
+
+MM- SKEC2 - L08:
+So the differentiation is process wise as well. So if there is any case, which is getting consumed say once or twice in a year based upon a shutdown activity. Someone was explaining last week that if there is a shutdown activity, you might empty entire tank and fill it again after cleaning and all, which means you would see a spike into consumption of a chemical once or once in a one year or two year based upon the shutdown activity.
+
+ So in that case, the chemical should be part of the shutdown order so that the happening for shutdown happens separately and we also can then differentiate the consumption of chemical for shutdown versus production.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, I think that will be an ideal situation, but for onshore most of the chemical. Yeah, we are having this inventory chemical only for the chemical which is used regularly. Yeah, in most of the case.
+
+MM- SKEC2 - L08:
+If the chemical is not, say, is part of service It will not be part of our scope because then there is no inventory for us to manage.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yes, exactly. Yes, if it is part of service contract, then it is not part of the inventory.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Except some exceptional case that the end user they may find it is. Cost effective to buy directly. And then they request to. Buy it for them, that is an exceptional case, but in most of the case, if it is part of service contract, then it is not an inventory item.
+
+Bastian Osorio:
+Okay, so let's jump into data cleansing. As I was saying, data cleansing only applies to forecast-based materials, and the purpose of the forecast cleansing process is to create consistent input data so the forecast can run. So if I go to Manage Forecast Model, I can see the model that we're using for chemicals. If I select for the planning area we're using, which is the set 01 at NOC, you will find here data cleansing chemicals.
+
+
+
+UNKNOWN_SPEAKER:
+Okay. We are using, we're reviewing 60 historical periods, which are month.
+
+Bastian Osorio:
+So 60 is five years. Okay. And the model we are using is called automatic outlier correction, which use machine learnings to basically understand what is the pattern and propose outliers. Again, we're going to review here. We're going to filter just by forecast-based materials. A quick way to filter here, Quick Edit Planning View, filter on this attribute. And just forecast-based.
+
+UNKNOWN_SPEAKER:
+Okay. So, here we can see, yeah. So, look this example.
+
+Bastian Osorio:
+I think the silica, although it's Well, you see that the value – so, first of all, we have an alert here in red when the system identifies an outlier. And we can see here for the silica that, in general, the consumption doesn't go above, I don't know, 1 million, 1,300, but consumptions are, in most cases, below the million, right? All of the sudden, you have this huge consumption of 5 million. And the system is telling you, no, this is not consistent.
+
+ This is a value completely out of the rule. So identify us and propose a value, which is...
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Is this number a value or a... No, volume. The volume quantities.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+What unit?
+
+UNKNOWN_SPEAKER:
+A base unit.
+
+Bastian Osorio:
+I'm not sure what is the base unit, I think it is KG? Maybe KG, yes. So the system is proposing this number, but at the end it's out of the user if he takes it or not, right? But the system by default won't make the decision. It just will propose the value, okay?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+But at the end, it's the user's choice. Which number will it go for the supply?
+
+MM- SKEC2 - L08:
+There is no...
+
+Bastian Osorio:
+We are just creating the data for the statistical forecast. We're not in supply yet.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+OK, but for the supply, which number will be considered? The $5 million? Or 62,000? None of them.
+
+Bastian Osorio:
+This is historical data. We are correcting the history so we can create a forecast, okay? So the question is...
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Okay, what is the final input recommended quantity for the forecast? In this case, 5 million.
+
+Bastian Osorio:
+5 million, but you can change it. If the user says no...
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+The actual usage for chemical final.
+
+Bastian Osorio:
+You mean that Yeah, yeah, that this is the input for the forecast.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+And the user will not have any intervention in this quantity. He will not recommend if he agreed or no.
+
+Bastian Osorio:
+Yeah, yeah, yeah. Here, for example, again, manual correction. Yeah, the system is identifying the outlier and the user can take it or cannot take it. Of course, if they leave it as it is, the system will use this $5 million and it will a huge amount in the future, okay? But if we change the value, let's say to, I don't know, a hundred, two thousand, you say...
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Okay, let's say the manual correction is, yeah, for the supply, which number will be considered? The manual correction or the final one?
+
+Bastian Osorio:
+None, none, because we are just creating the input, so we We're not there, we're just preparing the forecast. We're not there in the stage where we have the input for supply planning. Okay, consider which one? The forecast is not here. Forecast is the next step. Okay.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+The final one.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+That is the one that is going to go to forecast and go to supply planning. Once the end user corrects the outline here, for example, if you see here, the system will consider the final one. For example, if the end user said that this 5000 is correct, that means it will remain the same so that after that the system will have the statistical forecasting. If the end user said no, this is the wrong, maybe due to some shutdown or some reason, so that end user is willing to the manual correction for this hour trial.
+
+ Once he updated so that we will consider the final one.
+
+UNKNOWN_SPEAKER:
+Last one. OK. Yeah.
+
+Bastian Osorio:
+No, I got it. Thank you. OK. Then, for example, here we have another another. Outline with which is minus 25. Of course, I believe we have to correct that because. Assumptions are not valid. So I change it to zero and it's safe And we are able to see that transaction particular transaction The since it's showing minus 25, I want to see what happened So is the location is 41 or 2 and the material is I can check But it's a reservation.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+If it is there in another sheet, it will be helpful not just.
+
+Bastian Osorio:
+But what would you like to see specifically?
+
+Aboobacker M. (ADNOC Gas - PD):
+Specifically that particular year consumption. What happened? Why it is minus 25?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Bastian Osorio:
+I think that is specific information. You should be able to see it in end of these sessions we will try to to make as I said the establish the connection so you can jump from one system to another directly okay just click it will give
+
+Aboobacker M. (ADNOC Gas - PD):
+link yeah yeah we don't need 24 if I click that minor turn minus 25 it will take me to that particular transaction yeah to the to that to that order to that transact I mean it will give it will
+
+Bastian Osorio:
+lead you to a transaction for this specific material. So you would click then OK. You will show you all the reservations. OK. That's good. Yes. OK. So we now have all the ingredients needed to run the forecast. OK. Let's review the forecast. And here comes the Aysha question. Regarding what is the input. Here we have the statistical forecast. Okay, again, we are forecasting, well, we're using 60 months.
+
+ We are forecasting 60 months also, which means that, sorry, 58, it means five years of forecast. In the forecast step, you can see that we are using the actual usage for chemicals final. Which, if we go back to the system here, is this one, right? So, in this case, we're going to use zero instead of minus 25, and so on and so forth, okay? The algorithms that we're using are the Krosten method and the Krosten TSV, which are for intermittent consumption.
+
+ We need to test this with more data to see if we need to add more algorithms. We could also add some exponential smoothing. That basically works very good for materials with flat and with trend and with seasonal patterns, which at least in the data we have now is not the case. I save because I made some changes. And now we can run it. So to run a material, you go here to Application Jobs, Run, Statistical Forecasting.
+
+ And we're going to run for location this combination, location material. And the model needs to be the statistical forecast chemicals. And we're going to run just for forecast-based materials. And I click Next, Run. And you can navigate to status here and see how when the job finishes, to review the results. If you click Grif, then here you can see all the details of the different people who has been running models, when they run it, it finished.
+
+ So you can see when they run it, which model they run, run, which if they use a filter, at which level they run the model. So you can see all the information of the different runs. So now I close, and I have to go to the template of the statistical forecast. Here I have different folders for the different processes, and I'm going to go OK, it's here.
+
+UNKNOWN_SPEAKER:
+It opens here.
+
+Bastian Osorio:
+And again, because I'm just interested in seeing the forecasting materials, I'm going to add a filter for planning type. Planning type. Forecast based. There you go.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+imagine all the users have access to this data yeah yeah they do how to I'm sorry I missed the first part how to get into I mean how to get the um I won't know how to see this data
+
+Bastian Osorio:
+yeah yeah if someone wants to share the screen I can guide into how to review this data I will share and we can then Yeah, yeah, please someone can share.
+
+UNKNOWN_SPEAKER:
+Yeah, I'll share with just a minute. Close. OK, let me share my screen.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yes, I'm chatting.
+
+Bastian Osorio:
+Yeah, give me a second because I will I will share your filter so you can use it. Give me one second.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+you Bastian, this will be company-wise, because the planners for each company are different.
+
+UNKNOWN_SPEAKER:
+Yeah. OK.
+
+Bastian Osorio:
+Yeah. Okay.
+
+UNKNOWN_SPEAKER:
+I'm sharing the filter. Okay.
+
+Bastian Osorio:
+Great. So, can you go to SAP IBP, please, to that tab on the top?
+
+UNKNOWN_SPEAKER:
+Yes. Okay.
+
+Bastian Osorio:
+Lock on.
+
+Bastian Osorio:
+Log on, click log on again, please.
+
+UNKNOWN_SPEAKER:
+Okay, so now click, please, new view.
+
+Bastian Osorio:
+On the left side, on the top, there is a new view from template. Okay, so on the top, you see template. Okay, so if you unfold that template tab, can you click on it, please, on the top? It's a template, 100 dp, yeah. And you have here all the different folders with the different processes. So the one that we want to check now is, can you click it again, please? Click forecasting, the 120 dp forecasting chemicals.
+
+ Okay, cool. And if we go to filter, there's on the bottom, yeah, there's a filter there. Yeah. And unfold the filter, because I share a filter with you. There's a filter that says none. Sorry. OK. The filter, I go to the filter. On the top, it says filter none. If you unfold that, yeah, there is the first one. It's called chemicals forecast. Base I shared with you. And now you can click OK and it will open the planning view.
+
+ Yeah, click OK. And you need to hear enable content and select label, something that happened.
+
+UNKNOWN_SPEAKER:
+Yeah, there you go.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+So first thing we need to have access to all key users. Yeah. He asked Ali and so we need all the key user, their company.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+We have Ali, Aaron, on the team. I think you have the list. Just give them access to check and validate the data.
+
+Bastian Osorio:
+Okay. So before jumping into other templates. It's okay.
+
+UNKNOWN_SPEAKER:
+I can adjust.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+And if you have a manual to how to use it also will be helpful. Yeah. We will share that this Okay.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+So, let's, to close this first session, let's review a little bit the forecast, okay? I'm going to share my screen again, and here I have the forecasting. So, here in the blue bars, we have the actual usage, and in green bar, we have the forecast, okay? So, let me add the description. And I want to check There you will have the silico here. So, in the chart, you can select here, as I showed last session, and filter, and we will see, we will, let me add a One more here.
+
+
+
+UNKNOWN_SPEAKER:
+And for now, what I will do is to see the information.
+
+Bastian Osorio:
+I can add a different period and see the information on a yearly basis. OK, so I want to see from 2020 to, let's say, till 2028. In this way, I can see two times levels at once. OK. So here I have silica, and I have the forecast on a yearly basis, OK? As you can see here, yeah. As you know, we decreased the amount, right, from the final, from what it was $7 million in 2024, so it's for $2 million because there was a consumption of almost So, this is the forecast and it's telling me that for the next few years we will consume something between three millions per year, okay, which is more or less the average, a little bit on the high average of the consumption.
+
+ But then, and here's Aysha, this is the important thing. Who has the final word is the planner. So if the planner says, okay, the system is telling me this is the amount that we will consume on 2026, for example, 3 million, but I believe we will consume way more than that 6 million. Put the 6 million and save it. And this is going to be the number that will go to supply planning. So the system will will generate APRs or STO based on this number.
+
+ And if there's no input from the user, then the system will take the statistical forecast.
+
+UNKNOWN_SPEAKER:
+OK?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+But, Bastian, it's showing to me 2022, 23, 24.
+
+UNKNOWN_SPEAKER:
+Yeah?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Yeah, but what I have to do with this old data? I want the forecast for the next five years, or like period which I specify.
+
+Bastian Osorio:
+So the system is proposing you an amount, okay? The system is telling you, you need to buy this amount. You will consume this amount. You can say, okay, it's fine, which will happen by default, or you can change it. In this case, we changed it. We said, no, I don't believe... Yeah, but my question is, why is it showing to me all data? 22, 23... Because this is historical. This is historical. Data.
+
+ This is historical consumption that can help you in your analysis.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Bastian Osorio:
+So we can see, for example, in previous years, you've been consuming 3 million, then 90,000, and then almost 8 million, okay? And then this is what the System is forecasting so based on this information you can you can Put the final number which is planet input for for chemicals, right?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yes any question Yeah, the planner he put his input Mm-hmm now he put his input for 2026 Mm-hmm. What about for? And where it will be divided in monthly base?
+
+Bastian Osorio:
+Those are two very good questions. So, the first question is, what if there is no input from the planner? If there is no input from the planner, the system will take the forecast, the statistical forecast, okay? If you don't want to take the statistical forecast, you can complete zero. You can say no, zero. I don't wanna buy anything. And then here I will put on a 50,000. Okay, you save it. And then there is no forecast for 27 and 28.
+
+ And how it will disaggregate for the month, it will be based on the forecast. Okay, so if you can see the forecast here is one more, one month you have forecast, the next month, no, don't. So if you put a number, the system will disaggregate based on this rule. And let's show you an example. So we put 50,000. I save. And let's see what happened in 2026. So as you can see, in 2026, the system is following the same pattern intermittent, but the only difference is that the amount change.
+
+ Okay, so this aggregation is happening automatically based on the forecast. The pattern recommended by the forecast is still follow.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Okay, so the system is suggesting those figure per month, but still the user can change it, no? Yeah, yeah, of course.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Rajiv Kumar Gupta (ADNOC - PE&ICV):
+I mean equal equally for each month or you have any proportionate like percentage wise. No, you can do it.
+
+Bastian Osorio:
+Of course you can do it if you want to take. Let's say 15 divided by 12. You can put the number. Just divided by five months, right? 15,000 divided by 12 you can put formula here it's no problem and then you can put for the entire 2026 right that is also an alternative but if you what I'm saying is that if you if you collaborate on a on a yearly basis the system will disaggregate based on the forecast so it's like it's smart in that way it doesn't just disaggregate equally by default it disaggregates based on the forecast because the system understands that the behavior of this material is not flat.
+
+ It's intermittent. So that's why it gives you this pattern. But if you don't want to take it, that's fine. You put your number, and then you save it. And this is going to be the final number. In this case, 1,000 to 50. Is there any question before we close? Because we have another session in the afternoon to review reservations.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I don't know how it is going to help based on historical data. Consumption planning, particularly for the production chemicals of onshore. So it depends on how many wells they have based on the business plan. It may change, it may go up, it may go down. When we are discussing about the chemicals, we mentioned that there should be some option where we can upload the forecast which is received from the end user.
+
+ Based on the business plan. Are we going to see those scenario also here in this? Chemical session.
+
+Bastian Osorio:
+But is that part of of of Of Dream.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Or is this no drilling is different because you're going to interface with the EWF and also the VMI and all those things. But this is different scenario where we receive the forecast in the Excel. Early if I'm wrong so they will receive the forecast broken by monthly forecast OK based on the business plan. I mean number of wells are number of these things here. Based on that they will do the supply planning considering the on ground stock on on order stock and then quantity with the supplier.
+
+ So this scenario where is there Yeah, session arranged to test this scenario in terms of chemicals.
+
+Bastian Osorio:
+Yeah, it's you. You see here you can adjust there. I mean we can. In this case we are changing manually, but the system also allows the to upload a forecasting in a in an app which is.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yearly planning is too much for chemicals, you know, because they don't want, they wanted to plan monthly basis, you know.
+
+UNKNOWN_SPEAKER:
+You can also log the file on a monthly basis.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Let's say one thing, does this forecast consider the existing stock and like the stock which is under PR, TR, and these things.
+
+Bastian Osorio:
+Sorry, I cannot hear you well.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Does this forecast quantity consider the available quantities in the store and the outstanding quantities received against PR, TR, and call of order?
+
+Bastian Osorio:
+No, this forecast is just demand. We are not thinking now about what is the available amount. Next step in which we will consider what is the current stock, what are the open the open purchase orders and based on that if so there's different options here if the material if you have enough stock considering your current stock plus your open PO then there's no need to buy anything you just need to the usage will just need to consume what is already available.
+
+ Whereas if there is not enough amount, then you will have to look in different locations if that is possible, if there isn't stock maybe in another plant. And if there is not stock in another plant, then the system will trigger the PR generation. So the straight answer is the system considering the available stock for the the answer is no. The system is just thinking about what will be needed. Then the next step is to is to check if this is enough or you need to buy.
+
+ So we are separating here demand and supply.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So now after the user he put his input and he put the final forecast. Where it will go after this?
+
+Bastian Osorio:
+After it will go to inventory planning. We will review this on the next session sessions and it will go to also supply planning where as I was explaining it will check for available stock and if there is no available stock or open POs it will generate
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+a PR. And after the end user he put his input, we have requested that there should be a workflow for approval. Because based on their demand, we are going to initiate the procurement. Yes. And sometime the purchasing or the LTBA value would go in high amount which need to be approved by shareholders and all this. So we need an evidence. We are requesting this material based on the end user demand.
+
+ And for that, we have requested that the demand plan need to be approved by the unit VB or minimum. So the workflow for approval of the forecast is considered in this process now?
+
+Bastian Osorio:
+We will have a workflow. That also addresses the approval of this amount. This amount should be approved by the inventory controller. But what we are saying for, and this is what I explained in the beginning here, is that for certain materials, the forecast-based materials, you don't need a reservation to generate the PR. Why? Because the consumption is very high. So you can buy before having the PR.
+
+ You should buy, in fact, buy before having the PR. If you wait for the PR that, sorry, if you wait for the reservation to generate the PR, that might be too late.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yes, for all forecast material, we purchase it in advance and the end user, they create the MR only to take the material from the stock. Exactly, exactly. So what I mean, before they create the MR, the forecast is The forecast. Yes, the demand plan need to be approved. From their management. Yeah, the user management.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So my question was, is the workflow. Is being considered for the demand approval. Yes, yes, we will see that in in the next session.
+
+Bastian Osorio:
+How to approve and or how to reject a forecast. In a reservation.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Not reservation, the demand plan itself. Yeah, yeah, sure.
+
+Bastian Osorio:
+Okay, we'll leave it up to here and we'll continue later in the next session. Thank you very much for your input.
+
+UNKNOWN_SPEAKER:
+Thank you. Bye. Thank you, everyone.
+
+Tara Madhavan (ADNOC Group D&CS):
+of to run a job or to put it in such.
+
