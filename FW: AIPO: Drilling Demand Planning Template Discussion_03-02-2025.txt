@@ -1,0 +1,390 @@
+Rahul Patel (ADNOC Group D&CS):
+Good afternoon, everyone. Let's wait for maybe two more minutes for others.
+
+UNKNOWN_SPEAKER:
+Enjoy. Bye.
+
+Rahul Patel (ADNOC Group D&CS):
+Good afternoon. Good afternoon, we're just waiting. Maybe in it or for others to join. We should have abilities also here in this school. But really, yeah. Yeah, for drilling. So we have Abdulla as requested up to the thief as well. It's a planning part, right? Upcoming by any anybody from the planning is joining in this meeting.
+
+UNKNOWN_SPEAKER:
+Our.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Equipment awesome is here and last last time anyone else is joining.
+
+UNKNOWN_SPEAKER:
+Okay. Thanks.
+
+Rahul Patel (ADNOC Group D&CS):
+Should we start? Abdulla, if you can confirm.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+No, I cannot.
+
+Rahul Patel (ADNOC Group D&CS):
+We need Abdulla. OK, let me see if we can request him to join. So there were four people which were requested to join along with.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Let me check with the equipment team anyone else is joining okay.
+
+Rahul Patel (ADNOC Group D&CS):
+We also need to check it first. Sharaf is joining.
+
+UNKNOWN_SPEAKER:
+Thank you. You Yes, it should have.
+
+Rahul Patel (ADNOC Group D&CS):
+Do you think we can also pull a roughen the cone All right, how do you want us to proceed?
+
+UNKNOWN_SPEAKER:
+Should I go ahead and initiate this discussion? You haven't, to whom you have invited?
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Because the material team is telling they didn't receive the invitation. I had received four names from Ashraf.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me show you the email which I received from Ashraf. And based upon that email, we had requested this. Just a minute, I'll show you. Let me, I'm sharing my screen, so. So this is the last one. Where he recommended to have a meeting on Monday and these are the people, Ibtahim, Abdulla, Assem and Ahmed.
+
+UNKNOWN_SPEAKER:
+I'm here.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Yes, if you wish we can add the rest of you.
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Assem forwarded to Ahmed. He might forward it to his some other team.
+
+UNKNOWN_SPEAKER:
+This is what he said.
+
+Rahul Patel (ADNOC Group D&CS):
+So I'm at the Mac. The right I forwarded to him.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+No, no, I'm not. Just a minute. I will put it in his name in the chat. I add him as well. No, he might for you send it. He said he's. Oh OK. I I'll add. Name because he's missing he said he was not doing your test so I'll put the name in the chat okay you can forward that invitation so do you want me to forward that invitation yeah so he might he will forward it to the concerned.
+
+Rahul Patel (ADNOC Group D&CS):
+Let me do that forward this. Forwarded to Ahmed. It may take a minute or two. Thank you.
+
+Rahul Patel (ADNOC Group D&CS):
+So should we wait Abdulla or we can proceed.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Please wait a couple of minutes more he will nominate somebody.
+
+Rahul Patel (ADNOC Group D&CS):
+Abdulla. Is that OK? Abdulla, can we start now? I see a few people have joined.
+
+UNKNOWN_SPEAKER:
+OK, let me see who else. OK.
+
+Rahul Patel (ADNOC Group D&CS):
+Alright, good afternoon everyone. This is about the meeting is about planning of drilling in SAP IBP. So this is a follow-up discussion based upon the request which we have shared with Ashraf. Ashraf is what we understand is the digital lead for onshore solutions which is EWTP or the other applications which are being used in drilling. So basically last week we had a discussion with Ashraf where we wanted to understand the data available in terms of the data Based upon all the previous discussion, we have created a template of the data which IBP needs, and we had sent this request to Ashraf, requesting him to basically essentially give that feedback in terms of what data is available in EWTP system.
+
+ So let me quickly pull up the template so that I can show you what's this template about. Then based upon this email, Ashraf had requested this meeting where team would like to know more about the demand planning of drilling materials in IPP. So this is the template we are requesting. So this template was prepared in discussion with Abdulla and Abdulla from the team here, Inventor team here, and essentially this is the data we are looking for.
+
+ So we have the initial data, the fields are more related to well planning, where we have a sample data created for a couple of wells based on data we have received. So this is essentially the well plan completion codes, and then for that specific well, so if I put up a filter here, data filter, I'm not able to edit, so put filter. So essentially for every well, this is one well with completion code 2b.
+
+ So these are the MUTL codes which are for the category OCTG. Now we had only examples of OCTG MUTL, so we have put only OCTG MUTL. But essentially what we wanted as an input is that for every well, let's take this as a one well. For every well we need input in terms of what is the material required for each category of the material and the category can be specified here as the input and then and and the required data and quantity.
+
+ So by this data what will happen is we will get to know the requirement of each material in IVP and then supply planning and all the all the planning in terms of available inventory, inventory optimization, creating TR, all the process can be initiated from this information. So this is where we are right now and let me know if there are any questions or any any other clarification required from our side.
+
+
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Yeah one question please.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Regarding what you have seen you are showing us is that the OCTG will provide a SAP number correct? Yeah so yes general generic sfp metal code can I can we create like a way that based on this sap number it can give another list for the smithing accessories for example so let me let me let me just clarify the thing is when the oshg put a sap number this means that they already specified a specific connection so when I'm going to put my equipment, it needs to be in the same connection.
+
+ Okay, so can we build a list based in OCTG feedback?
+
+Rahul Patel (ADNOC Group D&CS):
+What I understand from the previous discussion that your EWDP tool has all this data available. By metal category, you have the metal allocation plan available for all the categories. So right now, what we are for is more of an input in terms of if that is available, we can simply upload it in IPP.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+So. But this is not the case in our system. It doesn't provide a SAP number.
+
+Rahul Patel (ADNOC Group D&CS):
+So what kind of material plan you have in your system then?
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Now it can provide a generic number, but it's not a SAP. It's a generic number. It's like an OCTG code. That's it. A number. And it might be 1338. Which connection? They will decide later. But what are you showing us? It's a SAP number. This means that the connection is already there.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Who discussed it from the OCTG team? Maybe I can add in a bit more of clarity here. Added system forecasting. Previously, in the old system we had for each item code we had a generic material number as well from SAP which does not specify the connection. All what the system what they're trying to do here is to connect the DMF into the next system that will purchase all the material that So what you're talking about is in the next step.
+
+
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+I lost got the point. This is the case, but here yeah, this is the SAP generic material code.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+So this could be even it doesn't even have to be the circle. It could be like the item codes that we currently use.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+No, if this is fine.
+
+Rahul Patel (ADNOC Group D&CS):
+Just one probably just to make sure I have understood correctly, we will need SAP material code only because in the primary system is still And if there is no metal code in SAP will not be able to initiate any
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+procurement action or planning against that material. OK, so now what we have we have material numbers for the specific items, yeah? OK, but we don't have a generic. So we have something we call like an item code which under it it has five or six specific material numbers which we used to purchase the material.
+
+Rahul Patel (ADNOC Group D&CS):
+Exactly. So, the way we see now is we will have two data sets. So, one is the generic item, second is the specific item. So, there is a table in SAP which allows us to convert the generic material to specific code. So, essentially from an input perspective two actions need to be initiated. One to make sure that for every material in for drilling metal there should be a generic metal available and then there can be specific materials as well.
+
+ So the mapping between generic and specific material code has to be updated. If this two input is available, IBP will be able to plan the material, do the supply planning, suggest you based upon inventory which specific material has to be, can be.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Okay, so there are some cases we don't have generic material, generic material numbers. So I think that limitation came from our IT. I don't know what we can do here.
+
+Rahul Patel (ADNOC Group D&CS):
+Probably we need to initiate the exercise to get all the generic SAP metal codes available. To make sure that all the missing metals when no generic metal code is available, generic metal codes are created so that we can do the demand forecasting. We would need generic metal in place and that way the requirement can be at a generic level when it is demand forecasted.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+I don't know whether it can be done or it can be done. I don't know if we're allowed to do it because when we try to do it, we got stopped by our IT so. When you say your ID, I can check with Ashraf.
+
+Rahul Patel (ADNOC Group D&CS):
+No, no, no, not with Ashraf, no.
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+Then who? I can see Abdulla is also involved. If I'm not sure if you guys but when the subcoding was done with IQ, we got instructions that the generic material numbers were not allowed to create them.
+
+UNKNOWN_SPEAKER:
+So I don't know if the case is still there.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+He's on hold.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, because we need his, you know, Yeah, so by the way, Abdulla had confirmed to us that all the SAP generic model codes would be created if they are not there. So there are two activities which needs to happen for the solution to work. As you rightly mentioned, all the generic code needs to be created. Second, the mapping between generic code and specific code has to be updated so that based upon these two inputs, IBP can refer to the demand on a generic model level and then convert that requirement from generic metal to specific metal based upon available inventory and the agreements in system so that the planning can be optimized.
+
+ Now for sure previous discussion we had this discussion and he confirmed that the generic metal would be created but then if there is any specific challenge to it we can address but we also have Vignesh on the call from an IT perspective who from an SAP IT perspective.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Rahul, this is not my area because see whether the system allows them to create a material code in the SAP, yes. But why they don't create it, this only Abdulla can answer. I will not be able to answer this.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, I'm just saying that you are part of our team where if any technical challenge in creating material, probably you can help us in system perspective. But yeah, if there is a decision from our business to not create, we need to evaluate that. And Abdulla had confirmed us in the past that all the genetic metacodes would be created.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+Yeah, we need active participation of Abdulla in this meeting to discuss further. If he's not available, then we need to postpone this meeting for another time.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Let us try to pull him. I think he, because the other person who was with Abdulla is Ashik. Ashik is also not available.
+
+Abdul Kareem Mammy (ADNOC Onshore - PD):
+I think so.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vignesh Perumal (ADNOC Group D&CS):
+Let us remove Abdulla from the meeting and let us try to pull him once again because we need to.
+
+Rahul Patel (ADNOC Group D&CS):
+Hey Sheriff, thanks for joining the call. Yeah, sure I wasn't aware of this meeting.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+To be honest, I was in another meeting, but I joined.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, sorry this was something a mistake from our side. We we missed your name in the inverter. Apologies for that.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+No worries, so I think that was the objective was to present the object, the scope of this initiative to our business users, right? And I'm sure.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, so I think based upon your email, I have requested this meeting that for us to proceed, we need to set up this interface, right? As per our discussion and to set up this interface, we had requested the data as per the template we have shared and before you can share the data was to have this meeting so that if there are any questions which can be clarified, correct? Yes, correct. So we've discussed about the template and one of the point raised is that not all the materials, generic metal codes are available in the system and there was some IT issue which prohibited people from creating generic metals.
+
+ So that's the point we are discussing here Ashraf. Is there anything else you add based upon your conversations internally, Ashraf?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+No, basically we had different business questions regarding the scope of this initiative, the IBP. So Abdulla and Assem and Ibrahim from Onshore, they requested just to confirm what are the features that are available, part of the scope and because they have some features in mind that they anticipate would be part of the scope. So maybe Abdulla and Assem, there is them before I join. I'm not sure.
+
+
+
+Rahul Patel (ADNOC Group D&CS):
+No, the first point we discussed is the template. I've shared the template. Let me share the template again. And while we discuss the template, the point related to a generic metal game where for the drilling metal generic metals are created. That's something as part of the project we need to initiate this activity to make sure that all the drilling metal has generic SAP metal code so that the generic SAP metal code can be an input for demand planning and that the entire demand planning for drilling metal happens on generic metal code and with the subsequent logic of mapping between generic metal code and specific metal codes we do the supplier planning where actual PR, POs or the call of agreements are created on a specific model code based upon available inventory and the agreements in the system.
+
+ This is the point we have reached. So let me then quickly brief you the scope of the project. The scope of the project is essentially to have the end-to-end planning process for ADNOC, where demand input is taken from your existing EWDP tool. Tool we based upon all the previous discussions we understand has the well plan and then the material allocation plan for each of the category. So the process starts with getting this data into IPP in and based upon our discussion these are the fields we identified are the fields which are relevant for planning in IPP.
+
+ If there are any additional fields the team feels important they can add but essentially these are the fields we need to identify the well-specific material requirement for each of the categories of the material and the date on which the materials are required. Once we have this information as input to IPP, we will convert this demand into a supply plan and the supply plan is the next step of the project where first we can confirm the demand, finance the demand and based upon it create a supply plan where we integrate the VMI inventory, the ADNOC inventory and all the all the purchasing agreements, purchasing orders, everything is integrated in IBP.
+
+ And IBP comes up with an optimized supply plan where it looks at inventory at different levels, different types of material, and then proposes what should be the procurement plan. It also considers the different lead time between different planning processes, like the VMI lead time where you need to keep the material in stock for certain periods, say six months, eight months, in the VMI warehouse before it can be used for.
+
+ So all different lead times are considered in the process. A system proposes the date when you should initiate the procurement so that the demand can be met in time to avoid any shortages when the really when the material is actually required as per the demand. So essentially the process starts with demand identifying for every well what all different materials are required and then the quantity of the material and the date on which the material is required and then from this point convert this into a purchase plan which makes sure that the material is available in time for all the wells.
+
+
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+That's the scope of the project. May I ask something please? Sure, sure. From different segment to another there's a different logic in selecting what kind of material to be ordered and what to be requested, okay? So should we add more columns and propose it for you or something? And what kind of support you would need from our side?
+
+Rahul Patel (ADNOC Group D&CS):
+So.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+I just want to add whatever I can see now from the columns available. It won't be helpful enough for my segment. For example, what if I add one to want to add couple of columns more and to specify based on completion code and job type?
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, so the only thing we can add columns in terms of their tool to logic. Adding any column that if we add any column the data has to be available in some other system like either EWDP system so eventually the full process which we are envisaging eventually is to have interface with EWDP system which means whatever data is EWDP has there in EWDP system can be integrated and automatically clumps into IPP which means EWDP should have a field or the field you are asking should be available.
+
+ As part of the project timeline we may start with a manual file upload to start with till the interface can be enabled.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Still Rahul you are talking to me still we are still talking about getting data from DWS getting data across we will get data from DWS. I'm talking about the execution phase to select or to automatically allocate the material based on whatever data you will take from DWS.
+
+Rahul Patel (ADNOC Group D&CS):
+I'm talking about the yellow Yes, so last time when we had a call I think Omar from Onshore was also there with us and what he said that all this data with respect to material allocation plan is available in
+
+UNKNOWN_SPEAKER:
+EWDP.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I think Rahul, what he is saying is he will be able to provide the material based on completion code and job type. Okay, here the question is job type is not there as one of the fields, no? Can you see? So what he is trying to say is, in other words, his material determination, the factors that influence his material determination are the completion code and the job type, not you know the casing design, maybe that does not, or the wellhead code, maybe that does not influence his material.
+
+ So maybe that's what he's asking you. Because today, job type is not one of the key fields based on which the codes can be determined. So I think he's trying to ask whether we can add one more determination component that is the job code. Yeah, this is what he's saying.
+
+Rahul Patel (ADNOC Group D&CS):
+That's what I said. If the field is available, we can add. Not a problem.
+
+Vignesh Perumal (ADNOC Group D&CS):
+I remember having job code. So when they showed I still have the recording, I remember. Yes, the job code was.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yes, yes. Yes.
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, we can add if that field is available because the point I was trying to make is eventually would like to integrate system. So we don't want to add a field If the field is not already available, you will have to manually add to the system that leads to inefficiency. So that's where the point is. Yes, if the field is already available, we should add it if it makes. Ultimately, this data should be relevant to you if you have to use it, right?
+
+ So if there any fields which you feel are required, yes, we should add it.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Can you please just share with us the template? We will go through it and we a few examples from our side and then we can have another discussion if you wish.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Sorry, Rahul. So he shared it already last week and I started preparing the data. I will review it with you guys, but during the discussion with Abdulla, I think there was a request just to have a clarification on the scope. So you will you will receive the sample of the data. So for your review before I share it with Rahul.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+No, that's okay. I will discuss with you, inshallah, after the meeting later. Sure thing, noted.
+
+Rahul Patel (ADNOC Group D&CS):
+Okay, thank you. Any other questions we have with respect to the template which was shared or from a project scope perspective which you need more clarity upon?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Just another question. So the material will be forecasted and shared, presumably, on the interface with your system. Would there be any capability for material reservation, like part of the process?
+
+Rahul Patel (ADNOC Group D&CS):
+So yes, since the system is integrated with S4 HANA, all the reservations created would be visible for HLANA. So that's called forecast consumption. So first, you forecast material and make sure the material is available. And when you actually need the material, create a metal reservation. That metal reservations are integrated in IBP and gives visibility of how much is the plan to consume so that we don't duplicate the demand.
+
+ And then once the reservation is posted, and the inventory is consumed, it also consumes the forecast, consumes inventory, and the requirement gets fulfilled. The plan versus actual visibility would always be available.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+That's a very good feature. Abdulla is the there any, like, value behind this? Because I remember that this was requested part of the SAP implementation initially. So will this add value to your area or maybe to other areas?
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Maybe for... I apologize. I didn't understand the last point to be answered.
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+I apologize.
+
+Rahul Patel (ADNOC Group D&CS):
+Yeah, Rahul, please. Let me share a high level for everyone's understanding what we are trying to do from supply planning. So I hope my screen is visible. Let me close this.
+
+UNKNOWN_SPEAKER:
+Yes, it is.
+
+Rahul Patel (ADNOC Group D&CS):
+So essentially, the process is divided into two. So these are the multiple systems the system is integrated with. So you have VMI, which is Vendor Inventory. Then you have SAP S4 HANA. You have DWS, EWDP, or Excel tool. You have SAP S4 HANA. And then you also have a vendor which is not part of the VMI, which means a standard vendor from which you procure one time, right? So essentially we will have a demand loaded, uploaded in the IPP and based upon the demand, we are taking input to inputs.
+
+ So as I mentioned, there will be mapping between generic metal code and the alternative or specific metal codes. And then you have the stock report which is there in S4ANA. Transfer the VMI inventory into S4 HANA and then the VMI stock in an Excel format if it is not available in S4 HANA. So based upon all these inputs, the system will generate a final plan and check whether it is LTP in place. If the LTP is in place, it will trigger a call of order for VMI vendor to supply.
+
+ So it goes to the VMI vendor. If there is no LTP, the system will trigger purchase requisition. It will create PR and it will go to normal vendor and all the blue things what you see are the lead times what we are seeing. So once you receive stock in S4 HANA, the issue to stock based upon reservation, this also is integrated in IPP, which means. Based upon the plan, the first step is to receive the material either in a VMI location or in AdNoc location and once the material is available, when the material is to be issued to a well based upon the reservation, then that reservation information is also available in IPP so that you can see that.
+
+ OK, what is the plan? What is the consumption and based upon what the consumption has happened?
+
+Abdulla Eyad Al Assi (ADNOC Onshore):
+So you always have visibility of plan versus actual based on actual consumption based on database. OK, so to to answer your question. Ashraf, maybe this would help with the automated allocation system. I think this is what happens Hassan and the team were trying to achieve. Was to take a full basket and take these happened material numbers and based on what's available and provide an allocation that's more automated.
+
+
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+And yes, it works with the discussion we had last week about automating the full process. This is what we are trying to do, but the thing is. There is a lot of things we need in between within this flowchart itself and you know what kind of confirmation or double checking will be done if you are talking high level okay I approve the process but it needs
+
+Rahul Patel (ADNOC Group D&CS):
+to be broken down to to add number of measures to assure that it matches what actually we need exactly and then the thing starts with the data and the template so that's why we were requesting this template and data is that once we load the demand on a generic metal code we will exactly show you what system is doing and then looking at a system you can give us a feedback okay what needs to change whether we need to add a field whether we need to do something about it if the process needs to be modified all these discussions can only happen once we have your data available in system for you to show how the process will work in system for sure this is a high level process to make sure that we clarify the intent of the process but then The details can only be done once we have the visibility of data for all the different categories for both onshore and offshore, and then show you based upon the data in system how IBP will help generate the supply plan for each and every will.
+
+
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Rahul, just a quick question, please. Sometimes the cost creates like a major point that we might change equipment from one supplier to another or whatever. So would we have such luxury now?
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, so material costs are integrated from SAP to IBP, which means you can prioritize if you are there more than one LTP is in place for the same material. You can put up an algorithm which prioritizes first based on cost. So there can be constraints of planning. So this is called planning constraint. So we can define all those constraints with which you can prioritize and also come up a value-based plan.
+
+ So what you are looking at, there are two kinds of plan. One is the inventive-based plan for the well, and also convert that value-based plan into revenue-based or money-based plan, where you can see that what is the year-on-year in terms of money, what is the consumption plan, and at a specific metal level as well as at the entire plant level or AGC level.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Another question, please. We have in our contracts share share for each awarded supplier. OK, yes, yes. Would we have a tool here that when we come to issue or the stock for a specific well that whatever is going to be allocated would honor this share?
+
+Rahul Patel (ADNOC Group D&CS):
+Yes, so this is something called quota so you can define quotas between multiple vendor so that if there is a like share of 15% 50% when there is a 50% another vendor, then you can define the core time system which automatically allocates the demand to the different vendors.
+
+Assem Mohamed Abdelhamid (ADNOC Onshore):
+Excellent, I'm sorry, another question please. In some cases that we do all of this exercise manually. OK, in order to assure everything is fine. So in some cases we find that after doing all of this and issuing even the stock for the supplier, he fails to deliver. So what would be the next flow in this case?
+
+Rahul Patel (ADNOC Group D&CS):
+So here we are creating a plan based upon the five year well plan, right? So we're trying to create a visibility of next five years. Now here we will try to maintain all the possible lead time so that we raise the purchase order in time, considering all the lead time so that your mutlis received in time. Now for any reason, if you have any feedback where vendor says that metal is not going to be available in high you can update the exact receipt date for that material and system will help you identify impact of that in terms of your plan so that you can take better decisions.
+
+ So you the only thing you can tell the system is when you are expecting the metal based upon the latest input and based upon that system will help you understand what is the impact of that change in terms of planning and what you should change. So essentially if you are not receiving any metal means you cannot continue with the plan you have for the plan you have and you need to change the plan. Either the vendor provides much faster or you need to delay your plan, right?
+
+ Only two scenarios possible system will help you take that decision.
+
+UNKNOWN_SPEAKER:
+Providing the data. Excellent, thank you so much.
+
+Rahul Patel (ADNOC Group D&CS):
+Alright, so there is a lot of work happening in supply planning, but for supply planning to work all these discussions we have, need input on data and that's where we need support from the team is as soon as the template what we have provided you can add the fields and help us with the data at least for two three wells for all different metal categories the complete all the metals required for well if you can help us with the data we can incorporate put that into system and use it to build a system the way we have discussed and demonstrate it to you in the weeks to come but we will not be able to start our work if we have the data as an input tool.
+
+ So the only request I can have is, we are here to clarify as many doubts as you have, but then we need the data as soon as possible for both onshore and offshore, for at least three, four wells, so that it will allow you also to understand how system is changing based upon different well types, how the allocation is changing, how the inventories are changing.
+
+UNKNOWN_SPEAKER:
+Does that make sense? Yes, yes, for sure.
+
+Rahul Patel (ADNOC Group D&CS):
+So anyone have any other question to me today or is this good enough for us to proceed with you helping us with the data in the template we have provided?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Yeah, from digital side it is clear just need Okay, from Abdulla and Assem, if they have any more queries, so we can proceed with just reviewing the data. Maybe we can share it maybe by tomorrow, inshallah.
+
+Rahul Patel (ADNOC Group D&CS):
+Excellent. If we get data tomorrow, we have some sessions planned on Thursday this week to internally, based upon the data, show something. So we'll see if we can provide us the data tomorrow, if we can convert that into something on the demand side at least. So when I say demand side, it's basically in importing what data you provided in IBP and show it to you how it may look like in IBP. Alright, any other question?
+
+
+
+UNKNOWN_SPEAKER:
+Any other feedback?
+
+Ashraf Izmeqna (ADNOC Onshore - Digital):
+Thank you Rahul, nothing from my side.
+
+Rahul Patel (ADNOC Group D&CS):
+Thank you very much and looking forward for feedback from you by tomorrow. I'll really appreciate it.
+
+UNKNOWN_SPEAKER:
+Thank you so much. Alright, thank you.
+
+Rahul Patel (ADNOC Group D&CS):
+Have a nice day bye bye. Thank you, thank you.
+
+UNKNOWN_SPEAKER:
+Thanks everyone. You
+
