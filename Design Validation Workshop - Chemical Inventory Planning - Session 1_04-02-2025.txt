@@ -1,0 +1,761 @@
+Jamal Al Breiki (ADNOC - PE&ICV):
+Bye y'all.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+As-Salaamu Alaikum. As-Salaamu Alaikum. As-Salaamu Alaikum.
+
+UNKNOWN_SPEAKER:
+As-Salaamu Alaikum. As-Salaamu Alaikum. As-Salaamu Alaikum.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+As-Salaamu Alaikum.
+
+UNKNOWN_SPEAKER:
+As-Salaamu Alaikum.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+As-Salaamu Alaikum.
+
+UNKNOWN_SPEAKER:
+As-Salaamu Alaikum. As-Salaamu Alaikum.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+As-Salaamu Alaikum.
+
+UNKNOWN_SPEAKER:
+As-Salaamu Alaikum. As-Salaamu Alaikum.
+
+Mohamad Fakhouri (ADNOC Group D&CS):
+As-Salaamu Alaikum.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+As-Salaamu Alaikum. As-Salaamu Alaikum. As-Salaamu Alaikum.
+
+UNKNOWN_SPEAKER:
+As-Salaamu Alaikum. As-Salaamu Alaikum.
+
+Mohamad Fakhouri (ADNOC Group D&CS):
+As-Salaamu Alaikum. As-Salaamu Alaikum. As-Salaamu Alaikum.
+
+UNKNOWN_SPEAKER:
+As-Salaamu Alaikum.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+As-Salaamu Alaikum Allah yafiq.
+
+Hector Palacios (ADNOC Group D&CS):
+Tim, whenever you're ready, we can start. Let us know if on your side, on AdNoc's side, we are waiting for someone else. Otherwise, we can jump right into the session.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I'm going to do a check. We have, okay. I'm going to check who else we need to add here. Natif here, Abakar. Ali, we need also Ali. Ali, are you there, Ali? All right, let me share the screen.
+
+Hector Palacios (ADNOC Group D&CS):
+Team, so I think that many of you were part of the prior session. But either way, some minutes to check the theory behind to understand what the system is doing and then we can jump into the resource. We have three sessions, so let's have a refresh on what we are doing and let's go to the resource, okay? So, the meeting agenda for today is what I'm telling you is let's have an IVP mentor recap. I've seen that.
+
+ The key is on repetition, so As many times we say this, you are going to get it and get familiar with the concepts and all that is related. So let's do it again. Then let's discuss about the inventory process high level and the testing scenarios that we are going to have. And then we go to the IVP system demo. Then we can go to the service level discussion. I think that we have discussed a bit this, we have done some changes.
+
+ So let's check the results and if the results are not online to what we are expecting, it's because of the service level problem. And finally, if we have any open points, we can do it. So this is the meeting agenda that we are going to have in these three sessions, the ones that we have right now and the two that we have tomorrow. So let's go with the recap. Remember that we are implementing the system IDP for optimizing inventory, reducing working capital, maintaining or increasing the operating time as well.
+
+ And we have these three modules. Demand planning, that is the one that we were discussing yesterday and today in the morning. We have inventory planning with the levels in two parentheses because level is what we are tackling here. We want to calculate safety stock, reorder point, and demand And then you have supply planning. So maybe some of your expectations are also on supply planning, because there is going to have the stock projection, the PR, the STRs, and all the constraints that are related to that.
+
+ This is the phase one, demand planning and inventory planning. And we are closing this week with the first iteration of the unit testing. We will have the same for supply planning in some weeks in the future, OK? With us, we are going to get there. So let us focus on inventory planning today related to the levels. So the main levels that we are calculating are well known by you. We have the reorder point, we have the safety stock, and we have the maximum stock.
+
+ So reorder point is something that will get calculated by the system. This is some algorithms that we have in the background. I will explain later. Three models that we have for doing this. And then once you have the reorder point, get the maximum stock and safety stock should be an easy task because it's basically the reorder point plus the economic order quantity that is maximum stock. Let's remember that economic order quantity is the, as the name is saying, is the optimal quantity that we can have.
+
+ We need to consider the demand. We need to consider the ordering cost and the holding cost. So once we have this information, I think that you will need to be able to provide to us because there is no exact place on the system to get this information. We can discuss later as well if you are not in the loop on the discussion. But once we have the economic order quantity, we can calculate the max stock as the reorder point plus that.
+
+ And the safety stock is going to be the reorder point minus the demand over the lead time. So this is expected lead time demand and probably lead time demand is a concept that you are already using related to the levels. So basically that is the whole idea. So you will have the stock levels and you will have consumptions and whenever you have a consumption your stock is going to drop. When it drops below the real point we are going to order.
+
+ How much? Well, the economic order quantity, and then we go again in the cycle. If we get into the reorder point just in time, in the same lines, and we don't consume anything during the lead time, and we get the order, this is the maximum level that you can have. It's basically the reorder point plus the economic order quantity. So that's why it's the maximum. It's the theoretical maximum. That we can have.
+
+ Also, you can go below the safety stock, but no worries. This is an expected scenario. That's why in first place that we have safety stock for these scenarios in which we go even beyond, and then we can continue the cycle again, right? So, every material and plant or storage location combination is going to have their own chart like this, and this is something that we can get more on supply inside when we have the stock projection, but this is how this is going to behave with the levels we have.
+
+
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Okay. So, let's see. Where is the lead time stock here? First, maybe the green. This, I think it should, it will be the replenishment stock, right? Replenishment stock, it will be the reorder point plus the reorder quantity, right?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I mean, this is the safety stock, just for the variability. Lead time stock? Lead time stock should be the same yellow. So the reorder point will be basically, theoretically, the reorder point is the safety stock plus the lead time demand. So this is the demand that you should have during the lead time.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+And also for the lead time, do you have any source in SAP HANA? How are you going to take the accurate lead time you have?
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, I mean, we have an approach here that basically we can download the historical lead time and using that historical lead time we can get two things that are important for us. One is the variability and another one can be the average. We know that you have currently a calculation in the system, but knowing that chemicals we have more data points in the past, I think that is a good approach that we can historical, and we can calculate the average for you, and we can calculate the variability, and we can take into consideration the two inputs into inventory levels optimization.
+
+
+
+UNKNOWN_SPEAKER:
+Okay, noted.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Sorry, this approach. Sorry.
+
+1Abdulrahman Al Meqbaali (Borouge):
+Yes, at the same point, I want to know that the calculation is the side or not. I mean, the calculation of the lead time that's based from PR to PO, RFQ to PO, but I want to know the...
+
+Hector Palacios (ADNOC Group D&CS):
+It should be, if we want to consider this, it should be from where we are raising the requirement, that is the PR, until the stock is available for usage. So we need to consider everything we can. We need to consider the conversion from PR to PO, that can be an additional lead time, the external lead time, that I think that is considering from the vendor until we get it, and also the internal processing that we have after that.
+
+ We need to consider everything.
+
+Abdulrahman Al Meqbaali (Borouge):
+The correct one should be from the date of requirement, which means the BR, until the date of receipt, DRM.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Supposed to be in this way. What if we have also, if you have internal processing after that? You can receive it, but then maybe needs to go to a quality inspection. That means that it's not going to be available when I need it.
+
+Abdulrahman Al Meqbaali (Borouge):
+I need to consider also that additional time after receipt. Yeah, the final job, we mean final job. Once the material is in the unrestricted state.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, so that is one of the iterations that we need to work on. If you agree with this approach of using the historical lead time to calculate the lead time on the system, then we have the rain line and we can go ahead. It's just my question is that you already have a program on S4HANA, so basically I don't want to create two sources for the same. I believe that maybe ADP in this case can be more accurate, but you already have something, so let us know if you want to proceed on ADP or if we should maintain the current approach.
+
+
+
+MM- SKEC2 - L08:
+As for the previous discussions, we were told that we should be using the SAP input because the program is already there. The program takes this average of last three procurements, actual procurement lead time and saves us the lead time, demand lead time or the lead time in a button master. So that becomes an input for us. So that's what we are considering as an input for our lead time planning process.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+But it is not available for all the See whatever the recent receipt after the program implementation it is updating. OK, but we have a lot of materials which. Don't have the planned delivery time, so for those materials definitely we need the IPP to help us to identify the lead time. OK, based on the other PR people or the categories of whatever the combination they are.
+
+Hector Palacios (ADNOC Group D&CS):
+all the existing ones, because as Rahul is saying, it's just taking the last three lead times. If we take the core history, maybe we can get something more in line to what we are expecting.
+
+MM- SKEC2 - L08:
+But Jaganath, the question is that, if you have consumed since one year of implementation, then the program should consider the three procurement, right? But if it is not consumed, let's say it's received. No, no, no, not consumed. Yeah, correct recipe. If you have received a material since one year P is implemented, then the not since one year P.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+See the program is implemented very late after the implementation. I think two years before, not not since around the implementation. Yeah, so this updates after this program implementation, which is maybe last two years before. So we need to see the data. Rahul, you have once you have the interface. Just look at this field particularly. OK, all right.
+
+MM- SKEC2 - L08:
+The point I'm making is if one ERP has data, either the program or IDP can determine the lead time, but for the materials which were not procured even after one ERP and if the date time is not available, will not be able to even propose date time for such materials.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, based on the category. Say for example, You can look at the other spiral on casket, the average of what is the lead time you know. So category wise you can go. It doesn't mean that it has to be 100% accurate. Even today you may have 6 months, maybe tomorrow when you place the order it may take 8 months. So this this is not a standard data. It's a dynamic data so we can go by the category wise wherever it's not available.
+
+
+
+MM- SKEC2 - L08:
+Alright, so you're confirming that wherever there is a there is no lead time available or there is no procurement history available. The average of the lead time of the entire category should be the lead time for the material, correct item category. We can take note of this so that we will see how that gets updated. So Hector, let's connect separately internally and then we'll align on this lead time definition.
+
+
+
+1Ali Mohammed Ahmed (ADNOC Onshore - PD):
+OK, thank you. So now I understand this process is for the item which have in the system already set min and max level.
+
+UNKNOWN_SPEAKER:
+Is that right? Yeah. Okay. A correction there.
+
+MM- SKEC2 - L08:
+If you look at the previous discussion demand, we said that based upon the historical consumption, IBP will propose where the button has to be reordered upon planning or advanced supply planning or forecast-based planning. So, this is applicable for reorder-based planning material as per the input from the first discussion of demand planning.
+
+Hector Palacios (ADNOC Group D&CS):
+It's also for the other one. For the forecasted material. Let me do this correction. So, for reorder point, of course, we are going to use this. We need to use So you are never only with the forecast. We are also with the safety stock because we know that there is variability on the demand. So the safety stock will be able to catch that variability. That is the expectation. So the forecast is going to miss because it's a forecast.
+
+ It's going to be wrong. How much? Well, the safety stock will be available for that delta or difference that we can have.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+OK. And the lead time, we have internal lead time and external lead time. So that will be captured from the system because for internal lead time, maybe it may vary according to the value. If the same material was ordered historically separately with low value, maybe the internal lead time was less because the delegation of authority is low. And if the material was ordered through LTBA and with other material, so the value is high, maybe it go to the higher authority, then the internal lead time is more.
+
+ Yeah, provided that we have all that information, we need to take it.
+
+Hector Palacios (ADNOC Group D&CS):
+This is what we were discussing before, indeed. So you need to consider the requirements, so if you have a PR, the PR to BO conversion, that is one, and then the external lead time to the final receipt date.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+In this case, can we consider, this is the team to agree about it, can we consider the internal lead time as the procurement process time from the day of PR to issuing the BO, because it's 10-week and 12-week for minor Thunderbolt, 10-week for major Thunderbolt is 12-week. Sometimes it goes more beyond that. No, Mr. Ali, because, you know, this cycle time starts once the RFQ is created. Yeah. We have a lot of years which is approval and waiting for the RFQ for more than 2-3 months.
+
+ Yeah, then we have to fight to make it from, like, before from the day of of the BR approval. Yeah, yeah, yeah, yeah.
+
+MM- SKEC2 - L08:
+So I think this is.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, yeah, that's why you know Miss Ali what we're doing. We're not considering just last tender. We're considering last three tenders, you know, and taking the average because of this fluctuation. You know, because of the fluctuation, the tendering cycle time.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Now regarding the safety stock.
+
+MM- SKEC2 - L08:
+Because in all this, we jump to safety stock. One point I just want to align here. So Jaganath, we have taken this requirement that we need to have internal lead time and external lead time. External lead time, we discussed and we are aligned. What would be that? But internal lead time, this is still an open item for us. And initially, we thought of utilizing a standard SAP field, which is available for capturing internal lead time.
+
+ But then that internal lead time is at plant level, which means every plant will have same internal, every item within the plant will have same internal lead time. And I understand from the team that may not be case. It may change model to model, the internal lead time as well. So maybe we'll take this point separately, but we need your guidance on what should be the consideration and how should we define this internal lead time.
+
+ One of the things what we just mentioned, like average of, can be one of the solutions but we need this clarity on internal lead time. Remember last time we had a discussion we said whatever the policy says we put that. So but then the discussion is that SAP has a field to update internal lead time but there is only one field per plant. If it changes for material in a vendor combination or for a material then it cannot be same for all the materials what we understand.
+
+ But the internal lead time should not be dependent the vendor right. Value of the material is what we are getting feedback if the material is having more value it may take more time for approval and PR pure conversion process may increase if it has less value the it will it will go to it will get approved immediately and the conversion time would be the lead time internal time would be less so it's a it's a function of material in the value of the material and also if it has an agreement then yeah so like whether it already has an agreement whether it is not having agreement, whether it's a repeat PO versus whether it's a completely new PR.
+
+ So all those functions come into picture in terms of how the internal lead time has to be determined. So for sure, we'll need help from the excellence team and the team here to identify all those scenarios and help us with providing input, how we should calculate internal lead time for all different possible combinations so that the system considers correct internal lead time. And then once understand what is the calculation, we'll also need to add that until it captures somewhere this internal email so that it is available for IVP as input.
+
+ So that's the conversation. I just want to make sure that it's an it's an open topic for us and we would like to have this input clarified as as soon as possible.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+You know, like in case if an item. As an valid agreement, then you can consider only the external lead time. Because the system is going to propose the STO, I mean the release order. Yes, yeah, maybe for those case you can consider the external lead time.
+
+MM- SKEC2 - L08:
+Exactly, so the point we are making is we would like to have all the possible combinations of different internal lead time identified, documented and the logic for every combination is clearly mentioned so that we will take that input for planning. So one of the points what we mentioned then there is no internal return. I mean that becomes one logic for internal return, right? Yeah. So so then that will work with you separately.
+
+ I'm just letting you know that this is something which will need your help and will work with you separately and identifying scenarios and with putting the logic around it.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+OK, OK, and how the statistical forecast is linked with the safety stock.
+
+MM- SKEC2 - L08:
+That's exactly, I think, the next point, which Hector or Ali Mohamed. Sorry, Ali, I had to stop this conversation here, but please proceed.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, please. I was asking about the safety stock, maybe the same point Arun is raising. Now, beside the relation of the statistic forecast with the safety stock, we have to maybe internally decide whether we need safety stock for all the item because again my concern that is we need to maintain optimum stock in all the level and we do not need to inflate our stock so do we need safety stock for all the item that is a question for discussion.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+order point based planning. Other is forecast based planning or forecast based planning. That means it is the sequence more than 25 issuances. So definitely those items going to fall under the fast moving. So which which is having a predicted you usage. So for those cases we can define the safety stock.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, so let me. I've seen that. Let me explain explain it, and for tomorrow I promise that I can have another slide for what is different. So as you are rightly mentioning, we have reordered point-based planning and we have the forecast plus safety stock planning. So those are the two scenarios. For the reordered point, we will calculate the safety stock following the logic that I will show you on the slides.
+
+ Basically, we will consider variability of the demand and the lead time, and we'll factor into a formula that will calculate the reorder point, and after that, we calculate the safety stock. But it's only looking at the demand, not at the forecast, only demand, historical demand. When we have a forecast, knowing that we have enough information that we can have an accurate forecast, then the safety stock will be more related to the error of the forecast, because that is what is missing.
+
+ Imagine that you have a demand of of 100, let's say, and you had a forecast of 80, then what you are missing is 20 only, not 100, not 80. It's 20. It's different. So the safety stock measure, it will be related to that error. So we will calculate a historical forecast error. And for that, we will calculate the variability, the standard deviation of that error, and that will be an input the safety stock.
+
+ So the key point that I want you to take is that the key difference is going to be on the standard deviation calculation. If we go with the reorder point planning only, the standard deviation will be based only on historical demand. If we go with forecast-based planning, the standard deviation will be related to the forecast error. If we compare the actors to the forecast in this history, well, that is the measure that we want to know for calculating the right safety stock.
+
+ For tomorrow, I promise that I will have a slide to explain better the two scenarios, because I think that for now, I have only related to the common approach that is through your point this time. There was a question, I think I saw a hand raised.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+1Abdulrahman Al Meqbaali (Borouge):
+I don't know what brought for the forecast, Because forecasting, as far as I know, the material will have different MRP type, which require the range of coverage. Because all materials we have now with the demand, with the forecast, there should be a material master, the range of coverage, which means you're forecasting for how many months? Three months, six months, nine months, 20 years? So based on this, the system will capture whether there is a risk you will be declining in stock or you'll be below safety stock, something like this.
+
+ What you are covering now is totally different than the forecasting. So let's do the following.
+
+Hector Palacios (ADNOC Group D&CS):
+I think everything that we are proposing needs to be sound and needs to be supported by numbers, okay? So I understand when you say there is a risk that maybe we are going to forecast in less than we need or the safety stock is not going to be enough. We take the point, but let's check the resource because maybe you can be surprised that we check the history and we see the proposed levers that we have, the forecast and so on, this makes sense, okay?
+
+ So I see that is very likely a scenario, so let the system to propose that, and then we can check against the resource, all right? And for your rest of mind, whatever scenario that we have for coverage, for example, I don't know if your way of planning today is covered for the next six months right away. If that's the case, that's also something that we can easily set up on the system. Given the case.
+
+ It's just a parameter for us. But let's go first. Let's check the two alternatives. Let's check if we are reorder point-based planning. Let's check what are the levels proposed. And if we are forecast-based planning, let's check the level proposed as well, and if that makes sense with your historical consumption. Okay. We are always keeping in mind what is happening in the past. And also, of course, we can take into consideration you think that is going to happen in the future, but let's check the numbers on this regard, all right?
+
+ Let me proceed quickly with this. Maybe I can show you some examples of what the system is generating, and then we can debate if this is good enough or we need to fine-tune more, okay? But for sure, there is a lot of fine-tuning that we can still do to have this Let me continue, Jim. If you are having questions, as always, just interrupt me again. So this is the example of the supply chain network.
+
+ So you can have the vendors. You can have your operational sites, the plants, or storage locations, as you have it on S4 HANA. And if you have also middle locations, we can also set some parameters here. I know that most of the cases are going to be direct from the vendor to the final location, but if we have an intermediate location, we can also consider that. So, these are the main inputs that we will have.
+
+ First of all, we need to consider a demand rate. This is not equal to the forecast. It's basically how much in average we are having of demand, because depending on this, we will calculate the lead time demand, the lead times, of course, that we were discussing, sourcing quotas, case that you have a location that upstream you have two different plants that are supplying this, we can define sourcing quotas.
+
+ This can be based on historical consumption. But I think that this is not going to be a big point. You let me know if I'm wrong. Then inventory holding policy is basically telling us where we are keeping the material and where you are not. So if you have a combination that is only on transit, for example, then we don't keep a stop on that. But also, I think that based on previous discussion, basically, we are going to store everything.
+
+ We are not going to have this policy indicator. If we have, we can consider it. The number ability, right? Because you have historical consumption and there is an intrinsic standard deviation of the numbers. The same for the lead time and the economic quarter quantity as well. But this is not going to be part of the optimization. When we calculate the reorder point, that is the optimized quantity.
+
+ Economic order quantity is not an input. But for calculating the maximum stock, this is an input. And finally, but not less important, is the service level. Service level is what we say is the non-stockout probability. So if you have a service level of 90%, that means that 90% of the cases we should be able to cover the demand with this amount of stock. In the 10% that is remaining, we are not able to cover.
+
+ So that means that we have a stock out. Service level is an input that we can set up in the system and we can give higher service level to the critical parts and lower service level to the non-critical parts. So it depends how critical is to having For business continuity parts, we can set up this to the higher level, right? It's like 99%, not 100% because from 99, from 100%, there is a huge difference that is not worth it, okay?
+
+ So we stick usually, and this is the common practice across the globe, is to have 99% as a maximum. Then if a part is, for example, desirable, and it's low volume, and maybe it's a mid-mover, maybe for that kind of materials, we don't want to have a high service level. Even if we have a stock-out, it's not a big deal. So here we can set up a lower service level. That means that we will have lower stock, lower value in the stock.
+
+ We can have a stock-out for sure, but it's not going to be an issue. So that way we are reducing the stock for materials that are not really, really important.
+
+UNKNOWN_SPEAKER:
+Okay?
+
+Abdulrahman Al Meqbaali (Borouge):
+Those are the – Victor, this will come in handy, I think, for clubbing extra materials in one order. And for example, lower service levels, this can be waited until we club extra – the system can club extra materials with the highest serviceable materials. So this will come in the supply bus.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, for sure. In supply planning, we can see some examples of this whenever you are maybe having a stockhouse or something like that, how we are going to fulfill the orders and how we are going to collect this information as well. So let's see what happens on the later sessions. So don't be afraid of this calculation tree that I have here. Us if we have any questions and we want to understand how everything is related, we have this slide that I can share with you.
+
+ In the external part, what we have are basically the raw inputs. So they are inputs that we need to process a little bit more to get what we need. This is usually the information that we are iterating from S4 HANA, or maybe in some cases, it's a manual upload. The service level is an input that we define a very high service level, basically, and we can use that. Ordering costs, holding costs, that also seems to be, so far, a manual input.
+
+ Later on the sessions, we can take our time to discuss about that with Julio and the team. But we also need to provide that information. It can be iterated, it can be it seems right now that it will be more manual once a year. Once we have this information, the system will calculate different things like, for example, from the lead time, the lead time variability internally. As we are discussing, probably we also will calculate the lead time from the historical lead time.
+
+ From the historical consumption, we calculate the demand rate, the demand variability, the mean time between failures. So basically, how many weeks we are having a failure. So every 12 weeks, every three weeks, every four weeks, that is also an important input for the optimization. The demand pattern, that is machine learning, that basically the system is checking the history and saying, OK, this is intermittent, this is lumpy.
+
+ Lumpy means that it's intermittent, but very, very variable, right? Or this is continuous or continuous with seasonality, OK? So basically, all those parameters is calculating it. And for sure, the segmentation, as we said, that we are going to calculate it on the system. So we will need to have the unit's cost information, the stock value information, the consumption value information. Based on all that information, we calculate the segmentation automatically on the system.
+
+ What about the BAD? What's the criticality here? I don't see it. Criticality? Criticality, yes, you're right. I think that I should put it here. It's very related to the service level. So in some slides, we are going to check how the criticality is related to this. But basically, criticality and other segmentations are defining which service level I have. So the higher criticality, the higher the service level.
+
+ That is the common approach.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+All together, movement, criticality, I'm sure it will be linked all together. Business continuity. Yes, you're correct. You're correct.
+
+Hector Palacios (ADNOC Group D&CS):
+We are considering so far just a spoiler, business criticality, BED segmentation, HML for the price, and we have FMCN as well for the movement type. Let's go to that slide. Let's see the current state of what it has, and let's discuss if this is enough. And if we are not, we are not sure if this is enough or not, let's go with the resource. Because on the resource, I am applying the service level given the criticality.
+
+ And we can check, yes, this makes sense. Or no, this should be a higher service level. So we can do this iteration during the sessions. So once we have the internal layer here calculated, then we calculate the last inputs that we need. So these are the main inputs for our calculation, the lead time The total variability, that is considered demand variability and supply variability. The economic order quantity, that is for the maximum stock only.
+
+ The service level by item, because here we have the service level at very high level. For this classification, for this segmentation, but here we have the service level by material and location. The distribution type is something that I will explain right now in a bit. This is the model. So based on the historical consumption behavior, we will check and we say this is the best model for this inventory optimization calculation.
+
+ Once we have all these inputs that you see here, service level, distribution type, lifetime demand, total variability, we calculate the reorder point. And with the reorder point, we can calculate the maximum stock by considering the EOQ and the safety stock by considering considering the lead time demand. So this is the calculation tree. Based on the feedback, I will put also the criticality around here, like the segmentations.
+
+ Yeah, I already have it. So it's just high level. Sorry, I didn't see it. So here in the segmentation, I'm considering BC, BED, and so on. So maybe I can put a comment here that is considering all the segmentations. Plus there is a score. We will assign the right service level for the right segmentation. So this is SANA in a nutshell. If you have any questions, then we can come back later and see how every input is related to the other one, to the outputs, of course.
+
+ Let's discuss now about...
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+The preface steps, we expect all steps to be automated, right? Yeah, that is a very good point.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, everything automatically. S4HANA integration, automatic. Calculations internally, automatic. So the only thing that is going to be manual, that is this little box, is the service level definition. That also is something that you define like once a year, maybe, if you want to check, OK, these are our service level. Maybe we want to increase the service level based on the prior resource, or I don't know.
+
+ You can define that. And also I think that we will need also on a yearly basis the ordering and holding cost estimation that we will need to provide that by the system. It seems that we will need to do that manually as well because we don't have a right feel on S4HANA for doing this.
+
+1Abdulrahman Al Meqbaali (Borouge):
+Victor, why initially why we have to make the system recommend the service level by item criticality? And if it's linked to the equipment, it can be also linked to the equipment criticality.
+
+Hector Palacios (ADNOC Group D&CS):
+We are doing the equipment criticality. We are bringing it using the PED segmentation. But this safety stock calculation is by plant or by storage location level. So it's not by equipment, of course. We need to group the demand of all the equipments and to have it on a common let's say, back of a stock, and we calculate based on that. But we also have the PEED segmentation. So I guess that if this is a material that is critical for one of the equipments, then it's going to be vital.
+
+ So yeah, we are considering it.
+
+Abdulrahman Al Meqbaali (Borouge):
+So let's say material criticality. By material criticality, we can at least give an initial proposal. The system can give an initial proposal for the service Yeah, we have something to propose.
+
+Hector Palacios (ADNOC Group D&CS):
+So, in the next slides, we will check what is the current proposal and we can discuss over that.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+1Arunkumar Viswanathan (ADNOC Refining - HQ):
+Arunkumar Hector, how frequent is this safety stop or reorder point or max stop? This should be accessed in the system, like every six month ones or three month ones or yearly ones? What is the frequency?
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, it's a very good point. I think that we were proposing, and correct me, Rahul and Tim, I think that we are proposing the process to be quarterly for inventory optimization.
+
+MM- SKEC2 - L08:
+So now the input what we have received in the previous session is that Tim wants to have the inventory optimization on annual level because that's the current policy and that's your current process. But at the same time, if there are any changes which are expected, algorithm will run quarterly. But then if there are no changes expected, we don't do anything. But if based upon the change in demand, if any change is expected, then it will be highlighted as alert so that the team can see if any exceptional change in demand has happened in last quarter which needs to be adjusted in the annuity parameter.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+OK. So minimum frequency once a year, and then if we If you have any exception based on new input, we can highlight it for you. So that's the that's the plan. Any questions on this or in?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I don't you have any further question about about this, but all the existing items if it is marked with PD. For those items you're planning to convert to an reorder point based planning.
+
+UNKNOWN_SPEAKER:
+Correct?
+
+MM- SKEC2 - L08:
+It may or may not happen, not saying everything will get converted into reorder point planning but one of the things what we can help you is to share this information that what's the current planning procedure and once we convert to IBP what IBP suggests that what should be the the new planning procedure in IBP whether it's forecast rates or reorder based planning and then based upon that compare the rest of the process uh from IAB.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Okay for example if the system is giving some I mean list of item there it should be configured based on a reorder point planning. So the next activity IBP will propose some reorder points levels so those levels has to be captured in system correct.
+
+MM- SKEC2 - L08:
+So that's the action item you've taken from yesterday's meeting as well that we'll figure out where to capture that in SAP as well because We understand that we would like to see those levels not only in IVP and SAP
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+as well. If we capture those levels, then ultimately we have to raise PR for those items and replace the stock. So the usage requirement for the stock decision, then it is missing. Blindly we are following the system. Can you say that again, Arun? I could not get the... If you go with the reorder point planning for the on-demand items, So currently there are some items on demand. So those items in the IBP, it will be reconfigured to a reorder point based planning.
+
+ So system will define some ROP levels. So once the ROP levels is updated, system will throw you in PR. So this PR has to be converted to a PO. So the requirement is, I mean, who will validate this requirement?
+
+MM- SKEC2 - L08:
+So the point is, and correct me if I'm wrong.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Say example, system is giving some reorder point, maybe like 2,000 kg for an item. And user is telling, I don't need this item for the next six months or eight months. So who will decide the stop decision, like how we can stop the PR?
+
+MM- SKEC2 - L08:
+So there are two points which we need to align upon. And one thing is, System proposes whether the model has to be ROP or forecast-based material. That's the proposal. Now, we will provide you information what's there today so that you can decide whether you want to continue with system proposal, make it ROP, or do you still want to make it on-demand. Now, when it is on-demand or forecast, we'll have to differentiate the understanding on-demand and forecast-based.
+
+ Demand for you something where when you procure only when there is a reservation which means even if it is consumed in past the historical consumption should not lead to any forecast because it's by default and it's not a planned material or it's it's not a forecasted material it's something which is only when user says we need to confirm right but system will generate the ROP levels for those items since it is a ROP planning So, Hector, we need to align...
+
+ One thing here, sorry to interrupt, one thing here, in this, in the demand base, there are safety stock levels also. That's why I see in some of them it is demand based. It means there is one stock already available and the other one, you know, it's on demand. On demand, you're not stuck without labels. With no labels on demand either.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Rahul, you're going to understand my question, no?
+
+MM- SKEC2 - L08:
+Like, what is my... Yeah, yeah, I got your point. Question that if an on-demand material gets converted to ROP and then based upon ROP if the PR are proposed and there is no approved amount on what basis you want to procure the material, correct? Correct, yes.
+
+Hector Palacios (ADNOC Group D&CS):
+Tim, if this is on demand, we shouldn't propose any level. So let's try to identify which item. Hector, actually yesterday even I asked the same question.
+
+1Aysha Abdulla Al Ali (ADNOC - GP):
+If the item was on demand and there is no consumption for the last five more than 25. Where it will go? A few people answered me now. We will propose ROP levels.
+
+Hector Palacios (ADNOC Group D&CS):
+If it is on demand, it's because you are not being affected by any stock out, right? Whenever you need it, you are going to raise up the ROP. No, no. Okay, all the item will undergo under forecast, even it's on demand or ROP levels, yeah? No, no, no. I think that is still up to discussion and to fine tuning, so let's not think that it's just one to be one or the other. We still can consider these cases, and if it is nonsensical to have a forecast for your point levels for this, let's not do it.
+
+ We don't want to increase the levels of stock for you. We are coming here for doing business.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Okay, Hector, what if the item doesn't have consumption more than 20 times count? It's on-demand item. Item, how it will undergo the IBB, how the IBP will deal with it.
+
+Hector Palacios (ADNOC Group D&CS):
+Let's discuss, can we, the question Aysha is then, let's try to understand when should be on demand? What is the rule that you have today? Because you have it probably on the MRP type, but...
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Okay, Hector, take this scenario, item has no consumption more than and it doesn't have our OP level, where it will go? We need to refine the rule.
+
+Hector Palacios (ADNOC Group D&CS):
+My question is that we need to refine the rule. It cannot be a reorder point or forecast place. We need to identify the items. This is what Aaron's question. If the item is CD, where it will go?
+
+MM- SKEC2 - L08:
+Hector, probably, let's take this and put strong to this, especially in this on-demand material, how the segmentation will happen in either But one point we need clarity team is what we understand is on-demand material identified as PD in SAP today. But what is the input of driving this on-demand? Is this something user-confirmed? It's an end-user input saying that he is agreeing that this material will not be planned unless he provides input.
+
+ Is this some an input to your current process of defining Yes, through an email or through an reservation.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+For some companies it is through email, some companies through a reservation.
+
+MM- SKEC2 - L08:
+So I understand that the process of requesting metal, but the process of identifying why the metal has to be on demand. It's already identified and marked in the system.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Or slow moving and non-moving item, undesirable material to be excluded from any to be done on demand.
+
+MM- SKEC2 - L08:
+Yes, so so is this user input for user communicates to you that this model has not is not to be planned. It is always on demand.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+No, no, no, no Then we then we have to replenish.
+
+MM- SKEC2 - L08:
+OK, so as for the policy and for how much period you track this consumption, if there is no consumption for how many period? 3 to 5 years.
+
+UNKNOWN_SPEAKER:
+3 to 5 years.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+OK, so non moving material basically becomes PD, right? Correct. Correct and desirable item.
+
+UNKNOWN_SPEAKER:
+Also. Also.
+
+Abdulrahman Al Meqbaali (Borouge):
+Snow moving material also. So it can be changed. Yes, yes, yes.
+
+UNKNOWN_SPEAKER:
+Yeah, go ahead.
+
+Hector Palacios (ADNOC Group D&CS):
+I was mentioning that if we have 25 points and is on demand, so that means that we also have materials that have regular consumption in the bus and still are on demand.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Hector, my question if the item doesn't have consumption 25 time at same time it doesn't level where it will be okay okay all right same as the item pd uh doesn't have a rop level how it will go how ib will deal with it okay so yeah and I have a second I have also another question uh regarding this chart the system will propose to me uh levels inventory parameters yes okay so I have to update the parameters chain, right?
+
+ Yeah, that's right, yes. For this changing the parameter, is it going to be automated in the system or like our existing practice, we are creating change requests for the item to change levels?
+
+Hector Palacios (ADNOC Group D&CS):
+I will show you later on the system, so you will have the current level, you will have the proposed level, the change percentage, even in value, And you will have a key here where you can approve or not. So only the approved changes are going for supply planning. Otherwise, you continue with the current levels. I will show you that later. It's going to be part of the session. So let's bear for that.
+
+ And Rahul, related to the PD discussions, I think that we need to deep dive on that one. Yeah.
+
+MM- SKEC2 - L08:
+So we like to keep this point open and we'll get back to you in terms of the on demand planning. So I don't answer this question probably tomorrow or in the next session.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, please. Just consider this point for your further development. Yes, yes, yes.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+What's your comment in the chat box in it so that tomorrow morning will discuss it? Yes, so we will miss any pointer or you have it.
+
+MM- SKEC2 - L08:
+Yeah, so we are already taking notes of the points which we discussed.
+
+UNKNOWN_SPEAKER:
+So yeah, thank you. Thank you.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Thank you. Go ahead.
+
+UNKNOWN_SPEAKER:
+I'll go after you.
+
+2Abdulrahman Al Meqbaali (Borouge):
+Only just a question jump in my mind now about the in case of No further usage for material. Let's say material gets obsoleted.
+
+1Abdulrahman Al Meqbaali (Borouge):
+The system will trigger the PR and replenish the stock immediately. So where we can add this factor and system? But it is obsolete.
+
+Hector Palacios (ADNOC Group D&CS):
+So the point is that probably the PR will not get created, right? So you will not have a consumption or a forecast for that? No, no.
+
+Abdulrahman Al Meqbaali (Borouge):
+I mean, I mean. Material still in the PR generated. OK, we'll be all placed. But after this order, there was an upset until until we update the system with obsolete. This item is obsolete or flagged for deletion. Maybe there is actions will be on background making the the PR view. So every company will avoid this one. This is the point. Do we need to like, stage for confirmation or something like this.
+
+
+
+MM- SKEC2 - L08:
+So Abdulrahman, what you're saying is that there are some already in process materials for which there is PRP open, but after getting into IDP it will be identified or obsolete.
+
+Abdulrahman Al Meqbaali (Borouge):
+Let's say in PR stage. OK, not yet, not yet reached the supplier. So before releasing the PR, now what I understand all the system PR will generate it and process for people.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+That means, Abdurrahman, the question here, as for Abdurrahman, he want to see indicator in SAP IPB that this item are obsolete, so that why we need to order it? Or the system or SAP IPB should raise any flag or any alert that this item already indicator or flagged as obsolete or redundant or whatever, so that no need to order this to avoid any excess stock or any tendering process and waste of time.
+
+
+
+UNKNOWN_SPEAKER:
+Yes, Jackal.
+
+Aboobacker M. (ADNOC Gas - PD):
+Even current system will stop. Even current system, current PR will stop if it is flagged OB, RD, RP, PD, SR. No, no.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Sorry, those, can you elaborate in this comment? Because I think there is a case like this now, am I right?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I know that the system controls are already there. So for example, if it is item item master, if the item is flagged as RD or OB or SR. First thing you will not be able to create the PR. Even some cases the flag is not there. The system will allow you to create a PR, but in during the tendering process is any chance that item is flagged as a inactive like PDR OB. So when they converting into the PO, the system automatically throw the error OK that this beer contains the invalid item.
+
+ So that is the second control we have see, but if the PO is placed already and then you are flagging the item master as a OB, then there is no control now because the PO is placed already.
+
+Abdulrahman Al Meqbaali (Borouge):
+Those I I think you are misunderstanding my question. OK, my question is. In the in the PR stage, Okay, I'm not saying about something already flagged for deletion or identified as obsolete and updated in the system. I'm saying about something, okay, still we don't know about it. We know about it after the PR process to BO. Let's say now I receive the information today, I went to the system to update, then I found already system because of the parameters issued the PR and the BO.
+
+ You understand me? So like there should be like a gate for confirming releasing the PR.
+
+Hector Palacios (ADNOC Group D&CS):
+So this is how I see it. So I understand that probably these are...
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+But Abdulrahman, the system will not create any PR for obsolete item.
+
+Hector Palacios (ADNOC Group D&CS):
+No, no, but the PR is created for plug to obsolete.
+
+Abdulrahman Al Meqbaali (Borouge):
+Now we are saying, Hector, the system automatically will create the PR, and automatically will go process for PO, correct? Yes, Ibad. Correction, correction, correction.
+
+MM- SKEC2 - L08:
+Correction here. Will trigger PR creation. The PR to PO conversion happens in S4 HANA. And your standard, your process from whatever improvements of the process you have in S4 HANA will not change. Which means IVP is integrated to S4 HANA to trigger PR creation. Once the PR is created in S4 HANA, and like something what Das mentioned, if there is already an enhancement which stops the PR to PO conversion if the mutter is identified as obsolete, that process will not change.
+
+
+
+Abdulrahman Al Meqbaali (Borouge):
+OK, great. Then we have control and the PR.
+
+MM- SKEC2 - L08:
+You mean we will process the PR. We are only triggering PR creation. Enhancement or whatever controls you have from PR to PO, IDP is not going to change any of this.
+
+Abdulrahman Al Meqbaali (Borouge):
+We are just triggering automatic PR creation.
+
+UNKNOWN_SPEAKER:
+Problem solved, thank you.
+
+MM- SKEC2 - L08:
+All right, thank you.
+
+1Ali Mohammed Ahmed (ADNOC Onshore - PD):
+All right, let's continue. Yes, my point is in the same point where Arun and Aysha was discussing about it. The items demand plan, then reorder point and maximum safety stock. Now, just to have a common understanding, when the inventory controller is raising a PR, you have three scenario. One, which is the normal scenario, you have already a set of minimum and maximum, and based on the reservation, all this analysis, Okay and now with IBB as I understand the system based on the historical consumption will recommend you to change the minimum and maximum but then the change actual have to be through MDG.
+
+ System will only recommend this is now for item which is minimum with minimum and maximum.
+
+MM- SKEC2 - L08:
+Correction, one correction here before we move to the next point. The change will happen in IBP only. The recommendation will come in IBP and applicable to IBP only. Once approved, it will automatically get updated to Material Master and the changes on S4 HANA which is getting updated are only for reference. The entire planning happens in IBP only. The MRP happens in IBP only. So in Material Master, is just an information available on the new levels.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+It does not drive anything. No, no. Now, here we have the problem. Yes. Reorder point and maximum, it has to be decided by end user through MDG or any other mechanism in the system. So system. Can only recommend based on this and the recommendation can go to the end-user to adjust. But at the end, the final reorder point and maximum point have to be set by the end-user because we are ordering based on their request.
+
+ The system will not make any automatic change in the reorder point.
+
+Hector Palacios (ADNOC Group D&CS):
+Exactly. You're right. The system is only doing proposals as end user and group one is going to ask for Hannah's Rahul is saying so we are not sending one point when we when Ali Mohammed says end user the definition of end user
+
+MM- SKEC2 - L08:
+is not someone from inventory shares is that correct understanding as the moment yes yes from the operation from the maintenance okay so so I think there is this conflict of understanding here, because as per all the discussion we've had in this point, the inventory shared services is responsible for inventory levels. And the approvals would be, if any parameter for inventory management has to be changed, the reorder point, the safety stock, it would be inventory shared services approval.
+
+ And we are not planning to go to end user for their approval to update the safety stock and max. So is that understanding changing now?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So my understanding, no. The level of minimum and maximum, it has to be done by the end user. Either from operation or maintenance or drilling or whatever. I don't think so, Ahmed.
+
+MM- SKEC2 - L08:
+Can you confirm on this point?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Rahul, it's the same concept for new item creation. The user he creates, he proposes ROP level maximum based on the bill of the material. It comes to us, then we do like as yesterday discussed, we do like challenges same thing here when the system proposed me I cannot take decision I should refer back to the user maybe he have like you know he's
+
+MM- SKEC2 - L08:
+not okay with the proposed level yes exactly you get it yeah so the current I understand the concept but the thing is uh uh as per the current flow of information on current approval mechanism in all the BPD and BID document as well as the workflow we are saying. The approval for the changes in the Metal Master or the inventory parameters, we've already shown as inventory shared service only. We've never shown it goes to the end user.
+
+ And that was the understanding.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Now, maybe the material have historical consumption high, but in the future is not required. Who knows this information? Will not know. Only the end-user will know this information. Historical is for reference.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think, Ali, annually we will conduct an inventory analysis to identify the items which already have not been moved for five years or three years and also we will communicate with the end-user. We inform the end-user that this item has not been consumed for for five years or three years so that we need to amend the level accordingly. We'll take approval from them and their roles and responsibility for any levels amendment, it should be by our, by inventory team, by us.
+
+ But I think this is based on the conducted annual analysis. We need to review that one regularly. We need to review the levels. Maybe you are right. Maybe some of the item, we need to see the criticality, the movement of this item. We are feeling that this item not being consumed or compared from from vital to desirable, for example, we need to consult the end user, inform the end user that this item will be reduced or downgrade, this item from vital to desirable or from fast moving to slow moving, so whether to update the levels or to convert this item to on demand, or we'll have some amendment in the system.
+
+ But the rules are responsibility by us, by inventory team. Yes, yes, sir.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+At the end, the changing level, even now when it comes to MDG, the inventory parameter is done by the inventory controller. But the confirmation is received from the end user.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Ali, initially you are trying to say that MDG is going to the end user?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Sorry? Is done by is raised by the end user.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, you are raising the MDG OK based on your analysis. End user is raising MDG. No, no, no, see that is the initial setup. I do agree for the initial setup. Definitely you will challenge. You will discuss with the end user and then you set it up OK and then based on the historical consumption. OK, so it is the inventory controller responsibility as Mr. Yaser mentioned as as part our annual review you can increase or degrees or you can.
+
+ You can change the market type even as well. OK, it doesn't mean that you have to get the confirmation from the end user. This is your decision. You are part of your analysis. Maybe if it's required you can. You can check with the end user is it OK, but at the end of the day you are the accountability to review those parameters and then fix it based on the historical consumption measure. They are not the decision maker here.
+
+ Even after our IBP recommendation, after our review, if end user wants, if they want to increase or decrease any items setup, then they can raise MDG. There is no issue. Any particular item they want to increase or decrease the setup, they can do it.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+adjustment of the inventory level is an inventory role. Accountability, yes. Correct. Thank you for the clarity. Now the second, because I was speaking for raising PR to three scenarios. The first scenario is the normal when you have material with min and max. The second is which was historically before called the direct material, where the end-user, they used to raise the PR. But after sub-implementation, it became the inventory responsibility to raise the PR for it based on approved reservation.
+
+ So those item which is based on the approved reservation, whatever the for reference, but it should not be. Considered for raising an order. Still for those item. Order will be raised only. If there is an approved reservation. The third scenario is the forecasted. Material which have approved forecasts and based on that we will raise the PR and make the procurement plan. So we we are aligned in this understanding.
+
+ Yes, we are direct charge item you are raising him. No, no, that is different story. Don't don't miss that is different story. Not sure leave it. That means on demand item OK on demand. Yes, on demand. Yeah, on demand items.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK now see I miss Ali and Rahul until otherwise we see the actual results. From the production data okay through the IBP analysis we will not be able to give any confirmation or we will not still we are still in the confusion state only okay whatever you explain but until we see the real data and the results then only we can able to conclude on this all the topics whatever discussed here.
+
+MM- SKEC2 - L08:
+We are aligned here Jagannath so most of the points what we are discussing are related to supply planning where how should happen when PR should be created now. So let's let's take note of this point, but we will when we have the supplier running discussion will lead to. We will go through those points and will conclude on this points on on the basis of creation of PR through IBP.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Only PR we are Rahul. See Mr. Ali is mentioning some other scenarios like see we have on demand item. OK, currently we procure only based on the Maybe based on the IVP forecast analysis, it may propose to have MRP levels. OK, I mean ROP planning and also maybe I'm replacing with the ROP, but maybe based on the IVP planning it may request for the forecast planning. OK, advanced supply planning. So so these results only we can validate only after seeing the actual data.
+
+ I mean the production data, how the IVP is performing the doing the demand planning, what the results after seeing the results only will come to know.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, what's happening? Yeah, so on that point, yeah, I think that we are discussing before with the team. So if something is on demand. Um? What I VP proposes needs to be value, but added value. OK, so if by doing a forecast or putting reordered points levels we are not adding value, then let's not do it. On-demand items, if they can remain the same with no impact on the operations, I think that is the best approach.
+
+ Because otherwise, we can start having stock levels for that while it's not necessary. I think the value-added that we need to have on IP is only if we are facing stock-outs and those stock-outs are having impacts on the operations and things like that. But if we already identify non-critical materials that can be basically on-demand, we can raise a PR on-demand, then that shouldn't be part of any MRP type on the system here.
+
+ So it shouldn't have stock levels, it shouldn't have a forecast for that, it's going to be basically on-demand. But let's discuss about that one. Point that we were taking note with the team is that how we can identify this kind of materials to avoid going in the whole process of IVP.
+
+UNKNOWN_SPEAKER:
+No, no, no, no.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+That we can identify based on that. But if you want to see the capability of IVP, then what is the proposal? We are not against that. Always the on-demand items should be different based on the reservation. We can change the approach, definitely. Okay, so we want capability and then the recommendation of IBP. OK, then only we can come to know with a solid conclusion.
+
+Hector Palacios (ADNOC Group D&CS):
+Then alright, alright, so you want to see that for this materials the resource in IBP makes sense in our data to what we have today. We can explore for sure. OK, let's take note on that.
+
+UNKNOWN_SPEAKER:
+Yeah, so we will.
+
+MM- SKEC2 - L08:
+I'm aligned with what your thoughts are Jaganath. So let's proceed with what we have to show with the data we have. It the idea is to give more clarity than what we had done before this time we are also showing in the system and then yes if you would like to come so we are not asking for your approval or confirmation we are just re-evaluating what we discussed before with more data in SAP IDP system and for sure once the data is available you will be able to confirm it so right now we are not saying that whatever we discuss is approved we are agreeing to something which for sure cannot be happening but for sure you will have to evaluate with the more data and the end-to-end cycle so that you can see the results yourself and confirm.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, okay. Yeah, the important part is that you give us this very valuable input and we can direct this into the correct scenarios for the UAT. So yeah, thank you for this. We have a new scenario to on-demand items. All right, let me continue. So I explained you all the inputs that we have in different layers until we get to the outputs. Let's just stop in this distribution type point, OK? So probably the less known one.
+
+ So distribution times relates to inventory models, OK? So we have basically different models to understand what is this. Behavior of the demand. And this is all probability related. So let me show you this. Give me one second. I will try to show you an example here on my charts. So please don't get too enthusiastic about it, because once we go through the slides, we can come here to check this. But I want to show you that you will have demand and the historical demand, right?
+
+ Just one second. It's filtering. Let me check this. OK, so you will have historical information in the system, and we'll have some variability, right? Maybe this is not the best example, but this is what is going to be. So basically, your demand can be 4 or 8 or 14 during the lead time. That is what is important for us. And that is what we need to capture because we need to calculate the standard deviations and so on.
+
+ So when we calculate the standard deviation and all these formulas, this is translated into a distribution curve. So this is what probability distributions. And there are several of these on the world of statistics. We have normal, gamma, you have Poisson. On the system, we have those three, okay? So for some materials, we are going to use this one. For others, we are going to use the other ones. What this probability distribution is telling me right now is that in this example, the most common value that probably is the average demand during the lead time is going to be 10.
+
+ So this is something that is happening 14% of the times. It can be a little bit more or less with different probabilities. So if it is, for example, 8, it should have 11%. If it is this 13, it will be the same, 11%. It's also telling me that sometimes the demand is very high or very low. So for example, of the demand during the leap time is four units only. It's 2%. It exists, but it's very low. The same that the demand, for example, is 18.
+
+ So it's very low. It is still over zero, but it's very, very low. So this is what is going to help us to model the system and will be based on the historical data. So in historical data, you have an average demand during the leap time, and you will have the standard deviation, and we will generate this curve. This is just one of the several ones that we have.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+This graph represents one item?
+
+UNKNOWN_SPEAKER:
+Yes. Yes.
+
+Hector Palacios (ADNOC Group D&CS):
+For every item, you will have a different curve. So exactly. It's like that. You are calculating as curves, as combinations. We have not items. Items and locations. So, for example, the same material, if you have it on different plants, it can have different distribution types, depending on the consumption history and pattern.
+
+UNKNOWN_SPEAKER:
+Let's see.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+For me, as a battery controller, what do I have to focus on these graphs? You don't need to focus.
+
+Hector Palacios (ADNOC Group D&CS):
+It's only my explanation of what the system is doing in the background. But later, when we go to the session – sorry, to the demo, you will see exactly the views that you need to see and so on, but this is only for our high-level understanding, okay?
+
+UNKNOWN_SPEAKER:
+Okay, okay.
+
+Hector Palacios (ADNOC Group D&CS):
+All right, so there is other distribution when we have high variability, it's the gamma. In this case, for example, you have the average is like four, right, but then you have many cases here in the tail of this curve that are saying you that sometimes you have very high peaks on the So this is especially good for modeling these cases in which normally you have low consumption, but then suddenly you have a big peak on demand.
+
+ So in those cases, we will use gamma. And lastly, but not less important, you have Poisson distribution. So Poisson distribution is for very unfrequent events. The other ones that I showed you is when you have enough data points, when you have a kind of continuous or can be intermittent but with enough data, whenever you have like a very low data volume, like I'm telling about the events, like meat movers for example, this is especially good.
+
+ Why? Because usually in those cases you don't have enough information to calculate the standard deviation. Remember that the standard deviation is based on historical values. We have very little historical values, the standard deviation is going to be bad. That means that the distributions that we calculate for those items is going to be bad as well. This distribution doesn't require a standard deviation, and the distribution by itself captures the unfrequent events.
+
+ So depending on the historical pattern that we have, the system will select one or the other automatically. So basically, we are checking demand frequency, variability. And if we have a very low frequency, it's Poisson. If we have a high to moderate frequency and moderate variability, it's normal distribution. In all other cases, basically when the demand is very variable over the lead time, we have the gamma distribution.
+
+ So these segmentations are going to be calculated on the system. We have a variability segmentation that is depending on the standard deviation of the data. And we classify as high and moderate. And the demand frequency is based on also on how many data points we have in the past. So this will be done by the system. And it's just high understanding for you what we are doing here. Let's continue with the following one.
+
+ So here we have an example of the Poisson distribution and how the fears of reorder pawn and safety stock are here. So imagine that the normal demand that you can have during the lead time is two units. But that is like a 27% probability. If you have one, that is 27% probability. And if you have zero units during the lead time, that is 14%. Percent probability. So if we keep two units on a stock, we are going to cover for 68 percent of the cases, because historically that is the behavior.
+
+ So it's 14 plus 27 plus 27, that is 68 percent of the cases. If I increase in one unit the reorder point, then you have a safety stock of one and two units of demand during the lead time, and all together are the reorder point. Just by adding one unit, you have 86 percent service level. If you add one else, you have 95 and so on. Basically, if you see the part of the reorder point that is increasing is indeed the safety stock, because the reorder point is safety stock plus demand during lead time, that is, In this case, it's a more normal case that is right here.
+
+ That is the whole idea that I want you to understand that by affecting the service level, you are affecting directly how much stock we are going to keep for this item. Very critical items, if you want to cover all the possible scenarios, even when the demand is five, you can have five units. Otherwise, you can go decreasing the service level and you have less and less stock. Even in some cases, maybe you don't even want to have safety stock at all.
+
+ You have only the demand during the lifetime and that's okay. That service level will depend on the criticality that we are going to discuss right now.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+The business continuity item, how can we calculate it? We need to know that business continuity item should be available on all time, on our store. 99% for them. And the calculation, same?
+
+Hector Palacios (ADNOC Group D&CS):
+So how IBP will work is that we provide the service level for business continuity item, we will say 99%, and IBP will calculate reorder point and safety stock. So based on this service level formula, and it delivers the reorder point, this formula is completely on this distribution of probability, and that safety stock will be the reorder point minus demand over the lead time, and you have that. So probably the scenario of the business critical is going to be very similar to this one that we have here.
+
+
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+And I think during the replenishment, the available stock and the current stock should be considered, right?
+
+UNKNOWN_SPEAKER:
+Yes, exactly.
+
+Hector Palacios (ADNOC Group D&CS):
+For sure. The system, this is supply planning, but the system will not generate anything if we have available stock on our plant or maybe in other plants on the AdNoc group. So it will check everything, basically, all the stock available for AdNoc. And if we have a possibility of sharing stock, we will do it. Only after that, we will generate APR. So yes. All right. So let me show you some of the...
+
+ I think that maybe it's going to be better explaining the service level part because we are having many questions there, and then we can go to that part here. So let me jump to the service level. So this is what we were just discussing, right? Service level. So service level is that percentage of availability that we want to have. It's contrary to the stockout probability. This is the non-stockout probability.
+
+ And risk score is telling me the criticality of the item. So if I have a stockout for this kind of item, this is very bad because we are stopping operations. But then for other items, maybe they are not as critical. So that criticality that we are discussing is going to base on the segment So, this is like the table that we have right now. So, it's initial proposal that we are discussing for MRO in the prior session.
+
+ So, probably many of you were part of the session. And we are saying this, we will have six research scores, and this is the proposed service level. So, the lower the number is, the higher the priority. Okay? So, priority number one, let's say, 99%. This is for business critical or business continuity. Then priority two, 95%, and so on, until we have a case with no priority. So basically, we are not even calculating safety stock at all.
+
+ And how we define what is going to be the risk score? This is based on the segmentations. So in the left is the more hierarchical one. We identify that this is a business continuity item, then automatically, no matter the augmentations, we are going to assign one, because this is really important and we need to have always enough stock to prevent stopping the operation. If it is not a business continuity, we can check BET.
+
+ Then as a second layer, we can check the price, if this is moderate to low or and also the segmentation, or the FMCM. So in this case, for example, we have this is vital. The price is moderate to low, a fast or mid-mover item, then criticality 2. But if this is a high price item, maybe I want to have a little bit less of this because it's very expensive. Depending if this is a fast mover, then we have a 3, but if this is a mover, we can reduce to four.
+
+ So this is an initial matrix that we can have. We can check the resource later on the system with the assigned service level. So basically, this segmentation will be translated into a RISC score, and the RISC score will be translated into a service level. So in the dashboards that I will show you, you will see exactly this is the segmentation for the item. This is the research score. This is a service level.
+
+ These are the results. And we can debate if this is making sense or not. And if not, we can reassess how we are thinking this matrix.
+
+UNKNOWN_SPEAKER:
+OK?
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Any questions? This matrix, yes, for the vital item. As per our operation, our process, that vital item, irrespective of the cost, we need it by 99% or 95%, one or two. But here I can see that we have four also here. I think this is like, of course, that on all vital items, and also to hear from the team here, that this is the vital items. The vital item, that means we need it, the end user, vital item, and what is the definition of the vital item?
+
+ This item, without this item, that means we have immediate production lost. This is the definition. That means we need it at least 99%. For example, Python and fast moving and medium moving. Team, quick time check.
+
+MM- SKEC2 - L08:
+Our planned time for today's meeting is finished and we have a weekly status getting initiated, so can we continue this conversation tomorrow from the same point.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Thank you all.
+
+MM- SKEC2 - L08:
+Thank you.
+
+UNKNOWN_SPEAKER:
+Hmm.
+
