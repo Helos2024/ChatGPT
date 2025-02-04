@@ -1,0 +1,1208 @@
+UNKNOWN_SPEAKER:
+Hey, good morning.
+
+MM- SKEC2 - L08:
+Hey, good morning, Khalid.
+
+UNKNOWN_SPEAKER:
+Good morning, Khalid.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+What's that?
+
+MM- SKEC2 - L08:
+Oh, that's a bag. I thought that's a gift box.
+
+UNKNOWN_SPEAKER:
+That's a school bag. How are you guys? Good. Good morning, yes it. Yes, it you're fine now. Yes, it there. Yes. As-salamu alaykum. Good morning.
+
+Aboobacker M. (ADNOC Gas - PD):
+Good morning, Aboobacker.
+
+UNKNOWN_SPEAKER:
+How are you? Very good, Alhamdulillah.
+
+UNKNOWN_SPEAKER:
+Hi everyone. Hello.
+
+MM- SKEC2 - L08:
+Rahul from your end is the team is there. Yes, Hector has joined. Good morning, Hector. Morning, we also have Vivek.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Hey Hector.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Or can we start anyone specific that from ad hoc team that you'd like to check if he or she are on board or we can proceed?
+
+UNKNOWN_SPEAKER:
+So, Hector and Raoul, I think we can kick off. Yeah, yeah.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Sorry. Yeah, I'm highly down in the AdNoc team. You are waiting for someone specific we can proceed right right please please go ahead go ahead so go ahead bastion and team yes we're going God bless. Thanks.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Give me a second to share my screen. Thank you.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Can you hear me well? Are you her?
+
+UNKNOWN_SPEAKER:
+It sounds bad. Thank you.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I think more when you speak No, it's not even when Hector spoke so maybe something from the room here if I speak do you hear echo No, that's when someone has a 60.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+It's mama.
+
+UNKNOWN_SPEAKER:
+Yeah, so when Khalid spoke, there was echo.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Hector, my friend.
+
+MM- SKEC2 - L08:
+I think it's more Hector. Bastien are you in the same room together?
+
+UNKNOWN_SPEAKER:
+No. You're not. No, it is clear.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Then I think it's Bastien then.
+
+MM- SKEC2 - L08:
+Bastien, can you speak? I'll try speaking if it is creating echo.
+
+UNKNOWN_SPEAKER:
+No.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I'm speaking. And it's not stating echo, so I think the issues are less specific. So let me disconnect and connect again.
+
+Mohamad Naamani (ADNOC Group D&CS):
+No, it's good.
+
+UNKNOWN_SPEAKER:
+Too late. Is it better now?
+
+UNKNOWN_SPEAKER:
+Yes, it's fine. Now I hear it. Guys, please start. I think it's OK.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+It's OK.
+
+UNKNOWN_SPEAKER:
+OK. Yeah. So let me share my screen.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So we will The purpose of this meeting is to, well, we are in, um, beginning testing chemicals, but the specific purpose of this session is to, uh, cover, uh, the entire demand planning process for chemicals, but for, uh, the
+
+UNKNOWN_SPEAKER:
+forecast-based materials. Okay?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So, um, So one thing is that we loaded more information. So we have extended examples. So yesterday, we ended up here. So before jumping into the exact examples, I want to cover a few things. So first, reviewing more detail, I in a more structured way, the demand planning process. So the way it's going to work, we will start, of course, this will happen on a monthly basis, unless there are some materials that because they move very little, they can be reviewed on a quarterly basis or on a yearly basis.
+
+ But in general, most materials, I think they should be reviewed on a monthly basis. Okay, so we will start with the data integration from S4HANA. Someone is responsible to make sure that the jobs are running fine, are running successfully. Then we will have the segmentation. The segmentation, as we see here, it will determine the planning type automatically, but it also will calculate the FMSN, ABC, XYZ, and other required parameters.
+
+ Then we have the data cleansing that we reviewed yesterday, but today we have more examples of data cleansing and why it's needed. Remember that data cleansing is needed to create a good input, a consistent input for the statistical forecast. Then we run the statistical forecast with multiple we will review some of the models. And finally, we have the collaboration where the planners can adjust the forecast based on their expert knowledge.
+
+ So in total, we have five steps for the demand planning process. Here in data cleansing, can you please explain more here?
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+What do you mean by data cleansing? You mean the- Yeah. The level is maximum, minimum, or outlier?
+
+UNKNOWN_SPEAKER:
+Okay, okay.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, here we have the data cleansing and we're going to review it with more examples with your data, okay? So here in the blue bars we have a consumption history which is more or less flat. And all of a sudden we have some spikes in consumption that are by nature, unpredictable. So what we need to do is to flatten these consumptions so we can create then a stable, yeah, a quality statistical forecast.
+
+ So we will generate a correct historical consumption, and then with that, we will generate the forecast. OK?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So here we have Excuse me, just before you go to the next, because this the beginning is very important and it is a basic to start with it.
+
+UNKNOWN_SPEAKER:
+If you go to the previous slide. This one? Yeah.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Now starting from the data integration. Can you go one by one? Data integration, what we mean is to integrate the material available in sub with the IBB or it is integration of the different item from different companies if there is some similar product to be integrated or to be standardized.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+For the chemical process we mean we mainly we will integrate two things materials new materials if they exist in transactional data by transactional data I mean reservations moving prices if we have the budget stock but what what we need what the core What is essential for the DEMO planning process are the materials, if there are new materials, and the current, historical, and future preservations.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So you mean integration between SAP and IBP? Exactly.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So anything which needs to be done in the standardize of the material that mean it have to be done before that in SAP? Suppose if same chemical is used in different group of company, but it have different item number or material number.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, we need to have that relationship. Absolutely, it is necessary. Otherwise, we will, we can be buying the but with different codes. The specific...
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So that step, that is not in the scope of your work.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It's not, I mean, it's something that we will show how and during future sessions how we can plan materials that basically are at the same material but it's not it will not be covered during this specific session.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah because there may be some item and it is the same material but maybe the description is slightly different and the material number also is different from one group company to another. So here we will be having as you said we will purchase it order we'll have for the same material. It will go to the same vendors. So to tackle this issue, is it covered in this scope or not?
+
+Hector Palacios:
+Ali, it's not covered in the scope of this project because we cannot do that. It's on S4 site. But we understand that there is an effort for this. Maybe, Rahul, maybe you have more information, but for my understanding, that there are many materials like this that we need to homologate in a way. So when we generate the PRs, we can consolidate. Because right now, we cannot consolidate the materials that they have different codes.
+
+ On IVP, the best we can do in the case that we don't have this ready by the go live is that we can set up alternative materials, and we can have a certain interchangeability between them. But if you want to consolidate the PRs, then we need to have the same material number for all the codes are exactly the same material.
+
+UNKNOWN_SPEAKER:
+You are correct.
+
+MM- SKEC2 - L08:
+So Ali Muhammad, this is something as part of the change impact. These points will be highlighted with the change management team. So all the points which needs from a data perspective which needs to be worked on parallel would be highlighted with a with that not be so that a parallel action can be initiated fired knob on cleaning all those data's including the one.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, this would be part of these data standardization. You know there is some project is going on. I think it should be taken care through that project. If not, then the material engineering team should do this.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It's not be part of IBP.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Finding the duplicates clear. Is only system integration.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Of course, yeah.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Then the second point, segmentation. Segmenting based on and what can you just elaborate on it?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, so the first segmentation, so we're using your segmentation, meaning FMSN. We have here the definition The system will calculate that now. Instead of you doing it, I don't know, every year or every quarter in an Excel sheet, the system will do it by itself. And then we will integrate back those values, OK? But along with the FMSN, we will also create, in this case, planning type segmentation, will divide materials by forecast base or reorder point based on this rule.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Okay, then in the future the system will suggest to change the segment in case, for example, if the material is segmented as fast moving, but then later on based on the consumption it is not fast moving and it is slow, so the system will suggest to change?
+
+UNKNOWN_SPEAKER:
+Absolutely. OK.
+
+Hector Palacios:
+Just to complement, we are calculating also the HTML, ABC, X-ray set segmentations. We are discussing only PED, but PED so far, the input we have is that we will iterate it from the system, because the inputs are complicated to iterate, to calculate it directly here on IVP. Just to summary, we are calculating on IEB FMCN, ABC, XYZ, HML. We are going to create the planning type segmentation as well here for internal purpose and BED and BC are going to be integrated from S4HANA.
+
+
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+And all this process will be automated process, right? Yeah, yes.
+
+Hector Palacios:
+Okay, perfect.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+And also not only here and also we need it for the proposed levels, min-max, reorderable, economical order quantity, and also we need the same there to be automated also. Yes, that is what we will see on next session for inventory planning.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Okay, and the data cleansing is, as I understand from the previous slide, it is only Correcting the historical data.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah. One point that I need to be highlighted is that we won't change the source data. We only will change, we will create a new key figure in IVP, and I will show in a second that will show the corrected data, okay? But the source is not changing. And before jumping into the statistical forecast, models, I want to show you an example with your data, right?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+One second, Hector, sorry, Bastian. Can you go back to the process flow? One step behind, please, the previous slide. Still, you wanted to consider the transaction data for deciding the planning type. What was agreed yesterday, Rakul?
+
+MM- SKEC2 - L08:
+Yeah, so this yesterday we understand that not all the five years data would be available in S4 HANA because the data in the custom tables cannot be directly used, which means from the data of Golife or respective group companies, whatever data in S4 HANA, would be incorporated. So we will change this as per our discussion yesterday. So Hector and Bastian, I'll send a note to you also. We will be using standard SAP tables for taking the consumption history into IBP.
+
+ And the standard SAP tables will not have fibrous data based upon when the group company got from that time onwards. So some may have from 2019, some may have from 2020, depending on whether the company got onto SAP. The consumption history would be available from that part of time.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I believe we have from 2020. I mean, most data that we have now is from 2020 onwards.
+
+UNKNOWN_SPEAKER:
+Yeah, so.
+
+MM- SKEC2 - L08:
+Only for some companies.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+And that's what you're referring to, right, Jaganath? Yes, yes and also just I want to understand it with more on this consumption pattern planning. Yesterday I gave one example. OK, there may be a new item added. OK, which is just two years before it may be having more than 15 times of consumption within two years. Do you have any technology kind of like machine learning or artificial technology that instead of waiting for the five When you see the last two years consumption, it may predict that OK, it's going to be like, Very fast moving and then it will decide on the planning type like forecast based planning or still you wanted to go there.
+
+ Whatever the data without using any recent technology, just believe on the historical data and then just go for the real point planning.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+25 points in the last five years. Well, first of all, you can have 25 points in the last year, and that is good enough, OK? So if you tell me that you have 15 points or 10 points, but they all happened in the last year, like let's say in this material have had consumption in the last 10 months, the system by itself won't choose forecast-based planning. The users are available to change that and create a forecast.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, I don't want user to change. I want the system to propose, OK, based on this. That's why we keep on mentioning artificial intelligence and machine learning technology, data technology, something like that.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, what I meant by the user is, I mean, the user opened the option to the system to propose. No, no, no, this user giving a, creating a forecast, but the user saying, okay, although we have less than 25 points, please create a forecast for this material. I don't know if that's clear.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+My question is different. Is capable of proposing. OK, based on let's say last two years consumption data, how many times it consumed so it can decide. OK, definitely it's going to be the forecast based planning. Even though it is less than 25 times of consumption.
+
+Hector Palacios:
+Yes, yes, yes. Understand correctly, you're saying that even if we don't have the 25 points, If we see that in the last two years the material is moving fast enough and we have, let's say, 20 data points, you want the system to propose that this is forecast-based? Yes. Okay. Let us think about it. We can take that as an open point. The basic rule that here Bastian has is that basically if you want a reliable forecast then you need to have at least 25 points.
+
+ It doesn't mean that you cannot generate a forecast with less points, but we are only saying that it's more reliable if we have enough information and for us enough information is 25 data points. But you can calculate a forecast for less points as well. So let us sink on that point that you're saying that the system can tell you if this is a fast mover, maybe we can do an exception for using a forecast-based approach with less data points.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+We discussed also yesterday for new material, but there was no clear way for how to handle the new material, which does not historical record or there is no equivalent item in the system.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So in the what we the requirement that we collected information we collected four chemicals for a spare part is a different case is that you're able to provide some relatable item meaning if this material Although this material is new, it is very likely that it will behave like this other material. If we have that relationship, we can create a forecast. But of course, that information needs to come from somewhere.
+
+
+
+Hector Palacios:
+If we don't have any similar material, because what Bas is saying, we can use a reference, a similar material. So you can borrow the history, and you can say, OK, this is going to behave like this one so I can take the history of this one add it to my history and I create a history for this for this material a fake history but it's an assumption right so that this is going to behave similar to this another material and you can create a forecast because probably you have more than 25 data points if you don't have any reference I mean this is a brand new chemical and and you don't have any related history, the second option is to have the mean time between failure from the vendor.
+
+ Because usually the vendors, they are telling you that, I don't know if for chemical supply the same, but for spare parts they are telling you with which frequency this is going to fail. So maybe, I don't know if for chemicals this is the same.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So we have a- For chemicals, sometimes the vendor will record the dosage.
+
+Hector Palacios:
+Yeah, but it's still a unit. Ah, the frequency.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+The user have to put the, because they will recommend in like in PPM or something like this, in the term of dosage, the continuous dosage. But then the user have to calculate the quantity and tell us in the drum or the unit that we use, their need for a unit. Year or per month.
+
+Hector Palacios:
+And again, is this information available on SAP? No, for new material, once it is created, we usually receive the forecast from the end user.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+And based on that, we do the purchasing. So now when it is in system after the first time, then it has to go to the user.
+
+UNKNOWN_SPEAKER:
+To.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+To make the forecast, because there is no historical consumption in it.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+And then after that, once it is used for the first quarter, second quarter, for review of the forecast, the historical consumption will be there for them to refer to it or then endorse it or change.
+
+Hector Palacios:
+Yeah, I mean, the historical consumption will be there. If we have enough information, we will always have a forecast. But the system will tell you this is a forecast based or a reorder point based based on if we have enough information for the forecast to be reliable or not so you can use that information.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Now the point is for new item which does not have any historical reference and there is no similar item to refer to it then directly it should go in the for the user to update in the system, endorse it from their management, and then route it in the system?
+
+Hector Palacios:
+I think that needs to be a more manual approach, as you're saying. So what we can do is to highlight these materials. We can identify them. To show to the user these are the ones that we will need your input because we don't have a reference material for this. We cannot calculate a forecast. Then you need to check the forecast. At least at the beginning. When we have enough information, of course, the system will start, will change the segmentation and will say, okay, this one we can forecast it because now we have enough information.
+
+ So it will change the flow for the material with the time. But at the beginning, you will need, that's right, we will need the end user to provide a forecast if we don't have any reference. And if we cannot bring information like the mean time between failure for raising us. There is another question there from Mohamed.
+
+UNKNOWN_SPEAKER:
+Sorry, sorry, I missed it. Sorry.
+
+1Mohamed Abdallah Mohamed (ADNOC - GP):
+Do you have a question? No, thanks, brother.
+
+Abdulrahman Al Meqbaali (Borouge):
+You have your hand raised. I cannot remove what I want to remove. I heard Mr. Ali was mentioning something about the package size for the material. What's the relation of package size? When we say, for example, material supplied in DRAM, the package size would be, for example, 208 liter, or it would be 20 liter. What's the usage of this?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Go ahead.
+
+Hector Palacios:
+So on IVP, we are planning on the base material. Sorry, base you need to measure. So all the results that you will see are on the base unit of measure but also we have the conversion to any other unit that you may have okay so probably if you see a forecast at the beginning we will check what is the base unit of measure we will generate a forecast and then we can convert to all the other units of measure finally when we send to the PR we also need to identify what is the preferred unit to measure for that PR.
+
+ So when we integrate back to S4HANA, because just for you to know that this whole process is for generating finally a PR into the S4HANA, right? So we generate it on IVP, we integrate it back to S4HANA. At that moment, we also need to check what is the unit to measure that we need to create the PR.
+
+Abdulrahman Al Meqbaali (Borouge):
+Let's say to match the form of supply. Right now, this is available in Material Master, I think, only in P.O. Text, not in a specific field or table in Material Master. I don't know how you are going to extract this information.
+
+Hector Palacios:
+These are standard tables for us that you need to measure.
+
+Abdulrahman Al Meqbaali (Borouge):
+Unit of measure, yeah, I agree with you. Liter or kg, but what I mean, the rounding. The rounding, like the note size.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Abdulrahman Al Meqbaali (Borouge):
+Because if you are forecasting for me or you are creating PR for me, let's say for 5,000 or 638 or something like this. So this will come with a decimal. How they can issue the people. Yes. That will be their partial collecting.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+things here, two things here. If the basic unit of measure is, let's say, 25 kilograms, then one unit will represent 25 kilograms. So in that way, if we say, okay, our forecast, the forecast generated by the system is, let's say, I don't know, 67, well, 67 times 25 kg, right?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And then in the supply So in that part, the problem is covered. The point is covered. Then in the supply part, the basic unit of measure will be, let's say, 25 kg. So one unit of this material represents 25 kg. So let's say the PR is generated for 10. Then it's for 250. So in this way, we are working with basic unit of measure and the rounding will come with itself.
+
+Abdulrahman Al Meqbaali (Borouge):
+The point of the rounding, how it will be calculated?
+
+Hector Palacios:
+In the case that we don't have a case like Bastian is mentioning and we are generating, as you say, a forecast in decimals, but you cannot buy in decimals, there is a feature that But this is later. In the next wave, we have supply planning. And in supply planning, you have the feature of lot sizing. That is the rounding that you are looking for. And it will translate if you have, for example, a 3.6, but your lot size is 2 and 2, it will translate this into a 4, because you cannot provide 3.6.
+
+ You need to provide 4. The question is, where do we have this information? Usually this we will get it from a standard table on S4HANA, but if you think that this is in a C table, that is a very appreciated input if you have it right there.
+
+Abdulrahman Al Meqbaali (Borouge):
+There is a material master. I think there is one field called rounding body. One second.
+
+Hector Palacios:
+If it is a material master and it's a standard, we already have it.
+
+Abdulrahman Al Meqbaali (Borouge):
+And MRB1, I think it's rounding value. This one needs to be updated because as far as I know, most of them are not having this information. Most of them are coming in pure text only.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Abdulrahman Al Meqbaali (Borouge):
+We will utilize that one only, correct?
+
+Hector Palacios:
+Yes, we need to use a standard for sure. So there is another data gap related to the load sizes that is now maintain for our materials.
+
+Abdulrahman Al Meqbaali (Borouge):
+Okay, but just I want to know this, under your scope that would be fine?
+
+Hector Palacios:
+Yes, I mean it's out of our scope, but it is one of the things that is going to affect us, so as Rahul mentioned before, we are raising all these points so we can work on them in parallel on your side. In order to generate the best resource on the system, we need to have the best data as well. So this is part of the activities that we need to have.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Sebastian, in that sense, then the lot size has to be maintained in a separate table for each item. Is that what you're trying to say?
+
+UNKNOWN_SPEAKER:
+No, no.
+
+Hector Palacios:
+It's just to be maintained on the standard source table, not a different table in the standard source, but need to exist. I think that what is being raised right now is that for many material this information is not maintained.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, those values, it is not a fixed value. For example, if an item is going on a competitive tender, maybe one manufacturer is having 208 liters. So it depends on the vendor. Yeah, so the next manufacturer will have 200 liters. So how to have this lot size?
+
+Abdulrahman Al Meqbaali (Borouge):
+system should have like a logic to see the latest purchase from the same vendor based on the history and which form of supply he was supplying.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Currently the agreement buyer writes the packing in the free text in the pure text so nowhere it is captured what is the lot size or the what is the drum capacity. While issuing a call of order only, manually we are multiplying the quantity and updating the order quantity in that multiplication factor. Either 208 or 185 or 187. So all these manual activities now, each inventory controller we are doing in the release order stage.
+
+
+
+Hector Palacios:
+Okay, let me ask a question to my team. Rahul Kush, do you know if there is a standard field for maintaining lot sizes at vendor material layer on S-Rohana?
+
+UNKNOWN_SPEAKER:
+We can check that, Hector.
+
+MM- SKEC2 - L08:
+We know that there is max and minimum stock level at least in InfoRecord, but lot size, let's check that. I don't think so. They are right now available, but yeah, we can verify this again. The lot size right now are at the material master attribute which is maintained at a metal master level and the same gets applied. So, if every vendor has a different lot size, then we'll have to think through how to capture this information.
+
+
+
+Hector Palacios:
+Yes, one proposal was related to checking the past purchases. I don't know if that is feasible because you have, for example, let's say 20 and you buy 20 in the quantity that can be a multiple of 4, 5, 2, 10, so there are many possibilities. It's not just easy to see this is the rounding quantity.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think in the material master in the purchasing section, it will find something called order unit, maybe from there, here. Because this is the first thing, the most important, yes, order unit from here. This is the most important, the very important point, Tim.
+
+Hector Palacios:
+Yes, sir. This is at material level or is by material mentor because the team is raising that by vendor you can have different lot rounding.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+So by vendor sometimes from our side let's say now we have one material number the supplier say no we will have one bag consist of 12 pieces and our requirement only 10 pieces so that's there's at some difference here
+
+Hector Palacios:
+between the order quantity now.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Yeah. We face similar to this Is this a right session to discuss this one, Raoul? Or do we need to discuss the supply in more detail?
+
+MM- SKEC2 - L08:
+I think we need to discuss this in some plan.
+
+Hector Palacios:
+But just please highlight it. Highlight all the points here, please. So we took note, but as Yaser is saying, let's proceed because this is the demand planning session. If this one approves the demand planning.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+In the supply planning, please, we need this point to be raised again, Abdurrahman also, And also from your side, just record all the raised point from the team, please.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+Hector, yes, since we are discussing here the demand planning, so what are the base units they are considering for the calculation?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+All the units that you have in your HANA system?
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+The chemical will be like liter or kilogram I believe. Do we have any other?
+
+Hector Palacios:
+By material you have the base unit to measure so basically the ones that you have on by material.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+No, we may be having a tank, drums, tort and many will be there, IPCs and all. But what would be the base units for the calculation?
+
+MM- SKEC2 - L08:
+So the base unit would be the one which you have as a base unit in SAP Metal Master and then all the current units are there as well but the base unit is the one you have defined in SIP module master is the base unit for plan.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+For example if I have a material and which is having a drum as a material which is already it's a unit which is mentioned in the SAP.
+
+MM- SKEC2 - L08:
+If it is a base unit yes then that becomes a base unit for IVP as well.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+Because as Abdur Rahman mentioned earlier because some of the some of the material will be coming in 200 liter, 208 liter, 185, 187 so how how you would convert this one into even further base unit. So, when we are doing the calculation, yes, the base unit should be literally should be a base unit.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But again, the previous usages, the issuance, it is captured in the same unit of measure.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+Yeah, but maybe one item may be having multiple item numbers, maybe same item, same item may be supplying in tank same item may be supplying in IBC toad, same item may be supplying in drums as well.
+
+MM- SKEC2 - L08:
+So that's what we are saying. A material has a base unit of measurement and alternate unit of measurement. These are all defined in the material master and SAP. We are extracting the same information in IBP. Now, along with the base unit of measurement, alternate unit of measurement, the relationship is also defined in material master. The same would be added to IBP or transferred to IBP.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+not mentioned in material master there is no specific field available for that because as mentioned earlier drum is it can come in 208 liter or 206 or 185 like that so where is this conversion coming that's the that's the
+
+MM- SKEC2 - L08:
+conversion which has to be made in an alternative measurement so when you define an alternative of measurement a drum is equal to 185 liter has to be defined as alternative in SAP S4 HANA if there are three different drum
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+which is not available in the system.
+
+MM- SKEC2 - L08:
+If it is not available, we expect this data to be maintained. If this data is not maintained in S4 HANA, we will not be able to extract anything from it.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+Because when we are doing the calculation currently, yes, we do in Excel, but we have these records available manually. We have entered this information and we are doing the calculation.
+
+MM- SKEC2 - L08:
+Then the expectation would be to have this data updated in S4 to make sure that the alternative development and the relationship between them are maintained in SAP.
+
+Ali Ali Raya (ADNOC - GP):
+Actually, we get this information from the supplier itself, like paint. We have already painted. They provide us the details and the specific quantity from the supplier, and we make it manually for the Excel. Because sometimes you find the work order created by the loan and deleter. But when we process for we have to convert to liter, but we get this information from the supplier. As a measure of unit, we can use it during the evaluation.
+
+
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+Yes, by taking care of that one based on the liter. Yes, he he convert this into base unit and he do the commercial evaluation.
+
+MM- SKEC2 - L08:
+So this point noted, let's take this point in the supply running discussion where at the time of supply running how the base unit of measurement should be converted into a different unit of measurement. Theoretically or by principle SAP S4 HANA should have this data updated base unit of measurement and alternatives of measurements and their relationships should be made in material master and the same will get extracted in IVP.
+
+ But if there is, we have noted this and we can discuss about this further in the supply planning session if everyone is okay.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Rahul, we have this option in SAP to maintain the conversion factor. Say for example, OCTG, they order in feet, but the stock keeping unit being joint. We pay to the supplier based on how many feet they supplied, but we keep the stock in terms of joints. The same should be applicable for wherever it's applicable for the chemicals and all. Exactly, that's the point I'm trying to highlight. Where they buy in liters, but they'll store it in the drums.
+
+ It doesn't mean that they have to maintain 203 liter equal to one term 205. Whenever they receive the material based on the supplied quantity, they can change the conversion factor. OK, the system allows the warehouse supervisor to do this calculation based on the how much they receiving. OK, this data should be maintained in the SAP for for Anna Najeeb. Otherwise you know we need to see how we can capture this data because it's not.
+
+ But in the front end we front end we don't want any. This kind of conversion but in the back end calculation only. Back on and see when the virus supervisor receive the material okay he receives in that letters okay but he converts this letters based on the batch they submitted into drums okay and then it will be paid to the supplier
+
+UNKNOWN_SPEAKER:
+in terms of letters only okay.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+So I think Jagga so here when we are selecting a material code in SAP of course the unit of measurement is already defined and we are ordering in the same and we are receiving and we don't have any issue with that one but the volume of the chemical because since we are discussing only chemical here if it's other material is we don't have any issue at all but for chemicals if you want to know the how many days sustainability is we can achieve using the chemicals yes the measurement will be will be based on the operative days how many days of operation we can achieve.
+
+ Based on the plan. So, since we have one chemical say one single chemical with multiple catalog IDs with a different unit of measure. So, how you can measure the volume of the entire chemical using a base unit of measures.
+
+MM- SKEC2 - L08:
+So, what you are saying is you have multiple material codes for the same chemical based on unit of measurements.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+This is what I have mentioned in the first presentation that we are having multiple unit types for the same chemical. Based on the transportation what we call availability yes we will be using any of this. If you have a tank available yes definitely we will be using the tank because we have a way for especially for offshore yes we have a very limited space available. So, most probably chemical will be supplied in both.
+
+
+
+MM- SKEC2 - L08:
+So, a question here, why you have created separate materials when you can use alternate unit of measurement? Is there a specific reason why you created multiple materials?
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+The same chemical name, everything is same, but only the difference is unit of measure. That is what the question is.
+
+MM- SKEC2 - L08:
+Why did you create a separate material code when define. They're using the same like in OCTG.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+Yeah, yeah.
+
+MM- SKEC2 - L08:
+Because that's what the basic expectation is that at the best practice you should not be creating material codes based upon unit of measurement.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Some cases it is not possible, you know, see as mentioned there are commercial impact as well in this case. In some cases they wanted to keep it as a litter. In some cases they wanted to keep it as a drum because we mentioned some transportation issues and also some operational issues you know.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+And also impact as well because there is IBC and drums yes there is a cost involved and for the drum supply yes the cost is comparatively less.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Correct because you know say for example if there are some users they wanted to consume only by litter they don't want to consume as a drum and then keep it. They need just So the package what they wanted to use is just in terms of letters only, but some other users be heavy users. They wanted to consume as a drum because we didn't want to take them as later. So there are some operation due to some operational convenient.
+
+ Some cases they are using two different or multiple base unit for the same item. It is. It is possible it's happening. OK, so we need to see how best we can this one, Rahul. Please make a note of it.
+
+Abdulrahman Al Meqbaali (Borouge):
+What I found, Jatin, when I see we take more time in this discussion, while Mr. Yaser already suggested to take it in the front meeting. We have some suggestions. We can support, okay, in this idea. Once we come to the deep discussion, I can provide you with some solutions if required.
+
+UNKNOWN_SPEAKER:
+Absolutely.
+
+MM- SKEC2 - L08:
+All right, let's pass this point. We've noted there are multiple materials for the same physical material based on unit of measurement. And let's take this separately and have to align on this.
+
+Abdulrahman Al Meqbaali (Borouge):
+Yes, for the time being, I put it in the note for your reference only.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+So what we do for all calculation purpose, whatever the unit of measure is allocated in the SAP, we convert in the back end to a base material, base unit of measure, that is, either it will by liter or kilogram. This is applicable only for chemicals.
+
+MM- SKEC2 - L08:
+So, you are finally converting between the multiple units for the different materials on a on a single material code. So, it is more like generic metal code which is used in drilling versus alternate unit metal code based upon the vendors.
+
+Muhammed Najeeb Abdulla (ADNOC Offshore - IC):
+Yes, yes generic one and the branded one similar concept yes.
+
+MM- SKEC2 - L08:
+Similar concept.
+
+UNKNOWN_SPEAKER:
+Yeah, yes. Alright, we will take a note of this.
+
+MM- SKEC2 - L08:
+If required, we'll plan a separate discussion to detail this out further so that we have a clear understanding of this and probably we can have discussion about this sometime next week.
+
+UNKNOWN_SPEAKER:
+OK, sure.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Alright, let's look at the example of data cleansing, OK? So we have this material, chemical neutralizing, 23 kg. And this is what I was saying, what I was mentioning regarding the base unit. In this case, I guess one unit means 23 kg. OK, we are ready. Mark that point, okay? So IBP has multiple outline correction models, okay? In this case, I will explain, I think, one that you already are familiar with, and I will give you this specific example for this material, okay?
+
+ But just so you know, IBP has more models and models more sophisticated than this one, which is the deviation method, okay? So in this case, what we have, this is the history from the last five years, and it starts in November. So the system calculates the average, and then you have a multiplier that it recommends to be between 1.5 And it multiplies by the standard deviation. For the upper limit, it's the average plus the multiply times the standard deviation.
+
+ For the lower, the same, but minus, right? And for this data, which is actual data, it's not invented. It's not made up. It's your data. We have that the average is almost 4,500, the standard deviation. Is 1,700, close to that. And the lower limit is 1,087. And the upper limit is 7,753. We can see here in the chart. So there are three values that are outside of these limits. So these values will be defined as outliers.
+
+ Will be corrected okay they can be corrected in in various ways but what we usually do is is two things or we correct to to the average meaning taking this point and put it here in the green line or we correct to the limit meaning that we take this point and we move it to the um orange line okay the decision at the end is is of the user. So having said that, I want to cover two examples in the system.
+
+ So you can see visually two examples of why this is necessary. Let me close this one and over it again.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Okay. As you can see, we cannot even plot the data because there are some data that is completely out of the scope. Okay. So, first of all, the system automatically shows us the outliers. Okay. So, we can take If we take this example, the anti-Poland, we can see that the data is pretty flat, actually. But all of a sudden, in September 2024, we have almost 3 million in reservations. And also for this inhibitor, we have also a very flat consumption, and then all of a sudden, in reservations.
+
+ So of course, we cannot use this data to forecast, but because what are we going to forecast? Are we going to forecast like the average, which is close to 400, 4,000, sorry, or we take the average including the outlier? So what the system does is basically correct this data. And the system here in this key field, here is proposing the corrected value. In this case, the corrected value is 4,055. The user here, in this key figure, actual usage for chemicals, manual correction, can accept this change or can reject it.
+
+ In this case, what I did was I made a change, but it was a little bit below the proposed value. Why? I just took the average of the last 12 months. If I take the last 12 months, I can see the average is 3,800. So I put something closer that 300, but I can pull it, I can change it.
+
+Abdulrahman Al Meqbaali (Borouge):
+Sorry Sergio, just for my understanding, okay? You said the end user should accept or reject the proposed system proposal, correct? Yes. How we assure that the end user will get this information, and if he didn't do any action, either rejection or acceptance, how system will react?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So first, the system is, as you can see here in this dashboard, is indicating you need to take action here, okay? And then following a process management that we will cover in a future session, you can close, you can assign a task and close it, meaning that, okay, once they address these different alerts, they need to close it. How are they going to close these alerts? Basically, correcting the outlier correction.
+
+ They can reject it if they think, of course, in this case, it's very obvious that these values are outliers. But in some other cases, maybe it's not that obvious. So they can say, no, this is valid data, and I will choose not to correct it. Here's my question.
+
+Abdulrahman Al Meqbaali (Borouge):
+If the end user did not take any action or didn't give you any approval or rejection, so the system, how will it react?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Will it continue with the others? Yeah, the system will use the historical data as it is.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+In this case, Abdurahman, sometimes we have submodels they are capable to smooth the information. So it depends really on the case, right? The best practice, of course, if you find such an outlier and it's so clear that we need to remove it, then we will highlight it. We will send you an alert as an end user and you will check, okay, yes, we can correct this one. We can take the system suggestion or I can provide my knowledge of the consumption and put this number.
+
+ That's for sure is the best scenario because we have the best input. But also sometimes even if we don't have the correction, the system is able to provide a number that makes sense because it's naturally trying to smooth this information. Is that a possibility?
+
+Abdulrahman Al Meqbaali (Borouge):
+Why are you asking this question? Because after this one, we are going to, the system will generate PRs, correct? Depending on the new factors. So the point, if the end user, I'm taking always the worst case scenario, okay? If the end user didn't touch, didn't make any action for this system proposal, okay? So is the system going to follow the previous one or he will go with the new suggestion?
+
+Hector Palacios:
+I mean, this is a configuration topic, right? So if we decide the system to take action, we can, okay? But so far as a good practice is that if the user hasn't approved the change, we don't do it. It relies a lot on this. So if you approve, if you do the change, the manual correction, then let's go with that. But if you don't, then we keep the old history with the outlier.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Abdulrahman Al Meqbaali (Borouge):
+The time for the approval and rejection. Okay. Is there a time set up in the system to give this, like, for example, after four or three months, or let's say three months, if no action system will take the average, or the alert will keep their does this material need to be corrected?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Because we are working on a monthly basis, we are running the statistical forecast also on a monthly basis. So every month, we need to have the data. If the data wasn't corrected that month, then it will be used.
+
+Abdulrahman Al Meqbaali (Borouge):
+The following month, it will give again similar, correct?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yes. Yes. But the forecast will be generated. If, for example, this month, OK, in February, we integrate the data. We give a space of, I believe, two weeks to generate the forecast. If during these two weeks there is no correction, then the forecast will be generated using the raw data.
+
+Abdulrahman Al Meqbaali (Borouge):
+I want to understand it in a way because in the normal scenario, for sure, this would be linked to KPI to review the user to complete on time, but I'm talking just in case it missed or no action taken
+
+UNKNOWN_SPEAKER:
+for the system will react.
+
+Abdulrahman Al Meqbaali (Borouge):
+So we'll be following the same approach trend up.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+I think at this point.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+This is also, as Hector said, this is a configuration topic. If you can say no, what we want is that the system correct and the user can adjust. But if the user doesn't adjust, then let the system do it. We can configure that. There's no problem. But at the end, we want to also empower the users to make the corrections. Because for chemicals, I think it could be a good idea to configure that. But for spare parts, it's a little bit different because the consumption is way more intermittent.
+
+ So in this case, for those cases where the consumption is intermittent, that light correction, I think it depends more on users. Whereas in chemicals here, for example, no doubt about it, that there is a need of correction and what the system is proposing is in line.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Abdulrahman Al Meqbaali (Borouge):
+It's a matter of configuration, I can see. And based on decision makers, if they want the system to have it, to give, for example, any material not updated, system will react automatically to take the previous one. But this totally different way. Only what I want is to know the behavior of system. Now it's clear for me. Thank you, Sergio and Hector.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+I think this point is very important because now, okay, first, we don't expect the end user to put his manual input in monthly base because that will be more of additional work for the operation, but at least in quarterly base or yearly base. Now, once the date is set between this date to this date, the forecast will be given to him and quarterly if we agree in quarterly then between this date to this date of the month will be given to the end user to review and put his input.
+
+ I think can we have a system notification like an email or a message sent to the end user that this is bending with you and if you don't reply certain two or three days, then the message go to his
+
+Abdulrahman Al Meqbaali (Borouge):
+line manager? Yes, I can add on top of that the value. If the material can add certain value, it should go to the manager for review.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+In all the case, Abdur Rahman, we need the final forecast to be endorsed by the management of the end user. In our case now in Onshore, we are doing it manually, but the forecast we have to be approved by the, uh, VB, the operation unit BB.
+
+Hector Palacios:
+So I see that this can happen. We must have mentioned before. We have a application called the process management where we can put the different tasks that you need to do on a planning cycle and the different response sorts. And part of the functionalities is that we can indeed send an email. Uh, as an an hour that you need to perform these tasks. So I think that we can do it. We need to explore because sometimes AdNoc is complicated with this kind of stuff and sometimes it's difficult to send an email from an external system.
+
+ We need to check that part. It's technical. But once we have it, you can have an email for that. Like for this is the moment that you need to do this. This is the moment that you need to do that and so on but as a general statement you know you need to check the alerts or you need to approve the alerts something like that but we can send by email if you want to go exception by exception the system can highlight it so imagine that you are in the process of reviewing so the end user did something now it's up to you the reviewer to check if this is correct or not, then you will have alerts that will highlight the cases in which we have big deviations, big outliers, or the forecast is too different to the previous one.
+
+ We can set up all these kind of conditions so you can focus on the big changes, okay? So one way or another this will be brought into your attention so you can take action on this.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think delegation for Thursday should be already discussed with the M a M team or maintenance team regarding the approval of the final demand planning. It's most important thing because why? Because I you know, as you know that the chemical is very high value. So that I know who will take the responsibility For example, now we have outline here, outline here. For example, and then user accept this one with high value.
+
+ And tomorrow we will share this one and we'll keep it in our store with no utilization. You know that we have a shelf life with this item. We will take the responsibility. So that before that, as mentioned by Mr. Ali, final approval for chemicals demand planning should be approved based on the delegation facility. We believe to review and accept that value and that quantity. For the full year or whatever.
+
+ It's most important thing because we are still suffering with the end users as of today. They raise a lot of WRs with low utilization with high value. And also the chemicals with the shelf life. If you order a huge quantity, a huge volume of the chemicals, we'll keep it in our store. And the shelf life is one year, for example, with a huge quantity who will utilize that remaining quantity. Mistake.
+
+ No, we need approval. They should review that. Yes, we accept this one. We can go ahead. Tomorrow, let the audit or what the shareholder discuss in case they are raised any audit point regarding the warehouse or something like this one for access to stock shelf life, whatever that one. So that I think this one should be tackled. It is regarding the delegation facility and also we discussed the same in the previous workshops regarding the approval and the workflow for approve the demand planning for the chemicals.
+
+ Okay, that's a fair point.
+
+Hector Palacios:
+I think that we can have the delegation of authority on alerts, so let's take the point. I don't know, Rahul, if we need an additional session for this or if we already have the information, but then once we have the rules, we can confer on the system and we can Showing the UAT.
+
+Abdulrahman Al Meqbaali (Borouge):
+Thank you. This is very valid point. I added also on the in the chart.
+
+UNKNOWN_SPEAKER:
+As a request. Thank you.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Second, yeah, we will not take the point.
+
+1Arunkumar Viswanathan (ADNOC Refining - HQ):
+If you just refer to the chat window. I just pasted one example. Maybe whether you will have any impact the outlier what we are showing in the red red font. Go to the chat window.
+
+MM- SKEC2 - L08:
+You see my message here. Yeah, that's the reference example there.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See for this item now. The basic how much it is metric done.
+
+Abdulrahman Al Meqbaali (Borouge):
+Yeah, I have similar cases. OK, and this one I think. There there is a background calculation factor there. And material master for. Material base of unit of measure PR. Unit of measure and also BO unit of measure. So purchasing unit of measure to look to the material master.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+My concern is not on the unit of measure. Only the IBP calculation. It takes from the past issuance records. The past issuance record one example I pasted here which is a reservation. The reservation even if it is in the unit of measure is metric 10 user can make an item reservation even in kgs system will allow because the value remains the same either putting 20 metric 10 or 20,000 kg you know the reservation value will be same.
+
+ So if an user make a reservation like 20,000 instead of 20 metric ton, whether the IPP will take 20,000 or 20 as for calculation purpose?
+
+MM- SKEC2 - L08:
+So, when we get the data from SAP, we get along with the unit of measurement. So, in whatever unit of measurement the data has been entered, the same comes to it and it converts back to the base unit of measurement. So, we have this metric ton and kg relation, right. That's a standard conversion that is considered for conversion. So not only the quantity, but unit of measurement of the quantity is also.
+
+ So this mistake I mean it will not happen, correct?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+It will not take us 20,000 metric tons.
+
+MM- SKEC2 - L08:
+No, if it is 20,000 kg as mentioned here, it will take 20,000 kg and only and not refer to the standard unit of measurement in material master. So transactional data will have its own unit of measurement as for the transaction.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Rahul the concern is all the transaction it goes based on the number what you I mean issued in the past months. Correct. So if you see for this item it is 20,000 kgs which is equivalent to 20 metric ton. Correct. How system will understand either it is 20 or 20,000?
+
+MM- SKEC2 - L08:
+It will understand 20,000 kg only.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+But whether it will calculate in the reporting menu, like what is on the monthly insurance record.
+
+MM- SKEC2 - L08:
+If you want to see the monthly in a different unit of measurement, yes, we can show it in a different unit of measurement.
+
+UNKNOWN_SPEAKER:
+Correct me if I'm wrong, Hector.
+
+Abdulrahman Al Meqbaali (Borouge):
+It's me in the system. The logic system should refer to the base unit of measurement.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Abdulrahman Al Meqbaali (Borouge):
+If we found a reservation in kg and the base unit of measure is metric ton, then the system should multiply in thousands, for example. Correct? Yes. Or divide in thousand. Divide in thousand for kg to metric ton. So this logic should be in the system. Is it there now or not? This is your question.
+
+MM- SKEC2 - L08:
+Connor doesn't know. Yes, it's there in the system.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Because initially, no, while we go live in SAP S4, we face this issue. Then we make some RATM and then we corrected this. Yeah, so that's we will take this as a material status report. Material status report, previously it was an error like this.
+
+MM- SKEC2 - L08:
+Noted, so what we'll do is we'll take this as one of the input one of the scenarios for planning so that you can see how the different unit of measurement conversion happens in IVP based upon the scenario. We'll add one scenario for unit of measurement conversion.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yes, we need to check. What we need to check is how we integrate, how the system behaves when we have a reservation in different unit of measure.
+
+MM- SKEC2 - L08:
+Yes, so let's take this internally. For sure, from when we integrate data from S4, we will have the actual unit of measurement for the transaction. But it's an important point with the feedback is coming across unit of measurement multiple discussions. So let's take this as a scenario to be demonstrated on how IPP is able to calculate different unit of measurements and show data so that everyone is aware of how things will happen in IPP.
+
+
+
+UNKNOWN_SPEAKER:
+All right? Yes.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Well, let's continue.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So once the data cleansing is ready, we can jump into the statistical forecast.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So these are the list of all the different IVP available algorithms. And each algorithm addresses specific demand patterns. So for example, the most basic one, simple average or simple moving average, what it's doing basically is addressing flat patterns, right? There is no trend. There is no seasonality. The consumption is flat. There is no intermittent consumption. But then we have some more sophisticated models that are used specifically for spare parts mainly.
+
+ But for chemicals, I want to review on four models, the single exponential smoothing, double exponential smoothing, triple exponential smoothing, and the automatic exponential smoothing. Because based on the data, we have seen that these models are going to be very useful for the chemicals materials. So the single exponential smoothing is probably you already this is a model that basically weight the different, it's like a weighted average where the more recent values weight more than the old values, okay?
+
+ So we ended up having something like this. This is your data. This is also part of your data. So we have a weighted average in which, as I said, the previous values So the values that are more recent weigh more than the values that are old. So that relationship between the old values and the newer values is established by this coefficient alpha. The users, if they like, they can set their own alpha or the system can calculate by itself.
+
+ But we will review system calculates by itself. Then we have the double exponential smoothing. Here in the double exponential smoothing we have the same component for the single but on the top of that we have a component called beta which is to address the trend. So in this case the system is detecting a trend that in general you have an average but then the the data is decreasing. So the system gives you like an average and dot this average is, it has another component that decreases the forecast, okay?
+
+ And for this specific model, we have two parameters, the alpha and the beta. And also the user can define, defines the values of these parameters or the system can calculate it by itself. And the third model is the triple. It has the single expansions model in the double, but also the triple that also considers a seasonality component. So in this case, we can see that we have some peaks and some valleys.
+
+ The system is also addressing that, and for that, have a third component, which is gamma. Okay. Again, the user can select the gamma between zero and one to define what is the weight of the seasonality or can let the system determine by itself. Okay. So, choosing the best forecast model.
+
+UNKNOWN_SPEAKER:
+So, how the system.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+The model is based on what is selected.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, that's what I want to explain right now. How the system will choose what is the best one. Basically, first the system will take a testing phase. Let's say we define a testing phase of one year. Let's suppose we have five years of history. We will take four years of history and we will not take, we will not, the system will forecast without looking at the fifth year, okay? And we'll run the three models, okay?
+
+ Here we have the three models. Then it will compare the results with the actual number, okay? With the actual data of the last year. And then the one that has the least the smallest error will be the one to be chosen. And that will be replicated to the future.
+
+UNKNOWN_SPEAKER:
+Okay? Use a little comment here.
+
+Hector Palacios:
+Because first we are using the four year history and in the last year we create a forecast. This is the past, right? So as Bastian is saying, we use this period to select the best one based on real data. But once we select the best one, then we use the whole five years again. If it is clear, because at the beginning for the testing part we were taking only the first four, but then after doing the selection we will take the five years to do the calculation again, now that we know that
+
+UNKNOWN_SPEAKER:
+this is the best possible model.
+
+Hector Palacios:
+And this is done automatically don't need to do anything on your side.
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+Hector, just to be clear, so the color now, the yellow, red and green, those are the different models that you use for forecasting? Yes.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And then the system chose the green one because it's better? Exactly. Okay. Okay, so now let's look at a few examples in the system, okay?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Just here, guys, we need to differentiate between, because why the patent happened. We have increase in certain period. Is it because of some chemical? It is because maybe of shutdown or maintenance. And in some is because of the patent is regular. Like we have some chemical here in onshore, the consumption in winter is more than the summer. So it is seasonal. We have three to four months we have high consumption and the rest of the year it is mostly normal studies.
+
+
+
+Hector Palacios:
+Okay, so the system is able to identify that by itself there is something that we call demand pattern recognition so a system checks the history and says okay this one is intermittent this one is continuous or this one is continuous with seasonality so it's running some internal tests that is machine learning to detect if there is a seasonality factor there so the system will do it by itself so if the system detects, for example, that this is seasonal, then it will create a seasonal forecast for sure because it was already detected.
+
+ So that is part of the automation that we will have. Now another point that you mentioned, I think that you mentioned turnaround. The idea is that the history we use for chemicals is excluding this information. So we shouldn't have turnaround data. Turnaround is going to be a separate process that and this regular maintenance or regular, yeah, chemicals maintenance. So yeah, there is, I think that is a movement type for workaround.
+
+ So we are basically, when we see the history, we are just removing that from the history and we are using only the other movements.
+
+MM- SKEC2 - L08:
+So on that point, Hector, Ali, I want to get this confirmation because yesterday also we had discussed So turnaround consumption happens on the turnaround work order, is that correct? Or you are consuming turnaround material through the manual reservation as well?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+For onshore, we don't have the turnaround chemical because it is done, I think it is part of service contract.
+
+MM- SKEC2 - L08:
+All right.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+But we have some chemical which is used when they have pipe shutdown. If they have maintenance or something by blind, they inject this chemical to prevent it from corrosion. And such chemical, even though the forecast is there, but it is never match the forecast because it depends. They will use it only if there is a shutdown for some line or a maintenance in some line, they close it. So they will pump this So it depends, whenever they have a requirement, only it will be done.
+
+ For source chemical, we are only delivering to the store based on demand. Not based on their forecast, even though we have the forecast, but whenever there is a demand, we ask them to inform us one month, two months ahead, so we can deliver the chemical to the store.
+
+MM- SKEC2 - L08:
+The question here is when you say it is used for say shutdown or it is used for maintenance activity, how do you consume that material? Does the consumption in SAP happens based upon the maintenance reservation or that it happens based upon the manual reservation for chemical?
+
+UNKNOWN_SPEAKER:
+No, it is based on the manual reservation.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Okay, so probably. It's the same like the other chemical, only the utilization is different.
+
+MM- SKEC2 - L08:
+Yeah, so probably that's something which we may have to understand in detail. We'll look at the data and confirm, but the practice we would recommend is to, if the material chemical is used for maintenance activity, it should be part of the maintenance reservation and not chemical reservation so that In future, we are able to segregate this chemical consumption for specific activity, which is related to maintenance and use, like differentiate it in demand and then use the clean data for forecasting.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See, Rahul, mostly the chemicals, irrespective of maintenance or non-maintenance, all the chemicals are issued under two-order movement type. So normally for chemicals, no planning team or the maintenance team, they take the ownership to make a work order. So this is the same thing Mr.
+
+MM- SKEC2 - L08:
+Raleigh also is highlighting. Everything goes based on the total and moment time. Which means the consumption history will have the chemicals used for the shutdown activity or maintenance activity as well.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Everything it will go under the operation expense like operation department now they will make the MR.
+
+MM- SKEC2 - L08:
+Okay, so basically go through the maintenance even the mechanical maintenance electrical nobody will take handle this. So what you are saying is one of the reason for doing this as well as because it is the operations cost center is responsible for planning and consuming chemicals that's the It is also going through the cost center based planning, like consumption, cost center based consumption. Exactly, yes.
+
+ Yes, exactly. Okay, noted. Hector, we need to look at the data and see how much difference it creates, but yeah, noted.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Slowly know what we are doing, especially for catalysts or adsorbents. We are educating the users to go through the work order system. But for the chemicals as such, we have not started this activity. Only where there is an usage of more than two years, like the absorbents or the catalyst replacement. Slowly we are introducing this pattern, like make a work order, reserve the item, then issue using the same work order.
+
+
+
+MM- SKEC2 - L08:
+Yeah, that should be the ideal practice how probably you'll be able to differentiate like the shutdown or one-time consumption for a maintenance activity versus the regular production related consumption which happens every day every week or every month. All right we've taken note of this but yeah we can continue.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Okay so here I have a material okay but I want to see it in the chart because I think it's easier to understand what's going on. So what I did is to take the full history and then I took until December 2023 and forecast for the future, for the next five years. Then from January 2024 and onward. So this forecast which we have for the entire 2024 is based only on previous consumptions relatively to where the forecast was calculated.
+
+ What I mean is that, for example, to generate the forecast here in March, I use information until February, OK? And onwards. Or for July, I use only information till June, for November, just till October. And this was the result. As you can see, the forecast is pretty much in line with the actual consumptions. But we have, in some cases, some important differences. For example, for April. And these differences are just part of the nature of any forecast, which we have an error.
+
+ And here, in this case, we have a an important spike, okay? So these differences will be covered through safety stock. And it's something that we will see in the next session, okay? So as you can see, the forecast is pretty much in line with previous consumption. There is nothing weird. The forecast is not too like on the upside or in the low side. Lower side is pretty much in line with the previous consumption, but we have some differences that are part of the nature of the consumptions, okay?
+
+ So I want to review some more examples, and please feel free to stop me if you have any doubt. So for this example, the system detects that there is some seasonality. So what will the system use is a model with a seasonality component. So let's review it. It's a chemical control 23 kg. So I put it here. I just click Go, and it will show me the results. OK. You you I think one.
+
+UNKNOWN_SPEAKER:
+Let me check something. Which is fine.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Thank you. You Yes. And as you can see, the forecast updates with the latest data. So if the system detects any variation in the previous month, for example, a huge increase in data, the system will adapt quickly to these changes.
+
+UNKNOWN_SPEAKER:
+If we take an example now, January 23.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Okay. Here the, this is the actual consumption.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+In January 23. Then let us go to January 24. Well, we have the actual consumption is less, but the forecast was more because of the previous historical, so he's referring to the historical. That's right. Okay, now if you go to January 25, 46, 45, so it's still here How January 25 is calculated now?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+It took all the, probably it took this increased consumption and started creating an increase.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Because the actual consumption is not, the patents are not the same. Here in January we have 45,000. While in January 24, I don't know what's the figure, maybe 32 or 33. Well, again, the forecast in January 25 is giving me 46. It is not taking the... Here it's making the same forecast almost.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+See the consumption now in January 24 and January 23 are totally different and here we have 23 we have more in 24 we have less But still the forecast is calculated more in 25 and 24.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, or 25 January 25 This is the not only addresses like the same month, but also what is the trend and what I see is that Here, the system decreased the forecast a lot, but then it fell short. In some cases here, and then start to adjusting, creating a higher forecast. How it's calculating?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Is it taking an average of three months or something like this?
+
+UNKNOWN_SPEAKER:
+No.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+explain in this slide, sorry, in here.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Because our concern is that we should not end up by inflating our inventory.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+No, of course not and it is important that if you, I mean, at the end you won't buy directly this, you need to compare against your current stock and if you ended up buying one more on a specific month, then it will deduct for the future, for the next month. So that's why you have safety stock and you need to do some stock balancing, okay?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, it is not like this, because based on the forecast, we inform the supplier also to keep the material and keep the buffer stock, even though we don't move it to our store. But this chemical has shelf life, so the more it is Forecast is never accurate, of course, but our current agreement with end-user, it is a variation of 15 to 20 percent. And we insist on 15, they are fighting for 20. But if there is more than 15, we involve the corporate compliant to end-user give justification why they have more or less than the forecasted quantity.
+
+ In such case, I mean, uh, just we want to make sure that the forecast is or the statistical forecast is calculated in more accurate way. So we don't have, uh, we don't increase because see end user always they tend to order more because they want to secure their operation. We want to give them the exact quantity that is needed. In between, there is some variation of 10 to 15 percent which is accepted.
+
+ We may add also some time, Contingency quantity, but again the concern that the statical forecast should not give us. More than it is required, yes, yeah, so it should not be over forecast and it should not. At least 85% accurate. Less than no, 15% accurate.
+
+MM- SKEC2 - L08:
+15% should be the error, 85% accuracy right?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios:
+okay so my proposal is let's take this point uh what we can do in this case is see manually we are we are going with the 15 accuracy with the system accuracy okay yes this is manually when we are doing it now with system we expect more accuracy yeah so so there are two measures that we can do here one is accuracy as you're mentioning how well I'm forecasting but then it's also one that we recommend to use is biased, because this is related to what you are saying right now, how much the forecast is over forecasting or under forecasting.
+
+ So we want to be on the middle, right? We want to have a very low bias, not a high positive or high negative value, but a central value. So what we can do here is to place some alerts. So in the final, tuning phase that we need to have now, that we are integrating data, generating resource, we are going to check if this is a high bias or is a low bias, well, high bias positive or negative, basically.
+
+ And we can tackle all these cases and whenever the bias is, let's say, higher than 20%, then we will check that particular case and see how we can enhance it, okay? But this is part of the fine-tuning that we need to do previous to UAT. We are taking the note on this point, Ali.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+To keep control also, can we have the same system comparing between the previous approved forecast by the end-user and the actual consumption? Certainly, of course. 24, we have the actual consumption and we have the approved forecast from the end-user. Now, comparing the both and what is the variation, what is the different percentage per item, and then for end-user to justify when he's making his new forecast.
+
+
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, that's the last part of the process where we will take snapshots, it's called, so it's basically a photo. Of what was the forecast, of the approved forecast. And then we'll be able to compare the photos of the last 12 pages in total, how the forecast evolved in the last year, month by month. And we can calculate the difference with that forecast with the actual consumption and create some KPIs.
+
+ So in this example here, well, It's just an indicator, but here, for example, for January, for October, the accuracy was 77%, okay? So you will be able to see this accuracy for the different snapshots. So you will see how accurate was, and this is not just for the forecast, sorry, for the planner's input, but also for the statistical forecast. So you will be able to compare who was more accurate, the statistical forecast or the users.
+
+ And in cases where the forecast was more, the statistical forecast was more accurate than the users, then in that case, we should let the system forecast those materials. But in some cases, of course, the system, because they have all the information, won't do a better job than the planner. So in that case, we will highly recommend the user's input, okay? But we will be able to make this analysis only after a few months running the process and comparing the values given by the statistical forecast and the planner's input.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yes, great, understood. And one thing more, can we have this comparison and also we can convert it to graph?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, of course. OK. Yeah, sure.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Here we have another example where the system basically just created an average for the future, right? For me, it is very likely that this is an automated, sorry, a single exponential smoothing Maybe we can look at final. Hmm.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+In this case, the system is generating an average. Let's look at another one. It's also an average of 145.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, in this case, I think the consumption is. A little bit too high, at least for the future, but for for that specific year is more in line.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Imagine this case is you are considering which range I upper range, lower range or the median.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+But when you say range, what do you do you mean the average? Because one of the slide we are explaining about the upper range lower range and the median This is for What you're saying it applies to the This here is to the outlier correction. Yeah Basically here the the thing that that you're mentioning refers to the data correction.
+
+UNKNOWN_SPEAKER:
+Data correction. Yeah.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Where we were any value that falls out of these limits.
+
+UNKNOWN_SPEAKER:
+It is corrected.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+See, is it possible to put some like you know what if I put the And what is the proposal? And if I put lower range or if I put the median so to see to see the best results you know because. Data collection is one part that's OK because still I have this fluctuation in my consumption pattern, right? So we need to see so which range will be more optimal for us so that they can. They can decide which range they can consider for their demand planning.
+
+
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So you want three, basically three forecasts, one for medium, one for upper, and one for lower, and they could choose between these three ranges? Yes. I think that there is a new functionality.
+
+Hector Palacios:
+Let us explore, Diego, but I think that I've seen something like probabilistic exponential smooth So let us check and we can show you the next meeting because I see that there is already something like this. As always, it depends on the quality of the data. So when we have enough data, we can have really nice things, right? So if the data is like this one, probably we can calculate like this upper, lower and mid limit.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I also hope you received the list from Aisha yesterday, around 8,000 lists.
+
+Hector Palacios:
+of items yeah number of records belongs to all group come across the companies yeah let us work on that I just saw the the email that was here by rahul as well so let me let us check on and
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+work on that integration so in this example how many records you have because you are showing around thousand records are reported in this demo yeah I mean for this demonstration We have many, but it's because we count the combination
+
+UNKNOWN_SPEAKER:
+between plants and material.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+So we have 42 plants, 1,500 materials in 22 consumption events.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So where is the, can you show me in the Excel sheet, where is the 1,500 materials? Are listed.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+I can give it to you here.
+
+MM- SKEC2 - L08:
+Probably you can show the master data. File which has all the 1500 mutants listed.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, and also yesterday I was requesting to see the simulating and then comparing with the 2024 actual consumption versus the statistical consumption.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, that's what I was showing here. Showing here. So in here let me take one example.
+
+MM- SKEC2 - L08:
+So considering that we have four minutes in the time left in the meeting, I would like to use this four minutes probably after you show this maybe two three minutes to reconcile on the discussions we've had so that we are all on the same page in the next steps. Here is what So let me add the previous year. OK. For one specific material, this is what the system have forecasted.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+And of course for some months the system is below and for all the months is above. For example, for July you have an unusual low consumption.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK, Basham, what I need is. So how many records you have in this? Around 1000 records, yeah? So for those 1000 records I wanted to see What is the System statistical forecast in terms of year not by breakdown by the month. Let's say the system forecasted for 2024 is this and then actually is this just so you want to see it consolidated.
+
+Hector Palacios:
+Yeah, that's what I am for all the materials.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Whatever the examples you have here in 1,500. OK, give me a single value only for 2024. What was the system proposal? Because this is for only one material. I want to see for all the materials, whatever you have here.
+
+Hector Palacios:
+OK, then we can go through it, please. Yeah, let us work on it.
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+Yeah, it's here.
+
+UNKNOWN_SPEAKER:
+You are.
+
+MM- SKEC2 - L08:
+Yeah, but have you run the forecast algorithm for all the materials or it's run for specific metal combination?
+
+Sergio Bastian Osorio Castro (ADNOC Group D&CS):
+No, it's for the forecast-based materials.
+
+MM- SKEC2 - L08:
+All the forecast-based materials?
+
+UNKNOWN_SPEAKER:
+Mm-hmm. So how many? We have...
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Bastian, instead of showing this total, can you include the data version?
+
+Hector Palacios:
+That's one big point. They are different units of measure, so when we're consolidating one chart, maybe we are not talking about the same we are comparing apples oh we are assuming yeah we are but it's in basic unit of measure yeah yeah but the basic unit of measure for one is liters and for other one can be kilograms yeah it's same nonsense but uh what if jaga what if and arun uh if we converted to value but which unit to measure then?
+
+ What is the most relevant unit to measure here on chemicals is something like liters?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+whatever the unit of measure available for the selected item just list down everything maybe it will be in the category of 4 or 5 kg, metric ton, liter that's it maximum 3 yeah my point is that we need to find a correct unit of measure to compare them so let's select one we selected for 2024 now with list of some item may be 1000 items so all this 1000 items have only maximum 4 unit of measure either kg metric ton letter and drum.
+
+
+
+UNKNOWN_SPEAKER:
+Only these four categories.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So let's draw the graph with these four categories. So that the previous issuance on the forecast exactly to match exactly.
+
+MM- SKEC2 - L08:
+So Hector, what I'm understanding is he wants us to split this into four different rate of measurement. So for the same year, you will have liter to liter comparison. And then probably you can also have something like this is total which is sum of everything.
+
+Hector Palacios:
+So, what are the unique measures?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So, we can create a chart. Liters, what else?
+
+Hector Palacios:
+Liters, kilogram, metric ton, drums. Drums, okay. Liters, kilograms, drums, I understand and metric ton. Can you check the chart if I got it correct?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Not metric queue, MT.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios:
+Good, so we take the input and we create the charts. Let us work because I think that we don't have too many combinations here. We need to have the ones by JAGA, and as soon as we have the integration and we can run the forecast, we can share the charts in these four units of measures.
+
+MM- SKEC2 - L08:
+So, to summarize, I would like to summarize these discussions, the past three discussions we've had on demand planning for chemicals. So, we've shown how the forecasting process operates, different algorithms available. We've understood requirement from AdNoc is to compare this, look at almost all the materials, look at the total demand, look at the segregated at annual level, as well as compare how IPP is forecasting for, say, FY 2024, or the period, year 2024, based upon that.
+
+ Compare the actual forecast versus the actual consumption so that we can see the accuracy of the forecast. That essentially is what we would like to see further. So as we have discussed in this sessions, as we have taken inputs and as we will work on integrating further data, we'll continue working on this and probably we will have a specific session to discuss about this in future once we have some more data to be shared with the team.
+
+ All right, so we've discussed about scenarios. I just want to make sure that the scenarios, can you go back scenarios, once again, Passion Effector, whoever is presenting. So we've looked at the scenarios in terms of how system proposes this. Now, anything else which you would like us to consider in terms of scenarios? So we've added one scenario we've considered is the unit of measurement convergent between different planning budgets so that we show how the unit of measurement convergent is happening.
+
+ In IBP. Additionally, the Jagannath scenario you mentioned about comparing for one year actual versus forecast for the past period so that we can look at the accuracy. Anything else, team, you would like us to respond so that as we continue getting more and more data, show you more and more accurate figures as we find the algorithm.
+
+UNKNOWN_SPEAKER:
+How about ROP planning, Raghu?
+
+MM- SKEC2 - L08:
+So ROP planning will focus in the next session, in the inventive planning, where we look at ROP and the parameters of how ROP is calculated. Here, from a demand perspective, for ROP, it's more of only looking at the demand. From a demand perspective, forecasting is a specific point which needs more work and more discussion. That's what we've discussed, and we'll focus on ROP in the inventive planning session.
+
+
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Now one thing just to clarify, maybe you can explain it later on in next session. We have over 8,000 items for all Adno Group companies. Now end user to put his input, maybe the material which concern him, the chemical, he may have maybe 5 chemical or 10 chemical, less or more. So out of this 8,000, how he the material which he need. There are some sort of filtration and then because it will go on for rooting for approval.
+
+ The approval should be only for those items which is relevant to this field.
+
+MM- SKEC2 - L08:
+Yes. So right now we are working with the AGC focal points to identify the different splits what we can call are the filtering plant areas where how we can So you're right, we will set up filters in a way that are responsible. Person in the responsible in a respective area would look at only his respective materials and he will have access to change only those materials. So it serves both the purpose.
+
+ It allows you to control the access so that I don't change demand or give input to any other area which I'm not responsible, but at the same time only look at and concentrate on the materials. I'm responsible for. Does that answer your question, Ali? Yes, thank you. Alright, yeah, thank you.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Thank you for your explanation and also thank you all team here for your valuable input and feedback. And also again, as mentioned by the team, we need all point already in the chat box. Go through it and also some point already. Raised by Jaganath. Please consider regarding the cost, the unit of order, unit of measurement and that points. And also we need before the IoT testing, we need to have multiple scenarios as discussed earlier.
+
+ The list already shared with you with full list, with full chemicals already was received from, yes, all the comprehensive list for the chemicals which was received from AGCCs. Go through it and try to have multiple scenarios, the focal point is here. Ensure we have access for SAP IPV, give access to the team here. If anyone don't have access, please communicate or put his name in the chat box here so that we can provide access.
+
+ Go through that demand planning activities, go play on that graph. If you have any point, any feedback, anything, raise it to me or in the chat box. Thank you. Thank you. Thank you. Thank you.
+
+MM- SKEC2 - L08:
+Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you. Thank you.
+
+UNKNOWN_SPEAKER:
+Hmm.
+
