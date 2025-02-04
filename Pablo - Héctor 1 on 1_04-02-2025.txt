@@ -1,0 +1,693 @@
+Pablo Lopez:
+Muy bien, de momento con mucho lío con el tema de los teams, porque te había escrito con el antiguo, tengo los dos teams aquí abiertos y no sé muy bien realmente cuál...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Si puede acceder desde el escritorio, entonces el antiguo, claramente.
+
+Pablo Lopez:
+No, los dos desde la web. O sea, sé cuál es el antiguo y cuál es el nuevo por la foto, pero es que por ejemplo...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Hay una que dice GoExp. Exp me imagino que es de exportar. Es el oficial, al menos.
+
+Pablo Lopez:
+Sí, sí, o sea, los distingo. Lo que pasa es que, por ejemplo, estaba hablando antes con Fee por el nuevo, pero en cambio Arum estaba hablando por el antiguo. Entonces, por ejemplo, Arum estaba antes hablando por el grupo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Es la cagada. Es un mal ejemplo de cómo debería ser un Go Live. Este es el tipo de cosas que... Por eso es importante el Go Live, porque el Go Live es cuando a trabajar de verdad. Y a veces más que eso, a veces de hecho estamos en un cliente donde ya tienen por ejemplo demand planning y BP y ahora vamos a implementar supply planning y tenemos que transportar toda la solución sin afectar la que
+
+Conference Room (Hector Palacios) - Speaker 1:
+ya está arriba.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Entonces es como que son momentos críticos porque si es que algo va mal estamos afectando las operaciones. Entonces bueno, esto es un ejemplo de qué pasa cuando un go live va mal y por eso todos de esto, es como una cucharada de la propia medicina, porque a veces nosotros quizás no lo hacemos tan bien y son otros usuarios quejándose de nosotros, es como que por fin estamos de este lado de quejarse, efectivamente somos nosotros los que tenemos la culpa.
+
+
+
+Pablo Lopez:
+Sí, ahora sabemos lo que sientes.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Exacto. Disculpa que me demoré porque se acaba de unir otro consultor que es un chico de Egipto, que de hecho entró como contacto de Omar y pasó la entrevista y le fue bien igual que a ti.
+
+UNKNOWN_SPEAKER:
+Pero es amigo de Omar, se llama Durazman. ¿Tiene experiencia?
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, no tampoco. O sea, sí tiene experiencia trabajando, pero de IPP nada. Es nuevo. Con él estoy teniendo reuniones más seguido y enseñándole también. Bueno, similar como lo iba haciendo contigo, ¿no?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Viendo que hiciera el GOTA, a ver si todo eso.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Pero se unió la semana pasada. Sí, la semana pasada, simplemente. Y te voy a preguntar si te reuniste con Saúl porque parece, creo, que estaba reunido con Saúl antes.
+
+Pablo Lopez:
+¿Alguien mencionó algo? Sí, sí, he estado varias horas con Saúl y Pelayo. Ya he hecho como el retoque final y ya está todo listo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Quieres revisar esa parte de supply?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Yo creo que esa es la parte que te dimos más feedback, porque demand planning yo creo que ya lo tienen Se ve.
+
+Pablo Lopez:
+O sea, al final, realmente hemos generado incluso nuevas vistas. O sea, se ha cambiado todo realmente. Ya he hecho también hasta lo del formato condicional para todo el tema de... Del tema fulfillment. Está perfecto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sobre todo la anterior porque es la verdad que uno lo ve y automáticamente te lo dice porque el ser humano más mirar los números de los colores, ¿no? Sí. El contraste es lo que ayuda a decir, ah, mira, fallamos acá. ¿Por cuánto?
+
+Pablo Lopez:
+Bueno, 64, pero ya el rojo te dirigió toda la mirada hacia ese lugar. Luego tengo esto del semiterminado y de la materia prima. Y lo que no entiendo, aquí Saúl como que puso esto, pero no sé si al final lo tengo que mantener, porque realmente no hay como ningún valor.
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, mirá, eso es cuando tú le colocas al sistema, porque el sistema te da una propuesta, pero después tú le podés decir, no, mirá, yo quiero que en esta semana me entreguen más, en vez de 2.135, que está por
+
+Conference Room (Hector Palacios) - Speaker 1:
+ahí arriba, entrégame 3.000.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y ese se transforma en un input. Entonces, lo que va a hacer EVP es intentar suplir los 3.000 ahí.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Siempre que se pueda, porque por más que yo le pida un millón de cosas, están las restricciones de la vida real y no se va a cumplir. Si el lifetime no da, no va a dar. Y si la capacidad no da, no va a dar tampoco.
+
+UNKNOWN_SPEAKER:
+¿Entonces dirías que lo mantengo, aunque esté vacío?
+
+Pablo Lopez:
+Quítalo, porque como no le metiste en nada, quítalo. Luego tengo aquí la capacidad, que también he hecho el formato condicional, cuando das 100 estás rojo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y ahí abre el gráfico, Pablo.
+
+Pablo Lopez:
+No, pero el gráfico se quitó.
+
+UNKNOWN_SPEAKER:
+A ver, dale click.
+
+Pablo Lopez:
+Sí, se te quitó. Lo que daba error siempre.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Hazle clic a Capacity Utilization y mételo en la serie.
+
+UNKNOWN_SPEAKER:
+Le he dado, ¿no? Sí, parece que está funcionando mal.
+
+Pablo Lopez:
+Esto era lo que daba error, que cambiamos algo en la macro para que dejara de dar error. He estado viéndolo con Saúl y... Si, no pasa nada. Hemos puesto que el gráfico sea en la parte de demanda.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Pablo Lopez:
+Luego, lo mismo para el almacenamiento. Luego, todo el tema del component usage. Y luego, por último, el external procurement. Y esto en la presentación, pues, haré lo de coger un ejemplo, hablar de por qué no cumple.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Ese storytelling de por qué un ejemplo no cumple? ¿Ya tienes seleccionado más o menos cuál? Sí, aún así tengo que repasar un poco.
+
+Pablo Lopez:
+Porque la verdad que, pero voy a coger, creo que era este de aquí. Porque así como que voy viendo primero todo lo del FG1 que cumple aquí. Luego aquí también. Luego aquí ya empieza a fallar. Y ya me metí a ver todo el tema los leaptimes, está controlado, diría yo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Lo primero es decir que esto es por el horizonte leaptime, que siempre hay cosas que no se pueden hacer. Porque tan pronto como haya leaptime, el sistema es capaz de repartir la carga, o entregar a tiempo, o comprar a tiempo. Con anticipación podemos planificar, es el tema. Pero aquí a corto plazo, dentro de leaptime, no hay mucho qué puedo hacer, o sea, si hay un lift de tres semanas, ¿no puedo pedir de aquí para la semana siguiente tener algo si necesito haberlo pedido con tres semanas antes?
+
+ Entonces ahí ya empieza por eso, pero después realiza si que hay alguna capacidad de, ¿cómo se llama?, de almacenamiento, que no creo porque vi los números y se veían bajos, pero quizás de producción que se hayan cumplido y si que logra armar ese hilo, Y ya está al otro lado, Pablo. Revisémoslo del heurístico infinito y si que nos queda tiempo vamos con él, intentamos entender el ejemplo entre los dos.
+
+
+
+Pablo Lopez:
+Este era el heurístico, el dato 100% con el stock balance con los valores negativos.
+
+UNKNOWN_SPEAKER:
+Perfecto.
+
+Pablo Lopez:
+Bien, luego el production y el component usage. Es lo mismo básicamente, solo que he quitado las capacidades. Y ya me explico lo de que no te encuentras capacidades, etc. ¿Puedo mostrar el SOC balance de nuevo?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Si lo único que me llama la atención aquí es que simplemente está el centro de distribución está todo negativo.
+
+UNKNOWN_SPEAKER:
+Y en las plantas está bien.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Pero en los centros de distribución se supone que se están alimentando las plantas, ¿no?
+
+Pablo Lopez:
+No tiene por qué. Por ejemplo, el centro de distribución alimenta a la planta, pero luego la planta alimenta a otro centro de distribución. Y el centro de distribución 2 es el que me llama la atención que, por ejemplo, esté negativo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Porque el centro de distribución 1 lo entiendo, porque ese es como desde el proveedor tiene que ir a recibir algo y si no, bueno, deja un store negativo el DC1.
+
+Pablo Lopez:
+Pero el DC2… Pero esto es solo para los productos terminados. Luego aquí Creo que aparecería.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Subtítulos realizados por la comunidad de Amara.org Pero devuélvete al de producto terminado, porque lo que me pregunto es por qué... Está claro que si tengo algún problema de capacidad voy a generar un stock negativo, pero ¿por qué generarlo directamente en el último ladón de la cadena, en el DC2? Que es cuando yo recibo todo desde ahí, porque el DC2 parece que está suministrando la demanda y dice que tengo stock negativo.
+
+ Mi pregunta es ¿por qué no le está pidiendo directamente a la planta 1 o la planta 2 que suministren?
+
+UNKNOWN_SPEAKER:
+¿Tienes por ahí los transport receipts? Lo pongo. Ché.
+
+Conference Room (Hector Palacios) - Speaker 2:
+De hecho, ¿la planta 1 a quién le está suministrando?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Esa es la gran pregunta.
+
+UNKNOWN_SPEAKER:
+Coloca transport suppliers también. Y coloca ship to location.
+
+Pablo Lopez:
+¿En qué orden lo pongo?
+
+UNKNOWN_SPEAKER:
+Ahí está bien. No pasa nada.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Entonces si vemos de la planta 1 al DC2 no está mandando nada. Y cuando habla de supply, probablemente la planta 1 puedes suministrar directamente al cliente? Sí. ¿Y la planta 2? No. Veámos la planta 2, qué es lo que dice. La planta 2 tampoco está entregando nada para el finish uno del plantado no está entregando nada, y para el finish justo tampoco. ¿Y qué está entregando el plantado entonces? ¿Está recibiendo de la planta uno?
+
+ No, no, perdón. No, el plantado no tiene nada. Está vacío. Planta 1 es lo que está funcionando.
+
+UNKNOWN_SPEAKER:
+Esta parte no me cierra.
+
+Pablo Lopez:
+Pero como a lo mejor no tiene lo del tema de las capacidades, que simplemente les haga más rentable por lo que sea, fabricar absolutamente todo en Planta pues no tiene ni capacidad de producción ni capacidad de almacenamiento y lo
+
+Conference Room (Hector Palacios) - Speaker 2:
+hace por esa vía. No, pero creo que igual debería pedir desde la ubicación anterior. O sea, para mí la de más arriba es la que debería estar con stock negativo. Pero la de más abajo debería, se supone que debería Puedes ejecutarlo Pablo? Para revisar que da?
+
+Pablo Lopez:
+Esto lo hice con Saúl.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Este es el heurístico o el infinito heurístico? El heurístico, pero adentro está configurado el infinito. La configuración del operador ese. Porque a veces es cosa de cambiarle algunos parámetros sencillos, jugar un poquito y de repente lo que es ser guía.
+
+UNKNOWN_SPEAKER:
+Claro, finito.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Dale a editar, a ver que podemos cambiar por ahí.
+
+UNKNOWN_SPEAKER:
+Un check cuotas.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Colocarle warning. Ahora bajemos. Hable clic en normalize botas también.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Basically está diciendo si te quedaste con menos 10 y en el próximo periodo hay menos Deberían ser menos 30 y así debería ir como un rolling.
+
+UNKNOWN_SPEAKER:
+Agrega eso también. ¿Qué hay más abajo?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Nada tan importante. Guarda y ejecutemos nuevamente. Primero revisemos lo que nos dio.
+
+UNKNOWN_SPEAKER:
+Y si no cambio nada, discutemos nuevamente.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y otra cosa que quería preguntar era ¿cómo consigo una llave para las oficinas? Desde ya. De hecho, escríbele directamente al grupo.
+
+Pablo Lopez:
+Bueno, en el grupo está el contacto de César, así que háblale directamente y dile si te puede generar una, que ahora te muevas hasta Madrid y todo. Un montón, o sea, no sale nada negativo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+No, porque esta es un producto determinado. O sea, yo espero que lo negativo estuviera más adelante. A ver, y ve el demand fulfillment. Pero decimos que estamos recibiendo lo que necesitamos.
+
+UNKNOWN_SPEAKER:
+Y ahí, mira, mira, mira.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Viste el primer periodo? Dice, necesito entregar 123.000. Bueno, proyecto de stock 123.000 negativo. Eso es lo que quería decir. Pero tiene que estar del lado del inicio, del horror material, no puede estar ahí al final.
+
+UNKNOWN_SPEAKER:
+Al final se supone que todo funcionó, pero al principio hiciste magia.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Ya, esto sí está más presentable. Aquí, eso es el número de equipo, número de equipo, estoy haciéndolo todo.
+
+Pablo Lopez:
+Y ahí si está transportando el DC2 y está perfecto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+¿Y el full firme? Solamente para ver que no hay inventado nada. Dale, se ve bien. A ver, muéstrame un poco más adelante. ¿Vale? Había algo rojo.
+
+Pablo Lopez:
+Sí, pero porque era cero la demanda ahí. Está bien, está bien.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Y esos números igual se ven pequeños con los que veíamos a la derecha, ¿no?
+
+UNKNOWN_SPEAKER:
+¿Cómo?
+
+Conference Room (Hector Palacios) - Speaker 2:
+Es que esos números igual se ven pequeños comparados con los que teníamos en el stock balance, ¿o no?
+
+UNKNOWN_SPEAKER:
+Son distintas unidades, ¿por qué?
+
+Conference Room (Hector Palacios) - Speaker 2:
+El DC2 para el producto terminado 2, ¿puedo revisar los números del DC2? Es el que importa, porque después lo que pasa es que las demandas se van sumando. A nivel de cliente tengo demandas individuales, pero después a nivel de planta me sube del DC2, me está sumando la demanda de los tres clientes probablemente, o de dos.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y después cuando tengo la planta, está sumando la demanda de dos centros de distribución y así.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Entonces, cuando voy mirando hacia arriba, se empiezan a consolidar los números. Eso tiene sentido. Pero revisemos el DC2 para el Product Terminal 2. En la primera semana...
+
+Pablo Lopez:
+No es que sinceramente no esté entendiendo mucho.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Sí, dame un segundo. Estoy revisando los números. Proyecto de stock, ¿por qué está tan alto? ¿Tendremos todavía metido por ahí, Pablo, algún tema safety stock o coverage por el que esté configurado? Lo del target spirit of supply.
+
+Pablo Lopez:
+Pero no entiendo muy. Es que lo que veo es que el stock on hand, perdón, el proyecto de stock sigue siendo alto, pero no veo la necesidad de por qué es tan alto.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Si tus demandas son de 183 y recibes 385 y tienes demanda de 183, ¿por qué tengo que tener por ejemplo 2000 de stock? Puedes traerte el keyfigure de ese target period periods of supply. Y que lo está considerando algo El Kefir de SafeStock lo había cambiado también.
+
+UNKNOWN_SPEAKER:
+Bórralo.
+
+Pablo Lopez:
+¿Pero entonces esto me cambia también, por ejemplo, para el optimizador? No, porque esta es la versión Downside Version.
+
+UNKNOWN_SPEAKER:
+Cuando tú copiaste...
+
+Conference Room (Hector Palacios) - Speaker 2:
+porque lo que hiciste fue copiar de una versión a otra, ¿no?
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Te copiaste esos números.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Por eso está generando un stock como de 10 veces lo que tienes tú en demanda.
+
+UNKNOWN_SPEAKER:
+Borrémoslo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Veamos cómo resulta. Y si vemos que los resultados no nos gustan, entonces los podemos devolver. El tema es que alguien llega y te dice, oye, Pablo, ¿pero por qué hay 2,000 de stock? Si tu demanda es de 100, ¿por qué tiene 2,000? Hay que explicar alguna forma. Tenemos que decir, es por esto.
+
+UNKNOWN_SPEAKER:
+Aquí también lo agregamos, creo.
+
+Pablo Lopez:
+Sí.
+
+UNKNOWN_SPEAKER:
+Hazte algo, mirá, Falo.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Fíltrate en Keyfigure, filtra target superior of supply.
+
+UNKNOWN_SPEAKER:
+Anda a la columna ahí. Filtra.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Acuérdate del Ctrl Shift L. Para generar el... Eso. Y ahora seleccionado y guardo.
+
+UNKNOWN_SPEAKER:
+Eso.
+
+Pablo Lopez:
+Pero mi duda es, si por ejemplo yo el optimizador lo he ejecutado con un target superior supply...
+
+Conference Room (Hector Palacios) - Speaker 2:
+Lo hicimos así para agregar algo, para que hubiera algo. Mira, ejecútalo y revisemos primero, porque capaz que pase lo mismo. Pero si te diría, dejemos un target superior, period of supply más bajo. Y para el optimizador, si quiere revisar, pero no quiere afectar los resultados, podemos simplemente ejecutarlo en un escenario pero por ejemplo si uno tiene 10 y otro tiene menos cuando yo quiera como soluciones va a verse muy raro.
+
+
+
+UNKNOWN_SPEAKER:
+Veamos.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Podrías simplemente decirle, mira, dejamos un target superior supply de 10 sillas. Pero tenemos que decirle, oye, estamos dejando una condición y ahí está. No te deja ningún proyecto de stock porque simplemente actúa de forma magra, limpia. Es como, si no necesito stock, Bueno, lo mismo que me piden es lo que pido yo, básicamente. Me piden 223, entrego 223 directamente. Si quieres mantener los resultados está bien, pero si tienes que mostrar el keyfigure, tienes que decirle por qué hay tanto stock en la historia, porque si no, no te van a entender.
+
+ Solo asumimos que había una política de inventario de mantener 10 periodos de stock. Te recomendaría mantener menos que eso, porque 10 periodos de stock a ver son más de dos meses. No, quizás no estás loco, quizás no estás loco. Si quieres puedes devolverlo y ejecutarlo.
+
+UNKNOWN_SPEAKER:
+y tus resultados van a ser comparables. Selecciona todo. Selecciona todo el cuadrante. Escribe 10.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Subtítulos realizados por la comunidad de Amara.org No, escribiría mejor, porque como está filtrando, puede que se copie una celda aquí, no creo.
+
+UNKNOWN_SPEAKER:
+¿Hibrido en textualidad? Sí, hibrido. Control-Enter.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Y crees que es recomendable que deje este disabled, así de primero? No, déjalo visible y dile, mira, para generar stock pusimos target superior supply simplemente para que generara algo, sino de lo contrario iba a generar ningún stock. Fue una libertad creativa nomás, dile. Básicamente eso. Si te lo preguntan. Yo lo pondría antes del stock. O sea, quítate el safety stock porque no hace nada. Y ahí está perfecto.
+
+ Y en el siguiente también.
+
+UNKNOWN_SPEAKER:
+Buenísimo. Vale, con esto está bien.
+
+Conference Room (Hector Palacios) - Speaker 1:
+El demand fulfillment quedó perfecto. Lo que te decía recién cuando la demanda se acumulaba, si querés, puedes ir tú a la... Eso, ejecútalo. Y luego ve a al enunciado, por favor, para que entiendas el concepto de lo que te quería decir. La demanda hacia la izquierda se va acumulando, porque hacia la derecha tú tienes la demanda dispersa, ¿verdad? El cliente 1 te está pidiendo 100, el 2 te está pidiendo 100 y el 3 te está pidiendo 100.
+
+ Pero después, cuando estemos a nivel de DC2, se suman 300 y ya. Y así hacia arriba se van sumando también las demandas. Por eso es que se ven demandas acumuladas o más consolidadas porque se están consolidando las demandas de lo que está hacia abajo, hacia la derecha. Hacia la derecha agua hacia abajo y hacia la izquierda agua arriba. Imagínate como que fuera un río que estuviera llevando en vez de agua, te lleva los productos, entonces como que va fluyendo desde arriba, desde los proveedores hacia el cliente Por eso es agua hacia abajo.
+
+ Ah, y el tema, Pablo, es que más que esto, porque una de las razones que se consolida el stock, ¿verdad? Pero después tú también le dijiste en el DC2, yo tengo que tener 10 veces, o sea, 10 periodos de stock. Entonces te va a sumar los 10 periodos de stock y te va a mantener una cantidad de stock alta. Pero ese stock de los 2,000 que tenías tú de proyectado no sale de la nada, sino que hay que fabricarlo.
+
+ Entonces, por eso la planta está fabricando 10 veces probablemente la demanda de los clientes para mantener stock y así. Por eso es que los números se incrementan tanto por la regla que pusimos de mantener en stock 10 periodos de demanda. Si no coloca esa regla, entonces va a fabricar exactamente lo que se necesita, pero obviamente hay mucho riesgo en eso de que no lleguemos. O sea, idealmente, obviamente en el heurístico esto va a funcionar porque sí, pero esa es la idea, creo que te decía.
+
+
+
+Pablo Lopez:
+Vale, entonces para asegurar el target superior supply es que almacenas 10 periodos de stock.
+
+UNKNOWN_SPEAKER:
+Sí. Vale.
+
+Pablo Lopez:
+Y si me preguntan, me toqué en la libertad creativa.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, sí, sí, que fue una libertad creativa. Es que lo habíamos tributado sin esto y el stock te daba cero. Entonces queríamos ver un proyecto de stock y pusimos como stock de seguridad, digamos, 10 periodos. Bueno, periodos de cobertura, 10 periodos de cobertura. Para que generara, simplemente para que generara generar stock. Esto es súper normal, muchas compañías hacen esto, lo que hacen es como quiero mantener el stock los próximos 10 o 3 meses con tal de siempre ser capaz de abastecer.
+
+ De que se están sobredimensionando probablemente, sí, pero son capaces de abastecer, no tienen stockouts, se sobreprotegen, ante la variabilidad. Dale, yo creo que el heurístico quedó perfecto.
+
+Pablo Lopez:
+Pero, en plan, porque es que me hago un lío. Nada. ¿El chip-to-location lo tengo que poner?
+
+UNKNOWN_SPEAKER:
+Ah, no, no, quítalo, quítalo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+En los dos, lo quito.
+
+UNKNOWN_SPEAKER:
+Sí, sí.
+
+Conference Room (Hector Palacios) - Speaker 1:
+El chip-to es cuando traíamos los keyfigures, transport, supply y transport, receipts. Porque acuérdate que esos X-Figures te dicen de dónde hacia dónde. Cuando tú tienes supply solo y receipts solo, no te dicen de dónde hacia dónde. Por eso, si queremos tener más información o ver cómo fluye esto de un lado hacia otro, tenemos que traer ese X-Figure para decir, OK, si están yendo 100 hacia el DC2, o se están yendo 100 desde la planta 1 hacia la planta 2, o desde la planta 1 hacia la planta 12.
+
+ Toda esa información te la dice el Transport Receipts y el Transport Supplies. De distintas perspectivas, ¿no? O sea, el Receipt te está diciendo qué planta me lo suministra y cuándo llega. Y el Transport Supplies te dice hacia qué planta lo suministro y cuándo lo mando.
+
+UNKNOWN_SPEAKER:
+¿Verdad?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces, por ejemplo, la misma cantidad si tengo una planta A y un DC2, ¿verdad? Y estoy en la semana 1 transportando 10 hacia el DC2, entonces te va a decir Transport Supply, Location de origen, la planta de origen va a ser la planta 1, la planta destino va a ser el DC2, y estoy transportando 10 en la semana 1. Después, esos mismos 10 los vas a tener tú en el Transport Receipts, pero te lo voy a decir de esta forma.
+
+ Planta de origen va a ser la planta 1. Planta de destino, el DC2. Lo recibo en 10 en la semana 3. O sea, es exactamente el mismo número, pero simplemente está trasladado en el tiempo. Uno te dice cuándo lo mando y el otro le dice cuándo lo recibo, en qué semana, pero es la misma cantidad. Y a veces, bueno, pueden estar consolidadas, qué sé yo. Pero esa es la lógica, de que uno te muestra la perspectiva de cuándo se envía algo y el otro te dice cuándo se recibe.
+
+
+
+Pablo Lopez:
+Nada más que eso. Y no me termina como de quedar claro por qué, por ejemplo, ahora esto es positivo, ¿Y el raw material, por ejemplo, es negativo?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Porque primeramente, aquí no hay lead time, ¿verdad? Parece que en la parte entre las plantas como que el lead time era cero. No me equivoco en el enunciado.
+
+Pablo Lopez:
+El lead time solo está para el tema de los proveedores.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ya, por eso es que el raw material es negativo, porque dice, bueno, párate en la parte produccional.
+
+Conference Room (Hector Palacios) - Speaker 1:
+dice necesito que me provean 2.542. Estás en el 12, perfecto, bueno, pero es el 12. Vamos a la planta. Necesito que me provean 12.610, ¿verdad? Ese es en la planta 1, en la parte de receipts. Eso es lo que necesito yo ahora mismo, te está diciendo, para poder mantener las condiciones de stock, porque me dijiste mantén 10 periodos de y más encima sobre eso tengo una demanda. Entonces esas son mis necesidades, ¿verdad?
+
+ Y yo necesito que me traigan en la semana uno 12.610. Entonces va a ir IBP, va a producir eso, ¿verdad? Y va a inventar material. Y va a llegar al punto en que va a decir, ok, para producir esto necesito esta cantidad de raw materials. Y el lead time te dice, no, no es capaz Porque para traer esa cantidad de raw materials, ¿cuánto necesitas tú de anticipación? Tres semanas, ¿verdad? Sí. Vale, ahí te dice.
+
+
+
+UNKNOWN_SPEAKER:
+Esto normalmente no hubiera sido posible.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Ahí es que en el otro modelo, el optimizador, te va a decir, no, imposible, esto no lo puedo hacer. Porque son tres semanas mínimo y tú me lo estás pidiendo ahora. Pero lo que pasa es que aquí el se llama el heurístico, te va a decir, bueno, lo proveemos, pero el stock es negativo. O sea, te genera, lo negativo te dice cuál es la restricción. Básicamente, el negativo te va a decir dónde está la restricción logística.
+
+ Porque la restricción logística, ¿cuál era en el problema? Era que no podíamos mandar de una planta a otra porque había un lifetime? No, ¿verdad? Porque no existía el lifetime. ¿Era de que no teníamos capacidad productiva?
+
+UNKNOWN_SPEAKER:
+Tampoco.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Podíamos producir todo lo que quisiéramos. Entonces, ¿cuál era la restricción? Disponibilidad de material. Y por eso es que se generó un negativo ahí.
+
+Pablo Lopez:
+Vale, entonces, si yo esto lo explico, O sea, termino de explicar el optimizado con el ejemplo de tal, porque no cumple, no sé qué, ¿vale? Eso sí sé. Entro en el supply heurístico y empiezo a explicar que aquí tengo el 100%, que no tiene capacidad y entonces como que siempre cumple el 100%.
+
+UNKNOWN_SPEAKER:
+Sí, aquí...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Dile que si no existe la capacidad se la inventa, básicamente, es como siempre va a entregarlo todo.
+
+Pablo Lopez:
+Sí. Y luego aquí, ¿qué debería centrarme para hablar?
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, dile que esta es la predicción de stock, que está intentando abastecer lo que se pide desde los clientes, más la condición de inventario que pusimos, que son los 10 periodos.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Pablo Lopez:
+Y se genera el balance de inventario. También hablo de esto y digo, aquí se genera el negativo en los RO.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿Por qué? Esa, se hubiera, idealmente, en el mundo ideal, hubiéramos necesitado tener esa cantidad de suministrar, 122 mil, pero debido al lifting no se puede, entonces genera un stock negativo. Esta es la parte importante, Pablo, porque la veracidad del supply planning heurístico es un algoritmo que viene en el módulo SNOPPY. Algunos clientes dicen, bueno, no voy a pagar por supply planning, voy a pagar por el SNOPPY, voy a empezar de a poquito.
+
+ Entonces se contratan este módulo que tiene este algoritmo que es bastante más malo, ¿verdad? Y la gracia es que estos stock negativos te van a generar alerta en el sistema. Entonces cuando tú tienes un stock negativo, podrías generar la alerta. Si sabes cómo generarla, podrías hacerlo. O colocar el menú formato. Eso estaría bueno, que pusieran de que cuando es negativo que le coloque en rojo. Eso te está diciendo que ahí hay un cuello y botella o que ahí hay un problema de capacidad o una restricción que no se está almacenando.
+
+ Entonces generalmente lo que se espera es no simplemente generar cosas que no se pueden hacer, ¿verdad? Porque ¿para qué quiero yo ejecutar esto si no puedo hacer nada? Lo que va a hacer es que te genera una alerta. Sí, te genera una alerta y tú, el planner, dices, ok, esto entonces, como tengo una alerta, no es factible, entonces ¿qué hago? Bueno, ajusto las necesidades, bajo los periodos de stock a cinco quizás, o mi demanda la bajo también porque, bueno, no va a ser capaz de abastecerla, bajo los números, ejecuto nuevamente y reviso si todavía tengo alerta.
+
+ Y si sigo teniendo una alerta y voy siguiendo, voy iterando. Pero esa es la gracia, es que es una para que el planner haga algo. En el optimizador, no debería hacer nada. Porque el optimizador es más pro, digamos, es mejor. Pero acá requiere de un trabajo iterativo entre que yo meto los números, ejecuto el heurístico, me doy cuenta que me da cosas como stock negativo, entonces ajusto el plan, ejecuto el heurístico, todavía lo tengo, ajusto el plan, ejecuto el heurístico, Ahora sí está verde.
+
+ Perfecto, esto es factible. Se entiende, ¿no? Esa es la idea del heurístico del infinito. Simplemente darte alertas de factibilidad. Pero no crear un plan factible, sino que decirte por qué no es factible.
+
+UNKNOWN_SPEAKER:
+Vale. Vale, pues ya estaría.
+
+Pablo Lopez:
+Yo ya con eso mañana por la mañana vuelvo por mi cuenta y ya a las cinco y media tengo todo esto.
+
+UNKNOWN_SPEAKER:
+Vale, buenísimo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Espero que te haya podido explicar el ejemplo del optimizador porque creo que eso ya lo dirían, eso es lo principal.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y eso, de lo que discutimos acá está la transcripción. Entonces, una vez esté lista, mándame un mensaje. Igual vamos a estar el día pasado del tiempo, ¿no? O sea, a mí me da lo mismo. Yo puedo responder a las 8 de la tarde, no pasa nada. Pero si se me pasa, Pablo, recuérdamelo. Puedes escribirme por WhatsApp. Te mando. Quiero mandarte el transcript y en el chat GPT te puede resumir lo que te estoy diciendo para que te lo memorices fácilmente.
+
+ Entonces si agarro el transcript, lo meto al chat GPT y le dice ¿cuáles son los puntos importantes de mencionar en el heurístico infinito?
+
+Pablo Lopez:
+Y te los va a listar. Vale.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces, si no te mando este porque ahora él entra a la fábrica y se demora, no sé, 30 minutos, una hora en generar la transcripción. Pero una vez que genere la transcripción, si no me acuerdo yo de enviártela, pídemelo. Entre las 7, 8 de la tarde, dime Héctor, ¿se generó la transcripción? Mándame un WhatsApp para que no se nos pase. Y yo una vez que tenga la transcripción, la metodología GPT te lo mando.
+
+
+
+Pablo Lopez:
+Vale, perfecto. Pues sí, pues muchas gracias. Y vamos, yo creo que entre demanda y optimizado con el ejemplo y el heurístico, yo paso la prueba, ¿no?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, se pasa la prueba. Pero sí, apréndete bien el ejemplo este de heurístico de explicar de que hay un problema de capacidad o cualquier cosa, lo que sea necesario para explicar por qué no se resolvió. Si explica un ejemplo, te ganaste el cielo ahí. Yo creo que esa es la parte crítica, explicar ese ejemplo.
+
+UNKNOWN_SPEAKER:
+¿Del optimizador?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, simplemente porque eso es lo principal, es que imagínate, tiene un cliente y tú le dices, mira, es que, no sé, 61%, no se puede cumplir la demanda. Y la pregunta, ¿y por qué? Y ahí es que nosotros tenemos que ser capaces de hacer como un tracing, digamos, y decir, ok, mira, revisemos este número, este viene de la planta tanto, efectivamente en la planta tanto había un problema de capacidad y no se pudo dar todo.
+
+ O si no, bueno, seguimos hacia arriba. Había un problema de producción. Se acumularon las demandas de, no sé, de varios clientes, entonces no se podían producir todas las cosas a la vez. Y bueno, por eso es que no se cumplió con el 100%. O si no, simplemente que va a ser el caso más probable que no haya LinkedIn. Está dentro de LinkedIn, entonces Esto se pudo cumplir con el stock disponible, fuera de eso no se podía mandar a producir nada, no se podía mandar a comprar nada porque estaba dentro del horizonte del lead time.
+
+ Esa es la razón más usual. Entonces, fíjate en algún ejemplo, revisa cuál era el stock disponible para proveer la demanda, y ya. Porque al principio, sobre todo en esa ventana de lead time, en las primeras tres semanas, dependo de mi stock. No es que pueda mandar a producir ni a comprar nada, porque para hacer cualquier cosa necesito hacerlo con tres semanas de anticipación. Entonces si estoy en la semana siguiente, ya no tengo las tres semanas de anticipación.
+
+ Si estoy en la semana 4 del futuro, ahora sí puedo tomar decisiones para la semana 4, pero la semana 3, la semana 2 y la semana 1, ya fueron. Tuve que haber decidido antes, no lo he decidido. Entonces ahora lo único que puedo hacer para abastecer la demanda es con el stock que tengo disponible ahora mismo. Con eso, si es que no es suficiente, bueno, no es suficiente.
+
+Pablo Lopez:
+Jodiste, no mucho más que eso. Vale. ¿Y en cuanto a las preguntas que me fueron dando? A las cinco y media de la tarde.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Cinco y media de la tarde, España. Ah, bueno. Cualquier cosa, mira, yo termino mañana a las doce y media porque empezamos temprano, siete, tenemos la primera reunión hasta las nueve de la mañana y después de diez y media a dos y media. Y ahí ya me desocupo. Entonces, si que mañana después de las dos y media estás con algún tema y no estás logrando explicar bien un caso, entonces háblame y lo revisamos juntos.
+
+
+
+UNKNOWN_SPEAKER:
+Vale. Vale. Perfecto.
+
+Pablo Lopez:
+Y en cuanto a las preguntas, ¿Qué cosas me pueden preguntar? Porque si van a ir a pillar, acojorado, si no, no puedo responder.
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, es que mira, yo creo que te preguntarían generalmente esos gaps, por eso es que es mejor estar preparado y entender. Porque si entiende un ejemplo, entonces puede entender todo lo demás. Por eso, es que si tú pasas por la slide y de repente, perdón, por la ¿Cómo se llama la hoja que está ahí, de IGP? Dice, aquí es donde tengo las producciones, aquí tengo esto, aquí tengo esto. Y si no explicas, por ejemplo, un caso en donde digas, mira, aquí por esto pasó esto y esto, entonces te lo van a preguntar, te van a decir, Pablo, ¿y por qué hay 61% de cobertura ahí?
+
+
+
+Pablo Lopez:
+Y así. Y si, porque no me dicen, oye, ¿por qué las...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Y lo otro era lo que te intentaba mostrar recién, Pablo. ¿Y por qué el stock es negativo aquí en la planta 2? Cuando recién los resultados del heurístico no eran buenos. Ahí te lo hubieran preguntado. ¿Por qué el stock es negativo acá y no antes? Porque, en teoría, debe ser negativo siempre al inicio, en los roma tiro y las cosas así. Al principio, no después. O también te pueden preguntar, Pablo, ¿y por qué la predicción de stock es de 2000 y mi demanda es de 100?
+
+ ¿Por qué se tiene que mantener tanto stock? Y ahí tendría que haber sabido responder, mira, es porque nosotros seteamos este parámetro de los 10 periodos de stock, como una regla básica, para generar una predicción de stock, porque de lo contrario el sistema no estaba generando. Fue una libertad creativa, básicamente. Ese tipo de preguntas te van a hacer, de los números los van a realizar.
+
+Pablo Lopez:
+Sí, por ejemplo, me dicen, oye, porque al final planta 2 aquí no hay nada.
+
+Conference Room (Hector Palacios) - Speaker 1:
+¿La planta 2 este es el optimizador? Sí. Dile porque es capaz de hacer todo con la planta 1 y tenía prioridad.
+
+Pablo Lopez:
+Sí, eso podría verlo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Vale, vale. Parece que nosotros teníamos la preferencia de que llegara de la planta 1, no recuerdo bien.
+
+UNKNOWN_SPEAKER:
+¿Y cuándo?
+
+Pablo Lopez:
+O sea, ¿esto es como que yo lo hago y luego me dicen has pasado? ¿O simplemente es como si nada? ¿Y en caso contrario, cuando ya me dicen algo?
+
+UNKNOWN_SPEAKER:
+¿Qué cosa? No, no entendí eso.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Por ejemplo, yo lo hago, luego te escriben a ti diciendo que he pasado la prueba, Sí, es que esto nunca me había pasado, cuando lo hice con Fiamma lo hice yo, y después le mandan un email, Yara o no sé quién está trabajando con ellos y les va a preguntar el feedback y después te lo dan de vuelta, entonces van a tener que esperar que te respondan, ahí preparados que se mueren un poco porque tanto Juanjo como Abraham son personas ocupadas, tienen muchas cosas a la vez, entonces.
+
+ Ya voy a considerar un éxito que se puedan sumar a la sesión. Si se suman a la sesión, después espérate un poquito que te den el feedback. Pero yo creo que no va a pasar más de una semana que te digan que aprobaste, pero no veo... O sea, no te van a matar si te digan alguna pregunta, tampoco te van a matar por eso. Yo creo que lo que me interesa, mira, aprendió de ManPlanning, aprendió de Supply Planning, hay cosas que mejorar siempre.
+
+ No eres un experto, pero si entendí los conceptos básicos, sí.
+
+UNKNOWN_SPEAKER:
+Perfecto. Eso es. Vale. Perfecto.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Al optimizador también, lo de las cuotas quizás le pondría palo. A ver, y si no, mira... Es el tipo de cosas que pueden preguntar, efectivamente, como ¿por qué no hay nada?
+
+Pablo Lopez:
+Puedo aprovechar y eso, explicar que como no tenemos ningún tipo de costo, como no tenemos nada más, pues entonces el sistema ha decidido optar por este camino.
+
+UNKNOWN_SPEAKER:
+Sí, sí, eso puede ser.
+
+Pablo Lopez:
+A lo mejor es parte de lo que quieren que me explique, porque si empiezo a cambiarle de las cuotas es como que hago un poco de trampas, ¿no?
+
+Conference Room (Hector Palacios) - Speaker 1:
+No, no, está bien, le puedo definir. Pero muéstrame el organizador Así que tienen el mismo tema de normalizar las cuotas. ¿Viste ese reflejo de abrir y de pedirme tercera dinaria?
+
+Pablo Lopez:
+Sí. Ya, va a ser un segundo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Muestrame la parte de general. Ve abriendo cada uno hasta que encontremos lo que puede ser.
+
+UNKNOWN_SPEAKER:
+Tampoco. No. Ah, ahí está.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Normalize quotas. Seguramente es. A lo siguiente, dale a editar. No vamos a cambiar todos los resultados, sino que lo vamos a ejecutar en un Normalize Quotas, Equally.
+
+UNKNOWN_SPEAKER:
+¿Qué más?
+
+Conference Room (Hector Palacios) - Speaker 1:
+En Check Quotas, Warning. Que si no se cumple, que no genere un error, sino que te diga que no se cumplió simplemente, pero no quiere que te mate. ¿Qué más? Eso y arriba, ¿puedes subir hacia arriba la parte de costo? Más arriba. Time independent penalty costs. Coloca on. Y guarda.
+
+UNKNOWN_SPEAKER:
+Ahora vamos al IP.
+
+Conference Room (Hector Palacios) - Speaker 2:
+Te crea un escenario y ejecuta sobre el escenario.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Si nos gusta lo promuevemos. Si no, lo dejamos, no hacemos nada. Lo bueno es que ya me he aprendido los ejemplos. Sí, por eso no lo vamos a cambiar. Ve hacia Manage Scenarios, Create. Ahí. Create. Llámale Test. Tú no vas a cambiar los resultados. Que tiene para correr una versión paralela.
+
+UNKNOWN_SPEAKER:
+Click OK. ¿Y esto qué es?
+
+Conference Room (Hector Palacios) - Speaker 1:
+Es para si lo quieres compartir con alguien.
+
+UNKNOWN_SPEAKER:
+No me deja.
+
+Pablo Lopez:
+Ah, es que tiene, vale, tres, dos.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Fíjate que ahí se va a colocar el escenario como un atributo. En la columna J. Quiere decir que ahora todos estos números pertenecen al escenario. Ahora ejecuta el Supply Planning. Fíjate que a donde se está ejecutando dice escenarios Le damos un segundo a ver si se pasó algo hacia la planta 2.
+
+UNKNOWN_SPEAKER:
+Si bien, perfecto.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Si no, bueno, será lo que será. Lo que pasa es que cuando no definimos las cuotas y las normalizaciones, ¿qué hace eso? Porque dice, bueno, hay cero cuotas, entonces, bueno, No hace nada. Pero cuando se normaliza puede que tire 50-50.
+
+Pablo Lopez:
+Realmente también sería hasta incluso bueno tener este ejemplo, ¿no? Porque me puedo poner a hablar de eso, y puedo decir...
+
+Conference Room (Hector Palacios) - Speaker 1:
+Sí, sí, le podrías de paso mostrar que, miren, esto es un escenario con las cuotas, y aquí sí está repartiendo de forma correcta, entonces te lo saca el sombrero. A ver, veamos qué tal. ¿Viste? Vale. ¿Cómo puedo hacer para...? Te lo puedes guardar de favoritos. Puedes tener uno, mira, y te tengo un ejemplo con las cuatro. Pero si no, anda a Edit View para que sepas de cómo cambiarlo. Hacia la izquierda, versiones y escenarios, abajo.
+
+
+
+UNKNOWN_SPEAKER:
+Ahí está.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Entonces selecciona las dos o selecciona una. Te recomiendo irlo uno por uno porque sí se pueden tener dos escenarios a la vez, pero hay que dejar la vista en un layout bueno.
+
+Pablo Lopez:
+Entonces, por explicar esto, puedo decir lo de las cuotas, no sé qué, y luego digo, vale. Y, por ejemplo, cambiando el optimizador para que consigue una cuota equitativa, enseño el test 2. Y digo, aquí está. Y esto solo resulta octando, claro. Vale, puedo hacer eso. Pero tomo como el original, como el de sin cuota. Vale. Perfecto.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Pablo Lopez:
+te afecta con más cosas. Sí, al final me van a decir, me van a atender al delivery.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Yo creo que aquí el secreto Pablo da lo mismo, si es que no te sabe una cosa al 100%, lo importante es, mira, te estoy mostrando un montón de cosas. Y eso como que le da a entender allá, mira, igual está entendiendo y se está metiendo, después obviamente hay un segundo nivel de profundidad, y todo eso, pero bien. Yo a Abraham no lo conozco tanto, Juan sé que es un amor de persona muy simpático a José.
+
+ Él era digamos que mi delivery manager en su momento. No era un rol de mentor como el que tenemos nosotros, de que yo te voy a apoyar y haciendo seguimiento, pero sí él era mi Cuando yo estaba más júnior era mi Project Manager. Así que lo conozco de bien atrás. Estamos entonces, ¿no?
+
+Pablo Lopez:
+Sí, yo creo que con esto ya muy bien todo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Dale, dale, buenísimo. Practícalo, dale vuelta, ve los tiempos. Y nada, para que alcance a presentar todo, sobre todo la parte de supply y te recomiendo las vistas que son simples, como este es el procurement, este es el otro lado, eso pásalo rápido, no hay tanto que explicar ahí, quizás decir mira va de aquí hacia allá, listo, o el external procurement, esto es lo que necesitamos en esta semana, de este producto, en esta planta, pero si no hay tanto que explicar no nos que es bastante.
+
+
+
+Pablo Lopez:
+Vale, pues perfecto. Dale, buenísimo.
+
+UNKNOWN_SPEAKER:
+Hablamos entonces mañana, Pablo.
+
+Conference Room (Hector Palacios) - Speaker 1:
+Si tenés cualquier duda a mitad de día, avísame.
+
+UNKNOWN_SPEAKER:
+Vale, perfecto. Dale, hasta luego.
+
+Pablo Lopez:
+Un abrazo. Chau.
+
+UNKNOWN_SPEAKER:
+¡Suscríbete!
+
