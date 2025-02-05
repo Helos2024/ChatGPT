@@ -1,0 +1,1023 @@
+UNKNOWN_SPEAKER:
+Good morning, team.
+
+UNKNOWN_SPEAKER:
+Good morning. Good morning, Khalid.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+We have enough audience. Yeah.
+
+UNKNOWN_SPEAKER:
+OK, yeah.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Gas is here. Refining is here so our gas is here. Mr. Ali is joining.
+
+UNKNOWN_SPEAKER:
+We also need the acid right.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+From OK.
+
+UNKNOWN_SPEAKER:
+And also Yaser. Ahmed Yasir is there in office today?
+
+MM- SKEC2 - L08:
+Yeah. He will join us.
+
+UNKNOWN_SPEAKER:
+OK. I think you can start.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+All right. All right. For sure.
+
+Hector Palacios (ADNOC Group D&CS):
+Let me share the screen and we can. Take the discussion where we left yesterday.
+
+UNKNOWN_SPEAKER:
+So Tim, just a quick recap.
+
+Hector Palacios (ADNOC Group D&CS):
+If we go very, very fast from the slide that we had this day, yesterday we were checking the inventory models. We have basically what we are calculating, that is reorder point, safety stock, and max stock. Basically, we start from reorder point and then we pivot to get the safety and max stock based EOQ and lead time demand calculations. So this is just a chart on how this should behave. These were the inputs that we are discussing.
+
+ Then if you remember this big calculation map where I did the correction basically, now that from historical demand we take the lead time and lead temporability, so on. We discussed also about the inventory models that we have different distribution that applies better depending on the case of variability or demand frequency. You have normal, gamma when you have high variability, and Poisson when you have very frequent demand, like slow movers, mid movers.
+
+ And then we show an example in which when you increase the service level, also increase the safety stock, right? So reorder point is composed of these two things. The rear of the point and the lift and demand. Lift and demand is basically expected value. Safety stock is the buffer that we are going to have against the variability. The higher the service level that we put into the system, the higher, of course, is going to be the safety stock.
+
+ Let's remember that this service level is probability of fulfilling the demand if required. It's the non-stockout probability. The opposite of this is the stockout probability. That means that if you have a service level of 98 percent, then only 2 percent of probability of having a stockout. This is the relationship between service level and stock as we increase it. The safety stock is also going to increase, and accordingly, the reorder point also is going to increase because it's considering this and that, the safety stock and the lead to demand.
+
+ Yesterday, we were discussing about this particular topic, service level. I was explaining to you that service level is basically the manual input that we are going to have. It's going to be a definition that I'm not expecting you to change frequently. On a yearly basis, it's more than enough to have this definition, or at least to question this definition if we want to continue with the same. And service levels should be very related to what we call the risk score.
+
+ So imagine that the most critical the combination, then the higher risk that is going to impose to the operations. For that reason, the higher the service level that you should have. A quick example is the business continuity items. If they are very important for operations and without this, we cannot continue operations, then they should have the higher service level possible. Is maybe desirable and it's not critical and maybe it's a low price.
+
+ I don't know. You know, you can define the lowest possible service level or just decide this is not going to have safety stock at all. OK, because it's not going to have an impact to the operations. Then it's not worth it to have more stock for it. If it fails, we can wait a little bit and we will get what we need. On time. So for defining this RISC score matrix, we were thinking to classify based on the segmentations that you have.
+
+ So different combination of segmentations. This is a hierarchy from BC until FMCN. You will generate a RISC score. The lower number is the highest priority. And here you have the in which the risk score is translated into a target service level. So the most critical one, as we said before, 99%, then you will decrease in the second priority 95%, and you will go until you have 0% that is basically not having a safety stock at all.
+
+ And yesterday we were discussing about that if this is VC, then it doesn't matter the other segmentations, we assign automatically a RISC score 1. But if this is not BC, then we check the BED segmentation, and based on this, we are defining the different RISC scores. The idea so far is that, of course, B is going to have the higher RISC score, but then we could go into details and check the HTML segmentation, FMCN, and assign a different RISC score higher or lower, depending on the characteristics of the materials, right?
+
+ So I remember that yesterday I think Jasir was questioning this and was saying that maybe if this is a B material, vital, then we shouldn't check the other segmentations and right away assign a risk score of two or one.
+
+UNKNOWN_SPEAKER:
+I don't know.
+
+Hector Palacios (ADNOC Group D&CS):
+You're right, you're right.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+And here I think regarding the But before that, I need Jagga and Ahmed. Have you discussed this one before, during the workshops and before signing the BBD and the BRD? And agreed all group of companies, they are agreed about this segmentation and the risk score on here. Because why, Ahmed? Because from my side, I don't know the remaining companies, all vital item, irrespective of the value, if this item are vital, we need to be 99 or 99% to be available.
+
+ One or two only. This is what I am. I'm talking about the admin guys before. Before any of this item I invited, we don't want to see the value. This is vital item. Vital item mean the definition of the vital item. Any shortage of this item unavailability will lead to production lost. But here I have no idea. Ahmed, can you please just explain to me if this already discussed before and agreed with all focal point and users.
+
+
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+The point was highlighted before approving the BRD and it's open subject to be discussed here and the IBP team, they have confirmed that we can revisit this subject during the testing, I mean in this stage.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Yeah, maybe clarification, Ahmed and Yaser. So in the PRD BPD, we approve the design and the ability to set those. Now, those parameters that Hector and the team are referring to, and please Hector, correct me if I'm wrong. These are parameters. These are things we can configure, we can agree on. That doesn't change the design of the solution, but it changed the parameters you set. When is something or how do you score based on whether it's vital or essential, et cetera.
+
+ This is what we're doing now.
+
+Hector Palacios (ADNOC Group D&CS):
+Sorry, go ahead, Hector.
+
+Mohamad Naamani (ADNOC Group D&CS):
+But the idea is, yes, this is not changing the design, it's changing the parameters, and that's what Hector is referring to. Go ahead, Hector, please.
+
+Hector Palacios (ADNOC Group D&CS):
+This is not a core configuration, but we need to have it right now, and if we don't have it, we cannot progress. This is something that we can check pretty easily on the system, given the case. So, we have it. Yes, we have it as a discussion because we are finding many things, but I think that at the end when you see the data, it's going to become more clear if we should have one risk score or the other.
+
+ So, my suggestion is that we can check some examples, but also I'm still interested on what you were mentioning. If this is vital, maybe we shouldn't check all segmentations and just apply 95% right away.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Is for all the inventory, regardless if it is chemical or spare parts or drilling, it will be for all the inventory. So it should be as per the inventory procedure, group company inventory procedure.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, but the inventory procedure is saying basically everyone that should have 99% and then it's making more difference to this?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Here my concern only for the on demand material. That we need to keep, yes, because the here the service level is not applicable because it is not regular inventory item. Only when there is a demand and only when there is an approved request in the system, it will be procured.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, yesterday we were proposing to We have several ways of working with this. First of all, if we can identify on-demand and if this is not an aspect that is important to you and this stock basically is not having a big impact, then we can maintain the way we're working. Not to have inventory layers, not a forecast, but just asking on-demand and the system will provide. Right, whenever there is a reservation, basically.
+
+ But Yaga was mentioning that we also want to explore what IVP is going to propose in those cases. So we can propose something with IVP. We can check if this is a very good candidate for a forecast, or maybe we can check and put some levels for reorder point. We can check, but at the end, we have the option. If we don't like the resource that we see, we can continue working on the on-demand basis and it's not going to be an issue.
+
+ So basically we are open to explore, but it's not a clear definition on how we are going to finalize it. We can do it on how you do it today.
+
+UNKNOWN_SPEAKER:
+Can you repeat? Do you have any questions, Adam?
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+Yeah, I still go by my suggestion that we move.
+
+UNKNOWN_SPEAKER:
+Yeah, you hear me?
+
+Hector Palacios (ADNOC Group D&CS):
+It's just me or I see that is difficult to hear.
+
+UNKNOWN_SPEAKER:
+Do you hear me right Tim?
+
+MM- SKEC2 - L08:
+Yes, I can hear you Hector.
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+We can hear you but the audio quality is not I apologize, maybe it's the signal. Yeah, I still go by my suggestion that we select the movement which is more important than the pricing actually. I remember that you mentioned this before.
+
+Hector Palacios (ADNOC Group D&CS):
+I'm suggesting another suggestion.
+
+SALEM ABDULLA AL BLOOSHI (ADNOC Offshore - MATCATT):
+Yeah, so you are proposing. Yeah, exactly. Also, I want to suggest another suggestion. Of the cost of the material, instead of going by unit price, is it possible that you can go by a formula of the unit price plus the quantity which is available at the vendor? Either the maximum stock against the unit price, so the total of that, it will be the HML that you're considering the value of the material.
+
+ This is a new suggestion that heating, so even the guys can share their ideas about this. Sometimes the unit cost is actually high, but if only one number of material is available in the inventory, it's not affecting the inventory that much. I hope my suggestion is actually clear.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah. So your suggestion is to use something like...
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+One minute. Before that, Doss from Excellence team. We need also Morganani and the team here. We need to discuss now this point. I need to hear from you. Do you think that now this segmentation are OK? We need to hear your feedback, Doss and the team. Is it OK now? Or we need to update it and amend it based on? Because you know that in each company they have different plus risk of score, not all the same.
+
+ So that Doss from Excellence team and also if you would like we can add Morganani.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+any comment with those from your side yeah Morgan is not in the office so see this segmentation definitely need some lot of modification what we agreed is depends on the actual data analysis we need to finalize this and also it is not a constant value okay depends on the product or the category or the the always the inventory controller can change this risk score. The system has a flexibility because this is just for designing only.
+
+ They are proposing this. Definitely it is not a finalized one. As for the procedure, we have to change this one after seeing the actual data. What is the proposal from the IBP? Then we can adjust this also in the future.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+OK, Hector, this risk score it will be formalized calculation isn't it? You are going to use if 99% then the standard deviation you're going to use the formula it will reflect in your formula defining the stock level parameter isn't it? You're correct, yes. So it is like you put risk score one it is going to be 99% and standard deviation formula you put that P1 like two point something nine isn't it?
+
+ Yes, it's a factor that we multiply the standard deviation. If it is two, so you're going to low, like 90% with the standard deviation, 95. What about six? It will not get any service level. Exactly. So only one, two, three.
+
+Hector Palacios (ADNOC Group D&CS):
+One, two, three, four, five. So the risk score that we are assigning is this one. So you see the risk and the service level that we have related to that.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Okay, this is the table.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+And I think then it is agree with what Yaser said. I think all the fees should be considered as one, regardless of the price and the movement.
+
+Hector Palacios (ADNOC Group D&CS):
+Maybe that's the reason why I see many opportunities there. Maybe we can check some examples. So let me propose this. Let's not get stuck on the discussion if we are not completely clear right now. Let's go with the presentation. Let me show you the system, and then let's deep dive on some examples. Because on the example, I will show you the current reorder point, the proposed reorder point, and what are the segmentations, the service level that we are applying, and so on.
+
+ With real data, we can check if this is making sense or not. I can take note of every opinion that you have on every case, and based on that, we can build something better. All right, let's try to iterate on that one. So let me proceed. We have plenty of time to retake the discussion about this, but let's warm up a little bit on the results. I think for this one, later we'll have deep dive.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+We'll go through a deep dive, as mentioned by Dos, that once everything is ready now, all data are uploaded to the system. And during the data validation, we We'll adjust the risk score based on the discussion with the team here. Later, we'll discuss in depth. No problem, inshallah. Okay. One suggestion here. One suggestion.
+
+Aboobacker M. (ADNOC Gas - PD):
+So even V, E, D item also, we are having slow and non-moving items. So we need, I have put on the table there in the data. Just check that one. Slow, non-moving also we need to consider.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Aboobacker M. (ADNOC Gas - PD):
+Okay. Yeah, VED everywhere we need to add SN. Hector, do you have any suggestion?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Hector, do you have any suggestion for that? You can also present for us.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Aysha, same as we have DOS set.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+We need to have the full data uploaded and once everything is ready, we need to see the IP process to validate the data and then we'll suggest. We'll review it again based on our requirement and the criticality and the business continuity of the company. Let me just... Yes, sir. Exactly. Yes, okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Go ahead. Just something to add. Is not mandatory, but you can have different risk scores depending on the company as well. If you are struggling too much on getting a final agreement between all the companies, which is the ideal case, if you ask me, but if we are not able to, and we have different definitions depending on group of agencies, we can define different metrics for agencies. That, of course, is going to increase the complexity and all of that, but in order to progress is something that we also can do.
+
+
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think we need to follow the policy and procedure of inventory, because all the agencies, they have the same unified process and procedure. It's mentioned in our process. So that's why we need to go through it. We need to apply it, same as the policy and procedure, inventory, policy and procedure.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I see that. The only thing that it was able to capture from that is for vitals, items, you need to have 99%.
+
+UNKNOWN_SPEAKER:
+Something like that.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I can look up again to the inventory procedure. Let's say the mission only 1, 2, 3 only. Yeah. 99 for vital and 95 for essential and for 90 for desired item. This as per our procedure. Okay. Let's continue now and later once everything is ready, we'll decide. We'll see the multiple scenarios and we'll assign the correct score based on our requirement.
+
+UNKNOWN_SPEAKER:
+Agreed.
+
+Hector Palacios (ADNOC Group D&CS):
+And also align with police and procedure.
+
+UNKNOWN_SPEAKER:
+Agreed. Yes.
+
+MM- SKEC2 - L08:
+You wanted to mention something? Yeah, while we are working on data, is this something we can discuss further here, Hector, in terms of identifying if we have the right segmentation logic or this thing also can be discussed later or we can utilize this time to at least put up a structure to this and then that gets validated with data, with more data and information.
+
+Hector Palacios (ADNOC Group D&CS):
+The proposal was, let's go with the presentation Let's show the system, and then let's go directly with some examples that you showed. This is services score that we were defining. These are the resource. This is final. It's not OK. So there is more enlightening, usually. So let's go with that. Let me continue. Yesterday, I was promising to have some slides to explain the difference between the approach to reorder point-based planning and the base forecast planning, because depending on the planning type that we are defining on the demand side, this is also going to have an impact on us.
+
+ I will explain why. So, the normal approach is that imagine that this line, this blue line that you have here, are your actuaries, okay? So, you have historical information about this, and in order to calculate a reordered point safety stock, the system will analyze and will calculate the variability of the actuaries. So, that variability will be basically the difference between the actuals and the average.
+
+ So the central line is, of course, the average. And this is basically the input. These differences in red that you have here are going to be the input to calculate the standard deviation. So we want to calculate the normal deviation like the average one. It's a little bit more complicated than that, but it's trying to get that central error, you say. Or deviation. And then based on this, you will calculate.
+
+ This will be the input to the models. And we calculate the safety stock, the red line. And we will calculate the reorder point, the green line. And also, of course, the max stock. But I'm not including it because it's not part of the optimization process with the standard deviation and so on. So this is the normal scenario. Now, if you have forecast-based, there is something interesting to show Because the point is that for forecast space, we are going to generate a forecast, right?
+
+ So historically, you will also have a forecast. If you look at the past, we also have a forecast in the past. And if this forecast is better than the normal average, all right, so if it is able to forecast something better than the normal average, then we are going to measure the errors between the forecast in the past and the actual. So what we were proposing and forecasting, sorry, and what really happened.
+
+ So if these differences are lower than comparing to the average, then this is a good opportunity because the standard deviation is going to be lower, and the system is going to tell you, you are kind of there. There are some differences, so we need to cover only for those differences, not from the average to the actors, but from the forecast to the actors. There is not a big big gap. So, in those cases, you can calculate your safety stock, right?
+
+ And the next step is that in supply planning, you are going to have your forecast plus your safety stock. So, basically, it's doing something like this. It's translating, shifting the forecast upwards, and you see that now we don't have an issue. So, let me go back to explain this better. Here, we have an issue because we have the actors.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Excuse me, Victor. Just to differentiate the forecast here, you mean the approved forecast or the statistical forecast? Approved forecast. Okay.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Always approved forecast. So the statistical forecast is going to be only a suggestion, but the approved forecast is the one that should flow to supply planning and to, in this case, inventory planning to calculate this. So in this case, You can see that in the cases that the forecast is higher than the actuals, it's not the best scenario, of course. We need to control that with the bias to understand that, in general, we are kind of in line, not over forecasting, not under forecasting.
+
+ But the bad cases will be when we are in these particular points, we have less forecasts than the actuals. So this is a scenario, and I stuck out the scenario. And here you have another one. And here you have another one, and you see it here. We have many, right? So these are the cases for which we need to prepare. So if we shift our demand by the safety stock, we are going to be able to cover that, right?
+
+ So that's the idea. So here we were near, but as we had safety stock, now we are able to cover. And in many other cases, we are going to be more than fine, but the idea is to cover in which we were in danger, let's say, okay? So the whole idea is that if you apply the reorder point planning and you compare with the forecast plus safety stock, that is going to be basically your stock later, because you are preparing the stock to cover the forecast and also to cover the safety stock.
+
+ If you have the sum, that is the total stock requirement. Reorder point is also a stock requirement, like a minimum line. So if you compare the two and we calculate the average of the blue line, the forecast plus safety stock, the idea is that in general will be lower. So there will be periods, of course, especially if you have seasonality, in which this can be higher. But in general, it should be lower than that.
+
+ So if we see the opportunity in which we can create a forecast that is accurate, and is approaching to the actuals, then that is far better than using a simple average to calculate the inventory policies. Because when you are not having a forecast, basically your standard deviation, what it does is compare the actuals to the average of the actuals. So it's basically basing the whole calculation only on the actuals behavior.
+
+ If we have the forecast, we can base the whole calculation on the forecast zero, that can be much lower. And the calculations, of course, also will lead to a lower overall stock. So that's why we are proposing forecast space in some cases. That's why we want to explore the opportunity here. And this is how it should affect our safety stock calculations. So for you, all this logic that I have here and I'm trying to explain is going to be transparent.
+
+ So basically, the system will check, OK, this is forecast-based planning. Then, well, we will follow this calculation. This is reorder point-based planning. Then we follow this calculation, and so on. And you will get the same results. But behind in the background, you have different way of calculating this because the planning type. So I think that's it for now. I don't know if you are having any questions.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, I can you go back to that. Which one your point the last the last? Yeah, the last one which you're showing. The comparison, no, they combine, yeah, yeah. So. Which line represent the safety stock here?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, you don't have a safety have the forecast plus the safety stock.
+
+UNKNOWN_SPEAKER:
+That is the blue line.
+
+Hector Palacios (ADNOC Group D&CS):
+But I can add the safety stock line. I think that I just didn't add it here. Let me see if it's that simple, like just selecting and copying here. No, it's not that simple. But I can add it later.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+The point is that the safety. Depends on the planning type for the ROP. The safety stock will change? Yes, it will change because it's going to be based on the error.
+
+Hector Palacios (ADNOC Group D&CS):
+So let me show you real quick. In this case, the standard deviation of the actors only should be a little higher. You see the difference are higher, right? So the standard deviation resulting of this will be higher, and in consequence, the safety stock will be higher. Here, in the other one, the differences are lower, and the standard deviation of the error, that is the part that we are not covering, is also lower, and the safety stock will lead to a lower safety stock as well.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So, if the forecast is accurate... Okay, so deviation, what exactly?
+
+UNKNOWN_SPEAKER:
+Standard deviation.
+
+Hector Palacios (ADNOC Group D&CS):
+This is a statistic measure that is measuring basically the variability. If you compare, this is more simple to understand. So, it's compared the actors with the average and is seeing how much is varying across the average. You know, so what is the variability? If you have something very stable, then it's going to be very close to the average. If you have something erratic, it's going to be very, very variable, right?
+
+ And this deviation is based on the consumption.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, yeah. What is the relationship between the safety stock and then the consumption?
+
+Hector Palacios (ADNOC Group D&CS):
+So in the formula that you will have. I think that I failed to put the formula here and in the initial presentations I had it. Let me check if I can. Venture optimization. Let's go back to the past. I didn't want to put so many formulas here. Let me go. Let me find it.
+
+Hector Palacios (ADNOC Group D&CS):
+So it's something like this. Let me copy this around. Let me find one spot for this. So these are the formulas that you have. Sorry if that is too much today. Okay, we have some animations here. So the safety stock calculation internally in the system is going to be like this. You will have the standard deviation of the demand during the lead time. I'm showing you the example. Basically, this is standard deviation.
+
+ It's like the normal measure of dispersion of the actors. So if you have something that is very erratic, the standard deviation will be high. If you have something very, very stable, the deviation will be low. Safety stock will be this standard deviation multiplied by a factor that someone was rightly mentioning, that this is a service factor. So if the service level is high, this factor is going to be higher.
+
+ And if the service level is low, this factor will be lower. So basically, you calculate the normal deviation that you have, the normal error, and multiplying that error, and the safety stock will be that, a factor of that error. And then the reorder point will be that safety stock plus the lead time demand. This is like the textbook way of working, right? Works in a slightly different way, but it's still maintaining the same idea behind the same concepts.
+
+ OK, so when I talk about this standard deviation, I am focusing on that. Yeah, and this is the relationship.
+
+UNKNOWN_SPEAKER:
+OK, OK.
+
+Hector Palacios (ADNOC Group D&CS):
+Is it clear now? Do you have, guys, any other questions?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+In this chart, the difference between the actual and forecast, can you make, is it possible to calculate it in 15% db?
+
+Hector Palacios (ADNOC Group D&CS):
+15% deviation?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, between the actual and forecast.
+
+UNKNOWN_SPEAKER:
+15?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Because up to 15% deviation from the actual forecast, we accepted. I don't know if the other group of company, but I'm not sure.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, you're saying that you have the error should be Is 15 or 50?
+
+UNKNOWN_SPEAKER:
+1.5. 1.5, okay.
+
+Hector Palacios (ADNOC Group D&CS):
+So the accuracy is 85%. 85%. And if the accuracy is lower than that, then you are not using it. Yeah. Okay. I've seen that.
+
+Bastian Osorio:
+Sorry, what happened if the accuracy is lower than 85%?
+
+Hector Palacios (ADNOC Group D&CS):
+They are not accepting that. Should be higher than 85%.
+
+Bastian Osorio:
+But what if they say they cannot use, they don't allow to consume the stock? What is the consequence of, if they say 100 and they consume, I don't know, 150, what happens?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+No, no, no. I mean, that is per month. At the end, they have to consume whatever has been forecasted. But the period of consuming, maybe it will vary. And here we are not talking about consuming the material at all. At the end, what is being forecasted by them, they have to consume it. Otherwise, chemical will expire and then we have to dispose it. But what I mean, for us to not inflate our inventory, we deliver in monthly basis as per their plan.
+
+ And then we will calculate the forecast versus consumption for the year? What was the total variation? What was the total difference between the actual and forecast per month and during the year? To give them an indication if there is more or high. And if it was high or more, why? What is the reason? Because sometimes operation is not something stable, there is a change, consistent change, maybe increase in production, maybe they have shutdown, so the production was drop in this month, but in the next month they will consume the same quantity as per their forecast.
+
+ So the agreement with them is during monthly, their variation should not be more or less than 15%.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, so that is the target, and I understand it. Now, this approach is the recommended one. Always the forecast is improving only considering the actuals. So by only considering the actuals, that means technically behind that you are comparing against the simple average, right? And you are calculating the measures against that simple average. But if you have a forecast and the forecast is better than the simple average, then it's better.
+
+ It's a better measure for the safety stock. So usually, safety stock is not worrying about the accuracy. It's taking it as an input. It's saying, OK, we have a bad accuracy. Let's have more stock. We have a very good accuracy.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Let's have less stock, safety stock as a buffer. So that's the only input I use. Safety for majority of the fast-moving item For us, we don't keep safety stock in our inventory. We keep it as a VMI. So I have a concern with the safety stock because this will increase again the value of our inventory.
+
+Hector Palacios (ADNOC Group D&CS):
+The whole idea of the bridge is to decrease the value of the stock, right? So if you already have a VMI there, then I don't know if this is going to be applicable to that. Because you don't care, right? In that case, if you have the VMI, you don't need to be controlling that much the levers.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Am I correct? Or it's not like that? In general, for chemical, we don't recommend safety stock. Because we are managing the safety stock with the vendor.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, the vendor is doing that. So in that case, again, it's not an ad hoc issue here. They can have as much stock as they want. It's going to be basically their problem, but they will provide to us what we are asking for. Exactly. Yeah, in that case, I think that if you don't keep the inventory, then you just don't need to check the inventory proposals that we have here.
+
+MM- SKEC2 - L08:
+So, Hector, a question here. If AdNoc is putting VMI stock, which means the lead time is very less, and also the consumption is very fast, which means a system would ideally propose really low or no safety stock considering the lead time. You can replenish immediately, even if there is a spike in demand. You can replenish immediately. So if those parameters are input to the system, do you expect there will be a safety stock created as a proposal?
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I mean, we need to check the error. We need to check the deviation, the variability, the lead time, and the expectation, as you say, if the lead time is very low and this is a fast movers, probably the consumption I think at the moment it's not going to matter there, but the latency is very low. The safety store will be very low. It just depends on the service level. Maybe if the service level is still high, it will propose to have something.
+
+ That can be little, but for the given case, it can be considered like, okay, yeah, I don't want to have this additional quantity. So the system can propose, but we need to check numbers.
+
+MM- SKEC2 - L08:
+Yeah, for sure we need to check number, but I'm hoping that it will be in line with what the current would be considering that the lead time is really low and it's very fast forward, which means it should align
+
+Bastian Osorio:
+to the thought process.
+
+UNKNOWN_SPEAKER:
+Actually, a question.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Go ahead, please. Actually, as per procedure, safety is maintained for long lead time.
+
+MM- SKEC2 - L08:
+Yeah, now it's better, much better, thanks.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Actually, for the safety stock as per procedure is maintained for the long lead time item and vital and for the item who are under VMI and LTBA.
+
+UNKNOWN_SPEAKER:
+I think.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+The system like should even like propose low safety stock lead time will be very short in these cases.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, if that's the case, as we are discussing with Rahul, the lead time is one of the main inputs and if the lead time is very low, then the safety stock proposal will be also very low. So we can see the result.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Okay, and one another question. The safety stock will be recommended for both planning, ROP and forecast based?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, that is the only thing that is going to be uncommon, safety stock. So you will have safety stock no matter the planning type.
+
+UNKNOWN_SPEAKER:
+Only safety stock?
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, the safety stock. If you go with reorder point, you have the reorder point and the safety stock and also the max stock. And if you go with the forecast planning, you have the forecast and the safety stock. So you always have safety stock no matter the planning type.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Okay, Hector. Are there any criteria for the items like it should like me to suggest a safety stock or it is for all items?
+
+Hector Palacios (ADNOC Group D&CS):
+The safety stock is related to service level so basically we are saying for the critical items we should have a safety stock and for the non-critical items we don't care so that's the main point. In the safety stock more than a criteria is that well is one the variability of the demand, the variability of the lead time, the lead time, the demand rate, so how much we are consuming, so considering everything, demand rate, lead time, and their variabilities.
+
+ That is part of the calculation. And then additional to that is the criticality impact, the service level. So we are factoring all of this on the lead time calculation. And if you ask me which one should have a, I mean, just based on the on the demand rate, maybe the safety stock is going to be very low. Because if the variability is low, the lead time is low, the demand is low, then the safety stock can be very low or zero by the system calculation.
+
+ And then over that, you can apply also an additional factor. If this is critical, then yes, let's have more than this to avoid any stock out. If this is not critical, then let's leave it like it is. Or have lower, even lower seed stock. But I think that it will become clear for us if we start checking some examples on the system. So we can compare, we can say, okay, yeah, yeah, this is the reorder point that I have, this is what the system is proposing, it's decreasing or increasing, you know, and this is dangerous, or we are not considering the
+
+Bastian Osorio:
+proper Question from my side. I understand that for a lot of items you have, you manage them through BMI, but what if, what if, what for, what is the situation? I mean, all the chemicals are managed through BMIs or there are some chemicals there, they don't have LTPA and nor BMI.
+
+Hector Palacios (ADNOC Group D&CS):
+It's only a portion for what I understand, Bastian. Especially critical items with fast mover items. You can correct me, Gene, you know better than me, but it's like that. It's not that all the items are BMI.
+
+Bastian Osorio:
+Yeah, because in that case, of course, you don't care about the safety stock. You care about safety stock when you are managing the stock. So I think this solution applies more for those items, not for the ones for the BMIs.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Sebastian, since the chemicals are like most of them fast moving, we're covering and we're trying to cover the most of them under LTBAs.
+
+MM- SKEC2 - L08:
+Yeah, makes sense.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Hector, if we have most of the items with the safety stock, how the system will trigger the order patterns like the order quantity or when to order or what's the quantity to order, how this will be triggered? I'm not sure if I got the question but basically you define you define the safety stock level yeah there is a statistical forecast yes so how the system consider the order quantity or the delivery schedules?
+
+ Okay, so that is being told by the forecast.
+
+Hector Palacios (ADNOC Group D&CS):
+The forecast is telling you, the forecast is not a statistical forecast, it's an approved forecast. That's just one correction. So one, the forecast that starts being a statistical forecast, but then it's approved and it's moved to supply planning. The forecast is telling you, you need to have this much quantity quantity in this state. In addition to that, you also need to have this safety stock as a base.
+
+ So basically, the forecast plus the safety stock will tell you which quantity we should have. And then supply planning will tell you, okay, from this quantity, I already have this. I need to source for the additional, the part that I'm not covering, and we'll source internally first to check if another other plans in other companies or in the same company they have a stock to share. If not, then it will go with the PR.
+
+ But the target there is going to be the forecast plus the safety stock. So basically this is the difference. Maybe your target is the reorder point, can be. In this case will be this line, this blue line that will be very depending on the period. Assuming that you have some like seasonality, you know. If you don't, then it's going to be also fairly flat.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+See, if it is a reorder point-based planning, then if the stock touches the reorder point, then automatically the system will trigger the order. Yes. Either the PR or the call of order. But in the case of forecast-based planning...
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The forecast is telling you... The stock with the levels because we don't have the ROP. All the system will trigger the order. Yeah, but supply planning is going to tell you that.
+
+Hector Palacios (ADNOC Group D&CS):
+Imagine that you have a stock initial period. Let's assume that this is the future and this is the future forecast. Imagine that you are on supply planning and you have 60 of a stock and then you have this requirement. It's not going to trigger anything because we are always we are able to cover, right? But in the case that you have less than this, you have 20, then we'll trigger a PR to cover this quantity.
+
+ I think that a better scenario is like we have more, we decrease the stock levels because of this consumption. This is going to subtract from the stock projection. Then we have less, then we need to order more because we need to cover this point, you know? And like that. It's going to be basically on a stock balance if I'm quicker. So it will be your current stock plus the receipts, the POs that you're getting or the PRs suggestion that the system will give you minus the forecast.
+
+ So basically that balance, what I have minus what I'm going to provide plus what I'm going to get. It's just the typical stock balance calculation and the system will try to fulfill the forecast, basically.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+This will be gone in detail during the supply planning model? Yes, in the supply planning.
+
+Hector Palacios (ADNOC Group D&CS):
+Here we are only calculating the levels. So what is the stock layers, the safety stock? We need to explore it for sure. I think that it should be very interesting to show one example with reorder point and one example with forecast base and safety stock and to check how that can behave. We need to do one example so it will be more clear for you.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Before that, Mr. Ali, question to you. So how are you ensuring that the VMA vendor is maintaining the safety stock. What are the quantity?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+We take from them monthly stock report and we do.
+
+UNKNOWN_SPEAKER:
+Random.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Visit to their store.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK, this safety stock will change based on the latest forecast which you receive from the end user.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+OK, so how you are communicating? We ask them to maintain as per agreement, wherever there is an LTBA, of course. This is applicable for a long-term price agreement. As per the agreement, two-month equivalent of finished product and three-month raw material because most of our chemical, I mean the bulk chemical of production chemical is blended locally. 3 month raw material and 2 month blended ready material and tested.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So because the IPP has a capability to. To take the input from the vendor information also OK as input and also based on your forecast change OK automatically it may propose what will be the safety stock to be maintained with the vendor and I think you can take the I mean you can use the feature of IVP. OK, instead of doing everything in manual, so the system will give you OK. What is the real change in the forecast?
+
+ It will propose you what would be the safety stock to be maintained with the vendor. OK, then you can. You can communicate to the vendor accordingly. OK, great that feature will help us a lot.
+
+MM- SKEC2 - L08:
+Yeah, Rahul, please correct me if I'm wrong, please. So you want us to consider the inventory the VMI and propose the revised inventory to be carried at VMI location based upon the forecast and levels we have added now.
+
+UNKNOWN_SPEAKER:
+Correct.
+
+MM- SKEC2 - L08:
+Hector, is there something we can do? Yeah, sure.
+
+Hector Palacios (ADNOC Group D&CS):
+I mean, it's just a comparison, right? So we can get it.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Also, I have one point. For example, once the IBP produced for us the forecast, of course, there is like... If IBP can propose for us, like this type of item has to be under agreements, like LTV and VMI, it will be good, so.
+
+MM- SKEC2 - L08:
+So when you're saying...
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, go ahead, Hector. No, no, I was going to mention that it's one of the open topics that we have from the VRD requirements that we need to find the... I don't know where is Eichu, but I am alone in this room. Can you hear me right?
+
+MM- SKEC2 - L08:
+Yes, we can hear you.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios (ADNOC Group D&CS):
+Sorry, I was going to mention that it's one of the open topics that basically, I think that we received the logic Eichu, so we are exploring. And then we need to configure that also for the LGPA proposals. So let us check the logic. We were taking more care of the core functionality so far, but we have in mind this requirement and we need to check if the system is able to take this logic and to provide suggestions.
+
+ Any logic we have for doing this, the system can do it. It's just a matter if we have the correct inputs on the system, because if there is any part of the LTP a Riemann logic, the point is that maybe some of the inputs that I need to calculate that or to come with a suggestion is not available on SAP. So that's usually the main challenge is that if we want to apply a logic, do we have all the inputs and can we integrate it?
+
+ If that's a yes, then probably it doesn't matter the logic. System will be able to replicate that. Rahul, you wanted to mention something?
+
+MM- SKEC2 - L08:
+I just want to go back to the point from Ali Mohammed. So, Mr. Ali, when you say that you have VMI inventory, are you referring to OFS services which provide you the chemical or is it an external What do you mean by OFS? OK, so basically one of the discussions we had an input where there is an Adnog drilling has a OFS services subsection or department which manages the chemicals for I think on for an offer.
+
+ But it's it's more of a service uh uh contract with they have along with material so I was just checking if it is if it is that section or this you're talking only external vendors no no it is uh it is only for ltba not service contract all right and these are external vendors like the not enough not a different adnoc uh entity right yeah it's external vendor there can be part or maybe they can be also one
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+of the adnok group of company because they are also our supplier and adnok drilling and previously adnok lns adnok food adnok for distribution so you can consider as an external as external vendor because in this case why I'm asking
+
+MM- SKEC2 - L08:
+this is because if it is adnok and it if the data ERP for them, then we can integrate the data directly into IVP so that.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+OK, OK, no, no, it is external.
+
+MM- SKEC2 - L08:
+Yes, and not on one ERP, then the data input has to be manually fed to IVP.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+It can be one of the adnog group company like adnog drilling or adnog distribution, but majority is from external.
+
+MM- SKEC2 - L08:
+OK, noted, thanks.
+
+Hector Palacios (ADNOC Group D&CS):
+We can go ahead. Tim, I just suggest that let's continue so we have enough time.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+I just share some, I mean, copy of the procedure. Maybe later on Jagannath or Morgan can share with you the group inventory procedure. I have it, I have it. You have it, okay. For the safety, for the safety stock because as per the procedure, definition, safety stock is for vital material or long lead item and vital material.
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, and it's using 99% of service level and only a normal distribution. So we are going a little deeper than this. So I understand the point, but let's Maybe they are lighting because I think that in many cases here we are decreasing the safety stock, the reordered point. Let's remember that the reordered point is considering the safety stock inside. So the reordered point is safety stock plus the lead time demand.
+
+ So it's strange to me that even I'm calculating safety stock right now, but in many cases we are having more, less reordered point in total. So let's check the cases and let's see what happens.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+A general question. Now, after implementing, if we find this some formula or some adjustment which is related to inventory, the way of calculation, maybe it is increasing our stock level because of that. There will be a scope to change it or adjust it?
+
+Hector Palacios (ADNOC Group D&CS):
+Unfortunately, we need to do a fine tuning and we are not going to, I'm going to show later, but it's only the approved levels, the ones that you are going to use. So the system, it will suggest many, many things, but if the planner hasn't checked this and approved this, then it will not go for the flow. So it's impossible that the going to increase it because before that, you need to approve it, right?
+
+ So if you are not sure of this, then it's not never going to move to the stage of increasing your stock levels.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Now, I mean, after approval and implementation of the system. And yes, because to know, to know, but I say exactly because you have to test so many real data to know exactly the scenario. Only after we implement after one year, maybe we will be able to measure the result. So in this case, is it possible after that, after implementing of one year, to have fine tuning and modify some of the backend formulas in the system?
+
+ Is that option is available?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I mean, the parameters we know always adjust and you should be able also to the service level. The formulas behind are kind of what they are. You know, so it's not that we are innovating there. They are basically the safety stock formulas and the reorder point formulas that are in every textbook. The system is just taking this and optimizing, depending on the case that we have these different distribution types, and it's going a little deeper than that.
+
+ The formulas, I don't think that we can change that much, but we can change the input to those formulas. And as per the project, just for you to know, after the Goliath, we have six months, and then after the six months, we are leaving. So yes, I mean, you can always change the parameters and the inputs, but after one year, probably the consultants are not going to be here. So we need to take our time.
+
+ Now during the project, and then after those six months, and to really check the resource before we go. So yeah, basically, but let's see. Let's go to the resource team. I don't want to spend more time on the slides, and I want to show you the system. So maybe more questions are going to be clear there. So this is like a very, very high-level process. To be honest, it's also not more complicated than this.
+
+ First of all, you define the service level. As I said, this is a yearly basis activity, maybe. And it doesn't mean that every year you are going to change it. It's just an opportunity to reassess. We are saying this is a minimum frequency for doing this kind of scenario. So it's the service level by risk score that we are defining, basically that. You need to check the inputs. So we can have some dashboards there, and we can check the inputs once we are sure that everything is smooth.
+
+ Then we can run it. And after running, we analyze the results. So I will show you the Excel and some web views that we can have for this. And also we have what if analysis that we can show what happens if we have this service level, or this service level, or this service level, how the reorder point safety stock proposals are going to change. Finally, you have the approval process in which only the approved levels are going to flow into supply planning.
+
+ And if we integrate US4HANA, also are going to flow there, right? So it's by material and combination with location, sorry, material and location combinations. By every one of them, you have the options of considering the new proposals or not. The system will not consider the new proposals until someone says this is approved, okay? So that is the process. Let me go to the system. So we will have two views, one here on the Excel and others here on the web, okay?
+
+ Let me show you the Excel one. So we were saying at the beginning, let's review the inputs. So we have to One we have for historicals, actuals, the actuals. So it's this one, okay? I in this quarter, but this can be visualized monthly basis or yearly basis as you prefer. And here you would have by every combination of material and plant or a storage location, depending on the case, you would have all the information available, historical information.
+
+ So this, and then later, maybe the time when we have access to historical lead time, all the inputs are basically depending on the history and the past. Then you have many inputs that are kind of time independent. So here you have these that are on gray are inputs, and these that are on blue are outputs. So let's see this example here, this one. So you have the demand rate that is calculated by the system.
+
+ You have the lead time. That also will be calculated by the system based on the historical lead time, and this is going to be the expected lead time demand. This is the lead time demand that is going to be just a multiplication between these two, and you get this eight there. Coefficient of variation is like the standard deviation but divided by the average. So it's a percentage. So it's easy to compare, you know, because maybe if you compare the standard deviation of this one with this normal material, that you have below, they are completely different, right?
+
+ Because the demand rate is different as well. So in one case, you are consuming, I don't know, 100. And in the other case, you are consuming 10. If you compare the standard deviation, it's difficult to understand what is the relationship, if this is variable or not. But when we take it to a percentage, so we compare with the average and calculate a ratio, basically, then this percentage you can compare it.
+
+ And regardless of the consumption level, you can say, OK, this is more variable than this one. So this coefficient of variation, very important for the calculation and for the safety stock calculation. And the target service level. So we are defining the service level at high level. But once we have it at higher level, it will check, OK, for this material, we have is not critical. If the segmentation is D, is M, then the risk score is going to be 4.
+
+ So this is going to be done automatically in the system. We only need to have the segmentation. Once we have the segmentation, based on that, it will assign automatically the right service level. That later, you can also adjust if you want. But at the beginning, at least, it will propose the service level that we were seeing on the matrix in the slide. Once you have these main inputs to the system, the system will calculate the proposed safety stock, the proposed reorder point, and the proposed max stock.
+
+ So as of today, don't expect you have max stock because we don't have the economic order quantity. Once we have that, the max stock will be reorder point plus economic order quantity, and you will get that. But today it's not existing on the system, so that's why the number are going to be always equal, right?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Hector, last time what we said we can put some dummy data, OK, and see what what the results we are going to get in the maximum.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, put some data for the economic order quantity. But it's not going to be more complicated than this. Sorry about missing that commitment, but if this imagine this is the economic order quantity because I can put a nonsense here, right? Whatever number because this depends not on. It's not that depends on the inputs that I have here. It relies on having the order quantity, order cost, and the holding cost.
+
+ So it can be very difficult.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I'll give you the ordering cost.
+
+Hector Palacios (ADNOC Group D&CS):
+Go back to the economic order quantity formula. Sorry, can you repeat?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, no, we can put some value. Can you open that EOQ formula?
+
+UNKNOWN_SPEAKER:
+Formula.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, but I think that if we go that way, we can spend some time. Let me prepare it for the session in the afternoon.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Please do something, because we We wanted to see what is the proposal for maximum here.
+
+Hector Palacios (ADNOC Group D&CS):
+But it's just because always see see when I replenish, I'll replenish to the maximum. OK, yeah, I understand that the point is that even if I put a number is not going to be make sense. It's just going to be assumed. So in this case this is what going to happen. So you have your queue. I will put a number that is going to be nonsensical and I have a 10 and the proposed maximum is going to be basically this plus this number than this.
+
+ So I can prepare used to show you in the afternoon.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+On his. So OK, this example. OK, my demand rate per month is 222 numbers OK and then the lead time is three months. Let's say 333 and a half months. My safety stock is. Is enough for how many months?
+
+Hector Palacios (ADNOC Group D&CS):
+Safety stock. Here it is proposes 9 right?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yes, as a as a minimum.
+
+Hector Palacios (ADNOC Group D&CS):
+This is enough for how many months? Is in general is the is like time independent. You have safety stock always as a base like a minimum quantity.
+
+UNKNOWN_SPEAKER:
+So let's check the example.
+
+Hector Palacios (ADNOC Group D&CS):
+Let's not stop here because I seen that the charts are going more in line so let me take this example and to the charts and we can check one more thing this risk score is 4 that is 80% only
+
+Aboobacker M. (ADNOC Gas - PD):
+only 80% are we going to keep for even 80% 80% service level this safety stock only 99 we are you know currently we are working with the known 99% vital and those items only they are keeping safety stock even
+
+Hector Palacios (ADNOC Group D&CS):
+for four four five I mean only one and two okay we can expect let me show you a system and then after showing you a system let's discuss about that give me one second because otherwise we are going to spend too much time on the excel and I think that the value is right here on the web so let me show you one thing first. So in the web, we have this functionality in which we can review the inputs. For example, I'm just giving you right now some examples.
+
+ So I have some tables that with map charts are telling me these are the lead times. It's just to spot if you see something really, really wrong right away. You can spot it here and you can review. So you can click here, review the inputs, and you can check which combinations are having this high lead time of 16. So in this case, it's just one. For example, it's a refrigerant, and we have 16 months of lead time.
+
+ That means that this can have higher safety stock and reorder point calculations. Then for the service level, you can also have a matrix. So you have here the segmentations, you see, and a business critical, yes or not, BED, HTML, and the movement type, fast, a mid, and so on. And this is the recent score that you have related to that matrix as well. Here, something that I wanted to put an example where it's right away wrong.
+
+ So you know that this is critical. And there is still some example where we have a service level of 70. So that is a mistake, for sure. So let's see where it is. I click here, and it's showing me that In this combination, we are having a bad definition of the service level. It's just something to show you that we can quickly spot with some charts where are the bad inputs, and we can correct it appropriately.
+
+ Once the inputs are fine and you use these dashboards to deep dive on the inputs, I'm not expecting you to spend a lot of time here. It's just to spot what is obvious, what is a simple site, you can see, OK, this is wrong. But then after doing this easy task, you need to go to the resource. So this is the view that I wanted to get on, because here is where you have most of the insights. So let me pick just one example to, I think, here we have it.
+
+ So remember the view that we have on the Excel? I have here on the chart that view and also I have many charts that are going to help me to analyze the results. So I'm taking one particular combination of material and location here. The segmentation is fulfilled automatically. I'm just putting here these filters. And here we have some interesting views. So first of all, the one related to the inputs.
+
+ So here we have the inputs. Here we have some outputs. And here we have information for approving. We are going to come back there. Then here you have the master data. And it's telling you we are using the gamma model. This is a non-critical part. It's desirable, and so on. Also, it's telling you this is the month pattern. It's continuous. And the risk score is 4. That's why you have an 80% in the other tab here.
+
+ Here, this is the one that I like the most. So, here you have many things. First of all, you have the actual usage. So, this is how much we are using in the history. Then, the lead time demand. So, it doesn't matter that I have this consumption here. What matters is what is the demand over the lead time. So, if I have a lead time of maybe Let's see what is the case here. We have a lead time of three months.
+
+ Then I'm going to assume the demand over the next three months. So in this case, it's 18. In this case, it's seven, and so on. The periods that you have here are not necessarily consecutive. It's only showing me the periods where there is some of demand. So that's why you can jump from November 21 to May 22. It's only showing the events where we have consumption. So these are the peaks, basically.
+
+ This is what you needed to have. And what do I have here? Your current reorder point is the line that we have here. Let me make it a little bigger, maybe. This is your current reorder point, 50. And this is the proposed reorder point by IBP. And this is the safety stock. This is the current max stock. And so on. You have all the information that you can have for comparing. Then, in another tab, you have what is your target service level, okay?
+
+ Then you have an estimated historical service level by ADNOC, here in blue and dark blue, and by IPP. So, current versus proposal, basically. So, basically, you are saying, this is my new reorder point. If I compare is to the historical values in how many times I was able to fulfill the demand, in how many times I was enabled. So basically, 66%, that is close to the 80% that we are defining, is happening.
+
+ And in your case, it's 94%, because you have a much higher current reorder point. Then you have the reorder point depending on the service level. So you see here, for 70% service level, this is your proposal. If you have 80%, this is your proposal. And you increase until this is your proposal for 99%, and this is your current state proposal with the service level that we are putting right now. So that in this example, our service level, let's remember, 80%.
+
+ That's why it's matching. But the system is giving you all the options. You see, if you increase the service level, then you can have 35, 47, 74, and so on. That's the main point. So in the final one, just to finish the tour, this is the conversion of the reorder point to value. So we have the moving average price. We multiply the current reorder point by that, and we get this value. And we have the same for the proposed one.
+
+ So you can compare also on value. So these are the charts that I was using just to do the analysis of this. And I have many examples. This is just one of them. So if we analyze this example, we are saying that as this is a desirable.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Can you go to the first chart, please? This one? The top one, yes. On the left side.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Just slowly, because I got lost with the several charts. I don't know if the other team are following.
+
+Hector Palacios (ADNOC Group D&CS):
+No, no, I can read it. Don't worry. So I have here several things. First, the actors. OK. This is the actual use. Yes. Let me show you quickly one thing here that maybe is going to be clear for everyone. If I do it here, it's here on the filter. Remove. Move. 0.
+
+UNKNOWN_SPEAKER:
+So this is the real behavior.
+
+Hector Palacios (ADNOC Group D&CS):
+It's intermittent, as you see right here. This was probably misclassified. I need to check that. But it's intermittent. And basically, you are having consumptions in May, then in June, October, and so on. And what matters to us is what is the consumption over the lead time. Consumption that we have in July or in October, I care about much more on what happened over the lead time, right, because that is the main input for the inventory optimization.
+
+ So over the lead time, we have indeed 18 in this case, because in the next three months, if you can see May, June, July, this is – it's on week, by the way, the calculation. I'm showing you in months, but in the background, it's happening on week. So, we didn't have more consumption. But here, for example, the real consumption was indeed – let me make it bigger so everyone checks – 2. And if we check on the next periods, we also have 5.
+
+ So, the demand during the lead time in this case was 2 plus 5. That was 7. Here we have another example in which the demand – let me One second.
+
+UNKNOWN_SPEAKER:
+For example, if I was having a maximum.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Maximum stock. Now, how long we have to see how long it took the historical to consume this quantity? And then compare it to the lead time, because from the time we order for when it's going to be delivered. So this this kind of projection of the stock as is consumed historically is it calculating yeah it is calculating the historical consumption for this quantity uh in how many months or how many years was consumed and combining it to the lead time and then based on that it the reorder point or what?
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Here, it's not checking the historical forecast, it's just checking the historical demand that you have and the lead time that you have. In the best case scenario, this also will be the historical lead time that we had in that moment. The historical real consumption?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, real consumption.
+
+Hector Palacios (ADNOC Group D&CS):
+Basically, it's telling you this peak because This is what it matters to us. It's not that I have in this month 24, but if you assume this 24 plus the next month, that is.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So the bars are the lead time. And it is all for one item, no? So here I have 7, 5, 11, but the maximum is 54, which is too high, maybe because of different reason, but the average is between 5 to 11, 9. Yeah, yeah. So let's see this example.
+
+Hector Palacios (ADNOC Group D&CS):
+You have 24 consumption, then you have 12 the next month, and then in two months you have 18. So if we assume the demand over the lead time, it's 54 in this case, you know, because assuming this one plus this one plus this one, so that was peak. During the lead time, you cannot do much, right? Because it is what it is. You need to wait until the next replenishment. So you need to be prepared to have the demand that is going to consume during the whole lead time.
+
+ And that's why we are considering those peaks in order to drive the discussion, not the particular demand on that period, but what's the demand of the next three months in this case.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So here it is considering the maximum lead time?
+
+Hector Palacios (ADNOC Group D&CS):
+It is considering The average right now, because that is the only input that we have. But my plan is that when we integrate the historical Lipton, I can put that into place. So if the historical Lipton here was exactly three months, we are going to use that. But if it was two months, let's use that.
+
+UNKNOWN_SPEAKER:
+So that way we can see also what is really happening.
+
+Hector Palacios (ADNOC Group D&CS):
+So the best results are going to be based on the real history, right? So if we have the real consumption, the real lead time in the past to calculate what was the demand over the lead time, that's the best possible scenario for us.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Okay. Can you take any real material from, I think, sub was implemented in October 2020, and at least we will have three years consumption for one item?
+
+Hector Palacios (ADNOC Group D&CS):
+Like what those were suggesting? Coming history from 2020. Maybe the screen is not big enough.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+So this item is real from ad hoc history? Yeah, it's real.
+
+Hector Palacios (ADNOC Group D&CS):
+This is data that was shared by Bignesh. We were also complementing on our side, KPMG extended team was helping me to get this information in place about what is the current reorder point, what is your current maximum stock, So that is the base of our comparison, okay? But in how many items you tested? We have, I mean, we're like 100 items and combinations like there were like 300, I think.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+I think that maybe will not be enough to give you the real picture. Like I remember Dos was suggesting yesterday to test in more number of item that will give you the average because if we limited item maybe they are from one company, maybe those items are from the same nature. So you have to see different material from different class which have some desired, some vital, some different class item from So we have examples.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Let me show you examples. I know that the most data we have, so we can see consolidated results, is going to be better. It's going to take also some time to get, because we are talking about 18,000 items, and we need to get the information for many, many parameters, like not only the materials, but also the reorder point, the lead time, the demand and so on. So it's not something that we are going to get from one day to the next one.
+
+ But yes, we are going to be working after this session to get this information and to put it on the system and to check. But what I want to show you right now is let's check the functionality, let's see some examples, and let's see if this makes sense to us. So you have all this analysis So you can check your inputs on the master data, on the GIF years, your different charts to compare the results, to try to get some insight from it.
+
+ But here on this view, you should focus more on the exceptions. So for that, we have one functionality that is called alerts that will bring visibility into the cases in which we are proposing big changes. So if you click here on the top, you have a ring icon, and you have many others. So some of them, for example, reorder point exchanges review. So in this case, I was checking, I have, OK, these many cases in which the system is proposing something different.
+
+ We can click on any of them, and it will take me to a particular example. So in this case, IBP, I think, is proposing something less. But usually, you're proposing your current reorder point is 10. And if we say no, with 4, we are more than enough. And if we check historically, yes, with 4, it was more than enough. So this was the current reorder point. This was the proposed reorder point. So IBP, in that case, is optimizing.
+
+ The service level for that material was 90%. This is how it would be with different service So with the lowest one, it was 3. 80 and 90, the same. With 95%, 5. And with 99%, you would have 7 units. So you can see that what-if analysis there. This is the proposed value. Again, the rear of the point, you have this value, 10,000 dirham. And here you have 4,000. Do we have access to this dashboard? Yeah.
+
+ You want to play? Let me check if you are having the sharing information. Yeah, please.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+This was requested to give us access to all of the team. Yeah, for sure. And then we'll appreciate also if you have a catalog or guideline how to use it. Because it is a new system for us. Just if something or you share the presentation also. We need more time than the workshop to understand how it is working.
+
+MM- SKEC2 - L08:
+Yes, we will share the details of the presentation as well to the team so that you can spend your time if you have free time accessing system looking at anything else then if you still have more questions, you can
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+get back to us through emails for teams.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, definitely. Yeah, I was trying this link. It's not working. Not working, um, let's spend some time on the next session.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Yeah, it's working.
+
+UNKNOWN_SPEAKER:
+I'm just trying to. Let me share one. This one right.
+
+Hector Palacios (ADNOC Group D&CS):
+So OK, is showing you no data. What can it be? Maybe you're missing some key figures. In the meantime, let me do the following. Between the two sessions, we will have like one hour. Let us check internally with Bastian what is the visualization issue, and then in the next session we can come.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+We have to use, because some We are asking for username and password.
+
+Hector Palacios (ADNOC Group D&CS):
+No, you should only put the email in this case should be I as your email and password.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK, I tried this.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+It's coming. It's coming now. See I can get.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+It's coming, just not familiar yet.
+
+Hector Palacios (ADNOC Group D&CS):
+See here, yeah.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yes, I'm also getting this.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+It is slowly loading.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Someone is seeing something.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+Vivek, what about the remaining members? Some of them, they don't have yet the access. It's loading, see? Yeah, because we have all the cases. I mean through still the IBP sub it's not showing there.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Excel I have not gone through much.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+I think the first day since the first day we highlight that some of the members who's attending this workshop they cannot use the Excel.
+
+MM- SKEC2 - L08:
+Excel is not available, right? Emma, that's the point you're saying. Excel add-in is not available. So even the link also.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Yes, I think micro soon we need to I have some some problem also. Some macro is not working. We need to enable it.
+
+MM- SKEC2 - L08:
+Yeah, so so I think in one of the workshops we shared the link where the so we have added this Excel as a part of the service request. You can trade the request and get it installed. So we'll share that link again with the team so that whoever is not having the Excel plugin can read the request to it and get it installed. We've made this application available within AdNom. Vivek, can you support us in this regard?
+
+
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+I mean how we are going to raise or if you will raise in behalf of all of the member who's involved in the workshop.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Come again, I missed it. What I what Rahul said. OK, we can do it. What we have to do Rahul?
+
+MM- SKEC2 - L08:
+We just need to raise a request for in the application. We'll share that link of the service request, what is needed to be raised. And it will get deployed. So what we did is, at the start of the workshop, we had this list identified of the focal point for every agency. So for one time request, we had to raise the request for the application to be deployed. For some of the people, it did not get deployed because of some IT issue of the machine compliance, the physical PC compliance, there was some issue.
+
+ But for most of the users, it got deployed, and they were able to access. And for others, all we need to do is raise a request for this individual access, and they'll get this application installed. So let me share a link.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Raise a request, like any ticket or something?
+
+MM- SKEC2 - L08:
+Yeah, ticket, ticket. Let me share the link where can be raised and it will get deployed immediately on your PC.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+Yeah, I might see meanwhile just those who doesn't have no give us the number of users. So maybe once he shared the link we will rise it.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+OK, great thank you. We already shared the list of employee IDs in the later session also. Same Rahul was collecting the same request.
+
+Ahmed Mahmoud Al Hammadi (ADNOC Refining - HQ):
+I will I will. I will put anything in the chat box for books. It's there already. Who doesn't have the access? They have already mentioned their name there and I will put something there or I will share with you the meeting chat and you can refer to it. Yeah, yeah, sure. Thank you. Thank you. Okay, Tim.
+
+Hector Palacios (ADNOC Group D&CS):
+So in the meantime I think that Vivek was sharing but I need to share with you some filters and stuff that today you don't have. Let me after the session work with Bastian and to check what you are missing so you don't spend so much time loading and things like that. Because given the amount of data, we need to put some filters at the beginning. But yeah, let me do that. And then in the second session, we can play around a little bit with the system.
+
+ Let me continue with the explanation. So on the alerts, you see that we have alerts whenever we have big changes, like we are proposing a new reorder point, is that too different to what we already have? Then if that's the case, let's highlight and let's check the proposal. Then we have some alerts at the historical level issues. So maybe the target is not what happened in the past. So in this case, we don't have no alerts.
+
+ It's fine. So whatever proposal we are doing right now is in line with the target. And finally, we have pending approvals. So also for approving you can check one by one here, like the highlighted ones. We can click here, and we'll take you to the example that you need to check. Give me just one second, please. OK. So in this case of the alerts of the pending approvals, I don't know why it's taking It shouldn't take long because it's just one example.
+
+ But basically, here we can have what we are discussing about delegation of authority. So in that case, I can filter which alerts the reviewer needs to check and which ones the other approver needs to check. So if we have different levels of approval depending on the value of the change that we are proposing, we can do that. And one person will get some cases your person is going to get on other cases.
+
+ So we can do that. This is just one of the examples we have. So in this case, the reviewer can come to the system. It can check the examples, analyze the results, and say, OK, this doesn't make sense. I can put a task for the planning. So I can put review the gas test in the app So basically, I can create a task. I can put a description of what I'm seeing right here, why it doesn't make sense. I can put a date for finalizing this task.
+
+ This is for you. I can say, please, for tomorrow, let's have it. This is a high-priority because it's a high-value item, and we can assign that should be responsible for this. So, in this case, I can write directly here and I can put, for example, Jaganath and I can select and create. So, now that this is created in Jagannath, we will see it in this tab. I also will see it because as I put the task, I can have it here, you know, and Jagannath also will have it there.
+
+ So, imagine that if was an old task because I want to change the screen. So when I click on that task that was assigned to me, the system will take me directly to that particular example and will show me what I need to review with the filter already in place and so on. So that's the value added. So you can focus the review into that particular case.
+
+UNKNOWN_SPEAKER:
+OK. So basically, that's the case.
+
+Hector Palacios (ADNOC Group D&CS):
+So basically, that's the way of working, if you think about it. The system is going to propose. I can come to this screen and to check the alerts that we are going to put in place. After reviewing all the alerts, I can finish the process, basically. If something is not making sense to me as a reviewer, I can give it back to the planner by adding a task here. The planner will check it, and if he completes the task and he aligns the inputs and says, okay, this proposal is better now, he can close the task and the reviewer can check again before reviewing.
+
+ All right? One case that I want to accept, I can come here. You say, well, this is the current reorder point is 24, but this is way to have to what historically has been happening. So the maximum we have is five, but the proposed is five and the current is 24. Let's say I'm accepting this change. So I can come here to the reorder point approval, I put a number, I say And this number that currently is 24, the approved pre-order point, because it's taking the current one, once that I put the number, it will check the proposal.
+
+ So the system is updating the numbers. Sorry, I didn't know what. Let me check again. I think that it didn't take it properly. OK, right there. Filters. I recently tried to move to the another one, but the proposed reorder point in this case is 14. The current reorder point is 25. I decided to change to 14, so I put a 1 and I get exactly that reorder point.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+So that way... What about the outstanding PRs, POs, retained items? Have you considered it?
+
+Hector Palacios (ADNOC Group D&CS):
+Here, the That is more on the supply side, planning side. So when we talk about the PRs, the projected stock based on the real stock that we have right now is something that we will see in the supply planning. Now, if the outstanding POs and all that information can be useful for you to check here and to take a decision, we also can take it here into this screen.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+That meant for any outstanding to be considered here in the proposal level, right? And for example, if our requirement is 24, and I have ongoing order with 50 pieces so that only the calculation of the limits will be already adjusted immediately or what the alert will come to the controller to inform him that no no need for any extra quantity because we have 123 or what exactly we need to be considered here in the proposal level, right?
+
+ Will happen here. Is it a dynamic updated here for the levels based on the what in and out?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah I think that we are mixing a little bit so in this part what I'm showing you so far wave one we are focusing only on on checking the levels and for checking the levels I don't see I don't need to see what are the PRs in the future or what is going to be our subprojection the only thing that we need to to see is to basically check what happened in the history. So basically, on these historical values, I can tell you historically, this is the behavior.
+
+ So we should have this level or another one. But what you're saying is important, because then in supply planning, when you have in supply planning, you will see everything. You will have, if you have a forecast, you will see the forecast. If you have reorder point-based planning, you will see the reorder point. The safety stock is going to be there as well. The PRs. The outstanding POs, STOs that you can have, the current stock levels, the stock projection that we have using all of this information.
+
+ So everything is going to be there. So we can calculate the stock projection. And if you need to raise a PR, it probably is going to be a similar process like this, right? So you will see the PRs. You will see, OK, this is the demand. This is the outstanding, the current stock levels. You will have all the information in order to take that decision, if you want to approve that. So it's going to be fairly similar, but in the next wave, wave two.
+
+ So let us build something very similar to this to show to you, and we can discuss further there. But here is more about checking the historical values, and to see the reorder point proposals, or safety stock proposal, max stock proposal, basically the inventory level.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Well noted. All you have here only consider the past consumption. Yes. And not consider also the installed quantities of the equipment. How many pieces per equipment? For example, I have one equipment with five pieces, and previously they are ordering abnormal quantities, which is not correct. Have you already linked with that bill of quantities against the equipment? Each equipment, we have a specific about their equipment that as we are recommended by the manufacturer or the OEM, that we need only five pieces per quantity for this line item.
+
+ And we observe based on the bus, we are ordering abnormal quantities, not tallying or not match with the bill of materials, which is wrong. Sometimes we are suffering with that with the end user. We inform that end user why you are raising a lot of abnormal quantities. He said, no, no, by mistake. He said, OK, we informed them that based on the system analysis, you have only two equipment and all you need four pieces, no need for extra quantity.
+
+ What is the reason here? You have this huge quantity. He said, oh, no, sorry, by mistake. I'm raising this one because this is one of the pain points that we are suffering with the end user regarding the building materials. To link at least the uninstalled quantity with the proposed level. If the end-user need abnormal quantity, we need to at least send something, message or alert to the end-user that, okay, this is the proposed quantity based on the previous usage, but based on your existing equipment, no, something different here.
+
+ Are you sure that you need this quantity? Yes, we need it. Approve it. At least we need some work for that. And also the team here, if you agree with me, we need to hear from the team here also and if they have any other point also. Aaron, Aboobacker and the team here also.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I agree with you and I want to add something. If you can also provide a dashboard, like what is forecasted and how much user used consumed item for the forecast. Same thing for the shutdown. How many like reservation have done and how many utilized items from this shutdown?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The same points, even in the demand planning stage itself, we have highlighted to include the installer quantity and the reservation quantity for the IPv4 tables?
+
+Hector Palacios (ADNOC Group D&CS):
+Yes, to mention shutdown should be separate to what we are recommending here. This is for the planning, the maintenance purposes and normal maintenance, let's say. We are proposing these levels of stock in the case of shutdown turnaround should be another line. I understand it's another team. This is what I understand. So if I'm wrong, correct me. But we have a different team, and we should work this in some parallel fashion, not mixing the resource.
+
+ So that's my understanding right now. And related to what you are saying, yes, there is. Yes, I mean, the installed quantity, I understand that it can vary over the time. So we want to take this into consideration. So whatever proposal we are doing right here, It's telling me as well what was the installed quantity before, and maybe if I'm proposing more now, it's because installed quantity is higher as well.
+
+ Let us check that input. We need to check what is exactly a source of that information in the system. Based on that, we can adjust the resource here so we can propose more in line with the current reality. Because as of today, as I'm doing This is assuming that in the past it is reliable. But if in the past we had less installed quantity, maybe that is not a completely good approach. We need to normalize by the installed quantity before proposing this.
+
+ So then the future resource are going to consider what is the current situation as well. Using the historical resource, but also considering the installed quantity in order to propose the right safety stock level. And also, we need to do the same for the forecast product. So yeah, let us take that input and work on it.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Very good. I can see there's one more session planned in the afternoon for the chemical.
+
+Hector Palacios (ADNOC Group D&CS):
+So once it is completed, what is the next? So far, we have unit testing, and then we don't plan a session yet. I'm not saying that we are not going to have it. I will suggest that if we can have more sessions before ASIT is better for us as well.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+So we are receiving this content feedback from you guys. So let me add to this.
+
+MM- SKEC2 - L08:
+So Jaganath and team, right now what we are having having is kind of validation of the first discussion where the data we have from your system, we are validating it in terms of what we've discussed, showing it more to the system. We also provided access so that you also can have a hands-on access. While we are working on integrating the entire set of data from S4 HANA to IVP, we will have sessions planned for independent one after another.
+
+ We will also have sometime in future the similar session for supply planning. We expect that before the supply planning session, most of the data should be available integrated so that the supply planning sessions would be with more data, almost all the data you have. For the benefit of explaining, we'll use a few materials, but the system should have most of the data from your SAP and in between the supply planning session and the this sessions we will have with plan from ad hoc sessions to talk about the open points and feedback where we need where we have additional things to be demonstrated.
+
+ We can have those additional sessions in between.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+The validation, what do you mean by validation now? Rachel in this in this demonstration.
+
+MM- SKEC2 - L08:
+So so what we are saving is whatever we have configured we're sharing it right and you're providing is the feedback so that's the validation we are seeking that okay this is not correct I need this I need that you need to look at you so so that's what we are doing right we are we are showcasing what we have done in igp and we are we are taking the feedback from you that's the validation what we are doing
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+no no we are not validating any output here right so no it's not providing no no we are not right validating any results of the IPP. OK, unless we saw the real data. OK, that is one thing. Still, I'm not sure about the what. What do you mean by validating, but but we are seeing we just saw what you design based on our input. OK, we can. We can able to see some graphs and this and that, but data part we are not validating any of the results.
+
+ OK, unless we have that real data.
+
+Hector Palacios (ADNOC Group D&CS):
+No, we don't expect that. I think the report was closer to saying the validation of the functionality, not of the data that is inside. It's too early for us to talk about the validation of the data. We need to integrate first. So, yeah, it's just to have this feedback from you, Jaganath. It's important for us because as a tree, we can grow in any direction. But if you are giving us contact feedback, we can grow straight up, you know.
+
+ So I think that it's really important you have these instances to show you this, guys, this is what we have today. Are we going in the right direction? Do we need to do any adjustment?
+
+UNKNOWN_SPEAKER:
+And that is very valuable for us. So, yeah. Thank you. Yeah, okay.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So, Raghul, any idea when we can have at least those 8,000 records shared by Isha. To see see the results, the output.
+
+MM- SKEC2 - L08:
+Uh, the the dealing with us of the chemical materials you've shared. Yes, yes, yes, yes. So so let me get back to you maybe by tomorrow and on when we can have this. I need to align internally the team on how much time will need to integrate data. That's what you're looking for. And we'll get back to you, Juan.
+
+Hector Palacios (ADNOC Group D&CS):
+So again, given the time we have, three minutes, I don't think that we are able to do much in those three minutes. Let's leave it here. And let's continue in the afternoon. Hopefully, we can play a little bit with the system there. So you can check by yourself. You can play around. And we can check some resources that the system is giving us. And you can say, OK, this game makes sense or not.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Hector Palacios (ADNOC Group D&CS):
+So that's it, guys. I don't know if you have any question that I can answer in these minutes.
+
+UNKNOWN_SPEAKER:
+Otherwise, we can drop.
+
+Mohamad Naamani (ADNOC Group D&CS):
+Thanks, everyone. Talk soon.
+
+MM- SKEC2 - L08:
+Thank you. Perfect. Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you. Thank you. Thank you. OK. Thank you.
+
+UNKNOWN_SPEAKER:
+Hmm. You
+
