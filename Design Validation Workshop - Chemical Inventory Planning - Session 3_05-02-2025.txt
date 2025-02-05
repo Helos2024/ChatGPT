@@ -1,0 +1,1094 @@
+UNKNOWN_SPEAKER:
+Abu Abdullah, how are you?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Hector will be joining.
+
+UNKNOWN_SPEAKER:
+Bastien?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, probably, but I'm taking this session.
+
+UNKNOWN_SPEAKER:
+OK, OK.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So just we'll wait a couple of minutes for key users to join.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, on our side, at least we are ready to go.
+
+UNKNOWN_SPEAKER:
+OK, noted.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Once the queue is joined.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+you you Should we start? What do you think? Are we missing? Anyone that should be here?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, so do you think anyone else should be here or we're good to go? I see Ali and mom. I'll. I'll pull a couple of guys. Let's see where you can start, I think.
+
+UNKNOWN_SPEAKER:
+Enjoy. All right.
+
+Hector Palacios (ADNOC Group D&CS):
+All right. Let's start.
+
+UNKNOWN_SPEAKER:
+Give me one second.
+
+Hector Palacios (ADNOC Group D&CS):
+I will share the screen again. And we can start sharing. OK, Tim. So I'm sharing my screen again. I just wanted to show you JagerNet based on the request you had just before in the last session. I added a dummy value right now, like economic order quantity. I decided a simple rule, like let's do the economic order quantity like 50 percent of the reorder point, just to put some number there. And you can see down there later, the max stock proposal is going to be always the reorder point plus the economic order quantity.
+
+ That's the formula. And it's aligned with the method receivers that we have. So just when we have this economic order quantity, IVP will calculate simple by adding that quantity to the reorder point. So we were checking some examples here on the web. Let me show you about the service level that we are using today. This is the definition of the service level. Have the different risk scores, as we were saying.
+
+ So the first priority is having up to 99% service level, then 95%, and then we are going down depending on the segmentation. So when I say here on the process that we need to define the service level, it's basically this. So it's just to set up these target values that we have by risk score at a high level, so maybe on a yearly can check and you can reassess, you can increase the target, you can work with that.
+
+ But it's not a task that we, it's a kind of a strategic input more than something that you are going to do on a continuous basis. Then when you have the risk score, the next step is to check the matrix. So depending on the matrix that we have, the one that can really we have defined as this. We'll check the segmentations and we'll assign the corresponding resource score and consequently we'll assign the corresponding service level.
+
+ So maybe let's check some resource that we have with these service levels. Here I have an example of something that is VC part. So it's critical in theory, right? So for that one we are assigning target service level that you can see here is 99%. If we check the recommended stock by ABP, you have 20 and the current reorder point is eight. So if we check the chart and we see the historical peaks, basically this is the lead time demand.
+
+ So we have seen that the maximum stock on the data that I have today is 17. So the proposed quantity of 20 is basically an additional buffer, so we are always over the expectations, right? In this case, what I see on the current reorder point is that it's 8. It's more in line with the actuals number, but not with the actuals over the lead time. That is an important quantity, because here I have the money in two months consequently, and the lead time doesn't allow me to reorder because we have a lead time of three months.
+
+ So then I need to consider the demand over the next three months always, not only on this particular point. So that's why IBP is calculating, OK, the maximum demand that you can have over the lead time is 17. Let's put a proposed reorder plan of 20 in that case. And here, if we have eight, we would fall short.
+
+UNKNOWN_SPEAKER:
+So if we check.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, because you are taking example of BCB. Yes, for business continuity. Yes, for business continuity. I don't know if other group of company we hear most of the time we don't put minimum and maximum for business continuity and the quantity and the business continuity itself is decided by business continuity team.
+
+Hector Palacios (ADNOC Group D&CS):
+OK.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+who decide, okay, the end user recommend, but the final decision is for the end user, I mean, the business continuity committee.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+That for me at least sounds like new information. So, we have a separate team for checking these items.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yes, it is within inventory, but it is in line with business continuity team. If suppose end user recommend this material to be in business continuity, we don't take only his recommendation, but we need an endorsement from the business continuity team to review it and then decide based on the agreed parameter for what item to be considered for business continuity and how much quantity we need to maintain as a stock.
+
+ Also the PR in the procurement cycle, also the PR for business continuity at initial time when it is created, it's done by inventory, but replenishment PR is done by end user. End user? Yeah. So we don't replenish it in regular like the other MRO item or other chemical. Since this section is for chemical, in chemical there is no business continuity material. It is either desirable or in other status, but should not be a business continuity because all consumers are not business continuity items.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Is that correct? We were getting this information from SAP. So we ask...
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think here, Ali, regarding the business continuity items. In SAP HANA, we have indicator there, SAP HANA, to flag that this item or whether to be linked with the business continuity item based on each company business. So that for each company, they can decide whether this item to be business continuity. If yes, they will flag it, the subsystem. If not, then it will be unflagged this item so that we can exclude it from business continuity items.
+
+ So that here we have a dashboard, we'll have a team here to follow up according to that flag or indicator without the business continuity. We have in each, as I think, and I think also the Inventory X and S team, they are working on it, regarding the business continuity. We have a follow up with that one so that we don't have regarding the business continuity, whether this item can be maintained with Elefis or without Elefis.
+
+ We have a close follow-up with the end-user and we have a declared system for this business continuity item. Regarding the criteria, how this item can be classified as a business continuity, I think maybe Tosh can help us regarding the criteria to identify this item as the business continuity.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So this basically each company have the different approaches, you know, because some company they have separate team crisis management team who decides the business continuity item based on the business impact analysis. And also some companies they have a separate business continuity team along with operation and maintenance. They are deciding which items to be flagged so it has items, even consumables, spare parts.
+
+ Some company have some chemicals also. Mainly for onshore, they have a lot of most of the items are related to the tie in. So each group company follows the different methodology and philosophy. But as you mentioned, it is mentioned clearly flagged in the ERP. So what are those items are PCP? Using the business part flagging.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+OK, that's well noted.
+
+Hector Palacios (ADNOC Group D&CS):
+So if your company you don't have it as business continuity, then it will say no. Basically for all the items on chemicals. And we will not assign a very high service level.
+
+MM- SKEC2 - L08:
+So we are sending Hector one point. I just want to go back to one point with early mentioned is that the PR for business continuity is raised by end user. What do you know?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+No, no, no, no. That is my inventory. Not by the inducer.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+It's a stock item, so inducer will not able to do that. No, no. This is where the procedure I was reading the procedure that business continuity replenishing PR is raised by inducer. Maybe this direct material, maybe direct material for business continuity. Or is it? Direct or stuck? No, no, it is material.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Yes, I if the actual material. Yes, my brain and user for stuck item biometry 100%.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah, now it is all a stock any but Stock is maintained under our store.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+But replenishing and maybe maybe you can check with the of the large every that guy who is Uh, following up on the business community is the one who is raising the PR.
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+I know that OK, please check with. OK, so I will recheck it.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I will recheck it, but as per the procedure is just like this. No, no, no, no.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+item not non valuated. Is evaluated stock item, so it is different by inventory. I know I know this. Let's let's continue, please.
+
+MM- SKEC2 - L08:
+Alright, so we are still continuing. There is no change in our approach. I'm just making sure we are.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, so this is just one example of business continuity item. So as you see is going to provide the highest service level. And in this case, the different service level from the 70 until the 99 is posting the maximum, this one. This is the one that we are taking. The maximum recommendation possible. Then let me check if we have an example of VED. Here we have a vital item. This seems to be an easy one and we are pretty aligned to what the current levels are.
+
+ The current levels are 10 and the proposed is nine in this case. If we check the history, this is what the system is posting, maximum was five. But as we have a service level of 95 percent, it's creating an additional buffer. If we see how much is the buffer, it's basically four units. Out of five, that is the normal demand, that you would have that, as we saw, is five during the lead time. It's proposing additional four just in order to have a high service level.
+
+ In this case, if you see the history, it's having 100 percent, and it's proposing to increase just a little bit the service level for you. Well, this is a vital, but it received a priority too, so I get that this is online to what we are expecting. Let's see if we We have another vital item where we have, well, I can check on the alert. So I go to the alerts, the big changes, and I can tell the system to order based on the BED.
+
+ I will put descending order. And here we have vital, but need mover, ABCL. OK, let's see what. Is happening here. This is very interesting because I see here that we are proposing, we have a current reorder point of 160 week and we are proposing 73. Our service level is 99 percent again. This is a business continuity part. Either way, I want to just stop here on this example because I've seen something interesting here that we had a continuous amount on this.
+
+ And in one moment, this stopped being used similarly, because the last consumption was on 2023. But still on the system, we have a current reorder point, right? I guess this can be one of the obsoletes that we need to filter out.
+
+Hector Palacios (ADNOC Group D&CS):
+Is this methanol item, Tim? I don't know if it rings a bell for any one of you. Methanol, 99%?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Methanol, every plant almost uses it. You are using it or not? Most of the plants on the group company are using methanol. It's 99% methanol. I think it's also in town. This item actually belongs to gas processing.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+This location 3007 is the invalid plant now. Because as a part of the wisdom project, these items are moved to the different plant. So that's why you don't see any consumption after 2023. It will be in different plant, not in this plant.
+
+Hector Palacios (ADNOC Group D&CS):
+That's why it's no longer useful. That is a good input, Tim. Pushbu, Rahul, can you help me with that one? We have an old plan that we need to check because I guess that's the part of the history. If we want to create a forecast or whatever, a real-world calculation here, we need to mix the history of these two cases. We need to do the integration. Can you say that again, Victor? There is an old plant that we raided, Rahul.
+
+ It's 3007. So we need to identify all these cases in which we have one plant and then we migrate it to a new one because we need to use the old history of this one and apply it to the new plant.
+
+MM- SKEC2 - L08:
+So we are already working on our document which identifies all the plants and company codes and in that document and probably we can get this feedback of which plants are assigning like what is the old plant, what is the
+
+Aboobacker M. (ADNOC Gas - PD):
+new plant and logic between them so that we use that input for configuration. Okay. Thank you, Tim. In the VPD document, already we mentioned this requirement.
+
+UNKNOWN_SPEAKER:
+Okay. Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+So we are This is a new plant, yes. This is a new plant. We are just starting the integration. So let us work on it now that we have access to your system. I guess that this is a new plant. It's color-wise. And I think that it's the same material. So in this case, only checking the history, because I think that in this case, it's a continuous material. Maybe it wasn't that affected, you know, because either way you have enough information to come up with something.
+
+ And the maximum here was 81. And then you have 69, 67. The proposed IVP is a little bit less. Because we are saying to IVP, let's have a 95%. Of course, it's not going to get exactly to the same number. Sometimes it's a little bit low. Sometimes it's a little bit higher. And you have 100% because you have much more stock in that case. So the question would be if we have a 93% service level for an item like this one, the methanol, is it acceptable?
+
+ Or should we go with a more conservative recommendation like 85 in this case? Because that is 99% service level, you know? So this is one of the of the vitals that maybe we need to think about it. What do you think, Tim? Is this too low for a vital, for methanol in this case?
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Of course, on here, vital, what's the movement of this item?
+
+Hector Palacios (ADNOC Group D&CS):
+Is it fast-moving, medium-moving? Let's check here. Yes, sir. We have mid-mover, it says. Him and by. It's a misclassification. Yes, sir. Because I think that we are missing the old history because as you migrated the plant. We are missing the past. So maybe if we bring the past that you will not come 25 and this one also.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, it seems for me. This is a fast mover for sure. It's only that we are missing the history in the past.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+I don't know. Every every plan is possible.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah. So okay so you are thinking right now it's vital and also it's a fast mover then we should have a high service level then yes yes it's 99 of course definitely 99 yes nice enough of course this is vital
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+items that are not available production will stop immediately okay so all right so that we need to keep that one with the optimal quantity so to be consider here with the optimal quantity in our inventory we don't need any actual items in our inventory. That means this item is vital, continuous items and this item are vital and linked and this is the chemical also. So that we need to have the continuous quantity, we need to put and use the requirement and etc.
+
+ It should be considered as a 99 percent.
+
+Hector Palacios (ADNOC Group D&CS):
+Do you have any suggestion also from the team here? My question is that if the fast mover or big mover is going to move the reasoning here, or just because it's vital, we say this is 99%?
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Well, this is, I don't know, because here we are before, yes, we consider any vital item irrespective of the value, we need it to be available 99%, irrespective of the value. We need to hear also from the other agencies, the team approach, or anyone from the team here, sour gas, refining. You are approaching the same process here, Tim?
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+I guess most, yeah, for short guys, we are approaching almost the same. If it is vital, especially fast moving, regardless of the value, we're maintaining the 99% now. Always maintain the maximum level. And especially for chemical, the operation have their own specific dashboard against the reorder point and the safety stop level. If it is below the reorder point, even they come to ask directly.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Sorry, I missed the explanation part. I'm sorry.
+
+UNKNOWN_SPEAKER:
+I can repeat.
+
+Abdulrahman Al Meqbaali (Borouge):
+So we were checking this item.
+
+Hector Palacios (ADNOC Group D&CS):
+This is a vital and we were basically discussing what should be the service level because we are proposing 95% currently with the with the current definition, but the answer and the team are raising, if this is vital, means you have the higher priority possible. Then we should plan the reorder point accordingly to have the higher quantity. What we are saying basically is that for vitals, right away, we are going to classify as the highest priority, that is number 1.
+
+ For us, that means it's not 99 percent service level. Is it clear?
+
+Abdulrahman Al Meqbaali (Borouge):
+Yeah, yeah. If that's the case, it's OK.
+
+UNKNOWN_SPEAKER:
+It's matching to our calculations. OK. OK.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Refining of the bridge. They're refining Aaron. OK, the same. Are you OK with this one? Aaron not here. Aboobacker? Where is Aboobacker? I don't see Aboobacker not here. Ah, yes, Aboobacker.
+
+UNKNOWN_SPEAKER:
+Aboobacker?
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, clear, clear. Actually, we have a LTBA, right? And also based on the reservations only, we are going for the order.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+OK, that means 99% service level, right?
+
+Aboobacker M. (ADNOC Gas - PD):
+Yes, 99% service level, but 99% service level for the ROPA items, no?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I don't see any other consideration.
+
+Aboobacker M. (ADNOC Gas - PD):
+It's a normal world water plant and new plant consumption. Based on the consumption pattern, we need to decide whether to go for forecast-based or ROP. Yeah. Yeah, that's right.
+
+Hector Palacios (ADNOC Group D&CS):
+But that is a different discussion. This is about even if this is forecast-based or ROP planning, we will follow the same logic of calculating the safety stock, and for that, we we need to have a service level. So this additional buffer that we are going to have is the most, the highest one.
+
+Aboobacker M. (ADNOC Gas - PD):
+Since you are coming to this table, even we vital items, we have a slow and non-moving. Vital items, slow and non-moving also we need to consider.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+You have to add one more line in vital, under vital.
+
+Aboobacker M. (ADNOC Gas - PD):
+Yeah, here you are considering only fast and medium moving, no? You have to consider slow and non-moving also.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+We need to assign score also there.
+
+Aboobacker M. (ADNOC Gas - PD):
+So that's why in the last meeting, I put that table. Even I have added slow and non-moving Just you can check that and you can consider.
+
+Hector Palacios (ADNOC Group D&CS):
+But just to be crystal clear. So the movement you are saying that is going to affect this percentage, or regardless of the movement, even if this is a slow mover, we are going to have 99% because this is vital.
+
+Aboobacker M. (ADNOC Gas - PD):
+Or we should have lower force. I'm putting it again, see? So if it is V, if it is slow and non-moving, need to consider as a risk number three.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think, Aboobacker, vital and non-moving to consider as two also. This is a vital item. Yes, it's a vital item.
+
+Aboobacker M. (ADNOC Gas - PD):
+All these vital items, we need to first to check with the user Yes, sometimes the user, they may want to keep the stock even if it is non-moving. So they want to keep the stock available.
+
+UNKNOWN_SPEAKER:
+So we need to consider this risk factor there. OK, this is your definition.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+From your side, does Excellency OK with the segmentation? Yes, yes, Mr.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+We want to see the data. And also try to go with the procedure, you know, initially. Yes, then we'll see if there any improvement we can do. I mean any changes.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think I have a hundred or so as per procedure. We have only three categories 9995 and 95. That's it, right?
+
+Hector Palacios (ADNOC Group D&CS):
+So yes, yes, you're saying for vital 99 or procedure for a essential 95 for desirable 90%. Yes, 90%. That's simple for us.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Let me do a quick adjustment.
+
+Hector Palacios (ADNOC Group D&CS):
+Let me, um, you have that one address and the policy.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Can you share it in the here? Let me check here.
+
+Hector Palacios (ADNOC Group D&CS):
+So, here I have the items that I'm taking for this case. And I will put all the... That is part of the procedure, but actually it is not.
+
+Aboobacker M. (ADNOC Gas - PD):
+Actually, we are reviewing based on the movement, criticality, and the consumption basis.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+OK. Victor, you don't have to do any changes now. OK, just go with your proposals. OK, we'll see the results. Then we'll decide because this this changed or modified in the later.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Not right now, better, better, better suggestion here. Yes, I agree with you.
+
+Hector Palacios (ADNOC Group D&CS):
+So this is what we are doing right now, right? So it's not I don't want to go without seeing data. So what we are doing right now is let's see this example is a vital. We have a 95% and we got an 83% of service level. So I was asking the team is this making sense to you because your current order point is much higher, right? And we are proposing 64 that in some cases it wouldn't work.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+You know current order point is 160. Yes, it's actual data from SAP.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, that is what we were able to strike.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Now this is at the
+
+Hector Palacios (ADNOC Group D&CS):
+Can you put the title number into the chat window? Let me check. Alright, let me. Here we have so I have the plant and I have the material ID here. Give me that number please. Yeah. Going there. There you go.
+
+UNKNOWN_SPEAKER:
+Yeah. Thank you.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yes. Yeah. 160.
+
+UNKNOWN_SPEAKER:
+It's OK. OK.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+So I see at least even if we go with the 99%, you see, guys, that we have an opportunity here because 99% is 85. And 85 historically cover for everything, even for the maximum that was 81 with an additional buffer. And we would have 100% in the history. What is the lead time for this?
+
+UNKNOWN_SPEAKER:
+Lead time is one month. One month?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, not exactly. Like, let's say, like, six weeks, probably. I can record for the lead time weeks and days. Let me bring it in order. Lead time. Days and weeks. 43 days. 43 days?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+So that's why we are calculating this demand over the lead time. Because it doesn't matter that you have 24 and then 57. The point is that during these 43 days, what is the maximum amount that you have bringing everything together? Because that is the dangers on the lead time basically. So you need to be prepared for that demand during the lead time. This one, 81%. Sorry, 81. But currently you are overprotected.
+
+ Let's say you have even if you have the highest service level with IVP models, he's proposing something less.
+
+Aboobacker M. (ADNOC Gas - PD):
+For this item, I have seen one movement in January 2023.
+
+Hector Palacios (ADNOC Group D&CS):
+Is it correct? Yeah, yeah, for sure. This data was shared by Guinness, I think. I don't know if in January. So yes, we were taking from the last month. January 2023, yeah. So yes, January, April, we don't have any data on January if we take the data shared by Bignage.
+
+Aboobacker M. (ADNOC Gas - PD):
+Then this 11 piece, 11 quantities, what?
+
+MM- SKEC2 - L08:
+Hector is talking about 23, January 23, the first. Sorry. Yeah. Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+I don't know what it is. It's just some sporadic consumption that we got. What I got, what I did is just track the reservations, the historical reservations and movement Reservations or consumption?
+
+Aboobacker M. (ADNOC Gas - PD):
+Reservations. Is it fine or we got it wrong? If we are talking about reservations that we need to see no Maybe a requirement quantity. We don't know that How you are calculating the reservations if it is consumption means is supposed to start from a September only Anyway, August is 5 JG 307 business. This is our new plant called Before September 2023 All right Fine maybe any outstanding reservation still may not get closed.
+
+ What is this 11 quantities, reservation quantity or consumption quantity? Yes, reservation. So, we have two values.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, but we saw that what you wanted to see on the history was the reservation quantity. If it is the consumption value, consumption numbers, we can bring it in, recalculate everything based on that.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Demand rate, how it is calculated? In this case, can we go to the data and see? OK, so this is monthly breakdown, right? If you go back, go back please. To the chart or to this view? OK. See here is the monthly breakdown. OK. But the average monthly is six.
+
+Hector Palacios (ADNOC Group D&CS):
+How come? Yeah, yeah, yeah. So probably this number, let me bring another input here. Because this is assuming the zeros as well. So probably that is bringing down. Let me bring the empiric.
+
+UNKNOWN_SPEAKER:
+Just one second.
+
+Hector Palacios (ADNOC Group D&CS):
+Demand rate. Let me correct this for you.
+
+UNKNOWN_SPEAKER:
+Yeah, that is why I see because of this.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, yeah, yeah, not the elites and demand so if you see the demand you have 2457 let me highlight it here you see this one quarter quarter device can you go to the exit view for this like can you open the excel view where you will see the numbers and we can quickly check the rate in calculation except for this first yeah let me bring them the code so we have this material dispute I can filter Now let's
+
+UNKNOWN_SPEAKER:
+fix this here. So this is the actual usage.
+
+Hector Palacios (ADNOC Group D&CS):
+And you have here by quarter. If we bring them on, do you want to see the months or quarters?
+
+MM- SKEC2 - L08:
+Bring to the same level that you had in the graph so that it can be compared. OK.
+
+Hector Palacios (ADNOC Group D&CS):
+Make it same as what we have in the graph, right? I'm going there. From the beginning of times until January. So there you are.
+
+Hector Palacios (ADNOC Group D&CS):
+So these are the numbers.
+
+UNKNOWN_SPEAKER:
+OK, I understand what is happening.
+
+Hector Palacios (ADNOC Group D&CS):
+So the number that you're expecting to see, you're going to be more aligned to this number that we see here, the 21. The point is that this one is considered zeros. I will correct it. And the right one, the one that the system is using, is fine, but it's in weeks. So that means if you multiply by 4, you will get the 21 that you have here, that you are expecting. Let me grade that here and adjust numbers that I'm showing you here.
+
+ I think that is just a miscalculation that I have here, but the system is using the right data. It's just a visualization matter here, but the system is using this demand rate that is Piper, quick.
+
+UNKNOWN_SPEAKER:
+Anything else that you want to say on this case team?
+
+Hector Palacios (ADNOC Group D&CS):
+We can move to another one to to see if we get different. So does that answer your question?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Like no, I don't understand.
+
+MM- SKEC2 - L08:
+OK, so what he's saying is. You want me to answer it or you? Yeah, so what he's saying is for sure the key figure what we are showing it is not correct. The calculation has to be updated, but the system uses empirical demand rate which is 5.1081. You see in the last row number 16 that is the actual key figure used for calculation. So the calculations are not incorrect. The key figure what we're specifically looking is considering the entire horizon and zeros in the horizon, and that's where the demand rate has reduced.
+
+ But if you look at empirical demand rate, which is 5.1, it's a weekly demand rate. If we convert it into monthly, it will be coming close to 21, which is the actual average of the demand.
+
+Hector Palacios (ADNOC Group D&CS):
+But the point is that this is just a visualization issue here on this chart, but the system is using the right amount.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So you can trust that the values here are using Let me let me show you the right data here.
+
+UNKNOWN_SPEAKER:
+OK, OK, I'll share my screen. Yeah, OK so.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So this is a consumption pattern actually as per the production. OK, because I'm but I want to see why they have 160 as a reorder point. OK, OK, so if you look at here. Let's say let's take some 2023 because this plant I took I think both the plans I believe.
+
+MM- SKEC2 - L08:
+Is the same material?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah, same material.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Okay, so here you see this is the consumption pattern what they have quarter wise, quarterly. Okay, so if you look at for here by average they are consuming in 2023 is around. Yeah, 630 630 in 2024, 2023, 473 and then 2022. Let's say 318. OK, so how we are calculating the RAP here? Based on this average, correct?
+
+MM- SKEC2 - L08:
+The only point is, uh, uh, Jaganath, the data you're looking at and the data we're seeing in IBP does not look to be same because I think that's correct.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I want to see. No, no, I want to see why they put 160 as ROP. Yeah, yeah, I agree that data is not correct. See due to this, I think the data you don't have to correct. I mean valid data, so that's why you see the huge variation in the proposal and then the actual. But if you go once you interface the production, I think you must be having the right data and type calculation, OK?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+MM- SKEC2 - L08:
+It's OK so.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+So let's do you want to?
+
+Aboobacker M. (ADNOC Gas - PD):
+How it's supposed to be by if you calculate How it's supposed to be as a ROP?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I'm just giving the example above. We will not do any manual calculation. The data what they have it. It's not accurate data. That's like you see in that example you can see there are huge difference right? The proposal is only 21 but That is 160.
+
+MM- SKEC2 - L08:
+Just I want to see what went wrong. Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, so so let us stop the your question is why we are showing the under 160. I don't know.
+
+MM- SKEC2 - L08:
+I want to see why they 116 SAP.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So that's a huge consumption. Yeah, because SAP why you're saying that why it's in SAP.
+
+MM- SKEC2 - L08:
+But yeah, we have taken input from SAP. Even if there is such a huge consumption, so it should be different and should be able to calculate the ROP based upon the actual consumption. That's the point you're making?
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+Yeah.
+
+UNKNOWN_SPEAKER:
+OK.
+
+MM- SKEC2 - L08:
+So Hector, for this material, we see only limited consumption, whereas Jaganath is saying there's a lot of consumption. That's the difference. That's why we are not able to compare completely. Yes.
+
+Hector Palacios (ADNOC Group D&CS):
+So given that scenario, I don't know if checking the resource is going to make a lot of sense, because there is a huge mistake on the input, right? So in this case, we were comparing like apples with oranges.
+
+UNKNOWN_SPEAKER:
+Okay, fine.
+
+Hector Palacios (ADNOC Group D&CS):
+I think we do here, Rahul, what should be a good approach? Because I can continue showing resource, but knowing that you don't have the correct input, we are comparing things that are not related.
+
+MM- SKEC2 - L08:
+All right. I think we've agreed that based upon data, evaluation should happen separate. So from a functionality perspective, is there anything you would like to demonstrate in tool and how it is calculated so that, from a logic perspective, we are clear? For sure, Jaganath's point in data and using data and running through the calculation, making sure that it is coming correctly and getting that confidence, probably we'll have to have a separate session in future with data which is more accurate in nature so that the team can compare and get this confidence that, OK, this is how it is happening.
+
+ My current ROP, my current historical convention, I can compare with IBP and see what's the proposed one. So for sure, we'll need a future session for that. But then, Hector, let's continue. If there is anything specific, any clarity you need, or any functionality you would like to review with the team.
+
+Hector Palacios (ADNOC Group D&CS):
+No, I just needed that on the prior session. So I was showing you the examples. Let's do a quick run again, just to make sure.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+In this dashboard, is it possible to see multiple codes? Because at a time you can see only one item code in this dashboard.
+
+Hector Palacios (ADNOC Group D&CS):
+Oh yeah, you can. You can see many at a time. If you were because you have the workbook and in the workbook I have some general filters here, but let me load for example one filter that I have an Excel for chemical CIT. And you can see data for many. You see. So here we are now. You have many combinations on this table, many materials, as you can see, the value. So now we can do that chart better.
+
+ And here you see consolidated values as well. And here on the new as well the same. So you are having different materials, you see. Here is one combination. Then there is another one. You can put as many as you want here. But then when you have the other one, X, you want to check probably case by case. So that's why we have you click here and you go directly to that specific scenario. So it's just a matter to which you can go high level and you can go specifically, you can do all of that.
+
+ So let me show you again, let's discuss about it.
+
+Aboobacker M. (ADNOC Gas - PD):
+Actually, we want to see First to the list of items. Okay, that's the list of item whenever you select any single item We need to see all these charts Okay The first day we want to see this list but since you are you see you show that they're not on a list of items But the other charts know that the consolidated, you know for combinator. I mean for all the items the details showing in the chart. We can have a view like this.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Let me show you what I'm thinking out right now. So we can create, let me create like a link between charts to show something really quick with contextual navigation. And go to this one, this main one. Next, next, next. View, create. So now I'm showing, I think, just one item. But let me do one quick thing. OK, no, doesn't matter. So if I remove the filters here, here, And where I can put it.
+
+MM- SKEC2 - L08:
+So while Hector is setting up, Aboobacker and team, this is what we need as an input. It's like, these are the charts which are available. What additional information you would like to look at when you compare the parameters between IDPs proposed in S4? We are seeing like four or five charts. Here. And your input from a list going to this dashboard is something which we can take. Anything additional information you would like to look in this dashboard which will allow you to make the decision faster in terms of if you have to review any parameter or inventory level?
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Give me one second. I will do a quick sync.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+I want to go. I don't think any of the chat were comparing the values. What were the values in the different, I mean.
+
+UNKNOWN_SPEAKER:
+This one. OK, this one.
+
+Hector Palacios (ADNOC Group D&CS):
+So let me the point is that I hear I need to consolidate it, but you spare with me one second. Now the numbers probably are not going to make any sense. I have my material, but if I remove the material. It will show consolidated.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+material wise what is available and what is the proposal and what is the cost impact.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay material wise so what happens is that you can select max not the ROI. The max. OK, we will bring it. It's just that we don't have the correct information right now, but it will be there.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+So I make a note, not on the RLP value. We wanted to see on the maximum value, maximum proposal.
+
+MM- SKEC2 - L08:
+The value of RLP does not have any impact. So the chart of value should be based on the max.
+
+UNKNOWN_SPEAKER:
+The valuation. OK. OK.
+
+Hector Palacios (ADNOC Group D&CS):
+Let's do that. We are taking notes. The team is helping me to take all these notes. I just wanted to show that you can have a view like this one, where you have all the materials. You don't need to have all this information. We can, for example, I'm going to filter right now, but in the future, it's going to be like that. I will select whatever here. Here you have the list of all your materials by different plans.
+
+ And then we can do something like this. So you can create a contextual navigation and you can go directly, show me this one. And in this chart, you see that is filter right now. And it's only showing the information for that one. So you can analyze information also in that way.
+
+Aboobacker M. (ADNOC Gas - PD):
+We can do it. We can do it. Instead of showing in raw level, Is it possible to show in column level? Attributes, no? You can put it in the column. These in the columns?
+
+Hector Palacios (ADNOC Group D&CS):
+I don't think so. One item, one line.
+
+Aboobacker M. (ADNOC Gas - PD):
+What I mean, one item, one line. All the information should be there. We can be able to filter in Excel.
+
+Hector Palacios (ADNOC Group D&CS):
+One item, one line.
+
+MM- SKEC2 - L08:
+So when you say one line, it is one row only, right?
+
+Aboobacker M. (ADNOC Gas - PD):
+No, see now since if you selected this attributor, actual usage, reservations or something proposed this value, instead of keeping in the row level, if you keep it in the column level, it's good enough for us to filter.
+
+Hector Palacios (ADNOC Group D&CS):
+Okay, yeah, yeah, I see that.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Two points, two points here, okay? All the graph should compare the maximum level, not the ROP. It's just a indication when you want to start the replacement, but the maximum level it has the impact. OK, which I'm going to replenish to the maximum. So graph should be representing only the maximum level and its cost impact. That is one thing. Second thing, the labels should in line with the SAP labels.
+
+ Say for example, What is this location ID here?
+
+Hector Palacios (ADNOC Group D&CS):
+Location ID is a is a plan or can be a storage.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Very good, so please make sure whatever the labels you are using in IBP it should be in line with S4 HANA. We don't want it to see two different labels in two different systems. OK, it should be unified and also the material ID. That means material number. Yes. I should bring the material number, right? Why it is bringing the description?
+
+Hector Palacios (ADNOC Group D&CS):
+Um, we can change it here. You can see that we also can bring the material number, right?
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+And also, as Miss Haberbecker requested, OK, we wanted to see all the information if it is related to one item number in one row because I don't want to repeat the rows multiple rows for one item number.
+
+Hector Palacios (ADNOC Group D&CS):
+We want to see all the information in one row so that they can do the That is, I think, that will be a system limitation on how this can be configured, because I think that today I don't have options to put in columns here. In the Excel, yes. In the Excel, you can do whatever you want. But here is a more limited approach.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Maybe if you want, we can do some custom report also on whatever is requested. Please make a note of these points, please.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+Let's see the best we can do about it. Sync on a workaround. On the Excel, you will have it. As I have here many values that I was focusing on reorder point, but you're saying max stock, we take it. Then you see that you can have different key fears in a column basis. So you have one item, one line. So this is your expectation, but let me see how I can do it on the web. OK, one second. Any additional stuff, Tim, that right now you are checking when you are doing these tasks and you are not seeing it here?
+
+
+
+MM- SKEC2 - L08:
+So, Tim, my idea is that whatever information is required is available at the click of a button for you in this dashboard. And you'll be able to decide or take decision looking at this dashboard immediately. So help us let help us know what all things you would like to see in what format so that we can put together in the same way which will help you take decisions faster when inventory parameters have to be reviewed.
+
+
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yeah, this is this is one part. Maybe we can add some more graphs on this. Maybe we can discuss later, but what about the reports? Are we going to do separate session on what are the reports extract we can do from IPP for better analysis or just comparison? It's going to be a separate session on reports alone.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I think that we have a different session for that. Now I can show you some possibilities. Is is just a matter to I think yes. This is the kind of charge that you can do on an IP. Map charts, heat maps. So you can see that the colors basically are telling you which ones are higher or lower. Then bar charts for sure, trend charts, comparisons, the ones that I was showing you there. This one is like increased percentage.
+
+ We need to check the numbers, of course, but it will compare the reorder point change or the max stock change. We can compare to give you a percentage. And so on. So you can use these kind of charts to create these. We can create these reports for you as a beginning. And then we can, of course, fine tune until we have the ones that we are expecting. But if you have something today, like an Excel in which you are comparing certain measures, or maybe you already have some charts, that would be a great input for us as well.
+
+ So whatever Excel report, we can think, OK, what is best way to see it on a chart, or if you already have a chart right there, we can also automate it here.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Let's say for each inventory controller, if you wanted to know what are the items assigned to him, if you wanted to know how many items are non-moving and what is the value, and also usable items, which can be shared with other good companies. And then understock or nearing to understock.
+
+MM- SKEC2 - L08:
+OK, so can I request one thing like if you can take a time and send a note about to us if possible to me all these are whatever parameters you're explaining so that we can take as an input and then in one of the sessions on report demonstrate if there are any Excel templates which you already have. You can share with us and we can incorporate that into IVP. Is that something we can do?
+
+UNKNOWN_SPEAKER:
+Can, can.
+
+MM- SKEC2 - L08:
+So that way we know for sure what you're looking for. There are a lot of reporting capabilities, but then we can initially fine tune to what you need and then as we evolve we can further add more and more data. As you also see the data which is available in IVP, probably you will have more reporting requirements. It will evolve eventually. We'll start with what you have and then evolve towards as you get more and more visibility to the data and system.
+
+
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Hector Palacios (ADNOC Group D&CS):
+So in all the data you have here, at the end, you can filter. So you see many filters. You can directly use a filter that you have on Excel, because there we can save filters by default, so not to write it every time. So you save it. But also here on the chart, you can find the planner. In this case, the MRP control. This is information that we have on SAP. I don't know how the quality of that. We can also bring this.
+
+ For example, here I find up to that if. And then if you filter that, and you click Go, then it's going to filter information about up to that if that is in that for the range of numbers we have is not applying. But eventually, when we have the information, So they can see only what they need to see.
+
+UNKNOWN_SPEAKER:
+OK. Rahul and Mr.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+Yaser, is it possible to conduct one more session on just to provide the hands-on training on this IVP plugin and also this dashboard. Maybe we can. We can. We can call some key focal points and then sit together in a room so that we can go through here and there. You can demonstrate there. They also can do some answer some.
+
+MM- SKEC2 - L08:
+Some training in front of you, so you want to have a hands on session is what you're saying in a physically in the same room, correct, correct, correct? Alright, we initially wanted session.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+MM- SKEC2 - L08:
+Yeah, we wanted this to this sessions to have physically, but because of the logistics issue, because we understand not everyone has laptops, arranging PCs on in a meeting room would become challenge. So that's where we wanted. We converted this discussion into virtual teams meeting, but for sure we will check internally when that is possible. But at the same time we still have time in the meeting so we can also spend this time.
+
+ Maybe the hour we have to walk through the team. On how to log in again so that if there are any questions in terms of using dashboard UI, we can answer, we can utilize this time and then evaluate how we can have another session in future as well.
+
+Hector Palacios (ADNOC Group D&CS):
+Is that something we can do? Yeah, for sure. I was thinking the same. So I share again the link on the dashboard, the Blender workspace indeed. So if one of you want to share the screen and to see what, to with everyone, what he's seen, we can, we can deep dive there. Once you go with Yaga, Habubakar, usually you share the screen.
+
+Jaganath Doss Thangadurai (ADNOC - PE&ICV):
+You can arrange one day to do all this. Example see in online I mean the team meeting it's not 100% sure that everybody's focusing on this one you know because we have they have all have day-to-day activities also commitments so the meeting will run one side the other side they'll be doing something okay so it's better to have a physical meeting okay.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+Check with the project team with Asma and we need to have a physical meeting this is I think a will be more than one or two.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+I think better to conduct it in the multipurpose room. I think I'd knock if it's available.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+It's a big room.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+For what? For this some testing you know they want to do some hands-on training.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+You need to arrange the PCs as well. Maybe those who are at least having laptop.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+If you guys have a own personal laptop, not personal, I mean the one provided by the company. If you can bring that, we can take and set up. We don't have. You can check now from the companies.
+
+MM- SKEC2 - L08:
+From our side, we have.
+
+UNKNOWN_SPEAKER:
+I can't.
+
+MM- SKEC2 - L08:
+Vivek or anyone, can you guys help us put up the list of people, what needs, whether they have laptop. Then if everyone has then the things becomes easier and we can plan that session. But if there are no laptops then that becomes challenging is what we understand.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+I think all people they have a laptop. I think all of all of them that because some of all the team are working remotely. Some of them. So that and I think I expect that all 70% of them having means So it's 70 to 80 percent. Yes, more than enough. Yes, OK. I think that is also where you have the list.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+And I send that list, right, for the access. Maybe in the same Excel, those who have a laptop, you know, they can just update it, you know.
+
+MM- SKEC2 - L08:
+At least we get an idea. So what I'll do is I'll upload the list on a SharePoint so that it becomes a live document for everyone to update rather than it going through emails. Multiple units. And this information would be also helpful in future sessions because for sure for the core team we can have one session, but then. Future sessions, any training, anything which we know that we can arrange this physically, then this helps because we understand having this hands on will give more understanding of the tool and then we in the same room will also help you.
+
+ Navigate and help your doubts immediately.
+
+UNKNOWN_SPEAKER:
+Yeah. No problem. That's good. Should we leave it here, Tim? Or do you have any additional questions?
+
+Hector Palacios (ADNOC Group D&CS):
+We have plenty of time to answer whatever you have on mind. Otherwise, we can drop and we can seek on future sessions. For this.
+
+UNKNOWN_SPEAKER:
+Yeah, one more thing. Just go through that Excel sheet.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+I know that for the web and this Excel access. Yes, we will. I've seen some of them may have, but everybody has not replied on that. What I did. I went through the meeting request and I just made an Excel sheet and I put Excel and web just for us. For if I if somebody doesn't have me, give an access for both sides.
+
+MM- SKEC2 - L08:
+Yeah, so yeah, I've seen your file. Let me get back to monitor.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In the inventory planning module. If you are reviewing the quantities, is there any option or physically to list the open P was in a table like in one view?
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, for sure. On the Excel, you can do whatever you want. So we have initial templates where you see the key fears that we want to use for certain tasks. But then you can mix them all together in just one view and save it for you. And you can share with users and so on. We can do this really quick. So for example, this is a template on IEP. So we have some key fears. But this is completely like a Bible table, you can change it.
+
+ You can change the attributes that you see there, so the segmentation or the hierarchies that you have for the material. You can change the key figures, the layout, the filter.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Is there any field like that?
+
+Hector Palacios (ADNOC Group D&CS):
+Not yet, because we are working on it. That is more on supply planning Um, but yes, I think I think also fear the fields if the items exist in any agreement. Yeah, I think that she's my witness TV. Okay Yeah, we need to have a feel an indicator for that for sure.
+
+UNKNOWN_SPEAKER:
+Yeah, we are taking note.
+
+Hector Palacios (ADNOC Group D&CS):
+But my point is that when you have all the information that you are asking for this additional indicators or like on delivery, you can save it here. So here you can create a report update. I will call it test two because I already have one. You can order these by folders. So you can put a folder called my reports and update, and you will have it on the system. So whenever you want to get this again, let it finish.
+
+ So you come here to finish. And you have my reports and it's there. Another thing that you can do here is to share. So if you want to share with another user, you can share, select here the user, for example, or also you can select a group. So if we have an entire group of end users, instead of going one by one, we select the whole group at once. And click okay, and they will receive it on their site.
+
+ So they will just need to log off, log on again to see it, and then they will be able to, it will set that it's shared by Arunkumar in this case, for example, if you share with someone else. So all these reporting capabilities is here on the Excel on the web. Also we can do, when we show these dashboards, these charts, it's something that you also can configure. So in the training, we can teach you how to do it, and then from then on, you can use the standard that we are going to provide, but you also are able to customize and to make the right view
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+for you. Regarding the ROP, whether it goes only for the team approved or it goes in the various level so if for whenever we generate a proposal then you will have the opportunity to approve it or not I mean so if or is there any option to edit that quantity maybe to round off or to reduce a little bit yeah yeah so uh you have two options here one is to to take let me hide this because Yeah so let's
+
+Hector Palacios (ADNOC Group D&CS):
+check one scenario let me look for let me first refresh. Is it showing me let me see one chain that is more in line too. Okay so you have imagine that you have this rear the point of 120 the system is proposing 170 This is the value related to each one of them. We can then later do this with the maximum as the team was proposing. Here you can override it as well. You can take the system proposal, but maybe you say, again, I want it to be 100, and you can save the number.
+
+ Then when you approve, you click here because if you don't approve here, you will always see the current reorder point. That we are using, the approved one, is the one you have right here, current reordered one. But if you put a one here and approve, you should see the one that we overwrite there, 100. You see? So only the approved ones can flow. Otherwise, we will use exactly what you have today.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So this is like only one level approval or it triggers any workflow to team leader or manager?
+
+Hector Palacios (ADNOC Group D&CS):
+We can do that. We can customize to different workflows. If you say that we need three levels, then this is level 1, and we can add level 2 and 3 to get to the final amount. Also, we can have the DOA, Delegation of Authorities, so we can check what is the value of this item. If this need to be go with approver 1, two or three depending on the level of the value, we can do that as well. It's only a matter to set the rules and what they need to see.
+
+ We set the views, the reports in order that they can see it that way. This is just one way how you can do it here on the Excel, if you like the Excel.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In the web. Can you just include one column like open POs? Open POs? Yes.
+
+Hector Palacios (ADNOC Group D&CS):
+Right now, we don't have it, but yes, we can bring all these additional inputs like open POs.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+I'm just taking note right now. Open POs, we need the valid agreement, its validity, and its remaining selling value. Agreement validity. Agreement validity.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Existing agreement, remaining ceiling value.
+
+UNKNOWN_SPEAKER:
+The remaining validity?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The remaining ceiling value of the agreement.
+
+Hector Palacios (ADNOC Group D&CS):
+OK, I'm not getting completely that one.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+The agreement, it has some ceiling value.
+
+Hector Palacios (ADNOC Group D&CS):
+Ceiling. Yeah, OK. OK, OK, I remain like this ceiling value.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+OK. And then the remaining ceiling value.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Existing is still booting on.
+
+Hector Palacios (ADNOC Group D&CS):
+Existing stock. Do you call it like that?
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+We always use this word. OK.
+
+UNKNOWN_SPEAKER:
+Restricted quantity.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Restricted quantity. What is the expired stock?
+
+UNKNOWN_SPEAKER:
+That is expires.
+
+Hector Palacios (ADNOC Group D&CS):
+Talk that you're saying. Alright. But I don't have question for the expired this talk.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Like what the action like to. Electric. What it will help me here.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+In case you feel the experts talk, We can try with Vendor for the extension.
+
+UNKNOWN_SPEAKER:
+Okay. Yeah, you're right. Great.
+
+Hector Palacios (ADNOC Group D&CS):
+So this kind of input is very valuable for us, so we can build the integration for this as well. So if you remember anything else, you can reach to us, write an email, and we can consider it. Now, let me show you an additional So that is one way of doing the approvals if you like it more in Excel. But if you want to do it on the web, you also can have an alert. So these are all the cases that you have for approval.
+
+ And you can go one by one analyzing also the charts. If you want to have one consolidated view, then the Excel I guess is better. But if you want to check case by case with all the analytics here, we can also We can find maybe a middle ground as well, like to put all the list of available materials to be checked. Here at the right, we can put some charts.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Hector Palacios (ADNOC Group D&CS):
+We have many items.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+All this scenario of the demonstration, it goes with one item, just you're demonstrating how system work is working. In case if you're an inventory guy, and if you have 100 items to review. So how the system will display in this dashboard or how it should be handled for the review purpose?
+
+Hector Palacios (ADNOC Group D&CS):
+For the review purpose, so basically we need to put some filter here. So we have many others. One is going to be for the planner to check all the cases that maybe need a review because versus the last review that we did, now the system is proposing new changes, right? So you want to go here and check what are the different proposals of the system. You can do it here, you can do it on the Excel, but you can change the proposals.
+
+ Once the planner works on this, he can say, okay, I finished my task, now it's up to review, and we can figure out the approval process for the reviewer.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+So the reviewer can come here, and he will say- Redefine my question, so currently in our system system is generating the MRPPRs. So we will review the MRPPRs from that we will decide whether we have to go for the new purchase or the call of order initiation. Stock decision or the level of everything will start from the MRPPR. So in IBP, what is the first step as an inventory we have to do in the system?
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, there is more to supply planning. So, when we go to the supply planning session, we can discuss about the PR's approval. So, we can configure a dashboard or something like this for the same purpose that is approval. What I was showing you right now was related to reorder point and this kind of levels because this is the focus of the inventory levels planning, you know. It's only these three.
+
+ But, yeah, I understand that you have this. For you also, it's really important check the PRs and all of that. We will see it on the next sessions that we have on supply planning in some week sizing.
+
+MM- SKEC2 - L08:
+Arun, just to talk about it, you said that when the MRP generates the PR, it's a consolidated PR, and then you manually convert the PR into call-off or one-time procurement through that.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+If an item is having an agreement, system will pick those agreement details in the PR level itself. Like the fixed terms or details, it will be filled. So those cases, we'll just modify the quantity or like review the quantity, and like it's a one-level approval. So then we will convert that approved PR to the call of order using a customized transaction. There is a pre-built transaction using that we will convert the approved PR to call of order.
+
+
+
+MM- SKEC2 - L08:
+OK, got it. So so essentially the program generates PR for call of order. You review the quantity and the PR is approved for maybe one level and then that PR gets converted into call of order.
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Yeah, in case if that item is having an agreement. If there is no agreement, system will not show the fixed tender. So we have to go for the PR to PO process.
+
+MM- SKEC2 - L08:
+Yes, so which means it will go through the tendering process. Yeah, the traditional tendering process, PR to RFQ, RFQ to PO. So essentially, whether you have a vendor or not, or whether you have a call-off agreement or not, that decides the two processes which we are trying to do, right? All right, I just wanted to know because then why we are putting some things around in supply planning. This will take this into consideration.
+
+
+
+Arunkumar Viswanathan (ADNOC Refining - HQ):
+Anyhow, in the month, I mean in the starting of each month, if there is any open work orders or the reservations, so all those things will be captured in this MRPPR.
+
+UNKNOWN_SPEAKER:
+So the demand will be disaggregated.
+
+MM- SKEC2 - L08:
+This MRP job is running monthly as well for regular materials? Monthly and fortnightly. Fortnightly for some vital materials, right? Correct, correct. Yeah, so every 15 days you review the output of the MRP, convert the PR into either PO or call of achievement, right? Yes. For vitals and then for regular every monthly you convert that into OK.
+
+Aboobacker M. (ADNOC Gas - PD):
+Hector, since IP is capable of making different varieties of reports and dashboards, so we need to see the different report from different perspective, like as an inventory, I want to see something from item side. I want to input some list of items. I want to see the details. Same way, if from the site user, for them, their input may be work order, reservations, or equipments as a number. So if they input their inputs, they need to see, item details, availability details.
+
+ Similarly, if I have any PO or call of order, I want to see that particular PO items details and call of order item details. Is it possible to generate? Yeah, I mean, is it possible in the sense that we can customize it to the user's needs?
+
+Hector Palacios (ADNOC Group D&CS):
+So we have end user, then you have inventory controllers and so on, they can see different stuff. That's for sure. Now, the only thing that needs to be clear for us is that when we talk about the POs and reservations and things like that, we don't have the order number. We only have the material quantity. We can tell you this material in this plant or storage location in this period of time. For this equipment, if this is our consumption, we can also tell you that if applied.
+
+
+
+Aboobacker M. (ADNOC Gas - PD):
+Actually, it's a really pain area for us. From the user side, every time they send the list of reservations or orders, they're sending to us, I need the availability of the materials. So instead, if we have some option to see based on the reservation or order.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, so something that we can do here is that we have contextual navigation, but navigate to S4HANA. So, in this case, we can have the dashboard with the material quantities, but if you want to see what are the reservation number behind this, we can put like a link right now as I can show you here, and this will send you that right away to S4HANA, and we'll filter the material. So, that is a functionality that we have.
+
+ We just need to put it on place.
+
+Aboobacker M. (ADNOC Gas - PD):
+Not only filter the material in S4HANA, we want to see the Just you can take the like no filter you have in the top note Similarly, you can make or some more filters for our card or reservations if we put a reservation number you supposed to bring all the items against that reservations and Suppose so there is a like, you know, how much is the quantity available currently how much is depending for PR PR availability PO, RFQ, all these things, even if PO, PO delivery date is supposed to give and whether it's received if more than one PO is having.
+
+ So it's supposed to show second line, like it's already received or ready to receive. All these things we need.
+
+Hector Palacios (ADNOC Group D&CS):
+Yeah, I understand the point, but we pick up all these it doesn't get to the other level.
+
+UNKNOWN_SPEAKER:
+We need a data, right?
+
+Aboobacker M. (ADNOC Gas - PD):
+If we have the data, you can able to do it, right? No, no, no.
+
+Hector Palacios (ADNOC Group D&CS):
+I mean, the variables that we can prioritize here, the other level is not possible. I mean, it's not going to be taken seriously.
+
+MM- SKEC2 - L08:
+Aboobacker, what happens is when the data gets converted from S-400 to IPP, the transaction number information is lost. So in IPP, you don't have reservation number. You only see that reservation date and the quantity, total quantity of all the sum of reservations. You will not see that reservation 1, you have 10 quantity reservation 2, you have 20 quantity reservation 3.
+
+Aboobacker M. (ADNOC Gas - PD):
+The reservation number information... Based on the reservation requirement, only demand planning is generated, no?
+
+UNKNOWN_SPEAKER:
+Agreed.
+
+MM- SKEC2 - L08:
+We are incorporating the reservation data, but reservation quantities are only incorporated. Reservation number is not there in IBP. OK, Rahul, what's in between?
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+The user came to me. I show what action has been done against the work order, so and so and so. How can I know how to track this work order in IBP?
+
+MM- SKEC2 - L08:
+So you cannot type work order number in IBP, that's what we are saying. If you know a work order, and from a work order, you know which date of month it is, you will see that work order quantity in IBP. Now, what Hector is mentioning is, from IBP, there is a functionality which is called concept, what's the name of the functionality? Conceptualized view. So essentially, what it happens is, it will create a link for you to directly go to.
+
+ So if you are in IBP, and say January 25, that the reservation quantity is 100. If you click on that 100, it would take you to SAP S4 HANA and show you what all reservation numbers and the quantities are there.
+
+Aboobacker M. (ADNOC Gas - PD):
+It's not other way around. No, that will not help at all. We need some report to complete it. It should show the availability, when it will be available for them. Availability would be shown based on the reservation We cannot be able to bring that reservations number, work order numbers in IBP. Since you are going to bring all the details, no? You are going to bring that quantity details.
+
+MM- SKEC2 - L08:
+That functionality itself is not available in IBP. That's the point.
+
+Rido Mardian (ADNOC Sour Gas - Procurement):
+Reservation in IBP, later on, will they make through IBP or they will still make We are not changing any process on SAP, right?
+
+MM- SKEC2 - L08:
+There is a workflow. There is an approval process. There is a reservation and reservation is so when it is creating for say MRO, the reservation would be in SAP. We have taken input or request from Murugan for chemicals. The reservation to be created from IVP to S4HANA.
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+For chemicals. Issue to bring all work order details in SAP IBP.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+What is the issue here? Yes, roughly same concept. We told you to bring all agreement details here.
+
+UNKNOWN_SPEAKER:
+Simply you can. The data is outstanding.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+OK, how we can track this specific like work orders? Maybe. In IBP, they will create reference? What kind of reference they will create? And one day we receive a huge inquiries from users, like a data for the status for further so on and so on. So how can I track this in IBP? Give me a solution.
+
+MM- SKEC2 - L08:
+I don't think we'll have a solution for it from a work order number in IBP.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+But Rahul, now they're asking the details, right? Daily when they're working, they also need this information. If it is not available in IBP, if you're unable to push it there, the same information can be done through some dashboard with the help of IBP and S4ANA. Because, for example, they have this much quantity, but how do they know this belongs to which reservation or which recorder, right? See, that's also very because they have the figures, but they don't know how it is coming right.
+
+ Somewhere these details also should be there for them to cross verify.
+
+MM- SKEC2 - L08:
+I understand the requirement, but this is something is the limitation of the tool and not. It's not something we don't want to do it or we cannot do it. This is the limitation of the tool. Of the tool as an IBP. Hector, let's take a note of this. This is something which you already confirmed that it's not possible in the tool.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+But if it is not possible, like right now, see, we have the multiple system, right? Through a data mart or through some dashboard, like bringing to some other, this one, and they can cross verify. They can build some dashboard kind of things.
+
+Aboobacker M. (ADNOC Gas - PD):
+We are going to use IBP as a main tool for us. So it's supposed to be here. No, we're all going to work in IBP only.
+
+UNKNOWN_SPEAKER:
+But just to think about it, we need this.
+
+Vivekananda Shetty (ADNOC - PE&ICV):
+If it is a system limitation, Aboobacker, we have to look for some other option, right? You need that.
+
+Aboobacker M. (ADNOC Gas - PD):
+We have to look for some option here. Report, even so many reports in the S4 HANA. But apart from that, we are unable to fulfill their requirement. So that is why, since we are going to develop this new system, if you bring those things here, it will be well and good.
+
+Aboobacker M. (ADNOC Gas - PD):
+We can think about it as a workaround team.
+
+Hector Palacios (ADNOC Group D&CS):
+It's not the common practice at all to have the order number level here. But let us check internally because we need to check many things, not only the functionality, also the performance of bringing this additional level of information. Once we address all the pros and cons, we can suggest something. If we cannot provide an IEP, let us think what are the possibilities as well. Let us think on it.
+
+ We understand the requirement, but we need to work internally on this one.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I have one thing. Suppose I have a reservation, it came to IEP, we are finished from inventory and forecast, everything, it went to supply-demand, created, let's say, PR with five quantity, and it's done. Suddenly, user came to me, Aysha, I canceled this work order, this and this and this, so reduce the quantity from five to two. How can I know an IBB which reservation went to the demand? How to track this specific work order which has been deleted?
+
+ We need some solution here. How I know for the demand supply, for the supply, which quantity for reservation does IBB consider? How can I track the cancelled reservation? Which numbers? I need some data.
+
+Hector Palacios (ADNOC Group D&CS):
+This is one of the open points that we were having us in the BRD and so on. What we are proposing there is like, let's use some alerts, let's compare the deprivation cycle with this one, and we can just tell you there is a change. Probably there was a cancellation on the reservation. But so far, we haven't committed to say, okay, this is the reservation number that was canceled or something like that.
+
+ So far, it's not on the scope of what we are proposing, but it's totally in line to what we are discussing right now, right? So you have the order number level and so on. So let us think internally on this one. It's not an easy, I don't want to commit and to give you a right answer because I can say whatever I want right now, but this doesn't mean that it's going to be feasible, right? So let us check, let us integrate the data, let's see how the system performs, and let's see what we can do about it.
+
+ For sure, the only thing that can happen here is that maybe I can bring your reservations number. I can bring the open POs and numbers and so on. But for sure, the results that the system is going to generate is not going to be with numbers related. It will not tell you that this stock is related to this order and so on. So we can provide additional visibility, but the algorithms we hide are not going to take into account this.
+
+ Going to consolidate the demand at the material location level, and the reorder point quantities also will work at the same time and so on. So let us think on that, Tim. We need to discuss internally.
+
+Aboobacker M. (ADNOC Gas - PD):
+If you are going to bring this reservation or work order number in the line level, then you can be able to do it in Excel. We can bring it. To bring that number, reservation number or work order number. We can do it. We can make it Excel. OK. We need the data, right? If a hands-on report available, then it will be good. But you just check it. I'm not closed this one, but you check the possibilities now to bring.
+
+ Based on the reservations, our card of reservations generating report. Okay, the requirement is clear.
+
+Hector Palacios (ADNOC Group D&CS):
+Let us think about it and we will come back to you.
+
+Hector Palacios (ADNOC Group D&CS):
+Tim, do you have any open points? Any questions? Taking advantage that we still have some time.
+
+MM- SKEC2 - L08:
+I have a question.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+I have a question regarding the planning type.
+
+UNKNOWN_SPEAKER:
+OK. OK.
+
+Aysha Abdulla Al Ali (ADNOC - GP):
+Let's say we have one item X. It's linked to a shutdown store, which has MRP type PD. At the same time, it's linked to active store, which has MRP type Z1, which we replenish it until max and create PR. The PD item, we create PR as per the reservation quantity, okay? My question is, if this item X, same, have a consumption more than 25 times last five years, so it will go also under Initially, yes.
+
+
+
+Hector Palacios (ADNOC Group D&CS):
+I mean, it's related to what we were discussing yesterday. It's like we are hoping to explore what the system can provide, but it's also a possibility that if this is a PD or on-demand item only, we can also exclude it from forecasting and reorder the point. So what I don't want to add here is additional stock. If we are going to generate a forecast for it, it's only if we see an added value on that.
+
+ But if we don't see an added value for an on-demand item on having stock levels or having the forecast for it, then we need to just keep it that way, on-demand, basically. The point right now is that we are going to explore what is the system going to provide for those cases, for one on-demand case, and if we see any value on that, we can show you. But otherwise, if we don't see any value and just bring in additional stock, then we keep it the same way that it is today.
+
+
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Hector Palacios (ADNOC Group D&CS):
+Tim, any other question on your side?
+
+Yaser Salem Bin Zubaa (ADNOC - GP):
+If anyone would like to add anything related to If you have anything before I wrap up the meeting. Again, regarding the physical meeting, Inshallah, we'll try to communicate. Ahmed, you are here. Please, Ahmed, as this is for the inventory, try to communicate with Khalid and Asma. We need to have a physical meeting. Raouw, also from your side, I think better physical meeting to bring all the key users.
+
+ We'll sit all together. We can share all our feedbacks, anything, and also bring our laptops. We'll sit at least one, two hours. And inshallah, we'll end up with a good result, inshallah. Anyone would like to add anything here? Please, share it. If no, any further questions. Okay, Raoul, from your side.
+
+Hector Palacios (ADNOC Group D&CS):
+and uh actor like to add anything here no we are we are I think that we are okay yes let's just see if the team has any other question but if not we can we can finish I think no
+
+Ali Mohammed Ahmed (ADNOC Onshore - PD):
+but nobody have any questions I think okay so that's any uh thank you and also yes the only thing that um during last two days continues to workshop every day uh so please make sure that have taken note of all the points discussed whatever we have different what has been agreed, so we don't repeat it again and in future. Okay, once again. Okay, I think this is it.
+
+Hector Palacios (ADNOC Group D&CS):
+So thank you very much, everyone. I really appreciate your feedback and your time. Thank you.
+
+UNKNOWN_SPEAKER:
+Thank you. Thank you.
+
