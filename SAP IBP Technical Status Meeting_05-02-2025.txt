@@ -1,0 +1,224 @@
+ROSSI, PAOLA:
+Hello, good morning. Good morning Paula. Where are you? Yeah, I am good good. How are you?
+
+Kunal Sheth (ADNOC Group D&CS):
+Fine as well. Yeah, I think let let us wait for others to join and then we can start. Sure.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Good morning. Good morning, Khalid. Kunal, do you have any points to be discussed, any pending things? Critical blockers.
+
+Kunal Sheth (ADNOC Group D&CS):
+Technically only boorish part is there, so that we will check with Ananda. So Rahul has also sent an email in the morning today.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, yeah, yeah, but that is dependent activity, right? That they need to finish their refresh and then we need to. And then only we can do the other activities, right? Yeah, OK, OK, we'll wait for that.
+
+Kunal Sheth (ADNOC Group D&CS):
+So anything else and and for the for the analytics which we were discussing the weekly status yesterday.
+
+ROSSI, PAOLA:
+Yeah, so need your support Paula on this. Let me say unfortunately already checked and I'm in constant contact with the data center responsible that told me that this is in process but for many different reason technical but not only we are going to support the political story end of the year. I don't have a defined date yet.
+
+UNKNOWN_SPEAKER:
+I mean.
+
+ROSSI, PAOLA:
+As today it's not supported that the plan is end of the year. I will update you as soon as possible as I have additional information. It's clear I was mentioned. I had no need. Uh, so it's something that require a lot of different activities. So my colleagues know it, but unfortunately we cannot speed up too much.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+So what I understand is this is an additional dashboard feature provided by the IBP, right? Apart from it we still have our standard IBP dashboards or stories which are working right this is something which is a which is a additional enhanced feature yeah yeah definitely as per IBP roadmap strategy they have introduced a analytic
+
+Kunal Sheth (ADNOC Group D&CS):
+story from 20 24 0 to onwards so and they are also going to sunset the dashboard and analytics which currently they are using and analytics story is much advanced and basically they have inherited from the SAP SAC solution analytics okay okay so there is any dependencies on analytics yeah what we understood is that there is one SAP node where it is clearly mentioned that yeah it is it is not supported for IBP customers hosted on the Riyadh and Dubai data Exactly, yeah.
+
+
+
+ROSSI, PAOLA:
+And you are in Dubai data center. So as I mentioned, we need some months to do that. Maybe it can be, you know, an announcement of after the Goliath part. This actually is my my proposal.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+OK, we'll we'll discuss it. With the project team about this and how we go about this, yeah.
+
+ROSSI, PAOLA:
+So when it's planned the second wave of Goliath?
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+It's a bit July, between June and July actually. We are trying to go all in June, but yeah, probably June, July, that's the plan.
+
+Kunal Sheth (ADNOC Group D&CS):
+So Khatri, as a workaround, what we are thinking is the dashboard and analytics, which is currently supported, even though it is not advanced as compared to an analytic story. So we'll try to prepare in that one so that it can be leveraged by the senior management.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+And gradually, once these stories are available, we can move it to that one. Yes, I agree. You see, in any system, once the system starts being used, and the system is in execution, then the next critical thing is reporting. So probably the users might not be focused reporting at this stage but I'm suspecting you know or even I mean expecting that once the system is live people will come back and ask for several reports or dashboards you know.
+
+
+
+ROSSI, PAOLA:
+Yes but the timing is not too bad because if they will start to speak about the additional things in September we hope hopefully can give We should deduct some money for the license cost. No, I mean, this is really, you know, a known limitation in these two data centers. It's a pity, but it is. I will have another call this week or next with the data center owner to understand where we are.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Kunal Sheth (ADNOC Group D&CS):
+But one observation is that even though analytic stories are not available, but latest features which is available in 2025 which I think just four bags. Only it has been introduced, right? Related to MRO it is available. I think so.
+
+ROSSI, PAOLA:
+I mean you're speaking speaking about the our template content. Yes, I think so. Let me ask it to Regina. OK. Yeah. I will ask her.
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah, it allows us to import the template, but we won't be able to see those template because of the manage analytic stories not enabled.
+
+ROSSI, PAOLA:
+Yes, but the rest of the template I think you can use. So my suggestion is to start the project with the latest template available. Okay. I mean, we have not started to create anything on the ABP, I mean, from a planning area point of view, correct? Exactly. So let's start from the latest available template that is specific on the MRO. Let me discuss with Regina. Sure. I will discuss with her today template MRO.
+
+ Yes, good point. Anything else, any blocking part on the configuration environment from SAP point of view where any incident open anything I can help you?
+
+Kunal Sheth (ADNOC Group D&CS):
+I think on SNC part we are checking with Kaiser for the SDD so currently still it is in progress so we are performing the steps suggested by SAP and we will let you know in case we are stuck up
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+somewhere. Yeah Kunal we need to follow up especially the dates you given as one of the date has already passed. Yeah yeah yeah. January and yeah so we need to close that as soon as possible because there is two risk has been raised which has to which can be a blocker for our goal life you know so we don't want to wait it that long and if there's all those yes sure sure so after the sandbox we need to repeat the same steps for Dave and quality as well and also one thing we have different environments for either Right now you connected one environment to the sandbox side.
+
+ So what about the other environments?
+
+Kunal Sheth (ADNOC Group D&CS):
+For this integration, you mean to say? Yeah, yeah, yeah, right.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+We need to connect the other one to other boxes.
+
+ROSSI, PAOLA:
+Yeah, so DSA we have four environment, right? I think so, yes. 3 or 4 yes. Let me double check, but I think it's 3 or 4.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+And Paula, what about the production? How, when will that will be allotted?
+
+ROSSI, PAOLA:
+It's not provisioned automatically. You have to go inside SAP for me and request the provisioning. My suggestion, what I'm doing with other customers, I mean, Consider it will take 24 or 48 hours to have the provisioning done to you. So plan it accordingly. I mean, it depends when you want to start to configure the production. Let's say in May, probably makes sense to start to ask the production environment.
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Rahul, Kunal, note this point.
+
+ROSSI, PAOLA:
+I think Kaiser is absolutely aware of this request, entering this app for me and request the production. I think it's the same for all SAP products.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Yeah, so yeah. You have to actually initiate the provisioning from SAP me.com. So whenever we require Khalid, we can actually initiate that.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+This could be done. Let's say we are in UAT stage or once we are exiting UAT, right?
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Can we align it that way? Let's do it once we start UAT. Once we kick off the UAT, then we can start provisioning the production tenant.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+OK, OK, so regarding other the other systems we need to. Connect integrate them with our landscape, right? Yeah, yeah, yeah, we have to connect integrate dsa at the back end is for on a system okay and uh what was the question I had uh what how does this um so so for s for hana we have a very uh you know governed model for moving the drs from one system to another system what about ibp how that that is going to happen we do we need to develop up another governance model for that, or there
+
+ROSSI, PAOLA:
+is some guidelines? For the transport, you mean? Yes, there is a transport mechanism. Actually, you cannot, partially you can transport the configuration. I can send you the help link, but I'm sure the partner knows very well how to do the transport. I mean, there are some transport route that can be configured. Maybe the only thing we need to check, once you will define the, let me say, which IBP system, the different, you know, transport route you want, we can double check that are set up correctly, you know, from your sandbox to development, to test and production.
+
+
+
+UNKNOWN_SPEAKER:
+Okay.
+
+ROSSI, PAOLA:
+The only very important thing that I want to mention is that during the BP upgrade, you know that we have this window of 10 working days where you cannot transport between the different systems. We will have one weekend where we will do the upgrade of all the sandbox test environment, and the week after, after two weeks, sorry, we will have the production upgrade. During these 10 working days, you cannot do the transport, okay?
+
+ Because you will have one, so the three system, let me say, sandbox, test, whatever, it will be one IBP version, and production will be another version. So what is important is not to do any Goliath during these two weeks, because you cannot do the transport.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Yeah, that is noted. You sent me the data, so I have sent it to Bastián and the team also, so I'm sure the project team is aligned with that.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Yeah. But Paola, is this transport movement tool, is this an inbuilt? Tool in IBP?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Okay and what is it called or is there any capability name for this tool in IBP?
+
+ROSSI, PAOLA:
+I don't remember Kaiser because this is something that usually the project is doing but GoSCM for sure know the name and how to do the transport.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+It is a theory application in IBP which we need to use it's a web UI it's a web UI okay okay and and someone has to configure the transport path Kunal right right yeah yeah okay okay so another thing is now as part of the solution design document we have also highlighted this authentication SSO and all these topics right in the SDD but not in detailed right so should also cover in detail the user life the user identity and life cycle the authentication the SSO and the automation of you know assignment of roles to the users yeah so then these are There are four topics that we should cover in detail.
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Khalid so. Yeah, if you don't mind being repeat, I'll write it down. So one is. Can you please read if you don't mind user user identity and lifecycle? Lifecycle OK.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+authentication. Authentication third is single sign-on SSO and fourth is fourth is automation you know automation of roles assignment to users probably I'm not sure because we are authenticating against IAS right so IAS you know the the feature in IAS is or the concept in IAS is actually built upon groups so we combine roles into groups and then groups are actually you know mapped to the users and users But I'm not sure how this will happen here in IPP.
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Okay. Okay. So, Kaisar, is there any guideline for, so I know that as for HANA we have this governance design board, everything is there, right? What about the cloud infrastructure? Is it similar? Or how do we manage that the TRs there and who will manage it?
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+TRs actually to be honest I'm not sure Khalid I mean see for the BTP I know BTP we have you know similar like on-premise STMS we have a service in BTP that is called cloud transport management service so using that tool we move the you know the the mtar packages multi-target packages or ui5 packages or cpi packages using that tool so all the btp subaccounts are actually integrated with that cloud transport management subaccount so just a minute let me let me give you that screenshot how it is integrated for the btp so I'm not sure if if IBP we can integrate it with that cloud transport management system platform if not then I don't know maybe and for
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+this also you need approval from release manager yeah yeah this so yes yes so this manager will be will be same Kunal or he there is a different release manage for cloud platforms.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+No, no, it will be Camille only same same so that the point is now this somehow this that the transports in IBP should be tracked in charm. If charm cannot integrate with IBP then we we there is a there is another cycle in charm where it is just a workflow. I mean it will not create any transport request. Workflow but you have to actually you know input the transport request number that you get it from IBP into charm so it is just a workflow in charm if charm cannot be integrated with IBP if if it can be integrated with if IBP can be integrated with charm then we should do it yeah and the second process is the release process right so first is charm integration and the regular process that we follow for the transport movements as soon as the solution goes live is the release process in service now.
+
+
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Release process in service now will be the same as right over the project release. Right, right. Which we are already doing. Which we are already doing. The only thing I think is the integration maybe with the charm and how do you Kunal I think this is the time now we should check this point can you check this with the team and let's align on this because going forward we need to move the TRs from you know development to UAT system and then how we how we going on how many systems we have which system to connect which finalize all this and yeah yeah okay
+
+Kunal Sheth (ADNOC Group D&CS):
+charm is a functionality in service now right change request management no no it is in solution manager yeah so I think that integration also we would need to do in IBP.
+
+UNKNOWN_SPEAKER:
+Sure.
+
+ROSSI, PAOLA:
+Speaking about solution manager, we can configure the early watch check for IBP. So my recommendation is to configure it for the different, for the IBP, especially for production. So we are going to monitor the IBP during during the after the go live during the usage.
+
+UNKNOWN_SPEAKER:
+OK. Yeah.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+So Paula, I mean, see for the cloud solutions we wanted to utilize SAP Cloud ALM. Rather than you know solution manager. Yes, so for for alerting and monitoring we would be utilizing SAP Cloud ALM.
+
+UNKNOWN_SPEAKER:
+them.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+And for I'm not sure if if early watch alert reports can be generated within the cloud ALM system or not. This I have no clarity, but if it if we can generate the EWA reports from cloud ALM, then we would definitely enable that functionality as well.
+
+ROSSI, PAOLA:
+Yeah, I mean Kaiser. I'm I'm sure early watch. Are working for IBP. I don't know if it's inside ALM or standalone. This is something I need to double check, OK? But I'm sure you can set up for IBP early watch.
+
+Nishant Keloth (Borouge):
+Let me check as well.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Nishant Keloth (Borouge):
+Sorry everybody, I'm late in the party. No problem. Yeah, Kunal, the access is working for everybody?
+
+Kunal Sheth (ADNOC Group D&CS):
+Yeah. Pushpu and Rinaldo has already checked and it is working fine. So now we are requesting the rest of the team member and we will confirm by today UD.
+
+Khalid Sarfaraz (ADNOC Group D&CS):
+Great. Anything you will let me know. Sure, sure. Thanks. Thanks. Thank you, Nishant. All right. Any other points? No, I think we covered.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Mohammed Khaiser Khan (ADNOC Group D&CS):
+Alright, I'm good. OK, thank you. Thank you. Bye bye. Time.
+
