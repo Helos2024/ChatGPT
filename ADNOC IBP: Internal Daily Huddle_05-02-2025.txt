@@ -1,0 +1,544 @@
+Madhavan, Tara:
+You did you do you know the status of guru media access working for everyone.
+
+Rocio Minguillon:
+Reinaldo, yes, but I still don't have the confirmation of the others. Let me ask again. You Let me check.
+
+UNKNOWN_SPEAKER:
+I'm joined.
+
+UNKNOWN_SPEAKER:
+Hello, everyone. Hope you're well. Hello.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Naamani, Mohamad:
+So I think just to be faster on this call, we had a discussion earlier regarding preparation for SIT, so on and so forth. So I think what we can do instead of going into the details like we did yesterday for the calendar, just to show this Tara or Rocio, you agree, tell everyone how we need to complete it and that we need their help and aim to finish this between today and tomorrow, compliment all the, so I think it was a good exercise so that everyone realizes that we're not, so we're okay, but if we do not keep monitoring things on a weekly basis and what's slipping, it's good to say there's a risk an action.
+
+ But okay, so what, what is the dominant effect, the things that were impacting us from ad hoc in terms of some delays, approvals, etc, we're always logging the impact. Here, we need to be responsible for this because there is no one to escalate to, we're escalating internally. So if we can do this quick check, Rocio and Tara, if you can share the screen, just a few minutes so that that will save. Yeah, so we'll just agree on the action needed.
+
+ We will not be able to spend that much time today on it, but at least we need the commitment to close it by tomorrow. And then we can go back to our risks. Critical ones with one key request, especially to Hadi. If some of those are red already, but we've been carrying them over for the last couple of days, the critical ones. What does it mean? Are we basically now in deep purple, whatever the color is?
+
+
+
+Roumanos, Hadi:
+Let's identify if there's an impact and by when there will be an impact on the timeline, since they're critical.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Naamani, Mohamad:
+That's why I don't want to spend too much time on this one. The only thing I need from you team to help Tara and Rocio, and Tara and Rocio, if there's something not clear, please explain. Or mention it now. Otherwise, I'll rely on you to complete this just like we did. Color coding it if there is purple means we need to decide or replace, etc. Let's replace black with green and orange, etc. Please do this from now till if you can cover including UAT itself.
+
+ And based on the previous discussion we had today, it will be important so that we know what needs to be covered in SIT, and then in the training pre-UAT, which is a good opportunity for key users to be involved, etc. Unless Tara and Rocio, you have any question that is not clear to you on how to fill this up, the rest of it, the reason I'm saying this now, so that everyone around the table can support you in any info that you need, so that this becomes our radar, the idea whether we print it or have having on the screen, we know where we are, how we're doing in terms of status, but also what's coming and how ready are we for what's coming.
+
+ So current situation, assessment and future readiness, because definitely now is the countdown to go live. I think it's not too aggressive to say it started. So that's the purpose. Any questions, Tara, Rocio, on certain things not clear how to fill? If we have missed any points, we will need help to include them.
+
+Madhavan, Tara:
+Yes, that's the idea. Everyone should help you. Exactly, exactly.
+
+Rocio Minguillon:
+So today we will finish all that format details that you mentioned and some others regarding the order of the things. Then we will made a few change on the SIT according to what we discussed today. And then until tomorrow morning, please, the commitment of all the team to review and see if there is something missing or something that is not clear. But we're clear on how to finalize this. Okay.
+
+Naamani, Mohamad:
+And I have a request to you, Rocio and Tara, give a bit more attention to the technical stream, so whether it's data or it's certain integration. We touched on yesterday, but so that we're balancing between the configuration and the testing and the scripts, et cetera, but also for the technical aspect and integration, so we have good visibility. That's definitely important. I think Rinaldo just joined us, so we should be good there.
+
+ Anything else on this?
+
+UNKNOWN_SPEAKER:
+Again, reach out to everyone.
+
+Naamani, Mohamad:
+If some people are not helping, you can send the name. We can handle this, but I think everyone is supported. Anyone has suggestion on this, on how to make it better? I hope no one has or sees this as not of value, because honestly, also given that I'm not always in all meetings, it will help us figure out where we stand. Any suggestion on improving this, maybe adding some additional info or other comments before we move to the risks.
+
+
+
+UNKNOWN_SPEAKER:
+Just one question.
+
+Mudit, Khushboo (UAE):
+Do we need to call out tie in here or it's understood it will be part of wave two?
+
+Naamani, Mohamad:
+I don't know. I'll let the team decide. That's a valid question, but I'm not reference. Is it embedded already in drilling so we don't need to worry about it or no? Because we're not detailing here, or to a certain extent, sometimes we're covering drilling or MRO chemicals, but we're not getting to this level of details. If it's an issue, then yes, but if it's just to confirm it's part of drilling, it is part of drilling, Raul.
+
+ So how is it going?
+
+Patel, Rahul:
+So do we have a separate BPD and BRD for and trying planning and we agreed that it will be part of wave 2. So whatever actions we do for wave 2 time should be included in it.
+
+Naamani, Mohamad:
+And drilling remains in Wave 1 and Wave 2 both. That is OK with AdNoc, right?
+
+Patel, Rahul:
+I think yeah, we've we agreed in one of the previous meetings that. This is how we are going with Wave 1 and it it's. What it is so we agreed and we all said yeah we'll go ahead with this so at this point of time it is what it is.
+
+Naamani, Mohamad:
+Then no let's add it as a request or a confirmation tomorrow we'll tell Khaled we'd like to send you this so no one would be confused given it was a last minute let's move to wave two.
+
+Roumanos, Hadi:
+Okay the second question if I may interrupt The only thing that I would add here is any approval that we need from AdNoc, specifically anticipating durations for approval from AdNoc, right? So if there's something like SIT that needs X amount of time for approval, we could account for it in the dependencies.
+
+Naamani, Mohamad:
+Actually, instead of having it in dependency where maybe we lose it, let's, in addition to the bullets that we have where we're saying data preparation, configuration, et cetera, we can say SIT, sign off or FSD sign off. Because I would like to keep the dependencies, maybe even eliminate the whole thing if it's confusing so we don't have too many things to look at. Mainly if there is something, let's say external or whatever, we're waiting on a provision from SAP which is not the case or something major.
+
+ That's also something Tara and Rocio, you need to clean up. If it's something that is an activity and all we're doing is just repeating it from to dependency, it's not needed because by nature the things are almost dependent from one week to the other. But something like sign off for sure.
+
+Rocio Minguillon:
+So the sign off is included, but it's not included the definition of the approval, so that should be included like two weeks before, for example, no? That's what you mean.
+
+Naamani, Mohamad:
+So yes, I mean as long as we mention it. We can color code it in red or amber because we don't know it. We know it's an approval, but we don't know what we need to be ready with which triggers. It's nothing will fit here. It's basically OK, let's go and check what that form. What do we need to provide so on and so forth.
+
+Rocio Minguillon:
+But at least we know that it's needed and as an activity. And regarding the other thing more, I think that I will preserve like the dependencies as the activities just to but But yeah, then we see if we eliminate it. But for now I I'm putting, for example, a for SIT. We need the web today that I'm putting in both places like here.
+
+Naamani, Mohamad:
+So you have the identity and then the dependency because maybe all I would like is just to clean it up so that basically right now I'm not sure. Maybe it's a mix of old things and new things. Because you're also color coding them and looks like we need to check dependencies, how good or bad they are, although we're color coding the activities part, if you got my point. So let's just make sure if you want to keep it as dependency to create the link between one week and the other, fine, but let's simplify it so it doesn't become redundant, in which case no one will look at it.
+
+ So if now I see wave one data completed, and it's in orange, and there is a, similar one on top, then I might just say, OK, so I know it. Use it smartly so people will look at it for important stuff. So if I may, Rocio, you and Tara, if you can write those three things. One, checking if there's anything data and integration to be added. Two, had this point about sign offs. And three for me, let's make sure this calendar is balanced to cover everything in wave two.
+
+ Because if For whatever reason, because of the data, Wave 2 is not trending well. At this point, some of them are green, others are not. Let's try to mitigate this from now so we don't have a repeat of any issues we have in Wave 1. So data and integration, sign-offs or completion or approvals, and the third is Wave 2 balance versus Wave 1. Okay? Yes. So I think we're aligned on this. Please finish it ASAP and then tomorrow we'll have a review, see where we stand.
+
+ We'll use it tomorrow just to figure out how we are. I'll let Hadi drive the risks, critical ones especially for that because it occurred to me if some of them have been repeated for the last couple of days, they would definitely be an impact. Is it something we can recover? Or we're already basically that we have a dominant effect and all we're saying is we need to do the following action and as if we accept the delay, which is impossible at this point.
+
+ That five-weeker was not received well. Yeah, that five-weeker was not received well by the United Steel Co. Although it wasn't because of us. Most of it was delays in approval of SDD or CIDS or this and So if there is something with us, in the meantime, do you mind picking up that Excel?
+
+Roumanos, Hadi:
+I'm still on my phone.
+
+Patel, Rahul:
+So if you can find that Excel from yesterday, that would be good.
+
+UNKNOWN_SPEAKER:
+All right, let me pull up the next one.
+
+Roumanos, Hadi:
+I think we just had a couple of four of them critical. Tickled risks, if I'm not mistaken. We're chasing on each one, but Mohammad's point is still valid, because we're missing those dates.
+
+Patel, Rahul:
+I'm sharing my screen.
+
+Roumanos, Hadi:
+Yeah, I can see it.
+
+Patel, Rahul:
+Let me take out closed. Let me prioritize critical.
+
+UNKNOWN_SPEAKER:
+And all right.
+
+Roumanos, Hadi:
+Yeah, there we go. So drilling them out. I don't know if someone shared anything today. As of now, no.
+
+Patel, Rahul:
+Khalid mentioned me that the data is confirmed by business. So this is the last message from Khalid. If you're saying, did you receive the data? And I've not received the data. I'm still waiting for it. But today it was We discussed this separately with Khaled. Khaled pulled in some stakeholders from drilling. Internally, the communications were triggered between the drilling managers, internally between Onshore and Offshore for supporting this, and they had taken this priority, but we still have not received data yet.
+
+
+
+Roumanos, Hadi:
+So, question for the team, and that same question we'll be asking for all of those. When does this start impacting our timeline? So, if we don't have what day do we start getting delayed? Because right now it deserves attention, fine, great, but if we keep pushing this until, I don't know, end of next week, do we have an impact or not?
+
+Rocio Minguillon:
+Bastian, Hector, can you confirm? For the demand of drilling, I mean, we already raised, I think that also we already raised it in a status meeting with Yes, we raised it multiple times.
+
+Roumanos, Hadi:
+Internally though, we don't know yet by when, if we don't have that data, will we start getting delayed on the actual critical path, right? So even in today's email, I mentioned that we expect this today. So if you don't receive that data by let's say tomorrow or Monday, do you get an impact? Do you get delayed or not yet?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Bastian Osorio:
+Let us align internally to propose a date, but of course this will start having an impact. Let us align in the daily and we'll give you a straight answer. Okay, okay.
+
+Roumanos, Hadi:
+So please get back to us. That's fine. I just need to know when's the threshold, right? So by that date, if you don't have that data, at that point, we start getting impact on critical path. I want to escalate this formally to Khaled, Firas, etc. Let's not leave anything. The point of this conversation is not for us to just change the dates on Excel. The point is to start escalating formally by email to say, by that date, we don't have that point, we're impacting the go-live.
+
+
+
+Bastian Osorio:
+Let me just call it this. Of course, I will provide the information so you can escalate it having all the elements necessarily to escalate it, but of course this is having an impact. We should have a workshop this week which we didn't have because we didn't have the data.
+
+Naamani, Mohamad:
+This is why actually I thought that we might get, don't get it wrong, like comfortable that we're checking every day but we don't have So what? In a way we need to tell ADNOC for example, OK, now we have two options. This will kill the whole go live or drilling will be outside of the this go live and will go MRO and whatever. I'm not saying maybe this is wrong, but where we need your help and so will play that role as governance, Bastian, Konal, all the technical resources.
+
+ So we as governance will play this saying OK guys, You know this better, where can we recover or not? And then what alternatives? It could be that this is atomic or linked to everything that there is no way we can split it and it will impact the go live. It could be that, okay, the way this is going will give priority and go live because everyone wants to go live ASAP. But this means another one later, the cost of time, money, etc, to be discussed.
+
+ But this is where we can get from you options that you know are valid, Bastian and team rather than us trying to invent the wheel. I hope this is clear.
+
+Roumanos, Hadi:
+Okay, enough time on the first one. Second point, end users. We need to figure this one out because this has an impact on our training strategy and an impact on how do we get approval of that training strategy and training approach So it's not necessarily an impact on the goal life per se, but it has an impact on us agreeing with ADNOC on the training and how do we conduct it and getting their approval.
+
+ So where are we on this? I know it follows the communication that you had, Kyle, as part of your plan. But when does this become an issue?
+
+Campbell, Kyle (UAE):
+So, I mean, the training plan ends on, we're doing the training plan in the week of the 17th of February, and then training content development starts after that. So, I mean, I guess it becomes an issue if we don't have the users identified by when the key, by when the training actually takes place. But the key user training as I understand, we're going to use the same users that we used for unit testing in the QQ user training.
+
+ So for the end user training, that's on the 12th of May, the week of the 12th of May.
+
+Roumanos, Hadi:
+Okay, so all right, for me, this is not burning yet.
+
+Campbell, Kyle (UAE):
+But sorry, Nikita, can you correct me if I'm wrong? As far as I'm aware, that's That's right, given we are driving away from train-the-trainer, then the key user training for us becomes actually the exercise to get them prepared for the UAT.
+
+1Gusev, Nikita (UAE):
+So for the people who will be taking part of UAT, we already done that, right? We know the list. It's all the same people. Who have been with us since the start of the project. So from that perspective, it's not that critical, right? But if we are not getting the list of end users from AdNoc within the next, let's say, two, three weeks, that will start to be burning, right? Because following it will have, as you rightly mentioned, Hadi, following that, knowing the magnitude magnitude, it might really impact our approach to the training, right?
+
+ Again, if it's tens, hundreds of thousands, we're at that level of uncertainty right now, right? If it's tens, hundreds of thousands, that's, I mean, that's huge. That's potentially a huge impact to our approach to training. So I would say three weeks is a must time for them to get the users submitted OK, let's keep tracking this.
+
+Roumanos, Hadi:
+Let's not panic about it just yet, but I mean you keep us appraised as to how you're progressing and then. And I'll take your lead as to one. We need to start escalating this to the leadership for now. OK, so I know right now it's not a big problem, but it might become big so.
+
+Campbell, Kyle (UAE):
+And I'll just add something and because I just want to check something because this would impact the training plan as we discussed just now. But if there's going to be thousands of end users, then we need to come up with an appropriate training plan. And who knows if we will be able to still do that training in the envisioned time frame that we have at the moment.
+
+Roumanos, Hadi:
+So it could become a big problem. I completely agree. That's why I asked the question at the beginning, right? So let's give ourselves until end of next week, by which point we need to make an assumption, right? Get that assumption validated with ADNOC to say, hey, if it's that, if we're going with X amount of end users, that's the training approach that we're following, and if we're going with X amount of end users, that's the other training approach, and then at least let's start getting those validations from ADNOC.
+
+ So, the sooner we start aligning with ADNOC on how we're going to proceed on the training strategy, the better, even if we don't have the answer for end users. So, all I want is to avoid a rushed decision down the OK, point is, let's let's not spend more time on this given that it's less burning than the other items, but only confirmation I I'm seeking is does.
+
+Patel, Rahul:
+Has the memo been sent already? We didn't.
+
+UNKNOWN_SPEAKER:
+We know this confirmation.
+
+Madhavan, Tara:
+No, no, it has not been sent as far as I know from my discussion with Kyle. It is there. They have sent it to the VPS office, right?
+
+Campbell, Kyle (UAE):
+Uh, yes, that's right. Template was sent to the SVP office. And then the SVP office will share to the AGC leadership. But the last feedback I got was that they're waiting to get hold of an SVP office coordinator to ensure that this is sent out.
+
+UNKNOWN_SPEAKER:
+So no, it hasn't been sent out yet.
+
+Campbell, Kyle (UAE):
+But also, Hadi, to your point where we need to start coming up with an approach Maybe it's just me, but I'm struggling on how I'm supposed to come up with an approach when we don't know the numbers. Even if we're making assumptions. I mean, I don't know how. I'm not sure if maybe I just don't have the knowledge to do that.
+
+Gusev, Nikita (UAE):
+Let's take this separately, I think.
+
+Roumanos, Hadi:
+Yeah, let's have a separate discussion on that. Let's not crack it now, Kyle. I get it, I hear you. Let's not have this now. Third point, analytics story. How is this being covered?
+
+Sheth, Kunal:
+Because I know that we bumped it in importance yesterday. So Hadi, I have sent an email to Rocio along with the sample example which we can showcase to the VP in the Stairco, next Stairco. So yeah. So Rocio is checking internally.
+
+Roumanos, Hadi:
+Let's make sure anything, anything that goes to Styrko needs to go through Khaled and Firat first. OK, so even though Styrko is on the 21st, we need to at least run the story by Khaled and Firat.
+
+Naamani, Mohamad:
+Go ahead Mohamed. OK, let me make, hopefully make your life easier. As you know, this was requested like after the Styrko from Mansouri to Khaled. However, we also had a where Mansouri, we wanted to do a demo for Mansouri on the solution. My thinking is the following. Today during the UT, we're showing some dashboard, but there are more operational in nature. What Kunal sent to Rocio are basically is a list of some more executive level dashboards.
+
+ What we can do at this point is limit this. So from previous projects, The idea is to be ready, because next week or the one after, Mansouri might say, guys, I heard you did workshops. Can you just show me in 30 minutes some of the things, like we're doing today, nothing to be prepared, just like using IBP through Excel, et cetera, and showing some operational reports and those examples. So what I'm thinking of, because we're very busy, yet if this comes, no one will care that we're busy, not to boil the ocean over it.
+
+ It can be based on examples that we have, and that's the list Rocio you receive, that ideally you have in screenshots, PowerPoint, etc. And then it could be either a discussion before the steer co Mansouri might follow up again with Khalid, can I see some examples, etc. We can always say we're still working on the configuration and ingesting the data. That's why these are examples, and then we can manage it this way.
+
+ For the Steelco it would be something different or at least we will have as Hadi mentioned over the next few weeks us being comfortable with those examples and put them with a title saying in order to check how much did you save on etc that's an example. I will maybe think about this more next week but let's start with examples first and then and we'll see how we build the story for the steel core.
+
+ That's my suggestion. This way we don't spend too much time, but it's a normal request, just like you're getting some of those during UT now, although they're more operational, but it could be a similar thing. That's it. Rocio, if you're facing some challenges, I know that there are a lot of previous projects. The idea is just get some decent examples, then let's discuss We can have it offline separately or on the next catch-up.
+
+
+
+Rocio Minguillon:
+Okay? Yes, perfect. Understood. Thanks.
+
+Patel, Rahul:
+The date will be?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Rocio Minguillon:
+Okay.
+
+UNKNOWN_SPEAKER:
+Perfect.
+
+Rocio Minguillon:
+On the next item, I think we can.
+
+Roumanos, Hadi:
+Sorry, go ahead.
+
+Patel, Rahul:
+Can you, Rocio, can you confirm the date when we we can have this input available from you.
+
+Rocio Minguillon:
+Let me now align our daily with the team.
+
+Patel, Rahul:
+So for now I'm putting it to like Friday so that by Friday at least you get back to us when we can have it and then from there we can.
+
+Rocio Minguillon:
+OK, take it. Yeah, let's start somewhere else. You just to be pragmatic. It doesn't have to be perfect. Will start and check will run it internally. Yes, yes, yeah, I would.
+
+Patel, Rahul:
+So I think now that we have a path here, I don't think it's still delayed and will keep it under attention.
+
+UNKNOWN_SPEAKER:
+I know. That's fine.
+
+Roumanos, Hadi:
+Anyway, we're going to be covering it, so it's OK. You can close the one after it, which is the calendar. I think we're giving it enough attention so we don't need to waste our time on on risks for it. Alright, I'm gonna change management. I think this is. I need your input on this one.
+
+Patel, Rahul:
+So this is now, today I worked with Asma and we have sent a communication to the asset management team. Asset management team is also not responding to Asma. She called them, she messaged them, finally a formal email has been sent to the asset management team. We discussed this with Fira, so me and Khalid highlighted this point with Fira and Fira's recommendation is that it has to be taken up with leadership call.
+
+ So what Firas is recommending is tomorrow let's discuss with Asma and Asma should talk to her SVP to talk to the SVP or VP of the team and it should come from there. So I think this also will get aligned with respect to this memo which is being sent but Firas's point is this guy will not reply to us unless it comes from leadership. So this is where we are. Rajesh.
+
+UNKNOWN_SPEAKER:
+Rajesh. Yeah.
+
+Patel, Rahul:
+So let's take Firas's help tomorrow to see if we can influence this. Do you copy Rajesh? Yeah, our email is sent properly. Which email I sent you and he was not, Firas was not copied? No, that's the email. We need to be careful.
+
+UNKNOWN_SPEAKER:
+Firas should be an editor.
+
+Patel, Rahul:
+But for that, I spoke to Khalid and Khalid mentioned the names. That's what I wanted. So I've not, Khalid said, His it was college input to not to add that so, but then this email is sent to Rajesh plasma. I've I have given the input to a smart drafting what we need so that it is technically valid. All the previous discussions what we have documented the word file is also shared with Rajesh, so he should be aware of the context and the details of the point impact.
+
+ Impact and everything is shared with. Back to the same point. For the first one, what does it mean? We can go live and ignore everyone? Yes, essentially, see, from an impact perspective, the impact is same as change management, right? Because the process influences number of people getting involved. So the impact is same as change management. The current solution will work if nothing changes, though there'll be a slight change into the way we do the solution.
+
+ But if we are not able to align the end users, then the impact is high. So it's more of change management impact.
+
+Naamani, Mohamad:
+So team, let me give you this idea. I mean, we're being creative. We're just adapting to the situation and this is why in the first case I was asking the impact of drilling. Maybe we'll go live without drilling because we cannot just keep extending time. It including us. For this one it could be we'll say guys okay unless you would like to come to the circle and explain why it's taking you forever.
+
+ We'll go technically we'll go live and then you can take your sweet time after go live because there is nothing that we need to that will change in terms of the solution. Now this has a bit of a risk I would like Bastian or the technical team to comment. It might be that we'll say okay we're not we're assuming that the reservation approval will be cancelled at one point so we'll configure the solution as per the leading practice as a for our recommendation and we will go live take your sweet time the solution is ready for you to adopt but just staying in limbo will not work anymore.
+
+ Any objection on this logic because now as I mentioned we need to adjust or adapt the situation. We will face so many of those things, data or so things that will delay full go live, like without drilling data, there's nothing we cannot tell them we'll go live without data. While for this EAM thing, we'll say, look, guys, it's your choice. We'll be ready, we'll go live with data X, we'll tell the Steelco, after that, it's up to you.
+
+ We're anyway staying for five or six months of hypercare. So we're happy to, we'll be happy to help you. Questions or objections on this logic?
+
+UNKNOWN_SPEAKER:
+With the logic?
+
+On holdArun Singh:
+No, you need to ask Nikita first.
+
+1Gusev, Nikita (UAE):
+I am not able to see some. Mohammed, I have one thought about it. So I think from my side it's possible. It's just that we won't be planning business cutover for them. That's probably one thought that I have in my mind.
+
+Naamani, Mohamad:
+No, no, that's valid. This is, I wouldn't say extreme measure. This is us now differentiating at one point, telling them, look, we cannot do magic. We're doing our best. We're trying to recover and do things in parallel, etc. But at one point, either everything will be late or then we will disconnect this technical versus business. And the reality of this and I would like here the technical team to, or the implementation team to object, is the nature of the solution allows us to do so.
+
+ This is a planning solution, this is not an operational solution. So if you go live with an ERP or a manufacturing solution or anything that has daily transactions, if no one is using it, then business starts getting delayed. No invoices, no manufacturing, nothing, et cetera. This one is not the case. Can go live technically, and then people will start adopting and then switching from the old way of manual or whatever limited planning to the real one.
+
+ That's why it's the nature of what we're offering allows us to have this sort of flexibility. Bastian, and sorry, I don't know who's on the call. We have so many. Any thoughts on this logic so that at one point when we're stuck, we use this extreme measure and push saying we're ready, you're Here's the solution. We're with you for six months of hyper care, happy to support. Who's still with us? Kunal, Bastian, Hector, anyone who's on from the, let's say, solutioning or architecture team.
+
+ Is Bastian still with us?
+
+Sheth, Kunal:
+No, we should not stop our work, even though we are getting a lot of resistance the EAM team so we can go ahead with the technical go live and and we can work in the simulation version if they are not comfortable with the data as those every time raise this point that we are not getting what we are expecting something so they are by the way we're not deciding now we're discussing the idea I don't want anyone to
+
+Naamani, Mohamad:
+change their work etc but I'm also giving you either some comfort or some room for thinking that at one point we need to be coming up with saying, look, guys, we're doing everything, but things are not progressing as planned. Go live cannot change. We know that. So these are options and we'll proceed. Bastian, you want?
+
+Bastian Osorio:
+We cannot hear you if you're talking.
+
+Naamani, Mohamad:
+No, no, I agree with Kunal.
+
+Bastian Osorio:
+Sorry, say that again. I agree with Kunal's point of view.
+
+Naamani, Mohamad:
+Yeah, this way at one point we'll say, guys, look, we're ready. Join us. There is no magic in this world. This is not Las Vegas. Type. You want to check for high ones? Yeah, please. And if there's any high that became critical, hopefully not. Only one point, Bastian and Hector.
+
+Patel, Rahul:
+Sorry, sorry Hadi, just one point. Bastian and Hector or Kunal, we agree to this impact that it would be more of a quality solution or will not be able to leverage to the complete if this is not resolved, but then we can still go live with technical whatever solution. At this point, we're floating the idea. There's no decision to be made, but it's yes. Alright, but then still the impact is that it's not stopping us anything, but the quality of the solution will get impacted if you're not able to decide on this.
+
+ Yeah, but would really know. Really, that's a hard stuff because data without data we cannot do anything. Okay, so can I move on the road?
+
+Roumanos, Hadi:
+I just want to address change impact assessment with Kyle. Just because this was brought on today. So before I move to that point card, you had your end up anything else.
+
+1Campbell, Kyle (UAE):
+I just wanted to ask if that previous arts and tomorrow changes if that if that also aligns with the email that Mohamed Fakhoury sends with that deck that needs to be reviewed?
+
+Patel, Rahul:
+That take is something which I was working with more separately so that whatever document we have prepared detail we are summarizing it so that we can use that deck for say any leadership communication or any communication where we are able to communicate the impact and the details of the issue with a larger rather than drawing on board always.
+
+Roumanos, Hadi:
+But I need to tackle this point before I drop. So Kyle, you mentioned change impact assessment, which is due on February 21st. And the fact that processes are still open, therefore you might get delayed. My immediate thought to this is let's finish everything we can and still meet our 21st deadline, we can pin the delay of that deliverable on the dependency with process. The goal still is to finalize the process in the STIRCO on the 21st.
+
+ I mean, it's a coincidence that it's the 21st, but what you can do is use the approval of the STIRCO as approval for your change impact assessment. Right? Because both of them would have the same content that we're bringing to the circle.
+
+Campbell, Kyle (UAE):
+Um, I'm not sure that I'm following Hardy because the change impact assessment that we have, it has the different process variance. Um, the as is and the to be as well as what the change impact is across the number of factors when you look at the as is and the to be and those processes are marked change as a result of what's going on now with these discussions.
+
+Roumanos, Hadi:
+So how do we...
+
+Campbell, Kyle (UAE):
+Okay, let me clarify.
+
+Roumanos, Hadi:
+They keep changing and that changes your deliverable, I'm aware of that. But the way they're changing is something that we will get approval on during the STIRCO. Is that correct, Rahul? That's my understanding, at least from the past few conversations. Correct.
+
+Patel, Rahul:
+At least for the MRO, yes, you are correct that whatever changes are happening in MRO, intend to close it in STERCO.
+
+Roumanos, Hadi:
+Okay, so there's no further changes that we expect beyond the 21st of Feb, right? And the changes that are applicable to MRO will get approval on in the STERCO, or at least that's the goal. So beyond that date, you will not have any open items related to changes in process. All I'm saying is that both of these, the changes in process and your change impact, can run parallel until we get that approval on Steerful.
+
+ Yes, if you will go ahead.
+
+Campbell, Kyle (UAE):
+Yes, I understand, but I'm just saying I don't know if we would be able to present this as well as get the approval etc on this deliverable by the time that this milestone is due because it only gives us like six days or something and that means we have to do the updates as well as presented and get sign off an approval on it. I mean, if we're going by that date of the 28th as a date that it has to be all signed off and approved by.
+
+
+
+Roumanos, Hadi:
+So agreed, agreed. But, but my view is the following, right? If we get approval on the changes of the process on the 21st, which is what we're targeting, that leaves you with a week to get your approval for the change impact, right? Because the content you would already have. And the approval on the changes of the process you will have from the circle. So there are no pending question marks on the changes in process beyond the 21st.
+
+
+
+Gusev, Nikita (UAE):
+So you can use that approval to. Ask a question.
+
+Patel, Rahul:
+Is is the design now finalized that? So let me answer that. Let me answer that. Let me answer that so. I will agree to what Hadi is saying. Let me first agree to what Hadi is saying because after 21st I think we should be working on the only delta piece which is the MRO thing which is not finalized in the design. The rest of the design is finalized right which means that we should have conversation for rest of the design, get the feedback approval for the rest of the design and in the week following STAIRCO only get approval for the tomorrow demand related changes.
+
+ That's the idea, right?
+
+Roumanos, Hadi:
+You have 90% approved before the 21st.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Patel, Rahul:
+So we should not say that the entire document should be reviewed after only we get the design information for all the processes.
+
+Campbell, Kyle (UAE):
+OK, so is that making sense? Yeah, Nikita, do you agree with this?
+
+Gusev, Nikita (UAE):
+I agree with this, We're still short on time given the review and approval that would be required for this. My suggestion is to...
+
+Naamani, Mohamad:
+Let's book a separate call, guys, for this in this case. If we're not able to immediately decide on an action, I think it deserves so we don't keep pushing it. Fine. But at least that's the high-level hypothesis.
+
+Roumanos, Hadi:
+We already lost Bastian and Rocio, I think. And Hadi, so I need to drop as well. But anyway, Kyle, a session between you, me, Rahul, and Nikita, if you want, and let's crack this tomorrow during the day.
+
+UNKNOWN_SPEAKER:
+OK.
+
+On holdArun Singh:
+All right.
+
+Roumanos, Hadi:
+Thank you, guys.
+
+Sheth, Kunal:
+We all can be in HQ tomorrow, if required. I'm in HQ tomorrow. Rahul, I have a quick update from Khalid on the technical status call. So he was taking a stock of SDD, the risk mitigation plan, which we have updated. So you said that one date we already passed, that is 31st of January, where we are able to complete the SNC certificate. So that is one point. Otherwise we will have a issue during the pre-go live.
+
+ So that is one point. And second one is the release calendar, which we are following for the S4 HANA transport request. Similarly, we also need to follow the IBP transport request and we need to integrate IBP with the charm.
+
+Patel, Rahul:
+OK, so let's work out this transport calendar for IBP. That's something I have on my agenda to be discussed with at least you, me, and Khushboo. And then this can be then taken up with the GoSiem team. Right. And what should be the transport route for IBP?
+
+Sheth, Kunal:
+That also we need to finalize along with GoSiem team. Anyway, they are not here, but we will discuss later on. And last one, let's align on this point.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Sheth, Kunal:
+Yeah. And Paula has suggested to, uh, we, we should provision the production and pre-production IBP server by me. So that also, we need to put it in our calendar so that we should not miss that date. Yeah. So you can send us details about provisioning action, uh, for UAT. So once the UAT starts, we should initiate the provisioning.
+
+UNKNOWN_SPEAKER:
+Right.
+
+Patel, Rahul:
+As one of the activities for your TV. You can share that with. In church. One more thing, Kunal. The 31st date we had committed 31st date as for SNC. Yeah, yeah, 31st for SNC and
+
+Sheth, Kunal:
+Single sign on for CID. That is the day after tomorrow. But I think we should have This is not impacting anything immediately because this was the data suggested by Rinaldo and Rocio. Alright, so let's go back to Khalid and if there is a possibility to change the state to a later date because we know for sure this is not impacting anything and this is required after SIT. Yeah, Khalid is also agree on the same point that it should be completed before go live, but he was just reminding us that date which you Just because we gave the date and we're not meeting it, he is right
+
+Patel, Rahul:
+on reminding us. Correct. Okay. Yeah. All right, let's go through this list. I'm hearing my own echo. Okay, because Harry dropped. So get the input from the team. And let's also include this discussion tomorrow because I don't want should be disconnected. But at least you can get from the team now just get any updates if if you need and then we close. So any any other. So I think TSD and FSD we are aligned we have two FSD for wave one we have two FSD for wave two based upon today's input if we'll be already with Rinaldo, right?
+
+ Which means tomorrow will be able to share FSD with. Vignesh. You have to set up a call with Vignesh to review FSD so that we can take the feedback right away in the meeting and expedite the approval process. Let's connect. In the morning, let's ask for his time to review FSD.
+
+UNKNOWN_SPEAKER:
+One day buffer.
+
+Patel, Rahul:
+To include. Everything that we discussed today in the existing. Is this something we can do with Rinaldo after this call? So that because Rinaldo would be available now, so by the time we come back tomorrow morning, he'll be able to incorporate and send us the updated, so we don't lose a day in between. Okay, so same for wave two. I think if tomorrow then once we are done with wave one, tomorrow panelist start working on wave two, so that By Friday, we should actually send a view to FSD.
+
+ I don't think there are any specific open points related to WAVE to FSD, other than the point which was related to WBS. We need to highlight the WBS point with SAP. I think that needs to be critical of the critical from this. Uh, Puruj access, no. We've not received feedback. Tomorrow we'll review and try to move. If you collected the right information, information for tomorrow during the planning session.
+
+ Let's decide if it's critical. Yeah, so I don't think so. The plan integration of one year people will develop system next two weeks. We have Rinaldo. Kunal, you're aware of the status of the technical work on the interface.
+
+Sheth, Kunal:
+Rinaldo told me that Buruj for the AdNoc ERP he has done the integration. But Buruj. Datastore creation complete? Yeah, yeah, yeah. For the ERP it is complete. For Buruj, he was stuck up in the accessing of the sandbox. So I have resolved that issue. So maybe today or he will be able to complete that activity.
+
+Patel, Rahul:
+I think he has already started that activity. All right, but for one ERP we have completed the development interface, correct?
+
+UNKNOWN_SPEAKER:
+The development box.
+
+Sheth, Kunal:
+Development.
+
+UNKNOWN_SPEAKER:
+No, no, that part.
+
+Sheth, Kunal:
+He has done the integration for the sandbox, not for the development. For one ERP?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Patel, Rahul:
+It was already there, right? So yeah, but right now we are focusing on development related integrations, right? We're already in build, so we should be focusing on. So let's align on this on the system. So the way we design the interface and the systems connection with each other, this has to be one of the critical activities which we need to do. And if tomorrow, if let's highlight this as critical things, not because we already now like three weeks away from finishing build and if you're not putting the interface together, it becomes critical for us.
+
+ That's right. Yeah, I agree. OK, anything else from anyone? Anything which is not, which is. On track, which needs to be like, Increased in the reference material, technical point, technical point, placeholder for next six weeks. So, data validation, we don't have anyone from GoSIEM team, ensure consequence ID. This is part of the action. So, this is delayed, right?
+
+UNKNOWN_SPEAKER:
+Yeah, yeah.
+
+Sheth, Kunal:
+We have changed the date to 10th March, but we have proposed the date of 31st of January and 7th of February.
+
+UNKNOWN_SPEAKER:
+Sorry. Yeah.
+
+Patel, Rahul:
+This is delayed now. It does not impact us, but this is delayed now. On 7th of, I'm sure this will also be. Internal commitment to ad hoc was 31st.
+
+UNKNOWN_SPEAKER:
+Yeah, 2025. It is. 7. That's. Alright.
+
+Patel, Rahul:
+This transport request is closed, right? So this is.
+
+Patel, Rahul:
+Workshop, this is due next week, not a problem. It's ongoing. So here we need to put up a date, considering now we have three weeks of demand and inventory planning. Let's rent tomorrow and then put up a date here when we should be. And based upon the date, we will highlight whether anything is getting from high to critical. That's it, I think. We will stop here. Let's continue this discussion tomorrow.
+
+ We've reviewed critical and high. If anyone wants to add any other point in the discussion, or any new risk to be added, let us know.
+
+UNKNOWN_SPEAKER:
+I'm not happy. No new risk today?
+
+Patel, Rahul:
+You're not happy? OK. No. You know what we have. It's like, All right. Thank you, everyone. Have a nice day.
+
+UNKNOWN_SPEAKER:
+Bye.
+
+Gusev, Nikita (UAE):
+Thank you. Thank you, everyone.
+
+On holdArun Singh:
+Bye!
+
