@@ -1,0 +1,649 @@
+Patel, Rahul:
+is PR to PO and PR to LTPA. Now let's align these two things, right? So if you remember the last conversation, this is something is available in SAP. So here also, we have, yeah. Here also we have two definitions. It is PR approval to PO and PO approval to GR. Release to GR. Yeah, so if you have PO, which is at least one step, so PO release. Release. To GR and this is PR.
+
+Patel, Rahul:
+creation to PO approval, alright? Creation because PR also goes to approval. Approval then goes to. So PR creation for us IBP will create PR from the time of PR creation to PO approval is the lead time interval. Because between PR creation, PO, PR approval, there is also lead time. I'll create PR today. It will go to PR approval and the PR will get approved in one week. Now from PR, there are different departments.
+
+ The PR approval happens at inventory level. The PO approval happens at purchase level. So essentially. If IBP is creating PR today. Then it will have lead time from PR creation to PR approval. Then lead time from PR approval to PO creation. So there are three different buckets. So so everything right from PR creation to PO approval has to be one victa which is internal to ad-hoc. Because this is ad-hoc internal process.
+
+ Now once the PO is released. In the as a scenario, they only consider PR approval to PO creation. We can clarify this so there are But theoretically. Once the PR is created, the PR is not available for PO process. There is this internal lead time at inventory, so there are different functions, right? So let's let's put this up here so that we are all. Yeah, so I'll just. So PR creation.
+
+UNKNOWN_SPEAKER:
+Creation to PR.
+
+Patel, Rahul:
+approval, right? So this is adnob inventory shared services. Then PR approval to PO creation. Here, this is tendering. Because you have PR, but you don't have vendor. Through tendering, the vendor is identified. Creation to PO approval is purchasing. Once you have PO approval. These are different variations of internal lead time. So we can say that all three combined can be So this when I say this it is all three combined.
+
+
+
+UNKNOWN_SPEAKER:
+OK.
+
+Patel, Rahul:
+Now the other variation is yeah, that's what I said. When it is LTP, we know the vendor, which means it does not go through the tendering process. And it does not go to PO approval process because the LTP is approved. Which means it only goes to PR upload process, which is a shorter lead time. That's why the lead time That's why at now team is saying that the internal lead time is also not fixed. So original thought was internal lead time to be maintained in S4.
+
+ But this is not available in S4. Not available in S4, right? Are we all aligned on internal lead time and the definitions of internal lead time and what is the current status? Question. Yeah, thank you.
+
+Hector Palacios:
+We have many, many steps on the AdNoc side and the information is not available.
+
+Patel, Rahul:
+Yeah, so that's step one, step two, step three, and we are talking about VR creation. And for what they say, it is not, we cannot apply just a single rule.
+
+Hector Palacios:
+Yes. Depends on the cost of the material sometimes.
+
+Patel, Rahul:
+that they can take more or less time yes so there is this yeah because the approval hierarchy is cost up in the middle right it's more expensive the material it goes to more more level of approval and more time
+
+Arun Singh:
+it will take maybe we can define a rule by html that's an option now I have a questions So in the current process, right? They are running MRP so the MRP will be taking a lead time from some master data, right? Yes, but how this lead times are being incorporated at the, you know, in the current process like the external internal and all so forth.
+
+Patel, Rahul:
+This is not a corporate. That's why they are asking us to incorporate. That's the issue. So that's why this is not available in S4. It's not there in S4. S4 has a field to capture internal read time. So basically there is a configuration object in S4 which was identified where we can put up this value, but it has to be fixed value. So we recommended that, but then they said no, we cannot use it because there is also variation between the internal read time.
+
+ Which means now this again becomes that A point where. We need to right now incorporate this in IBP and then align with. Ignish how whether it can be incorporated in S4 or it remains in IBP, which is not a best practice. We are aligned here line. Alright, now the next is external lead time. External lead time is after you have PO is communicated to vendor. Vendor takes his own lead time and the material comes to AdNoc.
+
+ AdNoc approves the quality like you receive the material, then after receiving you do the quality check and once the quality check is confirmed, the material is available in stock. So this is the PO release to GR. In the material master, the field is lead time. Yeah, yeah, yeah, There is an enhancement.
+
+UNKNOWN_SPEAKER:
+Enhancement.
+
+Patel, Rahul:
+I'll put it here because this is related to PDT. Average. Of past three PO2GR. So what they do is they calculate the release date. They calculate the good to see date and take average of it and update as this. But the issue here is. Only this this started two years back. Which means they did not run the program. Throughout the entire history of the model and The program started two years back, which means there are many models which do not have this external lead time.
+
+ So that is where the request from Jagannath is. The external lead time calculation should be in IBP. Or MRO, Internal Lead Time Calculation, IBP. Same is for, yeah, here. Same is for TLS. But drilling also needs this in IBP. Drilling also has this additional lead times, which we discussed in the drilling process, which also need to be defined in IDP. So, what I'm seeing is, we may not be able to look at the lead time in IBP, in S from S4 HANA, because it's just one static field, which is not even completely filled for all the materials.
+
+ So, it's better we do everything in Splorano, in IDP. So are we able to iterate the history of this? Yes. So we have the historical purchase order in Splorano. We can integrate this historical purchase order. And, Reinaldo, you can confirm your saga. You're confirming it. So we are trying to do that, which has open view. It also has historical view. Any historical PO you have the two dates? The request date and when you receive it?
+
+ Correct. But we need to ask them for FST. This is a custom program today, right? Yes. As this FST, we can ask to check what dates that they are using for the date. And it's in our logic as well. So that's logic we must study for right now. Because they also have a logic for scenarios where there are no POs available. The material is never procured. So I think it's a good point. Yes, good point. Materials which are never procured.
+
+
+
+Hector Palacios:
+They were telling us here to do some like high level.
+
+UNKNOWN_SPEAKER:
+Yes, so yes.
+
+Patel, Rahul:
+Here average. Average of all the lead time. Of the available lead time for all the materials for the given category. So all the pumps can have an average lead time so that that way you determine the lead time for all the materials. Based on our discussions with the Murugan team, in S4 HANA they are having one program which is calculating this lead time, right? Yes. Can we not leverage the same program and push that calculated value to IBP?
+
+ That's the program what I talked about average of past three years. But the point is the program is only going two years back. And the program only works for the models who have procurement history. And that too right now it's only updated based on last two years when the program was activated. The program was not activated retrospectively is what the team is saying. So Vignesh is not recommending to use this program, right?
+
+ Not Vignesh. Jagannath is not recommending. So, we can align this as one of the agreement for, if Hector Palacios, you are aligned on this approach, we will get this confirmed from AdNoc that this is what we are proposing based on all the discussions we've had at the design validation workshop. Yeah, yeah.
+
+Hector Palacios:
+So, here's a question when we talk about the historical leap time, this only to include the external or also the internal?
+
+Patel, Rahul:
+Internal is fixed irrespective of the model because it's the time it now takes, it does not matter for which material, right? But we are saying that it depends on the cost of the material. If cost of the material, if we want to add the segmentation and define differently in time, yeah, we can do that but it's still not a material level, it's an aggregate So I don't we have only like three more variation, right?
+
+ So yeah, we can. We can. We can. We can propose that right now, but but the idea is that we calculate. So if it is an IBP, we can like add all those different levels at which you want to calculate and have different lead types.
+
+Hector Palacios:
+OK, can you add their plan in the release and average of the tree? Sorry, on the release. That you have there internal, can you add, like, the IVP logic should be, like, to take a fixed value depending on HTML?
+
+Patel, Rahul:
+And in the other one, that is going to be the average of the historical. It depends on HTML.
+
+UNKNOWN_SPEAKER:
+All right?
+
+Patel, Rahul:
+Yeah. Here I already have mentioned external logic on the table, right? Either of these two. If you have, so let me put it. Logical, so I'll put this. If historical procurement, historical procurement. Hector, I have a question. External, I could not get that. Yes, no. But Rahul here, it should be on the whole history, not only on the last three. So I'm not limiting to the history. If we have more data points, we'll optimize it, right?
+
+ So if it's historical, based on history. Total history, right? If no historical problem, based on average. Or materials that I get. It's on rate of material that I get. Do you have a question? Yeah, so what I'm saying is, HTML, if I'm not mistaken, has attributes to cost, right?
+
+Vivekanand Gajula:
+Yes. And what is going to be the internal link?
+
+Patel, Rahul:
+That would be the input from AdDoc. Oh, so it's the input from AdDoc. Create a matrix for them for internally time, depending upon different stages they think. And then they can update this AGC wise or not. I think it's better AGC wise. They can, for every AGC, they can tell that how much time it takes for PR to PO, PO to whatever lead time they have. And if that lead time, if the PO approval takes or PR approval takes more time for higher versus less, This matrix can be provided as input for them to, like, based upon the matrix, they can help us define the master data.
+
+ Okay. Just to clarify, Reinaldo, Sagar, you understand the logic for getting the lead time from the views? Or do you need any clarification to start But I understood so I need to check once in S4 and then if I have any questions then I can get back to you guys or questions.
+
+Mudit, Khushboo (UAE):
+Also, there is an FSE shared for this already. I think Rahul you forwarded it on email?
+
+Patel, Rahul:
+If I have received I must have forwarded but I don't remember if.
+
+Mudit, Khushboo (UAE):
+share the link again, the SharePoint link.
+
+Arun Singh:
+Right, so just one question, sorry.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Arun Singh:
+Like if you're determining the lead time based on the historical PO, right? So for the LTP products, right, they have the call of orders created, okay? Yeah.
+
+Patel, Rahul:
+So how you will determine lead time for those materials? For those materials, see, there are only different types of lead time. If the LTP is available, the lead time is only from PR, LTP, PR to, yeah, PR approval only because the internal lead time is only this, right?
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Patel, Rahul:
+So, essentially, in our logic, we say, we have to identify, right, whether the LTP is available. If LTP is available, the lead time of LTP required process is considered. The lead time of PR, PO is used. And what about the tendering ones?
+
+Vivekanand Gajula:
+Tendering one is PR, PO.
+
+Patel, Rahul:
+So if you see this PR, PO process, there's three steps, right? To PO approval, tendering, and after tendering, PO creation to PO approval. So if it is not LTA, it is PR. And for PR, it assumes tendering.
+
+Arun Singh:
+But for tendering, we don't have to, right? Because it is still, there is no fixed time.
+
+Patel, Rahul:
+Yeah, but there is a fixed timeline. They have six weeks of time. They have a process of tendering, which means they communicate to the multiple vendors. They give them time to reply. They receive a reply. They evaluate. Then they take decisions. The lead time is six weeks for the tender. It does not matter which vendor. So basically internal will be rule based and we need to have for each of these stages we need to have a fixed number that they can update us.
+
+ Sim do you have any other question to close this topic?
+
+Arun Singh:
+And just one more thing so for the end movements, like between plans or between SLOG to SLOG, there is no lead time, right?
+
+Patel, Rahul:
+That's the input we have. The lead time is only for external procurement. Because, since everything is within UAE, probably lead time is maybe four, five, six days. Since we are doing planning on monthly bucket level, it will not add any, like lead time should be in terms of two days.
+
+Hector Palacios:
+But what Omar said, like, at the beginning, he told us that. Yes. All right.
+
+Patel, Rahul:
+Let me jump back to the table that we had the discussion. Yes. Here.
+
+Hector Palacios:
+Okay, about the stock on hand guys, I'm pretty ignorant on SAP. I know that the information is by plan, but what about the storage location if we need to go to that level?
+
+Patel, Rahul:
+Information by default is available always to all locations. Cannot… Storage location. Storage location shouldn't be an issue. It's also pending on the above of change that we need to do for this. Yeah, it's a standard table. It's pretty straightforward. A standard extractor should be able to do it for us without any much changes. Rahul, for stock on hand, especially for drilling, do we need to check only at the plant storage location?
+
+ For drilling, there is VMI stock as well, right? And there is a custom table shared for VMI. This information is already available. So for drilling, we need to consider three stocks. One, stock on hand. Second, stock on the custom table from SAP. And then stock as manual input from end user. So the VMI, not all the VMI vendors are available, which means we should have Excel file available for the For chemicals also we have VMI stock no?
+
+ For chemicals we have VMI stock but I don't remember any conversation where they want us to incorporate VMI stock into IPP. So yesterday also if you remember I spoke to this guy and they said that it's not internal and now it's almost external so there is no optimization But I think Jagannath mentions that we should consider the external VMI stack for optimal design. Let's take this as an input for us.
+
+ Krishna, can you take note of this point to be checked with Vignesh? Not with Vignesh, to be checked with… One more thing. Am I audible, Hector? Yeah, I can hear you. OK, so in this mapping key figures, right, all the PO, like different PO types, right? I'll have to jump. Khushboo, can you continue this call? And I'll join back in five to 10 minutes.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Vivekanand Gajula:
+Hector, can you add VMI stock also? Because that is OK.
+
+Hector Palacios:
+We will need to add something. The entire for drilling as well so we will need to duplicate this but in the meantime let me add it here.
+
+Arun Singh:
+Yeah and also probably we need to add a repeat PO like a different key figure for them repeat PO and call of orders.
+
+UNKNOWN_SPEAKER:
+Okay.
+
+Vivekanand Gajula:
+I think for repeat orders what I understood from question is that they a status in ebun so it's a repeat p repeat status in it's a different sub document type so is the same table but different document types only
+
+Mudit, Khushboo (UAE):
+it's a different table actually ebun table I guess yeah so repeat po's is uh it refers not to the the purchase order tables, but instead the purchase requisition tables. And let me actually look on S4.
+
+Vivekanand Gajula:
+This field is not there in purchase order table.
+
+UNKNOWN_SPEAKER:
+No.
+
+Arun Singh:
+And also, Akhtar, In the mapping master data sheet, right? Uh, I have not, uh, like do we need to add a status for material which are repairable or rotables, something like that?
+
+Hector Palacios:
+Repairable indicators.
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Hector Palacios:
+It's here. We should have a repairable indicator.
+
+UNKNOWN_SPEAKER:
+Let me check.
+
+Hector Palacios:
+I have seen it. So I don't think that it's going to be a complicated one. There it is. Yes. To execute. We even have the field Marcy this one.
+
+UNKNOWN_SPEAKER:
+That's right you.
+
+Vivekanand Gajula:
+Hector one more thing I don't know if this was discussed before so when we integrate this target always the unrestricted stock, because stock has different types, right? You're talking about stock on hand? Yeah, stock on hand. So there are different types of stock, like quality stock, unrestricted stock.
+
+Hector Palacios:
+So we are only considering unrestricted stock, is it?
+
+UNKNOWN_SPEAKER:
+Yeah, available.
+
+Mudit, Khushboo (UAE):
+So this was a field I was representing. Into an event table document subtype or this is the Z field and here you should have.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vivekanand Gajula:
+This is Porsche's requisition.
+
+UNKNOWN_SPEAKER:
+Correct, yes.
+
+Vivekanand Gajula:
+I think we already have that field in supply chain network file, I guess.
+
+Mudit, Khushboo (UAE):
+Yes, I have documented it there.
+
+UNKNOWN_SPEAKER:
+Yeah, we have it.
+
+Hector Palacios:
+And what we are getting from here, Kushma?
+
+Mudit, Khushboo (UAE):
+Repeat order, how to supply, how to identify repeat orders. But then Rahul was saying this is also available and the purchase order tables which I don't find it. I don't see it in the purchase order tables.
+
+Arun Singh:
+So I think reading in some different document type for this repair.
+
+Mudit, Khushboo (UAE):
+No, I don't even see a document.
+
+Mudit, Khushboo (UAE):
+There's nothing for repeat purchase orders specifically. But then once they convert this PR to PO, then?
+
+Arun Singh:
+So what is converted?
+
+Vivekanand Gajula:
+I think, Arun, what we can do is we can take an example of a PR which has that repeat order And then with reference to that, if they have created any view, we can check.
+
+UNKNOWN_SPEAKER:
+We can check. Yeah, OK.
+
+Arun Singh:
+But this P rex numbers are looking like some your home.
+
+Mudit, Khushboo (UAE):
+Standard document type. Yes. So I don't think it's differentiated based on the document type of purchase orders. So far I've only seen this field in the purchase requisition tool differentiated. To differentiate repeat orders.
+
+Hector Palacios:
+OK, so this is the only type that we are not able to find here. All of the other types like call of orders is here.
+
+UNKNOWN_SPEAKER:
+On the echo table.
+
+Mudit, Khushboo (UAE):
+Call of orders.
+
+Mudit, Khushboo (UAE):
+You have a separate document type? I'm not sure, I don't think so.
+
+Hector Palacios:
+Also, I don't know. But at the end we will need to differentiate, right? So when we send this in. Yeah, I guess when we do this on IP we need to know if this is going to be a code of order.
+
+Mudit, Khushboo (UAE):
+So I guess they should be a different order type as well. Let me check.
+
+Arun Singh:
+I think it's a different document altogether.
+
+Mudit, Khushboo (UAE):
+Not that I have seen call of orders. But now do you know if call of order in separate document is on hold?
+
+UNKNOWN_SPEAKER:
+OK.
+
+Mudit, Khushboo (UAE):
+And let me check this. Let's park this and let me check this, but I don't think it's a document type.
+
+Hector Palacios:
+Could be again some field in the PO or PR. Let me go to the table. Let's take some notes. Let me share this one again. So for Open POs, I think this is a standard table, so I will put RAID EXECUTE. Saga, Reinaldo, the Open POs, are you clear with this one? Or do you need any clarification or from the team?
+
+Sagar Vora:
+Open POs, we have to be careful. We only look at material POs, all of the material POs. For open POs, I think I'm good with the table, but only if any filters need to be applied.
+
+Reinaldo Gutierrez:
+Yeah, the document type should be should be there in this point in particular.
+
+Sagar Vora:
+You can just add that note as well.
+
+Mudit, Khushboo (UAE):
+I'll check the document types. I don't think everything will be applicable.
+
+Vivekanand Gajula:
+Hector, whatever open POs and STOs will integrate to YVP, it is going to be from current to future? Is it? Can you repeat, Vivek? Yeah, I mean, whatever open POs and STOs we have in the system, right, it is always going to be from current to future.
+
+Arun Singh:
+I mean, whatever we are going to integrate to IVP. Yes, it's only for our supply execution.
+
+Hector Palacios:
+Will there be backlog orders as well?
+
+UNKNOWN_SPEAKER:
+Backlog orders? That's what yesterday I was asking you.
+
+Reinaldo Gutierrez:
+Good question. The same of the document type is going to be for the next one, the PR table, to see what's the document type that they want to go into IPP. Yeah. All right. I think that should be for all of the ones, yeah.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Vivekanand Gajula:
+Also, I guess if there are any I mean material reservations in the past and they are still open you know they have not closed them. So I don't know whether we should ignore them or we need to consider them.
+
+Arun Singh:
+And if we need to consider backlog then till what horizon?
+
+Vivekanand Gajula:
+we need to consider Vivek can you repeat the last thing that you said yeah see Rahul was saying right material reservation has two statuses right one is open and the other one is closed now let's say they have a material reservation which is still in the past okay and they didn't consume it, but it is still open. So we need to ignore that or what exactly we need to do with it?
+
+Hector Palacios:
+Reservations open in the past. Let's take one note on that if we have that example.
+
+Mudit, Khushboo (UAE):
+One action that we have captured on this is to, in parallel we are preparing this document to tell AdNoc things that they need to know or master data or transaction data that they need to clean up. So this is one of the items on that list where they have to close their open material reservations.
+
+Vivekanand Gajula:
+OK. So they will close it.
+
+UNKNOWN_SPEAKER:
+Got it.
+
+Mudit, Khushboo (UAE):
+We will recommend it, whether they'll do it or not is secondary.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Hector Palacios:
+But their recommendation is to close it, then we shouldn't.
+
+Hector Palacios:
+okay so all right so we have some definitions pending on open POs, repeat POs, code of orders, STOs, something to clarify here Tim or this is clear enough because this is more simple I think same comment you can put
+
+Vivekanand Gajula:
+like what about the you know backlog STO Sorry, I have one question.
+
+Arun Singh:
+So like are you aware that at present for them the available stock is only the unrestricted stock or it's like quality inspection or stock in transit as well. They are considering or let's say return stocks.
+
+Mudit, Khushboo (UAE):
+I'm not sure. We'll have to check. I don't recall even asking this to Adnox.
+
+UNKNOWN_SPEAKER:
+Oh, OK. But let me check some example materials that are. OK, sure. Thanks. OK.
+
+Hector Palacios:
+So backlog STOs for the open POs. About the tables, do you have any questions? I think that this is pretty standard.
+
+Vivekanand Gajula:
+No, table is the same one, A, K, PO, A, K, PO.
+
+Hector Palacios:
+OK, perfect. So one thing that we need to understand from the PRs as well, Kushbu, is to understand which ones we can modify and which ones we cannot modify. So the discussion we were having with Rahul is to have an horizon. So maybe in the next two months, whatever is a PR there will be converted to a PO, so we don't need to touch it. But after the horizon, then we can just delete whatever PR they have on the system and then send it again, you know?
+
+
+
+Mudit, Khushboo (UAE):
+So like overwrite, basically, replace. Yeah. OK, so we need filters here also, right? Yeah.
+
+Hector Palacios:
+Exactly, so we bring only the PRs. So basically the PRs that are in the next two months inside the horizon, we take it as certain and we say, OK, we will consider this on IEB. So we will not generate a PR for this because there is already one there.
+
+UNKNOWN_SPEAKER:
+You know, so basically. OK.
+
+Vivekanand Gajula:
+Thank you so much. I'm going to do one more thing. You know they keep talking about open PRs and STRs you know so our understanding I mean we are assuming you know open PRs STRs you know is same as fixed PRs and STRs it's just that we need to confirm with them you know whether the understanding is correct or not because open PO I understand you know they create the PO of 100 and they do the GR of only you know 30 to 70 is open but what does open PR and STR means to add now.
+
+ I'm not sure.
+
+Mudit, Khushboo (UAE):
+OK, but then then what do you mean by fixed PR and STR here?
+
+Vivekanand Gajula:
+Fixed means they will form this and so that you know they they are about to, you know, convert this to PR.
+
+Arun Singh:
+OK, probably in the release process of PR, right? Probably they will be forming all this PR so that system does not delete or MRP does not delete and recreate new ones.
+
+UNKNOWN_SPEAKER:
+So, or maybe they might be changing something. Okay. All right.
+
+Hector Palacios:
+For VMI stock team, I seen that the table was already shared. Do you have any question about this?
+
+Vivekanand Gajula:
+I think the only question is, I understand drilling and chemicals both have VMS stock. But in chemicals, that guy, Jagannath, was insisting to consider VMS stock. So that's what Rahul just now confirmed. So Rahul and team is going to double check you know with ad hoc business whether you know we need to consider vms stock or not for chemicals for chemicals yeah yeah all right all right um perfect so we we
+
+Hector Palacios:
+have other ones to check um This is more important. For the general maintenance activities, the question is how they are doing it today because we have a standard structure that if they are using the PS module for maintaining this information, then we can get it. But I'm not sure if they are using it on the right way or if we just need to extract the work orders for preventive maintenance in this case.
+
+ And if that is the case, how we can extract the WBS element if it is right away present there?
+
+UNKNOWN_SPEAKER:
+Or we need to do anything else?
+
+Hector Palacios:
+Do you have clarity, Kushboo, about this one, like the turnaround orders in the future?
+
+Mudit, Khushboo (UAE):
+Can we not refer the existing relationship between these turnarounds, maintenance orders and WBS? Kunal, do you know if we can check WBS for turnaround maintenance orders? Yeah, Khushmu.
+
+Sheth, Kunal:
+But we need to open any old orders in S4 HANA, and then we'll be able to figure it out the WBS element. So basically, we'll be able to get this relationship from tables, right?
+
+Mudit, Khushboo (UAE):
+I think we should be Yeah, it should be standard only.
+
+Sheth, Kunal:
+Because whenever the turnaround maintenance order is created, what I understood from Jigna is that they are using a WBS as a reference point. And for turnaround, we have a separate order type. I think PM06 something. So that it will ask for, I think WBS element would be a mandatory field to be entered in the document. So that always it will plan in the WA segment.
+
+Mudit, Khushboo (UAE):
+Do you know the tables I can check right away?
+
+Sheth, Kunal:
+Table I think need to figure it out but can you just go to the maintenance order screen we'll be able to figure it out by any maintenance order report where we can enter the order type OK, let me share
+
+UNKNOWN_SPEAKER:
+my screen. OK.
+
+Mudit, Khushboo (UAE):
+You said SP?
+
+UNKNOWN_SPEAKER:
+SPM. Sorry, what's the report you said, Kunal?
+
+Mudit, Khushboo (UAE):
+No, no, not report.
+
+Sheth, Kunal:
+That is the order type, PM06. What's the table where I can filter this?
+
+Mudit, Khushboo (UAE):
+I think we can get this in AUFK, I guess.
+
+UNKNOWN_SPEAKER:
+OK.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Mudit, Khushboo (UAE):
+And we want to check WBS wave.
+
+Sheth, Kunal:
+It's here. It's there. Only select the WBS and let us see, do we have an entry there?
+
+UNKNOWN_SPEAKER:
+It's blank.
+
+Mudit, Khushboo (UAE):
+That means they're not using WBS on PM 06 orders.
+
+UNKNOWN_SPEAKER:
+Right?
+
+Vivekanand Gajula:
+Is there any relationship between cost center and WBS? In some cases. Yeah, I don't think there should be a relationship between cost center and WBS.
+
+Mudit, Khushboo (UAE):
+This WBS is on projects. Yeah, it will be an indirect relationship if at all any. So yeah, we have WBS on a few we can get it from this table.
+
+Vivekanand Gajula:
+Okay. So it's clear.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Hector Palacios:
+We will need to get it from the work orders because I seriously doubt that they have the The way of working that we were requiring. I would be supposedly if they use the PS element. Uh sorry. The PS module.
+
+Vivekanand Gajula:
+They and then we can do the explosion but it's highly unlikely that they are doing it that way. Projector, we also need to clarify from them like why are they creating PM06 orders without reference to WBS? Orders without reference to the WBS? Both the cases right with WBS and without WBS.
+
+Hector Palacios:
+Okay, where did I have this one? Creating Perfect. Any more questions here, Tim?
+
+Arun Singh:
+Yeah, Kunal, do you know how to view the call of order in S4? Can you show us one document?
+
+Sheth, Kunal:
+The call of order also a different order type what I understood from the Jagat so maybe Khushbu can you open the PO report I think in ME 23 and also we can be able able to see.
+
+UNKNOWN_SPEAKER:
+OK, one second, yeah. Yeah.
+
+Sheth, Kunal:
+There must be a separate. Document type for Colossus.
+
+UNKNOWN_SPEAKER:
+order.
+
+UNKNOWN_SPEAKER:
+Do you know where you want to check for now?
+
+Mudit, Khushboo (UAE):
+Yeah, just scroll down.
+
+Sheth, Kunal:
+Let us see. We have a call of document type or not. In the document category, right? Document type? Right, right.
+
+UNKNOWN_SPEAKER:
+Just scroll down.
+
+Mudit, Khushboo (UAE):
+Do we have? All of them. No, we have an LTP. Release order.
+
+UNKNOWN_SPEAKER:
+Is this the one? I think this need to check. We need to check with Vignesh.
+
+Sheth, Kunal:
+Because based on our discussion, they are saying they have a separate type for that. Let's check it out.
+
+Vivekanand Gajula:
+On Google, it is saying call of order is a release order. So most probably that release order LTPA should be call of order.
+
+UNKNOWN_SPEAKER:
+Right?
+
+Vivekanand Gajula:
+Yeah, ZRO. But it says call of order is always with reference to a contract. So maybe as they have called it as LTP and LTP is a contract, so most probably this could be a call of order.
+
+Mudit, Khushboo (UAE):
+Let's check a few.
+
+Mudit, Khushboo (UAE):
+Agreement is planned. OK, it's only available in some cases.
+
+Hector Palacios:
+We should put the agreement that you're seeing there is related to LTPA.
+
+Vivekanand Gajula:
+Let's try.
+
+Mudit, Khushboo (UAE):
+It looks like, yeah, it's a standard value contract.
+
+Hector Palacios:
+Good, we will need that information as well. There are some inputs that we haven't checked.
+
+Mudit, Khushboo (UAE):
+But we will need. In this document, in the supply network document, I have added the filters to identify LTPM. That's right. Yeah, these will be LTPMs.
+
+Hector Palacios:
+There are some specific fields that we need to check if, well, if we can check internally in the in the in the table. Maybe we can find it right away.
+
+Vivekanand Gajula:
+One more thing, were you able to ask ATNOC what is the document type they're using for LTPA?
+
+Mudit, Khushboo (UAE):
+For LTPA agreements, yeah, these are the document types.
+
+Vivekanand Gajula:
+So yes, this is an LTPN agreement.
+
+Mudit, Khushboo (UAE):
+OK, I'll check how we can differentiate call of order. I think it should be ZRO we are guessing, but let me confirm. Okay, so let's do the following.
+
+Hector Palacios:
+I need to jump, but I will send you Gushu and Tim. I will send you all that is pending definition because basically we had some questions. All right, so ideally in the future when we have access again to KPMG Teams, I would rather prefer to have this table on your site as well, so you see all the fields that are on your side as well. But for now, I will share my email, all right?
+
+Mudit, Khushboo (UAE):
+Okay, all right. Can we plan something for one hour tomorrow just to understand what are the open topics that we still have? Accordingly, we can plan a technical discussion next week with AdNoc since we don't have any new design workshops.
+
+Hector Palacios:
+We have a meeting tomorrow morning We have one? We have an iteration weekly tomorrow. And after that one, I can stay at least if we need more time.
+
+Mudit, Khushboo (UAE):
+12 to 1, OK.
+
+Hector Palacios:
+But it's regarding like functional topics or more technical topics? It's the open topics.
+
+Mudit, Khushboo (UAE):
+It's the open topics and all the feedback that we got in validation workshops.
+
+Hector Palacios:
+If we are aligned on the technical side point, we can use that time to instead of addressing technical topics which we are already aligned to address open like more functional open point. Yeah, yeah, as we are already discussed today, let's use that time tomorrow before discussing the open topics then because we.
+
+Mudit, Khushboo (UAE):
+Yeah, OK, mostly mostly I think we have addressed a lot of it now. Most of them in the workshops and a couple of them between yesterday and today's discussion. So I don't think we'll have a big list pending still, but we can still go through. And the other important thing is to just go over quickly on the validation workshops feedback. And then accordingly, we can see what we need to practice next week because we don't have anything on our calendars with AdMob.
+
+
+
+Hector Palacios:
+Yeah, I know. We are taking many notes in this meeting, so let's review them.
+
+UNKNOWN_SPEAKER:
+Yeah. Yeah. All right. Perfect.
+
+Hector Palacios:
+Thank you, team. Thank you for your time.
+
+UNKNOWN_SPEAKER:
+Bye-bye. Thank you.
+
+Vivekanand Gajula:
+Thank you. Bye-bye. Thank you.
+
+Patel, Rahul:
+Bye-bye.
+
+Reinaldo Gutierrez:
+Bye, guys.
+
+UNKNOWN_SPEAKER:
+you
+
