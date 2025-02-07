@@ -1,0 +1,594 @@
+UNKNOWN_SPEAKER:
+Bye, everyone.
+
+Campbell, Kyle (UAE):
+But you cannot just ask something before we get started.
+
+UNKNOWN_SPEAKER:
+If you don't mind.
+
+Campbell, Kyle (UAE):
+I'm there. I attended the stand up call in the morning, but no one else attended. I don't know if that call happened because yesterday I was told to bring up the points about that risk assessment and we need to discuss that with Khaled because we need to set up a meeting with Omar, the guy who's asking for it.
+
+Roumanos, Hadi:
+But which call did no one attend because we were in both?
+
+Campbell, Kyle (UAE):
+No, the morning usual call, but today Khaled was not Yeah, so I was told to just bring it up, but now I think Khaled's on leave, right? Yes, until Tuesday morning. So I should bring it up on Tuesday in that meeting?
+
+Roumanos, Hadi:
+Or share an email, but anyway, he's on leave, so there's no point in that. Yes, Tuesday morning then. Okay, okay, thank you. Yeah, no worries.
+
+Roumanos, Hadi:
+Rocio, is anyone else joining from OSM?
+
+Rocio Minguillon:
+Let me ask.
+
+UNKNOWN_SPEAKER:
+Hi, everyone. Hi, Weston. Hi, Weston.
+
+Roumanos, Hadi:
+We need Raul in this call. I'm going to give him a minute.
+
+Madhavan, Tara:
+I'll ping him as well. Is he available or is he traveling?
+
+Roumanos, Hadi:
+Not sure if he's traveling at this time.
+
+Fakhouri, Mohamad:
+Yeah, I think he should be on his way to the airport.
+
+Roumanos, Hadi:
+Let's keep it quick since we don't have most of our team. Mohammed isn't here, Raoul isn't here. We covered the critical items yesterday at length, and we covered the calendar. Let's keep today for anything that is pending any actions from our side today, as well as any additional risks that we need to add. And maybe we can use the time for change management's impact assessment as well if we don't have any of those.
+
+ So let's go around the table Does anyone have anything? And then we.
+
+Madhavan, Tara:
+I have hardly we are. We are supposed to send the test scenarios to Adnoc for approval today and we are. We should be getting the approval by next week. I think Hushboo is going to send.
+
+Roumanos, Hadi:
+Which was that something that is on your plan today?
+
+UNKNOWN_SPEAKER:
+Wish we were with us. Yeah, I'm here. Yeah, I'll send it. OK, OK fine.
+
+Roumanos, Hadi:
+Now we're just doing around the table now that you've joined just to see if there's any additional risks or additional actions that need to take care of today, given that we've spent most of yesterday and the day before cleaning up our lists and calendars. So that's one from Tara and Khushboo. Anyone else needs to add anything?
+
+Madhavan, Tara:
+I have a couple of more points. One is we have to finalize the test script to upload to ALM. And today when I spoke to Rocio, she said she is waiting for directions from Kunal on whatever is pending. I wanted to make sure both Kunal and Rocio are on the same page because I don't think Kunal was aware this was a dependency.
+
+Roumanos, Hadi:
+Good you brought this up. Kunal, this is something on your radar.
+
+Sheth, Kunal:
+Are you going to connect with Rocio? Yeah, I'll connect with Rocio separately because I did not receive any test script from Rocio.
+
+Rocio Minguillon:
+OK, OK, let's align Kunal. Because yeah, we sent it, but before the So my doubt is it's not regarding also the scenario, because you will check and you will see all the steps, but it's regarding the procedure. I mean, will you be the one to send it and when and everything. But I think that it's after they approve the test scenarios. So I don't see it as critical, but yes, let's align.
+
+Madhavan, Tara:
+Sure, sure, after that I'll call you online. Yeah, not critical, but nobody mentioned that we don't have much time, so better to be prepared. That's yes, yes, yes. Yeah, yeah, another point is we had put that configuration sprint 2 integration in red and as per our understanding, configuration sprint 2 should close today. Are we good to close this today? Are we starting configuration 3?
+
+UNKNOWN_SPEAKER:
+What is the status?
+
+Rocio Minguillon:
+Well, it was in red because of the of the drilling data. So let me check what what we do in terms of the decision. I mean to show that the sprint has delay or or to to close it and said OK in Spring 3 we're going to finalize all the integrations that we're missing. Today on the status, but there is no a new point regarding the next steps. I mean. I don't know if I'm clear. OK, you will.
+
+Madhavan, Tara:
+You will send us the status sometime later today after aligning with the team.
+
+Rocio Minguillon:
+Exactly exactly and after after yeah today work because we're we're focusing on on that integration because.
+
+Madhavan, Tara:
+what we need for for sprint three but yes yeah we also want to know the impact on sprint three we want sprint three yes yes okay and my understanding is that all open points uh with respect to uh design
+
+Rocio Minguillon:
+validation is being correlated yes you asked me something about that in the chat now can you Can you share what is that? Because as I understand, we have the open points tracking. We are tracking the open points in our tracker of open points that you have shared. But I think that you asked something, Kushu, no?
+
+UNKNOWN_SPEAKER:
+Regarding this.
+
+Mudit, Khushboo (UAE):
+Yeah, so I wanted to align with Bastian and Hector on the actions that are coming off from the validation workshop. We have a consolidated list. One, we will be sending out these testing scenarios for Adnox validation, and second, internally, we need to go through those actions or the feedback that came from the workshops to see how we incorporate them in the build.
+
+Rocio Minguillon:
+Okay, okay, so I see that here, Tara, we need an alignment, a quick alignment with Bastian, Hector, and Guchu regarding how are we tackling the open points, but yeah, we're tackling it now. I mean, we included them and we're we're working on on that changes during the Spring 3.
+
+Madhavan, Tara:
+OK, this is connected to my next question. What are our plans for further validation sessions for wave one? Are we planning any? Do we have an idea of when we're going to plan? To inform the users accordingly?
+
+UNKNOWN_SPEAKER:
+Okay, no more sessions for now.
+
+Bastian Osorio:
+So what about the reference model question?
+
+Patel, Rahul:
+Because reference model is an important part of Wave 1 which we have never discussed with anyone. So we cannot not have it as part of Wave 1 and directly go to UAT or SIT to do it.
+
+Bastian Osorio:
+We cannot go to SIT?
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Patel, Rahul:
+For reference material without getting feedback from AdNoc, we should not go to SIT. This is something AdNoc has been asking very critically. We agreed that after the first set of sessions, we'll work on the reference session. But we need to have one alignment meeting with AdNoc for reference sessions, actually. Reference material, at least new materials.
+
+Bastian Osorio:
+The thing is that we need to have a lot of data to perform this activity. And I'm afraid we're not going to have all the data required before the closing of the configuration wave one. So we can have this session, but it's not going to be like part of wave one, like in the calendar, it's not going to be part of the wave one configuration phase, configuration testing.
+
+Patel, Rahul:
+Why do you feel we'll not be able to load all the data for the next three weeks? Is there anything which which is stopping us to load the data in three weeks. If you're afraid that you are not able to load data, then it's a risk which we need to track and prioritize our effort towards making sure that we are able to, because a lot of things are dependent on this data.
+
+Madhavan, Tara:
+Rahul, should I add an item in our tracker, risk tracker?
+
+Patel, Rahul:
+Yes, so if Bastion feels that there is a risk, we need to understand what's the risk around this data.
+
+Bastian Osorio:
+Of course we are working on integrated data but I cannot say okay let's let's book a call for the next week or next two weeks so we can have decisions because we need to have the data to start working into creating scenarios so on so forth so of course if we need to schedule a meeting to review a reference material I will recommend do it in the last week of the configuration in testing phase, which I believe is in three weeks.
+
+
+
+Patel, Rahul:
+The point I'm making is, Bastian, we can agree on the date, but we need to put up a plan. We know what are the objects. We've discussed all the open points related to it. Now we need to put up a plan on an approximate level. What is our weekly activity on data? And based upon that plan, we could have an approximate date on when we can have this. And it can be the third week of the build, which is fine.
+
+ But we need to make sure that we have a plan for the data extraction. And if you feel this is a risk, then we desperately need this plan to make sure everyone is tracking and prioritizing the issues which are related to data to make sure that this does not become a risk. Extract all the data what we needed in next couple of weeks because it also drives insights and insight drives decisions. So if we are not able to get insights in time and drive decisions, it will create risk on wayward deliverables.
+
+
+
+Bastian Osorio:
+I understand, but the thing is that we have plenty of reference material. I understand is a priority for them, but everything is a priority. So I'd rather focus on the most burdening topics than address this topic, which I believe is not as high priority as other topics.
+
+Patel, Rahul:
+I think we need to align on prioritization. Let's align on the prioritization on what are Considering that we have a team split around for every section, let's prioritize on from a build perspective, what are the things which are critical from AdNoc, which we all feel should be prioritized together. And if all these activities are dependent on extraction, and if you feel extraction is going to be logic, then extraction becomes the first priority over everything else.
+
+ So we can work.
+
+Bastian Osorio:
+That is for sure. Extraction integrates everything. Integration is the first priority.
+
+Patel, Rahul:
+So probably, Hadi, in the next week, I think this is something we need to focus upon. Because we've had conversations where we understand right now, we feel that most of the points related to extraction are closed. Khushboo and Kunal are part of all the discussions. Prioritize this as one of the important activities. For next week.
+
+Roumanos, Hadi:
+Yeah, yeah, yeah, OK, no to the role.
+
+Madhavan, Tara:
+I have added this in the tracker Hardy.
+
+Roumanos, Hadi:
+Yeah, please color it either. Put it on critical for now so that we don't drop it.
+
+UNKNOWN_SPEAKER:
+Yeah. Thank you.
+
+Madhavan, Tara:
+Um, I have few more points that I Another thing is access. I know Reynaldo is able to access. I don't know whether the rest of the team is able to. Are you able to? Are you facing any issues? Yes, yesterday I received the confirmation from the other team members.
+
+Rocio Minguillon:
+So yes, we are all able to access. The only thing that I was raising yesterday with Rahul is that has not the development key for Sandbox, so he can't progress on, I mean, we are not expected to do the configurations in Sandbox, but we did it on AppNode just to gain time while we are approving the FSD and everything, and it's not a problem because it's not a problem doing configurations in Sandbox.
+
+ But in the case of we can do it, so maybe if we have that development key for Vorosh, it's better. So I don't know, Rahul, if you see that they can give us that, or what do you think?
+
+Patel, Rahul:
+Yeah, I think Kunal, let's connect to Ananda. Ananda works in UK time, so probably he'll be available. And we can check with him, Kunal or Khushboo, any one of you, if you can connect to Ananda. And help him prioritize, because this also mitigates the risk of getting Buruj access for development. So for any reason, the Buruj development access is delayed in next week, we can still continue working on Sandbox the way we are working on AdNod to mitigate the Buruj activities.
+
+
+
+Madhavan, Tara:
+OK, now, one question I have is Rahul. I had a discussion with Rocio, but her understanding is that there is one FSD for wave 2 and it's already shared with the governance team for review. Is that understanding correct? Because in the morning we discussed and said there are two FSDs and one is pending.
+
+UNKNOWN_SPEAKER:
+I think.
+
+Mudit, Khushboo (UAE):
+Yeah, same understanding, right? In the morning we Every wave has two FSDs. Wave one, we have sent the first draft for review to ADNOC. Wave two, we have received first version from Rocio and team, which is now pending for our internal review.
+
+Madhavan, Tara:
+And the other one is still a work in progress.
+
+Rocio Minguillon:
+Okay, Rocio, we are on the same page with this.
+
+Mudit, Khushboo (UAE):
+Okay, the other one is a work in progress with Reynaldo, because I don't Yes, so we aligned with Rinaldo and the team that Wave 2 will also have two FSDs, one for the extractors S4HANA to IBP and the other for IBP to S4HANA.
+
+Rocio Minguillon:
+Okay, let me just check with him that he's aligned on that because he told me that it was finished.
+
+Madhavan, Tara:
+Can you check and confirm by when this will be ready for review?
+
+Mudit, Khushboo (UAE):
+From the brief look that I took at the FSD ratio, I think what Rinaldo did is added both the things in the single document, maybe we just need to split it.
+
+Rocio Minguillon:
+Okay, yes, maybe, because he told me that it was finalized, so that's why I'm confused.
+
+Patel, Rahul:
+So we agreed to have two FSDs, one inbound, one outbound, so that we can track the work separately. That's the understanding.
+
+Rocio Minguillon:
+Okay, yeah, sorry, I will I will align with him.
+
+Madhavan, Tara:
+OK, how what? How are we with the Adnog Dev interfaces? Any issues there? That's one point I noted down from morning.
+
+Rocio Minguillon:
+No, exactly that that point should be closed today. Yeah, I let me let me align with with Rinaldo then. But yes, that point he he yesterday at the he told me that there was not not risk regarding this.
+
+Madhavan, Tara:
+OK, can you please send the confirmation on this too?
+
+UNKNOWN_SPEAKER:
+Yes.
+
+Madhavan, Tara:
+OK, yes, I mean.
+
+Rocio Minguillon:
+OK, I have I have another question. It's regarding the the key data validation that I know a whole and you could. Would you ask us for the for our on the different integration because you also wanted to raise to AdNoc some key data validation that they need to do. So how is that doing or you need something from us or I mean?
+
+Mudit, Khushboo (UAE):
+We spoke to AdNoc also about this and just today afternoon we aligned with Bastian, Hector, Sagar and the team how we need to work with the data. I think we have that clarity, the information is unless there are any other questions and we can again take it up internally.
+
+Patel, Rahul:
+OK, amazing, thank you. But the Rocha point is that GoSEUM team is working on extraction and in that we agreed that extraction is the highest priority and right now whatever is required for GoSEUM team, everything is provided in terms of clarity. If there is anything else, we will be available to support, sometime midweek we should have this confirmation that the extraction so let's have this review day every day on what are the number of extractors how many of them are developed how many of them are ready for extraction so that this confirmation is available that for wave 1 we say let's have 40 extractors out of 40 how many are ready so that that way everyone is clear and if anything is stopping any extractor for any of the work, that becomes the highest priority of the day.
+
+
+
+Rocio Minguillon:
+Yes, yes, yes, okay. But regarding the evaluation from AdNoc, you already raised some points.
+
+Patel, Rahul:
+Yeah, so we've discussed and we feel that by the end of next week, we should be in a position to share that with AdNoc. So Hadi and Tara, the points related to maintenance and everything where we need to give insights, we've added that into the word document what we have discussed as an action for us. This action depends upon this data extraction insight. So by the end of next week we should be in position to share the insights for AdNoc to take action.
+
+ An example is that if we say that they are using manual reservation for consumption that's an issue. The insight will support that what percentage of total consumption is manual reservation. So AdNoc acknowledges that percentage and takes action on improving that.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Madhavan, Tara:
+So basically, we should track the progress throughout the week. Yes, we should track the progress every day.
+
+Patel, Rahul:
+And probably, you can work with Rocio to identify number of extractors and what is the status of each extractor every day so that we have a finite number to track. Because it's not like we have infinite number of extractors we have around 40-50 extractors and team is working on it every day so we will get to know that out of 40 how many are pending and how many are working and if anything is pending for anyone that gets escalated immediately.
+
+ Yes that is in the CIDS file.
+
+Madhavan, Tara:
+So Rocio I converted our weekly touch base meetings to daily I've kept it for half an hour for now but we don't have to meet for half an hour daily just you know 10 minutes is enough.
+
+Patel, Rahul:
+We can free up the rest of the time. OK. Yeah. So in that meeting, probably, Tara, you can review the status of this. And if there's anything escalation needed on any side, then you can connect with the rest of the team with Hadi and then prioritize the work around it.
+
+Madhavan, Tara:
+OK. OK. And today, Kyle also said that the memo that was to be sent out from the SVP office has gone back to our Dalla. I think saying they should be sending it out and it's pending there. Kyle more on this.
+
+Campbell, Kyle (UAE):
+No, that's the latest update. We spoke to them this morning. So it's sitting with our dollar and inventory shared services and used to send it off now.
+
+Patel, Rahul:
+So it would not be a VP senior VP communication.
+
+Campbell, Kyle (UAE):
+Currently not. They sent it to SVP the SVP told them that they need to send it out?
+
+Patel, Rahul:
+I think that would become a problem because the feedback we had from the EAM team sources that the change management would be difficult unless it comes as a SVP communication with memo and you can use this SVP memo communication as the tool to push your processes but if the communication does not come from SVP then I don't know what risk it creates for the change management, so that if we initiate an engagement with the AM team after this memo, whether it will yield the same result?
+
+ I don't know. So probably I don't have a clear understanding of the impact on this, but this is something as a feedback from the AM team that generally, if any process changes which are imperative and needs to be driven, then the memo from is required, unless the change may not get accepted.
+
+1Daboul, Bisher (UAE):
+Raul, if I may, I spoke to Tara this morning regarding the memo. I think there's a bit of misalignment between them and the SVP office. Is saying it should come from their side, the Inventory Shared Services, and the Inventory Shared Services agree with what you just said. So I think there's maybe miscommunication or misalignment. We'll follow up with the exact details on Monday.
+
+Madhavan, Tara:
+Is the communication only through mails or is there any meeting or is somebody speaking rather than sending mails?
+
+Campbell, Kyle (UAE):
+We're not included in the mails between the SVP and business. That's between those two parties. So we are only following up with Tarek and the team to find out what the status is. And that's done verbally. We're not doing it by email.
+
+Patel, Rahul:
+So Hadi, I think this is something which we need to take with Firas, because Firas also said that this should have been SVP communication. For our normal maintenance issue as well, if it is not going to be an SVP communication, then this is a risk for us. So I think we need to involve Firas and see how we can influence this communication through SVP.
+
+Roumanos, Hadi:
+Yeah, I'm not entirely sure how to bring this to Firas's attention. He's aware of it, because he's aware of this point.
+
+Patel, Rahul:
+And he also said that it has to be an SVP communication. And he said that, let's put up this communication to Asma. That's why we had this call today, so that we could communicate Firas's feedback. Since no one heard, we have sent an email. But if Firas is aligned that it has to be an SVP, So if it is not an SVP communication, we should bring this to immediate attention to Firas, so that at least he can influence through other stakeholders.
+
+ Or if there are any concerns SVP has, we can try to address those concerns.
+
+Roumanos, Hadi:
+Tara, do me a favor, in the notepad where you were adding action items, can you make sure we have and not forget to bring this to Firas's attention, probably on Monday? Yeah. An ad hoc discussion, but just so that we don't forget.
+
+UNKNOWN_SPEAKER:
+Yeah, I'm ready.
+
+Madhavan, Tara:
+OK, OK. One more point. Or we can make it formal.
+
+Patel, Rahul:
+We can make it formal. Kyle and Vishal, you can send this note to us internally saying this is what you discussed with Asma. This is the current status. And then we can build upon this with Firas. If Firas is not available for ad hoc communication, we can send this over email.
+
+Campbell, Kyle (UAE):
+Yeah, but I'm just wondering if I should email Mohammed Awadullah and reiterate this point. I mean, I guess they're off now, but I mean, I don't want them to do anything between now and Monday, and then they suddenly send out the memo.
+
+Patel, Rahul:
+Anyways, considering the way Adnok works, I don't think they'll be able to send this memo right away, and knowing that they agree that the memo should go through SVP, like if what I heard from Bishar is that Asma is also of the opinion that the memo should go through SVP, then I think the best course of action is to understand why SVP is not sending it, get his confidence so that he can send it.
+
+Daboul, Bisher (UAE):
+Yeah, on this point, Rahul, sorry, just on this point, Rahul, I would ask maybe if you can give us just till Monday morning just we get clarity on the details because Tariq is not really involved communications and I was only able to catch him. So I would allow without more details.
+
+Patel, Rahul:
+Yeah, I think more clarity will help for discussion with Firas but then if it is not going through SVP then we need to make sure that Firas is aware of this and this gets escalated immediately.
+
+Campbell, Kyle (UAE):
+Okay, but in the meantime on Monday morning we will go to SKC2 so we can speak to them first thing in the morning. Just about this as well. That's fine.
+
+Roumanos, Hadi:
+One thing, let's make sure CM stays in HQ unless you have an actual meeting in SKC2. So for that conversation, sure, you can pop by SKC to see if you can have that chat, but otherwise HQ.
+
+Campbell, Kyle (UAE):
+So you want us in HQ now going forward?
+
+UNKNOWN_SPEAKER:
+Going forward, yes. Oh, OK.
+
+Campbell, Kyle (UAE):
+I wasn't aware of that.
+
+Roumanos, Hadi:
+Yeah, that's just a conversation that happened with Mohammed today. So I was just waiting for a chance to have that chat, but now it's done.
+
+Campbell, Kyle (UAE):
+OK, so I'll go there on Monday morning to SKC2. I'll speak to Awadullah and then AntoHQ.
+
+Roumanos, Hadi:
+Yeah, yeah. Sara, you had a point?
+
+Madhavan, Tara:
+Yeah, these people need QR code on Monday and Khalid is off. And who do I chase, Hadi, for QR code? I literally have no idea.
+
+Roumanos, Hadi:
+Rahul, any clue? I don't know.
+
+Patel, Rahul:
+Vignesh is an external hire, which means he'll not be able to help. I think we should talk to someone from SKC, at least, if they can help us. But we'll need someone from HQ. So either Vignesh, or we can talk to Vignesh, who can help.
+
+Roumanos, Hadi:
+So listen, listen. Monday is not an issue, right? Kyle, if you if you need to spend Monday in SKC to find big deal, right? I mean. How did we back in HQ on Tuesday? So that's fine.
+
+Campbell, Kyle (UAE):
+Don't worry about Monday. OK fine, but I mean this points on the access is true because I don't have access now on Monday to either building.
+
+Madhavan, Tara:
+Oh OK. Kyle's card is ready for HQ. Kyle might be able to come and speak to the people at reception and get the card and get in at HQ. I don't think that even if the card is ready, they let you go without the QR code. Because I tried doing that sometime back.
+
+Roumanos, Hadi:
+Usually if the card is ready, they escort you to the ID center and then give you the card.
+
+UNKNOWN_SPEAKER:
+Oh, OK. If that works.
+
+Newton, Edith (UAE):
+Because when I tried, they didn't. They made such a scene out of it.
+
+Patel, Rahul:
+And for access to SKC, probably you can talk to Tariq. Tariq can raise us the access. He's in SKC. He should be able to raise an access as an employee. If not, he'll be able to help us someone from his team raises a QR code for SKC.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Campbell, Kyle (UAE):
+I'll ask him, but, Tariq, you can just, I don't know if you have any other avenues, but I will reach out to Tariq for SKC, too, in the meantime.
+
+Patel, Rahul:
+Or he can talk to Abadullah and get a QR. Because the way Khalid is able to raise every direct hire is able to raise this QR code request for visitors.
+
+UNKNOWN_SPEAKER:
+Is there anything else? Nothing, nothing.
+
+Roumanos, Hadi:
+OK, one last thing from my side before I sign off is that. I want to continue the conversation with the CM people so that we get this out of the way as well for the impact.
+
+Patel, Rahul:
+I will continue in the same discussion. Answer, not a problem. The only point is Yasser has requested an in-person session, a follow-up of Wave 1 discussion, just to get more hands-on for the team. He has agreed that he will make sure that the team has a laptop. It's a matter of we being able to have this session in person. I don't know when we can have the session, but let's keep this in mind. If he comes back and asks for a session sooner, probably I know Go SMT will not be available.
+
+ But if there's something, once I'm back, or me and Khushboo can manage, that's something we just need to keep a note of this so that start become a surprise later.
+
+Madhavan, Tara:
+I noted it down at all.
+
+UNKNOWN_SPEAKER:
+Yeah. Who's not ruled?
+
+Roumanos, Hadi:
+And who's not? Can drop. We can probably use Fakhkori as well.
+
+UNKNOWN_SPEAKER:
+On the impact assessment. Thank you, everyone.
+
+Roumanos, Hadi:
+On the impact assessment, and I'll cancel the meeting that we have later on in half an hour. Here's the logic. Who do we have? We have Kyle, we have everyone. You can align with me. The idea is to break this down into pieces, right? The last thing we want is get approval on the impact assessment as a big document late in the process, okay? That's what we're trying to avoid. By the time we reach STIRCO, you should have alignment with the stakeholders on all the content of that assessment.
+
+ Okay, let me explain why. That your hiccup is the MRO, correct? And the MRO, we should have approval before the STIRCO on the process itself, with the STIRCO being just a formalization of whatever decision we get. Raoul, correct me if at any point I'm saying nonsense. That's correct. So the idea is to make sure that your impact assessment document progresses and gets reviewed so that the last pending item would be MRO.
+
+ OK, so that you don't have to spend multiple iterations without not reviewing the document somewhere in mid Feb. I'll wait and hear your thoughts and then we can continue, but that's where I'm coming from
+
+Campbell, Kyle (UAE):
+Yeah, so we discussed this yesterday, Heidi. The in terms of the CIA across the process variance, quite a few of them need some updates because since we first started up until now there's been some changes such as inclusion of additional role like an endorser etc. So we spoke with Mohamed Fakhoury yesterday and we agreed that we will update everything in the CIA deck excluding MRO by the 13th of February which is next week Thursday.
+
+ Then I'm going to schedule a session for the 17th So that's the following week, Monday, and then another session for the 19th. So we're going to break it into two sessions.
+
+Roumanos, Hadi:
+That's to cover all the remaining parts other than MRO. OK, and then. Question for you. Why not include MRO by that time?
+
+Patel, Rahul:
+Because my understanding is that MRO would be finalized then, no? I don't know about that answer. Yeah, so more are aware of the MRO right so probably you can in parallel it would not be a lot of effort to put those two processes together other and readiness and then have the documentation ready and then people who are on the impact assessment are also aware of this so we the impact assessment can be discussed as both the scenarios option one and option two and then the moment formalization happens drop the other other slide.
+
+
+
+Fakhouri, Mohamad:
+We can do this, UM, but anyways. We're not taking like our sweet time to come to do the Amaro discussion, so Friday the circles on the 21st. The Amaro discussion for the CIA is on probably when when did we say on the 25th? 25th or 26th. Yeah, so we're just taking one day to make some if we need to do some edits. Because we thought that the decision would be on the 21st. And then just one day, which is Monday, and then we will have the discussion on Tuesday, which is on the 25th.
+
+
+
+Roumanos, Hadi:
+So okay, okay, based on based on those dates, then I agree with Kyle, let's start with everything except by the 17th, and then you would still have a week to tackle MRO with Fakhoury.
+
+UNKNOWN_SPEAKER:
+A question.
+
+Patel, Rahul:
+Kai, the two sessions you're planning before Serco, are they sufficient for you to finish and get confirmation? Yeah, exactly. That's the most important question.
+
+Roumanos, Hadi:
+Yeah, they're going to be an hour and a half each.
+
+Campbell, Kyle (UAE):
+But yes, we should be able to cover all the other stuff within those two sessions. OK, that's one way to measure it.
+
+Roumanos, Hadi:
+So essentially we'll be doing drilling as one session and chemicals as another session. Is that the plan?
+
+Patel, Rahul:
+We're figuring out the splits of the documents.
+
+Campbell, Kyle (UAE):
+That's still to be determined how we split it, but yes, something like that, and then MRO would come later. Yeah, so I think that's the plan.
+
+Patel, Rahul:
+split works so because processes also are in in the same format so if more is supposed to work on the process probably he'll prioritize chemical process changes first uh more just one input for you when you are looking at the process for drilling uh let's make sure that the process is aligned to the new change where we are drilling is only input and there is no demand planning or there is no bomb related activity for drilling right so let's make sure that the process for drilling the changes are in line with the discussions we've we've had in the last airco where we have input as the link would be the existing tools would be input to IBP and
+
+Fakhouri, Mohamad:
+the input is in form of the the template we have prepared and we've discussed with the team yeah just one last question regarding this so there's no approval on the demand plan basically yeah it's an input so there is
+
+Patel, Rahul:
+no there is no approval because it's an input right so uh why someone should approve it is if he himself is having his own system to review the demand and the final demand from the system will come.
+
+Fakhouri, Mohamad:
+So drilling users won't be impacted on IBP?
+
+Patel, Rahul:
+They would be required to work on uploading. So whatever upload activity would be done by drilling user, reviewing it in IBP will be done by drilling user. Scenario planning activity would be there for drilling because they may want to upload multiple scenarios and look at what happens to the different scenario so that would be there but other they can also look at the changes between the demand patterns like what was my demand last one process this one users are required but then it it does not need an elaborate approval there is no action other than review for demand at least question the change impact assessment are you going to only for demand, or the Wave 1 and Wave 2 are part of the same set?
+
+
+
+Campbell, Kyle (UAE):
+We have all of them. So we have demand, inventory, and supply.
+
+Patel, Rahul:
+But are you planning to, OK, you have all in the same, right? OK. OK, that makes sense, which means you will have the entire process change impact with respect to the entire process identified.
+
+UNKNOWN_SPEAKER:
+No problem.
+
+UNKNOWN_SPEAKER:
+Yeah.
+
+Roumanos, Hadi:
+Are we all on the same page for the plan?
+
+Daboul, Bisher (UAE):
+Sorry, I just have a question.
+
+Patel, Rahul:
+So will the MRO changes impact inventory and supply? Or is it just demand? It will impact supply of MRO.
+
+UNKNOWN_SPEAKER:
+OK.
+
+Campbell, Kyle (UAE):
+All right. If it's going to impact supply, then we should do supply. I mean, we shouldn't do supply before that, right?
+
+UNKNOWN_SPEAKER:
+No, that is for MRO.
+
+Roumanos, Hadi:
+Just for MRO.
+
+UNKNOWN_SPEAKER:
+OK, no.
+
+Patel, Rahul:
+Yeah. OK, then I just want to. Yeah. Yeah, go ahead, Gael.
+
+Campbell, Kyle (UAE):
+I just wanted to confirm, I wanted to ask Hari, are there any other sessions scheduled on the 17th and the 19th? Because I need to know, because I need to set up these meetings. 19th, 19th, and 25th. I just want to make sure there's no other workshops there or anything that I need to know about in order to set up these meetings. Good question.
+
+Roumanos, Hadi:
+I don't know if Tara has better visibility, but let me check.
+
+Patel, Rahul:
+But I don't think there are any sessions planned, but if there are none, then you go ahead with your plan and others will plan accordingly.
+
+Roumanos, Hadi:
+Yeah, according to my schedule, no, there aren't any.
+
+Campbell, Kyle (UAE):
+OK, and then one more thing, Hadi, if we put the final thing with the well the mro part right at the end which would be on the 25th yeah yeah you need do you need actual sign off on this deliverable by the 28th because I'm I mean that's only three days so I don't know I don't know what you need exactly by the 28th but um it's so effectively and and even if you're delayed that's fine it's not
+
+Roumanos, Hadi:
+such a big deal but the idea is yes by the 28th the entire document as a deliverable should be signed off But what you can do is sign it off by pieces, like you're doing, right? So what would be left by the 28th is to sign off the pending MRO.
+
+Campbell, Kyle (UAE):
+Yeah, but when you say sign off by pieces, you don't mean actual formal sign off that they approve it, right? You mean just presenting it, getting their feedback, making updates as we go, and then we submit this?
+
+Roumanos, Hadi:
+Yes. So the idea is when you get to the 28th, or before that, and you tell them, please approve my document, they would have already provided feedback on everything OK, fine, right? So so it wouldn't take long for them to approve that document is what I'm trying to say, but we need to make it clear. So yes, yes, but but the idea is to maintain that traceability through emails as you progress so that you don't get on the let's say 26th or 27th and somebody tells you hey, I have comments on the previous sections.
+
+
+
+Patel, Rahul:
+That's what I'm trying to avoid. I'll just make sure that you know the approvers and approvers are aware that this is something coming because there can be a confusion in terms of the process and the approvers. So let's in the meantime while Mo is working on the changes, just make sure your stakeholders and the approvers are clearly identified and you set this expectation as part of the workshop that now that we have reviewed the feedback feedback is incorporated, this will come to you for approval.
+
+
+
+Campbell, Kyle (UAE):
+OK, that's a good point. But our thoughts for CM deliverables, Hadi, it would be Asma and Khaled that approve this.
+
+Roumanos, Hadi:
+Yeah, but I want to try and avoid people coming out of nowhere and telling Asma, hey, this is our feedback, right? So to Raoul's point, this should be captured. So the way you can manage it is during your workshop sessions, you can clearly mentioned that Asma is the final approver, not even Khaled, right, Asma? But then she needs to tell you who's going to be looking at the document and providing feedback, right?
+
+ She eventually is the one who approves.
+
+Patel, Rahul:
+But you have a lot of people who do that for you. Yeah, but Asma never approves on her own. Yeah, exactly. Asma never approves on her own. Like for MRO, she'll need approval from Mohammad Awadullah. For drilling, she'll need approval from Khalifa. So she'll not approve unless Khalifa reviews and confirms it. So there is another layer which we need to capture and confirm and get this properly routed through.
+
+
+
+UNKNOWN_SPEAKER:
+OK, fine.
+
+Patel, Rahul:
+All right, one last thing on this change management is that Kyle, we've discussed that the data impact is also what we presented as part of change impact assessment. Khushboo has already shared the PPT where the data impact are identified items related to data impact. Back. If you need any clarification, work with Khusbu, but let's make sure this is something we have agreed and this gets communicated.
+
+ Yeah, so we set up a meeting with Khusbu.
+
+Campbell, Kyle (UAE):
+I think it's next week, Monday, to go through that. Yes, noted.
+
+Roumanos, Hadi:
+OK, guys, I'm going to need to drop, but I think we have a way forward. So in case there are questions, Kyle, we can always together on this next week. But at least the overarching plan is clear to everyone. Any other thoughts, Rahul, from your side?
+
+Patel, Rahul:
+No, I think I'm good. If we are able to go through this, I think we'll make it. And as always, we'll need to push AdNoc for approval. So that's the given thing.
+
+Roumanos, Hadi:
+All right. Thank you, everyone.
+
+UNKNOWN_SPEAKER:
+All right.
+
+Roumanos, Hadi:
+Thank you, everyone. Thank you.
+
