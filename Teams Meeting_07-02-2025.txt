@@ -1,0 +1,945 @@
+Hector Palacios:
+Pero la idea es que sea automático, porque si no me sumo. Bueno, te voy a ordenar esta mierda, Juan, que... Sí, yo tengo varios temas acá que hay que agregar.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Hector Palacios:
+¿Estás con el audífono? No, pero no estoy solo. ¿Estás solo? ¿Estás en la...?
+
+UNKNOWN_SPEAKER:
+Dale. Estoy en el baño. Ah, bueno. No.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, estoy en la salita.
+
+UNKNOWN_SPEAKER:
+Están todos ahí?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, salieron a almorzar, pero yo os había traído el almuerzo, así que me quedé.
+
+Hector Palacios:
+Llegaste al almuerzo? Llegaste a la lanchera?
+
+UNKNOWN_SPEAKER:
+Así es. Mírenlo.
+
+Hector Palacios:
+Está bien. No, pero ¿quién está a taparlo?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+el aire y saulo no si ya en el periodo configuraciones también integration volumen y a esa hora de responsable pues ponen un responsable está rey exacta y con azagar igual no reino no porque si ahora están los dos polos a los dos no puedo porque porque me admite un campo. Y no podían ayudar un responsable o.
+
+Hector Palacios:
+Si eventualmente podríamos, pero para qué? Bueno, yo creo que si no tienen, no espero a rey. Bueno, si Juliano tiene.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Otro tema que hay que agregar es que ahora vimos el tema de las acá. Otro urgente es el tema de las reservas y el tema de en las órdenes de que son las también es urgente por lo rojito así dejar el negocio Y en el.
+
+Hector Palacios:
+Si pongo chagra. Y ese le falta algo de definición o está listo para? No está listo para.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero le puedes poner entre paréntesis e movement type. 2-0-1 o 2-0-2?
+
+UNKNOWN_SPEAKER:
+Es un manual que se ha hecho en internet.
+
+Hector Palacios:
+Esto está químico, entonces. Sí. No, es para todo.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Eso ahora discutimos, porque... No, pues es para todo, para MRO también.
+
+UNKNOWN_SPEAKER:
+Sí, de que tenemos que...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+primero vamos... El primero darles visibilidad. Y en virtud de eso vamos a ver qué chuchas hacemos, porque qué pasa si por manual reservation este Navi dijo que ya tenían que parar esa hueá.
+
+Hector Palacios:
+Pero 2 0 1 en las devoluciones. Ya, ya, pero este otro que es de puro manual reservation y tú decís que integremos pa todo.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Yo digo que al final el flujo de entrada de input va a ser digamos indiferente para Spare Parts y para Chemicals, porque finalmente estamos integrando la misma hueá.
+
+Hector Palacios:
+Ya, pero lo que pasa es que para MRO yo espero también que hayan Work Orders y que usemos la 261 y todo eso que hablamos. Ya, pero eso va a otro KeyFigure. Ya, eso es lo que digo. Vale, es un KeyFigure aparte y después vemos cómo lo tratamos, si es que hay menos reserva hecho o no.
+
+UNKNOWN_SPEAKER:
+Ya, perfecto.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y hay otra hueá que los extractores, y ese es un tercer punto, que los extractores de PS vienen configurados para integrar las reservations asociadas a WBS, que son las órdenes 222, o sea, 221 y 222. Entonces, sería un tercer punto que es, intentamos entrar a los extractores y algunos funcionan y algunos y otros no funcionan, entonces hay que levantar un ticket target.
+
+UNKNOWN_SPEAKER:
+Ok.
+
+Hector Palacios:
+Segundo, que se me perdió la web.
+
+Hector Palacios:
+Andigua.
+
+UNKNOWN_SPEAKER:
+No veo que estés haciendo buen.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Entonces falta un tercero.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+El tercer punto es que el tercer punto sería check o cuarto darán un quinto, séptimo. Check extractors for. Check check PS extractor for turnaround validate.
+
+Hector Palacios:
+Pero de qué nos sirve? Sabemos que esa hueá nos va a meter la bomba y todo eso. No podemos usar esa hueá, pero no posible.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Ellos lo ocupan bien. Pero no usan la bomba. Si lo ocupan, hueón. Seguramente no. Sí, hueón, si ya lo vimos. La bomba lo ocupan para para maintenance, pero para los ¿Cuál es el problema con este?
+
+UNKNOWN_SPEAKER:
+Aquí hay unos extractores que no funcionan. ¿Qué más?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Tengo el Reference Material Preparation. O qué es agua será que quiero tirar a Saúl.
+
+Hector Palacios:
+Ya, pero sigamos con integración y vamos con los demás puntos.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No sé si quieres agregar el tema de que la integración tiene que ser por ID en la reservation.
+
+Hector Palacios:
+Y por qué?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y qué pasa con el Actual Consumption? Está listo? Los Actual Consumption para Movement Type 2, 6, 1, 2, 6 y 2 están listos. Lo que hay que corregir es el tema de la ubicación.
+
+Hector Palacios:
+Pero no están fallando por volumen?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+O sea, yo no estoy enterado de eso.
+
+Hector Palacios:
+Están fallando por volumen. Y por eso ayer hablamos con Sara y decían, no, debí hacerlo con Red. No teniendo ni puta idea de cómo hacerlo, entonces le va a preguntar a Red.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Por eso le dije a ese tema y es que empujarlo con Red. Pero entonces para For, Integration, Volume, For, la hueá que es, pum. Porque nos dice acá Disintegration, Integration, Volume, pero nos dice qué está fallando, el Master Data, ubicación Failure.
+
+Hector Palacios:
+De integración, ¿tenemos algo más?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, por ahora eso es lo urgente. Podemos poder revisar el archivo de integración y vamos a encontrar un montón de cosas que hay que agregar. Pero por ahora eso. De hecho acá tengo el archivo de integración. Por ejemplo, la web de los links. Pero no me parece que sea tan urgente. No sé si lo agregamos ahora.
+
+UNKNOWN_SPEAKER:
+No.
+
+Hector Palacios:
+Sí, si me voy ahí, lo tienen ahí en su archivo, pero esto es lo urgente. Ahora en Budget Intervention, le voy a colocar ahí. Verlo. Moment type definition for historic consumption flow. Eso creo que ya está listo.
+
+UNKNOWN_SPEAKER:
+¿Cuál? ¿Cuál es el punto?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No, pero la fila.
+
+Hector Palacios:
+¿Estás viendo la pantalla o no?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, dime el número de la fila. Es que da lo mismo, si yo puedo cambiar el orden de las cosas. Sí, pero acá, dime el número de la fila que estás viendo tú. ¿Dónde está el mouse? Eh, sacala, porque eso va a venir después, una vez que tengamos la data. O no, ponle... La definición no está clara. Tenemos que integrar el 201, 202, 261, 202 y 221. Pero la definición que está pendiente es qué chucha vamos a ocupar para Spare Parts y para químicos.
+
+ Pero eso no lo podemos concluir ahora hasta que veamos data. Si por ejemplo, para químicos vemos que las órdenes de trabajo por ciento pico, cagaron, ¿cachai?
+
+UNKNOWN_SPEAKER:
+Igual podemos integrar todo.
+
+Hector Palacios:
+Si ya estamos integrando todo, ¿no? Al final son esas...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero lo que digo, digo, para Spare Parts, por ejemplo, Spare Parts, ¿qué pasa si las órdenes, las manual reservations representan en el 2024 el 15% del consumo? ¿No podemos las para el forecast pues vamos a tener que incluirlas ahora es el futuro tiene que parar de hacer esa hueá y ahí hoy día me cruzó rajul me dijo te mando un mail culebra hueón lo estamos discutiendo con asma ya pero no importa vamos con entonces esa es una definición es un punto abierto porque igual me gustaría tener como PowerPoint, pero no es urgente.
+
+ Es como. Definición for Input for Statistical Forecast o Input Definition for Statistical Forecast. For Chemicals and Spare Parts.
+
+UNKNOWN_SPEAKER:
+Y vas una vez que.
+
+Hector Palacios:
+De que el input es el de esto de si va a ser como el approved reservation o qué cosas o si va a ser el... No, no. Input definition for a statistical forecast.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, vamos a ocupar, vamos a ocupar. Todo vamos a ocupar, tan solo... Pero esa definición no la podemos tomar hasta no ver la data. Como te digo, si las manual reservations para SPERP son el 1%, el 2% o pico, no lo incluimos, no. Que se integren, pero no lo vamos a incluir. Pero si son el 15, el 20%, Las vamos a tener que incluir en el Forecast.
+
+Hector Palacios:
+Es incluir una mano en el Forecast. Te voy a hacer un error.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Viste Roberto Manzana?
+
+UNKNOWN_SPEAKER:
+Sí. Uy, Roberto. Se me borró la web propia. ¿Cómo? ¿Se te borró el archivo?
+
+Hector Palacios:
+Está con KPMG entonces.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Tengo otro punto. Vale, el validar el nuevo algoritmo. El mail de Regina.
+
+Hector Palacios:
+Cuando vamos a su país, si, dame un segundo. Mierda.
+
+UNKNOWN_SPEAKER:
+Entonces con integración estamos.
+
+Hector Palacios:
+Vamos con MRO. Y MRO... De pantal. Tenemos la pura hueá. Es la hueá que anotamos ahora, de hecho.
+
+UNKNOWN_SPEAKER:
+¿Cómo no tenemos más hueás de esto? A ver, no voy a hacer que... Chido culiao.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Cómo vamos a eso?
+
+Hector Palacios:
+Si, si no tenemos más web de demanda. De demanda deberíamos tener más web, pero no lo tenemos.
+
+UNKNOWN_SPEAKER:
+No vemos.
+
+Hector Palacios:
+Son las cosas que anotábamos, que cosas que hasta de la sesión que estuvieron y tenemos que empujar la demanda?
+
+UNKNOWN_SPEAKER:
+¿Cómo fue la pregunta?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Qué cosas de la sesión te quedaste pendiente y que tenemos que revisar o algo así?
+
+Hector Palacios:
+De la sesión de demanda.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Tenemos que trabajar en el forecast y eso hay que asignárselo a los cabros A Pablo y a Belaya con la idea de Raúl.
+
+UNKNOWN_SPEAKER:
+Raúl. Va, Raúl.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Emma, roban químicas para los dos. ¿Qué tienen que hacer? Tienen que... Forecast models, forecast planning level, forecast level en...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Forecast Level en Forecast Models en Level Definition.
+
+Hector Palacios:
+Forecast Models en Level Definition, ¿por qué Level?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿A qué nivel vamos a correr el Forecast?
+
+Hector Palacios:
+¿A nivel de producto?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Y si lo corremos a nivel base por equipo?
+
+Hector Palacios:
+No, si vimos que la data por equipo estaba remada, por planta, ¿no?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y qué pasa si... Es que para mí lo importante, y acá hay una conversación de diseño y de verlo con la data, para mí lo importante es que el resultado de preciso a nivel de material, no a nivel de material ubicación.
+
+Hector Palacios:
+A nivel de material ubicación, no le interesa compartir. Ahí estaría haciendo el chimichurri con la cuestión, porque son un montón de gente que están midiendo el mismo probablemente, pero tienen distintas necesidades, quieren saber sus necesidades, no las necesidades totales.
+
+UNKNOWN_SPEAKER:
+Eh.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+De hecho, luego el metro y control en compra a nivel agregado. Pero si no tiene un forca, entonces tampoco es el pan de chucha distribuir. No, pues si tiene que haber una regla de desagregación, eso por seguro.
+
+Hector Palacios:
+Bueno, nos metamos acá, aquí con desagregación. Con esto hueón, evítalo hueón, porque desagregación es un grano en el culo, pero gigante, es una hemorroide hueón, desagregación, y traerlo para esto hueón, porque es complicado, siempre salen hueás, las reglas de desagregación siempre son complejas, siempre hay mil excepciones hueón, y la lógica y las configuraciones también son un dolor de culo hueón.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Ya, pero por ejemplo, entonces, pero hay que juntarlo entonces a nivel de, bueno, lo vamos a juntar a nivel de mes, de cuárter.
+
+UNKNOWN_SPEAKER:
+Ah, eso sí hueón.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Ahí y qué modelo vamos a ocupar para comparar combinaciones que tienen, por ejemplo, más de 100 consumos que son hartos. Qué modelo vamos a ocupar? Nos tenemos que asegurar de que el modelo de menor o como mucho igual a los consumos del último año no puede pasar el agua que me pasó a mí y yo no tuve tiempo de revisarlo bien, de que nos dé algunos meses más. Cachai, si estos cuales están diciendo que quieren bajar el consumo, entonces me importa un pico que hay que dar con un forecast que que no aumente los consumos, y para eso hay que empezar a jugar con la data y dar con el seteo correcto.
+
+
+
+Hector Palacios:
+En esta hueá, Saúl es bueno metiéndose con el porca y empezando a finetunear. Sí, hay que cuidar que no se vaya por las ramas de ingeniería demasiado, pero yo sé que es con la hueá el tiempo solamente. Y de los modelos, deberían estar todos, para eso el Time Series Analysis. No funciona tan bien, hueón. Sí, sí funciona. Seguramente no te lo está agarrando bien, pero si funciona.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Bueno, yo también en la otra empresa dediqué gales de tiempo y al final hicimos otra lógica porque a veces te da forecast raro y yo nunca he podido dar con el sitio correcto que te da el forecast que tú
+
+UNKNOWN_SPEAKER:
+quieres.
+
+Hector Palacios:
+A mí me, yo creo que Saúl lo hizo en la empresa pasada y le daba re bien. Bueno, es que igual la demanda era mucho mejor, pero. Si funciona, o sea, ¿Viste que la cuestión lo agarra, no? ¿Viste que la cuestión diga, no, se descartaron estos modelos porque no...?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, pero de repente te forecastean mucho, te forecastean más de la cuenta. Y de hecho el Crosstom Model dice eso, que puede llevar a...
+
+Hector Palacios:
+Pero para eso es el TSV, pues si el TSV, el Crosstom Model es el TSV, lo que hace es corregir ese sesgo que genera.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Ya, pues está bien, pero entonces tenemos que probar que el TSV quede bien, o sea, es una actividad que hay que hacer, porque no podemos decir ya, la voy a estar catalizando, Saúl, Saúl, entonces, porque esta jugada está buena.
+
+Hector Palacios:
+Saúl, hoy, y que lo haga con todo el equipo ahí.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Que le enseñe. Y que nos muestro, o sea, que a nivel agregado, digamos, a los distintos comodities lo veamos desde ya. Para esa IT nos van a gustar, muéstranos el forecast, ¿cachai? Bueno, por ejemplo, la parte de Outlier, Super feos, terribles feos. Hay que asegurarse de que queden bien corregidos, pero no podemos ocupar el intercuartil porque si tú aplicas el modelo intercuartil acá, te hace mierda la data.
+
+ Quizás eso es lo mejor, podría ser eso. Bueno, ocupemos un modelo, seamos groseros, ocupamos un modelo intercuartil y cortamos todos los consumos de modo de que tengamos por seguro un forecast que no no sea alto, ¿entiendes? Puede ser, esa es una solución. Digo, quizás hay que probar, ¿entiendes? Pero hay que, hay que, y esa hueá va a requerir varios días de trabajo de probar distintos modelos, de probar distintos Forecast Outline Correction, hasta dar con una hueá que te dé un Forecast bueno.
+
+ ¿Y qué es bueno? Igual o un Forecast bueno que no se a que nunca dé más que los consumos anteriores de los años anteriores.
+
+Hector Palacios:
+El tema es que está vendiendo el input culeado de que tuvieron la consumption y actualmente no tenemos ni una wea que podamos decir si es esta vez. Yo me puse a revisar, ¿te acordás que hubo un ejemplo en donde nos dimos cuenta de que lo que veíamos integrado no se traducía a lo que veía por ejemplo Yaganat? Y dijimos, mira te da el error después de 160 y él se puso a revisar, pero ¿por qué da 160?
+
+ Y cuando veo los resultados, le dan un resultado por cuartel de 400 y tanto. Busqué el mismo ejemplo en la data que nos dio Bignes y en ningún lado nos da igual. Ni fuera ni el actual, ni fuera los reservation. Todos nos dan resultados parecidos a los que tenía yo en el sistema. Entonces, estoy súper poco claro de cuáles son los filtros culiados y qué realmente tenemos que conocer como actor consangente.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Es que, bueno, Pero ya lo tenemos posible. Es que ya tenemos mapeado todos los consumos. No hay más consumos. Digamos lo que tenemos claro hasta ahora es que tenemos todos los consumos, porque son. Bueno, ya lo dije. Tornarón, manos, reservations y. Y de orden. Y ya ganas tenía más o menos consumo.
+
+UNKNOWN_SPEAKER:
+Más.
+
+Hector Palacios:
+Y no sé si el vuelo está realizando bien. Sí, pero capaz que haya traído todo así sin... Revisar esa tabla culiada chacha que tienen. Esa hueá tenemos que revisar, exacto. Tenemos que integrar y revisar y pedirle al equipo que nos pasen esa hueá.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero esa tabla toda piñufla, tiene la información agregada, no nos sirve.
+
+Hector Palacios:
+Pero al menos si agarramos un caso podemos entender de qué es lo que pasa, así que...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+son estos movimientos y consideramos un movimiento nos cuadra si lo consideramos nos cuadra para tener una idea entonces pues le añade un punto adicional validation bueno una validación de información de información integrada contra no sé cómo le llaman Tabla Z, no me acuerdo cómo se llama.
+
+UNKNOWN_SPEAKER:
+de nuevo. Con tu web de integración.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+sí y también la mandó kushu aumentada.
+
+UNKNOWN_SPEAKER:
+Eso. Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org ¡Adiós!
+
+Hector Palacios:
+Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org Esto parece bien, es como revisar la data y después empezar a finetunear. Hay que meterle a los planes walkthrough. ¿Tú no creaste ningún Planner Workspace?
+
+UNKNOWN_SPEAKER:
+Sí. ¿Pero no lo mostraste?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+El Saúl se agarra la hueá de manda y yo me voy a tomar inventario.
+
+Hector Palacios:
+Tanto odio.
+
+UNKNOWN_SPEAKER:
+Vale. ¿Para inventario qué queda? No mucho.
+
+Hector Palacios:
+Bueno, yo creo que inventario igual quedó como bien avanzado. Es simplemente hacer fine tuning de la web que fueron pidiendo. No, la verdad es que el inventario no me tiene tan preocupado porque no depende tanto de los inputs de data. Si el tema del historical lifetime, que por ahí lo... Historical lifetime, si esa web. Veamos si hay algún comentario.
+
+UNKNOWN_SPEAKER:
+Bleed it.
+
+Hector Palacios:
+Bleed it. Corta interacción.
+
+Hector Palacios:
+pero ya. ¿Lo tenemos? No, no tenemos.
+
+Hector Palacios:
+No tengo ningún feedback de que haya alguna forma mejor de entender o de obtener la Esa data que nos pasaron como de característica, el día de hoy vamos a poder hacer algo con eso. Aparte, nos tienen que decir de cómo agruparla, qué característica usamos para hacer el clúster. Si no, pensamos en eso bueno.
+
+Hector Palacios:
+Voy a revisar un segundo.
+
+UNKNOWN_SPEAKER:
+Hay que tener un ejemplo de esta manera que.
+
+Hector Palacios:
+un beso.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Qué mal le tenemos a don Héctor.
+
+UNKNOWN_SPEAKER:
+La integración del tema histórico.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Eso es para el invento de.
+
+UNKNOWN_SPEAKER:
+Se. Que volver por mí, por mi entero, pero. Importante.
+
+Hector Palacios:
+Le damos un like, Optimax Study, Sotobarriarcon Vivec, Client Type Definition, Eso está para avaliar, ¿no? Con el Plan Type Definition.
+
+UNKNOWN_SPEAKER:
+Todavía tenemos alguna hueá por ahí, pero...
+
+Hector Palacios:
+Está doblado.
+
+UNKNOWN_SPEAKER:
+Configure Alert.
+
+Hector Palacios:
+Eso dijo que tenía algo por ahí. Storage Location Impact. Entonces ya sabemos qué hacer con esa hueá. El TriggeredPointLTBIInformation, sería menos relevante. LoadAblePlanning, esto está al lado ibex. PRs for channel run should have the work breakdown element. Esto lo tenemos, mantengámoslo ahí.
+
+Hector Palacios:
+Para la re-logística... Creo que ya está para ejecutar, ¿no? ¿Cuál? La re-logística. Ya nos pasaron la data.
+
+UNKNOWN_SPEAKER:
+Pero vamos...
+
+Hector Palacios:
+No habíamos dicho que íbamos a ir primero con la web de...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Igual nos tiran la re-logística para los vendors, igual.
+
+Hector Palacios:
+Ah, para los vendors, sí.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Puedes ponerle para vendors?
+
+Hector Palacios:
+No, voy a cerrar este. Lo voy a crear una nueva.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Eso que lo tenemos, Miguel.
+
+UNKNOWN_SPEAKER:
+Eso que lo tenemos.
+
+Hector Palacios:
+Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org El tpa-definition todavía no está desarrollado, pero se lo podemos tirar a algunos de los tenemos que hacer es como se llama intentar descifrar cuándo se puede tener un, se puede recomendar hacer un LTP. Se supone que tiene unas reglas que podemos automatizar, entonces podríamos colocar alguna especie de alerta.
+
+ Ya voy a la compartir.
+
+Hector Palacios:
+Entonces vamos a tirar uno, no?
+
+UNKNOWN_SPEAKER:
+Si.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+A nos faltan las weas de DreamPool, eso se nos olvidó. Sí, pero por eso lo estoy colocando como prioridad media, no? En Dream tenemos la, ya enviaron los dos archivos de Onshore y Offshore, entonces habría la actividad y urgente es Validation of Onshore and onshore data demand. Input. Y después tendríamos...
+
+Hector Palacios:
+Un segundo, déjame contestar antes que el TPA Subtítulos realizados por la comunidad de Amara.org ¡Ya!
+
+Hector Palacios:
+boots pad ¿Determine o determine? Determine, no tengo idea APMG. Los de app, ¿no? Como siempre les preguntamos, no tienen puta idea de las sesiones. Bueno, así que no sé de qué nos sirve tener sesiones con eso, culiavermente. Request to run data at equipment level.
+
+UNKNOWN_SPEAKER:
+Esto lo cerramos. No. Y ahí ya fue. No, esa wea es cierre.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+De hecho, no sé si lo vamos a tener. De equipo, pero a nivel de WVS.
+
+UNKNOWN_SPEAKER:
+Eso es lo que ellos quieren. Sí.
+
+Hector Palacios:
+¿Qué más nos faltaba, Supply? Tú mencionaste alguna hueá. La hueá Darun, de Drilling. No, pero antes ahí mencionaba algo de Supply One.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+La hueá del web de Regina, el operador Juliano Nuevo, Valiar, Valiar New Operator.
+
+Hector Palacios:
+como cuando nos pare la raja. Esta es la Marta. Vive buena.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Vive, juega, a ver, voy a ver si está el operador porque ella dice está listo lo que le digo no Hula Grace. Tiene un hueco.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Ahí está New Operator, Inventory Balancing Calculation. Vamos a llamarle MRO, Inventory Balancing.
+
+UNKNOWN_SPEAKER:
+Learning Area. Inventory Balancing Calculation.
+
+Hector Palacios:
+Sí, ya está listo.
+
+UNKNOWN_SPEAKER:
+Buenísimo.
+
+Hector Palacios:
+¿Qué más? Suplaya y llenamos cosas.
+
+UNKNOWN_SPEAKER:
+Dream.
+
+Hector Palacios:
+Sí, tenemos un dream.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Validación de ingresos de demanda en el mar y en el mar adentro.
+
+UNKNOWN_SPEAKER:
+No. Cuidado.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Me estaba diendo el agua guagón. Estaba diendo. Sí. Después de almorzar.
+
+UNKNOWN_SPEAKER:
+Sí. El bebé.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y quiere y quiere que hagamos con esta web que ahora uno haga una demo para la próxima semana, algo así.
+
+Hector Palacios:
+No, no, no para la próxima semana, pero eso sería el siguiente.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+El siguiente punto es preparar la demo o hacer cuando nosotros estimemos que es conveniente. Entonces, create sería drilling demand, create input, o sea, script, prepare demands, unit testing, Después hay que validar, o sea, no sé si lo ponemos como un punto distinto o dentro de los mismos puntos, pero después hay que validar el script y la demo con KPMG y después agendar la reunión con KPMG. Ponlo como un punto, ponle validate, KPMG validation.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Perú está con Chatumari como me están tapando en pedo.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+También ponte a trabajar un poco por Indio. Agradece que no está igual vendiendo comer en la calle.
+
+UNKNOWN_SPEAKER:
+Saco.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero no te va a decir que no.
+
+UNKNOWN_SPEAKER:
+Misógeno, misógeno.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No tiene nada que ver la web o xenófobo sería. Dejame cerrar este puntualia porque ya habíamos quedado en eso.
+
+Hector Palacios:
+pero eso no lo tenemos claro de cómo chucha consume materiales en drilling en paso a qué movimiento y tampoco lo necesitamos en los consumos para Y lo que sea, si tenemos que integrar consumos para Drilling es como prioridad 5.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, no sé, tienes razón.
+
+Hector Palacios:
+Mi esposa, mi compañera, soy un afortunado de tener tu amor y compartir todas estas experiencias contigo.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Feliz día del amor, el primero como esposo. Sigamos construyendo nuestra vida juntos. Nos esperan muchas cosas nuevas en corto plazo. Siempre estamos juntos.
+
+UNKNOWN_SPEAKER:
+Te amo, bebé. Quizá bueno.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Lo que te voz, Pugán, donde está siendo muy romántico con tu esposa.
+
+Hector Palacios:
+Cuando y antes de que va a estar realizando un chaval. Revisando tu whatsapp.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Como mi whatsapp, bueno, tu whatsapp, tu whatsapp, tu whatsapp.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+yo te voy a robar el mensaje voy a reciclarlo el aniversario en octubre así naturalmente desde que me casé ha pasado el tiempo volando ha sido como cinco minutos no ha sido como 30 segundos bajo el agua.
+
+Hector Palacios:
+¿Reservaste para el calor alguna hueá, no?
+
+UNKNOWN_SPEAKER:
+No, hueón. No, no.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Voy a tener que llamar a Dwight. Yo creo, hueón. Porque yo hace una semana y estaba peludo.
+
+UNKNOWN_SPEAKER:
+¿Estáis locas ya, Dwight? Si, lo aprendí. Ahora el tema es cómo usar, qué buen las tiene.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Es buen la publicidad seguramente. O sea, sería, se las ponen, bueno, en una página web. Y viste el capítulo de la muñeca, viste el capítulo de la muñeca. Quién es el que compra y cuando le entrega la muñeca negra al...
+
+Hector Palacios:
+¿A quién le vende la muñeca? Al saco güey de la oficina, pues este güey es el de los recursos humanos.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Tobi. Se la venden el negro el que compra quien es el que compró la muñeca se la compró y todo y decía no pero en la última bolsa pasa me la pasa me la pasa me la te pago 200 dólares se la venden 200 dólares y era una muñeca negra y le dice cuál es el problema culiao pesado y el otro gozo quería poner a llorar esa guá es muy buena guan muy fracasado uno de los escritores de la
+
+Hector Palacios:
+serie pero me causa solo escritor y la serie estuvo en el rey como se llama él está bueno que entra como interno y después hace jefe y después y que hace como que hace como doble doble como que duplica
+
+Conference Room (Bastian Osorio) - Speaker 1:
+el revenue pero lo hace porque estaba como que contabilizaba el revenue dos veces porque habla de una página web y como que hace un fraude y se puede entrar con el ejecutivo del año y después lo contratan de nuevo y llegan los gerentes y vos como que no saben de meterse en un capítulo.
+
+Hector Palacios:
+Ryan es uno de los escritores pues bueno y él mismo se escribió esa historia de gracia. La otra escritoria es la India, la India que aparece ahí que es como... Eso es lo que me da risa, que todos los Wons, varios Wons que están actores ahí son los mismos de escritorio de la serie.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y Crit, porque chequeése Wons se llama Crit en la vida real, ¿no? Sí, pues no, y que el Wons fue, era un hippie culiado, tocó en una banda.
+
+UNKNOWN_SPEAKER:
+Es exactamente el mismo Wons.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Me da risa un capítulo donde el Wons dice, llega todo ensangrentado, pero para Halloween. Y le dicen, oh, te quedó acá el disfraz, y el Wons es como, ¿qué disfraz?
+
+UNKNOWN_SPEAKER:
+Sí. No, creo que es de los mejores. Y en una que se hace como la...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Cómo se llama? La cimarra. El trabajo. Y dice, no, me voy a ir al casino. Y se sube un bus. Estaban organizando un paseo y se sube justo al bus.
+
+UNKNOWN_SPEAKER:
+Sí.
+
+Hector Palacios:
+La canción final de Office, que igual empezó El teléfono.
+
+UNKNOWN_SPEAKER:
+Ni idea. Nadie, un montón de buen de dos personas.
+
+Hector Palacios:
+Bueno, hay un momento que me pone súper incómodo cuando están, se quedan encerrados.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y le toca a este todo y le toca la pierna a Pam. Así después se va a Costa Rica.
+
+UNKNOWN_SPEAKER:
+Dice No, me tengo que ir a Costa Rica.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Cuando salta a la reja se va corriendo, pero la hueá super random hace.
+
+UNKNOWN_SPEAKER:
+Muy cómoda, hueón.
+
+Hector Palacios:
+Súper torpe socialmente. Es una hueá como que... Como que le ha estado haciendo de oro, hueón. Iba con... Iba con récord, hueón, de tirarse talla y pam, se reía y hueón, como que sintió confianza y pá, le tocó la pierna al culiao.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Cagó. Y ahí después como que se eyectó socialmente.
+
+UNKNOWN_SPEAKER:
+Como que ya cagué. Sí. Cagué. Me voy a la chucha con...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+con los chancos. Qué buena serie. Se directó socialmente, así como a apretar un botón y pá, salió a disparar.
+
+Hector Palacios:
+Eso es seguramente una de las mejores series de comedia que ha existido. Yo creo que ahí con Friends seguramente y puede que esto sea mejor.
+
+UNKNOWN_SPEAKER:
+Vale.
+
+Hector Palacios:
+Y bueno, quedan así como corto plazo revisar. A ver, pide a Rosilio un poco.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Ah, sí, te cagaste, debí soltar la reunión también.
+
+UNKNOWN_SPEAKER:
+No tengo más tiempo.
+
+Hector Palacios:
+Está bueno entonces, bueno.
+
+UNKNOWN_SPEAKER:
+Veamos qué Rosilio le piso.
+
+Hector Palacios:
+Yo me voy a poner a reagendar todas las reuniones.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y el lunes mismo tenemos que tener una reunión de integración.
+
+Hector Palacios:
+integración para ver en qué va a estar esto aquí en qué van a estar bueno la voy a poner sin la tarde sí para que tengan tiempo en la mañana de trabajar integración mete a todas las sesiones ya mini porque la verdad es que no nos faltan manos con esto todo bueno y que tener a alguien más nos ayuda y que este cunar en todas porque no ha ido con las talas si tienen dudas o cosas así pero eso y saga ya se mandó un mail y está bien o sea que el mes está bien pero que cualquier weá de lógica que ponga de filtro, que la meta en el archivo weá.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No sé si le dije, si lo llamé, le dije está bien esta weá, pero tenés que poner, todo esto lo que estáis informando acá tiene que estar en el archivo. Sí. Pero ya me ha dicho ya varias veces.
+
+Hector Palacios:
+Vale, le hacemos seguimiento a esa weá para ver que el weá lo está haciendo, porque si no vamos estar desordenados por siempre. Nunca voy a ir aterrizando, ¿no ves?
+
+UNKNOWN_SPEAKER:
+Dale. Nos vemos entonces. Chau. Chau.
+
+Conference Room (Bastian Osorio) - Speaker 6:
+Subtítulos realizados por la comunidad de Amara.org Ahora, César, ¿qué tal?
+
+UNKNOWN_SPEAKER:
+Bien, ¿todo viendo bien tú?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Bueno, estamos aquí en la piscina 5, casi completo. Pero ya no puedo, ¿no?
+
+UNKNOWN_SPEAKER:
+Fin.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+No, no, no, pero el técnico no, pero el técnico era el que decía que se podía cambiar el disco 1 y tal. Ellos lo hacían también. Sí, sí, han hecho. Vale, vale, vale. Pero eso es raro, ¿no? Porque al final siguen. Seguimos en contacto con ellos. ¡Si te agrado! Ojalá.
+
+UNKNOWN_SPEAKER:
+Bueno. Sí. Bueno, pues sí.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Usa WordPress.
+
+UNKNOWN_SPEAKER:
+Desde aquí.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Desde la oficina. O sea, yo sé que el Corte Inglés tiene bastantes, bastante oferta. No sé. Luego, yo conozco el Corte Inglés, me llama. Y luego, en la internet, esta especie de componentes.
+
+UNKNOWN_SPEAKER:
+Claro, más o menos asimilar.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Sí, totalmente, pero bueno, a veces se puede, yo creo que es más, se puede pedir.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero la pregunta es, ¿cuánto tiempo lleva esto?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+¿Cuánto tiempo lleva esto? Bueno, a la vida tengo. Demasiado. Demasiado. Toda la vida. Yo las explicaciones no las sé.
+
+UNKNOWN_SPEAKER:
+¿Ahí?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Sí, sí.
+
+UNKNOWN_SPEAKER:
+¿Puedo ponerla? Está aquí.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Está aquí, sí.
+
+UNKNOWN_SPEAKER:
+¿Qué tal, César?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Cómo estamos?
+
+UNKNOWN_SPEAKER:
+¿Bien?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+No sé si tuviste oportunidad de leer el correo que mandó a mí en respecto de la laptop?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Claro.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+que hace el proceso de identificación, ¿no? O sea, lo importante es que hayan visto a Option Pro, seguro. Pero el tema del empezador, por ejemplo, no sé si hay otro empezador que tenga exactamente eso. Sí. No, sí lo entiendo.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pero yo creo que, a ver, o sea, definamos unas características, digamos, generales. Y de allí ahora pueden empezar a buscar Pelayo en base a la disponibilidad acá de los sitios web que hay. No sé, por ejemplo, yo creo que sea Lenovo o sí.
+
+UNKNOWN_SPEAKER:
+También te recomiendo que sea una de este tamaño.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+¿No se puede pedir, yo qué sé, paquete urgente o algo así para que venga más rápido? ¿Pedir cómo envío urgente para que llegue más rápido y tarde menos? Yo me acuerdo que, Por los comentarios del técnico, sí que dijo que a lo mejor el ordenador no hacía falta como tan bueno, tantas características, sí. Pero no sé.
+
+UNKNOWN_SPEAKER:
+Claro.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Probablemente, sí, sí, sí. Pero hoy en día el auto procesador es bueno. O sea, no tiene que ser exacto.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+O sea, obviamente que tiene que ser un buen procesador, pero hay varias opciones. O sea, no creo que tenga que ser un solo sabor que cumpla con estas características.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Creo que hay varias alternativas.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Las características son distintas según el sabor.
+
+UNKNOWN_SPEAKER:
+Podemos buscar a ver qué...
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Sí, yo prefiero... Aquí tienes las opciones... ¿Te parece que hagamos lo siguiente, César?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Que Pelayo busque en la web, no sé, tres o cinco opciones, y que en base a esos cogemos. Bueno, no sé si usted maneja por este tipo de cosas, pero yo creo que cualquier computador con un...
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Con un i7 y un Windows 11, más o menos lo va a seguir llevando, ¿vale?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Y esto recomiendo, a pesar de que estas son las computadoras más pesadas, que se hagan a más talla. Yo tengo que andar siempre con esa otra pantalla, que una página web, esa pantalla pequeña, no es cómoda.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+CONNOR A TRAVÉS DE INTÉRPRETE 1.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Con lo que estás mirando, César, ¿cuándo te llega o qué problema tiene esa laptop que estabas viendo? CONNOR A TRAVÉS DE INTÉRPRETE 2.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Si el tiempo de entrega es la semana que viene, nos vale, ¿no?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Ojalá que puede ser para el día lunes, pero si no se puede, ¿qué día manda? ¿O tal vez te llegan hasta el mismo día? ¿O el día siguiente?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Y son las 3, es decir, todavía tendrán pedido esto. Yo creo que podría llegar.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+esa foto tuviste con AI o eres tu? Tu foto es como AI es como Cesar AI un avatar tuyo te ves? Obviamente eres tú, pero parece un avatar tuyo.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+¿Cómo que te suavizaron? Y, por último, le vamos a dar un poquito más de tiempo.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+ya se van a tener que meter. De la nota, a ver...
+
+Conference Room (Bastian Osorio) - Speaker 1:
+traje de comer? No, traje carne con asparagus y champiñones entonces tenías que comprar la pata? Yo lo voy a hacer en mi casa casi siempre hay una en serio?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+si pero no tiene que ser la más top ¿Es que puede gastarte de verdad? En el interior de las familias.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+es cierto. ¿Y qué pasa si va a una tienda especializada que no tenga stock?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+o se puede ir a comprar esto se pagó y esto que es una comercial de Windows Home Por favor, ponte a buscar algo que se pueda ver. Ahora yo tengo otra duda.
+
+UNKNOWN_SPEAKER:
+Será el PC, perdón.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Nada, voy a mirar yo alguna página web o alguna tienda Ya lo tengo.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Pero son las mismas.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+O sea, es un i7 y dices que vas de RAM, 512. Es lo mismo.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+¿Pero está disponible? Esta por ejemplo es un talento libre es el pc componente yo compre algo ahi y me llevo de inmediato me lleva mal tambien, he comprado algo y me llevo de inmediato entonces déjame comprar algo por la otra Ahora, otra
+
+Conference Room (Bastian Osorio) - Speaker 1:
+duda, César, y para evitar que esto pueda pasar en el futuro. ¿Quién va a quedar como admin usuario del admin de este PC? Porque entiendo que ese fue el digamos el problema que ocurre acá, que el administrador estaba rafiado a mí.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+¿Cuándo va a terminar? ¿Cuándo va a terminar? El técnico, por ejemplo, me digo, ¿le vas a solicitar algo? ¿Qué, qué, qué, qué? Y yo, que ya tenemos este separado, no sabemos cómo las computadoras traen yo esto, pero en general todo el tema de esto es que no hay tanta clave, o sea, si el escritor te encobula y no tienes una clave que te gaste, claro, es a una nota o le tocas una foto. Eso no se vio.
+
+ Entonces, claro, eso sí hay que estar pendiente de que están... Instalada esa maquina. Porque en verdad yo sabe cuando su maquina está toda enterizada. Yo no soy un experto en eso. A ver, esto, porque una vez que estaba ahí, aprendí que aquí cuando se conectan, no hicimos. De hecho, a la otra laptop, yo digo que yo la recogí en el camión central para tener otra por aquí. O alguien nuevo que venga, o alguien que se le dañe para que no pase Sí, sí, totalmente.
+
+ Son las mismas, yo creo que son las mismas características.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, sí, de todas formas hay que reparar la otra y seguramente va a haber oportunidad de ocuparla en el corto plazo.
+
+UNKNOWN_SPEAKER:
+¿Cómo?
+
+Conference Room (Bastian Osorio) - Speaker 1:
+¿Va a venir alguien nuevo?
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Sí, siempre va a venir.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+lo que sea.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org sí yo leyéndolo me parecían iguales o casi casi iguales y ahí como como bueno ya que a dónde le vas a enviar acá a la oficina
+
+Conference Room (Bastian Osorio) - Speaker 1:
+acá o a la casa de Pelayo?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+¿Cuánto tarda? El martes.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Vale, pues como quieran, yo o vengo aquí o si no en casa musical. Mejor, tal vez.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Subtítulos realizados por la comunidad de Amara.org ¿Quién va a ser el técnico que lo va a configurar entonces? ¿Quién va a ser el técnico que lo va a configurar?
+
+Conference Room (Bastian Osorio) - Speaker 2:
+¿Y quién va a ser el técnico que lo va a configurar? Si guardamos una clave equivocada en la cuestión, no importa porque ese es el problema. Si no, si no es un programa que corrumpe todo todo, bueno, no hay problema. Pero hay que tener la identificación y guardarla, eso es todo. Yo creo que al final, no van a escuchar el tema porque el judío, como en todo, debería agarrar, en teoría las computadoras agarran toda la computación y tal y cual, pero claro que nos pasó todo esto que teníamos dos hombres, y dos hombres agarran eso, y yo entendería que eso va a funcionar mejor cuando esta computadora pueda hacerse conjugar.
+
+
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Bueno, y el otro, César, bueno, seguramente ya alguien lo habrá levantado, pero yo creo que es importante, o en el futuro, contar con una empresa que se haga cargo del soporte técnico, o contar a alguien que vaya con esto, pero evidentemente que con el cambio de TENAN, con el cambio de TENAN, No, nos salió muy bien.
+
+UNKNOWN_SPEAKER:
+Sí, la verdad es que...
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Esto es un tema que, como no ha generado problemas, está siendo manejado por ese cuerpo de izquierda, que evidentemente a partir de ahora necesitamos asesoría también técnica.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, seguramente haya alguna empresa que se pueda hacer cargo de eso, pues sí tiene la necesidad de que nosotros tengamos alguien a tiempo completo a cargo de esto, pero obviamente no ha salido con... O sea, ya hay 200 consultores, tenemos que...
+
+UNKNOWN_SPEAKER:
+contar con este servicio.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Sí, definitivamente, pero bueno, hay que seguir.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Sí, no, una locura, una locura.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Fue una locura, fue una locura y y es como que estamos claramente conduciendo un auto sin centros de seguridad, y claro, no te ha pasado nada hasta que te pasa algo. Bueno, yo me dejo con un arrebo, así que los dejo.
+
+UNKNOWN_SPEAKER:
+Gracias, César.
+
+Conference Room (Bastian Osorio) - Speaker 3:
+Como ven, Si llegaba el martes, yo el martes no tenía pensado venir, pero bueno, como quieras. Es que a mí venir no me importa.
+
+Conference Room (Bastian Osorio) - Speaker 2:
+Bueno, te lo esperamos que llegue a tu casa, pero importante recordarte que si no, no está nada. Sí. Que lo... No, no sé. Si quieres, te pregunto a mi, ¿verdad?
+
+UNKNOWN_SPEAKER:
+Muchas gracias.
+
+Conference Room (Bastian Osorio) - Speaker 1:
+Pablo, nos encontramos ahora. ¡Chao! Subtítulos realizados por la comunidad de Amara.org Subtítulos realizados por la comunidad de Amara.org ¡Gracias por ver el vídeo!
+
+Conference Room (Bastian Osorio) - Speaker 6:
+Sí, ya vi que tenía clientela, no sé si lo...
+
+Conference Room (Bastian Osorio) - Speaker 2:
+No sé si lo iban a imitar.
+
+UNKNOWN_SPEAKER:
+¿Qué? ¿Qué?
+
+Conference Room (Bastian Osorio) - Speaker 6:
+Y yo le dije, tú ni siquiera eres un bastardo. Y yo le dije, tío, tú no puedes ni... Y la próxima vez que te vayas a robar, te voy a hacer algo y no vas a... ¿De qué estás hablando? ¿De qué crees que estoy hablando? ¿Qué? No estás hablando conmigo, shorty. ¿De qué? No estás hablando conmigo. ¿Estás en el teléfono? ¿Por qué? No puedo hablar con la gente que quiero hablar conmigo. No puedo hablar con los chiquitos.
+
+ ¿Quién puede verlos en el teléfono? Estoy en FaceTime, tío. ¿Qué? Estoy en FaceTime. Bien, bien. Tienes que relajarte, bubu. ¿Qué, tío? Tienes que relajarte, bubu. ¿Qué? Relájate, tío. ¿Qué estás haciendo? ¿Qué te digo, tío? ¿Qué quieres decir? O no
+
